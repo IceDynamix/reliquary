@@ -86,13 +86,13 @@ impl ::protobuf::Message for HIEJJBDNCNH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EBOOMGDGNEP)?;
                 },
-                112 => {
+                72 => {
                     self.FGMGPLJCKPC = is.read_enum_or_unknown()?;
                 },
-                122 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPCPDCFLMD)?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for HIEJJBDNCNH {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.FGMGPLJCKPC != ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BATTLE_RECORD_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.FGMGPLJCKPC.value());
+            my_size += ::protobuf::rt::int32_size(9, self.FGMGPLJCKPC.value());
         }
         if let Some(v) = self.JFPCPDCFLMD.as_ref() {
             let len = v.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for HIEJJBDNCNH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.EBOOMGDGNEP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.FGMGPLJCKPC != ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BATTLE_RECORD_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.FGMGPLJCKPC))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.FGMGPLJCKPC))?;
         }
         if let Some(v) = self.JFPCPDCFLMD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for HIEJJBDNCNH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HIEJJBDNCNH.proto\x1a\x16BattleRecordType.proto\x1a\x11IHKGNJDNALJ\
     .proto\x1a\x11OBIHNGMNKEK.proto\"\xa2\x01\n\x0bHIEJJBDNCNH\x12.\n\x0bEBO\
-    OMGDGNEP\x18\x02\x20\x01(\x0b2\x0c.IHKGNJDNALJR\x0bEBOOMGDGNEP\x123\n\
-    \x0bFGMGPLJCKPC\x18\x0e\x20\x01(\x0e2\x11.BattleRecordTypeR\x0bFGMGPLJCK\
-    PC\x12.\n\x0bJFPCPDCFLMD\x18\x0f\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCP\
-    DCFLMDb\x06proto3\
+    OMGDGNEP\x18\x08\x20\x01(\x0b2\x0c.IHKGNJDNALJR\x0bEBOOMGDGNEP\x123\n\
+    \x0bFGMGPLJCKPC\x18\t\x20\x01(\x0e2\x11.BattleRecordTypeR\x0bFGMGPLJCKPC\
+    \x12.\n\x0bJFPCPDCFLMD\x18\x03\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDC\
+    FLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

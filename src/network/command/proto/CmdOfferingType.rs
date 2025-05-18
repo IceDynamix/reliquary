@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdOfferingType {
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingTypeNone)
     CmdOfferingTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingInfoScNotify)
-    CmdOfferingInfoScNotify = 6939,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoScRsp)
-    CmdGetOfferingInfoScRsp = 6936,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardScRsp)
-    CmdTakeOfferingRewardScRsp = 6929,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemScRsp)
-    CmdSubmitOfferingItemScRsp = 6924,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemCsReq)
-    CmdSubmitOfferingItemCsReq = 6940,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardCsReq)
-    CmdTakeOfferingRewardCsReq = 6934,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoCsReq)
-    CmdGetOfferingInfoCsReq = 6937,
+    CmdGetOfferingInfoCsReq = 6934,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemCsReq)
+    CmdSubmitOfferingItemCsReq = 6928,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardScRsp)
+    CmdTakeOfferingRewardScRsp = 6922,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoScRsp)
+    CmdGetOfferingInfoScRsp = 6933,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemScRsp)
+    CmdSubmitOfferingItemScRsp = 6930,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingInfoScNotify)
+    CmdOfferingInfoScNotify = 6940,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardCsReq)
+    CmdTakeOfferingRewardCsReq = 6924,
 }
 
 impl ::protobuf::Enum for CmdOfferingType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdOfferingType> {
         match value {
             0 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            6939 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            6936 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
-            6929 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            6924 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            6940 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
-            6934 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
-            6937 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
+            6934 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
+            6928 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
+            6922 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
+            6933 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
+            6930 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
+            6940 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
+            6924 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_str(str: &str) -> ::std::option::Option<CmdOfferingType> {
         match str {
             "CmdOfferingTypeNone" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            "CmdOfferingInfoScNotify" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            "CmdGetOfferingInfoScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
-            "CmdTakeOfferingRewardScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            "CmdSubmitOfferingItemScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            "CmdSubmitOfferingItemCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
-            "CmdTakeOfferingRewardCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
             "CmdGetOfferingInfoCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
+            "CmdSubmitOfferingItemCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
+            "CmdTakeOfferingRewardScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
+            "CmdGetOfferingInfoScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
+            "CmdSubmitOfferingItemScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
+            "CmdOfferingInfoScNotify" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
+            "CmdTakeOfferingRewardCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdOfferingType] = &[
         CmdOfferingType::CmdOfferingTypeNone,
-        CmdOfferingType::CmdOfferingInfoScNotify,
-        CmdOfferingType::CmdGetOfferingInfoScRsp,
-        CmdOfferingType::CmdTakeOfferingRewardScRsp,
-        CmdOfferingType::CmdSubmitOfferingItemScRsp,
-        CmdOfferingType::CmdSubmitOfferingItemCsReq,
-        CmdOfferingType::CmdTakeOfferingRewardCsReq,
         CmdOfferingType::CmdGetOfferingInfoCsReq,
+        CmdOfferingType::CmdSubmitOfferingItemCsReq,
+        CmdOfferingType::CmdTakeOfferingRewardScRsp,
+        CmdOfferingType::CmdGetOfferingInfoScRsp,
+        CmdOfferingType::CmdSubmitOfferingItemScRsp,
+        CmdOfferingType::CmdOfferingInfoScNotify,
+        CmdOfferingType::CmdTakeOfferingRewardCsReq,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdOfferingType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdOfferingType::CmdOfferingTypeNone => 0,
-            CmdOfferingType::CmdOfferingInfoScNotify => 1,
-            CmdOfferingType::CmdGetOfferingInfoScRsp => 2,
+            CmdOfferingType::CmdGetOfferingInfoCsReq => 1,
+            CmdOfferingType::CmdSubmitOfferingItemCsReq => 2,
             CmdOfferingType::CmdTakeOfferingRewardScRsp => 3,
-            CmdOfferingType::CmdSubmitOfferingItemScRsp => 4,
-            CmdOfferingType::CmdSubmitOfferingItemCsReq => 5,
-            CmdOfferingType::CmdTakeOfferingRewardCsReq => 6,
-            CmdOfferingType::CmdGetOfferingInfoCsReq => 7,
+            CmdOfferingType::CmdGetOfferingInfoScRsp => 4,
+            CmdOfferingType::CmdSubmitOfferingItemScRsp => 5,
+            CmdOfferingType::CmdOfferingInfoScNotify => 6,
+            CmdOfferingType::CmdTakeOfferingRewardCsReq => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,11 +127,11 @@ impl CmdOfferingType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdOfferingType.proto*\x88\x02\n\x0fCmdOfferingType\x12\x17\n\x13C\
-    mdOfferingTypeNone\x10\0\x12\x1c\n\x17CmdOfferingInfoScNotify\x10\x9b6\
-    \x12\x1c\n\x17CmdGetOfferingInfoScRsp\x10\x986\x12\x1f\n\x1aCmdTakeOffer\
-    ingRewardScRsp\x10\x916\x12\x1f\n\x1aCmdSubmitOfferingItemScRsp\x10\x8c6\
-    \x12\x1f\n\x1aCmdSubmitOfferingItemCsReq\x10\x9c6\x12\x1f\n\x1aCmdTakeOf\
-    feringRewardCsReq\x10\x966\x12\x1c\n\x17CmdGetOfferingInfoCsReq\x10\x996\
+    mdOfferingTypeNone\x10\0\x12\x1c\n\x17CmdGetOfferingInfoCsReq\x10\x966\
+    \x12\x1f\n\x1aCmdSubmitOfferingItemCsReq\x10\x906\x12\x1f\n\x1aCmdTakeOf\
+    feringRewardScRsp\x10\x8a6\x12\x1c\n\x17CmdGetOfferingInfoScRsp\x10\x956\
+    \x12\x1f\n\x1aCmdSubmitOfferingItemScRsp\x10\x926\x12\x1c\n\x17CmdOfferi\
+    ngInfoScNotify\x10\x9c6\x12\x1f\n\x1aCmdTakeOfferingRewardCsReq\x10\x8c6\
     b\x06proto3\
 ";
 

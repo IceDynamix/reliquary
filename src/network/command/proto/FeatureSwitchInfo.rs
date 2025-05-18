@@ -31,7 +31,7 @@ pub struct FeatureSwitchInfo {
     // @@protoc_insertion_point(field:FeatureSwitchInfo.type)
     pub type_: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
     // @@protoc_insertion_point(field:FeatureSwitchInfo.switch_list)
-    pub switch_list: ::std::vec::Vec<super::ODBJKOAABBE::ODBJKOAABBE>,
+    pub switch_list: ::std::vec::Vec<super::FeatureSwitchParam::FeatureSwitchParam>,
     // @@protoc_insertion_point(field:FeatureSwitchInfo.is_all_closed)
     pub is_all_closed: bool,
     // special fields
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for FeatureSwitchInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchInfo.proto\x1a\x17FeatureSwitchType.proto\x1a\x11ODBJ\
-    KOAABBE.proto\"\x8e\x01\n\x11FeatureSwitchInfo\x12&\n\x04type\x18\x01\
-    \x20\x01(\x0e2\x12.FeatureSwitchTypeR\x04type\x12-\n\x0bswitch_list\x18\
-    \x02\x20\x03(\x0b2\x0c.ODBJKOAABBER\nswitchList\x12\"\n\ris_all_closed\
-    \x18\x03\x20\x01(\x08R\x0bisAllClosedb\x06proto3\
+    \n\x17FeatureSwitchInfo.proto\x1a\x18FeatureSwitchParam.proto\x1a\x17Fea\
+    tureSwitchType.proto\"\x95\x01\n\x11FeatureSwitchInfo\x12&\n\x04type\x18\
+    \x01\x20\x01(\x0e2\x12.FeatureSwitchTypeR\x04type\x124\n\x0bswitch_list\
+    \x18\x02\x20\x03(\x0b2\x13.FeatureSwitchParamR\nswitchList\x12\"\n\ris_a\
+    ll_closed\x18\x03\x20\x01(\x08R\x0bisAllClosedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::FeatureSwitchParam::file_descriptor().clone());
             deps.push(super::FeatureSwitchType::file_descriptor().clone());
-            deps.push(super::ODBJKOAABBE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FeatureSwitchInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

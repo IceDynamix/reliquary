@@ -28,18 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildLevelInfo {
     // message fields
+    // @@protoc_insertion_point(field:EvolveBuildLevelInfo.cur_game_exp)
+    pub cur_game_exp: u32,
     // @@protoc_insertion_point(field:EvolveBuildLevelInfo.period_id_list)
     pub period_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EvolveBuildLevelInfo.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::EvolveBuildAvatar::EvolveBuildAvatar>,
-    // @@protoc_insertion_point(field:EvolveBuildLevelInfo.cur_game_exp)
-    pub cur_game_exp: u32,
+    // @@protoc_insertion_point(field:EvolveBuildLevelInfo.season)
+    pub season: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // @@protoc_insertion_point(field:EvolveBuildLevelInfo.battle_target_list)
     pub battle_target_list: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
-    // @@protoc_insertion_point(field:EvolveBuildLevelInfo.round_cnt)
-    pub round_cnt: u32,
     // @@protoc_insertion_point(field:EvolveBuildLevelInfo.battle_info)
     pub battle_info: ::protobuf::MessageField<super::EvolveBuildBattleInfo::EvolveBuildBattleInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildLevelInfo.round_cnt)
+    pub round_cnt: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildLevelInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,8 +59,13 @@ impl EvolveBuildLevelInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_game_exp",
+            |m: &EvolveBuildLevelInfo| { &m.cur_game_exp },
+            |m: &mut EvolveBuildLevelInfo| { &mut m.cur_game_exp },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "period_id_list",
             |m: &EvolveBuildLevelInfo| { &m.period_id_list },
@@ -70,24 +77,24 @@ impl EvolveBuildLevelInfo {
             |m: &mut EvolveBuildLevelInfo| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_game_exp",
-            |m: &EvolveBuildLevelInfo| { &m.cur_game_exp },
-            |m: &mut EvolveBuildLevelInfo| { &mut m.cur_game_exp },
+            "season",
+            |m: &EvolveBuildLevelInfo| { &m.season },
+            |m: &mut EvolveBuildLevelInfo| { &mut m.season },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "battle_target_list",
             |m: &EvolveBuildLevelInfo| { &m.battle_target_list },
             |m: &mut EvolveBuildLevelInfo| { &mut m.battle_target_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "round_cnt",
-            |m: &EvolveBuildLevelInfo| { &m.round_cnt },
-            |m: &mut EvolveBuildLevelInfo| { &mut m.round_cnt },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildBattleInfo::EvolveBuildBattleInfo>(
             "battle_info",
             |m: &EvolveBuildLevelInfo| { &m.battle_info },
             |m: &mut EvolveBuildLevelInfo| { &mut m.battle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "round_cnt",
+            |m: &EvolveBuildLevelInfo| { &m.round_cnt },
+            |m: &mut EvolveBuildLevelInfo| { &mut m.round_cnt },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildLevelInfo>(
             "EvolveBuildLevelInfo",
@@ -107,26 +114,29 @@ impl ::protobuf::Message for EvolveBuildLevelInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.period_id_list)?;
-                },
-                8 => {
-                    self.period_id_list.push(is.read_uint32()?);
-                },
-                18 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                56 => {
+                104 => {
                     self.cur_game_exp = is.read_uint32()?;
                 },
-                106 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.period_id_list)?;
+                },
+                32 => {
+                    self.period_id_list.push(is.read_uint32()?);
+                },
+                26 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                112 => {
+                    self.season = is.read_enum_or_unknown()?;
+                },
+                66 => {
                     self.battle_target_list.push(is.read_message()?);
                 },
-                120 => {
-                    self.round_cnt = is.read_uint32()?;
-                },
-                114 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
+                },
+                56 => {
+                    self.round_cnt = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,24 +150,27 @@ impl ::protobuf::Message for EvolveBuildLevelInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.period_id_list);
+        if self.cur_game_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.cur_game_exp);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.period_id_list);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.cur_game_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cur_game_exp);
+        if self.season != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.season.value());
         }
         for value in &self.battle_target_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.round_cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.round_cnt);
-        }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.round_cnt != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.round_cnt);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,21 +178,24 @@ impl ::protobuf::Message for EvolveBuildLevelInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.period_id_list)?;
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.cur_game_exp != 0 {
-            os.write_uint32(7, self.cur_game_exp)?;
+            os.write_uint32(13, self.cur_game_exp)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.period_id_list)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.season != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.season))?;
         }
         for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.round_cnt != 0 {
-            os.write_uint32(15, self.round_cnt)?;
-        }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.round_cnt != 0 {
+            os.write_uint32(7, self.round_cnt)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +214,25 @@ impl ::protobuf::Message for EvolveBuildLevelInfo {
     }
 
     fn clear(&mut self) {
+        self.cur_game_exp = 0;
         self.period_id_list.clear();
         self.avatar_list.clear();
-        self.cur_game_exp = 0;
+        self.season = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.battle_target_list.clear();
-        self.round_cnt = 0;
         self.battle_info.clear();
+        self.round_cnt = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildLevelInfo {
         static instance: EvolveBuildLevelInfo = EvolveBuildLevelInfo {
+            cur_game_exp: 0,
             period_id_list: ::std::vec::Vec::new(),
             avatar_list: ::std::vec::Vec::new(),
-            cur_game_exp: 0,
+            season: ::protobuf::EnumOrUnknown::from_i32(0),
             battle_target_list: ::std::vec::Vec::new(),
-            round_cnt: 0,
             battle_info: ::protobuf::MessageField::none(),
+            round_cnt: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,14 +258,15 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildLevelInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aEvolveBuildLevelInfo.proto\x1a\x12BattleTarget.proto\x1a\x17Evolve\
-    BuildAvatar.proto\x1a\x1bEvolveBuildBattleInfo.proto\"\xa6\x02\n\x14Evol\
-    veBuildLevelInfo\x12$\n\x0eperiod_id_list\x18\x01\x20\x03(\rR\x0cperiodI\
-    dList\x123\n\x0bavatar_list\x18\x02\x20\x03(\x0b2\x12.EvolveBuildAvatarR\
-    \navatarList\x12\x20\n\x0ccur_game_exp\x18\x07\x20\x01(\rR\ncurGameExp\
-    \x12;\n\x12battle_target_list\x18\r\x20\x03(\x0b2\r.BattleTargetR\x10bat\
-    tleTargetList\x12\x1b\n\tround_cnt\x18\x0f\x20\x01(\rR\x08roundCnt\x127\
-    \n\x0bbattle_info\x18\x0e\x20\x01(\x0b2\x16.EvolveBuildBattleInfoR\nbatt\
-    leInfob\x06proto3\
+    BuildAvatar.proto\x1a\x1bEvolveBuildBattleInfo.proto\x1a\x11KLNIPNJCNMJ.\
+    proto\"\xcc\x02\n\x14EvolveBuildLevelInfo\x12\x20\n\x0ccur_game_exp\x18\
+    \r\x20\x01(\rR\ncurGameExp\x12$\n\x0eperiod_id_list\x18\x04\x20\x03(\rR\
+    \x0cperiodIdList\x123\n\x0bavatar_list\x18\x03\x20\x03(\x0b2\x12.EvolveB\
+    uildAvatarR\navatarList\x12$\n\x06season\x18\x0e\x20\x01(\x0e2\x0c.KLNIP\
+    NJCNMJR\x06season\x12;\n\x12battle_target_list\x18\x08\x20\x03(\x0b2\r.B\
+    attleTargetR\x10battleTargetList\x127\n\x0bbattle_info\x18\x0f\x20\x01(\
+    \x0b2\x16.EvolveBuildBattleInfoR\nbattleInfo\x12\x1b\n\tround_cnt\x18\
+    \x07\x20\x01(\rR\x08roundCntb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,10 +283,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::BattleTarget::file_descriptor().clone());
             deps.push(super::EvolveBuildAvatar::file_descriptor().clone());
             deps.push(super::EvolveBuildBattleInfo::file_descriptor().clone());
+            deps.push(super::KLNIPNJCNMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildLevelInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

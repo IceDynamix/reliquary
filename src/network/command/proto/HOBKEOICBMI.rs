@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOBKEOICBMI {
     // message fields
-    // @@protoc_insertion_point(field:HOBKEOICBMI.EOCIPKGJFOP)
-    pub EOCIPKGJFOP: ::protobuf::MessageField<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // @@protoc_insertion_point(field:HOBKEOICBMI.HKKLPLDNPKD)
     pub HKKLPLDNPKD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HOBKEOICBMI.EOCIPKGJFOP)
+    pub EOCIPKGJFOP: ::protobuf::MessageField<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // special fields
     // @@protoc_insertion_point(special_field:HOBKEOICBMI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HOBKEOICBMI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFGFLGBLCAJ::JFGFLGBLCAJ>(
-            "EOCIPKGJFOP",
-            |m: &HOBKEOICBMI| { &m.EOCIPKGJFOP },
-            |m: &mut HOBKEOICBMI| { &mut m.EOCIPKGJFOP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HKKLPLDNPKD",
             |m: &HOBKEOICBMI| { &m.HKKLPLDNPKD },
             |m: &mut HOBKEOICBMI| { &mut m.HKKLPLDNPKD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFGFLGBLCAJ::JFGFLGBLCAJ>(
+            "EOCIPKGJFOP",
+            |m: &HOBKEOICBMI| { &m.EOCIPKGJFOP },
+            |m: &mut HOBKEOICBMI| { &mut m.EOCIPKGJFOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HOBKEOICBMI>(
             "HOBKEOICBMI",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for HOBKEOICBMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EOCIPKGJFOP)?;
-                },
-                82 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.HKKLPLDNPKD)?;
                 },
-                80 => {
+                16 => {
                     self.HKKLPLDNPKD.push(is.read_uint32()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EOCIPKGJFOP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for HOBKEOICBMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HKKLPLDNPKD);
         if let Some(v) = self.EOCIPKGJFOP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HKKLPLDNPKD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(2, &self.HKKLPLDNPKD)?;
         if let Some(v) = self.EOCIPKGJFOP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        os.write_repeated_packed_uint32(10, &self.HKKLPLDNPKD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HOBKEOICBMI {
     }
 
     fn clear(&mut self) {
-        self.EOCIPKGJFOP.clear();
         self.HKKLPLDNPKD.clear();
+        self.EOCIPKGJFOP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOBKEOICBMI {
         static instance: HOBKEOICBMI = HOBKEOICBMI {
-            EOCIPKGJFOP: ::protobuf::MessageField::none(),
             HKKLPLDNPKD: ::std::vec::Vec::new(),
+            EOCIPKGJFOP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for HOBKEOICBMI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOBKEOICBMI.proto\x1a\x11JFGFLGBLCAJ.proto\"_\n\x0bHOBKEOICBMI\x12\
-    .\n\x0bEOCIPKGJFOP\x18\t\x20\x01(\x0b2\x0c.JFGFLGBLCAJR\x0bEOCIPKGJFOP\
-    \x12\x20\n\x0bHKKLPLDNPKD\x18\n\x20\x03(\rR\x0bHKKLPLDNPKDb\x06proto3\
+    \x20\n\x0bHKKLPLDNPKD\x18\x02\x20\x03(\rR\x0bHKKLPLDNPKD\x12.\n\x0bEOCIP\
+    KGJFOP\x18\x08\x20\x01(\x0b2\x0c.JFGFLGBLCAJR\x0bEOCIPKGJFOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

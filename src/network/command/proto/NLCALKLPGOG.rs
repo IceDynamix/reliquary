@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NLCALKLPGOG {
     // message fields
+    // @@protoc_insertion_point(field:NLCALKLPGOG.PJGBFKNJPNO)
+    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::HDIJJMDPILE::HDIJJMDPILE>,
     // @@protoc_insertion_point(field:NLCALKLPGOG.BMALPKEKBEL)
     pub BMALPKEKBEL: u32,
     // @@protoc_insertion_point(field:NLCALKLPGOG.OGJOFMCMFPG)
     pub OGJOFMCMFPG: u32,
-    // @@protoc_insertion_point(field:NLCALKLPGOG.PJGBFKNJPNO)
-    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::HDIJJMDPILE::HDIJJMDPILE>,
     // special fields
     // @@protoc_insertion_point(special_field:NLCALKLPGOG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl NLCALKLPGOG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PJGBFKNJPNO",
+            |m: &NLCALKLPGOG| { &m.PJGBFKNJPNO },
+            |m: &mut NLCALKLPGOG| { &mut m.PJGBFKNJPNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BMALPKEKBEL",
             |m: &NLCALKLPGOG| { &m.BMALPKEKBEL },
             |m: &mut NLCALKLPGOG| { &mut m.BMALPKEKBEL },
@@ -62,11 +67,6 @@ impl NLCALKLPGOG {
             "OGJOFMCMFPG",
             |m: &NLCALKLPGOG| { &m.OGJOFMCMFPG },
             |m: &mut NLCALKLPGOG| { &mut m.OGJOFMCMFPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJGBFKNJPNO",
-            |m: &NLCALKLPGOG| { &m.PJGBFKNJPNO },
-            |m: &mut NLCALKLPGOG| { &mut m.PJGBFKNJPNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NLCALKLPGOG>(
             "NLCALKLPGOG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NLCALKLPGOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
+                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
+                },
+                8 => {
                     self.BMALPKEKBEL = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.OGJOFMCMFPG = is.read_uint32()?;
-                },
-                32 => {
-                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for NLCALKLPGOG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.PJGBFKNJPNO.value());
+        }
         if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BMALPKEKBEL);
+            my_size += ::protobuf::rt::uint32_size(1, self.BMALPKEKBEL);
         }
         if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OGJOFMCMFPG);
-        }
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.PJGBFKNJPNO.value());
+            my_size += ::protobuf::rt::uint32_size(9, self.OGJOFMCMFPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for NLCALKLPGOG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+        }
         if self.BMALPKEKBEL != 0 {
-            os.write_uint32(10, self.BMALPKEKBEL)?;
+            os.write_uint32(1, self.BMALPKEKBEL)?;
         }
         if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(8, self.OGJOFMCMFPG)?;
-        }
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+            os.write_uint32(9, self.OGJOFMCMFPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for NLCALKLPGOG {
     }
 
     fn clear(&mut self) {
+        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE);
         self.BMALPKEKBEL = 0;
         self.OGJOFMCMFPG = 0;
-        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NLCALKLPGOG {
         static instance: NLCALKLPGOG = NLCALKLPGOG {
+            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
             BMALPKEKBEL: 0,
             OGJOFMCMFPG: 0,
-            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for NLCALKLPGOG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLCALKLPGOG.proto\x1a\x11HDIJJMDPILE.proto\"\x81\x01\n\x0bNLCALKLP\
-    GOG\x12\x20\n\x0bBMALPKEKBEL\x18\n\x20\x01(\rR\x0bBMALPKEKBEL\x12\x20\n\
-    \x0bOGJOFMCMFPG\x18\x08\x20\x01(\rR\x0bOGJOFMCMFPG\x12.\n\x0bPJGBFKNJPNO\
-    \x18\x04\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNOb\x06proto3\
+    GOG\x12.\n\x0bPJGBFKNJPNO\x18\x08\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGB\
+    FKNJPNO\x12\x20\n\x0bBMALPKEKBEL\x18\x01\x20\x01(\rR\x0bBMALPKEKBEL\x12\
+    \x20\n\x0bOGJOFMCMFPG\x18\t\x20\x01(\rR\x0bOGJOFMCMFPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

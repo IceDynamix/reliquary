@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GAAGEHABINM {
     // message fields
-    // @@protoc_insertion_point(field:GAAGEHABINM.OOACKEGEMFK)
-    pub OOACKEGEMFK: u32,
+    // @@protoc_insertion_point(field:GAAGEHABINM.skill_id)
+    pub skill_id: u32,
     // @@protoc_insertion_point(field:GAAGEHABINM.HGFLPENKIII)
     pub HGFLPENKIII: f64,
     // @@protoc_insertion_point(field:GAAGEHABINM.battle_target_list)
     pub battle_target_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GAAGEHABINM.GDFLPPHGENE)
-    pub GDFLPPHGENE: f64,
+    // @@protoc_insertion_point(field:GAAGEHABINM.damage)
+    pub damage: f64,
     // special fields
     // @@protoc_insertion_point(special_field:GAAGEHABINM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl GAAGEHABINM {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOACKEGEMFK",
-            |m: &GAAGEHABINM| { &m.OOACKEGEMFK },
-            |m: &mut GAAGEHABINM| { &mut m.OOACKEGEMFK },
+            "skill_id",
+            |m: &GAAGEHABINM| { &m.skill_id },
+            |m: &mut GAAGEHABINM| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HGFLPENKIII",
@@ -71,9 +71,9 @@ impl GAAGEHABINM {
             |m: &mut GAAGEHABINM| { &mut m.battle_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDFLPPHGENE",
-            |m: &GAAGEHABINM| { &m.GDFLPPHGENE },
-            |m: &mut GAAGEHABINM| { &mut m.GDFLPPHGENE },
+            "damage",
+            |m: &GAAGEHABINM| { &m.damage },
+            |m: &mut GAAGEHABINM| { &mut m.damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GAAGEHABINM>(
             "GAAGEHABINM",
@@ -94,7 +94,7 @@ impl ::protobuf::Message for GAAGEHABINM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.OOACKEGEMFK = is.read_uint32()?;
+                    self.skill_id = is.read_uint32()?;
                 },
                 17 => {
                     self.HGFLPENKIII = is.read_double()?;
@@ -106,7 +106,7 @@ impl ::protobuf::Message for GAAGEHABINM {
                     self.battle_target_list.push(is.read_uint32()?);
                 },
                 33 => {
-                    self.GDFLPPHGENE = is.read_double()?;
+                    self.damage = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for GAAGEHABINM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OOACKEGEMFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OOACKEGEMFK);
+        if self.skill_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
         }
         if self.HGFLPENKIII != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.battle_target_list);
-        if self.GDFLPPHGENE != 0. {
+        if self.damage != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GAAGEHABINM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OOACKEGEMFK != 0 {
-            os.write_uint32(1, self.OOACKEGEMFK)?;
+        if self.skill_id != 0 {
+            os.write_uint32(1, self.skill_id)?;
         }
         if self.HGFLPENKIII != 0. {
             os.write_double(2, self.HGFLPENKIII)?;
         }
         os.write_repeated_packed_uint32(3, &self.battle_target_list)?;
-        if self.GDFLPPHGENE != 0. {
-            os.write_double(4, self.GDFLPPHGENE)?;
+        if self.damage != 0. {
+            os.write_double(4, self.damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for GAAGEHABINM {
     }
 
     fn clear(&mut self) {
-        self.OOACKEGEMFK = 0;
+        self.skill_id = 0;
         self.HGFLPENKIII = 0.;
         self.battle_target_list.clear();
-        self.GDFLPPHGENE = 0.;
+        self.damage = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GAAGEHABINM {
         static instance: GAAGEHABINM = GAAGEHABINM {
-            OOACKEGEMFK: 0,
+            skill_id: 0,
             HGFLPENKIII: 0.,
             battle_target_list: ::std::vec::Vec::new(),
-            GDFLPPHGENE: 0.,
+            damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for GAAGEHABINM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GAAGEHABINM.proto\"\xa1\x01\n\x0bGAAGEHABINM\x12\x20\n\x0bOOACKEGE\
-    MFK\x18\x01\x20\x01(\rR\x0bOOACKEGEMFK\x12\x20\n\x0bHGFLPENKIII\x18\x02\
-    \x20\x01(\x01R\x0bHGFLPENKIII\x12,\n\x12battle_target_list\x18\x03\x20\
-    \x03(\rR\x10battleTargetList\x12\x20\n\x0bGDFLPPHGENE\x18\x04\x20\x01(\
-    \x01R\x0bGDFLPPHGENEb\x06proto3\
+    \n\x11GAAGEHABINM.proto\"\x90\x01\n\x0bGAAGEHABINM\x12\x19\n\x08skill_id\
+    \x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bHGFLPENKIII\x18\x02\x20\x01\
+    (\x01R\x0bHGFLPENKIII\x12,\n\x12battle_target_list\x18\x03\x20\x03(\rR\
+    \x10battleTargetList\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

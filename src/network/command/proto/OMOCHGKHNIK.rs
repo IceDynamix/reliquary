@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMOCHGKHNIK {
     // message fields
-    // @@protoc_insertion_point(field:OMOCHGKHNIK.EEPPKMPAJOH)
-    pub EEPPKMPAJOH: ::protobuf::MessageField<super::OLFPCKAGKAK::OLFPCKAGKAK>,
+    // @@protoc_insertion_point(field:OMOCHGKHNIK.game_miracle_info)
+    pub game_miracle_info: ::protobuf::MessageField<super::OLFPCKAGKAK::OLFPCKAGKAK>,
     // special fields
     // @@protoc_insertion_point(special_field:OMOCHGKHNIK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OMOCHGKHNIK {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLFPCKAGKAK::OLFPCKAGKAK>(
-            "EEPPKMPAJOH",
-            |m: &OMOCHGKHNIK| { &m.EEPPKMPAJOH },
-            |m: &mut OMOCHGKHNIK| { &mut m.EEPPKMPAJOH },
+            "game_miracle_info",
+            |m: &OMOCHGKHNIK| { &m.game_miracle_info },
+            |m: &mut OMOCHGKHNIK| { &mut m.game_miracle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMOCHGKHNIK>(
             "OMOCHGKHNIK",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for OMOCHGKHNIK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEPPKMPAJOH)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OMOCHGKHNIK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
+        if let Some(v) = self.game_miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OMOCHGKHNIK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OMOCHGKHNIK {
     }
 
     fn clear(&mut self) {
-        self.EEPPKMPAJOH.clear();
+        self.game_miracle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMOCHGKHNIK {
         static instance: OMOCHGKHNIK = OMOCHGKHNIK {
-            EEPPKMPAJOH: ::protobuf::MessageField::none(),
+            game_miracle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for OMOCHGKHNIK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OMOCHGKHNIK.proto\x1a\x11OLFPCKAGKAK.proto\"=\n\x0bOMOCHGKHNIK\x12\
-    .\n\x0bEEPPKMPAJOH\x18\t\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\x0bEEPPKMPAJOHb\
-    \x06proto3\
+    \n\x11OMOCHGKHNIK.proto\x1a\x11OLFPCKAGKAK.proto\"G\n\x0bOMOCHGKHNIK\x12\
+    8\n\x11game_miracle_info\x18\x0e\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\x0fgameM\
+    iracleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

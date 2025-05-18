@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LAJBHGHNBAC {
     // message fields
-    // @@protoc_insertion_point(field:LAJBHGHNBAC.BEMCEEDABFD)
-    pub BEMCEEDABFD: u32,
     // @@protoc_insertion_point(field:LAJBHGHNBAC.GANHKLNPAPI)
     pub GANHKLNPAPI: bool,
+    // @@protoc_insertion_point(field:LAJBHGHNBAC.BEMCEEDABFD)
+    pub BEMCEEDABFD: u32,
     // @@protoc_insertion_point(field:LAJBHGHNBAC.JALAMOPLDHO)
     pub JALAMOPLDHO: ::protobuf::MessageField<super::GJOIBMFANHL::GJOIBMFANHL>,
     // special fields
@@ -54,14 +54,14 @@ impl LAJBHGHNBAC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEMCEEDABFD",
-            |m: &LAJBHGHNBAC| { &m.BEMCEEDABFD },
-            |m: &mut LAJBHGHNBAC| { &mut m.BEMCEEDABFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GANHKLNPAPI",
             |m: &LAJBHGHNBAC| { &m.GANHKLNPAPI },
             |m: &mut LAJBHGHNBAC| { &mut m.GANHKLNPAPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BEMCEEDABFD",
+            |m: &LAJBHGHNBAC| { &m.BEMCEEDABFD },
+            |m: &mut LAJBHGHNBAC| { &mut m.BEMCEEDABFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJOIBMFANHL::GJOIBMFANHL>(
             "JALAMOPLDHO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.BEMCEEDABFD = is.read_uint32()?;
-                },
-                88 => {
+                80 => {
                     self.GANHKLNPAPI = is.read_bool()?;
                 },
-                58 => {
+                40 => {
+                    self.BEMCEEDABFD = is.read_uint32()?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JALAMOPLDHO)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEMCEEDABFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BEMCEEDABFD);
-        }
         if self.GANHKLNPAPI != false {
             my_size += 1 + 1;
+        }
+        if self.BEMCEEDABFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BEMCEEDABFD);
         }
         if let Some(v) = self.JALAMOPLDHO.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEMCEEDABFD != 0 {
-            os.write_uint32(9, self.BEMCEEDABFD)?;
-        }
         if self.GANHKLNPAPI != false {
-            os.write_bool(11, self.GANHKLNPAPI)?;
+            os.write_bool(10, self.GANHKLNPAPI)?;
+        }
+        if self.BEMCEEDABFD != 0 {
+            os.write_uint32(5, self.BEMCEEDABFD)?;
         }
         if let Some(v) = self.JALAMOPLDHO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     }
 
     fn clear(&mut self) {
-        self.BEMCEEDABFD = 0;
         self.GANHKLNPAPI = false;
+        self.BEMCEEDABFD = 0;
         self.JALAMOPLDHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LAJBHGHNBAC {
         static instance: LAJBHGHNBAC = LAJBHGHNBAC {
-            BEMCEEDABFD: 0,
             GANHKLNPAPI: false,
+            BEMCEEDABFD: 0,
             JALAMOPLDHO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LAJBHGHNBAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LAJBHGHNBAC.proto\x1a\x11GJOIBMFANHL.proto\"\x81\x01\n\x0bLAJBHGHN\
-    BAC\x12\x20\n\x0bBEMCEEDABFD\x18\t\x20\x01(\rR\x0bBEMCEEDABFD\x12\x20\n\
-    \x0bGANHKLNPAPI\x18\x0b\x20\x01(\x08R\x0bGANHKLNPAPI\x12.\n\x0bJALAMOPLD\
-    HO\x18\x07\x20\x01(\x0b2\x0c.GJOIBMFANHLR\x0bJALAMOPLDHOb\x06proto3\
+    BAC\x12\x20\n\x0bGANHKLNPAPI\x18\n\x20\x01(\x08R\x0bGANHKLNPAPI\x12\x20\
+    \n\x0bBEMCEEDABFD\x18\x05\x20\x01(\rR\x0bBEMCEEDABFD\x12.\n\x0bJALAMOPLD\
+    HO\x18\x08\x20\x01(\x0b2\x0c.GJOIBMFANHLR\x0bJALAMOPLDHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,126 +29,126 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdItemType {
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdItemTypeNone)
     CmdItemTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkItemCsReq)
-    CmdMarkItemCsReq = 575,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpRelicCsReq)
-    CmdExpUpRelicCsReq = 573,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRelicFilterPlanScRsp)
-    CmdGetRelicFilterPlanScRsp = 517,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkRelicFilterPlanScRsp)
-    CmdMarkRelicFilterPlanScRsp = 521,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdModifyRelicFilterPlanCsReq)
-    CmdModifyRelicFilterPlanCsReq = 578,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDestroyItemCsReq)
-    CmdDestroyItemCsReq = 592,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdModifyRelicFilterPlanScRsp)
-    CmdModifyRelicFilterPlanScRsp = 596,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSetTurnFoodSwitchScRsp)
-    CmdSetTurnFoodSwitchScRsp = 560,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdUseItemCsReq)
-    CmdUseItemCsReq = 570,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeItemScRsp)
-    CmdComposeItemScRsp = 550,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdBatchRankUpEquipmentScRsp)
-    CmdBatchRankUpEquipmentScRsp = 527,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetBagCsReq)
-    CmdGetBagCsReq = 511,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddEquipmentScNotify)
-    CmdAddEquipmentScNotify = 537,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkItemScRsp)
-    CmdMarkItemScRsp = 528,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDiscardRelicCsReq)
-    CmdDiscardRelicCsReq = 587,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeCsReq)
-    CmdRelicReforgeCsReq = 533,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdUseItemScRsp)
-    CmdUseItemScRsp = 589,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddRelicFilterPlanScRsp)
-    CmdAddRelicFilterPlanScRsp = 504,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDeleteRelicFilterPlanCsReq)
-    CmdDeleteRelicFilterPlanCsReq = 569,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExchangeHcoinCsReq)
-    CmdExchangeHcoinCsReq = 507,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddRelicFilterPlanCsReq)
-    CmdAddRelicFilterPlanCsReq = 563,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockRelicScRsp)
-    CmdLockRelicScRsp = 593,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeLimitNumCompleteNotify)
-    CmdComposeLimitNumCompleteNotify = 522,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpEquipmentScRsp)
-    CmdExpUpEquipmentScRsp = 518,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExchangeHcoinScRsp)
-    CmdExchangeHcoinScRsp = 571,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetBagScRsp)
-    CmdGetBagScRsp = 513,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicFilterPlanClearNameScNotify)
-    CmdRelicFilterPlanClearNameScNotify = 508,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRechargeSuccNotify)
-    CmdRechargeSuccNotify = 510,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeConfirmScRsp)
-    CmdRelicReforgeConfirmScRsp = 540,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSetTurnFoodSwitchCsReq)
-    CmdSetTurnFoodSwitchCsReq = 568,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeConfirmCsReq)
-    CmdRelicReforgeConfirmCsReq = 501,
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeSelectedRelicScRsp)
-    CmdComposeSelectedRelicScRsp = 551,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeLimitNumUpdateNotify)
-    CmdComposeLimitNumUpdateNotify = 586,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockRelicCsReq)
-    CmdLockRelicCsReq = 591,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRecyleTimeCsReq)
-    CmdGetRecyleTimeCsReq = 565,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdPromoteEquipmentCsReq)
-    CmdPromoteEquipmentCsReq = 547,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRankUpEquipmentScRsp)
-    CmdRankUpEquipmentScRsp = 530,
+    CmdComposeSelectedRelicScRsp = 529,
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdSellItemScRsp)
-    CmdSellItemScRsp = 525,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRankUpEquipmentCsReq)
-    CmdRankUpEquipmentCsReq = 526,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpRelicScRsp)
-    CmdExpUpRelicScRsp = 577,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeScRsp)
-    CmdRelicReforgeScRsp = 564,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdPromoteEquipmentScRsp)
-    CmdPromoteEquipmentScRsp = 509,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDeleteRelicFilterPlanScRsp)
-    CmdDeleteRelicFilterPlanScRsp = 566,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkRelicFilterPlanCsReq)
-    CmdMarkRelicFilterPlanCsReq = 599,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRelicFilterPlanCsReq)
-    CmdGetRelicFilterPlanCsReq = 541,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSellItemCsReq)
-    CmdSellItemCsReq = 557,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRecyleTimeScRsp)
-    CmdGetRecyleTimeScRsp = 552,
+    CmdSellItemScRsp = 533,
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetMarkItemListScRsp)
-    CmdGetMarkItemListScRsp = 584,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdBatchRankUpEquipmentCsReq)
-    CmdBatchRankUpEquipmentCsReq = 559,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdCancelMarkItemNotify)
-    CmdCancelMarkItemNotify = 583,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeItemCsReq)
-    CmdComposeItemCsReq = 536,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSyncTurnFoodNotify)
-    CmdSyncTurnFoodNotify = 558,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockEquipmentCsReq)
-    CmdLockEquipmentCsReq = 535,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockEquipmentScRsp)
-    CmdLockEquipmentScRsp = 506,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGeneralVirtualItemDataNotify)
-    CmdGeneralVirtualItemDataNotify = 594,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDestroyItemScRsp)
-    CmdDestroyItemScRsp = 553,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDiscardRelicScRsp)
-    CmdDiscardRelicScRsp = 556,
-    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpEquipmentCsReq)
-    CmdExpUpEquipmentCsReq = 595,
+    CmdGetMarkItemListScRsp = 575,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDeleteRelicFilterPlanCsReq)
+    CmdDeleteRelicFilterPlanCsReq = 535,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdBatchRankUpEquipmentScRsp)
+    CmdBatchRankUpEquipmentScRsp = 517,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRelicFilterPlanCsReq)
+    CmdGetRelicFilterPlanCsReq = 600,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeConfirmCsReq)
+    CmdRelicReforgeConfirmCsReq = 527,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeLimitNumCompleteNotify)
+    CmdComposeLimitNumCompleteNotify = 525,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicFilterPlanClearNameScNotify)
+    CmdRelicFilterPlanClearNameScNotify = 553,
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeSelectedRelicCsReq)
-    CmdComposeSelectedRelicCsReq = 582,
+    CmdComposeSelectedRelicCsReq = 521,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDestroyItemScRsp)
+    CmdDestroyItemScRsp = 537,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetBagScRsp)
+    CmdGetBagScRsp = 532,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddRelicFilterPlanScRsp)
+    CmdAddRelicFilterPlanScRsp = 599,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeLimitNumUpdateNotify)
+    CmdComposeLimitNumUpdateNotify = 514,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdCancelMarkItemNotify)
+    CmdCancelMarkItemNotify = 524,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRecyleTimeCsReq)
+    CmdGetRecyleTimeCsReq = 511,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdBatchRankUpEquipmentCsReq)
+    CmdBatchRankUpEquipmentCsReq = 590,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRechargeSuccNotify)
+    CmdRechargeSuccNotify = 542,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdModifyRelicFilterPlanCsReq)
+    CmdModifyRelicFilterPlanCsReq = 587,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDestroyItemCsReq)
+    CmdDestroyItemCsReq = 584,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockEquipmentCsReq)
+    CmdLockEquipmentCsReq = 576,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpRelicScRsp)
+    CmdExpUpRelicScRsp = 560,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRecyleTimeScRsp)
+    CmdGetRecyleTimeScRsp = 593,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetRelicFilterPlanScRsp)
+    CmdGetRelicFilterPlanScRsp = 509,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdUseItemCsReq)
+    CmdUseItemCsReq = 571,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkItemScRsp)
+    CmdMarkItemScRsp = 591,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExchangeHcoinCsReq)
+    CmdExchangeHcoinCsReq = 577,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeCsReq)
+    CmdRelicReforgeCsReq = 536,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockRelicScRsp)
+    CmdLockRelicScRsp = 539,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRankUpEquipmentScRsp)
+    CmdRankUpEquipmentScRsp = 556,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdUseItemScRsp)
+    CmdUseItemScRsp = 552,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockRelicCsReq)
+    CmdLockRelicCsReq = 502,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetBagCsReq)
+    CmdGetBagCsReq = 595,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSellItemCsReq)
+    CmdSellItemCsReq = 543,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpEquipmentCsReq)
+    CmdExpUpEquipmentCsReq = 572,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSetTurnFoodSwitchScRsp)
+    CmdSetTurnFoodSwitchScRsp = 598,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSyncTurnFoodNotify)
+    CmdSyncTurnFoodNotify = 557,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdModifyRelicFilterPlanScRsp)
+    CmdModifyRelicFilterPlanScRsp = 508,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkRelicFilterPlanScRsp)
+    CmdMarkRelicFilterPlanScRsp = 501,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddEquipmentScNotify)
+    CmdAddEquipmentScNotify = 563,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpEquipmentScRsp)
+    CmdExpUpEquipmentScRsp = 585,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExchangeHcoinScRsp)
+    CmdExchangeHcoinScRsp = 558,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDiscardRelicScRsp)
+    CmdDiscardRelicScRsp = 545,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdGeneralVirtualItemDataNotify)
+    CmdGeneralVirtualItemDataNotify = 564,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdSetTurnFoodSwitchCsReq)
+    CmdSetTurnFoodSwitchCsReq = 507,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdLockEquipmentScRsp)
+    CmdLockEquipmentScRsp = 548,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeScRsp)
+    CmdRelicReforgeScRsp = 594,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkItemCsReq)
+    CmdMarkItemCsReq = 551,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeItemCsReq)
+    CmdComposeItemCsReq = 516,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdExpUpRelicCsReq)
+    CmdExpUpRelicCsReq = 583,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRankUpEquipmentCsReq)
+    CmdRankUpEquipmentCsReq = 522,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdComposeItemScRsp)
+    CmdComposeItemScRsp = 546,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdPromoteEquipmentScRsp)
+    CmdPromoteEquipmentScRsp = 540,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdPromoteEquipmentCsReq)
+    CmdPromoteEquipmentCsReq = 531,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdRelicReforgeConfirmScRsp)
+    CmdRelicReforgeConfirmScRsp = 574,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdMarkRelicFilterPlanCsReq)
+    CmdMarkRelicFilterPlanCsReq = 568,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDiscardRelicCsReq)
+    CmdDiscardRelicCsReq = 506,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdDeleteRelicFilterPlanScRsp)
+    CmdDeleteRelicFilterPlanScRsp = 534,
+    // @@protoc_insertion_point(enum_value:CmdItemType.CmdAddRelicFilterPlanCsReq)
+    CmdAddRelicFilterPlanCsReq = 554,
     // @@protoc_insertion_point(enum_value:CmdItemType.CmdGetMarkItemListCsReq)
-    CmdGetMarkItemListCsReq = 524,
+    CmdGetMarkItemListCsReq = 530,
 }
 
 impl ::protobuf::Enum for CmdItemType {
@@ -161,66 +161,66 @@ impl ::protobuf::Enum for CmdItemType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdItemType> {
         match value {
             0 => ::std::option::Option::Some(CmdItemType::CmdItemTypeNone),
-            575 => ::std::option::Option::Some(CmdItemType::CmdMarkItemCsReq),
-            573 => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicCsReq),
-            517 => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanScRsp),
-            521 => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanScRsp),
-            578 => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanCsReq),
-            592 => ::std::option::Option::Some(CmdItemType::CmdDestroyItemCsReq),
-            596 => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanScRsp),
-            560 => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchScRsp),
-            570 => ::std::option::Option::Some(CmdItemType::CmdUseItemCsReq),
-            550 => ::std::option::Option::Some(CmdItemType::CmdComposeItemScRsp),
-            527 => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentScRsp),
-            511 => ::std::option::Option::Some(CmdItemType::CmdGetBagCsReq),
-            537 => ::std::option::Option::Some(CmdItemType::CmdAddEquipmentScNotify),
-            528 => ::std::option::Option::Some(CmdItemType::CmdMarkItemScRsp),
-            587 => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicCsReq),
-            533 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeCsReq),
-            589 => ::std::option::Option::Some(CmdItemType::CmdUseItemScRsp),
-            504 => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanScRsp),
-            569 => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanCsReq),
-            507 => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinCsReq),
-            563 => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanCsReq),
-            593 => ::std::option::Option::Some(CmdItemType::CmdLockRelicScRsp),
-            522 => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumCompleteNotify),
-            518 => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentScRsp),
-            571 => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinScRsp),
-            513 => ::std::option::Option::Some(CmdItemType::CmdGetBagScRsp),
-            508 => ::std::option::Option::Some(CmdItemType::CmdRelicFilterPlanClearNameScNotify),
-            510 => ::std::option::Option::Some(CmdItemType::CmdRechargeSuccNotify),
-            540 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmScRsp),
-            568 => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchCsReq),
-            501 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmCsReq),
-            551 => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicScRsp),
-            586 => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumUpdateNotify),
-            591 => ::std::option::Option::Some(CmdItemType::CmdLockRelicCsReq),
-            565 => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeCsReq),
-            547 => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentCsReq),
-            530 => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentScRsp),
-            525 => ::std::option::Option::Some(CmdItemType::CmdSellItemScRsp),
-            526 => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentCsReq),
-            577 => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicScRsp),
-            564 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeScRsp),
-            509 => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentScRsp),
-            566 => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanScRsp),
-            599 => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanCsReq),
-            541 => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanCsReq),
-            557 => ::std::option::Option::Some(CmdItemType::CmdSellItemCsReq),
-            552 => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeScRsp),
-            584 => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListScRsp),
-            559 => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentCsReq),
-            583 => ::std::option::Option::Some(CmdItemType::CmdCancelMarkItemNotify),
-            536 => ::std::option::Option::Some(CmdItemType::CmdComposeItemCsReq),
-            558 => ::std::option::Option::Some(CmdItemType::CmdSyncTurnFoodNotify),
-            535 => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentCsReq),
-            506 => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentScRsp),
-            594 => ::std::option::Option::Some(CmdItemType::CmdGeneralVirtualItemDataNotify),
-            553 => ::std::option::Option::Some(CmdItemType::CmdDestroyItemScRsp),
-            556 => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicScRsp),
-            595 => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentCsReq),
-            582 => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicCsReq),
-            524 => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListCsReq),
+            529 => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicScRsp),
+            533 => ::std::option::Option::Some(CmdItemType::CmdSellItemScRsp),
+            575 => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListScRsp),
+            535 => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanCsReq),
+            517 => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentScRsp),
+            600 => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanCsReq),
+            527 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmCsReq),
+            525 => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumCompleteNotify),
+            553 => ::std::option::Option::Some(CmdItemType::CmdRelicFilterPlanClearNameScNotify),
+            521 => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicCsReq),
+            537 => ::std::option::Option::Some(CmdItemType::CmdDestroyItemScRsp),
+            532 => ::std::option::Option::Some(CmdItemType::CmdGetBagScRsp),
+            599 => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanScRsp),
+            514 => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumUpdateNotify),
+            524 => ::std::option::Option::Some(CmdItemType::CmdCancelMarkItemNotify),
+            511 => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeCsReq),
+            590 => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentCsReq),
+            542 => ::std::option::Option::Some(CmdItemType::CmdRechargeSuccNotify),
+            587 => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanCsReq),
+            584 => ::std::option::Option::Some(CmdItemType::CmdDestroyItemCsReq),
+            576 => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentCsReq),
+            560 => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicScRsp),
+            593 => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeScRsp),
+            509 => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanScRsp),
+            571 => ::std::option::Option::Some(CmdItemType::CmdUseItemCsReq),
+            591 => ::std::option::Option::Some(CmdItemType::CmdMarkItemScRsp),
+            577 => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinCsReq),
+            536 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeCsReq),
+            539 => ::std::option::Option::Some(CmdItemType::CmdLockRelicScRsp),
+            556 => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentScRsp),
+            552 => ::std::option::Option::Some(CmdItemType::CmdUseItemScRsp),
+            502 => ::std::option::Option::Some(CmdItemType::CmdLockRelicCsReq),
+            595 => ::std::option::Option::Some(CmdItemType::CmdGetBagCsReq),
+            543 => ::std::option::Option::Some(CmdItemType::CmdSellItemCsReq),
+            572 => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentCsReq),
+            598 => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchScRsp),
+            557 => ::std::option::Option::Some(CmdItemType::CmdSyncTurnFoodNotify),
+            508 => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanScRsp),
+            501 => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanScRsp),
+            563 => ::std::option::Option::Some(CmdItemType::CmdAddEquipmentScNotify),
+            585 => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentScRsp),
+            558 => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinScRsp),
+            545 => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicScRsp),
+            564 => ::std::option::Option::Some(CmdItemType::CmdGeneralVirtualItemDataNotify),
+            507 => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchCsReq),
+            548 => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentScRsp),
+            594 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeScRsp),
+            551 => ::std::option::Option::Some(CmdItemType::CmdMarkItemCsReq),
+            516 => ::std::option::Option::Some(CmdItemType::CmdComposeItemCsReq),
+            583 => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicCsReq),
+            522 => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentCsReq),
+            546 => ::std::option::Option::Some(CmdItemType::CmdComposeItemScRsp),
+            540 => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentScRsp),
+            531 => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentCsReq),
+            574 => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmScRsp),
+            568 => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanCsReq),
+            506 => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicCsReq),
+            534 => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanScRsp),
+            554 => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanCsReq),
+            530 => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -228,65 +228,65 @@ impl ::protobuf::Enum for CmdItemType {
     fn from_str(str: &str) -> ::std::option::Option<CmdItemType> {
         match str {
             "CmdItemTypeNone" => ::std::option::Option::Some(CmdItemType::CmdItemTypeNone),
-            "CmdMarkItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdMarkItemCsReq),
-            "CmdExpUpRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicCsReq),
-            "CmdGetRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanScRsp),
-            "CmdMarkRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanScRsp),
+            "CmdComposeSelectedRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicScRsp),
+            "CmdSellItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdSellItemScRsp),
+            "CmdGetMarkItemListScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListScRsp),
+            "CmdDeleteRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanCsReq),
+            "CmdBatchRankUpEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentScRsp),
+            "CmdGetRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanCsReq),
+            "CmdRelicReforgeConfirmCsReq" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmCsReq),
+            "CmdComposeLimitNumCompleteNotify" => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumCompleteNotify),
+            "CmdRelicFilterPlanClearNameScNotify" => ::std::option::Option::Some(CmdItemType::CmdRelicFilterPlanClearNameScNotify),
+            "CmdComposeSelectedRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicCsReq),
+            "CmdDestroyItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdDestroyItemScRsp),
+            "CmdGetBagScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetBagScRsp),
+            "CmdAddRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanScRsp),
+            "CmdComposeLimitNumUpdateNotify" => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumUpdateNotify),
+            "CmdCancelMarkItemNotify" => ::std::option::Option::Some(CmdItemType::CmdCancelMarkItemNotify),
+            "CmdGetRecyleTimeCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeCsReq),
+            "CmdBatchRankUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentCsReq),
+            "CmdRechargeSuccNotify" => ::std::option::Option::Some(CmdItemType::CmdRechargeSuccNotify),
             "CmdModifyRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanCsReq),
             "CmdDestroyItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdDestroyItemCsReq),
-            "CmdModifyRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanScRsp),
-            "CmdSetTurnFoodSwitchScRsp" => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchScRsp),
+            "CmdLockEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentCsReq),
+            "CmdExpUpRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicScRsp),
+            "CmdGetRecyleTimeScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeScRsp),
+            "CmdGetRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanScRsp),
             "CmdUseItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdUseItemCsReq),
-            "CmdComposeItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdComposeItemScRsp),
-            "CmdBatchRankUpEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentScRsp),
-            "CmdGetBagCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetBagCsReq),
-            "CmdAddEquipmentScNotify" => ::std::option::Option::Some(CmdItemType::CmdAddEquipmentScNotify),
             "CmdMarkItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdMarkItemScRsp),
-            "CmdDiscardRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicCsReq),
-            "CmdRelicReforgeCsReq" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeCsReq),
-            "CmdUseItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdUseItemScRsp),
-            "CmdAddRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanScRsp),
-            "CmdDeleteRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanCsReq),
             "CmdExchangeHcoinCsReq" => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinCsReq),
-            "CmdAddRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanCsReq),
+            "CmdRelicReforgeCsReq" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeCsReq),
             "CmdLockRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdLockRelicScRsp),
-            "CmdComposeLimitNumCompleteNotify" => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumCompleteNotify),
+            "CmdRankUpEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentScRsp),
+            "CmdUseItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdUseItemScRsp),
+            "CmdLockRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdLockRelicCsReq),
+            "CmdGetBagCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetBagCsReq),
+            "CmdSellItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdSellItemCsReq),
+            "CmdExpUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentCsReq),
+            "CmdSetTurnFoodSwitchScRsp" => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchScRsp),
+            "CmdSyncTurnFoodNotify" => ::std::option::Option::Some(CmdItemType::CmdSyncTurnFoodNotify),
+            "CmdModifyRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdModifyRelicFilterPlanScRsp),
+            "CmdMarkRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanScRsp),
+            "CmdAddEquipmentScNotify" => ::std::option::Option::Some(CmdItemType::CmdAddEquipmentScNotify),
             "CmdExpUpEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentScRsp),
             "CmdExchangeHcoinScRsp" => ::std::option::Option::Some(CmdItemType::CmdExchangeHcoinScRsp),
-            "CmdGetBagScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetBagScRsp),
-            "CmdRelicFilterPlanClearNameScNotify" => ::std::option::Option::Some(CmdItemType::CmdRelicFilterPlanClearNameScNotify),
-            "CmdRechargeSuccNotify" => ::std::option::Option::Some(CmdItemType::CmdRechargeSuccNotify),
-            "CmdRelicReforgeConfirmScRsp" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmScRsp),
-            "CmdSetTurnFoodSwitchCsReq" => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchCsReq),
-            "CmdRelicReforgeConfirmCsReq" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmCsReq),
-            "CmdComposeSelectedRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicScRsp),
-            "CmdComposeLimitNumUpdateNotify" => ::std::option::Option::Some(CmdItemType::CmdComposeLimitNumUpdateNotify),
-            "CmdLockRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdLockRelicCsReq),
-            "CmdGetRecyleTimeCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeCsReq),
-            "CmdPromoteEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentCsReq),
-            "CmdRankUpEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentScRsp),
-            "CmdSellItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdSellItemScRsp),
-            "CmdRankUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentCsReq),
-            "CmdExpUpRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicScRsp),
-            "CmdRelicReforgeScRsp" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeScRsp),
-            "CmdPromoteEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentScRsp),
-            "CmdDeleteRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanScRsp),
-            "CmdMarkRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanCsReq),
-            "CmdGetRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetRelicFilterPlanCsReq),
-            "CmdSellItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdSellItemCsReq),
-            "CmdGetRecyleTimeScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetRecyleTimeScRsp),
-            "CmdGetMarkItemListScRsp" => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListScRsp),
-            "CmdBatchRankUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdBatchRankUpEquipmentCsReq),
-            "CmdCancelMarkItemNotify" => ::std::option::Option::Some(CmdItemType::CmdCancelMarkItemNotify),
-            "CmdComposeItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdComposeItemCsReq),
-            "CmdSyncTurnFoodNotify" => ::std::option::Option::Some(CmdItemType::CmdSyncTurnFoodNotify),
-            "CmdLockEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentCsReq),
-            "CmdLockEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentScRsp),
-            "CmdGeneralVirtualItemDataNotify" => ::std::option::Option::Some(CmdItemType::CmdGeneralVirtualItemDataNotify),
-            "CmdDestroyItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdDestroyItemScRsp),
             "CmdDiscardRelicScRsp" => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicScRsp),
-            "CmdExpUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdExpUpEquipmentCsReq),
-            "CmdComposeSelectedRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdComposeSelectedRelicCsReq),
+            "CmdGeneralVirtualItemDataNotify" => ::std::option::Option::Some(CmdItemType::CmdGeneralVirtualItemDataNotify),
+            "CmdSetTurnFoodSwitchCsReq" => ::std::option::Option::Some(CmdItemType::CmdSetTurnFoodSwitchCsReq),
+            "CmdLockEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdLockEquipmentScRsp),
+            "CmdRelicReforgeScRsp" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeScRsp),
+            "CmdMarkItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdMarkItemCsReq),
+            "CmdComposeItemCsReq" => ::std::option::Option::Some(CmdItemType::CmdComposeItemCsReq),
+            "CmdExpUpRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdExpUpRelicCsReq),
+            "CmdRankUpEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdRankUpEquipmentCsReq),
+            "CmdComposeItemScRsp" => ::std::option::Option::Some(CmdItemType::CmdComposeItemScRsp),
+            "CmdPromoteEquipmentScRsp" => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentScRsp),
+            "CmdPromoteEquipmentCsReq" => ::std::option::Option::Some(CmdItemType::CmdPromoteEquipmentCsReq),
+            "CmdRelicReforgeConfirmScRsp" => ::std::option::Option::Some(CmdItemType::CmdRelicReforgeConfirmScRsp),
+            "CmdMarkRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdMarkRelicFilterPlanCsReq),
+            "CmdDiscardRelicCsReq" => ::std::option::Option::Some(CmdItemType::CmdDiscardRelicCsReq),
+            "CmdDeleteRelicFilterPlanScRsp" => ::std::option::Option::Some(CmdItemType::CmdDeleteRelicFilterPlanScRsp),
+            "CmdAddRelicFilterPlanCsReq" => ::std::option::Option::Some(CmdItemType::CmdAddRelicFilterPlanCsReq),
             "CmdGetMarkItemListCsReq" => ::std::option::Option::Some(CmdItemType::CmdGetMarkItemListCsReq),
             _ => ::std::option::Option::None
         }
@@ -294,65 +294,65 @@ impl ::protobuf::Enum for CmdItemType {
 
     const VALUES: &'static [CmdItemType] = &[
         CmdItemType::CmdItemTypeNone,
-        CmdItemType::CmdMarkItemCsReq,
-        CmdItemType::CmdExpUpRelicCsReq,
-        CmdItemType::CmdGetRelicFilterPlanScRsp,
-        CmdItemType::CmdMarkRelicFilterPlanScRsp,
+        CmdItemType::CmdComposeSelectedRelicScRsp,
+        CmdItemType::CmdSellItemScRsp,
+        CmdItemType::CmdGetMarkItemListScRsp,
+        CmdItemType::CmdDeleteRelicFilterPlanCsReq,
+        CmdItemType::CmdBatchRankUpEquipmentScRsp,
+        CmdItemType::CmdGetRelicFilterPlanCsReq,
+        CmdItemType::CmdRelicReforgeConfirmCsReq,
+        CmdItemType::CmdComposeLimitNumCompleteNotify,
+        CmdItemType::CmdRelicFilterPlanClearNameScNotify,
+        CmdItemType::CmdComposeSelectedRelicCsReq,
+        CmdItemType::CmdDestroyItemScRsp,
+        CmdItemType::CmdGetBagScRsp,
+        CmdItemType::CmdAddRelicFilterPlanScRsp,
+        CmdItemType::CmdComposeLimitNumUpdateNotify,
+        CmdItemType::CmdCancelMarkItemNotify,
+        CmdItemType::CmdGetRecyleTimeCsReq,
+        CmdItemType::CmdBatchRankUpEquipmentCsReq,
+        CmdItemType::CmdRechargeSuccNotify,
         CmdItemType::CmdModifyRelicFilterPlanCsReq,
         CmdItemType::CmdDestroyItemCsReq,
-        CmdItemType::CmdModifyRelicFilterPlanScRsp,
-        CmdItemType::CmdSetTurnFoodSwitchScRsp,
+        CmdItemType::CmdLockEquipmentCsReq,
+        CmdItemType::CmdExpUpRelicScRsp,
+        CmdItemType::CmdGetRecyleTimeScRsp,
+        CmdItemType::CmdGetRelicFilterPlanScRsp,
         CmdItemType::CmdUseItemCsReq,
-        CmdItemType::CmdComposeItemScRsp,
-        CmdItemType::CmdBatchRankUpEquipmentScRsp,
-        CmdItemType::CmdGetBagCsReq,
-        CmdItemType::CmdAddEquipmentScNotify,
         CmdItemType::CmdMarkItemScRsp,
-        CmdItemType::CmdDiscardRelicCsReq,
-        CmdItemType::CmdRelicReforgeCsReq,
-        CmdItemType::CmdUseItemScRsp,
-        CmdItemType::CmdAddRelicFilterPlanScRsp,
-        CmdItemType::CmdDeleteRelicFilterPlanCsReq,
         CmdItemType::CmdExchangeHcoinCsReq,
-        CmdItemType::CmdAddRelicFilterPlanCsReq,
+        CmdItemType::CmdRelicReforgeCsReq,
         CmdItemType::CmdLockRelicScRsp,
-        CmdItemType::CmdComposeLimitNumCompleteNotify,
+        CmdItemType::CmdRankUpEquipmentScRsp,
+        CmdItemType::CmdUseItemScRsp,
+        CmdItemType::CmdLockRelicCsReq,
+        CmdItemType::CmdGetBagCsReq,
+        CmdItemType::CmdSellItemCsReq,
+        CmdItemType::CmdExpUpEquipmentCsReq,
+        CmdItemType::CmdSetTurnFoodSwitchScRsp,
+        CmdItemType::CmdSyncTurnFoodNotify,
+        CmdItemType::CmdModifyRelicFilterPlanScRsp,
+        CmdItemType::CmdMarkRelicFilterPlanScRsp,
+        CmdItemType::CmdAddEquipmentScNotify,
         CmdItemType::CmdExpUpEquipmentScRsp,
         CmdItemType::CmdExchangeHcoinScRsp,
-        CmdItemType::CmdGetBagScRsp,
-        CmdItemType::CmdRelicFilterPlanClearNameScNotify,
-        CmdItemType::CmdRechargeSuccNotify,
-        CmdItemType::CmdRelicReforgeConfirmScRsp,
-        CmdItemType::CmdSetTurnFoodSwitchCsReq,
-        CmdItemType::CmdRelicReforgeConfirmCsReq,
-        CmdItemType::CmdComposeSelectedRelicScRsp,
-        CmdItemType::CmdComposeLimitNumUpdateNotify,
-        CmdItemType::CmdLockRelicCsReq,
-        CmdItemType::CmdGetRecyleTimeCsReq,
-        CmdItemType::CmdPromoteEquipmentCsReq,
-        CmdItemType::CmdRankUpEquipmentScRsp,
-        CmdItemType::CmdSellItemScRsp,
-        CmdItemType::CmdRankUpEquipmentCsReq,
-        CmdItemType::CmdExpUpRelicScRsp,
-        CmdItemType::CmdRelicReforgeScRsp,
-        CmdItemType::CmdPromoteEquipmentScRsp,
-        CmdItemType::CmdDeleteRelicFilterPlanScRsp,
-        CmdItemType::CmdMarkRelicFilterPlanCsReq,
-        CmdItemType::CmdGetRelicFilterPlanCsReq,
-        CmdItemType::CmdSellItemCsReq,
-        CmdItemType::CmdGetRecyleTimeScRsp,
-        CmdItemType::CmdGetMarkItemListScRsp,
-        CmdItemType::CmdBatchRankUpEquipmentCsReq,
-        CmdItemType::CmdCancelMarkItemNotify,
-        CmdItemType::CmdComposeItemCsReq,
-        CmdItemType::CmdSyncTurnFoodNotify,
-        CmdItemType::CmdLockEquipmentCsReq,
-        CmdItemType::CmdLockEquipmentScRsp,
-        CmdItemType::CmdGeneralVirtualItemDataNotify,
-        CmdItemType::CmdDestroyItemScRsp,
         CmdItemType::CmdDiscardRelicScRsp,
-        CmdItemType::CmdExpUpEquipmentCsReq,
-        CmdItemType::CmdComposeSelectedRelicCsReq,
+        CmdItemType::CmdGeneralVirtualItemDataNotify,
+        CmdItemType::CmdSetTurnFoodSwitchCsReq,
+        CmdItemType::CmdLockEquipmentScRsp,
+        CmdItemType::CmdRelicReforgeScRsp,
+        CmdItemType::CmdMarkItemCsReq,
+        CmdItemType::CmdComposeItemCsReq,
+        CmdItemType::CmdExpUpRelicCsReq,
+        CmdItemType::CmdRankUpEquipmentCsReq,
+        CmdItemType::CmdComposeItemScRsp,
+        CmdItemType::CmdPromoteEquipmentScRsp,
+        CmdItemType::CmdPromoteEquipmentCsReq,
+        CmdItemType::CmdRelicReforgeConfirmScRsp,
+        CmdItemType::CmdMarkRelicFilterPlanCsReq,
+        CmdItemType::CmdDiscardRelicCsReq,
+        CmdItemType::CmdDeleteRelicFilterPlanScRsp,
+        CmdItemType::CmdAddRelicFilterPlanCsReq,
         CmdItemType::CmdGetMarkItemListCsReq,
     ];
 }
@@ -366,65 +366,65 @@ impl ::protobuf::EnumFull for CmdItemType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdItemType::CmdItemTypeNone => 0,
-            CmdItemType::CmdMarkItemCsReq => 1,
-            CmdItemType::CmdExpUpRelicCsReq => 2,
-            CmdItemType::CmdGetRelicFilterPlanScRsp => 3,
-            CmdItemType::CmdMarkRelicFilterPlanScRsp => 4,
-            CmdItemType::CmdModifyRelicFilterPlanCsReq => 5,
-            CmdItemType::CmdDestroyItemCsReq => 6,
-            CmdItemType::CmdModifyRelicFilterPlanScRsp => 7,
-            CmdItemType::CmdSetTurnFoodSwitchScRsp => 8,
-            CmdItemType::CmdUseItemCsReq => 9,
-            CmdItemType::CmdComposeItemScRsp => 10,
-            CmdItemType::CmdBatchRankUpEquipmentScRsp => 11,
-            CmdItemType::CmdGetBagCsReq => 12,
-            CmdItemType::CmdAddEquipmentScNotify => 13,
-            CmdItemType::CmdMarkItemScRsp => 14,
-            CmdItemType::CmdDiscardRelicCsReq => 15,
-            CmdItemType::CmdRelicReforgeCsReq => 16,
-            CmdItemType::CmdUseItemScRsp => 17,
-            CmdItemType::CmdAddRelicFilterPlanScRsp => 18,
-            CmdItemType::CmdDeleteRelicFilterPlanCsReq => 19,
-            CmdItemType::CmdExchangeHcoinCsReq => 20,
-            CmdItemType::CmdAddRelicFilterPlanCsReq => 21,
-            CmdItemType::CmdLockRelicScRsp => 22,
-            CmdItemType::CmdComposeLimitNumCompleteNotify => 23,
-            CmdItemType::CmdExpUpEquipmentScRsp => 24,
-            CmdItemType::CmdExchangeHcoinScRsp => 25,
-            CmdItemType::CmdGetBagScRsp => 26,
-            CmdItemType::CmdRelicFilterPlanClearNameScNotify => 27,
-            CmdItemType::CmdRechargeSuccNotify => 28,
-            CmdItemType::CmdRelicReforgeConfirmScRsp => 29,
-            CmdItemType::CmdSetTurnFoodSwitchCsReq => 30,
-            CmdItemType::CmdRelicReforgeConfirmCsReq => 31,
-            CmdItemType::CmdComposeSelectedRelicScRsp => 32,
-            CmdItemType::CmdComposeLimitNumUpdateNotify => 33,
-            CmdItemType::CmdLockRelicCsReq => 34,
-            CmdItemType::CmdGetRecyleTimeCsReq => 35,
-            CmdItemType::CmdPromoteEquipmentCsReq => 36,
-            CmdItemType::CmdRankUpEquipmentScRsp => 37,
-            CmdItemType::CmdSellItemScRsp => 38,
-            CmdItemType::CmdRankUpEquipmentCsReq => 39,
-            CmdItemType::CmdExpUpRelicScRsp => 40,
-            CmdItemType::CmdRelicReforgeScRsp => 41,
-            CmdItemType::CmdPromoteEquipmentScRsp => 42,
-            CmdItemType::CmdDeleteRelicFilterPlanScRsp => 43,
-            CmdItemType::CmdMarkRelicFilterPlanCsReq => 44,
-            CmdItemType::CmdGetRelicFilterPlanCsReq => 45,
-            CmdItemType::CmdSellItemCsReq => 46,
-            CmdItemType::CmdGetRecyleTimeScRsp => 47,
-            CmdItemType::CmdGetMarkItemListScRsp => 48,
-            CmdItemType::CmdBatchRankUpEquipmentCsReq => 49,
-            CmdItemType::CmdCancelMarkItemNotify => 50,
-            CmdItemType::CmdComposeItemCsReq => 51,
-            CmdItemType::CmdSyncTurnFoodNotify => 52,
-            CmdItemType::CmdLockEquipmentCsReq => 53,
-            CmdItemType::CmdLockEquipmentScRsp => 54,
-            CmdItemType::CmdGeneralVirtualItemDataNotify => 55,
-            CmdItemType::CmdDestroyItemScRsp => 56,
-            CmdItemType::CmdDiscardRelicScRsp => 57,
-            CmdItemType::CmdExpUpEquipmentCsReq => 58,
-            CmdItemType::CmdComposeSelectedRelicCsReq => 59,
+            CmdItemType::CmdComposeSelectedRelicScRsp => 1,
+            CmdItemType::CmdSellItemScRsp => 2,
+            CmdItemType::CmdGetMarkItemListScRsp => 3,
+            CmdItemType::CmdDeleteRelicFilterPlanCsReq => 4,
+            CmdItemType::CmdBatchRankUpEquipmentScRsp => 5,
+            CmdItemType::CmdGetRelicFilterPlanCsReq => 6,
+            CmdItemType::CmdRelicReforgeConfirmCsReq => 7,
+            CmdItemType::CmdComposeLimitNumCompleteNotify => 8,
+            CmdItemType::CmdRelicFilterPlanClearNameScNotify => 9,
+            CmdItemType::CmdComposeSelectedRelicCsReq => 10,
+            CmdItemType::CmdDestroyItemScRsp => 11,
+            CmdItemType::CmdGetBagScRsp => 12,
+            CmdItemType::CmdAddRelicFilterPlanScRsp => 13,
+            CmdItemType::CmdComposeLimitNumUpdateNotify => 14,
+            CmdItemType::CmdCancelMarkItemNotify => 15,
+            CmdItemType::CmdGetRecyleTimeCsReq => 16,
+            CmdItemType::CmdBatchRankUpEquipmentCsReq => 17,
+            CmdItemType::CmdRechargeSuccNotify => 18,
+            CmdItemType::CmdModifyRelicFilterPlanCsReq => 19,
+            CmdItemType::CmdDestroyItemCsReq => 20,
+            CmdItemType::CmdLockEquipmentCsReq => 21,
+            CmdItemType::CmdExpUpRelicScRsp => 22,
+            CmdItemType::CmdGetRecyleTimeScRsp => 23,
+            CmdItemType::CmdGetRelicFilterPlanScRsp => 24,
+            CmdItemType::CmdUseItemCsReq => 25,
+            CmdItemType::CmdMarkItemScRsp => 26,
+            CmdItemType::CmdExchangeHcoinCsReq => 27,
+            CmdItemType::CmdRelicReforgeCsReq => 28,
+            CmdItemType::CmdLockRelicScRsp => 29,
+            CmdItemType::CmdRankUpEquipmentScRsp => 30,
+            CmdItemType::CmdUseItemScRsp => 31,
+            CmdItemType::CmdLockRelicCsReq => 32,
+            CmdItemType::CmdGetBagCsReq => 33,
+            CmdItemType::CmdSellItemCsReq => 34,
+            CmdItemType::CmdExpUpEquipmentCsReq => 35,
+            CmdItemType::CmdSetTurnFoodSwitchScRsp => 36,
+            CmdItemType::CmdSyncTurnFoodNotify => 37,
+            CmdItemType::CmdModifyRelicFilterPlanScRsp => 38,
+            CmdItemType::CmdMarkRelicFilterPlanScRsp => 39,
+            CmdItemType::CmdAddEquipmentScNotify => 40,
+            CmdItemType::CmdExpUpEquipmentScRsp => 41,
+            CmdItemType::CmdExchangeHcoinScRsp => 42,
+            CmdItemType::CmdDiscardRelicScRsp => 43,
+            CmdItemType::CmdGeneralVirtualItemDataNotify => 44,
+            CmdItemType::CmdSetTurnFoodSwitchCsReq => 45,
+            CmdItemType::CmdLockEquipmentScRsp => 46,
+            CmdItemType::CmdRelicReforgeScRsp => 47,
+            CmdItemType::CmdMarkItemCsReq => 48,
+            CmdItemType::CmdComposeItemCsReq => 49,
+            CmdItemType::CmdExpUpRelicCsReq => 50,
+            CmdItemType::CmdRankUpEquipmentCsReq => 51,
+            CmdItemType::CmdComposeItemScRsp => 52,
+            CmdItemType::CmdPromoteEquipmentScRsp => 53,
+            CmdItemType::CmdPromoteEquipmentCsReq => 54,
+            CmdItemType::CmdRelicReforgeConfirmScRsp => 55,
+            CmdItemType::CmdMarkRelicFilterPlanCsReq => 56,
+            CmdItemType::CmdDiscardRelicCsReq => 57,
+            CmdItemType::CmdDeleteRelicFilterPlanScRsp => 58,
+            CmdItemType::CmdAddRelicFilterPlanCsReq => 59,
             CmdItemType::CmdGetMarkItemListCsReq => 60,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -445,47 +445,47 @@ impl CmdItemType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdItemType.proto*\x9a\x0e\n\x0bCmdItemType\x12\x13\n\x0fCmdItemTy\
-    peNone\x10\0\x12\x15\n\x10CmdMarkItemCsReq\x10\xbf\x04\x12\x17\n\x12CmdE\
-    xpUpRelicCsReq\x10\xbd\x04\x12\x1f\n\x1aCmdGetRelicFilterPlanScRsp\x10\
-    \x85\x04\x12\x20\n\x1bCmdMarkRelicFilterPlanScRsp\x10\x89\x04\x12\"\n\
-    \x1dCmdModifyRelicFilterPlanCsReq\x10\xc2\x04\x12\x18\n\x13CmdDestroyIte\
-    mCsReq\x10\xd0\x04\x12\"\n\x1dCmdModifyRelicFilterPlanScRsp\x10\xd4\x04\
-    \x12\x1e\n\x19CmdSetTurnFoodSwitchScRsp\x10\xb0\x04\x12\x14\n\x0fCmdUseI\
-    temCsReq\x10\xba\x04\x12\x18\n\x13CmdComposeItemScRsp\x10\xa6\x04\x12!\n\
-    \x1cCmdBatchRankUpEquipmentScRsp\x10\x8f\x04\x12\x13\n\x0eCmdGetBagCsReq\
-    \x10\xff\x03\x12\x1c\n\x17CmdAddEquipmentScNotify\x10\x99\x04\x12\x15\n\
-    \x10CmdMarkItemScRsp\x10\x90\x04\x12\x19\n\x14CmdDiscardRelicCsReq\x10\
-    \xcb\x04\x12\x19\n\x14CmdRelicReforgeCsReq\x10\x95\x04\x12\x14\n\x0fCmdU\
-    seItemScRsp\x10\xcd\x04\x12\x1f\n\x1aCmdAddRelicFilterPlanScRsp\x10\xf8\
-    \x03\x12\"\n\x1dCmdDeleteRelicFilterPlanCsReq\x10\xb9\x04\x12\x1a\n\x15C\
-    mdExchangeHcoinCsReq\x10\xfb\x03\x12\x1f\n\x1aCmdAddRelicFilterPlanCsReq\
-    \x10\xb3\x04\x12\x16\n\x11CmdLockRelicScRsp\x10\xd1\x04\x12%\n\x20CmdCom\
-    poseLimitNumCompleteNotify\x10\x8a\x04\x12\x1b\n\x16CmdExpUpEquipmentScR\
-    sp\x10\x86\x04\x12\x1a\n\x15CmdExchangeHcoinScRsp\x10\xbb\x04\x12\x13\n\
-    \x0eCmdGetBagScRsp\x10\x81\x04\x12(\n#CmdRelicFilterPlanClearNameScNotif\
-    y\x10\xfc\x03\x12\x1a\n\x15CmdRechargeSuccNotify\x10\xfe\x03\x12\x20\n\
-    \x1bCmdRelicReforgeConfirmScRsp\x10\x9c\x04\x12\x1e\n\x19CmdSetTurnFoodS\
-    witchCsReq\x10\xb8\x04\x12\x20\n\x1bCmdRelicReforgeConfirmCsReq\x10\xf5\
-    \x03\x12!\n\x1cCmdComposeSelectedRelicScRsp\x10\xa7\x04\x12#\n\x1eCmdCom\
-    poseLimitNumUpdateNotify\x10\xca\x04\x12\x16\n\x11CmdLockRelicCsReq\x10\
-    \xcf\x04\x12\x1a\n\x15CmdGetRecyleTimeCsReq\x10\xb5\x04\x12\x1d\n\x18Cmd\
-    PromoteEquipmentCsReq\x10\xa3\x04\x12\x1c\n\x17CmdRankUpEquipmentScRsp\
-    \x10\x92\x04\x12\x15\n\x10CmdSellItemScRsp\x10\x8d\x04\x12\x1c\n\x17CmdR\
-    ankUpEquipmentCsReq\x10\x8e\x04\x12\x17\n\x12CmdExpUpRelicScRsp\x10\xc1\
-    \x04\x12\x19\n\x14CmdRelicReforgeScRsp\x10\xb4\x04\x12\x1d\n\x18CmdPromo\
-    teEquipmentScRsp\x10\xfd\x03\x12\"\n\x1dCmdDeleteRelicFilterPlanScRsp\
-    \x10\xb6\x04\x12\x20\n\x1bCmdMarkRelicFilterPlanCsReq\x10\xd7\x04\x12\
-    \x1f\n\x1aCmdGetRelicFilterPlanCsReq\x10\x9d\x04\x12\x15\n\x10CmdSellIte\
-    mCsReq\x10\xad\x04\x12\x1a\n\x15CmdGetRecyleTimeScRsp\x10\xa8\x04\x12\
-    \x1c\n\x17CmdGetMarkItemListScRsp\x10\xc8\x04\x12!\n\x1cCmdBatchRankUpEq\
-    uipmentCsReq\x10\xaf\x04\x12\x1c\n\x17CmdCancelMarkItemNotify\x10\xc7\
-    \x04\x12\x18\n\x13CmdComposeItemCsReq\x10\x98\x04\x12\x1a\n\x15CmdSyncTu\
-    rnFoodNotify\x10\xae\x04\x12\x1a\n\x15CmdLockEquipmentCsReq\x10\x97\x04\
-    \x12\x1a\n\x15CmdLockEquipmentScRsp\x10\xfa\x03\x12$\n\x1fCmdGeneralVirt\
-    ualItemDataNotify\x10\xd2\x04\x12\x18\n\x13CmdDestroyItemScRsp\x10\xa9\
-    \x04\x12\x19\n\x14CmdDiscardRelicScRsp\x10\xac\x04\x12\x1b\n\x16CmdExpUp\
-    EquipmentCsReq\x10\xd3\x04\x12!\n\x1cCmdComposeSelectedRelicCsReq\x10\
-    \xc6\x04\x12\x1c\n\x17CmdGetMarkItemListCsReq\x10\x8c\x04b\x06proto3\
+    peNone\x10\0\x12!\n\x1cCmdComposeSelectedRelicScRsp\x10\x91\x04\x12\x15\
+    \n\x10CmdSellItemScRsp\x10\x95\x04\x12\x1c\n\x17CmdGetMarkItemListScRsp\
+    \x10\xbf\x04\x12\"\n\x1dCmdDeleteRelicFilterPlanCsReq\x10\x97\x04\x12!\n\
+    \x1cCmdBatchRankUpEquipmentScRsp\x10\x85\x04\x12\x1f\n\x1aCmdGetRelicFil\
+    terPlanCsReq\x10\xd8\x04\x12\x20\n\x1bCmdRelicReforgeConfirmCsReq\x10\
+    \x8f\x04\x12%\n\x20CmdComposeLimitNumCompleteNotify\x10\x8d\x04\x12(\n#C\
+    mdRelicFilterPlanClearNameScNotify\x10\xa9\x04\x12!\n\x1cCmdComposeSelec\
+    tedRelicCsReq\x10\x89\x04\x12\x18\n\x13CmdDestroyItemScRsp\x10\x99\x04\
+    \x12\x13\n\x0eCmdGetBagScRsp\x10\x94\x04\x12\x1f\n\x1aCmdAddRelicFilterP\
+    lanScRsp\x10\xd7\x04\x12#\n\x1eCmdComposeLimitNumUpdateNotify\x10\x82\
+    \x04\x12\x1c\n\x17CmdCancelMarkItemNotify\x10\x8c\x04\x12\x1a\n\x15CmdGe\
+    tRecyleTimeCsReq\x10\xff\x03\x12!\n\x1cCmdBatchRankUpEquipmentCsReq\x10\
+    \xce\x04\x12\x1a\n\x15CmdRechargeSuccNotify\x10\x9e\x04\x12\"\n\x1dCmdMo\
+    difyRelicFilterPlanCsReq\x10\xcb\x04\x12\x18\n\x13CmdDestroyItemCsReq\
+    \x10\xc8\x04\x12\x1a\n\x15CmdLockEquipmentCsReq\x10\xc0\x04\x12\x17\n\
+    \x12CmdExpUpRelicScRsp\x10\xb0\x04\x12\x1a\n\x15CmdGetRecyleTimeScRsp\
+    \x10\xd1\x04\x12\x1f\n\x1aCmdGetRelicFilterPlanScRsp\x10\xfd\x03\x12\x14\
+    \n\x0fCmdUseItemCsReq\x10\xbb\x04\x12\x15\n\x10CmdMarkItemScRsp\x10\xcf\
+    \x04\x12\x1a\n\x15CmdExchangeHcoinCsReq\x10\xc1\x04\x12\x19\n\x14CmdReli\
+    cReforgeCsReq\x10\x98\x04\x12\x16\n\x11CmdLockRelicScRsp\x10\x9b\x04\x12\
+    \x1c\n\x17CmdRankUpEquipmentScRsp\x10\xac\x04\x12\x14\n\x0fCmdUseItemScR\
+    sp\x10\xa8\x04\x12\x16\n\x11CmdLockRelicCsReq\x10\xf6\x03\x12\x13\n\x0eC\
+    mdGetBagCsReq\x10\xd3\x04\x12\x15\n\x10CmdSellItemCsReq\x10\x9f\x04\x12\
+    \x1b\n\x16CmdExpUpEquipmentCsReq\x10\xbc\x04\x12\x1e\n\x19CmdSetTurnFood\
+    SwitchScRsp\x10\xd6\x04\x12\x1a\n\x15CmdSyncTurnFoodNotify\x10\xad\x04\
+    \x12\"\n\x1dCmdModifyRelicFilterPlanScRsp\x10\xfc\x03\x12\x20\n\x1bCmdMa\
+    rkRelicFilterPlanScRsp\x10\xf5\x03\x12\x1c\n\x17CmdAddEquipmentScNotify\
+    \x10\xb3\x04\x12\x1b\n\x16CmdExpUpEquipmentScRsp\x10\xc9\x04\x12\x1a\n\
+    \x15CmdExchangeHcoinScRsp\x10\xae\x04\x12\x19\n\x14CmdDiscardRelicScRsp\
+    \x10\xa1\x04\x12$\n\x1fCmdGeneralVirtualItemDataNotify\x10\xb4\x04\x12\
+    \x1e\n\x19CmdSetTurnFoodSwitchCsReq\x10\xfb\x03\x12\x1a\n\x15CmdLockEqui\
+    pmentScRsp\x10\xa4\x04\x12\x19\n\x14CmdRelicReforgeScRsp\x10\xd2\x04\x12\
+    \x15\n\x10CmdMarkItemCsReq\x10\xa7\x04\x12\x18\n\x13CmdComposeItemCsReq\
+    \x10\x84\x04\x12\x17\n\x12CmdExpUpRelicCsReq\x10\xc7\x04\x12\x1c\n\x17Cm\
+    dRankUpEquipmentCsReq\x10\x8a\x04\x12\x18\n\x13CmdComposeItemScRsp\x10\
+    \xa2\x04\x12\x1d\n\x18CmdPromoteEquipmentScRsp\x10\x9c\x04\x12\x1d\n\x18\
+    CmdPromoteEquipmentCsReq\x10\x93\x04\x12\x20\n\x1bCmdRelicReforgeConfirm\
+    ScRsp\x10\xbe\x04\x12\x20\n\x1bCmdMarkRelicFilterPlanCsReq\x10\xb8\x04\
+    \x12\x19\n\x14CmdDiscardRelicCsReq\x10\xfa\x03\x12\"\n\x1dCmdDeleteRelic\
+    FilterPlanScRsp\x10\x96\x04\x12\x1f\n\x1aCmdAddRelicFilterPlanCsReq\x10\
+    \xaa\x04\x12\x1c\n\x17CmdGetMarkItemListCsReq\x10\x92\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

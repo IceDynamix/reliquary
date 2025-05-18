@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumTargetRewardNotify {
     // message fields
-    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.PNGDDNAJCGG)
-    pub PNGDDNAJCGG: u32,
-    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.MBEJBLFHCBH)
-    pub MBEJBLFHCBH: u32,
     // @@protoc_insertion_point(field:MuseumTargetRewardNotify.item_id)
     pub item_id: u32,
+    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.PNGDDNAJCGG)
+    pub PNGDDNAJCGG: u32,
+    // @@protoc_insertion_point(field:MuseumTargetRewardNotify.item_count)
+    pub item_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumTargetRewardNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MuseumTargetRewardNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &MuseumTargetRewardNotify| { &m.item_id },
+            |m: &mut MuseumTargetRewardNotify| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNGDDNAJCGG",
             |m: &MuseumTargetRewardNotify| { &m.PNGDDNAJCGG },
             |m: &mut MuseumTargetRewardNotify| { &mut m.PNGDDNAJCGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBEJBLFHCBH",
-            |m: &MuseumTargetRewardNotify| { &m.MBEJBLFHCBH },
-            |m: &mut MuseumTargetRewardNotify| { &mut m.MBEJBLFHCBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &MuseumTargetRewardNotify| { &m.item_id },
-            |m: &mut MuseumTargetRewardNotify| { &mut m.item_id },
+            "item_count",
+            |m: &MuseumTargetRewardNotify| { &m.item_count },
+            |m: &mut MuseumTargetRewardNotify| { &mut m.item_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumTargetRewardNotify>(
             "MuseumTargetRewardNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                40 => {
+                    self.item_id = is.read_uint32()?;
+                },
                 32 => {
                     self.PNGDDNAJCGG = is.read_uint32()?;
                 },
                 24 => {
-                    self.MBEJBLFHCBH = is.read_uint32()?;
-                },
-                56 => {
-                    self.item_id = is.read_uint32()?;
+                    self.item_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
+        }
         if self.PNGDDNAJCGG != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.PNGDDNAJCGG);
         }
-        if self.MBEJBLFHCBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MBEJBLFHCBH);
-        }
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
+        if self.item_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.item_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.item_id != 0 {
+            os.write_uint32(5, self.item_id)?;
+        }
         if self.PNGDDNAJCGG != 0 {
             os.write_uint32(4, self.PNGDDNAJCGG)?;
         }
-        if self.MBEJBLFHCBH != 0 {
-            os.write_uint32(3, self.MBEJBLFHCBH)?;
-        }
-        if self.item_id != 0 {
-            os.write_uint32(7, self.item_id)?;
+        if self.item_count != 0 {
+            os.write_uint32(3, self.item_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MuseumTargetRewardNotify {
     }
 
     fn clear(&mut self) {
-        self.PNGDDNAJCGG = 0;
-        self.MBEJBLFHCBH = 0;
         self.item_id = 0;
+        self.PNGDDNAJCGG = 0;
+        self.item_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumTargetRewardNotify {
         static instance: MuseumTargetRewardNotify = MuseumTargetRewardNotify {
-            PNGDDNAJCGG: 0,
-            MBEJBLFHCBH: 0,
             item_id: 0,
+            PNGDDNAJCGG: 0,
+            item_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTargetRewardNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMuseumTargetRewardNotify.proto\"w\n\x18MuseumTargetRewardNotify\
-    \x12\x20\n\x0bPNGDDNAJCGG\x18\x04\x20\x01(\rR\x0bPNGDDNAJCGG\x12\x20\n\
-    \x0bMBEJBLFHCBH\x18\x03\x20\x01(\rR\x0bMBEJBLFHCBH\x12\x17\n\x07item_id\
-    \x18\x07\x20\x01(\rR\x06itemIdb\x06proto3\
+    \n\x1eMuseumTargetRewardNotify.proto\"t\n\x18MuseumTargetRewardNotify\
+    \x12\x17\n\x07item_id\x18\x05\x20\x01(\rR\x06itemId\x12\x20\n\x0bPNGDDNA\
+    JCGG\x18\x04\x20\x01(\rR\x0bPNGDDNAJCGG\x12\x1d\n\nitem_count\x18\x03\
+    \x20\x01(\rR\titemCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

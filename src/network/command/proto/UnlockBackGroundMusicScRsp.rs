@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockBackGroundMusicScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.music_list)
-    pub music_list: ::std::vec::Vec<super::UnlockedMusic::UnlockedMusic>,
+    // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.unlocked_music_list)
+    pub unlocked_music_list: ::std::vec::Vec<super::MusicData::MusicData>,
     // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.unlocked_ids)
     pub unlocked_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.retcode)
@@ -54,9 +54,9 @@ impl UnlockBackGroundMusicScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "music_list",
-            |m: &UnlockBackGroundMusicScRsp| { &m.music_list },
-            |m: &mut UnlockBackGroundMusicScRsp| { &mut m.music_list },
+            "unlocked_music_list",
+            |m: &UnlockBackGroundMusicScRsp| { &m.unlocked_music_list },
+            |m: &mut UnlockBackGroundMusicScRsp| { &mut m.unlocked_music_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unlocked_ids",
@@ -87,15 +87,15 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 122 => {
-                    self.music_list.push(is.read_message()?);
+                    self.unlocked_music_list.push(is.read_message()?);
                 },
-                50 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_ids)?;
                 },
-                48 => {
+                40 => {
                     self.unlocked_ids.push(is.read_uint32()?);
                 },
-                112 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -110,13 +110,13 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.music_list {
+        for value in &self.unlocked_music_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.unlocked_ids);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.unlocked_ids);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.music_list {
+        for v in &self.unlocked_music_list {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.unlocked_ids)?;
+        os.write_repeated_packed_uint32(5, &self.unlocked_ids)?;
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
     }
 
     fn clear(&mut self) {
-        self.music_list.clear();
+        self.unlocked_music_list.clear();
         self.unlocked_ids.clear();
         self.retcode = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
 
     fn default_instance() -> &'static UnlockBackGroundMusicScRsp {
         static instance: UnlockBackGroundMusicScRsp = UnlockBackGroundMusicScRsp {
-            music_list: ::std::vec::Vec::new(),
+            unlocked_music_list: ::std::vec::Vec::new(),
             unlocked_ids: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for UnlockBackGroundMusicScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UnlockBackGroundMusicScRsp.proto\x1a\x13UnlockedMusic.proto\"\x88\
-    \x01\n\x1aUnlockBackGroundMusicScRsp\x12-\n\nmusic_list\x18\x0f\x20\x03(\
-    \x0b2\x0e.UnlockedMusicR\tmusicList\x12!\n\x0cunlocked_ids\x18\x06\x20\
-    \x03(\rR\x0bunlockedIds\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \n\x20UnlockBackGroundMusicScRsp.proto\x1a\x0fMusicData.proto\"\x95\x01\
+    \n\x1aUnlockBackGroundMusicScRsp\x12:\n\x13unlocked_music_list\x18\x0f\
+    \x20\x03(\x0b2\n.MusicDataR\x11unlockedMusicList\x12!\n\x0cunlocked_ids\
+    \x18\x05\x20\x03(\rR\x0bunlockedIds\x12\x18\n\x07retcode\x18\t\x20\x01(\
+    \rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::UnlockedMusic::file_descriptor().clone());
+            deps.push(super::MusicData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UnlockBackGroundMusicScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

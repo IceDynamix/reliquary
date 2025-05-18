@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnablePermanentTalentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnablePermanentTalentCsReq.FAGNLGFJAIF)
-    pub FAGNLGFJAIF: u32,
+    // @@protoc_insertion_point(field:RogueTournEnablePermanentTalentCsReq.talent_id)
+    pub talent_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnablePermanentTalentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueTournEnablePermanentTalentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAGNLGFJAIF",
-            |m: &RogueTournEnablePermanentTalentCsReq| { &m.FAGNLGFJAIF },
-            |m: &mut RogueTournEnablePermanentTalentCsReq| { &mut m.FAGNLGFJAIF },
+            "talent_id",
+            |m: &RogueTournEnablePermanentTalentCsReq| { &m.talent_id },
+            |m: &mut RogueTournEnablePermanentTalentCsReq| { &mut m.talent_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnablePermanentTalentCsReq>(
             "RogueTournEnablePermanentTalentCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournEnablePermanentTalentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.FAGNLGFJAIF = is.read_uint32()?;
+                104 => {
+                    self.talent_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueTournEnablePermanentTalentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FAGNLGFJAIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FAGNLGFJAIF);
+        if self.talent_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.talent_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueTournEnablePermanentTalentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FAGNLGFJAIF != 0 {
-            os.write_uint32(3, self.FAGNLGFJAIF)?;
+        if self.talent_id != 0 {
+            os.write_uint32(13, self.talent_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueTournEnablePermanentTalentCsReq {
     }
 
     fn clear(&mut self) {
-        self.FAGNLGFJAIF = 0;
+        self.talent_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnablePermanentTalentCsReq {
         static instance: RogueTournEnablePermanentTalentCsReq = RogueTournEnablePermanentTalentCsReq {
-            FAGNLGFJAIF: 0,
+            talent_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnablePermanentTalentCsReq
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RogueTournEnablePermanentTalentCsReq.proto\"H\n$RogueTournEnablePerma\
-    nentTalentCsReq\x12\x20\n\x0bFAGNLGFJAIF\x18\x03\x20\x01(\rR\x0bFAGNLGFJ\
-    AIFb\x06proto3\
+    \n*RogueTournEnablePermanentTalentCsReq.proto\"C\n$RogueTournEnablePerma\
+    nentTalentCsReq\x12\x1b\n\ttalent_id\x18\r\x20\x01(\rR\x08talentIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

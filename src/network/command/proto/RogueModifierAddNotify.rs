@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct RogueModifierAddNotify {
     // message fields
     // @@protoc_insertion_point(field:RogueModifierAddNotify.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)
-    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::AEKPJELDAPD::AEKPJELDAPD>,
+    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::RogueModifier::RogueModifier>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierAddNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl RogueModifierAddNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AEKPJELDAPD::AEKPJELDAPD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModifier::RogueModifier>(
             "CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER",
             |m: &RogueModifierAddNotify| { &m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
             |m: &mut RogueModifierAddNotify| { &mut m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
@@ -148,10 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierAddNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueModifierAddNotify.proto\x1a\x11AEKPJELDAPD.proto\"{\n\x16Rogu\
-    eModifierAddNotify\x12a\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\x18\
-    \x06\x20\x01(\x0b2\x0c.AEKPJELDAPDR\"CHESSROGUECELLUPDATEREASONMODIFIERb\
-    \x06proto3\
+    \n\x1cRogueModifierAddNotify.proto\x1a\x13RogueModifier.proto\"}\n\x16Ro\
+    gueModifierAddNotify\x12c\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\x18\
+    \x06\x20\x01(\x0b2\x0e.RogueModifierR\"CHESSROGUECELLUPDATEREASONMODIFIE\
+    Rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AEKPJELDAPD::file_descriptor().clone());
+            deps.push(super::RogueModifier::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueModifierAddNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

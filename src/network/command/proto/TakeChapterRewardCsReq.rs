@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                112 => {
                     self.AKDGHHNKLEJ = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.KIEKJEFFPHK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AKDGHHNKLEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AKDGHHNKLEJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.AKDGHHNKLEJ);
         }
         if self.KIEKJEFFPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KIEKJEFFPHK);
+            my_size += ::protobuf::rt::uint32_size(3, self.KIEKJEFFPHK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakeChapterRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AKDGHHNKLEJ != 0 {
-            os.write_uint32(7, self.AKDGHHNKLEJ)?;
+            os.write_uint32(14, self.AKDGHHNKLEJ)?;
         }
         if self.KIEKJEFFPHK != 0 {
-            os.write_uint32(2, self.KIEKJEFFPHK)?;
+            os.write_uint32(3, self.KIEKJEFFPHK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeChapterRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTakeChapterRewardCsReq.proto\"\\\n\x16TakeChapterRewardCsReq\x12\
-    \x20\n\x0bAKDGHHNKLEJ\x18\x07\x20\x01(\rR\x0bAKDGHHNKLEJ\x12\x20\n\x0bKI\
-    EKJEFFPHK\x18\x02\x20\x01(\rR\x0bKIEKJEFFPHKb\x06proto3\
+    \x20\n\x0bAKDGHHNKLEJ\x18\x0e\x20\x01(\rR\x0bAKDGHHNKLEJ\x12\x20\n\x0bKI\
+    EKJEFFPHK\x18\x03\x20\x01(\rR\x0bKIEKJEFFPHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

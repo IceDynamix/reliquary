@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMNDJAMEBML {
     // message fields
-    // @@protoc_insertion_point(field:MMNDJAMEBML.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::OEDIFANGCLH::OEDIFANGCLH>,
+    // @@protoc_insertion_point(field:MMNDJAMEBML.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::BattleStaticticEventType::BattleStaticticEventType>,
     // @@protoc_insertion_point(field:MMNDJAMEBML.OCPPPKDDIML)
     pub OCPPPKDDIML: u32,
     // @@protoc_insertion_point(field:MMNDJAMEBML.display_value)
@@ -54,9 +54,9 @@ impl MMNDJAMEBML {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &MMNDJAMEBML| { &m.slot },
-            |m: &mut MMNDJAMEBML| { &mut m.slot },
+            "type",
+            |m: &MMNDJAMEBML| { &m.type_ },
+            |m: &mut MMNDJAMEBML| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCPPPKDDIML",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MMNDJAMEBML {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 16 => {
                     self.OCPPPKDDIML = is.read_uint32()?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for MMNDJAMEBML {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::OEDIFANGCLH::OEDIFANGCLH::BATTLE_STATICTIC_EVENT_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.slot.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
         if self.OCPPPKDDIML != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.OCPPPKDDIML);
@@ -122,8 +122,8 @@ impl ::protobuf::Message for MMNDJAMEBML {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::OEDIFANGCLH::OEDIFANGCLH::BATTLE_STATICTIC_EVENT_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.OCPPPKDDIML != 0 {
             os.write_uint32(2, self.OCPPPKDDIML)?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for MMNDJAMEBML {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::OEDIFANGCLH::OEDIFANGCLH::BATTLE_STATICTIC_EVENT_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE);
         self.OCPPPKDDIML = 0;
         self.display_value = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for MMNDJAMEBML {
 
     fn default_instance() -> &'static MMNDJAMEBML {
         static instance: MMNDJAMEBML = MMNDJAMEBML {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             OCPPPKDDIML: 0,
             display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,10 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for MMNDJAMEBML {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMNDJAMEBML.proto\x1a\x11OEDIFANGCLH.proto\"v\n\x0bMMNDJAMEBML\x12\
-    \x20\n\x04slot\x18\x01\x20\x01(\x0e2\x0c.OEDIFANGCLHR\x04slot\x12\x20\n\
-    \x0bOCPPPKDDIML\x18\x02\x20\x01(\rR\x0bOCPPPKDDIML\x12#\n\rdisplay_value\
-    \x18\x03\x20\x01(\rR\x0cdisplayValueb\x06proto3\
+    \n\x11MMNDJAMEBML.proto\x1a\x1eBattleStaticticEventType.proto\"\x83\x01\
+    \n\x0bMMNDJAMEBML\x12-\n\x04type\x18\x01\x20\x01(\x0e2\x19.BattleStatict\
+    icEventTypeR\x04type\x12\x20\n\x0bOCPPPKDDIML\x18\x02\x20\x01(\rR\x0bOCP\
+    PPKDDIML\x12#\n\rdisplay_value\x18\x03\x20\x01(\rR\x0cdisplayValueb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OEDIFANGCLH::file_descriptor().clone());
+            deps.push(super::BattleStaticticEventType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MMNDJAMEBML::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

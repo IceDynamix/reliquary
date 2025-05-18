@@ -34,8 +34,8 @@ pub struct IBFFAJOHKMO {
     pub LEICKPDIFOG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IBFFAJOHKMO.source)
     pub source: u32,
-    // @@protoc_insertion_point(field:IBFFAJOHKMO.GDFLPPHGENE)
-    pub GDFLPPHGENE: f64,
+    // @@protoc_insertion_point(field:IBFFAJOHKMO.damage)
+    pub damage: f64,
     // @@protoc_insertion_point(field:IBFFAJOHKMO.DIKKHPFKAPF)
     pub DIKKHPFKAPF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IBFFAJOHKMO.EOOFIMEGMFB)
@@ -81,9 +81,9 @@ impl IBFFAJOHKMO {
             |m: &mut IBFFAJOHKMO| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDFLPPHGENE",
-            |m: &IBFFAJOHKMO| { &m.GDFLPPHGENE },
-            |m: &mut IBFFAJOHKMO| { &mut m.GDFLPPHGENE },
+            "damage",
+            |m: &IBFFAJOHKMO| { &m.damage },
+            |m: &mut IBFFAJOHKMO| { &mut m.damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DIKKHPFKAPF",
@@ -141,7 +141,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
                     self.source = is.read_uint32()?;
                 },
                 33 => {
-                    self.GDFLPPHGENE = is.read_double()?;
+                    self.damage = is.read_double()?;
                 },
                 42 => {
                     is.read_repeated_packed_uint32_into(&mut self.DIKKHPFKAPF)?;
@@ -180,7 +180,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         if self.source != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.source);
         }
-        if self.GDFLPPHGENE != 0. {
+        if self.damage != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.DIKKHPFKAPF);
@@ -209,8 +209,8 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         if self.source != 0 {
             os.write_uint32(3, self.source)?;
         }
-        if self.GDFLPPHGENE != 0. {
-            os.write_double(4, self.GDFLPPHGENE)?;
+        if self.damage != 0. {
+            os.write_double(4, self.damage)?;
         }
         os.write_repeated_packed_uint32(5, &self.DIKKHPFKAPF)?;
         if self.EOOFIMEGMFB != 0 {
@@ -245,7 +245,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         self.avatar_id = 0;
         self.LEICKPDIFOG.clear();
         self.source = 0;
-        self.GDFLPPHGENE = 0.;
+        self.damage = 0.;
         self.DIKKHPFKAPF.clear();
         self.EOOFIMEGMFB = 0;
         self.BKJEAMPNANK = 0.;
@@ -259,7 +259,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
             avatar_id: 0,
             LEICKPDIFOG: ::std::vec::Vec::new(),
             source: 0,
-            GDFLPPHGENE: 0.,
+            damage: 0.,
             DIKKHPFKAPF: ::std::vec::Vec::new(),
             EOOFIMEGMFB: 0,
             BKJEAMPNANK: 0.,
@@ -289,15 +289,14 @@ impl ::protobuf::reflect::ProtobufValue for IBFFAJOHKMO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IBFFAJOHKMO.proto\"\xa2\x02\n\x0bIBFFAJOHKMO\x12\x1b\n\tavatar_id\
+    \n\x11IBFFAJOHKMO.proto\"\x98\x02\n\x0bIBFFAJOHKMO\x12\x1b\n\tavatar_id\
     \x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bLEICKPDIFOG\x18\x02\x20\
     \x03(\rR\x0bLEICKPDIFOG\x12\x16\n\x06source\x18\x03\x20\x01(\rR\x06sourc\
-    e\x12\x20\n\x0bGDFLPPHGENE\x18\x04\x20\x01(\x01R\x0bGDFLPPHGENE\x12\x20\
-    \n\x0bDIKKHPFKAPF\x18\x05\x20\x03(\rR\x0bDIKKHPFKAPF\x12\x20\n\x0bEOOFIM\
-    EGMFB\x18\x06\x20\x01(\x05R\x0bEOOFIMEGMFB\x12\x20\n\x0bBKJEAMPNANK\x18\
-    \x07\x20\x01(\x01R\x0bBKJEAMPNANK\x12\x20\n\x0bBLFHKGPMNDK\x18\x08\x20\
-    \x01(\rR\x0bBLFHKGPMNDK\x12\x12\n\x04wave\x18\t\x20\x01(\rR\x04waveb\x06\
-    proto3\
+    e\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\x12\x20\n\x0bDIKKH\
+    PFKAPF\x18\x05\x20\x03(\rR\x0bDIKKHPFKAPF\x12\x20\n\x0bEOOFIMEGMFB\x18\
+    \x06\x20\x01(\x05R\x0bEOOFIMEGMFB\x12\x20\n\x0bBKJEAMPNANK\x18\x07\x20\
+    \x01(\x01R\x0bBKJEAMPNANK\x12\x20\n\x0bBLFHKGPMNDK\x18\x08\x20\x01(\rR\
+    \x0bBLFHKGPMNDK\x12\x12\n\x04wave\x18\t\x20\x01(\rR\x04waveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

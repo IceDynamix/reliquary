@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueArcadeGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.room_id = is.read_uint32()?;
                 },
-                16 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueArcadeGetInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.room_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueArcadeGetInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.room_id != 0 {
-            os.write_uint32(7, self.room_id)?;
+            os.write_uint32(4, self.room_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueArcadeGetInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueArcadeGetInfoScRsp.proto\"L\n\x17RogueArcadeGetInfoScRsp\x12\
-    \x17\n\x07room_id\x18\x07\x20\x01(\rR\x06roomId\x12\x18\n\x07retcode\x18\
-    \x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x17\n\x07room_id\x18\x04\x20\x01(\rR\x06roomId\x12\x18\n\x07retcode\x18\
+    \t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

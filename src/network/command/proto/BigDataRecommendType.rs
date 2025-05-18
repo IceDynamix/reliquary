@@ -37,6 +37,8 @@ pub enum BigDataRecommendType {
     BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR = 3,
     // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC)
     BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC = 4,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND)
+    BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND = 5,
 }
 
 impl ::protobuf::Enum for BigDataRecommendType {
@@ -53,6 +55,7 @@ impl ::protobuf::Enum for BigDataRecommendType {
             2 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
             3 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
             4 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
+            5 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +67,7 @@ impl ::protobuf::Enum for BigDataRecommendType {
             "BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT),
             "BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
             "BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
+            "BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
             _ => ::std::option::Option::None
         }
     }
@@ -74,6 +78,7 @@ impl ::protobuf::Enum for BigDataRecommendType {
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT,
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR,
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC,
+        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND,
     ];
 }
 
@@ -102,11 +107,12 @@ impl BigDataRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aBigDataRecommendType.proto*\xdb\x01\n\x14BigDataRecommendType\x12\
+    \n\x1aBigDataRecommendType.proto*\x85\x02\n\x14BigDataRecommendType\x12\
     \x20\n\x1cBIG_DATA_RECOMMEND_TYPE_NONE\x10\0\x12%\n!BIG_DATA_RECOMMEND_T\
     YPE_EQUIPMENT\x10\x01\x12&\n\"BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT\x10\x02\
     \x12(\n$BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR\x10\x03\x12(\n$BIG_DATA_REC\
-    OMMEND_TYPE_AVATAR_RELIC\x10\x04b\x06proto3\
+    OMMEND_TYPE_AVATAR_RELIC\x10\x04\x12(\n$BIG_DATA_RECOMMEND_TYPE_LOCAL_LE\
+    GEND\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

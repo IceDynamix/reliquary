@@ -30,8 +30,8 @@ pub struct LobbyInteractScNotify {
     // message fields
     // @@protoc_insertion_point(field:LobbyInteractScNotify.IHCILNHKLMC)
     pub IHCILNHKLMC: ::protobuf::EnumOrUnknown<super::IMAONMHILNE::IMAONMHILNE>,
-    // @@protoc_insertion_point(field:LobbyInteractScNotify.sender_uid)
-    pub sender_uid: u32,
+    // @@protoc_insertion_point(field:LobbyInteractScNotify.sender_id)
+    pub sender_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyInteractScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl LobbyInteractScNotify {
             |m: &mut LobbyInteractScNotify| { &mut m.IHCILNHKLMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sender_uid",
-            |m: &LobbyInteractScNotify| { &m.sender_uid },
-            |m: &mut LobbyInteractScNotify| { &mut m.sender_uid },
+            "sender_id",
+            |m: &LobbyInteractScNotify| { &m.sender_id },
+            |m: &mut LobbyInteractScNotify| { &mut m.sender_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyInteractScNotify>(
             "LobbyInteractScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.IHCILNHKLMC = is.read_enum_or_unknown()?;
                 },
-                16 => {
-                    self.sender_uid = is.read_uint32()?;
+                40 => {
+                    self.sender_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for LobbyInteractScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHCILNHKLMC != ::protobuf::EnumOrUnknown::new(super::IMAONMHILNE::IMAONMHILNE::LOBBY_INTERACT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.IHCILNHKLMC.value());
+            my_size += ::protobuf::rt::int32_size(7, self.IHCILNHKLMC.value());
         }
-        if self.sender_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.sender_uid);
+        if self.sender_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.sender_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LobbyInteractScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHCILNHKLMC != ::protobuf::EnumOrUnknown::new(super::IMAONMHILNE::IMAONMHILNE::LOBBY_INTERACT_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IHCILNHKLMC))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.IHCILNHKLMC))?;
         }
-        if self.sender_uid != 0 {
-            os.write_uint32(2, self.sender_uid)?;
+        if self.sender_id != 0 {
+            os.write_uint32(5, self.sender_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for LobbyInteractScNotify {
 
     fn clear(&mut self) {
         self.IHCILNHKLMC = ::protobuf::EnumOrUnknown::new(super::IMAONMHILNE::IMAONMHILNE::LOBBY_INTERACT_TYPE_NONE);
-        self.sender_uid = 0;
+        self.sender_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInteractScNotify {
         static instance: LobbyInteractScNotify = LobbyInteractScNotify {
             IHCILNHKLMC: ::protobuf::EnumOrUnknown::from_i32(0),
-            sender_uid: 0,
+            sender_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInteractScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bLobbyInteractScNotify.proto\x1a\x11IMAONMHILNE.proto\"f\n\x15Lobby\
-    InteractScNotify\x12.\n\x0bIHCILNHKLMC\x18\x0e\x20\x01(\x0e2\x0c.IMAONMH\
-    ILNER\x0bIHCILNHKLMC\x12\x1d\n\nsender_uid\x18\x02\x20\x01(\rR\tsenderUi\
+    \n\x1bLobbyInteractScNotify.proto\x1a\x11IMAONMHILNE.proto\"d\n\x15Lobby\
+    InteractScNotify\x12.\n\x0bIHCILNHKLMC\x18\x07\x20\x01(\x0e2\x0c.IMAONMH\
+    ILNER\x0bIHCILNHKLMC\x12\x1b\n\tsender_id\x18\x05\x20\x01(\rR\x08senderI\
     db\x06proto3\
 ";
 

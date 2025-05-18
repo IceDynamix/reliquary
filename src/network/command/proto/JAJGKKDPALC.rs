@@ -30,14 +30,14 @@ pub struct JAJGKKDPALC {
     // message fields
     // @@protoc_insertion_point(field:JAJGKKDPALC.HGBIGBFGBOM)
     pub HGBIGBFGBOM: ::protobuf::MessageField<super::IAACCAFGEPI::IAACCAFGEPI>,
-    // @@protoc_insertion_point(field:JAJGKKDPALC.PGALBDIIEFG)
-    pub PGALBDIIEFG: u32,
     // @@protoc_insertion_point(field:JAJGKKDPALC.LBBONKACGEJ)
     pub LBBONKACGEJ: u32,
     // @@protoc_insertion_point(field:JAJGKKDPALC.NBMPBGPJONH)
     pub NBMPBGPJONH: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // @@protoc_insertion_point(field:JAJGKKDPALC.IMOPIEJBHOD)
     pub IMOPIEJBHOD: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
+    // @@protoc_insertion_point(field:JAJGKKDPALC.PGALBDIIEFG)
+    pub PGALBDIIEFG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JAJGKKDPALC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,11 +63,6 @@ impl JAJGKKDPALC {
             |m: &mut JAJGKKDPALC| { &mut m.HGBIGBFGBOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGALBDIIEFG",
-            |m: &JAJGKKDPALC| { &m.PGALBDIIEFG },
-            |m: &mut JAJGKKDPALC| { &mut m.PGALBDIIEFG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LBBONKACGEJ",
             |m: &JAJGKKDPALC| { &m.LBBONKACGEJ },
             |m: &mut JAJGKKDPALC| { &mut m.LBBONKACGEJ },
@@ -81,6 +76,11 @@ impl JAJGKKDPALC {
             "IMOPIEJBHOD",
             |m: &JAJGKKDPALC| { &m.IMOPIEJBHOD },
             |m: &mut JAJGKKDPALC| { &mut m.IMOPIEJBHOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGALBDIIEFG",
+            |m: &JAJGKKDPALC| { &m.PGALBDIIEFG },
+            |m: &mut JAJGKKDPALC| { &mut m.PGALBDIIEFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JAJGKKDPALC>(
             "JAJGKKDPALC",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for JAJGKKDPALC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGBIGBFGBOM)?;
                 },
-                24 => {
-                    self.PGALBDIIEFG = is.read_uint32()?;
-                },
-                96 => {
+                104 => {
                     self.LBBONKACGEJ = is.read_uint32()?;
                 },
-                74 => {
+                10 => {
                     self.NBMPBGPJONH.push(is.read_message()?);
                 },
-                66 => {
+                122 => {
                     self.IMOPIEJBHOD.push(is.read_message()?);
+                },
+                56 => {
+                    self.PGALBDIIEFG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,11 +131,8 @@ impl ::protobuf::Message for JAJGKKDPALC {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PGALBDIIEFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PGALBDIIEFG);
-        }
         if self.LBBONKACGEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LBBONKACGEJ);
+            my_size += ::protobuf::rt::uint32_size(13, self.LBBONKACGEJ);
         }
         for value in &self.NBMPBGPJONH {
             let len = value.compute_size();
@@ -145,6 +142,9 @@ impl ::protobuf::Message for JAJGKKDPALC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PGALBDIIEFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PGALBDIIEFG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -152,20 +152,20 @@ impl ::protobuf::Message for JAJGKKDPALC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HGBIGBFGBOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.PGALBDIIEFG != 0 {
-            os.write_uint32(3, self.PGALBDIIEFG)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.LBBONKACGEJ != 0 {
-            os.write_uint32(12, self.LBBONKACGEJ)?;
+            os.write_uint32(13, self.LBBONKACGEJ)?;
         }
         for v in &self.NBMPBGPJONH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         for v in &self.IMOPIEJBHOD {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
+        if self.PGALBDIIEFG != 0 {
+            os.write_uint32(7, self.PGALBDIIEFG)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,20 +184,20 @@ impl ::protobuf::Message for JAJGKKDPALC {
 
     fn clear(&mut self) {
         self.HGBIGBFGBOM.clear();
-        self.PGALBDIIEFG = 0;
         self.LBBONKACGEJ = 0;
         self.NBMPBGPJONH.clear();
         self.IMOPIEJBHOD.clear();
+        self.PGALBDIIEFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JAJGKKDPALC {
         static instance: JAJGKKDPALC = JAJGKKDPALC {
             HGBIGBFGBOM: ::protobuf::MessageField::none(),
-            PGALBDIIEFG: 0,
             LBBONKACGEJ: 0,
             NBMPBGPJONH: ::std::vec::Vec::new(),
             IMOPIEJBHOD: ::std::vec::Vec::new(),
+            PGALBDIIEFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,12 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for JAJGKKDPALC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JAJGKKDPALC.proto\x1a\x11IAACCAFGEPI.proto\"\xe1\x01\n\x0bJAJGKKDP\
-    ALC\x12.\n\x0bHGBIGBFGBOM\x18\x06\x20\x01(\x0b2\x0c.IAACCAFGEPIR\x0bHGBI\
-    GBFGBOM\x12\x20\n\x0bPGALBDIIEFG\x18\x03\x20\x01(\rR\x0bPGALBDIIEFG\x12\
-    \x20\n\x0bLBBONKACGEJ\x18\x0c\x20\x01(\rR\x0bLBBONKACGEJ\x12.\n\x0bNBMPB\
-    GPJONH\x18\t\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bNBMPBGPJONH\x12.\n\x0bIMO\
-    PIEJBHOD\x18\x08\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bIMOPIEJBHODb\x06proto\
-    3\
+    ALC\x12.\n\x0bHGBIGBFGBOM\x18\x04\x20\x01(\x0b2\x0c.IAACCAFGEPIR\x0bHGBI\
+    GBFGBOM\x12\x20\n\x0bLBBONKACGEJ\x18\r\x20\x01(\rR\x0bLBBONKACGEJ\x12.\n\
+    \x0bNBMPBGPJONH\x18\x01\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bNBMPBGPJONH\
+    \x12.\n\x0bIMOPIEJBHOD\x18\x0f\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bIMOPIEJ\
+    BHOD\x12\x20\n\x0bPGALBDIIEFG\x18\x07\x20\x01(\rR\x0bPGALBDIIEFGb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

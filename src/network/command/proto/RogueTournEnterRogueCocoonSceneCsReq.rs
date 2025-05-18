@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRogueCocoonSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.EIDDMGHLPBP)
-    pub EIDDMGHLPBP: bool,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.IBGNLBOEBCG)
-    pub IBGNLBOEBCG: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.PILMKHCKMED)
     pub PILMKHCKMED: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.IBGNLBOEBCG)
+    pub IBGNLBOEBCG: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.EIDDMGHLPBP)
+    pub EIDDMGHLPBP: bool,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.PBALFIENEFO)
     pub PBALFIENEFO: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.avatar_list)
@@ -58,9 +58,9 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIDDMGHLPBP",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.EIDDMGHLPBP },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.EIDDMGHLPBP },
+            "PILMKHCKMED",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.PILMKHCKMED },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.PILMKHCKMED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IBGNLBOEBCG",
@@ -68,9 +68,9 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
             |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.IBGNLBOEBCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PILMKHCKMED",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.PILMKHCKMED },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.PILMKHCKMED },
+            "EIDDMGHLPBP",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.EIDDMGHLPBP },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.EIDDMGHLPBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBALFIENEFO",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.EIDDMGHLPBP = is.read_bool()?;
-                },
                 56 => {
-                    self.IBGNLBOEBCG = is.read_uint32()?;
-                },
-                48 => {
                     self.PILMKHCKMED = is.read_uint32()?;
                 },
-                104 => {
+                24 => {
+                    self.IBGNLBOEBCG = is.read_uint32()?;
+                },
+                120 => {
+                    self.EIDDMGHLPBP = is.read_bool()?;
+                },
+                72 => {
                     self.PBALFIENEFO = is.read_uint32()?;
                 },
-                90 => {
+                42 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PILMKHCKMED != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PILMKHCKMED);
+        }
+        if self.IBGNLBOEBCG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IBGNLBOEBCG);
+        }
         if self.EIDDMGHLPBP != false {
             my_size += 1 + 1;
         }
-        if self.IBGNLBOEBCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IBGNLBOEBCG);
-        }
-        if self.PILMKHCKMED != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PILMKHCKMED);
-        }
         if self.PBALFIENEFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PBALFIENEFO);
+            my_size += ::protobuf::rt::uint32_size(9, self.PBALFIENEFO);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -149,20 +149,20 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EIDDMGHLPBP != false {
-            os.write_bool(9, self.EIDDMGHLPBP)?;
+        if self.PILMKHCKMED != 0 {
+            os.write_uint32(7, self.PILMKHCKMED)?;
         }
         if self.IBGNLBOEBCG != 0 {
-            os.write_uint32(7, self.IBGNLBOEBCG)?;
+            os.write_uint32(3, self.IBGNLBOEBCG)?;
         }
-        if self.PILMKHCKMED != 0 {
-            os.write_uint32(6, self.PILMKHCKMED)?;
+        if self.EIDDMGHLPBP != false {
+            os.write_bool(15, self.EIDDMGHLPBP)?;
         }
         if self.PBALFIENEFO != 0 {
-            os.write_uint32(13, self.PBALFIENEFO)?;
+            os.write_uint32(9, self.PBALFIENEFO)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,9 +181,9 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.EIDDMGHLPBP = false;
-        self.IBGNLBOEBCG = 0;
         self.PILMKHCKMED = 0;
+        self.IBGNLBOEBCG = 0;
+        self.EIDDMGHLPBP = false;
         self.PBALFIENEFO = 0;
         self.avatar_list.clear();
         self.special_fields.clear();
@@ -191,9 +191,9 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
 
     fn default_instance() -> &'static RogueTournEnterRogueCocoonSceneCsReq {
         static instance: RogueTournEnterRogueCocoonSceneCsReq = RogueTournEnterRogueCocoonSceneCsReq {
-            EIDDMGHLPBP: false,
-            IBGNLBOEBCG: 0,
             PILMKHCKMED: 0,
+            IBGNLBOEBCG: 0,
+            EIDDMGHLPBP: false,
             PBALFIENEFO: 0,
             avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRogueCocoonSceneCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RogueTournEnterRogueCocoonSceneCsReq.proto\x1a\x11PHHKOMBGPPK.proto\"\
-    \xdd\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bEIDDMGHLPBP\
-    \x18\t\x20\x01(\x08R\x0bEIDDMGHLPBP\x12\x20\n\x0bIBGNLBOEBCG\x18\x07\x20\
-    \x01(\rR\x0bIBGNLBOEBCG\x12\x20\n\x0bPILMKHCKMED\x18\x06\x20\x01(\rR\x0b\
-    PILMKHCKMED\x12\x20\n\x0bPBALFIENEFO\x18\r\x20\x01(\rR\x0bPBALFIENEFO\
-    \x12-\n\x0bavatar_list\x18\x0b\x20\x03(\x0b2\x0c.PHHKOMBGPPKR\navatarLis\
-    tb\x06proto3\
+    \xdd\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bPILMKHCKMED\
+    \x18\x07\x20\x01(\rR\x0bPILMKHCKMED\x12\x20\n\x0bIBGNLBOEBCG\x18\x03\x20\
+    \x01(\rR\x0bIBGNLBOEBCG\x12\x20\n\x0bEIDDMGHLPBP\x18\x0f\x20\x01(\x08R\
+    \x0bEIDDMGHLPBP\x12\x20\n\x0bPBALFIENEFO\x18\t\x20\x01(\rR\x0bPBALFIENEF\
+    O\x12-\n\x0bavatar_list\x18\x05\x20\x03(\x0b2\x0c.PHHKOMBGPPKR\navatarLi\
+    stb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

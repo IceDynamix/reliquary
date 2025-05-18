@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdDebugType {
     // @@protoc_insertion_point(enum_value:CmdDebugType.CmdDebugTypeNone)
     CmdDebugTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerLogSettingsScRsp)
-    CmdGetServerLogSettingsScRsp = 2468,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerLogSettingsCsReq)
-    CmdGetServerLogSettingsCsReq = 2492,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdUpdateServerLogSettingsCsReq)
-    CmdUpdateServerLogSettingsCsReq = 2464,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerGraphDataCsReq)
-    CmdGetServerGraphDataCsReq = 2459,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerGraphDataScRsp)
-    CmdGetServerGraphDataScRsp = 2479,
-    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdUpdateServerLogSettingsScRsp)
-    CmdUpdateServerLogSettingsScRsp = 2456,
     // @@protoc_insertion_point(enum_value:CmdDebugType.CmdServerLogScNotify)
-    CmdServerLogScNotify = 2491,
+    CmdServerLogScNotify = 2486,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerLogSettingsCsReq)
+    CmdGetServerLogSettingsCsReq = 2454,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerGraphDataCsReq)
+    CmdGetServerGraphDataCsReq = 2467,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdUpdateServerLogSettingsCsReq)
+    CmdUpdateServerLogSettingsCsReq = 2452,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdUpdateServerLogSettingsScRsp)
+    CmdUpdateServerLogSettingsScRsp = 2487,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerLogSettingsScRsp)
+    CmdGetServerLogSettingsScRsp = 2496,
+    // @@protoc_insertion_point(enum_value:CmdDebugType.CmdGetServerGraphDataScRsp)
+    CmdGetServerGraphDataScRsp = 2477,
 }
 
 impl ::protobuf::Enum for CmdDebugType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdDebugType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdDebugType> {
         match value {
             0 => ::std::option::Option::Some(CmdDebugType::CmdDebugTypeNone),
-            2468 => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsScRsp),
-            2492 => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsCsReq),
-            2464 => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsCsReq),
-            2459 => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataCsReq),
-            2479 => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataScRsp),
-            2456 => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsScRsp),
-            2491 => ::std::option::Option::Some(CmdDebugType::CmdServerLogScNotify),
+            2486 => ::std::option::Option::Some(CmdDebugType::CmdServerLogScNotify),
+            2454 => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsCsReq),
+            2467 => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataCsReq),
+            2452 => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsCsReq),
+            2487 => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsScRsp),
+            2496 => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsScRsp),
+            2477 => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdDebugType {
     fn from_str(str: &str) -> ::std::option::Option<CmdDebugType> {
         match str {
             "CmdDebugTypeNone" => ::std::option::Option::Some(CmdDebugType::CmdDebugTypeNone),
-            "CmdGetServerLogSettingsScRsp" => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsScRsp),
-            "CmdGetServerLogSettingsCsReq" => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsCsReq),
-            "CmdUpdateServerLogSettingsCsReq" => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsCsReq),
-            "CmdGetServerGraphDataCsReq" => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataCsReq),
-            "CmdGetServerGraphDataScRsp" => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataScRsp),
-            "CmdUpdateServerLogSettingsScRsp" => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsScRsp),
             "CmdServerLogScNotify" => ::std::option::Option::Some(CmdDebugType::CmdServerLogScNotify),
+            "CmdGetServerLogSettingsCsReq" => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsCsReq),
+            "CmdGetServerGraphDataCsReq" => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataCsReq),
+            "CmdUpdateServerLogSettingsCsReq" => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsCsReq),
+            "CmdUpdateServerLogSettingsScRsp" => ::std::option::Option::Some(CmdDebugType::CmdUpdateServerLogSettingsScRsp),
+            "CmdGetServerLogSettingsScRsp" => ::std::option::Option::Some(CmdDebugType::CmdGetServerLogSettingsScRsp),
+            "CmdGetServerGraphDataScRsp" => ::std::option::Option::Some(CmdDebugType::CmdGetServerGraphDataScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDebugType] = &[
         CmdDebugType::CmdDebugTypeNone,
-        CmdDebugType::CmdGetServerLogSettingsScRsp,
-        CmdDebugType::CmdGetServerLogSettingsCsReq,
-        CmdDebugType::CmdUpdateServerLogSettingsCsReq,
-        CmdDebugType::CmdGetServerGraphDataCsReq,
-        CmdDebugType::CmdGetServerGraphDataScRsp,
-        CmdDebugType::CmdUpdateServerLogSettingsScRsp,
         CmdDebugType::CmdServerLogScNotify,
+        CmdDebugType::CmdGetServerLogSettingsCsReq,
+        CmdDebugType::CmdGetServerGraphDataCsReq,
+        CmdDebugType::CmdUpdateServerLogSettingsCsReq,
+        CmdDebugType::CmdUpdateServerLogSettingsScRsp,
+        CmdDebugType::CmdGetServerLogSettingsScRsp,
+        CmdDebugType::CmdGetServerGraphDataScRsp,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdDebugType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdDebugType::CmdDebugTypeNone => 0,
-            CmdDebugType::CmdGetServerLogSettingsScRsp => 1,
+            CmdDebugType::CmdServerLogScNotify => 1,
             CmdDebugType::CmdGetServerLogSettingsCsReq => 2,
-            CmdDebugType::CmdUpdateServerLogSettingsCsReq => 3,
-            CmdDebugType::CmdGetServerGraphDataCsReq => 4,
-            CmdDebugType::CmdGetServerGraphDataScRsp => 5,
-            CmdDebugType::CmdUpdateServerLogSettingsScRsp => 6,
-            CmdDebugType::CmdServerLogScNotify => 7,
+            CmdDebugType::CmdGetServerGraphDataCsReq => 3,
+            CmdDebugType::CmdUpdateServerLogSettingsCsReq => 4,
+            CmdDebugType::CmdUpdateServerLogSettingsScRsp => 5,
+            CmdDebugType::CmdGetServerLogSettingsScRsp => 6,
+            CmdDebugType::CmdGetServerGraphDataScRsp => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl CmdDebugType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdDebugType.proto*\x93\x02\n\x0cCmdDebugType\x12\x14\n\x10CmdDebu\
-    gTypeNone\x10\0\x12!\n\x1cCmdGetServerLogSettingsScRsp\x10\xa4\x13\x12!\
-    \n\x1cCmdGetServerLogSettingsCsReq\x10\xbc\x13\x12$\n\x1fCmdUpdateServer\
-    LogSettingsCsReq\x10\xa0\x13\x12\x1f\n\x1aCmdGetServerGraphDataCsReq\x10\
-    \x9b\x13\x12\x1f\n\x1aCmdGetServerGraphDataScRsp\x10\xaf\x13\x12$\n\x1fC\
-    mdUpdateServerLogSettingsScRsp\x10\x98\x13\x12\x19\n\x14CmdServerLogScNo\
-    tify\x10\xbb\x13b\x06proto3\
+    gTypeNone\x10\0\x12\x19\n\x14CmdServerLogScNotify\x10\xb6\x13\x12!\n\x1c\
+    CmdGetServerLogSettingsCsReq\x10\x96\x13\x12\x1f\n\x1aCmdGetServerGraphD\
+    ataCsReq\x10\xa3\x13\x12$\n\x1fCmdUpdateServerLogSettingsCsReq\x10\x94\
+    \x13\x12$\n\x1fCmdUpdateServerLogSettingsScRsp\x10\xb7\x13\x12!\n\x1cCmd\
+    GetServerLogSettingsScRsp\x10\xc0\x13\x12\x1f\n\x1aCmdGetServerGraphData\
+    ScRsp\x10\xad\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

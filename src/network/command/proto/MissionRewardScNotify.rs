@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MissionRewardScNotify.LPLHIABDBBG)
-    pub LPLHIABDBBG: u32,
+    // @@protoc_insertion_point(field:MissionRewardScNotify.sub_mission_id)
+    pub sub_mission_id: u32,
     // @@protoc_insertion_point(field:MissionRewardScNotify.main_mission_id)
     pub main_mission_id: u32,
     // @@protoc_insertion_point(field:MissionRewardScNotify.reward)
@@ -54,9 +54,9 @@ impl MissionRewardScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLHIABDBBG",
-            |m: &MissionRewardScNotify| { &m.LPLHIABDBBG },
-            |m: &mut MissionRewardScNotify| { &mut m.LPLHIABDBBG },
+            "sub_mission_id",
+            |m: &MissionRewardScNotify| { &m.sub_mission_id },
+            |m: &mut MissionRewardScNotify| { &mut m.sub_mission_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_mission_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MissionRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LPLHIABDBBG = is.read_uint32()?;
+                64 => {
+                    self.sub_mission_id = is.read_uint32()?;
                 },
-                8 => {
+                112 => {
                     self.main_mission_id = is.read_uint32()?;
                 },
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for MissionRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LPLHIABDBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LPLHIABDBBG);
+        if self.sub_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.sub_mission_id);
         }
         if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.main_mission_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.main_mission_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LPLHIABDBBG != 0 {
-            os.write_uint32(6, self.LPLHIABDBBG)?;
+        if self.sub_mission_id != 0 {
+            os.write_uint32(8, self.sub_mission_id)?;
         }
         if self.main_mission_id != 0 {
-            os.write_uint32(1, self.main_mission_id)?;
+            os.write_uint32(14, self.main_mission_id)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for MissionRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.LPLHIABDBBG = 0;
+        self.sub_mission_id = 0;
         self.main_mission_id = 0;
         self.reward.clear();
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for MissionRewardScNotify {
 
     fn default_instance() -> &'static MissionRewardScNotify {
         static instance: MissionRewardScNotify = MissionRewardScNotify {
-            LPLHIABDBBG: 0,
+            sub_mission_id: 0,
             main_mission_id: 0,
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MissionRewardScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bMissionRewardScNotify.proto\x1a\x0eItemList.proto\"\x84\x01\n\x15M\
-    issionRewardScNotify\x12\x20\n\x0bLPLHIABDBBG\x18\x06\x20\x01(\rR\x0bLPL\
-    HIABDBBG\x12&\n\x0fmain_mission_id\x18\x01\x20\x01(\rR\rmainMissionId\
-    \x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    \n\x1bMissionRewardScNotify.proto\x1a\x0eItemList.proto\"\x88\x01\n\x15M\
+    issionRewardScNotify\x12$\n\x0esub_mission_id\x18\x08\x20\x01(\rR\x0csub\
+    MissionId\x12&\n\x0fmain_mission_id\x18\x0e\x20\x01(\rR\rmainMissionId\
+    \x12!\n\x06reward\x18\r\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

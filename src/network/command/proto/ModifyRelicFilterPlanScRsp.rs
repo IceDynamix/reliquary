@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ModifyRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.update_timestamp)
-    pub update_timestamp: i64,
-    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.slot_index)
-    pub slot_index: u32,
     // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.slot_index)
+    pub slot_index: u32,
+    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.update_timestamp)
+    pub update_timestamp: i64,
     // message oneof groups
-    pub info_case: ::std::option::Option<modify_relic_filter_plan_sc_rsp::Info_case>,
+    pub InfoOneofCase: ::std::option::Option<modify_relic_filter_plan_sc_rsp::InfoOneofCase>,
     // special fields
     // @@protoc_insertion_point(special_field:ModifyRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,39 +52,39 @@ impl ModifyRelicFilterPlanScRsp {
         ::std::default::Default::default()
     }
 
-    // string name = 15;
+    // string name = 1;
 
     pub fn name(&self) -> &str {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(ref v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(ref v)) => v,
             _ => "",
         }
     }
 
     pub fn clear_name(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_name(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_name(&mut self, v: ::std::string::String) {
-        self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(v))
+        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_name(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(_)) = self.info_case {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(::std::string::String::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(::std::string::String::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -92,8 +92,8 @@ impl ModifyRelicFilterPlanScRsp {
     // Take field
     pub fn take_name(&mut self) -> ::std::string::String {
         if self.has_name() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -104,36 +104,36 @@ impl ModifyRelicFilterPlanScRsp {
     // .RelicFilterPlanIcon icon = 2;
 
     pub fn icon(&self) -> &super::RelicFilterPlanIcon::RelicFilterPlanIcon {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(ref v)) => v,
             _ => <super::RelicFilterPlanIcon::RelicFilterPlanIcon as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_icon(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_icon(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_icon(&mut self, v: super::RelicFilterPlanIcon::RelicFilterPlanIcon) {
-        self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(v))
+        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_icon(&mut self) -> &mut super::RelicFilterPlanIcon::RelicFilterPlanIcon {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(_)) = self.info_case {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(super::RelicFilterPlanIcon::RelicFilterPlanIcon::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(super::RelicFilterPlanIcon::RelicFilterPlanIcon::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -141,8 +141,8 @@ impl ModifyRelicFilterPlanScRsp {
     // Take field
     pub fn take_icon(&mut self) -> super::RelicFilterPlanIcon::RelicFilterPlanIcon {
         if self.has_icon() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -153,36 +153,36 @@ impl ModifyRelicFilterPlanScRsp {
     // .RelicFilterPlanSettings settings = 14;
 
     pub fn settings(&self) -> &super::RelicFilterPlanSettings::RelicFilterPlanSettings {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(ref v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(ref v)) => v,
             _ => <super::RelicFilterPlanSettings::RelicFilterPlanSettings as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_settings(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_settings(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_settings(&mut self, v: super::RelicFilterPlanSettings::RelicFilterPlanSettings) {
-        self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(v))
+        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_settings(&mut self) -> &mut super::RelicFilterPlanSettings::RelicFilterPlanSettings {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(_)) = self.info_case {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(super::RelicFilterPlanSettings::RelicFilterPlanSettings::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(super::RelicFilterPlanSettings::RelicFilterPlanSettings::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -190,8 +190,8 @@ impl ModifyRelicFilterPlanScRsp {
     // Take field
     pub fn take_settings(&mut self) -> super::RelicFilterPlanSettings::RelicFilterPlanSettings {
         if self.has_settings() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -203,9 +203,9 @@ impl ModifyRelicFilterPlanScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "update_timestamp",
-            |m: &ModifyRelicFilterPlanScRsp| { &m.update_timestamp },
-            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.update_timestamp },
+            "retcode",
+            |m: &ModifyRelicFilterPlanScRsp| { &m.retcode },
+            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot_index",
@@ -213,9 +213,9 @@ impl ModifyRelicFilterPlanScRsp {
             |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.slot_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ModifyRelicFilterPlanScRsp| { &m.retcode },
-            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.retcode },
+            "update_timestamp",
+            |m: &ModifyRelicFilterPlanScRsp| { &m.update_timestamp },
+            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.update_timestamp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "name",
@@ -237,7 +237,7 @@ impl ModifyRelicFilterPlanScRsp {
             ModifyRelicFilterPlanScRsp::mut_settings,
             ModifyRelicFilterPlanScRsp::set_settings,
         ));
-        oneofs.push(modify_relic_filter_plan_sc_rsp::Info_case::generated_oneof_descriptor_data());
+        oneofs.push(modify_relic_filter_plan_sc_rsp::InfoOneofCase::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ModifyRelicFilterPlanScRsp>(
             "ModifyRelicFilterPlanScRsp",
             fields,
@@ -256,23 +256,23 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.update_timestamp = is.read_int64()?;
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.slot_index = is.read_uint32()?;
                 },
                 88 => {
-                    self.retcode = is.read_uint32()?;
+                    self.update_timestamp = is.read_int64()?;
                 },
-                122 => {
-                    self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Name(is.read_string()?));
+                10 => {
+                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(is.read_string()?));
                 },
                 18 => {
-                    self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Icon(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(is.read_message()?));
                 },
                 114 => {
-                    self.info_case = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::Info_case::Settings(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -286,25 +286,25 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.update_timestamp != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.update_timestamp);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.slot_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.slot_index);
+            my_size += ::protobuf::rt::uint32_size(4, self.slot_index);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if self.update_timestamp != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.update_timestamp);
         }
-        if let ::std::option::Option::Some(ref v) = self.info_case {
+        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
-                &modify_relic_filter_plan_sc_rsp::Info_case::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(15, &v);
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(ref v) => {
+                    my_size += ::protobuf::rt::string_size(1, &v);
                 },
-                &modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref v) => {
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &modify_relic_filter_plan_sc_rsp::Info_case::Settings(ref v) => {
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -316,24 +316,24 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.update_timestamp != 0 {
-            os.write_int64(10, self.update_timestamp)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         if self.slot_index != 0 {
-            os.write_uint32(7, self.slot_index)?;
+            os.write_uint32(4, self.slot_index)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if self.update_timestamp != 0 {
+            os.write_int64(11, self.update_timestamp)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.info_case {
+        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
-                &modify_relic_filter_plan_sc_rsp::Info_case::Name(ref v) => {
-                    os.write_string(15, v)?;
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Name(ref v) => {
+                    os.write_string(1, v)?;
                 },
-                &modify_relic_filter_plan_sc_rsp::Info_case::Icon(ref v) => {
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Icon(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
-                &modify_relic_filter_plan_sc_rsp::Info_case::Settings(ref v) => {
+                &modify_relic_filter_plan_sc_rsp::InfoOneofCase::Settings(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
@@ -355,21 +355,21 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.update_timestamp = 0;
-        self.slot_index = 0;
         self.retcode = 0;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
+        self.slot_index = 0;
+        self.update_timestamp = 0;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ModifyRelicFilterPlanScRsp {
         static instance: ModifyRelicFilterPlanScRsp = ModifyRelicFilterPlanScRsp {
-            update_timestamp: 0,
-            slot_index: 0,
             retcode: 0,
-            info_case: ::std::option::Option::None,
+            slot_index: 0,
+            update_timestamp: 0,
+            InfoOneofCase: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -398,8 +398,8 @@ pub mod modify_relic_filter_plan_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ModifyRelicFilterPlanScRsp.info_case)
-    pub enum Info_case {
+    // @@protoc_insertion_point(oneof:ModifyRelicFilterPlanScRsp.InfoOneofCase)
+    pub enum InfoOneofCase {
         // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanScRsp.name)
         Name(::std::string::String),
         // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanScRsp.icon)
@@ -408,32 +408,32 @@ pub mod modify_relic_filter_plan_sc_rsp {
         Settings(super::super::RelicFilterPlanSettings::RelicFilterPlanSettings),
     }
 
-    impl ::protobuf::Oneof for Info_case {
+    impl ::protobuf::Oneof for InfoOneofCase {
     }
 
-    impl ::protobuf::OneofFull for Info_case {
+    impl ::protobuf::OneofFull for InfoOneofCase {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ModifyRelicFilterPlanScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("info_case").unwrap()).clone()
+            descriptor.get(|| <super::ModifyRelicFilterPlanScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("InfoOneofCase").unwrap()).clone()
         }
     }
 
-    impl Info_case {
+    impl InfoOneofCase {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Info_case>("info_case")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<InfoOneofCase>("InfoOneofCase")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ModifyRelicFilterPlanScRsp.proto\x1a\x19RelicFilterPlanIcon.proto\
-    \x1a\x1dRelicFilterPlanSettings.proto\"\x87\x02\n\x1aModifyRelicFilterPl\
-    anScRsp\x12)\n\x10update_timestamp\x18\n\x20\x01(\x03R\x0fupdateTimestam\
-    p\x12\x1d\n\nslot_index\x18\x07\x20\x01(\rR\tslotIndex\x12\x18\n\x07retc\
-    ode\x18\x0b\x20\x01(\rR\x07retcode\x12\x14\n\x04name\x18\x0f\x20\x01(\tH\
-    \0R\x04name\x12*\n\x04icon\x18\x02\x20\x01(\x0b2\x14.RelicFilterPlanIcon\
-    H\0R\x04icon\x126\n\x08settings\x18\x0e\x20\x01(\x0b2\x18.RelicFilterPla\
-    nSettingsH\0R\x08settingsB\x0b\n\tinfo_caseb\x06proto3\
+    \x1a\x1dRelicFilterPlanSettings.proto\"\x8b\x02\n\x1aModifyRelicFilterPl\
+    anScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x1d\n\ns\
+    lot_index\x18\x04\x20\x01(\rR\tslotIndex\x12)\n\x10update_timestamp\x18\
+    \x0b\x20\x01(\x03R\x0fupdateTimestamp\x12\x14\n\x04name\x18\x01\x20\x01(\
+    \tH\0R\x04name\x12*\n\x04icon\x18\x02\x20\x01(\x0b2\x14.RelicFilterPlanI\
+    conH\0R\x04icon\x126\n\x08settings\x18\x0e\x20\x01(\x0b2\x18.RelicFilter\
+    PlanSettingsH\0R\x08settingsB\x0f\n\rInfoOneofCaseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

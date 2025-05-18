@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionGroupWarnScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MissionGroupWarnScNotify.NJOCOOPICLN)
-    pub NJOCOOPICLN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionGroupWarnScNotify.group_id_list)
+    pub group_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionGroupWarnScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MissionGroupWarnScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJOCOOPICLN",
-            |m: &MissionGroupWarnScNotify| { &m.NJOCOOPICLN },
-            |m: &mut MissionGroupWarnScNotify| { &mut m.NJOCOOPICLN },
+            "group_id_list",
+            |m: &MissionGroupWarnScNotify| { &m.group_id_list },
+            |m: &mut MissionGroupWarnScNotify| { &mut m.group_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionGroupWarnScNotify>(
             "MissionGroupWarnScNotify",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for MissionGroupWarnScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NJOCOOPICLN)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.group_id_list)?;
                 },
-                32 => {
-                    self.NJOCOOPICLN.push(is.read_uint32()?);
+                16 => {
+                    self.group_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MissionGroupWarnScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NJOCOOPICLN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.group_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.NJOCOOPICLN)?;
+        os.write_repeated_packed_uint32(2, &self.group_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for MissionGroupWarnScNotify {
     }
 
     fn clear(&mut self) {
-        self.NJOCOOPICLN.clear();
+        self.group_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionGroupWarnScNotify {
         static instance: MissionGroupWarnScNotify = MissionGroupWarnScNotify {
-            NJOCOOPICLN: ::std::vec::Vec::new(),
+            group_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for MissionGroupWarnScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMissionGroupWarnScNotify.proto\"<\n\x18MissionGroupWarnScNotify\
-    \x12\x20\n\x0bNJOCOOPICLN\x18\x04\x20\x03(\rR\x0bNJOCOOPICLNb\x06proto3\
+    \n\x1eMissionGroupWarnScNotify.proto\">\n\x18MissionGroupWarnScNotify\
+    \x12\"\n\rgroup_id_list\x18\x02\x20\x03(\rR\x0bgroupIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ChessRogueNousDiceUpdateNotify {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueNousDiceUpdateNotify.MBIBKHKKEFB)
-    pub MBIBKHKKEFB: ::protobuf::MessageField<super::DFFJCMLAICL::DFFJCMLAICL>,
+    pub MBIBKHKKEFB: ::protobuf::MessageField<super::ChessRogueQueryDiceInfo::ChessRogueQueryDiceInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousDiceUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl ChessRogueNousDiceUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFFJCMLAICL::DFFJCMLAICL>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryDiceInfo::ChessRogueQueryDiceInfo>(
             "MBIBKHKKEFB",
             |m: &ChessRogueNousDiceUpdateNotify| { &m.MBIBKHKKEFB },
             |m: &mut ChessRogueNousDiceUpdateNotify| { &mut m.MBIBKHKKEFB },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MBIBKHKKEFB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MBIBKHKKEFB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousDiceUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$ChessRogueNousDiceUpdateNotify.proto\x1a\x11DFFJCMLAICL.proto\"P\n\
-    \x1eChessRogueNousDiceUpdateNotify\x12.\n\x0bMBIBKHKKEFB\x18\x0c\x20\x01\
-    (\x0b2\x0c.DFFJCMLAICLR\x0bMBIBKHKKEFBb\x06proto3\
+    \n$ChessRogueNousDiceUpdateNotify.proto\x1a\x1dChessRogueQueryDiceInfo.p\
+    roto\"\\\n\x1eChessRogueNousDiceUpdateNotify\x12:\n\x0bMBIBKHKKEFB\x18\
+    \x05\x20\x01(\x0b2\x18.ChessRogueQueryDiceInfoR\x0bMBIBKHKKEFBb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DFFJCMLAICL::file_descriptor().clone());
+            deps.push(super::ChessRogueQueryDiceInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueNousDiceUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRechargeGiftType {
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftTypeNone)
     CmdRechargeGiftTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardCsReq)
-    CmdTakeRechargeBenefitRewardCsReq = 8371,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardCsReq)
-    CmdTakeRechargeGiftRewardCsReq = 8380,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardScRsp)
-    CmdTakeRechargeBenefitRewardScRsp = 8370,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdSyncRechargeBenefitInfoScNotify)
-    CmdSyncRechargeBenefitInfoScNotify = 8379,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoScRsp)
-    CmdGetRechargeBenefitInfoScRsp = 8369,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardScRsp)
-    CmdTakeRechargeGiftRewardScRsp = 8364,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoCsReq)
-    CmdGetRechargeBenefitInfoCsReq = 8374,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeGiftInfoCsReq)
-    CmdGetRechargeGiftInfoCsReq = 8377,
+    CmdGetRechargeGiftInfoCsReq = 8374,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeGiftInfoScRsp)
-    CmdGetRechargeGiftInfoScRsp = 8376,
+    CmdGetRechargeGiftInfoScRsp = 8373,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoCsReq)
+    CmdGetRechargeBenefitInfoCsReq = 8364,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardCsReq)
+    CmdTakeRechargeGiftRewardCsReq = 8368,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardCsReq)
+    CmdTakeRechargeBenefitRewardCsReq = 8369,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdSyncRechargeBenefitInfoScNotify)
+    CmdSyncRechargeBenefitInfoScNotify = 8380,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardScRsp)
+    CmdTakeRechargeGiftRewardScRsp = 8370,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardScRsp)
+    CmdTakeRechargeBenefitRewardScRsp = 8367,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoScRsp)
+    CmdGetRechargeBenefitInfoScRsp = 8362,
 }
 
 impl ::protobuf::Enum for CmdRechargeGiftType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRechargeGiftType> {
         match value {
             0 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftTypeNone),
-            8371 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
-            8380 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
-            8370 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
-            8379 => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
-            8369 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
-            8364 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
-            8374 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
-            8377 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq),
-            8376 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp),
+            8374 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq),
+            8373 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp),
+            8364 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
+            8368 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
+            8369 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
+            8380 => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
+            8370 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
+            8367 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
+            8362 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRechargeGiftType> {
         match str {
             "CmdRechargeGiftTypeNone" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftTypeNone),
-            "CmdTakeRechargeBenefitRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
-            "CmdTakeRechargeGiftRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
-            "CmdTakeRechargeBenefitRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
-            "CmdSyncRechargeBenefitInfoScNotify" => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
-            "CmdGetRechargeBenefitInfoScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
-            "CmdTakeRechargeGiftRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
-            "CmdGetRechargeBenefitInfoCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
             "CmdGetRechargeGiftInfoCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq),
             "CmdGetRechargeGiftInfoScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp),
+            "CmdGetRechargeBenefitInfoCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
+            "CmdTakeRechargeGiftRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
+            "CmdTakeRechargeBenefitRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
+            "CmdSyncRechargeBenefitInfoScNotify" => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
+            "CmdTakeRechargeGiftRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
+            "CmdTakeRechargeBenefitRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
+            "CmdGetRechargeBenefitInfoScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRechargeGiftType] = &[
         CmdRechargeGiftType::CmdRechargeGiftTypeNone,
-        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq,
-        CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq,
-        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp,
-        CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify,
-        CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp,
-        CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp,
-        CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq,
         CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq,
         CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp,
+        CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq,
+        CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq,
+        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq,
+        CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify,
+        CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp,
+        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp,
+        CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRechargeGiftType::CmdRechargeGiftTypeNone => 0,
-            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq => 1,
-            CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq => 2,
-            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp => 3,
-            CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify => 4,
-            CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp => 5,
-            CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp => 6,
-            CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq => 7,
-            CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq => 8,
-            CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp => 9,
+            CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq => 1,
+            CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp => 2,
+            CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq => 3,
+            CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq => 4,
+            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq => 5,
+            CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify => 6,
+            CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp => 7,
+            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp => 8,
+            CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,13 @@ impl CmdRechargeGiftType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdRechargeGiftType.proto*\x83\x03\n\x13CmdRechargeGiftType\x12\
-    \x1b\n\x17CmdRechargeGiftTypeNone\x10\0\x12&\n!CmdTakeRechargeBenefitRew\
-    ardCsReq\x10\xb3A\x12#\n\x1eCmdTakeRechargeGiftRewardCsReq\x10\xbcA\x12&\
-    \n!CmdTakeRechargeBenefitRewardScRsp\x10\xb2A\x12'\n\"CmdSyncRechargeBen\
-    efitInfoScNotify\x10\xbbA\x12#\n\x1eCmdGetRechargeBenefitInfoScRsp\x10\
-    \xb1A\x12#\n\x1eCmdTakeRechargeGiftRewardScRsp\x10\xacA\x12#\n\x1eCmdGet\
-    RechargeBenefitInfoCsReq\x10\xb6A\x12\x20\n\x1bCmdGetRechargeGiftInfoCsR\
-    eq\x10\xb9A\x12\x20\n\x1bCmdGetRechargeGiftInfoScRsp\x10\xb8Ab\x06proto3\
+    \x1b\n\x17CmdRechargeGiftTypeNone\x10\0\x12\x20\n\x1bCmdGetRechargeGiftI\
+    nfoCsReq\x10\xb6A\x12\x20\n\x1bCmdGetRechargeGiftInfoScRsp\x10\xb5A\x12#\
+    \n\x1eCmdGetRechargeBenefitInfoCsReq\x10\xacA\x12#\n\x1eCmdTakeRechargeG\
+    iftRewardCsReq\x10\xb0A\x12&\n!CmdTakeRechargeBenefitRewardCsReq\x10\xb1\
+    A\x12'\n\"CmdSyncRechargeBenefitInfoScNotify\x10\xbcA\x12#\n\x1eCmdTakeR\
+    echargeGiftRewardScRsp\x10\xb2A\x12&\n!CmdTakeRechargeBenefitRewardScRsp\
+    \x10\xafA\x12#\n\x1eCmdGetRechargeBenefitInfoScRsp\x10\xaaAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PropExtraInfo {
     // message fields
     // @@protoc_insertion_point(field:PropExtraInfo.timeline_info)
-    pub timeline_info: ::protobuf::MessageField<super::LNOJKICCCME::LNOJKICCCME>,
+    pub timeline_info: ::protobuf::MessageField<super::PropTimelineInfo::PropTimelineInfo>,
     // message oneof groups
-    pub info_case: ::std::option::Option<prop_extra_info::Info_case>,
+    pub InfoOneofCase: ::std::option::Option<prop_extra_info::InfoOneofCase>,
     // special fields
     // @@protoc_insertion_point(special_field:PropExtraInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,88 +48,88 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .ANIKPLFEKMG rogue_info = 11;
+    // .PropRogueInfo rogue_info = 5;
 
-    pub fn rogue_info(&self) -> &super::ANIKPLFEKMG::ANIKPLFEKMG {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(ref v)) => v,
-            _ => <super::ANIKPLFEKMG::ANIKPLFEKMG as ::protobuf::Message>::default_instance(),
+    pub fn rogue_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(ref v)) => v,
+            _ => <super::PropRogueInfo::PropRogueInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_info(&mut self, v: super::ANIKPLFEKMG::ANIKPLFEKMG) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(v))
+    pub fn set_rogue_info(&mut self, v: super::PropRogueInfo::PropRogueInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_info(&mut self) -> &mut super::ANIKPLFEKMG::ANIKPLFEKMG {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(_)) = self.info_case {
+    pub fn mut_rogue_info(&mut self) -> &mut super::PropRogueInfo::PropRogueInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(super::ANIKPLFEKMG::ANIKPLFEKMG::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(super::PropRogueInfo::PropRogueInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_info(&mut self) -> super::ANIKPLFEKMG::ANIKPLFEKMG {
+    pub fn take_rogue_info(&mut self) -> super::PropRogueInfo::PropRogueInfo {
         if self.has_rogue_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::ANIKPLFEKMG::ANIKPLFEKMG::new()
+            super::PropRogueInfo::PropRogueInfo::new()
         }
     }
 
-    // .PropAeonInfo aeon_info = 13;
+    // .PropAeonInfo aeon_info = 11;
 
     pub fn aeon_info(&self) -> &super::PropAeonInfo::PropAeonInfo {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(ref v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(ref v)) => v,
             _ => <super::PropAeonInfo::PropAeonInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_aeon_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_aeon_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_aeon_info(&mut self, v: super::PropAeonInfo::PropAeonInfo) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(v))
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_aeon_info(&mut self) -> &mut super::PropAeonInfo::PropAeonInfo {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(_)) = self.info_case {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(super::PropAeonInfo::PropAeonInfo::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(super::PropAeonInfo::PropAeonInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +137,8 @@ impl PropExtraInfo {
     // Take field
     pub fn take_aeon_info(&mut self) -> super::PropAeonInfo::PropAeonInfo {
         if self.has_aeon_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -146,309 +146,309 @@ impl PropExtraInfo {
         }
     }
 
-    // .AOIHEKLNDID chess_rogue_info = 3;
+    // .PropChessRogueInfo chess_rogue_info = 6;
 
-    pub fn chess_rogue_info(&self) -> &super::AOIHEKLNDID::AOIHEKLNDID {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(ref v)) => v,
-            _ => <super::AOIHEKLNDID::AOIHEKLNDID as ::protobuf::Message>::default_instance(),
+    pub fn chess_rogue_info(&self) -> &super::PropChessRogueInfo::PropChessRogueInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(ref v)) => v,
+            _ => <super::PropChessRogueInfo::PropChessRogueInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_chess_rogue_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_chess_rogue_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_chess_rogue_info(&mut self, v: super::AOIHEKLNDID::AOIHEKLNDID) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(v))
+    pub fn set_chess_rogue_info(&mut self, v: super::PropChessRogueInfo::PropChessRogueInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_chess_rogue_info(&mut self) -> &mut super::AOIHEKLNDID::AOIHEKLNDID {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(_)) = self.info_case {
+    pub fn mut_chess_rogue_info(&mut self) -> &mut super::PropChessRogueInfo::PropChessRogueInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(super::AOIHEKLNDID::AOIHEKLNDID::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(super::PropChessRogueInfo::PropChessRogueInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_chess_rogue_info(&mut self) -> super::AOIHEKLNDID::AOIHEKLNDID {
+    pub fn take_chess_rogue_info(&mut self) -> super::PropChessRogueInfo::PropChessRogueInfo {
         if self.has_chess_rogue_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AOIHEKLNDID::AOIHEKLNDID::new()
+            super::PropChessRogueInfo::PropChessRogueInfo::new()
         }
     }
 
-    // .HDOCJDHLAPD rogue_tourn_door_info = 7;
+    // .RogueTournDoorInfo rogue_tourn_door_info = 7;
 
-    pub fn rogue_tourn_door_info(&self) -> &super::HDOCJDHLAPD::HDOCJDHLAPD {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(ref v)) => v,
-            _ => <super::HDOCJDHLAPD::HDOCJDHLAPD as ::protobuf::Message>::default_instance(),
+    pub fn rogue_tourn_door_info(&self) -> &super::RogueTournDoorInfo::RogueTournDoorInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref v)) => v,
+            _ => <super::RogueTournDoorInfo::RogueTournDoorInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_tourn_door_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_tourn_door_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_tourn_door_info(&mut self, v: super::HDOCJDHLAPD::HDOCJDHLAPD) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(v))
+    pub fn set_rogue_tourn_door_info(&mut self, v: super::RogueTournDoorInfo::RogueTournDoorInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_tourn_door_info(&mut self) -> &mut super::HDOCJDHLAPD::HDOCJDHLAPD {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(_)) = self.info_case {
+    pub fn mut_rogue_tourn_door_info(&mut self) -> &mut super::RogueTournDoorInfo::RogueTournDoorInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(super::HDOCJDHLAPD::HDOCJDHLAPD::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(super::RogueTournDoorInfo::RogueTournDoorInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_tourn_door_info(&mut self) -> super::HDOCJDHLAPD::HDOCJDHLAPD {
+    pub fn take_rogue_tourn_door_info(&mut self) -> super::RogueTournDoorInfo::RogueTournDoorInfo {
         if self.has_rogue_tourn_door_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HDOCJDHLAPD::HDOCJDHLAPD::new()
+            super::RogueTournDoorInfo::RogueTournDoorInfo::new()
         }
     }
 
-    // .EEKIHHEFAIC rogue_tourn_workbench_info = 10;
+    // .RogueTournWorkbenchInfo rogue_tourn_workbench_info = 3;
 
-    pub fn rogue_tourn_workbench_info(&self) -> &super::EEKIHHEFAIC::EEKIHHEFAIC {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref v)) => v,
-            _ => <super::EEKIHHEFAIC::EEKIHHEFAIC as ::protobuf::Message>::default_instance(),
+    pub fn rogue_tourn_workbench_info(&self) -> &super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref v)) => v,
+            _ => <super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_tourn_workbench_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_tourn_workbench_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_tourn_workbench_info(&mut self, v: super::EEKIHHEFAIC::EEKIHHEFAIC) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(v))
+    pub fn set_rogue_tourn_workbench_info(&mut self, v: super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_tourn_workbench_info(&mut self) -> &mut super::EEKIHHEFAIC::EEKIHHEFAIC {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(_)) = self.info_case {
+    pub fn mut_rogue_tourn_workbench_info(&mut self) -> &mut super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(super::EEKIHHEFAIC::EEKIHHEFAIC::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_tourn_workbench_info(&mut self) -> super::EEKIHHEFAIC::EEKIHHEFAIC {
+    pub fn take_rogue_tourn_workbench_info(&mut self) -> super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
         if self.has_rogue_tourn_workbench_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EEKIHHEFAIC::EEKIHHEFAIC::new()
+            super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo::new()
         }
     }
 
-    // .EIGOIECDMNA rogue_gamble_machine_info = 15;
+    // .RogueGambleMachineInfo rogue_gamble_machine_info = 10;
 
-    pub fn rogue_gamble_machine_info(&self) -> &super::EIGOIECDMNA::EIGOIECDMNA {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(ref v)) => v,
-            _ => <super::EIGOIECDMNA::EIGOIECDMNA as ::protobuf::Message>::default_instance(),
+    pub fn rogue_gamble_machine_info(&self) -> &super::RogueGambleMachineInfo::RogueGambleMachineInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref v)) => v,
+            _ => <super::RogueGambleMachineInfo::RogueGambleMachineInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_gamble_machine_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_gamble_machine_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_gamble_machine_info(&mut self, v: super::EIGOIECDMNA::EIGOIECDMNA) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(v))
+    pub fn set_rogue_gamble_machine_info(&mut self, v: super::RogueGambleMachineInfo::RogueGambleMachineInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_gamble_machine_info(&mut self) -> &mut super::EIGOIECDMNA::EIGOIECDMNA {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(_)) = self.info_case {
+    pub fn mut_rogue_gamble_machine_info(&mut self) -> &mut super::RogueGambleMachineInfo::RogueGambleMachineInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(super::EIGOIECDMNA::EIGOIECDMNA::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(super::RogueGambleMachineInfo::RogueGambleMachineInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_gamble_machine_info(&mut self) -> super::EIGOIECDMNA::EIGOIECDMNA {
+    pub fn take_rogue_gamble_machine_info(&mut self) -> super::RogueGambleMachineInfo::RogueGambleMachineInfo {
         if self.has_rogue_gamble_machine_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EIGOIECDMNA::EIGOIECDMNA::new()
+            super::RogueGambleMachineInfo::RogueGambleMachineInfo::new()
         }
     }
 
-    // .OJCKHBBBFEF rogue_curse_chest_info = 14;
+    // .RogueCurseChestInfo rogue_curse_chest_info = 14;
 
-    pub fn rogue_curse_chest_info(&self) -> &super::OJCKHBBBFEF::OJCKHBBBFEF {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(ref v)) => v,
-            _ => <super::OJCKHBBBFEF::OJCKHBBBFEF as ::protobuf::Message>::default_instance(),
+    pub fn rogue_curse_chest_info(&self) -> &super::RogueCurseChestInfo::RogueCurseChestInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref v)) => v,
+            _ => <super::RogueCurseChestInfo::RogueCurseChestInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_curse_chest_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_curse_chest_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_curse_chest_info(&mut self, v: super::OJCKHBBBFEF::OJCKHBBBFEF) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(v))
+    pub fn set_rogue_curse_chest_info(&mut self, v: super::RogueCurseChestInfo::RogueCurseChestInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_curse_chest_info(&mut self) -> &mut super::OJCKHBBBFEF::OJCKHBBBFEF {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(_)) = self.info_case {
+    pub fn mut_rogue_curse_chest_info(&mut self) -> &mut super::RogueCurseChestInfo::RogueCurseChestInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(super::OJCKHBBBFEF::OJCKHBBBFEF::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(super::RogueCurseChestInfo::RogueCurseChestInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_curse_chest_info(&mut self) -> super::OJCKHBBBFEF::OJCKHBBBFEF {
+    pub fn take_rogue_curse_chest_info(&mut self) -> super::RogueCurseChestInfo::RogueCurseChestInfo {
         if self.has_rogue_curse_chest_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OJCKHBBBFEF::OJCKHBBBFEF::new()
+            super::RogueCurseChestInfo::RogueCurseChestInfo::new()
         }
     }
 
-    // .JEGHKICDAOO rogue_magic_door_info = 1;
+    // .RogueMagicDoorInfo rogue_magic_door_info = 12;
 
-    pub fn rogue_magic_door_info(&self) -> &super::JEGHKICDAOO::JEGHKICDAOO {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(ref v)) => v,
-            _ => <super::JEGHKICDAOO::JEGHKICDAOO as ::protobuf::Message>::default_instance(),
+    pub fn rogue_magic_door_info(&self) -> &super::RogueMagicDoorInfo::RogueMagicDoorInfo {
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(ref v)) => v,
+            _ => <super::RogueMagicDoorInfo::RogueMagicDoorInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_magic_door_info(&mut self) {
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
     }
 
     pub fn has_rogue_magic_door_info(&self) -> bool {
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(..)) => true,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_magic_door_info(&mut self, v: super::JEGHKICDAOO::JEGHKICDAOO) {
-        self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(v))
+    pub fn set_rogue_magic_door_info(&mut self, v: super::RogueMagicDoorInfo::RogueMagicDoorInfo) {
+        self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_magic_door_info(&mut self) -> &mut super::JEGHKICDAOO::JEGHKICDAOO {
-        if let ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(_)) = self.info_case {
+    pub fn mut_rogue_magic_door_info(&mut self) -> &mut super::RogueMagicDoorInfo::RogueMagicDoorInfo {
+        if let ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(_)) = self.InfoOneofCase {
         } else {
-            self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(super::JEGHKICDAOO::JEGHKICDAOO::new()));
+            self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(super::RogueMagicDoorInfo::RogueMagicDoorInfo::new()));
         }
-        match self.info_case {
-            ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(ref mut v)) => v,
+        match self.InfoOneofCase {
+            ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_magic_door_info(&mut self) -> super::JEGHKICDAOO::JEGHKICDAOO {
+    pub fn take_rogue_magic_door_info(&mut self) -> super::RogueMagicDoorInfo::RogueMagicDoorInfo {
         if self.has_rogue_magic_door_info() {
-            match self.info_case.take() {
-                ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(v)) => v,
+            match self.InfoOneofCase.take() {
+                ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JEGHKICDAOO::JEGHKICDAOO::new()
+            super::RogueMagicDoorInfo::RogueMagicDoorInfo::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LNOJKICCCME::LNOJKICCCME>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropTimelineInfo::PropTimelineInfo>(
             "timeline_info",
             |m: &PropExtraInfo| { &m.timeline_info },
             |m: &mut PropExtraInfo| { &mut m.timeline_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ANIKPLFEKMG::ANIKPLFEKMG>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
             "rogue_info",
             PropExtraInfo::has_rogue_info,
             PropExtraInfo::rogue_info,
@@ -462,49 +462,49 @@ impl PropExtraInfo {
             PropExtraInfo::mut_aeon_info,
             PropExtraInfo::set_aeon_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AOIHEKLNDID::AOIHEKLNDID>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropChessRogueInfo::PropChessRogueInfo>(
             "chess_rogue_info",
             PropExtraInfo::has_chess_rogue_info,
             PropExtraInfo::chess_rogue_info,
             PropExtraInfo::mut_chess_rogue_info,
             PropExtraInfo::set_chess_rogue_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HDOCJDHLAPD::HDOCJDHLAPD>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournDoorInfo::RogueTournDoorInfo>(
             "rogue_tourn_door_info",
             PropExtraInfo::has_rogue_tourn_door_info,
             PropExtraInfo::rogue_tourn_door_info,
             PropExtraInfo::mut_rogue_tourn_door_info,
             PropExtraInfo::set_rogue_tourn_door_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EEKIHHEFAIC::EEKIHHEFAIC>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo>(
             "rogue_tourn_workbench_info",
             PropExtraInfo::has_rogue_tourn_workbench_info,
             PropExtraInfo::rogue_tourn_workbench_info,
             PropExtraInfo::mut_rogue_tourn_workbench_info,
             PropExtraInfo::set_rogue_tourn_workbench_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EIGOIECDMNA::EIGOIECDMNA>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueGambleMachineInfo::RogueGambleMachineInfo>(
             "rogue_gamble_machine_info",
             PropExtraInfo::has_rogue_gamble_machine_info,
             PropExtraInfo::rogue_gamble_machine_info,
             PropExtraInfo::mut_rogue_gamble_machine_info,
             PropExtraInfo::set_rogue_gamble_machine_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OJCKHBBBFEF::OJCKHBBBFEF>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueCurseChestInfo::RogueCurseChestInfo>(
             "rogue_curse_chest_info",
             PropExtraInfo::has_rogue_curse_chest_info,
             PropExtraInfo::rogue_curse_chest_info,
             PropExtraInfo::mut_rogue_curse_chest_info,
             PropExtraInfo::set_rogue_curse_chest_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JEGHKICDAOO::JEGHKICDAOO>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueMagicDoorInfo::RogueMagicDoorInfo>(
             "rogue_magic_door_info",
             PropExtraInfo::has_rogue_magic_door_info,
             PropExtraInfo::rogue_magic_door_info,
             PropExtraInfo::mut_rogue_magic_door_info,
             PropExtraInfo::set_rogue_magic_door_info,
         ));
-        oneofs.push(prop_extra_info::Info_case::generated_oneof_descriptor_data());
+        oneofs.push(prop_extra_info::InfoOneofCase::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PropExtraInfo>(
             "PropExtraInfo",
             fields,
@@ -523,32 +523,32 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
+                42 => {
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(is.read_message()?));
+                },
                 90 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueInfo(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(is.read_message()?));
                 },
-                106 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::AeonInfo(is.read_message()?));
-                },
-                26 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::ChessRogueInfo(is.read_message()?));
+                50 => {
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(is.read_message()?));
                 },
                 58 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournDoorInfo(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(is.read_message()?));
+                },
+                26 => {
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(is.read_message()?));
                 },
                 82 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueTournWorkbenchInfo(is.read_message()?));
-                },
-                122 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueGambleMachineInfo(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(is.read_message()?));
                 },
                 114 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueCurseChestInfo(is.read_message()?));
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(is.read_message()?));
                 },
-                10 => {
-                    self.info_case = ::std::option::Option::Some(prop_extra_info::Info_case::RogueMagicDoorInfo(is.read_message()?));
+                98 => {
+                    self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -566,37 +566,37 @@ impl ::protobuf::Message for PropExtraInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.info_case {
+        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
-                &prop_extra_info::Info_case::RogueInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::AeonInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::AeonInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::ChessRogueInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::ChessRogueInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::RogueTournDoorInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::RogueGambleMachineInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::RogueCurseChestInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::Info_case::RogueMagicDoorInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -609,33 +609,33 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.info_case {
+        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
-                &prop_extra_info::Info_case::RogueInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &prop_extra_info::InfoOneofCase::AeonInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
-                &prop_extra_info::Info_case::AeonInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                &prop_extra_info::InfoOneofCase::ChessRogueInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &prop_extra_info::Info_case::ChessRogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &prop_extra_info::Info_case::RogueTournDoorInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &prop_extra_info::Info_case::RogueTournWorkbenchInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &prop_extra_info::Info_case::RogueGambleMachineInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &prop_extra_info::Info_case::RogueCurseChestInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &prop_extra_info::Info_case::RogueMagicDoorInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                &prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -657,21 +657,21 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn clear(&mut self) {
         self.timeline_info.clear();
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
-        self.info_case = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
+        self.InfoOneofCase = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PropExtraInfo {
         static instance: PropExtraInfo = PropExtraInfo {
             timeline_info: ::protobuf::MessageField::none(),
-            info_case: ::std::option::Option::None,
+            InfoOneofCase: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -700,60 +700,62 @@ pub mod prop_extra_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:PropExtraInfo.info_case)
-    pub enum Info_case {
+    // @@protoc_insertion_point(oneof:PropExtraInfo.InfoOneofCase)
+    pub enum InfoOneofCase {
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_info)
-        RogueInfo(super::super::ANIKPLFEKMG::ANIKPLFEKMG),
+        RogueInfo(super::super::PropRogueInfo::PropRogueInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.aeon_info)
         AeonInfo(super::super::PropAeonInfo::PropAeonInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.chess_rogue_info)
-        ChessRogueInfo(super::super::AOIHEKLNDID::AOIHEKLNDID),
+        ChessRogueInfo(super::super::PropChessRogueInfo::PropChessRogueInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_tourn_door_info)
-        RogueTournDoorInfo(super::super::HDOCJDHLAPD::HDOCJDHLAPD),
+        RogueTournDoorInfo(super::super::RogueTournDoorInfo::RogueTournDoorInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_tourn_workbench_info)
-        RogueTournWorkbenchInfo(super::super::EEKIHHEFAIC::EEKIHHEFAIC),
+        RogueTournWorkbenchInfo(super::super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_gamble_machine_info)
-        RogueGambleMachineInfo(super::super::EIGOIECDMNA::EIGOIECDMNA),
+        RogueGambleMachineInfo(super::super::RogueGambleMachineInfo::RogueGambleMachineInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_curse_chest_info)
-        RogueCurseChestInfo(super::super::OJCKHBBBFEF::OJCKHBBBFEF),
+        RogueCurseChestInfo(super::super::RogueCurseChestInfo::RogueCurseChestInfo),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_magic_door_info)
-        RogueMagicDoorInfo(super::super::JEGHKICDAOO::JEGHKICDAOO),
+        RogueMagicDoorInfo(super::super::RogueMagicDoorInfo::RogueMagicDoorInfo),
     }
 
-    impl ::protobuf::Oneof for Info_case {
+    impl ::protobuf::Oneof for InfoOneofCase {
     }
 
-    impl ::protobuf::OneofFull for Info_case {
+    impl ::protobuf::OneofFull for InfoOneofCase {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::PropExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("info_case").unwrap()).clone()
+            descriptor.get(|| <super::PropExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("InfoOneofCase").unwrap()).clone()
         }
     }
 
-    impl Info_case {
+    impl InfoOneofCase {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Info_case>("info_case")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<InfoOneofCase>("InfoOneofCase")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13PropExtraInfo.proto\x1a\x11ANIKPLFEKMG.proto\x1a\x11AOIHEKLNDID.pr\
-    oto\x1a\x11EEKIHHEFAIC.proto\x1a\x11EIGOIECDMNA.proto\x1a\x11HDOCJDHLAPD\
-    .proto\x1a\x11JEGHKICDAOO.proto\x1a\x11LNOJKICCCME.proto\x1a\x11OJCKHBBB\
-    FEF.proto\x1a\x12PropAeonInfo.proto\"\xc9\x04\n\rPropExtraInfo\x121\n\rt\
-    imeline_info\x18\x05\x20\x01(\x0b2\x0c.LNOJKICCCMER\x0ctimelineInfo\x12-\
-    \n\nrogue_info\x18\x0b\x20\x01(\x0b2\x0c.ANIKPLFEKMGH\0R\trogueInfo\x12,\
-    \n\taeon_info\x18\r\x20\x01(\x0b2\r.PropAeonInfoH\0R\x08aeonInfo\x128\n\
-    \x10chess_rogue_info\x18\x03\x20\x01(\x0b2\x0c.AOIHEKLNDIDH\0R\x0echessR\
-    ogueInfo\x12A\n\x15rogue_tourn_door_info\x18\x07\x20\x01(\x0b2\x0c.HDOCJ\
-    DHLAPDH\0R\x12rogueTournDoorInfo\x12K\n\x1arogue_tourn_workbench_info\
-    \x18\n\x20\x01(\x0b2\x0c.EEKIHHEFAICH\0R\x17rogueTournWorkbenchInfo\x12I\
-    \n\x19rogue_gamble_machine_info\x18\x0f\x20\x01(\x0b2\x0c.EIGOIECDMNAH\0\
-    R\x16rogueGambleMachineInfo\x12C\n\x16rogue_curse_chest_info\x18\x0e\x20\
-    \x01(\x0b2\x0c.OJCKHBBBFEFH\0R\x13rogueCurseChestInfo\x12A\n\x15rogue_ma\
-    gic_door_info\x18\x01\x20\x01(\x0b2\x0c.JEGHKICDAOOH\0R\x12rogueMagicDoo\
-    rInfoB\x0b\n\tinfo_caseb\x06proto3\
+    \n\x13PropExtraInfo.proto\x1a\x12PropAeonInfo.proto\x1a\x18PropChessRogu\
+    eInfo.proto\x1a\x13PropRogueInfo.proto\x1a\x16PropTimelineInfo.proto\x1a\
+    \x19RogueCurseChestInfo.proto\x1a\x1cRogueGambleMachineInfo.proto\x1a\
+    \x18RogueMagicDoorInfo.proto\x1a\x18RogueTournDoorInfo.proto\x1a\x1dRogu\
+    eTournWorkbenchInfo.proto\"\x88\x05\n\rPropExtraInfo\x126\n\rtimeline_in\
+    fo\x18\t\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimelineInfo\x12/\n\nrog\
+    ue_info\x18\x05\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueInfo\x12,\n\ta\
+    eon_info\x18\x0b\x20\x01(\x0b2\r.PropAeonInfoH\0R\x08aeonInfo\x12?\n\x10\
+    chess_rogue_info\x18\x06\x20\x01(\x0b2\x13.PropChessRogueInfoH\0R\x0eche\
+    ssRogueInfo\x12H\n\x15rogue_tourn_door_info\x18\x07\x20\x01(\x0b2\x13.Ro\
+    gueTournDoorInfoH\0R\x12rogueTournDoorInfo\x12W\n\x1arogue_tourn_workben\
+    ch_info\x18\x03\x20\x01(\x0b2\x18.RogueTournWorkbenchInfoH\0R\x17rogueTo\
+    urnWorkbenchInfo\x12T\n\x19rogue_gamble_machine_info\x18\n\x20\x01(\x0b2\
+    \x17.RogueGambleMachineInfoH\0R\x16rogueGambleMachineInfo\x12K\n\x16rogu\
+    e_curse_chest_info\x18\x0e\x20\x01(\x0b2\x14.RogueCurseChestInfoH\0R\x13\
+    rogueCurseChestInfo\x12H\n\x15rogue_magic_door_info\x18\x0c\x20\x01(\x0b\
+    2\x13.RogueMagicDoorInfoH\0R\x12rogueMagicDoorInfoB\x0f\n\rInfoOneofCase\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -771,15 +773,15 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(9);
-            deps.push(super::ANIKPLFEKMG::file_descriptor().clone());
-            deps.push(super::AOIHEKLNDID::file_descriptor().clone());
-            deps.push(super::EEKIHHEFAIC::file_descriptor().clone());
-            deps.push(super::EIGOIECDMNA::file_descriptor().clone());
-            deps.push(super::HDOCJDHLAPD::file_descriptor().clone());
-            deps.push(super::JEGHKICDAOO::file_descriptor().clone());
-            deps.push(super::LNOJKICCCME::file_descriptor().clone());
-            deps.push(super::OJCKHBBBFEF::file_descriptor().clone());
             deps.push(super::PropAeonInfo::file_descriptor().clone());
+            deps.push(super::PropChessRogueInfo::file_descriptor().clone());
+            deps.push(super::PropRogueInfo::file_descriptor().clone());
+            deps.push(super::PropTimelineInfo::file_descriptor().clone());
+            deps.push(super::RogueCurseChestInfo::file_descriptor().clone());
+            deps.push(super::RogueGambleMachineInfo::file_descriptor().clone());
+            deps.push(super::RogueMagicDoorInfo::file_descriptor().clone());
+            deps.push(super::RogueTournDoorInfo::file_descriptor().clone());
+            deps.push(super::RogueTournWorkbenchInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PropExtraInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

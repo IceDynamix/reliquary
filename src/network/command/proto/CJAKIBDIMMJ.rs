@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CJAKIBDIMMJ {
     // message oneof groups
-    pub PMFBBCEBACD: ::std::option::Option<cjakibdimmj::PMFBBCEBACD>,
+    pub MCGEGPKEDOO: ::std::option::Option<cjakibdimmj::MCGEGPKEDOO>,
     // special fields
     // @@protoc_insertion_point(special_field:CJAKIBDIMMJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,64 +45,64 @@ impl CJAKIBDIMMJ {
         ::std::default::Default::default()
     }
 
-    // bool IAHOPFNPFLN = 392;
+    // bool IAHOPFNPFLN = 1837;
 
     pub fn IAHOPFNPFLN(&self) -> bool {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v)) => v,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(v)) => v,
             _ => false,
         }
     }
 
     pub fn clear_IAHOPFNPFLN(&mut self) {
-        self.PMFBBCEBACD = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
     }
 
     pub fn has_IAHOPFNPFLN(&self) -> bool {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(..)) => true,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_IAHOPFNPFLN(&mut self, v: bool) {
-        self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v))
+        self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(v))
     }
 
-    // .MENPBGGOGMC AMALJFOKCBA = 1558;
+    // .MENPBGGOGMC AMALJFOKCBA = 73;
 
     pub fn AMALJFOKCBA(&self) -> &super::MENPBGGOGMC::MENPBGGOGMC {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(ref v)) => v,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(ref v)) => v,
             _ => <super::MENPBGGOGMC::MENPBGGOGMC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_AMALJFOKCBA(&mut self) {
-        self.PMFBBCEBACD = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
     }
 
     pub fn has_AMALJFOKCBA(&self) -> bool {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(..)) => true,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_AMALJFOKCBA(&mut self, v: super::MENPBGGOGMC::MENPBGGOGMC) {
-        self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(v))
+        self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_AMALJFOKCBA(&mut self) -> &mut super::MENPBGGOGMC::MENPBGGOGMC {
-        if let ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(_)) = self.PMFBBCEBACD {
+        if let ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(_)) = self.MCGEGPKEDOO {
         } else {
-            self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(super::MENPBGGOGMC::MENPBGGOGMC::new()));
+            self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(super::MENPBGGOGMC::MENPBGGOGMC::new()));
         }
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(ref mut v)) => v,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -110,8 +110,8 @@ impl CJAKIBDIMMJ {
     // Take field
     pub fn take_AMALJFOKCBA(&mut self) -> super::MENPBGGOGMC::MENPBGGOGMC {
         if self.has_AMALJFOKCBA() {
-            match self.PMFBBCEBACD.take() {
-                ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(v)) => v,
+            match self.MCGEGPKEDOO.take() {
+                ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -119,39 +119,39 @@ impl CJAKIBDIMMJ {
         }
     }
 
-    // .MENPBGGOGMC OECBELGDLFP = 393;
+    // .MENPBGGOGMC OECBELGDLFP = 670;
 
     pub fn OECBELGDLFP(&self) -> &super::MENPBGGOGMC::MENPBGGOGMC {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(ref v)) => v,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(ref v)) => v,
             _ => <super::MENPBGGOGMC::MENPBGGOGMC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_OECBELGDLFP(&mut self) {
-        self.PMFBBCEBACD = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
     }
 
     pub fn has_OECBELGDLFP(&self) -> bool {
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(..)) => true,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_OECBELGDLFP(&mut self, v: super::MENPBGGOGMC::MENPBGGOGMC) {
-        self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(v))
+        self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_OECBELGDLFP(&mut self) -> &mut super::MENPBGGOGMC::MENPBGGOGMC {
-        if let ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(_)) = self.PMFBBCEBACD {
+        if let ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(_)) = self.MCGEGPKEDOO {
         } else {
-            self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(super::MENPBGGOGMC::MENPBGGOGMC::new()));
+            self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(super::MENPBGGOGMC::MENPBGGOGMC::new()));
         }
-        match self.PMFBBCEBACD {
-            ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(ref mut v)) => v,
+        match self.MCGEGPKEDOO {
+            ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -159,8 +159,8 @@ impl CJAKIBDIMMJ {
     // Take field
     pub fn take_OECBELGDLFP(&mut self) -> super::MENPBGGOGMC::MENPBGGOGMC {
         if self.has_OECBELGDLFP() {
-            match self.PMFBBCEBACD.take() {
-                ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(v)) => v,
+            match self.MCGEGPKEDOO.take() {
+                ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -191,7 +191,7 @@ impl CJAKIBDIMMJ {
             CJAKIBDIMMJ::mut_OECBELGDLFP,
             CJAKIBDIMMJ::set_OECBELGDLFP,
         ));
-        oneofs.push(cjakibdimmj::PMFBBCEBACD::generated_oneof_descriptor_data());
+        oneofs.push(cjakibdimmj::MCGEGPKEDOO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CJAKIBDIMMJ>(
             "CJAKIBDIMMJ",
             fields,
@@ -210,14 +210,14 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                3136 => {
-                    self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(is.read_bool()?));
+                14696 => {
+                    self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(is.read_bool()?));
                 },
-                12466 => {
-                    self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(is.read_message()?));
+                586 => {
+                    self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(is.read_message()?));
                 },
-                3146 => {
-                    self.PMFBBCEBACD = ::std::option::Option::Some(cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(is.read_message()?));
+                5362 => {
+                    self.MCGEGPKEDOO = ::std::option::Option::Some(cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -231,16 +231,16 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.PMFBBCEBACD {
+        if let ::std::option::Option::Some(ref v) = self.MCGEGPKEDOO {
             match v {
-                &cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v) => {
+                &cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(v) => {
                     my_size += 2 + 1;
                 },
-                &cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(ref v) => {
+                &cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(ref v) => {
+                &cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -252,16 +252,16 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.PMFBBCEBACD {
+        if let ::std::option::Option::Some(ref v) = self.MCGEGPKEDOO {
             match v {
-                &cjakibdimmj::PMFBBCEBACD::IAHOPFNPFLN(v) => {
-                    os.write_bool(392, v)?;
+                &cjakibdimmj::MCGEGPKEDOO::IAHOPFNPFLN(v) => {
+                    os.write_bool(1837, v)?;
                 },
-                &cjakibdimmj::PMFBBCEBACD::AMALJFOKCBA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1558, v, os)?;
+                &cjakibdimmj::MCGEGPKEDOO::AMALJFOKCBA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(73, v, os)?;
                 },
-                &cjakibdimmj::PMFBBCEBACD::OECBELGDLFP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(393, v, os)?;
+                &cjakibdimmj::MCGEGPKEDOO::OECBELGDLFP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(670, v, os)?;
                 },
             };
         }
@@ -282,15 +282,15 @@ impl ::protobuf::Message for CJAKIBDIMMJ {
     }
 
     fn clear(&mut self) {
-        self.PMFBBCEBACD = ::std::option::Option::None;
-        self.PMFBBCEBACD = ::std::option::Option::None;
-        self.PMFBBCEBACD = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
+        self.MCGEGPKEDOO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CJAKIBDIMMJ {
         static instance: CJAKIBDIMMJ = CJAKIBDIMMJ {
-            PMFBBCEBACD: ::std::option::Option::None,
+            MCGEGPKEDOO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -319,8 +319,8 @@ pub mod cjakibdimmj {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CJAKIBDIMMJ.PMFBBCEBACD)
-    pub enum PMFBBCEBACD {
+    // @@protoc_insertion_point(oneof:CJAKIBDIMMJ.MCGEGPKEDOO)
+    pub enum MCGEGPKEDOO {
         // @@protoc_insertion_point(oneof_field:CJAKIBDIMMJ.IAHOPFNPFLN)
         IAHOPFNPFLN(bool),
         // @@protoc_insertion_point(oneof_field:CJAKIBDIMMJ.AMALJFOKCBA)
@@ -329,29 +329,29 @@ pub mod cjakibdimmj {
         OECBELGDLFP(super::super::MENPBGGOGMC::MENPBGGOGMC),
     }
 
-    impl ::protobuf::Oneof for PMFBBCEBACD {
+    impl ::protobuf::Oneof for MCGEGPKEDOO {
     }
 
-    impl ::protobuf::OneofFull for PMFBBCEBACD {
+    impl ::protobuf::OneofFull for MCGEGPKEDOO {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CJAKIBDIMMJ as ::protobuf::MessageFull>::descriptor().oneof_by_name("PMFBBCEBACD").unwrap()).clone()
+            descriptor.get(|| <super::CJAKIBDIMMJ as ::protobuf::MessageFull>::descriptor().oneof_by_name("MCGEGPKEDOO").unwrap()).clone()
         }
     }
 
-    impl PMFBBCEBACD {
+    impl MCGEGPKEDOO {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PMFBBCEBACD>("PMFBBCEBACD")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MCGEGPKEDOO>("MCGEGPKEDOO")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CJAKIBDIMMJ.proto\x1a\x11MENPBGGOGMC.proto\"\xa7\x01\n\x0bCJAKIBDI\
-    MMJ\x12#\n\x0bIAHOPFNPFLN\x18\x88\x03\x20\x01(\x08H\0R\x0bIAHOPFNPFLN\
-    \x121\n\x0bAMALJFOKCBA\x18\x96\x0c\x20\x01(\x0b2\x0c.MENPBGGOGMCH\0R\x0b\
-    AMALJFOKCBA\x121\n\x0bOECBELGDLFP\x18\x89\x03\x20\x01(\x0b2\x0c.MENPBGGO\
-    GMCH\0R\x0bOECBELGDLFPB\r\n\x0bPMFBBCEBACDb\x06proto3\
+    \n\x11CJAKIBDIMMJ.proto\x1a\x11MENPBGGOGMC.proto\"\xa6\x01\n\x0bCJAKIBDI\
+    MMJ\x12#\n\x0bIAHOPFNPFLN\x18\xad\x0e\x20\x01(\x08H\0R\x0bIAHOPFNPFLN\
+    \x120\n\x0bAMALJFOKCBA\x18I\x20\x01(\x0b2\x0c.MENPBGGOGMCH\0R\x0bAMALJFO\
+    KCBA\x121\n\x0bOECBELGDLFP\x18\x9e\x05\x20\x01(\x0b2\x0c.MENPBGGOGMCH\0R\
+    \x0bOECBELGDLFPB\r\n\x0bMCGEGPKEDOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

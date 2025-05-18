@@ -30,12 +30,12 @@ pub struct RaidCollectionEnterNextRaidCsReq {
     // message fields
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.JGEAEGMHDOC)
     pub JGEAEGMHDOC: u32,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.CENIFNKNFNP)
-    pub CENIFNKNFNP: u32,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.CENIFNKNFNP)
+    pub CENIFNKNFNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidCollectionEnterNextRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl RaidCollectionEnterNextRaidCsReq {
             |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.JGEAEGMHDOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.CENIFNKNFNP },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.CENIFNKNFNP },
+            "world_level",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.world_level },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -71,9 +71,9 @@ impl RaidCollectionEnterNextRaidCsReq {
             |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.world_level },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.world_level },
+            "CENIFNKNFNP",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.CENIFNKNFNP },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.CENIFNKNFNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidCollectionEnterNextRaidCsReq>(
             "RaidCollectionEnterNextRaidCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                64 => {
                     self.JGEAEGMHDOC = is.read_uint32()?;
                 },
-                112 => {
-                    self.CENIFNKNFNP = is.read_uint32()?;
+                40 => {
+                    self.world_level = is.read_uint32()?;
                 },
-                42 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                40 => {
+                56 => {
                     self.avatar_list.push(is.read_uint32()?);
                 },
-                88 => {
-                    self.world_level = is.read_uint32()?;
+                72 => {
+                    self.CENIFNKNFNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JGEAEGMHDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JGEAEGMHDOC);
+            my_size += ::protobuf::rt::uint32_size(8, self.JGEAEGMHDOC);
         }
-        if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CENIFNKNFNP);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.avatar_list);
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.avatar_list);
+        if self.CENIFNKNFNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CENIFNKNFNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,14 +137,14 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JGEAEGMHDOC != 0 {
-            os.write_uint32(15, self.JGEAEGMHDOC)?;
+            os.write_uint32(8, self.JGEAEGMHDOC)?;
         }
-        if self.CENIFNKNFNP != 0 {
-            os.write_uint32(14, self.CENIFNKNFNP)?;
-        }
-        os.write_repeated_packed_uint32(5, &self.avatar_list)?;
         if self.world_level != 0 {
-            os.write_uint32(11, self.world_level)?;
+            os.write_uint32(5, self.world_level)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.avatar_list)?;
+        if self.CENIFNKNFNP != 0 {
+            os.write_uint32(9, self.CENIFNKNFNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
 
     fn clear(&mut self) {
         self.JGEAEGMHDOC = 0;
-        self.CENIFNKNFNP = 0;
-        self.avatar_list.clear();
         self.world_level = 0;
+        self.avatar_list.clear();
+        self.CENIFNKNFNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidCollectionEnterNextRaidCsReq {
         static instance: RaidCollectionEnterNextRaidCsReq = RaidCollectionEnterNextRaidCsReq {
             JGEAEGMHDOC: 0,
-            CENIFNKNFNP: 0,
-            avatar_list: ::std::vec::Vec::new(),
             world_level: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            CENIFNKNFNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionEnterNextRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&RaidCollectionEnterNextRaidCsReq.proto\"\xa8\x01\n\x20RaidCollectionE\
-    nterNextRaidCsReq\x12\x20\n\x0bJGEAEGMHDOC\x18\x0f\x20\x01(\rR\x0bJGEAEG\
-    MHDOC\x12\x20\n\x0bCENIFNKNFNP\x18\x0e\x20\x01(\rR\x0bCENIFNKNFNP\x12\
-    \x1f\n\x0bavatar_list\x18\x05\x20\x03(\rR\navatarList\x12\x1f\n\x0bworld\
-    _level\x18\x0b\x20\x01(\rR\nworldLevelb\x06proto3\
+    nterNextRaidCsReq\x12\x20\n\x0bJGEAEGMHDOC\x18\x08\x20\x01(\rR\x0bJGEAEG\
+    MHDOC\x12\x1f\n\x0bworld_level\x18\x05\x20\x01(\rR\nworldLevel\x12\x1f\n\
+    \x0bavatar_list\x18\x07\x20\x03(\rR\navatarList\x12\x20\n\x0bCENIFNKNFNP\
+    \x18\t\x20\x01(\rR\x0bCENIFNKNFNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

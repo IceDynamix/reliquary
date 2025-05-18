@@ -72,7 +72,7 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                96 => {
                     self.player_data = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.player_data != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.player_data);
+            my_size += ::protobuf::rt::uint32_size(12, self.player_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.player_data != 0 {
-            os.write_uint32(14, self.player_data)?;
+            os.write_uint32(12, self.player_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMusicRhythmDataCsReq.proto\"7\n\x14MusicRhythmDataCsReq\x12\x1f\n\
-    \x0bplayer_data\x18\x0e\x20\x01(\rR\nplayerDatab\x06proto3\
+    \x0bplayer_data\x18\x0c\x20\x01(\rR\nplayerDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

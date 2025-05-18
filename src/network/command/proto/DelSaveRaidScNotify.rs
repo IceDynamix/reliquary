@@ -79,7 +79,7 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.world_level = is.read_uint32()?;
                 },
                 80 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
         }
         if self.CENIFNKNFNP != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.CENIFNKNFNP);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(14, self.world_level)?;
+            os.write_uint32(3, self.world_level)?;
         }
         if self.CENIFNKNFNP != 0 {
             os.write_uint32(10, self.CENIFNKNFNP)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DelSaveRaidScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19DelSaveRaidScNotify.proto\"X\n\x13DelSaveRaidScNotify\x12\x1f\n\
-    \x0bworld_level\x18\x0e\x20\x01(\rR\nworldLevel\x12\x20\n\x0bCENIFNKNFNP\
+    \x0bworld_level\x18\x03\x20\x01(\rR\nworldLevel\x12\x20\n\x0bCENIFNKNFNP\
     \x18\n\x20\x01(\rR\x0bCENIFNKNFNPb\x06proto3\
 ";
 

@@ -32,10 +32,10 @@ pub struct GetGameStateServiceConfigScRsp {
     pub KAOJCOBEEON: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.FIBIJGMKDPP)
     pub FIBIJGMKDPP: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.LEDKMDOLLBB)
-    pub LEDKMDOLLBB: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetGameStateServiceConfigScRsp.LEDKMDOLLBB)
+    pub LEDKMDOLLBB: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:GetGameStateServiceConfigScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl GetGameStateServiceConfigScRsp {
             |m: &GetGameStateServiceConfigScRsp| { &m.FIBIJGMKDPP },
             |m: &mut GetGameStateServiceConfigScRsp| { &mut m.FIBIJGMKDPP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LEDKMDOLLBB",
-            |m: &GetGameStateServiceConfigScRsp| { &m.LEDKMDOLLBB },
-            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.LEDKMDOLLBB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetGameStateServiceConfigScRsp| { &m.retcode },
             |m: &mut GetGameStateServiceConfigScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LEDKMDOLLBB",
+            |m: &GetGameStateServiceConfigScRsp| { &m.LEDKMDOLLBB },
+            |m: &mut GetGameStateServiceConfigScRsp| { &mut m.LEDKMDOLLBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetGameStateServiceConfigScRsp>(
             "GetGameStateServiceConfigScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                98 => {
                     self.KAOJCOBEEON.push(is.read_string()?);
                 },
-                42 => {
+                34 => {
                     self.FIBIJGMKDPP.push(is.read_string()?);
                 },
-                82 => {
-                    self.LEDKMDOLLBB.push(is.read_string()?);
-                },
-                16 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    self.LEDKMDOLLBB.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.KAOJCOBEEON {
-            my_size += ::protobuf::rt::string_size(1, &value);
+            my_size += ::protobuf::rt::string_size(12, &value);
         };
         for value in &self.FIBIJGMKDPP {
-            my_size += ::protobuf::rt::string_size(5, &value);
-        };
-        for value in &self.LEDKMDOLLBB {
-            my_size += ::protobuf::rt::string_size(10, &value);
+            my_size += ::protobuf::rt::string_size(4, &value);
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
+        for value in &self.LEDKMDOLLBB {
+            my_size += ::protobuf::rt::string_size(5, &value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.KAOJCOBEEON {
-            os.write_string(1, &v)?;
+            os.write_string(12, &v)?;
         };
         for v in &self.FIBIJGMKDPP {
-            os.write_string(5, &v)?;
-        };
-        for v in &self.LEDKMDOLLBB {
-            os.write_string(10, &v)?;
+            os.write_string(4, &v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
+        for v in &self.LEDKMDOLLBB {
+            os.write_string(5, &v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
     fn clear(&mut self) {
         self.KAOJCOBEEON.clear();
         self.FIBIJGMKDPP.clear();
-        self.LEDKMDOLLBB.clear();
         self.retcode = 0;
+        self.LEDKMDOLLBB.clear();
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for GetGameStateServiceConfigScRsp {
         static instance: GetGameStateServiceConfigScRsp = GetGameStateServiceConfigScRsp {
             KAOJCOBEEON: ::std::vec::Vec::new(),
             FIBIJGMKDPP: ::std::vec::Vec::new(),
-            LEDKMDOLLBB: ::std::vec::Vec::new(),
             retcode: 0,
+            LEDKMDOLLBB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetGameStateServiceConfigScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetGameStateServiceConfigScRsp.proto\"\xa0\x01\n\x1eGetGameStateServi\
-    ceConfigScRsp\x12\x20\n\x0bKAOJCOBEEON\x18\x01\x20\x03(\tR\x0bKAOJCOBEEO\
-    N\x12\x20\n\x0bFIBIJGMKDPP\x18\x05\x20\x03(\tR\x0bFIBIJGMKDPP\x12\x20\n\
-    \x0bLEDKMDOLLBB\x18\n\x20\x03(\tR\x0bLEDKMDOLLBB\x12\x18\n\x07retcode\
-    \x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    ceConfigScRsp\x12\x20\n\x0bKAOJCOBEEON\x18\x0c\x20\x03(\tR\x0bKAOJCOBEEO\
+    N\x12\x20\n\x0bFIBIJGMKDPP\x18\x04\x20\x03(\tR\x0bFIBIJGMKDPP\x12\x18\n\
+    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bLEDKMDOLLBB\x18\
+    \x05\x20\x03(\tR\x0bLEDKMDOLLBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

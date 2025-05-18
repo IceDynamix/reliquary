@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyGameplayData {
     // message fields
+    // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_pending_action)
+    pub train_party_pending_action: ::protobuf::MessageField<super::TrainPartyPendingAction::TrainPartyPendingAction>,
+    // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_grids)
+    pub train_party_grids: ::protobuf::MessageField<super::TrainPartyGrids::TrainPartyGrids>,
     // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_passenger)
     pub train_party_passenger: ::protobuf::MessageField<super::TrainPartyPassenger::TrainPartyPassenger>,
     // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_card)
     pub train_party_card: ::protobuf::MessageField<super::TrainPartyCard::TrainPartyCard>,
     // @@protoc_insertion_point(field:TrainPartyGameplayData.GONEAKBDGEK)
     pub GONEAKBDGEK: u32,
-    // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_grids)
-    pub train_party_grids: ::protobuf::MessageField<super::TrainPartyGrids::TrainPartyGrids>,
-    // @@protoc_insertion_point(field:TrainPartyGameplayData.train_party_pending_action)
-    pub train_party_pending_action: ::protobuf::MessageField<super::TrainPartyPendingAction::TrainPartyPendingAction>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGameplayData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,6 +57,16 @@ impl TrainPartyGameplayData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPendingAction::TrainPartyPendingAction>(
+            "train_party_pending_action",
+            |m: &TrainPartyGameplayData| { &m.train_party_pending_action },
+            |m: &mut TrainPartyGameplayData| { &mut m.train_party_pending_action },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyGrids::TrainPartyGrids>(
+            "train_party_grids",
+            |m: &TrainPartyGameplayData| { &m.train_party_grids },
+            |m: &mut TrainPartyGameplayData| { &mut m.train_party_grids },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPassenger::TrainPartyPassenger>(
             "train_party_passenger",
             |m: &TrainPartyGameplayData| { &m.train_party_passenger },
@@ -71,16 +81,6 @@ impl TrainPartyGameplayData {
             "GONEAKBDGEK",
             |m: &TrainPartyGameplayData| { &m.GONEAKBDGEK },
             |m: &mut TrainPartyGameplayData| { &mut m.GONEAKBDGEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyGrids::TrainPartyGrids>(
-            "train_party_grids",
-            |m: &TrainPartyGameplayData| { &m.train_party_grids },
-            |m: &mut TrainPartyGameplayData| { &mut m.train_party_grids },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPendingAction::TrainPartyPendingAction>(
-            "train_party_pending_action",
-            |m: &TrainPartyGameplayData| { &m.train_party_pending_action },
-            |m: &mut TrainPartyGameplayData| { &mut m.train_party_pending_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGameplayData>(
             "TrainPartyGameplayData",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for TrainPartyGameplayData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_pending_action)?;
+                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_passenger)?;
-                },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_card)?;
-                },
-                48 => {
-                    self.GONEAKBDGEK = is.read_uint32()?;
-                },
-                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_grids)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_pending_action)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_passenger)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_card)?;
+                },
+                32 => {
+                    self.GONEAKBDGEK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,6 +127,14 @@ impl ::protobuf::Message for TrainPartyGameplayData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.train_party_pending_action.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.train_party_grids.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.train_party_passenger.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -136,15 +144,7 @@ impl ::protobuf::Message for TrainPartyGameplayData {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.GONEAKBDGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GONEAKBDGEK);
-        }
-        if let Some(v) = self.train_party_grids.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.train_party_pending_action.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(4, self.GONEAKBDGEK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for TrainPartyGameplayData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.train_party_passenger.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.train_party_card.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.GONEAKBDGEK != 0 {
-            os.write_uint32(6, self.GONEAKBDGEK)?;
+        if let Some(v) = self.train_party_pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.train_party_grids.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.train_party_pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.train_party_passenger.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.train_party_card.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.GONEAKBDGEK != 0 {
+            os.write_uint32(4, self.GONEAKBDGEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for TrainPartyGameplayData {
     }
 
     fn clear(&mut self) {
+        self.train_party_pending_action.clear();
+        self.train_party_grids.clear();
         self.train_party_passenger.clear();
         self.train_party_card.clear();
         self.GONEAKBDGEK = 0;
-        self.train_party_grids.clear();
-        self.train_party_pending_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGameplayData {
         static instance: TrainPartyGameplayData = TrainPartyGameplayData {
+            train_party_pending_action: ::protobuf::MessageField::none(),
+            train_party_grids: ::protobuf::MessageField::none(),
             train_party_passenger: ::protobuf::MessageField::none(),
             train_party_card: ::protobuf::MessageField::none(),
             GONEAKBDGEK: 0,
-            train_party_grids: ::protobuf::MessageField::none(),
-            train_party_pending_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,14 +225,14 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGameplayData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyGameplayData.proto\x1a\x14TrainPartyCard.proto\x1a\x15Tr\
     ainPartyGrids.proto\x1a\x19TrainPartyPassenger.proto\x1a\x1dTrainPartyPe\
-    ndingAction.proto\"\xd4\x02\n\x16TrainPartyGameplayData\x12H\n\x15train_\
-    party_passenger\x18\x02\x20\x01(\x0b2\x14.TrainPartyPassengerR\x13trainP\
-    artyPassenger\x129\n\x10train_party_card\x18\x03\x20\x01(\x0b2\x0f.Train\
-    PartyCardR\x0etrainPartyCard\x12\x20\n\x0bGONEAKBDGEK\x18\x06\x20\x01(\r\
-    R\x0bGONEAKBDGEK\x12<\n\x11train_party_grids\x18\x0e\x20\x01(\x0b2\x10.T\
-    rainPartyGridsR\x0ftrainPartyGrids\x12U\n\x1atrain_party_pending_action\
-    \x18\n\x20\x01(\x0b2\x18.TrainPartyPendingActionR\x17trainPartyPendingAc\
-    tionb\x06proto3\
+    ndingAction.proto\"\xd4\x02\n\x16TrainPartyGameplayData\x12U\n\x1atrain_\
+    party_pending_action\x18\x07\x20\x01(\x0b2\x18.TrainPartyPendingActionR\
+    \x17trainPartyPendingAction\x12<\n\x11train_party_grids\x18\x02\x20\x01(\
+    \x0b2\x10.TrainPartyGridsR\x0ftrainPartyGrids\x12H\n\x15train_party_pass\
+    enger\x18\x06\x20\x01(\x0b2\x14.TrainPartyPassengerR\x13trainPartyPassen\
+    ger\x129\n\x10train_party_card\x18\t\x20\x01(\x0b2\x0f.TrainPartyCardR\
+    \x0etrainPartyCard\x12\x20\n\x0bGONEAKBDGEK\x18\x04\x20\x01(\rR\x0bGONEA\
+    KBDGEKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

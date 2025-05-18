@@ -30,12 +30,12 @@ pub struct RogueTournStartScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueTournStartScRsp.KHJCGNLLFOH)
     pub KHJCGNLLFOH: u32,
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournStartScRsp.BHMHLPCHKLG)
     pub BHMHLPCHKLG: ::protobuf::MessageField<super::CFCDHLPOOGC::CFCDHLPOOGC>,
     // @@protoc_insertion_point(field:RogueTournStartScRsp.LCOCLENJJAI)
     pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl RogueTournStartScRsp {
             |m: &RogueTournStartScRsp| { &m.KHJCGNLLFOH },
             |m: &mut RogueTournStartScRsp| { &mut m.KHJCGNLLFOH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournStartScRsp| { &m.retcode },
-            |m: &mut RogueTournStartScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFCDHLPOOGC::CFCDHLPOOGC>(
             "BHMHLPCHKLG",
             |m: &RogueTournStartScRsp| { &m.BHMHLPCHKLG },
@@ -74,6 +69,11 @@ impl RogueTournStartScRsp {
             "LCOCLENJJAI",
             |m: &RogueTournStartScRsp| { &m.LCOCLENJJAI },
             |m: &mut RogueTournStartScRsp| { &mut m.LCOCLENJJAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RogueTournStartScRsp| { &m.retcode },
+            |m: &mut RogueTournStartScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartScRsp>(
             "RogueTournStartScRsp",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for RogueTournStartScRsp {
                 24 => {
                     self.KHJCGNLLFOH = is.read_uint32()?;
                 },
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                114 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
                 },
-                42 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,9 +120,6 @@ impl ::protobuf::Message for RogueTournStartScRsp {
         if self.KHJCGNLLFOH != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.KHJCGNLLFOH);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         if let Some(v) = self.BHMHLPCHKLG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -130,6 +127,9 @@ impl ::protobuf::Message for RogueTournStartScRsp {
         if let Some(v) = self.LCOCLENJJAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,14 +140,14 @@ impl ::protobuf::Message for RogueTournStartScRsp {
         if self.KHJCGNLLFOH != 0 {
             os.write_uint32(3, self.KHJCGNLLFOH)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for RogueTournStartScRsp {
 
     fn clear(&mut self) {
         self.KHJCGNLLFOH = 0;
-        self.retcode = 0;
         self.BHMHLPCHKLG.clear();
         self.LCOCLENJJAI.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournStartScRsp {
         static instance: RogueTournStartScRsp = RogueTournStartScRsp {
             KHJCGNLLFOH: 0,
-            retcode: 0,
             BHMHLPCHKLG: ::protobuf::MessageField::none(),
             LCOCLENJJAI: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournStartScRsp.proto\x1a\x11CFCDHLPOOGC.proto\x1a\x11FJEMJBN\
     AJFJ.proto\"\xb2\x01\n\x14RogueTournStartScRsp\x12\x20\n\x0bKHJCGNLLFOH\
-    \x18\x03\x20\x01(\rR\x0bKHJCGNLLFOH\x12\x18\n\x07retcode\x18\x01\x20\x01\
-    (\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\x0e\x20\x01(\x0b2\x0c.CFCDHLPO\
-    OGCR\x0bBHMHLPCHKLG\x12.\n\x0bLCOCLENJJAI\x18\x05\x20\x01(\x0b2\x0c.FJEM\
-    JBNAJFJR\x0bLCOCLENJJAIb\x06proto3\
+    \x18\x03\x20\x01(\rR\x0bKHJCGNLLFOH\x12.\n\x0bBHMHLPCHKLG\x18\x0b\x20\
+    \x01(\x0b2\x0c.CFCDHLPOOGCR\x0bBHMHLPCHKLG\x12.\n\x0bLCOCLENJJAI\x18\x01\
+    \x20\x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\x12\x18\n\x07retcode\x18\
+    \r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

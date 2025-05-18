@@ -29,17 +29,17 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct EPHILIMKADK {
     // message fields
     // @@protoc_insertion_point(field:EPHILIMKADK.retcode)
-    pub retcode: ::protobuf::EnumOrUnknown<super::KIAFOIKGDJM::KIAFOIKGDJM>,
+    pub retcode: ::protobuf::EnumOrUnknown<super::BattleCheckResultType::BattleCheckResultType>,
     // @@protoc_insertion_point(field:EPHILIMKADK.end_status)
     pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // @@protoc_insertion_point(field:EPHILIMKADK.stt)
     pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
-    // @@protoc_insertion_point(field:EPHILIMKADK.BBBHDKGHAOF)
-    pub BBBHDKGHAOF: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:EPHILIMKADK.game_core_log_encode)
+    pub game_core_log_encode: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:EPHILIMKADK.DGNMMINGACJ)
     pub DGNMMINGACJ: ::std::collections::HashMap<::std::string::String, u32>,
-    // @@protoc_insertion_point(field:EPHILIMKADK.NDCMDOKKPHH)
-    pub NDCMDOKKPHH: u32,
+    // @@protoc_insertion_point(field:EPHILIMKADK.mismatch_turn_count)
+    pub mismatch_turn_count: u32,
     // @@protoc_insertion_point(field:EPHILIMKADK.MDLPCFCPHDK)
     pub MDLPCFCPHDK: u32,
     // special fields
@@ -77,9 +77,9 @@ impl EPHILIMKADK {
             |m: &mut EPHILIMKADK| { &mut m.stt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBBHDKGHAOF",
-            |m: &EPHILIMKADK| { &m.BBBHDKGHAOF },
-            |m: &mut EPHILIMKADK| { &mut m.BBBHDKGHAOF },
+            "game_core_log_encode",
+            |m: &EPHILIMKADK| { &m.game_core_log_encode },
+            |m: &mut EPHILIMKADK| { &mut m.game_core_log_encode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "DGNMMINGACJ",
@@ -87,9 +87,9 @@ impl EPHILIMKADK {
             |m: &mut EPHILIMKADK| { &mut m.DGNMMINGACJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDCMDOKKPHH",
-            |m: &EPHILIMKADK| { &m.NDCMDOKKPHH },
-            |m: &mut EPHILIMKADK| { &mut m.NDCMDOKKPHH },
+            "mismatch_turn_count",
+            |m: &EPHILIMKADK| { &m.mismatch_turn_count },
+            |m: &mut EPHILIMKADK| { &mut m.mismatch_turn_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDLPCFCPHDK",
@@ -124,7 +124,7 @@ impl ::protobuf::Message for EPHILIMKADK {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 34 => {
-                    self.BBBHDKGHAOF = is.read_bytes()?;
+                    self.game_core_log_encode = is.read_bytes()?;
                 },
                 42 => {
                     let len = is.read_raw_varint32()?;
@@ -142,7 +142,7 @@ impl ::protobuf::Message for EPHILIMKADK {
                     self.DGNMMINGACJ.insert(key, value);
                 },
                 48 => {
-                    self.NDCMDOKKPHH = is.read_uint32()?;
+                    self.mismatch_turn_count = is.read_uint32()?;
                 },
                 56 => {
                     self.MDLPCFCPHDK = is.read_uint32()?;
@@ -159,7 +159,7 @@ impl ::protobuf::Message for EPHILIMKADK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != ::protobuf::EnumOrUnknown::new(super::KIAFOIKGDJM::KIAFOIKGDJM::BATTLE_CHECK_RESULT_SUCC) {
+        if self.retcode != ::protobuf::EnumOrUnknown::new(super::BattleCheckResultType::BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC) {
             my_size += ::protobuf::rt::int32_size(1, self.retcode.value());
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
@@ -169,8 +169,8 @@ impl ::protobuf::Message for EPHILIMKADK {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.BBBHDKGHAOF.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(4, &self.BBBHDKGHAOF);
+        if !self.game_core_log_encode.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(4, &self.game_core_log_encode);
         }
         for (k, v) in &self.DGNMMINGACJ {
             let mut entry_size = 0;
@@ -178,8 +178,8 @@ impl ::protobuf::Message for EPHILIMKADK {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.NDCMDOKKPHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NDCMDOKKPHH);
+        if self.mismatch_turn_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.mismatch_turn_count);
         }
         if self.MDLPCFCPHDK != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.MDLPCFCPHDK);
@@ -190,7 +190,7 @@ impl ::protobuf::Message for EPHILIMKADK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != ::protobuf::EnumOrUnknown::new(super::KIAFOIKGDJM::KIAFOIKGDJM::BATTLE_CHECK_RESULT_SUCC) {
+        if self.retcode != ::protobuf::EnumOrUnknown::new(super::BattleCheckResultType::BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.retcode))?;
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
@@ -199,8 +199,8 @@ impl ::protobuf::Message for EPHILIMKADK {
         if let Some(v) = self.stt.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if !self.BBBHDKGHAOF.is_empty() {
-            os.write_bytes(4, &self.BBBHDKGHAOF)?;
+        if !self.game_core_log_encode.is_empty() {
+            os.write_bytes(4, &self.game_core_log_encode)?;
         }
         for (k, v) in &self.DGNMMINGACJ {
             let mut entry_size = 0;
@@ -211,8 +211,8 @@ impl ::protobuf::Message for EPHILIMKADK {
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.NDCMDOKKPHH != 0 {
-            os.write_uint32(6, self.NDCMDOKKPHH)?;
+        if self.mismatch_turn_count != 0 {
+            os.write_uint32(6, self.mismatch_turn_count)?;
         }
         if self.MDLPCFCPHDK != 0 {
             os.write_uint32(7, self.MDLPCFCPHDK)?;
@@ -234,12 +234,12 @@ impl ::protobuf::Message for EPHILIMKADK {
     }
 
     fn clear(&mut self) {
-        self.retcode = ::protobuf::EnumOrUnknown::new(super::KIAFOIKGDJM::KIAFOIKGDJM::BATTLE_CHECK_RESULT_SUCC);
+        self.retcode = ::protobuf::EnumOrUnknown::new(super::BattleCheckResultType::BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC);
         self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.stt.clear();
-        self.BBBHDKGHAOF.clear();
+        self.game_core_log_encode.clear();
         self.DGNMMINGACJ.clear();
-        self.NDCMDOKKPHH = 0;
+        self.mismatch_turn_count = 0;
         self.MDLPCFCPHDK = 0;
         self.special_fields.clear();
     }
@@ -268,17 +268,18 @@ impl ::protobuf::reflect::ProtobufValue for EPHILIMKADK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPHILIMKADK.proto\x1a\x15BattleEndStatus.proto\x1a\x16BattleStatis\
-    tics.proto\x1a\x11KIAFOIKGDJM.proto\"\xf2\x02\n\x0bEPHILIMKADK\x12&\n\
-    \x07retcode\x18\x01\x20\x01(\x0e2\x0c.KIAFOIKGDJMR\x07retcode\x12/\n\nen\
-    d_status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatus\x12#\n\
-    \x03stt\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12\x20\n\x0b\
-    BBBHDKGHAOF\x18\x04\x20\x01(\x0cR\x0bBBBHDKGHAOF\x12?\n\x0bDGNMMINGACJ\
-    \x18\x05\x20\x03(\x0b2\x1d.EPHILIMKADK.DGNMMINGACJEntryR\x0bDGNMMINGACJ\
-    \x12\x20\n\x0bNDCMDOKKPHH\x18\x06\x20\x01(\rR\x0bNDCMDOKKPHH\x12\x20\n\
-    \x0bMDLPCFCPHDK\x18\x07\x20\x01(\rR\x0bMDLPCFCPHDK\x1a>\n\x10DGNMMINGACJ\
-    Entry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\
-    \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11EPHILIMKADK.proto\x1a\x1bBattleCheckResultType.proto\x1a\x15Battle\
+    EndStatus.proto\x1a\x16BattleStatistics.proto\"\x99\x03\n\x0bEPHILIMKADK\
+    \x120\n\x07retcode\x18\x01\x20\x01(\x0e2\x16.BattleCheckResultTypeR\x07r\
+    etcode\x12/\n\nend_status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\ten\
+    dStatus\x12#\n\x03stt\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\
+    \x12/\n\x14game_core_log_encode\x18\x04\x20\x01(\x0cR\x11gameCoreLogEnco\
+    de\x12?\n\x0bDGNMMINGACJ\x18\x05\x20\x03(\x0b2\x1d.EPHILIMKADK.DGNMMINGA\
+    CJEntryR\x0bDGNMMINGACJ\x12.\n\x13mismatch_turn_count\x18\x06\x20\x01(\r\
+    R\x11mismatchTurnCount\x12\x20\n\x0bMDLPCFCPHDK\x18\x07\x20\x01(\rR\x0bM\
+    DLPCFCPHDK\x1a>\n\x10DGNMMINGACJEntry\x12\x10\n\x03key\x18\x01\x20\x01(\
+    \tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -296,9 +297,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::BattleCheckResultType::file_descriptor().clone());
             deps.push(super::BattleEndStatus::file_descriptor().clone());
             deps.push(super::BattleStatistics::file_descriptor().clone());
-            deps.push(super::KIAFOIKGDJM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EPHILIMKADK::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

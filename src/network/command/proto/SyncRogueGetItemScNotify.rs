@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IODFGFOMGOD)?;
                 },
-                18 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACFCJIOMJNF)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IODFGFOMGOD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.ACFCJIOMJNF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueGetItemScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncRogueGetItemScNotify.proto\x1a\x0eItemList.proto\"t\n\x18SyncR\
-    ogueGetItemScNotify\x12+\n\x0bIODFGFOMGOD\x18\x05\x20\x01(\x0b2\t.ItemLi\
-    stR\x0bIODFGFOMGOD\x12+\n\x0bACFCJIOMJNF\x18\x02\x20\x01(\x0b2\t.ItemLis\
+    ogueGetItemScNotify\x12+\n\x0bIODFGFOMGOD\x18\x0e\x20\x01(\x0b2\t.ItemLi\
+    stR\x0bIODFGFOMGOD\x12+\n\x0bACFCJIOMJNF\x18\x0f\x20\x01(\x0b2\t.ItemLis\
     tR\x0bACFCJIOMJNFb\x06proto3\
 ";
 

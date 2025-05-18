@@ -79,10 +79,10 @@ impl ::protobuf::Message for JACKEJLKJNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                80 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JACKEJLKJNA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(14, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JACKEJLKJNA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+            os.write_uint32(10, self.avatar_id)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JACKEJLKJNA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JACKEJLKJNA.proto\x1a\x10AvatarType.proto\"X\n\x0bJACKEJLKJNA\x12\
-    \x1b\n\tavatar_id\x18\x0b\x20\x01(\rR\x08avatarId\x12,\n\x0bavatar_type\
-    \x18\x02\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
+    \x1b\n\tavatar_id\x18\n\x20\x01(\rR\x08avatarId\x12,\n\x0bavatar_type\
+    \x18\x0e\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

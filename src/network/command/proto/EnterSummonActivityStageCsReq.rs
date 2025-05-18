@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSummonActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterSummonActivityStageCsReq.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:EnterSummonActivityStageCsReq.NEDFIBONLKB)
     pub NEDFIBONLKB: u32,
+    // @@protoc_insertion_point(field:EnterSummonActivityStageCsReq.group_id)
+    pub group_id: u32,
     // @@protoc_insertion_point(field:EnterSummonActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::ONOEPLFNELL::ONOEPLFNELL>,
     // @@protoc_insertion_point(field:EnterSummonActivityStageCsReq.MNOEDECLHBJ)
@@ -56,14 +56,14 @@ impl EnterSummonActivityStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &EnterSummonActivityStageCsReq| { &m.group_id },
-            |m: &mut EnterSummonActivityStageCsReq| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEDFIBONLKB",
             |m: &EnterSummonActivityStageCsReq| { &m.NEDFIBONLKB },
             |m: &mut EnterSummonActivityStageCsReq| { &mut m.NEDFIBONLKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &EnterSummonActivityStageCsReq| { &m.group_id },
+            |m: &mut EnterSummonActivityStageCsReq| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for EnterSummonActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                56 => {
+                72 => {
                     self.NEDFIBONLKB = is.read_uint32()?;
                 },
-                10 => {
+                56 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                98 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                18 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MNOEDECLHBJ)?;
                 },
                 tag => {
@@ -117,11 +117,11 @@ impl ::protobuf::Message for EnterSummonActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
-        }
         if self.NEDFIBONLKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NEDFIBONLKB);
+            my_size += ::protobuf::rt::uint32_size(9, self.NEDFIBONLKB);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EnterSummonActivityStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
-        }
         if self.NEDFIBONLKB != 0 {
-            os.write_uint32(7, self.NEDFIBONLKB)?;
+            os.write_uint32(9, self.NEDFIBONLKB)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(7, self.group_id)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if let Some(v) = self.MNOEDECLHBJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for EnterSummonActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.NEDFIBONLKB = 0;
+        self.group_id = 0;
         self.avatar_list.clear();
         self.MNOEDECLHBJ.clear();
         self.special_fields.clear();
@@ -175,8 +175,8 @@ impl ::protobuf::Message for EnterSummonActivityStageCsReq {
 
     fn default_instance() -> &'static EnterSummonActivityStageCsReq {
         static instance: EnterSummonActivityStageCsReq = EnterSummonActivityStageCsReq {
-            group_id: 0,
             NEDFIBONLKB: 0,
+            group_id: 0,
             avatar_list: ::std::vec::Vec::new(),
             MNOEDECLHBJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterSummonActivityStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#EnterSummonActivityStageCsReq.proto\x1a\x11ONOEPLFNELL.proto\"\xbb\
-    \x01\n\x1dEnterSummonActivityStageCsReq\x12\x19\n\x08group_id\x18\n\x20\
-    \x01(\rR\x07groupId\x12\x20\n\x0bNEDFIBONLKB\x18\x07\x20\x01(\rR\x0bNEDF\
-    IBONLKB\x12-\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\x0c.ONOEPLFNELLR\nav\
-    atarList\x12.\n\x0bMNOEDECLHBJ\x18\x02\x20\x01(\x0b2\x0c.ONOEPLFNELLR\
-    \x0bMNOEDECLHBJb\x06proto3\
+    \x01\n\x1dEnterSummonActivityStageCsReq\x12\x20\n\x0bNEDFIBONLKB\x18\t\
+    \x20\x01(\rR\x0bNEDFIBONLKB\x12\x19\n\x08group_id\x18\x07\x20\x01(\rR\
+    \x07groupId\x12-\n\x0bavatar_list\x18\x0c\x20\x03(\x0b2\x0c.ONOEPLFNELLR\
+    \navatarList\x12.\n\x0bMNOEDECLHBJ\x18\x06\x20\x01(\x0b2\x0c.ONOEPLFNELL\
+    R\x0bMNOEDECLHBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

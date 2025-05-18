@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HEOJLDBKKGE {
     // message fields
-    // @@protoc_insertion_point(field:HEOJLDBKKGE.num)
-    pub num: u32,
     // @@protoc_insertion_point(field:HEOJLDBKKGE.ALJLKAOELDP)
     pub ALJLKAOELDP: u32,
+    // @@protoc_insertion_point(field:HEOJLDBKKGE.num)
+    pub num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HEOJLDBKKGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HEOJLDBKKGE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num",
-            |m: &HEOJLDBKKGE| { &m.num },
-            |m: &mut HEOJLDBKKGE| { &mut m.num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALJLKAOELDP",
             |m: &HEOJLDBKKGE| { &m.ALJLKAOELDP },
             |m: &mut HEOJLDBKKGE| { &mut m.ALJLKAOELDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "num",
+            |m: &HEOJLDBKKGE| { &m.num },
+            |m: &mut HEOJLDBKKGE| { &mut m.num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HEOJLDBKKGE>(
             "HEOJLDBKKGE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HEOJLDBKKGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.num = is.read_uint32()?;
-                },
                 112 => {
                     self.ALJLKAOELDP = is.read_uint32()?;
+                },
+                120 => {
+                    self.num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HEOJLDBKKGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.num);
-        }
         if self.ALJLKAOELDP != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.ALJLKAOELDP);
+        }
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HEOJLDBKKGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num != 0 {
-            os.write_uint32(7, self.num)?;
-        }
         if self.ALJLKAOELDP != 0 {
             os.write_uint32(14, self.ALJLKAOELDP)?;
+        }
+        if self.num != 0 {
+            os.write_uint32(15, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HEOJLDBKKGE {
     }
 
     fn clear(&mut self) {
-        self.num = 0;
         self.ALJLKAOELDP = 0;
+        self.num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HEOJLDBKKGE {
         static instance: HEOJLDBKKGE = HEOJLDBKKGE {
-            num: 0,
             ALJLKAOELDP: 0,
+            num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HEOJLDBKKGE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HEOJLDBKKGE.proto\"A\n\x0bHEOJLDBKKGE\x12\x10\n\x03num\x18\x07\x20\
-    \x01(\rR\x03num\x12\x20\n\x0bALJLKAOELDP\x18\x0e\x20\x01(\rR\x0bALJLKAOE\
-    LDPb\x06proto3\
+    \n\x11HEOJLDBKKGE.proto\"A\n\x0bHEOJLDBKKGE\x12\x20\n\x0bALJLKAOELDP\x18\
+    \x0e\x20\x01(\rR\x0bALJLKAOELDP\x12\x10\n\x03num\x18\x0f\x20\x01(\rR\x03\
+    numb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

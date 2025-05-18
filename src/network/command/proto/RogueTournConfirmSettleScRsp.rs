@@ -32,12 +32,12 @@ pub struct RogueTournConfirmSettleScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.LCOCLENJJAI)
     pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
-    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.JPLAAPJCCBH)
-    pub JPLAAPJCCBH: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.OHHJKGFOFHB)
     pub OHHJKGFOFHB: ::protobuf::MessageField<super::CJPKPJFJKDG::CJPKPJFJKDG>,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.GFONFDBFBNA)
     pub GFONFDBFBNA: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.JPLAAPJCCBH)
+    pub JPLAAPJCCBH: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournConfirmSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,11 +67,6 @@ impl RogueTournConfirmSettleScRsp {
             |m: &RogueTournConfirmSettleScRsp| { &m.LCOCLENJJAI },
             |m: &mut RogueTournConfirmSettleScRsp| { &mut m.LCOCLENJJAI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "JPLAAPJCCBH",
-            |m: &RogueTournConfirmSettleScRsp| { &m.JPLAAPJCCBH },
-            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.JPLAAPJCCBH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJPKPJFJKDG::CJPKPJFJKDG>(
             "OHHJKGFOFHB",
             |m: &RogueTournConfirmSettleScRsp| { &m.OHHJKGFOFHB },
@@ -81,6 +76,11 @@ impl RogueTournConfirmSettleScRsp {
             "GFONFDBFBNA",
             |m: &RogueTournConfirmSettleScRsp| { &m.GFONFDBFBNA },
             |m: &mut RogueTournConfirmSettleScRsp| { &mut m.GFONFDBFBNA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "JPLAAPJCCBH",
+            |m: &RogueTournConfirmSettleScRsp| { &m.JPLAAPJCCBH },
+            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.JPLAAPJCCBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournConfirmSettleScRsp>(
             "RogueTournConfirmSettleScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPLAAPJCCBH)?;
-                },
-                58 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHHJKGFOFHB)?;
                 },
-                18 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFONFDBFBNA)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPLAAPJCCBH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,13 +128,9 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -143,6 +139,10 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.GFONFDBFBNA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,19 +153,19 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.OHHJKGFOFHB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.GFONFDBFBNA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.LCOCLENJJAI.clear();
-        self.JPLAAPJCCBH.clear();
         self.OHHJKGFOFHB.clear();
         self.GFONFDBFBNA.clear();
+        self.JPLAAPJCCBH.clear();
         self.special_fields.clear();
     }
 
@@ -196,9 +196,9 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
         static instance: RogueTournConfirmSettleScRsp = RogueTournConfirmSettleScRsp {
             retcode: 0,
             LCOCLENJJAI: ::protobuf::MessageField::none(),
-            JPLAAPJCCBH: ::protobuf::MessageField::none(),
             OHHJKGFOFHB: ::protobuf::MessageField::none(),
             GFONFDBFBNA: ::protobuf::MessageField::none(),
+            JPLAAPJCCBH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,12 +225,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournConfirmSettleScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournConfirmSettleScRsp.proto\x1a\x11CJPKPJFJKDG.proto\x1a\x11F\
     JEMJBNAJFJ.proto\x1a\x0eItemList.proto\"\xf2\x01\n\x1cRogueTournConfirmS\
-    ettleScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bLCOCLENJJAI\x18\t\x20\x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\x12+\
-    \n\x0bJPLAAPJCCBH\x18\x06\x20\x01(\x0b2\t.ItemListR\x0bJPLAAPJCCBH\x12.\
-    \n\x0bOHHJKGFOFHB\x18\x07\x20\x01(\x0b2\x0c.CJPKPJFJKDGR\x0bOHHJKGFOFHB\
-    \x12+\n\x0bGFONFDBFBNA\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBNAb\
-    \x06proto3\
+    ettleScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bLCOCLENJJAI\x18\x0f\x20\x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\
+    \x12.\n\x0bOHHJKGFOFHB\x18\x03\x20\x01(\x0b2\x0c.CJPKPJFJKDGR\x0bOHHJKGF\
+    OFHB\x12+\n\x0bGFONFDBFBNA\x18\n\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBN\
+    A\x12+\n\x0bJPLAAPJCCBH\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bJPLAAPJCCBH\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

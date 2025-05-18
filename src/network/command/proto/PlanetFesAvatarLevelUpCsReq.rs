@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesAvatarLevelUpCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesAvatarLevelUpCsReq.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:PlanetFesAvatarLevelUpCsReq.LDNJEACFBJE)
     pub LDNJEACFBJE: u32,
+    // @@protoc_insertion_point(field:PlanetFesAvatarLevelUpCsReq.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesAvatarLevelUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesAvatarLevelUpCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &PlanetFesAvatarLevelUpCsReq| { &m.avatar_id },
-            |m: &mut PlanetFesAvatarLevelUpCsReq| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LDNJEACFBJE",
             |m: &PlanetFesAvatarLevelUpCsReq| { &m.LDNJEACFBJE },
             |m: &mut PlanetFesAvatarLevelUpCsReq| { &mut m.LDNJEACFBJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &PlanetFesAvatarLevelUpCsReq| { &m.avatar_id },
+            |m: &mut PlanetFesAvatarLevelUpCsReq| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesAvatarLevelUpCsReq>(
             "PlanetFesAvatarLevelUpCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesAvatarLevelUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                96 => {
+                120 => {
                     self.LDNJEACFBJE = is.read_uint32()?;
+                },
+                112 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesAvatarLevelUpCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
-        }
         if self.LDNJEACFBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LDNJEACFBJE);
+            my_size += ::protobuf::rt::uint32_size(15, self.LDNJEACFBJE);
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesAvatarLevelUpCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(4, self.avatar_id)?;
-        }
         if self.LDNJEACFBJE != 0 {
-            os.write_uint32(12, self.LDNJEACFBJE)?;
+            os.write_uint32(15, self.LDNJEACFBJE)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(14, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesAvatarLevelUpCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
         self.LDNJEACFBJE = 0;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesAvatarLevelUpCsReq {
         static instance: PlanetFesAvatarLevelUpCsReq = PlanetFesAvatarLevelUpCsReq {
-            avatar_id: 0,
             LDNJEACFBJE: 0,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesAvatarLevelUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesAvatarLevelUpCsReq.proto\"\\\n\x1bPlanetFesAvatarLevelUpCsRe\
-    q\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\x12\x20\n\x0bLDNJ\
-    EACFBJE\x18\x0c\x20\x01(\rR\x0bLDNJEACFBJEb\x06proto3\
+    q\x12\x20\n\x0bLDNJEACFBJE\x18\x0f\x20\x01(\rR\x0bLDNJEACFBJE\x12\x1b\n\
+    \tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

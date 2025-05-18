@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterRogueMapRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.KEILFHHNLIH)
-    pub KEILFHHNLIH: ::protobuf::MessageField<super::MapRotationData::MapRotationData>,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.OLOKKNLGGME)
-    pub OLOKKNLGGME: u32,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.KEILFHHNLIH)
+    pub KEILFHHNLIH: ::protobuf::MessageField<super::RogueMapRotateInfo::RogueMapRotateInfo>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.OLOKKNLGGME)
+    pub OLOKKNLGGME: u32,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueMapRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,7 +57,12 @@ impl EnterRogueMapRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MapRotationData::MapRotationData>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &EnterRogueMapRoomScRsp| { &m.scene },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.scene },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMapRotateInfo::RogueMapRotateInfo>(
             "KEILFHHNLIH",
             |m: &EnterRogueMapRoomScRsp| { &m.KEILFHHNLIH },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.KEILFHHNLIH },
@@ -67,20 +72,15 @@ impl EnterRogueMapRoomScRsp {
             |m: &EnterRogueMapRoomScRsp| { &m.OLOKKNLGGME },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.OLOKKNLGGME },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterRogueMapRoomScRsp| { &m.retcode },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &EnterRogueMapRoomScRsp| { &m.lineup },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &EnterRogueMapRoomScRsp| { &m.scene },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EnterRogueMapRoomScRsp| { &m.retcode },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterRogueMapRoomScRsp>(
             "EnterRogueMapRoomScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
-                },
-                96 => {
-                    self.OLOKKNLGGME = is.read_uint32()?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
+                },
+                80 => {
+                    self.OLOKKNLGGME = is.read_uint32()?;
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,23 +127,23 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.scene.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.KEILFHHNLIH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.OLOKKNLGGME != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OLOKKNLGGME);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.OLOKKNLGGME);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.scene.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
         if let Some(v) = self.KEILFHHNLIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if self.OLOKKNLGGME != 0 {
-            os.write_uint32(12, self.OLOKKNLGGME)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
+        if self.OLOKKNLGGME != 0 {
+            os.write_uint32(10, self.OLOKKNLGGME)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     }
 
     fn clear(&mut self) {
+        self.scene.clear();
         self.KEILFHHNLIH.clear();
         self.OLOKKNLGGME = 0;
-        self.retcode = 0;
         self.lineup.clear();
-        self.scene.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueMapRoomScRsp {
         static instance: EnterRogueMapRoomScRsp = EnterRogueMapRoomScRsp {
+            scene: ::protobuf::MessageField::none(),
             KEILFHHNLIH: ::protobuf::MessageField::none(),
             OLOKKNLGGME: 0,
-            retcode: 0,
             lineup: ::protobuf::MessageField::none(),
-            scene: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,13 +222,13 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cEnterRogueMapRoomScRsp.proto\x1a\x10LineupInfo.proto\x1a\x15MapRot\
-    ationData.proto\x1a\x0fSceneInfo.proto\"\xcf\x01\n\x16EnterRogueMapRoomS\
-    cRsp\x122\n\x0bKEILFHHNLIH\x18\x0f\x20\x01(\x0b2\x10.MapRotationDataR\
-    \x0bKEILFHHNLIH\x12\x20\n\x0bOLOKKNLGGME\x18\x0c\x20\x01(\rR\x0bOLOKKNLG\
-    GME\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12#\n\x06lineup\
-    \x18\x0b\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x20\n\x05scene\x18\
-    \x05\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
+    \n\x1cEnterRogueMapRoomScRsp.proto\x1a\x10LineupInfo.proto\x1a\x18RogueM\
+    apRotateInfo.proto\x1a\x0fSceneInfo.proto\"\xd2\x01\n\x16EnterRogueMapRo\
+    omScRsp\x12\x20\n\x05scene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05scene\
+    \x125\n\x0bKEILFHHNLIH\x18\x0b\x20\x01(\x0b2\x13.RogueMapRotateInfoR\x0b\
+    KEILFHHNLIH\x12\x20\n\x0bOLOKKNLGGME\x18\n\x20\x01(\rR\x0bOLOKKNLGGME\
+    \x12#\n\x06lineup\x18\x05\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\
+    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -247,7 +247,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::MapRotationData::file_descriptor().clone());
+            deps.push(super::RogueMapRotateInfo::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterRogueMapRoomScRsp::generated_message_descriptor_data());

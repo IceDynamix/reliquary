@@ -30,10 +30,10 @@ pub struct MNCDPEPCFGC {
     // message fields
     // @@protoc_insertion_point(field:MNCDPEPCFGC.KOBFCOMHGCE)
     pub KOBFCOMHGCE: u32,
-    // @@protoc_insertion_point(field:MNCDPEPCFGC.score)
-    pub score: u32,
     // @@protoc_insertion_point(field:MNCDPEPCFGC.FJJDFPKGOPC)
     pub FJJDFPKGOPC: u32,
+    // @@protoc_insertion_point(field:MNCDPEPCFGC.score_id)
+    pub score_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MNCDPEPCFGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MNCDPEPCFGC {
             |m: &mut MNCDPEPCFGC| { &mut m.KOBFCOMHGCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &MNCDPEPCFGC| { &m.score },
-            |m: &mut MNCDPEPCFGC| { &mut m.score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJJDFPKGOPC",
             |m: &MNCDPEPCFGC| { &m.FJJDFPKGOPC },
             |m: &mut MNCDPEPCFGC| { &mut m.FJJDFPKGOPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &MNCDPEPCFGC| { &m.score_id },
+            |m: &mut MNCDPEPCFGC| { &mut m.score_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MNCDPEPCFGC>(
             "MNCDPEPCFGC",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for MNCDPEPCFGC {
                 48 => {
                     self.KOBFCOMHGCE = is.read_uint32()?;
                 },
-                72 => {
-                    self.score = is.read_uint32()?;
-                },
-                32 => {
+                88 => {
                     self.FJJDFPKGOPC = is.read_uint32()?;
+                },
+                40 => {
+                    self.score_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MNCDPEPCFGC {
         if self.KOBFCOMHGCE != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.KOBFCOMHGCE);
         }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.score);
-        }
         if self.FJJDFPKGOPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FJJDFPKGOPC);
+            my_size += ::protobuf::rt::uint32_size(11, self.FJJDFPKGOPC);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for MNCDPEPCFGC {
         if self.KOBFCOMHGCE != 0 {
             os.write_uint32(6, self.KOBFCOMHGCE)?;
         }
-        if self.score != 0 {
-            os.write_uint32(9, self.score)?;
-        }
         if self.FJJDFPKGOPC != 0 {
-            os.write_uint32(4, self.FJJDFPKGOPC)?;
+            os.write_uint32(11, self.FJJDFPKGOPC)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(5, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MNCDPEPCFGC {
 
     fn clear(&mut self) {
         self.KOBFCOMHGCE = 0;
-        self.score = 0;
         self.FJJDFPKGOPC = 0;
+        self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MNCDPEPCFGC {
         static instance: MNCDPEPCFGC = MNCDPEPCFGC {
             KOBFCOMHGCE: 0,
-            score: 0,
             FJJDFPKGOPC: 0,
+            score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MNCDPEPCFGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MNCDPEPCFGC.proto\"g\n\x0bMNCDPEPCFGC\x12\x20\n\x0bKOBFCOMHGCE\x18\
-    \x06\x20\x01(\rR\x0bKOBFCOMHGCE\x12\x14\n\x05score\x18\t\x20\x01(\rR\x05\
-    score\x12\x20\n\x0bFJJDFPKGOPC\x18\x04\x20\x01(\rR\x0bFJJDFPKGOPCb\x06pr\
-    oto3\
+    \n\x11MNCDPEPCFGC.proto\"l\n\x0bMNCDPEPCFGC\x12\x20\n\x0bKOBFCOMHGCE\x18\
+    \x06\x20\x01(\rR\x0bKOBFCOMHGCE\x12\x20\n\x0bFJJDFPKGOPC\x18\x0b\x20\x01\
+    (\rR\x0bFJJDFPKGOPC\x12\x19\n\x08score_id\x18\x05\x20\x01(\rR\x07scoreId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

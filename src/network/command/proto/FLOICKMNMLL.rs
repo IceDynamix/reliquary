@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLOICKMNMLL {
     // message fields
-    // @@protoc_insertion_point(field:FLOICKMNMLL.CNIJNMDGEDD)
-    pub CNIJNMDGEDD: ::std::vec::Vec<super::EJDGKNKHKHH::EJDGKNKHKHH>,
     // @@protoc_insertion_point(field:FLOICKMNMLL.DGPEJFLJNOJ)
     pub DGPEJFLJNOJ: ::std::vec::Vec<super::BKMGDPHACKE::BKMGDPHACKE>,
+    // @@protoc_insertion_point(field:FLOICKMNMLL.CNIJNMDGEDD)
+    pub CNIJNMDGEDD: ::std::vec::Vec<super::EJDGKNKHKHH::EJDGKNKHKHH>,
     // special fields
     // @@protoc_insertion_point(special_field:FLOICKMNMLL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FLOICKMNMLL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CNIJNMDGEDD",
-            |m: &FLOICKMNMLL| { &m.CNIJNMDGEDD },
-            |m: &mut FLOICKMNMLL| { &mut m.CNIJNMDGEDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DGPEJFLJNOJ",
             |m: &FLOICKMNMLL| { &m.DGPEJFLJNOJ },
             |m: &mut FLOICKMNMLL| { &mut m.DGPEJFLJNOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CNIJNMDGEDD",
+            |m: &FLOICKMNMLL| { &m.CNIJNMDGEDD },
+            |m: &mut FLOICKMNMLL| { &mut m.CNIJNMDGEDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLOICKMNMLL>(
             "FLOICKMNMLL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FLOICKMNMLL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.CNIJNMDGEDD.push(is.read_message()?);
-                },
                 34 => {
                     self.DGPEJFLJNOJ.push(is.read_message()?);
+                },
+                90 => {
+                    self.CNIJNMDGEDD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FLOICKMNMLL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CNIJNMDGEDD {
+        for value in &self.DGPEJFLJNOJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.DGPEJFLJNOJ {
+        for value in &self.CNIJNMDGEDD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FLOICKMNMLL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CNIJNMDGEDD {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         for v in &self.DGPEJFLJNOJ {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        for v in &self.CNIJNMDGEDD {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for FLOICKMNMLL {
     }
 
     fn clear(&mut self) {
-        self.CNIJNMDGEDD.clear();
         self.DGPEJFLJNOJ.clear();
+        self.CNIJNMDGEDD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLOICKMNMLL {
         static instance: FLOICKMNMLL = FLOICKMNMLL {
-            CNIJNMDGEDD: ::std::vec::Vec::new(),
             DGPEJFLJNOJ: ::std::vec::Vec::new(),
+            CNIJNMDGEDD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for FLOICKMNMLL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLOICKMNMLL.proto\x1a\x11BKMGDPHACKE.proto\x1a\x11EJDGKNKHKHH.prot\
-    o\"m\n\x0bFLOICKMNMLL\x12.\n\x0bCNIJNMDGEDD\x18\x07\x20\x03(\x0b2\x0c.EJ\
-    DGKNKHKHHR\x0bCNIJNMDGEDD\x12.\n\x0bDGPEJFLJNOJ\x18\x04\x20\x03(\x0b2\
-    \x0c.BKMGDPHACKER\x0bDGPEJFLJNOJb\x06proto3\
+    o\"m\n\x0bFLOICKMNMLL\x12.\n\x0bDGPEJFLJNOJ\x18\x04\x20\x03(\x0b2\x0c.BK\
+    MGDPHACKER\x0bDGPEJFLJNOJ\x12.\n\x0bCNIJNMDGEDD\x18\x0b\x20\x03(\x0b2\
+    \x0c.EJDGKNKHKHHR\x0bCNIJNMDGEDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

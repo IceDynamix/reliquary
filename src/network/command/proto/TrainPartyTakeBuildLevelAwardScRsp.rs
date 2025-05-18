@@ -89,10 +89,10 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
                 56 => {
                     self.ECCLPIFMMPP = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
             my_size += ::protobuf::rt::uint32_size(7, self.ECCLPIFMMPP);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
@@ -127,10 +127,10 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
             os.write_uint32(7, self.ECCLPIFMMPP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyTakeBuildLevelAwardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyTakeBuildLevelAwardScRsp.proto\x1a\x0eItemList.proto\"\x88\
     \x01\n\"TrainPartyTakeBuildLevelAwardScRsp\x12\x20\n\x0bECCLPIFMMPP\x18\
-    \x07\x20\x01(\rR\x0bECCLPIFMMPP\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
-    \x07retcode\x12&\n\titem_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x08itemL\
+    \x07\x20\x01(\rR\x0bECCLPIFMMPP\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
+    \x07retcode\x12&\n\titem_list\x18\x04\x20\x01(\x0b2\t.ItemListR\x08itemL\
     istb\x06proto3\
 ";
 

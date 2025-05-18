@@ -30,10 +30,10 @@ pub struct ChessRoguePickAvatarScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRoguePickAvatarScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRoguePickAvatarScRsp.avatar_id_list)
-    pub avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRoguePickAvatarScRsp.EMBAGMMHIPA)
-    pub EMBAGMMHIPA: ::protobuf::MessageField<super::IEGMFGPFADL::IEGMFGPFADL>,
+    // @@protoc_insertion_point(field:ChessRoguePickAvatarScRsp.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::ChessRogueLineupInfo::ChessRogueLineupInfo>,
+    // @@protoc_insertion_point(field:ChessRoguePickAvatarScRsp.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRoguePickAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ChessRoguePickAvatarScRsp {
             |m: &ChessRoguePickAvatarScRsp| { &m.retcode },
             |m: &mut ChessRoguePickAvatarScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &ChessRoguePickAvatarScRsp| { &m.avatar_id_list },
-            |m: &mut ChessRoguePickAvatarScRsp| { &mut m.avatar_id_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLineupInfo::ChessRogueLineupInfo>(
+            "rogue_lineup_info",
+            |m: &ChessRoguePickAvatarScRsp| { &m.rogue_lineup_info },
+            |m: &mut ChessRoguePickAvatarScRsp| { &mut m.rogue_lineup_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IEGMFGPFADL::IEGMFGPFADL>(
-            "EMBAGMMHIPA",
-            |m: &ChessRoguePickAvatarScRsp| { &m.EMBAGMMHIPA },
-            |m: &mut ChessRoguePickAvatarScRsp| { &mut m.EMBAGMMHIPA },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "base_avatar_id_list",
+            |m: &ChessRoguePickAvatarScRsp| { &m.base_avatar_id_list },
+            |m: &mut ChessRoguePickAvatarScRsp| { &mut m.base_avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRoguePickAvatarScRsp>(
             "ChessRoguePickAvatarScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ChessRoguePickAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
                 },
-                56 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMBAGMMHIPA)?;
+                40 => {
+                    self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for ChessRoguePickAvatarScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.avatar_id_list);
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for ChessRoguePickAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(7, &self.avatar_id_list)?;
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
+        os.write_repeated_packed_uint32(5, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ChessRoguePickAvatarScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.avatar_id_list.clear();
-        self.EMBAGMMHIPA.clear();
+        self.rogue_lineup_info.clear();
+        self.base_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRoguePickAvatarScRsp {
         static instance: ChessRoguePickAvatarScRsp = ChessRoguePickAvatarScRsp {
             retcode: 0,
-            avatar_id_list: ::std::vec::Vec::new(),
-            EMBAGMMHIPA: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            base_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRoguePickAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRoguePickAvatarScRsp.proto\x1a\x11IEGMFGPFADL.proto\"\x8b\x01\
-    \n\x19ChessRoguePickAvatarScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
-    \x07retcode\x12$\n\x0eavatar_id_list\x18\x07\x20\x03(\rR\x0cavatarIdList\
-    \x12.\n\x0bEMBAGMMHIPA\x18\x01\x20\x01(\x0b2\x0c.IEGMFGPFADLR\x0bEMBAGMM\
-    HIPAb\x06proto3\
+    \n\x1fChessRoguePickAvatarScRsp.proto\x1a\x1aChessRogueLineupInfo.proto\
+    \"\xa7\x01\n\x19ChessRoguePickAvatarScRsp\x12\x18\n\x07retcode\x18\x02\
+    \x20\x01(\rR\x07retcode\x12A\n\x11rogue_lineup_info\x18\n\x20\x01(\x0b2\
+    \x15.ChessRogueLineupInfoR\x0frogueLineupInfo\x12-\n\x13base_avatar_id_l\
+    ist\x18\x05\x20\x03(\rR\x10baseAvatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IEGMFGPFADL::file_descriptor().clone());
+            deps.push(super::ChessRogueLineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRoguePickAvatarScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

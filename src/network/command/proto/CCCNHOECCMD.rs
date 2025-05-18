@@ -32,8 +32,8 @@ pub struct CCCNHOECCMD {
     pub item_id: u32,
     // @@protoc_insertion_point(field:CCCNHOECCMD.BANELELNLKB)
     pub BANELELNLKB: u32,
-    // @@protoc_insertion_point(field:CCCNHOECCMD.OOACKEGEMFK)
-    pub OOACKEGEMFK: u32,
+    // @@protoc_insertion_point(field:CCCNHOECCMD.skill_id)
+    pub skill_id: u32,
     // @@protoc_insertion_point(field:CCCNHOECCMD.display_value)
     pub display_value: i32,
     // special fields
@@ -66,9 +66,9 @@ impl CCCNHOECCMD {
             |m: &mut CCCNHOECCMD| { &mut m.BANELELNLKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOACKEGEMFK",
-            |m: &CCCNHOECCMD| { &m.OOACKEGEMFK },
-            |m: &mut CCCNHOECCMD| { &mut m.OOACKEGEMFK },
+            "skill_id",
+            |m: &CCCNHOECCMD| { &m.skill_id },
+            |m: &mut CCCNHOECCMD| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "display_value",
@@ -100,7 +100,7 @@ impl ::protobuf::Message for CCCNHOECCMD {
                     self.BANELELNLKB = is.read_uint32()?;
                 },
                 24 => {
-                    self.OOACKEGEMFK = is.read_uint32()?;
+                    self.skill_id = is.read_uint32()?;
                 },
                 32 => {
                     self.display_value = is.read_int32()?;
@@ -123,8 +123,8 @@ impl ::protobuf::Message for CCCNHOECCMD {
         if self.BANELELNLKB != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.BANELELNLKB);
         }
-        if self.OOACKEGEMFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OOACKEGEMFK);
+        if self.skill_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.skill_id);
         }
         if self.display_value != 0 {
             my_size += ::protobuf::rt::int32_size(4, self.display_value);
@@ -141,8 +141,8 @@ impl ::protobuf::Message for CCCNHOECCMD {
         if self.BANELELNLKB != 0 {
             os.write_uint32(2, self.BANELELNLKB)?;
         }
-        if self.OOACKEGEMFK != 0 {
-            os.write_uint32(3, self.OOACKEGEMFK)?;
+        if self.skill_id != 0 {
+            os.write_uint32(3, self.skill_id)?;
         }
         if self.display_value != 0 {
             os.write_int32(4, self.display_value)?;
@@ -166,7 +166,7 @@ impl ::protobuf::Message for CCCNHOECCMD {
     fn clear(&mut self) {
         self.item_id = 0;
         self.BANELELNLKB = 0;
-        self.OOACKEGEMFK = 0;
+        self.skill_id = 0;
         self.display_value = 0;
         self.special_fields.clear();
     }
@@ -175,7 +175,7 @@ impl ::protobuf::Message for CCCNHOECCMD {
         static instance: CCCNHOECCMD = CCCNHOECCMD {
             item_id: 0,
             BANELELNLKB: 0,
-            OOACKEGEMFK: 0,
+            skill_id: 0,
             display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for CCCNHOECCMD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CCCNHOECCMD.proto\"\x8f\x01\n\x0bCCCNHOECCMD\x12\x17\n\x07item_id\
+    \n\x11CCCNHOECCMD.proto\"\x88\x01\n\x0bCCCNHOECCMD\x12\x17\n\x07item_id\
     \x18\x01\x20\x01(\rR\x06itemId\x12\x20\n\x0bBANELELNLKB\x18\x02\x20\x01(\
-    \rR\x0bBANELELNLKB\x12\x20\n\x0bOOACKEGEMFK\x18\x03\x20\x01(\rR\x0bOOACK\
-    EGEMFK\x12#\n\rdisplay_value\x18\x04\x20\x01(\x05R\x0cdisplayValueb\x06p\
-    roto3\
+    \rR\x0bBANELELNLKB\x12\x19\n\x08skill_id\x18\x03\x20\x01(\rR\x07skillId\
+    \x12#\n\rdisplay_value\x18\x04\x20\x01(\x05R\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

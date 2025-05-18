@@ -30,12 +30,12 @@ pub struct UpdateMarkChestScRsp {
     // message fields
     // @@protoc_insertion_point(field:UpdateMarkChestScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.HICCAIAPGMM)
-    pub HICCAIAPGMM: ::std::vec::Vec<super::IBCGAGLOLNA::IBCGAGLOLNA>,
-    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.HOBJMINNBOP)
-    pub HOBJMINNBOP: u32,
-    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.DBFPAAFODKG)
-    pub DBFPAAFODKG: u32,
+    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.trigger_param_id)
+    pub trigger_param_id: u32,
+    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.mark_chest_func_info)
+    pub mark_chest_func_info: ::std::vec::Vec<super::MarkChestFuncInfo::MarkChestFuncInfo>,
+    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.func_id)
+    pub func_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMarkChestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl UpdateMarkChestScRsp {
             |m: &UpdateMarkChestScRsp| { &m.retcode },
             |m: &mut UpdateMarkChestScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trigger_param_id",
+            |m: &UpdateMarkChestScRsp| { &m.trigger_param_id },
+            |m: &mut UpdateMarkChestScRsp| { &mut m.trigger_param_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HICCAIAPGMM",
-            |m: &UpdateMarkChestScRsp| { &m.HICCAIAPGMM },
-            |m: &mut UpdateMarkChestScRsp| { &mut m.HICCAIAPGMM },
+            "mark_chest_func_info",
+            |m: &UpdateMarkChestScRsp| { &m.mark_chest_func_info },
+            |m: &mut UpdateMarkChestScRsp| { &mut m.mark_chest_func_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOBJMINNBOP",
-            |m: &UpdateMarkChestScRsp| { &m.HOBJMINNBOP },
-            |m: &mut UpdateMarkChestScRsp| { &mut m.HOBJMINNBOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBFPAAFODKG",
-            |m: &UpdateMarkChestScRsp| { &m.DBFPAAFODKG },
-            |m: &mut UpdateMarkChestScRsp| { &mut m.DBFPAAFODKG },
+            "func_id",
+            |m: &UpdateMarkChestScRsp| { &m.func_id },
+            |m: &mut UpdateMarkChestScRsp| { &mut m.func_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMarkChestScRsp>(
             "UpdateMarkChestScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
-                    self.HICCAIAPGMM.push(is.read_message()?);
+                16 => {
+                    self.trigger_param_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.HOBJMINNBOP = is.read_uint32()?;
+                122 => {
+                    self.mark_chest_func_info.push(is.read_message()?);
                 },
-                112 => {
-                    self.DBFPAAFODKG = is.read_uint32()?;
+                32 => {
+                    self.func_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        for value in &self.HICCAIAPGMM {
+        if self.trigger_param_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.trigger_param_id);
+        }
+        for value in &self.mark_chest_func_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HOBJMINNBOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HOBJMINNBOP);
-        }
-        if self.DBFPAAFODKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DBFPAAFODKG);
+        if self.func_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.func_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        for v in &self.HICCAIAPGMM {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.trigger_param_id != 0 {
+            os.write_uint32(2, self.trigger_param_id)?;
+        }
+        for v in &self.mark_chest_func_info {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.HOBJMINNBOP != 0 {
-            os.write_uint32(3, self.HOBJMINNBOP)?;
-        }
-        if self.DBFPAAFODKG != 0 {
-            os.write_uint32(14, self.DBFPAAFODKG)?;
+        if self.func_id != 0 {
+            os.write_uint32(4, self.func_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HICCAIAPGMM.clear();
-        self.HOBJMINNBOP = 0;
-        self.DBFPAAFODKG = 0;
+        self.trigger_param_id = 0;
+        self.mark_chest_func_info.clear();
+        self.func_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMarkChestScRsp {
         static instance: UpdateMarkChestScRsp = UpdateMarkChestScRsp {
             retcode: 0,
-            HICCAIAPGMM: ::std::vec::Vec::new(),
-            HOBJMINNBOP: 0,
-            DBFPAAFODKG: 0,
+            trigger_param_id: 0,
+            mark_chest_func_info: ::std::vec::Vec::new(),
+            func_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMarkChestScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUpdateMarkChestScRsp.proto\x1a\x11IBCGAGLOLNA.proto\"\xa4\x01\n\
-    \x14UpdateMarkChestScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bHICCAIAPGMM\x18\x0c\x20\x03(\x0b2\x0c.IBCGAGLOLNAR\x0bHICCA\
-    IAPGMM\x12\x20\n\x0bHOBJMINNBOP\x18\x03\x20\x01(\rR\x0bHOBJMINNBOP\x12\
-    \x20\n\x0bDBFPAAFODKG\x18\x0e\x20\x01(\rR\x0bDBFPAAFODKGb\x06proto3\
+    \n\x1aUpdateMarkChestScRsp.proto\x1a\x17MarkChestFuncInfo.proto\"\xb8\
+    \x01\n\x14UpdateMarkChestScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
+    \x07retcode\x12(\n\x10trigger_param_id\x18\x02\x20\x01(\rR\x0etriggerPar\
+    amId\x12C\n\x14mark_chest_func_info\x18\x0f\x20\x03(\x0b2\x12.MarkChestF\
+    uncInfoR\x11markChestFuncInfo\x12\x17\n\x07func_id\x18\x04\x20\x01(\rR\
+    \x06funcIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IBCGAGLOLNA::file_descriptor().clone());
+            deps.push(super::MarkChestFuncInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateMarkChestScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

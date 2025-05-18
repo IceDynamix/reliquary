@@ -86,13 +86,13 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                24 => {
+                96 => {
                     self.is_new = is.read_bool()?;
                 },
-                80 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.is_new != false {
-            os.write_bool(3, self.is_new)?;
+            os.write_bool(12, self.is_new)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(10, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AddMultiPathAvatarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AddMultiPathAvatarScNotify.proto\x1a\x0eItemList.proto\"s\n\x1aAdd\
-    MultiPathAvatarScNotify\x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemLis\
-    tR\x06reward\x12\x15\n\x06is_new\x18\x03\x20\x01(\x08R\x05isNew\x12\x1b\
-    \n\tavatar_id\x18\n\x20\x01(\rR\x08avatarIdb\x06proto3\
+    MultiPathAvatarScNotify\x12!\n\x06reward\x18\x02\x20\x01(\x0b2\t.ItemLis\
+    tR\x06reward\x12\x15\n\x06is_new\x18\x0c\x20\x01(\x08R\x05isNew\x12\x1b\
+    \n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

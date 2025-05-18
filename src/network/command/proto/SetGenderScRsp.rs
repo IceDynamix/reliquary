@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGenderScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetGenderScRsp.multi_path_type)
-    pub multi_path_type: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
-    // @@protoc_insertion_point(field:SetGenderScRsp.multi_path_type_info)
-    pub multi_path_type_info: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
+    // @@protoc_insertion_point(field:SetGenderScRsp.cur_avatar_path_info_list)
+    pub cur_avatar_path_info_list: ::std::vec::Vec<super::MultiPathAvatarTypeInfo::MultiPathAvatarTypeInfo>,
+    // @@protoc_insertion_point(field:SetGenderScRsp.cur_avatar_path)
+    pub cur_avatar_path: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // @@protoc_insertion_point(field:SetGenderScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl SetGenderScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "multi_path_type",
-            |m: &SetGenderScRsp| { &m.multi_path_type },
-            |m: &mut SetGenderScRsp| { &mut m.multi_path_type },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "multi_path_type_info",
-            |m: &SetGenderScRsp| { &m.multi_path_type_info },
-            |m: &mut SetGenderScRsp| { &mut m.multi_path_type_info },
+            "cur_avatar_path_info_list",
+            |m: &SetGenderScRsp| { &m.cur_avatar_path_info_list },
+            |m: &mut SetGenderScRsp| { &mut m.cur_avatar_path_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_avatar_path",
+            |m: &SetGenderScRsp| { &m.cur_avatar_path },
+            |m: &mut SetGenderScRsp| { &mut m.cur_avatar_path },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.multi_path_type = is.read_enum_or_unknown()?;
+                50 => {
+                    self.cur_avatar_path_info_list.push(is.read_message()?);
                 },
-                74 => {
-                    self.multi_path_type_info.push(is.read_message()?);
+                88 => {
+                    self.cur_avatar_path = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SetGenderScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.multi_path_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(6, self.multi_path_type.value());
-        }
-        for value in &self.multi_path_type_info {
+        for value in &self.cur_avatar_path_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(11, self.cur_avatar_path.value());
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SetGenderScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.multi_path_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.multi_path_type))?;
-        }
-        for v in &self.multi_path_type_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.cur_avatar_path_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SetGenderScRsp {
     }
 
     fn clear(&mut self) {
-        self.multi_path_type = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
-        self.multi_path_type_info.clear();
+        self.cur_avatar_path_info_list.clear();
+        self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGenderScRsp {
         static instance: SetGenderScRsp = SetGenderScRsp {
-            multi_path_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            multi_path_type_info: ::std::vec::Vec::new(),
+            cur_avatar_path_info_list: ::std::vec::Vec::new(),
+            cur_avatar_path: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetGenderScRsp.proto\x1a\x19MultiPathAvatarType.proto\x1a\x1dMulti\
-    PathAvatarTypeInfo.proto\"\xb3\x01\n\x0eSetGenderScRsp\x12<\n\x0fmulti_p\
-    ath_type\x18\x06\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\rmultiPathType\
-    \x12I\n\x14multi_path_type_info\x18\t\x20\x03(\x0b2\x18.MultiPathAvatarT\
-    ypeInfoR\x11multiPathTypeInfo\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    PathAvatarTypeInfo.proto\"\xbc\x01\n\x0eSetGenderScRsp\x12R\n\x19cur_ava\
+    tar_path_info_list\x18\x06\x20\x03(\x0b2\x18.MultiPathAvatarTypeInfoR\
+    \x15curAvatarPathInfoList\x12<\n\x0fcur_avatar_path\x18\x0b\x20\x01(\x0e\
+    2\x14.MultiPathAvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\x0f\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

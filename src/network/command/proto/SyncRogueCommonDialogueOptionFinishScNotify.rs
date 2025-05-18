@@ -93,16 +93,16 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OIDIADDNACM)?;
                 },
-                58 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DGNCFMDPPBF)?;
                 },
-                8 => {
+                40 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.event_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -126,10 +126,10 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(5, self.KDMLLLGHJON);
         }
         if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.event_unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.event_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OIDIADDNACM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.DGNCFMDPPBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(1, self.KDMLLLGHJON)?;
+            os.write_uint32(5, self.KDMLLLGHJON)?;
         }
         if self.event_unique_id != 0 {
-            os.write_uint32(4, self.event_unique_id)?;
+            os.write_uint32(9, self.event_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueOptionFinishS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1SyncRogueCommonDialogueOptionFinishScNotify.proto\x1a\x11GBABEKPBLHN.\
     proto\x1a\x11HGEKNLIFFED.proto\"\xd7\x01\n+SyncRogueCommonDialogueOption\
-    FinishScNotify\x12.\n\x0bOIDIADDNACM\x18\x05\x20\x01(\x0b2\x0c.HGEKNLIFF\
-    EDR\x0bOIDIADDNACM\x12.\n\x0bDGNCFMDPPBF\x18\x07\x20\x01(\x0b2\x0c.GBABE\
-    KPBLHNR\x0bDGNCFMDPPBF\x12\x20\n\x0bKDMLLLGHJON\x18\x01\x20\x01(\rR\x0bK\
-    DMLLLGHJON\x12&\n\x0fevent_unique_id\x18\x04\x20\x01(\rR\reventUniqueIdb\
+    FinishScNotify\x12.\n\x0bOIDIADDNACM\x18\x0c\x20\x01(\x0b2\x0c.HGEKNLIFF\
+    EDR\x0bOIDIADDNACM\x12.\n\x0bDGNCFMDPPBF\x18\x04\x20\x01(\x0b2\x0c.GBABE\
+    KPBLHNR\x0bDGNCFMDPPBF\x12\x20\n\x0bKDMLLLGHJON\x18\x05\x20\x01(\rR\x0bK\
+    DMLLLGHJON\x12&\n\x0fevent_unique_id\x18\t\x20\x01(\rR\reventUniqueIdb\
     \x06proto3\
 ";
 

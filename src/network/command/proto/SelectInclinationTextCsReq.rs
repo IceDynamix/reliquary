@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectInclinationTextCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectInclinationTextCsReq.PKDCPMNAGBC)
-    pub PKDCPMNAGBC: u32,
+    // @@protoc_insertion_point(field:SelectInclinationTextCsReq.talk_sentence_id)
+    pub talk_sentence_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectInclinationTextCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SelectInclinationTextCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKDCPMNAGBC",
-            |m: &SelectInclinationTextCsReq| { &m.PKDCPMNAGBC },
-            |m: &mut SelectInclinationTextCsReq| { &mut m.PKDCPMNAGBC },
+            "talk_sentence_id",
+            |m: &SelectInclinationTextCsReq| { &m.talk_sentence_id },
+            |m: &mut SelectInclinationTextCsReq| { &mut m.talk_sentence_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectInclinationTextCsReq>(
             "SelectInclinationTextCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PKDCPMNAGBC = is.read_uint32()?;
+                80 => {
+                    self.talk_sentence_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKDCPMNAGBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PKDCPMNAGBC);
+        if self.talk_sentence_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.talk_sentence_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKDCPMNAGBC != 0 {
-            os.write_uint32(4, self.PKDCPMNAGBC)?;
+        if self.talk_sentence_id != 0 {
+            os.write_uint32(10, self.talk_sentence_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SelectInclinationTextCsReq {
     }
 
     fn clear(&mut self) {
-        self.PKDCPMNAGBC = 0;
+        self.talk_sentence_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectInclinationTextCsReq {
         static instance: SelectInclinationTextCsReq = SelectInclinationTextCsReq {
-            PKDCPMNAGBC: 0,
+            talk_sentence_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for SelectInclinationTextCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20SelectInclinationTextCsReq.proto\">\n\x1aSelectInclinationTextCsRe\
-    q\x12\x20\n\x0bPKDCPMNAGBC\x18\x04\x20\x01(\rR\x0bPKDCPMNAGBCb\x06proto3\
+    \n\x20SelectInclinationTextCsReq.proto\"F\n\x1aSelectInclinationTextCsRe\
+    q\x12(\n\x10talk_sentence_id\x18\n\x20\x01(\rR\x0etalkSentenceIdb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

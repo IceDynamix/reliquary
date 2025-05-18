@@ -30,8 +30,8 @@ pub struct FinishCosumeItemMissionCsReq {
     // message fields
     // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.LPLHIABDBBG)
-    pub LPLHIABDBBG: u32,
+    // @@protoc_insertion_point(field:FinishCosumeItemMissionCsReq.sub_mission_id)
+    pub sub_mission_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishCosumeItemMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FinishCosumeItemMissionCsReq {
             |m: &mut FinishCosumeItemMissionCsReq| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLHIABDBBG",
-            |m: &FinishCosumeItemMissionCsReq| { &m.LPLHIABDBBG },
-            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.LPLHIABDBBG },
+            "sub_mission_id",
+            |m: &FinishCosumeItemMissionCsReq| { &m.sub_mission_id },
+            |m: &mut FinishCosumeItemMissionCsReq| { &mut m.sub_mission_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishCosumeItemMissionCsReq>(
             "FinishCosumeItemMissionCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
-                40 => {
-                    self.LPLHIABDBBG = is.read_uint32()?;
+                16 => {
+                    self.sub_mission_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LPLHIABDBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LPLHIABDBBG);
+        if self.sub_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.sub_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.LPLHIABDBBG != 0 {
-            os.write_uint32(5, self.LPLHIABDBBG)?;
+        if self.sub_mission_id != 0 {
+            os.write_uint32(2, self.sub_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
 
     fn clear(&mut self) {
         self.item_list.clear();
-        self.LPLHIABDBBG = 0;
+        self.sub_mission_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishCosumeItemMissionCsReq {
         static instance: FinishCosumeItemMissionCsReq = FinishCosumeItemMissionCsReq {
             item_list: ::protobuf::MessageField::none(),
-            LPLHIABDBBG: 0,
+            sub_mission_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishCosumeItemMissionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FinishCosumeItemMissionCsReq.proto\x1a\x0eItemList.proto\"h\n\x1cFin\
-    ishCosumeItemMissionCsReq\x12&\n\titem_list\x18\x06\x20\x01(\x0b2\t.Item\
-    ListR\x08itemList\x12\x20\n\x0bLPLHIABDBBG\x18\x05\x20\x01(\rR\x0bLPLHIA\
-    BDBBGb\x06proto3\
+    \n\"FinishCosumeItemMissionCsReq.proto\x1a\x0eItemList.proto\"l\n\x1cFin\
+    ishCosumeItemMissionCsReq\x12&\n\titem_list\x18\x04\x20\x01(\x0b2\t.Item\
+    ListR\x08itemList\x12$\n\x0esub_mission_id\x18\x02\x20\x01(\rR\x0csubMis\
+    sionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTurnFoodSwitchScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.BNDLHJHALMB)
     pub BNDLHJHALMB: bool,
     // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.JCAKHHKFDFN)
     pub JCAKHHKFDFN: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetTurnFoodSwitchScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl SetTurnFoodSwitchScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetTurnFoodSwitchScRsp| { &m.retcode },
-            |m: &mut SetTurnFoodSwitchScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BNDLHJHALMB",
             |m: &SetTurnFoodSwitchScRsp| { &m.BNDLHJHALMB },
             |m: &mut SetTurnFoodSwitchScRsp| { &mut m.BNDLHJHALMB },
@@ -67,6 +62,11 @@ impl SetTurnFoodSwitchScRsp {
             "JCAKHHKFDFN",
             |m: &SetTurnFoodSwitchScRsp| { &m.JCAKHHKFDFN },
             |m: &mut SetTurnFoodSwitchScRsp| { &mut m.JCAKHHKFDFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetTurnFoodSwitchScRsp| { &m.retcode },
+            |m: &mut SetTurnFoodSwitchScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTurnFoodSwitchScRsp>(
             "SetTurnFoodSwitchScRsp",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                64 => {
                     self.BNDLHJHALMB = is.read_bool()?;
                 },
-                120 => {
+                80 => {
                     self.JCAKHHKFDFN = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if self.BNDLHJHALMB != false {
             my_size += 1 + 1;
         }
         if self.JCAKHHKFDFN != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.JCAKHHKFDFN.value());
+            my_size += ::protobuf::rt::int32_size(10, self.JCAKHHKFDFN.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if self.BNDLHJHALMB != false {
-            os.write_bool(8, self.BNDLHJHALMB)?;
+            os.write_bool(4, self.BNDLHJHALMB)?;
         }
         if self.JCAKHHKFDFN != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.JCAKHHKFDFN))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.JCAKHHKFDFN))?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.BNDLHJHALMB = false;
         self.JCAKHHKFDFN = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TURN_FOOD_SWITCH_NONE);
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTurnFoodSwitchScRsp {
         static instance: SetTurnFoodSwitchScRsp = SetTurnFoodSwitchScRsp {
-            retcode: 0,
             BNDLHJHALMB: false,
             JCAKHHKFDFN: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchScRsp.proto\x1a\x14TurnFoodSwitch.proto\"\x87\x01\
-    \n\x16SetTurnFoodSwitchScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\
-    \x07retcode\x12\x20\n\x0bBNDLHJHALMB\x18\x08\x20\x01(\x08R\x0bBNDLHJHALM\
-    B\x121\n\x0bJCAKHHKFDFN\x18\x0f\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bJCA\
-    KHHKFDFNb\x06proto3\
+    \n\x16SetTurnFoodSwitchScRsp\x12\x20\n\x0bBNDLHJHALMB\x18\x04\x20\x01(\
+    \x08R\x0bBNDLHJHALMB\x121\n\x0bJCAKHHKFDFN\x18\n\x20\x01(\x0e2\x0f.TurnF\
+    oodSwitchR\x0bJCAKHHKFDFN\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

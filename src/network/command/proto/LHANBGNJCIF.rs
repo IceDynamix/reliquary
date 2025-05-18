@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHANBGNJCIF {
     // message fields
-    // @@protoc_insertion_point(field:LHANBGNJCIF.MBEJBLFHCBH)
-    pub MBEJBLFHCBH: u32,
+    // @@protoc_insertion_point(field:LHANBGNJCIF.item_count)
+    pub item_count: u32,
     // @@protoc_insertion_point(field:LHANBGNJCIF.item_id)
     pub item_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl LHANBGNJCIF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBEJBLFHCBH",
-            |m: &LHANBGNJCIF| { &m.MBEJBLFHCBH },
-            |m: &mut LHANBGNJCIF| { &mut m.MBEJBLFHCBH },
+            "item_count",
+            |m: &LHANBGNJCIF| { &m.item_count },
+            |m: &mut LHANBGNJCIF| { &mut m.item_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for LHANBGNJCIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.MBEJBLFHCBH = is.read_uint32()?;
+                8 => {
+                    self.item_count = is.read_uint32()?;
                 },
-                64 => {
+                56 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LHANBGNJCIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MBEJBLFHCBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MBEJBLFHCBH);
+        if self.item_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.item_count);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LHANBGNJCIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MBEJBLFHCBH != 0 {
-            os.write_uint32(3, self.MBEJBLFHCBH)?;
+        if self.item_count != 0 {
+            os.write_uint32(1, self.item_count)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(8, self.item_id)?;
+            os.write_uint32(7, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for LHANBGNJCIF {
     }
 
     fn clear(&mut self) {
-        self.MBEJBLFHCBH = 0;
+        self.item_count = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHANBGNJCIF {
         static instance: LHANBGNJCIF = LHANBGNJCIF {
-            MBEJBLFHCBH: 0,
+            item_count: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LHANBGNJCIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHANBGNJCIF.proto\"H\n\x0bLHANBGNJCIF\x12\x20\n\x0bMBEJBLFHCBH\x18\
-    \x03\x20\x01(\rR\x0bMBEJBLFHCBH\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\
-    \x06itemIdb\x06proto3\
+    \n\x11LHANBGNJCIF.proto\"E\n\x0bLHANBGNJCIF\x12\x1d\n\nitem_count\x18\
+    \x01\x20\x01(\rR\titemCount\x12\x17\n\x07item_id\x18\x07\x20\x01(\rR\x06\
+    itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

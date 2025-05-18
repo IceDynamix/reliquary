@@ -79,7 +79,7 @@ impl ::protobuf::Message for AENOCKPNFCI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.key = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AENOCKPNFCI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.key);
+            my_size += ::protobuf::rt::uint32_size(2, self.key);
         }
         if self.JPCLLFAIEEC != 0 {
             my_size += ::protobuf::rt::int32_size(12, self.JPCLLFAIEEC);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AENOCKPNFCI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(5, self.key)?;
+            os.write_uint32(2, self.key)?;
         }
         if self.JPCLLFAIEEC != 0 {
             os.write_int32(12, self.JPCLLFAIEEC)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for AENOCKPNFCI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AENOCKPNFCI.proto\"A\n\x0bAENOCKPNFCI\x12\x10\n\x03key\x18\x05\x20\
+    \n\x11AENOCKPNFCI.proto\"A\n\x0bAENOCKPNFCI\x12\x10\n\x03key\x18\x02\x20\
     \x01(\rR\x03key\x12\x20\n\x0bJPCLLFAIEEC\x18\x0c\x20\x01(\x05R\x0bJPCLLF\
     AIEECb\x06proto3\
 ";

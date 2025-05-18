@@ -79,10 +79,10 @@ impl ::protobuf::Message for SavePointsInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.valid_times = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.refresh_time = is.read_int64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SavePointsInfoNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.valid_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.valid_times);
+            my_size += ::protobuf::rt::uint32_size(3, self.valid_times);
         }
         if self.refresh_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.refresh_time);
+            my_size += ::protobuf::rt::int64_size(10, self.refresh_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SavePointsInfoNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.valid_times != 0 {
-            os.write_uint32(6, self.valid_times)?;
+            os.write_uint32(3, self.valid_times)?;
         }
         if self.refresh_time != 0 {
-            os.write_int64(14, self.refresh_time)?;
+            os.write_int64(10, self.refresh_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SavePointsInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSavePointsInfoNotify.proto\"Z\n\x14SavePointsInfoNotify\x12\x1f\n\
-    \x0bvalid_times\x18\x06\x20\x01(\rR\nvalidTimes\x12!\n\x0crefresh_time\
-    \x18\x0e\x20\x01(\x03R\x0brefreshTimeb\x06proto3\
+    \x0bvalid_times\x18\x03\x20\x01(\rR\nvalidTimes\x12!\n\x0crefresh_time\
+    \x18\n\x20\x01(\x03R\x0brefreshTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

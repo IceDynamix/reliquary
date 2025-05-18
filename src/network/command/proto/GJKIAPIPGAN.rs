@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GJKIAPIPGAN {
     // message fields
-    // @@protoc_insertion_point(field:GJKIAPIPGAN.POGEMMICILA)
-    pub POGEMMICILA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GJKIAPIPGAN.NFEADMFNFLK)
     pub NFEADMFNFLK: bool,
+    // @@protoc_insertion_point(field:GJKIAPIPGAN.POGEMMICILA)
+    pub POGEMMICILA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GJKIAPIPGAN.LEGHKNNKOMG)
     pub LEGHKNNKOMG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GJKIAPIPGAN.OEFJMEFPIPL)
@@ -57,15 +57,15 @@ impl GJKIAPIPGAN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POGEMMICILA",
-            |m: &GJKIAPIPGAN| { &m.POGEMMICILA },
-            |m: &mut GJKIAPIPGAN| { &mut m.POGEMMICILA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NFEADMFNFLK",
             |m: &GJKIAPIPGAN| { &m.NFEADMFNFLK },
             |m: &mut GJKIAPIPGAN| { &mut m.NFEADMFNFLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "POGEMMICILA",
+            |m: &GJKIAPIPGAN| { &m.POGEMMICILA },
+            |m: &mut GJKIAPIPGAN| { &mut m.POGEMMICILA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LEGHKNNKOMG",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for GJKIAPIPGAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.POGEMMICILA)?;
-                },
                 24 => {
-                    self.POGEMMICILA.push(is.read_uint32()?);
-                },
-                32 => {
                     self.NFEADMFNFLK = is.read_bool()?;
                 },
-                66 => {
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.POGEMMICILA)?;
+                },
+                120 => {
+                    self.POGEMMICILA.push(is.read_uint32()?);
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.LEGHKNNKOMG)?;
                 },
-                64 => {
+                88 => {
                     self.LEGHKNNKOMG.push(is.read_uint32()?);
                 },
-                56 => {
+                64 => {
                     self.OEFJMEFPIPL = is.read_uint32()?;
                 },
                 10 => {
@@ -136,13 +136,13 @@ impl ::protobuf::Message for GJKIAPIPGAN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.POGEMMICILA);
         if self.NFEADMFNFLK != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.LEGHKNNKOMG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.POGEMMICILA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.LEGHKNNKOMG);
         if self.OEFJMEFPIPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OEFJMEFPIPL);
+            my_size += ::protobuf::rt::uint32_size(8, self.OEFJMEFPIPL);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.FHBOPEPJAEN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -151,13 +151,13 @@ impl ::protobuf::Message for GJKIAPIPGAN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.POGEMMICILA)?;
         if self.NFEADMFNFLK != false {
-            os.write_bool(4, self.NFEADMFNFLK)?;
+            os.write_bool(3, self.NFEADMFNFLK)?;
         }
-        os.write_repeated_packed_uint32(8, &self.LEGHKNNKOMG)?;
+        os.write_repeated_packed_uint32(15, &self.POGEMMICILA)?;
+        os.write_repeated_packed_uint32(11, &self.LEGHKNNKOMG)?;
         if self.OEFJMEFPIPL != 0 {
-            os.write_uint32(7, self.OEFJMEFPIPL)?;
+            os.write_uint32(8, self.OEFJMEFPIPL)?;
         }
         os.write_repeated_packed_uint32(1, &self.FHBOPEPJAEN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -177,8 +177,8 @@ impl ::protobuf::Message for GJKIAPIPGAN {
     }
 
     fn clear(&mut self) {
-        self.POGEMMICILA.clear();
         self.NFEADMFNFLK = false;
+        self.POGEMMICILA.clear();
         self.LEGHKNNKOMG.clear();
         self.OEFJMEFPIPL = 0;
         self.FHBOPEPJAEN.clear();
@@ -187,8 +187,8 @@ impl ::protobuf::Message for GJKIAPIPGAN {
 
     fn default_instance() -> &'static GJKIAPIPGAN {
         static instance: GJKIAPIPGAN = GJKIAPIPGAN {
-            POGEMMICILA: ::std::vec::Vec::new(),
             NFEADMFNFLK: false,
+            POGEMMICILA: ::std::vec::Vec::new(),
             LEGHKNNKOMG: ::std::vec::Vec::new(),
             OEFJMEFPIPL: 0,
             FHBOPEPJAEN: ::std::vec::Vec::new(),
@@ -216,12 +216,12 @@ impl ::protobuf::reflect::ProtobufValue for GJKIAPIPGAN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJKIAPIPGAN.proto\"\xb7\x01\n\x0bGJKIAPIPGAN\x12\x20\n\x0bPOGEMMIC\
-    ILA\x18\x03\x20\x03(\rR\x0bPOGEMMICILA\x12\x20\n\x0bNFEADMFNFLK\x18\x04\
-    \x20\x01(\x08R\x0bNFEADMFNFLK\x12\x20\n\x0bLEGHKNNKOMG\x18\x08\x20\x03(\
-    \rR\x0bLEGHKNNKOMG\x12\x20\n\x0bOEFJMEFPIPL\x18\x07\x20\x01(\rR\x0bOEFJM\
-    EFPIPL\x12\x20\n\x0bFHBOPEPJAEN\x18\x01\x20\x03(\rR\x0bFHBOPEPJAENb\x06p\
-    roto3\
+    \n\x11GJKIAPIPGAN.proto\"\xb7\x01\n\x0bGJKIAPIPGAN\x12\x20\n\x0bNFEADMFN\
+    FLK\x18\x03\x20\x01(\x08R\x0bNFEADMFNFLK\x12\x20\n\x0bPOGEMMICILA\x18\
+    \x0f\x20\x03(\rR\x0bPOGEMMICILA\x12\x20\n\x0bLEGHKNNKOMG\x18\x0b\x20\x03\
+    (\rR\x0bLEGHKNNKOMG\x12\x20\n\x0bOEFJMEFPIPL\x18\x08\x20\x01(\rR\x0bOEFJ\
+    MEFPIPL\x12\x20\n\x0bFHBOPEPJAEN\x18\x01\x20\x03(\rR\x0bFHBOPEPJAENb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

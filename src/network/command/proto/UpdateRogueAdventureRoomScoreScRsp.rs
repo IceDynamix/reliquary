@@ -79,7 +79,7 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDLAKDMEJLG)?;
                 },
                 80 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for UpdateRogueAdventureRoomScoreScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CDLAKDMEJLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRogueAdventureRoomScoreScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(UpdateRogueAdventureRoomScoreScRsp.proto\x1a\x11CNCAJKHCCEC.proto\"n\
-    \n\"UpdateRogueAdventureRoomScoreScRsp\x12.\n\x0bCDLAKDMEJLG\x18\x04\x20\
+    \n\"UpdateRogueAdventureRoomScoreScRsp\x12.\n\x0bCDLAKDMEJLG\x18\x0f\x20\
     \x01(\x0b2\x0c.CNCAJKHCCECR\x0bCDLAKDMEJLG\x12\x18\n\x07retcode\x18\n\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";

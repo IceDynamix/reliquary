@@ -79,10 +79,10 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
-                26 => {
+                58 => {
                     self.GEDGLNCPGGN.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(9, self.CPODEJOFPDD);
         }
         for value in &self.GEDGLNCPGGN {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(5, self.CPODEJOFPDD)?;
+            os.write_uint32(9, self.CPODEJOFPDD)?;
         }
         for v in &self.GEDGLNCPGGN {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TravelBrochureApplyPasterListCsReq.proto\x1a\x11KBJPHLNAPGI.proto\"v\
-    \n\"TravelBrochureApplyPasterListCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\x05\
-    \x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEDGLNCPGGN\x18\x03\x20\x03(\x0b2\
+    \n\"TravelBrochureApplyPasterListCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\t\
+    \x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEDGLNCPGGN\x18\x07\x20\x03(\x0b2\
     \x0c.KBJPHLNAPGIR\x0bGEDGLNCPGGNb\x06proto3\
 ";
 

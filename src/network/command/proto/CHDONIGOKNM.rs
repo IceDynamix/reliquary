@@ -40,8 +40,8 @@ pub struct CHDONIGOKNM {
     pub FKEAAIPKPAA: u32,
     // @@protoc_insertion_point(field:CHDONIGOKNM.ICLEENHIPOH)
     pub ICLEENHIPOH: u32,
-    // @@protoc_insertion_point(field:CHDONIGOKNM.boss_buff_info)
-    pub boss_buff_info: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CHDONIGOKNM.boss_info)
+    pub boss_info: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CHDONIGOKNM.ODBONKCMDMP)
     pub ODBONKCMDMP: ::std::vec::Vec<super::PLPNLIBMNIO::PLPNLIBMNIO>,
     // special fields
@@ -94,9 +94,9 @@ impl CHDONIGOKNM {
             |m: &mut CHDONIGOKNM| { &mut m.ICLEENHIPOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "boss_buff_info",
-            |m: &CHDONIGOKNM| { &m.boss_buff_info },
-            |m: &mut CHDONIGOKNM| { &mut m.boss_buff_info },
+            "boss_info",
+            |m: &CHDONIGOKNM| { &m.boss_info },
+            |m: &mut CHDONIGOKNM| { &mut m.boss_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ODBONKCMDMP",
@@ -140,10 +140,10 @@ impl ::protobuf::Message for CHDONIGOKNM {
                     self.ICLEENHIPOH = is.read_uint32()?;
                 },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.boss_buff_info)?;
+                    is.read_repeated_packed_uint32_into(&mut self.boss_info)?;
                 },
                 56 => {
-                    self.boss_buff_info.push(is.read_uint32()?);
+                    self.boss_info.push(is.read_uint32()?);
                 },
                 66 => {
                     self.ODBONKCMDMP.push(is.read_message()?);
@@ -178,7 +178,7 @@ impl ::protobuf::Message for CHDONIGOKNM {
         if self.ICLEENHIPOH != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.ICLEENHIPOH);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.boss_buff_info);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.boss_info);
         for value in &self.ODBONKCMDMP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -207,7 +207,7 @@ impl ::protobuf::Message for CHDONIGOKNM {
         if self.ICLEENHIPOH != 0 {
             os.write_uint32(6, self.ICLEENHIPOH)?;
         }
-        os.write_repeated_packed_uint32(7, &self.boss_buff_info)?;
+        os.write_repeated_packed_uint32(7, &self.boss_info)?;
         for v in &self.ODBONKCMDMP {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
@@ -234,7 +234,7 @@ impl ::protobuf::Message for CHDONIGOKNM {
         self.HECJOOOBAHC = 0;
         self.FKEAAIPKPAA = 0;
         self.ICLEENHIPOH = 0;
-        self.boss_buff_info.clear();
+        self.boss_info.clear();
         self.ODBONKCMDMP.clear();
         self.special_fields.clear();
     }
@@ -247,7 +247,7 @@ impl ::protobuf::Message for CHDONIGOKNM {
             HECJOOOBAHC: 0,
             FKEAAIPKPAA: 0,
             ICLEENHIPOH: 0,
-            boss_buff_info: ::std::vec::Vec::new(),
+            boss_info: ::std::vec::Vec::new(),
             ODBONKCMDMP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -273,15 +273,15 @@ impl ::protobuf::reflect::ProtobufValue for CHDONIGOKNM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CHDONIGOKNM.proto\x1a\x11PLPNLIBMNIO.proto\"\xaf\x02\n\x0bCHDONIGO\
+    \n\x11CHDONIGOKNM.proto\x1a\x11PLPNLIBMNIO.proto\"\xa6\x02\n\x0bCHDONIGO\
     KNM\x12\x20\n\x0bHEOCPAKCELM\x18\x01\x20\x01(\rR\x0bHEOCPAKCELM\x12\x20\
     \n\x0bBGHKBMFHMOJ\x18\x02\x20\x01(\rR\x0bBGHKBMFHMOJ\x12\x20\n\x0bLOOLLA\
     GMNLH\x18\x03\x20\x01(\rR\x0bLOOLLAGMNLH\x12\x20\n\x0bHECJOOOBAHC\x18\
     \x04\x20\x01(\rR\x0bHECJOOOBAHC\x12\x20\n\x0bFKEAAIPKPAA\x18\x05\x20\x01\
     (\rR\x0bFKEAAIPKPAA\x12\x20\n\x0bICLEENHIPOH\x18\x06\x20\x01(\rR\x0bICLE\
-    ENHIPOH\x12$\n\x0eboss_buff_info\x18\x07\x20\x03(\rR\x0cbossBuffInfo\x12\
-    .\n\x0bODBONKCMDMP\x18\x08\x20\x03(\x0b2\x0c.PLPNLIBMNIOR\x0bODBONKCMDMP\
-    b\x06proto3\
+    ENHIPOH\x12\x1b\n\tboss_info\x18\x07\x20\x03(\rR\x08bossInfo\x12.\n\x0bO\
+    DBONKCMDMP\x18\x08\x20\x03(\x0b2\x0c.PLPNLIBMNIOR\x0bODBONKCMDMPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

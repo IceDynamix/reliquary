@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMDKBOHCFIA {
     // message fields
-    // @@protoc_insertion_point(field:AMDKBOHCFIA.stage_score)
-    pub stage_score: u32,
     // @@protoc_insertion_point(field:AMDKBOHCFIA.CENIFNKNFNP)
     pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:AMDKBOHCFIA.max_score)
+    pub max_score: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AMDKBOHCFIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AMDKBOHCFIA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_score",
-            |m: &AMDKBOHCFIA| { &m.stage_score },
-            |m: &mut AMDKBOHCFIA| { &mut m.stage_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CENIFNKNFNP",
             |m: &AMDKBOHCFIA| { &m.CENIFNKNFNP },
             |m: &mut AMDKBOHCFIA| { &mut m.CENIFNKNFNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_score",
+            |m: &AMDKBOHCFIA| { &m.max_score },
+            |m: &mut AMDKBOHCFIA| { &mut m.max_score },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMDKBOHCFIA>(
             "AMDKBOHCFIA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.stage_score = is.read_uint32()?;
-                },
-                32 => {
+                8 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
+                },
+                120 => {
+                    self.max_score = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.stage_score);
-        }
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(1, self.CENIFNKNFNP);
+        }
+        if self.max_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.max_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_score != 0 {
-            os.write_uint32(2, self.stage_score)?;
-        }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(4, self.CENIFNKNFNP)?;
+            os.write_uint32(1, self.CENIFNKNFNP)?;
+        }
+        if self.max_score != 0 {
+            os.write_uint32(15, self.max_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     }
 
     fn clear(&mut self) {
-        self.stage_score = 0;
         self.CENIFNKNFNP = 0;
+        self.max_score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMDKBOHCFIA {
         static instance: AMDKBOHCFIA = AMDKBOHCFIA {
-            stage_score: 0,
             CENIFNKNFNP: 0,
+            max_score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AMDKBOHCFIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMDKBOHCFIA.proto\"P\n\x0bAMDKBOHCFIA\x12\x1f\n\x0bstage_score\x18\
-    \x02\x20\x01(\rR\nstageScore\x12\x20\n\x0bCENIFNKNFNP\x18\x04\x20\x01(\r\
-    R\x0bCENIFNKNFNPb\x06proto3\
+    \n\x11AMDKBOHCFIA.proto\"L\n\x0bAMDKBOHCFIA\x12\x20\n\x0bCENIFNKNFNP\x18\
+    \x01\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1b\n\tmax_score\x18\x0f\x20\x01(\rR\
+    \x08maxScoreb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

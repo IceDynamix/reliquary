@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IACFPGOLFLM {
     // message fields
-    // @@protoc_insertion_point(field:IACFPGOLFLM.skill_info_list)
-    pub skill_info_list: ::std::vec::Vec<super::HFOCNHOJLAH::HFOCNHOJLAH>,
+    // @@protoc_insertion_point(field:IACFPGOLFLM.skill_list)
+    pub skill_list: ::std::vec::Vec<super::HFOCNHOJLAH::HFOCNHOJLAH>,
     // special fields
     // @@protoc_insertion_point(special_field:IACFPGOLFLM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl IACFPGOLFLM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skill_info_list",
-            |m: &IACFPGOLFLM| { &m.skill_info_list },
-            |m: &mut IACFPGOLFLM| { &mut m.skill_info_list },
+            "skill_list",
+            |m: &IACFPGOLFLM| { &m.skill_list },
+            |m: &mut IACFPGOLFLM| { &mut m.skill_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IACFPGOLFLM>(
             "IACFPGOLFLM",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for IACFPGOLFLM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.skill_info_list.push(is.read_message()?);
+                74 => {
+                    self.skill_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for IACFPGOLFLM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.skill_info_list {
+        for value in &self.skill_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for IACFPGOLFLM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.skill_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.skill_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for IACFPGOLFLM {
     }
 
     fn clear(&mut self) {
-        self.skill_info_list.clear();
+        self.skill_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IACFPGOLFLM {
         static instance: IACFPGOLFLM = IACFPGOLFLM {
-            skill_info_list: ::std::vec::Vec::new(),
+            skill_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for IACFPGOLFLM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IACFPGOLFLM.proto\x1a\x11HFOCNHOJLAH.proto\"C\n\x0bIACFPGOLFLM\x12\
-    4\n\x0fskill_info_list\x18\n\x20\x03(\x0b2\x0c.HFOCNHOJLAHR\rskillInfoLi\
-    stb\x06proto3\
+    \n\x11IACFPGOLFLM.proto\x1a\x11HFOCNHOJLAH.proto\":\n\x0bIACFPGOLFLM\x12\
+    +\n\nskill_list\x18\t\x20\x03(\x0b2\x0c.HFOCNHOJLAHR\tskillListb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

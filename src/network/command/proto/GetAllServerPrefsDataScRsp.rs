@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAllServerPrefsDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAllServerPrefsDataScRsp.LFBEOHKKDOI)
-    pub LFBEOHKKDOI: ::std::vec::Vec<super::ServerPrefs::ServerPrefs>,
+    // @@protoc_insertion_point(field:GetAllServerPrefsDataScRsp.server_prefs_list)
+    pub server_prefs_list: ::std::vec::Vec<super::ServerPrefs::ServerPrefs>,
     // @@protoc_insertion_point(field:GetAllServerPrefsDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetAllServerPrefsDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LFBEOHKKDOI",
-            |m: &GetAllServerPrefsDataScRsp| { &m.LFBEOHKKDOI },
-            |m: &mut GetAllServerPrefsDataScRsp| { &mut m.LFBEOHKKDOI },
+            "server_prefs_list",
+            |m: &GetAllServerPrefsDataScRsp| { &m.server_prefs_list },
+            |m: &mut GetAllServerPrefsDataScRsp| { &mut m.server_prefs_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.LFBEOHKKDOI.push(is.read_message()?);
+                18 => {
+                    self.server_prefs_list.push(is.read_message()?);
                 },
-                96 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LFBEOHKKDOI {
+        for value in &self.server_prefs_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LFBEOHKKDOI {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.server_prefs_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.LFBEOHKKDOI.clear();
+        self.server_prefs_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAllServerPrefsDataScRsp {
         static instance: GetAllServerPrefsDataScRsp = GetAllServerPrefsDataScRsp {
-            LFBEOHKKDOI: ::std::vec::Vec::new(),
+            server_prefs_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAllServerPrefsDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetAllServerPrefsDataScRsp.proto\x1a\x11ServerPrefs.proto\"f\n\x1a\
-    GetAllServerPrefsDataScRsp\x12.\n\x0bLFBEOHKKDOI\x18\x01\x20\x03(\x0b2\
-    \x0c.ServerPrefsR\x0bLFBEOHKKDOI\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n\x20GetAllServerPrefsDataScRsp.proto\x1a\x11ServerPrefs.proto\"p\n\x1a\
+    GetAllServerPrefsDataScRsp\x128\n\x11server_prefs_list\x18\x02\x20\x03(\
+    \x0b2\x0c.ServerPrefsR\x0fserverPrefsList\x12\x18\n\x07retcode\x18\x0b\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

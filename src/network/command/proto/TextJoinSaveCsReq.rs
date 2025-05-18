@@ -86,13 +86,13 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                58 => {
                     self.HBJKEEBDJML = is.read_string()?;
                 },
-                120 => {
+                48 => {
                     self.ADINNBPINAK = is.read_uint32()?;
                 },
-                112 => {
+                40 => {
                     self.FANOKEMBMPB = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.HBJKEEBDJML.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.HBJKEEBDJML);
+            my_size += ::protobuf::rt::string_size(7, &self.HBJKEEBDJML);
         }
         if self.ADINNBPINAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ADINNBPINAK);
+            my_size += ::protobuf::rt::uint32_size(6, self.ADINNBPINAK);
         }
         if self.FANOKEMBMPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FANOKEMBMPB);
+            my_size += ::protobuf::rt::uint32_size(5, self.FANOKEMBMPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for TextJoinSaveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.HBJKEEBDJML.is_empty() {
-            os.write_string(8, &self.HBJKEEBDJML)?;
+            os.write_string(7, &self.HBJKEEBDJML)?;
         }
         if self.ADINNBPINAK != 0 {
-            os.write_uint32(15, self.ADINNBPINAK)?;
+            os.write_uint32(6, self.ADINNBPINAK)?;
         }
         if self.FANOKEMBMPB != 0 {
-            os.write_uint32(14, self.FANOKEMBMPB)?;
+            os.write_uint32(5, self.FANOKEMBMPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinSaveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TextJoinSaveCsReq.proto\"y\n\x11TextJoinSaveCsReq\x12\x20\n\x0bHBJ\
-    KEEBDJML\x18\x08\x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\
-    \x0f\x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bFANOKEMBMPB\x18\x0e\x20\x01\
+    KEEBDJML\x18\x07\x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\
+    \x06\x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bFANOKEMBMPB\x18\x05\x20\x01\
     (\rR\x0bFANOKEMBMPBb\x06proto3\
 ";
 

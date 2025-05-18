@@ -79,7 +79,7 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.world_level = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(12, self.world_level);
         }
         if self.JDANOKNHNHL != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.JDANOKNHNHL);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(4, self.world_level)?;
+            os.write_uint32(12, self.world_level)?;
         }
         if self.JDANOKNHNHL != 0 {
             os.write_uint32(6, self.JDANOKNHNHL)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FarmElementSweepCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFarmElementSweepCsReq.proto\"Z\n\x15FarmElementSweepCsReq\x12\x1f\
-    \n\x0bworld_level\x18\x04\x20\x01(\rR\nworldLevel\x12\x20\n\x0bJDANOKNHN\
+    \n\x0bworld_level\x18\x0c\x20\x01(\rR\nworldLevel\x12\x20\n\x0bJDANOKNHN\
     HL\x18\x06\x20\x01(\rR\x0bJDANOKNHNHLb\x06proto3\
 ";
 

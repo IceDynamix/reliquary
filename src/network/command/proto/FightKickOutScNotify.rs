@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightKickOutScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightKickOutScNotify.MGLLDOIFGND)
-    pub MGLLDOIFGND: ::protobuf::EnumOrUnknown<super::DKIIFBICIEG::DKIIFBICIEG>,
+    // @@protoc_insertion_point(field:FightKickOutScNotify.kick_type)
+    pub kick_type: ::protobuf::EnumOrUnknown<super::FightKickoutType::FightKickoutType>,
     // special fields
     // @@protoc_insertion_point(special_field:FightKickOutScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FightKickOutScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGLLDOIFGND",
-            |m: &FightKickOutScNotify| { &m.MGLLDOIFGND },
-            |m: &mut FightKickOutScNotify| { &mut m.MGLLDOIFGND },
+            "kick_type",
+            |m: &FightKickOutScNotify| { &m.kick_type },
+            |m: &mut FightKickOutScNotify| { &mut m.kick_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightKickOutScNotify>(
             "FightKickOutScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FightKickOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.MGLLDOIFGND = is.read_enum_or_unknown()?;
+                120 => {
+                    self.kick_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FightKickOutScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MGLLDOIFGND != ::protobuf::EnumOrUnknown::new(super::DKIIFBICIEG::DKIIFBICIEG::FIGHT_KICKOUT_UNKNOWN) {
-            my_size += ::protobuf::rt::int32_size(10, self.MGLLDOIFGND.value());
+        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::FightKickoutType::FightKickoutType::FIGHT_KICKOUT_UNKNOWN) {
+            my_size += ::protobuf::rt::int32_size(15, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FightKickOutScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MGLLDOIFGND != ::protobuf::EnumOrUnknown::new(super::DKIIFBICIEG::DKIIFBICIEG::FIGHT_KICKOUT_UNKNOWN) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MGLLDOIFGND))?;
+        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::FightKickoutType::FightKickoutType::FIGHT_KICKOUT_UNKNOWN) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FightKickOutScNotify {
     }
 
     fn clear(&mut self) {
-        self.MGLLDOIFGND = ::protobuf::EnumOrUnknown::new(super::DKIIFBICIEG::DKIIFBICIEG::FIGHT_KICKOUT_UNKNOWN);
+        self.kick_type = ::protobuf::EnumOrUnknown::new(super::FightKickoutType::FightKickoutType::FIGHT_KICKOUT_UNKNOWN);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightKickOutScNotify {
         static instance: FightKickOutScNotify = FightKickOutScNotify {
-            MGLLDOIFGND: ::protobuf::EnumOrUnknown::from_i32(0),
+            kick_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for FightKickOutScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFightKickOutScNotify.proto\x1a\x11DKIIFBICIEG.proto\"F\n\x14FightK\
-    ickOutScNotify\x12.\n\x0bMGLLDOIFGND\x18\n\x20\x01(\x0e2\x0c.DKIIFBICIEG\
-    R\x0bMGLLDOIFGNDb\x06proto3\
+    \n\x1aFightKickOutScNotify.proto\x1a\x16FightKickoutType.proto\"F\n\x14F\
+    ightKickOutScNotify\x12.\n\tkick_type\x18\x0f\x20\x01(\x0e2\x11.FightKic\
+    koutTypeR\x08kickTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DKIIFBICIEG::file_descriptor().clone());
+            deps.push(super::FightKickoutType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightKickOutScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

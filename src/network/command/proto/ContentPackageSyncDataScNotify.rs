@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ContentPackageSyncDataScNotify {
     // message fields
     // @@protoc_insertion_point(field:ContentPackageSyncDataScNotify.data)
-    pub data: ::protobuf::MessageField<super::AGIEEKMCDMC::AGIEEKMCDMC>,
+    pub data: ::protobuf::MessageField<super::ContentPackageData::ContentPackageData>,
     // special fields
     // @@protoc_insertion_point(special_field:ContentPackageSyncDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl ContentPackageSyncDataScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AGIEEKMCDMC::AGIEEKMCDMC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ContentPackageData::ContentPackageData>(
             "data",
             |m: &ContentPackageSyncDataScNotify| { &m.data },
             |m: &mut ContentPackageSyncDataScNotify| { &mut m.data },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for ContentPackageSyncDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ContentPackageSyncDataScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageSyncDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$ContentPackageSyncDataScNotify.proto\x1a\x11AGIEEKMCDMC.proto\"B\n\
-    \x1eContentPackageSyncDataScNotify\x12\x20\n\x04data\x18\x0e\x20\x01(\
-    \x0b2\x0c.AGIEEKMCDMCR\x04datab\x06proto3\
+    \n$ContentPackageSyncDataScNotify.proto\x1a\x18ContentPackageData.proto\
+    \"I\n\x1eContentPackageSyncDataScNotify\x12'\n\x04data\x18\x02\x20\x01(\
+    \x0b2\x13.ContentPackageDataR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AGIEEKMCDMC::file_descriptor().clone());
+            deps.push(super::ContentPackageData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ContentPackageSyncDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

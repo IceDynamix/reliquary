@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TeleportToMissionResetPointScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TeleportToMissionResetPointScRsp.client_pos_version)
-    pub client_pos_version: u32,
     // @@protoc_insertion_point(field:TeleportToMissionResetPointScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TeleportToMissionResetPointScRsp.client_pos_version)
+    pub client_pos_version: u32,
     // @@protoc_insertion_point(field:TeleportToMissionResetPointScRsp.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
@@ -54,14 +54,14 @@ impl TeleportToMissionResetPointScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &TeleportToMissionResetPointScRsp| { &m.client_pos_version },
-            |m: &mut TeleportToMissionResetPointScRsp| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TeleportToMissionResetPointScRsp| { &m.retcode },
             |m: &mut TeleportToMissionResetPointScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_pos_version",
+            |m: &TeleportToMissionResetPointScRsp| { &m.client_pos_version },
+            |m: &mut TeleportToMissionResetPointScRsp| { &mut m.client_pos_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.client_pos_version = is.read_uint32()?;
-                },
-                72 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                120 => {
+                    self.client_pos_version = is.read_uint32()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.client_pos_version);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.client_pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.client_pos_version);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.client_pos_version != 0 {
-            os.write_uint32(2, self.client_pos_version)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.client_pos_version != 0 {
+            os.write_uint32(15, self.client_pos_version)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
     }
 
     fn clear(&mut self) {
-        self.client_pos_version = 0;
         self.retcode = 0;
+        self.client_pos_version = 0;
         self.motion.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TeleportToMissionResetPointScRsp {
         static instance: TeleportToMissionResetPointScRsp = TeleportToMissionResetPointScRsp {
-            client_pos_version: 0,
             retcode: 0,
+            client_pos_version: 0,
             motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TeleportToMissionResetPointScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TeleportToMissionResetPointScRsp.proto\x1a\x10MotionInfo.proto\"\x8f\
-    \x01\n\x20TeleportToMissionResetPointScRsp\x12,\n\x12client_pos_version\
-    \x18\x02\x20\x01(\rR\x10clientPosVersion\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcode\x12#\n\x06motion\x18\x05\x20\x01(\x0b2\x0b.MotionInf\
-    oR\x06motionb\x06proto3\
+    \x01\n\x20TeleportToMissionResetPointScRsp\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcode\x12,\n\x12client_pos_version\x18\x0f\x20\x01(\rR\
+    \x10clientPosVersion\x12#\n\x06motion\x18\t\x20\x01(\x0b2\x0b.MotionInfo\
+    R\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

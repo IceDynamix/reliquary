@@ -86,13 +86,13 @@ impl ::protobuf::Message for OCJGNPIFOBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                120 => {
                     self.GFFBDANDHMK = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.level = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.HBAPCCEGNME = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for OCJGNPIFOBM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GFFBDANDHMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GFFBDANDHMK);
+            my_size += ::protobuf::rt::uint32_size(15, self.GFFBDANDHMK);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HBAPCCEGNME);
+            my_size += ::protobuf::rt::uint32_size(6, self.HBAPCCEGNME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for OCJGNPIFOBM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GFFBDANDHMK != 0 {
-            os.write_uint32(3, self.GFFBDANDHMK)?;
+            os.write_uint32(15, self.GFFBDANDHMK)?;
         }
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(12, self.level)?;
         }
         if self.HBAPCCEGNME != 0 {
-            os.write_uint32(13, self.HBAPCCEGNME)?;
+            os.write_uint32(6, self.HBAPCCEGNME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for OCJGNPIFOBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCJGNPIFOBM.proto\"g\n\x0bOCJGNPIFOBM\x12\x20\n\x0bGFFBDANDHMK\x18\
-    \x03\x20\x01(\rR\x0bGFFBDANDHMK\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05\
-    level\x12\x20\n\x0bHBAPCCEGNME\x18\r\x20\x01(\rR\x0bHBAPCCEGNMEb\x06prot\
-    o3\
+    \x0f\x20\x01(\rR\x0bGFFBDANDHMK\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\
+    \x05level\x12\x20\n\x0bHBAPCCEGNME\x18\x06\x20\x01(\rR\x0bHBAPCCEGNMEb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

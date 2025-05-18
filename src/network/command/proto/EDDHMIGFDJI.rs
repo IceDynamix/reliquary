@@ -30,8 +30,8 @@ pub struct EDDHMIGFDJI {
     // message fields
     // @@protoc_insertion_point(field:EDDHMIGFDJI.MBGKCKLDHIB)
     pub MBGKCKLDHIB: u32,
-    // @@protoc_insertion_point(field:EDDHMIGFDJI.PIPMGACMJNN)
-    pub PIPMGACMJNN: bool,
+    // @@protoc_insertion_point(field:EDDHMIGFDJI.confirm)
+    pub confirm: bool,
     // @@protoc_insertion_point(field:EDDHMIGFDJI.INBJPPAPCAG)
     pub INBJPPAPCAG: u32,
     // special fields
@@ -59,9 +59,9 @@ impl EDDHMIGFDJI {
             |m: &mut EDDHMIGFDJI| { &mut m.MBGKCKLDHIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIPMGACMJNN",
-            |m: &EDDHMIGFDJI| { &m.PIPMGACMJNN },
-            |m: &mut EDDHMIGFDJI| { &mut m.PIPMGACMJNN },
+            "confirm",
+            |m: &EDDHMIGFDJI| { &m.confirm },
+            |m: &mut EDDHMIGFDJI| { &mut m.confirm },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INBJPPAPCAG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.MBGKCKLDHIB = is.read_uint32()?;
                 },
                 40 => {
-                    self.PIPMGACMJNN = is.read_bool()?;
+                    self.confirm = is.read_bool()?;
                 },
-                112 => {
+                32 => {
                     self.INBJPPAPCAG = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MBGKCKLDHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MBGKCKLDHIB);
+            my_size += ::protobuf::rt::uint32_size(9, self.MBGKCKLDHIB);
         }
-        if self.PIPMGACMJNN != false {
+        if self.confirm != false {
             my_size += 1 + 1;
         }
         if self.INBJPPAPCAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.INBJPPAPCAG);
+            my_size += ::protobuf::rt::uint32_size(4, self.INBJPPAPCAG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EDDHMIGFDJI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MBGKCKLDHIB != 0 {
-            os.write_uint32(12, self.MBGKCKLDHIB)?;
+            os.write_uint32(9, self.MBGKCKLDHIB)?;
         }
-        if self.PIPMGACMJNN != false {
-            os.write_bool(5, self.PIPMGACMJNN)?;
+        if self.confirm != false {
+            os.write_bool(5, self.confirm)?;
         }
         if self.INBJPPAPCAG != 0 {
-            os.write_uint32(14, self.INBJPPAPCAG)?;
+            os.write_uint32(4, self.INBJPPAPCAG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for EDDHMIGFDJI {
 
     fn clear(&mut self) {
         self.MBGKCKLDHIB = 0;
-        self.PIPMGACMJNN = false;
+        self.confirm = false;
         self.INBJPPAPCAG = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn default_instance() -> &'static EDDHMIGFDJI {
         static instance: EDDHMIGFDJI = EDDHMIGFDJI {
             MBGKCKLDHIB: 0,
-            PIPMGACMJNN: false,
+            confirm: false,
             INBJPPAPCAG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EDDHMIGFDJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDDHMIGFDJI.proto\"s\n\x0bEDDHMIGFDJI\x12\x20\n\x0bMBGKCKLDHIB\x18\
-    \x0c\x20\x01(\rR\x0bMBGKCKLDHIB\x12\x20\n\x0bPIPMGACMJNN\x18\x05\x20\x01\
-    (\x08R\x0bPIPMGACMJNN\x12\x20\n\x0bINBJPPAPCAG\x18\x0e\x20\x01(\rR\x0bIN\
-    BJPPAPCAGb\x06proto3\
+    \n\x11EDDHMIGFDJI.proto\"k\n\x0bEDDHMIGFDJI\x12\x20\n\x0bMBGKCKLDHIB\x18\
+    \t\x20\x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\x05\x20\x01(\x08R\
+    \x07confirm\x12\x20\n\x0bINBJPPAPCAG\x18\x04\x20\x01(\rR\x0bINBJPPAPCAGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

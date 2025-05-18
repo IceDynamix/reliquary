@@ -30,8 +30,8 @@ pub struct MonopolyMoveScRsp {
     // message fields
     // @@protoc_insertion_point(field:MonopolyMoveScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyMoveScRsp.map_info)
-    pub map_info: ::protobuf::MessageField<super::JAJGKKDPALC::JAJGKKDPALC>,
+    // @@protoc_insertion_point(field:MonopolyMoveScRsp.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::JAJGKKDPALC::JAJGKKDPALC>,
     // @@protoc_insertion_point(field:MonopolyMoveScRsp.HECJNJNIAKK)
     pub HECJNJNIAKK: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // special fields
@@ -59,9 +59,9 @@ impl MonopolyMoveScRsp {
             |m: &mut MonopolyMoveScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JAJGKKDPALC::JAJGKKDPALC>(
-            "map_info",
-            |m: &MonopolyMoveScRsp| { &m.map_info },
-            |m: &mut MonopolyMoveScRsp| { &mut m.map_info },
+            "rogue_map",
+            |m: &MonopolyMoveScRsp| { &m.rogue_map },
+            |m: &mut MonopolyMoveScRsp| { &mut m.rogue_map },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HECJNJNIAKK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_info)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
-                74 => {
+                90 => {
                     self.HECJNJNIAKK.push(is.read_message()?);
                 },
                 tag => {
@@ -108,9 +108,9 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        if let Some(v) = self.map_info.as_ref() {
+        if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +125,13 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
-        if let Some(v) = self.map_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         for v in &self.HECJNJNIAKK {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.map_info.clear();
+        self.rogue_map.clear();
         self.HECJNJNIAKK.clear();
         self.special_fields.clear();
     }
@@ -159,7 +159,7 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     fn default_instance() -> &'static MonopolyMoveScRsp {
         static instance: MonopolyMoveScRsp = MonopolyMoveScRsp {
             retcode: 0,
-            map_info: ::protobuf::MessageField::none(),
+            rogue_map: ::protobuf::MessageField::none(),
             HECJNJNIAKK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonopolyMoveScRsp.proto\x1a\x11IAACCAFGEPI.proto\x1a\x11JAJGKKDPAL\
-    C.proto\"\x86\x01\n\x11MonopolyMoveScRsp\x12\x18\n\x07retcode\x18\x06\
-    \x20\x01(\rR\x07retcode\x12'\n\x08map_info\x18\x0b\x20\x01(\x0b2\x0c.JAJ\
-    GKKDPALCR\x07mapInfo\x12.\n\x0bHECJNJNIAKK\x18\t\x20\x03(\x0b2\x0c.IAACC\
-    AFGEPIR\x0bHECJNJNIAKKb\x06proto3\
+    C.proto\"\x88\x01\n\x11MonopolyMoveScRsp\x12\x18\n\x07retcode\x18\n\x20\
+    \x01(\rR\x07retcode\x12)\n\trogue_map\x18\r\x20\x01(\x0b2\x0c.JAJGKKDPAL\
+    CR\x08rogueMap\x12.\n\x0bHECJNJNIAKK\x18\x0b\x20\x03(\x0b2\x0c.IAACCAFGE\
+    PIR\x0bHECJNJNIAKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

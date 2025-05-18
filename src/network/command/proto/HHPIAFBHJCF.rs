@@ -30,8 +30,8 @@ pub struct HHPIAFBHJCF {
     // message fields
     // @@protoc_insertion_point(field:HHPIAFBHJCF.KDMLLLGHJON)
     pub KDMLLLGHJON: u32,
-    // @@protoc_insertion_point(field:HHPIAFBHJCF.PIPMGACMJNN)
-    pub PIPMGACMJNN: bool,
+    // @@protoc_insertion_point(field:HHPIAFBHJCF.confirm)
+    pub confirm: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HHPIAFBHJCF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl HHPIAFBHJCF {
             |m: &mut HHPIAFBHJCF| { &mut m.KDMLLLGHJON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIPMGACMJNN",
-            |m: &HHPIAFBHJCF| { &m.PIPMGACMJNN },
-            |m: &mut HHPIAFBHJCF| { &mut m.PIPMGACMJNN },
+            "confirm",
+            |m: &HHPIAFBHJCF| { &m.confirm },
+            |m: &mut HHPIAFBHJCF| { &mut m.confirm },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HHPIAFBHJCF>(
             "HHPIAFBHJCF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
-                120 => {
-                    self.PIPMGACMJNN = is.read_bool()?;
+                96 => {
+                    self.confirm = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(8, self.KDMLLLGHJON);
         }
-        if self.PIPMGACMJNN != false {
+        if self.confirm != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HHPIAFBHJCF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(1, self.KDMLLLGHJON)?;
+            os.write_uint32(8, self.KDMLLLGHJON)?;
         }
-        if self.PIPMGACMJNN != false {
-            os.write_bool(15, self.PIPMGACMJNN)?;
+        if self.confirm != false {
+            os.write_bool(12, self.confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for HHPIAFBHJCF {
 
     fn clear(&mut self) {
         self.KDMLLLGHJON = 0;
-        self.PIPMGACMJNN = false;
+        self.confirm = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HHPIAFBHJCF {
         static instance: HHPIAFBHJCF = HHPIAFBHJCF {
             KDMLLLGHJON: 0,
-            PIPMGACMJNN: false,
+            confirm: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HHPIAFBHJCF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HHPIAFBHJCF.proto\"Q\n\x0bHHPIAFBHJCF\x12\x20\n\x0bKDMLLLGHJON\x18\
-    \x01\x20\x01(\rR\x0bKDMLLLGHJON\x12\x20\n\x0bPIPMGACMJNN\x18\x0f\x20\x01\
-    (\x08R\x0bPIPMGACMJNNb\x06proto3\
+    \n\x11HHPIAFBHJCF.proto\"I\n\x0bHHPIAFBHJCF\x12\x20\n\x0bKDMLLLGHJON\x18\
+    \x08\x20\x01(\rR\x0bKDMLLLGHJON\x12\x18\n\x07confirm\x18\x0c\x20\x01(\
+    \x08R\x07confirmb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

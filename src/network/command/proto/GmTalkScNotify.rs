@@ -72,7 +72,7 @@ impl ::protobuf::Message for GmTalkScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     self.msg = is.read_string()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GmTalkScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.msg);
+            my_size += ::protobuf::rt::string_size(4, &self.msg);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GmTalkScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.msg.is_empty() {
-            os.write_string(11, &self.msg)?;
+            os.write_string(4, &self.msg)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14GmTalkScNotify.proto\"\"\n\x0eGmTalkScNotify\x12\x10\n\x03msg\x18\
-    \x0b\x20\x01(\tR\x03msgb\x06proto3\
+    \x04\x20\x01(\tR\x03msgb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

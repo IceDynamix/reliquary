@@ -72,7 +72,7 @@ impl ::protobuf::Message for UpdateFeatureSwitchScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     self.switch_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UpdateFeatureSwitchScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.switch_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateFeatureSwitchScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateFeatureSwitchScNotify.proto\x1a\x17FeatureSwitchInfo.proto\"[\n\
-    \x1bUpdateFeatureSwitchScNotify\x12<\n\x10switch_info_list\x18\x06\x20\
+    \x1bUpdateFeatureSwitchScNotify\x12<\n\x10switch_info_list\x18\x07\x20\
     \x03(\x0b2\x12.FeatureSwitchInfoR\x0eswitchInfoListb\x06proto3\
 ";
 

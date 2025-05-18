@@ -28,16 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.story_info)
-    pub story_info: ::protobuf::MessageField<super::EHANAPNJFJD::EHANAPNJFJD>,
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.OMCBCGCHLGN)
-    pub OMCBCGCHLGN: ::protobuf::MessageField<super::BIPDDEJAADC::BIPDDEJAADC>,
-    // @@protoc_insertion_point(field:ChessRogueStartScRsp.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::FFLAPKOLHCM::FFLAPKOLHCM>,
+    // @@protoc_insertion_point(field:ChessRogueStartScRsp.HNDLHICDNPC)
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::ChessRogueGameInfo::ChessRogueGameInfo>,
+    // @@protoc_insertion_point(field:ChessRogueStartScRsp.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
     // @@protoc_insertion_point(field:ChessRogueStartScRsp.DBDGAHBLGBB)
     pub DBDGAHBLGBB: ::protobuf::MessageField<super::OJLEEFJELAP::OJLEEFJELAP>,
     // @@protoc_insertion_point(field:ChessRogueStartScRsp.retcode)
@@ -59,32 +53,17 @@ impl ChessRogueStartScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(7);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &ChessRogueStartScRsp| { &m.lineup },
-            |m: &mut ChessRogueStartScRsp| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGameInfo::ChessRogueGameInfo>(
+            "HNDLHICDNPC",
+            |m: &ChessRogueStartScRsp| { &m.HNDLHICDNPC },
+            |m: &mut ChessRogueStartScRsp| { &mut m.HNDLHICDNPC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHANAPNJFJD::EHANAPNJFJD>(
-            "story_info",
-            |m: &ChessRogueStartScRsp| { &m.story_info },
-            |m: &mut ChessRogueStartScRsp| { &mut m.story_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &ChessRogueStartScRsp| { &m.scene },
-            |m: &mut ChessRogueStartScRsp| { &mut m.scene },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIPDDEJAADC::BIPDDEJAADC>(
-            "OMCBCGCHLGN",
-            |m: &ChessRogueStartScRsp| { &m.OMCBCGCHLGN },
-            |m: &mut ChessRogueStartScRsp| { &mut m.OMCBCGCHLGN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFLAPKOLHCM::FFLAPKOLHCM>(
-            "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
-            |m: &ChessRogueStartScRsp| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
-            |m: &mut ChessRogueStartScRsp| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueInfo::ChessRogueInfo>(
+            "stage_info",
+            |m: &ChessRogueStartScRsp| { &m.stage_info },
+            |m: &mut ChessRogueStartScRsp| { &mut m.stage_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJLEEFJELAP::OJLEEFJELAP>(
             "DBDGAHBLGBB",
@@ -114,25 +93,16 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
-                },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DBDGAHBLGBB)?;
                 },
-                40 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -147,23 +117,11 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.story_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.scene.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -172,7 +130,7 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -180,26 +138,17 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.DBDGAHBLGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -218,11 +167,8 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
-        self.story_info.clear();
-        self.scene.clear();
-        self.OMCBCGCHLGN.clear();
-        self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
+        self.HNDLHICDNPC.clear();
+        self.stage_info.clear();
         self.DBDGAHBLGBB.clear();
         self.retcode = 0;
         self.special_fields.clear();
@@ -230,11 +176,8 @@ impl ::protobuf::Message for ChessRogueStartScRsp {
 
     fn default_instance() -> &'static ChessRogueStartScRsp {
         static instance: ChessRogueStartScRsp = ChessRogueStartScRsp {
-            lineup: ::protobuf::MessageField::none(),
-            story_info: ::protobuf::MessageField::none(),
-            scene: ::protobuf::MessageField::none(),
-            OMCBCGCHLGN: ::protobuf::MessageField::none(),
-            ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
+            HNDLHICDNPC: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
             DBDGAHBLGBB: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -261,17 +204,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aChessRogueStartScRsp.proto\x1a\x11BIPDDEJAADC.proto\x1a\x11EHANAPN\
-    JFJD.proto\x1a\x11FFLAPKOLHCM.proto\x1a\x10LineupInfo.proto\x1a\x11OJLEE\
-    FJELAP.proto\x1a\x0fSceneInfo.proto\"\xd4\x02\n\x14ChessRogueStartScRsp\
-    \x12#\n\x06lineup\x18\x0c\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12+\n\
-    \nstory_info\x18\x01\x20\x01(\x0b2\x0c.EHANAPNJFJDR\tstoryInfo\x12\x20\n\
-    \x05scene\x18\n\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12.\n\x0bOMCBCGCHLG\
-    N\x18\x0f\x20\x01(\x0b2\x0c.BIPDDEJAADCR\x0bOMCBCGCHLGN\x12N\n\x1dROGUE_\
-    DEBUG_MESSAGE_TYPE_INFO\x18\x0b\x20\x01(\x0b2\x0c.FFLAPKOLHCMR\x19ROGUED\
-    EBUGMESSAGETYPEINFO\x12.\n\x0bDBDGAHBLGBB\x18\x02\x20\x01(\x0b2\x0c.OJLE\
-    EFJELAPR\x0bDBDGAHBLGBB\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \n\x1aChessRogueStartScRsp.proto\x1a\x18ChessRogueGameInfo.proto\x1a\x14\
+    ChessRogueInfo.proto\x1a\x11OJLEEFJELAP.proto\"\xc7\x01\n\x14ChessRogueS\
+    tartScRsp\x125\n\x0bHNDLHICDNPC\x18\x07\x20\x01(\x0b2\x13.ChessRogueGame\
+    InfoR\x0bHNDLHICDNPC\x12.\n\nstage_info\x18\x08\x20\x01(\x0b2\x0f.ChessR\
+    ogueInfoR\tstageInfo\x12.\n\x0bDBDGAHBLGBB\x18\t\x20\x01(\x0b2\x0c.OJLEE\
+    FJELAPR\x0bDBDGAHBLGBB\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -288,13 +227,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::BIPDDEJAADC::file_descriptor().clone());
-            deps.push(super::EHANAPNJFJD::file_descriptor().clone());
-            deps.push(super::FFLAPKOLHCM::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::ChessRogueGameInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueInfo::file_descriptor().clone());
             deps.push(super::OJLEEFJELAP::file_descriptor().clone());
-            deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueStartScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

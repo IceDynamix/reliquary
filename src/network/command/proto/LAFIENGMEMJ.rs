@@ -56,8 +56,8 @@ pub struct LAFIENGMEMJ {
     pub battle_id: u32,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.JBCDLFJJJDG)
     pub JBCDLFJJJDG: u32,
-    // @@protoc_insertion_point(field:LAFIENGMEMJ.attack_damage_type)
-    pub attack_damage_type: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:LAFIENGMEMJ.attack_type_damage)
+    pub attack_type_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.skill_times)
     pub skill_times: ::std::vec::Vec<super::SkillUseProperty::SkillUseProperty>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.stage_type)
@@ -67,7 +67,7 @@ pub struct LAFIENGMEMJ {
     // @@protoc_insertion_point(field:LAFIENGMEMJ.delay_cumulate)
     pub delay_cumulate: f64,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.FIEDKNKIEBH)
-    pub FIEDKNKIEBH: ::protobuf::EnumOrUnknown<super::GHBMBGDPIIE::GHBMBGDPIIE>,
+    pub FIEDKNKIEBH: ::protobuf::EnumOrUnknown<super::DeathSource::DeathSource>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.wave)
     pub wave: u32,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.JHAOGJJDBHL)
@@ -77,13 +77,13 @@ pub struct LAFIENGMEMJ {
     // @@protoc_insertion_point(field:LAFIENGMEMJ.DCMOHECBOLK)
     pub DCMOHECBOLK: u32,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.JEDAHLGBIEM)
-    pub JEDAHLGBIEM: ::protobuf::EnumOrUnknown<super::AGBPCBLFNOL::AGBPCBLFNOL>,
+    pub JEDAHLGBIEM: ::protobuf::EnumOrUnknown<super::BattleTag::BattleTag>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.skill_info)
     pub skill_info: ::std::vec::Vec<super::GAAGEHABINM::GAAGEHABINM>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.LANFCLOLBOF)
     pub LANFCLOLBOF: u32,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.KFGJBILJGDP)
-    pub KFGJBILJGDP: ::std::vec::Vec<super::OIHDLEOJAFM::OIHDLEOJAFM>,
+    pub KFGJBILJGDP: ::std::vec::Vec<super::MonsterPhaseStt::MonsterPhaseStt>,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.FPKONIKLICA)
     pub FPKONIKLICA: u32,
     // @@protoc_insertion_point(field:LAFIENGMEMJ.JEEMGAEIFAE)
@@ -180,9 +180,9 @@ impl LAFIENGMEMJ {
             |m: &mut LAFIENGMEMJ| { &mut m.JBCDLFJJJDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "attack_damage_type",
-            |m: &LAFIENGMEMJ| { &m.attack_damage_type },
-            |m: &mut LAFIENGMEMJ| { &mut m.attack_damage_type },
+            "attack_type_damage",
+            |m: &LAFIENGMEMJ| { &m.attack_type_damage },
+            |m: &mut LAFIENGMEMJ| { &mut m.attack_type_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "skill_times",
@@ -325,7 +325,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
                     self.JBCDLFJJJDG = is.read_uint32()?;
                 },
                 122 => {
-                    self.attack_damage_type.push(is.read_message()?);
+                    self.attack_type_damage.push(is.read_message()?);
                 },
                 130 => {
                     self.skill_times.push(is.read_message()?);
@@ -430,7 +430,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.JBCDLFJJJDG != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.JBCDLFJJJDG);
         }
-        for value in &self.attack_damage_type {
+        for value in &self.attack_type_damage {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -447,7 +447,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.delay_cumulate != 0. {
             my_size += 2 + 8;
         }
-        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::GHBMBGDPIIE::GHBMBGDPIIE::UNKNOWN) {
+        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
             my_size += ::protobuf::rt::int32_size(20, self.FIEDKNKIEBH.value());
         }
         if self.wave != 0 {
@@ -462,7 +462,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.DCMOHECBOLK != 0 {
             my_size += ::protobuf::rt::uint32_size(24, self.DCMOHECBOLK);
         }
-        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::AGBPCBLFNOL::AGBPCBLFNOL::TAG_NONE) {
+        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
             my_size += ::protobuf::rt::int32_size(25, self.JEDAHLGBIEM.value());
         }
         for value in &self.skill_info {
@@ -533,7 +533,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.JBCDLFJJJDG != 0 {
             os.write_uint32(14, self.JBCDLFJJJDG)?;
         }
-        for v in &self.attack_damage_type {
+        for v in &self.attack_type_damage {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.skill_times {
@@ -548,7 +548,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.delay_cumulate != 0. {
             os.write_double(19, self.delay_cumulate)?;
         }
-        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::GHBMBGDPIIE::GHBMBGDPIIE::UNKNOWN) {
+        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
             os.write_enum(20, ::protobuf::EnumOrUnknown::value(&self.FIEDKNKIEBH))?;
         }
         if self.wave != 0 {
@@ -563,7 +563,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         if self.DCMOHECBOLK != 0 {
             os.write_uint32(24, self.DCMOHECBOLK)?;
         }
-        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::AGBPCBLFNOL::AGBPCBLFNOL::TAG_NONE) {
+        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
             os.write_enum(25, ::protobuf::EnumOrUnknown::value(&self.JEDAHLGBIEM))?;
         }
         for v in &self.skill_info {
@@ -615,17 +615,17 @@ impl ::protobuf::Message for LAFIENGMEMJ {
         self.stage_id = 0;
         self.battle_id = 0;
         self.JBCDLFJJJDG = 0;
-        self.attack_damage_type.clear();
+        self.attack_type_damage.clear();
         self.skill_times.clear();
         self.stage_type = 0;
         self.ACOFIPPJKBI = 0.;
         self.delay_cumulate = 0.;
-        self.FIEDKNKIEBH = ::protobuf::EnumOrUnknown::new(super::GHBMBGDPIIE::GHBMBGDPIIE::UNKNOWN);
+        self.FIEDKNKIEBH = ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN);
         self.wave = 0;
         self.JHAOGJJDBHL = 0;
         self.phase = 0;
         self.DCMOHECBOLK = 0;
-        self.JEDAHLGBIEM = ::protobuf::EnumOrUnknown::new(super::AGBPCBLFNOL::AGBPCBLFNOL::TAG_NONE);
+        self.JEDAHLGBIEM = ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE);
         self.skill_info.clear();
         self.LANFCLOLBOF = 0;
         self.KFGJBILJGDP.clear();
@@ -651,7 +651,7 @@ impl ::protobuf::Message for LAFIENGMEMJ {
             stage_id: 0,
             battle_id: 0,
             JBCDLFJJJDG: 0,
-            attack_damage_type: ::std::vec::Vec::new(),
+            attack_type_damage: ::std::vec::Vec::new(),
             skill_times: ::std::vec::Vec::new(),
             stage_type: 0,
             ACOFIPPJKBI: 0.,
@@ -692,35 +692,35 @@ impl ::protobuf::reflect::ProtobufValue for LAFIENGMEMJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LAFIENGMEMJ.proto\x1a\x11AGBPCBLFNOL.proto\x1a\x1aAttackDamageProp\
-    erty.proto\x1a\x11GAAGEHABINM.proto\x1a\x11GHBMBGDPIIE.proto\x1a\x11HEMB\
-    NDJAFDA.proto\x1a\x15MonsterProperty.proto\x1a\x11OIHDLEOJAFM.proto\x1a\
-    \x16SkillUseProperty.proto\"\x9a\t\n\x0bLAFIENGMEMJ\x12\x1b\n\tentity_id\
-    \x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\
-    \rR\tmonsterId\x12\x20\n\x0bOAKILFGDACJ\x18\x03\x20\x01(\rR\x0bOAKILFGDA\
-    CJ\x12\x20\n\x0bBFPAOANBJON\x18\x04\x20\x01(\rR\x0bBFPAOANBJON\x122\n\
-    \x0bNKCMCMHAFAF\x18\x05\x20\x01(\x0b2\x10.MonsterPropertyR\x0bNKCMCMHAFA\
-    F\x12\x1f\n\x0btotal_turns\x18\x06\x20\x01(\rR\ntotalTurns\x12!\n\x0ctot\
-    al_damage\x18\x07\x20\x01(\x01R\x0btotalDamage\x12\x1d\n\ntotal_heal\x18\
-    \x08\x20\x01(\x01R\ttotalHeal\x12,\n\x12total_damage_taken\x18\t\x20\x01\
-    (\x01R\x10totalDamageTaken\x12\x20\n\x0bAKGFCPFAOLP\x18\n\x20\x01(\x01R\
-    \x0bAKGFCPFAOLP\x12(\n\x10total_hp_recover\x18\x0b\x20\x01(\x01R\x0etota\
-    lHpRecover\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\rR\x07stageId\x12\x1b\
-    \n\tbattle_id\x18\r\x20\x01(\rR\x08battleId\x12\x20\n\x0bJBCDLFJJJDG\x18\
-    \x0e\x20\x01(\rR\x0bJBCDLFJJJDG\x12C\n\x12attack_damage_type\x18\x0f\x20\
-    \x03(\x0b2\x15.AttackDamagePropertyR\x10attackDamageType\x122\n\x0bskill\
-    _times\x18\x10\x20\x03(\x0b2\x11.SkillUsePropertyR\nskillTimes\x12\x1d\n\
-    \nstage_type\x18\x11\x20\x01(\rR\tstageType\x12\x20\n\x0bACOFIPPJKBI\x18\
-    \x12\x20\x01(\x01R\x0bACOFIPPJKBI\x12%\n\x0edelay_cumulate\x18\x13\x20\
-    \x01(\x01R\rdelayCumulate\x12.\n\x0bFIEDKNKIEBH\x18\x14\x20\x01(\x0e2\
-    \x0c.GHBMBGDPIIER\x0bFIEDKNKIEBH\x12\x12\n\x04wave\x18\x15\x20\x01(\rR\
-    \x04wave\x12\x20\n\x0bJHAOGJJDBHL\x18\x16\x20\x01(\x05R\x0bJHAOGJJDBHL\
-    \x12\x14\n\x05phase\x18\x17\x20\x01(\rR\x05phase\x12\x20\n\x0bDCMOHECBOL\
-    K\x18\x18\x20\x01(\rR\x0bDCMOHECBOLK\x12.\n\x0bJEDAHLGBIEM\x18\x19\x20\
-    \x01(\x0e2\x0c.AGBPCBLFNOLR\x0bJEDAHLGBIEM\x12+\n\nskill_info\x18\x1a\
-    \x20\x03(\x0b2\x0c.GAAGEHABINMR\tskillInfo\x12\x20\n\x0bLANFCLOLBOF\x18\
-    \x1b\x20\x01(\rR\x0bLANFCLOLBOF\x12.\n\x0bKFGJBILJGDP\x18\x1c\x20\x03(\
-    \x0b2\x0c.OIHDLEOJAFMR\x0bKFGJBILJGDP\x12\x20\n\x0bFPKONIKLICA\x18\x1d\
+    \n\x11LAFIENGMEMJ.proto\x1a\x1aAttackDamageProperty.proto\x1a\x0fBattleT\
+    ag.proto\x1a\x11DeathSource.proto\x1a\x11GAAGEHABINM.proto\x1a\x11HEMBND\
+    JAFDA.proto\x1a\x15MonsterPhaseStt.proto\x1a\x15MonsterProperty.proto\
+    \x1a\x16SkillUseProperty.proto\"\x9c\t\n\x0bLAFIENGMEMJ\x12\x1b\n\tentit\
+    y_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\x02\x20\
+    \x01(\rR\tmonsterId\x12\x20\n\x0bOAKILFGDACJ\x18\x03\x20\x01(\rR\x0bOAKI\
+    LFGDACJ\x12\x20\n\x0bBFPAOANBJON\x18\x04\x20\x01(\rR\x0bBFPAOANBJON\x122\
+    \n\x0bNKCMCMHAFAF\x18\x05\x20\x01(\x0b2\x10.MonsterPropertyR\x0bNKCMCMHA\
+    FAF\x12\x1f\n\x0btotal_turns\x18\x06\x20\x01(\rR\ntotalTurns\x12!\n\x0ct\
+    otal_damage\x18\x07\x20\x01(\x01R\x0btotalDamage\x12\x1d\n\ntotal_heal\
+    \x18\x08\x20\x01(\x01R\ttotalHeal\x12,\n\x12total_damage_taken\x18\t\x20\
+    \x01(\x01R\x10totalDamageTaken\x12\x20\n\x0bAKGFCPFAOLP\x18\n\x20\x01(\
+    \x01R\x0bAKGFCPFAOLP\x12(\n\x10total_hp_recover\x18\x0b\x20\x01(\x01R\
+    \x0etotalHpRecover\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\rR\x07stageId\
+    \x12\x1b\n\tbattle_id\x18\r\x20\x01(\rR\x08battleId\x12\x20\n\x0bJBCDLFJ\
+    JJDG\x18\x0e\x20\x01(\rR\x0bJBCDLFJJJDG\x12C\n\x12attack_type_damage\x18\
+    \x0f\x20\x03(\x0b2\x15.AttackDamagePropertyR\x10attackTypeDamage\x122\n\
+    \x0bskill_times\x18\x10\x20\x03(\x0b2\x11.SkillUsePropertyR\nskillTimes\
+    \x12\x1d\n\nstage_type\x18\x11\x20\x01(\rR\tstageType\x12\x20\n\x0bACOFI\
+    PPJKBI\x18\x12\x20\x01(\x01R\x0bACOFIPPJKBI\x12%\n\x0edelay_cumulate\x18\
+    \x13\x20\x01(\x01R\rdelayCumulate\x12.\n\x0bFIEDKNKIEBH\x18\x14\x20\x01(\
+    \x0e2\x0c.DeathSourceR\x0bFIEDKNKIEBH\x12\x12\n\x04wave\x18\x15\x20\x01(\
+    \rR\x04wave\x12\x20\n\x0bJHAOGJJDBHL\x18\x16\x20\x01(\x05R\x0bJHAOGJJDBH\
+    L\x12\x14\n\x05phase\x18\x17\x20\x01(\rR\x05phase\x12\x20\n\x0bDCMOHECBO\
+    LK\x18\x18\x20\x01(\rR\x0bDCMOHECBOLK\x12,\n\x0bJEDAHLGBIEM\x18\x19\x20\
+    \x01(\x0e2\n.BattleTagR\x0bJEDAHLGBIEM\x12+\n\nskill_info\x18\x1a\x20\
+    \x03(\x0b2\x0c.GAAGEHABINMR\tskillInfo\x12\x20\n\x0bLANFCLOLBOF\x18\x1b\
+    \x20\x01(\rR\x0bLANFCLOLBOF\x122\n\x0bKFGJBILJGDP\x18\x1c\x20\x03(\x0b2\
+    \x10.MonsterPhaseSttR\x0bKFGJBILJGDP\x12\x20\n\x0bFPKONIKLICA\x18\x1d\
     \x20\x01(\rR\x0bFPKONIKLICA\x12\x20\n\x0bJEEMGAEIFAE\x18\x1e\x20\x01(\rR\
     \x0bJEEMGAEIFAE\x12.\n\x0bHBOFDAJJJME\x18\x1f\x20\x01(\x0e2\x0c.HEMBNDJA\
     FDAR\x0bHBOFDAJJJMEb\x06proto3\
@@ -741,13 +741,13 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(8);
-            deps.push(super::AGBPCBLFNOL::file_descriptor().clone());
             deps.push(super::AttackDamageProperty::file_descriptor().clone());
+            deps.push(super::BattleTag::file_descriptor().clone());
+            deps.push(super::DeathSource::file_descriptor().clone());
             deps.push(super::GAAGEHABINM::file_descriptor().clone());
-            deps.push(super::GHBMBGDPIIE::file_descriptor().clone());
             deps.push(super::HEMBNDJAFDA::file_descriptor().clone());
+            deps.push(super::MonsterPhaseStt::file_descriptor().clone());
             deps.push(super::MonsterProperty::file_descriptor().clone());
-            deps.push(super::OIHDLEOJAFM::file_descriptor().clone());
             deps.push(super::SkillUseProperty::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LAFIENGMEMJ::generated_message_descriptor_data());

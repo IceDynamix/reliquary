@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LAILNIGFPOO {
     // message fields
-    // @@protoc_insertion_point(field:LAILNIGFPOO.KHGPFHBOELE)
-    pub KHGPFHBOELE: u64,
     // @@protoc_insertion_point(field:LAILNIGFPOO.AELPFEBGNOK)
     pub AELPFEBGNOK: bool,
-    // @@protoc_insertion_point(field:LAILNIGFPOO.KGJHJMDCAOC)
-    pub KGJHJMDCAOC: bool,
+    // @@protoc_insertion_point(field:LAILNIGFPOO.KHGPFHBOELE)
+    pub KHGPFHBOELE: u64,
+    // @@protoc_insertion_point(field:LAILNIGFPOO.is_taken_reward)
+    pub is_taken_reward: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LAILNIGFPOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl LAILNIGFPOO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHGPFHBOELE",
-            |m: &LAILNIGFPOO| { &m.KHGPFHBOELE },
-            |m: &mut LAILNIGFPOO| { &mut m.KHGPFHBOELE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AELPFEBGNOK",
             |m: &LAILNIGFPOO| { &m.AELPFEBGNOK },
             |m: &mut LAILNIGFPOO| { &mut m.AELPFEBGNOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGJHJMDCAOC",
-            |m: &LAILNIGFPOO| { &m.KGJHJMDCAOC },
-            |m: &mut LAILNIGFPOO| { &mut m.KGJHJMDCAOC },
+            "KHGPFHBOELE",
+            |m: &LAILNIGFPOO| { &m.KHGPFHBOELE },
+            |m: &mut LAILNIGFPOO| { &mut m.KHGPFHBOELE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_taken_reward",
+            |m: &LAILNIGFPOO| { &m.is_taken_reward },
+            |m: &mut LAILNIGFPOO| { &mut m.is_taken_reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LAILNIGFPOO>(
             "LAILNIGFPOO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LAILNIGFPOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.KHGPFHBOELE = is.read_uint64()?;
-                },
-                48 => {
+                16 => {
                     self.AELPFEBGNOK = is.read_bool()?;
                 },
-                16 => {
-                    self.KGJHJMDCAOC = is.read_bool()?;
+                48 => {
+                    self.KHGPFHBOELE = is.read_uint64()?;
+                },
+                64 => {
+                    self.is_taken_reward = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for LAILNIGFPOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHGPFHBOELE != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.KHGPFHBOELE);
-        }
         if self.AELPFEBGNOK != false {
             my_size += 1 + 1;
         }
-        if self.KGJHJMDCAOC != false {
+        if self.KHGPFHBOELE != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.KHGPFHBOELE);
+        }
+        if self.is_taken_reward != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LAILNIGFPOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHGPFHBOELE != 0 {
-            os.write_uint64(10, self.KHGPFHBOELE)?;
-        }
         if self.AELPFEBGNOK != false {
-            os.write_bool(6, self.AELPFEBGNOK)?;
+            os.write_bool(2, self.AELPFEBGNOK)?;
         }
-        if self.KGJHJMDCAOC != false {
-            os.write_bool(2, self.KGJHJMDCAOC)?;
+        if self.KHGPFHBOELE != 0 {
+            os.write_uint64(6, self.KHGPFHBOELE)?;
+        }
+        if self.is_taken_reward != false {
+            os.write_bool(8, self.is_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LAILNIGFPOO {
     }
 
     fn clear(&mut self) {
-        self.KHGPFHBOELE = 0;
         self.AELPFEBGNOK = false;
-        self.KGJHJMDCAOC = false;
+        self.KHGPFHBOELE = 0;
+        self.is_taken_reward = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LAILNIGFPOO {
         static instance: LAILNIGFPOO = LAILNIGFPOO {
-            KHGPFHBOELE: 0,
             AELPFEBGNOK: false,
-            KGJHJMDCAOC: false,
+            KHGPFHBOELE: 0,
+            is_taken_reward: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LAILNIGFPOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LAILNIGFPOO.proto\"s\n\x0bLAILNIGFPOO\x12\x20\n\x0bKHGPFHBOELE\x18\
-    \n\x20\x01(\x04R\x0bKHGPFHBOELE\x12\x20\n\x0bAELPFEBGNOK\x18\x06\x20\x01\
-    (\x08R\x0bAELPFEBGNOK\x12\x20\n\x0bKGJHJMDCAOC\x18\x02\x20\x01(\x08R\x0b\
-    KGJHJMDCAOCb\x06proto3\
+    \n\x11LAILNIGFPOO.proto\"y\n\x0bLAILNIGFPOO\x12\x20\n\x0bAELPFEBGNOK\x18\
+    \x02\x20\x01(\x08R\x0bAELPFEBGNOK\x12\x20\n\x0bKHGPFHBOELE\x18\x06\x20\
+    \x01(\x04R\x0bKHGPFHBOELE\x12&\n\x0fis_taken_reward\x18\x08\x20\x01(\x08\
+    R\risTakenRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

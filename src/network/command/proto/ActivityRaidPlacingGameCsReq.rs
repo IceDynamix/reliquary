@@ -31,7 +31,7 @@ pub struct ActivityRaidPlacingGameCsReq {
     // @@protoc_insertion_point(field:ActivityRaidPlacingGameCsReq.EJJODHJHHAM)
     pub EJJODHJHHAM: ::protobuf::MessageField<super::AlleyPlacingShip::AlleyPlacingShip>,
     // message oneof groups
-    pub GCOIIOPKJPF: ::std::option::Option<activity_raid_placing_game_cs_req::GCOIIOPKJPF>,
+    pub CNDCONGJLAI: ::std::option::Option<activity_raid_placing_game_cs_req::CNDCONGJLAI>,
     // special fields
     // @@protoc_insertion_point(special_field:ActivityRaidPlacingGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,54 +48,54 @@ impl ActivityRaidPlacingGameCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 CJEMMDPICLJ = 13;
+    // uint32 CJEMMDPICLJ = 14;
 
     pub fn CJEMMDPICLJ(&self) -> u32 {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(v)) => v,
+        match self.CNDCONGJLAI {
+            ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_CJEMMDPICLJ(&mut self) {
-        self.GCOIIOPKJPF = ::std::option::Option::None;
+        self.CNDCONGJLAI = ::std::option::Option::None;
     }
 
     pub fn has_CJEMMDPICLJ(&self) -> bool {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(..)) => true,
+        match self.CNDCONGJLAI {
+            ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CJEMMDPICLJ(&mut self, v: u32) {
-        self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(v))
+        self.CNDCONGJLAI = ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(v))
     }
 
-    // uint32 FJDABPPANDC = 14;
+    // uint32 FJDABPPANDC = 1;
 
     pub fn FJDABPPANDC(&self) -> u32 {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(v)) => v,
+        match self.CNDCONGJLAI {
+            ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_FJDABPPANDC(&mut self) {
-        self.GCOIIOPKJPF = ::std::option::Option::None;
+        self.CNDCONGJLAI = ::std::option::Option::None;
     }
 
     pub fn has_FJDABPPANDC(&self) -> bool {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(..)) => true,
+        match self.CNDCONGJLAI {
+            ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FJDABPPANDC(&mut self, v: u32) {
-        self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(v))
+        self.CNDCONGJLAI = ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
@@ -118,7 +118,7 @@ impl ActivityRaidPlacingGameCsReq {
             ActivityRaidPlacingGameCsReq::FJDABPPANDC,
             ActivityRaidPlacingGameCsReq::set_FJDABPPANDC,
         ));
-        oneofs.push(activity_raid_placing_game_cs_req::GCOIIOPKJPF::generated_oneof_descriptor_data());
+        oneofs.push(activity_raid_placing_game_cs_req::CNDCONGJLAI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivityRaidPlacingGameCsReq>(
             "ActivityRaidPlacingGameCsReq",
             fields,
@@ -137,14 +137,14 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJJODHJHHAM)?;
                 },
-                104 => {
-                    self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(is.read_uint32()?));
-                },
                 112 => {
-                    self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(is.read_uint32()?));
+                    self.CNDCONGJLAI = ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(is.read_uint32()?));
+                },
+                8 => {
+                    self.CNDCONGJLAI = ::std::option::Option::Some(activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -162,13 +162,13 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.GCOIIOPKJPF {
+        if let ::std::option::Option::Some(ref v) = self.CNDCONGJLAI {
             match v {
-                &activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
-                },
-                &activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(v) => {
+                &activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(v) => {
                     my_size += ::protobuf::rt::uint32_size(14, v);
+                },
+                &activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1, v);
                 },
             };
         }
@@ -179,15 +179,15 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.EJJODHJHHAM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.GCOIIOPKJPF {
+        if let ::std::option::Option::Some(ref v) = self.CNDCONGJLAI {
             match v {
-                &activity_raid_placing_game_cs_req::GCOIIOPKJPF::CJEMMDPICLJ(v) => {
-                    os.write_uint32(13, v)?;
-                },
-                &activity_raid_placing_game_cs_req::GCOIIOPKJPF::FJDABPPANDC(v) => {
+                &activity_raid_placing_game_cs_req::CNDCONGJLAI::CJEMMDPICLJ(v) => {
                     os.write_uint32(14, v)?;
+                },
+                &activity_raid_placing_game_cs_req::CNDCONGJLAI::FJDABPPANDC(v) => {
+                    os.write_uint32(1, v)?;
                 },
             };
         }
@@ -209,15 +209,15 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
 
     fn clear(&mut self) {
         self.EJJODHJHHAM.clear();
-        self.GCOIIOPKJPF = ::std::option::Option::None;
-        self.GCOIIOPKJPF = ::std::option::Option::None;
+        self.CNDCONGJLAI = ::std::option::Option::None;
+        self.CNDCONGJLAI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivityRaidPlacingGameCsReq {
         static instance: ActivityRaidPlacingGameCsReq = ActivityRaidPlacingGameCsReq {
             EJJODHJHHAM: ::protobuf::MessageField::none(),
-            GCOIIOPKJPF: ::std::option::Option::None,
+            CNDCONGJLAI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -246,37 +246,37 @@ pub mod activity_raid_placing_game_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ActivityRaidPlacingGameCsReq.GCOIIOPKJPF)
-    pub enum GCOIIOPKJPF {
+    // @@protoc_insertion_point(oneof:ActivityRaidPlacingGameCsReq.CNDCONGJLAI)
+    pub enum CNDCONGJLAI {
         // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameCsReq.CJEMMDPICLJ)
         CJEMMDPICLJ(u32),
         // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameCsReq.FJDABPPANDC)
         FJDABPPANDC(u32),
     }
 
-    impl ::protobuf::Oneof for GCOIIOPKJPF {
+    impl ::protobuf::Oneof for CNDCONGJLAI {
     }
 
-    impl ::protobuf::OneofFull for GCOIIOPKJPF {
+    impl ::protobuf::OneofFull for CNDCONGJLAI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ActivityRaidPlacingGameCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("GCOIIOPKJPF").unwrap()).clone()
+            descriptor.get(|| <super::ActivityRaidPlacingGameCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("CNDCONGJLAI").unwrap()).clone()
         }
     }
 
-    impl GCOIIOPKJPF {
+    impl CNDCONGJLAI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GCOIIOPKJPF>("GCOIIOPKJPF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CNDCONGJLAI>("CNDCONGJLAI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ActivityRaidPlacingGameCsReq.proto\x1a\x16AlleyPlacingShip.proto\"\
-    \xaa\x01\n\x1cActivityRaidPlacingGameCsReq\x123\n\x0bEJJODHJHHAM\x18\x05\
+    \xaa\x01\n\x1cActivityRaidPlacingGameCsReq\x123\n\x0bEJJODHJHHAM\x18\x0b\
     \x20\x01(\x0b2\x11.AlleyPlacingShipR\x0bEJJODHJHHAM\x12\"\n\x0bCJEMMDPIC\
-    LJ\x18\r\x20\x01(\rH\0R\x0bCJEMMDPICLJ\x12\"\n\x0bFJDABPPANDC\x18\x0e\
-    \x20\x01(\rH\0R\x0bFJDABPPANDCB\r\n\x0bGCOIIOPKJPFb\x06proto3\
+    LJ\x18\x0e\x20\x01(\rH\0R\x0bCJEMMDPICLJ\x12\"\n\x0bFJDABPPANDC\x18\x01\
+    \x20\x01(\rH\0R\x0bFJDABPPANDCB\r\n\x0bCNDCONGJLAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

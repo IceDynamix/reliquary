@@ -79,13 +79,13 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.mail_id_list)?;
                 },
-                8 => {
+                56 => {
                     self.mail_id_list.push(is.read_uint32()?);
                 },
-                56 => {
+                8 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.mail_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.mail_id_list);
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.optional_reward_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.mail_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.mail_id_list)?;
         if self.optional_reward_id != 0 {
-            os.write_uint32(7, self.optional_reward_id)?;
+            os.write_uint32(1, self.optional_reward_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeMailAttachmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeMailAttachmentCsReq.proto\"i\n\x17TakeMailAttachmentCsReq\x12\
-    \x20\n\x0cmail_id_list\x18\x01\x20\x03(\rR\nmailIdList\x12,\n\x12optiona\
-    l_reward_id\x18\x07\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
+    \x20\n\x0cmail_id_list\x18\x07\x20\x03(\rR\nmailIdList\x12,\n\x12optiona\
+    l_reward_id\x18\x01\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct EGFDAJDIHNJ {
     // message fields
     // @@protoc_insertion_point(field:EGFDAJDIHNJ.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:EGFDAJDIHNJ.MBEJBLFHCBH)
-    pub MBEJBLFHCBH: u32,
+    // @@protoc_insertion_point(field:EGFDAJDIHNJ.item_count)
+    pub item_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EGFDAJDIHNJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl EGFDAJDIHNJ {
             |m: &mut EGFDAJDIHNJ| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBEJBLFHCBH",
-            |m: &EGFDAJDIHNJ| { &m.MBEJBLFHCBH },
-            |m: &mut EGFDAJDIHNJ| { &mut m.MBEJBLFHCBH },
+            "item_count",
+            |m: &EGFDAJDIHNJ| { &m.item_count },
+            |m: &mut EGFDAJDIHNJ| { &mut m.item_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGFDAJDIHNJ>(
             "EGFDAJDIHNJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.item_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.MBEJBLFHCBH = is.read_uint32()?;
+                96 => {
+                    self.item_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.item_id);
         }
-        if self.MBEJBLFHCBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MBEJBLFHCBH);
+        if self.item_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.item_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(4, self.item_id)?;
+            os.write_uint32(1, self.item_id)?;
         }
-        if self.MBEJBLFHCBH != 0 {
-            os.write_uint32(10, self.MBEJBLFHCBH)?;
+        if self.item_count != 0 {
+            os.write_uint32(12, self.item_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
 
     fn clear(&mut self) {
         self.item_id = 0;
-        self.MBEJBLFHCBH = 0;
+        self.item_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGFDAJDIHNJ {
         static instance: EGFDAJDIHNJ = EGFDAJDIHNJ {
             item_id: 0,
-            MBEJBLFHCBH: 0,
+            item_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EGFDAJDIHNJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGFDAJDIHNJ.proto\"H\n\x0bEGFDAJDIHNJ\x12\x17\n\x07item_id\x18\x04\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bMBEJBLFHCBH\x18\n\x20\x01(\rR\x0bMBE\
-    JBLFHCBHb\x06proto3\
+    \n\x11EGFDAJDIHNJ.proto\"E\n\x0bEGFDAJDIHNJ\x12\x17\n\x07item_id\x18\x01\
+    \x20\x01(\rR\x06itemId\x12\x1d\n\nitem_count\x18\x0c\x20\x01(\rR\titemCo\
+    untb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

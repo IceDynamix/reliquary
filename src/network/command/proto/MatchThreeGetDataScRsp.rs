@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeGetDataScRsp.MFKJDOEBLIM)
-    pub MFKJDOEBLIM: ::protobuf::MessageField<super::ABGEJNBCDJK::ABGEJNBCDJK>,
     // @@protoc_insertion_point(field:MatchThreeGetDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MatchThreeGetDataScRsp.MFKJDOEBLIM)
+    pub MFKJDOEBLIM: ::protobuf::MessageField<super::ABGEJNBCDJK::ABGEJNBCDJK>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MatchThreeGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABGEJNBCDJK::ABGEJNBCDJK>(
-            "MFKJDOEBLIM",
-            |m: &MatchThreeGetDataScRsp| { &m.MFKJDOEBLIM },
-            |m: &mut MatchThreeGetDataScRsp| { &mut m.MFKJDOEBLIM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MatchThreeGetDataScRsp| { &m.retcode },
             |m: &mut MatchThreeGetDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABGEJNBCDJK::ABGEJNBCDJK>(
+            "MFKJDOEBLIM",
+            |m: &MatchThreeGetDataScRsp| { &m.MFKJDOEBLIM },
+            |m: &mut MatchThreeGetDataScRsp| { &mut m.MFKJDOEBLIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeGetDataScRsp>(
             "MatchThreeGetDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFKJDOEBLIM)?;
-                },
-                72 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFKJDOEBLIM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         if let Some(v) = self.MFKJDOEBLIM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MFKJDOEBLIM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if let Some(v) = self.MFKJDOEBLIM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MatchThreeGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.MFKJDOEBLIM.clear();
         self.retcode = 0;
+        self.MFKJDOEBLIM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeGetDataScRsp {
         static instance: MatchThreeGetDataScRsp = MatchThreeGetDataScRsp {
-            MFKJDOEBLIM: ::protobuf::MessageField::none(),
             retcode: 0,
+            MFKJDOEBLIM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMatchThreeGetDataScRsp.proto\x1a\x11ABGEJNBCDJK.proto\"b\n\x16Matc\
-    hThreeGetDataScRsp\x12.\n\x0bMFKJDOEBLIM\x18\x07\x20\x01(\x0b2\x0c.ABGEJ\
-    NBCDJKR\x0bMFKJDOEBLIM\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    hThreeGetDataScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bMFKJDOEBLIM\x18\x05\x20\x01(\x0b2\x0c.ABGEJNBCDJKR\x0bMFKJDOE\
+    BLIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

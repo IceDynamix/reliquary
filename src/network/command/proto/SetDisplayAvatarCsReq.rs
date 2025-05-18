@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SetDisplayAvatarCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetDisplayAvatarCsReq.display_avatar_list)
-    pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatar::DisplayAvatar>,
+    pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatarData::DisplayAvatarData>,
     // special fields
     // @@protoc_insertion_point(special_field:SetDisplayAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SetDisplayAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSetDisplayAvatarCsReq.proto\x1a\x13DisplayAvatar.proto\"W\n\x15Set\
-    DisplayAvatarCsReq\x12>\n\x13display_avatar_list\x18\r\x20\x03(\x0b2\x0e\
-    .DisplayAvatarR\x11displayAvatarListb\x06proto3\
+    \n\x1bSetDisplayAvatarCsReq.proto\x1a\x17DisplayAvatarData.proto\"[\n\
+    \x15SetDisplayAvatarCsReq\x12B\n\x13display_avatar_list\x18\r\x20\x03(\
+    \x0b2\x12.DisplayAvatarDataR\x11displayAvatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DisplayAvatar::file_descriptor().clone());
+            deps.push(super::DisplayAvatarData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetDisplayAvatarCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,6 +27,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:EvolveBuildShopAbilityResetCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityResetCsReq {
+    // message fields
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetCsReq.MDCJFOAFDJK)
+    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityResetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -44,8 +47,13 @@ impl EvolveBuildShopAbilityResetCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(0);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDCJFOAFDJK",
+            |m: &EvolveBuildShopAbilityResetCsReq| { &m.MDCJFOAFDJK },
+            |m: &mut EvolveBuildShopAbilityResetCsReq| { &mut m.MDCJFOAFDJK },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityResetCsReq>(
             "EvolveBuildShopAbilityResetCsReq",
             fields,
@@ -64,6 +72,9 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                80 => {
+                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -76,12 +87,18 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.MDCJFOAFDJK.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -99,11 +116,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     }
 
     fn clear(&mut self) {
+        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityResetCsReq {
         static instance: EvolveBuildShopAbilityResetCsReq = EvolveBuildShopAbilityResetCsReq {
+            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -128,8 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityResetCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&EvolveBuildShopAbilityResetCsReq.proto\"\"\n\x20EvolveBuildShopAbilit\
-    yResetCsReqb\x06proto3\
+    \n&EvolveBuildShopAbilityResetCsReq.proto\x1a\x11KLNIPNJCNMJ.proto\"R\n\
+    \x20EvolveBuildShopAbilityResetCsReq\x12.\n\x0bMDCJFOAFDJK\x18\n\x20\x01\
+    (\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFDJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -146,7 +166,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::KLNIPNJCNMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildShopAbilityResetCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

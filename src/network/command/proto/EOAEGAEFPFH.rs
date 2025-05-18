@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOAEGAEFPFH {
     // message fields
-    // @@protoc_insertion_point(field:EOAEGAEFPFH.PAEHAMJHNDD)
-    pub PAEHAMJHNDD: u32,
     // @@protoc_insertion_point(field:EOAEGAEFPFH.level)
     pub level: u32,
     // @@protoc_insertion_point(field:EOAEGAEFPFH.MAIL_TYPE_STAR)
     pub MAIL_TYPE_STAR: u32,
+    // @@protoc_insertion_point(field:EOAEGAEFPFH.PAEHAMJHNDD)
+    pub PAEHAMJHNDD: u32,
     // @@protoc_insertion_point(field:EOAEGAEFPFH.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -56,11 +56,6 @@ impl EOAEGAEFPFH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAEHAMJHNDD",
-            |m: &EOAEGAEFPFH| { &m.PAEHAMJHNDD },
-            |m: &mut EOAEGAEFPFH| { &mut m.PAEHAMJHNDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &EOAEGAEFPFH| { &m.level },
             |m: &mut EOAEGAEFPFH| { &mut m.level },
@@ -69,6 +64,11 @@ impl EOAEGAEFPFH {
             "MAIL_TYPE_STAR",
             |m: &EOAEGAEFPFH| { &m.MAIL_TYPE_STAR },
             |m: &mut EOAEGAEFPFH| { &mut m.MAIL_TYPE_STAR },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PAEHAMJHNDD",
+            |m: &EOAEGAEFPFH| { &m.PAEHAMJHNDD },
+            |m: &mut EOAEGAEFPFH| { &mut m.PAEHAMJHNDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PAEHAMJHNDD = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.level = is.read_uint32()?;
                 },
-                80 => {
+                48 => {
                     self.MAIL_TYPE_STAR = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
+                    self.PAEHAMJHNDD = is.read_uint32()?;
+                },
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PAEHAMJHNDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PAEHAMJHNDD);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
         if self.MAIL_TYPE_STAR != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MAIL_TYPE_STAR);
+            my_size += ::protobuf::rt::uint32_size(6, self.MAIL_TYPE_STAR);
+        }
+        if self.PAEHAMJHNDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PAEHAMJHNDD);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PAEHAMJHNDD != 0 {
-            os.write_uint32(12, self.PAEHAMJHNDD)?;
-        }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(4, self.level)?;
         }
         if self.MAIL_TYPE_STAR != 0 {
-            os.write_uint32(10, self.MAIL_TYPE_STAR)?;
+            os.write_uint32(6, self.MAIL_TYPE_STAR)?;
+        }
+        if self.PAEHAMJHNDD != 0 {
+            os.write_uint32(9, self.PAEHAMJHNDD)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     }
 
     fn clear(&mut self) {
-        self.PAEHAMJHNDD = 0;
         self.level = 0;
         self.MAIL_TYPE_STAR = 0;
+        self.PAEHAMJHNDD = 0;
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOAEGAEFPFH {
         static instance: EOAEGAEFPFH = EOAEGAEFPFH {
-            PAEHAMJHNDD: 0,
             level: 0,
             MAIL_TYPE_STAR: 0,
+            PAEHAMJHNDD: 0,
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for EOAEGAEFPFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOAEGAEFPFH.proto\"\x88\x01\n\x0bEOAEGAEFPFH\x12\x20\n\x0bPAEHAMJH\
-    NDD\x18\x0c\x20\x01(\rR\x0bPAEHAMJHNDD\x12\x14\n\x05level\x18\x06\x20\
-    \x01(\rR\x05level\x12$\n\x0eMAIL_TYPE_STAR\x18\n\x20\x01(\rR\x0cMAILTYPE\
-    STAR\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n\x11EOAEGAEFPFH.proto\"\x88\x01\n\x0bEOAEGAEFPFH\x12\x14\n\x05level\
+    \x18\x04\x20\x01(\rR\x05level\x12$\n\x0eMAIL_TYPE_STAR\x18\x06\x20\x01(\
+    \rR\x0cMAILTYPESTAR\x12\x20\n\x0bPAEHAMJHNDD\x18\t\x20\x01(\rR\x0bPAEHAM\
+    JHNDD\x12\x1b\n\tavatar_id\x18\x07\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

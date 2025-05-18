@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EFJDMHOAKOO {
     // message fields
-    // @@protoc_insertion_point(field:EFJDMHOAKOO.FPJCKPNLNFM)
-    pub FPJCKPNLNFM: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
-    // @@protoc_insertion_point(field:EFJDMHOAKOO.avatar_id_list)
-    pub avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EFJDMHOAKOO.MANKKFPBFCB)
     pub MANKKFPBFCB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EFJDMHOAKOO.trial_avatar_id_list)
-    pub trial_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EFJDMHOAKOO.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EFJDMHOAKOO.revive_info)
+    pub revive_info: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
+    // @@protoc_insertion_point(field:EFJDMHOAKOO.LGHCAHBBCAM)
+    pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:EFJDMHOAKOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EFJDMHOAKOO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJJGLGPEDEE::EJJGLGPEDEE>(
-            "FPJCKPNLNFM",
-            |m: &EFJDMHOAKOO| { &m.FPJCKPNLNFM },
-            |m: &mut EFJDMHOAKOO| { &mut m.FPJCKPNLNFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &EFJDMHOAKOO| { &m.avatar_id_list },
-            |m: &mut EFJDMHOAKOO| { &mut m.avatar_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MANKKFPBFCB",
             |m: &EFJDMHOAKOO| { &m.MANKKFPBFCB },
             |m: &mut EFJDMHOAKOO| { &mut m.MANKKFPBFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "trial_avatar_id_list",
-            |m: &EFJDMHOAKOO| { &m.trial_avatar_id_list },
-            |m: &mut EFJDMHOAKOO| { &mut m.trial_avatar_id_list },
+            "base_avatar_id_list",
+            |m: &EFJDMHOAKOO| { &m.base_avatar_id_list },
+            |m: &mut EFJDMHOAKOO| { &mut m.base_avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJJGLGPEDEE::EJJGLGPEDEE>(
+            "revive_info",
+            |m: &EFJDMHOAKOO| { &m.revive_info },
+            |m: &mut EFJDMHOAKOO| { &mut m.revive_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LGHCAHBBCAM",
+            |m: &EFJDMHOAKOO| { &m.LGHCAHBBCAM },
+            |m: &mut EFJDMHOAKOO| { &mut m.LGHCAHBBCAM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EFJDMHOAKOO>(
             "EFJDMHOAKOO",
@@ -93,26 +93,26 @@ impl ::protobuf::Message for EFJDMHOAKOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPJCKPNLNFM)?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
-                },
-                112 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
-                },
-                18 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
                 },
-                16 => {
+                80 => {
                     self.MANKKFPBFCB.push(is.read_uint32()?);
                 },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                },
+                24 => {
+                    self.base_avatar_id_list.push(is.read_uint32()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
+                },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
                 104 => {
-                    self.trial_avatar_id_list.push(is.read_uint32()?);
+                    self.LGHCAHBBCAM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,25 +126,25 @@ impl ::protobuf::Message for EFJDMHOAKOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FPJCKPNLNFM.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.MANKKFPBFCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.base_avatar_id_list);
+        if let Some(v) = self.revive_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.MANKKFPBFCB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.trial_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LGHCAHBBCAM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FPJCKPNLNFM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        os.write_repeated_packed_uint32(10, &self.MANKKFPBFCB)?;
+        os.write_repeated_packed_uint32(3, &self.base_avatar_id_list)?;
+        if let Some(v) = self.revive_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.avatar_id_list)?;
-        os.write_repeated_packed_uint32(2, &self.MANKKFPBFCB)?;
-        os.write_repeated_packed_uint32(13, &self.trial_avatar_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.LGHCAHBBCAM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for EFJDMHOAKOO {
     }
 
     fn clear(&mut self) {
-        self.FPJCKPNLNFM.clear();
-        self.avatar_id_list.clear();
         self.MANKKFPBFCB.clear();
-        self.trial_avatar_id_list.clear();
+        self.base_avatar_id_list.clear();
+        self.revive_info.clear();
+        self.LGHCAHBBCAM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EFJDMHOAKOO {
         static instance: EFJDMHOAKOO = EFJDMHOAKOO {
-            FPJCKPNLNFM: ::protobuf::MessageField::none(),
-            avatar_id_list: ::std::vec::Vec::new(),
             MANKKFPBFCB: ::std::vec::Vec::new(),
-            trial_avatar_id_list: ::std::vec::Vec::new(),
+            base_avatar_id_list: ::std::vec::Vec::new(),
+            revive_info: ::protobuf::MessageField::none(),
+            LGHCAHBBCAM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for EFJDMHOAKOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EFJDMHOAKOO.proto\x1a\x11EJJGLGPEDEE.proto\"\xb6\x01\n\x0bEFJDMHOA\
-    KOO\x12.\n\x0bFPJCKPNLNFM\x18\x06\x20\x01(\x0b2\x0c.EJJGLGPEDEER\x0bFPJC\
-    KPNLNFM\x12$\n\x0eavatar_id_list\x18\x0e\x20\x03(\rR\x0cavatarIdList\x12\
-    \x20\n\x0bMANKKFPBFCB\x18\x02\x20\x03(\rR\x0bMANKKFPBFCB\x12/\n\x14trial\
-    _avatar_id_list\x18\r\x20\x03(\rR\x11trialAvatarIdListb\x06proto3\
+    \n\x11EFJDMHOAKOO.proto\x1a\x11EJJGLGPEDEE.proto\"\xaf\x01\n\x0bEFJDMHOA\
+    KOO\x12\x20\n\x0bMANKKFPBFCB\x18\n\x20\x03(\rR\x0bMANKKFPBFCB\x12-\n\x13\
+    base_avatar_id_list\x18\x03\x20\x03(\rR\x10baseAvatarIdList\x12-\n\x0bre\
+    vive_info\x18\x08\x20\x01(\x0b2\x0c.EJJGLGPEDEER\nreviveInfo\x12\x20\n\
+    \x0bLGHCAHBBCAM\x18\r\x20\x03(\rR\x0bLGHCAHBBCAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

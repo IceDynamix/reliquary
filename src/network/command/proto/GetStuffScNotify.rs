@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetStuffScNotify {
                 8 => {
                     self.AOCELKONHOB = is.read_enum_or_unknown()?;
                 },
-                48 => {
+                80 => {
                     self.BDJCGCDJOEO = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetStuffScNotify {
             my_size += ::protobuf::rt::int32_size(1, self.AOCELKONHOB.value());
         }
         if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BDJCGCDJOEO);
+            my_size += ::protobuf::rt::uint32_size(10, self.BDJCGCDJOEO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetStuffScNotify {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.AOCELKONHOB))?;
         }
         if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(6, self.BDJCGCDJOEO)?;
+            os.write_uint32(10, self.BDJCGCDJOEO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetStuffScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetStuffScNotify.proto\x1a\x12GetStuffType.proto\"e\n\x10GetStuffS\
     cNotify\x12/\n\x0bAOCELKONHOB\x18\x01\x20\x01(\x0e2\r.GetStuffTypeR\x0bA\
-    OCELKONHOB\x12\x20\n\x0bBDJCGCDJOEO\x18\x06\x20\x01(\rR\x0bBDJCGCDJOEOb\
+    OCELKONHOB\x12\x20\n\x0bBDJCGCDJOEO\x18\n\x20\x01(\rR\x0bBDJCGCDJOEOb\
     \x06proto3\
 ";
 

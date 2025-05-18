@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.DGBMDPBIALG = is.read_uint32()?;
                 },
-                80 => {
+                32 => {
                     self.CNIFHNBIOFJ = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DGBMDPBIALG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DGBMDPBIALG);
+            my_size += ::protobuf::rt::uint32_size(14, self.DGBMDPBIALG);
         }
         if self.CNIFHNBIOFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CNIFHNBIOFJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.CNIFHNBIOFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DGBMDPBIALG != 0 {
-            os.write_uint32(5, self.DGBMDPBIALG)?;
+            os.write_uint32(14, self.DGBMDPBIALG)?;
         }
         if self.CNIFHNBIOFJ != 0 {
-            os.write_uint32(10, self.CNIFHNBIOFJ)?;
+            os.write_uint32(4, self.CNIFHNBIOFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bDGB\
-    MDPBIALG\x18\x05\x20\x01(\rR\x0bDGBMDPBIALG\x12\x20\n\x0bCNIFHNBIOFJ\x18\
-    \n\x20\x01(\rR\x0bCNIFHNBIOFJb\x06proto3\
+    MDPBIALG\x18\x0e\x20\x01(\rR\x0bDGBMDPBIALG\x12\x20\n\x0bCNIFHNBIOFJ\x18\
+    \x04\x20\x01(\rR\x0bCNIFHNBIOFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct UpdateEnergyScNotify {
     // message fields
     // @@protoc_insertion_point(field:UpdateEnergyScNotify.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotatorEnergyInfo::RotatorEnergyInfo>,
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateEnergyScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl UpdateEnergyScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotatorEnergyInfo::RotatorEnergyInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
             "energy_info",
             |m: &UpdateEnergyScNotify| { &m.energy_info },
             |m: &mut UpdateEnergyScNotify| { &mut m.energy_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for UpdateEnergyScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UpdateEnergyScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateEnergyScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUpdateEnergyScNotify.proto\x1a\x17RotatorEnergyInfo.proto\"K\n\x14\
-    UpdateEnergyScNotify\x123\n\x0benergy_info\x18\x0f\x20\x01(\x0b2\x12.Rot\
-    atorEnergyInfoR\nenergyInfob\x06proto3\
+    \n\x1aUpdateEnergyScNotify.proto\x1a\x17RotaterEnergyInfo.proto\"K\n\x14\
+    UpdateEnergyScNotify\x123\n\x0benergy_info\x18\x0c\x20\x01(\x0b2\x12.Rot\
+    aterEnergyInfoR\nenergyInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RotatorEnergyInfo::file_descriptor().clone());
+            deps.push(super::RotaterEnergyInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateEnergyScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,8 +30,8 @@ pub struct SellItemCsReq {
     // message fields
     // @@protoc_insertion_point(field:SellItemCsReq.to_material)
     pub to_material: bool,
-    // @@protoc_insertion_point(field:SellItemCsReq.operation_item_cost_list)
-    pub operation_item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:SellItemCsReq.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:SellItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl SellItemCsReq {
             |m: &SellItemCsReq| { &m.to_material },
             |m: &mut SellItemCsReq| { &mut m.to_material },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "operation_item_cost_list",
-            |m: &SellItemCsReq| { &m.operation_item_cost_list },
-            |m: &mut SellItemCsReq| { &mut m.operation_item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &SellItemCsReq| { &m.cost_data },
+            |m: &mut SellItemCsReq| { &mut m.cost_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SellItemCsReq>(
             "SellItemCsReq",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for SellItemCsReq {
                 48 => {
                     self.to_material = is.read_bool()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.operation_item_cost_list)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for SellItemCsReq {
         if self.to_material != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
+        if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -113,8 +113,8 @@ impl ::protobuf::Message for SellItemCsReq {
         if self.to_material != false {
             os.write_bool(6, self.to_material)?;
         }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SellItemCsReq {
 
     fn clear(&mut self) {
         self.to_material = false;
-        self.operation_item_cost_list.clear();
+        self.cost_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SellItemCsReq {
         static instance: SellItemCsReq = SellItemCsReq {
             to_material: false,
-            operation_item_cost_list: ::protobuf::MessageField::none(),
+            cost_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SellItemCsReq.proto\x1a\x12ItemCostList.proto\"x\n\rSellItemCsReq\
-    \x12\x1f\n\x0bto_material\x18\x06\x20\x01(\x08R\ntoMaterial\x12F\n\x18op\
-    eration_item_cost_list\x18\t\x20\x01(\x0b2\r.ItemCostListR\x15operationI\
-    temCostListb\x06proto3\
+    \n\x13SellItemCsReq.proto\x1a\x12ItemCostData.proto\"\\\n\rSellItemCsReq\
+    \x12\x1f\n\x0bto_material\x18\x06\x20\x01(\x08R\ntoMaterial\x12*\n\tcost\
+    _data\x18\n\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SellItemCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

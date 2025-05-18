@@ -72,7 +72,7 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.DBJHEMIPPIM = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DBJHEMIPPIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DBJHEMIPPIM);
+            my_size += ::protobuf::rt::uint32_size(2, self.DBJHEMIPPIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DBJHEMIPPIM != 0 {
-            os.write_uint32(13, self.DBJHEMIPPIM)?;
+            os.write_uint32(2, self.DBJHEMIPPIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MuseumFundsChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MuseumFundsChangedScNotify.proto\">\n\x1aMuseumFundsChangedScNotif\
-    y\x12\x20\n\x0bDBJHEMIPPIM\x18\r\x20\x01(\rR\x0bDBJHEMIPPIMb\x06proto3\
+    y\x12\x20\n\x0bDBJHEMIPPIM\x18\x02\x20\x01(\rR\x0bDBJHEMIPPIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

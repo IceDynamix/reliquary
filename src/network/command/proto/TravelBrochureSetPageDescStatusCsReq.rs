@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureSetPageDescStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureSetPageDescStatusCsReq.GEIBGFDENJA)
-    pub GEIBGFDENJA: ::protobuf::EnumOrUnknown<super::DCJAOPDINOI::DCJAOPDINOI>,
     // @@protoc_insertion_point(field:TravelBrochureSetPageDescStatusCsReq.CPODEJOFPDD)
     pub CPODEJOFPDD: u32,
+    // @@protoc_insertion_point(field:TravelBrochureSetPageDescStatusCsReq.GEIBGFDENJA)
+    pub GEIBGFDENJA: ::protobuf::EnumOrUnknown<super::DCJAOPDINOI::DCJAOPDINOI>,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureSetPageDescStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TravelBrochureSetPageDescStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEIBGFDENJA",
-            |m: &TravelBrochureSetPageDescStatusCsReq| { &m.GEIBGFDENJA },
-            |m: &mut TravelBrochureSetPageDescStatusCsReq| { &mut m.GEIBGFDENJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CPODEJOFPDD",
             |m: &TravelBrochureSetPageDescStatusCsReq| { &m.CPODEJOFPDD },
             |m: &mut TravelBrochureSetPageDescStatusCsReq| { &mut m.CPODEJOFPDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GEIBGFDENJA",
+            |m: &TravelBrochureSetPageDescStatusCsReq| { &m.GEIBGFDENJA },
+            |m: &mut TravelBrochureSetPageDescStatusCsReq| { &mut m.GEIBGFDENJA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureSetPageDescStatusCsReq>(
             "TravelBrochureSetPageDescStatusCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.GEIBGFDENJA = is.read_enum_or_unknown()?;
+                96 => {
+                    self.CPODEJOFPDD = is.read_uint32()?;
                 },
                 72 => {
-                    self.CPODEJOFPDD = is.read_uint32()?;
+                    self.GEIBGFDENJA = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.GEIBGFDENJA.value());
-        }
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(12, self.CPODEJOFPDD);
+        }
+        if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.GEIBGFDENJA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.GEIBGFDENJA))?;
-        }
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(9, self.CPODEJOFPDD)?;
+            os.write_uint32(12, self.CPODEJOFPDD)?;
+        }
+        if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.GEIBGFDENJA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.GEIBGFDENJA = ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE);
         self.CPODEJOFPDD = 0;
+        self.GEIBGFDENJA = ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureSetPageDescStatusCsReq {
         static instance: TravelBrochureSetPageDescStatusCsReq = TravelBrochureSetPageDescStatusCsReq {
-            GEIBGFDENJA: ::protobuf::EnumOrUnknown::from_i32(0),
             CPODEJOFPDD: 0,
+            GEIBGFDENJA: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSetPageDescStatusCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*TravelBrochureSetPageDescStatusCsReq.proto\x1a\x11DCJAOPDINOI.proto\"\
-    x\n$TravelBrochureSetPageDescStatusCsReq\x12.\n\x0bGEIBGFDENJA\x18\x08\
-    \x20\x01(\x0e2\x0c.DCJAOPDINOIR\x0bGEIBGFDENJA\x12\x20\n\x0bCPODEJOFPDD\
-    \x18\t\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
+    x\n$TravelBrochureSetPageDescStatusCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\
+    \x0c\x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEIBGFDENJA\x18\t\x20\x01(\x0e\
+    2\x0c.DCJAOPDINOIR\x0bGEIBGFDENJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

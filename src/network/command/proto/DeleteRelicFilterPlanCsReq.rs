@@ -79,13 +79,13 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                24 => {
                     self.is_batch_op = is.read_bool()?;
                 },
-                66 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.slot_index_list)?;
                 },
-                64 => {
+                80 => {
                     self.slot_index_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
         if self.is_batch_op != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.slot_index_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.slot_index_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_batch_op != false {
-            os.write_bool(13, self.is_batch_op)?;
+            os.write_bool(3, self.is_batch_op)?;
         }
-        os.write_repeated_packed_uint32(8, &self.slot_index_list)?;
+        os.write_repeated_packed_uint32(10, &self.slot_index_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20DeleteRelicFilterPlanCsReq.proto\"d\n\x1aDeleteRelicFilterPlanCsRe\
-    q\x12\x1e\n\x0bis_batch_op\x18\r\x20\x01(\x08R\tisBatchOp\x12&\n\x0fslot\
-    _index_list\x18\x08\x20\x03(\rR\rslotIndexListb\x06proto3\
+    q\x12\x1e\n\x0bis_batch_op\x18\x03\x20\x01(\x08R\tisBatchOp\x12&\n\x0fsl\
+    ot_index_list\x18\n\x20\x03(\rR\rslotIndexListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

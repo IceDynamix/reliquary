@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBenefitActivityInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.benefit_data_list)
+    pub benefit_data_list: ::std::vec::Vec<super::BenefitData::BenefitData>,
     // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.FMKCNMCAILN)
-    pub FMKCNMCAILN: ::std::vec::Vec<super::MOGACGJEHAE::MOGACGJEHAE>,
-    // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.OFNGINBODLP)
-    pub OFNGINBODLP: bool,
+    // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.is_open)
+    pub is_open: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetBenefitActivityInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetBenefitActivityInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "benefit_data_list",
+            |m: &GetBenefitActivityInfoScRsp| { &m.benefit_data_list },
+            |m: &mut GetBenefitActivityInfoScRsp| { &mut m.benefit_data_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetBenefitActivityInfoScRsp| { &m.retcode },
             |m: &mut GetBenefitActivityInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMKCNMCAILN",
-            |m: &GetBenefitActivityInfoScRsp| { &m.FMKCNMCAILN },
-            |m: &mut GetBenefitActivityInfoScRsp| { &mut m.FMKCNMCAILN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFNGINBODLP",
-            |m: &GetBenefitActivityInfoScRsp| { &m.OFNGINBODLP },
-            |m: &mut GetBenefitActivityInfoScRsp| { &mut m.OFNGINBODLP },
+            "is_open",
+            |m: &GetBenefitActivityInfoScRsp| { &m.is_open },
+            |m: &mut GetBenefitActivityInfoScRsp| { &mut m.is_open },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBenefitActivityInfoScRsp>(
             "GetBenefitActivityInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                58 => {
-                    self.FMKCNMCAILN.push(is.read_message()?);
+                26 => {
+                    self.benefit_data_list.push(is.read_message()?);
                 },
                 64 => {
-                    self.OFNGINBODLP = is.read_bool()?;
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.is_open = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        for value in &self.FMKCNMCAILN {
+        for value in &self.benefit_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OFNGINBODLP != false {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.is_open != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
-        for v in &self.FMKCNMCAILN {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.benefit_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.OFNGINBODLP != false {
-            os.write_bool(8, self.OFNGINBODLP)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.is_open != false {
+            os.write_bool(5, self.is_open)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.benefit_data_list.clear();
         self.retcode = 0;
-        self.FMKCNMCAILN.clear();
-        self.OFNGINBODLP = false;
+        self.is_open = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBenefitActivityInfoScRsp {
         static instance: GetBenefitActivityInfoScRsp = GetBenefitActivityInfoScRsp {
+            benefit_data_list: ::std::vec::Vec::new(),
             retcode: 0,
-            FMKCNMCAILN: ::std::vec::Vec::new(),
-            OFNGINBODLP: false,
+            is_open: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GetBenefitActivityInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetBenefitActivityInfoScRsp.proto\x1a\x11MOGACGJEHAE.proto\"\x89\x01\
-    \n\x1bGetBenefitActivityInfoScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bFMKCNMCAILN\x18\x07\x20\x03(\x0b2\x0c.MOGACGJEH\
-    AER\x0bFMKCNMCAILN\x12\x20\n\x0bOFNGINBODLP\x18\x08\x20\x01(\x08R\x0bOFN\
-    GINBODLPb\x06proto3\
+    \n!GetBenefitActivityInfoScRsp.proto\x1a\x11BenefitData.proto\"\x8a\x01\
+    \n\x1bGetBenefitActivityInfoScRsp\x128\n\x11benefit_data_list\x18\x03\
+    \x20\x03(\x0b2\x0c.BenefitDataR\x0fbenefitDataList\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcode\x12\x17\n\x07is_open\x18\x05\x20\x01(\
+    \x08R\x06isOpenb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MOGACGJEHAE::file_descriptor().clone());
+            deps.push(super::BenefitData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBenefitActivityInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

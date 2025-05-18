@@ -79,7 +79,7 @@ impl ::protobuf::Message for SetClientPausedScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.paused = is.read_bool()?;
                 },
                 80 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SetClientPausedScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.paused != false {
-            os.write_bool(12, self.paused)?;
+            os.write_bool(9, self.paused)?;
         }
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetClientPausedScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSetClientPausedScRsp.proto\"H\n\x14SetClientPausedScRsp\x12\x16\n\
-    \x06paused\x18\x0c\x20\x01(\x08R\x06paused\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \x06paused\x18\t\x20\x01(\x08R\x06paused\x12\x18\n\x07retcode\x18\n\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

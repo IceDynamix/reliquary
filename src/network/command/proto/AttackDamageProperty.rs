@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AttackDamageProperty {
     // message fields
-    // @@protoc_insertion_point(field:AttackDamageProperty.CBLNAKOOOIG)
-    pub CBLNAKOOOIG: ::std::string::String,
-    // @@protoc_insertion_point(field:AttackDamageProperty.GDFLPPHGENE)
-    pub GDFLPPHGENE: f64,
+    // @@protoc_insertion_point(field:AttackDamageProperty.attack_type)
+    pub attack_type: ::std::string::String,
+    // @@protoc_insertion_point(field:AttackDamageProperty.damage)
+    pub damage: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AttackDamageProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AttackDamageProperty {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBLNAKOOOIG",
-            |m: &AttackDamageProperty| { &m.CBLNAKOOOIG },
-            |m: &mut AttackDamageProperty| { &mut m.CBLNAKOOOIG },
+            "attack_type",
+            |m: &AttackDamageProperty| { &m.attack_type },
+            |m: &mut AttackDamageProperty| { &mut m.attack_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDFLPPHGENE",
-            |m: &AttackDamageProperty| { &m.GDFLPPHGENE },
-            |m: &mut AttackDamageProperty| { &mut m.GDFLPPHGENE },
+            "damage",
+            |m: &AttackDamageProperty| { &m.damage },
+            |m: &mut AttackDamageProperty| { &mut m.damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AttackDamageProperty>(
             "AttackDamageProperty",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for AttackDamageProperty {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.CBLNAKOOOIG = is.read_string()?;
+                    self.attack_type = is.read_string()?;
                 },
                 17 => {
-                    self.GDFLPPHGENE = is.read_double()?;
+                    self.damage = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for AttackDamageProperty {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.CBLNAKOOOIG.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.CBLNAKOOOIG);
+        if !self.attack_type.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.attack_type);
         }
-        if self.GDFLPPHGENE != 0. {
+        if self.damage != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AttackDamageProperty {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.CBLNAKOOOIG.is_empty() {
-            os.write_string(1, &self.CBLNAKOOOIG)?;
+        if !self.attack_type.is_empty() {
+            os.write_string(1, &self.attack_type)?;
         }
-        if self.GDFLPPHGENE != 0. {
-            os.write_double(2, self.GDFLPPHGENE)?;
+        if self.damage != 0. {
+            os.write_double(2, self.damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AttackDamageProperty {
     }
 
     fn clear(&mut self) {
-        self.CBLNAKOOOIG.clear();
-        self.GDFLPPHGENE = 0.;
+        self.attack_type.clear();
+        self.damage = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AttackDamageProperty {
         static instance: AttackDamageProperty = AttackDamageProperty {
-            CBLNAKOOOIG: ::std::string::String::new(),
-            GDFLPPHGENE: 0.,
+            attack_type: ::std::string::String::new(),
+            damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AttackDamageProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aAttackDamageProperty.proto\"Z\n\x14AttackDamageProperty\x12\x20\n\
-    \x0bCBLNAKOOOIG\x18\x01\x20\x01(\tR\x0bCBLNAKOOOIG\x12\x20\n\x0bGDFLPPHG\
-    ENE\x18\x02\x20\x01(\x01R\x0bGDFLPPHGENEb\x06proto3\
+    \n\x1aAttackDamageProperty.proto\"O\n\x14AttackDamageProperty\x12\x1f\n\
+    \x0battack_type\x18\x01\x20\x01(\tR\nattackType\x12\x16\n\x06damage\x18\
+    \x02\x20\x01(\x01R\x06damageb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

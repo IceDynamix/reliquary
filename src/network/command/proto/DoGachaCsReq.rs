@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaCsReq.num_pulls)
-    pub num_pulls: u32,
-    // @@protoc_insertion_point(field:DoGachaCsReq.FPFCKNICPPJ)
-    pub FPFCKNICPPJ: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.gacha_id)
     pub gacha_id: u32,
+    // @@protoc_insertion_point(field:DoGachaCsReq.simulate_magic)
+    pub simulate_magic: u32,
     // @@protoc_insertion_point(field:DoGachaCsReq.gacha_random)
     pub gacha_random: u32,
+    // @@protoc_insertion_point(field:DoGachaCsReq.gacha_num)
+    pub gacha_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DoGachaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl DoGachaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num_pulls",
-            |m: &DoGachaCsReq| { &m.num_pulls },
-            |m: &mut DoGachaCsReq| { &mut m.num_pulls },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPFCKNICPPJ",
-            |m: &DoGachaCsReq| { &m.FPFCKNICPPJ },
-            |m: &mut DoGachaCsReq| { &mut m.FPFCKNICPPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_id",
             |m: &DoGachaCsReq| { &m.gacha_id },
             |m: &mut DoGachaCsReq| { &mut m.gacha_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "simulate_magic",
+            |m: &DoGachaCsReq| { &m.simulate_magic },
+            |m: &mut DoGachaCsReq| { &mut m.simulate_magic },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_random",
             |m: &DoGachaCsReq| { &m.gacha_random },
             |m: &mut DoGachaCsReq| { &mut m.gacha_random },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gacha_num",
+            |m: &DoGachaCsReq| { &m.gacha_num },
+            |m: &mut DoGachaCsReq| { &mut m.gacha_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DoGachaCsReq>(
             "DoGachaCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.num_pulls = is.read_uint32()?;
-                },
-                48 => {
-                    self.FPFCKNICPPJ = is.read_uint32()?;
-                },
-                80 => {
+                56 => {
                     self.gacha_id = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
+                    self.simulate_magic = is.read_uint32()?;
+                },
+                8 => {
                     self.gacha_random = is.read_uint32()?;
+                },
+                48 => {
+                    self.gacha_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num_pulls != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.num_pulls);
-        }
-        if self.FPFCKNICPPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FPFCKNICPPJ);
-        }
         if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.gacha_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.gacha_id);
+        }
+        if self.simulate_magic != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.simulate_magic);
         }
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(1, self.gacha_random);
+        }
+        if self.gacha_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.gacha_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num_pulls != 0 {
-            os.write_uint32(15, self.num_pulls)?;
-        }
-        if self.FPFCKNICPPJ != 0 {
-            os.write_uint32(6, self.FPFCKNICPPJ)?;
-        }
         if self.gacha_id != 0 {
-            os.write_uint32(10, self.gacha_id)?;
+            os.write_uint32(7, self.gacha_id)?;
+        }
+        if self.simulate_magic != 0 {
+            os.write_uint32(4, self.simulate_magic)?;
         }
         if self.gacha_random != 0 {
-            os.write_uint32(7, self.gacha_random)?;
+            os.write_uint32(1, self.gacha_random)?;
+        }
+        if self.gacha_num != 0 {
+            os.write_uint32(6, self.gacha_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for DoGachaCsReq {
     }
 
     fn clear(&mut self) {
-        self.num_pulls = 0;
-        self.FPFCKNICPPJ = 0;
         self.gacha_id = 0;
+        self.simulate_magic = 0;
         self.gacha_random = 0;
+        self.gacha_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaCsReq {
         static instance: DoGachaCsReq = DoGachaCsReq {
-            num_pulls: 0,
-            FPFCKNICPPJ: 0,
             gacha_id: 0,
+            simulate_magic: 0,
             gacha_random: 0,
+            gacha_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12DoGachaCsReq.proto\"\x8b\x01\n\x0cDoGachaCsReq\x12\x1b\n\tnum_pull\
-    s\x18\x0f\x20\x01(\rR\x08numPulls\x12\x20\n\x0bFPFCKNICPPJ\x18\x06\x20\
-    \x01(\rR\x0bFPFCKNICPPJ\x12\x19\n\x08gacha_id\x18\n\x20\x01(\rR\x07gacha\
-    Id\x12!\n\x0cgacha_random\x18\x07\x20\x01(\rR\x0bgachaRandomb\x06proto3\
+    \n\x12DoGachaCsReq.proto\"\x90\x01\n\x0cDoGachaCsReq\x12\x19\n\x08gacha_\
+    id\x18\x07\x20\x01(\rR\x07gachaId\x12%\n\x0esimulate_magic\x18\x04\x20\
+    \x01(\rR\rsimulateMagic\x12!\n\x0cgacha_random\x18\x01\x20\x01(\rR\x0bga\
+    chaRandom\x12\x1b\n\tgacha_num\x18\x06\x20\x01(\rR\x08gachaNumb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

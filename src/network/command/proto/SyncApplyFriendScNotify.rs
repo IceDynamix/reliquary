@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncApplyFriendScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncApplyFriendScNotify.friend_apply_info)
-    pub friend_apply_info: ::protobuf::MessageField<super::FriendApplyInfo::FriendApplyInfo>,
+    // @@protoc_insertion_point(field:SyncApplyFriendScNotify.apply_info)
+    pub apply_info: ::protobuf::MessageField<super::FriendApplyInfo::FriendApplyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncApplyFriendScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncApplyFriendScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FriendApplyInfo::FriendApplyInfo>(
-            "friend_apply_info",
-            |m: &SyncApplyFriendScNotify| { &m.friend_apply_info },
-            |m: &mut SyncApplyFriendScNotify| { &mut m.friend_apply_info },
+            "apply_info",
+            |m: &SyncApplyFriendScNotify| { &m.apply_info },
+            |m: &mut SyncApplyFriendScNotify| { &mut m.apply_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncApplyFriendScNotify>(
             "SyncApplyFriendScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.friend_apply_info)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.apply_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.friend_apply_info.as_ref() {
+        if let Some(v) = self.apply_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.friend_apply_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.apply_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     }
 
     fn clear(&mut self) {
-        self.friend_apply_info.clear();
+        self.apply_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncApplyFriendScNotify {
         static instance: SyncApplyFriendScNotify = SyncApplyFriendScNotify {
-            friend_apply_info: ::protobuf::MessageField::none(),
+            apply_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncApplyFriendScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSyncApplyFriendScNotify.proto\x1a\x15FriendApplyInfo.proto\"W\n\
-    \x17SyncApplyFriendScNotify\x12<\n\x11friend_apply_info\x18\x0c\x20\x01(\
-    \x0b2\x10.FriendApplyInfoR\x0ffriendApplyInfob\x06proto3\
+    \n\x1dSyncApplyFriendScNotify.proto\x1a\x15FriendApplyInfo.proto\"J\n\
+    \x17SyncApplyFriendScNotify\x12/\n\napply_info\x18\x04\x20\x01(\x0b2\x10\
+    .FriendApplyInfoR\tapplyInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

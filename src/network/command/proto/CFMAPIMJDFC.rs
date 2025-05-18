@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFMAPIMJDFC {
     // message fields
-    // @@protoc_insertion_point(field:CFMAPIMJDFC.LHMIDPAMBPD)
-    pub LHMIDPAMBPD: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
+    // @@protoc_insertion_point(field:CFMAPIMJDFC.maze_buff_list)
+    pub maze_buff_list: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
     // special fields
     // @@protoc_insertion_point(special_field:CFMAPIMJDFC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CFMAPIMJDFC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LHMIDPAMBPD",
-            |m: &CFMAPIMJDFC| { &m.LHMIDPAMBPD },
-            |m: &mut CFMAPIMJDFC| { &mut m.LHMIDPAMBPD },
+            "maze_buff_list",
+            |m: &CFMAPIMJDFC| { &m.maze_buff_list },
+            |m: &mut CFMAPIMJDFC| { &mut m.maze_buff_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFMAPIMJDFC>(
             "CFMAPIMJDFC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CFMAPIMJDFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.LHMIDPAMBPD.push(is.read_message()?);
+                26 => {
+                    self.maze_buff_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for CFMAPIMJDFC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LHMIDPAMBPD {
+        for value in &self.maze_buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for CFMAPIMJDFC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LHMIDPAMBPD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.maze_buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for CFMAPIMJDFC {
     }
 
     fn clear(&mut self) {
-        self.LHMIDPAMBPD.clear();
+        self.maze_buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFMAPIMJDFC {
         static instance: CFMAPIMJDFC = CFMAPIMJDFC {
-            LHMIDPAMBPD: ::std::vec::Vec::new(),
+            maze_buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for CFMAPIMJDFC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CFMAPIMJDFC.proto\x1a\x11MKEELPFDCLM.proto\"=\n\x0bCFMAPIMJDFC\x12\
-    .\n\x0bLHMIDPAMBPD\x18\x0e\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bLHMIDPAMBPD\
-    b\x06proto3\
+    \n\x11CFMAPIMJDFC.proto\x1a\x11MKEELPFDCLM.proto\"A\n\x0bCFMAPIMJDFC\x12\
+    2\n\x0emaze_buff_list\x18\x03\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0cmazeBuff\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

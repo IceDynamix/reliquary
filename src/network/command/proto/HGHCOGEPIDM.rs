@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGHCOGEPIDM {
     // message fields
+    // @@protoc_insertion_point(field:HGHCOGEPIDM.PJHLOCDBAEH)
+    pub PJHLOCDBAEH: bool,
+    // @@protoc_insertion_point(field:HGHCOGEPIDM.HOEPOJNNFCI)
+    pub HOEPOJNNFCI: i64,
+    // @@protoc_insertion_point(field:HGHCOGEPIDM.HDLADIBHBHH)
+    pub HDLADIBHBHH: u32,
+    // @@protoc_insertion_point(field:HGHCOGEPIDM.CIGBOGHAFOF)
+    pub CIGBOGHAFOF: i64,
+    // @@protoc_insertion_point(field:HGHCOGEPIDM.JOMNPADAGGK)
+    pub JOMNPADAGGK: bool,
     // @@protoc_insertion_point(field:HGHCOGEPIDM.CILNJIDIDHL)
     pub CILNJIDIDHL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HGHCOGEPIDM.pool_id)
     pub pool_id: u32,
-    // @@protoc_insertion_point(field:HGHCOGEPIDM.PJHLOCDBAEH)
-    pub PJHLOCDBAEH: bool,
-    // @@protoc_insertion_point(field:HGHCOGEPIDM.CIGBOGHAFOF)
-    pub CIGBOGHAFOF: i64,
-    // @@protoc_insertion_point(field:HGHCOGEPIDM.HDLADIBHBHH)
-    pub HDLADIBHBHH: u32,
-    // @@protoc_insertion_point(field:HGHCOGEPIDM.HOEPOJNNFCI)
-    pub HOEPOJNNFCI: i64,
-    // @@protoc_insertion_point(field:HGHCOGEPIDM.JOMNPADAGGK)
-    pub JOMNPADAGGK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HGHCOGEPIDM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,31 @@ impl HGHCOGEPIDM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PJHLOCDBAEH",
+            |m: &HGHCOGEPIDM| { &m.PJHLOCDBAEH },
+            |m: &mut HGHCOGEPIDM| { &mut m.PJHLOCDBAEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HOEPOJNNFCI",
+            |m: &HGHCOGEPIDM| { &m.HOEPOJNNFCI },
+            |m: &mut HGHCOGEPIDM| { &mut m.HOEPOJNNFCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDLADIBHBHH",
+            |m: &HGHCOGEPIDM| { &m.HDLADIBHBHH },
+            |m: &mut HGHCOGEPIDM| { &mut m.HDLADIBHBHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIGBOGHAFOF",
+            |m: &HGHCOGEPIDM| { &m.CIGBOGHAFOF },
+            |m: &mut HGHCOGEPIDM| { &mut m.CIGBOGHAFOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOMNPADAGGK",
+            |m: &HGHCOGEPIDM| { &m.JOMNPADAGGK },
+            |m: &mut HGHCOGEPIDM| { &mut m.JOMNPADAGGK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CILNJIDIDHL",
             |m: &HGHCOGEPIDM| { &m.CILNJIDIDHL },
@@ -70,31 +95,6 @@ impl HGHCOGEPIDM {
             "pool_id",
             |m: &HGHCOGEPIDM| { &m.pool_id },
             |m: &mut HGHCOGEPIDM| { &mut m.pool_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJHLOCDBAEH",
-            |m: &HGHCOGEPIDM| { &m.PJHLOCDBAEH },
-            |m: &mut HGHCOGEPIDM| { &mut m.PJHLOCDBAEH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIGBOGHAFOF",
-            |m: &HGHCOGEPIDM| { &m.CIGBOGHAFOF },
-            |m: &mut HGHCOGEPIDM| { &mut m.CIGBOGHAFOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDLADIBHBHH",
-            |m: &HGHCOGEPIDM| { &m.HDLADIBHBHH },
-            |m: &mut HGHCOGEPIDM| { &mut m.HDLADIBHBHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOEPOJNNFCI",
-            |m: &HGHCOGEPIDM| { &m.HOEPOJNNFCI },
-            |m: &mut HGHCOGEPIDM| { &mut m.HOEPOJNNFCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOMNPADAGGK",
-            |m: &HGHCOGEPIDM| { &m.JOMNPADAGGK },
-            |m: &mut HGHCOGEPIDM| { &mut m.JOMNPADAGGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGHCOGEPIDM>(
             "HGHCOGEPIDM",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for HGHCOGEPIDM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CILNJIDIDHL)?;
-                },
-                56 => {
-                    self.CILNJIDIDHL.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.pool_id = is.read_uint32()?;
-                },
-                120 => {
+                16 => {
                     self.PJHLOCDBAEH = is.read_bool()?;
                 },
-                96 => {
-                    self.CIGBOGHAFOF = is.read_int64()?;
-                },
-                88 => {
-                    self.HDLADIBHBHH = is.read_uint32()?;
-                },
-                64 => {
+                112 => {
                     self.HOEPOJNNFCI = is.read_int64()?;
                 },
-                104 => {
+                96 => {
+                    self.HDLADIBHBHH = is.read_uint32()?;
+                },
+                32 => {
+                    self.CIGBOGHAFOF = is.read_int64()?;
+                },
+                64 => {
                     self.JOMNPADAGGK = is.read_bool()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CILNJIDIDHL)?;
+                },
+                120 => {
+                    self.CILNJIDIDHL.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.pool_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,24 +150,24 @@ impl ::protobuf::Message for HGHCOGEPIDM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CILNJIDIDHL);
-        if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.pool_id);
-        }
         if self.PJHLOCDBAEH != false {
             my_size += 1 + 1;
         }
-        if self.CIGBOGHAFOF != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.CIGBOGHAFOF);
+        if self.HOEPOJNNFCI != 0 {
+            my_size += ::protobuf::rt::int64_size(14, self.HOEPOJNNFCI);
         }
         if self.HDLADIBHBHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HDLADIBHBHH);
+            my_size += ::protobuf::rt::uint32_size(12, self.HDLADIBHBHH);
         }
-        if self.HOEPOJNNFCI != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.HOEPOJNNFCI);
+        if self.CIGBOGHAFOF != 0 {
+            my_size += ::protobuf::rt::int64_size(4, self.CIGBOGHAFOF);
         }
         if self.JOMNPADAGGK != false {
             my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.CILNJIDIDHL);
+        if self.pool_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.pool_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,24 +175,24 @@ impl ::protobuf::Message for HGHCOGEPIDM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.CILNJIDIDHL)?;
-        if self.pool_id != 0 {
-            os.write_uint32(14, self.pool_id)?;
-        }
         if self.PJHLOCDBAEH != false {
-            os.write_bool(15, self.PJHLOCDBAEH)?;
-        }
-        if self.CIGBOGHAFOF != 0 {
-            os.write_int64(12, self.CIGBOGHAFOF)?;
-        }
-        if self.HDLADIBHBHH != 0 {
-            os.write_uint32(11, self.HDLADIBHBHH)?;
+            os.write_bool(2, self.PJHLOCDBAEH)?;
         }
         if self.HOEPOJNNFCI != 0 {
-            os.write_int64(8, self.HOEPOJNNFCI)?;
+            os.write_int64(14, self.HOEPOJNNFCI)?;
+        }
+        if self.HDLADIBHBHH != 0 {
+            os.write_uint32(12, self.HDLADIBHBHH)?;
+        }
+        if self.CIGBOGHAFOF != 0 {
+            os.write_int64(4, self.CIGBOGHAFOF)?;
         }
         if self.JOMNPADAGGK != false {
-            os.write_bool(13, self.JOMNPADAGGK)?;
+            os.write_bool(8, self.JOMNPADAGGK)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.CILNJIDIDHL)?;
+        if self.pool_id != 0 {
+            os.write_uint32(3, self.pool_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -211,25 +211,25 @@ impl ::protobuf::Message for HGHCOGEPIDM {
     }
 
     fn clear(&mut self) {
+        self.PJHLOCDBAEH = false;
+        self.HOEPOJNNFCI = 0;
+        self.HDLADIBHBHH = 0;
+        self.CIGBOGHAFOF = 0;
+        self.JOMNPADAGGK = false;
         self.CILNJIDIDHL.clear();
         self.pool_id = 0;
-        self.PJHLOCDBAEH = false;
-        self.CIGBOGHAFOF = 0;
-        self.HDLADIBHBHH = 0;
-        self.HOEPOJNNFCI = 0;
-        self.JOMNPADAGGK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGHCOGEPIDM {
         static instance: HGHCOGEPIDM = HGHCOGEPIDM {
+            PJHLOCDBAEH: false,
+            HOEPOJNNFCI: 0,
+            HDLADIBHBHH: 0,
+            CIGBOGHAFOF: 0,
+            JOMNPADAGGK: false,
             CILNJIDIDHL: ::std::vec::Vec::new(),
             pool_id: 0,
-            PJHLOCDBAEH: false,
-            CIGBOGHAFOF: 0,
-            HDLADIBHBHH: 0,
-            HOEPOJNNFCI: 0,
-            JOMNPADAGGK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -254,13 +254,13 @@ impl ::protobuf::reflect::ProtobufValue for HGHCOGEPIDM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HGHCOGEPIDM.proto\"\xf2\x01\n\x0bHGHCOGEPIDM\x12\x20\n\x0bCILNJIDI\
-    DHL\x18\x07\x20\x03(\rR\x0bCILNJIDIDHL\x12\x17\n\x07pool_id\x18\x0e\x20\
-    \x01(\rR\x06poolId\x12\x20\n\x0bPJHLOCDBAEH\x18\x0f\x20\x01(\x08R\x0bPJH\
-    LOCDBAEH\x12\x20\n\x0bCIGBOGHAFOF\x18\x0c\x20\x01(\x03R\x0bCIGBOGHAFOF\
-    \x12\x20\n\x0bHDLADIBHBHH\x18\x0b\x20\x01(\rR\x0bHDLADIBHBHH\x12\x20\n\
-    \x0bHOEPOJNNFCI\x18\x08\x20\x01(\x03R\x0bHOEPOJNNFCI\x12\x20\n\x0bJOMNPA\
-    DAGGK\x18\r\x20\x01(\x08R\x0bJOMNPADAGGKb\x06proto3\
+    \n\x11HGHCOGEPIDM.proto\"\xf2\x01\n\x0bHGHCOGEPIDM\x12\x20\n\x0bPJHLOCDB\
+    AEH\x18\x02\x20\x01(\x08R\x0bPJHLOCDBAEH\x12\x20\n\x0bHOEPOJNNFCI\x18\
+    \x0e\x20\x01(\x03R\x0bHOEPOJNNFCI\x12\x20\n\x0bHDLADIBHBHH\x18\x0c\x20\
+    \x01(\rR\x0bHDLADIBHBHH\x12\x20\n\x0bCIGBOGHAFOF\x18\x04\x20\x01(\x03R\
+    \x0bCIGBOGHAFOF\x12\x20\n\x0bJOMNPADAGGK\x18\x08\x20\x01(\x08R\x0bJOMNPA\
+    DAGGK\x12\x20\n\x0bCILNJIDIDHL\x18\x0f\x20\x03(\rR\x0bCILNJIDIDHL\x12\
+    \x17\n\x07pool_id\x18\x03\x20\x01(\rR\x06poolIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

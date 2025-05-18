@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeLineupLeaderScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.other_slot)
-    pub other_slot: u32,
+    // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.slot)
+    pub slot: u32,
     // @@protoc_insertion_point(field:ChangeLineupLeaderScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ChangeLineupLeaderScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "other_slot",
-            |m: &ChangeLineupLeaderScRsp| { &m.other_slot },
-            |m: &mut ChangeLineupLeaderScRsp| { &mut m.other_slot },
+            "slot",
+            |m: &ChangeLineupLeaderScRsp| { &m.slot },
+            |m: &mut ChangeLineupLeaderScRsp| { &mut m.slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.other_slot = is.read_uint32()?;
+                64 => {
+                    self.slot = is.read_uint32()?;
                 },
-                16 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.other_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.other_slot);
+        if self.slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.slot);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.other_slot != 0 {
-            os.write_uint32(12, self.other_slot)?;
+        if self.slot != 0 {
+            os.write_uint32(8, self.slot)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChangeLineupLeaderScRsp {
     }
 
     fn clear(&mut self) {
-        self.other_slot = 0;
+        self.slot = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeLineupLeaderScRsp {
         static instance: ChangeLineupLeaderScRsp = ChangeLineupLeaderScRsp {
-            other_slot: 0,
+            slot: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChangeLineupLeaderScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChangeLineupLeaderScRsp.proto\"R\n\x17ChangeLineupLeaderScRsp\x12\
-    \x1d\n\nother_slot\x18\x0c\x20\x01(\rR\totherSlot\x12\x18\n\x07retcode\
-    \x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1dChangeLineupLeaderScRsp.proto\"G\n\x17ChangeLineupLeaderScRsp\x12\
+    \x12\n\x04slot\x18\x08\x20\x01(\rR\x04slot\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

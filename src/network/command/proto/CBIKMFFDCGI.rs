@@ -72,7 +72,7 @@ impl ::protobuf::Message for CBIKMFFDCGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHJOCIPOBCF)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CBIKMFFDCGI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HHJOCIPOBCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for CBIKMFFDCGI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CBIKMFFDCGI.proto\x1a\x11IIKNGNHDMFI.proto\"=\n\x0bCBIKMFFDCGI\x12\
-    .\n\x0bHHJOCIPOBCF\x18\x06\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bHHJOCIPOBCF\
+    .\n\x0bHHJOCIPOBCF\x18\x01\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bHHJOCIPOBCF\
     b\x06proto3\
 ";
 

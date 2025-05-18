@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRaidCollectionType {
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionTypeNone)
     CmdRaidCollectionTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScNotify)
-    CmdRaidCollectionDataScNotify = 6960,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataCsReq)
-    CmdRaidCollectionDataCsReq = 6957,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidScRsp)
-    CmdRaidCollectionEnterNextRaidScRsp = 6954,
+    CmdRaidCollectionDataCsReq = 6954,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScNotify)
+    CmdRaidCollectionDataScNotify = 6948,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScRsp)
-    CmdRaidCollectionDataScRsp = 6956,
+    CmdRaidCollectionDataScRsp = 6953,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidCsReq)
-    CmdRaidCollectionEnterNextRaidCsReq = 6944,
+    CmdRaidCollectionEnterNextRaidCsReq = 6950,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidScRsp)
+    CmdRaidCollectionEnterNextRaidScRsp = 6944,
 }
 
 impl ::protobuf::Enum for CmdRaidCollectionType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidCollectionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionTypeNone),
-            6960 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
-            6957 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
-            6954 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
-            6956 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
-            6944 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
+            6954 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
+            6948 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
+            6953 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
+            6950 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
+            6944 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRaidCollectionType> {
         match str {
             "CmdRaidCollectionTypeNone" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionTypeNone),
-            "CmdRaidCollectionDataScNotify" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
             "CmdRaidCollectionDataCsReq" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
-            "CmdRaidCollectionEnterNextRaidScRsp" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
+            "CmdRaidCollectionDataScNotify" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
             "CmdRaidCollectionDataScRsp" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
             "CmdRaidCollectionEnterNextRaidCsReq" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
+            "CmdRaidCollectionEnterNextRaidScRsp" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRaidCollectionType] = &[
         CmdRaidCollectionType::CmdRaidCollectionTypeNone,
-        CmdRaidCollectionType::CmdRaidCollectionDataScNotify,
         CmdRaidCollectionType::CmdRaidCollectionDataCsReq,
-        CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp,
+        CmdRaidCollectionType::CmdRaidCollectionDataScNotify,
         CmdRaidCollectionType::CmdRaidCollectionDataScRsp,
         CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq,
+        CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdRaidCollectionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRaidCollectionType::CmdRaidCollectionTypeNone => 0,
-            CmdRaidCollectionType::CmdRaidCollectionDataScNotify => 1,
-            CmdRaidCollectionType::CmdRaidCollectionDataCsReq => 2,
-            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp => 3,
-            CmdRaidCollectionType::CmdRaidCollectionDataScRsp => 4,
-            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq => 5,
+            CmdRaidCollectionType::CmdRaidCollectionDataCsReq => 1,
+            CmdRaidCollectionType::CmdRaidCollectionDataScNotify => 2,
+            CmdRaidCollectionType::CmdRaidCollectionDataScRsp => 3,
+            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq => 4,
+            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdRaidCollectionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdRaidCollectionType.proto*\xf0\x01\n\x15CmdRaidCollectionType\
-    \x12\x1d\n\x19CmdRaidCollectionTypeNone\x10\0\x12\"\n\x1dCmdRaidCollecti\
-    onDataScNotify\x10\xb06\x12\x1f\n\x1aCmdRaidCollectionDataCsReq\x10\xad6\
-    \x12(\n#CmdRaidCollectionEnterNextRaidScRsp\x10\xaa6\x12\x1f\n\x1aCmdRai\
-    dCollectionDataScRsp\x10\xac6\x12(\n#CmdRaidCollectionEnterNextRaidCsReq\
+    \x12\x1d\n\x19CmdRaidCollectionTypeNone\x10\0\x12\x1f\n\x1aCmdRaidCollec\
+    tionDataCsReq\x10\xaa6\x12\"\n\x1dCmdRaidCollectionDataScNotify\x10\xa46\
+    \x12\x1f\n\x1aCmdRaidCollectionDataScRsp\x10\xa96\x12(\n#CmdRaidCollecti\
+    onEnterNextRaidCsReq\x10\xa66\x12(\n#CmdRaidCollectionEnterNextRaidScRsp\
     \x10\xa06b\x06proto3\
 ";
 

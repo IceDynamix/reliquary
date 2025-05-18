@@ -79,10 +79,10 @@ impl ::protobuf::Message for CustomSaveData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.group_id = is.read_uint32()?;
                 },
-                82 => {
+                74 => {
                     self.save_data = is.read_string()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CustomSaveData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
         if !self.save_data.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.save_data);
+            my_size += ::protobuf::rt::string_size(9, &self.save_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CustomSaveData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(2, self.group_id)?;
+            os.write_uint32(3, self.group_id)?;
         }
         if !self.save_data.is_empty() {
-            os.write_string(10, &self.save_data)?;
+            os.write_string(9, &self.save_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CustomSaveData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CustomSaveData.proto\"H\n\x0eCustomSaveData\x12\x19\n\x08group_id\
-    \x18\x02\x20\x01(\rR\x07groupId\x12\x1b\n\tsave_data\x18\n\x20\x01(\tR\
+    \x18\x03\x20\x01(\rR\x07groupId\x12\x1b\n\tsave_data\x18\t\x20\x01(\tR\
     \x08saveDatab\x06proto3\
 ";
 

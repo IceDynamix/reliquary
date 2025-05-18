@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNAHOJLCNJA {
     // message fields
+    // @@protoc_insertion_point(field:JNAHOJLCNJA.HEIDCIKEDPD)
+    pub HEIDCIKEDPD: u32,
+    // @@protoc_insertion_point(field:JNAHOJLCNJA.progress)
+    pub progress: u32,
     // @@protoc_insertion_point(field:JNAHOJLCNJA.area_id)
     pub area_id: u32,
     // @@protoc_insertion_point(field:JNAHOJLCNJA.CGFIHJCCGCD)
     pub CGFIHJCCGCD: ::std::vec::Vec<super::PPKDPAJPAGF::PPKDPAJPAGF>,
-    // @@protoc_insertion_point(field:JNAHOJLCNJA.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:JNAHOJLCNJA.HEIDCIKEDPD)
-    pub HEIDCIKEDPD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JNAHOJLCNJA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl JNAHOJLCNJA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HEIDCIKEDPD",
+            |m: &JNAHOJLCNJA| { &m.HEIDCIKEDPD },
+            |m: &mut JNAHOJLCNJA| { &mut m.HEIDCIKEDPD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &JNAHOJLCNJA| { &m.progress },
+            |m: &mut JNAHOJLCNJA| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &JNAHOJLCNJA| { &m.area_id },
             |m: &mut JNAHOJLCNJA| { &mut m.area_id },
@@ -64,16 +74,6 @@ impl JNAHOJLCNJA {
             "CGFIHJCCGCD",
             |m: &JNAHOJLCNJA| { &m.CGFIHJCCGCD },
             |m: &mut JNAHOJLCNJA| { &mut m.CGFIHJCCGCD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &JNAHOJLCNJA| { &m.progress },
-            |m: &mut JNAHOJLCNJA| { &mut m.progress },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEIDCIKEDPD",
-            |m: &JNAHOJLCNJA| { &m.HEIDCIKEDPD },
-            |m: &mut JNAHOJLCNJA| { &mut m.HEIDCIKEDPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNAHOJLCNJA>(
             "JNAHOJLCNJA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JNAHOJLCNJA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.area_id = is.read_uint32()?;
+                104 => {
+                    self.HEIDCIKEDPD = is.read_uint32()?;
                 },
-                122 => {
-                    self.CGFIHJCCGCD.push(is.read_message()?);
-                },
-                24 => {
+                56 => {
                     self.progress = is.read_uint32()?;
                 },
-                64 => {
-                    self.HEIDCIKEDPD = is.read_uint32()?;
+                72 => {
+                    self.area_id = is.read_uint32()?;
+                },
+                42 => {
+                    self.CGFIHJCCGCD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for JNAHOJLCNJA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HEIDCIKEDPD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.HEIDCIKEDPD);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.progress);
+        }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
         }
         for value in &self.CGFIHJCCGCD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.progress);
-        }
-        if self.HEIDCIKEDPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HEIDCIKEDPD);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HEIDCIKEDPD != 0 {
+            os.write_uint32(13, self.HEIDCIKEDPD)?;
+        }
+        if self.progress != 0 {
+            os.write_uint32(7, self.progress)?;
+        }
         if self.area_id != 0 {
-            os.write_uint32(2, self.area_id)?;
+            os.write_uint32(9, self.area_id)?;
         }
         for v in &self.CGFIHJCCGCD {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.progress != 0 {
-            os.write_uint32(3, self.progress)?;
-        }
-        if self.HEIDCIKEDPD != 0 {
-            os.write_uint32(8, self.HEIDCIKEDPD)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for JNAHOJLCNJA {
     }
 
     fn clear(&mut self) {
+        self.HEIDCIKEDPD = 0;
+        self.progress = 0;
         self.area_id = 0;
         self.CGFIHJCCGCD.clear();
-        self.progress = 0;
-        self.HEIDCIKEDPD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNAHOJLCNJA {
         static instance: JNAHOJLCNJA = JNAHOJLCNJA {
+            HEIDCIKEDPD: 0,
+            progress: 0,
             area_id: 0,
             CGFIHJCCGCD: ::std::vec::Vec::new(),
-            progress: 0,
-            HEIDCIKEDPD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for JNAHOJLCNJA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JNAHOJLCNJA.proto\x1a\x11PPKDPAJPAGF.proto\"\x94\x01\n\x0bJNAHOJLC\
-    NJA\x12\x17\n\x07area_id\x18\x02\x20\x01(\rR\x06areaId\x12.\n\x0bCGFIHJC\
-    CGCD\x18\x0f\x20\x03(\x0b2\x0c.PPKDPAJPAGFR\x0bCGFIHJCCGCD\x12\x1a\n\x08\
-    progress\x18\x03\x20\x01(\rR\x08progress\x12\x20\n\x0bHEIDCIKEDPD\x18\
-    \x08\x20\x01(\rR\x0bHEIDCIKEDPDb\x06proto3\
+    NJA\x12\x20\n\x0bHEIDCIKEDPD\x18\r\x20\x01(\rR\x0bHEIDCIKEDPD\x12\x1a\n\
+    \x08progress\x18\x07\x20\x01(\rR\x08progress\x12\x17\n\x07area_id\x18\t\
+    \x20\x01(\rR\x06areaId\x12.\n\x0bCGFIHJCCGCD\x18\x05\x20\x03(\x0b2\x0c.P\
+    PKDPAJPAGFR\x0bCGFIHJCCGCDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

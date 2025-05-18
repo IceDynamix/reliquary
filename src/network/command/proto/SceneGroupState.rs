@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneGroupState {
     // message fields
+    // @@protoc_insertion_point(field:SceneGroupState.state)
+    pub state: u32,
     // @@protoc_insertion_point(field:SceneGroupState.is_default)
     pub is_default: bool,
     // @@protoc_insertion_point(field:SceneGroupState.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:SceneGroupState.state)
-    pub state: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneGroupState.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl SceneGroupState {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &SceneGroupState| { &m.state },
+            |m: &mut SceneGroupState| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_default",
             |m: &SceneGroupState| { &m.is_default },
             |m: &mut SceneGroupState| { &mut m.is_default },
@@ -62,11 +67,6 @@ impl SceneGroupState {
             "group_id",
             |m: &SceneGroupState| { &m.group_id },
             |m: &mut SceneGroupState| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &SceneGroupState| { &m.state },
-            |m: &mut SceneGroupState| { &mut m.state },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneGroupState>(
             "SceneGroupState",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneGroupState {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                96 => {
+                    self.state = is.read_uint32()?;
+                },
+                32 => {
                     self.is_default = is.read_bool()?;
                 },
-                96 => {
+                24 => {
                     self.group_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.state = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SceneGroupState {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.state != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.state);
+        }
         if self.is_default != false {
             my_size += 1 + 1;
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
-        }
-        if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.state);
+            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SceneGroupState {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.state != 0 {
+            os.write_uint32(12, self.state)?;
+        }
         if self.is_default != false {
-            os.write_bool(6, self.is_default)?;
+            os.write_bool(4, self.is_default)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
-        }
-        if self.state != 0 {
-            os.write_uint32(5, self.state)?;
+            os.write_uint32(3, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SceneGroupState {
     }
 
     fn clear(&mut self) {
+        self.state = 0;
         self.is_default = false;
         self.group_id = 0;
-        self.state = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneGroupState {
         static instance: SceneGroupState = SceneGroupState {
+            state: 0,
             is_default: false,
             group_id: 0,
-            state: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15SceneGroupState.proto\"a\n\x0fSceneGroupState\x12\x1d\n\nis_defaul\
-    t\x18\x06\x20\x01(\x08R\tisDefault\x12\x19\n\x08group_id\x18\x0c\x20\x01\
-    (\rR\x07groupId\x12\x14\n\x05state\x18\x05\x20\x01(\rR\x05stateb\x06prot\
-    o3\
+    \n\x15SceneGroupState.proto\"a\n\x0fSceneGroupState\x12\x14\n\x05state\
+    \x18\x0c\x20\x01(\rR\x05state\x12\x1d\n\nis_default\x18\x04\x20\x01(\x08\
+    R\tisDefault\x12\x19\n\x08group_id\x18\x03\x20\x01(\rR\x07groupIdb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

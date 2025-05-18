@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiplayerMatch3FinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.NIAEGHJLNMB)
-    pub NIAEGHJLNMB: ::protobuf::MessageField<super::CDIMEMFJJFP::CDIMEMFJJFP>,
     // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.FDGDOKAFBDH)
     pub FDGDOKAFBDH: u32,
     // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::KEEKDDAHFOE::KEEKDDAHFOE>,
+    pub reason: ::protobuf::EnumOrUnknown<super::Match3FinishReason::Match3FinishReason>,
     // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.KOJIHJIHKIA)
     pub KOJIHJIHKIA: u32,
+    // @@protoc_insertion_point(field:MultiplayerMatch3FinishScNotify.NIAEGHJLNMB)
+    pub NIAEGHJLNMB: ::protobuf::MessageField<super::CDIMEMFJJFP::CDIMEMFJJFP>,
     // special fields
     // @@protoc_insertion_point(special_field:MultiplayerMatch3FinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl MultiplayerMatch3FinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDIMEMFJJFP::CDIMEMFJJFP>(
-            "NIAEGHJLNMB",
-            |m: &MultiplayerMatch3FinishScNotify| { &m.NIAEGHJLNMB },
-            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.NIAEGHJLNMB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDGDOKAFBDH",
             |m: &MultiplayerMatch3FinishScNotify| { &m.FDGDOKAFBDH },
@@ -74,6 +69,11 @@ impl MultiplayerMatch3FinishScNotify {
             "KOJIHJIHKIA",
             |m: &MultiplayerMatch3FinishScNotify| { &m.KOJIHJIHKIA },
             |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.KOJIHJIHKIA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDIMEMFJJFP::CDIMEMFJJFP>(
+            "NIAEGHJLNMB",
+            |m: &MultiplayerMatch3FinishScNotify| { &m.NIAEGHJLNMB },
+            |m: &mut MultiplayerMatch3FinishScNotify| { &mut m.NIAEGHJLNMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultiplayerMatch3FinishScNotify>(
             "MultiplayerMatch3FinishScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIAEGHJLNMB)?;
-                },
-                96 => {
+                72 => {
                     self.FDGDOKAFBDH = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                24 => {
                     self.KOJIHJIHKIA = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIAEGHJLNMB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FDGDOKAFBDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FDGDOKAFBDH);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::Match3FinishReason::Match3FinishReason::MATCH3_FINISH_REASON_DEFAULT) {
+            my_size += ::protobuf::rt::int32_size(1, self.reason.value());
+        }
+        if self.KOJIHJIHKIA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KOJIHJIHKIA);
+        }
         if let Some(v) = self.NIAEGHJLNMB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FDGDOKAFBDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FDGDOKAFBDH);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::KEEKDDAHFOE::KEEKDDAHFOE::MATCH3_FINISH_REASON_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
-        }
-        if self.KOJIHJIHKIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KOJIHJIHKIA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NIAEGHJLNMB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.FDGDOKAFBDH != 0 {
-            os.write_uint32(12, self.FDGDOKAFBDH)?;
+            os.write_uint32(9, self.FDGDOKAFBDH)?;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::KEEKDDAHFOE::KEEKDDAHFOE::MATCH3_FINISH_REASON_DEFAULT) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::Match3FinishReason::Match3FinishReason::MATCH3_FINISH_REASON_DEFAULT) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.KOJIHJIHKIA != 0 {
-            os.write_uint32(15, self.KOJIHJIHKIA)?;
+            os.write_uint32(3, self.KOJIHJIHKIA)?;
+        }
+        if let Some(v) = self.NIAEGHJLNMB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for MultiplayerMatch3FinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.NIAEGHJLNMB.clear();
         self.FDGDOKAFBDH = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::KEEKDDAHFOE::KEEKDDAHFOE::MATCH3_FINISH_REASON_DEFAULT);
+        self.reason = ::protobuf::EnumOrUnknown::new(super::Match3FinishReason::Match3FinishReason::MATCH3_FINISH_REASON_DEFAULT);
         self.KOJIHJIHKIA = 0;
+        self.NIAEGHJLNMB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiplayerMatch3FinishScNotify {
         static instance: MultiplayerMatch3FinishScNotify = MultiplayerMatch3FinishScNotify {
-            NIAEGHJLNMB: ::protobuf::MessageField::none(),
             FDGDOKAFBDH: 0,
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
             KOJIHJIHKIA: 0,
+            NIAEGHJLNMB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerMatch3FinishScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MultiplayerMatch3FinishScNotify.proto\x1a\x11CDIMEMFJJFP.proto\x1a\
-    \x11KEEKDDAHFOE.proto\"\xbb\x01\n\x1fMultiplayerMatch3FinishScNotify\x12\
-    .\n\x0bNIAEGHJLNMB\x18\x05\x20\x01(\x0b2\x0c.CDIMEMFJJFPR\x0bNIAEGHJLNMB\
-    \x12\x20\n\x0bFDGDOKAFBDH\x18\x0c\x20\x01(\rR\x0bFDGDOKAFBDH\x12$\n\x06r\
-    eason\x18\x07\x20\x01(\x0e2\x0c.KEEKDDAHFOER\x06reason\x12\x20\n\x0bKOJI\
-    HJIHKIA\x18\x0f\x20\x01(\rR\x0bKOJIHJIHKIAb\x06proto3\
+    \x18Match3FinishReason.proto\"\xc2\x01\n\x1fMultiplayerMatch3FinishScNot\
+    ify\x12\x20\n\x0bFDGDOKAFBDH\x18\t\x20\x01(\rR\x0bFDGDOKAFBDH\x12+\n\x06\
+    reason\x18\x01\x20\x01(\x0e2\x13.Match3FinishReasonR\x06reason\x12\x20\n\
+    \x0bKOJIHJIHKIA\x18\x03\x20\x01(\rR\x0bKOJIHJIHKIA\x12.\n\x0bNIAEGHJLNMB\
+    \x18\r\x20\x01(\x0b2\x0c.CDIMEMFJJFPR\x0bNIAEGHJLNMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::CDIMEMFJJFP::file_descriptor().clone());
-            deps.push(super::KEEKDDAHFOE::file_descriptor().clone());
+            deps.push(super::Match3FinishReason::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultiplayerMatch3FinishScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -33,7 +33,7 @@ pub struct CHKIICNAPHA {
     // @@protoc_insertion_point(field:CHKIICNAPHA.KHCNAJOKJHJ)
     pub KHCNAJOKJHJ: u32,
     // message oneof groups
-    pub JDICGGKKOOI: ::std::option::Option<chkiicnapha::JDICGGKKOOI>,
+    pub IHAGGILDANL: ::std::option::Option<chkiicnapha::IHAGGILDANL>,
     // special fields
     // @@protoc_insertion_point(special_field:CHKIICNAPHA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,150 +50,150 @@ impl CHKIICNAPHA {
         ::std::default::Default::default()
     }
 
-    // .LDCHNCDFICP MJBENBDBHAJ = 1613;
+    // .ChallengeStatistics challenge_default = 172;
 
-    pub fn MJBENBDBHAJ(&self) -> &super::LDCHNCDFICP::LDCHNCDFICP {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(ref v)) => v,
-            _ => <super::LDCHNCDFICP::LDCHNCDFICP as ::protobuf::Message>::default_instance(),
+    pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(ref v)) => v,
+            _ => <super::ChallengeStatistics::ChallengeStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MJBENBDBHAJ(&mut self) {
-        self.JDICGGKKOOI = ::std::option::Option::None;
+    pub fn clear_challenge_default(&mut self) {
+        self.IHAGGILDANL = ::std::option::Option::None;
     }
 
-    pub fn has_MJBENBDBHAJ(&self) -> bool {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(..)) => true,
+    pub fn has_challenge_default(&self) -> bool {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MJBENBDBHAJ(&mut self, v: super::LDCHNCDFICP::LDCHNCDFICP) {
-        self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(v))
+    pub fn set_challenge_default(&mut self, v: super::ChallengeStatistics::ChallengeStatistics) {
+        self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MJBENBDBHAJ(&mut self) -> &mut super::LDCHNCDFICP::LDCHNCDFICP {
-        if let ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(_)) = self.JDICGGKKOOI {
+    pub fn mut_challenge_default(&mut self) -> &mut super::ChallengeStatistics::ChallengeStatistics {
+        if let ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(_)) = self.IHAGGILDANL {
         } else {
-            self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(super::LDCHNCDFICP::LDCHNCDFICP::new()));
+            self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
         }
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(ref mut v)) => v,
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MJBENBDBHAJ(&mut self) -> super::LDCHNCDFICP::LDCHNCDFICP {
-        if self.has_MJBENBDBHAJ() {
-            match self.JDICGGKKOOI.take() {
-                ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(v)) => v,
+    pub fn take_challenge_default(&mut self) -> super::ChallengeStatistics::ChallengeStatistics {
+        if self.has_challenge_default() {
+            match self.IHAGGILDANL.take() {
+                ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LDCHNCDFICP::LDCHNCDFICP::new()
+            super::ChallengeStatistics::ChallengeStatistics::new()
         }
     }
 
-    // .LAAIGBDPLJC AJGCMALNLEN = 1182;
+    // .ChallengeStoryStatistics challenge_story = 847;
 
-    pub fn AJGCMALNLEN(&self) -> &super::LAAIGBDPLJC::LAAIGBDPLJC {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(ref v)) => v,
-            _ => <super::LAAIGBDPLJC::LAAIGBDPLJC as ::protobuf::Message>::default_instance(),
+    pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(ref v)) => v,
+            _ => <super::ChallengeStoryStatistics::ChallengeStoryStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_AJGCMALNLEN(&mut self) {
-        self.JDICGGKKOOI = ::std::option::Option::None;
+    pub fn clear_challenge_story(&mut self) {
+        self.IHAGGILDANL = ::std::option::Option::None;
     }
 
-    pub fn has_AJGCMALNLEN(&self) -> bool {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(..)) => true,
+    pub fn has_challenge_story(&self) -> bool {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_AJGCMALNLEN(&mut self, v: super::LAAIGBDPLJC::LAAIGBDPLJC) {
-        self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(v))
+    pub fn set_challenge_story(&mut self, v: super::ChallengeStoryStatistics::ChallengeStoryStatistics) {
+        self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_AJGCMALNLEN(&mut self) -> &mut super::LAAIGBDPLJC::LAAIGBDPLJC {
-        if let ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(_)) = self.JDICGGKKOOI {
+    pub fn mut_challenge_story(&mut self) -> &mut super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        if let ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(_)) = self.IHAGGILDANL {
         } else {
-            self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(super::LAAIGBDPLJC::LAAIGBDPLJC::new()));
+            self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()));
         }
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(ref mut v)) => v,
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_AJGCMALNLEN(&mut self) -> super::LAAIGBDPLJC::LAAIGBDPLJC {
-        if self.has_AJGCMALNLEN() {
-            match self.JDICGGKKOOI.take() {
-                ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(v)) => v,
+    pub fn take_challenge_story(&mut self) -> super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        if self.has_challenge_story() {
+            match self.IHAGGILDANL.take() {
+                ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LAAIGBDPLJC::LAAIGBDPLJC::new()
+            super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()
         }
     }
 
-    // .LGNMPMCPOPF BMCKMGINCIA = 688;
+    // .ChallengeBossStatistics challenge_boss = 1035;
 
-    pub fn BMCKMGINCIA(&self) -> &super::LGNMPMCPOPF::LGNMPMCPOPF {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(ref v)) => v,
-            _ => <super::LGNMPMCPOPF::LGNMPMCPOPF as ::protobuf::Message>::default_instance(),
+    pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(ref v)) => v,
+            _ => <super::ChallengeBossStatistics::ChallengeBossStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BMCKMGINCIA(&mut self) {
-        self.JDICGGKKOOI = ::std::option::Option::None;
+    pub fn clear_challenge_boss(&mut self) {
+        self.IHAGGILDANL = ::std::option::Option::None;
     }
 
-    pub fn has_BMCKMGINCIA(&self) -> bool {
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(..)) => true,
+    pub fn has_challenge_boss(&self) -> bool {
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BMCKMGINCIA(&mut self, v: super::LGNMPMCPOPF::LGNMPMCPOPF) {
-        self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(v))
+    pub fn set_challenge_boss(&mut self, v: super::ChallengeBossStatistics::ChallengeBossStatistics) {
+        self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BMCKMGINCIA(&mut self) -> &mut super::LGNMPMCPOPF::LGNMPMCPOPF {
-        if let ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(_)) = self.JDICGGKKOOI {
+    pub fn mut_challenge_boss(&mut self) -> &mut super::ChallengeBossStatistics::ChallengeBossStatistics {
+        if let ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(_)) = self.IHAGGILDANL {
         } else {
-            self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(super::LGNMPMCPOPF::LGNMPMCPOPF::new()));
+            self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(super::ChallengeBossStatistics::ChallengeBossStatistics::new()));
         }
-        match self.JDICGGKKOOI {
-            ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(ref mut v)) => v,
+        match self.IHAGGILDANL {
+            ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BMCKMGINCIA(&mut self) -> super::LGNMPMCPOPF::LGNMPMCPOPF {
-        if self.has_BMCKMGINCIA() {
-            match self.JDICGGKKOOI.take() {
-                ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(v)) => v,
+    pub fn take_challenge_boss(&mut self) -> super::ChallengeBossStatistics::ChallengeBossStatistics {
+        if self.has_challenge_boss() {
+            match self.IHAGGILDANL.take() {
+                ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LGNMPMCPOPF::LGNMPMCPOPF::new()
+            super::ChallengeBossStatistics::ChallengeBossStatistics::new()
         }
     }
 
@@ -210,28 +210,28 @@ impl CHKIICNAPHA {
             |m: &CHKIICNAPHA| { &m.KHCNAJOKJHJ },
             |m: &mut CHKIICNAPHA| { &mut m.KHCNAJOKJHJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDCHNCDFICP::LDCHNCDFICP>(
-            "MJBENBDBHAJ",
-            CHKIICNAPHA::has_MJBENBDBHAJ,
-            CHKIICNAPHA::MJBENBDBHAJ,
-            CHKIICNAPHA::mut_MJBENBDBHAJ,
-            CHKIICNAPHA::set_MJBENBDBHAJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
+            "challenge_default",
+            CHKIICNAPHA::has_challenge_default,
+            CHKIICNAPHA::challenge_default,
+            CHKIICNAPHA::mut_challenge_default,
+            CHKIICNAPHA::set_challenge_default,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LAAIGBDPLJC::LAAIGBDPLJC>(
-            "AJGCMALNLEN",
-            CHKIICNAPHA::has_AJGCMALNLEN,
-            CHKIICNAPHA::AJGCMALNLEN,
-            CHKIICNAPHA::mut_AJGCMALNLEN,
-            CHKIICNAPHA::set_AJGCMALNLEN,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryStatistics::ChallengeStoryStatistics>(
+            "challenge_story",
+            CHKIICNAPHA::has_challenge_story,
+            CHKIICNAPHA::challenge_story,
+            CHKIICNAPHA::mut_challenge_story,
+            CHKIICNAPHA::set_challenge_story,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LGNMPMCPOPF::LGNMPMCPOPF>(
-            "BMCKMGINCIA",
-            CHKIICNAPHA::has_BMCKMGINCIA,
-            CHKIICNAPHA::BMCKMGINCIA,
-            CHKIICNAPHA::mut_BMCKMGINCIA,
-            CHKIICNAPHA::set_BMCKMGINCIA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeBossStatistics::ChallengeBossStatistics>(
+            "challenge_boss",
+            CHKIICNAPHA::has_challenge_boss,
+            CHKIICNAPHA::challenge_boss,
+            CHKIICNAPHA::mut_challenge_boss,
+            CHKIICNAPHA::set_challenge_boss,
         ));
-        oneofs.push(chkiicnapha::JDICGGKKOOI::generated_oneof_descriptor_data());
+        oneofs.push(chkiicnapha::IHAGGILDANL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CHKIICNAPHA>(
             "CHKIICNAPHA",
             fields,
@@ -250,20 +250,20 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.group_id = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.KHCNAJOKJHJ = is.read_uint32()?;
                 },
-                12906 => {
-                    self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(is.read_message()?));
+                1378 => {
+                    self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(is.read_message()?));
                 },
-                9458 => {
-                    self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(is.read_message()?));
+                6778 => {
+                    self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(is.read_message()?));
                 },
-                5506 => {
-                    self.JDICGGKKOOI = ::std::option::Option::Some(chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(is.read_message()?));
+                8282 => {
+                    self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -278,22 +278,22 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
         }
         if self.KHCNAJOKJHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KHCNAJOKJHJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.KHCNAJOKJHJ);
         }
-        if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
+        if let ::std::option::Option::Some(ref v) = self.IHAGGILDANL {
             match v {
-                &chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(ref v) => {
+                &chkiicnapha::IHAGGILDANL::ChallengeDefault(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(ref v) => {
+                &chkiicnapha::IHAGGILDANL::ChallengeStory(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(ref v) => {
+                &chkiicnapha::IHAGGILDANL::ChallengeBoss(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -306,21 +306,21 @@ impl ::protobuf::Message for CHKIICNAPHA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(14, self.group_id)?;
+            os.write_uint32(1, self.group_id)?;
         }
         if self.KHCNAJOKJHJ != 0 {
-            os.write_uint32(4, self.KHCNAJOKJHJ)?;
+            os.write_uint32(7, self.KHCNAJOKJHJ)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
+        if let ::std::option::Option::Some(ref v) = self.IHAGGILDANL {
             match v {
-                &chkiicnapha::JDICGGKKOOI::MJBENBDBHAJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1613, v, os)?;
+                &chkiicnapha::IHAGGILDANL::ChallengeDefault(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(172, v, os)?;
                 },
-                &chkiicnapha::JDICGGKKOOI::AJGCMALNLEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1182, v, os)?;
+                &chkiicnapha::IHAGGILDANL::ChallengeStory(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(847, v, os)?;
                 },
-                &chkiicnapha::JDICGGKKOOI::BMCKMGINCIA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(688, v, os)?;
+                &chkiicnapha::IHAGGILDANL::ChallengeBoss(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1035, v, os)?;
                 },
             };
         }
@@ -343,9 +343,9 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn clear(&mut self) {
         self.group_id = 0;
         self.KHCNAJOKJHJ = 0;
-        self.JDICGGKKOOI = ::std::option::Option::None;
-        self.JDICGGKKOOI = ::std::option::Option::None;
-        self.JDICGGKKOOI = ::std::option::Option::None;
+        self.IHAGGILDANL = ::std::option::Option::None;
+        self.IHAGGILDANL = ::std::option::Option::None;
+        self.IHAGGILDANL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -353,7 +353,7 @@ impl ::protobuf::Message for CHKIICNAPHA {
         static instance: CHKIICNAPHA = CHKIICNAPHA {
             group_id: 0,
             KHCNAJOKJHJ: 0,
-            JDICGGKKOOI: ::std::option::Option::None,
+            IHAGGILDANL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -382,42 +382,43 @@ pub mod chkiicnapha {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CHKIICNAPHA.JDICGGKKOOI)
-    pub enum JDICGGKKOOI {
-        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.MJBENBDBHAJ)
-        MJBENBDBHAJ(super::super::LDCHNCDFICP::LDCHNCDFICP),
-        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.AJGCMALNLEN)
-        AJGCMALNLEN(super::super::LAAIGBDPLJC::LAAIGBDPLJC),
-        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.BMCKMGINCIA)
-        BMCKMGINCIA(super::super::LGNMPMCPOPF::LGNMPMCPOPF),
+    // @@protoc_insertion_point(oneof:CHKIICNAPHA.IHAGGILDANL)
+    pub enum IHAGGILDANL {
+        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.challenge_default)
+        ChallengeDefault(super::super::ChallengeStatistics::ChallengeStatistics),
+        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.challenge_story)
+        ChallengeStory(super::super::ChallengeStoryStatistics::ChallengeStoryStatistics),
+        // @@protoc_insertion_point(oneof_field:CHKIICNAPHA.challenge_boss)
+        ChallengeBoss(super::super::ChallengeBossStatistics::ChallengeBossStatistics),
     }
 
-    impl ::protobuf::Oneof for JDICGGKKOOI {
+    impl ::protobuf::Oneof for IHAGGILDANL {
     }
 
-    impl ::protobuf::OneofFull for JDICGGKKOOI {
+    impl ::protobuf::OneofFull for IHAGGILDANL {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CHKIICNAPHA as ::protobuf::MessageFull>::descriptor().oneof_by_name("JDICGGKKOOI").unwrap()).clone()
+            descriptor.get(|| <super::CHKIICNAPHA as ::protobuf::MessageFull>::descriptor().oneof_by_name("IHAGGILDANL").unwrap()).clone()
         }
     }
 
-    impl JDICGGKKOOI {
+    impl IHAGGILDANL {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<JDICGGKKOOI>("JDICGGKKOOI")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IHAGGILDANL>("IHAGGILDANL")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CHKIICNAPHA.proto\x1a\x11LAAIGBDPLJC.proto\x1a\x11LDCHNCDFICP.prot\
-    o\x1a\x11LGNMPMCPOPF.proto\"\xf2\x01\n\x0bCHKIICNAPHA\x12\x19\n\x08group\
-    _id\x18\x0e\x20\x01(\rR\x07groupId\x12\x20\n\x0bKHCNAJOKJHJ\x18\x04\x20\
-    \x01(\rR\x0bKHCNAJOKJHJ\x121\n\x0bMJBENBDBHAJ\x18\xcd\x0c\x20\x01(\x0b2\
-    \x0c.LDCHNCDFICPH\0R\x0bMJBENBDBHAJ\x121\n\x0bAJGCMALNLEN\x18\x9e\t\x20\
-    \x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGCMALNLEN\x121\n\x0bBMCKMGINCIA\x18\
-    \xb0\x05\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\x0bBMCKMGINCIAB\r\n\x0bJDICGG\
-    KKOOIb\x06proto3\
+    \n\x11CHKIICNAPHA.proto\x1a\x1dChallengeBossStatistics.proto\x1a\x19Chal\
+    lengeStatistics.proto\x1a\x1eChallengeStoryStatistics.proto\"\xaa\x02\n\
+    \x0bCHKIICNAPHA\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupId\x12\
+    \x20\n\x0bKHCNAJOKJHJ\x18\x07\x20\x01(\rR\x0bKHCNAJOKJHJ\x12D\n\x11chall\
+    enge_default\x18\xac\x01\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10ch\
+    allengeDefault\x12E\n\x0fchallenge_story\x18\xcf\x06\x20\x01(\x0b2\x19.C\
+    hallengeStoryStatisticsH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\
+    \x18\x8b\x08\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBos\
+    sB\r\n\x0bIHAGGILDANLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -435,9 +436,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::LAAIGBDPLJC::file_descriptor().clone());
-            deps.push(super::LDCHNCDFICP::file_descriptor().clone());
-            deps.push(super::LGNMPMCPOPF::file_descriptor().clone());
+            deps.push(super::ChallengeBossStatistics::file_descriptor().clone());
+            deps.push(super::ChallengeStatistics::file_descriptor().clone());
+            deps.push(super::ChallengeStoryStatistics::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CHKIICNAPHA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

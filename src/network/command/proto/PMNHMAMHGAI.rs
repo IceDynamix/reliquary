@@ -32,6 +32,8 @@ pub struct PMNHMAMHGAI {
     pub ICPHOOMNDKA: u32,
     // @@protoc_insertion_point(field:PMNHMAMHGAI.ENBJCPKGCOL)
     pub ENBJCPKGCOL: ::std::vec::Vec<super::MJKIBJLOBKD::MJKIBJLOBKD>,
+    // @@protoc_insertion_point(field:PMNHMAMHGAI.OOOGLIEOOKI)
+    pub OOOGLIEOOKI: ::std::vec::Vec<super::DKOOKEJCHGO::DKOOKEJCHGO>,
     // special fields
     // @@protoc_insertion_point(special_field:PMNHMAMHGAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +51,7 @@ impl PMNHMAMHGAI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ICPHOOMNDKA",
@@ -60,6 +62,11 @@ impl PMNHMAMHGAI {
             "ENBJCPKGCOL",
             |m: &PMNHMAMHGAI| { &m.ENBJCPKGCOL },
             |m: &mut PMNHMAMHGAI| { &mut m.ENBJCPKGCOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OOOGLIEOOKI",
+            |m: &PMNHMAMHGAI| { &m.OOOGLIEOOKI },
+            |m: &mut PMNHMAMHGAI| { &mut m.OOOGLIEOOKI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PMNHMAMHGAI>(
             "PMNHMAMHGAI",
@@ -85,6 +92,9 @@ impl ::protobuf::Message for PMNHMAMHGAI {
                 18 => {
                     self.ENBJCPKGCOL.push(is.read_message()?);
                 },
+                26 => {
+                    self.OOOGLIEOOKI.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -104,6 +114,10 @@ impl ::protobuf::Message for PMNHMAMHGAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.OOOGLIEOOKI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -115,6 +129,9 @@ impl ::protobuf::Message for PMNHMAMHGAI {
         }
         for v in &self.ENBJCPKGCOL {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        for v in &self.OOOGLIEOOKI {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,6 +152,7 @@ impl ::protobuf::Message for PMNHMAMHGAI {
     fn clear(&mut self) {
         self.ICPHOOMNDKA = 0;
         self.ENBJCPKGCOL.clear();
+        self.OOOGLIEOOKI.clear();
         self.special_fields.clear();
     }
 
@@ -142,6 +160,7 @@ impl ::protobuf::Message for PMNHMAMHGAI {
         static instance: PMNHMAMHGAI = PMNHMAMHGAI {
             ICPHOOMNDKA: 0,
             ENBJCPKGCOL: ::std::vec::Vec::new(),
+            OOOGLIEOOKI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for PMNHMAMHGAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PMNHMAMHGAI.proto\x1a\x11MJKIBJLOBKD.proto\"_\n\x0bPMNHMAMHGAI\x12\
-    \x20\n\x0bICPHOOMNDKA\x18\x01\x20\x01(\rR\x0bICPHOOMNDKA\x12.\n\x0bENBJC\
-    PKGCOL\x18\x02\x20\x03(\x0b2\x0c.MJKIBJLOBKDR\x0bENBJCPKGCOLb\x06proto3\
+    \n\x11PMNHMAMHGAI.proto\x1a\x11DKOOKEJCHGO.proto\x1a\x11MJKIBJLOBKD.prot\
+    o\"\x8f\x01\n\x0bPMNHMAMHGAI\x12\x20\n\x0bICPHOOMNDKA\x18\x01\x20\x01(\r\
+    R\x0bICPHOOMNDKA\x12.\n\x0bENBJCPKGCOL\x18\x02\x20\x03(\x0b2\x0c.MJKIBJL\
+    OBKDR\x0bENBJCPKGCOL\x12.\n\x0bOOOGLIEOOKI\x18\x03\x20\x03(\x0b2\x0c.DKO\
+    OKEJCHGOR\x0bOOOGLIEOOKIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::DKOOKEJCHGO::file_descriptor().clone());
             deps.push(super::MJKIBJLOBKD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PMNHMAMHGAI::generated_message_descriptor_data());

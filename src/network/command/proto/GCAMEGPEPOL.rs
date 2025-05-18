@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GCAMEGPEPOL {
     // message fields
-    // @@protoc_insertion_point(field:GCAMEGPEPOL.EHBJBPCNPLG)
-    pub EHBJBPCNPLG: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // @@protoc_insertion_point(field:GCAMEGPEPOL.PJOLEMHLGNL)
     pub PJOLEMHLGNL: u32,
+    // @@protoc_insertion_point(field:GCAMEGPEPOL.EHBJBPCNPLG)
+    pub EHBJBPCNPLG: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // special fields
     // @@protoc_insertion_point(special_field:GCAMEGPEPOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GCAMEGPEPOL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "EHBJBPCNPLG",
-            |m: &GCAMEGPEPOL| { &m.EHBJBPCNPLG },
-            |m: &mut GCAMEGPEPOL| { &mut m.EHBJBPCNPLG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJOLEMHLGNL",
             |m: &GCAMEGPEPOL| { &m.PJOLEMHLGNL },
             |m: &mut GCAMEGPEPOL| { &mut m.PJOLEMHLGNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
+            "EHBJBPCNPLG",
+            |m: &GCAMEGPEPOL| { &m.EHBJBPCNPLG },
+            |m: &mut GCAMEGPEPOL| { &mut m.EHBJBPCNPLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GCAMEGPEPOL>(
             "GCAMEGPEPOL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GCAMEGPEPOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHBJBPCNPLG)?;
-                },
-                104 => {
+                16 => {
                     self.PJOLEMHLGNL = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHBJBPCNPLG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GCAMEGPEPOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PJOLEMHLGNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PJOLEMHLGNL);
+        }
         if let Some(v) = self.EHBJBPCNPLG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PJOLEMHLGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PJOLEMHLGNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GCAMEGPEPOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EHBJBPCNPLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.PJOLEMHLGNL != 0 {
-            os.write_uint32(13, self.PJOLEMHLGNL)?;
+            os.write_uint32(2, self.PJOLEMHLGNL)?;
+        }
+        if let Some(v) = self.EHBJBPCNPLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GCAMEGPEPOL {
     }
 
     fn clear(&mut self) {
-        self.EHBJBPCNPLG.clear();
         self.PJOLEMHLGNL = 0;
+        self.EHBJBPCNPLG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GCAMEGPEPOL {
         static instance: GCAMEGPEPOL = GCAMEGPEPOL {
-            EHBJBPCNPLG: ::protobuf::MessageField::none(),
             PJOLEMHLGNL: 0,
+            EHBJBPCNPLG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GCAMEGPEPOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GCAMEGPEPOL.proto\x1a\x11IIKNGNHDMFI.proto\"_\n\x0bGCAMEGPEPOL\x12\
-    .\n\x0bEHBJBPCNPLG\x18\x01\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bEHBJBPCNPLG\
-    \x12\x20\n\x0bPJOLEMHLGNL\x18\r\x20\x01(\rR\x0bPJOLEMHLGNLb\x06proto3\
+    \x20\n\x0bPJOLEMHLGNL\x18\x02\x20\x01(\rR\x0bPJOLEMHLGNL\x12.\n\x0bEHBJB\
+    PCNPLG\x18\x04\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bEHBJBPCNPLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

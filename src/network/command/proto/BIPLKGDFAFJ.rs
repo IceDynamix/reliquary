@@ -34,8 +34,8 @@ pub struct BIPLKGDFAFJ {
     pub PDMOLPLCFLG: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:BIPLKGDFAFJ.IIHPMLIBBEB)
     pub IIHPMLIBBEB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
-    // @@protoc_insertion_point(field:BIPLKGDFAFJ.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::KHJPJANGECP::KHJPJANGECP>,
+    // @@protoc_insertion_point(field:BIPLKGDFAFJ.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::MatchUnitType::MatchUnitType>,
     // @@protoc_insertion_point(field:BIPLKGDFAFJ.INFHIKBLJLA)
     pub INFHIKBLJLA: u64,
     // @@protoc_insertion_point(field:BIPLKGDFAFJ.MLELAJDLJNL)
@@ -77,9 +77,9 @@ impl BIPLKGDFAFJ {
             |m: &mut BIPLKGDFAFJ| { &mut m.IIHPMLIBBEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &BIPLKGDFAFJ| { &m.slot },
-            |m: &mut BIPLKGDFAFJ| { &mut m.slot },
+            "type",
+            |m: &BIPLKGDFAFJ| { &m.type_ },
+            |m: &mut BIPLKGDFAFJ| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INFHIKBLJLA",
@@ -124,7 +124,7 @@ impl ::protobuf::Message for BIPLKGDFAFJ {
                     self.IIHPMLIBBEB.push(is.read_message()?);
                 },
                 32 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 40 => {
                     self.INFHIKBLJLA = is.read_uint64()?;
@@ -157,8 +157,8 @@ impl ::protobuf::Message for BIPLKGDFAFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::KHJPJANGECP::KHJPJANGECP::MATCH_UNIT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.slot.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MatchUnitType::MatchUnitType::MATCH_UNIT_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.type_.value());
         }
         if self.INFHIKBLJLA != 0 {
             my_size += ::protobuf::rt::uint64_size(5, self.INFHIKBLJLA);
@@ -184,8 +184,8 @@ impl ::protobuf::Message for BIPLKGDFAFJ {
         for v in &self.IIHPMLIBBEB {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::KHJPJANGECP::KHJPJANGECP::MATCH_UNIT_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MatchUnitType::MatchUnitType::MATCH_UNIT_TYPE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.INFHIKBLJLA != 0 {
             os.write_uint64(5, self.INFHIKBLJLA)?;
@@ -216,7 +216,7 @@ impl ::protobuf::Message for BIPLKGDFAFJ {
         self.id = 0;
         self.PDMOLPLCFLG = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.IIHPMLIBBEB.clear();
-        self.slot = ::protobuf::EnumOrUnknown::new(super::KHJPJANGECP::KHJPJANGECP::MATCH_UNIT_TYPE_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::MatchUnitType::MatchUnitType::MATCH_UNIT_TYPE_NONE);
         self.INFHIKBLJLA = 0;
         self.MLELAJDLJNL = 0;
         self.JBNENLHCCBH = 0;
@@ -228,7 +228,7 @@ impl ::protobuf::Message for BIPLKGDFAFJ {
             id: 0,
             PDMOLPLCFLG: ::protobuf::EnumOrUnknown::from_i32(0),
             IIHPMLIBBEB: ::std::vec::Vec::new(),
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             INFHIKBLJLA: 0,
             MLELAJDLJNL: 0,
             JBNENLHCCBH: 0,
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for BIPLKGDFAFJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BIPLKGDFAFJ.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x13FightGameMode.pr\
-    oto\x1a\x11KHJPJANGECP.proto\"\x87\x02\n\x0bBIPLKGDFAFJ\x12\x0e\n\x02id\
-    \x18\x01\x20\x01(\x04R\x02id\x120\n\x0bPDMOLPLCFLG\x18\x02\x20\x01(\x0e2\
-    \x0e.FightGameModeR\x0bPDMOLPLCFLG\x12.\n\x0bIIHPMLIBBEB\x18\x03\x20\x03\
-    (\x0b2\x0c.CBBDIOMIFHDR\x0bIIHPMLIBBEB\x12\x20\n\x04slot\x18\x04\x20\x01\
-    (\x0e2\x0c.KHJPJANGECPR\x04slot\x12\x20\n\x0bINFHIKBLJLA\x18\x05\x20\x01\
-    (\x04R\x0bINFHIKBLJLA\x12\x20\n\x0bMLELAJDLJNL\x18\x06\x20\x01(\x04R\x0b\
-    MLELAJDLJNL\x12\x20\n\x0bJBNENLHCCBH\x18\x07\x20\x01(\rR\x0bJBNENLHCCBHb\
-    \x06proto3\
+    oto\x1a\x13MatchUnitType.proto\"\x89\x02\n\x0bBIPLKGDFAFJ\x12\x0e\n\x02i\
+    d\x18\x01\x20\x01(\x04R\x02id\x120\n\x0bPDMOLPLCFLG\x18\x02\x20\x01(\x0e\
+    2\x0e.FightGameModeR\x0bPDMOLPLCFLG\x12.\n\x0bIIHPMLIBBEB\x18\x03\x20\
+    \x03(\x0b2\x0c.CBBDIOMIFHDR\x0bIIHPMLIBBEB\x12\"\n\x04type\x18\x04\x20\
+    \x01(\x0e2\x0e.MatchUnitTypeR\x04type\x12\x20\n\x0bINFHIKBLJLA\x18\x05\
+    \x20\x01(\x04R\x0bINFHIKBLJLA\x12\x20\n\x0bMLELAJDLJNL\x18\x06\x20\x01(\
+    \x04R\x0bMLELAJDLJNL\x12\x20\n\x0bJBNENLHCCBH\x18\x07\x20\x01(\rR\x0bJBN\
+    ENLHCCBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -284,7 +284,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::CBBDIOMIFHD::file_descriptor().clone());
             deps.push(super::FightGameMode::file_descriptor().clone());
-            deps.push(super::KHJPJANGECP::file_descriptor().clone());
+            deps.push(super::MatchUnitType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BIPLKGDFAFJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

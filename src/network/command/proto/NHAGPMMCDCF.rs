@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NHAGPMMCDCF {
     // message fields
-    // @@protoc_insertion_point(field:NHAGPMMCDCF.AGIJKFBCJOC)
-    pub AGIJKFBCJOC: u32,
     // @@protoc_insertion_point(field:NHAGPMMCDCF.ONAHHAMHFDB)
     pub ONAHHAMHFDB: u32,
+    // @@protoc_insertion_point(field:NHAGPMMCDCF.AGIJKFBCJOC)
+    pub AGIJKFBCJOC: u32,
     // @@protoc_insertion_point(field:NHAGPMMCDCF.area_id)
     pub area_id: u32,
     // @@protoc_insertion_point(field:NHAGPMMCDCF.OIAJANCBABP)
@@ -56,14 +56,14 @@ impl NHAGPMMCDCF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGIJKFBCJOC",
-            |m: &NHAGPMMCDCF| { &m.AGIJKFBCJOC },
-            |m: &mut NHAGPMMCDCF| { &mut m.AGIJKFBCJOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ONAHHAMHFDB",
             |m: &NHAGPMMCDCF| { &m.ONAHHAMHFDB },
             |m: &mut NHAGPMMCDCF| { &mut m.ONAHHAMHFDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGIJKFBCJOC",
+            |m: &NHAGPMMCDCF| { &m.AGIJKFBCJOC },
+            |m: &mut NHAGPMMCDCF| { &mut m.AGIJKFBCJOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for NHAGPMMCDCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.AGIJKFBCJOC = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.ONAHHAMHFDB = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
+                    self.AGIJKFBCJOC = is.read_uint32()?;
+                },
+                104 => {
                     self.area_id = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.OIAJANCBABP = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for NHAGPMMCDCF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGIJKFBCJOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AGIJKFBCJOC);
-        }
         if self.ONAHHAMHFDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ONAHHAMHFDB);
+            my_size += ::protobuf::rt::uint32_size(1, self.ONAHHAMHFDB);
+        }
+        if self.AGIJKFBCJOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.AGIJKFBCJOC);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
         }
         if self.OIAJANCBABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OIAJANCBABP);
+            my_size += ::protobuf::rt::uint32_size(15, self.OIAJANCBABP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for NHAGPMMCDCF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGIJKFBCJOC != 0 {
-            os.write_uint32(9, self.AGIJKFBCJOC)?;
-        }
         if self.ONAHHAMHFDB != 0 {
-            os.write_uint32(11, self.ONAHHAMHFDB)?;
+            os.write_uint32(1, self.ONAHHAMHFDB)?;
+        }
+        if self.AGIJKFBCJOC != 0 {
+            os.write_uint32(11, self.AGIJKFBCJOC)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(5, self.area_id)?;
+            os.write_uint32(13, self.area_id)?;
         }
         if self.OIAJANCBABP != 0 {
-            os.write_uint32(7, self.OIAJANCBABP)?;
+            os.write_uint32(15, self.OIAJANCBABP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for NHAGPMMCDCF {
     }
 
     fn clear(&mut self) {
-        self.AGIJKFBCJOC = 0;
         self.ONAHHAMHFDB = 0;
+        self.AGIJKFBCJOC = 0;
         self.area_id = 0;
         self.OIAJANCBABP = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for NHAGPMMCDCF {
 
     fn default_instance() -> &'static NHAGPMMCDCF {
         static instance: NHAGPMMCDCF = NHAGPMMCDCF {
-            AGIJKFBCJOC: 0,
             ONAHHAMHFDB: 0,
+            AGIJKFBCJOC: 0,
             area_id: 0,
             OIAJANCBABP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for NHAGPMMCDCF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NHAGPMMCDCF.proto\"\x8c\x01\n\x0bNHAGPMMCDCF\x12\x20\n\x0bAGIJKFBC\
-    JOC\x18\t\x20\x01(\rR\x0bAGIJKFBCJOC\x12\x20\n\x0bONAHHAMHFDB\x18\x0b\
-    \x20\x01(\rR\x0bONAHHAMHFDB\x12\x17\n\x07area_id\x18\x05\x20\x01(\rR\x06\
-    areaId\x12\x20\n\x0bOIAJANCBABP\x18\x07\x20\x01(\rR\x0bOIAJANCBABPb\x06p\
-    roto3\
+    \n\x11NHAGPMMCDCF.proto\"\x8c\x01\n\x0bNHAGPMMCDCF\x12\x20\n\x0bONAHHAMH\
+    FDB\x18\x01\x20\x01(\rR\x0bONAHHAMHFDB\x12\x20\n\x0bAGIJKFBCJOC\x18\x0b\
+    \x20\x01(\rR\x0bAGIJKFBCJOC\x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06ar\
+    eaId\x12\x20\n\x0bOIAJANCBABP\x18\x0f\x20\x01(\rR\x0bOIAJANCBABPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

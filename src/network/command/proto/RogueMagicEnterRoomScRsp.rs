@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
                 56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
             os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueMagicEnterRoomScRsp.proto\x1a\x11HFIPPDGGJOL.proto\"d\n\x18Ro\
     gueMagicEnterRoomScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bLCOCLENJJAI\x18\n\x20\x01(\x0b2\x0c.HFIPPDGGJOLR\x0bLCOCLEN\
-    JJAIb\x06proto3\
+    de\x12.\n\x0bLCOCLENJJAI\x18\x0f\x20\x01(\x0b2\x0c.HFIPPDGGJOLR\x0bLCOCL\
+    ENJJAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

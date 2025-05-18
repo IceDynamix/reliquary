@@ -30,12 +30,12 @@ pub struct OGNBIGKHHBM {
     // message fields
     // @@protoc_insertion_point(field:OGNBIGKHHBM.GCGLNKFDKKN)
     pub GCGLNKFDKKN: ::protobuf::MessageField<super::CACLANLOOLK::CACLANLOOLK>,
-    // @@protoc_insertion_point(field:OGNBIGKHHBM.BHMHLPCHKLG)
-    pub BHMHLPCHKLG: ::protobuf::MessageField<super::AAPKBPEGGBH::AAPKBPEGGBH>,
-    // @@protoc_insertion_point(field:OGNBIGKHHBM.EMBAGMMHIPA)
-    pub EMBAGMMHIPA: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:OGNBIGKHHBM.BJLEMFMCODD)
     pub BJLEMFMCODD: ::protobuf::MessageField<super::FJJDKDNDFDJ::FJJDKDNDFDJ>,
+    // @@protoc_insertion_point(field:OGNBIGKHHBM.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:OGNBIGKHHBM.BHMHLPCHKLG)
+    pub BHMHLPCHKLG: ::protobuf::MessageField<super::AAPKBPEGGBH::AAPKBPEGGBH>,
     // special fields
     // @@protoc_insertion_point(special_field:OGNBIGKHHBM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl OGNBIGKHHBM {
             |m: &OGNBIGKHHBM| { &m.GCGLNKFDKKN },
             |m: &mut OGNBIGKHHBM| { &mut m.GCGLNKFDKKN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAPKBPEGGBH::AAPKBPEGGBH>(
-            "BHMHLPCHKLG",
-            |m: &OGNBIGKHHBM| { &m.BHMHLPCHKLG },
-            |m: &mut OGNBIGKHHBM| { &mut m.BHMHLPCHKLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "EMBAGMMHIPA",
-            |m: &OGNBIGKHHBM| { &m.EMBAGMMHIPA },
-            |m: &mut OGNBIGKHHBM| { &mut m.EMBAGMMHIPA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJJDKDNDFDJ::FJJDKDNDFDJ>(
             "BJLEMFMCODD",
             |m: &OGNBIGKHHBM| { &m.BJLEMFMCODD },
             |m: &mut OGNBIGKHHBM| { &mut m.BJLEMFMCODD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "rogue_lineup_info",
+            |m: &OGNBIGKHHBM| { &m.rogue_lineup_info },
+            |m: &mut OGNBIGKHHBM| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAPKBPEGGBH::AAPKBPEGGBH>(
+            "BHMHLPCHKLG",
+            |m: &OGNBIGKHHBM| { &m.BHMHLPCHKLG },
+            |m: &mut OGNBIGKHHBM| { &mut m.BHMHLPCHKLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGNBIGKHHBM>(
             "OGNBIGKHHBM",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OGNBIGKHHBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCGLNKFDKKN)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMBAGMMHIPA)?;
-                },
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJLEMFMCODD)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,15 +121,15 @@ impl ::protobuf::Message for OGNBIGKHHBM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.BJLEMFMCODD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -140,16 +140,16 @@ impl ::protobuf::Message for OGNBIGKHHBM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GCGLNKFDKKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.BJLEMFMCODD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +169,18 @@ impl ::protobuf::Message for OGNBIGKHHBM {
 
     fn clear(&mut self) {
         self.GCGLNKFDKKN.clear();
-        self.BHMHLPCHKLG.clear();
-        self.EMBAGMMHIPA.clear();
         self.BJLEMFMCODD.clear();
+        self.rogue_lineup_info.clear();
+        self.BHMHLPCHKLG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGNBIGKHHBM {
         static instance: OGNBIGKHHBM = OGNBIGKHHBM {
             GCGLNKFDKKN: ::protobuf::MessageField::none(),
-            BHMHLPCHKLG: ::protobuf::MessageField::none(),
-            EMBAGMMHIPA: ::protobuf::MessageField::none(),
             BJLEMFMCODD: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            BHMHLPCHKLG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,12 +206,12 @@ impl ::protobuf::reflect::ProtobufValue for OGNBIGKHHBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OGNBIGKHHBM.proto\x1a\x11AAPKBPEGGBH.proto\x1a\x11CACLANLOOLK.prot\
-    o\x1a\x11FJJDKDNDFDJ.proto\x1a\x10LineupInfo.proto\"\xcc\x01\n\x0bOGNBIG\
-    KHHBM\x12.\n\x0bGCGLNKFDKKN\x18\x06\x20\x01(\x0b2\x0c.CACLANLOOLKR\x0bGC\
-    GLNKFDKKN\x12.\n\x0bBHMHLPCHKLG\x18\x0e\x20\x01(\x0b2\x0c.AAPKBPEGGBHR\
-    \x0bBHMHLPCHKLG\x12-\n\x0bEMBAGMMHIPA\x18\t\x20\x01(\x0b2\x0b.LineupInfo\
-    R\x0bEMBAGMMHIPA\x12.\n\x0bBJLEMFMCODD\x18\x0b\x20\x01(\x0b2\x0c.FJJDKDN\
-    DFDJR\x0bBJLEMFMCODDb\x06proto3\
+    o\x1a\x11FJJDKDNDFDJ.proto\x1a\x10LineupInfo.proto\"\xd6\x01\n\x0bOGNBIG\
+    KHHBM\x12.\n\x0bGCGLNKFDKKN\x18\x07\x20\x01(\x0b2\x0c.CACLANLOOLKR\x0bGC\
+    GLNKFDKKN\x12.\n\x0bBJLEMFMCODD\x18\x04\x20\x01(\x0b2\x0c.FJJDKDNDFDJR\
+    \x0bBJLEMFMCODD\x127\n\x11rogue_lineup_info\x18\x05\x20\x01(\x0b2\x0b.Li\
+    neupInfoR\x0frogueLineupInfo\x12.\n\x0bBHMHLPCHKLG\x18\x03\x20\x01(\x0b2\
+    \x0c.AAPKBPEGGBHR\x0bBHMHLPCHKLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

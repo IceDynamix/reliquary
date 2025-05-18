@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReturnItemList {
     // message fields
-    // @@protoc_insertion_point(field:ReturnItemList.EBNKEIEHNHA)
-    pub EBNKEIEHNHA: bool,
     // @@protoc_insertion_point(field:ReturnItemList.return_item_list)
     pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ReturnItemList.EBNKEIEHNHA)
+    pub EBNKEIEHNHA: bool,
     // @@protoc_insertion_point(field:ReturnItemList.KGEFHOECMMN)
     pub KGEFHOECMMN: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl ReturnItemList {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBNKEIEHNHA",
-            |m: &ReturnItemList| { &m.EBNKEIEHNHA },
-            |m: &mut ReturnItemList| { &mut m.EBNKEIEHNHA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "return_item_list",
             |m: &ReturnItemList| { &m.return_item_list },
             |m: &mut ReturnItemList| { &mut m.return_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBNKEIEHNHA",
+            |m: &ReturnItemList| { &m.EBNKEIEHNHA },
+            |m: &mut ReturnItemList| { &mut m.EBNKEIEHNHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KGEFHOECMMN",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for ReturnItemList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.EBNKEIEHNHA = is.read_bool()?;
-                },
-                26 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
-                114 => {
+                104 => {
+                    self.EBNKEIEHNHA = is.read_bool()?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
                 },
-                112 => {
+                96 => {
                     self.KGEFHOECMMN.push(is.read_uint32()?);
                 },
                 tag => {
@@ -110,27 +110,27 @@ impl ::protobuf::Message for ReturnItemList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EBNKEIEHNHA != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.KGEFHOECMMN);
+        if self.EBNKEIEHNHA != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.KGEFHOECMMN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EBNKEIEHNHA != false {
-            os.write_bool(9, self.EBNKEIEHNHA)?;
-        }
         if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.KGEFHOECMMN)?;
+        if self.EBNKEIEHNHA != false {
+            os.write_bool(13, self.EBNKEIEHNHA)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.KGEFHOECMMN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for ReturnItemList {
     }
 
     fn clear(&mut self) {
-        self.EBNKEIEHNHA = false;
         self.return_item_list.clear();
+        self.EBNKEIEHNHA = false;
         self.KGEFHOECMMN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReturnItemList {
         static instance: ReturnItemList = ReturnItemList {
-            EBNKEIEHNHA: false,
             return_item_list: ::protobuf::MessageField::none(),
+            EBNKEIEHNHA: false,
             KGEFHOECMMN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ReturnItemList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14ReturnItemList.proto\x1a\x0eItemList.proto\"\x89\x01\n\x0eReturnIt\
-    emList\x12\x20\n\x0bEBNKEIEHNHA\x18\t\x20\x01(\x08R\x0bEBNKEIEHNHA\x123\
-    \n\x10return_item_list\x18\x03\x20\x01(\x0b2\t.ItemListR\x0ereturnItemLi\
-    st\x12\x20\n\x0bKGEFHOECMMN\x18\x0e\x20\x03(\rR\x0bKGEFHOECMMNb\x06proto\
-    3\
+    emList\x123\n\x10return_item_list\x18\x04\x20\x01(\x0b2\t.ItemListR\x0er\
+    eturnItemList\x12\x20\n\x0bEBNKEIEHNHA\x18\r\x20\x01(\x08R\x0bEBNKEIEHNH\
+    A\x12\x20\n\x0bKGEFHOECMMN\x18\x0c\x20\x03(\rR\x0bKGEFHOECMMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

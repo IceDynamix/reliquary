@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                34 => {
                     self.BELOFMFHFDK.push(is.read_message()?);
                 },
-                24 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BELOFMFHFDK {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueAeonInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetRogueAeonInfoScRsp.proto\x1a\x11EACOFHBFMLB.proto\"a\n\x15GetRo\
-    gueAeonInfoScRsp\x12.\n\x0bBELOFMFHFDK\x18\x0e\x20\x03(\x0b2\x0c.EACOFHB\
-    FMLBR\x0bBELOFMFHFDK\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    gueAeonInfoScRsp\x12.\n\x0bBELOFMFHFDK\x18\x04\x20\x03(\x0b2\x0c.EACOFHB\
+    FMLBR\x0bBELOFMFHFDK\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

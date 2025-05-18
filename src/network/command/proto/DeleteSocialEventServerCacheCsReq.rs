@@ -72,10 +72,10 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.JIDDLNHJNPB)?;
                 },
-                32 => {
+                48 => {
                     self.JIDDLNHJNPB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JIDDLNHJNPB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JIDDLNHJNPB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.JIDDLNHJNPB)?;
+        os.write_repeated_packed_uint32(6, &self.JIDDLNHJNPB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSocialEventServerCacheCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'DeleteSocialEventServerCacheCsReq.proto\"E\n!DeleteSocialEventServerC\
-    acheCsReq\x12\x20\n\x0bJIDDLNHJNPB\x18\x04\x20\x03(\rR\x0bJIDDLNHJNPBb\
+    acheCsReq\x12\x20\n\x0bJIDDLNHJNPB\x18\x06\x20\x03(\rR\x0bJIDDLNHJNPBb\
     \x06proto3\
 ";
 

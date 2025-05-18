@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BABHBOMOMDF {
     // message fields
-    // @@protoc_insertion_point(field:BABHBOMOMDF.PPJBGNBMKPM)
-    pub PPJBGNBMKPM: u32,
-    // @@protoc_insertion_point(field:BABHBOMOMDF.BHPGJCICMJM)
-    pub BHPGJCICMJM: u32,
-    // @@protoc_insertion_point(field:BABHBOMOMDF.status)
-    pub status: ::protobuf::EnumOrUnknown<super::ODBNIGDLNCF::ODBNIGDLNCF>,
     // @@protoc_insertion_point(field:BABHBOMOMDF.MNFJEIININL)
     pub MNFJEIININL: ::std::vec::Vec<super::LHOMIEDAOID::LHOMIEDAOID>,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.status)
+    pub status: ::protobuf::EnumOrUnknown<super::ODBNIGDLNCF::ODBNIGDLNCF>,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.layer_id)
+    pub layer_id: u32,
+    // @@protoc_insertion_point(field:BABHBOMOMDF.BHPGJCICMJM)
+    pub BHPGJCICMJM: u32,
     // @@protoc_insertion_point(field:BABHBOMOMDF.OGLDNEFKNDO)
     pub OGLDNEFKNDO: u32,
     // special fields
@@ -57,25 +57,25 @@ impl BABHBOMOMDF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPJBGNBMKPM",
-            |m: &BABHBOMOMDF| { &m.PPJBGNBMKPM },
-            |m: &mut BABHBOMOMDF| { &mut m.PPJBGNBMKPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHPGJCICMJM",
-            |m: &BABHBOMOMDF| { &m.BHPGJCICMJM },
-            |m: &mut BABHBOMOMDF| { &mut m.BHPGJCICMJM },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MNFJEIININL",
+            |m: &BABHBOMOMDF| { &m.MNFJEIININL },
+            |m: &mut BABHBOMOMDF| { &mut m.MNFJEIININL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &BABHBOMOMDF| { &m.status },
             |m: &mut BABHBOMOMDF| { &mut m.status },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MNFJEIININL",
-            |m: &BABHBOMOMDF| { &m.MNFJEIININL },
-            |m: &mut BABHBOMOMDF| { &mut m.MNFJEIININL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "layer_id",
+            |m: &BABHBOMOMDF| { &m.layer_id },
+            |m: &mut BABHBOMOMDF| { &mut m.layer_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BHPGJCICMJM",
+            |m: &BABHBOMOMDF| { &m.BHPGJCICMJM },
+            |m: &mut BABHBOMOMDF| { &mut m.BHPGJCICMJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OGLDNEFKNDO",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for BABHBOMOMDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.PPJBGNBMKPM = is.read_uint32()?;
-                },
-                64 => {
-                    self.BHPGJCICMJM = is.read_uint32()?;
-                },
-                88 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
                 18 => {
                     self.MNFJEIININL.push(is.read_message()?);
                 },
-                24 => {
+                104 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.layer_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.BHPGJCICMJM = is.read_uint32()?;
+                },
+                32 => {
                     self.OGLDNEFKNDO = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for BABHBOMOMDF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPJBGNBMKPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PPJBGNBMKPM);
-        }
-        if self.BHPGJCICMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BHPGJCICMJM);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
-        }
         for value in &self.MNFJEIININL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+        }
+        if self.layer_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.layer_id);
+        }
+        if self.BHPGJCICMJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BHPGJCICMJM);
+        }
         if self.OGLDNEFKNDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OGLDNEFKNDO);
+            my_size += ::protobuf::rt::uint32_size(4, self.OGLDNEFKNDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for BABHBOMOMDF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPJBGNBMKPM != 0 {
-            os.write_uint32(14, self.PPJBGNBMKPM)?;
-        }
-        if self.BHPGJCICMJM != 0 {
-            os.write_uint32(8, self.BHPGJCICMJM)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         for v in &self.MNFJEIININL {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.layer_id != 0 {
+            os.write_uint32(15, self.layer_id)?;
+        }
+        if self.BHPGJCICMJM != 0 {
+            os.write_uint32(9, self.BHPGJCICMJM)?;
+        }
         if self.OGLDNEFKNDO != 0 {
-            os.write_uint32(3, self.OGLDNEFKNDO)?;
+            os.write_uint32(4, self.OGLDNEFKNDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for BABHBOMOMDF {
     }
 
     fn clear(&mut self) {
-        self.PPJBGNBMKPM = 0;
-        self.BHPGJCICMJM = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE);
         self.MNFJEIININL.clear();
+        self.status = ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE);
+        self.layer_id = 0;
+        self.BHPGJCICMJM = 0;
         self.OGLDNEFKNDO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BABHBOMOMDF {
         static instance: BABHBOMOMDF = BABHBOMOMDF {
-            PPJBGNBMKPM: 0,
-            BHPGJCICMJM: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             MNFJEIININL: ::std::vec::Vec::new(),
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            layer_id: 0,
+            BHPGJCICMJM: 0,
             OGLDNEFKNDO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,12 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for BABHBOMOMDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BABHBOMOMDF.proto\x1a\x11LHOMIEDAOID.proto\x1a\x11ODBNIGDLNCF.prot\
-    o\"\xc9\x01\n\x0bBABHBOMOMDF\x12\x20\n\x0bPPJBGNBMKPM\x18\x0e\x20\x01(\r\
-    R\x0bPPJBGNBMKPM\x12\x20\n\x0bBHPGJCICMJM\x18\x08\x20\x01(\rR\x0bBHPGJCI\
-    CMJM\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.ODBNIGDLNCFR\x06status\
-    \x12.\n\x0bMNFJEIININL\x18\x02\x20\x03(\x0b2\x0c.LHOMIEDAOIDR\x0bMNFJEII\
-    NINL\x12\x20\n\x0bOGLDNEFKNDO\x18\x03\x20\x01(\rR\x0bOGLDNEFKNDOb\x06pro\
-    to3\
+    o\"\xc2\x01\n\x0bBABHBOMOMDF\x12.\n\x0bMNFJEIININL\x18\x02\x20\x03(\x0b2\
+    \x0c.LHOMIEDAOIDR\x0bMNFJEIININL\x12$\n\x06status\x18\r\x20\x01(\x0e2\
+    \x0c.ODBNIGDLNCFR\x06status\x12\x19\n\x08layer_id\x18\x0f\x20\x01(\rR\
+    \x07layerId\x12\x20\n\x0bBHPGJCICMJM\x18\t\x20\x01(\rR\x0bBHPGJCICMJM\
+    \x12\x20\n\x0bOGLDNEFKNDO\x18\x04\x20\x01(\rR\x0bOGLDNEFKNDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

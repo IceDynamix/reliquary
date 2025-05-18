@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKFKKPPLDAI {
     // message fields
+    // @@protoc_insertion_point(field:KKFKKPPLDAI.is_meet)
+    pub is_meet: bool,
     // @@protoc_insertion_point(field:KKFKKPPLDAI.AMLKPOHDELN)
     pub AMLKPOHDELN: u32,
-    // @@protoc_insertion_point(field:KKFKKPPLDAI.IAGODFDJAIK)
-    pub IAGODFDJAIK: bool,
     // @@protoc_insertion_point(field:KKFKKPPLDAI.visitor_id)
     pub visitor_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl KKFKKPPLDAI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_meet",
+            |m: &KKFKKPPLDAI| { &m.is_meet },
+            |m: &mut KKFKKPPLDAI| { &mut m.is_meet },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMLKPOHDELN",
             |m: &KKFKKPPLDAI| { &m.AMLKPOHDELN },
             |m: &mut KKFKKPPLDAI| { &mut m.AMLKPOHDELN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAGODFDJAIK",
-            |m: &KKFKKPPLDAI| { &m.IAGODFDJAIK },
-            |m: &mut KKFKKPPLDAI| { &mut m.IAGODFDJAIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "visitor_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.AMLKPOHDELN = is.read_uint32()?;
+                104 => {
+                    self.is_meet = is.read_bool()?;
                 },
                 56 => {
-                    self.IAGODFDJAIK = is.read_bool()?;
+                    self.AMLKPOHDELN = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.visitor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMLKPOHDELN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AMLKPOHDELN);
-        }
-        if self.IAGODFDJAIK != false {
+        if self.is_meet != false {
             my_size += 1 + 1;
         }
+        if self.AMLKPOHDELN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.AMLKPOHDELN);
+        }
         if self.visitor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.visitor_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.visitor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMLKPOHDELN != 0 {
-            os.write_uint32(11, self.AMLKPOHDELN)?;
+        if self.is_meet != false {
+            os.write_bool(13, self.is_meet)?;
         }
-        if self.IAGODFDJAIK != false {
-            os.write_bool(7, self.IAGODFDJAIK)?;
+        if self.AMLKPOHDELN != 0 {
+            os.write_uint32(7, self.AMLKPOHDELN)?;
         }
         if self.visitor_id != 0 {
-            os.write_uint32(2, self.visitor_id)?;
+            os.write_uint32(14, self.visitor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KKFKKPPLDAI {
     }
 
     fn clear(&mut self) {
+        self.is_meet = false;
         self.AMLKPOHDELN = 0;
-        self.IAGODFDJAIK = false;
         self.visitor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKFKKPPLDAI {
         static instance: KKFKKPPLDAI = KKFKKPPLDAI {
+            is_meet: false,
             AMLKPOHDELN: 0,
-            IAGODFDJAIK: false,
             visitor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KKFKKPPLDAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKFKKPPLDAI.proto\"p\n\x0bKKFKKPPLDAI\x12\x20\n\x0bAMLKPOHDELN\x18\
-    \x0b\x20\x01(\rR\x0bAMLKPOHDELN\x12\x20\n\x0bIAGODFDJAIK\x18\x07\x20\x01\
-    (\x08R\x0bIAGODFDJAIK\x12\x1d\n\nvisitor_id\x18\x02\x20\x01(\rR\tvisitor\
-    Idb\x06proto3\
+    \n\x11KKFKKPPLDAI.proto\"g\n\x0bKKFKKPPLDAI\x12\x17\n\x07is_meet\x18\r\
+    \x20\x01(\x08R\x06isMeet\x12\x20\n\x0bAMLKPOHDELN\x18\x07\x20\x01(\rR\
+    \x0bAMLKPOHDELN\x12\x1d\n\nvisitor_id\x18\x0e\x20\x01(\rR\tvisitorIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

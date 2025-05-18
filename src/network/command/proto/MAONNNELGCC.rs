@@ -86,13 +86,13 @@ impl ::protobuf::Message for MAONNNELGCC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.status_info)?;
                 },
-                88 => {
+                104 => {
                     self.ALJLKAOELDP = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.MIHLFGCGKNO = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MAONNNELGCC {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.ALJLKAOELDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ALJLKAOELDP);
+            my_size += ::protobuf::rt::uint32_size(13, self.ALJLKAOELDP);
         }
         if self.MIHLFGCGKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MIHLFGCGKNO);
+            my_size += ::protobuf::rt::uint32_size(12, self.MIHLFGCGKNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MAONNNELGCC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.status_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.ALJLKAOELDP != 0 {
-            os.write_uint32(11, self.ALJLKAOELDP)?;
+            os.write_uint32(13, self.ALJLKAOELDP)?;
         }
         if self.MIHLFGCGKNO != 0 {
-            os.write_uint32(3, self.MIHLFGCGKNO)?;
+            os.write_uint32(12, self.MIHLFGCGKNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MAONNNELGCC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAONNNELGCC.proto\x1a\x11FPDFCGKIILE.proto\"\x80\x01\n\x0bMAONNNEL\
-    GCC\x12-\n\x0bstatus_info\x18\x08\x20\x01(\x0b2\x0c.FPDFCGKIILER\nstatus\
-    Info\x12\x20\n\x0bALJLKAOELDP\x18\x0b\x20\x01(\rR\x0bALJLKAOELDP\x12\x20\
-    \n\x0bMIHLFGCGKNO\x18\x03\x20\x01(\rR\x0bMIHLFGCGKNOb\x06proto3\
+    GCC\x12-\n\x0bstatus_info\x18\t\x20\x01(\x0b2\x0c.FPDFCGKIILER\nstatusIn\
+    fo\x12\x20\n\x0bALJLKAOELDP\x18\r\x20\x01(\rR\x0bALJLKAOELDP\x12\x20\n\
+    \x0bMIHLFGCGKNO\x18\x0c\x20\x01(\rR\x0bMIHLFGCGKNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for POJEEIALJFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.MGKKGNLDGCL = is.read_uint32()?;
                 },
                 8 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for POJEEIALJFI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MGKKGNLDGCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MGKKGNLDGCL);
+            my_size += ::protobuf::rt::uint32_size(14, self.MGKKGNLDGCL);
         }
         if self.BAPHHCKIHMO != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.BAPHHCKIHMO);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for POJEEIALJFI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MGKKGNLDGCL != 0 {
-            os.write_uint32(8, self.MGKKGNLDGCL)?;
+            os.write_uint32(14, self.MGKKGNLDGCL)?;
         }
         if self.BAPHHCKIHMO != 0 {
             os.write_uint32(1, self.BAPHHCKIHMO)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for POJEEIALJFI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POJEEIALJFI.proto\"Q\n\x0bPOJEEIALJFI\x12\x20\n\x0bMGKKGNLDGCL\x18\
-    \x08\x20\x01(\rR\x0bMGKKGNLDGCL\x12\x20\n\x0bBAPHHCKIHMO\x18\x01\x20\x01\
+    \x0e\x20\x01(\rR\x0bMGKKGNLDGCL\x12\x20\n\x0bBAPHHCKIHMO\x18\x01\x20\x01\
     (\rR\x0bBAPHHCKIHMOb\x06proto3\
 ";
 

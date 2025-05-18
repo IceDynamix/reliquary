@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
                     self.world_level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(12, self.CENIFNKNFNP);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetSaveRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(4, self.CENIFNKNFNP)?;
+            os.write_uint32(12, self.CENIFNKNFNP)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(3, self.world_level)?;
+            os.write_uint32(1, self.world_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetSaveRaidCsReq.proto\"U\n\x10GetSaveRaidCsReq\x12\x20\n\x0bCENIF\
-    NKNFNP\x18\x04\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1f\n\x0bworld_level\x18\
-    \x03\x20\x01(\rR\nworldLevelb\x06proto3\
+    NKNFNP\x18\x0c\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1f\n\x0bworld_level\x18\
+    \x01\x20\x01(\rR\nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangePropTimelineInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.MIILNLHDDJM)
-    pub MIILNLHDDJM: u64,
-    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.DJNFCMFDDOA)
-    pub DJNFCMFDDOA: ::protobuf::MessageField<super::LNOJKICCCME::LNOJKICCCME>,
-    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.DLBEDAONNKH)
-    pub DLBEDAONNKH: bool,
+    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.uuid)
+    pub uuid: u64,
+    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.timeline_info)
+    pub timeline_info: ::protobuf::MessageField<super::PropTimelineInfo::PropTimelineInfo>,
+    // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.is_close_map)
+    pub is_close_map: bool,
     // @@protoc_insertion_point(field:ChangePropTimelineInfoCsReq.prop_entity_id)
     pub prop_entity_id: u32,
     // special fields
@@ -56,19 +56,19 @@ impl ChangePropTimelineInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MIILNLHDDJM",
-            |m: &ChangePropTimelineInfoCsReq| { &m.MIILNLHDDJM },
-            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.MIILNLHDDJM },
+            "uuid",
+            |m: &ChangePropTimelineInfoCsReq| { &m.uuid },
+            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.uuid },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LNOJKICCCME::LNOJKICCCME>(
-            "DJNFCMFDDOA",
-            |m: &ChangePropTimelineInfoCsReq| { &m.DJNFCMFDDOA },
-            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.DJNFCMFDDOA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropTimelineInfo::PropTimelineInfo>(
+            "timeline_info",
+            |m: &ChangePropTimelineInfoCsReq| { &m.timeline_info },
+            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.timeline_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLBEDAONNKH",
-            |m: &ChangePropTimelineInfoCsReq| { &m.DLBEDAONNKH },
-            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.DLBEDAONNKH },
+            "is_close_map",
+            |m: &ChangePropTimelineInfoCsReq| { &m.is_close_map },
+            |m: &mut ChangePropTimelineInfoCsReq| { &mut m.is_close_map },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "prop_entity_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChangePropTimelineInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.MIILNLHDDJM = is.read_uint64()?;
+                72 => {
+                    self.uuid = is.read_uint64()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJNFCMFDDOA)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
-                48 => {
-                    self.DLBEDAONNKH = is.read_bool()?;
+                16 => {
+                    self.is_close_map = is.read_bool()?;
                 },
-                56 => {
+                64 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for ChangePropTimelineInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MIILNLHDDJM != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.MIILNLHDDJM);
+        if self.uuid != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.uuid);
         }
-        if let Some(v) = self.DJNFCMFDDOA.as_ref() {
+        if let Some(v) = self.timeline_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DLBEDAONNKH != false {
+        if self.is_close_map != false {
             my_size += 1 + 1;
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ChangePropTimelineInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MIILNLHDDJM != 0 {
-            os.write_uint64(11, self.MIILNLHDDJM)?;
+        if self.uuid != 0 {
+            os.write_uint64(9, self.uuid)?;
         }
-        if let Some(v) = self.DJNFCMFDDOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.timeline_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.DLBEDAONNKH != false {
-            os.write_bool(6, self.DLBEDAONNKH)?;
+        if self.is_close_map != false {
+            os.write_bool(2, self.is_close_map)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(7, self.prop_entity_id)?;
+            os.write_uint32(8, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for ChangePropTimelineInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.MIILNLHDDJM = 0;
-        self.DJNFCMFDDOA.clear();
-        self.DLBEDAONNKH = false;
+        self.uuid = 0;
+        self.timeline_info.clear();
+        self.is_close_map = false;
         self.prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangePropTimelineInfoCsReq {
         static instance: ChangePropTimelineInfoCsReq = ChangePropTimelineInfoCsReq {
-            MIILNLHDDJM: 0,
-            DJNFCMFDDOA: ::protobuf::MessageField::none(),
-            DLBEDAONNKH: false,
+            uuid: 0,
+            timeline_info: ::protobuf::MessageField::none(),
+            is_close_map: false,
             prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for ChangePropTimelineInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ChangePropTimelineInfoCsReq.proto\x1a\x11LNOJKICCCME.proto\"\xb7\x01\
-    \n\x1bChangePropTimelineInfoCsReq\x12\x20\n\x0bMIILNLHDDJM\x18\x0b\x20\
-    \x01(\x04R\x0bMIILNLHDDJM\x12.\n\x0bDJNFCMFDDOA\x18\x02\x20\x01(\x0b2\
-    \x0c.LNOJKICCCMER\x0bDJNFCMFDDOA\x12\x20\n\x0bDLBEDAONNKH\x18\x06\x20\
-    \x01(\x08R\x0bDLBEDAONNKH\x12$\n\x0eprop_entity_id\x18\x07\x20\x01(\rR\
-    \x0cpropEntityIdb\x06proto3\
+    \n!ChangePropTimelineInfoCsReq.proto\x1a\x16PropTimelineInfo.proto\"\xb1\
+    \x01\n\x1bChangePropTimelineInfoCsReq\x12\x12\n\x04uuid\x18\t\x20\x01(\
+    \x04R\x04uuid\x126\n\rtimeline_info\x18\x0b\x20\x01(\x0b2\x11.PropTimeli\
+    neInfoR\x0ctimelineInfo\x12\x20\n\x0cis_close_map\x18\x02\x20\x01(\x08R\
+    \nisCloseMap\x12$\n\x0eprop_entity_id\x18\x08\x20\x01(\rR\x0cpropEntityI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LNOJKICCCME::file_descriptor().clone());
+            deps.push(super::PropTimelineInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChangePropTimelineInfoCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

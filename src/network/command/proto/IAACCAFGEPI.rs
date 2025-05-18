@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IAACCAFGEPI {
     // message fields
-    // @@protoc_insertion_point(field:IAACCAFGEPI.JMDEFLAFICE)
-    pub JMDEFLAFICE: bool,
-    // @@protoc_insertion_point(field:IAACCAFGEPI.MAFKCBODMMC)
-    pub MAFKCBODMMC: ::protobuf::EnumOrUnknown<super::IHGJLLNGDKL::IHGJLLNGDKL>,
-    // @@protoc_insertion_point(field:IAACCAFGEPI.HHCBJGHKCPC)
-    pub HHCBJGHKCPC: u32,
     // @@protoc_insertion_point(field:IAACCAFGEPI.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:IAACCAFGEPI.cell_id)
+    pub cell_id: u32,
+    // @@protoc_insertion_point(field:IAACCAFGEPI.MAFKCBODMMC)
+    pub MAFKCBODMMC: ::protobuf::EnumOrUnknown<super::IHGJLLNGDKL::IHGJLLNGDKL>,
+    // @@protoc_insertion_point(field:IAACCAFGEPI.JMDEFLAFICE)
+    pub JMDEFLAFICE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:IAACCAFGEPI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,14 @@ impl IAACCAFGEPI {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMDEFLAFICE",
-            |m: &IAACCAFGEPI| { &m.JMDEFLAFICE },
-            |m: &mut IAACCAFGEPI| { &mut m.JMDEFLAFICE },
+            "map_id",
+            |m: &IAACCAFGEPI| { &m.map_id },
+            |m: &mut IAACCAFGEPI| { &mut m.map_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cell_id",
+            |m: &IAACCAFGEPI| { &m.cell_id },
+            |m: &mut IAACCAFGEPI| { &mut m.cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MAFKCBODMMC",
@@ -66,14 +71,9 @@ impl IAACCAFGEPI {
             |m: &mut IAACCAFGEPI| { &mut m.MAFKCBODMMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHCBJGHKCPC",
-            |m: &IAACCAFGEPI| { &m.HHCBJGHKCPC },
-            |m: &mut IAACCAFGEPI| { &mut m.HHCBJGHKCPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &IAACCAFGEPI| { &m.map_id },
-            |m: &mut IAACCAFGEPI| { &mut m.map_id },
+            "JMDEFLAFICE",
+            |m: &IAACCAFGEPI| { &m.JMDEFLAFICE },
+            |m: &mut IAACCAFGEPI| { &mut m.JMDEFLAFICE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAACCAFGEPI>(
             "IAACCAFGEPI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for IAACCAFGEPI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.JMDEFLAFICE = is.read_bool()?;
+                120 => {
+                    self.map_id = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
+                    self.cell_id = is.read_uint32()?;
+                },
+                88 => {
                     self.MAFKCBODMMC = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.HHCBJGHKCPC = is.read_uint32()?;
-                },
-                64 => {
-                    self.map_id = is.read_uint32()?;
+                112 => {
+                    self.JMDEFLAFICE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for IAACCAFGEPI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JMDEFLAFICE != false {
-            my_size += 1 + 1;
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.map_id);
+        }
+        if self.cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.cell_id);
         }
         if self.MAFKCBODMMC != ::protobuf::EnumOrUnknown::new(super::IHGJLLNGDKL::IHGJLLNGDKL::MONOPOLY_CELL_STATE_IDLE) {
-            my_size += ::protobuf::rt::int32_size(14, self.MAFKCBODMMC.value());
+            my_size += ::protobuf::rt::int32_size(11, self.MAFKCBODMMC.value());
         }
-        if self.HHCBJGHKCPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HHCBJGHKCPC);
-        }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.map_id);
+        if self.JMDEFLAFICE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for IAACCAFGEPI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JMDEFLAFICE != false {
-            os.write_bool(10, self.JMDEFLAFICE)?;
+        if self.map_id != 0 {
+            os.write_uint32(15, self.map_id)?;
+        }
+        if self.cell_id != 0 {
+            os.write_uint32(7, self.cell_id)?;
         }
         if self.MAFKCBODMMC != ::protobuf::EnumOrUnknown::new(super::IHGJLLNGDKL::IHGJLLNGDKL::MONOPOLY_CELL_STATE_IDLE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.MAFKCBODMMC))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MAFKCBODMMC))?;
         }
-        if self.HHCBJGHKCPC != 0 {
-            os.write_uint32(12, self.HHCBJGHKCPC)?;
-        }
-        if self.map_id != 0 {
-            os.write_uint32(8, self.map_id)?;
+        if self.JMDEFLAFICE != false {
+            os.write_bool(14, self.JMDEFLAFICE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for IAACCAFGEPI {
     }
 
     fn clear(&mut self) {
-        self.JMDEFLAFICE = false;
-        self.MAFKCBODMMC = ::protobuf::EnumOrUnknown::new(super::IHGJLLNGDKL::IHGJLLNGDKL::MONOPOLY_CELL_STATE_IDLE);
-        self.HHCBJGHKCPC = 0;
         self.map_id = 0;
+        self.cell_id = 0;
+        self.MAFKCBODMMC = ::protobuf::EnumOrUnknown::new(super::IHGJLLNGDKL::IHGJLLNGDKL::MONOPOLY_CELL_STATE_IDLE);
+        self.JMDEFLAFICE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAACCAFGEPI {
         static instance: IAACCAFGEPI = IAACCAFGEPI {
-            JMDEFLAFICE: false,
-            MAFKCBODMMC: ::protobuf::EnumOrUnknown::from_i32(0),
-            HHCBJGHKCPC: 0,
             map_id: 0,
+            cell_id: 0,
+            MAFKCBODMMC: ::protobuf::EnumOrUnknown::from_i32(0),
+            JMDEFLAFICE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for IAACCAFGEPI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IAACCAFGEPI.proto\x1a\x11IHGJLLNGDKL.proto\"\x98\x01\n\x0bIAACCAFG\
-    EPI\x12\x20\n\x0bJMDEFLAFICE\x18\n\x20\x01(\x08R\x0bJMDEFLAFICE\x12.\n\
-    \x0bMAFKCBODMMC\x18\x0e\x20\x01(\x0e2\x0c.IHGJLLNGDKLR\x0bMAFKCBODMMC\
-    \x12\x20\n\x0bHHCBJGHKCPC\x18\x0c\x20\x01(\rR\x0bHHCBJGHKCPC\x12\x15\n\
-    \x06map_id\x18\x08\x20\x01(\rR\x05mapIdb\x06proto3\
+    \n\x11IAACCAFGEPI.proto\x1a\x11IHGJLLNGDKL.proto\"\x8f\x01\n\x0bIAACCAFG\
+    EPI\x12\x15\n\x06map_id\x18\x0f\x20\x01(\rR\x05mapId\x12\x17\n\x07cell_i\
+    d\x18\x07\x20\x01(\rR\x06cellId\x12.\n\x0bMAFKCBODMMC\x18\x0b\x20\x01(\
+    \x0e2\x0c.IHGJLLNGDKLR\x0bMAFKCBODMMC\x12\x20\n\x0bJMDEFLAFICE\x18\x0e\
+    \x20\x01(\x08R\x0bJMDEFLAFICEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

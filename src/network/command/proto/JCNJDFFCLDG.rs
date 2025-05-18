@@ -30,6 +30,8 @@ pub struct JCNJDFFCLDG {
     // message fields
     // @@protoc_insertion_point(field:JCNJDFFCLDG.hp)
     pub hp: i32,
+    // @@protoc_insertion_point(field:JCNJDFFCLDG.JNBOONPDOCE)
+    pub JNBOONPDOCE: bool,
     // @@protoc_insertion_point(field:JCNJDFFCLDG.LKEBLPIJMGB)
     pub LKEBLPIJMGB: i32,
     // @@protoc_insertion_point(field:JCNJDFFCLDG.OOPKIKMBBHH)
@@ -38,8 +40,6 @@ pub struct JCNJDFFCLDG {
     pub id: u32,
     // @@protoc_insertion_point(field:JCNJDFFCLDG.KEEDPLPACLP)
     pub KEEDPLPACLP: ::protobuf::MessageField<super::ODNNKBIMEFH::ODNNKBIMEFH>,
-    // @@protoc_insertion_point(field:JCNJDFFCLDG.JNBOONPDOCE)
-    pub JNBOONPDOCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JCNJDFFCLDG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,6 +65,11 @@ impl JCNJDFFCLDG {
             |m: &mut JCNJDFFCLDG| { &mut m.hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNBOONPDOCE",
+            |m: &JCNJDFFCLDG| { &m.JNBOONPDOCE },
+            |m: &mut JCNJDFFCLDG| { &mut m.JNBOONPDOCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKEBLPIJMGB",
             |m: &JCNJDFFCLDG| { &m.LKEBLPIJMGB },
             |m: &mut JCNJDFFCLDG| { &mut m.LKEBLPIJMGB },
@@ -84,11 +89,6 @@ impl JCNJDFFCLDG {
             |m: &JCNJDFFCLDG| { &m.KEEDPLPACLP },
             |m: &mut JCNJDFFCLDG| { &mut m.KEEDPLPACLP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNBOONPDOCE",
-            |m: &JCNJDFFCLDG| { &m.JNBOONPDOCE },
-            |m: &mut JCNJDFFCLDG| { &mut m.JNBOONPDOCE },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCNJDFFCLDG>(
             "JCNJDFFCLDG",
             fields,
@@ -107,26 +107,26 @@ impl ::protobuf::Message for JCNJDFFCLDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                120 => {
                     self.hp = is.read_int32()?;
                 },
-                8 => {
-                    self.LKEBLPIJMGB = is.read_int32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OOPKIKMBBHH)?;
-                },
-                48 => {
-                    self.OOPKIKMBBHH.push(is.read_uint32()?);
-                },
                 72 => {
-                    self.id = is.read_uint32()?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEEDPLPACLP)?;
+                    self.JNBOONPDOCE = is.read_bool()?;
                 },
                 80 => {
-                    self.JNBOONPDOCE = is.read_bool()?;
+                    self.LKEBLPIJMGB = is.read_int32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OOPKIKMBBHH)?;
+                },
+                56 => {
+                    self.OOPKIKMBBHH.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.id = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEEDPLPACLP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,21 +141,21 @@ impl ::protobuf::Message for JCNJDFFCLDG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.hp != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.hp);
+            my_size += ::protobuf::rt::int32_size(15, self.hp);
+        }
+        if self.JNBOONPDOCE != false {
+            my_size += 1 + 1;
         }
         if self.LKEBLPIJMGB != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.LKEBLPIJMGB);
+            my_size += ::protobuf::rt::int32_size(10, self.LKEBLPIJMGB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.OOPKIKMBBHH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.OOPKIKMBBHH);
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if let Some(v) = self.KEEDPLPACLP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JNBOONPDOCE != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,20 +164,20 @@ impl ::protobuf::Message for JCNJDFFCLDG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.hp != 0 {
-            os.write_int32(11, self.hp)?;
-        }
-        if self.LKEBLPIJMGB != 0 {
-            os.write_int32(1, self.LKEBLPIJMGB)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.OOPKIKMBBHH)?;
-        if self.id != 0 {
-            os.write_uint32(9, self.id)?;
-        }
-        if let Some(v) = self.KEEDPLPACLP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            os.write_int32(15, self.hp)?;
         }
         if self.JNBOONPDOCE != false {
-            os.write_bool(10, self.JNBOONPDOCE)?;
+            os.write_bool(9, self.JNBOONPDOCE)?;
+        }
+        if self.LKEBLPIJMGB != 0 {
+            os.write_int32(10, self.LKEBLPIJMGB)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.OOPKIKMBBHH)?;
+        if self.id != 0 {
+            os.write_uint32(2, self.id)?;
+        }
+        if let Some(v) = self.KEEDPLPACLP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for JCNJDFFCLDG {
 
     fn clear(&mut self) {
         self.hp = 0;
+        self.JNBOONPDOCE = false;
         self.LKEBLPIJMGB = 0;
         self.OOPKIKMBBHH.clear();
         self.id = 0;
         self.KEEDPLPACLP.clear();
-        self.JNBOONPDOCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCNJDFFCLDG {
         static instance: JCNJDFFCLDG = JCNJDFFCLDG {
             hp: 0,
+            JNBOONPDOCE: false,
             LKEBLPIJMGB: 0,
             OOPKIKMBBHH: ::std::vec::Vec::new(),
             id: 0,
             KEEDPLPACLP: ::protobuf::MessageField::none(),
-            JNBOONPDOCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,11 +238,11 @@ impl ::protobuf::reflect::ProtobufValue for JCNJDFFCLDG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCNJDFFCLDG.proto\x1a\x11ODNNKBIMEFH.proto\"\xc3\x01\n\x0bJCNJDFFC\
-    LDG\x12\x0e\n\x02hp\x18\x0b\x20\x01(\x05R\x02hp\x12\x20\n\x0bLKEBLPIJMGB\
-    \x18\x01\x20\x01(\x05R\x0bLKEBLPIJMGB\x12\x20\n\x0bOOPKIKMBBHH\x18\x06\
-    \x20\x03(\rR\x0bOOPKIKMBBHH\x12\x0e\n\x02id\x18\t\x20\x01(\rR\x02id\x12.\
-    \n\x0bKEEDPLPACLP\x18\x0c\x20\x01(\x0b2\x0c.ODNNKBIMEFHR\x0bKEEDPLPACLP\
-    \x12\x20\n\x0bJNBOONPDOCE\x18\n\x20\x01(\x08R\x0bJNBOONPDOCEb\x06proto3\
+    LDG\x12\x0e\n\x02hp\x18\x0f\x20\x01(\x05R\x02hp\x12\x20\n\x0bJNBOONPDOCE\
+    \x18\t\x20\x01(\x08R\x0bJNBOONPDOCE\x12\x20\n\x0bLKEBLPIJMGB\x18\n\x20\
+    \x01(\x05R\x0bLKEBLPIJMGB\x12\x20\n\x0bOOPKIKMBBHH\x18\x07\x20\x03(\rR\
+    \x0bOOPKIKMBBHH\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12.\n\x0bKEED\
+    PLPACLP\x18\x03\x20\x01(\x0b2\x0c.ODNNKBIMEFHR\x0bKEEDPLPACLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

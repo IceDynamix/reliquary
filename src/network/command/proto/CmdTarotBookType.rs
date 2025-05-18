@@ -29,28 +29,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTarotBookType {
     // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookTypeNone)
     CmdTarotBookTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookGetDataScRsp)
-    CmdTarotBookGetDataScRsp = 8156,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookOpenPackScRsp)
-    CmdTarotBookOpenPackScRsp = 8144,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishStoryScRsp)
-    CmdTarotBookFinishStoryScRsp = 8151,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookOpenPackCsReq)
-    CmdTarotBookOpenPackCsReq = 8160,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookGetDataCsReq)
-    CmdTarotBookGetDataCsReq = 8157,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookModifyEnergyScNotify)
-    CmdTarotBookModifyEnergyScNotify = 8150,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookUnlockStoryCsReq)
-    CmdTarotBookUnlockStoryCsReq = 8154,
     // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishStoryCsReq)
-    CmdTarotBookFinishStoryCsReq = 8159,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishInteractionScRsp)
-    CmdTarotBookFinishInteractionScRsp = 8147,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookUnlockStoryScRsp)
-    CmdTarotBookUnlockStoryScRsp = 8149,
+    CmdTarotBookFinishStoryCsReq = 8160,
     // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishInteractionCsReq)
-    CmdTarotBookFinishInteractionCsReq = 8158,
+    CmdTarotBookFinishInteractionCsReq = 8143,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookGetDataCsReq)
+    CmdTarotBookGetDataCsReq = 8154,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishStoryScRsp)
+    CmdTarotBookFinishStoryScRsp = 8149,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookUnlockStoryScRsp)
+    CmdTarotBookUnlockStoryScRsp = 8142,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookModifyEnergyScNotify)
+    CmdTarotBookModifyEnergyScNotify = 8147,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookFinishInteractionScRsp)
+    CmdTarotBookFinishInteractionScRsp = 8145,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookOpenPackScRsp)
+    CmdTarotBookOpenPackScRsp = 8150,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookGetDataScRsp)
+    CmdTarotBookGetDataScRsp = 8153,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookUnlockStoryCsReq)
+    CmdTarotBookUnlockStoryCsReq = 8144,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.CmdTarotBookOpenPackCsReq)
+    CmdTarotBookOpenPackCsReq = 8148,
 }
 
 impl ::protobuf::Enum for CmdTarotBookType {
@@ -63,17 +63,17 @@ impl ::protobuf::Enum for CmdTarotBookType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTarotBookType> {
         match value {
             0 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookTypeNone),
-            8156 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataScRsp),
-            8144 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackScRsp),
-            8151 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryScRsp),
-            8160 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackCsReq),
-            8157 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataCsReq),
-            8150 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookModifyEnergyScNotify),
-            8154 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryCsReq),
-            8159 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryCsReq),
-            8147 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionScRsp),
-            8149 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryScRsp),
-            8158 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionCsReq),
+            8160 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryCsReq),
+            8143 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionCsReq),
+            8154 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataCsReq),
+            8149 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryScRsp),
+            8142 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryScRsp),
+            8147 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookModifyEnergyScNotify),
+            8145 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionScRsp),
+            8150 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackScRsp),
+            8153 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataScRsp),
+            8144 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryCsReq),
+            8148 => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -81,34 +81,34 @@ impl ::protobuf::Enum for CmdTarotBookType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTarotBookType> {
         match str {
             "CmdTarotBookTypeNone" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookTypeNone),
-            "CmdTarotBookGetDataScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataScRsp),
-            "CmdTarotBookOpenPackScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackScRsp),
-            "CmdTarotBookFinishStoryScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryScRsp),
-            "CmdTarotBookOpenPackCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackCsReq),
-            "CmdTarotBookGetDataCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataCsReq),
-            "CmdTarotBookModifyEnergyScNotify" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookModifyEnergyScNotify),
-            "CmdTarotBookUnlockStoryCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryCsReq),
             "CmdTarotBookFinishStoryCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryCsReq),
-            "CmdTarotBookFinishInteractionScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionScRsp),
-            "CmdTarotBookUnlockStoryScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryScRsp),
             "CmdTarotBookFinishInteractionCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionCsReq),
+            "CmdTarotBookGetDataCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataCsReq),
+            "CmdTarotBookFinishStoryScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishStoryScRsp),
+            "CmdTarotBookUnlockStoryScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryScRsp),
+            "CmdTarotBookModifyEnergyScNotify" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookModifyEnergyScNotify),
+            "CmdTarotBookFinishInteractionScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookFinishInteractionScRsp),
+            "CmdTarotBookOpenPackScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackScRsp),
+            "CmdTarotBookGetDataScRsp" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookGetDataScRsp),
+            "CmdTarotBookUnlockStoryCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookUnlockStoryCsReq),
+            "CmdTarotBookOpenPackCsReq" => ::std::option::Option::Some(CmdTarotBookType::CmdTarotBookOpenPackCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTarotBookType] = &[
         CmdTarotBookType::CmdTarotBookTypeNone,
-        CmdTarotBookType::CmdTarotBookGetDataScRsp,
-        CmdTarotBookType::CmdTarotBookOpenPackScRsp,
-        CmdTarotBookType::CmdTarotBookFinishStoryScRsp,
-        CmdTarotBookType::CmdTarotBookOpenPackCsReq,
-        CmdTarotBookType::CmdTarotBookGetDataCsReq,
-        CmdTarotBookType::CmdTarotBookModifyEnergyScNotify,
-        CmdTarotBookType::CmdTarotBookUnlockStoryCsReq,
         CmdTarotBookType::CmdTarotBookFinishStoryCsReq,
-        CmdTarotBookType::CmdTarotBookFinishInteractionScRsp,
-        CmdTarotBookType::CmdTarotBookUnlockStoryScRsp,
         CmdTarotBookType::CmdTarotBookFinishInteractionCsReq,
+        CmdTarotBookType::CmdTarotBookGetDataCsReq,
+        CmdTarotBookType::CmdTarotBookFinishStoryScRsp,
+        CmdTarotBookType::CmdTarotBookUnlockStoryScRsp,
+        CmdTarotBookType::CmdTarotBookModifyEnergyScNotify,
+        CmdTarotBookType::CmdTarotBookFinishInteractionScRsp,
+        CmdTarotBookType::CmdTarotBookOpenPackScRsp,
+        CmdTarotBookType::CmdTarotBookGetDataScRsp,
+        CmdTarotBookType::CmdTarotBookUnlockStoryCsReq,
+        CmdTarotBookType::CmdTarotBookOpenPackCsReq,
     ];
 }
 
@@ -121,17 +121,17 @@ impl ::protobuf::EnumFull for CmdTarotBookType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTarotBookType::CmdTarotBookTypeNone => 0,
-            CmdTarotBookType::CmdTarotBookGetDataScRsp => 1,
-            CmdTarotBookType::CmdTarotBookOpenPackScRsp => 2,
-            CmdTarotBookType::CmdTarotBookFinishStoryScRsp => 3,
-            CmdTarotBookType::CmdTarotBookOpenPackCsReq => 4,
-            CmdTarotBookType::CmdTarotBookGetDataCsReq => 5,
+            CmdTarotBookType::CmdTarotBookFinishStoryCsReq => 1,
+            CmdTarotBookType::CmdTarotBookFinishInteractionCsReq => 2,
+            CmdTarotBookType::CmdTarotBookGetDataCsReq => 3,
+            CmdTarotBookType::CmdTarotBookFinishStoryScRsp => 4,
+            CmdTarotBookType::CmdTarotBookUnlockStoryScRsp => 5,
             CmdTarotBookType::CmdTarotBookModifyEnergyScNotify => 6,
-            CmdTarotBookType::CmdTarotBookUnlockStoryCsReq => 7,
-            CmdTarotBookType::CmdTarotBookFinishStoryCsReq => 8,
-            CmdTarotBookType::CmdTarotBookFinishInteractionScRsp => 9,
-            CmdTarotBookType::CmdTarotBookUnlockStoryScRsp => 10,
-            CmdTarotBookType::CmdTarotBookFinishInteractionCsReq => 11,
+            CmdTarotBookType::CmdTarotBookFinishInteractionScRsp => 7,
+            CmdTarotBookType::CmdTarotBookOpenPackScRsp => 8,
+            CmdTarotBookType::CmdTarotBookGetDataScRsp => 9,
+            CmdTarotBookType::CmdTarotBookUnlockStoryCsReq => 10,
+            CmdTarotBookType::CmdTarotBookOpenPackCsReq => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -151,15 +151,15 @@ impl CmdTarotBookType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdTarotBookType.proto*\xaf\x03\n\x10CmdTarotBookType\x12\x18\n\
-    \x14CmdTarotBookTypeNone\x10\0\x12\x1d\n\x18CmdTarotBookGetDataScRsp\x10\
-    \xdc?\x12\x1e\n\x19CmdTarotBookOpenPackScRsp\x10\xd0?\x12!\n\x1cCmdTarot\
-    BookFinishStoryScRsp\x10\xd7?\x12\x1e\n\x19CmdTarotBookOpenPackCsReq\x10\
-    \xe0?\x12\x1d\n\x18CmdTarotBookGetDataCsReq\x10\xdd?\x12%\n\x20CmdTarotB\
-    ookModifyEnergyScNotify\x10\xd6?\x12!\n\x1cCmdTarotBookUnlockStoryCsReq\
-    \x10\xda?\x12!\n\x1cCmdTarotBookFinishStoryCsReq\x10\xdf?\x12'\n\"CmdTar\
-    otBookFinishInteractionScRsp\x10\xd3?\x12!\n\x1cCmdTarotBookUnlockStoryS\
-    cRsp\x10\xd5?\x12'\n\"CmdTarotBookFinishInteractionCsReq\x10\xde?b\x06pr\
-    oto3\
+    \x14CmdTarotBookTypeNone\x10\0\x12!\n\x1cCmdTarotBookFinishStoryCsReq\
+    \x10\xe0?\x12'\n\"CmdTarotBookFinishInteractionCsReq\x10\xcf?\x12\x1d\n\
+    \x18CmdTarotBookGetDataCsReq\x10\xda?\x12!\n\x1cCmdTarotBookFinishStoryS\
+    cRsp\x10\xd5?\x12!\n\x1cCmdTarotBookUnlockStoryScRsp\x10\xce?\x12%\n\x20\
+    CmdTarotBookModifyEnergyScNotify\x10\xd3?\x12'\n\"CmdTarotBookFinishInte\
+    ractionScRsp\x10\xd1?\x12\x1e\n\x19CmdTarotBookOpenPackScRsp\x10\xd6?\
+    \x12\x1d\n\x18CmdTarotBookGetDataScRsp\x10\xd9?\x12!\n\x1cCmdTarotBookUn\
+    lockStoryCsReq\x10\xd0?\x12\x1e\n\x19CmdTarotBookOpenPackCsReq\x10\xd4?b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

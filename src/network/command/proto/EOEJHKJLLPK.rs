@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOEJHKJLLPK {
     // message fields
-    // @@protoc_insertion_point(field:EOEJHKJLLPK.unit_id)
-    pub unit_id: u32,
     // @@protoc_insertion_point(field:EOEJHKJLLPK.PPMIOGCFOOC)
     pub PPMIOGCFOOC: u32,
+    // @@protoc_insertion_point(field:EOEJHKJLLPK.magic_unit_id)
+    pub magic_unit_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EOEJHKJLLPK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EOEJHKJLLPK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unit_id",
-            |m: &EOEJHKJLLPK| { &m.unit_id },
-            |m: &mut EOEJHKJLLPK| { &mut m.unit_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPMIOGCFOOC",
             |m: &EOEJHKJLLPK| { &m.PPMIOGCFOOC },
             |m: &mut EOEJHKJLLPK| { &mut m.PPMIOGCFOOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "magic_unit_id",
+            |m: &EOEJHKJLLPK| { &m.magic_unit_id },
+            |m: &mut EOEJHKJLLPK| { &mut m.magic_unit_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOEJHKJLLPK>(
             "EOEJHKJLLPK",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for EOEJHKJLLPK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 72 => {
-                    self.unit_id = is.read_uint32()?;
-                },
-                24 => {
                     self.PPMIOGCFOOC = is.read_uint32()?;
+                },
+                96 => {
+                    self.magic_unit_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EOEJHKJLLPK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.unit_id);
-        }
         if self.PPMIOGCFOOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PPMIOGCFOOC);
+            my_size += ::protobuf::rt::uint32_size(9, self.PPMIOGCFOOC);
+        }
+        if self.magic_unit_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.magic_unit_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EOEJHKJLLPK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unit_id != 0 {
-            os.write_uint32(9, self.unit_id)?;
-        }
         if self.PPMIOGCFOOC != 0 {
-            os.write_uint32(3, self.PPMIOGCFOOC)?;
+            os.write_uint32(9, self.PPMIOGCFOOC)?;
+        }
+        if self.magic_unit_id != 0 {
+            os.write_uint32(12, self.magic_unit_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EOEJHKJLLPK {
     }
 
     fn clear(&mut self) {
-        self.unit_id = 0;
         self.PPMIOGCFOOC = 0;
+        self.magic_unit_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOEJHKJLLPK {
         static instance: EOEJHKJLLPK = EOEJHKJLLPK {
-            unit_id: 0,
             PPMIOGCFOOC: 0,
+            magic_unit_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EOEJHKJLLPK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOEJHKJLLPK.proto\"H\n\x0bEOEJHKJLLPK\x12\x17\n\x07unit_id\x18\t\
-    \x20\x01(\rR\x06unitId\x12\x20\n\x0bPPMIOGCFOOC\x18\x03\x20\x01(\rR\x0bP\
-    PMIOGCFOOCb\x06proto3\
+    \n\x11EOEJHKJLLPK.proto\"S\n\x0bEOEJHKJLLPK\x12\x20\n\x0bPPMIOGCFOOC\x18\
+    \t\x20\x01(\rR\x0bPPMIOGCFOOC\x12\"\n\rmagic_unit_id\x18\x0c\x20\x01(\rR\
+    \x0bmagicUnitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

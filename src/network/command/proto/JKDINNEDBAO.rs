@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JKDINNEDBAO {
     // message fields
-    // @@protoc_insertion_point(field:JKDINNEDBAO.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:JKDINNEDBAO.CENIFNKNFNP)
     pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:JKDINNEDBAO.world_level)
+    pub world_level: u32,
     // @@protoc_insertion_point(field:JKDINNEDBAO.LHEILNACNOD)
     pub LHEILNACNOD: ::std::vec::Vec<super::HOCHOIHKKDG::HOCHOIHKKDG>,
     // special fields
@@ -54,14 +54,14 @@ impl JKDINNEDBAO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &JKDINNEDBAO| { &m.world_level },
-            |m: &mut JKDINNEDBAO| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CENIFNKNFNP",
             |m: &JKDINNEDBAO| { &m.CENIFNKNFNP },
             |m: &mut JKDINNEDBAO| { &mut m.CENIFNKNFNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &JKDINNEDBAO| { &m.world_level },
+            |m: &mut JKDINNEDBAO| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LHEILNACNOD",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for JKDINNEDBAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                26 => {
+                88 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                18 => {
                     self.LHEILNACNOD.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for JKDINNEDBAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.world_level);
-        }
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(4, self.CENIFNKNFNP);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.world_level);
         }
         for value in &self.LHEILNACNOD {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for JKDINNEDBAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(9, self.world_level)?;
-        }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(8, self.CENIFNKNFNP)?;
+            os.write_uint32(4, self.CENIFNKNFNP)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(11, self.world_level)?;
         }
         for v in &self.LHEILNACNOD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for JKDINNEDBAO {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
         self.CENIFNKNFNP = 0;
+        self.world_level = 0;
         self.LHEILNACNOD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JKDINNEDBAO {
         static instance: JKDINNEDBAO = JKDINNEDBAO {
-            world_level: 0,
             CENIFNKNFNP: 0,
+            world_level: 0,
             LHEILNACNOD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for JKDINNEDBAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKDINNEDBAO.proto\x1a\x11HOCHOIHKKDG.proto\"\x80\x01\n\x0bJKDINNED\
-    BAO\x12\x1f\n\x0bworld_level\x18\t\x20\x01(\rR\nworldLevel\x12\x20\n\x0b\
-    CENIFNKNFNP\x18\x08\x20\x01(\rR\x0bCENIFNKNFNP\x12.\n\x0bLHEILNACNOD\x18\
-    \x03\x20\x03(\x0b2\x0c.HOCHOIHKKDGR\x0bLHEILNACNODb\x06proto3\
+    BAO\x12\x20\n\x0bCENIFNKNFNP\x18\x04\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1f\
+    \n\x0bworld_level\x18\x0b\x20\x01(\rR\nworldLevel\x12.\n\x0bLHEILNACNOD\
+    \x18\x02\x20\x03(\x0b2\x0c.HOCHOIHKKDGR\x0bLHEILNACNODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

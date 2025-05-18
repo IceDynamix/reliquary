@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CCHIEDIBOFM {
     // message fields
-    // @@protoc_insertion_point(field:CCHIEDIBOFM.KNBDPFEIDNM)
-    pub KNBDPFEIDNM: bool,
+    // @@protoc_insertion_point(field:CCHIEDIBOFM.is_unlocked)
+    pub is_unlocked: bool,
     // @@protoc_insertion_point(field:CCHIEDIBOFM.HANDCDPIBLD)
     pub HANDCDPIBLD: u32,
     // special fields
@@ -52,9 +52,9 @@ impl CCHIEDIBOFM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNBDPFEIDNM",
-            |m: &CCHIEDIBOFM| { &m.KNBDPFEIDNM },
-            |m: &mut CCHIEDIBOFM| { &mut m.KNBDPFEIDNM },
+            "is_unlocked",
+            |m: &CCHIEDIBOFM| { &m.is_unlocked },
+            |m: &mut CCHIEDIBOFM| { &mut m.is_unlocked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HANDCDPIBLD",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for CCHIEDIBOFM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 104 => {
-                    self.KNBDPFEIDNM = is.read_bool()?;
+                    self.is_unlocked = is.read_bool()?;
                 },
-                72 => {
+                48 => {
                     self.HANDCDPIBLD = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CCHIEDIBOFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KNBDPFEIDNM != false {
+        if self.is_unlocked != false {
             my_size += 1 + 1;
         }
         if self.HANDCDPIBLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HANDCDPIBLD);
+            my_size += ::protobuf::rt::uint32_size(6, self.HANDCDPIBLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CCHIEDIBOFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KNBDPFEIDNM != false {
-            os.write_bool(13, self.KNBDPFEIDNM)?;
+        if self.is_unlocked != false {
+            os.write_bool(13, self.is_unlocked)?;
         }
         if self.HANDCDPIBLD != 0 {
-            os.write_uint32(9, self.HANDCDPIBLD)?;
+            os.write_uint32(6, self.HANDCDPIBLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for CCHIEDIBOFM {
     }
 
     fn clear(&mut self) {
-        self.KNBDPFEIDNM = false;
+        self.is_unlocked = false;
         self.HANDCDPIBLD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CCHIEDIBOFM {
         static instance: CCHIEDIBOFM = CCHIEDIBOFM {
-            KNBDPFEIDNM: false,
+            is_unlocked: false,
             HANDCDPIBLD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CCHIEDIBOFM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CCHIEDIBOFM.proto\"Q\n\x0bCCHIEDIBOFM\x12\x20\n\x0bKNBDPFEIDNM\x18\
-    \r\x20\x01(\x08R\x0bKNBDPFEIDNM\x12\x20\n\x0bHANDCDPIBLD\x18\t\x20\x01(\
-    \rR\x0bHANDCDPIBLDb\x06proto3\
+    \n\x11CCHIEDIBOFM.proto\"P\n\x0bCCHIEDIBOFM\x12\x1f\n\x0bis_unlocked\x18\
+    \r\x20\x01(\x08R\nisUnlocked\x12\x20\n\x0bHANDCDPIBLD\x18\x06\x20\x01(\r\
+    R\x0bHANDCDPIBLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

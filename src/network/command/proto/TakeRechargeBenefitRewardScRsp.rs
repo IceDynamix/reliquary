@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRechargeBenefitRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRechargeBenefitRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeRechargeBenefitRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeRechargeBenefitRewardScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeRechargeBenefitRewardScRsp.AMEFPPFCFJI)
     pub AMEFPPFCFJI: ::protobuf::MessageField<super::JMHOJKKGNIF::JMHOJKKGNIF>,
     // special fields
@@ -53,15 +53,15 @@ impl TakeRechargeBenefitRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeRechargeBenefitRewardScRsp| { &m.retcode },
-            |m: &mut TakeRechargeBenefitRewardScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeRechargeBenefitRewardScRsp| { &m.reward },
             |m: &mut TakeRechargeBenefitRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeRechargeBenefitRewardScRsp| { &m.retcode },
+            |m: &mut TakeRechargeBenefitRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMHOJKKGNIF::JMHOJKKGNIF>(
             "AMEFPPFCFJI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeRechargeBenefitRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMEFPPFCFJI)?;
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for TakeRechargeBenefitRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if let Some(v) = self.AMEFPPFCFJI.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeRechargeBenefitRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         if let Some(v) = self.AMEFPPFCFJI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeRechargeBenefitRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.reward.clear();
+        self.retcode = 0;
         self.AMEFPPFCFJI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRechargeBenefitRewardScRsp {
         static instance: TakeRechargeBenefitRewardScRsp = TakeRechargeBenefitRewardScRsp {
-            retcode: 0,
             reward: ::protobuf::MessageField::none(),
+            retcode: 0,
             AMEFPPFCFJI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeRechargeBenefitRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TakeRechargeBenefitRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11JMH\
-    OJKKGNIF.proto\"\x8d\x01\n\x1eTakeRechargeBenefitRewardScRsp\x12\x18\n\
-    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x0e\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bAMEFPPFCFJI\x18\n\x20\x01(\
-    \x0b2\x0c.JMHOJKKGNIFR\x0bAMEFPPFCFJIb\x06proto3\
+    OJKKGNIF.proto\"\x8d\x01\n\x1eTakeRechargeBenefitRewardScRsp\x12!\n\x06r\
+    eward\x18\n\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\
+    \r\x20\x01(\rR\x07retcode\x12.\n\x0bAMEFPPFCFJI\x18\x0e\x20\x01(\x0b2\
+    \x0c.JMHOJKKGNIFR\x0bAMEFPPFCFJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

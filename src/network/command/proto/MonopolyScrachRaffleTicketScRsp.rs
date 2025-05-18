@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.PMELCDFHGKC = is.read_uint64()?;
                 },
-                40 => {
+                120 => {
                     self.pool_id = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PMELCDFHGKC != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.PMELCDFHGKC);
+            my_size += ::protobuf::rt::uint64_size(8, self.PMELCDFHGKC);
         }
         if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.pool_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.pool_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMELCDFHGKC != 0 {
-            os.write_uint64(12, self.PMELCDFHGKC)?;
+            os.write_uint64(8, self.PMELCDFHGKC)?;
         }
         if self.pool_id != 0 {
-            os.write_uint32(5, self.pool_id)?;
+            os.write_uint32(15, self.pool_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyScrachRaffleTicketScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyScrachRaffleTicketScRsp.proto\"v\n\x1fMonopolyScrachRaffleTic\
-    ketScRsp\x12\x20\n\x0bPMELCDFHGKC\x18\x0c\x20\x01(\x04R\x0bPMELCDFHGKC\
-    \x12\x17\n\x07pool_id\x18\x05\x20\x01(\rR\x06poolId\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    ketScRsp\x12\x20\n\x0bPMELCDFHGKC\x18\x08\x20\x01(\x04R\x0bPMELCDFHGKC\
+    \x12\x17\n\x07pool_id\x18\x0f\x20\x01(\rR\x06poolId\x12\x18\n\x07retcode\
+    \x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

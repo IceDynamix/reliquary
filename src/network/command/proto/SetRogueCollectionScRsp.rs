@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueCollectionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetRogueCollectionScRsp.PCPEDFLNBGA)
     pub PCPEDFLNBGA: ::std::vec::Vec<super::FKBFOOEFPAE::FKBFOOEFPAE>,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:SetRogueCollectionScRsp.PAHPDBIACHA)
     pub PAHPDBIACHA: ::std::vec::Vec<super::AJAKDCDDAMO::AJAKDCDDAMO>,
     // special fields
@@ -53,15 +53,15 @@ impl SetRogueCollectionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetRogueCollectionScRsp| { &m.retcode },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PCPEDFLNBGA",
             |m: &SetRogueCollectionScRsp| { &m.PCPEDFLNBGA },
             |m: &mut SetRogueCollectionScRsp| { &mut m.PCPEDFLNBGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetRogueCollectionScRsp| { &m.retcode },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PAHPDBIACHA",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                106 => {
+                114 => {
                     self.PCPEDFLNBGA.push(is.read_message()?);
                 },
-                50 => {
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                90 => {
                     self.PAHPDBIACHA.push(is.read_message()?);
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         for value in &self.PCPEDFLNBGA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         for value in &self.PAHPDBIACHA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         for v in &self.PCPEDFLNBGA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         for v in &self.PAHPDBIACHA {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.PCPEDFLNBGA.clear();
+        self.retcode = 0;
         self.PAHPDBIACHA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueCollectionScRsp {
         static instance: SetRogueCollectionScRsp = SetRogueCollectionScRsp {
-            retcode: 0,
             PCPEDFLNBGA: ::std::vec::Vec::new(),
+            retcode: 0,
             PAHPDBIACHA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueCollectionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueCollectionScRsp.proto\x1a\x11AJAKDCDDAMO.proto\x1a\x11FKBF\
-    OOEFPAE.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12\x18\n\x07retcod\
-    e\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bPCPEDFLNBGA\x18\r\x20\x03(\
-    \x0b2\x0c.FKBFOOEFPAER\x0bPCPEDFLNBGA\x12.\n\x0bPAHPDBIACHA\x18\x06\x20\
+    OOEFPAE.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12.\n\x0bPCPEDFLNB\
+    GA\x18\x0e\x20\x03(\x0b2\x0c.FKBFOOEFPAER\x0bPCPEDFLNBGA\x12\x18\n\x07re\
+    tcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bPAHPDBIACHA\x18\x0b\x20\
     \x03(\x0b2\x0c.AJAKDCDDAMOR\x0bPAHPDBIACHAb\x06proto3\
 ";
 

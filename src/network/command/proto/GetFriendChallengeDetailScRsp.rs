@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendChallengeDetailScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:GetFriendChallengeDetailScRsp.CCGDMOOLHHB)
     pub CCGDMOOLHHB: ::std::vec::Vec<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
     // special fields
@@ -56,6 +56,11 @@ impl GetFriendChallengeDetailScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &GetFriendChallengeDetailScRsp| { &m.uid },
+            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendChallengeDetailScRsp| { &m.retcode },
             |m: &mut GetFriendChallengeDetailScRsp| { &mut m.retcode },
@@ -64,11 +69,6 @@ impl GetFriendChallengeDetailScRsp {
             "challenge_id",
             |m: &GetFriendChallengeDetailScRsp| { &m.challenge_id },
             |m: &mut GetFriendChallengeDetailScRsp| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &GetFriendChallengeDetailScRsp| { &m.uid },
-            |m: &mut GetFriendChallengeDetailScRsp| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CCGDMOOLHHB",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                64 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                72 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
-                50 => {
+                80 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.challenge_id = is.read_uint32()?;
+                },
+                34 => {
                     self.CCGDMOOLHHB.push(is.read_message()?);
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.challenge_id);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.uid);
+            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
         }
         for value in &self.CCGDMOOLHHB {
             let len = value.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(8, self.challenge_id)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(9, self.uid)?;
+            os.write_uint32(14, self.challenge_id)?;
         }
         for v in &self.CCGDMOOLHHB {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for GetFriendChallengeDetailScRsp {
     }
 
     fn clear(&mut self) {
+        self.uid = 0;
         self.retcode = 0;
         self.challenge_id = 0;
-        self.uid = 0;
         self.CCGDMOOLHHB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendChallengeDetailScRsp {
         static instance: GetFriendChallengeDetailScRsp = GetFriendChallengeDetailScRsp {
+            uid: 0,
             retcode: 0,
             challenge_id: 0,
-            uid: 0,
             CCGDMOOLHHB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendChallengeDetailScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetFriendChallengeDetailScRsp.proto\x1a\x1dDisplayAvatarDetailInfo.pr\
-    oto\"\xaa\x01\n\x1dGetFriendChallengeDetailScRsp\x12\x18\n\x07retcode\
-    \x18\x05\x20\x01(\rR\x07retcode\x12!\n\x0cchallenge_id\x18\x08\x20\x01(\
-    \rR\x0bchallengeId\x12\x10\n\x03uid\x18\t\x20\x01(\rR\x03uid\x12:\n\x0bC\
-    CGDMOOLHHB\x18\x06\x20\x03(\x0b2\x18.DisplayAvatarDetailInfoR\x0bCCGDMOO\
-    LHHBb\x06proto3\
+    oto\"\xaa\x01\n\x1dGetFriendChallengeDetailScRsp\x12\x10\n\x03uid\x18\
+    \x06\x20\x01(\rR\x03uid\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcod\
+    e\x12!\n\x0cchallenge_id\x18\x0e\x20\x01(\rR\x0bchallengeId\x12:\n\x0bCC\
+    GDMOOLHHB\x18\x04\x20\x03(\x0b2\x18.DisplayAvatarDetailInfoR\x0bCCGDMOOL\
+    HHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

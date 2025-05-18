@@ -79,7 +79,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,7 +94,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
                     is.pop_limit(old_limit);
                     self.DGNFCMDJOPA.insert(key, value);
                 },
-                90 => {
+                58 => {
                     self.groups.push(is.read_message()?);
                 },
                 tag => {
@@ -129,13 +129,13 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(74)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         for v in &self.groups {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for FightActivityDataChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%FightActivityDataChangeScNotify.proto\x1a\x18FightActivityGroup.proto\
     \"\xe3\x01\n\x1fFightActivityDataChangeScNotify\x12S\n\x0bDGNFCMDJOPA\
-    \x18\x07\x20\x03(\x0b21.FightActivityDataChangeScNotify.DGNFCMDJOPAEntry\
-    R\x0bDGNFCMDJOPA\x12+\n\x06groups\x18\x0b\x20\x03(\x0b2\x13.FightActivit\
-    yGroupR\x06groups\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    \x18\t\x20\x03(\x0b21.FightActivityDataChangeScNotify.DGNFCMDJOPAEntryR\
+    \x0bDGNFCMDJOPA\x12+\n\x06groups\x18\x07\x20\x03(\x0b2\x13.FightActivity\
+    GroupR\x06groups\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

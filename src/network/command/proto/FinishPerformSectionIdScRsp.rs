@@ -30,12 +30,12 @@ pub struct FinishPerformSectionIdScRsp {
     // message fields
     // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.item_list)
+    pub item_list: ::std::vec::Vec<super::MessageItem::MessageItem>,
     // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.LBMNCAGOKIF)
-    pub LBMNCAGOKIF: u32,
-    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.item_list)
-    pub item_list: ::std::vec::Vec<super::NNMLCFAIBDE::NNMLCFAIBDE>,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdScRsp.section_id)
+    pub section_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPerformSectionIdScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl FinishPerformSectionIdScRsp {
             |m: &FinishPerformSectionIdScRsp| { &m.retcode },
             |m: &mut FinishPerformSectionIdScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "item_list",
+            |m: &FinishPerformSectionIdScRsp| { &m.item_list },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.item_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &FinishPerformSectionIdScRsp| { &m.reward },
             |m: &mut FinishPerformSectionIdScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBMNCAGOKIF",
-            |m: &FinishPerformSectionIdScRsp| { &m.LBMNCAGOKIF },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.LBMNCAGOKIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &FinishPerformSectionIdScRsp| { &m.item_list },
-            |m: &mut FinishPerformSectionIdScRsp| { &mut m.item_list },
+            "section_id",
+            |m: &FinishPerformSectionIdScRsp| { &m.section_id },
+            |m: &mut FinishPerformSectionIdScRsp| { &mut m.section_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPerformSectionIdScRsp>(
             "FinishPerformSectionIdScRsp",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                114 => {
+                    self.item_list.push(is.read_message()?);
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                88 => {
-                    self.LBMNCAGOKIF = is.read_uint32()?;
-                },
-                58 => {
-                    self.item_list.push(is.read_message()?);
+                80 => {
+                    self.section_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,17 +120,17 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.reward.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LBMNCAGOKIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LBMNCAGOKIF);
-        }
         for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.reward.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.section_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -140,15 +140,15 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.LBMNCAGOKIF != 0 {
-            os.write_uint32(11, self.LBMNCAGOKIF)?;
-        }
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.section_id != 0 {
+            os.write_uint32(10, self.section_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,18 +167,18 @@ impl ::protobuf::Message for FinishPerformSectionIdScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.reward.clear();
-        self.LBMNCAGOKIF = 0;
         self.item_list.clear();
+        self.reward.clear();
+        self.section_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPerformSectionIdScRsp {
         static instance: FinishPerformSectionIdScRsp = FinishPerformSectionIdScRsp {
             retcode: 0,
-            reward: ::protobuf::MessageField::none(),
-            LBMNCAGOKIF: 0,
             item_list: ::std::vec::Vec::new(),
+            reward: ::protobuf::MessageField::none(),
+            section_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!FinishPerformSectionIdScRsp.proto\x1a\x0eItemList.proto\x1a\x11NNMLCF\
-    AIBDE.proto\"\xa7\x01\n\x1bFinishPerformSectionIdScRsp\x12\x18\n\x07retc\
-    ode\x18\x01\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x05\x20\x01(\x0b\
-    2\t.ItemListR\x06reward\x12\x20\n\x0bLBMNCAGOKIF\x18\x0b\x20\x01(\rR\x0b\
-    LBMNCAGOKIF\x12)\n\titem_list\x18\x07\x20\x03(\x0b2\x0c.NNMLCFAIBDER\x08\
-    itemListb\x06proto3\
+    \n!FinishPerformSectionIdScRsp.proto\x1a\x0eItemList.proto\x1a\x11Messag\
+    eItem.proto\"\xa4\x01\n\x1bFinishPerformSectionIdScRsp\x12\x18\n\x07retc\
+    ode\x18\x01\x20\x01(\rR\x07retcode\x12)\n\titem_list\x18\x0e\x20\x03(\
+    \x0b2\x0c.MessageItemR\x08itemList\x12!\n\x06reward\x18\x04\x20\x01(\x0b\
+    2\t.ItemListR\x06reward\x12\x1d\n\nsection_id\x18\n\x20\x01(\rR\tsection\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,7 +227,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::NNMLCFAIBDE::file_descriptor().clone());
+            deps.push(super::MessageItem::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishPerformSectionIdScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

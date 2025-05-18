@@ -86,13 +86,13 @@ impl ::protobuf::Message for NHEHPGONEPK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.AMBDKDAMHLH = is.read_uint32()?;
                 },
-                18 => {
+                82 => {
                     self.KOKIIFCMOGL.push(is.read_message()?);
                 },
-                48 => {
+                72 => {
                     self.EEEIONCCING = is.read_bool()?;
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for NHEHPGONEPK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AMBDKDAMHLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AMBDKDAMHLH);
+            my_size += ::protobuf::rt::uint32_size(12, self.AMBDKDAMHLH);
         }
         for value in &self.KOKIIFCMOGL {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for NHEHPGONEPK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AMBDKDAMHLH != 0 {
-            os.write_uint32(15, self.AMBDKDAMHLH)?;
+            os.write_uint32(12, self.AMBDKDAMHLH)?;
         }
         for v in &self.KOKIIFCMOGL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.EEEIONCCING != false {
-            os.write_bool(6, self.EEEIONCCING)?;
+            os.write_bool(9, self.EEEIONCCING)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for NHEHPGONEPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHEHPGONEPK.proto\x1a\x11AENOCKPNFCI.proto\"\x81\x01\n\x0bNHEHPGON\
-    EPK\x12\x20\n\x0bAMBDKDAMHLH\x18\x0f\x20\x01(\rR\x0bAMBDKDAMHLH\x12.\n\
-    \x0bKOKIIFCMOGL\x18\x02\x20\x03(\x0b2\x0c.AENOCKPNFCIR\x0bKOKIIFCMOGL\
-    \x12\x20\n\x0bEEEIONCCING\x18\x06\x20\x01(\x08R\x0bEEEIONCCINGb\x06proto\
-    3\
+    EPK\x12\x20\n\x0bAMBDKDAMHLH\x18\x0c\x20\x01(\rR\x0bAMBDKDAMHLH\x12.\n\
+    \x0bKOKIIFCMOGL\x18\n\x20\x03(\x0b2\x0c.AENOCKPNFCIR\x0bKOKIIFCMOGL\x12\
+    \x20\n\x0bEEEIONCCING\x18\t\x20\x01(\x08R\x0bEEEIONCCINGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

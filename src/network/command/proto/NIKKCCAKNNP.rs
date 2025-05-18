@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NIKKCCAKNNP {
     // message fields
-    // @@protoc_insertion_point(field:NIKKCCAKNNP.HLBFBFDLACA)
-    pub HLBFBFDLACA: u32,
-    // @@protoc_insertion_point(field:NIKKCCAKNNP.FPCHNBLONLC)
-    pub FPCHNBLONLC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NIKKCCAKNNP.AOELKJEEGKG)
-    pub AOELKJEEGKG: bool,
-    // @@protoc_insertion_point(field:NIKKCCAKNNP.AMNBMJOFJOO)
-    pub AMNBMJOFJOO: u32,
+    // @@protoc_insertion_point(field:NIKKCCAKNNP.game_aeon_id)
+    pub game_aeon_id: u32,
     // @@protoc_insertion_point(field:NIKKCCAKNNP.ALKILFNBFNM)
     pub ALKILFNBFNM: u32,
+    // @@protoc_insertion_point(field:NIKKCCAKNNP.aeon_id_list)
+    pub aeon_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NIKKCCAKNNP.HLBFBFDLACA)
+    pub HLBFBFDLACA: u32,
+    // @@protoc_insertion_point(field:NIKKCCAKNNP.AOELKJEEGKG)
+    pub AOELKJEEGKG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:NIKKCCAKNNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl NIKKCCAKNNP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLBFBFDLACA",
-            |m: &NIKKCCAKNNP| { &m.HLBFBFDLACA },
-            |m: &mut NIKKCCAKNNP| { &mut m.HLBFBFDLACA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FPCHNBLONLC",
-            |m: &NIKKCCAKNNP| { &m.FPCHNBLONLC },
-            |m: &mut NIKKCCAKNNP| { &mut m.FPCHNBLONLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOELKJEEGKG",
-            |m: &NIKKCCAKNNP| { &m.AOELKJEEGKG },
-            |m: &mut NIKKCCAKNNP| { &mut m.AOELKJEEGKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMNBMJOFJOO",
-            |m: &NIKKCCAKNNP| { &m.AMNBMJOFJOO },
-            |m: &mut NIKKCCAKNNP| { &mut m.AMNBMJOFJOO },
+            "game_aeon_id",
+            |m: &NIKKCCAKNNP| { &m.game_aeon_id },
+            |m: &mut NIKKCCAKNNP| { &mut m.game_aeon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALKILFNBFNM",
             |m: &NIKKCCAKNNP| { &m.ALKILFNBFNM },
             |m: &mut NIKKCCAKNNP| { &mut m.ALKILFNBFNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "aeon_id_list",
+            |m: &NIKKCCAKNNP| { &m.aeon_id_list },
+            |m: &mut NIKKCCAKNNP| { &mut m.aeon_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HLBFBFDLACA",
+            |m: &NIKKCCAKNNP| { &m.HLBFBFDLACA },
+            |m: &mut NIKKCCAKNNP| { &mut m.HLBFBFDLACA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AOELKJEEGKG",
+            |m: &NIKKCCAKNNP| { &m.AOELKJEEGKG },
+            |m: &mut NIKKCCAKNNP| { &mut m.AOELKJEEGKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIKKCCAKNNP>(
             "NIKKCCAKNNP",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.HLBFBFDLACA = is.read_uint32()?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FPCHNBLONLC)?;
-                },
-                56 => {
-                    self.FPCHNBLONLC.push(is.read_uint32()?);
+                80 => {
+                    self.game_aeon_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.AOELKJEEGKG = is.read_bool()?;
-                },
-                104 => {
-                    self.AMNBMJOFJOO = is.read_uint32()?;
-                },
-                32 => {
                     self.ALKILFNBFNM = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.aeon_id_list)?;
+                },
+                24 => {
+                    self.aeon_id_list.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.HLBFBFDLACA = is.read_uint32()?;
+                },
+                56 => {
+                    self.AOELKJEEGKG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLBFBFDLACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HLBFBFDLACA);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FPCHNBLONLC);
-        if self.AOELKJEEGKG != false {
-            my_size += 1 + 1;
-        }
-        if self.AMNBMJOFJOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AMNBMJOFJOO);
+        if self.game_aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.game_aeon_id);
         }
         if self.ALKILFNBFNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ALKILFNBFNM);
+            my_size += ::protobuf::rt::uint32_size(2, self.ALKILFNBFNM);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.aeon_id_list);
+        if self.HLBFBFDLACA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HLBFBFDLACA);
+        }
+        if self.AOELKJEEGKG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLBFBFDLACA != 0 {
-            os.write_uint32(14, self.HLBFBFDLACA)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.FPCHNBLONLC)?;
-        if self.AOELKJEEGKG != false {
-            os.write_bool(2, self.AOELKJEEGKG)?;
-        }
-        if self.AMNBMJOFJOO != 0 {
-            os.write_uint32(13, self.AMNBMJOFJOO)?;
+        if self.game_aeon_id != 0 {
+            os.write_uint32(10, self.game_aeon_id)?;
         }
         if self.ALKILFNBFNM != 0 {
-            os.write_uint32(4, self.ALKILFNBFNM)?;
+            os.write_uint32(2, self.ALKILFNBFNM)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.aeon_id_list)?;
+        if self.HLBFBFDLACA != 0 {
+            os.write_uint32(15, self.HLBFBFDLACA)?;
+        }
+        if self.AOELKJEEGKG != false {
+            os.write_bool(7, self.AOELKJEEGKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for NIKKCCAKNNP {
     }
 
     fn clear(&mut self) {
-        self.HLBFBFDLACA = 0;
-        self.FPCHNBLONLC.clear();
-        self.AOELKJEEGKG = false;
-        self.AMNBMJOFJOO = 0;
+        self.game_aeon_id = 0;
         self.ALKILFNBFNM = 0;
+        self.aeon_id_list.clear();
+        self.HLBFBFDLACA = 0;
+        self.AOELKJEEGKG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIKKCCAKNNP {
         static instance: NIKKCCAKNNP = NIKKCCAKNNP {
-            HLBFBFDLACA: 0,
-            FPCHNBLONLC: ::std::vec::Vec::new(),
-            AOELKJEEGKG: false,
-            AMNBMJOFJOO: 0,
+            game_aeon_id: 0,
             ALKILFNBFNM: 0,
+            aeon_id_list: ::std::vec::Vec::new(),
+            HLBFBFDLACA: 0,
+            AOELKJEEGKG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,12 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for NIKKCCAKNNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NIKKCCAKNNP.proto\"\xb7\x01\n\x0bNIKKCCAKNNP\x12\x20\n\x0bHLBFBFDL\
-    ACA\x18\x0e\x20\x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0bFPCHNBLONLC\x18\x07\
-    \x20\x03(\rR\x0bFPCHNBLONLC\x12\x20\n\x0bAOELKJEEGKG\x18\x02\x20\x01(\
-    \x08R\x0bAOELKJEEGKG\x12\x20\n\x0bAMNBMJOFJOO\x18\r\x20\x01(\rR\x0bAMNBM\
-    JOFJOO\x12\x20\n\x0bALKILFNBFNM\x18\x04\x20\x01(\rR\x0bALKILFNBFNMb\x06p\
-    roto3\
+    \n\x11NIKKCCAKNNP.proto\"\xb7\x01\n\x0bNIKKCCAKNNP\x12\x20\n\x0cgame_aeo\
+    n_id\x18\n\x20\x01(\rR\ngameAeonId\x12\x20\n\x0bALKILFNBFNM\x18\x02\x20\
+    \x01(\rR\x0bALKILFNBFNM\x12\x20\n\x0caeon_id_list\x18\x03\x20\x03(\rR\na\
+    eonIdList\x12\x20\n\x0bHLBFBFDLACA\x18\x0f\x20\x01(\rR\x0bHLBFBFDLACA\
+    \x12\x20\n\x0bAOELKJEEGKG\x18\x07\x20\x01(\x08R\x0bAOELKJEEGKGb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

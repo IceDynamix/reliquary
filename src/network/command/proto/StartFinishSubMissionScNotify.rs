@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartFinishSubMissionScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StartFinishSubMissionScNotify.LPLHIABDBBG)
-    pub LPLHIABDBBG: u32,
+    // @@protoc_insertion_point(field:StartFinishSubMissionScNotify.sub_mission_id)
+    pub sub_mission_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartFinishSubMissionScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl StartFinishSubMissionScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLHIABDBBG",
-            |m: &StartFinishSubMissionScNotify| { &m.LPLHIABDBBG },
-            |m: &mut StartFinishSubMissionScNotify| { &mut m.LPLHIABDBBG },
+            "sub_mission_id",
+            |m: &StartFinishSubMissionScNotify| { &m.sub_mission_id },
+            |m: &mut StartFinishSubMissionScNotify| { &mut m.sub_mission_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartFinishSubMissionScNotify>(
             "StartFinishSubMissionScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for StartFinishSubMissionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.LPLHIABDBBG = is.read_uint32()?;
+                56 => {
+                    self.sub_mission_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for StartFinishSubMissionScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LPLHIABDBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LPLHIABDBBG);
+        if self.sub_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.sub_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for StartFinishSubMissionScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LPLHIABDBBG != 0 {
-            os.write_uint32(14, self.LPLHIABDBBG)?;
+        if self.sub_mission_id != 0 {
+            os.write_uint32(7, self.sub_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for StartFinishSubMissionScNotify {
     }
 
     fn clear(&mut self) {
-        self.LPLHIABDBBG = 0;
+        self.sub_mission_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartFinishSubMissionScNotify {
         static instance: StartFinishSubMissionScNotify = StartFinishSubMissionScNotify {
-            LPLHIABDBBG: 0,
+            sub_mission_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for StartFinishSubMissionScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#StartFinishSubMissionScNotify.proto\"A\n\x1dStartFinishSubMissionScNo\
-    tify\x12\x20\n\x0bLPLHIABDBBG\x18\x0e\x20\x01(\rR\x0bLPLHIABDBBGb\x06pro\
-    to3\
+    \n#StartFinishSubMissionScNotify.proto\"E\n\x1dStartFinishSubMissionScNo\
+    tify\x12$\n\x0esub_mission_id\x18\x07\x20\x01(\rR\x0csubMissionIdb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

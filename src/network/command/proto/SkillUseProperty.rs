@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SkillUseProperty {
     // message fields
-    // @@protoc_insertion_point(field:SkillUseProperty.OOACKEGEMFK)
-    pub OOACKEGEMFK: u32,
-    // @@protoc_insertion_point(field:SkillUseProperty.ACIAEGHCCMC)
-    pub ACIAEGHCCMC: ::std::string::String,
-    // @@protoc_insertion_point(field:SkillUseProperty.BFNLPBIEHLH)
-    pub BFNLPBIEHLH: u32,
-    // @@protoc_insertion_point(field:SkillUseProperty.OAGMLNBLAKD)
-    pub OAGMLNBLAKD: u32,
+    // @@protoc_insertion_point(field:SkillUseProperty.skill_id)
+    pub skill_id: u32,
+    // @@protoc_insertion_point(field:SkillUseProperty.skill_type)
+    pub skill_type: ::std::string::String,
+    // @@protoc_insertion_point(field:SkillUseProperty.skill_level)
+    pub skill_level: u32,
+    // @@protoc_insertion_point(field:SkillUseProperty.skill_use_count)
+    pub skill_use_count: u32,
     // @@protoc_insertion_point(field:SkillUseProperty.IFEJKALHOPI)
     pub IFEJKALHOPI: u32,
     // @@protoc_insertion_point(field:SkillUseProperty.JHDHLCNCDNC)
@@ -66,24 +66,24 @@ impl SkillUseProperty {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOACKEGEMFK",
-            |m: &SkillUseProperty| { &m.OOACKEGEMFK },
-            |m: &mut SkillUseProperty| { &mut m.OOACKEGEMFK },
+            "skill_id",
+            |m: &SkillUseProperty| { &m.skill_id },
+            |m: &mut SkillUseProperty| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACIAEGHCCMC",
-            |m: &SkillUseProperty| { &m.ACIAEGHCCMC },
-            |m: &mut SkillUseProperty| { &mut m.ACIAEGHCCMC },
+            "skill_type",
+            |m: &SkillUseProperty| { &m.skill_type },
+            |m: &mut SkillUseProperty| { &mut m.skill_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFNLPBIEHLH",
-            |m: &SkillUseProperty| { &m.BFNLPBIEHLH },
-            |m: &mut SkillUseProperty| { &mut m.BFNLPBIEHLH },
+            "skill_level",
+            |m: &SkillUseProperty| { &m.skill_level },
+            |m: &mut SkillUseProperty| { &mut m.skill_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAGMLNBLAKD",
-            |m: &SkillUseProperty| { &m.OAGMLNBLAKD },
-            |m: &mut SkillUseProperty| { &mut m.OAGMLNBLAKD },
+            "skill_use_count",
+            |m: &SkillUseProperty| { &m.skill_use_count },
+            |m: &mut SkillUseProperty| { &mut m.skill_use_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFEJKALHOPI",
@@ -129,16 +129,16 @@ impl ::protobuf::Message for SkillUseProperty {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.OOACKEGEMFK = is.read_uint32()?;
+                    self.skill_id = is.read_uint32()?;
                 },
                 18 => {
-                    self.ACIAEGHCCMC = is.read_string()?;
+                    self.skill_type = is.read_string()?;
                 },
                 24 => {
-                    self.BFNLPBIEHLH = is.read_uint32()?;
+                    self.skill_level = is.read_uint32()?;
                 },
                 32 => {
-                    self.OAGMLNBLAKD = is.read_uint32()?;
+                    self.skill_use_count = is.read_uint32()?;
                 },
                 40 => {
                     self.IFEJKALHOPI = is.read_uint32()?;
@@ -167,17 +167,17 @@ impl ::protobuf::Message for SkillUseProperty {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OOACKEGEMFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OOACKEGEMFK);
+        if self.skill_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
         }
-        if !self.ACIAEGHCCMC.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.ACIAEGHCCMC);
+        if !self.skill_type.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.skill_type);
         }
-        if self.BFNLPBIEHLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BFNLPBIEHLH);
+        if self.skill_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.skill_level);
         }
-        if self.OAGMLNBLAKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OAGMLNBLAKD);
+        if self.skill_use_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.skill_use_count);
         }
         if self.IFEJKALHOPI != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.IFEJKALHOPI);
@@ -200,17 +200,17 @@ impl ::protobuf::Message for SkillUseProperty {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OOACKEGEMFK != 0 {
-            os.write_uint32(1, self.OOACKEGEMFK)?;
+        if self.skill_id != 0 {
+            os.write_uint32(1, self.skill_id)?;
         }
-        if !self.ACIAEGHCCMC.is_empty() {
-            os.write_string(2, &self.ACIAEGHCCMC)?;
+        if !self.skill_type.is_empty() {
+            os.write_string(2, &self.skill_type)?;
         }
-        if self.BFNLPBIEHLH != 0 {
-            os.write_uint32(3, self.BFNLPBIEHLH)?;
+        if self.skill_level != 0 {
+            os.write_uint32(3, self.skill_level)?;
         }
-        if self.OAGMLNBLAKD != 0 {
-            os.write_uint32(4, self.OAGMLNBLAKD)?;
+        if self.skill_use_count != 0 {
+            os.write_uint32(4, self.skill_use_count)?;
         }
         if self.IFEJKALHOPI != 0 {
             os.write_uint32(5, self.IFEJKALHOPI)?;
@@ -244,10 +244,10 @@ impl ::protobuf::Message for SkillUseProperty {
     }
 
     fn clear(&mut self) {
-        self.OOACKEGEMFK = 0;
-        self.ACIAEGHCCMC.clear();
-        self.BFNLPBIEHLH = 0;
-        self.OAGMLNBLAKD = 0;
+        self.skill_id = 0;
+        self.skill_type.clear();
+        self.skill_level = 0;
+        self.skill_use_count = 0;
         self.IFEJKALHOPI = 0;
         self.JHDHLCNCDNC = 0;
         self.HOAFNNIJOOM = 0;
@@ -258,10 +258,10 @@ impl ::protobuf::Message for SkillUseProperty {
 
     fn default_instance() -> &'static SkillUseProperty {
         static instance: SkillUseProperty = SkillUseProperty {
-            OOACKEGEMFK: 0,
-            ACIAEGHCCMC: ::std::string::String::new(),
-            BFNLPBIEHLH: 0,
-            OAGMLNBLAKD: 0,
+            skill_id: 0,
+            skill_type: ::std::string::String::new(),
+            skill_level: 0,
+            skill_use_count: 0,
             IFEJKALHOPI: 0,
             JHDHLCNCDNC: 0,
             HOAFNNIJOOM: 0,
@@ -291,15 +291,15 @@ impl ::protobuf::reflect::ProtobufValue for SkillUseProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SkillUseProperty.proto\"\xc4\x02\n\x10SkillUseProperty\x12\x20\n\
-    \x0bOOACKEGEMFK\x18\x01\x20\x01(\rR\x0bOOACKEGEMFK\x12\x20\n\x0bACIAEGHC\
-    CMC\x18\x02\x20\x01(\tR\x0bACIAEGHCCMC\x12\x20\n\x0bBFNLPBIEHLH\x18\x03\
-    \x20\x01(\rR\x0bBFNLPBIEHLH\x12\x20\n\x0bOAGMLNBLAKD\x18\x04\x20\x01(\rR\
-    \x0bOAGMLNBLAKD\x12\x20\n\x0bIFEJKALHOPI\x18\x05\x20\x01(\rR\x0bIFEJKALH\
-    OPI\x12\x20\n\x0bJHDHLCNCDNC\x18\x06\x20\x01(\rR\x0bJHDHLCNCDNC\x12\x20\
-    \n\x0bHOAFNNIJOOM\x18\x07\x20\x01(\rR\x0bHOAFNNIJOOM\x12\x20\n\x0bMDEADC\
-    LNJCJ\x18\x08\x20\x01(\rR\x0bMDEADCLNJCJ\x12\x20\n\x0bOHNPPJEMKDE\x18\t\
-    \x20\x01(\rR\x0bOHNPPJEMKDEb\x06proto3\
+    \n\x16SkillUseProperty.proto\"\xbf\x02\n\x10SkillUseProperty\x12\x19\n\
+    \x08skill_id\x18\x01\x20\x01(\rR\x07skillId\x12\x1d\n\nskill_type\x18\
+    \x02\x20\x01(\tR\tskillType\x12\x1f\n\x0bskill_level\x18\x03\x20\x01(\rR\
+    \nskillLevel\x12&\n\x0fskill_use_count\x18\x04\x20\x01(\rR\rskillUseCoun\
+    t\x12\x20\n\x0bIFEJKALHOPI\x18\x05\x20\x01(\rR\x0bIFEJKALHOPI\x12\x20\n\
+    \x0bJHDHLCNCDNC\x18\x06\x20\x01(\rR\x0bJHDHLCNCDNC\x12\x20\n\x0bHOAFNNIJ\
+    OOM\x18\x07\x20\x01(\rR\x0bHOAFNNIJOOM\x12\x20\n\x0bMDEADCLNJCJ\x18\x08\
+    \x20\x01(\rR\x0bMDEADCLNJCJ\x12\x20\n\x0bOHNPPJEMKDE\x18\t\x20\x01(\rR\
+    \x0bOHNPPJEMKDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

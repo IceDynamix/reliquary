@@ -30,8 +30,8 @@ pub struct BEPAHBKLJNN {
     // message fields
     // @@protoc_insertion_point(field:BEPAHBKLJNN.equipment_unique_id)
     pub equipment_unique_id: u32,
-    // @@protoc_insertion_point(field:BEPAHBKLJNN.operation_item_cost_list)
-    pub operation_item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:BEPAHBKLJNN.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:BEPAHBKLJNN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl BEPAHBKLJNN {
             |m: &BEPAHBKLJNN| { &m.equipment_unique_id },
             |m: &mut BEPAHBKLJNN| { &mut m.equipment_unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "operation_item_cost_list",
-            |m: &BEPAHBKLJNN| { &m.operation_item_cost_list },
-            |m: &mut BEPAHBKLJNN| { &mut m.operation_item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &BEPAHBKLJNN| { &m.cost_data },
+            |m: &mut BEPAHBKLJNN| { &mut m.cost_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BEPAHBKLJNN>(
             "BEPAHBKLJNN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BEPAHBKLJNN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.operation_item_cost_list)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for BEPAHBKLJNN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.equipment_unique_id);
         }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
+        if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BEPAHBKLJNN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.equipment_unique_id != 0 {
-            os.write_uint32(15, self.equipment_unique_id)?;
+            os.write_uint32(12, self.equipment_unique_id)?;
         }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for BEPAHBKLJNN {
 
     fn clear(&mut self) {
         self.equipment_unique_id = 0;
-        self.operation_item_cost_list.clear();
+        self.cost_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BEPAHBKLJNN {
         static instance: BEPAHBKLJNN = BEPAHBKLJNN {
             equipment_unique_id: 0,
-            operation_item_cost_list: ::protobuf::MessageField::none(),
+            cost_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for BEPAHBKLJNN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BEPAHBKLJNN.proto\x1a\x12ItemCostList.proto\"\x85\x01\n\x0bBEPAHBK\
-    LJNN\x12.\n\x13equipment_unique_id\x18\x0f\x20\x01(\rR\x11equipmentUniqu\
-    eId\x12F\n\x18operation_item_cost_list\x18\x07\x20\x01(\x0b2\r.ItemCostL\
-    istR\x15operationItemCostListb\x06proto3\
+    \n\x11BEPAHBKLJNN.proto\x1a\x12ItemCostData.proto\"i\n\x0bBEPAHBKLJNN\
+    \x12.\n\x13equipment_unique_id\x18\x0c\x20\x01(\rR\x11equipmentUniqueId\
+    \x12*\n\tcost_data\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BEPAHBKLJNN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

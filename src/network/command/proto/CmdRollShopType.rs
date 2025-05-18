@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRollShopType {
     // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdRollShopTypeNone)
     CmdRollShopTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardCsReq)
-    CmdTakeRollShopRewardCsReq = 6914,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoCsReq)
-    CmdGetRollShopInfoCsReq = 6917,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopCsReq)
-    CmdDoGachaInRollShopCsReq = 6920,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoScRsp)
-    CmdGetRollShopInfoScRsp = 6916,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardScRsp)
-    CmdTakeRollShopRewardScRsp = 6909,
     // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopScRsp)
-    CmdDoGachaInRollShopScRsp = 6904,
+    CmdDoGachaInRollShopScRsp = 6910,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardScRsp)
+    CmdTakeRollShopRewardScRsp = 6902,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoCsReq)
+    CmdGetRollShopInfoCsReq = 6914,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardCsReq)
+    CmdTakeRollShopRewardCsReq = 6904,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoScRsp)
+    CmdGetRollShopInfoScRsp = 6913,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopCsReq)
+    CmdDoGachaInRollShopCsReq = 6908,
 }
 
 impl ::protobuf::Enum for CmdRollShopType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRollShopType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRollShopType> {
         match value {
             0 => ::std::option::Option::Some(CmdRollShopType::CmdRollShopTypeNone),
-            6914 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
-            6917 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            6920 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            6916 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            6909 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
-            6904 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
+            6910 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
+            6902 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
+            6914 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
+            6904 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            6913 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
+            6908 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdRollShopType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRollShopType> {
         match str {
             "CmdRollShopTypeNone" => ::std::option::Option::Some(CmdRollShopType::CmdRollShopTypeNone),
-            "CmdTakeRollShopRewardCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
-            "CmdGetRollShopInfoCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            "CmdDoGachaInRollShopCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            "CmdGetRollShopInfoScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            "CmdTakeRollShopRewardScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
             "CmdDoGachaInRollShopScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
+            "CmdTakeRollShopRewardScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
+            "CmdGetRollShopInfoCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
+            "CmdTakeRollShopRewardCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            "CmdGetRollShopInfoScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
+            "CmdDoGachaInRollShopCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRollShopType] = &[
         CmdRollShopType::CmdRollShopTypeNone,
-        CmdRollShopType::CmdTakeRollShopRewardCsReq,
-        CmdRollShopType::CmdGetRollShopInfoCsReq,
-        CmdRollShopType::CmdDoGachaInRollShopCsReq,
-        CmdRollShopType::CmdGetRollShopInfoScRsp,
-        CmdRollShopType::CmdTakeRollShopRewardScRsp,
         CmdRollShopType::CmdDoGachaInRollShopScRsp,
+        CmdRollShopType::CmdTakeRollShopRewardScRsp,
+        CmdRollShopType::CmdGetRollShopInfoCsReq,
+        CmdRollShopType::CmdTakeRollShopRewardCsReq,
+        CmdRollShopType::CmdGetRollShopInfoScRsp,
+        CmdRollShopType::CmdDoGachaInRollShopCsReq,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdRollShopType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRollShopType::CmdRollShopTypeNone => 0,
-            CmdRollShopType::CmdTakeRollShopRewardCsReq => 1,
-            CmdRollShopType::CmdGetRollShopInfoCsReq => 2,
-            CmdRollShopType::CmdDoGachaInRollShopCsReq => 3,
-            CmdRollShopType::CmdGetRollShopInfoScRsp => 4,
-            CmdRollShopType::CmdTakeRollShopRewardScRsp => 5,
-            CmdRollShopType::CmdDoGachaInRollShopScRsp => 6,
+            CmdRollShopType::CmdDoGachaInRollShopScRsp => 1,
+            CmdRollShopType::CmdTakeRollShopRewardScRsp => 2,
+            CmdRollShopType::CmdGetRollShopInfoCsReq => 3,
+            CmdRollShopType::CmdTakeRollShopRewardCsReq => 4,
+            CmdRollShopType::CmdGetRollShopInfoScRsp => 5,
+            CmdRollShopType::CmdDoGachaInRollShopCsReq => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CmdRollShopType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdRollShopType.proto*\xe8\x01\n\x0fCmdRollShopType\x12\x17\n\x13C\
-    mdRollShopTypeNone\x10\0\x12\x1f\n\x1aCmdTakeRollShopRewardCsReq\x10\x82\
-    6\x12\x1c\n\x17CmdGetRollShopInfoCsReq\x10\x856\x12\x1e\n\x19CmdDoGachaI\
-    nRollShopCsReq\x10\x886\x12\x1c\n\x17CmdGetRollShopInfoScRsp\x10\x846\
-    \x12\x1f\n\x1aCmdTakeRollShopRewardScRsp\x10\xfd5\x12\x1e\n\x19CmdDoGach\
-    aInRollShopScRsp\x10\xf85b\x06proto3\
+    mdRollShopTypeNone\x10\0\x12\x1e\n\x19CmdDoGachaInRollShopScRsp\x10\xfe5\
+    \x12\x1f\n\x1aCmdTakeRollShopRewardScRsp\x10\xf65\x12\x1c\n\x17CmdGetRol\
+    lShopInfoCsReq\x10\x826\x12\x1f\n\x1aCmdTakeRollShopRewardCsReq\x10\xf85\
+    \x12\x1c\n\x17CmdGetRollShopInfoScRsp\x10\x816\x12\x1e\n\x19CmdDoGachaIn\
+    RollShopCsReq\x10\xfc5b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

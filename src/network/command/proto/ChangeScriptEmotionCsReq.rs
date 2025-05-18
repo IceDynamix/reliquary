@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeScriptEmotionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.EBNOFHDNGDH)
-    pub EBNOFHDNGDH: ::protobuf::EnumOrUnknown<super::BFDFLHEKFGK::BFDFLHEKFGK>,
     // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.FIHNCOABELA)
     pub FIHNCOABELA: u32,
-    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.CLKEOEHPLNG)
-    pub CLKEOEHPLNG: u32,
+    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.target_emotion_type)
+    pub target_emotion_type: ::protobuf::EnumOrUnknown<super::HeartDialEmotionType::HeartDialEmotionType>,
+    // @@protoc_insertion_point(field:ChangeScriptEmotionCsReq.script_id)
+    pub script_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChangeScriptEmotionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ChangeScriptEmotionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBNOFHDNGDH",
-            |m: &ChangeScriptEmotionCsReq| { &m.EBNOFHDNGDH },
-            |m: &mut ChangeScriptEmotionCsReq| { &mut m.EBNOFHDNGDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FIHNCOABELA",
             |m: &ChangeScriptEmotionCsReq| { &m.FIHNCOABELA },
             |m: &mut ChangeScriptEmotionCsReq| { &mut m.FIHNCOABELA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLKEOEHPLNG",
-            |m: &ChangeScriptEmotionCsReq| { &m.CLKEOEHPLNG },
-            |m: &mut ChangeScriptEmotionCsReq| { &mut m.CLKEOEHPLNG },
+            "target_emotion_type",
+            |m: &ChangeScriptEmotionCsReq| { &m.target_emotion_type },
+            |m: &mut ChangeScriptEmotionCsReq| { &mut m.target_emotion_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "script_id",
+            |m: &ChangeScriptEmotionCsReq| { &m.script_id },
+            |m: &mut ChangeScriptEmotionCsReq| { &mut m.script_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChangeScriptEmotionCsReq>(
             "ChangeScriptEmotionCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.EBNOFHDNGDH = is.read_enum_or_unknown()?;
-                },
-                16 => {
+                72 => {
                     self.FIHNCOABELA = is.read_uint32()?;
                 },
-                56 => {
-                    self.CLKEOEHPLNG = is.read_uint32()?;
+                48 => {
+                    self.target_emotion_type = is.read_enum_or_unknown()?;
+                },
+                88 => {
+                    self.script_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EBNOFHDNGDH != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            my_size += ::protobuf::rt::int32_size(1, self.EBNOFHDNGDH.value());
-        }
         if self.FIHNCOABELA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FIHNCOABELA);
+            my_size += ::protobuf::rt::uint32_size(9, self.FIHNCOABELA);
         }
-        if self.CLKEOEHPLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CLKEOEHPLNG);
+        if self.target_emotion_type != ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE) {
+            my_size += ::protobuf::rt::int32_size(6, self.target_emotion_type.value());
+        }
+        if self.script_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.script_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EBNOFHDNGDH != ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.EBNOFHDNGDH))?;
-        }
         if self.FIHNCOABELA != 0 {
-            os.write_uint32(2, self.FIHNCOABELA)?;
+            os.write_uint32(9, self.FIHNCOABELA)?;
         }
-        if self.CLKEOEHPLNG != 0 {
-            os.write_uint32(7, self.CLKEOEHPLNG)?;
+        if self.target_emotion_type != ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.target_emotion_type))?;
+        }
+        if self.script_id != 0 {
+            os.write_uint32(11, self.script_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ChangeScriptEmotionCsReq {
     }
 
     fn clear(&mut self) {
-        self.EBNOFHDNGDH = ::protobuf::EnumOrUnknown::new(super::BFDFLHEKFGK::BFDFLHEKFGK::HEART_DIAL_EMOTION_TYPE_PEACE);
         self.FIHNCOABELA = 0;
-        self.CLKEOEHPLNG = 0;
+        self.target_emotion_type = ::protobuf::EnumOrUnknown::new(super::HeartDialEmotionType::HeartDialEmotionType::HEART_DIAL_EMOTION_TYPE_PEACE);
+        self.script_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeScriptEmotionCsReq {
         static instance: ChangeScriptEmotionCsReq = ChangeScriptEmotionCsReq {
-            EBNOFHDNGDH: ::protobuf::EnumOrUnknown::from_i32(0),
             FIHNCOABELA: 0,
-            CLKEOEHPLNG: 0,
+            target_emotion_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            script_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ChangeScriptEmotionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eChangeScriptEmotionCsReq.proto\x1a\x11BFDFLHEKFGK.proto\"\x8e\x01\
-    \n\x18ChangeScriptEmotionCsReq\x12.\n\x0bEBNOFHDNGDH\x18\x01\x20\x01(\
-    \x0e2\x0c.BFDFLHEKFGKR\x0bEBNOFHDNGDH\x12\x20\n\x0bFIHNCOABELA\x18\x02\
-    \x20\x01(\rR\x0bFIHNCOABELA\x12\x20\n\x0bCLKEOEHPLNG\x18\x07\x20\x01(\rR\
-    \x0bCLKEOEHPLNGb\x06proto3\
+    \n\x1eChangeScriptEmotionCsReq.proto\x1a\x1aHeartDialEmotionType.proto\"\
+    \xa0\x01\n\x18ChangeScriptEmotionCsReq\x12\x20\n\x0bFIHNCOABELA\x18\t\
+    \x20\x01(\rR\x0bFIHNCOABELA\x12E\n\x13target_emotion_type\x18\x06\x20\
+    \x01(\x0e2\x15.HeartDialEmotionTypeR\x11targetEmotionType\x12\x1b\n\tscr\
+    ipt_id\x18\x0b\x20\x01(\rR\x08scriptIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BFDFLHEKFGK::file_descriptor().clone());
+            deps.push(super::HeartDialEmotionType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChangeScriptEmotionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

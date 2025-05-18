@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerGuest {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerGuest.guest_id)
-    pub guest_id: u32,
     // @@protoc_insertion_point(field:DrinkMakerGuest.unlocked_favor_tag_list)
     pub unlocked_favor_tag_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DrinkMakerGuest.guest_id)
+    pub guest_id: u32,
     // @@protoc_insertion_point(field:DrinkMakerGuest.faith)
     pub faith: u32,
     // special fields
@@ -53,15 +53,15 @@ impl DrinkMakerGuest {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "guest_id",
-            |m: &DrinkMakerGuest| { &m.guest_id },
-            |m: &mut DrinkMakerGuest| { &mut m.guest_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unlocked_favor_tag_list",
             |m: &DrinkMakerGuest| { &m.unlocked_favor_tag_list },
             |m: &mut DrinkMakerGuest| { &mut m.unlocked_favor_tag_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "guest_id",
+            |m: &DrinkMakerGuest| { &m.guest_id },
+            |m: &mut DrinkMakerGuest| { &mut m.guest_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "faith",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for DrinkMakerGuest {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.guest_id = is.read_uint32()?;
-                },
-                10 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_favor_tag_list)?;
                 },
-                8 => {
+                104 => {
                     self.unlocked_favor_tag_list.push(is.read_uint32()?);
                 },
-                48 => {
+                16 => {
+                    self.guest_id = is.read_uint32()?;
+                },
+                72 => {
                     self.faith = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for DrinkMakerGuest {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.unlocked_favor_tag_list);
         if self.guest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.guest_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.guest_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.unlocked_favor_tag_list);
         if self.faith != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.faith);
+            my_size += ::protobuf::rt::uint32_size(9, self.faith);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for DrinkMakerGuest {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(13, &self.unlocked_favor_tag_list)?;
         if self.guest_id != 0 {
-            os.write_uint32(8, self.guest_id)?;
+            os.write_uint32(2, self.guest_id)?;
         }
-        os.write_repeated_packed_uint32(1, &self.unlocked_favor_tag_list)?;
         if self.faith != 0 {
-            os.write_uint32(6, self.faith)?;
+            os.write_uint32(9, self.faith)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for DrinkMakerGuest {
     }
 
     fn clear(&mut self) {
-        self.guest_id = 0;
         self.unlocked_favor_tag_list.clear();
+        self.guest_id = 0;
         self.faith = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerGuest {
         static instance: DrinkMakerGuest = DrinkMakerGuest {
-            guest_id: 0,
             unlocked_favor_tag_list: ::std::vec::Vec::new(),
+            guest_id: 0,
             faith: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerGuest {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DrinkMakerGuest.proto\"y\n\x0fDrinkMakerGuest\x12\x19\n\x08guest_i\
-    d\x18\x08\x20\x01(\rR\x07guestId\x125\n\x17unlocked_favor_tag_list\x18\
-    \x01\x20\x03(\rR\x14unlockedFavorTagList\x12\x14\n\x05faith\x18\x06\x20\
-    \x01(\rR\x05faithb\x06proto3\
+    \n\x15DrinkMakerGuest.proto\"y\n\x0fDrinkMakerGuest\x125\n\x17unlocked_f\
+    avor_tag_list\x18\r\x20\x03(\rR\x14unlockedFavorTagList\x12\x19\n\x08gue\
+    st_id\x18\x02\x20\x01(\rR\x07guestId\x12\x14\n\x05faith\x18\t\x20\x01(\r\
+    R\x05faithb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

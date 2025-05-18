@@ -72,7 +72,7 @@ impl ::protobuf::Message for FBNJOFCEMIL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -115,7 +115,7 @@ impl ::protobuf::Message for FBNJOFCEMIL {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(114)?; // Tag.
+            os.write_raw_varint32(58)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FBNJOFCEMIL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBNJOFCEMIL.proto\"\x8e\x01\n\x0bFBNJOFCEMIL\x12?\n\x0bNFNMBGBOCCL\
-    \x18\x0e\x20\x03(\x0b2\x1d.FBNJOFCEMIL.NFNMBGBOCCLEntryR\x0bNFNMBGBOCCL\
+    \x18\x07\x20\x03(\x0b2\x1d.FBNJOFCEMIL.NFNMBGBOCCLEntryR\x0bNFNMBGBOCCL\
     \x1a>\n\x10NFNMBGBOCCLEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";

@@ -30,8 +30,8 @@ pub struct EnterChessRogueAeonRoomScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterChessRogueAeonRoomScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterChessRogueAeonRoomScRsp.story_info)
-    pub story_info: ::protobuf::MessageField<super::EHANAPNJFJD::EHANAPNJFJD>,
+    // @@protoc_insertion_point(field:EnterChessRogueAeonRoomScRsp.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterChessRogueAeonRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl EnterChessRogueAeonRoomScRsp {
             |m: &EnterChessRogueAeonRoomScRsp| { &m.retcode },
             |m: &mut EnterChessRogueAeonRoomScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHANAPNJFJD::EHANAPNJFJD>(
-            "story_info",
-            |m: &EnterChessRogueAeonRoomScRsp| { &m.story_info },
-            |m: &mut EnterChessRogueAeonRoomScRsp| { &mut m.story_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueInfo::ChessRogueInfo>(
+            "stage_info",
+            |m: &EnterChessRogueAeonRoomScRsp| { &m.stage_info },
+            |m: &mut EnterChessRogueAeonRoomScRsp| { &mut m.stage_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterChessRogueAeonRoomScRsp>(
             "EnterChessRogueAeonRoomScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if let Some(v) = self.story_info.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.story_info.clear();
+        self.stage_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterChessRogueAeonRoomScRsp {
         static instance: EnterChessRogueAeonRoomScRsp = EnterChessRogueAeonRoomScRsp {
             retcode: 0,
-            story_info: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterChessRogueAeonRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"EnterChessRogueAeonRoomScRsp.proto\x1a\x11EHANAPNJFJD.proto\"e\n\x1c\
-    EnterChessRogueAeonRoomScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
-    \x07retcode\x12+\n\nstory_info\x18\x07\x20\x01(\x0b2\x0c.EHANAPNJFJDR\ts\
-    toryInfob\x06proto3\
+    \n\"EnterChessRogueAeonRoomScRsp.proto\x1a\x14ChessRogueInfo.proto\"h\n\
+    \x1cEnterChessRogueAeonRoomScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
+    R\x07retcode\x12.\n\nstage_info\x18\x0e\x20\x01(\x0b2\x0f.ChessRogueInfo\
+    R\tstageInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EHANAPNJFJD::file_descriptor().clone());
+            deps.push(super::ChessRogueInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterChessRogueAeonRoomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

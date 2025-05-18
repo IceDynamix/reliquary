@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IDBEOMMCKIK {
     // message fields
-    // @@protoc_insertion_point(field:IDBEOMMCKIK.status_info)
-    pub status_info: ::protobuf::MessageField<super::FPDFCGKIILE::FPDFCGKIILE>,
     // @@protoc_insertion_point(field:IDBEOMMCKIK.ALJLKAOELDP)
     pub ALJLKAOELDP: u32,
+    // @@protoc_insertion_point(field:IDBEOMMCKIK.status_info)
+    pub status_info: ::protobuf::MessageField<super::FPDFCGKIILE::FPDFCGKIILE>,
     // special fields
     // @@protoc_insertion_point(special_field:IDBEOMMCKIK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl IDBEOMMCKIK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPDFCGKIILE::FPDFCGKIILE>(
-            "status_info",
-            |m: &IDBEOMMCKIK| { &m.status_info },
-            |m: &mut IDBEOMMCKIK| { &mut m.status_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALJLKAOELDP",
             |m: &IDBEOMMCKIK| { &m.ALJLKAOELDP },
             |m: &mut IDBEOMMCKIK| { &mut m.ALJLKAOELDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPDFCGKIILE::FPDFCGKIILE>(
+            "status_info",
+            |m: &IDBEOMMCKIK| { &m.status_info },
+            |m: &mut IDBEOMMCKIK| { &mut m.status_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IDBEOMMCKIK>(
             "IDBEOMMCKIK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IDBEOMMCKIK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.status_info)?;
-                },
-                24 => {
+                120 => {
                     self.ALJLKAOELDP = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.status_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for IDBEOMMCKIK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ALJLKAOELDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ALJLKAOELDP);
+        }
         if let Some(v) = self.status_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ALJLKAOELDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ALJLKAOELDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for IDBEOMMCKIK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.status_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.ALJLKAOELDP != 0 {
-            os.write_uint32(3, self.ALJLKAOELDP)?;
+            os.write_uint32(15, self.ALJLKAOELDP)?;
+        }
+        if let Some(v) = self.status_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for IDBEOMMCKIK {
     }
 
     fn clear(&mut self) {
-        self.status_info.clear();
         self.ALJLKAOELDP = 0;
+        self.status_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IDBEOMMCKIK {
         static instance: IDBEOMMCKIK = IDBEOMMCKIK {
-            status_info: ::protobuf::MessageField::none(),
             ALJLKAOELDP: 0,
+            status_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for IDBEOMMCKIK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IDBEOMMCKIK.proto\x1a\x11FPDFCGKIILE.proto\"^\n\x0bIDBEOMMCKIK\x12\
-    -\n\x0bstatus_info\x18\x0f\x20\x01(\x0b2\x0c.FPDFCGKIILER\nstatusInfo\
-    \x12\x20\n\x0bALJLKAOELDP\x18\x03\x20\x01(\rR\x0bALJLKAOELDPb\x06proto3\
+    \x20\n\x0bALJLKAOELDP\x18\x0f\x20\x01(\rR\x0bALJLKAOELDP\x12-\n\x0bstatu\
+    s_info\x18\x01\x20\x01(\x0b2\x0c.FPDFCGKIILER\nstatusInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

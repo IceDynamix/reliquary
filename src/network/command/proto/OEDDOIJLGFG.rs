@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OEDDOIJLGFG {
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<oeddoijlgfg::KFELKJLDKEH>,
+    pub EEODDLOHNED: ::std::option::Option<oeddoijlgfg::EEODDLOHNED>,
     // special fields
     // @@protoc_insertion_point(special_field:OEDDOIJLGFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,89 +45,89 @@ impl OEDDOIJLGFG {
         ::std::default::Default::default()
     }
 
-    // uint32 FFBFCCLODKK = 7;
+    // uint32 FFBFCCLODKK = 3;
 
     pub fn FFBFCCLODKK(&self) -> u32 {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(v)) => v,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_FFBFCCLODKK(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
     }
 
     pub fn has_FFBFCCLODKK(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(..)) => true,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FFBFCCLODKK(&mut self, v: u32) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(v))
+        self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v))
     }
 
-    // uint32 KACELKGCNEI = 4;
+    // uint32 KACELKGCNEI = 6;
 
     pub fn KACELKGCNEI(&self) -> u32 {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(v)) => v,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_KACELKGCNEI(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
     }
 
     pub fn has_KACELKGCNEI(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(..)) => true,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_KACELKGCNEI(&mut self, v: u32) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(v))
+        self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v))
     }
 
-    // .LCMJFEHMCNF FAOMFMMLMHD = 11;
+    // .LCMJFEHMCNF FAOMFMMLMHD = 9;
 
     pub fn FAOMFMMLMHD(&self) -> &super::LCMJFEHMCNF::LCMJFEHMCNF {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(ref v)) => v,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref v)) => v,
             _ => <super::LCMJFEHMCNF::LCMJFEHMCNF as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FAOMFMMLMHD(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
     }
 
     pub fn has_FAOMFMMLMHD(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(..)) => true,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FAOMFMMLMHD(&mut self, v: super::LCMJFEHMCNF::LCMJFEHMCNF) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(v))
+        self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FAOMFMMLMHD(&mut self) -> &mut super::LCMJFEHMCNF::LCMJFEHMCNF {
-        if let ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(_)) = self.EEODDLOHNED {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(super::LCMJFEHMCNF::LCMJFEHMCNF::new()));
+            self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(super::LCMJFEHMCNF::LCMJFEHMCNF::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(ref mut v)) => v,
+        match self.EEODDLOHNED {
+            ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -135,8 +135,8 @@ impl OEDDOIJLGFG {
     // Take field
     pub fn take_FAOMFMMLMHD(&mut self) -> super::LCMJFEHMCNF::LCMJFEHMCNF {
         if self.has_FAOMFMMLMHD() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(v)) => v,
+            match self.EEODDLOHNED.take() {
+                ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -166,7 +166,7 @@ impl OEDDOIJLGFG {
             OEDDOIJLGFG::mut_FAOMFMMLMHD,
             OEDDOIJLGFG::set_FAOMFMMLMHD,
         ));
-        oneofs.push(oeddoijlgfg::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(oeddoijlgfg::EEODDLOHNED::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OEDDOIJLGFG>(
             "OEDDOIJLGFG",
             fields,
@@ -185,14 +185,14 @@ impl ::protobuf::Message for OEDDOIJLGFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(is.read_uint32()?));
+                24 => {
+                    self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(is.read_uint32()?));
                 },
-                32 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(is.read_uint32()?));
+                48 => {
+                    self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(is.read_uint32()?));
                 },
-                90 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(is.read_message()?));
+                74 => {
+                    self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -206,15 +206,15 @@ impl ::protobuf::Message for OEDDOIJLGFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.EEODDLOHNED {
             match v {
-                &oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(v) => {
-                    my_size += ::protobuf::rt::uint32_size(7, v);
+                &oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v) => {
+                    my_size += ::protobuf::rt::uint32_size(3, v);
                 },
-                &oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
+                &oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v) => {
+                    my_size += ::protobuf::rt::uint32_size(6, v);
                 },
-                &oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(ref v) => {
+                &oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -226,16 +226,16 @@ impl ::protobuf::Message for OEDDOIJLGFG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.EEODDLOHNED {
             match v {
-                &oeddoijlgfg::KFELKJLDKEH::FFBFCCLODKK(v) => {
-                    os.write_uint32(7, v)?;
+                &oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v) => {
+                    os.write_uint32(3, v)?;
                 },
-                &oeddoijlgfg::KFELKJLDKEH::KACELKGCNEI(v) => {
-                    os.write_uint32(4, v)?;
+                &oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v) => {
+                    os.write_uint32(6, v)?;
                 },
-                &oeddoijlgfg::KFELKJLDKEH::FAOMFMMLMHD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
             };
         }
@@ -256,15 +256,15 @@ impl ::protobuf::Message for OEDDOIJLGFG {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
+        self.EEODDLOHNED = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OEDDOIJLGFG {
         static instance: OEDDOIJLGFG = OEDDOIJLGFG {
-            KFELKJLDKEH: ::std::option::Option::None,
+            EEODDLOHNED: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,8 +293,8 @@ pub mod oeddoijlgfg {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:OEDDOIJLGFG.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:OEDDOIJLGFG.EEODDLOHNED)
+    pub enum EEODDLOHNED {
         // @@protoc_insertion_point(oneof_field:OEDDOIJLGFG.FFBFCCLODKK)
         FFBFCCLODKK(u32),
         // @@protoc_insertion_point(oneof_field:OEDDOIJLGFG.KACELKGCNEI)
@@ -303,29 +303,29 @@ pub mod oeddoijlgfg {
         FAOMFMMLMHD(super::super::LCMJFEHMCNF::LCMJFEHMCNF),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for EEODDLOHNED {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for EEODDLOHNED {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::OEDDOIJLGFG as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::OEDDOIJLGFG as ::protobuf::MessageFull>::descriptor().oneof_by_name("EEODDLOHNED").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl EEODDLOHNED {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<EEODDLOHNED>("EEODDLOHNED")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OEDDOIJLGFG.proto\x1a\x11LCMJFEHMCNF.proto\"\x96\x01\n\x0bOEDDOIJL\
-    GFG\x12\"\n\x0bFFBFCCLODKK\x18\x07\x20\x01(\rH\0R\x0bFFBFCCLODKK\x12\"\n\
-    \x0bKACELKGCNEI\x18\x04\x20\x01(\rH\0R\x0bKACELKGCNEI\x120\n\x0bFAOMFMML\
-    MHD\x18\x0b\x20\x01(\x0b2\x0c.LCMJFEHMCNFH\0R\x0bFAOMFMMLMHDB\r\n\x0bKFE\
-    LKJLDKEHb\x06proto3\
+    GFG\x12\"\n\x0bFFBFCCLODKK\x18\x03\x20\x01(\rH\0R\x0bFFBFCCLODKK\x12\"\n\
+    \x0bKACELKGCNEI\x18\x06\x20\x01(\rH\0R\x0bKACELKGCNEI\x120\n\x0bFAOMFMML\
+    MHD\x18\t\x20\x01(\x0b2\x0c.LCMJFEHMCNFH\0R\x0bFAOMFMMLMHDB\r\n\x0bEEODD\
+    LOHNEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

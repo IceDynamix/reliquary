@@ -79,10 +79,10 @@ impl ::protobuf::Message for FBHNFJCNHML {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
                 },
-                96 => {
+                24 => {
                     self.JAPDCMJPIEJ = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FBHNFJCNHML {
             my_size += 1 + 1;
         }
         if self.JAPDCMJPIEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JAPDCMJPIEJ);
+            my_size += ::protobuf::rt::uint32_size(3, self.JAPDCMJPIEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FBHNFJCNHML {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FBJHGPDKBGM != false {
-            os.write_bool(8, self.FBJHGPDKBGM)?;
+            os.write_bool(14, self.FBJHGPDKBGM)?;
         }
         if self.JAPDCMJPIEJ != 0 {
-            os.write_uint32(12, self.JAPDCMJPIEJ)?;
+            os.write_uint32(3, self.JAPDCMJPIEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FBHNFJCNHML {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBHNFJCNHML.proto\"Q\n\x0bFBHNFJCNHML\x12\x20\n\x0bFBJHGPDKBGM\x18\
-    \x08\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\x0c\x20\
+    \x0e\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\x03\x20\
     \x01(\rR\x0bJAPDCMJPIEJb\x06proto3\
 ";
 

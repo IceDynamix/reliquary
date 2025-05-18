@@ -31,7 +31,7 @@ pub struct CFCDHLPOOGC {
     // @@protoc_insertion_point(field:CFCDHLPOOGC.IKOBKINKHCF)
     pub IKOBKINKHCF: ::protobuf::MessageField<super::MIKFNBBOPIP::MIKFNBBOPIP>,
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<cfcdhlpoogc::KFELKJLDKEH>,
+    pub LKBODBDDCIM: ::std::option::Option<cfcdhlpoogc::LKBODBDDCIM>,
     // special fields
     // @@protoc_insertion_point(special_field:CFCDHLPOOGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl CFCDHLPOOGC {
         ::std::default::Default::default()
     }
 
-    // .LHADMKCGCKO ICFFJLICIMB = 377;
+    // .LHADMKCGCKO ICFFJLICIMB = 1752;
 
     pub fn ICFFJLICIMB(&self) -> &super::LHADMKCGCKO::LHADMKCGCKO {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(ref v)) => v,
+        match self.LKBODBDDCIM {
+            ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(ref v)) => v,
             _ => <super::LHADMKCGCKO::LHADMKCGCKO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ICFFJLICIMB(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.LKBODBDDCIM = ::std::option::Option::None;
     }
 
     pub fn has_ICFFJLICIMB(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(..)) => true,
+        match self.LKBODBDDCIM {
+            ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ICFFJLICIMB(&mut self, v: super::LHADMKCGCKO::LHADMKCGCKO) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(v))
+        self.LKBODBDDCIM = ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ICFFJLICIMB(&mut self) -> &mut super::LHADMKCGCKO::LHADMKCGCKO {
-        if let ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(_)) = self.LKBODBDDCIM {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(super::LHADMKCGCKO::LHADMKCGCKO::new()));
+            self.LKBODBDDCIM = ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(super::LHADMKCGCKO::LHADMKCGCKO::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(ref mut v)) => v,
+        match self.LKBODBDDCIM {
+            ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl CFCDHLPOOGC {
     // Take field
     pub fn take_ICFFJLICIMB(&mut self) -> super::LHADMKCGCKO::LHADMKCGCKO {
         if self.has_ICFFJLICIMB() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(v)) => v,
+            match self.LKBODBDDCIM.take() {
+                ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -112,7 +112,7 @@ impl CFCDHLPOOGC {
             CFCDHLPOOGC::mut_ICFFJLICIMB,
             CFCDHLPOOGC::set_ICFFJLICIMB,
         ));
-        oneofs.push(cfcdhlpoogc::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(cfcdhlpoogc::LKBODBDDCIM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFCDHLPOOGC>(
             "CFCDHLPOOGC",
             fields,
@@ -131,11 +131,11 @@ impl ::protobuf::Message for CFCDHLPOOGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKOBKINKHCF)?;
                 },
-                3018 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(is.read_message()?));
+                14018 => {
+                    self.LKBODBDDCIM = ::std::option::Option::Some(cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -153,9 +153,9 @@ impl ::protobuf::Message for CFCDHLPOOGC {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.LKBODBDDCIM {
             match v {
-                &cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(ref v) => {
+                &cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -168,12 +168,12 @@ impl ::protobuf::Message for CFCDHLPOOGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IKOBKINKHCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.LKBODBDDCIM {
             match v {
-                &cfcdhlpoogc::KFELKJLDKEH::ICFFJLICIMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(377, v, os)?;
+                &cfcdhlpoogc::LKBODBDDCIM::ICFFJLICIMB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1752, v, os)?;
                 },
             };
         }
@@ -195,14 +195,14 @@ impl ::protobuf::Message for CFCDHLPOOGC {
 
     fn clear(&mut self) {
         self.IKOBKINKHCF.clear();
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.LKBODBDDCIM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFCDHLPOOGC {
         static instance: CFCDHLPOOGC = CFCDHLPOOGC {
             IKOBKINKHCF: ::protobuf::MessageField::none(),
-            KFELKJLDKEH: ::std::option::Option::None,
+            LKBODBDDCIM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -231,34 +231,34 @@ pub mod cfcdhlpoogc {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CFCDHLPOOGC.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:CFCDHLPOOGC.LKBODBDDCIM)
+    pub enum LKBODBDDCIM {
         // @@protoc_insertion_point(oneof_field:CFCDHLPOOGC.ICFFJLICIMB)
         ICFFJLICIMB(super::super::LHADMKCGCKO::LHADMKCGCKO),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for LKBODBDDCIM {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for LKBODBDDCIM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CFCDHLPOOGC as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::CFCDHLPOOGC as ::protobuf::MessageFull>::descriptor().oneof_by_name("LKBODBDDCIM").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl LKBODBDDCIM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LKBODBDDCIM>("LKBODBDDCIM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFCDHLPOOGC.proto\x1a\x11LHADMKCGCKO.proto\x1a\x11MIKFNBBOPIP.prot\
-    o\"\x7f\n\x0bCFCDHLPOOGC\x12.\n\x0bIKOBKINKHCF\x18\x0f\x20\x01(\x0b2\x0c\
-    .MIKFNBBOPIPR\x0bIKOBKINKHCF\x121\n\x0bICFFJLICIMB\x18\xf9\x02\x20\x01(\
-    \x0b2\x0c.LHADMKCGCKOH\0R\x0bICFFJLICIMBB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    o\"\x7f\n\x0bCFCDHLPOOGC\x12.\n\x0bIKOBKINKHCF\x18\x06\x20\x01(\x0b2\x0c\
+    .MIKFNBBOPIPR\x0bIKOBKINKHCF\x121\n\x0bICFFJLICIMB\x18\xd8\r\x20\x01(\
+    \x0b2\x0c.LHADMKCGCKOH\0R\x0bICFFJLICIMBB\r\n\x0bLKBODBDDCIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

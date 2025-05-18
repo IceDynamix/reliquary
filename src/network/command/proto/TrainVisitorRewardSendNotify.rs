@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainVisitorRewardSendNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainVisitorRewardSendNotify.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::IIPPJKHMPCH::IIPPJKHMPCH>,
+    // @@protoc_insertion_point(field:TrainVisitorRewardSendNotify.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::TrainVisitorRewardSendType::TrainVisitorRewardSendType>,
     // @@protoc_insertion_point(field:TrainVisitorRewardSendNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TrainVisitorRewardSendNotify.visitor_id)
@@ -54,9 +54,9 @@ impl TrainVisitorRewardSendNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &TrainVisitorRewardSendNotify| { &m.slot },
-            |m: &mut TrainVisitorRewardSendNotify| { &mut m.slot },
+            "type",
+            |m: &TrainVisitorRewardSendNotify| { &m.type_ },
+            |m: &mut TrainVisitorRewardSendNotify| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainVisitorRewardSendNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 72 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for TrainVisitorRewardSendNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::IIPPJKHMPCH::IIPPJKHMPCH::TRAIN_VISITOR_REWARD_SEND_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.slot.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRewardSendType::TrainVisitorRewardSendType::TRAIN_VISITOR_REWARD_SEND_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -123,8 +123,8 @@ impl ::protobuf::Message for TrainVisitorRewardSendNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::IIPPJKHMPCH::IIPPJKHMPCH::TRAIN_VISITOR_REWARD_SEND_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRewardSendType::TrainVisitorRewardSendType::TRAIN_VISITOR_REWARD_SEND_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for TrainVisitorRewardSendNotify {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::IIPPJKHMPCH::IIPPJKHMPCH::TRAIN_VISITOR_REWARD_SEND_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::TrainVisitorRewardSendType::TrainVisitorRewardSendType::TRAIN_VISITOR_REWARD_SEND_NONE);
         self.reward.clear();
         self.visitor_id = 0;
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for TrainVisitorRewardSendNotify {
 
     fn default_instance() -> &'static TrainVisitorRewardSendNotify {
         static instance: TrainVisitorRewardSendNotify = TrainVisitorRewardSendNotify {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             reward: ::protobuf::MessageField::none(),
             visitor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for TrainVisitorRewardSendNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TrainVisitorRewardSendNotify.proto\x1a\x11IIPPJKHMPCH.proto\x1a\x0eI\
-    temList.proto\"\x82\x01\n\x1cTrainVisitorRewardSendNotify\x12\x20\n\x04s\
-    lot\x18\t\x20\x01(\x0e2\x0c.IIPPJKHMPCHR\x04slot\x12!\n\x06reward\x18\
-    \x08\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1d\n\nvisitor_id\x18\x0c\
-    \x20\x01(\rR\tvisitorIdb\x06proto3\
+    \n\"TrainVisitorRewardSendNotify.proto\x1a\x0eItemList.proto\x1a\x20Trai\
+    nVisitorRewardSendType.proto\"\x91\x01\n\x1cTrainVisitorRewardSendNotify\
+    \x12/\n\x04type\x18\t\x20\x01(\x0e2\x1b.TrainVisitorRewardSendTypeR\x04t\
+    ype\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1d\
+    \n\nvisitor_id\x18\x0c\x20\x01(\rR\tvisitorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::IIPPJKHMPCH::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
+            deps.push(super::TrainVisitorRewardSendType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainVisitorRewardSendNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

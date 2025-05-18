@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightEnterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightEnterScRsp.server_timestamp_ms)
-    pub server_timestamp_ms: u64,
     // @@protoc_insertion_point(field:FightEnterScRsp.secret_key_seed)
     pub secret_key_seed: u64,
     // @@protoc_insertion_point(field:FightEnterScRsp.JLPKEOBINCP)
@@ -38,6 +36,8 @@ pub struct FightEnterScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:FightEnterScRsp.MKINIOFGIAG)
     pub MKINIOFGIAG: u32,
+    // @@protoc_insertion_point(field:FightEnterScRsp.server_timestamp_ms)
+    pub server_timestamp_ms: u64,
     // special fields
     // @@protoc_insertion_point(special_field:FightEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,11 +58,6 @@ impl FightEnterScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "server_timestamp_ms",
-            |m: &FightEnterScRsp| { &m.server_timestamp_ms },
-            |m: &mut FightEnterScRsp| { &mut m.server_timestamp_ms },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "secret_key_seed",
             |m: &FightEnterScRsp| { &m.secret_key_seed },
             |m: &mut FightEnterScRsp| { &mut m.secret_key_seed },
@@ -82,6 +77,11 @@ impl FightEnterScRsp {
             |m: &FightEnterScRsp| { &m.MKINIOFGIAG },
             |m: &mut FightEnterScRsp| { &mut m.MKINIOFGIAG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "server_timestamp_ms",
+            |m: &FightEnterScRsp| { &m.server_timestamp_ms },
+            |m: &mut FightEnterScRsp| { &mut m.server_timestamp_ms },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightEnterScRsp>(
             "FightEnterScRsp",
             fields,
@@ -100,20 +100,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.server_timestamp_ms = is.read_uint64()?;
-                },
-                64 => {
+                88 => {
                     self.secret_key_seed = is.read_uint64()?;
                 },
-                8 => {
+                40 => {
                     self.JLPKEOBINCP = is.read_bool()?;
                 },
-                24 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.MKINIOFGIAG = is.read_uint32()?;
+                },
+                120 => {
+                    self.server_timestamp_ms = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.server_timestamp_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.server_timestamp_ms);
-        }
         if self.secret_key_seed != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.secret_key_seed);
+            my_size += ::protobuf::rt::uint64_size(11, self.secret_key_seed);
         }
         if self.JLPKEOBINCP != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.MKINIOFGIAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MKINIOFGIAG);
+            my_size += ::protobuf::rt::uint32_size(13, self.MKINIOFGIAG);
+        }
+        if self.server_timestamp_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.server_timestamp_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.server_timestamp_ms != 0 {
-            os.write_uint64(4, self.server_timestamp_ms)?;
-        }
         if self.secret_key_seed != 0 {
-            os.write_uint64(8, self.secret_key_seed)?;
+            os.write_uint64(11, self.secret_key_seed)?;
         }
         if self.JLPKEOBINCP != false {
-            os.write_bool(1, self.JLPKEOBINCP)?;
+            os.write_bool(5, self.JLPKEOBINCP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.MKINIOFGIAG != 0 {
-            os.write_uint32(7, self.MKINIOFGIAG)?;
+            os.write_uint32(13, self.MKINIOFGIAG)?;
+        }
+        if self.server_timestamp_ms != 0 {
+            os.write_uint64(15, self.server_timestamp_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn clear(&mut self) {
-        self.server_timestamp_ms = 0;
         self.secret_key_seed = 0;
         self.JLPKEOBINCP = false;
         self.retcode = 0;
         self.MKINIOFGIAG = 0;
+        self.server_timestamp_ms = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightEnterScRsp {
         static instance: FightEnterScRsp = FightEnterScRsp {
-            server_timestamp_ms: 0,
             secret_key_seed: 0,
             JLPKEOBINCP: false,
             retcode: 0,
             MKINIOFGIAG: 0,
+            server_timestamp_ms: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for FightEnterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FightEnterScRsp.proto\"\xc7\x01\n\x0fFightEnterScRsp\x12.\n\x13ser\
-    ver_timestamp_ms\x18\x04\x20\x01(\x04R\x11serverTimestampMs\x12&\n\x0fse\
-    cret_key_seed\x18\x08\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bJLPKEOBI\
-    NCP\x18\x01\x20\x01(\x08R\x0bJLPKEOBINCP\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bMKINIOFGIAG\x18\x07\x20\x01(\rR\x0b\
-    MKINIOFGIAGb\x06proto3\
+    \n\x15FightEnterScRsp.proto\"\xc7\x01\n\x0fFightEnterScRsp\x12&\n\x0fsec\
+    ret_key_seed\x18\x0b\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bJLPKEOBIN\
+    CP\x18\x05\x20\x01(\x08R\x0bJLPKEOBINCP\x12\x18\n\x07retcode\x18\x04\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bMKINIOFGIAG\x18\r\x20\x01(\rR\x0bMKINIO\
+    FGIAG\x12.\n\x13server_timestamp_ms\x18\x0f\x20\x01(\x04R\x11serverTimes\
+    tampMsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

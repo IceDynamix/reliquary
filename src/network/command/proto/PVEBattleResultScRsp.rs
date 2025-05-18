@@ -28,40 +28,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PVEBattleResultScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.NDCMDOKKPHH)
-    pub NDCMDOKKPHH: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.KLODELECMCI)
-    pub KLODELECMCI: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.NHANAKJFEAB)
-    pub NHANAKJFEAB: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.JHMMOOJPKHA)
-    pub JHMMOOJPKHA: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.HKPGCAPIMAO)
-    pub HKPGCAPIMAO: ::std::string::String,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.APJKCAOHAFP)
-    pub APJKCAOHAFP: ::std::string::String,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.EIGNJEEGDEP)
-    pub EIGNJEEGDEP: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.NBHLIFPBLMF)
-    pub NBHLIFPBLMF: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_avatar_list)
-    pub battle_avatar_list: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.KJCHGEHDLNO)
-    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.KLODELECMCI)
+    pub KLODELECMCI: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.mismatch_turn_count)
+    pub mismatch_turn_count: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.multiple_drop_data)
+    pub multiple_drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.item_list_unk2)
+    pub item_list_unk2: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.stage_id)
+    pub stage_id: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
     pub check_identical: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.bin_version)
+    pub bin_version: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.drop_data)
+    pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
     pub battle_id: u32,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.GGMPFNKOFKD)
     pub GGMPFNKOFKD: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.res_version)
+    pub res_version: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.pve_avatar_list)
+    pub pve_avatar_list: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.KJCHGEHDLNO)
+    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.EIGNJEEGDEP)
+    pub EIGNJEEGDEP: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:PVEBattleResultScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -82,9 +82,9 @@ impl PVEBattleResultScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(17);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDCMDOKKPHH",
-            |m: &PVEBattleResultScRsp| { &m.NDCMDOKKPHH },
-            |m: &mut PVEBattleResultScRsp| { &mut m.NDCMDOKKPHH },
+            "event_id",
+            |m: &PVEBattleResultScRsp| { &m.event_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KLODELECMCI",
@@ -92,64 +92,44 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.KLODELECMCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "mismatch_turn_count",
+            |m: &PVEBattleResultScRsp| { &m.mismatch_turn_count },
+            |m: &mut PVEBattleResultScRsp| { &mut m.mismatch_turn_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_status",
+            |m: &PVEBattleResultScRsp| { &m.end_status },
+            |m: &mut PVEBattleResultScRsp| { &mut m.end_status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "multiple_drop_data",
+            |m: &PVEBattleResultScRsp| { &m.multiple_drop_data },
+            |m: &mut PVEBattleResultScRsp| { &mut m.multiple_drop_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "item_list_unk2",
+            |m: &PVEBattleResultScRsp| { &m.item_list_unk2 },
+            |m: &mut PVEBattleResultScRsp| { &mut m.item_list_unk2 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
             |m: &PVEBattleResultScRsp| { &m.stage_id },
             |m: &mut PVEBattleResultScRsp| { &mut m.stage_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "NHANAKJFEAB",
-            |m: &PVEBattleResultScRsp| { &m.NHANAKJFEAB },
-            |m: &mut PVEBattleResultScRsp| { &mut m.NHANAKJFEAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "JHMMOOJPKHA",
-            |m: &PVEBattleResultScRsp| { &m.JHMMOOJPKHA },
-            |m: &mut PVEBattleResultScRsp| { &mut m.JHMMOOJPKHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKPGCAPIMAO",
-            |m: &PVEBattleResultScRsp| { &m.HKPGCAPIMAO },
-            |m: &mut PVEBattleResultScRsp| { &mut m.HKPGCAPIMAO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &PVEBattleResultScRsp| { &m.event_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APJKCAOHAFP",
-            |m: &PVEBattleResultScRsp| { &m.APJKCAOHAFP },
-            |m: &mut PVEBattleResultScRsp| { &mut m.APJKCAOHAFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "EIGNJEEGDEP",
-            |m: &PVEBattleResultScRsp| { &m.EIGNJEEGDEP },
-            |m: &mut PVEBattleResultScRsp| { &mut m.EIGNJEEGDEP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "NBHLIFPBLMF",
-            |m: &PVEBattleResultScRsp| { &m.NBHLIFPBLMF },
-            |m: &mut PVEBattleResultScRsp| { &mut m.NBHLIFPBLMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_avatar_list",
-            |m: &PVEBattleResultScRsp| { &m.battle_avatar_list },
-            |m: &mut PVEBattleResultScRsp| { &mut m.battle_avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PVEBattleResultScRsp| { &m.retcode },
-            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
-            "KJCHGEHDLNO",
-            |m: &PVEBattleResultScRsp| { &m.KJCHGEHDLNO },
-            |m: &mut PVEBattleResultScRsp| { &mut m.KJCHGEHDLNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "check_identical",
             |m: &PVEBattleResultScRsp| { &m.check_identical },
             |m: &mut PVEBattleResultScRsp| { &mut m.check_identical },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "bin_version",
+            |m: &PVEBattleResultScRsp| { &m.bin_version },
+            |m: &mut PVEBattleResultScRsp| { &mut m.bin_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "drop_data",
+            |m: &PVEBattleResultScRsp| { &m.drop_data },
+            |m: &mut PVEBattleResultScRsp| { &mut m.drop_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_id",
@@ -162,9 +142,29 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.GGMPFNKOFKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &PVEBattleResultScRsp| { &m.end_status },
-            |m: &mut PVEBattleResultScRsp| { &mut m.end_status },
+            "res_version",
+            |m: &PVEBattleResultScRsp| { &m.res_version },
+            |m: &mut PVEBattleResultScRsp| { &mut m.res_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PVEBattleResultScRsp| { &m.retcode },
+            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "pve_avatar_list",
+            |m: &PVEBattleResultScRsp| { &m.pve_avatar_list },
+            |m: &mut PVEBattleResultScRsp| { &mut m.pve_avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
+            "KJCHGEHDLNO",
+            |m: &PVEBattleResultScRsp| { &m.KJCHGEHDLNO },
+            |m: &mut PVEBattleResultScRsp| { &mut m.KJCHGEHDLNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "EIGNJEEGDEP",
+            |m: &PVEBattleResultScRsp| { &m.EIGNJEEGDEP },
+            |m: &mut PVEBattleResultScRsp| { &mut m.EIGNJEEGDEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PVEBattleResultScRsp>(
             "PVEBattleResultScRsp",
@@ -184,56 +184,56 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.NDCMDOKKPHH = is.read_uint32()?;
-                },
-                104 => {
-                    self.KLODELECMCI = is.read_uint32()?;
-                },
-                32 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NHANAKJFEAB)?;
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JHMMOOJPKHA)?;
-                },
-                114 => {
-                    self.HKPGCAPIMAO = is.read_string()?;
-                },
-                40 => {
+                120 => {
                     self.event_id = is.read_uint32()?;
                 },
-                98 => {
-                    self.APJKCAOHAFP = is.read_string()?;
+                16 => {
+                    self.KLODELECMCI = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIGNJEEGDEP)?;
-                },
-                9986 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NBHLIFPBLMF)?;
-                },
-                122 => {
-                    self.battle_avatar_list.push(is.read_message()?);
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                11386 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCHGEHDLNO)?;
+                112 => {
+                    self.mismatch_turn_count = is.read_uint32()?;
                 },
                 64 => {
+                    self.end_status = is.read_enum_or_unknown()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.multiple_drop_data)?;
+                },
+                13098 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list_unk2)?;
+                },
+                88 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                72 => {
                     self.check_identical = is.read_bool()?;
                 },
-                24 => {
+                50 => {
+                    self.bin_version = is.read_string()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
+                },
+                40 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.GGMPFNKOFKD = is.read_uint32()?;
                 },
-                16 => {
-                    self.end_status = is.read_enum_or_unknown()?;
+                58 => {
+                    self.res_version = is.read_string()?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    self.pve_avatar_list.push(is.read_message()?);
+                },
+                13194 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCHGEHDLNO)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIGNJEEGDEP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -247,62 +247,62 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NDCMDOKKPHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NDCMDOKKPHH);
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.event_id);
         }
         if self.KLODELECMCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KLODELECMCI);
+            my_size += ::protobuf::rt::uint32_size(2, self.KLODELECMCI);
+        }
+        if self.mismatch_turn_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.mismatch_turn_count);
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.end_status.value());
+        }
+        if let Some(v) = self.multiple_drop_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.item_list_unk2.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.stage_id);
-        }
-        if let Some(v) = self.NHANAKJFEAB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.JHMMOOJPKHA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.HKPGCAPIMAO.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.HKPGCAPIMAO);
-        }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.event_id);
-        }
-        if !self.APJKCAOHAFP.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.APJKCAOHAFP);
-        }
-        if let Some(v) = self.EIGNJEEGDEP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.NBHLIFPBLMF.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.battle_avatar_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(11, self.stage_id);
         }
         if self.check_identical != false {
             my_size += 1 + 1;
         }
+        if !self.bin_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.bin_version);
+        }
+        if let Some(v) = self.drop_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.battle_id);
         }
         if self.GGMPFNKOFKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GGMPFNKOFKD);
+            my_size += ::protobuf::rt::uint32_size(10, self.GGMPFNKOFKD);
         }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.end_status.value());
+        if !self.res_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.res_version);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        for value in &self.pve_avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.EIGNJEEGDEP.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -310,56 +310,56 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NDCMDOKKPHH != 0 {
-            os.write_uint32(6, self.NDCMDOKKPHH)?;
+        if self.event_id != 0 {
+            os.write_uint32(15, self.event_id)?;
         }
         if self.KLODELECMCI != 0 {
-            os.write_uint32(13, self.KLODELECMCI)?;
+            os.write_uint32(2, self.KLODELECMCI)?;
         }
-        if self.stage_id != 0 {
-            os.write_uint32(4, self.stage_id)?;
-        }
-        if let Some(v) = self.NHANAKJFEAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.JHMMOOJPKHA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if !self.HKPGCAPIMAO.is_empty() {
-            os.write_string(14, &self.HKPGCAPIMAO)?;
-        }
-        if self.event_id != 0 {
-            os.write_uint32(5, self.event_id)?;
-        }
-        if !self.APJKCAOHAFP.is_empty() {
-            os.write_string(12, &self.APJKCAOHAFP)?;
-        }
-        if let Some(v) = self.EIGNJEEGDEP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.NBHLIFPBLMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1248, v, os)?;
-        }
-        for v in &self.battle_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1423, v, os)?;
-        }
-        if self.check_identical != false {
-            os.write_bool(8, self.check_identical)?;
-        }
-        if self.battle_id != 0 {
-            os.write_uint32(3, self.battle_id)?;
-        }
-        if self.GGMPFNKOFKD != 0 {
-            os.write_uint32(7, self.GGMPFNKOFKD)?;
+        if self.mismatch_turn_count != 0 {
+            os.write_uint32(14, self.mismatch_turn_count)?;
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        }
+        if let Some(v) = self.multiple_drop_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.item_list_unk2.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1637, v, os)?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(11, self.stage_id)?;
+        }
+        if self.check_identical != false {
+            os.write_bool(9, self.check_identical)?;
+        }
+        if !self.bin_version.is_empty() {
+            os.write_string(6, &self.bin_version)?;
+        }
+        if let Some(v) = self.drop_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.battle_id != 0 {
+            os.write_uint32(5, self.battle_id)?;
+        }
+        if self.GGMPFNKOFKD != 0 {
+            os.write_uint32(10, self.GGMPFNKOFKD)?;
+        }
+        if !self.res_version.is_empty() {
+            os.write_string(7, &self.res_version)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
+        }
+        for v in &self.pve_avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1649, v, os)?;
+        }
+        if let Some(v) = self.EIGNJEEGDEP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -378,45 +378,45 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     }
 
     fn clear(&mut self) {
-        self.NDCMDOKKPHH = 0;
-        self.KLODELECMCI = 0;
-        self.stage_id = 0;
-        self.NHANAKJFEAB.clear();
-        self.JHMMOOJPKHA.clear();
-        self.HKPGCAPIMAO.clear();
         self.event_id = 0;
-        self.APJKCAOHAFP.clear();
-        self.EIGNJEEGDEP.clear();
-        self.NBHLIFPBLMF.clear();
-        self.battle_avatar_list.clear();
-        self.retcode = 0;
-        self.KJCHGEHDLNO.clear();
+        self.KLODELECMCI = 0;
+        self.mismatch_turn_count = 0;
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.multiple_drop_data.clear();
+        self.item_list_unk2.clear();
+        self.stage_id = 0;
         self.check_identical = false;
+        self.bin_version.clear();
+        self.drop_data.clear();
         self.battle_id = 0;
         self.GGMPFNKOFKD = 0;
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.res_version.clear();
+        self.retcode = 0;
+        self.pve_avatar_list.clear();
+        self.KJCHGEHDLNO.clear();
+        self.EIGNJEEGDEP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PVEBattleResultScRsp {
         static instance: PVEBattleResultScRsp = PVEBattleResultScRsp {
-            NDCMDOKKPHH: 0,
-            KLODELECMCI: 0,
-            stage_id: 0,
-            NHANAKJFEAB: ::protobuf::MessageField::none(),
-            JHMMOOJPKHA: ::protobuf::MessageField::none(),
-            HKPGCAPIMAO: ::std::string::String::new(),
             event_id: 0,
-            APJKCAOHAFP: ::std::string::String::new(),
-            EIGNJEEGDEP: ::protobuf::MessageField::none(),
-            NBHLIFPBLMF: ::protobuf::MessageField::none(),
-            battle_avatar_list: ::std::vec::Vec::new(),
-            retcode: 0,
-            KJCHGEHDLNO: ::protobuf::MessageField::none(),
+            KLODELECMCI: 0,
+            mismatch_turn_count: 0,
+            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            multiple_drop_data: ::protobuf::MessageField::none(),
+            item_list_unk2: ::protobuf::MessageField::none(),
+            stage_id: 0,
             check_identical: false,
+            bin_version: ::std::string::String::new(),
+            drop_data: ::protobuf::MessageField::none(),
             battle_id: 0,
             GGMPFNKOFKD: 0,
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            res_version: ::std::string::String::new(),
+            retcode: 0,
+            pve_avatar_list: ::std::vec::Vec::new(),
+            KJCHGEHDLNO: ::protobuf::MessageField::none(),
+            EIGNJEEGDEP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -442,23 +442,24 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultScRsp.proto\x1a\x12BattleAvatar.proto\x1a\x15Battle\
-    EndStatus.proto\x1a\x0eItemList.proto\x1a\x14ReturnItemList.proto\"\xad\
-    \x05\n\x14PVEBattleResultScRsp\x12\x20\n\x0bNDCMDOKKPHH\x18\x06\x20\x01(\
-    \rR\x0bNDCMDOKKPHH\x12\x20\n\x0bKLODELECMCI\x18\r\x20\x01(\rR\x0bKLODELE\
-    CMCI\x12\x19\n\x08stage_id\x18\x04\x20\x01(\rR\x07stageId\x12+\n\x0bNHAN\
-    AKJFEAB\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0bNHANAKJFEAB\x12+\n\x0bJHMMO\
-    OJPKHA\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bJHMMOOJPKHA\x12\x20\n\x0bHKP\
-    GCAPIMAO\x18\x0e\x20\x01(\tR\x0bHKPGCAPIMAO\x12\x19\n\x08event_id\x18\
-    \x05\x20\x01(\rR\x07eventId\x12\x20\n\x0bAPJKCAOHAFP\x18\x0c\x20\x01(\tR\
-    \x0bAPJKCAOHAFP\x12+\n\x0bEIGNJEEGDEP\x18\n\x20\x01(\x0b2\t.ItemListR\
-    \x0bEIGNJEEGDEP\x12,\n\x0bNBHLIFPBLMF\x18\xe0\t\x20\x01(\x0b2\t.ItemList\
-    R\x0bNBHLIFPBLMF\x12;\n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\r.Ba\
-    ttleAvatarR\x10battleAvatarList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x122\n\x0bKJCHGEHDLNO\x18\x8f\x0b\x20\x01(\x0b2\x0f.ReturnIt\
-    emListR\x0bKJCHGEHDLNO\x12'\n\x0fcheck_identical\x18\x08\x20\x01(\x08R\
-    \x0echeckIdentical\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\x08battleId\
-    \x12\x20\n\x0bGGMPFNKOFKD\x18\x07\x20\x01(\rR\x0bGGMPFNKOFKD\x12/\n\nend\
-    _status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatusb\x06proto3\
+    EndStatus.proto\x1a\x0eItemList.proto\x1a\x14ReturnItemList.proto\"\xbe\
+    \x05\n\x14PVEBattleResultScRsp\x12\x19\n\x08event_id\x18\x0f\x20\x01(\rR\
+    \x07eventId\x12\x20\n\x0bKLODELECMCI\x18\x02\x20\x01(\rR\x0bKLODELECMCI\
+    \x12.\n\x13mismatch_turn_count\x18\x0e\x20\x01(\rR\x11mismatchTurnCount\
+    \x12/\n\nend_status\x18\x08\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatu\
+    s\x127\n\x12multiple_drop_data\x18\x01\x20\x01(\x0b2\t.ItemListR\x10mult\
+    ipleDropData\x120\n\x0eitem_list_unk2\x18\xe5\x0c\x20\x01(\x0b2\t.ItemLi\
+    stR\x0citemListUnk2\x12\x19\n\x08stage_id\x18\x0b\x20\x01(\rR\x07stageId\
+    \x12'\n\x0fcheck_identical\x18\t\x20\x01(\x08R\x0echeckIdentical\x12\x1f\
+    \n\x0bbin_version\x18\x06\x20\x01(\tR\nbinVersion\x12&\n\tdrop_data\x18\
+    \x03\x20\x01(\x0b2\t.ItemListR\x08dropData\x12\x1b\n\tbattle_id\x18\x05\
+    \x20\x01(\rR\x08battleId\x12\x20\n\x0bGGMPFNKOFKD\x18\n\x20\x01(\rR\x0bG\
+    GMPFNKOFKD\x12\x1f\n\x0bres_version\x18\x07\x20\x01(\tR\nresVersion\x12\
+    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x125\n\x0fpve_avatar_li\
+    st\x18\x04\x20\x03(\x0b2\r.BattleAvatarR\rpveAvatarList\x122\n\x0bKJCHGE\
+    HDLNO\x18\xf1\x0c\x20\x01(\x0b2\x0f.ReturnItemListR\x0bKJCHGEHDLNO\x12+\
+    \n\x0bEIGNJEEGDEP\x18\r\x20\x01(\x0b2\t.ItemListR\x0bEIGNJEEGDEPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

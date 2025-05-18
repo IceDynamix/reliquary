@@ -30,8 +30,8 @@ pub struct BOICEKFMCIC {
     // message fields
     // @@protoc_insertion_point(field:BOICEKFMCIC.BJCEKLKNLCD)
     pub BJCEKLKNLCD: u32,
-    // @@protoc_insertion_point(field:BOICEKFMCIC.CKMAHDGIBOH)
-    pub CKMAHDGIBOH: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
+    // @@protoc_insertion_point(field:BOICEKFMCIC.talent_info_list)
+    pub talent_info_list: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
     // special fields
     // @@protoc_insertion_point(special_field:BOICEKFMCIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl BOICEKFMCIC {
             |m: &mut BOICEKFMCIC| { &mut m.BJCEKLKNLCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
-            "CKMAHDGIBOH",
-            |m: &BOICEKFMCIC| { &m.CKMAHDGIBOH },
-            |m: &mut BOICEKFMCIC| { &mut m.CKMAHDGIBOH },
+            "talent_info_list",
+            |m: &BOICEKFMCIC| { &m.talent_info_list },
+            |m: &mut BOICEKFMCIC| { &mut m.talent_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BOICEKFMCIC>(
             "BOICEKFMCIC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BOICEKFMCIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.BJCEKLKNLCD = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKMAHDGIBOH)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for BOICEKFMCIC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BJCEKLKNLCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BJCEKLKNLCD);
+            my_size += ::protobuf::rt::uint32_size(7, self.BJCEKLKNLCD);
         }
-        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
+        if let Some(v) = self.talent_info_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BOICEKFMCIC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BJCEKLKNLCD != 0 {
-            os.write_uint32(8, self.BJCEKLKNLCD)?;
+            os.write_uint32(7, self.BJCEKLKNLCD)?;
         }
-        if let Some(v) = self.CKMAHDGIBOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.talent_info_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for BOICEKFMCIC {
 
     fn clear(&mut self) {
         self.BJCEKLKNLCD = 0;
-        self.CKMAHDGIBOH.clear();
+        self.talent_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BOICEKFMCIC {
         static instance: BOICEKFMCIC = BOICEKFMCIC {
             BJCEKLKNLCD: 0,
-            CKMAHDGIBOH: ::protobuf::MessageField::none(),
+            talent_info_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for BOICEKFMCIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BOICEKFMCIC.proto\x1a\x11IMJMGEENCEH.proto\"_\n\x0bBOICEKFMCIC\x12\
-    \x20\n\x0bBJCEKLKNLCD\x18\x08\x20\x01(\rR\x0bBJCEKLKNLCD\x12.\n\x0bCKMAH\
-    DGIBOH\x18\x07\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0bCKMAHDGIBOHb\x06proto3\
+    \n\x11BOICEKFMCIC.proto\x1a\x11IMJMGEENCEH.proto\"g\n\x0bBOICEKFMCIC\x12\
+    \x20\n\x0bBJCEKLKNLCD\x18\x07\x20\x01(\rR\x0bBJCEKLKNLCD\x126\n\x10talen\
+    t_info_list\x18\x0e\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0etalentInfoListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

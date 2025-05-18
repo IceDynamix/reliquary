@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournRenameArchiveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.KHNCEDGFPGL)
-    pub KHNCEDGFPGL: u32,
+    // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.max_times)
+    pub max_times: u32,
     // @@protoc_insertion_point(field:RogueTournRenameArchiveCsReq.name)
     pub name: ::std::string::String,
     // special fields
@@ -52,9 +52,9 @@ impl RogueTournRenameArchiveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHNCEDGFPGL",
-            |m: &RogueTournRenameArchiveCsReq| { &m.KHNCEDGFPGL },
-            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.KHNCEDGFPGL },
+            "max_times",
+            |m: &RogueTournRenameArchiveCsReq| { &m.max_times },
+            |m: &mut RogueTournRenameArchiveCsReq| { &mut m.max_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KHNCEDGFPGL = is.read_uint32()?;
+                80 => {
+                    self.max_times = is.read_uint32()?;
                 },
-                98 => {
+                18 => {
                     self.name = is.read_string()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHNCEDGFPGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KHNCEDGFPGL);
+        if self.max_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.max_times);
         }
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.name);
+            my_size += ::protobuf::rt::string_size(2, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHNCEDGFPGL != 0 {
-            os.write_uint32(15, self.KHNCEDGFPGL)?;
+        if self.max_times != 0 {
+            os.write_uint32(10, self.max_times)?;
         }
         if !self.name.is_empty() {
-            os.write_string(12, &self.name)?;
+            os.write_string(2, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for RogueTournRenameArchiveCsReq {
     }
 
     fn clear(&mut self) {
-        self.KHNCEDGFPGL = 0;
+        self.max_times = 0;
         self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournRenameArchiveCsReq {
         static instance: RogueTournRenameArchiveCsReq = RogueTournRenameArchiveCsReq {
-            KHNCEDGFPGL: 0,
+            max_times: 0,
             name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameArchiveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueTournRenameArchiveCsReq.proto\"T\n\x1cRogueTournRenameArchiveCs\
-    Req\x12\x20\n\x0bKHNCEDGFPGL\x18\x0f\x20\x01(\rR\x0bKHNCEDGFPGL\x12\x12\
-    \n\x04name\x18\x0c\x20\x01(\tR\x04nameb\x06proto3\
+    \n\"RogueTournRenameArchiveCsReq.proto\"O\n\x1cRogueTournRenameArchiveCs\
+    Req\x12\x1b\n\tmax_times\x18\n\x20\x01(\rR\x08maxTimes\x12\x12\n\x04name\
+    \x18\x02\x20\x01(\tR\x04nameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

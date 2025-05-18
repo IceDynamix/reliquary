@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LEAAHDPAIEG {
     // message fields
-    // @@protoc_insertion_point(field:LEAAHDPAIEG.HOIOKBKGFDN)
-    pub HOIOKBKGFDN: u32,
     // @@protoc_insertion_point(field:LEAAHDPAIEG.AGMAMBDEHLK)
     pub AGMAMBDEHLK: bool,
+    // @@protoc_insertion_point(field:LEAAHDPAIEG.HOIOKBKGFDN)
+    pub HOIOKBKGFDN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LEAAHDPAIEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LEAAHDPAIEG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOIOKBKGFDN",
-            |m: &LEAAHDPAIEG| { &m.HOIOKBKGFDN },
-            |m: &mut LEAAHDPAIEG| { &mut m.HOIOKBKGFDN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AGMAMBDEHLK",
             |m: &LEAAHDPAIEG| { &m.AGMAMBDEHLK },
             |m: &mut LEAAHDPAIEG| { &mut m.AGMAMBDEHLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HOIOKBKGFDN",
+            |m: &LEAAHDPAIEG| { &m.HOIOKBKGFDN },
+            |m: &mut LEAAHDPAIEG| { &mut m.HOIOKBKGFDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEAAHDPAIEG>(
             "LEAAHDPAIEG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LEAAHDPAIEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.HOIOKBKGFDN = is.read_uint32()?;
-                },
-                72 => {
+                112 => {
                     self.AGMAMBDEHLK = is.read_bool()?;
+                },
+                96 => {
+                    self.HOIOKBKGFDN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LEAAHDPAIEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HOIOKBKGFDN);
-        }
         if self.AGMAMBDEHLK != false {
             my_size += 1 + 1;
+        }
+        if self.HOIOKBKGFDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HOIOKBKGFDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LEAAHDPAIEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(7, self.HOIOKBKGFDN)?;
-        }
         if self.AGMAMBDEHLK != false {
-            os.write_bool(9, self.AGMAMBDEHLK)?;
+            os.write_bool(14, self.AGMAMBDEHLK)?;
+        }
+        if self.HOIOKBKGFDN != 0 {
+            os.write_uint32(12, self.HOIOKBKGFDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LEAAHDPAIEG {
     }
 
     fn clear(&mut self) {
-        self.HOIOKBKGFDN = 0;
         self.AGMAMBDEHLK = false;
+        self.HOIOKBKGFDN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LEAAHDPAIEG {
         static instance: LEAAHDPAIEG = LEAAHDPAIEG {
-            HOIOKBKGFDN: 0,
             AGMAMBDEHLK: false,
+            HOIOKBKGFDN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LEAAHDPAIEG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LEAAHDPAIEG.proto\"Q\n\x0bLEAAHDPAIEG\x12\x20\n\x0bHOIOKBKGFDN\x18\
-    \x07\x20\x01(\rR\x0bHOIOKBKGFDN\x12\x20\n\x0bAGMAMBDEHLK\x18\t\x20\x01(\
-    \x08R\x0bAGMAMBDEHLKb\x06proto3\
+    \n\x11LEAAHDPAIEG.proto\"Q\n\x0bLEAAHDPAIEG\x12\x20\n\x0bAGMAMBDEHLK\x18\
+    \x0e\x20\x01(\x08R\x0bAGMAMBDEHLK\x12\x20\n\x0bHOIOKBKGFDN\x18\x0c\x20\
+    \x01(\rR\x0bHOIOKBKGFDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

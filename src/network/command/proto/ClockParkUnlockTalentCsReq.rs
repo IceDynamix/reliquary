@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkUnlockTalentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkUnlockTalentCsReq.FAGNLGFJAIF)
-    pub FAGNLGFJAIF: u32,
+    // @@protoc_insertion_point(field:ClockParkUnlockTalentCsReq.talent_id)
+    pub talent_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkUnlockTalentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ClockParkUnlockTalentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAGNLGFJAIF",
-            |m: &ClockParkUnlockTalentCsReq| { &m.FAGNLGFJAIF },
-            |m: &mut ClockParkUnlockTalentCsReq| { &mut m.FAGNLGFJAIF },
+            "talent_id",
+            |m: &ClockParkUnlockTalentCsReq| { &m.talent_id },
+            |m: &mut ClockParkUnlockTalentCsReq| { &mut m.talent_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkUnlockTalentCsReq>(
             "ClockParkUnlockTalentCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ClockParkUnlockTalentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.FAGNLGFJAIF = is.read_uint32()?;
+                56 => {
+                    self.talent_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ClockParkUnlockTalentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FAGNLGFJAIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FAGNLGFJAIF);
+        if self.talent_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.talent_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ClockParkUnlockTalentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FAGNLGFJAIF != 0 {
-            os.write_uint32(9, self.FAGNLGFJAIF)?;
+        if self.talent_id != 0 {
+            os.write_uint32(7, self.talent_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ClockParkUnlockTalentCsReq {
     }
 
     fn clear(&mut self) {
-        self.FAGNLGFJAIF = 0;
+        self.talent_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkUnlockTalentCsReq {
         static instance: ClockParkUnlockTalentCsReq = ClockParkUnlockTalentCsReq {
-            FAGNLGFJAIF: 0,
+            talent_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkUnlockTalentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ClockParkUnlockTalentCsReq.proto\">\n\x1aClockParkUnlockTalentCsRe\
-    q\x12\x20\n\x0bFAGNLGFJAIF\x18\t\x20\x01(\rR\x0bFAGNLGFJAIFb\x06proto3\
+    \n\x20ClockParkUnlockTalentCsReq.proto\"9\n\x1aClockParkUnlockTalentCsRe\
+    q\x12\x1b\n\ttalent_id\x18\x07\x20\x01(\rR\x08talentIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

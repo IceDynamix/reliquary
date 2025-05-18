@@ -96,10 +96,10 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
                 120 => {
                     self.PILMKHCKMED = is.read_uint32()?;
                 },
-                64 => {
+                16 => {
                     self.IBGNLBOEBCG = is.read_uint32()?;
                 },
-                16 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 8 => {
@@ -121,10 +121,10 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
             my_size += ::protobuf::rt::uint32_size(15, self.PILMKHCKMED);
         }
         if self.IBGNLBOEBCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IBGNLBOEBCG);
+            my_size += ::protobuf::rt::uint32_size(2, self.IBGNLBOEBCG);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.PBALFIENEFO != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.PBALFIENEFO);
@@ -139,10 +139,10 @@ impl ::protobuf::Message for RogueTournGetCurRogueCocoonInfoScRsp {
             os.write_uint32(15, self.PILMKHCKMED)?;
         }
         if self.IBGNLBOEBCG != 0 {
-            os.write_uint32(8, self.IBGNLBOEBCG)?;
+            os.write_uint32(2, self.IBGNLBOEBCG)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.PBALFIENEFO != 0 {
             os.write_uint32(1, self.PBALFIENEFO)?;
@@ -203,8 +203,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetCurRogueCocoonInfoScRsp
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RogueTournGetCurRogueCocoonInfoScRsp.proto\"\xa6\x01\n$RogueTournGetC\
     urRogueCocoonInfoScRsp\x12\x20\n\x0bPILMKHCKMED\x18\x0f\x20\x01(\rR\x0bP\
-    ILMKHCKMED\x12\x20\n\x0bIBGNLBOEBCG\x18\x08\x20\x01(\rR\x0bIBGNLBOEBCG\
-    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bPBALFI\
+    ILMKHCKMED\x12\x20\n\x0bIBGNLBOEBCG\x18\x02\x20\x01(\rR\x0bIBGNLBOEBCG\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bPBALFI\
     ENEFO\x18\x01\x20\x01(\rR\x0bPBALFIENEFOb\x06proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateMoneyInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateMoneyInfoScNotify.AABCHFBKPEG)
-    pub AABCHFBKPEG: ::protobuf::MessageField<super::BCLLBMEEDKP::BCLLBMEEDKP>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateMoneyInfoScNotify.virtual_item_info)
+    pub virtual_item_info: ::protobuf::MessageField<super::RogueVirtualItem::RogueVirtualItem>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateMoneyInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl ChessRogueUpdateMoneyInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCLLBMEEDKP::BCLLBMEEDKP>(
-            "AABCHFBKPEG",
-            |m: &ChessRogueUpdateMoneyInfoScNotify| { &m.AABCHFBKPEG },
-            |m: &mut ChessRogueUpdateMoneyInfoScNotify| { &mut m.AABCHFBKPEG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItem::RogueVirtualItem>(
+            "virtual_item_info",
+            |m: &ChessRogueUpdateMoneyInfoScNotify| { &m.virtual_item_info },
+            |m: &mut ChessRogueUpdateMoneyInfoScNotify| { &mut m.virtual_item_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateMoneyInfoScNotify>(
             "ChessRogueUpdateMoneyInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AABCHFBKPEG)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AABCHFBKPEG.as_ref() {
+        if let Some(v) = self.virtual_item_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AABCHFBKPEG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.virtual_item_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.AABCHFBKPEG.clear();
+        self.virtual_item_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateMoneyInfoScNotify {
         static instance: ChessRogueUpdateMoneyInfoScNotify = ChessRogueUpdateMoneyInfoScNotify {
-            AABCHFBKPEG: ::protobuf::MessageField::none(),
+            virtual_item_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateMoneyInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'ChessRogueUpdateMoneyInfoScNotify.proto\x1a\x11BCLLBMEEDKP.proto\"S\n\
-    !ChessRogueUpdateMoneyInfoScNotify\x12.\n\x0bAABCHFBKPEG\x18\x08\x20\x01\
-    (\x0b2\x0c.BCLLBMEEDKPR\x0bAABCHFBKPEGb\x06proto3\
+    \n'ChessRogueUpdateMoneyInfoScNotify.proto\x1a\x16RogueVirtualItem.proto\
+    \"b\n!ChessRogueUpdateMoneyInfoScNotify\x12=\n\x11virtual_item_info\x18\
+    \x0f\x20\x01(\x0b2\x11.RogueVirtualItemR\x0fvirtualItemInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BCLLBMEEDKP::file_descriptor().clone());
+            deps.push(super::RogueVirtualItem::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueUpdateMoneyInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

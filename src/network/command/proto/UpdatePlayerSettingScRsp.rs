@@ -30,8 +30,8 @@ pub struct UpdatePlayerSettingScRsp {
     // message fields
     // @@protoc_insertion_point(field:UpdatePlayerSettingScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdatePlayerSettingScRsp.KLKPMLJKMJP)
-    pub KLKPMLJKMJP: ::protobuf::MessageField<super::ONMLPJKAGCG::ONMLPJKAGCG>,
+    // @@protoc_insertion_point(field:UpdatePlayerSettingScRsp.player_setting)
+    pub player_setting: ::protobuf::MessageField<super::UpdatePlayerSetting::UpdatePlayerSetting>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePlayerSettingScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl UpdatePlayerSettingScRsp {
             |m: &UpdatePlayerSettingScRsp| { &m.retcode },
             |m: &mut UpdatePlayerSettingScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONMLPJKAGCG::ONMLPJKAGCG>(
-            "KLKPMLJKMJP",
-            |m: &UpdatePlayerSettingScRsp| { &m.KLKPMLJKMJP },
-            |m: &mut UpdatePlayerSettingScRsp| { &mut m.KLKPMLJKMJP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::UpdatePlayerSetting::UpdatePlayerSetting>(
+            "player_setting",
+            |m: &UpdatePlayerSettingScRsp| { &m.player_setting },
+            |m: &mut UpdatePlayerSettingScRsp| { &mut m.player_setting },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayerSettingScRsp>(
             "UpdatePlayerSettingScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KLKPMLJKMJP)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if let Some(v) = self.KLKPMLJKMJP.as_ref() {
+        if let Some(v) = self.player_setting.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.KLKPMLJKMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.player_setting.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.KLKPMLJKMJP.clear();
+        self.player_setting.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePlayerSettingScRsp {
         static instance: UpdatePlayerSettingScRsp = UpdatePlayerSettingScRsp {
             retcode: 0,
-            KLKPMLJKMJP: ::protobuf::MessageField::none(),
+            player_setting: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdatePlayerSettingScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eUpdatePlayerSettingScRsp.proto\x1a\x11ONMLPJKAGCG.proto\"d\n\x18Up\
-    datePlayerSettingScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bKLKPMLJKMJP\x18\x06\x20\x01(\x0b2\x0c.ONMLPJKAGCGR\x0bKLKPM\
-    LJKMJPb\x06proto3\
+    \n\x1eUpdatePlayerSettingScRsp.proto\x1a\x19UpdatePlayerSetting.proto\"q\
+    \n\x18UpdatePlayerSettingScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\
+    \x07retcode\x12;\n\x0eplayer_setting\x18\n\x20\x01(\x0b2\x14.UpdatePlaye\
+    rSettingR\rplayerSettingb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ONMLPJKAGCG::file_descriptor().clone());
+            deps.push(super::UpdatePlayerSetting::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePlayerSettingScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

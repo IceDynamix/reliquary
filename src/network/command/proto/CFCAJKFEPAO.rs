@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFCAJKFEPAO {
     // message fields
+    // @@protoc_insertion_point(field:CFCAJKFEPAO.msg)
+    pub msg: ::std::string::String,
     // @@protoc_insertion_point(field:CFCAJKFEPAO.state)
     pub state: ::protobuf::EnumOrUnknown<super::OJIDJNDHDGA::OJIDJNDHDGA>,
     // @@protoc_insertion_point(field:CFCAJKFEPAO.BENANABPPJN)
     pub BENANABPPJN: ::std::string::String,
-    // @@protoc_insertion_point(field:CFCAJKFEPAO.msg)
-    pub msg: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:CFCAJKFEPAO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl CFCAJKFEPAO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "msg",
+            |m: &CFCAJKFEPAO| { &m.msg },
+            |m: &mut CFCAJKFEPAO| { &mut m.msg },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &CFCAJKFEPAO| { &m.state },
             |m: &mut CFCAJKFEPAO| { &mut m.state },
@@ -62,11 +67,6 @@ impl CFCAJKFEPAO {
             "BENANABPPJN",
             |m: &CFCAJKFEPAO| { &m.BENANABPPJN },
             |m: &mut CFCAJKFEPAO| { &mut m.BENANABPPJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg",
-            |m: &CFCAJKFEPAO| { &m.msg },
-            |m: &mut CFCAJKFEPAO| { &mut m.msg },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFCAJKFEPAO>(
             "CFCAJKFEPAO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.state = is.read_enum_or_unknown()?;
-                },
-                98 => {
-                    self.BENANABPPJN = is.read_string()?;
-                },
                 74 => {
                     self.msg = is.read_string()?;
+                },
+                80 => {
+                    self.state = is.read_enum_or_unknown()?;
+                },
+                50 => {
+                    self.BENANABPPJN = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            my_size += ::protobuf::rt::int32_size(4, self.state.value());
-        }
-        if !self.BENANABPPJN.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.BENANABPPJN);
-        }
         if !self.msg.is_empty() {
             my_size += ::protobuf::rt::string_size(9, &self.msg);
+        }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
+            my_size += ::protobuf::rt::int32_size(10, self.state.value());
+        }
+        if !self.BENANABPPJN.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.BENANABPPJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.state))?;
-        }
-        if !self.BENANABPPJN.is_empty() {
-            os.write_string(12, &self.BENANABPPJN)?;
-        }
         if !self.msg.is_empty() {
             os.write_string(9, &self.msg)?;
+        }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        }
+        if !self.BENANABPPJN.is_empty() {
+            os.write_string(6, &self.BENANABPPJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     }
 
     fn clear(&mut self) {
+        self.msg.clear();
         self.state = ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY);
         self.BENANABPPJN.clear();
-        self.msg.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFCAJKFEPAO {
         static instance: CFCAJKFEPAO = CFCAJKFEPAO {
+            msg: ::std::string::String::new(),
             state: ::protobuf::EnumOrUnknown::from_i32(0),
             BENANABPPJN: ::std::string::String::new(),
-            msg: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CFCAJKFEPAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFCAJKFEPAO.proto\x1a\x11OJIDJNDHDGA.proto\"e\n\x0bCFCAJKFEPAO\x12\
-    \"\n\x05state\x18\x04\x20\x01(\x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x20\n\
-    \x0bBENANABPPJN\x18\x0c\x20\x01(\tR\x0bBENANABPPJN\x12\x10\n\x03msg\x18\
-    \t\x20\x01(\tR\x03msgb\x06proto3\
+    \x10\n\x03msg\x18\t\x20\x01(\tR\x03msg\x12\"\n\x05state\x18\n\x20\x01(\
+    \x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x20\n\x0bBENANABPPJN\x18\x06\x20\x01\
+    (\tR\x0bBENANABPPJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

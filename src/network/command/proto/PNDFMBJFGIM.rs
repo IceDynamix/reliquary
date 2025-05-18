@@ -29,11 +29,11 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PNDFMBJFGIM {
     // message fields
     // @@protoc_insertion_point(field:PNDFMBJFGIM.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::PKIAKJMEAML::PKIAKJMEAML>,
+    pub avatar_list: ::std::vec::Vec<super::AetherAvatarInfo::AetherAvatarInfo>,
     // @@protoc_insertion_point(field:PNDFMBJFGIM.monster_wave_list)
-    pub monster_wave_list: ::std::vec::Vec<super::PJKOHMBFIKH::PJKOHMBFIKH>,
+    pub monster_wave_list: ::std::vec::Vec<super::BattleMonsterWave::BattleMonsterWave>,
     // @@protoc_insertion_point(field:PNDFMBJFGIM.buff_list)
-    pub buff_list: ::std::vec::Vec<super::FBHLNEALINM::FBHLNEALINM>,
+    pub buff_list: ::std::vec::Vec<super::BattleBuff::BattleBuff>,
     // special fields
     // @@protoc_insertion_point(special_field:PNDFMBJFGIM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -186,12 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for PNDFMBJFGIM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNDFMBJFGIM.proto\x1a\x11FBHLNEALINM.proto\x1a\x11PJKOHMBFIKH.prot\
-    o\x1a\x11PKIAKJMEAML.proto\"\xa1\x01\n\x0bPNDFMBJFGIM\x12-\n\x0bavatar_l\
-    ist\x18\x01\x20\x03(\x0b2\x0c.PKIAKJMEAMLR\navatarList\x128\n\x11monster\
-    _wave_list\x18\x02\x20\x03(\x0b2\x0c.PJKOHMBFIKHR\x0fmonsterWaveList\x12\
-    )\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0c.FBHLNEALINMR\x08buffListb\x06pr\
-    oto3\
+    \n\x11PNDFMBJFGIM.proto\x1a\x16AetherAvatarInfo.proto\x1a\x10BattleBuff.\
+    proto\x1a\x17BattleMonsterWave.proto\"\xab\x01\n\x0bPNDFMBJFGIM\x122\n\
+    \x0bavatar_list\x18\x01\x20\x03(\x0b2\x11.AetherAvatarInfoR\navatarList\
+    \x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWave\
+    R\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleB\
+    uffR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,9 +209,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::FBHLNEALINM::file_descriptor().clone());
-            deps.push(super::PJKOHMBFIKH::file_descriptor().clone());
-            deps.push(super::PKIAKJMEAML::file_descriptor().clone());
+            deps.push(super::AetherAvatarInfo::file_descriptor().clone());
+            deps.push(super::BattleBuff::file_descriptor().clone());
+            deps.push(super::BattleMonsterWave::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PNDFMBJFGIM::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

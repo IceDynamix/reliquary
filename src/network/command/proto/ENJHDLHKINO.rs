@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENJHDLHKINO {
     // message fields
-    // @@protoc_insertion_point(field:ENJHDLHKINO.KNDMEILHKEJ)
-    pub KNDMEILHKEJ: ::protobuf::MessageField<super::TrainPartyPendingAction::TrainPartyPendingAction>,
+    // @@protoc_insertion_point(field:ENJHDLHKINO.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::TrainPartyPendingAction::TrainPartyPendingAction>,
     // special fields
     // @@protoc_insertion_point(special_field:ENJHDLHKINO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ENJHDLHKINO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPendingAction::TrainPartyPendingAction>(
-            "KNDMEILHKEJ",
-            |m: &ENJHDLHKINO| { &m.KNDMEILHKEJ },
-            |m: &mut ENJHDLHKINO| { &mut m.KNDMEILHKEJ },
+            "pending_action",
+            |m: &ENJHDLHKINO| { &m.pending_action },
+            |m: &mut ENJHDLHKINO| { &mut m.pending_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENJHDLHKINO>(
             "ENJHDLHKINO",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ENJHDLHKINO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNDMEILHKEJ)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ENJHDLHKINO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
+        if let Some(v) = self.pending_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ENJHDLHKINO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ENJHDLHKINO {
     }
 
     fn clear(&mut self) {
-        self.KNDMEILHKEJ.clear();
+        self.pending_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENJHDLHKINO {
         static instance: ENJHDLHKINO = ENJHDLHKINO {
-            KNDMEILHKEJ: ::protobuf::MessageField::none(),
+            pending_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ENJHDLHKINO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ENJHDLHKINO.proto\x1a\x1dTrainPartyPendingAction.proto\"I\n\x0bENJ\
-    HDLHKINO\x12:\n\x0bKNDMEILHKEJ\x18\x01\x20\x01(\x0b2\x18.TrainPartyPendi\
-    ngActionR\x0bKNDMEILHKEJb\x06proto3\
+    \n\x11ENJHDLHKINO.proto\x1a\x1dTrainPartyPendingAction.proto\"N\n\x0bENJ\
+    HDLHKINO\x12?\n\x0epending_action\x18\x03\x20\x01(\x0b2\x18.TrainPartyPe\
+    ndingActionR\rpendingActionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

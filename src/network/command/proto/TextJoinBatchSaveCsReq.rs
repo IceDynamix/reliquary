@@ -72,7 +72,7 @@ impl ::protobuf::Message for TextJoinBatchSaveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.text_join_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TextJoinBatchSaveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.text_join_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinBatchSaveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTextJoinBatchSaveCsReq.proto\x1a\x12TextJoinInfo.proto\"M\n\x16Tex\
-    tJoinBatchSaveCsReq\x123\n\x0etext_join_list\x18\n\x20\x03(\x0b2\r.TextJ\
-    oinInfoR\x0ctextJoinListb\x06proto3\
+    tJoinBatchSaveCsReq\x123\n\x0etext_join_list\x18\x01\x20\x03(\x0b2\r.Tex\
+    tJoinInfoR\x0ctextJoinListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

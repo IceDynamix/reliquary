@@ -29,13 +29,13 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MIAIDAILDKM {
     // message fields
     // @@protoc_insertion_point(field:MIAIDAILDKM.EEFLGHCOBML)
-    pub EEFLGHCOBML: ::std::vec::Vec<super::HBLDPBBKHPB::HBLDPBBKHPB>,
+    pub EEFLGHCOBML: ::std::vec::Vec<super::ClientTurnSnapshot::ClientTurnSnapshot>,
     // @@protoc_insertion_point(field:MIAIDAILDKM.KGBHEHHFMPI)
     pub KGBHEHHFMPI: ::std::string::String,
-    // @@protoc_insertion_point(field:MIAIDAILDKM.CPCLJGPDNAN)
-    pub CPCLJGPDNAN: ::std::string::String,
+    // @@protoc_insertion_point(field:MIAIDAILDKM.debug_extra_info)
+    pub debug_extra_info: ::std::string::String,
     // @@protoc_insertion_point(field:MIAIDAILDKM.HLAGIMENBJG)
-    pub HLAGIMENBJG: ::std::vec::Vec<super::FEFDAHEOOKP::FEFDAHEOOKP>,
+    pub HLAGIMENBJG: ::std::vec::Vec<super::BattleReplayStringHash::BattleReplayStringHash>,
     // @@protoc_insertion_point(field:MIAIDAILDKM.plane_id)
     pub plane_id: u32,
     // @@protoc_insertion_point(field:MIAIDAILDKM.floor_id)
@@ -46,6 +46,8 @@ pub struct MIAIDAILDKM {
     pub BNJMMLKOFCP: u32,
     // @@protoc_insertion_point(field:MIAIDAILDKM.EDHBGDEICNC)
     pub EDHBGDEICNC: ::protobuf::MessageField<super::MBMCFOLIOLO::MBMCFOLIOLO>,
+    // @@protoc_insertion_point(field:MIAIDAILDKM.BBNAEFBAPLG)
+    pub BBNAEFBAPLG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MIAIDAILDKM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,7 +65,7 @@ impl MIAIDAILDKM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EEFLGHCOBML",
@@ -76,9 +78,9 @@ impl MIAIDAILDKM {
             |m: &mut MIAIDAILDKM| { &mut m.KGBHEHHFMPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPCLJGPDNAN",
-            |m: &MIAIDAILDKM| { &m.CPCLJGPDNAN },
-            |m: &mut MIAIDAILDKM| { &mut m.CPCLJGPDNAN },
+            "debug_extra_info",
+            |m: &MIAIDAILDKM| { &m.debug_extra_info },
+            |m: &mut MIAIDAILDKM| { &mut m.debug_extra_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HLAGIMENBJG",
@@ -110,6 +112,11 @@ impl MIAIDAILDKM {
             |m: &MIAIDAILDKM| { &m.EDHBGDEICNC },
             |m: &mut MIAIDAILDKM| { &mut m.EDHBGDEICNC },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BBNAEFBAPLG",
+            |m: &MIAIDAILDKM| { &m.BBNAEFBAPLG },
+            |m: &mut MIAIDAILDKM| { &mut m.BBNAEFBAPLG },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIAIDAILDKM>(
             "MIAIDAILDKM",
             fields,
@@ -135,7 +142,7 @@ impl ::protobuf::Message for MIAIDAILDKM {
                     self.KGBHEHHFMPI = is.read_string()?;
                 },
                 26 => {
-                    self.CPCLJGPDNAN = is.read_string()?;
+                    self.debug_extra_info = is.read_string()?;
                 },
                 34 => {
                     self.HLAGIMENBJG.push(is.read_message()?);
@@ -154,6 +161,9 @@ impl ::protobuf::Message for MIAIDAILDKM {
                 },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDHBGDEICNC)?;
+                },
+                80 => {
+                    self.BBNAEFBAPLG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -174,8 +184,8 @@ impl ::protobuf::Message for MIAIDAILDKM {
         if !self.KGBHEHHFMPI.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.KGBHEHHFMPI);
         }
-        if !self.CPCLJGPDNAN.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.CPCLJGPDNAN);
+        if !self.debug_extra_info.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.debug_extra_info);
         }
         for value in &self.HLAGIMENBJG {
             let len = value.compute_size();
@@ -197,6 +207,9 @@ impl ::protobuf::Message for MIAIDAILDKM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.BBNAEFBAPLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BBNAEFBAPLG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -209,8 +222,8 @@ impl ::protobuf::Message for MIAIDAILDKM {
         if !self.KGBHEHHFMPI.is_empty() {
             os.write_string(2, &self.KGBHEHHFMPI)?;
         }
-        if !self.CPCLJGPDNAN.is_empty() {
-            os.write_string(3, &self.CPCLJGPDNAN)?;
+        if !self.debug_extra_info.is_empty() {
+            os.write_string(3, &self.debug_extra_info)?;
         }
         for v in &self.HLAGIMENBJG {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
@@ -229,6 +242,9 @@ impl ::protobuf::Message for MIAIDAILDKM {
         }
         if let Some(v) = self.EDHBGDEICNC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.BBNAEFBAPLG != 0 {
+            os.write_uint32(10, self.BBNAEFBAPLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -249,13 +265,14 @@ impl ::protobuf::Message for MIAIDAILDKM {
     fn clear(&mut self) {
         self.EEFLGHCOBML.clear();
         self.KGBHEHHFMPI.clear();
-        self.CPCLJGPDNAN.clear();
+        self.debug_extra_info.clear();
         self.HLAGIMENBJG.clear();
         self.plane_id = 0;
         self.floor_id = 0;
         self.EBHLFAEGLCD = 0;
         self.BNJMMLKOFCP = 0;
         self.EDHBGDEICNC.clear();
+        self.BBNAEFBAPLG = 0;
         self.special_fields.clear();
     }
 
@@ -263,13 +280,14 @@ impl ::protobuf::Message for MIAIDAILDKM {
         static instance: MIAIDAILDKM = MIAIDAILDKM {
             EEFLGHCOBML: ::std::vec::Vec::new(),
             KGBHEHHFMPI: ::std::string::String::new(),
-            CPCLJGPDNAN: ::std::string::String::new(),
+            debug_extra_info: ::std::string::String::new(),
             HLAGIMENBJG: ::std::vec::Vec::new(),
             plane_id: 0,
             floor_id: 0,
             EBHLFAEGLCD: 0,
             BNJMMLKOFCP: 0,
             EDHBGDEICNC: ::protobuf::MessageField::none(),
+            BBNAEFBAPLG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -294,16 +312,18 @@ impl ::protobuf::reflect::ProtobufValue for MIAIDAILDKM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MIAIDAILDKM.proto\x1a\x11FEFDAHEOOKP.proto\x1a\x11HBLDPBBKHPB.prot\
-    o\x1a\x11MBMCFOLIOLO.proto\"\xdb\x02\n\x0bMIAIDAILDKM\x12.\n\x0bEEFLGHCO\
-    BML\x18\x01\x20\x03(\x0b2\x0c.HBLDPBBKHPBR\x0bEEFLGHCOBML\x12\x20\n\x0bK\
-    GBHEHHFMPI\x18\x02\x20\x01(\tR\x0bKGBHEHHFMPI\x12\x20\n\x0bCPCLJGPDNAN\
-    \x18\x03\x20\x01(\tR\x0bCPCLJGPDNAN\x12.\n\x0bHLAGIMENBJG\x18\x04\x20\
-    \x03(\x0b2\x0c.FEFDAHEOOKPR\x0bHLAGIMENBJG\x12\x19\n\x08plane_id\x18\x05\
-    \x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\x06\x20\x01(\rR\x07flo\
-    orId\x12\x20\n\x0bEBHLFAEGLCD\x18\x07\x20\x01(\rR\x0bEBHLFAEGLCD\x12\x20\
-    \n\x0bBNJMMLKOFCP\x18\x08\x20\x01(\rR\x0bBNJMMLKOFCP\x12.\n\x0bEDHBGDEIC\
-    NC\x18\t\x20\x01(\x0b2\x0c.MBMCFOLIOLOR\x0bEDHBGDEICNCb\x06proto3\
+    \n\x11MIAIDAILDKM.proto\x1a\x1cBattleReplayStringHash.proto\x1a\x18Clien\
+    tTurnSnapshot.proto\x1a\x11MBMCFOLIOLO.proto\"\x97\x03\n\x0bMIAIDAILDKM\
+    \x125\n\x0bEEFLGHCOBML\x18\x01\x20\x03(\x0b2\x13.ClientTurnSnapshotR\x0b\
+    EEFLGHCOBML\x12\x20\n\x0bKGBHEHHFMPI\x18\x02\x20\x01(\tR\x0bKGBHEHHFMPI\
+    \x12(\n\x10debug_extra_info\x18\x03\x20\x01(\tR\x0edebugExtraInfo\x129\n\
+    \x0bHLAGIMENBJG\x18\x04\x20\x03(\x0b2\x17.BattleReplayStringHashR\x0bHLA\
+    GIMENBJG\x12\x19\n\x08plane_id\x18\x05\x20\x01(\rR\x07planeId\x12\x19\n\
+    \x08floor_id\x18\x06\x20\x01(\rR\x07floorId\x12\x20\n\x0bEBHLFAEGLCD\x18\
+    \x07\x20\x01(\rR\x0bEBHLFAEGLCD\x12\x20\n\x0bBNJMMLKOFCP\x18\x08\x20\x01\
+    (\rR\x0bBNJMMLKOFCP\x12.\n\x0bEDHBGDEICNC\x18\t\x20\x01(\x0b2\x0c.MBMCFO\
+    LIOLOR\x0bEDHBGDEICNC\x12\x20\n\x0bBBNAEFBAPLG\x18\n\x20\x01(\rR\x0bBBNA\
+    EFBAPLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -321,8 +341,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::FEFDAHEOOKP::file_descriptor().clone());
-            deps.push(super::HBLDPBBKHPB::file_descriptor().clone());
+            deps.push(super::BattleReplayStringHash::file_descriptor().clone());
+            deps.push(super::ClientTurnSnapshot::file_descriptor().clone());
             deps.push(super::MBMCFOLIOLO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MIAIDAILDKM::generated_message_descriptor_data());

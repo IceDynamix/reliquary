@@ -31,7 +31,7 @@ pub struct AddBlacklistScRsp {
     // @@protoc_insertion_point(field:AddBlacklistScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:AddBlacklistScRsp.black_info)
-    pub black_info: ::protobuf::MessageField<super::SimpleInfo::SimpleInfo>,
+    pub black_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:AddBlacklistScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl AddBlacklistScRsp {
             |m: &AddBlacklistScRsp| { &m.retcode },
             |m: &mut AddBlacklistScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SimpleInfo::SimpleInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
             "black_info",
             |m: &AddBlacklistScRsp| { &m.black_info },
             |m: &mut AddBlacklistScRsp| { &mut m.black_info },
@@ -79,7 +79,7 @@ impl ::protobuf::Message for AddBlacklistScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 50 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AddBlacklistScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.black_info.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for AddBlacklistScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.black_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for AddBlacklistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17AddBlacklistScRsp.proto\x1a\x10SimpleInfo.proto\"Y\n\x11AddBlackli\
-    stScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12*\n\nblack_\
-    info\x18\x06\x20\x01(\x0b2\x0b.SimpleInfoR\tblackInfob\x06proto3\
+    \n\x17AddBlacklistScRsp.proto\x1a\x16PlayerSimpleInfo.proto\"_\n\x11AddB\
+    lacklistScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x120\n\
+    \nblack_info\x18\x06\x20\x01(\x0b2\x11.PlayerSimpleInfoR\tblackInfob\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SimpleInfo::file_descriptor().clone());
+            deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AddBlacklistScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

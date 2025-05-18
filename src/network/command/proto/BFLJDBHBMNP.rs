@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFLJDBHBMNP {
     // message fields
-    // @@protoc_insertion_point(field:BFLJDBHBMNP.EEPPKMPAJOH)
-    pub EEPPKMPAJOH: ::protobuf::MessageField<super::OLFPCKAGKAK::OLFPCKAGKAK>,
+    // @@protoc_insertion_point(field:BFLJDBHBMNP.game_miracle_info)
+    pub game_miracle_info: ::protobuf::MessageField<super::OLFPCKAGKAK::OLFPCKAGKAK>,
     // @@protoc_insertion_point(field:BFLJDBHBMNP.JACIGHHGCGB)
     pub JACIGHHGCGB: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl BFLJDBHBMNP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLFPCKAGKAK::OLFPCKAGKAK>(
-            "EEPPKMPAJOH",
-            |m: &BFLJDBHBMNP| { &m.EEPPKMPAJOH },
-            |m: &mut BFLJDBHBMNP| { &mut m.EEPPKMPAJOH },
+            "game_miracle_info",
+            |m: &BFLJDBHBMNP| { &m.game_miracle_info },
+            |m: &mut BFLJDBHBMNP| { &mut m.game_miracle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JACIGHHGCGB",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for BFLJDBHBMNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEPPKMPAJOH)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
                 },
-                10 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.JACIGHHGCGB)?;
                 },
-                8 => {
+                80 => {
                     self.JACIGHHGCGB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -100,21 +100,21 @@ impl ::protobuf::Message for BFLJDBHBMNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
+        if let Some(v) = self.game_miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JACIGHHGCGB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.JACIGHHGCGB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        os.write_repeated_packed_uint32(1, &self.JACIGHHGCGB)?;
+        os.write_repeated_packed_uint32(10, &self.JACIGHHGCGB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for BFLJDBHBMNP {
     }
 
     fn clear(&mut self) {
-        self.EEPPKMPAJOH.clear();
+        self.game_miracle_info.clear();
         self.JACIGHHGCGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFLJDBHBMNP {
         static instance: BFLJDBHBMNP = BFLJDBHBMNP {
-            EEPPKMPAJOH: ::protobuf::MessageField::none(),
+            game_miracle_info: ::protobuf::MessageField::none(),
             JACIGHHGCGB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for BFLJDBHBMNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BFLJDBHBMNP.proto\x1a\x11OLFPCKAGKAK.proto\"_\n\x0bBFLJDBHBMNP\x12\
-    .\n\x0bEEPPKMPAJOH\x18\x06\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\x0bEEPPKMPAJOH\
-    \x12\x20\n\x0bJACIGHHGCGB\x18\x01\x20\x03(\rR\x0bJACIGHHGCGBb\x06proto3\
+    \n\x11BFLJDBHBMNP.proto\x1a\x11OLFPCKAGKAK.proto\"i\n\x0bBFLJDBHBMNP\x12\
+    8\n\x11game_miracle_info\x18\x08\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\x0fgameM\
+    iracleInfo\x12\x20\n\x0bJACIGHHGCGB\x18\n\x20\x03(\rR\x0bJACIGHHGCGBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

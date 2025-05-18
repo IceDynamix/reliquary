@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchAetherDivideLineUpSlotCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.KNLBEMFIHNP)
-    pub KNLBEMFIHNP: u32,
+    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.lineup_index)
+    pub lineup_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchAetherDivideLineUpSlotCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwitchAetherDivideLineUpSlotCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNLBEMFIHNP",
-            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.KNLBEMFIHNP },
-            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.KNLBEMFIHNP },
+            "lineup_index",
+            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.lineup_index },
+            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.lineup_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchAetherDivideLineUpSlotCsReq>(
             "SwitchAetherDivideLineUpSlotCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.KNLBEMFIHNP = is.read_uint32()?;
+                56 => {
+                    self.lineup_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KNLBEMFIHNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KNLBEMFIHNP);
+        if self.lineup_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.lineup_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KNLBEMFIHNP != 0 {
-            os.write_uint32(2, self.KNLBEMFIHNP)?;
+        if self.lineup_index != 0 {
+            os.write_uint32(7, self.lineup_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn clear(&mut self) {
-        self.KNLBEMFIHNP = 0;
+        self.lineup_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchAetherDivideLineUpSlotCsReq {
         static instance: SwitchAetherDivideLineUpSlotCsReq = SwitchAetherDivideLineUpSlotCsReq {
-            KNLBEMFIHNP: 0,
+            lineup_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchAetherDivideLineUpSlotCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'SwitchAetherDivideLineUpSlotCsReq.proto\"E\n!SwitchAetherDivideLineUp\
-    SlotCsReq\x12\x20\n\x0bKNLBEMFIHNP\x18\x02\x20\x01(\rR\x0bKNLBEMFIHNPb\
-    \x06proto3\
+    \n'SwitchAetherDivideLineUpSlotCsReq.proto\"F\n!SwitchAetherDivideLineUp\
+    SlotCsReq\x12!\n\x0clineup_index\x18\x07\x20\x01(\rR\x0blineupIndexb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateAeonModifierValueScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.ELAPPCMELOA)
-    pub ELAPPCMELOA: u32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.aeon_id)
+    pub aeon_id: u32,
     // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.ICJABPGMACJ)
     pub ICJABPGMACJ: i32,
     // special fields
@@ -52,9 +52,9 @@ impl ChessRogueUpdateAeonModifierValueScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELAPPCMELOA",
-            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.ELAPPCMELOA },
-            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.ELAPPCMELOA },
+            "aeon_id",
+            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.aeon_id },
+            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.aeon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ICJABPGMACJ",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.ELAPPCMELOA = is.read_uint32()?;
+                104 => {
+                    self.aeon_id = is.read_uint32()?;
                 },
-                40 => {
+                48 => {
                     self.ICJABPGMACJ = is.read_int32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ELAPPCMELOA);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.aeon_id);
         }
         if self.ICJABPGMACJ != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.ICJABPGMACJ);
+            my_size += ::protobuf::rt::int32_size(6, self.ICJABPGMACJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELAPPCMELOA != 0 {
-            os.write_uint32(7, self.ELAPPCMELOA)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(13, self.aeon_id)?;
         }
         if self.ICJABPGMACJ != 0 {
-            os.write_int32(5, self.ICJABPGMACJ)?;
+            os.write_int32(6, self.ICJABPGMACJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn clear(&mut self) {
-        self.ELAPPCMELOA = 0;
+        self.aeon_id = 0;
         self.ICJABPGMACJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateAeonModifierValueScNotify {
         static instance: ChessRogueUpdateAeonModifierValueScNotify = ChessRogueUpdateAeonModifierValueScNotify {
-            ELAPPCMELOA: 0,
+            aeon_id: 0,
             ICJABPGMACJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAeonModifierValueScN
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n/ChessRogueUpdateAeonModifierValueScNotify.proto\"o\n)ChessRogueUpdate\
-    AeonModifierValueScNotify\x12\x20\n\x0bELAPPCMELOA\x18\x07\x20\x01(\rR\
-    \x0bELAPPCMELOA\x12\x20\n\x0bICJABPGMACJ\x18\x05\x20\x01(\x05R\x0bICJABP\
-    GMACJb\x06proto3\
+    \n/ChessRogueUpdateAeonModifierValueScNotify.proto\"f\n)ChessRogueUpdate\
+    AeonModifierValueScNotify\x12\x17\n\x07aeon_id\x18\r\x20\x01(\rR\x06aeon\
+    Id\x12\x20\n\x0bICJABPGMACJ\x18\x06\x20\x01(\x05R\x0bICJABPGMACJb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

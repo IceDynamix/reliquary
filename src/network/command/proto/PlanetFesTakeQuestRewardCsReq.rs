@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesTakeQuestRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardCsReq.JLFABHHNHCM)
-    pub JLFABHHNHCM: u32,
+    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardCsReq.quest_id)
+    pub quest_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesTakeQuestRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesTakeQuestRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLFABHHNHCM",
-            |m: &PlanetFesTakeQuestRewardCsReq| { &m.JLFABHHNHCM },
-            |m: &mut PlanetFesTakeQuestRewardCsReq| { &mut m.JLFABHHNHCM },
+            "quest_id",
+            |m: &PlanetFesTakeQuestRewardCsReq| { &m.quest_id },
+            |m: &mut PlanetFesTakeQuestRewardCsReq| { &mut m.quest_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesTakeQuestRewardCsReq>(
             "PlanetFesTakeQuestRewardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.JLFABHHNHCM = is.read_uint32()?;
+                72 => {
+                    self.quest_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JLFABHHNHCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JLFABHHNHCM);
+        if self.quest_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.quest_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JLFABHHNHCM != 0 {
-            os.write_uint32(13, self.JLFABHHNHCM)?;
+        if self.quest_id != 0 {
+            os.write_uint32(9, self.quest_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.JLFABHHNHCM = 0;
+        self.quest_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesTakeQuestRewardCsReq {
         static instance: PlanetFesTakeQuestRewardCsReq = PlanetFesTakeQuestRewardCsReq {
-            JLFABHHNHCM: 0,
+            quest_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeQuestRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#PlanetFesTakeQuestRewardCsReq.proto\"A\n\x1dPlanetFesTakeQuestRewardC\
-    sReq\x12\x20\n\x0bJLFABHHNHCM\x18\r\x20\x01(\rR\x0bJLFABHHNHCMb\x06proto\
-    3\
+    \n#PlanetFesTakeQuestRewardCsReq.proto\":\n\x1dPlanetFesTakeQuestRewardC\
+    sReq\x12\x19\n\x08quest_id\x18\t\x20\x01(\rR\x07questIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

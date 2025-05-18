@@ -61,6 +61,16 @@ pub enum ProductGiftType {
     PRODUCT_GIFT_SINGLE_6 = 15,
     // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_DAILY_LOGIN_30)
     PRODUCT_GIFT_DAILY_LOGIN_30 = 16,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_APPLE_GIFT_CARD)
+    PRODUCT_GIFT_APPLE_GIFT_CARD = 17,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1)
+    PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1 = 18,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10)
+    PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10 = 19,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1)
+    PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1 = 20,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10)
+    PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10 = 21,
 }
 
 impl ::protobuf::Enum for ProductGiftType {
@@ -89,6 +99,11 @@ impl ::protobuf::Enum for ProductGiftType {
             14 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
             15 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
             16 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
+            17 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD),
+            18 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1),
+            19 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
+            20 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
+            21 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
             _ => ::std::option::Option::None
         }
     }
@@ -112,6 +127,11 @@ impl ::protobuf::Enum for ProductGiftType {
             "PRODUCT_GIFT_PSN_PLUS" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_PSN_PLUS),
             "PRODUCT_GIFT_SINGLE_6" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_SINGLE_6),
             "PRODUCT_GIFT_DAILY_LOGIN_30" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30),
+            "PRODUCT_GIFT_APPLE_GIFT_CARD" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD),
+            "PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1),
+            "PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
+            "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
+            "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
             _ => ::std::option::Option::None
         }
     }
@@ -134,6 +154,11 @@ impl ::protobuf::Enum for ProductGiftType {
         ProductGiftType::PRODUCT_GIFT_PSN_PLUS,
         ProductGiftType::PRODUCT_GIFT_SINGLE_6,
         ProductGiftType::PRODUCT_GIFT_DAILY_LOGIN_30,
+        ProductGiftType::PRODUCT_GIFT_APPLE_GIFT_CARD,
+        ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1,
+        ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10,
+        ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1,
+        ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10,
     ];
 }
 
@@ -162,7 +187,7 @@ impl ProductGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ProductGiftType.proto*\x9a\x04\n\x0fProductGiftType\x12\x15\n\x11P\
+    \n\x15ProductGiftType.proto*\xe6\x05\n\x0fProductGiftType\x12\x15\n\x11P\
     RODUCT_GIFT_NONE\x10\0\x12\x15\n\x11PRODUCT_GIFT_COIN\x10\x01\x12\x1b\n\
     \x17PRODUCT_GIFT_MONTH_CARD\x10\x02\x12\x16\n\x12PRODUCT_GIFT_BP_68\x10\
     \x03\x12\x17\n\x13PRODUCT_GIFT_BP_128\x10\x04\x12!\n\x1dPRODUCT_GIFT_BP6\
@@ -173,7 +198,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     _PS_POINT_CARD_030\x10\x0b\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_050\x10\
     \x0c\x12\"\n\x1ePRODUCT_GIFT_PS_POINT_CARD_100\x10\r\x12\x19\n\x15PRODUC\
     T_GIFT_PSN_PLUS\x10\x0e\x12\x19\n\x15PRODUCT_GIFT_SINGLE_6\x10\x0f\x12\
-    \x1f\n\x1bPRODUCT_GIFT_DAILY_LOGIN_30\x10\x10b\x06proto3\
+    \x1f\n\x1bPRODUCT_GIFT_DAILY_LOGIN_30\x10\x10\x12\x20\n\x1cPRODUCT_GIFT_\
+    APPLE_GIFT_CARD\x10\x11\x12&\n\"PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1\x10\
+    \x12\x12'\n#PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10\x10\x13\x12*\n&PRODUCT_G\
+    IFT_FTC_NORMAL_GACHA_TICKET_1\x10\x14\x12+\n'PRODUCT_GIFT_FTC_NORMAL_GAC\
+    HA_TICKET_10\x10\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

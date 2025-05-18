@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMOJDEIFDAM {
     // message fields
-    // @@protoc_insertion_point(field:OMOJDEIFDAM.source)
-    pub source: ::protobuf::EnumOrUnknown<super::PKHJBPMIBBA::PKHJBPMIBBA>,
     // @@protoc_insertion_point(field:OMOJDEIFDAM.PBHMGCHKJGO)
     pub PBHMGCHKJGO: ::protobuf::MessageField<super::CGHKIDBJHFH::CGHKIDBJHFH>,
+    // @@protoc_insertion_point(field:OMOJDEIFDAM.source)
+    pub source: ::protobuf::EnumOrUnknown<super::PKHJBPMIBBA::PKHJBPMIBBA>,
     // special fields
     // @@protoc_insertion_point(special_field:OMOJDEIFDAM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OMOJDEIFDAM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &OMOJDEIFDAM| { &m.source },
-            |m: &mut OMOJDEIFDAM| { &mut m.source },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGHKIDBJHFH::CGHKIDBJHFH>(
             "PBHMGCHKJGO",
             |m: &OMOJDEIFDAM| { &m.PBHMGCHKJGO },
             |m: &mut OMOJDEIFDAM| { &mut m.PBHMGCHKJGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &OMOJDEIFDAM| { &m.source },
+            |m: &mut OMOJDEIFDAM| { &mut m.source },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMOJDEIFDAM>(
             "OMOJDEIFDAM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.source = is.read_enum_or_unknown()?;
-                },
-                114 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBHMGCHKJGO)?;
+                },
+                120 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.source.value());
-        }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.source))?;
-        }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     }
 
     fn clear(&mut self) {
-        self.source = ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE);
         self.PBHMGCHKJGO.clear();
+        self.source = ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMOJDEIFDAM {
         static instance: OMOJDEIFDAM = OMOJDEIFDAM {
-            source: ::protobuf::EnumOrUnknown::from_i32(0),
             PBHMGCHKJGO: ::protobuf::MessageField::none(),
+            source: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for OMOJDEIFDAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMOJDEIFDAM.proto\x1a\x11CGHKIDBJHFH.proto\x1a\x11PKHJBPMIBBA.prot\
-    o\"c\n\x0bOMOJDEIFDAM\x12$\n\x06source\x18\x01\x20\x01(\x0e2\x0c.PKHJBPM\
-    IBBAR\x06source\x12.\n\x0bPBHMGCHKJGO\x18\x0e\x20\x01(\x0b2\x0c.CGHKIDBJ\
-    HFHR\x0bPBHMGCHKJGOb\x06proto3\
+    o\"c\n\x0bOMOJDEIFDAM\x12.\n\x0bPBHMGCHKJGO\x18\x01\x20\x01(\x0b2\x0c.CG\
+    HKIDBJHFHR\x0bPBHMGCHKJGO\x12$\n\x06source\x18\x0f\x20\x01(\x0e2\x0c.PKH\
+    JBPMIBBAR\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

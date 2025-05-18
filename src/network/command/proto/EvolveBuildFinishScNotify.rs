@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.score)
-    pub score: u32,
+    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.coin)
+    pub coin: u32,
+    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.cur_period_type)
+    pub cur_period_type: u32,
     // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.exp)
     pub exp: u32,
     // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.battle_result_type)
     pub battle_result_type: ::protobuf::EnumOrUnknown<super::DLHCMCNIHII::DLHCMCNIHII>,
-    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.wave)
-    pub wave: u32,
-    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.cur_period_type)
-    pub cur_period_type: u32,
     // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.is_lose)
     pub is_lose: bool,
     // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.coin)
-    pub coin: u32,
+    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.wave)
+    pub wave: u32,
+    // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.score)
+    pub score: u32,
     // @@protoc_insertion_point(field:EvolveBuildFinishScNotify.level_info)
     pub level_info: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // special fields
@@ -66,9 +66,14 @@ impl EvolveBuildFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &EvolveBuildFinishScNotify| { &m.score },
-            |m: &mut EvolveBuildFinishScNotify| { &mut m.score },
+            "coin",
+            |m: &EvolveBuildFinishScNotify| { &m.coin },
+            |m: &mut EvolveBuildFinishScNotify| { &mut m.coin },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_period_type",
+            |m: &EvolveBuildFinishScNotify| { &m.cur_period_type },
+            |m: &mut EvolveBuildFinishScNotify| { &mut m.cur_period_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -81,16 +86,6 @@ impl EvolveBuildFinishScNotify {
             |m: &mut EvolveBuildFinishScNotify| { &mut m.battle_result_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &EvolveBuildFinishScNotify| { &m.wave },
-            |m: &mut EvolveBuildFinishScNotify| { &mut m.wave },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_period_type",
-            |m: &EvolveBuildFinishScNotify| { &m.cur_period_type },
-            |m: &mut EvolveBuildFinishScNotify| { &mut m.cur_period_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_lose",
             |m: &EvolveBuildFinishScNotify| { &m.is_lose },
             |m: &mut EvolveBuildFinishScNotify| { &mut m.is_lose },
@@ -101,9 +96,14 @@ impl EvolveBuildFinishScNotify {
             |m: &mut EvolveBuildFinishScNotify| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "coin",
-            |m: &EvolveBuildFinishScNotify| { &m.coin },
-            |m: &mut EvolveBuildFinishScNotify| { &mut m.coin },
+            "wave",
+            |m: &EvolveBuildFinishScNotify| { &m.wave },
+            |m: &mut EvolveBuildFinishScNotify| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score",
+            |m: &EvolveBuildFinishScNotify| { &m.score },
+            |m: &mut EvolveBuildFinishScNotify| { &mut m.score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
             "level_info",
@@ -128,31 +128,31 @@ impl ::protobuf::Message for EvolveBuildFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.score = is.read_uint32()?;
+                48 => {
+                    self.coin = is.read_uint32()?;
+                },
+                120 => {
+                    self.cur_period_type = is.read_uint32()?;
                 },
                 40 => {
                     self.exp = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.battle_result_type = is.read_enum_or_unknown()?;
-                },
-                72 => {
-                    self.wave = is.read_uint32()?;
-                },
-                64 => {
-                    self.cur_period_type = is.read_uint32()?;
                 },
                 56 => {
                     self.is_lose = is.read_bool()?;
                 },
-                96 => {
+                72 => {
                     self.level_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.coin = is.read_uint32()?;
+                32 => {
+                    self.wave = is.read_uint32()?;
                 },
-                122 => {
+                16 => {
+                    self.score = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
                 },
                 tag => {
@@ -167,29 +167,29 @@ impl ::protobuf::Message for EvolveBuildFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.score);
+        if self.coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.coin);
+        }
+        if self.cur_period_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cur_period_type);
         }
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.exp);
         }
         if self.battle_result_type != ::protobuf::EnumOrUnknown::new(super::DLHCMCNIHII::DLHCMCNIHII::EVOLVE_BATTLE_RESULT_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.battle_result_type.value());
-        }
-        if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.wave);
-        }
-        if self.cur_period_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_period_type);
+            my_size += ::protobuf::rt::int32_size(3, self.battle_result_type.value());
         }
         if self.is_lose != false {
             my_size += 1 + 1;
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.level_id);
         }
-        if self.coin != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.coin);
+        if self.wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.wave);
+        }
+        if self.score != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score);
         }
         if let Some(v) = self.level_info.as_ref() {
             let len = v.compute_size();
@@ -201,32 +201,32 @@ impl ::protobuf::Message for EvolveBuildFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score != 0 {
-            os.write_uint32(11, self.score)?;
+        if self.coin != 0 {
+            os.write_uint32(6, self.coin)?;
+        }
+        if self.cur_period_type != 0 {
+            os.write_uint32(15, self.cur_period_type)?;
         }
         if self.exp != 0 {
             os.write_uint32(5, self.exp)?;
         }
         if self.battle_result_type != ::protobuf::EnumOrUnknown::new(super::DLHCMCNIHII::DLHCMCNIHII::EVOLVE_BATTLE_RESULT_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.battle_result_type))?;
-        }
-        if self.wave != 0 {
-            os.write_uint32(9, self.wave)?;
-        }
-        if self.cur_period_type != 0 {
-            os.write_uint32(8, self.cur_period_type)?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.battle_result_type))?;
         }
         if self.is_lose != false {
             os.write_bool(7, self.is_lose)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(12, self.level_id)?;
+            os.write_uint32(9, self.level_id)?;
         }
-        if self.coin != 0 {
-            os.write_uint32(1, self.coin)?;
+        if self.wave != 0 {
+            os.write_uint32(4, self.wave)?;
+        }
+        if self.score != 0 {
+            os.write_uint32(2, self.score)?;
         }
         if let Some(v) = self.level_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,28 +245,28 @@ impl ::protobuf::Message for EvolveBuildFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.score = 0;
+        self.coin = 0;
+        self.cur_period_type = 0;
         self.exp = 0;
         self.battle_result_type = ::protobuf::EnumOrUnknown::new(super::DLHCMCNIHII::DLHCMCNIHII::EVOLVE_BATTLE_RESULT_NONE);
-        self.wave = 0;
-        self.cur_period_type = 0;
         self.is_lose = false;
         self.level_id = 0;
-        self.coin = 0;
+        self.wave = 0;
+        self.score = 0;
         self.level_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildFinishScNotify {
         static instance: EvolveBuildFinishScNotify = EvolveBuildFinishScNotify {
-            score: 0,
+            coin: 0,
+            cur_period_type: 0,
             exp: 0,
             battle_result_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            wave: 0,
-            cur_period_type: 0,
             is_lose: false,
             level_id: 0,
-            coin: 0,
+            wave: 0,
+            score: 0,
             level_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -294,14 +294,14 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildFinishScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fEvolveBuildFinishScNotify.proto\x1a\x11DLHCMCNIHII.proto\x1a\x1aEv\
     olveBuildLevelInfo.proto\"\xb9\x02\n\x19EvolveBuildFinishScNotify\x12\
-    \x14\n\x05score\x18\x0b\x20\x01(\rR\x05score\x12\x10\n\x03exp\x18\x05\
-    \x20\x01(\rR\x03exp\x12:\n\x12battle_result_type\x18\x02\x20\x01(\x0e2\
-    \x0c.DLHCMCNIHIIR\x10battleResultType\x12\x12\n\x04wave\x18\t\x20\x01(\r\
-    R\x04wave\x12&\n\x0fcur_period_type\x18\x08\x20\x01(\rR\rcurPeriodType\
-    \x12\x17\n\x07is_lose\x18\x07\x20\x01(\x08R\x06isLose\x12\x19\n\x08level\
-    _id\x18\x0c\x20\x01(\rR\x07levelId\x12\x12\n\x04coin\x18\x01\x20\x01(\rR\
-    \x04coin\x124\n\nlevel_info\x18\x0f\x20\x01(\x0b2\x15.EvolveBuildLevelIn\
-    foR\tlevelInfob\x06proto3\
+    \x12\n\x04coin\x18\x06\x20\x01(\rR\x04coin\x12&\n\x0fcur_period_type\x18\
+    \x0f\x20\x01(\rR\rcurPeriodType\x12\x10\n\x03exp\x18\x05\x20\x01(\rR\x03\
+    exp\x12:\n\x12battle_result_type\x18\x03\x20\x01(\x0e2\x0c.DLHCMCNIHIIR\
+    \x10battleResultType\x12\x17\n\x07is_lose\x18\x07\x20\x01(\x08R\x06isLos\
+    e\x12\x19\n\x08level_id\x18\t\x20\x01(\rR\x07levelId\x12\x12\n\x04wave\
+    \x18\x04\x20\x01(\rR\x04wave\x12\x14\n\x05score\x18\x02\x20\x01(\rR\x05s\
+    core\x124\n\nlevel_info\x18\x0e\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\
+    \tlevelInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

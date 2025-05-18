@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRechargeGiftRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRechargeGiftRewardCsReq.DNAJFMPCMLL)
-    pub DNAJFMPCMLL: u32,
+    // @@protoc_insertion_point(field:TakeRechargeGiftRewardCsReq.gift_type)
+    pub gift_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRechargeGiftRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TakeRechargeGiftRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAJFMPCMLL",
-            |m: &TakeRechargeGiftRewardCsReq| { &m.DNAJFMPCMLL },
-            |m: &mut TakeRechargeGiftRewardCsReq| { &mut m.DNAJFMPCMLL },
+            "gift_type",
+            |m: &TakeRechargeGiftRewardCsReq| { &m.gift_type },
+            |m: &mut TakeRechargeGiftRewardCsReq| { &mut m.gift_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRechargeGiftRewardCsReq>(
             "TakeRechargeGiftRewardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TakeRechargeGiftRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DNAJFMPCMLL = is.read_uint32()?;
+                112 => {
+                    self.gift_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TakeRechargeGiftRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNAJFMPCMLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DNAJFMPCMLL);
+        if self.gift_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.gift_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TakeRechargeGiftRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNAJFMPCMLL != 0 {
-            os.write_uint32(9, self.DNAJFMPCMLL)?;
+        if self.gift_type != 0 {
+            os.write_uint32(14, self.gift_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TakeRechargeGiftRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNAJFMPCMLL = 0;
+        self.gift_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRechargeGiftRewardCsReq {
         static instance: TakeRechargeGiftRewardCsReq = TakeRechargeGiftRewardCsReq {
-            DNAJFMPCMLL: 0,
+            gift_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRechargeGiftRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!TakeRechargeGiftRewardCsReq.proto\"?\n\x1bTakeRechargeGiftRewardCsReq\
-    \x12\x20\n\x0bDNAJFMPCMLL\x18\t\x20\x01(\rR\x0bDNAJFMPCMLLb\x06proto3\
+    \n!TakeRechargeGiftRewardCsReq.proto\":\n\x1bTakeRechargeGiftRewardCsReq\
+    \x12\x1b\n\tgift_type\x18\x0e\x20\x01(\rR\x08giftTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

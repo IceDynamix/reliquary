@@ -82,7 +82,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                104 => {
                     self.current_head_icon_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.current_head_icon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.current_head_icon_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.current_head_icon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SetHeadIconScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if self.current_head_icon_id != 0 {
-            os.write_uint32(6, self.current_head_icon_id)?;
+            os.write_uint32(13, self.current_head_icon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetHeadIconScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetHeadIconScRsp.proto\"]\n\x10SetHeadIconScRsp\x12\x18\n\x07retco\
-    de\x18\x05\x20\x01(\rR\x07retcode\x12/\n\x14current_head_icon_id\x18\x06\
+    de\x18\x05\x20\x01(\rR\x07retcode\x12/\n\x14current_head_icon_id\x18\r\
     \x20\x01(\rR\x11currentHeadIconIdb\x06proto3\
 ";
 

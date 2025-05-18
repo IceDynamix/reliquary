@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionStatusBySceneInfo {
     // message fields
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.NDNONHFIMFI)
-    pub NDNONHFIMFI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.ICBIKGMGHIK)
-    pub ICBIKGMGHIK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.disabled_main_mission_id_list)
+    pub disabled_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.unfinished_main_mission_id_list)
+    pub unfinished_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.finished_main_mission_id_list)
+    pub finished_main_mission_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionStatusBySceneInfo.BIGEHKDPGPN)
-    pub BIGEHKDPGPN: ::std::vec::Vec<super::FEAHPJPKGOA::FEAHPJPKGOA>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.finished_mission_id)
-    pub finished_mission_id: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.DGKJILLCFLA)
-    pub DGKJILLCFLA: ::std::vec::Vec<super::Mission::Mission>,
+    pub BIGEHKDPGPN: ::std::vec::Vec<super::MainMissionCustomValue::MainMissionCustomValue>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.sub_mission_status_list)
+    pub sub_mission_status_list: ::std::vec::Vec<super::Mission::Mission>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionStatusBySceneInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl MissionStatusBySceneInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NDNONHFIMFI",
-            |m: &MissionStatusBySceneInfo| { &m.NDNONHFIMFI },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.NDNONHFIMFI },
+            "disabled_main_mission_id_list",
+            |m: &MissionStatusBySceneInfo| { &m.disabled_main_mission_id_list },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.disabled_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ICBIKGMGHIK",
-            |m: &MissionStatusBySceneInfo| { &m.ICBIKGMGHIK },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.ICBIKGMGHIK },
+            "unfinished_main_mission_id_list",
+            |m: &MissionStatusBySceneInfo| { &m.unfinished_main_mission_id_list },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.unfinished_main_mission_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_main_mission_id_list",
+            |m: &MissionStatusBySceneInfo| { &m.finished_main_mission_id_list },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.finished_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BIGEHKDPGPN",
@@ -73,14 +78,9 @@ impl MissionStatusBySceneInfo {
             |m: &mut MissionStatusBySceneInfo| { &mut m.BIGEHKDPGPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_mission_id",
-            |m: &MissionStatusBySceneInfo| { &m.finished_mission_id },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.finished_mission_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGKJILLCFLA",
-            |m: &MissionStatusBySceneInfo| { &m.DGKJILLCFLA },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.DGKJILLCFLA },
+            "sub_mission_status_list",
+            |m: &MissionStatusBySceneInfo| { &m.sub_mission_status_list },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.sub_mission_status_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionStatusBySceneInfo>(
             "MissionStatusBySceneInfo",
@@ -100,29 +100,29 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NDNONHFIMFI)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.disabled_main_mission_id_list)?;
                 },
-                72 => {
-                    self.NDNONHFIMFI.push(is.read_uint32()?);
+                64 => {
+                    self.disabled_main_mission_id_list.push(is.read_uint32()?);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ICBIKGMGHIK)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.unfinished_main_mission_id_list)?;
                 },
-                40 => {
-                    self.ICBIKGMGHIK.push(is.read_uint32()?);
+                88 => {
+                    self.unfinished_main_mission_id_list.push(is.read_uint32()?);
                 },
-                106 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_main_mission_id_list)?;
+                },
+                48 => {
+                    self.finished_main_mission_id_list.push(is.read_uint32()?);
+                },
+                114 => {
                     self.BIGEHKDPGPN.push(is.read_message()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_mission_id)?;
-                },
-                96 => {
-                    self.finished_mission_id.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.DGKJILLCFLA.push(is.read_message()?);
+                106 => {
+                    self.sub_mission_status_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -136,14 +136,14 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NDNONHFIMFI);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.ICBIKGMGHIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.disabled_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.unfinished_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.finished_main_mission_id_list);
         for value in &self.BIGEHKDPGPN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.finished_mission_id);
-        for value in &self.DGKJILLCFLA {
+        for value in &self.sub_mission_status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -153,14 +153,14 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.NDNONHFIMFI)?;
-        os.write_repeated_packed_uint32(5, &self.ICBIKGMGHIK)?;
+        os.write_repeated_packed_uint32(8, &self.disabled_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(11, &self.unfinished_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(6, &self.finished_main_mission_id_list)?;
         for v in &self.BIGEHKDPGPN {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        os.write_repeated_packed_uint32(12, &self.finished_mission_id)?;
-        for v in &self.DGKJILLCFLA {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.sub_mission_status_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     }
 
     fn clear(&mut self) {
-        self.NDNONHFIMFI.clear();
-        self.ICBIKGMGHIK.clear();
+        self.disabled_main_mission_id_list.clear();
+        self.unfinished_main_mission_id_list.clear();
+        self.finished_main_mission_id_list.clear();
         self.BIGEHKDPGPN.clear();
-        self.finished_mission_id.clear();
-        self.DGKJILLCFLA.clear();
+        self.sub_mission_status_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionStatusBySceneInfo {
         static instance: MissionStatusBySceneInfo = MissionStatusBySceneInfo {
-            NDNONHFIMFI: ::std::vec::Vec::new(),
-            ICBIKGMGHIK: ::std::vec::Vec::new(),
+            disabled_main_mission_id_list: ::std::vec::Vec::new(),
+            unfinished_main_mission_id_list: ::std::vec::Vec::new(),
+            finished_main_mission_id_list: ::std::vec::Vec::new(),
             BIGEHKDPGPN: ::std::vec::Vec::new(),
-            finished_mission_id: ::std::vec::Vec::new(),
-            DGKJILLCFLA: ::std::vec::Vec::new(),
+            sub_mission_status_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,13 +218,15 @@ impl ::protobuf::reflect::ProtobufValue for MissionStatusBySceneInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMissionStatusBySceneInfo.proto\x1a\x11FEAHPJPKGOA.proto\x1a\rMissi\
-    on.proto\"\xea\x01\n\x18MissionStatusBySceneInfo\x12\x20\n\x0bNDNONHFIMF\
-    I\x18\t\x20\x03(\rR\x0bNDNONHFIMFI\x12\x20\n\x0bICBIKGMGHIK\x18\x05\x20\
-    \x03(\rR\x0bICBIKGMGHIK\x12.\n\x0bBIGEHKDPGPN\x18\r\x20\x03(\x0b2\x0c.FE\
-    AHPJPKGOAR\x0bBIGEHKDPGPN\x12.\n\x13finished_mission_id\x18\x0c\x20\x03(\
-    \rR\x11finishedMissionId\x12*\n\x0bDGKJILLCFLA\x18\x08\x20\x03(\x0b2\x08\
-    .MissionR\x0bDGKJILLCFLAb\x06proto3\
+    \n\x1eMissionStatusBySceneInfo.proto\x1a\x1cMainMissionCustomValue.proto\
+    \x1a\rMission.proto\"\xe0\x02\n\x18MissionStatusBySceneInfo\x12@\n\x1ddi\
+    sabled_main_mission_id_list\x18\x08\x20\x03(\rR\x19disabledMainMissionId\
+    List\x12D\n\x1funfinished_main_mission_id_list\x18\x0b\x20\x03(\rR\x1bun\
+    finishedMainMissionIdList\x12@\n\x1dfinished_main_mission_id_list\x18\
+    \x06\x20\x03(\rR\x19finishedMainMissionIdList\x129\n\x0bBIGEHKDPGPN\x18\
+    \x0e\x20\x03(\x0b2\x17.MainMissionCustomValueR\x0bBIGEHKDPGPN\x12?\n\x17\
+    sub_mission_status_list\x18\r\x20\x03(\x0b2\x08.MissionR\x14subMissionSt\
+    atusListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +244,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FEAHPJPKGOA::file_descriptor().clone());
+            deps.push(super::MainMissionCustomValue::file_descriptor().clone());
             deps.push(super::Mission::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MissionStatusBySceneInfo::generated_message_descriptor_data());

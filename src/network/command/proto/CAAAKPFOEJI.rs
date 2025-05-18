@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CAAAKPFOEJI {
     // message fields
+    // @@protoc_insertion_point(field:CAAAKPFOEJI.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:CAAAKPFOEJI.AHINPCKGKJG)
     pub AHINPCKGKJG: ::protobuf::MessageField<super::JPFJGFOPKHB::JPFJGFOPKHB>,
-    // @@protoc_insertion_point(field:CAAAKPFOEJI.stage_score)
-    pub stage_score: u32,
     // @@protoc_insertion_point(field:CAAAKPFOEJI.JGBAINFDBAN)
     pub JGBAINFDBAN: u32,
-    // @@protoc_insertion_point(field:CAAAKPFOEJI.module_id)
-    pub module_id: u32,
+    // @@protoc_insertion_point(field:CAAAKPFOEJI.max_score)
+    pub max_score: u32,
     // @@protoc_insertion_point(field:CAAAKPFOEJI.stage_id)
     pub stage_id: u32,
     // special fields
@@ -57,15 +57,15 @@ impl CAAAKPFOEJI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &CAAAKPFOEJI| { &m.panel_id },
+            |m: &mut CAAAKPFOEJI| { &mut m.panel_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JPFJGFOPKHB::JPFJGFOPKHB>(
             "AHINPCKGKJG",
             |m: &CAAAKPFOEJI| { &m.AHINPCKGKJG },
             |m: &mut CAAAKPFOEJI| { &mut m.AHINPCKGKJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_score",
-            |m: &CAAAKPFOEJI| { &m.stage_score },
-            |m: &mut CAAAKPFOEJI| { &mut m.stage_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGBAINFDBAN",
@@ -73,9 +73,9 @@ impl CAAAKPFOEJI {
             |m: &mut CAAAKPFOEJI| { &mut m.JGBAINFDBAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "module_id",
-            |m: &CAAAKPFOEJI| { &m.module_id },
-            |m: &mut CAAAKPFOEJI| { &mut m.module_id },
+            "max_score",
+            |m: &CAAAKPFOEJI| { &m.max_score },
+            |m: &mut CAAAKPFOEJI| { &mut m.max_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for CAAAKPFOEJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                32 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AHINPCKGKJG)?;
                 },
-                88 => {
-                    self.stage_score = is.read_uint32()?;
-                },
-                112 => {
+                80 => {
                     self.JGBAINFDBAN = is.read_uint32()?;
                 },
-                32 => {
-                    self.module_id = is.read_uint32()?;
+                48 => {
+                    self.max_score = is.read_uint32()?;
                 },
-                96 => {
+                16 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for CAAAKPFOEJI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.panel_id);
+        }
         if let Some(v) = self.AHINPCKGKJG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.stage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.stage_score);
-        }
         if self.JGBAINFDBAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JGBAINFDBAN);
+            my_size += ::protobuf::rt::uint32_size(10, self.JGBAINFDBAN);
         }
-        if self.module_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.module_id);
+        if self.max_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.max_score);
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for CAAAKPFOEJI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AHINPCKGKJG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.panel_id != 0 {
+            os.write_uint32(4, self.panel_id)?;
         }
-        if self.stage_score != 0 {
-            os.write_uint32(11, self.stage_score)?;
+        if let Some(v) = self.AHINPCKGKJG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.JGBAINFDBAN != 0 {
-            os.write_uint32(14, self.JGBAINFDBAN)?;
+            os.write_uint32(10, self.JGBAINFDBAN)?;
         }
-        if self.module_id != 0 {
-            os.write_uint32(4, self.module_id)?;
+        if self.max_score != 0 {
+            os.write_uint32(6, self.max_score)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(12, self.stage_id)?;
+            os.write_uint32(2, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for CAAAKPFOEJI {
     }
 
     fn clear(&mut self) {
+        self.panel_id = 0;
         self.AHINPCKGKJG.clear();
-        self.stage_score = 0;
         self.JGBAINFDBAN = 0;
-        self.module_id = 0;
+        self.max_score = 0;
         self.stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CAAAKPFOEJI {
         static instance: CAAAKPFOEJI = CAAAKPFOEJI {
+            panel_id: 0,
             AHINPCKGKJG: ::protobuf::MessageField::none(),
-            stage_score: 0,
             JGBAINFDBAN: 0,
-            module_id: 0,
+            max_score: 0,
             stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for CAAAKPFOEJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CAAAKPFOEJI.proto\x1a\x11JPFJGFOPKHB.proto\"\xb8\x01\n\x0bCAAAKPFO\
-    EJI\x12.\n\x0bAHINPCKGKJG\x18\x07\x20\x01(\x0b2\x0c.JPFJGFOPKHBR\x0bAHIN\
-    PCKGKJG\x12\x1f\n\x0bstage_score\x18\x0b\x20\x01(\rR\nstageScore\x12\x20\
-    \n\x0bJGBAINFDBAN\x18\x0e\x20\x01(\rR\x0bJGBAINFDBAN\x12\x1b\n\tmodule_i\
-    d\x18\x04\x20\x01(\rR\x08moduleId\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\
-    \rR\x07stageIdb\x06proto3\
+    \n\x11CAAAKPFOEJI.proto\x1a\x11JPFJGFOPKHB.proto\"\xb2\x01\n\x0bCAAAKPFO\
+    EJI\x12\x19\n\x08panel_id\x18\x04\x20\x01(\rR\x07panelId\x12.\n\x0bAHINP\
+    CKGKJG\x18\t\x20\x01(\x0b2\x0c.JPFJGFOPKHBR\x0bAHINPCKGKJG\x12\x20\n\x0b\
+    JGBAINFDBAN\x18\n\x20\x01(\rR\x0bJGBAINFDBAN\x12\x1b\n\tmax_score\x18\
+    \x06\x20\x01(\rR\x08maxScore\x12\x19\n\x08stage_id\x18\x02\x20\x01(\rR\
+    \x07stageIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

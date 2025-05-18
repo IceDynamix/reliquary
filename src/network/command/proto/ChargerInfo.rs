@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChargerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.group_id = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.GLHAGJGAEHE = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChargerInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
         }
         if self.GLHAGJGAEHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GLHAGJGAEHE);
+            my_size += ::protobuf::rt::uint32_size(15, self.GLHAGJGAEHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChargerInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(2, self.group_id)?;
         }
         if self.GLHAGJGAEHE != 0 {
-            os.write_uint32(12, self.GLHAGJGAEHE)?;
+            os.write_uint32(15, self.GLHAGJGAEHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ChargerInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ChargerInfo.proto\"J\n\x0bChargerInfo\x12\x19\n\x08group_id\x18\
-    \x01\x20\x01(\rR\x07groupId\x12\x20\n\x0bGLHAGJGAEHE\x18\x0c\x20\x01(\rR\
+    \x02\x20\x01(\rR\x07groupId\x12\x20\n\x0bGLHAGJGAEHE\x18\x0f\x20\x01(\rR\
     \x0bGLHAGJGAEHEb\x06proto3\
 ";
 

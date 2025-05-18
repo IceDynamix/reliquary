@@ -30,10 +30,10 @@ pub struct ResetMapRotationRegionScRsp {
     // message fields
     // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.client_pos_version)
-    pub client_pos_version: u32,
     // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionScRsp.client_pos_version)
+    pub client_pos_version: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ResetMapRotationRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ResetMapRotationRegionScRsp {
             |m: &ResetMapRotationRegionScRsp| { &m.retcode },
             |m: &mut ResetMapRotationRegionScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &ResetMapRotationRegionScRsp| { &m.client_pos_version },
-            |m: &mut ResetMapRotationRegionScRsp| { &mut m.client_pos_version },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &ResetMapRotationRegionScRsp| { &m.motion },
             |m: &mut ResetMapRotationRegionScRsp| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_pos_version",
+            |m: &ResetMapRotationRegionScRsp| { &m.client_pos_version },
+            |m: &mut ResetMapRotationRegionScRsp| { &mut m.client_pos_version },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ResetMapRotationRegionScRsp>(
             "ResetMapRotationRegionScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
-                    self.client_pos_version = is.read_uint32()?;
-                },
-                122 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                32 => {
+                    self.client_pos_version = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.client_pos_version);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.client_pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.client_pos_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if self.client_pos_version != 0 {
-            os.write_uint32(1, self.client_pos_version)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.client_pos_version != 0 {
+            os.write_uint32(4, self.client_pos_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ResetMapRotationRegionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.client_pos_version = 0;
         self.motion.clear();
+        self.client_pos_version = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetMapRotationRegionScRsp {
         static instance: ResetMapRotationRegionScRsp = ResetMapRotationRegionScRsp {
             retcode: 0,
-            client_pos_version: 0,
             motion: ::protobuf::MessageField::none(),
+            client_pos_version: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ResetMapRotationRegionScRsp.proto\x1a\x10MotionInfo.proto\"\x8a\x01\n\
-    \x1bResetMapRotationRegionScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
-    \x07retcode\x12,\n\x12client_pos_version\x18\x01\x20\x01(\rR\x10clientPo\
-    sVersion\x12#\n\x06motion\x18\x0f\x20\x01(\x0b2\x0b.MotionInfoR\x06motio\
+    \x1bResetMapRotationRegionScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
+    \x07retcode\x12#\n\x06motion\x18\x08\x20\x01(\x0b2\x0b.MotionInfoR\x06mo\
+    tion\x12,\n\x12client_pos_version\x18\x04\x20\x01(\rR\x10clientPosVersio\
     nb\x06proto3\
 ";
 

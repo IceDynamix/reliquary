@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KCHJHCLJOCK {
     // message fields
-    // @@protoc_insertion_point(field:KCHJHCLJOCK.CLFGFABOIOP)
-    pub CLFGFABOIOP: ::protobuf::EnumOrUnknown<super::HGKKPPLJBOI::HGKKPPLJBOI>,
-    // @@protoc_insertion_point(field:KCHJHCLJOCK.HJBPKCFKHLI)
-    pub HJBPKCFKHLI: ::std::vec::Vec<super::NHBDDINFKOH::NHBDDINFKOH>,
     // @@protoc_insertion_point(field:KCHJHCLJOCK.DIPHGGHFMCP)
     pub DIPHGGHFMCP: u32,
     // @@protoc_insertion_point(field:KCHJHCLJOCK.CPODEJOFPDD)
     pub CPODEJOFPDD: u32,
     // @@protoc_insertion_point(field:KCHJHCLJOCK.EMBKICMEFCO)
     pub EMBKICMEFCO: ::protobuf::EnumOrUnknown<super::DCJAOPDINOI::DCJAOPDINOI>,
+    // @@protoc_insertion_point(field:KCHJHCLJOCK.HJBPKCFKHLI)
+    pub HJBPKCFKHLI: ::std::vec::Vec<super::NHBDDINFKOH::NHBDDINFKOH>,
+    // @@protoc_insertion_point(field:KCHJHCLJOCK.CLFGFABOIOP)
+    pub CLFGFABOIOP: ::protobuf::EnumOrUnknown<super::HGKKPPLJBOI::HGKKPPLJBOI>,
     // special fields
     // @@protoc_insertion_point(special_field:KCHJHCLJOCK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl KCHJHCLJOCK {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLFGFABOIOP",
-            |m: &KCHJHCLJOCK| { &m.CLFGFABOIOP },
-            |m: &mut KCHJHCLJOCK| { &mut m.CLFGFABOIOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HJBPKCFKHLI",
-            |m: &KCHJHCLJOCK| { &m.HJBPKCFKHLI },
-            |m: &mut KCHJHCLJOCK| { &mut m.HJBPKCFKHLI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DIPHGGHFMCP",
             |m: &KCHJHCLJOCK| { &m.DIPHGGHFMCP },
             |m: &mut KCHJHCLJOCK| { &mut m.DIPHGGHFMCP },
@@ -81,6 +71,16 @@ impl KCHJHCLJOCK {
             "EMBKICMEFCO",
             |m: &KCHJHCLJOCK| { &m.EMBKICMEFCO },
             |m: &mut KCHJHCLJOCK| { &mut m.EMBKICMEFCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HJBPKCFKHLI",
+            |m: &KCHJHCLJOCK| { &m.HJBPKCFKHLI },
+            |m: &mut KCHJHCLJOCK| { &mut m.HJBPKCFKHLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLFGFABOIOP",
+            |m: &KCHJHCLJOCK| { &m.CLFGFABOIOP },
+            |m: &mut KCHJHCLJOCK| { &mut m.CLFGFABOIOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KCHJHCLJOCK>(
             "KCHJHCLJOCK",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.CLFGFABOIOP = is.read_enum_or_unknown()?;
+                8 => {
+                    self.DIPHGGHFMCP = is.read_uint32()?;
+                },
+                80 => {
+                    self.CPODEJOFPDD = is.read_uint32()?;
+                },
+                56 => {
+                    self.EMBKICMEFCO = is.read_enum_or_unknown()?;
                 },
                 66 => {
                     self.HJBPKCFKHLI.push(is.read_message()?);
                 },
-                112 => {
-                    self.DIPHGGHFMCP = is.read_uint32()?;
-                },
-                56 => {
-                    self.CPODEJOFPDD = is.read_uint32()?;
-                },
-                104 => {
-                    self.EMBKICMEFCO = is.read_enum_or_unknown()?;
+                32 => {
+                    self.CLFGFABOIOP = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.CLFGFABOIOP.value());
+        if self.DIPHGGHFMCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DIPHGGHFMCP);
+        }
+        if self.CPODEJOFPDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CPODEJOFPDD);
+        }
+        if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.EMBKICMEFCO.value());
         }
         for value in &self.HJBPKCFKHLI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DIPHGGHFMCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DIPHGGHFMCP);
-        }
-        if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CPODEJOFPDD);
-        }
-        if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.EMBKICMEFCO.value());
+        if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.CLFGFABOIOP.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.CLFGFABOIOP))?;
+        if self.DIPHGGHFMCP != 0 {
+            os.write_uint32(1, self.DIPHGGHFMCP)?;
+        }
+        if self.CPODEJOFPDD != 0 {
+            os.write_uint32(10, self.CPODEJOFPDD)?;
+        }
+        if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.EMBKICMEFCO))?;
         }
         for v in &self.HJBPKCFKHLI {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.DIPHGGHFMCP != 0 {
-            os.write_uint32(14, self.DIPHGGHFMCP)?;
-        }
-        if self.CPODEJOFPDD != 0 {
-            os.write_uint32(7, self.CPODEJOFPDD)?;
-        }
-        if self.EMBKICMEFCO != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.EMBKICMEFCO))?;
+        if self.CLFGFABOIOP != ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.CLFGFABOIOP))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for KCHJHCLJOCK {
     }
 
     fn clear(&mut self) {
-        self.CLFGFABOIOP = ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE);
-        self.HJBPKCFKHLI.clear();
         self.DIPHGGHFMCP = 0;
         self.CPODEJOFPDD = 0;
         self.EMBKICMEFCO = ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE);
+        self.HJBPKCFKHLI.clear();
+        self.CLFGFABOIOP = ::protobuf::EnumOrUnknown::new(super::HGKKPPLJBOI::HGKKPPLJBOI::PAGE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KCHJHCLJOCK {
         static instance: KCHJHCLJOCK = KCHJHCLJOCK {
-            CLFGFABOIOP: ::protobuf::EnumOrUnknown::from_i32(0),
-            HJBPKCFKHLI: ::std::vec::Vec::new(),
             DIPHGGHFMCP: 0,
             CPODEJOFPDD: 0,
             EMBKICMEFCO: ::protobuf::EnumOrUnknown::from_i32(0),
+            HJBPKCFKHLI: ::std::vec::Vec::new(),
+            CLFGFABOIOP: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for KCHJHCLJOCK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KCHJHCLJOCK.proto\x1a\x11DCJAOPDINOI.proto\x1a\x11HGKKPPLJBOI.prot\
-    o\x1a\x11NHBDDINFKOH.proto\"\xe1\x01\n\x0bKCHJHCLJOCK\x12.\n\x0bCLFGFABO\
-    IOP\x18\x0f\x20\x01(\x0e2\x0c.HGKKPPLJBOIR\x0bCLFGFABOIOP\x12.\n\x0bHJBP\
-    KCFKHLI\x18\x08\x20\x03(\x0b2\x0c.NHBDDINFKOHR\x0bHJBPKCFKHLI\x12\x20\n\
-    \x0bDIPHGGHFMCP\x18\x0e\x20\x01(\rR\x0bDIPHGGHFMCP\x12\x20\n\x0bCPODEJOF\
-    PDD\x18\x07\x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bEMBKICMEFCO\x18\r\x20\
-    \x01(\x0e2\x0c.DCJAOPDINOIR\x0bEMBKICMEFCOb\x06proto3\
+    o\x1a\x11NHBDDINFKOH.proto\"\xe1\x01\n\x0bKCHJHCLJOCK\x12\x20\n\x0bDIPHG\
+    GHFMCP\x18\x01\x20\x01(\rR\x0bDIPHGGHFMCP\x12\x20\n\x0bCPODEJOFPDD\x18\n\
+    \x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bEMBKICMEFCO\x18\x07\x20\x01(\x0e2\
+    \x0c.DCJAOPDINOIR\x0bEMBKICMEFCO\x12.\n\x0bHJBPKCFKHLI\x18\x08\x20\x03(\
+    \x0b2\x0c.NHBDDINFKOHR\x0bHJBPKCFKHLI\x12.\n\x0bCLFGFABOIOP\x18\x04\x20\
+    \x01(\x0e2\x0c.HGKKPPLJBOIR\x0bCLFGFABOIOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

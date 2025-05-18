@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneReviveAfterRebattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneReviveAfterRebattleCsReq.NIKHBKCHHJG)
-    pub NIKHBKCHHJG: ::protobuf::EnumOrUnknown<super::LIPEKJFJMNM::LIPEKJFJMNM>,
+    // @@protoc_insertion_point(field:SceneReviveAfterRebattleCsReq.rebattle_type)
+    pub rebattle_type: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneReviveAfterRebattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SceneReviveAfterRebattleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIKHBKCHHJG",
-            |m: &SceneReviveAfterRebattleCsReq| { &m.NIKHBKCHHJG },
-            |m: &mut SceneReviveAfterRebattleCsReq| { &mut m.NIKHBKCHHJG },
+            "rebattle_type",
+            |m: &SceneReviveAfterRebattleCsReq| { &m.rebattle_type },
+            |m: &mut SceneReviveAfterRebattleCsReq| { &mut m.rebattle_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneReviveAfterRebattleCsReq>(
             "SceneReviveAfterRebattleCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.NIKHBKCHHJG = is.read_enum_or_unknown()?;
+                96 => {
+                    self.rebattle_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.NIKHBKCHHJG.value());
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NIKHBKCHHJG != ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NIKHBKCHHJG))?;
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.NIKHBKCHHJG = ::protobuf::EnumOrUnknown::new(super::LIPEKJFJMNM::LIPEKJFJMNM::REBATTLE_TYPE_NONE);
+        self.rebattle_type = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneReviveAfterRebattleCsReq {
         static instance: SceneReviveAfterRebattleCsReq = SceneReviveAfterRebattleCsReq {
-            NIKHBKCHHJG: ::protobuf::EnumOrUnknown::from_i32(0),
+            rebattle_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneReviveAfterRebattleCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#SceneReviveAfterRebattleCsReq.proto\x1a\x11LIPEKJFJMNM.proto\"O\n\x1d\
-    SceneReviveAfterRebattleCsReq\x12.\n\x0bNIKHBKCHHJG\x18\x01\x20\x01(\x0e\
-    2\x0c.LIPEKJFJMNMR\x0bNIKHBKCHHJGb\x06proto3\
+    \n#SceneReviveAfterRebattleCsReq.proto\x1a\x12RebattleType.proto\"S\n\
+    \x1dSceneReviveAfterRebattleCsReq\x122\n\rrebattle_type\x18\x0c\x20\x01(\
+    \x0e2\r.RebattleTypeR\x0crebattleTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LIPEKJFJMNM::file_descriptor().clone());
+            deps.push(super::RebattleType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneReviveAfterRebattleCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

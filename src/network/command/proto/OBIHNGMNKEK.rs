@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OBIHNGMNKEK {
     // message oneof groups
-    pub JEHDFHLGCNL: ::std::option::Option<obihngmnkek::JEHDFHLGCNL>,
+    pub KHDFNALHMFI: ::std::option::Option<obihngmnkek::KHDFNALHMFI>,
     // special fields
     // @@protoc_insertion_point(special_field:OBIHNGMNKEK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl OBIHNGMNKEK {
         ::std::default::Default::default()
     }
 
-    // .KPIGLOPEMCF LOONEHFNAPC = 2;
+    // .KPIGLOPEMCF LOONEHFNAPC = 14;
 
     pub fn LOONEHFNAPC(&self) -> &super::KPIGLOPEMCF::KPIGLOPEMCF {
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(ref v)) => v,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(ref v)) => v,
             _ => <super::KPIGLOPEMCF::KPIGLOPEMCF as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_LOONEHFNAPC(&mut self) {
-        self.JEHDFHLGCNL = ::std::option::Option::None;
+        self.KHDFNALHMFI = ::std::option::Option::None;
     }
 
     pub fn has_LOONEHFNAPC(&self) -> bool {
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(..)) => true,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_LOONEHFNAPC(&mut self, v: super::KPIGLOPEMCF::KPIGLOPEMCF) {
-        self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(v))
+        self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_LOONEHFNAPC(&mut self) -> &mut super::KPIGLOPEMCF::KPIGLOPEMCF {
-        if let ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(_)) = self.JEHDFHLGCNL {
+        if let ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(_)) = self.KHDFNALHMFI {
         } else {
-            self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(super::KPIGLOPEMCF::KPIGLOPEMCF::new()));
+            self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(super::KPIGLOPEMCF::KPIGLOPEMCF::new()));
         }
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(ref mut v)) => v,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl OBIHNGMNKEK {
     // Take field
     pub fn take_LOONEHFNAPC(&mut self) -> super::KPIGLOPEMCF::KPIGLOPEMCF {
         if self.has_LOONEHFNAPC() {
-            match self.JEHDFHLGCNL.take() {
-                ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(v)) => v,
+            match self.KHDFNALHMFI.take() {
+                ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl OBIHNGMNKEK {
         }
     }
 
-    // .BCPDFIPOMAP DAOPOHAMOMF = 4;
+    // .BCPDFIPOMAP DAOPOHAMOMF = 5;
 
     pub fn DAOPOHAMOMF(&self) -> &super::BCPDFIPOMAP::BCPDFIPOMAP {
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(ref v)) => v,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(ref v)) => v,
             _ => <super::BCPDFIPOMAP::BCPDFIPOMAP as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_DAOPOHAMOMF(&mut self) {
-        self.JEHDFHLGCNL = ::std::option::Option::None;
+        self.KHDFNALHMFI = ::std::option::Option::None;
     }
 
     pub fn has_DAOPOHAMOMF(&self) -> bool {
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(..)) => true,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_DAOPOHAMOMF(&mut self, v: super::BCPDFIPOMAP::BCPDFIPOMAP) {
-        self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(v))
+        self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_DAOPOHAMOMF(&mut self) -> &mut super::BCPDFIPOMAP::BCPDFIPOMAP {
-        if let ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(_)) = self.JEHDFHLGCNL {
+        if let ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(_)) = self.KHDFNALHMFI {
         } else {
-            self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(super::BCPDFIPOMAP::BCPDFIPOMAP::new()));
+            self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(super::BCPDFIPOMAP::BCPDFIPOMAP::new()));
         }
-        match self.JEHDFHLGCNL {
-            ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(ref mut v)) => v,
+        match self.KHDFNALHMFI {
+            ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl OBIHNGMNKEK {
     // Take field
     pub fn take_DAOPOHAMOMF(&mut self) -> super::BCPDFIPOMAP::BCPDFIPOMAP {
         if self.has_DAOPOHAMOMF() {
-            match self.JEHDFHLGCNL.take() {
-                ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(v)) => v,
+            match self.KHDFNALHMFI.take() {
+                ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl OBIHNGMNKEK {
             OBIHNGMNKEK::mut_DAOPOHAMOMF,
             OBIHNGMNKEK::set_DAOPOHAMOMF,
         ));
-        oneofs.push(obihngmnkek::JEHDFHLGCNL::generated_oneof_descriptor_data());
+        oneofs.push(obihngmnkek::KHDFNALHMFI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OBIHNGMNKEK>(
             "OBIHNGMNKEK",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for OBIHNGMNKEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(is.read_message()?));
+                114 => {
+                    self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(is.read_message()?));
                 },
-                34 => {
-                    self.JEHDFHLGCNL = ::std::option::Option::Some(obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(is.read_message()?));
+                42 => {
+                    self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for OBIHNGMNKEK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.JEHDFHLGCNL {
+        if let ::std::option::Option::Some(ref v) = self.KHDFNALHMFI {
             match v {
-                &obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(ref v) => {
+                &obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(ref v) => {
+                &obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for OBIHNGMNKEK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.JEHDFHLGCNL {
+        if let ::std::option::Option::Some(ref v) = self.KHDFNALHMFI {
             match v {
-                &obihngmnkek::JEHDFHLGCNL::LOONEHFNAPC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &obihngmnkek::JEHDFHLGCNL::DAOPOHAMOMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for OBIHNGMNKEK {
     }
 
     fn clear(&mut self) {
-        self.JEHDFHLGCNL = ::std::option::Option::None;
-        self.JEHDFHLGCNL = ::std::option::Option::None;
+        self.KHDFNALHMFI = ::std::option::Option::None;
+        self.KHDFNALHMFI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OBIHNGMNKEK {
         static instance: OBIHNGMNKEK = OBIHNGMNKEK {
-            JEHDFHLGCNL: ::std::option::Option::None,
+            KHDFNALHMFI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,36 +278,36 @@ pub mod obihngmnkek {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:OBIHNGMNKEK.JEHDFHLGCNL)
-    pub enum JEHDFHLGCNL {
+    // @@protoc_insertion_point(oneof:OBIHNGMNKEK.KHDFNALHMFI)
+    pub enum KHDFNALHMFI {
         // @@protoc_insertion_point(oneof_field:OBIHNGMNKEK.LOONEHFNAPC)
         LOONEHFNAPC(super::super::KPIGLOPEMCF::KPIGLOPEMCF),
         // @@protoc_insertion_point(oneof_field:OBIHNGMNKEK.DAOPOHAMOMF)
         DAOPOHAMOMF(super::super::BCPDFIPOMAP::BCPDFIPOMAP),
     }
 
-    impl ::protobuf::Oneof for JEHDFHLGCNL {
+    impl ::protobuf::Oneof for KHDFNALHMFI {
     }
 
-    impl ::protobuf::OneofFull for JEHDFHLGCNL {
+    impl ::protobuf::OneofFull for KHDFNALHMFI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::OBIHNGMNKEK as ::protobuf::MessageFull>::descriptor().oneof_by_name("JEHDFHLGCNL").unwrap()).clone()
+            descriptor.get(|| <super::OBIHNGMNKEK as ::protobuf::MessageFull>::descriptor().oneof_by_name("KHDFNALHMFI").unwrap()).clone()
         }
     }
 
-    impl JEHDFHLGCNL {
+    impl KHDFNALHMFI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<JEHDFHLGCNL>("JEHDFHLGCNL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KHDFNALHMFI>("KHDFNALHMFI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OBIHNGMNKEK.proto\x1a\x11BCPDFIPOMAP.proto\x1a\x11KPIGLOPEMCF.prot\
-    o\"\x80\x01\n\x0bOBIHNGMNKEK\x120\n\x0bLOONEHFNAPC\x18\x02\x20\x01(\x0b2\
-    \x0c.KPIGLOPEMCFH\0R\x0bLOONEHFNAPC\x120\n\x0bDAOPOHAMOMF\x18\x04\x20\
-    \x01(\x0b2\x0c.BCPDFIPOMAPH\0R\x0bDAOPOHAMOMFB\r\n\x0bJEHDFHLGCNLb\x06pr\
+    o\"\x80\x01\n\x0bOBIHNGMNKEK\x120\n\x0bLOONEHFNAPC\x18\x0e\x20\x01(\x0b2\
+    \x0c.KPIGLOPEMCFH\0R\x0bLOONEHFNAPC\x120\n\x0bDAOPOHAMOMF\x18\x05\x20\
+    \x01(\x0b2\x0c.BCPDFIPOMAPH\0R\x0bDAOPOHAMOMFB\r\n\x0bKHDFNALHMFIb\x06pr\
     oto3\
 ";
 

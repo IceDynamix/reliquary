@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetTrainVisitorBehaviorScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetTrainVisitorBehaviorScRsp.ECFOPDHGKFB)
+    pub ECFOPDHGKFB: ::std::vec::Vec<super::TrainVisitorBehavior::TrainVisitorBehavior>,
     // @@protoc_insertion_point(field:GetTrainVisitorBehaviorScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetTrainVisitorBehaviorScRsp.ECFOPDHGKFB)
-    pub ECFOPDHGKFB: ::std::vec::Vec<super::GBCDKGEKCPP::GBCDKGEKCPP>,
     // special fields
     // @@protoc_insertion_point(special_field:GetTrainVisitorBehaviorScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetTrainVisitorBehaviorScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetTrainVisitorBehaviorScRsp| { &m.retcode },
-            |m: &mut GetTrainVisitorBehaviorScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ECFOPDHGKFB",
             |m: &GetTrainVisitorBehaviorScRsp| { &m.ECFOPDHGKFB },
             |m: &mut GetTrainVisitorBehaviorScRsp| { &mut m.ECFOPDHGKFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetTrainVisitorBehaviorScRsp| { &m.retcode },
+            |m: &mut GetTrainVisitorBehaviorScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetTrainVisitorBehaviorScRsp>(
             "GetTrainVisitorBehaviorScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    self.ECFOPDHGKFB.push(is.read_message()?);
+                },
                 48 => {
                     self.retcode = is.read_uint32()?;
-                },
-                82 => {
-                    self.ECFOPDHGKFB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         for value in &self.ECFOPDHGKFB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.ECFOPDHGKFB {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
-        for v in &self.ECFOPDHGKFB {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetTrainVisitorBehaviorScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.ECFOPDHGKFB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetTrainVisitorBehaviorScRsp {
         static instance: GetTrainVisitorBehaviorScRsp = GetTrainVisitorBehaviorScRsp {
-            retcode: 0,
             ECFOPDHGKFB: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorBehaviorScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetTrainVisitorBehaviorScRsp.proto\x1a\x11GBCDKGEKCPP.proto\"h\n\x1c\
-    GetTrainVisitorBehaviorScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bECFOPDHGKFB\x18\n\x20\x03(\x0b2\x0c.GBCDKGEKCPPR\
-    \x0bECFOPDHGKFBb\x06proto3\
+    \n\"GetTrainVisitorBehaviorScRsp.proto\x1a\x1aTrainVisitorBehavior.proto\
+    \"q\n\x1cGetTrainVisitorBehaviorScRsp\x127\n\x0bECFOPDHGKFB\x18\x05\x20\
+    \x03(\x0b2\x15.TrainVisitorBehaviorR\x0bECFOPDHGKFB\x12\x18\n\x07retcode\
+    \x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GBCDKGEKCPP::file_descriptor().clone());
+            deps.push(super::TrainVisitorBehavior::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetTrainVisitorBehaviorScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

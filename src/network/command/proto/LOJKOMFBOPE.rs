@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOJKOMFBOPE {
     // message fields
-    // @@protoc_insertion_point(field:LOJKOMFBOPE.PLAPCJHEGGF)
-    pub PLAPCJHEGGF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LOJKOMFBOPE.buff_id_list)
+    pub buff_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOJKOMFBOPE.EJHFLINCIAF)
     pub EJHFLINCIAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOJKOMFBOPE.OFNAPBILNGG)
@@ -56,9 +56,9 @@ impl LOJKOMFBOPE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLAPCJHEGGF",
-            |m: &LOJKOMFBOPE| { &m.PLAPCJHEGGF },
-            |m: &mut LOJKOMFBOPE| { &mut m.PLAPCJHEGGF },
+            "buff_id_list",
+            |m: &LOJKOMFBOPE| { &m.buff_id_list },
+            |m: &mut LOJKOMFBOPE| { &mut m.buff_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EJHFLINCIAF",
@@ -94,10 +94,10 @@ impl ::protobuf::Message for LOJKOMFBOPE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PLAPCJHEGGF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.buff_id_list)?;
                 },
                 8 => {
-                    self.PLAPCJHEGGF.push(is.read_uint32()?);
+                    self.buff_id_list.push(is.read_uint32()?);
                 },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.EJHFLINCIAF)?;
@@ -129,7 +129,7 @@ impl ::protobuf::Message for LOJKOMFBOPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PLAPCJHEGGF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.buff_id_list);
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.EJHFLINCIAF);
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.OFNAPBILNGG);
         my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HEJHNAKOHLM);
@@ -139,7 +139,7 @@ impl ::protobuf::Message for LOJKOMFBOPE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.PLAPCJHEGGF)?;
+        os.write_repeated_packed_uint32(1, &self.buff_id_list)?;
         os.write_repeated_packed_uint32(2, &self.EJHFLINCIAF)?;
         os.write_repeated_packed_uint32(3, &self.OFNAPBILNGG)?;
         os.write_repeated_packed_uint32(4, &self.HEJHNAKOHLM)?;
@@ -160,7 +160,7 @@ impl ::protobuf::Message for LOJKOMFBOPE {
     }
 
     fn clear(&mut self) {
-        self.PLAPCJHEGGF.clear();
+        self.buff_id_list.clear();
         self.EJHFLINCIAF.clear();
         self.OFNAPBILNGG.clear();
         self.HEJHNAKOHLM.clear();
@@ -169,7 +169,7 @@ impl ::protobuf::Message for LOJKOMFBOPE {
 
     fn default_instance() -> &'static LOJKOMFBOPE {
         static instance: LOJKOMFBOPE = LOJKOMFBOPE {
-            PLAPCJHEGGF: ::std::vec::Vec::new(),
+            buff_id_list: ::std::vec::Vec::new(),
             EJHFLINCIAF: ::std::vec::Vec::new(),
             OFNAPBILNGG: ::std::vec::Vec::new(),
             HEJHNAKOHLM: ::std::vec::Vec::new(),
@@ -197,8 +197,8 @@ impl ::protobuf::reflect::ProtobufValue for LOJKOMFBOPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOJKOMFBOPE.proto\"\x95\x01\n\x0bLOJKOMFBOPE\x12\x20\n\x0bPLAPCJHE\
-    GGF\x18\x01\x20\x03(\rR\x0bPLAPCJHEGGF\x12\x20\n\x0bEJHFLINCIAF\x18\x02\
+    \n\x11LOJKOMFBOPE.proto\"\x95\x01\n\x0bLOJKOMFBOPE\x12\x20\n\x0cbuff_id_\
+    list\x18\x01\x20\x03(\rR\nbuffIdList\x12\x20\n\x0bEJHFLINCIAF\x18\x02\
     \x20\x03(\rR\x0bEJHFLINCIAF\x12\x20\n\x0bOFNAPBILNGG\x18\x03\x20\x03(\rR\
     \x0bOFNAPBILNGG\x12\x20\n\x0bHEJHNAKOHLM\x18\x04\x20\x03(\rR\x0bHEJHNAKO\
     HLMb\x06proto3\

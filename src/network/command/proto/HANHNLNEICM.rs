@@ -40,28 +40,28 @@ pub struct HANHNLNEICM {
     pub skill_times: ::std::vec::Vec<super::SkillUseProperty::SkillUseProperty>,
     // @@protoc_insertion_point(field:HANHNLNEICM.total_damage)
     pub total_damage: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.LANKMAPIDBD)
-    pub LANKMAPIDBD: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.attack_damage_type)
-    pub attack_damage_type: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
-    // @@protoc_insertion_point(field:HANHNLNEICM.NEPFMBLIHIK)
-    pub NEPFMBLIHIK: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
-    // @@protoc_insertion_point(field:HANHNLNEICM.OGOAJMDMMDG)
-    pub OGOAJMDMMDG: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:HANHNLNEICM.total_break_damage)
+    pub total_break_damage: f64,
+    // @@protoc_insertion_point(field:HANHNLNEICM.attack_type_damage)
+    pub attack_type_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:HANHNLNEICM.attack_type_break_damage)
+    pub attack_type_break_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:HANHNLNEICM.attack_type_max_damage)
+    pub attack_type_max_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
     // @@protoc_insertion_point(field:HANHNLNEICM.total_damage_taken)
     pub total_damage_taken: f64,
     // @@protoc_insertion_point(field:HANHNLNEICM.total_heal)
     pub total_heal: f64,
     // @@protoc_insertion_point(field:HANHNLNEICM.total_hp_recover)
     pub total_hp_recover: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.FONHEDEFLOM)
-    pub FONHEDEFLOM: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.HJIDHCJNIBE)
-    pub HJIDHCJNIBE: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.PHDEDFBLJFI)
-    pub PHDEDFBLJFI: f64,
-    // @@protoc_insertion_point(field:HANHNLNEICM.EIGEECDNJCN)
-    pub EIGEECDNJCN: u32,
+    // @@protoc_insertion_point(field:HANHNLNEICM.total_shield)
+    pub total_shield: f64,
+    // @@protoc_insertion_point(field:HANHNLNEICM.total_shield_taken)
+    pub total_shield_taken: f64,
+    // @@protoc_insertion_point(field:HANHNLNEICM.total_shield_damage)
+    pub total_shield_damage: f64,
+    // @@protoc_insertion_point(field:HANHNLNEICM.break_times)
+    pub break_times: u32,
     // @@protoc_insertion_point(field:HANHNLNEICM.JEPLCJKFOMB)
     pub JEPLCJKFOMB: u32,
     // @@protoc_insertion_point(field:HANHNLNEICM.NCJHDJJDJNL)
@@ -122,24 +122,24 @@ impl HANHNLNEICM {
             |m: &mut HANHNLNEICM| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LANKMAPIDBD",
-            |m: &HANHNLNEICM| { &m.LANKMAPIDBD },
-            |m: &mut HANHNLNEICM| { &mut m.LANKMAPIDBD },
+            "total_break_damage",
+            |m: &HANHNLNEICM| { &m.total_break_damage },
+            |m: &mut HANHNLNEICM| { &mut m.total_break_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "attack_damage_type",
-            |m: &HANHNLNEICM| { &m.attack_damage_type },
-            |m: &mut HANHNLNEICM| { &mut m.attack_damage_type },
+            "attack_type_damage",
+            |m: &HANHNLNEICM| { &m.attack_type_damage },
+            |m: &mut HANHNLNEICM| { &mut m.attack_type_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NEPFMBLIHIK",
-            |m: &HANHNLNEICM| { &m.NEPFMBLIHIK },
-            |m: &mut HANHNLNEICM| { &mut m.NEPFMBLIHIK },
+            "attack_type_break_damage",
+            |m: &HANHNLNEICM| { &m.attack_type_break_damage },
+            |m: &mut HANHNLNEICM| { &mut m.attack_type_break_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OGOAJMDMMDG",
-            |m: &HANHNLNEICM| { &m.OGOAJMDMMDG },
-            |m: &mut HANHNLNEICM| { &mut m.OGOAJMDMMDG },
+            "attack_type_max_damage",
+            |m: &HANHNLNEICM| { &m.attack_type_max_damage },
+            |m: &mut HANHNLNEICM| { &mut m.attack_type_max_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_damage_taken",
@@ -157,24 +157,24 @@ impl HANHNLNEICM {
             |m: &mut HANHNLNEICM| { &mut m.total_hp_recover },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FONHEDEFLOM",
-            |m: &HANHNLNEICM| { &m.FONHEDEFLOM },
-            |m: &mut HANHNLNEICM| { &mut m.FONHEDEFLOM },
+            "total_shield",
+            |m: &HANHNLNEICM| { &m.total_shield },
+            |m: &mut HANHNLNEICM| { &mut m.total_shield },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJIDHCJNIBE",
-            |m: &HANHNLNEICM| { &m.HJIDHCJNIBE },
-            |m: &mut HANHNLNEICM| { &mut m.HJIDHCJNIBE },
+            "total_shield_taken",
+            |m: &HANHNLNEICM| { &m.total_shield_taken },
+            |m: &mut HANHNLNEICM| { &mut m.total_shield_taken },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHDEDFBLJFI",
-            |m: &HANHNLNEICM| { &m.PHDEDFBLJFI },
-            |m: &mut HANHNLNEICM| { &mut m.PHDEDFBLJFI },
+            "total_shield_damage",
+            |m: &HANHNLNEICM| { &m.total_shield_damage },
+            |m: &mut HANHNLNEICM| { &mut m.total_shield_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIGEECDNJCN",
-            |m: &HANHNLNEICM| { &m.EIGEECDNJCN },
-            |m: &mut HANHNLNEICM| { &mut m.EIGEECDNJCN },
+            "break_times",
+            |m: &HANHNLNEICM| { &m.break_times },
+            |m: &mut HANHNLNEICM| { &mut m.break_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JEPLCJKFOMB",
@@ -238,16 +238,16 @@ impl ::protobuf::Message for HANHNLNEICM {
                     self.total_damage = is.read_double()?;
                 },
                 57 => {
-                    self.LANKMAPIDBD = is.read_double()?;
+                    self.total_break_damage = is.read_double()?;
                 },
                 66 => {
-                    self.attack_damage_type.push(is.read_message()?);
+                    self.attack_type_damage.push(is.read_message()?);
                 },
                 74 => {
-                    self.NEPFMBLIHIK.push(is.read_message()?);
+                    self.attack_type_break_damage.push(is.read_message()?);
                 },
                 82 => {
-                    self.OGOAJMDMMDG.push(is.read_message()?);
+                    self.attack_type_max_damage.push(is.read_message()?);
                 },
                 89 => {
                     self.total_damage_taken = is.read_double()?;
@@ -259,16 +259,16 @@ impl ::protobuf::Message for HANHNLNEICM {
                     self.total_hp_recover = is.read_double()?;
                 },
                 113 => {
-                    self.FONHEDEFLOM = is.read_double()?;
+                    self.total_shield = is.read_double()?;
                 },
                 121 => {
-                    self.HJIDHCJNIBE = is.read_double()?;
+                    self.total_shield_taken = is.read_double()?;
                 },
                 129 => {
-                    self.PHDEDFBLJFI = is.read_double()?;
+                    self.total_shield_damage = is.read_double()?;
                 },
                 136 => {
-                    self.EIGEECDNJCN = is.read_uint32()?;
+                    self.break_times = is.read_uint32()?;
                 },
                 144 => {
                     self.JEPLCJKFOMB = is.read_uint32()?;
@@ -316,18 +316,18 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.total_damage != 0. {
             my_size += 1 + 8;
         }
-        if self.LANKMAPIDBD != 0. {
+        if self.total_break_damage != 0. {
             my_size += 1 + 8;
         }
-        for value in &self.attack_damage_type {
+        for value in &self.attack_type_damage {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NEPFMBLIHIK {
+        for value in &self.attack_type_break_damage {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.OGOAJMDMMDG {
+        for value in &self.attack_type_max_damage {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -340,17 +340,17 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.total_hp_recover != 0. {
             my_size += 1 + 8;
         }
-        if self.FONHEDEFLOM != 0. {
+        if self.total_shield != 0. {
             my_size += 1 + 8;
         }
-        if self.HJIDHCJNIBE != 0. {
+        if self.total_shield_taken != 0. {
             my_size += 1 + 8;
         }
-        if self.PHDEDFBLJFI != 0. {
+        if self.total_shield_damage != 0. {
             my_size += 2 + 8;
         }
-        if self.EIGEECDNJCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.EIGEECDNJCN);
+        if self.break_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.break_times);
         }
         if self.JEPLCJKFOMB != 0 {
             my_size += ::protobuf::rt::uint32_size(18, self.JEPLCJKFOMB);
@@ -391,16 +391,16 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.total_damage != 0. {
             os.write_double(6, self.total_damage)?;
         }
-        if self.LANKMAPIDBD != 0. {
-            os.write_double(7, self.LANKMAPIDBD)?;
+        if self.total_break_damage != 0. {
+            os.write_double(7, self.total_break_damage)?;
         }
-        for v in &self.attack_damage_type {
+        for v in &self.attack_type_damage {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        for v in &self.NEPFMBLIHIK {
+        for v in &self.attack_type_break_damage {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for v in &self.OGOAJMDMMDG {
+        for v in &self.attack_type_max_damage {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.total_damage_taken != 0. {
@@ -412,17 +412,17 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.total_hp_recover != 0. {
             os.write_double(13, self.total_hp_recover)?;
         }
-        if self.FONHEDEFLOM != 0. {
-            os.write_double(14, self.FONHEDEFLOM)?;
+        if self.total_shield != 0. {
+            os.write_double(14, self.total_shield)?;
         }
-        if self.HJIDHCJNIBE != 0. {
-            os.write_double(15, self.HJIDHCJNIBE)?;
+        if self.total_shield_taken != 0. {
+            os.write_double(15, self.total_shield_taken)?;
         }
-        if self.PHDEDFBLJFI != 0. {
-            os.write_double(16, self.PHDEDFBLJFI)?;
+        if self.total_shield_damage != 0. {
+            os.write_double(16, self.total_shield_damage)?;
         }
-        if self.EIGEECDNJCN != 0 {
-            os.write_uint32(17, self.EIGEECDNJCN)?;
+        if self.break_times != 0 {
+            os.write_uint32(17, self.break_times)?;
         }
         if self.JEPLCJKFOMB != 0 {
             os.write_uint32(18, self.JEPLCJKFOMB)?;
@@ -462,17 +462,17 @@ impl ::protobuf::Message for HANHNLNEICM {
         self.FBCMJGMBJFC = 0.;
         self.skill_times.clear();
         self.total_damage = 0.;
-        self.LANKMAPIDBD = 0.;
-        self.attack_damage_type.clear();
-        self.NEPFMBLIHIK.clear();
-        self.OGOAJMDMMDG.clear();
+        self.total_break_damage = 0.;
+        self.attack_type_damage.clear();
+        self.attack_type_break_damage.clear();
+        self.attack_type_max_damage.clear();
         self.total_damage_taken = 0.;
         self.total_heal = 0.;
         self.total_hp_recover = 0.;
-        self.FONHEDEFLOM = 0.;
-        self.HJIDHCJNIBE = 0.;
-        self.PHDEDFBLJFI = 0.;
-        self.EIGEECDNJCN = 0;
+        self.total_shield = 0.;
+        self.total_shield_taken = 0.;
+        self.total_shield_damage = 0.;
+        self.break_times = 0;
         self.JEPLCJKFOMB = 0;
         self.NCJHDJJDJNL = 0;
         self.LKMGDIADOPB = 0;
@@ -489,17 +489,17 @@ impl ::protobuf::Message for HANHNLNEICM {
             FBCMJGMBJFC: 0.,
             skill_times: ::std::vec::Vec::new(),
             total_damage: 0.,
-            LANKMAPIDBD: 0.,
-            attack_damage_type: ::std::vec::Vec::new(),
-            NEPFMBLIHIK: ::std::vec::Vec::new(),
-            OGOAJMDMMDG: ::std::vec::Vec::new(),
+            total_break_damage: 0.,
+            attack_type_damage: ::std::vec::Vec::new(),
+            attack_type_break_damage: ::std::vec::Vec::new(),
+            attack_type_max_damage: ::std::vec::Vec::new(),
             total_damage_taken: 0.,
             total_heal: 0.,
             total_hp_recover: 0.,
-            FONHEDEFLOM: 0.,
-            HJIDHCJNIBE: 0.,
-            PHDEDFBLJFI: 0.,
-            EIGEECDNJCN: 0,
+            total_shield: 0.,
+            total_shield_taken: 0.,
+            total_shield_damage: 0.,
+            break_times: 0,
             JEPLCJKFOMB: 0,
             NCJHDJJDJNL: 0,
             LKMGDIADOPB: 0,
@@ -530,27 +530,28 @@ impl ::protobuf::reflect::ProtobufValue for HANHNLNEICM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HANHNLNEICM.proto\x1a\x1aAttackDamageProperty.proto\x1a\x16SkillUs\
-    eProperty.proto\"\xe3\x06\n\x0bHANHNLNEICM\x12\x1b\n\tavatar_id\x18\x01\
+    eProperty.proto\"\xb3\x07\n\x0bHANHNLNEICM\x12\x1b\n\tavatar_id\x18\x01\
     \x20\x01(\rR\x08avatarId\x12\x20\n\x0bDPDNNMBCPOI\x18\x02\x20\x01(\rR\
     \x0bDPDNNMBCPOI\x12\x1f\n\x0btotal_turns\x18\x03\x20\x01(\rR\ntotalTurns\
     \x12\x20\n\x0bFBCMJGMBJFC\x18\x04\x20\x01(\x01R\x0bFBCMJGMBJFC\x122\n\
     \x0bskill_times\x18\x05\x20\x03(\x0b2\x11.SkillUsePropertyR\nskillTimes\
-    \x12!\n\x0ctotal_damage\x18\x06\x20\x01(\x01R\x0btotalDamage\x12\x20\n\
-    \x0bLANKMAPIDBD\x18\x07\x20\x01(\x01R\x0bLANKMAPIDBD\x12C\n\x12attack_da\
-    mage_type\x18\x08\x20\x03(\x0b2\x15.AttackDamagePropertyR\x10attackDamag\
-    eType\x127\n\x0bNEPFMBLIHIK\x18\t\x20\x03(\x0b2\x15.AttackDamageProperty\
-    R\x0bNEPFMBLIHIK\x127\n\x0bOGOAJMDMMDG\x18\n\x20\x03(\x0b2\x15.AttackDam\
-    agePropertyR\x0bOGOAJMDMMDG\x12,\n\x12total_damage_taken\x18\x0b\x20\x01\
-    (\x01R\x10totalDamageTaken\x12\x1d\n\ntotal_heal\x18\x0c\x20\x01(\x01R\t\
-    totalHeal\x12(\n\x10total_hp_recover\x18\r\x20\x01(\x01R\x0etotalHpRecov\
-    er\x12\x20\n\x0bFONHEDEFLOM\x18\x0e\x20\x01(\x01R\x0bFONHEDEFLOM\x12\x20\
-    \n\x0bHJIDHCJNIBE\x18\x0f\x20\x01(\x01R\x0bHJIDHCJNIBE\x12\x20\n\x0bPHDE\
-    DFBLJFI\x18\x10\x20\x01(\x01R\x0bPHDEDFBLJFI\x12\x20\n\x0bEIGEECDNJCN\
-    \x18\x11\x20\x01(\rR\x0bEIGEECDNJCN\x12\x20\n\x0bJEPLCJKFOMB\x18\x12\x20\
-    \x01(\rR\x0bJEPLCJKFOMB\x12\x20\n\x0bNCJHDJJDJNL\x18\x13\x20\x01(\rR\x0b\
-    NCJHDJJDJNL\x12\x20\n\x0bLKMGDIADOPB\x18\x14\x20\x01(\rR\x0bLKMGDIADOPB\
-    \x12\x20\n\x0bIBLGMCIPCKM\x18\x15\x20\x01(\x01R\x0bIBLGMCIPCKM\x12\x1b\n\
-    \tentity_id\x18\x16\x20\x01(\rR\x08entityIdb\x06proto3\
+    \x12!\n\x0ctotal_damage\x18\x06\x20\x01(\x01R\x0btotalDamage\x12,\n\x12t\
+    otal_break_damage\x18\x07\x20\x01(\x01R\x10totalBreakDamage\x12C\n\x12at\
+    tack_type_damage\x18\x08\x20\x03(\x0b2\x15.AttackDamagePropertyR\x10atta\
+    ckTypeDamage\x12N\n\x18attack_type_break_damage\x18\t\x20\x03(\x0b2\x15.\
+    AttackDamagePropertyR\x15attackTypeBreakDamage\x12J\n\x16attack_type_max\
+    _damage\x18\n\x20\x03(\x0b2\x15.AttackDamagePropertyR\x13attackTypeMaxDa\
+    mage\x12,\n\x12total_damage_taken\x18\x0b\x20\x01(\x01R\x10totalDamageTa\
+    ken\x12\x1d\n\ntotal_heal\x18\x0c\x20\x01(\x01R\ttotalHeal\x12(\n\x10tot\
+    al_hp_recover\x18\r\x20\x01(\x01R\x0etotalHpRecover\x12!\n\x0ctotal_shie\
+    ld\x18\x0e\x20\x01(\x01R\x0btotalShield\x12,\n\x12total_shield_taken\x18\
+    \x0f\x20\x01(\x01R\x10totalShieldTaken\x12.\n\x13total_shield_damage\x18\
+    \x10\x20\x01(\x01R\x11totalShieldDamage\x12\x1f\n\x0bbreak_times\x18\x11\
+    \x20\x01(\rR\nbreakTimes\x12\x20\n\x0bJEPLCJKFOMB\x18\x12\x20\x01(\rR\
+    \x0bJEPLCJKFOMB\x12\x20\n\x0bNCJHDJJDJNL\x18\x13\x20\x01(\rR\x0bNCJHDJJD\
+    JNL\x12\x20\n\x0bLKMGDIADOPB\x18\x14\x20\x01(\rR\x0bLKMGDIADOPB\x12\x20\
+    \n\x0bIBLGMCIPCKM\x18\x15\x20\x01(\x01R\x0bIBLGMCIPCKM\x12\x1b\n\tentity\
+    _id\x18\x16\x20\x01(\rR\x08entityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -32,10 +32,10 @@ pub struct QuickStartCocoonStageScRsp {
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // @@protoc_insertion_point(field:QuickStartCocoonStageScRsp.wave)
     pub wave: u32,
-    // @@protoc_insertion_point(field:QuickStartCocoonStageScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:QuickStartCocoonStageScRsp.cocoon_id)
     pub cocoon_id: u32,
+    // @@protoc_insertion_point(field:QuickStartCocoonStageScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:QuickStartCocoonStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl QuickStartCocoonStageScRsp {
             |m: &mut QuickStartCocoonStageScRsp| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &QuickStartCocoonStageScRsp| { &m.retcode },
-            |m: &mut QuickStartCocoonStageScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cocoon_id",
             |m: &QuickStartCocoonStageScRsp| { &m.cocoon_id },
             |m: &mut QuickStartCocoonStageScRsp| { &mut m.cocoon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &QuickStartCocoonStageScRsp| { &m.retcode },
+            |m: &mut QuickStartCocoonStageScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuickStartCocoonStageScRsp>(
             "QuickStartCocoonStageScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for QuickStartCocoonStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                56 => {
+                88 => {
                     self.wave = is.read_uint32()?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                120 => {
+                32 => {
                     self.cocoon_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,13 +122,13 @@ impl ::protobuf::Message for QuickStartCocoonStageScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.wave);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.wave);
         }
         if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cocoon_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.cocoon_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for QuickStartCocoonStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.wave != 0 {
-            os.write_uint32(7, self.wave)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(11, self.wave)?;
         }
         if self.cocoon_id != 0 {
-            os.write_uint32(15, self.cocoon_id)?;
+            os.write_uint32(4, self.cocoon_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for QuickStartCocoonStageScRsp {
     fn clear(&mut self) {
         self.battle_info.clear();
         self.wave = 0;
-        self.retcode = 0;
         self.cocoon_id = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for QuickStartCocoonStageScRsp {
         static instance: QuickStartCocoonStageScRsp = QuickStartCocoonStageScRsp {
             battle_info: ::protobuf::MessageField::none(),
             wave: 0,
-            retcode: 0,
             cocoon_id: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartCocoonStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartCocoonStageScRsp.proto\x1a\x15SceneBattleInfo.proto\"\
-    \x9a\x01\n\x1aQuickStartCocoonStageScRsp\x121\n\x0bbattle_info\x18\r\x20\
-    \x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x12\n\x04wave\x18\x07\
-    \x20\x01(\rR\x04wave\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\
-    \x12\x1b\n\tcocoon_id\x18\x0f\x20\x01(\rR\x08cocoonIdb\x06proto3\
+    \x9a\x01\n\x1aQuickStartCocoonStageScRsp\x121\n\x0bbattle_info\x18\t\x20\
+    \x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x12\n\x04wave\x18\x0b\
+    \x20\x01(\rR\x04wave\x12\x1b\n\tcocoon_id\x18\x04\x20\x01(\rR\x08cocoonI\
+    d\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

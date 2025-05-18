@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMarkChestCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.HOBJMINNBOP)
-    pub HOBJMINNBOP: u32,
-    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.DBFPAAFODKG)
-    pub DBFPAAFODKG: u32,
-    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.BCEMAKCMADN)
-    pub BCEMAKCMADN: ::std::vec::Vec<super::MJFCEMBPICH::MJFCEMBPICH>,
+    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.mark_chest_info_list)
+    pub mark_chest_info_list: ::std::vec::Vec<super::MarkChestInfo::MarkChestInfo>,
+    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.trigger_param_id)
+    pub trigger_param_id: u32,
+    // @@protoc_insertion_point(field:UpdateMarkChestCsReq.func_id)
+    pub func_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMarkChestCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl UpdateMarkChestCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOBJMINNBOP",
-            |m: &UpdateMarkChestCsReq| { &m.HOBJMINNBOP },
-            |m: &mut UpdateMarkChestCsReq| { &mut m.HOBJMINNBOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBFPAAFODKG",
-            |m: &UpdateMarkChestCsReq| { &m.DBFPAAFODKG },
-            |m: &mut UpdateMarkChestCsReq| { &mut m.DBFPAAFODKG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BCEMAKCMADN",
-            |m: &UpdateMarkChestCsReq| { &m.BCEMAKCMADN },
-            |m: &mut UpdateMarkChestCsReq| { &mut m.BCEMAKCMADN },
+            "mark_chest_info_list",
+            |m: &UpdateMarkChestCsReq| { &m.mark_chest_info_list },
+            |m: &mut UpdateMarkChestCsReq| { &mut m.mark_chest_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trigger_param_id",
+            |m: &UpdateMarkChestCsReq| { &m.trigger_param_id },
+            |m: &mut UpdateMarkChestCsReq| { &mut m.trigger_param_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "func_id",
+            |m: &UpdateMarkChestCsReq| { &m.func_id },
+            |m: &mut UpdateMarkChestCsReq| { &mut m.func_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMarkChestCsReq>(
             "UpdateMarkChestCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.HOBJMINNBOP = is.read_uint32()?;
+                74 => {
+                    self.mark_chest_info_list.push(is.read_message()?);
                 },
-                56 => {
-                    self.DBFPAAFODKG = is.read_uint32()?;
+                48 => {
+                    self.trigger_param_id = is.read_uint32()?;
                 },
-                50 => {
-                    self.BCEMAKCMADN.push(is.read_message()?);
+                24 => {
+                    self.func_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOBJMINNBOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HOBJMINNBOP);
-        }
-        if self.DBFPAAFODKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DBFPAAFODKG);
-        }
-        for value in &self.BCEMAKCMADN {
+        for value in &self.mark_chest_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.trigger_param_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.trigger_param_id);
+        }
+        if self.func_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.func_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOBJMINNBOP != 0 {
-            os.write_uint32(14, self.HOBJMINNBOP)?;
-        }
-        if self.DBFPAAFODKG != 0 {
-            os.write_uint32(7, self.DBFPAAFODKG)?;
-        }
-        for v in &self.BCEMAKCMADN {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.mark_chest_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        if self.trigger_param_id != 0 {
+            os.write_uint32(6, self.trigger_param_id)?;
+        }
+        if self.func_id != 0 {
+            os.write_uint32(3, self.func_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for UpdateMarkChestCsReq {
     }
 
     fn clear(&mut self) {
-        self.HOBJMINNBOP = 0;
-        self.DBFPAAFODKG = 0;
-        self.BCEMAKCMADN.clear();
+        self.mark_chest_info_list.clear();
+        self.trigger_param_id = 0;
+        self.func_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMarkChestCsReq {
         static instance: UpdateMarkChestCsReq = UpdateMarkChestCsReq {
-            HOBJMINNBOP: 0,
-            DBFPAAFODKG: 0,
-            BCEMAKCMADN: ::std::vec::Vec::new(),
+            mark_chest_info_list: ::std::vec::Vec::new(),
+            trigger_param_id: 0,
+            func_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMarkChestCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUpdateMarkChestCsReq.proto\x1a\x11MJFCEMBPICH.proto\"\x8a\x01\n\
-    \x14UpdateMarkChestCsReq\x12\x20\n\x0bHOBJMINNBOP\x18\x0e\x20\x01(\rR\
-    \x0bHOBJMINNBOP\x12\x20\n\x0bDBFPAAFODKG\x18\x07\x20\x01(\rR\x0bDBFPAAFO\
-    DKG\x12.\n\x0bBCEMAKCMADN\x18\x06\x20\x03(\x0b2\x0c.MJFCEMBPICHR\x0bBCEM\
-    AKCMADNb\x06proto3\
+    \n\x1aUpdateMarkChestCsReq.proto\x1a\x13MarkChestInfo.proto\"\x9a\x01\n\
+    \x14UpdateMarkChestCsReq\x12?\n\x14mark_chest_info_list\x18\t\x20\x03(\
+    \x0b2\x0e.MarkChestInfoR\x11markChestInfoList\x12(\n\x10trigger_param_id\
+    \x18\x06\x20\x01(\rR\x0etriggerParamId\x12\x17\n\x07func_id\x18\x03\x20\
+    \x01(\rR\x06funcIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MJFCEMBPICH::file_descriptor().clone());
+            deps.push(super::MarkChestInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateMarkChestCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

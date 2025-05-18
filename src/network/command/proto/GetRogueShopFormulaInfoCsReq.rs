@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                104 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                112 => {
+                96 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.interacted_prop_entity_id);
         }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(15, self.interacted_prop_entity_id)?;
+            os.write_uint32(13, self.interacted_prop_entity_id)?;
         }
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(14, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(12, self.PUNK_LORD_OPERATION_REFRESH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopFormulaInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopFormulaInfoCsReq.proto\"\x98\x01\n\x1cGetRogueShopFormul\
-    aInfoCsReq\x129\n\x19interacted_prop_entity_id\x18\x0f\x20\x01(\rR\x16in\
-    teractedPropEntityId\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x0e\x20\
-    \x01(\x08R\x18PUNKLORDOPERATIONREFRESHb\x06proto3\
+    aInfoCsReq\x129\n\x19interacted_prop_entity_id\x18\r\x20\x01(\rR\x16inte\
+    ractedPropEntityId\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x0c\x20\x01\
+    (\x08R\x18PUNKLORDOPERATIONREFRESHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

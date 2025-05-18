@@ -30,10 +30,10 @@ pub struct IBCKNKPJFOJ {
     // message fields
     // @@protoc_insertion_point(field:IBCKNKPJFOJ.PGIMNCFHJEA)
     pub PGIMNCFHJEA: ::std::vec::Vec<super::RogueUnlockProgress::RogueUnlockProgress>,
+    // @@protoc_insertion_point(field:IBCKNKPJFOJ.talent_id)
+    pub talent_id: u32,
     // @@protoc_insertion_point(field:IBCKNKPJFOJ.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueTalentStatus::RogueTalentStatus>,
-    // @@protoc_insertion_point(field:IBCKNKPJFOJ.FAGNLGFJAIF)
-    pub FAGNLGFJAIF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IBCKNKPJFOJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IBCKNKPJFOJ {
             |m: &mut IBCKNKPJFOJ| { &mut m.PGIMNCFHJEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "talent_id",
+            |m: &IBCKNKPJFOJ| { &m.talent_id },
+            |m: &mut IBCKNKPJFOJ| { &mut m.talent_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &IBCKNKPJFOJ| { &m.status },
             |m: &mut IBCKNKPJFOJ| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAGNLGFJAIF",
-            |m: &IBCKNKPJFOJ| { &m.FAGNLGFJAIF },
-            |m: &mut IBCKNKPJFOJ| { &mut m.FAGNLGFJAIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBCKNKPJFOJ>(
             "IBCKNKPJFOJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IBCKNKPJFOJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                26 => {
                     self.PGIMNCFHJEA.push(is.read_message()?);
                 },
-                72 => {
-                    self.status = is.read_enum_or_unknown()?;
+                32 => {
+                    self.talent_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.FAGNLGFJAIF = is.read_uint32()?;
+                56 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for IBCKNKPJFOJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+        if self.talent_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.talent_id);
         }
-        if self.FAGNLGFJAIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FAGNLGFJAIF);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(7, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for IBCKNKPJFOJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.PGIMNCFHJEA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.talent_id != 0 {
+            os.write_uint32(4, self.talent_id)?;
         }
-        if self.FAGNLGFJAIF != 0 {
-            os.write_uint32(3, self.FAGNLGFJAIF)?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for IBCKNKPJFOJ {
 
     fn clear(&mut self) {
         self.PGIMNCFHJEA.clear();
+        self.talent_id = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK);
-        self.FAGNLGFJAIF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IBCKNKPJFOJ {
         static instance: IBCKNKPJFOJ = IBCKNKPJFOJ {
             PGIMNCFHJEA: ::std::vec::Vec::new(),
+            talent_id: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            FAGNLGFJAIF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for IBCKNKPJFOJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBCKNKPJFOJ.proto\x1a\x17RogueTalentStatus.proto\x1a\x19RogueUnloc\
-    kProgress.proto\"\x93\x01\n\x0bIBCKNKPJFOJ\x126\n\x0bPGIMNCFHJEA\x18\r\
-    \x20\x03(\x0b2\x14.RogueUnlockProgressR\x0bPGIMNCFHJEA\x12*\n\x06status\
-    \x18\t\x20\x01(\x0e2\x12.RogueTalentStatusR\x06status\x12\x20\n\x0bFAGNL\
-    GFJAIF\x18\x03\x20\x01(\rR\x0bFAGNLGFJAIFb\x06proto3\
+    kProgress.proto\"\x8e\x01\n\x0bIBCKNKPJFOJ\x126\n\x0bPGIMNCFHJEA\x18\x03\
+    \x20\x03(\x0b2\x14.RogueUnlockProgressR\x0bPGIMNCFHJEA\x12\x1b\n\ttalent\
+    _id\x18\x04\x20\x01(\rR\x08talentId\x12*\n\x06status\x18\x07\x20\x01(\
+    \x0e2\x12.RogueTalentStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

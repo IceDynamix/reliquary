@@ -31,7 +31,7 @@ pub struct ContentPackageGetDataScRsp {
     // @@protoc_insertion_point(field:ContentPackageGetDataScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ContentPackageGetDataScRsp.data)
-    pub data: ::protobuf::MessageField<super::AGIEEKMCDMC::AGIEEKMCDMC>,
+    pub data: ::protobuf::MessageField<super::ContentPackageData::ContentPackageData>,
     // special fields
     // @@protoc_insertion_point(special_field:ContentPackageGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl ContentPackageGetDataScRsp {
             |m: &ContentPackageGetDataScRsp| { &m.retcode },
             |m: &mut ContentPackageGetDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AGIEEKMCDMC::AGIEEKMCDMC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ContentPackageData::ContentPackageData>(
             "data",
             |m: &ContentPackageGetDataScRsp| { &m.data },
             |m: &mut ContentPackageGetDataScRsp| { &mut m.data },
@@ -82,7 +82,7 @@ impl ::protobuf::Message for ContentPackageGetDataScRsp {
                 96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ContentPackageGetDataScRsp {
             os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageGetDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ContentPackageGetDataScRsp.proto\x1a\x11AGIEEKMCDMC.proto\"X\n\x1a\
-    ContentPackageGetDataScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07r\
-    etcode\x12\x20\n\x04data\x18\x0e\x20\x01(\x0b2\x0c.AGIEEKMCDMCR\x04datab\
-    \x06proto3\
+    \n\x20ContentPackageGetDataScRsp.proto\x1a\x18ContentPackageData.proto\"\
+    _\n\x1aContentPackageGetDataScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\
+    \rR\x07retcode\x12'\n\x04data\x18\x01\x20\x01(\x0b2\x13.ContentPackageDa\
+    taR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AGIEEKMCDMC::file_descriptor().clone());
+            deps.push(super::ContentPackageData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ContentPackageGetDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

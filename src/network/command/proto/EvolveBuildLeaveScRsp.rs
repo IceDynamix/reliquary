@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildLeaveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.LMGKMAOICGC)
-    pub LMGKMAOICGC: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.level_info)
+    pub level_info: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
     // @@protoc_insertion_point(field:EvolveBuildLeaveScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl EvolveBuildLeaveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "LMGKMAOICGC",
-            |m: &EvolveBuildLeaveScRsp| { &m.LMGKMAOICGC },
-            |m: &mut EvolveBuildLeaveScRsp| { &mut m.LMGKMAOICGC },
+            "level_info",
+            |m: &EvolveBuildLeaveScRsp| { &m.level_info },
+            |m: &mut EvolveBuildLeaveScRsp| { &mut m.level_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMGKMAOICGC)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
                 },
-                8 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
+        if let Some(v) = self.level_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.level_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EvolveBuildLeaveScRsp {
     }
 
     fn clear(&mut self) {
-        self.LMGKMAOICGC.clear();
+        self.level_info.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildLeaveScRsp {
         static instance: EvolveBuildLeaveScRsp = EvolveBuildLeaveScRsp {
-            LMGKMAOICGC: ::protobuf::MessageField::none(),
+            level_info: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildLeaveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEvolveBuildLeaveScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"j\n\
-    \x15EvolveBuildLeaveScRsp\x127\n\x0bLMGKMAOICGC\x18\x05\x20\x01(\x0b2\
-    \x15.EvolveBuildLevelInfoR\x0bLMGKMAOICGC\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bEvolveBuildLeaveScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\"g\n\
+    \x15EvolveBuildLeaveScRsp\x124\n\nlevel_info\x18\x0e\x20\x01(\x0b2\x15.E\
+    volveBuildLevelInfoR\tlevelInfo\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

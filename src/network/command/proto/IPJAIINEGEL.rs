@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IPJAIINEGEL {
     // message fields
-    // @@protoc_insertion_point(field:IPJAIINEGEL.ECBALMAEBJC)
-    pub ECBALMAEBJC: u32,
     // @@protoc_insertion_point(field:IPJAIINEGEL.BEJEEDAEBBE)
     pub BEJEEDAEBBE: u32,
+    // @@protoc_insertion_point(field:IPJAIINEGEL.ECBALMAEBJC)
+    pub ECBALMAEBJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IPJAIINEGEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl IPJAIINEGEL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECBALMAEBJC",
-            |m: &IPJAIINEGEL| { &m.ECBALMAEBJC },
-            |m: &mut IPJAIINEGEL| { &mut m.ECBALMAEBJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEJEEDAEBBE",
             |m: &IPJAIINEGEL| { &m.BEJEEDAEBBE },
             |m: &mut IPJAIINEGEL| { &mut m.BEJEEDAEBBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ECBALMAEBJC",
+            |m: &IPJAIINEGEL| { &m.ECBALMAEBJC },
+            |m: &mut IPJAIINEGEL| { &mut m.ECBALMAEBJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IPJAIINEGEL>(
             "IPJAIINEGEL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IPJAIINEGEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.ECBALMAEBJC = is.read_uint32()?;
-                },
-                8 => {
+                16 => {
                     self.BEJEEDAEBBE = is.read_uint32()?;
+                },
+                72 => {
+                    self.ECBALMAEBJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IPJAIINEGEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECBALMAEBJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ECBALMAEBJC);
-        }
         if self.BEJEEDAEBBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BEJEEDAEBBE);
+            my_size += ::protobuf::rt::uint32_size(2, self.BEJEEDAEBBE);
+        }
+        if self.ECBALMAEBJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ECBALMAEBJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for IPJAIINEGEL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECBALMAEBJC != 0 {
-            os.write_uint32(14, self.ECBALMAEBJC)?;
-        }
         if self.BEJEEDAEBBE != 0 {
-            os.write_uint32(1, self.BEJEEDAEBBE)?;
+            os.write_uint32(2, self.BEJEEDAEBBE)?;
+        }
+        if self.ECBALMAEBJC != 0 {
+            os.write_uint32(9, self.ECBALMAEBJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for IPJAIINEGEL {
     }
 
     fn clear(&mut self) {
-        self.ECBALMAEBJC = 0;
         self.BEJEEDAEBBE = 0;
+        self.ECBALMAEBJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IPJAIINEGEL {
         static instance: IPJAIINEGEL = IPJAIINEGEL {
-            ECBALMAEBJC: 0,
             BEJEEDAEBBE: 0,
+            ECBALMAEBJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IPJAIINEGEL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IPJAIINEGEL.proto\"Q\n\x0bIPJAIINEGEL\x12\x20\n\x0bECBALMAEBJC\x18\
-    \x0e\x20\x01(\rR\x0bECBALMAEBJC\x12\x20\n\x0bBEJEEDAEBBE\x18\x01\x20\x01\
-    (\rR\x0bBEJEEDAEBBEb\x06proto3\
+    \n\x11IPJAIINEGEL.proto\"Q\n\x0bIPJAIINEGEL\x12\x20\n\x0bBEJEEDAEBBE\x18\
+    \x02\x20\x01(\rR\x0bBEJEEDAEBBE\x12\x20\n\x0bECBALMAEBJC\x18\t\x20\x01(\
+    \rR\x0bECBALMAEBJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

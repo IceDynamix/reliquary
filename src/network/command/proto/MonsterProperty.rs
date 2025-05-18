@@ -34,14 +34,14 @@ pub struct MonsterProperty {
     pub TURN_FOOD_SWITCH_ATTACK: f64,
     // @@protoc_insertion_point(field:MonsterProperty.defence)
     pub defence: f64,
-    // @@protoc_insertion_point(field:MonsterProperty.IHEMIIFPBGJ)
-    pub IHEMIIFPBGJ: f64,
+    // @@protoc_insertion_point(field:MonsterProperty.shield)
+    pub shield: f64,
     // @@protoc_insertion_point(field:MonsterProperty.speed)
     pub speed: f64,
     // @@protoc_insertion_point(field:MonsterProperty.left_hp)
     pub left_hp: f64,
-    // @@protoc_insertion_point(field:MonsterProperty.NILPFIHMECI)
-    pub NILPFIHMECI: f64,
+    // @@protoc_insertion_point(field:MonsterProperty.enter_battle_hp)
+    pub enter_battle_hp: f64,
     // special fields
     // @@protoc_insertion_point(special_field:MonsterProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -77,9 +77,9 @@ impl MonsterProperty {
             |m: &mut MonsterProperty| { &mut m.defence },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHEMIIFPBGJ",
-            |m: &MonsterProperty| { &m.IHEMIIFPBGJ },
-            |m: &mut MonsterProperty| { &mut m.IHEMIIFPBGJ },
+            "shield",
+            |m: &MonsterProperty| { &m.shield },
+            |m: &mut MonsterProperty| { &mut m.shield },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "speed",
@@ -92,9 +92,9 @@ impl MonsterProperty {
             |m: &mut MonsterProperty| { &mut m.left_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NILPFIHMECI",
-            |m: &MonsterProperty| { &m.NILPFIHMECI },
-            |m: &mut MonsterProperty| { &mut m.NILPFIHMECI },
+            "enter_battle_hp",
+            |m: &MonsterProperty| { &m.enter_battle_hp },
+            |m: &mut MonsterProperty| { &mut m.enter_battle_hp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonsterProperty>(
             "MonsterProperty",
@@ -124,7 +124,7 @@ impl ::protobuf::Message for MonsterProperty {
                     self.defence = is.read_double()?;
                 },
                 33 => {
-                    self.IHEMIIFPBGJ = is.read_double()?;
+                    self.shield = is.read_double()?;
                 },
                 41 => {
                     self.speed = is.read_double()?;
@@ -133,7 +133,7 @@ impl ::protobuf::Message for MonsterProperty {
                     self.left_hp = is.read_double()?;
                 },
                 57 => {
-                    self.NILPFIHMECI = is.read_double()?;
+                    self.enter_battle_hp = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -156,7 +156,7 @@ impl ::protobuf::Message for MonsterProperty {
         if self.defence != 0. {
             my_size += 1 + 8;
         }
-        if self.IHEMIIFPBGJ != 0. {
+        if self.shield != 0. {
             my_size += 1 + 8;
         }
         if self.speed != 0. {
@@ -165,7 +165,7 @@ impl ::protobuf::Message for MonsterProperty {
         if self.left_hp != 0. {
             my_size += 1 + 8;
         }
-        if self.NILPFIHMECI != 0. {
+        if self.enter_battle_hp != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -183,8 +183,8 @@ impl ::protobuf::Message for MonsterProperty {
         if self.defence != 0. {
             os.write_double(3, self.defence)?;
         }
-        if self.IHEMIIFPBGJ != 0. {
-            os.write_double(4, self.IHEMIIFPBGJ)?;
+        if self.shield != 0. {
+            os.write_double(4, self.shield)?;
         }
         if self.speed != 0. {
             os.write_double(5, self.speed)?;
@@ -192,8 +192,8 @@ impl ::protobuf::Message for MonsterProperty {
         if self.left_hp != 0. {
             os.write_double(6, self.left_hp)?;
         }
-        if self.NILPFIHMECI != 0. {
-            os.write_double(7, self.NILPFIHMECI)?;
+        if self.enter_battle_hp != 0. {
+            os.write_double(7, self.enter_battle_hp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,10 +215,10 @@ impl ::protobuf::Message for MonsterProperty {
         self.max_hp = 0.;
         self.TURN_FOOD_SWITCH_ATTACK = 0.;
         self.defence = 0.;
-        self.IHEMIIFPBGJ = 0.;
+        self.shield = 0.;
         self.speed = 0.;
         self.left_hp = 0.;
-        self.NILPFIHMECI = 0.;
+        self.enter_battle_hp = 0.;
         self.special_fields.clear();
     }
 
@@ -227,10 +227,10 @@ impl ::protobuf::Message for MonsterProperty {
             max_hp: 0.,
             TURN_FOOD_SWITCH_ATTACK: 0.,
             defence: 0.,
-            IHEMIIFPBGJ: 0.,
+            shield: 0.,
             speed: 0.,
             left_hp: 0.,
-            NILPFIHMECI: 0.,
+            enter_battle_hp: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for MonsterProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15MonsterProperty.proto\"\xec\x01\n\x0fMonsterProperty\x12\x15\n\x06\
+    \n\x15MonsterProperty.proto\"\xe8\x01\n\x0fMonsterProperty\x12\x15\n\x06\
     max_hp\x18\x01\x20\x01(\x01R\x05maxHp\x125\n\x17TURN_FOOD_SWITCH_ATTACK\
     \x18\x02\x20\x01(\x01R\x14TURNFOODSWITCHATTACK\x12\x18\n\x07defence\x18\
-    \x03\x20\x01(\x01R\x07defence\x12\x20\n\x0bIHEMIIFPBGJ\x18\x04\x20\x01(\
-    \x01R\x0bIHEMIIFPBGJ\x12\x14\n\x05speed\x18\x05\x20\x01(\x01R\x05speed\
-    \x12\x17\n\x07left_hp\x18\x06\x20\x01(\x01R\x06leftHp\x12\x20\n\x0bNILPF\
-    IHMECI\x18\x07\x20\x01(\x01R\x0bNILPFIHMECIb\x06proto3\
+    \x03\x20\x01(\x01R\x07defence\x12\x16\n\x06shield\x18\x04\x20\x01(\x01R\
+    \x06shield\x12\x14\n\x05speed\x18\x05\x20\x01(\x01R\x05speed\x12\x17\n\
+    \x07left_hp\x18\x06\x20\x01(\x01R\x06leftHp\x12&\n\x0fenter_battle_hp\
+    \x18\x07\x20\x01(\x01R\renterBattleHpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

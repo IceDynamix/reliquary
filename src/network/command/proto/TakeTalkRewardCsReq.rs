@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTalkRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.IEMOEOIMHMA)
-    pub IEMOEOIMHMA: u32,
     // @@protoc_insertion_point(field:TakeTalkRewardCsReq.OLCONCNJMMP)
     pub OLCONCNJMMP: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.IEMOEOIMHMA)
+    pub IEMOEOIMHMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTalkRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TakeTalkRewardCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEMOEOIMHMA",
-            |m: &TakeTalkRewardCsReq| { &m.IEMOEOIMHMA },
-            |m: &mut TakeTalkRewardCsReq| { &mut m.IEMOEOIMHMA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
             "OLCONCNJMMP",
             |m: &TakeTalkRewardCsReq| { &m.OLCONCNJMMP },
             |m: &mut TakeTalkRewardCsReq| { &mut m.OLCONCNJMMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEMOEOIMHMA",
+            |m: &TakeTalkRewardCsReq| { &m.IEMOEOIMHMA },
+            |m: &mut TakeTalkRewardCsReq| { &mut m.IEMOEOIMHMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTalkRewardCsReq>(
             "TakeTalkRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.IEMOEOIMHMA = is.read_uint32()?;
-                },
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLCONCNJMMP)?;
+                },
+                24 => {
+                    self.IEMOEOIMHMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IEMOEOIMHMA);
-        }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.IEMOEOIMHMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IEMOEOIMHMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEMOEOIMHMA != 0 {
-            os.write_uint32(11, self.IEMOEOIMHMA)?;
-        }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.IEMOEOIMHMA != 0 {
+            os.write_uint32(3, self.IEMOEOIMHMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.IEMOEOIMHMA = 0;
         self.OLCONCNJMMP.clear();
+        self.IEMOEOIMHMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTalkRewardCsReq {
         static instance: TakeTalkRewardCsReq = TakeTalkRewardCsReq {
-            IEMOEOIMHMA: 0,
             OLCONCNJMMP: ::protobuf::MessageField::none(),
+            IEMOEOIMHMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardCsReq.proto\x1a\x0cVector.proto\"b\n\x13TakeTalkRewa\
-    rdCsReq\x12\x20\n\x0bIEMOEOIMHMA\x18\x0b\x20\x01(\rR\x0bIEMOEOIMHMA\x12)\
-    \n\x0bOLCONCNJMMP\x18\x01\x20\x01(\x0b2\x07.VectorR\x0bOLCONCNJMMPb\x06p\
-    roto3\
+    rdCsReq\x12)\n\x0bOLCONCNJMMP\x18\t\x20\x01(\x0b2\x07.VectorR\x0bOLCONCN\
+    JMMP\x12\x20\n\x0bIEMOEOIMHMA\x18\x03\x20\x01(\rR\x0bIEMOEOIMHMAb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

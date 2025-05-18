@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicReforgeConfirmCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicReforgeConfirmCsReq.discard_rerolled_affixes)
-    pub discard_rerolled_affixes: bool,
     // @@protoc_insertion_point(field:RelicReforgeConfirmCsReq.relic_unique_id)
     pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:RelicReforgeConfirmCsReq.is_cancel)
+    pub is_cancel: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RelicReforgeConfirmCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RelicReforgeConfirmCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "discard_rerolled_affixes",
-            |m: &RelicReforgeConfirmCsReq| { &m.discard_rerolled_affixes },
-            |m: &mut RelicReforgeConfirmCsReq| { &mut m.discard_rerolled_affixes },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "relic_unique_id",
             |m: &RelicReforgeConfirmCsReq| { &m.relic_unique_id },
             |m: &mut RelicReforgeConfirmCsReq| { &mut m.relic_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_cancel",
+            |m: &RelicReforgeConfirmCsReq| { &m.is_cancel },
+            |m: &mut RelicReforgeConfirmCsReq| { &mut m.is_cancel },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicReforgeConfirmCsReq>(
             "RelicReforgeConfirmCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.discard_rerolled_affixes = is.read_bool()?;
-                },
-                56 => {
+                32 => {
                     self.relic_unique_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.is_cancel = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.discard_rerolled_affixes != false {
-            my_size += 1 + 1;
-        }
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.relic_unique_id);
+        }
+        if self.is_cancel != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.discard_rerolled_affixes != false {
-            os.write_bool(8, self.discard_rerolled_affixes)?;
-        }
         if self.relic_unique_id != 0 {
-            os.write_uint32(7, self.relic_unique_id)?;
+            os.write_uint32(4, self.relic_unique_id)?;
+        }
+        if self.is_cancel != false {
+            os.write_bool(6, self.is_cancel)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     }
 
     fn clear(&mut self) {
-        self.discard_rerolled_affixes = false;
         self.relic_unique_id = 0;
+        self.is_cancel = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicReforgeConfirmCsReq {
         static instance: RelicReforgeConfirmCsReq = RelicReforgeConfirmCsReq {
-            discard_rerolled_affixes: false,
             relic_unique_id: 0,
+            is_cancel: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicReforgeConfirmCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRelicReforgeConfirmCsReq.proto\"|\n\x18RelicReforgeConfirmCsReq\
-    \x128\n\x18discard_rerolled_affixes\x18\x08\x20\x01(\x08R\x16discardRero\
-    lledAffixes\x12&\n\x0frelic_unique_id\x18\x07\x20\x01(\rR\rrelicUniqueId\
-    b\x06proto3\
+    \n\x1eRelicReforgeConfirmCsReq.proto\"_\n\x18RelicReforgeConfirmCsReq\
+    \x12&\n\x0frelic_unique_id\x18\x04\x20\x01(\rR\rrelicUniqueId\x12\x1b\n\
+    \tis_cancel\x18\x06\x20\x01(\x08R\x08isCancelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,16 +86,16 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.BELEODAIINB)?;
                 },
-                48 => {
+                16 => {
                     self.BELEODAIINB.push(is.read_uint32()?);
                 },
-                120 => {
+                88 => {
                     self.FPBGADBMEAD = is.read_bool()?;
                 },
-                16 => {
+                40 => {
                     self.PNGDDNAJCGG = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.BELEODAIINB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.BELEODAIINB);
         if self.FPBGADBMEAD != false {
             my_size += 1 + 1;
         }
         if self.PNGDDNAJCGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PNGDDNAJCGG);
+            my_size += ::protobuf::rt::uint32_size(5, self.PNGDDNAJCGG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MuseumTargetMissionFinishNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.BELEODAIINB)?;
+        os.write_repeated_packed_uint32(2, &self.BELEODAIINB)?;
         if self.FPBGADBMEAD != false {
-            os.write_bool(15, self.FPBGADBMEAD)?;
+            os.write_bool(11, self.FPBGADBMEAD)?;
         }
         if self.PNGDDNAJCGG != 0 {
-            os.write_uint32(2, self.PNGDDNAJCGG)?;
+            os.write_uint32(5, self.PNGDDNAJCGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTargetMissionFinishNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MuseumTargetMissionFinishNotify.proto\"\x87\x01\n\x1fMuseumTargetMiss\
-    ionFinishNotify\x12\x20\n\x0bBELEODAIINB\x18\x06\x20\x03(\rR\x0bBELEODAI\
-    INB\x12\x20\n\x0bFPBGADBMEAD\x18\x0f\x20\x01(\x08R\x0bFPBGADBMEAD\x12\
-    \x20\n\x0bPNGDDNAJCGG\x18\x02\x20\x01(\rR\x0bPNGDDNAJCGGb\x06proto3\
+    ionFinishNotify\x12\x20\n\x0bBELEODAIINB\x18\x02\x20\x03(\rR\x0bBELEODAI\
+    INB\x12\x20\n\x0bFPBGADBMEAD\x18\x0b\x20\x01(\x08R\x0bFPBGADBMEAD\x12\
+    \x20\n\x0bPNGDDNAJCGG\x18\x05\x20\x01(\rR\x0bPNGDDNAJCGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

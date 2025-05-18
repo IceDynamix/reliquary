@@ -30,14 +30,14 @@ pub struct RaidKickByServerScNotify {
     // message fields
     // @@protoc_insertion_point(field:RaidKickByServerScNotify.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::EGKFNDOOPNN::EGKFNDOOPNN>,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:RaidKickByServerScNotify.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:RaidKickByServerScNotify.CENIFNKNFNP)
     pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:RaidKickByServerScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::EGKFNDOOPNN::EGKFNDOOPNN>,
     // special fields
     // @@protoc_insertion_point(special_field:RaidKickByServerScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,14 @@ impl RaidKickByServerScNotify {
             |m: &mut RaidKickByServerScNotify| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &RaidKickByServerScNotify| { &m.reason },
-            |m: &mut RaidKickByServerScNotify| { &mut m.reason },
+            "CENIFNKNFNP",
+            |m: &RaidKickByServerScNotify| { &m.CENIFNKNFNP },
+            |m: &mut RaidKickByServerScNotify| { &mut m.CENIFNKNFNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &RaidKickByServerScNotify| { &m.world_level },
+            |m: &mut RaidKickByServerScNotify| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
@@ -73,14 +78,9 @@ impl RaidKickByServerScNotify {
             |m: &mut RaidKickByServerScNotify| { &mut m.scene },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &RaidKickByServerScNotify| { &m.world_level },
-            |m: &mut RaidKickByServerScNotify| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &RaidKickByServerScNotify| { &m.CENIFNKNFNP },
-            |m: &mut RaidKickByServerScNotify| { &mut m.CENIFNKNFNP },
+            "reason",
+            |m: &RaidKickByServerScNotify| { &m.reason },
+            |m: &mut RaidKickByServerScNotify| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidKickByServerScNotify>(
             "RaidKickByServerScNotify",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                40 => {
-                    self.reason = is.read_enum_or_unknown()?;
+                96 => {
+                    self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
-                },
-                16 => {
+                48 => {
                     self.world_level = is.read_uint32()?;
                 },
-                8 => {
-                    self.CENIFNKNFNP = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                },
+                80 => {
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,18 +131,18 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+        if self.CENIFNKNFNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CENIFNKNFNP);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
-        }
-        if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CENIFNKNFNP);
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if self.world_level != 0 {
-            os.write_uint32(2, self.world_level)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(1, self.CENIFNKNFNP)?;
+            os.write_uint32(12, self.CENIFNKNFNP)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(6, self.world_level)?;
+        }
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,20 +183,20 @@ impl ::protobuf::Message for RaidKickByServerScNotify {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE);
-        self.scene.clear();
-        self.world_level = 0;
         self.CENIFNKNFNP = 0;
+        self.world_level = 0;
+        self.scene.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::EGKFNDOOPNN::EGKFNDOOPNN::RAID_KICK_REASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidKickByServerScNotify {
         static instance: RaidKickByServerScNotify = RaidKickByServerScNotify {
             lineup: ::protobuf::MessageField::none(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            scene: ::protobuf::MessageField::none(),
-            world_level: 0,
             CENIFNKNFNP: 0,
+            world_level: 0,
+            scene: ::protobuf::MessageField::none(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for RaidKickByServerScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRaidKickByServerScNotify.proto\x1a\x11EGKFNDOOPNN.proto\x1a\x10Lin\
     eupInfo.proto\x1a\x0fSceneInfo.proto\"\xca\x01\n\x18RaidKickByServerScNo\
-    tify\x12#\n\x06lineup\x18\x04\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\
-    \x12$\n\x06reason\x18\x05\x20\x01(\x0e2\x0c.EGKFNDOOPNNR\x06reason\x12\
-    \x20\n\x05scene\x18\x0e\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12\x1f\n\
-    \x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x12\x20\n\x0bCENIFNKNFNP\
-    \x18\x01\x20\x01(\rR\x0bCENIFNKNFNPb\x06proto3\
+    tify\x12#\n\x06lineup\x18\x01\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\
+    \x12\x20\n\x0bCENIFNKNFNP\x18\x0c\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1f\n\
+    \x0bworld_level\x18\x06\x20\x01(\rR\nworldLevel\x12\x20\n\x05scene\x18\
+    \x02\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12$\n\x06reason\x18\n\x20\x01(\
+    \x0e2\x0c.EGKFNDOOPNNR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

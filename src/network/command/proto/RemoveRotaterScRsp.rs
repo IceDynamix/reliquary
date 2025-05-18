@@ -31,7 +31,7 @@ pub struct RemoveRotaterScRsp {
     // @@protoc_insertion_point(field:RemoveRotaterScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:RemoveRotaterScRsp.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotatorEnergyInfo::RotatorEnergyInfo>,
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // @@protoc_insertion_point(field:RemoveRotaterScRsp.rotater_data)
     pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
     // special fields
@@ -58,7 +58,7 @@ impl RemoveRotaterScRsp {
             |m: &RemoveRotaterScRsp| { &m.retcode },
             |m: &mut RemoveRotaterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotatorEnergyInfo::RotatorEnergyInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
             "energy_info",
             |m: &RemoveRotaterScRsp| { &m.energy_info },
             |m: &mut RemoveRotaterScRsp| { &mut m.energy_info },
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.rotater_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for RemoveRotaterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RemoveRotaterScRsp.proto\x1a\x11RotaterData.proto\x1a\x17RotatorEn\
+    \n\x18RemoveRotaterScRsp.proto\x1a\x11RotaterData.proto\x1a\x17RotaterEn\
     ergyInfo.proto\"\x94\x01\n\x12RemoveRotaterScRsp\x12\x18\n\x07retcode\
-    \x18\x0c\x20\x01(\rR\x07retcode\x123\n\x0benergy_info\x18\x0f\x20\x01(\
-    \x0b2\x12.RotatorEnergyInfoR\nenergyInfo\x12/\n\x0crotater_data\x18\x08\
-    \x20\x01(\x0b2\x0c.RotaterDataR\x0brotaterDatab\x06proto3\
+    \x18\n\x20\x01(\rR\x07retcode\x123\n\x0benergy_info\x18\x07\x20\x01(\x0b\
+    2\x12.RotaterEnergyInfoR\nenergyInfo\x12/\n\x0crotater_data\x18\t\x20\
+    \x01(\x0b2\x0c.RotaterDataR\x0brotaterDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::RotaterData::file_descriptor().clone());
-            deps.push(super::RotatorEnergyInfo::file_descriptor().clone());
+            deps.push(super::RotaterEnergyInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RemoveRotaterScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,7 +30,7 @@ pub enum CmdPlayerSyncType {
     // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.CmdPlayerSyncNone)
     CmdPlayerSyncNone = 0,
     // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.CmdPlayerSyncScNotify)
-    CmdPlayerSyncScNotify = 611,
+    CmdPlayerSyncScNotify = 695,
 }
 
 impl ::protobuf::Enum for CmdPlayerSyncType {
@@ -43,7 +43,7 @@ impl ::protobuf::Enum for CmdPlayerSyncType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerSyncType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerSyncType::CmdPlayerSyncNone),
-            611 => ::std::option::Option::Some(CmdPlayerSyncType::CmdPlayerSyncScNotify),
+            695 => ::std::option::Option::Some(CmdPlayerSyncType::CmdPlayerSyncScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -91,7 +91,7 @@ impl CmdPlayerSyncType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdPlayerSyncType.proto*F\n\x11CmdPlayerSyncType\x12\x15\n\x11CmdP\
-    layerSyncNone\x10\0\x12\x1a\n\x15CmdPlayerSyncScNotify\x10\xe3\x04b\x06p\
+    layerSyncNone\x10\0\x12\x1a\n\x15CmdPlayerSyncScNotify\x10\xb7\x05b\x06p\
     roto3\
 ";
 

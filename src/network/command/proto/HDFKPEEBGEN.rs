@@ -82,7 +82,7 @@ impl ::protobuf::Message for HDFKPEEBGEN {
                 64 => {
                     self.progress = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for HDFKPEEBGEN {
             my_size += ::protobuf::rt::uint32_size(8, self.progress);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+            my_size += ::protobuf::rt::uint32_size(3, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for HDFKPEEBGEN {
             os.write_uint32(8, self.progress)?;
         }
         if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+            os.write_uint32(3, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HDFKPEEBGEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDFKPEEBGEN.proto\"9\n\x0bHDFKPEEBGEN\x12\x1a\n\x08progress\x18\
-    \x08\x20\x01(\rR\x08progress\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02idb\
+    \x08\x20\x01(\rR\x08progress\x12\x0e\n\x02id\x18\x03\x20\x01(\rR\x02idb\
     \x06proto3\
 ";
 

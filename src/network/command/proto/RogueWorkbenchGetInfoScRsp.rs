@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -133,7 +133,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -186,7 +186,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchGetInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueWorkbenchGetInfoScRsp.proto\x1a\x11MHCCPDDKKDA.proto\"\xd4\
     \x01\n\x1aRogueWorkbenchGetInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\
-    \rR\x07retcode\x12N\n\x0bGAJPNNGMHNK\x18\x07\x20\x03(\x0b2,.RogueWorkben\
+    \rR\x07retcode\x12N\n\x0bGAJPNNGMHNK\x18\x0f\x20\x03(\x0b2,.RogueWorkben\
     chGetInfoScRsp.GAJPNNGMHNKEntryR\x0bGAJPNNGMHNK\x1aL\n\x10GAJPNNGMHNKEnt\
     ry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\x02\
     \x20\x01(\x0b2\x0c.MHCCPDDKKDAR\x05value:\x028\x01b\x06proto3\

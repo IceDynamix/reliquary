@@ -34,18 +34,11 @@ pub mod proto {
     pub mod Avatar;
     pub mod AvatarSkillTree;
     pub mod AvatarSync;
-    pub mod BLPMHFGIOAC;
-    pub mod BasicInfo;
     pub mod BlackInfo;
     pub mod BoardDataSync;
-    pub mod DMBMPAHKHLA;
     pub mod DoGachaScRsp;
     pub mod EquipRelic;
     pub mod Equipment;
-    pub mod FHABEIKAFBO;
-    pub mod GEMJDHNLKLC;
-    pub mod GKDIHIFFHFD;
-    pub mod GNIEJGNKKGG;
     pub mod GachaCeiling;
     pub mod GachaCeilingAvatar;
     pub mod GachaInfo;
@@ -54,25 +47,25 @@ pub mod proto {
     pub mod GetBagScRsp;
     pub mod GetGachaInfoScRsp;
     pub mod GetMultiPathAvatarInfoScRsp;
+    pub mod GroupStatus;
     pub mod GrowthTargetFunctionType;
-    pub mod HPNIICAAAJK;
-    pub mod HeadIcon;
-    pub mod IKAMMKLBOCO;
+    pub mod HeadIconData;
     pub mod Item;
     pub mod ItemList;
-    pub mod LOPCJEOJHCB;
-    pub mod LPFMHAJHDMM;
     pub mod LossInfo;
     pub mod Material;
     pub mod MessageGroupStatus;
     pub mod MessageSectionStatus;
     pub mod Mission;
+    pub mod MissionCustomValue;
+    pub mod MissionCustomValueList;
     pub mod MissionStatus;
     pub mod MissionSync;
-    pub mod MissionSyncType;
+    pub mod MissionSyncRecord;
     pub mod MultiPathAvatarType;
     pub mod MultiPathAvatarTypeInfo;
     pub mod PileItem;
+    pub mod PlayerBasicInfo;
     pub mod PlayerGetTokenScRsp;
     pub mod PlayerLoginScRsp;
     pub mod PlayerSyncScNotify;
@@ -81,8 +74,17 @@ pub mod proto {
     pub mod RecycleMaterial;
     pub mod Relic;
     pub mod RelicAffix;
+    pub mod SectionStatus;
     pub mod TurnFoodSwitch;
     pub mod WaitDelResource;
+
+    // Untranslated dependencies
+    pub mod BLPMHFGIOAC;
+    pub mod DMBMPAHKHLA;
+    pub mod FHABEIKAFBO;
+    pub mod GKDIHIFFHFD;
+    pub mod IKAMMKLBOCO;
+    pub mod LPFMHAJHDMM;
 }
 
 /// Game command header.

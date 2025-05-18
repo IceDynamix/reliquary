@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DKNMKFBOBJF {
     // message fields
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.EMBAGMMHIPA)
-    pub EMBAGMMHIPA: ::protobuf::MessageField<super::EFJDMHOAKOO::EFJDMHOAKOO>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.CHMHPCNGFAO)
-    pub CHMHPCNGFAO: ::protobuf::MessageField<super::GABCAPJGHFG::GABCAPJGHFG>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.GJBOLJKMGGE)
-    pub GJBOLJKMGGE: bool,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::EFJDMHOAKOO::EFJDMHOAKOO>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::IJMGMKCHHEF::IJMGMKCHHEF>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::GABCAPJGHFG::GABCAPJGHFG>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.game_miracle_info)
+    pub game_miracle_info: ::protobuf::MessageField<super::OMOCHGKHNIK::OMOCHGKHNIK>,
     // @@protoc_insertion_point(field:DKNMKFBOBJF.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.AABCHFBKPEG)
-    pub AABCHFBKPEG: ::protobuf::MessageField<super::BCLLBMEEDKP::BCLLBMEEDKP>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.EEPPKMPAJOH)
-    pub EEPPKMPAJOH: ::protobuf::MessageField<super::OMOCHGKHNIK::OMOCHGKHNIK>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.GJBOLJKMGGE)
+    pub GJBOLJKMGGE: bool,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.rogue_buff_info)
+    pub rogue_buff_info: ::protobuf::MessageField<super::CFMAPIMJDFC::CFMAPIMJDFC>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.virtual_item_info)
+    pub virtual_item_info: ::protobuf::MessageField<super::RogueVirtualItem::RogueVirtualItem>,
+    // @@protoc_insertion_point(field:DKNMKFBOBJF.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // @@protoc_insertion_point(field:DKNMKFBOBJF.CMBHKLPPPAD)
     pub CMBHKLPPPAD: ::protobuf::MessageField<super::OJCEALJIFND::OJCEALJIFND>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.map_info)
-    pub map_info: ::protobuf::MessageField<super::IJMGMKCHHEF::IJMGMKCHHEF>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.LGOPNBHHHBG)
-    pub LGOPNBHHHBG: ::protobuf::MessageField<super::CFMAPIMJDFC::CFMAPIMJDFC>,
-    // @@protoc_insertion_point(field:DKNMKFBOBJF.KNDMEILHKEJ)
-    pub KNDMEILHKEJ: ::protobuf::MessageField<super::KFPMAIAADMO::KFPMAIAADMO>,
     // special fields
     // @@protoc_insertion_point(special_field:DKNMKFBOBJF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,54 +68,54 @@ impl DKNMKFBOBJF {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EFJDMHOAKOO::EFJDMHOAKOO>(
-            "EMBAGMMHIPA",
-            |m: &DKNMKFBOBJF| { &m.EMBAGMMHIPA },
-            |m: &mut DKNMKFBOBJF| { &mut m.EMBAGMMHIPA },
+            "rogue_lineup_info",
+            |m: &DKNMKFBOBJF| { &m.rogue_lineup_info },
+            |m: &mut DKNMKFBOBJF| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IJMGMKCHHEF::IJMGMKCHHEF>(
+            "rogue_map",
+            |m: &DKNMKFBOBJF| { &m.rogue_map },
+            |m: &mut DKNMKFBOBJF| { &mut m.rogue_map },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GABCAPJGHFG::GABCAPJGHFG>(
-            "CHMHPCNGFAO",
-            |m: &DKNMKFBOBJF| { &m.CHMHPCNGFAO },
-            |m: &mut DKNMKFBOBJF| { &mut m.CHMHPCNGFAO },
+            "rogue_aeon_info",
+            |m: &DKNMKFBOBJF| { &m.rogue_aeon_info },
+            |m: &mut DKNMKFBOBJF| { &mut m.rogue_aeon_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJBOLJKMGGE",
-            |m: &DKNMKFBOBJF| { &m.GJBOLJKMGGE },
-            |m: &mut DKNMKFBOBJF| { &mut m.GJBOLJKMGGE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMOCHGKHNIK::OMOCHGKHNIK>(
+            "game_miracle_info",
+            |m: &DKNMKFBOBJF| { &m.game_miracle_info },
+            |m: &mut DKNMKFBOBJF| { &mut m.game_miracle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &DKNMKFBOBJF| { &m.status },
             |m: &mut DKNMKFBOBJF| { &mut m.status },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCLLBMEEDKP::BCLLBMEEDKP>(
-            "AABCHFBKPEG",
-            |m: &DKNMKFBOBJF| { &m.AABCHFBKPEG },
-            |m: &mut DKNMKFBOBJF| { &mut m.AABCHFBKPEG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJBOLJKMGGE",
+            |m: &DKNMKFBOBJF| { &m.GJBOLJKMGGE },
+            |m: &mut DKNMKFBOBJF| { &mut m.GJBOLJKMGGE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMOCHGKHNIK::OMOCHGKHNIK>(
-            "EEPPKMPAJOH",
-            |m: &DKNMKFBOBJF| { &m.EEPPKMPAJOH },
-            |m: &mut DKNMKFBOBJF| { &mut m.EEPPKMPAJOH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFMAPIMJDFC::CFMAPIMJDFC>(
+            "rogue_buff_info",
+            |m: &DKNMKFBOBJF| { &m.rogue_buff_info },
+            |m: &mut DKNMKFBOBJF| { &mut m.rogue_buff_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItem::RogueVirtualItem>(
+            "virtual_item_info",
+            |m: &DKNMKFBOBJF| { &m.virtual_item_info },
+            |m: &mut DKNMKFBOBJF| { &mut m.virtual_item_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "pending_action",
+            |m: &DKNMKFBOBJF| { &m.pending_action },
+            |m: &mut DKNMKFBOBJF| { &mut m.pending_action },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJCEALJIFND::OJCEALJIFND>(
             "CMBHKLPPPAD",
             |m: &DKNMKFBOBJF| { &m.CMBHKLPPPAD },
             |m: &mut DKNMKFBOBJF| { &mut m.CMBHKLPPPAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IJMGMKCHHEF::IJMGMKCHHEF>(
-            "map_info",
-            |m: &DKNMKFBOBJF| { &m.map_info },
-            |m: &mut DKNMKFBOBJF| { &mut m.map_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFMAPIMJDFC::CFMAPIMJDFC>(
-            "LGOPNBHHHBG",
-            |m: &DKNMKFBOBJF| { &m.LGOPNBHHHBG },
-            |m: &mut DKNMKFBOBJF| { &mut m.LGOPNBHHHBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFPMAIAADMO::KFPMAIAADMO>(
-            "KNDMEILHKEJ",
-            |m: &DKNMKFBOBJF| { &m.KNDMEILHKEJ },
-            |m: &mut DKNMKFBOBJF| { &mut m.KNDMEILHKEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DKNMKFBOBJF>(
             "DKNMKFBOBJF",
@@ -136,34 +136,34 @@ impl ::protobuf::Message for DKNMKFBOBJF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMBAGMMHIPA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHMHPCNGFAO)?;
-                },
-                112 => {
-                    self.GJBOLJKMGGE = is.read_bool()?;
-                },
-                120 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AABCHFBKPEG)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEPPKMPAJOH)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMBHKLPPPAD)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_info)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LGOPNBHHHBG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNDMEILHKEJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
+                },
+                104 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                80 => {
+                    self.GJBOLJKMGGE = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMBHKLPPPAD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,41 +177,41 @@ impl ::protobuf::Message for DKNMKFBOBJF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CHMHPCNGFAO.as_ref() {
+        if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.status.value());
         }
         if self.GJBOLJKMGGE != false {
             my_size += 1 + 1;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
-        }
-        if let Some(v) = self.AABCHFBKPEG.as_ref() {
+        if let Some(v) = self.rogue_buff_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
+        if let Some(v) = self.virtual_item_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.CMBHKLPPPAD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.map_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.LGOPNBHHHBG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -221,35 +221,35 @@ impl ::protobuf::Message for DKNMKFBOBJF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EMBAGMMHIPA.as_ref() {
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.CHMHPCNGFAO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.GJBOLJKMGGE != false {
-            os.write_bool(14, self.GJBOLJKMGGE)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if let Some(v) = self.AABCHFBKPEG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.EEPPKMPAJOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.CMBHKLPPPAD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if let Some(v) = self.map_info.as_ref() {
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.LGOPNBHHHBG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.KNDMEILHKEJ.as_ref() {
+        if let Some(v) = self.game_miracle_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.GJBOLJKMGGE != false {
+            os.write_bool(10, self.GJBOLJKMGGE)?;
+        }
+        if let Some(v) = self.rogue_buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.virtual_item_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if let Some(v) = self.CMBHKLPPPAD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -268,31 +268,31 @@ impl ::protobuf::Message for DKNMKFBOBJF {
     }
 
     fn clear(&mut self) {
-        self.EMBAGMMHIPA.clear();
-        self.CHMHPCNGFAO.clear();
-        self.GJBOLJKMGGE = false;
+        self.rogue_lineup_info.clear();
+        self.rogue_map.clear();
+        self.rogue_aeon_info.clear();
+        self.game_miracle_info.clear();
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
-        self.AABCHFBKPEG.clear();
-        self.EEPPKMPAJOH.clear();
+        self.GJBOLJKMGGE = false;
+        self.rogue_buff_info.clear();
+        self.virtual_item_info.clear();
+        self.pending_action.clear();
         self.CMBHKLPPPAD.clear();
-        self.map_info.clear();
-        self.LGOPNBHHHBG.clear();
-        self.KNDMEILHKEJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DKNMKFBOBJF {
         static instance: DKNMKFBOBJF = DKNMKFBOBJF {
-            EMBAGMMHIPA: ::protobuf::MessageField::none(),
-            CHMHPCNGFAO: ::protobuf::MessageField::none(),
-            GJBOLJKMGGE: false,
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            rogue_map: ::protobuf::MessageField::none(),
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            game_miracle_info: ::protobuf::MessageField::none(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            AABCHFBKPEG: ::protobuf::MessageField::none(),
-            EEPPKMPAJOH: ::protobuf::MessageField::none(),
+            GJBOLJKMGGE: false,
+            rogue_buff_info: ::protobuf::MessageField::none(),
+            virtual_item_info: ::protobuf::MessageField::none(),
+            pending_action: ::protobuf::MessageField::none(),
             CMBHKLPPPAD: ::protobuf::MessageField::none(),
-            map_info: ::protobuf::MessageField::none(),
-            LGOPNBHHHBG: ::protobuf::MessageField::none(),
-            KNDMEILHKEJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -317,21 +317,22 @@ impl ::protobuf::reflect::ProtobufValue for DKNMKFBOBJF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DKNMKFBOBJF.proto\x1a\x11BCLLBMEEDKP.proto\x1a\x11CFMAPIMJDFC.prot\
-    o\x1a\x11EFJDMHOAKOO.proto\x1a\x11GABCAPJGHFG.proto\x1a\x11IJMGMKCHHEF.p\
-    roto\x1a\x11KFPMAIAADMO.proto\x1a\x11OJCEALJIFND.proto\x1a\x11OMOCHGKHNI\
-    K.proto\x1a\x11RogueStatus.proto\"\xce\x03\n\x0bDKNMKFBOBJF\x12.\n\x0bEM\
-    BAGMMHIPA\x18\x03\x20\x01(\x0b2\x0c.EFJDMHOAKOOR\x0bEMBAGMMHIPA\x12.\n\
-    \x0bCHMHPCNGFAO\x18\x02\x20\x01(\x0b2\x0c.GABCAPJGHFGR\x0bCHMHPCNGFAO\
-    \x12\x20\n\x0bGJBOLJKMGGE\x18\x0e\x20\x01(\x08R\x0bGJBOLJKMGGE\x12$\n\
-    \x06status\x18\x0f\x20\x01(\x0e2\x0c.RogueStatusR\x06status\x12.\n\x0bAA\
-    BCHFBKPEG\x18\r\x20\x01(\x0b2\x0c.BCLLBMEEDKPR\x0bAABCHFBKPEG\x12.\n\x0b\
-    EEPPKMPAJOH\x18\x05\x20\x01(\x0b2\x0c.OMOCHGKHNIKR\x0bEEPPKMPAJOH\x12.\n\
-    \x0bCMBHKLPPPAD\x18\x0c\x20\x01(\x0b2\x0c.OJCEALJIFNDR\x0bCMBHKLPPPAD\
-    \x12'\n\x08map_info\x18\x01\x20\x01(\x0b2\x0c.IJMGMKCHHEFR\x07mapInfo\
-    \x12.\n\x0bLGOPNBHHHBG\x18\x07\x20\x01(\x0b2\x0c.CFMAPIMJDFCR\x0bLGOPNBH\
-    HHBG\x12.\n\x0bKNDMEILHKEJ\x18\x06\x20\x01(\x0b2\x0c.KFPMAIAADMOR\x0bKND\
-    MEILHKEJb\x06proto3\
+    \n\x11DKNMKFBOBJF.proto\x1a\x11CFMAPIMJDFC.proto\x1a\x11EFJDMHOAKOO.prot\
+    o\x1a\x11GABCAPJGHFG.proto\x1a\x11IJMGMKCHHEF.proto\x1a\x11OJCEALJIFND.p\
+    roto\x1a\x11OMOCHGKHNIK.proto\x1a\x1eRogueCommonPendingAction.proto\x1a\
+    \x11RogueStatus.proto\x1a\x16RogueVirtualItem.proto\"\x91\x04\n\x0bDKNMK\
+    FBOBJF\x128\n\x11rogue_lineup_info\x18\x03\x20\x01(\x0b2\x0c.EFJDMHOAKOO\
+    R\x0frogueLineupInfo\x12)\n\trogue_map\x18\x04\x20\x01(\x0b2\x0c.IJMGMKC\
+    HHEFR\x08rogueMap\x124\n\x0frogue_aeon_info\x18\x01\x20\x01(\x0b2\x0c.GA\
+    BCAPJGHFGR\rrogueAeonInfo\x128\n\x11game_miracle_info\x18\x06\x20\x01(\
+    \x0b2\x0c.OMOCHGKHNIKR\x0fgameMiracleInfo\x12$\n\x06status\x18\r\x20\x01\
+    (\x0e2\x0c.RogueStatusR\x06status\x12\x20\n\x0bGJBOLJKMGGE\x18\n\x20\x01\
+    (\x08R\x0bGJBOLJKMGGE\x124\n\x0frogue_buff_info\x18\x0b\x20\x01(\x0b2\
+    \x0c.CFMAPIMJDFCR\rrogueBuffInfo\x12=\n\x11virtual_item_info\x18\t\x20\
+    \x01(\x0b2\x11.RogueVirtualItemR\x0fvirtualItemInfo\x12@\n\x0epending_ac\
+    tion\x18\x0f\x20\x01(\x0b2\x19.RogueCommonPendingActionR\rpendingAction\
+    \x12.\n\x0bCMBHKLPPPAD\x18\x05\x20\x01(\x0b2\x0c.OJCEALJIFNDR\x0bCMBHKLP\
+    PPADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -349,15 +350,15 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(9);
-            deps.push(super::BCLLBMEEDKP::file_descriptor().clone());
             deps.push(super::CFMAPIMJDFC::file_descriptor().clone());
             deps.push(super::EFJDMHOAKOO::file_descriptor().clone());
             deps.push(super::GABCAPJGHFG::file_descriptor().clone());
             deps.push(super::IJMGMKCHHEF::file_descriptor().clone());
-            deps.push(super::KFPMAIAADMO::file_descriptor().clone());
             deps.push(super::OJCEALJIFND::file_descriptor().clone());
             deps.push(super::OMOCHGKHNIK::file_descriptor().clone());
+            deps.push(super::RogueCommonPendingAction::file_descriptor().clone());
             deps.push(super::RogueStatus::file_descriptor().clone());
+            deps.push(super::RogueVirtualItem::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DKNMKFBOBJF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

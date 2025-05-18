@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GetCurAssistScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetCurAssistScRsp.FRIEND_APPLY_SOURCE_ASSIST)
-    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::LPKDGNBJDEM::LPKDGNBJDEM>,
+    pub FRIEND_APPLY_SOURCE_ASSIST: ::protobuf::MessageField<super::PlayerAssistInfo::PlayerAssistInfo>,
     // @@protoc_insertion_point(field:GetCurAssistScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,7 +51,7 @@ impl GetCurAssistScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LPKDGNBJDEM::LPKDGNBJDEM>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerAssistInfo::PlayerAssistInfo>(
             "FRIEND_APPLY_SOURCE_ASSIST",
             |m: &GetCurAssistScRsp| { &m.FRIEND_APPLY_SOURCE_ASSIST },
             |m: &mut GetCurAssistScRsp| { &mut m.FRIEND_APPLY_SOURCE_ASSIST },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FRIEND_APPLY_SOURCE_ASSIST)?;
                 },
-                64 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetCurAssistScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetCurAssistScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FRIEND_APPLY_SOURCE_ASSIST.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCurAssistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetCurAssistScRsp.proto\x1a\x11LPKDGNBJDEM.proto\"x\n\x11GetCurAss\
-    istScRsp\x12I\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x0b\x20\x01(\x0b2\x0c.\
-    LPKDGNBJDEMR\x17FRIENDAPPLYSOURCEASSIST\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n\x17GetCurAssistScRsp.proto\x1a\x16PlayerAssistInfo.proto\"}\n\x11GetC\
+    urAssistScRsp\x12N\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x01\x20\x01(\x0b2\
+    \x11.PlayerAssistInfoR\x17FRIENDAPPLYSOURCEASSIST\x12\x18\n\x07retcode\
+    \x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LPKDGNBJDEM::file_descriptor().clone());
+            deps.push(super::PlayerAssistInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurAssistScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

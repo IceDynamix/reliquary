@@ -30,13 +30,13 @@ pub enum CmdReplayType {
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayTypeNone)
     CmdReplayTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
-    CmdGetReplayTokenCsReq = 3511,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
-    CmdGetReplayTokenScRsp = 3513,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoCsReq)
-    CmdGetPlayerReplayInfoCsReq = 3547,
+    CmdGetReplayTokenCsReq = 3595,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoScRsp)
-    CmdGetPlayerReplayInfoScRsp = 3509,
+    CmdGetPlayerReplayInfoScRsp = 3540,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
+    CmdGetReplayTokenScRsp = 3532,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoCsReq)
+    CmdGetPlayerReplayInfoCsReq = 3531,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
             0 => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
-            3511 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
-            3513 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            3547 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
-            3509 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
+            3595 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            3540 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
+            3532 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
+            3531 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -61,9 +61,9 @@ impl ::protobuf::Enum for CmdReplayType {
         match str {
             "CmdReplayTypeNone" => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
             "CmdGetReplayTokenCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            "CmdGetPlayerReplayInfoScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
             "CmdGetReplayTokenScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
             "CmdGetPlayerReplayInfoCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
-            "CmdGetPlayerReplayInfoScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -71,9 +71,9 @@ impl ::protobuf::Enum for CmdReplayType {
     const VALUES: &'static [CmdReplayType] = &[
         CmdReplayType::CmdReplayTypeNone,
         CmdReplayType::CmdGetReplayTokenCsReq,
+        CmdReplayType::CmdGetPlayerReplayInfoScRsp,
         CmdReplayType::CmdGetReplayTokenScRsp,
         CmdReplayType::CmdGetPlayerReplayInfoCsReq,
-        CmdReplayType::CmdGetPlayerReplayInfoScRsp,
     ];
 }
 
@@ -87,9 +87,9 @@ impl ::protobuf::EnumFull for CmdReplayType {
         let index = match self {
             CmdReplayType::CmdReplayTypeNone => 0,
             CmdReplayType::CmdGetReplayTokenCsReq => 1,
-            CmdReplayType::CmdGetReplayTokenScRsp => 2,
-            CmdReplayType::CmdGetPlayerReplayInfoCsReq => 3,
-            CmdReplayType::CmdGetPlayerReplayInfoScRsp => 4,
+            CmdReplayType::CmdGetPlayerReplayInfoScRsp => 2,
+            CmdReplayType::CmdGetReplayTokenScRsp => 3,
+            CmdReplayType::CmdGetPlayerReplayInfoCsReq => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl CmdReplayType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x15\n\x11CmdRepl\
-    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\xb7\x1b\x12\x1b\
-    \n\x16CmdGetReplayTokenScRsp\x10\xb9\x1b\x12\x20\n\x1bCmdGetPlayerReplay\
-    InfoCsReq\x10\xdb\x1b\x12\x20\n\x1bCmdGetPlayerReplayInfoScRsp\x10\xb5\
+    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\x8b\x1c\x12\x20\
+    \n\x1bCmdGetPlayerReplayInfoScRsp\x10\xd4\x1b\x12\x1b\n\x16CmdGetReplayT\
+    okenScRsp\x10\xcc\x1b\x12\x20\n\x1bCmdGetPlayerReplayInfoCsReq\x10\xcb\
     \x1bb\x06proto3\
 ";
 

@@ -28,30 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Avatar {
     // message fields
+    // @@protoc_insertion_point(field:Avatar.first_met_time_stamp)
+    pub first_met_time_stamp: u64,
+    // @@protoc_insertion_point(field:Avatar.equip_relic_list)
+    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
+    // @@protoc_insertion_point(field:Avatar.dressed_skin_id)
+    pub dressed_skin_id: u32,
+    // @@protoc_insertion_point(field:Avatar.avatar_skilltree_list)
+    pub avatar_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
+    // @@protoc_insertion_point(field:Avatar.equipment_unique_id)
+    pub equipment_unique_id: u32,
+    // @@protoc_insertion_point(field:Avatar.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:Avatar.has_taken_promotion_reward_list)
+    pub has_taken_promotion_reward_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:Avatar.is_marked)
     pub is_marked: bool,
+    // @@protoc_insertion_point(field:Avatar.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:Avatar.promotion)
+    pub promotion: u32,
     // @@protoc_insertion_point(field:Avatar.base_avatar_id)
     pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:Avatar.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:Avatar.avatar_skilltree_list)
-    pub avatar_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
-    // @@protoc_insertion_point(field:Avatar.dressed_skin_id)
-    pub dressed_skin_id: u32,
-    // @@protoc_insertion_point(field:Avatar.equip_relic_list)
-    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
-    // @@protoc_insertion_point(field:Avatar.equipment_unique_id)
-    pub equipment_unique_id: u32,
-    // @@protoc_insertion_point(field:Avatar.first_met_timestamp)
-    pub first_met_timestamp: u64,
-    // @@protoc_insertion_point(field:Avatar.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:Avatar.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:Avatar.taken_rewards)
-    pub taken_rewards: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:Avatar.promotion)
-    pub promotion: u32,
     // special fields
     // @@protoc_insertion_point(special_field:Avatar.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,9 +72,54 @@ impl Avatar {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "first_met_time_stamp",
+            |m: &Avatar| { &m.first_met_time_stamp },
+            |m: &mut Avatar| { &mut m.first_met_time_stamp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equip_relic_list",
+            |m: &Avatar| { &m.equip_relic_list },
+            |m: &mut Avatar| { &mut m.equip_relic_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dressed_skin_id",
+            |m: &Avatar| { &m.dressed_skin_id },
+            |m: &mut Avatar| { &mut m.dressed_skin_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_skilltree_list",
+            |m: &Avatar| { &m.avatar_skilltree_list },
+            |m: &mut Avatar| { &mut m.avatar_skilltree_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "equipment_unique_id",
+            |m: &Avatar| { &m.equipment_unique_id },
+            |m: &mut Avatar| { &mut m.equipment_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &Avatar| { &m.rank },
+            |m: &mut Avatar| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "has_taken_promotion_reward_list",
+            |m: &Avatar| { &m.has_taken_promotion_reward_list },
+            |m: &mut Avatar| { &mut m.has_taken_promotion_reward_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
             |m: &Avatar| { &m.is_marked },
             |m: &mut Avatar| { &mut m.is_marked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &Avatar| { &m.exp },
+            |m: &mut Avatar| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "promotion",
+            |m: &Avatar| { &m.promotion },
+            |m: &mut Avatar| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
@@ -85,51 +130,6 @@ impl Avatar {
             "level",
             |m: &Avatar| { &m.level },
             |m: &mut Avatar| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_skilltree_list",
-            |m: &Avatar| { &m.avatar_skilltree_list },
-            |m: &mut Avatar| { &mut m.avatar_skilltree_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dressed_skin_id",
-            |m: &Avatar| { &m.dressed_skin_id },
-            |m: &mut Avatar| { &mut m.dressed_skin_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equip_relic_list",
-            |m: &Avatar| { &m.equip_relic_list },
-            |m: &mut Avatar| { &mut m.equip_relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equipment_unique_id",
-            |m: &Avatar| { &m.equipment_unique_id },
-            |m: &mut Avatar| { &mut m.equipment_unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "first_met_timestamp",
-            |m: &Avatar| { &m.first_met_timestamp },
-            |m: &mut Avatar| { &mut m.first_met_timestamp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &Avatar| { &m.exp },
-            |m: &mut Avatar| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &Avatar| { &m.rank },
-            |m: &mut Avatar| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "taken_rewards",
-            |m: &Avatar| { &m.taken_rewards },
-            |m: &mut Avatar| { &mut m.taken_rewards },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &Avatar| { &m.promotion },
-            |m: &mut Avatar| { &mut m.promotion },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Avatar>(
             "Avatar",
@@ -149,44 +149,44 @@ impl ::protobuf::Message for Avatar {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_marked = is.read_bool()?;
+                32 => {
+                    self.first_met_time_stamp = is.read_uint64()?;
                 },
-                64 => {
-                    self.base_avatar_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.level = is.read_uint32()?;
-                },
-                18 => {
-                    self.avatar_skilltree_list.push(is.read_message()?);
-                },
-                88 => {
-                    self.dressed_skin_id = is.read_uint32()?;
-                },
-                50 => {
+                90 => {
                     self.equip_relic_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.equipment_unique_id = is.read_uint32()?;
-                },
-                120 => {
-                    self.first_met_timestamp = is.read_uint64()?;
-                },
                 40 => {
-                    self.exp = is.read_uint32()?;
+                    self.dressed_skin_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.rank = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.taken_rewards)?;
+                82 => {
+                    self.avatar_skilltree_list.push(is.read_message()?);
                 },
                 96 => {
-                    self.taken_rewards.push(is.read_uint32()?);
+                    self.equipment_unique_id = is.read_uint32()?;
                 },
-                8 => {
+                48 => {
+                    self.rank = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.has_taken_promotion_reward_list)?;
+                },
+                56 => {
+                    self.has_taken_promotion_reward_list.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.is_marked = is.read_bool()?;
+                },
+                72 => {
+                    self.exp = is.read_uint32()?;
+                },
+                112 => {
                     self.promotion = is.read_uint32()?;
+                },
+                24 => {
+                    self.base_avatar_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -200,41 +200,41 @@ impl ::protobuf::Message for Avatar {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_marked != false {
-            my_size += 1 + 1;
-        }
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.base_avatar_id);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
-        }
-        for value in &self.avatar_skilltree_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.dressed_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.dressed_skin_id);
+        if self.first_met_time_stamp != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.first_met_time_stamp);
         }
         for value in &self.equip_relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.dressed_skin_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.dressed_skin_id);
+        }
+        for value in &self.avatar_skilltree_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.equipment_unique_id);
-        }
-        if self.first_met_timestamp != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.first_met_timestamp);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.exp);
+            my_size += ::protobuf::rt::uint32_size(12, self.equipment_unique_id);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rank);
+            my_size += ::protobuf::rt::uint32_size(6, self.rank);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.taken_rewards);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.has_taken_promotion_reward_list);
+        if self.is_marked != false {
+            my_size += 1 + 1;
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+        }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(14, self.promotion);
+        }
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.base_avatar_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -242,39 +242,39 @@ impl ::protobuf::Message for Avatar {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_marked != false {
-            os.write_bool(3, self.is_marked)?;
-        }
-        if self.base_avatar_id != 0 {
-            os.write_uint32(8, self.base_avatar_id)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(10, self.level)?;
-        }
-        for v in &self.avatar_skilltree_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if self.dressed_skin_id != 0 {
-            os.write_uint32(11, self.dressed_skin_id)?;
+        if self.first_met_time_stamp != 0 {
+            os.write_uint64(4, self.first_met_time_stamp)?;
         }
         for v in &self.equip_relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.dressed_skin_id != 0 {
+            os.write_uint32(5, self.dressed_skin_id)?;
+        }
+        for v in &self.avatar_skilltree_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.equipment_unique_id != 0 {
-            os.write_uint32(13, self.equipment_unique_id)?;
-        }
-        if self.first_met_timestamp != 0 {
-            os.write_uint64(15, self.first_met_timestamp)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(5, self.exp)?;
+            os.write_uint32(12, self.equipment_unique_id)?;
         }
         if self.rank != 0 {
-            os.write_uint32(7, self.rank)?;
+            os.write_uint32(6, self.rank)?;
         }
-        os.write_repeated_packed_uint32(12, &self.taken_rewards)?;
+        os.write_repeated_packed_uint32(7, &self.has_taken_promotion_reward_list)?;
+        if self.is_marked != false {
+            os.write_bool(2, self.is_marked)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(9, self.exp)?;
+        }
         if self.promotion != 0 {
-            os.write_uint32(1, self.promotion)?;
+            os.write_uint32(14, self.promotion)?;
+        }
+        if self.base_avatar_id != 0 {
+            os.write_uint32(3, self.base_avatar_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -293,35 +293,35 @@ impl ::protobuf::Message for Avatar {
     }
 
     fn clear(&mut self) {
+        self.first_met_time_stamp = 0;
+        self.equip_relic_list.clear();
+        self.dressed_skin_id = 0;
+        self.avatar_skilltree_list.clear();
+        self.equipment_unique_id = 0;
+        self.rank = 0;
+        self.has_taken_promotion_reward_list.clear();
         self.is_marked = false;
+        self.exp = 0;
+        self.promotion = 0;
         self.base_avatar_id = 0;
         self.level = 0;
-        self.avatar_skilltree_list.clear();
-        self.dressed_skin_id = 0;
-        self.equip_relic_list.clear();
-        self.equipment_unique_id = 0;
-        self.first_met_timestamp = 0;
-        self.exp = 0;
-        self.rank = 0;
-        self.taken_rewards.clear();
-        self.promotion = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Avatar {
         static instance: Avatar = Avatar {
+            first_met_time_stamp: 0,
+            equip_relic_list: ::std::vec::Vec::new(),
+            dressed_skin_id: 0,
+            avatar_skilltree_list: ::std::vec::Vec::new(),
+            equipment_unique_id: 0,
+            rank: 0,
+            has_taken_promotion_reward_list: ::std::vec::Vec::new(),
             is_marked: false,
+            exp: 0,
+            promotion: 0,
             base_avatar_id: 0,
             level: 0,
-            avatar_skilltree_list: ::std::vec::Vec::new(),
-            dressed_skin_id: 0,
-            equip_relic_list: ::std::vec::Vec::new(),
-            equipment_unique_id: 0,
-            first_met_timestamp: 0,
-            exp: 0,
-            rank: 0,
-            taken_rewards: ::std::vec::Vec::new(),
-            promotion: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -347,17 +347,18 @@ impl ::protobuf::reflect::ProtobufValue for Avatar {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0cAvatar.proto\x1a\x15AvatarSkillTree.proto\x1a\x10EquipRelic.proto\
-    \"\xcf\x03\n\x06Avatar\x12\x1b\n\tis_marked\x18\x03\x20\x01(\x08R\x08isM\
-    arked\x12$\n\x0ebase_avatar_id\x18\x08\x20\x01(\rR\x0cbaseAvatarId\x12\
-    \x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12D\n\x15avatar_skilltree_li\
-    st\x18\x02\x20\x03(\x0b2\x10.AvatarSkillTreeR\x13avatarSkilltreeList\x12\
-    &\n\x0fdressed_skin_id\x18\x0b\x20\x01(\rR\rdressedSkinId\x125\n\x10equi\
-    p_relic_list\x18\x06\x20\x03(\x0b2\x0b.EquipRelicR\x0eequipRelicList\x12\
-    .\n\x13equipment_unique_id\x18\r\x20\x01(\rR\x11equipmentUniqueId\x12.\n\
-    \x13first_met_timestamp\x18\x0f\x20\x01(\x04R\x11firstMetTimestamp\x12\
-    \x10\n\x03exp\x18\x05\x20\x01(\rR\x03exp\x12\x12\n\x04rank\x18\x07\x20\
-    \x01(\rR\x04rank\x12#\n\rtaken_rewards\x18\x0c\x20\x03(\rR\x0ctakenRewar\
-    ds\x12\x1c\n\tpromotion\x18\x01\x20\x01(\rR\tpromotionb\x06proto3\
+    \"\xf1\x03\n\x06Avatar\x12/\n\x14first_met_time_stamp\x18\x04\x20\x01(\
+    \x04R\x11firstMetTimeStamp\x125\n\x10equip_relic_list\x18\x0b\x20\x03(\
+    \x0b2\x0b.EquipRelicR\x0eequipRelicList\x12&\n\x0fdressed_skin_id\x18\
+    \x05\x20\x01(\rR\rdressedSkinId\x12D\n\x15avatar_skilltree_list\x18\n\
+    \x20\x03(\x0b2\x10.AvatarSkillTreeR\x13avatarSkilltreeList\x12.\n\x13equ\
+    ipment_unique_id\x18\x0c\x20\x01(\rR\x11equipmentUniqueId\x12\x12\n\x04r\
+    ank\x18\x06\x20\x01(\rR\x04rank\x12D\n\x1fhas_taken_promotion_reward_lis\
+    t\x18\x07\x20\x03(\rR\x1bhasTakenPromotionRewardList\x12\x1b\n\tis_marke\
+    d\x18\x02\x20\x01(\x08R\x08isMarked\x12\x10\n\x03exp\x18\t\x20\x01(\rR\
+    \x03exp\x12\x1c\n\tpromotion\x18\x0e\x20\x01(\rR\tpromotion\x12$\n\x0eba\
+    se_avatar_id\x18\x03\x20\x01(\rR\x0cbaseAvatarId\x12\x14\n\x05level\x18\
+    \r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

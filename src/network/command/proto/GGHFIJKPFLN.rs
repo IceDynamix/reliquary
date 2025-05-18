@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GGHFIJKPFLN {
     // message fields
-    // @@protoc_insertion_point(field:GGHFIJKPFLN.BPLMPMEFEAM)
-    pub BPLMPMEFEAM: ::protobuf::EnumOrUnknown<super::FFNEDMEGPJD::FFNEDMEGPJD>,
     // @@protoc_insertion_point(field:GGHFIJKPFLN.JJEALOEMMKK)
     pub JJEALOEMMKK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GGHFIJKPFLN.BPLMPMEFEAM)
+    pub BPLMPMEFEAM: ::protobuf::EnumOrUnknown<super::FFNEDMEGPJD::FFNEDMEGPJD>,
     // message oneof groups
-    pub MICMCKAHMPL: ::std::option::Option<gghfijkpfln::MICMCKAHMPL>,
+    pub EKBAINPLKHI: ::std::option::Option<gghfijkpfln::EKBAINPLKHI>,
     // special fields
     // @@protoc_insertion_point(special_field:GGHFIJKPFLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,39 +50,39 @@ impl GGHFIJKPFLN {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 5;
+    // .ItemList JDIJKEGCIBP = 13;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v)) => v,
+        match self.EKBAINPLKHI {
+            ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(ref v)) => v,
             _ => <super::ItemList::ItemList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JDIJKEGCIBP(&mut self) {
-        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.EKBAINPLKHI = ::std::option::Option::None;
     }
 
     pub fn has_JDIJKEGCIBP(&self) -> bool {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(..)) => true,
+        match self.EKBAINPLKHI {
+            ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JDIJKEGCIBP(&mut self, v: super::ItemList::ItemList) {
-        self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(v))
+        self.EKBAINPLKHI = ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JDIJKEGCIBP(&mut self) -> &mut super::ItemList::ItemList {
-        if let ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(_)) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(_)) = self.EKBAINPLKHI {
         } else {
-            self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(super::ItemList::ItemList::new()));
+            self.EKBAINPLKHI = ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(super::ItemList::ItemList::new()));
         }
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref mut v)) => v,
+        match self.EKBAINPLKHI {
+            ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl GGHFIJKPFLN {
     // Take field
     pub fn take_JDIJKEGCIBP(&mut self) -> super::ItemList::ItemList {
         if self.has_JDIJKEGCIBP() {
-            match self.MICMCKAHMPL.take() {
-                ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(v)) => v,
+            match self.EKBAINPLKHI.take() {
+                ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -102,15 +102,15 @@ impl GGHFIJKPFLN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPLMPMEFEAM",
-            |m: &GGHFIJKPFLN| { &m.BPLMPMEFEAM },
-            |m: &mut GGHFIJKPFLN| { &mut m.BPLMPMEFEAM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JJEALOEMMKK",
             |m: &GGHFIJKPFLN| { &m.JJEALOEMMKK },
             |m: &mut GGHFIJKPFLN| { &mut m.JJEALOEMMKK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPLMPMEFEAM",
+            |m: &GGHFIJKPFLN| { &m.BPLMPMEFEAM },
+            |m: &mut GGHFIJKPFLN| { &mut m.BPLMPMEFEAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ItemList::ItemList>(
             "JDIJKEGCIBP",
@@ -119,7 +119,7 @@ impl GGHFIJKPFLN {
             GGHFIJKPFLN::mut_JDIJKEGCIBP,
             GGHFIJKPFLN::set_JDIJKEGCIBP,
         ));
-        oneofs.push(gghfijkpfln::MICMCKAHMPL::generated_oneof_descriptor_data());
+        oneofs.push(gghfijkpfln::EKBAINPLKHI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GGHFIJKPFLN>(
             "GGHFIJKPFLN",
             fields,
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JJEALOEMMKK)?;
+                },
+                40 => {
+                    self.JJEALOEMMKK.push(is.read_uint32()?);
+                },
+                120 => {
                     self.BPLMPMEFEAM = is.read_enum_or_unknown()?;
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JJEALOEMMKK)?;
-                },
-                104 => {
-                    self.JJEALOEMMKK.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
+                    self.EKBAINPLKHI = ::std::option::Option::Some(gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -162,13 +162,13 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JJEALOEMMKK);
         if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::FFNEDMEGPJD::FFNEDMEGPJD::ROGUE_DIALOGUE_RESULT_SUCC) {
-            my_size += ::protobuf::rt::int32_size(10, self.BPLMPMEFEAM.value());
+            my_size += ::protobuf::rt::int32_size(15, self.BPLMPMEFEAM.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.JJEALOEMMKK);
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.EKBAINPLKHI {
             match v {
-                &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
+                &gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -180,14 +180,14 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(5, &self.JJEALOEMMKK)?;
         if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::FFNEDMEGPJD::FFNEDMEGPJD::ROGUE_DIALOGUE_RESULT_SUCC) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.BPLMPMEFEAM))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.BPLMPMEFEAM))?;
         }
-        os.write_repeated_packed_uint32(13, &self.JJEALOEMMKK)?;
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.EKBAINPLKHI {
             match v {
-                &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                &gghfijkpfln::EKBAINPLKHI::JDIJKEGCIBP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -208,17 +208,17 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn clear(&mut self) {
-        self.BPLMPMEFEAM = ::protobuf::EnumOrUnknown::new(super::FFNEDMEGPJD::FFNEDMEGPJD::ROGUE_DIALOGUE_RESULT_SUCC);
         self.JJEALOEMMKK.clear();
-        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.BPLMPMEFEAM = ::protobuf::EnumOrUnknown::new(super::FFNEDMEGPJD::FFNEDMEGPJD::ROGUE_DIALOGUE_RESULT_SUCC);
+        self.EKBAINPLKHI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGHFIJKPFLN {
         static instance: GGHFIJKPFLN = GGHFIJKPFLN {
-            BPLMPMEFEAM: ::protobuf::EnumOrUnknown::from_i32(0),
             JJEALOEMMKK: ::std::vec::Vec::new(),
-            MICMCKAHMPL: ::std::option::Option::None,
+            BPLMPMEFEAM: ::protobuf::EnumOrUnknown::from_i32(0),
+            EKBAINPLKHI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -247,35 +247,35 @@ pub mod gghfijkpfln {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GGHFIJKPFLN.MICMCKAHMPL)
-    pub enum MICMCKAHMPL {
+    // @@protoc_insertion_point(oneof:GGHFIJKPFLN.EKBAINPLKHI)
+    pub enum EKBAINPLKHI {
         // @@protoc_insertion_point(oneof_field:GGHFIJKPFLN.JDIJKEGCIBP)
         JDIJKEGCIBP(super::super::ItemList::ItemList),
     }
 
-    impl ::protobuf::Oneof for MICMCKAHMPL {
+    impl ::protobuf::Oneof for EKBAINPLKHI {
     }
 
-    impl ::protobuf::OneofFull for MICMCKAHMPL {
+    impl ::protobuf::OneofFull for EKBAINPLKHI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GGHFIJKPFLN as ::protobuf::MessageFull>::descriptor().oneof_by_name("MICMCKAHMPL").unwrap()).clone()
+            descriptor.get(|| <super::GGHFIJKPFLN as ::protobuf::MessageFull>::descriptor().oneof_by_name("EKBAINPLKHI").unwrap()).clone()
         }
     }
 
-    impl MICMCKAHMPL {
+    impl EKBAINPLKHI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MICMCKAHMPL>("MICMCKAHMPL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<EKBAINPLKHI>("EKBAINPLKHI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGHFIJKPFLN.proto\x1a\x11FFNEDMEGPJD.proto\x1a\x0eItemList.proto\"\
-    \x9d\x01\n\x0bGGHFIJKPFLN\x12.\n\x0bBPLMPMEFEAM\x18\n\x20\x01(\x0e2\x0c.\
-    FFNEDMEGPJDR\x0bBPLMPMEFEAM\x12\x20\n\x0bJJEALOEMMKK\x18\r\x20\x03(\rR\
-    \x0bJJEALOEMMKK\x12-\n\x0bJDIJKEGCIBP\x18\x05\x20\x01(\x0b2\t.ItemListH\
-    \0R\x0bJDIJKEGCIBPB\r\n\x0bMICMCKAHMPLb\x06proto3\
+    \x9d\x01\n\x0bGGHFIJKPFLN\x12\x20\n\x0bJJEALOEMMKK\x18\x05\x20\x03(\rR\
+    \x0bJJEALOEMMKK\x12.\n\x0bBPLMPMEFEAM\x18\x0f\x20\x01(\x0e2\x0c.FFNEDMEG\
+    PJDR\x0bBPLMPMEFEAM\x12-\n\x0bJDIJKEGCIBP\x18\r\x20\x01(\x0b2\t.ItemList\
+    H\0R\x0bJDIJKEGCIBPB\r\n\x0bEKBAINPLKHIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

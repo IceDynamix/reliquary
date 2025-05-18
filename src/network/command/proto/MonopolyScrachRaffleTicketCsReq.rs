@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.PMELCDFHGKC = is.read_uint64()?;
                 },
-                8 => {
+                96 => {
                     self.pool_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PMELCDFHGKC != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.PMELCDFHGKC);
+            my_size += ::protobuf::rt::uint64_size(6, self.PMELCDFHGKC);
         }
         if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.pool_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.pool_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMELCDFHGKC != 0 {
-            os.write_uint64(4, self.PMELCDFHGKC)?;
+            os.write_uint64(6, self.PMELCDFHGKC)?;
         }
         if self.pool_id != 0 {
-            os.write_uint32(1, self.pool_id)?;
+            os.write_uint32(12, self.pool_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyScrachRaffleTicketCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyScrachRaffleTicketCsReq.proto\"\\\n\x1fMonopolyScrachRaffleTi\
-    cketCsReq\x12\x20\n\x0bPMELCDFHGKC\x18\x04\x20\x01(\x04R\x0bPMELCDFHGKC\
-    \x12\x17\n\x07pool_id\x18\x01\x20\x01(\rR\x06poolIdb\x06proto3\
+    cketCsReq\x12\x20\n\x0bPMELCDFHGKC\x18\x06\x20\x01(\x04R\x0bPMELCDFHGKC\
+    \x12\x17\n\x07pool_id\x18\x0c\x20\x01(\rR\x06poolIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

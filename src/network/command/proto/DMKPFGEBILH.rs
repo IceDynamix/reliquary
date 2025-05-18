@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMKPFGEBILH {
     // message fields
-    // @@protoc_insertion_point(field:DMKPFGEBILH.DMMAMJGNGNN)
-    pub DMMAMJGNGNN: i32,
-    // @@protoc_insertion_point(field:DMKPFGEBILH.operation_item_cost_list)
-    pub operation_item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
     // @@protoc_insertion_point(field:DMKPFGEBILH.JIFKHCKPNFM)
     pub JIFKHCKPNFM: u32,
+    // @@protoc_insertion_point(field:DMKPFGEBILH.DMMAMJGNGNN)
+    pub DMMAMJGNGNN: i32,
+    // @@protoc_insertion_point(field:DMKPFGEBILH.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:DMKPFGEBILH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl DMKPFGEBILH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIFKHCKPNFM",
+            |m: &DMKPFGEBILH| { &m.JIFKHCKPNFM },
+            |m: &mut DMKPFGEBILH| { &mut m.JIFKHCKPNFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMMAMJGNGNN",
             |m: &DMKPFGEBILH| { &m.DMMAMJGNGNN },
             |m: &mut DMKPFGEBILH| { &mut m.DMMAMJGNGNN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "operation_item_cost_list",
-            |m: &DMKPFGEBILH| { &m.operation_item_cost_list },
-            |m: &mut DMKPFGEBILH| { &mut m.operation_item_cost_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &DMKPFGEBILH| { &m.JIFKHCKPNFM },
-            |m: &mut DMKPFGEBILH| { &mut m.JIFKHCKPNFM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &DMKPFGEBILH| { &m.cost_data },
+            |m: &mut DMKPFGEBILH| { &mut m.cost_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DMKPFGEBILH>(
             "DMKPFGEBILH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DMKPFGEBILH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
+                },
+                56 => {
                     self.DMMAMJGNGNN = is.read_int32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.operation_item_cost_list)?;
-                },
-                104 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for DMKPFGEBILH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.DMMAMJGNGNN);
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JIFKHCKPNFM);
         }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
+        if self.DMMAMJGNGNN != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.DMMAMJGNGNN);
+        }
+        if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JIFKHCKPNFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for DMKPFGEBILH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMMAMJGNGNN != 0 {
-            os.write_int32(14, self.DMMAMJGNGNN)?;
-        }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(13, self.JIFKHCKPNFM)?;
+            os.write_uint32(4, self.JIFKHCKPNFM)?;
+        }
+        if self.DMMAMJGNGNN != 0 {
+            os.write_int32(7, self.DMMAMJGNGNN)?;
+        }
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for DMKPFGEBILH {
     }
 
     fn clear(&mut self) {
-        self.DMMAMJGNGNN = 0;
-        self.operation_item_cost_list.clear();
         self.JIFKHCKPNFM = 0;
+        self.DMMAMJGNGNN = 0;
+        self.cost_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DMKPFGEBILH {
         static instance: DMKPFGEBILH = DMKPFGEBILH {
-            DMMAMJGNGNN: 0,
-            operation_item_cost_list: ::protobuf::MessageField::none(),
             JIFKHCKPNFM: 0,
+            DMMAMJGNGNN: 0,
+            cost_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for DMKPFGEBILH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DMKPFGEBILH.proto\x1a\x12ItemCostList.proto\"\x99\x01\n\x0bDMKPFGE\
-    BILH\x12\x20\n\x0bDMMAMJGNGNN\x18\x0e\x20\x01(\x05R\x0bDMMAMJGNGNN\x12F\
-    \n\x18operation_item_cost_list\x18\n\x20\x01(\x0b2\r.ItemCostListR\x15op\
-    erationItemCostList\x12\x20\n\x0bJIFKHCKPNFM\x18\r\x20\x01(\rR\x0bJIFKHC\
-    KPNFMb\x06proto3\
+    \n\x11DMKPFGEBILH.proto\x1a\x12ItemCostData.proto\"}\n\x0bDMKPFGEBILH\
+    \x12\x20\n\x0bJIFKHCKPNFM\x18\x04\x20\x01(\rR\x0bJIFKHCKPNFM\x12\x20\n\
+    \x0bDMMAMJGNGNN\x18\x07\x20\x01(\x05R\x0bDMMAMJGNGNN\x12*\n\tcost_data\
+    \x18\t\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DMKPFGEBILH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FPNJLDDAMGH {
     // message fields
-    // @@protoc_insertion_point(field:FPNJLDDAMGH.DNAJFMPCMLL)
-    pub DNAJFMPCMLL: u32,
-    // @@protoc_insertion_point(field:FPNJLDDAMGH.COIFHFPEGPH)
-    pub COIFHFPEGPH: i64,
     // @@protoc_insertion_point(field:FPNJLDDAMGH.end_time)
     pub end_time: i64,
     // @@protoc_insertion_point(field:FPNJLDDAMGH.MIGFMPJBELG)
     pub MIGFMPJBELG: ::std::vec::Vec<super::OIOPBDBJHIE::OIOPBDBJHIE>,
+    // @@protoc_insertion_point(field:FPNJLDDAMGH.COIFHFPEGPH)
+    pub COIFHFPEGPH: i64,
+    // @@protoc_insertion_point(field:FPNJLDDAMGH.gift_type)
+    pub gift_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FPNJLDDAMGH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl FPNJLDDAMGH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAJFMPCMLL",
-            |m: &FPNJLDDAMGH| { &m.DNAJFMPCMLL },
-            |m: &mut FPNJLDDAMGH| { &mut m.DNAJFMPCMLL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COIFHFPEGPH",
-            |m: &FPNJLDDAMGH| { &m.COIFHFPEGPH },
-            |m: &mut FPNJLDDAMGH| { &mut m.COIFHFPEGPH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
             |m: &FPNJLDDAMGH| { &m.end_time },
             |m: &mut FPNJLDDAMGH| { &mut m.end_time },
@@ -74,6 +64,16 @@ impl FPNJLDDAMGH {
             "MIGFMPJBELG",
             |m: &FPNJLDDAMGH| { &m.MIGFMPJBELG },
             |m: &mut FPNJLDDAMGH| { &mut m.MIGFMPJBELG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "COIFHFPEGPH",
+            |m: &FPNJLDDAMGH| { &m.COIFHFPEGPH },
+            |m: &mut FPNJLDDAMGH| { &mut m.COIFHFPEGPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gift_type",
+            |m: &FPNJLDDAMGH| { &m.gift_type },
+            |m: &mut FPNJLDDAMGH| { &mut m.gift_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FPNJLDDAMGH>(
             "FPNJLDDAMGH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FPNJLDDAMGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DNAJFMPCMLL = is.read_uint32()?;
-                },
-                112 => {
-                    self.COIFHFPEGPH = is.read_int64()?;
-                },
-                96 => {
+                120 => {
                     self.end_time = is.read_int64()?;
                 },
-                106 => {
+                114 => {
                     self.MIGFMPJBELG.push(is.read_message()?);
+                },
+                104 => {
+                    self.COIFHFPEGPH = is.read_int64()?;
+                },
+                80 => {
+                    self.gift_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for FPNJLDDAMGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNAJFMPCMLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DNAJFMPCMLL);
-        }
-        if self.COIFHFPEGPH != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.COIFHFPEGPH);
-        }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.end_time);
+            my_size += ::protobuf::rt::int64_size(15, self.end_time);
         }
         for value in &self.MIGFMPJBELG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.COIFHFPEGPH != 0 {
+            my_size += ::protobuf::rt::int64_size(13, self.COIFHFPEGPH);
+        }
+        if self.gift_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.gift_type);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNAJFMPCMLL != 0 {
-            os.write_uint32(7, self.DNAJFMPCMLL)?;
-        }
-        if self.COIFHFPEGPH != 0 {
-            os.write_int64(14, self.COIFHFPEGPH)?;
-        }
         if self.end_time != 0 {
-            os.write_int64(12, self.end_time)?;
+            os.write_int64(15, self.end_time)?;
         }
         for v in &self.MIGFMPJBELG {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        if self.COIFHFPEGPH != 0 {
+            os.write_int64(13, self.COIFHFPEGPH)?;
+        }
+        if self.gift_type != 0 {
+            os.write_uint32(10, self.gift_type)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for FPNJLDDAMGH {
     }
 
     fn clear(&mut self) {
-        self.DNAJFMPCMLL = 0;
-        self.COIFHFPEGPH = 0;
         self.end_time = 0;
         self.MIGFMPJBELG.clear();
+        self.COIFHFPEGPH = 0;
+        self.gift_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FPNJLDDAMGH {
         static instance: FPNJLDDAMGH = FPNJLDDAMGH {
-            DNAJFMPCMLL: 0,
-            COIFHFPEGPH: 0,
             end_time: 0,
             MIGFMPJBELG: ::std::vec::Vec::new(),
+            COIFHFPEGPH: 0,
+            gift_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for FPNJLDDAMGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FPNJLDDAMGH.proto\x1a\x11OIOPBDBJHIE.proto\"\x9c\x01\n\x0bFPNJLDDA\
-    MGH\x12\x20\n\x0bDNAJFMPCMLL\x18\x07\x20\x01(\rR\x0bDNAJFMPCMLL\x12\x20\
-    \n\x0bCOIFHFPEGPH\x18\x0e\x20\x01(\x03R\x0bCOIFHFPEGPH\x12\x19\n\x08end_\
-    time\x18\x0c\x20\x01(\x03R\x07endTime\x12.\n\x0bMIGFMPJBELG\x18\r\x20\
-    \x03(\x0b2\x0c.OIOPBDBJHIER\x0bMIGFMPJBELGb\x06proto3\
+    \n\x11FPNJLDDAMGH.proto\x1a\x11OIOPBDBJHIE.proto\"\x97\x01\n\x0bFPNJLDDA\
+    MGH\x12\x19\n\x08end_time\x18\x0f\x20\x01(\x03R\x07endTime\x12.\n\x0bMIG\
+    FMPJBELG\x18\x0e\x20\x03(\x0b2\x0c.OIOPBDBJHIER\x0bMIGFMPJBELG\x12\x20\n\
+    \x0bCOIFHFPEGPH\x18\r\x20\x01(\x03R\x0bCOIFHFPEGPH\x12\x1b\n\tgift_type\
+    \x18\n\x20\x01(\rR\x08giftTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

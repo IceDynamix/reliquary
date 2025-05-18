@@ -79,7 +79,7 @@ impl ::protobuf::Message for BLPMHFGIOAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                56 => {
                     self.stamina = is.read_uint32()?;
                 },
                 104 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BLPMHFGIOAC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(7, self.stamina);
         }
         if self.KENEKNBJGMG != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.KENEKNBJGMG);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for BLPMHFGIOAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stamina != 0 {
-            os.write_uint32(15, self.stamina)?;
+            os.write_uint32(7, self.stamina)?;
         }
         if self.KENEKNBJGMG != 0 {
             os.write_uint32(13, self.KENEKNBJGMG)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for BLPMHFGIOAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BLPMHFGIOAC.proto\"I\n\x0bBLPMHFGIOAC\x12\x18\n\x07stamina\x18\x0f\
+    \n\x11BLPMHFGIOAC.proto\"I\n\x0bBLPMHFGIOAC\x12\x18\n\x07stamina\x18\x07\
     \x20\x01(\rR\x07stamina\x12\x20\n\x0bKENEKNBJGMG\x18\r\x20\x01(\rR\x0bKE\
     NEKNBJGMGb\x06proto3\
 ";

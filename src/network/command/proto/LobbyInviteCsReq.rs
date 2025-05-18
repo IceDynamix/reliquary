@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyInviteCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LobbyInviteCsReq.search_uid_list)
-    pub search_uid_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LobbyInviteCsReq.uid_list)
+    pub uid_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyInviteCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LobbyInviteCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "search_uid_list",
-            |m: &LobbyInviteCsReq| { &m.search_uid_list },
-            |m: &mut LobbyInviteCsReq| { &mut m.search_uid_list },
+            "uid_list",
+            |m: &LobbyInviteCsReq| { &m.uid_list },
+            |m: &mut LobbyInviteCsReq| { &mut m.uid_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyInviteCsReq>(
             "LobbyInviteCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for LobbyInviteCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.search_uid_list)?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.uid_list)?;
                 },
-                112 => {
-                    self.search_uid_list.push(is.read_uint32()?);
+                96 => {
+                    self.uid_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for LobbyInviteCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.search_uid_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.uid_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.search_uid_list)?;
+        os.write_repeated_packed_uint32(12, &self.uid_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for LobbyInviteCsReq {
     }
 
     fn clear(&mut self) {
-        self.search_uid_list.clear();
+        self.uid_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInviteCsReq {
         static instance: LobbyInviteCsReq = LobbyInviteCsReq {
-            search_uid_list: ::std::vec::Vec::new(),
+            uid_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInviteCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16LobbyInviteCsReq.proto\":\n\x10LobbyInviteCsReq\x12&\n\x0fsearch_u\
-    id_list\x18\x0e\x20\x03(\rR\rsearchUidListb\x06proto3\
+    \n\x16LobbyInviteCsReq.proto\"-\n\x10LobbyInviteCsReq\x12\x19\n\x08uid_l\
+    ist\x18\x0c\x20\x03(\rR\x07uidListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

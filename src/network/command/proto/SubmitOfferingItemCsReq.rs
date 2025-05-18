@@ -79,10 +79,10 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                96 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.KMNLBGOEEHG = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.interacted_prop_entity_id);
         }
         if self.KMNLBGOEEHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KMNLBGOEEHG);
+            my_size += ::protobuf::rt::uint32_size(5, self.KMNLBGOEEHG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SubmitOfferingItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(11, self.interacted_prop_entity_id)?;
+            os.write_uint32(12, self.interacted_prop_entity_id)?;
         }
         if self.KMNLBGOEEHG != 0 {
-            os.write_uint32(15, self.KMNLBGOEEHG)?;
+            os.write_uint32(5, self.KMNLBGOEEHG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SubmitOfferingItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSubmitOfferingItemCsReq.proto\"v\n\x17SubmitOfferingItemCsReq\x129\
-    \n\x19interacted_prop_entity_id\x18\x0b\x20\x01(\rR\x16interactedPropEnt\
-    ityId\x12\x20\n\x0bKMNLBGOEEHG\x18\x0f\x20\x01(\rR\x0bKMNLBGOEEHGb\x06pr\
+    \n\x19interacted_prop_entity_id\x18\x0c\x20\x01(\rR\x16interactedPropEnt\
+    ityId\x12\x20\n\x0bKMNLBGOEEHG\x18\x05\x20\x01(\rR\x0bKMNLBGOEEHGb\x06pr\
     oto3\
 ";
 

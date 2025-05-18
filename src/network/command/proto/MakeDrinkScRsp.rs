@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeDrinkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MakeDrinkScRsp.is_succ)
-    pub is_succ: bool,
     // @@protoc_insertion_point(field:MakeDrinkScRsp.next_chat_id)
     pub next_chat_id: u32,
     // @@protoc_insertion_point(field:MakeDrinkScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MakeDrinkScRsp.is_succ)
+    pub is_succ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MakeDrinkScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MakeDrinkScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_succ",
-            |m: &MakeDrinkScRsp| { &m.is_succ },
-            |m: &mut MakeDrinkScRsp| { &mut m.is_succ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "next_chat_id",
             |m: &MakeDrinkScRsp| { &m.next_chat_id },
             |m: &mut MakeDrinkScRsp| { &mut m.next_chat_id },
@@ -67,6 +62,11 @@ impl MakeDrinkScRsp {
             "retcode",
             |m: &MakeDrinkScRsp| { &m.retcode },
             |m: &mut MakeDrinkScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_succ",
+            |m: &MakeDrinkScRsp| { &m.is_succ },
+            |m: &mut MakeDrinkScRsp| { &mut m.is_succ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MakeDrinkScRsp>(
             "MakeDrinkScRsp",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for MakeDrinkScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.is_succ = is.read_bool()?;
-                },
-                24 => {
                     self.next_chat_id = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.is_succ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_succ != false {
-            my_size += 1 + 1;
-        }
         if self.next_chat_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.next_chat_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.next_chat_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if self.is_succ != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_succ != false {
-            os.write_bool(1, self.is_succ)?;
-        }
         if self.next_chat_id != 0 {
-            os.write_uint32(3, self.next_chat_id)?;
+            os.write_uint32(1, self.next_chat_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
+        }
+        if self.is_succ != false {
+            os.write_bool(5, self.is_succ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_succ = false;
         self.next_chat_id = 0;
         self.retcode = 0;
+        self.is_succ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeDrinkScRsp {
         static instance: MakeDrinkScRsp = MakeDrinkScRsp {
-            is_succ: false,
             next_chat_id: 0,
             retcode: 0,
+            is_succ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MakeDrinkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14MakeDrinkScRsp.proto\"e\n\x0eMakeDrinkScRsp\x12\x17\n\x07is_succ\
-    \x18\x01\x20\x01(\x08R\x06isSucc\x12\x20\n\x0cnext_chat_id\x18\x03\x20\
-    \x01(\rR\nnextChatId\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \n\x14MakeDrinkScRsp.proto\"e\n\x0eMakeDrinkScRsp\x12\x20\n\x0cnext_chat\
+    _id\x18\x01\x20\x01(\rR\nnextChatId\x12\x18\n\x07retcode\x18\n\x20\x01(\
+    \rR\x07retcode\x12\x17\n\x07is_succ\x18\x05\x20\x01(\x08R\x06isSuccb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

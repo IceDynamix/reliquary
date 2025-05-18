@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GPNJMEHNDMN {
     // message fields
+    // @@protoc_insertion_point(field:GPNJMEHNDMN.HIPJHPJOLBE)
+    pub HIPJHPJOLBE: u32,
     // @@protoc_insertion_point(field:GPNJMEHNDMN.FBJHGPDKBGM)
     pub FBJHGPDKBGM: bool,
     // @@protoc_insertion_point(field:GPNJMEHNDMN.JAPDCMJPIEJ)
     pub JAPDCMJPIEJ: u32,
-    // @@protoc_insertion_point(field:GPNJMEHNDMN.HIPJHPJOLBE)
-    pub HIPJHPJOLBE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GPNJMEHNDMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl GPNJMEHNDMN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HIPJHPJOLBE",
+            |m: &GPNJMEHNDMN| { &m.HIPJHPJOLBE },
+            |m: &mut GPNJMEHNDMN| { &mut m.HIPJHPJOLBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJHGPDKBGM",
             |m: &GPNJMEHNDMN| { &m.FBJHGPDKBGM },
             |m: &mut GPNJMEHNDMN| { &mut m.FBJHGPDKBGM },
@@ -62,11 +67,6 @@ impl GPNJMEHNDMN {
             "JAPDCMJPIEJ",
             |m: &GPNJMEHNDMN| { &m.JAPDCMJPIEJ },
             |m: &mut GPNJMEHNDMN| { &mut m.JAPDCMJPIEJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIPJHPJOLBE",
-            |m: &GPNJMEHNDMN| { &m.HIPJHPJOLBE },
-            |m: &mut GPNJMEHNDMN| { &mut m.HIPJHPJOLBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GPNJMEHNDMN>(
             "GPNJMEHNDMN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                48 => {
+                    self.HIPJHPJOLBE = is.read_uint32()?;
+                },
+                80 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
                 },
-                96 => {
+                16 => {
                     self.JAPDCMJPIEJ = is.read_uint32()?;
-                },
-                8 => {
-                    self.HIPJHPJOLBE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HIPJHPJOLBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HIPJHPJOLBE);
+        }
         if self.FBJHGPDKBGM != false {
             my_size += 1 + 1;
         }
         if self.JAPDCMJPIEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JAPDCMJPIEJ);
-        }
-        if self.HIPJHPJOLBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HIPJHPJOLBE);
+            my_size += ::protobuf::rt::uint32_size(2, self.JAPDCMJPIEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HIPJHPJOLBE != 0 {
+            os.write_uint32(6, self.HIPJHPJOLBE)?;
+        }
         if self.FBJHGPDKBGM != false {
-            os.write_bool(15, self.FBJHGPDKBGM)?;
+            os.write_bool(10, self.FBJHGPDKBGM)?;
         }
         if self.JAPDCMJPIEJ != 0 {
-            os.write_uint32(12, self.JAPDCMJPIEJ)?;
-        }
-        if self.HIPJHPJOLBE != 0 {
-            os.write_uint32(1, self.HIPJHPJOLBE)?;
+            os.write_uint32(2, self.JAPDCMJPIEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     }
 
     fn clear(&mut self) {
+        self.HIPJHPJOLBE = 0;
         self.FBJHGPDKBGM = false;
         self.JAPDCMJPIEJ = 0;
-        self.HIPJHPJOLBE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GPNJMEHNDMN {
         static instance: GPNJMEHNDMN = GPNJMEHNDMN {
+            HIPJHPJOLBE: 0,
             FBJHGPDKBGM: false,
             JAPDCMJPIEJ: 0,
-            HIPJHPJOLBE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GPNJMEHNDMN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GPNJMEHNDMN.proto\"s\n\x0bGPNJMEHNDMN\x12\x20\n\x0bFBJHGPDKBGM\x18\
-    \x0f\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\x0c\x20\
-    \x01(\rR\x0bJAPDCMJPIEJ\x12\x20\n\x0bHIPJHPJOLBE\x18\x01\x20\x01(\rR\x0b\
-    HIPJHPJOLBEb\x06proto3\
+    \n\x11GPNJMEHNDMN.proto\"s\n\x0bGPNJMEHNDMN\x12\x20\n\x0bHIPJHPJOLBE\x18\
+    \x06\x20\x01(\rR\x0bHIPJHPJOLBE\x12\x20\n\x0bFBJHGPDKBGM\x18\n\x20\x01(\
+    \x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\x02\x20\x01(\rR\x0bJAP\
+    DCMJPIEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MHDDHODMMIA {
     // message fields
+    // @@protoc_insertion_point(field:MHDDHODMMIA.buff_id_list)
+    pub buff_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MHDDHODMMIA.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
-    // @@protoc_insertion_point(field:MHDDHODMMIA.PLAPCJHEGGF)
-    pub PLAPCJHEGGF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MHDDHODMMIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MHDDHODMMIA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_id_list",
+            |m: &MHDDHODMMIA| { &m.buff_id_list },
+            |m: &mut MHDDHODMMIA| { &mut m.buff_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interacted_prop_entity_id",
             |m: &MHDDHODMMIA| { &m.interacted_prop_entity_id },
             |m: &mut MHDDHODMMIA| { &mut m.interacted_prop_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLAPCJHEGGF",
-            |m: &MHDDHODMMIA| { &m.PLAPCJHEGGF },
-            |m: &mut MHDDHODMMIA| { &mut m.PLAPCJHEGGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MHDDHODMMIA>(
             "MHDDHODMMIA",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for MHDDHODMMIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.buff_id_list)?;
+                },
                 120 => {
+                    self.buff_id_list.push(is.read_uint32()?);
+                },
+                40 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PLAPCJHEGGF)?;
-                },
-                104 => {
-                    self.PLAPCJHEGGF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MHDDHODMMIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.buff_id_list);
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.interacted_prop_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PLAPCJHEGGF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(15, &self.buff_id_list)?;
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(15, self.interacted_prop_entity_id)?;
+            os.write_uint32(5, self.interacted_prop_entity_id)?;
         }
-        os.write_repeated_packed_uint32(13, &self.PLAPCJHEGGF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for MHDDHODMMIA {
     }
 
     fn clear(&mut self) {
+        self.buff_id_list.clear();
         self.interacted_prop_entity_id = 0;
-        self.PLAPCJHEGGF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MHDDHODMMIA {
         static instance: MHDDHODMMIA = MHDDHODMMIA {
+            buff_id_list: ::std::vec::Vec::new(),
             interacted_prop_entity_id: 0,
-            PLAPCJHEGGF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for MHDDHODMMIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MHDDHODMMIA.proto\"j\n\x0bMHDDHODMMIA\x129\n\x19interacted_prop_en\
-    tity_id\x18\x0f\x20\x01(\rR\x16interactedPropEntityId\x12\x20\n\x0bPLAPC\
-    JHEGGF\x18\r\x20\x03(\rR\x0bPLAPCJHEGGFb\x06proto3\
+    \n\x11MHDDHODMMIA.proto\"j\n\x0bMHDDHODMMIA\x12\x20\n\x0cbuff_id_list\
+    \x18\x0f\x20\x03(\rR\nbuffIdList\x129\n\x19interacted_prop_entity_id\x18\
+    \x05\x20\x01(\rR\x16interactedPropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

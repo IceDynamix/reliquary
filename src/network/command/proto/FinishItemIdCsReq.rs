@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishItemIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishItemIdCsReq.CMMBBHHPMKO)
-    pub CMMBBHHPMKO: u32,
+    // @@protoc_insertion_point(field:FinishItemIdCsReq.text_id)
+    pub text_id: u32,
     // @@protoc_insertion_point(field:FinishItemIdCsReq.item_id)
     pub item_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FinishItemIdCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMMBBHHPMKO",
-            |m: &FinishItemIdCsReq| { &m.CMMBBHHPMKO },
-            |m: &mut FinishItemIdCsReq| { &mut m.CMMBBHHPMKO },
+            "text_id",
+            |m: &FinishItemIdCsReq| { &m.text_id },
+            |m: &mut FinishItemIdCsReq| { &mut m.text_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.CMMBBHHPMKO = is.read_uint32()?;
+                24 => {
+                    self.text_id = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CMMBBHHPMKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CMMBBHHPMKO);
+        if self.text_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.text_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CMMBBHHPMKO != 0 {
-            os.write_uint32(4, self.CMMBBHHPMKO)?;
+        if self.text_id != 0 {
+            os.write_uint32(3, self.text_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(6, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.CMMBBHHPMKO = 0;
+        self.text_id = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishItemIdCsReq {
         static instance: FinishItemIdCsReq = FinishItemIdCsReq {
-            CMMBBHHPMKO: 0,
+            text_id: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishItemIdCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FinishItemIdCsReq.proto\"N\n\x11FinishItemIdCsReq\x12\x20\n\x0bCMM\
-    BBHHPMKO\x18\x04\x20\x01(\rR\x0bCMMBBHHPMKO\x12\x17\n\x07item_id\x18\x06\
-    \x20\x01(\rR\x06itemIdb\x06proto3\
+    \n\x17FinishItemIdCsReq.proto\"E\n\x11FinishItemIdCsReq\x12\x17\n\x07tex\
+    t_id\x18\x03\x20\x01(\rR\x06textId\x12\x17\n\x07item_id\x18\x0b\x20\x01(\
+    \rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

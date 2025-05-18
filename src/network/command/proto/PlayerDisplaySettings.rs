@@ -28,16 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerDisplaySettings {
     // message fields
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.APONEIDMPHL)
-    pub APONEIDMPHL: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.PBKBGLHHKPE)
-    pub PBKBGLHHKPE: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.AICNFAOBCPI)
-    pub AICNFAOBCPI: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.KJNCCKHJFHE)
-    pub KJNCCKHJFHE: bool,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.NJFMILJOFOK)
-    pub NJFMILJOFOK: bool,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.challenge_list)
+    pub challenge_list: ::std::vec::Vec<super::IHKGNJDNALJ::IHKGNJDNALJ>,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.JFPCPDCFLMD)
+    pub JFPCPDCFLMD: ::protobuf::MessageField<super::OBIHNGMNKEK::OBIHNGMNKEK>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerDisplaySettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,32 +49,17 @@ impl PlayerDisplaySettings {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APONEIDMPHL",
-            |m: &PlayerDisplaySettings| { &m.APONEIDMPHL },
-            |m: &mut PlayerDisplaySettings| { &mut m.APONEIDMPHL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "challenge_list",
+            |m: &PlayerDisplaySettings| { &m.challenge_list },
+            |m: &mut PlayerDisplaySettings| { &mut m.challenge_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBKBGLHHKPE",
-            |m: &PlayerDisplaySettings| { &m.PBKBGLHHKPE },
-            |m: &mut PlayerDisplaySettings| { &mut m.PBKBGLHHKPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AICNFAOBCPI",
-            |m: &PlayerDisplaySettings| { &m.AICNFAOBCPI },
-            |m: &mut PlayerDisplaySettings| { &mut m.AICNFAOBCPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJNCCKHJFHE",
-            |m: &PlayerDisplaySettings| { &m.KJNCCKHJFHE },
-            |m: &mut PlayerDisplaySettings| { &mut m.KJNCCKHJFHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJFMILJOFOK",
-            |m: &PlayerDisplaySettings| { &m.NJFMILJOFOK },
-            |m: &mut PlayerDisplaySettings| { &mut m.NJFMILJOFOK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBIHNGMNKEK::OBIHNGMNKEK>(
+            "JFPCPDCFLMD",
+            |m: &PlayerDisplaySettings| { &m.JFPCPDCFLMD },
+            |m: &mut PlayerDisplaySettings| { &mut m.JFPCPDCFLMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerDisplaySettings>(
             "PlayerDisplaySettings",
@@ -100,20 +79,11 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.APONEIDMPHL = is.read_bool()?;
+                66 => {
+                    self.challenge_list.push(is.read_message()?);
                 },
-                96 => {
-                    self.PBKBGLHHKPE = is.read_bool()?;
-                },
-                32 => {
-                    self.AICNFAOBCPI = is.read_bool()?;
-                },
-                80 => {
-                    self.KJNCCKHJFHE = is.read_bool()?;
-                },
-                112 => {
-                    self.NJFMILJOFOK = is.read_bool()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPCPDCFLMD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +97,13 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APONEIDMPHL != false {
-            my_size += 1 + 1;
-        }
-        if self.PBKBGLHHKPE != false {
-            my_size += 1 + 1;
-        }
-        if self.AICNFAOBCPI != false {
-            my_size += 1 + 1;
-        }
-        if self.KJNCCKHJFHE != false {
-            my_size += 1 + 1;
-        }
-        if self.NJFMILJOFOK != false {
-            my_size += 1 + 1;
+        for value in &self.challenge_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.JFPCPDCFLMD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +111,11 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APONEIDMPHL != false {
-            os.write_bool(6, self.APONEIDMPHL)?;
-        }
-        if self.PBKBGLHHKPE != false {
-            os.write_bool(12, self.PBKBGLHHKPE)?;
-        }
-        if self.AICNFAOBCPI != false {
-            os.write_bool(4, self.AICNFAOBCPI)?;
-        }
-        if self.KJNCCKHJFHE != false {
-            os.write_bool(10, self.KJNCCKHJFHE)?;
-        }
-        if self.NJFMILJOFOK != false {
-            os.write_bool(14, self.NJFMILJOFOK)?;
+        for v in &self.challenge_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if let Some(v) = self.JFPCPDCFLMD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +134,15 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     }
 
     fn clear(&mut self) {
-        self.APONEIDMPHL = false;
-        self.PBKBGLHHKPE = false;
-        self.AICNFAOBCPI = false;
-        self.KJNCCKHJFHE = false;
-        self.NJFMILJOFOK = false;
+        self.challenge_list.clear();
+        self.JFPCPDCFLMD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerDisplaySettings {
         static instance: PlayerDisplaySettings = PlayerDisplaySettings {
-            APONEIDMPHL: false,
-            PBKBGLHHKPE: false,
-            AICNFAOBCPI: false,
-            KJNCCKHJFHE: false,
-            NJFMILJOFOK: false,
+            challenge_list: ::std::vec::Vec::new(),
+            JFPCPDCFLMD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDisplaySettings {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerDisplaySettings.proto\"\xc1\x01\n\x15PlayerDisplaySettings\
-    \x12\x20\n\x0bAPONEIDMPHL\x18\x06\x20\x01(\x08R\x0bAPONEIDMPHL\x12\x20\n\
-    \x0bPBKBGLHHKPE\x18\x0c\x20\x01(\x08R\x0bPBKBGLHHKPE\x12\x20\n\x0bAICNFA\
-    OBCPI\x18\x04\x20\x01(\x08R\x0bAICNFAOBCPI\x12\x20\n\x0bKJNCCKHJFHE\x18\
-    \n\x20\x01(\x08R\x0bKJNCCKHJFHE\x12\x20\n\x0bNJFMILJOFOK\x18\x0e\x20\x01\
-    (\x08R\x0bNJFMILJOFOKb\x06proto3\
+    \n\x1bPlayerDisplaySettings.proto\x1a\x11IHKGNJDNALJ.proto\x1a\x11OBIHNG\
+    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x123\n\x0echallenge_list\x18\
+    \x08\x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeList\x12.\n\x0bJFPCPDCFLMD\
+    \x18\x07\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -241,7 +187,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::IHKGNJDNALJ::file_descriptor().clone());
+            deps.push(super::OBIHNGMNKEK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerDisplaySettings::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

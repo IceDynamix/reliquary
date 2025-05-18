@@ -79,16 +79,16 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.BHNFGPEHOMO)?;
                 },
-                120 => {
+                24 => {
                     self.BHNFGPEHOMO.push(is.read_uint32()?);
                 },
-                114 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.PHAJEHIBKFI)?;
                 },
-                112 => {
+                64 => {
                     self.PHAJEHIBKFI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.BHNFGPEHOMO);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PHAJEHIBKFI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BHNFGPEHOMO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PHAJEHIBKFI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.BHNFGPEHOMO)?;
-        os.write_repeated_packed_uint32(14, &self.PHAJEHIBKFI)?;
+        os.write_repeated_packed_uint32(3, &self.BHNFGPEHOMO)?;
+        os.write_repeated_packed_uint32(8, &self.PHAJEHIBKFI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingTurnActionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingTurnActionCsReq.proto\"b\n\x1cSwordTrainingTurnActionCs\
-    Req\x12\x20\n\x0bBHNFGPEHOMO\x18\x0f\x20\x03(\rR\x0bBHNFGPEHOMO\x12\x20\
-    \n\x0bPHAJEHIBKFI\x18\x0e\x20\x03(\rR\x0bPHAJEHIBKFIb\x06proto3\
+    Req\x12\x20\n\x0bBHNFGPEHOMO\x18\x03\x20\x03(\rR\x0bBHNFGPEHOMO\x12\x20\
+    \n\x0bPHAJEHIBKFI\x18\x08\x20\x03(\rR\x0bPHAJEHIBKFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

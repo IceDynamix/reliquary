@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetKilledPunkLordMonsterDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.OAKKCCGAEKK)
-    pub OAKKCCGAEKK: ::std::vec::Vec<super::ODJIPDMNBEC::ODJIPDMNBEC>,
     // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.DDCEMDGEDIO)
     pub DDCEMDGEDIO: ::std::vec::Vec<super::MDJGOOCKCMJ::MDJGOOCKCMJ>,
+    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.OAKKCCGAEKK)
+    pub OAKKCCGAEKK: ::std::vec::Vec<super::PunkLordMonsterKey::PunkLordMonsterKey>,
     // special fields
     // @@protoc_insertion_point(special_field:GetKilledPunkLordMonsterDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl GetKilledPunkLordMonsterDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OAKKCCGAEKK",
-            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.OAKKCCGAEKK },
-            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.OAKKCCGAEKK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetKilledPunkLordMonsterDataScRsp| { &m.retcode },
@@ -67,6 +62,11 @@ impl GetKilledPunkLordMonsterDataScRsp {
             "DDCEMDGEDIO",
             |m: &GetKilledPunkLordMonsterDataScRsp| { &m.DDCEMDGEDIO },
             |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.DDCEMDGEDIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OAKKCCGAEKK",
+            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.OAKKCCGAEKK },
+            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.OAKKCCGAEKK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetKilledPunkLordMonsterDataScRsp>(
             "GetKilledPunkLordMonsterDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.OAKKCCGAEKK.push(is.read_message()?);
-                },
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                26 => {
                     self.DDCEMDGEDIO.push(is.read_message()?);
+                },
+                122 => {
+                    self.OAKKCCGAEKK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OAKKCCGAEKK {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        for value in &self.DDCEMDGEDIO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        for value in &self.DDCEMDGEDIO {
+        for value in &self.OAKKCCGAEKK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OAKKCCGAEKK {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.DDCEMDGEDIO {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        for v in &self.OAKKCCGAEKK {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.OAKKCCGAEKK.clear();
         self.retcode = 0;
         self.DDCEMDGEDIO.clear();
+        self.OAKKCCGAEKK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetKilledPunkLordMonsterDataScRsp {
         static instance: GetKilledPunkLordMonsterDataScRsp = GetKilledPunkLordMonsterDataScRsp {
-            OAKKCCGAEKK: ::std::vec::Vec::new(),
             retcode: 0,
             DDCEMDGEDIO: ::std::vec::Vec::new(),
+            OAKKCCGAEKK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for GetKilledPunkLordMonsterDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetKilledPunkLordMonsterDataScRsp.proto\x1a\x11MDJGOOCKCMJ.proto\x1a\
-    \x11ODJIPDMNBEC.proto\"\x9d\x01\n!GetKilledPunkLordMonsterDataScRsp\x12.\
-    \n\x0bOAKKCCGAEKK\x18\x0e\x20\x03(\x0b2\x0c.ODJIPDMNBECR\x0bOAKKCCGAEKK\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bDDCEMDGED\
-    IO\x18\x01\x20\x03(\x0b2\x0c.MDJGOOCKCMJR\x0bDDCEMDGEDIOb\x06proto3\
+    \x18PunkLordMonsterKey.proto\"\xa4\x01\n!GetKilledPunkLordMonsterDataScR\
+    sp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bDDCEMDG\
+    EDIO\x18\x03\x20\x03(\x0b2\x0c.MDJGOOCKCMJR\x0bDDCEMDGEDIO\x125\n\x0bOAK\
+    KCCGAEKK\x18\x0f\x20\x03(\x0b2\x13.PunkLordMonsterKeyR\x0bOAKKCCGAEKKb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +209,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::MDJGOOCKCMJ::file_descriptor().clone());
-            deps.push(super::ODJIPDMNBEC::file_descriptor().clone());
+            deps.push(super::PunkLordMonsterKey::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetKilledPunkLordMonsterDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

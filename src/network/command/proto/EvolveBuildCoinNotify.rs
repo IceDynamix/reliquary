@@ -30,6 +30,8 @@ pub struct EvolveBuildCoinNotify {
     // message fields
     // @@protoc_insertion_point(field:EvolveBuildCoinNotify.item_value)
     pub item_value: u32,
+    // @@protoc_insertion_point(field:EvolveBuildCoinNotify.MDCJFOAFDJK)
+    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildCoinNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl EvolveBuildCoinNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &EvolveBuildCoinNotify| { &m.item_value },
             |m: &mut EvolveBuildCoinNotify| { &mut m.item_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDCJFOAFDJK",
+            |m: &EvolveBuildCoinNotify| { &m.MDCJFOAFDJK },
+            |m: &mut EvolveBuildCoinNotify| { &mut m.MDCJFOAFDJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildCoinNotify>(
             "EvolveBuildCoinNotify",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                120 => {
                     self.item_value = is.read_uint32()?;
+                },
+                64 => {
+                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +98,10 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(15, self.item_value);
+        }
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.MDCJFOAFDJK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +110,10 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(6, self.item_value)?;
+            os.write_uint32(15, self.item_value)?;
+        }
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +133,14 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
 
     fn clear(&mut self) {
         self.item_value = 0;
+        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildCoinNotify {
         static instance: EvolveBuildCoinNotify = EvolveBuildCoinNotify {
             item_value: 0,
+            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildCoinNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEvolveBuildCoinNotify.proto\"6\n\x15EvolveBuildCoinNotify\x12\x1d\
-    \n\nitem_value\x18\x06\x20\x01(\rR\titemValueb\x06proto3\
+    \n\x1bEvolveBuildCoinNotify.proto\x1a\x11KLNIPNJCNMJ.proto\"f\n\x15Evolv\
+    eBuildCoinNotify\x12\x1d\n\nitem_value\x18\x0f\x20\x01(\rR\titemValue\
+    \x12.\n\x0bMDCJFOAFDJK\x18\x08\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOA\
+    FDJKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -165,7 +185,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::KLNIPNJCNMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildCoinNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOGNKEKHBAI {
     // message fields
-    // @@protoc_insertion_point(field:LOGNKEKHBAI.AJBEPAHCGIK)
-    pub AJBEPAHCGIK: u32,
     // @@protoc_insertion_point(field:LOGNKEKHBAI.FJOILOHPHLC)
     pub FJOILOHPHLC: bool,
+    // @@protoc_insertion_point(field:LOGNKEKHBAI.AJBEPAHCGIK)
+    pub AJBEPAHCGIK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LOGNKEKHBAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LOGNKEKHBAI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJBEPAHCGIK",
-            |m: &LOGNKEKHBAI| { &m.AJBEPAHCGIK },
-            |m: &mut LOGNKEKHBAI| { &mut m.AJBEPAHCGIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJOILOHPHLC",
             |m: &LOGNKEKHBAI| { &m.FJOILOHPHLC },
             |m: &mut LOGNKEKHBAI| { &mut m.FJOILOHPHLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AJBEPAHCGIK",
+            |m: &LOGNKEKHBAI| { &m.AJBEPAHCGIK },
+            |m: &mut LOGNKEKHBAI| { &mut m.AJBEPAHCGIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOGNKEKHBAI>(
             "LOGNKEKHBAI",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.AJBEPAHCGIK = is.read_uint32()?;
-                },
-                48 => {
+                120 => {
                     self.FJOILOHPHLC = is.read_bool()?;
+                },
+                112 => {
+                    self.AJBEPAHCGIK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AJBEPAHCGIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.AJBEPAHCGIK);
-        }
         if self.FJOILOHPHLC != false {
             my_size += 1 + 1;
+        }
+        if self.AJBEPAHCGIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AJBEPAHCGIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AJBEPAHCGIK != 0 {
-            os.write_uint32(1, self.AJBEPAHCGIK)?;
-        }
         if self.FJOILOHPHLC != false {
-            os.write_bool(6, self.FJOILOHPHLC)?;
+            os.write_bool(15, self.FJOILOHPHLC)?;
+        }
+        if self.AJBEPAHCGIK != 0 {
+            os.write_uint32(14, self.AJBEPAHCGIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     }
 
     fn clear(&mut self) {
-        self.AJBEPAHCGIK = 0;
         self.FJOILOHPHLC = false;
+        self.AJBEPAHCGIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOGNKEKHBAI {
         static instance: LOGNKEKHBAI = LOGNKEKHBAI {
-            AJBEPAHCGIK: 0,
             FJOILOHPHLC: false,
+            AJBEPAHCGIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LOGNKEKHBAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOGNKEKHBAI.proto\"Q\n\x0bLOGNKEKHBAI\x12\x20\n\x0bAJBEPAHCGIK\x18\
-    \x01\x20\x01(\rR\x0bAJBEPAHCGIK\x12\x20\n\x0bFJOILOHPHLC\x18\x06\x20\x01\
-    (\x08R\x0bFJOILOHPHLCb\x06proto3\
+    \n\x11LOGNKEKHBAI.proto\"Q\n\x0bLOGNKEKHBAI\x12\x20\n\x0bFJOILOHPHLC\x18\
+    \x0f\x20\x01(\x08R\x0bFJOILOHPHLC\x12\x20\n\x0bAJBEPAHCGIK\x18\x0e\x20\
+    \x01(\rR\x0bAJBEPAHCGIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

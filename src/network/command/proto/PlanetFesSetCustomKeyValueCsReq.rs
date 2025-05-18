@@ -30,8 +30,8 @@ pub struct PlanetFesSetCustomKeyValueCsReq {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueCsReq.key)
     pub key: u32,
-    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueCsReq.MBMDOCJIMEJ)
-    pub MBMDOCJIMEJ: u32,
+    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueCsReq.value)
+    pub value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesSetCustomKeyValueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PlanetFesSetCustomKeyValueCsReq {
             |m: &mut PlanetFesSetCustomKeyValueCsReq| { &mut m.key },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBMDOCJIMEJ",
-            |m: &PlanetFesSetCustomKeyValueCsReq| { &m.MBMDOCJIMEJ },
-            |m: &mut PlanetFesSetCustomKeyValueCsReq| { &mut m.MBMDOCJIMEJ },
+            "value",
+            |m: &PlanetFesSetCustomKeyValueCsReq| { &m.value },
+            |m: &mut PlanetFesSetCustomKeyValueCsReq| { &mut m.value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesSetCustomKeyValueCsReq>(
             "PlanetFesSetCustomKeyValueCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.key = is.read_uint32()?;
                 },
                 64 => {
-                    self.MBMDOCJIMEJ = is.read_uint32()?;
+                    self.value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.key);
+            my_size += ::protobuf::rt::uint32_size(12, self.key);
         }
-        if self.MBMDOCJIMEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MBMDOCJIMEJ);
+        if self.value != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(4, self.key)?;
+            os.write_uint32(12, self.key)?;
         }
-        if self.MBMDOCJIMEJ != 0 {
-            os.write_uint32(8, self.MBMDOCJIMEJ)?;
+        if self.value != 0 {
+            os.write_uint32(8, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
 
     fn clear(&mut self) {
         self.key = 0;
-        self.MBMDOCJIMEJ = 0;
+        self.value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesSetCustomKeyValueCsReq {
         static instance: PlanetFesSetCustomKeyValueCsReq = PlanetFesSetCustomKeyValueCsReq {
             key: 0,
-            MBMDOCJIMEJ: 0,
+            value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSetCustomKeyValueCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%PlanetFesSetCustomKeyValueCsReq.proto\"U\n\x1fPlanetFesSetCustomKeyVa\
-    lueCsReq\x12\x10\n\x03key\x18\x04\x20\x01(\rR\x03key\x12\x20\n\x0bMBMDOC\
-    JIMEJ\x18\x08\x20\x01(\rR\x0bMBMDOCJIMEJb\x06proto3\
+    \n%PlanetFesSetCustomKeyValueCsReq.proto\"I\n\x1fPlanetFesSetCustomKeyVa\
+    lueCsReq\x12\x10\n\x03key\x18\x0c\x20\x01(\rR\x03key\x12\x14\n\x05value\
+    \x18\x08\x20\x01(\rR\x05valueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

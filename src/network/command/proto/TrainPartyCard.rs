@@ -86,13 +86,13 @@ impl ::protobuf::Message for TrainPartyCard {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.card_data_list)?;
                 },
-                56 => {
+                16 => {
                     self.extra_ratio = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.has_modify_all_passenger_stat_effect = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for TrainPartyCard {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.extra_ratio != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.extra_ratio);
+            my_size += ::protobuf::rt::uint32_size(2, self.extra_ratio);
         }
         if self.has_modify_all_passenger_stat_effect != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TrainPartyCard {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.card_data_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.extra_ratio != 0 {
-            os.write_uint32(7, self.extra_ratio)?;
+            os.write_uint32(2, self.extra_ratio)?;
         }
         if self.has_modify_all_passenger_stat_effect != false {
-            os.write_bool(15, self.has_modify_all_passenger_stat_effect)?;
+            os.write_bool(6, self.has_modify_all_passenger_stat_effect)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyCard {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14TrainPartyCard.proto\x1a\x15TrainPartyCards.proto\"\xb8\x01\n\x0eT\
-    rainPartyCard\x126\n\x0ecard_data_list\x18\r\x20\x01(\x0b2\x10.TrainPart\
-    yCardsR\x0ccardDataList\x12\x1f\n\x0bextra_ratio\x18\x07\x20\x01(\rR\nex\
-    traRatio\x12M\n$has_modify_all_passenger_stat_effect\x18\x0f\x20\x01(\
+    rainPartyCard\x126\n\x0ecard_data_list\x18\x0e\x20\x01(\x0b2\x10.TrainPa\
+    rtyCardsR\x0ccardDataList\x12\x1f\n\x0bextra_ratio\x18\x02\x20\x01(\rR\n\
+    extraRatio\x12M\n$has_modify_all_passenger_stat_effect\x18\x06\x20\x01(\
     \x08R\x1fhasModifyAllPassengerStatEffectb\x06proto3\
 ";
 

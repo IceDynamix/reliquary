@@ -79,10 +79,10 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                104 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                8 => {
+                24 => {
                     self.JGEAEGMHDOC = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(13, self.CENIFNKNFNP);
         }
         if self.JGEAEGMHDOC != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LeaveRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(11, self.CENIFNKNFNP)?;
+            os.write_uint32(13, self.CENIFNKNFNP)?;
         }
         if self.JGEAEGMHDOC != false {
-            os.write_bool(1, self.JGEAEGMHDOC)?;
+            os.write_bool(3, self.JGEAEGMHDOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LeaveRaidCsReq.proto\"T\n\x0eLeaveRaidCsReq\x12\x20\n\x0bCENIFNKNF\
-    NP\x18\x0b\x20\x01(\rR\x0bCENIFNKNFNP\x12\x20\n\x0bJGEAEGMHDOC\x18\x01\
-    \x20\x01(\x08R\x0bJGEAEGMHDOCb\x06proto3\
+    NP\x18\r\x20\x01(\rR\x0bCENIFNKNFNP\x12\x20\n\x0bJGEAEGMHDOC\x18\x03\x20\
+    \x01(\x08R\x0bJGEAEGMHDOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

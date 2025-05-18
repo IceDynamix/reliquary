@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GachaCeiling {
     // message fields
+    // @@protoc_insertion_point(field:GachaCeiling.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::GachaCeilingAvatar::GachaCeilingAvatar>,
     // @@protoc_insertion_point(field:GachaCeiling.ceiling_num)
     pub ceiling_num: u32,
     // @@protoc_insertion_point(field:GachaCeiling.is_claimed)
     pub is_claimed: bool,
-    // @@protoc_insertion_point(field:GachaCeiling.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::GachaCeilingAvatar::GachaCeilingAvatar>,
     // special fields
     // @@protoc_insertion_point(special_field:GachaCeiling.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl GachaCeiling {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &GachaCeiling| { &m.avatar_list },
+            |m: &mut GachaCeiling| { &mut m.avatar_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ceiling_num",
             |m: &GachaCeiling| { &m.ceiling_num },
@@ -62,11 +67,6 @@ impl GachaCeiling {
             "is_claimed",
             |m: &GachaCeiling| { &m.is_claimed },
             |m: &mut GachaCeiling| { &mut m.is_claimed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &GachaCeiling| { &m.avatar_list },
-            |m: &mut GachaCeiling| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GachaCeiling>(
             "GachaCeiling",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GachaCeiling {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                106 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
                 72 => {
                     self.ceiling_num = is.read_uint32()?;
                 },
-                24 => {
+                56 => {
                     self.is_claimed = is.read_bool()?;
-                },
-                122 => {
-                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GachaCeiling {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.ceiling_num != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.ceiling_num);
         }
         if self.is_claimed != false {
             my_size += 1 + 1;
         }
-        for value in &self.avatar_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         if self.ceiling_num != 0 {
             os.write_uint32(9, self.ceiling_num)?;
         }
         if self.is_claimed != false {
-            os.write_bool(3, self.is_claimed)?;
+            os.write_bool(7, self.is_claimed)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GachaCeiling {
     }
 
     fn clear(&mut self) {
+        self.avatar_list.clear();
         self.ceiling_num = 0;
         self.is_claimed = false;
-        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GachaCeiling {
         static instance: GachaCeiling = GachaCeiling {
+            avatar_list: ::std::vec::Vec::new(),
             ceiling_num: 0,
             is_claimed: false,
-            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GachaCeiling {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GachaCeiling.proto\x1a\x18GachaCeilingAvatar.proto\"\x84\x01\n\x0c\
-    GachaCeiling\x12\x1f\n\x0bceiling_num\x18\t\x20\x01(\rR\nceilingNum\x12\
-    \x1d\n\nis_claimed\x18\x03\x20\x01(\x08R\tisClaimed\x124\n\x0bavatar_lis\
-    t\x18\x0f\x20\x03(\x0b2\x13.GachaCeilingAvatarR\navatarListb\x06proto3\
+    GachaCeiling\x124\n\x0bavatar_list\x18\r\x20\x03(\x0b2\x13.GachaCeilingA\
+    vatarR\navatarList\x12\x1f\n\x0bceiling_num\x18\t\x20\x01(\rR\nceilingNu\
+    m\x12\x1d\n\nis_claimed\x18\x07\x20\x01(\x08R\tisClaimedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

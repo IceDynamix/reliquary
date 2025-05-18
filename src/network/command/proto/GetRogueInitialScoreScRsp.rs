@@ -30,8 +30,8 @@ pub struct GetRogueInitialScoreScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRogueInitialScoreScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueInitialScoreScRsp.PFEANIAHFPC)
-    pub PFEANIAHFPC: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
+    // @@protoc_insertion_point(field:GetRogueInitialScoreScRsp.rogue_score_reward_info)
+    pub rogue_score_reward_info: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueInitialScoreScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetRogueInitialScoreScRsp {
             |m: &mut GetRogueInitialScoreScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGHCOGEPIDM::HGHCOGEPIDM>(
-            "PFEANIAHFPC",
-            |m: &GetRogueInitialScoreScRsp| { &m.PFEANIAHFPC },
-            |m: &mut GetRogueInitialScoreScRsp| { &mut m.PFEANIAHFPC },
+            "rogue_score_reward_info",
+            |m: &GetRogueInitialScoreScRsp| { &m.rogue_score_reward_info },
+            |m: &mut GetRogueInitialScoreScRsp| { &mut m.rogue_score_reward_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueInitialScoreScRsp>(
             "GetRogueInitialScoreScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFEANIAHFPC)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if let Some(v) = self.PFEANIAHFPC.as_ref() {
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -113,8 +113,8 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
         if self.retcode != 0 {
             os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.PFEANIAHFPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetRogueInitialScoreScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.PFEANIAHFPC.clear();
+        self.rogue_score_reward_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueInitialScoreScRsp {
         static instance: GetRogueInitialScoreScRsp = GetRogueInitialScoreScRsp {
             retcode: 0,
-            PFEANIAHFPC: ::protobuf::MessageField::none(),
+            rogue_score_reward_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueInitialScoreScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetRogueInitialScoreScRsp.proto\x1a\x11HGHCOGEPIDM.proto\"e\n\x19G\
+    \n\x1fGetRogueInitialScoreScRsp.proto\x1a\x11HGHCOGEPIDM.proto\"z\n\x19G\
     etRogueInitialScoreScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bPFEANIAHFPC\x18\n\x20\x01(\x0b2\x0c.HGHCOGEPIDMR\x0bPFEAN\
-    IAHFPCb\x06proto3\
+    code\x12C\n\x17rogue_score_reward_info\x18\x01\x20\x01(\x0b2\x0c.HGHCOGE\
+    PIDMR\x14rogueScoreRewardInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

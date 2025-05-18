@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateTrackMainMissionIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdScRsp.LFLBIOPJFGE)
-    pub LFLBIOPJFGE: u32,
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdScRsp.DKMBBNLMNNE)
-    pub DKMBBNLMNNE: u32,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdScRsp.track_mission_id)
+    pub track_mission_id: u32,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionIdScRsp.prev_track_mission_id)
+    pub prev_track_mission_id: u32,
     // @@protoc_insertion_point(field:UpdateTrackMainMissionIdScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl UpdateTrackMainMissionIdScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFLBIOPJFGE",
-            |m: &UpdateTrackMainMissionIdScRsp| { &m.LFLBIOPJFGE },
-            |m: &mut UpdateTrackMainMissionIdScRsp| { &mut m.LFLBIOPJFGE },
+            "track_mission_id",
+            |m: &UpdateTrackMainMissionIdScRsp| { &m.track_mission_id },
+            |m: &mut UpdateTrackMainMissionIdScRsp| { &mut m.track_mission_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKMBBNLMNNE",
-            |m: &UpdateTrackMainMissionIdScRsp| { &m.DKMBBNLMNNE },
-            |m: &mut UpdateTrackMainMissionIdScRsp| { &mut m.DKMBBNLMNNE },
+            "prev_track_mission_id",
+            |m: &UpdateTrackMainMissionIdScRsp| { &m.prev_track_mission_id },
+            |m: &mut UpdateTrackMainMissionIdScRsp| { &mut m.prev_track_mission_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.LFLBIOPJFGE = is.read_uint32()?;
-                },
-                16 => {
-                    self.DKMBBNLMNNE = is.read_uint32()?;
-                },
                 64 => {
+                    self.track_mission_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.prev_track_mission_id = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LFLBIOPJFGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LFLBIOPJFGE);
+        if self.track_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.track_mission_id);
         }
-        if self.DKMBBNLMNNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DKMBBNLMNNE);
+        if self.prev_track_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.prev_track_mission_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LFLBIOPJFGE != 0 {
-            os.write_uint32(5, self.LFLBIOPJFGE)?;
+        if self.track_mission_id != 0 {
+            os.write_uint32(8, self.track_mission_id)?;
         }
-        if self.DKMBBNLMNNE != 0 {
-            os.write_uint32(2, self.DKMBBNLMNNE)?;
+        if self.prev_track_mission_id != 0 {
+            os.write_uint32(6, self.prev_track_mission_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for UpdateTrackMainMissionIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.LFLBIOPJFGE = 0;
-        self.DKMBBNLMNNE = 0;
+        self.track_mission_id = 0;
+        self.prev_track_mission_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateTrackMainMissionIdScRsp {
         static instance: UpdateTrackMainMissionIdScRsp = UpdateTrackMainMissionIdScRsp {
-            LFLBIOPJFGE: 0,
-            DKMBBNLMNNE: 0,
+            track_mission_id: 0,
+            prev_track_mission_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateTrackMainMissionIdScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#UpdateTrackMainMissionIdScRsp.proto\"}\n\x1dUpdateTrackMainMissionIdS\
-    cRsp\x12\x20\n\x0bLFLBIOPJFGE\x18\x05\x20\x01(\rR\x0bLFLBIOPJFGE\x12\x20\
-    \n\x0bDKMBBNLMNNE\x18\x02\x20\x01(\rR\x0bDKMBBNLMNNE\x12\x18\n\x07retcod\
-    e\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n#UpdateTrackMainMissionIdScRsp.proto\"\x96\x01\n\x1dUpdateTrackMainMis\
+    sionIdScRsp\x12(\n\x10track_mission_id\x18\x08\x20\x01(\rR\x0etrackMissi\
+    onId\x121\n\x15prev_track_mission_id\x18\x06\x20\x01(\rR\x12prevTrackMis\
+    sionId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

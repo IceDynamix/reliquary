@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGroupPropertyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.group_id)
-    pub group_id: u32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.JAIBIEEKHEG)
+    pub JAIBIEEKHEG: ::std::string::String,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.dimension_id)
+    pub dimension_id: u32,
     // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.floor_id)
     pub floor_id: u32,
     // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.MOJOHJEBCNJ)
     pub MOJOHJEBCNJ: i32,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.JAIBIEEKHEG)
-    pub JAIBIEEKHEG: ::std::string::String,
-    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.GFHGLFFHFBD)
-    pub GFHGLFFHFBD: u32,
+    // @@protoc_insertion_point(field:UpdateGroupPropertyCsReq.group_id)
+    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGroupPropertyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl UpdateGroupPropertyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &UpdateGroupPropertyCsReq| { &m.group_id },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.group_id },
+            "JAIBIEEKHEG",
+            |m: &UpdateGroupPropertyCsReq| { &m.JAIBIEEKHEG },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.JAIBIEEKHEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dimension_id",
+            |m: &UpdateGroupPropertyCsReq| { &m.dimension_id },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.dimension_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
@@ -73,14 +78,9 @@ impl UpdateGroupPropertyCsReq {
             |m: &mut UpdateGroupPropertyCsReq| { &mut m.MOJOHJEBCNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAIBIEEKHEG",
-            |m: &UpdateGroupPropertyCsReq| { &m.JAIBIEEKHEG },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.JAIBIEEKHEG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFHGLFFHFBD",
-            |m: &UpdateGroupPropertyCsReq| { &m.GFHGLFFHFBD },
-            |m: &mut UpdateGroupPropertyCsReq| { &mut m.GFHGLFFHFBD },
+            "group_id",
+            |m: &UpdateGroupPropertyCsReq| { &m.group_id },
+            |m: &mut UpdateGroupPropertyCsReq| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGroupPropertyCsReq>(
             "UpdateGroupPropertyCsReq",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.MOJOHJEBCNJ = is.read_int32()?;
-                },
-                50 => {
+                34 => {
                     self.JAIBIEEKHEG = is.read_string()?;
                 },
-                40 => {
-                    self.GFHGLFFHFBD = is.read_uint32()?;
+                80 => {
+                    self.dimension_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.MOJOHJEBCNJ = is.read_int32()?;
+                },
+                88 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+        if !self.JAIBIEEKHEG.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.JAIBIEEKHEG);
+        }
+        if self.dimension_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.dimension_id);
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.floor_id);
         }
         if self.MOJOHJEBCNJ != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.MOJOHJEBCNJ);
+            my_size += ::protobuf::rt::int32_size(2, self.MOJOHJEBCNJ);
         }
-        if !self.JAIBIEEKHEG.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.JAIBIEEKHEG);
-        }
-        if self.GFHGLFFHFBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GFHGLFFHFBD);
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+        if !self.JAIBIEEKHEG.is_empty() {
+            os.write_string(4, &self.JAIBIEEKHEG)?;
+        }
+        if self.dimension_id != 0 {
+            os.write_uint32(10, self.dimension_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(2, self.floor_id)?;
+            os.write_uint32(7, self.floor_id)?;
         }
         if self.MOJOHJEBCNJ != 0 {
-            os.write_int32(3, self.MOJOHJEBCNJ)?;
+            os.write_int32(2, self.MOJOHJEBCNJ)?;
         }
-        if !self.JAIBIEEKHEG.is_empty() {
-            os.write_string(6, &self.JAIBIEEKHEG)?;
-        }
-        if self.GFHGLFFHFBD != 0 {
-            os.write_uint32(5, self.GFHGLFFHFBD)?;
+        if self.group_id != 0 {
+            os.write_uint32(11, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for UpdateGroupPropertyCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
+        self.JAIBIEEKHEG.clear();
+        self.dimension_id = 0;
         self.floor_id = 0;
         self.MOJOHJEBCNJ = 0;
-        self.JAIBIEEKHEG.clear();
-        self.GFHGLFFHFBD = 0;
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGroupPropertyCsReq {
         static instance: UpdateGroupPropertyCsReq = UpdateGroupPropertyCsReq {
-            group_id: 0,
+            JAIBIEEKHEG: ::std::string::String::new(),
+            dimension_id: 0,
             floor_id: 0,
             MOJOHJEBCNJ: 0,
-            JAIBIEEKHEG: ::std::string::String::new(),
-            GFHGLFFHFBD: 0,
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGroupPropertyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eUpdateGroupPropertyCsReq.proto\"\xb6\x01\n\x18UpdateGroupPropertyC\
-    sReq\x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupId\x12\x19\n\x08f\
-    loor_id\x18\x02\x20\x01(\rR\x07floorId\x12\x20\n\x0bMOJOHJEBCNJ\x18\x03\
-    \x20\x01(\x05R\x0bMOJOHJEBCNJ\x12\x20\n\x0bJAIBIEEKHEG\x18\x06\x20\x01(\
-    \tR\x0bJAIBIEEKHEG\x12\x20\n\x0bGFHGLFFHFBD\x18\x05\x20\x01(\rR\x0bGFHGL\
-    FFHFBDb\x06proto3\
+    \n\x1eUpdateGroupPropertyCsReq.proto\"\xb7\x01\n\x18UpdateGroupPropertyC\
+    sReq\x12\x20\n\x0bJAIBIEEKHEG\x18\x04\x20\x01(\tR\x0bJAIBIEEKHEG\x12!\n\
+    \x0cdimension_id\x18\n\x20\x01(\rR\x0bdimensionId\x12\x19\n\x08floor_id\
+    \x18\x07\x20\x01(\rR\x07floorId\x12\x20\n\x0bMOJOHJEBCNJ\x18\x02\x20\x01\
+    (\x05R\x0bMOJOHJEBCNJ\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07group\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

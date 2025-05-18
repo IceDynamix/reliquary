@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectPhoneCaseCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectPhoneCaseCsReq.GIANHLIIKIA)
-    pub GIANHLIIKIA: u32,
+    // @@protoc_insertion_point(field:SelectPhoneCaseCsReq.phone_case_id)
+    pub phone_case_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectPhoneCaseCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SelectPhoneCaseCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIANHLIIKIA",
-            |m: &SelectPhoneCaseCsReq| { &m.GIANHLIIKIA },
-            |m: &mut SelectPhoneCaseCsReq| { &mut m.GIANHLIIKIA },
+            "phone_case_id",
+            |m: &SelectPhoneCaseCsReq| { &m.phone_case_id },
+            |m: &mut SelectPhoneCaseCsReq| { &mut m.phone_case_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPhoneCaseCsReq>(
             "SelectPhoneCaseCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GIANHLIIKIA = is.read_uint32()?;
+                104 => {
+                    self.phone_case_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GIANHLIIKIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GIANHLIIKIA);
+        if self.phone_case_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.phone_case_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GIANHLIIKIA != 0 {
-            os.write_uint32(1, self.GIANHLIIKIA)?;
+        if self.phone_case_id != 0 {
+            os.write_uint32(13, self.phone_case_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     }
 
     fn clear(&mut self) {
-        self.GIANHLIIKIA = 0;
+        self.phone_case_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectPhoneCaseCsReq {
         static instance: SelectPhoneCaseCsReq = SelectPhoneCaseCsReq {
-            GIANHLIIKIA: 0,
+            phone_case_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectPhoneCaseCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSelectPhoneCaseCsReq.proto\"8\n\x14SelectPhoneCaseCsReq\x12\x20\n\
-    \x0bGIANHLIIKIA\x18\x01\x20\x01(\rR\x0bGIANHLIIKIAb\x06proto3\
+    \n\x1aSelectPhoneCaseCsReq.proto\":\n\x14SelectPhoneCaseCsReq\x12\"\n\rp\
+    hone_case_id\x18\r\x20\x01(\rR\x0bphoneCaseIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpUpEquipmentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ExpUpEquipmentCsReq.operation_item_cost_list)
-    pub operation_item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:ExpUpEquipmentCsReq.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:ExpUpEquipmentCsReq.equipment_unique_id)
     pub equipment_unique_id: u32,
     // special fields
@@ -51,10 +51,10 @@ impl ExpUpEquipmentCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "operation_item_cost_list",
-            |m: &ExpUpEquipmentCsReq| { &m.operation_item_cost_list },
-            |m: &mut ExpUpEquipmentCsReq| { &mut m.operation_item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &ExpUpEquipmentCsReq| { &m.cost_data },
+            |m: &mut ExpUpEquipmentCsReq| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equipment_unique_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.operation_item_cost_list)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                8 => {
+                88 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
+        if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(1, self.equipment_unique_id)?;
+            os.write_uint32(11, self.equipment_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     }
 
     fn clear(&mut self) {
-        self.operation_item_cost_list.clear();
+        self.cost_data.clear();
         self.equipment_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpUpEquipmentCsReq {
         static instance: ExpUpEquipmentCsReq = ExpUpEquipmentCsReq {
-            operation_item_cost_list: ::protobuf::MessageField::none(),
+            cost_data: ::protobuf::MessageField::none(),
             equipment_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ExpUpEquipmentCsReq.proto\x1a\x12ItemCostList.proto\"\x8d\x01\n\
-    \x13ExpUpEquipmentCsReq\x12F\n\x18operation_item_cost_list\x18\x04\x20\
-    \x01(\x0b2\r.ItemCostListR\x15operationItemCostList\x12.\n\x13equipment_\
-    unique_id\x18\x01\x20\x01(\rR\x11equipmentUniqueIdb\x06proto3\
+    \n\x19ExpUpEquipmentCsReq.proto\x1a\x12ItemCostData.proto\"q\n\x13ExpUpE\
+    quipmentCsReq\x12*\n\tcost_data\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\
+    \x08costData\x12.\n\x13equipment_unique_id\x18\x0b\x20\x01(\rR\x11equipm\
+    entUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ExpUpEquipmentCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

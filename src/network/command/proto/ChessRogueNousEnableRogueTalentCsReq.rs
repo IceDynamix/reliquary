@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueNousEnableRogueTalentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentCsReq.FAGNLGFJAIF)
-    pub FAGNLGFJAIF: u32,
+    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentCsReq.talent_id)
+    pub talent_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousEnableRogueTalentCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChessRogueNousEnableRogueTalentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAGNLGFJAIF",
-            |m: &ChessRogueNousEnableRogueTalentCsReq| { &m.FAGNLGFJAIF },
-            |m: &mut ChessRogueNousEnableRogueTalentCsReq| { &mut m.FAGNLGFJAIF },
+            "talent_id",
+            |m: &ChessRogueNousEnableRogueTalentCsReq| { &m.talent_id },
+            |m: &mut ChessRogueNousEnableRogueTalentCsReq| { &mut m.talent_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousEnableRogueTalentCsReq>(
             "ChessRogueNousEnableRogueTalentCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.FAGNLGFJAIF = is.read_uint32()?;
+                112 => {
+                    self.talent_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FAGNLGFJAIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FAGNLGFJAIF);
+        if self.talent_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.talent_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FAGNLGFJAIF != 0 {
-            os.write_uint32(12, self.FAGNLGFJAIF)?;
+        if self.talent_id != 0 {
+            os.write_uint32(14, self.talent_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentCsReq {
     }
 
     fn clear(&mut self) {
-        self.FAGNLGFJAIF = 0;
+        self.talent_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousEnableRogueTalentCsReq {
         static instance: ChessRogueNousEnableRogueTalentCsReq = ChessRogueNousEnableRogueTalentCsReq {
-            FAGNLGFJAIF: 0,
+            talent_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousEnableRogueTalentCsReq
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*ChessRogueNousEnableRogueTalentCsReq.proto\"H\n$ChessRogueNousEnableR\
-    ogueTalentCsReq\x12\x20\n\x0bFAGNLGFJAIF\x18\x0c\x20\x01(\rR\x0bFAGNLGFJ\
-    AIFb\x06proto3\
+    \n*ChessRogueNousEnableRogueTalentCsReq.proto\"C\n$ChessRogueNousEnableR\
+    ogueTalentCsReq\x12\x1b\n\ttalent_id\x18\x0e\x20\x01(\rR\x08talentIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

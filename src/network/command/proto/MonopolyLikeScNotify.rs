@@ -79,13 +79,13 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.OFIODJNLBEA)?;
                 },
-                8 => {
+                120 => {
                     self.OFIODJNLBEA.push(is.read_uint32()?);
                 },
-                96 => {
+                16 => {
                     self.HDILBDIPGHO = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OFIODJNLBEA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OFIODJNLBEA);
         if self.HDILBDIPGHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HDILBDIPGHO);
+            my_size += ::protobuf::rt::uint32_size(2, self.HDILBDIPGHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.OFIODJNLBEA)?;
+        os.write_repeated_packed_uint32(15, &self.OFIODJNLBEA)?;
         if self.HDILBDIPGHO != 0 {
-            os.write_uint32(12, self.HDILBDIPGHO)?;
+            os.write_uint32(2, self.HDILBDIPGHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyLikeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMonopolyLikeScNotify.proto\"Z\n\x14MonopolyLikeScNotify\x12\x20\n\
-    \x0bOFIODJNLBEA\x18\x01\x20\x03(\rR\x0bOFIODJNLBEA\x12\x20\n\x0bHDILBDIP\
-    GHO\x18\x0c\x20\x01(\rR\x0bHDILBDIPGHOb\x06proto3\
+    \x0bOFIODJNLBEA\x18\x0f\x20\x03(\rR\x0bOFIODJNLBEA\x12\x20\n\x0bHDILBDIP\
+    GHO\x18\x02\x20\x01(\rR\x0bHDILBDIPGHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

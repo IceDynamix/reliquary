@@ -30,8 +30,8 @@ pub struct LNKFBAEDODI {
     // message fields
     // @@protoc_insertion_point(field:LNKFBAEDODI.DGHNGBLHAIL)
     pub DGHNGBLHAIL: u32,
-    // @@protoc_insertion_point(field:LNKFBAEDODI.MPGPGFKBMHG)
-    pub MPGPGFKBMHG: u32,
+    // @@protoc_insertion_point(field:LNKFBAEDODI.authkey_ver)
+    pub authkey_ver: u32,
     // @@protoc_insertion_point(field:LNKFBAEDODI.GKJKKDAOPAM)
     pub GKJKKDAOPAM: u32,
     // @@protoc_insertion_point(field:LNKFBAEDODI.OLCCIMLMMAD)
@@ -79,9 +79,9 @@ impl LNKFBAEDODI {
             |m: &mut LNKFBAEDODI| { &mut m.DGHNGBLHAIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPGPGFKBMHG",
-            |m: &LNKFBAEDODI| { &m.MPGPGFKBMHG },
-            |m: &mut LNKFBAEDODI| { &mut m.MPGPGFKBMHG },
+            "authkey_ver",
+            |m: &LNKFBAEDODI| { &m.authkey_ver },
+            |m: &mut LNKFBAEDODI| { &mut m.authkey_ver },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GKJKKDAOPAM",
@@ -160,7 +160,7 @@ impl ::protobuf::Message for LNKFBAEDODI {
                     self.DGHNGBLHAIL = is.read_uint32()?;
                 },
                 16 => {
-                    self.MPGPGFKBMHG = is.read_uint32()?;
+                    self.authkey_ver = is.read_uint32()?;
                 },
                 24 => {
                     self.GKJKKDAOPAM = is.read_uint32()?;
@@ -210,8 +210,8 @@ impl ::protobuf::Message for LNKFBAEDODI {
         if self.DGHNGBLHAIL != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.DGHNGBLHAIL);
         }
-        if self.MPGPGFKBMHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MPGPGFKBMHG);
+        if self.authkey_ver != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.authkey_ver);
         }
         if self.GKJKKDAOPAM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.GKJKKDAOPAM);
@@ -255,8 +255,8 @@ impl ::protobuf::Message for LNKFBAEDODI {
         if self.DGHNGBLHAIL != 0 {
             os.write_uint32(1, self.DGHNGBLHAIL)?;
         }
-        if self.MPGPGFKBMHG != 0 {
-            os.write_uint32(2, self.MPGPGFKBMHG)?;
+        if self.authkey_ver != 0 {
+            os.write_uint32(2, self.authkey_ver)?;
         }
         if self.GKJKKDAOPAM != 0 {
             os.write_uint32(3, self.GKJKKDAOPAM)?;
@@ -309,7 +309,7 @@ impl ::protobuf::Message for LNKFBAEDODI {
 
     fn clear(&mut self) {
         self.DGHNGBLHAIL = 0;
-        self.MPGPGFKBMHG = 0;
+        self.authkey_ver = 0;
         self.GKJKKDAOPAM = 0;
         self.OLCCIMLMMAD = 0;
         self.ELHEPMNLAPG = 0;
@@ -327,7 +327,7 @@ impl ::protobuf::Message for LNKFBAEDODI {
     fn default_instance() -> &'static LNKFBAEDODI {
         static instance: LNKFBAEDODI = LNKFBAEDODI {
             DGHNGBLHAIL: 0,
-            MPGPGFKBMHG: 0,
+            authkey_ver: 0,
             GKJKKDAOPAM: 0,
             OLCCIMLMMAD: 0,
             ELHEPMNLAPG: 0,
@@ -363,9 +363,9 @@ impl ::protobuf::reflect::ProtobufValue for LNKFBAEDODI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LNKFBAEDODI.proto\"\xb5\x03\n\x0bLNKFBAEDODI\x12\x20\n\x0bDGHNGBLH\
-    AIL\x18\x01\x20\x01(\rR\x0bDGHNGBLHAIL\x12\x20\n\x0bMPGPGFKBMHG\x18\x02\
-    \x20\x01(\rR\x0bMPGPGFKBMHG\x12\x20\n\x0bGKJKKDAOPAM\x18\x03\x20\x01(\rR\
+    \n\x11LNKFBAEDODI.proto\"\xb4\x03\n\x0bLNKFBAEDODI\x12\x20\n\x0bDGHNGBLH\
+    AIL\x18\x01\x20\x01(\rR\x0bDGHNGBLHAIL\x12\x1f\n\x0bauthkey_ver\x18\x02\
+    \x20\x01(\rR\nauthkeyVer\x12\x20\n\x0bGKJKKDAOPAM\x18\x03\x20\x01(\rR\
     \x0bGKJKKDAOPAM\x12\x20\n\x0bOLCCIMLMMAD\x18\x04\x20\x01(\rR\x0bOLCCIMLM\
     MAD\x12\x20\n\x0bELHEPMNLAPG\x18\x05\x20\x01(\rR\x0bELHEPMNLAPG\x12\x20\
     \n\x0bPIAMLFBIHPI\x18\x06\x20\x01(\rR\x0bPIAMLFBIHPI\x12\x20\n\x0bCFCAJE\

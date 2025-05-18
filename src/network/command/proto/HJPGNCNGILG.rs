@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HJPGNCNGILG {
     // message oneof groups
-    pub DCOECLCEDOB: ::std::option::Option<hjpgncngilg::DCOECLCEDOB>,
+    pub CMMJIGNOCLM: ::std::option::Option<hjpgncngilg::CMMJIGNOCLM>,
     // special fields
     // @@protoc_insertion_point(special_field:HJPGNCNGILG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl HJPGNCNGILG {
         ::std::default::Default::default()
     }
 
-    // .GOKKMEOMOFC CAPIJNMCDAM = 14;
+    // .GOKKMEOMOFC CAPIJNMCDAM = 8;
 
     pub fn CAPIJNMCDAM(&self) -> &super::GOKKMEOMOFC::GOKKMEOMOFC {
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(ref v)) => v,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(ref v)) => v,
             _ => <super::GOKKMEOMOFC::GOKKMEOMOFC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CAPIJNMCDAM(&mut self) {
-        self.DCOECLCEDOB = ::std::option::Option::None;
+        self.CMMJIGNOCLM = ::std::option::Option::None;
     }
 
     pub fn has_CAPIJNMCDAM(&self) -> bool {
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(..)) => true,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CAPIJNMCDAM(&mut self, v: super::GOKKMEOMOFC::GOKKMEOMOFC) {
-        self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(v))
+        self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_CAPIJNMCDAM(&mut self) -> &mut super::GOKKMEOMOFC::GOKKMEOMOFC {
-        if let ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(_)) = self.DCOECLCEDOB {
+        if let ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(_)) = self.CMMJIGNOCLM {
         } else {
-            self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(super::GOKKMEOMOFC::GOKKMEOMOFC::new()));
+            self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(super::GOKKMEOMOFC::GOKKMEOMOFC::new()));
         }
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(ref mut v)) => v,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl HJPGNCNGILG {
     // Take field
     pub fn take_CAPIJNMCDAM(&mut self) -> super::GOKKMEOMOFC::GOKKMEOMOFC {
         if self.has_CAPIJNMCDAM() {
-            match self.DCOECLCEDOB.take() {
-                ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(v)) => v,
+            match self.CMMJIGNOCLM.take() {
+                ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl HJPGNCNGILG {
         }
     }
 
-    // .NEBPGHDDEPC HMLCEHIKFFK = 7;
+    // .NEBPGHDDEPC HMLCEHIKFFK = 4;
 
     pub fn HMLCEHIKFFK(&self) -> &super::NEBPGHDDEPC::NEBPGHDDEPC {
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(ref v)) => v,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(ref v)) => v,
             _ => <super::NEBPGHDDEPC::NEBPGHDDEPC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_HMLCEHIKFFK(&mut self) {
-        self.DCOECLCEDOB = ::std::option::Option::None;
+        self.CMMJIGNOCLM = ::std::option::Option::None;
     }
 
     pub fn has_HMLCEHIKFFK(&self) -> bool {
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(..)) => true,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_HMLCEHIKFFK(&mut self, v: super::NEBPGHDDEPC::NEBPGHDDEPC) {
-        self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(v))
+        self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_HMLCEHIKFFK(&mut self) -> &mut super::NEBPGHDDEPC::NEBPGHDDEPC {
-        if let ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(_)) = self.DCOECLCEDOB {
+        if let ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(_)) = self.CMMJIGNOCLM {
         } else {
-            self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(super::NEBPGHDDEPC::NEBPGHDDEPC::new()));
+            self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(super::NEBPGHDDEPC::NEBPGHDDEPC::new()));
         }
-        match self.DCOECLCEDOB {
-            ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(ref mut v)) => v,
+        match self.CMMJIGNOCLM {
+            ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl HJPGNCNGILG {
     // Take field
     pub fn take_HMLCEHIKFFK(&mut self) -> super::NEBPGHDDEPC::NEBPGHDDEPC {
         if self.has_HMLCEHIKFFK() {
-            match self.DCOECLCEDOB.take() {
-                ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(v)) => v,
+            match self.CMMJIGNOCLM.take() {
+                ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl HJPGNCNGILG {
             HJPGNCNGILG::mut_HMLCEHIKFFK,
             HJPGNCNGILG::set_HMLCEHIKFFK,
         ));
-        oneofs.push(hjpgncngilg::DCOECLCEDOB::generated_oneof_descriptor_data());
+        oneofs.push(hjpgncngilg::CMMJIGNOCLM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HJPGNCNGILG>(
             "HJPGNCNGILG",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for HJPGNCNGILG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(is.read_message()?));
+                66 => {
+                    self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(is.read_message()?));
                 },
-                58 => {
-                    self.DCOECLCEDOB = ::std::option::Option::Some(hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(is.read_message()?));
+                34 => {
+                    self.CMMJIGNOCLM = ::std::option::Option::Some(hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for HJPGNCNGILG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.DCOECLCEDOB {
+        if let ::std::option::Option::Some(ref v) = self.CMMJIGNOCLM {
             match v {
-                &hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(ref v) => {
+                &hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(ref v) => {
+                &hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for HJPGNCNGILG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.DCOECLCEDOB {
+        if let ::std::option::Option::Some(ref v) = self.CMMJIGNOCLM {
             match v {
-                &hjpgncngilg::DCOECLCEDOB::CAPIJNMCDAM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &hjpgncngilg::CMMJIGNOCLM::CAPIJNMCDAM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &hjpgncngilg::DCOECLCEDOB::HMLCEHIKFFK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &hjpgncngilg::CMMJIGNOCLM::HMLCEHIKFFK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for HJPGNCNGILG {
     }
 
     fn clear(&mut self) {
-        self.DCOECLCEDOB = ::std::option::Option::None;
-        self.DCOECLCEDOB = ::std::option::Option::None;
+        self.CMMJIGNOCLM = ::std::option::Option::None;
+        self.CMMJIGNOCLM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HJPGNCNGILG {
         static instance: HJPGNCNGILG = HJPGNCNGILG {
-            DCOECLCEDOB: ::std::option::Option::None,
+            CMMJIGNOCLM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,36 +278,36 @@ pub mod hjpgncngilg {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:HJPGNCNGILG.DCOECLCEDOB)
-    pub enum DCOECLCEDOB {
+    // @@protoc_insertion_point(oneof:HJPGNCNGILG.CMMJIGNOCLM)
+    pub enum CMMJIGNOCLM {
         // @@protoc_insertion_point(oneof_field:HJPGNCNGILG.CAPIJNMCDAM)
         CAPIJNMCDAM(super::super::GOKKMEOMOFC::GOKKMEOMOFC),
         // @@protoc_insertion_point(oneof_field:HJPGNCNGILG.HMLCEHIKFFK)
         HMLCEHIKFFK(super::super::NEBPGHDDEPC::NEBPGHDDEPC),
     }
 
-    impl ::protobuf::Oneof for DCOECLCEDOB {
+    impl ::protobuf::Oneof for CMMJIGNOCLM {
     }
 
-    impl ::protobuf::OneofFull for DCOECLCEDOB {
+    impl ::protobuf::OneofFull for CMMJIGNOCLM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::HJPGNCNGILG as ::protobuf::MessageFull>::descriptor().oneof_by_name("DCOECLCEDOB").unwrap()).clone()
+            descriptor.get(|| <super::HJPGNCNGILG as ::protobuf::MessageFull>::descriptor().oneof_by_name("CMMJIGNOCLM").unwrap()).clone()
         }
     }
 
-    impl DCOECLCEDOB {
+    impl CMMJIGNOCLM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DCOECLCEDOB>("DCOECLCEDOB")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CMMJIGNOCLM>("CMMJIGNOCLM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJPGNCNGILG.proto\x1a\x11GOKKMEOMOFC.proto\x1a\x11NEBPGHDDEPC.prot\
-    o\"\x80\x01\n\x0bHJPGNCNGILG\x120\n\x0bCAPIJNMCDAM\x18\x0e\x20\x01(\x0b2\
-    \x0c.GOKKMEOMOFCH\0R\x0bCAPIJNMCDAM\x120\n\x0bHMLCEHIKFFK\x18\x07\x20\
-    \x01(\x0b2\x0c.NEBPGHDDEPCH\0R\x0bHMLCEHIKFFKB\r\n\x0bDCOECLCEDOBb\x06pr\
+    o\"\x80\x01\n\x0bHJPGNCNGILG\x120\n\x0bCAPIJNMCDAM\x18\x08\x20\x01(\x0b2\
+    \x0c.GOKKMEOMOFCH\0R\x0bCAPIJNMCDAM\x120\n\x0bHMLCEHIKFFK\x18\x04\x20\
+    \x01(\x0b2\x0c.NEBPGHDDEPCH\0R\x0bHMLCEHIKFFKB\r\n\x0bCMMJIGNOCLMb\x06pr\
     oto3\
 ";
 

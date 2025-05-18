@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMultipleExpeditionRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardCsReq.IJAJDHKGNKL)
-    pub IJAJDHKGNKL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardCsReq.take_multi_expedition)
+    pub take_multi_expedition: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMultipleExpeditionRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TakeMultipleExpeditionRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IJAJDHKGNKL",
-            |m: &TakeMultipleExpeditionRewardCsReq| { &m.IJAJDHKGNKL },
-            |m: &mut TakeMultipleExpeditionRewardCsReq| { &mut m.IJAJDHKGNKL },
+            "take_multi_expedition",
+            |m: &TakeMultipleExpeditionRewardCsReq| { &m.take_multi_expedition },
+            |m: &mut TakeMultipleExpeditionRewardCsReq| { &mut m.take_multi_expedition },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMultipleExpeditionRewardCsReq>(
             "TakeMultipleExpeditionRewardCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IJAJDHKGNKL)?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.take_multi_expedition)?;
                 },
-                72 => {
-                    self.IJAJDHKGNKL.push(is.read_uint32()?);
+                96 => {
+                    self.take_multi_expedition.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IJAJDHKGNKL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.take_multi_expedition);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.IJAJDHKGNKL)?;
+        os.write_repeated_packed_uint32(12, &self.take_multi_expedition)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.IJAJDHKGNKL.clear();
+        self.take_multi_expedition.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMultipleExpeditionRewardCsReq {
         static instance: TakeMultipleExpeditionRewardCsReq = TakeMultipleExpeditionRewardCsReq {
-            IJAJDHKGNKL: ::std::vec::Vec::new(),
+            take_multi_expedition: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeMultipleExpeditionRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'TakeMultipleExpeditionRewardCsReq.proto\"E\n!TakeMultipleExpeditionRe\
-    wardCsReq\x12\x20\n\x0bIJAJDHKGNKL\x18\t\x20\x03(\rR\x0bIJAJDHKGNKLb\x06\
-    proto3\
+    \n'TakeMultipleExpeditionRewardCsReq.proto\"W\n!TakeMultipleExpeditionRe\
+    wardCsReq\x122\n\x15take_multi_expedition\x18\x0c\x20\x03(\rR\x13takeMul\
+    tiExpeditionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

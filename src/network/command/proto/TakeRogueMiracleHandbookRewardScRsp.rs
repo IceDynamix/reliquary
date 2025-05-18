@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueMiracleHandbookRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.FEIFJADCDFL)
-    pub FEIFJADCDFL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeRogueMiracleHandbookRewardScRsp.FEIFJADCDFL)
+    pub FEIFJADCDFL: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueMiracleHandbookRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl TakeRogueMiracleHandbookRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FEIFJADCDFL",
-            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.FEIFJADCDFL },
-            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.FEIFJADCDFL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.reward },
@@ -67,6 +62,11 @@ impl TakeRogueMiracleHandbookRewardScRsp {
             "retcode",
             |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.retcode },
             |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FEIFJADCDFL",
+            |m: &TakeRogueMiracleHandbookRewardScRsp| { &m.FEIFJADCDFL },
+            |m: &mut TakeRogueMiracleHandbookRewardScRsp| { &mut m.FEIFJADCDFL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueMiracleHandbookRewardScRsp>(
             "TakeRogueMiracleHandbookRewardScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FEIFJADCDFL)?;
-                },
-                112 => {
-                    self.FEIFJADCDFL.push(is.read_uint32()?);
-                },
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                80 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FEIFJADCDFL)?;
+                },
+                40 => {
+                    self.FEIFJADCDFL.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.FEIFJADCDFL);
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.FEIFJADCDFL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.FEIFJADCDFL)?;
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(5, &self.FEIFJADCDFL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TakeRogueMiracleHandbookRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.FEIFJADCDFL.clear();
         self.reward.clear();
         self.retcode = 0;
+        self.FEIFJADCDFL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueMiracleHandbookRewardScRsp {
         static instance: TakeRogueMiracleHandbookRewardScRsp = TakeRogueMiracleHandbookRewardScRsp {
-            FEIFJADCDFL: ::std::vec::Vec::new(),
             reward: ::protobuf::MessageField::none(),
             retcode: 0,
+            FEIFJADCDFL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueMiracleHandbookRewardScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeRogueMiracleHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\x84\
-    \x01\n#TakeRogueMiracleHandbookRewardScRsp\x12\x20\n\x0bFEIFJADCDFL\x18\
-    \x0e\x20\x03(\rR\x0bFEIFJADCDFL\x12!\n\x06reward\x18\x05\x20\x01(\x0b2\t\
-    .ItemListR\x06reward\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \x01\n#TakeRogueMiracleHandbookRewardScRsp\x12!\n\x06reward\x18\n\x20\
+    \x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\x06\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bFEIFJADCDFL\x18\x05\x20\x03(\rR\x0bFEIFJADCDFL\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

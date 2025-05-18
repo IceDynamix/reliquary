@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueChangeyAeonDimensionNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueChangeyAeonDimensionNotify.ROGUE_DEBUG_MESSAGE_TYPE_INFO)
-    pub ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField<super::LLBJABEOCEC::LLBJABEOCEC>,
+    // @@protoc_insertion_point(field:ChessRogueChangeyAeonDimensionNotify.HNDLHICDNPC)
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::ChessRogueQueryAeon::ChessRogueQueryAeon>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueChangeyAeonDimensionNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl ChessRogueChangeyAeonDimensionNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LLBJABEOCEC::LLBJABEOCEC>(
-            "ROGUE_DEBUG_MESSAGE_TYPE_INFO",
-            |m: &ChessRogueChangeyAeonDimensionNotify| { &m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
-            |m: &mut ChessRogueChangeyAeonDimensionNotify| { &mut m.ROGUE_DEBUG_MESSAGE_TYPE_INFO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryAeon::ChessRogueQueryAeon>(
+            "HNDLHICDNPC",
+            |m: &ChessRogueChangeyAeonDimensionNotify| { &m.HNDLHICDNPC },
+            |m: &mut ChessRogueChangeyAeonDimensionNotify| { &mut m.HNDLHICDNPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueChangeyAeonDimensionNotify>(
             "ChessRogueChangeyAeonDimensionNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_DEBUG_MESSAGE_TYPE_INFO)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     }
 
     fn clear(&mut self) {
-        self.ROGUE_DEBUG_MESSAGE_TYPE_INFO.clear();
+        self.HNDLHICDNPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueChangeyAeonDimensionNotify {
         static instance: ChessRogueChangeyAeonDimensionNotify = ChessRogueChangeyAeonDimensionNotify {
-            ROGUE_DEBUG_MESSAGE_TYPE_INFO: ::protobuf::MessageField::none(),
+            HNDLHICDNPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,10 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueChangeyAeonDimensionNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*ChessRogueChangeyAeonDimensionNotify.proto\x1a\x11LLBJABEOCEC.proto\"\
-    v\n$ChessRogueChangeyAeonDimensionNotify\x12N\n\x1dROGUE_DEBUG_MESSAGE_T\
-    YPE_INFO\x18\x08\x20\x01(\x0b2\x0c.LLBJABEOCECR\x19ROGUEDEBUGMESSAGETYPE\
-    INFOb\x06proto3\
+    \n*ChessRogueChangeyAeonDimensionNotify.proto\x1a\x19ChessRogueQueryAeon\
+    .proto\"^\n$ChessRogueChangeyAeonDimensionNotify\x126\n\x0bHNDLHICDNPC\
+    \x18\x0e\x20\x01(\x0b2\x14.ChessRogueQueryAeonR\x0bHNDLHICDNPCb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -169,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LLBJABEOCEC::file_descriptor().clone());
+            deps.push(super::ChessRogueQueryAeon::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueChangeyAeonDimensionNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

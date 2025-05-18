@@ -79,10 +79,10 @@ impl ::protobuf::Message for JJDKOEEHBJO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.num = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.OOOFGDBLDCE = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JJDKOEEHBJO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.num);
+            my_size += ::protobuf::rt::uint32_size(6, self.num);
         }
         if self.OOOFGDBLDCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OOOFGDBLDCE);
+            my_size += ::protobuf::rt::uint32_size(13, self.OOOFGDBLDCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JJDKOEEHBJO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(7, self.num)?;
+            os.write_uint32(6, self.num)?;
         }
         if self.OOOFGDBLDCE != 0 {
-            os.write_uint32(14, self.OOOFGDBLDCE)?;
+            os.write_uint32(13, self.OOOFGDBLDCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JJDKOEEHBJO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JJDKOEEHBJO.proto\"A\n\x0bJJDKOEEHBJO\x12\x10\n\x03num\x18\x07\x20\
-    \x01(\rR\x03num\x12\x20\n\x0bOOOFGDBLDCE\x18\x0e\x20\x01(\rR\x0bOOOFGDBL\
-    DCEb\x06proto3\
+    \n\x11JJDKOEEHBJO.proto\"A\n\x0bJJDKOEEHBJO\x12\x10\n\x03num\x18\x06\x20\
+    \x01(\rR\x03num\x12\x20\n\x0bOOOFGDBLDCE\x18\r\x20\x01(\rR\x0bOOOFGDBLDC\
+    Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRechargeBenefitInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                114 => {
                     self.EHNDMLFFMHI.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRechargeBenefitInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         for value in &self.EHNDMLFFMHI {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRechargeBenefitInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         for v in &self.EHNDMLFFMHI {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRechargeBenefitInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetRechargeBenefitInfoScRsp.proto\x1a\x11JMHOJKKGNIF.proto\"g\n\x1bGe\
-    tRechargeBenefitInfoScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bEHNDMLFFMHI\x18\x04\x20\x03(\x0b2\x0c.JMHOJKKGNIFR\x0bEHND\
-    MLFFMHIb\x06proto3\
+    tRechargeBenefitInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07re\
+    tcode\x12.\n\x0bEHNDMLFFMHI\x18\x0e\x20\x03(\x0b2\x0c.JMHOJKKGNIFR\x0bEH\
+    NDMLFFMHIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

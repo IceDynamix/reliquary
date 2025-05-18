@@ -79,10 +79,10 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.KIEKJEFFPHK = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.NKCMNAFAIOI = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KIEKJEFFPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KIEKJEFFPHK);
+            my_size += ::protobuf::rt::uint32_size(8, self.KIEKJEFFPHK);
         }
         if self.NKCMNAFAIOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NKCMNAFAIOI);
+            my_size += ::protobuf::rt::uint32_size(3, self.NKCMNAFAIOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for WaypointShowNewCsNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KIEKJEFFPHK != 0 {
-            os.write_uint32(14, self.KIEKJEFFPHK)?;
+            os.write_uint32(8, self.KIEKJEFFPHK)?;
         }
         if self.NKCMNAFAIOI != 0 {
-            os.write_uint32(9, self.NKCMNAFAIOI)?;
+            os.write_uint32(3, self.NKCMNAFAIOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for WaypointShowNewCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dWaypointShowNewCsNotify.proto\"]\n\x17WaypointShowNewCsNotify\x12\
-    \x20\n\x0bKIEKJEFFPHK\x18\x0e\x20\x01(\rR\x0bKIEKJEFFPHK\x12\x20\n\x0bNK\
-    CMNAFAIOI\x18\t\x20\x01(\rR\x0bNKCMNAFAIOIb\x06proto3\
+    \x20\n\x0bKIEKJEFFPHK\x18\x08\x20\x01(\rR\x0bKIEKJEFFPHK\x12\x20\n\x0bNK\
+    CMNAFAIOI\x18\x03\x20\x01(\rR\x0bNKCMNAFAIOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

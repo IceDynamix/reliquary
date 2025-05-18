@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetNicknameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetNicknameScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SetNicknameScRsp.JENDKBOOAIP)
-    pub JENDKBOOAIP: i64,
     // @@protoc_insertion_point(field:SetNicknameScRsp.is_modify)
     pub is_modify: bool,
+    // @@protoc_insertion_point(field:SetNicknameScRsp.JENDKBOOAIP)
+    pub JENDKBOOAIP: i64,
+    // @@protoc_insertion_point(field:SetNicknameScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetNicknameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SetNicknameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetNicknameScRsp| { &m.retcode },
-            |m: &mut SetNicknameScRsp| { &mut m.retcode },
+            "is_modify",
+            |m: &SetNicknameScRsp| { &m.is_modify },
+            |m: &mut SetNicknameScRsp| { &mut m.is_modify },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JENDKBOOAIP",
@@ -64,9 +64,9 @@ impl SetNicknameScRsp {
             |m: &mut SetNicknameScRsp| { &mut m.JENDKBOOAIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_modify",
-            |m: &SetNicknameScRsp| { &m.is_modify },
-            |m: &mut SetNicknameScRsp| { &mut m.is_modify },
+            "retcode",
+            |m: &SetNicknameScRsp| { &m.retcode },
+            |m: &mut SetNicknameScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetNicknameScRsp>(
             "SetNicknameScRsp",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for SetNicknameScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.retcode = is.read_uint32()?;
+                    self.is_modify = is.read_bool()?;
                 },
-                104 => {
+                96 => {
                     self.JENDKBOOAIP = is.read_int64()?;
                 },
-                80 => {
-                    self.is_modify = is.read_bool()?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetNicknameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.JENDKBOOAIP != 0 {
-            my_size += ::protobuf::rt::int64_size(13, self.JENDKBOOAIP);
-        }
         if self.is_modify != false {
             my_size += 1 + 1;
+        }
+        if self.JENDKBOOAIP != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.JENDKBOOAIP);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetNicknameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if self.is_modify != false {
+            os.write_bool(6, self.is_modify)?;
         }
         if self.JENDKBOOAIP != 0 {
-            os.write_int64(13, self.JENDKBOOAIP)?;
+            os.write_int64(12, self.JENDKBOOAIP)?;
         }
-        if self.is_modify != false {
-            os.write_bool(10, self.is_modify)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetNicknameScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.JENDKBOOAIP = 0;
         self.is_modify = false;
+        self.JENDKBOOAIP = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetNicknameScRsp {
         static instance: SetNicknameScRsp = SetNicknameScRsp {
-            retcode: 0,
-            JENDKBOOAIP: 0,
             is_modify: false,
+            JENDKBOOAIP: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetNicknameScRsp.proto\"k\n\x10SetNicknameScRsp\x12\x18\n\x07retco\
-    de\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bJENDKBOOAIP\x18\r\x20\x01\
-    (\x03R\x0bJENDKBOOAIP\x12\x1b\n\tis_modify\x18\n\x20\x01(\x08R\x08isModi\
-    fyb\x06proto3\
+    \n\x16SetNicknameScRsp.proto\"k\n\x10SetNicknameScRsp\x12\x1b\n\tis_modi\
+    fy\x18\x06\x20\x01(\x08R\x08isModify\x12\x20\n\x0bJENDKBOOAIP\x18\x0c\
+    \x20\x01(\x03R\x0bJENDKBOOAIP\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

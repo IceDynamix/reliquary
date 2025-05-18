@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePlayerSettingCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdatePlayerSettingCsReq.KLKPMLJKMJP)
-    pub KLKPMLJKMJP: ::protobuf::MessageField<super::ONMLPJKAGCG::ONMLPJKAGCG>,
+    // @@protoc_insertion_point(field:UpdatePlayerSettingCsReq.player_setting)
+    pub player_setting: ::protobuf::MessageField<super::UpdatePlayerSetting::UpdatePlayerSetting>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePlayerSettingCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl UpdatePlayerSettingCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONMLPJKAGCG::ONMLPJKAGCG>(
-            "KLKPMLJKMJP",
-            |m: &UpdatePlayerSettingCsReq| { &m.KLKPMLJKMJP },
-            |m: &mut UpdatePlayerSettingCsReq| { &mut m.KLKPMLJKMJP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::UpdatePlayerSetting::UpdatePlayerSetting>(
+            "player_setting",
+            |m: &UpdatePlayerSettingCsReq| { &m.player_setting },
+            |m: &mut UpdatePlayerSettingCsReq| { &mut m.player_setting },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayerSettingCsReq>(
             "UpdatePlayerSettingCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KLKPMLJKMJP)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KLKPMLJKMJP.as_ref() {
+        if let Some(v) = self.player_setting.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KLKPMLJKMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.player_setting.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UpdatePlayerSettingCsReq {
     }
 
     fn clear(&mut self) {
-        self.KLKPMLJKMJP.clear();
+        self.player_setting.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePlayerSettingCsReq {
         static instance: UpdatePlayerSettingCsReq = UpdatePlayerSettingCsReq {
-            KLKPMLJKMJP: ::protobuf::MessageField::none(),
+            player_setting: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdatePlayerSettingCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eUpdatePlayerSettingCsReq.proto\x1a\x11ONMLPJKAGCG.proto\"J\n\x18Up\
-    datePlayerSettingCsReq\x12.\n\x0bKLKPMLJKMJP\x18\x05\x20\x01(\x0b2\x0c.O\
-    NMLPJKAGCGR\x0bKLKPMLJKMJPb\x06proto3\
+    \n\x1eUpdatePlayerSettingCsReq.proto\x1a\x19UpdatePlayerSetting.proto\"W\
+    \n\x18UpdatePlayerSettingCsReq\x12;\n\x0eplayer_setting\x18\r\x20\x01(\
+    \x0b2\x14.UpdatePlayerSettingR\rplayerSettingb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ONMLPJKAGCG::file_descriptor().clone());
+            deps.push(super::UpdatePlayerSetting::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePlayerSettingCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

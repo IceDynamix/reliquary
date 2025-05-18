@@ -29,32 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdQuestType {
     // @@protoc_insertion_point(enum_value:CmdQuestType.CmdQuestTypeNone)
     CmdQuestTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdBatchGetQuestDataCsReq)
-    CmdBatchGetQuestDataCsReq = 973,
     // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestOptionalRewardCsReq)
-    CmdTakeQuestOptionalRewardCsReq = 918,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestDataCsReq)
-    CmdGetQuestDataCsReq = 911,
+    CmdTakeQuestOptionalRewardCsReq = 985,
     // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestRecordCsReq)
-    CmdGetQuestRecordCsReq = 970,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestDataScRsp)
-    CmdGetQuestDataScRsp = 913,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdFinishQuestScRsp)
-    CmdFinishQuestScRsp = 995,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestOptionalRewardScRsp)
-    CmdTakeQuestOptionalRewardScRsp = 936,
+    CmdGetQuestRecordCsReq = 971,
     // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestRewardCsReq)
-    CmdTakeQuestRewardCsReq = 947,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdFinishQuestCsReq)
-    CmdFinishQuestCsReq = 930,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestRewardScRsp)
-    CmdTakeQuestRewardScRsp = 909,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdBatchGetQuestDataScRsp)
-    CmdBatchGetQuestDataScRsp = 977,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestRecordScRsp)
-    CmdGetQuestRecordScRsp = 989,
+    CmdTakeQuestRewardCsReq = 931,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestOptionalRewardScRsp)
+    CmdTakeQuestOptionalRewardScRsp = 916,
     // @@protoc_insertion_point(enum_value:CmdQuestType.CmdQuestRecordScNotify)
-    CmdQuestRecordScNotify = 926,
+    CmdQuestRecordScNotify = 922,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdTakeQuestRewardScRsp)
+    CmdTakeQuestRewardScRsp = 940,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestDataScRsp)
+    CmdGetQuestDataScRsp = 932,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestDataCsReq)
+    CmdGetQuestDataCsReq = 995,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdGetQuestRecordScRsp)
+    CmdGetQuestRecordScRsp = 952,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdBatchGetQuestDataCsReq)
+    CmdBatchGetQuestDataCsReq = 983,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdFinishQuestCsReq)
+    CmdFinishQuestCsReq = 956,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdBatchGetQuestDataScRsp)
+    CmdBatchGetQuestDataScRsp = 960,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.CmdFinishQuestScRsp)
+    CmdFinishQuestScRsp = 972,
 }
 
 impl ::protobuf::Enum for CmdQuestType {
@@ -67,19 +67,19 @@ impl ::protobuf::Enum for CmdQuestType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdQuestType> {
         match value {
             0 => ::std::option::Option::Some(CmdQuestType::CmdQuestTypeNone),
-            973 => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataCsReq),
-            918 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardCsReq),
-            911 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataCsReq),
-            970 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordCsReq),
-            913 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataScRsp),
-            995 => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestScRsp),
-            936 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardScRsp),
-            947 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardCsReq),
-            930 => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestCsReq),
-            909 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardScRsp),
-            977 => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataScRsp),
-            989 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordScRsp),
-            926 => ::std::option::Option::Some(CmdQuestType::CmdQuestRecordScNotify),
+            985 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardCsReq),
+            971 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordCsReq),
+            931 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardCsReq),
+            916 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardScRsp),
+            922 => ::std::option::Option::Some(CmdQuestType::CmdQuestRecordScNotify),
+            940 => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardScRsp),
+            932 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataScRsp),
+            995 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataCsReq),
+            952 => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordScRsp),
+            983 => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataCsReq),
+            956 => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestCsReq),
+            960 => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataScRsp),
+            972 => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -87,38 +87,38 @@ impl ::protobuf::Enum for CmdQuestType {
     fn from_str(str: &str) -> ::std::option::Option<CmdQuestType> {
         match str {
             "CmdQuestTypeNone" => ::std::option::Option::Some(CmdQuestType::CmdQuestTypeNone),
-            "CmdBatchGetQuestDataCsReq" => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataCsReq),
             "CmdTakeQuestOptionalRewardCsReq" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardCsReq),
-            "CmdGetQuestDataCsReq" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataCsReq),
             "CmdGetQuestRecordCsReq" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordCsReq),
-            "CmdGetQuestDataScRsp" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataScRsp),
-            "CmdFinishQuestScRsp" => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestScRsp),
-            "CmdTakeQuestOptionalRewardScRsp" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardScRsp),
             "CmdTakeQuestRewardCsReq" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardCsReq),
-            "CmdFinishQuestCsReq" => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestCsReq),
-            "CmdTakeQuestRewardScRsp" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardScRsp),
-            "CmdBatchGetQuestDataScRsp" => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataScRsp),
-            "CmdGetQuestRecordScRsp" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordScRsp),
+            "CmdTakeQuestOptionalRewardScRsp" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestOptionalRewardScRsp),
             "CmdQuestRecordScNotify" => ::std::option::Option::Some(CmdQuestType::CmdQuestRecordScNotify),
+            "CmdTakeQuestRewardScRsp" => ::std::option::Option::Some(CmdQuestType::CmdTakeQuestRewardScRsp),
+            "CmdGetQuestDataScRsp" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataScRsp),
+            "CmdGetQuestDataCsReq" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestDataCsReq),
+            "CmdGetQuestRecordScRsp" => ::std::option::Option::Some(CmdQuestType::CmdGetQuestRecordScRsp),
+            "CmdBatchGetQuestDataCsReq" => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataCsReq),
+            "CmdFinishQuestCsReq" => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestCsReq),
+            "CmdBatchGetQuestDataScRsp" => ::std::option::Option::Some(CmdQuestType::CmdBatchGetQuestDataScRsp),
+            "CmdFinishQuestScRsp" => ::std::option::Option::Some(CmdQuestType::CmdFinishQuestScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdQuestType] = &[
         CmdQuestType::CmdQuestTypeNone,
-        CmdQuestType::CmdBatchGetQuestDataCsReq,
         CmdQuestType::CmdTakeQuestOptionalRewardCsReq,
-        CmdQuestType::CmdGetQuestDataCsReq,
         CmdQuestType::CmdGetQuestRecordCsReq,
-        CmdQuestType::CmdGetQuestDataScRsp,
-        CmdQuestType::CmdFinishQuestScRsp,
-        CmdQuestType::CmdTakeQuestOptionalRewardScRsp,
         CmdQuestType::CmdTakeQuestRewardCsReq,
-        CmdQuestType::CmdFinishQuestCsReq,
-        CmdQuestType::CmdTakeQuestRewardScRsp,
-        CmdQuestType::CmdBatchGetQuestDataScRsp,
-        CmdQuestType::CmdGetQuestRecordScRsp,
+        CmdQuestType::CmdTakeQuestOptionalRewardScRsp,
         CmdQuestType::CmdQuestRecordScNotify,
+        CmdQuestType::CmdTakeQuestRewardScRsp,
+        CmdQuestType::CmdGetQuestDataScRsp,
+        CmdQuestType::CmdGetQuestDataCsReq,
+        CmdQuestType::CmdGetQuestRecordScRsp,
+        CmdQuestType::CmdBatchGetQuestDataCsReq,
+        CmdQuestType::CmdFinishQuestCsReq,
+        CmdQuestType::CmdBatchGetQuestDataScRsp,
+        CmdQuestType::CmdFinishQuestScRsp,
     ];
 }
 
@@ -131,19 +131,19 @@ impl ::protobuf::EnumFull for CmdQuestType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdQuestType::CmdQuestTypeNone => 0,
-            CmdQuestType::CmdBatchGetQuestDataCsReq => 1,
-            CmdQuestType::CmdTakeQuestOptionalRewardCsReq => 2,
-            CmdQuestType::CmdGetQuestDataCsReq => 3,
-            CmdQuestType::CmdGetQuestRecordCsReq => 4,
-            CmdQuestType::CmdGetQuestDataScRsp => 5,
-            CmdQuestType::CmdFinishQuestScRsp => 6,
-            CmdQuestType::CmdTakeQuestOptionalRewardScRsp => 7,
-            CmdQuestType::CmdTakeQuestRewardCsReq => 8,
-            CmdQuestType::CmdFinishQuestCsReq => 9,
-            CmdQuestType::CmdTakeQuestRewardScRsp => 10,
-            CmdQuestType::CmdBatchGetQuestDataScRsp => 11,
-            CmdQuestType::CmdGetQuestRecordScRsp => 12,
-            CmdQuestType::CmdQuestRecordScNotify => 13,
+            CmdQuestType::CmdTakeQuestOptionalRewardCsReq => 1,
+            CmdQuestType::CmdGetQuestRecordCsReq => 2,
+            CmdQuestType::CmdTakeQuestRewardCsReq => 3,
+            CmdQuestType::CmdTakeQuestOptionalRewardScRsp => 4,
+            CmdQuestType::CmdQuestRecordScNotify => 5,
+            CmdQuestType::CmdTakeQuestRewardScRsp => 6,
+            CmdQuestType::CmdGetQuestDataScRsp => 7,
+            CmdQuestType::CmdGetQuestDataCsReq => 8,
+            CmdQuestType::CmdGetQuestRecordScRsp => 9,
+            CmdQuestType::CmdBatchGetQuestDataCsReq => 10,
+            CmdQuestType::CmdFinishQuestCsReq => 11,
+            CmdQuestType::CmdBatchGetQuestDataScRsp => 12,
+            CmdQuestType::CmdFinishQuestScRsp => 13,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,16 +163,16 @@ impl CmdQuestType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdQuestType.proto*\xad\x03\n\x0cCmdQuestType\x12\x14\n\x10CmdQues\
-    tTypeNone\x10\0\x12\x1e\n\x19CmdBatchGetQuestDataCsReq\x10\xcd\x07\x12$\
-    \n\x1fCmdTakeQuestOptionalRewardCsReq\x10\x96\x07\x12\x19\n\x14CmdGetQue\
-    stDataCsReq\x10\x8f\x07\x12\x1b\n\x16CmdGetQuestRecordCsReq\x10\xca\x07\
-    \x12\x19\n\x14CmdGetQuestDataScRsp\x10\x91\x07\x12\x18\n\x13CmdFinishQue\
-    stScRsp\x10\xe3\x07\x12$\n\x1fCmdTakeQuestOptionalRewardScRsp\x10\xa8\
-    \x07\x12\x1c\n\x17CmdTakeQuestRewardCsReq\x10\xb3\x07\x12\x18\n\x13CmdFi\
-    nishQuestCsReq\x10\xa2\x07\x12\x1c\n\x17CmdTakeQuestRewardScRsp\x10\x8d\
-    \x07\x12\x1e\n\x19CmdBatchGetQuestDataScRsp\x10\xd1\x07\x12\x1b\n\x16Cmd\
-    GetQuestRecordScRsp\x10\xdd\x07\x12\x1b\n\x16CmdQuestRecordScNotify\x10\
-    \x9e\x07b\x06proto3\
+    tTypeNone\x10\0\x12$\n\x1fCmdTakeQuestOptionalRewardCsReq\x10\xd9\x07\
+    \x12\x1b\n\x16CmdGetQuestRecordCsReq\x10\xcb\x07\x12\x1c\n\x17CmdTakeQue\
+    stRewardCsReq\x10\xa3\x07\x12$\n\x1fCmdTakeQuestOptionalRewardScRsp\x10\
+    \x94\x07\x12\x1b\n\x16CmdQuestRecordScNotify\x10\x9a\x07\x12\x1c\n\x17Cm\
+    dTakeQuestRewardScRsp\x10\xac\x07\x12\x19\n\x14CmdGetQuestDataScRsp\x10\
+    \xa4\x07\x12\x19\n\x14CmdGetQuestDataCsReq\x10\xe3\x07\x12\x1b\n\x16CmdG\
+    etQuestRecordScRsp\x10\xb8\x07\x12\x1e\n\x19CmdBatchGetQuestDataCsReq\
+    \x10\xd7\x07\x12\x18\n\x13CmdFinishQuestCsReq\x10\xbc\x07\x12\x1e\n\x19C\
+    mdBatchGetQuestDataScRsp\x10\xc0\x07\x12\x18\n\x13CmdFinishQuestScRsp\
+    \x10\xcc\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

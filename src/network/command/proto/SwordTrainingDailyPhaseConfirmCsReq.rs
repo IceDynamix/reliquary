@@ -72,7 +72,7 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                40 => {
                     self.IFENLNHLBAB = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IFENLNHLBAB != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.IFENLNHLBAB.value());
+            my_size += ::protobuf::rt::int32_size(5, self.IFENLNHLBAB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IFENLNHLBAB != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.IFENLNHLBAB))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.IFENLNHLBAB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingDailyPhaseConfirmCsReq 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SwordTrainingDailyPhaseConfirmCsReq.proto\x1a!SwordTrainingDailyPhase\
     Type.proto\"e\n#SwordTrainingDailyPhaseConfirmCsReq\x12>\n\x0bIFENLNHLBA\
-    B\x18\x0f\x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bIFENLNHLBABb\
+    B\x18\x05\x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bIFENLNHLBABb\
     \x06proto3\
 ";
 

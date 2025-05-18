@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueTournAreaUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                66 => {
                     self.JIDJEAMDKDE.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueTournAreaUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.JIDJEAMDKDE {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournAreaUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournAreaUpdateScNotify.proto\x1a\x11OLKFPHPBPDL.proto\"N\n\x1c\
-    RogueTournAreaUpdateScNotify\x12.\n\x0bJIDJEAMDKDE\x18\x07\x20\x03(\x0b2\
+    RogueTournAreaUpdateScNotify\x12.\n\x0bJIDJEAMDKDE\x18\x08\x20\x03(\x0b2\
     \x0c.OLKFPHPBPDLR\x0bJIDJEAMDKDEb\x06proto3\
 ";
 

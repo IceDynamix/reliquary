@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookOpenPackScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.energy_info)
-    pub energy_info: u32,
-    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.IIKBCNBJKKI)
-    pub IIKBCNBJKKI: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.FDCKFKFKHLO)
     pub FDCKFKFKHLO: u32,
-    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.CJENCDIFLCF)
     pub CJENCDIFLCF: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.IIKBCNBJKKI)
+    pub IIKBCNBJKKI: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TarotBookOpenPackScRsp.energy_info)
+    pub energy_info: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TarotBookOpenPackScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl TarotBookOpenPackScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "energy_info",
-            |m: &TarotBookOpenPackScRsp| { &m.energy_info },
-            |m: &mut TarotBookOpenPackScRsp| { &mut m.energy_info },
+            "FDCKFKFKHLO",
+            |m: &TarotBookOpenPackScRsp| { &m.FDCKFKFKHLO },
+            |m: &mut TarotBookOpenPackScRsp| { &mut m.FDCKFKFKHLO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "CJENCDIFLCF",
+            |m: &TarotBookOpenPackScRsp| { &m.CJENCDIFLCF },
+            |m: &mut TarotBookOpenPackScRsp| { &mut m.CJENCDIFLCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "IIKBCNBJKKI",
@@ -68,19 +73,14 @@ impl TarotBookOpenPackScRsp {
             |m: &mut TarotBookOpenPackScRsp| { &mut m.IIKBCNBJKKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDCKFKFKHLO",
-            |m: &TarotBookOpenPackScRsp| { &m.FDCKFKFKHLO },
-            |m: &mut TarotBookOpenPackScRsp| { &mut m.FDCKFKFKHLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TarotBookOpenPackScRsp| { &m.retcode },
             |m: &mut TarotBookOpenPackScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "CJENCDIFLCF",
-            |m: &TarotBookOpenPackScRsp| { &m.CJENCDIFLCF },
-            |m: &mut TarotBookOpenPackScRsp| { &mut m.CJENCDIFLCF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "energy_info",
+            |m: &TarotBookOpenPackScRsp| { &m.energy_info },
+            |m: &mut TarotBookOpenPackScRsp| { &mut m.energy_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TarotBookOpenPackScRsp>(
             "TarotBookOpenPackScRsp",
@@ -100,10 +100,25 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.energy_info = is.read_uint32()?;
+                120 => {
+                    self.FDCKFKFKHLO = is.read_uint32()?;
                 },
                 90 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.CJENCDIFLCF.insert(key, value);
+                },
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -119,25 +134,10 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
                     self.IIKBCNBJKKI.insert(key, value);
                 },
                 96 => {
-                    self.FDCKFKFKHLO = is.read_uint32()?;
-                },
-                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.CJENCDIFLCF.insert(key, value);
+                32 => {
+                    self.energy_info = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,20 +151,8 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.energy_info != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.energy_info);
-        }
-        for (k, v) in &self.IIKBCNBJKKI {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
         if self.FDCKFKFKHLO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FDCKFKFKHLO);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.FDCKFKFKHLO);
         }
         for (k, v) in &self.CJENCDIFLCF {
             let mut entry_size = 0;
@@ -172,16 +160,28 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        for (k, v) in &self.IIKBCNBJKKI {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.energy_info != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.energy_info);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.energy_info != 0 {
-            os.write_uint32(2, self.energy_info)?;
+        if self.FDCKFKFKHLO != 0 {
+            os.write_uint32(15, self.FDCKFKFKHLO)?;
         }
-        for (k, v) in &self.IIKBCNBJKKI {
+        for (k, v) in &self.CJENCDIFLCF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -190,13 +190,7 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.FDCKFKFKHLO != 0 {
-            os.write_uint32(12, self.FDCKFKFKHLO)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        for (k, v) in &self.CJENCDIFLCF {
+        for (k, v) in &self.IIKBCNBJKKI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -205,6 +199,12 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.energy_info != 0 {
+            os.write_uint32(4, self.energy_info)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -222,11 +222,11 @@ impl ::protobuf::Message for TarotBookOpenPackScRsp {
     }
 
     fn clear(&mut self) {
-        self.energy_info = 0;
-        self.IIKBCNBJKKI.clear();
         self.FDCKFKFKHLO = 0;
-        self.retcode = 0;
         self.CJENCDIFLCF.clear();
+        self.IIKBCNBJKKI.clear();
+        self.retcode = 0;
+        self.energy_info = 0;
         self.special_fields.clear();
     }
 
@@ -255,15 +255,15 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookOpenPackScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTarotBookOpenPackScRsp.proto\"\x8d\x03\n\x16TarotBookOpenPackScRsp\
-    \x12\x1f\n\x0benergy_info\x18\x02\x20\x01(\rR\nenergyInfo\x12J\n\x0bIIKB\
-    CNBJKKI\x18\x0b\x20\x03(\x0b2(.TarotBookOpenPackScRsp.IIKBCNBJKKIEntryR\
-    \x0bIIKBCNBJKKI\x12\x20\n\x0bFDCKFKFKHLO\x18\x0c\x20\x01(\rR\x0bFDCKFKFK\
-    HLO\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12J\n\x0bCJENCD\
-    IFLCF\x18\r\x20\x03(\x0b2(.TarotBookOpenPackScRsp.CJENCDIFLCFEntryR\x0bC\
-    JENCDIFLCF\x1a>\n\x10IIKBCNBJKKIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\
-    \rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a\
-    >\n\x10CJENCDIFLCFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\
-    \x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \x12\x20\n\x0bFDCKFKFKHLO\x18\x0f\x20\x01(\rR\x0bFDCKFKFKHLO\x12J\n\x0bC\
+    JENCDIFLCF\x18\x0b\x20\x03(\x0b2(.TarotBookOpenPackScRsp.CJENCDIFLCFEntr\
+    yR\x0bCJENCDIFLCF\x12J\n\x0bIIKBCNBJKKI\x18\r\x20\x03(\x0b2(.TarotBookOp\
+    enPackScRsp.IIKBCNBJKKIEntryR\x0bIIKBCNBJKKI\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcode\x12\x1f\n\x0benergy_info\x18\x04\x20\x01(\rR\
+    \nenergyInfo\x1a>\n\x10CJENCDIFLCFEntry\x12\x10\n\x03key\x18\x01\x20\x01\
+    (\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\
+    \x1a>\n\x10IIKBCNBJKKIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct MJKIBJLOBKD {
     // message fields
     // @@protoc_insertion_point(field:MJKIBJLOBKD.wave)
     pub wave: u32,
-    // @@protoc_insertion_point(field:MJKIBJLOBKD.score)
-    pub score: u32,
+    // @@protoc_insertion_point(field:MJKIBJLOBKD.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:MJKIBJLOBKD.DCHIOLBFKJN)
     pub DCHIOLBFKJN: u32,
     // @@protoc_insertion_point(field:MJKIBJLOBKD.BHJKMHMOEAK)
@@ -63,9 +63,9 @@ impl MJKIBJLOBKD {
             |m: &mut MJKIBJLOBKD| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &MJKIBJLOBKD| { &m.score },
-            |m: &mut MJKIBJLOBKD| { &mut m.score },
+            "score_id",
+            |m: &MJKIBJLOBKD| { &m.score_id },
+            |m: &mut MJKIBJLOBKD| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCHIOLBFKJN",
@@ -104,7 +104,7 @@ impl ::protobuf::Message for MJKIBJLOBKD {
                     self.wave = is.read_uint32()?;
                 },
                 16 => {
-                    self.score = is.read_uint32()?;
+                    self.score_id = is.read_uint32()?;
                 },
                 24 => {
                     self.DCHIOLBFKJN = is.read_uint32()?;
@@ -130,8 +130,8 @@ impl ::protobuf::Message for MJKIBJLOBKD {
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.wave);
         }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.score);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
         }
         if self.DCHIOLBFKJN != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.DCHIOLBFKJN);
@@ -152,8 +152,8 @@ impl ::protobuf::Message for MJKIBJLOBKD {
         if self.wave != 0 {
             os.write_uint32(1, self.wave)?;
         }
-        if self.score != 0 {
-            os.write_uint32(2, self.score)?;
+        if self.score_id != 0 {
+            os.write_uint32(2, self.score_id)?;
         }
         if self.DCHIOLBFKJN != 0 {
             os.write_uint32(3, self.DCHIOLBFKJN)?;
@@ -182,7 +182,7 @@ impl ::protobuf::Message for MJKIBJLOBKD {
 
     fn clear(&mut self) {
         self.wave = 0;
-        self.score = 0;
+        self.score_id = 0;
         self.DCHIOLBFKJN = 0;
         self.BHJKMHMOEAK.clear();
         self.HGFLPENKIII = 0.;
@@ -192,7 +192,7 @@ impl ::protobuf::Message for MJKIBJLOBKD {
     fn default_instance() -> &'static MJKIBJLOBKD {
         static instance: MJKIBJLOBKD = MJKIBJLOBKD {
             wave: 0,
-            score: 0,
+            score_id: 0,
             DCHIOLBFKJN: 0,
             BHJKMHMOEAK: ::std::vec::Vec::new(),
             HGFLPENKIII: 0.,
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for MJKIBJLOBKD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MJKIBJLOBKD.proto\x1a\x11KPKKKJPJCPC.proto\"\xab\x01\n\x0bMJKIBJLO\
-    BKD\x12\x12\n\x04wave\x18\x01\x20\x01(\rR\x04wave\x12\x14\n\x05score\x18\
-    \x02\x20\x01(\rR\x05score\x12\x20\n\x0bDCHIOLBFKJN\x18\x03\x20\x01(\rR\
-    \x0bDCHIOLBFKJN\x12.\n\x0bBHJKMHMOEAK\x18\x04\x20\x03(\x0b2\x0c.KPKKKJPJ\
-    CPCR\x0bBHJKMHMOEAK\x12\x20\n\x0bHGFLPENKIII\x18\x05\x20\x01(\x02R\x0bHG\
-    FLPENKIIIb\x06proto3\
+    \n\x11MJKIBJLOBKD.proto\x1a\x11KPKKKJPJCPC.proto\"\xb0\x01\n\x0bMJKIBJLO\
+    BKD\x12\x12\n\x04wave\x18\x01\x20\x01(\rR\x04wave\x12\x19\n\x08score_id\
+    \x18\x02\x20\x01(\rR\x07scoreId\x12\x20\n\x0bDCHIOLBFKJN\x18\x03\x20\x01\
+    (\rR\x0bDCHIOLBFKJN\x12.\n\x0bBHJKMHMOEAK\x18\x04\x20\x03(\x0b2\x0c.KPKK\
+    KJPJCPCR\x0bBHJKMHMOEAK\x12\x20\n\x0bHGFLPENKIII\x18\x05\x20\x01(\x02R\
+    \x0bHGFLPENKIIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

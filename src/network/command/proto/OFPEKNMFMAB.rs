@@ -79,7 +79,7 @@ impl ::protobuf::Message for OFPEKNMFMAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.BILBOHBDBPN = is.read_uint32()?;
                 },
                 58 => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for OFPEKNMFMAB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BILBOHBDBPN);
+            my_size += ::protobuf::rt::uint32_size(3, self.BILBOHBDBPN);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JLHFOJODOKG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,7 +111,7 @@ impl ::protobuf::Message for OFPEKNMFMAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BILBOHBDBPN != 0 {
-            os.write_uint32(8, self.BILBOHBDBPN)?;
+            os.write_uint32(3, self.BILBOHBDBPN)?;
         }
         os.write_repeated_packed_uint32(7, &self.JLHFOJODOKG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for OFPEKNMFMAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFPEKNMFMAB.proto\"Q\n\x0bOFPEKNMFMAB\x12\x20\n\x0bBILBOHBDBPN\x18\
-    \x08\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bJLHFOJODOKG\x18\x07\x20\x03\
+    \x03\x20\x01(\rR\x0bBILBOHBDBPN\x12\x20\n\x0bJLHFOJODOKG\x18\x07\x20\x03\
     (\rR\x0bJLHFOJODOKGb\x06proto3\
 ";
 

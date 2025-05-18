@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinInfo {
     // message fields
-    // @@protoc_insertion_point(field:TextJoinInfo.FANOKEMBMPB)
-    pub FANOKEMBMPB: u32,
-    // @@protoc_insertion_point(field:TextJoinInfo.HBJKEEBDJML)
-    pub HBJKEEBDJML: ::std::string::String,
+    // @@protoc_insertion_point(field:TextJoinInfo.NLFNJPMACPM)
+    pub NLFNJPMACPM: u32,
     // @@protoc_insertion_point(field:TextJoinInfo.ADINNBPINAK)
     pub ADINNBPINAK: u32,
     // @@protoc_insertion_point(field:TextJoinInfo.NKIOIIOIAOG)
     pub NKIOIIOIAOG: ::std::string::String,
-    // @@protoc_insertion_point(field:TextJoinInfo.NLFNJPMACPM)
-    pub NLFNJPMACPM: u32,
+    // @@protoc_insertion_point(field:TextJoinInfo.HBJKEEBDJML)
+    pub HBJKEEBDJML: ::std::string::String,
+    // @@protoc_insertion_point(field:TextJoinInfo.FANOKEMBMPB)
+    pub FANOKEMBMPB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TextJoinInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl TextJoinInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FANOKEMBMPB",
-            |m: &TextJoinInfo| { &m.FANOKEMBMPB },
-            |m: &mut TextJoinInfo| { &mut m.FANOKEMBMPB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBJKEEBDJML",
-            |m: &TextJoinInfo| { &m.HBJKEEBDJML },
-            |m: &mut TextJoinInfo| { &mut m.HBJKEEBDJML },
+            "NLFNJPMACPM",
+            |m: &TextJoinInfo| { &m.NLFNJPMACPM },
+            |m: &mut TextJoinInfo| { &mut m.NLFNJPMACPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ADINNBPINAK",
@@ -78,9 +73,14 @@ impl TextJoinInfo {
             |m: &mut TextJoinInfo| { &mut m.NKIOIIOIAOG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLFNJPMACPM",
-            |m: &TextJoinInfo| { &m.NLFNJPMACPM },
-            |m: &mut TextJoinInfo| { &mut m.NLFNJPMACPM },
+            "HBJKEEBDJML",
+            |m: &TextJoinInfo| { &m.HBJKEEBDJML },
+            |m: &mut TextJoinInfo| { &mut m.HBJKEEBDJML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FANOKEMBMPB",
+            |m: &TextJoinInfo| { &m.FANOKEMBMPB },
+            |m: &mut TextJoinInfo| { &mut m.FANOKEMBMPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TextJoinInfo>(
             "TextJoinInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for TextJoinInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FANOKEMBMPB = is.read_uint32()?;
+                112 => {
+                    self.NLFNJPMACPM = is.read_uint32()?;
                 },
-                42 => {
+                80 => {
+                    self.ADINNBPINAK = is.read_uint32()?;
+                },
+                106 => {
+                    self.NKIOIIOIAOG = is.read_string()?;
+                },
+                50 => {
                     self.HBJKEEBDJML = is.read_string()?;
                 },
                 16 => {
-                    self.ADINNBPINAK = is.read_uint32()?;
-                },
-                82 => {
-                    self.NKIOIIOIAOG = is.read_string()?;
-                },
-                96 => {
-                    self.NLFNJPMACPM = is.read_uint32()?;
+                    self.FANOKEMBMPB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for TextJoinInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FANOKEMBMPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FANOKEMBMPB);
-        }
-        if !self.HBJKEEBDJML.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.HBJKEEBDJML);
+        if self.NLFNJPMACPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NLFNJPMACPM);
         }
         if self.ADINNBPINAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ADINNBPINAK);
+            my_size += ::protobuf::rt::uint32_size(10, self.ADINNBPINAK);
         }
         if !self.NKIOIIOIAOG.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.NKIOIIOIAOG);
+            my_size += ::protobuf::rt::string_size(13, &self.NKIOIIOIAOG);
         }
-        if self.NLFNJPMACPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NLFNJPMACPM);
+        if !self.HBJKEEBDJML.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.HBJKEEBDJML);
+        }
+        if self.FANOKEMBMPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FANOKEMBMPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for TextJoinInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FANOKEMBMPB != 0 {
-            os.write_uint32(6, self.FANOKEMBMPB)?;
-        }
-        if !self.HBJKEEBDJML.is_empty() {
-            os.write_string(5, &self.HBJKEEBDJML)?;
+        if self.NLFNJPMACPM != 0 {
+            os.write_uint32(14, self.NLFNJPMACPM)?;
         }
         if self.ADINNBPINAK != 0 {
-            os.write_uint32(2, self.ADINNBPINAK)?;
+            os.write_uint32(10, self.ADINNBPINAK)?;
         }
         if !self.NKIOIIOIAOG.is_empty() {
-            os.write_string(10, &self.NKIOIIOIAOG)?;
+            os.write_string(13, &self.NKIOIIOIAOG)?;
         }
-        if self.NLFNJPMACPM != 0 {
-            os.write_uint32(12, self.NLFNJPMACPM)?;
+        if !self.HBJKEEBDJML.is_empty() {
+            os.write_string(6, &self.HBJKEEBDJML)?;
+        }
+        if self.FANOKEMBMPB != 0 {
+            os.write_uint32(2, self.FANOKEMBMPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for TextJoinInfo {
     }
 
     fn clear(&mut self) {
-        self.FANOKEMBMPB = 0;
-        self.HBJKEEBDJML.clear();
+        self.NLFNJPMACPM = 0;
         self.ADINNBPINAK = 0;
         self.NKIOIIOIAOG.clear();
-        self.NLFNJPMACPM = 0;
+        self.HBJKEEBDJML.clear();
+        self.FANOKEMBMPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinInfo {
         static instance: TextJoinInfo = TextJoinInfo {
-            FANOKEMBMPB: 0,
-            HBJKEEBDJML: ::std::string::String::new(),
+            NLFNJPMACPM: 0,
             ADINNBPINAK: 0,
             NKIOIIOIAOG: ::std::string::String::new(),
-            NLFNJPMACPM: 0,
+            HBJKEEBDJML: ::std::string::String::new(),
+            FANOKEMBMPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12TextJoinInfo.proto\"\xb8\x01\n\x0cTextJoinInfo\x12\x20\n\x0bFANOKE\
-    MBMPB\x18\x06\x20\x01(\rR\x0bFANOKEMBMPB\x12\x20\n\x0bHBJKEEBDJML\x18\
-    \x05\x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\x02\x20\x01\
-    (\rR\x0bADINNBPINAK\x12\x20\n\x0bNKIOIIOIAOG\x18\n\x20\x01(\tR\x0bNKIOII\
-    OIAOG\x12\x20\n\x0bNLFNJPMACPM\x18\x0c\x20\x01(\rR\x0bNLFNJPMACPMb\x06pr\
-    oto3\
+    \n\x12TextJoinInfo.proto\"\xb8\x01\n\x0cTextJoinInfo\x12\x20\n\x0bNLFNJP\
+    MACPM\x18\x0e\x20\x01(\rR\x0bNLFNJPMACPM\x12\x20\n\x0bADINNBPINAK\x18\n\
+    \x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bNKIOIIOIAOG\x18\r\x20\x01(\tR\
+    \x0bNKIOIIOIAOG\x12\x20\n\x0bHBJKEEBDJML\x18\x06\x20\x01(\tR\x0bHBJKEEBD\
+    JML\x12\x20\n\x0bFANOKEMBMPB\x18\x02\x20\x01(\rR\x0bFANOKEMBMPBb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

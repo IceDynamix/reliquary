@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODAIJIGEAJL {
     // message fields
-    // @@protoc_insertion_point(field:ODAIJIGEAJL.FLJBJPAHJIF)
-    pub FLJBJPAHJIF: u32,
-    // @@protoc_insertion_point(field:ODAIJIGEAJL.HGMMCHHBKPB)
-    pub HGMMCHHBKPB: bool,
+    // @@protoc_insertion_point(field:ODAIJIGEAJL.LJFGIFBDANC)
+    pub LJFGIFBDANC: bool,
     // @@protoc_insertion_point(field:ODAIJIGEAJL.EJHDCNEEGMI)
     pub EJHDCNEEGMI: u32,
+    // @@protoc_insertion_point(field:ODAIJIGEAJL.FLJBJPAHJIF)
+    pub FLJBJPAHJIF: u32,
     // @@protoc_insertion_point(field:ODAIJIGEAJL.ENGJFICHDML)
     pub ENGJFICHDML: u32,
     // @@protoc_insertion_point(field:ODAIJIGEAJL.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:ODAIJIGEAJL.LJFGIFBDANC)
-    pub LJFGIFBDANC: bool,
+    // @@protoc_insertion_point(field:ODAIJIGEAJL.HGMMCHHBKPB)
+    pub HGMMCHHBKPB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ODAIJIGEAJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,19 @@ impl ODAIJIGEAJL {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLJBJPAHJIF",
-            |m: &ODAIJIGEAJL| { &m.FLJBJPAHJIF },
-            |m: &mut ODAIJIGEAJL| { &mut m.FLJBJPAHJIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGMMCHHBKPB",
-            |m: &ODAIJIGEAJL| { &m.HGMMCHHBKPB },
-            |m: &mut ODAIJIGEAJL| { &mut m.HGMMCHHBKPB },
+            "LJFGIFBDANC",
+            |m: &ODAIJIGEAJL| { &m.LJFGIFBDANC },
+            |m: &mut ODAIJIGEAJL| { &mut m.LJFGIFBDANC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EJHDCNEEGMI",
             |m: &ODAIJIGEAJL| { &m.EJHDCNEEGMI },
             |m: &mut ODAIJIGEAJL| { &mut m.EJHDCNEEGMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FLJBJPAHJIF",
+            |m: &ODAIJIGEAJL| { &m.FLJBJPAHJIF },
+            |m: &mut ODAIJIGEAJL| { &mut m.FLJBJPAHJIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ENGJFICHDML",
@@ -85,9 +85,9 @@ impl ODAIJIGEAJL {
             |m: &mut ODAIJIGEAJL| { &mut m.item_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJFGIFBDANC",
-            |m: &ODAIJIGEAJL| { &m.LJFGIFBDANC },
-            |m: &mut ODAIJIGEAJL| { &mut m.LJFGIFBDANC },
+            "HGMMCHHBKPB",
+            |m: &ODAIJIGEAJL| { &m.HGMMCHHBKPB },
+            |m: &mut ODAIJIGEAJL| { &mut m.HGMMCHHBKPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ODAIJIGEAJL>(
             "ODAIJIGEAJL",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for ODAIJIGEAJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.FLJBJPAHJIF = is.read_uint32()?;
+                8 => {
+                    self.LJFGIFBDANC = is.read_bool()?;
                 },
-                32 => {
-                    self.HGMMCHHBKPB = is.read_bool()?;
-                },
-                56 => {
+                120 => {
                     self.EJHDCNEEGMI = is.read_uint32()?;
+                },
+                104 => {
+                    self.FLJBJPAHJIF = is.read_uint32()?;
                 },
                 72 => {
                     self.ENGJFICHDML = is.read_uint32()?;
                 },
-                96 => {
+                64 => {
                     self.item_value = is.read_uint32()?;
                 },
-                24 => {
-                    self.LJFGIFBDANC = is.read_bool()?;
+                32 => {
+                    self.HGMMCHHBKPB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,22 +137,22 @@ impl ::protobuf::Message for ODAIJIGEAJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FLJBJPAHJIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FLJBJPAHJIF);
-        }
-        if self.HGMMCHHBKPB != false {
+        if self.LJFGIFBDANC != false {
             my_size += 1 + 1;
         }
         if self.EJHDCNEEGMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EJHDCNEEGMI);
+            my_size += ::protobuf::rt::uint32_size(15, self.EJHDCNEEGMI);
+        }
+        if self.FLJBJPAHJIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FLJBJPAHJIF);
         }
         if self.ENGJFICHDML != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.ENGJFICHDML);
         }
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(8, self.item_value);
         }
-        if self.LJFGIFBDANC != false {
+        if self.HGMMCHHBKPB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -161,23 +161,23 @@ impl ::protobuf::Message for ODAIJIGEAJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FLJBJPAHJIF != 0 {
-            os.write_uint32(11, self.FLJBJPAHJIF)?;
-        }
-        if self.HGMMCHHBKPB != false {
-            os.write_bool(4, self.HGMMCHHBKPB)?;
+        if self.LJFGIFBDANC != false {
+            os.write_bool(1, self.LJFGIFBDANC)?;
         }
         if self.EJHDCNEEGMI != 0 {
-            os.write_uint32(7, self.EJHDCNEEGMI)?;
+            os.write_uint32(15, self.EJHDCNEEGMI)?;
+        }
+        if self.FLJBJPAHJIF != 0 {
+            os.write_uint32(13, self.FLJBJPAHJIF)?;
         }
         if self.ENGJFICHDML != 0 {
             os.write_uint32(9, self.ENGJFICHDML)?;
         }
         if self.item_value != 0 {
-            os.write_uint32(12, self.item_value)?;
+            os.write_uint32(8, self.item_value)?;
         }
-        if self.LJFGIFBDANC != false {
-            os.write_bool(3, self.LJFGIFBDANC)?;
+        if self.HGMMCHHBKPB != false {
+            os.write_bool(4, self.HGMMCHHBKPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for ODAIJIGEAJL {
     }
 
     fn clear(&mut self) {
-        self.FLJBJPAHJIF = 0;
-        self.HGMMCHHBKPB = false;
+        self.LJFGIFBDANC = false;
         self.EJHDCNEEGMI = 0;
+        self.FLJBJPAHJIF = 0;
         self.ENGJFICHDML = 0;
         self.item_value = 0;
-        self.LJFGIFBDANC = false;
+        self.HGMMCHHBKPB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODAIJIGEAJL {
         static instance: ODAIJIGEAJL = ODAIJIGEAJL {
-            FLJBJPAHJIF: 0,
-            HGMMCHHBKPB: false,
+            LJFGIFBDANC: false,
             EJHDCNEEGMI: 0,
+            FLJBJPAHJIF: 0,
             ENGJFICHDML: 0,
             item_value: 0,
-            LJFGIFBDANC: false,
+            HGMMCHHBKPB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for ODAIJIGEAJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ODAIJIGEAJL.proto\"\xd6\x01\n\x0bODAIJIGEAJL\x12\x20\n\x0bFLJBJPAH\
-    JIF\x18\x0b\x20\x01(\rR\x0bFLJBJPAHJIF\x12\x20\n\x0bHGMMCHHBKPB\x18\x04\
-    \x20\x01(\x08R\x0bHGMMCHHBKPB\x12\x20\n\x0bEJHDCNEEGMI\x18\x07\x20\x01(\
-    \rR\x0bEJHDCNEEGMI\x12\x20\n\x0bENGJFICHDML\x18\t\x20\x01(\rR\x0bENGJFIC\
-    HDML\x12\x1d\n\nitem_value\x18\x0c\x20\x01(\rR\titemValue\x12\x20\n\x0bL\
-    JFGIFBDANC\x18\x03\x20\x01(\x08R\x0bLJFGIFBDANCb\x06proto3\
+    \n\x11ODAIJIGEAJL.proto\"\xd6\x01\n\x0bODAIJIGEAJL\x12\x20\n\x0bLJFGIFBD\
+    ANC\x18\x01\x20\x01(\x08R\x0bLJFGIFBDANC\x12\x20\n\x0bEJHDCNEEGMI\x18\
+    \x0f\x20\x01(\rR\x0bEJHDCNEEGMI\x12\x20\n\x0bFLJBJPAHJIF\x18\r\x20\x01(\
+    \rR\x0bFLJBJPAHJIF\x12\x20\n\x0bENGJFICHDML\x18\t\x20\x01(\rR\x0bENGJFIC\
+    HDML\x12\x1d\n\nitem_value\x18\x08\x20\x01(\rR\titemValue\x12\x20\n\x0bH\
+    GMMCHHBKPB\x18\x04\x20\x01(\x08R\x0bHGMMCHHBKPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -44,24 +44,24 @@ pub struct IALPDFGLBML {
     pub JONBHAEOFLI: u32,
     // @@protoc_insertion_point(field:IALPDFGLBML.DJILKABPECA)
     pub DJILKABPECA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IALPDFGLBML.HDOFEBPLNMM)
-    pub HDOFEBPLNMM: bool,
+    // @@protoc_insertion_point(field:IALPDFGLBML.is_ai_consider_ultra_skill)
+    pub is_ai_consider_ultra_skill: bool,
     // @@protoc_insertion_point(field:IALPDFGLBML.GPHAPAEHJFH)
     pub GPHAPAEHJFH: ::protobuf::EnumOrUnknown<super::CHEHBBADKBG::CHEHBBADKBG>,
     // @@protoc_insertion_point(field:IALPDFGLBML.BLPFEAANHDI)
     pub BLPFEAANHDI: ::protobuf::EnumOrUnknown<super::BattleModuleType::BattleModuleType>,
-    // @@protoc_insertion_point(field:IALPDFGLBML.event_battle_info_list)
-    pub event_battle_info_list: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
-    // @@protoc_insertion_point(field:IALPDFGLBML.LGDPIHJIICI)
-    pub LGDPIHJIICI: u32,
-    // @@protoc_insertion_point(field:IALPDFGLBML.FGPMJANHEPD)
-    pub FGPMJANHEPD: ::protobuf::MessageField<super::JEAFNKHFPFB::JEAFNKHFPFB>,
-    // @@protoc_insertion_point(field:IALPDFGLBML.BBBHDKGHAOF)
-    pub BBBHDKGHAOF: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:IALPDFGLBML.HPADEEDKKNE)
-    pub HPADEEDKKNE: u32,
-    // @@protoc_insertion_point(field:IALPDFGLBML.DDOGJOKECCL)
-    pub DDOGJOKECCL: u32,
+    // @@protoc_insertion_point(field:IALPDFGLBML.battle_event)
+    pub battle_event: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
+    // @@protoc_insertion_point(field:IALPDFGLBML.rounds_limit)
+    pub rounds_limit: u32,
+    // @@protoc_insertion_point(field:IALPDFGLBML.config)
+    pub config: ::protobuf::MessageField<super::JEAFNKHFPFB::JEAFNKHFPFB>,
+    // @@protoc_insertion_point(field:IALPDFGLBML.game_core_log_encode)
+    pub game_core_log_encode: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:IALPDFGLBML.client_version)
+    pub client_version: u32,
+    // @@protoc_insertion_point(field:IALPDFGLBML.monster_wave_length)
+    pub monster_wave_length: u32,
     // @@protoc_insertion_point(field:IALPDFGLBML.GMPCFGEDHKI)
     pub GMPCFGEDHKI: ::protobuf::MessageField<super::PNDFMBJFGIM::PNDFMBJFGIM>,
     // @@protoc_insertion_point(field:IALPDFGLBML.BNMIIAHADJH)
@@ -126,9 +126,9 @@ impl IALPDFGLBML {
             |m: &mut IALPDFGLBML| { &mut m.DJILKABPECA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDOFEBPLNMM",
-            |m: &IALPDFGLBML| { &m.HDOFEBPLNMM },
-            |m: &mut IALPDFGLBML| { &mut m.HDOFEBPLNMM },
+            "is_ai_consider_ultra_skill",
+            |m: &IALPDFGLBML| { &m.is_ai_consider_ultra_skill },
+            |m: &mut IALPDFGLBML| { &mut m.is_ai_consider_ultra_skill },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GPHAPAEHJFH",
@@ -141,34 +141,34 @@ impl IALPDFGLBML {
             |m: &mut IALPDFGLBML| { &mut m.BLPFEAANHDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "event_battle_info_list",
-            |m: &IALPDFGLBML| { &m.event_battle_info_list },
-            |m: &mut IALPDFGLBML| { &mut m.event_battle_info_list },
+            "battle_event",
+            |m: &IALPDFGLBML| { &m.battle_event },
+            |m: &mut IALPDFGLBML| { &mut m.battle_event },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGDPIHJIICI",
-            |m: &IALPDFGLBML| { &m.LGDPIHJIICI },
-            |m: &mut IALPDFGLBML| { &mut m.LGDPIHJIICI },
+            "rounds_limit",
+            |m: &IALPDFGLBML| { &m.rounds_limit },
+            |m: &mut IALPDFGLBML| { &mut m.rounds_limit },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JEAFNKHFPFB::JEAFNKHFPFB>(
-            "FGPMJANHEPD",
-            |m: &IALPDFGLBML| { &m.FGPMJANHEPD },
-            |m: &mut IALPDFGLBML| { &mut m.FGPMJANHEPD },
+            "config",
+            |m: &IALPDFGLBML| { &m.config },
+            |m: &mut IALPDFGLBML| { &mut m.config },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBBHDKGHAOF",
-            |m: &IALPDFGLBML| { &m.BBBHDKGHAOF },
-            |m: &mut IALPDFGLBML| { &mut m.BBBHDKGHAOF },
+            "game_core_log_encode",
+            |m: &IALPDFGLBML| { &m.game_core_log_encode },
+            |m: &mut IALPDFGLBML| { &mut m.game_core_log_encode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPADEEDKKNE",
-            |m: &IALPDFGLBML| { &m.HPADEEDKKNE },
-            |m: &mut IALPDFGLBML| { &mut m.HPADEEDKKNE },
+            "client_version",
+            |m: &IALPDFGLBML| { &m.client_version },
+            |m: &mut IALPDFGLBML| { &mut m.client_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDOGJOKECCL",
-            |m: &IALPDFGLBML| { &m.DDOGJOKECCL },
-            |m: &mut IALPDFGLBML| { &mut m.DDOGJOKECCL },
+            "monster_wave_length",
+            |m: &IALPDFGLBML| { &m.monster_wave_length },
+            |m: &mut IALPDFGLBML| { &mut m.monster_wave_length },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNDFMBJFGIM::PNDFMBJFGIM>(
             "GMPCFGEDHKI",
@@ -226,7 +226,7 @@ impl ::protobuf::Message for IALPDFGLBML {
                     self.DJILKABPECA.push(is.read_uint32()?);
                 },
                 72 => {
-                    self.HDOFEBPLNMM = is.read_bool()?;
+                    self.is_ai_consider_ultra_skill = is.read_bool()?;
                 },
                 80 => {
                     self.GPHAPAEHJFH = is.read_enum_or_unknown()?;
@@ -235,22 +235,22 @@ impl ::protobuf::Message for IALPDFGLBML {
                     self.BLPFEAANHDI = is.read_enum_or_unknown()?;
                 },
                 98 => {
-                    self.event_battle_info_list.push(is.read_message()?);
+                    self.battle_event.push(is.read_message()?);
                 },
                 112 => {
-                    self.LGDPIHJIICI = is.read_uint32()?;
+                    self.rounds_limit = is.read_uint32()?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGPMJANHEPD)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.config)?;
                 },
                 130 => {
-                    self.BBBHDKGHAOF = is.read_bytes()?;
+                    self.game_core_log_encode = is.read_bytes()?;
                 },
                 136 => {
-                    self.HPADEEDKKNE = is.read_uint32()?;
+                    self.client_version = is.read_uint32()?;
                 },
                 144 => {
-                    self.DDOGJOKECCL = is.read_uint32()?;
+                    self.monster_wave_length = is.read_uint32()?;
                 },
                 154 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GMPCFGEDHKI)?;
@@ -294,7 +294,7 @@ impl ::protobuf::Message for IALPDFGLBML {
             my_size += ::protobuf::rt::uint32_size(7, self.JONBHAEOFLI);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DJILKABPECA);
-        if self.HDOFEBPLNMM != false {
+        if self.is_ai_consider_ultra_skill != false {
             my_size += 1 + 1;
         }
         if self.GPHAPAEHJFH != ::protobuf::EnumOrUnknown::new(super::CHEHBBADKBG::CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL) {
@@ -303,25 +303,25 @@ impl ::protobuf::Message for IALPDFGLBML {
         if self.BLPFEAANHDI != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE) {
             my_size += ::protobuf::rt::int32_size(11, self.BLPFEAANHDI.value());
         }
-        for value in &self.event_battle_info_list {
+        for value in &self.battle_event {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LGDPIHJIICI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LGDPIHJIICI);
+        if self.rounds_limit != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.rounds_limit);
         }
-        if let Some(v) = self.FGPMJANHEPD.as_ref() {
+        if let Some(v) = self.config.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.BBBHDKGHAOF.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(16, &self.BBBHDKGHAOF);
+        if !self.game_core_log_encode.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(16, &self.game_core_log_encode);
         }
-        if self.HPADEEDKKNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.HPADEEDKKNE);
+        if self.client_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.client_version);
         }
-        if self.DDOGJOKECCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(18, self.DDOGJOKECCL);
+        if self.monster_wave_length != 0 {
+            my_size += ::protobuf::rt::uint32_size(18, self.monster_wave_length);
         }
         if let Some(v) = self.GMPCFGEDHKI.as_ref() {
             let len = v.compute_size();
@@ -359,8 +359,8 @@ impl ::protobuf::Message for IALPDFGLBML {
             os.write_uint32(7, self.JONBHAEOFLI)?;
         }
         os.write_repeated_packed_uint32(8, &self.DJILKABPECA)?;
-        if self.HDOFEBPLNMM != false {
-            os.write_bool(9, self.HDOFEBPLNMM)?;
+        if self.is_ai_consider_ultra_skill != false {
+            os.write_bool(9, self.is_ai_consider_ultra_skill)?;
         }
         if self.GPHAPAEHJFH != ::protobuf::EnumOrUnknown::new(super::CHEHBBADKBG::CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GPHAPAEHJFH))?;
@@ -368,23 +368,23 @@ impl ::protobuf::Message for IALPDFGLBML {
         if self.BLPFEAANHDI != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.BLPFEAANHDI))?;
         }
-        for v in &self.event_battle_info_list {
+        for v in &self.battle_event {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.LGDPIHJIICI != 0 {
-            os.write_uint32(14, self.LGDPIHJIICI)?;
+        if self.rounds_limit != 0 {
+            os.write_uint32(14, self.rounds_limit)?;
         }
-        if let Some(v) = self.FGPMJANHEPD.as_ref() {
+        if let Some(v) = self.config.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if !self.BBBHDKGHAOF.is_empty() {
-            os.write_bytes(16, &self.BBBHDKGHAOF)?;
+        if !self.game_core_log_encode.is_empty() {
+            os.write_bytes(16, &self.game_core_log_encode)?;
         }
-        if self.HPADEEDKKNE != 0 {
-            os.write_uint32(17, self.HPADEEDKKNE)?;
+        if self.client_version != 0 {
+            os.write_uint32(17, self.client_version)?;
         }
-        if self.DDOGJOKECCL != 0 {
-            os.write_uint32(18, self.DDOGJOKECCL)?;
+        if self.monster_wave_length != 0 {
+            os.write_uint32(18, self.monster_wave_length)?;
         }
         if let Some(v) = self.GMPCFGEDHKI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
@@ -417,15 +417,15 @@ impl ::protobuf::Message for IALPDFGLBML {
         self.turn_snapshot_hash.clear();
         self.JONBHAEOFLI = 0;
         self.DJILKABPECA.clear();
-        self.HDOFEBPLNMM = false;
+        self.is_ai_consider_ultra_skill = false;
         self.GPHAPAEHJFH = ::protobuf::EnumOrUnknown::new(super::CHEHBBADKBG::CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL);
         self.BLPFEAANHDI = ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE);
-        self.event_battle_info_list.clear();
-        self.LGDPIHJIICI = 0;
-        self.FGPMJANHEPD.clear();
-        self.BBBHDKGHAOF.clear();
-        self.HPADEEDKKNE = 0;
-        self.DDOGJOKECCL = 0;
+        self.battle_event.clear();
+        self.rounds_limit = 0;
+        self.config.clear();
+        self.game_core_log_encode.clear();
+        self.client_version = 0;
+        self.monster_wave_length = 0;
         self.GMPCFGEDHKI.clear();
         self.BNMIIAHADJH.clear();
         self.special_fields.clear();
@@ -441,15 +441,15 @@ impl ::protobuf::Message for IALPDFGLBML {
             turn_snapshot_hash: ::std::vec::Vec::new(),
             JONBHAEOFLI: 0,
             DJILKABPECA: ::std::vec::Vec::new(),
-            HDOFEBPLNMM: false,
+            is_ai_consider_ultra_skill: false,
             GPHAPAEHJFH: ::protobuf::EnumOrUnknown::from_i32(0),
             BLPFEAANHDI: ::protobuf::EnumOrUnknown::from_i32(0),
-            event_battle_info_list: ::std::vec::Vec::new(),
-            LGDPIHJIICI: 0,
-            FGPMJANHEPD: ::protobuf::MessageField::none(),
-            BBBHDKGHAOF: ::std::vec::Vec::new(),
-            HPADEEDKKNE: 0,
-            DDOGJOKECCL: 0,
+            battle_event: ::std::vec::Vec::new(),
+            rounds_limit: 0,
+            config: ::protobuf::MessageField::none(),
+            game_core_log_encode: ::std::vec::Vec::new(),
+            client_version: 0,
+            monster_wave_length: 0,
             GMPCFGEDHKI: ::protobuf::MessageField::none(),
             BNMIIAHADJH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -479,25 +479,25 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IALPDFGLBML.proto\x1a\x1bBattleEventBattleInfo.proto\x1a\x16Battle\
     ModuleType.proto\x1a\x0eBattleOp.proto\x1a\x11CHEHBBADKBG.proto\x1a\x11D\
     BDGPCBJEHG.proto\x1a\x11JEAFNKHFPFB.proto\x1a\x11MIAIDAILDKM.proto\x1a\
-    \x11PNDFMBJFGIM.proto\"\x96\x06\n\x0bIALPDFGLBML\x12\x18\n\x07version\
+    \x11PNDFMBJFGIM.proto\"\xb7\x06\n\x0bIALPDFGLBML\x12\x18\n\x07version\
     \x18\x01\x20\x01(\rR\x07version\x12*\n\x11logic_random_seed\x18\x02\x20\
     \x01(\rR\x0flogicRandomSeed\x12\x19\n\x08stage_id\x18\x03\x20\x01(\rR\
     \x07stageId\x12$\n\x06lineup\x18\x04\x20\x01(\x0b2\x0c.DBDGPCBJEHGR\x06l\
     ineup\x12\"\n\x07op_list\x18\x05\x20\x03(\x0b2\t.BattleOpR\x06opList\x12\
     ,\n\x12turn_snapshot_hash\x18\x06\x20\x01(\x0cR\x10turnSnapshotHash\x12\
     \x20\n\x0bJONBHAEOFLI\x18\x07\x20\x01(\rR\x0bJONBHAEOFLI\x12\x20\n\x0bDJ\
-    ILKABPECA\x18\x08\x20\x03(\rR\x0bDJILKABPECA\x12\x20\n\x0bHDOFEBPLNMM\
-    \x18\t\x20\x01(\x08R\x0bHDOFEBPLNMM\x12.\n\x0bGPHAPAEHJFH\x18\n\x20\x01(\
-    \x0e2\x0c.CHEHBBADKBGR\x0bGPHAPAEHJFH\x123\n\x0bBLPFEAANHDI\x18\x0b\x20\
-    \x01(\x0e2\x11.BattleModuleTypeR\x0bBLPFEAANHDI\x12K\n\x16event_battle_i\
-    nfo_list\x18\x0c\x20\x03(\x0b2\x16.BattleEventBattleInfoR\x13eventBattle\
-    InfoList\x12\x20\n\x0bLGDPIHJIICI\x18\x0e\x20\x01(\rR\x0bLGDPIHJIICI\x12\
-    .\n\x0bFGPMJANHEPD\x18\x0f\x20\x01(\x0b2\x0c.JEAFNKHFPFBR\x0bFGPMJANHEPD\
-    \x12\x20\n\x0bBBBHDKGHAOF\x18\x10\x20\x01(\x0cR\x0bBBBHDKGHAOF\x12\x20\n\
-    \x0bHPADEEDKKNE\x18\x11\x20\x01(\rR\x0bHPADEEDKKNE\x12\x20\n\x0bDDOGJOKE\
-    CCL\x18\x12\x20\x01(\rR\x0bDDOGJOKECCL\x12.\n\x0bGMPCFGEDHKI\x18\x13\x20\
-    \x01(\x0b2\x0c.PNDFMBJFGIMR\x0bGMPCFGEDHKI\x12.\n\x0bBNMIIAHADJH\x18d\
-    \x20\x01(\x0b2\x0c.MIAIDAILDKMR\x0bBNMIIAHADJHb\x06proto3\
+    ILKABPECA\x18\x08\x20\x03(\rR\x0bDJILKABPECA\x12:\n\x1ais_ai_consider_ul\
+    tra_skill\x18\t\x20\x01(\x08R\x16isAiConsiderUltraSkill\x12.\n\x0bGPHAPA\
+    EHJFH\x18\n\x20\x01(\x0e2\x0c.CHEHBBADKBGR\x0bGPHAPAEHJFH\x123\n\x0bBLPF\
+    EAANHDI\x18\x0b\x20\x01(\x0e2\x11.BattleModuleTypeR\x0bBLPFEAANHDI\x129\
+    \n\x0cbattle_event\x18\x0c\x20\x03(\x0b2\x16.BattleEventBattleInfoR\x0bb\
+    attleEvent\x12!\n\x0crounds_limit\x18\x0e\x20\x01(\rR\x0broundsLimit\x12\
+    $\n\x06config\x18\x0f\x20\x01(\x0b2\x0c.JEAFNKHFPFBR\x06config\x12/\n\
+    \x14game_core_log_encode\x18\x10\x20\x01(\x0cR\x11gameCoreLogEncode\x12%\
+    \n\x0eclient_version\x18\x11\x20\x01(\rR\rclientVersion\x12.\n\x13monste\
+    r_wave_length\x18\x12\x20\x01(\rR\x11monsterWaveLength\x12.\n\x0bGMPCFGE\
+    DHKI\x18\x13\x20\x01(\x0b2\x0c.PNDFMBJFGIMR\x0bGMPCFGEDHKI\x12.\n\x0bBNM\
+    IIAHADJH\x18d\x20\x01(\x0b2\x0c.MIAIDAILDKMR\x0bBNMIIAHADJHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

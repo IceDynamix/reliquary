@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LKAPFHAHNEM {
     // message fields
-    // @@protoc_insertion_point(field:LKAPFHAHNEM.module_id)
-    pub module_id: u32,
+    // @@protoc_insertion_point(field:LKAPFHAHNEM.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:LKAPFHAHNEM.LGHOKGABGCK)
     pub LGHOKGABGCK: u32,
     // @@protoc_insertion_point(field:LKAPFHAHNEM.CFDANMOMHPI)
@@ -54,9 +54,9 @@ impl LKAPFHAHNEM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "module_id",
-            |m: &LKAPFHAHNEM| { &m.module_id },
-            |m: &mut LKAPFHAHNEM| { &mut m.module_id },
+            "panel_id",
+            |m: &LKAPFHAHNEM| { &m.panel_id },
+            |m: &mut LKAPFHAHNEM| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGHOKGABGCK",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.module_id = is.read_uint32()?;
+                    self.panel_id = is.read_uint32()?;
                 },
                 16 => {
                     self.LGHOKGABGCK = is.read_uint32()?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for LKAPFHAHNEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.module_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.module_id);
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
         if self.LGHOKGABGCK != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.LGHOKGABGCK);
@@ -122,8 +122,8 @@ impl ::protobuf::Message for LKAPFHAHNEM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.module_id != 0 {
-            os.write_uint32(1, self.module_id)?;
+        if self.panel_id != 0 {
+            os.write_uint32(1, self.panel_id)?;
         }
         if self.LGHOKGABGCK != 0 {
             os.write_uint32(2, self.LGHOKGABGCK)?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
     }
 
     fn clear(&mut self) {
-        self.module_id = 0;
+        self.panel_id = 0;
         self.LGHOKGABGCK = 0;
         self.CFDANMOMHPI = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
 
     fn default_instance() -> &'static LKAPFHAHNEM {
         static instance: LKAPFHAHNEM = LKAPFHAHNEM {
-            module_id: 0,
+            panel_id: 0,
             LGHOKGABGCK: 0,
             CFDANMOMHPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for LKAPFHAHNEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LKAPFHAHNEM.proto\"n\n\x0bLKAPFHAHNEM\x12\x1b\n\tmodule_id\x18\x01\
-    \x20\x01(\rR\x08moduleId\x12\x20\n\x0bLGHOKGABGCK\x18\x02\x20\x01(\rR\
+    \n\x11LKAPFHAHNEM.proto\"l\n\x0bLKAPFHAHNEM\x12\x19\n\x08panel_id\x18\
+    \x01\x20\x01(\rR\x07panelId\x12\x20\n\x0bLGHOKGABGCK\x18\x02\x20\x01(\rR\
     \x0bLGHOKGABGCK\x12\x20\n\x0bCFDANMOMHPI\x18\x03\x20\x01(\x04R\x0bCFDANM\
     OMHPIb\x06proto3\
 ";

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StrongChallengeActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.stage_score)
-    pub stage_score: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.score)
-    pub score: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.stage_id)
-    pub stage_id: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.total_damage)
     pub total_damage: u32,
-    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.GGBECCHPHCD)
-    pub GGBECCHPHCD: u32,
     // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.AHJFPNGDBDO)
     pub AHJFPNGDBDO: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.stage_id)
+    pub stage_id: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.max_score)
+    pub max_score: u32,
     // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.JAMLOKNCAKC)
     pub JAMLOKNCAKC: u32,
+    // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.GGBECCHPHCD)
+    pub GGBECCHPHCD: u32,
     // @@protoc_insertion_point(field:StrongChallengeActivityBattleEndScNotify.end_status)
     pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // special fields
@@ -64,19 +64,9 @@ impl StrongChallengeActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_score",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.stage_score },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.stage_score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.score },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.stage_id },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.stage_id },
+            "score_id",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.score_id },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_damage",
@@ -84,19 +74,29 @@ impl StrongChallengeActivityBattleEndScNotify {
             |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGBECCHPHCD",
-            |m: &StrongChallengeActivityBattleEndScNotify| { &m.GGBECCHPHCD },
-            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.GGBECCHPHCD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHJFPNGDBDO",
             |m: &StrongChallengeActivityBattleEndScNotify| { &m.AHJFPNGDBDO },
             |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.AHJFPNGDBDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.stage_id },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_score",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.max_score },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.max_score },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JAMLOKNCAKC",
             |m: &StrongChallengeActivityBattleEndScNotify| { &m.JAMLOKNCAKC },
             |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.JAMLOKNCAKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GGBECCHPHCD",
+            |m: &StrongChallengeActivityBattleEndScNotify| { &m.GGBECCHPHCD },
+            |m: &mut StrongChallengeActivityBattleEndScNotify| { &mut m.GGBECCHPHCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_status",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.stage_score = is.read_uint32()?;
+                48 => {
+                    self.score_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.score = is.read_uint32()?;
-                },
-                120 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                32 => {
+                80 => {
                     self.total_damage = is.read_uint32()?;
                 },
-                24 => {
-                    self.GGBECCHPHCD = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.AHJFPNGDBDO = is.read_uint32()?;
                 },
+                88 => {
+                    self.stage_id = is.read_uint32()?;
+                },
                 8 => {
+                    self.max_score = is.read_uint32()?;
+                },
+                56 => {
                     self.JAMLOKNCAKC = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
+                    self.GGBECCHPHCD = is.read_uint32()?;
+                },
+                40 => {
                     self.end_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -157,29 +157,29 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.stage_score);
-        }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.score);
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.stage_id);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
         }
         if self.total_damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.total_damage);
-        }
-        if self.GGBECCHPHCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GGBECCHPHCD);
+            my_size += ::protobuf::rt::uint32_size(10, self.total_damage);
         }
         if self.AHJFPNGDBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AHJFPNGDBDO);
+            my_size += ::protobuf::rt::uint32_size(4, self.AHJFPNGDBDO);
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.stage_id);
+        }
+        if self.max_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.max_score);
         }
         if self.JAMLOKNCAKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JAMLOKNCAKC);
+            my_size += ::protobuf::rt::uint32_size(7, self.JAMLOKNCAKC);
+        }
+        if self.GGBECCHPHCD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GGBECCHPHCD);
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.end_status.value());
+            my_size += ::protobuf::rt::int32_size(5, self.end_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_score != 0 {
-            os.write_uint32(2, self.stage_score)?;
-        }
-        if self.score != 0 {
-            os.write_uint32(14, self.score)?;
-        }
-        if self.stage_id != 0 {
-            os.write_uint32(15, self.stage_id)?;
+        if self.score_id != 0 {
+            os.write_uint32(6, self.score_id)?;
         }
         if self.total_damage != 0 {
-            os.write_uint32(4, self.total_damage)?;
-        }
-        if self.GGBECCHPHCD != 0 {
-            os.write_uint32(3, self.GGBECCHPHCD)?;
+            os.write_uint32(10, self.total_damage)?;
         }
         if self.AHJFPNGDBDO != 0 {
-            os.write_uint32(7, self.AHJFPNGDBDO)?;
+            os.write_uint32(4, self.AHJFPNGDBDO)?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(11, self.stage_id)?;
+        }
+        if self.max_score != 0 {
+            os.write_uint32(1, self.max_score)?;
         }
         if self.JAMLOKNCAKC != 0 {
-            os.write_uint32(1, self.JAMLOKNCAKC)?;
+            os.write_uint32(7, self.JAMLOKNCAKC)?;
+        }
+        if self.GGBECCHPHCD != 0 {
+            os.write_uint32(2, self.GGBECCHPHCD)?;
         }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,26 +228,26 @@ impl ::protobuf::Message for StrongChallengeActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.stage_score = 0;
-        self.score = 0;
-        self.stage_id = 0;
+        self.score_id = 0;
         self.total_damage = 0;
-        self.GGBECCHPHCD = 0;
         self.AHJFPNGDBDO = 0;
+        self.stage_id = 0;
+        self.max_score = 0;
         self.JAMLOKNCAKC = 0;
+        self.GGBECCHPHCD = 0;
         self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StrongChallengeActivityBattleEndScNotify {
         static instance: StrongChallengeActivityBattleEndScNotify = StrongChallengeActivityBattleEndScNotify {
-            stage_score: 0,
-            score: 0,
-            stage_id: 0,
+            score_id: 0,
             total_damage: 0,
-            GGBECCHPHCD: 0,
             AHJFPNGDBDO: 0,
+            stage_id: 0,
+            max_score: 0,
             JAMLOKNCAKC: 0,
+            GGBECCHPHCD: 0,
             end_status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for StrongChallengeActivityBattleEndScNo
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.StrongChallengeActivityBattleEndScNotify.proto\x1a\x15BattleEndStatus\
-    .proto\"\xb6\x02\n(StrongChallengeActivityBattleEndScNotify\x12\x1f\n\
-    \x0bstage_score\x18\x02\x20\x01(\rR\nstageScore\x12\x14\n\x05score\x18\
-    \x0e\x20\x01(\rR\x05score\x12\x19\n\x08stage_id\x18\x0f\x20\x01(\rR\x07s\
-    tageId\x12!\n\x0ctotal_damage\x18\x04\x20\x01(\rR\x0btotalDamage\x12\x20\
-    \n\x0bGGBECCHPHCD\x18\x03\x20\x01(\rR\x0bGGBECCHPHCD\x12\x20\n\x0bAHJFPN\
-    GDBDO\x18\x07\x20\x01(\rR\x0bAHJFPNGDBDO\x12\x20\n\x0bJAMLOKNCAKC\x18\
-    \x01\x20\x01(\rR\x0bJAMLOKNCAKC\x12/\n\nend_status\x18\x06\x20\x01(\x0e2\
-    \x10.BattleEndStatusR\tendStatusb\x06proto3\
+    .proto\"\xb7\x02\n(StrongChallengeActivityBattleEndScNotify\x12\x19\n\
+    \x08score_id\x18\x06\x20\x01(\rR\x07scoreId\x12!\n\x0ctotal_damage\x18\n\
+    \x20\x01(\rR\x0btotalDamage\x12\x20\n\x0bAHJFPNGDBDO\x18\x04\x20\x01(\rR\
+    \x0bAHJFPNGDBDO\x12\x19\n\x08stage_id\x18\x0b\x20\x01(\rR\x07stageId\x12\
+    \x1b\n\tmax_score\x18\x01\x20\x01(\rR\x08maxScore\x12\x20\n\x0bJAMLOKNCA\
+    KC\x18\x07\x20\x01(\rR\x0bJAMLOKNCAKC\x12\x20\n\x0bGGBECCHPHCD\x18\x02\
+    \x20\x01(\rR\x0bGGBECCHPHCD\x12/\n\nend_status\x18\x05\x20\x01(\x0e2\x10\
+    .BattleEndStatusR\tendStatusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

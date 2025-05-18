@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishAeonDialogueGroupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupCsReq.ELAPPCMELOA)
-    pub ELAPPCMELOA: u32,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupCsReq.aeon_id)
+    pub aeon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishAeonDialogueGroupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishAeonDialogueGroupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELAPPCMELOA",
-            |m: &FinishAeonDialogueGroupCsReq| { &m.ELAPPCMELOA },
-            |m: &mut FinishAeonDialogueGroupCsReq| { &mut m.ELAPPCMELOA },
+            "aeon_id",
+            |m: &FinishAeonDialogueGroupCsReq| { &m.aeon_id },
+            |m: &mut FinishAeonDialogueGroupCsReq| { &mut m.aeon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishAeonDialogueGroupCsReq>(
             "FinishAeonDialogueGroupCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.ELAPPCMELOA = is.read_uint32()?;
+                8 => {
+                    self.aeon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELAPPCMELOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ELAPPCMELOA);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELAPPCMELOA != 0 {
-            os.write_uint32(13, self.ELAPPCMELOA)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(1, self.aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     }
 
     fn clear(&mut self) {
-        self.ELAPPCMELOA = 0;
+        self.aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishAeonDialogueGroupCsReq {
         static instance: FinishAeonDialogueGroupCsReq = FinishAeonDialogueGroupCsReq {
-            ELAPPCMELOA: 0,
+            aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishAeonDialogueGroupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FinishAeonDialogueGroupCsReq.proto\"@\n\x1cFinishAeonDialogueGroupCs\
-    Req\x12\x20\n\x0bELAPPCMELOA\x18\r\x20\x01(\rR\x0bELAPPCMELOAb\x06proto3\
+    \n\"FinishAeonDialogueGroupCsReq.proto\"7\n\x1cFinishAeonDialogueGroupCs\
+    Req\x12\x17\n\x07aeon_id\x18\x01\x20\x01(\rR\x06aeonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

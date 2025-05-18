@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGALAGNAEFB {
     // message fields
+    // @@protoc_insertion_point(field:EGALAGNAEFB.GPDEIIIOIPN)
+    pub GPDEIIIOIPN: u32,
     // @@protoc_insertion_point(field:EGALAGNAEFB.OLGLJHECDOF)
     pub OLGLJHECDOF: u32,
     // @@protoc_insertion_point(field:EGALAGNAEFB.GCLEBGDDIIP)
     pub GCLEBGDDIIP: u32,
-    // @@protoc_insertion_point(field:EGALAGNAEFB.GPDEIIIOIPN)
-    pub GPDEIIIOIPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EGALAGNAEFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl EGALAGNAEFB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPDEIIIOIPN",
+            |m: &EGALAGNAEFB| { &m.GPDEIIIOIPN },
+            |m: &mut EGALAGNAEFB| { &mut m.GPDEIIIOIPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLGLJHECDOF",
             |m: &EGALAGNAEFB| { &m.OLGLJHECDOF },
             |m: &mut EGALAGNAEFB| { &mut m.OLGLJHECDOF },
@@ -62,11 +67,6 @@ impl EGALAGNAEFB {
             "GCLEBGDDIIP",
             |m: &EGALAGNAEFB| { &m.GCLEBGDDIIP },
             |m: &mut EGALAGNAEFB| { &mut m.GCLEBGDDIIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPDEIIIOIPN",
-            |m: &EGALAGNAEFB| { &m.GPDEIIIOIPN },
-            |m: &mut EGALAGNAEFB| { &mut m.GPDEIIIOIPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGALAGNAEFB>(
             "EGALAGNAEFB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EGALAGNAEFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                56 => {
+                    self.GPDEIIIOIPN = is.read_uint32()?;
+                },
+                24 => {
                     self.OLGLJHECDOF = is.read_uint32()?;
                 },
-                48 => {
+                120 => {
                     self.GCLEBGDDIIP = is.read_uint32()?;
-                },
-                40 => {
-                    self.GPDEIIIOIPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EGALAGNAEFB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GPDEIIIOIPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GPDEIIIOIPN);
+        }
         if self.OLGLJHECDOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OLGLJHECDOF);
+            my_size += ::protobuf::rt::uint32_size(3, self.OLGLJHECDOF);
         }
         if self.GCLEBGDDIIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GCLEBGDDIIP);
-        }
-        if self.GPDEIIIOIPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GPDEIIIOIPN);
+            my_size += ::protobuf::rt::uint32_size(15, self.GCLEBGDDIIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EGALAGNAEFB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GPDEIIIOIPN != 0 {
+            os.write_uint32(7, self.GPDEIIIOIPN)?;
+        }
         if self.OLGLJHECDOF != 0 {
-            os.write_uint32(15, self.OLGLJHECDOF)?;
+            os.write_uint32(3, self.OLGLJHECDOF)?;
         }
         if self.GCLEBGDDIIP != 0 {
-            os.write_uint32(6, self.GCLEBGDDIIP)?;
-        }
-        if self.GPDEIIIOIPN != 0 {
-            os.write_uint32(5, self.GPDEIIIOIPN)?;
+            os.write_uint32(15, self.GCLEBGDDIIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EGALAGNAEFB {
     }
 
     fn clear(&mut self) {
+        self.GPDEIIIOIPN = 0;
         self.OLGLJHECDOF = 0;
         self.GCLEBGDDIIP = 0;
-        self.GPDEIIIOIPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGALAGNAEFB {
         static instance: EGALAGNAEFB = EGALAGNAEFB {
+            GPDEIIIOIPN: 0,
             OLGLJHECDOF: 0,
             GCLEBGDDIIP: 0,
-            GPDEIIIOIPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EGALAGNAEFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGALAGNAEFB.proto\"s\n\x0bEGALAGNAEFB\x12\x20\n\x0bOLGLJHECDOF\x18\
-    \x0f\x20\x01(\rR\x0bOLGLJHECDOF\x12\x20\n\x0bGCLEBGDDIIP\x18\x06\x20\x01\
-    (\rR\x0bGCLEBGDDIIP\x12\x20\n\x0bGPDEIIIOIPN\x18\x05\x20\x01(\rR\x0bGPDE\
-    IIIOIPNb\x06proto3\
+    \n\x11EGALAGNAEFB.proto\"s\n\x0bEGALAGNAEFB\x12\x20\n\x0bGPDEIIIOIPN\x18\
+    \x07\x20\x01(\rR\x0bGPDEIIIOIPN\x12\x20\n\x0bOLGLJHECDOF\x18\x03\x20\x01\
+    (\rR\x0bOLGLJHECDOF\x12\x20\n\x0bGCLEBGDDIIP\x18\x0f\x20\x01(\rR\x0bGCLE\
+    BGDDIIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

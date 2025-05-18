@@ -72,7 +72,7 @@ impl ::protobuf::Message for SecurityReportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                82 => {
                     self.DGDLNIEFCPF = is.read_string()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SecurityReportCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.DGDLNIEFCPF.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.DGDLNIEFCPF);
+            my_size += ::protobuf::rt::string_size(10, &self.DGDLNIEFCPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SecurityReportCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.DGDLNIEFCPF.is_empty() {
-            os.write_string(14, &self.DGDLNIEFCPF)?;
+            os.write_string(10, &self.DGDLNIEFCPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SecurityReportCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SecurityReportCsReq.proto\"7\n\x13SecurityReportCsReq\x12\x20\n\
-    \x0bDGDLNIEFCPF\x18\x0e\x20\x01(\tR\x0bDGDLNIEFCPFb\x06proto3\
+    \x0bDGDLNIEFCPF\x18\n\x20\x01(\tR\x0bDGDLNIEFCPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

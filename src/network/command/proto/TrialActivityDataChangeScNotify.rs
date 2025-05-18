@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrialActivityDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrialActivityDataChangeScNotify.GLJBJHJMCFP)
-    pub GLJBJHJMCFP: ::protobuf::MessageField<super::HMKIKHBGBFP::HMKIKHBGBFP>,
+    // @@protoc_insertion_point(field:TrialActivityDataChangeScNotify.trial_activity_info)
+    pub trial_activity_info: ::protobuf::MessageField<super::TrialActivityInfo::TrialActivityInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:TrialActivityDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl TrialActivityDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HMKIKHBGBFP::HMKIKHBGBFP>(
-            "GLJBJHJMCFP",
-            |m: &TrialActivityDataChangeScNotify| { &m.GLJBJHJMCFP },
-            |m: &mut TrialActivityDataChangeScNotify| { &mut m.GLJBJHJMCFP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrialActivityInfo::TrialActivityInfo>(
+            "trial_activity_info",
+            |m: &TrialActivityDataChangeScNotify| { &m.trial_activity_info },
+            |m: &mut TrialActivityDataChangeScNotify| { &mut m.trial_activity_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrialActivityDataChangeScNotify>(
             "TrialActivityDataChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLJBJHJMCFP)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.trial_activity_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GLJBJHJMCFP.as_ref() {
+        if let Some(v) = self.trial_activity_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GLJBJHJMCFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.trial_activity_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.GLJBJHJMCFP.clear();
+        self.trial_activity_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrialActivityDataChangeScNotify {
         static instance: TrialActivityDataChangeScNotify = TrialActivityDataChangeScNotify {
-            GLJBJHJMCFP: ::protobuf::MessageField::none(),
+            trial_activity_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for TrialActivityDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%TrialActivityDataChangeScNotify.proto\x1a\x11HMKIKHBGBFP.proto\"Q\n\
-    \x1fTrialActivityDataChangeScNotify\x12.\n\x0bGLJBJHJMCFP\x18\r\x20\x01(\
-    \x0b2\x0c.HMKIKHBGBFPR\x0bGLJBJHJMCFPb\x06proto3\
+    \n%TrialActivityDataChangeScNotify.proto\x1a\x17TrialActivityInfo.proto\
+    \"e\n\x1fTrialActivityDataChangeScNotify\x12B\n\x13trial_activity_info\
+    \x18\x07\x20\x01(\x0b2\x12.TrialActivityInfoR\x11trialActivityInfob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HMKIKHBGBFP::file_descriptor().clone());
+            deps.push(super::TrialActivityInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrialActivityDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

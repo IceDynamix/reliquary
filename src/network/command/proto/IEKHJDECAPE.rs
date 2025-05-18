@@ -30,8 +30,8 @@ pub struct IEKHJDECAPE {
     // message fields
     // @@protoc_insertion_point(field:IEKHJDECAPE.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:IEKHJDECAPE.MBEJBLFHCBH)
-    pub MBEJBLFHCBH: u32,
+    // @@protoc_insertion_point(field:IEKHJDECAPE.item_count)
+    pub item_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IEKHJDECAPE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl IEKHJDECAPE {
             |m: &mut IEKHJDECAPE| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBEJBLFHCBH",
-            |m: &IEKHJDECAPE| { &m.MBEJBLFHCBH },
-            |m: &mut IEKHJDECAPE| { &mut m.MBEJBLFHCBH },
+            "item_count",
+            |m: &IEKHJDECAPE| { &m.item_count },
+            |m: &mut IEKHJDECAPE| { &mut m.item_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IEKHJDECAPE>(
             "IEKHJDECAPE",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for IEKHJDECAPE {
                 120 => {
                     self.item_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.MBEJBLFHCBH = is.read_uint32()?;
+                24 => {
+                    self.item_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for IEKHJDECAPE {
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.item_id);
         }
-        if self.MBEJBLFHCBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MBEJBLFHCBH);
+        if self.item_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.item_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for IEKHJDECAPE {
         if self.item_id != 0 {
             os.write_uint32(15, self.item_id)?;
         }
-        if self.MBEJBLFHCBH != 0 {
-            os.write_uint32(8, self.MBEJBLFHCBH)?;
+        if self.item_count != 0 {
+            os.write_uint32(3, self.item_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for IEKHJDECAPE {
 
     fn clear(&mut self) {
         self.item_id = 0;
-        self.MBEJBLFHCBH = 0;
+        self.item_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IEKHJDECAPE {
         static instance: IEKHJDECAPE = IEKHJDECAPE {
             item_id: 0,
-            MBEJBLFHCBH: 0,
+            item_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IEKHJDECAPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IEKHJDECAPE.proto\"H\n\x0bIEKHJDECAPE\x12\x17\n\x07item_id\x18\x0f\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bMBEJBLFHCBH\x18\x08\x20\x01(\rR\x0bM\
-    BEJBLFHCBHb\x06proto3\
+    \n\x11IEKHJDECAPE.proto\"E\n\x0bIEKHJDECAPE\x12\x17\n\x07item_id\x18\x0f\
+    \x20\x01(\rR\x06itemId\x12\x1d\n\nitem_count\x18\x03\x20\x01(\rR\titemCo\
+    untb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

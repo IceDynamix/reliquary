@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMDEFBABNNB {
     // message fields
-    // @@protoc_insertion_point(field:OMDEFBABNNB.GFICFLCIEJJ)
-    pub GFICFLCIEJJ: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
-    // @@protoc_insertion_point(field:OMDEFBABNNB.stats_avatar_id_list)
-    pub stats_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OMDEFBABNNB.rogue_revive_cost)
+    pub rogue_revive_cost: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:OMDEFBABNNB.avatar_id_list)
+    pub avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OMDEFBABNNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OMDEFBABNNB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "GFICFLCIEJJ",
-            |m: &OMDEFBABNNB| { &m.GFICFLCIEJJ },
-            |m: &mut OMDEFBABNNB| { &mut m.GFICFLCIEJJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "rogue_revive_cost",
+            |m: &OMDEFBABNNB| { &m.rogue_revive_cost },
+            |m: &mut OMDEFBABNNB| { &mut m.rogue_revive_cost },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "stats_avatar_id_list",
-            |m: &OMDEFBABNNB| { &m.stats_avatar_id_list },
-            |m: &mut OMDEFBABNNB| { &mut m.stats_avatar_id_list },
+            "avatar_id_list",
+            |m: &OMDEFBABNNB| { &m.avatar_id_list },
+            |m: &mut OMDEFBABNNB| { &mut m.avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMDEFBABNNB>(
             "OMDEFBABNNB",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for OMDEFBABNNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFICFLCIEJJ)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.stats_avatar_id_list)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                32 => {
-                    self.stats_avatar_id_list.push(is.read_uint32()?);
+                16 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for OMDEFBABNNB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GFICFLCIEJJ.as_ref() {
+        if let Some(v) = self.rogue_revive_cost.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.stats_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GFICFLCIEJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.rogue_revive_cost.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        os.write_repeated_packed_uint32(4, &self.stats_avatar_id_list)?;
+        os.write_repeated_packed_uint32(2, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OMDEFBABNNB {
     }
 
     fn clear(&mut self) {
-        self.GFICFLCIEJJ.clear();
-        self.stats_avatar_id_list.clear();
+        self.rogue_revive_cost.clear();
+        self.avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMDEFBABNNB {
         static instance: OMDEFBABNNB = OMDEFBABNNB {
-            GFICFLCIEJJ: ::protobuf::MessageField::none(),
-            stats_avatar_id_list: ::std::vec::Vec::new(),
+            rogue_revive_cost: ::protobuf::MessageField::none(),
+            avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for OMDEFBABNNB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OMDEFBABNNB.proto\x1a\x12ItemCostList.proto\"o\n\x0bOMDEFBABNNB\
-    \x12/\n\x0bGFICFLCIEJJ\x18\x0f\x20\x01(\x0b2\r.ItemCostListR\x0bGFICFLCI\
-    EJJ\x12/\n\x14stats_avatar_id_list\x18\x04\x20\x03(\rR\x11statsAvatarIdL\
-    istb\x06proto3\
+    \n\x11OMDEFBABNNB.proto\x1a\x12ItemCostData.proto\"n\n\x0bOMDEFBABNNB\
+    \x129\n\x11rogue_revive_cost\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x0frogu\
+    eReviveCost\x12$\n\x0eavatar_id_list\x18\x02\x20\x03(\rR\x0cavatarIdList\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OMDEFBABNNB::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

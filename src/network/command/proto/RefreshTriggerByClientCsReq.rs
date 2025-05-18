@@ -93,19 +93,19 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                72 => {
+                56 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
-                18 => {
+                26 => {
                     self.trigger_name = is.read_string()?;
                 },
-                24 => {
+                112 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
-                50 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.trigger_motion)?;
                 },
                 tag => {
@@ -120,12 +120,12 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.trigger_target_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.trigger_target_id_list);
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(3, &self.trigger_name);
         }
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.trigger_entity_id);
         }
         if let Some(v) = self.trigger_motion.as_ref() {
             let len = v.compute_size();
@@ -137,15 +137,15 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.trigger_target_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.trigger_target_id_list)?;
         if !self.trigger_name.is_empty() {
-            os.write_string(2, &self.trigger_name)?;
+            os.write_string(3, &self.trigger_name)?;
         }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(3, self.trigger_entity_id)?;
+            os.write_uint32(14, self.trigger_entity_id)?;
         }
         if let Some(v) = self.trigger_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientCsReq.proto\x1a\x10MotionInfo.proto\"\xd5\x01\n\
-    \x1bRefreshTriggerByClientCsReq\x123\n\x16trigger_target_id_list\x18\t\
-    \x20\x03(\rR\x13triggerTargetIdList\x12!\n\x0ctrigger_name\x18\x02\x20\
-    \x01(\tR\x0btriggerName\x12*\n\x11trigger_entity_id\x18\x03\x20\x01(\rR\
-    \x0ftriggerEntityId\x122\n\x0etrigger_motion\x18\x06\x20\x01(\x0b2\x0b.M\
+    \x1bRefreshTriggerByClientCsReq\x123\n\x16trigger_target_id_list\x18\x07\
+    \x20\x03(\rR\x13triggerTargetIdList\x12!\n\x0ctrigger_name\x18\x03\x20\
+    \x01(\tR\x0btriggerName\x12*\n\x11trigger_entity_id\x18\x0e\x20\x01(\rR\
+    \x0ftriggerEntityId\x122\n\x0etrigger_motion\x18\x02\x20\x01(\x0b2\x0b.M\
     otionInfoR\rtriggerMotionb\x06proto3\
 ";
 

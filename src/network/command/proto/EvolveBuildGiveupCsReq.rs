@@ -27,6 +27,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:EvolveBuildGiveupCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildGiveupCsReq {
+    // message fields
+    // @@protoc_insertion_point(field:EvolveBuildGiveupCsReq.ACJCPHIFMLN)
+    pub ACJCPHIFMLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildGiveupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -44,8 +47,13 @@ impl EvolveBuildGiveupCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(0);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACJCPHIFMLN",
+            |m: &EvolveBuildGiveupCsReq| { &m.ACJCPHIFMLN },
+            |m: &mut EvolveBuildGiveupCsReq| { &mut m.ACJCPHIFMLN },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildGiveupCsReq>(
             "EvolveBuildGiveupCsReq",
             fields,
@@ -64,6 +72,9 @@ impl ::protobuf::Message for EvolveBuildGiveupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.ACJCPHIFMLN = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -76,12 +87,18 @@ impl ::protobuf::Message for EvolveBuildGiveupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ACJCPHIFMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ACJCPHIFMLN);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ACJCPHIFMLN != 0 {
+            os.write_uint32(9, self.ACJCPHIFMLN)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -99,11 +116,13 @@ impl ::protobuf::Message for EvolveBuildGiveupCsReq {
     }
 
     fn clear(&mut self) {
+        self.ACJCPHIFMLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildGiveupCsReq {
         static instance: EvolveBuildGiveupCsReq = EvolveBuildGiveupCsReq {
+            ACJCPHIFMLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -128,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildGiveupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cEvolveBuildGiveupCsReq.proto\"\x18\n\x16EvolveBuildGiveupCsReqb\
-    \x06proto3\
+    \n\x1cEvolveBuildGiveupCsReq.proto\":\n\x16EvolveBuildGiveupCsReq\x12\
+    \x20\n\x0bACJCPHIFMLN\x18\t\x20\x01(\rR\x0bACJCPHIFMLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

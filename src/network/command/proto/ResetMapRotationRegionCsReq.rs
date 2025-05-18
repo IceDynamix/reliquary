@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetMapRotationRegionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.map_info)
-    pub map_info: ::protobuf::MessageField<super::ICIMAKBAJGB::ICIMAKBAJGB>,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
     // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
@@ -51,10 +51,10 @@ impl ResetMapRotationRegionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICIMAKBAJGB::ICIMAKBAJGB>(
-            "map_info",
-            |m: &ResetMapRotationRegionCsReq| { &m.map_info },
-            |m: &mut ResetMapRotationRegionCsReq| { &mut m.map_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
+            "rogue_map",
+            |m: &ResetMapRotationRegionCsReq| { &m.rogue_map },
+            |m: &mut ResetMapRotationRegionCsReq| { &mut m.rogue_map },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_info)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.map_info.as_ref() {
+        if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.map_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     }
 
     fn clear(&mut self) {
-        self.map_info.clear();
+        self.rogue_map.clear();
         self.motion.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetMapRotationRegionCsReq {
         static instance: ResetMapRotationRegionCsReq = ResetMapRotationRegionCsReq {
-            map_info: ::protobuf::MessageField::none(),
+            rogue_map: ::protobuf::MessageField::none(),
             motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ResetMapRotationRegionCsReq.proto\x1a\x11ICIMAKBAJGB.proto\x1a\x10Mot\
-    ionInfo.proto\"k\n\x1bResetMapRotationRegionCsReq\x12'\n\x08map_info\x18\
-    \x04\x20\x01(\x0b2\x0c.ICIMAKBAJGBR\x07mapInfo\x12#\n\x06motion\x18\x0e\
-    \x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    \n!ResetMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\x1a\x13Rota\
+    teMapInfo.proto\"o\n\x1bResetMapRotationRegionCsReq\x12+\n\trogue_map\
+    \x18\t\x20\x01(\x0b2\x0e.RotateMapInfoR\x08rogueMap\x12#\n\x06motion\x18\
+    \x08\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ICIMAKBAJGB::file_descriptor().clone());
             deps.push(super::MotionInfo::file_descriptor().clone());
+            deps.push(super::RotateMapInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ResetMapRotationRegionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

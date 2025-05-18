@@ -31,7 +31,7 @@ pub struct BattleEventBattleInfo {
     // @@protoc_insertion_point(field:BattleEventBattleInfo.battle_event_id)
     pub battle_event_id: u32,
     // @@protoc_insertion_point(field:BattleEventBattleInfo.status)
-    pub status: ::protobuf::MessageField<super::BattleEventInitedData::BattleEventInitedData>,
+    pub status: ::protobuf::MessageField<super::BattleEventProperty::BattleEventProperty>,
     // @@protoc_insertion_point(field:BattleEventBattleInfo.skill_info)
     pub skill_info: ::std::vec::Vec<super::GAAGEHABINM::GAAGEHABINM>,
     // special fields
@@ -58,7 +58,7 @@ impl BattleEventBattleInfo {
             |m: &BattleEventBattleInfo| { &m.battle_event_id },
             |m: &mut BattleEventBattleInfo| { &mut m.battle_event_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleEventInitedData::BattleEventInitedData>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleEventProperty::BattleEventProperty>(
             "status",
             |m: &BattleEventBattleInfo| { &m.status },
             |m: &mut BattleEventBattleInfo| { &mut m.status },
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for BattleEventBattleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bBattleEventBattleInfo.proto\x1a\x1bBattleEventInitedData.proto\x1a\
-    \x11GAAGEHABINM.proto\"\x9c\x01\n\x15BattleEventBattleInfo\x12&\n\x0fbat\
-    tle_event_id\x18\x01\x20\x01(\rR\rbattleEventId\x12.\n\x06status\x18\x02\
-    \x20\x01(\x0b2\x16.BattleEventInitedDataR\x06status\x12+\n\nskill_info\
-    \x18\x03\x20\x03(\x0b2\x0c.GAAGEHABINMR\tskillInfob\x06proto3\
+    \n\x1bBattleEventBattleInfo.proto\x1a\x19BattleEventProperty.proto\x1a\
+    \x11GAAGEHABINM.proto\"\x9a\x01\n\x15BattleEventBattleInfo\x12&\n\x0fbat\
+    tle_event_id\x18\x01\x20\x01(\rR\rbattleEventId\x12,\n\x06status\x18\x02\
+    \x20\x01(\x0b2\x14.BattleEventPropertyR\x06status\x12+\n\nskill_info\x18\
+    \x03\x20\x03(\x0b2\x0c.GAAGEHABINMR\tskillInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BattleEventInitedData::file_descriptor().clone());
+            deps.push(super::BattleEventProperty::file_descriptor().clone());
             deps.push(super::GAAGEHABINM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleEventBattleInfo::generated_message_descriptor_data());

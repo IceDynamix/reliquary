@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
     // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.JIAPJHDLFBJ)
     pub JIAPJHDLFBJ: ::protobuf::MessageField<super::KPKKKJPJCPC::KPKKKJPJCPC>,
     // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::EvolveBuildAvatar::EvolveBuildAvatar>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelCsReq.ACJCPHIFMLN)
+    pub ACJCPHIFMLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl EvolveBuildStartLevelCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &EvolveBuildStartLevelCsReq| { &m.ACJCPHIFMLN },
-            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.ACJCPHIFMLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPKKKJPJCPC::KPKKKJPJCPC>(
             "JIAPJHDLFBJ",
             |m: &EvolveBuildStartLevelCsReq| { &m.JIAPJHDLFBJ },
@@ -67,6 +62,11 @@ impl EvolveBuildStartLevelCsReq {
             "avatar_list",
             |m: &EvolveBuildStartLevelCsReq| { &m.avatar_list },
             |m: &mut EvolveBuildStartLevelCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACJCPHIFMLN",
+            |m: &EvolveBuildStartLevelCsReq| { &m.ACJCPHIFMLN },
+            |m: &mut EvolveBuildStartLevelCsReq| { &mut m.ACJCPHIFMLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartLevelCsReq>(
             "EvolveBuildStartLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
-                },
-                26 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIAPJHDLFBJ)?;
                 },
-                10 => {
+                26 => {
                     self.avatar_list.push(is.read_message()?);
+                },
+                120 => {
+                    self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,9 +107,6 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ACJCPHIFMLN);
-        }
         if let Some(v) = self.JIAPJHDLFBJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -118,21 +115,24 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.ACJCPHIFMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ACJCPHIFMLN);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(5, self.ACJCPHIFMLN)?;
-        }
         if let Some(v) = self.JIAPJHDLFBJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.ACJCPHIFMLN != 0 {
+            os.write_uint32(15, self.ACJCPHIFMLN)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EvolveBuildStartLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.ACJCPHIFMLN = 0;
         self.JIAPJHDLFBJ.clear();
         self.avatar_list.clear();
+        self.ACJCPHIFMLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartLevelCsReq {
         static instance: EvolveBuildStartLevelCsReq = EvolveBuildStartLevelCsReq {
-            ACJCPHIFMLN: 0,
             JIAPJHDLFBJ: ::protobuf::MessageField::none(),
             avatar_list: ::std::vec::Vec::new(),
+            ACJCPHIFMLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EvolveBuildStartLevelCsReq.proto\x1a\x17EvolveBuildAvatar.proto\
-    \x1a\x11KPKKKJPJCPC.proto\"\xa3\x01\n\x1aEvolveBuildStartLevelCsReq\x12\
-    \x20\n\x0bACJCPHIFMLN\x18\x05\x20\x01(\rR\x0bACJCPHIFMLN\x12.\n\x0bJIAPJ\
-    HDLFBJ\x18\x03\x20\x01(\x0b2\x0c.KPKKKJPJCPCR\x0bJIAPJHDLFBJ\x123\n\x0ba\
-    vatar_list\x18\x01\x20\x03(\x0b2\x12.EvolveBuildAvatarR\navatarListb\x06\
+    \x1a\x11KPKKKJPJCPC.proto\"\xa3\x01\n\x1aEvolveBuildStartLevelCsReq\x12.\
+    \n\x0bJIAPJHDLFBJ\x18\x05\x20\x01(\x0b2\x0c.KPKKKJPJCPCR\x0bJIAPJHDLFBJ\
+    \x123\n\x0bavatar_list\x18\x03\x20\x03(\x0b2\x12.EvolveBuildAvatarR\nava\
+    tarList\x12\x20\n\x0bACJCPHIFMLN\x18\x0f\x20\x01(\rR\x0bACJCPHIFMLNb\x06\
     proto3\
 ";
 

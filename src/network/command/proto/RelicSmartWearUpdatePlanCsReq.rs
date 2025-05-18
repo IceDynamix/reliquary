@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearUpdatePlanCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearUpdatePlanCsReq.EILIDMCOCHO)
-    pub EILIDMCOCHO: ::protobuf::MessageField<super::RelicSmartWearPlanData::RelicSmartWearPlanData>,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePlanCsReq.relic_plan)
+    pub relic_plan: ::protobuf::MessageField<super::RelicSmartWearPlan::RelicSmartWearPlan>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicSmartWearUpdatePlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl RelicSmartWearUpdatePlanCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicSmartWearPlanData::RelicSmartWearPlanData>(
-            "EILIDMCOCHO",
-            |m: &RelicSmartWearUpdatePlanCsReq| { &m.EILIDMCOCHO },
-            |m: &mut RelicSmartWearUpdatePlanCsReq| { &mut m.EILIDMCOCHO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicSmartWearPlan::RelicSmartWearPlan>(
+            "relic_plan",
+            |m: &RelicSmartWearUpdatePlanCsReq| { &m.relic_plan },
+            |m: &mut RelicSmartWearUpdatePlanCsReq| { &mut m.relic_plan },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicSmartWearUpdatePlanCsReq>(
             "RelicSmartWearUpdatePlanCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EILIDMCOCHO)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.relic_plan)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EILIDMCOCHO.as_ref() {
+        if let Some(v) = self.relic_plan.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EILIDMCOCHO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.relic_plan.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
     }
 
     fn clear(&mut self) {
-        self.EILIDMCOCHO.clear();
+        self.relic_plan.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearUpdatePlanCsReq {
         static instance: RelicSmartWearUpdatePlanCsReq = RelicSmartWearUpdatePlanCsReq {
-            EILIDMCOCHO: ::protobuf::MessageField::none(),
+            relic_plan: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearUpdatePlanCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#RelicSmartWearUpdatePlanCsReq.proto\x1a\x1cRelicSmartWearPlanData.pro\
-    to\"Z\n\x1dRelicSmartWearUpdatePlanCsReq\x129\n\x0bEILIDMCOCHO\x18\t\x20\
-    \x01(\x0b2\x17.RelicSmartWearPlanDataR\x0bEILIDMCOCHOb\x06proto3\
+    \n#RelicSmartWearUpdatePlanCsReq.proto\x1a\x18RelicSmartWearPlan.proto\"\
+    S\n\x1dRelicSmartWearUpdatePlanCsReq\x122\n\nrelic_plan\x18\x0f\x20\x01(\
+    \x0b2\x13.RelicSmartWearPlanR\trelicPlanb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RelicSmartWearPlanData::file_descriptor().clone());
+            deps.push(super::RelicSmartWearPlan::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicSmartWearUpdatePlanCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyClickCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.HHCBJGHKCPC)
-    pub HHCBJGHKCPC: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.cell_id)
+    pub cell_id: u32,
     // @@protoc_insertion_point(field:MonopolyClickCellScRsp.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyClickCellScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MonopolyClickCellScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyClickCellScRsp| { &m.retcode },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHCBJGHKCPC",
-            |m: &MonopolyClickCellScRsp| { &m.HHCBJGHKCPC },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.HHCBJGHKCPC },
+            "cell_id",
+            |m: &MonopolyClickCellScRsp| { &m.cell_id },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &MonopolyClickCellScRsp| { &m.map_id },
             |m: &mut MonopolyClickCellScRsp| { &mut m.map_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MonopolyClickCellScRsp| { &m.retcode },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyClickCellScRsp>(
             "MonopolyClickCellScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.retcode = is.read_uint32()?;
+                8 => {
+                    self.cell_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.HHCBJGHKCPC = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.map_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.HHCBJGHKCPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HHCBJGHKCPC);
+        if self.cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.cell_id);
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.map_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if self.HHCBJGHKCPC != 0 {
-            os.write_uint32(7, self.HHCBJGHKCPC)?;
+        if self.cell_id != 0 {
+            os.write_uint32(1, self.cell_id)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(14, self.map_id)?;
+            os.write_uint32(4, self.map_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.HHCBJGHKCPC = 0;
+        self.cell_id = 0;
         self.map_id = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyClickCellScRsp {
         static instance: MonopolyClickCellScRsp = MonopolyClickCellScRsp {
-            retcode: 0,
-            HHCBJGHKCPC: 0,
+            cell_id: 0,
             map_id: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cMonopolyClickCellScRsp.proto\"k\n\x16MonopolyClickCellScRsp\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bHHCBJGHKCPC\
-    \x18\x07\x20\x01(\rR\x0bHHCBJGHKCPC\x12\x15\n\x06map_id\x18\x0e\x20\x01(\
-    \rR\x05mapIdb\x06proto3\
+    \n\x1cMonopolyClickCellScRsp.proto\"b\n\x16MonopolyClickCellScRsp\x12\
+    \x17\n\x07cell_id\x18\x01\x20\x01(\rR\x06cellId\x12\x15\n\x06map_id\x18\
+    \x04\x20\x01(\rR\x05mapId\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

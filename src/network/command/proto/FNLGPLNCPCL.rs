@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FNLGPLNCPCL {
     // message fields
-    // @@protoc_insertion_point(field:FNLGPLNCPCL.CENIFNKNFNP)
-    pub CENIFNKNFNP: u32,
     // @@protoc_insertion_point(field:FNLGPLNCPCL.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:FNLGPLNCPCL.GHEDLCLNHIJ)
-    pub GHEDLCLNHIJ: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:FNLGPLNCPCL.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:FNLGPLNCPCL.CENIFNKNFNP)
+    pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:FNLGPLNCPCL.GHEDLCLNHIJ)
+    pub GHEDLCLNHIJ: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:FNLGPLNCPCL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl FNLGPLNCPCL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &FNLGPLNCPCL| { &m.CENIFNKNFNP },
-            |m: &mut FNLGPLNCPCL| { &mut m.CENIFNKNFNP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &FNLGPLNCPCL| { &m.lineup },
             |m: &mut FNLGPLNCPCL| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "GHEDLCLNHIJ",
-            |m: &FNLGPLNCPCL| { &m.GHEDLCLNHIJ },
-            |m: &mut FNLGPLNCPCL| { &mut m.GHEDLCLNHIJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
             |m: &FNLGPLNCPCL| { &m.world_level },
             |m: &mut FNLGPLNCPCL| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CENIFNKNFNP",
+            |m: &FNLGPLNCPCL| { &m.CENIFNKNFNP },
+            |m: &mut FNLGPLNCPCL| { &mut m.CENIFNKNFNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "GHEDLCLNHIJ",
+            |m: &FNLGPLNCPCL| { &m.GHEDLCLNHIJ },
+            |m: &mut FNLGPLNCPCL| { &mut m.GHEDLCLNHIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FNLGPLNCPCL>(
             "FNLGPLNCPCL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.CENIFNKNFNP = is.read_uint32()?;
-                },
-                114 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHEDLCLNHIJ)?;
-                },
-                32 => {
+                72 => {
                     self.world_level = is.read_uint32()?;
+                },
+                8 => {
+                    self.CENIFNKNFNP = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHEDLCLNHIJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CENIFNKNFNP);
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.world_level);
+        }
+        if self.CENIFNKNFNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CENIFNKNFNP);
+        }
         if let Some(v) = self.GHEDLCLNHIJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CENIFNKNFNP != 0 {
-            os.write_uint32(6, self.CENIFNKNFNP)?;
-        }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.GHEDLCLNHIJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(4, self.world_level)?;
+            os.write_uint32(9, self.world_level)?;
+        }
+        if self.CENIFNKNFNP != 0 {
+            os.write_uint32(1, self.CENIFNKNFNP)?;
+        }
+        if let Some(v) = self.GHEDLCLNHIJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     }
 
     fn clear(&mut self) {
-        self.CENIFNKNFNP = 0;
         self.lineup.clear();
-        self.GHEDLCLNHIJ.clear();
         self.world_level = 0;
+        self.CENIFNKNFNP = 0;
+        self.GHEDLCLNHIJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FNLGPLNCPCL {
         static instance: FNLGPLNCPCL = FNLGPLNCPCL {
-            CENIFNKNFNP: 0,
             lineup: ::protobuf::MessageField::none(),
-            GHEDLCLNHIJ: ::protobuf::MessageField::none(),
             world_level: 0,
+            CENIFNKNFNP: 0,
+            GHEDLCLNHIJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for FNLGPLNCPCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FNLGPLNCPCL.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\
-    \xa3\x01\n\x0bFNLGPLNCPCL\x12\x20\n\x0bCENIFNKNFNP\x18\x06\x20\x01(\rR\
-    \x0bCENIFNKNFNP\x12#\n\x06lineup\x18\x0e\x20\x01(\x0b2\x0b.LineupInfoR\
-    \x06lineup\x12,\n\x0bGHEDLCLNHIJ\x18\x0b\x20\x01(\x0b2\n.SceneInfoR\x0bG\
-    HEDLCLNHIJ\x12\x1f\n\x0bworld_level\x18\x04\x20\x01(\rR\nworldLevelb\x06\
-    proto3\
+    \xa3\x01\n\x0bFNLGPLNCPCL\x12#\n\x06lineup\x18\x06\x20\x01(\x0b2\x0b.Lin\
+    eupInfoR\x06lineup\x12\x1f\n\x0bworld_level\x18\t\x20\x01(\rR\nworldLeve\
+    l\x12\x20\n\x0bCENIFNKNFNP\x18\x01\x20\x01(\rR\x0bCENIFNKNFNP\x12,\n\x0b\
+    GHEDLCLNHIJ\x18\r\x20\x01(\x0b2\n.SceneInfoR\x0bGHEDLCLNHIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GMKEPCOMHPN {
     // message fields
-    // @@protoc_insertion_point(field:GMKEPCOMHPN.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::DEPJMMBPHBJ::DEPJMMBPHBJ>,
+    // @@protoc_insertion_point(field:GMKEPCOMHPN.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType>,
     // @@protoc_insertion_point(field:GMKEPCOMHPN.id)
     pub id: u32,
     // @@protoc_insertion_point(field:GMKEPCOMHPN.sp_bar)
@@ -54,9 +54,9 @@ impl GMKEPCOMHPN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &GMKEPCOMHPN| { &m.slot },
-            |m: &mut GMKEPCOMHPN| { &mut m.slot },
+            "type",
+            |m: &GMKEPCOMHPN| { &m.type_ },
+            |m: &mut GMKEPCOMHPN| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GMKEPCOMHPN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 16 => {
                     self.id = is.read_uint32()?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for GMKEPCOMHPN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::DEPJMMBPHBJ::DEPJMMBPHBJ::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.slot.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.id);
@@ -123,8 +123,8 @@ impl ::protobuf::Message for GMKEPCOMHPN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::DEPJMMBPHBJ::DEPJMMBPHBJ::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.id != 0 {
             os.write_uint32(2, self.id)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for GMKEPCOMHPN {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::DEPJMMBPHBJ::DEPJMMBPHBJ::AETHERDIVIDE_SPIRIT_LINEUP_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE);
         self.id = 0;
         self.sp_bar.clear();
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for GMKEPCOMHPN {
 
     fn default_instance() -> &'static GMKEPCOMHPN {
         static instance: GMKEPCOMHPN = GMKEPCOMHPN {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             id: 0,
             sp_bar: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GMKEPCOMHPN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GMKEPCOMHPN.proto\x1a\x11DEPJMMBPHBJ.proto\x1a\x0fSpBarInfo.proto\
-    \"b\n\x0bGMKEPCOMHPN\x12\x20\n\x04slot\x18\x01\x20\x01(\x0e2\x0c.DEPJMMB\
-    PHBJR\x04slot\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12!\n\x06sp_bar\
-    \x18\x03\x20\x01(\x0b2\n.SpBarInfoR\x05spBarb\x06proto3\
+    \n\x11GMKEPCOMHPN.proto\x1a\"AetherdivideSpiritLineupType.proto\x1a\x0fS\
+    pBarInfo.proto\"s\n\x0bGMKEPCOMHPN\x121\n\x04type\x18\x01\x20\x01(\x0e2\
+    \x1d.AetherdivideSpiritLineupTypeR\x04type\x12\x0e\n\x02id\x18\x02\x20\
+    \x01(\rR\x02id\x12!\n\x06sp_bar\x18\x03\x20\x01(\x0b2\n.SpBarInfoR\x05sp\
+    Barb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DEPJMMBPHBJ::file_descriptor().clone());
+            deps.push(super::AetherdivideSpiritLineupType::file_descriptor().clone());
             deps.push(super::SpBarInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GMKEPCOMHPN::generated_message_descriptor_data());

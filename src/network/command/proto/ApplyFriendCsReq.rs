@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ApplyFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ApplyFriendCsReq.source)
-    pub source: ::protobuf::EnumOrUnknown<super::FriendApplySource::FriendApplySource>,
     // @@protoc_insertion_point(field:ApplyFriendCsReq.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:ApplyFriendCsReq.source)
+    pub source: ::protobuf::EnumOrUnknown<super::FriendApplySource::FriendApplySource>,
     // special fields
     // @@protoc_insertion_point(special_field:ApplyFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ApplyFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &ApplyFriendCsReq| { &m.source },
-            |m: &mut ApplyFriendCsReq| { &mut m.source },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &ApplyFriendCsReq| { &m.uid },
             |m: &mut ApplyFriendCsReq| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &ApplyFriendCsReq| { &m.source },
+            |m: &mut ApplyFriendCsReq| { &mut m.source },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ApplyFriendCsReq>(
             "ApplyFriendCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.source = is.read_enum_or_unknown()?;
-                },
-                8 => {
+                112 => {
                     self.uid = is.read_uint32()?;
+                },
+                64 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.source.value());
-        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+            my_size += ::protobuf::rt::uint32_size(14, self.uid);
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
-        }
         if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
+            os.write_uint32(14, self.uid)?;
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.source = ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE);
         self.uid = 0;
+        self.source = ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::FRIEND_APPLY_SOURCE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ApplyFriendCsReq {
         static instance: ApplyFriendCsReq = ApplyFriendCsReq {
-            source: ::protobuf::EnumOrUnknown::from_i32(0),
             uid: 0,
+            source: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ApplyFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ApplyFriendCsReq.proto\x1a\x17FriendApplySource.proto\"P\n\x10Appl\
-    yFriendCsReq\x12*\n\x06source\x18\x0f\x20\x01(\x0e2\x12.FriendApplySourc\
-    eR\x06source\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uidb\x06proto3\
+    yFriendCsReq\x12\x10\n\x03uid\x18\x0e\x20\x01(\rR\x03uid\x12*\n\x06sourc\
+    e\x18\x08\x20\x01(\x0e2\x12.FriendApplySourceR\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

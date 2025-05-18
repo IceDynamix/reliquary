@@ -30,10 +30,6 @@ pub struct OLFPCKAGKAK {
     // message fields
     // @@protoc_insertion_point(field:OLFPCKAGKAK.CKGFONMAEKO)
     pub CKGFONMAEKO: ::std::vec::Vec<super::PAIMOGCIGIJ::PAIMOGCIGIJ>,
-    // @@protoc_insertion_point(field:OLFPCKAGKAK.DLNFOKKNFGI)
-    pub DLNFOKKNFGI: u32,
-    // @@protoc_insertion_point(field:OLFPCKAGKAK.FNHFJFIOILD)
-    pub FNHFJFIOILD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OLFPCKAGKAK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +47,12 @@ impl OLFPCKAGKAK {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CKGFONMAEKO",
             |m: &OLFPCKAGKAK| { &m.CKGFONMAEKO },
             |m: &mut OLFPCKAGKAK| { &mut m.CKGFONMAEKO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLNFOKKNFGI",
-            |m: &OLFPCKAGKAK| { &m.DLNFOKKNFGI },
-            |m: &mut OLFPCKAGKAK| { &mut m.DLNFOKKNFGI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNHFJFIOILD",
-            |m: &OLFPCKAGKAK| { &m.FNHFJFIOILD },
-            |m: &mut OLFPCKAGKAK| { &mut m.FNHFJFIOILD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OLFPCKAGKAK>(
             "OLFPCKAGKAK",
@@ -86,14 +72,8 @@ impl ::protobuf::Message for OLFPCKAGKAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
                     self.CKGFONMAEKO.push(is.read_message()?);
-                },
-                16 => {
-                    self.DLNFOKKNFGI = is.read_uint32()?;
-                },
-                96 => {
-                    self.FNHFJFIOILD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +91,6 @@ impl ::protobuf::Message for OLFPCKAGKAK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DLNFOKKNFGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DLNFOKKNFGI);
-        }
-        if self.FNHFJFIOILD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FNHFJFIOILD);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +98,8 @@ impl ::protobuf::Message for OLFPCKAGKAK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.CKGFONMAEKO {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.DLNFOKKNFGI != 0 {
-            os.write_uint32(2, self.DLNFOKKNFGI)?;
-        }
-        if self.FNHFJFIOILD != 0 {
-            os.write_uint32(12, self.FNHFJFIOILD)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +118,12 @@ impl ::protobuf::Message for OLFPCKAGKAK {
 
     fn clear(&mut self) {
         self.CKGFONMAEKO.clear();
-        self.DLNFOKKNFGI = 0;
-        self.FNHFJFIOILD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OLFPCKAGKAK {
         static instance: OLFPCKAGKAK = OLFPCKAGKAK {
             CKGFONMAEKO: ::std::vec::Vec::new(),
-            DLNFOKKNFGI: 0,
-            FNHFJFIOILD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for OLFPCKAGKAK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OLFPCKAGKAK.proto\x1a\x11PAIMOGCIGIJ.proto\"\x81\x01\n\x0bOLFPCKAG\
-    KAK\x12.\n\x0bCKGFONMAEKO\x18\x03\x20\x03(\x0b2\x0c.PAIMOGCIGIJR\x0bCKGF\
-    ONMAEKO\x12\x20\n\x0bDLNFOKKNFGI\x18\x02\x20\x01(\rR\x0bDLNFOKKNFGI\x12\
-    \x20\n\x0bFNHFJFIOILD\x18\x0c\x20\x01(\rR\x0bFNHFJFIOILDb\x06proto3\
+    \n\x11OLFPCKAGKAK.proto\x1a\x11PAIMOGCIGIJ.proto\"=\n\x0bOLFPCKAGKAK\x12\
+    .\n\x0bCKGFONMAEKO\x18\n\x20\x03(\x0b2\x0c.PAIMOGCIGIJR\x0bCKGFONMAEKOb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

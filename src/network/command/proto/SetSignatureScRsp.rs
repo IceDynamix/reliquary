@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetSignatureScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                50 => {
                     self.signature = is.read_string()?;
                 },
-                8 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SetSignatureScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.signature);
+            my_size += ::protobuf::rt::string_size(6, &self.signature);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetSignatureScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.signature.is_empty() {
-            os.write_string(12, &self.signature)?;
+            os.write_string(6, &self.signature)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetSignatureScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SetSignatureScRsp.proto\"K\n\x11SetSignatureScRsp\x12\x1c\n\tsigna\
-    ture\x18\x0c\x20\x01(\tR\tsignature\x12\x18\n\x07retcode\x18\x01\x20\x01\
+    ture\x18\x06\x20\x01(\tR\tsignature\x12\x18\n\x07retcode\x18\x08\x20\x01\
     (\rR\x07retcodeb\x06proto3\
 ";
 

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JCHCGFMGBAK {
     // message fields
-    // @@protoc_insertion_point(field:JCHCGFMGBAK.BJABJJMMOJK)
-    pub BJABJJMMOJK: ::std::vec::Vec<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // @@protoc_insertion_point(field:JCHCGFMGBAK.ELDOLKCAKAE)
     pub ELDOLKCAKAE: ::std::vec::Vec<super::JBIHOCIOANH::JBIHOCIOANH>,
-    // @@protoc_insertion_point(field:JCHCGFMGBAK.JFCNAJMIHCI)
-    pub JFCNAJMIHCI: bool,
     // @@protoc_insertion_point(field:JCHCGFMGBAK.NMJAIBBLDOC)
     pub NMJAIBBLDOC: u32,
+    // @@protoc_insertion_point(field:JCHCGFMGBAK.JFCNAJMIHCI)
+    pub JFCNAJMIHCI: bool,
+    // @@protoc_insertion_point(field:JCHCGFMGBAK.rogue_magic_unit_info_list)
+    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // special fields
     // @@protoc_insertion_point(special_field:JCHCGFMGBAK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl JCHCGFMGBAK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BJABJJMMOJK",
-            |m: &JCHCGFMGBAK| { &m.BJABJJMMOJK },
-            |m: &mut JCHCGFMGBAK| { &mut m.BJABJJMMOJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ELDOLKCAKAE",
             |m: &JCHCGFMGBAK| { &m.ELDOLKCAKAE },
             |m: &mut JCHCGFMGBAK| { &mut m.ELDOLKCAKAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMJAIBBLDOC",
+            |m: &JCHCGFMGBAK| { &m.NMJAIBBLDOC },
+            |m: &mut JCHCGFMGBAK| { &mut m.NMJAIBBLDOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JFCNAJMIHCI",
             |m: &JCHCGFMGBAK| { &m.JFCNAJMIHCI },
             |m: &mut JCHCGFMGBAK| { &mut m.JFCNAJMIHCI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMJAIBBLDOC",
-            |m: &JCHCGFMGBAK| { &m.NMJAIBBLDOC },
-            |m: &mut JCHCGFMGBAK| { &mut m.NMJAIBBLDOC },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_magic_unit_info_list",
+            |m: &JCHCGFMGBAK| { &m.rogue_magic_unit_info_list },
+            |m: &mut JCHCGFMGBAK| { &mut m.rogue_magic_unit_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCHCGFMGBAK>(
             "JCHCGFMGBAK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JCHCGFMGBAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.BJABJJMMOJK.push(is.read_message()?);
-                },
-                58 => {
+                50 => {
                     self.ELDOLKCAKAE.push(is.read_message()?);
                 },
-                80 => {
+                56 => {
+                    self.NMJAIBBLDOC = is.read_uint32()?;
+                },
+                88 => {
                     self.JFCNAJMIHCI = is.read_bool()?;
                 },
-                64 => {
-                    self.NMJAIBBLDOC = is.read_uint32()?;
+                10 => {
+                    self.rogue_magic_unit_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for JCHCGFMGBAK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BJABJJMMOJK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.ELDOLKCAKAE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NMJAIBBLDOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NMJAIBBLDOC);
+        }
         if self.JFCNAJMIHCI != false {
             my_size += 1 + 1;
         }
-        if self.NMJAIBBLDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NMJAIBBLDOC);
-        }
+        for value in &self.rogue_magic_unit_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BJABJJMMOJK {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         for v in &self.ELDOLKCAKAE {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.JFCNAJMIHCI != false {
-            os.write_bool(10, self.JFCNAJMIHCI)?;
-        }
         if self.NMJAIBBLDOC != 0 {
-            os.write_uint32(8, self.NMJAIBBLDOC)?;
+            os.write_uint32(7, self.NMJAIBBLDOC)?;
         }
+        if self.JFCNAJMIHCI != false {
+            os.write_bool(11, self.JFCNAJMIHCI)?;
+        }
+        for v in &self.rogue_magic_unit_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for JCHCGFMGBAK {
     }
 
     fn clear(&mut self) {
-        self.BJABJJMMOJK.clear();
         self.ELDOLKCAKAE.clear();
-        self.JFCNAJMIHCI = false;
         self.NMJAIBBLDOC = 0;
+        self.JFCNAJMIHCI = false;
+        self.rogue_magic_unit_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCHCGFMGBAK {
         static instance: JCHCGFMGBAK = JCHCGFMGBAK {
-            BJABJJMMOJK: ::std::vec::Vec::new(),
             ELDOLKCAKAE: ::std::vec::Vec::new(),
-            JFCNAJMIHCI: false,
             NMJAIBBLDOC: 0,
+            JFCNAJMIHCI: false,
+            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for JCHCGFMGBAK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCHCGFMGBAK.proto\x1a\x11JBIHOCIOANH.proto\x1a\x11JFGFLGBLCAJ.prot\
-    o\"\xb1\x01\n\x0bJCHCGFMGBAK\x12.\n\x0bBJABJJMMOJK\x18\r\x20\x03(\x0b2\
-    \x0c.JFGFLGBLCAJR\x0bBJABJJMMOJK\x12.\n\x0bELDOLKCAKAE\x18\x07\x20\x03(\
-    \x0b2\x0c.JBIHOCIOANHR\x0bELDOLKCAKAE\x12\x20\n\x0bJFCNAJMIHCI\x18\n\x20\
-    \x01(\x08R\x0bJFCNAJMIHCI\x12\x20\n\x0bNMJAIBBLDOC\x18\x08\x20\x01(\rR\
-    \x0bNMJAIBBLDOCb\x06proto3\
+    o\"\xcb\x01\n\x0bJCHCGFMGBAK\x12.\n\x0bELDOLKCAKAE\x18\x06\x20\x03(\x0b2\
+    \x0c.JBIHOCIOANHR\x0bELDOLKCAKAE\x12\x20\n\x0bNMJAIBBLDOC\x18\x07\x20\
+    \x01(\rR\x0bNMJAIBBLDOC\x12\x20\n\x0bJFCNAJMIHCI\x18\x0b\x20\x01(\x08R\
+    \x0bJFCNAJMIHCI\x12H\n\x1arogue_magic_unit_info_list\x18\x01\x20\x03(\
+    \x0b2\x0c.JFGFLGBLCAJR\x16rogueMagicUnitInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

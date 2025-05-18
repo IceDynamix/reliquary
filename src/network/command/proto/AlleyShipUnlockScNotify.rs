@@ -72,7 +72,7 @@ impl ::protobuf::Message for AlleyShipUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                112 => {
                     self.EJDFKNMNALE = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for AlleyShipUnlockScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EJDFKNMNALE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EJDFKNMNALE);
+            my_size += ::protobuf::rt::uint32_size(14, self.EJDFKNMNALE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for AlleyShipUnlockScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EJDFKNMNALE != 0 {
-            os.write_uint32(12, self.EJDFKNMNALE)?;
+            os.write_uint32(14, self.EJDFKNMNALE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for AlleyShipUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAlleyShipUnlockScNotify.proto\";\n\x17AlleyShipUnlockScNotify\x12\
-    \x20\n\x0bEJDFKNMNALE\x18\x0c\x20\x01(\rR\x0bEJDFKNMNALEb\x06proto3\
+    \x20\n\x0bEJDFKNMNALE\x18\x0e\x20\x01(\rR\x0bEJDFKNMNALEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

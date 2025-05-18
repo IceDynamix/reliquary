@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CLKNIBOJLGP {
     // message fields
-    // @@protoc_insertion_point(field:CLKNIBOJLGP.CMHNLJJODJF)
-    pub CMHNLJJODJF: ::protobuf::MessageField<super::PCODFCNKHJK::PCODFCNKHJK>,
     // @@protoc_insertion_point(field:CLKNIBOJLGP.quest_list)
     pub quest_list: ::std::vec::Vec<super::ADAFJFOJDEG::ADAFJFOJDEG>,
+    // @@protoc_insertion_point(field:CLKNIBOJLGP.CMHNLJJODJF)
+    pub CMHNLJJODJF: ::protobuf::MessageField<super::PCODFCNKHJK::PCODFCNKHJK>,
     // special fields
     // @@protoc_insertion_point(special_field:CLKNIBOJLGP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CLKNIBOJLGP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PCODFCNKHJK::PCODFCNKHJK>(
-            "CMHNLJJODJF",
-            |m: &CLKNIBOJLGP| { &m.CMHNLJJODJF },
-            |m: &mut CLKNIBOJLGP| { &mut m.CMHNLJJODJF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "quest_list",
             |m: &CLKNIBOJLGP| { &m.quest_list },
             |m: &mut CLKNIBOJLGP| { &mut m.quest_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PCODFCNKHJK::PCODFCNKHJK>(
+            "CMHNLJJODJF",
+            |m: &CLKNIBOJLGP| { &m.CMHNLJJODJF },
+            |m: &mut CLKNIBOJLGP| { &mut m.CMHNLJJODJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CLKNIBOJLGP>(
             "CLKNIBOJLGP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CLKNIBOJLGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMHNLJJODJF)?;
-                },
-                98 => {
+                34 => {
                     self.quest_list.push(is.read_message()?);
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMHNLJJODJF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for CLKNIBOJLGP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CMHNLJJODJF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.quest_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.CMHNLJJODJF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CMHNLJJODJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         for v in &self.quest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if let Some(v) = self.CMHNLJJODJF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for CLKNIBOJLGP {
     }
 
     fn clear(&mut self) {
-        self.CMHNLJJODJF.clear();
         self.quest_list.clear();
+        self.CMHNLJJODJF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CLKNIBOJLGP {
         static instance: CLKNIBOJLGP = CLKNIBOJLGP {
-            CMHNLJJODJF: ::protobuf::MessageField::none(),
             quest_list: ::std::vec::Vec::new(),
+            CMHNLJJODJF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for CLKNIBOJLGP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CLKNIBOJLGP.proto\x1a\x11ADAFJFOJDEG.proto\x1a\x11PCODFCNKHJK.prot\
-    o\"j\n\x0bCLKNIBOJLGP\x12.\n\x0bCMHNLJJODJF\x18\x07\x20\x01(\x0b2\x0c.PC\
-    ODFCNKHJKR\x0bCMHNLJJODJF\x12+\n\nquest_list\x18\x0c\x20\x03(\x0b2\x0c.A\
-    DAFJFOJDEGR\tquestListb\x06proto3\
+    o\"j\n\x0bCLKNIBOJLGP\x12+\n\nquest_list\x18\x04\x20\x03(\x0b2\x0c.ADAFJ\
+    FOJDEGR\tquestList\x12.\n\x0bCMHNLJJODJF\x18\x03\x20\x01(\x0b2\x0c.PCODF\
+    CNKHJKR\x0bCMHNLJJODJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

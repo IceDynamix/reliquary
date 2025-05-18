@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueVirtualItemInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueVirtualItemInfoScNotify.OFOLHKCNLBA)
-    pub OFOLHKCNLBA: ::protobuf::MessageField<super::PBEKDHCLBFB::PBEKDHCLBFB>,
+    // @@protoc_insertion_point(field:SyncRogueVirtualItemInfoScNotify.rogue_virtual_item_info)
+    pub rogue_virtual_item_info: ::protobuf::MessageField<super::PBEKDHCLBFB::PBEKDHCLBFB>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueVirtualItemInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRogueVirtualItemInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBEKDHCLBFB::PBEKDHCLBFB>(
-            "OFOLHKCNLBA",
-            |m: &SyncRogueVirtualItemInfoScNotify| { &m.OFOLHKCNLBA },
-            |m: &mut SyncRogueVirtualItemInfoScNotify| { &mut m.OFOLHKCNLBA },
+            "rogue_virtual_item_info",
+            |m: &SyncRogueVirtualItemInfoScNotify| { &m.rogue_virtual_item_info },
+            |m: &mut SyncRogueVirtualItemInfoScNotify| { &mut m.rogue_virtual_item_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueVirtualItemInfoScNotify>(
             "SyncRogueVirtualItemInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRogueVirtualItemInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OFOLHKCNLBA)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_virtual_item_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRogueVirtualItemInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OFOLHKCNLBA.as_ref() {
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRogueVirtualItemInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OFOLHKCNLBA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRogueVirtualItemInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.OFOLHKCNLBA.clear();
+        self.rogue_virtual_item_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueVirtualItemInfoScNotify {
         static instance: SyncRogueVirtualItemInfoScNotify = SyncRogueVirtualItemInfoScNotify {
-            OFOLHKCNLBA: ::protobuf::MessageField::none(),
+            rogue_virtual_item_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueVirtualItemInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&SyncRogueVirtualItemInfoScNotify.proto\x1a\x11PBEKDHCLBFB.proto\"R\n\
-    \x20SyncRogueVirtualItemInfoScNotify\x12.\n\x0bOFOLHKCNLBA\x18\x0f\x20\
-    \x01(\x0b2\x0c.PBEKDHCLBFBR\x0bOFOLHKCNLBAb\x06proto3\
+    \n&SyncRogueVirtualItemInfoScNotify.proto\x1a\x11PBEKDHCLBFB.proto\"g\n\
+    \x20SyncRogueVirtualItemInfoScNotify\x12C\n\x17rogue_virtual_item_info\
+    \x18\x0b\x20\x01(\x0b2\x0c.PBEKDHCLBFBR\x14rogueVirtualItemInfob\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

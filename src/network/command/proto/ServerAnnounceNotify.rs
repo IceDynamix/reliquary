@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ServerAnnounceNotify {
     // message fields
-    // @@protoc_insertion_point(field:ServerAnnounceNotify.PBEHMEAEIKC)
-    pub PBEHMEAEIKC: ::std::vec::Vec<super::KIPHKHHMFAC::KIPHKHHMFAC>,
+    // @@protoc_insertion_point(field:ServerAnnounceNotify.announce_data_list)
+    pub announce_data_list: ::std::vec::Vec<super::AnnounceData::AnnounceData>,
     // special fields
     // @@protoc_insertion_point(special_field:ServerAnnounceNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ServerAnnounceNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBEHMEAEIKC",
-            |m: &ServerAnnounceNotify| { &m.PBEHMEAEIKC },
-            |m: &mut ServerAnnounceNotify| { &mut m.PBEHMEAEIKC },
+            "announce_data_list",
+            |m: &ServerAnnounceNotify| { &m.announce_data_list },
+            |m: &mut ServerAnnounceNotify| { &mut m.announce_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ServerAnnounceNotify>(
             "ServerAnnounceNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ServerAnnounceNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.PBEHMEAEIKC.push(is.read_message()?);
+                122 => {
+                    self.announce_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ServerAnnounceNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PBEHMEAEIKC {
+        for value in &self.announce_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ServerAnnounceNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PBEHMEAEIKC {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.announce_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ServerAnnounceNotify {
     }
 
     fn clear(&mut self) {
-        self.PBEHMEAEIKC.clear();
+        self.announce_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ServerAnnounceNotify {
         static instance: ServerAnnounceNotify = ServerAnnounceNotify {
-            PBEHMEAEIKC: ::std::vec::Vec::new(),
+            announce_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ServerAnnounceNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aServerAnnounceNotify.proto\x1a\x11KIPHKHHMFAC.proto\"F\n\x14Server\
-    AnnounceNotify\x12.\n\x0bPBEHMEAEIKC\x18\x07\x20\x03(\x0b2\x0c.KIPHKHHMF\
-    ACR\x0bPBEHMEAEIKCb\x06proto3\
+    \n\x1aServerAnnounceNotify.proto\x1a\x12AnnounceData.proto\"S\n\x14Serve\
+    rAnnounceNotify\x12;\n\x12announce_data_list\x18\x0f\x20\x03(\x0b2\r.Ann\
+    ounceDataR\x10announceDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KIPHKHHMFAC::file_descriptor().clone());
+            deps.push(super::AnnounceData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ServerAnnounceNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

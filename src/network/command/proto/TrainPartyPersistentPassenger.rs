@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPersistentPassenger {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPersistentPassenger.passenger_persistent_data_list)
-    pub passenger_persistent_data_list: ::std::vec::Vec<super::TrainPartyPassengerPersistentData::TrainPartyPassengerPersistentData>,
     // @@protoc_insertion_point(field:TrainPartyPersistentPassenger.diary_data_list)
     pub diary_data_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyPersistentPassenger.passenger_persistent_data_list)
+    pub passenger_persistent_data_list: ::std::vec::Vec<super::TrainPartyPassengerPersistentData::TrainPartyPassengerPersistentData>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyPersistentPassenger.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainPartyPersistentPassenger {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "passenger_persistent_data_list",
-            |m: &TrainPartyPersistentPassenger| { &m.passenger_persistent_data_list },
-            |m: &mut TrainPartyPersistentPassenger| { &mut m.passenger_persistent_data_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "diary_data_list",
             |m: &TrainPartyPersistentPassenger| { &m.diary_data_list },
             |m: &mut TrainPartyPersistentPassenger| { &mut m.diary_data_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "passenger_persistent_data_list",
+            |m: &TrainPartyPersistentPassenger| { &m.passenger_persistent_data_list },
+            |m: &mut TrainPartyPersistentPassenger| { &mut m.passenger_persistent_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyPersistentPassenger>(
             "TrainPartyPersistentPassenger",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for TrainPartyPersistentPassenger {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.passenger_persistent_data_list.push(is.read_message()?);
-                },
-                42 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.diary_data_list)?;
                 },
-                40 => {
+                48 => {
                     self.diary_data_list.push(is.read_uint32()?);
+                },
+                114 => {
+                    self.passenger_persistent_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for TrainPartyPersistentPassenger {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.diary_data_list);
         for value in &self.passenger_persistent_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.diary_data_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(6, &self.diary_data_list)?;
         for v in &self.passenger_persistent_data_list {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.diary_data_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrainPartyPersistentPassenger {
     }
 
     fn clear(&mut self) {
-        self.passenger_persistent_data_list.clear();
         self.diary_data_list.clear();
+        self.passenger_persistent_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPersistentPassenger {
         static instance: TrainPartyPersistentPassenger = TrainPartyPersistentPassenger {
-            passenger_persistent_data_list: ::std::vec::Vec::new(),
             diary_data_list: ::std::vec::Vec::new(),
+            passenger_persistent_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPersistentPassenger {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#TrainPartyPersistentPassenger.proto\x1a'TrainPartyPassengerPersistent\
-    Data.proto\"\xb0\x01\n\x1dTrainPartyPersistentPassenger\x12g\n\x1epassen\
-    ger_persistent_data_list\x18\x0e\x20\x03(\x0b2\".TrainPartyPassengerPers\
-    istentDataR\x1bpassengerPersistentDataList\x12&\n\x0fdiary_data_list\x18\
-    \x05\x20\x03(\rR\rdiaryDataListb\x06proto3\
+    Data.proto\"\xb0\x01\n\x1dTrainPartyPersistentPassenger\x12&\n\x0fdiary_\
+    data_list\x18\x06\x20\x03(\rR\rdiaryDataList\x12g\n\x1epassenger_persist\
+    ent_data_list\x18\x0e\x20\x03(\x0b2\".TrainPartyPassengerPersistentDataR\
+    \x1bpassengerPersistentDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SetAetherDivideLineUpCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetAetherDivideLineUpCsReq.lineup)
-    pub lineup: ::protobuf::MessageField<super::JHJLEPEFADF::JHJLEPEFADF>,
+    pub lineup: ::protobuf::MessageField<super::AetherDivideLineupInfo::AetherDivideLineupInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SetAetherDivideLineUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl SetAetherDivideLineUpCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JHJLEPEFADF::JHJLEPEFADF>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AetherDivideLineupInfo::AetherDivideLineupInfo>(
             "lineup",
             |m: &SetAetherDivideLineUpCsReq| { &m.lineup },
             |m: &mut SetAetherDivideLineUpCsReq| { &mut m.lineup },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetAetherDivideLineUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetAetherDivideLineUpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SetAetherDivideLineUpCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20SetAetherDivideLineUpCsReq.proto\x1a\x11JHJLEPEFADF.proto\"B\n\x1a\
-    SetAetherDivideLineUpCsReq\x12$\n\x06lineup\x18\x08\x20\x01(\x0b2\x0c.JH\
-    JLEPEFADFR\x06lineupb\x06proto3\
+    \n\x20SetAetherDivideLineUpCsReq.proto\x1a\x1cAetherDivideLineupInfo.pro\
+    to\"M\n\x1aSetAetherDivideLineUpCsReq\x12/\n\x06lineup\x18\r\x20\x01(\
+    \x0b2\x17.AetherDivideLineupInfoR\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JHJLEPEFADF::file_descriptor().clone());
+            deps.push(super::AetherDivideLineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetAetherDivideLineUpCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

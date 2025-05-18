@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateActionPointScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.LJFFCNBPJDD)
-    pub LJFFCNBPJDD: i32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateActionPointScNotify.action_point)
+    pub action_point: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateActionPointScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChessRogueUpdateActionPointScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJFFCNBPJDD",
-            |m: &ChessRogueUpdateActionPointScNotify| { &m.LJFFCNBPJDD },
-            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.LJFFCNBPJDD },
+            "action_point",
+            |m: &ChessRogueUpdateActionPointScNotify| { &m.action_point },
+            |m: &mut ChessRogueUpdateActionPointScNotify| { &mut m.action_point },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateActionPointScNotify>(
             "ChessRogueUpdateActionPointScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.LJFFCNBPJDD = is.read_int32()?;
+                40 => {
+                    self.action_point = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJFFCNBPJDD != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.LJFFCNBPJDD);
+        if self.action_point != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.action_point);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJFFCNBPJDD != 0 {
-            os.write_int32(11, self.LJFFCNBPJDD)?;
+        if self.action_point != 0 {
+            os.write_int32(5, self.action_point)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     }
 
     fn clear(&mut self) {
-        self.LJFFCNBPJDD = 0;
+        self.action_point = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateActionPointScNotify {
         static instance: ChessRogueUpdateActionPointScNotify = ChessRogueUpdateActionPointScNotify {
-            LJFFCNBPJDD: 0,
+            action_point: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateActionPointScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)ChessRogueUpdateActionPointScNotify.proto\"G\n#ChessRogueUpdateAction\
-    PointScNotify\x12\x20\n\x0bLJFFCNBPJDD\x18\x0b\x20\x01(\x05R\x0bLJFFCNBP\
-    JDDb\x06proto3\
+    \n)ChessRogueUpdateActionPointScNotify.proto\"H\n#ChessRogueUpdateAction\
+    PointScNotify\x12!\n\x0caction_point\x18\x05\x20\x01(\x05R\x0bactionPoin\
+    tb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPILGJEPAGJ {
     // message fields
-    // @@protoc_insertion_point(field:LPILGJEPAGJ.JIFKHCKPNFM)
-    pub JIFKHCKPNFM: u32,
-    // @@protoc_insertion_point(field:LPILGJEPAGJ.operation_item_cost_list)
-    pub operation_item_cost_list: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
+    // @@protoc_insertion_point(field:LPILGJEPAGJ.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:LPILGJEPAGJ.DMMAMJGNGNN)
     pub DMMAMJGNGNN: i32,
+    // @@protoc_insertion_point(field:LPILGJEPAGJ.JIFKHCKPNFM)
+    pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:LPILGJEPAGJ.NFNICIPMJII)
     pub NFNICIPMJII: ::std::collections::HashMap<u32, bool>,
     // special fields
@@ -55,20 +55,20 @@ impl LPILGJEPAGJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &LPILGJEPAGJ| { &m.JIFKHCKPNFM },
-            |m: &mut LPILGJEPAGJ| { &mut m.JIFKHCKPNFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "operation_item_cost_list",
-            |m: &LPILGJEPAGJ| { &m.operation_item_cost_list },
-            |m: &mut LPILGJEPAGJ| { &mut m.operation_item_cost_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &LPILGJEPAGJ| { &m.cost_data },
+            |m: &mut LPILGJEPAGJ| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMMAMJGNGNN",
             |m: &LPILGJEPAGJ| { &m.DMMAMJGNGNN },
             |m: &mut LPILGJEPAGJ| { &mut m.DMMAMJGNGNN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIFKHCKPNFM",
+            |m: &LPILGJEPAGJ| { &m.JIFKHCKPNFM },
+            |m: &mut LPILGJEPAGJ| { &mut m.JIFKHCKPNFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "NFNICIPMJII",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.operation_item_cost_list)?;
-                },
-                8 => {
+                40 => {
                     self.DMMAMJGNGNN = is.read_int32()?;
                 },
-                26 => {
+                112 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
+                },
+                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -129,15 +129,15 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JIFKHCKPNFM);
-        }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
+        if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.DMMAMJGNGNN);
+            my_size += ::protobuf::rt::int32_size(5, self.DMMAMJGNGNN);
+        }
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JIFKHCKPNFM);
         }
         for (k, v) in &self.NFNICIPMJII {
             let mut entry_size = 0;
@@ -151,20 +151,20 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(15, self.JIFKHCKPNFM)?;
-        }
-        if let Some(v) = self.operation_item_cost_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.DMMAMJGNGNN != 0 {
-            os.write_int32(1, self.DMMAMJGNGNN)?;
+            os.write_int32(5, self.DMMAMJGNGNN)?;
+        }
+        if self.JIFKHCKPNFM != 0 {
+            os.write_uint32(14, self.JIFKHCKPNFM)?;
         }
         for (k, v) in &self.NFNICIPMJII {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(26)?; // Tag.
+            os.write_raw_varint32(82)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
@@ -186,9 +186,9 @@ impl ::protobuf::Message for LPILGJEPAGJ {
     }
 
     fn clear(&mut self) {
-        self.JIFKHCKPNFM = 0;
-        self.operation_item_cost_list.clear();
+        self.cost_data.clear();
         self.DMMAMJGNGNN = 0;
+        self.JIFKHCKPNFM = 0;
         self.NFNICIPMJII.clear();
         self.special_fields.clear();
     }
@@ -217,14 +217,13 @@ impl ::protobuf::reflect::ProtobufValue for LPILGJEPAGJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LPILGJEPAGJ.proto\x1a\x12ItemCostList.proto\"\x9a\x02\n\x0bLPILGJE\
-    PAGJ\x12\x20\n\x0bJIFKHCKPNFM\x18\x0f\x20\x01(\rR\x0bJIFKHCKPNFM\x12F\n\
-    \x18operation_item_cost_list\x18\x0b\x20\x01(\x0b2\r.ItemCostListR\x15op\
-    erationItemCostList\x12\x20\n\x0bDMMAMJGNGNN\x18\x01\x20\x01(\x05R\x0bDM\
-    MAMJGNGNN\x12?\n\x0bNFNICIPMJII\x18\x03\x20\x03(\x0b2\x1d.LPILGJEPAGJ.NF\
-    NICIPMJIIEntryR\x0bNFNICIPMJII\x1a>\n\x10NFNICIPMJIIEntry\x12\x10\n\x03k\
-    ey\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\
-    \x05value:\x028\x01b\x06proto3\
+    \n\x11LPILGJEPAGJ.proto\x1a\x12ItemCostData.proto\"\xfe\x01\n\x0bLPILGJE\
+    PAGJ\x12*\n\tcost_data\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x08costData\
+    \x12\x20\n\x0bDMMAMJGNGNN\x18\x05\x20\x01(\x05R\x0bDMMAMJGNGNN\x12\x20\n\
+    \x0bJIFKHCKPNFM\x18\x0e\x20\x01(\rR\x0bJIFKHCKPNFM\x12?\n\x0bNFNICIPMJII\
+    \x18\n\x20\x03(\x0b2\x1d.LPILGJEPAGJ.NFNICIPMJIIEntryR\x0bNFNICIPMJII\
+    \x1a>\n\x10NFNICIPMJIIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +241,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LPILGJEPAGJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

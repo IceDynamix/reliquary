@@ -30,8 +30,8 @@ pub struct NCBIMLPODON {
     // message fields
     // @@protoc_insertion_point(field:NCBIMLPODON.IAHOPFNPFLN)
     pub IAHOPFNPFLN: bool,
-    // @@protoc_insertion_point(field:NCBIMLPODON.PELMGOPEHKN)
-    pub PELMGOPEHKN: ::protobuf::MessageField<super::MENPBGGOGMC::MENPBGGOGMC>,
+    // @@protoc_insertion_point(field:NCBIMLPODON.black_list)
+    pub black_list: ::protobuf::MessageField<super::MENPBGGOGMC::MENPBGGOGMC>,
     // special fields
     // @@protoc_insertion_point(special_field:NCBIMLPODON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl NCBIMLPODON {
             |m: &mut NCBIMLPODON| { &mut m.IAHOPFNPFLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MENPBGGOGMC::MENPBGGOGMC>(
-            "PELMGOPEHKN",
-            |m: &NCBIMLPODON| { &m.PELMGOPEHKN },
-            |m: &mut NCBIMLPODON| { &mut m.PELMGOPEHKN },
+            "black_list",
+            |m: &NCBIMLPODON| { &m.black_list },
+            |m: &mut NCBIMLPODON| { &mut m.black_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NCBIMLPODON>(
             "NCBIMLPODON",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NCBIMLPODON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.IAHOPFNPFLN = is.read_bool()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PELMGOPEHKN)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for NCBIMLPODON {
         if self.IAHOPFNPFLN != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.PELMGOPEHKN.as_ref() {
+        if let Some(v) = self.black_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for NCBIMLPODON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IAHOPFNPFLN != false {
-            os.write_bool(14, self.IAHOPFNPFLN)?;
+            os.write_bool(1, self.IAHOPFNPFLN)?;
         }
-        if let Some(v) = self.PELMGOPEHKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.black_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for NCBIMLPODON {
 
     fn clear(&mut self) {
         self.IAHOPFNPFLN = false;
-        self.PELMGOPEHKN.clear();
+        self.black_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NCBIMLPODON {
         static instance: NCBIMLPODON = NCBIMLPODON {
             IAHOPFNPFLN: false,
-            PELMGOPEHKN: ::protobuf::MessageField::none(),
+            black_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for NCBIMLPODON {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NCBIMLPODON.proto\x1a\x11MENPBGGOGMC.proto\"_\n\x0bNCBIMLPODON\x12\
-    \x20\n\x0bIAHOPFNPFLN\x18\x0e\x20\x01(\x08R\x0bIAHOPFNPFLN\x12.\n\x0bPEL\
-    MGOPEHKN\x18\t\x20\x01(\x0b2\x0c.MENPBGGOGMCR\x0bPELMGOPEHKNb\x06proto3\
+    \n\x11NCBIMLPODON.proto\x1a\x11MENPBGGOGMC.proto\"\\\n\x0bNCBIMLPODON\
+    \x12\x20\n\x0bIAHOPFNPFLN\x18\x01\x20\x01(\x08R\x0bIAHOPFNPFLN\x12+\n\nb\
+    lack_list\x18\x06\x20\x01(\x0b2\x0c.MENPBGGOGMCR\tblackListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct ChessRogueNousEditDiceScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueNousEditDiceScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueNousEditDiceScRsp.BBCPOEBNANC)
-    pub BBCPOEBNANC: ::protobuf::MessageField<super::KJEHFKBJPHD::KJEHFKBJPHD>,
+    // @@protoc_insertion_point(field:ChessRogueNousEditDiceScRsp.query_dice_info)
+    pub query_dice_info: ::protobuf::MessageField<super::ChessRogueDice::ChessRogueDice>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousEditDiceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl ChessRogueNousEditDiceScRsp {
             |m: &ChessRogueNousEditDiceScRsp| { &m.retcode },
             |m: &mut ChessRogueNousEditDiceScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJEHFKBJPHD::KJEHFKBJPHD>(
-            "BBCPOEBNANC",
-            |m: &ChessRogueNousEditDiceScRsp| { &m.BBCPOEBNANC },
-            |m: &mut ChessRogueNousEditDiceScRsp| { &mut m.BBCPOEBNANC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDice::ChessRogueDice>(
+            "query_dice_info",
+            |m: &ChessRogueNousEditDiceScRsp| { &m.query_dice_info },
+            |m: &mut ChessRogueNousEditDiceScRsp| { &mut m.query_dice_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousEditDiceScRsp>(
             "ChessRogueNousEditDiceScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueNousEditDiceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBCPOEBNANC)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.query_dice_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for ChessRogueNousEditDiceScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.BBCPOEBNANC.as_ref() {
+        if let Some(v) = self.query_dice_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChessRogueNousEditDiceScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.BBCPOEBNANC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.query_dice_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ChessRogueNousEditDiceScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BBCPOEBNANC.clear();
+        self.query_dice_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousEditDiceScRsp {
         static instance: ChessRogueNousEditDiceScRsp = ChessRogueNousEditDiceScRsp {
             retcode: 0,
-            BBCPOEBNANC: ::protobuf::MessageField::none(),
+            query_dice_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousEditDiceScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ChessRogueNousEditDiceScRsp.proto\x1a\x11KJEHFKBJPHD.proto\"g\n\x1bCh\
-    essRogueNousEditDiceScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bBBCPOEBNANC\x18\x0e\x20\x01(\x0b2\x0c.KJEHFKBJPHDR\x0bBBCP\
-    OEBNANCb\x06proto3\
+    \n!ChessRogueNousEditDiceScRsp.proto\x1a\x14ChessRogueDice.proto\"p\n\
+    \x1bChessRogueNousEditDiceScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
+    \x07retcode\x127\n\x0fquery_dice_info\x18\n\x20\x01(\x0b2\x0f.ChessRogue\
+    DiceR\rqueryDiceInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KJEHFKBJPHD::file_descriptor().clone());
+            deps.push(super::ChessRogueDice::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueNousEditDiceScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

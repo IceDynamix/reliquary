@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHEPDKKHFCF {
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<fhepdkkhfcf::KFELKJLDKEH>,
+    pub EOAGKLJNDJM: ::std::option::Option<fhepdkkhfcf::EOAGKLJNDJM>,
     // special fields
     // @@protoc_insertion_point(special_field:FHEPDKKHFCF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl FHEPDKKHFCF {
         ::std::default::Default::default()
     }
 
-    // .CKJCFDJKDFG LACHNCFKAKO = 9;
+    // .CKJCFDJKDFG LACHNCFKAKO = 5;
 
     pub fn LACHNCFKAKO(&self) -> &super::CKJCFDJKDFG::CKJCFDJKDFG {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(ref v)) => v,
+        match self.EOAGKLJNDJM {
+            ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(ref v)) => v,
             _ => <super::CKJCFDJKDFG::CKJCFDJKDFG as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_LACHNCFKAKO(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EOAGKLJNDJM = ::std::option::Option::None;
     }
 
     pub fn has_LACHNCFKAKO(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(..)) => true,
+        match self.EOAGKLJNDJM {
+            ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_LACHNCFKAKO(&mut self, v: super::CKJCFDJKDFG::CKJCFDJKDFG) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(v))
+        self.EOAGKLJNDJM = ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_LACHNCFKAKO(&mut self) -> &mut super::CKJCFDJKDFG::CKJCFDJKDFG {
-        if let ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(_)) = self.EOAGKLJNDJM {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(super::CKJCFDJKDFG::CKJCFDJKDFG::new()));
+            self.EOAGKLJNDJM = ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(super::CKJCFDJKDFG::CKJCFDJKDFG::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(ref mut v)) => v,
+        match self.EOAGKLJNDJM {
+            ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl FHEPDKKHFCF {
     // Take field
     pub fn take_LACHNCFKAKO(&mut self) -> super::CKJCFDJKDFG::CKJCFDJKDFG {
         if self.has_LACHNCFKAKO() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(v)) => v,
+            match self.EOAGKLJNDJM.take() {
+                ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -104,7 +104,7 @@ impl FHEPDKKHFCF {
             FHEPDKKHFCF::mut_LACHNCFKAKO,
             FHEPDKKHFCF::set_LACHNCFKAKO,
         ));
-        oneofs.push(fhepdkkhfcf::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(fhepdkkhfcf::EOAGKLJNDJM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHEPDKKHFCF>(
             "FHEPDKKHFCF",
             fields,
@@ -123,8 +123,8 @@ impl ::protobuf::Message for FHEPDKKHFCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(is.read_message()?));
+                42 => {
+                    self.EOAGKLJNDJM = ::std::option::Option::Some(fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,9 +138,9 @@ impl ::protobuf::Message for FHEPDKKHFCF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.EOAGKLJNDJM {
             match v {
-                &fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(ref v) => {
+                &fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -152,10 +152,10 @@ impl ::protobuf::Message for FHEPDKKHFCF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.EOAGKLJNDJM {
             match v {
-                &fhepdkkhfcf::KFELKJLDKEH::LACHNCFKAKO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                &fhepdkkhfcf::EOAGKLJNDJM::LACHNCFKAKO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -176,13 +176,13 @@ impl ::protobuf::Message for FHEPDKKHFCF {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.EOAGKLJNDJM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHEPDKKHFCF {
         static instance: FHEPDKKHFCF = FHEPDKKHFCF {
-            KFELKJLDKEH: ::std::option::Option::None,
+            EOAGKLJNDJM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -211,33 +211,33 @@ pub mod fhepdkkhfcf {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:FHEPDKKHFCF.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:FHEPDKKHFCF.EOAGKLJNDJM)
+    pub enum EOAGKLJNDJM {
         // @@protoc_insertion_point(oneof_field:FHEPDKKHFCF.LACHNCFKAKO)
         LACHNCFKAKO(super::super::CKJCFDJKDFG::CKJCFDJKDFG),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for EOAGKLJNDJM {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for EOAGKLJNDJM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::FHEPDKKHFCF as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::FHEPDKKHFCF as ::protobuf::MessageFull>::descriptor().oneof_by_name("EOAGKLJNDJM").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl EOAGKLJNDJM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<EOAGKLJNDJM>("EOAGKLJNDJM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHEPDKKHFCF.proto\x1a\x11CKJCFDJKDFG.proto\"N\n\x0bFHEPDKKHFCF\x12\
-    0\n\x0bLACHNCFKAKO\x18\t\x20\x01(\x0b2\x0c.CKJCFDJKDFGH\0R\x0bLACHNCFKAK\
-    OB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    0\n\x0bLACHNCFKAKO\x18\x05\x20\x01(\x0b2\x0c.CKJCFDJKDFGH\0R\x0bLACHNCFK\
+    AKOB\r\n\x0bEOAGKLJNDJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

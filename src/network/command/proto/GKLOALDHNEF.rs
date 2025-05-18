@@ -32,12 +32,12 @@ pub struct GKLOALDHNEF {
     pub item_id: u32,
     // @@protoc_insertion_point(field:GKLOALDHNEF.JOJAHIAFNLK)
     pub JOJAHIAFNLK: u32,
-    // @@protoc_insertion_point(field:GKLOALDHNEF.FALBKIMMPIH)
-    pub FALBKIMMPIH: i32,
-    // @@protoc_insertion_point(field:GKLOALDHNEF.JPHEDNECAGD)
-    pub JPHEDNECAGD: i32,
     // @@protoc_insertion_point(field:GKLOALDHNEF.total_damage)
     pub total_damage: i32,
+    // @@protoc_insertion_point(field:GKLOALDHNEF.JPHEDNECAGD)
+    pub JPHEDNECAGD: i32,
+    // @@protoc_insertion_point(field:GKLOALDHNEF.FALBKIMMPIH)
+    pub FALBKIMMPIH: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GKLOALDHNEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,9 +68,9 @@ impl GKLOALDHNEF {
             |m: &mut GKLOALDHNEF| { &mut m.JOJAHIAFNLK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FALBKIMMPIH",
-            |m: &GKLOALDHNEF| { &m.FALBKIMMPIH },
-            |m: &mut GKLOALDHNEF| { &mut m.FALBKIMMPIH },
+            "total_damage",
+            |m: &GKLOALDHNEF| { &m.total_damage },
+            |m: &mut GKLOALDHNEF| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JPHEDNECAGD",
@@ -78,9 +78,9 @@ impl GKLOALDHNEF {
             |m: &mut GKLOALDHNEF| { &mut m.JPHEDNECAGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &GKLOALDHNEF| { &m.total_damage },
-            |m: &mut GKLOALDHNEF| { &mut m.total_damage },
+            "FALBKIMMPIH",
+            |m: &GKLOALDHNEF| { &m.FALBKIMMPIH },
+            |m: &mut GKLOALDHNEF| { &mut m.FALBKIMMPIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKLOALDHNEF>(
             "GKLOALDHNEF",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for GKLOALDHNEF {
                 48 => {
                     self.item_id = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
                     self.JOJAHIAFNLK = is.read_uint32()?;
                 },
-                64 => {
-                    self.FALBKIMMPIH = is.read_int32()?;
+                72 => {
+                    self.total_damage = is.read_int32()?;
                 },
-                56 => {
+                88 => {
                     self.JPHEDNECAGD = is.read_int32()?;
                 },
                 8 => {
-                    self.total_damage = is.read_int32()?;
+                    self.FALBKIMMPIH = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,16 +131,16 @@ impl ::protobuf::Message for GKLOALDHNEF {
             my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         if self.JOJAHIAFNLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JOJAHIAFNLK);
-        }
-        if self.FALBKIMMPIH != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.FALBKIMMPIH);
-        }
-        if self.JPHEDNECAGD != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.JPHEDNECAGD);
+            my_size += ::protobuf::rt::uint32_size(2, self.JOJAHIAFNLK);
         }
         if self.total_damage != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.total_damage);
+            my_size += ::protobuf::rt::int32_size(9, self.total_damage);
+        }
+        if self.JPHEDNECAGD != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.JPHEDNECAGD);
+        }
+        if self.FALBKIMMPIH != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.FALBKIMMPIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,16 +152,16 @@ impl ::protobuf::Message for GKLOALDHNEF {
             os.write_uint32(6, self.item_id)?;
         }
         if self.JOJAHIAFNLK != 0 {
-            os.write_uint32(11, self.JOJAHIAFNLK)?;
-        }
-        if self.FALBKIMMPIH != 0 {
-            os.write_int32(8, self.FALBKIMMPIH)?;
-        }
-        if self.JPHEDNECAGD != 0 {
-            os.write_int32(7, self.JPHEDNECAGD)?;
+            os.write_uint32(2, self.JOJAHIAFNLK)?;
         }
         if self.total_damage != 0 {
-            os.write_int32(1, self.total_damage)?;
+            os.write_int32(9, self.total_damage)?;
+        }
+        if self.JPHEDNECAGD != 0 {
+            os.write_int32(11, self.JPHEDNECAGD)?;
+        }
+        if self.FALBKIMMPIH != 0 {
+            os.write_int32(1, self.FALBKIMMPIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::Message for GKLOALDHNEF {
     fn clear(&mut self) {
         self.item_id = 0;
         self.JOJAHIAFNLK = 0;
-        self.FALBKIMMPIH = 0;
-        self.JPHEDNECAGD = 0;
         self.total_damage = 0;
+        self.JPHEDNECAGD = 0;
+        self.FALBKIMMPIH = 0;
         self.special_fields.clear();
     }
 
@@ -192,9 +192,9 @@ impl ::protobuf::Message for GKLOALDHNEF {
         static instance: GKLOALDHNEF = GKLOALDHNEF {
             item_id: 0,
             JOJAHIAFNLK: 0,
-            FALBKIMMPIH: 0,
-            JPHEDNECAGD: 0,
             total_damage: 0,
+            JPHEDNECAGD: 0,
+            FALBKIMMPIH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for GKLOALDHNEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKLOALDHNEF.proto\"\xaf\x01\n\x0bGKLOALDHNEF\x12\x17\n\x07item_id\
-    \x18\x06\x20\x01(\rR\x06itemId\x12\x20\n\x0bJOJAHIAFNLK\x18\x0b\x20\x01(\
-    \rR\x0bJOJAHIAFNLK\x12\x20\n\x0bFALBKIMMPIH\x18\x08\x20\x01(\x05R\x0bFAL\
-    BKIMMPIH\x12\x20\n\x0bJPHEDNECAGD\x18\x07\x20\x01(\x05R\x0bJPHEDNECAGD\
-    \x12!\n\x0ctotal_damage\x18\x01\x20\x01(\x05R\x0btotalDamageb\x06proto3\
+    \x18\x06\x20\x01(\rR\x06itemId\x12\x20\n\x0bJOJAHIAFNLK\x18\x02\x20\x01(\
+    \rR\x0bJOJAHIAFNLK\x12!\n\x0ctotal_damage\x18\t\x20\x01(\x05R\x0btotalDa\
+    mage\x12\x20\n\x0bJPHEDNECAGD\x18\x0b\x20\x01(\x05R\x0bJPHEDNECAGD\x12\
+    \x20\n\x0bFALBKIMMPIH\x18\x01\x20\x01(\x05R\x0bFALBKIMMPIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

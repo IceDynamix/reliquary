@@ -86,13 +86,13 @@ impl ::protobuf::Message for JCDNMBCKPLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                80 => {
                     self.id = is.read_uint32()?;
                 },
-                120 => {
+                8 => {
                     self.KCMJKGADPIP = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                56 => {
                     self.HHMABJDIMGM = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for JCDNMBCKPLF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+            my_size += ::protobuf::rt::uint32_size(10, self.id);
         }
         if self.KCMJKGADPIP != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DIFFICULTY_AJUSTMENT_TYPE_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(15, self.KCMJKGADPIP.value());
+            my_size += ::protobuf::rt::int32_size(1, self.KCMJKGADPIP.value());
         }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::GIILENMKCAH::GIILENMKCAH::DIFFICULTY_AJUSTMENT_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.HHMABJDIMGM.value());
+            my_size += ::protobuf::rt::int32_size(7, self.HHMABJDIMGM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for JCDNMBCKPLF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+            os.write_uint32(10, self.id)?;
         }
         if self.KCMJKGADPIP != ::protobuf::EnumOrUnknown::new(super::DifficultyAdjustmentType::DifficultyAdjustmentType::DIFFICULTY_AJUSTMENT_TYPE_DEFAULT) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.KCMJKGADPIP))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.KCMJKGADPIP))?;
         }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::GIILENMKCAH::GIILENMKCAH::DIFFICULTY_AJUSTMENT_SOURCE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for JCDNMBCKPLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCDNMBCKPLF.proto\x1a\x1eDifficultyAdjustmentType.proto\x1a\x11GII\
-    LENMKCAH.proto\"\x8a\x01\n\x0bJCDNMBCKPLF\x12\x0e\n\x02id\x18\x04\x20\
-    \x01(\rR\x02id\x12;\n\x0bKCMJKGADPIP\x18\x0f\x20\x01(\x0e2\x19.Difficult\
-    yAdjustmentTypeR\x0bKCMJKGADPIP\x12.\n\x0bHHMABJDIMGM\x18\x05\x20\x01(\
-    \x0e2\x0c.GIILENMKCAHR\x0bHHMABJDIMGMb\x06proto3\
+    LENMKCAH.proto\"\x8a\x01\n\x0bJCDNMBCKPLF\x12\x0e\n\x02id\x18\n\x20\x01(\
+    \rR\x02id\x12;\n\x0bKCMJKGADPIP\x18\x01\x20\x01(\x0e2\x19.DifficultyAdju\
+    stmentTypeR\x0bKCMJKGADPIP\x12.\n\x0bHHMABJDIMGM\x18\x07\x20\x01(\x0e2\
+    \x0c.GIILENMKCAHR\x0bHHMABJDIMGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

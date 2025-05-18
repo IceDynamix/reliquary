@@ -32,10 +32,10 @@ pub struct HFPFFJIMCKM {
     pub BDNFLICNFHN: bool,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.OPCLDNLLNFH)
     pub OPCLDNLLNFH: ::std::vec::Vec<super::Vector::Vector>,
-    // @@protoc_insertion_point(field:HFPFFJIMCKM.motion)
-    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.LKJMLIDAODM)
     pub LKJMLIDAODM: u32,
+    // @@protoc_insertion_point(field:HFPFFJIMCKM.motion)
+    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HFPFFJIMCKM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl HFPFFJIMCKM {
             |m: &HFPFFJIMCKM| { &m.OPCLDNLLNFH },
             |m: &mut HFPFFJIMCKM| { &mut m.OPCLDNLLNFH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &HFPFFJIMCKM| { &m.motion },
-            |m: &mut HFPFFJIMCKM| { &mut m.motion },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKJMLIDAODM",
             |m: &HFPFFJIMCKM| { &m.LKJMLIDAODM },
             |m: &mut HFPFFJIMCKM| { &mut m.LKJMLIDAODM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &HFPFFJIMCKM| { &m.motion },
+            |m: &mut HFPFFJIMCKM| { &mut m.motion },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFPFFJIMCKM>(
             "HFPFFJIMCKM",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.BDNFLICNFHN = is.read_bool()?;
                 },
-                98 => {
+                18 => {
                     self.OPCLDNLLNFH.push(is.read_message()?);
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
-                },
-                104 => {
+                56 => {
                     self.LKJMLIDAODM = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,12 +124,12 @@ impl ::protobuf::Message for HFPFFJIMCKM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.LKJMLIDAODM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LKJMLIDAODM);
+        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LKJMLIDAODM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LKJMLIDAODM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HFPFFJIMCKM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BDNFLICNFHN != false {
-            os.write_bool(5, self.BDNFLICNFHN)?;
+            os.write_bool(3, self.BDNFLICNFHN)?;
         }
         for v in &self.OPCLDNLLNFH {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.LKJMLIDAODM != 0 {
-            os.write_uint32(13, self.LKJMLIDAODM)?;
+            os.write_uint32(7, self.LKJMLIDAODM)?;
+        }
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     fn clear(&mut self) {
         self.BDNFLICNFHN = false;
         self.OPCLDNLLNFH.clear();
-        self.motion.clear();
         self.LKJMLIDAODM = 0;
+        self.motion.clear();
         self.special_fields.clear();
     }
 
@@ -177,8 +177,8 @@ impl ::protobuf::Message for HFPFFJIMCKM {
         static instance: HFPFFJIMCKM = HFPFFJIMCKM {
             BDNFLICNFHN: false,
             OPCLDNLLNFH: ::std::vec::Vec::new(),
-            motion: ::protobuf::MessageField::none(),
             LKJMLIDAODM: 0,
+            motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for HFPFFJIMCKM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFPFFJIMCKM.proto\x1a\x10MotionInfo.proto\x1a\x0cVector.proto\"\
-    \xa1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bBDNFLICNFHN\x18\x05\x20\x01(\x08R\
-    \x0bBDNFLICNFHN\x12)\n\x0bOPCLDNLLNFH\x18\x0c\x20\x03(\x0b2\x07.VectorR\
-    \x0bOPCLDNLLNFH\x12#\n\x06motion\x18\x07\x20\x01(\x0b2\x0b.MotionInfoR\
-    \x06motion\x12\x20\n\x0bLKJMLIDAODM\x18\r\x20\x01(\rR\x0bLKJMLIDAODMb\
+    \xa1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bBDNFLICNFHN\x18\x03\x20\x01(\x08R\
+    \x0bBDNFLICNFHN\x12)\n\x0bOPCLDNLLNFH\x18\x02\x20\x03(\x0b2\x07.VectorR\
+    \x0bOPCLDNLLNFH\x12\x20\n\x0bLKJMLIDAODM\x18\x07\x20\x01(\rR\x0bLKJMLIDA\
+    ODM\x12#\n\x06motion\x18\x0e\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\
     \x06proto3\
 ";
 

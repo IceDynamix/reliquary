@@ -82,10 +82,10 @@ impl ::protobuf::Message for GachaDecideItemChangeScNotify {
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.loss_info)?;
                 },
-                114 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.farm_stage_gacha_id_list)?;
                 },
-                112 => {
+                16 => {
                     self.farm_stage_gacha_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for GachaDecideItemChangeScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.farm_stage_gacha_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.farm_stage_gacha_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GachaDecideItemChangeScNotify {
         if let Some(v) = self.loss_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.farm_stage_gacha_id_list)?;
+        os.write_repeated_packed_uint32(2, &self.farm_stage_gacha_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GachaDecideItemChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GachaDecideItemChangeScNotify.proto\x1a\x0eLossInfo.proto\"\x7f\n\x1d\
     GachaDecideItemChangeScNotify\x12&\n\tloss_info\x18\x07\x20\x01(\x0b2\t.\
-    LossInfoR\x08lossInfo\x126\n\x18farm_stage_gacha_id_list\x18\x0e\x20\x03\
+    LossInfoR\x08lossInfo\x126\n\x18farm_stage_gacha_id_list\x18\x02\x20\x03\
     (\rR\x14farmStageGachaIdListb\x06proto3\
 ";
 

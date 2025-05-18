@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMailCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.MUSEUM_RANDOM_EVENT_STATE_START = is.read_uint32()?;
                 },
-                120 => {
+                24 => {
                     self.DAPCDNELCMA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetMailCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MUSEUM_RANDOM_EVENT_STATE_START);
+            my_size += ::protobuf::rt::uint32_size(4, self.MUSEUM_RANDOM_EVENT_STATE_START);
         }
         if self.DAPCDNELCMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DAPCDNELCMA);
+            my_size += ::protobuf::rt::uint32_size(3, self.DAPCDNELCMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetMailCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MUSEUM_RANDOM_EVENT_STATE_START != 0 {
-            os.write_uint32(9, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
+            os.write_uint32(4, self.MUSEUM_RANDOM_EVENT_STATE_START)?;
         }
         if self.DAPCDNELCMA != 0 {
-            os.write_uint32(15, self.DAPCDNELCMA)?;
+            os.write_uint32(3, self.DAPCDNELCMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GetMailCsReq.proto\"v\n\x0cGetMailCsReq\x12D\n\x1fMUSEUM_RANDOM_EV\
-    ENT_STATE_START\x18\t\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTART\x12\x20\
-    \n\x0bDAPCDNELCMA\x18\x0f\x20\x01(\rR\x0bDAPCDNELCMAb\x06proto3\
+    ENT_STATE_START\x18\x04\x20\x01(\rR\x1bMUSEUMRANDOMEVENTSTATESTART\x12\
+    \x20\n\x0bDAPCDNELCMA\x18\x03\x20\x01(\rR\x0bDAPCDNELCMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

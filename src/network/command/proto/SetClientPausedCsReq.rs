@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetClientPausedCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.paused = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetClientPausedCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.paused != false {
-            os.write_bool(3, self.paused)?;
+            os.write_bool(1, self.paused)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetClientPausedCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSetClientPausedCsReq.proto\".\n\x14SetClientPausedCsReq\x12\x16\n\
-    \x06paused\x18\x03\x20\x01(\x08R\x06pausedb\x06proto3\
+    \x06paused\x18\x01\x20\x01(\x08R\x06pausedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

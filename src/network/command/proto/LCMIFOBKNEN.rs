@@ -34,8 +34,8 @@ pub struct LCMIFOBKNEN {
     pub rank: u32,
     // @@protoc_insertion_point(field:LCMIFOBKNEN.GNIGOHIAFFI)
     pub GNIGOHIAFFI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LCMIFOBKNEN.score)
-    pub score: u32,
+    // @@protoc_insertion_point(field:LCMIFOBKNEN.score_id)
+    pub score_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LCMIFOBKNEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl LCMIFOBKNEN {
             |m: &mut LCMIFOBKNEN| { &mut m.GNIGOHIAFFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &LCMIFOBKNEN| { &m.score },
-            |m: &mut LCMIFOBKNEN| { &mut m.score },
+            "score_id",
+            |m: &LCMIFOBKNEN| { &m.score_id },
+            |m: &mut LCMIFOBKNEN| { &mut m.score_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LCMIFOBKNEN>(
             "LCMIFOBKNEN",
@@ -106,7 +106,7 @@ impl ::protobuf::Message for LCMIFOBKNEN {
                     self.GNIGOHIAFFI.push(is.read_uint32()?);
                 },
                 32 => {
-                    self.score = is.read_uint32()?;
+                    self.score_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,8 +127,8 @@ impl ::protobuf::Message for LCMIFOBKNEN {
             my_size += ::protobuf::rt::uint32_size(2, self.rank);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.GNIGOHIAFFI);
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -143,8 +143,8 @@ impl ::protobuf::Message for LCMIFOBKNEN {
             os.write_uint32(2, self.rank)?;
         }
         os.write_repeated_packed_uint32(3, &self.GNIGOHIAFFI)?;
-        if self.score != 0 {
-            os.write_uint32(4, self.score)?;
+        if self.score_id != 0 {
+            os.write_uint32(4, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::Message for LCMIFOBKNEN {
         self.MKFDPCCKFNF = 0;
         self.rank = 0;
         self.GNIGOHIAFFI.clear();
-        self.score = 0;
+        self.score_id = 0;
         self.special_fields.clear();
     }
 
@@ -175,7 +175,7 @@ impl ::protobuf::Message for LCMIFOBKNEN {
             MKFDPCCKFNF: 0,
             rank: 0,
             GNIGOHIAFFI: ::std::vec::Vec::new(),
-            score: 0,
+            score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for LCMIFOBKNEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LCMIFOBKNEN.proto\"{\n\x0bLCMIFOBKNEN\x12\x20\n\x0bMKFDPCCKFNF\x18\
-    \x01\x20\x01(\rR\x0bMKFDPCCKFNF\x12\x12\n\x04rank\x18\x02\x20\x01(\rR\
-    \x04rank\x12\x20\n\x0bGNIGOHIAFFI\x18\x03\x20\x03(\rR\x0bGNIGOHIAFFI\x12\
-    \x14\n\x05score\x18\x04\x20\x01(\rR\x05scoreb\x06proto3\
+    \n\x11LCMIFOBKNEN.proto\"\x80\x01\n\x0bLCMIFOBKNEN\x12\x20\n\x0bMKFDPCCK\
+    FNF\x18\x01\x20\x01(\rR\x0bMKFDPCCKFNF\x12\x12\n\x04rank\x18\x02\x20\x01\
+    (\rR\x04rank\x12\x20\n\x0bGNIGOHIAFFI\x18\x03\x20\x03(\rR\x0bGNIGOHIAFFI\
+    \x12\x19\n\x08score_id\x18\x04\x20\x01(\rR\x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for LEFCOMGMPCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                10 => {
                     self.IHGMPJNNMKI.push(is.read_message()?);
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for LEFCOMGMPCL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IHGMPJNNMKI {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.BILBOHBDBPN != 0 {
             os.write_uint32(15, self.BILBOHBDBPN)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for LEFCOMGMPCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEFCOMGMPCL.proto\x1a\x11FFAMNKOAIHF.proto\"_\n\x0bLEFCOMGMPCL\x12\
-    .\n\x0bIHGMPJNNMKI\x18\x07\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\x0bIHGMPJNNMKI\
+    .\n\x0bIHGMPJNNMKI\x18\x01\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\x0bIHGMPJNNMKI\
     \x12\x20\n\x0bBILBOHBDBPN\x18\x0f\x20\x01(\rR\x0bBILBOHBDBPNb\x06proto3\
 ";
 

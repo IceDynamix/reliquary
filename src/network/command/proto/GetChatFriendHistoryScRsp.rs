@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChatFriendHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChatFriendHistoryScRsp.ILIGPOLEEPJ)
-    pub ILIGPOLEEPJ: ::std::vec::Vec<super::ONBGIDNCBOB::ONBGIDNCBOB>,
+    // @@protoc_insertion_point(field:GetChatFriendHistoryScRsp.friend_history_info)
+    pub friend_history_info: ::std::vec::Vec<super::FriendHistoryInfo::FriendHistoryInfo>,
     // @@protoc_insertion_point(field:GetChatFriendHistoryScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetChatFriendHistoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ILIGPOLEEPJ",
-            |m: &GetChatFriendHistoryScRsp| { &m.ILIGPOLEEPJ },
-            |m: &mut GetChatFriendHistoryScRsp| { &mut m.ILIGPOLEEPJ },
+            "friend_history_info",
+            |m: &GetChatFriendHistoryScRsp| { &m.friend_history_info },
+            |m: &mut GetChatFriendHistoryScRsp| { &mut m.friend_history_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for GetChatFriendHistoryScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 74 => {
-                    self.ILIGPOLEEPJ.push(is.read_message()?);
+                    self.friend_history_info.push(is.read_message()?);
                 },
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetChatFriendHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ILIGPOLEEPJ {
+        for value in &self.friend_history_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetChatFriendHistoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ILIGPOLEEPJ {
+        for v in &self.friend_history_info {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetChatFriendHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.ILIGPOLEEPJ.clear();
+        self.friend_history_info.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChatFriendHistoryScRsp {
         static instance: GetChatFriendHistoryScRsp = GetChatFriendHistoryScRsp {
-            ILIGPOLEEPJ: ::std::vec::Vec::new(),
+            friend_history_info: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetChatFriendHistoryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetChatFriendHistoryScRsp.proto\x1a\x11ONBGIDNCBOB.proto\"e\n\x19G\
-    etChatFriendHistoryScRsp\x12.\n\x0bILIGPOLEEPJ\x18\t\x20\x03(\x0b2\x0c.O\
-    NBGIDNCBOBR\x0bILIGPOLEEPJ\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x1fGetChatFriendHistoryScRsp.proto\x1a\x17FriendHistoryInfo.proto\"y\
+    \n\x19GetChatFriendHistoryScRsp\x12B\n\x13friend_history_info\x18\t\x20\
+    \x03(\x0b2\x12.FriendHistoryInfoR\x11friendHistoryInfo\x12\x18\n\x07retc\
+    ode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ONBGIDNCBOB::file_descriptor().clone());
+            deps.push(super::FriendHistoryInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChatFriendHistoryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

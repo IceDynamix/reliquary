@@ -30,12 +30,12 @@ pub struct DiscardRelicCsReq {
     // message fields
     // @@protoc_insertion_point(field:DiscardRelicCsReq.is_discard)
     pub is_discard: bool,
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.NLPCONNJONF)
-    pub NLPCONNJONF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.HNHFDMDIBIO)
     pub HNHFDMDIBIO: u64,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.KGEFHOECMMN)
     pub KGEFHOECMMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.NLPCONNJONF)
+    pub NLPCONNJONF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl DiscardRelicCsReq {
             |m: &mut DiscardRelicCsReq| { &mut m.is_discard },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLPCONNJONF",
-            |m: &DiscardRelicCsReq| { &m.NLPCONNJONF },
-            |m: &mut DiscardRelicCsReq| { &mut m.NLPCONNJONF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HNHFDMDIBIO",
             |m: &DiscardRelicCsReq| { &m.HNHFDMDIBIO },
             |m: &mut DiscardRelicCsReq| { &mut m.HNHFDMDIBIO },
@@ -74,6 +69,11 @@ impl DiscardRelicCsReq {
             "KGEFHOECMMN",
             |m: &DiscardRelicCsReq| { &m.KGEFHOECMMN },
             |m: &mut DiscardRelicCsReq| { &mut m.KGEFHOECMMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLPCONNJONF",
+            |m: &DiscardRelicCsReq| { &m.NLPCONNJONF },
+            |m: &mut DiscardRelicCsReq| { &mut m.NLPCONNJONF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicCsReq>(
             "DiscardRelicCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.is_discard = is.read_bool()?;
                 },
-                96 => {
-                    self.NLPCONNJONF = is.read_enum_or_unknown()?;
-                },
-                24 => {
+                48 => {
                     self.HNHFDMDIBIO = is.read_uint64()?;
                 },
-                74 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
                 },
-                72 => {
+                32 => {
                     self.KGEFHOECMMN.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.NLPCONNJONF = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DiscardRelicCsReq {
         if self.is_discard != false {
             my_size += 1 + 1;
         }
-        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            my_size += ::protobuf::rt::int32_size(12, self.NLPCONNJONF.value());
-        }
         if self.HNHFDMDIBIO != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.HNHFDMDIBIO);
+            my_size += ::protobuf::rt::uint64_size(6, self.HNHFDMDIBIO);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.KGEFHOECMMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.KGEFHOECMMN);
+        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
+            my_size += ::protobuf::rt::int32_size(1, self.NLPCONNJONF.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -137,15 +137,15 @@ impl ::protobuf::Message for DiscardRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_discard != false {
-            os.write_bool(13, self.is_discard)?;
-        }
-        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+            os.write_bool(11, self.is_discard)?;
         }
         if self.HNHFDMDIBIO != 0 {
-            os.write_uint64(3, self.HNHFDMDIBIO)?;
+            os.write_uint64(6, self.HNHFDMDIBIO)?;
         }
-        os.write_repeated_packed_uint32(9, &self.KGEFHOECMMN)?;
+        os.write_repeated_packed_uint32(4, &self.KGEFHOECMMN)?;
+        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,18 +164,18 @@ impl ::protobuf::Message for DiscardRelicCsReq {
 
     fn clear(&mut self) {
         self.is_discard = false;
-        self.NLPCONNJONF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE);
         self.HNHFDMDIBIO = 0;
         self.KGEFHOECMMN.clear();
+        self.NLPCONNJONF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicCsReq {
         static instance: DiscardRelicCsReq = DiscardRelicCsReq {
             is_discard: false,
-            NLPCONNJONF: ::protobuf::EnumOrUnknown::from_i32(0),
             HNHFDMDIBIO: 0,
             KGEFHOECMMN: ::std::vec::Vec::new(),
+            NLPCONNJONF: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicCsReq.proto\x1a\x16RelicDiscardType.proto\"\xab\x01\n\
-    \x11DiscardRelicCsReq\x12\x1d\n\nis_discard\x18\r\x20\x01(\x08R\tisDisca\
-    rd\x123\n\x0bNLPCONNJONF\x18\x0c\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0b\
-    NLPCONNJONF\x12\x20\n\x0bHNHFDMDIBIO\x18\x03\x20\x01(\x04R\x0bHNHFDMDIBI\
-    O\x12\x20\n\x0bKGEFHOECMMN\x18\t\x20\x03(\rR\x0bKGEFHOECMMNb\x06proto3\
+    \x11DiscardRelicCsReq\x12\x1d\n\nis_discard\x18\x0b\x20\x01(\x08R\tisDis\
+    card\x12\x20\n\x0bHNHFDMDIBIO\x18\x06\x20\x01(\x04R\x0bHNHFDMDIBIO\x12\
+    \x20\n\x0bKGEFHOECMMN\x18\x04\x20\x03(\rR\x0bKGEFHOECMMN\x123\n\x0bNLPCO\
+    NNJONF\x18\x01\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0bNLPCONNJONFb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

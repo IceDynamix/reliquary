@@ -41,7 +41,7 @@ pub struct BattleAvatar {
     // @@protoc_insertion_point(field:BattleAvatar.avatar_skilltree_list)
     pub avatar_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
     // @@protoc_insertion_point(field:BattleAvatar.equipment_list)
-    pub equipment_list: ::std::vec::Vec<super::HLBHOMAPCGF::HLBHOMAPCGF>,
+    pub equipment_list: ::std::vec::Vec<super::BattleEquipment::BattleEquipment>,
     // @@protoc_insertion_point(field:BattleAvatar.hp)
     pub hp: u32,
     // @@protoc_insertion_point(field:BattleAvatar.promotion)
@@ -50,8 +50,8 @@ pub struct BattleAvatar {
     pub relic_list: ::std::vec::Vec<super::BattleRelic::BattleRelic>,
     // @@protoc_insertion_point(field:BattleAvatar.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.CPMNCMGNCEK)
-    pub CPMNCMGNCEK: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.assist_uid)
+    pub assist_uid: u32,
     // @@protoc_insertion_point(field:BattleAvatar.ECIFJLAKHCL)
     pub ECIFJLAKHCL: ::protobuf::MessageField<super::BJHEBCCBANA::BJHEBCCBANA>,
     // @@protoc_insertion_point(field:BattleAvatar.sp_bar)
@@ -135,9 +135,9 @@ impl BattleAvatar {
             |m: &mut BattleAvatar| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPMNCMGNCEK",
-            |m: &BattleAvatar| { &m.CPMNCMGNCEK },
-            |m: &mut BattleAvatar| { &mut m.CPMNCMGNCEK },
+            "assist_uid",
+            |m: &BattleAvatar| { &m.assist_uid },
+            |m: &mut BattleAvatar| { &mut m.assist_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BJHEBCCBANA::BJHEBCCBANA>(
             "ECIFJLAKHCL",
@@ -211,7 +211,7 @@ impl ::protobuf::Message for BattleAvatar {
                     self.world_level = is.read_uint32()?;
                 },
                 104 => {
-                    self.CPMNCMGNCEK = is.read_uint32()?;
+                    self.assist_uid = is.read_uint32()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ECIFJLAKHCL)?;
@@ -273,8 +273,8 @@ impl ::protobuf::Message for BattleAvatar {
         if self.world_level != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.world_level);
         }
-        if self.CPMNCMGNCEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CPMNCMGNCEK);
+        if self.assist_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.assist_uid);
         }
         if let Some(v) = self.ECIFJLAKHCL.as_ref() {
             let len = v.compute_size();
@@ -330,8 +330,8 @@ impl ::protobuf::Message for BattleAvatar {
         if self.world_level != 0 {
             os.write_uint32(12, self.world_level)?;
         }
-        if self.CPMNCMGNCEK != 0 {
-            os.write_uint32(13, self.CPMNCMGNCEK)?;
+        if self.assist_uid != 0 {
+            os.write_uint32(13, self.assist_uid)?;
         }
         if let Some(v) = self.ECIFJLAKHCL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -373,7 +373,7 @@ impl ::protobuf::Message for BattleAvatar {
         self.promotion = 0;
         self.relic_list.clear();
         self.world_level = 0;
-        self.CPMNCMGNCEK = 0;
+        self.assist_uid = 0;
         self.ECIFJLAKHCL.clear();
         self.sp_bar.clear();
         self.GMOBAOCEFCE = 0;
@@ -394,7 +394,7 @@ impl ::protobuf::Message for BattleAvatar {
             promotion: 0,
             relic_list: ::std::vec::Vec::new(),
             world_level: 0,
-            CPMNCMGNCEK: 0,
+            assist_uid: 0,
             ECIFJLAKHCL: ::protobuf::MessageField::none(),
             sp_bar: ::protobuf::MessageField::none(),
             GMOBAOCEFCE: 0,
@@ -424,22 +424,22 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatar {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12BattleAvatar.proto\x1a\x15AvatarSkillTree.proto\x1a\x10AvatarType.\
-    proto\x1a\x11BJHEBCCBANA.proto\x1a\x11BattleRelic.proto\x1a\x11HLBHOMAPC\
-    GF.proto\x1a\x0fSpBarInfo.proto\"\xce\x04\n\x0cBattleAvatar\x12,\n\x0bav\
-    atar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x0e\n\
-    \x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\x20\x01(\rR\
-    \x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x14\n\x05ind\
-    ex\x18\x05\x20\x01(\rR\x05index\x12D\n\x15avatar_skilltree_list\x18\x06\
-    \x20\x03(\x0b2\x10.AvatarSkillTreeR\x13avatarSkilltreeList\x123\n\x0eequ\
-    ipment_list\x18\x07\x20\x03(\x0b2\x0c.HLBHOMAPCGFR\requipmentList\x12\
-    \x0e\n\x02hp\x18\x08\x20\x01(\rR\x02hp\x12\x1c\n\tpromotion\x18\n\x20\
-    \x01(\rR\tpromotion\x12+\n\nrelic_list\x18\x0b\x20\x03(\x0b2\x0c.BattleR\
-    elicR\trelicList\x12\x1f\n\x0bworld_level\x18\x0c\x20\x01(\rR\nworldLeve\
-    l\x12\x20\n\x0bCPMNCMGNCEK\x18\r\x20\x01(\rR\x0bCPMNCMGNCEK\x12.\n\x0bEC\
-    IFJLAKHCL\x18\x0f\x20\x01(\x0b2\x0c.BJHEBCCBANAR\x0bECIFJLAKHCL\x12!\n\
-    \x06sp_bar\x18\x10\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\x0bGMOB\
-    AOCEFCE\x18\x11\x20\x01(\rR\x0bGMOBAOCEFCE\x122\n\x0bIMJJKBJOOHJ\x18\x12\
-    \x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bIMJJKBJOOHJb\x06proto3\
+    proto\x1a\x11BJHEBCCBANA.proto\x1a\x15BattleEquipment.proto\x1a\x11Battl\
+    eRelic.proto\x1a\x0fSpBarInfo.proto\"\xcf\x04\n\x0cBattleAvatar\x12,\n\
+    \x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
+    \x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\x20\
+    \x01(\rR\x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x14\
+    \n\x05index\x18\x05\x20\x01(\rR\x05index\x12D\n\x15avatar_skilltree_list\
+    \x18\x06\x20\x03(\x0b2\x10.AvatarSkillTreeR\x13avatarSkilltreeList\x127\
+    \n\x0eequipment_list\x18\x07\x20\x03(\x0b2\x10.BattleEquipmentR\requipme\
+    ntList\x12\x0e\n\x02hp\x18\x08\x20\x01(\rR\x02hp\x12\x1c\n\tpromotion\
+    \x18\n\x20\x01(\rR\tpromotion\x12+\n\nrelic_list\x18\x0b\x20\x03(\x0b2\
+    \x0c.BattleRelicR\trelicList\x12\x1f\n\x0bworld_level\x18\x0c\x20\x01(\r\
+    R\nworldLevel\x12\x1d\n\nassist_uid\x18\r\x20\x01(\rR\tassistUid\x12.\n\
+    \x0bECIFJLAKHCL\x18\x0f\x20\x01(\x0b2\x0c.BJHEBCCBANAR\x0bECIFJLAKHCL\
+    \x12!\n\x06sp_bar\x18\x10\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\
+    \x0bGMOBAOCEFCE\x18\x11\x20\x01(\rR\x0bGMOBAOCEFCE\x122\n\x0bIMJJKBJOOHJ\
+    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bIMJJKBJOOHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -460,8 +460,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::AvatarSkillTree::file_descriptor().clone());
             deps.push(super::AvatarType::file_descriptor().clone());
             deps.push(super::BJHEBCCBANA::file_descriptor().clone());
+            deps.push(super::BattleEquipment::file_descriptor().clone());
             deps.push(super::BattleRelic::file_descriptor().clone());
-            deps.push(super::HLBHOMAPCGF::file_descriptor().clone());
             deps.push(super::SpBarInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleAvatar::generated_message_descriptor_data());

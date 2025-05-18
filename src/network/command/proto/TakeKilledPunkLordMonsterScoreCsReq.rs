@@ -31,7 +31,7 @@ pub struct TakeKilledPunkLordMonsterScoreCsReq {
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreCsReq.KFEJGFNONIP)
     pub KFEJGFNONIP: bool,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreCsReq.PKCPJJNOALN)
-    pub PKCPJJNOALN: ::protobuf::MessageField<super::ODJIPDMNBEC::ODJIPDMNBEC>,
+    pub PKCPJJNOALN: ::protobuf::MessageField<super::PunkLordMonsterKey::PunkLordMonsterKey>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeKilledPunkLordMonsterScoreCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl TakeKilledPunkLordMonsterScoreCsReq {
             |m: &TakeKilledPunkLordMonsterScoreCsReq| { &m.KFEJGFNONIP },
             |m: &mut TakeKilledPunkLordMonsterScoreCsReq| { &mut m.KFEJGFNONIP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODJIPDMNBEC::ODJIPDMNBEC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterKey::PunkLordMonsterKey>(
             "PKCPJJNOALN",
             |m: &TakeKilledPunkLordMonsterScoreCsReq| { &m.PKCPJJNOALN },
             |m: &mut TakeKilledPunkLordMonsterScoreCsReq| { &mut m.PKCPJJNOALN },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                80 => {
                     self.KFEJGFNONIP = is.read_bool()?;
                 },
-                58 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKCPJJNOALN)?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KFEJGFNONIP != false {
-            os.write_bool(8, self.KFEJGFNONIP)?;
+            os.write_bool(10, self.KFEJGFNONIP)?;
         }
         if let Some(v) = self.PKCPJJNOALN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeKilledPunkLordMonsterScoreCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)TakeKilledPunkLordMonsterScoreCsReq.proto\x1a\x11ODJIPDMNBEC.proto\"w\
-    \n#TakeKilledPunkLordMonsterScoreCsReq\x12\x20\n\x0bKFEJGFNONIP\x18\x08\
-    \x20\x01(\x08R\x0bKFEJGFNONIP\x12.\n\x0bPKCPJJNOALN\x18\x07\x20\x01(\x0b\
-    2\x0c.ODJIPDMNBECR\x0bPKCPJJNOALNb\x06proto3\
+    \n)TakeKilledPunkLordMonsterScoreCsReq.proto\x1a\x18PunkLordMonsterKey.p\
+    roto\"~\n#TakeKilledPunkLordMonsterScoreCsReq\x12\x20\n\x0bKFEJGFNONIP\
+    \x18\n\x20\x01(\x08R\x0bKFEJGFNONIP\x125\n\x0bPKCPJJNOALN\x18\x06\x20\
+    \x01(\x0b2\x13.PunkLordMonsterKeyR\x0bPKCPJJNOALNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ODJIPDMNBEC::file_descriptor().clone());
+            deps.push(super::PunkLordMonsterKey::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeKilledPunkLordMonsterScoreCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

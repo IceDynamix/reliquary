@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSaveRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.CENIFNKNFNP)
-    pub CENIFNKNFNP: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.JGEAEGMHDOC)
-    pub JGEAEGMHDOC: bool,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:GetSaveRaidScRsp.LHEILNACNOD)
     pub LHEILNACNOD: ::std::vec::Vec<super::HOCHOIHKKDG::HOCHOIHKKDG>,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.JGEAEGMHDOC)
+    pub JGEAEGMHDOC: bool,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.CENIFNKNFNP)
+    pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.world_level)
+    pub world_level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSaveRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,10 @@ impl GetSaveRaidScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetSaveRaidScRsp| { &m.retcode },
-            |m: &mut GetSaveRaidScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &GetSaveRaidScRsp| { &m.CENIFNKNFNP },
-            |m: &mut GetSaveRaidScRsp| { &mut m.CENIFNKNFNP },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHEILNACNOD",
+            |m: &GetSaveRaidScRsp| { &m.LHEILNACNOD },
+            |m: &mut GetSaveRaidScRsp| { &mut m.LHEILNACNOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGEAEGMHDOC",
@@ -73,14 +68,19 @@ impl GetSaveRaidScRsp {
             |m: &mut GetSaveRaidScRsp| { &mut m.JGEAEGMHDOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CENIFNKNFNP",
+            |m: &GetSaveRaidScRsp| { &m.CENIFNKNFNP },
+            |m: &mut GetSaveRaidScRsp| { &mut m.CENIFNKNFNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetSaveRaidScRsp| { &m.retcode },
+            |m: &mut GetSaveRaidScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
             |m: &GetSaveRaidScRsp| { &m.world_level },
             |m: &mut GetSaveRaidScRsp| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LHEILNACNOD",
-            |m: &GetSaveRaidScRsp| { &m.LHEILNACNOD },
-            |m: &mut GetSaveRaidScRsp| { &mut m.LHEILNACNOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSaveRaidScRsp>(
             "GetSaveRaidScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    self.LHEILNACNOD.push(is.read_message()?);
                 },
-                56 => {
+                32 => {
+                    self.JGEAEGMHDOC = is.read_bool()?;
+                },
+                104 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
-                24 => {
-                    self.JGEAEGMHDOC = is.read_bool()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 8 => {
                     self.world_level = is.read_uint32()?;
-                },
-                98 => {
-                    self.LHEILNACNOD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CENIFNKNFNP);
-        }
-        if self.JGEAEGMHDOC != false {
-            my_size += 1 + 1;
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
-        }
         for value in &self.LHEILNACNOD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.JGEAEGMHDOC != false {
+            my_size += 1 + 1;
+        }
+        if self.CENIFNKNFNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CENIFNKNFNP);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        for v in &self.LHEILNACNOD {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.JGEAEGMHDOC != false {
+            os.write_bool(4, self.JGEAEGMHDOC)?;
         }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(7, self.CENIFNKNFNP)?;
+            os.write_uint32(13, self.CENIFNKNFNP)?;
         }
-        if self.JGEAEGMHDOC != false {
-            os.write_bool(3, self.JGEAEGMHDOC)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         if self.world_level != 0 {
             os.write_uint32(1, self.world_level)?;
         }
-        for v in &self.LHEILNACNOD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.CENIFNKNFNP = 0;
-        self.JGEAEGMHDOC = false;
-        self.world_level = 0;
         self.LHEILNACNOD.clear();
+        self.JGEAEGMHDOC = false;
+        self.CENIFNKNFNP = 0;
+        self.retcode = 0;
+        self.world_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSaveRaidScRsp {
         static instance: GetSaveRaidScRsp = GetSaveRaidScRsp {
-            retcode: 0,
-            CENIFNKNFNP: 0,
-            JGEAEGMHDOC: false,
-            world_level: 0,
             LHEILNACNOD: ::std::vec::Vec::new(),
+            JGEAEGMHDOC: false,
+            CENIFNKNFNP: 0,
+            retcode: 0,
+            world_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveRaidScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetSaveRaidScRsp.proto\x1a\x11HOCHOIHKKDG.proto\"\xc1\x01\n\x10Get\
-    SaveRaidScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bCENIFNKNFNP\x18\x07\x20\x01(\rR\x0bCENIFNKNFNP\x12\x20\n\x0bJG\
-    EAEGMHDOC\x18\x03\x20\x01(\x08R\x0bJGEAEGMHDOC\x12\x1f\n\x0bworld_level\
-    \x18\x01\x20\x01(\rR\nworldLevel\x12.\n\x0bLHEILNACNOD\x18\x0c\x20\x03(\
-    \x0b2\x0c.HOCHOIHKKDGR\x0bLHEILNACNODb\x06proto3\
+    SaveRaidScRsp\x12.\n\x0bLHEILNACNOD\x18\x05\x20\x03(\x0b2\x0c.HOCHOIHKKD\
+    GR\x0bLHEILNACNOD\x12\x20\n\x0bJGEAEGMHDOC\x18\x04\x20\x01(\x08R\x0bJGEA\
+    EGMHDOC\x12\x20\n\x0bCENIFNKNFNP\x18\r\x20\x01(\rR\x0bCENIFNKNFNP\x12\
+    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x1f\n\x0bworld_leve\
+    l\x18\x01\x20\x01(\rR\nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

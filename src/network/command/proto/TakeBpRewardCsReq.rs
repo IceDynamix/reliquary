@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeBpRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeBpRewardCsReq.slot)
-    pub slot: ::protobuf::EnumOrUnknown<super::BpRewardType::BpRewardType>,
+    // @@protoc_insertion_point(field:TakeBpRewardCsReq.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::BpRewardType::BpRewardType>,
     // @@protoc_insertion_point(field:TakeBpRewardCsReq.level)
     pub level: u32,
     // @@protoc_insertion_point(field:TakeBpRewardCsReq.optional_reward_id)
@@ -54,9 +54,9 @@ impl TakeBpRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &TakeBpRewardCsReq| { &m.slot },
-            |m: &mut TakeBpRewardCsReq| { &mut m.slot },
+            "type",
+            |m: &TakeBpRewardCsReq| { &m.type_ },
+            |m: &mut TakeBpRewardCsReq| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.slot = is.read_enum_or_unknown()?;
+                8 => {
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
-                48 => {
+                120 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                112 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.slot.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.optional_reward_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.slot))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(15, self.level)?;
         }
         if self.optional_reward_id != 0 {
-            os.write_uint32(7, self.optional_reward_id)?;
+            os.write_uint32(14, self.optional_reward_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot = ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE);
         self.level = 0;
         self.optional_reward_id = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
 
     fn default_instance() -> &'static TakeBpRewardCsReq {
         static instance: TakeBpRewardCsReq = TakeBpRewardCsReq {
-            slot: ::protobuf::EnumOrUnknown::from_i32(0),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             level: 0,
             optional_reward_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeBpRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TakeBpRewardCsReq.proto\x1a\x12BpRewardType.proto\"z\n\x11TakeBpRe\
-    wardCsReq\x12!\n\x04slot\x18\x04\x20\x01(\x0e2\r.BpRewardTypeR\x04slot\
-    \x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05level\x12,\n\x12optional_rewa\
-    rd_id\x18\x07\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
+    wardCsReq\x12!\n\x04type\x18\x01\x20\x01(\x0e2\r.BpRewardTypeR\x04type\
+    \x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12,\n\x12optional_rewa\
+    rd_id\x18\x0e\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

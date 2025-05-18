@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Product {
     // message fields
-    // @@protoc_insertion_point(field:Product.DNAJFMPCMLL)
-    pub DNAJFMPCMLL: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
-    // @@protoc_insertion_point(field:Product.FKFOKHABEJN)
-    pub FKFOKHABEJN: bool,
-    // @@protoc_insertion_point(field:Product.end_time)
-    pub end_time: i64,
-    // @@protoc_insertion_point(field:Product.GCBOBAMCALK)
-    pub GCBOBAMCALK: u32,
-    // @@protoc_insertion_point(field:Product.begin_time)
-    pub begin_time: i64,
-    // @@protoc_insertion_point(field:Product.DBELLIHMAJG)
-    pub DBELLIHMAJG: ::std::string::String,
+    // @@protoc_insertion_point(field:Product.product_id)
+    pub product_id: ::std::string::String,
+    // @@protoc_insertion_point(field:Product.gift_type)
+    pub gift_type: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
     // @@protoc_insertion_point(field:Product.IOGLPEBJMDB)
     pub IOGLPEBJMDB: u32,
-    // @@protoc_insertion_point(field:Product.MPAMHBFIKFB)
-    pub MPAMHBFIKFB: ::std::string::String,
+    // @@protoc_insertion_point(field:Product.price_tier)
+    pub price_tier: ::std::string::String,
+    // @@protoc_insertion_point(field:Product.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:Product.end_time)
+    pub end_time: i64,
+    // @@protoc_insertion_point(field:Product.double_reward)
+    pub double_reward: bool,
+    // @@protoc_insertion_point(field:Product.GCBOBAMCALK)
+    pub GCBOBAMCALK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:Product.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,34 +64,14 @@ impl Product {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAJFMPCMLL",
-            |m: &Product| { &m.DNAJFMPCMLL },
-            |m: &mut Product| { &mut m.DNAJFMPCMLL },
+            "product_id",
+            |m: &Product| { &m.product_id },
+            |m: &mut Product| { &mut m.product_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKFOKHABEJN",
-            |m: &Product| { &m.FKFOKHABEJN },
-            |m: &mut Product| { &mut m.FKFOKHABEJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &Product| { &m.end_time },
-            |m: &mut Product| { &mut m.end_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCBOBAMCALK",
-            |m: &Product| { &m.GCBOBAMCALK },
-            |m: &mut Product| { &mut m.GCBOBAMCALK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &Product| { &m.begin_time },
-            |m: &mut Product| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBELLIHMAJG",
-            |m: &Product| { &m.DBELLIHMAJG },
-            |m: &mut Product| { &mut m.DBELLIHMAJG },
+            "gift_type",
+            |m: &Product| { &m.gift_type },
+            |m: &mut Product| { &mut m.gift_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IOGLPEBJMDB",
@@ -99,9 +79,29 @@ impl Product {
             |m: &mut Product| { &mut m.IOGLPEBJMDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPAMHBFIKFB",
-            |m: &Product| { &m.MPAMHBFIKFB },
-            |m: &mut Product| { &mut m.MPAMHBFIKFB },
+            "price_tier",
+            |m: &Product| { &m.price_tier },
+            |m: &mut Product| { &mut m.price_tier },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &Product| { &m.begin_time },
+            |m: &mut Product| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &Product| { &m.end_time },
+            |m: &mut Product| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "double_reward",
+            |m: &Product| { &m.double_reward },
+            |m: &mut Product| { &mut m.double_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCBOBAMCALK",
+            |m: &Product| { &m.GCBOBAMCALK },
+            |m: &mut Product| { &mut m.GCBOBAMCALK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Product>(
             "Product",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for Product {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DNAJFMPCMLL = is.read_enum_or_unknown()?;
+                50 => {
+                    self.product_id = is.read_string()?;
                 },
-                80 => {
-                    self.FKFOKHABEJN = is.read_bool()?;
-                },
-                56 => {
-                    self.end_time = is.read_int64()?;
+                96 => {
+                    self.gift_type = is.read_enum_or_unknown()?;
                 },
                 40 => {
-                    self.GCBOBAMCALK = is.read_uint32()?;
-                },
-                120 => {
-                    self.begin_time = is.read_int64()?;
-                },
-                90 => {
-                    self.DBELLIHMAJG = is.read_string()?;
-                },
-                8 => {
                     self.IOGLPEBJMDB = is.read_uint32()?;
                 },
-                98 => {
-                    self.MPAMHBFIKFB = is.read_string()?;
+                122 => {
+                    self.price_tier = is.read_string()?;
+                },
+                56 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                88 => {
+                    self.end_time = is.read_int64()?;
+                },
+                64 => {
+                    self.double_reward = is.read_bool()?;
+                },
+                72 => {
+                    self.GCBOBAMCALK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for Product {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.DNAJFMPCMLL.value());
+        if !self.product_id.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.product_id);
         }
-        if self.FKFOKHABEJN != false {
-            my_size += 1 + 1;
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.end_time);
-        }
-        if self.GCBOBAMCALK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GCBOBAMCALK);
-        }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.begin_time);
-        }
-        if !self.DBELLIHMAJG.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.DBELLIHMAJG);
+        if self.gift_type != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.gift_type.value());
         }
         if self.IOGLPEBJMDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IOGLPEBJMDB);
+            my_size += ::protobuf::rt::uint32_size(5, self.IOGLPEBJMDB);
         }
-        if !self.MPAMHBFIKFB.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.MPAMHBFIKFB);
+        if !self.price_tier.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.price_tier);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.end_time);
+        }
+        if self.double_reward != false {
+            my_size += 1 + 1;
+        }
+        if self.GCBOBAMCALK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GCBOBAMCALK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for Product {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNAJFMPCMLL != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DNAJFMPCMLL))?;
+        if !self.product_id.is_empty() {
+            os.write_string(6, &self.product_id)?;
         }
-        if self.FKFOKHABEJN != false {
-            os.write_bool(10, self.FKFOKHABEJN)?;
-        }
-        if self.end_time != 0 {
-            os.write_int64(7, self.end_time)?;
-        }
-        if self.GCBOBAMCALK != 0 {
-            os.write_uint32(5, self.GCBOBAMCALK)?;
-        }
-        if self.begin_time != 0 {
-            os.write_int64(15, self.begin_time)?;
-        }
-        if !self.DBELLIHMAJG.is_empty() {
-            os.write_string(11, &self.DBELLIHMAJG)?;
+        if self.gift_type != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.gift_type))?;
         }
         if self.IOGLPEBJMDB != 0 {
-            os.write_uint32(1, self.IOGLPEBJMDB)?;
+            os.write_uint32(5, self.IOGLPEBJMDB)?;
         }
-        if !self.MPAMHBFIKFB.is_empty() {
-            os.write_string(12, &self.MPAMHBFIKFB)?;
+        if !self.price_tier.is_empty() {
+            os.write_string(15, &self.price_tier)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(7, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(11, self.end_time)?;
+        }
+        if self.double_reward != false {
+            os.write_bool(8, self.double_reward)?;
+        }
+        if self.GCBOBAMCALK != 0 {
+            os.write_uint32(9, self.GCBOBAMCALK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for Product {
     }
 
     fn clear(&mut self) {
-        self.DNAJFMPCMLL = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE);
-        self.FKFOKHABEJN = false;
-        self.end_time = 0;
-        self.GCBOBAMCALK = 0;
-        self.begin_time = 0;
-        self.DBELLIHMAJG.clear();
+        self.product_id.clear();
+        self.gift_type = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::PRODUCT_GIFT_NONE);
         self.IOGLPEBJMDB = 0;
-        self.MPAMHBFIKFB.clear();
+        self.price_tier.clear();
+        self.begin_time = 0;
+        self.end_time = 0;
+        self.double_reward = false;
+        self.GCBOBAMCALK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Product {
         static instance: Product = Product {
-            DNAJFMPCMLL: ::protobuf::EnumOrUnknown::from_i32(0),
-            FKFOKHABEJN: false,
-            end_time: 0,
-            GCBOBAMCALK: 0,
-            begin_time: 0,
-            DBELLIHMAJG: ::std::string::String::new(),
+            product_id: ::std::string::String::new(),
+            gift_type: ::protobuf::EnumOrUnknown::from_i32(0),
             IOGLPEBJMDB: 0,
-            MPAMHBFIKFB: ::std::string::String::new(),
+            price_tier: ::std::string::String::new(),
+            begin_time: 0,
+            end_time: 0,
+            double_reward: false,
+            GCBOBAMCALK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,15 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for Product {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rProduct.proto\x1a\x15ProductGiftType.proto\"\xa1\x02\n\x07Product\
-    \x122\n\x0bDNAJFMPCMLL\x18\x04\x20\x01(\x0e2\x10.ProductGiftTypeR\x0bDNA\
-    JFMPCMLL\x12\x20\n\x0bFKFOKHABEJN\x18\n\x20\x01(\x08R\x0bFKFOKHABEJN\x12\
-    \x19\n\x08end_time\x18\x07\x20\x01(\x03R\x07endTime\x12\x20\n\x0bGCBOBAM\
-    CALK\x18\x05\x20\x01(\rR\x0bGCBOBAMCALK\x12\x1d\n\nbegin_time\x18\x0f\
-    \x20\x01(\x03R\tbeginTime\x12\x20\n\x0bDBELLIHMAJG\x18\x0b\x20\x01(\tR\
-    \x0bDBELLIHMAJG\x12\x20\n\x0bIOGLPEBJMDB\x18\x01\x20\x01(\rR\x0bIOGLPEBJ\
-    MDB\x12\x20\n\x0bMPAMHBFIKFB\x18\x0c\x20\x01(\tR\x0bMPAMHBFIKFBb\x06prot\
-    o3\
+    \n\rProduct.proto\x1a\x15ProductGiftType.proto\"\x99\x02\n\x07Product\
+    \x12\x1d\n\nproduct_id\x18\x06\x20\x01(\tR\tproductId\x12-\n\tgift_type\
+    \x18\x0c\x20\x01(\x0e2\x10.ProductGiftTypeR\x08giftType\x12\x20\n\x0bIOG\
+    LPEBJMDB\x18\x05\x20\x01(\rR\x0bIOGLPEBJMDB\x12\x1d\n\nprice_tier\x18\
+    \x0f\x20\x01(\tR\tpriceTier\x12\x1d\n\nbegin_time\x18\x07\x20\x01(\x03R\
+    \tbeginTime\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x03R\x07endTime\x12#\
+    \n\rdouble_reward\x18\x08\x20\x01(\x08R\x0cdoubleReward\x12\x20\n\x0bGCB\
+    OBAMCALK\x18\t\x20\x01(\rR\x0bGCBOBAMCALKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

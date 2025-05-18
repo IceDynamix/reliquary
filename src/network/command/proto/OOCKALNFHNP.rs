@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OOCKALNFHNP {
     // message fields
-    // @@protoc_insertion_point(field:OOCKALNFHNP.CHJNGDIOOME)
-    pub CHJNGDIOOME: u32,
     // @@protoc_insertion_point(field:OOCKALNFHNP.HMCJOBJBPKJ)
     pub HMCJOBJBPKJ: u32,
+    // @@protoc_insertion_point(field:OOCKALNFHNP.CHJNGDIOOME)
+    pub CHJNGDIOOME: u32,
     // @@protoc_insertion_point(field:OOCKALNFHNP.BGBIHIDHCON)
     pub BGBIHIDHCON: u32,
     // special fields
@@ -54,14 +54,14 @@ impl OOCKALNFHNP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHJNGDIOOME",
-            |m: &OOCKALNFHNP| { &m.CHJNGDIOOME },
-            |m: &mut OOCKALNFHNP| { &mut m.CHJNGDIOOME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HMCJOBJBPKJ",
             |m: &OOCKALNFHNP| { &m.HMCJOBJBPKJ },
             |m: &mut OOCKALNFHNP| { &mut m.HMCJOBJBPKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHJNGDIOOME",
+            |m: &OOCKALNFHNP| { &m.CHJNGDIOOME },
+            |m: &mut OOCKALNFHNP| { &mut m.CHJNGDIOOME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BGBIHIDHCON",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for OOCKALNFHNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.CHJNGDIOOME = is.read_uint32()?;
-                },
-                48 => {
+                16 => {
                     self.HMCJOBJBPKJ = is.read_uint32()?;
                 },
-                16 => {
+                8 => {
+                    self.CHJNGDIOOME = is.read_uint32()?;
+                },
+                64 => {
                     self.BGBIHIDHCON = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OOCKALNFHNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CHJNGDIOOME != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CHJNGDIOOME);
-        }
         if self.HMCJOBJBPKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HMCJOBJBPKJ);
+            my_size += ::protobuf::rt::uint32_size(2, self.HMCJOBJBPKJ);
+        }
+        if self.CHJNGDIOOME != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CHJNGDIOOME);
         }
         if self.BGBIHIDHCON != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BGBIHIDHCON);
+            my_size += ::protobuf::rt::uint32_size(8, self.BGBIHIDHCON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OOCKALNFHNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CHJNGDIOOME != 0 {
-            os.write_uint32(14, self.CHJNGDIOOME)?;
-        }
         if self.HMCJOBJBPKJ != 0 {
-            os.write_uint32(6, self.HMCJOBJBPKJ)?;
+            os.write_uint32(2, self.HMCJOBJBPKJ)?;
+        }
+        if self.CHJNGDIOOME != 0 {
+            os.write_uint32(1, self.CHJNGDIOOME)?;
         }
         if self.BGBIHIDHCON != 0 {
-            os.write_uint32(2, self.BGBIHIDHCON)?;
+            os.write_uint32(8, self.BGBIHIDHCON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for OOCKALNFHNP {
     }
 
     fn clear(&mut self) {
-        self.CHJNGDIOOME = 0;
         self.HMCJOBJBPKJ = 0;
+        self.CHJNGDIOOME = 0;
         self.BGBIHIDHCON = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OOCKALNFHNP {
         static instance: OOCKALNFHNP = OOCKALNFHNP {
-            CHJNGDIOOME: 0,
             HMCJOBJBPKJ: 0,
+            CHJNGDIOOME: 0,
             BGBIHIDHCON: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for OOCKALNFHNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OOCKALNFHNP.proto\"s\n\x0bOOCKALNFHNP\x12\x20\n\x0bCHJNGDIOOME\x18\
-    \x0e\x20\x01(\rR\x0bCHJNGDIOOME\x12\x20\n\x0bHMCJOBJBPKJ\x18\x06\x20\x01\
-    (\rR\x0bHMCJOBJBPKJ\x12\x20\n\x0bBGBIHIDHCON\x18\x02\x20\x01(\rR\x0bBGBI\
+    \n\x11OOCKALNFHNP.proto\"s\n\x0bOOCKALNFHNP\x12\x20\n\x0bHMCJOBJBPKJ\x18\
+    \x02\x20\x01(\rR\x0bHMCJOBJBPKJ\x12\x20\n\x0bCHJNGDIOOME\x18\x01\x20\x01\
+    (\rR\x0bCHJNGDIOOME\x12\x20\n\x0bBGBIHIDHCON\x18\x08\x20\x01(\rR\x0bBGBI\
     HIDHCONb\x06proto3\
 ";
 

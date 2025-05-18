@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PunkLordRaidTimeOutScNotify {
     // message fields
     // @@protoc_insertion_point(field:PunkLordRaidTimeOutScNotify.DPMKAMMIOLB)
-    pub DPMKAMMIOLB: ::protobuf::MessageField<super::GJNAAGHKOOK::GJNAAGHKOOK>,
+    pub DPMKAMMIOLB: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordRaidTimeOutScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl PunkLordRaidTimeOutScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJNAAGHKOOK::GJNAAGHKOOK>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
             "DPMKAMMIOLB",
             |m: &PunkLordRaidTimeOutScNotify| { &m.DPMKAMMIOLB },
             |m: &mut PunkLordRaidTimeOutScNotify| { &mut m.DPMKAMMIOLB },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordRaidTimeOutScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PunkLordRaidTimeOutScNotify.proto\x1a\x11GJNAAGHKOOK.proto\"M\n\x1bPu\
-    nkLordRaidTimeOutScNotify\x12.\n\x0bDPMKAMMIOLB\x18\x0b\x20\x01(\x0b2\
-    \x0c.GJNAAGHKOOKR\x0bDPMKAMMIOLBb\x06proto3\
+    \n!PunkLordRaidTimeOutScNotify.proto\x1a\x1ePunkLordMonsterBasicInfo.pro\
+    to\"Z\n\x1bPunkLordRaidTimeOutScNotify\x12;\n\x0bDPMKAMMIOLB\x18\x02\x20\
+    \x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bDPMKAMMIOLBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GJNAAGHKOOK::file_descriptor().clone());
+            deps.push(super::PunkLordMonsterBasicInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PunkLordRaidTimeOutScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

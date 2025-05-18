@@ -30,8 +30,8 @@ pub struct ICFCPPICHJB {
     // message fields
     // @@protoc_insertion_point(field:ICFCPPICHJB.FJJDFPKGOPC)
     pub FJJDFPKGOPC: u32,
-    // @@protoc_insertion_point(field:ICFCPPICHJB.score)
-    pub score: u32,
+    // @@protoc_insertion_point(field:ICFCPPICHJB.score_id)
+    pub score_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ICFCPPICHJB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ICFCPPICHJB {
             |m: &mut ICFCPPICHJB| { &mut m.FJJDFPKGOPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &ICFCPPICHJB| { &m.score },
-            |m: &mut ICFCPPICHJB| { &mut m.score },
+            "score_id",
+            |m: &ICFCPPICHJB| { &m.score_id },
+            |m: &mut ICFCPPICHJB| { &mut m.score_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICFCPPICHJB>(
             "ICFCPPICHJB",
@@ -83,7 +83,7 @@ impl ::protobuf::Message for ICFCPPICHJB {
                     self.FJJDFPKGOPC = is.read_uint32()?;
                 },
                 16 => {
-                    self.score = is.read_uint32()?;
+                    self.score_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for ICFCPPICHJB {
         if self.FJJDFPKGOPC != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.FJJDFPKGOPC);
         }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.score);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for ICFCPPICHJB {
         if self.FJJDFPKGOPC != 0 {
             os.write_uint32(1, self.FJJDFPKGOPC)?;
         }
-        if self.score != 0 {
-            os.write_uint32(2, self.score)?;
+        if self.score_id != 0 {
+            os.write_uint32(2, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ICFCPPICHJB {
 
     fn clear(&mut self) {
         self.FJJDFPKGOPC = 0;
-        self.score = 0;
+        self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICFCPPICHJB {
         static instance: ICFCPPICHJB = ICFCPPICHJB {
             FJJDFPKGOPC: 0,
-            score: 0,
+            score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ICFCPPICHJB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ICFCPPICHJB.proto\"E\n\x0bICFCPPICHJB\x12\x20\n\x0bFJJDFPKGOPC\x18\
-    \x01\x20\x01(\rR\x0bFJJDFPKGOPC\x12\x14\n\x05score\x18\x02\x20\x01(\rR\
-    \x05scoreb\x06proto3\
+    \n\x11ICFCPPICHJB.proto\"J\n\x0bICFCPPICHJB\x12\x20\n\x0bFJJDFPKGOPC\x18\
+    \x01\x20\x01(\rR\x0bFJJDFPKGOPC\x12\x19\n\x08score_id\x18\x02\x20\x01(\r\
+    R\x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

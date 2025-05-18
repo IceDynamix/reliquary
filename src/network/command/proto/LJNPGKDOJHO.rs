@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LJNPGKDOJHO {
     // message fields
-    // @@protoc_insertion_point(field:LJNPGKDOJHO.ENDJGMLKPBP)
-    pub ENDJGMLKPBP: u32,
+    // @@protoc_insertion_point(field:LJNPGKDOJHO.monster_battle_type)
+    pub monster_battle_type: u32,
     // @@protoc_insertion_point(field:LJNPGKDOJHO.DBADLNFOPAO)
     pub DBADLNFOPAO: u64,
     // @@protoc_insertion_point(field:LJNPGKDOJHO.ACJCPHIFMLN)
@@ -66,9 +66,9 @@ impl LJNPGKDOJHO {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENDJGMLKPBP",
-            |m: &LJNPGKDOJHO| { &m.ENDJGMLKPBP },
-            |m: &mut LJNPGKDOJHO| { &mut m.ENDJGMLKPBP },
+            "monster_battle_type",
+            |m: &LJNPGKDOJHO| { &m.monster_battle_type },
+            |m: &mut LJNPGKDOJHO| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBADLNFOPAO",
@@ -129,7 +129,7 @@ impl ::protobuf::Message for LJNPGKDOJHO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.ENDJGMLKPBP = is.read_uint32()?;
+                    self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
                     self.DBADLNFOPAO = is.read_uint64()?;
@@ -167,8 +167,8 @@ impl ::protobuf::Message for LJNPGKDOJHO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ENDJGMLKPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ENDJGMLKPBP);
+        if self.monster_battle_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
         if self.DBADLNFOPAO != 0 {
             my_size += ::protobuf::rt::uint64_size(2, self.DBADLNFOPAO);
@@ -202,8 +202,8 @@ impl ::protobuf::Message for LJNPGKDOJHO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ENDJGMLKPBP != 0 {
-            os.write_uint32(1, self.ENDJGMLKPBP)?;
+        if self.monster_battle_type != 0 {
+            os.write_uint32(1, self.monster_battle_type)?;
         }
         if self.DBADLNFOPAO != 0 {
             os.write_uint64(2, self.DBADLNFOPAO)?;
@@ -246,7 +246,7 @@ impl ::protobuf::Message for LJNPGKDOJHO {
     }
 
     fn clear(&mut self) {
-        self.ENDJGMLKPBP = 0;
+        self.monster_battle_type = 0;
         self.DBADLNFOPAO = 0;
         self.ACJCPHIFMLN = 0;
         self.NLIBKABFGCC = 0;
@@ -260,7 +260,7 @@ impl ::protobuf::Message for LJNPGKDOJHO {
 
     fn default_instance() -> &'static LJNPGKDOJHO {
         static instance: LJNPGKDOJHO = LJNPGKDOJHO {
-            ENDJGMLKPBP: 0,
+            monster_battle_type: 0,
             DBADLNFOPAO: 0,
             ACJCPHIFMLN: 0,
             NLIBKABFGCC: 0,
@@ -293,16 +293,16 @@ impl ::protobuf::reflect::ProtobufValue for LJNPGKDOJHO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LJNPGKDOJHO.proto\x1a\x11HCJJOOFKCJH.proto\"\xcd\x02\n\x0bLJNPGKDO\
-    JHO\x12\x20\n\x0bENDJGMLKPBP\x18\x01\x20\x01(\rR\x0bENDJGMLKPBP\x12\x20\
-    \n\x0bDBADLNFOPAO\x18\x02\x20\x01(\x04R\x0bDBADLNFOPAO\x12\x20\n\x0bACJC\
-    PHIFMLN\x18\x03\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bNLIBKABFGCC\x18\
-    \x04\x20\x01(\rR\x0bNLIBKABFGCC\x12.\n\x0bBIECGFIMCFB\x18\x05\x20\x03(\
-    \x0b2\x0c.HCJJOOFKCJHR\x0bBIECGFIMCFB\x12\x12\n\x04rank\x18\x06\x20\x01(\
-    \rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\x07\x20\x01(\x04R\x0bEKLDPALNLD\
-    C\x12.\n\x0bFFFGFCPHBPN\x18\x08\x20\x03(\x0b2\x0c.HCJJOOFKCJHR\x0bFFFGFC\
-    PHBPN\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\x01(\rR\x0bJBLMGNPMADMb\x06prot\
-    o3\
+    \n\x11LJNPGKDOJHO.proto\x1a\x11HCJJOOFKCJH.proto\"\xdb\x02\n\x0bLJNPGKDO\
+    JHO\x12.\n\x13monster_battle_type\x18\x01\x20\x01(\rR\x11monsterBattleTy\
+    pe\x12\x20\n\x0bDBADLNFOPAO\x18\x02\x20\x01(\x04R\x0bDBADLNFOPAO\x12\x20\
+    \n\x0bACJCPHIFMLN\x18\x03\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bNLIBKA\
+    BFGCC\x18\x04\x20\x01(\rR\x0bNLIBKABFGCC\x12.\n\x0bBIECGFIMCFB\x18\x05\
+    \x20\x03(\x0b2\x0c.HCJJOOFKCJHR\x0bBIECGFIMCFB\x12\x12\n\x04rank\x18\x06\
+    \x20\x01(\rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\x07\x20\x01(\x04R\x0bE\
+    KLDPALNLDC\x12.\n\x0bFFFGFCPHBPN\x18\x08\x20\x03(\x0b2\x0c.HCJJOOFKCJHR\
+    \x0bFFFGFCPHBPN\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\x01(\rR\x0bJBLMGNPMAD\
+    Mb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

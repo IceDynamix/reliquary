@@ -35,6 +35,8 @@ pub enum AMJOCDIAPHF {
     ChangeStoryLineAction_Client = 2,
     // @@protoc_insertion_point(enum_value:AMJOCDIAPHF.ChangeStoryLineAction_CustomOP)
     ChangeStoryLineAction_CustomOP = 3,
+    // @@protoc_insertion_point(enum_value:AMJOCDIAPHF.ChangeStoryLineAction_Raid)
+    ChangeStoryLineAction_Raid = 4,
 }
 
 impl ::protobuf::Enum for AMJOCDIAPHF {
@@ -50,6 +52,7 @@ impl ::protobuf::Enum for AMJOCDIAPHF {
             1 => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_FinishAction),
             2 => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_Client),
             3 => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_CustomOP),
+            4 => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_Raid),
             _ => ::std::option::Option::None
         }
     }
@@ -60,6 +63,7 @@ impl ::protobuf::Enum for AMJOCDIAPHF {
             "ChangeStoryLineAction_FinishAction" => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_FinishAction),
             "ChangeStoryLineAction_Client" => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_Client),
             "ChangeStoryLineAction_CustomOP" => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_CustomOP),
+            "ChangeStoryLineAction_Raid" => ::std::option::Option::Some(AMJOCDIAPHF::ChangeStoryLineAction_Raid),
             _ => ::std::option::Option::None
         }
     }
@@ -69,6 +73,7 @@ impl ::protobuf::Enum for AMJOCDIAPHF {
         AMJOCDIAPHF::ChangeStoryLineAction_FinishAction,
         AMJOCDIAPHF::ChangeStoryLineAction_Client,
         AMJOCDIAPHF::ChangeStoryLineAction_CustomOP,
+        AMJOCDIAPHF::ChangeStoryLineAction_Raid,
     ];
 }
 
@@ -97,10 +102,11 @@ impl AMJOCDIAPHF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMJOCDIAPHF.proto*\x9b\x01\n\x0bAMJOCDIAPHF\x12\x1e\n\x1aChangeSto\
+    \n\x11AMJOCDIAPHF.proto*\xbb\x01\n\x0bAMJOCDIAPHF\x12\x1e\n\x1aChangeSto\
     ryLineAction_None\x10\0\x12&\n\"ChangeStoryLineAction_FinishAction\x10\
     \x01\x12\x20\n\x1cChangeStoryLineAction_Client\x10\x02\x12\"\n\x1eChange\
-    StoryLineAction_CustomOP\x10\x03b\x06proto3\
+    StoryLineAction_CustomOP\x10\x03\x12\x1e\n\x1aChangeStoryLineAction_Raid\
+    \x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

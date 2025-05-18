@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHJGLOPMFNC {
     // message fields
-    // @@protoc_insertion_point(field:FHJGLOPMFNC.unit_id)
-    pub unit_id: u32,
+    // @@protoc_insertion_point(field:FHJGLOPMFNC.magic_unit_id)
+    pub magic_unit_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHJGLOPMFNC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FHJGLOPMFNC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unit_id",
-            |m: &FHJGLOPMFNC| { &m.unit_id },
-            |m: &mut FHJGLOPMFNC| { &mut m.unit_id },
+            "magic_unit_id",
+            |m: &FHJGLOPMFNC| { &m.magic_unit_id },
+            |m: &mut FHJGLOPMFNC| { &mut m.magic_unit_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHJGLOPMFNC>(
             "FHJGLOPMFNC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FHJGLOPMFNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.unit_id = is.read_uint32()?;
+                88 => {
+                    self.magic_unit_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FHJGLOPMFNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.unit_id);
+        if self.magic_unit_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.magic_unit_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FHJGLOPMFNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unit_id != 0 {
-            os.write_uint32(5, self.unit_id)?;
+        if self.magic_unit_id != 0 {
+            os.write_uint32(11, self.magic_unit_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FHJGLOPMFNC {
     }
 
     fn clear(&mut self) {
-        self.unit_id = 0;
+        self.magic_unit_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHJGLOPMFNC {
         static instance: FHJGLOPMFNC = FHJGLOPMFNC {
-            unit_id: 0,
+            magic_unit_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FHJGLOPMFNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHJGLOPMFNC.proto\"&\n\x0bFHJGLOPMFNC\x12\x17\n\x07unit_id\x18\x05\
-    \x20\x01(\rR\x06unitIdb\x06proto3\
+    \n\x11FHJGLOPMFNC.proto\"1\n\x0bFHJGLOPMFNC\x12\"\n\rmagic_unit_id\x18\
+    \x0b\x20\x01(\rR\x0bmagicUnitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

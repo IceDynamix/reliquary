@@ -86,13 +86,13 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.client_pos_version = is.read_uint32()?;
                 },
-                34 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.client_pos_version);
+            my_size += ::protobuf::rt::uint32_size(1, self.client_pos_version);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LeaveMapRotationRegionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if self.client_pos_version != 0 {
-            os.write_uint32(11, self.client_pos_version)?;
+            os.write_uint32(1, self.client_pos_version)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for LeaveMapRotationRegionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!LeaveMapRotationRegionScRsp.proto\x1a\x10MotionInfo.proto\"\x8a\x01\n\
-    \x1bLeaveMapRotationRegionScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcode\x12,\n\x12client_pos_version\x18\x0b\x20\x01(\rR\x10clientPo\
-    sVersion\x12#\n\x06motion\x18\x04\x20\x01(\x0b2\x0b.MotionInfoR\x06motio\
-    nb\x06proto3\
+    \x1bLeaveMapRotationRegionScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
+    \x07retcode\x12,\n\x12client_pos_version\x18\x01\x20\x01(\rR\x10clientPo\
+    sVersion\x12#\n\x06motion\x18\n\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

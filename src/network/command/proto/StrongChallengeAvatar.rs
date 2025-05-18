@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StrongChallengeAvatar {
     // message fields
-    // @@protoc_insertion_point(field:StrongChallengeAvatar.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:StrongChallengeAvatar.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:StrongChallengeAvatar.avatar_type)
+    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:StrongChallengeAvatar.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl StrongChallengeAvatar {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &StrongChallengeAvatar| { &m.avatar_type },
-            |m: &mut StrongChallengeAvatar| { &mut m.avatar_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &StrongChallengeAvatar| { &m.avatar_id },
             |m: &mut StrongChallengeAvatar| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_type",
+            |m: &StrongChallengeAvatar| { &m.avatar_type },
+            |m: &mut StrongChallengeAvatar| { &mut m.avatar_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StrongChallengeAvatar>(
             "StrongChallengeAvatar",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for StrongChallengeAvatar {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                104 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for StrongChallengeAvatar {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.avatar_type.value());
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for StrongChallengeAvatar {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+            os.write_uint32(14, self.avatar_id)?;
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for StrongChallengeAvatar {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.avatar_id = 0;
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StrongChallengeAvatar {
         static instance: StrongChallengeAvatar = StrongChallengeAvatar {
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             avatar_id: 0,
+            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for StrongChallengeAvatar {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bStrongChallengeAvatar.proto\x1a\x10AvatarType.proto\"b\n\x15Strong\
-    ChallengeAvatar\x12,\n\x0bavatar_type\x18\x0e\x20\x01(\x0e2\x0b.AvatarTy\
-    peR\navatarType\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarIdb\x06p\
-    roto3\
+    ChallengeAvatar\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarId\x12\
+    ,\n\x0bavatar_type\x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

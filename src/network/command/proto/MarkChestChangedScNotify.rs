@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChestChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MarkChestChangedScNotify.HICCAIAPGMM)
-    pub HICCAIAPGMM: ::std::vec::Vec<super::IBCGAGLOLNA::IBCGAGLOLNA>,
+    // @@protoc_insertion_point(field:MarkChestChangedScNotify.mark_chest_func_info)
+    pub mark_chest_func_info: ::std::vec::Vec<super::MarkChestFuncInfo::MarkChestFuncInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:MarkChestChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MarkChestChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HICCAIAPGMM",
-            |m: &MarkChestChangedScNotify| { &m.HICCAIAPGMM },
-            |m: &mut MarkChestChangedScNotify| { &mut m.HICCAIAPGMM },
+            "mark_chest_func_info",
+            |m: &MarkChestChangedScNotify| { &m.mark_chest_func_info },
+            |m: &mut MarkChestChangedScNotify| { &mut m.mark_chest_func_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkChestChangedScNotify>(
             "MarkChestChangedScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.HICCAIAPGMM.push(is.read_message()?);
+                90 => {
+                    self.mark_chest_func_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HICCAIAPGMM {
+        for value in &self.mark_chest_func_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HICCAIAPGMM {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.mark_chest_func_info {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.HICCAIAPGMM.clear();
+        self.mark_chest_func_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChestChangedScNotify {
         static instance: MarkChestChangedScNotify = MarkChestChangedScNotify {
-            HICCAIAPGMM: ::std::vec::Vec::new(),
+            mark_chest_func_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkChestChangedScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMarkChestChangedScNotify.proto\x1a\x11IBCGAGLOLNA.proto\"J\n\x18Ma\
-    rkChestChangedScNotify\x12.\n\x0bHICCAIAPGMM\x18\x0c\x20\x03(\x0b2\x0c.I\
-    BCGAGLOLNAR\x0bHICCAIAPGMMb\x06proto3\
+    \n\x1eMarkChestChangedScNotify.proto\x1a\x17MarkChestFuncInfo.proto\"_\n\
+    \x18MarkChestChangedScNotify\x12C\n\x14mark_chest_func_info\x18\x0b\x20\
+    \x03(\x0b2\x12.MarkChestFuncInfoR\x11markChestFuncInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IBCGAGLOLNA::file_descriptor().clone());
+            deps.push(super::MarkChestFuncInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MarkChestChangedScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,10 +30,10 @@ pub struct GetSingleRedDotParamGroupCsReq {
     // message fields
     // @@protoc_insertion_point(field:GetSingleRedDotParamGroupCsReq.NOPDKLDEKKF)
     pub NOPDKLDEKKF: u32,
+    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupCsReq.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:GetSingleRedDotParamGroupCsReq.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:GetSingleRedDotParamGroupCsReq.module_id)
-    pub module_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSingleRedDotParamGroupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GetSingleRedDotParamGroupCsReq {
             |m: &mut GetSingleRedDotParamGroupCsReq| { &mut m.NOPDKLDEKKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &GetSingleRedDotParamGroupCsReq| { &m.panel_id },
+            |m: &mut GetSingleRedDotParamGroupCsReq| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &GetSingleRedDotParamGroupCsReq| { &m.group_id },
             |m: &mut GetSingleRedDotParamGroupCsReq| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "module_id",
-            |m: &GetSingleRedDotParamGroupCsReq| { &m.module_id },
-            |m: &mut GetSingleRedDotParamGroupCsReq| { &mut m.module_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSingleRedDotParamGroupCsReq>(
             "GetSingleRedDotParamGroupCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.NOPDKLDEKKF = is.read_uint32()?;
                 },
-                72 => {
-                    self.group_id = is.read_uint32()?;
+                56 => {
+                    self.panel_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.module_id = is.read_uint32()?;
+                24 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NOPDKLDEKKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NOPDKLDEKKF);
+            my_size += ::protobuf::rt::uint32_size(6, self.NOPDKLDEKKF);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.panel_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
-        }
-        if self.module_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.module_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NOPDKLDEKKF != 0 {
-            os.write_uint32(13, self.NOPDKLDEKKF)?;
+            os.write_uint32(6, self.NOPDKLDEKKF)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(7, self.panel_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
-        }
-        if self.module_id != 0 {
-            os.write_uint32(11, self.module_id)?;
+            os.write_uint32(3, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetSingleRedDotParamGroupCsReq {
 
     fn clear(&mut self) {
         self.NOPDKLDEKKF = 0;
+        self.panel_id = 0;
         self.group_id = 0;
-        self.module_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSingleRedDotParamGroupCsReq {
         static instance: GetSingleRedDotParamGroupCsReq = GetSingleRedDotParamGroupCsReq {
             NOPDKLDEKKF: 0,
+            panel_id: 0,
             group_id: 0,
-            module_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSingleRedDotParamGroupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetSingleRedDotParamGroupCsReq.proto\"z\n\x1eGetSingleRedDotParamGrou\
-    pCsReq\x12\x20\n\x0bNOPDKLDEKKF\x18\r\x20\x01(\rR\x0bNOPDKLDEKKF\x12\x19\
-    \n\x08group_id\x18\t\x20\x01(\rR\x07groupId\x12\x1b\n\tmodule_id\x18\x0b\
-    \x20\x01(\rR\x08moduleIdb\x06proto3\
+    \n$GetSingleRedDotParamGroupCsReq.proto\"x\n\x1eGetSingleRedDotParamGrou\
+    pCsReq\x12\x20\n\x0bNOPDKLDEKKF\x18\x06\x20\x01(\rR\x0bNOPDKLDEKKF\x12\
+    \x19\n\x08panel_id\x18\x07\x20\x01(\rR\x07panelId\x12\x19\n\x08group_id\
+    \x18\x03\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

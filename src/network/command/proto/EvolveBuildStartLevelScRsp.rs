@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartLevelScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelScRsp.NOPHEEHJHEK)
-    pub NOPHEEHJHEK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // @@protoc_insertion_point(field:EvolveBuildStartLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildStartLevelScRsp.LMGKMAOICGC)
-    pub LMGKMAOICGC: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelScRsp.level_info)
+    pub level_info: ::protobuf::MessageField<super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildStartLevelScRsp.NOPHEEHJHEK)
+    pub NOPHEEHJHEK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EvolveBuildStartLevelScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "NOPHEEHJHEK",
-            |m: &EvolveBuildStartLevelScRsp| { &m.NOPHEEHJHEK },
-            |m: &mut EvolveBuildStartLevelScRsp| { &mut m.NOPHEEHJHEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EvolveBuildStartLevelScRsp| { &m.retcode },
             |m: &mut EvolveBuildStartLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildLevelInfo::EvolveBuildLevelInfo>(
-            "LMGKMAOICGC",
-            |m: &EvolveBuildStartLevelScRsp| { &m.LMGKMAOICGC },
-            |m: &mut EvolveBuildStartLevelScRsp| { &mut m.LMGKMAOICGC },
+            "level_info",
+            |m: &EvolveBuildStartLevelScRsp| { &m.level_info },
+            |m: &mut EvolveBuildStartLevelScRsp| { &mut m.level_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
+            "NOPHEEHJHEK",
+            |m: &EvolveBuildStartLevelScRsp| { &m.NOPHEEHJHEK },
+            |m: &mut EvolveBuildStartLevelScRsp| { &mut m.NOPHEEHJHEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartLevelScRsp>(
             "EvolveBuildStartLevelScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOPHEEHJHEK)?;
-                },
-                40 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMGKMAOICGC)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOPHEEHJHEK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NOPHEEHJHEK.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if let Some(v) = self.level_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
+        if let Some(v) = self.NOPHEEHJHEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NOPHEEHJHEK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
-        if let Some(v) = self.LMGKMAOICGC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.level_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.NOPHEEHJHEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
     }
 
     fn clear(&mut self) {
-        self.NOPHEEHJHEK.clear();
         self.retcode = 0;
-        self.LMGKMAOICGC.clear();
+        self.level_info.clear();
+        self.NOPHEEHJHEK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartLevelScRsp {
         static instance: EvolveBuildStartLevelScRsp = EvolveBuildStartLevelScRsp {
-            NOPHEEHJHEK: ::protobuf::MessageField::none(),
             retcode: 0,
-            LMGKMAOICGC: ::protobuf::MessageField::none(),
+            level_info: ::protobuf::MessageField::none(),
+            NOPHEEHJHEK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartLevelScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EvolveBuildStartLevelScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\
-    \x1a\x15SceneBattleInfo.proto\"\xa3\x01\n\x1aEvolveBuildStartLevelScRsp\
-    \x122\n\x0bNOPHEEHJHEK\x18\x0f\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bNOP\
-    HEEHJHEK\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x127\n\x0bL\
-    MGKMAOICGC\x18\t\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\x0bLMGKMAOICGCb\
-    \x06proto3\
+    \x1a\x15SceneBattleInfo.proto\"\xa0\x01\n\x1aEvolveBuildStartLevelScRsp\
+    \x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x124\n\nlevel_info\
+    \x18\x0b\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\tlevelInfo\x122\n\x0bNO\
+    PHEEHJHEK\x18\x08\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bNOPHEEHJHEKb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

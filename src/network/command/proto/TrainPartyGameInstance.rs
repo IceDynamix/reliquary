@@ -30,16 +30,16 @@ pub struct TrainPartyGameInstance {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyGameInstance.gameplay_data)
     pub gameplay_data: ::protobuf::MessageField<super::TrainPartyGameplayData::TrainPartyGameplayData>,
-    // @@protoc_insertion_point(field:TrainPartyGameInstance.AIANOFKNLHG)
-    pub AIANOFKNLHG: u32,
+    // @@protoc_insertion_point(field:TrainPartyGameInstance.record_id)
+    pub record_id: u32,
     // @@protoc_insertion_point(field:TrainPartyGameInstance.build_info)
     pub build_info: ::protobuf::MessageField<super::TrainPartyBuildInfo::TrainPartyBuildInfo>,
-    // @@protoc_insertion_point(field:TrainPartyGameInstance.BLOEFNLOLLJ)
-    pub BLOEFNLOLLJ: u32,
-    // @@protoc_insertion_point(field:TrainPartyGameInstance.train_party_persistent_passenger)
-    pub train_party_persistent_passenger: ::protobuf::MessageField<super::TrainPartyPersistentPassenger::TrainPartyPersistentPassenger>,
     // @@protoc_insertion_point(field:TrainPartyGameInstance.KLGBFLNJKBL)
     pub KLGBFLNJKBL: u32,
+    // @@protoc_insertion_point(field:TrainPartyGameInstance.AIANOFKNLHG)
+    pub AIANOFKNLHG: u32,
+    // @@protoc_insertion_point(field:TrainPartyGameInstance.train_party_persistent_passenger)
+    pub train_party_persistent_passenger: ::protobuf::MessageField<super::TrainPartyPersistentPassenger::TrainPartyPersistentPassenger>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGameInstance.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,9 +65,9 @@ impl TrainPartyGameInstance {
             |m: &mut TrainPartyGameInstance| { &mut m.gameplay_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIANOFKNLHG",
-            |m: &TrainPartyGameInstance| { &m.AIANOFKNLHG },
-            |m: &mut TrainPartyGameInstance| { &mut m.AIANOFKNLHG },
+            "record_id",
+            |m: &TrainPartyGameInstance| { &m.record_id },
+            |m: &mut TrainPartyGameInstance| { &mut m.record_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyBuildInfo::TrainPartyBuildInfo>(
             "build_info",
@@ -75,19 +75,19 @@ impl TrainPartyGameInstance {
             |m: &mut TrainPartyGameInstance| { &mut m.build_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLOEFNLOLLJ",
-            |m: &TrainPartyGameInstance| { &m.BLOEFNLOLLJ },
-            |m: &mut TrainPartyGameInstance| { &mut m.BLOEFNLOLLJ },
+            "KLGBFLNJKBL",
+            |m: &TrainPartyGameInstance| { &m.KLGBFLNJKBL },
+            |m: &mut TrainPartyGameInstance| { &mut m.KLGBFLNJKBL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIANOFKNLHG",
+            |m: &TrainPartyGameInstance| { &m.AIANOFKNLHG },
+            |m: &mut TrainPartyGameInstance| { &mut m.AIANOFKNLHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPersistentPassenger::TrainPartyPersistentPassenger>(
             "train_party_persistent_passenger",
             |m: &TrainPartyGameInstance| { &m.train_party_persistent_passenger },
             |m: &mut TrainPartyGameInstance| { &mut m.train_party_persistent_passenger },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLGBFLNJKBL",
-            |m: &TrainPartyGameInstance| { &m.KLGBFLNJKBL },
-            |m: &mut TrainPartyGameInstance| { &mut m.KLGBFLNJKBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGameInstance>(
             "TrainPartyGameInstance",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for TrainPartyGameInstance {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.gameplay_data)?;
                 },
-                88 => {
-                    self.AIANOFKNLHG = is.read_uint32()?;
+                40 => {
+                    self.record_id = is.read_uint32()?;
                 },
-                58 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.build_info)?;
                 },
-                64 => {
-                    self.BLOEFNLOLLJ = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_persistent_passenger)?;
-                },
-                80 => {
+                72 => {
                     self.KLGBFLNJKBL = is.read_uint32()?;
+                },
+                120 => {
+                    self.AIANOFKNLHG = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_persistent_passenger)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,22 +141,22 @@ impl ::protobuf::Message for TrainPartyGameInstance {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.AIANOFKNLHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AIANOFKNLHG);
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.record_id);
         }
         if let Some(v) = self.build_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BLOEFNLOLLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BLOEFNLOLLJ);
+        if self.KLGBFLNJKBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KLGBFLNJKBL);
+        }
+        if self.AIANOFKNLHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.AIANOFKNLHG);
         }
         if let Some(v) = self.train_party_persistent_passenger.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.KLGBFLNJKBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KLGBFLNJKBL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,22 +165,22 @@ impl ::protobuf::Message for TrainPartyGameInstance {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.gameplay_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.AIANOFKNLHG != 0 {
-            os.write_uint32(11, self.AIANOFKNLHG)?;
+        if self.record_id != 0 {
+            os.write_uint32(5, self.record_id)?;
         }
         if let Some(v) = self.build_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.BLOEFNLOLLJ != 0 {
-            os.write_uint32(8, self.BLOEFNLOLLJ)?;
-        }
-        if let Some(v) = self.train_party_persistent_passenger.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.KLGBFLNJKBL != 0 {
-            os.write_uint32(10, self.KLGBFLNJKBL)?;
+            os.write_uint32(9, self.KLGBFLNJKBL)?;
+        }
+        if self.AIANOFKNLHG != 0 {
+            os.write_uint32(15, self.AIANOFKNLHG)?;
+        }
+        if let Some(v) = self.train_party_persistent_passenger.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,22 +200,22 @@ impl ::protobuf::Message for TrainPartyGameInstance {
 
     fn clear(&mut self) {
         self.gameplay_data.clear();
-        self.AIANOFKNLHG = 0;
+        self.record_id = 0;
         self.build_info.clear();
-        self.BLOEFNLOLLJ = 0;
-        self.train_party_persistent_passenger.clear();
         self.KLGBFLNJKBL = 0;
+        self.AIANOFKNLHG = 0;
+        self.train_party_persistent_passenger.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGameInstance {
         static instance: TrainPartyGameInstance = TrainPartyGameInstance {
             gameplay_data: ::protobuf::MessageField::none(),
-            AIANOFKNLHG: 0,
+            record_id: 0,
             build_info: ::protobuf::MessageField::none(),
-            BLOEFNLOLLJ: 0,
-            train_party_persistent_passenger: ::protobuf::MessageField::none(),
             KLGBFLNJKBL: 0,
+            AIANOFKNLHG: 0,
+            train_party_persistent_passenger: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -242,14 +242,14 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGameInstance {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyGameInstance.proto\x1a\x19TrainPartyBuildInfo.proto\x1a\
     \x1cTrainPartyGameplayData.proto\x1a#TrainPartyPersistentPassenger.proto\
-    \"\xda\x02\n\x16TrainPartyGameInstance\x12<\n\rgameplay_data\x18\x05\x20\
-    \x01(\x0b2\x17.TrainPartyGameplayDataR\x0cgameplayData\x12\x20\n\x0bAIAN\
-    OFKNLHG\x18\x0b\x20\x01(\rR\x0bAIANOFKNLHG\x123\n\nbuild_info\x18\x07\
-    \x20\x01(\x0b2\x14.TrainPartyBuildInfoR\tbuildInfo\x12\x20\n\x0bBLOEFNLO\
-    LLJ\x18\x08\x20\x01(\rR\x0bBLOEFNLOLLJ\x12g\n\x20train_party_persistent_\
-    passenger\x18\x0f\x20\x01(\x0b2\x1e.TrainPartyPersistentPassengerR\x1dtr\
-    ainPartyPersistentPassenger\x12\x20\n\x0bKLGBFLNJKBL\x18\n\x20\x01(\rR\
-    \x0bKLGBFLNJKBLb\x06proto3\
+    \"\xd5\x02\n\x16TrainPartyGameInstance\x12<\n\rgameplay_data\x18\x06\x20\
+    \x01(\x0b2\x17.TrainPartyGameplayDataR\x0cgameplayData\x12\x1b\n\trecord\
+    _id\x18\x05\x20\x01(\rR\x08recordId\x123\n\nbuild_info\x18\x0b\x20\x01(\
+    \x0b2\x14.TrainPartyBuildInfoR\tbuildInfo\x12\x20\n\x0bKLGBFLNJKBL\x18\t\
+    \x20\x01(\rR\x0bKLGBFLNJKBL\x12\x20\n\x0bAIANOFKNLHG\x18\x0f\x20\x01(\rR\
+    \x0bAIANOFKNLHG\x12g\n\x20train_party_persistent_passenger\x18\x03\x20\
+    \x01(\x0b2\x1e.TrainPartyPersistentPassengerR\x1dtrainPartyPersistentPas\
+    sengerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

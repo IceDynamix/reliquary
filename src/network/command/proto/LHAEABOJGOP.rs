@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHAEABOJGOP {
     // message fields
-    // @@protoc_insertion_point(field:LHAEABOJGOP.GPODHHAOHNP)
-    pub GPODHHAOHNP: bool,
-    // @@protoc_insertion_point(field:LHAEABOJGOP.KHJCGNLLFOH)
-    pub KHJCGNLLFOH: u32,
     // @@protoc_insertion_point(field:LHAEABOJGOP.LFPCCPOLJPC)
     pub LFPCCPOLJPC: u32,
+    // @@protoc_insertion_point(field:LHAEABOJGOP.KHJCGNLLFOH)
+    pub KHJCGNLLFOH: u32,
     // @@protoc_insertion_point(field:LHAEABOJGOP.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:LHAEABOJGOP.GPODHHAOHNP)
+    pub GPODHHAOHNP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LHAEABOJGOP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl LHAEABOJGOP {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPODHHAOHNP",
-            |m: &LHAEABOJGOP| { &m.GPODHHAOHNP },
-            |m: &mut LHAEABOJGOP| { &mut m.GPODHHAOHNP },
+            "LFPCCPOLJPC",
+            |m: &LHAEABOJGOP| { &m.LFPCCPOLJPC },
+            |m: &mut LHAEABOJGOP| { &mut m.LFPCCPOLJPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KHJCGNLLFOH",
@@ -66,14 +66,14 @@ impl LHAEABOJGOP {
             |m: &mut LHAEABOJGOP| { &mut m.KHJCGNLLFOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFPCCPOLJPC",
-            |m: &LHAEABOJGOP| { &m.LFPCCPOLJPC },
-            |m: &mut LHAEABOJGOP| { &mut m.LFPCCPOLJPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
             |m: &LHAEABOJGOP| { &m.end_time },
             |m: &mut LHAEABOJGOP| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPODHHAOHNP",
+            |m: &LHAEABOJGOP| { &m.GPODHHAOHNP },
+            |m: &mut LHAEABOJGOP| { &mut m.GPODHHAOHNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHAEABOJGOP>(
             "LHAEABOJGOP",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LHAEABOJGOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GPODHHAOHNP = is.read_bool()?;
-                },
-                80 => {
-                    self.KHJCGNLLFOH = is.read_uint32()?;
-                },
-                72 => {
+                24 => {
                     self.LFPCCPOLJPC = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
+                    self.KHJCGNLLFOH = is.read_uint32()?;
+                },
+                112 => {
                     self.end_time = is.read_int64()?;
+                },
+                48 => {
+                    self.GPODHHAOHNP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for LHAEABOJGOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPODHHAOHNP != false {
-            my_size += 1 + 1;
+        if self.LFPCCPOLJPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LFPCCPOLJPC);
         }
         if self.KHJCGNLLFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KHJCGNLLFOH);
-        }
-        if self.LFPCCPOLJPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LFPCCPOLJPC);
+            my_size += ::protobuf::rt::uint32_size(12, self.KHJCGNLLFOH);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.end_time);
+            my_size += ::protobuf::rt::int64_size(14, self.end_time);
+        }
+        if self.GPODHHAOHNP != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for LHAEABOJGOP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPODHHAOHNP != false {
-            os.write_bool(4, self.GPODHHAOHNP)?;
+        if self.LFPCCPOLJPC != 0 {
+            os.write_uint32(3, self.LFPCCPOLJPC)?;
         }
         if self.KHJCGNLLFOH != 0 {
-            os.write_uint32(10, self.KHJCGNLLFOH)?;
-        }
-        if self.LFPCCPOLJPC != 0 {
-            os.write_uint32(9, self.LFPCCPOLJPC)?;
+            os.write_uint32(12, self.KHJCGNLLFOH)?;
         }
         if self.end_time != 0 {
-            os.write_int64(7, self.end_time)?;
+            os.write_int64(14, self.end_time)?;
+        }
+        if self.GPODHHAOHNP != false {
+            os.write_bool(6, self.GPODHHAOHNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for LHAEABOJGOP {
     }
 
     fn clear(&mut self) {
-        self.GPODHHAOHNP = false;
-        self.KHJCGNLLFOH = 0;
         self.LFPCCPOLJPC = 0;
+        self.KHJCGNLLFOH = 0;
         self.end_time = 0;
+        self.GPODHHAOHNP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHAEABOJGOP {
         static instance: LHAEABOJGOP = LHAEABOJGOP {
-            GPODHHAOHNP: false,
-            KHJCGNLLFOH: 0,
             LFPCCPOLJPC: 0,
+            KHJCGNLLFOH: 0,
             end_time: 0,
+            GPODHHAOHNP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for LHAEABOJGOP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHAEABOJGOP.proto\"\x8e\x01\n\x0bLHAEABOJGOP\x12\x20\n\x0bGPODHHAO\
-    HNP\x18\x04\x20\x01(\x08R\x0bGPODHHAOHNP\x12\x20\n\x0bKHJCGNLLFOH\x18\n\
-    \x20\x01(\rR\x0bKHJCGNLLFOH\x12\x20\n\x0bLFPCCPOLJPC\x18\t\x20\x01(\rR\
-    \x0bLFPCCPOLJPC\x12\x19\n\x08end_time\x18\x07\x20\x01(\x03R\x07endTimeb\
-    \x06proto3\
+    \n\x11LHAEABOJGOP.proto\"\x8e\x01\n\x0bLHAEABOJGOP\x12\x20\n\x0bLFPCCPOL\
+    JPC\x18\x03\x20\x01(\rR\x0bLFPCCPOLJPC\x12\x20\n\x0bKHJCGNLLFOH\x18\x0c\
+    \x20\x01(\rR\x0bKHJCGNLLFOH\x12\x19\n\x08end_time\x18\x0e\x20\x01(\x03R\
+    \x07endTime\x12\x20\n\x0bGPODHHAOHNP\x18\x06\x20\x01(\x08R\x0bGPODHHAOHN\
+    Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

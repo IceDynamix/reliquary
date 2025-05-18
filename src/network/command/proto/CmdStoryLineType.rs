@@ -30,15 +30,15 @@ pub enum CmdStoryLineType {
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineTypeNone)
     CmdStoryLineTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdChangeStoryLineFinishScNotify)
-    CmdChangeStoryLineFinishScNotify = 6206,
-    // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineInfoScNotify)
-    CmdStoryLineInfoScNotify = 6247,
+    CmdChangeStoryLineFinishScNotify = 6248,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdGetStoryLineInfoCsReq)
-    CmdGetStoryLineInfoCsReq = 6211,
-    // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdGetStoryLineInfoScRsp)
-    CmdGetStoryLineInfoScRsp = 6213,
+    CmdGetStoryLineInfoCsReq = 6295,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineTrialAvatarChangeScNotify)
-    CmdStoryLineTrialAvatarChangeScNotify = 6270,
+    CmdStoryLineTrialAvatarChangeScNotify = 6271,
+    // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineInfoScNotify)
+    CmdStoryLineInfoScNotify = 6231,
+    // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdGetStoryLineInfoScRsp)
+    CmdGetStoryLineInfoScRsp = 6232,
 }
 
 impl ::protobuf::Enum for CmdStoryLineType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdStoryLineType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdStoryLineType> {
         match value {
             0 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTypeNone),
-            6206 => ::std::option::Option::Some(CmdStoryLineType::CmdChangeStoryLineFinishScNotify),
-            6247 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
-            6211 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoCsReq),
-            6213 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
-            6270 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify),
+            6248 => ::std::option::Option::Some(CmdStoryLineType::CmdChangeStoryLineFinishScNotify),
+            6295 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoCsReq),
+            6271 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify),
+            6231 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
+            6232 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -64,10 +64,10 @@ impl ::protobuf::Enum for CmdStoryLineType {
         match str {
             "CmdStoryLineTypeNone" => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTypeNone),
             "CmdChangeStoryLineFinishScNotify" => ::std::option::Option::Some(CmdStoryLineType::CmdChangeStoryLineFinishScNotify),
-            "CmdStoryLineInfoScNotify" => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
             "CmdGetStoryLineInfoCsReq" => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoCsReq),
-            "CmdGetStoryLineInfoScRsp" => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
             "CmdStoryLineTrialAvatarChangeScNotify" => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify),
+            "CmdStoryLineInfoScNotify" => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
+            "CmdGetStoryLineInfoScRsp" => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -75,10 +75,10 @@ impl ::protobuf::Enum for CmdStoryLineType {
     const VALUES: &'static [CmdStoryLineType] = &[
         CmdStoryLineType::CmdStoryLineTypeNone,
         CmdStoryLineType::CmdChangeStoryLineFinishScNotify,
-        CmdStoryLineType::CmdStoryLineInfoScNotify,
         CmdStoryLineType::CmdGetStoryLineInfoCsReq,
-        CmdStoryLineType::CmdGetStoryLineInfoScRsp,
         CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify,
+        CmdStoryLineType::CmdStoryLineInfoScNotify,
+        CmdStoryLineType::CmdGetStoryLineInfoScRsp,
     ];
 }
 
@@ -92,10 +92,10 @@ impl ::protobuf::EnumFull for CmdStoryLineType {
         let index = match self {
             CmdStoryLineType::CmdStoryLineTypeNone => 0,
             CmdStoryLineType::CmdChangeStoryLineFinishScNotify => 1,
-            CmdStoryLineType::CmdStoryLineInfoScNotify => 2,
-            CmdStoryLineType::CmdGetStoryLineInfoCsReq => 3,
-            CmdStoryLineType::CmdGetStoryLineInfoScRsp => 4,
-            CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify => 5,
+            CmdStoryLineType::CmdGetStoryLineInfoCsReq => 2,
+            CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify => 3,
+            CmdStoryLineType::CmdStoryLineInfoScNotify => 4,
+            CmdStoryLineType::CmdGetStoryLineInfoScRsp => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -116,10 +116,9 @@ impl CmdStoryLineType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdStoryLineType.proto*\xdc\x01\n\x10CmdStoryLineType\x12\x18\n\
     \x14CmdStoryLineTypeNone\x10\0\x12%\n\x20CmdChangeStoryLineFinishScNotif\
-    y\x10\xbe0\x12\x1d\n\x18CmdStoryLineInfoScNotify\x10\xe70\x12\x1d\n\x18C\
-    mdGetStoryLineInfoCsReq\x10\xc30\x12\x1d\n\x18CmdGetStoryLineInfoScRsp\
-    \x10\xc50\x12*\n%CmdStoryLineTrialAvatarChangeScNotify\x10\xfe0b\x06prot\
-    o3\
+    y\x10\xe80\x12\x1d\n\x18CmdGetStoryLineInfoCsReq\x10\x971\x12*\n%CmdStor\
+    yLineTrialAvatarChangeScNotify\x10\xff0\x12\x1d\n\x18CmdStoryLineInfoScN\
+    otify\x10\xd70\x12\x1d\n\x18CmdGetStoryLineInfoScRsp\x10\xd80b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

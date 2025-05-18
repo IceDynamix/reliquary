@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightActivityGroup {
     // message fields
+    // @@protoc_insertion_point(field:FightActivityGroup.taken_difficulty_level_reward_list)
+    pub taken_difficulty_level_reward_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FightActivityGroup.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:FightActivityGroup.passed_max_difficulty_level)
     pub passed_max_difficulty_level: u32,
-    // @@protoc_insertion_point(field:FightActivityGroup.taken_difficulty_level_reward_list)
-    pub taken_difficulty_level_reward_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FightActivityGroup.endless_max_wave)
     pub endless_max_wave: u32,
     // special fields
@@ -55,6 +55,11 @@ impl FightActivityGroup {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "taken_difficulty_level_reward_list",
+            |m: &FightActivityGroup| { &m.taken_difficulty_level_reward_list },
+            |m: &mut FightActivityGroup| { &mut m.taken_difficulty_level_reward_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &FightActivityGroup| { &m.group_id },
@@ -64,11 +69,6 @@ impl FightActivityGroup {
             "passed_max_difficulty_level",
             |m: &FightActivityGroup| { &m.passed_max_difficulty_level },
             |m: &mut FightActivityGroup| { &mut m.passed_max_difficulty_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "taken_difficulty_level_reward_list",
-            |m: &FightActivityGroup| { &m.taken_difficulty_level_reward_list },
-            |m: &mut FightActivityGroup| { &mut m.taken_difficulty_level_reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "endless_max_wave",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for FightActivityGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.passed_max_difficulty_level = is.read_uint32()?;
-                },
-                74 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_difficulty_level_reward_list)?;
                 },
-                72 => {
+                80 => {
                     self.taken_difficulty_level_reward_list.push(is.read_uint32()?);
                 },
-                64 => {
+                72 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.passed_max_difficulty_level = is.read_uint32()?;
+                },
+                120 => {
                     self.endless_max_wave = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for FightActivityGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.taken_difficulty_level_reward_list);
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
         }
         if self.passed_max_difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.passed_max_difficulty_level);
+            my_size += ::protobuf::rt::uint32_size(14, self.passed_max_difficulty_level);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.taken_difficulty_level_reward_list);
         if self.endless_max_wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.endless_max_wave);
+            my_size += ::protobuf::rt::uint32_size(15, self.endless_max_wave);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for FightActivityGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(10, &self.taken_difficulty_level_reward_list)?;
         if self.group_id != 0 {
-            os.write_uint32(3, self.group_id)?;
+            os.write_uint32(9, self.group_id)?;
         }
         if self.passed_max_difficulty_level != 0 {
-            os.write_uint32(5, self.passed_max_difficulty_level)?;
+            os.write_uint32(14, self.passed_max_difficulty_level)?;
         }
-        os.write_repeated_packed_uint32(9, &self.taken_difficulty_level_reward_list)?;
         if self.endless_max_wave != 0 {
-            os.write_uint32(8, self.endless_max_wave)?;
+            os.write_uint32(15, self.endless_max_wave)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for FightActivityGroup {
     }
 
     fn clear(&mut self) {
+        self.taken_difficulty_level_reward_list.clear();
         self.group_id = 0;
         self.passed_max_difficulty_level = 0;
-        self.taken_difficulty_level_reward_list.clear();
         self.endless_max_wave = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightActivityGroup {
         static instance: FightActivityGroup = FightActivityGroup {
+            taken_difficulty_level_reward_list: ::std::vec::Vec::new(),
             group_id: 0,
             passed_max_difficulty_level: 0,
-            taken_difficulty_level_reward_list: ::std::vec::Vec::new(),
             endless_max_wave: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,12 +200,12 @@ impl ::protobuf::reflect::ProtobufValue for FightActivityGroup {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FightActivityGroup.proto\"\xe4\x01\n\x12FightActivityGroup\x12\x19\
-    \n\x08group_id\x18\x03\x20\x01(\rR\x07groupId\x12=\n\x1bpassed_max_diffi\
-    culty_level\x18\x05\x20\x01(\rR\x18passedMaxDifficultyLevel\x12J\n\"take\
-    n_difficulty_level_reward_list\x18\t\x20\x03(\rR\x1etakenDifficultyLevel\
-    RewardList\x12(\n\x10endless_max_wave\x18\x08\x20\x01(\rR\x0eendlessMaxW\
-    aveb\x06proto3\
+    \n\x18FightActivityGroup.proto\"\xe4\x01\n\x12FightActivityGroup\x12J\n\
+    \"taken_difficulty_level_reward_list\x18\n\x20\x03(\rR\x1etakenDifficult\
+    yLevelRewardList\x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07groupId\x12=\
+    \n\x1bpassed_max_difficulty_level\x18\x0e\x20\x01(\rR\x18passedMaxDiffic\
+    ultyLevel\x12(\n\x10endless_max_wave\x18\x0f\x20\x01(\rR\x0eendlessMaxWa\
+    veb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

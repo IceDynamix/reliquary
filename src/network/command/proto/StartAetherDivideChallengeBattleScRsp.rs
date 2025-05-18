@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct StartAetherDivideChallengeBattleScRsp {
     // message fields
     // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleScRsp.battle_info)
-    pub battle_info: ::protobuf::MessageField<super::BBDIKGEJBMP::BBDIKGEJBMP>,
+    pub battle_info: ::protobuf::MessageField<super::AetherDivideBattleInfo::AetherDivideBattleInfo>,
     // @@protoc_insertion_point(field:StartAetherDivideChallengeBattleScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,7 +51,7 @@ impl StartAetherDivideChallengeBattleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBDIKGEJBMP::BBDIKGEJBMP>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AetherDivideBattleInfo::AetherDivideBattleInfo>(
             "battle_info",
             |m: &StartAetherDivideChallengeBattleScRsp| { &m.battle_info },
             |m: &mut StartAetherDivideChallengeBattleScRsp| { &mut m.battle_info },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                96 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideChallengeBattleScRs
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+StartAetherDivideChallengeBattleScRsp.proto\x1a\x11BBDIKGEJBMP.proto\
-    \"p\n%StartAetherDivideChallengeBattleScRsp\x12-\n\x0bbattle_info\x18\
-    \x06\x20\x01(\x0b2\x0c.BBDIKGEJBMPR\nbattleInfo\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n+StartAetherDivideChallengeBattleScRsp.proto\x1a\x1cAetherDivideBattle\
+    Info.proto\"{\n%StartAetherDivideChallengeBattleScRsp\x128\n\x0bbattle_i\
+    nfo\x18\t\x20\x01(\x0b2\x17.AetherDivideBattleInfoR\nbattleInfo\x12\x18\
+    \n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BBDIKGEJBMP::file_descriptor().clone());
+            deps.push(super::AetherDivideBattleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartAetherDivideChallengeBattleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

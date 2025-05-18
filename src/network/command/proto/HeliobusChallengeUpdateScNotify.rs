@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusChallengeUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusChallengeUpdateScNotify.DDDIKPNNBLE)
-    pub DDDIKPNNBLE: ::protobuf::MessageField<super::JMIJJHKIBLB::JMIJJHKIBLB>,
+    // @@protoc_insertion_point(field:HeliobusChallengeUpdateScNotify.challenge)
+    pub challenge: ::protobuf::MessageField<super::JMIJJHKIBLB::JMIJJHKIBLB>,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusChallengeUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl HeliobusChallengeUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMIJJHKIBLB::JMIJJHKIBLB>(
-            "DDDIKPNNBLE",
-            |m: &HeliobusChallengeUpdateScNotify| { &m.DDDIKPNNBLE },
-            |m: &mut HeliobusChallengeUpdateScNotify| { &mut m.DDDIKPNNBLE },
+            "challenge",
+            |m: &HeliobusChallengeUpdateScNotify| { &m.challenge },
+            |m: &mut HeliobusChallengeUpdateScNotify| { &mut m.challenge },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusChallengeUpdateScNotify>(
             "HeliobusChallengeUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDDIKPNNBLE)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DDDIKPNNBLE.as_ref() {
+        if let Some(v) = self.challenge.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DDDIKPNNBLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.challenge.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HeliobusChallengeUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.DDDIKPNNBLE.clear();
+        self.challenge.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusChallengeUpdateScNotify {
         static instance: HeliobusChallengeUpdateScNotify = HeliobusChallengeUpdateScNotify {
-            DDDIKPNNBLE: ::protobuf::MessageField::none(),
+            challenge: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusChallengeUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%HeliobusChallengeUpdateScNotify.proto\x1a\x11JMIJJHKIBLB.proto\"Q\n\
-    \x1fHeliobusChallengeUpdateScNotify\x12.\n\x0bDDDIKPNNBLE\x18\t\x20\x01(\
-    \x0b2\x0c.JMIJJHKIBLBR\x0bDDDIKPNNBLEb\x06proto3\
+    \n%HeliobusChallengeUpdateScNotify.proto\x1a\x11JMIJJHKIBLB.proto\"M\n\
+    \x1fHeliobusChallengeUpdateScNotify\x12*\n\tchallenge\x18\x0b\x20\x01(\
+    \x0b2\x0c.JMIJJHKIBLBR\tchallengeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

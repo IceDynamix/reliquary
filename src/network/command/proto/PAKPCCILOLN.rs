@@ -30,12 +30,12 @@ pub struct PAKPCCILOLN {
     // message fields
     // @@protoc_insertion_point(field:PAKPCCILOLN.DNKJDJJBCDK)
     pub DNKJDJJBCDK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PAKPCCILOLN.NBBOABGLCJC)
-    pub NBBOABGLCJC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PAKPCCILOLN.OJAMOBMGFBD)
     pub OJAMOBMGFBD: u32,
     // @@protoc_insertion_point(field:PAKPCCILOLN.BLPBIGKJPCH)
     pub BLPBIGKJPCH: u32,
+    // @@protoc_insertion_point(field:PAKPCCILOLN.NBBOABGLCJC)
+    pub NBBOABGLCJC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PAKPCCILOLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl PAKPCCILOLN {
             |m: &PAKPCCILOLN| { &m.DNKJDJJBCDK },
             |m: &mut PAKPCCILOLN| { &mut m.DNKJDJJBCDK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBBOABGLCJC",
-            |m: &PAKPCCILOLN| { &m.NBBOABGLCJC },
-            |m: &mut PAKPCCILOLN| { &mut m.NBBOABGLCJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OJAMOBMGFBD",
             |m: &PAKPCCILOLN| { &m.OJAMOBMGFBD },
@@ -74,6 +69,11 @@ impl PAKPCCILOLN {
             "BLPBIGKJPCH",
             |m: &PAKPCCILOLN| { &m.BLPBIGKJPCH },
             |m: &mut PAKPCCILOLN| { &mut m.BLPBIGKJPCH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NBBOABGLCJC",
+            |m: &PAKPCCILOLN| { &m.NBBOABGLCJC },
+            |m: &mut PAKPCCILOLN| { &mut m.NBBOABGLCJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAKPCCILOLN>(
             "PAKPCCILOLN",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for PAKPCCILOLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.DNKJDJJBCDK)?;
                 },
-                16 => {
+                8 => {
                     self.DNKJDJJBCDK.push(is.read_uint32()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NBBOABGLCJC)?;
-                },
-                96 => {
-                    self.NBBOABGLCJC.push(is.read_uint32()?);
-                },
-                64 => {
+                48 => {
                     self.OJAMOBMGFBD = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.BLPBIGKJPCH = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NBBOABGLCJC)?;
+                },
+                40 => {
+                    self.NBBOABGLCJC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for PAKPCCILOLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DNKJDJJBCDK);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.NBBOABGLCJC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DNKJDJJBCDK);
         if self.OJAMOBMGFBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OJAMOBMGFBD);
+            my_size += ::protobuf::rt::uint32_size(6, self.OJAMOBMGFBD);
         }
         if self.BLPBIGKJPCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BLPBIGKJPCH);
+            my_size += ::protobuf::rt::uint32_size(12, self.BLPBIGKJPCH);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NBBOABGLCJC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.DNKJDJJBCDK)?;
-        os.write_repeated_packed_uint32(12, &self.NBBOABGLCJC)?;
+        os.write_repeated_packed_uint32(1, &self.DNKJDJJBCDK)?;
         if self.OJAMOBMGFBD != 0 {
-            os.write_uint32(8, self.OJAMOBMGFBD)?;
+            os.write_uint32(6, self.OJAMOBMGFBD)?;
         }
         if self.BLPBIGKJPCH != 0 {
-            os.write_uint32(11, self.BLPBIGKJPCH)?;
+            os.write_uint32(12, self.BLPBIGKJPCH)?;
         }
+        os.write_repeated_packed_uint32(5, &self.NBBOABGLCJC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for PAKPCCILOLN {
 
     fn clear(&mut self) {
         self.DNKJDJJBCDK.clear();
-        self.NBBOABGLCJC.clear();
         self.OJAMOBMGFBD = 0;
         self.BLPBIGKJPCH = 0;
+        self.NBBOABGLCJC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAKPCCILOLN {
         static instance: PAKPCCILOLN = PAKPCCILOLN {
             DNKJDJJBCDK: ::std::vec::Vec::new(),
-            NBBOABGLCJC: ::std::vec::Vec::new(),
             OJAMOBMGFBD: 0,
             BLPBIGKJPCH: 0,
+            NBBOABGLCJC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for PAKPCCILOLN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PAKPCCILOLN.proto\"\x95\x01\n\x0bPAKPCCILOLN\x12\x20\n\x0bDNKJDJJB\
-    CDK\x18\x02\x20\x03(\rR\x0bDNKJDJJBCDK\x12\x20\n\x0bNBBOABGLCJC\x18\x0c\
-    \x20\x03(\rR\x0bNBBOABGLCJC\x12\x20\n\x0bOJAMOBMGFBD\x18\x08\x20\x01(\rR\
-    \x0bOJAMOBMGFBD\x12\x20\n\x0bBLPBIGKJPCH\x18\x0b\x20\x01(\rR\x0bBLPBIGKJ\
-    PCHb\x06proto3\
+    CDK\x18\x01\x20\x03(\rR\x0bDNKJDJJBCDK\x12\x20\n\x0bOJAMOBMGFBD\x18\x06\
+    \x20\x01(\rR\x0bOJAMOBMGFBD\x12\x20\n\x0bBLPBIGKJPCH\x18\x0c\x20\x01(\rR\
+    \x0bBLPBIGKJPCH\x12\x20\n\x0bNBBOABGLCJC\x18\x05\x20\x03(\rR\x0bNBBOABGL\
+    CJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

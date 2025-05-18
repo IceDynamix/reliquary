@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueReviveInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueReviveInfoScNotify.FPJCKPNLNFM)
-    pub FPJCKPNLNFM: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
+    // @@protoc_insertion_point(field:SyncRogueReviveInfoScNotify.revive_info)
+    pub revive_info: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueReviveInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRogueReviveInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJJGLGPEDEE::EJJGLGPEDEE>(
-            "FPJCKPNLNFM",
-            |m: &SyncRogueReviveInfoScNotify| { &m.FPJCKPNLNFM },
-            |m: &mut SyncRogueReviveInfoScNotify| { &mut m.FPJCKPNLNFM },
+            "revive_info",
+            |m: &SyncRogueReviveInfoScNotify| { &m.revive_info },
+            |m: &mut SyncRogueReviveInfoScNotify| { &mut m.revive_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueReviveInfoScNotify>(
             "SyncRogueReviveInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPJCKPNLNFM)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FPJCKPNLNFM.as_ref() {
+        if let Some(v) = self.revive_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FPJCKPNLNFM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.revive_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRogueReviveInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.FPJCKPNLNFM.clear();
+        self.revive_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueReviveInfoScNotify {
         static instance: SyncRogueReviveInfoScNotify = SyncRogueReviveInfoScNotify {
-            FPJCKPNLNFM: ::protobuf::MessageField::none(),
+            revive_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueReviveInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SyncRogueReviveInfoScNotify.proto\x1a\x11EJJGLGPEDEE.proto\"M\n\x1bSy\
-    ncRogueReviveInfoScNotify\x12.\n\x0bFPJCKPNLNFM\x18\n\x20\x01(\x0b2\x0c.\
-    EJJGLGPEDEER\x0bFPJCKPNLNFMb\x06proto3\
+    \n!SyncRogueReviveInfoScNotify.proto\x1a\x11EJJGLGPEDEE.proto\"L\n\x1bSy\
+    ncRogueReviveInfoScNotify\x12-\n\x0brevive_info\x18\x0c\x20\x01(\x0b2\
+    \x0c.EJJGLGPEDEER\nreviveInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ServerLogSettings {
     // message fields
-    // @@protoc_insertion_point(field:ServerLogSettings.notify_level)
-    pub notify_level: ::protobuf::EnumOrUnknown<super::ServerLogLevel::ServerLogLevel>,
     // @@protoc_insertion_point(field:ServerLogSettings.notify_tag_list)
     pub notify_tag_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::ServerLogTag::ServerLogTag>>,
+    // @@protoc_insertion_point(field:ServerLogSettings.notify_level)
+    pub notify_level: ::protobuf::EnumOrUnknown<super::ServerLogLevel::ServerLogLevel>,
     // special fields
     // @@protoc_insertion_point(special_field:ServerLogSettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ServerLogSettings {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "notify_level",
-            |m: &ServerLogSettings| { &m.notify_level },
-            |m: &mut ServerLogSettings| { &mut m.notify_level },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "notify_tag_list",
             |m: &ServerLogSettings| { &m.notify_tag_list },
             |m: &mut ServerLogSettings| { &mut m.notify_tag_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "notify_level",
+            |m: &ServerLogSettings| { &m.notify_level },
+            |m: &mut ServerLogSettings| { &mut m.notify_level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ServerLogSettings>(
             "ServerLogSettings",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for ServerLogSettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.notify_level = is.read_enum_or_unknown()?;
-                },
-                64 => {
+                80 => {
                     self.notify_tag_list.push(is.read_enum_or_unknown()?);
                 },
-                66 => {
+                82 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.notify_tag_list)?
+                },
+                112 => {
+                    self.notify_level = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ServerLogSettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(10, &self.notify_tag_list);
         if self.notify_level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.notify_level.value());
+            my_size += ::protobuf::rt::int32_size(14, self.notify_level.value());
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.notify_tag_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_enum_or_unknown(10, &self.notify_tag_list)?;
         if self.notify_level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.notify_level))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.notify_level))?;
         }
-        os.write_repeated_packed_enum_or_unknown(8, &self.notify_tag_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for ServerLogSettings {
     }
 
     fn clear(&mut self) {
-        self.notify_level = ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE);
         self.notify_tag_list.clear();
+        self.notify_level = ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ServerLogSettings {
         static instance: ServerLogSettings = ServerLogSettings {
-            notify_level: ::protobuf::EnumOrUnknown::from_i32(0),
             notify_tag_list: ::std::vec::Vec::new(),
+            notify_level: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ServerLogSettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ServerLogSettings.proto\x1a\x14ServerLogLevel.proto\x1a\x12ServerL\
-    ogTag.proto\"~\n\x11ServerLogSettings\x122\n\x0cnotify_level\x18\r\x20\
-    \x01(\x0e2\x0f.ServerLogLevelR\x0bnotifyLevel\x125\n\x0fnotify_tag_list\
-    \x18\x08\x20\x03(\x0e2\r.ServerLogTagR\rnotifyTagListb\x06proto3\
+    ogTag.proto\"~\n\x11ServerLogSettings\x125\n\x0fnotify_tag_list\x18\n\
+    \x20\x03(\x0e2\r.ServerLogTagR\rnotifyTagList\x122\n\x0cnotify_level\x18\
+    \x0e\x20\x01(\x0e2\x0f.ServerLogLevelR\x0bnotifyLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

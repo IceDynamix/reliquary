@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMEAOCPFEOL {
     // message fields
-    // @@protoc_insertion_point(field:JMEAOCPFEOL.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:JMEAOCPFEOL.HIHLGAGHLNI)
-    pub HIHLGAGHLNI: u32,
-    // @@protoc_insertion_point(field:JMEAOCPFEOL.CDNNGAGBAAK)
-    pub CDNNGAGBAAK: u32,
-    // @@protoc_insertion_point(field:JMEAOCPFEOL.BOJMNAFDJKH)
-    pub BOJMNAFDJKH: ::std::vec::Vec<super::OPGJGDOGGNJ::OPGJGDOGGNJ>,
     // @@protoc_insertion_point(field:JMEAOCPFEOL.HJJFMDHEAPB)
     pub HJJFMDHEAPB: u32,
+    // @@protoc_insertion_point(field:JMEAOCPFEOL.BOJMNAFDJKH)
+    pub BOJMNAFDJKH: ::std::vec::Vec<super::OPGJGDOGGNJ::OPGJGDOGGNJ>,
+    // @@protoc_insertion_point(field:JMEAOCPFEOL.HIHLGAGHLNI)
+    pub HIHLGAGHLNI: u32,
+    // @@protoc_insertion_point(field:JMEAOCPFEOL.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:JMEAOCPFEOL.CDNNGAGBAAK)
+    pub CDNNGAGBAAK: u32,
     // @@protoc_insertion_point(field:JMEAOCPFEOL.area_id)
     pub area_id: u32,
     // special fields
@@ -60,19 +60,9 @@ impl JMEAOCPFEOL {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &JMEAOCPFEOL| { &m.level },
-            |m: &mut JMEAOCPFEOL| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIHLGAGHLNI",
-            |m: &JMEAOCPFEOL| { &m.HIHLGAGHLNI },
-            |m: &mut JMEAOCPFEOL| { &mut m.HIHLGAGHLNI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDNNGAGBAAK",
-            |m: &JMEAOCPFEOL| { &m.CDNNGAGBAAK },
-            |m: &mut JMEAOCPFEOL| { &mut m.CDNNGAGBAAK },
+            "HJJFMDHEAPB",
+            |m: &JMEAOCPFEOL| { &m.HJJFMDHEAPB },
+            |m: &mut JMEAOCPFEOL| { &mut m.HJJFMDHEAPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BOJMNAFDJKH",
@@ -80,9 +70,19 @@ impl JMEAOCPFEOL {
             |m: &mut JMEAOCPFEOL| { &mut m.BOJMNAFDJKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJJFMDHEAPB",
-            |m: &JMEAOCPFEOL| { &m.HJJFMDHEAPB },
-            |m: &mut JMEAOCPFEOL| { &mut m.HJJFMDHEAPB },
+            "HIHLGAGHLNI",
+            |m: &JMEAOCPFEOL| { &m.HIHLGAGHLNI },
+            |m: &mut JMEAOCPFEOL| { &mut m.HIHLGAGHLNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &JMEAOCPFEOL| { &m.level },
+            |m: &mut JMEAOCPFEOL| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDNNGAGBAAK",
+            |m: &JMEAOCPFEOL| { &m.CDNNGAGBAAK },
+            |m: &mut JMEAOCPFEOL| { &mut m.CDNNGAGBAAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -107,20 +107,20 @@ impl ::protobuf::Message for JMEAOCPFEOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.level = is.read_uint32()?;
-                },
-                48 => {
-                    self.HIHLGAGHLNI = is.read_uint32()?;
-                },
-                104 => {
-                    self.CDNNGAGBAAK = is.read_uint32()?;
+                96 => {
+                    self.HJJFMDHEAPB = is.read_uint32()?;
                 },
                 58 => {
                     self.BOJMNAFDJKH.push(is.read_message()?);
                 },
-                112 => {
-                    self.HJJFMDHEAPB = is.read_uint32()?;
+                32 => {
+                    self.HIHLGAGHLNI = is.read_uint32()?;
+                },
+                48 => {
+                    self.level = is.read_uint32()?;
+                },
+                72 => {
+                    self.CDNNGAGBAAK = is.read_uint32()?;
                 },
                 80 => {
                     self.area_id = is.read_uint32()?;
@@ -137,21 +137,21 @@ impl ::protobuf::Message for JMEAOCPFEOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
-        }
-        if self.HIHLGAGHLNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HIHLGAGHLNI);
-        }
-        if self.CDNNGAGBAAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CDNNGAGBAAK);
+        if self.HJJFMDHEAPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HJJFMDHEAPB);
         }
         for value in &self.BOJMNAFDJKH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HJJFMDHEAPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HJJFMDHEAPB);
+        if self.HIHLGAGHLNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HIHLGAGHLNI);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        }
+        if self.CDNNGAGBAAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CDNNGAGBAAK);
         }
         if self.area_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.area_id);
@@ -162,20 +162,20 @@ impl ::protobuf::Message for JMEAOCPFEOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(8, self.level)?;
-        }
-        if self.HIHLGAGHLNI != 0 {
-            os.write_uint32(6, self.HIHLGAGHLNI)?;
-        }
-        if self.CDNNGAGBAAK != 0 {
-            os.write_uint32(13, self.CDNNGAGBAAK)?;
+        if self.HJJFMDHEAPB != 0 {
+            os.write_uint32(12, self.HJJFMDHEAPB)?;
         }
         for v in &self.BOJMNAFDJKH {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.HJJFMDHEAPB != 0 {
-            os.write_uint32(14, self.HJJFMDHEAPB)?;
+        if self.HIHLGAGHLNI != 0 {
+            os.write_uint32(4, self.HIHLGAGHLNI)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(6, self.level)?;
+        }
+        if self.CDNNGAGBAAK != 0 {
+            os.write_uint32(9, self.CDNNGAGBAAK)?;
         }
         if self.area_id != 0 {
             os.write_uint32(10, self.area_id)?;
@@ -197,22 +197,22 @@ impl ::protobuf::Message for JMEAOCPFEOL {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.HIHLGAGHLNI = 0;
-        self.CDNNGAGBAAK = 0;
-        self.BOJMNAFDJKH.clear();
         self.HJJFMDHEAPB = 0;
+        self.BOJMNAFDJKH.clear();
+        self.HIHLGAGHLNI = 0;
+        self.level = 0;
+        self.CDNNGAGBAAK = 0;
         self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMEAOCPFEOL {
         static instance: JMEAOCPFEOL = JMEAOCPFEOL {
-            level: 0,
-            HIHLGAGHLNI: 0,
-            CDNNGAGBAAK: 0,
-            BOJMNAFDJKH: ::std::vec::Vec::new(),
             HJJFMDHEAPB: 0,
+            BOJMNAFDJKH: ::std::vec::Vec::new(),
+            HIHLGAGHLNI: 0,
+            level: 0,
+            CDNNGAGBAAK: 0,
             area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for JMEAOCPFEOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JMEAOCPFEOL.proto\x1a\x11OPGJGDOGGNJ.proto\"\xd2\x01\n\x0bJMEAOCPF\
-    EOL\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x20\n\x0bHIHLGAG\
-    HLNI\x18\x06\x20\x01(\rR\x0bHIHLGAGHLNI\x12\x20\n\x0bCDNNGAGBAAK\x18\r\
-    \x20\x01(\rR\x0bCDNNGAGBAAK\x12.\n\x0bBOJMNAFDJKH\x18\x07\x20\x03(\x0b2\
-    \x0c.OPGJGDOGGNJR\x0bBOJMNAFDJKH\x12\x20\n\x0bHJJFMDHEAPB\x18\x0e\x20\
-    \x01(\rR\x0bHJJFMDHEAPB\x12\x17\n\x07area_id\x18\n\x20\x01(\rR\x06areaId\
-    b\x06proto3\
+    EOL\x12\x20\n\x0bHJJFMDHEAPB\x18\x0c\x20\x01(\rR\x0bHJJFMDHEAPB\x12.\n\
+    \x0bBOJMNAFDJKH\x18\x07\x20\x03(\x0b2\x0c.OPGJGDOGGNJR\x0bBOJMNAFDJKH\
+    \x12\x20\n\x0bHIHLGAGHLNI\x18\x04\x20\x01(\rR\x0bHIHLGAGHLNI\x12\x14\n\
+    \x05level\x18\x06\x20\x01(\rR\x05level\x12\x20\n\x0bCDNNGAGBAAK\x18\t\
+    \x20\x01(\rR\x0bCDNNGAGBAAK\x12\x17\n\x07area_id\x18\n\x20\x01(\rR\x06ar\
+    eaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

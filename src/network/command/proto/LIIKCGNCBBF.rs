@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LIIKCGNCBBF {
     // message fields
-    // @@protoc_insertion_point(field:LIIKCGNCBBF.IBLEMBNCGPM)
-    pub IBLEMBNCGPM: ::protobuf::MessageField<super::MMCHOPHFMAH::MMCHOPHFMAH>,
-    // @@protoc_insertion_point(field:LIIKCGNCBBF.CHMHPCNGFAO)
-    pub CHMHPCNGFAO: ::protobuf::MessageField<super::ICILDHNFJFG::ICILDHNFJFG>,
+    // @@protoc_insertion_point(field:LIIKCGNCBBF.rogue_virtual_item_info)
+    pub rogue_virtual_item_info: ::protobuf::MessageField<super::KICDAHAPLCH::KICDAHAPLCH>,
+    // @@protoc_insertion_point(field:LIIKCGNCBBF.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::ICILDHNFJFG::ICILDHNFJFG>,
+    // @@protoc_insertion_point(field:LIIKCGNCBBF.rogue_score_reward_info)
+    pub rogue_score_reward_info: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
     // @@protoc_insertion_point(field:LIIKCGNCBBF.FEJGMNNFFLG)
     pub FEJGMNNFFLG: ::protobuf::MessageField<super::BFKMDFGCNCD::BFKMDFGCNCD>,
-    // @@protoc_insertion_point(field:LIIKCGNCBBF.PFEANIAHFPC)
-    pub PFEANIAHFPC: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
-    // @@protoc_insertion_point(field:LIIKCGNCBBF.OFOLHKCNLBA)
-    pub OFOLHKCNLBA: ::protobuf::MessageField<super::KICDAHAPLCH::KICDAHAPLCH>,
+    // @@protoc_insertion_point(field:LIIKCGNCBBF.IBLEMBNCGPM)
+    pub IBLEMBNCGPM: ::protobuf::MessageField<super::MMCHOPHFMAH::MMCHOPHFMAH>,
     // special fields
     // @@protoc_insertion_point(special_field:LIIKCGNCBBF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl LIIKCGNCBBF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MMCHOPHFMAH::MMCHOPHFMAH>(
-            "IBLEMBNCGPM",
-            |m: &LIIKCGNCBBF| { &m.IBLEMBNCGPM },
-            |m: &mut LIIKCGNCBBF| { &mut m.IBLEMBNCGPM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KICDAHAPLCH::KICDAHAPLCH>(
+            "rogue_virtual_item_info",
+            |m: &LIIKCGNCBBF| { &m.rogue_virtual_item_info },
+            |m: &mut LIIKCGNCBBF| { &mut m.rogue_virtual_item_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICILDHNFJFG::ICILDHNFJFG>(
-            "CHMHPCNGFAO",
-            |m: &LIIKCGNCBBF| { &m.CHMHPCNGFAO },
-            |m: &mut LIIKCGNCBBF| { &mut m.CHMHPCNGFAO },
+            "rogue_aeon_info",
+            |m: &LIIKCGNCBBF| { &m.rogue_aeon_info },
+            |m: &mut LIIKCGNCBBF| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGHCOGEPIDM::HGHCOGEPIDM>(
+            "rogue_score_reward_info",
+            |m: &LIIKCGNCBBF| { &m.rogue_score_reward_info },
+            |m: &mut LIIKCGNCBBF| { &mut m.rogue_score_reward_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BFKMDFGCNCD::BFKMDFGCNCD>(
             "FEJGMNNFFLG",
             |m: &LIIKCGNCBBF| { &m.FEJGMNNFFLG },
             |m: &mut LIIKCGNCBBF| { &mut m.FEJGMNNFFLG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGHCOGEPIDM::HGHCOGEPIDM>(
-            "PFEANIAHFPC",
-            |m: &LIIKCGNCBBF| { &m.PFEANIAHFPC },
-            |m: &mut LIIKCGNCBBF| { &mut m.PFEANIAHFPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KICDAHAPLCH::KICDAHAPLCH>(
-            "OFOLHKCNLBA",
-            |m: &LIIKCGNCBBF| { &m.OFOLHKCNLBA },
-            |m: &mut LIIKCGNCBBF| { &mut m.OFOLHKCNLBA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MMCHOPHFMAH::MMCHOPHFMAH>(
+            "IBLEMBNCGPM",
+            |m: &LIIKCGNCBBF| { &m.IBLEMBNCGPM },
+            |m: &mut LIIKCGNCBBF| { &mut m.IBLEMBNCGPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LIIKCGNCBBF>(
             "LIIKCGNCBBF",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for LIIKCGNCBBF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IBLEMBNCGPM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_virtual_item_info)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHMHPCNGFAO)?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FEJGMNNFFLG)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
                 34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFEANIAHFPC)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OFOLHKCNLBA)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FEJGMNNFFLG)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IBLEMBNCGPM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,11 +127,15 @@ impl ::protobuf::Message for LIIKCGNCBBF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IBLEMBNCGPM.as_ref() {
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CHMHPCNGFAO.as_ref() {
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -139,11 +143,7 @@ impl ::protobuf::Message for LIIKCGNCBBF {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.PFEANIAHFPC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.OFOLHKCNLBA.as_ref() {
+        if let Some(v) = self.IBLEMBNCGPM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,20 +153,20 @@ impl ::protobuf::Message for LIIKCGNCBBF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IBLEMBNCGPM.as_ref() {
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.CHMHPCNGFAO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.FEJGMNNFFLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.PFEANIAHFPC.as_ref() {
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.OFOLHKCNLBA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.FEJGMNNFFLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.IBLEMBNCGPM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,21 +185,21 @@ impl ::protobuf::Message for LIIKCGNCBBF {
     }
 
     fn clear(&mut self) {
-        self.IBLEMBNCGPM.clear();
-        self.CHMHPCNGFAO.clear();
+        self.rogue_virtual_item_info.clear();
+        self.rogue_aeon_info.clear();
+        self.rogue_score_reward_info.clear();
         self.FEJGMNNFFLG.clear();
-        self.PFEANIAHFPC.clear();
-        self.OFOLHKCNLBA.clear();
+        self.IBLEMBNCGPM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LIIKCGNCBBF {
         static instance: LIIKCGNCBBF = LIIKCGNCBBF {
-            IBLEMBNCGPM: ::protobuf::MessageField::none(),
-            CHMHPCNGFAO: ::protobuf::MessageField::none(),
+            rogue_virtual_item_info: ::protobuf::MessageField::none(),
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            rogue_score_reward_info: ::protobuf::MessageField::none(),
             FEJGMNNFFLG: ::protobuf::MessageField::none(),
-            PFEANIAHFPC: ::protobuf::MessageField::none(),
-            OFOLHKCNLBA: ::protobuf::MessageField::none(),
+            IBLEMBNCGPM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -226,12 +226,13 @@ impl ::protobuf::reflect::ProtobufValue for LIIKCGNCBBF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LIIKCGNCBBF.proto\x1a\x11BFKMDFGCNCD.proto\x1a\x11HGHCOGEPIDM.prot\
     o\x1a\x11ICILDHNFJFG.proto\x1a\x11KICDAHAPLCH.proto\x1a\x11MMCHOPHFMAH.p\
-    roto\"\xfd\x01\n\x0bLIIKCGNCBBF\x12.\n\x0bIBLEMBNCGPM\x18\r\x20\x01(\x0b\
-    2\x0c.MMCHOPHFMAHR\x0bIBLEMBNCGPM\x12.\n\x0bCHMHPCNGFAO\x18\x07\x20\x01(\
-    \x0b2\x0c.ICILDHNFJFGR\x0bCHMHPCNGFAO\x12.\n\x0bFEJGMNNFFLG\x18\t\x20\
-    \x01(\x0b2\x0c.BFKMDFGCNCDR\x0bFEJGMNNFFLG\x12.\n\x0bPFEANIAHFPC\x18\x04\
-    \x20\x01(\x0b2\x0c.HGHCOGEPIDMR\x0bPFEANIAHFPC\x12.\n\x0bOFOLHKCNLBA\x18\
-    \x02\x20\x01(\x0b2\x0c.KICDAHAPLCHR\x0bOFOLHKCNLBAb\x06proto3\
+    roto\"\xad\x02\n\x0bLIIKCGNCBBF\x12C\n\x17rogue_virtual_item_info\x18\r\
+    \x20\x01(\x0b2\x0c.KICDAHAPLCHR\x14rogueVirtualItemInfo\x124\n\x0frogue_\
+    aeon_info\x18\x0c\x20\x01(\x0b2\x0c.ICILDHNFJFGR\rrogueAeonInfo\x12C\n\
+    \x17rogue_score_reward_info\x18\x04\x20\x01(\x0b2\x0c.HGHCOGEPIDMR\x14ro\
+    gueScoreRewardInfo\x12.\n\x0bFEJGMNNFFLG\x18\x08\x20\x01(\x0b2\x0c.BFKMD\
+    FGCNCDR\x0bFEJGMNNFFLG\x12.\n\x0bIBLEMBNCGPM\x18\x07\x20\x01(\x0b2\x0c.M\
+    MCHOPHFMAHR\x0bIBLEMBNCGPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

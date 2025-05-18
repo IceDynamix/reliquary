@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdArchiveType {
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveTypeNone)
     CmdArchiveTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetArchiveDataScRsp)
-    CmdGetArchiveDataScRsp = 2313,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetArchiveDataCsReq)
-    CmdGetArchiveDataCsReq = 2311,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetUpdatedArchiveDataCsReq)
-    CmdGetUpdatedArchiveDataCsReq = 2347,
+    CmdGetArchiveDataCsReq = 2395,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetUpdatedArchiveDataScRsp)
-    CmdGetUpdatedArchiveDataScRsp = 2309,
+    CmdGetUpdatedArchiveDataScRsp = 2340,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetArchiveDataScRsp)
+    CmdGetArchiveDataScRsp = 2332,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetUpdatedArchiveDataCsReq)
+    CmdGetUpdatedArchiveDataCsReq = 2331,
 }
 
 impl ::protobuf::Enum for CmdArchiveType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdArchiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdArchiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveTypeNone),
-            2313 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
-            2311 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataCsReq),
-            2347 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
-            2309 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataScRsp),
+            2395 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataCsReq),
+            2340 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataScRsp),
+            2332 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
+            2331 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for CmdArchiveType {
     fn from_str(str: &str) -> ::std::option::Option<CmdArchiveType> {
         match str {
             "CmdArchiveTypeNone" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveTypeNone),
-            "CmdGetArchiveDataScRsp" => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
             "CmdGetArchiveDataCsReq" => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataCsReq),
-            "CmdGetUpdatedArchiveDataCsReq" => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
             "CmdGetUpdatedArchiveDataScRsp" => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataScRsp),
+            "CmdGetArchiveDataScRsp" => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
+            "CmdGetUpdatedArchiveDataCsReq" => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdArchiveType] = &[
         CmdArchiveType::CmdArchiveTypeNone,
-        CmdArchiveType::CmdGetArchiveDataScRsp,
         CmdArchiveType::CmdGetArchiveDataCsReq,
-        CmdArchiveType::CmdGetUpdatedArchiveDataCsReq,
         CmdArchiveType::CmdGetUpdatedArchiveDataScRsp,
+        CmdArchiveType::CmdGetArchiveDataScRsp,
+        CmdArchiveType::CmdGetUpdatedArchiveDataCsReq,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for CmdArchiveType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdArchiveType::CmdArchiveTypeNone => 0,
-            CmdArchiveType::CmdGetArchiveDataScRsp => 1,
-            CmdArchiveType::CmdGetArchiveDataCsReq => 2,
-            CmdArchiveType::CmdGetUpdatedArchiveDataCsReq => 3,
-            CmdArchiveType::CmdGetUpdatedArchiveDataScRsp => 4,
+            CmdArchiveType::CmdGetArchiveDataCsReq => 1,
+            CmdArchiveType::CmdGetUpdatedArchiveDataScRsp => 2,
+            CmdArchiveType::CmdGetArchiveDataScRsp => 3,
+            CmdArchiveType::CmdGetUpdatedArchiveDataCsReq => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,10 +109,10 @@ impl CmdArchiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdArchiveType.proto*\xaa\x01\n\x0eCmdArchiveType\x12\x16\n\x12Cmd\
-    ArchiveTypeNone\x10\0\x12\x1b\n\x16CmdGetArchiveDataScRsp\x10\x89\x12\
-    \x12\x1b\n\x16CmdGetArchiveDataCsReq\x10\x87\x12\x12\"\n\x1dCmdGetUpdate\
-    dArchiveDataCsReq\x10\xab\x12\x12\"\n\x1dCmdGetUpdatedArchiveDataScRsp\
-    \x10\x85\x12b\x06proto3\
+    ArchiveTypeNone\x10\0\x12\x1b\n\x16CmdGetArchiveDataCsReq\x10\xdb\x12\
+    \x12\"\n\x1dCmdGetUpdatedArchiveDataScRsp\x10\xa4\x12\x12\x1b\n\x16CmdGe\
+    tArchiveDataScRsp\x10\x9c\x12\x12\"\n\x1dCmdGetUpdatedArchiveDataCsReq\
+    \x10\x9b\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

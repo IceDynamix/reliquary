@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NPEDHHCKLIA {
     // message fields
-    // @@protoc_insertion_point(field:NPEDHHCKLIA.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:NPEDHHCKLIA.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:NPEDHHCKLIA.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NPEDHHCKLIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NPEDHHCKLIA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &NPEDHHCKLIA| { &m.avatar_id },
-            |m: &mut NPEDHHCKLIA| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &NPEDHHCKLIA| { &m.avatar_type },
             |m: &mut NPEDHHCKLIA| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &NPEDHHCKLIA| { &m.avatar_id },
+            |m: &mut NPEDHHCKLIA| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NPEDHHCKLIA>(
             "NPEDHHCKLIA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NPEDHHCKLIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                72 => {
+                96 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NPEDHHCKLIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.avatar_type.value());
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NPEDHHCKLIA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(14, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NPEDHHCKLIA {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NPEDHHCKLIA {
         static instance: NPEDHHCKLIA = NPEDHHCKLIA {
-            avatar_id: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NPEDHHCKLIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NPEDHHCKLIA.proto\x1a\x10AvatarType.proto\"X\n\x0bNPEDHHCKLIA\x12\
-    \x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarId\x12,\n\x0bavatar_type\
-    \x18\t\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
+    \n\x11NPEDHHCKLIA.proto\x1a\x10AvatarType.proto\"X\n\x0bNPEDHHCKLIA\x12,\
+    \n\x0bavatar_type\x18\x0c\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
+    \x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

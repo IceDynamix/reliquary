@@ -61,7 +61,7 @@ pub struct EvolveBuildBattleInfo {
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.is_unlock_gear_ban)
     pub is_unlock_gear_ban: bool,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.card_list)
-    pub card_list: ::std::vec::Vec<super::BHGBOOJEOPF::BHGBOOJEOPF>,
+    pub card_list: ::std::vec::Vec<super::EvolveBuildCardInfo::EvolveBuildCardInfo>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.gear_damage_list)
     pub gear_damage_list: ::std::vec::Vec<super::EvolveBuildGearDamageInfo::EvolveBuildGearDamageInfo>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.stat_params)
@@ -74,6 +74,14 @@ pub struct EvolveBuildBattleInfo {
     pub stat_log_info: ::protobuf::MessageField<super::PMNHMAMHGAI::PMNHMAMHGAI>,
     // @@protoc_insertion_point(field:EvolveBuildBattleInfo.period_first_random_seed)
     pub period_first_random_seed: u32,
+    // @@protoc_insertion_point(field:EvolveBuildBattleInfo.cur_card_reroll)
+    pub cur_card_reroll: u32,
+    // @@protoc_insertion_point(field:EvolveBuildBattleInfo.allowed_card_list)
+    pub allowed_card_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EvolveBuildBattleInfo.func_list)
+    pub func_list: ::std::vec::Vec<super::EGDAJHJPLGI::EGDAJHJPLGI>,
+    // @@protoc_insertion_point(field:EvolveBuildBattleInfo.finished_story_id)
+    pub finished_story_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -91,7 +99,7 @@ impl EvolveBuildBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(23);
+        let mut fields = ::std::vec::Vec::with_capacity(27);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_level_id",
@@ -208,6 +216,26 @@ impl EvolveBuildBattleInfo {
             |m: &EvolveBuildBattleInfo| { &m.period_first_random_seed },
             |m: &mut EvolveBuildBattleInfo| { &mut m.period_first_random_seed },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_card_reroll",
+            |m: &EvolveBuildBattleInfo| { &m.cur_card_reroll },
+            |m: &mut EvolveBuildBattleInfo| { &mut m.cur_card_reroll },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "allowed_card_list",
+            |m: &EvolveBuildBattleInfo| { &m.allowed_card_list },
+            |m: &mut EvolveBuildBattleInfo| { &mut m.allowed_card_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "func_list",
+            |m: &EvolveBuildBattleInfo| { &m.func_list },
+            |m: &mut EvolveBuildBattleInfo| { &mut m.func_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "finished_story_id",
+            |m: &EvolveBuildBattleInfo| { &m.finished_story_id },
+            |m: &mut EvolveBuildBattleInfo| { &mut m.finished_story_id },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildBattleInfo>(
             "EvolveBuildBattleInfo",
             fields,
@@ -307,6 +335,21 @@ impl ::protobuf::Message for EvolveBuildBattleInfo {
                 184 => {
                     self.period_first_random_seed = is.read_uint32()?;
                 },
+                192 => {
+                    self.cur_card_reroll = is.read_uint32()?;
+                },
+                202 => {
+                    is.read_repeated_packed_uint32_into(&mut self.allowed_card_list)?;
+                },
+                200 => {
+                    self.allowed_card_list.push(is.read_uint32()?);
+                },
+                210 => {
+                    self.func_list.push(is.read_message()?);
+                },
+                216 => {
+                    self.finished_story_id = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -386,6 +429,17 @@ impl ::protobuf::Message for EvolveBuildBattleInfo {
         if self.period_first_random_seed != 0 {
             my_size += ::protobuf::rt::uint32_size(23, self.period_first_random_seed);
         }
+        if self.cur_card_reroll != 0 {
+            my_size += ::protobuf::rt::uint32_size(24, self.cur_card_reroll);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(25, &self.allowed_card_list);
+        for value in &self.func_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.finished_story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(27, self.finished_story_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -453,6 +507,16 @@ impl ::protobuf::Message for EvolveBuildBattleInfo {
         if self.period_first_random_seed != 0 {
             os.write_uint32(23, self.period_first_random_seed)?;
         }
+        if self.cur_card_reroll != 0 {
+            os.write_uint32(24, self.cur_card_reroll)?;
+        }
+        os.write_repeated_packed_uint32(25, &self.allowed_card_list)?;
+        for v in &self.func_list {
+            ::protobuf::rt::write_message_field_with_cached_size(26, v, os)?;
+        };
+        if self.finished_story_id != 0 {
+            os.write_uint32(27, self.finished_story_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -493,6 +557,10 @@ impl ::protobuf::Message for EvolveBuildBattleInfo {
         self.cur_unused_round_cnt = 0;
         self.stat_log_info.clear();
         self.period_first_random_seed = 0;
+        self.cur_card_reroll = 0;
+        self.allowed_card_list.clear();
+        self.func_list.clear();
+        self.finished_story_id = 0;
         self.special_fields.clear();
     }
 
@@ -521,6 +589,10 @@ impl ::protobuf::Message for EvolveBuildBattleInfo {
             cur_unused_round_cnt: 0,
             stat_log_info: ::protobuf::MessageField::none(),
             period_first_random_seed: 0,
+            cur_card_reroll: 0,
+            allowed_card_list: ::std::vec::Vec::new(),
+            func_list: ::std::vec::Vec::new(),
+            finished_story_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -545,31 +617,35 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildBattleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEvolveBuildBattleInfo.proto\x1a\x11BHGBOOJEOPF.proto\x1a\x1fEvolve\
-    BuildGearDamageInfo.proto\x1a\x11LGIFEDNKHON.proto\x1a\x11MEOIFIOAECF.pr\
-    oto\x1a\x11PMNHMAMHGAI.proto\"\xe9\x07\n\x15EvolveBuildBattleInfo\x12\
-    \x20\n\x0ccur_level_id\x18\x01\x20\x01(\rR\ncurLevelId\x12\x1d\n\ncur_pe\
-    riod\x18\x02\x20\x01(\rR\tcurPeriod\x12\x19\n\x08cur_coin\x18\x03\x20\
-    \x01(\rR\x07curCoin\x126\n\x10weapon_slot_list\x18\x04\x20\x03(\x0b2\x0c\
-    .MEOIFIOAECFR\x0eweaponSlotList\x12<\n\x13accessory_slot_list\x18\x05\
-    \x20\x03(\x0b2\x0c.MEOIFIOAECFR\x11accessorySlotList\x12\"\n\rban_gear_l\
-    ist\x18\x06\x20\x03(\rR\x0bbanGearList\x12,\n\ncollection\x18\x07\x20\
-    \x01(\x0b2\x0c.LGIFEDNKHONR\ncollection\x12*\n\x11allowed_gear_list\x18\
-    \x08\x20\x03(\rR\x0fallowedGearList\x12\x17\n\x07cur_exp\x18\t\x20\x01(\
-    \rR\x06curExp\x12\x1d\n\ncur_reroll\x18\n\x20\x01(\rR\tcurReroll\x121\n\
-    \x15cur_treasure_miss_cnt\x18\x0b\x20\x01(\rR\x12curTreasureMissCnt\x12$\
-    \n\x0eperiod_id_list\x18\x0c\x20\x03(\rR\x0cperiodIdList\x12)\n\x11cur_g\
-    ear_lost_cnt\x18\r\x20\x01(\rR\x0ecurGearLostCnt\x12\x19\n\x08cur_wave\
-    \x18\x0e\x20\x01(\rR\x07curWave\x121\n\x15is_unlock_gear_reroll\x18\x0f\
-    \x20\x01(\x08R\x12isUnlockGearReroll\x12+\n\x12is_unlock_gear_ban\x18\
-    \x10\x20\x01(\x08R\x0fisUnlockGearBan\x12)\n\tcard_list\x18\x11\x20\x03(\
-    \x0b2\x0c.BHGBOOJEOPFR\x08cardList\x12D\n\x10gear_damage_list\x18\x12\
-    \x20\x03(\x0b2\x1a.EvolveBuildGearDamageInfoR\x0egearDamageList\x12\x1f\
-    \n\x0bstat_params\x18\x13\x20\x03(\rR\nstatParams\x12\x1b\n\tis_giveup\
-    \x18\x14\x20\x01(\x08R\x08isGiveup\x12/\n\x14cur_unused_round_cnt\x18\
-    \x15\x20\x01(\rR\x11curUnusedRoundCnt\x120\n\rstat_log_info\x18\x16\x20\
-    \x01(\x0b2\x0c.PMNHMAMHGAIR\x0bstatLogInfo\x127\n\x18period_first_random\
-    _seed\x18\x17\x20\x01(\rR\x15periodFirstRandomSeedb\x06proto3\
+    \n\x1bEvolveBuildBattleInfo.proto\x1a\x11EGDAJHJPLGI.proto\x1a\x19Evolve\
+    BuildCardInfo.proto\x1a\x1fEvolveBuildGearDamageInfo.proto\x1a\x11LGIFED\
+    NKHON.proto\x1a\x11MEOIFIOAECF.proto\x1a\x11PMNHMAMHGAI.proto\"\x9c\t\n\
+    \x15EvolveBuildBattleInfo\x12\x20\n\x0ccur_level_id\x18\x01\x20\x01(\rR\
+    \ncurLevelId\x12\x1d\n\ncur_period\x18\x02\x20\x01(\rR\tcurPeriod\x12\
+    \x19\n\x08cur_coin\x18\x03\x20\x01(\rR\x07curCoin\x126\n\x10weapon_slot_\
+    list\x18\x04\x20\x03(\x0b2\x0c.MEOIFIOAECFR\x0eweaponSlotList\x12<\n\x13\
+    accessory_slot_list\x18\x05\x20\x03(\x0b2\x0c.MEOIFIOAECFR\x11accessoryS\
+    lotList\x12\"\n\rban_gear_list\x18\x06\x20\x03(\rR\x0bbanGearList\x12,\n\
+    \ncollection\x18\x07\x20\x01(\x0b2\x0c.LGIFEDNKHONR\ncollection\x12*\n\
+    \x11allowed_gear_list\x18\x08\x20\x03(\rR\x0fallowedGearList\x12\x17\n\
+    \x07cur_exp\x18\t\x20\x01(\rR\x06curExp\x12\x1d\n\ncur_reroll\x18\n\x20\
+    \x01(\rR\tcurReroll\x121\n\x15cur_treasure_miss_cnt\x18\x0b\x20\x01(\rR\
+    \x12curTreasureMissCnt\x12$\n\x0eperiod_id_list\x18\x0c\x20\x03(\rR\x0cp\
+    eriodIdList\x12)\n\x11cur_gear_lost_cnt\x18\r\x20\x01(\rR\x0ecurGearLost\
+    Cnt\x12\x19\n\x08cur_wave\x18\x0e\x20\x01(\rR\x07curWave\x121\n\x15is_un\
+    lock_gear_reroll\x18\x0f\x20\x01(\x08R\x12isUnlockGearReroll\x12+\n\x12i\
+    s_unlock_gear_ban\x18\x10\x20\x01(\x08R\x0fisUnlockGearBan\x121\n\tcard_\
+    list\x18\x11\x20\x03(\x0b2\x14.EvolveBuildCardInfoR\x08cardList\x12D\n\
+    \x10gear_damage_list\x18\x12\x20\x03(\x0b2\x1a.EvolveBuildGearDamageInfo\
+    R\x0egearDamageList\x12\x1f\n\x0bstat_params\x18\x13\x20\x03(\rR\nstatPa\
+    rams\x12\x1b\n\tis_giveup\x18\x14\x20\x01(\x08R\x08isGiveup\x12/\n\x14cu\
+    r_unused_round_cnt\x18\x15\x20\x01(\rR\x11curUnusedRoundCnt\x120\n\rstat\
+    _log_info\x18\x16\x20\x01(\x0b2\x0c.PMNHMAMHGAIR\x0bstatLogInfo\x127\n\
+    \x18period_first_random_seed\x18\x17\x20\x01(\rR\x15periodFirstRandomSee\
+    d\x12&\n\x0fcur_card_reroll\x18\x18\x20\x01(\rR\rcurCardReroll\x12*\n\
+    \x11allowed_card_list\x18\x19\x20\x03(\rR\x0fallowedCardList\x12)\n\tfun\
+    c_list\x18\x1a\x20\x03(\x0b2\x0c.EGDAJHJPLGIR\x08funcList\x12*\n\x11fini\
+    shed_story_id\x18\x1b\x20\x01(\rR\x0ffinishedStoryIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -586,8 +662,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::BHGBOOJEOPF::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(6);
+            deps.push(super::EGDAJHJPLGI::file_descriptor().clone());
+            deps.push(super::EvolveBuildCardInfo::file_descriptor().clone());
             deps.push(super::EvolveBuildGearDamageInfo::file_descriptor().clone());
             deps.push(super::LGIFEDNKHON::file_descriptor().clone());
             deps.push(super::MEOIFIOAECF::file_descriptor().clone());

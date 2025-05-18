@@ -86,10 +86,10 @@ impl ::protobuf::Message for GGKBHALPIDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.LHBDONJIICC = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.area_id = is.read_uint32()?;
                 },
                 104 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GGKBHALPIDK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LHBDONJIICC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LHBDONJIICC);
+            my_size += ::protobuf::rt::uint32_size(6, self.LHBDONJIICC);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
         }
         if self.IMLHFGEPCAN != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.IMLHFGEPCAN);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for GGKBHALPIDK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LHBDONJIICC != 0 {
-            os.write_uint32(4, self.LHBDONJIICC)?;
+            os.write_uint32(6, self.LHBDONJIICC)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(7, self.area_id)?;
+            os.write_uint32(9, self.area_id)?;
         }
         if self.IMLHFGEPCAN != 0 {
             os.write_uint32(13, self.IMLHFGEPCAN)?;
@@ -184,7 +184,7 @@ impl ::protobuf::reflect::ProtobufValue for GGKBHALPIDK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGKBHALPIDK.proto\"j\n\x0bGGKBHALPIDK\x12\x20\n\x0bLHBDONJIICC\x18\
-    \x04\x20\x01(\rR\x0bLHBDONJIICC\x12\x17\n\x07area_id\x18\x07\x20\x01(\rR\
+    \x06\x20\x01(\rR\x0bLHBDONJIICC\x12\x17\n\x07area_id\x18\t\x20\x01(\rR\
     \x06areaId\x12\x20\n\x0bIMLHFGEPCAN\x18\r\x20\x01(\rR\x0bIMLHFGEPCANb\
     \x06proto3\
 ";

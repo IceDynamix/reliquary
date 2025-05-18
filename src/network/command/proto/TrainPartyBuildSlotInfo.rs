@@ -30,8 +30,8 @@ pub struct TrainPartyBuildSlotInfo {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyBuildSlotInfo.dynamic_prop_id)
     pub dynamic_prop_id: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildSlotInfo.slot_id)
-    pub slot_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildSlotInfo.dice_slot_id)
+    pub dice_slot_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildSlotInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl TrainPartyBuildSlotInfo {
             |m: &mut TrainPartyBuildSlotInfo| { &mut m.dynamic_prop_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot_id",
-            |m: &TrainPartyBuildSlotInfo| { &m.slot_id },
-            |m: &mut TrainPartyBuildSlotInfo| { &mut m.slot_id },
+            "dice_slot_id",
+            |m: &TrainPartyBuildSlotInfo| { &m.dice_slot_id },
+            |m: &mut TrainPartyBuildSlotInfo| { &mut m.dice_slot_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildSlotInfo>(
             "TrainPartyBuildSlotInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartyBuildSlotInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                112 => {
                     self.dynamic_prop_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.slot_id = is.read_uint32()?;
+                104 => {
+                    self.dice_slot_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TrainPartyBuildSlotInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dynamic_prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dynamic_prop_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.dynamic_prop_id);
         }
-        if self.slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.slot_id);
+        if self.dice_slot_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.dice_slot_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TrainPartyBuildSlotInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dynamic_prop_id != 0 {
-            os.write_uint32(2, self.dynamic_prop_id)?;
+            os.write_uint32(14, self.dynamic_prop_id)?;
         }
-        if self.slot_id != 0 {
-            os.write_uint32(3, self.slot_id)?;
+        if self.dice_slot_id != 0 {
+            os.write_uint32(13, self.dice_slot_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TrainPartyBuildSlotInfo {
 
     fn clear(&mut self) {
         self.dynamic_prop_id = 0;
-        self.slot_id = 0;
+        self.dice_slot_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildSlotInfo {
         static instance: TrainPartyBuildSlotInfo = TrainPartyBuildSlotInfo {
             dynamic_prop_id: 0,
-            slot_id: 0,
+            dice_slot_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildSlotInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dTrainPartyBuildSlotInfo.proto\"Z\n\x17TrainPartyBuildSlotInfo\x12&\
-    \n\x0fdynamic_prop_id\x18\x02\x20\x01(\rR\rdynamicPropId\x12\x17\n\x07sl\
-    ot_id\x18\x03\x20\x01(\rR\x06slotIdb\x06proto3\
+    \n\x1dTrainPartyBuildSlotInfo.proto\"c\n\x17TrainPartyBuildSlotInfo\x12&\
+    \n\x0fdynamic_prop_id\x18\x0e\x20\x01(\rR\rdynamicPropId\x12\x20\n\x0cdi\
+    ce_slot_id\x18\r\x20\x01(\rR\ndiceSlotIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

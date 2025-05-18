@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFGAIEBGHCP {
     // message fields
-    // @@protoc_insertion_point(field:PFGAIEBGHCP.OCDKPEIFGFO)
-    pub OCDKPEIFGFO: f32,
-    // @@protoc_insertion_point(field:PFGAIEBGHCP.PGIFPMKPMNA)
-    pub PGIFPMKPMNA: f32,
+    // @@protoc_insertion_point(field:PFGAIEBGHCP.x)
+    pub x: f32,
+    // @@protoc_insertion_point(field:PFGAIEBGHCP.y)
+    pub y: f32,
     // special fields
     // @@protoc_insertion_point(special_field:PFGAIEBGHCP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PFGAIEBGHCP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCDKPEIFGFO",
-            |m: &PFGAIEBGHCP| { &m.OCDKPEIFGFO },
-            |m: &mut PFGAIEBGHCP| { &mut m.OCDKPEIFGFO },
+            "x",
+            |m: &PFGAIEBGHCP| { &m.x },
+            |m: &mut PFGAIEBGHCP| { &mut m.x },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGIFPMKPMNA",
-            |m: &PFGAIEBGHCP| { &m.PGIFPMKPMNA },
-            |m: &mut PFGAIEBGHCP| { &mut m.PGIFPMKPMNA },
+            "y",
+            |m: &PFGAIEBGHCP| { &m.y },
+            |m: &mut PFGAIEBGHCP| { &mut m.y },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PFGAIEBGHCP>(
             "PFGAIEBGHCP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                45 => {
-                    self.OCDKPEIFGFO = is.read_float()?;
+                85 => {
+                    self.x = is.read_float()?;
                 },
-                29 => {
-                    self.PGIFPMKPMNA = is.read_float()?;
+                53 => {
+                    self.y = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OCDKPEIFGFO != 0. {
+        if self.x != 0. {
             my_size += 1 + 4;
         }
-        if self.PGIFPMKPMNA != 0. {
+        if self.y != 0. {
             my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OCDKPEIFGFO != 0. {
-            os.write_float(5, self.OCDKPEIFGFO)?;
+        if self.x != 0. {
+            os.write_float(10, self.x)?;
         }
-        if self.PGIFPMKPMNA != 0. {
-            os.write_float(3, self.PGIFPMKPMNA)?;
+        if self.y != 0. {
+            os.write_float(6, self.y)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     }
 
     fn clear(&mut self) {
-        self.OCDKPEIFGFO = 0.;
-        self.PGIFPMKPMNA = 0.;
+        self.x = 0.;
+        self.y = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PFGAIEBGHCP {
         static instance: PFGAIEBGHCP = PFGAIEBGHCP {
-            OCDKPEIFGFO: 0.,
-            PGIFPMKPMNA: 0.,
+            x: 0.,
+            y: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for PFGAIEBGHCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PFGAIEBGHCP.proto\"Q\n\x0bPFGAIEBGHCP\x12\x20\n\x0bOCDKPEIFGFO\x18\
-    \x05\x20\x01(\x02R\x0bOCDKPEIFGFO\x12\x20\n\x0bPGIFPMKPMNA\x18\x03\x20\
-    \x01(\x02R\x0bPGIFPMKPMNAb\x06proto3\
+    \n\x11PFGAIEBGHCP.proto\")\n\x0bPFGAIEBGHCP\x12\x0c\n\x01x\x18\n\x20\x01\
+    (\x02R\x01x\x12\x0c\n\x01y\x18\x06\x20\x01(\x02R\x01yb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKDBOGBABNI {
     // message fields
-    // @@protoc_insertion_point(field:OKDBOGBABNI.APMJFGKIFON)
-    pub APMJFGKIFON: ::protobuf::MessageField<super::LFJPDDCNBKC::LFJPDDCNBKC>,
     // @@protoc_insertion_point(field:OKDBOGBABNI.PLCCEHDNAFL)
     pub PLCCEHDNAFL: ::protobuf::MessageField<super::GGKBHALPIDK::GGKBHALPIDK>,
     // @@protoc_insertion_point(field:OKDBOGBABNI.HDLJBADEKFI)
     pub HDLJBADEKFI: ::protobuf::MessageField<super::NHAGPMMCDCF::NHAGPMMCDCF>,
+    // @@protoc_insertion_point(field:OKDBOGBABNI.APMJFGKIFON)
+    pub APMJFGKIFON: ::protobuf::MessageField<super::LFJPDDCNBKC::LFJPDDCNBKC>,
     // message oneof groups
-    pub GNKACKHFHHD: ::std::option::Option<okdbogbabni::GNKACKHFHHD>,
+    pub AAHLIIFCBMD: ::std::option::Option<okdbogbabni::AAHLIIFCBMD>,
     // special fields
     // @@protoc_insertion_point(special_field:OKDBOGBABNI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,39 +52,39 @@ impl OKDBOGBABNI {
         ::std::default::Default::default()
     }
 
-    // .OGNLDADPJFO EDGFEDJBAHF = 1838;
+    // .OGNLDADPJFO EDGFEDJBAHF = 788;
 
     pub fn EDGFEDJBAHF(&self) -> &super::OGNLDADPJFO::OGNLDADPJFO {
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(ref v)) => v,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(ref v)) => v,
             _ => <super::OGNLDADPJFO::OGNLDADPJFO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_EDGFEDJBAHF(&mut self) {
-        self.GNKACKHFHHD = ::std::option::Option::None;
+        self.AAHLIIFCBMD = ::std::option::Option::None;
     }
 
     pub fn has_EDGFEDJBAHF(&self) -> bool {
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(..)) => true,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_EDGFEDJBAHF(&mut self, v: super::OGNLDADPJFO::OGNLDADPJFO) {
-        self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(v))
+        self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_EDGFEDJBAHF(&mut self) -> &mut super::OGNLDADPJFO::OGNLDADPJFO {
-        if let ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(_)) = self.GNKACKHFHHD {
+        if let ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(_)) = self.AAHLIIFCBMD {
         } else {
-            self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(super::OGNLDADPJFO::OGNLDADPJFO::new()));
+            self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(super::OGNLDADPJFO::OGNLDADPJFO::new()));
         }
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(ref mut v)) => v,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -92,8 +92,8 @@ impl OKDBOGBABNI {
     // Take field
     pub fn take_EDGFEDJBAHF(&mut self) -> super::OGNLDADPJFO::OGNLDADPJFO {
         if self.has_EDGFEDJBAHF() {
-            match self.GNKACKHFHHD.take() {
-                ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(v)) => v,
+            match self.AAHLIIFCBMD.take() {
+                ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -101,39 +101,39 @@ impl OKDBOGBABNI {
         }
     }
 
-    // .ANGOAMADOMA OPFPOLCGMED = 1290;
+    // .ANGOAMADOMA OPFPOLCGMED = 130;
 
     pub fn OPFPOLCGMED(&self) -> &super::ANGOAMADOMA::ANGOAMADOMA {
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(ref v)) => v,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(ref v)) => v,
             _ => <super::ANGOAMADOMA::ANGOAMADOMA as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_OPFPOLCGMED(&mut self) {
-        self.GNKACKHFHHD = ::std::option::Option::None;
+        self.AAHLIIFCBMD = ::std::option::Option::None;
     }
 
     pub fn has_OPFPOLCGMED(&self) -> bool {
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(..)) => true,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_OPFPOLCGMED(&mut self, v: super::ANGOAMADOMA::ANGOAMADOMA) {
-        self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(v))
+        self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_OPFPOLCGMED(&mut self) -> &mut super::ANGOAMADOMA::ANGOAMADOMA {
-        if let ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(_)) = self.GNKACKHFHHD {
+        if let ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(_)) = self.AAHLIIFCBMD {
         } else {
-            self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(super::ANGOAMADOMA::ANGOAMADOMA::new()));
+            self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(super::ANGOAMADOMA::ANGOAMADOMA::new()));
         }
-        match self.GNKACKHFHHD {
-            ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(ref mut v)) => v,
+        match self.AAHLIIFCBMD {
+            ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -141,8 +141,8 @@ impl OKDBOGBABNI {
     // Take field
     pub fn take_OPFPOLCGMED(&mut self) -> super::ANGOAMADOMA::ANGOAMADOMA {
         if self.has_OPFPOLCGMED() {
-            match self.GNKACKHFHHD.take() {
-                ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(v)) => v,
+            match self.AAHLIIFCBMD.take() {
+                ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -153,11 +153,6 @@ impl OKDBOGBABNI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFJPDDCNBKC::LFJPDDCNBKC>(
-            "APMJFGKIFON",
-            |m: &OKDBOGBABNI| { &m.APMJFGKIFON },
-            |m: &mut OKDBOGBABNI| { &mut m.APMJFGKIFON },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGKBHALPIDK::GGKBHALPIDK>(
             "PLCCEHDNAFL",
             |m: &OKDBOGBABNI| { &m.PLCCEHDNAFL },
@@ -167,6 +162,11 @@ impl OKDBOGBABNI {
             "HDLJBADEKFI",
             |m: &OKDBOGBABNI| { &m.HDLJBADEKFI },
             |m: &mut OKDBOGBABNI| { &mut m.HDLJBADEKFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LFJPDDCNBKC::LFJPDDCNBKC>(
+            "APMJFGKIFON",
+            |m: &OKDBOGBABNI| { &m.APMJFGKIFON },
+            |m: &mut OKDBOGBABNI| { &mut m.APMJFGKIFON },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGNLDADPJFO::OGNLDADPJFO>(
             "EDGFEDJBAHF",
@@ -182,7 +182,7 @@ impl OKDBOGBABNI {
             OKDBOGBABNI::mut_OPFPOLCGMED,
             OKDBOGBABNI::set_OPFPOLCGMED,
         ));
-        oneofs.push(okdbogbabni::GNKACKHFHHD::generated_oneof_descriptor_data());
+        oneofs.push(okdbogbabni::AAHLIIFCBMD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKDBOGBABNI>(
             "OKDBOGBABNI",
             fields,
@@ -201,20 +201,20 @@ impl ::protobuf::Message for OKDBOGBABNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APMJFGKIFON)?;
-                },
-                114 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLCCEHDNAFL)?;
                 },
-                42 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDLJBADEKFI)?;
                 },
-                14706 => {
-                    self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(is.read_message()?));
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APMJFGKIFON)?;
                 },
-                10322 => {
-                    self.GNKACKHFHHD = ::std::option::Option::Some(okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(is.read_message()?));
+                6306 => {
+                    self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(is.read_message()?));
+                },
+                1042 => {
+                    self.AAHLIIFCBMD = ::std::option::Option::Some(okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -228,10 +228,6 @@ impl ::protobuf::Message for OKDBOGBABNI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.APMJFGKIFON.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.PLCCEHDNAFL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -240,13 +236,17 @@ impl ::protobuf::Message for OKDBOGBABNI {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.GNKACKHFHHD {
+        if let Some(v) = self.APMJFGKIFON.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let ::std::option::Option::Some(ref v) = self.AAHLIIFCBMD {
             match v {
-                &okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(ref v) => {
+                &okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(ref v) => {
+                &okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -258,22 +258,22 @@ impl ::protobuf::Message for OKDBOGBABNI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.APMJFGKIFON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if let Some(v) = self.PLCCEHDNAFL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.HDLJBADEKFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.GNKACKHFHHD {
+        if let Some(v) = self.APMJFGKIFON.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.AAHLIIFCBMD {
             match v {
-                &okdbogbabni::GNKACKHFHHD::EDGFEDJBAHF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1838, v, os)?;
+                &okdbogbabni::AAHLIIFCBMD::EDGFEDJBAHF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(788, v, os)?;
                 },
-                &okdbogbabni::GNKACKHFHHD::OPFPOLCGMED(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1290, v, os)?;
+                &okdbogbabni::AAHLIIFCBMD::OPFPOLCGMED(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(130, v, os)?;
                 },
             };
         }
@@ -294,20 +294,20 @@ impl ::protobuf::Message for OKDBOGBABNI {
     }
 
     fn clear(&mut self) {
-        self.APMJFGKIFON.clear();
         self.PLCCEHDNAFL.clear();
         self.HDLJBADEKFI.clear();
-        self.GNKACKHFHHD = ::std::option::Option::None;
-        self.GNKACKHFHHD = ::std::option::Option::None;
+        self.APMJFGKIFON.clear();
+        self.AAHLIIFCBMD = ::std::option::Option::None;
+        self.AAHLIIFCBMD = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKDBOGBABNI {
         static instance: OKDBOGBABNI = OKDBOGBABNI {
-            APMJFGKIFON: ::protobuf::MessageField::none(),
             PLCCEHDNAFL: ::protobuf::MessageField::none(),
             HDLJBADEKFI: ::protobuf::MessageField::none(),
-            GNKACKHFHHD: ::std::option::Option::None,
+            APMJFGKIFON: ::protobuf::MessageField::none(),
+            AAHLIIFCBMD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -336,27 +336,27 @@ pub mod okdbogbabni {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:OKDBOGBABNI.GNKACKHFHHD)
-    pub enum GNKACKHFHHD {
+    // @@protoc_insertion_point(oneof:OKDBOGBABNI.AAHLIIFCBMD)
+    pub enum AAHLIIFCBMD {
         // @@protoc_insertion_point(oneof_field:OKDBOGBABNI.EDGFEDJBAHF)
         EDGFEDJBAHF(super::super::OGNLDADPJFO::OGNLDADPJFO),
         // @@protoc_insertion_point(oneof_field:OKDBOGBABNI.OPFPOLCGMED)
         OPFPOLCGMED(super::super::ANGOAMADOMA::ANGOAMADOMA),
     }
 
-    impl ::protobuf::Oneof for GNKACKHFHHD {
+    impl ::protobuf::Oneof for AAHLIIFCBMD {
     }
 
-    impl ::protobuf::OneofFull for GNKACKHFHHD {
+    impl ::protobuf::OneofFull for AAHLIIFCBMD {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::OKDBOGBABNI as ::protobuf::MessageFull>::descriptor().oneof_by_name("GNKACKHFHHD").unwrap()).clone()
+            descriptor.get(|| <super::OKDBOGBABNI as ::protobuf::MessageFull>::descriptor().oneof_by_name("AAHLIIFCBMD").unwrap()).clone()
         }
     }
 
-    impl GNKACKHFHHD {
+    impl AAHLIIFCBMD {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GNKACKHFHHD>("GNKACKHFHHD")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<AAHLIIFCBMD>("AAHLIIFCBMD")
         }
     }
 }
@@ -364,13 +364,13 @@ pub mod okdbogbabni {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKDBOGBABNI.proto\x1a\x11ANGOAMADOMA.proto\x1a\x11GGKBHALPIDK.prot\
     o\x1a\x11LFJPDDCNBKC.proto\x1a\x11NHAGPMMCDCF.proto\x1a\x11OGNLDADPJFO.p\
-    roto\"\x92\x02\n\x0bOKDBOGBABNI\x12.\n\x0bAPMJFGKIFON\x18\t\x20\x01(\x0b\
-    2\x0c.LFJPDDCNBKCR\x0bAPMJFGKIFON\x12.\n\x0bPLCCEHDNAFL\x18\x0e\x20\x01(\
-    \x0b2\x0c.GGKBHALPIDKR\x0bPLCCEHDNAFL\x12.\n\x0bHDLJBADEKFI\x18\x05\x20\
-    \x01(\x0b2\x0c.NHAGPMMCDCFR\x0bHDLJBADEKFI\x121\n\x0bEDGFEDJBAHF\x18\xae\
-    \x0e\x20\x01(\x0b2\x0c.OGNLDADPJFOH\0R\x0bEDGFEDJBAHF\x121\n\x0bOPFPOLCG\
-    MED\x18\x8a\n\x20\x01(\x0b2\x0c.ANGOAMADOMAH\0R\x0bOPFPOLCGMEDB\r\n\x0bG\
-    NKACKHFHHDb\x06proto3\
+    roto\"\x92\x02\n\x0bOKDBOGBABNI\x12.\n\x0bPLCCEHDNAFL\x18\x07\x20\x01(\
+    \x0b2\x0c.GGKBHALPIDKR\x0bPLCCEHDNAFL\x12.\n\x0bHDLJBADEKFI\x18\r\x20\
+    \x01(\x0b2\x0c.NHAGPMMCDCFR\x0bHDLJBADEKFI\x12.\n\x0bAPMJFGKIFON\x18\n\
+    \x20\x01(\x0b2\x0c.LFJPDDCNBKCR\x0bAPMJFGKIFON\x121\n\x0bEDGFEDJBAHF\x18\
+    \x94\x06\x20\x01(\x0b2\x0c.OGNLDADPJFOH\0R\x0bEDGFEDJBAHF\x121\n\x0bOPFP\
+    OLCGMED\x18\x82\x01\x20\x01(\x0b2\x0c.ANGOAMADOMAH\0R\x0bOPFPOLCGMEDB\r\
+    \n\x0bAAHLIIFCBMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

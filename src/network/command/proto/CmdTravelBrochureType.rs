@@ -29,46 +29,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTravelBrochureType {
     // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureNone)
     CmdTravelBrochureNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageResetScRsp)
-    CmdTravelBrochurePageResetScRsp = 6425,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterListScRsp)
-    CmdTravelBrochureApplyPasterListScRsp = 6407,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureGetDataScRsp)
-    CmdTravelBrochureGetDataScRsp = 6413,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageResetCsReq)
-    CmdTravelBrochurePageResetCsReq = 6457,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureGetDataCsReq)
-    CmdTravelBrochureGetDataCsReq = 6411,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetPageDescStatusCsReq)
-    CmdTravelBrochureSetPageDescStatusCsReq = 6491,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureRemovePasterCsReq)
-    CmdTravelBrochureRemovePasterCsReq = 6426,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureRemovePasterScRsp)
-    CmdTravelBrochureRemovePasterScRsp = 6430,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterScRsp)
-    CmdTravelBrochureApplyPasterScRsp = 6489,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetCustomValueCsReq)
-    CmdTravelBrochureSetCustomValueCsReq = 6473,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureUpdatePasterPosCsReq)
-    CmdTravelBrochureUpdatePasterPosCsReq = 6495,
     // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSelectMessageCsReq)
-    CmdTravelBrochureSelectMessageCsReq = 6435,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterListCsReq)
-    CmdTravelBrochureApplyPasterListCsReq = 6410,
+    CmdTravelBrochureSelectMessageCsReq = 6476,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageResetCsReq)
+    CmdTravelBrochurePageResetCsReq = 6443,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureRemovePasterCsReq)
+    CmdTravelBrochureRemovePasterCsReq = 6422,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureRemovePasterScRsp)
+    CmdTravelBrochureRemovePasterScRsp = 6456,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureGetDataScRsp)
+    CmdTravelBrochureGetDataScRsp = 6432,
     // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureGetPasterScNotify)
-    CmdTravelBrochureGetPasterScNotify = 6436,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetCustomValueScRsp)
-    CmdTravelBrochureSetCustomValueScRsp = 6477,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureUpdatePasterPosScRsp)
-    CmdTravelBrochureUpdatePasterPosScRsp = 6418,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSelectMessageScRsp)
-    CmdTravelBrochureSelectMessageScRsp = 6406,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetPageDescStatusScRsp)
-    CmdTravelBrochureSetPageDescStatusScRsp = 6493,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageUnlockScNotify)
-    CmdTravelBrochurePageUnlockScNotify = 6447,
+    CmdTravelBrochureGetPasterScNotify = 6416,
     // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterCsReq)
-    CmdTravelBrochureApplyPasterCsReq = 6470,
+    CmdTravelBrochureApplyPasterCsReq = 6471,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterListCsReq)
+    CmdTravelBrochureApplyPasterListCsReq = 6442,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetCustomValueCsReq)
+    CmdTravelBrochureSetCustomValueCsReq = 6483,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureUpdatePasterPosCsReq)
+    CmdTravelBrochureUpdatePasterPosCsReq = 6472,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureGetDataCsReq)
+    CmdTravelBrochureGetDataCsReq = 6495,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetPageDescStatusScRsp)
+    CmdTravelBrochureSetPageDescStatusScRsp = 6439,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterListScRsp)
+    CmdTravelBrochureApplyPasterListScRsp = 6477,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageResetScRsp)
+    CmdTravelBrochurePageResetScRsp = 6433,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureUpdatePasterPosScRsp)
+    CmdTravelBrochureUpdatePasterPosScRsp = 6485,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetCustomValueScRsp)
+    CmdTravelBrochureSetCustomValueScRsp = 6460,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSelectMessageScRsp)
+    CmdTravelBrochureSelectMessageScRsp = 6448,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochurePageUnlockScNotify)
+    CmdTravelBrochurePageUnlockScNotify = 6431,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureApplyPasterScRsp)
+    CmdTravelBrochureApplyPasterScRsp = 6452,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureSetPageDescStatusCsReq)
+    CmdTravelBrochureSetPageDescStatusCsReq = 6402,
 }
 
 impl ::protobuf::Enum for CmdTravelBrochureType {
@@ -81,26 +81,26 @@ impl ::protobuf::Enum for CmdTravelBrochureType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTravelBrochureType> {
         match value {
             0 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureNone),
-            6425 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp),
-            6407 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp),
-            6413 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp),
-            6457 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq),
-            6411 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq),
-            6491 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq),
-            6426 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq),
-            6430 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp),
-            6489 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp),
-            6473 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq),
-            6495 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq),
-            6435 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq),
-            6410 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq),
-            6436 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify),
-            6477 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp),
-            6418 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp),
-            6406 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp),
-            6493 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp),
-            6447 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify),
-            6470 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq),
+            6476 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq),
+            6443 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq),
+            6422 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq),
+            6456 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp),
+            6432 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp),
+            6416 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify),
+            6471 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq),
+            6442 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq),
+            6483 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq),
+            6472 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq),
+            6495 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq),
+            6439 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp),
+            6477 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp),
+            6433 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp),
+            6485 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp),
+            6460 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp),
+            6448 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp),
+            6431 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify),
+            6452 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp),
+            6402 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -108,52 +108,52 @@ impl ::protobuf::Enum for CmdTravelBrochureType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTravelBrochureType> {
         match str {
             "CmdTravelBrochureNone" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureNone),
-            "CmdTravelBrochurePageResetScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp),
-            "CmdTravelBrochureApplyPasterListScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp),
-            "CmdTravelBrochureGetDataScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp),
+            "CmdTravelBrochureSelectMessageCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq),
             "CmdTravelBrochurePageResetCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq),
-            "CmdTravelBrochureGetDataCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq),
-            "CmdTravelBrochureSetPageDescStatusCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq),
             "CmdTravelBrochureRemovePasterCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq),
             "CmdTravelBrochureRemovePasterScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp),
-            "CmdTravelBrochureApplyPasterScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp),
+            "CmdTravelBrochureGetDataScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp),
+            "CmdTravelBrochureGetPasterScNotify" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify),
+            "CmdTravelBrochureApplyPasterCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq),
+            "CmdTravelBrochureApplyPasterListCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq),
             "CmdTravelBrochureSetCustomValueCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq),
             "CmdTravelBrochureUpdatePasterPosCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq),
-            "CmdTravelBrochureSelectMessageCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq),
-            "CmdTravelBrochureApplyPasterListCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq),
-            "CmdTravelBrochureGetPasterScNotify" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify),
-            "CmdTravelBrochureSetCustomValueScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp),
-            "CmdTravelBrochureUpdatePasterPosScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp),
-            "CmdTravelBrochureSelectMessageScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp),
+            "CmdTravelBrochureGetDataCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq),
             "CmdTravelBrochureSetPageDescStatusScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp),
+            "CmdTravelBrochureApplyPasterListScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp),
+            "CmdTravelBrochurePageResetScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp),
+            "CmdTravelBrochureUpdatePasterPosScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp),
+            "CmdTravelBrochureSetCustomValueScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp),
+            "CmdTravelBrochureSelectMessageScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp),
             "CmdTravelBrochurePageUnlockScNotify" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify),
-            "CmdTravelBrochureApplyPasterCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq),
+            "CmdTravelBrochureApplyPasterScRsp" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp),
+            "CmdTravelBrochureSetPageDescStatusCsReq" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTravelBrochureType] = &[
         CmdTravelBrochureType::CmdTravelBrochureNone,
-        CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp,
-        CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp,
-        CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq,
         CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq,
-        CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq,
-        CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq,
         CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq,
         CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp,
-        CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify,
+        CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq,
+        CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq,
         CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq,
         CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq,
-        CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq,
-        CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq,
-        CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify,
-        CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp,
-        CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp,
-        CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq,
         CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp,
+        CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp,
         CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify,
-        CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq,
+        CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp,
+        CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq,
     ];
 }
 
@@ -166,26 +166,26 @@ impl ::protobuf::EnumFull for CmdTravelBrochureType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTravelBrochureType::CmdTravelBrochureNone => 0,
-            CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp => 1,
-            CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp => 2,
-            CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp => 3,
-            CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq => 4,
-            CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq => 5,
-            CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq => 6,
-            CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq => 7,
-            CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp => 8,
-            CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp => 9,
-            CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq => 10,
-            CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq => 11,
-            CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq => 12,
-            CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq => 13,
-            CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify => 14,
-            CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp => 15,
-            CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp => 16,
+            CmdTravelBrochureType::CmdTravelBrochureSelectMessageCsReq => 1,
+            CmdTravelBrochureType::CmdTravelBrochurePageResetCsReq => 2,
+            CmdTravelBrochureType::CmdTravelBrochureRemovePasterCsReq => 3,
+            CmdTravelBrochureType::CmdTravelBrochureRemovePasterScRsp => 4,
+            CmdTravelBrochureType::CmdTravelBrochureGetDataScRsp => 5,
+            CmdTravelBrochureType::CmdTravelBrochureGetPasterScNotify => 6,
+            CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq => 7,
+            CmdTravelBrochureType::CmdTravelBrochureApplyPasterListCsReq => 8,
+            CmdTravelBrochureType::CmdTravelBrochureSetCustomValueCsReq => 9,
+            CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosCsReq => 10,
+            CmdTravelBrochureType::CmdTravelBrochureGetDataCsReq => 11,
+            CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp => 12,
+            CmdTravelBrochureType::CmdTravelBrochureApplyPasterListScRsp => 13,
+            CmdTravelBrochureType::CmdTravelBrochurePageResetScRsp => 14,
+            CmdTravelBrochureType::CmdTravelBrochureUpdatePasterPosScRsp => 15,
+            CmdTravelBrochureType::CmdTravelBrochureSetCustomValueScRsp => 16,
             CmdTravelBrochureType::CmdTravelBrochureSelectMessageScRsp => 17,
-            CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusScRsp => 18,
-            CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify => 19,
-            CmdTravelBrochureType::CmdTravelBrochureApplyPasterCsReq => 20,
+            CmdTravelBrochureType::CmdTravelBrochurePageUnlockScNotify => 18,
+            CmdTravelBrochureType::CmdTravelBrochureApplyPasterScRsp => 19,
+            CmdTravelBrochureType::CmdTravelBrochureSetPageDescStatusCsReq => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,22 +205,22 @@ impl CmdTravelBrochureType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdTravelBrochureType.proto*\xf1\x06\n\x15CmdTravelBrochureType\
-    \x12\x19\n\x15CmdTravelBrochureNone\x10\0\x12$\n\x1fCmdTravelBrochurePag\
-    eResetScRsp\x10\x992\x12*\n%CmdTravelBrochureApplyPasterListScRsp\x10\
-    \x872\x12\"\n\x1dCmdTravelBrochureGetDataScRsp\x10\x8d2\x12$\n\x1fCmdTra\
-    velBrochurePageResetCsReq\x10\xb92\x12\"\n\x1dCmdTravelBrochureGetDataCs\
-    Req\x10\x8b2\x12,\n'CmdTravelBrochureSetPageDescStatusCsReq\x10\xdb2\x12\
-    '\n\"CmdTravelBrochureRemovePasterCsReq\x10\x9a2\x12'\n\"CmdTravelBrochu\
-    reRemovePasterScRsp\x10\x9e2\x12&\n!CmdTravelBrochureApplyPasterScRsp\
-    \x10\xd92\x12)\n$CmdTravelBrochureSetCustomValueCsReq\x10\xc92\x12*\n%Cm\
-    dTravelBrochureUpdatePasterPosCsReq\x10\xdf2\x12(\n#CmdTravelBrochureSel\
-    ectMessageCsReq\x10\xa32\x12*\n%CmdTravelBrochureApplyPasterListCsReq\
-    \x10\x8a2\x12'\n\"CmdTravelBrochureGetPasterScNotify\x10\xa42\x12)\n$Cmd\
-    TravelBrochureSetCustomValueScRsp\x10\xcd2\x12*\n%CmdTravelBrochureUpdat\
-    ePasterPosScRsp\x10\x922\x12(\n#CmdTravelBrochureSelectMessageScRsp\x10\
-    \x862\x12,\n'CmdTravelBrochureSetPageDescStatusScRsp\x10\xdd2\x12(\n#Cmd\
-    TravelBrochurePageUnlockScNotify\x10\xaf2\x12&\n!CmdTravelBrochureApplyP\
-    asterCsReq\x10\xc62b\x06proto3\
+    \x12\x19\n\x15CmdTravelBrochureNone\x10\0\x12(\n#CmdTravelBrochureSelect\
+    MessageCsReq\x10\xcc2\x12$\n\x1fCmdTravelBrochurePageResetCsReq\x10\xab2\
+    \x12'\n\"CmdTravelBrochureRemovePasterCsReq\x10\x962\x12'\n\"CmdTravelBr\
+    ochureRemovePasterScRsp\x10\xb82\x12\"\n\x1dCmdTravelBrochureGetDataScRs\
+    p\x10\xa02\x12'\n\"CmdTravelBrochureGetPasterScNotify\x10\x902\x12&\n!Cm\
+    dTravelBrochureApplyPasterCsReq\x10\xc72\x12*\n%CmdTravelBrochureApplyPa\
+    sterListCsReq\x10\xaa2\x12)\n$CmdTravelBrochureSetCustomValueCsReq\x10\
+    \xd32\x12*\n%CmdTravelBrochureUpdatePasterPosCsReq\x10\xc82\x12\"\n\x1dC\
+    mdTravelBrochureGetDataCsReq\x10\xdf2\x12,\n'CmdTravelBrochureSetPageDes\
+    cStatusScRsp\x10\xa72\x12*\n%CmdTravelBrochureApplyPasterListScRsp\x10\
+    \xcd2\x12$\n\x1fCmdTravelBrochurePageResetScRsp\x10\xa12\x12*\n%CmdTrave\
+    lBrochureUpdatePasterPosScRsp\x10\xd52\x12)\n$CmdTravelBrochureSetCustom\
+    ValueScRsp\x10\xbc2\x12(\n#CmdTravelBrochureSelectMessageScRsp\x10\xb02\
+    \x12(\n#CmdTravelBrochurePageUnlockScNotify\x10\x9f2\x12&\n!CmdTravelBro\
+    chureApplyPasterScRsp\x10\xb42\x12,\n'CmdTravelBrochureSetPageDescStatus\
+    CsReq\x10\x822b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

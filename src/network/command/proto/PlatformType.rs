@@ -67,6 +67,10 @@ pub enum PlatformType {
     CLOUD_WEB_TOUCH = 24,
     // @@protoc_insertion_point(enum_value:PlatformType.CLOUD_WEB_KEYBOARD)
     CLOUD_WEB_KEYBOARD = 25,
+    // @@protoc_insertion_point(enum_value:PlatformType.CLOUD_DOUYIN_IOS)
+    CLOUD_DOUYIN_IOS = 27,
+    // @@protoc_insertion_point(enum_value:PlatformType.CLOUD_DOUYIN_ANDROID)
+    CLOUD_DOUYIN_ANDROID = 28,
 }
 
 impl ::protobuf::Enum for PlatformType {
@@ -98,6 +102,8 @@ impl ::protobuf::Enum for PlatformType {
             23 => ::std::option::Option::Some(PlatformType::CLOUD_WEB_MAC),
             24 => ::std::option::Option::Some(PlatformType::CLOUD_WEB_TOUCH),
             25 => ::std::option::Option::Some(PlatformType::CLOUD_WEB_KEYBOARD),
+            27 => ::std::option::Option::Some(PlatformType::CLOUD_DOUYIN_IOS),
+            28 => ::std::option::Option::Some(PlatformType::CLOUD_DOUYIN_ANDROID),
             _ => ::std::option::Option::None
         }
     }
@@ -124,6 +130,8 @@ impl ::protobuf::Enum for PlatformType {
             "CLOUD_WEB_MAC" => ::std::option::Option::Some(PlatformType::CLOUD_WEB_MAC),
             "CLOUD_WEB_TOUCH" => ::std::option::Option::Some(PlatformType::CLOUD_WEB_TOUCH),
             "CLOUD_WEB_KEYBOARD" => ::std::option::Option::Some(PlatformType::CLOUD_WEB_KEYBOARD),
+            "CLOUD_DOUYIN_IOS" => ::std::option::Option::Some(PlatformType::CLOUD_DOUYIN_IOS),
+            "CLOUD_DOUYIN_ANDROID" => ::std::option::Option::Some(PlatformType::CLOUD_DOUYIN_ANDROID),
             _ => ::std::option::Option::None
         }
     }
@@ -149,6 +157,8 @@ impl ::protobuf::Enum for PlatformType {
         PlatformType::CLOUD_WEB_MAC,
         PlatformType::CLOUD_WEB_TOUCH,
         PlatformType::CLOUD_WEB_KEYBOARD,
+        PlatformType::CLOUD_DOUYIN_IOS,
+        PlatformType::CLOUD_DOUYIN_ANDROID,
     ];
 }
 
@@ -180,6 +190,8 @@ impl ::protobuf::EnumFull for PlatformType {
             PlatformType::CLOUD_WEB_MAC => 17,
             PlatformType::CLOUD_WEB_TOUCH => 18,
             PlatformType::CLOUD_WEB_KEYBOARD => 19,
+            PlatformType::CLOUD_DOUYIN_IOS => 20,
+            PlatformType::CLOUD_DOUYIN_ANDROID => 21,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -198,7 +210,7 @@ impl PlatformType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12PlatformType.proto*\xae\x02\n\x0cPlatformType\x12\n\n\x06EDITOR\
+    \n\x12PlatformType.proto*\xde\x02\n\x0cPlatformType\x12\n\n\x06EDITOR\
     \x10\0\x12\x07\n\x03IOS\x10\x01\x12\x0b\n\x07ANDROID\x10\x02\x12\x06\n\
     \x02PC\x10\x03\x12\x07\n\x03WEB\x10\x04\x12\x07\n\x03WAP\x10\x05\x12\x07\
     \n\x03PS4\x10\x06\x12\x0c\n\x08NINTENDO\x10\x07\x12\x11\n\rCLOUD_ANDROID\
@@ -206,8 +218,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x03PS5\x10\x0b\x12\x07\n\x03MAC\x10\x0c\x12\r\n\tCLOUD_MAC\x10\r\x12\
     \x15\n\x11CLOUD_WEB_ANDROID\x10\x14\x12\x11\n\rCLOUD_WEB_IOS\x10\x15\x12\
     \x10\n\x0cCLOUD_WEB_PC\x10\x16\x12\x11\n\rCLOUD_WEB_MAC\x10\x17\x12\x13\
-    \n\x0fCLOUD_WEB_TOUCH\x10\x18\x12\x16\n\x12CLOUD_WEB_KEYBOARD\x10\x19b\
-    \x06proto3\
+    \n\x0fCLOUD_WEB_TOUCH\x10\x18\x12\x16\n\x12CLOUD_WEB_KEYBOARD\x10\x19\
+    \x12\x14\n\x10CLOUD_DOUYIN_IOS\x10\x1b\x12\x18\n\x14CLOUD_DOUYIN_ANDROID\
+    \x10\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NDHOPEDOFOC {
     // message oneof groups
-    pub BPBOPJFHLOO: ::std::option::Option<ndhopedofoc::BPBOPJFHLOO>,
+    pub OHMHKKLMKHD: ::std::option::Option<ndhopedofoc::OHMHKKLMKHD>,
     // special fields
     // @@protoc_insertion_point(special_field:NDHOPEDOFOC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl NDHOPEDOFOC {
         ::std::default::Default::default()
     }
 
-    // .IEKHJDECAPE OEKHNGFFGKB = 7;
+    // .IEKHJDECAPE OEKHNGFFGKB = 14;
 
     pub fn OEKHNGFFGKB(&self) -> &super::IEKHJDECAPE::IEKHJDECAPE {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(ref v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(ref v)) => v,
             _ => <super::IEKHJDECAPE::IEKHJDECAPE as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_OEKHNGFFGKB(&mut self) {
-        self.BPBOPJFHLOO = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
     }
 
     pub fn has_OEKHNGFFGKB(&self) -> bool {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(..)) => true,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_OEKHNGFFGKB(&mut self, v: super::IEKHJDECAPE::IEKHJDECAPE) {
-        self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(v))
+        self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_OEKHNGFFGKB(&mut self) -> &mut super::IEKHJDECAPE::IEKHJDECAPE {
-        if let ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(_)) = self.BPBOPJFHLOO {
+        if let ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(_)) = self.OHMHKKLMKHD {
         } else {
-            self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(super::IEKHJDECAPE::IEKHJDECAPE::new()));
+            self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(super::IEKHJDECAPE::IEKHJDECAPE::new()));
         }
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(ref mut v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl NDHOPEDOFOC {
     // Take field
     pub fn take_OEKHNGFFGKB(&mut self) -> super::IEKHJDECAPE::IEKHJDECAPE {
         if self.has_OEKHNGFFGKB() {
-            match self.BPBOPJFHLOO.take() {
-                ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(v)) => v,
+            match self.OHMHKKLMKHD.take() {
+                ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl NDHOPEDOFOC {
         }
     }
 
-    // .AKCPALGEMOL ADEOIGEBMDF = 8;
+    // .AKCPALGEMOL ADEOIGEBMDF = 3;
 
     pub fn ADEOIGEBMDF(&self) -> &super::AKCPALGEMOL::AKCPALGEMOL {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(ref v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(ref v)) => v,
             _ => <super::AKCPALGEMOL::AKCPALGEMOL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ADEOIGEBMDF(&mut self) {
-        self.BPBOPJFHLOO = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
     }
 
     pub fn has_ADEOIGEBMDF(&self) -> bool {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(..)) => true,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ADEOIGEBMDF(&mut self, v: super::AKCPALGEMOL::AKCPALGEMOL) {
-        self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(v))
+        self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ADEOIGEBMDF(&mut self) -> &mut super::AKCPALGEMOL::AKCPALGEMOL {
-        if let ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(_)) = self.BPBOPJFHLOO {
+        if let ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(_)) = self.OHMHKKLMKHD {
         } else {
-            self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(super::AKCPALGEMOL::AKCPALGEMOL::new()));
+            self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(super::AKCPALGEMOL::AKCPALGEMOL::new()));
         }
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(ref mut v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl NDHOPEDOFOC {
     // Take field
     pub fn take_ADEOIGEBMDF(&mut self) -> super::AKCPALGEMOL::AKCPALGEMOL {
         if self.has_ADEOIGEBMDF() {
-            match self.BPBOPJFHLOO.take() {
-                ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(v)) => v,
+            match self.OHMHKKLMKHD.take() {
+                ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -143,39 +143,39 @@ impl NDHOPEDOFOC {
         }
     }
 
-    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 9;
+    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 13;
 
     pub fn FUNC_UNLOCK_ID_RELIC(&self) -> &super::NHDBOFCFCJM::NHDBOFCFCJM {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(ref v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(ref v)) => v,
             _ => <super::NHDBOFCFCJM::NHDBOFCFCJM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FUNC_UNLOCK_ID_RELIC(&mut self) {
-        self.BPBOPJFHLOO = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
     }
 
     pub fn has_FUNC_UNLOCK_ID_RELIC(&self) -> bool {
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(..)) => true,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FUNC_UNLOCK_ID_RELIC(&mut self, v: super::NHDBOFCFCJM::NHDBOFCFCJM) {
-        self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(v))
+        self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FUNC_UNLOCK_ID_RELIC(&mut self) -> &mut super::NHDBOFCFCJM::NHDBOFCFCJM {
-        if let ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(_)) = self.BPBOPJFHLOO {
+        if let ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(_)) = self.OHMHKKLMKHD {
         } else {
-            self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(super::NHDBOFCFCJM::NHDBOFCFCJM::new()));
+            self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(super::NHDBOFCFCJM::NHDBOFCFCJM::new()));
         }
-        match self.BPBOPJFHLOO {
-            ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(ref mut v)) => v,
+        match self.OHMHKKLMKHD {
+            ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl NDHOPEDOFOC {
     // Take field
     pub fn take_FUNC_UNLOCK_ID_RELIC(&mut self) -> super::NHDBOFCFCJM::NHDBOFCFCJM {
         if self.has_FUNC_UNLOCK_ID_RELIC() {
-            match self.BPBOPJFHLOO.take() {
-                ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(v)) => v,
+            match self.OHMHKKLMKHD.take() {
+                ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -216,7 +216,7 @@ impl NDHOPEDOFOC {
             NDHOPEDOFOC::mut_FUNC_UNLOCK_ID_RELIC,
             NDHOPEDOFOC::set_FUNC_UNLOCK_ID_RELIC,
         ));
-        oneofs.push(ndhopedofoc::BPBOPJFHLOO::generated_oneof_descriptor_data());
+        oneofs.push(ndhopedofoc::OHMHKKLMKHD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NDHOPEDOFOC>(
             "NDHOPEDOFOC",
             fields,
@@ -235,14 +235,14 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(is.read_message()?));
+                114 => {
+                    self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(is.read_message()?));
                 },
-                66 => {
-                    self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(is.read_message()?));
+                26 => {
+                    self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(is.read_message()?));
                 },
-                74 => {
-                    self.BPBOPJFHLOO = ::std::option::Option::Some(ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(is.read_message()?));
+                106 => {
+                    self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -256,17 +256,17 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.BPBOPJFHLOO {
+        if let ::std::option::Option::Some(ref v) = self.OHMHKKLMKHD {
             match v {
-                &ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(ref v) => {
+                &ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(ref v) => {
+                &ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(ref v) => {
+                &ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -278,16 +278,16 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.BPBOPJFHLOO {
+        if let ::std::option::Option::Some(ref v) = self.OHMHKKLMKHD {
             match v {
-                &ndhopedofoc::BPBOPJFHLOO::OEKHNGFFGKB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &ndhopedofoc::BPBOPJFHLOO::ADEOIGEBMDF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                &ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &ndhopedofoc::BPBOPJFHLOO::FUNCUNLOCKIDRELIC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                &ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -308,15 +308,15 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     }
 
     fn clear(&mut self) {
-        self.BPBOPJFHLOO = ::std::option::Option::None;
-        self.BPBOPJFHLOO = ::std::option::Option::None;
-        self.BPBOPJFHLOO = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
+        self.OHMHKKLMKHD = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NDHOPEDOFOC {
         static instance: NDHOPEDOFOC = NDHOPEDOFOC {
-            BPBOPJFHLOO: ::std::option::Option::None,
+            OHMHKKLMKHD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -345,8 +345,8 @@ pub mod ndhopedofoc {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:NDHOPEDOFOC.BPBOPJFHLOO)
-    pub enum BPBOPJFHLOO {
+    // @@protoc_insertion_point(oneof:NDHOPEDOFOC.OHMHKKLMKHD)
+    pub enum OHMHKKLMKHD {
         // @@protoc_insertion_point(oneof_field:NDHOPEDOFOC.OEKHNGFFGKB)
         OEKHNGFFGKB(super::super::IEKHJDECAPE::IEKHJDECAPE),
         // @@protoc_insertion_point(oneof_field:NDHOPEDOFOC.ADEOIGEBMDF)
@@ -355,19 +355,19 @@ pub mod ndhopedofoc {
         FUNCUNLOCKIDRELIC(super::super::NHDBOFCFCJM::NHDBOFCFCJM),
     }
 
-    impl ::protobuf::Oneof for BPBOPJFHLOO {
+    impl ::protobuf::Oneof for OHMHKKLMKHD {
     }
 
-    impl ::protobuf::OneofFull for BPBOPJFHLOO {
+    impl ::protobuf::OneofFull for OHMHKKLMKHD {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::NDHOPEDOFOC as ::protobuf::MessageFull>::descriptor().oneof_by_name("BPBOPJFHLOO").unwrap()).clone()
+            descriptor.get(|| <super::NDHOPEDOFOC as ::protobuf::MessageFull>::descriptor().oneof_by_name("OHMHKKLMKHD").unwrap()).clone()
         }
     }
 
-    impl BPBOPJFHLOO {
+    impl OHMHKKLMKHD {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BPBOPJFHLOO>("BPBOPJFHLOO")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OHMHKKLMKHD>("OHMHKKLMKHD")
         }
     }
 }
@@ -375,10 +375,10 @@ pub mod ndhopedofoc {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NDHOPEDOFOC.proto\x1a\x11AKCPALGEMOL.proto\x1a\x11IEKHJDECAPE.prot\
     o\x1a\x11NHDBOFCFCJM.proto\"\xc1\x01\n\x0bNDHOPEDOFOC\x120\n\x0bOEKHNGFF\
-    GKB\x18\x07\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
-    DEOIGEBMDF\x18\x08\x20\x01(\x0b2\x0c.AKCPALGEMOLH\0R\x0bADEOIGEBMDF\x12?\
-    \n\x14FUNC_UNLOCK_ID_RELIC\x18\t\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11FU\
-    NCUNLOCKIDRELICB\r\n\x0bBPBOPJFHLOOb\x06proto3\
+    GKB\x18\x0e\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
+    DEOIGEBMDF\x18\x03\x20\x01(\x0b2\x0c.AKCPALGEMOLH\0R\x0bADEOIGEBMDF\x12?\
+    \n\x14FUNC_UNLOCK_ID_RELIC\x18\r\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11FU\
+    NCUNLOCKIDRELICB\r\n\x0bOHMHKKLMKHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

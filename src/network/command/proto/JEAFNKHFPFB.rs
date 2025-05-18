@@ -32,8 +32,8 @@ pub struct JEAFNKHFPFB {
     pub FKMDHIBFOMH: bool,
     // @@protoc_insertion_point(field:JEAFNKHFPFB.KPEBBGCMMIP)
     pub KPEBBGCMMIP: u32,
-    // @@protoc_insertion_point(field:JEAFNKHFPFB.DDFKAEPCANH)
-    pub DDFKAEPCANH: bool,
+    // @@protoc_insertion_point(field:JEAFNKHFPFB.is_auto_fight)
+    pub is_auto_fight: bool,
     // @@protoc_insertion_point(field:JEAFNKHFPFB.FHIDOICAFOL)
     pub FHIDOICAFOL: ::std::string::String,
     // @@protoc_insertion_point(field:JEAFNKHFPFB.LKFDPDLDMIB)
@@ -72,9 +72,9 @@ impl JEAFNKHFPFB {
             |m: &mut JEAFNKHFPFB| { &mut m.KPEBBGCMMIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDFKAEPCANH",
-            |m: &JEAFNKHFPFB| { &m.DDFKAEPCANH },
-            |m: &mut JEAFNKHFPFB| { &mut m.DDFKAEPCANH },
+            "is_auto_fight",
+            |m: &JEAFNKHFPFB| { &m.is_auto_fight },
+            |m: &mut JEAFNKHFPFB| { &mut m.is_auto_fight },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FHIDOICAFOL",
@@ -121,7 +121,7 @@ impl ::protobuf::Message for JEAFNKHFPFB {
                     self.KPEBBGCMMIP = is.read_uint32()?;
                 },
                 24 => {
-                    self.DDFKAEPCANH = is.read_bool()?;
+                    self.is_auto_fight = is.read_bool()?;
                 },
                 34 => {
                     self.FHIDOICAFOL = is.read_string()?;
@@ -153,7 +153,7 @@ impl ::protobuf::Message for JEAFNKHFPFB {
         if self.KPEBBGCMMIP != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.KPEBBGCMMIP);
         }
-        if self.DDFKAEPCANH != false {
+        if self.is_auto_fight != false {
             my_size += 1 + 1;
         }
         if !self.FHIDOICAFOL.is_empty() {
@@ -180,8 +180,8 @@ impl ::protobuf::Message for JEAFNKHFPFB {
         if self.KPEBBGCMMIP != 0 {
             os.write_uint32(2, self.KPEBBGCMMIP)?;
         }
-        if self.DDFKAEPCANH != false {
-            os.write_bool(3, self.DDFKAEPCANH)?;
+        if self.is_auto_fight != false {
+            os.write_bool(3, self.is_auto_fight)?;
         }
         if !self.FHIDOICAFOL.is_empty() {
             os.write_string(4, &self.FHIDOICAFOL)?;
@@ -214,7 +214,7 @@ impl ::protobuf::Message for JEAFNKHFPFB {
     fn clear(&mut self) {
         self.FKMDHIBFOMH = false;
         self.KPEBBGCMMIP = 0;
-        self.DDFKAEPCANH = false;
+        self.is_auto_fight = false;
         self.FHIDOICAFOL.clear();
         self.LKFDPDLDMIB = false;
         self.MNALPNFNMIO = false;
@@ -226,7 +226,7 @@ impl ::protobuf::Message for JEAFNKHFPFB {
         static instance: JEAFNKHFPFB = JEAFNKHFPFB {
             FKMDHIBFOMH: false,
             KPEBBGCMMIP: 0,
-            DDFKAEPCANH: false,
+            is_auto_fight: false,
             FHIDOICAFOL: ::std::string::String::new(),
             LKFDPDLDMIB: false,
             MNALPNFNMIO: false,
@@ -255,11 +255,11 @@ impl ::protobuf::reflect::ProtobufValue for JEAFNKHFPFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JEAFNKHFPFB.proto\"\xfb\x01\n\x0bJEAFNKHFPFB\x12\x20\n\x0bFKMDHIBF\
+    \n\x11JEAFNKHFPFB.proto\"\xfd\x01\n\x0bJEAFNKHFPFB\x12\x20\n\x0bFKMDHIBF\
     OMH\x18\x01\x20\x01(\x08R\x0bFKMDHIBFOMH\x12\x20\n\x0bKPEBBGCMMIP\x18\
-    \x02\x20\x01(\rR\x0bKPEBBGCMMIP\x12\x20\n\x0bDDFKAEPCANH\x18\x03\x20\x01\
-    (\x08R\x0bDDFKAEPCANH\x12\x20\n\x0bFHIDOICAFOL\x18\x04\x20\x01(\tR\x0bFH\
-    IDOICAFOL\x12\x20\n\x0bLKFDPDLDMIB\x18\x05\x20\x01(\x08R\x0bLKFDPDLDMIB\
+    \x02\x20\x01(\rR\x0bKPEBBGCMMIP\x12\"\n\ris_auto_fight\x18\x03\x20\x01(\
+    \x08R\x0bisAutoFight\x12\x20\n\x0bFHIDOICAFOL\x18\x04\x20\x01(\tR\x0bFHI\
+    DOICAFOL\x12\x20\n\x0bLKFDPDLDMIB\x18\x05\x20\x01(\x08R\x0bLKFDPDLDMIB\
     \x12\x20\n\x0bMNALPNFNMIO\x18\x06\x20\x01(\x08R\x0bMNALPNFNMIO\x12\x20\n\
     \x0bGGFCOJFLKBP\x18\x07\x20\x01(\rR\x0bGGFCOJFLKBPb\x06proto3\
 ";

@@ -32,8 +32,8 @@ pub struct ServerLogScNotify {
     pub level: ::protobuf::EnumOrUnknown<super::ServerLogLevel::ServerLogLevel>,
     // @@protoc_insertion_point(field:ServerLogScNotify.HKLIGCHHIEG)
     pub HKLIGCHHIEG: ::std::string::String,
-    // @@protoc_insertion_point(field:ServerLogScNotify.EAMAJGPCGFD)
-    pub EAMAJGPCGFD: ::protobuf::EnumOrUnknown<super::ServerLogTag::ServerLogTag>,
+    // @@protoc_insertion_point(field:ServerLogScNotify.tag)
+    pub tag: ::protobuf::EnumOrUnknown<super::ServerLogTag::ServerLogTag>,
     // @@protoc_insertion_point(field:ServerLogScNotify.LCPLLGNJNAJ)
     pub LCPLLGNJNAJ: ::std::string::String,
     // special fields
@@ -66,9 +66,9 @@ impl ServerLogScNotify {
             |m: &mut ServerLogScNotify| { &mut m.HKLIGCHHIEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAMAJGPCGFD",
-            |m: &ServerLogScNotify| { &m.EAMAJGPCGFD },
-            |m: &mut ServerLogScNotify| { &mut m.EAMAJGPCGFD },
+            "tag",
+            |m: &ServerLogScNotify| { &m.tag },
+            |m: &mut ServerLogScNotify| { &mut m.tag },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LCPLLGNJNAJ",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ServerLogScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.level = is.read_enum_or_unknown()?;
                 },
-                10 => {
+                122 => {
                     self.HKLIGCHHIEG = is.read_string()?;
                 },
-                112 => {
-                    self.EAMAJGPCGFD = is.read_enum_or_unknown()?;
+                56 => {
+                    self.tag = is.read_enum_or_unknown()?;
                 },
-                74 => {
+                26 => {
                     self.LCPLLGNJNAJ = is.read_string()?;
                 },
                 tag => {
@@ -118,16 +118,16 @@ impl ::protobuf::Message for ServerLogScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.level.value());
+            my_size += ::protobuf::rt::int32_size(9, self.level.value());
         }
         if !self.HKLIGCHHIEG.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.HKLIGCHHIEG);
+            my_size += ::protobuf::rt::string_size(15, &self.HKLIGCHHIEG);
         }
-        if self.EAMAJGPCGFD != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(14, self.EAMAJGPCGFD.value());
+        if self.tag != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
+            my_size += ::protobuf::rt::int32_size(7, self.tag.value());
         }
         if !self.LCPLLGNJNAJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.LCPLLGNJNAJ);
+            my_size += ::protobuf::rt::string_size(3, &self.LCPLLGNJNAJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for ServerLogScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.level))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.level))?;
         }
         if !self.HKLIGCHHIEG.is_empty() {
-            os.write_string(1, &self.HKLIGCHHIEG)?;
+            os.write_string(15, &self.HKLIGCHHIEG)?;
         }
-        if self.EAMAJGPCGFD != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.EAMAJGPCGFD))?;
+        if self.tag != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.tag))?;
         }
         if !self.LCPLLGNJNAJ.is_empty() {
-            os.write_string(9, &self.LCPLLGNJNAJ)?;
+            os.write_string(3, &self.LCPLLGNJNAJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::Message for ServerLogScNotify {
     fn clear(&mut self) {
         self.level = ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE);
         self.HKLIGCHHIEG.clear();
-        self.EAMAJGPCGFD = ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT);
+        self.tag = ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT);
         self.LCPLLGNJNAJ.clear();
         self.special_fields.clear();
     }
@@ -175,7 +175,7 @@ impl ::protobuf::Message for ServerLogScNotify {
         static instance: ServerLogScNotify = ServerLogScNotify {
             level: ::protobuf::EnumOrUnknown::from_i32(0),
             HKLIGCHHIEG: ::std::string::String::new(),
-            EAMAJGPCGFD: ::protobuf::EnumOrUnknown::from_i32(0),
+            tag: ::protobuf::EnumOrUnknown::from_i32(0),
             LCPLLGNJNAJ: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ServerLogScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ServerLogScNotify.proto\x1a\x14ServerLogLevel.proto\x1a\x12ServerL\
-    ogTag.proto\"\xaf\x01\n\x11ServerLogScNotify\x12%\n\x05level\x18\x03\x20\
-    \x01(\x0e2\x0f.ServerLogLevelR\x05level\x12\x20\n\x0bHKLIGCHHIEG\x18\x01\
-    \x20\x01(\tR\x0bHKLIGCHHIEG\x12/\n\x0bEAMAJGPCGFD\x18\x0e\x20\x01(\x0e2\
-    \r.ServerLogTagR\x0bEAMAJGPCGFD\x12\x20\n\x0bLCPLLGNJNAJ\x18\t\x20\x01(\
-    \tR\x0bLCPLLGNJNAJb\x06proto3\
+    ogTag.proto\"\x9f\x01\n\x11ServerLogScNotify\x12%\n\x05level\x18\t\x20\
+    \x01(\x0e2\x0f.ServerLogLevelR\x05level\x12\x20\n\x0bHKLIGCHHIEG\x18\x0f\
+    \x20\x01(\tR\x0bHKLIGCHHIEG\x12\x1f\n\x03tag\x18\x07\x20\x01(\x0e2\r.Ser\
+    verLogTagR\x03tag\x12\x20\n\x0bLCPLLGNJNAJ\x18\x03\x20\x01(\tR\x0bLCPLLG\
+    NJNAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

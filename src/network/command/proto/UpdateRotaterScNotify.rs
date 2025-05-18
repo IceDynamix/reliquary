@@ -72,7 +72,7 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                66 => {
                     self.rotater_data_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rotater_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRotaterScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateRotaterScNotify.proto\x1a\x11RotaterData.proto\"Q\n\x15Updat\
-    eRotaterScNotify\x128\n\x11rotater_data_list\x18\t\x20\x03(\x0b2\x0c.Rot\
-    aterDataR\x0frotaterDataListb\x06proto3\
+    eRotaterScNotify\x128\n\x11rotater_data_list\x18\x08\x20\x03(\x0b2\x0c.R\
+    otaterDataR\x0frotaterDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

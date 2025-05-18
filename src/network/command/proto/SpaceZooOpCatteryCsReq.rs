@@ -30,8 +30,8 @@ pub struct SpaceZooOpCatteryCsReq {
     // message fields
     // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.NILEEDJLGIN)
     pub NILEEDJLGIN: u32,
-    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.MGDJDOLJILJ)
-    pub MGDJDOLJILJ: u32,
+    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.op_type)
+    pub op_type: u32,
     // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.ALGEIENIOAN)
     pub ALGEIENIOAN: u32,
     // special fields
@@ -59,9 +59,9 @@ impl SpaceZooOpCatteryCsReq {
             |m: &mut SpaceZooOpCatteryCsReq| { &mut m.NILEEDJLGIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGDJDOLJILJ",
-            |m: &SpaceZooOpCatteryCsReq| { &m.MGDJDOLJILJ },
-            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.MGDJDOLJILJ },
+            "op_type",
+            |m: &SpaceZooOpCatteryCsReq| { &m.op_type },
+            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.op_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALGEIENIOAN",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.NILEEDJLGIN = is.read_uint32()?;
                 },
-                24 => {
-                    self.MGDJDOLJILJ = is.read_uint32()?;
+                64 => {
+                    self.op_type = is.read_uint32()?;
                 },
-                120 => {
+                24 => {
                     self.ALGEIENIOAN = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NILEEDJLGIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NILEEDJLGIN);
+            my_size += ::protobuf::rt::uint32_size(1, self.NILEEDJLGIN);
         }
-        if self.MGDJDOLJILJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MGDJDOLJILJ);
+        if self.op_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.op_type);
         }
         if self.ALGEIENIOAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ALGEIENIOAN);
+            my_size += ::protobuf::rt::uint32_size(3, self.ALGEIENIOAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NILEEDJLGIN != 0 {
-            os.write_uint32(9, self.NILEEDJLGIN)?;
+            os.write_uint32(1, self.NILEEDJLGIN)?;
         }
-        if self.MGDJDOLJILJ != 0 {
-            os.write_uint32(3, self.MGDJDOLJILJ)?;
+        if self.op_type != 0 {
+            os.write_uint32(8, self.op_type)?;
         }
         if self.ALGEIENIOAN != 0 {
-            os.write_uint32(15, self.ALGEIENIOAN)?;
+            os.write_uint32(3, self.ALGEIENIOAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
 
     fn clear(&mut self) {
         self.NILEEDJLGIN = 0;
-        self.MGDJDOLJILJ = 0;
+        self.op_type = 0;
         self.ALGEIENIOAN = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn default_instance() -> &'static SpaceZooOpCatteryCsReq {
         static instance: SpaceZooOpCatteryCsReq = SpaceZooOpCatteryCsReq {
             NILEEDJLGIN: 0,
-            MGDJDOLJILJ: 0,
+            op_type: 0,
             ALGEIENIOAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooOpCatteryCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSpaceZooOpCatteryCsReq.proto\"~\n\x16SpaceZooOpCatteryCsReq\x12\
-    \x20\n\x0bNILEEDJLGIN\x18\t\x20\x01(\rR\x0bNILEEDJLGIN\x12\x20\n\x0bMGDJ\
-    DOLJILJ\x18\x03\x20\x01(\rR\x0bMGDJDOLJILJ\x12\x20\n\x0bALGEIENIOAN\x18\
-    \x0f\x20\x01(\rR\x0bALGEIENIOANb\x06proto3\
+    \n\x1cSpaceZooOpCatteryCsReq.proto\"u\n\x16SpaceZooOpCatteryCsReq\x12\
+    \x20\n\x0bNILEEDJLGIN\x18\x01\x20\x01(\rR\x0bNILEEDJLGIN\x12\x17\n\x07op\
+    _type\x18\x08\x20\x01(\rR\x06opType\x12\x20\n\x0bALGEIENIOAN\x18\x03\x20\
+    \x01(\rR\x0bALGEIENIOANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,14 +30,14 @@ pub struct JHPKNHHNAPP {
     // message fields
     // @@protoc_insertion_point(field:JHPKNHHNAPP.ELINMPKBEFL)
     pub ELINMPKBEFL: u32,
-    // @@protoc_insertion_point(field:JHPKNHHNAPP.JBLECMAPFDC)
-    pub JBLECMAPFDC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JHPKNHHNAPP.AHMDOBICECA)
     pub AHMDOBICECA: ::std::vec::Vec<super::FightGeneralScNotify::FightGeneralScNotify>,
-    // @@protoc_insertion_point(field:JHPKNHHNAPP.KBJFONAGBHK)
-    pub KBJFONAGBHK: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:JHPKNHHNAPP.LBGDLHKEEKC)
     pub LBGDLHKEEKC: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:JHPKNHHNAPP.JBLECMAPFDC)
+    pub JBLECMAPFDC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JHPKNHHNAPP.KBJFONAGBHK)
+    pub KBJFONAGBHK: ::std::vec::Vec<u8>,
     // special fields
     // @@protoc_insertion_point(special_field:JHPKNHHNAPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,24 +63,24 @@ impl JHPKNHHNAPP {
             |m: &mut JHPKNHHNAPP| { &mut m.ELINMPKBEFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JBLECMAPFDC",
-            |m: &JHPKNHHNAPP| { &m.JBLECMAPFDC },
-            |m: &mut JHPKNHHNAPP| { &mut m.JBLECMAPFDC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AHMDOBICECA",
             |m: &JHPKNHHNAPP| { &m.AHMDOBICECA },
             |m: &mut JHPKNHHNAPP| { &mut m.AHMDOBICECA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBJFONAGBHK",
-            |m: &JHPKNHHNAPP| { &m.KBJFONAGBHK },
-            |m: &mut JHPKNHHNAPP| { &mut m.KBJFONAGBHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LBGDLHKEEKC",
             |m: &JHPKNHHNAPP| { &m.LBGDLHKEEKC },
             |m: &mut JHPKNHHNAPP| { &mut m.LBGDLHKEEKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JBLECMAPFDC",
+            |m: &JHPKNHHNAPP| { &m.JBLECMAPFDC },
+            |m: &mut JHPKNHHNAPP| { &mut m.JBLECMAPFDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBJFONAGBHK",
+            |m: &JHPKNHHNAPP| { &m.KBJFONAGBHK },
+            |m: &mut JHPKNHHNAPP| { &mut m.KBJFONAGBHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JHPKNHHNAPP>(
             "JHPKNHHNAPP",
@@ -103,20 +103,20 @@ impl ::protobuf::Message for JHPKNHHNAPP {
                 104 => {
                     self.ELINMPKBEFL = is.read_uint32()?;
                 },
-                90 => {
+                114 => {
+                    self.AHMDOBICECA.push(is.read_message()?);
+                },
+                66 => {
+                    self.LBGDLHKEEKC = is.read_bytes()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.JBLECMAPFDC)?;
                 },
-                88 => {
+                24 => {
                     self.JBLECMAPFDC.push(is.read_uint32()?);
-                },
-                98 => {
-                    self.AHMDOBICECA.push(is.read_message()?);
                 },
                 34 => {
                     self.KBJFONAGBHK = is.read_bytes()?;
-                },
-                10 => {
-                    self.LBGDLHKEEKC = is.read_bytes()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,16 +133,16 @@ impl ::protobuf::Message for JHPKNHHNAPP {
         if self.ELINMPKBEFL != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.ELINMPKBEFL);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.JBLECMAPFDC);
         for value in &self.AHMDOBICECA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if !self.LBGDLHKEEKC.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(8, &self.LBGDLHKEEKC);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.JBLECMAPFDC);
         if !self.KBJFONAGBHK.is_empty() {
             my_size += ::protobuf::rt::bytes_size(4, &self.KBJFONAGBHK);
-        }
-        if !self.LBGDLHKEEKC.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(1, &self.LBGDLHKEEKC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,15 +153,15 @@ impl ::protobuf::Message for JHPKNHHNAPP {
         if self.ELINMPKBEFL != 0 {
             os.write_uint32(13, self.ELINMPKBEFL)?;
         }
-        os.write_repeated_packed_uint32(11, &self.JBLECMAPFDC)?;
         for v in &self.AHMDOBICECA {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        if !self.LBGDLHKEEKC.is_empty() {
+            os.write_bytes(8, &self.LBGDLHKEEKC)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.JBLECMAPFDC)?;
         if !self.KBJFONAGBHK.is_empty() {
             os.write_bytes(4, &self.KBJFONAGBHK)?;
-        }
-        if !self.LBGDLHKEEKC.is_empty() {
-            os.write_bytes(1, &self.LBGDLHKEEKC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for JHPKNHHNAPP {
 
     fn clear(&mut self) {
         self.ELINMPKBEFL = 0;
-        self.JBLECMAPFDC.clear();
         self.AHMDOBICECA.clear();
-        self.KBJFONAGBHK.clear();
         self.LBGDLHKEEKC.clear();
+        self.JBLECMAPFDC.clear();
+        self.KBJFONAGBHK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JHPKNHHNAPP {
         static instance: JHPKNHHNAPP = JHPKNHHNAPP {
             ELINMPKBEFL: 0,
-            JBLECMAPFDC: ::std::vec::Vec::new(),
             AHMDOBICECA: ::std::vec::Vec::new(),
-            KBJFONAGBHK: ::std::vec::Vec::new(),
             LBGDLHKEEKC: ::std::vec::Vec::new(),
+            JBLECMAPFDC: ::std::vec::Vec::new(),
+            KBJFONAGBHK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for JHPKNHHNAPP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JHPKNHHNAPP.proto\x1a\x1aFightGeneralScNotify.proto\"\xce\x01\n\
     \x0bJHPKNHHNAPP\x12\x20\n\x0bELINMPKBEFL\x18\r\x20\x01(\rR\x0bELINMPKBEF\
-    L\x12\x20\n\x0bJBLECMAPFDC\x18\x0b\x20\x03(\rR\x0bJBLECMAPFDC\x127\n\x0b\
-    AHMDOBICECA\x18\x0c\x20\x03(\x0b2\x15.FightGeneralScNotifyR\x0bAHMDOBICE\
-    CA\x12\x20\n\x0bKBJFONAGBHK\x18\x04\x20\x01(\x0cR\x0bKBJFONAGBHK\x12\x20\
-    \n\x0bLBGDLHKEEKC\x18\x01\x20\x01(\x0cR\x0bLBGDLHKEEKCb\x06proto3\
+    L\x127\n\x0bAHMDOBICECA\x18\x0e\x20\x03(\x0b2\x15.FightGeneralScNotifyR\
+    \x0bAHMDOBICECA\x12\x20\n\x0bLBGDLHKEEKC\x18\x08\x20\x01(\x0cR\x0bLBGDLH\
+    KEEKC\x12\x20\n\x0bJBLECMAPFDC\x18\x03\x20\x03(\rR\x0bJBLECMAPFDC\x12\
+    \x20\n\x0bKBJFONAGBHK\x18\x04\x20\x01(\x0cR\x0bKBJFONAGBHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

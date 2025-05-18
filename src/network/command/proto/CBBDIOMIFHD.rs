@@ -32,8 +32,8 @@ pub struct CBBDIOMIFHD {
     pub basic_info: ::protobuf::MessageField<super::OODOCMDLOMF::OODOCMDLOMF>,
     // @@protoc_insertion_point(field:CBBDIOMIFHD.NCKCCOKDKOL)
     pub NCKCCOKDKOL: ::protobuf::MessageField<super::IDDLKHHLECG::IDDLKHHLECG>,
-    // @@protoc_insertion_point(field:CBBDIOMIFHD.story_info)
-    pub story_info: ::protobuf::MessageField<super::EPEGHCGCMHP::EPEGHCGCMHP>,
+    // @@protoc_insertion_point(field:CBBDIOMIFHD.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::EPEGHCGCMHP::EPEGHCGCMHP>,
     // special fields
     // @@protoc_insertion_point(special_field:CBBDIOMIFHD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl CBBDIOMIFHD {
             |m: &mut CBBDIOMIFHD| { &mut m.NCKCCOKDKOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPEGHCGCMHP::EPEGHCGCMHP>(
-            "story_info",
-            |m: &CBBDIOMIFHD| { &m.story_info },
-            |m: &mut CBBDIOMIFHD| { &mut m.story_info },
+            "stage_info",
+            |m: &CBBDIOMIFHD| { &m.stage_info },
+            |m: &mut CBBDIOMIFHD| { &mut m.stage_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CBBDIOMIFHD>(
             "CBBDIOMIFHD",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCKCCOKDKOL)?;
                 },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -115,7 +115,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.story_info.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -131,7 +131,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
         if let Some(v) = self.NCKCCOKDKOL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.story_info.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -153,7 +153,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
     fn clear(&mut self) {
         self.basic_info.clear();
         self.NCKCCOKDKOL.clear();
-        self.story_info.clear();
+        self.stage_info.clear();
         self.special_fields.clear();
     }
 
@@ -161,7 +161,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
         static instance: CBBDIOMIFHD = CBBDIOMIFHD {
             basic_info: ::protobuf::MessageField::none(),
             NCKCCOKDKOL: ::protobuf::MessageField::none(),
-            story_info: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -189,8 +189,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CBBDIOMIFHD.proto\x1a\x11EPEGHCGCMHP.proto\x1a\x11IDDLKHHLECG.prot\
     o\x1a\x11OODOCMDLOMF.proto\"\x97\x01\n\x0bCBBDIOMIFHD\x12+\n\nbasic_info\
     \x18\x01\x20\x01(\x0b2\x0c.OODOCMDLOMFR\tbasicInfo\x12.\n\x0bNCKCCOKDKOL\
-    \x18\x02\x20\x01(\x0b2\x0c.IDDLKHHLECGR\x0bNCKCCOKDKOL\x12+\n\nstory_inf\
-    o\x18\x03\x20\x01(\x0b2\x0c.EPEGHCGCMHPR\tstoryInfob\x06proto3\
+    \x18\x02\x20\x01(\x0b2\x0c.IDDLKHHLECGR\x0bNCKCCOKDKOL\x12+\n\nstage_inf\
+    o\x18\x03\x20\x01(\x0b2\x0c.EPEGHCGCMHPR\tstageInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LADHIKPAJCJ {
     // message fields
-    // @@protoc_insertion_point(field:LADHIKPAJCJ.ICJABPGMACJ)
-    pub ICJABPGMACJ: i32,
     // @@protoc_insertion_point(field:LADHIKPAJCJ.BOHDMINEJNO)
     pub BOHDMINEJNO: ::protobuf::MessageField<super::EENDHPKPFLP::EENDHPKPFLP>,
-    // @@protoc_insertion_point(field:LADHIKPAJCJ.AMNBMJOFJOO)
-    pub AMNBMJOFJOO: u32,
+    // @@protoc_insertion_point(field:LADHIKPAJCJ.ICJABPGMACJ)
+    pub ICJABPGMACJ: i32,
+    // @@protoc_insertion_point(field:LADHIKPAJCJ.game_aeon_id)
+    pub game_aeon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LADHIKPAJCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl LADHIKPAJCJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICJABPGMACJ",
-            |m: &LADHIKPAJCJ| { &m.ICJABPGMACJ },
-            |m: &mut LADHIKPAJCJ| { &mut m.ICJABPGMACJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EENDHPKPFLP::EENDHPKPFLP>(
             "BOHDMINEJNO",
             |m: &LADHIKPAJCJ| { &m.BOHDMINEJNO },
             |m: &mut LADHIKPAJCJ| { &mut m.BOHDMINEJNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMNBMJOFJOO",
-            |m: &LADHIKPAJCJ| { &m.AMNBMJOFJOO },
-            |m: &mut LADHIKPAJCJ| { &mut m.AMNBMJOFJOO },
+            "ICJABPGMACJ",
+            |m: &LADHIKPAJCJ| { &m.ICJABPGMACJ },
+            |m: &mut LADHIKPAJCJ| { &mut m.ICJABPGMACJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_aeon_id",
+            |m: &LADHIKPAJCJ| { &m.game_aeon_id },
+            |m: &mut LADHIKPAJCJ| { &mut m.game_aeon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LADHIKPAJCJ>(
             "LADHIKPAJCJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.ICJABPGMACJ = is.read_int32()?;
-                },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOHDMINEJNO)?;
                 },
-                80 => {
-                    self.AMNBMJOFJOO = is.read_uint32()?;
+                32 => {
+                    self.ICJABPGMACJ = is.read_int32()?;
+                },
+                104 => {
+                    self.game_aeon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICJABPGMACJ != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.ICJABPGMACJ);
-        }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.AMNBMJOFJOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.AMNBMJOFJOO);
+        if self.ICJABPGMACJ != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.ICJABPGMACJ);
+        }
+        if self.game_aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.game_aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICJABPGMACJ != 0 {
-            os.write_int32(15, self.ICJABPGMACJ)?;
-        }
         if let Some(v) = self.BOHDMINEJNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.AMNBMJOFJOO != 0 {
-            os.write_uint32(10, self.AMNBMJOFJOO)?;
+        if self.ICJABPGMACJ != 0 {
+            os.write_int32(4, self.ICJABPGMACJ)?;
+        }
+        if self.game_aeon_id != 0 {
+            os.write_uint32(13, self.game_aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for LADHIKPAJCJ {
     }
 
     fn clear(&mut self) {
-        self.ICJABPGMACJ = 0;
         self.BOHDMINEJNO.clear();
-        self.AMNBMJOFJOO = 0;
+        self.ICJABPGMACJ = 0;
+        self.game_aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LADHIKPAJCJ {
         static instance: LADHIKPAJCJ = LADHIKPAJCJ {
-            ICJABPGMACJ: 0,
             BOHDMINEJNO: ::protobuf::MessageField::none(),
-            AMNBMJOFJOO: 0,
+            ICJABPGMACJ: 0,
+            game_aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LADHIKPAJCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LADHIKPAJCJ.proto\x1a\x11EENDHPKPFLP.proto\"\x81\x01\n\x0bLADHIKPA\
-    JCJ\x12\x20\n\x0bICJABPGMACJ\x18\x0f\x20\x01(\x05R\x0bICJABPGMACJ\x12.\n\
-    \x0bBOHDMINEJNO\x18\x08\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNO\
-    \x12\x20\n\x0bAMNBMJOFJOO\x18\n\x20\x01(\rR\x0bAMNBMJOFJOOb\x06proto3\
+    JCJ\x12.\n\x0bBOHDMINEJNO\x18\t\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bBOHDMI\
+    NEJNO\x12\x20\n\x0bICJABPGMACJ\x18\x04\x20\x01(\x05R\x0bICJABPGMACJ\x12\
+    \x20\n\x0cgame_aeon_id\x18\r\x20\x01(\rR\ngameAeonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

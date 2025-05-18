@@ -86,16 +86,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                90 => {
                     self.trigger_name = is.read_string()?;
                 },
-                122 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                120 => {
+                104 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
-                48 => {
+                64 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(11, &self.trigger_name);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.trigger_target_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.trigger_target_id_list);
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.trigger_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.trigger_name.is_empty() {
-            os.write_string(13, &self.trigger_name)?;
+            os.write_string(11, &self.trigger_name)?;
         }
-        os.write_repeated_packed_uint32(15, &self.trigger_target_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.trigger_target_id_list)?;
         if self.trigger_entity_id != 0 {
-            os.write_uint32(6, self.trigger_entity_id)?;
+            os.write_uint32(8, self.trigger_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RefreshTriggerByClientScNotify.proto\"\xa4\x01\n\x1eRefreshTriggerByC\
-    lientScNotify\x12!\n\x0ctrigger_name\x18\r\x20\x01(\tR\x0btriggerName\
-    \x123\n\x16trigger_target_id_list\x18\x0f\x20\x03(\rR\x13triggerTargetId\
-    List\x12*\n\x11trigger_entity_id\x18\x06\x20\x01(\rR\x0ftriggerEntityIdb\
+    lientScNotify\x12!\n\x0ctrigger_name\x18\x0b\x20\x01(\tR\x0btriggerName\
+    \x123\n\x16trigger_target_id_list\x18\r\x20\x03(\rR\x13triggerTargetIdLi\
+    st\x12*\n\x11trigger_entity_id\x18\x08\x20\x01(\rR\x0ftriggerEntityIdb\
     \x06proto3\
 ";
 

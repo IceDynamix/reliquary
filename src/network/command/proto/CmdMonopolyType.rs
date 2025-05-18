@@ -29,172 +29,172 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMonopolyType {
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTypeNone)
     CmdMonopolyTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyActionResultScNotify)
-    CmdMonopolyActionResultScNotify = 7047,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessChooseScRsp)
-    CmdMonopolyGuessChooseScRsp = 7094,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyUpgradeAssetScRsp)
-    CmdMonopolyUpgradeAssetScRsp = 7082,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyFriendRankingListCsReq)
-    CmdGetMonopolyFriendRankingListCsReq = 7004,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCheatDiceCsReq)
-    CmdMonopolyCheatDiceCsReq = 7065,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeCsReq)
-    CmdMonopolyLikeCsReq = 7096,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDailyFirstEnterMonopolyActivityScRsp)
-    CmdDailyFirstEnterMonopolyActivityScRsp = 7050,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollRandomCsReq)
-    CmdMonopolyRollRandomCsReq = 7073,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetSocialEventServerCacheCsReq)
-    CmdGetSocialEventServerCacheCsReq = 7001,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakeRaffleTicketRewardScRsp)
-    CmdMonopolyTakeRaffleTicketRewardScRsp = 7032,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeScRsp)
-    CmdMonopolyLikeScRsp = 7069,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetDailyInitItemCsReq)
-    CmdMonopolyGetDailyInitItemCsReq = 7049,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeScNotify)
-    CmdMonopolyLikeScNotify = 7066,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyDailySettleScNotify)
-    CmdMonopolyDailySettleScNotify = 7063,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyBuyGoodsScRsp)
-    CmdMonopolyBuyGoodsScRsp = 7007,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollRandomScRsp)
-    CmdMonopolyRollRandomScRsp = 7077,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyMoveCsReq)
-    CmdMonopolyMoveCsReq = 7089,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGiveUpCurContentScRsp)
-    CmdMonopolyGiveUpCurContentScRsp = 7037,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessDrawScNotify)
-    CmdMonopolyGuessDrawScNotify = 7081,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConditionUpdateScNotify)
-    CmdMonopolyConditionUpdateScNotify = 7045,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventSelectFriendCsReq)
-    CmdMonopolyEventSelectFriendCsReq = 7008,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameBingoFlipCardScRsp)
-    CmdMonopolyGameBingoFlipCardScRsp = 7028,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickCellScRsp)
-    CmdMonopolyClickCellScRsp = 7003,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakePhaseRewardScRsp)
-    CmdMonopolyTakePhaseRewardScRsp = 7031,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakePhaseRewardCsReq)
-    CmdMonopolyTakePhaseRewardCsReq = 7020,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMbtiReportScRsp)
-    CmdGetMbtiReportScRsp = 7021,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCheatDiceScRsp)
-    CmdMonopolyCheatDiceScRsp = 7052,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRegionProgressCsReq)
-    CmdMonopolyGetRegionProgressCsReq = 7076,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyInfoScRsp)
-    CmdGetMonopolyInfoScRsp = 7013,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameBingoFlipCardCsReq)
-    CmdMonopolyGameBingoFlipCardCsReq = 7075,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickCellCsReq)
-    CmdMonopolyClickCellCsReq = 7042,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessChooseCsReq)
-    CmdMonopolyGuessChooseCsReq = 7060,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyInfoCsReq)
-    CmdGetMonopolyInfoCsReq = 7011,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConfirmRandomScRsp)
-    CmdMonopolyConfirmRandomScRsp = 7025,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventLoadUpdateScNotify)
-    CmdMonopolyEventLoadUpdateScNotify = 7074,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCellUpdateNotify)
-    CmdMonopolyCellUpdateNotify = 7009,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyBuyGoodsCsReq)
-    CmdMonopolyBuyGoodsCsReq = 7010,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyReRollRandomCsReq)
-    CmdMonopolyReRollRandomCsReq = 7091,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakeRaffleTicketRewardCsReq)
-    CmdMonopolyTakeRaffleTicketRewardCsReq = 7012,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySelectOptionScRsp)
-    CmdMonopolySelectOptionScRsp = 7095,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyContentUpdateScNotify)
-    CmdMonopolyContentUpdateScNotify = 7022,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySelectOptionCsReq)
-    CmdMonopolySelectOptionCsReq = 7030,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMbtiReportCsReq)
-    CmdGetMbtiReportCsReq = 7099,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConfirmRandomCsReq)
-    CmdMonopolyConfirmRandomCsReq = 7057,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessBuyInformationCsReq)
-    CmdMonopolyGuessBuyInformationCsReq = 7087,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollDiceCsReq)
-    CmdMonopolyRollDiceCsReq = 7006,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySttUpdateScNotify)
-    CmdMonopolySttUpdateScNotify = 7098,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyFriendRankingListScRsp)
-    CmdGetMonopolyFriendRankingListScRsp = 7078,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyScrachRaffleTicketCsReq)
-    CmdMonopolyScrachRaffleTicketCsReq = 7019,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameRaiseRatioCsReq)
-    CmdMonopolyGameRaiseRatioCsReq = 7086,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyUpgradeAssetCsReq)
-    CmdMonopolyUpgradeAssetCsReq = 7071,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameSettleScNotify)
-    CmdMonopolyGameSettleScNotify = 7053,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDeleteSocialEventServerCacheScRsp)
-    CmdDeleteSocialEventServerCacheScRsp = 7027,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessBuyInformationScRsp)
-    CmdMonopolyGuessBuyInformationScRsp = 7056,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyDailyReportCsReq)
-    CmdGetMonopolyDailyReportCsReq = 7038,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetDailyInitItemScRsp)
-    CmdMonopolyGetDailyInitItemScRsp = 7088,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollDiceScRsp)
-    CmdMonopolyRollDiceScRsp = 7070,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyQuizDurationChangeScNotify)
-    CmdMonopolyQuizDurationChangeScNotify = 7100,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRaffleTicketScRsp)
-    CmdMonopolyGetRaffleTicketScRsp = 7016,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRaffleTicketCsReq)
-    CmdMonopolyGetRaffleTicketCsReq = 7055,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRafflePoolInfoScRsp)
-    CmdMonopolyGetRafflePoolInfoScRsp = 7085,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRafflePoolInfoCsReq)
-    CmdMonopolyGetRafflePoolInfoCsReq = 7015,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyMbtiReportRewardCsReq)
-    CmdGetMonopolyMbtiReportRewardCsReq = 7061,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyDailyReportScRsp)
-    CmdGetMonopolyDailyReportScRsp = 7062,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickMbtiReportCsReq)
-    CmdMonopolyClickMbtiReportCsReq = 7054,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyReRollRandomScRsp)
-    CmdMonopolyReRollRandomScRsp = 7093,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetSocialEventServerCacheScRsp)
-    CmdGetSocialEventServerCacheScRsp = 7040,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameGachaCsReq)
-    CmdMonopolyGameGachaCsReq = 7024,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyMbtiReportRewardScRsp)
-    CmdGetMonopolyMbtiReportRewardScRsp = 7080,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameRaiseRatioScRsp)
-    CmdMonopolyGameRaiseRatioScRsp = 7092,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickMbtiReportScRsp)
-    CmdMonopolyClickMbtiReportScRsp = 7090,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyAcceptQuizCsReq)
-    CmdMonopolyAcceptQuizCsReq = 7083,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRegionProgressScRsp)
-    CmdMonopolyGetRegionProgressScRsp = 7043,
+    CmdMonopolySelectOptionScRsp = 7072,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyScrachRaffleTicketScRsp)
-    CmdMonopolyScrachRaffleTicketScRsp = 7044,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameCreateScNotify)
-    CmdMonopolyGameCreateScNotify = 7068,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyMoveScRsp)
-    CmdMonopolyMoveScRsp = 7026,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGiveUpCurContentCsReq)
-    CmdMonopolyGiveUpCurContentCsReq = 7051,
+    CmdMonopolyScrachRaffleTicketScRsp = 7070,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCellUpdateNotify)
+    CmdMonopolyCellUpdateNotify = 7040,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyBuyGoodsScRsp)
+    CmdMonopolyBuyGoodsScRsp = 7077,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickMbtiReportScRsp)
+    CmdMonopolyClickMbtiReportScRsp = 7038,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakeRaffleTicketRewardScRsp)
+    CmdMonopolyTakeRaffleTicketRewardScRsp = 7097,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMbtiReportScRsp)
+    CmdGetMbtiReportScRsp = 7001,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyAcceptQuizScRsp)
-    CmdMonopolyAcceptQuizScRsp = 7058,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventSelectFriendScRsp)
-    CmdMonopolyEventSelectFriendScRsp = 7033,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDailyFirstEnterMonopolyActivityCsReq)
-    CmdDailyFirstEnterMonopolyActivityCsReq = 7036,
+    CmdMonopolyAcceptQuizScRsp = 7057,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameBingoFlipCardScRsp)
+    CmdMonopolyGameBingoFlipCardScRsp = 7091,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRegionProgressScRsp)
+    CmdMonopolyGetRegionProgressScRsp = 7018,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyFriendRankingListScRsp)
+    CmdGetMonopolyFriendRankingListScRsp = 7087,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyDailyReportScRsp)
+    CmdGetMonopolyDailyReportScRsp = 7015,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameCreateScNotify)
+    CmdMonopolyGameCreateScNotify = 7007,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyMoveCsReq)
+    CmdMonopolyMoveCsReq = 7052,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessBuyInformationCsReq)
+    CmdMonopolyGuessBuyInformationCsReq = 7006,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRafflePoolInfoCsReq)
+    CmdMonopolyGetRafflePoolInfoCsReq = 7044,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConfirmRandomScRsp)
+    CmdMonopolyConfirmRandomScRsp = 7033,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessBuyInformationScRsp)
+    CmdMonopolyGuessBuyInformationScRsp = 7045,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySocialEventEffectScNotify)
-    CmdMonopolySocialEventEffectScNotify = 7064,
+    CmdMonopolySocialEventEffectScNotify = 7094,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollDiceCsReq)
+    CmdMonopolyRollDiceCsReq = 7048,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameRaiseRatioScRsp)
+    CmdMonopolyGameRaiseRatioScRsp = 7084,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyActionResultScNotify)
+    CmdMonopolyActionResultScNotify = 7031,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyBuyGoodsCsReq)
+    CmdMonopolyBuyGoodsCsReq = 7042,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyMoveScRsp)
+    CmdMonopolyMoveScRsp = 7022,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventLoadUpdateScNotify)
+    CmdMonopolyEventLoadUpdateScNotify = 7096,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickCellCsReq)
+    CmdMonopolyClickCellCsReq = 7055,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConfirmRandomCsReq)
+    CmdMonopolyConfirmRandomCsReq = 7043,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessChooseScRsp)
+    CmdMonopolyGuessChooseScRsp = 7064,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGiveUpCurContentScRsp)
+    CmdMonopolyGiveUpCurContentScRsp = 7063,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakeRaffleTicketRewardCsReq)
+    CmdMonopolyTakeRaffleTicketRewardCsReq = 7010,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetDailyInitItemScRsp)
+    CmdMonopolyGetDailyInitItemScRsp = 7019,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetSocialEventServerCacheScRsp)
+    CmdGetSocialEventServerCacheScRsp = 7074,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameSettleScNotify)
+    CmdMonopolyGameSettleScNotify = 7037,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGiveUpCurContentCsReq)
+    CmdMonopolyGiveUpCurContentCsReq = 7029,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyFriendRankingListCsReq)
+    CmdGetMonopolyFriendRankingListCsReq = 7099,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRegionProgressCsReq)
+    CmdMonopolyGetRegionProgressCsReq = 7004,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameGachaScRsp)
-    CmdMonopolyGameGachaScRsp = 7084,
+    CmdMonopolyGameGachaScRsp = 7075,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyConditionUpdateScNotify)
+    CmdMonopolyConditionUpdateScNotify = 7089,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeCsReq)
+    CmdMonopolyLikeCsReq = 7008,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyUpgradeAssetScRsp)
+    CmdMonopolyUpgradeAssetScRsp = 7021,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyContentUpdateScNotify)
+    CmdMonopolyContentUpdateScNotify = 7025,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetDailyInitItemCsReq)
+    CmdMonopolyGetDailyInitItemCsReq = 7050,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeScRsp)
+    CmdMonopolyLikeScRsp = 7035,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyAcceptQuizCsReq)
+    CmdMonopolyAcceptQuizCsReq = 7024,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyLikeScNotify)
+    CmdMonopolyLikeScNotify = 7034,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyReRollRandomCsReq)
+    CmdMonopolyReRollRandomCsReq = 7002,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyUpgradeAssetCsReq)
+    CmdMonopolyUpgradeAssetCsReq = 7058,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickCellScRsp)
+    CmdMonopolyClickCellScRsp = 7080,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakePhaseRewardCsReq)
+    CmdMonopolyTakePhaseRewardCsReq = 7073,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameRaiseRatioCsReq)
+    CmdMonopolyGameRaiseRatioCsReq = 7014,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMbtiReportCsReq)
+    CmdGetMbtiReportCsReq = 7068,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessChooseCsReq)
+    CmdMonopolyGuessChooseCsReq = 7098,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCheatDiceCsReq)
+    CmdMonopolyCheatDiceCsReq = 7011,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyInfoScRsp)
+    CmdGetMonopolyInfoScRsp = 7032,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyDailySettleScNotify)
+    CmdMonopolyDailySettleScNotify = 7054,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRaffleTicketCsReq)
+    CmdMonopolyGetRaffleTicketCsReq = 7049,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyReRollRandomScRsp)
+    CmdMonopolyReRollRandomScRsp = 7039,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetSocialEventServerCacheCsReq)
+    CmdGetSocialEventServerCacheCsReq = 7027,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyDailyReportCsReq)
+    CmdGetMonopolyDailyReportCsReq = 7028,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRafflePoolInfoScRsp)
+    CmdMonopolyGetRafflePoolInfoScRsp = 7026,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDeleteSocialEventServerCacheCsReq)
-    CmdDeleteSocialEventServerCacheCsReq = 7059,
+    CmdDeleteSocialEventServerCacheCsReq = 7090,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDeleteSocialEventServerCacheScRsp)
+    CmdDeleteSocialEventServerCacheScRsp = 7017,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyCheatDiceScRsp)
+    CmdMonopolyCheatDiceScRsp = 7093,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyClickMbtiReportCsReq)
+    CmdMonopolyClickMbtiReportCsReq = 7088,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyMbtiReportRewardCsReq)
+    CmdGetMonopolyMbtiReportRewardCsReq = 7041,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySttUpdateScNotify)
+    CmdMonopolySttUpdateScNotify = 7012,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventSelectFriendScRsp)
+    CmdMonopolyEventSelectFriendScRsp = 7036,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDailyFirstEnterMonopolyActivityCsReq)
+    CmdDailyFirstEnterMonopolyActivityCsReq = 7016,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyScrachRaffleTicketCsReq)
+    CmdMonopolyScrachRaffleTicketCsReq = 7079,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameGachaCsReq)
+    CmdMonopolyGameGachaCsReq = 7030,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyMbtiReportRewardScRsp)
+    CmdGetMonopolyMbtiReportRewardScRsp = 7062,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdDailyFirstEnterMonopolyActivityScRsp)
+    CmdDailyFirstEnterMonopolyActivityScRsp = 7046,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGuessDrawScNotify)
+    CmdMonopolyGuessDrawScNotify = 7013,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyTakePhaseRewardScRsp)
+    CmdMonopolyTakePhaseRewardScRsp = 7067,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollRandomCsReq)
+    CmdMonopolyRollRandomCsReq = 7083,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGameBingoFlipCardCsReq)
+    CmdMonopolyGameBingoFlipCardCsReq = 7051,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyGetRaffleTicketScRsp)
+    CmdMonopolyGetRaffleTicketScRsp = 7003,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollDiceScRsp)
+    CmdMonopolyRollDiceScRsp = 7071,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyEventSelectFriendCsReq)
+    CmdMonopolyEventSelectFriendCsReq = 7053,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyRollRandomScRsp)
+    CmdMonopolyRollRandomScRsp = 7060,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdGetMonopolyInfoCsReq)
+    CmdGetMonopolyInfoCsReq = 7095,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolyQuizDurationChangeScNotify)
+    CmdMonopolyQuizDurationChangeScNotify = 7078,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.CmdMonopolySelectOptionCsReq)
+    CmdMonopolySelectOptionCsReq = 7056,
 }
 
 impl ::protobuf::Enum for CmdMonopolyType {
@@ -207,89 +207,89 @@ impl ::protobuf::Enum for CmdMonopolyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMonopolyType> {
         match value {
             0 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTypeNone),
-            7047 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyActionResultScNotify),
-            7094 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseScRsp),
-            7082 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp),
-            7004 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq),
-            7065 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceCsReq),
-            7096 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeCsReq),
-            7050 => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp),
-            7073 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomCsReq),
-            7001 => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheCsReq),
-            7032 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp),
-            7069 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScRsp),
-            7049 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq),
-            7066 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScNotify),
-            7063 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyDailySettleScNotify),
-            7007 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsScRsp),
-            7077 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomScRsp),
-            7089 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveCsReq),
-            7037 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp),
-            7081 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessDrawScNotify),
-            7045 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConditionUpdateScNotify),
-            7008 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq),
-            7028 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp),
-            7003 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellScRsp),
-            7031 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp),
-            7020 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq),
-            7021 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportScRsp),
-            7052 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceScRsp),
-            7076 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq),
-            7013 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoScRsp),
-            7075 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq),
-            7042 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellCsReq),
-            7060 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseCsReq),
-            7011 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoCsReq),
-            7025 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomScRsp),
-            7074 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify),
-            7009 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCellUpdateNotify),
-            7010 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsCsReq),
-            7091 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomCsReq),
-            7012 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq),
-            7095 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionScRsp),
-            7022 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyContentUpdateScNotify),
-            7030 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionCsReq),
-            7099 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportCsReq),
-            7057 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomCsReq),
-            7087 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq),
-            7006 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceCsReq),
-            7098 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySttUpdateScNotify),
-            7078 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp),
-            7019 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq),
-            7086 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq),
-            7071 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq),
-            7053 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameSettleScNotify),
-            7027 => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp),
-            7056 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp),
-            7038 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportCsReq),
-            7088 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp),
-            7070 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceScRsp),
-            7100 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify),
-            7016 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp),
-            7055 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq),
-            7085 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp),
-            7015 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq),
-            7061 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq),
-            7062 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportScRsp),
-            7054 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq),
-            7093 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomScRsp),
-            7040 => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheScRsp),
-            7024 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaCsReq),
-            7080 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp),
-            7092 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp),
-            7090 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp),
-            7083 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizCsReq),
-            7043 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp),
-            7044 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp),
-            7068 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameCreateScNotify),
-            7026 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveScRsp),
-            7051 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq),
-            7058 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizScRsp),
-            7033 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp),
-            7036 => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq),
-            7064 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySocialEventEffectScNotify),
-            7084 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaScRsp),
-            7059 => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq),
+            7072 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionScRsp),
+            7070 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp),
+            7040 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCellUpdateNotify),
+            7077 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsScRsp),
+            7038 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp),
+            7097 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp),
+            7001 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportScRsp),
+            7057 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizScRsp),
+            7091 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp),
+            7018 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp),
+            7087 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp),
+            7015 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportScRsp),
+            7007 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameCreateScNotify),
+            7052 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveCsReq),
+            7006 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq),
+            7044 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq),
+            7033 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomScRsp),
+            7045 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp),
+            7094 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySocialEventEffectScNotify),
+            7048 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceCsReq),
+            7084 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp),
+            7031 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyActionResultScNotify),
+            7042 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsCsReq),
+            7022 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveScRsp),
+            7096 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify),
+            7055 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellCsReq),
+            7043 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomCsReq),
+            7064 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseScRsp),
+            7063 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp),
+            7010 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq),
+            7019 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp),
+            7074 => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheScRsp),
+            7037 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameSettleScNotify),
+            7029 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq),
+            7099 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq),
+            7004 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq),
+            7075 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaScRsp),
+            7089 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConditionUpdateScNotify),
+            7008 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeCsReq),
+            7021 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp),
+            7025 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyContentUpdateScNotify),
+            7050 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq),
+            7035 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScRsp),
+            7024 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizCsReq),
+            7034 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScNotify),
+            7002 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomCsReq),
+            7058 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq),
+            7080 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellScRsp),
+            7073 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq),
+            7014 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq),
+            7068 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportCsReq),
+            7098 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseCsReq),
+            7011 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceCsReq),
+            7032 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoScRsp),
+            7054 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyDailySettleScNotify),
+            7049 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq),
+            7039 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomScRsp),
+            7027 => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheCsReq),
+            7028 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportCsReq),
+            7026 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp),
+            7090 => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq),
+            7017 => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp),
+            7093 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceScRsp),
+            7088 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq),
+            7041 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq),
+            7012 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySttUpdateScNotify),
+            7036 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp),
+            7016 => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq),
+            7079 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq),
+            7030 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaCsReq),
+            7062 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp),
+            7046 => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp),
+            7013 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessDrawScNotify),
+            7067 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp),
+            7083 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomCsReq),
+            7051 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq),
+            7003 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp),
+            7071 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceScRsp),
+            7053 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq),
+            7060 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomScRsp),
+            7095 => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoCsReq),
+            7078 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify),
+            7056 => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -297,178 +297,178 @@ impl ::protobuf::Enum for CmdMonopolyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMonopolyType> {
         match str {
             "CmdMonopolyTypeNone" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTypeNone),
-            "CmdMonopolyActionResultScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyActionResultScNotify),
-            "CmdMonopolyGuessChooseScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseScRsp),
-            "CmdMonopolyUpgradeAssetScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp),
-            "CmdGetMonopolyFriendRankingListCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq),
-            "CmdMonopolyCheatDiceCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceCsReq),
-            "CmdMonopolyLikeCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeCsReq),
-            "CmdDailyFirstEnterMonopolyActivityScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp),
-            "CmdMonopolyRollRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomCsReq),
-            "CmdGetSocialEventServerCacheCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheCsReq),
-            "CmdMonopolyTakeRaffleTicketRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp),
-            "CmdMonopolyLikeScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScRsp),
-            "CmdMonopolyGetDailyInitItemCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq),
-            "CmdMonopolyLikeScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScNotify),
-            "CmdMonopolyDailySettleScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyDailySettleScNotify),
-            "CmdMonopolyBuyGoodsScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsScRsp),
-            "CmdMonopolyRollRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomScRsp),
-            "CmdMonopolyMoveCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveCsReq),
-            "CmdMonopolyGiveUpCurContentScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp),
-            "CmdMonopolyGuessDrawScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessDrawScNotify),
-            "CmdMonopolyConditionUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConditionUpdateScNotify),
-            "CmdMonopolyEventSelectFriendCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq),
-            "CmdMonopolyGameBingoFlipCardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp),
-            "CmdMonopolyClickCellScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellScRsp),
-            "CmdMonopolyTakePhaseRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp),
-            "CmdMonopolyTakePhaseRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq),
-            "CmdGetMbtiReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportScRsp),
-            "CmdMonopolyCheatDiceScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceScRsp),
-            "CmdMonopolyGetRegionProgressCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq),
-            "CmdGetMonopolyInfoScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoScRsp),
-            "CmdMonopolyGameBingoFlipCardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq),
-            "CmdMonopolyClickCellCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellCsReq),
-            "CmdMonopolyGuessChooseCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseCsReq),
-            "CmdGetMonopolyInfoCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoCsReq),
-            "CmdMonopolyConfirmRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomScRsp),
-            "CmdMonopolyEventLoadUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify),
-            "CmdMonopolyCellUpdateNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCellUpdateNotify),
-            "CmdMonopolyBuyGoodsCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsCsReq),
-            "CmdMonopolyReRollRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomCsReq),
-            "CmdMonopolyTakeRaffleTicketRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq),
             "CmdMonopolySelectOptionScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionScRsp),
-            "CmdMonopolyContentUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyContentUpdateScNotify),
-            "CmdMonopolySelectOptionCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionCsReq),
-            "CmdGetMbtiReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportCsReq),
-            "CmdMonopolyConfirmRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomCsReq),
-            "CmdMonopolyGuessBuyInformationCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq),
-            "CmdMonopolyRollDiceCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceCsReq),
-            "CmdMonopolySttUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySttUpdateScNotify),
-            "CmdGetMonopolyFriendRankingListScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp),
-            "CmdMonopolyScrachRaffleTicketCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq),
-            "CmdMonopolyGameRaiseRatioCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq),
-            "CmdMonopolyUpgradeAssetCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq),
-            "CmdMonopolyGameSettleScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameSettleScNotify),
-            "CmdDeleteSocialEventServerCacheScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp),
-            "CmdMonopolyGuessBuyInformationScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp),
-            "CmdGetMonopolyDailyReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportCsReq),
-            "CmdMonopolyGetDailyInitItemScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp),
-            "CmdMonopolyRollDiceScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceScRsp),
-            "CmdMonopolyQuizDurationChangeScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify),
-            "CmdMonopolyGetRaffleTicketScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp),
-            "CmdMonopolyGetRaffleTicketCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq),
-            "CmdMonopolyGetRafflePoolInfoScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp),
-            "CmdMonopolyGetRafflePoolInfoCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq),
-            "CmdGetMonopolyMbtiReportRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq),
-            "CmdGetMonopolyDailyReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportScRsp),
-            "CmdMonopolyClickMbtiReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq),
-            "CmdMonopolyReRollRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomScRsp),
-            "CmdGetSocialEventServerCacheScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheScRsp),
-            "CmdMonopolyGameGachaCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaCsReq),
-            "CmdGetMonopolyMbtiReportRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp),
-            "CmdMonopolyGameRaiseRatioScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp),
-            "CmdMonopolyClickMbtiReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp),
-            "CmdMonopolyAcceptQuizCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizCsReq),
-            "CmdMonopolyGetRegionProgressScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp),
             "CmdMonopolyScrachRaffleTicketScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp),
-            "CmdMonopolyGameCreateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameCreateScNotify),
-            "CmdMonopolyMoveScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveScRsp),
-            "CmdMonopolyGiveUpCurContentCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq),
+            "CmdMonopolyCellUpdateNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCellUpdateNotify),
+            "CmdMonopolyBuyGoodsScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsScRsp),
+            "CmdMonopolyClickMbtiReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp),
+            "CmdMonopolyTakeRaffleTicketRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp),
+            "CmdGetMbtiReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportScRsp),
             "CmdMonopolyAcceptQuizScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizScRsp),
+            "CmdMonopolyGameBingoFlipCardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp),
+            "CmdMonopolyGetRegionProgressScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp),
+            "CmdGetMonopolyFriendRankingListScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp),
+            "CmdGetMonopolyDailyReportScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportScRsp),
+            "CmdMonopolyGameCreateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameCreateScNotify),
+            "CmdMonopolyMoveCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveCsReq),
+            "CmdMonopolyGuessBuyInformationCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq),
+            "CmdMonopolyGetRafflePoolInfoCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq),
+            "CmdMonopolyConfirmRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomScRsp),
+            "CmdMonopolyGuessBuyInformationScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp),
+            "CmdMonopolySocialEventEffectScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySocialEventEffectScNotify),
+            "CmdMonopolyRollDiceCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceCsReq),
+            "CmdMonopolyGameRaiseRatioScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp),
+            "CmdMonopolyActionResultScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyActionResultScNotify),
+            "CmdMonopolyBuyGoodsCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyBuyGoodsCsReq),
+            "CmdMonopolyMoveScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyMoveScRsp),
+            "CmdMonopolyEventLoadUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify),
+            "CmdMonopolyClickCellCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellCsReq),
+            "CmdMonopolyConfirmRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConfirmRandomCsReq),
+            "CmdMonopolyGuessChooseScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseScRsp),
+            "CmdMonopolyGiveUpCurContentScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp),
+            "CmdMonopolyTakeRaffleTicketRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq),
+            "CmdMonopolyGetDailyInitItemScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp),
+            "CmdGetSocialEventServerCacheScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheScRsp),
+            "CmdMonopolyGameSettleScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameSettleScNotify),
+            "CmdMonopolyGiveUpCurContentCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq),
+            "CmdGetMonopolyFriendRankingListCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq),
+            "CmdMonopolyGetRegionProgressCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq),
+            "CmdMonopolyGameGachaScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaScRsp),
+            "CmdMonopolyConditionUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyConditionUpdateScNotify),
+            "CmdMonopolyLikeCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeCsReq),
+            "CmdMonopolyUpgradeAssetScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp),
+            "CmdMonopolyContentUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyContentUpdateScNotify),
+            "CmdMonopolyGetDailyInitItemCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq),
+            "CmdMonopolyLikeScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScRsp),
+            "CmdMonopolyAcceptQuizCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyAcceptQuizCsReq),
+            "CmdMonopolyLikeScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyLikeScNotify),
+            "CmdMonopolyReRollRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomCsReq),
+            "CmdMonopolyUpgradeAssetCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq),
+            "CmdMonopolyClickCellScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickCellScRsp),
+            "CmdMonopolyTakePhaseRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq),
+            "CmdMonopolyGameRaiseRatioCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq),
+            "CmdGetMbtiReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMbtiReportCsReq),
+            "CmdMonopolyGuessChooseCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessChooseCsReq),
+            "CmdMonopolyCheatDiceCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceCsReq),
+            "CmdGetMonopolyInfoScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoScRsp),
+            "CmdMonopolyDailySettleScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyDailySettleScNotify),
+            "CmdMonopolyGetRaffleTicketCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq),
+            "CmdMonopolyReRollRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyReRollRandomScRsp),
+            "CmdGetSocialEventServerCacheCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetSocialEventServerCacheCsReq),
+            "CmdGetMonopolyDailyReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyDailyReportCsReq),
+            "CmdMonopolyGetRafflePoolInfoScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp),
+            "CmdDeleteSocialEventServerCacheCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq),
+            "CmdDeleteSocialEventServerCacheScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp),
+            "CmdMonopolyCheatDiceScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyCheatDiceScRsp),
+            "CmdMonopolyClickMbtiReportCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq),
+            "CmdGetMonopolyMbtiReportRewardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq),
+            "CmdMonopolySttUpdateScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySttUpdateScNotify),
             "CmdMonopolyEventSelectFriendScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp),
             "CmdDailyFirstEnterMonopolyActivityCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq),
-            "CmdMonopolySocialEventEffectScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySocialEventEffectScNotify),
-            "CmdMonopolyGameGachaScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaScRsp),
-            "CmdDeleteSocialEventServerCacheCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq),
+            "CmdMonopolyScrachRaffleTicketCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq),
+            "CmdMonopolyGameGachaCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameGachaCsReq),
+            "CmdGetMonopolyMbtiReportRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp),
+            "CmdDailyFirstEnterMonopolyActivityScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp),
+            "CmdMonopolyGuessDrawScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGuessDrawScNotify),
+            "CmdMonopolyTakePhaseRewardScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp),
+            "CmdMonopolyRollRandomCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomCsReq),
+            "CmdMonopolyGameBingoFlipCardCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq),
+            "CmdMonopolyGetRaffleTicketScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp),
+            "CmdMonopolyRollDiceScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollDiceScRsp),
+            "CmdMonopolyEventSelectFriendCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq),
+            "CmdMonopolyRollRandomScRsp" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyRollRandomScRsp),
+            "CmdGetMonopolyInfoCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdGetMonopolyInfoCsReq),
+            "CmdMonopolyQuizDurationChangeScNotify" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify),
+            "CmdMonopolySelectOptionCsReq" => ::std::option::Option::Some(CmdMonopolyType::CmdMonopolySelectOptionCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMonopolyType] = &[
         CmdMonopolyType::CmdMonopolyTypeNone,
-        CmdMonopolyType::CmdMonopolyActionResultScNotify,
-        CmdMonopolyType::CmdMonopolyGuessChooseScRsp,
-        CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp,
-        CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq,
-        CmdMonopolyType::CmdMonopolyCheatDiceCsReq,
-        CmdMonopolyType::CmdMonopolyLikeCsReq,
-        CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp,
-        CmdMonopolyType::CmdMonopolyRollRandomCsReq,
-        CmdMonopolyType::CmdGetSocialEventServerCacheCsReq,
-        CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp,
-        CmdMonopolyType::CmdMonopolyLikeScRsp,
-        CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq,
-        CmdMonopolyType::CmdMonopolyLikeScNotify,
-        CmdMonopolyType::CmdMonopolyDailySettleScNotify,
-        CmdMonopolyType::CmdMonopolyBuyGoodsScRsp,
-        CmdMonopolyType::CmdMonopolyRollRandomScRsp,
-        CmdMonopolyType::CmdMonopolyMoveCsReq,
-        CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp,
-        CmdMonopolyType::CmdMonopolyGuessDrawScNotify,
-        CmdMonopolyType::CmdMonopolyConditionUpdateScNotify,
-        CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq,
-        CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp,
-        CmdMonopolyType::CmdMonopolyClickCellScRsp,
-        CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp,
-        CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq,
-        CmdMonopolyType::CmdGetMbtiReportScRsp,
-        CmdMonopolyType::CmdMonopolyCheatDiceScRsp,
-        CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq,
-        CmdMonopolyType::CmdGetMonopolyInfoScRsp,
-        CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq,
-        CmdMonopolyType::CmdMonopolyClickCellCsReq,
-        CmdMonopolyType::CmdMonopolyGuessChooseCsReq,
-        CmdMonopolyType::CmdGetMonopolyInfoCsReq,
-        CmdMonopolyType::CmdMonopolyConfirmRandomScRsp,
-        CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify,
-        CmdMonopolyType::CmdMonopolyCellUpdateNotify,
-        CmdMonopolyType::CmdMonopolyBuyGoodsCsReq,
-        CmdMonopolyType::CmdMonopolyReRollRandomCsReq,
-        CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq,
         CmdMonopolyType::CmdMonopolySelectOptionScRsp,
-        CmdMonopolyType::CmdMonopolyContentUpdateScNotify,
-        CmdMonopolyType::CmdMonopolySelectOptionCsReq,
-        CmdMonopolyType::CmdGetMbtiReportCsReq,
-        CmdMonopolyType::CmdMonopolyConfirmRandomCsReq,
-        CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq,
-        CmdMonopolyType::CmdMonopolyRollDiceCsReq,
-        CmdMonopolyType::CmdMonopolySttUpdateScNotify,
-        CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp,
-        CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq,
-        CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq,
-        CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq,
-        CmdMonopolyType::CmdMonopolyGameSettleScNotify,
-        CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp,
-        CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp,
-        CmdMonopolyType::CmdGetMonopolyDailyReportCsReq,
-        CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp,
-        CmdMonopolyType::CmdMonopolyRollDiceScRsp,
-        CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify,
-        CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp,
-        CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq,
-        CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp,
-        CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq,
-        CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq,
-        CmdMonopolyType::CmdGetMonopolyDailyReportScRsp,
-        CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq,
-        CmdMonopolyType::CmdMonopolyReRollRandomScRsp,
-        CmdMonopolyType::CmdGetSocialEventServerCacheScRsp,
-        CmdMonopolyType::CmdMonopolyGameGachaCsReq,
-        CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp,
-        CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp,
-        CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp,
-        CmdMonopolyType::CmdMonopolyAcceptQuizCsReq,
-        CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp,
         CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp,
-        CmdMonopolyType::CmdMonopolyGameCreateScNotify,
-        CmdMonopolyType::CmdMonopolyMoveScRsp,
-        CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq,
+        CmdMonopolyType::CmdMonopolyCellUpdateNotify,
+        CmdMonopolyType::CmdMonopolyBuyGoodsScRsp,
+        CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp,
+        CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp,
+        CmdMonopolyType::CmdGetMbtiReportScRsp,
         CmdMonopolyType::CmdMonopolyAcceptQuizScRsp,
+        CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp,
+        CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp,
+        CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp,
+        CmdMonopolyType::CmdGetMonopolyDailyReportScRsp,
+        CmdMonopolyType::CmdMonopolyGameCreateScNotify,
+        CmdMonopolyType::CmdMonopolyMoveCsReq,
+        CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq,
+        CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq,
+        CmdMonopolyType::CmdMonopolyConfirmRandomScRsp,
+        CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp,
+        CmdMonopolyType::CmdMonopolySocialEventEffectScNotify,
+        CmdMonopolyType::CmdMonopolyRollDiceCsReq,
+        CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp,
+        CmdMonopolyType::CmdMonopolyActionResultScNotify,
+        CmdMonopolyType::CmdMonopolyBuyGoodsCsReq,
+        CmdMonopolyType::CmdMonopolyMoveScRsp,
+        CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify,
+        CmdMonopolyType::CmdMonopolyClickCellCsReq,
+        CmdMonopolyType::CmdMonopolyConfirmRandomCsReq,
+        CmdMonopolyType::CmdMonopolyGuessChooseScRsp,
+        CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp,
+        CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq,
+        CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp,
+        CmdMonopolyType::CmdGetSocialEventServerCacheScRsp,
+        CmdMonopolyType::CmdMonopolyGameSettleScNotify,
+        CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq,
+        CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq,
+        CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq,
+        CmdMonopolyType::CmdMonopolyGameGachaScRsp,
+        CmdMonopolyType::CmdMonopolyConditionUpdateScNotify,
+        CmdMonopolyType::CmdMonopolyLikeCsReq,
+        CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp,
+        CmdMonopolyType::CmdMonopolyContentUpdateScNotify,
+        CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq,
+        CmdMonopolyType::CmdMonopolyLikeScRsp,
+        CmdMonopolyType::CmdMonopolyAcceptQuizCsReq,
+        CmdMonopolyType::CmdMonopolyLikeScNotify,
+        CmdMonopolyType::CmdMonopolyReRollRandomCsReq,
+        CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq,
+        CmdMonopolyType::CmdMonopolyClickCellScRsp,
+        CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq,
+        CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq,
+        CmdMonopolyType::CmdGetMbtiReportCsReq,
+        CmdMonopolyType::CmdMonopolyGuessChooseCsReq,
+        CmdMonopolyType::CmdMonopolyCheatDiceCsReq,
+        CmdMonopolyType::CmdGetMonopolyInfoScRsp,
+        CmdMonopolyType::CmdMonopolyDailySettleScNotify,
+        CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq,
+        CmdMonopolyType::CmdMonopolyReRollRandomScRsp,
+        CmdMonopolyType::CmdGetSocialEventServerCacheCsReq,
+        CmdMonopolyType::CmdGetMonopolyDailyReportCsReq,
+        CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp,
+        CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq,
+        CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp,
+        CmdMonopolyType::CmdMonopolyCheatDiceScRsp,
+        CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq,
+        CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq,
+        CmdMonopolyType::CmdMonopolySttUpdateScNotify,
         CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp,
         CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq,
-        CmdMonopolyType::CmdMonopolySocialEventEffectScNotify,
-        CmdMonopolyType::CmdMonopolyGameGachaScRsp,
-        CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq,
+        CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq,
+        CmdMonopolyType::CmdMonopolyGameGachaCsReq,
+        CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp,
+        CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp,
+        CmdMonopolyType::CmdMonopolyGuessDrawScNotify,
+        CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp,
+        CmdMonopolyType::CmdMonopolyRollRandomCsReq,
+        CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq,
+        CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp,
+        CmdMonopolyType::CmdMonopolyRollDiceScRsp,
+        CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq,
+        CmdMonopolyType::CmdMonopolyRollRandomScRsp,
+        CmdMonopolyType::CmdGetMonopolyInfoCsReq,
+        CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify,
+        CmdMonopolyType::CmdMonopolySelectOptionCsReq,
     ];
 }
 
@@ -481,89 +481,89 @@ impl ::protobuf::EnumFull for CmdMonopolyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMonopolyType::CmdMonopolyTypeNone => 0,
-            CmdMonopolyType::CmdMonopolyActionResultScNotify => 1,
-            CmdMonopolyType::CmdMonopolyGuessChooseScRsp => 2,
-            CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp => 3,
-            CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq => 4,
-            CmdMonopolyType::CmdMonopolyCheatDiceCsReq => 5,
-            CmdMonopolyType::CmdMonopolyLikeCsReq => 6,
-            CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp => 7,
-            CmdMonopolyType::CmdMonopolyRollRandomCsReq => 8,
-            CmdMonopolyType::CmdGetSocialEventServerCacheCsReq => 9,
-            CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp => 10,
-            CmdMonopolyType::CmdMonopolyLikeScRsp => 11,
-            CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq => 12,
-            CmdMonopolyType::CmdMonopolyLikeScNotify => 13,
-            CmdMonopolyType::CmdMonopolyDailySettleScNotify => 14,
-            CmdMonopolyType::CmdMonopolyBuyGoodsScRsp => 15,
-            CmdMonopolyType::CmdMonopolyRollRandomScRsp => 16,
-            CmdMonopolyType::CmdMonopolyMoveCsReq => 17,
-            CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp => 18,
-            CmdMonopolyType::CmdMonopolyGuessDrawScNotify => 19,
-            CmdMonopolyType::CmdMonopolyConditionUpdateScNotify => 20,
-            CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq => 21,
-            CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp => 22,
-            CmdMonopolyType::CmdMonopolyClickCellScRsp => 23,
-            CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp => 24,
-            CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq => 25,
-            CmdMonopolyType::CmdGetMbtiReportScRsp => 26,
-            CmdMonopolyType::CmdMonopolyCheatDiceScRsp => 27,
-            CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq => 28,
-            CmdMonopolyType::CmdGetMonopolyInfoScRsp => 29,
-            CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq => 30,
-            CmdMonopolyType::CmdMonopolyClickCellCsReq => 31,
-            CmdMonopolyType::CmdMonopolyGuessChooseCsReq => 32,
-            CmdMonopolyType::CmdGetMonopolyInfoCsReq => 33,
-            CmdMonopolyType::CmdMonopolyConfirmRandomScRsp => 34,
-            CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify => 35,
-            CmdMonopolyType::CmdMonopolyCellUpdateNotify => 36,
-            CmdMonopolyType::CmdMonopolyBuyGoodsCsReq => 37,
-            CmdMonopolyType::CmdMonopolyReRollRandomCsReq => 38,
-            CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq => 39,
-            CmdMonopolyType::CmdMonopolySelectOptionScRsp => 40,
+            CmdMonopolyType::CmdMonopolySelectOptionScRsp => 1,
+            CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp => 2,
+            CmdMonopolyType::CmdMonopolyCellUpdateNotify => 3,
+            CmdMonopolyType::CmdMonopolyBuyGoodsScRsp => 4,
+            CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp => 5,
+            CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardScRsp => 6,
+            CmdMonopolyType::CmdGetMbtiReportScRsp => 7,
+            CmdMonopolyType::CmdMonopolyAcceptQuizScRsp => 8,
+            CmdMonopolyType::CmdMonopolyGameBingoFlipCardScRsp => 9,
+            CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp => 10,
+            CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp => 11,
+            CmdMonopolyType::CmdGetMonopolyDailyReportScRsp => 12,
+            CmdMonopolyType::CmdMonopolyGameCreateScNotify => 13,
+            CmdMonopolyType::CmdMonopolyMoveCsReq => 14,
+            CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq => 15,
+            CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq => 16,
+            CmdMonopolyType::CmdMonopolyConfirmRandomScRsp => 17,
+            CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp => 18,
+            CmdMonopolyType::CmdMonopolySocialEventEffectScNotify => 19,
+            CmdMonopolyType::CmdMonopolyRollDiceCsReq => 20,
+            CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp => 21,
+            CmdMonopolyType::CmdMonopolyActionResultScNotify => 22,
+            CmdMonopolyType::CmdMonopolyBuyGoodsCsReq => 23,
+            CmdMonopolyType::CmdMonopolyMoveScRsp => 24,
+            CmdMonopolyType::CmdMonopolyEventLoadUpdateScNotify => 25,
+            CmdMonopolyType::CmdMonopolyClickCellCsReq => 26,
+            CmdMonopolyType::CmdMonopolyConfirmRandomCsReq => 27,
+            CmdMonopolyType::CmdMonopolyGuessChooseScRsp => 28,
+            CmdMonopolyType::CmdMonopolyGiveUpCurContentScRsp => 29,
+            CmdMonopolyType::CmdMonopolyTakeRaffleTicketRewardCsReq => 30,
+            CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp => 31,
+            CmdMonopolyType::CmdGetSocialEventServerCacheScRsp => 32,
+            CmdMonopolyType::CmdMonopolyGameSettleScNotify => 33,
+            CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq => 34,
+            CmdMonopolyType::CmdGetMonopolyFriendRankingListCsReq => 35,
+            CmdMonopolyType::CmdMonopolyGetRegionProgressCsReq => 36,
+            CmdMonopolyType::CmdMonopolyGameGachaScRsp => 37,
+            CmdMonopolyType::CmdMonopolyConditionUpdateScNotify => 38,
+            CmdMonopolyType::CmdMonopolyLikeCsReq => 39,
+            CmdMonopolyType::CmdMonopolyUpgradeAssetScRsp => 40,
             CmdMonopolyType::CmdMonopolyContentUpdateScNotify => 41,
-            CmdMonopolyType::CmdMonopolySelectOptionCsReq => 42,
-            CmdMonopolyType::CmdGetMbtiReportCsReq => 43,
-            CmdMonopolyType::CmdMonopolyConfirmRandomCsReq => 44,
-            CmdMonopolyType::CmdMonopolyGuessBuyInformationCsReq => 45,
-            CmdMonopolyType::CmdMonopolyRollDiceCsReq => 46,
-            CmdMonopolyType::CmdMonopolySttUpdateScNotify => 47,
-            CmdMonopolyType::CmdGetMonopolyFriendRankingListScRsp => 48,
-            CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq => 49,
+            CmdMonopolyType::CmdMonopolyGetDailyInitItemCsReq => 42,
+            CmdMonopolyType::CmdMonopolyLikeScRsp => 43,
+            CmdMonopolyType::CmdMonopolyAcceptQuizCsReq => 44,
+            CmdMonopolyType::CmdMonopolyLikeScNotify => 45,
+            CmdMonopolyType::CmdMonopolyReRollRandomCsReq => 46,
+            CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq => 47,
+            CmdMonopolyType::CmdMonopolyClickCellScRsp => 48,
+            CmdMonopolyType::CmdMonopolyTakePhaseRewardCsReq => 49,
             CmdMonopolyType::CmdMonopolyGameRaiseRatioCsReq => 50,
-            CmdMonopolyType::CmdMonopolyUpgradeAssetCsReq => 51,
-            CmdMonopolyType::CmdMonopolyGameSettleScNotify => 52,
-            CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp => 53,
-            CmdMonopolyType::CmdMonopolyGuessBuyInformationScRsp => 54,
-            CmdMonopolyType::CmdGetMonopolyDailyReportCsReq => 55,
-            CmdMonopolyType::CmdMonopolyGetDailyInitItemScRsp => 56,
-            CmdMonopolyType::CmdMonopolyRollDiceScRsp => 57,
-            CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify => 58,
-            CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp => 59,
-            CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq => 60,
-            CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp => 61,
-            CmdMonopolyType::CmdMonopolyGetRafflePoolInfoCsReq => 62,
-            CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq => 63,
-            CmdMonopolyType::CmdGetMonopolyDailyReportScRsp => 64,
-            CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq => 65,
-            CmdMonopolyType::CmdMonopolyReRollRandomScRsp => 66,
-            CmdMonopolyType::CmdGetSocialEventServerCacheScRsp => 67,
-            CmdMonopolyType::CmdMonopolyGameGachaCsReq => 68,
-            CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp => 69,
-            CmdMonopolyType::CmdMonopolyGameRaiseRatioScRsp => 70,
-            CmdMonopolyType::CmdMonopolyClickMbtiReportScRsp => 71,
-            CmdMonopolyType::CmdMonopolyAcceptQuizCsReq => 72,
-            CmdMonopolyType::CmdMonopolyGetRegionProgressScRsp => 73,
-            CmdMonopolyType::CmdMonopolyScrachRaffleTicketScRsp => 74,
-            CmdMonopolyType::CmdMonopolyGameCreateScNotify => 75,
-            CmdMonopolyType::CmdMonopolyMoveScRsp => 76,
-            CmdMonopolyType::CmdMonopolyGiveUpCurContentCsReq => 77,
-            CmdMonopolyType::CmdMonopolyAcceptQuizScRsp => 78,
-            CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp => 79,
-            CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq => 80,
-            CmdMonopolyType::CmdMonopolySocialEventEffectScNotify => 81,
-            CmdMonopolyType::CmdMonopolyGameGachaScRsp => 82,
-            CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq => 83,
+            CmdMonopolyType::CmdGetMbtiReportCsReq => 51,
+            CmdMonopolyType::CmdMonopolyGuessChooseCsReq => 52,
+            CmdMonopolyType::CmdMonopolyCheatDiceCsReq => 53,
+            CmdMonopolyType::CmdGetMonopolyInfoScRsp => 54,
+            CmdMonopolyType::CmdMonopolyDailySettleScNotify => 55,
+            CmdMonopolyType::CmdMonopolyGetRaffleTicketCsReq => 56,
+            CmdMonopolyType::CmdMonopolyReRollRandomScRsp => 57,
+            CmdMonopolyType::CmdGetSocialEventServerCacheCsReq => 58,
+            CmdMonopolyType::CmdGetMonopolyDailyReportCsReq => 59,
+            CmdMonopolyType::CmdMonopolyGetRafflePoolInfoScRsp => 60,
+            CmdMonopolyType::CmdDeleteSocialEventServerCacheCsReq => 61,
+            CmdMonopolyType::CmdDeleteSocialEventServerCacheScRsp => 62,
+            CmdMonopolyType::CmdMonopolyCheatDiceScRsp => 63,
+            CmdMonopolyType::CmdMonopolyClickMbtiReportCsReq => 64,
+            CmdMonopolyType::CmdGetMonopolyMbtiReportRewardCsReq => 65,
+            CmdMonopolyType::CmdMonopolySttUpdateScNotify => 66,
+            CmdMonopolyType::CmdMonopolyEventSelectFriendScRsp => 67,
+            CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityCsReq => 68,
+            CmdMonopolyType::CmdMonopolyScrachRaffleTicketCsReq => 69,
+            CmdMonopolyType::CmdMonopolyGameGachaCsReq => 70,
+            CmdMonopolyType::CmdGetMonopolyMbtiReportRewardScRsp => 71,
+            CmdMonopolyType::CmdDailyFirstEnterMonopolyActivityScRsp => 72,
+            CmdMonopolyType::CmdMonopolyGuessDrawScNotify => 73,
+            CmdMonopolyType::CmdMonopolyTakePhaseRewardScRsp => 74,
+            CmdMonopolyType::CmdMonopolyRollRandomCsReq => 75,
+            CmdMonopolyType::CmdMonopolyGameBingoFlipCardCsReq => 76,
+            CmdMonopolyType::CmdMonopolyGetRaffleTicketScRsp => 77,
+            CmdMonopolyType::CmdMonopolyRollDiceScRsp => 78,
+            CmdMonopolyType::CmdMonopolyEventSelectFriendCsReq => 79,
+            CmdMonopolyType::CmdMonopolyRollRandomScRsp => 80,
+            CmdMonopolyType::CmdGetMonopolyInfoCsReq => 81,
+            CmdMonopolyType::CmdMonopolyQuizDurationChangeScNotify => 82,
+            CmdMonopolyType::CmdMonopolySelectOptionCsReq => 83,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -583,64 +583,64 @@ impl CmdMonopolyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdMonopolyType.proto*\x91\x18\n\x0fCmdMonopolyType\x12\x17\n\x13C\
-    mdMonopolyTypeNone\x10\0\x12$\n\x1fCmdMonopolyActionResultScNotify\x10\
-    \x877\x12\x20\n\x1bCmdMonopolyGuessChooseScRsp\x10\xb67\x12!\n\x1cCmdMon\
-    opolyUpgradeAssetScRsp\x10\xaa7\x12)\n$CmdGetMonopolyFriendRankingListCs\
-    Req\x10\xdc6\x12\x1e\n\x19CmdMonopolyCheatDiceCsReq\x10\x997\x12\x19\n\
-    \x14CmdMonopolyLikeCsReq\x10\xb87\x12,\n'CmdDailyFirstEnterMonopolyActiv\
-    ityScRsp\x10\x8a7\x12\x1f\n\x1aCmdMonopolyRollRandomCsReq\x10\xa17\x12&\
-    \n!CmdGetSocialEventServerCacheCsReq\x10\xd96\x12+\n&CmdMonopolyTakeRaff\
-    leTicketRewardScRsp\x10\xf86\x12\x19\n\x14CmdMonopolyLikeScRsp\x10\x9d7\
-    \x12%\n\x20CmdMonopolyGetDailyInitItemCsReq\x10\x897\x12\x1c\n\x17CmdMon\
-    opolyLikeScNotify\x10\x9a7\x12#\n\x1eCmdMonopolyDailySettleScNotify\x10\
-    \x977\x12\x1d\n\x18CmdMonopolyBuyGoodsScRsp\x10\xdf6\x12\x1f\n\x1aCmdMon\
-    opolyRollRandomScRsp\x10\xa57\x12\x19\n\x14CmdMonopolyMoveCsReq\x10\xb17\
-    \x12%\n\x20CmdMonopolyGiveUpCurContentScRsp\x10\xfd6\x12!\n\x1cCmdMonopo\
-    lyGuessDrawScNotify\x10\xa97\x12'\n\"CmdMonopolyConditionUpdateScNotify\
-    \x10\x857\x12&\n!CmdMonopolyEventSelectFriendCsReq\x10\xe06\x12&\n!CmdMo\
-    nopolyGameBingoFlipCardScRsp\x10\xf46\x12\x1e\n\x19CmdMonopolyClickCellS\
-    cRsp\x10\xdb6\x12$\n\x1fCmdMonopolyTakePhaseRewardScRsp\x10\xf76\x12$\n\
-    \x1fCmdMonopolyTakePhaseRewardCsReq\x10\xec6\x12\x1a\n\x15CmdGetMbtiRepo\
-    rtScRsp\x10\xed6\x12\x1e\n\x19CmdMonopolyCheatDiceScRsp\x10\x8c7\x12&\n!\
-    CmdMonopolyGetRegionProgressCsReq\x10\xa47\x12\x1c\n\x17CmdGetMonopolyIn\
-    foScRsp\x10\xe56\x12&\n!CmdMonopolyGameBingoFlipCardCsReq\x10\xa37\x12\
-    \x1e\n\x19CmdMonopolyClickCellCsReq\x10\x827\x12\x20\n\x1bCmdMonopolyGue\
-    ssChooseCsReq\x10\x947\x12\x1c\n\x17CmdGetMonopolyInfoCsReq\x10\xe36\x12\
-    \"\n\x1dCmdMonopolyConfirmRandomScRsp\x10\xf16\x12'\n\"CmdMonopolyEventL\
-    oadUpdateScNotify\x10\xa27\x12\x20\n\x1bCmdMonopolyCellUpdateNotify\x10\
-    \xe16\x12\x1d\n\x18CmdMonopolyBuyGoodsCsReq\x10\xe26\x12!\n\x1cCmdMonopo\
-    lyReRollRandomCsReq\x10\xb37\x12+\n&CmdMonopolyTakeRaffleTicketRewardCsR\
-    eq\x10\xe46\x12!\n\x1cCmdMonopolySelectOptionScRsp\x10\xb77\x12%\n\x20Cm\
-    dMonopolyContentUpdateScNotify\x10\xee6\x12!\n\x1cCmdMonopolySelectOptio\
-    nCsReq\x10\xf66\x12\x1a\n\x15CmdGetMbtiReportCsReq\x10\xbb7\x12\"\n\x1dC\
-    mdMonopolyConfirmRandomCsReq\x10\x917\x12(\n#CmdMonopolyGuessBuyInformat\
-    ionCsReq\x10\xaf7\x12\x1d\n\x18CmdMonopolyRollDiceCsReq\x10\xde6\x12!\n\
-    \x1cCmdMonopolySttUpdateScNotify\x10\xba7\x12)\n$CmdGetMonopolyFriendRan\
-    kingListScRsp\x10\xa67\x12'\n\"CmdMonopolyScrachRaffleTicketCsReq\x10\
-    \xeb6\x12#\n\x1eCmdMonopolyGameRaiseRatioCsReq\x10\xae7\x12!\n\x1cCmdMon\
-    opolyUpgradeAssetCsReq\x10\x9f7\x12\"\n\x1dCmdMonopolyGameSettleScNotify\
-    \x10\x8d7\x12)\n$CmdDeleteSocialEventServerCacheScRsp\x10\xf36\x12(\n#Cm\
-    dMonopolyGuessBuyInformationScRsp\x10\x907\x12#\n\x1eCmdGetMonopolyDaily\
-    ReportCsReq\x10\xfe6\x12%\n\x20CmdMonopolyGetDailyInitItemScRsp\x10\xb07\
-    \x12\x1d\n\x18CmdMonopolyRollDiceScRsp\x10\x9e7\x12*\n%CmdMonopolyQuizDu\
-    rationChangeScNotify\x10\xbc7\x12$\n\x1fCmdMonopolyGetRaffleTicketScRsp\
-    \x10\xe86\x12$\n\x1fCmdMonopolyGetRaffleTicketCsReq\x10\x8f7\x12&\n!CmdM\
-    onopolyGetRafflePoolInfoScRsp\x10\xad7\x12&\n!CmdMonopolyGetRafflePoolIn\
-    foCsReq\x10\xe76\x12(\n#CmdGetMonopolyMbtiReportRewardCsReq\x10\x957\x12\
-    #\n\x1eCmdGetMonopolyDailyReportScRsp\x10\x967\x12$\n\x1fCmdMonopolyClic\
-    kMbtiReportCsReq\x10\x8e7\x12!\n\x1cCmdMonopolyReRollRandomScRsp\x10\xb5\
-    7\x12&\n!CmdGetSocialEventServerCacheScRsp\x10\x807\x12\x1e\n\x19CmdMono\
-    polyGameGachaCsReq\x10\xf06\x12(\n#CmdGetMonopolyMbtiReportRewardScRsp\
-    \x10\xa87\x12#\n\x1eCmdMonopolyGameRaiseRatioScRsp\x10\xb47\x12$\n\x1fCm\
-    dMonopolyClickMbtiReportScRsp\x10\xb27\x12\x1f\n\x1aCmdMonopolyAcceptQui\
-    zCsReq\x10\xab7\x12&\n!CmdMonopolyGetRegionProgressScRsp\x10\x837\x12'\n\
-    \"CmdMonopolyScrachRaffleTicketScRsp\x10\x847\x12\"\n\x1dCmdMonopolyGame\
-    CreateScNotify\x10\x9c7\x12\x19\n\x14CmdMonopolyMoveScRsp\x10\xf26\x12%\
-    \n\x20CmdMonopolyGiveUpCurContentCsReq\x10\x8b7\x12\x1f\n\x1aCmdMonopoly\
-    AcceptQuizScRsp\x10\x927\x12&\n!CmdMonopolyEventSelectFriendScRsp\x10\
-    \xf96\x12,\n'CmdDailyFirstEnterMonopolyActivityCsReq\x10\xfc6\x12)\n$Cmd\
-    MonopolySocialEventEffectScNotify\x10\x987\x12\x1e\n\x19CmdMonopolyGameG\
-    achaScRsp\x10\xac7\x12)\n$CmdDeleteSocialEventServerCacheCsReq\x10\x937b\
+    mdMonopolyTypeNone\x10\0\x12!\n\x1cCmdMonopolySelectOptionScRsp\x10\xa07\
+    \x12'\n\"CmdMonopolyScrachRaffleTicketScRsp\x10\x9e7\x12\x20\n\x1bCmdMon\
+    opolyCellUpdateNotify\x10\x807\x12\x1d\n\x18CmdMonopolyBuyGoodsScRsp\x10\
+    \xa57\x12$\n\x1fCmdMonopolyClickMbtiReportScRsp\x10\xfe6\x12+\n&CmdMonop\
+    olyTakeRaffleTicketRewardScRsp\x10\xb97\x12\x1a\n\x15CmdGetMbtiReportScR\
+    sp\x10\xd96\x12\x1f\n\x1aCmdMonopolyAcceptQuizScRsp\x10\x917\x12&\n!CmdM\
+    onopolyGameBingoFlipCardScRsp\x10\xb37\x12&\n!CmdMonopolyGetRegionProgre\
+    ssScRsp\x10\xea6\x12)\n$CmdGetMonopolyFriendRankingListScRsp\x10\xaf7\
+    \x12#\n\x1eCmdGetMonopolyDailyReportScRsp\x10\xe76\x12\"\n\x1dCmdMonopol\
+    yGameCreateScNotify\x10\xdf6\x12\x19\n\x14CmdMonopolyMoveCsReq\x10\x8c7\
+    \x12(\n#CmdMonopolyGuessBuyInformationCsReq\x10\xde6\x12&\n!CmdMonopolyG\
+    etRafflePoolInfoCsReq\x10\x847\x12\"\n\x1dCmdMonopolyConfirmRandomScRsp\
+    \x10\xf96\x12(\n#CmdMonopolyGuessBuyInformationScRsp\x10\x857\x12)\n$Cmd\
+    MonopolySocialEventEffectScNotify\x10\xb67\x12\x1d\n\x18CmdMonopolyRollD\
+    iceCsReq\x10\x887\x12#\n\x1eCmdMonopolyGameRaiseRatioScRsp\x10\xac7\x12$\
+    \n\x1fCmdMonopolyActionResultScNotify\x10\xf76\x12\x1d\n\x18CmdMonopolyB\
+    uyGoodsCsReq\x10\x827\x12\x19\n\x14CmdMonopolyMoveScRsp\x10\xee6\x12'\n\
+    \"CmdMonopolyEventLoadUpdateScNotify\x10\xb87\x12\x1e\n\x19CmdMonopolyCl\
+    ickCellCsReq\x10\x8f7\x12\"\n\x1dCmdMonopolyConfirmRandomCsReq\x10\x837\
+    \x12\x20\n\x1bCmdMonopolyGuessChooseScRsp\x10\x987\x12%\n\x20CmdMonopoly\
+    GiveUpCurContentScRsp\x10\x977\x12+\n&CmdMonopolyTakeRaffleTicketRewardC\
+    sReq\x10\xe26\x12%\n\x20CmdMonopolyGetDailyInitItemScRsp\x10\xeb6\x12&\n\
+    !CmdGetSocialEventServerCacheScRsp\x10\xa27\x12\"\n\x1dCmdMonopolyGameSe\
+    ttleScNotify\x10\xfd6\x12%\n\x20CmdMonopolyGiveUpCurContentCsReq\x10\xf5\
+    6\x12)\n$CmdGetMonopolyFriendRankingListCsReq\x10\xbb7\x12&\n!CmdMonopol\
+    yGetRegionProgressCsReq\x10\xdc6\x12\x1e\n\x19CmdMonopolyGameGachaScRsp\
+    \x10\xa37\x12'\n\"CmdMonopolyConditionUpdateScNotify\x10\xb17\x12\x19\n\
+    \x14CmdMonopolyLikeCsReq\x10\xe06\x12!\n\x1cCmdMonopolyUpgradeAssetScRsp\
+    \x10\xed6\x12%\n\x20CmdMonopolyContentUpdateScNotify\x10\xf16\x12%\n\x20\
+    CmdMonopolyGetDailyInitItemCsReq\x10\x8a7\x12\x19\n\x14CmdMonopolyLikeSc\
+    Rsp\x10\xfb6\x12\x1f\n\x1aCmdMonopolyAcceptQuizCsReq\x10\xf06\x12\x1c\n\
+    \x17CmdMonopolyLikeScNotify\x10\xfa6\x12!\n\x1cCmdMonopolyReRollRandomCs\
+    Req\x10\xda6\x12!\n\x1cCmdMonopolyUpgradeAssetCsReq\x10\x927\x12\x1e\n\
+    \x19CmdMonopolyClickCellScRsp\x10\xa87\x12$\n\x1fCmdMonopolyTakePhaseRew\
+    ardCsReq\x10\xa17\x12#\n\x1eCmdMonopolyGameRaiseRatioCsReq\x10\xe66\x12\
+    \x1a\n\x15CmdGetMbtiReportCsReq\x10\x9c7\x12\x20\n\x1bCmdMonopolyGuessCh\
+    ooseCsReq\x10\xba7\x12\x1e\n\x19CmdMonopolyCheatDiceCsReq\x10\xe36\x12\
+    \x1c\n\x17CmdGetMonopolyInfoScRsp\x10\xf86\x12#\n\x1eCmdMonopolyDailySet\
+    tleScNotify\x10\x8e7\x12$\n\x1fCmdMonopolyGetRaffleTicketCsReq\x10\x897\
+    \x12!\n\x1cCmdMonopolyReRollRandomScRsp\x10\xff6\x12&\n!CmdGetSocialEven\
+    tServerCacheCsReq\x10\xf36\x12#\n\x1eCmdGetMonopolyDailyReportCsReq\x10\
+    \xf46\x12&\n!CmdMonopolyGetRafflePoolInfoScRsp\x10\xf26\x12)\n$CmdDelete\
+    SocialEventServerCacheCsReq\x10\xb27\x12)\n$CmdDeleteSocialEventServerCa\
+    cheScRsp\x10\xe96\x12\x1e\n\x19CmdMonopolyCheatDiceScRsp\x10\xb57\x12$\n\
+    \x1fCmdMonopolyClickMbtiReportCsReq\x10\xb07\x12(\n#CmdGetMonopolyMbtiRe\
+    portRewardCsReq\x10\x817\x12!\n\x1cCmdMonopolySttUpdateScNotify\x10\xe46\
+    \x12&\n!CmdMonopolyEventSelectFriendScRsp\x10\xfc6\x12,\n'CmdDailyFirstE\
+    nterMonopolyActivityCsReq\x10\xe86\x12'\n\"CmdMonopolyScrachRaffleTicket\
+    CsReq\x10\xa77\x12\x1e\n\x19CmdMonopolyGameGachaCsReq\x10\xf66\x12(\n#Cm\
+    dGetMonopolyMbtiReportRewardScRsp\x10\x967\x12,\n'CmdDailyFirstEnterMono\
+    polyActivityScRsp\x10\x867\x12!\n\x1cCmdMonopolyGuessDrawScNotify\x10\
+    \xe56\x12$\n\x1fCmdMonopolyTakePhaseRewardScRsp\x10\x9b7\x12\x1f\n\x1aCm\
+    dMonopolyRollRandomCsReq\x10\xab7\x12&\n!CmdMonopolyGameBingoFlipCardCsR\
+    eq\x10\x8b7\x12$\n\x1fCmdMonopolyGetRaffleTicketScRsp\x10\xdb6\x12\x1d\n\
+    \x18CmdMonopolyRollDiceScRsp\x10\x9f7\x12&\n!CmdMonopolyEventSelectFrien\
+    dCsReq\x10\x8d7\x12\x1f\n\x1aCmdMonopolyRollRandomScRsp\x10\x947\x12\x1c\
+    \n\x17CmdGetMonopolyInfoCsReq\x10\xb77\x12*\n%CmdMonopolyQuizDurationCha\
+    ngeScNotify\x10\xa67\x12!\n\x1cCmdMonopolySelectOptionCsReq\x10\x907b\
     \x06proto3\
 ";
 

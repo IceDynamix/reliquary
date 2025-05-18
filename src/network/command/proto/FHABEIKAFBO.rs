@@ -31,7 +31,7 @@ pub struct FHABEIKAFBO {
     // @@protoc_insertion_point(field:FHABEIKAFBO.id)
     pub id: u32,
     // message oneof groups
-    pub IJCLEPCJBOA: ::std::option::Option<fhabeikafbo::IJCLEPCJBOA>,
+    pub ICAIBEAIAGC: ::std::option::Option<fhabeikafbo::ICAIBEAIAGC>,
     // special fields
     // @@protoc_insertion_point(special_field:FHABEIKAFBO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,52 +48,52 @@ impl FHABEIKAFBO {
         ::std::default::Default::default()
     }
 
-    // .GNIEJGNKKGG KFBPCFDHLHL = 1100;
+    // .MissionCustomValueList custom_value_list = 188;
 
-    pub fn KFBPCFDHLHL(&self) -> &super::GNIEJGNKKGG::GNIEJGNKKGG {
-        match self.IJCLEPCJBOA {
-            ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(ref v)) => v,
-            _ => <super::GNIEJGNKKGG::GNIEJGNKKGG as ::protobuf::Message>::default_instance(),
+    pub fn custom_value_list(&self) -> &super::MissionCustomValueList::MissionCustomValueList {
+        match self.ICAIBEAIAGC {
+            ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(ref v)) => v,
+            _ => <super::MissionCustomValueList::MissionCustomValueList as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KFBPCFDHLHL(&mut self) {
-        self.IJCLEPCJBOA = ::std::option::Option::None;
+    pub fn clear_custom_value_list(&mut self) {
+        self.ICAIBEAIAGC = ::std::option::Option::None;
     }
 
-    pub fn has_KFBPCFDHLHL(&self) -> bool {
-        match self.IJCLEPCJBOA {
-            ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(..)) => true,
+    pub fn has_custom_value_list(&self) -> bool {
+        match self.ICAIBEAIAGC {
+            ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KFBPCFDHLHL(&mut self, v: super::GNIEJGNKKGG::GNIEJGNKKGG) {
-        self.IJCLEPCJBOA = ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(v))
+    pub fn set_custom_value_list(&mut self, v: super::MissionCustomValueList::MissionCustomValueList) {
+        self.ICAIBEAIAGC = ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KFBPCFDHLHL(&mut self) -> &mut super::GNIEJGNKKGG::GNIEJGNKKGG {
-        if let ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(_)) = self.IJCLEPCJBOA {
+    pub fn mut_custom_value_list(&mut self) -> &mut super::MissionCustomValueList::MissionCustomValueList {
+        if let ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(_)) = self.ICAIBEAIAGC {
         } else {
-            self.IJCLEPCJBOA = ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(super::GNIEJGNKKGG::GNIEJGNKKGG::new()));
+            self.ICAIBEAIAGC = ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(super::MissionCustomValueList::MissionCustomValueList::new()));
         }
-        match self.IJCLEPCJBOA {
-            ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(ref mut v)) => v,
+        match self.ICAIBEAIAGC {
+            ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KFBPCFDHLHL(&mut self) -> super::GNIEJGNKKGG::GNIEJGNKKGG {
-        if self.has_KFBPCFDHLHL() {
-            match self.IJCLEPCJBOA.take() {
-                ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(v)) => v,
+    pub fn take_custom_value_list(&mut self) -> super::MissionCustomValueList::MissionCustomValueList {
+        if self.has_custom_value_list() {
+            match self.ICAIBEAIAGC.take() {
+                ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GNIEJGNKKGG::GNIEJGNKKGG::new()
+            super::MissionCustomValueList::MissionCustomValueList::new()
         }
     }
 
@@ -105,14 +105,14 @@ impl FHABEIKAFBO {
             |m: &FHABEIKAFBO| { &m.id },
             |m: &mut FHABEIKAFBO| { &mut m.id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GNIEJGNKKGG::GNIEJGNKKGG>(
-            "KFBPCFDHLHL",
-            FHABEIKAFBO::has_KFBPCFDHLHL,
-            FHABEIKAFBO::KFBPCFDHLHL,
-            FHABEIKAFBO::mut_KFBPCFDHLHL,
-            FHABEIKAFBO::set_KFBPCFDHLHL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MissionCustomValueList::MissionCustomValueList>(
+            "custom_value_list",
+            FHABEIKAFBO::has_custom_value_list,
+            FHABEIKAFBO::custom_value_list,
+            FHABEIKAFBO::mut_custom_value_list,
+            FHABEIKAFBO::set_custom_value_list,
         ));
-        oneofs.push(fhabeikafbo::IJCLEPCJBOA::generated_oneof_descriptor_data());
+        oneofs.push(fhabeikafbo::ICAIBEAIAGC::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHABEIKAFBO>(
             "FHABEIKAFBO",
             fields,
@@ -131,11 +131,11 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.id = is.read_uint32()?;
                 },
-                8802 => {
-                    self.IJCLEPCJBOA = ::std::option::Option::Some(fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(is.read_message()?));
+                1506 => {
+                    self.ICAIBEAIAGC = ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,11 +150,11 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.id);
+            my_size += ::protobuf::rt::uint32_size(7, self.id);
         }
-        if let ::std::option::Option::Some(ref v) = self.IJCLEPCJBOA {
+        if let ::std::option::Option::Some(ref v) = self.ICAIBEAIAGC {
             match v {
-                &fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(ref v) => {
+                &fhabeikafbo::ICAIBEAIAGC::CustomValueList(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -167,12 +167,12 @@ impl ::protobuf::Message for FHABEIKAFBO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(1, self.id)?;
+            os.write_uint32(7, self.id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.IJCLEPCJBOA {
+        if let ::std::option::Option::Some(ref v) = self.ICAIBEAIAGC {
             match v {
-                &fhabeikafbo::IJCLEPCJBOA::KFBPCFDHLHL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1100, v, os)?;
+                &fhabeikafbo::ICAIBEAIAGC::CustomValueList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(188, v, os)?;
                 },
             };
         }
@@ -194,14 +194,14 @@ impl ::protobuf::Message for FHABEIKAFBO {
 
     fn clear(&mut self) {
         self.id = 0;
-        self.IJCLEPCJBOA = ::std::option::Option::None;
+        self.ICAIBEAIAGC = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHABEIKAFBO {
         static instance: FHABEIKAFBO = FHABEIKAFBO {
             id: 0,
-            IJCLEPCJBOA: ::std::option::Option::None,
+            ICAIBEAIAGC: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -230,34 +230,34 @@ pub mod fhabeikafbo {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:FHABEIKAFBO.IJCLEPCJBOA)
-    pub enum IJCLEPCJBOA {
-        // @@protoc_insertion_point(oneof_field:FHABEIKAFBO.KFBPCFDHLHL)
-        KFBPCFDHLHL(super::super::GNIEJGNKKGG::GNIEJGNKKGG),
+    // @@protoc_insertion_point(oneof:FHABEIKAFBO.ICAIBEAIAGC)
+    pub enum ICAIBEAIAGC {
+        // @@protoc_insertion_point(oneof_field:FHABEIKAFBO.custom_value_list)
+        CustomValueList(super::super::MissionCustomValueList::MissionCustomValueList),
     }
 
-    impl ::protobuf::Oneof for IJCLEPCJBOA {
+    impl ::protobuf::Oneof for ICAIBEAIAGC {
     }
 
-    impl ::protobuf::OneofFull for IJCLEPCJBOA {
+    impl ::protobuf::OneofFull for ICAIBEAIAGC {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::FHABEIKAFBO as ::protobuf::MessageFull>::descriptor().oneof_by_name("IJCLEPCJBOA").unwrap()).clone()
+            descriptor.get(|| <super::FHABEIKAFBO as ::protobuf::MessageFull>::descriptor().oneof_by_name("ICAIBEAIAGC").unwrap()).clone()
         }
     }
 
-    impl IJCLEPCJBOA {
+    impl ICAIBEAIAGC {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IJCLEPCJBOA>("IJCLEPCJBOA")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ICAIBEAIAGC>("ICAIBEAIAGC")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHABEIKAFBO.proto\x1a\x11GNIEJGNKKGG.proto\"_\n\x0bFHABEIKAFBO\x12\
-    \x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\x121\n\x0bKFBPCFDHLHL\x18\xcc\x08\
-    \x20\x01(\x0b2\x0c.GNIEJGNKKGGH\0R\x0bKFBPCFDHLHLB\r\n\x0bIJCLEPCJBOAb\
-    \x06proto3\
+    \n\x11FHABEIKAFBO.proto\x1a\x1cMissionCustomValueList.proto\"t\n\x0bFHAB\
+    EIKAFBO\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12F\n\x11custom_value\
+    _list\x18\xbc\x01\x20\x01(\x0b2\x17.MissionCustomValueListH\0R\x0fcustom\
+    ValueListB\r\n\x0bICAIBEAIAGCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -275,7 +275,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GNIEJGNKKGG::file_descriptor().clone());
+            deps.push(super::MissionCustomValueList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FHABEIKAFBO::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

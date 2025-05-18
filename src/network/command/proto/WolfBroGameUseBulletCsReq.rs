@@ -79,13 +79,13 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIBCFIMMIKG)?;
                 },
-                42 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.assist_monster_entity_id_list)?;
                 },
-                40 => {
+                32 => {
                     self.assist_monster_entity_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.assist_monster_entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.assist_monster_entity_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MIBCFIMMIKG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        os.write_repeated_packed_uint32(5, &self.assist_monster_entity_id_list)?;
+        os.write_repeated_packed_uint32(4, &self.assist_monster_entity_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameUseBulletCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fWolfBroGameUseBulletCsReq.proto\x1a\x0cVector.proto\"\x88\x01\n\
-    \x19WolfBroGameUseBulletCsReq\x12)\n\x0bMIBCFIMMIKG\x18\x02\x20\x01(\x0b\
+    \x19WolfBroGameUseBulletCsReq\x12)\n\x0bMIBCFIMMIKG\x18\x0c\x20\x01(\x0b\
     2\x07.VectorR\x0bMIBCFIMMIKG\x12@\n\x1dassist_monster_entity_id_list\x18\
-    \x05\x20\x03(\rR\x19assistMonsterEntityIdListb\x06proto3\
+    \x04\x20\x03(\rR\x19assistMonsterEntityIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

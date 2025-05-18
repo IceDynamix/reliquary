@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICMGEGEFDLE)?;
                 },
-                96 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                106 => {
                     self.DCFHGAAJLNN.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.DCFHGAAJLNN {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ICMGEGEFDLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.DCFHGAAJLNN {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyFriendRankingListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetMonopolyFriendRankingListScRsp.proto\x1a\x11INDGLKCECDC.proto\"\
-    \x9d\x01\n!GetMonopolyFriendRankingListScRsp\x12.\n\x0bICMGEGEFDLE\x18\
-    \x07\x20\x01(\x0b2\x0c.INDGLKCECDCR\x0bICMGEGEFDLE\x12\x18\n\x07retcode\
-    \x18\x0c\x20\x01(\rR\x07retcode\x12.\n\x0bDCFHGAAJLNN\x18\n\x20\x03(\x0b\
-    2\x0c.INDGLKCECDCR\x0bDCFHGAAJLNNb\x06proto3\
+    \x9d\x01\n!GetMonopolyFriendRankingListScRsp\x12.\n\x0bICMGEGEFDLE\x18\t\
+    \x20\x01(\x0b2\x0c.INDGLKCECDCR\x0bICMGEGEFDLE\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x12.\n\x0bDCFHGAAJLNN\x18\r\x20\x03(\x0b2\
+    \x0c.INDGLKCECDCR\x0bDCFHGAAJLNNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -38,12 +38,12 @@ pub struct BattleRelic {
     pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:BattleRelic.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:BattleRelic.relic_id)
-    pub relic_id: u32,
-    // @@protoc_insertion_point(field:BattleRelic.slot)
-    pub slot: u32,
-    // @@protoc_insertion_point(field:BattleRelic.JLKMNCOIDLG)
-    pub JLKMNCOIDLG: u32,
+    // @@protoc_insertion_point(field:BattleRelic.set_id)
+    pub set_id: u32,
+    // @@protoc_insertion_point(field:BattleRelic.type)
+    pub type_: u32,
+    // @@protoc_insertion_point(field:BattleRelic.rarity)
+    pub rarity: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleRelic.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -89,19 +89,19 @@ impl BattleRelic {
             |m: &mut BattleRelic| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "relic_id",
-            |m: &BattleRelic| { &m.relic_id },
-            |m: &mut BattleRelic| { &mut m.relic_id },
+            "set_id",
+            |m: &BattleRelic| { &m.set_id },
+            |m: &mut BattleRelic| { &mut m.set_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &BattleRelic| { &m.slot },
-            |m: &mut BattleRelic| { &mut m.slot },
+            "type",
+            |m: &BattleRelic| { &m.type_ },
+            |m: &mut BattleRelic| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLKMNCOIDLG",
-            |m: &BattleRelic| { &m.JLKMNCOIDLG },
-            |m: &mut BattleRelic| { &mut m.JLKMNCOIDLG },
+            "rarity",
+            |m: &BattleRelic| { &m.rarity },
+            |m: &mut BattleRelic| { &mut m.rarity },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleRelic>(
             "BattleRelic",
@@ -137,13 +137,13 @@ impl ::protobuf::Message for BattleRelic {
                     self.unique_id = is.read_uint32()?;
                 },
                 48 => {
-                    self.relic_id = is.read_uint32()?;
+                    self.set_id = is.read_uint32()?;
                 },
                 56 => {
-                    self.slot = is.read_uint32()?;
+                    self.type_ = is.read_uint32()?;
                 },
                 64 => {
-                    self.JLKMNCOIDLG = is.read_uint32()?;
+                    self.rarity = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -173,14 +173,14 @@ impl ::protobuf::Message for BattleRelic {
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
         }
-        if self.relic_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.relic_id);
+        if self.set_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.set_id);
         }
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.slot);
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.type_);
         }
-        if self.JLKMNCOIDLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JLKMNCOIDLG);
+        if self.rarity != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.rarity);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -203,14 +203,14 @@ impl ::protobuf::Message for BattleRelic {
         if self.unique_id != 0 {
             os.write_uint32(5, self.unique_id)?;
         }
-        if self.relic_id != 0 {
-            os.write_uint32(6, self.relic_id)?;
+        if self.set_id != 0 {
+            os.write_uint32(6, self.set_id)?;
         }
-        if self.slot != 0 {
-            os.write_uint32(7, self.slot)?;
+        if self.type_ != 0 {
+            os.write_uint32(7, self.type_)?;
         }
-        if self.JLKMNCOIDLG != 0 {
-            os.write_uint32(8, self.JLKMNCOIDLG)?;
+        if self.rarity != 0 {
+            os.write_uint32(8, self.rarity)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -234,9 +234,9 @@ impl ::protobuf::Message for BattleRelic {
         self.main_affix_id = 0;
         self.sub_affix_list.clear();
         self.unique_id = 0;
-        self.relic_id = 0;
-        self.slot = 0;
-        self.JLKMNCOIDLG = 0;
+        self.set_id = 0;
+        self.type_ = 0;
+        self.rarity = 0;
         self.special_fields.clear();
     }
 
@@ -247,9 +247,9 @@ impl ::protobuf::Message for BattleRelic {
             main_affix_id: 0,
             sub_affix_list: ::std::vec::Vec::new(),
             unique_id: 0,
-            relic_id: 0,
-            slot: 0,
-            JLKMNCOIDLG: 0,
+            set_id: 0,
+            type_: 0,
+            rarity: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for BattleRelic {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BattleRelic.proto\x1a\x10RelicAffix.proto\"\xf8\x01\n\x0bBattleRel\
+    \n\x11BattleRelic.proto\x1a\x10RelicAffix.proto\"\xea\x01\n\x0bBattleRel\
     ic\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x02\
     \x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x03\x20\x01(\rR\x0bmain\
     AffixId\x121\n\x0esub_affix_list\x18\x04\x20\x03(\x0b2\x0b.RelicAffixR\
     \x0csubAffixList\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08uniqueId\
-    \x12\x19\n\x08relic_id\x18\x06\x20\x01(\rR\x07relicId\x12\x12\n\x04slot\
-    \x18\x07\x20\x01(\rR\x04slot\x12\x20\n\x0bJLKMNCOIDLG\x18\x08\x20\x01(\r\
-    R\x0bJLKMNCOIDLGb\x06proto3\
+    \x12\x15\n\x06set_id\x18\x06\x20\x01(\rR\x05setId\x12\x12\n\x04type\x18\
+    \x07\x20\x01(\rR\x04type\x12\x16\n\x06rarity\x18\x08\x20\x01(\rR\x06rari\
+    tyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

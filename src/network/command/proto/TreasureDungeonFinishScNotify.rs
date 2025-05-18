@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TreasureDungeonFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.HOHHBIHFJEH)
-    pub HOHHBIHFJEH: u32,
-    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.AECNCDPJPDG)
-    pub AECNCDPJPDG: u32,
     // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.PIKAPDJHGND)
     pub PIKAPDJHGND: u32,
     // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.KGMMPGFGODJ)
     pub KGMMPGFGODJ: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.JBCGKLDMHNL)
     pub JBCGKLDMHNL: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.AECNCDPJPDG)
+    pub AECNCDPJPDG: u32,
+    // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.HOHHBIHFJEH)
+    pub HOHHBIHFJEH: u32,
     // @@protoc_insertion_point(field:TreasureDungeonFinishScNotify.NLMDEMOHBOO)
     pub NLMDEMOHBOO: u32,
     // special fields
@@ -62,21 +62,6 @@ impl TreasureDungeonFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &TreasureDungeonFinishScNotify| { &m.is_win },
-            |m: &mut TreasureDungeonFinishScNotify| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOHHBIHFJEH",
-            |m: &TreasureDungeonFinishScNotify| { &m.HOHHBIHFJEH },
-            |m: &mut TreasureDungeonFinishScNotify| { &mut m.HOHHBIHFJEH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AECNCDPJPDG",
-            |m: &TreasureDungeonFinishScNotify| { &m.AECNCDPJPDG },
-            |m: &mut TreasureDungeonFinishScNotify| { &mut m.AECNCDPJPDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIKAPDJHGND",
             |m: &TreasureDungeonFinishScNotify| { &m.PIKAPDJHGND },
             |m: &mut TreasureDungeonFinishScNotify| { &mut m.PIKAPDJHGND },
@@ -90,6 +75,21 @@ impl TreasureDungeonFinishScNotify {
             "JBCGKLDMHNL",
             |m: &TreasureDungeonFinishScNotify| { &m.JBCGKLDMHNL },
             |m: &mut TreasureDungeonFinishScNotify| { &mut m.JBCGKLDMHNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &TreasureDungeonFinishScNotify| { &m.is_win },
+            |m: &mut TreasureDungeonFinishScNotify| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AECNCDPJPDG",
+            |m: &TreasureDungeonFinishScNotify| { &m.AECNCDPJPDG },
+            |m: &mut TreasureDungeonFinishScNotify| { &mut m.AECNCDPJPDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HOHHBIHFJEH",
+            |m: &TreasureDungeonFinishScNotify| { &m.HOHHBIHFJEH },
+            |m: &mut TreasureDungeonFinishScNotify| { &mut m.HOHHBIHFJEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLMDEMOHBOO",
@@ -114,19 +114,10 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_win = is.read_bool()?;
-                },
-                96 => {
-                    self.HOHHBIHFJEH = is.read_uint32()?;
-                },
-                120 => {
-                    self.AECNCDPJPDG = is.read_uint32()?;
-                },
-                40 => {
+                56 => {
                     self.PIKAPDJHGND = is.read_uint32()?;
                 },
-                114 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -141,7 +132,7 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
                     is.pop_limit(old_limit);
                     self.KGMMPGFGODJ.insert(key, value);
                 },
-                90 => {
+                66 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -156,7 +147,16 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
                     is.pop_limit(old_limit);
                     self.JBCGKLDMHNL.insert(key, value);
                 },
+                96 => {
+                    self.is_win = is.read_bool()?;
+                },
                 104 => {
+                    self.AECNCDPJPDG = is.read_uint32()?;
+                },
+                40 => {
+                    self.HOHHBIHFJEH = is.read_uint32()?;
+                },
+                32 => {
                     self.NLMDEMOHBOO = is.read_uint32()?;
                 },
                 tag => {
@@ -171,17 +171,8 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
-        if self.HOHHBIHFJEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HOHHBIHFJEH);
-        }
-        if self.AECNCDPJPDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AECNCDPJPDG);
-        }
         if self.PIKAPDJHGND != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PIKAPDJHGND);
+            my_size += ::protobuf::rt::uint32_size(7, self.PIKAPDJHGND);
         }
         for (k, v) in &self.KGMMPGFGODJ {
             let mut entry_size = 0;
@@ -195,8 +186,17 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        if self.AECNCDPJPDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AECNCDPJPDG);
+        }
+        if self.HOHHBIHFJEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HOHHBIHFJEH);
+        }
         if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NLMDEMOHBOO);
+            my_size += ::protobuf::rt::uint32_size(4, self.NLMDEMOHBOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -204,23 +204,14 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_win != false {
-            os.write_bool(3, self.is_win)?;
-        }
-        if self.HOHHBIHFJEH != 0 {
-            os.write_uint32(12, self.HOHHBIHFJEH)?;
-        }
-        if self.AECNCDPJPDG != 0 {
-            os.write_uint32(15, self.AECNCDPJPDG)?;
-        }
         if self.PIKAPDJHGND != 0 {
-            os.write_uint32(5, self.PIKAPDJHGND)?;
+            os.write_uint32(7, self.PIKAPDJHGND)?;
         }
         for (k, v) in &self.KGMMPGFGODJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(114)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -229,13 +220,22 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(66)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.is_win != false {
+            os.write_bool(12, self.is_win)?;
+        }
+        if self.AECNCDPJPDG != 0 {
+            os.write_uint32(13, self.AECNCDPJPDG)?;
+        }
+        if self.HOHHBIHFJEH != 0 {
+            os.write_uint32(5, self.HOHHBIHFJEH)?;
+        }
         if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(13, self.NLMDEMOHBOO)?;
+            os.write_uint32(4, self.NLMDEMOHBOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -254,12 +254,12 @@ impl ::protobuf::Message for TreasureDungeonFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.is_win = false;
-        self.HOHHBIHFJEH = 0;
-        self.AECNCDPJPDG = 0;
         self.PIKAPDJHGND = 0;
         self.KGMMPGFGODJ.clear();
         self.JBCGKLDMHNL.clear();
+        self.is_win = false;
+        self.AECNCDPJPDG = 0;
+        self.HOHHBIHFJEH = 0;
         self.NLMDEMOHBOO = 0;
         self.special_fields.clear();
     }
@@ -289,13 +289,13 @@ impl ::protobuf::reflect::ProtobufValue for TreasureDungeonFinishScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#TreasureDungeonFinishScNotify.proto\"\xe4\x03\n\x1dTreasureDungeonFin\
-    ishScNotify\x12\x15\n\x06is_win\x18\x03\x20\x01(\x08R\x05isWin\x12\x20\n\
-    \x0bHOHHBIHFJEH\x18\x0c\x20\x01(\rR\x0bHOHHBIHFJEH\x12\x20\n\x0bAECNCDPJ\
-    PDG\x18\x0f\x20\x01(\rR\x0bAECNCDPJPDG\x12\x20\n\x0bPIKAPDJHGND\x18\x05\
-    \x20\x01(\rR\x0bPIKAPDJHGND\x12Q\n\x0bKGMMPGFGODJ\x18\x0e\x20\x03(\x0b2/\
-    .TreasureDungeonFinishScNotify.KGMMPGFGODJEntryR\x0bKGMMPGFGODJ\x12Q\n\
-    \x0bJBCGKLDMHNL\x18\x0b\x20\x03(\x0b2/.TreasureDungeonFinishScNotify.JBC\
-    GKLDMHNLEntryR\x0bJBCGKLDMHNL\x12\x20\n\x0bNLMDEMOHBOO\x18\r\x20\x01(\rR\
+    ishScNotify\x12\x20\n\x0bPIKAPDJHGND\x18\x07\x20\x01(\rR\x0bPIKAPDJHGND\
+    \x12Q\n\x0bKGMMPGFGODJ\x18\x03\x20\x03(\x0b2/.TreasureDungeonFinishScNot\
+    ify.KGMMPGFGODJEntryR\x0bKGMMPGFGODJ\x12Q\n\x0bJBCGKLDMHNL\x18\x08\x20\
+    \x03(\x0b2/.TreasureDungeonFinishScNotify.JBCGKLDMHNLEntryR\x0bJBCGKLDMH\
+    NL\x12\x15\n\x06is_win\x18\x0c\x20\x01(\x08R\x05isWin\x12\x20\n\x0bAECNC\
+    DPJPDG\x18\r\x20\x01(\rR\x0bAECNCDPJPDG\x12\x20\n\x0bHOHHBIHFJEH\x18\x05\
+    \x20\x01(\rR\x0bHOHHBIHFJEH\x12\x20\n\x0bNLMDEMOHBOO\x18\x04\x20\x01(\rR\
     \x0bNLMDEMOHBOO\x1a>\n\x10KGMMPGFGODJEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
     \x01\x1a>\n\x10JBCGKLDMHNLEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03\

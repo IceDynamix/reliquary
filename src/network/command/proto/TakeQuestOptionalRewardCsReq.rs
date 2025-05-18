@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeQuestOptionalRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.JLFABHHNHCM)
-    pub JLFABHHNHCM: u32,
+    // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.quest_id)
+    pub quest_id: u32,
     // @@protoc_insertion_point(field:TakeQuestOptionalRewardCsReq.optional_reward_id)
     pub optional_reward_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeQuestOptionalRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLFABHHNHCM",
-            |m: &TakeQuestOptionalRewardCsReq| { &m.JLFABHHNHCM },
-            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.JLFABHHNHCM },
+            "quest_id",
+            |m: &TakeQuestOptionalRewardCsReq| { &m.quest_id },
+            |m: &mut TakeQuestOptionalRewardCsReq| { &mut m.quest_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "optional_reward_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JLFABHHNHCM = is.read_uint32()?;
+                56 => {
+                    self.quest_id = is.read_uint32()?;
                 },
-                80 => {
+                112 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JLFABHHNHCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JLFABHHNHCM);
+        if self.quest_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.quest_id);
         }
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.optional_reward_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JLFABHHNHCM != 0 {
-            os.write_uint32(3, self.JLFABHHNHCM)?;
+        if self.quest_id != 0 {
+            os.write_uint32(7, self.quest_id)?;
         }
         if self.optional_reward_id != 0 {
-            os.write_uint32(10, self.optional_reward_id)?;
+            os.write_uint32(14, self.optional_reward_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TakeQuestOptionalRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.JLFABHHNHCM = 0;
+        self.quest_id = 0;
         self.optional_reward_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeQuestOptionalRewardCsReq {
         static instance: TakeQuestOptionalRewardCsReq = TakeQuestOptionalRewardCsReq {
-            JLFABHHNHCM: 0,
+            quest_id: 0,
             optional_reward_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestOptionalRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeQuestOptionalRewardCsReq.proto\"n\n\x1cTakeQuestOptionalRewardCs\
-    Req\x12\x20\n\x0bJLFABHHNHCM\x18\x03\x20\x01(\rR\x0bJLFABHHNHCM\x12,\n\
-    \x12optional_reward_id\x18\n\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
+    \n\"TakeQuestOptionalRewardCsReq.proto\"g\n\x1cTakeQuestOptionalRewardCs\
+    Req\x12\x19\n\x08quest_id\x18\x07\x20\x01(\rR\x07questId\x12,\n\x12optio\
+    nal_reward_id\x18\x0e\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

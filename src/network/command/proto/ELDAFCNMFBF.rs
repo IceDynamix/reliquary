@@ -85,7 +85,7 @@ impl ::protobuf::Message for ELDAFCNMFBF {
                 16 => {
                     self.MDPDADOOOBN.push(is.read_uint32()?);
                 },
-                8 => {
+                72 => {
                     self.BILBOHBDBPN = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ELDAFCNMFBF {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.MDPDADOOOBN);
         if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BILBOHBDBPN);
+            my_size += ::protobuf::rt::uint32_size(9, self.BILBOHBDBPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,7 +112,7 @@ impl ::protobuf::Message for ELDAFCNMFBF {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(2, &self.MDPDADOOOBN)?;
         if self.BILBOHBDBPN != 0 {
-            os.write_uint32(1, self.BILBOHBDBPN)?;
+            os.write_uint32(9, self.BILBOHBDBPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ELDAFCNMFBF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ELDAFCNMFBF.proto\"Q\n\x0bELDAFCNMFBF\x12\x20\n\x0bMDPDADOOOBN\x18\
-    \x02\x20\x03(\rR\x0bMDPDADOOOBN\x12\x20\n\x0bBILBOHBDBPN\x18\x01\x20\x01\
-    (\rR\x0bBILBOHBDBPNb\x06proto3\
+    \x02\x20\x03(\rR\x0bMDPDADOOOBN\x12\x20\n\x0bBILBOHBDBPN\x18\t\x20\x01(\
+    \rR\x0bBILBOHBDBPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

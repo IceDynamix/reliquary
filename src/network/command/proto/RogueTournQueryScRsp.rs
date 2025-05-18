@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournQueryScRsp.LAGBGLDLGCB)
-    pub LAGBGLDLGCB: ::protobuf::MessageField<super::CHGGGEGAMDI::CHGGGEGAMDI>,
+    // @@protoc_insertion_point(field:RogueTournQueryScRsp.rogue_get_info)
+    pub rogue_get_info: ::protobuf::MessageField<super::CHGGGEGAMDI::CHGGGEGAMDI>,
     // @@protoc_insertion_point(field:RogueTournQueryScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournQueryScRsp.BHMHLPCHKLG)
@@ -54,9 +54,9 @@ impl RogueTournQueryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHGGGEGAMDI::CHGGGEGAMDI>(
-            "LAGBGLDLGCB",
-            |m: &RogueTournQueryScRsp| { &m.LAGBGLDLGCB },
-            |m: &mut RogueTournQueryScRsp| { &mut m.LAGBGLDLGCB },
+            "rogue_get_info",
+            |m: &RogueTournQueryScRsp| { &m.rogue_get_info },
+            |m: &mut RogueTournQueryScRsp| { &mut m.rogue_get_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAGBGLDLGCB)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
-                88 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LAGBGLDLGCB.as_ref() {
+        if let Some(v) = self.rogue_get_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.BHMHLPCHKLG.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LAGBGLDLGCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.rogue_get_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.LAGBGLDLGCB.clear();
+        self.rogue_get_info.clear();
         self.retcode = 0;
         self.BHMHLPCHKLG.clear();
         self.special_fields.clear();
@@ -158,7 +158,7 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
 
     fn default_instance() -> &'static RogueTournQueryScRsp {
         static instance: RogueTournQueryScRsp = RogueTournQueryScRsp {
-            LAGBGLDLGCB: ::protobuf::MessageField::none(),
+            rogue_get_info: ::protobuf::MessageField::none(),
             retcode: 0,
             BHMHLPCHKLG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournQueryScRsp.proto\x1a\x11CFCDHLPOOGC.proto\x1a\x11CHGGGEG\
-    AMDI.proto\"\x90\x01\n\x14RogueTournQueryScRsp\x12.\n\x0bLAGBGLDLGCB\x18\
-    \n\x20\x01(\x0b2\x0c.CHGGGEGAMDIR\x0bLAGBGLDLGCB\x12\x18\n\x07retcode\
-    \x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\x01\x20\x01(\
+    AMDI.proto\"\x94\x01\n\x14RogueTournQueryScRsp\x122\n\x0erogue_get_info\
+    \x18\x01\x20\x01(\x0b2\x0c.CHGGGEGAMDIR\x0crogueGetInfo\x12\x18\n\x07ret\
+    code\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\r\x20\x01(\
     \x0b2\x0c.CFCDHLPOOGCR\x0bBHMHLPCHKLGb\x06proto3\
 ";
 

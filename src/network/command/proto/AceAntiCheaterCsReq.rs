@@ -79,10 +79,10 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.GLNKKFAIPOB = is.read_uint32()?;
                 },
-                98 => {
+                26 => {
                     self.DGDLNIEFCPF = is.read_string()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GLNKKFAIPOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GLNKKFAIPOB);
+            my_size += ::protobuf::rt::uint32_size(14, self.GLNKKFAIPOB);
         }
         if !self.DGDLNIEFCPF.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.DGDLNIEFCPF);
+            my_size += ::protobuf::rt::string_size(3, &self.DGDLNIEFCPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GLNKKFAIPOB != 0 {
-            os.write_uint32(8, self.GLNKKFAIPOB)?;
+            os.write_uint32(14, self.GLNKKFAIPOB)?;
         }
         if !self.DGDLNIEFCPF.is_empty() {
-            os.write_string(12, &self.DGDLNIEFCPF)?;
+            os.write_string(3, &self.DGDLNIEFCPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AceAntiCheaterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19AceAntiCheaterCsReq.proto\"Y\n\x13AceAntiCheaterCsReq\x12\x20\n\
-    \x0bGLNKKFAIPOB\x18\x08\x20\x01(\rR\x0bGLNKKFAIPOB\x12\x20\n\x0bDGDLNIEF\
-    CPF\x18\x0c\x20\x01(\tR\x0bDGDLNIEFCPFb\x06proto3\
+    \x0bGLNKKFAIPOB\x18\x0e\x20\x01(\rR\x0bGLNKKFAIPOB\x12\x20\n\x0bDGDLNIEF\
+    CPF\x18\x03\x20\x01(\tR\x0bDGDLNIEFCPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

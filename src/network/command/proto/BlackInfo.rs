@@ -32,10 +32,10 @@ pub struct BlackInfo {
     pub begin_time: i64,
     // @@protoc_insertion_point(field:BlackInfo.end_time)
     pub end_time: i64,
-    // @@protoc_insertion_point(field:BlackInfo.JFCIIBECNCM)
-    pub JFCIIBECNCM: u32,
-    // @@protoc_insertion_point(field:BlackInfo.CCABDCPLMPJ)
-    pub CCABDCPLMPJ: u32,
+    // @@protoc_insertion_point(field:BlackInfo.limit_level)
+    pub limit_level: u32,
+    // @@protoc_insertion_point(field:BlackInfo.ban_type)
+    pub ban_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BlackInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl BlackInfo {
             |m: &mut BlackInfo| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFCIIBECNCM",
-            |m: &BlackInfo| { &m.JFCIIBECNCM },
-            |m: &mut BlackInfo| { &mut m.JFCIIBECNCM },
+            "limit_level",
+            |m: &BlackInfo| { &m.limit_level },
+            |m: &mut BlackInfo| { &mut m.limit_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCABDCPLMPJ",
-            |m: &BlackInfo| { &m.CCABDCPLMPJ },
-            |m: &mut BlackInfo| { &mut m.CCABDCPLMPJ },
+            "ban_type",
+            |m: &BlackInfo| { &m.ban_type },
+            |m: &mut BlackInfo| { &mut m.ban_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BlackInfo>(
             "BlackInfo",
@@ -100,10 +100,10 @@ impl ::protobuf::Message for BlackInfo {
                     self.end_time = is.read_int64()?;
                 },
                 24 => {
-                    self.JFCIIBECNCM = is.read_uint32()?;
+                    self.limit_level = is.read_uint32()?;
                 },
                 32 => {
-                    self.CCABDCPLMPJ = is.read_uint32()?;
+                    self.ban_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,11 +123,11 @@ impl ::protobuf::Message for BlackInfo {
         if self.end_time != 0 {
             my_size += ::protobuf::rt::int64_size(2, self.end_time);
         }
-        if self.JFCIIBECNCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JFCIIBECNCM);
+        if self.limit_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.limit_level);
         }
-        if self.CCABDCPLMPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CCABDCPLMPJ);
+        if self.ban_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ban_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -141,11 +141,11 @@ impl ::protobuf::Message for BlackInfo {
         if self.end_time != 0 {
             os.write_int64(2, self.end_time)?;
         }
-        if self.JFCIIBECNCM != 0 {
-            os.write_uint32(3, self.JFCIIBECNCM)?;
+        if self.limit_level != 0 {
+            os.write_uint32(3, self.limit_level)?;
         }
-        if self.CCABDCPLMPJ != 0 {
-            os.write_uint32(4, self.CCABDCPLMPJ)?;
+        if self.ban_type != 0 {
+            os.write_uint32(4, self.ban_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for BlackInfo {
     fn clear(&mut self) {
         self.begin_time = 0;
         self.end_time = 0;
-        self.JFCIIBECNCM = 0;
-        self.CCABDCPLMPJ = 0;
+        self.limit_level = 0;
+        self.ban_type = 0;
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for BlackInfo {
         static instance: BlackInfo = BlackInfo {
             begin_time: 0,
             end_time: 0,
-            JFCIIBECNCM: 0,
-            CCABDCPLMPJ: 0,
+            limit_level: 0,
+            ban_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for BlackInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fBlackInfo.proto\"\x89\x01\n\tBlackInfo\x12\x1d\n\nbegin_time\x18\
+    \n\x0fBlackInfo.proto\"\x81\x01\n\tBlackInfo\x12\x1d\n\nbegin_time\x18\
     \x01\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03\
-    R\x07endTime\x12\x20\n\x0bJFCIIBECNCM\x18\x03\x20\x01(\rR\x0bJFCIIBECNCM\
-    \x12\x20\n\x0bCCABDCPLMPJ\x18\x04\x20\x01(\rR\x0bCCABDCPLMPJb\x06proto3\
+    R\x07endTime\x12\x1f\n\x0blimit_level\x18\x03\x20\x01(\rR\nlimitLevel\
+    \x12\x19\n\x08ban_type\x18\x04\x20\x01(\rR\x07banTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

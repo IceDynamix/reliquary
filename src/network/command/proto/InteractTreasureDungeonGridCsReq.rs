@@ -86,13 +86,13 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                32 => {
                     self.HFNHLCFNHKD = is.read_uint32()?;
                 },
                 48 => {
                     self.display_value = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.NLMDEMOHBOO = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HFNHLCFNHKD);
+            my_size += ::protobuf::rt::uint32_size(4, self.HFNHLCFNHKD);
         }
         if self.display_value != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.display_value);
         }
         if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NLMDEMOHBOO);
+            my_size += ::protobuf::rt::uint32_size(12, self.NLMDEMOHBOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(10, self.HFNHLCFNHKD)?;
+            os.write_uint32(4, self.HFNHLCFNHKD)?;
         }
         if self.display_value != 0 {
             os.write_uint32(6, self.display_value)?;
         }
         if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(2, self.NLMDEMOHBOO)?;
+            os.write_uint32(12, self.NLMDEMOHBOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for InteractTreasureDungeonGridCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&InteractTreasureDungeonGridCsReq.proto\"\x8b\x01\n\x20InteractTreasur\
-    eDungeonGridCsReq\x12\x20\n\x0bHFNHLCFNHKD\x18\n\x20\x01(\rR\x0bHFNHLCFN\
-    HKD\x12#\n\rdisplay_value\x18\x06\x20\x01(\rR\x0cdisplayValue\x12\x20\n\
-    \x0bNLMDEMOHBOO\x18\x02\x20\x01(\rR\x0bNLMDEMOHBOOb\x06proto3\
+    eDungeonGridCsReq\x12\x20\n\x0bHFNHLCFNHKD\x18\x04\x20\x01(\rR\x0bHFNHLC\
+    FNHKD\x12#\n\rdisplay_value\x18\x06\x20\x01(\rR\x0cdisplayValue\x12\x20\
+    \n\x0bNLMDEMOHBOO\x18\x0c\x20\x01(\rR\x0bNLMDEMOHBOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

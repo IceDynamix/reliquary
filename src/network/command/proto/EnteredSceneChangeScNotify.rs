@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnteredSceneChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:EnteredSceneChangeScNotify.entered_scene_info)
-    pub entered_scene_info: ::std::vec::Vec<super::EnteredSceneInfo::EnteredSceneInfo>,
+    // @@protoc_insertion_point(field:EnteredSceneChangeScNotify.entered_scene_info_list)
+    pub entered_scene_info_list: ::std::vec::Vec<super::EnteredSceneInfo::EnteredSceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EnteredSceneChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EnteredSceneChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entered_scene_info",
-            |m: &EnteredSceneChangeScNotify| { &m.entered_scene_info },
-            |m: &mut EnteredSceneChangeScNotify| { &mut m.entered_scene_info },
+            "entered_scene_info_list",
+            |m: &EnteredSceneChangeScNotify| { &m.entered_scene_info_list },
+            |m: &mut EnteredSceneChangeScNotify| { &mut m.entered_scene_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnteredSceneChangeScNotify>(
             "EnteredSceneChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.entered_scene_info.push(is.read_message()?);
+                18 => {
+                    self.entered_scene_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.entered_scene_info {
+        for value in &self.entered_scene_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.entered_scene_info {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.entered_scene_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EnteredSceneChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.entered_scene_info.clear();
+        self.entered_scene_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnteredSceneChangeScNotify {
         static instance: EnteredSceneChangeScNotify = EnteredSceneChangeScNotify {
-            entered_scene_info: ::std::vec::Vec::new(),
+            entered_scene_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for EnteredSceneChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnteredSceneChangeScNotify.proto\x1a\x16EnteredSceneInfo.proto\"]\
-    \n\x1aEnteredSceneChangeScNotify\x12?\n\x12entered_scene_info\x18\x0f\
-    \x20\x03(\x0b2\x11.EnteredSceneInfoR\x10enteredSceneInfob\x06proto3\
+    \n\x20EnteredSceneChangeScNotify.proto\x1a\x16EnteredSceneInfo.proto\"f\
+    \n\x1aEnteredSceneChangeScNotify\x12H\n\x17entered_scene_info_list\x18\
+    \x02\x20\x03(\x0b2\x11.EnteredSceneInfoR\x14enteredSceneInfoListb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

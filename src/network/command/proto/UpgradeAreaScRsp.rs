@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeAreaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeAreaScRsp.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:UpgradeAreaScRsp.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:UpgradeAreaScRsp.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:UpgradeAreaScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl UpgradeAreaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &UpgradeAreaScRsp| { &m.level },
-            |m: &mut UpgradeAreaScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &UpgradeAreaScRsp| { &m.area_id },
             |m: &mut UpgradeAreaScRsp| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &UpgradeAreaScRsp| { &m.level },
+            |m: &mut UpgradeAreaScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.level = is.read_uint32()?;
-                },
-                40 => {
+                104 => {
                     self.area_id = is.read_uint32()?;
                 },
                 88 => {
+                    self.level = is.read_uint32()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
-        }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(7, self.level)?;
-        }
         if self.area_id != 0 {
-            os.write_uint32(5, self.area_id)?;
+            os.write_uint32(13, self.area_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(11, self.level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for UpgradeAreaScRsp {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.area_id = 0;
+        self.level = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeAreaScRsp {
         static instance: UpgradeAreaScRsp = UpgradeAreaScRsp {
-            level: 0,
             area_id: 0,
+            level: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeAreaScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16UpgradeAreaScRsp.proto\"[\n\x10UpgradeAreaScRsp\x12\x14\n\x05level\
-    \x18\x07\x20\x01(\rR\x05level\x12\x17\n\x07area_id\x18\x05\x20\x01(\rR\
-    \x06areaId\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto\
-    3\
+    \n\x16UpgradeAreaScRsp.proto\"[\n\x10UpgradeAreaScRsp\x12\x17\n\x07area_\
+    id\x18\r\x20\x01(\rR\x06areaId\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\
+    \x05level\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

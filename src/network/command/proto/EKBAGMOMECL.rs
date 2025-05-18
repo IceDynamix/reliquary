@@ -30,8 +30,8 @@ pub struct EKBAGMOMECL {
     // message fields
     // @@protoc_insertion_point(field:EKBAGMOMECL.key)
     pub key: ::std::string::String,
-    // @@protoc_insertion_point(field:EKBAGMOMECL.MBMDOCJIMEJ)
-    pub MBMDOCJIMEJ: f64,
+    // @@protoc_insertion_point(field:EKBAGMOMECL.value)
+    pub value: f64,
     // special fields
     // @@protoc_insertion_point(special_field:EKBAGMOMECL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl EKBAGMOMECL {
             |m: &mut EKBAGMOMECL| { &mut m.key },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBMDOCJIMEJ",
-            |m: &EKBAGMOMECL| { &m.MBMDOCJIMEJ },
-            |m: &mut EKBAGMOMECL| { &mut m.MBMDOCJIMEJ },
+            "value",
+            |m: &EKBAGMOMECL| { &m.value },
+            |m: &mut EKBAGMOMECL| { &mut m.value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EKBAGMOMECL>(
             "EKBAGMOMECL",
@@ -83,7 +83,7 @@ impl ::protobuf::Message for EKBAGMOMECL {
                     self.key = is.read_string()?;
                 },
                 17 => {
-                    self.MBMDOCJIMEJ = is.read_double()?;
+                    self.value = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for EKBAGMOMECL {
         if !self.key.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.key);
         }
-        if self.MBMDOCJIMEJ != 0. {
+        if self.value != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,8 +112,8 @@ impl ::protobuf::Message for EKBAGMOMECL {
         if !self.key.is_empty() {
             os.write_string(1, &self.key)?;
         }
-        if self.MBMDOCJIMEJ != 0. {
-            os.write_double(2, self.MBMDOCJIMEJ)?;
+        if self.value != 0. {
+            os.write_double(2, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EKBAGMOMECL {
 
     fn clear(&mut self) {
         self.key.clear();
-        self.MBMDOCJIMEJ = 0.;
+        self.value = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EKBAGMOMECL {
         static instance: EKBAGMOMECL = EKBAGMOMECL {
             key: ::std::string::String::new(),
-            MBMDOCJIMEJ: 0.,
+            value: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EKBAGMOMECL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EKBAGMOMECL.proto\"A\n\x0bEKBAGMOMECL\x12\x10\n\x03key\x18\x01\x20\
-    \x01(\tR\x03key\x12\x20\n\x0bMBMDOCJIMEJ\x18\x02\x20\x01(\x01R\x0bMBMDOC\
-    JIMEJb\x06proto3\
+    \n\x11EKBAGMOMECL.proto\"5\n\x0bEKBAGMOMECL\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x01R\x05valueb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

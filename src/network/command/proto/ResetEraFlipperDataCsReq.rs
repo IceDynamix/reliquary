@@ -72,7 +72,7 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.PAHMAGPFDDJ = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PAHMAGPFDDJ != false {
-            os.write_bool(14, self.PAHMAGPFDDJ)?;
+            os.write_bool(3, self.PAHMAGPFDDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ResetEraFlipperDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eResetEraFlipperDataCsReq.proto\"<\n\x18ResetEraFlipperDataCsReq\
-    \x12\x20\n\x0bPAHMAGPFDDJ\x18\x0e\x20\x01(\x08R\x0bPAHMAGPFDDJb\x06proto\
+    \x12\x20\n\x0bPAHMAGPFDDJ\x18\x03\x20\x01(\x08R\x0bPAHMAGPFDDJb\x06proto\
     3\
 ";
 

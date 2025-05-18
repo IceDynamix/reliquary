@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FCNOLLFGPCK {
     // message fields
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.simple_info)
-    pub simple_info: ::protobuf::MessageField<super::SimpleInfo::SimpleInfo>,
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::EIOAFODNCOJ::EIOAFODNCOJ>,
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.CBPJJPONCNG)
-    pub CBPJJPONCNG: u32,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.remark_name)
+    pub remark_name: ::std::string::String,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.buff_one)
+    pub buff_one: u32,
     // @@protoc_insertion_point(field:FCNOLLFGPCK.INHDDNNPBDB)
     pub INHDDNNPBDB: u32,
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.FOIGOJDODMD)
-    pub FOIGOJDODMD: u32,
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.score)
-    pub score: u32,
-    // @@protoc_insertion_point(field:FCNOLLFGPCK.friend_name)
-    pub friend_name: ::std::string::String,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.player_simple_info)
+    pub player_simple_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.buff_two)
+    pub buff_two: u32,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
+    // @@protoc_insertion_point(field:FCNOLLFGPCK.score_id)
+    pub score_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FCNOLLFGPCK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,10 +61,30 @@ impl FCNOLLFGPCK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SimpleInfo::SimpleInfo>(
-            "simple_info",
-            |m: &FCNOLLFGPCK| { &m.simple_info },
-            |m: &mut FCNOLLFGPCK| { &mut m.simple_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &FCNOLLFGPCK| { &m.remark_name },
+            |m: &mut FCNOLLFGPCK| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_one",
+            |m: &FCNOLLFGPCK| { &m.buff_one },
+            |m: &mut FCNOLLFGPCK| { &mut m.buff_one },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INHDDNNPBDB",
+            |m: &FCNOLLFGPCK| { &m.INHDDNNPBDB },
+            |m: &mut FCNOLLFGPCK| { &mut m.INHDDNNPBDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_simple_info",
+            |m: &FCNOLLFGPCK| { &m.player_simple_info },
+            |m: &mut FCNOLLFGPCK| { &mut m.player_simple_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_two",
+            |m: &FCNOLLFGPCK| { &m.buff_two },
+            |m: &mut FCNOLLFGPCK| { &mut m.buff_two },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
@@ -72,29 +92,9 @@ impl FCNOLLFGPCK {
             |m: &mut FCNOLLFGPCK| { &mut m.lineup_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBPJJPONCNG",
-            |m: &FCNOLLFGPCK| { &m.CBPJJPONCNG },
-            |m: &mut FCNOLLFGPCK| { &mut m.CBPJJPONCNG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INHDDNNPBDB",
-            |m: &FCNOLLFGPCK| { &m.INHDDNNPBDB },
-            |m: &mut FCNOLLFGPCK| { &mut m.INHDDNNPBDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FOIGOJDODMD",
-            |m: &FCNOLLFGPCK| { &m.FOIGOJDODMD },
-            |m: &mut FCNOLLFGPCK| { &mut m.FOIGOJDODMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &FCNOLLFGPCK| { &m.score },
-            |m: &mut FCNOLLFGPCK| { &mut m.score },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "friend_name",
-            |m: &FCNOLLFGPCK| { &m.friend_name },
-            |m: &mut FCNOLLFGPCK| { &mut m.friend_name },
+            "score_id",
+            |m: &FCNOLLFGPCK| { &m.score_id },
+            |m: &mut FCNOLLFGPCK| { &mut m.score_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FCNOLLFGPCK>(
             "FCNOLLFGPCK",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for FCNOLLFGPCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.simple_info)?;
-                },
-                98 => {
-                    self.lineup_list.push(is.read_message()?);
-                },
-                120 => {
-                    self.CBPJJPONCNG = is.read_uint32()?;
-                },
-                32 => {
-                    self.INHDDNNPBDB = is.read_uint32()?;
+                90 => {
+                    self.remark_name = is.read_string()?;
                 },
                 16 => {
-                    self.FOIGOJDODMD = is.read_uint32()?;
+                    self.buff_one = is.read_uint32()?;
                 },
-                48 => {
-                    self.score = is.read_uint32()?;
+                24 => {
+                    self.INHDDNNPBDB = is.read_uint32()?;
                 },
-                66 => {
-                    self.friend_name = is.read_string()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_simple_info)?;
+                },
+                96 => {
+                    self.buff_two = is.read_uint32()?;
+                },
+                50 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                112 => {
+                    self.score_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,28 +147,28 @@ impl ::protobuf::Message for FCNOLLFGPCK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.simple_info.as_ref() {
+        if !self.remark_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.remark_name);
+        }
+        if self.buff_one != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.buff_one);
+        }
+        if self.INHDDNNPBDB != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.INHDDNNPBDB);
+        }
+        if let Some(v) = self.player_simple_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.buff_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.buff_two);
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CBPJJPONCNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CBPJJPONCNG);
-        }
-        if self.INHDDNNPBDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.INHDDNNPBDB);
-        }
-        if self.FOIGOJDODMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FOIGOJDODMD);
-        }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score);
-        }
-        if !self.friend_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.friend_name);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,26 +176,26 @@ impl ::protobuf::Message for FCNOLLFGPCK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if !self.remark_name.is_empty() {
+            os.write_string(11, &self.remark_name)?;
         }
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if self.CBPJJPONCNG != 0 {
-            os.write_uint32(15, self.CBPJJPONCNG)?;
+        if self.buff_one != 0 {
+            os.write_uint32(2, self.buff_one)?;
         }
         if self.INHDDNNPBDB != 0 {
-            os.write_uint32(4, self.INHDDNNPBDB)?;
+            os.write_uint32(3, self.INHDDNNPBDB)?;
         }
-        if self.FOIGOJDODMD != 0 {
-            os.write_uint32(2, self.FOIGOJDODMD)?;
+        if let Some(v) = self.player_simple_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.score != 0 {
-            os.write_uint32(6, self.score)?;
+        if self.buff_two != 0 {
+            os.write_uint32(12, self.buff_two)?;
         }
-        if !self.friend_name.is_empty() {
-            os.write_string(8, &self.friend_name)?;
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.score_id != 0 {
+            os.write_uint32(14, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for FCNOLLFGPCK {
     }
 
     fn clear(&mut self) {
-        self.simple_info.clear();
-        self.lineup_list.clear();
-        self.CBPJJPONCNG = 0;
+        self.remark_name.clear();
+        self.buff_one = 0;
         self.INHDDNNPBDB = 0;
-        self.FOIGOJDODMD = 0;
-        self.score = 0;
-        self.friend_name.clear();
+        self.player_simple_info.clear();
+        self.buff_two = 0;
+        self.lineup_list.clear();
+        self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FCNOLLFGPCK {
         static instance: FCNOLLFGPCK = FCNOLLFGPCK {
-            simple_info: ::protobuf::MessageField::none(),
-            lineup_list: ::std::vec::Vec::new(),
-            CBPJJPONCNG: 0,
+            remark_name: ::std::string::String::new(),
+            buff_one: 0,
             INHDDNNPBDB: 0,
-            FOIGOJDODMD: 0,
-            score: 0,
-            friend_name: ::std::string::String::new(),
+            player_simple_info: ::protobuf::MessageField::none(),
+            buff_two: 0,
+            lineup_list: ::std::vec::Vec::new(),
+            score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,15 @@ impl ::protobuf::reflect::ProtobufValue for FCNOLLFGPCK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FCNOLLFGPCK.proto\x1a\x11EIOAFODNCOJ.proto\x1a\x10SimpleInfo.proto\
-    \"\x87\x02\n\x0bFCNOLLFGPCK\x12,\n\x0bsimple_info\x18\x0e\x20\x01(\x0b2\
-    \x0b.SimpleInfoR\nsimpleInfo\x12-\n\x0blineup_list\x18\x0c\x20\x03(\x0b2\
-    \x0c.EIOAFODNCOJR\nlineupList\x12\x20\n\x0bCBPJJPONCNG\x18\x0f\x20\x01(\
-    \rR\x0bCBPJJPONCNG\x12\x20\n\x0bINHDDNNPBDB\x18\x04\x20\x01(\rR\x0bINHDD\
-    NNPBDB\x12\x20\n\x0bFOIGOJDODMD\x18\x02\x20\x01(\rR\x0bFOIGOJDODMD\x12\
-    \x14\n\x05score\x18\x06\x20\x01(\rR\x05score\x12\x1f\n\x0bfriend_name\
-    \x18\x08\x20\x01(\tR\nfriendNameb\x06proto3\
+    \n\x11FCNOLLFGPCK.proto\x1a\x19ChallengeLineupList.proto\x1a\x16PlayerSi\
+    mpleInfo.proto\"\x99\x02\n\x0bFCNOLLFGPCK\x12\x1f\n\x0bremark_name\x18\
+    \x0b\x20\x01(\tR\nremarkName\x12\x19\n\x08buff_one\x18\x02\x20\x01(\rR\
+    \x07buffOne\x12\x20\n\x0bINHDDNNPBDB\x18\x03\x20\x01(\rR\x0bINHDDNNPBDB\
+    \x12?\n\x12player_simple_info\x18\t\x20\x01(\x0b2\x11.PlayerSimpleInfoR\
+    \x10playerSimpleInfo\x12\x19\n\x08buff_two\x18\x0c\x20\x01(\rR\x07buffTw\
+    o\x125\n\x0blineup_list\x18\x06\x20\x03(\x0b2\x14.ChallengeLineupListR\n\
+    lineupList\x12\x19\n\x08score_id\x18\x0e\x20\x01(\rR\x07scoreIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -282,8 +283,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::EIOAFODNCOJ::file_descriptor().clone());
-            deps.push(super::SimpleInfo::file_descriptor().clone());
+            deps.push(super::ChallengeLineupList::file_descriptor().clone());
+            deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FCNOLLFGPCK::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

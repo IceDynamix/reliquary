@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyEventChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:AlleyEventChangeNotify.HCNLDIBEACA)
-    pub HCNLDIBEACA: u32,
     // @@protoc_insertion_point(field:AlleyEventChangeNotify.NFLDODIABCL)
     pub NFLDODIABCL: ::protobuf::MessageField<super::HEHAOMIAMGL::HEHAOMIAMGL>,
+    // @@protoc_insertion_point(field:AlleyEventChangeNotify.HCNLDIBEACA)
+    pub HCNLDIBEACA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyEventChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AlleyEventChangeNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCNLDIBEACA",
-            |m: &AlleyEventChangeNotify| { &m.HCNLDIBEACA },
-            |m: &mut AlleyEventChangeNotify| { &mut m.HCNLDIBEACA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEHAOMIAMGL::HEHAOMIAMGL>(
             "NFLDODIABCL",
             |m: &AlleyEventChangeNotify| { &m.NFLDODIABCL },
             |m: &mut AlleyEventChangeNotify| { &mut m.NFLDODIABCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCNLDIBEACA",
+            |m: &AlleyEventChangeNotify| { &m.HCNLDIBEACA },
+            |m: &mut AlleyEventChangeNotify| { &mut m.HCNLDIBEACA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyEventChangeNotify>(
             "AlleyEventChangeNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AlleyEventChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.HCNLDIBEACA = is.read_uint32()?;
-                },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFLDODIABCL)?;
+                },
+                8 => {
+                    self.HCNLDIBEACA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for AlleyEventChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCNLDIBEACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HCNLDIBEACA);
-        }
         if let Some(v) = self.NFLDODIABCL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.HCNLDIBEACA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HCNLDIBEACA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AlleyEventChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCNLDIBEACA != 0 {
-            os.write_uint32(5, self.HCNLDIBEACA)?;
-        }
         if let Some(v) = self.NFLDODIABCL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.HCNLDIBEACA != 0 {
+            os.write_uint32(1, self.HCNLDIBEACA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AlleyEventChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.HCNLDIBEACA = 0;
         self.NFLDODIABCL.clear();
+        self.HCNLDIBEACA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyEventChangeNotify {
         static instance: AlleyEventChangeNotify = AlleyEventChangeNotify {
-            HCNLDIBEACA: 0,
             NFLDODIABCL: ::protobuf::MessageField::none(),
+            HCNLDIBEACA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AlleyEventChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cAlleyEventChangeNotify.proto\x1a\x11HEHAOMIAMGL.proto\"j\n\x16Alle\
-    yEventChangeNotify\x12\x20\n\x0bHCNLDIBEACA\x18\x05\x20\x01(\rR\x0bHCNLD\
-    IBEACA\x12.\n\x0bNFLDODIABCL\x18\t\x20\x01(\x0b2\x0c.HEHAOMIAMGLR\x0bNFL\
-    DODIABCLb\x06proto3\
+    yEventChangeNotify\x12.\n\x0bNFLDODIABCL\x18\x0c\x20\x01(\x0b2\x0c.HEHAO\
+    MIAMGLR\x0bNFLDODIABCL\x12\x20\n\x0bHCNLDIBEACA\x18\x01\x20\x01(\rR\x0bH\
+    CNLDIBEACAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

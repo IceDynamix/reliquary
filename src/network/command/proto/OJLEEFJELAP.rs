@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OJLEEFJELAP {
     // message fields
-    // @@protoc_insertion_point(field:OJLEEFJELAP.IAFBIJEKKPG)
-    pub IAFBIJEKKPG: ::std::vec::Vec<super::MKNHIKDCJJG::MKNHIKDCJJG>,
+    // @@protoc_insertion_point(field:OJLEEFJELAP.cell_list)
+    pub cell_list: ::std::vec::Vec<super::ChessRogueCell::ChessRogueCell>,
     // @@protoc_insertion_point(field:OJLEEFJELAP.HBCMGIICJMK)
     pub HBCMGIICJMK: u32,
     // special fields
@@ -52,9 +52,9 @@ impl OJLEEFJELAP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IAFBIJEKKPG",
-            |m: &OJLEEFJELAP| { &m.IAFBIJEKKPG },
-            |m: &mut OJLEEFJELAP| { &mut m.IAFBIJEKKPG },
+            "cell_list",
+            |m: &OJLEEFJELAP| { &m.cell_list },
+            |m: &mut OJLEEFJELAP| { &mut m.cell_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBCMGIICJMK",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for OJLEEFJELAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.IAFBIJEKKPG.push(is.read_message()?);
+                26 => {
+                    self.cell_list.push(is.read_message()?);
                 },
-                40 => {
+                72 => {
                     self.HBCMGIICJMK = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OJLEEFJELAP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IAFBIJEKKPG {
+        for value in &self.cell_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.HBCMGIICJMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HBCMGIICJMK);
+            my_size += ::protobuf::rt::uint32_size(9, self.HBCMGIICJMK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OJLEEFJELAP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IAFBIJEKKPG {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.cell_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.HBCMGIICJMK != 0 {
-            os.write_uint32(5, self.HBCMGIICJMK)?;
+            os.write_uint32(9, self.HBCMGIICJMK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for OJLEEFJELAP {
     }
 
     fn clear(&mut self) {
-        self.IAFBIJEKKPG.clear();
+        self.cell_list.clear();
         self.HBCMGIICJMK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OJLEEFJELAP {
         static instance: OJLEEFJELAP = OJLEEFJELAP {
-            IAFBIJEKKPG: ::std::vec::Vec::new(),
+            cell_list: ::std::vec::Vec::new(),
             HBCMGIICJMK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OJLEEFJELAP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OJLEEFJELAP.proto\x1a\x11MKNHIKDCJJG.proto\"_\n\x0bOJLEEFJELAP\x12\
-    .\n\x0bIAFBIJEKKPG\x18\n\x20\x03(\x0b2\x0c.MKNHIKDCJJGR\x0bIAFBIJEKKPG\
-    \x12\x20\n\x0bHBCMGIICJMK\x18\x05\x20\x01(\rR\x0bHBCMGIICJMKb\x06proto3\
+    \n\x11OJLEEFJELAP.proto\x1a\x14ChessRogueCell.proto\"]\n\x0bOJLEEFJELAP\
+    \x12,\n\tcell_list\x18\x03\x20\x03(\x0b2\x0f.ChessRogueCellR\x08cellList\
+    \x12\x20\n\x0bHBCMGIICJMK\x18\t\x20\x01(\rR\x0bHBCMGIICJMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MKNHIKDCJJG::file_descriptor().clone());
+            deps.push(super::ChessRogueCell::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OJLEEFJELAP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

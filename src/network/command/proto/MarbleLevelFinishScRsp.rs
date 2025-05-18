@@ -79,7 +79,7 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.NLIBKABFGCC = is.read_uint32()?;
                 },
                 8 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NLIBKABFGCC);
+            my_size += ::protobuf::rt::uint32_size(7, self.NLIBKABFGCC);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NLIBKABFGCC != 0 {
-            os.write_uint32(5, self.NLIBKABFGCC)?;
+            os.write_uint32(7, self.NLIBKABFGCC)?;
         }
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MarbleLevelFinishScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMarbleLevelFinishScRsp.proto\"T\n\x16MarbleLevelFinishScRsp\x12\
-    \x20\n\x0bNLIBKABFGCC\x18\x05\x20\x01(\rR\x0bNLIBKABFGCC\x12\x18\n\x07re\
+    \x20\n\x0bNLIBKABFGCC\x18\x07\x20\x01(\rR\x0bNLIBKABFGCC\x12\x18\n\x07re\
     tcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

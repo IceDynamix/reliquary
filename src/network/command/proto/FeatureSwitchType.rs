@@ -149,8 +149,12 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_RECHARGE_BENEFIT = 61,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RECHARGE_GIFT)
     FEATURE_SWITCH_RECHARGE_GIFT = 62,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE)
+    FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE = 63,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GACHA_AVATAR_TOAST)
     FEATURE_SWITCH_GACHA_AVATAR_TOAST = 64,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME)
+    FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME = 65,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_SMART_DISCARD)
     FEATURE_SWITCH_RELIC_SMART_DISCARD = 66,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_PLANETFES_SOCIAL)
@@ -227,7 +231,9 @@ impl ::protobuf::Enum for FeatureSwitchType {
             60 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC),
             61 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT),
             62 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT),
+            63 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE),
             64 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST),
+            65 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME),
             66 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
             67 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
             _ => ::std::option::Option::None
@@ -297,7 +303,9 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_ITEM_SYNC" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC),
             "FEATURE_SWITCH_RECHARGE_BENEFIT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT),
             "FEATURE_SWITCH_RECHARGE_GIFT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT),
+            "FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE),
             "FEATURE_SWITCH_GACHA_AVATAR_TOAST" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST),
+            "FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME),
             "FEATURE_SWITCH_RELIC_SMART_DISCARD" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
             "FEATURE_SWITCH_PLANETFES_SOCIAL" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
             _ => ::std::option::Option::None
@@ -366,7 +374,9 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC,
         FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT,
         FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT,
+        FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE,
         FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST,
+        FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME,
         FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD,
         FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL,
     ];
@@ -441,9 +451,11 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_ITEM_SYNC => 58,
             FeatureSwitchType::FEATURE_SWITCH_RECHARGE_BENEFIT => 59,
             FeatureSwitchType::FEATURE_SWITCH_RECHARGE_GIFT => 60,
-            FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST => 61,
-            FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD => 62,
-            FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL => 63,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE => 61,
+            FeatureSwitchType::FEATURE_SWITCH_GACHA_AVATAR_TOAST => 62,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME => 63,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD => 64,
+            FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL => 65,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -462,7 +474,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xce\x11\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\xbf\x12\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -502,10 +514,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     E_SWITCH_PRE_AVATAR_SET_GROWTH_TARGET\x108\x12+\n'FEATURE_SWITCH_IMPORT_\
     RELIC_FILTER_PLAN\x10:\x12$\n\x20FEATURE_SWITCH_GACHA_DECIDE_ITEM\x10;\
     \x12\x1c\n\x18FEATURE_SWITCH_ITEM_SYNC\x10<\x12#\n\x1fFEATURE_SWITCH_REC\
-    HARGE_BENEFIT\x10=\x12\x20\n\x1cFEATURE_SWITCH_RECHARGE_GIFT\x10>\x12%\n\
-    !FEATURE_SWITCH_GACHA_AVATAR_TOAST\x10@\x12&\n\"FEATURE_SWITCH_RELIC_SMA\
-    RT_DISCARD\x10B\x12#\n\x1fFEATURE_SWITCH_PLANETFES_SOCIAL\x10Cb\x06proto\
-    3\
+    HARGE_BENEFIT\x10=\x12\x20\n\x1cFEATURE_SWITCH_RECHARGE_GIFT\x10>\x123\n\
+    /FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE\x10?\x12%\n!FEATURE_SWI\
+    TCH_GACHA_AVATAR_TOAST\x10@\x12:\n6FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_\
+    SHARE_CODE_RENAME\x10A\x12&\n\"FEATURE_SWITCH_RELIC_SMART_DISCARD\x10B\
+    \x12#\n\x1fFEATURE_SWITCH_PLANETFES_SOCIAL\x10Cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

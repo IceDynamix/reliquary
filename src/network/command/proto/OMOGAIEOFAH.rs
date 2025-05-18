@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMOGAIEOFAH {
     // message fields
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.CMOGBLHAFHN)
-    pub CMOGBLHAFHN: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.EHPMCGOELGB)
-    pub EHPMCGOELGB: bool,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.BHEIDPPFCKA)
-    pub BHEIDPPFCKA: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.FPOELPFCNBI)
-    pub FPOELPFCNBI: ::protobuf::MessageField<super::ItemCostList::ItemCostList>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.LHMIDPAMBPD)
-    pub LHMIDPAMBPD: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDIHILCLENM)
-    pub PDIHILCLENM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDAPEHEAMBM)
-    pub PDAPEHEAMBM: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.IPODNBLJPOL)
-    pub IPODNBLJPOL: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.EKFLPNLAPDF)
-    pub EKFLPNLAPDF: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.DJFCKFEMGOJ)
-    pub DJFCKFEMGOJ: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.HHMABJDIMGM)
-    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.CKKEKMJMABC)
-    pub CKKEKMJMABC: u32,
     // @@protoc_insertion_point(field:OMOGAIEOFAH.IGCHBPAKBCB)
     pub IGCHBPAKBCB: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDIHILCLENM)
+    pub PDIHILCLENM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.maze_buff_list)
+    pub maze_buff_list: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.BHEIDPPFCKA)
+    pub BHEIDPPFCKA: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.DJFCKFEMGOJ)
+    pub DJFCKFEMGOJ: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.IPODNBLJPOL)
+    pub IPODNBLJPOL: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.EHPMCGOELGB)
+    pub EHPMCGOELGB: bool,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.HHMABJDIMGM)
+    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.EKFLPNLAPDF)
+    pub EKFLPNLAPDF: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDAPEHEAMBM)
+    pub PDAPEHEAMBM: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.FPOELPFCNBI)
+    pub FPOELPFCNBI: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.CMOGBLHAFHN)
+    pub CMOGBLHAFHN: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.CKKEKMJMABC)
+    pub CKKEKMJMABC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OMOGAIEOFAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,49 +74,24 @@ impl OMOGAIEOFAH {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMOGBLHAFHN",
-            |m: &OMOGAIEOFAH| { &m.CMOGBLHAFHN },
-            |m: &mut OMOGAIEOFAH| { &mut m.CMOGBLHAFHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHPMCGOELGB",
-            |m: &OMOGAIEOFAH| { &m.EHPMCGOELGB },
-            |m: &mut OMOGAIEOFAH| { &mut m.EHPMCGOELGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHEIDPPFCKA",
-            |m: &OMOGAIEOFAH| { &m.BHEIDPPFCKA },
-            |m: &mut OMOGAIEOFAH| { &mut m.BHEIDPPFCKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostList::ItemCostList>(
-            "FPOELPFCNBI",
-            |m: &OMOGAIEOFAH| { &m.FPOELPFCNBI },
-            |m: &mut OMOGAIEOFAH| { &mut m.FPOELPFCNBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LHMIDPAMBPD",
-            |m: &OMOGAIEOFAH| { &m.LHMIDPAMBPD },
-            |m: &mut OMOGAIEOFAH| { &mut m.LHMIDPAMBPD },
+            "IGCHBPAKBCB",
+            |m: &OMOGAIEOFAH| { &m.IGCHBPAKBCB },
+            |m: &mut OMOGAIEOFAH| { &mut m.IGCHBPAKBCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PDIHILCLENM",
             |m: &OMOGAIEOFAH| { &m.PDIHILCLENM },
             |m: &mut OMOGAIEOFAH| { &mut m.PDIHILCLENM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDAPEHEAMBM",
-            |m: &OMOGAIEOFAH| { &m.PDAPEHEAMBM },
-            |m: &mut OMOGAIEOFAH| { &mut m.PDAPEHEAMBM },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "maze_buff_list",
+            |m: &OMOGAIEOFAH| { &m.maze_buff_list },
+            |m: &mut OMOGAIEOFAH| { &mut m.maze_buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPODNBLJPOL",
-            |m: &OMOGAIEOFAH| { &m.IPODNBLJPOL },
-            |m: &mut OMOGAIEOFAH| { &mut m.IPODNBLJPOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKFLPNLAPDF",
-            |m: &OMOGAIEOFAH| { &m.EKFLPNLAPDF },
-            |m: &mut OMOGAIEOFAH| { &mut m.EKFLPNLAPDF },
+            "BHEIDPPFCKA",
+            |m: &OMOGAIEOFAH| { &m.BHEIDPPFCKA },
+            |m: &mut OMOGAIEOFAH| { &mut m.BHEIDPPFCKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DJFCKFEMGOJ",
@@ -124,19 +99,44 @@ impl OMOGAIEOFAH {
             |m: &mut OMOGAIEOFAH| { &mut m.DJFCKFEMGOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPODNBLJPOL",
+            |m: &OMOGAIEOFAH| { &m.IPODNBLJPOL },
+            |m: &mut OMOGAIEOFAH| { &mut m.IPODNBLJPOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EHPMCGOELGB",
+            |m: &OMOGAIEOFAH| { &m.EHPMCGOELGB },
+            |m: &mut OMOGAIEOFAH| { &mut m.EHPMCGOELGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HHMABJDIMGM",
             |m: &OMOGAIEOFAH| { &m.HHMABJDIMGM },
             |m: &mut OMOGAIEOFAH| { &mut m.HHMABJDIMGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EKFLPNLAPDF",
+            |m: &OMOGAIEOFAH| { &m.EKFLPNLAPDF },
+            |m: &mut OMOGAIEOFAH| { &mut m.EKFLPNLAPDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDAPEHEAMBM",
+            |m: &OMOGAIEOFAH| { &m.PDAPEHEAMBM },
+            |m: &mut OMOGAIEOFAH| { &mut m.PDAPEHEAMBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "FPOELPFCNBI",
+            |m: &OMOGAIEOFAH| { &m.FPOELPFCNBI },
+            |m: &mut OMOGAIEOFAH| { &mut m.FPOELPFCNBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMOGBLHAFHN",
+            |m: &OMOGAIEOFAH| { &m.CMOGBLHAFHN },
+            |m: &mut OMOGAIEOFAH| { &mut m.CMOGBLHAFHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CKKEKMJMABC",
             |m: &OMOGAIEOFAH| { &m.CKKEKMJMABC },
             |m: &mut OMOGAIEOFAH| { &mut m.CKKEKMJMABC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGCHBPAKBCB",
-            |m: &OMOGAIEOFAH| { &m.IGCHBPAKBCB },
-            |m: &mut OMOGAIEOFAH| { &mut m.IGCHBPAKBCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMOGAIEOFAH>(
             "OMOGAIEOFAH",
@@ -156,47 +156,47 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.CMOGBLHAFHN = is.read_uint32()?;
+                88 => {
+                    self.IGCHBPAKBCB = is.read_uint32()?;
                 },
-                56 => {
-                    self.EHPMCGOELGB = is.read_bool()?;
-                },
-                16 => {
-                    self.BHEIDPPFCKA = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPOELPFCNBI)?;
-                },
-                66 => {
-                    self.LHMIDPAMBPD.push(is.read_message()?);
-                },
-                114 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.PDIHILCLENM)?;
                 },
-                112 => {
+                72 => {
                     self.PDIHILCLENM.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.PDAPEHEAMBM = is.read_uint32()?;
+                58 => {
+                    self.maze_buff_list.push(is.read_message()?);
                 },
-                48 => {
-                    self.IPODNBLJPOL = is.read_uint32()?;
-                },
-                72 => {
-                    self.EKFLPNLAPDF = is.read_uint32()?;
+                24 => {
+                    self.BHEIDPPFCKA = is.read_uint32()?;
                 },
                 8 => {
                     self.DJFCKFEMGOJ = is.read_uint32()?;
                 },
+                112 => {
+                    self.IPODNBLJPOL = is.read_uint32()?;
+                },
                 32 => {
+                    self.EHPMCGOELGB = is.read_bool()?;
+                },
+                64 => {
                     self.HHMABJDIMGM = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.CKKEKMJMABC = is.read_uint32()?;
+                48 => {
+                    self.EKFLPNLAPDF = is.read_uint32()?;
                 },
-                24 => {
-                    self.IGCHBPAKBCB = is.read_uint32()?;
+                104 => {
+                    self.PDAPEHEAMBM = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPOELPFCNBI)?;
+                },
+                16 => {
+                    self.CMOGBLHAFHN = is.read_uint32()?;
+                },
+                96 => {
+                    self.CKKEKMJMABC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -210,44 +210,44 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CMOGBLHAFHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CMOGBLHAFHN);
+        if self.IGCHBPAKBCB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.IGCHBPAKBCB);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PDIHILCLENM);
+        for value in &self.maze_buff_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.BHEIDPPFCKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BHEIDPPFCKA);
+        }
+        if self.DJFCKFEMGOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DJFCKFEMGOJ);
+        }
+        if self.IPODNBLJPOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.IPODNBLJPOL);
         }
         if self.EHPMCGOELGB != false {
             my_size += 1 + 1;
         }
-        if self.BHEIDPPFCKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BHEIDPPFCKA);
+        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.HHMABJDIMGM.value());
+        }
+        if self.EKFLPNLAPDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EKFLPNLAPDF);
+        }
+        if self.PDAPEHEAMBM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PDAPEHEAMBM);
         }
         if let Some(v) = self.FPOELPFCNBI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.LHMIDPAMBPD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PDIHILCLENM);
-        if self.PDAPEHEAMBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PDAPEHEAMBM);
-        }
-        if self.IPODNBLJPOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IPODNBLJPOL);
-        }
-        if self.EKFLPNLAPDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EKFLPNLAPDF);
-        }
-        if self.DJFCKFEMGOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DJFCKFEMGOJ);
-        }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.HHMABJDIMGM.value());
+        if self.CMOGBLHAFHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CMOGBLHAFHN);
         }
         if self.CKKEKMJMABC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CKKEKMJMABC);
-        }
-        if self.IGCHBPAKBCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IGCHBPAKBCB);
+            my_size += ::protobuf::rt::uint32_size(12, self.CKKEKMJMABC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -255,42 +255,42 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CMOGBLHAFHN != 0 {
-            os.write_uint32(13, self.CMOGBLHAFHN)?;
+        if self.IGCHBPAKBCB != 0 {
+            os.write_uint32(11, self.IGCHBPAKBCB)?;
         }
-        if self.EHPMCGOELGB != false {
-            os.write_bool(7, self.EHPMCGOELGB)?;
-        }
-        if self.BHEIDPPFCKA != 0 {
-            os.write_uint32(2, self.BHEIDPPFCKA)?;
-        }
-        if let Some(v) = self.FPOELPFCNBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        for v in &self.LHMIDPAMBPD {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        os.write_repeated_packed_uint32(9, &self.PDIHILCLENM)?;
+        for v in &self.maze_buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        os.write_repeated_packed_uint32(14, &self.PDIHILCLENM)?;
-        if self.PDAPEHEAMBM != 0 {
-            os.write_uint32(15, self.PDAPEHEAMBM)?;
-        }
-        if self.IPODNBLJPOL != 0 {
-            os.write_uint32(6, self.IPODNBLJPOL)?;
-        }
-        if self.EKFLPNLAPDF != 0 {
-            os.write_uint32(9, self.EKFLPNLAPDF)?;
+        if self.BHEIDPPFCKA != 0 {
+            os.write_uint32(3, self.BHEIDPPFCKA)?;
         }
         if self.DJFCKFEMGOJ != 0 {
             os.write_uint32(1, self.DJFCKFEMGOJ)?;
         }
+        if self.IPODNBLJPOL != 0 {
+            os.write_uint32(14, self.IPODNBLJPOL)?;
+        }
+        if self.EHPMCGOELGB != false {
+            os.write_bool(4, self.EHPMCGOELGB)?;
+        }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+        }
+        if self.EKFLPNLAPDF != 0 {
+            os.write_uint32(6, self.EKFLPNLAPDF)?;
+        }
+        if self.PDAPEHEAMBM != 0 {
+            os.write_uint32(13, self.PDAPEHEAMBM)?;
+        }
+        if let Some(v) = self.FPOELPFCNBI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.CMOGBLHAFHN != 0 {
+            os.write_uint32(2, self.CMOGBLHAFHN)?;
         }
         if self.CKKEKMJMABC != 0 {
-            os.write_uint32(11, self.CKKEKMJMABC)?;
-        }
-        if self.IGCHBPAKBCB != 0 {
-            os.write_uint32(3, self.IGCHBPAKBCB)?;
+            os.write_uint32(12, self.CKKEKMJMABC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -309,37 +309,37 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     }
 
     fn clear(&mut self) {
-        self.CMOGBLHAFHN = 0;
-        self.EHPMCGOELGB = false;
-        self.BHEIDPPFCKA = 0;
-        self.FPOELPFCNBI.clear();
-        self.LHMIDPAMBPD.clear();
-        self.PDIHILCLENM.clear();
-        self.PDAPEHEAMBM = 0;
-        self.IPODNBLJPOL = 0;
-        self.EKFLPNLAPDF = 0;
-        self.DJFCKFEMGOJ = 0;
-        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
-        self.CKKEKMJMABC = 0;
         self.IGCHBPAKBCB = 0;
+        self.PDIHILCLENM.clear();
+        self.maze_buff_list.clear();
+        self.BHEIDPPFCKA = 0;
+        self.DJFCKFEMGOJ = 0;
+        self.IPODNBLJPOL = 0;
+        self.EHPMCGOELGB = false;
+        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
+        self.EKFLPNLAPDF = 0;
+        self.PDAPEHEAMBM = 0;
+        self.FPOELPFCNBI.clear();
+        self.CMOGBLHAFHN = 0;
+        self.CKKEKMJMABC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMOGAIEOFAH {
         static instance: OMOGAIEOFAH = OMOGAIEOFAH {
-            CMOGBLHAFHN: 0,
-            EHPMCGOELGB: false,
-            BHEIDPPFCKA: 0,
-            FPOELPFCNBI: ::protobuf::MessageField::none(),
-            LHMIDPAMBPD: ::std::vec::Vec::new(),
-            PDIHILCLENM: ::std::vec::Vec::new(),
-            PDAPEHEAMBM: 0,
-            IPODNBLJPOL: 0,
-            EKFLPNLAPDF: 0,
-            DJFCKFEMGOJ: 0,
-            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
-            CKKEKMJMABC: 0,
             IGCHBPAKBCB: 0,
+            PDIHILCLENM: ::std::vec::Vec::new(),
+            maze_buff_list: ::std::vec::Vec::new(),
+            BHEIDPPFCKA: 0,
+            DJFCKFEMGOJ: 0,
+            IPODNBLJPOL: 0,
+            EHPMCGOELGB: false,
+            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
+            EKFLPNLAPDF: 0,
+            PDAPEHEAMBM: 0,
+            FPOELPFCNBI: ::protobuf::MessageField::none(),
+            CMOGBLHAFHN: 0,
+            CKKEKMJMABC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -364,20 +364,21 @@ impl ::protobuf::reflect::ProtobufValue for OMOGAIEOFAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OMOGAIEOFAH.proto\x1a\x12ItemCostList.proto\x1a\x11MKEELPFDCLM.pro\
-    to\x1a%RogueCommonBuffSelectSourceType.proto\"\x86\x04\n\x0bOMOGAIEOFAH\
-    \x12\x20\n\x0bCMOGBLHAFHN\x18\r\x20\x01(\rR\x0bCMOGBLHAFHN\x12\x20\n\x0b\
-    EHPMCGOELGB\x18\x07\x20\x01(\x08R\x0bEHPMCGOELGB\x12\x20\n\x0bBHEIDPPFCK\
-    A\x18\x02\x20\x01(\rR\x0bBHEIDPPFCKA\x12/\n\x0bFPOELPFCNBI\x18\n\x20\x01\
-    (\x0b2\r.ItemCostListR\x0bFPOELPFCNBI\x12.\n\x0bLHMIDPAMBPD\x18\x08\x20\
-    \x03(\x0b2\x0c.MKEELPFDCLMR\x0bLHMIDPAMBPD\x12\x20\n\x0bPDIHILCLENM\x18\
-    \x0e\x20\x03(\rR\x0bPDIHILCLENM\x12\x20\n\x0bPDAPEHEAMBM\x18\x0f\x20\x01\
-    (\rR\x0bPDAPEHEAMBM\x12\x20\n\x0bIPODNBLJPOL\x18\x06\x20\x01(\rR\x0bIPOD\
-    NBLJPOL\x12\x20\n\x0bEKFLPNLAPDF\x18\t\x20\x01(\rR\x0bEKFLPNLAPDF\x12\
-    \x20\n\x0bDJFCKFEMGOJ\x18\x01\x20\x01(\rR\x0bDJFCKFEMGOJ\x12B\n\x0bHHMAB\
-    JDIMGM\x18\x04\x20\x01(\x0e2\x20.RogueCommonBuffSelectSourceTypeR\x0bHHM\
-    ABJDIMGM\x12\x20\n\x0bCKKEKMJMABC\x18\x0b\x20\x01(\rR\x0bCKKEKMJMABC\x12\
-    \x20\n\x0bIGCHBPAKBCB\x18\x03\x20\x01(\rR\x0bIGCHBPAKBCBb\x06proto3\
+    \n\x11OMOGAIEOFAH.proto\x1a\x12ItemCostData.proto\x1a\x11MKEELPFDCLM.pro\
+    to\x1a%RogueCommonBuffSelectSourceType.proto\"\x8a\x04\n\x0bOMOGAIEOFAH\
+    \x12\x20\n\x0bIGCHBPAKBCB\x18\x0b\x20\x01(\rR\x0bIGCHBPAKBCB\x12\x20\n\
+    \x0bPDIHILCLENM\x18\t\x20\x03(\rR\x0bPDIHILCLENM\x122\n\x0emaze_buff_lis\
+    t\x18\x07\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0cmazeBuffList\x12\x20\n\x0bBH\
+    EIDPPFCKA\x18\x03\x20\x01(\rR\x0bBHEIDPPFCKA\x12\x20\n\x0bDJFCKFEMGOJ\
+    \x18\x01\x20\x01(\rR\x0bDJFCKFEMGOJ\x12\x20\n\x0bIPODNBLJPOL\x18\x0e\x20\
+    \x01(\rR\x0bIPODNBLJPOL\x12\x20\n\x0bEHPMCGOELGB\x18\x04\x20\x01(\x08R\
+    \x0bEHPMCGOELGB\x12B\n\x0bHHMABJDIMGM\x18\x08\x20\x01(\x0e2\x20.RogueCom\
+    monBuffSelectSourceTypeR\x0bHHMABJDIMGM\x12\x20\n\x0bEKFLPNLAPDF\x18\x06\
+    \x20\x01(\rR\x0bEKFLPNLAPDF\x12\x20\n\x0bPDAPEHEAMBM\x18\r\x20\x01(\rR\
+    \x0bPDAPEHEAMBM\x12/\n\x0bFPOELPFCNBI\x18\n\x20\x01(\x0b2\r.ItemCostData\
+    R\x0bFPOELPFCNBI\x12\x20\n\x0bCMOGBLHAFHN\x18\x02\x20\x01(\rR\x0bCMOGBLH\
+    AFHN\x12\x20\n\x0bCKKEKMJMABC\x18\x0c\x20\x01(\rR\x0bCKKEKMJMABCb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -395,7 +396,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ItemCostList::file_descriptor().clone());
+            deps.push(super::ItemCostData::file_descriptor().clone());
             deps.push(super::MKEELPFDCLM::file_descriptor().clone());
             deps.push(super::RogueCommonBuffSelectSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

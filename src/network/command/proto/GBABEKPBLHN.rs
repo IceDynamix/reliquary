@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GBABEKPBLHN {
     // message fields
+    // @@protoc_insertion_point(field:GBABEKPBLHN.is_valid)
+    pub is_valid: bool,
+    // @@protoc_insertion_point(field:GBABEKPBLHN.confirm)
+    pub confirm: bool,
     // @@protoc_insertion_point(field:GBABEKPBLHN.arg_id)
     pub arg_id: u32,
-    // @@protoc_insertion_point(field:GBABEKPBLHN.KDMLLLGHJON)
-    pub KDMLLLGHJON: u32,
-    // @@protoc_insertion_point(field:GBABEKPBLHN.PIPMGACMJNN)
-    pub PIPMGACMJNN: bool,
     // @@protoc_insertion_point(field:GBABEKPBLHN.POCJCMKKJIK)
     pub POCJCMKKJIK: ::std::vec::Vec<super::HJPGNCNGILG::HJPGNCNGILG>,
+    // @@protoc_insertion_point(field:GBABEKPBLHN.KDMLLLGHJON)
+    pub KDMLLLGHJON: u32,
     // @@protoc_insertion_point(field:GBABEKPBLHN.display_value)
     pub display_value: ::protobuf::MessageField<super::ABENFANELFL::ABENFANELFL>,
-    // @@protoc_insertion_point(field:GBABEKPBLHN.GLDJNHIGGJE)
-    pub GLDJNHIGGJE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GBABEKPBLHN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl GBABEKPBLHN {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_valid",
+            |m: &GBABEKPBLHN| { &m.is_valid },
+            |m: &mut GBABEKPBLHN| { &mut m.is_valid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "confirm",
+            |m: &GBABEKPBLHN| { &m.confirm },
+            |m: &mut GBABEKPBLHN| { &mut m.confirm },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "arg_id",
             |m: &GBABEKPBLHN| { &m.arg_id },
             |m: &mut GBABEKPBLHN| { &mut m.arg_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDMLLLGHJON",
-            |m: &GBABEKPBLHN| { &m.KDMLLLGHJON },
-            |m: &mut GBABEKPBLHN| { &mut m.KDMLLLGHJON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIPMGACMJNN",
-            |m: &GBABEKPBLHN| { &m.PIPMGACMJNN },
-            |m: &mut GBABEKPBLHN| { &mut m.PIPMGACMJNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "POCJCMKKJIK",
             |m: &GBABEKPBLHN| { &m.POCJCMKKJIK },
             |m: &mut GBABEKPBLHN| { &mut m.POCJCMKKJIK },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDMLLLGHJON",
+            |m: &GBABEKPBLHN| { &m.KDMLLLGHJON },
+            |m: &mut GBABEKPBLHN| { &mut m.KDMLLLGHJON },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABENFANELFL::ABENFANELFL>(
             "display_value",
             |m: &GBABEKPBLHN| { &m.display_value },
             |m: &mut GBABEKPBLHN| { &mut m.display_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLDJNHIGGJE",
-            |m: &GBABEKPBLHN| { &m.GLDJNHIGGJE },
-            |m: &mut GBABEKPBLHN| { &mut m.GLDJNHIGGJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GBABEKPBLHN>(
             "GBABEKPBLHN",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GBABEKPBLHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.arg_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.KDMLLLGHJON = is.read_uint32()?;
-                },
-                96 => {
-                    self.PIPMGACMJNN = is.read_bool()?;
-                },
-                66 => {
-                    self.POCJCMKKJIK.push(is.read_message()?);
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
+                112 => {
+                    self.is_valid = is.read_bool()?;
                 },
                 48 => {
-                    self.GLDJNHIGGJE = is.read_bool()?;
+                    self.confirm = is.read_bool()?;
+                },
+                104 => {
+                    self.arg_id = is.read_uint32()?;
+                },
+                58 => {
+                    self.POCJCMKKJIK.push(is.read_message()?);
+                },
+                96 => {
+                    self.KDMLLLGHJON = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for GBABEKPBLHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.arg_id);
-        }
-        if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KDMLLLGHJON);
-        }
-        if self.PIPMGACMJNN != false {
+        if self.is_valid != false {
             my_size += 1 + 1;
+        }
+        if self.confirm != false {
+            my_size += 1 + 1;
+        }
+        if self.arg_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.arg_id);
         }
         for value in &self.POCJCMKKJIK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.KDMLLLGHJON != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KDMLLLGHJON);
+        }
         if let Some(v) = self.display_value.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GLDJNHIGGJE != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for GBABEKPBLHN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_valid != false {
+            os.write_bool(14, self.is_valid)?;
+        }
+        if self.confirm != false {
+            os.write_bool(6, self.confirm)?;
+        }
         if self.arg_id != 0 {
-            os.write_uint32(5, self.arg_id)?;
-        }
-        if self.KDMLLLGHJON != 0 {
-            os.write_uint32(2, self.KDMLLLGHJON)?;
-        }
-        if self.PIPMGACMJNN != false {
-            os.write_bool(12, self.PIPMGACMJNN)?;
+            os.write_uint32(13, self.arg_id)?;
         }
         for v in &self.POCJCMKKJIK {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if let Some(v) = self.display_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.KDMLLLGHJON != 0 {
+            os.write_uint32(12, self.KDMLLLGHJON)?;
         }
-        if self.GLDJNHIGGJE != false {
-            os.write_bool(6, self.GLDJNHIGGJE)?;
+        if let Some(v) = self.display_value.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for GBABEKPBLHN {
     }
 
     fn clear(&mut self) {
+        self.is_valid = false;
+        self.confirm = false;
         self.arg_id = 0;
-        self.KDMLLLGHJON = 0;
-        self.PIPMGACMJNN = false;
         self.POCJCMKKJIK.clear();
+        self.KDMLLLGHJON = 0;
         self.display_value.clear();
-        self.GLDJNHIGGJE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GBABEKPBLHN {
         static instance: GBABEKPBLHN = GBABEKPBLHN {
+            is_valid: false,
+            confirm: false,
             arg_id: 0,
-            KDMLLLGHJON: 0,
-            PIPMGACMJNN: false,
             POCJCMKKJIK: ::std::vec::Vec::new(),
+            KDMLLLGHJON: 0,
             display_value: ::protobuf::MessageField::none(),
-            GLDJNHIGGJE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for GBABEKPBLHN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBABEKPBLHN.proto\x1a\x11ABENFANELFL.proto\x1a\x11HJPGNCNGILG.prot\
-    o\"\xed\x01\n\x0bGBABEKPBLHN\x12\x15\n\x06arg_id\x18\x05\x20\x01(\rR\x05\
-    argId\x12\x20\n\x0bKDMLLLGHJON\x18\x02\x20\x01(\rR\x0bKDMLLLGHJON\x12\
-    \x20\n\x0bPIPMGACMJNN\x18\x0c\x20\x01(\x08R\x0bPIPMGACMJNN\x12.\n\x0bPOC\
-    JCMKKJIK\x18\x08\x20\x03(\x0b2\x0c.HJPGNCNGILGR\x0bPOCJCMKKJIK\x121\n\rd\
-    isplay_value\x18\x0e\x20\x01(\x0b2\x0c.ABENFANELFLR\x0cdisplayValue\x12\
-    \x20\n\x0bGLDJNHIGGJE\x18\x06\x20\x01(\x08R\x0bGLDJNHIGGJEb\x06proto3\
+    o\"\xde\x01\n\x0bGBABEKPBLHN\x12\x19\n\x08is_valid\x18\x0e\x20\x01(\x08R\
+    \x07isValid\x12\x18\n\x07confirm\x18\x06\x20\x01(\x08R\x07confirm\x12\
+    \x15\n\x06arg_id\x18\r\x20\x01(\rR\x05argId\x12.\n\x0bPOCJCMKKJIK\x18\
+    \x07\x20\x03(\x0b2\x0c.HJPGNCNGILGR\x0bPOCJCMKKJIK\x12\x20\n\x0bKDMLLLGH\
+    JON\x18\x0c\x20\x01(\rR\x0bKDMLLLGHJON\x121\n\rdisplay_value\x18\x03\x20\
+    \x01(\x0b2\x0c.ABENFANELFLR\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

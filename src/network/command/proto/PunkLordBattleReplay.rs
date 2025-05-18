@@ -31,7 +31,7 @@ pub struct PunkLordBattleReplay {
     // @@protoc_insertion_point(field:PunkLordBattleReplay.battle_replay_key)
     pub battle_replay_key: ::std::string::String,
     // @@protoc_insertion_point(field:PunkLordBattleReplay.replay_info)
-    pub replay_info: ::protobuf::MessageField<super::BBBNCHOLIKP::BBBNCHOLIKP>,
+    pub replay_info: ::protobuf::MessageField<super::ReplayInfo::ReplayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordBattleReplay.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl PunkLordBattleReplay {
             |m: &PunkLordBattleReplay| { &m.battle_replay_key },
             |m: &mut PunkLordBattleReplay| { &mut m.battle_replay_key },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBBNCHOLIKP::BBBNCHOLIKP>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReplayInfo::ReplayInfo>(
             "replay_info",
             |m: &PunkLordBattleReplay| { &m.replay_info },
             |m: &mut PunkLordBattleReplay| { &mut m.replay_info },
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordBattleReplay {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPunkLordBattleReplay.proto\x1a\x11BBBNCHOLIKP.proto\"q\n\x14PunkLo\
-    rdBattleReplay\x12*\n\x11battle_replay_key\x18\x01\x20\x01(\tR\x0fbattle\
-    ReplayKey\x12-\n\x0breplay_info\x18\x02\x20\x01(\x0b2\x0c.BBBNCHOLIKPR\n\
-    replayInfob\x06proto3\
+    \n\x1aPunkLordBattleReplay.proto\x1a\x10ReplayInfo.proto\"p\n\x14PunkLor\
+    dBattleReplay\x12*\n\x11battle_replay_key\x18\x01\x20\x01(\tR\x0fbattleR\
+    eplayKey\x12,\n\x0breplay_info\x18\x02\x20\x01(\x0b2\x0b.ReplayInfoR\nre\
+    playInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BBBNCHOLIKP::file_descriptor().clone());
+            deps.push(super::ReplayInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PunkLordBattleReplay::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
