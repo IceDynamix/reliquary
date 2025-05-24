@@ -133,8 +133,19 @@ impl GameCommand {
         let header_len = u16::from_be_bytes(bytes[6..8].try_into().unwrap());
         let data_len = u32::from_be_bytes(bytes[8..12].try_into().unwrap());
 
-        let proto_header = bytes[12..12 + header_len as usize].to_vec();
-        let proto_data = bytes[12 + header_len as usize..12 + data_len as usize + header_len as usize].to_vec();
+        let data_start = 12 + header_len as usize;
+        let data_end = data_start + data_len as usize;
+
+        if data_end > bytes.len() {
+            warn!(len = bytes.len(), "game command buffer too short");
+            return Err(GameCommandError::CommandTooShort {
+                expected: data_end,
+                actual: bytes.len(),
+            });
+        }
+
+        let proto_header = bytes[12..data_start].to_vec();
+        let proto_data = bytes[data_start..data_end].to_vec();
 
         Ok(GameCommand {
             command_id,
@@ -169,6 +180,8 @@ impl fmt::Debug for GameCommand {
 pub enum GameCommandError {
     #[error("command header must be at least {expected} bytes, but was {actual}")]
     HeaderTooShort { expected: usize, actual: usize },
+    #[error("command buffer must be at least {expected} bytes, but was {actual}")]
+    CommandTooShort { expected: usize, actual: usize },
     #[error("decryption key is missing for command")]
     DecryptionKeyMissing,
 }
