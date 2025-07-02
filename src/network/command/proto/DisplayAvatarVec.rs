@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DisplayAvatarVec {
     // message fields
-    // @@protoc_insertion_point(field:DisplayAvatarVec.is_display)
-    pub is_display: bool,
     // @@protoc_insertion_point(field:DisplayAvatarVec.display_avatar_list)
     pub display_avatar_list: ::std::vec::Vec<super::DisplayAvatarData::DisplayAvatarData>,
+    // @@protoc_insertion_point(field:DisplayAvatarVec.is_display)
+    pub is_display: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DisplayAvatarVec.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DisplayAvatarVec {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_display",
-            |m: &DisplayAvatarVec| { &m.is_display },
-            |m: &mut DisplayAvatarVec| { &mut m.is_display },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "display_avatar_list",
             |m: &DisplayAvatarVec| { &m.display_avatar_list },
             |m: &mut DisplayAvatarVec| { &mut m.display_avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_display",
+            |m: &DisplayAvatarVec| { &m.is_display },
+            |m: &mut DisplayAvatarVec| { &mut m.is_display },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DisplayAvatarVec>(
             "DisplayAvatarVec",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DisplayAvatarVec {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.is_display = is.read_bool()?;
-                },
-                122 => {
+                58 => {
                     self.display_avatar_list.push(is.read_message()?);
+                },
+                72 => {
+                    self.is_display = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for DisplayAvatarVec {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_display != false {
-            my_size += 1 + 1;
-        }
         for value in &self.display_avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.is_display != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_display != false {
-            os.write_bool(4, self.is_display)?;
-        }
         for v in &self.display_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.is_display != false {
+            os.write_bool(9, self.is_display)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DisplayAvatarVec {
     }
 
     fn clear(&mut self) {
-        self.is_display = false;
         self.display_avatar_list.clear();
+        self.is_display = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DisplayAvatarVec {
         static instance: DisplayAvatarVec = DisplayAvatarVec {
-            is_display: false,
             display_avatar_list: ::std::vec::Vec::new(),
+            is_display: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for DisplayAvatarVec {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DisplayAvatarVec.proto\x1a\x17DisplayAvatarData.proto\"u\n\x10Disp\
-    layAvatarVec\x12\x1d\n\nis_display\x18\x04\x20\x01(\x08R\tisDisplay\x12B\
-    \n\x13display_avatar_list\x18\x0f\x20\x03(\x0b2\x12.DisplayAvatarDataR\
-    \x11displayAvatarListb\x06proto3\
+    layAvatarVec\x12B\n\x13display_avatar_list\x18\x07\x20\x03(\x0b2\x12.Dis\
+    playAvatarDataR\x11displayAvatarList\x12\x1d\n\nis_display\x18\t\x20\x01\
+    (\x08R\tisDisplayb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyGamePlayStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.GONEAKBDGEK)
-    pub GONEAKBDGEK: u32,
     // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.passenger_data_list)
     pub passenger_data_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyGamePlayStartCsReq.GONEAKBDGEK)
+    pub GONEAKBDGEK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyGamePlayStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TrainPartyGamePlayStartCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GONEAKBDGEK",
-            |m: &TrainPartyGamePlayStartCsReq| { &m.GONEAKBDGEK },
-            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.GONEAKBDGEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "passenger_data_list",
             |m: &TrainPartyGamePlayStartCsReq| { &m.passenger_data_list },
             |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.passenger_data_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GONEAKBDGEK",
+            |m: &TrainPartyGamePlayStartCsReq| { &m.GONEAKBDGEK },
+            |m: &mut TrainPartyGamePlayStartCsReq| { &mut m.GONEAKBDGEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyGamePlayStartCsReq>(
             "TrainPartyGamePlayStartCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GONEAKBDGEK = is.read_uint32()?;
-                },
-                106 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.passenger_data_list)?;
                 },
-                104 => {
+                24 => {
                     self.passenger_data_list.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.GONEAKBDGEK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.passenger_data_list);
         if self.GONEAKBDGEK != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.GONEAKBDGEK);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.passenger_data_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.passenger_data_list)?;
         if self.GONEAKBDGEK != 0 {
             os.write_uint32(4, self.GONEAKBDGEK)?;
         }
-        os.write_repeated_packed_uint32(13, &self.passenger_data_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for TrainPartyGamePlayStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.GONEAKBDGEK = 0;
         self.passenger_data_list.clear();
+        self.GONEAKBDGEK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyGamePlayStartCsReq {
         static instance: TrainPartyGamePlayStartCsReq = TrainPartyGamePlayStartCsReq {
-            GONEAKBDGEK: 0,
             passenger_data_list: ::std::vec::Vec::new(),
+            GONEAKBDGEK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlayStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TrainPartyGamePlayStartCsReq.proto\"p\n\x1cTrainPartyGamePlayStartCs\
-    Req\x12\x20\n\x0bGONEAKBDGEK\x18\x04\x20\x01(\rR\x0bGONEAKBDGEK\x12.\n\
-    \x13passenger_data_list\x18\r\x20\x03(\rR\x11passengerDataListb\x06proto\
+    Req\x12.\n\x13passenger_data_list\x18\x03\x20\x03(\rR\x11passengerDataLi\
+    st\x12\x20\n\x0bGONEAKBDGEK\x18\x04\x20\x01(\rR\x0bGONEAKBDGEKb\x06proto\
     3\
 ";
 

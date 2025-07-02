@@ -79,10 +79,10 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.DIPHGGHFMCP = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DIPHGGHFMCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DIPHGGHFMCP);
+            my_size += ::protobuf::rt::uint32_size(5, self.DIPHGGHFMCP);
         }
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(14, self.CPODEJOFPDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DIPHGGHFMCP != 0 {
-            os.write_uint32(10, self.DIPHGGHFMCP)?;
+            os.write_uint32(5, self.DIPHGGHFMCP)?;
         }
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(6, self.CPODEJOFPDD)?;
+            os.write_uint32(14, self.CPODEJOFPDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSelectMessageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TravelBrochureSelectMessageCsReq.proto\"f\n\x20TravelBrochureSelectMe\
-    ssageCsReq\x12\x20\n\x0bDIPHGGHFMCP\x18\n\x20\x01(\rR\x0bDIPHGGHFMCP\x12\
-    \x20\n\x0bCPODEJOFPDD\x18\x06\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
+    ssageCsReq\x12\x20\n\x0bDIPHGGHFMCP\x18\x05\x20\x01(\rR\x0bDIPHGGHFMCP\
+    \x12\x20\n\x0bCPODEJOFPDD\x18\x0e\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

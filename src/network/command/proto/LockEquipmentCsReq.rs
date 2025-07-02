@@ -85,7 +85,7 @@ impl ::protobuf::Message for LockEquipmentCsReq {
                 16 => {
                     self.equipment_id_list.push(is.read_uint32()?);
                 },
-                32 => {
+                8 => {
                     self.is_protected = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(2, &self.equipment_id_list)?;
         if self.is_protected != false {
-            os.write_bool(4, self.is_protected)?;
+            os.write_bool(1, self.is_protected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LockEquipmentCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LockEquipmentCsReq.proto\"c\n\x12LockEquipmentCsReq\x12*\n\x11equi\
     pment_id_list\x18\x02\x20\x03(\rR\x0fequipmentIdList\x12!\n\x0cis_protec\
-    ted\x18\x04\x20\x01(\x08R\x0bisProtectedb\x06proto3\
+    ted\x18\x01\x20\x01(\x08R\x0bisProtectedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

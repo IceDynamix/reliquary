@@ -82,7 +82,7 @@ impl ::protobuf::Message for CCNANLCODDF {
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                26 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBHMGCHKJGO)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for CCNANLCODDF {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for CCNANLCODDF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCNANLCODDF.proto\x1a\x11HMBANCKGBII.proto\x1a\x11OIDFFLEEALL.prot\
     o\"c\n\x0bCCNANLCODDF\x12$\n\x06source\x18\t\x20\x01(\x0b2\x0c.OIDFFLEEA\
-    LLR\x06source\x12.\n\x0bPBHMGCHKJGO\x18\x03\x20\x01(\x0b2\x0c.HMBANCKGBI\
+    LLR\x06source\x12.\n\x0bPBHMGCHKJGO\x18\x07\x20\x01(\x0b2\x0c.HMBANCKGBI\
     IR\x0bPBHMGCHKJGOb\x06proto3\
 ";
 

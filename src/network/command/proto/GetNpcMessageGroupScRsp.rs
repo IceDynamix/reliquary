@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetNpcMessageGroupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                106 => {
                     self.message_group_list.push(is.read_message()?);
                 },
-                24 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetNpcMessageGroupScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetNpcMessageGroupScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.message_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetNpcMessageGroupScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetNpcMessageGroupScRsp.proto\x1a\x12MessageGroup.proto\"p\n\x17Ge\
-    tNpcMessageGroupScRsp\x12;\n\x12message_group_list\x18\x02\x20\x03(\x0b2\
-    \r.MessageGroupR\x10messageGroupList\x12\x18\n\x07retcode\x18\x03\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    tNpcMessageGroupScRsp\x12;\n\x12message_group_list\x18\r\x20\x03(\x0b2\r\
+    .MessageGroupR\x10messageGroupList\x12\x18\n\x07retcode\x18\x01\x20\x01(\
+    \rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,38 +29,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdChimeraType {
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraTypeNone)
     CmdChimeraTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraQuitEndlessCsReq)
-    CmdChimeraQuitEndlessCsReq = 8165,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraRoundWorkStartScRsp)
-    CmdChimeraRoundWorkStartScRsp = 8166,
+    CmdChimeraRoundWorkStartScRsp = 8161,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraDoFinalRoundCsReq)
-    CmdChimeraDoFinalRoundCsReq = 8171,
+    CmdChimeraDoFinalRoundCsReq = 8173,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraSetLineupScRsp)
-    CmdChimeraSetLineupScRsp = 8170,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishEndlessRoundScRsp)
-    CmdChimeraFinishEndlessRoundScRsp = 8163,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishRoundScRsp)
-    CmdChimeraFinishRoundScRsp = 8162,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishEndlessRoundCsReq)
-    CmdChimeraFinishEndlessRoundCsReq = 8167,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraStartEndlessScRsp)
-    CmdChimeraStartEndlessScRsp = 8169,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraRoundWorkStartCsReq)
-    CmdChimeraRoundWorkStartCsReq = 8172,
+    CmdChimeraSetLineupScRsp = 8176,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraGetDataCsReq)
-    CmdChimeraGetDataCsReq = 8174,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraQuitEndlessScRsp)
-    CmdChimeraQuitEndlessScRsp = 8161,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraDoFinalRoundScRsp)
-    CmdChimeraDoFinalRoundScRsp = 8179,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraGetDataScRsp)
-    CmdChimeraGetDataScRsp = 8173,
-    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishRoundCsReq)
-    CmdChimeraFinishRoundCsReq = 8164,
+    CmdChimeraGetDataCsReq = 8178,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishEndlessRoundCsReq)
+    CmdChimeraFinishEndlessRoundCsReq = 8174,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraSetLineupCsReq)
-    CmdChimeraSetLineupCsReq = 8168,
+    CmdChimeraSetLineupCsReq = 8170,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraQuitEndlessScRsp)
+    CmdChimeraQuitEndlessScRsp = 8166,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraRoundWorkStartCsReq)
+    CmdChimeraRoundWorkStartCsReq = 8162,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraStartEndlessScRsp)
+    CmdChimeraStartEndlessScRsp = 8163,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishRoundScRsp)
+    CmdChimeraFinishRoundScRsp = 8171,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishEndlessRoundScRsp)
+    CmdChimeraFinishEndlessRoundScRsp = 8179,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraDoFinalRoundScRsp)
+    CmdChimeraDoFinalRoundScRsp = 8175,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraGetDataScRsp)
+    CmdChimeraGetDataScRsp = 8169,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraQuitEndlessCsReq)
+    CmdChimeraQuitEndlessCsReq = 8172,
+    // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraFinishRoundCsReq)
+    CmdChimeraFinishRoundCsReq = 8167,
     // @@protoc_insertion_point(enum_value:CmdChimeraType.CmdChimeraStartEndlessCsReq)
-    CmdChimeraStartEndlessCsReq = 8180,
+    CmdChimeraStartEndlessCsReq = 8165,
 }
 
 impl ::protobuf::Enum for CmdChimeraType {
@@ -73,22 +73,22 @@ impl ::protobuf::Enum for CmdChimeraType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChimeraType> {
         match value {
             0 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraTypeNone),
-            8165 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessCsReq),
-            8166 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartScRsp),
-            8171 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundCsReq),
-            8170 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupScRsp),
-            8163 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp),
-            8162 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundScRsp),
-            8167 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq),
-            8169 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessScRsp),
-            8172 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartCsReq),
-            8174 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataCsReq),
-            8161 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessScRsp),
-            8179 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundScRsp),
-            8173 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataScRsp),
-            8164 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundCsReq),
-            8168 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupCsReq),
-            8180 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessCsReq),
+            8161 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartScRsp),
+            8173 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundCsReq),
+            8176 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupScRsp),
+            8178 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataCsReq),
+            8174 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq),
+            8170 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupCsReq),
+            8166 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessScRsp),
+            8162 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartCsReq),
+            8163 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessScRsp),
+            8171 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundScRsp),
+            8179 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp),
+            8175 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundScRsp),
+            8169 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataScRsp),
+            8172 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessCsReq),
+            8167 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundCsReq),
+            8165 => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -96,21 +96,21 @@ impl ::protobuf::Enum for CmdChimeraType {
     fn from_str(str: &str) -> ::std::option::Option<CmdChimeraType> {
         match str {
             "CmdChimeraTypeNone" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraTypeNone),
-            "CmdChimeraQuitEndlessCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessCsReq),
             "CmdChimeraRoundWorkStartScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartScRsp),
             "CmdChimeraDoFinalRoundCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundCsReq),
             "CmdChimeraSetLineupScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupScRsp),
-            "CmdChimeraFinishEndlessRoundScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp),
-            "CmdChimeraFinishRoundScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundScRsp),
-            "CmdChimeraFinishEndlessRoundCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq),
-            "CmdChimeraStartEndlessScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessScRsp),
-            "CmdChimeraRoundWorkStartCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartCsReq),
             "CmdChimeraGetDataCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataCsReq),
+            "CmdChimeraFinishEndlessRoundCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq),
+            "CmdChimeraSetLineupCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupCsReq),
             "CmdChimeraQuitEndlessScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessScRsp),
+            "CmdChimeraRoundWorkStartCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraRoundWorkStartCsReq),
+            "CmdChimeraStartEndlessScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessScRsp),
+            "CmdChimeraFinishRoundScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundScRsp),
+            "CmdChimeraFinishEndlessRoundScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp),
             "CmdChimeraDoFinalRoundScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraDoFinalRoundScRsp),
             "CmdChimeraGetDataScRsp" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraGetDataScRsp),
+            "CmdChimeraQuitEndlessCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraQuitEndlessCsReq),
             "CmdChimeraFinishRoundCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraFinishRoundCsReq),
-            "CmdChimeraSetLineupCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraSetLineupCsReq),
             "CmdChimeraStartEndlessCsReq" => ::std::option::Option::Some(CmdChimeraType::CmdChimeraStartEndlessCsReq),
             _ => ::std::option::Option::None
         }
@@ -118,21 +118,21 @@ impl ::protobuf::Enum for CmdChimeraType {
 
     const VALUES: &'static [CmdChimeraType] = &[
         CmdChimeraType::CmdChimeraTypeNone,
-        CmdChimeraType::CmdChimeraQuitEndlessCsReq,
         CmdChimeraType::CmdChimeraRoundWorkStartScRsp,
         CmdChimeraType::CmdChimeraDoFinalRoundCsReq,
         CmdChimeraType::CmdChimeraSetLineupScRsp,
-        CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp,
-        CmdChimeraType::CmdChimeraFinishRoundScRsp,
-        CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq,
-        CmdChimeraType::CmdChimeraStartEndlessScRsp,
-        CmdChimeraType::CmdChimeraRoundWorkStartCsReq,
         CmdChimeraType::CmdChimeraGetDataCsReq,
+        CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq,
+        CmdChimeraType::CmdChimeraSetLineupCsReq,
         CmdChimeraType::CmdChimeraQuitEndlessScRsp,
+        CmdChimeraType::CmdChimeraRoundWorkStartCsReq,
+        CmdChimeraType::CmdChimeraStartEndlessScRsp,
+        CmdChimeraType::CmdChimeraFinishRoundScRsp,
+        CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp,
         CmdChimeraType::CmdChimeraDoFinalRoundScRsp,
         CmdChimeraType::CmdChimeraGetDataScRsp,
+        CmdChimeraType::CmdChimeraQuitEndlessCsReq,
         CmdChimeraType::CmdChimeraFinishRoundCsReq,
-        CmdChimeraType::CmdChimeraSetLineupCsReq,
         CmdChimeraType::CmdChimeraStartEndlessCsReq,
     ];
 }
@@ -146,21 +146,21 @@ impl ::protobuf::EnumFull for CmdChimeraType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdChimeraType::CmdChimeraTypeNone => 0,
-            CmdChimeraType::CmdChimeraQuitEndlessCsReq => 1,
-            CmdChimeraType::CmdChimeraRoundWorkStartScRsp => 2,
-            CmdChimeraType::CmdChimeraDoFinalRoundCsReq => 3,
-            CmdChimeraType::CmdChimeraSetLineupScRsp => 4,
-            CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp => 5,
-            CmdChimeraType::CmdChimeraFinishRoundScRsp => 6,
-            CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq => 7,
-            CmdChimeraType::CmdChimeraStartEndlessScRsp => 8,
-            CmdChimeraType::CmdChimeraRoundWorkStartCsReq => 9,
-            CmdChimeraType::CmdChimeraGetDataCsReq => 10,
-            CmdChimeraType::CmdChimeraQuitEndlessScRsp => 11,
+            CmdChimeraType::CmdChimeraRoundWorkStartScRsp => 1,
+            CmdChimeraType::CmdChimeraDoFinalRoundCsReq => 2,
+            CmdChimeraType::CmdChimeraSetLineupScRsp => 3,
+            CmdChimeraType::CmdChimeraGetDataCsReq => 4,
+            CmdChimeraType::CmdChimeraFinishEndlessRoundCsReq => 5,
+            CmdChimeraType::CmdChimeraSetLineupCsReq => 6,
+            CmdChimeraType::CmdChimeraQuitEndlessScRsp => 7,
+            CmdChimeraType::CmdChimeraRoundWorkStartCsReq => 8,
+            CmdChimeraType::CmdChimeraStartEndlessScRsp => 9,
+            CmdChimeraType::CmdChimeraFinishRoundScRsp => 10,
+            CmdChimeraType::CmdChimeraFinishEndlessRoundScRsp => 11,
             CmdChimeraType::CmdChimeraDoFinalRoundScRsp => 12,
             CmdChimeraType::CmdChimeraGetDataScRsp => 13,
-            CmdChimeraType::CmdChimeraFinishRoundCsReq => 14,
-            CmdChimeraType::CmdChimeraSetLineupCsReq => 15,
+            CmdChimeraType::CmdChimeraQuitEndlessCsReq => 14,
+            CmdChimeraType::CmdChimeraFinishRoundCsReq => 15,
             CmdChimeraType::CmdChimeraStartEndlessCsReq => 16,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -181,18 +181,18 @@ impl CmdChimeraType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdChimeraType.proto*\xc4\x04\n\x0eCmdChimeraType\x12\x16\n\x12Cmd\
-    ChimeraTypeNone\x10\0\x12\x1f\n\x1aCmdChimeraQuitEndlessCsReq\x10\xe5?\
-    \x12\"\n\x1dCmdChimeraRoundWorkStartScRsp\x10\xe6?\x12\x20\n\x1bCmdChime\
-    raDoFinalRoundCsReq\x10\xeb?\x12\x1d\n\x18CmdChimeraSetLineupScRsp\x10\
-    \xea?\x12&\n!CmdChimeraFinishEndlessRoundScRsp\x10\xe3?\x12\x1f\n\x1aCmd\
-    ChimeraFinishRoundScRsp\x10\xe2?\x12&\n!CmdChimeraFinishEndlessRoundCsRe\
-    q\x10\xe7?\x12\x20\n\x1bCmdChimeraStartEndlessScRsp\x10\xe9?\x12\"\n\x1d\
-    CmdChimeraRoundWorkStartCsReq\x10\xec?\x12\x1b\n\x16CmdChimeraGetDataCsR\
-    eq\x10\xee?\x12\x1f\n\x1aCmdChimeraQuitEndlessScRsp\x10\xe1?\x12\x20\n\
-    \x1bCmdChimeraDoFinalRoundScRsp\x10\xf3?\x12\x1b\n\x16CmdChimeraGetDataS\
-    cRsp\x10\xed?\x12\x1f\n\x1aCmdChimeraFinishRoundCsReq\x10\xe4?\x12\x1d\n\
-    \x18CmdChimeraSetLineupCsReq\x10\xe8?\x12\x20\n\x1bCmdChimeraStartEndles\
-    sCsReq\x10\xf4?b\x06proto3\
+    ChimeraTypeNone\x10\0\x12\"\n\x1dCmdChimeraRoundWorkStartScRsp\x10\xe1?\
+    \x12\x20\n\x1bCmdChimeraDoFinalRoundCsReq\x10\xed?\x12\x1d\n\x18CmdChime\
+    raSetLineupScRsp\x10\xf0?\x12\x1b\n\x16CmdChimeraGetDataCsReq\x10\xf2?\
+    \x12&\n!CmdChimeraFinishEndlessRoundCsReq\x10\xee?\x12\x1d\n\x18CmdChime\
+    raSetLineupCsReq\x10\xea?\x12\x1f\n\x1aCmdChimeraQuitEndlessScRsp\x10\
+    \xe6?\x12\"\n\x1dCmdChimeraRoundWorkStartCsReq\x10\xe2?\x12\x20\n\x1bCmd\
+    ChimeraStartEndlessScRsp\x10\xe3?\x12\x1f\n\x1aCmdChimeraFinishRoundScRs\
+    p\x10\xeb?\x12&\n!CmdChimeraFinishEndlessRoundScRsp\x10\xf3?\x12\x20\n\
+    \x1bCmdChimeraDoFinalRoundScRsp\x10\xef?\x12\x1b\n\x16CmdChimeraGetDataS\
+    cRsp\x10\xe9?\x12\x1f\n\x1aCmdChimeraQuitEndlessCsReq\x10\xec?\x12\x1f\n\
+    \x1aCmdChimeraFinishRoundCsReq\x10\xe7?\x12\x20\n\x1bCmdChimeraStartEndl\
+    essCsReq\x10\xe5?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

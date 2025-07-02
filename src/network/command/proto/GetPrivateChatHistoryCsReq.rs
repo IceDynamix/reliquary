@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
                 48 => {
                     self.contact_side = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.target_side = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
             my_size += ::protobuf::rt::uint32_size(6, self.contact_side);
         }
         if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.target_side);
+            my_size += ::protobuf::rt::uint32_size(3, self.target_side);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
             os.write_uint32(6, self.contact_side)?;
         }
         if self.target_side != 0 {
-            os.write_uint32(4, self.target_side)?;
+            os.write_uint32(3, self.target_side)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPrivateChatHistoryCsReq.proto\"`\n\x1aGetPrivateChatHistoryCsRe\
     q\x12!\n\x0ccontact_side\x18\x06\x20\x01(\rR\x0bcontactSide\x12\x1f\n\
-    \x0btarget_side\x18\x04\x20\x01(\rR\ntargetSideb\x06proto3\
+    \x0btarget_side\x18\x03\x20\x01(\rR\ntargetSideb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

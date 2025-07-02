@@ -141,6 +141,8 @@ pub enum VirtualItemType {
     VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN = 281027,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP)
     VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP = 281028,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.VIRTUAL_ITEM_MATCHTHREE_V2_COIN)
+    VIRTUAL_ITEM_MATCHTHREE_V2_COIN = 281029,
 }
 
 impl ::protobuf::Enum for VirtualItemType {
@@ -209,6 +211,7 @@ impl ::protobuf::Enum for VirtualItemType {
             281026 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN),
             281027 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN),
             281028 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP),
+            281029 => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN),
             _ => ::std::option::Option::None
         }
     }
@@ -272,6 +275,7 @@ impl ::protobuf::Enum for VirtualItemType {
             "VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN),
             "VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN),
             "VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP),
+            "VIRTUAL_ITEM_MATCHTHREE_V2_COIN" => ::std::option::Option::Some(VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN),
             _ => ::std::option::Option::None
         }
     }
@@ -334,6 +338,7 @@ impl ::protobuf::Enum for VirtualItemType {
         VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN,
         VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN,
         VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP,
+        VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN,
     ];
 }
 
@@ -402,6 +407,7 @@ impl ::protobuf::EnumFull for VirtualItemType {
             VirtualItemType::VIRTUAL_ITEM_ROGUE_MAGIC_TALENT_COIN => 54,
             VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN => 55,
             VirtualItemType::VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP => 56,
+            VirtualItemType::VIRTUAL_ITEM_MATCHTHREE_V2_COIN => 57,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -420,7 +426,7 @@ impl VirtualItemType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15VirtualItemType.proto*\xd9\x0f\n\x0fVirtualItemType\x12\x15\n\x11V\
+    \n\x15VirtualItemType.proto*\x80\x10\n\x0fVirtualItemType\x12\x15\n\x11V\
     IRTUAL_ITEM_NONE\x10\0\x12\x16\n\x12VIRTUAL_ITEM_HCOIN\x10\x01\x12\x16\n\
     \x12VIRTUAL_ITEM_SCOIN\x10\x02\x12\x16\n\x12VIRTUAL_ITEM_MCOIN\x10\x03\
     \x12\x18\n\x14VIRTUAL_ITEM_STAMINA\x10\x0b\x12\x20\n\x1cVIRTUAL_ITEM_RES\
@@ -462,7 +468,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     IRTUAL_ITEM_FIGHT_FEST_COIN\x10\xc1\x93\x11\x12*\n$VIRTUAL_ITEM_ROGUE_MA\
     GIC_TALENT_COIN\x10\xc2\x93\x11\x12'\n!VIRTUAL_ITEM_EVOLVE_BUILD_SC_COIN\
     \x10\xc3\x93\x11\x12*\n$VIRTUAL_ITEM_EVOLVE_BUILD_REWARD_EXP\x10\xc4\x93\
-    \x11b\x06proto3\
+    \x11\x12%\n\x1fVIRTUAL_ITEM_MATCHTHREE_V2_COIN\x10\xc5\x93\x11b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

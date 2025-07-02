@@ -79,10 +79,10 @@ impl ::protobuf::Message for LogisticsGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                42 => {
                     self.APMCPHFMAEG.push(is.read_message()?);
                 },
-                16 => {
+                112 => {
                     self.BOBLNBJMKCA = is.read_bool()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LogisticsGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.APMCPHFMAEG {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.BOBLNBJMKCA != false {
-            os.write_bool(2, self.BOBLNBJMKCA)?;
+            os.write_bool(14, self.BOBLNBJMKCA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LogisticsGameCsReq.proto\x1a\x11NJAOIGGMEAL.proto\"f\n\x12Logistic\
-    sGameCsReq\x12.\n\x0bAPMCPHFMAEG\x18\x0c\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
-    \x0bAPMCPHFMAEG\x12\x20\n\x0bBOBLNBJMKCA\x18\x02\x20\x01(\x08R\x0bBOBLNB\
+    sGameCsReq\x12.\n\x0bAPMCPHFMAEG\x18\x05\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
+    \x0bAPMCPHFMAEG\x12\x20\n\x0bBOBLNBJMKCA\x18\x0e\x20\x01(\x08R\x0bBOBLNB\
     JMKCAb\x06proto3\
 ";
 

@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.client_res_version = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.client_res_version);
+            my_size += ::protobuf::rt::uint32_size(9, self.client_res_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_res_version != 0 {
-            os.write_uint32(10, self.client_res_version)?;
+            os.write_uint32(9, self.client_res_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncClientResVersionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSyncClientResVersionCsReq.proto\"I\n\x19SyncClientResVersionCsReq\
-    \x12,\n\x12client_res_version\x18\n\x20\x01(\rR\x10clientResVersionb\x06\
+    \x12,\n\x12client_res_version\x18\t\x20\x01(\rR\x10clientResVersionb\x06\
     proto3\
 ";
 

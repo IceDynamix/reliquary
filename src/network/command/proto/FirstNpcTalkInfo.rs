@@ -82,7 +82,7 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
                 40 => {
                     self.npc_id = is.read_uint32()?;
                 },
-                32 => {
+                8 => {
                     self.is_meet = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
             os.write_uint32(5, self.npc_id)?;
         }
         if self.is_meet != false {
-            os.write_bool(4, self.is_meet)?;
+            os.write_bool(1, self.is_meet)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FirstNpcTalkInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16FirstNpcTalkInfo.proto\"B\n\x10FirstNpcTalkInfo\x12\x15\n\x06npc_i\
-    d\x18\x05\x20\x01(\rR\x05npcId\x12\x17\n\x07is_meet\x18\x04\x20\x01(\x08\
+    d\x18\x05\x20\x01(\rR\x05npcId\x12\x17\n\x07is_meet\x18\x01\x20\x01(\x08\
     R\x06isMeetb\x06proto3\
 ";
 

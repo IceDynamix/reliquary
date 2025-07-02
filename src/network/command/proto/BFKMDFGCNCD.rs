@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFKMDFGCNCD {
     // message fields
-    // @@protoc_insertion_point(field:BFKMDFGCNCD.begin_time)
-    pub begin_time: i64,
     // @@protoc_insertion_point(field:BFKMDFGCNCD.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:BFKMDFGCNCD.begin_time)
+    pub begin_time: i64,
     // @@protoc_insertion_point(field:BFKMDFGCNCD.AHANJLEHCGA)
     pub AHANJLEHCGA: u32,
     // special fields
@@ -54,14 +54,14 @@ impl BFKMDFGCNCD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &BFKMDFGCNCD| { &m.begin_time },
-            |m: &mut BFKMDFGCNCD| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
             |m: &BFKMDFGCNCD| { &m.end_time },
             |m: &mut BFKMDFGCNCD| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &BFKMDFGCNCD| { &m.begin_time },
+            |m: &mut BFKMDFGCNCD| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHANJLEHCGA",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.begin_time = is.read_int64()?;
-                },
-                24 => {
+                72 => {
                     self.end_time = is.read_int64()?;
                 },
-                72 => {
+                96 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                32 => {
                     self.AHANJLEHCGA = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.begin_time);
-        }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.end_time);
+            my_size += ::protobuf::rt::int64_size(9, self.end_time);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.begin_time);
         }
         if self.AHANJLEHCGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AHANJLEHCGA);
+            my_size += ::protobuf::rt::uint32_size(4, self.AHANJLEHCGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.begin_time != 0 {
-            os.write_int64(15, self.begin_time)?;
-        }
         if self.end_time != 0 {
-            os.write_int64(3, self.end_time)?;
+            os.write_int64(9, self.end_time)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(12, self.begin_time)?;
         }
         if self.AHANJLEHCGA != 0 {
-            os.write_uint32(9, self.AHANJLEHCGA)?;
+            os.write_uint32(4, self.AHANJLEHCGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for BFKMDFGCNCD {
     }
 
     fn clear(&mut self) {
-        self.begin_time = 0;
         self.end_time = 0;
+        self.begin_time = 0;
         self.AHANJLEHCGA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFKMDFGCNCD {
         static instance: BFKMDFGCNCD = BFKMDFGCNCD {
-            begin_time: 0,
             end_time: 0,
+            begin_time: 0,
             AHANJLEHCGA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BFKMDFGCNCD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BFKMDFGCNCD.proto\"i\n\x0bBFKMDFGCNCD\x12\x1d\n\nbegin_time\x18\
-    \x0f\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x03\x20\x01(\x03\
-    R\x07endTime\x12\x20\n\x0bAHANJLEHCGA\x18\t\x20\x01(\rR\x0bAHANJLEHCGAb\
+    \n\x11BFKMDFGCNCD.proto\"i\n\x0bBFKMDFGCNCD\x12\x19\n\x08end_time\x18\t\
+    \x20\x01(\x03R\x07endTime\x12\x1d\n\nbegin_time\x18\x0c\x20\x01(\x03R\tb\
+    eginTime\x12\x20\n\x0bAHANJLEHCGA\x18\x04\x20\x01(\rR\x0bAHANJLEHCGAb\
     \x06proto3\
 ";
 

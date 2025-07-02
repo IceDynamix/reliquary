@@ -86,13 +86,13 @@ impl ::protobuf::Message for HPGAGBGJLID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
                     self.item_id = is.read_uint32()?;
                 },
-                120 => {
+                24 => {
                     self.OGJOFMCMFPG = is.read_uint32()?;
                 },
-                80 => {
+                32 => {
                     self.BMALPKEKBEL = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HPGAGBGJLID {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
         }
         if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OGJOFMCMFPG);
+            my_size += ::protobuf::rt::uint32_size(3, self.OGJOFMCMFPG);
         }
         if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BMALPKEKBEL);
+            my_size += ::protobuf::rt::uint32_size(4, self.BMALPKEKBEL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HPGAGBGJLID {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(6, self.item_id)?;
+            os.write_uint32(7, self.item_id)?;
         }
         if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(15, self.OGJOFMCMFPG)?;
+            os.write_uint32(3, self.OGJOFMCMFPG)?;
         }
         if self.BMALPKEKBEL != 0 {
-            os.write_uint32(10, self.BMALPKEKBEL)?;
+            os.write_uint32(4, self.BMALPKEKBEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for HPGAGBGJLID {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HPGAGBGJLID.proto\"j\n\x0bHPGAGBGJLID\x12\x17\n\x07item_id\x18\x06\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bOGJOFMCMFPG\x18\x0f\x20\x01(\rR\x0bO\
-    GJOFMCMFPG\x12\x20\n\x0bBMALPKEKBEL\x18\n\x20\x01(\rR\x0bBMALPKEKBELb\
+    \n\x11HPGAGBGJLID.proto\"j\n\x0bHPGAGBGJLID\x12\x17\n\x07item_id\x18\x07\
+    \x20\x01(\rR\x06itemId\x12\x20\n\x0bOGJOFMCMFPG\x18\x03\x20\x01(\rR\x0bO\
+    GJOFMCMFPG\x12\x20\n\x0bBMALPKEKBEL\x18\x04\x20\x01(\rR\x0bBMALPKEKBELb\
     \x06proto3\
 ";
 

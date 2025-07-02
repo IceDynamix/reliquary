@@ -79,10 +79,10 @@ impl ::protobuf::Message for IMGJIEBFGPF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.NECILJOJGAN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IMGJIEBFGPF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.NECILJOJGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NECILJOJGAN);
+            my_size += ::protobuf::rt::uint32_size(14, self.NECILJOJGAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IMGJIEBFGPF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(9, self.level)?;
         }
         if self.NECILJOJGAN != 0 {
-            os.write_uint32(6, self.NECILJOJGAN)?;
+            os.write_uint32(14, self.NECILJOJGAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for IMGJIEBFGPF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IMGJIEBFGPF.proto\"E\n\x0bIMGJIEBFGPF\x12\x14\n\x05level\x18\n\x20\
-    \x01(\rR\x05level\x12\x20\n\x0bNECILJOJGAN\x18\x06\x20\x01(\rR\x0bNECILJ\
+    \n\x11IMGJIEBFGPF.proto\"E\n\x0bIMGJIEBFGPF\x12\x14\n\x05level\x18\t\x20\
+    \x01(\rR\x05level\x12\x20\n\x0bNECILJOJGAN\x18\x0e\x20\x01(\rR\x0bNECILJ\
     OJGANb\x06proto3\
 ";
 

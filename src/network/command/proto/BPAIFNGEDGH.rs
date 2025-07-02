@@ -30,12 +30,12 @@ pub struct BPAIFNGEDGH {
     // message fields
     // @@protoc_insertion_point(field:BPAIFNGEDGH.layer_id)
     pub layer_id: u32,
+    // @@protoc_insertion_point(field:BPAIFNGEDGH.OGLDNEFKNDO)
+    pub OGLDNEFKNDO: u32,
     // @@protoc_insertion_point(field:BPAIFNGEDGH.status)
     pub status: ::protobuf::EnumOrUnknown<super::JLCBBKKGOEJ::JLCBBKKGOEJ>,
     // @@protoc_insertion_point(field:BPAIFNGEDGH.BHPGJCICMJM)
     pub BHPGJCICMJM: u32,
-    // @@protoc_insertion_point(field:BPAIFNGEDGH.OGLDNEFKNDO)
-    pub OGLDNEFKNDO: u32,
     // @@protoc_insertion_point(field:BPAIFNGEDGH.MNFJEIININL)
     pub MNFJEIININL: ::std::vec::Vec<super::OIIKGFIPMFG::OIIKGFIPMFG>,
     // special fields
@@ -63,6 +63,11 @@ impl BPAIFNGEDGH {
             |m: &mut BPAIFNGEDGH| { &mut m.layer_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OGLDNEFKNDO",
+            |m: &BPAIFNGEDGH| { &m.OGLDNEFKNDO },
+            |m: &mut BPAIFNGEDGH| { &mut m.OGLDNEFKNDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &BPAIFNGEDGH| { &m.status },
             |m: &mut BPAIFNGEDGH| { &mut m.status },
@@ -71,11 +76,6 @@ impl BPAIFNGEDGH {
             "BHPGJCICMJM",
             |m: &BPAIFNGEDGH| { &m.BHPGJCICMJM },
             |m: &mut BPAIFNGEDGH| { &mut m.BHPGJCICMJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGLDNEFKNDO",
-            |m: &BPAIFNGEDGH| { &m.OGLDNEFKNDO },
-            |m: &mut BPAIFNGEDGH| { &mut m.OGLDNEFKNDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MNFJEIININL",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for BPAIFNGEDGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.layer_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                32 => {
-                    self.BHPGJCICMJM = is.read_uint32()?;
-                },
-                8 => {
+                48 => {
                     self.OGLDNEFKNDO = is.read_uint32()?;
                 },
-                90 => {
+                72 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.BHPGJCICMJM = is.read_uint32()?;
+                },
+                26 => {
                     self.MNFJEIININL.push(is.read_message()?);
                 },
                 tag => {
@@ -128,16 +128,16 @@ impl ::protobuf::Message for BPAIFNGEDGH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.layer_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.layer_id);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::JLCBBKKGOEJ::JLCBBKKGOEJ::ROGUE_MAGIC_LAYER_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.status.value());
-        }
-        if self.BHPGJCICMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BHPGJCICMJM);
+            my_size += ::protobuf::rt::uint32_size(5, self.layer_id);
         }
         if self.OGLDNEFKNDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OGLDNEFKNDO);
+            my_size += ::protobuf::rt::uint32_size(6, self.OGLDNEFKNDO);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::JLCBBKKGOEJ::JLCBBKKGOEJ::ROGUE_MAGIC_LAYER_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+        }
+        if self.BHPGJCICMJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BHPGJCICMJM);
         }
         for value in &self.MNFJEIININL {
             let len = value.compute_size();
@@ -150,19 +150,19 @@ impl ::protobuf::Message for BPAIFNGEDGH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.layer_id != 0 {
-            os.write_uint32(6, self.layer_id)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::JLCBBKKGOEJ::JLCBBKKGOEJ::ROGUE_MAGIC_LAYER_STATUS_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.BHPGJCICMJM != 0 {
-            os.write_uint32(4, self.BHPGJCICMJM)?;
+            os.write_uint32(5, self.layer_id)?;
         }
         if self.OGLDNEFKNDO != 0 {
-            os.write_uint32(1, self.OGLDNEFKNDO)?;
+            os.write_uint32(6, self.OGLDNEFKNDO)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::JLCBBKKGOEJ::JLCBBKKGOEJ::ROGUE_MAGIC_LAYER_STATUS_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.BHPGJCICMJM != 0 {
+            os.write_uint32(7, self.BHPGJCICMJM)?;
         }
         for v in &self.MNFJEIININL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::Message for BPAIFNGEDGH {
 
     fn clear(&mut self) {
         self.layer_id = 0;
+        self.OGLDNEFKNDO = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::JLCBBKKGOEJ::JLCBBKKGOEJ::ROGUE_MAGIC_LAYER_STATUS_NONE);
         self.BHPGJCICMJM = 0;
-        self.OGLDNEFKNDO = 0;
         self.MNFJEIININL.clear();
         self.special_fields.clear();
     }
@@ -192,9 +192,9 @@ impl ::protobuf::Message for BPAIFNGEDGH {
     fn default_instance() -> &'static BPAIFNGEDGH {
         static instance: BPAIFNGEDGH = BPAIFNGEDGH {
             layer_id: 0,
+            OGLDNEFKNDO: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             BHPGJCICMJM: 0,
-            OGLDNEFKNDO: 0,
             MNFJEIININL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for BPAIFNGEDGH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPAIFNGEDGH.proto\x1a\x11JLCBBKKGOEJ.proto\x1a\x11OIIKGFIPMFG.prot\
-    o\"\xc2\x01\n\x0bBPAIFNGEDGH\x12\x19\n\x08layer_id\x18\x06\x20\x01(\rR\
-    \x07layerId\x12$\n\x06status\x18\x03\x20\x01(\x0e2\x0c.JLCBBKKGOEJR\x06s\
-    tatus\x12\x20\n\x0bBHPGJCICMJM\x18\x04\x20\x01(\rR\x0bBHPGJCICMJM\x12\
-    \x20\n\x0bOGLDNEFKNDO\x18\x01\x20\x01(\rR\x0bOGLDNEFKNDO\x12.\n\x0bMNFJE\
-    IININL\x18\x0b\x20\x03(\x0b2\x0c.OIIKGFIPMFGR\x0bMNFJEIININLb\x06proto3\
+    o\"\xc2\x01\n\x0bBPAIFNGEDGH\x12\x19\n\x08layer_id\x18\x05\x20\x01(\rR\
+    \x07layerId\x12\x20\n\x0bOGLDNEFKNDO\x18\x06\x20\x01(\rR\x0bOGLDNEFKNDO\
+    \x12$\n\x06status\x18\t\x20\x01(\x0e2\x0c.JLCBBKKGOEJR\x06status\x12\x20\
+    \n\x0bBHPGJCICMJM\x18\x07\x20\x01(\rR\x0bBHPGJCICMJM\x12.\n\x0bMNFJEIINI\
+    NL\x18\x03\x20\x03(\x0b2\x0c.OIIKGFIPMFGR\x0bMNFJEIININLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartTrialActivityScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                80 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for StartTrialActivityScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.stage_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for StartTrialActivityScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stage_id != 0 {
-            os.write_uint32(2, self.stage_id)?;
+            os.write_uint32(9, self.stage_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for StartTrialActivityScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dStartTrialActivityScRsp.proto\"N\n\x17StartTrialActivityScRsp\x12\
-    \x19\n\x08stage_id\x18\x02\x20\x01(\rR\x07stageId\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x19\n\x08stage_id\x18\t\x20\x01(\rR\x07stageId\x12\x18\n\x07retcode\x18\
+    \x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

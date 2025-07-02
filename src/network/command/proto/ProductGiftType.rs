@@ -71,6 +71,8 @@ pub enum ProductGiftType {
     PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1 = 20,
     // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10)
     PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10 = 21,
+    // @@protoc_insertion_point(enum_value:ProductGiftType.PRODUCT_GIFT_TICKET_10)
+    PRODUCT_GIFT_TICKET_10 = 22,
 }
 
 impl ::protobuf::Enum for ProductGiftType {
@@ -104,6 +106,7 @@ impl ::protobuf::Enum for ProductGiftType {
             19 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
             20 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
             21 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
+            22 => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_TICKET_10),
             _ => ::std::option::Option::None
         }
     }
@@ -132,6 +135,7 @@ impl ::protobuf::Enum for ProductGiftType {
             "PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10),
             "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1),
             "PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10),
+            "PRODUCT_GIFT_TICKET_10" => ::std::option::Option::Some(ProductGiftType::PRODUCT_GIFT_TICKET_10),
             _ => ::std::option::Option::None
         }
     }
@@ -159,6 +163,7 @@ impl ::protobuf::Enum for ProductGiftType {
         ProductGiftType::PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10,
         ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_1,
         ProductGiftType::PRODUCT_GIFT_FTC_NORMAL_GACHA_TICKET_10,
+        ProductGiftType::PRODUCT_GIFT_TICKET_10,
     ];
 }
 
@@ -187,7 +192,7 @@ impl ProductGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ProductGiftType.proto*\xe6\x05\n\x0fProductGiftType\x12\x15\n\x11P\
+    \n\x15ProductGiftType.proto*\x82\x06\n\x0fProductGiftType\x12\x15\n\x11P\
     RODUCT_GIFT_NONE\x10\0\x12\x15\n\x11PRODUCT_GIFT_COIN\x10\x01\x12\x1b\n\
     \x17PRODUCT_GIFT_MONTH_CARD\x10\x02\x12\x16\n\x12PRODUCT_GIFT_BP_68\x10\
     \x03\x12\x17\n\x13PRODUCT_GIFT_BP_128\x10\x04\x12!\n\x1dPRODUCT_GIFT_BP6\
@@ -202,7 +207,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     APPLE_GIFT_CARD\x10\x11\x12&\n\"PRODUCT_GIFT_FTC_UP_GACHA_TICKET_1\x10\
     \x12\x12'\n#PRODUCT_GIFT_FTC_UP_GACHA_TICKET_10\x10\x13\x12*\n&PRODUCT_G\
     IFT_FTC_NORMAL_GACHA_TICKET_1\x10\x14\x12+\n'PRODUCT_GIFT_FTC_NORMAL_GAC\
-    HA_TICKET_10\x10\x15b\x06proto3\
+    HA_TICKET_10\x10\x15\x12\x1a\n\x16PRODUCT_GIFT_TICKET_10\x10\x16b\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

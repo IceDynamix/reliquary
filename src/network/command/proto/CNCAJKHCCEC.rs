@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CNCAJKHCCEC {
     // message fields
+    // @@protoc_insertion_point(field:CNCAJKHCCEC.BLNDMFGKPMJ)
+    pub BLNDMFGKPMJ: ::protobuf::MessageField<super::FHEPDKKHFCF::FHEPDKKHFCF>,
     // @@protoc_insertion_point(field:CNCAJKHCCEC.BDEBMBGFFKA)
     pub BDEBMBGFFKA: f64,
-    // @@protoc_insertion_point(field:CNCAJKHCCEC.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:CNCAJKHCCEC.status)
     pub status: u32,
     // @@protoc_insertion_point(field:CNCAJKHCCEC.MCMCLAFDLDC)
     pub MCMCLAFDLDC: u32,
-    // @@protoc_insertion_point(field:CNCAJKHCCEC.BLNDMFGKPMJ)
-    pub BLNDMFGKPMJ: ::protobuf::MessageField<super::FHEPDKKHFCF::FHEPDKKHFCF>,
+    // @@protoc_insertion_point(field:CNCAJKHCCEC.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:CNCAJKHCCEC.DPMLEIPAOIL)
     pub DPMLEIPAOIL: u32,
     // special fields
@@ -59,15 +59,15 @@ impl CNCAJKHCCEC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHEPDKKHFCF::FHEPDKKHFCF>(
+            "BLNDMFGKPMJ",
+            |m: &CNCAJKHCCEC| { &m.BLNDMFGKPMJ },
+            |m: &mut CNCAJKHCCEC| { &mut m.BLNDMFGKPMJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BDEBMBGFFKA",
             |m: &CNCAJKHCCEC| { &m.BDEBMBGFFKA },
             |m: &mut CNCAJKHCCEC| { &mut m.BDEBMBGFFKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &CNCAJKHCCEC| { &m.score_id },
-            |m: &mut CNCAJKHCCEC| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -79,10 +79,10 @@ impl CNCAJKHCCEC {
             |m: &CNCAJKHCCEC| { &m.MCMCLAFDLDC },
             |m: &mut CNCAJKHCCEC| { &mut m.MCMCLAFDLDC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHEPDKKHFCF::FHEPDKKHFCF>(
-            "BLNDMFGKPMJ",
-            |m: &CNCAJKHCCEC| { &m.BLNDMFGKPMJ },
-            |m: &mut CNCAJKHCCEC| { &mut m.BLNDMFGKPMJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &CNCAJKHCCEC| { &m.score_id },
+            |m: &mut CNCAJKHCCEC| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DPMLEIPAOIL",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for CNCAJKHCCEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                33 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
+                },
+                89 => {
                     self.BDEBMBGFFKA = is.read_double()?;
                 },
                 112 => {
+                    self.status = is.read_uint32()?;
+                },
+                32 => {
+                    self.MCMCLAFDLDC = is.read_uint32()?;
+                },
+                80 => {
                     self.score_id = is.read_uint32()?;
                 },
                 64 => {
-                    self.status = is.read_uint32()?;
-                },
-                24 => {
-                    self.MCMCLAFDLDC = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
-                },
-                16 => {
                     self.DPMLEIPAOIL = is.read_uint32()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for CNCAJKHCCEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDEBMBGFFKA != 0. {
-            my_size += 1 + 8;
-        }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.score_id);
-        }
-        if self.status != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.status);
-        }
-        if self.MCMCLAFDLDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MCMCLAFDLDC);
-        }
         if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.BDEBMBGFFKA != 0. {
+            my_size += 1 + 8;
+        }
+        if self.status != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.status);
+        }
+        if self.MCMCLAFDLDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MCMCLAFDLDC);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+        }
         if self.DPMLEIPAOIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DPMLEIPAOIL);
+            my_size += ::protobuf::rt::uint32_size(8, self.DPMLEIPAOIL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for CNCAJKHCCEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDEBMBGFFKA != 0. {
-            os.write_double(4, self.BDEBMBGFFKA)?;
+        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.score_id != 0 {
-            os.write_uint32(14, self.score_id)?;
+        if self.BDEBMBGFFKA != 0. {
+            os.write_double(11, self.BDEBMBGFFKA)?;
         }
         if self.status != 0 {
-            os.write_uint32(8, self.status)?;
+            os.write_uint32(14, self.status)?;
         }
         if self.MCMCLAFDLDC != 0 {
-            os.write_uint32(3, self.MCMCLAFDLDC)?;
+            os.write_uint32(4, self.MCMCLAFDLDC)?;
         }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.score_id != 0 {
+            os.write_uint32(10, self.score_id)?;
         }
         if self.DPMLEIPAOIL != 0 {
-            os.write_uint32(2, self.DPMLEIPAOIL)?;
+            os.write_uint32(8, self.DPMLEIPAOIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for CNCAJKHCCEC {
     }
 
     fn clear(&mut self) {
+        self.BLNDMFGKPMJ.clear();
         self.BDEBMBGFFKA = 0.;
-        self.score_id = 0;
         self.status = 0;
         self.MCMCLAFDLDC = 0;
-        self.BLNDMFGKPMJ.clear();
+        self.score_id = 0;
         self.DPMLEIPAOIL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CNCAJKHCCEC {
         static instance: CNCAJKHCCEC = CNCAJKHCCEC {
+            BLNDMFGKPMJ: ::protobuf::MessageField::none(),
             BDEBMBGFFKA: 0.,
-            score_id: 0,
             status: 0,
             MCMCLAFDLDC: 0,
-            BLNDMFGKPMJ: ::protobuf::MessageField::none(),
+            score_id: 0,
             DPMLEIPAOIL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for CNCAJKHCCEC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CNCAJKHCCEC.proto\x1a\x11FHEPDKKHFCF.proto\"\xd6\x01\n\x0bCNCAJKHC\
-    CEC\x12\x20\n\x0bBDEBMBGFFKA\x18\x04\x20\x01(\x01R\x0bBDEBMBGFFKA\x12\
-    \x19\n\x08score_id\x18\x0e\x20\x01(\rR\x07scoreId\x12\x16\n\x06status\
-    \x18\x08\x20\x01(\rR\x06status\x12\x20\n\x0bMCMCLAFDLDC\x18\x03\x20\x01(\
-    \rR\x0bMCMCLAFDLDC\x12.\n\x0bBLNDMFGKPMJ\x18\r\x20\x01(\x0b2\x0c.FHEPDKK\
-    HFCFR\x0bBLNDMFGKPMJ\x12\x20\n\x0bDPMLEIPAOIL\x18\x02\x20\x01(\rR\x0bDPM\
-    LEIPAOILb\x06proto3\
+    CEC\x12.\n\x0bBLNDMFGKPMJ\x18\x05\x20\x01(\x0b2\x0c.FHEPDKKHFCFR\x0bBLND\
+    MFGKPMJ\x12\x20\n\x0bBDEBMBGFFKA\x18\x0b\x20\x01(\x01R\x0bBDEBMBGFFKA\
+    \x12\x16\n\x06status\x18\x0e\x20\x01(\rR\x06status\x12\x20\n\x0bMCMCLAFD\
+    LDC\x18\x04\x20\x01(\rR\x0bMCMCLAFDLDC\x12\x19\n\x08score_id\x18\n\x20\
+    \x01(\rR\x07scoreId\x12\x20\n\x0bDPMLEIPAOIL\x18\x08\x20\x01(\rR\x0bDPML\
+    EIPAOILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

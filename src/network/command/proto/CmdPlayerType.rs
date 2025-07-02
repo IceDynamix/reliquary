@@ -29,154 +29,150 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPlayerType {
     // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerTypeNone)
     CmdPlayerTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoCsReq)
-    CmdGetBasicInfoCsReq = 86,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAntiAddictScNotify)
-    CmdAntiAddictScNotify = 43,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAvatarPathChangedNotify)
-    CmdAvatarPathChangedNotify = 19,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatScRsp)
-    CmdPlayerHeartBeatScRsp = 1,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePsnSettingsInfoCsReq)
-    CmdUpdatePsnSettingsInfoCsReq = 12,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaCsReq)
-    CmdExchangeStaminaCsReq = 46,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetGameStateServiceConfigScRsp)
-    CmdGetGameStateServiceConfigScRsp = 47,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGateServerScNotify)
-    CmdGateServerScNotify = 53,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoScRsp)
-    CmdQueryProductInfoScRsp = 13,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoScRsp)
-    CmdGetBasicInfoScRsp = 100,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetAvatarPathCsReq)
-    CmdSetAvatarPathCsReq = 15,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeScRsp)
-    CmdReserveStaminaExchangeScRsp = 4,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameScRsp)
-    CmdSetNicknameScRsp = 42,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdRetcodeNotify)
-    CmdRetcodeNotify = 34,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjDownloadDataScNotify)
-    CmdClientObjDownloadDataScNotify = 73,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayerSettingScRsp)
-    CmdUpdatePlayerSettingScRsp = 26,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyCsReq)
-    CmdGetAuthkeyCsReq = 60,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdStaminaInfoScNotify)
-    CmdStaminaInfoScNotify = 18,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenCsReq)
-    CmdPlayerGetTokenCsReq = 76,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardCsReq)
-    CmdGetLevelRewardCsReq = 21,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderScRsp)
-    CmdSetGenderScRsp = 7,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAceAntiCheaterCsReq)
-    CmdAceAntiCheaterCsReq = 87,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyCsReq)
-    CmdGetVideoVersionKeyCsReq = 49,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginScRsp)
-    CmdPlayerLoginScRsp = 32,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetMultipleAvatarPathsCsReq)
-    CmdSetMultipleAvatarPathsCsReq = 38,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishCsReq)
-    CmdPlayerLoginFinishCsReq = 17,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkCsReq)
-    CmdGmTalkCsReq = 56,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUnlockAvatarPathCsReq)
-    CmdUnlockAvatarPathCsReq = 89,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginCsReq)
-    CmdPlayerLoginCsReq = 95,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAceAntiCheaterScRsp)
-    CmdAceAntiCheaterScRsp = 8,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePsnSettingsInfoScRsp)
-    CmdUpdatePsnSettingsInfoScRsp = 41,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardTakenListScRsp)
-    CmdGetLevelRewardTakenListScRsp = 58,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetRedPointStatusScNotify)
-    CmdSetRedPointStatusScNotify = 10,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdRegionStopScNotify)
-    CmdRegionStopScNotify = 39,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetMultiPathAvatarInfoCsReq)
-    CmdGetMultiPathAvatarInfoCsReq = 80,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdFeatureSwitchClosedScNotify)
-    CmdFeatureSwitchClosedScNotify = 36,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoCsReq)
-    CmdSetPlayerInfoCsReq = 98,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdServerAnnounceNotify)
-    CmdServerAnnounceNotify = 14,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardScRsp)
-    CmdGetLevelRewardScRsp = 29,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenScRsp)
-    CmdPlayerGetTokenScRsp = 48,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerKickOutScNotify)
-    CmdPlayerKickOutScNotify = 22,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLogoutCsReq)
-    CmdPlayerLogoutCsReq = 31,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameCsReq)
-    CmdSetNicknameCsReq = 33,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayCsReq)
-    CmdSetGameplayBirthdayCsReq = 54,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoScRsp)
-    CmdSetPlayerInfoScRsp = 64,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayScRsp)
-    CmdSetGameplayBirthdayScRsp = 99,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetLanguageScRsp)
-    CmdSetLanguageScRsp = 25,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaScRsp)
-    CmdExchangeStaminaScRsp = 83,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishScRsp)
-    CmdPlayerLoginFinishScRsp = 69,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeCsReq)
-    CmdReserveStaminaExchangeCsReq = 70,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetAvatarPathScRsp)
-    CmdSetAvatarPathScRsp = 55,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetSecretKeyInfoCsReq)
-    CmdGetSecretKeyInfoCsReq = 74,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatCsReq)
-    CmdPlayerHeartBeatCsReq = 68,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdDailyRefreshNotify)
-    CmdDailyRefreshNotify = 9,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyScRsp)
-    CmdGetVideoVersionKeyScRsp = 3,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdateFeatureSwitchScNotify)
-    CmdUpdateFeatureSwitchScNotify = 20,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUnlockAvatarPathScRsp)
-    CmdUnlockAvatarPathScRsp = 88,
+    CmdUpdatePsnSettingsInfoScRsp = 82,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGateServerScNotify)
+    CmdGateServerScNotify = 37,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardTakenListCsReq)
-    CmdGetLevelRewardTakenListCsReq = 77,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetLanguageCsReq)
-    CmdSetLanguageCsReq = 93,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderCsReq)
-    CmdSetGenderCsReq = 57,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLogoutScRsp)
-    CmdPlayerLogoutScRsp = 40,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayerSettingCsReq)
-    CmdUpdatePlayerSettingCsReq = 44,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadCsReq)
-    CmdClientObjUploadCsReq = 67,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoCsReq)
-    CmdQueryProductInfoCsReq = 45,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkScNotify)
-    CmdGmTalkScNotify = 52,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientDownloadDataScNotify)
-    CmdClientDownloadDataScNotify = 78,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadScRsp)
-    CmdClientObjUploadScRsp = 96,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetMultiPathAvatarInfoScRsp)
-    CmdGetMultiPathAvatarInfoScRsp = 50,
+    CmdGetLevelRewardTakenListCsReq = 36,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameScRsp)
+    CmdSetNicknameScRsp = 94,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdDailyRefreshNotify)
+    CmdDailyRefreshNotify = 60,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetRedPointStatusScNotify)
+    CmdSetRedPointStatusScNotify = 62,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoScRsp)
+    CmdQueryProductInfoScRsp = 55,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdStaminaInfoScNotify)
+    CmdStaminaInfoScNotify = 83,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenCsReq)
+    CmdPlayerGetTokenCsReq = 27,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdateFeatureSwitchScNotify)
+    CmdUpdateFeatureSwitchScNotify = 63,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetLanguageScRsp)
+    CmdSetLanguageScRsp = 41,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAceAntiCheaterCsReq)
+    CmdAceAntiCheaterCsReq = 93,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishCsReq)
+    CmdPlayerLoginFinishCsReq = 48,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenScRsp)
+    CmdPlayerGetTokenScRsp = 21,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayScRsp)
+    CmdSetGameplayBirthdayScRsp = 16,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardTakenListScRsp)
+    CmdGetLevelRewardTakenListScRsp = 87,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetMultipleAvatarPathsScRsp)
-    CmdSetMultipleAvatarPathsScRsp = 5,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetGameStateServiceConfigCsReq)
-    CmdGetGameStateServiceConfigCsReq = 82,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdMonthCardRewardNotify)
-    CmdMonthCardRewardNotify = 35,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyScRsp)
-    CmdGetAuthkeyScRsp = 2,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkScRsp)
-    CmdGmTalkScRsp = 72,
+    CmdSetMultipleAvatarPathsScRsp = 92,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayerSettingCsReq)
+    CmdUpdatePlayerSettingCsReq = 32,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePsnSettingsInfoCsReq)
+    CmdUpdatePsnSettingsInfoCsReq = 79,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetSecretKeyInfoScRsp)
-    CmdGetSecretKeyInfoScRsp = 90,
+    CmdGetSecretKeyInfoScRsp = 7,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginScRsp)
+    CmdPlayerLoginScRsp = 91,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjDownloadDataScNotify)
+    CmdClientObjDownloadDataScNotify = 51,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardCsReq)
+    CmdGetLevelRewardCsReq = 9,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardScRsp)
+    CmdGetLevelRewardScRsp = 6,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdRetcodeNotify)
+    CmdRetcodeNotify = 26,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkScNotify)
+    CmdGmTalkScNotify = 59,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeScRsp)
+    CmdReserveStaminaExchangeScRsp = 30,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyCsReq)
+    CmdGetVideoVersionKeyCsReq = 43,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientDownloadDataScNotify)
+    CmdClientDownloadDataScNotify = 71,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoCsReq)
+    CmdSetPlayerInfoCsReq = 40,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginCsReq)
+    CmdPlayerLoginCsReq = 20,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoScRsp)
+    CmdGetBasicInfoScRsp = 95,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayCsReq)
+    CmdSetGameplayBirthdayCsReq = 96,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetSecretKeyInfoCsReq)
+    CmdGetSecretKeyInfoCsReq = 33,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLogoutCsReq)
+    CmdPlayerLogoutCsReq = 67,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderCsReq)
+    CmdSetGenderCsReq = 23,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaCsReq)
+    CmdExchangeStaminaCsReq = 74,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerKickOutScNotify)
+    CmdPlayerKickOutScNotify = 54,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadCsReq)
+    CmdClientObjUploadCsReq = 56,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetMultipleAvatarPathsCsReq)
+    CmdSetMultipleAvatarPathsCsReq = 42,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetAvatarPathScRsp)
+    CmdSetAvatarPathScRsp = 97,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAntiAddictScNotify)
+    CmdAntiAddictScNotify = 52,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatCsReq)
+    CmdPlayerHeartBeatCsReq = 90,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetGameStateServiceConfigCsReq)
+    CmdGetGameStateServiceConfigCsReq = 10,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdServerAnnounceNotify)
+    CmdServerAnnounceNotify = 84,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkCsReq)
+    CmdGmTalkCsReq = 77,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetLanguageCsReq)
+    CmdSetLanguageCsReq = 49,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoCsReq)
+    CmdQueryProductInfoCsReq = 19,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoScRsp)
+    CmdSetPlayerInfoScRsp = 18,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetAvatarPathCsReq)
+    CmdSetAvatarPathCsReq = 8,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyCsReq)
+    CmdGetAuthkeyCsReq = 98,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaScRsp)
+    CmdExchangeStaminaScRsp = 73,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatScRsp)
+    CmdPlayerHeartBeatScRsp = 89,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdRegionStopScNotify)
+    CmdRegionStopScNotify = 38,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGmTalkScRsp)
+    CmdGmTalkScRsp = 80,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAceAntiCheaterScRsp)
+    CmdAceAntiCheaterScRsp = 64,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderScRsp)
+    CmdSetGenderScRsp = 22,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoCsReq)
+    CmdGetBasicInfoCsReq = 50,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameCsReq)
+    CmdSetNicknameCsReq = 68,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadScRsp)
+    CmdClientObjUploadScRsp = 1,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayerSettingScRsp)
+    CmdUpdatePlayerSettingScRsp = 11,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLogoutScRsp)
+    CmdPlayerLogoutScRsp = 39,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyScRsp)
+    CmdGetVideoVersionKeyScRsp = 12,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyScRsp)
+    CmdGetAuthkeyScRsp = 85,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeCsReq)
+    CmdReserveStaminaExchangeCsReq = 75,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishScRsp)
+    CmdPlayerLoginFinishScRsp = 25,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUnlockAvatarPathCsReq)
+    CmdUnlockAvatarPathCsReq = 58,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdMonthCardRewardNotify)
+    CmdMonthCardRewardNotify = 57,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdFeatureSwitchClosedScNotify)
+    CmdFeatureSwitchClosedScNotify = 72,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAvatarPathChangedNotify)
+    CmdAvatarPathChangedNotify = 100,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetGameStateServiceConfigScRsp)
+    CmdGetGameStateServiceConfigScRsp = 4,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUnlockAvatarPathScRsp)
+    CmdUnlockAvatarPathScRsp = 46,
 }
 
 impl ::protobuf::Enum for CmdPlayerType {
@@ -189,80 +185,78 @@ impl ::protobuf::Enum for CmdPlayerType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerTypeNone),
-            86 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
-            43 => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
-            19 => ::std::option::Option::Some(CmdPlayerType::CmdAvatarPathChangedNotify),
-            1 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
-            12 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq),
-            46 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
-            47 => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigScRsp),
-            53 => ::std::option::Option::Some(CmdPlayerType::CmdGateServerScNotify),
-            13 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
-            100 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
-            15 => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathCsReq),
-            4 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
-            42 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameScRsp),
-            34 => ::std::option::Option::Some(CmdPlayerType::CmdRetcodeNotify),
-            73 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
-            26 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
-            60 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
-            18 => ::std::option::Option::Some(CmdPlayerType::CmdStaminaInfoScNotify),
-            76 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenCsReq),
-            21 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardCsReq),
-            7 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
-            87 => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterCsReq),
-            49 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
-            32 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
-            38 => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsCsReq),
-            17 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
-            56 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkCsReq),
-            89 => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathCsReq),
-            95 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
-            8 => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterScRsp),
-            41 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp),
-            58 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
-            10 => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
-            39 => ::std::option::Option::Some(CmdPlayerType::CmdRegionStopScNotify),
-            80 => ::std::option::Option::Some(CmdPlayerType::CmdGetMultiPathAvatarInfoCsReq),
-            36 => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
-            98 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
-            14 => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
-            29 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRsp),
-            48 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
-            22 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerKickOutScNotify),
-            31 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
-            33 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
-            54 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
-            64 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
-            99 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
-            25 => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageScRsp),
-            83 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
-            69 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
-            70 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
-            55 => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathScRsp),
-            74 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
-            68 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
-            9 => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
-            3 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
-            20 => ::std::option::Option::Some(CmdPlayerType::CmdUpdateFeatureSwitchScNotify),
-            88 => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathScRsp),
-            77 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
-            93 => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageCsReq),
-            57 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
-            40 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutScRsp),
-            44 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingCsReq),
-            67 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
-            45 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
-            52 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScNotify),
-            78 => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
-            96 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
-            50 => ::std::option::Option::Some(CmdPlayerType::CmdGetMultiPathAvatarInfoScRsp),
-            5 => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsScRsp),
-            82 => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigCsReq),
-            35 => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
-            2 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
-            72 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScRsp),
-            90 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoScRsp),
+            82 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp),
+            37 => ::std::option::Option::Some(CmdPlayerType::CmdGateServerScNotify),
+            36 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
+            94 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameScRsp),
+            60 => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
+            62 => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
+            55 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
+            83 => ::std::option::Option::Some(CmdPlayerType::CmdStaminaInfoScNotify),
+            27 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenCsReq),
+            63 => ::std::option::Option::Some(CmdPlayerType::CmdUpdateFeatureSwitchScNotify),
+            41 => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageScRsp),
+            93 => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterCsReq),
+            48 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
+            21 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
+            16 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
+            87 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
+            92 => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsScRsp),
+            32 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingCsReq),
+            79 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq),
+            7 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoScRsp),
+            91 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
+            51 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
+            9 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardCsReq),
+            6 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRsp),
+            26 => ::std::option::Option::Some(CmdPlayerType::CmdRetcodeNotify),
+            59 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScNotify),
+            30 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
+            43 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
+            71 => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
+            40 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
+            20 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
+            95 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
+            96 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
+            33 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
+            67 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
+            23 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
+            74 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
+            54 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerKickOutScNotify),
+            56 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
+            42 => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsCsReq),
+            97 => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathScRsp),
+            52 => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
+            90 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
+            10 => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigCsReq),
+            84 => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
+            77 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkCsReq),
+            49 => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageCsReq),
+            19 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
+            18 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
+            8 => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathCsReq),
+            98 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
+            73 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
+            89 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
+            38 => ::std::option::Option::Some(CmdPlayerType::CmdRegionStopScNotify),
+            80 => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScRsp),
+            64 => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterScRsp),
+            22 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
+            50 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
+            68 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
+            1 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
+            11 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
+            39 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutScRsp),
+            12 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
+            85 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
+            75 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
+            25 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
+            58 => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathCsReq),
+            57 => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
+            72 => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
+            100 => ::std::option::Option::Some(CmdPlayerType::CmdAvatarPathChangedNotify),
+            4 => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigScRsp),
+            46 => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -270,160 +264,156 @@ impl ::protobuf::Enum for CmdPlayerType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerType> {
         match str {
             "CmdPlayerTypeNone" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerTypeNone),
-            "CmdGetBasicInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
-            "CmdAntiAddictScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
-            "CmdAvatarPathChangedNotify" => ::std::option::Option::Some(CmdPlayerType::CmdAvatarPathChangedNotify),
-            "CmdPlayerHeartBeatScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
-            "CmdUpdatePsnSettingsInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq),
-            "CmdExchangeStaminaCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
-            "CmdGetGameStateServiceConfigScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigScRsp),
+            "CmdUpdatePsnSettingsInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp),
             "CmdGateServerScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdGateServerScNotify),
-            "CmdQueryProductInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
-            "CmdGetBasicInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
-            "CmdSetAvatarPathCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathCsReq),
-            "CmdReserveStaminaExchangeScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
+            "CmdGetLevelRewardTakenListCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
             "CmdSetNicknameScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameScRsp),
-            "CmdRetcodeNotify" => ::std::option::Option::Some(CmdPlayerType::CmdRetcodeNotify),
-            "CmdClientObjDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
-            "CmdUpdatePlayerSettingScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
-            "CmdGetAuthkeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
+            "CmdDailyRefreshNotify" => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
+            "CmdSetRedPointStatusScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
+            "CmdQueryProductInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
             "CmdStaminaInfoScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdStaminaInfoScNotify),
             "CmdPlayerGetTokenCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenCsReq),
-            "CmdGetLevelRewardCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardCsReq),
-            "CmdSetGenderScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
-            "CmdAceAntiCheaterCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterCsReq),
-            "CmdGetVideoVersionKeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
-            "CmdPlayerLoginScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
-            "CmdSetMultipleAvatarPathsCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsCsReq),
-            "CmdPlayerLoginFinishCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
-            "CmdGmTalkCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkCsReq),
-            "CmdUnlockAvatarPathCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathCsReq),
-            "CmdPlayerLoginCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
-            "CmdAceAntiCheaterScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterScRsp),
-            "CmdUpdatePsnSettingsInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp),
-            "CmdGetLevelRewardTakenListScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
-            "CmdSetRedPointStatusScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
-            "CmdRegionStopScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdRegionStopScNotify),
-            "CmdGetMultiPathAvatarInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetMultiPathAvatarInfoCsReq),
-            "CmdFeatureSwitchClosedScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
-            "CmdSetPlayerInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
-            "CmdServerAnnounceNotify" => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
-            "CmdGetLevelRewardScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRsp),
-            "CmdPlayerGetTokenScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
-            "CmdPlayerKickOutScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerKickOutScNotify),
-            "CmdPlayerLogoutCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
-            "CmdSetNicknameCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
-            "CmdSetGameplayBirthdayCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
-            "CmdSetPlayerInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
-            "CmdSetGameplayBirthdayScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
-            "CmdSetLanguageScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageScRsp),
-            "CmdExchangeStaminaScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
-            "CmdPlayerLoginFinishScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
-            "CmdReserveStaminaExchangeCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
-            "CmdSetAvatarPathScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathScRsp),
-            "CmdGetSecretKeyInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
-            "CmdPlayerHeartBeatCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
-            "CmdDailyRefreshNotify" => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
-            "CmdGetVideoVersionKeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
             "CmdUpdateFeatureSwitchScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdUpdateFeatureSwitchScNotify),
-            "CmdUnlockAvatarPathScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathScRsp),
-            "CmdGetLevelRewardTakenListCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
-            "CmdSetLanguageCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageCsReq),
-            "CmdSetGenderCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
-            "CmdPlayerLogoutScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutScRsp),
-            "CmdUpdatePlayerSettingCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingCsReq),
-            "CmdClientObjUploadCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
-            "CmdQueryProductInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
-            "CmdGmTalkScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScNotify),
-            "CmdClientDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
-            "CmdClientObjUploadScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
-            "CmdGetMultiPathAvatarInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetMultiPathAvatarInfoScRsp),
+            "CmdSetLanguageScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageScRsp),
+            "CmdAceAntiCheaterCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterCsReq),
+            "CmdPlayerLoginFinishCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
+            "CmdPlayerGetTokenScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
+            "CmdSetGameplayBirthdayScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
+            "CmdGetLevelRewardTakenListScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
             "CmdSetMultipleAvatarPathsScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsScRsp),
-            "CmdGetGameStateServiceConfigCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigCsReq),
-            "CmdMonthCardRewardNotify" => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
-            "CmdGetAuthkeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
-            "CmdGmTalkScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScRsp),
+            "CmdUpdatePlayerSettingCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingCsReq),
+            "CmdUpdatePsnSettingsInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq),
             "CmdGetSecretKeyInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoScRsp),
+            "CmdPlayerLoginScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
+            "CmdClientObjDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
+            "CmdGetLevelRewardCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardCsReq),
+            "CmdGetLevelRewardScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRsp),
+            "CmdRetcodeNotify" => ::std::option::Option::Some(CmdPlayerType::CmdRetcodeNotify),
+            "CmdGmTalkScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScNotify),
+            "CmdReserveStaminaExchangeScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
+            "CmdGetVideoVersionKeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
+            "CmdClientDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
+            "CmdSetPlayerInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
+            "CmdPlayerLoginCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
+            "CmdGetBasicInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
+            "CmdSetGameplayBirthdayCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
+            "CmdGetSecretKeyInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
+            "CmdPlayerLogoutCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
+            "CmdSetGenderCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
+            "CmdExchangeStaminaCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
+            "CmdPlayerKickOutScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerKickOutScNotify),
+            "CmdClientObjUploadCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
+            "CmdSetMultipleAvatarPathsCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetMultipleAvatarPathsCsReq),
+            "CmdSetAvatarPathScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathScRsp),
+            "CmdAntiAddictScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
+            "CmdPlayerHeartBeatCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
+            "CmdGetGameStateServiceConfigCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigCsReq),
+            "CmdServerAnnounceNotify" => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
+            "CmdGmTalkCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkCsReq),
+            "CmdSetLanguageCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageCsReq),
+            "CmdQueryProductInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
+            "CmdSetPlayerInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
+            "CmdSetAvatarPathCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetAvatarPathCsReq),
+            "CmdGetAuthkeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
+            "CmdExchangeStaminaScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
+            "CmdPlayerHeartBeatScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
+            "CmdRegionStopScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdRegionStopScNotify),
+            "CmdGmTalkScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGmTalkScRsp),
+            "CmdAceAntiCheaterScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdAceAntiCheaterScRsp),
+            "CmdSetGenderScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
+            "CmdGetBasicInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
+            "CmdSetNicknameCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
+            "CmdClientObjUploadScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
+            "CmdUpdatePlayerSettingScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
+            "CmdPlayerLogoutScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutScRsp),
+            "CmdGetVideoVersionKeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
+            "CmdGetAuthkeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
+            "CmdReserveStaminaExchangeCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
+            "CmdPlayerLoginFinishScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
+            "CmdUnlockAvatarPathCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathCsReq),
+            "CmdMonthCardRewardNotify" => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
+            "CmdFeatureSwitchClosedScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
+            "CmdAvatarPathChangedNotify" => ::std::option::Option::Some(CmdPlayerType::CmdAvatarPathChangedNotify),
+            "CmdGetGameStateServiceConfigScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetGameStateServiceConfigScRsp),
+            "CmdUnlockAvatarPathScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUnlockAvatarPathScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerType] = &[
         CmdPlayerType::CmdPlayerTypeNone,
-        CmdPlayerType::CmdGetBasicInfoCsReq,
-        CmdPlayerType::CmdAntiAddictScNotify,
-        CmdPlayerType::CmdAvatarPathChangedNotify,
-        CmdPlayerType::CmdPlayerHeartBeatScRsp,
-        CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq,
-        CmdPlayerType::CmdExchangeStaminaCsReq,
-        CmdPlayerType::CmdGetGameStateServiceConfigScRsp,
+        CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp,
         CmdPlayerType::CmdGateServerScNotify,
-        CmdPlayerType::CmdQueryProductInfoScRsp,
-        CmdPlayerType::CmdGetBasicInfoScRsp,
-        CmdPlayerType::CmdSetAvatarPathCsReq,
-        CmdPlayerType::CmdReserveStaminaExchangeScRsp,
+        CmdPlayerType::CmdGetLevelRewardTakenListCsReq,
         CmdPlayerType::CmdSetNicknameScRsp,
-        CmdPlayerType::CmdRetcodeNotify,
-        CmdPlayerType::CmdClientObjDownloadDataScNotify,
-        CmdPlayerType::CmdUpdatePlayerSettingScRsp,
-        CmdPlayerType::CmdGetAuthkeyCsReq,
+        CmdPlayerType::CmdDailyRefreshNotify,
+        CmdPlayerType::CmdSetRedPointStatusScNotify,
+        CmdPlayerType::CmdQueryProductInfoScRsp,
         CmdPlayerType::CmdStaminaInfoScNotify,
         CmdPlayerType::CmdPlayerGetTokenCsReq,
-        CmdPlayerType::CmdGetLevelRewardCsReq,
-        CmdPlayerType::CmdSetGenderScRsp,
-        CmdPlayerType::CmdAceAntiCheaterCsReq,
-        CmdPlayerType::CmdGetVideoVersionKeyCsReq,
-        CmdPlayerType::CmdPlayerLoginScRsp,
-        CmdPlayerType::CmdSetMultipleAvatarPathsCsReq,
-        CmdPlayerType::CmdPlayerLoginFinishCsReq,
-        CmdPlayerType::CmdGmTalkCsReq,
-        CmdPlayerType::CmdUnlockAvatarPathCsReq,
-        CmdPlayerType::CmdPlayerLoginCsReq,
-        CmdPlayerType::CmdAceAntiCheaterScRsp,
-        CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp,
-        CmdPlayerType::CmdGetLevelRewardTakenListScRsp,
-        CmdPlayerType::CmdSetRedPointStatusScNotify,
-        CmdPlayerType::CmdRegionStopScNotify,
-        CmdPlayerType::CmdGetMultiPathAvatarInfoCsReq,
-        CmdPlayerType::CmdFeatureSwitchClosedScNotify,
-        CmdPlayerType::CmdSetPlayerInfoCsReq,
-        CmdPlayerType::CmdServerAnnounceNotify,
-        CmdPlayerType::CmdGetLevelRewardScRsp,
-        CmdPlayerType::CmdPlayerGetTokenScRsp,
-        CmdPlayerType::CmdPlayerKickOutScNotify,
-        CmdPlayerType::CmdPlayerLogoutCsReq,
-        CmdPlayerType::CmdSetNicknameCsReq,
-        CmdPlayerType::CmdSetGameplayBirthdayCsReq,
-        CmdPlayerType::CmdSetPlayerInfoScRsp,
-        CmdPlayerType::CmdSetGameplayBirthdayScRsp,
-        CmdPlayerType::CmdSetLanguageScRsp,
-        CmdPlayerType::CmdExchangeStaminaScRsp,
-        CmdPlayerType::CmdPlayerLoginFinishScRsp,
-        CmdPlayerType::CmdReserveStaminaExchangeCsReq,
-        CmdPlayerType::CmdSetAvatarPathScRsp,
-        CmdPlayerType::CmdGetSecretKeyInfoCsReq,
-        CmdPlayerType::CmdPlayerHeartBeatCsReq,
-        CmdPlayerType::CmdDailyRefreshNotify,
-        CmdPlayerType::CmdGetVideoVersionKeyScRsp,
         CmdPlayerType::CmdUpdateFeatureSwitchScNotify,
-        CmdPlayerType::CmdUnlockAvatarPathScRsp,
-        CmdPlayerType::CmdGetLevelRewardTakenListCsReq,
-        CmdPlayerType::CmdSetLanguageCsReq,
-        CmdPlayerType::CmdSetGenderCsReq,
-        CmdPlayerType::CmdPlayerLogoutScRsp,
-        CmdPlayerType::CmdUpdatePlayerSettingCsReq,
-        CmdPlayerType::CmdClientObjUploadCsReq,
-        CmdPlayerType::CmdQueryProductInfoCsReq,
-        CmdPlayerType::CmdGmTalkScNotify,
-        CmdPlayerType::CmdClientDownloadDataScNotify,
-        CmdPlayerType::CmdClientObjUploadScRsp,
-        CmdPlayerType::CmdGetMultiPathAvatarInfoScRsp,
+        CmdPlayerType::CmdSetLanguageScRsp,
+        CmdPlayerType::CmdAceAntiCheaterCsReq,
+        CmdPlayerType::CmdPlayerLoginFinishCsReq,
+        CmdPlayerType::CmdPlayerGetTokenScRsp,
+        CmdPlayerType::CmdSetGameplayBirthdayScRsp,
+        CmdPlayerType::CmdGetLevelRewardTakenListScRsp,
         CmdPlayerType::CmdSetMultipleAvatarPathsScRsp,
-        CmdPlayerType::CmdGetGameStateServiceConfigCsReq,
-        CmdPlayerType::CmdMonthCardRewardNotify,
-        CmdPlayerType::CmdGetAuthkeyScRsp,
-        CmdPlayerType::CmdGmTalkScRsp,
+        CmdPlayerType::CmdUpdatePlayerSettingCsReq,
+        CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq,
         CmdPlayerType::CmdGetSecretKeyInfoScRsp,
+        CmdPlayerType::CmdPlayerLoginScRsp,
+        CmdPlayerType::CmdClientObjDownloadDataScNotify,
+        CmdPlayerType::CmdGetLevelRewardCsReq,
+        CmdPlayerType::CmdGetLevelRewardScRsp,
+        CmdPlayerType::CmdRetcodeNotify,
+        CmdPlayerType::CmdGmTalkScNotify,
+        CmdPlayerType::CmdReserveStaminaExchangeScRsp,
+        CmdPlayerType::CmdGetVideoVersionKeyCsReq,
+        CmdPlayerType::CmdClientDownloadDataScNotify,
+        CmdPlayerType::CmdSetPlayerInfoCsReq,
+        CmdPlayerType::CmdPlayerLoginCsReq,
+        CmdPlayerType::CmdGetBasicInfoScRsp,
+        CmdPlayerType::CmdSetGameplayBirthdayCsReq,
+        CmdPlayerType::CmdGetSecretKeyInfoCsReq,
+        CmdPlayerType::CmdPlayerLogoutCsReq,
+        CmdPlayerType::CmdSetGenderCsReq,
+        CmdPlayerType::CmdExchangeStaminaCsReq,
+        CmdPlayerType::CmdPlayerKickOutScNotify,
+        CmdPlayerType::CmdClientObjUploadCsReq,
+        CmdPlayerType::CmdSetMultipleAvatarPathsCsReq,
+        CmdPlayerType::CmdSetAvatarPathScRsp,
+        CmdPlayerType::CmdAntiAddictScNotify,
+        CmdPlayerType::CmdPlayerHeartBeatCsReq,
+        CmdPlayerType::CmdGetGameStateServiceConfigCsReq,
+        CmdPlayerType::CmdServerAnnounceNotify,
+        CmdPlayerType::CmdGmTalkCsReq,
+        CmdPlayerType::CmdSetLanguageCsReq,
+        CmdPlayerType::CmdQueryProductInfoCsReq,
+        CmdPlayerType::CmdSetPlayerInfoScRsp,
+        CmdPlayerType::CmdSetAvatarPathCsReq,
+        CmdPlayerType::CmdGetAuthkeyCsReq,
+        CmdPlayerType::CmdExchangeStaminaScRsp,
+        CmdPlayerType::CmdPlayerHeartBeatScRsp,
+        CmdPlayerType::CmdRegionStopScNotify,
+        CmdPlayerType::CmdGmTalkScRsp,
+        CmdPlayerType::CmdAceAntiCheaterScRsp,
+        CmdPlayerType::CmdSetGenderScRsp,
+        CmdPlayerType::CmdGetBasicInfoCsReq,
+        CmdPlayerType::CmdSetNicknameCsReq,
+        CmdPlayerType::CmdClientObjUploadScRsp,
+        CmdPlayerType::CmdUpdatePlayerSettingScRsp,
+        CmdPlayerType::CmdPlayerLogoutScRsp,
+        CmdPlayerType::CmdGetVideoVersionKeyScRsp,
+        CmdPlayerType::CmdGetAuthkeyScRsp,
+        CmdPlayerType::CmdReserveStaminaExchangeCsReq,
+        CmdPlayerType::CmdPlayerLoginFinishScRsp,
+        CmdPlayerType::CmdUnlockAvatarPathCsReq,
+        CmdPlayerType::CmdMonthCardRewardNotify,
+        CmdPlayerType::CmdFeatureSwitchClosedScNotify,
+        CmdPlayerType::CmdAvatarPathChangedNotify,
+        CmdPlayerType::CmdGetGameStateServiceConfigScRsp,
+        CmdPlayerType::CmdUnlockAvatarPathScRsp,
     ];
 }
 
@@ -436,80 +426,78 @@ impl ::protobuf::EnumFull for CmdPlayerType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPlayerType::CmdPlayerTypeNone => 0,
-            CmdPlayerType::CmdGetBasicInfoCsReq => 1,
-            CmdPlayerType::CmdAntiAddictScNotify => 2,
-            CmdPlayerType::CmdAvatarPathChangedNotify => 3,
-            CmdPlayerType::CmdPlayerHeartBeatScRsp => 4,
-            CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq => 5,
-            CmdPlayerType::CmdExchangeStaminaCsReq => 6,
-            CmdPlayerType::CmdGetGameStateServiceConfigScRsp => 7,
-            CmdPlayerType::CmdGateServerScNotify => 8,
-            CmdPlayerType::CmdQueryProductInfoScRsp => 9,
-            CmdPlayerType::CmdGetBasicInfoScRsp => 10,
-            CmdPlayerType::CmdSetAvatarPathCsReq => 11,
-            CmdPlayerType::CmdReserveStaminaExchangeScRsp => 12,
-            CmdPlayerType::CmdSetNicknameScRsp => 13,
-            CmdPlayerType::CmdRetcodeNotify => 14,
-            CmdPlayerType::CmdClientObjDownloadDataScNotify => 15,
-            CmdPlayerType::CmdUpdatePlayerSettingScRsp => 16,
-            CmdPlayerType::CmdGetAuthkeyCsReq => 17,
-            CmdPlayerType::CmdStaminaInfoScNotify => 18,
-            CmdPlayerType::CmdPlayerGetTokenCsReq => 19,
-            CmdPlayerType::CmdGetLevelRewardCsReq => 20,
-            CmdPlayerType::CmdSetGenderScRsp => 21,
-            CmdPlayerType::CmdAceAntiCheaterCsReq => 22,
-            CmdPlayerType::CmdGetVideoVersionKeyCsReq => 23,
-            CmdPlayerType::CmdPlayerLoginScRsp => 24,
-            CmdPlayerType::CmdSetMultipleAvatarPathsCsReq => 25,
-            CmdPlayerType::CmdPlayerLoginFinishCsReq => 26,
-            CmdPlayerType::CmdGmTalkCsReq => 27,
-            CmdPlayerType::CmdUnlockAvatarPathCsReq => 28,
-            CmdPlayerType::CmdPlayerLoginCsReq => 29,
-            CmdPlayerType::CmdAceAntiCheaterScRsp => 30,
-            CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp => 31,
-            CmdPlayerType::CmdGetLevelRewardTakenListScRsp => 32,
-            CmdPlayerType::CmdSetRedPointStatusScNotify => 33,
-            CmdPlayerType::CmdRegionStopScNotify => 34,
-            CmdPlayerType::CmdGetMultiPathAvatarInfoCsReq => 35,
-            CmdPlayerType::CmdFeatureSwitchClosedScNotify => 36,
-            CmdPlayerType::CmdSetPlayerInfoCsReq => 37,
-            CmdPlayerType::CmdServerAnnounceNotify => 38,
-            CmdPlayerType::CmdGetLevelRewardScRsp => 39,
-            CmdPlayerType::CmdPlayerGetTokenScRsp => 40,
-            CmdPlayerType::CmdPlayerKickOutScNotify => 41,
-            CmdPlayerType::CmdPlayerLogoutCsReq => 42,
-            CmdPlayerType::CmdSetNicknameCsReq => 43,
-            CmdPlayerType::CmdSetGameplayBirthdayCsReq => 44,
-            CmdPlayerType::CmdSetPlayerInfoScRsp => 45,
-            CmdPlayerType::CmdSetGameplayBirthdayScRsp => 46,
-            CmdPlayerType::CmdSetLanguageScRsp => 47,
-            CmdPlayerType::CmdExchangeStaminaScRsp => 48,
-            CmdPlayerType::CmdPlayerLoginFinishScRsp => 49,
-            CmdPlayerType::CmdReserveStaminaExchangeCsReq => 50,
-            CmdPlayerType::CmdSetAvatarPathScRsp => 51,
-            CmdPlayerType::CmdGetSecretKeyInfoCsReq => 52,
-            CmdPlayerType::CmdPlayerHeartBeatCsReq => 53,
-            CmdPlayerType::CmdDailyRefreshNotify => 54,
-            CmdPlayerType::CmdGetVideoVersionKeyScRsp => 55,
-            CmdPlayerType::CmdUpdateFeatureSwitchScNotify => 56,
-            CmdPlayerType::CmdUnlockAvatarPathScRsp => 57,
-            CmdPlayerType::CmdGetLevelRewardTakenListCsReq => 58,
-            CmdPlayerType::CmdSetLanguageCsReq => 59,
-            CmdPlayerType::CmdSetGenderCsReq => 60,
-            CmdPlayerType::CmdPlayerLogoutScRsp => 61,
-            CmdPlayerType::CmdUpdatePlayerSettingCsReq => 62,
-            CmdPlayerType::CmdClientObjUploadCsReq => 63,
-            CmdPlayerType::CmdQueryProductInfoCsReq => 64,
-            CmdPlayerType::CmdGmTalkScNotify => 65,
-            CmdPlayerType::CmdClientDownloadDataScNotify => 66,
-            CmdPlayerType::CmdClientObjUploadScRsp => 67,
-            CmdPlayerType::CmdGetMultiPathAvatarInfoScRsp => 68,
-            CmdPlayerType::CmdSetMultipleAvatarPathsScRsp => 69,
-            CmdPlayerType::CmdGetGameStateServiceConfigCsReq => 70,
-            CmdPlayerType::CmdMonthCardRewardNotify => 71,
-            CmdPlayerType::CmdGetAuthkeyScRsp => 72,
-            CmdPlayerType::CmdGmTalkScRsp => 73,
-            CmdPlayerType::CmdGetSecretKeyInfoScRsp => 74,
+            CmdPlayerType::CmdUpdatePsnSettingsInfoScRsp => 1,
+            CmdPlayerType::CmdGateServerScNotify => 2,
+            CmdPlayerType::CmdGetLevelRewardTakenListCsReq => 3,
+            CmdPlayerType::CmdSetNicknameScRsp => 4,
+            CmdPlayerType::CmdDailyRefreshNotify => 5,
+            CmdPlayerType::CmdSetRedPointStatusScNotify => 6,
+            CmdPlayerType::CmdQueryProductInfoScRsp => 7,
+            CmdPlayerType::CmdStaminaInfoScNotify => 8,
+            CmdPlayerType::CmdPlayerGetTokenCsReq => 9,
+            CmdPlayerType::CmdUpdateFeatureSwitchScNotify => 10,
+            CmdPlayerType::CmdSetLanguageScRsp => 11,
+            CmdPlayerType::CmdAceAntiCheaterCsReq => 12,
+            CmdPlayerType::CmdPlayerLoginFinishCsReq => 13,
+            CmdPlayerType::CmdPlayerGetTokenScRsp => 14,
+            CmdPlayerType::CmdSetGameplayBirthdayScRsp => 15,
+            CmdPlayerType::CmdGetLevelRewardTakenListScRsp => 16,
+            CmdPlayerType::CmdSetMultipleAvatarPathsScRsp => 17,
+            CmdPlayerType::CmdUpdatePlayerSettingCsReq => 18,
+            CmdPlayerType::CmdUpdatePsnSettingsInfoCsReq => 19,
+            CmdPlayerType::CmdGetSecretKeyInfoScRsp => 20,
+            CmdPlayerType::CmdPlayerLoginScRsp => 21,
+            CmdPlayerType::CmdClientObjDownloadDataScNotify => 22,
+            CmdPlayerType::CmdGetLevelRewardCsReq => 23,
+            CmdPlayerType::CmdGetLevelRewardScRsp => 24,
+            CmdPlayerType::CmdRetcodeNotify => 25,
+            CmdPlayerType::CmdGmTalkScNotify => 26,
+            CmdPlayerType::CmdReserveStaminaExchangeScRsp => 27,
+            CmdPlayerType::CmdGetVideoVersionKeyCsReq => 28,
+            CmdPlayerType::CmdClientDownloadDataScNotify => 29,
+            CmdPlayerType::CmdSetPlayerInfoCsReq => 30,
+            CmdPlayerType::CmdPlayerLoginCsReq => 31,
+            CmdPlayerType::CmdGetBasicInfoScRsp => 32,
+            CmdPlayerType::CmdSetGameplayBirthdayCsReq => 33,
+            CmdPlayerType::CmdGetSecretKeyInfoCsReq => 34,
+            CmdPlayerType::CmdPlayerLogoutCsReq => 35,
+            CmdPlayerType::CmdSetGenderCsReq => 36,
+            CmdPlayerType::CmdExchangeStaminaCsReq => 37,
+            CmdPlayerType::CmdPlayerKickOutScNotify => 38,
+            CmdPlayerType::CmdClientObjUploadCsReq => 39,
+            CmdPlayerType::CmdSetMultipleAvatarPathsCsReq => 40,
+            CmdPlayerType::CmdSetAvatarPathScRsp => 41,
+            CmdPlayerType::CmdAntiAddictScNotify => 42,
+            CmdPlayerType::CmdPlayerHeartBeatCsReq => 43,
+            CmdPlayerType::CmdGetGameStateServiceConfigCsReq => 44,
+            CmdPlayerType::CmdServerAnnounceNotify => 45,
+            CmdPlayerType::CmdGmTalkCsReq => 46,
+            CmdPlayerType::CmdSetLanguageCsReq => 47,
+            CmdPlayerType::CmdQueryProductInfoCsReq => 48,
+            CmdPlayerType::CmdSetPlayerInfoScRsp => 49,
+            CmdPlayerType::CmdSetAvatarPathCsReq => 50,
+            CmdPlayerType::CmdGetAuthkeyCsReq => 51,
+            CmdPlayerType::CmdExchangeStaminaScRsp => 52,
+            CmdPlayerType::CmdPlayerHeartBeatScRsp => 53,
+            CmdPlayerType::CmdRegionStopScNotify => 54,
+            CmdPlayerType::CmdGmTalkScRsp => 55,
+            CmdPlayerType::CmdAceAntiCheaterScRsp => 56,
+            CmdPlayerType::CmdSetGenderScRsp => 57,
+            CmdPlayerType::CmdGetBasicInfoCsReq => 58,
+            CmdPlayerType::CmdSetNicknameCsReq => 59,
+            CmdPlayerType::CmdClientObjUploadScRsp => 60,
+            CmdPlayerType::CmdUpdatePlayerSettingScRsp => 61,
+            CmdPlayerType::CmdPlayerLogoutScRsp => 62,
+            CmdPlayerType::CmdGetVideoVersionKeyScRsp => 63,
+            CmdPlayerType::CmdGetAuthkeyScRsp => 64,
+            CmdPlayerType::CmdReserveStaminaExchangeCsReq => 65,
+            CmdPlayerType::CmdPlayerLoginFinishScRsp => 66,
+            CmdPlayerType::CmdUnlockAvatarPathCsReq => 67,
+            CmdPlayerType::CmdMonthCardRewardNotify => 68,
+            CmdPlayerType::CmdFeatureSwitchClosedScNotify => 69,
+            CmdPlayerType::CmdAvatarPathChangedNotify => 70,
+            CmdPlayerType::CmdGetGameStateServiceConfigScRsp => 71,
+            CmdPlayerType::CmdUnlockAvatarPathScRsp => 72,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -528,52 +516,51 @@ impl CmdPlayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdPlayerType.proto*\xb9\x11\n\rCmdPlayerType\x12\x15\n\x11CmdPlay\
-    erTypeNone\x10\0\x12\x18\n\x14CmdGetBasicInfoCsReq\x10V\x12\x19\n\x15Cmd\
-    AntiAddictScNotify\x10+\x12\x1e\n\x1aCmdAvatarPathChangedNotify\x10\x13\
-    \x12\x1b\n\x17CmdPlayerHeartBeatScRsp\x10\x01\x12!\n\x1dCmdUpdatePsnSett\
-    ingsInfoCsReq\x10\x0c\x12\x1b\n\x17CmdExchangeStaminaCsReq\x10.\x12%\n!C\
-    mdGetGameStateServiceConfigScRsp\x10/\x12\x19\n\x15CmdGateServerScNotify\
-    \x105\x12\x1c\n\x18CmdQueryProductInfoScRsp\x10\r\x12\x18\n\x14CmdGetBas\
-    icInfoScRsp\x10d\x12\x19\n\x15CmdSetAvatarPathCsReq\x10\x0f\x12\"\n\x1eC\
-    mdReserveStaminaExchangeScRsp\x10\x04\x12\x17\n\x13CmdSetNicknameScRsp\
-    \x10*\x12\x14\n\x10CmdRetcodeNotify\x10\"\x12$\n\x20CmdClientObjDownload\
-    DataScNotify\x10I\x12\x1f\n\x1bCmdUpdatePlayerSettingScRsp\x10\x1a\x12\
-    \x16\n\x12CmdGetAuthkeyCsReq\x10<\x12\x1a\n\x16CmdStaminaInfoScNotify\
-    \x10\x12\x12\x1a\n\x16CmdPlayerGetTokenCsReq\x10L\x12\x1a\n\x16CmdGetLev\
-    elRewardCsReq\x10\x15\x12\x15\n\x11CmdSetGenderScRsp\x10\x07\x12\x1a\n\
-    \x16CmdAceAntiCheaterCsReq\x10W\x12\x1e\n\x1aCmdGetVideoVersionKeyCsReq\
-    \x101\x12\x17\n\x13CmdPlayerLoginScRsp\x10\x20\x12\"\n\x1eCmdSetMultiple\
-    AvatarPathsCsReq\x10&\x12\x1d\n\x19CmdPlayerLoginFinishCsReq\x10\x11\x12\
-    \x12\n\x0eCmdGmTalkCsReq\x108\x12\x1c\n\x18CmdUnlockAvatarPathCsReq\x10Y\
-    \x12\x17\n\x13CmdPlayerLoginCsReq\x10_\x12\x1a\n\x16CmdAceAntiCheaterScR\
-    sp\x10\x08\x12!\n\x1dCmdUpdatePsnSettingsInfoScRsp\x10)\x12#\n\x1fCmdGet\
-    LevelRewardTakenListScRsp\x10:\x12\x20\n\x1cCmdSetRedPointStatusScNotify\
-    \x10\n\x12\x19\n\x15CmdRegionStopScNotify\x10'\x12\"\n\x1eCmdGetMultiPat\
-    hAvatarInfoCsReq\x10P\x12\"\n\x1eCmdFeatureSwitchClosedScNotify\x10$\x12\
-    \x19\n\x15CmdSetPlayerInfoCsReq\x10b\x12\x1b\n\x17CmdServerAnnounceNotif\
-    y\x10\x0e\x12\x1a\n\x16CmdGetLevelRewardScRsp\x10\x1d\x12\x1a\n\x16CmdPl\
-    ayerGetTokenScRsp\x100\x12\x1c\n\x18CmdPlayerKickOutScNotify\x10\x16\x12\
-    \x18\n\x14CmdPlayerLogoutCsReq\x10\x1f\x12\x17\n\x13CmdSetNicknameCsReq\
-    \x10!\x12\x1f\n\x1bCmdSetGameplayBirthdayCsReq\x106\x12\x19\n\x15CmdSetP\
-    layerInfoScRsp\x10@\x12\x1f\n\x1bCmdSetGameplayBirthdayScRsp\x10c\x12\
-    \x17\n\x13CmdSetLanguageScRsp\x10\x19\x12\x1b\n\x17CmdExchangeStaminaScR\
-    sp\x10S\x12\x1d\n\x19CmdPlayerLoginFinishScRsp\x10E\x12\"\n\x1eCmdReserv\
-    eStaminaExchangeCsReq\x10F\x12\x19\n\x15CmdSetAvatarPathScRsp\x107\x12\
-    \x1c\n\x18CmdGetSecretKeyInfoCsReq\x10J\x12\x1b\n\x17CmdPlayerHeartBeatC\
-    sReq\x10D\x12\x19\n\x15CmdDailyRefreshNotify\x10\t\x12\x1e\n\x1aCmdGetVi\
-    deoVersionKeyScRsp\x10\x03\x12\"\n\x1eCmdUpdateFeatureSwitchScNotify\x10\
-    \x14\x12\x1c\n\x18CmdUnlockAvatarPathScRsp\x10X\x12#\n\x1fCmdGetLevelRew\
-    ardTakenListCsReq\x10M\x12\x17\n\x13CmdSetLanguageCsReq\x10]\x12\x15\n\
-    \x11CmdSetGenderCsReq\x109\x12\x18\n\x14CmdPlayerLogoutScRsp\x10(\x12\
-    \x1f\n\x1bCmdUpdatePlayerSettingCsReq\x10,\x12\x1b\n\x17CmdClientObjUplo\
-    adCsReq\x10C\x12\x1c\n\x18CmdQueryProductInfoCsReq\x10-\x12\x15\n\x11Cmd\
-    GmTalkScNotify\x104\x12!\n\x1dCmdClientDownloadDataScNotify\x10N\x12\x1b\
-    \n\x17CmdClientObjUploadScRsp\x10`\x12\"\n\x1eCmdGetMultiPathAvatarInfoS\
-    cRsp\x102\x12\"\n\x1eCmdSetMultipleAvatarPathsScRsp\x10\x05\x12%\n!CmdGe\
-    tGameStateServiceConfigCsReq\x10R\x12\x1c\n\x18CmdMonthCardRewardNotify\
-    \x10#\x12\x16\n\x12CmdGetAuthkeyScRsp\x10\x02\x12\x12\n\x0eCmdGmTalkScRs\
-    p\x10H\x12\x1c\n\x18CmdGetSecretKeyInfoScRsp\x10Zb\x06proto3\
+    \n\x13CmdPlayerType.proto*\xf1\x10\n\rCmdPlayerType\x12\x15\n\x11CmdPlay\
+    erTypeNone\x10\0\x12!\n\x1dCmdUpdatePsnSettingsInfoScRsp\x10R\x12\x19\n\
+    \x15CmdGateServerScNotify\x10%\x12#\n\x1fCmdGetLevelRewardTakenListCsReq\
+    \x10$\x12\x17\n\x13CmdSetNicknameScRsp\x10^\x12\x19\n\x15CmdDailyRefresh\
+    Notify\x10<\x12\x20\n\x1cCmdSetRedPointStatusScNotify\x10>\x12\x1c\n\x18\
+    CmdQueryProductInfoScRsp\x107\x12\x1a\n\x16CmdStaminaInfoScNotify\x10S\
+    \x12\x1a\n\x16CmdPlayerGetTokenCsReq\x10\x1b\x12\"\n\x1eCmdUpdateFeature\
+    SwitchScNotify\x10?\x12\x17\n\x13CmdSetLanguageScRsp\x10)\x12\x1a\n\x16C\
+    mdAceAntiCheaterCsReq\x10]\x12\x1d\n\x19CmdPlayerLoginFinishCsReq\x100\
+    \x12\x1a\n\x16CmdPlayerGetTokenScRsp\x10\x15\x12\x1f\n\x1bCmdSetGameplay\
+    BirthdayScRsp\x10\x10\x12#\n\x1fCmdGetLevelRewardTakenListScRsp\x10W\x12\
+    \"\n\x1eCmdSetMultipleAvatarPathsScRsp\x10\\\x12\x1f\n\x1bCmdUpdatePlaye\
+    rSettingCsReq\x10\x20\x12!\n\x1dCmdUpdatePsnSettingsInfoCsReq\x10O\x12\
+    \x1c\n\x18CmdGetSecretKeyInfoScRsp\x10\x07\x12\x17\n\x13CmdPlayerLoginSc\
+    Rsp\x10[\x12$\n\x20CmdClientObjDownloadDataScNotify\x103\x12\x1a\n\x16Cm\
+    dGetLevelRewardCsReq\x10\t\x12\x1a\n\x16CmdGetLevelRewardScRsp\x10\x06\
+    \x12\x14\n\x10CmdRetcodeNotify\x10\x1a\x12\x15\n\x11CmdGmTalkScNotify\
+    \x10;\x12\"\n\x1eCmdReserveStaminaExchangeScRsp\x10\x1e\x12\x1e\n\x1aCmd\
+    GetVideoVersionKeyCsReq\x10+\x12!\n\x1dCmdClientDownloadDataScNotify\x10\
+    G\x12\x19\n\x15CmdSetPlayerInfoCsReq\x10(\x12\x17\n\x13CmdPlayerLoginCsR\
+    eq\x10\x14\x12\x18\n\x14CmdGetBasicInfoScRsp\x10_\x12\x1f\n\x1bCmdSetGam\
+    eplayBirthdayCsReq\x10`\x12\x1c\n\x18CmdGetSecretKeyInfoCsReq\x10!\x12\
+    \x18\n\x14CmdPlayerLogoutCsReq\x10C\x12\x15\n\x11CmdSetGenderCsReq\x10\
+    \x17\x12\x1b\n\x17CmdExchangeStaminaCsReq\x10J\x12\x1c\n\x18CmdPlayerKic\
+    kOutScNotify\x106\x12\x1b\n\x17CmdClientObjUploadCsReq\x108\x12\"\n\x1eC\
+    mdSetMultipleAvatarPathsCsReq\x10*\x12\x19\n\x15CmdSetAvatarPathScRsp\
+    \x10a\x12\x19\n\x15CmdAntiAddictScNotify\x104\x12\x1b\n\x17CmdPlayerHear\
+    tBeatCsReq\x10Z\x12%\n!CmdGetGameStateServiceConfigCsReq\x10\n\x12\x1b\n\
+    \x17CmdServerAnnounceNotify\x10T\x12\x12\n\x0eCmdGmTalkCsReq\x10M\x12\
+    \x17\n\x13CmdSetLanguageCsReq\x101\x12\x1c\n\x18CmdQueryProductInfoCsReq\
+    \x10\x13\x12\x19\n\x15CmdSetPlayerInfoScRsp\x10\x12\x12\x19\n\x15CmdSetA\
+    vatarPathCsReq\x10\x08\x12\x16\n\x12CmdGetAuthkeyCsReq\x10b\x12\x1b\n\
+    \x17CmdExchangeStaminaScRsp\x10I\x12\x1b\n\x17CmdPlayerHeartBeatScRsp\
+    \x10Y\x12\x19\n\x15CmdRegionStopScNotify\x10&\x12\x12\n\x0eCmdGmTalkScRs\
+    p\x10P\x12\x1a\n\x16CmdAceAntiCheaterScRsp\x10@\x12\x15\n\x11CmdSetGende\
+    rScRsp\x10\x16\x12\x18\n\x14CmdGetBasicInfoCsReq\x102\x12\x17\n\x13CmdSe\
+    tNicknameCsReq\x10D\x12\x1b\n\x17CmdClientObjUploadScRsp\x10\x01\x12\x1f\
+    \n\x1bCmdUpdatePlayerSettingScRsp\x10\x0b\x12\x18\n\x14CmdPlayerLogoutSc\
+    Rsp\x10'\x12\x1e\n\x1aCmdGetVideoVersionKeyScRsp\x10\x0c\x12\x16\n\x12Cm\
+    dGetAuthkeyScRsp\x10U\x12\"\n\x1eCmdReserveStaminaExchangeCsReq\x10K\x12\
+    \x1d\n\x19CmdPlayerLoginFinishScRsp\x10\x19\x12\x1c\n\x18CmdUnlockAvatar\
+    PathCsReq\x10:\x12\x1c\n\x18CmdMonthCardRewardNotify\x109\x12\"\n\x1eCmd\
+    FeatureSwitchClosedScNotify\x10H\x12\x1e\n\x1aCmdAvatarPathChangedNotify\
+    \x10d\x12%\n!CmdGetGameStateServiceConfigScRsp\x10\x04\x12\x1c\n\x18CmdU\
+    nlockAvatarPathScRsp\x10.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

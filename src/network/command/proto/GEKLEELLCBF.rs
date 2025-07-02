@@ -30,16 +30,16 @@ pub struct GEKLEELLCBF {
     // message fields
     // @@protoc_insertion_point(field:GEKLEELLCBF.EJOIJGCLCJO)
     pub EJOIJGCLCJO: bool,
-    // @@protoc_insertion_point(field:GEKLEELLCBF.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
     // @@protoc_insertion_point(field:GEKLEELLCBF.LGBOHDICFPK)
     pub LGBOHDICFPK: bool,
-    // @@protoc_insertion_point(field:GEKLEELLCBF.AHOOAFGDEHF)
-    pub AHOOAFGDEHF: ::std::vec::Vec<super::BABHBOMOMDF::BABHBOMOMDF>,
-    // @@protoc_insertion_point(field:GEKLEELLCBF.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::AKKHKMECAFL::AKKHKMECAFL>,
     // @@protoc_insertion_point(field:GEKLEELLCBF.LFCDODFMHHN)
     pub LFCDODFMHHN: u32,
+    // @@protoc_insertion_point(field:GEKLEELLCBF.status)
+    pub status: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
+    // @@protoc_insertion_point(field:GEKLEELLCBF.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::AKKHKMECAFL::AKKHKMECAFL>,
+    // @@protoc_insertion_point(field:GEKLEELLCBF.AHOOAFGDEHF)
+    pub AHOOAFGDEHF: ::std::vec::Vec<super::BABHBOMOMDF::BABHBOMOMDF>,
     // special fields
     // @@protoc_insertion_point(special_field:GEKLEELLCBF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,29 +65,29 @@ impl GEKLEELLCBF {
             |m: &mut GEKLEELLCBF| { &mut m.EJOIJGCLCJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &GEKLEELLCBF| { &m.status },
-            |m: &mut GEKLEELLCBF| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGBOHDICFPK",
             |m: &GEKLEELLCBF| { &m.LGBOHDICFPK },
             |m: &mut GEKLEELLCBF| { &mut m.LGBOHDICFPK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHOOAFGDEHF",
-            |m: &GEKLEELLCBF| { &m.AHOOAFGDEHF },
-            |m: &mut GEKLEELLCBF| { &mut m.AHOOAFGDEHF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFCDODFMHHN",
+            |m: &GEKLEELLCBF| { &m.LFCDODFMHHN },
+            |m: &mut GEKLEELLCBF| { &mut m.LFCDODFMHHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &GEKLEELLCBF| { &m.status },
+            |m: &mut GEKLEELLCBF| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &GEKLEELLCBF| { &m.reason },
             |m: &mut GEKLEELLCBF| { &mut m.reason },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFCDODFMHHN",
-            |m: &GEKLEELLCBF| { &m.LFCDODFMHHN },
-            |m: &mut GEKLEELLCBF| { &mut m.LFCDODFMHHN },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AHOOAFGDEHF",
+            |m: &GEKLEELLCBF| { &m.AHOOAFGDEHF },
+            |m: &mut GEKLEELLCBF| { &mut m.AHOOAFGDEHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEKLEELLCBF>(
             "GEKLEELLCBF",
@@ -110,20 +110,20 @@ impl ::protobuf::Message for GEKLEELLCBF {
                 16 => {
                     self.EJOIJGCLCJO = is.read_bool()?;
                 },
-                72 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                48 => {
+                104 => {
                     self.LGBOHDICFPK = is.read_bool()?;
                 },
-                66 => {
-                    self.AHOOAFGDEHF.push(is.read_message()?);
+                96 => {
+                    self.LFCDODFMHHN = is.read_uint32()?;
                 },
-                112 => {
+                48 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                120 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                32 => {
-                    self.LFCDODFMHHN = is.read_uint32()?;
+                74 => {
+                    self.AHOOAFGDEHF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,22 +140,22 @@ impl ::protobuf::Message for GEKLEELLCBF {
         if self.EJOIJGCLCJO != false {
             my_size += 1 + 1;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
-        }
         if self.LGBOHDICFPK != false {
             my_size += 1 + 1;
+        }
+        if self.LFCDODFMHHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LFCDODFMHHN);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.status.value());
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
         }
         for value in &self.AHOOAFGDEHF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.reason.value());
-        }
-        if self.LFCDODFMHHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LFCDODFMHHN);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -165,21 +165,21 @@ impl ::protobuf::Message for GEKLEELLCBF {
         if self.EJOIJGCLCJO != false {
             os.write_bool(2, self.EJOIJGCLCJO)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         if self.LGBOHDICFPK != false {
-            os.write_bool(6, self.LGBOHDICFPK)?;
-        }
-        for v in &self.AHOOAFGDEHF {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_bool(13, self.LGBOHDICFPK)?;
         }
         if self.LFCDODFMHHN != 0 {
-            os.write_uint32(4, self.LFCDODFMHHN)?;
+            os.write_uint32(12, self.LFCDODFMHHN)?;
         }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        for v in &self.AHOOAFGDEHF {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,22 +198,22 @@ impl ::protobuf::Message for GEKLEELLCBF {
 
     fn clear(&mut self) {
         self.EJOIJGCLCJO = false;
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE);
         self.LGBOHDICFPK = false;
-        self.AHOOAFGDEHF.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE);
         self.LFCDODFMHHN = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::ROGUE_TOURN_LEVEL_STATUS_NONE);
+        self.reason = ::protobuf::EnumOrUnknown::new(super::AKKHKMECAFL::AKKHKMECAFL::ROGUE_TOURN_SETTLE_REASON_NONE);
+        self.AHOOAFGDEHF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEKLEELLCBF {
         static instance: GEKLEELLCBF = GEKLEELLCBF {
             EJOIJGCLCJO: false,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             LGBOHDICFPK: false,
-            AHOOAFGDEHF: ::std::vec::Vec::new(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             LFCDODFMHHN: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            AHOOAFGDEHF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for GEKLEELLCBF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEKLEELLCBF.proto\x1a\x11AKKHKMECAFL.proto\x1a\x11BABHBOMOMDF.prot\
     o\x1a\x1bRogueTournLevelStatus.proto\"\xf9\x01\n\x0bGEKLEELLCBF\x12\x20\
-    \n\x0bEJOIJGCLCJO\x18\x02\x20\x01(\x08R\x0bEJOIJGCLCJO\x12.\n\x06status\
-    \x18\t\x20\x01(\x0e2\x16.RogueTournLevelStatusR\x06status\x12\x20\n\x0bL\
-    GBOHDICFPK\x18\x06\x20\x01(\x08R\x0bLGBOHDICFPK\x12.\n\x0bAHOOAFGDEHF\
-    \x18\x08\x20\x03(\x0b2\x0c.BABHBOMOMDFR\x0bAHOOAFGDEHF\x12$\n\x06reason\
-    \x18\x0e\x20\x01(\x0e2\x0c.AKKHKMECAFLR\x06reason\x12\x20\n\x0bLFCDODFMH\
-    HN\x18\x04\x20\x01(\rR\x0bLFCDODFMHHNb\x06proto3\
+    \n\x0bEJOIJGCLCJO\x18\x02\x20\x01(\x08R\x0bEJOIJGCLCJO\x12\x20\n\x0bLGBO\
+    HDICFPK\x18\r\x20\x01(\x08R\x0bLGBOHDICFPK\x12\x20\n\x0bLFCDODFMHHN\x18\
+    \x0c\x20\x01(\rR\x0bLFCDODFMHHN\x12.\n\x06status\x18\x06\x20\x01(\x0e2\
+    \x16.RogueTournLevelStatusR\x06status\x12$\n\x06reason\x18\x0f\x20\x01(\
+    \x0e2\x0c.AKKHKMECAFLR\x06reason\x12.\n\x0bAHOOAFGDEHF\x18\t\x20\x03(\
+    \x0b2\x0c.BABHBOMOMDFR\x0bAHOOAFGDEHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

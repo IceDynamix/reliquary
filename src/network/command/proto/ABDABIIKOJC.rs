@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ABDABIIKOJC {
     // message fields
-    // @@protoc_insertion_point(field:ABDABIIKOJC.GNDIODGOGPI)
-    pub GNDIODGOGPI: ::protobuf::MessageField<super::OOMGHIBBCBN::OOMGHIBBCBN>,
     // @@protoc_insertion_point(field:ABDABIIKOJC.name)
     pub name: ::std::string::String,
     // @@protoc_insertion_point(field:ABDABIIKOJC.time)
     pub time: i64,
+    // @@protoc_insertion_point(field:ABDABIIKOJC.GNDIODGOGPI)
+    pub GNDIODGOGPI: ::protobuf::MessageField<super::OOMGHIBBCBN::OOMGHIBBCBN>,
     // @@protoc_insertion_point(field:ABDABIIKOJC.max_times)
     pub max_times: u32,
     // special fields
@@ -55,11 +55,6 @@ impl ABDABIIKOJC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOMGHIBBCBN::OOMGHIBBCBN>(
-            "GNDIODGOGPI",
-            |m: &ABDABIIKOJC| { &m.GNDIODGOGPI },
-            |m: &mut ABDABIIKOJC| { &mut m.GNDIODGOGPI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
             |m: &ABDABIIKOJC| { &m.name },
@@ -69,6 +64,11 @@ impl ABDABIIKOJC {
             "time",
             |m: &ABDABIIKOJC| { &m.time },
             |m: &mut ABDABIIKOJC| { &mut m.time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOMGHIBBCBN::OOMGHIBBCBN>(
+            "GNDIODGOGPI",
+            |m: &ABDABIIKOJC| { &m.GNDIODGOGPI },
+            |m: &mut ABDABIIKOJC| { &mut m.GNDIODGOGPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_times",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for ABDABIIKOJC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNDIODGOGPI)?;
-                },
-                114 => {
                     self.name = is.read_string()?;
                 },
-                32 => {
+                80 => {
                     self.time = is.read_int64()?;
                 },
-                104 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNDIODGOGPI)?;
+                },
+                32 => {
                     self.max_times = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for ABDABIIKOJC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.name);
+        }
+        if self.time != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.time);
+        }
         if let Some(v) = self.GNDIODGOGPI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.name);
-        }
-        if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.time);
-        }
         if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.max_times);
+            my_size += ::protobuf::rt::uint32_size(4, self.max_times);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ABDABIIKOJC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GNDIODGOGPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if !self.name.is_empty() {
-            os.write_string(14, &self.name)?;
+            os.write_string(1, &self.name)?;
         }
         if self.time != 0 {
-            os.write_int64(4, self.time)?;
+            os.write_int64(10, self.time)?;
+        }
+        if let Some(v) = self.GNDIODGOGPI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.max_times != 0 {
-            os.write_uint32(13, self.max_times)?;
+            os.write_uint32(4, self.max_times)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for ABDABIIKOJC {
     }
 
     fn clear(&mut self) {
-        self.GNDIODGOGPI.clear();
         self.name.clear();
         self.time = 0;
+        self.GNDIODGOGPI.clear();
         self.max_times = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ABDABIIKOJC {
         static instance: ABDABIIKOJC = ABDABIIKOJC {
-            GNDIODGOGPI: ::protobuf::MessageField::none(),
             name: ::std::string::String::new(),
             time: 0,
+            GNDIODGOGPI: ::protobuf::MessageField::none(),
             max_times: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for ABDABIIKOJC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ABDABIIKOJC.proto\x1a\x11OOMGHIBBCBN.proto\"\x82\x01\n\x0bABDABIIK\
-    OJC\x12.\n\x0bGNDIODGOGPI\x18\x01\x20\x01(\x0b2\x0c.OOMGHIBBCBNR\x0bGNDI\
-    ODGOGPI\x12\x12\n\x04name\x18\x0e\x20\x01(\tR\x04name\x12\x12\n\x04time\
-    \x18\x04\x20\x01(\x03R\x04time\x12\x1b\n\tmax_times\x18\r\x20\x01(\rR\
+    OJC\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04name\x12\x12\n\x04time\x18\
+    \n\x20\x01(\x03R\x04time\x12.\n\x0bGNDIODGOGPI\x18\x08\x20\x01(\x0b2\x0c\
+    .OOMGHIBBCBNR\x0bGNDIODGOGPI\x12\x1b\n\tmax_times\x18\x04\x20\x01(\rR\
     \x08maxTimesb\x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPEPICFCFFM)?;
                 },
-                72 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFantasticStoryActivityDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(GetFantasticStoryActivityDataScRsp.proto\x1a\x11FHBLGMPMIIE.proto\"n\
     \n\"GetFantasticStoryActivityDataScRsp\x12.\n\x0bFPEPICFCFFM\x18\x0b\x20\
-    \x01(\x0b2\x0c.FHBLGMPMIIER\x0bFPEPICFCFFM\x12\x18\n\x07retcode\x18\t\
+    \x01(\x0b2\x0c.FHBLGMPMIIER\x0bFPEPICFCFFM\x12\x18\n\x07retcode\x18\x03\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

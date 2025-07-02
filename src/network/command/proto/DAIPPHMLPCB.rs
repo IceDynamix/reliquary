@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DAIPPHMLPCB {
     // message fields
-    // @@protoc_insertion_point(field:DAIPPHMLPCB.IMEKHGCIEDN)
-    pub IMEKHGCIEDN: ::std::vec::Vec<super::PPKDPAJPAGF::PPKDPAJPAGF>,
     // @@protoc_insertion_point(field:DAIPPHMLPCB.HEIDCIKEDPD)
     pub HEIDCIKEDPD: u32,
+    // @@protoc_insertion_point(field:DAIPPHMLPCB.IMEKHGCIEDN)
+    pub IMEKHGCIEDN: ::std::vec::Vec<super::PPKDPAJPAGF::PPKDPAJPAGF>,
     // special fields
     // @@protoc_insertion_point(special_field:DAIPPHMLPCB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DAIPPHMLPCB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IMEKHGCIEDN",
-            |m: &DAIPPHMLPCB| { &m.IMEKHGCIEDN },
-            |m: &mut DAIPPHMLPCB| { &mut m.IMEKHGCIEDN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HEIDCIKEDPD",
             |m: &DAIPPHMLPCB| { &m.HEIDCIKEDPD },
             |m: &mut DAIPPHMLPCB| { &mut m.HEIDCIKEDPD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IMEKHGCIEDN",
+            |m: &DAIPPHMLPCB| { &m.IMEKHGCIEDN },
+            |m: &mut DAIPPHMLPCB| { &mut m.IMEKHGCIEDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DAIPPHMLPCB>(
             "DAIPPHMLPCB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DAIPPHMLPCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.IMEKHGCIEDN.push(is.read_message()?);
-                },
-                24 => {
+                64 => {
                     self.HEIDCIKEDPD = is.read_uint32()?;
+                },
+                90 => {
+                    self.IMEKHGCIEDN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for DAIPPHMLPCB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HEIDCIKEDPD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HEIDCIKEDPD);
+        }
         for value in &self.IMEKHGCIEDN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HEIDCIKEDPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HEIDCIKEDPD);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IMEKHGCIEDN {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         if self.HEIDCIKEDPD != 0 {
-            os.write_uint32(3, self.HEIDCIKEDPD)?;
+            os.write_uint32(8, self.HEIDCIKEDPD)?;
         }
+        for v in &self.IMEKHGCIEDN {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DAIPPHMLPCB {
     }
 
     fn clear(&mut self) {
-        self.IMEKHGCIEDN.clear();
         self.HEIDCIKEDPD = 0;
+        self.IMEKHGCIEDN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DAIPPHMLPCB {
         static instance: DAIPPHMLPCB = DAIPPHMLPCB {
-            IMEKHGCIEDN: ::std::vec::Vec::new(),
             HEIDCIKEDPD: 0,
+            IMEKHGCIEDN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for DAIPPHMLPCB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DAIPPHMLPCB.proto\x1a\x11PPKDPAJPAGF.proto\"_\n\x0bDAIPPHMLPCB\x12\
-    .\n\x0bIMEKHGCIEDN\x18\r\x20\x03(\x0b2\x0c.PPKDPAJPAGFR\x0bIMEKHGCIEDN\
-    \x12\x20\n\x0bHEIDCIKEDPD\x18\x03\x20\x01(\rR\x0bHEIDCIKEDPDb\x06proto3\
+    \x20\n\x0bHEIDCIKEDPD\x18\x08\x20\x01(\rR\x0bHEIDCIKEDPD\x12.\n\x0bIMEKH\
+    GCIEDN\x18\x0b\x20\x03(\x0b2\x0c.PPKDPAJPAGFR\x0bIMEKHGCIEDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

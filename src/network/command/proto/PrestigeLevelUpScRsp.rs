@@ -79,10 +79,10 @@ impl ::protobuf::Message for PrestigeLevelUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PrestigeLevelUpScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PrestigeLevelUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PrestigeLevelUpScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPrestigeLevelUpScRsp.proto\"F\n\x14PrestigeLevelUpScRsp\x12\x18\n\
-    \x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x0c\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x05\
     \x20\x01(\rR\x05levelb\x06proto3\
 ";
 

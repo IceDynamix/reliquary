@@ -48,7 +48,7 @@ impl FHABEIKAFBO {
         ::std::default::Default::default()
     }
 
-    // .MissionCustomValueList custom_value_list = 188;
+    // .MissionCustomValueList custom_value_list = 2025;
 
     pub fn custom_value_list(&self) -> &super::MissionCustomValueList::MissionCustomValueList {
         match self.ICAIBEAIAGC {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.id = is.read_uint32()?;
                 },
-                1506 => {
+                16202 => {
                     self.ICAIBEAIAGC = ::std::option::Option::Some(fhabeikafbo::ICAIBEAIAGC::CustomValueList(is.read_message()?));
                 },
                 tag => {
@@ -150,7 +150,7 @@ impl ::protobuf::Message for FHABEIKAFBO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if let ::std::option::Option::Some(ref v) = self.ICAIBEAIAGC {
             match v {
@@ -167,12 +167,12 @@ impl ::protobuf::Message for FHABEIKAFBO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(7, self.id)?;
+            os.write_uint32(8, self.id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.ICAIBEAIAGC {
             match v {
                 &fhabeikafbo::ICAIBEAIAGC::CustomValueList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(188, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2025, v, os)?;
                 },
             };
         }
@@ -255,8 +255,8 @@ pub mod fhabeikafbo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHABEIKAFBO.proto\x1a\x1cMissionCustomValueList.proto\"t\n\x0bFHAB\
-    EIKAFBO\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12F\n\x11custom_value\
-    _list\x18\xbc\x01\x20\x01(\x0b2\x17.MissionCustomValueListH\0R\x0fcustom\
+    EIKAFBO\x12\x0e\n\x02id\x18\x08\x20\x01(\rR\x02id\x12F\n\x11custom_value\
+    _list\x18\xe9\x0f\x20\x01(\x0b2\x17.MissionCustomValueListH\0R\x0fcustom\
     ValueListB\r\n\x0bICAIBEAIAGCb\x06proto3\
 ";
 

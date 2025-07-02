@@ -86,13 +86,13 @@ impl ::protobuf::Message for LeaveRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.world_level = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                72 => {
                     self.CENIFNKNFNP = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LeaveRaidScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(9, self.CENIFNKNFNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LeaveRaidScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(5, self.world_level)?;
+            os.write_uint32(3, self.world_level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(13, self.CENIFNKNFNP)?;
+            os.write_uint32(9, self.CENIFNKNFNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRaidScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LeaveRaidScRsp.proto\"m\n\x0eLeaveRaidScRsp\x12\x1f\n\x0bworld_lev\
-    el\x18\x05\x20\x01(\rR\nworldLevel\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x0bCENIFNKNFNP\x18\r\x20\x01(\rR\x0bCENIFNKNFNP\
+    el\x18\x03\x20\x01(\rR\nworldLevel\x12\x18\n\x07retcode\x18\x02\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bCENIFNKNFNP\x18\t\x20\x01(\rR\x0bCENIFNKNFNP\
     b\x06proto3\
 ";
 

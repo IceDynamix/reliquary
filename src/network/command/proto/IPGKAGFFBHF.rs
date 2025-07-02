@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IPGKAGFFBHF {
     // message fields
-    // @@protoc_insertion_point(field:IPGKAGFFBHF.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
     // @@protoc_insertion_point(field:IPGKAGFFBHF.DLFMGKPGMHL)
     pub DLFMGKPGMHL: ::std::vec::Vec<super::FFAMNKOAIHF::FFAMNKOAIHF>,
+    // @@protoc_insertion_point(field:IPGKAGFFBHF.BILBOHBDBPN)
+    pub BILBOHBDBPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IPGKAGFFBHF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl IPGKAGFFBHF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &IPGKAGFFBHF| { &m.BILBOHBDBPN },
-            |m: &mut IPGKAGFFBHF| { &mut m.BILBOHBDBPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DLFMGKPGMHL",
             |m: &IPGKAGFFBHF| { &m.DLFMGKPGMHL },
             |m: &mut IPGKAGFFBHF| { &mut m.DLFMGKPGMHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BILBOHBDBPN",
+            |m: &IPGKAGFFBHF| { &m.BILBOHBDBPN },
+            |m: &mut IPGKAGFFBHF| { &mut m.BILBOHBDBPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IPGKAGFFBHF>(
             "IPGKAGFFBHF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IPGKAGFFBHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
-                },
-                90 => {
+                26 => {
                     self.DLFMGKPGMHL.push(is.read_message()?);
+                },
+                32 => {
+                    self.BILBOHBDBPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for IPGKAGFFBHF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BILBOHBDBPN);
-        }
         for value in &self.DLFMGKPGMHL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BILBOHBDBPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BILBOHBDBPN);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BILBOHBDBPN != 0 {
-            os.write_uint32(12, self.BILBOHBDBPN)?;
-        }
         for v in &self.DLFMGKPGMHL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.BILBOHBDBPN != 0 {
+            os.write_uint32(4, self.BILBOHBDBPN)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for IPGKAGFFBHF {
     }
 
     fn clear(&mut self) {
-        self.BILBOHBDBPN = 0;
         self.DLFMGKPGMHL.clear();
+        self.BILBOHBDBPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IPGKAGFFBHF {
         static instance: IPGKAGFFBHF = IPGKAGFFBHF {
-            BILBOHBDBPN: 0,
             DLFMGKPGMHL: ::std::vec::Vec::new(),
+            BILBOHBDBPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for IPGKAGFFBHF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IPGKAGFFBHF.proto\x1a\x11FFAMNKOAIHF.proto\"_\n\x0bIPGKAGFFBHF\x12\
-    \x20\n\x0bBILBOHBDBPN\x18\x0c\x20\x01(\rR\x0bBILBOHBDBPN\x12.\n\x0bDLFMG\
-    KPGMHL\x18\x0b\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\x0bDLFMGKPGMHLb\x06proto3\
+    .\n\x0bDLFMGKPGMHL\x18\x03\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\x0bDLFMGKPGMHL\
+    \x12\x20\n\x0bBILBOHBDBPN\x18\x04\x20\x01(\rR\x0bBILBOHBDBPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

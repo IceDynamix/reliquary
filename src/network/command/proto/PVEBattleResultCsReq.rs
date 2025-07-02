@@ -28,36 +28,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PVEBattleResultCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.is_ai_consider_ultra_skill)
-    pub is_ai_consider_ultra_skill: bool,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.JCJFGOJFEGE)
-    pub JCJFGOJFEGE: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.HPEKEKIPJLF)
-    pub HPEKEKIPJLF: ::std::collections::HashMap<::std::string::String, u32>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.cost_time)
-    pub cost_time: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.battle_id)
-    pub battle_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.op_list)
-    pub op_list: ::std::vec::Vec<super::BattleOp::BattleOp>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.turn_snapshot_hash)
-    pub turn_snapshot_hash: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.is_auto_fight)
-    pub is_auto_fight: bool,
     // @@protoc_insertion_point(field:PVEBattleResultCsReq.client_version)
     pub client_version: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultCsReq.debug_extra_info)
-    pub debug_extra_info: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.op_list)
+    pub op_list: ::std::vec::Vec<super::BattleOp::BattleOp>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.is_auto_fight)
+    pub is_auto_fight: bool,
     // @@protoc_insertion_point(field:PVEBattleResultCsReq.client_res_version)
     pub client_res_version: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stage_id)
+    pub stage_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.cost_time)
+    pub cost_time: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.turn_snapshot_hash)
+    pub turn_snapshot_hash: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.debug_extra_info)
+    pub debug_extra_info: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.is_ai_consider_ultra_skill)
+    pub is_ai_consider_ultra_skill: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.HPEKEKIPJLF)
+    pub HPEKEKIPJLF: ::std::collections::HashMap<::std::string::String, u32>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.JCJFGOJFEGE)
+    pub JCJFGOJFEGE: u32,
     // @@protoc_insertion_point(field:PVEBattleResultCsReq.GJGKAGFPAGM)
     pub GJGKAGFPAGM: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.stt)
+    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.battle_id)
+    pub battle_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultCsReq.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:PVEBattleResultCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,44 +78,9 @@ impl PVEBattleResultCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(15);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_ai_consider_ultra_skill",
-            |m: &PVEBattleResultCsReq| { &m.is_ai_consider_ultra_skill },
-            |m: &mut PVEBattleResultCsReq| { &mut m.is_ai_consider_ultra_skill },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCJFGOJFEGE",
-            |m: &PVEBattleResultCsReq| { &m.JCJFGOJFEGE },
-            |m: &mut PVEBattleResultCsReq| { &mut m.JCJFGOJFEGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
-            "stt",
-            |m: &PVEBattleResultCsReq| { &m.stt },
-            |m: &mut PVEBattleResultCsReq| { &mut m.stt },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &PVEBattleResultCsReq| { &m.end_status },
-            |m: &mut PVEBattleResultCsReq| { &mut m.end_status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "HPEKEKIPJLF",
-            |m: &PVEBattleResultCsReq| { &m.HPEKEKIPJLF },
-            |m: &mut PVEBattleResultCsReq| { &mut m.HPEKEKIPJLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cost_time",
-            |m: &PVEBattleResultCsReq| { &m.cost_time },
-            |m: &mut PVEBattleResultCsReq| { &mut m.cost_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &PVEBattleResultCsReq| { &m.stage_id },
-            |m: &mut PVEBattleResultCsReq| { &mut m.stage_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_id",
-            |m: &PVEBattleResultCsReq| { &m.battle_id },
-            |m: &mut PVEBattleResultCsReq| { &mut m.battle_id },
+            "client_version",
+            |m: &PVEBattleResultCsReq| { &m.client_version },
+            |m: &mut PVEBattleResultCsReq| { &mut m.client_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "op_list",
@@ -123,24 +88,9 @@ impl PVEBattleResultCsReq {
             |m: &mut PVEBattleResultCsReq| { &mut m.op_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn_snapshot_hash",
-            |m: &PVEBattleResultCsReq| { &m.turn_snapshot_hash },
-            |m: &mut PVEBattleResultCsReq| { &mut m.turn_snapshot_hash },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_auto_fight",
             |m: &PVEBattleResultCsReq| { &m.is_auto_fight },
             |m: &mut PVEBattleResultCsReq| { &mut m.is_auto_fight },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_version",
-            |m: &PVEBattleResultCsReq| { &m.client_version },
-            |m: &mut PVEBattleResultCsReq| { &mut m.client_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "debug_extra_info",
-            |m: &PVEBattleResultCsReq| { &m.debug_extra_info },
-            |m: &mut PVEBattleResultCsReq| { &mut m.debug_extra_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "client_res_version",
@@ -148,9 +98,59 @@ impl PVEBattleResultCsReq {
             |m: &mut PVEBattleResultCsReq| { &mut m.client_res_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &PVEBattleResultCsReq| { &m.stage_id },
+            |m: &mut PVEBattleResultCsReq| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cost_time",
+            |m: &PVEBattleResultCsReq| { &m.cost_time },
+            |m: &mut PVEBattleResultCsReq| { &mut m.cost_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "turn_snapshot_hash",
+            |m: &PVEBattleResultCsReq| { &m.turn_snapshot_hash },
+            |m: &mut PVEBattleResultCsReq| { &mut m.turn_snapshot_hash },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "debug_extra_info",
+            |m: &PVEBattleResultCsReq| { &m.debug_extra_info },
+            |m: &mut PVEBattleResultCsReq| { &mut m.debug_extra_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_ai_consider_ultra_skill",
+            |m: &PVEBattleResultCsReq| { &m.is_ai_consider_ultra_skill },
+            |m: &mut PVEBattleResultCsReq| { &mut m.is_ai_consider_ultra_skill },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "HPEKEKIPJLF",
+            |m: &PVEBattleResultCsReq| { &m.HPEKEKIPJLF },
+            |m: &mut PVEBattleResultCsReq| { &mut m.HPEKEKIPJLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JCJFGOJFEGE",
+            |m: &PVEBattleResultCsReq| { &m.JCJFGOJFEGE },
+            |m: &mut PVEBattleResultCsReq| { &mut m.JCJFGOJFEGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GJGKAGFPAGM",
             |m: &PVEBattleResultCsReq| { &m.GJGKAGFPAGM },
             |m: &mut PVEBattleResultCsReq| { &mut m.GJGKAGFPAGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
+            "stt",
+            |m: &PVEBattleResultCsReq| { &m.stt },
+            |m: &mut PVEBattleResultCsReq| { &mut m.stt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "battle_id",
+            |m: &PVEBattleResultCsReq| { &m.battle_id },
+            |m: &mut PVEBattleResultCsReq| { &mut m.battle_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_status",
+            |m: &PVEBattleResultCsReq| { &m.end_status },
+            |m: &mut PVEBattleResultCsReq| { &mut m.end_status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PVEBattleResultCsReq>(
             "PVEBattleResultCsReq",
@@ -170,19 +170,34 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.is_ai_consider_ultra_skill = is.read_bool()?;
+                64 => {
+                    self.client_version = is.read_uint32()?;
                 },
-                8 => {
-                    self.JCJFGOJFEGE = is.read_uint32()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                122 => {
+                    self.op_list.push(is.read_message()?);
                 },
                 40 => {
-                    self.end_status = is.read_enum_or_unknown()?;
+                    self.is_auto_fight = is.read_bool()?;
+                },
+                32 => {
+                    self.client_res_version = is.read_uint32()?;
+                },
+                80 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.cost_time = is.read_uint32()?;
+                },
+                18 => {
+                    self.turn_snapshot_hash = is.read_bytes()?;
                 },
                 50 => {
+                    self.debug_extra_info = is.read_string()?;
+                },
+                8 => {
+                    self.is_ai_consider_ultra_skill = is.read_bool()?;
+                },
+                90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -197,35 +212,20 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
                     is.pop_limit(old_limit);
                     self.HPEKEKIPJLF.insert(key, value);
                 },
-                80 => {
-                    self.cost_time = is.read_uint32()?;
-                },
                 104 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.battle_id = is.read_uint32()?;
-                },
-                90 => {
-                    self.op_list.push(is.read_message()?);
-                },
-                66 => {
-                    self.turn_snapshot_hash = is.read_bytes()?;
-                },
-                120 => {
-                    self.is_auto_fight = is.read_bool()?;
-                },
-                72 => {
-                    self.client_version = is.read_uint32()?;
-                },
-                98 => {
-                    self.debug_extra_info = is.read_string()?;
-                },
-                24 => {
-                    self.client_res_version = is.read_uint32()?;
+                    self.JCJFGOJFEGE = is.read_uint32()?;
                 },
                 112 => {
                     self.GJGKAGFPAGM = is.read_bool()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                },
+                24 => {
+                    self.battle_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.end_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -239,18 +239,33 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_ai_consider_ultra_skill != false {
+        if self.client_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.client_version);
+        }
+        for value in &self.op_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.is_auto_fight != false {
             my_size += 1 + 1;
         }
-        if self.JCJFGOJFEGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JCJFGOJFEGE);
+        if self.client_res_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.client_res_version);
         }
-        if let Some(v) = self.stt.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.stage_id);
         }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.end_status.value());
+        if self.cost_time != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.cost_time);
+        }
+        if !self.turn_snapshot_hash.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(2, &self.turn_snapshot_hash);
+        }
+        if !self.debug_extra_info.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.debug_extra_info);
+        }
+        if self.is_ai_consider_ultra_skill != false {
+            my_size += 1 + 1;
         }
         for (k, v) in &self.HPEKEKIPJLF {
             let mut entry_size = 0;
@@ -258,36 +273,21 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cost_time);
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.stage_id);
-        }
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.battle_id);
-        }
-        for value in &self.op_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if !self.turn_snapshot_hash.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(8, &self.turn_snapshot_hash);
-        }
-        if self.is_auto_fight != false {
-            my_size += 1 + 1;
-        }
-        if self.client_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.client_version);
-        }
-        if !self.debug_extra_info.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.debug_extra_info);
-        }
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.client_res_version);
+        if self.JCJFGOJFEGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JCJFGOJFEGE);
         }
         if self.GJGKAGFPAGM != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.battle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.end_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -295,56 +295,56 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.client_version != 0 {
+            os.write_uint32(8, self.client_version)?;
+        }
+        for v in &self.op_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        if self.is_auto_fight != false {
+            os.write_bool(5, self.is_auto_fight)?;
+        }
+        if self.client_res_version != 0 {
+            os.write_uint32(4, self.client_res_version)?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(10, self.stage_id)?;
+        }
+        if self.cost_time != 0 {
+            os.write_uint32(9, self.cost_time)?;
+        }
+        if !self.turn_snapshot_hash.is_empty() {
+            os.write_bytes(2, &self.turn_snapshot_hash)?;
+        }
+        if !self.debug_extra_info.is_empty() {
+            os.write_string(6, &self.debug_extra_info)?;
+        }
         if self.is_ai_consider_ultra_skill != false {
-            os.write_bool(2, self.is_ai_consider_ultra_skill)?;
-        }
-        if self.JCJFGOJFEGE != 0 {
-            os.write_uint32(1, self.JCJFGOJFEGE)?;
-        }
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_bool(1, self.is_ai_consider_ultra_skill)?;
         }
         for (k, v) in &self.HPEKEKIPJLF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(90)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.cost_time != 0 {
-            os.write_uint32(10, self.cost_time)?;
-        }
-        if self.stage_id != 0 {
-            os.write_uint32(13, self.stage_id)?;
-        }
-        if self.battle_id != 0 {
-            os.write_uint32(4, self.battle_id)?;
-        }
-        for v in &self.op_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if !self.turn_snapshot_hash.is_empty() {
-            os.write_bytes(8, &self.turn_snapshot_hash)?;
-        }
-        if self.is_auto_fight != false {
-            os.write_bool(15, self.is_auto_fight)?;
-        }
-        if self.client_version != 0 {
-            os.write_uint32(9, self.client_version)?;
-        }
-        if !self.debug_extra_info.is_empty() {
-            os.write_string(12, &self.debug_extra_info)?;
-        }
-        if self.client_res_version != 0 {
-            os.write_uint32(3, self.client_res_version)?;
+        if self.JCJFGOJFEGE != 0 {
+            os.write_uint32(13, self.JCJFGOJFEGE)?;
         }
         if self.GJGKAGFPAGM != false {
             os.write_bool(14, self.GJGKAGFPAGM)?;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.battle_id != 0 {
+            os.write_uint32(3, self.battle_id)?;
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -363,21 +363,21 @@ impl ::protobuf::Message for PVEBattleResultCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_ai_consider_ultra_skill = false;
-        self.JCJFGOJFEGE = 0;
-        self.stt.clear();
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.HPEKEKIPJLF.clear();
-        self.cost_time = 0;
-        self.stage_id = 0;
-        self.battle_id = 0;
-        self.op_list.clear();
-        self.turn_snapshot_hash.clear();
-        self.is_auto_fight = false;
         self.client_version = 0;
-        self.debug_extra_info.clear();
+        self.op_list.clear();
+        self.is_auto_fight = false;
         self.client_res_version = 0;
+        self.stage_id = 0;
+        self.cost_time = 0;
+        self.turn_snapshot_hash.clear();
+        self.debug_extra_info.clear();
+        self.is_ai_consider_ultra_skill = false;
+        self.HPEKEKIPJLF.clear();
+        self.JCJFGOJFEGE = 0;
         self.GJGKAGFPAGM = false;
+        self.stt.clear();
+        self.battle_id = 0;
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.special_fields.clear();
     }
 
@@ -407,20 +407,20 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultCsReq.proto\x1a\x15BattleEndStatus.proto\x1a\x0eBat\
     tleOp.proto\x1a\x16BattleStatistics.proto\"\xc0\x05\n\x14PVEBattleResult\
-    CsReq\x12:\n\x1ais_ai_consider_ultra_skill\x18\x02\x20\x01(\x08R\x16isAi\
-    ConsiderUltraSkill\x12\x20\n\x0bJCJFGOJFEGE\x18\x01\x20\x01(\rR\x0bJCJFG\
-    OJFEGE\x12#\n\x03stt\x18\x07\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\
-    \x12/\n\nend_status\x18\x05\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatu\
-    s\x12H\n\x0bHPEKEKIPJLF\x18\x06\x20\x03(\x0b2&.PVEBattleResultCsReq.HPEK\
-    EKIPJLFEntryR\x0bHPEKEKIPJLF\x12\x1b\n\tcost_time\x18\n\x20\x01(\rR\x08c\
-    ostTime\x12\x19\n\x08stage_id\x18\r\x20\x01(\rR\x07stageId\x12\x1b\n\tba\
-    ttle_id\x18\x04\x20\x01(\rR\x08battleId\x12\"\n\x07op_list\x18\x0b\x20\
-    \x03(\x0b2\t.BattleOpR\x06opList\x12,\n\x12turn_snapshot_hash\x18\x08\
-    \x20\x01(\x0cR\x10turnSnapshotHash\x12\"\n\ris_auto_fight\x18\x0f\x20\
-    \x01(\x08R\x0bisAutoFight\x12%\n\x0eclient_version\x18\t\x20\x01(\rR\rcl\
-    ientVersion\x12(\n\x10debug_extra_info\x18\x0c\x20\x01(\tR\x0edebugExtra\
-    Info\x12,\n\x12client_res_version\x18\x03\x20\x01(\rR\x10clientResVersio\
-    n\x12\x20\n\x0bGJGKAGFPAGM\x18\x0e\x20\x01(\x08R\x0bGJGKAGFPAGM\x1a>\n\
+    CsReq\x12%\n\x0eclient_version\x18\x08\x20\x01(\rR\rclientVersion\x12\"\
+    \n\x07op_list\x18\x0f\x20\x03(\x0b2\t.BattleOpR\x06opList\x12\"\n\ris_au\
+    to_fight\x18\x05\x20\x01(\x08R\x0bisAutoFight\x12,\n\x12client_res_versi\
+    on\x18\x04\x20\x01(\rR\x10clientResVersion\x12\x19\n\x08stage_id\x18\n\
+    \x20\x01(\rR\x07stageId\x12\x1b\n\tcost_time\x18\t\x20\x01(\rR\x08costTi\
+    me\x12,\n\x12turn_snapshot_hash\x18\x02\x20\x01(\x0cR\x10turnSnapshotHas\
+    h\x12(\n\x10debug_extra_info\x18\x06\x20\x01(\tR\x0edebugExtraInfo\x12:\
+    \n\x1ais_ai_consider_ultra_skill\x18\x01\x20\x01(\x08R\x16isAiConsiderUl\
+    traSkill\x12H\n\x0bHPEKEKIPJLF\x18\x0b\x20\x03(\x0b2&.PVEBattleResultCsR\
+    eq.HPEKEKIPJLFEntryR\x0bHPEKEKIPJLF\x12\x20\n\x0bJCJFGOJFEGE\x18\r\x20\
+    \x01(\rR\x0bJCJFGOJFEGE\x12\x20\n\x0bGJGKAGFPAGM\x18\x0e\x20\x01(\x08R\
+    \x0bGJGKAGFPAGM\x12#\n\x03stt\x18\x0c\x20\x01(\x0b2\x11.BattleStatistics\
+    R\x03stt\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\x08battleId\x12/\n\nen\
+    d_status\x18\x07\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatus\x1a>\n\
     \x10HPEKEKIPJLFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\
     \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

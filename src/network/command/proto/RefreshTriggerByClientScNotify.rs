@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_name)
-    pub trigger_name: ::std::string::String,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_target_id_list)
     pub trigger_target_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_name)
+    pub trigger_name: ::std::string::String,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_entity_id)
     pub trigger_entity_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RefreshTriggerByClientScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_name",
-            |m: &RefreshTriggerByClientScNotify| { &m.trigger_name },
-            |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_name },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trigger_target_id_list",
             |m: &RefreshTriggerByClientScNotify| { &m.trigger_target_id_list },
             |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_target_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trigger_name",
+            |m: &RefreshTriggerByClientScNotify| { &m.trigger_name },
+            |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_entity_id",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.trigger_name = is.read_string()?;
-                },
                 106 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
                 104 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
-                64 => {
+                10 => {
+                    self.trigger_name = is.read_string()?;
+                },
+                96 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.trigger_name);
-        }
         my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.trigger_target_id_list);
+        if !self.trigger_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.trigger_name);
+        }
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.trigger_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.trigger_name.is_empty() {
-            os.write_string(11, &self.trigger_name)?;
-        }
         os.write_repeated_packed_uint32(13, &self.trigger_target_id_list)?;
+        if !self.trigger_name.is_empty() {
+            os.write_string(1, &self.trigger_name)?;
+        }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(8, self.trigger_entity_id)?;
+            os.write_uint32(12, self.trigger_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     }
 
     fn clear(&mut self) {
-        self.trigger_name.clear();
         self.trigger_target_id_list.clear();
+        self.trigger_name.clear();
         self.trigger_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientScNotify {
         static instance: RefreshTriggerByClientScNotify = RefreshTriggerByClientScNotify {
-            trigger_name: ::std::string::String::new(),
             trigger_target_id_list: ::std::vec::Vec::new(),
+            trigger_name: ::std::string::String::new(),
             trigger_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RefreshTriggerByClientScNotify.proto\"\xa4\x01\n\x1eRefreshTriggerByC\
-    lientScNotify\x12!\n\x0ctrigger_name\x18\x0b\x20\x01(\tR\x0btriggerName\
-    \x123\n\x16trigger_target_id_list\x18\r\x20\x03(\rR\x13triggerTargetIdLi\
-    st\x12*\n\x11trigger_entity_id\x18\x08\x20\x01(\rR\x0ftriggerEntityIdb\
+    lientScNotify\x123\n\x16trigger_target_id_list\x18\r\x20\x03(\rR\x13trig\
+    gerTargetIdList\x12!\n\x0ctrigger_name\x18\x01\x20\x01(\tR\x0btriggerNam\
+    e\x12*\n\x11trigger_entity_id\x18\x0c\x20\x01(\rR\x0ftriggerEntityIdb\
     \x06proto3\
 ";
 

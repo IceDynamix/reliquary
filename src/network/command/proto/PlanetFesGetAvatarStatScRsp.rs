@@ -82,7 +82,7 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
                 104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                26 => {
                     self.OEBAFBIGMBC.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
             os.write_uint32(13, self.retcode)?;
         }
         for v in &self.OEBAFBIGMBC {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetAvatarStatScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesGetAvatarStatScRsp.proto\x1a\x11NPAIINEKEFB.proto\"g\n\x1bPl\
     anetFesGetAvatarStatScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bOEBAFBIGMBC\x18\t\x20\x03(\x0b2\x0c.NPAIINEKEFBR\x0bOEBAFB\
-    IGMBCb\x06proto3\
+    ode\x12.\n\x0bOEBAFBIGMBC\x18\x03\x20\x03(\x0b2\x0c.NPAIINEKEFBR\x0bOEBA\
+    FBIGMBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

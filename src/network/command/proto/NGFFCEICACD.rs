@@ -48,7 +48,7 @@ impl NGFFCEICACD {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 3;
+    // .ItemList JDIJKEGCIBP = 6;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
         match self.OKDDFLKAPGM {
@@ -97,7 +97,7 @@ impl NGFFCEICACD {
         }
     }
 
-    // .OOBCEJFEHMK CNDGJJLJDOF = 5;
+    // .OOBCEJFEHMK CNDGJJLJDOF = 7;
 
     pub fn CNDGJJLJDOF(&self) -> &super::OOBCEJFEHMK::OOBCEJFEHMK {
         match self.OKDDFLKAPGM {
@@ -187,13 +187,13 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
                     self.EBNPOCIDPKE = is.read_uint32()?;
                 },
-                26 => {
+                50 => {
                     self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(is.read_message()?));
                 },
-                42 => {
+                58 => {
                     self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(is.read_message()?));
                 },
                 tag => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EBNPOCIDPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EBNPOCIDPKE);
+            my_size += ::protobuf::rt::uint32_size(1, self.EBNPOCIDPKE);
         }
         if let ::std::option::Option::Some(ref v) = self.OKDDFLKAPGM {
             match v {
@@ -230,15 +230,15 @@ impl ::protobuf::Message for NGFFCEICACD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBNPOCIDPKE != 0 {
-            os.write_uint32(15, self.EBNPOCIDPKE)?;
+            os.write_uint32(1, self.EBNPOCIDPKE)?;
         }
         if let ::std::option::Option::Some(ref v) = self.OKDDFLKAPGM {
             match v {
                 &ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -324,9 +324,9 @@ pub mod ngffceicacd {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGFFCEICACD.proto\x1a\x0eItemList.proto\x1a\x11OOBCEJFEHMK.proto\"\
-    \x9f\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x0f\x20\x01(\rR\
-    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x03\x20\x01(\x0b2\t.ItemListH\
-    \0R\x0bJDIJKEGCIBP\x120\n\x0bCNDGJJLJDOF\x18\x05\x20\x01(\x0b2\x0c.OOBCE\
+    \x9f\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x01\x20\x01(\rR\
+    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x06\x20\x01(\x0b2\t.ItemListH\
+    \0R\x0bJDIJKEGCIBP\x120\n\x0bCNDGJJLJDOF\x18\x07\x20\x01(\x0b2\x0c.OOBCE\
     JFEHMKH\0R\x0bCNDGJJLJDOFB\r\n\x0bOKDDFLKAPGMb\x06proto3\
 ";
 

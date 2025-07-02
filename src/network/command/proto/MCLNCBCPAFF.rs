@@ -79,13 +79,13 @@ impl ::protobuf::Message for MCLNCBCPAFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.area_id = is.read_uint32()?;
                 },
-                106 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.CGFIHJCCGCD)?;
                 },
-                104 => {
+                72 => {
                     self.CGFIHJCCGCD.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for MCLNCBCPAFF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CGFIHJCCGCD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CGFIHJCCGCD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for MCLNCBCPAFF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(2, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
         }
-        os.write_repeated_packed_uint32(13, &self.CGFIHJCCGCD)?;
+        os.write_repeated_packed_uint32(9, &self.CGFIHJCCGCD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for MCLNCBCPAFF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MCLNCBCPAFF.proto\"H\n\x0bMCLNCBCPAFF\x12\x17\n\x07area_id\x18\x02\
-    \x20\x01(\rR\x06areaId\x12\x20\n\x0bCGFIHJCCGCD\x18\r\x20\x03(\rR\x0bCGF\
+    \n\x11MCLNCBCPAFF.proto\"H\n\x0bMCLNCBCPAFF\x12\x17\n\x07area_id\x18\x03\
+    \x20\x01(\rR\x06areaId\x12\x20\n\x0bCGFIHJCCGCD\x18\t\x20\x03(\rR\x0bCGF\
     IHJCCGCDb\x06proto3\
 ";
 

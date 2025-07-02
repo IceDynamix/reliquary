@@ -79,10 +79,10 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.EIDDMGHLPBP = is.read_bool()?;
                 },
-                8 => {
+                56 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
             my_size += 1 + 1;
         }
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EIDDMGHLPBP != false {
-            os.write_bool(5, self.EIDDMGHLPBP)?;
+            os.write_bool(14, self.EIDDMGHLPBP)?;
         }
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(1, self.interacted_prop_entity_id)?;
+            os.write_uint32(7, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19OpenRogueChestCsReq.proto\"r\n\x13OpenRogueChestCsReq\x12\x20\n\
-    \x0bEIDDMGHLPBP\x18\x05\x20\x01(\x08R\x0bEIDDMGHLPBP\x129\n\x19interacte\
-    d_prop_entity_id\x18\x01\x20\x01(\rR\x16interactedPropEntityIdb\x06proto\
+    \x0bEIDDMGHLPBP\x18\x0e\x20\x01(\x08R\x0bEIDDMGHLPBP\x129\n\x19interacte\
+    d_prop_entity_id\x18\x07\x20\x01(\rR\x16interactedPropEntityIdb\x06proto\
     3\
 ";
 

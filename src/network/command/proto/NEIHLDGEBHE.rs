@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NEIHLDGEBHE {
     // message fields
-    // @@protoc_insertion_point(field:NEIHLDGEBHE.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:NEIHLDGEBHE.JKJNCNCLFLD)
     pub JKJNCNCLFLD: u32,
     // @@protoc_insertion_point(field:NEIHLDGEBHE.LPDEOPGELLE)
     pub LPDEOPGELLE: ::protobuf::MessageField<super::BFAAEFCEJPA::BFAAEFCEJPA>,
+    // @@protoc_insertion_point(field:NEIHLDGEBHE.avatar_id)
+    pub avatar_id: u32,
     // @@protoc_insertion_point(field:NEIHLDGEBHE.FLJPKFJAJFP)
     pub FLJPKFJAJFP: u32,
     // special fields
@@ -56,11 +56,6 @@ impl NEIHLDGEBHE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &NEIHLDGEBHE| { &m.avatar_id },
-            |m: &mut NEIHLDGEBHE| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JKJNCNCLFLD",
             |m: &NEIHLDGEBHE| { &m.JKJNCNCLFLD },
             |m: &mut NEIHLDGEBHE| { &mut m.JKJNCNCLFLD },
@@ -69,6 +64,11 @@ impl NEIHLDGEBHE {
             "LPDEOPGELLE",
             |m: &NEIHLDGEBHE| { &m.LPDEOPGELLE },
             |m: &mut NEIHLDGEBHE| { &mut m.LPDEOPGELLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &NEIHLDGEBHE| { &m.avatar_id },
+            |m: &mut NEIHLDGEBHE| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLJPKFJAJFP",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for NEIHLDGEBHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                96 => {
+                40 => {
                     self.JKJNCNCLFLD = is.read_uint32()?;
                 },
-                34 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPDEOPGELLE)?;
                 },
                 120 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                32 => {
                     self.FLJPKFJAJFP = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for NEIHLDGEBHE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
-        }
         if self.JKJNCNCLFLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JKJNCNCLFLD);
+            my_size += ::protobuf::rt::uint32_size(5, self.JKJNCNCLFLD);
         }
         if let Some(v) = self.LPDEOPGELLE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
+        }
         if self.FLJPKFJAJFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FLJPKFJAJFP);
+            my_size += ::protobuf::rt::uint32_size(4, self.FLJPKFJAJFP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for NEIHLDGEBHE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(8, self.avatar_id)?;
-        }
         if self.JKJNCNCLFLD != 0 {
-            os.write_uint32(12, self.JKJNCNCLFLD)?;
+            os.write_uint32(5, self.JKJNCNCLFLD)?;
         }
         if let Some(v) = self.LPDEOPGELLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(15, self.avatar_id)?;
         }
         if self.FLJPKFJAJFP != 0 {
-            os.write_uint32(15, self.FLJPKFJAJFP)?;
+            os.write_uint32(4, self.FLJPKFJAJFP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for NEIHLDGEBHE {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
         self.JKJNCNCLFLD = 0;
         self.LPDEOPGELLE.clear();
+        self.avatar_id = 0;
         self.FLJPKFJAJFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEIHLDGEBHE {
         static instance: NEIHLDGEBHE = NEIHLDGEBHE {
-            avatar_id: 0,
             JKJNCNCLFLD: 0,
             LPDEOPGELLE: ::protobuf::MessageField::none(),
+            avatar_id: 0,
             FLJPKFJAJFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for NEIHLDGEBHE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEIHLDGEBHE.proto\x1a\x11BFAAEFCEJPA.proto\"\x9e\x01\n\x0bNEIHLDGE\
-    BHE\x12\x1b\n\tavatar_id\x18\x08\x20\x01(\rR\x08avatarId\x12\x20\n\x0bJK\
-    JNCNCLFLD\x18\x0c\x20\x01(\rR\x0bJKJNCNCLFLD\x12.\n\x0bLPDEOPGELLE\x18\
-    \x04\x20\x01(\x0b2\x0c.BFAAEFCEJPAR\x0bLPDEOPGELLE\x12\x20\n\x0bFLJPKFJA\
-    JFP\x18\x0f\x20\x01(\rR\x0bFLJPKFJAJFPb\x06proto3\
+    BHE\x12\x20\n\x0bJKJNCNCLFLD\x18\x05\x20\x01(\rR\x0bJKJNCNCLFLD\x12.\n\
+    \x0bLPDEOPGELLE\x18\x08\x20\x01(\x0b2\x0c.BFAAEFCEJPAR\x0bLPDEOPGELLE\
+    \x12\x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\x08avatarId\x12\x20\n\x0bFLJPK\
+    FJAJFP\x18\x04\x20\x01(\rR\x0bFLJPKFJAJFPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

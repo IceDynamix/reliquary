@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.BHNFGPEHOMO)?;
                 },
-                8 => {
+                16 => {
                     self.BHNFGPEHOMO.push(is.read_uint32()?);
                 },
                 48 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BHNFGPEHOMO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.BHNFGPEHOMO);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.BHNFGPEHOMO)?;
+        os.write_repeated_packed_uint32(2, &self.BHNFGPEHOMO)?;
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingTurnActionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingTurnActionScRsp.proto\"Z\n\x1cSwordTrainingTurnActionSc\
-    Rsp\x12\x20\n\x0bBHNFGPEHOMO\x18\x01\x20\x03(\rR\x0bBHNFGPEHOMO\x12\x18\
+    Rsp\x12\x20\n\x0bBHNFGPEHOMO\x18\x02\x20\x03(\rR\x0bBHNFGPEHOMO\x12\x18\
     \n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

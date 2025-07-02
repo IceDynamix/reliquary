@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyRogueShopFormulaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyRogueShopFormulaCsReq.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:BuyRogueShopFormulaCsReq.rogue_buff_info)
-    pub rogue_buff_info: ::protobuf::MessageField<super::ANJDKFJOEEI::ANJDKFJOEEI>,
+    // @@protoc_insertion_point(field:BuyRogueShopFormulaCsReq.AOIIHCFMFPH)
+    pub AOIIHCFMFPH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BuyRogueShopFormulaCsReq.interacted_prop_entity_id)
+    pub interacted_prop_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyRogueShopFormulaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BuyRogueShopFormulaCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &BuyRogueShopFormulaCsReq| { &m.retcode },
-            |m: &mut BuyRogueShopFormulaCsReq| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AOIIHCFMFPH",
+            |m: &BuyRogueShopFormulaCsReq| { &m.AOIIHCFMFPH },
+            |m: &mut BuyRogueShopFormulaCsReq| { &mut m.AOIIHCFMFPH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANJDKFJOEEI::ANJDKFJOEEI>(
-            "rogue_buff_info",
-            |m: &BuyRogueShopFormulaCsReq| { &m.rogue_buff_info },
-            |m: &mut BuyRogueShopFormulaCsReq| { &mut m.rogue_buff_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interacted_prop_entity_id",
+            |m: &BuyRogueShopFormulaCsReq| { &m.interacted_prop_entity_id },
+            |m: &mut BuyRogueShopFormulaCsReq| { &mut m.interacted_prop_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyRogueShopFormulaCsReq>(
             "BuyRogueShopFormulaCsReq",
@@ -79,11 +79,14 @@ impl ::protobuf::Message for BuyRogueShopFormulaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AOIIHCFMFPH)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
+                64 => {
+                    self.AOIIHCFMFPH.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +100,9 @@ impl ::protobuf::Message for BuyRogueShopFormulaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.AOIIHCFMFPH);
+        if self.interacted_prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,9 @@ impl ::protobuf::Message for BuyRogueShopFormulaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        os.write_repeated_packed_uint32(8, &self.AOIIHCFMFPH)?;
+        if self.interacted_prop_entity_id != 0 {
+            os.write_uint32(9, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +131,15 @@ impl ::protobuf::Message for BuyRogueShopFormulaCsReq {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.rogue_buff_info.clear();
+        self.AOIIHCFMFPH.clear();
+        self.interacted_prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyRogueShopFormulaCsReq {
         static instance: BuyRogueShopFormulaCsReq = BuyRogueShopFormulaCsReq {
-            retcode: 0,
-            rogue_buff_info: ::protobuf::MessageField::none(),
+            AOIIHCFMFPH: ::std::vec::Vec::new(),
+            interacted_prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +164,10 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopFormulaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eBuyRogueShopFormulaCsReq.proto\x1a\x11ANJDKFJOEEI.proto\"j\n\x18Bu\
-    yRogueShopFormulaCsReq\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retco\
-    de\x124\n\x0frogue_buff_info\x18\r\x20\x01(\x0b2\x0c.ANJDKFJOEEIR\rrogue\
-    BuffInfob\x06proto3\
+    \n\x1eBuyRogueShopFormulaCsReq.proto\"w\n\x18BuyRogueShopFormulaCsReq\
+    \x12\x20\n\x0bAOIIHCFMFPH\x18\x08\x20\x03(\rR\x0bAOIIHCFMFPH\x129\n\x19i\
+    nteracted_prop_entity_id\x18\t\x20\x01(\rR\x16interactedPropEntityIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,8 +184,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ANJDKFJOEEI::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BuyRogueShopFormulaCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

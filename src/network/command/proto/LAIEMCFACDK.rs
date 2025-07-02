@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LAIEMCFACDK {
     // message fields
+    // @@protoc_insertion_point(field:LAIEMCFACDK.AAHAPCBILHC)
+    pub AAHAPCBILHC: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:LAIEMCFACDK.ALGHCNAJBMM)
     pub ALGHCNAJBMM: u32,
     // @@protoc_insertion_point(field:LAIEMCFACDK.PGHCKCPKGLL)
     pub PGHCKCPKGLL: u32,
-    // @@protoc_insertion_point(field:LAIEMCFACDK.AAHAPCBILHC)
-    pub AAHAPCBILHC: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LAIEMCFACDK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl LAIEMCFACDK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "AAHAPCBILHC",
+            |m: &LAIEMCFACDK| { &m.AAHAPCBILHC },
+            |m: &mut LAIEMCFACDK| { &mut m.AAHAPCBILHC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALGHCNAJBMM",
             |m: &LAIEMCFACDK| { &m.ALGHCNAJBMM },
@@ -62,11 +67,6 @@ impl LAIEMCFACDK {
             "PGHCKCPKGLL",
             |m: &LAIEMCFACDK| { &m.PGHCKCPKGLL },
             |m: &mut LAIEMCFACDK| { &mut m.PGHCKCPKGLL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "AAHAPCBILHC",
-            |m: &LAIEMCFACDK| { &m.AAHAPCBILHC },
-            |m: &mut LAIEMCFACDK| { &mut m.AAHAPCBILHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LAIEMCFACDK>(
             "LAIEMCFACDK",
@@ -86,13 +86,7 @@ impl ::protobuf::Message for LAIEMCFACDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ALGHCNAJBMM = is.read_uint32()?;
-                },
-                56 => {
-                    self.PGHCKCPKGLL = is.read_uint32()?;
-                },
-                82 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -107,6 +101,12 @@ impl ::protobuf::Message for LAIEMCFACDK {
                     is.pop_limit(old_limit);
                     self.AAHAPCBILHC.insert(key, value);
                 },
+                64 => {
+                    self.ALGHCNAJBMM = is.read_uint32()?;
+                },
+                72 => {
+                    self.PGHCKCPKGLL = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -119,39 +119,39 @@ impl ::protobuf::Message for LAIEMCFACDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALGHCNAJBMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ALGHCNAJBMM);
-        }
-        if self.PGHCKCPKGLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PGHCKCPKGLL);
-        }
         for (k, v) in &self.AAHAPCBILHC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.ALGHCNAJBMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ALGHCNAJBMM);
+        }
+        if self.PGHCKCPKGLL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PGHCKCPKGLL);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALGHCNAJBMM != 0 {
-            os.write_uint32(6, self.ALGHCNAJBMM)?;
-        }
-        if self.PGHCKCPKGLL != 0 {
-            os.write_uint32(7, self.PGHCKCPKGLL)?;
-        }
         for (k, v) in &self.AAHAPCBILHC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        if self.ALGHCNAJBMM != 0 {
+            os.write_uint32(8, self.ALGHCNAJBMM)?;
+        }
+        if self.PGHCKCPKGLL != 0 {
+            os.write_uint32(9, self.PGHCKCPKGLL)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,9 +169,9 @@ impl ::protobuf::Message for LAIEMCFACDK {
     }
 
     fn clear(&mut self) {
+        self.AAHAPCBILHC.clear();
         self.ALGHCNAJBMM = 0;
         self.PGHCKCPKGLL = 0;
-        self.AAHAPCBILHC.clear();
         self.special_fields.clear();
     }
 
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for LAIEMCFACDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LAIEMCFACDK.proto\"\xd2\x01\n\x0bLAIEMCFACDK\x12\x20\n\x0bALGHCNAJ\
-    BMM\x18\x06\x20\x01(\rR\x0bALGHCNAJBMM\x12\x20\n\x0bPGHCKCPKGLL\x18\x07\
-    \x20\x01(\rR\x0bPGHCKCPKGLL\x12?\n\x0bAAHAPCBILHC\x18\n\x20\x03(\x0b2\
-    \x1d.LAIEMCFACDK.AAHAPCBILHCEntryR\x0bAAHAPCBILHC\x1a>\n\x10AAHAPCBILHCE\
-    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
+    \n\x11LAIEMCFACDK.proto\"\xd2\x01\n\x0bLAIEMCFACDK\x12?\n\x0bAAHAPCBILHC\
+    \x18\r\x20\x03(\x0b2\x1d.LAIEMCFACDK.AAHAPCBILHCEntryR\x0bAAHAPCBILHC\
+    \x12\x20\n\x0bALGHCNAJBMM\x18\x08\x20\x01(\rR\x0bALGHCNAJBMM\x12\x20\n\
+    \x0bPGHCKCPKGLL\x18\t\x20\x01(\rR\x0bPGHCKCPKGLL\x1a>\n\x10AAHAPCBILHCEn\
+    try\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
     \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

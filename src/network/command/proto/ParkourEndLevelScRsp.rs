@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ParkourEndLevelScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.end_reason)
-    pub end_reason: ::protobuf::EnumOrUnknown<super::POAHABDKPKJ::POAHABDKPKJ>,
     // @@protoc_insertion_point(field:ParkourEndLevelScRsp.ACJCPHIFMLN)
     pub ACJCPHIFMLN: u32,
     // @@protoc_insertion_point(field:ParkourEndLevelScRsp.KKEHMBPJOOC)
     pub KKEHMBPJOOC: bool,
-    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.BLMDKJKOIOH)
-    pub BLMDKJKOIOH: ::protobuf::MessageField<super::GGDEMGBOFGO::GGDEMGBOFGO>,
     // @@protoc_insertion_point(field:ParkourEndLevelScRsp.FDGMOEOAJKP)
     pub FDGMOEOAJKP: bool,
-    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ParkourEndLevelScRsp.time)
     pub time: u32,
+    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.end_reason)
+    pub end_reason: ::protobuf::EnumOrUnknown<super::POAHABDKPKJ::POAHABDKPKJ>,
+    // @@protoc_insertion_point(field:ParkourEndLevelScRsp.BLMDKJKOIOH)
+    pub BLMDKJKOIOH: ::protobuf::MessageField<super::GGDEMGBOFGO::GGDEMGBOFGO>,
     // special fields
     // @@protoc_insertion_point(special_field:ParkourEndLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,11 +62,6 @@ impl ParkourEndLevelScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_reason",
-            |m: &ParkourEndLevelScRsp| { &m.end_reason },
-            |m: &mut ParkourEndLevelScRsp| { &mut m.end_reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACJCPHIFMLN",
             |m: &ParkourEndLevelScRsp| { &m.ACJCPHIFMLN },
             |m: &mut ParkourEndLevelScRsp| { &mut m.ACJCPHIFMLN },
@@ -76,15 +71,15 @@ impl ParkourEndLevelScRsp {
             |m: &ParkourEndLevelScRsp| { &m.KKEHMBPJOOC },
             |m: &mut ParkourEndLevelScRsp| { &mut m.KKEHMBPJOOC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGDEMGBOFGO::GGDEMGBOFGO>(
-            "BLMDKJKOIOH",
-            |m: &ParkourEndLevelScRsp| { &m.BLMDKJKOIOH },
-            |m: &mut ParkourEndLevelScRsp| { &mut m.BLMDKJKOIOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDGMOEOAJKP",
             |m: &ParkourEndLevelScRsp| { &m.FDGMOEOAJKP },
             |m: &mut ParkourEndLevelScRsp| { &mut m.FDGMOEOAJKP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "time",
+            |m: &ParkourEndLevelScRsp| { &m.time },
+            |m: &mut ParkourEndLevelScRsp| { &mut m.time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -92,9 +87,14 @@ impl ParkourEndLevelScRsp {
             |m: &mut ParkourEndLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "time",
-            |m: &ParkourEndLevelScRsp| { &m.time },
-            |m: &mut ParkourEndLevelScRsp| { &mut m.time },
+            "end_reason",
+            |m: &ParkourEndLevelScRsp| { &m.end_reason },
+            |m: &mut ParkourEndLevelScRsp| { &mut m.end_reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGDEMGBOFGO::GGDEMGBOFGO>(
+            "BLMDKJKOIOH",
+            |m: &ParkourEndLevelScRsp| { &m.BLMDKJKOIOH },
+            |m: &mut ParkourEndLevelScRsp| { &mut m.BLMDKJKOIOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ParkourEndLevelScRsp>(
             "ParkourEndLevelScRsp",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ParkourEndLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.end_reason = is.read_enum_or_unknown()?;
-                },
-                88 => {
+                48 => {
                     self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 96 => {
                     self.KKEHMBPJOOC = is.read_bool()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLMDKJKOIOH)?;
-                },
-                8 => {
+                32 => {
                     self.FDGMOEOAJKP = is.read_bool()?;
                 },
-                72 => {
+                80 => {
+                    self.time = is.read_uint32()?;
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
-                    self.time = is.read_uint32()?;
+                120 => {
+                    self.end_reason = is.read_enum_or_unknown()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLMDKJKOIOH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ParkourEndLevelScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.end_reason.value());
-        }
         if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ACJCPHIFMLN);
+            my_size += ::protobuf::rt::uint32_size(6, self.ACJCPHIFMLN);
         }
         if self.KKEHMBPJOOC != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.BLMDKJKOIOH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.FDGMOEOAJKP != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.time != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.time);
+            my_size += ::protobuf::rt::uint32_size(10, self.time);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.end_reason.value());
+        }
+        if let Some(v) = self.BLMDKJKOIOH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for ParkourEndLevelScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
-        }
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(11, self.ACJCPHIFMLN)?;
+            os.write_uint32(6, self.ACJCPHIFMLN)?;
         }
         if self.KKEHMBPJOOC != false {
             os.write_bool(12, self.KKEHMBPJOOC)?;
         }
-        if let Some(v) = self.BLMDKJKOIOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.FDGMOEOAJKP != false {
-            os.write_bool(1, self.FDGMOEOAJKP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_bool(4, self.FDGMOEOAJKP)?;
         }
         if self.time != 0 {
-            os.write_uint32(13, self.time)?;
+            os.write_uint32(10, self.time)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
+        }
+        if let Some(v) = self.BLMDKJKOIOH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for ParkourEndLevelScRsp {
     }
 
     fn clear(&mut self) {
-        self.end_reason = ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE);
         self.ACJCPHIFMLN = 0;
         self.KKEHMBPJOOC = false;
-        self.BLMDKJKOIOH.clear();
         self.FDGMOEOAJKP = false;
-        self.retcode = 0;
         self.time = 0;
+        self.retcode = 0;
+        self.end_reason = ::protobuf::EnumOrUnknown::new(super::POAHABDKPKJ::POAHABDKPKJ::PARKOUR_END_LEVEL_REASON_NONE);
+        self.BLMDKJKOIOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourEndLevelScRsp {
         static instance: ParkourEndLevelScRsp = ParkourEndLevelScRsp {
-            end_reason: ::protobuf::EnumOrUnknown::from_i32(0),
             ACJCPHIFMLN: 0,
             KKEHMBPJOOC: false,
-            BLMDKJKOIOH: ::protobuf::MessageField::none(),
             FDGMOEOAJKP: false,
-            retcode: 0,
             time: 0,
+            retcode: 0,
+            end_reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            BLMDKJKOIOH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,13 @@ impl ::protobuf::reflect::ProtobufValue for ParkourEndLevelScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aParkourEndLevelScRsp.proto\x1a\x11GGDEMGBOFGO.proto\x1a\x11POAHABD\
-    KPKJ.proto\"\x87\x02\n\x14ParkourEndLevelScRsp\x12+\n\nend_reason\x18\n\
-    \x20\x01(\x0e2\x0c.POAHABDKPKJR\tendReason\x12\x20\n\x0bACJCPHIFMLN\x18\
-    \x0b\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bKKEHMBPJOOC\x18\x0c\x20\x01\
-    (\x08R\x0bKKEHMBPJOOC\x12.\n\x0bBLMDKJKOIOH\x18\x02\x20\x01(\x0b2\x0c.GG\
-    DEMGBOFGOR\x0bBLMDKJKOIOH\x12\x20\n\x0bFDGMOEOAJKP\x18\x01\x20\x01(\x08R\
-    \x0bFDGMOEOAJKP\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\
-    \x12\n\x04time\x18\r\x20\x01(\rR\x04timeb\x06proto3\
+    KPKJ.proto\"\x87\x02\n\x14ParkourEndLevelScRsp\x12\x20\n\x0bACJCPHIFMLN\
+    \x18\x06\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bKKEHMBPJOOC\x18\x0c\x20\
+    \x01(\x08R\x0bKKEHMBPJOOC\x12\x20\n\x0bFDGMOEOAJKP\x18\x04\x20\x01(\x08R\
+    \x0bFDGMOEOAJKP\x12\x12\n\x04time\x18\n\x20\x01(\rR\x04time\x12\x18\n\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12+\n\nend_reason\x18\x0f\
+    \x20\x01(\x0e2\x0c.POAHABDKPKJR\tendReason\x12.\n\x0bBLMDKJKOIOH\x18\x0e\
+    \x20\x01(\x0b2\x0c.GGDEMGBOFGOR\x0bBLMDKJKOIOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

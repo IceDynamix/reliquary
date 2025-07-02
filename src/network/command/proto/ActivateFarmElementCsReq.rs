@@ -79,10 +79,10 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                104 => {
+                16 => {
                     self.world_level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.entity_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.entity_id);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entity_id != 0 {
-            os.write_uint32(5, self.entity_id)?;
+            os.write_uint32(6, self.entity_id)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(13, self.world_level)?;
+            os.write_uint32(2, self.world_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ActivateFarmElementCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eActivateFarmElementCsReq.proto\"X\n\x18ActivateFarmElementCsReq\
-    \x12\x1b\n\tentity_id\x18\x05\x20\x01(\rR\x08entityId\x12\x1f\n\x0bworld\
-    _level\x18\r\x20\x01(\rR\nworldLevelb\x06proto3\
+    \x12\x1b\n\tentity_id\x18\x06\x20\x01(\rR\x08entityId\x12\x1f\n\x0bworld\
+    _level\x18\x02\x20\x01(\rR\nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

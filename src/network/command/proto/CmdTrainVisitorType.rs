@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTrainVisitorType {
     // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorTypeNone)
     CmdTrainVisitorTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdShowNewSupplementVisitorCsReq)
-    CmdShowNewSupplementVisitorCsReq = 3772,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorRewardSendNotify)
-    CmdTrainVisitorRewardSendNotify = 3748,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorRegisterCsReq)
-    CmdGetTrainVisitorRegisterCsReq = 3771,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdShowNewSupplementVisitorScRsp)
-    CmdShowNewSupplementVisitorScRsp = 3785,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorUntakenBehaviorRewardCsReq)
-    CmdTakeTrainVisitorUntakenBehaviorRewardCsReq = 3722,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorBehaviorScRsp)
-    CmdGetTrainVisitorBehaviorScRsp = 3740,
     // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorBehaviorFinishScRsp)
-    CmdTrainVisitorBehaviorFinishScRsp = 3732,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorBehaviorCsReq)
-    CmdGetTrainVisitorBehaviorCsReq = 3731,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorUntakenBehaviorRewardScRsp)
-    CmdTakeTrainVisitorUntakenBehaviorRewardScRsp = 3756,
+    CmdTrainVisitorBehaviorFinishScRsp = 3791,
     // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorRegisterScRsp)
-    CmdGetTrainVisitorRegisterScRsp = 3752,
+    CmdGetTrainVisitorRegisterScRsp = 3759,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorBehaviorCsReq)
+    CmdGetTrainVisitorBehaviorCsReq = 3767,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorRewardSendNotify)
+    CmdTrainVisitorRewardSendNotify = 3721,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorRegisterCsReq)
+    CmdGetTrainVisitorRegisterCsReq = 3770,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorUntakenBehaviorRewardCsReq)
+    CmdTakeTrainVisitorUntakenBehaviorRewardCsReq = 3754,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorBehaviorScRsp)
+    CmdGetTrainVisitorBehaviorScRsp = 3739,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorUntakenBehaviorRewardScRsp)
+    CmdTakeTrainVisitorUntakenBehaviorRewardScRsp = 3777,
     // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorBehaviorFinishCsReq)
-    CmdTrainVisitorBehaviorFinishCsReq = 3795,
+    CmdTrainVisitorBehaviorFinishCsReq = 3720,
     // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainRefreshTimeNotify)
-    CmdTrainRefreshTimeNotify = 3776,
+    CmdTrainRefreshTimeNotify = 3727,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdShowNewSupplementVisitorCsReq)
+    CmdShowNewSupplementVisitorCsReq = 3780,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdShowNewSupplementVisitorScRsp)
+    CmdShowNewSupplementVisitorScRsp = 3702,
 }
 
 impl ::protobuf::Enum for CmdTrainVisitorType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdTrainVisitorType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainVisitorType> {
         match value {
             0 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorTypeNone),
-            3772 => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq),
-            3748 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify),
-            3771 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq),
-            3785 => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp),
-            3722 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq),
-            3740 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp),
-            3732 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
-            3731 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq),
-            3756 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp),
-            3752 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
-            3795 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq),
-            3776 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainRefreshTimeNotify),
+            3791 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
+            3759 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
+            3767 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq),
+            3721 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify),
+            3770 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq),
+            3754 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq),
+            3739 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp),
+            3777 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp),
+            3720 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq),
+            3727 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainRefreshTimeNotify),
+            3780 => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq),
+            3702 => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdTrainVisitorType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainVisitorType> {
         match str {
             "CmdTrainVisitorTypeNone" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorTypeNone),
-            "CmdShowNewSupplementVisitorCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq),
+            "CmdTrainVisitorBehaviorFinishScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
+            "CmdGetTrainVisitorRegisterScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
+            "CmdGetTrainVisitorBehaviorCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq),
             "CmdTrainVisitorRewardSendNotify" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify),
             "CmdGetTrainVisitorRegisterCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq),
-            "CmdShowNewSupplementVisitorScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp),
             "CmdTakeTrainVisitorUntakenBehaviorRewardCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq),
             "CmdGetTrainVisitorBehaviorScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp),
-            "CmdTrainVisitorBehaviorFinishScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
-            "CmdGetTrainVisitorBehaviorCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq),
             "CmdTakeTrainVisitorUntakenBehaviorRewardScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp),
-            "CmdGetTrainVisitorRegisterScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
             "CmdTrainVisitorBehaviorFinishCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq),
             "CmdTrainRefreshTimeNotify" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainRefreshTimeNotify),
+            "CmdShowNewSupplementVisitorCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq),
+            "CmdShowNewSupplementVisitorScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainVisitorType] = &[
         CmdTrainVisitorType::CmdTrainVisitorTypeNone,
-        CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq,
+        CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp,
+        CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp,
+        CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq,
         CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify,
         CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq,
-        CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp,
         CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq,
         CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp,
-        CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp,
-        CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq,
         CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp,
-        CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp,
         CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq,
         CmdTrainVisitorType::CmdTrainRefreshTimeNotify,
+        CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq,
+        CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdTrainVisitorType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTrainVisitorType::CmdTrainVisitorTypeNone => 0,
-            CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq => 1,
-            CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify => 2,
-            CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq => 3,
-            CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp => 4,
-            CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq => 5,
-            CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp => 6,
-            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp => 7,
-            CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq => 8,
-            CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp => 9,
-            CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp => 10,
-            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq => 11,
-            CmdTrainVisitorType::CmdTrainRefreshTimeNotify => 12,
+            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp => 1,
+            CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp => 2,
+            CmdTrainVisitorType::CmdGetTrainVisitorBehaviorCsReq => 3,
+            CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify => 4,
+            CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq => 5,
+            CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardCsReq => 6,
+            CmdTrainVisitorType::CmdGetTrainVisitorBehaviorScRsp => 7,
+            CmdTrainVisitorType::CmdTakeTrainVisitorUntakenBehaviorRewardScRsp => 8,
+            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq => 9,
+            CmdTrainVisitorType::CmdTrainRefreshTimeNotify => 10,
+            CmdTrainVisitorType::CmdShowNewSupplementVisitorCsReq => 11,
+            CmdTrainVisitorType::CmdShowNewSupplementVisitorScRsp => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,17 +157,17 @@ impl CmdTrainVisitorType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdTrainVisitorType.proto*\x98\x04\n\x13CmdTrainVisitorType\x12\
-    \x1b\n\x17CmdTrainVisitorTypeNone\x10\0\x12%\n\x20CmdShowNewSupplementVi\
-    sitorCsReq\x10\xbc\x1d\x12$\n\x1fCmdTrainVisitorRewardSendNotify\x10\xa4\
-    \x1d\x12$\n\x1fCmdGetTrainVisitorRegisterCsReq\x10\xbb\x1d\x12%\n\x20Cmd\
-    ShowNewSupplementVisitorScRsp\x10\xc9\x1d\x122\n-CmdTakeTrainVisitorUnta\
-    kenBehaviorRewardCsReq\x10\x8a\x1d\x12$\n\x1fCmdGetTrainVisitorBehaviorS\
-    cRsp\x10\x9c\x1d\x12'\n\"CmdTrainVisitorBehaviorFinishScRsp\x10\x94\x1d\
-    \x12$\n\x1fCmdGetTrainVisitorBehaviorCsReq\x10\x93\x1d\x122\n-CmdTakeTra\
-    inVisitorUntakenBehaviorRewardScRsp\x10\xac\x1d\x12$\n\x1fCmdGetTrainVis\
-    itorRegisterScRsp\x10\xa8\x1d\x12'\n\"CmdTrainVisitorBehaviorFinishCsReq\
-    \x10\xd3\x1d\x12\x1e\n\x19CmdTrainRefreshTimeNotify\x10\xc0\x1db\x06prot\
-    o3\
+    \x1b\n\x17CmdTrainVisitorTypeNone\x10\0\x12'\n\"CmdTrainVisitorBehaviorF\
+    inishScRsp\x10\xcf\x1d\x12$\n\x1fCmdGetTrainVisitorRegisterScRsp\x10\xaf\
+    \x1d\x12$\n\x1fCmdGetTrainVisitorBehaviorCsReq\x10\xb7\x1d\x12$\n\x1fCmd\
+    TrainVisitorRewardSendNotify\x10\x89\x1d\x12$\n\x1fCmdGetTrainVisitorReg\
+    isterCsReq\x10\xba\x1d\x122\n-CmdTakeTrainVisitorUntakenBehaviorRewardCs\
+    Req\x10\xaa\x1d\x12$\n\x1fCmdGetTrainVisitorBehaviorScRsp\x10\x9b\x1d\
+    \x122\n-CmdTakeTrainVisitorUntakenBehaviorRewardScRsp\x10\xc1\x1d\x12'\n\
+    \"CmdTrainVisitorBehaviorFinishCsReq\x10\x88\x1d\x12\x1e\n\x19CmdTrainRe\
+    freshTimeNotify\x10\x8f\x1d\x12%\n\x20CmdShowNewSupplementVisitorCsReq\
+    \x10\xc4\x1d\x12%\n\x20CmdShowNewSupplementVisitorScRsp\x10\xf6\x1cb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

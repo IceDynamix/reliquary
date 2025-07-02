@@ -30,22 +30,22 @@ pub struct AnnounceData {
     // message fields
     // @@protoc_insertion_point(field:AnnounceData.banner_frequency)
     pub banner_frequency: u32,
-    // @@protoc_insertion_point(field:AnnounceData.count_down_text)
-    pub count_down_text: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.begin_time)
-    pub begin_time: i64,
     // @@protoc_insertion_point(field:AnnounceData.emergency_text)
     pub emergency_text: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.is_center_system_last_5_every_minutes)
-    pub is_center_system_last_5_every_minutes: bool,
+    // @@protoc_insertion_point(field:AnnounceData.count_down_text)
+    pub count_down_text: ::std::string::String,
     // @@protoc_insertion_point(field:AnnounceData.banner_text)
     pub banner_text: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.config_id)
-    pub config_id: u32,
-    // @@protoc_insertion_point(field:AnnounceData.center_system_frequency)
-    pub center_system_frequency: u32,
     // @@protoc_insertion_point(field:AnnounceData.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:AnnounceData.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:AnnounceData.center_system_frequency)
+    pub center_system_frequency: u32,
+    // @@protoc_insertion_point(field:AnnounceData.config_id)
+    pub config_id: u32,
+    // @@protoc_insertion_point(field:AnnounceData.is_center_system_last_5_every_minutes)
+    pub is_center_system_last_5_every_minutes: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AnnounceData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,24 +71,14 @@ impl AnnounceData {
             |m: &mut AnnounceData| { &mut m.banner_frequency },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "count_down_text",
-            |m: &AnnounceData| { &m.count_down_text },
-            |m: &mut AnnounceData| { &mut m.count_down_text },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &AnnounceData| { &m.begin_time },
-            |m: &mut AnnounceData| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "emergency_text",
             |m: &AnnounceData| { &m.emergency_text },
             |m: &mut AnnounceData| { &mut m.emergency_text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_center_system_last_5_every_minutes",
-            |m: &AnnounceData| { &m.is_center_system_last_5_every_minutes },
-            |m: &mut AnnounceData| { &mut m.is_center_system_last_5_every_minutes },
+            "count_down_text",
+            |m: &AnnounceData| { &m.count_down_text },
+            |m: &mut AnnounceData| { &mut m.count_down_text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "banner_text",
@@ -96,9 +86,14 @@ impl AnnounceData {
             |m: &mut AnnounceData| { &mut m.banner_text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &AnnounceData| { &m.config_id },
-            |m: &mut AnnounceData| { &mut m.config_id },
+            "end_time",
+            |m: &AnnounceData| { &m.end_time },
+            |m: &mut AnnounceData| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &AnnounceData| { &m.begin_time },
+            |m: &mut AnnounceData| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "center_system_frequency",
@@ -106,9 +101,14 @@ impl AnnounceData {
             |m: &mut AnnounceData| { &mut m.center_system_frequency },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &AnnounceData| { &m.end_time },
-            |m: &mut AnnounceData| { &mut m.end_time },
+            "config_id",
+            |m: &AnnounceData| { &m.config_id },
+            |m: &mut AnnounceData| { &mut m.config_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_center_system_last_5_every_minutes",
+            |m: &AnnounceData| { &m.is_center_system_last_5_every_minutes },
+            |m: &mut AnnounceData| { &mut m.is_center_system_last_5_every_minutes },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AnnounceData>(
             "AnnounceData",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for AnnounceData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                56 => {
                     self.banner_frequency = is.read_uint32()?;
                 },
-                58 => {
-                    self.count_down_text = is.read_string()?;
-                },
-                48 => {
-                    self.begin_time = is.read_int64()?;
-                },
-                114 => {
+                74 => {
                     self.emergency_text = is.read_string()?;
                 },
-                96 => {
-                    self.is_center_system_last_5_every_minutes = is.read_bool()?;
+                34 => {
+                    self.count_down_text = is.read_string()?;
                 },
                 106 => {
                     self.banner_text = is.read_string()?;
                 },
-                120 => {
-                    self.config_id = is.read_uint32()?;
+                80 => {
+                    self.end_time = is.read_int64()?;
                 },
-                32 => {
+                96 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                48 => {
                     self.center_system_frequency = is.read_uint32()?;
                 },
-                64 => {
-                    self.end_time = is.read_int64()?;
+                24 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.is_center_system_last_5_every_minutes = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -168,31 +168,31 @@ impl ::protobuf::Message for AnnounceData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.banner_frequency != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.banner_frequency);
-        }
-        if !self.count_down_text.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.count_down_text);
-        }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.begin_time);
+            my_size += ::protobuf::rt::uint32_size(7, self.banner_frequency);
         }
         if !self.emergency_text.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.emergency_text);
+            my_size += ::protobuf::rt::string_size(9, &self.emergency_text);
         }
-        if self.is_center_system_last_5_every_minutes != false {
-            my_size += 1 + 1;
+        if !self.count_down_text.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.count_down_text);
         }
         if !self.banner_text.is_empty() {
             my_size += ::protobuf::rt::string_size(13, &self.banner_text);
         }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.config_id);
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.end_time);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.begin_time);
         }
         if self.center_system_frequency != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.center_system_frequency);
+            my_size += ::protobuf::rt::uint32_size(6, self.center_system_frequency);
         }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.end_time);
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.config_id);
+        }
+        if self.is_center_system_last_5_every_minutes != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -201,31 +201,31 @@ impl ::protobuf::Message for AnnounceData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.banner_frequency != 0 {
-            os.write_uint32(10, self.banner_frequency)?;
-        }
-        if !self.count_down_text.is_empty() {
-            os.write_string(7, &self.count_down_text)?;
-        }
-        if self.begin_time != 0 {
-            os.write_int64(6, self.begin_time)?;
+            os.write_uint32(7, self.banner_frequency)?;
         }
         if !self.emergency_text.is_empty() {
-            os.write_string(14, &self.emergency_text)?;
+            os.write_string(9, &self.emergency_text)?;
         }
-        if self.is_center_system_last_5_every_minutes != false {
-            os.write_bool(12, self.is_center_system_last_5_every_minutes)?;
+        if !self.count_down_text.is_empty() {
+            os.write_string(4, &self.count_down_text)?;
         }
         if !self.banner_text.is_empty() {
             os.write_string(13, &self.banner_text)?;
         }
-        if self.config_id != 0 {
-            os.write_uint32(15, self.config_id)?;
+        if self.end_time != 0 {
+            os.write_int64(10, self.end_time)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(12, self.begin_time)?;
         }
         if self.center_system_frequency != 0 {
-            os.write_uint32(4, self.center_system_frequency)?;
+            os.write_uint32(6, self.center_system_frequency)?;
         }
-        if self.end_time != 0 {
-            os.write_int64(8, self.end_time)?;
+        if self.config_id != 0 {
+            os.write_uint32(3, self.config_id)?;
+        }
+        if self.is_center_system_last_5_every_minutes != false {
+            os.write_bool(14, self.is_center_system_last_5_every_minutes)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,28 +245,28 @@ impl ::protobuf::Message for AnnounceData {
 
     fn clear(&mut self) {
         self.banner_frequency = 0;
-        self.count_down_text.clear();
-        self.begin_time = 0;
         self.emergency_text.clear();
-        self.is_center_system_last_5_every_minutes = false;
+        self.count_down_text.clear();
         self.banner_text.clear();
-        self.config_id = 0;
-        self.center_system_frequency = 0;
         self.end_time = 0;
+        self.begin_time = 0;
+        self.center_system_frequency = 0;
+        self.config_id = 0;
+        self.is_center_system_last_5_every_minutes = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AnnounceData {
         static instance: AnnounceData = AnnounceData {
             banner_frequency: 0,
-            count_down_text: ::std::string::String::new(),
-            begin_time: 0,
             emergency_text: ::std::string::String::new(),
-            is_center_system_last_5_every_minutes: false,
+            count_down_text: ::std::string::String::new(),
             banner_text: ::std::string::String::new(),
-            config_id: 0,
-            center_system_frequency: 0,
             end_time: 0,
+            begin_time: 0,
+            center_system_frequency: 0,
+            config_id: 0,
+            is_center_system_last_5_every_minutes: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,15 +292,15 @@ impl ::protobuf::reflect::ProtobufValue for AnnounceData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AnnounceData.proto\"\x88\x03\n\x0cAnnounceData\x12)\n\x10banner_fr\
-    equency\x18\n\x20\x01(\rR\x0fbannerFrequency\x12&\n\x0fcount_down_text\
-    \x18\x07\x20\x01(\tR\rcountDownText\x12\x1d\n\nbegin_time\x18\x06\x20\
-    \x01(\x03R\tbeginTime\x12%\n\x0eemergency_text\x18\x0e\x20\x01(\tR\remer\
-    gencyText\x12N\n%is_center_system_last_5_every_minutes\x18\x0c\x20\x01(\
-    \x08R\x1fisCenterSystemLast5EveryMinutes\x12\x1f\n\x0bbanner_text\x18\r\
-    \x20\x01(\tR\nbannerText\x12\x1b\n\tconfig_id\x18\x0f\x20\x01(\rR\x08con\
-    figId\x126\n\x17center_system_frequency\x18\x04\x20\x01(\rR\x15centerSys\
-    temFrequency\x12\x19\n\x08end_time\x18\x08\x20\x01(\x03R\x07endTimeb\x06\
-    proto3\
+    equency\x18\x07\x20\x01(\rR\x0fbannerFrequency\x12%\n\x0eemergency_text\
+    \x18\t\x20\x01(\tR\remergencyText\x12&\n\x0fcount_down_text\x18\x04\x20\
+    \x01(\tR\rcountDownText\x12\x1f\n\x0bbanner_text\x18\r\x20\x01(\tR\nbann\
+    erText\x12\x19\n\x08end_time\x18\n\x20\x01(\x03R\x07endTime\x12\x1d\n\nb\
+    egin_time\x18\x0c\x20\x01(\x03R\tbeginTime\x126\n\x17center_system_frequ\
+    ency\x18\x06\x20\x01(\rR\x15centerSystemFrequency\x12\x1b\n\tconfig_id\
+    \x18\x03\x20\x01(\rR\x08configId\x12N\n%is_center_system_last_5_every_mi\
+    nutes\x18\x0e\x20\x01(\x08R\x1fisCenterSystemLast5EveryMinutesb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

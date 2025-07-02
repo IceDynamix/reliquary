@@ -79,7 +79,7 @@ impl ::protobuf::Message for KICDAHAPLCH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                96 => {
                     self.BILEOOPHJEF = is.read_uint32()?;
                 },
                 32 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KICDAHAPLCH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BILEOOPHJEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BILEOOPHJEF);
+            my_size += ::protobuf::rt::uint32_size(12, self.BILEOOPHJEF);
         }
         if self.IFEHBIMEMEC != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.IFEHBIMEMEC);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for KICDAHAPLCH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BILEOOPHJEF != 0 {
-            os.write_uint32(9, self.BILEOOPHJEF)?;
+            os.write_uint32(12, self.BILEOOPHJEF)?;
         }
         if self.IFEHBIMEMEC != 0 {
             os.write_uint32(4, self.IFEHBIMEMEC)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KICDAHAPLCH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KICDAHAPLCH.proto\"Q\n\x0bKICDAHAPLCH\x12\x20\n\x0bBILEOOPHJEF\x18\
-    \t\x20\x01(\rR\x0bBILEOOPHJEF\x12\x20\n\x0bIFEHBIMEMEC\x18\x04\x20\x01(\
-    \rR\x0bIFEHBIMEMECb\x06proto3\
+    \x0c\x20\x01(\rR\x0bBILEOOPHJEF\x12\x20\n\x0bIFEHBIMEMEC\x18\x04\x20\x01\
+    (\rR\x0bIFEHBIMEMECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

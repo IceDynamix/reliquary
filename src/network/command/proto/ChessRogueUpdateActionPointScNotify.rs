@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.action_point = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.action_point != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.action_point);
+            my_size += ::protobuf::rt::int32_size(3, self.action_point);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChessRogueUpdateActionPointScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.action_point != 0 {
-            os.write_int32(5, self.action_point)?;
+            os.write_int32(3, self.action_point)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateActionPointScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChessRogueUpdateActionPointScNotify.proto\"H\n#ChessRogueUpdateAction\
-    PointScNotify\x12!\n\x0caction_point\x18\x05\x20\x01(\x05R\x0bactionPoin\
+    PointScNotify\x12!\n\x0caction_point\x18\x03\x20\x01(\x05R\x0bactionPoin\
     tb\x06proto3\
 ";
 

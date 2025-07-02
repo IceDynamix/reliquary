@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DOPJLBMMPHB {
     // message fields
-    // @@protoc_insertion_point(field:DOPJLBMMPHB.KDGBJGOPEHI)
-    pub KDGBJGOPEHI: bool,
     // @@protoc_insertion_point(field:DOPJLBMMPHB.BIMBFJGNPFB)
     pub BIMBFJGNPFB: u32,
+    // @@protoc_insertion_point(field:DOPJLBMMPHB.KDGBJGOPEHI)
+    pub KDGBJGOPEHI: bool,
     // message oneof groups
     pub BADGBCHKJJP: ::std::option::Option<dopjlbmmphb::BADGBCHKJJP>,
     // special fields
@@ -50,7 +50,7 @@ impl DOPJLBMMPHB {
         ::std::default::Default::default()
     }
 
-    // .EHKEGMCGCMH DJNABIOEENF = 14;
+    // .EHKEGMCGCMH DJNABIOEENF = 2;
 
     pub fn DJNABIOEENF(&self) -> &super::EHKEGMCGCMH::EHKEGMCGCMH {
         match self.BADGBCHKJJP {
@@ -99,7 +99,7 @@ impl DOPJLBMMPHB {
         }
     }
 
-    // .PNDNJBBDHDP IMCAJAOGCLG = 15;
+    // .PNDNJBBDHDP IMCAJAOGCLG = 14;
 
     pub fn IMCAJAOGCLG(&self) -> &super::PNDNJBBDHDP::PNDNJBBDHDP {
         match self.BADGBCHKJJP {
@@ -152,14 +152,14 @@ impl DOPJLBMMPHB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDGBJGOPEHI",
-            |m: &DOPJLBMMPHB| { &m.KDGBJGOPEHI },
-            |m: &mut DOPJLBMMPHB| { &mut m.KDGBJGOPEHI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIMBFJGNPFB",
             |m: &DOPJLBMMPHB| { &m.BIMBFJGNPFB },
             |m: &mut DOPJLBMMPHB| { &mut m.BIMBFJGNPFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDGBJGOPEHI",
+            |m: &DOPJLBMMPHB| { &m.KDGBJGOPEHI },
+            |m: &mut DOPJLBMMPHB| { &mut m.KDGBJGOPEHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EHKEGMCGCMH::EHKEGMCGCMH>(
             "DJNABIOEENF",
@@ -194,16 +194,16 @@ impl ::protobuf::Message for DOPJLBMMPHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KDGBJGOPEHI = is.read_bool()?;
-                },
                 56 => {
                     self.BIMBFJGNPFB = is.read_uint32()?;
                 },
-                114 => {
+                72 => {
+                    self.KDGBJGOPEHI = is.read_bool()?;
+                },
+                18 => {
                     self.BADGBCHKJJP = ::std::option::Option::Some(dopjlbmmphb::BADGBCHKJJP::DJNABIOEENF(is.read_message()?));
                 },
-                122 => {
+                114 => {
                     self.BADGBCHKJJP = ::std::option::Option::Some(dopjlbmmphb::BADGBCHKJJP::IMCAJAOGCLG(is.read_message()?));
                 },
                 tag => {
@@ -218,11 +218,11 @@ impl ::protobuf::Message for DOPJLBMMPHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDGBJGOPEHI != false {
-            my_size += 1 + 1;
-        }
         if self.BIMBFJGNPFB != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.BIMBFJGNPFB);
+        }
+        if self.KDGBJGOPEHI != false {
+            my_size += 1 + 1;
         }
         if let ::std::option::Option::Some(ref v) = self.BADGBCHKJJP {
             match v {
@@ -242,19 +242,19 @@ impl ::protobuf::Message for DOPJLBMMPHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDGBJGOPEHI != false {
-            os.write_bool(1, self.KDGBJGOPEHI)?;
-        }
         if self.BIMBFJGNPFB != 0 {
             os.write_uint32(7, self.BIMBFJGNPFB)?;
+        }
+        if self.KDGBJGOPEHI != false {
+            os.write_bool(9, self.KDGBJGOPEHI)?;
         }
         if let ::std::option::Option::Some(ref v) = self.BADGBCHKJJP {
             match v {
                 &dopjlbmmphb::BADGBCHKJJP::DJNABIOEENF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &dopjlbmmphb::BADGBCHKJJP::IMCAJAOGCLG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -275,8 +275,8 @@ impl ::protobuf::Message for DOPJLBMMPHB {
     }
 
     fn clear(&mut self) {
-        self.KDGBJGOPEHI = false;
         self.BIMBFJGNPFB = 0;
+        self.KDGBJGOPEHI = false;
         self.BADGBCHKJJP = ::std::option::Option::None;
         self.BADGBCHKJJP = ::std::option::Option::None;
         self.special_fields.clear();
@@ -284,8 +284,8 @@ impl ::protobuf::Message for DOPJLBMMPHB {
 
     fn default_instance() -> &'static DOPJLBMMPHB {
         static instance: DOPJLBMMPHB = DOPJLBMMPHB {
-            KDGBJGOPEHI: false,
             BIMBFJGNPFB: 0,
+            KDGBJGOPEHI: false,
             BADGBCHKJJP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -342,11 +342,11 @@ pub mod dopjlbmmphb {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DOPJLBMMPHB.proto\x1a\x11EHKEGMCGCMH.proto\x1a\x11PNDNJBBDHDP.prot\
-    o\"\xc4\x01\n\x0bDOPJLBMMPHB\x12\x20\n\x0bKDGBJGOPEHI\x18\x01\x20\x01(\
-    \x08R\x0bKDGBJGOPEHI\x12\x20\n\x0bBIMBFJGNPFB\x18\x07\x20\x01(\rR\x0bBIM\
-    BFJGNPFB\x120\n\x0bDJNABIOEENF\x18\x0e\x20\x01(\x0b2\x0c.EHKEGMCGCMHH\0R\
-    \x0bDJNABIOEENF\x120\n\x0bIMCAJAOGCLG\x18\x0f\x20\x01(\x0b2\x0c.PNDNJBBD\
-    HDPH\0R\x0bIMCAJAOGCLGB\r\n\x0bBADGBCHKJJPb\x06proto3\
+    o\"\xc4\x01\n\x0bDOPJLBMMPHB\x12\x20\n\x0bBIMBFJGNPFB\x18\x07\x20\x01(\r\
+    R\x0bBIMBFJGNPFB\x12\x20\n\x0bKDGBJGOPEHI\x18\t\x20\x01(\x08R\x0bKDGBJGO\
+    PEHI\x120\n\x0bDJNABIOEENF\x18\x02\x20\x01(\x0b2\x0c.EHKEGMCGCMHH\0R\x0b\
+    DJNABIOEENF\x120\n\x0bIMCAJAOGCLG\x18\x0e\x20\x01(\x0b2\x0c.PNDNJBBDHDPH\
+    \0R\x0bIMCAJAOGCLGB\r\n\x0bBADGBCHKJJPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

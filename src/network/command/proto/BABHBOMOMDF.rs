@@ -100,19 +100,19 @@ impl ::protobuf::Message for BABHBOMOMDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                50 => {
                     self.MNFJEIININL.push(is.read_message()?);
                 },
-                104 => {
+                120 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                16 => {
                     self.layer_id = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
                     self.BHPGJCICMJM = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.OGLDNEFKNDO = is.read_uint32()?;
                 },
                 tag => {
@@ -132,16 +132,16 @@ impl ::protobuf::Message for BABHBOMOMDF {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+            my_size += ::protobuf::rt::int32_size(15, self.status.value());
         }
         if self.layer_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.layer_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.layer_id);
         }
         if self.BHPGJCICMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BHPGJCICMJM);
+            my_size += ::protobuf::rt::uint32_size(4, self.BHPGJCICMJM);
         }
         if self.OGLDNEFKNDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OGLDNEFKNDO);
+            my_size += ::protobuf::rt::uint32_size(3, self.OGLDNEFKNDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for BABHBOMOMDF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MNFJEIININL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.status != ::protobuf::EnumOrUnknown::new(super::ODBNIGDLNCF::ODBNIGDLNCF::ROGUE_TOURN_LAYER_STATUS_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.layer_id != 0 {
-            os.write_uint32(15, self.layer_id)?;
+            os.write_uint32(2, self.layer_id)?;
         }
         if self.BHPGJCICMJM != 0 {
-            os.write_uint32(9, self.BHPGJCICMJM)?;
+            os.write_uint32(4, self.BHPGJCICMJM)?;
         }
         if self.OGLDNEFKNDO != 0 {
-            os.write_uint32(4, self.OGLDNEFKNDO)?;
+            os.write_uint32(3, self.OGLDNEFKNDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for BABHBOMOMDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BABHBOMOMDF.proto\x1a\x11LHOMIEDAOID.proto\x1a\x11ODBNIGDLNCF.prot\
-    o\"\xc2\x01\n\x0bBABHBOMOMDF\x12.\n\x0bMNFJEIININL\x18\x02\x20\x03(\x0b2\
-    \x0c.LHOMIEDAOIDR\x0bMNFJEIININL\x12$\n\x06status\x18\r\x20\x01(\x0e2\
-    \x0c.ODBNIGDLNCFR\x06status\x12\x19\n\x08layer_id\x18\x0f\x20\x01(\rR\
-    \x07layerId\x12\x20\n\x0bBHPGJCICMJM\x18\t\x20\x01(\rR\x0bBHPGJCICMJM\
-    \x12\x20\n\x0bOGLDNEFKNDO\x18\x04\x20\x01(\rR\x0bOGLDNEFKNDOb\x06proto3\
+    o\"\xc2\x01\n\x0bBABHBOMOMDF\x12.\n\x0bMNFJEIININL\x18\x06\x20\x03(\x0b2\
+    \x0c.LHOMIEDAOIDR\x0bMNFJEIININL\x12$\n\x06status\x18\x0f\x20\x01(\x0e2\
+    \x0c.ODBNIGDLNCFR\x06status\x12\x19\n\x08layer_id\x18\x02\x20\x01(\rR\
+    \x07layerId\x12\x20\n\x0bBHPGJCICMJM\x18\x04\x20\x01(\rR\x0bBHPGJCICMJM\
+    \x12\x20\n\x0bOGLDNEFKNDO\x18\x03\x20\x01(\rR\x0bOGLDNEFKNDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct GGDEMGBOFGO {
     // message fields
     // @@protoc_insertion_point(field:GGDEMGBOFGO.time)
     pub time: u32,
-    // @@protoc_insertion_point(field:GGDEMGBOFGO.KKEHMBPJOOC)
-    pub KKEHMBPJOOC: bool,
     // @@protoc_insertion_point(field:GGDEMGBOFGO.ACJCPHIFMLN)
     pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:GGDEMGBOFGO.KKEHMBPJOOC)
+    pub KKEHMBPJOOC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GGDEMGBOFGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GGDEMGBOFGO {
             |m: &mut GGDEMGBOFGO| { &mut m.time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKEHMBPJOOC",
-            |m: &GGDEMGBOFGO| { &m.KKEHMBPJOOC },
-            |m: &mut GGDEMGBOFGO| { &mut m.KKEHMBPJOOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACJCPHIFMLN",
             |m: &GGDEMGBOFGO| { &m.ACJCPHIFMLN },
             |m: &mut GGDEMGBOFGO| { &mut m.ACJCPHIFMLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKEHMBPJOOC",
+            |m: &GGDEMGBOFGO| { &m.KKEHMBPJOOC },
+            |m: &mut GGDEMGBOFGO| { &mut m.KKEHMBPJOOC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GGDEMGBOFGO>(
             "GGDEMGBOFGO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GGDEMGBOFGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.time = is.read_uint32()?;
                 },
-                40 => {
-                    self.KKEHMBPJOOC = is.read_bool()?;
+                104 => {
+                    self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 120 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                    self.KKEHMBPJOOC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GGDEMGBOFGO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.time != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.time);
+            my_size += ::protobuf::rt::uint32_size(1, self.time);
+        }
+        if self.ACJCPHIFMLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ACJCPHIFMLN);
         }
         if self.KKEHMBPJOOC != false {
             my_size += 1 + 1;
-        }
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ACJCPHIFMLN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GGDEMGBOFGO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.time != 0 {
-            os.write_uint32(14, self.time)?;
-        }
-        if self.KKEHMBPJOOC != false {
-            os.write_bool(5, self.KKEHMBPJOOC)?;
+            os.write_uint32(1, self.time)?;
         }
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(15, self.ACJCPHIFMLN)?;
+            os.write_uint32(13, self.ACJCPHIFMLN)?;
+        }
+        if self.KKEHMBPJOOC != false {
+            os.write_bool(15, self.KKEHMBPJOOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GGDEMGBOFGO {
 
     fn clear(&mut self) {
         self.time = 0;
-        self.KKEHMBPJOOC = false;
         self.ACJCPHIFMLN = 0;
+        self.KKEHMBPJOOC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGDEMGBOFGO {
         static instance: GGDEMGBOFGO = GGDEMGBOFGO {
             time: 0,
-            KKEHMBPJOOC: false,
             ACJCPHIFMLN: 0,
+            KKEHMBPJOOC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GGDEMGBOFGO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GGDEMGBOFGO.proto\"e\n\x0bGGDEMGBOFGO\x12\x12\n\x04time\x18\x0e\
-    \x20\x01(\rR\x04time\x12\x20\n\x0bKKEHMBPJOOC\x18\x05\x20\x01(\x08R\x0bK\
-    KEHMBPJOOC\x12\x20\n\x0bACJCPHIFMLN\x18\x0f\x20\x01(\rR\x0bACJCPHIFMLNb\
+    \n\x11GGDEMGBOFGO.proto\"e\n\x0bGGDEMGBOFGO\x12\x12\n\x04time\x18\x01\
+    \x20\x01(\rR\x04time\x12\x20\n\x0bACJCPHIFMLN\x18\r\x20\x01(\rR\x0bACJCP\
+    HIFMLN\x12\x20\n\x0bKKEHMBPJOOC\x18\x0f\x20\x01(\x08R\x0bKKEHMBPJOOCb\
     \x06proto3\
 ";
 

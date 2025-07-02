@@ -79,7 +79,7 @@ impl ::protobuf::Message for BatchGetQuestDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                98 => {
                     self.quest_list.push(is.read_message()?);
                 },
                 56 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for BatchGetQuestDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.quest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(7, self.retcode)?;
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BatchGetQuestDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cBatchGetQuestDataScRsp.proto\x1a\x0bQuest.proto\"Y\n\x16BatchGetQu\
-    estDataScRsp\x12%\n\nquest_list\x18\n\x20\x03(\x0b2\x06.QuestR\tquestLis\
-    t\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    estDataScRsp\x12%\n\nquest_list\x18\x0c\x20\x03(\x0b2\x06.QuestR\tquestL\
+    ist\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

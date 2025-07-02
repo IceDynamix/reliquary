@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BKMGDPHACKE {
     // message fields
-    // @@protoc_insertion_point(field:BKMGDPHACKE.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:BKMGDPHACKE.BIINNCNDPCG)
     pub BIINNCNDPCG: bool,
+    // @@protoc_insertion_point(field:BKMGDPHACKE.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BKMGDPHACKE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BKMGDPHACKE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &BKMGDPHACKE| { &m.id },
-            |m: &mut BKMGDPHACKE| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIINNCNDPCG",
             |m: &BKMGDPHACKE| { &m.BIINNCNDPCG },
             |m: &mut BKMGDPHACKE| { &mut m.BIINNCNDPCG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &BKMGDPHACKE| { &m.id },
+            |m: &mut BKMGDPHACKE| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKMGDPHACKE>(
             "BKMGDPHACKE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BKMGDPHACKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.id = is.read_uint32()?;
-                },
-                120 => {
+                40 => {
                     self.BIINNCNDPCG = is.read_bool()?;
+                },
+                8 => {
+                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BKMGDPHACKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.id);
-        }
         if self.BIINNCNDPCG != false {
             my_size += 1 + 1;
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BKMGDPHACKE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(3, self.id)?;
-        }
         if self.BIINNCNDPCG != false {
-            os.write_bool(15, self.BIINNCNDPCG)?;
+            os.write_bool(5, self.BIINNCNDPCG)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(1, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BKMGDPHACKE {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.BIINNCNDPCG = false;
+        self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BKMGDPHACKE {
         static instance: BKMGDPHACKE = BKMGDPHACKE {
-            id: 0,
             BIINNCNDPCG: false,
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BKMGDPHACKE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BKMGDPHACKE.proto\"?\n\x0bBKMGDPHACKE\x12\x0e\n\x02id\x18\x03\x20\
-    \x01(\rR\x02id\x12\x20\n\x0bBIINNCNDPCG\x18\x0f\x20\x01(\x08R\x0bBIINNCN\
-    DPCGb\x06proto3\
+    \n\x11BKMGDPHACKE.proto\"?\n\x0bBKMGDPHACKE\x12\x20\n\x0bBIINNCNDPCG\x18\
+    \x05\x20\x01(\x08R\x0bBIINNCNDPCG\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\
+    \x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

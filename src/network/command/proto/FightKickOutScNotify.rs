@@ -72,7 +72,7 @@ impl ::protobuf::Message for FightKickOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.kick_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for FightKickOutScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::FightKickoutType::FightKickoutType::FIGHT_KICKOUT_UNKNOWN) {
-            my_size += ::protobuf::rt::int32_size(15, self.kick_type.value());
+            my_size += ::protobuf::rt::int32_size(14, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FightKickOutScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::FightKickoutType::FightKickoutType::FIGHT_KICKOUT_UNKNOWN) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FightKickOutScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aFightKickOutScNotify.proto\x1a\x16FightKickoutType.proto\"F\n\x14F\
-    ightKickOutScNotify\x12.\n\tkick_type\x18\x0f\x20\x01(\x0e2\x11.FightKic\
+    ightKickOutScNotify\x12.\n\tkick_type\x18\x0e\x20\x01(\x0e2\x11.FightKic\
     koutTypeR\x08kickTypeb\x06proto3\
 ";
 

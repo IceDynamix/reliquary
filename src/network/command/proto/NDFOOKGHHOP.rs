@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NDFOOKGHHOP {
     // message fields
-    // @@protoc_insertion_point(field:NDFOOKGHHOP.CEGCKBNDALF)
-    pub CEGCKBNDALF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NDFOOKGHHOP.confirm)
-    pub confirm: bool,
     // @@protoc_insertion_point(field:NDFOOKGHHOP.INBJPPAPCAG)
     pub INBJPPAPCAG: u32,
+    // @@protoc_insertion_point(field:NDFOOKGHHOP.confirm)
+    pub confirm: bool,
+    // @@protoc_insertion_point(field:NDFOOKGHHOP.CEGCKBNDALF)
+    pub CEGCKBNDALF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NDFOOKGHHOP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl NDFOOKGHHOP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEGCKBNDALF",
-            |m: &NDFOOKGHHOP| { &m.CEGCKBNDALF },
-            |m: &mut NDFOOKGHHOP| { &mut m.CEGCKBNDALF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INBJPPAPCAG",
+            |m: &NDFOOKGHHOP| { &m.INBJPPAPCAG },
+            |m: &mut NDFOOKGHHOP| { &mut m.INBJPPAPCAG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "confirm",
             |m: &NDFOOKGHHOP| { &m.confirm },
             |m: &mut NDFOOKGHHOP| { &mut m.confirm },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INBJPPAPCAG",
-            |m: &NDFOOKGHHOP| { &m.INBJPPAPCAG },
-            |m: &mut NDFOOKGHHOP| { &mut m.INBJPPAPCAG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CEGCKBNDALF",
+            |m: &NDFOOKGHHOP| { &m.CEGCKBNDALF },
+            |m: &mut NDFOOKGHHOP| { &mut m.CEGCKBNDALF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NDFOOKGHHOP>(
             "NDFOOKGHHOP",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CEGCKBNDALF)?;
-                },
                 8 => {
-                    self.CEGCKBNDALF.push(is.read_uint32()?);
+                    self.INBJPPAPCAG = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
                     self.confirm = is.read_bool()?;
                 },
-                48 => {
-                    self.INBJPPAPCAG = is.read_uint32()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CEGCKBNDALF)?;
+                },
+                80 => {
+                    self.CEGCKBNDALF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.CEGCKBNDALF);
+        if self.INBJPPAPCAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.INBJPPAPCAG);
+        }
         if self.confirm != false {
             my_size += 1 + 1;
         }
-        if self.INBJPPAPCAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.INBJPPAPCAG);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CEGCKBNDALF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.CEGCKBNDALF)?;
-        if self.confirm != false {
-            os.write_bool(7, self.confirm)?;
-        }
         if self.INBJPPAPCAG != 0 {
-            os.write_uint32(6, self.INBJPPAPCAG)?;
+            os.write_uint32(1, self.INBJPPAPCAG)?;
         }
+        if self.confirm != false {
+            os.write_bool(2, self.confirm)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.CEGCKBNDALF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for NDFOOKGHHOP {
     }
 
     fn clear(&mut self) {
-        self.CEGCKBNDALF.clear();
-        self.confirm = false;
         self.INBJPPAPCAG = 0;
+        self.confirm = false;
+        self.CEGCKBNDALF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NDFOOKGHHOP {
         static instance: NDFOOKGHHOP = NDFOOKGHHOP {
-            CEGCKBNDALF: ::std::vec::Vec::new(),
-            confirm: false,
             INBJPPAPCAG: 0,
+            confirm: false,
+            CEGCKBNDALF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for NDFOOKGHHOP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NDFOOKGHHOP.proto\"k\n\x0bNDFOOKGHHOP\x12\x20\n\x0bCEGCKBNDALF\x18\
-    \x01\x20\x03(\rR\x0bCEGCKBNDALF\x12\x18\n\x07confirm\x18\x07\x20\x01(\
-    \x08R\x07confirm\x12\x20\n\x0bINBJPPAPCAG\x18\x06\x20\x01(\rR\x0bINBJPPA\
-    PCAGb\x06proto3\
+    \n\x11NDFOOKGHHOP.proto\"k\n\x0bNDFOOKGHHOP\x12\x20\n\x0bINBJPPAPCAG\x18\
+    \x01\x20\x01(\rR\x0bINBJPPAPCAG\x12\x18\n\x07confirm\x18\x02\x20\x01(\
+    \x08R\x07confirm\x12\x20\n\x0bCEGCKBNDALF\x18\n\x20\x03(\rR\x0bCEGCKBNDA\
+    LFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

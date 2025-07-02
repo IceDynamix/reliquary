@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OBIPOOLIDAL {
     // message fields
-    // @@protoc_insertion_point(field:OBIPOOLIDAL.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:OBIPOOLIDAL.magic_unit_id)
     pub magic_unit_id: u32,
+    // @@protoc_insertion_point(field:OBIPOOLIDAL.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OBIPOOLIDAL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OBIPOOLIDAL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &OBIPOOLIDAL| { &m.level },
-            |m: &mut OBIPOOLIDAL| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "magic_unit_id",
             |m: &OBIPOOLIDAL| { &m.magic_unit_id },
             |m: &mut OBIPOOLIDAL| { &mut m.magic_unit_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &OBIPOOLIDAL| { &m.level },
+            |m: &mut OBIPOOLIDAL| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OBIPOOLIDAL>(
             "OBIPOOLIDAL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OBIPOOLIDAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                112 => {
+                    self.magic_unit_id = is.read_uint32()?;
+                },
                 104 => {
                     self.level = is.read_uint32()?;
-                },
-                64 => {
-                    self.magic_unit_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OBIPOOLIDAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.magic_unit_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.magic_unit_id);
+        }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
-        if self.magic_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.magic_unit_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OBIPOOLIDAL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.magic_unit_id != 0 {
+            os.write_uint32(14, self.magic_unit_id)?;
+        }
         if self.level != 0 {
             os.write_uint32(13, self.level)?;
-        }
-        if self.magic_unit_id != 0 {
-            os.write_uint32(8, self.magic_unit_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OBIPOOLIDAL {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.magic_unit_id = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OBIPOOLIDAL {
         static instance: OBIPOOLIDAL = OBIPOOLIDAL {
-            level: 0,
             magic_unit_id: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for OBIPOOLIDAL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OBIPOOLIDAL.proto\"G\n\x0bOBIPOOLIDAL\x12\x14\n\x05level\x18\r\x20\
-    \x01(\rR\x05level\x12\"\n\rmagic_unit_id\x18\x08\x20\x01(\rR\x0bmagicUni\
-    tIdb\x06proto3\
+    \n\x11OBIPOOLIDAL.proto\"G\n\x0bOBIPOOLIDAL\x12\"\n\rmagic_unit_id\x18\
+    \x0e\x20\x01(\rR\x0bmagicUnitId\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05\
+    levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for LobbyInteractCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.IHCILNHKLMC = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                56 => {
                     self.CBEGNBKMHCD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for LobbyInteractCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHCILNHKLMC != ::protobuf::EnumOrUnknown::new(super::IMAONMHILNE::IMAONMHILNE::LOBBY_INTERACT_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.IHCILNHKLMC.value());
+            my_size += ::protobuf::rt::int32_size(1, self.IHCILNHKLMC.value());
         }
         if self.CBEGNBKMHCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CBEGNBKMHCD);
+            my_size += ::protobuf::rt::uint32_size(7, self.CBEGNBKMHCD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LobbyInteractCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHCILNHKLMC != ::protobuf::EnumOrUnknown::new(super::IMAONMHILNE::IMAONMHILNE::LOBBY_INTERACT_TYPE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.IHCILNHKLMC))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.IHCILNHKLMC))?;
         }
         if self.CBEGNBKMHCD != 0 {
-            os.write_uint32(10, self.CBEGNBKMHCD)?;
+            os.write_uint32(7, self.CBEGNBKMHCD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInteractCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LobbyInteractCsReq.proto\x1a\x11IMAONMHILNE.proto\"f\n\x12LobbyInt\
-    eractCsReq\x12.\n\x0bIHCILNHKLMC\x18\x02\x20\x01(\x0e2\x0c.IMAONMHILNER\
-    \x0bIHCILNHKLMC\x12\x20\n\x0bCBEGNBKMHCD\x18\n\x20\x01(\rR\x0bCBEGNBKMHC\
-    Db\x06proto3\
+    eractCsReq\x12.\n\x0bIHCILNHKLMC\x18\x01\x20\x01(\x0e2\x0c.IMAONMHILNER\
+    \x0bIHCILNHKLMC\x12\x20\n\x0bCBEGNBKMHCD\x18\x07\x20\x01(\rR\x0bCBEGNBKM\
+    HCDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

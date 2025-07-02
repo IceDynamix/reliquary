@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerAssistInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_simple_info)?;
                 },
-                82 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MDHFANLHNMA)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PlayerAssistInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.player_simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.MDHFANLHNMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerAssistInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerAssistInfo.proto\x1a\x1dDisplayAvatarDetailInfo.proto\x1a\
     \x16PlayerSimpleInfo.proto\"\x8f\x01\n\x10PlayerAssistInfo\x12?\n\x12pla\
-    yer_simple_info\x18\x04\x20\x01(\x0b2\x11.PlayerSimpleInfoR\x10playerSim\
-    pleInfo\x12:\n\x0bMDHFANLHNMA\x18\n\x20\x01(\x0b2\x18.DisplayAvatarDetai\
+    yer_simple_info\x18\x03\x20\x01(\x0b2\x11.PlayerSimpleInfoR\x10playerSim\
+    pleInfo\x12:\n\x0bMDHFANLHNMA\x18\r\x20\x01(\x0b2\x18.DisplayAvatarDetai\
     lInfoR\x0bMDHFANLHNMAb\x06proto3\
 ";
 

@@ -45,7 +45,7 @@ impl ChallengeBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffInfo story_info = 13;
+    // .ChallengeStoryBuffInfo story_info = 14;
 
     pub fn story_info(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
         match self.BCMEKLNAEBE {
@@ -94,7 +94,7 @@ impl ChallengeBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffInfo boss_info = 4;
+    // .ChallengeBossBuffInfo boss_info = 11;
 
     pub fn boss_info(&self) -> &super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
         match self.BCMEKLNAEBE {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                114 => {
                     self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(is.read_message()?));
                 },
-                34 => {
+                90 => {
                     self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for ChallengeBuffInfo {
         if let ::std::option::Option::Some(ref v) = self.BCMEKLNAEBE {
             match v {
                 &challenge_buff_info::BCMEKLNAEBE::StoryInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &challenge_buff_info::BCMEKLNAEBE::BossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -306,8 +306,8 @@ pub mod challenge_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBuffInfo.proto\x1a\x1bChallengeBossBuffInfo.proto\x1a\x1c\
     ChallengeStoryBuffInfo.proto\"\x93\x01\n\x11ChallengeBuffInfo\x128\n\nst\
-    ory_info\x18\r\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
-    \x125\n\tboss_info\x18\x04\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
+    ory_info\x18\x0e\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
+    \x125\n\tboss_info\x18\x0b\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
     \x08bossInfoB\r\n\x0bBCMEKLNAEBEb\x06proto3\
 ";
 

@@ -30,10 +30,10 @@ pub struct MatchThreeLevelEndScRsp {
     // message fields
     // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.EBGMBDMPEGM)
-    pub EBGMBDMPEGM: u32,
     // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.ACJCPHIFMLN)
     pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.EBGMBDMPEGM)
+    pub EBGMBDMPEGM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeLevelEndScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MatchThreeLevelEndScRsp {
             |m: &mut MatchThreeLevelEndScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBGMBDMPEGM",
-            |m: &MatchThreeLevelEndScRsp| { &m.EBGMBDMPEGM },
-            |m: &mut MatchThreeLevelEndScRsp| { &mut m.EBGMBDMPEGM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACJCPHIFMLN",
             |m: &MatchThreeLevelEndScRsp| { &m.ACJCPHIFMLN },
             |m: &mut MatchThreeLevelEndScRsp| { &mut m.ACJCPHIFMLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBGMBDMPEGM",
+            |m: &MatchThreeLevelEndScRsp| { &m.EBGMBDMPEGM },
+            |m: &mut MatchThreeLevelEndScRsp| { &mut m.EBGMBDMPEGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeLevelEndScRsp>(
             "MatchThreeLevelEndScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                16 => {
-                    self.EBGMBDMPEGM = is.read_uint32()?;
+                120 => {
+                    self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 56 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                    self.EBGMBDMPEGM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if self.EBGMBDMPEGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EBGMBDMPEGM);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ACJCPHIFMLN);
+            my_size += ::protobuf::rt::uint32_size(15, self.ACJCPHIFMLN);
+        }
+        if self.EBGMBDMPEGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EBGMBDMPEGM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if self.EBGMBDMPEGM != 0 {
-            os.write_uint32(2, self.EBGMBDMPEGM)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(7, self.ACJCPHIFMLN)?;
+            os.write_uint32(15, self.ACJCPHIFMLN)?;
+        }
+        if self.EBGMBDMPEGM != 0 {
+            os.write_uint32(7, self.EBGMBDMPEGM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.EBGMBDMPEGM = 0;
         self.ACJCPHIFMLN = 0;
+        self.EBGMBDMPEGM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeLevelEndScRsp {
         static instance: MatchThreeLevelEndScRsp = MatchThreeLevelEndScRsp {
             retcode: 0,
-            EBGMBDMPEGM: 0,
             ACJCPHIFMLN: 0,
+            EBGMBDMPEGM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeLevelEndScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMatchThreeLevelEndScRsp.proto\"w\n\x17MatchThreeLevelEndScRsp\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bEBGMBDMPEG\
-    M\x18\x02\x20\x01(\rR\x0bEBGMBDMPEGM\x12\x20\n\x0bACJCPHIFMLN\x18\x07\
-    \x20\x01(\rR\x0bACJCPHIFMLNb\x06proto3\
+    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bACJCPHIFML\
+    N\x18\x0f\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bEBGMBDMPEGM\x18\x07\
+    \x20\x01(\rR\x0bEBGMBDMPEGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

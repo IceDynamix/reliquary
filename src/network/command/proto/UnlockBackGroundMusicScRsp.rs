@@ -30,10 +30,10 @@ pub struct UnlockBackGroundMusicScRsp {
     // message fields
     // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.unlocked_music_list)
     pub unlocked_music_list: ::std::vec::Vec<super::MusicData::MusicData>,
-    // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.unlocked_ids)
-    pub unlocked_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:UnlockBackGroundMusicScRsp.unlocked_ids)
+    pub unlocked_ids: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockBackGroundMusicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl UnlockBackGroundMusicScRsp {
             |m: &UnlockBackGroundMusicScRsp| { &m.unlocked_music_list },
             |m: &mut UnlockBackGroundMusicScRsp| { &mut m.unlocked_music_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_ids",
-            |m: &UnlockBackGroundMusicScRsp| { &m.unlocked_ids },
-            |m: &mut UnlockBackGroundMusicScRsp| { &mut m.unlocked_ids },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &UnlockBackGroundMusicScRsp| { &m.retcode },
             |m: &mut UnlockBackGroundMusicScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unlocked_ids",
+            |m: &UnlockBackGroundMusicScRsp| { &m.unlocked_ids },
+            |m: &mut UnlockBackGroundMusicScRsp| { &mut m.unlocked_ids },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockBackGroundMusicScRsp>(
             "UnlockBackGroundMusicScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                50 => {
                     self.unlocked_music_list.push(is.read_message()?);
                 },
-                42 => {
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_ids)?;
                 },
-                40 => {
+                24 => {
                     self.unlocked_ids.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.unlocked_ids);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.unlocked_ids);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.unlocked_music_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.unlocked_ids)?;
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(3, &self.unlocked_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for UnlockBackGroundMusicScRsp {
 
     fn clear(&mut self) {
         self.unlocked_music_list.clear();
-        self.unlocked_ids.clear();
         self.retcode = 0;
+        self.unlocked_ids.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockBackGroundMusicScRsp {
         static instance: UnlockBackGroundMusicScRsp = UnlockBackGroundMusicScRsp {
             unlocked_music_list: ::std::vec::Vec::new(),
-            unlocked_ids: ::std::vec::Vec::new(),
             retcode: 0,
+            unlocked_ids: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for UnlockBackGroundMusicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UnlockBackGroundMusicScRsp.proto\x1a\x0fMusicData.proto\"\x95\x01\
-    \n\x1aUnlockBackGroundMusicScRsp\x12:\n\x13unlocked_music_list\x18\x0f\
-    \x20\x03(\x0b2\n.MusicDataR\x11unlockedMusicList\x12!\n\x0cunlocked_ids\
-    \x18\x05\x20\x03(\rR\x0bunlockedIds\x12\x18\n\x07retcode\x18\t\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    \n\x1aUnlockBackGroundMusicScRsp\x12:\n\x13unlocked_music_list\x18\x06\
+    \x20\x03(\x0b2\n.MusicDataR\x11unlockedMusicList\x12\x18\n\x07retcode\
+    \x18\x0c\x20\x01(\rR\x07retcode\x12!\n\x0cunlocked_ids\x18\x03\x20\x03(\
+    \rR\x0bunlockedIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

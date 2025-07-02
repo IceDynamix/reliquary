@@ -30,16 +30,16 @@ pub struct EGBKGEMFODN {
     // message fields
     // @@protoc_insertion_point(field:EGBKGEMFODN.DPPIMJNDNDF)
     pub DPPIMJNDNDF: ::std::vec::Vec<super::FLNIDKIGGBK::FLNIDKIGGBK>,
-    // @@protoc_insertion_point(field:EGBKGEMFODN.NFIOACFHJNK)
-    pub NFIOACFHJNK: ::std::vec::Vec<super::LEAAHDPAIEG::LEAAHDPAIEG>,
     // @@protoc_insertion_point(field:EGBKGEMFODN.HJNOIENGEDL)
     pub HJNOIENGEDL: u32,
     // @@protoc_insertion_point(field:EGBKGEMFODN.CCBBDGFFFAG)
     pub CCBBDGFFFAG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EGBKGEMFODN.BLMNEKFPAGH)
-    pub BLMNEKFPAGH: u32,
     // @@protoc_insertion_point(field:EGBKGEMFODN.NCIKKFENHJF)
     pub NCIKKFENHJF: ::protobuf::MessageField<super::ILMELFJCCMD::ILMELFJCCMD>,
+    // @@protoc_insertion_point(field:EGBKGEMFODN.BLMNEKFPAGH)
+    pub BLMNEKFPAGH: u32,
+    // @@protoc_insertion_point(field:EGBKGEMFODN.NFIOACFHJNK)
+    pub NFIOACFHJNK: ::std::vec::Vec<super::LEAAHDPAIEG::LEAAHDPAIEG>,
     // special fields
     // @@protoc_insertion_point(special_field:EGBKGEMFODN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,11 +64,6 @@ impl EGBKGEMFODN {
             |m: &EGBKGEMFODN| { &m.DPPIMJNDNDF },
             |m: &mut EGBKGEMFODN| { &mut m.DPPIMJNDNDF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFIOACFHJNK",
-            |m: &EGBKGEMFODN| { &m.NFIOACFHJNK },
-            |m: &mut EGBKGEMFODN| { &mut m.NFIOACFHJNK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HJNOIENGEDL",
             |m: &EGBKGEMFODN| { &m.HJNOIENGEDL },
@@ -79,15 +74,20 @@ impl EGBKGEMFODN {
             |m: &EGBKGEMFODN| { &m.CCBBDGFFFAG },
             |m: &mut EGBKGEMFODN| { &mut m.CCBBDGFFFAG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILMELFJCCMD::ILMELFJCCMD>(
+            "NCIKKFENHJF",
+            |m: &EGBKGEMFODN| { &m.NCIKKFENHJF },
+            |m: &mut EGBKGEMFODN| { &mut m.NCIKKFENHJF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLMNEKFPAGH",
             |m: &EGBKGEMFODN| { &m.BLMNEKFPAGH },
             |m: &mut EGBKGEMFODN| { &mut m.BLMNEKFPAGH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILMELFJCCMD::ILMELFJCCMD>(
-            "NCIKKFENHJF",
-            |m: &EGBKGEMFODN| { &m.NCIKKFENHJF },
-            |m: &mut EGBKGEMFODN| { &mut m.NCIKKFENHJF },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NFIOACFHJNK",
+            |m: &EGBKGEMFODN| { &m.NFIOACFHJNK },
+            |m: &mut EGBKGEMFODN| { &mut m.NFIOACFHJNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGBKGEMFODN>(
             "EGBKGEMFODN",
@@ -110,23 +110,23 @@ impl ::protobuf::Message for EGBKGEMFODN {
                 74 => {
                     self.DPPIMJNDNDF.push(is.read_message()?);
                 },
-                10 => {
-                    self.NFIOACFHJNK.push(is.read_message()?);
-                },
-                112 => {
+                88 => {
                     self.HJNOIENGEDL = is.read_uint32()?;
                 },
-                26 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.CCBBDGFFFAG)?;
                 },
-                24 => {
+                112 => {
                     self.CCBBDGFFFAG.push(is.read_uint32()?);
                 },
-                48 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCIKKFENHJF)?;
+                },
+                8 => {
                     self.BLMNEKFPAGH = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCIKKFENHJF)?;
+                34 => {
+                    self.NFIOACFHJNK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -144,21 +144,21 @@ impl ::protobuf::Message for EGBKGEMFODN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NFIOACFHJNK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.HJNOIENGEDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HJNOIENGEDL);
+            my_size += ::protobuf::rt::uint32_size(11, self.HJNOIENGEDL);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CCBBDGFFFAG);
-        if self.BLMNEKFPAGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BLMNEKFPAGH);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.CCBBDGFFFAG);
         if let Some(v) = self.NCIKKFENHJF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.BLMNEKFPAGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BLMNEKFPAGH);
+        }
+        for value in &self.NFIOACFHJNK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -168,19 +168,19 @@ impl ::protobuf::Message for EGBKGEMFODN {
         for v in &self.DPPIMJNDNDF {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for v in &self.NFIOACFHJNK {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.HJNOIENGEDL != 0 {
-            os.write_uint32(14, self.HJNOIENGEDL)?;
+            os.write_uint32(11, self.HJNOIENGEDL)?;
         }
-        os.write_repeated_packed_uint32(3, &self.CCBBDGFFFAG)?;
-        if self.BLMNEKFPAGH != 0 {
-            os.write_uint32(6, self.BLMNEKFPAGH)?;
-        }
+        os.write_repeated_packed_uint32(14, &self.CCBBDGFFFAG)?;
         if let Some(v) = self.NCIKKFENHJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
+        if self.BLMNEKFPAGH != 0 {
+            os.write_uint32(1, self.BLMNEKFPAGH)?;
+        }
+        for v in &self.NFIOACFHJNK {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -199,22 +199,22 @@ impl ::protobuf::Message for EGBKGEMFODN {
 
     fn clear(&mut self) {
         self.DPPIMJNDNDF.clear();
-        self.NFIOACFHJNK.clear();
         self.HJNOIENGEDL = 0;
         self.CCBBDGFFFAG.clear();
-        self.BLMNEKFPAGH = 0;
         self.NCIKKFENHJF.clear();
+        self.BLMNEKFPAGH = 0;
+        self.NFIOACFHJNK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGBKGEMFODN {
         static instance: EGBKGEMFODN = EGBKGEMFODN {
             DPPIMJNDNDF: ::std::vec::Vec::new(),
-            NFIOACFHJNK: ::std::vec::Vec::new(),
             HJNOIENGEDL: 0,
             CCBBDGFFFAG: ::std::vec::Vec::new(),
-            BLMNEKFPAGH: 0,
             NCIKKFENHJF: ::protobuf::MessageField::none(),
+            BLMNEKFPAGH: 0,
+            NFIOACFHJNK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for EGBKGEMFODN {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EGBKGEMFODN.proto\x1a\x11FLNIDKIGGBK.proto\x1a\x11ILMELFJCCMD.prot\
     o\x1a\x11LEAAHDPAIEG.proto\"\x83\x02\n\x0bEGBKGEMFODN\x12.\n\x0bDPPIMJND\
-    NDF\x18\t\x20\x03(\x0b2\x0c.FLNIDKIGGBKR\x0bDPPIMJNDNDF\x12.\n\x0bNFIOAC\
-    FHJNK\x18\x01\x20\x03(\x0b2\x0c.LEAAHDPAIEGR\x0bNFIOACFHJNK\x12\x20\n\
-    \x0bHJNOIENGEDL\x18\x0e\x20\x01(\rR\x0bHJNOIENGEDL\x12\x20\n\x0bCCBBDGFF\
-    FAG\x18\x03\x20\x03(\rR\x0bCCBBDGFFFAG\x12\x20\n\x0bBLMNEKFPAGH\x18\x06\
-    \x20\x01(\rR\x0bBLMNEKFPAGH\x12.\n\x0bNCIKKFENHJF\x18\x05\x20\x01(\x0b2\
-    \x0c.ILMELFJCCMDR\x0bNCIKKFENHJFb\x06proto3\
+    NDF\x18\t\x20\x03(\x0b2\x0c.FLNIDKIGGBKR\x0bDPPIMJNDNDF\x12\x20\n\x0bHJN\
+    OIENGEDL\x18\x0b\x20\x01(\rR\x0bHJNOIENGEDL\x12\x20\n\x0bCCBBDGFFFAG\x18\
+    \x0e\x20\x03(\rR\x0bCCBBDGFFFAG\x12.\n\x0bNCIKKFENHJF\x18\x08\x20\x01(\
+    \x0b2\x0c.ILMELFJCCMDR\x0bNCIKKFENHJF\x12\x20\n\x0bBLMNEKFPAGH\x18\x01\
+    \x20\x01(\rR\x0bBLMNEKFPAGH\x12.\n\x0bNFIOACFHJNK\x18\x04\x20\x03(\x0b2\
+    \x0c.LEAAHDPAIEGR\x0bNFIOACFHJNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                85 => {
+                37 => {
                     self.x = is.read_float()?;
                 },
-                53 => {
+                77 => {
                     self.y = is.read_float()?;
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PFGAIEBGHCP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.x != 0. {
-            os.write_float(10, self.x)?;
+            os.write_float(4, self.x)?;
         }
         if self.y != 0. {
-            os.write_float(6, self.y)?;
+            os.write_float(9, self.y)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for PFGAIEBGHCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PFGAIEBGHCP.proto\")\n\x0bPFGAIEBGHCP\x12\x0c\n\x01x\x18\n\x20\x01\
-    (\x02R\x01x\x12\x0c\n\x01y\x18\x06\x20\x01(\x02R\x01yb\x06proto3\
+    \n\x11PFGAIEBGHCP.proto\")\n\x0bPFGAIEBGHCP\x12\x0c\n\x01x\x18\x04\x20\
+    \x01(\x02R\x01x\x12\x0c\n\x01y\x18\t\x20\x01(\x02R\x01yb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

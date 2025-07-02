@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesReward {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesReward.coin)
-    pub coin: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // @@protoc_insertion_point(field:PlanetFesReward.buff_map)
     pub buff_map: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:PlanetFesReward.item_list)
     pub item_list: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
+    // @@protoc_insertion_point(field:PlanetFesReward.coin)
+    pub coin: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesReward.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl PlanetFesReward {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "coin",
-            |m: &PlanetFesReward| { &m.coin },
-            |m: &mut PlanetFesReward| { &mut m.coin },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "buff_map",
             |m: &PlanetFesReward| { &m.buff_map },
@@ -67,6 +62,11 @@ impl PlanetFesReward {
             "item_list",
             |m: &PlanetFesReward| { &m.item_list },
             |m: &mut PlanetFesReward| { &mut m.item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
+            "coin",
+            |m: &PlanetFesReward| { &m.coin },
+            |m: &mut PlanetFesReward| { &mut m.coin },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesReward>(
             "PlanetFesReward",
@@ -86,10 +86,7 @@ impl ::protobuf::Message for PlanetFesReward {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.coin)?;
-                },
-                98 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -104,8 +101,11 @@ impl ::protobuf::Message for PlanetFesReward {
                     is.pop_limit(old_limit);
                     self.buff_map.insert(key, value);
                 },
-                50 => {
+                74 => {
                     self.item_list.push(is.read_message()?);
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.coin)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,10 +119,6 @@ impl ::protobuf::Message for PlanetFesReward {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.coin.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for (k, v) in &self.buff_map {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -133,27 +129,31 @@ impl ::protobuf::Message for PlanetFesReward {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.coin.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.coin.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         for (k, v) in &self.buff_map {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        if let Some(v) = self.coin.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -171,9 +171,9 @@ impl ::protobuf::Message for PlanetFesReward {
     }
 
     fn clear(&mut self) {
-        self.coin.clear();
         self.buff_map.clear();
         self.item_list.clear();
+        self.coin.clear();
         self.special_fields.clear();
     }
 
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesReward {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15PlanetFesReward.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11IIKNGNHDMFI.\
-    proto\"\xd4\x01\n\x0fPlanetFesReward\x12\x20\n\x04coin\x18\x03\x20\x01(\
-    \x0b2\x0c.IIKNGNHDMFIR\x04coin\x128\n\x08buff_map\x18\x0c\x20\x03(\x0b2\
-    \x1d.PlanetFesReward.BuffMapEntryR\x07buffMap\x12)\n\titem_list\x18\x06\
-    \x20\x03(\x0b2\x0c.CEODDCEIDDLR\x08itemList\x1a:\n\x0cBuffMapEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01b\x06proto3\
+    proto\"\xd4\x01\n\x0fPlanetFesReward\x128\n\x08buff_map\x18\x06\x20\x03(\
+    \x0b2\x1d.PlanetFesReward.BuffMapEntryR\x07buffMap\x12)\n\titem_list\x18\
+    \t\x20\x03(\x0b2\x0c.CEODDCEIDDLR\x08itemList\x12\x20\n\x04coin\x18\x04\
+    \x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x04coin\x1a:\n\x0cBuffMapEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

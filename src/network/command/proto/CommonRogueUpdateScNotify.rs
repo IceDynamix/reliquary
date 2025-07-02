@@ -45,7 +45,7 @@ impl CommonRogueUpdateScNotify {
         ::std::default::Default::default()
     }
 
-    // .MAPOMOILGEH ONGPJOGKKJN = 15;
+    // .MAPOMOILGEH ONGPJOGKKJN = 10;
 
     pub fn ONGPJOGKKJN(&self) -> &super::MAPOMOILGEH::MAPOMOILGEH {
         match self.GIGBGFAMFNC {
@@ -94,7 +94,7 @@ impl CommonRogueUpdateScNotify {
         }
     }
 
-    // .PLGDCFIPEAA KJKBKEGIGHK = 3;
+    // .PLGDCFIPEAA KJKBKEGIGHK = 9;
 
     pub fn KJKBKEGIGHK(&self) -> &super::PLGDCFIPEAA::PLGDCFIPEAA {
         match self.GIGBGFAMFNC {
@@ -143,7 +143,7 @@ impl CommonRogueUpdateScNotify {
         }
     }
 
-    // .ILAEKJCNEMF NOLHGNHAEMA = 12;
+    // .ILAEKJCNEMF NOLHGNHAEMA = 7;
 
     pub fn NOLHGNHAEMA(&self) -> &super::ILAEKJCNEMF::ILAEKJCNEMF {
         match self.GIGBGFAMFNC {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                82 => {
                     self.GIGBGFAMFNC = ::std::option::Option::Some(common_rogue_update_sc_notify::GIGBGFAMFNC::ONGPJOGKKJN(is.read_message()?));
                 },
-                26 => {
+                74 => {
                     self.GIGBGFAMFNC = ::std::option::Option::Some(common_rogue_update_sc_notify::GIGBGFAMFNC::KJKBKEGIGHK(is.read_message()?));
                 },
-                98 => {
+                58 => {
                     self.GIGBGFAMFNC = ::std::option::Option::Some(common_rogue_update_sc_notify::GIGBGFAMFNC::NOLHGNHAEMA(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
         if let ::std::option::Option::Some(ref v) = self.GIGBGFAMFNC {
             match v {
                 &common_rogue_update_sc_notify::GIGBGFAMFNC::ONGPJOGKKJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &common_rogue_update_sc_notify::GIGBGFAMFNC::KJKBKEGIGHK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &common_rogue_update_sc_notify::GIGBGFAMFNC::NOLHGNHAEMA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod common_rogue_update_sc_notify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCommonRogueUpdateScNotify.proto\x1a\x11ILAEKJCNEMF.proto\x1a\x11MA\
     POMOILGEH.proto\x1a\x11PLGDCFIPEAA.proto\"\xc0\x01\n\x19CommonRogueUpdat\
-    eScNotify\x120\n\x0bONGPJOGKKJN\x18\x0f\x20\x01(\x0b2\x0c.MAPOMOILGEHH\0\
-    R\x0bONGPJOGKKJN\x120\n\x0bKJKBKEGIGHK\x18\x03\x20\x01(\x0b2\x0c.PLGDCFI\
-    PEAAH\0R\x0bKJKBKEGIGHK\x120\n\x0bNOLHGNHAEMA\x18\x0c\x20\x01(\x0b2\x0c.\
-    ILAEKJCNEMFH\0R\x0bNOLHGNHAEMAB\r\n\x0bGIGBGFAMFNCb\x06proto3\
+    eScNotify\x120\n\x0bONGPJOGKKJN\x18\n\x20\x01(\x0b2\x0c.MAPOMOILGEHH\0R\
+    \x0bONGPJOGKKJN\x120\n\x0bKJKBKEGIGHK\x18\t\x20\x01(\x0b2\x0c.PLGDCFIPEA\
+    AH\0R\x0bKJKBKEGIGHK\x120\n\x0bNOLHGNHAEMA\x18\x07\x20\x01(\x0b2\x0c.ILA\
+    EKJCNEMFH\0R\x0bNOLHGNHAEMAB\r\n\x0bGIGBGFAMFNCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

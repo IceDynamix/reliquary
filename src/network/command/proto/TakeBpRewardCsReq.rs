@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(11, self.type_.value());
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.optional_reward_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for TakeBpRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BpRewardType::BpRewardType::BP_REWARAD_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.level != 0 {
-            os.write_uint32(15, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         if self.optional_reward_id != 0 {
-            os.write_uint32(14, self.optional_reward_id)?;
+            os.write_uint32(9, self.optional_reward_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeBpRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TakeBpRewardCsReq.proto\x1a\x12BpRewardType.proto\"z\n\x11TakeBpRe\
-    wardCsReq\x12!\n\x04type\x18\x01\x20\x01(\x0e2\r.BpRewardTypeR\x04type\
-    \x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12,\n\x12optional_rewa\
-    rd_id\x18\x0e\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
+    wardCsReq\x12!\n\x04type\x18\x0b\x20\x01(\x0e2\r.BpRewardTypeR\x04type\
+    \x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\x12,\n\x12optional_rewa\
+    rd_id\x18\t\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

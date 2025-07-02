@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                90 => {
                     self.benefit_data_list.push(is.read_message()?);
                 },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
+                120 => {
                     self.is_open = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.is_open != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.benefit_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if self.is_open != false {
-            os.write_bool(5, self.is_open)?;
+            os.write_bool(15, self.is_open)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetBenefitActivityInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetBenefitActivityInfoScRsp.proto\x1a\x11BenefitData.proto\"\x8a\x01\
-    \n\x1bGetBenefitActivityInfoScRsp\x128\n\x11benefit_data_list\x18\x03\
+    \n\x1bGetBenefitActivityInfoScRsp\x128\n\x11benefit_data_list\x18\x0b\
     \x20\x03(\x0b2\x0c.BenefitDataR\x0fbenefitDataList\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcode\x12\x17\n\x07is_open\x18\x05\x20\x01(\
+    \x18\x06\x20\x01(\rR\x07retcode\x12\x17\n\x07is_open\x18\x0f\x20\x01(\
     \x08R\x06isOpenb\x06proto3\
 ";
 

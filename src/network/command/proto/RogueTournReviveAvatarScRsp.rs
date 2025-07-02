@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueTournReviveAvatarScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RogueTournReviveAvatarScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReviveAvatarScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournReviveAvatarScRsp.proto\x1a\x12ItemCostData.proto\"r\n\x1bR\
     ogueTournReviveAvatarScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07r\
-    etcode\x129\n\x11rogue_revive_cost\x18\n\x20\x01(\x0b2\r.ItemCostDataR\
+    etcode\x129\n\x11rogue_revive_cost\x18\x08\x20\x01(\x0b2\r.ItemCostDataR\
     \x0frogueReviveCostb\x06proto3\
 ";
 

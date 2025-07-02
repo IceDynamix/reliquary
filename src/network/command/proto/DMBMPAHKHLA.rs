@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMBMPAHKHLA {
     // message fields
-    // @@protoc_insertion_point(field:DMBMPAHKHLA.DINGKFDBCJJ)
-    pub DINGKFDBCJJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DMBMPAHKHLA.LKKIDNJCFJA)
     pub LKKIDNJCFJA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DMBMPAHKHLA.DINGKFDBCJJ)
+    pub DINGKFDBCJJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DMBMPAHKHLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DMBMPAHKHLA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DINGKFDBCJJ",
-            |m: &DMBMPAHKHLA| { &m.DINGKFDBCJJ },
-            |m: &mut DMBMPAHKHLA| { &mut m.DINGKFDBCJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LKKIDNJCFJA",
             |m: &DMBMPAHKHLA| { &m.LKKIDNJCFJA },
             |m: &mut DMBMPAHKHLA| { &mut m.LKKIDNJCFJA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DINGKFDBCJJ",
+            |m: &DMBMPAHKHLA| { &m.DINGKFDBCJJ },
+            |m: &mut DMBMPAHKHLA| { &mut m.DINGKFDBCJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DMBMPAHKHLA>(
             "DMBMPAHKHLA",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for DMBMPAHKHLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DINGKFDBCJJ)?;
-                },
-                32 => {
-                    self.DINGKFDBCJJ.push(is.read_uint32()?);
-                },
-                50 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.LKKIDNJCFJA)?;
                 },
-                48 => {
+                104 => {
                     self.LKKIDNJCFJA.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DINGKFDBCJJ)?;
+                },
+                80 => {
+                    self.DINGKFDBCJJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for DMBMPAHKHLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DINGKFDBCJJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LKKIDNJCFJA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LKKIDNJCFJA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.DINGKFDBCJJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.DINGKFDBCJJ)?;
-        os.write_repeated_packed_uint32(6, &self.LKKIDNJCFJA)?;
+        os.write_repeated_packed_uint32(13, &self.LKKIDNJCFJA)?;
+        os.write_repeated_packed_uint32(10, &self.DINGKFDBCJJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for DMBMPAHKHLA {
     }
 
     fn clear(&mut self) {
-        self.DINGKFDBCJJ.clear();
         self.LKKIDNJCFJA.clear();
+        self.DINGKFDBCJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DMBMPAHKHLA {
         static instance: DMBMPAHKHLA = DMBMPAHKHLA {
-            DINGKFDBCJJ: ::std::vec::Vec::new(),
             LKKIDNJCFJA: ::std::vec::Vec::new(),
+            DINGKFDBCJJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for DMBMPAHKHLA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DMBMPAHKHLA.proto\"Q\n\x0bDMBMPAHKHLA\x12\x20\n\x0bDINGKFDBCJJ\x18\
-    \x04\x20\x03(\rR\x0bDINGKFDBCJJ\x12\x20\n\x0bLKKIDNJCFJA\x18\x06\x20\x03\
-    (\rR\x0bLKKIDNJCFJAb\x06proto3\
+    \n\x11DMBMPAHKHLA.proto\"Q\n\x0bDMBMPAHKHLA\x12\x20\n\x0bLKKIDNJCFJA\x18\
+    \r\x20\x03(\rR\x0bLKKIDNJCFJA\x12\x20\n\x0bDINGKFDBCJJ\x18\n\x20\x03(\rR\
+    \x0bDINGKFDBCJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct GOCKGIGBDCG {
     // message fields
     // @@protoc_insertion_point(field:GOCKGIGBDCG.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:GOCKGIGBDCG.CHLLMFJGPPA)
-    pub CHLLMFJGPPA: u32,
     // @@protoc_insertion_point(field:GOCKGIGBDCG.KBCEJINFNNJ)
     pub KBCEJINFNNJ: ::protobuf::MessageField<super::PFGAIEBGHCP::PFGAIEBGHCP>,
+    // @@protoc_insertion_point(field:GOCKGIGBDCG.CHLLMFJGPPA)
+    pub CHLLMFJGPPA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GOCKGIGBDCG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GOCKGIGBDCG {
             |m: &GOCKGIGBDCG| { &m.item_id },
             |m: &mut GOCKGIGBDCG| { &mut m.item_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHLLMFJGPPA",
-            |m: &GOCKGIGBDCG| { &m.CHLLMFJGPPA },
-            |m: &mut GOCKGIGBDCG| { &mut m.CHLLMFJGPPA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFGAIEBGHCP::PFGAIEBGHCP>(
             "KBCEJINFNNJ",
             |m: &GOCKGIGBDCG| { &m.KBCEJINFNNJ },
             |m: &mut GOCKGIGBDCG| { &mut m.KBCEJINFNNJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHLLMFJGPPA",
+            |m: &GOCKGIGBDCG| { &m.CHLLMFJGPPA },
+            |m: &mut GOCKGIGBDCG| { &mut m.CHLLMFJGPPA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GOCKGIGBDCG>(
             "GOCKGIGBDCG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GOCKGIGBDCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                96 => {
                     self.item_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.CHLLMFJGPPA = is.read_uint32()?;
-                },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBCEJINFNNJ)?;
+                },
+                112 => {
+                    self.CHLLMFJGPPA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GOCKGIGBDCG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
-        }
-        if self.CHLLMFJGPPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CHLLMFJGPPA);
+            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
         }
         if let Some(v) = self.KBCEJINFNNJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.CHLLMFJGPPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CHLLMFJGPPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GOCKGIGBDCG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(5, self.item_id)?;
-        }
-        if self.CHLLMFJGPPA != 0 {
-            os.write_uint32(6, self.CHLLMFJGPPA)?;
+            os.write_uint32(12, self.item_id)?;
         }
         if let Some(v) = self.KBCEJINFNNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.CHLLMFJGPPA != 0 {
+            os.write_uint32(14, self.CHLLMFJGPPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GOCKGIGBDCG {
 
     fn clear(&mut self) {
         self.item_id = 0;
-        self.CHLLMFJGPPA = 0;
         self.KBCEJINFNNJ.clear();
+        self.CHLLMFJGPPA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GOCKGIGBDCG {
         static instance: GOCKGIGBDCG = GOCKGIGBDCG {
             item_id: 0,
-            CHLLMFJGPPA: 0,
             KBCEJINFNNJ: ::protobuf::MessageField::none(),
+            CHLLMFJGPPA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GOCKGIGBDCG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GOCKGIGBDCG.proto\x1a\x11PFGAIEBGHCP.proto\"x\n\x0bGOCKGIGBDCG\x12\
-    \x17\n\x07item_id\x18\x05\x20\x01(\rR\x06itemId\x12\x20\n\x0bCHLLMFJGPPA\
-    \x18\x06\x20\x01(\rR\x0bCHLLMFJGPPA\x12.\n\x0bKBCEJINFNNJ\x18\n\x20\x01(\
-    \x0b2\x0c.PFGAIEBGHCPR\x0bKBCEJINFNNJb\x06proto3\
+    \x17\n\x07item_id\x18\x0c\x20\x01(\rR\x06itemId\x12.\n\x0bKBCEJINFNNJ\
+    \x18\x05\x20\x01(\x0b2\x0c.PFGAIEBGHCPR\x0bKBCEJINFNNJ\x12\x20\n\x0bCHLL\
+    MFJGPPA\x18\x0e\x20\x01(\rR\x0bCHLLMFJGPPAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

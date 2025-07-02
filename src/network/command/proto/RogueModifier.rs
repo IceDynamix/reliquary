@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifier {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifier.PKFCLDINCAL)
-    pub PKFCLDINCAL: u64,
-    // @@protoc_insertion_point(field:RogueModifier.modifier_content)
-    pub modifier_content: ::protobuf::MessageField<super::FPCHMKKCGFA::FPCHMKKCGFA>,
     // @@protoc_insertion_point(field:RogueModifier.HHMABJDIMGM)
     pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
+    // @@protoc_insertion_point(field:RogueModifier.PKFCLDINCAL)
+    pub PKFCLDINCAL: u64,
+    // @@protoc_insertion_point(field:RogueModifier.modifier__content)
+    pub modifier__content: ::protobuf::MessageField<super::FPCHMKKCGFA::FPCHMKKCGFA>,
     // message oneof groups
     pub EENLCDOCKLD: ::std::option::Option<rogue_modifier::EENLCDOCKLD>,
     // special fields
@@ -52,7 +52,7 @@ impl RogueModifier {
         ::std::default::Default::default()
     }
 
-    // .NDFOOKGHHOP KBOBEEMCNDD = 1234;
+    // .NDFOOKGHHOP KBOBEEMCNDD = 1733;
 
     pub fn KBOBEEMCNDD(&self) -> &super::NDFOOKGHHOP::NDFOOKGHHOP {
         match self.EENLCDOCKLD {
@@ -105,19 +105,19 @@ impl RogueModifier {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHMABJDIMGM",
+            |m: &RogueModifier| { &m.HHMABJDIMGM },
+            |m: &mut RogueModifier| { &mut m.HHMABJDIMGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PKFCLDINCAL",
             |m: &RogueModifier| { &m.PKFCLDINCAL },
             |m: &mut RogueModifier| { &mut m.PKFCLDINCAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPCHMKKCGFA::FPCHMKKCGFA>(
-            "modifier_content",
-            |m: &RogueModifier| { &m.modifier_content },
-            |m: &mut RogueModifier| { &mut m.modifier_content },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHMABJDIMGM",
-            |m: &RogueModifier| { &m.HHMABJDIMGM },
-            |m: &mut RogueModifier| { &mut m.HHMABJDIMGM },
+            "modifier__content",
+            |m: &RogueModifier| { &m.modifier__content },
+            |m: &mut RogueModifier| { &mut m.modifier__content },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NDFOOKGHHOP::NDFOOKGHHOP>(
             "KBOBEEMCNDD",
@@ -145,16 +145,16 @@ impl ::protobuf::Message for RogueModifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PKFCLDINCAL = is.read_uint64()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier_content)?;
-                },
-                16 => {
+                24 => {
                     self.HHMABJDIMGM = is.read_enum_or_unknown()?;
                 },
-                9874 => {
+                120 => {
+                    self.PKFCLDINCAL = is.read_uint64()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier__content)?;
+                },
+                13866 => {
                     self.EENLCDOCKLD = ::std::option::Option::Some(rogue_modifier::EENLCDOCKLD::KBOBEEMCNDD(is.read_message()?));
                 },
                 tag => {
@@ -169,15 +169,15 @@ impl ::protobuf::Message for RogueModifier {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKFCLDINCAL != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.PKFCLDINCAL);
+        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.HHMABJDIMGM.value());
         }
-        if let Some(v) = self.modifier_content.as_ref() {
+        if self.PKFCLDINCAL != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.PKFCLDINCAL);
+        }
+        if let Some(v) = self.modifier__content.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.HHMABJDIMGM.value());
         }
         if let ::std::option::Option::Some(ref v) = self.EENLCDOCKLD {
             match v {
@@ -193,19 +193,19 @@ impl ::protobuf::Message for RogueModifier {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKFCLDINCAL != 0 {
-            os.write_uint64(12, self.PKFCLDINCAL)?;
-        }
-        if let Some(v) = self.modifier_content.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+        }
+        if self.PKFCLDINCAL != 0 {
+            os.write_uint64(15, self.PKFCLDINCAL)?;
+        }
+        if let Some(v) = self.modifier__content.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EENLCDOCKLD {
             match v {
                 &rogue_modifier::EENLCDOCKLD::KBOBEEMCNDD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1234, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
                 },
             };
         }
@@ -226,18 +226,18 @@ impl ::protobuf::Message for RogueModifier {
     }
 
     fn clear(&mut self) {
-        self.PKFCLDINCAL = 0;
-        self.modifier_content.clear();
         self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
+        self.PKFCLDINCAL = 0;
+        self.modifier__content.clear();
         self.EENLCDOCKLD = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifier {
         static instance: RogueModifier = RogueModifier {
-            PKFCLDINCAL: 0,
-            modifier_content: ::protobuf::MessageField::none(),
             HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
+            PKFCLDINCAL: 0,
+            modifier__content: ::protobuf::MessageField::none(),
             EENLCDOCKLD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -292,12 +292,12 @@ pub mod rogue_modifier {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13RogueModifier.proto\x1a\x11FPCHMKKCGFA.proto\x1a\x11NDFOOKGHHOP.pr\
-    oto\x1a\x1dRogueModifierSourceType.proto\"\xe8\x01\n\rRogueModifier\x12\
-    \x20\n\x0bPKFCLDINCAL\x18\x0c\x20\x01(\x04R\x0bPKFCLDINCAL\x127\n\x10mod\
-    ifier_content\x18\t\x20\x01(\x0b2\x0c.FPCHMKKCGFAR\x0fmodifierContent\
-    \x12:\n\x0bHHMABJDIMGM\x18\x02\x20\x01(\x0e2\x18.RogueModifierSourceType\
-    R\x0bHHMABJDIMGM\x121\n\x0bKBOBEEMCNDD\x18\xd2\t\x20\x01(\x0b2\x0c.NDFOO\
-    KGHHOPH\0R\x0bKBOBEEMCNDDB\r\n\x0bEENLCDOCKLDb\x06proto3\
+    oto\x1a\x1dRogueModifierSourceType.proto\"\xe9\x01\n\rRogueModifier\x12:\
+    \n\x0bHHMABJDIMGM\x18\x03\x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0b\
+    HHMABJDIMGM\x12\x20\n\x0bPKFCLDINCAL\x18\x0f\x20\x01(\x04R\x0bPKFCLDINCA\
+    L\x128\n\x11modifier__content\x18\x0e\x20\x01(\x0b2\x0c.FPCHMKKCGFAR\x0f\
+    modifierContent\x121\n\x0bKBOBEEMCNDD\x18\xc5\r\x20\x01(\x0b2\x0c.NDFOOK\
+    GHHOPH\0R\x0bKBOBEEMCNDDB\r\n\x0bEENLCDOCKLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

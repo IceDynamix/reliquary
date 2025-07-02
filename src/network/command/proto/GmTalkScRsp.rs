@@ -79,10 +79,10 @@ impl ::protobuf::Message for GmTalkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                42 => {
                     self.BJDOJLKEHNA = is.read_string()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GmTalkScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if !self.BJDOJLKEHNA.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.BJDOJLKEHNA);
+            my_size += ::protobuf::rt::string_size(5, &self.BJDOJLKEHNA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GmTalkScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if !self.BJDOJLKEHNA.is_empty() {
-            os.write_string(1, &self.BJDOJLKEHNA)?;
+            os.write_string(5, &self.BJDOJLKEHNA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GmTalkScRsp.proto\"I\n\x0bGmTalkScRsp\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bBJDOJLKEHNA\x18\x01\x20\x01(\tR\x0b\
+    \n\x11GmTalkScRsp.proto\"I\n\x0bGmTalkScRsp\x12\x18\n\x07retcode\x18\x03\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bBJDOJLKEHNA\x18\x05\x20\x01(\tR\x0b\
     BJDOJLKEHNAb\x06proto3\
 ";
 

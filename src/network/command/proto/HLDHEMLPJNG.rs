@@ -50,7 +50,7 @@ impl HLDHEMLPJNG {
         ::std::default::Default::default()
     }
 
-    // .CNLMDFFEFJM EJCOLGNJGDC = 3;
+    // .CNLMDFFEFJM EJCOLGNJGDC = 14;
 
     pub fn EJCOLGNJGDC(&self) -> &super::CNLMDFFEFJM::CNLMDFFEFJM {
         match self.CBCPHFDKCOD {
@@ -138,13 +138,13 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.ACDOPCBMPNL = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.OOHNKOJHDHO = is.read_uint32()?;
                 },
-                26 => {
+                114 => {
                     self.CBCPHFDKCOD = ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(is.read_message()?));
                 },
                 tag => {
@@ -160,10 +160,10 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ACDOPCBMPNL);
+            my_size += ::protobuf::rt::uint32_size(11, self.ACDOPCBMPNL);
         }
         if self.OOHNKOJHDHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OOHNKOJHDHO);
+            my_size += ::protobuf::rt::uint32_size(4, self.OOHNKOJHDHO);
         }
         if let ::std::option::Option::Some(ref v) = self.CBCPHFDKCOD {
             match v {
@@ -180,15 +180,15 @@ impl ::protobuf::Message for HLDHEMLPJNG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(1, self.ACDOPCBMPNL)?;
+            os.write_uint32(11, self.ACDOPCBMPNL)?;
         }
         if self.OOHNKOJHDHO != 0 {
-            os.write_uint32(14, self.OOHNKOJHDHO)?;
+            os.write_uint32(4, self.OOHNKOJHDHO)?;
         }
         if let ::std::option::Option::Some(ref v) = self.CBCPHFDKCOD {
             match v {
                 &hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -273,9 +273,9 @@ pub mod hldhemlpjng {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLDHEMLPJNG.proto\x1a\x11CNLMDFFEFJM.proto\"\x92\x01\n\x0bHLDHEMLP\
-    JNG\x12\x20\n\x0bACDOPCBMPNL\x18\x01\x20\x01(\rR\x0bACDOPCBMPNL\x12\x20\
-    \n\x0bOOHNKOJHDHO\x18\x0e\x20\x01(\rR\x0bOOHNKOJHDHO\x120\n\x0bEJCOLGNJG\
-    DC\x18\x03\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bCBCP\
+    JNG\x12\x20\n\x0bACDOPCBMPNL\x18\x0b\x20\x01(\rR\x0bACDOPCBMPNL\x12\x20\
+    \n\x0bOOHNKOJHDHO\x18\x04\x20\x01(\rR\x0bOOHNKOJHDHO\x120\n\x0bEJCOLGNJG\
+    DC\x18\x0e\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bCBCP\
     HFDKCODb\x06proto3\
 ";
 

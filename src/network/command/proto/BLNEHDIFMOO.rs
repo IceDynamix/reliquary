@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BLNEHDIFMOO {
     // message fields
-    // @@protoc_insertion_point(field:BLNEHDIFMOO.BMBGKLKECAJ)
-    pub BMBGKLKECAJ: u32,
-    // @@protoc_insertion_point(field:BLNEHDIFMOO.HAABEFKHAMI)
-    pub HAABEFKHAMI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BLNEHDIFMOO.HCAGLCLEJND)
     pub HCAGLCLEJND: u32,
+    // @@protoc_insertion_point(field:BLNEHDIFMOO.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:BLNEHDIFMOO.BMBGKLKECAJ)
+    pub BMBGKLKECAJ: u32,
+    // @@protoc_insertion_point(field:BLNEHDIFMOO.DGJBACBIICO)
+    pub DGJBACBIICO: u32,
     // @@protoc_insertion_point(field:BLNEHDIFMOO.state)
     pub state: ::protobuf::EnumOrUnknown<super::MuseumRandomEventState::MuseumRandomEventState>,
     // @@protoc_insertion_point(field:BLNEHDIFMOO.COGBCPLMNFD)
     pub COGBCPLMNFD: u32,
-    // @@protoc_insertion_point(field:BLNEHDIFMOO.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:BLNEHDIFMOO.DGJBACBIICO)
-    pub DGJBACBIICO: u32,
+    // @@protoc_insertion_point(field:BLNEHDIFMOO.HAABEFKHAMI)
+    pub HAABEFKHAMI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BLNEHDIFMOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,19 +62,24 @@ impl BLNEHDIFMOO {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCAGLCLEJND",
+            |m: &BLNEHDIFMOO| { &m.HCAGLCLEJND },
+            |m: &mut BLNEHDIFMOO| { &mut m.HCAGLCLEJND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &BLNEHDIFMOO| { &m.event_id },
+            |m: &mut BLNEHDIFMOO| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BMBGKLKECAJ",
             |m: &BLNEHDIFMOO| { &m.BMBGKLKECAJ },
             |m: &mut BLNEHDIFMOO| { &mut m.BMBGKLKECAJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HAABEFKHAMI",
-            |m: &BLNEHDIFMOO| { &m.HAABEFKHAMI },
-            |m: &mut BLNEHDIFMOO| { &mut m.HAABEFKHAMI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCAGLCLEJND",
-            |m: &BLNEHDIFMOO| { &m.HCAGLCLEJND },
-            |m: &mut BLNEHDIFMOO| { &mut m.HCAGLCLEJND },
+            "DGJBACBIICO",
+            |m: &BLNEHDIFMOO| { &m.DGJBACBIICO },
+            |m: &mut BLNEHDIFMOO| { &mut m.DGJBACBIICO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
@@ -86,15 +91,10 @@ impl BLNEHDIFMOO {
             |m: &BLNEHDIFMOO| { &m.COGBCPLMNFD },
             |m: &mut BLNEHDIFMOO| { &mut m.COGBCPLMNFD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &BLNEHDIFMOO| { &m.event_id },
-            |m: &mut BLNEHDIFMOO| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGJBACBIICO",
-            |m: &BLNEHDIFMOO| { &m.DGJBACBIICO },
-            |m: &mut BLNEHDIFMOO| { &mut m.DGJBACBIICO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HAABEFKHAMI",
+            |m: &BLNEHDIFMOO| { &m.HAABEFKHAMI },
+            |m: &mut BLNEHDIFMOO| { &mut m.HAABEFKHAMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLNEHDIFMOO>(
             "BLNEHDIFMOO",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for BLNEHDIFMOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.HCAGLCLEJND = is.read_uint32()?;
+                },
+                96 => {
+                    self.event_id = is.read_uint32()?;
+                },
                 112 => {
                     self.BMBGKLKECAJ = is.read_uint32()?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HAABEFKHAMI)?;
-                },
-                32 => {
-                    self.HAABEFKHAMI.push(is.read_uint32()?);
+                8 => {
+                    self.DGJBACBIICO = is.read_uint32()?;
                 },
                 72 => {
-                    self.HCAGLCLEJND = is.read_uint32()?;
-                },
-                16 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                16 => {
                     self.COGBCPLMNFD = is.read_uint32()?;
                 },
-                48 => {
-                    self.event_id = is.read_uint32()?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HAABEFKHAMI)?;
                 },
-                24 => {
-                    self.DGJBACBIICO = is.read_uint32()?;
+                88 => {
+                    self.HAABEFKHAMI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,50 +150,50 @@ impl ::protobuf::Message for BLNEHDIFMOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HCAGLCLEJND != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HCAGLCLEJND);
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.event_id);
+        }
         if self.BMBGKLKECAJ != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.BMBGKLKECAJ);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HAABEFKHAMI);
-        if self.HCAGLCLEJND != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HCAGLCLEJND);
+        if self.DGJBACBIICO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DGJBACBIICO);
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MUSEUM_RANDOM_EVENT_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.state.value());
+            my_size += ::protobuf::rt::int32_size(9, self.state.value());
         }
         if self.COGBCPLMNFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.COGBCPLMNFD);
+            my_size += ::protobuf::rt::uint32_size(2, self.COGBCPLMNFD);
         }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.event_id);
-        }
-        if self.DGJBACBIICO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DGJBACBIICO);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HAABEFKHAMI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HCAGLCLEJND != 0 {
+            os.write_uint32(3, self.HCAGLCLEJND)?;
+        }
+        if self.event_id != 0 {
+            os.write_uint32(12, self.event_id)?;
+        }
         if self.BMBGKLKECAJ != 0 {
             os.write_uint32(14, self.BMBGKLKECAJ)?;
         }
-        os.write_repeated_packed_uint32(4, &self.HAABEFKHAMI)?;
-        if self.HCAGLCLEJND != 0 {
-            os.write_uint32(9, self.HCAGLCLEJND)?;
+        if self.DGJBACBIICO != 0 {
+            os.write_uint32(1, self.DGJBACBIICO)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MUSEUM_RANDOM_EVENT_STATE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
         if self.COGBCPLMNFD != 0 {
-            os.write_uint32(15, self.COGBCPLMNFD)?;
+            os.write_uint32(2, self.COGBCPLMNFD)?;
         }
-        if self.event_id != 0 {
-            os.write_uint32(6, self.event_id)?;
-        }
-        if self.DGJBACBIICO != 0 {
-            os.write_uint32(3, self.DGJBACBIICO)?;
-        }
+        os.write_repeated_packed_uint32(11, &self.HAABEFKHAMI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -211,25 +211,25 @@ impl ::protobuf::Message for BLNEHDIFMOO {
     }
 
     fn clear(&mut self) {
-        self.BMBGKLKECAJ = 0;
-        self.HAABEFKHAMI.clear();
         self.HCAGLCLEJND = 0;
+        self.event_id = 0;
+        self.BMBGKLKECAJ = 0;
+        self.DGJBACBIICO = 0;
         self.state = ::protobuf::EnumOrUnknown::new(super::MuseumRandomEventState::MuseumRandomEventState::MUSEUM_RANDOM_EVENT_STATE_NONE);
         self.COGBCPLMNFD = 0;
-        self.event_id = 0;
-        self.DGJBACBIICO = 0;
+        self.HAABEFKHAMI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BLNEHDIFMOO {
         static instance: BLNEHDIFMOO = BLNEHDIFMOO {
-            BMBGKLKECAJ: 0,
-            HAABEFKHAMI: ::std::vec::Vec::new(),
             HCAGLCLEJND: 0,
+            event_id: 0,
+            BMBGKLKECAJ: 0,
+            DGJBACBIICO: 0,
             state: ::protobuf::EnumOrUnknown::from_i32(0),
             COGBCPLMNFD: 0,
-            event_id: 0,
-            DGJBACBIICO: 0,
+            HAABEFKHAMI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for BLNEHDIFMOO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BLNEHDIFMOO.proto\x1a\x1cMuseumRandomEventState.proto\"\x81\x02\n\
-    \x0bBLNEHDIFMOO\x12\x20\n\x0bBMBGKLKECAJ\x18\x0e\x20\x01(\rR\x0bBMBGKLKE\
-    CAJ\x12\x20\n\x0bHAABEFKHAMI\x18\x04\x20\x03(\rR\x0bHAABEFKHAMI\x12\x20\
-    \n\x0bHCAGLCLEJND\x18\t\x20\x01(\rR\x0bHCAGLCLEJND\x12-\n\x05state\x18\
-    \x02\x20\x01(\x0e2\x17.MuseumRandomEventStateR\x05state\x12\x20\n\x0bCOG\
-    BCPLMNFD\x18\x0f\x20\x01(\rR\x0bCOGBCPLMNFD\x12\x19\n\x08event_id\x18\
-    \x06\x20\x01(\rR\x07eventId\x12\x20\n\x0bDGJBACBIICO\x18\x03\x20\x01(\rR\
-    \x0bDGJBACBIICOb\x06proto3\
+    \x0bBLNEHDIFMOO\x12\x20\n\x0bHCAGLCLEJND\x18\x03\x20\x01(\rR\x0bHCAGLCLE\
+    JND\x12\x19\n\x08event_id\x18\x0c\x20\x01(\rR\x07eventId\x12\x20\n\x0bBM\
+    BGKLKECAJ\x18\x0e\x20\x01(\rR\x0bBMBGKLKECAJ\x12\x20\n\x0bDGJBACBIICO\
+    \x18\x01\x20\x01(\rR\x0bDGJBACBIICO\x12-\n\x05state\x18\t\x20\x01(\x0e2\
+    \x17.MuseumRandomEventStateR\x05state\x12\x20\n\x0bCOGBCPLMNFD\x18\x02\
+    \x20\x01(\rR\x0bCOGBCPLMNFD\x12\x20\n\x0bHAABEFKHAMI\x18\x0b\x20\x03(\rR\
+    \x0bHAABEFKHAMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

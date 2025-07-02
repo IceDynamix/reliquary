@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ABENFANELFL {
     // message fields
-    // @@protoc_insertion_point(field:ABENFANELFL.LMBIODPOHGE)
-    pub LMBIODPOHGE: f32,
     // @@protoc_insertion_point(field:ABENFANELFL.GGPLCPCHADN)
     pub GGPLCPCHADN: i32,
+    // @@protoc_insertion_point(field:ABENFANELFL.LMBIODPOHGE)
+    pub LMBIODPOHGE: f32,
     // special fields
     // @@protoc_insertion_point(special_field:ABENFANELFL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ABENFANELFL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMBIODPOHGE",
-            |m: &ABENFANELFL| { &m.LMBIODPOHGE },
-            |m: &mut ABENFANELFL| { &mut m.LMBIODPOHGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GGPLCPCHADN",
             |m: &ABENFANELFL| { &m.GGPLCPCHADN },
             |m: &mut ABENFANELFL| { &mut m.GGPLCPCHADN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMBIODPOHGE",
+            |m: &ABENFANELFL| { &m.LMBIODPOHGE },
+            |m: &mut ABENFANELFL| { &mut m.LMBIODPOHGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ABENFANELFL>(
             "ABENFANELFL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ABENFANELFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                117 => {
-                    self.LMBIODPOHGE = is.read_float()?;
-                },
-                8 => {
+                32 => {
                     self.GGPLCPCHADN = is.read_int32()?;
+                },
+                77 => {
+                    self.LMBIODPOHGE = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ABENFANELFL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GGPLCPCHADN != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.GGPLCPCHADN);
+        }
         if self.LMBIODPOHGE != 0. {
             my_size += 1 + 4;
-        }
-        if self.GGPLCPCHADN != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.GGPLCPCHADN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ABENFANELFL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMBIODPOHGE != 0. {
-            os.write_float(14, self.LMBIODPOHGE)?;
-        }
         if self.GGPLCPCHADN != 0 {
-            os.write_int32(1, self.GGPLCPCHADN)?;
+            os.write_int32(4, self.GGPLCPCHADN)?;
+        }
+        if self.LMBIODPOHGE != 0. {
+            os.write_float(9, self.LMBIODPOHGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ABENFANELFL {
     }
 
     fn clear(&mut self) {
-        self.LMBIODPOHGE = 0.;
         self.GGPLCPCHADN = 0;
+        self.LMBIODPOHGE = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ABENFANELFL {
         static instance: ABENFANELFL = ABENFANELFL {
-            LMBIODPOHGE: 0.,
             GGPLCPCHADN: 0,
+            LMBIODPOHGE: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ABENFANELFL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABENFANELFL.proto\"Q\n\x0bABENFANELFL\x12\x20\n\x0bLMBIODPOHGE\x18\
-    \x0e\x20\x01(\x02R\x0bLMBIODPOHGE\x12\x20\n\x0bGGPLCPCHADN\x18\x01\x20\
-    \x01(\x05R\x0bGGPLCPCHADNb\x06proto3\
+    \n\x11ABENFANELFL.proto\"Q\n\x0bABENFANELFL\x12\x20\n\x0bGGPLCPCHADN\x18\
+    \x04\x20\x01(\x05R\x0bGGPLCPCHADN\x12\x20\n\x0bLMBIODPOHGE\x18\t\x20\x01\
+    (\x02R\x0bLMBIODPOHGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

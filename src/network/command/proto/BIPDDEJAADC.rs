@@ -79,10 +79,10 @@ impl ::protobuf::Message for BIPDDEJAADC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                98 => {
                     self.rogue_current_game_info.push(is.read_message()?);
                 },
-                24 => {
+                120 => {
                     self.rogue_sub_mode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for BIPDDEJAADC {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.rogue_sub_mode);
+            my_size += ::protobuf::rt::uint32_size(15, self.rogue_sub_mode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BIPDDEJAADC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rogue_current_game_info {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.rogue_sub_mode != 0 {
-            os.write_uint32(3, self.rogue_sub_mode)?;
+            os.write_uint32(15, self.rogue_sub_mode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BIPDDEJAADC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BIPDDEJAADC.proto\x1a\x13RogueGameInfo.proto\"z\n\x0bBIPDDEJAADC\
-    \x12E\n\x17rogue_current_game_info\x18\x0e\x20\x03(\x0b2\x0e.RogueGameIn\
-    foR\x14rogueCurrentGameInfo\x12$\n\x0erogue_sub_mode\x18\x03\x20\x01(\rR\
+    \x12E\n\x17rogue_current_game_info\x18\x0c\x20\x03(\x0b2\x0e.RogueGameIn\
+    foR\x14rogueCurrentGameInfo\x12$\n\x0erogue_sub_mode\x18\x0f\x20\x01(\rR\
     \x0crogueSubModeb\x06proto3\
 ";
 

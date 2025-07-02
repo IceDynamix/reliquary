@@ -30,10 +30,10 @@ pub struct TakeMaterialSubmitActivityRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.PEHOFBBDNIC)
     pub PEHOFBBDNIC: u32,
-    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeMaterialSubmitActivityRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMaterialSubmitActivityRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TakeMaterialSubmitActivityRewardScRsp {
             |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.PEHOFBBDNIC },
             |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.PEHOFBBDNIC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.reward },
-            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.retcode },
             |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakeMaterialSubmitActivityRewardScRsp| { &m.reward },
+            |m: &mut TakeMaterialSubmitActivityRewardScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMaterialSubmitActivityRewardScRsp>(
             "TakeMaterialSubmitActivityRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.PEHOFBBDNIC = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                56 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PEHOFBBDNIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PEHOFBBDNIC);
+            my_size += ::protobuf::rt::uint32_size(8, self.PEHOFBBDNIC);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PEHOFBBDNIC != 0 {
-            os.write_uint32(1, self.PEHOFBBDNIC)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            os.write_uint32(8, self.PEHOFBBDNIC)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
 
     fn clear(&mut self) {
         self.PEHOFBBDNIC = 0;
-        self.reward.clear();
         self.retcode = 0;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMaterialSubmitActivityRewardScRsp {
         static instance: TakeMaterialSubmitActivityRewardScRsp = TakeMaterialSubmitActivityRewardScRsp {
             PEHOFBBDNIC: 0,
-            reward: ::protobuf::MessageField::none(),
             retcode: 0,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeMaterialSubmitActivityRewardScRs
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+TakeMaterialSubmitActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\
     \x86\x01\n%TakeMaterialSubmitActivityRewardScRsp\x12\x20\n\x0bPEHOFBBDNI\
-    C\x18\x01\x20\x01(\rR\x0bPEHOFBBDNIC\x12!\n\x06reward\x18\x0f\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07\
-    retcodeb\x06proto3\
+    C\x18\x08\x20\x01(\rR\x0bPEHOFBBDNIC\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcode\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\
+    \x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

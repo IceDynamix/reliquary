@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                114 => {
                     self.LJCPDMNKJIF.push(is.read_message()?);
                 },
-                90 => {
+                58 => {
                     self.FCHNNKEKFCL.push(is.read_message()?);
                 },
-                64 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LJCPDMNKJIF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for v in &self.FCHNNKEKFCL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMultipleDropInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetMultipleDropInfoScRsp.proto\x1a\x11ECCNNONKFCA.proto\x1a\x11OHD\
     NCHFGFMA.proto\"\x94\x01\n\x18GetMultipleDropInfoScRsp\x12.\n\x0bLJCPDMN\
-    KJIF\x18\x06\x20\x03(\x0b2\x0c.ECCNNONKFCAR\x0bLJCPDMNKJIF\x12.\n\x0bFCH\
-    NNKEKFCL\x18\x0b\x20\x03(\x0b2\x0c.OHDNCHFGFMAR\x0bFCHNNKEKFCL\x12\x18\n\
-    \x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    KJIF\x18\x0e\x20\x03(\x0b2\x0c.ECCNNONKFCAR\x0bLJCPDMNKJIF\x12.\n\x0bFCH\
+    NNKEKFCL\x18\x07\x20\x03(\x0b2\x0c.OHDNCHFGFMAR\x0bFCHNNKEKFCL\x12\x18\n\
+    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

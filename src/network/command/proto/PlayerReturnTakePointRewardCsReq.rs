@@ -79,7 +79,7 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.IIFOMGOFMDL = is.read_uint32()?;
                 },
                 64 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IIFOMGOFMDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IIFOMGOFMDL);
+            my_size += ::protobuf::rt::uint32_size(3, self.IIFOMGOFMDL);
         }
         if self.CPNIMLJNMMF != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.CPNIMLJNMMF);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IIFOMGOFMDL != 0 {
-            os.write_uint32(10, self.IIFOMGOFMDL)?;
+            os.write_uint32(3, self.IIFOMGOFMDL)?;
         }
         if self.CPNIMLJNMMF != 0 {
             os.write_uint32(8, self.CPNIMLJNMMF)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakePointRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlayerReturnTakePointRewardCsReq.proto\"f\n\x20PlayerReturnTakePointR\
-    ewardCsReq\x12\x20\n\x0bIIFOMGOFMDL\x18\n\x20\x01(\rR\x0bIIFOMGOFMDL\x12\
-    \x20\n\x0bCPNIMLJNMMF\x18\x08\x20\x01(\rR\x0bCPNIMLJNMMFb\x06proto3\
+    ewardCsReq\x12\x20\n\x0bIIFOMGOFMDL\x18\x03\x20\x01(\rR\x0bIIFOMGOFMDL\
+    \x12\x20\n\x0bCPNIMLJNMMF\x18\x08\x20\x01(\rR\x0bCPNIMLJNMMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

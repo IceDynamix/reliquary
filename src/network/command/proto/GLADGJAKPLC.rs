@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLADGJAKPLC {
     // message fields
+    // @@protoc_insertion_point(field:GLADGJAKPLC.BEEEBOIOJIF)
+    pub BEEEBOIOJIF: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
+    // @@protoc_insertion_point(field:GLADGJAKPLC.site_id)
+    pub site_id: u32,
     // @@protoc_insertion_point(field:GLADGJAKPLC.HNLFGDMCJDF)
     pub HNLFGDMCJDF: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:GLADGJAKPLC.IMIMGFAAGHM)
     pub IMIMGFAAGHM: u32,
-    // @@protoc_insertion_point(field:GLADGJAKPLC.site_id)
-    pub site_id: u32,
-    // @@protoc_insertion_point(field:GLADGJAKPLC.BEEEBOIOJIF)
-    pub BEEEBOIOJIF: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:GLADGJAKPLC.room_id)
     pub room_id: u32,
     // special fields
@@ -58,6 +58,16 @@ impl GLADGJAKPLC {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BEEEBOIOJIF",
+            |m: &GLADGJAKPLC| { &m.BEEEBOIOJIF },
+            |m: &mut GLADGJAKPLC| { &mut m.BEEEBOIOJIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "site_id",
+            |m: &GLADGJAKPLC| { &m.site_id },
+            |m: &mut GLADGJAKPLC| { &mut m.site_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HNLFGDMCJDF",
             |m: &GLADGJAKPLC| { &m.HNLFGDMCJDF },
             |m: &mut GLADGJAKPLC| { &mut m.HNLFGDMCJDF },
@@ -66,16 +76,6 @@ impl GLADGJAKPLC {
             "IMIMGFAAGHM",
             |m: &GLADGJAKPLC| { &m.IMIMGFAAGHM },
             |m: &mut GLADGJAKPLC| { &mut m.IMIMGFAAGHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "site_id",
-            |m: &GLADGJAKPLC| { &m.site_id },
-            |m: &mut GLADGJAKPLC| { &mut m.site_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEEEBOIOJIF",
-            |m: &GLADGJAKPLC| { &m.BEEEBOIOJIF },
-            |m: &mut GLADGJAKPLC| { &mut m.BEEEBOIOJIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GLADGJAKPLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.HNLFGDMCJDF = is.read_enum_or_unknown()?;
-                },
-                104 => {
-                    self.IMIMGFAAGHM = is.read_uint32()?;
-                },
-                40 => {
-                    self.site_id = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.BEEEBOIOJIF = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                72 => {
+                    self.site_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.HNLFGDMCJDF = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.IMIMGFAAGHM = is.read_uint32()?;
+                },
+                96 => {
                     self.room_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for GLADGJAKPLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HNLFGDMCJDF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.HNLFGDMCJDF.value());
-        }
-        if self.IMIMGFAAGHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IMIMGFAAGHM);
+        if self.BEEEBOIOJIF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.BEEEBOIOJIF.value());
         }
         if self.site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.site_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.site_id);
         }
-        if self.BEEEBOIOJIF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.BEEEBOIOJIF.value());
+        if self.HNLFGDMCJDF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.HNLFGDMCJDF.value());
+        }
+        if self.IMIMGFAAGHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IMIMGFAAGHM);
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.room_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for GLADGJAKPLC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HNLFGDMCJDF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.HNLFGDMCJDF))?;
-        }
-        if self.IMIMGFAAGHM != 0 {
-            os.write_uint32(13, self.IMIMGFAAGHM)?;
+        if self.BEEEBOIOJIF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BEEEBOIOJIF))?;
         }
         if self.site_id != 0 {
-            os.write_uint32(5, self.site_id)?;
+            os.write_uint32(9, self.site_id)?;
         }
-        if self.BEEEBOIOJIF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.BEEEBOIOJIF))?;
+        if self.HNLFGDMCJDF != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.HNLFGDMCJDF))?;
+        }
+        if self.IMIMGFAAGHM != 0 {
+            os.write_uint32(15, self.IMIMGFAAGHM)?;
         }
         if self.room_id != 0 {
-            os.write_uint32(7, self.room_id)?;
+            os.write_uint32(12, self.room_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for GLADGJAKPLC {
     }
 
     fn clear(&mut self) {
+        self.BEEEBOIOJIF = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE);
+        self.site_id = 0;
         self.HNLFGDMCJDF = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE);
         self.IMIMGFAAGHM = 0;
-        self.site_id = 0;
-        self.BEEEBOIOJIF = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::ROGUE_ROOM_STATUS_NONE);
         self.room_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLADGJAKPLC {
         static instance: GLADGJAKPLC = GLADGJAKPLC {
+            BEEEBOIOJIF: ::protobuf::EnumOrUnknown::from_i32(0),
+            site_id: 0,
             HNLFGDMCJDF: ::protobuf::EnumOrUnknown::from_i32(0),
             IMIMGFAAGHM: 0,
-            site_id: 0,
-            BEEEBOIOJIF: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for GLADGJAKPLC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLADGJAKPLC.proto\x1a\x15RogueRoomStatus.proto\"\xc9\x01\n\x0bGLAD\
-    GJAKPLC\x122\n\x0bHNLFGDMCJDF\x18\n\x20\x01(\x0e2\x10.RogueRoomStatusR\
-    \x0bHNLFGDMCJDF\x12\x20\n\x0bIMIMGFAAGHM\x18\r\x20\x01(\rR\x0bIMIMGFAAGH\
-    M\x12\x17\n\x07site_id\x18\x05\x20\x01(\rR\x06siteId\x122\n\x0bBEEEBOIOJ\
-    IF\x18\x0c\x20\x01(\x0e2\x10.RogueRoomStatusR\x0bBEEEBOIOJIF\x12\x17\n\
-    \x07room_id\x18\x07\x20\x01(\rR\x06roomIdb\x06proto3\
+    GJAKPLC\x122\n\x0bBEEEBOIOJIF\x18\x04\x20\x01(\x0e2\x10.RogueRoomStatusR\
+    \x0bBEEEBOIOJIF\x12\x17\n\x07site_id\x18\t\x20\x01(\rR\x06siteId\x122\n\
+    \x0bHNLFGDMCJDF\x18\x02\x20\x01(\x0e2\x10.RogueRoomStatusR\x0bHNLFGDMCJD\
+    F\x12\x20\n\x0bIMIMGFAAGHM\x18\x0f\x20\x01(\rR\x0bIMIMGFAAGHM\x12\x17\n\
+    \x07room_id\x18\x0c\x20\x01(\rR\x06roomIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

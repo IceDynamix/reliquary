@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMailType {
     // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailTypeNone)
     CmdMailTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMarkReadMailCsReq)
-    CmdMarkReadMailCsReq = 831,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMarkReadMailScRsp)
-    CmdMarkReadMailScRsp = 840,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdDelMailScRsp)
-    CmdDelMailScRsp = 848,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdTakeMailAttachmentScRsp)
-    CmdTakeMailAttachmentScRsp = 852,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdNewMailScNotify)
-    CmdNewMailScNotify = 822,
     // @@protoc_insertion_point(enum_value:CmdMailType.CmdGetMailScRsp)
-    CmdGetMailScRsp = 832,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdGetMailCsReq)
-    CmdGetMailCsReq = 895,
+    CmdGetMailScRsp = 891,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdDelMailScRsp)
+    CmdDelMailScRsp = 821,
     // @@protoc_insertion_point(enum_value:CmdMailType.CmdDelMailCsReq)
-    CmdDelMailCsReq = 876,
+    CmdDelMailCsReq = 827,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdTakeMailAttachmentScRsp)
+    CmdTakeMailAttachmentScRsp = 859,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdGetMailCsReq)
+    CmdGetMailCsReq = 820,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdNewMailScNotify)
+    CmdNewMailScNotify = 854,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMarkReadMailScRsp)
+    CmdMarkReadMailScRsp = 839,
     // @@protoc_insertion_point(enum_value:CmdMailType.CmdTakeMailAttachmentCsReq)
-    CmdTakeMailAttachmentCsReq = 871,
+    CmdTakeMailAttachmentCsReq = 870,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMarkReadMailCsReq)
+    CmdMarkReadMailCsReq = 867,
 }
 
 impl ::protobuf::Enum for CmdMailType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdMailType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMailType> {
         match value {
             0 => ::std::option::Option::Some(CmdMailType::CmdMailTypeNone),
-            831 => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
-            840 => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailScRsp),
-            848 => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
-            852 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
-            822 => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
-            832 => ::std::option::Option::Some(CmdMailType::CmdGetMailScRsp),
-            895 => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
-            876 => ::std::option::Option::Some(CmdMailType::CmdDelMailCsReq),
-            871 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentCsReq),
+            891 => ::std::option::Option::Some(CmdMailType::CmdGetMailScRsp),
+            821 => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
+            827 => ::std::option::Option::Some(CmdMailType::CmdDelMailCsReq),
+            859 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
+            820 => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
+            854 => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
+            839 => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailScRsp),
+            870 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentCsReq),
+            867 => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CmdMailType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMailType> {
         match str {
             "CmdMailTypeNone" => ::std::option::Option::Some(CmdMailType::CmdMailTypeNone),
-            "CmdMarkReadMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
-            "CmdMarkReadMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailScRsp),
-            "CmdDelMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
-            "CmdTakeMailAttachmentScRsp" => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
-            "CmdNewMailScNotify" => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
             "CmdGetMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdGetMailScRsp),
-            "CmdGetMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
+            "CmdDelMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
             "CmdDelMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdDelMailCsReq),
+            "CmdTakeMailAttachmentScRsp" => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
+            "CmdGetMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
+            "CmdNewMailScNotify" => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
+            "CmdMarkReadMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailScRsp),
             "CmdTakeMailAttachmentCsReq" => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentCsReq),
+            "CmdMarkReadMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMailType] = &[
         CmdMailType::CmdMailTypeNone,
-        CmdMailType::CmdMarkReadMailCsReq,
-        CmdMailType::CmdMarkReadMailScRsp,
-        CmdMailType::CmdDelMailScRsp,
-        CmdMailType::CmdTakeMailAttachmentScRsp,
-        CmdMailType::CmdNewMailScNotify,
         CmdMailType::CmdGetMailScRsp,
-        CmdMailType::CmdGetMailCsReq,
+        CmdMailType::CmdDelMailScRsp,
         CmdMailType::CmdDelMailCsReq,
+        CmdMailType::CmdTakeMailAttachmentScRsp,
+        CmdMailType::CmdGetMailCsReq,
+        CmdMailType::CmdNewMailScNotify,
+        CmdMailType::CmdMarkReadMailScRsp,
         CmdMailType::CmdTakeMailAttachmentCsReq,
+        CmdMailType::CmdMarkReadMailCsReq,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CmdMailType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMailType::CmdMailTypeNone => 0,
-            CmdMailType::CmdMarkReadMailCsReq => 1,
-            CmdMailType::CmdMarkReadMailScRsp => 2,
-            CmdMailType::CmdDelMailScRsp => 3,
+            CmdMailType::CmdGetMailScRsp => 1,
+            CmdMailType::CmdDelMailScRsp => 2,
+            CmdMailType::CmdDelMailCsReq => 3,
             CmdMailType::CmdTakeMailAttachmentScRsp => 4,
-            CmdMailType::CmdNewMailScNotify => 5,
-            CmdMailType::CmdGetMailScRsp => 6,
-            CmdMailType::CmdGetMailCsReq => 7,
-            CmdMailType::CmdDelMailCsReq => 8,
-            CmdMailType::CmdTakeMailAttachmentCsReq => 9,
+            CmdMailType::CmdGetMailCsReq => 5,
+            CmdMailType::CmdNewMailScNotify => 6,
+            CmdMailType::CmdMarkReadMailScRsp => 7,
+            CmdMailType::CmdTakeMailAttachmentCsReq => 8,
+            CmdMailType::CmdMarkReadMailCsReq => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,12 @@ impl CmdMailType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdMailType.proto*\x8b\x02\n\x0bCmdMailType\x12\x13\n\x0fCmdMailTy\
-    peNone\x10\0\x12\x19\n\x14CmdMarkReadMailCsReq\x10\xbf\x06\x12\x19\n\x14\
-    CmdMarkReadMailScRsp\x10\xc8\x06\x12\x14\n\x0fCmdDelMailScRsp\x10\xd0\
-    \x06\x12\x1f\n\x1aCmdTakeMailAttachmentScRsp\x10\xd4\x06\x12\x17\n\x12Cm\
-    dNewMailScNotify\x10\xb6\x06\x12\x14\n\x0fCmdGetMailScRsp\x10\xc0\x06\
-    \x12\x14\n\x0fCmdGetMailCsReq\x10\xff\x06\x12\x14\n\x0fCmdDelMailCsReq\
-    \x10\xec\x06\x12\x1f\n\x1aCmdTakeMailAttachmentCsReq\x10\xe7\x06b\x06pro\
-    to3\
+    peNone\x10\0\x12\x14\n\x0fCmdGetMailScRsp\x10\xfb\x06\x12\x14\n\x0fCmdDe\
+    lMailScRsp\x10\xb5\x06\x12\x14\n\x0fCmdDelMailCsReq\x10\xbb\x06\x12\x1f\
+    \n\x1aCmdTakeMailAttachmentScRsp\x10\xdb\x06\x12\x14\n\x0fCmdGetMailCsRe\
+    q\x10\xb4\x06\x12\x17\n\x12CmdNewMailScNotify\x10\xd6\x06\x12\x19\n\x14C\
+    mdMarkReadMailScRsp\x10\xc7\x06\x12\x1f\n\x1aCmdTakeMailAttachmentCsReq\
+    \x10\xe6\x06\x12\x19\n\x14CmdMarkReadMailCsReq\x10\xe3\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

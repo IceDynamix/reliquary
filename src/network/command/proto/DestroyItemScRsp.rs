@@ -82,7 +82,7 @@ impl ::protobuf::Message for DestroyItemScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.cur_item_count = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DestroyItemScRsp {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.cur_item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cur_item_count);
+            my_size += ::protobuf::rt::uint32_size(9, self.cur_item_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for DestroyItemScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if self.cur_item_count != 0 {
-            os.write_uint32(7, self.cur_item_count)?;
+            os.write_uint32(9, self.cur_item_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DestroyItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DestroyItemScRsp.proto\"R\n\x10DestroyItemScRsp\x12\x18\n\x07retco\
-    de\x18\x05\x20\x01(\rR\x07retcode\x12$\n\x0ecur_item_count\x18\x07\x20\
-    \x01(\rR\x0ccurItemCountb\x06proto3\
+    de\x18\x05\x20\x01(\rR\x07retcode\x12$\n\x0ecur_item_count\x18\t\x20\x01\
+    (\rR\x0ccurItemCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

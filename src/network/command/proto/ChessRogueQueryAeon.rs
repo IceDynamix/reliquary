@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.aeon_id = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.MAMHOJMFJOF = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.aeon_id);
         }
         if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MAMHOJMFJOF);
+            my_size += ::protobuf::rt::uint32_size(15, self.MAMHOJMFJOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.aeon_id != 0 {
-            os.write_uint32(12, self.aeon_id)?;
+            os.write_uint32(1, self.aeon_id)?;
         }
         if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(14, self.MAMHOJMFJOF)?;
+            os.write_uint32(15, self.MAMHOJMFJOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryAeon {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChessRogueQueryAeon.proto\"P\n\x13ChessRogueQueryAeon\x12\x17\n\
-    \x07aeon_id\x18\x0c\x20\x01(\rR\x06aeonId\x12\x20\n\x0bMAMHOJMFJOF\x18\
-    \x0e\x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
+    \x07aeon_id\x18\x01\x20\x01(\rR\x06aeonId\x12\x20\n\x0bMAMHOJMFJOF\x18\
+    \x0f\x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

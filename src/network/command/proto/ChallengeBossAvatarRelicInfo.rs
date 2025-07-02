@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChallengeBossAvatarRelicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -117,7 +117,7 @@ impl ::protobuf::Message for ChallengeBossAvatarRelicInfo {
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossAvatarRelicInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ChallengeBossAvatarRelicInfo.proto\x1a\x1cChallengeBossRelicInfo.pro\
     to\"\xc9\x01\n\x1cChallengeBossAvatarRelicInfo\x12P\n\x0bNAGDKFKIFIG\x18\
-    \n\x20\x03(\x0b2..ChallengeBossAvatarRelicInfo.NAGDKFKIFIGEntryR\x0bNAGD\
+    \r\x20\x03(\x0b2..ChallengeBossAvatarRelicInfo.NAGDKFKIFIGEntryR\x0bNAGD\
     KFKIFIG\x1aW\n\x10NAGDKFKIFIGEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
     \x03key\x12-\n\x05value\x18\x02\x20\x01(\x0b2\x17.ChallengeBossRelicInfo\
     R\x05value:\x028\x01b\x06proto3\

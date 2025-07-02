@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AHKGGGGIBIF {
     // message fields
-    // @@protoc_insertion_point(field:AHKGGGGIBIF.DCHOLKBFBGI)
-    pub DCHOLKBFBGI: u32,
+    // @@protoc_insertion_point(field:AHKGGGGIBIF.CEIFDIKPDAM)
+    pub CEIFDIKPDAM: u32,
     // @@protoc_insertion_point(field:AHKGGGGIBIF.first_lineup)
     pub first_lineup: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AHKGGGGIBIF.second_lineup)
     pub second_lineup: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:AHKGGGGIBIF.CEIFDIKPDAM)
-    pub CEIFDIKPDAM: u32,
+    // @@protoc_insertion_point(field:AHKGGGGIBIF.DCHOLKBFBGI)
+    pub DCHOLKBFBGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AHKGGGGIBIF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl AHKGGGGIBIF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCHOLKBFBGI",
-            |m: &AHKGGGGIBIF| { &m.DCHOLKBFBGI },
-            |m: &mut AHKGGGGIBIF| { &mut m.DCHOLKBFBGI },
+            "CEIFDIKPDAM",
+            |m: &AHKGGGGIBIF| { &m.CEIFDIKPDAM },
+            |m: &mut AHKGGGGIBIF| { &mut m.CEIFDIKPDAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "first_lineup",
@@ -71,9 +71,9 @@ impl AHKGGGGIBIF {
             |m: &mut AHKGGGGIBIF| { &mut m.second_lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEIFDIKPDAM",
-            |m: &AHKGGGGIBIF| { &m.CEIFDIKPDAM },
-            |m: &mut AHKGGGGIBIF| { &mut m.CEIFDIKPDAM },
+            "DCHOLKBFBGI",
+            |m: &AHKGGGGIBIF| { &m.DCHOLKBFBGI },
+            |m: &mut AHKGGGGIBIF| { &mut m.DCHOLKBFBGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AHKGGGGIBIF>(
             "AHKGGGGIBIF",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for AHKGGGGIBIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DCHOLKBFBGI = is.read_uint32()?;
+                16 => {
+                    self.CEIFDIKPDAM = is.read_uint32()?;
                 },
-                106 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.first_lineup)?;
                 },
-                104 => {
+                32 => {
                     self.first_lineup.push(is.read_uint32()?);
                 },
-                42 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.second_lineup)?;
                 },
-                40 => {
+                88 => {
                     self.second_lineup.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.CEIFDIKPDAM = is.read_uint32()?;
+                8 => {
+                    self.DCHOLKBFBGI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AHKGGGGIBIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCHOLKBFBGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DCHOLKBFBGI);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.first_lineup);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.second_lineup);
         if self.CEIFDIKPDAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CEIFDIKPDAM);
+            my_size += ::protobuf::rt::uint32_size(2, self.CEIFDIKPDAM);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.first_lineup);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.second_lineup);
+        if self.DCHOLKBFBGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DCHOLKBFBGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for AHKGGGGIBIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCHOLKBFBGI != 0 {
-            os.write_uint32(7, self.DCHOLKBFBGI)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.first_lineup)?;
-        os.write_repeated_packed_uint32(5, &self.second_lineup)?;
         if self.CEIFDIKPDAM != 0 {
-            os.write_uint32(3, self.CEIFDIKPDAM)?;
+            os.write_uint32(2, self.CEIFDIKPDAM)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.first_lineup)?;
+        os.write_repeated_packed_uint32(11, &self.second_lineup)?;
+        if self.DCHOLKBFBGI != 0 {
+            os.write_uint32(1, self.DCHOLKBFBGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,19 +162,19 @@ impl ::protobuf::Message for AHKGGGGIBIF {
     }
 
     fn clear(&mut self) {
-        self.DCHOLKBFBGI = 0;
+        self.CEIFDIKPDAM = 0;
         self.first_lineup.clear();
         self.second_lineup.clear();
-        self.CEIFDIKPDAM = 0;
+        self.DCHOLKBFBGI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHKGGGGIBIF {
         static instance: AHKGGGGIBIF = AHKGGGGIBIF {
-            DCHOLKBFBGI: 0,
+            CEIFDIKPDAM: 0,
             first_lineup: ::std::vec::Vec::new(),
             second_lineup: ::std::vec::Vec::new(),
-            CEIFDIKPDAM: 0,
+            DCHOLKBFBGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for AHKGGGGIBIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AHKGGGGIBIF.proto\"\x99\x01\n\x0bAHKGGGGIBIF\x12\x20\n\x0bDCHOLKBF\
-    BGI\x18\x07\x20\x01(\rR\x0bDCHOLKBFBGI\x12!\n\x0cfirst_lineup\x18\r\x20\
-    \x03(\rR\x0bfirstLineup\x12#\n\rsecond_lineup\x18\x05\x20\x03(\rR\x0csec\
-    ondLineup\x12\x20\n\x0bCEIFDIKPDAM\x18\x03\x20\x01(\rR\x0bCEIFDIKPDAMb\
-    \x06proto3\
+    \n\x11AHKGGGGIBIF.proto\"\x99\x01\n\x0bAHKGGGGIBIF\x12\x20\n\x0bCEIFDIKP\
+    DAM\x18\x02\x20\x01(\rR\x0bCEIFDIKPDAM\x12!\n\x0cfirst_lineup\x18\x04\
+    \x20\x03(\rR\x0bfirstLineup\x12#\n\rsecond_lineup\x18\x0b\x20\x03(\rR\
+    \x0csecondLineup\x12\x20\n\x0bDCHOLKBFBGI\x18\x01\x20\x01(\rR\x0bDCHOLKB\
+    FBGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

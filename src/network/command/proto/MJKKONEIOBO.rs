@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MJKKONEIOBO {
     // message fields
+    // @@protoc_insertion_point(field:MJKKONEIOBO.LFCDODFMHHN)
+    pub LFCDODFMHHN: u32,
+    // @@protoc_insertion_point(field:MJKKONEIOBO.status)
+    pub status: ::protobuf::EnumOrUnknown<super::BEHFNMKDOMK::BEHFNMKDOMK>,
     // @@protoc_insertion_point(field:MJKKONEIOBO.ACGBELAIGBO)
     pub ACGBELAIGBO: u32,
     // @@protoc_insertion_point(field:MJKKONEIOBO.AHOOAFGDEHF)
     pub AHOOAFGDEHF: ::std::vec::Vec<super::BPAIFNGEDGH::BPAIFNGEDGH>,
-    // @@protoc_insertion_point(field:MJKKONEIOBO.status)
-    pub status: ::protobuf::EnumOrUnknown<super::BEHFNMKDOMK::BEHFNMKDOMK>,
-    // @@protoc_insertion_point(field:MJKKONEIOBO.LFCDODFMHHN)
-    pub LFCDODFMHHN: u32,
     // @@protoc_insertion_point(field:MJKKONEIOBO.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::JMPPHGIGFFI::JMPPHGIGFFI>,
     // @@protoc_insertion_point(field:MJKKONEIOBO.BGOKHEIBNKL)
@@ -60,6 +60,16 @@ impl MJKKONEIOBO {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFCDODFMHHN",
+            |m: &MJKKONEIOBO| { &m.LFCDODFMHHN },
+            |m: &mut MJKKONEIOBO| { &mut m.LFCDODFMHHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &MJKKONEIOBO| { &m.status },
+            |m: &mut MJKKONEIOBO| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACGBELAIGBO",
             |m: &MJKKONEIOBO| { &m.ACGBELAIGBO },
             |m: &mut MJKKONEIOBO| { &mut m.ACGBELAIGBO },
@@ -68,16 +78,6 @@ impl MJKKONEIOBO {
             "AHOOAFGDEHF",
             |m: &MJKKONEIOBO| { &m.AHOOAFGDEHF },
             |m: &mut MJKKONEIOBO| { &mut m.AHOOAFGDEHF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &MJKKONEIOBO| { &m.status },
-            |m: &mut MJKKONEIOBO| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFCDODFMHHN",
-            |m: &MJKKONEIOBO| { &m.LFCDODFMHHN },
-            |m: &mut MJKKONEIOBO| { &mut m.LFCDODFMHHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for MJKKONEIOBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.ACGBELAIGBO = is.read_uint32()?;
-                },
-                50 => {
-                    self.AHOOAFGDEHF.push(is.read_message()?);
-                },
-                120 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                16 => {
+                72 => {
                     self.LFCDODFMHHN = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.ACGBELAIGBO = is.read_uint32()?;
+                },
+                90 => {
+                    self.AHOOAFGDEHF.push(is.read_message()?);
+                },
+                112 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                104 => {
                     self.BGOKHEIBNKL = is.read_uint32()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for MJKKONEIOBO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LFCDODFMHHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LFCDODFMHHN);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+        }
         if self.ACGBELAIGBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ACGBELAIGBO);
+            my_size += ::protobuf::rt::uint32_size(8, self.ACGBELAIGBO);
         }
         for value in &self.AHOOAFGDEHF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
-        }
-        if self.LFCDODFMHHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LFCDODFMHHN);
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(14, self.reason.value());
         }
         if self.BGOKHEIBNKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BGOKHEIBNKL);
+            my_size += ::protobuf::rt::uint32_size(13, self.BGOKHEIBNKL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for MJKKONEIOBO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LFCDODFMHHN != 0 {
+            os.write_uint32(9, self.LFCDODFMHHN)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
         if self.ACGBELAIGBO != 0 {
-            os.write_uint32(4, self.ACGBELAIGBO)?;
+            os.write_uint32(8, self.ACGBELAIGBO)?;
         }
         for v in &self.AHOOAFGDEHF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.LFCDODFMHHN != 0 {
-            os.write_uint32(2, self.LFCDODFMHHN)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.BGOKHEIBNKL != 0 {
-            os.write_uint32(9, self.BGOKHEIBNKL)?;
+            os.write_uint32(13, self.BGOKHEIBNKL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,10 +197,10 @@ impl ::protobuf::Message for MJKKONEIOBO {
     }
 
     fn clear(&mut self) {
+        self.LFCDODFMHHN = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE);
         self.ACGBELAIGBO = 0;
         self.AHOOAFGDEHF.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::BEHFNMKDOMK::BEHFNMKDOMK::ROGUE_MAGIC_LEVEL_STATUS_NONE);
-        self.LFCDODFMHHN = 0;
         self.reason = ::protobuf::EnumOrUnknown::new(super::JMPPHGIGFFI::JMPPHGIGFFI::ROGUE_MAGIC_SETTLE_REASON_NONE);
         self.BGOKHEIBNKL = 0;
         self.special_fields.clear();
@@ -208,10 +208,10 @@ impl ::protobuf::Message for MJKKONEIOBO {
 
     fn default_instance() -> &'static MJKKONEIOBO {
         static instance: MJKKONEIOBO = MJKKONEIOBO {
+            LFCDODFMHHN: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             ACGBELAIGBO: 0,
             AHOOAFGDEHF: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
-            LFCDODFMHHN: 0,
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
             BGOKHEIBNKL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -239,13 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for MJKKONEIOBO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MJKKONEIOBO.proto\x1a\x11BEHFNMKDOMK.proto\x1a\x11BPAIFNGEDGH.prot\
-    o\x1a\x11JMPPHGIGFFI.proto\"\xef\x01\n\x0bMJKKONEIOBO\x12\x20\n\x0bACGBE\
-    LAIGBO\x18\x04\x20\x01(\rR\x0bACGBELAIGBO\x12.\n\x0bAHOOAFGDEHF\x18\x06\
-    \x20\x03(\x0b2\x0c.BPAIFNGEDGHR\x0bAHOOAFGDEHF\x12$\n\x06status\x18\x0f\
-    \x20\x01(\x0e2\x0c.BEHFNMKDOMKR\x06status\x12\x20\n\x0bLFCDODFMHHN\x18\
-    \x02\x20\x01(\rR\x0bLFCDODFMHHN\x12$\n\x06reason\x18\x01\x20\x01(\x0e2\
-    \x0c.JMPPHGIGFFIR\x06reason\x12\x20\n\x0bBGOKHEIBNKL\x18\t\x20\x01(\rR\
-    \x0bBGOKHEIBNKLb\x06proto3\
+    o\x1a\x11JMPPHGIGFFI.proto\"\xef\x01\n\x0bMJKKONEIOBO\x12\x20\n\x0bLFCDO\
+    DFMHHN\x18\t\x20\x01(\rR\x0bLFCDODFMHHN\x12$\n\x06status\x18\x0c\x20\x01\
+    (\x0e2\x0c.BEHFNMKDOMKR\x06status\x12\x20\n\x0bACGBELAIGBO\x18\x08\x20\
+    \x01(\rR\x0bACGBELAIGBO\x12.\n\x0bAHOOAFGDEHF\x18\x0b\x20\x03(\x0b2\x0c.\
+    BPAIFNGEDGHR\x0bAHOOAFGDEHF\x12$\n\x06reason\x18\x0e\x20\x01(\x0e2\x0c.J\
+    MPPHGIGFFIR\x06reason\x12\x20\n\x0bBGOKHEIBNKL\x18\r\x20\x01(\rR\x0bBGOK\
+    HEIBNKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

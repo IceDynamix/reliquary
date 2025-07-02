@@ -48,7 +48,7 @@ impl TrainPartyHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .HPFKGDDIFHG IAMKDJCFMIB = 147;
+    // .HPFKGDDIFHG IAMKDJCFMIB = 1076;
 
     pub fn IAMKDJCFMIB(&self) -> &super::HPFKGDDIFHG::HPFKGDDIFHG {
         match self.EKIEDNCKHHA {
@@ -97,7 +97,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .GLBFBNHFCNO PMMGOCJFEEJ = 1939;
+    // .GLBFBNHFCNO PMMGOCJFEEJ = 704;
 
     pub fn PMMGOCJFEEJ(&self) -> &super::GLBFBNHFCNO::GLBFBNHFCNO {
         match self.EKIEDNCKHHA {
@@ -146,7 +146,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .PECGLKCICGO LGBJAELDPNB = 1515;
+    // .PECGLKCICGO LGBJAELDPNB = 1277;
 
     pub fn LGBJAELDPNB(&self) -> &super::PECGLKCICGO::PECGLKCICGO {
         match self.EKIEDNCKHHA {
@@ -195,7 +195,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .ENCJKPGOIAL BGJMFBHCMKL = 1133;
+    // .ENCJKPGOIAL BGJMFBHCMKL = 1444;
 
     pub fn BGJMFBHCMKL(&self) -> &super::ENCJKPGOIAL::ENCJKPGOIAL {
         match self.EKIEDNCKHHA {
@@ -299,19 +299,19 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                32 => {
                     self.HBAPCCEGNME = is.read_uint32()?;
                 },
-                1178 => {
+                8610 => {
                     self.EKIEDNCKHHA = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::EKIEDNCKHHA::IAMKDJCFMIB(is.read_message()?));
                 },
-                15514 => {
+                5634 => {
                     self.EKIEDNCKHHA = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::EKIEDNCKHHA::PMMGOCJFEEJ(is.read_message()?));
                 },
-                12122 => {
+                10218 => {
                     self.EKIEDNCKHHA = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::EKIEDNCKHHA::LGBJAELDPNB(is.read_message()?));
                 },
-                9066 => {
+                11554 => {
                     self.EKIEDNCKHHA = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::EKIEDNCKHHA::BGJMFBHCMKL(is.read_message()?));
                 },
                 tag => {
@@ -327,7 +327,7 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HBAPCCEGNME);
+            my_size += ::protobuf::rt::uint32_size(4, self.HBAPCCEGNME);
         }
         if let ::std::option::Option::Some(ref v) = self.EKIEDNCKHHA {
             match v {
@@ -356,21 +356,21 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HBAPCCEGNME != 0 {
-            os.write_uint32(14, self.HBAPCCEGNME)?;
+            os.write_uint32(4, self.HBAPCCEGNME)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EKIEDNCKHHA {
             match v {
                 &train_party_handle_pending_action_cs_req::EKIEDNCKHHA::IAMKDJCFMIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(147, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1076, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::EKIEDNCKHHA::PMMGOCJFEEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1939, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(704, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::EKIEDNCKHHA::LGBJAELDPNB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1515, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1277, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::EKIEDNCKHHA::BGJMFBHCMKL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1133, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1444, v, os)?;
                 },
             };
         }
@@ -464,11 +464,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyHandlePendingActionCsReq.proto\x1a\x11ENCJKPGOIAL.proto\x1a\
     \x11GLBFBNHFCNO.proto\x1a\x11HPFKGDDIFHG.proto\x1a\x11PECGLKCICGO.proto\
     \"\xa1\x02\n\"TrainPartyHandlePendingActionCsReq\x12\x20\n\x0bHBAPCCEGNM\
-    E\x18\x0e\x20\x01(\rR\x0bHBAPCCEGNME\x121\n\x0bIAMKDJCFMIB\x18\x93\x01\
+    E\x18\x04\x20\x01(\rR\x0bHBAPCCEGNME\x121\n\x0bIAMKDJCFMIB\x18\xb4\x08\
     \x20\x01(\x0b2\x0c.HPFKGDDIFHGH\0R\x0bIAMKDJCFMIB\x121\n\x0bPMMGOCJFEEJ\
-    \x18\x93\x0f\x20\x01(\x0b2\x0c.GLBFBNHFCNOH\0R\x0bPMMGOCJFEEJ\x121\n\x0b\
-    LGBJAELDPNB\x18\xeb\x0b\x20\x01(\x0b2\x0c.PECGLKCICGOH\0R\x0bLGBJAELDPNB\
-    \x121\n\x0bBGJMFBHCMKL\x18\xed\x08\x20\x01(\x0b2\x0c.ENCJKPGOIALH\0R\x0b\
+    \x18\xc0\x05\x20\x01(\x0b2\x0c.GLBFBNHFCNOH\0R\x0bPMMGOCJFEEJ\x121\n\x0b\
+    LGBJAELDPNB\x18\xfd\t\x20\x01(\x0b2\x0c.PECGLKCICGOH\0R\x0bLGBJAELDPNB\
+    \x121\n\x0bBGJMFBHCMKL\x18\xa4\x0b\x20\x01(\x0b2\x0c.ENCJKPGOIALH\0R\x0b\
     BGJMFBHCMKLB\r\n\x0bEKIEDNCKHHAb\x06proto3\
 ";
 

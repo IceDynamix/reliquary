@@ -89,10 +89,10 @@ impl ::protobuf::Message for GetChessRogueStoryInfoScRsp {
                 48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                26 => {
                     self.IDGIAHOPGAJ.push(is.read_message()?);
                 },
-                10 => {
+                106 => {
                     self.MNHMEKKHKNA.push(is.read_message()?);
                 },
                 tag => {
@@ -128,10 +128,10 @@ impl ::protobuf::Message for GetChessRogueStoryInfoScRsp {
             os.write_uint32(6, self.retcode)?;
         }
         for v in &self.IDGIAHOPGAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.MNHMEKKHKNA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,8 +187,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetChessRogueStoryInfoScRsp.proto\x1a\x11DIPMFOMGCGL.proto\x1a\x11LAH\
     JPFOOHEB.proto\"\x97\x01\n\x1bGetChessRogueStoryInfoScRsp\x12\x18\n\x07r\
-    etcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bIDGIAHOPGAJ\x18\x05\x20\
-    \x03(\x0b2\x0c.LAHJPFOOHEBR\x0bIDGIAHOPGAJ\x12.\n\x0bMNHMEKKHKNA\x18\x01\
+    etcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bIDGIAHOPGAJ\x18\x03\x20\
+    \x03(\x0b2\x0c.LAHJPFOOHEBR\x0bIDGIAHOPGAJ\x12.\n\x0bMNHMEKKHKNA\x18\r\
     \x20\x03(\x0b2\x0c.DIPMFOMGCGLR\x0bMNHMEKKHKNAb\x06proto3\
 ";
 

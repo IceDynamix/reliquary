@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KFLDAMAAIKB {
     // message fields
-    // @@protoc_insertion_point(field:KFLDAMAAIKB.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:KFLDAMAAIKB.ELFPHFPKBFI)
-    pub ELFPHFPKBFI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KFLDAMAAIKB.build_slot_list)
-    pub build_slot_list: ::std::vec::Vec<super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>,
     // @@protoc_insertion_point(field:KFLDAMAAIKB.MLHDKJMFDAI)
     pub MLHDKJMFDAI: ::protobuf::MessageField<super::DAIPPHMLPCB::DAIPPHMLPCB>,
+    // @@protoc_insertion_point(field:KFLDAMAAIKB.build_slot_list)
+    pub build_slot_list: ::std::vec::Vec<super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>,
+    // @@protoc_insertion_point(field:KFLDAMAAIKB.progress)
+    pub progress: u32,
     // @@protoc_insertion_point(field:KFLDAMAAIKB.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:KFLDAMAAIKB.ELFPHFPKBFI)
+    pub ELFPHFPKBFI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KFLDAMAAIKB.KNOJNBJIOKB)
     pub KNOJNBJIOKB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KFLDAMAAIKB.HBCCBGBFPLO)
@@ -61,30 +61,30 @@ impl KFLDAMAAIKB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &KFLDAMAAIKB| { &m.progress },
-            |m: &mut KFLDAMAAIKB| { &mut m.progress },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ELFPHFPKBFI",
-            |m: &KFLDAMAAIKB| { &m.ELFPHFPKBFI },
-            |m: &mut KFLDAMAAIKB| { &mut m.ELFPHFPKBFI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DAIPPHMLPCB::DAIPPHMLPCB>(
+            "MLHDKJMFDAI",
+            |m: &KFLDAMAAIKB| { &m.MLHDKJMFDAI },
+            |m: &mut KFLDAMAAIKB| { &mut m.MLHDKJMFDAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "build_slot_list",
             |m: &KFLDAMAAIKB| { &m.build_slot_list },
             |m: &mut KFLDAMAAIKB| { &mut m.build_slot_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DAIPPHMLPCB::DAIPPHMLPCB>(
-            "MLHDKJMFDAI",
-            |m: &KFLDAMAAIKB| { &m.MLHDKJMFDAI },
-            |m: &mut KFLDAMAAIKB| { &mut m.MLHDKJMFDAI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &KFLDAMAAIKB| { &m.progress },
+            |m: &mut KFLDAMAAIKB| { &mut m.progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &KFLDAMAAIKB| { &m.area_id },
             |m: &mut KFLDAMAAIKB| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ELFPHFPKBFI",
+            |m: &KFLDAMAAIKB| { &m.ELFPHFPKBFI },
+            |m: &mut KFLDAMAAIKB| { &mut m.ELFPHFPKBFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KNOJNBJIOKB",
@@ -114,34 +114,34 @@ impl ::protobuf::Message for KFLDAMAAIKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.progress = is.read_uint32()?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ELFPHFPKBFI)?;
-                },
-                120 => {
-                    self.ELFPHFPKBFI.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.build_slot_list.push(is.read_message()?);
-                },
-                74 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MLHDKJMFDAI)?;
                 },
-                112 => {
+                106 => {
+                    self.build_slot_list.push(is.read_message()?);
+                },
+                64 => {
+                    self.progress = is.read_uint32()?;
+                },
+                120 => {
                     self.area_id = is.read_uint32()?;
                 },
-                90 => {
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ELFPHFPKBFI)?;
+                },
+                72 => {
+                    self.ELFPHFPKBFI.push(is.read_uint32()?);
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.KNOJNBJIOKB)?;
                 },
-                88 => {
+                112 => {
                     self.KNOJNBJIOKB.push(is.read_uint32()?);
                 },
-                26 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.HBCCBGBFPLO)?;
                 },
-                24 => {
+                88 => {
                     self.HBCCBGBFPLO.push(is.read_uint32()?);
                 },
                 tag => {
@@ -156,44 +156,44 @@ impl ::protobuf::Message for KFLDAMAAIKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.progress);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.ELFPHFPKBFI);
-        for value in &self.build_slot_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.MLHDKJMFDAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.area_id);
+        for value in &self.build_slot_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.progress);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KNOJNBJIOKB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.HBCCBGBFPLO);
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ELFPHFPKBFI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.KNOJNBJIOKB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HBCCBGBFPLO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(12, self.progress)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.ELFPHFPKBFI)?;
-        for v in &self.build_slot_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if let Some(v) = self.MLHDKJMFDAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        for v in &self.build_slot_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if self.progress != 0 {
+            os.write_uint32(8, self.progress)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(14, self.area_id)?;
+            os.write_uint32(15, self.area_id)?;
         }
-        os.write_repeated_packed_uint32(11, &self.KNOJNBJIOKB)?;
-        os.write_repeated_packed_uint32(3, &self.HBCCBGBFPLO)?;
+        os.write_repeated_packed_uint32(9, &self.ELFPHFPKBFI)?;
+        os.write_repeated_packed_uint32(14, &self.KNOJNBJIOKB)?;
+        os.write_repeated_packed_uint32(11, &self.HBCCBGBFPLO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -211,11 +211,11 @@ impl ::protobuf::Message for KFLDAMAAIKB {
     }
 
     fn clear(&mut self) {
-        self.progress = 0;
-        self.ELFPHFPKBFI.clear();
-        self.build_slot_list.clear();
         self.MLHDKJMFDAI.clear();
+        self.build_slot_list.clear();
+        self.progress = 0;
         self.area_id = 0;
+        self.ELFPHFPKBFI.clear();
         self.KNOJNBJIOKB.clear();
         self.HBCCBGBFPLO.clear();
         self.special_fields.clear();
@@ -223,11 +223,11 @@ impl ::protobuf::Message for KFLDAMAAIKB {
 
     fn default_instance() -> &'static KFLDAMAAIKB {
         static instance: KFLDAMAAIKB = KFLDAMAAIKB {
-            progress: 0,
-            ELFPHFPKBFI: ::std::vec::Vec::new(),
-            build_slot_list: ::std::vec::Vec::new(),
             MLHDKJMFDAI: ::protobuf::MessageField::none(),
+            build_slot_list: ::std::vec::Vec::new(),
+            progress: 0,
             area_id: 0,
+            ELFPHFPKBFI: ::std::vec::Vec::new(),
             KNOJNBJIOKB: ::std::vec::Vec::new(),
             HBCCBGBFPLO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -255,14 +255,14 @@ impl ::protobuf::reflect::ProtobufValue for KFLDAMAAIKB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFLDAMAAIKB.proto\x1a\x11DAIPPHMLPCB.proto\x1a\x1dTrainPartyBuildS\
-    lotInfo.proto\"\x9a\x02\n\x0bKFLDAMAAIKB\x12\x1a\n\x08progress\x18\x0c\
-    \x20\x01(\rR\x08progress\x12\x20\n\x0bELFPHFPKBFI\x18\x0f\x20\x03(\rR\
-    \x0bELFPHFPKBFI\x12@\n\x0fbuild_slot_list\x18\x08\x20\x03(\x0b2\x18.Trai\
-    nPartyBuildSlotInfoR\rbuildSlotList\x12.\n\x0bMLHDKJMFDAI\x18\t\x20\x01(\
-    \x0b2\x0c.DAIPPHMLPCBR\x0bMLHDKJMFDAI\x12\x17\n\x07area_id\x18\x0e\x20\
-    \x01(\rR\x06areaId\x12\x20\n\x0bKNOJNBJIOKB\x18\x0b\x20\x03(\rR\x0bKNOJN\
-    BJIOKB\x12\x20\n\x0bHBCCBGBFPLO\x18\x03\x20\x03(\rR\x0bHBCCBGBFPLOb\x06p\
-    roto3\
+    lotInfo.proto\"\x9a\x02\n\x0bKFLDAMAAIKB\x12.\n\x0bMLHDKJMFDAI\x18\x03\
+    \x20\x01(\x0b2\x0c.DAIPPHMLPCBR\x0bMLHDKJMFDAI\x12@\n\x0fbuild_slot_list\
+    \x18\r\x20\x03(\x0b2\x18.TrainPartyBuildSlotInfoR\rbuildSlotList\x12\x1a\
+    \n\x08progress\x18\x08\x20\x01(\rR\x08progress\x12\x17\n\x07area_id\x18\
+    \x0f\x20\x01(\rR\x06areaId\x12\x20\n\x0bELFPHFPKBFI\x18\t\x20\x03(\rR\
+    \x0bELFPHFPKBFI\x12\x20\n\x0bKNOJNBJIOKB\x18\x0e\x20\x03(\rR\x0bKNOJNBJI\
+    OKB\x12\x20\n\x0bHBCCBGBFPLO\x18\x0b\x20\x03(\rR\x0bHBCCBGBFPLOb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

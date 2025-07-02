@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookUnlockStoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.NDCJJPGNFLN)
-    pub NDCJJPGNFLN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.JKEMDJIAMHI)
     pub JKEMDJIAMHI: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.PPDGGOCIEDE)
     pub PPDGGOCIEDE: ::protobuf::MessageField<super::EJDGKNKHKHH::EJDGKNKHKHH>,
+    // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.NDCJJPGNFLN)
+    pub NDCJJPGNFLN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookUnlockStoryScRsp.PPIMFPOOOKB)
     pub PPIMFPOOOKB: ::std::vec::Vec<u32>,
     // special fields
@@ -58,11 +58,6 @@ impl TarotBookUnlockStoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NDCJJPGNFLN",
-            |m: &TarotBookUnlockStoryScRsp| { &m.NDCJJPGNFLN },
-            |m: &mut TarotBookUnlockStoryScRsp| { &mut m.NDCJJPGNFLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "JKEMDJIAMHI",
             |m: &TarotBookUnlockStoryScRsp| { &m.JKEMDJIAMHI },
             |m: &mut TarotBookUnlockStoryScRsp| { &mut m.JKEMDJIAMHI },
@@ -76,6 +71,11 @@ impl TarotBookUnlockStoryScRsp {
             "PPDGGOCIEDE",
             |m: &TarotBookUnlockStoryScRsp| { &m.PPDGGOCIEDE },
             |m: &mut TarotBookUnlockStoryScRsp| { &mut m.PPDGGOCIEDE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NDCJJPGNFLN",
+            |m: &TarotBookUnlockStoryScRsp| { &m.NDCJJPGNFLN },
+            |m: &mut TarotBookUnlockStoryScRsp| { &mut m.NDCJJPGNFLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PPIMFPOOOKB",
@@ -100,22 +100,7 @@ impl ::protobuf::Message for TarotBookUnlockStoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.NDCJJPGNFLN.insert(key, value);
-                },
-                82 => {
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -130,16 +115,31 @@ impl ::protobuf::Message for TarotBookUnlockStoryScRsp {
                     is.pop_limit(old_limit);
                     self.JKEMDJIAMHI.insert(key, value);
                 },
-                24 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPDGGOCIEDE)?;
                 },
                 10 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.NDCJJPGNFLN.insert(key, value);
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.PPIMFPOOOKB)?;
                 },
-                8 => {
+                96 => {
                     self.PPIMFPOOOKB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -154,12 +154,6 @@ impl ::protobuf::Message for TarotBookUnlockStoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.NDCJJPGNFLN {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
         for (k, v) in &self.JKEMDJIAMHI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -167,44 +161,50 @@ impl ::protobuf::Message for TarotBookUnlockStoryScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.PPDGGOCIEDE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PPIMFPOOOKB);
+        for (k, v) in &self.NDCJJPGNFLN {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.PPIMFPOOOKB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.NDCJJPGNFLN {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(122)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
         for (k, v) in &self.JKEMDJIAMHI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.PPDGGOCIEDE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        os.write_repeated_packed_uint32(1, &self.PPIMFPOOOKB)?;
+        for (k, v) in &self.NDCJJPGNFLN {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(10)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        os.write_repeated_packed_uint32(12, &self.PPIMFPOOOKB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -222,10 +222,10 @@ impl ::protobuf::Message for TarotBookUnlockStoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.NDCJJPGNFLN.clear();
         self.JKEMDJIAMHI.clear();
         self.retcode = 0;
         self.PPDGGOCIEDE.clear();
+        self.NDCJJPGNFLN.clear();
         self.PPIMFPOOOKB.clear();
         self.special_fields.clear();
     }
@@ -255,16 +255,16 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookUnlockStoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTarotBookUnlockStoryScRsp.proto\x1a\x11EJDGKNKHKHH.proto\"\xa5\x03\
-    \n\x19TarotBookUnlockStoryScRsp\x12M\n\x0bNDCJJPGNFLN\x18\x0f\x20\x03(\
-    \x0b2+.TarotBookUnlockStoryScRsp.NDCJJPGNFLNEntryR\x0bNDCJJPGNFLN\x12M\n\
-    \x0bJKEMDJIAMHI\x18\n\x20\x03(\x0b2+.TarotBookUnlockStoryScRsp.JKEMDJIAM\
-    HIEntryR\x0bJKEMDJIAMHI\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bPPDGGOCIEDE\x18\x0e\x20\x01(\x0b2\x0c.EJDGKNKHKHHR\x0bPPDG\
-    GOCIEDE\x12\x20\n\x0bPPIMFPOOOKB\x18\x01\x20\x03(\rR\x0bPPIMFPOOOKB\x1a>\
-    \n\x10NDCJJPGNFLNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\
-    \x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10JKEMDJI\
-    AMHIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\
-    \x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x19TarotBookUnlockStoryScRsp\x12M\n\x0bJKEMDJIAMHI\x18\x0e\x20\x03(\
+    \x0b2+.TarotBookUnlockStoryScRsp.JKEMDJIAMHIEntryR\x0bJKEMDJIAMHI\x12\
+    \x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bPPDGGOCIEDE\x18\
+    \r\x20\x01(\x0b2\x0c.EJDGKNKHKHHR\x0bPPDGGOCIEDE\x12M\n\x0bNDCJJPGNFLN\
+    \x18\x01\x20\x03(\x0b2+.TarotBookUnlockStoryScRsp.NDCJJPGNFLNEntryR\x0bN\
+    DCJJPGNFLN\x12\x20\n\x0bPPIMFPOOOKB\x18\x0c\x20\x03(\rR\x0bPPIMFPOOOKB\
+    \x1a>\n\x10JKEMDJIAMHIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10NDC\
+    JJPGNFLNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

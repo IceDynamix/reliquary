@@ -72,7 +72,7 @@ impl ::protobuf::Message for AIDOADPOOFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                90 => {
                     self.LIPJDJPMOKB.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AIDOADPOOFG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for AIDOADPOOFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIDOADPOOFG.proto\x1a\x11CBBDIOMIFHD.proto\"=\n\x0bAIDOADPOOFG\x12\
-    .\n\x0bLIPJDJPMOKB\x18\r\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKBb\
-    \x06proto3\
+    .\n\x0bLIPJDJPMOKB\x18\x0b\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

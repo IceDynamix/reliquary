@@ -32,10 +32,10 @@ pub struct FightFestUpdateChallengeRecordNotify {
     pub HOEHIOBIIEJ: u32,
     // @@protoc_insertion_point(field:FightFestUpdateChallengeRecordNotify.FKPEPBMJHKN)
     pub FKPEPBMJHKN: ::protobuf::EnumOrUnknown<super::HGDAPJPKFFB::HGDAPJPKFFB>,
-    // @@protoc_insertion_point(field:FightFestUpdateChallengeRecordNotify.rank)
-    pub rank: ::protobuf::EnumOrUnknown<super::HGDAPJPKFFB::HGDAPJPKFFB>,
     // @@protoc_insertion_point(field:FightFestUpdateChallengeRecordNotify.JBOLAAFDKAN)
     pub JBOLAAFDKAN: u32,
+    // @@protoc_insertion_point(field:FightFestUpdateChallengeRecordNotify.rank)
+    pub rank: ::protobuf::EnumOrUnknown<super::HGDAPJPKFFB::HGDAPJPKFFB>,
     // @@protoc_insertion_point(field:FightFestUpdateChallengeRecordNotify.challenge_id)
     pub challenge_id: u32,
     // special fields
@@ -68,14 +68,14 @@ impl FightFestUpdateChallengeRecordNotify {
             |m: &mut FightFestUpdateChallengeRecordNotify| { &mut m.FKPEPBMJHKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &FightFestUpdateChallengeRecordNotify| { &m.rank },
-            |m: &mut FightFestUpdateChallengeRecordNotify| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JBOLAAFDKAN",
             |m: &FightFestUpdateChallengeRecordNotify| { &m.JBOLAAFDKAN },
             |m: &mut FightFestUpdateChallengeRecordNotify| { &mut m.JBOLAAFDKAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &FightFestUpdateChallengeRecordNotify| { &m.rank },
+            |m: &mut FightFestUpdateChallengeRecordNotify| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for FightFestUpdateChallengeRecordNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.HOEHIOBIIEJ = is.read_uint32()?;
                 },
                 72 => {
                     self.FKPEPBMJHKN = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.rank = is.read_enum_or_unknown()?;
-                },
-                8 => {
+                48 => {
                     self.JBOLAAFDKAN = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
+                    self.rank = is.read_enum_or_unknown()?;
+                },
+                40 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -128,19 +128,19 @@ impl ::protobuf::Message for FightFestUpdateChallengeRecordNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOEHIOBIIEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HOEHIOBIIEJ);
+            my_size += ::protobuf::rt::uint32_size(3, self.HOEHIOBIIEJ);
         }
         if self.FKPEPBMJHKN != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
             my_size += ::protobuf::rt::int32_size(9, self.FKPEPBMJHKN.value());
         }
-        if self.rank != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(11, self.rank.value());
-        }
         if self.JBOLAAFDKAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JBOLAAFDKAN);
+            my_size += ::protobuf::rt::uint32_size(6, self.JBOLAAFDKAN);
+        }
+        if self.rank != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
+            my_size += ::protobuf::rt::int32_size(14, self.rank.value());
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for FightFestUpdateChallengeRecordNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOEHIOBIIEJ != 0 {
-            os.write_uint32(7, self.HOEHIOBIIEJ)?;
+            os.write_uint32(3, self.HOEHIOBIIEJ)?;
         }
         if self.FKPEPBMJHKN != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
             os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.FKPEPBMJHKN))?;
         }
-        if self.rank != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.rank))?;
-        }
         if self.JBOLAAFDKAN != 0 {
-            os.write_uint32(1, self.JBOLAAFDKAN)?;
+            os.write_uint32(6, self.JBOLAAFDKAN)?;
+        }
+        if self.rank != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.rank))?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(2, self.challenge_id)?;
+            os.write_uint32(5, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,8 +182,8 @@ impl ::protobuf::Message for FightFestUpdateChallengeRecordNotify {
     fn clear(&mut self) {
         self.HOEHIOBIIEJ = 0;
         self.FKPEPBMJHKN = ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C);
-        self.rank = ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C);
         self.JBOLAAFDKAN = 0;
+        self.rank = ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C);
         self.challenge_id = 0;
         self.special_fields.clear();
     }
@@ -192,8 +192,8 @@ impl ::protobuf::Message for FightFestUpdateChallengeRecordNotify {
         static instance: FightFestUpdateChallengeRecordNotify = FightFestUpdateChallengeRecordNotify {
             HOEHIOBIIEJ: 0,
             FKPEPBMJHKN: ::protobuf::EnumOrUnknown::from_i32(0),
-            rank: ::protobuf::EnumOrUnknown::from_i32(0),
             JBOLAAFDKAN: 0,
+            rank: ::protobuf::EnumOrUnknown::from_i32(0),
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for FightFestUpdateChallengeRecordNotify
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*FightFestUpdateChallengeRecordNotify.proto\x1a\x11HGDAPJPKFFB.proto\"\
     \xdf\x01\n$FightFestUpdateChallengeRecordNotify\x12\x20\n\x0bHOEHIOBIIEJ\
-    \x18\x07\x20\x01(\rR\x0bHOEHIOBIIEJ\x12.\n\x0bFKPEPBMJHKN\x18\t\x20\x01(\
-    \x0e2\x0c.HGDAPJPKFFBR\x0bFKPEPBMJHKN\x12\x20\n\x04rank\x18\x0b\x20\x01(\
-    \x0e2\x0c.HGDAPJPKFFBR\x04rank\x12\x20\n\x0bJBOLAAFDKAN\x18\x01\x20\x01(\
-    \rR\x0bJBOLAAFDKAN\x12!\n\x0cchallenge_id\x18\x02\x20\x01(\rR\x0bchallen\
-    geIdb\x06proto3\
+    \x18\x03\x20\x01(\rR\x0bHOEHIOBIIEJ\x12.\n\x0bFKPEPBMJHKN\x18\t\x20\x01(\
+    \x0e2\x0c.HGDAPJPKFFBR\x0bFKPEPBMJHKN\x12\x20\n\x0bJBOLAAFDKAN\x18\x06\
+    \x20\x01(\rR\x0bJBOLAAFDKAN\x12\x20\n\x04rank\x18\x0e\x20\x01(\x0e2\x0c.\
+    HGDAPJPKFFBR\x04rank\x12!\n\x0cchallenge_id\x18\x05\x20\x01(\rR\x0bchall\
+    engeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.KEKJCDMIDDL = is.read_uint32()?;
                 },
-                26 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJAOGAPDFHA)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KEKJCDMIDDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KEKJCDMIDDL);
+            my_size += ::protobuf::rt::uint32_size(2, self.KEKJCDMIDDL);
         }
         if let Some(v) = self.LJAOGAPDFHA.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KEKJCDMIDDL != 0 {
-            os.write_uint32(6, self.KEKJCDMIDDL)?;
+            os.write_uint32(2, self.KEKJCDMIDDL)?;
         }
         if let Some(v) = self.LJAOGAPDFHA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyDailySettleScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MonopolyDailySettleScNotify.proto\x1a\x11AEDKPBFCKGO.proto\"o\n\x1bMo\
-    nopolyDailySettleScNotify\x12\x20\n\x0bKEKJCDMIDDL\x18\x06\x20\x01(\rR\
-    \x0bKEKJCDMIDDL\x12.\n\x0bLJAOGAPDFHA\x18\x03\x20\x01(\x0b2\x0c.AEDKPBFC\
+    nopolyDailySettleScNotify\x12\x20\n\x0bKEKJCDMIDDL\x18\x02\x20\x01(\rR\
+    \x0bKEKJCDMIDDL\x12.\n\x0bLJAOGAPDFHA\x18\x04\x20\x01(\x0b2\x0c.AEDKPBFC\
     KGOR\x0bLJAOGAPDFHAb\x06proto3\
 ";
 

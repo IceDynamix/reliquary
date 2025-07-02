@@ -32,10 +32,10 @@ pub struct BenefitData {
     pub config: ::protobuf::MessageField<super::BenefitItemConfig::BenefitItemConfig>,
     // @@protoc_insertion_point(field:BenefitData.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:BenefitData.daily_index)
-    pub daily_index: u32,
     // @@protoc_insertion_point(field:BenefitData.status)
     pub status: u32,
+    // @@protoc_insertion_point(field:BenefitData.daily_index)
+    pub daily_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BenefitData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl BenefitData {
             |m: &mut BenefitData| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "daily_index",
-            |m: &BenefitData| { &m.daily_index },
-            |m: &mut BenefitData| { &mut m.daily_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &BenefitData| { &m.status },
             |m: &mut BenefitData| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "daily_index",
+            |m: &BenefitData| { &m.daily_index },
+            |m: &mut BenefitData| { &mut m.daily_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BenefitData>(
             "BenefitData",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BenefitData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.config)?;
                 },
-                56 => {
+                32 => {
                     self.level = is.read_uint32()?;
                 },
-                112 => {
-                    self.daily_index = is.read_uint32()?;
-                },
-                32 => {
+                80 => {
                     self.status = is.read_uint32()?;
+                },
+                104 => {
+                    self.daily_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,13 +122,13 @@ impl ::protobuf::Message for BenefitData {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
-        }
-        if self.daily_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.daily_index);
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
         if self.status != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.status);
+            my_size += ::protobuf::rt::uint32_size(10, self.status);
+        }
+        if self.daily_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.daily_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for BenefitData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.config.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
-        }
-        if self.daily_index != 0 {
-            os.write_uint32(14, self.daily_index)?;
+            os.write_uint32(4, self.level)?;
         }
         if self.status != 0 {
-            os.write_uint32(4, self.status)?;
+            os.write_uint32(10, self.status)?;
+        }
+        if self.daily_index != 0 {
+            os.write_uint32(13, self.daily_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for BenefitData {
     fn clear(&mut self) {
         self.config.clear();
         self.level = 0;
-        self.daily_index = 0;
         self.status = 0;
+        self.daily_index = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for BenefitData {
         static instance: BenefitData = BenefitData {
             config: ::protobuf::MessageField::none(),
             level: 0,
-            daily_index: 0,
             status: 0,
+            daily_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BenefitData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BenefitData.proto\x1a\x17BenefitItemConfig.proto\"\x88\x01\n\x0bBe\
-    nefitData\x12*\n\x06config\x18\n\x20\x01(\x0b2\x12.BenefitItemConfigR\
-    \x06config\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12\x1f\n\x0b\
-    daily_index\x18\x0e\x20\x01(\rR\ndailyIndex\x12\x16\n\x06status\x18\x04\
-    \x20\x01(\rR\x06statusb\x06proto3\
+    nefitData\x12*\n\x06config\x18\x06\x20\x01(\x0b2\x12.BenefitItemConfigR\
+    \x06config\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x16\n\x06\
+    status\x18\n\x20\x01(\rR\x06status\x12\x1f\n\x0bdaily_index\x18\r\x20\
+    \x01(\rR\ndailyIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

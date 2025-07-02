@@ -79,10 +79,10 @@ impl ::protobuf::Message for BLMJNFFPMCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.PIFPGKFFBPN = is.read_uint32()?;
                 },
-                106 => {
+                18 => {
                     self.KMKFOJAHELJ.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BLMJNFFPMCN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PIFPGKFFBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PIFPGKFFBPN);
+            my_size += ::protobuf::rt::uint32_size(6, self.PIFPGKFFBPN);
         }
         for value in &self.KMKFOJAHELJ {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BLMJNFFPMCN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PIFPGKFFBPN != 0 {
-            os.write_uint32(7, self.PIFPGKFFBPN)?;
+            os.write_uint32(6, self.PIFPGKFFBPN)?;
         }
         for v in &self.KMKFOJAHELJ {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -238,7 +238,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .PBLCEJHPOPO EMLNNMLGNKH = 7;
+    // .PBLCEJHPOPO EMLNNMLGNKH = 13;
 
     pub fn EMLNNMLGNKH(&self) -> &super::PBLCEJHPOPO::PBLCEJHPOPO {
         match self.DAHBBFOKBOM {
@@ -287,7 +287,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .LIHOCEHEPDB JBJLDPPDBBC = 12;
+    // .LIHOCEHEPDB JBJLDPPDBBC = 10;
 
     pub fn JBJLDPPDBBC(&self) -> &super::LIHOCEHEPDB::LIHOCEHEPDB {
         match self.DAHBBFOKBOM {
@@ -336,7 +336,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .AAIBAKECHCE ECOIFNNJDAP = 9;
+    // .AAIBAKECHCE ECOIFNNJDAP = 6;
 
     pub fn ECOIFNNJDAP(&self) -> &super::AAIBAKECHCE::AAIBAKECHCE {
         match self.DAHBBFOKBOM {
@@ -385,7 +385,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .FGONFNIDOHJ NBJICDAJDGF = 2;
+    // .FGONFNIDOHJ NBJICDAJDGF = 1;
 
     pub fn NBJICDAJDGF(&self) -> &super::FGONFNIDOHJ::FGONFNIDOHJ {
         match self.DAHBBFOKBOM {
@@ -434,7 +434,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .IPONFKAJENJ GAJBFPCPIGM = 1;
+    // .IPONFKAJENJ GAJBFPCPIGM = 12;
 
     pub fn GAJBFPCPIGM(&self) -> &super::IPONFKAJENJ::IPONFKAJENJ {
         match self.DAHBBFOKBOM {
@@ -483,7 +483,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .NALPJMLJPNP PUNK_LORD_SHARE_TYPE_FRIEND = 14;
+    // .NALPJMLJPNP PUNK_LORD_SHARE_TYPE_FRIEND = 15;
 
     pub fn PUNK_LORD_SHARE_TYPE_FRIEND(&self) -> &super::NALPJMLJPNP::NALPJMLJPNP {
         match self.DAHBBFOKBOM {
@@ -532,7 +532,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .OHNBCHLOEBL JOADHBLDIMF = 4;
+    // .OHNBCHLOEBL JOADHBLDIMF = 9;
 
     pub fn JOADHBLDIMF(&self) -> &super::OHNBCHLOEBL::OHNBCHLOEBL {
         match self.DAHBBFOKBOM {
@@ -581,7 +581,7 @@ impl LBENAAHCPEO {
         }
     }
 
-    // .BLMJNFFPMCN IEFOGHNGCMC = 13;
+    // .BLMJNFFPMCN IEFOGHNGCMC = 14;
 
     pub fn IEFOGHNGCMC(&self) -> &BLMJNFFPMCN {
         match self.DAHBBFOKBOM {
@@ -726,28 +726,28 @@ impl ::protobuf::Message for LBENAAHCPEO {
                 26 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::PECBIMKOOAH(is.read_message()?));
                 },
-                58 => {
+                106 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::EMLNNMLGNKH(is.read_message()?));
                 },
-                98 => {
+                82 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::JBJLDPPDBBC(is.read_message()?));
                 },
-                74 => {
+                50 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::ECOIFNNJDAP(is.read_message()?));
                 },
-                18 => {
+                10 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::NBJICDAJDGF(is.read_message()?));
                 },
-                10 => {
+                98 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::GAJBFPCPIGM(is.read_message()?));
                 },
-                114 => {
+                122 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::PUNKLORDSHARETYPEFRIEND(is.read_message()?));
                 },
-                34 => {
+                74 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::JOADHBLDIMF(is.read_message()?));
                 },
-                106 => {
+                114 => {
                     self.DAHBBFOKBOM = ::std::option::Option::Some(lbenaahcpeo::DAHBBFOKBOM::IEFOGHNGCMC(is.read_message()?));
                 },
                 tag => {
@@ -820,28 +820,28 @@ impl ::protobuf::Message for LBENAAHCPEO {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::EMLNNMLGNKH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::JBJLDPPDBBC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::ECOIFNNJDAP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::NBJICDAJDGF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &lbenaahcpeo::DAHBBFOKBOM::GAJBFPCPIGM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
+                &lbenaahcpeo::DAHBBFOKBOM::GAJBFPCPIGM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
                 &lbenaahcpeo::DAHBBFOKBOM::PUNKLORDSHARETYPEFRIEND(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::JOADHBLDIMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &lbenaahcpeo::DAHBBFOKBOM::IEFOGHNGCMC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -951,20 +951,20 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     OLGLNKO.proto\x1a\x11FGONFNIDOHJ.proto\x1a\x11IPONFKAJENJ.proto\x1a\x11L\
     IHOCEHEPDB.proto\x1a\x11NALPJMLJPNP.proto\x1a\x11OHNBCHLOEBL.proto\x1a\
     \x11PBLCEJHPOPO.proto\"_\n\x0bBLMJNFFPMCN\x12\x20\n\x0bPIFPGKFFBPN\x18\
-    \x07\x20\x01(\rR\x0bPIFPGKFFBPN\x12.\n\x0bKMKFOJAHELJ\x18\r\x20\x03(\x0b\
-    2\x0c.LBENAAHCPEOR\x0bKMKFOJAHELJ\"\x9c\x04\n\x0bLBENAAHCPEO\x12\x20\n\
-    \x0bOKDLMEJPCHE\x18\x0b\x20\x01(\rR\x0bOKDLMEJPCHE\x120\n\x0bPECBIMKOOAH\
-    \x18\x03\x20\x01(\x0b2\x0c.COMEOLGLNKOH\0R\x0bPECBIMKOOAH\x120\n\x0bEMLN\
-    NMLGNKH\x18\x07\x20\x01(\x0b2\x0c.PBLCEJHPOPOH\0R\x0bEMLNNMLGNKH\x120\n\
-    \x0bJBJLDPPDBBC\x18\x0c\x20\x01(\x0b2\x0c.LIHOCEHEPDBH\0R\x0bJBJLDPPDBBC\
-    \x120\n\x0bECOIFNNJDAP\x18\t\x20\x01(\x0b2\x0c.AAIBAKECHCEH\0R\x0bECOIFN\
-    NJDAP\x120\n\x0bNBJICDAJDGF\x18\x02\x20\x01(\x0b2\x0c.FGONFNIDOHJH\0R\
-    \x0bNBJICDAJDGF\x120\n\x0bGAJBFPCPIGM\x18\x01\x20\x01(\x0b2\x0c.IPONFKAJ\
-    ENJH\0R\x0bGAJBFPCPIGM\x12L\n\x1bPUNK_LORD_SHARE_TYPE_FRIEND\x18\x0e\x20\
+    \x06\x20\x01(\rR\x0bPIFPGKFFBPN\x12.\n\x0bKMKFOJAHELJ\x18\x02\x20\x03(\
+    \x0b2\x0c.LBENAAHCPEOR\x0bKMKFOJAHELJ\"\x9c\x04\n\x0bLBENAAHCPEO\x12\x20\
+    \n\x0bOKDLMEJPCHE\x18\x0b\x20\x01(\rR\x0bOKDLMEJPCHE\x120\n\x0bPECBIMKOO\
+    AH\x18\x03\x20\x01(\x0b2\x0c.COMEOLGLNKOH\0R\x0bPECBIMKOOAH\x120\n\x0bEM\
+    LNNMLGNKH\x18\r\x20\x01(\x0b2\x0c.PBLCEJHPOPOH\0R\x0bEMLNNMLGNKH\x120\n\
+    \x0bJBJLDPPDBBC\x18\n\x20\x01(\x0b2\x0c.LIHOCEHEPDBH\0R\x0bJBJLDPPDBBC\
+    \x120\n\x0bECOIFNNJDAP\x18\x06\x20\x01(\x0b2\x0c.AAIBAKECHCEH\0R\x0bECOI\
+    FNNJDAP\x120\n\x0bNBJICDAJDGF\x18\x01\x20\x01(\x0b2\x0c.FGONFNIDOHJH\0R\
+    \x0bNBJICDAJDGF\x120\n\x0bGAJBFPCPIGM\x18\x0c\x20\x01(\x0b2\x0c.IPONFKAJ\
+    ENJH\0R\x0bGAJBFPCPIGM\x12L\n\x1bPUNK_LORD_SHARE_TYPE_FRIEND\x18\x0f\x20\
     \x01(\x0b2\x0c.NALPJMLJPNPH\0R\x17PUNKLORDSHARETYPEFRIEND\x120\n\x0bJOAD\
-    HBLDIMF\x18\x04\x20\x01(\x0b2\x0c.OHNBCHLOEBLH\0R\x0bJOADHBLDIMF\x120\n\
-    \x0bIEFOGHNGCMC\x18\r\x20\x01(\x0b2\x0c.BLMJNFFPMCNH\0R\x0bIEFOGHNGCMCB\
-    \r\n\x0bDAHBBFOKBOMb\x06proto3\
+    HBLDIMF\x18\t\x20\x01(\x0b2\x0c.OHNBCHLOEBLH\0R\x0bJOADHBLDIMF\x120\n\
+    \x0bIEFOGHNGCMC\x18\x0e\x20\x01(\x0b2\x0c.BLMJNFFPMCNH\0R\x0bIEFOGHNGCMC\
+    B\r\n\x0bDAHBBFOKBOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -50,7 +50,7 @@ impl CHKIICNAPHA {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 172;
+    // .ChallengeStatistics challenge_default = 979;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
         match self.IHAGGILDANL {
@@ -99,7 +99,7 @@ impl CHKIICNAPHA {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 847;
+    // .ChallengeStoryStatistics challenge_story = 556;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.IHAGGILDANL {
@@ -148,7 +148,7 @@ impl CHKIICNAPHA {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 1035;
+    // .ChallengeBossStatistics challenge_boss = 594;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
         match self.IHAGGILDANL {
@@ -250,19 +250,19 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.group_id = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.KHCNAJOKJHJ = is.read_uint32()?;
                 },
-                1378 => {
+                7834 => {
                     self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeDefault(is.read_message()?));
                 },
-                6778 => {
+                4450 => {
                     self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeStory(is.read_message()?));
                 },
-                8282 => {
+                4754 => {
                     self.IHAGGILDANL = ::std::option::Option::Some(chkiicnapha::IHAGGILDANL::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
@@ -278,10 +278,10 @@ impl ::protobuf::Message for CHKIICNAPHA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
         }
         if self.KHCNAJOKJHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KHCNAJOKJHJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.KHCNAJOKJHJ);
         }
         if let ::std::option::Option::Some(ref v) = self.IHAGGILDANL {
             match v {
@@ -306,21 +306,21 @@ impl ::protobuf::Message for CHKIICNAPHA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(7, self.group_id)?;
         }
         if self.KHCNAJOKJHJ != 0 {
-            os.write_uint32(7, self.KHCNAJOKJHJ)?;
+            os.write_uint32(9, self.KHCNAJOKJHJ)?;
         }
         if let ::std::option::Option::Some(ref v) = self.IHAGGILDANL {
             match v {
                 &chkiicnapha::IHAGGILDANL::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(172, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(979, v, os)?;
                 },
                 &chkiicnapha::IHAGGILDANL::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(847, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(556, v, os)?;
                 },
                 &chkiicnapha::IHAGGILDANL::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1035, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(594, v, os)?;
                 },
             };
         }
@@ -412,13 +412,13 @@ pub mod chkiicnapha {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CHKIICNAPHA.proto\x1a\x1dChallengeBossStatistics.proto\x1a\x19Chal\
     lengeStatistics.proto\x1a\x1eChallengeStoryStatistics.proto\"\xaa\x02\n\
-    \x0bCHKIICNAPHA\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupId\x12\
-    \x20\n\x0bKHCNAJOKJHJ\x18\x07\x20\x01(\rR\x0bKHCNAJOKJHJ\x12D\n\x11chall\
-    enge_default\x18\xac\x01\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10ch\
-    allengeDefault\x12E\n\x0fchallenge_story\x18\xcf\x06\x20\x01(\x0b2\x19.C\
-    hallengeStoryStatisticsH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\
-    \x18\x8b\x08\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBos\
-    sB\r\n\x0bIHAGGILDANLb\x06proto3\
+    \x0bCHKIICNAPHA\x12\x19\n\x08group_id\x18\x07\x20\x01(\rR\x07groupId\x12\
+    \x20\n\x0bKHCNAJOKJHJ\x18\t\x20\x01(\rR\x0bKHCNAJOKJHJ\x12D\n\x11challen\
+    ge_default\x18\xd3\x07\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10chal\
+    lengeDefault\x12E\n\x0fchallenge_story\x18\xac\x04\x20\x01(\x0b2\x19.Cha\
+    llengeStoryStatisticsH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\x18\
+    \xd2\x04\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBossB\r\
+    \n\x0bIHAGGILDANLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

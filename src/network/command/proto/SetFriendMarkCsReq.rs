@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.is_set_mark)
-    pub is_set_mark: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.is_set_mark)
+    pub is_set_mark: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.reason)
     pub reason: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SetFriendMarkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_set_mark",
-            |m: &SetFriendMarkCsReq| { &m.is_set_mark },
-            |m: &mut SetFriendMarkCsReq| { &mut m.is_set_mark },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &SetFriendMarkCsReq| { &m.uid },
             |m: &mut SetFriendMarkCsReq| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_set_mark",
+            |m: &SetFriendMarkCsReq| { &m.is_set_mark },
+            |m: &mut SetFriendMarkCsReq| { &mut m.is_set_mark },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.uid = is.read_uint32()?;
+                },
                 48 => {
                     self.is_set_mark = is.read_bool()?;
                 },
                 16 => {
-                    self.uid = is.read_uint32()?;
-                },
-                32 => {
                     self.reason = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+        }
         if self.is_set_mark != false {
             my_size += 1 + 1;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.uid);
-        }
         if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.reason);
+            my_size += ::protobuf::rt::uint32_size(2, self.reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.uid != 0 {
+            os.write_uint32(13, self.uid)?;
+        }
         if self.is_set_mark != false {
             os.write_bool(6, self.is_set_mark)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(2, self.uid)?;
-        }
         if self.reason != 0 {
-            os.write_uint32(4, self.reason)?;
+            os.write_uint32(2, self.reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_set_mark = false;
         self.uid = 0;
+        self.is_set_mark = false;
         self.reason = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
-            is_set_mark: false,
             uid: 0,
+            is_set_mark: false,
             reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkCsReq.proto\"^\n\x12SetFriendMarkCsReq\x12\x1e\n\x0bi\
-    s_set_mark\x18\x06\x20\x01(\x08R\tisSetMark\x12\x10\n\x03uid\x18\x02\x20\
-    \x01(\rR\x03uid\x12\x16\n\x06reason\x18\x04\x20\x01(\rR\x06reasonb\x06pr\
-    oto3\
+    \n\x18SetFriendMarkCsReq.proto\"^\n\x12SetFriendMarkCsReq\x12\x10\n\x03u\
+    id\x18\r\x20\x01(\rR\x03uid\x12\x1e\n\x0bis_set_mark\x18\x06\x20\x01(\
+    \x08R\tisSetMark\x12\x16\n\x06reason\x18\x02\x20\x01(\rR\x06reasonb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

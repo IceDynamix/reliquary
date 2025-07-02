@@ -30,8 +30,8 @@ pub struct GetPlatformPlayerInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.player_simple_info_list)
-    pub player_simple_info_list: ::std::vec::Vec<super::PlayerSimpleInfo::PlayerSimpleInfo>,
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoScRsp.player_info_list)
+    pub player_info_list: ::std::vec::Vec<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlatformPlayerInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetPlatformPlayerInfoScRsp {
             |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "player_simple_info_list",
-            |m: &GetPlatformPlayerInfoScRsp| { &m.player_simple_info_list },
-            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.player_simple_info_list },
+            "player_info_list",
+            |m: &GetPlatformPlayerInfoScRsp| { &m.player_info_list },
+            |m: &mut GetPlatformPlayerInfoScRsp| { &mut m.player_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlatformPlayerInfoScRsp>(
             "GetPlatformPlayerInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    self.player_simple_info_list.push(is.read_message()?);
+                58 => {
+                    self.player_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        for value in &self.player_simple_info_list {
+        for value in &self.player_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        for v in &self.player_simple_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.player_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetPlatformPlayerInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.player_simple_info_list.clear();
+        self.player_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlatformPlayerInfoScRsp {
         static instance: GetPlatformPlayerInfoScRsp = GetPlatformPlayerInfoScRsp {
             retcode: 0,
-            player_simple_info_list: ::std::vec::Vec::new(),
+            player_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPlatformPlayerInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetPlatformPlayerInfoScRsp.proto\x1a\x16PlayerSimpleInfo.proto\"\
-    \x80\x01\n\x1aGetPlatformPlayerInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcode\x12H\n\x17player_simple_info_list\x18\x0b\x20\x03(\
-    \x0b2\x11.PlayerSimpleInfoR\x14playerSimpleInfoListb\x06proto3\
+    \n\x20GetPlatformPlayerInfoScRsp.proto\x1a\x16PlayerSimpleInfo.proto\"s\
+    \n\x1aGetPlatformPlayerInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\r\
+    R\x07retcode\x12;\n\x10player_info_list\x18\x07\x20\x03(\x0b2\x11.Player\
+    SimpleInfoR\x0eplayerInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for GIGPOFFBIEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info_list)?;
                 },
-                48 => {
+                96 => {
                     self.exp = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GIGPOFFBIEO {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.exp);
+            my_size += ::protobuf::rt::uint32_size(12, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GIGPOFFBIEO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.talent_info_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.exp != 0 {
-            os.write_uint32(6, self.exp)?;
+            os.write_uint32(12, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GIGPOFFBIEO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIGPOFFBIEO.proto\x1a\x11IMJMGEENCEH.proto\"W\n\x0bGIGPOFFBIEO\x12\
-    6\n\x10talent_info_list\x18\x05\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0etalent\
-    InfoList\x12\x10\n\x03exp\x18\x06\x20\x01(\rR\x03expb\x06proto3\
+    6\n\x10talent_info_list\x18\t\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0etalentIn\
+    foList\x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

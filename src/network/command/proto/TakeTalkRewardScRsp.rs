@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                112 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                8 => {
                     self.IEMOEOIMHMA = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IEMOEOIMHMA);
+            my_size += ::protobuf::rt::uint32_size(1, self.IEMOEOIMHMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if self.IEMOEOIMHMA != 0 {
-            os.write_uint32(12, self.IEMOEOIMHMA)?;
+            os.write_uint32(1, self.IEMOEOIMHMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardScRsp.proto\x1a\x0eItemList.proto\"t\n\x13TakeTalkRe\
-    wardScRsp\x12!\n\x06reward\x18\t\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
-    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bIEMOEOIMHM\
-    A\x18\x0c\x20\x01(\rR\x0bIEMOEOIMHMAb\x06proto3\
+    wardScRsp\x12!\n\x06reward\x18\x0f\x20\x01(\x0b2\t.ItemListR\x06reward\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bIEMOEOIM\
+    HMA\x18\x01\x20\x01(\rR\x0bIEMOEOIMHMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

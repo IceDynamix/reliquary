@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneMonsterWave {
     // message fields
-    // @@protoc_insertion_point(field:SceneMonsterWave.battle_wave_id)
-    pub battle_wave_id: u32,
-    // @@protoc_insertion_point(field:SceneMonsterWave.monster_list)
-    pub monster_list: ::std::vec::Vec<super::SceneMonster::SceneMonster>,
-    // @@protoc_insertion_point(field:SceneMonsterWave.wave_param)
-    pub wave_param: ::protobuf::MessageField<super::SceneMonsterWaveParam::SceneMonsterWaveParam>,
     // @@protoc_insertion_point(field:SceneMonsterWave.JCDLJGHHAOF)
     pub JCDLJGHHAOF: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SceneMonsterWave.monster_list)
+    pub monster_list: ::std::vec::Vec<super::SceneMonster::SceneMonster>,
+    // @@protoc_insertion_point(field:SceneMonsterWave.monster_param)
+    pub monster_param: ::protobuf::MessageField<super::SceneMonsterWaveParam::SceneMonsterWaveParam>,
+    // @@protoc_insertion_point(field:SceneMonsterWave.battle_wave_id)
+    pub battle_wave_id: u32,
     // @@protoc_insertion_point(field:SceneMonsterWave.battle_stage_id)
     pub battle_stage_id: u32,
     // special fields
@@ -57,10 +57,10 @@ impl SceneMonsterWave {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_wave_id",
-            |m: &SceneMonsterWave| { &m.battle_wave_id },
-            |m: &mut SceneMonsterWave| { &mut m.battle_wave_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JCDLJGHHAOF",
+            |m: &SceneMonsterWave| { &m.JCDLJGHHAOF },
+            |m: &mut SceneMonsterWave| { &mut m.JCDLJGHHAOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_list",
@@ -68,14 +68,14 @@ impl SceneMonsterWave {
             |m: &mut SceneMonsterWave| { &mut m.monster_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneMonsterWaveParam::SceneMonsterWaveParam>(
-            "wave_param",
-            |m: &SceneMonsterWave| { &m.wave_param },
-            |m: &mut SceneMonsterWave| { &mut m.wave_param },
+            "monster_param",
+            |m: &SceneMonsterWave| { &m.monster_param },
+            |m: &mut SceneMonsterWave| { &mut m.monster_param },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JCDLJGHHAOF",
-            |m: &SceneMonsterWave| { &m.JCDLJGHHAOF },
-            |m: &mut SceneMonsterWave| { &mut m.JCDLJGHHAOF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "battle_wave_id",
+            |m: &SceneMonsterWave| { &m.battle_wave_id },
+            |m: &mut SceneMonsterWave| { &mut m.battle_wave_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_stage_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for SceneMonsterWave {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.battle_wave_id = is.read_uint32()?;
-                },
-                114 => {
-                    self.monster_list.push(is.read_message()?);
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.wave_param)?;
-                },
-                74 => {
+                10 => {
                     self.JCDLJGHHAOF.push(is.read_message()?);
                 },
-                8 => {
+                90 => {
+                    self.monster_list.push(is.read_message()?);
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_param)?;
+                },
+                40 => {
+                    self.battle_wave_id = is.read_uint32()?;
+                },
+                96 => {
                     self.battle_stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,23 +127,23 @@ impl ::protobuf::Message for SceneMonsterWave {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.battle_wave_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.battle_wave_id);
-        }
-        for value in &self.monster_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.wave_param.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.JCDLJGHHAOF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.monster_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.monster_param.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.battle_wave_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.battle_wave_id);
+        }
         if self.battle_stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.battle_stage_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.battle_stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for SceneMonsterWave {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.battle_wave_id != 0 {
-            os.write_uint32(2, self.battle_wave_id)?;
-        }
-        for v in &self.monster_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if let Some(v) = self.wave_param.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         for v in &self.JCDLJGHHAOF {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        for v in &self.monster_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if let Some(v) = self.monster_param.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.battle_wave_id != 0 {
+            os.write_uint32(5, self.battle_wave_id)?;
+        }
         if self.battle_stage_id != 0 {
-            os.write_uint32(1, self.battle_stage_id)?;
+            os.write_uint32(12, self.battle_stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,20 +183,20 @@ impl ::protobuf::Message for SceneMonsterWave {
     }
 
     fn clear(&mut self) {
-        self.battle_wave_id = 0;
-        self.monster_list.clear();
-        self.wave_param.clear();
         self.JCDLJGHHAOF.clear();
+        self.monster_list.clear();
+        self.monster_param.clear();
+        self.battle_wave_id = 0;
         self.battle_stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneMonsterWave {
         static instance: SceneMonsterWave = SceneMonsterWave {
-            battle_wave_id: 0,
-            monster_list: ::std::vec::Vec::new(),
-            wave_param: ::protobuf::MessageField::none(),
             JCDLJGHHAOF: ::std::vec::Vec::new(),
+            monster_list: ::std::vec::Vec::new(),
+            monster_param: ::protobuf::MessageField::none(),
+            battle_wave_id: 0,
             battle_stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,12 +223,13 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonsterWave {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SceneMonsterWave.proto\x1a\x0eItemList.proto\x1a\x12SceneMonster.p\
-    roto\x1a\x1bSceneMonsterWaveParam.proto\"\xf6\x01\n\x10SceneMonsterWave\
-    \x12$\n\x0ebattle_wave_id\x18\x02\x20\x01(\rR\x0cbattleWaveId\x120\n\x0c\
-    monster_list\x18\x0e\x20\x03(\x0b2\r.SceneMonsterR\x0bmonsterList\x125\n\
-    \nwave_param\x18\x0c\x20\x01(\x0b2\x16.SceneMonsterWaveParamR\twaveParam\
-    \x12+\n\x0bJCDLJGHHAOF\x18\t\x20\x03(\x0b2\t.ItemListR\x0bJCDLJGHHAOF\
-    \x12&\n\x0fbattle_stage_id\x18\x01\x20\x01(\rR\rbattleStageIdb\x06proto3\
+    roto\x1a\x1bSceneMonsterWaveParam.proto\"\xfc\x01\n\x10SceneMonsterWave\
+    \x12+\n\x0bJCDLJGHHAOF\x18\x01\x20\x03(\x0b2\t.ItemListR\x0bJCDLJGHHAOF\
+    \x120\n\x0cmonster_list\x18\x0b\x20\x03(\x0b2\r.SceneMonsterR\x0bmonster\
+    List\x12;\n\rmonster_param\x18\x07\x20\x01(\x0b2\x16.SceneMonsterWavePar\
+    amR\x0cmonsterParam\x12$\n\x0ebattle_wave_id\x18\x05\x20\x01(\rR\x0cbatt\
+    leWaveId\x12&\n\x0fbattle_stage_id\x18\x0c\x20\x01(\rR\rbattleStageIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritInfo {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.promotion)
-    pub promotion: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.exp)
     pub exp: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.sp_bar)
     pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.promotion)
+    pub promotion: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.aether_avatar_id)
     pub aether_avatar_id: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.JDHCHABCLCC)
@@ -60,11 +60,6 @@ impl AetherDivideSpiritInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &AetherDivideSpiritInfo| { &m.promotion },
-            |m: &mut AetherDivideSpiritInfo| { &mut m.promotion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &AetherDivideSpiritInfo| { &m.exp },
             |m: &mut AetherDivideSpiritInfo| { &mut m.exp },
@@ -73,6 +68,11 @@ impl AetherDivideSpiritInfo {
             "sp_bar",
             |m: &AetherDivideSpiritInfo| { &m.sp_bar },
             |m: &mut AetherDivideSpiritInfo| { &mut m.sp_bar },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "promotion",
+            |m: &AetherDivideSpiritInfo| { &m.promotion },
+            |m: &mut AetherDivideSpiritInfo| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "aether_avatar_id",
@@ -108,21 +108,21 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.promotion = is.read_uint32()?;
-                },
-                72 => {
                     self.exp = is.read_uint32()?;
                 },
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
-                32 => {
+                24 => {
+                    self.promotion = is.read_uint32()?;
+                },
+                80 => {
                     self.aether_avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.JDHCHABCLCC = is.read_uint32()?;
                 },
-                82 => {
+                10 => {
                     self.passive_skill.push(is.read_message()?);
                 },
                 tag => {
@@ -137,21 +137,21 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.promotion);
-        }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+            my_size += ::protobuf::rt::uint32_size(11, self.exp);
         }
         if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.promotion);
+        }
         if self.aether_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.aether_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.aether_avatar_id);
         }
         if self.JDHCHABCLCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JDHCHABCLCC);
+            my_size += ::protobuf::rt::uint32_size(8, self.JDHCHABCLCC);
         }
         for value in &self.passive_skill {
             let len = value.compute_size();
@@ -163,23 +163,23 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.promotion != 0 {
-            os.write_uint32(11, self.promotion)?;
-        }
         if self.exp != 0 {
-            os.write_uint32(9, self.exp)?;
+            os.write_uint32(11, self.exp)?;
         }
         if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.promotion != 0 {
+            os.write_uint32(3, self.promotion)?;
         }
         if self.aether_avatar_id != 0 {
-            os.write_uint32(4, self.aether_avatar_id)?;
+            os.write_uint32(10, self.aether_avatar_id)?;
         }
         if self.JDHCHABCLCC != 0 {
-            os.write_uint32(7, self.JDHCHABCLCC)?;
+            os.write_uint32(8, self.JDHCHABCLCC)?;
         }
         for v in &self.passive_skill {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,9 +198,9 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     }
 
     fn clear(&mut self) {
-        self.promotion = 0;
         self.exp = 0;
         self.sp_bar.clear();
+        self.promotion = 0;
         self.aether_avatar_id = 0;
         self.JDHCHABCLCC = 0;
         self.passive_skill.clear();
@@ -209,9 +209,9 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
 
     fn default_instance() -> &'static AetherDivideSpiritInfo {
         static instance: AetherDivideSpiritInfo = AetherDivideSpiritInfo {
-            promotion: 0,
             exp: 0,
             sp_bar: ::protobuf::MessageField::none(),
+            promotion: 0,
             aether_avatar_id: 0,
             JDHCHABCLCC: 0,
             passive_skill: ::std::vec::Vec::new(),
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cAetherDivideSpiritInfo.proto\x1a\x16PassiveSkillItem.proto\x1a\x0f\
-    SpBarInfo.proto\"\xef\x01\n\x16AetherDivideSpiritInfo\x12\x1c\n\tpromoti\
-    on\x18\x0b\x20\x01(\rR\tpromotion\x12\x10\n\x03exp\x18\t\x20\x01(\rR\x03\
-    exp\x12!\n\x06sp_bar\x18\x05\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12(\n\
-    \x10aether_avatar_id\x18\x04\x20\x01(\rR\x0eaetherAvatarId\x12\x20\n\x0b\
-    JDHCHABCLCC\x18\x07\x20\x01(\rR\x0bJDHCHABCLCC\x126\n\rpassive_skill\x18\
-    \n\x20\x03(\x0b2\x11.PassiveSkillItemR\x0cpassiveSkillb\x06proto3\
+    SpBarInfo.proto\"\xef\x01\n\x16AetherDivideSpiritInfo\x12\x10\n\x03exp\
+    \x18\x0b\x20\x01(\rR\x03exp\x12!\n\x06sp_bar\x18\x07\x20\x01(\x0b2\n.SpB\
+    arInfoR\x05spBar\x12\x1c\n\tpromotion\x18\x03\x20\x01(\rR\tpromotion\x12\
+    (\n\x10aether_avatar_id\x18\n\x20\x01(\rR\x0eaetherAvatarId\x12\x20\n\
+    \x0bJDHCHABCLCC\x18\x08\x20\x01(\rR\x0bJDHCHABCLCC\x126\n\rpassive_skill\
+    \x18\x01\x20\x03(\x0b2\x11.PassiveSkillItemR\x0cpassiveSkillb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

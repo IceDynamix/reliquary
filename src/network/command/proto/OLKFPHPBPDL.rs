@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OLKFPHPBPDL {
     // message fields
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.HDMDAODJACB)
-    pub HDMDAODJACB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.GMOPLJJGBPO)
+    pub GMOPLJJGBPO: bool,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.is_taken_reward)
+    pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:OLKFPHPBPDL.BIIFELFEGNK)
     pub BIIFELFEGNK: bool,
     // @@protoc_insertion_point(field:OLKFPHPBPDL.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.GMOPLJJGBPO)
-    pub GMOPLJJGBPO: bool,
+    // @@protoc_insertion_point(field:OLKFPHPBPDL.HDMDAODJACB)
+    pub HDMDAODJACB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OLKFPHPBPDL.is_unlocked)
     pub is_unlocked: bool,
-    // @@protoc_insertion_point(field:OLKFPHPBPDL.is_taken_reward)
-    pub is_taken_reward: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OLKFPHPBPDL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,15 @@ impl OLKFPHPBPDL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HDMDAODJACB",
-            |m: &OLKFPHPBPDL| { &m.HDMDAODJACB },
-            |m: &mut OLKFPHPBPDL| { &mut m.HDMDAODJACB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMOPLJJGBPO",
+            |m: &OLKFPHPBPDL| { &m.GMOPLJJGBPO },
+            |m: &mut OLKFPHPBPDL| { &mut m.GMOPLJJGBPO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_taken_reward",
+            |m: &OLKFPHPBPDL| { &m.is_taken_reward },
+            |m: &mut OLKFPHPBPDL| { &mut m.is_taken_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIIFELFEGNK",
@@ -74,20 +79,15 @@ impl OLKFPHPBPDL {
             |m: &OLKFPHPBPDL| { &m.area_id },
             |m: &mut OLKFPHPBPDL| { &mut m.area_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMOPLJJGBPO",
-            |m: &OLKFPHPBPDL| { &m.GMOPLJJGBPO },
-            |m: &mut OLKFPHPBPDL| { &mut m.GMOPLJJGBPO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HDMDAODJACB",
+            |m: &OLKFPHPBPDL| { &m.HDMDAODJACB },
+            |m: &mut OLKFPHPBPDL| { &mut m.HDMDAODJACB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_unlocked",
             |m: &OLKFPHPBPDL| { &m.is_unlocked },
             |m: &mut OLKFPHPBPDL| { &mut m.is_unlocked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_taken_reward",
-            |m: &OLKFPHPBPDL| { &m.is_taken_reward },
-            |m: &mut OLKFPHPBPDL| { &mut m.is_taken_reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OLKFPHPBPDL>(
             "OLKFPHPBPDL",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HDMDAODJACB)?;
-                },
-                32 => {
-                    self.HDMDAODJACB.push(is.read_uint32()?);
-                },
                 112 => {
-                    self.BIIFELFEGNK = is.read_bool()?;
-                },
-                56 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                104 => {
                     self.GMOPLJJGBPO = is.read_bool()?;
                 },
-                96 => {
-                    self.is_unlocked = is.read_bool()?;
+                80 => {
+                    self.is_taken_reward = is.read_bool()?;
+                },
+                120 => {
+                    self.BIIFELFEGNK = is.read_bool()?;
                 },
                 64 => {
-                    self.is_taken_reward = is.read_bool()?;
+                    self.area_id = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HDMDAODJACB)?;
+                },
+                72 => {
+                    self.HDMDAODJACB.push(is.read_uint32()?);
+                },
+                40 => {
+                    self.is_unlocked = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,20 +140,20 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.HDMDAODJACB);
+        if self.GMOPLJJGBPO != false {
+            my_size += 1 + 1;
+        }
+        if self.is_taken_reward != false {
+            my_size += 1 + 1;
+        }
         if self.BIIFELFEGNK != false {
             my_size += 1 + 1;
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.area_id);
         }
-        if self.GMOPLJJGBPO != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HDMDAODJACB);
         if self.is_unlocked != false {
-            my_size += 1 + 1;
-        }
-        if self.is_taken_reward != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -162,21 +162,21 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.HDMDAODJACB)?;
-        if self.BIIFELFEGNK != false {
-            os.write_bool(14, self.BIIFELFEGNK)?;
-        }
-        if self.area_id != 0 {
-            os.write_uint32(7, self.area_id)?;
-        }
         if self.GMOPLJJGBPO != false {
-            os.write_bool(13, self.GMOPLJJGBPO)?;
-        }
-        if self.is_unlocked != false {
-            os.write_bool(12, self.is_unlocked)?;
+            os.write_bool(14, self.GMOPLJJGBPO)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(8, self.is_taken_reward)?;
+            os.write_bool(10, self.is_taken_reward)?;
+        }
+        if self.BIIFELFEGNK != false {
+            os.write_bool(15, self.BIIFELFEGNK)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(8, self.area_id)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.HDMDAODJACB)?;
+        if self.is_unlocked != false {
+            os.write_bool(5, self.is_unlocked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for OLKFPHPBPDL {
     }
 
     fn clear(&mut self) {
-        self.HDMDAODJACB.clear();
+        self.GMOPLJJGBPO = false;
+        self.is_taken_reward = false;
         self.BIIFELFEGNK = false;
         self.area_id = 0;
-        self.GMOPLJJGBPO = false;
+        self.HDMDAODJACB.clear();
         self.is_unlocked = false;
-        self.is_taken_reward = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OLKFPHPBPDL {
         static instance: OLKFPHPBPDL = OLKFPHPBPDL {
-            HDMDAODJACB: ::std::vec::Vec::new(),
+            GMOPLJJGBPO: false,
+            is_taken_reward: false,
             BIIFELFEGNK: false,
             area_id: 0,
-            GMOPLJJGBPO: false,
+            HDMDAODJACB: ::std::vec::Vec::new(),
             is_unlocked: false,
-            is_taken_reward: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for OLKFPHPBPDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OLKFPHPBPDL.proto\"\xd5\x01\n\x0bOLKFPHPBPDL\x12\x20\n\x0bHDMDAODJ\
-    ACB\x18\x04\x20\x03(\rR\x0bHDMDAODJACB\x12\x20\n\x0bBIIFELFEGNK\x18\x0e\
-    \x20\x01(\x08R\x0bBIIFELFEGNK\x12\x17\n\x07area_id\x18\x07\x20\x01(\rR\
-    \x06areaId\x12\x20\n\x0bGMOPLJJGBPO\x18\r\x20\x01(\x08R\x0bGMOPLJJGBPO\
-    \x12\x1f\n\x0bis_unlocked\x18\x0c\x20\x01(\x08R\nisUnlocked\x12&\n\x0fis\
-    _taken_reward\x18\x08\x20\x01(\x08R\risTakenRewardb\x06proto3\
+    \n\x11OLKFPHPBPDL.proto\"\xd5\x01\n\x0bOLKFPHPBPDL\x12\x20\n\x0bGMOPLJJG\
+    BPO\x18\x0e\x20\x01(\x08R\x0bGMOPLJJGBPO\x12&\n\x0fis_taken_reward\x18\n\
+    \x20\x01(\x08R\risTakenReward\x12\x20\n\x0bBIIFELFEGNK\x18\x0f\x20\x01(\
+    \x08R\x0bBIIFELFEGNK\x12\x17\n\x07area_id\x18\x08\x20\x01(\rR\x06areaId\
+    \x12\x20\n\x0bHDMDAODJACB\x18\t\x20\x03(\rR\x0bHDMDAODJACB\x12\x1f\n\x0b\
+    is_unlocked\x18\x05\x20\x01(\x08R\nisUnlockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

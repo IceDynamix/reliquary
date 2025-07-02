@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBFIPIJJIDL {
     // message fields
-    // @@protoc_insertion_point(field:JBFIPIJJIDL.panel_id)
-    pub panel_id: u32,
     // @@protoc_insertion_point(field:JBFIPIJJIDL.LJKFFDMHOJH)
     pub LJKFFDMHOJH: u32,
+    // @@protoc_insertion_point(field:JBFIPIJJIDL.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:JBFIPIJJIDL.PJHDJKMJPKH)
     pub PJHDJKMJPKH: u32,
     // @@protoc_insertion_point(field:JBFIPIJJIDL.DKJGCBJKEEN)
@@ -56,14 +56,14 @@ impl JBFIPIJJIDL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &JBFIPIJJIDL| { &m.panel_id },
-            |m: &mut JBFIPIJJIDL| { &mut m.panel_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJKFFDMHOJH",
             |m: &JBFIPIJJIDL| { &m.LJKFFDMHOJH },
             |m: &mut JBFIPIJJIDL| { &mut m.LJKFFDMHOJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &JBFIPIJJIDL| { &m.panel_id },
+            |m: &mut JBFIPIJJIDL| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJHDJKMJPKH",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for JBFIPIJJIDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                112 => {
+                120 => {
                     self.LJKFFDMHOJH = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                48 => {
                     self.PJHDJKMJPKH = is.read_uint32()?;
                 },
-                64 => {
+                96 => {
                     self.DKJGCBJKEEN = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for JBFIPIJJIDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.panel_id);
-        }
         if self.LJKFFDMHOJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LJKFFDMHOJH);
+            my_size += ::protobuf::rt::uint32_size(15, self.LJKFFDMHOJH);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.panel_id);
         }
         if self.PJHDJKMJPKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PJHDJKMJPKH);
+            my_size += ::protobuf::rt::uint32_size(6, self.PJHDJKMJPKH);
         }
         if self.DKJGCBJKEEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DKJGCBJKEEN);
+            my_size += ::protobuf::rt::uint32_size(12, self.DKJGCBJKEEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for JBFIPIJJIDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(4, self.panel_id)?;
-        }
         if self.LJKFFDMHOJH != 0 {
-            os.write_uint32(14, self.LJKFFDMHOJH)?;
+            os.write_uint32(15, self.LJKFFDMHOJH)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(3, self.panel_id)?;
         }
         if self.PJHDJKMJPKH != 0 {
-            os.write_uint32(10, self.PJHDJKMJPKH)?;
+            os.write_uint32(6, self.PJHDJKMJPKH)?;
         }
         if self.DKJGCBJKEEN != 0 {
-            os.write_uint32(8, self.DKJGCBJKEEN)?;
+            os.write_uint32(12, self.DKJGCBJKEEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for JBFIPIJJIDL {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
         self.LJKFFDMHOJH = 0;
+        self.panel_id = 0;
         self.PJHDJKMJPKH = 0;
         self.DKJGCBJKEEN = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for JBFIPIJJIDL {
 
     fn default_instance() -> &'static JBFIPIJJIDL {
         static instance: JBFIPIJJIDL = JBFIPIJJIDL {
-            panel_id: 0,
             LJKFFDMHOJH: 0,
+            panel_id: 0,
             PJHDJKMJPKH: 0,
             DKJGCBJKEEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for JBFIPIJJIDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JBFIPIJJIDL.proto\"\x8e\x01\n\x0bJBFIPIJJIDL\x12\x19\n\x08panel_id\
-    \x18\x04\x20\x01(\rR\x07panelId\x12\x20\n\x0bLJKFFDMHOJH\x18\x0e\x20\x01\
-    (\rR\x0bLJKFFDMHOJH\x12\x20\n\x0bPJHDJKMJPKH\x18\n\x20\x01(\rR\x0bPJHDJK\
-    MJPKH\x12\x20\n\x0bDKJGCBJKEEN\x18\x08\x20\x01(\rR\x0bDKJGCBJKEENb\x06pr\
-    oto3\
+    \n\x11JBFIPIJJIDL.proto\"\x8e\x01\n\x0bJBFIPIJJIDL\x12\x20\n\x0bLJKFFDMH\
+    OJH\x18\x0f\x20\x01(\rR\x0bLJKFFDMHOJH\x12\x19\n\x08panel_id\x18\x03\x20\
+    \x01(\rR\x07panelId\x12\x20\n\x0bPJHDJKMJPKH\x18\x06\x20\x01(\rR\x0bPJHD\
+    JKMJPKH\x12\x20\n\x0bDKJGCBJKEEN\x18\x0c\x20\x01(\rR\x0bDKJGCBJKEENb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

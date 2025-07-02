@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySettleData {
     // message fields
+    // @@protoc_insertion_point(field:TrainPartySettleData.passenger_data_list)
+    pub passenger_data_list: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
     // @@protoc_insertion_point(field:TrainPartySettleData.FOAPLIALHDI)
     pub FOAPLIALHDI: ::std::vec::Vec<super::BAEPNHDCIEM::BAEPNHDCIEM>,
     // @@protoc_insertion_point(field:TrainPartySettleData.HEIJCNLNHHI)
     pub HEIJCNLNHHI: u32,
-    // @@protoc_insertion_point(field:TrainPartySettleData.passenger_data_list)
-    pub passenger_data_list: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySettleData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl TrainPartySettleData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "passenger_data_list",
+            |m: &TrainPartySettleData| { &m.passenger_data_list },
+            |m: &mut TrainPartySettleData| { &mut m.passenger_data_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FOAPLIALHDI",
             |m: &TrainPartySettleData| { &m.FOAPLIALHDI },
             |m: &mut TrainPartySettleData| { &mut m.FOAPLIALHDI },
@@ -62,11 +67,6 @@ impl TrainPartySettleData {
             "HEIJCNLNHHI",
             |m: &TrainPartySettleData| { &m.HEIJCNLNHHI },
             |m: &mut TrainPartySettleData| { &mut m.HEIJCNLNHHI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "passenger_data_list",
-            |m: &TrainPartySettleData| { &m.passenger_data_list },
-            |m: &mut TrainPartySettleData| { &mut m.passenger_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySettleData>(
             "TrainPartySettleData",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for TrainPartySettleData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 82 => {
+                    self.passenger_data_list.push(is.read_message()?);
+                },
+                34 => {
                     self.FOAPLIALHDI.push(is.read_message()?);
                 },
-                56 => {
+                48 => {
                     self.HEIJCNLNHHI = is.read_uint32()?;
-                },
-                114 => {
-                    self.passenger_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for TrainPartySettleData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.passenger_data_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.FOAPLIALHDI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.HEIJCNLNHHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HEIJCNLNHHI);
+            my_size += ::protobuf::rt::uint32_size(6, self.HEIJCNLNHHI);
         }
-        for value in &self.passenger_data_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FOAPLIALHDI {
+        for v in &self.passenger_data_list {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.HEIJCNLNHHI != 0 {
-            os.write_uint32(7, self.HEIJCNLNHHI)?;
-        }
-        for v in &self.passenger_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.FOAPLIALHDI {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.HEIJCNLNHHI != 0 {
+            os.write_uint32(6, self.HEIJCNLNHHI)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TrainPartySettleData {
     }
 
     fn clear(&mut self) {
+        self.passenger_data_list.clear();
         self.FOAPLIALHDI.clear();
         self.HEIJCNLNHHI = 0;
-        self.passenger_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySettleData {
         static instance: TrainPartySettleData = TrainPartySettleData {
+            passenger_data_list: ::std::vec::Vec::new(),
             FOAPLIALHDI: ::std::vec::Vec::new(),
             HEIJCNLNHHI: 0,
-            passenger_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySettleData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aTrainPartySettleData.proto\x1a\x11BAEPNHDCIEM.proto\x1a\x11MAONNNE\
-    LGCC.proto\"\xa6\x01\n\x14TrainPartySettleData\x12.\n\x0bFOAPLIALHDI\x18\
-    \n\x20\x03(\x0b2\x0c.BAEPNHDCIEMR\x0bFOAPLIALHDI\x12\x20\n\x0bHEIJCNLNHH\
-    I\x18\x07\x20\x01(\rR\x0bHEIJCNLNHHI\x12<\n\x13passenger_data_list\x18\
-    \x0e\x20\x03(\x0b2\x0c.MAONNNELGCCR\x11passengerDataListb\x06proto3\
+    LGCC.proto\"\xa6\x01\n\x14TrainPartySettleData\x12<\n\x13passenger_data_\
+    list\x18\n\x20\x03(\x0b2\x0c.MAONNNELGCCR\x11passengerDataList\x12.\n\
+    \x0bFOAPLIALHDI\x18\x04\x20\x03(\x0b2\x0c.BAEPNHDCIEMR\x0bFOAPLIALHDI\
+    \x12\x20\n\x0bHEIJCNLNHHI\x18\x06\x20\x01(\rR\x0bHEIJCNLNHHIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

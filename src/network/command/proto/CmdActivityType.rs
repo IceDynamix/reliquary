@@ -29,66 +29,66 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdActivityType {
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdActivityTypeNone)
     CmdActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeTrialActivityRewardCsReq)
-    CmdTakeTrialActivityRewardCsReq = 2634,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardChooseAvatarCsReq)
-    CmdAvatarDeliverRewardChooseAvatarCsReq = 2617,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetActivityScheduleConfigScRsp)
-    CmdGetActivityScheduleConfigScRsp = 2648,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdStartTrialActivityCsReq)
-    CmdStartTrialActivityCsReq = 2601,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetTrialActivityDataCsReq)
-    CmdGetTrialActivityDataCsReq = 2654,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdEnterTrialActivityStageScRsp)
-    CmdEnterTrialActivityStageScRsp = 2635,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetActivityScheduleConfigCsReq)
-    CmdGetActivityScheduleConfigCsReq = 2676,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdLeaveTrialActivityCsReq)
-    CmdLeaveTrialActivityCsReq = 2636,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeMaterialSubmitActivityRewardCsReq)
-    CmdTakeMaterialSubmitActivityRewardCsReq = 2642,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetAvatarDeliverRewardActivityDataScRsp)
-    CmdGetAvatarDeliverRewardActivityDataScRsp = 2690,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdSubmitMaterialSubmitActivityMaterialScRsp)
-    CmdSubmitMaterialSubmitActivityMaterialScRsp = 2633,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeLoginActivityRewardCsReq)
-    CmdTakeLoginActivityRewardCsReq = 2631,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeMaterialSubmitActivityRewardScRsp)
-    CmdTakeMaterialSubmitActivityRewardScRsp = 2677,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetTrialActivityDataScRsp)
-    CmdGetTrialActivityDataScRsp = 2699,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardTakeRewardCsReq)
-    CmdAvatarDeliverRewardTakeRewardCsReq = 2649,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdSubmitMaterialSubmitActivityMaterialCsReq)
-    CmdSubmitMaterialSubmitActivityMaterialCsReq = 2643,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetMaterialSubmitActivityDataScRsp)
-    CmdGetMaterialSubmitActivityDataScRsp = 2639,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdStartTrialActivityScRsp)
-    CmdStartTrialActivityScRsp = 2653,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeLoginActivityRewardScRsp)
-    CmdTakeLoginActivityRewardScRsp = 2640,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardTakeRewardScRsp)
-    CmdAvatarDeliverRewardTakeRewardScRsp = 2603,
+    CmdSubmitMaterialSubmitActivityMaterialCsReq = 2652,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdLeaveTrialActivityCsReq)
+    CmdLeaveTrialActivityCsReq = 2672,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdLeaveTrialActivityScRsp)
-    CmdLeaveTrialActivityScRsp = 2694,
+    CmdLeaveTrialActivityScRsp = 2635,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetTrialActivityDataCsReq)
+    CmdGetTrialActivityDataCsReq = 2696,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetTrialActivityDataScRsp)
+    CmdGetTrialActivityDataScRsp = 2616,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeMaterialSubmitActivityRewardScRsp)
+    CmdTakeMaterialSubmitActivityRewardScRsp = 2636,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdStartTrialActivityCsReq)
+    CmdStartTrialActivityCsReq = 2689,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardChooseAvatarScRsp)
-    CmdAvatarDeliverRewardChooseAvatarScRsp = 2669,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetLoginActivityScRsp)
-    CmdGetLoginActivityScRsp = 2632,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTrialActivityDataChangeScNotify)
-    CmdTrialActivityDataChangeScNotify = 2687,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeTrialActivityRewardScRsp)
-    CmdTakeTrialActivityRewardScRsp = 2668,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetAvatarDeliverRewardActivityDataCsReq)
-    CmdGetAvatarDeliverRewardActivityDataCsReq = 2674,
-    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetMaterialSubmitActivityDataCsReq)
-    CmdGetMaterialSubmitActivityDataCsReq = 2602,
+    CmdAvatarDeliverRewardChooseAvatarScRsp = 2625,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardChooseAvatarCsReq)
+    CmdAvatarDeliverRewardChooseAvatarCsReq = 2648,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeMaterialSubmitActivityRewardCsReq)
+    CmdTakeMaterialSubmitActivityRewardCsReq = 2694,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetMaterialSubmitActivityDataScRsp)
+    CmdGetMaterialSubmitActivityDataScRsp = 2638,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdEnterTrialActivityStageCsReq)
-    CmdEnterTrialActivityStageCsReq = 2608,
+    CmdEnterTrialActivityStageCsReq = 2664,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdSubmitMaterialSubmitActivityMaterialScRsp)
+    CmdSubmitMaterialSubmitActivityMaterialScRsp = 2668,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeTrialActivityRewardScRsp)
+    CmdTakeTrialActivityRewardScRsp = 2690,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeLoginActivityRewardScRsp)
+    CmdTakeLoginActivityRewardScRsp = 2639,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetLoginActivityCsReq)
-    CmdGetLoginActivityCsReq = 2695,
+    CmdGetLoginActivityCsReq = 2620,
     // @@protoc_insertion_point(enum_value:CmdActivityType.CmdCurTrialActivityScNotify)
-    CmdCurTrialActivityScNotify = 2627,
+    CmdCurTrialActivityScNotify = 2653,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetMaterialSubmitActivityDataCsReq)
+    CmdGetMaterialSubmitActivityDataCsReq = 2685,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetAvatarDeliverRewardActivityDataCsReq)
+    CmdGetAvatarDeliverRewardActivityDataCsReq = 2633,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetActivityScheduleConfigCsReq)
+    CmdGetActivityScheduleConfigCsReq = 2627,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdEnterTrialActivityStageScRsp)
+    CmdEnterTrialActivityStageScRsp = 2657,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeTrialActivityRewardCsReq)
+    CmdTakeTrialActivityRewardCsReq = 2626,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTakeLoginActivityRewardCsReq)
+    CmdTakeLoginActivityRewardCsReq = 2667,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdStartTrialActivityScRsp)
+    CmdStartTrialActivityScRsp = 2637,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetActivityScheduleConfigScRsp)
+    CmdGetActivityScheduleConfigScRsp = 2621,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardTakeRewardCsReq)
+    CmdAvatarDeliverRewardTakeRewardCsReq = 2643,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdAvatarDeliverRewardTakeRewardScRsp)
+    CmdAvatarDeliverRewardTakeRewardScRsp = 2612,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetAvatarDeliverRewardActivityDataScRsp)
+    CmdGetAvatarDeliverRewardActivityDataScRsp = 2607,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdGetLoginActivityScRsp)
+    CmdGetLoginActivityScRsp = 2691,
+    // @@protoc_insertion_point(enum_value:CmdActivityType.CmdTrialActivityDataChangeScNotify)
+    CmdTrialActivityDataChangeScNotify = 2693,
 }
 
 impl ::protobuf::Enum for CmdActivityType {
@@ -101,36 +101,36 @@ impl ::protobuf::Enum for CmdActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdActivityType::CmdActivityTypeNone),
-            2634 => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardCsReq),
-            2617 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq),
-            2648 => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigScRsp),
-            2601 => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityCsReq),
-            2654 => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataCsReq),
-            2635 => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageScRsp),
-            2676 => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigCsReq),
-            2636 => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityCsReq),
-            2642 => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq),
-            2690 => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp),
-            2633 => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp),
-            2631 => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardCsReq),
-            2677 => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp),
-            2699 => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataScRsp),
-            2649 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq),
-            2643 => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq),
-            2639 => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp),
-            2653 => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityScRsp),
-            2640 => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardScRsp),
-            2603 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp),
-            2694 => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityScRsp),
-            2669 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp),
-            2632 => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityScRsp),
-            2687 => ::std::option::Option::Some(CmdActivityType::CmdTrialActivityDataChangeScNotify),
-            2668 => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardScRsp),
-            2674 => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq),
-            2602 => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq),
-            2608 => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageCsReq),
-            2695 => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityCsReq),
-            2627 => ::std::option::Option::Some(CmdActivityType::CmdCurTrialActivityScNotify),
+            2652 => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq),
+            2672 => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityCsReq),
+            2635 => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityScRsp),
+            2696 => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataCsReq),
+            2616 => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataScRsp),
+            2636 => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp),
+            2689 => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityCsReq),
+            2625 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp),
+            2648 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq),
+            2694 => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq),
+            2638 => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp),
+            2664 => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageCsReq),
+            2668 => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp),
+            2690 => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardScRsp),
+            2639 => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardScRsp),
+            2620 => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityCsReq),
+            2653 => ::std::option::Option::Some(CmdActivityType::CmdCurTrialActivityScNotify),
+            2685 => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq),
+            2633 => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq),
+            2627 => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigCsReq),
+            2657 => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageScRsp),
+            2626 => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardCsReq),
+            2667 => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardCsReq),
+            2637 => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityScRsp),
+            2621 => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigScRsp),
+            2643 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq),
+            2612 => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp),
+            2607 => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp),
+            2691 => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityScRsp),
+            2693 => ::std::option::Option::Some(CmdActivityType::CmdTrialActivityDataChangeScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -138,72 +138,72 @@ impl ::protobuf::Enum for CmdActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdActivityType> {
         match str {
             "CmdActivityTypeNone" => ::std::option::Option::Some(CmdActivityType::CmdActivityTypeNone),
-            "CmdTakeTrialActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardCsReq),
-            "CmdAvatarDeliverRewardChooseAvatarCsReq" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq),
-            "CmdGetActivityScheduleConfigScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigScRsp),
-            "CmdStartTrialActivityCsReq" => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityCsReq),
-            "CmdGetTrialActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataCsReq),
-            "CmdEnterTrialActivityStageScRsp" => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageScRsp),
-            "CmdGetActivityScheduleConfigCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigCsReq),
-            "CmdLeaveTrialActivityCsReq" => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityCsReq),
-            "CmdTakeMaterialSubmitActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq),
-            "CmdGetAvatarDeliverRewardActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp),
-            "CmdSubmitMaterialSubmitActivityMaterialScRsp" => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp),
-            "CmdTakeLoginActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardCsReq),
-            "CmdTakeMaterialSubmitActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp),
-            "CmdGetTrialActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataScRsp),
-            "CmdAvatarDeliverRewardTakeRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq),
             "CmdSubmitMaterialSubmitActivityMaterialCsReq" => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq),
-            "CmdGetMaterialSubmitActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp),
-            "CmdStartTrialActivityScRsp" => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityScRsp),
-            "CmdTakeLoginActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardScRsp),
-            "CmdAvatarDeliverRewardTakeRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp),
+            "CmdLeaveTrialActivityCsReq" => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityCsReq),
             "CmdLeaveTrialActivityScRsp" => ::std::option::Option::Some(CmdActivityType::CmdLeaveTrialActivityScRsp),
+            "CmdGetTrialActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataCsReq),
+            "CmdGetTrialActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetTrialActivityDataScRsp),
+            "CmdTakeMaterialSubmitActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp),
+            "CmdStartTrialActivityCsReq" => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityCsReq),
             "CmdAvatarDeliverRewardChooseAvatarScRsp" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp),
-            "CmdGetLoginActivityScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityScRsp),
-            "CmdTrialActivityDataChangeScNotify" => ::std::option::Option::Some(CmdActivityType::CmdTrialActivityDataChangeScNotify),
-            "CmdTakeTrialActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardScRsp),
-            "CmdGetAvatarDeliverRewardActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq),
-            "CmdGetMaterialSubmitActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq),
+            "CmdAvatarDeliverRewardChooseAvatarCsReq" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq),
+            "CmdTakeMaterialSubmitActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq),
+            "CmdGetMaterialSubmitActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp),
             "CmdEnterTrialActivityStageCsReq" => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageCsReq),
+            "CmdSubmitMaterialSubmitActivityMaterialScRsp" => ::std::option::Option::Some(CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp),
+            "CmdTakeTrialActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardScRsp),
+            "CmdTakeLoginActivityRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardScRsp),
             "CmdGetLoginActivityCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityCsReq),
             "CmdCurTrialActivityScNotify" => ::std::option::Option::Some(CmdActivityType::CmdCurTrialActivityScNotify),
+            "CmdGetMaterialSubmitActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq),
+            "CmdGetAvatarDeliverRewardActivityDataCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq),
+            "CmdGetActivityScheduleConfigCsReq" => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigCsReq),
+            "CmdEnterTrialActivityStageScRsp" => ::std::option::Option::Some(CmdActivityType::CmdEnterTrialActivityStageScRsp),
+            "CmdTakeTrialActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeTrialActivityRewardCsReq),
+            "CmdTakeLoginActivityRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdTakeLoginActivityRewardCsReq),
+            "CmdStartTrialActivityScRsp" => ::std::option::Option::Some(CmdActivityType::CmdStartTrialActivityScRsp),
+            "CmdGetActivityScheduleConfigScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetActivityScheduleConfigScRsp),
+            "CmdAvatarDeliverRewardTakeRewardCsReq" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq),
+            "CmdAvatarDeliverRewardTakeRewardScRsp" => ::std::option::Option::Some(CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp),
+            "CmdGetAvatarDeliverRewardActivityDataScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp),
+            "CmdGetLoginActivityScRsp" => ::std::option::Option::Some(CmdActivityType::CmdGetLoginActivityScRsp),
+            "CmdTrialActivityDataChangeScNotify" => ::std::option::Option::Some(CmdActivityType::CmdTrialActivityDataChangeScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdActivityType] = &[
         CmdActivityType::CmdActivityTypeNone,
-        CmdActivityType::CmdTakeTrialActivityRewardCsReq,
-        CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq,
-        CmdActivityType::CmdGetActivityScheduleConfigScRsp,
-        CmdActivityType::CmdStartTrialActivityCsReq,
-        CmdActivityType::CmdGetTrialActivityDataCsReq,
-        CmdActivityType::CmdEnterTrialActivityStageScRsp,
-        CmdActivityType::CmdGetActivityScheduleConfigCsReq,
-        CmdActivityType::CmdLeaveTrialActivityCsReq,
-        CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq,
-        CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp,
-        CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp,
-        CmdActivityType::CmdTakeLoginActivityRewardCsReq,
-        CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp,
-        CmdActivityType::CmdGetTrialActivityDataScRsp,
-        CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq,
         CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq,
-        CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp,
-        CmdActivityType::CmdStartTrialActivityScRsp,
-        CmdActivityType::CmdTakeLoginActivityRewardScRsp,
-        CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp,
+        CmdActivityType::CmdLeaveTrialActivityCsReq,
         CmdActivityType::CmdLeaveTrialActivityScRsp,
+        CmdActivityType::CmdGetTrialActivityDataCsReq,
+        CmdActivityType::CmdGetTrialActivityDataScRsp,
+        CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp,
+        CmdActivityType::CmdStartTrialActivityCsReq,
         CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp,
-        CmdActivityType::CmdGetLoginActivityScRsp,
-        CmdActivityType::CmdTrialActivityDataChangeScNotify,
-        CmdActivityType::CmdTakeTrialActivityRewardScRsp,
-        CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq,
-        CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq,
+        CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq,
+        CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq,
+        CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp,
         CmdActivityType::CmdEnterTrialActivityStageCsReq,
+        CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp,
+        CmdActivityType::CmdTakeTrialActivityRewardScRsp,
+        CmdActivityType::CmdTakeLoginActivityRewardScRsp,
         CmdActivityType::CmdGetLoginActivityCsReq,
         CmdActivityType::CmdCurTrialActivityScNotify,
+        CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq,
+        CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq,
+        CmdActivityType::CmdGetActivityScheduleConfigCsReq,
+        CmdActivityType::CmdEnterTrialActivityStageScRsp,
+        CmdActivityType::CmdTakeTrialActivityRewardCsReq,
+        CmdActivityType::CmdTakeLoginActivityRewardCsReq,
+        CmdActivityType::CmdStartTrialActivityScRsp,
+        CmdActivityType::CmdGetActivityScheduleConfigScRsp,
+        CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq,
+        CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp,
+        CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp,
+        CmdActivityType::CmdGetLoginActivityScRsp,
+        CmdActivityType::CmdTrialActivityDataChangeScNotify,
     ];
 }
 
@@ -216,36 +216,36 @@ impl ::protobuf::EnumFull for CmdActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdActivityType::CmdActivityTypeNone => 0,
-            CmdActivityType::CmdTakeTrialActivityRewardCsReq => 1,
-            CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq => 2,
-            CmdActivityType::CmdGetActivityScheduleConfigScRsp => 3,
-            CmdActivityType::CmdStartTrialActivityCsReq => 4,
-            CmdActivityType::CmdGetTrialActivityDataCsReq => 5,
-            CmdActivityType::CmdEnterTrialActivityStageScRsp => 6,
-            CmdActivityType::CmdGetActivityScheduleConfigCsReq => 7,
-            CmdActivityType::CmdLeaveTrialActivityCsReq => 8,
-            CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq => 9,
-            CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp => 10,
-            CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp => 11,
-            CmdActivityType::CmdTakeLoginActivityRewardCsReq => 12,
-            CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp => 13,
-            CmdActivityType::CmdGetTrialActivityDataScRsp => 14,
-            CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq => 15,
-            CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq => 16,
-            CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp => 17,
-            CmdActivityType::CmdStartTrialActivityScRsp => 18,
-            CmdActivityType::CmdTakeLoginActivityRewardScRsp => 19,
-            CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp => 20,
-            CmdActivityType::CmdLeaveTrialActivityScRsp => 21,
-            CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp => 22,
-            CmdActivityType::CmdGetLoginActivityScRsp => 23,
-            CmdActivityType::CmdTrialActivityDataChangeScNotify => 24,
-            CmdActivityType::CmdTakeTrialActivityRewardScRsp => 25,
-            CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq => 26,
-            CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq => 27,
-            CmdActivityType::CmdEnterTrialActivityStageCsReq => 28,
-            CmdActivityType::CmdGetLoginActivityCsReq => 29,
-            CmdActivityType::CmdCurTrialActivityScNotify => 30,
+            CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialCsReq => 1,
+            CmdActivityType::CmdLeaveTrialActivityCsReq => 2,
+            CmdActivityType::CmdLeaveTrialActivityScRsp => 3,
+            CmdActivityType::CmdGetTrialActivityDataCsReq => 4,
+            CmdActivityType::CmdGetTrialActivityDataScRsp => 5,
+            CmdActivityType::CmdTakeMaterialSubmitActivityRewardScRsp => 6,
+            CmdActivityType::CmdStartTrialActivityCsReq => 7,
+            CmdActivityType::CmdAvatarDeliverRewardChooseAvatarScRsp => 8,
+            CmdActivityType::CmdAvatarDeliverRewardChooseAvatarCsReq => 9,
+            CmdActivityType::CmdTakeMaterialSubmitActivityRewardCsReq => 10,
+            CmdActivityType::CmdGetMaterialSubmitActivityDataScRsp => 11,
+            CmdActivityType::CmdEnterTrialActivityStageCsReq => 12,
+            CmdActivityType::CmdSubmitMaterialSubmitActivityMaterialScRsp => 13,
+            CmdActivityType::CmdTakeTrialActivityRewardScRsp => 14,
+            CmdActivityType::CmdTakeLoginActivityRewardScRsp => 15,
+            CmdActivityType::CmdGetLoginActivityCsReq => 16,
+            CmdActivityType::CmdCurTrialActivityScNotify => 17,
+            CmdActivityType::CmdGetMaterialSubmitActivityDataCsReq => 18,
+            CmdActivityType::CmdGetAvatarDeliverRewardActivityDataCsReq => 19,
+            CmdActivityType::CmdGetActivityScheduleConfigCsReq => 20,
+            CmdActivityType::CmdEnterTrialActivityStageScRsp => 21,
+            CmdActivityType::CmdTakeTrialActivityRewardCsReq => 22,
+            CmdActivityType::CmdTakeLoginActivityRewardCsReq => 23,
+            CmdActivityType::CmdStartTrialActivityScRsp => 24,
+            CmdActivityType::CmdGetActivityScheduleConfigScRsp => 25,
+            CmdActivityType::CmdAvatarDeliverRewardTakeRewardCsReq => 26,
+            CmdActivityType::CmdAvatarDeliverRewardTakeRewardScRsp => 27,
+            CmdActivityType::CmdGetAvatarDeliverRewardActivityDataScRsp => 28,
+            CmdActivityType::CmdGetLoginActivityScRsp => 29,
+            CmdActivityType::CmdTrialActivityDataChangeScNotify => 30,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -265,30 +265,30 @@ impl CmdActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdActivityType.proto*\xe3\t\n\x0fCmdActivityType\x12\x17\n\x13Cmd\
-    ActivityTypeNone\x10\0\x12$\n\x1fCmdTakeTrialActivityRewardCsReq\x10\xca\
-    \x14\x12,\n'CmdAvatarDeliverRewardChooseAvatarCsReq\x10\xb9\x14\x12&\n!C\
-    mdGetActivityScheduleConfigScRsp\x10\xd8\x14\x12\x1f\n\x1aCmdStartTrialA\
-    ctivityCsReq\x10\xa9\x14\x12!\n\x1cCmdGetTrialActivityDataCsReq\x10\xde\
-    \x14\x12$\n\x1fCmdEnterTrialActivityStageScRsp\x10\xcb\x14\x12&\n!CmdGet\
-    ActivityScheduleConfigCsReq\x10\xf4\x14\x12\x1f\n\x1aCmdLeaveTrialActivi\
-    tyCsReq\x10\xcc\x14\x12-\n(CmdTakeMaterialSubmitActivityRewardCsReq\x10\
-    \xd2\x14\x12/\n*CmdGetAvatarDeliverRewardActivityDataScRsp\x10\x82\x15\
-    \x121\n,CmdSubmitMaterialSubmitActivityMaterialScRsp\x10\xc9\x14\x12$\n\
-    \x1fCmdTakeLoginActivityRewardCsReq\x10\xc7\x14\x12-\n(CmdTakeMaterialSu\
-    bmitActivityRewardScRsp\x10\xf5\x14\x12!\n\x1cCmdGetTrialActivityDataScR\
-    sp\x10\x8b\x15\x12*\n%CmdAvatarDeliverRewardTakeRewardCsReq\x10\xd9\x14\
-    \x121\n,CmdSubmitMaterialSubmitActivityMaterialCsReq\x10\xd3\x14\x12*\n%\
-    CmdGetMaterialSubmitActivityDataScRsp\x10\xcf\x14\x12\x1f\n\x1aCmdStartT\
-    rialActivityScRsp\x10\xdd\x14\x12$\n\x1fCmdTakeLoginActivityRewardScRsp\
-    \x10\xd0\x14\x12*\n%CmdAvatarDeliverRewardTakeRewardScRsp\x10\xab\x14\
-    \x12\x1f\n\x1aCmdLeaveTrialActivityScRsp\x10\x86\x15\x12,\n'CmdAvatarDel\
-    iverRewardChooseAvatarScRsp\x10\xed\x14\x12\x1d\n\x18CmdGetLoginActivity\
-    ScRsp\x10\xc8\x14\x12'\n\"CmdTrialActivityDataChangeScNotify\x10\xff\x14\
-    \x12$\n\x1fCmdTakeTrialActivityRewardScRsp\x10\xec\x14\x12/\n*CmdGetAvat\
-    arDeliverRewardActivityDataCsReq\x10\xf2\x14\x12*\n%CmdGetMaterialSubmit\
-    ActivityDataCsReq\x10\xaa\x14\x12$\n\x1fCmdEnterTrialActivityStageCsReq\
-    \x10\xb0\x14\x12\x1d\n\x18CmdGetLoginActivityCsReq\x10\x87\x15\x12\x20\n\
-    \x1bCmdCurTrialActivityScNotify\x10\xc3\x14b\x06proto3\
+    ActivityTypeNone\x10\0\x121\n,CmdSubmitMaterialSubmitActivityMaterialCsR\
+    eq\x10\xdc\x14\x12\x1f\n\x1aCmdLeaveTrialActivityCsReq\x10\xf0\x14\x12\
+    \x1f\n\x1aCmdLeaveTrialActivityScRsp\x10\xcb\x14\x12!\n\x1cCmdGetTrialAc\
+    tivityDataCsReq\x10\x88\x15\x12!\n\x1cCmdGetTrialActivityDataScRsp\x10\
+    \xb8\x14\x12-\n(CmdTakeMaterialSubmitActivityRewardScRsp\x10\xcc\x14\x12\
+    \x1f\n\x1aCmdStartTrialActivityCsReq\x10\x81\x15\x12,\n'CmdAvatarDeliver\
+    RewardChooseAvatarScRsp\x10\xc1\x14\x12,\n'CmdAvatarDeliverRewardChooseA\
+    vatarCsReq\x10\xd8\x14\x12-\n(CmdTakeMaterialSubmitActivityRewardCsReq\
+    \x10\x86\x15\x12*\n%CmdGetMaterialSubmitActivityDataScRsp\x10\xce\x14\
+    \x12$\n\x1fCmdEnterTrialActivityStageCsReq\x10\xe8\x14\x121\n,CmdSubmitM\
+    aterialSubmitActivityMaterialScRsp\x10\xec\x14\x12$\n\x1fCmdTakeTrialAct\
+    ivityRewardScRsp\x10\x82\x15\x12$\n\x1fCmdTakeLoginActivityRewardScRsp\
+    \x10\xcf\x14\x12\x1d\n\x18CmdGetLoginActivityCsReq\x10\xbc\x14\x12\x20\n\
+    \x1bCmdCurTrialActivityScNotify\x10\xdd\x14\x12*\n%CmdGetMaterialSubmitA\
+    ctivityDataCsReq\x10\xfd\x14\x12/\n*CmdGetAvatarDeliverRewardActivityDat\
+    aCsReq\x10\xc9\x14\x12&\n!CmdGetActivityScheduleConfigCsReq\x10\xc3\x14\
+    \x12$\n\x1fCmdEnterTrialActivityStageScRsp\x10\xe1\x14\x12$\n\x1fCmdTake\
+    TrialActivityRewardCsReq\x10\xc2\x14\x12$\n\x1fCmdTakeLoginActivityRewar\
+    dCsReq\x10\xeb\x14\x12\x1f\n\x1aCmdStartTrialActivityScRsp\x10\xcd\x14\
+    \x12&\n!CmdGetActivityScheduleConfigScRsp\x10\xbd\x14\x12*\n%CmdAvatarDe\
+    liverRewardTakeRewardCsReq\x10\xd3\x14\x12*\n%CmdAvatarDeliverRewardTake\
+    RewardScRsp\x10\xb4\x14\x12/\n*CmdGetAvatarDeliverRewardActivityDataScRs\
+    p\x10\xaf\x14\x12\x1d\n\x18CmdGetLoginActivityScRsp\x10\x83\x15\x12'\n\"\
+    CmdTrialActivityDataChangeScNotify\x10\x85\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

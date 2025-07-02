@@ -86,13 +86,13 @@ impl ::protobuf::Message for BMPLFJKEOLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.OKDLMEJPCHE = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.COFFEBNIBHK = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for BMPLFJKEOLF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OKDLMEJPCHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OKDLMEJPCHE);
+            my_size += ::protobuf::rt::uint32_size(3, self.OKDLMEJPCHE);
         }
         if self.COFFEBNIBHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.COFFEBNIBHK);
+            my_size += ::protobuf::rt::uint32_size(4, self.COFFEBNIBHK);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BMPLFJKEOLF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OKDLMEJPCHE != 0 {
-            os.write_uint32(1, self.OKDLMEJPCHE)?;
+            os.write_uint32(3, self.OKDLMEJPCHE)?;
         }
         if self.COFFEBNIBHK != 0 {
-            os.write_uint32(13, self.COFFEBNIBHK)?;
+            os.write_uint32(4, self.COFFEBNIBHK)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(12, self.buff_id)?;
+            os.write_uint32(5, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for BMPLFJKEOLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMPLFJKEOLF.proto\"j\n\x0bBMPLFJKEOLF\x12\x20\n\x0bOKDLMEJPCHE\x18\
-    \x01\x20\x01(\rR\x0bOKDLMEJPCHE\x12\x20\n\x0bCOFFEBNIBHK\x18\r\x20\x01(\
-    \rR\x0bCOFFEBNIBHK\x12\x17\n\x07buff_id\x18\x0c\x20\x01(\rR\x06buffIdb\
+    \x03\x20\x01(\rR\x0bOKDLMEJPCHE\x12\x20\n\x0bCOFFEBNIBHK\x18\x04\x20\x01\
+    (\rR\x0bCOFFEBNIBHK\x12\x17\n\x07buff_id\x18\x05\x20\x01(\rR\x06buffIdb\
     \x06proto3\
 ";
 

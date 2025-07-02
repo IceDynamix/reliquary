@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetShareDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                114 => {
                     self.MFKJJBPNDAM.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetShareDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.MFKJJBPNDAM {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetShareDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.MFKJJBPNDAM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetShareDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetShareDataScRsp.proto\x1a\x11ADGNKECPOMA.proto\"]\n\x11GetShareD\
-    ataScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bM\
-    FKJJBPNDAM\x18\x01\x20\x03(\x0b2\x0c.ADGNKECPOMAR\x0bMFKJJBPNDAMb\x06pro\
+    ataScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bM\
+    FKJJBPNDAM\x18\x0e\x20\x03(\x0b2\x0c.ADGNKECPOMAR\x0bMFKJJBPNDAMb\x06pro\
     to3\
 ";
 

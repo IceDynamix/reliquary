@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FantasticStoryActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FantasticStoryActivityBattleEndScNotify.PKKLPBBNNCE)
-    pub PKKLPBBNNCE: u32,
     // @@protoc_insertion_point(field:FantasticStoryActivityBattleEndScNotify.BEJCALDILNC)
     pub BEJCALDILNC: u32,
+    // @@protoc_insertion_point(field:FantasticStoryActivityBattleEndScNotify.PKKLPBBNNCE)
+    pub PKKLPBBNNCE: u32,
     // @@protoc_insertion_point(field:FantasticStoryActivityBattleEndScNotify.battle_id)
     pub battle_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl FantasticStoryActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKKLPBBNNCE",
-            |m: &FantasticStoryActivityBattleEndScNotify| { &m.PKKLPBBNNCE },
-            |m: &mut FantasticStoryActivityBattleEndScNotify| { &mut m.PKKLPBBNNCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEJCALDILNC",
             |m: &FantasticStoryActivityBattleEndScNotify| { &m.BEJCALDILNC },
             |m: &mut FantasticStoryActivityBattleEndScNotify| { &mut m.BEJCALDILNC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PKKLPBBNNCE",
+            |m: &FantasticStoryActivityBattleEndScNotify| { &m.PKKLPBBNNCE },
+            |m: &mut FantasticStoryActivityBattleEndScNotify| { &mut m.PKKLPBBNNCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.PKKLPBBNNCE = is.read_uint32()?;
-                },
-                72 => {
+                88 => {
                     self.BEJCALDILNC = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
+                    self.PKKLPBBNNCE = is.read_uint32()?;
+                },
+                104 => {
                     self.battle_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKKLPBBNNCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PKKLPBBNNCE);
-        }
         if self.BEJCALDILNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BEJCALDILNC);
+            my_size += ::protobuf::rt::uint32_size(11, self.BEJCALDILNC);
+        }
+        if self.PKKLPBBNNCE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PKKLPBBNNCE);
         }
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.battle_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKKLPBBNNCE != 0 {
-            os.write_uint32(5, self.PKKLPBBNNCE)?;
-        }
         if self.BEJCALDILNC != 0 {
-            os.write_uint32(9, self.BEJCALDILNC)?;
+            os.write_uint32(11, self.BEJCALDILNC)?;
+        }
+        if self.PKKLPBBNNCE != 0 {
+            os.write_uint32(10, self.PKKLPBBNNCE)?;
         }
         if self.battle_id != 0 {
-            os.write_uint32(15, self.battle_id)?;
+            os.write_uint32(13, self.battle_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.PKKLPBBNNCE = 0;
         self.BEJCALDILNC = 0;
+        self.PKKLPBBNNCE = 0;
         self.battle_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FantasticStoryActivityBattleEndScNotify {
         static instance: FantasticStoryActivityBattleEndScNotify = FantasticStoryActivityBattleEndScNotify {
-            PKKLPBBNNCE: 0,
             BEJCALDILNC: 0,
+            PKKLPBBNNCE: 0,
             battle_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FantasticStoryActivityBattleEndScNot
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-FantasticStoryActivityBattleEndScNotify.proto\"\x8a\x01\n'FantasticSt\
-    oryActivityBattleEndScNotify\x12\x20\n\x0bPKKLPBBNNCE\x18\x05\x20\x01(\r\
-    R\x0bPKKLPBBNNCE\x12\x20\n\x0bBEJCALDILNC\x18\t\x20\x01(\rR\x0bBEJCALDIL\
-    NC\x12\x1b\n\tbattle_id\x18\x0f\x20\x01(\rR\x08battleIdb\x06proto3\
+    oryActivityBattleEndScNotify\x12\x20\n\x0bBEJCALDILNC\x18\x0b\x20\x01(\r\
+    R\x0bBEJCALDILNC\x12\x20\n\x0bPKKLPBBNNCE\x18\n\x20\x01(\rR\x0bPKKLPBBNN\
+    CE\x12\x1b\n\tbattle_id\x18\r\x20\x01(\rR\x08battleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

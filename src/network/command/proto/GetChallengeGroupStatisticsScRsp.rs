@@ -50,7 +50,7 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 2;
+    // .ChallengeStatistics challenge_default = 12;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
         match self.LCDJBAAKIHB {
@@ -99,7 +99,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 8;
+    // .ChallengeStoryStatistics challenge_story = 1;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.LCDJBAAKIHB {
@@ -148,7 +148,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 13;
+    // .ChallengeBossStatistics challenge_boss = 10;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
         match self.LCDJBAAKIHB {
@@ -250,19 +250,19 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.group_id = is.read_uint32()?;
                 },
-                18 => {
+                98 => {
                     self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(is.read_message()?));
                 },
-                66 => {
+                10 => {
                     self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(is.read_message()?));
                 },
-                106 => {
+                82 => {
                     self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
@@ -278,10 +278,10 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
         }
         if let ::std::option::Option::Some(ref v) = self.LCDJBAAKIHB {
             match v {
@@ -306,21 +306,21 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(15, self.group_id)?;
+            os.write_uint32(5, self.group_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.LCDJBAAKIHB {
             match v {
                 &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -413,12 +413,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x1dChallengeBossStatistics\
     .proto\x1a\x19ChallengeStatistics.proto\x1a\x1eChallengeStoryStatistics.\
     proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x18\n\x07retco\
-    de\x18\x01\x20\x01(\rR\x07retcode\x12\x19\n\x08group_id\x18\x0f\x20\x01(\
-    \rR\x07groupId\x12C\n\x11challenge_default\x18\x02\x20\x01(\x0b2\x14.Cha\
-    llengeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\
-    \x08\x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\
-    \x12A\n\x0echallenge_boss\x18\r\x20\x01(\x0b2\x18.ChallengeBossStatistic\
-    sH\0R\rchallengeBossB\r\n\x0bLCDJBAAKIHBb\x06proto3\
+    de\x18\t\x20\x01(\rR\x07retcode\x12\x19\n\x08group_id\x18\x05\x20\x01(\r\
+    R\x07groupId\x12C\n\x11challenge_default\x18\x0c\x20\x01(\x0b2\x14.Chall\
+    engeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x01\
+    \x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\x12A\n\
+    \x0echallenge_boss\x18\n\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\r\
+    challengeBossB\r\n\x0bLCDJBAAKIHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

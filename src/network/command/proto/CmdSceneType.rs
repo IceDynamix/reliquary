@@ -29,170 +29,170 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSceneType {
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneTypeNone)
     CmdSceneTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateMechanismBarScNotify)
-    CmdUpdateMechanismBarScNotify = 1468,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSpringRefreshScRsp)
-    CmdSpringRefreshScRsp = 1443,
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillCostMpScRsp)
-    CmdSceneCastSkillCostMpScRsp = 1483,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEnterStageScRsp)
-    CmdSceneEnterStageScRsp = 1421,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneReviveAfterRebattleScRsp)
-    CmdSceneReviveAfterRebattleScRsp = 1463,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetUnlockTeleportScRsp)
-    CmdGetUnlockTeleportScRsp = 1418,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeactivateFarmElementCsReq)
-    CmdDeactivateFarmElementCsReq = 1445,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillScRsp)
-    CmdSceneCastSkillScRsp = 1448,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUnlockTeleportNotify)
-    CmdUnlockTeleportNotify = 1466,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReturnLastTownScRsp)
-    CmdReturnLastTownScRsp = 1477,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdActivateFarmElementScRsp)
-    CmdActivateFarmElementScRsp = 1420,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateGroupPropertyCsReq)
-    CmdUpdateGroupPropertyCsReq = 1461,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneGroupRefreshScNotify)
-    CmdSceneGroupRefreshScNotify = 1412,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeCsReq)
-    CmdGroupStateChangeCsReq = 1428,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRecoverAllLineupScRsp)
-    CmdRecoverAllLineupScRsp = 1475,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdStartCocoonStageCsReq)
-    CmdStartCocoonStageCsReq = 1491,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEntityBindPropCsReq)
-    CmdEntityBindPropCsReq = 1457,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSectionCsReq)
-    CmdEnterSectionCsReq = 1411,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdInteractPropCsReq)
-    CmdInteractPropCsReq = 1431,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetClientPausedCsReq)
-    CmdSetClientPausedCsReq = 1498,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetGroupCustomSaveDataScRsp)
-    CmdSetGroupCustomSaveDataScRsp = 1453,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReturnLastTownCsReq)
-    CmdReturnLastTownCsReq = 1442,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRefreshTriggerByClientScRsp)
-    CmdRefreshTriggerByClientScRsp = 1488,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityTeleportCsReq)
-    CmdSceneEntityTeleportCsReq = 1490,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdStartCocoonStageScRsp)
-    CmdStartCocoonStageScRsp = 1424,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateGroupPropertyScRsp)
-    CmdUpdateGroupPropertyScRsp = 1459,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterRecoverCsReq)
-    CmdGameplayCounterRecoverCsReq = 1441,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReEnterLastElementStageCsReq)
-    CmdReEnterLastElementStageCsReq = 1427,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEnterStageCsReq)
-    CmdSceneEnterStageCsReq = 1458,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetCurSceneInfoScRsp)
-    CmdGetCurSceneInfoScRsp = 1452,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneUpdatePositionVersionNotify)
-    CmdSceneUpdatePositionVersionNotify = 1485,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetCurInteractEntityCsReq)
-    CmdSetCurInteractEntityCsReq = 1484,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetClientPausedScRsp)
-    CmdSetClientPausedScRsp = 1464,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSyncEntityBuffChangeListScNotify)
-    CmdSyncEntityBuffChangeListScNotify = 1416,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneCsReq)
-    CmdEnterSceneCsReq = 1469,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeScRsp)
-    CmdGroupStateChangeScRsp = 1415,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetCurInteractEntityScRsp)
-    CmdSetCurInteractEntityScRsp = 1437,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnteredSceneChangeScNotify)
-    CmdEnteredSceneChangeScNotify = 1419,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetEnteredSceneScRsp)
-    CmdGetEnteredSceneScRsp = 1450,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeleteSummonUnitCsReq)
-    CmdDeleteSummonUnitCsReq = 1405,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSpringRefreshCsReq)
-    CmdSpringRefreshCsReq = 1439,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterCountDownScRsp)
-    CmdGameplayCounterCountDownScRsp = 1467,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeactivateFarmElementScRsp)
-    CmdDeactivateFarmElementScRsp = 1413,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdOpenChestScNotify)
-    CmdOpenChestScNotify = 1444,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeleteSummonUnitScRsp)
-    CmdDeleteSummonUnitScRsp = 1482,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSyncServerSceneChangeNotify)
-    CmdSyncServerSceneChangeNotify = 1470,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdLastSpringRefreshTimeNotify)
-    CmdLastSpringRefreshTimeNotify = 1433,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveScRsp)
-    CmdSceneEntityMoveScRsp = 1432,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRefreshTriggerByClientScNotify)
-    CmdRefreshTriggerByClientScNotify = 1438,
+    CmdSceneCastSkillCostMpScRsp = 1473,
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterCountDownCsReq)
-    CmdGameplayCounterCountDownCsReq = 1473,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdTrainWorldIdChangeScNotify)
-    CmdTrainWorldIdChangeScNotify = 1492,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRecoverAllLineupCsReq)
-    CmdRecoverAllLineupCsReq = 1430,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillCostMpCsReq)
-    CmdSceneCastSkillCostMpCsReq = 1446,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneScRsp)
-    CmdEnterSceneScRsp = 1449,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterRecoverScRsp)
-    CmdGameplayCounterRecoverScRsp = 1462,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneReviveAfterRebattleCsReq)
-    CmdSceneReviveAfterRebattleCsReq = 1429,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUnlockedAreaMapScNotify)
-    CmdUnlockedAreaMapScNotify = 1447,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdChangePropTimelineInfoCsReq)
-    CmdChangePropTimelineInfoCsReq = 1422,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetSceneMapInfoScRsp)
-    CmdGetSceneMapInfoScRsp = 1479,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSavePointsInfoNotify)
-    CmdSavePointsInfoNotify = 1451,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetUnlockTeleportCsReq)
-    CmdGetUnlockTeleportCsReq = 1404,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateFloorSavedValueNotify)
-    CmdUpdateFloorSavedValueNotify = 1426,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetSceneMapInfoCsReq)
-    CmdGetSceneMapInfoCsReq = 1497,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneByServerScNotify)
-    CmdEnterSceneByServerScNotify = 1403,
+    CmdGameplayCounterCountDownCsReq = 1451,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRecoverAllLineupScRsp)
+    CmdRecoverAllLineupScRsp = 1469,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReturnLastTownScRsp)
+    CmdReturnLastTownScRsp = 1436,
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReEnterLastElementStageScRsp)
-    CmdReEnterLastElementStageScRsp = 1474,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSectionScRsp)
-    CmdEnterSectionScRsp = 1493,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeScNotify)
-    CmdGroupStateChangeScNotify = 1455,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetGroupCustomSaveDataCsReq)
-    CmdSetGroupCustomSaveDataCsReq = 1401,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillMpUpdateScNotify)
-    CmdSceneCastSkillMpUpdateScNotify = 1460,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdChangePropTimelineInfoScRsp)
-    CmdChangePropTimelineInfoScRsp = 1456,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterUpdateScNotify)
-    CmdGameplayCounterUpdateScNotify = 1496,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillCsReq)
-    CmdSceneCastSkillCsReq = 1476,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdInteractPropScRsp)
-    CmdInteractPropScRsp = 1440,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetEnteredSceneCsReq)
-    CmdGetEnteredSceneCsReq = 1480,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveCsReq)
-    CmdSceneEntityMoveCsReq = 1495,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetCurSceneInfoCsReq)
-    CmdGetCurSceneInfoCsReq = 1471,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityTeleportScRsp)
-    CmdSceneEntityTeleportScRsp = 1417,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveScNotify)
-    CmdSceneEntityMoveScNotify = 1472,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdActivateFarmElementCsReq)
-    CmdActivateFarmElementCsReq = 1478,
+    CmdReEnterLastElementStageScRsp = 1433,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetCurInteractEntityScRsp)
+    CmdSetCurInteractEntityScRsp = 1434,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetClientPausedCsReq)
+    CmdSetClientPausedCsReq = 1440,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUnlockTeleportNotify)
+    CmdUnlockTeleportNotify = 1488,
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRefreshTriggerByClientCsReq)
-    CmdRefreshTriggerByClientCsReq = 1489,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdScenePlaneEventScNotify)
-    CmdScenePlaneEventScNotify = 1410,
+    CmdRefreshTriggerByClientCsReq = 1458,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSpringRefreshCsReq)
+    CmdSpringRefreshCsReq = 1438,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRecoverAllLineupCsReq)
+    CmdRecoverAllLineupCsReq = 1445,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetClientPausedScRsp)
+    CmdSetClientPausedScRsp = 1418,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetCurSceneInfoCsReq)
+    CmdGetCurSceneInfoCsReq = 1470,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetUnlockTeleportScRsp)
+    CmdGetUnlockTeleportScRsp = 1483,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneReviveAfterRebattleScRsp)
+    CmdSceneReviveAfterRebattleScRsp = 1431,
     // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEntityBindPropScRsp)
-    CmdEntityBindPropScRsp = 1407,
+    CmdEntityBindPropScRsp = 1422,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdChangePropTimelineInfoCsReq)
+    CmdChangePropTimelineInfoCsReq = 1454,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneGroupRefreshScNotify)
+    CmdSceneGroupRefreshScNotify = 1479,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetSceneMapInfoCsReq)
+    CmdGetSceneMapInfoCsReq = 1414,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRefreshTriggerByClientScRsp)
+    CmdRefreshTriggerByClientScRsp = 1446,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEnterStageCsReq)
+    CmdSceneEnterStageCsReq = 1487,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeleteSummonUnitCsReq)
+    CmdDeleteSummonUnitCsReq = 1492,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEntityBindPropCsReq)
+    CmdEntityBindPropCsReq = 1423,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneScRsp)
+    CmdEnterSceneScRsp = 1443,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetUnlockTeleportCsReq)
+    CmdGetUnlockTeleportCsReq = 1430,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdLastSpringRefreshTimeNotify)
+    CmdLastSpringRefreshTimeNotify = 1468,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetGroupCustomSaveDataScRsp)
+    CmdSetGroupCustomSaveDataScRsp = 1437,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReEnterLastElementStageCsReq)
+    CmdReEnterLastElementStageCsReq = 1453,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeleteSummonUnitScRsp)
+    CmdDeleteSummonUnitScRsp = 1410,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSectionCsReq)
+    CmdEnterSectionCsReq = 1444,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveScRsp)
+    CmdSceneEntityMoveScRsp = 1491,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdRefreshTriggerByClientScNotify)
+    CmdRefreshTriggerByClientScNotify = 1442,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetCurInteractEntityCsReq)
+    CmdSetCurInteractEntityCsReq = 1478,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeCsReq)
+    CmdGroupStateChangeCsReq = 1461,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSpringRefreshScRsp)
+    CmdSpringRefreshScRsp = 1452,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdOpenChestScNotify)
+    CmdOpenChestScNotify = 1432,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillMpUpdateScNotify)
+    CmdSceneCastSkillMpUpdateScNotify = 1498,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneCsReq)
+    CmdEnterSceneCsReq = 1425,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillScRsp)
+    CmdSceneCastSkillScRsp = 1421,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetSceneMapInfoScRsp)
+    CmdGetSceneMapInfoScRsp = 1486,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillCsReq)
+    CmdSceneCastSkillCsReq = 1427,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityTeleportCsReq)
+    CmdSceneEntityTeleportCsReq = 1407,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSyncEntityBuffChangeListScNotify)
+    CmdSyncEntityBuffChangeListScNotify = 1405,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdStartCocoonStageCsReq)
+    CmdStartCocoonStageCsReq = 1424,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdInteractPropScRsp)
+    CmdInteractPropScRsp = 1439,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeScRsp)
+    CmdGroupStateChangeScRsp = 1408,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateGroupPropertyCsReq)
+    CmdUpdateGroupPropertyCsReq = 1429,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterUpdateScNotify)
+    CmdGameplayCounterUpdateScNotify = 1401,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdActivateFarmElementScRsp)
+    CmdActivateFarmElementScRsp = 1463,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGroupStateChangeScNotify)
+    CmdGroupStateChangeScNotify = 1497,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetEnteredSceneScRsp)
+    CmdGetEnteredSceneScRsp = 1417,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetEnteredSceneCsReq)
+    CmdGetEnteredSceneCsReq = 1466,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdTrainWorldIdChangeScNotify)
+    CmdTrainWorldIdChangeScNotify = 1415,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUnlockedAreaMapScNotify)
+    CmdUnlockedAreaMapScNotify = 1404,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnteredSceneChangeScNotify)
+    CmdEnteredSceneChangeScNotify = 1500,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdReturnLastTownCsReq)
+    CmdReturnLastTownCsReq = 1494,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSectionScRsp)
+    CmdEnterSectionScRsp = 1449,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSetGroupCustomSaveDataCsReq)
+    CmdSetGroupCustomSaveDataCsReq = 1489,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityTeleportScRsp)
+    CmdSceneEntityTeleportScRsp = 1448,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneReviveAfterRebattleCsReq)
+    CmdSceneReviveAfterRebattleCsReq = 1406,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGetCurSceneInfoScRsp)
+    CmdGetCurSceneInfoScRsp = 1459,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterCountDownScRsp)
+    CmdGameplayCounterCountDownScRsp = 1456,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSavePointsInfoNotify)
+    CmdSavePointsInfoNotify = 1403,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateFloorSavedValueNotify)
+    CmdUpdateFloorSavedValueNotify = 1411,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdStartCocoonStageScRsp)
+    CmdStartCocoonStageScRsp = 1428,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterRecoverScRsp)
+    CmdGameplayCounterRecoverScRsp = 1499,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveCsReq)
+    CmdSceneEntityMoveCsReq = 1420,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneUpdatePositionVersionNotify)
+    CmdSceneUpdatePositionVersionNotify = 1402,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdChangePropTimelineInfoScRsp)
+    CmdChangePropTimelineInfoScRsp = 1477,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEntityMoveScNotify)
+    CmdSceneEntityMoveScNotify = 1480,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeactivateFarmElementCsReq)
+    CmdDeactivateFarmElementCsReq = 1419,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdScenePlaneEventScNotify)
+    CmdScenePlaneEventScNotify = 1462,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneEnterStageScRsp)
+    CmdSceneEnterStageScRsp = 1409,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdInteractPropCsReq)
+    CmdInteractPropCsReq = 1467,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateGroupPropertyScRsp)
+    CmdUpdateGroupPropertyScRsp = 1413,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdDeactivateFarmElementScRsp)
+    CmdDeactivateFarmElementScRsp = 1455,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdGameplayCounterRecoverCsReq)
+    CmdGameplayCounterRecoverCsReq = 1482,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdUpdateMechanismBarScNotify)
+    CmdUpdateMechanismBarScNotify = 1490,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSceneCastSkillCostMpCsReq)
+    CmdSceneCastSkillCostMpCsReq = 1474,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdActivateFarmElementCsReq)
+    CmdActivateFarmElementCsReq = 1471,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdSyncServerSceneChangeNotify)
+    CmdSyncServerSceneChangeNotify = 1475,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.CmdEnterSceneByServerScNotify)
+    CmdEnterSceneByServerScNotify = 1412,
 }
 
 impl ::protobuf::Enum for CmdSceneType {
@@ -205,88 +205,88 @@ impl ::protobuf::Enum for CmdSceneType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSceneType> {
         match value {
             0 => ::std::option::Option::Some(CmdSceneType::CmdSceneTypeNone),
-            1468 => ::std::option::Option::Some(CmdSceneType::CmdUpdateMechanismBarScNotify),
-            1443 => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshScRsp),
-            1483 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpScRsp),
-            1421 => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageScRsp),
-            1463 => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleScRsp),
-            1418 => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportScRsp),
-            1445 => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementCsReq),
-            1448 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillScRsp),
-            1466 => ::std::option::Option::Some(CmdSceneType::CmdUnlockTeleportNotify),
-            1477 => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownScRsp),
-            1420 => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementScRsp),
-            1461 => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyCsReq),
-            1412 => ::std::option::Option::Some(CmdSceneType::CmdSceneGroupRefreshScNotify),
-            1428 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeCsReq),
-            1475 => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupScRsp),
-            1491 => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageCsReq),
-            1457 => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropCsReq),
-            1411 => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionCsReq),
-            1431 => ::std::option::Option::Some(CmdSceneType::CmdInteractPropCsReq),
-            1498 => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedCsReq),
-            1453 => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataScRsp),
-            1442 => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownCsReq),
-            1488 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScRsp),
-            1490 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportCsReq),
-            1424 => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageScRsp),
-            1459 => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyScRsp),
-            1441 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverCsReq),
-            1427 => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageCsReq),
-            1458 => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageCsReq),
-            1452 => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoScRsp),
-            1485 => ::std::option::Option::Some(CmdSceneType::CmdSceneUpdatePositionVersionNotify),
-            1484 => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityCsReq),
-            1464 => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedScRsp),
-            1416 => ::std::option::Option::Some(CmdSceneType::CmdSyncEntityBuffChangeListScNotify),
-            1469 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneCsReq),
-            1415 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScRsp),
-            1437 => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityScRsp),
-            1419 => ::std::option::Option::Some(CmdSceneType::CmdEnteredSceneChangeScNotify),
-            1450 => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneScRsp),
-            1405 => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitCsReq),
-            1439 => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshCsReq),
-            1467 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownScRsp),
-            1413 => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementScRsp),
-            1444 => ::std::option::Option::Some(CmdSceneType::CmdOpenChestScNotify),
-            1482 => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitScRsp),
-            1470 => ::std::option::Option::Some(CmdSceneType::CmdSyncServerSceneChangeNotify),
-            1433 => ::std::option::Option::Some(CmdSceneType::CmdLastSpringRefreshTimeNotify),
-            1432 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScRsp),
-            1438 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScNotify),
-            1473 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownCsReq),
-            1492 => ::std::option::Option::Some(CmdSceneType::CmdTrainWorldIdChangeScNotify),
-            1430 => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupCsReq),
-            1446 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpCsReq),
-            1449 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneScRsp),
-            1462 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverScRsp),
-            1429 => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleCsReq),
-            1447 => ::std::option::Option::Some(CmdSceneType::CmdUnlockedAreaMapScNotify),
-            1422 => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoCsReq),
-            1479 => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoScRsp),
-            1451 => ::std::option::Option::Some(CmdSceneType::CmdSavePointsInfoNotify),
-            1404 => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportCsReq),
-            1426 => ::std::option::Option::Some(CmdSceneType::CmdUpdateFloorSavedValueNotify),
-            1497 => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoCsReq),
-            1403 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneByServerScNotify),
-            1474 => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageScRsp),
-            1493 => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionScRsp),
-            1455 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScNotify),
-            1401 => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataCsReq),
-            1460 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillMpUpdateScNotify),
-            1456 => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoScRsp),
-            1496 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterUpdateScNotify),
-            1476 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCsReq),
-            1440 => ::std::option::Option::Some(CmdSceneType::CmdInteractPropScRsp),
-            1480 => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneCsReq),
-            1495 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveCsReq),
-            1471 => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoCsReq),
-            1417 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportScRsp),
-            1472 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScNotify),
-            1478 => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementCsReq),
-            1489 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientCsReq),
-            1410 => ::std::option::Option::Some(CmdSceneType::CmdScenePlaneEventScNotify),
-            1407 => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropScRsp),
+            1473 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpScRsp),
+            1451 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownCsReq),
+            1469 => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupScRsp),
+            1436 => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownScRsp),
+            1433 => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageScRsp),
+            1434 => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityScRsp),
+            1440 => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedCsReq),
+            1488 => ::std::option::Option::Some(CmdSceneType::CmdUnlockTeleportNotify),
+            1458 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientCsReq),
+            1438 => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshCsReq),
+            1445 => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupCsReq),
+            1418 => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedScRsp),
+            1470 => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoCsReq),
+            1483 => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportScRsp),
+            1431 => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleScRsp),
+            1422 => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropScRsp),
+            1454 => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoCsReq),
+            1479 => ::std::option::Option::Some(CmdSceneType::CmdSceneGroupRefreshScNotify),
+            1414 => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoCsReq),
+            1446 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScRsp),
+            1487 => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageCsReq),
+            1492 => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitCsReq),
+            1423 => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropCsReq),
+            1443 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneScRsp),
+            1430 => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportCsReq),
+            1468 => ::std::option::Option::Some(CmdSceneType::CmdLastSpringRefreshTimeNotify),
+            1437 => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataScRsp),
+            1453 => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageCsReq),
+            1410 => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitScRsp),
+            1444 => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionCsReq),
+            1491 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScRsp),
+            1442 => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScNotify),
+            1478 => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityCsReq),
+            1461 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeCsReq),
+            1452 => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshScRsp),
+            1432 => ::std::option::Option::Some(CmdSceneType::CmdOpenChestScNotify),
+            1498 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillMpUpdateScNotify),
+            1425 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneCsReq),
+            1421 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillScRsp),
+            1486 => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoScRsp),
+            1427 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCsReq),
+            1407 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportCsReq),
+            1405 => ::std::option::Option::Some(CmdSceneType::CmdSyncEntityBuffChangeListScNotify),
+            1424 => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageCsReq),
+            1439 => ::std::option::Option::Some(CmdSceneType::CmdInteractPropScRsp),
+            1408 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScRsp),
+            1429 => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyCsReq),
+            1401 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterUpdateScNotify),
+            1463 => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementScRsp),
+            1497 => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScNotify),
+            1417 => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneScRsp),
+            1466 => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneCsReq),
+            1415 => ::std::option::Option::Some(CmdSceneType::CmdTrainWorldIdChangeScNotify),
+            1404 => ::std::option::Option::Some(CmdSceneType::CmdUnlockedAreaMapScNotify),
+            1500 => ::std::option::Option::Some(CmdSceneType::CmdEnteredSceneChangeScNotify),
+            1494 => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownCsReq),
+            1449 => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionScRsp),
+            1489 => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataCsReq),
+            1448 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportScRsp),
+            1406 => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleCsReq),
+            1459 => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoScRsp),
+            1456 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownScRsp),
+            1403 => ::std::option::Option::Some(CmdSceneType::CmdSavePointsInfoNotify),
+            1411 => ::std::option::Option::Some(CmdSceneType::CmdUpdateFloorSavedValueNotify),
+            1428 => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageScRsp),
+            1499 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverScRsp),
+            1420 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveCsReq),
+            1402 => ::std::option::Option::Some(CmdSceneType::CmdSceneUpdatePositionVersionNotify),
+            1477 => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoScRsp),
+            1480 => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScNotify),
+            1419 => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementCsReq),
+            1462 => ::std::option::Option::Some(CmdSceneType::CmdScenePlaneEventScNotify),
+            1409 => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageScRsp),
+            1467 => ::std::option::Option::Some(CmdSceneType::CmdInteractPropCsReq),
+            1413 => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyScRsp),
+            1455 => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementScRsp),
+            1482 => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverCsReq),
+            1490 => ::std::option::Option::Some(CmdSceneType::CmdUpdateMechanismBarScNotify),
+            1474 => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpCsReq),
+            1471 => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementCsReq),
+            1475 => ::std::option::Option::Some(CmdSceneType::CmdSyncServerSceneChangeNotify),
+            1412 => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneByServerScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -294,176 +294,176 @@ impl ::protobuf::Enum for CmdSceneType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSceneType> {
         match str {
             "CmdSceneTypeNone" => ::std::option::Option::Some(CmdSceneType::CmdSceneTypeNone),
-            "CmdUpdateMechanismBarScNotify" => ::std::option::Option::Some(CmdSceneType::CmdUpdateMechanismBarScNotify),
-            "CmdSpringRefreshScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshScRsp),
             "CmdSceneCastSkillCostMpScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpScRsp),
-            "CmdSceneEnterStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageScRsp),
-            "CmdSceneReviveAfterRebattleScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleScRsp),
-            "CmdGetUnlockTeleportScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportScRsp),
-            "CmdDeactivateFarmElementCsReq" => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementCsReq),
-            "CmdSceneCastSkillScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillScRsp),
-            "CmdUnlockTeleportNotify" => ::std::option::Option::Some(CmdSceneType::CmdUnlockTeleportNotify),
-            "CmdReturnLastTownScRsp" => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownScRsp),
-            "CmdActivateFarmElementScRsp" => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementScRsp),
-            "CmdUpdateGroupPropertyCsReq" => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyCsReq),
-            "CmdSceneGroupRefreshScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneGroupRefreshScNotify),
-            "CmdGroupStateChangeCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeCsReq),
+            "CmdGameplayCounterCountDownCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownCsReq),
             "CmdRecoverAllLineupScRsp" => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupScRsp),
-            "CmdStartCocoonStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageCsReq),
-            "CmdEntityBindPropCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropCsReq),
-            "CmdEnterSectionCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionCsReq),
-            "CmdInteractPropCsReq" => ::std::option::Option::Some(CmdSceneType::CmdInteractPropCsReq),
-            "CmdSetClientPausedCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedCsReq),
-            "CmdSetGroupCustomSaveDataScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataScRsp),
-            "CmdReturnLastTownCsReq" => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownCsReq),
-            "CmdRefreshTriggerByClientScRsp" => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScRsp),
-            "CmdSceneEntityTeleportCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportCsReq),
-            "CmdStartCocoonStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageScRsp),
-            "CmdUpdateGroupPropertyScRsp" => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyScRsp),
-            "CmdGameplayCounterRecoverCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverCsReq),
-            "CmdReEnterLastElementStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageCsReq),
-            "CmdSceneEnterStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageCsReq),
-            "CmdGetCurSceneInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoScRsp),
-            "CmdSceneUpdatePositionVersionNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneUpdatePositionVersionNotify),
-            "CmdSetCurInteractEntityCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityCsReq),
-            "CmdSetClientPausedScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedScRsp),
-            "CmdSyncEntityBuffChangeListScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSyncEntityBuffChangeListScNotify),
-            "CmdEnterSceneCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneCsReq),
-            "CmdGroupStateChangeScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScRsp),
+            "CmdReturnLastTownScRsp" => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownScRsp),
+            "CmdReEnterLastElementStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageScRsp),
             "CmdSetCurInteractEntityScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityScRsp),
-            "CmdEnteredSceneChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdEnteredSceneChangeScNotify),
-            "CmdGetEnteredSceneScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneScRsp),
-            "CmdDeleteSummonUnitCsReq" => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitCsReq),
+            "CmdSetClientPausedCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedCsReq),
+            "CmdUnlockTeleportNotify" => ::std::option::Option::Some(CmdSceneType::CmdUnlockTeleportNotify),
+            "CmdRefreshTriggerByClientCsReq" => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientCsReq),
             "CmdSpringRefreshCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshCsReq),
-            "CmdGameplayCounterCountDownScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownScRsp),
-            "CmdDeactivateFarmElementScRsp" => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementScRsp),
-            "CmdOpenChestScNotify" => ::std::option::Option::Some(CmdSceneType::CmdOpenChestScNotify),
-            "CmdDeleteSummonUnitScRsp" => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitScRsp),
-            "CmdSyncServerSceneChangeNotify" => ::std::option::Option::Some(CmdSceneType::CmdSyncServerSceneChangeNotify),
+            "CmdRecoverAllLineupCsReq" => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupCsReq),
+            "CmdSetClientPausedScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSetClientPausedScRsp),
+            "CmdGetCurSceneInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoCsReq),
+            "CmdGetUnlockTeleportScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportScRsp),
+            "CmdSceneReviveAfterRebattleScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleScRsp),
+            "CmdEntityBindPropScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropScRsp),
+            "CmdChangePropTimelineInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoCsReq),
+            "CmdSceneGroupRefreshScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneGroupRefreshScNotify),
+            "CmdGetSceneMapInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoCsReq),
+            "CmdRefreshTriggerByClientScRsp" => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScRsp),
+            "CmdSceneEnterStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageCsReq),
+            "CmdDeleteSummonUnitCsReq" => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitCsReq),
+            "CmdEntityBindPropCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropCsReq),
+            "CmdEnterSceneScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneScRsp),
+            "CmdGetUnlockTeleportCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportCsReq),
             "CmdLastSpringRefreshTimeNotify" => ::std::option::Option::Some(CmdSceneType::CmdLastSpringRefreshTimeNotify),
+            "CmdSetGroupCustomSaveDataScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataScRsp),
+            "CmdReEnterLastElementStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageCsReq),
+            "CmdDeleteSummonUnitScRsp" => ::std::option::Option::Some(CmdSceneType::CmdDeleteSummonUnitScRsp),
+            "CmdEnterSectionCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionCsReq),
             "CmdSceneEntityMoveScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScRsp),
             "CmdRefreshTriggerByClientScNotify" => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientScNotify),
-            "CmdGameplayCounterCountDownCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownCsReq),
-            "CmdTrainWorldIdChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdTrainWorldIdChangeScNotify),
-            "CmdRecoverAllLineupCsReq" => ::std::option::Option::Some(CmdSceneType::CmdRecoverAllLineupCsReq),
-            "CmdSceneCastSkillCostMpCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpCsReq),
-            "CmdEnterSceneScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneScRsp),
-            "CmdGameplayCounterRecoverScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverScRsp),
-            "CmdSceneReviveAfterRebattleCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleCsReq),
-            "CmdUnlockedAreaMapScNotify" => ::std::option::Option::Some(CmdSceneType::CmdUnlockedAreaMapScNotify),
-            "CmdChangePropTimelineInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoCsReq),
-            "CmdGetSceneMapInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoScRsp),
-            "CmdSavePointsInfoNotify" => ::std::option::Option::Some(CmdSceneType::CmdSavePointsInfoNotify),
-            "CmdGetUnlockTeleportCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetUnlockTeleportCsReq),
-            "CmdUpdateFloorSavedValueNotify" => ::std::option::Option::Some(CmdSceneType::CmdUpdateFloorSavedValueNotify),
-            "CmdGetSceneMapInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoCsReq),
-            "CmdEnterSceneByServerScNotify" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneByServerScNotify),
-            "CmdReEnterLastElementStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdReEnterLastElementStageScRsp),
-            "CmdEnterSectionScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionScRsp),
-            "CmdGroupStateChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScNotify),
-            "CmdSetGroupCustomSaveDataCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataCsReq),
+            "CmdSetCurInteractEntityCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetCurInteractEntityCsReq),
+            "CmdGroupStateChangeCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeCsReq),
+            "CmdSpringRefreshScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSpringRefreshScRsp),
+            "CmdOpenChestScNotify" => ::std::option::Option::Some(CmdSceneType::CmdOpenChestScNotify),
             "CmdSceneCastSkillMpUpdateScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillMpUpdateScNotify),
-            "CmdChangePropTimelineInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoScRsp),
-            "CmdGameplayCounterUpdateScNotify" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterUpdateScNotify),
+            "CmdEnterSceneCsReq" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneCsReq),
+            "CmdSceneCastSkillScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillScRsp),
+            "CmdGetSceneMapInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetSceneMapInfoScRsp),
             "CmdSceneCastSkillCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCsReq),
+            "CmdSceneEntityTeleportCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportCsReq),
+            "CmdSyncEntityBuffChangeListScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSyncEntityBuffChangeListScNotify),
+            "CmdStartCocoonStageCsReq" => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageCsReq),
             "CmdInteractPropScRsp" => ::std::option::Option::Some(CmdSceneType::CmdInteractPropScRsp),
+            "CmdGroupStateChangeScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScRsp),
+            "CmdUpdateGroupPropertyCsReq" => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyCsReq),
+            "CmdGameplayCounterUpdateScNotify" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterUpdateScNotify),
+            "CmdActivateFarmElementScRsp" => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementScRsp),
+            "CmdGroupStateChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdGroupStateChangeScNotify),
+            "CmdGetEnteredSceneScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneScRsp),
             "CmdGetEnteredSceneCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetEnteredSceneCsReq),
-            "CmdSceneEntityMoveCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveCsReq),
-            "CmdGetCurSceneInfoCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoCsReq),
+            "CmdTrainWorldIdChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdTrainWorldIdChangeScNotify),
+            "CmdUnlockedAreaMapScNotify" => ::std::option::Option::Some(CmdSceneType::CmdUnlockedAreaMapScNotify),
+            "CmdEnteredSceneChangeScNotify" => ::std::option::Option::Some(CmdSceneType::CmdEnteredSceneChangeScNotify),
+            "CmdReturnLastTownCsReq" => ::std::option::Option::Some(CmdSceneType::CmdReturnLastTownCsReq),
+            "CmdEnterSectionScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEnterSectionScRsp),
+            "CmdSetGroupCustomSaveDataCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSetGroupCustomSaveDataCsReq),
             "CmdSceneEntityTeleportScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityTeleportScRsp),
+            "CmdSceneReviveAfterRebattleCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneReviveAfterRebattleCsReq),
+            "CmdGetCurSceneInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGetCurSceneInfoScRsp),
+            "CmdGameplayCounterCountDownScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterCountDownScRsp),
+            "CmdSavePointsInfoNotify" => ::std::option::Option::Some(CmdSceneType::CmdSavePointsInfoNotify),
+            "CmdUpdateFloorSavedValueNotify" => ::std::option::Option::Some(CmdSceneType::CmdUpdateFloorSavedValueNotify),
+            "CmdStartCocoonStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdStartCocoonStageScRsp),
+            "CmdGameplayCounterRecoverScRsp" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverScRsp),
+            "CmdSceneEntityMoveCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveCsReq),
+            "CmdSceneUpdatePositionVersionNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneUpdatePositionVersionNotify),
+            "CmdChangePropTimelineInfoScRsp" => ::std::option::Option::Some(CmdSceneType::CmdChangePropTimelineInfoScRsp),
             "CmdSceneEntityMoveScNotify" => ::std::option::Option::Some(CmdSceneType::CmdSceneEntityMoveScNotify),
-            "CmdActivateFarmElementCsReq" => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementCsReq),
-            "CmdRefreshTriggerByClientCsReq" => ::std::option::Option::Some(CmdSceneType::CmdRefreshTriggerByClientCsReq),
+            "CmdDeactivateFarmElementCsReq" => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementCsReq),
             "CmdScenePlaneEventScNotify" => ::std::option::Option::Some(CmdSceneType::CmdScenePlaneEventScNotify),
-            "CmdEntityBindPropScRsp" => ::std::option::Option::Some(CmdSceneType::CmdEntityBindPropScRsp),
+            "CmdSceneEnterStageScRsp" => ::std::option::Option::Some(CmdSceneType::CmdSceneEnterStageScRsp),
+            "CmdInteractPropCsReq" => ::std::option::Option::Some(CmdSceneType::CmdInteractPropCsReq),
+            "CmdUpdateGroupPropertyScRsp" => ::std::option::Option::Some(CmdSceneType::CmdUpdateGroupPropertyScRsp),
+            "CmdDeactivateFarmElementScRsp" => ::std::option::Option::Some(CmdSceneType::CmdDeactivateFarmElementScRsp),
+            "CmdGameplayCounterRecoverCsReq" => ::std::option::Option::Some(CmdSceneType::CmdGameplayCounterRecoverCsReq),
+            "CmdUpdateMechanismBarScNotify" => ::std::option::Option::Some(CmdSceneType::CmdUpdateMechanismBarScNotify),
+            "CmdSceneCastSkillCostMpCsReq" => ::std::option::Option::Some(CmdSceneType::CmdSceneCastSkillCostMpCsReq),
+            "CmdActivateFarmElementCsReq" => ::std::option::Option::Some(CmdSceneType::CmdActivateFarmElementCsReq),
+            "CmdSyncServerSceneChangeNotify" => ::std::option::Option::Some(CmdSceneType::CmdSyncServerSceneChangeNotify),
+            "CmdEnterSceneByServerScNotify" => ::std::option::Option::Some(CmdSceneType::CmdEnterSceneByServerScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSceneType] = &[
         CmdSceneType::CmdSceneTypeNone,
-        CmdSceneType::CmdUpdateMechanismBarScNotify,
-        CmdSceneType::CmdSpringRefreshScRsp,
         CmdSceneType::CmdSceneCastSkillCostMpScRsp,
-        CmdSceneType::CmdSceneEnterStageScRsp,
-        CmdSceneType::CmdSceneReviveAfterRebattleScRsp,
-        CmdSceneType::CmdGetUnlockTeleportScRsp,
-        CmdSceneType::CmdDeactivateFarmElementCsReq,
-        CmdSceneType::CmdSceneCastSkillScRsp,
-        CmdSceneType::CmdUnlockTeleportNotify,
-        CmdSceneType::CmdReturnLastTownScRsp,
-        CmdSceneType::CmdActivateFarmElementScRsp,
-        CmdSceneType::CmdUpdateGroupPropertyCsReq,
-        CmdSceneType::CmdSceneGroupRefreshScNotify,
-        CmdSceneType::CmdGroupStateChangeCsReq,
+        CmdSceneType::CmdGameplayCounterCountDownCsReq,
         CmdSceneType::CmdRecoverAllLineupScRsp,
-        CmdSceneType::CmdStartCocoonStageCsReq,
-        CmdSceneType::CmdEntityBindPropCsReq,
-        CmdSceneType::CmdEnterSectionCsReq,
-        CmdSceneType::CmdInteractPropCsReq,
-        CmdSceneType::CmdSetClientPausedCsReq,
-        CmdSceneType::CmdSetGroupCustomSaveDataScRsp,
-        CmdSceneType::CmdReturnLastTownCsReq,
-        CmdSceneType::CmdRefreshTriggerByClientScRsp,
-        CmdSceneType::CmdSceneEntityTeleportCsReq,
-        CmdSceneType::CmdStartCocoonStageScRsp,
-        CmdSceneType::CmdUpdateGroupPropertyScRsp,
-        CmdSceneType::CmdGameplayCounterRecoverCsReq,
-        CmdSceneType::CmdReEnterLastElementStageCsReq,
-        CmdSceneType::CmdSceneEnterStageCsReq,
-        CmdSceneType::CmdGetCurSceneInfoScRsp,
-        CmdSceneType::CmdSceneUpdatePositionVersionNotify,
-        CmdSceneType::CmdSetCurInteractEntityCsReq,
-        CmdSceneType::CmdSetClientPausedScRsp,
-        CmdSceneType::CmdSyncEntityBuffChangeListScNotify,
-        CmdSceneType::CmdEnterSceneCsReq,
-        CmdSceneType::CmdGroupStateChangeScRsp,
+        CmdSceneType::CmdReturnLastTownScRsp,
+        CmdSceneType::CmdReEnterLastElementStageScRsp,
         CmdSceneType::CmdSetCurInteractEntityScRsp,
-        CmdSceneType::CmdEnteredSceneChangeScNotify,
-        CmdSceneType::CmdGetEnteredSceneScRsp,
-        CmdSceneType::CmdDeleteSummonUnitCsReq,
+        CmdSceneType::CmdSetClientPausedCsReq,
+        CmdSceneType::CmdUnlockTeleportNotify,
+        CmdSceneType::CmdRefreshTriggerByClientCsReq,
         CmdSceneType::CmdSpringRefreshCsReq,
-        CmdSceneType::CmdGameplayCounterCountDownScRsp,
-        CmdSceneType::CmdDeactivateFarmElementScRsp,
-        CmdSceneType::CmdOpenChestScNotify,
-        CmdSceneType::CmdDeleteSummonUnitScRsp,
-        CmdSceneType::CmdSyncServerSceneChangeNotify,
+        CmdSceneType::CmdRecoverAllLineupCsReq,
+        CmdSceneType::CmdSetClientPausedScRsp,
+        CmdSceneType::CmdGetCurSceneInfoCsReq,
+        CmdSceneType::CmdGetUnlockTeleportScRsp,
+        CmdSceneType::CmdSceneReviveAfterRebattleScRsp,
+        CmdSceneType::CmdEntityBindPropScRsp,
+        CmdSceneType::CmdChangePropTimelineInfoCsReq,
+        CmdSceneType::CmdSceneGroupRefreshScNotify,
+        CmdSceneType::CmdGetSceneMapInfoCsReq,
+        CmdSceneType::CmdRefreshTriggerByClientScRsp,
+        CmdSceneType::CmdSceneEnterStageCsReq,
+        CmdSceneType::CmdDeleteSummonUnitCsReq,
+        CmdSceneType::CmdEntityBindPropCsReq,
+        CmdSceneType::CmdEnterSceneScRsp,
+        CmdSceneType::CmdGetUnlockTeleportCsReq,
         CmdSceneType::CmdLastSpringRefreshTimeNotify,
+        CmdSceneType::CmdSetGroupCustomSaveDataScRsp,
+        CmdSceneType::CmdReEnterLastElementStageCsReq,
+        CmdSceneType::CmdDeleteSummonUnitScRsp,
+        CmdSceneType::CmdEnterSectionCsReq,
         CmdSceneType::CmdSceneEntityMoveScRsp,
         CmdSceneType::CmdRefreshTriggerByClientScNotify,
-        CmdSceneType::CmdGameplayCounterCountDownCsReq,
-        CmdSceneType::CmdTrainWorldIdChangeScNotify,
-        CmdSceneType::CmdRecoverAllLineupCsReq,
-        CmdSceneType::CmdSceneCastSkillCostMpCsReq,
-        CmdSceneType::CmdEnterSceneScRsp,
-        CmdSceneType::CmdGameplayCounterRecoverScRsp,
-        CmdSceneType::CmdSceneReviveAfterRebattleCsReq,
-        CmdSceneType::CmdUnlockedAreaMapScNotify,
-        CmdSceneType::CmdChangePropTimelineInfoCsReq,
-        CmdSceneType::CmdGetSceneMapInfoScRsp,
-        CmdSceneType::CmdSavePointsInfoNotify,
-        CmdSceneType::CmdGetUnlockTeleportCsReq,
-        CmdSceneType::CmdUpdateFloorSavedValueNotify,
-        CmdSceneType::CmdGetSceneMapInfoCsReq,
-        CmdSceneType::CmdEnterSceneByServerScNotify,
-        CmdSceneType::CmdReEnterLastElementStageScRsp,
-        CmdSceneType::CmdEnterSectionScRsp,
-        CmdSceneType::CmdGroupStateChangeScNotify,
-        CmdSceneType::CmdSetGroupCustomSaveDataCsReq,
+        CmdSceneType::CmdSetCurInteractEntityCsReq,
+        CmdSceneType::CmdGroupStateChangeCsReq,
+        CmdSceneType::CmdSpringRefreshScRsp,
+        CmdSceneType::CmdOpenChestScNotify,
         CmdSceneType::CmdSceneCastSkillMpUpdateScNotify,
-        CmdSceneType::CmdChangePropTimelineInfoScRsp,
-        CmdSceneType::CmdGameplayCounterUpdateScNotify,
+        CmdSceneType::CmdEnterSceneCsReq,
+        CmdSceneType::CmdSceneCastSkillScRsp,
+        CmdSceneType::CmdGetSceneMapInfoScRsp,
         CmdSceneType::CmdSceneCastSkillCsReq,
+        CmdSceneType::CmdSceneEntityTeleportCsReq,
+        CmdSceneType::CmdSyncEntityBuffChangeListScNotify,
+        CmdSceneType::CmdStartCocoonStageCsReq,
         CmdSceneType::CmdInteractPropScRsp,
+        CmdSceneType::CmdGroupStateChangeScRsp,
+        CmdSceneType::CmdUpdateGroupPropertyCsReq,
+        CmdSceneType::CmdGameplayCounterUpdateScNotify,
+        CmdSceneType::CmdActivateFarmElementScRsp,
+        CmdSceneType::CmdGroupStateChangeScNotify,
+        CmdSceneType::CmdGetEnteredSceneScRsp,
         CmdSceneType::CmdGetEnteredSceneCsReq,
-        CmdSceneType::CmdSceneEntityMoveCsReq,
-        CmdSceneType::CmdGetCurSceneInfoCsReq,
+        CmdSceneType::CmdTrainWorldIdChangeScNotify,
+        CmdSceneType::CmdUnlockedAreaMapScNotify,
+        CmdSceneType::CmdEnteredSceneChangeScNotify,
+        CmdSceneType::CmdReturnLastTownCsReq,
+        CmdSceneType::CmdEnterSectionScRsp,
+        CmdSceneType::CmdSetGroupCustomSaveDataCsReq,
         CmdSceneType::CmdSceneEntityTeleportScRsp,
+        CmdSceneType::CmdSceneReviveAfterRebattleCsReq,
+        CmdSceneType::CmdGetCurSceneInfoScRsp,
+        CmdSceneType::CmdGameplayCounterCountDownScRsp,
+        CmdSceneType::CmdSavePointsInfoNotify,
+        CmdSceneType::CmdUpdateFloorSavedValueNotify,
+        CmdSceneType::CmdStartCocoonStageScRsp,
+        CmdSceneType::CmdGameplayCounterRecoverScRsp,
+        CmdSceneType::CmdSceneEntityMoveCsReq,
+        CmdSceneType::CmdSceneUpdatePositionVersionNotify,
+        CmdSceneType::CmdChangePropTimelineInfoScRsp,
         CmdSceneType::CmdSceneEntityMoveScNotify,
-        CmdSceneType::CmdActivateFarmElementCsReq,
-        CmdSceneType::CmdRefreshTriggerByClientCsReq,
+        CmdSceneType::CmdDeactivateFarmElementCsReq,
         CmdSceneType::CmdScenePlaneEventScNotify,
-        CmdSceneType::CmdEntityBindPropScRsp,
+        CmdSceneType::CmdSceneEnterStageScRsp,
+        CmdSceneType::CmdInteractPropCsReq,
+        CmdSceneType::CmdUpdateGroupPropertyScRsp,
+        CmdSceneType::CmdDeactivateFarmElementScRsp,
+        CmdSceneType::CmdGameplayCounterRecoverCsReq,
+        CmdSceneType::CmdUpdateMechanismBarScNotify,
+        CmdSceneType::CmdSceneCastSkillCostMpCsReq,
+        CmdSceneType::CmdActivateFarmElementCsReq,
+        CmdSceneType::CmdSyncServerSceneChangeNotify,
+        CmdSceneType::CmdEnterSceneByServerScNotify,
     ];
 }
 
@@ -476,88 +476,88 @@ impl ::protobuf::EnumFull for CmdSceneType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSceneType::CmdSceneTypeNone => 0,
-            CmdSceneType::CmdUpdateMechanismBarScNotify => 1,
-            CmdSceneType::CmdSpringRefreshScRsp => 2,
-            CmdSceneType::CmdSceneCastSkillCostMpScRsp => 3,
-            CmdSceneType::CmdSceneEnterStageScRsp => 4,
-            CmdSceneType::CmdSceneReviveAfterRebattleScRsp => 5,
-            CmdSceneType::CmdGetUnlockTeleportScRsp => 6,
-            CmdSceneType::CmdDeactivateFarmElementCsReq => 7,
-            CmdSceneType::CmdSceneCastSkillScRsp => 8,
-            CmdSceneType::CmdUnlockTeleportNotify => 9,
-            CmdSceneType::CmdReturnLastTownScRsp => 10,
-            CmdSceneType::CmdActivateFarmElementScRsp => 11,
-            CmdSceneType::CmdUpdateGroupPropertyCsReq => 12,
-            CmdSceneType::CmdSceneGroupRefreshScNotify => 13,
-            CmdSceneType::CmdGroupStateChangeCsReq => 14,
-            CmdSceneType::CmdRecoverAllLineupScRsp => 15,
-            CmdSceneType::CmdStartCocoonStageCsReq => 16,
-            CmdSceneType::CmdEntityBindPropCsReq => 17,
-            CmdSceneType::CmdEnterSectionCsReq => 18,
-            CmdSceneType::CmdInteractPropCsReq => 19,
-            CmdSceneType::CmdSetClientPausedCsReq => 20,
-            CmdSceneType::CmdSetGroupCustomSaveDataScRsp => 21,
-            CmdSceneType::CmdReturnLastTownCsReq => 22,
-            CmdSceneType::CmdRefreshTriggerByClientScRsp => 23,
-            CmdSceneType::CmdSceneEntityTeleportCsReq => 24,
-            CmdSceneType::CmdStartCocoonStageScRsp => 25,
-            CmdSceneType::CmdUpdateGroupPropertyScRsp => 26,
-            CmdSceneType::CmdGameplayCounterRecoverCsReq => 27,
+            CmdSceneType::CmdSceneCastSkillCostMpScRsp => 1,
+            CmdSceneType::CmdGameplayCounterCountDownCsReq => 2,
+            CmdSceneType::CmdRecoverAllLineupScRsp => 3,
+            CmdSceneType::CmdReturnLastTownScRsp => 4,
+            CmdSceneType::CmdReEnterLastElementStageScRsp => 5,
+            CmdSceneType::CmdSetCurInteractEntityScRsp => 6,
+            CmdSceneType::CmdSetClientPausedCsReq => 7,
+            CmdSceneType::CmdUnlockTeleportNotify => 8,
+            CmdSceneType::CmdRefreshTriggerByClientCsReq => 9,
+            CmdSceneType::CmdSpringRefreshCsReq => 10,
+            CmdSceneType::CmdRecoverAllLineupCsReq => 11,
+            CmdSceneType::CmdSetClientPausedScRsp => 12,
+            CmdSceneType::CmdGetCurSceneInfoCsReq => 13,
+            CmdSceneType::CmdGetUnlockTeleportScRsp => 14,
+            CmdSceneType::CmdSceneReviveAfterRebattleScRsp => 15,
+            CmdSceneType::CmdEntityBindPropScRsp => 16,
+            CmdSceneType::CmdChangePropTimelineInfoCsReq => 17,
+            CmdSceneType::CmdSceneGroupRefreshScNotify => 18,
+            CmdSceneType::CmdGetSceneMapInfoCsReq => 19,
+            CmdSceneType::CmdRefreshTriggerByClientScRsp => 20,
+            CmdSceneType::CmdSceneEnterStageCsReq => 21,
+            CmdSceneType::CmdDeleteSummonUnitCsReq => 22,
+            CmdSceneType::CmdEntityBindPropCsReq => 23,
+            CmdSceneType::CmdEnterSceneScRsp => 24,
+            CmdSceneType::CmdGetUnlockTeleportCsReq => 25,
+            CmdSceneType::CmdLastSpringRefreshTimeNotify => 26,
+            CmdSceneType::CmdSetGroupCustomSaveDataScRsp => 27,
             CmdSceneType::CmdReEnterLastElementStageCsReq => 28,
-            CmdSceneType::CmdSceneEnterStageCsReq => 29,
-            CmdSceneType::CmdGetCurSceneInfoScRsp => 30,
-            CmdSceneType::CmdSceneUpdatePositionVersionNotify => 31,
-            CmdSceneType::CmdSetCurInteractEntityCsReq => 32,
-            CmdSceneType::CmdSetClientPausedScRsp => 33,
-            CmdSceneType::CmdSyncEntityBuffChangeListScNotify => 34,
-            CmdSceneType::CmdEnterSceneCsReq => 35,
-            CmdSceneType::CmdGroupStateChangeScRsp => 36,
-            CmdSceneType::CmdSetCurInteractEntityScRsp => 37,
-            CmdSceneType::CmdEnteredSceneChangeScNotify => 38,
-            CmdSceneType::CmdGetEnteredSceneScRsp => 39,
-            CmdSceneType::CmdDeleteSummonUnitCsReq => 40,
-            CmdSceneType::CmdSpringRefreshCsReq => 41,
-            CmdSceneType::CmdGameplayCounterCountDownScRsp => 42,
-            CmdSceneType::CmdDeactivateFarmElementScRsp => 43,
-            CmdSceneType::CmdOpenChestScNotify => 44,
-            CmdSceneType::CmdDeleteSummonUnitScRsp => 45,
-            CmdSceneType::CmdSyncServerSceneChangeNotify => 46,
-            CmdSceneType::CmdLastSpringRefreshTimeNotify => 47,
-            CmdSceneType::CmdSceneEntityMoveScRsp => 48,
-            CmdSceneType::CmdRefreshTriggerByClientScNotify => 49,
-            CmdSceneType::CmdGameplayCounterCountDownCsReq => 50,
-            CmdSceneType::CmdTrainWorldIdChangeScNotify => 51,
-            CmdSceneType::CmdRecoverAllLineupCsReq => 52,
-            CmdSceneType::CmdSceneCastSkillCostMpCsReq => 53,
-            CmdSceneType::CmdEnterSceneScRsp => 54,
-            CmdSceneType::CmdGameplayCounterRecoverScRsp => 55,
-            CmdSceneType::CmdSceneReviveAfterRebattleCsReq => 56,
-            CmdSceneType::CmdUnlockedAreaMapScNotify => 57,
-            CmdSceneType::CmdChangePropTimelineInfoCsReq => 58,
-            CmdSceneType::CmdGetSceneMapInfoScRsp => 59,
-            CmdSceneType::CmdSavePointsInfoNotify => 60,
-            CmdSceneType::CmdGetUnlockTeleportCsReq => 61,
-            CmdSceneType::CmdUpdateFloorSavedValueNotify => 62,
-            CmdSceneType::CmdGetSceneMapInfoCsReq => 63,
-            CmdSceneType::CmdEnterSceneByServerScNotify => 64,
-            CmdSceneType::CmdReEnterLastElementStageScRsp => 65,
-            CmdSceneType::CmdEnterSectionScRsp => 66,
-            CmdSceneType::CmdGroupStateChangeScNotify => 67,
-            CmdSceneType::CmdSetGroupCustomSaveDataCsReq => 68,
-            CmdSceneType::CmdSceneCastSkillMpUpdateScNotify => 69,
-            CmdSceneType::CmdChangePropTimelineInfoScRsp => 70,
-            CmdSceneType::CmdGameplayCounterUpdateScNotify => 71,
-            CmdSceneType::CmdSceneCastSkillCsReq => 72,
-            CmdSceneType::CmdInteractPropScRsp => 73,
-            CmdSceneType::CmdGetEnteredSceneCsReq => 74,
-            CmdSceneType::CmdSceneEntityMoveCsReq => 75,
-            CmdSceneType::CmdGetCurSceneInfoCsReq => 76,
-            CmdSceneType::CmdSceneEntityTeleportScRsp => 77,
-            CmdSceneType::CmdSceneEntityMoveScNotify => 78,
-            CmdSceneType::CmdActivateFarmElementCsReq => 79,
-            CmdSceneType::CmdRefreshTriggerByClientCsReq => 80,
-            CmdSceneType::CmdScenePlaneEventScNotify => 81,
-            CmdSceneType::CmdEntityBindPropScRsp => 82,
+            CmdSceneType::CmdDeleteSummonUnitScRsp => 29,
+            CmdSceneType::CmdEnterSectionCsReq => 30,
+            CmdSceneType::CmdSceneEntityMoveScRsp => 31,
+            CmdSceneType::CmdRefreshTriggerByClientScNotify => 32,
+            CmdSceneType::CmdSetCurInteractEntityCsReq => 33,
+            CmdSceneType::CmdGroupStateChangeCsReq => 34,
+            CmdSceneType::CmdSpringRefreshScRsp => 35,
+            CmdSceneType::CmdOpenChestScNotify => 36,
+            CmdSceneType::CmdSceneCastSkillMpUpdateScNotify => 37,
+            CmdSceneType::CmdEnterSceneCsReq => 38,
+            CmdSceneType::CmdSceneCastSkillScRsp => 39,
+            CmdSceneType::CmdGetSceneMapInfoScRsp => 40,
+            CmdSceneType::CmdSceneCastSkillCsReq => 41,
+            CmdSceneType::CmdSceneEntityTeleportCsReq => 42,
+            CmdSceneType::CmdSyncEntityBuffChangeListScNotify => 43,
+            CmdSceneType::CmdStartCocoonStageCsReq => 44,
+            CmdSceneType::CmdInteractPropScRsp => 45,
+            CmdSceneType::CmdGroupStateChangeScRsp => 46,
+            CmdSceneType::CmdUpdateGroupPropertyCsReq => 47,
+            CmdSceneType::CmdGameplayCounterUpdateScNotify => 48,
+            CmdSceneType::CmdActivateFarmElementScRsp => 49,
+            CmdSceneType::CmdGroupStateChangeScNotify => 50,
+            CmdSceneType::CmdGetEnteredSceneScRsp => 51,
+            CmdSceneType::CmdGetEnteredSceneCsReq => 52,
+            CmdSceneType::CmdTrainWorldIdChangeScNotify => 53,
+            CmdSceneType::CmdUnlockedAreaMapScNotify => 54,
+            CmdSceneType::CmdEnteredSceneChangeScNotify => 55,
+            CmdSceneType::CmdReturnLastTownCsReq => 56,
+            CmdSceneType::CmdEnterSectionScRsp => 57,
+            CmdSceneType::CmdSetGroupCustomSaveDataCsReq => 58,
+            CmdSceneType::CmdSceneEntityTeleportScRsp => 59,
+            CmdSceneType::CmdSceneReviveAfterRebattleCsReq => 60,
+            CmdSceneType::CmdGetCurSceneInfoScRsp => 61,
+            CmdSceneType::CmdGameplayCounterCountDownScRsp => 62,
+            CmdSceneType::CmdSavePointsInfoNotify => 63,
+            CmdSceneType::CmdUpdateFloorSavedValueNotify => 64,
+            CmdSceneType::CmdStartCocoonStageScRsp => 65,
+            CmdSceneType::CmdGameplayCounterRecoverScRsp => 66,
+            CmdSceneType::CmdSceneEntityMoveCsReq => 67,
+            CmdSceneType::CmdSceneUpdatePositionVersionNotify => 68,
+            CmdSceneType::CmdChangePropTimelineInfoScRsp => 69,
+            CmdSceneType::CmdSceneEntityMoveScNotify => 70,
+            CmdSceneType::CmdDeactivateFarmElementCsReq => 71,
+            CmdSceneType::CmdScenePlaneEventScNotify => 72,
+            CmdSceneType::CmdSceneEnterStageScRsp => 73,
+            CmdSceneType::CmdInteractPropCsReq => 74,
+            CmdSceneType::CmdUpdateGroupPropertyScRsp => 75,
+            CmdSceneType::CmdDeactivateFarmElementScRsp => 76,
+            CmdSceneType::CmdGameplayCounterRecoverCsReq => 77,
+            CmdSceneType::CmdUpdateMechanismBarScNotify => 78,
+            CmdSceneType::CmdSceneCastSkillCostMpCsReq => 79,
+            CmdSceneType::CmdActivateFarmElementCsReq => 80,
+            CmdSceneType::CmdSyncServerSceneChangeNotify => 81,
+            CmdSceneType::CmdEnterSceneByServerScNotify => 82,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -577,65 +577,65 @@ impl CmdSceneType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdSceneType.proto*\xc1\x15\n\x0cCmdSceneType\x12\x14\n\x10CmdScen\
-    eTypeNone\x10\0\x12\"\n\x1dCmdUpdateMechanismBarScNotify\x10\xbc\x0b\x12\
-    \x1a\n\x15CmdSpringRefreshScRsp\x10\xa3\x0b\x12!\n\x1cCmdSceneCastSkillC\
-    ostMpScRsp\x10\xcb\x0b\x12\x1c\n\x17CmdSceneEnterStageScRsp\x10\x8d\x0b\
-    \x12%\n\x20CmdSceneReviveAfterRebattleScRsp\x10\xb7\x0b\x12\x1e\n\x19Cmd\
-    GetUnlockTeleportScRsp\x10\x8a\x0b\x12\"\n\x1dCmdDeactivateFarmElementCs\
-    Req\x10\xa5\x0b\x12\x1b\n\x16CmdSceneCastSkillScRsp\x10\xa8\x0b\x12\x1c\
-    \n\x17CmdUnlockTeleportNotify\x10\xba\x0b\x12\x1b\n\x16CmdReturnLastTown\
-    ScRsp\x10\xc5\x0b\x12\x20\n\x1bCmdActivateFarmElementScRsp\x10\x8c\x0b\
-    \x12\x20\n\x1bCmdUpdateGroupPropertyCsReq\x10\xb5\x0b\x12!\n\x1cCmdScene\
-    GroupRefreshScNotify\x10\x84\x0b\x12\x1d\n\x18CmdGroupStateChangeCsReq\
-    \x10\x94\x0b\x12\x1d\n\x18CmdRecoverAllLineupScRsp\x10\xc3\x0b\x12\x1d\n\
-    \x18CmdStartCocoonStageCsReq\x10\xd3\x0b\x12\x1b\n\x16CmdEntityBindPropC\
-    sReq\x10\xb1\x0b\x12\x19\n\x14CmdEnterSectionCsReq\x10\x83\x0b\x12\x19\n\
-    \x14CmdInteractPropCsReq\x10\x97\x0b\x12\x1c\n\x17CmdSetClientPausedCsRe\
-    q\x10\xda\x0b\x12#\n\x1eCmdSetGroupCustomSaveDataScRsp\x10\xad\x0b\x12\
-    \x1b\n\x16CmdReturnLastTownCsReq\x10\xa2\x0b\x12#\n\x1eCmdRefreshTrigger\
-    ByClientScRsp\x10\xd0\x0b\x12\x20\n\x1bCmdSceneEntityTeleportCsReq\x10\
-    \xd2\x0b\x12\x1d\n\x18CmdStartCocoonStageScRsp\x10\x90\x0b\x12\x20\n\x1b\
-    CmdUpdateGroupPropertyScRsp\x10\xb3\x0b\x12#\n\x1eCmdGameplayCounterReco\
-    verCsReq\x10\xa1\x0b\x12$\n\x1fCmdReEnterLastElementStageCsReq\x10\x93\
-    \x0b\x12\x1c\n\x17CmdSceneEnterStageCsReq\x10\xb2\x0b\x12\x1c\n\x17CmdGe\
-    tCurSceneInfoScRsp\x10\xac\x0b\x12(\n#CmdSceneUpdatePositionVersionNotif\
-    y\x10\xcd\x0b\x12!\n\x1cCmdSetCurInteractEntityCsReq\x10\xcc\x0b\x12\x1c\
-    \n\x17CmdSetClientPausedScRsp\x10\xb8\x0b\x12(\n#CmdSyncEntityBuffChange\
-    ListScNotify\x10\x88\x0b\x12\x17\n\x12CmdEnterSceneCsReq\x10\xbd\x0b\x12\
-    \x1d\n\x18CmdGroupStateChangeScRsp\x10\x87\x0b\x12!\n\x1cCmdSetCurIntera\
-    ctEntityScRsp\x10\x9d\x0b\x12\"\n\x1dCmdEnteredSceneChangeScNotify\x10\
-    \x8b\x0b\x12\x1c\n\x17CmdGetEnteredSceneScRsp\x10\xaa\x0b\x12\x1d\n\x18C\
-    mdDeleteSummonUnitCsReq\x10\xfd\n\x12\x1a\n\x15CmdSpringRefreshCsReq\x10\
-    \x9f\x0b\x12%\n\x20CmdGameplayCounterCountDownScRsp\x10\xbb\x0b\x12\"\n\
-    \x1dCmdDeactivateFarmElementScRsp\x10\x85\x0b\x12\x19\n\x14CmdOpenChestS\
-    cNotify\x10\xa4\x0b\x12\x1d\n\x18CmdDeleteSummonUnitScRsp\x10\xca\x0b\
-    \x12#\n\x1eCmdSyncServerSceneChangeNotify\x10\xbe\x0b\x12#\n\x1eCmdLastS\
-    pringRefreshTimeNotify\x10\x99\x0b\x12\x1c\n\x17CmdSceneEntityMoveScRsp\
-    \x10\x98\x0b\x12&\n!CmdRefreshTriggerByClientScNotify\x10\x9e\x0b\x12%\n\
-    \x20CmdGameplayCounterCountDownCsReq\x10\xc1\x0b\x12\"\n\x1dCmdTrainWorl\
-    dIdChangeScNotify\x10\xd4\x0b\x12\x1d\n\x18CmdRecoverAllLineupCsReq\x10\
-    \x96\x0b\x12!\n\x1cCmdSceneCastSkillCostMpCsReq\x10\xa6\x0b\x12\x17\n\
-    \x12CmdEnterSceneScRsp\x10\xa9\x0b\x12#\n\x1eCmdGameplayCounterRecoverSc\
-    Rsp\x10\xb6\x0b\x12%\n\x20CmdSceneReviveAfterRebattleCsReq\x10\x95\x0b\
-    \x12\x1f\n\x1aCmdUnlockedAreaMapScNotify\x10\xa7\x0b\x12#\n\x1eCmdChange\
-    PropTimelineInfoCsReq\x10\x8e\x0b\x12\x1c\n\x17CmdGetSceneMapInfoScRsp\
-    \x10\xc7\x0b\x12\x1c\n\x17CmdSavePointsInfoNotify\x10\xab\x0b\x12\x1e\n\
-    \x19CmdGetUnlockTeleportCsReq\x10\xfc\n\x12#\n\x1eCmdUpdateFloorSavedVal\
-    ueNotify\x10\x92\x0b\x12\x1c\n\x17CmdGetSceneMapInfoCsReq\x10\xd9\x0b\
-    \x12\"\n\x1dCmdEnterSceneByServerScNotify\x10\xfb\n\x12$\n\x1fCmdReEnter\
-    LastElementStageScRsp\x10\xc2\x0b\x12\x19\n\x14CmdEnterSectionScRsp\x10\
-    \xd5\x0b\x12\x20\n\x1bCmdGroupStateChangeScNotify\x10\xaf\x0b\x12#\n\x1e\
-    CmdSetGroupCustomSaveDataCsReq\x10\xf9\n\x12&\n!CmdSceneCastSkillMpUpdat\
-    eScNotify\x10\xb4\x0b\x12#\n\x1eCmdChangePropTimelineInfoScRsp\x10\xb0\
-    \x0b\x12%\n\x20CmdGameplayCounterUpdateScNotify\x10\xd8\x0b\x12\x1b\n\
-    \x16CmdSceneCastSkillCsReq\x10\xc4\x0b\x12\x19\n\x14CmdInteractPropScRsp\
-    \x10\xa0\x0b\x12\x1c\n\x17CmdGetEnteredSceneCsReq\x10\xc8\x0b\x12\x1c\n\
-    \x17CmdSceneEntityMoveCsReq\x10\xd7\x0b\x12\x1c\n\x17CmdGetCurSceneInfoC\
-    sReq\x10\xbf\x0b\x12\x20\n\x1bCmdSceneEntityTeleportScRsp\x10\x89\x0b\
-    \x12\x1f\n\x1aCmdSceneEntityMoveScNotify\x10\xc0\x0b\x12\x20\n\x1bCmdAct\
-    ivateFarmElementCsReq\x10\xc6\x0b\x12#\n\x1eCmdRefreshTriggerByClientCsR\
-    eq\x10\xd1\x0b\x12\x1f\n\x1aCmdScenePlaneEventScNotify\x10\x82\x0b\x12\
-    \x1b\n\x16CmdEntityBindPropScRsp\x10\xff\nb\x06proto3\
+    eTypeNone\x10\0\x12!\n\x1cCmdSceneCastSkillCostMpScRsp\x10\xc1\x0b\x12%\
+    \n\x20CmdGameplayCounterCountDownCsReq\x10\xab\x0b\x12\x1d\n\x18CmdRecov\
+    erAllLineupScRsp\x10\xbd\x0b\x12\x1b\n\x16CmdReturnLastTownScRsp\x10\x9c\
+    \x0b\x12$\n\x1fCmdReEnterLastElementStageScRsp\x10\x99\x0b\x12!\n\x1cCmd\
+    SetCurInteractEntityScRsp\x10\x9a\x0b\x12\x1c\n\x17CmdSetClientPausedCsR\
+    eq\x10\xa0\x0b\x12\x1c\n\x17CmdUnlockTeleportNotify\x10\xd0\x0b\x12#\n\
+    \x1eCmdRefreshTriggerByClientCsReq\x10\xb2\x0b\x12\x1a\n\x15CmdSpringRef\
+    reshCsReq\x10\x9e\x0b\x12\x1d\n\x18CmdRecoverAllLineupCsReq\x10\xa5\x0b\
+    \x12\x1c\n\x17CmdSetClientPausedScRsp\x10\x8a\x0b\x12\x1c\n\x17CmdGetCur\
+    SceneInfoCsReq\x10\xbe\x0b\x12\x1e\n\x19CmdGetUnlockTeleportScRsp\x10\
+    \xcb\x0b\x12%\n\x20CmdSceneReviveAfterRebattleScRsp\x10\x97\x0b\x12\x1b\
+    \n\x16CmdEntityBindPropScRsp\x10\x8e\x0b\x12#\n\x1eCmdChangePropTimeline\
+    InfoCsReq\x10\xae\x0b\x12!\n\x1cCmdSceneGroupRefreshScNotify\x10\xc7\x0b\
+    \x12\x1c\n\x17CmdGetSceneMapInfoCsReq\x10\x86\x0b\x12#\n\x1eCmdRefreshTr\
+    iggerByClientScRsp\x10\xa6\x0b\x12\x1c\n\x17CmdSceneEnterStageCsReq\x10\
+    \xcf\x0b\x12\x1d\n\x18CmdDeleteSummonUnitCsReq\x10\xd4\x0b\x12\x1b\n\x16\
+    CmdEntityBindPropCsReq\x10\x8f\x0b\x12\x17\n\x12CmdEnterSceneScRsp\x10\
+    \xa3\x0b\x12\x1e\n\x19CmdGetUnlockTeleportCsReq\x10\x96\x0b\x12#\n\x1eCm\
+    dLastSpringRefreshTimeNotify\x10\xbc\x0b\x12#\n\x1eCmdSetGroupCustomSave\
+    DataScRsp\x10\x9d\x0b\x12$\n\x1fCmdReEnterLastElementStageCsReq\x10\xad\
+    \x0b\x12\x1d\n\x18CmdDeleteSummonUnitScRsp\x10\x82\x0b\x12\x19\n\x14CmdE\
+    nterSectionCsReq\x10\xa4\x0b\x12\x1c\n\x17CmdSceneEntityMoveScRsp\x10\
+    \xd3\x0b\x12&\n!CmdRefreshTriggerByClientScNotify\x10\xa2\x0b\x12!\n\x1c\
+    CmdSetCurInteractEntityCsReq\x10\xc6\x0b\x12\x1d\n\x18CmdGroupStateChang\
+    eCsReq\x10\xb5\x0b\x12\x1a\n\x15CmdSpringRefreshScRsp\x10\xac\x0b\x12\
+    \x19\n\x14CmdOpenChestScNotify\x10\x98\x0b\x12&\n!CmdSceneCastSkillMpUpd\
+    ateScNotify\x10\xda\x0b\x12\x17\n\x12CmdEnterSceneCsReq\x10\x91\x0b\x12\
+    \x1b\n\x16CmdSceneCastSkillScRsp\x10\x8d\x0b\x12\x1c\n\x17CmdGetSceneMap\
+    InfoScRsp\x10\xce\x0b\x12\x1b\n\x16CmdSceneCastSkillCsReq\x10\x93\x0b\
+    \x12\x20\n\x1bCmdSceneEntityTeleportCsReq\x10\xff\n\x12(\n#CmdSyncEntity\
+    BuffChangeListScNotify\x10\xfd\n\x12\x1d\n\x18CmdStartCocoonStageCsReq\
+    \x10\x90\x0b\x12\x19\n\x14CmdInteractPropScRsp\x10\x9f\x0b\x12\x1d\n\x18\
+    CmdGroupStateChangeScRsp\x10\x80\x0b\x12\x20\n\x1bCmdUpdateGroupProperty\
+    CsReq\x10\x95\x0b\x12%\n\x20CmdGameplayCounterUpdateScNotify\x10\xf9\n\
+    \x12\x20\n\x1bCmdActivateFarmElementScRsp\x10\xb7\x0b\x12\x20\n\x1bCmdGr\
+    oupStateChangeScNotify\x10\xd9\x0b\x12\x1c\n\x17CmdGetEnteredSceneScRsp\
+    \x10\x89\x0b\x12\x1c\n\x17CmdGetEnteredSceneCsReq\x10\xba\x0b\x12\"\n\
+    \x1dCmdTrainWorldIdChangeScNotify\x10\x87\x0b\x12\x1f\n\x1aCmdUnlockedAr\
+    eaMapScNotify\x10\xfc\n\x12\"\n\x1dCmdEnteredSceneChangeScNotify\x10\xdc\
+    \x0b\x12\x1b\n\x16CmdReturnLastTownCsReq\x10\xd6\x0b\x12\x19\n\x14CmdEnt\
+    erSectionScRsp\x10\xa9\x0b\x12#\n\x1eCmdSetGroupCustomSaveDataCsReq\x10\
+    \xd1\x0b\x12\x20\n\x1bCmdSceneEntityTeleportScRsp\x10\xa8\x0b\x12%\n\x20\
+    CmdSceneReviveAfterRebattleCsReq\x10\xfe\n\x12\x1c\n\x17CmdGetCurSceneIn\
+    foScRsp\x10\xb3\x0b\x12%\n\x20CmdGameplayCounterCountDownScRsp\x10\xb0\
+    \x0b\x12\x1c\n\x17CmdSavePointsInfoNotify\x10\xfb\n\x12#\n\x1eCmdUpdateF\
+    loorSavedValueNotify\x10\x83\x0b\x12\x1d\n\x18CmdStartCocoonStageScRsp\
+    \x10\x94\x0b\x12#\n\x1eCmdGameplayCounterRecoverScRsp\x10\xdb\x0b\x12\
+    \x1c\n\x17CmdSceneEntityMoveCsReq\x10\x8c\x0b\x12(\n#CmdSceneUpdatePosit\
+    ionVersionNotify\x10\xfa\n\x12#\n\x1eCmdChangePropTimelineInfoScRsp\x10\
+    \xc5\x0b\x12\x1f\n\x1aCmdSceneEntityMoveScNotify\x10\xc8\x0b\x12\"\n\x1d\
+    CmdDeactivateFarmElementCsReq\x10\x8b\x0b\x12\x1f\n\x1aCmdScenePlaneEven\
+    tScNotify\x10\xb6\x0b\x12\x1c\n\x17CmdSceneEnterStageScRsp\x10\x81\x0b\
+    \x12\x19\n\x14CmdInteractPropCsReq\x10\xbb\x0b\x12\x20\n\x1bCmdUpdateGro\
+    upPropertyScRsp\x10\x85\x0b\x12\"\n\x1dCmdDeactivateFarmElementScRsp\x10\
+    \xaf\x0b\x12#\n\x1eCmdGameplayCounterRecoverCsReq\x10\xca\x0b\x12\"\n\
+    \x1dCmdUpdateMechanismBarScNotify\x10\xd2\x0b\x12!\n\x1cCmdSceneCastSkil\
+    lCostMpCsReq\x10\xc2\x0b\x12\x20\n\x1bCmdActivateFarmElementCsReq\x10\
+    \xbf\x0b\x12#\n\x1eCmdSyncServerSceneChangeNotify\x10\xc3\x0b\x12\"\n\
+    \x1dCmdEnterSceneByServerScNotify\x10\x84\x0bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

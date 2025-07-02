@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DHAHAKMPNAF {
     // message fields
-    // @@protoc_insertion_point(field:DHAHAKMPNAF.EJHMNKHEPFA)
-    pub EJHMNKHEPFA: ::protobuf::EnumOrUnknown<super::DevelopmentType::DevelopmentType>,
     // @@protoc_insertion_point(field:DHAHAKMPNAF.time)
     pub time: i64,
+    // @@protoc_insertion_point(field:DHAHAKMPNAF.EJHMNKHEPFA)
+    pub EJHMNKHEPFA: ::protobuf::EnumOrUnknown<super::DevelopmentType::DevelopmentType>,
     // message oneof groups
     pub FMJDDNEDKGF: ::std::option::Option<dhahakmpnaf::FMJDDNEDKGF>,
     // special fields
@@ -50,7 +50,7 @@ impl DHAHAKMPNAF {
         ::std::default::Default::default()
     }
 
-    // .IOJHJAHIMHM LIIBBGGEHFP = 1131;
+    // .IOJHJAHIMHM LIIBBGGEHFP = 1793;
 
     pub fn LIIBBGGEHFP(&self) -> &super::IOJHJAHIMHM::IOJHJAHIMHM {
         match self.FMJDDNEDKGF {
@@ -99,7 +99,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // .MEEHCBGDBEA IKFFOBAMGHJ = 1838;
+    // .MEEHCBGDBEA IKFFOBAMGHJ = 243;
 
     pub fn IKFFOBAMGHJ(&self) -> &super::MEEHCBGDBEA::MEEHCBGDBEA {
         match self.FMJDDNEDKGF {
@@ -148,7 +148,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // uint32 avatar_id = 793;
+    // uint32 avatar_id = 200;
 
     pub fn avatar_id(&self) -> u32 {
         match self.FMJDDNEDKGF {
@@ -173,7 +173,7 @@ impl DHAHAKMPNAF {
         self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::AvatarId(v))
     }
 
-    // uint32 MDMGKHLHIIN = 1661;
+    // uint32 MDMGKHLHIIN = 624;
 
     pub fn MDMGKHLHIIN(&self) -> u32 {
         match self.FMJDDNEDKGF {
@@ -198,7 +198,7 @@ impl DHAHAKMPNAF {
         self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::MDMGKHLHIIN(v))
     }
 
-    // uint32 CKKNNHMDCOG = 75;
+    // uint32 CKKNNHMDCOG = 1751;
 
     pub fn CKKNNHMDCOG(&self) -> u32 {
         match self.FMJDDNEDKGF {
@@ -223,7 +223,7 @@ impl DHAHAKMPNAF {
         self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::CKKNNHMDCOG(v))
     }
 
-    // .JIENKFADCHE IELHLBFFAGK = 1433;
+    // .JIENKFADCHE IELHLBFFAGK = 1361;
 
     pub fn IELHLBFFAGK(&self) -> &super::JIENKFADCHE::JIENKFADCHE {
         match self.FMJDDNEDKGF {
@@ -272,7 +272,7 @@ impl DHAHAKMPNAF {
         }
     }
 
-    // uint32 panel_id = 1901;
+    // uint32 panel_id = 1220;
 
     pub fn panel_id(&self) -> u32 {
         match self.FMJDDNEDKGF {
@@ -301,14 +301,14 @@ impl DHAHAKMPNAF {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJHMNKHEPFA",
-            |m: &DHAHAKMPNAF| { &m.EJHMNKHEPFA },
-            |m: &mut DHAHAKMPNAF| { &mut m.EJHMNKHEPFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
             |m: &DHAHAKMPNAF| { &m.time },
             |m: &mut DHAHAKMPNAF| { &mut m.time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EJHMNKHEPFA",
+            |m: &DHAHAKMPNAF| { &m.EJHMNKHEPFA },
+            |m: &mut DHAHAKMPNAF| { &mut m.EJHMNKHEPFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IOJHJAHIMHM::IOJHJAHIMHM>(
             "LIIBBGGEHFP",
@@ -374,31 +374,31 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.EJHMNKHEPFA = is.read_enum_or_unknown()?;
-                },
-                80 => {
+                120 => {
                     self.time = is.read_int64()?;
                 },
-                9050 => {
+                112 => {
+                    self.EJHMNKHEPFA = is.read_enum_or_unknown()?;
+                },
+                14346 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::LIIBBGGEHFP(is.read_message()?));
                 },
-                14706 => {
+                1946 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::IKFFOBAMGHJ(is.read_message()?));
                 },
-                6344 => {
+                1600 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::AvatarId(is.read_uint32()?));
                 },
-                13288 => {
+                4992 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::MDMGKHLHIIN(is.read_uint32()?));
                 },
-                600 => {
+                14008 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::CKKNNHMDCOG(is.read_uint32()?));
                 },
-                11466 => {
+                10890 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::IELHLBFFAGK(is.read_message()?));
                 },
-                15208 => {
+                9760 => {
                     self.FMJDDNEDKGF = ::std::option::Option::Some(dhahakmpnaf::FMJDDNEDKGF::PanelId(is.read_uint32()?));
                 },
                 tag => {
@@ -413,11 +413,11 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.EJHMNKHEPFA.value());
-        }
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.time);
+            my_size += ::protobuf::rt::int64_size(15, self.time);
+        }
+        if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.EJHMNKHEPFA.value());
         }
         if let ::std::option::Option::Some(ref v) = self.FMJDDNEDKGF {
             match v {
@@ -430,20 +430,20 @@ impl ::protobuf::Message for DHAHAKMPNAF {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::AvatarId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(793, v);
+                    my_size += ::protobuf::rt::uint32_size(200, v);
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::MDMGKHLHIIN(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1661, v);
+                    my_size += ::protobuf::rt::uint32_size(624, v);
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::CKKNNHMDCOG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(75, v);
+                    my_size += ::protobuf::rt::uint32_size(1751, v);
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::IELHLBFFAGK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::PanelId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1901, v);
+                    my_size += ::protobuf::rt::uint32_size(1220, v);
                 },
             };
         }
@@ -453,34 +453,34 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.EJHMNKHEPFA))?;
-        }
         if self.time != 0 {
-            os.write_int64(10, self.time)?;
+            os.write_int64(15, self.time)?;
+        }
+        if self.EJHMNKHEPFA != ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.EJHMNKHEPFA))?;
         }
         if let ::std::option::Option::Some(ref v) = self.FMJDDNEDKGF {
             match v {
                 &dhahakmpnaf::FMJDDNEDKGF::LIIBBGGEHFP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1131, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1793, v, os)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::IKFFOBAMGHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1838, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(243, v, os)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::AvatarId(v) => {
-                    os.write_uint32(793, v)?;
+                    os.write_uint32(200, v)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::MDMGKHLHIIN(v) => {
-                    os.write_uint32(1661, v)?;
+                    os.write_uint32(624, v)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::CKKNNHMDCOG(v) => {
-                    os.write_uint32(75, v)?;
+                    os.write_uint32(1751, v)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::IELHLBFFAGK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1433, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1361, v, os)?;
                 },
                 &dhahakmpnaf::FMJDDNEDKGF::PanelId(v) => {
-                    os.write_uint32(1901, v)?;
+                    os.write_uint32(1220, v)?;
                 },
             };
         }
@@ -501,8 +501,8 @@ impl ::protobuf::Message for DHAHAKMPNAF {
     }
 
     fn clear(&mut self) {
-        self.EJHMNKHEPFA = ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE);
         self.time = 0;
+        self.EJHMNKHEPFA = ::protobuf::EnumOrUnknown::new(super::DevelopmentType::DevelopmentType::DEVELOPMENT_NONE);
         self.FMJDDNEDKGF = ::std::option::Option::None;
         self.FMJDDNEDKGF = ::std::option::Option::None;
         self.FMJDDNEDKGF = ::std::option::Option::None;
@@ -515,8 +515,8 @@ impl ::protobuf::Message for DHAHAKMPNAF {
 
     fn default_instance() -> &'static DHAHAKMPNAF {
         static instance: DHAHAKMPNAF = DHAHAKMPNAF {
-            EJHMNKHEPFA: ::protobuf::EnumOrUnknown::from_i32(0),
             time: 0,
+            EJHMNKHEPFA: ::protobuf::EnumOrUnknown::from_i32(0),
             FMJDDNEDKGF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -583,17 +583,17 @@ pub mod dhahakmpnaf {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DHAHAKMPNAF.proto\x1a\x15DevelopmentType.proto\x1a\x11IOJHJAHIMHM.\
-    proto\x1a\x11JIENKFADCHE.proto\x1a\x11MEEHCBGDBEA.proto\"\x84\x03\n\x0bD\
-    HAHAKMPNAF\x122\n\x0bEJHMNKHEPFA\x18\x0b\x20\x01(\x0e2\x10.DevelopmentTy\
-    peR\x0bEJHMNKHEPFA\x12\x12\n\x04time\x18\n\x20\x01(\x03R\x04time\x121\n\
-    \x0bLIIBBGGEHFP\x18\xeb\x08\x20\x01(\x0b2\x0c.IOJHJAHIMHMH\0R\x0bLIIBBGG\
-    EHFP\x121\n\x0bIKFFOBAMGHJ\x18\xae\x0e\x20\x01(\x0b2\x0c.MEEHCBGDBEAH\0R\
-    \x0bIKFFOBAMGHJ\x12\x1e\n\tavatar_id\x18\x99\x06\x20\x01(\rH\0R\x08avata\
-    rId\x12#\n\x0bMDMGKHLHIIN\x18\xfd\x0c\x20\x01(\rH\0R\x0bMDMGKHLHIIN\x12\
-    \"\n\x0bCKKNNHMDCOG\x18K\x20\x01(\rH\0R\x0bCKKNNHMDCOG\x121\n\x0bIELHLBF\
-    FAGK\x18\x99\x0b\x20\x01(\x0b2\x0c.JIENKFADCHEH\0R\x0bIELHLBFFAGK\x12\
-    \x1c\n\x08panel_id\x18\xed\x0e\x20\x01(\rH\0R\x07panelIdB\r\n\x0bFMJDDNE\
-    DKGFb\x06proto3\
+    proto\x1a\x11JIENKFADCHE.proto\x1a\x11MEEHCBGDBEA.proto\"\x85\x03\n\x0bD\
+    HAHAKMPNAF\x12\x12\n\x04time\x18\x0f\x20\x01(\x03R\x04time\x122\n\x0bEJH\
+    MNKHEPFA\x18\x0e\x20\x01(\x0e2\x10.DevelopmentTypeR\x0bEJHMNKHEPFA\x121\
+    \n\x0bLIIBBGGEHFP\x18\x81\x0e\x20\x01(\x0b2\x0c.IOJHJAHIMHMH\0R\x0bLIIBB\
+    GGEHFP\x121\n\x0bIKFFOBAMGHJ\x18\xf3\x01\x20\x01(\x0b2\x0c.MEEHCBGDBEAH\
+    \0R\x0bIKFFOBAMGHJ\x12\x1e\n\tavatar_id\x18\xc8\x01\x20\x01(\rH\0R\x08av\
+    atarId\x12#\n\x0bMDMGKHLHIIN\x18\xf0\x04\x20\x01(\rH\0R\x0bMDMGKHLHIIN\
+    \x12#\n\x0bCKKNNHMDCOG\x18\xd7\r\x20\x01(\rH\0R\x0bCKKNNHMDCOG\x121\n\
+    \x0bIELHLBFFAGK\x18\xd1\n\x20\x01(\x0b2\x0c.JIENKFADCHEH\0R\x0bIELHLBFFA\
+    GK\x12\x1c\n\x08panel_id\x18\xc4\t\x20\x01(\rH\0R\x07panelIdB\r\n\x0bFMJ\
+    DDNEDKGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

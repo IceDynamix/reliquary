@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.GPOIECCPAMN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.GPOIECCPAMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GPOIECCPAMN);
+            my_size += ::protobuf::rt::uint32_size(6, self.GPOIECCPAMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.GPOIECCPAMN != 0 {
-            os.write_uint32(11, self.GPOIECCPAMN)?;
+            os.write_uint32(6, self.GPOIECCPAMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishCurTurnScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FinishCurTurnScRsp.proto\"P\n\x12FinishCurTurnScRsp\x12\x18\n\x07r\
-    etcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bGPOIECCPAMN\x18\x0b\x20\
-    \x01(\rR\x0bGPOIECCPAMNb\x06proto3\
+    etcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bGPOIECCPAMN\x18\x06\
+    \x20\x01(\rR\x0bGPOIECCPAMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

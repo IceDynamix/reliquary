@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyMoveScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.GHEEOEOHMFI)
-    pub GHEEOEOHMFI: u32,
     // @@protoc_insertion_point(field:TrainPartyMoveScNotify.grid_data_list)
     pub grid_data_list: ::std::vec::Vec<super::TrainPartyGridData::TrainPartyGridData>,
+    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.GHEEOEOHMFI)
+    pub GHEEOEOHMFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TrainPartyMoveScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHEEOEOHMFI",
-            |m: &TrainPartyMoveScNotify| { &m.GHEEOEOHMFI },
-            |m: &mut TrainPartyMoveScNotify| { &mut m.GHEEOEOHMFI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_data_list",
             |m: &TrainPartyMoveScNotify| { &m.grid_data_list },
             |m: &mut TrainPartyMoveScNotify| { &mut m.grid_data_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GHEEOEOHMFI",
+            |m: &TrainPartyMoveScNotify| { &m.GHEEOEOHMFI },
+            |m: &mut TrainPartyMoveScNotify| { &mut m.GHEEOEOHMFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyMoveScNotify>(
             "TrainPartyMoveScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.GHEEOEOHMFI = is.read_uint32()?;
-                },
-                114 => {
+                90 => {
                     self.grid_data_list.push(is.read_message()?);
+                },
+                32 => {
+                    self.GHEEOEOHMFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GHEEOEOHMFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GHEEOEOHMFI);
-        }
         for value in &self.grid_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GHEEOEOHMFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.GHEEOEOHMFI);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GHEEOEOHMFI != 0 {
-            os.write_uint32(11, self.GHEEOEOHMFI)?;
-        }
         for v in &self.grid_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.GHEEOEOHMFI != 0 {
+            os.write_uint32(4, self.GHEEOEOHMFI)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     }
 
     fn clear(&mut self) {
-        self.GHEEOEOHMFI = 0;
         self.grid_data_list.clear();
+        self.GHEEOEOHMFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyMoveScNotify {
         static instance: TrainPartyMoveScNotify = TrainPartyMoveScNotify {
-            GHEEOEOHMFI: 0,
             grid_data_list: ::std::vec::Vec::new(),
+            GHEEOEOHMFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyMoveScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyMoveScNotify.proto\x1a\x18TrainPartyGridData.proto\"u\n\
-    \x16TrainPartyMoveScNotify\x12\x20\n\x0bGHEEOEOHMFI\x18\x0b\x20\x01(\rR\
-    \x0bGHEEOEOHMFI\x129\n\x0egrid_data_list\x18\x0e\x20\x03(\x0b2\x13.Train\
-    PartyGridDataR\x0cgridDataListb\x06proto3\
+    \x16TrainPartyMoveScNotify\x129\n\x0egrid_data_list\x18\x0b\x20\x03(\x0b\
+    2\x13.TrainPartyGridDataR\x0cgridDataList\x12\x20\n\x0bGHEEOEOHMFI\x18\
+    \x04\x20\x01(\rR\x0bGHEEOEOHMFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

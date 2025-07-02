@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BoardDataSync {
     // message fields
-    // @@protoc_insertion_point(field:BoardDataSync.signature)
-    pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:BoardDataSync.PAGJKDJIGPI)
-    pub PAGJKDJIGPI: bool,
     // @@protoc_insertion_point(field:BoardDataSync.unlocked_head_icon_list)
     pub unlocked_head_icon_list: ::std::vec::Vec<super::HeadIconData::HeadIconData>,
+    // @@protoc_insertion_point(field:BoardDataSync.PAGJKDJIGPI)
+    pub PAGJKDJIGPI: bool,
     // @@protoc_insertion_point(field:BoardDataSync.ALMMHKFKHLK)
     pub ALMMHKFKHLK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BoardDataSync.signature)
+    pub signature: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:BoardDataSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl BoardDataSync {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "signature",
-            |m: &BoardDataSync| { &m.signature },
-            |m: &mut BoardDataSync| { &mut m.signature },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unlocked_head_icon_list",
+            |m: &BoardDataSync| { &m.unlocked_head_icon_list },
+            |m: &mut BoardDataSync| { &mut m.unlocked_head_icon_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PAGJKDJIGPI",
@@ -66,14 +66,14 @@ impl BoardDataSync {
             |m: &mut BoardDataSync| { &mut m.PAGJKDJIGPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_head_icon_list",
-            |m: &BoardDataSync| { &m.unlocked_head_icon_list },
-            |m: &mut BoardDataSync| { &mut m.unlocked_head_icon_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ALMMHKFKHLK",
             |m: &BoardDataSync| { &m.ALMMHKFKHLK },
             |m: &mut BoardDataSync| { &mut m.ALMMHKFKHLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "signature",
+            |m: &BoardDataSync| { &m.signature },
+            |m: &mut BoardDataSync| { &mut m.signature },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoardDataSync>(
             "BoardDataSync",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for BoardDataSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.signature = is.read_string()?;
-                },
-                16 => {
-                    self.PAGJKDJIGPI = is.read_bool()?;
-                },
-                82 => {
+                50 => {
                     self.unlocked_head_icon_list.push(is.read_message()?);
                 },
-                98 => {
+                88 => {
+                    self.PAGJKDJIGPI = is.read_bool()?;
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.ALMMHKFKHLK)?;
                 },
-                96 => {
+                112 => {
                     self.ALMMHKFKHLK.push(is.read_uint32()?);
+                },
+                74 => {
+                    self.signature = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,33 +120,33 @@ impl ::protobuf::Message for BoardDataSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.signature);
-        }
-        if self.PAGJKDJIGPI != false {
-            my_size += 1 + 1;
-        }
         for value in &self.unlocked_head_icon_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.ALMMHKFKHLK);
+        if self.PAGJKDJIGPI != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.ALMMHKFKHLK);
+        if !self.signature.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.signature);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.signature.is_empty() {
-            os.write_string(8, &self.signature)?;
-        }
-        if self.PAGJKDJIGPI != false {
-            os.write_bool(2, self.PAGJKDJIGPI)?;
-        }
         for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(12, &self.ALMMHKFKHLK)?;
+        if self.PAGJKDJIGPI != false {
+            os.write_bool(11, self.PAGJKDJIGPI)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.ALMMHKFKHLK)?;
+        if !self.signature.is_empty() {
+            os.write_string(9, &self.signature)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for BoardDataSync {
     }
 
     fn clear(&mut self) {
-        self.signature.clear();
-        self.PAGJKDJIGPI = false;
         self.unlocked_head_icon_list.clear();
+        self.PAGJKDJIGPI = false;
         self.ALMMHKFKHLK.clear();
+        self.signature.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BoardDataSync {
         static instance: BoardDataSync = BoardDataSync {
-            signature: ::std::string::String::new(),
-            PAGJKDJIGPI: false,
             unlocked_head_icon_list: ::std::vec::Vec::new(),
+            PAGJKDJIGPI: false,
             ALMMHKFKHLK: ::std::vec::Vec::new(),
+            signature: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for BoardDataSync {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13BoardDataSync.proto\x1a\x12HeadIconData.proto\"\xb7\x01\n\rBoardDa\
-    taSync\x12\x1c\n\tsignature\x18\x08\x20\x01(\tR\tsignature\x12\x20\n\x0b\
-    PAGJKDJIGPI\x18\x02\x20\x01(\x08R\x0bPAGJKDJIGPI\x12D\n\x17unlocked_head\
-    _icon_list\x18\n\x20\x03(\x0b2\r.HeadIconDataR\x14unlockedHeadIconList\
-    \x12\x20\n\x0bALMMHKFKHLK\x18\x0c\x20\x03(\rR\x0bALMMHKFKHLKb\x06proto3\
+    taSync\x12D\n\x17unlocked_head_icon_list\x18\x06\x20\x03(\x0b2\r.HeadIco\
+    nDataR\x14unlockedHeadIconList\x12\x20\n\x0bPAGJKDJIGPI\x18\x0b\x20\x01(\
+    \x08R\x0bPAGJKDJIGPI\x12\x20\n\x0bALMMHKFKHLK\x18\x0e\x20\x03(\rR\x0bALM\
+    MHKFKHLK\x12\x1c\n\tsignature\x18\t\x20\x01(\tR\tsignatureb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                120 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 64 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueExhibitionStatus::RogueExhibitionStatus::ROGUE_EXHIBITION_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.status.value());
+            my_size += ::protobuf::rt::int32_size(15, self.status.value());
         }
         if self.KBDFBGINNBJ != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.KBDFBGINNBJ);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GBPFLAGFAIJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueExhibitionStatus::RogueExhibitionStatus::ROGUE_EXHIBITION_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.KBDFBGINNBJ != 0 {
             os.write_uint32(8, self.KBDFBGINNBJ)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GBPFLAGFAIJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBPFLAGFAIJ.proto\x1a\x1bRogueExhibitionStatus.proto\"_\n\x0bGBPFL\
-    AGFAIJ\x12.\n\x06status\x18\x04\x20\x01(\x0e2\x16.RogueExhibitionStatusR\
+    AGFAIJ\x12.\n\x06status\x18\x0f\x20\x01(\x0e2\x16.RogueExhibitionStatusR\
     \x06status\x12\x20\n\x0bKBDFBGINNBJ\x18\x08\x20\x01(\rR\x0bKBDFBGINNBJb\
     \x06proto3\
 ";

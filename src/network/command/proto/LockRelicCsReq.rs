@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.is_batch_op)
-    pub is_batch_op: bool,
     // @@protoc_insertion_point(field:LockRelicCsReq.is_protected)
     pub is_protected: bool,
     // @@protoc_insertion_point(field:LockRelicCsReq.KGEFHOECMMN)
     pub KGEFHOECMMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LockRelicCsReq.is_batch_op)
+    pub is_batch_op: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl LockRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_batch_op",
-            |m: &LockRelicCsReq| { &m.is_batch_op },
-            |m: &mut LockRelicCsReq| { &mut m.is_batch_op },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_protected",
             |m: &LockRelicCsReq| { &m.is_protected },
             |m: &mut LockRelicCsReq| { &mut m.is_protected },
@@ -67,6 +62,11 @@ impl LockRelicCsReq {
             "KGEFHOECMMN",
             |m: &LockRelicCsReq| { &m.KGEFHOECMMN },
             |m: &mut LockRelicCsReq| { &mut m.KGEFHOECMMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_batch_op",
+            |m: &LockRelicCsReq| { &m.is_batch_op },
+            |m: &mut LockRelicCsReq| { &mut m.is_batch_op },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicCsReq>(
             "LockRelicCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_batch_op = is.read_bool()?;
-                },
-                64 => {
+                88 => {
                     self.is_protected = is.read_bool()?;
                 },
-                82 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.KGEFHOECMMN)?;
                 },
-                80 => {
+                64 => {
                     self.KGEFHOECMMN.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.is_batch_op = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_batch_op != false {
-            my_size += 1 + 1;
-        }
         if self.is_protected != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KGEFHOECMMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.KGEFHOECMMN);
+        if self.is_batch_op != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_batch_op != false {
-            os.write_bool(3, self.is_batch_op)?;
-        }
         if self.is_protected != false {
-            os.write_bool(8, self.is_protected)?;
+            os.write_bool(11, self.is_protected)?;
         }
-        os.write_repeated_packed_uint32(10, &self.KGEFHOECMMN)?;
+        os.write_repeated_packed_uint32(8, &self.KGEFHOECMMN)?;
+        if self.is_batch_op != false {
+            os.write_bool(13, self.is_batch_op)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_batch_op = false;
         self.is_protected = false;
         self.KGEFHOECMMN.clear();
+        self.is_batch_op = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            is_batch_op: false,
             is_protected: false,
             KGEFHOECMMN: ::std::vec::Vec::new(),
+            is_batch_op: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"u\n\x0eLockRelicCsReq\x12\x1e\n\x0bis_batch_\
-    op\x18\x03\x20\x01(\x08R\tisBatchOp\x12!\n\x0cis_protected\x18\x08\x20\
-    \x01(\x08R\x0bisProtected\x12\x20\n\x0bKGEFHOECMMN\x18\n\x20\x03(\rR\x0b\
-    KGEFHOECMMNb\x06proto3\
+    \n\x14LockRelicCsReq.proto\"u\n\x0eLockRelicCsReq\x12!\n\x0cis_protected\
+    \x18\x0b\x20\x01(\x08R\x0bisProtected\x12\x20\n\x0bKGEFHOECMMN\x18\x08\
+    \x20\x03(\rR\x0bKGEFHOECMMN\x12\x1e\n\x0bis_batch_op\x18\r\x20\x01(\x08R\
+    \tisBatchOpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

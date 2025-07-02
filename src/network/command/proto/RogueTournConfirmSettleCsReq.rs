@@ -86,10 +86,10 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                114 => {
                     self.name = is.read_string()?;
                 },
-                48 => {
+                88 => {
                     self.area_id = is.read_uint32()?;
                 },
                 120 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.name);
+            my_size += ::protobuf::rt::string_size(14, &self.name);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.area_id);
         }
         if self.max_times != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.max_times);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.name.is_empty() {
-            os.write_string(9, &self.name)?;
+            os.write_string(14, &self.name)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
+            os.write_uint32(11, self.area_id)?;
         }
         if self.max_times != 0 {
             os.write_uint32(15, self.max_times)?;
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournConfirmSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournConfirmSettleCsReq.proto\"h\n\x1cRogueTournConfirmSettleCs\
-    Req\x12\x12\n\x04name\x18\t\x20\x01(\tR\x04name\x12\x17\n\x07area_id\x18\
-    \x06\x20\x01(\rR\x06areaId\x12\x1b\n\tmax_times\x18\x0f\x20\x01(\rR\x08m\
-    axTimesb\x06proto3\
+    Req\x12\x12\n\x04name\x18\x0e\x20\x01(\tR\x04name\x12\x17\n\x07area_id\
+    \x18\x0b\x20\x01(\rR\x06areaId\x12\x1b\n\tmax_times\x18\x0f\x20\x01(\rR\
+    \x08maxTimesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

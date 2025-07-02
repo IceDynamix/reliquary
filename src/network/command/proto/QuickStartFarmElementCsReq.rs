@@ -79,10 +79,10 @@ impl ::protobuf::Message for QuickStartFarmElementCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.world_level = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.JDANOKNHNHL = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for QuickStartFarmElementCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(15, self.world_level);
         }
         if self.JDANOKNHNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JDANOKNHNHL);
+            my_size += ::protobuf::rt::uint32_size(10, self.JDANOKNHNHL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for QuickStartFarmElementCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(1, self.world_level)?;
+            os.write_uint32(15, self.world_level)?;
         }
         if self.JDANOKNHNHL != 0 {
-            os.write_uint32(13, self.JDANOKNHNHL)?;
+            os.write_uint32(10, self.JDANOKNHNHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartFarmElementCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartFarmElementCsReq.proto\"_\n\x1aQuickStartFarmElementCsRe\
-    q\x12\x1f\n\x0bworld_level\x18\x01\x20\x01(\rR\nworldLevel\x12\x20\n\x0b\
-    JDANOKNHNHL\x18\r\x20\x01(\rR\x0bJDANOKNHNHLb\x06proto3\
+    q\x12\x1f\n\x0bworld_level\x18\x0f\x20\x01(\rR\nworldLevel\x12\x20\n\x0b\
+    JDANOKNHNHL\x18\n\x20\x01(\rR\x0bJDANOKNHNHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

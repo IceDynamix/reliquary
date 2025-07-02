@@ -72,7 +72,7 @@ impl ::protobuf::Message for EJJGLGPEDEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EJJGLGPEDEE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EJJGLGPEDEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJJGLGPEDEE.proto\x1a\x12ItemCostData.proto\"H\n\x0bEJJGLGPEDEE\
-    \x129\n\x11rogue_revive_cost\x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x0fro\
+    \x129\n\x11rogue_revive_cost\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0fro\
     gueReviveCostb\x06proto3\
 ";
 

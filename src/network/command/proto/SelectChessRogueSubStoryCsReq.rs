@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectChessRogueSubStoryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectChessRogueSubStoryCsReq.FAHIHDJFOHM)
-    pub FAHIHDJFOHM: u32,
     // @@protoc_insertion_point(field:SelectChessRogueSubStoryCsReq.IKMNAMKJAFA)
     pub IKMNAMKJAFA: u32,
     // @@protoc_insertion_point(field:SelectChessRogueSubStoryCsReq.rogue_dialogue_event_id)
     pub rogue_dialogue_event_id: u32,
+    // @@protoc_insertion_point(field:SelectChessRogueSubStoryCsReq.FAHIHDJFOHM)
+    pub FAHIHDJFOHM: u32,
     // @@protoc_insertion_point(field:SelectChessRogueSubStoryCsReq.IFIIJGNGOGP)
     pub IFIIJGNGOGP: u32,
     // special fields
@@ -56,11 +56,6 @@ impl SelectChessRogueSubStoryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAHIHDJFOHM",
-            |m: &SelectChessRogueSubStoryCsReq| { &m.FAHIHDJFOHM },
-            |m: &mut SelectChessRogueSubStoryCsReq| { &mut m.FAHIHDJFOHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IKMNAMKJAFA",
             |m: &SelectChessRogueSubStoryCsReq| { &m.IKMNAMKJAFA },
             |m: &mut SelectChessRogueSubStoryCsReq| { &mut m.IKMNAMKJAFA },
@@ -69,6 +64,11 @@ impl SelectChessRogueSubStoryCsReq {
             "rogue_dialogue_event_id",
             |m: &SelectChessRogueSubStoryCsReq| { &m.rogue_dialogue_event_id },
             |m: &mut SelectChessRogueSubStoryCsReq| { &mut m.rogue_dialogue_event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FAHIHDJFOHM",
+            |m: &SelectChessRogueSubStoryCsReq| { &m.FAHIHDJFOHM },
+            |m: &mut SelectChessRogueSubStoryCsReq| { &mut m.FAHIHDJFOHM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFIIJGNGOGP",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.IKMNAMKJAFA = is.read_uint32()?;
+                },
+                96 => {
+                    self.rogue_dialogue_event_id = is.read_uint32()?;
+                },
                 112 => {
                     self.FAHIHDJFOHM = is.read_uint32()?;
                 },
-                104 => {
-                    self.IKMNAMKJAFA = is.read_uint32()?;
-                },
-                40 => {
-                    self.rogue_dialogue_event_id = is.read_uint32()?;
-                },
-                8 => {
+                80 => {
                     self.IFIIJGNGOGP = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IKMNAMKJAFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IKMNAMKJAFA);
+        }
+        if self.rogue_dialogue_event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.rogue_dialogue_event_id);
+        }
         if self.FAHIHDJFOHM != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.FAHIHDJFOHM);
         }
-        if self.IKMNAMKJAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IKMNAMKJAFA);
-        }
-        if self.rogue_dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.rogue_dialogue_event_id);
-        }
         if self.IFIIJGNGOGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IFIIJGNGOGP);
+            my_size += ::protobuf::rt::uint32_size(10, self.IFIIJGNGOGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.IKMNAMKJAFA != 0 {
+            os.write_uint32(15, self.IKMNAMKJAFA)?;
+        }
+        if self.rogue_dialogue_event_id != 0 {
+            os.write_uint32(12, self.rogue_dialogue_event_id)?;
+        }
         if self.FAHIHDJFOHM != 0 {
             os.write_uint32(14, self.FAHIHDJFOHM)?;
         }
-        if self.IKMNAMKJAFA != 0 {
-            os.write_uint32(13, self.IKMNAMKJAFA)?;
-        }
-        if self.rogue_dialogue_event_id != 0 {
-            os.write_uint32(5, self.rogue_dialogue_event_id)?;
-        }
         if self.IFIIJGNGOGP != 0 {
-            os.write_uint32(1, self.IFIIJGNGOGP)?;
+            os.write_uint32(10, self.IFIIJGNGOGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     }
 
     fn clear(&mut self) {
-        self.FAHIHDJFOHM = 0;
         self.IKMNAMKJAFA = 0;
         self.rogue_dialogue_event_id = 0;
+        self.FAHIHDJFOHM = 0;
         self.IFIIJGNGOGP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectChessRogueSubStoryCsReq {
         static instance: SelectChessRogueSubStoryCsReq = SelectChessRogueSubStoryCsReq {
-            FAHIHDJFOHM: 0,
             IKMNAMKJAFA: 0,
             rogue_dialogue_event_id: 0,
+            FAHIHDJFOHM: 0,
             IFIIJGNGOGP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SelectChessRogueSubStoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SelectChessRogueSubStoryCsReq.proto\"\xbc\x01\n\x1dSelectChessRogueSu\
-    bStoryCsReq\x12\x20\n\x0bFAHIHDJFOHM\x18\x0e\x20\x01(\rR\x0bFAHIHDJFOHM\
-    \x12\x20\n\x0bIKMNAMKJAFA\x18\r\x20\x01(\rR\x0bIKMNAMKJAFA\x125\n\x17rog\
-    ue_dialogue_event_id\x18\x05\x20\x01(\rR\x14rogueDialogueEventId\x12\x20\
-    \n\x0bIFIIJGNGOGP\x18\x01\x20\x01(\rR\x0bIFIIJGNGOGPb\x06proto3\
+    bStoryCsReq\x12\x20\n\x0bIKMNAMKJAFA\x18\x0f\x20\x01(\rR\x0bIKMNAMKJAFA\
+    \x125\n\x17rogue_dialogue_event_id\x18\x0c\x20\x01(\rR\x14rogueDialogueE\
+    ventId\x12\x20\n\x0bFAHIHDJFOHM\x18\x0e\x20\x01(\rR\x0bFAHIHDJFOHM\x12\
+    \x20\n\x0bIFIIJGNGOGP\x18\n\x20\x01(\rR\x0bIFIIJGNGOGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

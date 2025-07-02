@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChapterBrief {
     // message fields
-    // @@protoc_insertion_point(field:ChapterBrief.is_new)
-    pub is_new: bool,
     // @@protoc_insertion_point(field:ChapterBrief.taken_reward_id_list)
     pub taken_reward_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChapterBrief.NCKELKEGBGL)
     pub NCKELKEGBGL: u32,
+    // @@protoc_insertion_point(field:ChapterBrief.is_new)
+    pub is_new: bool,
     // @@protoc_insertion_point(field:ChapterBrief.id)
     pub id: u32,
     // special fields
@@ -55,11 +55,6 @@ impl ChapterBrief {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_new",
-            |m: &ChapterBrief| { &m.is_new },
-            |m: &mut ChapterBrief| { &mut m.is_new },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "taken_reward_id_list",
             |m: &ChapterBrief| { &m.taken_reward_id_list },
@@ -69,6 +64,11 @@ impl ChapterBrief {
             "NCKELKEGBGL",
             |m: &ChapterBrief| { &m.NCKELKEGBGL },
             |m: &mut ChapterBrief| { &mut m.NCKELKEGBGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_new",
+            |m: &ChapterBrief| { &m.is_new },
+            |m: &mut ChapterBrief| { &mut m.is_new },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for ChapterBrief {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_new = is.read_bool()?;
-                },
-                122 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_reward_id_list)?;
                 },
-                120 => {
+                40 => {
                     self.taken_reward_id_list.push(is.read_uint32()?);
                 },
-                64 => {
+                96 => {
                     self.NCKELKEGBGL = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
+                    self.is_new = is.read_bool()?;
+                },
+                80 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for ChapterBrief {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.taken_reward_id_list);
+        if self.NCKELKEGBGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NCKELKEGBGL);
+        }
         if self.is_new != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.taken_reward_id_list);
-        if self.NCKELKEGBGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NCKELKEGBGL);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.id);
+            my_size += ::protobuf::rt::uint32_size(10, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ChapterBrief {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_new != false {
-            os.write_bool(14, self.is_new)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.taken_reward_id_list)?;
+        os.write_repeated_packed_uint32(5, &self.taken_reward_id_list)?;
         if self.NCKELKEGBGL != 0 {
-            os.write_uint32(8, self.NCKELKEGBGL)?;
+            os.write_uint32(12, self.NCKELKEGBGL)?;
+        }
+        if self.is_new != false {
+            os.write_bool(1, self.is_new)?;
         }
         if self.id != 0 {
-            os.write_uint32(11, self.id)?;
+            os.write_uint32(10, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for ChapterBrief {
     }
 
     fn clear(&mut self) {
-        self.is_new = false;
         self.taken_reward_id_list.clear();
         self.NCKELKEGBGL = 0;
+        self.is_new = false;
         self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChapterBrief {
         static instance: ChapterBrief = ChapterBrief {
-            is_new: false,
             taken_reward_id_list: ::std::vec::Vec::new(),
             NCKELKEGBGL: 0,
+            is_new: false,
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for ChapterBrief {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12ChapterBrief.proto\"\x88\x01\n\x0cChapterBrief\x12\x15\n\x06is_new\
-    \x18\x0e\x20\x01(\x08R\x05isNew\x12/\n\x14taken_reward_id_list\x18\x0f\
-    \x20\x03(\rR\x11takenRewardIdList\x12\x20\n\x0bNCKELKEGBGL\x18\x08\x20\
-    \x01(\rR\x0bNCKELKEGBGL\x12\x0e\n\x02id\x18\x0b\x20\x01(\rR\x02idb\x06pr\
-    oto3\
+    \n\x12ChapterBrief.proto\"\x88\x01\n\x0cChapterBrief\x12/\n\x14taken_rew\
+    ard_id_list\x18\x05\x20\x03(\rR\x11takenRewardIdList\x12\x20\n\x0bNCKELK\
+    EGBGL\x18\x0c\x20\x01(\rR\x0bNCKELKEGBGL\x12\x15\n\x06is_new\x18\x01\x20\
+    \x01(\x08R\x05isNew\x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

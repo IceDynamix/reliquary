@@ -29,74 +29,74 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdAetherDivideType {
     // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTypeNone)
     CmdAetherDivideTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTakeChallengeRewardScRsp)
-    CmdAetherDivideTakeChallengeRewardScRsp = 4808,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritInfoScNotify)
-    CmdAetherDivideSpiritInfoScNotify = 4818,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdClearAetherDividePassiveSkillScRsp)
-    CmdClearAetherDividePassiveSkillScRsp = 4823,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSkillItemScNotify)
-    CmdAetherDivideSkillItemScNotify = 4811,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTakeChallengeRewardCsReq)
-    CmdAetherDivideTakeChallengeRewardCsReq = 4814,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideInfoScRsp)
-    CmdGetAetherDivideInfoScRsp = 4807,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideStageBattleScRsp)
-    CmdStartAetherDivideStageBattleScRsp = 4842,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideLineupScNotify)
-    CmdAetherDivideLineupScNotify = 4813,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEquipAetherDividePassiveSkillCsReq)
-    CmdEquipAetherDividePassiveSkillCsReq = 4820,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdLeaveAetherDivideSceneCsReq)
-    CmdLeaveAetherDivideSceneCsReq = 4802,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSwitchAetherDivideLineUpSlotScRsp)
-    CmdSwitchAetherDivideLineUpSlotScRsp = 4822,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessScNotify)
-    CmdAetherDivideRefreshEndlessScNotify = 4849,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideChallengeBattleScRsp)
-    CmdStartAetherDivideChallengeBattleScRsp = 4815,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSetAetherDivideLineUpCsReq)
-    CmdSetAetherDivideLineUpCsReq = 4850,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideChallengeInfoScRsp)
-    CmdGetAetherDivideChallengeInfoScRsp = 4805,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTainerInfoScNotify)
-    CmdAetherDivideTainerInfoScNotify = 4839,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdLeaveAetherDivideSceneScRsp)
-    CmdLeaveAetherDivideSceneScRsp = 4837,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEnterAetherDivideSceneCsReq)
-    CmdEnterAetherDivideSceneCsReq = 4804,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEnterAetherDivideSceneScRsp)
-    CmdEnterAetherDivideSceneScRsp = 4846,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideChallengeInfoCsReq)
-    CmdGetAetherDivideChallengeInfoCsReq = 4801,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideChallengeBattleCsReq)
-    CmdStartAetherDivideChallengeBattleCsReq = 4827,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritExpUpCsReq)
-    CmdAetherDivideSpiritExpUpCsReq = 4829,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessScRsp)
-    CmdAetherDivideRefreshEndlessScRsp = 4821,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSetAetherDivideLineUpScRsp)
-    CmdSetAetherDivideLineUpScRsp = 4840,
     // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideFinishChallengeScNotify)
-    CmdAetherDivideFinishChallengeScNotify = 4835,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEquipAetherDividePassiveSkillScRsp)
-    CmdEquipAetherDividePassiveSkillScRsp = 4844,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideSceneBattleScRsp)
-    CmdStartAetherDivideSceneBattleScRsp = 4817,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdClearAetherDividePassiveSkillCsReq)
-    CmdClearAetherDividePassiveSkillCsReq = 4832,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritExpUpScRsp)
-    CmdAetherDivideSpiritExpUpScRsp = 4834,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSwitchAetherDivideLineUpSlotCsReq)
-    CmdSwitchAetherDivideLineUpSlotCsReq = 4826,
+    CmdAetherDivideFinishChallengeScNotify = 4820,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEnterAetherDivideSceneScRsp)
+    CmdEnterAetherDivideSceneScRsp = 4827,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdLeaveAetherDivideSceneCsReq)
+    CmdLeaveAetherDivideSceneCsReq = 4818,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSwitchAetherDivideLineUpSlotScRsp)
+    CmdSwitchAetherDivideLineUpSlotScRsp = 4843,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideChallengeInfoScRsp)
+    CmdGetAetherDivideChallengeInfoScRsp = 4801,
     // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideInfoCsReq)
     CmdGetAetherDivideInfoCsReq = 4845,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideSceneBattleCsReq)
-    CmdStartAetherDivideSceneBattleCsReq = 4836,
-    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessCsReq)
-    CmdAetherDivideRefreshEndlessCsReq = 4806,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideSceneBattleScRsp)
+    CmdStartAetherDivideSceneBattleScRsp = 4837,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideChallengeInfoCsReq)
+    CmdGetAetherDivideChallengeInfoCsReq = 4814,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTakeChallengeRewardCsReq)
+    CmdAetherDivideTakeChallengeRewardCsReq = 4809,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritExpUpScRsp)
+    CmdAetherDivideSpiritExpUpScRsp = 4840,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEquipAetherDividePassiveSkillCsReq)
+    CmdEquipAetherDividePassiveSkillCsReq = 4826,
     // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideStageBattleCsReq)
-    CmdStartAetherDivideStageBattleCsReq = 4816,
+    CmdStartAetherDivideStageBattleCsReq = 4830,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessScRsp)
+    CmdAetherDivideRefreshEndlessScRsp = 4835,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessScNotify)
+    CmdAetherDivideRefreshEndlessScNotify = 4847,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSwitchAetherDivideLineUpSlotCsReq)
+    CmdSwitchAetherDivideLineUpSlotCsReq = 4825,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdClearAetherDividePassiveSkillScRsp)
+    CmdClearAetherDividePassiveSkillScRsp = 4822,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideRefreshEndlessCsReq)
+    CmdAetherDivideRefreshEndlessCsReq = 4804,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideSceneBattleCsReq)
+    CmdStartAetherDivideSceneBattleCsReq = 4811,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritExpUpCsReq)
+    CmdAetherDivideSpiritExpUpCsReq = 4813,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEnterAetherDivideSceneCsReq)
+    CmdEnterAetherDivideSceneCsReq = 4849,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSetAetherDivideLineUpScRsp)
+    CmdSetAetherDivideLineUpScRsp = 4819,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSpiritInfoScNotify)
+    CmdAetherDivideSpiritInfoScNotify = 4824,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTainerInfoScNotify)
+    CmdAetherDivideTainerInfoScNotify = 4816,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideLineupScNotify)
+    CmdAetherDivideLineupScNotify = 4831,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideTakeChallengeRewardScRsp)
+    CmdAetherDivideTakeChallengeRewardScRsp = 4850,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdAetherDivideSkillItemScNotify)
+    CmdAetherDivideSkillItemScNotify = 4848,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdGetAetherDivideInfoScRsp)
+    CmdGetAetherDivideInfoScRsp = 4806,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdSetAetherDivideLineUpCsReq)
+    CmdSetAetherDivideLineUpCsReq = 4828,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideChallengeBattleCsReq)
+    CmdStartAetherDivideChallengeBattleCsReq = 4817,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdEquipAetherDividePassiveSkillScRsp)
+    CmdEquipAetherDividePassiveSkillScRsp = 4834,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdLeaveAetherDivideSceneScRsp)
+    CmdLeaveAetherDivideSceneScRsp = 4836,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdClearAetherDividePassiveSkillCsReq)
+    CmdClearAetherDividePassiveSkillCsReq = 4846,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideStageBattleScRsp)
+    CmdStartAetherDivideStageBattleScRsp = 4803,
+    // @@protoc_insertion_point(enum_value:CmdAetherDivideType.CmdStartAetherDivideChallengeBattleScRsp)
+    CmdStartAetherDivideChallengeBattleScRsp = 4839,
 }
 
 impl ::protobuf::Enum for CmdAetherDivideType {
@@ -109,40 +109,40 @@ impl ::protobuf::Enum for CmdAetherDivideType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdAetherDivideType> {
         match value {
             0 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTypeNone),
-            4808 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp),
-            4818 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify),
-            4823 => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp),
-            4811 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSkillItemScNotify),
-            4814 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq),
-            4807 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoScRsp),
-            4842 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp),
-            4813 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideLineupScNotify),
-            4820 => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq),
-            4802 => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq),
-            4822 => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp),
-            4849 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify),
-            4815 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp),
-            4850 => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq),
-            4805 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp),
-            4839 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify),
-            4837 => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp),
-            4804 => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq),
-            4846 => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp),
-            4801 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq),
-            4827 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq),
-            4829 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq),
-            4821 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp),
-            4840 => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp),
-            4835 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify),
-            4844 => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp),
-            4817 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp),
-            4832 => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq),
-            4834 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp),
-            4826 => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq),
+            4820 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify),
+            4827 => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp),
+            4818 => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq),
+            4843 => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp),
+            4801 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp),
             4845 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoCsReq),
-            4836 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq),
-            4806 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq),
-            4816 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq),
+            4837 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp),
+            4814 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq),
+            4809 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq),
+            4840 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp),
+            4826 => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq),
+            4830 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq),
+            4835 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp),
+            4847 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify),
+            4825 => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq),
+            4822 => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp),
+            4804 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq),
+            4811 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq),
+            4813 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq),
+            4849 => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq),
+            4819 => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp),
+            4824 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify),
+            4816 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify),
+            4831 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideLineupScNotify),
+            4850 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp),
+            4848 => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSkillItemScNotify),
+            4806 => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoScRsp),
+            4828 => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq),
+            4817 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq),
+            4834 => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp),
+            4836 => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp),
+            4846 => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq),
+            4803 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp),
+            4839 => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -150,80 +150,80 @@ impl ::protobuf::Enum for CmdAetherDivideType {
     fn from_str(str: &str) -> ::std::option::Option<CmdAetherDivideType> {
         match str {
             "CmdAetherDivideTypeNone" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTypeNone),
-            "CmdAetherDivideTakeChallengeRewardScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp),
-            "CmdAetherDivideSpiritInfoScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify),
-            "CmdClearAetherDividePassiveSkillScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp),
-            "CmdAetherDivideSkillItemScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSkillItemScNotify),
-            "CmdAetherDivideTakeChallengeRewardCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq),
-            "CmdGetAetherDivideInfoScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoScRsp),
-            "CmdStartAetherDivideStageBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp),
-            "CmdAetherDivideLineupScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideLineupScNotify),
-            "CmdEquipAetherDividePassiveSkillCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq),
+            "CmdAetherDivideFinishChallengeScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify),
+            "CmdEnterAetherDivideSceneScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp),
             "CmdLeaveAetherDivideSceneCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq),
             "CmdSwitchAetherDivideLineUpSlotScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp),
-            "CmdAetherDivideRefreshEndlessScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify),
-            "CmdStartAetherDivideChallengeBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp),
-            "CmdSetAetherDivideLineUpCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq),
             "CmdGetAetherDivideChallengeInfoScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp),
-            "CmdAetherDivideTainerInfoScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify),
-            "CmdLeaveAetherDivideSceneScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp),
-            "CmdEnterAetherDivideSceneCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq),
-            "CmdEnterAetherDivideSceneScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp),
-            "CmdGetAetherDivideChallengeInfoCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq),
-            "CmdStartAetherDivideChallengeBattleCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq),
-            "CmdAetherDivideSpiritExpUpCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq),
-            "CmdAetherDivideRefreshEndlessScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp),
-            "CmdSetAetherDivideLineUpScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp),
-            "CmdAetherDivideFinishChallengeScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify),
-            "CmdEquipAetherDividePassiveSkillScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp),
-            "CmdStartAetherDivideSceneBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp),
-            "CmdClearAetherDividePassiveSkillCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq),
-            "CmdAetherDivideSpiritExpUpScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp),
-            "CmdSwitchAetherDivideLineUpSlotCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq),
             "CmdGetAetherDivideInfoCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoCsReq),
-            "CmdStartAetherDivideSceneBattleCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq),
-            "CmdAetherDivideRefreshEndlessCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq),
+            "CmdStartAetherDivideSceneBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp),
+            "CmdGetAetherDivideChallengeInfoCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq),
+            "CmdAetherDivideTakeChallengeRewardCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq),
+            "CmdAetherDivideSpiritExpUpScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp),
+            "CmdEquipAetherDividePassiveSkillCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq),
             "CmdStartAetherDivideStageBattleCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq),
+            "CmdAetherDivideRefreshEndlessScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp),
+            "CmdAetherDivideRefreshEndlessScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify),
+            "CmdSwitchAetherDivideLineUpSlotCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq),
+            "CmdClearAetherDividePassiveSkillScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp),
+            "CmdAetherDivideRefreshEndlessCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq),
+            "CmdStartAetherDivideSceneBattleCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq),
+            "CmdAetherDivideSpiritExpUpCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq),
+            "CmdEnterAetherDivideSceneCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq),
+            "CmdSetAetherDivideLineUpScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp),
+            "CmdAetherDivideSpiritInfoScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify),
+            "CmdAetherDivideTainerInfoScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify),
+            "CmdAetherDivideLineupScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideLineupScNotify),
+            "CmdAetherDivideTakeChallengeRewardScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp),
+            "CmdAetherDivideSkillItemScNotify" => ::std::option::Option::Some(CmdAetherDivideType::CmdAetherDivideSkillItemScNotify),
+            "CmdGetAetherDivideInfoScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdGetAetherDivideInfoScRsp),
+            "CmdSetAetherDivideLineUpCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq),
+            "CmdStartAetherDivideChallengeBattleCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq),
+            "CmdEquipAetherDividePassiveSkillScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp),
+            "CmdLeaveAetherDivideSceneScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp),
+            "CmdClearAetherDividePassiveSkillCsReq" => ::std::option::Option::Some(CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq),
+            "CmdStartAetherDivideStageBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp),
+            "CmdStartAetherDivideChallengeBattleScRsp" => ::std::option::Option::Some(CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAetherDivideType] = &[
         CmdAetherDivideType::CmdAetherDivideTypeNone,
-        CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp,
-        CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify,
-        CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp,
-        CmdAetherDivideType::CmdAetherDivideSkillItemScNotify,
-        CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq,
-        CmdAetherDivideType::CmdGetAetherDivideInfoScRsp,
-        CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp,
-        CmdAetherDivideType::CmdAetherDivideLineupScNotify,
-        CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq,
+        CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify,
+        CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp,
         CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq,
         CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp,
-        CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify,
-        CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp,
-        CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq,
         CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp,
-        CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify,
-        CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp,
-        CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq,
-        CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp,
-        CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq,
-        CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq,
-        CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq,
-        CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp,
-        CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp,
-        CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify,
-        CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp,
-        CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp,
-        CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq,
-        CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp,
-        CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq,
         CmdAetherDivideType::CmdGetAetherDivideInfoCsReq,
-        CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq,
-        CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq,
+        CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp,
+        CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq,
+        CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq,
+        CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp,
+        CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq,
         CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq,
+        CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp,
+        CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify,
+        CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq,
+        CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp,
+        CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq,
+        CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq,
+        CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq,
+        CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq,
+        CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp,
+        CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify,
+        CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify,
+        CmdAetherDivideType::CmdAetherDivideLineupScNotify,
+        CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp,
+        CmdAetherDivideType::CmdAetherDivideSkillItemScNotify,
+        CmdAetherDivideType::CmdGetAetherDivideInfoScRsp,
+        CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq,
+        CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq,
+        CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp,
+        CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp,
+        CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq,
+        CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp,
+        CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp,
     ];
 }
 
@@ -236,40 +236,40 @@ impl ::protobuf::EnumFull for CmdAetherDivideType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdAetherDivideType::CmdAetherDivideTypeNone => 0,
-            CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp => 1,
-            CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify => 2,
-            CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp => 3,
-            CmdAetherDivideType::CmdAetherDivideSkillItemScNotify => 4,
-            CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq => 5,
-            CmdAetherDivideType::CmdGetAetherDivideInfoScRsp => 6,
-            CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp => 7,
-            CmdAetherDivideType::CmdAetherDivideLineupScNotify => 8,
-            CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq => 9,
-            CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq => 10,
-            CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp => 11,
-            CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify => 12,
-            CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp => 13,
-            CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq => 14,
-            CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp => 15,
-            CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify => 16,
-            CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp => 17,
-            CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq => 18,
-            CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp => 19,
-            CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq => 20,
-            CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq => 21,
-            CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq => 22,
-            CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp => 23,
-            CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp => 24,
-            CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify => 25,
-            CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp => 26,
-            CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp => 27,
-            CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq => 28,
-            CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp => 29,
-            CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq => 30,
-            CmdAetherDivideType::CmdGetAetherDivideInfoCsReq => 31,
-            CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq => 32,
-            CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq => 33,
-            CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq => 34,
+            CmdAetherDivideType::CmdAetherDivideFinishChallengeScNotify => 1,
+            CmdAetherDivideType::CmdEnterAetherDivideSceneScRsp => 2,
+            CmdAetherDivideType::CmdLeaveAetherDivideSceneCsReq => 3,
+            CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotScRsp => 4,
+            CmdAetherDivideType::CmdGetAetherDivideChallengeInfoScRsp => 5,
+            CmdAetherDivideType::CmdGetAetherDivideInfoCsReq => 6,
+            CmdAetherDivideType::CmdStartAetherDivideSceneBattleScRsp => 7,
+            CmdAetherDivideType::CmdGetAetherDivideChallengeInfoCsReq => 8,
+            CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardCsReq => 9,
+            CmdAetherDivideType::CmdAetherDivideSpiritExpUpScRsp => 10,
+            CmdAetherDivideType::CmdEquipAetherDividePassiveSkillCsReq => 11,
+            CmdAetherDivideType::CmdStartAetherDivideStageBattleCsReq => 12,
+            CmdAetherDivideType::CmdAetherDivideRefreshEndlessScRsp => 13,
+            CmdAetherDivideType::CmdAetherDivideRefreshEndlessScNotify => 14,
+            CmdAetherDivideType::CmdSwitchAetherDivideLineUpSlotCsReq => 15,
+            CmdAetherDivideType::CmdClearAetherDividePassiveSkillScRsp => 16,
+            CmdAetherDivideType::CmdAetherDivideRefreshEndlessCsReq => 17,
+            CmdAetherDivideType::CmdStartAetherDivideSceneBattleCsReq => 18,
+            CmdAetherDivideType::CmdAetherDivideSpiritExpUpCsReq => 19,
+            CmdAetherDivideType::CmdEnterAetherDivideSceneCsReq => 20,
+            CmdAetherDivideType::CmdSetAetherDivideLineUpScRsp => 21,
+            CmdAetherDivideType::CmdAetherDivideSpiritInfoScNotify => 22,
+            CmdAetherDivideType::CmdAetherDivideTainerInfoScNotify => 23,
+            CmdAetherDivideType::CmdAetherDivideLineupScNotify => 24,
+            CmdAetherDivideType::CmdAetherDivideTakeChallengeRewardScRsp => 25,
+            CmdAetherDivideType::CmdAetherDivideSkillItemScNotify => 26,
+            CmdAetherDivideType::CmdGetAetherDivideInfoScRsp => 27,
+            CmdAetherDivideType::CmdSetAetherDivideLineUpCsReq => 28,
+            CmdAetherDivideType::CmdStartAetherDivideChallengeBattleCsReq => 29,
+            CmdAetherDivideType::CmdEquipAetherDividePassiveSkillScRsp => 30,
+            CmdAetherDivideType::CmdLeaveAetherDivideSceneScRsp => 31,
+            CmdAetherDivideType::CmdClearAetherDividePassiveSkillCsReq => 32,
+            CmdAetherDivideType::CmdStartAetherDivideStageBattleScRsp => 33,
+            CmdAetherDivideType::CmdStartAetherDivideChallengeBattleScRsp => 34,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -289,32 +289,32 @@ impl CmdAetherDivideType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdAetherDivideType.proto*\xa6\x0b\n\x13CmdAetherDivideType\x12\
-    \x1b\n\x17CmdAetherDivideTypeNone\x10\0\x12,\n'CmdAetherDivideTakeChalle\
-    ngeRewardScRsp\x10\xc8%\x12&\n!CmdAetherDivideSpiritInfoScNotify\x10\xd2\
-    %\x12*\n%CmdClearAetherDividePassiveSkillScRsp\x10\xd7%\x12%\n\x20CmdAet\
-    herDivideSkillItemScNotify\x10\xcb%\x12,\n'CmdAetherDivideTakeChallengeR\
-    ewardCsReq\x10\xce%\x12\x20\n\x1bCmdGetAetherDivideInfoScRsp\x10\xc7%\
-    \x12)\n$CmdStartAetherDivideStageBattleScRsp\x10\xea%\x12\"\n\x1dCmdAeth\
-    erDivideLineupScNotify\x10\xcd%\x12*\n%CmdEquipAetherDividePassiveSkillC\
-    sReq\x10\xd4%\x12#\n\x1eCmdLeaveAetherDivideSceneCsReq\x10\xc2%\x12)\n$C\
-    mdSwitchAetherDivideLineUpSlotScRsp\x10\xd6%\x12*\n%CmdAetherDivideRefre\
-    shEndlessScNotify\x10\xf1%\x12-\n(CmdStartAetherDivideChallengeBattleScR\
-    sp\x10\xcf%\x12\"\n\x1dCmdSetAetherDivideLineUpCsReq\x10\xf2%\x12)\n$Cmd\
-    GetAetherDivideChallengeInfoScRsp\x10\xc5%\x12&\n!CmdAetherDivideTainerI\
-    nfoScNotify\x10\xe7%\x12#\n\x1eCmdLeaveAetherDivideSceneScRsp\x10\xe5%\
-    \x12#\n\x1eCmdEnterAetherDivideSceneCsReq\x10\xc4%\x12#\n\x1eCmdEnterAet\
-    herDivideSceneScRsp\x10\xee%\x12)\n$CmdGetAetherDivideChallengeInfoCsReq\
-    \x10\xc1%\x12-\n(CmdStartAetherDivideChallengeBattleCsReq\x10\xdb%\x12$\
-    \n\x1fCmdAetherDivideSpiritExpUpCsReq\x10\xdd%\x12'\n\"CmdAetherDivideRe\
-    freshEndlessScRsp\x10\xd5%\x12\"\n\x1dCmdSetAetherDivideLineUpScRsp\x10\
-    \xe8%\x12+\n&CmdAetherDivideFinishChallengeScNotify\x10\xe3%\x12*\n%CmdE\
-    quipAetherDividePassiveSkillScRsp\x10\xec%\x12)\n$CmdStartAetherDivideSc\
-    eneBattleScRsp\x10\xd1%\x12*\n%CmdClearAetherDividePassiveSkillCsReq\x10\
-    \xe0%\x12$\n\x1fCmdAetherDivideSpiritExpUpScRsp\x10\xe2%\x12)\n$CmdSwitc\
-    hAetherDivideLineUpSlotCsReq\x10\xda%\x12\x20\n\x1bCmdGetAetherDivideInf\
-    oCsReq\x10\xed%\x12)\n$CmdStartAetherDivideSceneBattleCsReq\x10\xe4%\x12\
-    '\n\"CmdAetherDivideRefreshEndlessCsReq\x10\xc6%\x12)\n$CmdStartAetherDi\
-    videStageBattleCsReq\x10\xd0%b\x06proto3\
+    \x1b\n\x17CmdAetherDivideTypeNone\x10\0\x12+\n&CmdAetherDivideFinishChal\
+    lengeScNotify\x10\xd4%\x12#\n\x1eCmdEnterAetherDivideSceneScRsp\x10\xdb%\
+    \x12#\n\x1eCmdLeaveAetherDivideSceneCsReq\x10\xd2%\x12)\n$CmdSwitchAethe\
+    rDivideLineUpSlotScRsp\x10\xeb%\x12)\n$CmdGetAetherDivideChallengeInfoSc\
+    Rsp\x10\xc1%\x12\x20\n\x1bCmdGetAetherDivideInfoCsReq\x10\xed%\x12)\n$Cm\
+    dStartAetherDivideSceneBattleScRsp\x10\xe5%\x12)\n$CmdGetAetherDivideCha\
+    llengeInfoCsReq\x10\xce%\x12,\n'CmdAetherDivideTakeChallengeRewardCsReq\
+    \x10\xc9%\x12$\n\x1fCmdAetherDivideSpiritExpUpScRsp\x10\xe8%\x12*\n%CmdE\
+    quipAetherDividePassiveSkillCsReq\x10\xda%\x12)\n$CmdStartAetherDivideSt\
+    ageBattleCsReq\x10\xde%\x12'\n\"CmdAetherDivideRefreshEndlessScRsp\x10\
+    \xe3%\x12*\n%CmdAetherDivideRefreshEndlessScNotify\x10\xef%\x12)\n$CmdSw\
+    itchAetherDivideLineUpSlotCsReq\x10\xd9%\x12*\n%CmdClearAetherDividePass\
+    iveSkillScRsp\x10\xd6%\x12'\n\"CmdAetherDivideRefreshEndlessCsReq\x10\
+    \xc4%\x12)\n$CmdStartAetherDivideSceneBattleCsReq\x10\xcb%\x12$\n\x1fCmd\
+    AetherDivideSpiritExpUpCsReq\x10\xcd%\x12#\n\x1eCmdEnterAetherDivideScen\
+    eCsReq\x10\xf1%\x12\"\n\x1dCmdSetAetherDivideLineUpScRsp\x10\xd3%\x12&\n\
+    !CmdAetherDivideSpiritInfoScNotify\x10\xd8%\x12&\n!CmdAetherDivideTainer\
+    InfoScNotify\x10\xd0%\x12\"\n\x1dCmdAetherDivideLineupScNotify\x10\xdf%\
+    \x12,\n'CmdAetherDivideTakeChallengeRewardScRsp\x10\xf2%\x12%\n\x20CmdAe\
+    therDivideSkillItemScNotify\x10\xf0%\x12\x20\n\x1bCmdGetAetherDivideInfo\
+    ScRsp\x10\xc6%\x12\"\n\x1dCmdSetAetherDivideLineUpCsReq\x10\xdc%\x12-\n(\
+    CmdStartAetherDivideChallengeBattleCsReq\x10\xd1%\x12*\n%CmdEquipAetherD\
+    ividePassiveSkillScRsp\x10\xe2%\x12#\n\x1eCmdLeaveAetherDivideSceneScRsp\
+    \x10\xe4%\x12*\n%CmdClearAetherDividePassiveSkillCsReq\x10\xee%\x12)\n$C\
+    mdStartAetherDivideStageBattleScRsp\x10\xc3%\x12-\n(CmdStartAetherDivide\
+    ChallengeBattleScRsp\x10\xe7%b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

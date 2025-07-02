@@ -79,13 +79,13 @@ impl ::protobuf::Message for INDFFNNHOHC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                72 => {
                     self.area_id = is.read_uint32()?;
                 },
-                90 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.ELFPHFPKBFI)?;
                 },
-                88 => {
+                96 => {
                     self.ELFPHFPKBFI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for INDFFNNHOHC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ELFPHFPKBFI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.ELFPHFPKBFI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for INDFFNNHOHC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(13, self.area_id)?;
+            os.write_uint32(9, self.area_id)?;
         }
-        os.write_repeated_packed_uint32(11, &self.ELFPHFPKBFI)?;
+        os.write_repeated_packed_uint32(12, &self.ELFPHFPKBFI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for INDFFNNHOHC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11INDFFNNHOHC.proto\"H\n\x0bINDFFNNHOHC\x12\x17\n\x07area_id\x18\r\
-    \x20\x01(\rR\x06areaId\x12\x20\n\x0bELFPHFPKBFI\x18\x0b\x20\x03(\rR\x0bE\
+    \n\x11INDFFNNHOHC.proto\"H\n\x0bINDFFNNHOHC\x12\x17\n\x07area_id\x18\t\
+    \x20\x01(\rR\x06areaId\x12\x20\n\x0bELFPHFPKBFI\x18\x0c\x20\x03(\rR\x0bE\
     LFPHFPKBFIb\x06proto3\
 ";
 

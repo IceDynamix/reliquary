@@ -82,7 +82,7 @@ impl ::protobuf::Message for MechanismBarInfo {
                 24 => {
                     self.value = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.OHDEOIGHIEM = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MechanismBarInfo {
             my_size += ::protobuf::rt::uint32_size(3, self.value);
         }
         if self.OHDEOIGHIEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OHDEOIGHIEM);
+            my_size += ::protobuf::rt::uint32_size(12, self.OHDEOIGHIEM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for MechanismBarInfo {
             os.write_uint32(3, self.value)?;
         }
         if self.OHDEOIGHIEM != 0 {
-            os.write_uint32(2, self.OHDEOIGHIEM)?;
+            os.write_uint32(12, self.OHDEOIGHIEM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MechanismBarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16MechanismBarInfo.proto\"J\n\x10MechanismBarInfo\x12\x14\n\x05value\
-    \x18\x03\x20\x01(\rR\x05value\x12\x20\n\x0bOHDEOIGHIEM\x18\x02\x20\x01(\
+    \x18\x03\x20\x01(\rR\x05value\x12\x20\n\x0bOHDEOIGHIEM\x18\x0c\x20\x01(\
     \rR\x0bOHDEOIGHIEMb\x06proto3\
 ";
 

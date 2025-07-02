@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NHEHPGONEPK {
     // message fields
-    // @@protoc_insertion_point(field:NHEHPGONEPK.AMBDKDAMHLH)
-    pub AMBDKDAMHLH: u32,
     // @@protoc_insertion_point(field:NHEHPGONEPK.KOKIIFCMOGL)
     pub KOKIIFCMOGL: ::std::vec::Vec<super::AENOCKPNFCI::AENOCKPNFCI>,
+    // @@protoc_insertion_point(field:NHEHPGONEPK.AMBDKDAMHLH)
+    pub AMBDKDAMHLH: u32,
     // @@protoc_insertion_point(field:NHEHPGONEPK.EEEIONCCING)
     pub EEEIONCCING: bool,
     // special fields
@@ -53,15 +53,15 @@ impl NHEHPGONEPK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMBDKDAMHLH",
-            |m: &NHEHPGONEPK| { &m.AMBDKDAMHLH },
-            |m: &mut NHEHPGONEPK| { &mut m.AMBDKDAMHLH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KOKIIFCMOGL",
             |m: &NHEHPGONEPK| { &m.KOKIIFCMOGL },
             |m: &mut NHEHPGONEPK| { &mut m.KOKIIFCMOGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AMBDKDAMHLH",
+            |m: &NHEHPGONEPK| { &m.AMBDKDAMHLH },
+            |m: &mut NHEHPGONEPK| { &mut m.AMBDKDAMHLH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EEEIONCCING",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for NHEHPGONEPK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.AMBDKDAMHLH = is.read_uint32()?;
-                },
-                82 => {
+                10 => {
                     self.KOKIIFCMOGL.push(is.read_message()?);
                 },
-                72 => {
+                56 => {
+                    self.AMBDKDAMHLH = is.read_uint32()?;
+                },
+                104 => {
                     self.EEEIONCCING = is.read_bool()?;
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for NHEHPGONEPK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMBDKDAMHLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AMBDKDAMHLH);
-        }
         for value in &self.KOKIIFCMOGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.AMBDKDAMHLH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.AMBDKDAMHLH);
+        }
         if self.EEEIONCCING != false {
             my_size += 1 + 1;
         }
@@ -123,14 +123,14 @@ impl ::protobuf::Message for NHEHPGONEPK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMBDKDAMHLH != 0 {
-            os.write_uint32(12, self.AMBDKDAMHLH)?;
-        }
         for v in &self.KOKIIFCMOGL {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.AMBDKDAMHLH != 0 {
+            os.write_uint32(7, self.AMBDKDAMHLH)?;
+        }
         if self.EEEIONCCING != false {
-            os.write_bool(9, self.EEEIONCCING)?;
+            os.write_bool(13, self.EEEIONCCING)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for NHEHPGONEPK {
     }
 
     fn clear(&mut self) {
-        self.AMBDKDAMHLH = 0;
         self.KOKIIFCMOGL.clear();
+        self.AMBDKDAMHLH = 0;
         self.EEEIONCCING = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NHEHPGONEPK {
         static instance: NHEHPGONEPK = NHEHPGONEPK {
-            AMBDKDAMHLH: 0,
             KOKIIFCMOGL: ::std::vec::Vec::new(),
+            AMBDKDAMHLH: 0,
             EEEIONCCING: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for NHEHPGONEPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHEHPGONEPK.proto\x1a\x11AENOCKPNFCI.proto\"\x81\x01\n\x0bNHEHPGON\
-    EPK\x12\x20\n\x0bAMBDKDAMHLH\x18\x0c\x20\x01(\rR\x0bAMBDKDAMHLH\x12.\n\
-    \x0bKOKIIFCMOGL\x18\n\x20\x03(\x0b2\x0c.AENOCKPNFCIR\x0bKOKIIFCMOGL\x12\
-    \x20\n\x0bEEEIONCCING\x18\t\x20\x01(\x08R\x0bEEEIONCCINGb\x06proto3\
+    EPK\x12.\n\x0bKOKIIFCMOGL\x18\x01\x20\x03(\x0b2\x0c.AENOCKPNFCIR\x0bKOKI\
+    IFCMOGL\x12\x20\n\x0bAMBDKDAMHLH\x18\x07\x20\x01(\rR\x0bAMBDKDAMHLH\x12\
+    \x20\n\x0bEEEIONCCING\x18\r\x20\x01(\x08R\x0bEEEIONCCINGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

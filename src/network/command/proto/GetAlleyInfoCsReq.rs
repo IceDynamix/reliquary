@@ -27,11 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:GetAlleyInfoCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAlleyInfoCsReq {
-    // message fields
-    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoCsReq.shop_id)
-    pub shop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAlleyInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,18 +44,8 @@ impl GetAlleyInfoCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &GetAlleyInfoCsReq| { &m.level },
-            |m: &mut GetAlleyInfoCsReq| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &GetAlleyInfoCsReq| { &m.shop_id },
-            |m: &mut GetAlleyInfoCsReq| { &mut m.shop_id },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAlleyInfoCsReq>(
             "GetAlleyInfoCsReq",
             fields,
@@ -79,12 +64,6 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.level = is.read_uint32()?;
-                },
-                112 => {
-                    self.shop_id = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -97,24 +76,12 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.shop_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(13, self.level)?;
-        }
-        if self.shop_id != 0 {
-            os.write_uint32(14, self.shop_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +99,11 @@ impl ::protobuf::Message for GetAlleyInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAlleyInfoCsReq {
         static instance: GetAlleyInfoCsReq = GetAlleyInfoCsReq {
-            level: 0,
-            shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +128,7 @@ impl ::protobuf::reflect::ProtobufValue for GetAlleyInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetAlleyInfoCsReq.proto\"B\n\x11GetAlleyInfoCsReq\x12\x14\n\x05lev\
-    el\x18\r\x20\x01(\rR\x05level\x12\x17\n\x07shop_id\x18\x0e\x20\x01(\rR\
-    \x06shopIdb\x06proto3\
+    \n\x17GetAlleyInfoCsReq.proto\"\x13\n\x11GetAlleyInfoCsReqb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

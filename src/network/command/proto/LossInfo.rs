@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LossInfo {
     // message fields
-    // @@protoc_insertion_point(field:LossInfo.CHDOIBFEHLP)
-    pub CHDOIBFEHLP: u32,
     // @@protoc_insertion_point(field:LossInfo.loss_available_list)
     pub loss_available_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LossInfo.IINCDJPOOMC)
-    pub IINCDJPOOMC: u32,
+    // @@protoc_insertion_point(field:LossInfo.CHDOIBFEHLP)
+    pub CHDOIBFEHLP: u32,
     // @@protoc_insertion_point(field:LossInfo.loss_decision_list)
     pub loss_decision_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LossInfo.IINCDJPOOMC)
+    pub IINCDJPOOMC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LossInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl LossInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHDOIBFEHLP",
-            |m: &LossInfo| { &m.CHDOIBFEHLP },
-            |m: &mut LossInfo| { &mut m.CHDOIBFEHLP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "loss_available_list",
             |m: &LossInfo| { &m.loss_available_list },
             |m: &mut LossInfo| { &mut m.loss_available_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IINCDJPOOMC",
-            |m: &LossInfo| { &m.IINCDJPOOMC },
-            |m: &mut LossInfo| { &mut m.IINCDJPOOMC },
+            "CHDOIBFEHLP",
+            |m: &LossInfo| { &m.CHDOIBFEHLP },
+            |m: &mut LossInfo| { &mut m.CHDOIBFEHLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "loss_decision_list",
             |m: &LossInfo| { &m.loss_decision_list },
             |m: &mut LossInfo| { &mut m.loss_decision_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IINCDJPOOMC",
+            |m: &LossInfo| { &m.IINCDJPOOMC },
+            |m: &mut LossInfo| { &mut m.IINCDJPOOMC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LossInfo>(
             "LossInfo",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for LossInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.CHDOIBFEHLP = is.read_uint32()?;
-                },
-                74 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.loss_available_list)?;
                 },
-                72 => {
+                120 => {
                     self.loss_available_list.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.IINCDJPOOMC = is.read_uint32()?;
+                48 => {
+                    self.CHDOIBFEHLP = is.read_uint32()?;
                 },
-                82 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.loss_decision_list)?;
                 },
-                80 => {
+                88 => {
                     self.loss_decision_list.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.IINCDJPOOMC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for LossInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.loss_available_list);
         if self.CHDOIBFEHLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CHDOIBFEHLP);
+            my_size += ::protobuf::rt::uint32_size(6, self.CHDOIBFEHLP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.loss_available_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.loss_decision_list);
         if self.IINCDJPOOMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IINCDJPOOMC);
+            my_size += ::protobuf::rt::uint32_size(9, self.IINCDJPOOMC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.loss_decision_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(15, &self.loss_available_list)?;
         if self.CHDOIBFEHLP != 0 {
-            os.write_uint32(11, self.CHDOIBFEHLP)?;
+            os.write_uint32(6, self.CHDOIBFEHLP)?;
         }
-        os.write_repeated_packed_uint32(9, &self.loss_available_list)?;
+        os.write_repeated_packed_uint32(11, &self.loss_decision_list)?;
         if self.IINCDJPOOMC != 0 {
-            os.write_uint32(5, self.IINCDJPOOMC)?;
+            os.write_uint32(9, self.IINCDJPOOMC)?;
         }
-        os.write_repeated_packed_uint32(10, &self.loss_decision_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for LossInfo {
     }
 
     fn clear(&mut self) {
-        self.CHDOIBFEHLP = 0;
         self.loss_available_list.clear();
-        self.IINCDJPOOMC = 0;
+        self.CHDOIBFEHLP = 0;
         self.loss_decision_list.clear();
+        self.IINCDJPOOMC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LossInfo {
         static instance: LossInfo = LossInfo {
-            CHDOIBFEHLP: 0,
             loss_available_list: ::std::vec::Vec::new(),
-            IINCDJPOOMC: 0,
+            CHDOIBFEHLP: 0,
             loss_decision_list: ::std::vec::Vec::new(),
+            IINCDJPOOMC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for LossInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eLossInfo.proto\"\xac\x01\n\x08LossInfo\x12\x20\n\x0bCHDOIBFEHLP\
-    \x18\x0b\x20\x01(\rR\x0bCHDOIBFEHLP\x12.\n\x13loss_available_list\x18\t\
-    \x20\x03(\rR\x11lossAvailableList\x12\x20\n\x0bIINCDJPOOMC\x18\x05\x20\
-    \x01(\rR\x0bIINCDJPOOMC\x12,\n\x12loss_decision_list\x18\n\x20\x03(\rR\
-    \x10lossDecisionListb\x06proto3\
+    \n\x0eLossInfo.proto\"\xac\x01\n\x08LossInfo\x12.\n\x13loss_available_li\
+    st\x18\x0f\x20\x03(\rR\x11lossAvailableList\x12\x20\n\x0bCHDOIBFEHLP\x18\
+    \x06\x20\x01(\rR\x0bCHDOIBFEHLP\x12,\n\x12loss_decision_list\x18\x0b\x20\
+    \x03(\rR\x10lossDecisionList\x12\x20\n\x0bIINCDJPOOMC\x18\t\x20\x01(\rR\
+    \x0bIINCDJPOOMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

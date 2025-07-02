@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPassengerPersistentData {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.diary_data_list)
-    pub diary_data_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.CINMLCKBHIM)
     pub CINMLCKBHIM: bool,
-    // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.ALJLKAOELDP)
-    pub ALJLKAOELDP: u32,
+    // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.diary_data_list)
+    pub diary_data_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.record_id)
     pub record_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyPassengerPersistentData.ALJLKAOELDP)
+    pub ALJLKAOELDP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyPassengerPersistentData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl TrainPartyPassengerPersistentData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CINMLCKBHIM",
+            |m: &TrainPartyPassengerPersistentData| { &m.CINMLCKBHIM },
+            |m: &mut TrainPartyPassengerPersistentData| { &mut m.CINMLCKBHIM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "diary_data_list",
             |m: &TrainPartyPassengerPersistentData| { &m.diary_data_list },
             |m: &mut TrainPartyPassengerPersistentData| { &mut m.diary_data_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CINMLCKBHIM",
-            |m: &TrainPartyPassengerPersistentData| { &m.CINMLCKBHIM },
-            |m: &mut TrainPartyPassengerPersistentData| { &mut m.CINMLCKBHIM },
+            "record_id",
+            |m: &TrainPartyPassengerPersistentData| { &m.record_id },
+            |m: &mut TrainPartyPassengerPersistentData| { &mut m.record_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALJLKAOELDP",
             |m: &TrainPartyPassengerPersistentData| { &m.ALJLKAOELDP },
             |m: &mut TrainPartyPassengerPersistentData| { &mut m.ALJLKAOELDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "record_id",
-            |m: &TrainPartyPassengerPersistentData| { &m.record_id },
-            |m: &mut TrainPartyPassengerPersistentData| { &mut m.record_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyPassengerPersistentData>(
             "TrainPartyPassengerPersistentData",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for TrainPartyPassengerPersistentData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.diary_data_list)?;
-                },
-                88 => {
-                    self.diary_data_list.push(is.read_uint32()?);
-                },
-                64 => {
+                96 => {
                     self.CINMLCKBHIM = is.read_bool()?;
                 },
-                32 => {
-                    self.ALJLKAOELDP = is.read_uint32()?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.diary_data_list)?;
                 },
                 48 => {
+                    self.diary_data_list.push(is.read_uint32()?);
+                },
+                80 => {
                     self.record_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.ALJLKAOELDP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for TrainPartyPassengerPersistentData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.diary_data_list);
         if self.CINMLCKBHIM != false {
             my_size += 1 + 1;
         }
-        if self.ALJLKAOELDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ALJLKAOELDP);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.diary_data_list);
         if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.record_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.record_id);
+        }
+        if self.ALJLKAOELDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ALJLKAOELDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for TrainPartyPassengerPersistentData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.diary_data_list)?;
         if self.CINMLCKBHIM != false {
-            os.write_bool(8, self.CINMLCKBHIM)?;
+            os.write_bool(12, self.CINMLCKBHIM)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.diary_data_list)?;
+        if self.record_id != 0 {
+            os.write_uint32(10, self.record_id)?;
         }
         if self.ALJLKAOELDP != 0 {
-            os.write_uint32(4, self.ALJLKAOELDP)?;
-        }
-        if self.record_id != 0 {
-            os.write_uint32(6, self.record_id)?;
+            os.write_uint32(11, self.ALJLKAOELDP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for TrainPartyPassengerPersistentData {
     }
 
     fn clear(&mut self) {
-        self.diary_data_list.clear();
         self.CINMLCKBHIM = false;
-        self.ALJLKAOELDP = 0;
+        self.diary_data_list.clear();
         self.record_id = 0;
+        self.ALJLKAOELDP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassengerPersistentData {
         static instance: TrainPartyPassengerPersistentData = TrainPartyPassengerPersistentData {
-            diary_data_list: ::std::vec::Vec::new(),
             CINMLCKBHIM: false,
-            ALJLKAOELDP: 0,
+            diary_data_list: ::std::vec::Vec::new(),
             record_id: 0,
+            ALJLKAOELDP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerPersistentData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TrainPartyPassengerPersistentData.proto\"\xac\x01\n!TrainPartyPasseng\
-    erPersistentData\x12&\n\x0fdiary_data_list\x18\x0b\x20\x03(\rR\rdiaryDat\
-    aList\x12\x20\n\x0bCINMLCKBHIM\x18\x08\x20\x01(\x08R\x0bCINMLCKBHIM\x12\
-    \x20\n\x0bALJLKAOELDP\x18\x04\x20\x01(\rR\x0bALJLKAOELDP\x12\x1b\n\treco\
-    rd_id\x18\x06\x20\x01(\rR\x08recordIdb\x06proto3\
+    erPersistentData\x12\x20\n\x0bCINMLCKBHIM\x18\x0c\x20\x01(\x08R\x0bCINML\
+    CKBHIM\x12&\n\x0fdiary_data_list\x18\x06\x20\x03(\rR\rdiaryDataList\x12\
+    \x1b\n\trecord_id\x18\n\x20\x01(\rR\x08recordId\x12\x20\n\x0bALJLKAOELDP\
+    \x18\x0b\x20\x01(\rR\x0bALJLKAOELDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

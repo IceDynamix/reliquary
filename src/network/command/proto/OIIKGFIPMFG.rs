@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIIKGFIPMFG {
     // message fields
+    // @@protoc_insertion_point(field:OIIKGFIPMFG.AKDLEBLPBMD)
+    pub AKDLEBLPBMD: u32,
     // @@protoc_insertion_point(field:OIIKGFIPMFG.EIPNNEJNNKJ)
     pub EIPNNEJNNKJ: u32,
     // @@protoc_insertion_point(field:OIIKGFIPMFG.status)
     pub status: ::protobuf::EnumOrUnknown<super::JIOKHLHGEOD::JIOKHLHGEOD>,
-    // @@protoc_insertion_point(field:OIIKGFIPMFG.AKDLEBLPBMD)
-    pub AKDLEBLPBMD: u32,
     // @@protoc_insertion_point(field:OIIKGFIPMFG.room_id)
     pub room_id: u32,
     // special fields
@@ -56,6 +56,11 @@ impl OIIKGFIPMFG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKDLEBLPBMD",
+            |m: &OIIKGFIPMFG| { &m.AKDLEBLPBMD },
+            |m: &mut OIIKGFIPMFG| { &mut m.AKDLEBLPBMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EIPNNEJNNKJ",
             |m: &OIIKGFIPMFG| { &m.EIPNNEJNNKJ },
             |m: &mut OIIKGFIPMFG| { &mut m.EIPNNEJNNKJ },
@@ -64,11 +69,6 @@ impl OIIKGFIPMFG {
             "status",
             |m: &OIIKGFIPMFG| { &m.status },
             |m: &mut OIIKGFIPMFG| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKDLEBLPBMD",
-            |m: &OIIKGFIPMFG| { &m.AKDLEBLPBMD },
-            |m: &mut OIIKGFIPMFG| { &mut m.AKDLEBLPBMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for OIIKGFIPMFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.EIPNNEJNNKJ = is.read_uint32()?;
-                },
-                40 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                56 => {
+                24 => {
                     self.AKDLEBLPBMD = is.read_uint32()?;
                 },
+                32 => {
+                    self.EIPNNEJNNKJ = is.read_uint32()?;
+                },
                 72 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                8 => {
                     self.room_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for OIIKGFIPMFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AKDLEBLPBMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AKDLEBLPBMD);
+        }
         if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EIPNNEJNNKJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.EIPNNEJNNKJ);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::JIOKHLHGEOD::JIOKHLHGEOD::ROGUE_MAGIC_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
-        }
-        if self.AKDLEBLPBMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AKDLEBLPBMD);
+            my_size += ::protobuf::rt::int32_size(9, self.status.value());
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.room_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for OIIKGFIPMFG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.AKDLEBLPBMD != 0 {
+            os.write_uint32(3, self.AKDLEBLPBMD)?;
+        }
         if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(14, self.EIPNNEJNNKJ)?;
+            os.write_uint32(4, self.EIPNNEJNNKJ)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::JIOKHLHGEOD::JIOKHLHGEOD::ROGUE_MAGIC_ROOM_STATUS_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.AKDLEBLPBMD != 0 {
-            os.write_uint32(7, self.AKDLEBLPBMD)?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.room_id != 0 {
-            os.write_uint32(9, self.room_id)?;
+            os.write_uint32(1, self.room_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for OIIKGFIPMFG {
     }
 
     fn clear(&mut self) {
+        self.AKDLEBLPBMD = 0;
         self.EIPNNEJNNKJ = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::JIOKHLHGEOD::JIOKHLHGEOD::ROGUE_MAGIC_ROOM_STATUS_NONE);
-        self.AKDLEBLPBMD = 0;
         self.room_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIIKGFIPMFG {
         static instance: OIIKGFIPMFG = OIIKGFIPMFG {
+            AKDLEBLPBMD: 0,
             EIPNNEJNNKJ: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            AKDLEBLPBMD: 0,
             room_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for OIIKGFIPMFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIIKGFIPMFG.proto\x1a\x11JIOKHLHGEOD.proto\"\x90\x01\n\x0bOIIKGFIP\
-    MFG\x12\x20\n\x0bEIPNNEJNNKJ\x18\x0e\x20\x01(\rR\x0bEIPNNEJNNKJ\x12$\n\
-    \x06status\x18\x05\x20\x01(\x0e2\x0c.JIOKHLHGEODR\x06status\x12\x20\n\
-    \x0bAKDLEBLPBMD\x18\x07\x20\x01(\rR\x0bAKDLEBLPBMD\x12\x17\n\x07room_id\
-    \x18\t\x20\x01(\rR\x06roomIdb\x06proto3\
+    MFG\x12\x20\n\x0bAKDLEBLPBMD\x18\x03\x20\x01(\rR\x0bAKDLEBLPBMD\x12\x20\
+    \n\x0bEIPNNEJNNKJ\x18\x04\x20\x01(\rR\x0bEIPNNEJNNKJ\x12$\n\x06status\
+    \x18\t\x20\x01(\x0e2\x0c.JIOKHLHGEODR\x06status\x12\x17\n\x07room_id\x18\
+    \x01\x20\x01(\rR\x06roomIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

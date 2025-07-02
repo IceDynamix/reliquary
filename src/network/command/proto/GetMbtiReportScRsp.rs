@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMbtiReportScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.GMDHHOGBACN)
-    pub GMDHHOGBACN: ::std::vec::Vec<super::MFDKINPDMKE::MFDKINPDMKE>,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.LJHAIFCIABH)
-    pub LJHAIFCIABH: i32,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.PHNKKELLANM)
-    pub PHNKKELLANM: i32,
     // @@protoc_insertion_point(field:GetMbtiReportScRsp.ABNOINLOKLN)
     pub ABNOINLOKLN: ::std::vec::Vec<super::DDCELCOJGNP::DDCELCOJGNP>,
     // @@protoc_insertion_point(field:GetMbtiReportScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.is_taken_reward)
+    pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.GMDHHOGBACN)
+    pub GMDHHOGBACN: ::std::vec::Vec<super::MFDKINPDMKE::MFDKINPDMKE>,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.LJHAIFCIABH)
+    pub LJHAIFCIABH: i32,
     // @@protoc_insertion_point(field:GetMbtiReportScRsp.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:GetMbtiReportScRsp.PCADCGCELIN)
     pub PCADCGCELIN: bool,
-    // @@protoc_insertion_point(field:GetMbtiReportScRsp.is_taken_reward)
-    pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:GetMbtiReportScRsp.PHNKKELLANM)
+    pub PHNKKELLANM: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMbtiReportScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,21 +64,6 @@ impl GetMbtiReportScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMDHHOGBACN",
-            |m: &GetMbtiReportScRsp| { &m.GMDHHOGBACN },
-            |m: &mut GetMbtiReportScRsp| { &mut m.GMDHHOGBACN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHAIFCIABH",
-            |m: &GetMbtiReportScRsp| { &m.LJHAIFCIABH },
-            |m: &mut GetMbtiReportScRsp| { &mut m.LJHAIFCIABH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHNKKELLANM",
-            |m: &GetMbtiReportScRsp| { &m.PHNKKELLANM },
-            |m: &mut GetMbtiReportScRsp| { &mut m.PHNKKELLANM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ABNOINLOKLN",
             |m: &GetMbtiReportScRsp| { &m.ABNOINLOKLN },
             |m: &mut GetMbtiReportScRsp| { &mut m.ABNOINLOKLN },
@@ -87,6 +72,21 @@ impl GetMbtiReportScRsp {
             "retcode",
             |m: &GetMbtiReportScRsp| { &m.retcode },
             |m: &mut GetMbtiReportScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_taken_reward",
+            |m: &GetMbtiReportScRsp| { &m.is_taken_reward },
+            |m: &mut GetMbtiReportScRsp| { &mut m.is_taken_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GMDHHOGBACN",
+            |m: &GetMbtiReportScRsp| { &m.GMDHHOGBACN },
+            |m: &mut GetMbtiReportScRsp| { &mut m.GMDHHOGBACN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJHAIFCIABH",
+            |m: &GetMbtiReportScRsp| { &m.LJHAIFCIABH },
+            |m: &mut GetMbtiReportScRsp| { &mut m.LJHAIFCIABH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -99,9 +99,9 @@ impl GetMbtiReportScRsp {
             |m: &mut GetMbtiReportScRsp| { &mut m.PCADCGCELIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_taken_reward",
-            |m: &GetMbtiReportScRsp| { &m.is_taken_reward },
-            |m: &mut GetMbtiReportScRsp| { &mut m.is_taken_reward },
+            "PHNKKELLANM",
+            |m: &GetMbtiReportScRsp| { &m.PHNKKELLANM },
+            |m: &mut GetMbtiReportScRsp| { &mut m.PHNKKELLANM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMbtiReportScRsp>(
             "GetMbtiReportScRsp",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.GMDHHOGBACN.push(is.read_message()?);
-                },
-                72 => {
-                    self.LJHAIFCIABH = is.read_int32()?;
-                },
-                96 => {
-                    self.PHNKKELLANM = is.read_int32()?;
-                },
                 58 => {
                     self.ABNOINLOKLN.push(is.read_message()?);
                 },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.progress = is.read_uint32()?;
+                120 => {
+                    self.is_taken_reward = is.read_bool()?;
+                },
+                10 => {
+                    self.GMDHHOGBACN.push(is.read_message()?);
+                },
+                96 => {
+                    self.LJHAIFCIABH = is.read_int32()?;
                 },
                 40 => {
+                    self.progress = is.read_uint32()?;
+                },
+                88 => {
                     self.PCADCGCELIN = is.read_bool()?;
                 },
-                8 => {
-                    self.is_taken_reward = is.read_bool()?;
+                16 => {
+                    self.PHNKKELLANM = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,31 +157,31 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GMDHHOGBACN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.LJHAIFCIABH != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.LJHAIFCIABH);
-        }
-        if self.PHNKKELLANM != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.PHNKKELLANM);
-        }
         for value in &self.ABNOINLOKLN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.is_taken_reward != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.GMDHHOGBACN {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.LJHAIFCIABH != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.LJHAIFCIABH);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.progress);
+            my_size += ::protobuf::rt::uint32_size(5, self.progress);
         }
         if self.PCADCGCELIN != false {
             my_size += 1 + 1;
         }
-        if self.is_taken_reward != false {
-            my_size += 1 + 1;
+        if self.PHNKKELLANM != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.PHNKKELLANM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,29 +189,29 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GMDHHOGBACN {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        if self.LJHAIFCIABH != 0 {
-            os.write_int32(9, self.LJHAIFCIABH)?;
-        }
-        if self.PHNKKELLANM != 0 {
-            os.write_int32(12, self.PHNKKELLANM)?;
-        }
         for v in &self.ABNOINLOKLN {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if self.progress != 0 {
-            os.write_uint32(14, self.progress)?;
-        }
-        if self.PCADCGCELIN != false {
-            os.write_bool(5, self.PCADCGCELIN)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(1, self.is_taken_reward)?;
+            os.write_bool(15, self.is_taken_reward)?;
+        }
+        for v in &self.GMDHHOGBACN {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        if self.LJHAIFCIABH != 0 {
+            os.write_int32(12, self.LJHAIFCIABH)?;
+        }
+        if self.progress != 0 {
+            os.write_uint32(5, self.progress)?;
+        }
+        if self.PCADCGCELIN != false {
+            os.write_bool(11, self.PCADCGCELIN)?;
+        }
+        if self.PHNKKELLANM != 0 {
+            os.write_int32(2, self.PHNKKELLANM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,27 +230,27 @@ impl ::protobuf::Message for GetMbtiReportScRsp {
     }
 
     fn clear(&mut self) {
-        self.GMDHHOGBACN.clear();
-        self.LJHAIFCIABH = 0;
-        self.PHNKKELLANM = 0;
         self.ABNOINLOKLN.clear();
         self.retcode = 0;
+        self.is_taken_reward = false;
+        self.GMDHHOGBACN.clear();
+        self.LJHAIFCIABH = 0;
         self.progress = 0;
         self.PCADCGCELIN = false;
-        self.is_taken_reward = false;
+        self.PHNKKELLANM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMbtiReportScRsp {
         static instance: GetMbtiReportScRsp = GetMbtiReportScRsp {
-            GMDHHOGBACN: ::std::vec::Vec::new(),
-            LJHAIFCIABH: 0,
-            PHNKKELLANM: 0,
             ABNOINLOKLN: ::std::vec::Vec::new(),
             retcode: 0,
+            is_taken_reward: false,
+            GMDHHOGBACN: ::std::vec::Vec::new(),
+            LJHAIFCIABH: 0,
             progress: 0,
             PCADCGCELIN: false,
-            is_taken_reward: false,
+            PHNKKELLANM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,14 +276,14 @@ impl ::protobuf::reflect::ProtobufValue for GetMbtiReportScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetMbtiReportScRsp.proto\x1a\x11DDCELCOJGNP.proto\x1a\x11MFDKINPDM\
-    KE.proto\"\xb8\x02\n\x12GetMbtiReportScRsp\x12.\n\x0bGMDHHOGBACN\x18\r\
-    \x20\x03(\x0b2\x0c.MFDKINPDMKER\x0bGMDHHOGBACN\x12\x20\n\x0bLJHAIFCIABH\
-    \x18\t\x20\x01(\x05R\x0bLJHAIFCIABH\x12\x20\n\x0bPHNKKELLANM\x18\x0c\x20\
-    \x01(\x05R\x0bPHNKKELLANM\x12.\n\x0bABNOINLOKLN\x18\x07\x20\x03(\x0b2\
-    \x0c.DDCELCOJGNPR\x0bABNOINLOKLN\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcode\x12\x1a\n\x08progress\x18\x0e\x20\x01(\rR\x08progress\x12\
-    \x20\n\x0bPCADCGCELIN\x18\x05\x20\x01(\x08R\x0bPCADCGCELIN\x12&\n\x0fis_\
-    taken_reward\x18\x01\x20\x01(\x08R\risTakenRewardb\x06proto3\
+    KE.proto\"\xb8\x02\n\x12GetMbtiReportScRsp\x12.\n\x0bABNOINLOKLN\x18\x07\
+    \x20\x03(\x0b2\x0c.DDCELCOJGNPR\x0bABNOINLOKLN\x12\x18\n\x07retcode\x18\
+    \x08\x20\x01(\rR\x07retcode\x12&\n\x0fis_taken_reward\x18\x0f\x20\x01(\
+    \x08R\risTakenReward\x12.\n\x0bGMDHHOGBACN\x18\x01\x20\x03(\x0b2\x0c.MFD\
+    KINPDMKER\x0bGMDHHOGBACN\x12\x20\n\x0bLJHAIFCIABH\x18\x0c\x20\x01(\x05R\
+    \x0bLJHAIFCIABH\x12\x1a\n\x08progress\x18\x05\x20\x01(\rR\x08progress\
+    \x12\x20\n\x0bPCADCGCELIN\x18\x0b\x20\x01(\x08R\x0bPCADCGCELIN\x12\x20\n\
+    \x0bPHNKKELLANM\x18\x02\x20\x01(\x05R\x0bPHNKKELLANMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,10 +72,10 @@ impl ::protobuf::Message for ChessRogueCurrentDifficultyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.difficulty_id_list)?;
                 },
-                80 => {
+                72 => {
                     self.difficulty_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for ChessRogueCurrentDifficultyInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.difficulty_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.difficulty_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.difficulty_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.difficulty_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueCurrentDifficultyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ChessRogueCurrentDifficultyInfo.proto\"O\n\x1fChessRogueCurrentDiffic\
-    ultyInfo\x12,\n\x12difficulty_id_list\x18\n\x20\x03(\rR\x10difficultyIdL\
+    ultyInfo\x12,\n\x12difficulty_id_list\x18\t\x20\x03(\rR\x10difficultyIdL\
     istb\x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PropAeonInfo {
     // message fields
-    // @@protoc_insertion_point(field:PropAeonInfo.dialogue_group_id)
-    pub dialogue_group_id: u32,
     // @@protoc_insertion_point(field:PropAeonInfo.add_exp)
     pub add_exp: u32,
+    // @@protoc_insertion_point(field:PropAeonInfo.dialogue_group_id)
+    pub dialogue_group_id: u32,
     // @@protoc_insertion_point(field:PropAeonInfo.aeon_id)
     pub aeon_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PropAeonInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dialogue_group_id",
-            |m: &PropAeonInfo| { &m.dialogue_group_id },
-            |m: &mut PropAeonInfo| { &mut m.dialogue_group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "add_exp",
             |m: &PropAeonInfo| { &m.add_exp },
             |m: &mut PropAeonInfo| { &mut m.add_exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dialogue_group_id",
+            |m: &PropAeonInfo| { &m.dialogue_group_id },
+            |m: &mut PropAeonInfo| { &mut m.dialogue_group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "aeon_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for PropAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.dialogue_group_id = is.read_uint32()?;
-                },
-                32 => {
+                64 => {
                     self.add_exp = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
+                    self.dialogue_group_id = is.read_uint32()?;
+                },
+                16 => {
                     self.aeon_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PropAeonInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.dialogue_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dialogue_group_id);
-        }
         if self.add_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.add_exp);
+            my_size += ::protobuf::rt::uint32_size(8, self.add_exp);
+        }
+        if self.dialogue_group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.dialogue_group_id);
         }
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PropAeonInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.dialogue_group_id != 0 {
-            os.write_uint32(2, self.dialogue_group_id)?;
-        }
         if self.add_exp != 0 {
-            os.write_uint32(4, self.add_exp)?;
+            os.write_uint32(8, self.add_exp)?;
+        }
+        if self.dialogue_group_id != 0 {
+            os.write_uint32(12, self.dialogue_group_id)?;
         }
         if self.aeon_id != 0 {
-            os.write_uint32(10, self.aeon_id)?;
+            os.write_uint32(2, self.aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PropAeonInfo {
     }
 
     fn clear(&mut self) {
-        self.dialogue_group_id = 0;
         self.add_exp = 0;
+        self.dialogue_group_id = 0;
         self.aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PropAeonInfo {
         static instance: PropAeonInfo = PropAeonInfo {
-            dialogue_group_id: 0,
             add_exp: 0,
+            dialogue_group_id: 0,
             aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PropAeonInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12PropAeonInfo.proto\"l\n\x0cPropAeonInfo\x12*\n\x11dialogue_group_i\
-    d\x18\x02\x20\x01(\rR\x0fdialogueGroupId\x12\x17\n\x07add_exp\x18\x04\
-    \x20\x01(\rR\x06addExp\x12\x17\n\x07aeon_id\x18\n\x20\x01(\rR\x06aeonIdb\
-    \x06proto3\
+    \n\x12PropAeonInfo.proto\"l\n\x0cPropAeonInfo\x12\x17\n\x07add_exp\x18\
+    \x08\x20\x01(\rR\x06addExp\x12*\n\x11dialogue_group_id\x18\x0c\x20\x01(\
+    \rR\x0fdialogueGroupId\x12\x17\n\x07aeon_id\x18\x02\x20\x01(\rR\x06aeonI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

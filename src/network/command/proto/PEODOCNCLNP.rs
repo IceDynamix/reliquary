@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEODOCNCLNP {
     // message fields
-    // @@protoc_insertion_point(field:PEODOCNCLNP.area_id)
-    pub area_id: u32,
     // @@protoc_insertion_point(field:PEODOCNCLNP.BOPAANGKOGH)
     pub BOPAANGKOGH: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
+    // @@protoc_insertion_point(field:PEODOCNCLNP.area_id)
+    pub area_id: u32,
     // @@protoc_insertion_point(field:PEODOCNCLNP.panel_id)
     pub panel_id: u32,
     // @@protoc_insertion_point(field:PEODOCNCLNP.AELOIPGFODB)
@@ -55,15 +55,15 @@ impl PEODOCNCLNP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &PEODOCNCLNP| { &m.area_id },
-            |m: &mut PEODOCNCLNP| { &mut m.area_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OENDAFIAECG::OENDAFIAECG>(
             "BOPAANGKOGH",
             |m: &PEODOCNCLNP| { &m.BOPAANGKOGH },
             |m: &mut PEODOCNCLNP| { &mut m.BOPAANGKOGH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &PEODOCNCLNP| { &m.area_id },
+            |m: &mut PEODOCNCLNP| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "panel_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for PEODOCNCLNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                10 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOPAANGKOGH)?;
+                },
+                8 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 32 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AELOIPGFODB)?;
                 },
                 tag => {
@@ -117,12 +117,12 @@ impl ::protobuf::Message for PEODOCNCLNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
-        }
         if let Some(v) = self.BOPAANGKOGH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.area_id);
         }
         if self.panel_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.panel_id);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for PEODOCNCLNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
-        }
         if let Some(v) = self.BOPAANGKOGH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(1, self.area_id)?;
         }
         if self.panel_id != 0 {
             os.write_uint32(4, self.panel_id)?;
         }
         if let Some(v) = self.AELOIPGFODB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for PEODOCNCLNP {
     }
 
     fn clear(&mut self) {
-        self.area_id = 0;
         self.BOPAANGKOGH.clear();
+        self.area_id = 0;
         self.panel_id = 0;
         self.AELOIPGFODB.clear();
         self.special_fields.clear();
@@ -175,8 +175,8 @@ impl ::protobuf::Message for PEODOCNCLNP {
 
     fn default_instance() -> &'static PEODOCNCLNP {
         static instance: PEODOCNCLNP = PEODOCNCLNP {
-            area_id: 0,
             BOPAANGKOGH: ::protobuf::MessageField::none(),
+            area_id: 0,
             panel_id: 0,
             AELOIPGFODB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for PEODOCNCLNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEODOCNCLNP.proto\x1a\x11JNFELCKIOCM.proto\x1a\x11OENDAFIAECG.prot\
-    o\"\xa1\x01\n\x0bPEODOCNCLNP\x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\
-    \x06areaId\x12.\n\x0bBOPAANGKOGH\x18\x01\x20\x01(\x0b2\x0c.OENDAFIAECGR\
-    \x0bBOPAANGKOGH\x12\x19\n\x08panel_id\x18\x04\x20\x01(\rR\x07panelId\x12\
-    .\n\x0bAELOIPGFODB\x18\x07\x20\x01(\x0b2\x0c.JNFELCKIOCMR\x0bAELOIPGFODB\
-    b\x06proto3\
+    o\"\xa1\x01\n\x0bPEODOCNCLNP\x12.\n\x0bBOPAANGKOGH\x18\x06\x20\x01(\x0b2\
+    \x0c.OENDAFIAECGR\x0bBOPAANGKOGH\x12\x17\n\x07area_id\x18\x01\x20\x01(\r\
+    R\x06areaId\x12\x19\n\x08panel_id\x18\x04\x20\x01(\rR\x07panelId\x12.\n\
+    \x0bAELOIPGFODB\x18\x05\x20\x01(\x0b2\x0c.JNFELCKIOCMR\x0bAELOIPGFODBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

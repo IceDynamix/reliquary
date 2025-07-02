@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLGNIKNMCKE {
     // message fields
-    // @@protoc_insertion_point(field:LLGNIKNMCKE.OFIODJNLBEA)
-    pub OFIODJNLBEA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LLGNIKNMCKE.NMAMONLLALL)
     pub NMAMONLLALL: ::protobuf::EnumOrUnknown<super::GOJOINDBKIK::GOJOINDBKIK>,
+    // @@protoc_insertion_point(field:LLGNIKNMCKE.OFIODJNLBEA)
+    pub OFIODJNLBEA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LLGNIKNMCKE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LLGNIKNMCKE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OFIODJNLBEA",
-            |m: &LLGNIKNMCKE| { &m.OFIODJNLBEA },
-            |m: &mut LLGNIKNMCKE| { &mut m.OFIODJNLBEA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMAMONLLALL",
             |m: &LLGNIKNMCKE| { &m.NMAMONLLALL },
             |m: &mut LLGNIKNMCKE| { &mut m.NMAMONLLALL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OFIODJNLBEA",
+            |m: &LLGNIKNMCKE| { &m.OFIODJNLBEA },
+            |m: &mut LLGNIKNMCKE| { &mut m.OFIODJNLBEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLGNIKNMCKE>(
             "LLGNIKNMCKE",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for LLGNIKNMCKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OFIODJNLBEA)?;
-                },
-                88 => {
-                    self.OFIODJNLBEA.push(is.read_uint32()?);
-                },
                 48 => {
                     self.NMAMONLLALL = is.read_enum_or_unknown()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OFIODJNLBEA)?;
+                },
+                120 => {
+                    self.OFIODJNLBEA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LLGNIKNMCKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.OFIODJNLBEA);
         if self.NMAMONLLALL != ::protobuf::EnumOrUnknown::new(super::GOJOINDBKIK::GOJOINDBKIK::MONOPOLY_SOCIAL_EVENT_STATUS_NONE) {
             my_size += ::protobuf::rt::int32_size(6, self.NMAMONLLALL.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OFIODJNLBEA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.OFIODJNLBEA)?;
         if self.NMAMONLLALL != ::protobuf::EnumOrUnknown::new(super::GOJOINDBKIK::GOJOINDBKIK::MONOPOLY_SOCIAL_EVENT_STATUS_NONE) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.NMAMONLLALL))?;
         }
+        os.write_repeated_packed_uint32(15, &self.OFIODJNLBEA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for LLGNIKNMCKE {
     }
 
     fn clear(&mut self) {
-        self.OFIODJNLBEA.clear();
         self.NMAMONLLALL = ::protobuf::EnumOrUnknown::new(super::GOJOINDBKIK::GOJOINDBKIK::MONOPOLY_SOCIAL_EVENT_STATUS_NONE);
+        self.OFIODJNLBEA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLGNIKNMCKE {
         static instance: LLGNIKNMCKE = LLGNIKNMCKE {
-            OFIODJNLBEA: ::std::vec::Vec::new(),
             NMAMONLLALL: ::protobuf::EnumOrUnknown::from_i32(0),
+            OFIODJNLBEA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for LLGNIKNMCKE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LLGNIKNMCKE.proto\x1a\x11GOJOINDBKIK.proto\"_\n\x0bLLGNIKNMCKE\x12\
-    \x20\n\x0bOFIODJNLBEA\x18\x0b\x20\x03(\rR\x0bOFIODJNLBEA\x12.\n\x0bNMAMO\
-    NLLALL\x18\x06\x20\x01(\x0e2\x0c.GOJOINDBKIKR\x0bNMAMONLLALLb\x06proto3\
+    .\n\x0bNMAMONLLALL\x18\x06\x20\x01(\x0e2\x0c.GOJOINDBKIKR\x0bNMAMONLLALL\
+    \x12\x20\n\x0bOFIODJNLBEA\x18\x0f\x20\x03(\rR\x0bOFIODJNLBEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

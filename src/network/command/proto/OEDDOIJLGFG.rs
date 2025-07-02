@@ -45,7 +45,7 @@ impl OEDDOIJLGFG {
         ::std::default::Default::default()
     }
 
-    // uint32 FFBFCCLODKK = 3;
+    // uint32 FFBFCCLODKK = 5;
 
     pub fn FFBFCCLODKK(&self) -> u32 {
         match self.EEODDLOHNED {
@@ -70,7 +70,7 @@ impl OEDDOIJLGFG {
         self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v))
     }
 
-    // uint32 KACELKGCNEI = 6;
+    // uint32 KACELKGCNEI = 15;
 
     pub fn KACELKGCNEI(&self) -> u32 {
         match self.EEODDLOHNED {
@@ -95,7 +95,7 @@ impl OEDDOIJLGFG {
         self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v))
     }
 
-    // .LCMJFEHMCNF FAOMFMMLMHD = 9;
+    // .LCMJFEHMCNF FAOMFMMLMHD = 3;
 
     pub fn FAOMFMMLMHD(&self) -> &super::LCMJFEHMCNF::LCMJFEHMCNF {
         match self.EEODDLOHNED {
@@ -185,13 +185,13 @@ impl ::protobuf::Message for OEDDOIJLGFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(is.read_uint32()?));
                 },
-                48 => {
+                120 => {
                     self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(is.read_uint32()?));
                 },
-                74 => {
+                26 => {
                     self.EEODDLOHNED = ::std::option::Option::Some(oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(is.read_message()?));
                 },
                 tag => {
@@ -209,10 +209,10 @@ impl ::protobuf::Message for OEDDOIJLGFG {
         if let ::std::option::Option::Some(ref v) = self.EEODDLOHNED {
             match v {
                 &oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v) => {
-                    my_size += ::protobuf::rt::uint32_size(3, v);
+                    my_size += ::protobuf::rt::uint32_size(5, v);
                 },
                 &oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                    my_size += ::protobuf::rt::uint32_size(15, v);
                 },
                 &oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref v) => {
                     let len = v.compute_size();
@@ -229,13 +229,13 @@ impl ::protobuf::Message for OEDDOIJLGFG {
         if let ::std::option::Option::Some(ref v) = self.EEODDLOHNED {
             match v {
                 &oeddoijlgfg::EEODDLOHNED::FFBFCCLODKK(v) => {
-                    os.write_uint32(3, v)?;
+                    os.write_uint32(5, v)?;
                 },
                 &oeddoijlgfg::EEODDLOHNED::KACELKGCNEI(v) => {
-                    os.write_uint32(6, v)?;
+                    os.write_uint32(15, v)?;
                 },
                 &oeddoijlgfg::EEODDLOHNED::FAOMFMMLMHD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -322,10 +322,10 @@ pub mod oeddoijlgfg {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OEDDOIJLGFG.proto\x1a\x11LCMJFEHMCNF.proto\"\x96\x01\n\x0bOEDDOIJL\
-    GFG\x12\"\n\x0bFFBFCCLODKK\x18\x03\x20\x01(\rH\0R\x0bFFBFCCLODKK\x12\"\n\
-    \x0bKACELKGCNEI\x18\x06\x20\x01(\rH\0R\x0bKACELKGCNEI\x120\n\x0bFAOMFMML\
-    MHD\x18\t\x20\x01(\x0b2\x0c.LCMJFEHMCNFH\0R\x0bFAOMFMMLMHDB\r\n\x0bEEODD\
-    LOHNEDb\x06proto3\
+    GFG\x12\"\n\x0bFFBFCCLODKK\x18\x05\x20\x01(\rH\0R\x0bFFBFCCLODKK\x12\"\n\
+    \x0bKACELKGCNEI\x18\x0f\x20\x01(\rH\0R\x0bKACELKGCNEI\x120\n\x0bFAOMFMML\
+    MHD\x18\x03\x20\x01(\x0b2\x0c.LCMJFEHMCNFH\0R\x0bFAOMFMMLMHDB\r\n\x0bEEO\
+    DDLOHNEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

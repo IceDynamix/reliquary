@@ -92,10 +92,10 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
                 32 => {
                     self.DPJHILHGOKE.push(is.read_uint32()?);
                 },
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                72 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(4, &self.DPJHILHGOKE)?;
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEventHandbookRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TakeRogueEventHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\x82\
     \x01\n!TakeRogueEventHandbookRewardScRsp\x12\x20\n\x0bDPJHILHGOKE\x18\
-    \x04\x20\x03(\rR\x0bDPJHILHGOKE\x12!\n\x06reward\x18\x06\x20\x01(\x0b2\t\
-    .ItemListR\x06reward\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\
+    \x04\x20\x03(\rR\x0bDPJHILHGOKE\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t\
+    .ItemListR\x06reward\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

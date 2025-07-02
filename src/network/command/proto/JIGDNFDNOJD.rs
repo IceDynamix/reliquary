@@ -79,10 +79,10 @@ impl ::protobuf::Message for JIGDNFDNOJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.is_unlocked = is.read_bool()?;
                 },
-                24 => {
+                40 => {
                     self.HANDCDPIBLD = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for JIGDNFDNOJD {
             my_size += 1 + 1;
         }
         if self.HANDCDPIBLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HANDCDPIBLD);
+            my_size += ::protobuf::rt::uint32_size(5, self.HANDCDPIBLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JIGDNFDNOJD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_unlocked != false {
-            os.write_bool(7, self.is_unlocked)?;
+            os.write_bool(1, self.is_unlocked)?;
         }
         if self.HANDCDPIBLD != 0 {
-            os.write_uint32(3, self.HANDCDPIBLD)?;
+            os.write_uint32(5, self.HANDCDPIBLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JIGDNFDNOJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JIGDNFDNOJD.proto\"P\n\x0bJIGDNFDNOJD\x12\x1f\n\x0bis_unlocked\x18\
-    \x07\x20\x01(\x08R\nisUnlocked\x12\x20\n\x0bHANDCDPIBLD\x18\x03\x20\x01(\
+    \x01\x20\x01(\x08R\nisUnlocked\x12\x20\n\x0bHANDCDPIBLD\x18\x05\x20\x01(\
     \rR\x0bHANDCDPIBLDb\x06proto3\
 ";
 

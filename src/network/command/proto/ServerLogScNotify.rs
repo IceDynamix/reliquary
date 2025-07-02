@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ServerLogScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ServerLogScNotify.level)
-    pub level: ::protobuf::EnumOrUnknown<super::ServerLogLevel::ServerLogLevel>,
-    // @@protoc_insertion_point(field:ServerLogScNotify.HKLIGCHHIEG)
-    pub HKLIGCHHIEG: ::std::string::String,
-    // @@protoc_insertion_point(field:ServerLogScNotify.tag)
-    pub tag: ::protobuf::EnumOrUnknown<super::ServerLogTag::ServerLogTag>,
     // @@protoc_insertion_point(field:ServerLogScNotify.LCPLLGNJNAJ)
     pub LCPLLGNJNAJ: ::std::string::String,
+    // @@protoc_insertion_point(field:ServerLogScNotify.HKLIGCHHIEG)
+    pub HKLIGCHHIEG: ::std::string::String,
+    // @@protoc_insertion_point(field:ServerLogScNotify.level)
+    pub level: ::protobuf::EnumOrUnknown<super::ServerLogLevel::ServerLogLevel>,
+    // @@protoc_insertion_point(field:ServerLogScNotify.tag)
+    pub tag: ::protobuf::EnumOrUnknown<super::ServerLogTag::ServerLogTag>,
     // special fields
     // @@protoc_insertion_point(special_field:ServerLogScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl ServerLogScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &ServerLogScNotify| { &m.level },
-            |m: &mut ServerLogScNotify| { &mut m.level },
+            "LCPLLGNJNAJ",
+            |m: &ServerLogScNotify| { &m.LCPLLGNJNAJ },
+            |m: &mut ServerLogScNotify| { &mut m.LCPLLGNJNAJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HKLIGCHHIEG",
@@ -66,14 +66,14 @@ impl ServerLogScNotify {
             |m: &mut ServerLogScNotify| { &mut m.HKLIGCHHIEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &ServerLogScNotify| { &m.level },
+            |m: &mut ServerLogScNotify| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tag",
             |m: &ServerLogScNotify| { &m.tag },
             |m: &mut ServerLogScNotify| { &mut m.tag },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCPLLGNJNAJ",
-            |m: &ServerLogScNotify| { &m.LCPLLGNJNAJ },
-            |m: &mut ServerLogScNotify| { &mut m.LCPLLGNJNAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ServerLogScNotify>(
             "ServerLogScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ServerLogScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.level = is.read_enum_or_unknown()?;
+                10 => {
+                    self.LCPLLGNJNAJ = is.read_string()?;
                 },
-                122 => {
+                50 => {
                     self.HKLIGCHHIEG = is.read_string()?;
                 },
-                56 => {
-                    self.tag = is.read_enum_or_unknown()?;
+                16 => {
+                    self.level = is.read_enum_or_unknown()?;
                 },
-                26 => {
-                    self.LCPLLGNJNAJ = is.read_string()?;
+                40 => {
+                    self.tag = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ServerLogScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.level.value());
+        if !self.LCPLLGNJNAJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.LCPLLGNJNAJ);
         }
         if !self.HKLIGCHHIEG.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.HKLIGCHHIEG);
+            my_size += ::protobuf::rt::string_size(6, &self.HKLIGCHHIEG);
+        }
+        if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.level.value());
         }
         if self.tag != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(7, self.tag.value());
-        }
-        if !self.LCPLLGNJNAJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.LCPLLGNJNAJ);
+            my_size += ::protobuf::rt::int32_size(5, self.tag.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ServerLogScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.level))?;
+        if !self.LCPLLGNJNAJ.is_empty() {
+            os.write_string(1, &self.LCPLLGNJNAJ)?;
         }
         if !self.HKLIGCHHIEG.is_empty() {
-            os.write_string(15, &self.HKLIGCHHIEG)?;
+            os.write_string(6, &self.HKLIGCHHIEG)?;
+        }
+        if self.level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.level))?;
         }
         if self.tag != ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.tag))?;
-        }
-        if !self.LCPLLGNJNAJ.is_empty() {
-            os.write_string(3, &self.LCPLLGNJNAJ)?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.tag))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ServerLogScNotify {
     }
 
     fn clear(&mut self) {
-        self.level = ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE);
-        self.HKLIGCHHIEG.clear();
-        self.tag = ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT);
         self.LCPLLGNJNAJ.clear();
+        self.HKLIGCHHIEG.clear();
+        self.level = ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE);
+        self.tag = ::protobuf::EnumOrUnknown::new(super::ServerLogTag::ServerLogTag::SERVER_LOG_TAG_DEFAULT);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ServerLogScNotify {
         static instance: ServerLogScNotify = ServerLogScNotify {
-            level: ::protobuf::EnumOrUnknown::from_i32(0),
-            HKLIGCHHIEG: ::std::string::String::new(),
-            tag: ::protobuf::EnumOrUnknown::from_i32(0),
             LCPLLGNJNAJ: ::std::string::String::new(),
+            HKLIGCHHIEG: ::std::string::String::new(),
+            level: ::protobuf::EnumOrUnknown::from_i32(0),
+            tag: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ServerLogScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ServerLogScNotify.proto\x1a\x14ServerLogLevel.proto\x1a\x12ServerL\
-    ogTag.proto\"\x9f\x01\n\x11ServerLogScNotify\x12%\n\x05level\x18\t\x20\
-    \x01(\x0e2\x0f.ServerLogLevelR\x05level\x12\x20\n\x0bHKLIGCHHIEG\x18\x0f\
-    \x20\x01(\tR\x0bHKLIGCHHIEG\x12\x1f\n\x03tag\x18\x07\x20\x01(\x0e2\r.Ser\
-    verLogTagR\x03tag\x12\x20\n\x0bLCPLLGNJNAJ\x18\x03\x20\x01(\tR\x0bLCPLLG\
-    NJNAJb\x06proto3\
+    ogTag.proto\"\x9f\x01\n\x11ServerLogScNotify\x12\x20\n\x0bLCPLLGNJNAJ\
+    \x18\x01\x20\x01(\tR\x0bLCPLLGNJNAJ\x12\x20\n\x0bHKLIGCHHIEG\x18\x06\x20\
+    \x01(\tR\x0bHKLIGCHHIEG\x12%\n\x05level\x18\x02\x20\x01(\x0e2\x0f.Server\
+    LogLevelR\x05level\x12\x1f\n\x03tag\x18\x05\x20\x01(\x0e2\r.ServerLogTag\
+    R\x03tagb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

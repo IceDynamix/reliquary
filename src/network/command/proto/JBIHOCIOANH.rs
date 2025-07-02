@@ -30,12 +30,12 @@ pub struct JBIHOCIOANH {
     // message fields
     // @@protoc_insertion_point(field:JBIHOCIOANH.EEPOJGNFLPA)
     pub EEPOJGNFLPA: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:JBIHOCIOANH.PLMKMOPCDLM)
-    pub PLMKMOPCDLM: ::std::vec::Vec<super::OBIPOOLIDAL::OBIPOOLIDAL>,
     // @@protoc_insertion_point(field:JBIHOCIOANH.FPGEFHENCCF)
     pub FPGEFHENCCF: ::std::vec::Vec<super::KOEGFFOMKIP::KOEGFFOMKIP>,
-    // @@protoc_insertion_point(field:JBIHOCIOANH.modifier_content)
-    pub modifier_content: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
+    // @@protoc_insertion_point(field:JBIHOCIOANH.PLMKMOPCDLM)
+    pub PLMKMOPCDLM: ::std::vec::Vec<super::OBIPOOLIDAL::OBIPOOLIDAL>,
+    // @@protoc_insertion_point(field:JBIHOCIOANH.modifier__content)
+    pub modifier__content: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
     // special fields
     // @@protoc_insertion_point(special_field:JBIHOCIOANH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl JBIHOCIOANH {
             |m: &mut JBIHOCIOANH| { &mut m.EEPOJGNFLPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLMKMOPCDLM",
-            |m: &JBIHOCIOANH| { &m.PLMKMOPCDLM },
-            |m: &mut JBIHOCIOANH| { &mut m.PLMKMOPCDLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FPGEFHENCCF",
             |m: &JBIHOCIOANH| { &m.FPGEFHENCCF },
             |m: &mut JBIHOCIOANH| { &mut m.FPGEFHENCCF },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PLMKMOPCDLM",
+            |m: &JBIHOCIOANH| { &m.PLMKMOPCDLM },
+            |m: &mut JBIHOCIOANH| { &mut m.PLMKMOPCDLM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
-            "modifier_content",
-            |m: &JBIHOCIOANH| { &m.modifier_content },
-            |m: &mut JBIHOCIOANH| { &mut m.modifier_content },
+            "modifier__content",
+            |m: &JBIHOCIOANH| { &m.modifier__content },
+            |m: &mut JBIHOCIOANH| { &mut m.modifier__content },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JBIHOCIOANH>(
             "JBIHOCIOANH",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for JBIHOCIOANH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,14 +108,14 @@ impl ::protobuf::Message for JBIHOCIOANH {
                     is.pop_limit(old_limit);
                     self.EEPOJGNFLPA.insert(key, value);
                 },
-                10 => {
-                    self.PLMKMOPCDLM.push(is.read_message()?);
-                },
-                18 => {
+                42 => {
                     self.FPGEFHENCCF.push(is.read_message()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier_content)?;
+                90 => {
+                    self.PLMKMOPCDLM.push(is.read_message()?);
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier__content)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -135,15 +135,15 @@ impl ::protobuf::Message for JBIHOCIOANH {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.PLMKMOPCDLM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.FPGEFHENCCF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.modifier_content.as_ref() {
+        for value in &self.PLMKMOPCDLM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.modifier__content.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -157,19 +157,19 @@ impl ::protobuf::Message for JBIHOCIOANH {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(74)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        for v in &self.PLMKMOPCDLM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         for v in &self.FPGEFHENCCF {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if let Some(v) = self.modifier_content.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.PLMKMOPCDLM {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if let Some(v) = self.modifier__content.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,9 +189,9 @@ impl ::protobuf::Message for JBIHOCIOANH {
 
     fn clear(&mut self) {
         self.EEPOJGNFLPA.clear();
-        self.PLMKMOPCDLM.clear();
         self.FPGEFHENCCF.clear();
-        self.modifier_content.clear();
+        self.PLMKMOPCDLM.clear();
+        self.modifier__content.clear();
         self.special_fields.clear();
     }
 
@@ -220,14 +220,14 @@ impl ::protobuf::reflect::ProtobufValue for JBIHOCIOANH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBIHOCIOANH.proto\x1a\x11INPINNPIHOB.proto\x1a\x11KOEGFFOMKIP.prot\
-    o\x1a\x11OBIPOOLIDAL.proto\"\xa7\x02\n\x0bJBIHOCIOANH\x12?\n\x0bEEPOJGNF\
-    LPA\x18\t\x20\x03(\x0b2\x1d.JBIHOCIOANH.EEPOJGNFLPAEntryR\x0bEEPOJGNFLPA\
-    \x12.\n\x0bPLMKMOPCDLM\x18\x01\x20\x03(\x0b2\x0c.OBIPOOLIDALR\x0bPLMKMOP\
-    CDLM\x12.\n\x0bFPGEFHENCCF\x18\x02\x20\x03(\x0b2\x0c.KOEGFFOMKIPR\x0bFPG\
-    EFHENCCF\x127\n\x10modifier_content\x18\r\x20\x01(\x0b2\x0c.INPINNPIHOBR\
-    \x0fmodifierContent\x1a>\n\x10EEPOJGNFLPAEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    o\x1a\x11OBIPOOLIDAL.proto\"\xa8\x02\n\x0bJBIHOCIOANH\x12?\n\x0bEEPOJGNF\
+    LPA\x18\x03\x20\x03(\x0b2\x1d.JBIHOCIOANH.EEPOJGNFLPAEntryR\x0bEEPOJGNFL\
+    PA\x12.\n\x0bFPGEFHENCCF\x18\x05\x20\x03(\x0b2\x0c.KOEGFFOMKIPR\x0bFPGEF\
+    HENCCF\x12.\n\x0bPLMKMOPCDLM\x18\x0b\x20\x03(\x0b2\x0c.OBIPOOLIDALR\x0bP\
+    LMKMOPCDLM\x128\n\x11modifier__content\x18\x01\x20\x01(\x0b2\x0c.INPINNP\
+    IHOBR\x0fmodifierContent\x1a>\n\x10EEPOJGNFLPAEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

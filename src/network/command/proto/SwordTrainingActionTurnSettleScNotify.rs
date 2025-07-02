@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingActionTurnSettleScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingActionTurnSettleScNotify.CGFCMKNCCDC)
-    pub CGFCMKNCCDC: u32,
     // @@protoc_insertion_point(field:SwordTrainingActionTurnSettleScNotify.MCCCNLIIIBC)
     pub MCCCNLIIIBC: ::std::vec::Vec<super::MMOIBACBPKA::MMOIBACBPKA>,
+    // @@protoc_insertion_point(field:SwordTrainingActionTurnSettleScNotify.CGFCMKNCCDC)
+    pub CGFCMKNCCDC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingActionTurnSettleScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SwordTrainingActionTurnSettleScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGFCMKNCCDC",
-            |m: &SwordTrainingActionTurnSettleScNotify| { &m.CGFCMKNCCDC },
-            |m: &mut SwordTrainingActionTurnSettleScNotify| { &mut m.CGFCMKNCCDC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MCCCNLIIIBC",
             |m: &SwordTrainingActionTurnSettleScNotify| { &m.MCCCNLIIIBC },
             |m: &mut SwordTrainingActionTurnSettleScNotify| { &mut m.MCCCNLIIIBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CGFCMKNCCDC",
+            |m: &SwordTrainingActionTurnSettleScNotify| { &m.CGFCMKNCCDC },
+            |m: &mut SwordTrainingActionTurnSettleScNotify| { &mut m.CGFCMKNCCDC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingActionTurnSettleScNotify>(
             "SwordTrainingActionTurnSettleScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.CGFCMKNCCDC = is.read_uint32()?;
-                },
-                106 => {
+                90 => {
                     self.MCCCNLIIIBC.push(is.read_message()?);
+                },
+                40 => {
+                    self.CGFCMKNCCDC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CGFCMKNCCDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CGFCMKNCCDC);
-        }
         for value in &self.MCCCNLIIIBC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.CGFCMKNCCDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CGFCMKNCCDC);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CGFCMKNCCDC != 0 {
-            os.write_uint32(6, self.CGFCMKNCCDC)?;
-        }
         for v in &self.MCCCNLIIIBC {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.CGFCMKNCCDC != 0 {
+            os.write_uint32(5, self.CGFCMKNCCDC)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
     }
 
     fn clear(&mut self) {
-        self.CGFCMKNCCDC = 0;
         self.MCCCNLIIIBC.clear();
+        self.CGFCMKNCCDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingActionTurnSettleScNotify {
         static instance: SwordTrainingActionTurnSettleScNotify = SwordTrainingActionTurnSettleScNotify {
-            CGFCMKNCCDC: 0,
             MCCCNLIIIBC: ::std::vec::Vec::new(),
+            CGFCMKNCCDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingActionTurnSettleScNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+SwordTrainingActionTurnSettleScNotify.proto\x1a\x11MMOIBACBPKA.proto\
-    \"y\n%SwordTrainingActionTurnSettleScNotify\x12\x20\n\x0bCGFCMKNCCDC\x18\
-    \x06\x20\x01(\rR\x0bCGFCMKNCCDC\x12.\n\x0bMCCCNLIIIBC\x18\r\x20\x03(\x0b\
-    2\x0c.MMOIBACBPKAR\x0bMCCCNLIIIBCb\x06proto3\
+    \"y\n%SwordTrainingActionTurnSettleScNotify\x12.\n\x0bMCCCNLIIIBC\x18\
+    \x0b\x20\x03(\x0b2\x0c.MMOIBACBPKAR\x0bMCCCNLIIIBC\x12\x20\n\x0bCGFCMKNC\
+    CDC\x18\x05\x20\x01(\rR\x0bCGFCMKNCCDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

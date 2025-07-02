@@ -32,10 +32,10 @@ pub struct PlayerHeartBeatScRsp {
     pub client_time_ms: u64,
     // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.download_data)
-    pub download_data: ::protobuf::MessageField<super::ClientDownloadData::ClientDownloadData>,
     // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.server_time_ms)
     pub server_time_ms: u64,
+    // @@protoc_insertion_point(field:PlayerHeartBeatScRsp.download_data)
+    pub download_data: ::protobuf::MessageField<super::ClientDownloadData::ClientDownloadData>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerHeartBeatScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl PlayerHeartBeatScRsp {
             |m: &PlayerHeartBeatScRsp| { &m.retcode },
             |m: &mut PlayerHeartBeatScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClientDownloadData::ClientDownloadData>(
-            "download_data",
-            |m: &PlayerHeartBeatScRsp| { &m.download_data },
-            |m: &mut PlayerHeartBeatScRsp| { &mut m.download_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "server_time_ms",
             |m: &PlayerHeartBeatScRsp| { &m.server_time_ms },
             |m: &mut PlayerHeartBeatScRsp| { &mut m.server_time_ms },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClientDownloadData::ClientDownloadData>(
+            "download_data",
+            |m: &PlayerHeartBeatScRsp| { &m.download_data },
+            |m: &mut PlayerHeartBeatScRsp| { &mut m.download_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerHeartBeatScRsp>(
             "PlayerHeartBeatScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
-                80 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.download_data)?;
-                },
-                64 => {
+                56 => {
                     self.server_time_ms = is.read_uint64()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.download_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.client_time_ms);
+            my_size += ::protobuf::rt::uint64_size(6, self.client_time_ms);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.server_time_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.server_time_ms);
         }
         if let Some(v) = self.download_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.server_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.server_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_time_ms != 0 {
-            os.write_uint64(2, self.client_time_ms)?;
+            os.write_uint64(6, self.client_time_ms)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if let Some(v) = self.download_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.server_time_ms != 0 {
-            os.write_uint64(8, self.server_time_ms)?;
+            os.write_uint64(7, self.server_time_ms)?;
+        }
+        if let Some(v) = self.download_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
     fn clear(&mut self) {
         self.client_time_ms = 0;
         self.retcode = 0;
-        self.download_data.clear();
         self.server_time_ms = 0;
+        self.download_data.clear();
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for PlayerHeartBeatScRsp {
         static instance: PlayerHeartBeatScRsp = PlayerHeartBeatScRsp {
             client_time_ms: 0,
             retcode: 0,
-            download_data: ::protobuf::MessageField::none(),
             server_time_ms: 0,
+            download_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for PlayerHeartBeatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPlayerHeartBeatScRsp.proto\x1a\x18ClientDownloadData.proto\"\xb6\
-    \x01\n\x14PlayerHeartBeatScRsp\x12$\n\x0eclient_time_ms\x18\x02\x20\x01(\
-    \x04R\x0cclientTimeMs\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\
-    \x128\n\rdownload_data\x18\r\x20\x01(\x0b2\x13.ClientDownloadDataR\x0cdo\
-    wnloadData\x12$\n\x0eserver_time_ms\x18\x08\x20\x01(\x04R\x0cserverTimeM\
-    sb\x06proto3\
+    \x01\n\x14PlayerHeartBeatScRsp\x12$\n\x0eclient_time_ms\x18\x06\x20\x01(\
+    \x04R\x0cclientTimeMs\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcod\
+    e\x12$\n\x0eserver_time_ms\x18\x07\x20\x01(\x04R\x0cserverTimeMs\x128\n\
+    \rdownload_data\x18\x0c\x20\x01(\x0b2\x13.ClientDownloadDataR\x0cdownloa\
+    dDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

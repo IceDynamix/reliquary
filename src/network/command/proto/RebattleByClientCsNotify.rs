@@ -79,10 +79,10 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
                 },
-                82 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.rebattle_type.value());
+            my_size += ::protobuf::rt::int32_size(4, self.rebattle_type.value());
         }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRebattleByClientCsNotify.proto\x1a\x16BattleStatistics.proto\x1a\
     \x12RebattleType.proto\"s\n\x18RebattleByClientCsNotify\x122\n\rrebattle\
-    _type\x18\x08\x20\x01(\x0e2\r.RebattleTypeR\x0crebattleType\x12#\n\x03st\
-    t\x18\n\x20\x01(\x0b2\x11.BattleStatisticsR\x03sttb\x06proto3\
+    _type\x18\x04\x20\x01(\x0e2\r.RebattleTypeR\x0crebattleType\x12#\n\x03st\
+    t\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03sttb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

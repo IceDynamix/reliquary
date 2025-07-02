@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MIKFNBBOPIP {
     // message fields
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.pending_action)
-    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // @@protoc_insertion_point(field:MIKFNBBOPIP.MDLNDGIJNML)
     pub MDLNDGIJNML: ::std::string::String,
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.AGEBAMBKKBC)
-    pub AGEBAMBKKBC: u32,
-    // @@protoc_insertion_point(field:MIKFNBBOPIP.rogue_sub_mode)
-    pub rogue_sub_mode: u32,
     // @@protoc_insertion_point(field:MIKFNBBOPIP.rogue_magic_battle_const)
     pub rogue_magic_battle_const: u32,
     // @@protoc_insertion_point(field:MIKFNBBOPIP.ILLODGAEFAE)
     pub ILLODGAEFAE: u32,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.AGEBAMBKKBC)
+    pub AGEBAMBKKBC: u32,
+    // @@protoc_insertion_point(field:MIKFNBBOPIP.rogue_sub_mode)
+    pub rogue_sub_mode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MIKFNBBOPIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,10 @@ impl MIKFNBBOPIP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
-            "pending_action",
-            |m: &MIKFNBBOPIP| { &m.pending_action },
-            |m: &mut MIKFNBBOPIP| { &mut m.pending_action },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDLNDGIJNML",
             |m: &MIKFNBBOPIP| { &m.MDLNDGIJNML },
             |m: &mut MIKFNBBOPIP| { &mut m.MDLNDGIJNML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEBAMBKKBC",
-            |m: &MIKFNBBOPIP| { &m.AGEBAMBKKBC },
-            |m: &mut MIKFNBBOPIP| { &mut m.AGEBAMBKKBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_sub_mode",
-            |m: &MIKFNBBOPIP| { &m.rogue_sub_mode },
-            |m: &mut MIKFNBBOPIP| { &mut m.rogue_sub_mode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_magic_battle_const",
@@ -88,6 +73,21 @@ impl MIKFNBBOPIP {
             "ILLODGAEFAE",
             |m: &MIKFNBBOPIP| { &m.ILLODGAEFAE },
             |m: &mut MIKFNBBOPIP| { &mut m.ILLODGAEFAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "pending_action",
+            |m: &MIKFNBBOPIP| { &m.pending_action },
+            |m: &mut MIKFNBBOPIP| { &mut m.pending_action },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGEBAMBKKBC",
+            |m: &MIKFNBBOPIP| { &m.AGEBAMBKKBC },
+            |m: &mut MIKFNBBOPIP| { &mut m.AGEBAMBKKBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_sub_mode",
+            |m: &MIKFNBBOPIP| { &m.rogue_sub_mode },
+            |m: &mut MIKFNBBOPIP| { &mut m.rogue_sub_mode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIKFNBBOPIP>(
             "MIKFNBBOPIP",
@@ -108,22 +108,22 @@ impl ::protobuf::Message for MIKFNBBOPIP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
-                },
-                74 => {
                     self.MDLNDGIJNML = is.read_string()?;
                 },
-                32 => {
-                    self.AGEBAMBKKBC = is.read_uint32()?;
-                },
-                64 => {
-                    self.rogue_sub_mode = is.read_uint32()?;
-                },
-                24 => {
+                8 => {
                     self.rogue_magic_battle_const = is.read_uint32()?;
                 },
-                40 => {
+                24 => {
                     self.ILLODGAEFAE = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
+                },
+                16 => {
+                    self.AGEBAMBKKBC = is.read_uint32()?;
+                },
+                48 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.MDLNDGIJNML.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.MDLNDGIJNML);
+        }
+        if self.rogue_magic_battle_const != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.rogue_magic_battle_const);
+        }
+        if self.ILLODGAEFAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ILLODGAEFAE);
+        }
         if let Some(v) = self.pending_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.MDLNDGIJNML.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.MDLNDGIJNML);
-        }
         if self.AGEBAMBKKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AGEBAMBKKBC);
+            my_size += ::protobuf::rt::uint32_size(2, self.AGEBAMBKKBC);
         }
         if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.rogue_sub_mode);
-        }
-        if self.rogue_magic_battle_const != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.rogue_magic_battle_const);
-        }
-        if self.ILLODGAEFAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ILLODGAEFAE);
+            my_size += ::protobuf::rt::uint32_size(6, self.rogue_sub_mode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if !self.MDLNDGIJNML.is_empty() {
-            os.write_string(9, &self.MDLNDGIJNML)?;
-        }
-        if self.AGEBAMBKKBC != 0 {
-            os.write_uint32(4, self.AGEBAMBKKBC)?;
-        }
-        if self.rogue_sub_mode != 0 {
-            os.write_uint32(8, self.rogue_sub_mode)?;
+            os.write_string(7, &self.MDLNDGIJNML)?;
         }
         if self.rogue_magic_battle_const != 0 {
-            os.write_uint32(3, self.rogue_magic_battle_const)?;
+            os.write_uint32(1, self.rogue_magic_battle_const)?;
         }
         if self.ILLODGAEFAE != 0 {
-            os.write_uint32(5, self.ILLODGAEFAE)?;
+            os.write_uint32(3, self.ILLODGAEFAE)?;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.AGEBAMBKKBC != 0 {
+            os.write_uint32(2, self.AGEBAMBKKBC)?;
+        }
+        if self.rogue_sub_mode != 0 {
+            os.write_uint32(6, self.rogue_sub_mode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for MIKFNBBOPIP {
     }
 
     fn clear(&mut self) {
-        self.pending_action.clear();
         self.MDLNDGIJNML.clear();
-        self.AGEBAMBKKBC = 0;
-        self.rogue_sub_mode = 0;
         self.rogue_magic_battle_const = 0;
         self.ILLODGAEFAE = 0;
+        self.pending_action.clear();
+        self.AGEBAMBKKBC = 0;
+        self.rogue_sub_mode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIKFNBBOPIP {
         static instance: MIKFNBBOPIP = MIKFNBBOPIP {
-            pending_action: ::protobuf::MessageField::none(),
             MDLNDGIJNML: ::std::string::String::new(),
-            AGEBAMBKKBC: 0,
-            rogue_sub_mode: 0,
             rogue_magic_battle_const: 0,
             ILLODGAEFAE: 0,
+            pending_action: ::protobuf::MessageField::none(),
+            AGEBAMBKKBC: 0,
+            rogue_sub_mode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for MIKFNBBOPIP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MIKFNBBOPIP.proto\x1a\x1eRogueCommonPendingAction.proto\"\x94\x02\
-    \n\x0bMIKFNBBOPIP\x12@\n\x0epending_action\x18\x07\x20\x01(\x0b2\x19.Rog\
-    ueCommonPendingActionR\rpendingAction\x12\x20\n\x0bMDLNDGIJNML\x18\t\x20\
-    \x01(\tR\x0bMDLNDGIJNML\x12\x20\n\x0bAGEBAMBKKBC\x18\x04\x20\x01(\rR\x0b\
-    AGEBAMBKKBC\x12$\n\x0erogue_sub_mode\x18\x08\x20\x01(\rR\x0crogueSubMode\
-    \x127\n\x18rogue_magic_battle_const\x18\x03\x20\x01(\rR\x15rogueMagicBat\
-    tleConst\x12\x20\n\x0bILLODGAEFAE\x18\x05\x20\x01(\rR\x0bILLODGAEFAEb\
+    \n\x0bMIKFNBBOPIP\x12\x20\n\x0bMDLNDGIJNML\x18\x07\x20\x01(\tR\x0bMDLNDG\
+    IJNML\x127\n\x18rogue_magic_battle_const\x18\x01\x20\x01(\rR\x15rogueMag\
+    icBattleConst\x12\x20\n\x0bILLODGAEFAE\x18\x03\x20\x01(\rR\x0bILLODGAEFA\
+    E\x12@\n\x0epending_action\x18\x0b\x20\x01(\x0b2\x19.RogueCommonPendingA\
+    ctionR\rpendingAction\x12\x20\n\x0bAGEBAMBKKBC\x18\x02\x20\x01(\rR\x0bAG\
+    EBAMBKKBC\x12$\n\x0erogue_sub_mode\x18\x06\x20\x01(\rR\x0crogueSubModeb\
     \x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLEJPJJCELJ)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.DLEJPJJCELJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterTreasureDungeonScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fEnterTreasureDungeonScRsp.proto\x1a\x11KLCKNKLPONM.proto\"e\n\x19E\
     nterTreasureDungeonScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bDLEJPJJCELJ\x18\x06\x20\x01(\x0b2\x0c.KLCKNKLPONMR\x0bDLE\
+    code\x12.\n\x0bDLEJPJJCELJ\x18\x07\x20\x01(\x0b2\x0c.KLCKNKLPONMR\x0bDLE\
     JPJJCELJb\x06proto3\
 ";
 

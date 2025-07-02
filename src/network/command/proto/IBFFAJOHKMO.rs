@@ -46,6 +46,8 @@ pub struct IBFFAJOHKMO {
     pub BLFHKGPMNDK: u32,
     // @@protoc_insertion_point(field:IBFFAJOHKMO.wave)
     pub wave: u32,
+    // @@protoc_insertion_point(field:IBFFAJOHKMO.GLACKHOPMIO)
+    pub GLACKHOPMIO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IBFFAJOHKMO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,7 +65,7 @@ impl IBFFAJOHKMO {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -109,6 +111,11 @@ impl IBFFAJOHKMO {
             "wave",
             |m: &IBFFAJOHKMO| { &m.wave },
             |m: &mut IBFFAJOHKMO| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GLACKHOPMIO",
+            |m: &IBFFAJOHKMO| { &m.GLACKHOPMIO },
+            |m: &mut IBFFAJOHKMO| { &mut m.GLACKHOPMIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBFFAJOHKMO>(
             "IBFFAJOHKMO",
@@ -161,6 +168,9 @@ impl ::protobuf::Message for IBFFAJOHKMO {
                 72 => {
                     self.wave = is.read_uint32()?;
                 },
+                80 => {
+                    self.GLACKHOPMIO = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -196,6 +206,9 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.wave);
         }
+        if self.GLACKHOPMIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GLACKHOPMIO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -225,6 +238,9 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         if self.wave != 0 {
             os.write_uint32(9, self.wave)?;
         }
+        if self.GLACKHOPMIO != 0 {
+            os.write_uint32(10, self.GLACKHOPMIO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -251,6 +267,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
         self.BKJEAMPNANK = 0.;
         self.BLFHKGPMNDK = 0;
         self.wave = 0;
+        self.GLACKHOPMIO = 0;
         self.special_fields.clear();
     }
 
@@ -265,6 +282,7 @@ impl ::protobuf::Message for IBFFAJOHKMO {
             BKJEAMPNANK: 0.,
             BLFHKGPMNDK: 0,
             wave: 0,
+            GLACKHOPMIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -289,14 +307,15 @@ impl ::protobuf::reflect::ProtobufValue for IBFFAJOHKMO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IBFFAJOHKMO.proto\"\x98\x02\n\x0bIBFFAJOHKMO\x12\x1b\n\tavatar_id\
+    \n\x11IBFFAJOHKMO.proto\"\xba\x02\n\x0bIBFFAJOHKMO\x12\x1b\n\tavatar_id\
     \x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bLEICKPDIFOG\x18\x02\x20\
     \x03(\rR\x0bLEICKPDIFOG\x12\x16\n\x06source\x18\x03\x20\x01(\rR\x06sourc\
     e\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\x12\x20\n\x0bDIKKH\
     PFKAPF\x18\x05\x20\x03(\rR\x0bDIKKHPFKAPF\x12\x20\n\x0bEOOFIMEGMFB\x18\
     \x06\x20\x01(\x05R\x0bEOOFIMEGMFB\x12\x20\n\x0bBKJEAMPNANK\x18\x07\x20\
     \x01(\x01R\x0bBKJEAMPNANK\x12\x20\n\x0bBLFHKGPMNDK\x18\x08\x20\x01(\rR\
-    \x0bBLFHKGPMNDK\x12\x12\n\x04wave\x18\t\x20\x01(\rR\x04waveb\x06proto3\
+    \x0bBLFHKGPMNDK\x12\x12\n\x04wave\x18\t\x20\x01(\rR\x04wave\x12\x20\n\
+    \x0bGLACKHOPMIO\x18\n\x20\x01(\rR\x0bGLACKHOPMIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

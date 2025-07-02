@@ -86,13 +86,13 @@ impl ::protobuf::Message for LuckyKoiInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                34 => {
                     self.uid_str = is.read_string()?;
                 },
-                26 => {
+                10 => {
                     self.name_str = is.read_string()?;
                 },
-                88 => {
+                80 => {
                     self.head_icon = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LuckyKoiInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.uid_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.uid_str);
+            my_size += ::protobuf::rt::string_size(4, &self.uid_str);
         }
         if !self.name_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.name_str);
+            my_size += ::protobuf::rt::string_size(1, &self.name_str);
         }
         if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(10, self.head_icon);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LuckyKoiInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.uid_str.is_empty() {
-            os.write_string(10, &self.uid_str)?;
+            os.write_string(4, &self.uid_str)?;
         }
         if !self.name_str.is_empty() {
-            os.write_string(3, &self.name_str)?;
+            os.write_string(1, &self.name_str)?;
         }
         if self.head_icon != 0 {
-            os.write_uint32(11, self.head_icon)?;
+            os.write_uint32(10, self.head_icon)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LuckyKoiInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12LuckyKoiInfo.proto\"_\n\x0cLuckyKoiInfo\x12\x17\n\x07uid_str\x18\n\
-    \x20\x01(\tR\x06uidStr\x12\x19\n\x08name_str\x18\x03\x20\x01(\tR\x07name\
-    Str\x12\x1b\n\thead_icon\x18\x0b\x20\x01(\rR\x08headIconb\x06proto3\
+    \n\x12LuckyKoiInfo.proto\"_\n\x0cLuckyKoiInfo\x12\x17\n\x07uid_str\x18\
+    \x04\x20\x01(\tR\x06uidStr\x12\x19\n\x08name_str\x18\x01\x20\x01(\tR\x07\
+    nameStr\x12\x1b\n\thead_icon\x18\n\x20\x01(\rR\x08headIconb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

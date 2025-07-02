@@ -79,10 +79,10 @@ impl ::protobuf::Message for JALLAPPCPFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.DHELBCIMLGA = is.read_uint32()?;
                 },
-                64 => {
+                72 => {
                     self.FHOKFDMFNKG = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for JALLAPPCPFE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DHELBCIMLGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DHELBCIMLGA);
+            my_size += ::protobuf::rt::uint32_size(4, self.DHELBCIMLGA);
         }
         if self.FHOKFDMFNKG != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JALLAPPCPFE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DHELBCIMLGA != 0 {
-            os.write_uint32(7, self.DHELBCIMLGA)?;
+            os.write_uint32(4, self.DHELBCIMLGA)?;
         }
         if self.FHOKFDMFNKG != false {
-            os.write_bool(8, self.FHOKFDMFNKG)?;
+            os.write_bool(9, self.FHOKFDMFNKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JALLAPPCPFE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JALLAPPCPFE.proto\"Q\n\x0bJALLAPPCPFE\x12\x20\n\x0bDHELBCIMLGA\x18\
-    \x07\x20\x01(\rR\x0bDHELBCIMLGA\x12\x20\n\x0bFHOKFDMFNKG\x18\x08\x20\x01\
-    (\x08R\x0bFHOKFDMFNKGb\x06proto3\
+    \x04\x20\x01(\rR\x0bDHELBCIMLGA\x12\x20\n\x0bFHOKFDMFNKG\x18\t\x20\x01(\
+    \x08R\x0bFHOKFDMFNKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

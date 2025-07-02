@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCCHNEFHGNE {
     // message fields
+    // @@protoc_insertion_point(field:OCCHNEFHGNE.AGDAELENHMI)
+    pub AGDAELENHMI: ::std::string::String,
     // @@protoc_insertion_point(field:OCCHNEFHGNE.EJIEAGFLGED)
     pub EJIEAGFLGED: i32,
     // @@protoc_insertion_point(field:OCCHNEFHGNE.LDBFAIKMIFI)
@@ -53,8 +55,13 @@ impl OCCHNEFHGNE {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGDAELENHMI",
+            |m: &OCCHNEFHGNE| { &m.AGDAELENHMI },
+            |m: &mut OCCHNEFHGNE| { &mut m.AGDAELENHMI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EJIEAGFLGED",
             |m: &OCCHNEFHGNE| { &m.EJIEAGFLGED },
@@ -93,16 +100,19 @@ impl ::protobuf::Message for OCCHNEFHGNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                224 => {
+                10 => {
+                    self.AGDAELENHMI = is.read_string()?;
+                },
+                16 => {
                     self.EJIEAGFLGED = is.read_int32()?;
                 },
-                232 => {
+                24 => {
                     self.LDBFAIKMIFI = is.read_int32()?;
                 },
-                240 => {
+                32 => {
                     self.PKFLGKPHOED = is.read_int32()?;
                 },
-                248 => {
+                40 => {
                     self.AKDCLAEPFEJ = is.read_int32()?;
                 },
                 tag => {
@@ -117,17 +127,20 @@ impl ::protobuf::Message for OCCHNEFHGNE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.AGDAELENHMI.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.AGDAELENHMI);
+        }
         if self.EJIEAGFLGED != 0 {
-            my_size += ::protobuf::rt::int32_size(28, self.EJIEAGFLGED);
+            my_size += ::protobuf::rt::int32_size(2, self.EJIEAGFLGED);
         }
         if self.LDBFAIKMIFI != 0 {
-            my_size += ::protobuf::rt::int32_size(29, self.LDBFAIKMIFI);
+            my_size += ::protobuf::rt::int32_size(3, self.LDBFAIKMIFI);
         }
         if self.PKFLGKPHOED != 0 {
-            my_size += ::protobuf::rt::int32_size(30, self.PKFLGKPHOED);
+            my_size += ::protobuf::rt::int32_size(4, self.PKFLGKPHOED);
         }
         if self.AKDCLAEPFEJ != 0 {
-            my_size += ::protobuf::rt::int32_size(31, self.AKDCLAEPFEJ);
+            my_size += ::protobuf::rt::int32_size(5, self.AKDCLAEPFEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +148,20 @@ impl ::protobuf::Message for OCCHNEFHGNE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if !self.AGDAELENHMI.is_empty() {
+            os.write_string(1, &self.AGDAELENHMI)?;
+        }
         if self.EJIEAGFLGED != 0 {
-            os.write_int32(28, self.EJIEAGFLGED)?;
+            os.write_int32(2, self.EJIEAGFLGED)?;
         }
         if self.LDBFAIKMIFI != 0 {
-            os.write_int32(29, self.LDBFAIKMIFI)?;
+            os.write_int32(3, self.LDBFAIKMIFI)?;
         }
         if self.PKFLGKPHOED != 0 {
-            os.write_int32(30, self.PKFLGKPHOED)?;
+            os.write_int32(4, self.PKFLGKPHOED)?;
         }
         if self.AKDCLAEPFEJ != 0 {
-            os.write_int32(31, self.AKDCLAEPFEJ)?;
+            os.write_int32(5, self.AKDCLAEPFEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,6 +180,7 @@ impl ::protobuf::Message for OCCHNEFHGNE {
     }
 
     fn clear(&mut self) {
+        self.AGDAELENHMI.clear();
         self.EJIEAGFLGED = 0;
         self.LDBFAIKMIFI = 0;
         self.PKFLGKPHOED = 0;
@@ -173,6 +190,7 @@ impl ::protobuf::Message for OCCHNEFHGNE {
 
     fn default_instance() -> &'static OCCHNEFHGNE {
         static instance: OCCHNEFHGNE = OCCHNEFHGNE {
+            AGDAELENHMI: ::std::string::String::new(),
             EJIEAGFLGED: 0,
             LDBFAIKMIFI: 0,
             PKFLGKPHOED: 0,
@@ -201,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for OCCHNEFHGNE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OCCHNEFHGNE.proto\"\x95\x01\n\x0bOCCHNEFHGNE\x12\x20\n\x0bEJIEAGFL\
-    GED\x18\x1c\x20\x01(\x05R\x0bEJIEAGFLGED\x12\x20\n\x0bLDBFAIKMIFI\x18\
-    \x1d\x20\x01(\x05R\x0bLDBFAIKMIFI\x12\x20\n\x0bPKFLGKPHOED\x18\x1e\x20\
-    \x01(\x05R\x0bPKFLGKPHOED\x12\x20\n\x0bAKDCLAEPFEJ\x18\x1f\x20\x01(\x05R\
-    \x0bAKDCLAEPFEJb\x06proto3\
+    \n\x11OCCHNEFHGNE.proto\"\xb7\x01\n\x0bOCCHNEFHGNE\x12\x20\n\x0bAGDAELEN\
+    HMI\x18\x01\x20\x01(\tR\x0bAGDAELENHMI\x12\x20\n\x0bEJIEAGFLGED\x18\x02\
+    \x20\x01(\x05R\x0bEJIEAGFLGED\x12\x20\n\x0bLDBFAIKMIFI\x18\x03\x20\x01(\
+    \x05R\x0bLDBFAIKMIFI\x12\x20\n\x0bPKFLGKPHOED\x18\x04\x20\x01(\x05R\x0bP\
+    KFLGKPHOED\x12\x20\n\x0bAKDCLAEPFEJ\x18\x05\x20\x01(\x05R\x0bAKDCLAEPFEJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

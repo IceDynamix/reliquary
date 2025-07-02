@@ -82,7 +82,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                88 => {
+                8 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(11, self.equipment_unique_id)?;
+            os.write_uint32(1, self.equipment_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ExpUpEquipmentCsReq.proto\x1a\x12ItemCostData.proto\"q\n\x13ExpUpE\
     quipmentCsReq\x12*\n\tcost_data\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\
-    \x08costData\x12.\n\x13equipment_unique_id\x18\x0b\x20\x01(\rR\x11equipm\
+    \x08costData\x12.\n\x13equipment_unique_id\x18\x01\x20\x01(\rR\x11equipm\
     entUniqueIdb\x06proto3\
 ";
 

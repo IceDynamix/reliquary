@@ -89,10 +89,10 @@ impl ::protobuf::Message for MuseumRandomEventSelectScRsp {
                 80 => {
                     self.event_id = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
+                112 => {
                     self.DGJBACBIICO = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MuseumRandomEventSelectScRsp {
             my_size += ::protobuf::rt::uint32_size(10, self.event_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.DGJBACBIICO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DGJBACBIICO);
+            my_size += ::protobuf::rt::uint32_size(14, self.DGJBACBIICO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MuseumRandomEventSelectScRsp {
             os.write_uint32(10, self.event_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.DGJBACBIICO != 0 {
-            os.write_uint32(9, self.DGJBACBIICO)?;
+            os.write_uint32(14, self.DGJBACBIICO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,7 +185,7 @@ impl ::protobuf::reflect::ProtobufValue for MuseumRandomEventSelectScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MuseumRandomEventSelectScRsp.proto\"u\n\x1cMuseumRandomEventSelectSc\
     Rsp\x12\x19\n\x08event_id\x18\n\x20\x01(\rR\x07eventId\x12\x18\n\x07retc\
-    ode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bDGJBACBIICO\x18\t\x20\
+    ode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bDGJBACBIICO\x18\x0e\x20\
     \x01(\rR\x0bDGJBACBIICOb\x06proto3\
 ";
 

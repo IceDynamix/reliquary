@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetForbidOtherApplyFriendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.MJPFLIKAFEJ)
-    pub MJPFLIKAFEJ: bool,
     // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendScRsp.MJPFLIKAFEJ)
+    pub MJPFLIKAFEJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetForbidOtherApplyFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetForbidOtherApplyFriendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJPFLIKAFEJ",
-            |m: &SetForbidOtherApplyFriendScRsp| { &m.MJPFLIKAFEJ },
-            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.MJPFLIKAFEJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetForbidOtherApplyFriendScRsp| { &m.retcode },
             |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJPFLIKAFEJ",
+            |m: &SetForbidOtherApplyFriendScRsp| { &m.MJPFLIKAFEJ },
+            |m: &mut SetForbidOtherApplyFriendScRsp| { &mut m.MJPFLIKAFEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetForbidOtherApplyFriendScRsp>(
             "SetForbidOtherApplyFriendScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.MJPFLIKAFEJ = is.read_bool()?;
-                },
-                8 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.MJPFLIKAFEJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if self.MJPFLIKAFEJ != false {
             my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJPFLIKAFEJ != false {
-            os.write_bool(12, self.MJPFLIKAFEJ)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.MJPFLIKAFEJ != false {
+            os.write_bool(10, self.MJPFLIKAFEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendScRsp {
     }
 
     fn clear(&mut self) {
-        self.MJPFLIKAFEJ = false;
         self.retcode = 0;
+        self.MJPFLIKAFEJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetForbidOtherApplyFriendScRsp {
         static instance: SetForbidOtherApplyFriendScRsp = SetForbidOtherApplyFriendScRsp {
-            MJPFLIKAFEJ: false,
             retcode: 0,
+            MJPFLIKAFEJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetForbidOtherApplyFriendScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SetForbidOtherApplyFriendScRsp.proto\"\\\n\x1eSetForbidOtherApplyFrie\
-    ndScRsp\x12\x20\n\x0bMJPFLIKAFEJ\x18\x0c\x20\x01(\x08R\x0bMJPFLIKAFEJ\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    ndScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bMJPFLIKAFEJ\x18\n\x20\x01(\x08R\x0bMJPFLIKAFEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

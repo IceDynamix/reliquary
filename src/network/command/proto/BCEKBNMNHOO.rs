@@ -32,10 +32,10 @@ pub struct BCEKBNMNHOO {
     pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:BCEKBNMNHOO.panel_id)
     pub panel_id: u32,
-    // @@protoc_insertion_point(field:BCEKBNMNHOO.CBNFFEMDBKF)
-    pub CBNFFEMDBKF: bool,
     // @@protoc_insertion_point(field:BCEKBNMNHOO.PEHOFBBDNIC)
     pub PEHOFBBDNIC: u32,
+    // @@protoc_insertion_point(field:BCEKBNMNHOO.CBNFFEMDBKF)
+    pub CBNFFEMDBKF: bool,
     // special fields
     // @@protoc_insertion_point(special_field:BCEKBNMNHOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl BCEKBNMNHOO {
             |m: &mut BCEKBNMNHOO| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBNFFEMDBKF",
-            |m: &BCEKBNMNHOO| { &m.CBNFFEMDBKF },
-            |m: &mut BCEKBNMNHOO| { &mut m.CBNFFEMDBKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PEHOFBBDNIC",
             |m: &BCEKBNMNHOO| { &m.PEHOFBBDNIC },
             |m: &mut BCEKBNMNHOO| { &mut m.PEHOFBBDNIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBNFFEMDBKF",
+            |m: &BCEKBNMNHOO| { &m.CBNFFEMDBKF },
+            |m: &mut BCEKBNMNHOO| { &mut m.CBNFFEMDBKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCEKBNMNHOO>(
             "BCEKBNMNHOO",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                80 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
-                32 => {
+                104 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.CBNFFEMDBKF = is.read_bool()?;
-                },
-                40 => {
+                72 => {
                     self.PEHOFBBDNIC = is.read_uint32()?;
+                },
+                24 => {
+                    self.CBNFFEMDBKF = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,13 +121,13 @@ impl ::protobuf::Message for BCEKBNMNHOO {
             my_size += 1 + 1;
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.panel_id);
+        }
+        if self.PEHOFBBDNIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PEHOFBBDNIC);
         }
         if self.CBNFFEMDBKF != false {
             my_size += 1 + 1;
-        }
-        if self.PEHOFBBDNIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PEHOFBBDNIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for BCEKBNMNHOO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_taken_reward != false {
-            os.write_bool(12, self.is_taken_reward)?;
+            os.write_bool(10, self.is_taken_reward)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(4, self.panel_id)?;
-        }
-        if self.CBNFFEMDBKF != false {
-            os.write_bool(11, self.CBNFFEMDBKF)?;
+            os.write_uint32(13, self.panel_id)?;
         }
         if self.PEHOFBBDNIC != 0 {
-            os.write_uint32(5, self.PEHOFBBDNIC)?;
+            os.write_uint32(9, self.PEHOFBBDNIC)?;
+        }
+        if self.CBNFFEMDBKF != false {
+            os.write_bool(3, self.CBNFFEMDBKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     fn clear(&mut self) {
         self.is_taken_reward = false;
         self.panel_id = 0;
-        self.CBNFFEMDBKF = false;
         self.PEHOFBBDNIC = 0;
+        self.CBNFFEMDBKF = false;
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for BCEKBNMNHOO {
         static instance: BCEKBNMNHOO = BCEKBNMNHOO {
             is_taken_reward: false,
             panel_id: 0,
-            CBNFFEMDBKF: false,
             PEHOFBBDNIC: 0,
+            CBNFFEMDBKF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for BCEKBNMNHOO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BCEKBNMNHOO.proto\"\x94\x01\n\x0bBCEKBNMNHOO\x12&\n\x0fis_taken_re\
-    ward\x18\x0c\x20\x01(\x08R\risTakenReward\x12\x19\n\x08panel_id\x18\x04\
-    \x20\x01(\rR\x07panelId\x12\x20\n\x0bCBNFFEMDBKF\x18\x0b\x20\x01(\x08R\
-    \x0bCBNFFEMDBKF\x12\x20\n\x0bPEHOFBBDNIC\x18\x05\x20\x01(\rR\x0bPEHOFBBD\
-    NICb\x06proto3\
+    ward\x18\n\x20\x01(\x08R\risTakenReward\x12\x19\n\x08panel_id\x18\r\x20\
+    \x01(\rR\x07panelId\x12\x20\n\x0bPEHOFBBDNIC\x18\t\x20\x01(\rR\x0bPEHOFB\
+    BDNIC\x12\x20\n\x0bCBNFFEMDBKF\x18\x03\x20\x01(\x08R\x0bCBNFFEMDBKFb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

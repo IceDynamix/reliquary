@@ -48,7 +48,7 @@ impl HandleRogueCommonPendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .HKHFBELMDCG JKHBBDLCHID = 1893;
+    // .HKHFBELMDCG JKHBBDLCHID = 1234;
 
     pub fn JKHBBDLCHID(&self) -> &super::HKHFBELMDCG::HKHFBELMDCG {
         match self.NHICOMHCEGC {
@@ -97,7 +97,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .PBMAKLNJEKO KBNEGOLPLFC = 864;
+    // .PBMAKLNJEKO KBNEGOLPLFC = 1593;
 
     pub fn KBNEGOLPLFC(&self) -> &super::PBMAKLNJEKO::PBMAKLNJEKO {
         match self.NHICOMHCEGC {
@@ -146,7 +146,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .OKEFIDDNLKG GDKGIBEKGPF = 1478;
+    // .OKEFIDDNLKG GDKGIBEKGPF = 407;
 
     pub fn GDKGIBEKGPF(&self) -> &super::OKEFIDDNLKG::OKEFIDDNLKG {
         match self.NHICOMHCEGC {
@@ -195,7 +195,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .MMNDAJFIJOJ ONCNGIILENF = 754;
+    // .MMNDAJFIJOJ ONCNGIILENF = 533;
 
     pub fn ONCNGIILENF(&self) -> &super::MMNDAJFIJOJ::MMNDAJFIJOJ {
         match self.NHICOMHCEGC {
@@ -244,7 +244,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .BFBFMLBHGOH GLEJCDPDJNE = 1267;
+    // .BFBFMLBHGOH GLEJCDPDJNE = 1851;
 
     pub fn GLEJCDPDJNE(&self) -> &super::BFBFMLBHGOH::BFBFMLBHGOH {
         match self.NHICOMHCEGC {
@@ -293,7 +293,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .MPPHHNAEEDK OOAGPGDPJOA = 136;
+    // .MPPHHNAEEDK OOAGPGDPJOA = 235;
 
     pub fn OOAGPGDPJOA(&self) -> &super::MPPHHNAEEDK::MPPHHNAEEDK {
         match self.NHICOMHCEGC {
@@ -342,7 +342,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JFPFDJPPOAG IDBALJBNBKE = 1573;
+    // .JFPFDJPPOAG IDBALJBNBKE = 1427;
 
     pub fn IDBALJBNBKE(&self) -> &super::JFPFDJPPOAG::JFPFDJPPOAG {
         match self.NHICOMHCEGC {
@@ -391,7 +391,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .NALELIGHDAA GNEBJEPPKEJ = 817;
+    // .NALELIGHDAA GNEBJEPPKEJ = 774;
 
     pub fn GNEBJEPPKEJ(&self) -> &super::NALELIGHDAA::NALELIGHDAA {
         match self.NHICOMHCEGC {
@@ -440,7 +440,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .PKODMMPHIBC KJLAFILAPJF = 427;
+    // .PKODMMPHIBC KJLAFILAPJF = 651;
 
     pub fn KJLAFILAPJF(&self) -> &super::PKODMMPHIBC::PKODMMPHIBC {
         match self.NHICOMHCEGC {
@@ -489,7 +489,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .NHCKHPLKLIO FLFPCPHLAGO = 1970;
+    // .NHCKHPLKLIO FLFPCPHLAGO = 179;
 
     pub fn FLFPCPHLAGO(&self) -> &super::NHCKHPLKLIO::NHCKHPLKLIO {
         match self.NHICOMHCEGC {
@@ -538,7 +538,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .LHJPIKEKPGH EPOAKMFMFLM = 461;
+    // .LHJPIKEKPGH EPOAKMFMFLM = 1869;
 
     pub fn EPOAKMFMFLM(&self) -> &super::LHJPIKEKPGH::LHJPIKEKPGH {
         match self.NHICOMHCEGC {
@@ -587,7 +587,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IMCBIIGOKPM FKPFOKHBPKK = 1861;
+    // .IMCBIIGOKPM FKPFOKHBPKK = 136;
 
     pub fn FKPFOKHBPKK(&self) -> &super::IMCBIIGOKPM::IMCBIIGOKPM {
         match self.NHICOMHCEGC {
@@ -636,7 +636,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .LKMKHACMAPC EODCLAIPCAE = 714;
+    // .LKMKHACMAPC EODCLAIPCAE = 1276;
 
     pub fn EODCLAIPCAE(&self) -> &super::LKMKHACMAPC::LKMKHACMAPC {
         match self.NHICOMHCEGC {
@@ -685,7 +685,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IMLBIBJKPDB AOCODAOBKHM = 2032;
+    // .IMLBIBJKPDB AOCODAOBKHM = 822;
 
     pub fn AOCODAOBKHM(&self) -> &super::IMLBIBJKPDB::IMLBIBJKPDB {
         match self.NHICOMHCEGC {
@@ -734,7 +734,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .NOLCMKCNEAF EGGGGGGLFHO = 234;
+    // .NOLCMKCNEAF EGGGGGGLFHO = 1348;
 
     pub fn EGGGGGGLFHO(&self) -> &super::NOLCMKCNEAF::NOLCMKCNEAF {
         match self.NHICOMHCEGC {
@@ -783,7 +783,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .KHGCDEIMLHN LNPLOEOFCCJ = 960;
+    // .KHGCDEIMLHN LNPLOEOFCCJ = 49;
 
     pub fn LNPLOEOFCCJ(&self) -> &super::KHGCDEIMLHN::KHGCDEIMLHN {
         match self.NHICOMHCEGC {
@@ -832,7 +832,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .ONOOFHDEIDD IEABOHKEAPA = 106;
+    // .ONOOFHDEIDD IEABOHKEAPA = 1260;
 
     pub fn IEABOHKEAPA(&self) -> &super::ONOOFHDEIDD::ONOOFHDEIDD {
         match self.NHICOMHCEGC {
@@ -881,7 +881,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .EKMAHAFGNGJ NEDIIBJHGFO = 1571;
+    // .EKMAHAFGNGJ NEDIIBJHGFO = 220;
 
     pub fn NEDIIBJHGFO(&self) -> &super::EKMAHAFGNGJ::EKMAHAFGNGJ {
         match self.NHICOMHCEGC {
@@ -930,7 +930,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HHHCPCOFPPO JGPCBCJKONH = 997;
+    // .HHHCPCOFPPO JGPCBCJKONH = 1158;
 
     pub fn JGPCBCJKONH(&self) -> &super::HHHCPCOFPPO::HHHCPCOFPPO {
         match self.NHICOMHCEGC {
@@ -979,7 +979,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AHKFIAKMKLO HKNJIPJHOCG = 1412;
+    // .AHKFIAKMKLO HKNJIPJHOCG = 64;
 
     pub fn HKNJIPJHOCG(&self) -> &super::AHKFIAKMKLO::AHKFIAKMKLO {
         match self.NHICOMHCEGC {
@@ -1028,7 +1028,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JCDLJBPHOMD LDAGLIMNMAN = 395;
+    // .JCDLJBPHOMD LDAGLIMNMAN = 89;
 
     pub fn LDAGLIMNMAN(&self) -> &super::JCDLJBPHOMD::JCDLJBPHOMD {
         match self.NHICOMHCEGC {
@@ -1077,7 +1077,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HHHCPCOFPPO AFLHEIKJNBN = 1429;
+    // .HHHCPCOFPPO AFLHEIKJNBN = 1155;
 
     pub fn AFLHEIKJNBN(&self) -> &super::HHHCPCOFPPO::HHHCPCOFPPO {
         match self.NHICOMHCEGC {
@@ -1126,7 +1126,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HHHCPCOFPPO PHKBFLNPEFI = 232;
+    // .HHHCPCOFPPO PHKBFLNPEFI = 1834;
 
     pub fn PHKBFLNPEFI(&self) -> &super::HHHCPCOFPPO::HHHCPCOFPPO {
         match self.NHICOMHCEGC {
@@ -1175,7 +1175,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HHHCPCOFPPO GOCMNDKFOAB = 1036;
+    // .HHHCPCOFPPO GOCMNDKFOAB = 1960;
 
     pub fn GOCMNDKFOAB(&self) -> &super::HHHCPCOFPPO::HHHCPCOFPPO {
         match self.NHICOMHCEGC {
@@ -1224,7 +1224,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IIPEGHDKHGD CHONECOLIHA = 1168;
+    // .IIPEGHDKHGD CHONECOLIHA = 1338;
 
     pub fn CHONECOLIHA(&self) -> &super::IIPEGHDKHGD::IIPEGHDKHGD {
         match self.NHICOMHCEGC {
@@ -1273,7 +1273,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IIPEGHDKHGD MOAOGACBOIJ = 1115;
+    // .IIPEGHDKHGD MOAOGACBOIJ = 1521;
 
     pub fn MOAOGACBOIJ(&self) -> &super::IIPEGHDKHGD::IIPEGHDKHGD {
         match self.NHICOMHCEGC {
@@ -1322,7 +1322,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IIPEGHDKHGD KILHFPPBBFM = 183;
+    // .IIPEGHDKHGD KILHFPPBBFM = 1855;
 
     pub fn KILHFPPBBFM(&self) -> &super::IIPEGHDKHGD::IIPEGHDKHGD {
         match self.NHICOMHCEGC {
@@ -1371,7 +1371,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HAOJLHGNFPM BLHDFAJHCJA = 71;
+    // .HAOJLHGNFPM BLHDFAJHCJA = 93;
 
     pub fn BLHDFAJHCJA(&self) -> &super::HAOJLHGNFPM::HAOJLHGNFPM {
         match self.NHICOMHCEGC {
@@ -1420,7 +1420,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HAOJLHGNFPM LPJBAIMJAIK = 1799;
+    // .HAOJLHGNFPM LPJBAIMJAIK = 1189;
 
     pub fn LPJBAIMJAIK(&self) -> &super::HAOJLHGNFPM::HAOJLHGNFPM {
         match self.NHICOMHCEGC {
@@ -1469,7 +1469,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .OOPINHFMECE HDHDPGGMEPB = 1675;
+    // .OOPINHFMECE HDHDPGGMEPB = 108;
 
     pub fn HDHDPGGMEPB(&self) -> &super::OOPINHFMECE::OOPINHFMECE {
         match self.NHICOMHCEGC {
@@ -1518,7 +1518,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .LGCMEEPJMHA ECEGPEJCPBL = 1027;
+    // .LGCMEEPJMHA ECEGPEJCPBL = 757;
 
     pub fn ECEGPEJCPBL(&self) -> &super::LGCMEEPJMHA::LGCMEEPJMHA {
         match self.NHICOMHCEGC {
@@ -1567,7 +1567,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AJNAJINFJIC FKPDKFEMKEC = 122087;
+    // .AJNAJINFJIC FKPDKFEMKEC = 235803;
 
     pub fn FKPDKFEMKEC(&self) -> &super::AJNAJINFJIC::AJNAJINFJIC {
         match self.NHICOMHCEGC {
@@ -1616,7 +1616,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .MNMLOAPBHNF LLNMCJCFBMJ = 221323;
+    // .MNMLOAPBHNF LLNMCJCFBMJ = 45077;
 
     pub fn LLNMCJCFBMJ(&self) -> &super::MNMLOAPBHNF::MNMLOAPBHNF {
         match self.NHICOMHCEGC {
@@ -1926,103 +1926,103 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
                 72 => {
                     self.IFDKLLHFPJB = is.read_uint32()?;
                 },
-                15146 => {
+                9874 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::JKHBBDLCHID(is.read_message()?));
                 },
-                6914 => {
+                12746 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KBNEGOLPLFC(is.read_message()?));
                 },
-                11826 => {
+                3258 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GDKGIBEKGPF(is.read_message()?));
                 },
-                6034 => {
+                4266 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::ONCNGIILENF(is.read_message()?));
                 },
-                10138 => {
+                14810 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GLEJCDPDJNE(is.read_message()?));
                 },
-                1090 => {
+                1882 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::OOAGPGDPJOA(is.read_message()?));
                 },
-                12586 => {
+                11418 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::IDBALJBNBKE(is.read_message()?));
                 },
-                6538 => {
+                6194 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GNEBJEPPKEJ(is.read_message()?));
                 },
-                3418 => {
+                5210 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KJLAFILAPJF(is.read_message()?));
                 },
-                15762 => {
+                1434 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FLFPCPHLAGO(is.read_message()?));
                 },
-                3690 => {
+                14954 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EPOAKMFMFLM(is.read_message()?));
                 },
-                14890 => {
+                1090 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FKPFOKHBPKK(is.read_message()?));
                 },
-                5714 => {
+                10210 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EODCLAIPCAE(is.read_message()?));
                 },
-                16258 => {
+                6578 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::AOCODAOBKHM(is.read_message()?));
                 },
-                1874 => {
+                10786 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EGGGGGGLFHO(is.read_message()?));
                 },
-                7682 => {
+                394 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LNPLOEOFCCJ(is.read_message()?));
                 },
-                850 => {
+                10082 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::IEABOHKEAPA(is.read_message()?));
                 },
-                12570 => {
+                1762 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::NEDIIBJHGFO(is.read_message()?));
                 },
-                7978 => {
+                9266 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::JGPCBCJKONH(is.read_message()?));
                 },
-                11298 => {
+                514 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::HKNJIPJHOCG(is.read_message()?));
                 },
-                3162 => {
+                714 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LDAGLIMNMAN(is.read_message()?));
                 },
-                11434 => {
+                9242 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::AFLHEIKJNBN(is.read_message()?));
                 },
-                1858 => {
+                14674 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::PHKBFLNPEFI(is.read_message()?));
                 },
-                8290 => {
+                15682 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GOCMNDKFOAB(is.read_message()?));
                 },
-                9346 => {
+                10706 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::CHONECOLIHA(is.read_message()?));
                 },
-                8922 => {
+                12170 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::MOAOGACBOIJ(is.read_message()?));
                 },
-                1466 => {
+                14842 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KILHFPPBBFM(is.read_message()?));
                 },
-                570 => {
+                746 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::BLHDFAJHCJA(is.read_message()?));
                 },
-                14394 => {
+                9514 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LPJBAIMJAIK(is.read_message()?));
                 },
-                13402 => {
+                866 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::HDHDPGGMEPB(is.read_message()?));
                 },
-                8218 => {
+                6058 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::ECEGPEJCPBL(is.read_message()?));
                 },
-                976698 => {
+                1886426 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FKPDKFEMKEC(is.read_message()?));
                 },
-                1770586 => {
+                360618 => {
                     self.NHICOMHCEGC = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LLNMCJCFBMJ(is.read_message()?));
                 },
                 tag => {
@@ -2188,103 +2188,103 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
         if let ::std::option::Option::Some(ref v) = self.NHICOMHCEGC {
             match v {
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::JKHBBDLCHID(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1893, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1234, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KBNEGOLPLFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(864, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1593, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GDKGIBEKGPF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1478, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(407, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::ONCNGIILENF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(754, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(533, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GLEJCDPDJNE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1267, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1851, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::OOAGPGDPJOA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(136, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(235, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::IDBALJBNBKE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1573, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1427, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GNEBJEPPKEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(817, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(774, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KJLAFILAPJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(427, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(651, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FLFPCPHLAGO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1970, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(179, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EPOAKMFMFLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(461, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1869, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FKPFOKHBPKK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1861, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(136, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EODCLAIPCAE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(714, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1276, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::AOCODAOBKHM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2032, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(822, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::EGGGGGGLFHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(234, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1348, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LNPLOEOFCCJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(960, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(49, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::IEABOHKEAPA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(106, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1260, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::NEDIIBJHGFO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1571, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(220, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::JGPCBCJKONH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(997, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1158, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::HKNJIPJHOCG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1412, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(64, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LDAGLIMNMAN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(395, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(89, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::AFLHEIKJNBN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1429, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1155, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::PHKBFLNPEFI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(232, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1834, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::GOCMNDKFOAB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1036, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1960, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::CHONECOLIHA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1168, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1338, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::MOAOGACBOIJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1115, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1521, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::KILHFPPBBFM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(183, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1855, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::BLHDFAJHCJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(71, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(93, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LPJBAIMJAIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1799, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1189, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::HDHDPGGMEPB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1675, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(108, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::ECEGPEJCPBL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1027, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(757, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::FKPDKFEMKEC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(122087, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(235803, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::NHICOMHCEGC::LLNMCJCFBMJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(221323, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(45077, v, os)?;
                 },
             };
         }
@@ -2472,47 +2472,46 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x11MPPHHNAEEDK.proto\x1a\x11NALELIGHDAA.proto\x1a\x11NHCKHPLKLIO.proto\
     \x1a\x11NOLCMKCNEAF.proto\x1a\x11OKEFIDDNLKG.proto\x1a\x11ONOOFHDEIDD.pr\
     oto\x1a\x11OOPINHFMECE.proto\x1a\x11PBMAKLNJEKO.proto\x1a\x11PKODMMPHIBC\
-    .proto\"\xe9\r\n#HandleRogueCommonPendingActionCsReq\x12\x20\n\x0bIFDKLL\
-    HFPJB\x18\t\x20\x01(\rR\x0bIFDKLLHFPJB\x121\n\x0bJKHBBDLCHID\x18\xe5\x0e\
+    .proto\"\xe6\r\n#HandleRogueCommonPendingActionCsReq\x12\x20\n\x0bIFDKLL\
+    HFPJB\x18\t\x20\x01(\rR\x0bIFDKLLHFPJB\x121\n\x0bJKHBBDLCHID\x18\xd2\t\
     \x20\x01(\x0b2\x0c.HKHFBELMDCGH\0R\x0bJKHBBDLCHID\x121\n\x0bKBNEGOLPLFC\
-    \x18\xe0\x06\x20\x01(\x0b2\x0c.PBMAKLNJEKOH\0R\x0bKBNEGOLPLFC\x121\n\x0b\
-    GDKGIBEKGPF\x18\xc6\x0b\x20\x01(\x0b2\x0c.OKEFIDDNLKGH\0R\x0bGDKGIBEKGPF\
-    \x121\n\x0bONCNGIILENF\x18\xf2\x05\x20\x01(\x0b2\x0c.MMNDAJFIJOJH\0R\x0b\
-    ONCNGIILENF\x121\n\x0bGLEJCDPDJNE\x18\xf3\t\x20\x01(\x0b2\x0c.BFBFMLBHGO\
-    HH\0R\x0bGLEJCDPDJNE\x121\n\x0bOOAGPGDPJOA\x18\x88\x01\x20\x01(\x0b2\x0c\
-    .MPPHHNAEEDKH\0R\x0bOOAGPGDPJOA\x121\n\x0bIDBALJBNBKE\x18\xa5\x0c\x20\
-    \x01(\x0b2\x0c.JFPFDJPPOAGH\0R\x0bIDBALJBNBKE\x121\n\x0bGNEBJEPPKEJ\x18\
-    \xb1\x06\x20\x01(\x0b2\x0c.NALELIGHDAAH\0R\x0bGNEBJEPPKEJ\x121\n\x0bKJLA\
-    FILAPJF\x18\xab\x03\x20\x01(\x0b2\x0c.PKODMMPHIBCH\0R\x0bKJLAFILAPJF\x12\
-    1\n\x0bFLFPCPHLAGO\x18\xb2\x0f\x20\x01(\x0b2\x0c.NHCKHPLKLIOH\0R\x0bFLFP\
-    CPHLAGO\x121\n\x0bEPOAKMFMFLM\x18\xcd\x03\x20\x01(\x0b2\x0c.LHJPIKEKPGHH\
-    \0R\x0bEPOAKMFMFLM\x121\n\x0bFKPFOKHBPKK\x18\xc5\x0e\x20\x01(\x0b2\x0c.I\
-    MCBIIGOKPMH\0R\x0bFKPFOKHBPKK\x121\n\x0bEODCLAIPCAE\x18\xca\x05\x20\x01(\
-    \x0b2\x0c.LKMKHACMAPCH\0R\x0bEODCLAIPCAE\x121\n\x0bAOCODAOBKHM\x18\xf0\
-    \x0f\x20\x01(\x0b2\x0c.IMLBIBJKPDBH\0R\x0bAOCODAOBKHM\x121\n\x0bEGGGGGGL\
-    FHO\x18\xea\x01\x20\x01(\x0b2\x0c.NOLCMKCNEAFH\0R\x0bEGGGGGGLFHO\x121\n\
-    \x0bLNPLOEOFCCJ\x18\xc0\x07\x20\x01(\x0b2\x0c.KHGCDEIMLHNH\0R\x0bLNPLOEO\
-    FCCJ\x120\n\x0bIEABOHKEAPA\x18j\x20\x01(\x0b2\x0c.ONOOFHDEIDDH\0R\x0bIEA\
-    BOHKEAPA\x121\n\x0bNEDIIBJHGFO\x18\xa3\x0c\x20\x01(\x0b2\x0c.EKMAHAFGNGJ\
-    H\0R\x0bNEDIIBJHGFO\x121\n\x0bJGPCBCJKONH\x18\xe5\x07\x20\x01(\x0b2\x0c.\
-    HHHCPCOFPPOH\0R\x0bJGPCBCJKONH\x121\n\x0bHKNJIPJHOCG\x18\x84\x0b\x20\x01\
-    (\x0b2\x0c.AHKFIAKMKLOH\0R\x0bHKNJIPJHOCG\x121\n\x0bLDAGLIMNMAN\x18\x8b\
-    \x03\x20\x01(\x0b2\x0c.JCDLJBPHOMDH\0R\x0bLDAGLIMNMAN\x121\n\x0bAFLHEIKJ\
-    NBN\x18\x95\x0b\x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\x0bAFLHEIKJNBN\x121\n\
-    \x0bPHKBFLNPEFI\x18\xe8\x01\x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\x0bPHKBFLN\
-    PEFI\x121\n\x0bGOCMNDKFOAB\x18\x8c\x08\x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\
-    \x0bGOCMNDKFOAB\x121\n\x0bCHONECOLIHA\x18\x90\t\x20\x01(\x0b2\x0c.IIPEGH\
-    DKHGDH\0R\x0bCHONECOLIHA\x121\n\x0bMOAOGACBOIJ\x18\xdb\x08\x20\x01(\x0b2\
-    \x0c.IIPEGHDKHGDH\0R\x0bMOAOGACBOIJ\x121\n\x0bKILHFPPBBFM\x18\xb7\x01\
-    \x20\x01(\x0b2\x0c.IIPEGHDKHGDH\0R\x0bKILHFPPBBFM\x120\n\x0bBLHDFAJHCJA\
-    \x18G\x20\x01(\x0b2\x0c.HAOJLHGNFPMH\0R\x0bBLHDFAJHCJA\x121\n\x0bLPJBAIM\
-    JAIK\x18\x87\x0e\x20\x01(\x0b2\x0c.HAOJLHGNFPMH\0R\x0bLPJBAIMJAIK\x121\n\
-    \x0bHDHDPGGMEPB\x18\x8b\r\x20\x01(\x0b2\x0c.OOPINHFMECEH\0R\x0bHDHDPGGME\
-    PB\x121\n\x0bECEGPEJCPBL\x18\x83\x08\x20\x01(\x0b2\x0c.LGCMEEPJMHAH\0R\
-    \x0bECEGPEJCPBL\x122\n\x0bFKPDKFEMKEC\x18\xe7\xb9\x07\x20\x01(\x0b2\x0c.\
-    AJNAJINFJICH\0R\x0bFKPDKFEMKEC\x122\n\x0bLLNMCJCFBMJ\x18\x8b\xc1\r\x20\
-    \x01(\x0b2\x0c.MNMLOAPBHNFH\0R\x0bLLNMCJCFBMJB\r\n\x0bNHICOMHCEGCb\x06pr\
-    oto3\
+    \x18\xb9\x0c\x20\x01(\x0b2\x0c.PBMAKLNJEKOH\0R\x0bKBNEGOLPLFC\x121\n\x0b\
+    GDKGIBEKGPF\x18\x97\x03\x20\x01(\x0b2\x0c.OKEFIDDNLKGH\0R\x0bGDKGIBEKGPF\
+    \x121\n\x0bONCNGIILENF\x18\x95\x04\x20\x01(\x0b2\x0c.MMNDAJFIJOJH\0R\x0b\
+    ONCNGIILENF\x121\n\x0bGLEJCDPDJNE\x18\xbb\x0e\x20\x01(\x0b2\x0c.BFBFMLBH\
+    GOHH\0R\x0bGLEJCDPDJNE\x121\n\x0bOOAGPGDPJOA\x18\xeb\x01\x20\x01(\x0b2\
+    \x0c.MPPHHNAEEDKH\0R\x0bOOAGPGDPJOA\x121\n\x0bIDBALJBNBKE\x18\x93\x0b\
+    \x20\x01(\x0b2\x0c.JFPFDJPPOAGH\0R\x0bIDBALJBNBKE\x121\n\x0bGNEBJEPPKEJ\
+    \x18\x86\x06\x20\x01(\x0b2\x0c.NALELIGHDAAH\0R\x0bGNEBJEPPKEJ\x121\n\x0b\
+    KJLAFILAPJF\x18\x8b\x05\x20\x01(\x0b2\x0c.PKODMMPHIBCH\0R\x0bKJLAFILAPJF\
+    \x121\n\x0bFLFPCPHLAGO\x18\xb3\x01\x20\x01(\x0b2\x0c.NHCKHPLKLIOH\0R\x0b\
+    FLFPCPHLAGO\x121\n\x0bEPOAKMFMFLM\x18\xcd\x0e\x20\x01(\x0b2\x0c.LHJPIKEK\
+    PGHH\0R\x0bEPOAKMFMFLM\x121\n\x0bFKPFOKHBPKK\x18\x88\x01\x20\x01(\x0b2\
+    \x0c.IMCBIIGOKPMH\0R\x0bFKPFOKHBPKK\x121\n\x0bEODCLAIPCAE\x18\xfc\t\x20\
+    \x01(\x0b2\x0c.LKMKHACMAPCH\0R\x0bEODCLAIPCAE\x121\n\x0bAOCODAOBKHM\x18\
+    \xb6\x06\x20\x01(\x0b2\x0c.IMLBIBJKPDBH\0R\x0bAOCODAOBKHM\x121\n\x0bEGGG\
+    GGGLFHO\x18\xc4\n\x20\x01(\x0b2\x0c.NOLCMKCNEAFH\0R\x0bEGGGGGGLFHO\x120\
+    \n\x0bLNPLOEOFCCJ\x181\x20\x01(\x0b2\x0c.KHGCDEIMLHNH\0R\x0bLNPLOEOFCCJ\
+    \x121\n\x0bIEABOHKEAPA\x18\xec\t\x20\x01(\x0b2\x0c.ONOOFHDEIDDH\0R\x0bIE\
+    ABOHKEAPA\x121\n\x0bNEDIIBJHGFO\x18\xdc\x01\x20\x01(\x0b2\x0c.EKMAHAFGNG\
+    JH\0R\x0bNEDIIBJHGFO\x121\n\x0bJGPCBCJKONH\x18\x86\t\x20\x01(\x0b2\x0c.H\
+    HHCPCOFPPOH\0R\x0bJGPCBCJKONH\x120\n\x0bHKNJIPJHOCG\x18@\x20\x01(\x0b2\
+    \x0c.AHKFIAKMKLOH\0R\x0bHKNJIPJHOCG\x120\n\x0bLDAGLIMNMAN\x18Y\x20\x01(\
+    \x0b2\x0c.JCDLJBPHOMDH\0R\x0bLDAGLIMNMAN\x121\n\x0bAFLHEIKJNBN\x18\x83\t\
+    \x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\x0bAFLHEIKJNBN\x121\n\x0bPHKBFLNPEFI\
+    \x18\xaa\x0e\x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\x0bPHKBFLNPEFI\x121\n\x0b\
+    GOCMNDKFOAB\x18\xa8\x0f\x20\x01(\x0b2\x0c.HHHCPCOFPPOH\0R\x0bGOCMNDKFOAB\
+    \x121\n\x0bCHONECOLIHA\x18\xba\n\x20\x01(\x0b2\x0c.IIPEGHDKHGDH\0R\x0bCH\
+    ONECOLIHA\x121\n\x0bMOAOGACBOIJ\x18\xf1\x0b\x20\x01(\x0b2\x0c.IIPEGHDKHG\
+    DH\0R\x0bMOAOGACBOIJ\x121\n\x0bKILHFPPBBFM\x18\xbf\x0e\x20\x01(\x0b2\x0c\
+    .IIPEGHDKHGDH\0R\x0bKILHFPPBBFM\x120\n\x0bBLHDFAJHCJA\x18]\x20\x01(\x0b2\
+    \x0c.HAOJLHGNFPMH\0R\x0bBLHDFAJHCJA\x121\n\x0bLPJBAIMJAIK\x18\xa5\t\x20\
+    \x01(\x0b2\x0c.HAOJLHGNFPMH\0R\x0bLPJBAIMJAIK\x120\n\x0bHDHDPGGMEPB\x18l\
+    \x20\x01(\x0b2\x0c.OOPINHFMECEH\0R\x0bHDHDPGGMEPB\x121\n\x0bECEGPEJCPBL\
+    \x18\xf5\x05\x20\x01(\x0b2\x0c.LGCMEEPJMHAH\0R\x0bECEGPEJCPBL\x122\n\x0b\
+    FKPDKFEMKEC\x18\x9b\xb2\x0e\x20\x01(\x0b2\x0c.AJNAJINFJICH\0R\x0bFKPDKFE\
+    MKEC\x122\n\x0bLLNMCJCFBMJ\x18\x95\xe0\x02\x20\x01(\x0b2\x0c.MNMLOAPBHNF\
+    H\0R\x0bLLNMCJCFBMJB\r\n\x0bNHICOMHCEGCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NDNKBAGGDHD {
     // message fields
-    // @@protoc_insertion_point(field:NDNKBAGGDHD.exp)
-    pub exp: u32,
     // @@protoc_insertion_point(field:NDNKBAGGDHD.CKBMGABEEGO)
     pub CKBMGABEEGO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NDNKBAGGDHD.exp)
+    pub exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NDNKBAGGDHD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NDNKBAGGDHD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &NDNKBAGGDHD| { &m.exp },
-            |m: &mut NDNKBAGGDHD| { &mut m.exp },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CKBMGABEEGO",
             |m: &NDNKBAGGDHD| { &m.CKBMGABEEGO },
             |m: &mut NDNKBAGGDHD| { &mut m.CKBMGABEEGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &NDNKBAGGDHD| { &m.exp },
+            |m: &mut NDNKBAGGDHD| { &mut m.exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NDNKBAGGDHD>(
             "NDNKBAGGDHD",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for NDNKBAGGDHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.exp = is.read_uint32()?;
-                },
-                74 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.CKBMGABEEGO)?;
                 },
-                72 => {
+                24 => {
                     self.CKBMGABEEGO.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NDNKBAGGDHD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CKBMGABEEGO);
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.exp);
+            my_size += ::protobuf::rt::uint32_size(4, self.exp);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CKBMGABEEGO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.CKBMGABEEGO)?;
         if self.exp != 0 {
-            os.write_uint32(2, self.exp)?;
+            os.write_uint32(4, self.exp)?;
         }
-        os.write_repeated_packed_uint32(9, &self.CKBMGABEEGO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for NDNKBAGGDHD {
     }
 
     fn clear(&mut self) {
-        self.exp = 0;
         self.CKBMGABEEGO.clear();
+        self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NDNKBAGGDHD {
         static instance: NDNKBAGGDHD = NDNKBAGGDHD {
-            exp: 0,
             CKBMGABEEGO: ::std::vec::Vec::new(),
+            exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for NDNKBAGGDHD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NDNKBAGGDHD.proto\"A\n\x0bNDNKBAGGDHD\x12\x10\n\x03exp\x18\x02\x20\
-    \x01(\rR\x03exp\x12\x20\n\x0bCKBMGABEEGO\x18\t\x20\x03(\rR\x0bCKBMGABEEG\
-    Ob\x06proto3\
+    \n\x11NDNKBAGGDHD.proto\"A\n\x0bNDNKBAGGDHD\x12\x20\n\x0bCKBMGABEEGO\x18\
+    \x03\x20\x03(\rR\x0bCKBMGABEEGO\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03\
+    expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

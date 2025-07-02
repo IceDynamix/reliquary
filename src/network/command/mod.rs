@@ -46,7 +46,6 @@ pub mod proto {
     pub mod GetAvatarDataScRsp;
     pub mod GetBagScRsp;
     pub mod GetGachaInfoScRsp;
-    pub mod GetMultiPathAvatarInfoScRsp;
     pub mod GroupStatus;
     pub mod GrowthTargetFunctionType;
     pub mod HeadIconData;
@@ -62,8 +61,8 @@ pub mod proto {
     pub mod MissionStatus;
     pub mod MissionSync;
     pub mod MissionSyncRecord;
+    pub mod MultiPathAvatarInfo;
     pub mod MultiPathAvatarType;
-    pub mod MultiPathAvatarTypeInfo;
     pub mod PileItem;
     pub mod PlayerBasicInfo;
     pub mod PlayerGetTokenScRsp;
@@ -75,6 +74,7 @@ pub mod proto {
     pub mod Relic;
     pub mod RelicAffix;
     pub mod SectionStatus;
+    pub mod SetAvatarEnhancedIdScRsp;
     pub mod TurnFoodSwitch;
     pub mod WaitDelResource;
 
@@ -84,6 +84,7 @@ pub mod proto {
     pub mod FHABEIKAFBO;
     pub mod GKDIHIFFHFD;
     pub mod IKAMMKLBOCO;
+    pub mod KHOCCHABNMN;
     pub mod LPFMHAJHDMM;
 }
 

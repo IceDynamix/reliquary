@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordDataChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.BDPBDGBKDOO)
-    pub BDPBDGBKDOO: u32,
     // @@protoc_insertion_point(field:PunkLordDataChangeNotify.IADCOHODGJN)
     pub IADCOHODGJN: u32,
     // @@protoc_insertion_point(field:PunkLordDataChangeNotify.GBJODJCOLGA)
     pub GBJODJCOLGA: u32,
+    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.BDPBDGBKDOO)
+    pub BDPBDGBKDOO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordDataChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl PunkLordDataChangeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPBDGBKDOO",
-            |m: &PunkLordDataChangeNotify| { &m.BDPBDGBKDOO },
-            |m: &mut PunkLordDataChangeNotify| { &mut m.BDPBDGBKDOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IADCOHODGJN",
             |m: &PunkLordDataChangeNotify| { &m.IADCOHODGJN },
             |m: &mut PunkLordDataChangeNotify| { &mut m.IADCOHODGJN },
@@ -67,6 +62,11 @@ impl PunkLordDataChangeNotify {
             "GBJODJCOLGA",
             |m: &PunkLordDataChangeNotify| { &m.GBJODJCOLGA },
             |m: &mut PunkLordDataChangeNotify| { &mut m.GBJODJCOLGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDPBDGBKDOO",
+            |m: &PunkLordDataChangeNotify| { &m.BDPBDGBKDOO },
+            |m: &mut PunkLordDataChangeNotify| { &mut m.BDPBDGBKDOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordDataChangeNotify>(
             "PunkLordDataChangeNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BDPBDGBKDOO = is.read_uint32()?;
-                },
-                88 => {
+                32 => {
                     self.IADCOHODGJN = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.GBJODJCOLGA = is.read_uint32()?;
+                },
+                88 => {
+                    self.BDPBDGBKDOO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPBDGBKDOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BDPBDGBKDOO);
-        }
         if self.IADCOHODGJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IADCOHODGJN);
+            my_size += ::protobuf::rt::uint32_size(4, self.IADCOHODGJN);
         }
         if self.GBJODJCOLGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GBJODJCOLGA);
+            my_size += ::protobuf::rt::uint32_size(1, self.GBJODJCOLGA);
+        }
+        if self.BDPBDGBKDOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BDPBDGBKDOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPBDGBKDOO != 0 {
-            os.write_uint32(12, self.BDPBDGBKDOO)?;
-        }
         if self.IADCOHODGJN != 0 {
-            os.write_uint32(11, self.IADCOHODGJN)?;
+            os.write_uint32(4, self.IADCOHODGJN)?;
         }
         if self.GBJODJCOLGA != 0 {
-            os.write_uint32(7, self.GBJODJCOLGA)?;
+            os.write_uint32(1, self.GBJODJCOLGA)?;
+        }
+        if self.BDPBDGBKDOO != 0 {
+            os.write_uint32(11, self.BDPBDGBKDOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.BDPBDGBKDOO = 0;
         self.IADCOHODGJN = 0;
         self.GBJODJCOLGA = 0;
+        self.BDPBDGBKDOO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordDataChangeNotify {
         static instance: PunkLordDataChangeNotify = PunkLordDataChangeNotify {
-            BDPBDGBKDOO: 0,
             IADCOHODGJN: 0,
             GBJODJCOLGA: 0,
+            BDPBDGBKDOO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordDataChangeNotify.proto\"\x80\x01\n\x18PunkLordDataChangeNo\
-    tify\x12\x20\n\x0bBDPBDGBKDOO\x18\x0c\x20\x01(\rR\x0bBDPBDGBKDOO\x12\x20\
-    \n\x0bIADCOHODGJN\x18\x0b\x20\x01(\rR\x0bIADCOHODGJN\x12\x20\n\x0bGBJODJ\
-    COLGA\x18\x07\x20\x01(\rR\x0bGBJODJCOLGAb\x06proto3\
+    tify\x12\x20\n\x0bIADCOHODGJN\x18\x04\x20\x01(\rR\x0bIADCOHODGJN\x12\x20\
+    \n\x0bGBJODJCOLGA\x18\x01\x20\x01(\rR\x0bGBJODJCOLGA\x12\x20\n\x0bBDPBDG\
+    BKDOO\x18\x0b\x20\x01(\rR\x0bBDPBDGBKDOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                10 => {
                     self.LKJMJGDEBEE = is.read_bytes()?;
                 },
-                80 => {
+                120 => {
                     self.JBPEMOFNEDG = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.LKJMJGDEBEE.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(15, &self.LKJMJGDEBEE);
+            my_size += ::protobuf::rt::bytes_size(1, &self.LKJMJGDEBEE);
         }
         if self.JBPEMOFNEDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JBPEMOFNEDG);
+            my_size += ::protobuf::rt::uint32_size(15, self.JBPEMOFNEDG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.LKJMJGDEBEE.is_empty() {
-            os.write_bytes(15, &self.LKJMJGDEBEE)?;
+            os.write_bytes(1, &self.LKJMJGDEBEE)?;
         }
         if self.JBPEMOFNEDG != 0 {
-            os.write_uint32(10, self.JBPEMOFNEDG)?;
+            os.write_uint32(15, self.JBPEMOFNEDG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aClientObjUploadCsReq.proto\"Z\n\x14ClientObjUploadCsReq\x12\x20\n\
-    \x0bLKJMJGDEBEE\x18\x0f\x20\x01(\x0cR\x0bLKJMJGDEBEE\x12\x20\n\x0bJBPEMO\
-    FNEDG\x18\n\x20\x01(\rR\x0bJBPEMOFNEDGb\x06proto3\
+    \x0bLKJMJGDEBEE\x18\x01\x20\x01(\x0cR\x0bLKJMJGDEBEE\x12\x20\n\x0bJBPEMO\
+    FNEDG\x18\x0f\x20\x01(\rR\x0bJBPEMOFNEDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

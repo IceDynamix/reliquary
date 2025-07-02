@@ -30,10 +30,10 @@ pub struct ParkourGetRankingInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:ParkourGetRankingInfoScRsp.PFENGLDJCMG)
     pub PFENGLDJCMG: ::std::vec::Vec<super::OOFKEBPANLP::OOFKEBPANLP>,
-    // @@protoc_insertion_point(field:ParkourGetRankingInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ParkourGetRankingInfoScRsp.NJGPIKCFJNL)
     pub NJGPIKCFJNL: ::protobuf::MessageField<super::OOFKEBPANLP::OOFKEBPANLP>,
+    // @@protoc_insertion_point(field:ParkourGetRankingInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ParkourGetRankingInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ParkourGetRankingInfoScRsp {
             |m: &ParkourGetRankingInfoScRsp| { &m.PFENGLDJCMG },
             |m: &mut ParkourGetRankingInfoScRsp| { &mut m.PFENGLDJCMG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ParkourGetRankingInfoScRsp| { &m.retcode },
-            |m: &mut ParkourGetRankingInfoScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOFKEBPANLP::OOFKEBPANLP>(
             "NJGPIKCFJNL",
             |m: &ParkourGetRankingInfoScRsp| { &m.NJGPIKCFJNL },
             |m: &mut ParkourGetRankingInfoScRsp| { &mut m.NJGPIKCFJNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ParkourGetRankingInfoScRsp| { &m.retcode },
+            |m: &mut ParkourGetRankingInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ParkourGetRankingInfoScRsp>(
             "ParkourGetRankingInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ParkourGetRankingInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                106 => {
                     self.PFENGLDJCMG.push(is.read_message()?);
                 },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                122 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJGPIKCFJNL)?;
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for ParkourGetRankingInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         if let Some(v) = self.NJGPIKCFJNL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for ParkourGetRankingInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.PFENGLDJCMG {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
         if let Some(v) = self.NJGPIKCFJNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for ParkourGetRankingInfoScRsp {
 
     fn clear(&mut self) {
         self.PFENGLDJCMG.clear();
-        self.retcode = 0;
         self.NJGPIKCFJNL.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourGetRankingInfoScRsp {
         static instance: ParkourGetRankingInfoScRsp = ParkourGetRankingInfoScRsp {
             PFENGLDJCMG: ::std::vec::Vec::new(),
-            retcode: 0,
             NJGPIKCFJNL: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for ParkourGetRankingInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ParkourGetRankingInfoScRsp.proto\x1a\x11OOFKEBPANLP.proto\"\x96\
-    \x01\n\x1aParkourGetRankingInfoScRsp\x12.\n\x0bPFENGLDJCMG\x18\x08\x20\
-    \x03(\x0b2\x0c.OOFKEBPANLPR\x0bPFENGLDJCMG\x12\x18\n\x07retcode\x18\x05\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bNJGPIKCFJNL\x18\x0f\x20\x01(\x0b2\x0c.\
-    OOFKEBPANLPR\x0bNJGPIKCFJNLb\x06proto3\
+    \x01\n\x1aParkourGetRankingInfoScRsp\x12.\n\x0bPFENGLDJCMG\x18\r\x20\x03\
+    (\x0b2\x0c.OOFKEBPANLPR\x0bPFENGLDJCMG\x12.\n\x0bNJGPIKCFJNL\x18\x0e\x20\
+    \x01(\x0b2\x0c.OOFKEBPANLPR\x0bNJGPIKCFJNL\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.PODGJPEKEEG = is.read_enum_or_unknown()?;
                 },
-                66 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJLFNBPPPG)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PODGJPEKEEG != ::protobuf::EnumOrUnknown::new(super::DFHEJCIJBEJ::DFHEJCIJBEJ::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.PODGJPEKEEG.value());
+            my_size += ::protobuf::rt::int32_size(7, self.PODGJPEKEEG.value());
         }
         if let Some(v) = self.NFJLFNBPPPG.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PODGJPEKEEG != ::protobuf::EnumOrUnknown::new(super::DFHEJCIJBEJ::DFHEJCIJBEJ::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PODGJPEKEEG))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.PODGJPEKEEG))?;
         }
         if let Some(v) = self.NFJLFNBPPPG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HOHDMMNDKNJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOHDMMNDKNJ.proto\x1a\x11DFHEJCIJBEJ.proto\x1a\x11JOFGDAIADBO.prot\
-    o\"m\n\x0bHOHDMMNDKNJ\x12.\n\x0bPODGJPEKEEG\x18\x05\x20\x01(\x0e2\x0c.DF\
-    HEJCIJBEJR\x0bPODGJPEKEEG\x12.\n\x0bNFJLFNBPPPG\x18\x08\x20\x01(\x0b2\
+    o\"m\n\x0bHOHDMMNDKNJ\x12.\n\x0bPODGJPEKEEG\x18\x07\x20\x01(\x0e2\x0c.DF\
+    HEJCIJBEJR\x0bPODGJPEKEEG\x12.\n\x0bNFJLFNBPPPG\x18\x0f\x20\x01(\x0b2\
     \x0c.JOFGDAIADBOR\x0bNFJLFNBPPPGb\x06proto3\
 ";
 

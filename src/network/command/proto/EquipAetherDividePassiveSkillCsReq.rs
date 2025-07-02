@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EquipAetherDividePassiveSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.slot)
-    pub slot: u32,
-    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.item_id)
-    pub item_id: u32,
     // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.aether_avatar_id)
     pub aether_avatar_id: u32,
+    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.item_id)
+    pub item_id: u32,
+    // @@protoc_insertion_point(field:EquipAetherDividePassiveSkillCsReq.slot)
+    pub slot: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EquipAetherDividePassiveSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl EquipAetherDividePassiveSkillCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &EquipAetherDividePassiveSkillCsReq| { &m.slot },
-            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.slot },
+            "aether_avatar_id",
+            |m: &EquipAetherDividePassiveSkillCsReq| { &m.aether_avatar_id },
+            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.aether_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -64,9 +64,9 @@ impl EquipAetherDividePassiveSkillCsReq {
             |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aether_avatar_id",
-            |m: &EquipAetherDividePassiveSkillCsReq| { &m.aether_avatar_id },
-            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.aether_avatar_id },
+            "slot",
+            |m: &EquipAetherDividePassiveSkillCsReq| { &m.slot },
+            |m: &mut EquipAetherDividePassiveSkillCsReq| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EquipAetherDividePassiveSkillCsReq>(
             "EquipAetherDividePassiveSkillCsReq",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.slot = is.read_uint32()?;
+                    self.aether_avatar_id = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.item_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.aether_avatar_id = is.read_uint32()?;
+                104 => {
+                    self.slot = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.slot);
+        if self.aether_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.aether_avatar_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
         }
-        if self.aether_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.aether_avatar_id);
+        if self.slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != 0 {
-            os.write_uint32(2, self.slot)?;
+        if self.aether_avatar_id != 0 {
+            os.write_uint32(2, self.aether_avatar_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(9, self.item_id)?;
+            os.write_uint32(12, self.item_id)?;
         }
-        if self.aether_avatar_id != 0 {
-            os.write_uint32(4, self.aether_avatar_id)?;
+        if self.slot != 0 {
+            os.write_uint32(13, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EquipAetherDividePassiveSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
-        self.item_id = 0;
         self.aether_avatar_id = 0;
+        self.item_id = 0;
+        self.slot = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EquipAetherDividePassiveSkillCsReq {
         static instance: EquipAetherDividePassiveSkillCsReq = EquipAetherDividePassiveSkillCsReq {
-            slot: 0,
-            item_id: 0,
             aether_avatar_id: 0,
+            item_id: 0,
+            slot: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EquipAetherDividePassiveSkillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(EquipAetherDividePassiveSkillCsReq.proto\"{\n\"EquipAetherDividePassi\
-    veSkillCsReq\x12\x12\n\x04slot\x18\x02\x20\x01(\rR\x04slot\x12\x17\n\x07\
-    item_id\x18\t\x20\x01(\rR\x06itemId\x12(\n\x10aether_avatar_id\x18\x04\
-    \x20\x01(\rR\x0eaetherAvatarIdb\x06proto3\
+    veSkillCsReq\x12(\n\x10aether_avatar_id\x18\x02\x20\x01(\rR\x0eaetherAva\
+    tarId\x12\x17\n\x07item_id\x18\x0c\x20\x01(\rR\x06itemId\x12\x12\n\x04sl\
+    ot\x18\r\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

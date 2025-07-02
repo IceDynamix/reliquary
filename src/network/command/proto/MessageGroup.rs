@@ -30,14 +30,14 @@ pub struct MessageGroup {
     // message fields
     // @@protoc_insertion_point(field:MessageGroup.message_section_id)
     pub message_section_id: u32,
-    // @@protoc_insertion_point(field:MessageGroup.refresh_time)
-    pub refresh_time: i64,
-    // @@protoc_insertion_point(field:MessageGroup.message_section_list)
-    pub message_section_list: ::std::vec::Vec<super::MessageSection::MessageSection>,
     // @@protoc_insertion_point(field:MessageGroup.status)
     pub status: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
+    // @@protoc_insertion_point(field:MessageGroup.refresh_time)
+    pub refresh_time: i64,
     // @@protoc_insertion_point(field:MessageGroup.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:MessageGroup.message_section_list)
+    pub message_section_list: ::std::vec::Vec<super::MessageSection::MessageSection>,
     // special fields
     // @@protoc_insertion_point(special_field:MessageGroup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,24 +63,24 @@ impl MessageGroup {
             |m: &mut MessageGroup| { &mut m.message_section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "refresh_time",
-            |m: &MessageGroup| { &m.refresh_time },
-            |m: &mut MessageGroup| { &mut m.refresh_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "message_section_list",
-            |m: &MessageGroup| { &m.message_section_list },
-            |m: &mut MessageGroup| { &mut m.message_section_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &MessageGroup| { &m.status },
             |m: &mut MessageGroup| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "refresh_time",
+            |m: &MessageGroup| { &m.refresh_time },
+            |m: &mut MessageGroup| { &mut m.refresh_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &MessageGroup| { &m.id },
             |m: &mut MessageGroup| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "message_section_list",
+            |m: &MessageGroup| { &m.message_section_list },
+            |m: &mut MessageGroup| { &mut m.message_section_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MessageGroup>(
             "MessageGroup",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for MessageGroup {
                 56 => {
                     self.message_section_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.refresh_time = is.read_int64()?;
-                },
-                66 => {
-                    self.message_section_list.push(is.read_message()?);
-                },
-                112 => {
+                64 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                8 => {
+                    self.refresh_time = is.read_int64()?;
+                },
+                96 => {
                     self.id = is.read_uint32()?;
+                },
+                42 => {
+                    self.message_section_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,19 +130,19 @@ impl ::protobuf::Message for MessageGroup {
         if self.message_section_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.message_section_id);
         }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.status.value());
+        }
         if self.refresh_time != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.refresh_time);
+            my_size += ::protobuf::rt::int64_size(1, self.refresh_time);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.id);
         }
         for value in &self.message_section_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.status.value());
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -152,18 +152,18 @@ impl ::protobuf::Message for MessageGroup {
         if self.message_section_id != 0 {
             os.write_uint32(7, self.message_section_id)?;
         }
-        if self.refresh_time != 0 {
-            os.write_int64(6, self.refresh_time)?;
-        }
-        for v in &self.message_section_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.status != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.refresh_time != 0 {
+            os.write_int64(1, self.refresh_time)?;
         }
         if self.id != 0 {
-            os.write_uint32(10, self.id)?;
+            os.write_uint32(12, self.id)?;
         }
+        for v in &self.message_section_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,20 +182,20 @@ impl ::protobuf::Message for MessageGroup {
 
     fn clear(&mut self) {
         self.message_section_id = 0;
-        self.refresh_time = 0;
-        self.message_section_list.clear();
         self.status = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
+        self.refresh_time = 0;
         self.id = 0;
+        self.message_section_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MessageGroup {
         static instance: MessageGroup = MessageGroup {
             message_section_id: 0,
-            refresh_time: 0,
-            message_section_list: ::std::vec::Vec::new(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            refresh_time: 0,
             id: 0,
+            message_section_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for MessageGroup {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12MessageGroup.proto\x1a\x18MessageGroupStatus.proto\x1a\x14MessageS\
     ection.proto\"\xdf\x01\n\x0cMessageGroup\x12,\n\x12message_section_id\
-    \x18\x07\x20\x01(\rR\x10messageSectionId\x12!\n\x0crefresh_time\x18\x06\
-    \x20\x01(\x03R\x0brefreshTime\x12A\n\x14message_section_list\x18\x08\x20\
-    \x03(\x0b2\x0f.MessageSectionR\x12messageSectionList\x12+\n\x06status\
-    \x18\x0e\x20\x01(\x0e2\x13.MessageGroupStatusR\x06status\x12\x0e\n\x02id\
-    \x18\n\x20\x01(\rR\x02idb\x06proto3\
+    \x18\x07\x20\x01(\rR\x10messageSectionId\x12+\n\x06status\x18\x08\x20\
+    \x01(\x0e2\x13.MessageGroupStatusR\x06status\x12!\n\x0crefresh_time\x18\
+    \x01\x20\x01(\x03R\x0brefreshTime\x12\x0e\n\x02id\x18\x0c\x20\x01(\rR\
+    \x02id\x12A\n\x14message_section_list\x18\x05\x20\x03(\x0b2\x0f.MessageS\
+    ectionR\x12messageSectionListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

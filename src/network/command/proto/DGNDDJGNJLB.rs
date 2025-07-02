@@ -79,7 +79,7 @@ impl ::protobuf::Message for DGNDDJGNJLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                120 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
                 42 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DGNDDJGNJLB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.source != ::protobuf::EnumOrUnknown::new(super::CFJGPIFIOOL::CFJGPIFIOOL::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.source.value());
+            my_size += ::protobuf::rt::int32_size(15, self.source.value());
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for DGNDDJGNJLB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.source != ::protobuf::EnumOrUnknown::new(super::CFJGPIFIOOL::CFJGPIFIOOL::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for DGNDDJGNJLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DGNDDJGNJLB.proto\x1a\x11CFJGPIFIOOL.proto\x1a\x11PNIEACEIJKM.prot\
-    o\"c\n\x0bDGNDDJGNJLB\x12$\n\x06source\x18\x0b\x20\x01(\x0e2\x0c.CFJGPIF\
+    o\"c\n\x0bDGNDDJGNJLB\x12$\n\x06source\x18\x0f\x20\x01(\x0e2\x0c.CFJGPIF\
     IOOLR\x06source\x12.\n\x0bPBHMGCHKJGO\x18\x05\x20\x01(\x0b2\x0c.PNIEACEI\
     JKMR\x0bPBHMGCHKJGOb\x06proto3\
 ";

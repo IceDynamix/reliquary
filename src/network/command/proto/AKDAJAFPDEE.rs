@@ -30,10 +30,10 @@ pub struct AKDAJAFPDEE {
     // message fields
     // @@protoc_insertion_point(field:AKDAJAFPDEE.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:AKDAJAFPDEE.CENIFNKNFNP)
-    pub CENIFNKNFNP: u32,
     // @@protoc_insertion_point(field:AKDAJAFPDEE.KNIBANIILDE)
     pub KNIBANIILDE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AKDAJAFPDEE.CENIFNKNFNP)
+    pub CENIFNKNFNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AKDAJAFPDEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl AKDAJAFPDEE {
             |m: &AKDAJAFPDEE| { &m.world_level },
             |m: &mut AKDAJAFPDEE| { &mut m.world_level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &AKDAJAFPDEE| { &m.CENIFNKNFNP },
-            |m: &mut AKDAJAFPDEE| { &mut m.CENIFNKNFNP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KNIBANIILDE",
             |m: &AKDAJAFPDEE| { &m.KNIBANIILDE },
             |m: &mut AKDAJAFPDEE| { &mut m.KNIBANIILDE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CENIFNKNFNP",
+            |m: &AKDAJAFPDEE| { &m.CENIFNKNFNP },
+            |m: &mut AKDAJAFPDEE| { &mut m.CENIFNKNFNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKDAJAFPDEE>(
             "AKDAJAFPDEE",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for AKDAJAFPDEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.world_level = is.read_uint32()?;
                 },
-                88 => {
-                    self.CENIFNKNFNP = is.read_uint32()?;
-                },
-                34 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.KNIBANIILDE)?;
                 },
-                32 => {
+                120 => {
                     self.KNIBANIILDE.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.CENIFNKNFNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for AKDAJAFPDEE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KNIBANIILDE);
         if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CENIFNKNFNP);
+            my_size += ::protobuf::rt::uint32_size(8, self.CENIFNKNFNP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.KNIBANIILDE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for AKDAJAFPDEE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(10, self.world_level)?;
+            os.write_uint32(5, self.world_level)?;
         }
+        os.write_repeated_packed_uint32(15, &self.KNIBANIILDE)?;
         if self.CENIFNKNFNP != 0 {
-            os.write_uint32(11, self.CENIFNKNFNP)?;
+            os.write_uint32(8, self.CENIFNKNFNP)?;
         }
-        os.write_repeated_packed_uint32(4, &self.KNIBANIILDE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for AKDAJAFPDEE {
 
     fn clear(&mut self) {
         self.world_level = 0;
-        self.CENIFNKNFNP = 0;
         self.KNIBANIILDE.clear();
+        self.CENIFNKNFNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKDAJAFPDEE {
         static instance: AKDAJAFPDEE = AKDAJAFPDEE {
             world_level: 0,
-            CENIFNKNFNP: 0,
             KNIBANIILDE: ::std::vec::Vec::new(),
+            CENIFNKNFNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for AKDAJAFPDEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AKDAJAFPDEE.proto\"r\n\x0bAKDAJAFPDEE\x12\x1f\n\x0bworld_level\x18\
-    \n\x20\x01(\rR\nworldLevel\x12\x20\n\x0bCENIFNKNFNP\x18\x0b\x20\x01(\rR\
-    \x0bCENIFNKNFNP\x12\x20\n\x0bKNIBANIILDE\x18\x04\x20\x03(\rR\x0bKNIBANII\
-    LDEb\x06proto3\
+    \x05\x20\x01(\rR\nworldLevel\x12\x20\n\x0bKNIBANIILDE\x18\x0f\x20\x03(\r\
+    R\x0bKNIBANIILDE\x12\x20\n\x0bCENIFNKNFNP\x18\x08\x20\x01(\rR\x0bCENIFNK\
+    NFNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

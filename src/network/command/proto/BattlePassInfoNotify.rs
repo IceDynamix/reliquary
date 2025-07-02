@@ -28,30 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattlePassInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.LJOEKEFKPKO)
-    pub LJOEKEFKPKO: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.INBOCKJGLBO)
-    pub INBOCKJGLBO: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.LJFLFLIMKAD)
-    pub LJFLFLIMKAD: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.CPHIIOCKHPI)
-    pub CPHIIOCKHPI: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.NKAOKNMHOLH)
-    pub NKAOKNMHOLH: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.FDKKIKGANCK)
-    pub FDKKIKGANCK: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.EDBMNMDJBKO)
-    pub EDBMNMDJBKO: u32,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.bp_tier_type)
     pub bp_tier_type: ::protobuf::EnumOrUnknown<super::BpTierType::BpTierType>,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.HKEOAACCBPL)
-    pub HKEOAACCBPL: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.EKGOPLDJOII)
     pub EKGOPLDJOII: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.LJFLFLIMKAD)
+    pub LJFLFLIMKAD: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.NKAOKNMHOLH)
+    pub NKAOKNMHOLH: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.CPHIIOCKHPI)
+    pub CPHIIOCKHPI: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.EDBMNMDJBKO)
+    pub EDBMNMDJBKO: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.INBOCKJGLBO)
+    pub INBOCKJGLBO: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.LJOEKEFKPKO)
+    pub LJOEKEFKPKO: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.HKEOAACCBPL)
+    pub HKEOAACCBPL: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.FDKKIKGANCK)
+    pub FDKKIKGANCK: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.CBJKLLEOHDC)
     pub CBJKLLEOHDC: u64,
     // special fields
@@ -74,19 +74,14 @@ impl BattlePassInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJOEKEFKPKO",
-            |m: &BattlePassInfoNotify| { &m.LJOEKEFKPKO },
-            |m: &mut BattlePassInfoNotify| { &mut m.LJOEKEFKPKO },
+            "bp_tier_type",
+            |m: &BattlePassInfoNotify| { &m.bp_tier_type },
+            |m: &mut BattlePassInfoNotify| { &mut m.bp_tier_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &BattlePassInfoNotify| { &m.exp },
-            |m: &mut BattlePassInfoNotify| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INBOCKJGLBO",
-            |m: &BattlePassInfoNotify| { &m.INBOCKJGLBO },
-            |m: &mut BattlePassInfoNotify| { &mut m.INBOCKJGLBO },
+            "EKGOPLDJOII",
+            |m: &BattlePassInfoNotify| { &m.EKGOPLDJOII },
+            |m: &mut BattlePassInfoNotify| { &mut m.EKGOPLDJOII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJFLFLIMKAD",
@@ -94,14 +89,14 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.LJFLFLIMKAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPHIIOCKHPI",
-            |m: &BattlePassInfoNotify| { &m.CPHIIOCKHPI },
-            |m: &mut BattlePassInfoNotify| { &mut m.CPHIIOCKHPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NKAOKNMHOLH",
             |m: &BattlePassInfoNotify| { &m.NKAOKNMHOLH },
             |m: &mut BattlePassInfoNotify| { &mut m.NKAOKNMHOLH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &BattlePassInfoNotify| { &m.exp },
+            |m: &mut BattlePassInfoNotify| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -109,9 +104,9 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDKKIKGANCK",
-            |m: &BattlePassInfoNotify| { &m.FDKKIKGANCK },
-            |m: &mut BattlePassInfoNotify| { &mut m.FDKKIKGANCK },
+            "CPHIIOCKHPI",
+            |m: &BattlePassInfoNotify| { &m.CPHIIOCKHPI },
+            |m: &mut BattlePassInfoNotify| { &mut m.CPHIIOCKHPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EDBMNMDJBKO",
@@ -119,9 +114,14 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.EDBMNMDJBKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "bp_tier_type",
-            |m: &BattlePassInfoNotify| { &m.bp_tier_type },
-            |m: &mut BattlePassInfoNotify| { &mut m.bp_tier_type },
+            "INBOCKJGLBO",
+            |m: &BattlePassInfoNotify| { &m.INBOCKJGLBO },
+            |m: &mut BattlePassInfoNotify| { &mut m.INBOCKJGLBO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJOEKEFKPKO",
+            |m: &BattlePassInfoNotify| { &m.LJOEKEFKPKO },
+            |m: &mut BattlePassInfoNotify| { &mut m.LJOEKEFKPKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HKEOAACCBPL",
@@ -129,9 +129,9 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.HKEOAACCBPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKGOPLDJOII",
-            |m: &BattlePassInfoNotify| { &m.EKGOPLDJOII },
-            |m: &mut BattlePassInfoNotify| { &mut m.EKGOPLDJOII },
+            "FDKKIKGANCK",
+            |m: &BattlePassInfoNotify| { &m.FDKKIKGANCK },
+            |m: &mut BattlePassInfoNotify| { &mut m.FDKKIKGANCK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBJKLLEOHDC",
@@ -156,43 +156,43 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.LJOEKEFKPKO = is.read_uint64()?;
-                },
-                32 => {
-                    self.exp = is.read_uint32()?;
-                },
-                16 => {
-                    self.INBOCKJGLBO = is.read_uint64()?;
-                },
-                104 => {
-                    self.LJFLFLIMKAD = is.read_uint32()?;
-                },
-                120 => {
-                    self.CPHIIOCKHPI = is.read_uint64()?;
-                },
-                56 => {
-                    self.NKAOKNMHOLH = is.read_uint64()?;
-                },
                 48 => {
-                    self.level = is.read_uint32()?;
-                },
-                64 => {
-                    self.FDKKIKGANCK = is.read_uint64()?;
-                },
-                40 => {
-                    self.EDBMNMDJBKO = is.read_uint32()?;
-                },
-                80 => {
                     self.bp_tier_type = is.read_enum_or_unknown()?;
                 },
                 8 => {
-                    self.HKEOAACCBPL = is.read_uint64()?;
-                },
-                96 => {
                     self.EKGOPLDJOII = is.read_uint64()?;
                 },
+                64 => {
+                    self.LJFLFLIMKAD = is.read_uint32()?;
+                },
+                96 => {
+                    self.NKAOKNMHOLH = is.read_uint64()?;
+                },
+                72 => {
+                    self.exp = is.read_uint32()?;
+                },
+                56 => {
+                    self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.CPHIIOCKHPI = is.read_uint64()?;
+                },
+                104 => {
+                    self.EDBMNMDJBKO = is.read_uint32()?;
+                },
+                24 => {
+                    self.INBOCKJGLBO = is.read_uint64()?;
+                },
+                120 => {
+                    self.LJOEKEFKPKO = is.read_uint64()?;
+                },
+                16 => {
+                    self.HKEOAACCBPL = is.read_uint64()?;
+                },
                 88 => {
+                    self.FDKKIKGANCK = is.read_uint64()?;
+                },
+                40 => {
                     self.CBJKLLEOHDC = is.read_uint64()?;
                 },
                 tag => {
@@ -207,44 +207,44 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJOEKEFKPKO != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.LJOEKEFKPKO);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.exp);
-        }
-        if self.INBOCKJGLBO != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.INBOCKJGLBO);
-        }
-        if self.LJFLFLIMKAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LJFLFLIMKAD);
-        }
-        if self.CPHIIOCKHPI != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.CPHIIOCKHPI);
-        }
-        if self.NKAOKNMHOLH != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.NKAOKNMHOLH);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
-        }
-        if self.FDKKIKGANCK != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.FDKKIKGANCK);
-        }
-        if self.EDBMNMDJBKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EDBMNMDJBKO);
-        }
         if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BP_TIER_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.bp_tier_type.value());
-        }
-        if self.HKEOAACCBPL != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.HKEOAACCBPL);
+            my_size += ::protobuf::rt::int32_size(6, self.bp_tier_type.value());
         }
         if self.EKGOPLDJOII != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.EKGOPLDJOII);
+            my_size += ::protobuf::rt::uint64_size(1, self.EKGOPLDJOII);
+        }
+        if self.LJFLFLIMKAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LJFLFLIMKAD);
+        }
+        if self.NKAOKNMHOLH != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.NKAOKNMHOLH);
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.exp);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
+        }
+        if self.CPHIIOCKHPI != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.CPHIIOCKHPI);
+        }
+        if self.EDBMNMDJBKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EDBMNMDJBKO);
+        }
+        if self.INBOCKJGLBO != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.INBOCKJGLBO);
+        }
+        if self.LJOEKEFKPKO != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.LJOEKEFKPKO);
+        }
+        if self.HKEOAACCBPL != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.HKEOAACCBPL);
+        }
+        if self.FDKKIKGANCK != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.FDKKIKGANCK);
         }
         if self.CBJKLLEOHDC != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.CBJKLLEOHDC);
+            my_size += ::protobuf::rt::uint64_size(5, self.CBJKLLEOHDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -252,44 +252,44 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJOEKEFKPKO != 0 {
-            os.write_uint64(9, self.LJOEKEFKPKO)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(4, self.exp)?;
-        }
-        if self.INBOCKJGLBO != 0 {
-            os.write_uint64(2, self.INBOCKJGLBO)?;
-        }
-        if self.LJFLFLIMKAD != 0 {
-            os.write_uint32(13, self.LJFLFLIMKAD)?;
-        }
-        if self.CPHIIOCKHPI != 0 {
-            os.write_uint64(15, self.CPHIIOCKHPI)?;
-        }
-        if self.NKAOKNMHOLH != 0 {
-            os.write_uint64(7, self.NKAOKNMHOLH)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(6, self.level)?;
-        }
-        if self.FDKKIKGANCK != 0 {
-            os.write_uint64(8, self.FDKKIKGANCK)?;
-        }
-        if self.EDBMNMDJBKO != 0 {
-            os.write_uint32(5, self.EDBMNMDJBKO)?;
-        }
         if self.bp_tier_type != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BP_TIER_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.bp_tier_type))?;
-        }
-        if self.HKEOAACCBPL != 0 {
-            os.write_uint64(1, self.HKEOAACCBPL)?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.bp_tier_type))?;
         }
         if self.EKGOPLDJOII != 0 {
-            os.write_uint64(12, self.EKGOPLDJOII)?;
+            os.write_uint64(1, self.EKGOPLDJOII)?;
+        }
+        if self.LJFLFLIMKAD != 0 {
+            os.write_uint32(8, self.LJFLFLIMKAD)?;
+        }
+        if self.NKAOKNMHOLH != 0 {
+            os.write_uint64(12, self.NKAOKNMHOLH)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(9, self.exp)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(7, self.level)?;
+        }
+        if self.CPHIIOCKHPI != 0 {
+            os.write_uint64(14, self.CPHIIOCKHPI)?;
+        }
+        if self.EDBMNMDJBKO != 0 {
+            os.write_uint32(13, self.EDBMNMDJBKO)?;
+        }
+        if self.INBOCKJGLBO != 0 {
+            os.write_uint64(3, self.INBOCKJGLBO)?;
+        }
+        if self.LJOEKEFKPKO != 0 {
+            os.write_uint64(15, self.LJOEKEFKPKO)?;
+        }
+        if self.HKEOAACCBPL != 0 {
+            os.write_uint64(2, self.HKEOAACCBPL)?;
+        }
+        if self.FDKKIKGANCK != 0 {
+            os.write_uint64(11, self.FDKKIKGANCK)?;
         }
         if self.CBJKLLEOHDC != 0 {
-            os.write_uint64(11, self.CBJKLLEOHDC)?;
+            os.write_uint64(5, self.CBJKLLEOHDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -308,36 +308,36 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.LJOEKEFKPKO = 0;
-        self.exp = 0;
-        self.INBOCKJGLBO = 0;
-        self.LJFLFLIMKAD = 0;
-        self.CPHIIOCKHPI = 0;
-        self.NKAOKNMHOLH = 0;
-        self.level = 0;
-        self.FDKKIKGANCK = 0;
-        self.EDBMNMDJBKO = 0;
         self.bp_tier_type = ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BP_TIER_TYPE_NONE);
-        self.HKEOAACCBPL = 0;
         self.EKGOPLDJOII = 0;
+        self.LJFLFLIMKAD = 0;
+        self.NKAOKNMHOLH = 0;
+        self.exp = 0;
+        self.level = 0;
+        self.CPHIIOCKHPI = 0;
+        self.EDBMNMDJBKO = 0;
+        self.INBOCKJGLBO = 0;
+        self.LJOEKEFKPKO = 0;
+        self.HKEOAACCBPL = 0;
+        self.FDKKIKGANCK = 0;
         self.CBJKLLEOHDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattlePassInfoNotify {
         static instance: BattlePassInfoNotify = BattlePassInfoNotify {
-            LJOEKEFKPKO: 0,
-            exp: 0,
-            INBOCKJGLBO: 0,
-            LJFLFLIMKAD: 0,
-            CPHIIOCKHPI: 0,
-            NKAOKNMHOLH: 0,
-            level: 0,
-            FDKKIKGANCK: 0,
-            EDBMNMDJBKO: 0,
             bp_tier_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            HKEOAACCBPL: 0,
             EKGOPLDJOII: 0,
+            LJFLFLIMKAD: 0,
+            NKAOKNMHOLH: 0,
+            exp: 0,
+            level: 0,
+            CPHIIOCKHPI: 0,
+            EDBMNMDJBKO: 0,
+            INBOCKJGLBO: 0,
+            LJOEKEFKPKO: 0,
+            HKEOAACCBPL: 0,
+            FDKKIKGANCK: 0,
             CBJKLLEOHDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -364,17 +364,17 @@ impl ::protobuf::reflect::ProtobufValue for BattlePassInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBattlePassInfoNotify.proto\x1a\x10BpTierType.proto\"\xc1\x03\n\x14\
-    BattlePassInfoNotify\x12\x20\n\x0bLJOEKEFKPKO\x18\t\x20\x01(\x04R\x0bLJO\
-    EKEFKPKO\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03exp\x12\x20\n\x0bINBOCK\
-    JGLBO\x18\x02\x20\x01(\x04R\x0bINBOCKJGLBO\x12\x20\n\x0bLJFLFLIMKAD\x18\
-    \r\x20\x01(\rR\x0bLJFLFLIMKAD\x12\x20\n\x0bCPHIIOCKHPI\x18\x0f\x20\x01(\
-    \x04R\x0bCPHIIOCKHPI\x12\x20\n\x0bNKAOKNMHOLH\x18\x07\x20\x01(\x04R\x0bN\
-    KAOKNMHOLH\x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05level\x12\x20\n\x0b\
-    FDKKIKGANCK\x18\x08\x20\x01(\x04R\x0bFDKKIKGANCK\x12\x20\n\x0bEDBMNMDJBK\
-    O\x18\x05\x20\x01(\rR\x0bEDBMNMDJBKO\x12-\n\x0cbp_tier_type\x18\n\x20\
-    \x01(\x0e2\x0b.BpTierTypeR\nbpTierType\x12\x20\n\x0bHKEOAACCBPL\x18\x01\
-    \x20\x01(\x04R\x0bHKEOAACCBPL\x12\x20\n\x0bEKGOPLDJOII\x18\x0c\x20\x01(\
-    \x04R\x0bEKGOPLDJOII\x12\x20\n\x0bCBJKLLEOHDC\x18\x0b\x20\x01(\x04R\x0bC\
+    BattlePassInfoNotify\x12-\n\x0cbp_tier_type\x18\x06\x20\x01(\x0e2\x0b.Bp\
+    TierTypeR\nbpTierType\x12\x20\n\x0bEKGOPLDJOII\x18\x01\x20\x01(\x04R\x0b\
+    EKGOPLDJOII\x12\x20\n\x0bLJFLFLIMKAD\x18\x08\x20\x01(\rR\x0bLJFLFLIMKAD\
+    \x12\x20\n\x0bNKAOKNMHOLH\x18\x0c\x20\x01(\x04R\x0bNKAOKNMHOLH\x12\x10\n\
+    \x03exp\x18\t\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\x07\x20\x01(\rR\
+    \x05level\x12\x20\n\x0bCPHIIOCKHPI\x18\x0e\x20\x01(\x04R\x0bCPHIIOCKHPI\
+    \x12\x20\n\x0bEDBMNMDJBKO\x18\r\x20\x01(\rR\x0bEDBMNMDJBKO\x12\x20\n\x0b\
+    INBOCKJGLBO\x18\x03\x20\x01(\x04R\x0bINBOCKJGLBO\x12\x20\n\x0bLJOEKEFKPK\
+    O\x18\x0f\x20\x01(\x04R\x0bLJOEKEFKPKO\x12\x20\n\x0bHKEOAACCBPL\x18\x02\
+    \x20\x01(\x04R\x0bHKEOAACCBPL\x12\x20\n\x0bFDKKIKGANCK\x18\x0b\x20\x01(\
+    \x04R\x0bFDKKIKGANCK\x12\x20\n\x0bCBJKLLEOHDC\x18\x05\x20\x01(\x04R\x0bC\
     BJKLLEOHDCb\x06proto3\
 ";
 

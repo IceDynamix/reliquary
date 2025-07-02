@@ -79,10 +79,10 @@ impl ::protobuf::Message for KHOCCHABNMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                80 => {
                     self.key = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.value = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KHOCCHABNMN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.key);
+            my_size += ::protobuf::rt::uint32_size(10, self.key);
         }
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.value);
+            my_size += ::protobuf::rt::uint32_size(11, self.value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KHOCCHABNMN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(15, self.key)?;
+            os.write_uint32(10, self.key)?;
         }
         if self.value != 0 {
-            os.write_uint32(14, self.value)?;
+            os.write_uint32(11, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for KHOCCHABNMN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KHOCCHABNMN.proto\"5\n\x0bKHOCCHABNMN\x12\x10\n\x03key\x18\x0f\x20\
-    \x01(\rR\x03key\x12\x14\n\x05value\x18\x0e\x20\x01(\rR\x05valueb\x06prot\
+    \n\x11KHOCCHABNMN.proto\"5\n\x0bKHOCCHABNMN\x12\x10\n\x03key\x18\n\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x0b\x20\x01(\rR\x05valueb\x06prot\
     o3\
 ";
 

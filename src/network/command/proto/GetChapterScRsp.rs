@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.HOEAHBIFKCI = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                74 => {
                     self.IELPICLBBJI.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOEAHBIFKCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HOEAHBIFKCI);
+            my_size += ::protobuf::rt::uint32_size(6, self.HOEAHBIFKCI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         for value in &self.IELPICLBBJI {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetChapterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOEAHBIFKCI != 0 {
-            os.write_uint32(8, self.HOEAHBIFKCI)?;
+            os.write_uint32(6, self.HOEAHBIFKCI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         for v in &self.IELPICLBBJI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetChapterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15GetChapterScRsp.proto\x1a\x12ChapterBrief.proto\"~\n\x0fGetChapter\
-    ScRsp\x12\x20\n\x0bHOEAHBIFKCI\x18\x08\x20\x01(\rR\x0bHOEAHBIFKCI\x12\
-    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12/\n\x0bIELPICLBBJI\
-    \x18\x0b\x20\x03(\x0b2\r.ChapterBriefR\x0bIELPICLBBJIb\x06proto3\
+    ScRsp\x12\x20\n\x0bHOEAHBIFKCI\x18\x06\x20\x01(\rR\x0bHOEAHBIFKCI\x12\
+    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12/\n\x0bIELPICLBBJI\
+    \x18\t\x20\x03(\x0b2\r.ChapterBriefR\x0bIELPICLBBJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

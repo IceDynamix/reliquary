@@ -79,13 +79,13 @@ impl ::protobuf::Message for GCAIEMMCPDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                48 => {
+                32 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
-                82 => {
+                114 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GCAIEMMCPDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.buff_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.buff_list);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for GCAIEMMCPDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.buff_list)?;
+        os.write_repeated_packed_uint32(4, &self.buff_list)?;
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GCAIEMMCPDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GCAIEMMCPDH.proto\x1a\x11KJMFEOCKCML.proto\"Y\n\x0bGCAIEMMCPDH\x12\
-    \x1b\n\tbuff_list\x18\x06\x20\x03(\rR\x08buffList\x12-\n\x0bavatar_list\
-    \x18\n\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarListb\x06proto3\
+    \x1b\n\tbuff_list\x18\x04\x20\x03(\rR\x08buffList\x12-\n\x0bavatar_list\
+    \x18\x0e\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueMainStoryFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.KENPCKFONOK)
-    pub KENPCKFONOK: u32,
     // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.FGOMIPLMEIC)
     pub FGOMIPLMEIC: u32,
+    // @@protoc_insertion_point(field:SyncChessRogueMainStoryFinishScNotify.KENPCKFONOK)
+    pub KENPCKFONOK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueMainStoryFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncChessRogueMainStoryFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KENPCKFONOK",
-            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.KENPCKFONOK },
-            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.KENPCKFONOK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGOMIPLMEIC",
             |m: &SyncChessRogueMainStoryFinishScNotify| { &m.FGOMIPLMEIC },
             |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.FGOMIPLMEIC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KENPCKFONOK",
+            |m: &SyncChessRogueMainStoryFinishScNotify| { &m.KENPCKFONOK },
+            |m: &mut SyncChessRogueMainStoryFinishScNotify| { &mut m.KENPCKFONOK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueMainStoryFinishScNotify>(
             "SyncChessRogueMainStoryFinishScNotify",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.KENPCKFONOK = is.read_uint32()?;
-                },
-                96 => {
                     self.FGOMIPLMEIC = is.read_uint32()?;
+                },
+                104 => {
+                    self.KENPCKFONOK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KENPCKFONOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KENPCKFONOK);
-        }
         if self.FGOMIPLMEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGOMIPLMEIC);
+            my_size += ::protobuf::rt::uint32_size(1, self.FGOMIPLMEIC);
+        }
+        if self.KENPCKFONOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KENPCKFONOK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KENPCKFONOK != 0 {
-            os.write_uint32(1, self.KENPCKFONOK)?;
-        }
         if self.FGOMIPLMEIC != 0 {
-            os.write_uint32(12, self.FGOMIPLMEIC)?;
+            os.write_uint32(1, self.FGOMIPLMEIC)?;
+        }
+        if self.KENPCKFONOK != 0 {
+            os.write_uint32(13, self.KENPCKFONOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SyncChessRogueMainStoryFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.KENPCKFONOK = 0;
         self.FGOMIPLMEIC = 0;
+        self.KENPCKFONOK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueMainStoryFinishScNotify {
         static instance: SyncChessRogueMainStoryFinishScNotify = SyncChessRogueMainStoryFinishScNotify {
-            KENPCKFONOK: 0,
             FGOMIPLMEIC: 0,
+            KENPCKFONOK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueMainStoryFinishScNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+SyncChessRogueMainStoryFinishScNotify.proto\"k\n%SyncChessRogueMainSt\
-    oryFinishScNotify\x12\x20\n\x0bKENPCKFONOK\x18\x01\x20\x01(\rR\x0bKENPCK\
-    FONOK\x12\x20\n\x0bFGOMIPLMEIC\x18\x0c\x20\x01(\rR\x0bFGOMIPLMEICb\x06pr\
-    oto3\
+    oryFinishScNotify\x12\x20\n\x0bFGOMIPLMEIC\x18\x01\x20\x01(\rR\x0bFGOMIP\
+    LMEIC\x12\x20\n\x0bKENPCKFONOK\x18\r\x20\x01(\rR\x0bKENPCKFONOKb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

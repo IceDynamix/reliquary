@@ -29,20 +29,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMatchThreeModuleType {
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeModuleTypeNone)
     CmdMatchThreeModuleTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosCsReq)
-    CmdMatchThreeSetBirdPosCsReq = 7417,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2ScNotify)
+    CmdMatchThreeV2ScNotify = 7434,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2GetDataScRsp)
+    CmdMatchThreeV2GetDataScRsp = 7412,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2LevelEndScRsp)
+    CmdMatchThreeV2LevelEndScRsp = 7428,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndScRsp)
-    CmdMatchThreeLevelEndScRsp = 7437,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosScRsp)
-    CmdMatchThreeSetBirdPosScRsp = 7427,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSyncDataScNotify)
-    CmdMatchThreeSyncDataScNotify = 7436,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeGetDataScRsp)
-    CmdMatchThreeGetDataScRsp = 7446,
-    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndCsReq)
-    CmdMatchThreeLevelEndCsReq = 7402,
+    CmdMatchThreeLevelEndScRsp = 7436,
     // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeGetDataCsReq)
-    CmdMatchThreeGetDataCsReq = 7404,
+    CmdMatchThreeGetDataCsReq = 7449,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2LevelEndCsReq)
+    CmdMatchThreeV2LevelEndCsReq = 7406,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosCsReq)
+    CmdMatchThreeSetBirdPosCsReq = 7437,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2SetBirdPosCsReq)
+    CmdMatchThreeV2SetBirdPosCsReq = 7419,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeLevelEndCsReq)
+    CmdMatchThreeLevelEndCsReq = 7418,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2BattleItemLevelUpScRsp)
+    CmdMatchThreeV2BattleItemLevelUpScRsp = 7445,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeGetDataScRsp)
+    CmdMatchThreeGetDataScRsp = 7427,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2SetBirdPosScRsp)
+    CmdMatchThreeV2SetBirdPosScRsp = 7426,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2PvpFinishScNotify)
+    CmdMatchThreeV2PvpFinishScNotify = 7446,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSyncDataScNotify)
+    CmdMatchThreeSyncDataScNotify = 7411,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2BattleItemLevelUpCsReq)
+    CmdMatchThreeV2BattleItemLevelUpCsReq = 7410,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeV2GetDataCsReq)
+    CmdMatchThreeV2GetDataCsReq = 7439,
+    // @@protoc_insertion_point(enum_value:CmdMatchThreeModuleType.CmdMatchThreeSetBirdPosScRsp)
+    CmdMatchThreeSetBirdPosScRsp = 7417,
 }
 
 impl ::protobuf::Enum for CmdMatchThreeModuleType {
@@ -55,13 +75,23 @@ impl ::protobuf::Enum for CmdMatchThreeModuleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMatchThreeModuleType> {
         match value {
             0 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone),
-            7417 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
-            7437 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
-            7427 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
-            7436 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
-            7446 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
-            7402 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
-            7404 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
+            7434 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2ScNotify),
+            7412 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2GetDataScRsp),
+            7428 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndScRsp),
+            7436 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
+            7449 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
+            7406 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndCsReq),
+            7437 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
+            7419 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosCsReq),
+            7418 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
+            7445 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpScRsp),
+            7427 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
+            7426 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosScRsp),
+            7446 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2PvpFinishScNotify),
+            7411 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
+            7410 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpCsReq),
+            7439 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2GetDataCsReq),
+            7417 => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +99,46 @@ impl ::protobuf::Enum for CmdMatchThreeModuleType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMatchThreeModuleType> {
         match str {
             "CmdMatchThreeModuleTypeNone" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone),
-            "CmdMatchThreeSetBirdPosCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
+            "CmdMatchThreeV2ScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2ScNotify),
+            "CmdMatchThreeV2GetDataScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2GetDataScRsp),
+            "CmdMatchThreeV2LevelEndScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndScRsp),
             "CmdMatchThreeLevelEndScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp),
-            "CmdMatchThreeSetBirdPosScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
-            "CmdMatchThreeSyncDataScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
-            "CmdMatchThreeGetDataScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
-            "CmdMatchThreeLevelEndCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
             "CmdMatchThreeGetDataCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq),
+            "CmdMatchThreeV2LevelEndCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndCsReq),
+            "CmdMatchThreeSetBirdPosCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq),
+            "CmdMatchThreeV2SetBirdPosCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosCsReq),
+            "CmdMatchThreeLevelEndCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq),
+            "CmdMatchThreeV2BattleItemLevelUpScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpScRsp),
+            "CmdMatchThreeGetDataScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp),
+            "CmdMatchThreeV2SetBirdPosScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosScRsp),
+            "CmdMatchThreeV2PvpFinishScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2PvpFinishScNotify),
+            "CmdMatchThreeSyncDataScNotify" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify),
+            "CmdMatchThreeV2BattleItemLevelUpCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpCsReq),
+            "CmdMatchThreeV2GetDataCsReq" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeV2GetDataCsReq),
+            "CmdMatchThreeSetBirdPosScRsp" => ::std::option::Option::Some(CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMatchThreeModuleType] = &[
         CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone,
-        CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeV2ScNotify,
+        CmdMatchThreeModuleType::CmdMatchThreeV2GetDataScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndScRsp,
         CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp,
-        CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp,
-        CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify,
-        CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp,
-        CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq,
         CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosScRsp,
+        CmdMatchThreeModuleType::CmdMatchThreeV2PvpFinishScNotify,
+        CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify,
+        CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeV2GetDataCsReq,
+        CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp,
     ];
 }
 
@@ -101,13 +151,23 @@ impl ::protobuf::EnumFull for CmdMatchThreeModuleType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMatchThreeModuleType::CmdMatchThreeModuleTypeNone => 0,
-            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq => 1,
-            CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp => 2,
-            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp => 3,
-            CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify => 4,
-            CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp => 5,
-            CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq => 6,
-            CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq => 7,
+            CmdMatchThreeModuleType::CmdMatchThreeV2ScNotify => 1,
+            CmdMatchThreeModuleType::CmdMatchThreeV2GetDataScRsp => 2,
+            CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndScRsp => 3,
+            CmdMatchThreeModuleType::CmdMatchThreeLevelEndScRsp => 4,
+            CmdMatchThreeModuleType::CmdMatchThreeGetDataCsReq => 5,
+            CmdMatchThreeModuleType::CmdMatchThreeV2LevelEndCsReq => 6,
+            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosCsReq => 7,
+            CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosCsReq => 8,
+            CmdMatchThreeModuleType::CmdMatchThreeLevelEndCsReq => 9,
+            CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpScRsp => 10,
+            CmdMatchThreeModuleType::CmdMatchThreeGetDataScRsp => 11,
+            CmdMatchThreeModuleType::CmdMatchThreeV2SetBirdPosScRsp => 12,
+            CmdMatchThreeModuleType::CmdMatchThreeV2PvpFinishScNotify => 13,
+            CmdMatchThreeModuleType::CmdMatchThreeSyncDataScNotify => 14,
+            CmdMatchThreeModuleType::CmdMatchThreeV2BattleItemLevelUpCsReq => 15,
+            CmdMatchThreeModuleType::CmdMatchThreeV2GetDataCsReq => 16,
+            CmdMatchThreeModuleType::CmdMatchThreeSetBirdPosScRsp => 17,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -126,13 +186,20 @@ impl CmdMatchThreeModuleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dCmdMatchThreeModuleType.proto*\xa6\x02\n\x17CmdMatchThreeModuleTyp\
-    e\x12\x1f\n\x1bCmdMatchThreeModuleTypeNone\x10\0\x12!\n\x1cCmdMatchThree\
-    SetBirdPosCsReq\x10\xf99\x12\x1f\n\x1aCmdMatchThreeLevelEndScRsp\x10\x8d\
-    :\x12!\n\x1cCmdMatchThreeSetBirdPosScRsp\x10\x83:\x12\"\n\x1dCmdMatchThr\
-    eeSyncDataScNotify\x10\x8c:\x12\x1e\n\x19CmdMatchThreeGetDataScRsp\x10\
-    \x96:\x12\x1f\n\x1aCmdMatchThreeLevelEndCsReq\x10\xea9\x12\x1e\n\x19CmdM\
-    atchThreeGetDataCsReq\x10\xec9b\x06proto3\
+    \n\x1dCmdMatchThreeModuleType.proto*\x97\x05\n\x17CmdMatchThreeModuleTyp\
+    e\x12\x1f\n\x1bCmdMatchThreeModuleTypeNone\x10\0\x12\x1c\n\x17CmdMatchTh\
+    reeV2ScNotify\x10\x8a:\x12\x20\n\x1bCmdMatchThreeV2GetDataScRsp\x10\xf49\
+    \x12!\n\x1cCmdMatchThreeV2LevelEndScRsp\x10\x84:\x12\x1f\n\x1aCmdMatchTh\
+    reeLevelEndScRsp\x10\x8c:\x12\x1e\n\x19CmdMatchThreeGetDataCsReq\x10\x99\
+    :\x12!\n\x1cCmdMatchThreeV2LevelEndCsReq\x10\xee9\x12!\n\x1cCmdMatchThre\
+    eSetBirdPosCsReq\x10\x8d:\x12#\n\x1eCmdMatchThreeV2SetBirdPosCsReq\x10\
+    \xfb9\x12\x1f\n\x1aCmdMatchThreeLevelEndCsReq\x10\xfa9\x12*\n%CmdMatchTh\
+    reeV2BattleItemLevelUpScRsp\x10\x95:\x12\x1e\n\x19CmdMatchThreeGetDataSc\
+    Rsp\x10\x83:\x12#\n\x1eCmdMatchThreeV2SetBirdPosScRsp\x10\x82:\x12%\n\
+    \x20CmdMatchThreeV2PvpFinishScNotify\x10\x96:\x12\"\n\x1dCmdMatchThreeSy\
+    ncDataScNotify\x10\xf39\x12*\n%CmdMatchThreeV2BattleItemLevelUpCsReq\x10\
+    \xf29\x12\x20\n\x1bCmdMatchThreeV2GetDataCsReq\x10\x8f:\x12!\n\x1cCmdMat\
+    chThreeSetBirdPosScRsp\x10\xf99b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

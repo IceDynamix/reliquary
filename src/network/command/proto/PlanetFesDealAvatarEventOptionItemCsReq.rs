@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                40 => {
                     self.NNGOPAKJICC = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.LECDHDDCEIA = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NNGOPAKJICC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NNGOPAKJICC);
+            my_size += ::protobuf::rt::uint32_size(5, self.NNGOPAKJICC);
         }
         if self.LECDHDDCEIA != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NNGOPAKJICC != 0 {
-            os.write_uint32(15, self.NNGOPAKJICC)?;
+            os.write_uint32(5, self.NNGOPAKJICC)?;
         }
         if self.LECDHDDCEIA != false {
-            os.write_bool(6, self.LECDHDDCEIA)?;
+            os.write_bool(12, self.LECDHDDCEIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDealAvatarEventOptionItemCs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-PlanetFesDealAvatarEventOptionItemCsReq.proto\"m\n'PlanetFesDealAvata\
-    rEventOptionItemCsReq\x12\x20\n\x0bNNGOPAKJICC\x18\x0f\x20\x01(\rR\x0bNN\
-    GOPAKJICC\x12\x20\n\x0bLECDHDDCEIA\x18\x06\x20\x01(\x08R\x0bLECDHDDCEIAb\
+    rEventOptionItemCsReq\x12\x20\n\x0bNNGOPAKJICC\x18\x05\x20\x01(\rR\x0bNN\
+    GOPAKJICC\x12\x20\n\x0bLECDHDDCEIA\x18\x0c\x20\x01(\x08R\x0bLECDHDDCEIAb\
     \x06proto3\
 ";
 

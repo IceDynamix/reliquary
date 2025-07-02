@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearGetPinRelicScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearGetPinRelicScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RelicSmartWearGetPinRelicScRsp.pin_relic_id_list)
     pub pin_relic_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RelicSmartWearGetPinRelicScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:RelicSmartWearGetPinRelicScRsp.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RelicSmartWearGetPinRelicScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RelicSmartWearGetPinRelicScRsp| { &m.retcode },
-            |m: &mut RelicSmartWearGetPinRelicScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "pin_relic_id_list",
             |m: &RelicSmartWearGetPinRelicScRsp| { &m.pin_relic_id_list },
             |m: &mut RelicSmartWearGetPinRelicScRsp| { &mut m.pin_relic_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RelicSmartWearGetPinRelicScRsp| { &m.retcode },
+            |m: &mut RelicSmartWearGetPinRelicScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for RelicSmartWearGetPinRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.pin_relic_id_list)?;
                 },
-                72 => {
+                24 => {
                     self.pin_relic_id_list.push(is.read_uint32()?);
                 },
-                80 => {
+                32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for RelicSmartWearGetPinRelicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.pin_relic_id_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.pin_relic_id_list);
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for RelicSmartWearGetPinRelicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.pin_relic_id_list)?;
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(9, &self.pin_relic_id_list)?;
         if self.avatar_id != 0 {
-            os.write_uint32(10, self.avatar_id)?;
+            os.write_uint32(5, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for RelicSmartWearGetPinRelicScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.pin_relic_id_list.clear();
+        self.retcode = 0;
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearGetPinRelicScRsp {
         static instance: RelicSmartWearGetPinRelicScRsp = RelicSmartWearGetPinRelicScRsp {
-            retcode: 0,
             pin_relic_id_list: ::std::vec::Vec::new(),
+            retcode: 0,
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearGetPinRelicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RelicSmartWearGetPinRelicScRsp.proto\"\x82\x01\n\x1eRelicSmartWearGet\
-    PinRelicScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12)\n\
-    \x11pin_relic_id_list\x18\t\x20\x03(\rR\x0epinRelicIdList\x12\x1b\n\tava\
-    tar_id\x18\n\x20\x01(\rR\x08avatarIdb\x06proto3\
+    PinRelicScRsp\x12)\n\x11pin_relic_id_list\x18\x03\x20\x03(\rR\x0epinReli\
+    cIdList\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x1b\n\ta\
+    vatar_id\x18\x05\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

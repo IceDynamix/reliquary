@@ -30,8 +30,8 @@ pub struct BattleMonsterWave {
     // message fields
     // @@protoc_insertion_point(field:BattleMonsterWave.monster_list)
     pub monster_list: ::std::vec::Vec<super::BattleMonster::BattleMonster>,
-    // @@protoc_insertion_point(field:BattleMonsterWave.wave_param)
-    pub wave_param: ::protobuf::MessageField<super::BattleMonsterParam::BattleMonsterParam>,
+    // @@protoc_insertion_point(field:BattleMonsterWave.monster_param)
+    pub monster_param: ::protobuf::MessageField<super::BattleMonsterParam::BattleMonsterParam>,
     // @@protoc_insertion_point(field:BattleMonsterWave.battle_stage_id)
     pub battle_stage_id: u32,
     // @@protoc_insertion_point(field:BattleMonsterWave.battle_wave_id)
@@ -61,9 +61,9 @@ impl BattleMonsterWave {
             |m: &mut BattleMonsterWave| { &mut m.monster_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleMonsterParam::BattleMonsterParam>(
-            "wave_param",
-            |m: &BattleMonsterWave| { &m.wave_param },
-            |m: &mut BattleMonsterWave| { &mut m.wave_param },
+            "monster_param",
+            |m: &BattleMonsterWave| { &m.monster_param },
+            |m: &mut BattleMonsterWave| { &mut m.monster_param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_stage_id",
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BattleMonsterWave {
                     self.monster_list.push(is.read_message()?);
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.wave_param)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_param)?;
                 },
                 24 => {
                     self.battle_stage_id = is.read_uint32()?;
@@ -121,7 +121,7 @@ impl ::protobuf::Message for BattleMonsterWave {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.wave_param.as_ref() {
+        if let Some(v) = self.monster_param.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -140,7 +140,7 @@ impl ::protobuf::Message for BattleMonsterWave {
         for v in &self.monster_list {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if let Some(v) = self.wave_param.as_ref() {
+        if let Some(v) = self.monster_param.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.battle_stage_id != 0 {
@@ -167,7 +167,7 @@ impl ::protobuf::Message for BattleMonsterWave {
 
     fn clear(&mut self) {
         self.monster_list.clear();
-        self.wave_param.clear();
+        self.monster_param.clear();
         self.battle_stage_id = 0;
         self.battle_wave_id = 0;
         self.special_fields.clear();
@@ -176,7 +176,7 @@ impl ::protobuf::Message for BattleMonsterWave {
     fn default_instance() -> &'static BattleMonsterWave {
         static instance: BattleMonsterWave = BattleMonsterWave {
             monster_list: ::std::vec::Vec::new(),
-            wave_param: ::protobuf::MessageField::none(),
+            monster_param: ::protobuf::MessageField::none(),
             battle_stage_id: 0,
             battle_wave_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for BattleMonsterWave {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17BattleMonsterWave.proto\x1a\x13BattleMonster.proto\x1a\x18BattleMo\
-    nsterParam.proto\"\xc8\x01\n\x11BattleMonsterWave\x121\n\x0cmonster_list\
-    \x18\x01\x20\x03(\x0b2\x0e.BattleMonsterR\x0bmonsterList\x122\n\nwave_pa\
-    ram\x18\x02\x20\x01(\x0b2\x13.BattleMonsterParamR\twaveParam\x12&\n\x0fb\
-    attle_stage_id\x18\x03\x20\x01(\rR\rbattleStageId\x12$\n\x0ebattle_wave_\
-    id\x18\x04\x20\x01(\rR\x0cbattleWaveIdb\x06proto3\
+    nsterParam.proto\"\xce\x01\n\x11BattleMonsterWave\x121\n\x0cmonster_list\
+    \x18\x01\x20\x03(\x0b2\x0e.BattleMonsterR\x0bmonsterList\x128\n\rmonster\
+    _param\x18\x02\x20\x01(\x0b2\x13.BattleMonsterParamR\x0cmonsterParam\x12\
+    &\n\x0fbattle_stage_id\x18\x03\x20\x01(\rR\rbattleStageId\x12$\n\x0ebatt\
+    le_wave_id\x18\x04\x20\x01(\rR\x0cbattleWaveIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

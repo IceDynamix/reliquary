@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartWolfBroGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.DJFCMLIPDAB)
-    pub DJFCMLIPDAB: bool,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.id)
     pub id: u32,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.DJFCMLIPDAB)
+    pub DJFCMLIPDAB: bool,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.group_state_info)
     pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
@@ -56,11 +56,6 @@ impl StartWolfBroGameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFCMLIPDAB",
-            |m: &StartWolfBroGameCsReq| { &m.DJFCMLIPDAB },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.DJFCMLIPDAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &StartWolfBroGameCsReq| { &m.id },
             |m: &mut StartWolfBroGameCsReq| { &mut m.id },
@@ -69,6 +64,11 @@ impl StartWolfBroGameCsReq {
             "motion",
             |m: &StartWolfBroGameCsReq| { &m.motion },
             |m: &mut StartWolfBroGameCsReq| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJFCMLIPDAB",
+            |m: &StartWolfBroGameCsReq| { &m.DJFCMLIPDAB },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.DJFCMLIPDAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
             "group_state_info",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DJFCMLIPDAB = is.read_bool()?;
-                },
                 96 => {
                     self.id = is.read_uint32()?;
                 },
-                42 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                90 => {
+                64 => {
+                    self.DJFCMLIPDAB = is.read_bool()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
@@ -117,15 +117,15 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJFCMLIPDAB != false {
-            my_size += 1 + 1;
-        }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DJFCMLIPDAB != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.group_state_info.as_ref() {
             let len = v.compute_size();
@@ -137,17 +137,17 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJFCMLIPDAB != false {
-            os.write_bool(3, self.DJFCMLIPDAB)?;
-        }
         if self.id != 0 {
             os.write_uint32(12, self.id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.DJFCMLIPDAB != false {
+            os.write_bool(8, self.DJFCMLIPDAB)?;
         }
         if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.DJFCMLIPDAB = false;
         self.id = 0;
         self.motion.clear();
+        self.DJFCMLIPDAB = false;
         self.group_state_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartWolfBroGameCsReq {
         static instance: StartWolfBroGameCsReq = StartWolfBroGameCsReq {
-            DJFCMLIPDAB: false,
             id: 0,
             motion: ::protobuf::MessageField::none(),
+            DJFCMLIPDAB: false,
             group_state_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for StartWolfBroGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bStartWolfBroGameCsReq.proto\x1a\x14GroupStateInfo.proto\x1a\x10Mot\
-    ionInfo.proto\"\xa9\x01\n\x15StartWolfBroGameCsReq\x12\x20\n\x0bDJFCMLIP\
-    DAB\x18\x03\x20\x01(\x08R\x0bDJFCMLIPDAB\x12\x0e\n\x02id\x18\x0c\x20\x01\
-    (\rR\x02id\x12#\n\x06motion\x18\x05\x20\x01(\x0b2\x0b.MotionInfoR\x06mot\
-    ion\x129\n\x10group_state_info\x18\x0b\x20\x01(\x0b2\x0f.GroupStateInfoR\
+    ionInfo.proto\"\xa9\x01\n\x15StartWolfBroGameCsReq\x12\x0e\n\x02id\x18\
+    \x0c\x20\x01(\rR\x02id\x12#\n\x06motion\x18\x03\x20\x01(\x0b2\x0b.Motion\
+    InfoR\x06motion\x12\x20\n\x0bDJFCMLIPDAB\x18\x08\x20\x01(\x08R\x0bDJFCML\
+    IPDAB\x129\n\x10group_state_info\x18\t\x20\x01(\x0b2\x0f.GroupStateInfoR\
     \x0egroupStateInfob\x06proto3\
 ";
 

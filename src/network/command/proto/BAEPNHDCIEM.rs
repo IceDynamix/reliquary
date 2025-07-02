@@ -79,7 +79,7 @@ impl ::protobuf::Message for BAEPNHDCIEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.IJFIHGCKNHG = is.read_uint32()?;
                 },
                 74 => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for BAEPNHDCIEM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IJFIHGCKNHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IJFIHGCKNHG);
+            my_size += ::protobuf::rt::uint32_size(15, self.IJFIHGCKNHG);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.switch_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,7 +111,7 @@ impl ::protobuf::Message for BAEPNHDCIEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IJFIHGCKNHG != 0 {
-            os.write_uint32(1, self.IJFIHGCKNHG)?;
+            os.write_uint32(15, self.IJFIHGCKNHG)?;
         }
         os.write_repeated_packed_uint32(9, &self.switch_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for BAEPNHDCIEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BAEPNHDCIEM.proto\"P\n\x0bBAEPNHDCIEM\x12\x20\n\x0bIJFIHGCKNHG\x18\
-    \x01\x20\x01(\rR\x0bIJFIHGCKNHG\x12\x1f\n\x0bswitch_list\x18\t\x20\x03(\
+    \x0f\x20\x01(\rR\x0bIJFIHGCKNHG\x12\x1f\n\x0bswitch_list\x18\t\x20\x03(\
     \rR\nswitchListb\x06proto3\
 ";
 

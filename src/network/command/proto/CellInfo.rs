@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CellInfo {
     // message fields
-    // @@protoc_insertion_point(field:CellInfo.HDHIONGOFID)
-    pub HDHIONGOFID: u32,
-    // @@protoc_insertion_point(field:CellInfo.cell_list)
-    pub cell_list: ::std::vec::Vec<super::ChessRogueCell::ChessRogueCell>,
     // @@protoc_insertion_point(field:CellInfo.HLAMICLGPEE)
     pub HLAMICLGPEE: u32,
     // @@protoc_insertion_point(field:CellInfo.BMAJDILBPOB)
     pub BMAJDILBPOB: u32,
+    // @@protoc_insertion_point(field:CellInfo.cell_list)
+    pub cell_list: ::std::vec::Vec<super::ChessRogueCell::ChessRogueCell>,
     // @@protoc_insertion_point(field:CellInfo.NGHPPEGBPAO)
     pub NGHPPEGBPAO: u32,
+    // @@protoc_insertion_point(field:CellInfo.HDHIONGOFID)
+    pub HDHIONGOFID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CellInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl CellInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDHIONGOFID",
-            |m: &CellInfo| { &m.HDHIONGOFID },
-            |m: &mut CellInfo| { &mut m.HDHIONGOFID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "cell_list",
-            |m: &CellInfo| { &m.cell_list },
-            |m: &mut CellInfo| { &mut m.cell_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HLAMICLGPEE",
             |m: &CellInfo| { &m.HLAMICLGPEE },
             |m: &mut CellInfo| { &mut m.HLAMICLGPEE },
@@ -77,10 +67,20 @@ impl CellInfo {
             |m: &CellInfo| { &m.BMAJDILBPOB },
             |m: &mut CellInfo| { &mut m.BMAJDILBPOB },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "cell_list",
+            |m: &CellInfo| { &m.cell_list },
+            |m: &mut CellInfo| { &mut m.cell_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NGHPPEGBPAO",
             |m: &CellInfo| { &m.NGHPPEGBPAO },
             |m: &mut CellInfo| { &mut m.NGHPPEGBPAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDHIONGOFID",
+            |m: &CellInfo| { &m.HDHIONGOFID },
+            |m: &mut CellInfo| { &mut m.HDHIONGOFID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CellInfo>(
             "CellInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for CellInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.HDHIONGOFID = is.read_uint32()?;
-                },
-                66 => {
-                    self.cell_list.push(is.read_message()?);
-                },
-                120 => {
+                56 => {
                     self.HLAMICLGPEE = is.read_uint32()?;
                 },
                 48 => {
                     self.BMAJDILBPOB = is.read_uint32()?;
                 },
-                96 => {
+                82 => {
+                    self.cell_list.push(is.read_message()?);
+                },
+                88 => {
                     self.NGHPPEGBPAO = is.read_uint32()?;
+                },
+                120 => {
+                    self.HDHIONGOFID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for CellInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HDHIONGOFID != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HDHIONGOFID);
+        if self.HLAMICLGPEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HLAMICLGPEE);
+        }
+        if self.BMAJDILBPOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BMAJDILBPOB);
         }
         for value in &self.cell_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HLAMICLGPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HLAMICLGPEE);
-        }
-        if self.BMAJDILBPOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BMAJDILBPOB);
-        }
         if self.NGHPPEGBPAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NGHPPEGBPAO);
+            my_size += ::protobuf::rt::uint32_size(11, self.NGHPPEGBPAO);
+        }
+        if self.HDHIONGOFID != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HDHIONGOFID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for CellInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HDHIONGOFID != 0 {
-            os.write_uint32(4, self.HDHIONGOFID)?;
-        }
-        for v in &self.cell_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.HLAMICLGPEE != 0 {
-            os.write_uint32(15, self.HLAMICLGPEE)?;
+            os.write_uint32(7, self.HLAMICLGPEE)?;
         }
         if self.BMAJDILBPOB != 0 {
             os.write_uint32(6, self.BMAJDILBPOB)?;
         }
+        for v in &self.cell_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         if self.NGHPPEGBPAO != 0 {
-            os.write_uint32(12, self.NGHPPEGBPAO)?;
+            os.write_uint32(11, self.NGHPPEGBPAO)?;
+        }
+        if self.HDHIONGOFID != 0 {
+            os.write_uint32(15, self.HDHIONGOFID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for CellInfo {
     }
 
     fn clear(&mut self) {
-        self.HDHIONGOFID = 0;
-        self.cell_list.clear();
         self.HLAMICLGPEE = 0;
         self.BMAJDILBPOB = 0;
+        self.cell_list.clear();
         self.NGHPPEGBPAO = 0;
+        self.HDHIONGOFID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CellInfo {
         static instance: CellInfo = CellInfo {
-            HDHIONGOFID: 0,
-            cell_list: ::std::vec::Vec::new(),
             HLAMICLGPEE: 0,
             BMAJDILBPOB: 0,
+            cell_list: ::std::vec::Vec::new(),
             NGHPPEGBPAO: 0,
+            HDHIONGOFID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for CellInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eCellInfo.proto\x1a\x14ChessRogueCell.proto\"\xc0\x01\n\x08CellInfo\
-    \x12\x20\n\x0bHDHIONGOFID\x18\x04\x20\x01(\rR\x0bHDHIONGOFID\x12,\n\tcel\
-    l_list\x18\x08\x20\x03(\x0b2\x0f.ChessRogueCellR\x08cellList\x12\x20\n\
-    \x0bHLAMICLGPEE\x18\x0f\x20\x01(\rR\x0bHLAMICLGPEE\x12\x20\n\x0bBMAJDILB\
-    POB\x18\x06\x20\x01(\rR\x0bBMAJDILBPOB\x12\x20\n\x0bNGHPPEGBPAO\x18\x0c\
-    \x20\x01(\rR\x0bNGHPPEGBPAOb\x06proto3\
+    \x12\x20\n\x0bHLAMICLGPEE\x18\x07\x20\x01(\rR\x0bHLAMICLGPEE\x12\x20\n\
+    \x0bBMAJDILBPOB\x18\x06\x20\x01(\rR\x0bBMAJDILBPOB\x12,\n\tcell_list\x18\
+    \n\x20\x03(\x0b2\x0f.ChessRogueCellR\x08cellList\x12\x20\n\x0bNGHPPEGBPA\
+    O\x18\x0b\x20\x01(\rR\x0bNGHPPEGBPAO\x12\x20\n\x0bHDHIONGOFID\x18\x0f\
+    \x20\x01(\rR\x0bHDHIONGOFIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

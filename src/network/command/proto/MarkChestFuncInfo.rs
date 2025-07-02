@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChestFuncInfo {
     // message fields
-    // @@protoc_insertion_point(field:MarkChestFuncInfo.func_id)
-    pub func_id: u32,
     // @@protoc_insertion_point(field:MarkChestFuncInfo.mark_chest_info_list)
     pub mark_chest_info_list: ::std::vec::Vec<super::MarkChestInfo::MarkChestInfo>,
+    // @@protoc_insertion_point(field:MarkChestFuncInfo.func_id)
+    pub func_id: u32,
     // @@protoc_insertion_point(field:MarkChestFuncInfo.mark_time)
     pub mark_time: i64,
     // special fields
@@ -53,15 +53,15 @@ impl MarkChestFuncInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "func_id",
-            |m: &MarkChestFuncInfo| { &m.func_id },
-            |m: &mut MarkChestFuncInfo| { &mut m.func_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "mark_chest_info_list",
             |m: &MarkChestFuncInfo| { &m.mark_chest_info_list },
             |m: &mut MarkChestFuncInfo| { &mut m.mark_chest_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "func_id",
+            |m: &MarkChestFuncInfo| { &m.func_id },
+            |m: &mut MarkChestFuncInfo| { &mut m.func_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "mark_time",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.func_id = is.read_uint32()?;
-                },
-                122 => {
+                50 => {
                     self.mark_chest_info_list.push(is.read_message()?);
                 },
-                96 => {
+                40 => {
+                    self.func_id = is.read_uint32()?;
+                },
+                16 => {
                     self.mark_time = is.read_int64()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.func_id);
-        }
         for value in &self.mark_chest_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.func_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.func_id);
+        }
         if self.mark_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.mark_time);
+            my_size += ::protobuf::rt::int64_size(2, self.mark_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.func_id != 0 {
-            os.write_uint32(6, self.func_id)?;
-        }
         for v in &self.mark_chest_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.func_id != 0 {
+            os.write_uint32(5, self.func_id)?;
+        }
         if self.mark_time != 0 {
-            os.write_int64(12, self.mark_time)?;
+            os.write_int64(2, self.mark_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MarkChestFuncInfo {
     }
 
     fn clear(&mut self) {
-        self.func_id = 0;
         self.mark_chest_info_list.clear();
+        self.func_id = 0;
         self.mark_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChestFuncInfo {
         static instance: MarkChestFuncInfo = MarkChestFuncInfo {
-            func_id: 0,
             mark_chest_info_list: ::std::vec::Vec::new(),
+            func_id: 0,
             mark_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkChestFuncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MarkChestFuncInfo.proto\x1a\x13MarkChestInfo.proto\"\x8a\x01\n\x11\
-    MarkChestFuncInfo\x12\x17\n\x07func_id\x18\x06\x20\x01(\rR\x06funcId\x12\
-    ?\n\x14mark_chest_info_list\x18\x0f\x20\x03(\x0b2\x0e.MarkChestInfoR\x11\
-    markChestInfoList\x12\x1b\n\tmark_time\x18\x0c\x20\x01(\x03R\x08markTime\
-    b\x06proto3\
+    MarkChestFuncInfo\x12?\n\x14mark_chest_info_list\x18\x06\x20\x03(\x0b2\
+    \x0e.MarkChestInfoR\x11markChestInfoList\x12\x17\n\x07func_id\x18\x05\
+    \x20\x01(\rR\x06funcId\x12\x1b\n\tmark_time\x18\x02\x20\x01(\x03R\x08mar\
+    kTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

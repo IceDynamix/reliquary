@@ -33,6 +33,8 @@ pub enum AddAvatarSrcState {
     ADD_AVATAR_SRC_GACHA = 1,
     // @@protoc_insertion_point(enum_value:AddAvatarSrcState.ADD_AVATAR_SRC_ROGUE)
     ADD_AVATAR_SRC_ROGUE = 2,
+    // @@protoc_insertion_point(enum_value:AddAvatarSrcState.ADD_AVATAR_SRC_DELIVERY)
+    ADD_AVATAR_SRC_DELIVERY = 3,
 }
 
 impl ::protobuf::Enum for AddAvatarSrcState {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for AddAvatarSrcState {
             0 => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_NONE),
             1 => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_GACHA),
             2 => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_ROGUE),
+            3 => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_DELIVERY),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for AddAvatarSrcState {
             "ADD_AVATAR_SRC_NONE" => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_NONE),
             "ADD_AVATAR_SRC_GACHA" => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_GACHA),
             "ADD_AVATAR_SRC_ROGUE" => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_ROGUE),
+            "ADD_AVATAR_SRC_DELIVERY" => ::std::option::Option::Some(AddAvatarSrcState::ADD_AVATAR_SRC_DELIVERY),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for AddAvatarSrcState {
         AddAvatarSrcState::ADD_AVATAR_SRC_NONE,
         AddAvatarSrcState::ADD_AVATAR_SRC_GACHA,
         AddAvatarSrcState::ADD_AVATAR_SRC_ROGUE,
+        AddAvatarSrcState::ADD_AVATAR_SRC_DELIVERY,
     ];
 }
 
@@ -92,9 +97,10 @@ impl AddAvatarSrcState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17AddAvatarSrcState.proto*`\n\x11AddAvatarSrcState\x12\x17\n\x13ADD_\
+    \n\x17AddAvatarSrcState.proto*}\n\x11AddAvatarSrcState\x12\x17\n\x13ADD_\
     AVATAR_SRC_NONE\x10\0\x12\x18\n\x14ADD_AVATAR_SRC_GACHA\x10\x01\x12\x18\
-    \n\x14ADD_AVATAR_SRC_ROGUE\x10\x02b\x06proto3\
+    \n\x14ADD_AVATAR_SRC_ROGUE\x10\x02\x12\x1b\n\x17ADD_AVATAR_SRC_DELIVERY\
+    \x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

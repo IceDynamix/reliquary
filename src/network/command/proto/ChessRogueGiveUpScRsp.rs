@@ -30,16 +30,16 @@ pub struct ChessRogueGiveUpScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.rogue_get_info)
     pub rogue_get_info: ::protobuf::MessageField<super::ChessRogueGetInfo::ChessRogueGetInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.BLNDMFGKPMJ)
-    pub BLNDMFGKPMJ: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.BOIKABLFKEC)
     pub BOIKABLFKEC: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
     // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGiveUpScRsp.BLNDMFGKPMJ)
+    pub BLNDMFGKPMJ: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueGiveUpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,21 +64,6 @@ impl ChessRogueGiveUpScRsp {
             |m: &ChessRogueGiveUpScRsp| { &m.rogue_get_info },
             |m: &mut ChessRogueGiveUpScRsp| { &mut m.rogue_get_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
-            "rogue_aeon_info",
-            |m: &ChessRogueGiveUpScRsp| { &m.rogue_aeon_info },
-            |m: &mut ChessRogueGiveUpScRsp| { &mut m.rogue_aeon_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryInfo::ChessRogueQueryInfo>(
-            "BLNDMFGKPMJ",
-            |m: &ChessRogueGiveUpScRsp| { &m.BLNDMFGKPMJ },
-            |m: &mut ChessRogueGiveUpScRsp| { &mut m.BLNDMFGKPMJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueInfo::ChessRogueInfo>(
-            "stage_info",
-            |m: &ChessRogueGiveUpScRsp| { &m.stage_info },
-            |m: &mut ChessRogueGiveUpScRsp| { &mut m.stage_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
             "BOIKABLFKEC",
             |m: &ChessRogueGiveUpScRsp| { &m.BOIKABLFKEC },
@@ -88,6 +73,21 @@ impl ChessRogueGiveUpScRsp {
             "retcode",
             |m: &ChessRogueGiveUpScRsp| { &m.retcode },
             |m: &mut ChessRogueGiveUpScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
+            "rogue_aeon_info",
+            |m: &ChessRogueGiveUpScRsp| { &m.rogue_aeon_info },
+            |m: &mut ChessRogueGiveUpScRsp| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueInfo::ChessRogueInfo>(
+            "stage_info",
+            |m: &ChessRogueGiveUpScRsp| { &m.stage_info },
+            |m: &mut ChessRogueGiveUpScRsp| { &mut m.stage_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryInfo::ChessRogueQueryInfo>(
+            "BLNDMFGKPMJ",
+            |m: &ChessRogueGiveUpScRsp| { &m.BLNDMFGKPMJ },
+            |m: &mut ChessRogueGiveUpScRsp| { &mut m.BLNDMFGKPMJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueGiveUpScRsp>(
             "ChessRogueGiveUpScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
-                106 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOIKABLFKEC)?;
                 },
-                56 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,11 +141,14 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
+        if let Some(v) = self.BOIKABLFKEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,12 +156,9 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BOIKABLFKEC.as_ref() {
+        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -167,22 +167,22 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.BOIKABLFKEC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,22 +202,22 @@ impl ::protobuf::Message for ChessRogueGiveUpScRsp {
 
     fn clear(&mut self) {
         self.rogue_get_info.clear();
-        self.rogue_aeon_info.clear();
-        self.BLNDMFGKPMJ.clear();
-        self.stage_info.clear();
         self.BOIKABLFKEC.clear();
         self.retcode = 0;
+        self.rogue_aeon_info.clear();
+        self.stage_info.clear();
+        self.BLNDMFGKPMJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueGiveUpScRsp {
         static instance: ChessRogueGiveUpScRsp = ChessRogueGiveUpScRsp {
             rogue_get_info: ::protobuf::MessageField::none(),
-            rogue_aeon_info: ::protobuf::MessageField::none(),
-            BLNDMFGKPMJ: ::protobuf::MessageField::none(),
-            stage_info: ::protobuf::MessageField::none(),
             BOIKABLFKEC: ::protobuf::MessageField::none(),
             retcode: 0,
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
+            BLNDMFGKPMJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -245,13 +245,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChessRogueGiveUpScRsp.proto\x1a\x18ChessRogueAeonInfo.proto\x1a\
     \x1aChessRogueFinishInfo.proto\x1a\x17ChessRogueGetInfo.proto\x1a\x14Che\
     ssRogueInfo.proto\x1a\x19ChessRogueQueryInfo.proto\"\xc9\x02\n\x15ChessR\
-    ogueGiveUpScRsp\x128\n\x0erogue_get_info\x18\x05\x20\x01(\x0b2\x12.Chess\
-    RogueGetInfoR\x0crogueGetInfo\x12;\n\x0frogue_aeon_info\x18\x02\x20\x01(\
-    \x0b2\x13.ChessRogueAeonInfoR\rrogueAeonInfo\x126\n\x0bBLNDMFGKPMJ\x18\n\
-    \x20\x01(\x0b2\x14.ChessRogueQueryInfoR\x0bBLNDMFGKPMJ\x12.\n\nstage_inf\
-    o\x18\x0e\x20\x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x127\n\x0bBOIKABL\
-    FKEC\x18\r\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\x12\
-    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    ogueGiveUpScRsp\x128\n\x0erogue_get_info\x18\x06\x20\x01(\x0b2\x12.Chess\
+    RogueGetInfoR\x0crogueGetInfo\x127\n\x0bBOIKABLFKEC\x18\x0f\x20\x01(\x0b\
+    2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\x12\x18\n\x07retcode\x18\x08\
+    \x20\x01(\rR\x07retcode\x12;\n\x0frogue_aeon_info\x18\t\x20\x01(\x0b2\
+    \x13.ChessRogueAeonInfoR\rrogueAeonInfo\x12.\n\nstage_info\x18\r\x20\x01\
+    (\x0b2\x0f.ChessRogueInfoR\tstageInfo\x126\n\x0bBLNDMFGKPMJ\x18\x0c\x20\
+    \x01(\x0b2\x14.ChessRogueQueryInfoR\x0bBLNDMFGKPMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

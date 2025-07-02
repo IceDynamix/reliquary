@@ -79,13 +79,13 @@ impl ::protobuf::Message for OMDEFBABNNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
-                18 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                16 => {
+                88 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for OMDEFBABNNB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for OMDEFBABNNB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        os.write_repeated_packed_uint32(2, &self.avatar_id_list)?;
+        os.write_repeated_packed_uint32(11, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OMDEFBABNNB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMDEFBABNNB.proto\x1a\x12ItemCostData.proto\"n\n\x0bOMDEFBABNNB\
-    \x129\n\x11rogue_revive_cost\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x0frogu\
-    eReviveCost\x12$\n\x0eavatar_id_list\x18\x02\x20\x03(\rR\x0cavatarIdList\
-    b\x06proto3\
+    \x129\n\x11rogue_revive_cost\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0fro\
+    gueReviveCost\x12$\n\x0eavatar_id_list\x18\x0b\x20\x03(\rR\x0cavatarIdLi\
+    stb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

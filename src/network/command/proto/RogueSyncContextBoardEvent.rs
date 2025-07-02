@@ -79,7 +79,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.modifier_effect_type = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.modifier_effect_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.modifier_effect_type);
+            my_size += ::protobuf::rt::uint32_size(8, self.modifier_effect_type);
         }
         if self.board_event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.board_event_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for RogueSyncContextBoardEvent {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.modifier_effect_type != 0 {
-            os.write_uint32(1, self.modifier_effect_type)?;
+            os.write_uint32(8, self.modifier_effect_type)?;
         }
         if self.board_event_id != 0 {
             os.write_uint32(12, self.board_event_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueSyncContextBoardEvent {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueSyncContextBoardEvent.proto\"t\n\x1aRogueSyncContextBoardEven\
-    t\x120\n\x14modifier_effect_type\x18\x01\x20\x01(\rR\x12modifierEffectTy\
+    t\x120\n\x14modifier_effect_type\x18\x08\x20\x01(\rR\x12modifierEffectTy\
     pe\x12$\n\x0eboard_event_id\x18\x0c\x20\x01(\rR\x0cboardEventIdb\x06prot\
     o3\
 ";

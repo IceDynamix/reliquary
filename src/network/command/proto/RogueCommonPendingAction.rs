@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.HBAPCCEGNME = is.read_uint32()?;
                 },
-                122 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBHMGCHKJGO)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HBAPCCEGNME);
+            my_size += ::protobuf::rt::uint32_size(8, self.HBAPCCEGNME);
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueCommonPendingAction {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HBAPCCEGNME != 0 {
-            os.write_uint32(1, self.HBAPCCEGNME)?;
+            os.write_uint32(8, self.HBAPCCEGNME)?;
         }
         if let Some(v) = self.PBHMGCHKJGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonPendingAction {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueCommonPendingAction.proto\x1a\x11EIOHAGHELOA.proto\"l\n\x18Ro\
-    gueCommonPendingAction\x12\x20\n\x0bHBAPCCEGNME\x18\x01\x20\x01(\rR\x0bH\
-    BAPCCEGNME\x12.\n\x0bPBHMGCHKJGO\x18\x0f\x20\x01(\x0b2\x0c.EIOHAGHELOAR\
+    gueCommonPendingAction\x12\x20\n\x0bHBAPCCEGNME\x18\x08\x20\x01(\rR\x0bH\
+    BAPCCEGNME\x12.\n\x0bPBHMGCHKJGO\x18\x04\x20\x01(\x0b2\x0c.EIOHAGHELOAR\
     \x0bPBHMGCHKJGOb\x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for FinishTutorialScRsp {
                 96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tutorial)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for FinishTutorialScRsp {
             os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.tutorial.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FinishTutorialScRsp.proto\x1a\x0eTutorial.proto\"V\n\x13FinishTuto\
     rialScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12%\n\x08\
-    tutorial\x18\x03\x20\x01(\x0b2\t.TutorialR\x08tutorialb\x06proto3\
+    tutorial\x18\x0e\x20\x01(\x0b2\t.TutorialR\x08tutorialb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

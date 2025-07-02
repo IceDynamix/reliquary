@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.trial_activity_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrialActivityDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.trial_activity_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for TrialActivityDataChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrialActivityDataChangeScNotify.proto\x1a\x17TrialActivityInfo.proto\
     \"e\n\x1fTrialActivityDataChangeScNotify\x12B\n\x13trial_activity_info\
-    \x18\x07\x20\x01(\x0b2\x12.TrialActivityInfoR\x11trialActivityInfob\x06p\
+    \x18\x05\x20\x01(\x0b2\x12.TrialActivityInfoR\x11trialActivityInfob\x06p\
     roto3\
 ";
 

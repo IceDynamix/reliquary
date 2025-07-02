@@ -89,13 +89,13 @@ impl ::protobuf::Message for TakeMultipleActivityExpeditionRewardScRsp {
                 96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.JIEEELIKIJM)?;
                 },
-                48 => {
+                72 => {
                     self.JIEEELIKIJM.push(is.read_uint32()?);
                 },
-                122 => {
+                114 => {
                     self.CDNDFCEEDCO.push(is.read_message()?);
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TakeMultipleActivityExpeditionRewardScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JIEEELIKIJM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JIEEELIKIJM);
         for value in &self.CDNDFCEEDCO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -127,9 +127,9 @@ impl ::protobuf::Message for TakeMultipleActivityExpeditionRewardScRsp {
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(6, &self.JIEEELIKIJM)?;
+        os.write_repeated_packed_uint32(9, &self.JIEEELIKIJM)?;
         for v in &self.CDNDFCEEDCO {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeMultipleActivityExpeditionReward
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/TakeMultipleActivityExpeditionRewardScRsp.proto\x1a\x11MMNJMINGAHJ.pr\
     oto\"\x97\x01\n)TakeMultipleActivityExpeditionRewardScRsp\x12\x18\n\x07r\
-    etcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bJIEEELIKIJM\x18\x06\
-    \x20\x03(\rR\x0bJIEEELIKIJM\x12.\n\x0bCDNDFCEEDCO\x18\x0f\x20\x03(\x0b2\
-    \x0c.MMNJMINGAHJR\x0bCDNDFCEEDCOb\x06proto3\
+    etcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bJIEEELIKIJM\x18\t\x20\
+    \x03(\rR\x0bJIEEELIKIJM\x12.\n\x0bCDNDFCEEDCO\x18\x0e\x20\x03(\x0b2\x0c.\
+    MMNJMINGAHJR\x0bCDNDFCEEDCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

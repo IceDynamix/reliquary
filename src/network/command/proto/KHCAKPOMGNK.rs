@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KHCAKPOMGNK {
     // message fields
-    // @@protoc_insertion_point(field:KHCAKPOMGNK.MMKIJAEMNBL)
-    pub MMKIJAEMNBL: bool,
     // @@protoc_insertion_point(field:KHCAKPOMGNK.BGLEHMKMAPG)
     pub BGLEHMKMAPG: u32,
+    // @@protoc_insertion_point(field:KHCAKPOMGNK.MMKIJAEMNBL)
+    pub MMKIJAEMNBL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:KHCAKPOMGNK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KHCAKPOMGNK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMKIJAEMNBL",
-            |m: &KHCAKPOMGNK| { &m.MMKIJAEMNBL },
-            |m: &mut KHCAKPOMGNK| { &mut m.MMKIJAEMNBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BGLEHMKMAPG",
             |m: &KHCAKPOMGNK| { &m.BGLEHMKMAPG },
             |m: &mut KHCAKPOMGNK| { &mut m.BGLEHMKMAPG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMKIJAEMNBL",
+            |m: &KHCAKPOMGNK| { &m.MMKIJAEMNBL },
+            |m: &mut KHCAKPOMGNK| { &mut m.MMKIJAEMNBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KHCAKPOMGNK>(
             "KHCAKPOMGNK",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for KHCAKPOMGNK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.MMKIJAEMNBL = is.read_bool()?;
-                },
-                96 => {
                     self.BGLEHMKMAPG = is.read_uint32()?;
+                },
+                8 => {
+                    self.MMKIJAEMNBL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KHCAKPOMGNK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BGLEHMKMAPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BGLEHMKMAPG);
+        }
         if self.MMKIJAEMNBL != false {
             my_size += 1 + 1;
-        }
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BGLEHMKMAPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KHCAKPOMGNK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMKIJAEMNBL != false {
-            os.write_bool(11, self.MMKIJAEMNBL)?;
-        }
         if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(12, self.BGLEHMKMAPG)?;
+            os.write_uint32(11, self.BGLEHMKMAPG)?;
+        }
+        if self.MMKIJAEMNBL != false {
+            os.write_bool(1, self.MMKIJAEMNBL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KHCAKPOMGNK {
     }
 
     fn clear(&mut self) {
-        self.MMKIJAEMNBL = false;
         self.BGLEHMKMAPG = 0;
+        self.MMKIJAEMNBL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KHCAKPOMGNK {
         static instance: KHCAKPOMGNK = KHCAKPOMGNK {
-            MMKIJAEMNBL: false,
             BGLEHMKMAPG: 0,
+            MMKIJAEMNBL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KHCAKPOMGNK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KHCAKPOMGNK.proto\"Q\n\x0bKHCAKPOMGNK\x12\x20\n\x0bMMKIJAEMNBL\x18\
-    \x0b\x20\x01(\x08R\x0bMMKIJAEMNBL\x12\x20\n\x0bBGLEHMKMAPG\x18\x0c\x20\
-    \x01(\rR\x0bBGLEHMKMAPGb\x06proto3\
+    \n\x11KHCAKPOMGNK.proto\"Q\n\x0bKHCAKPOMGNK\x12\x20\n\x0bBGLEHMKMAPG\x18\
+    \x0b\x20\x01(\rR\x0bBGLEHMKMAPG\x12\x20\n\x0bMMKIJAEMNBL\x18\x01\x20\x01\
+    (\x08R\x0bMMKIJAEMNBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

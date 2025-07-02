@@ -79,10 +79,10 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.FGOMIPLMEIC = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FGOMIPLMEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGOMIPLMEIC);
+            my_size += ::protobuf::rt::uint32_size(8, self.FGOMIPLMEIC);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus::CHESS_ROGUE_NOUS_MAIN_STORY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.status.value());
+            my_size += ::protobuf::rt::int32_size(4, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GBEEJNBEBEP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FGOMIPLMEIC != 0 {
-            os.write_uint32(12, self.FGOMIPLMEIC)?;
+            os.write_uint32(8, self.FGOMIPLMEIC)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus::CHESS_ROGUE_NOUS_MAIN_STORY_STATUS_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GBEEJNBEBEP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBEEJNBEBEP.proto\x1a#ChessRogueNousMainStoryStatus.proto\"g\n\x0b\
-    GBEEJNBEBEP\x12\x20\n\x0bFGOMIPLMEIC\x18\x0c\x20\x01(\rR\x0bFGOMIPLMEIC\
-    \x126\n\x06status\x18\x0e\x20\x01(\x0e2\x1e.ChessRogueNousMainStoryStatu\
+    GBEEJNBEBEP\x12\x20\n\x0bFGOMIPLMEIC\x18\x08\x20\x01(\rR\x0bFGOMIPLMEIC\
+    \x126\n\x06status\x18\x04\x20\x01(\x0e2\x1e.ChessRogueNousMainStoryStatu\
     sR\x06statusb\x06proto3\
 ";
 

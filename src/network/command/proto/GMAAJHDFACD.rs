@@ -30,12 +30,12 @@ pub struct GMAAJHDFACD {
     // message fields
     // @@protoc_insertion_point(field:GMAAJHDFACD.type)
     pub type_: ::protobuf::EnumOrUnknown<super::MovieRacingType::MovieRacingType>,
+    // @@protoc_insertion_point(field:GMAAJHDFACD.IFAIKOIOIDD)
+    pub IFAIKOIOIDD: u32,
     // @@protoc_insertion_point(field:GMAAJHDFACD.level)
     pub level: u32,
     // @@protoc_insertion_point(field:GMAAJHDFACD.PDOMACFEMGG)
     pub PDOMACFEMGG: u32,
-    // @@protoc_insertion_point(field:GMAAJHDFACD.IFAIKOIOIDD)
-    pub IFAIKOIOIDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GMAAJHDFACD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl GMAAJHDFACD {
             |m: &mut GMAAJHDFACD| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFAIKOIOIDD",
+            |m: &GMAAJHDFACD| { &m.IFAIKOIOIDD },
+            |m: &mut GMAAJHDFACD| { &mut m.IFAIKOIOIDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &GMAAJHDFACD| { &m.level },
             |m: &mut GMAAJHDFACD| { &mut m.level },
@@ -69,11 +74,6 @@ impl GMAAJHDFACD {
             "PDOMACFEMGG",
             |m: &GMAAJHDFACD| { &m.PDOMACFEMGG },
             |m: &mut GMAAJHDFACD| { &mut m.PDOMACFEMGG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFAIKOIOIDD",
-            |m: &GMAAJHDFACD| { &m.IFAIKOIOIDD },
-            |m: &mut GMAAJHDFACD| { &mut m.IFAIKOIOIDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GMAAJHDFACD>(
             "GMAAJHDFACD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GMAAJHDFACD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                120 => {
+                    self.IFAIKOIOIDD = is.read_uint32()?;
+                },
+                40 => {
                     self.level = is.read_uint32()?;
                 },
                 72 => {
                     self.PDOMACFEMGG = is.read_uint32()?;
-                },
-                48 => {
-                    self.IFAIKOIOIDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for GMAAJHDFACD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MOVIE_RACING_OVER_TAKE) {
-            my_size += ::protobuf::rt::int32_size(7, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(3, self.type_.value());
+        }
+        if self.IFAIKOIOIDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IFAIKOIOIDD);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         if self.PDOMACFEMGG != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.PDOMACFEMGG);
-        }
-        if self.IFAIKOIOIDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IFAIKOIOIDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for GMAAJHDFACD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MOVIE_RACING_OVER_TAKE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if self.IFAIKOIOIDD != 0 {
+            os.write_uint32(15, self.IFAIKOIOIDD)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         if self.PDOMACFEMGG != 0 {
             os.write_uint32(9, self.PDOMACFEMGG)?;
-        }
-        if self.IFAIKOIOIDD != 0 {
-            os.write_uint32(6, self.IFAIKOIOIDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for GMAAJHDFACD {
 
     fn clear(&mut self) {
         self.type_ = ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MOVIE_RACING_OVER_TAKE);
+        self.IFAIKOIOIDD = 0;
         self.level = 0;
         self.PDOMACFEMGG = 0;
-        self.IFAIKOIOIDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GMAAJHDFACD {
         static instance: GMAAJHDFACD = GMAAJHDFACD {
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            IFAIKOIOIDD: 0,
             level: 0,
             PDOMACFEMGG: 0,
-            IFAIKOIOIDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GMAAJHDFACD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMAAJHDFACD.proto\x1a\x15MovieRacingType.proto\"\x8d\x01\n\x0bGMAA\
-    JHDFACD\x12$\n\x04type\x18\x07\x20\x01(\x0e2\x10.MovieRacingTypeR\x04typ\
-    e\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x20\n\x0bPDOMACFEMGG\
-    \x18\t\x20\x01(\rR\x0bPDOMACFEMGG\x12\x20\n\x0bIFAIKOIOIDD\x18\x06\x20\
-    \x01(\rR\x0bIFAIKOIOIDDb\x06proto3\
+    JHDFACD\x12$\n\x04type\x18\x03\x20\x01(\x0e2\x10.MovieRacingTypeR\x04typ\
+    e\x12\x20\n\x0bIFAIKOIOIDD\x18\x0f\x20\x01(\rR\x0bIFAIKOIOIDD\x12\x14\n\
+    \x05level\x18\x05\x20\x01(\rR\x05level\x12\x20\n\x0bPDOMACFEMGG\x18\t\
+    \x20\x01(\rR\x0bPDOMACFEMGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

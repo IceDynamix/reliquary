@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.entry_story_line_id)
-    pub entry_story_line_id: u32,
-    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.content_id)
-    pub content_id: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.IGFIKGHLLNO)
     pub IGFIKGHLLNO: bool,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.entry_id_list)
     pub entry_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.floor_id_list)
     pub floor_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.entry_story_line_id)
+    pub entry_story_line_id: u32,
+    // @@protoc_insertion_point(field:GetSceneMapInfoCsReq.content_id)
+    pub content_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSceneMapInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl GetSceneMapInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_story_line_id",
-            |m: &GetSceneMapInfoCsReq| { &m.entry_story_line_id },
-            |m: &mut GetSceneMapInfoCsReq| { &mut m.entry_story_line_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &GetSceneMapInfoCsReq| { &m.content_id },
-            |m: &mut GetSceneMapInfoCsReq| { &mut m.content_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGFIKGHLLNO",
             |m: &GetSceneMapInfoCsReq| { &m.IGFIKGHLLNO },
             |m: &mut GetSceneMapInfoCsReq| { &mut m.IGFIKGHLLNO },
@@ -81,6 +71,16 @@ impl GetSceneMapInfoCsReq {
             "floor_id_list",
             |m: &GetSceneMapInfoCsReq| { &m.floor_id_list },
             |m: &mut GetSceneMapInfoCsReq| { &mut m.floor_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_story_line_id",
+            |m: &GetSceneMapInfoCsReq| { &m.entry_story_line_id },
+            |m: &mut GetSceneMapInfoCsReq| { &mut m.entry_story_line_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "content_id",
+            |m: &GetSceneMapInfoCsReq| { &m.content_id },
+            |m: &mut GetSceneMapInfoCsReq| { &mut m.content_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSceneMapInfoCsReq>(
             "GetSceneMapInfoCsReq",
@@ -100,13 +100,7 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.entry_story_line_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.content_id = is.read_uint32()?;
-                },
-                56 => {
+                104 => {
                     self.IGFIKGHLLNO = is.read_bool()?;
                 },
                 122 => {
@@ -115,11 +109,17 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
                 120 => {
                     self.entry_id_list.push(is.read_uint32()?);
                 },
-                42 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.floor_id_list)?;
                 },
-                40 => {
+                96 => {
                     self.floor_id_list.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.entry_story_line_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.content_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +133,34 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.entry_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.entry_story_line_id);
-        }
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.content_id);
-        }
         if self.IGFIKGHLLNO != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.entry_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.floor_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.floor_id_list);
+        if self.entry_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.entry_story_line_id);
+        }
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.content_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.entry_story_line_id != 0 {
-            os.write_uint32(1, self.entry_story_line_id)?;
-        }
-        if self.content_id != 0 {
-            os.write_uint32(9, self.content_id)?;
-        }
         if self.IGFIKGHLLNO != false {
-            os.write_bool(7, self.IGFIKGHLLNO)?;
+            os.write_bool(13, self.IGFIKGHLLNO)?;
         }
         os.write_repeated_packed_uint32(15, &self.entry_id_list)?;
-        os.write_repeated_packed_uint32(5, &self.floor_id_list)?;
+        os.write_repeated_packed_uint32(12, &self.floor_id_list)?;
+        if self.entry_story_line_id != 0 {
+            os.write_uint32(7, self.entry_story_line_id)?;
+        }
+        if self.content_id != 0 {
+            os.write_uint32(4, self.content_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +178,21 @@ impl ::protobuf::Message for GetSceneMapInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.entry_story_line_id = 0;
-        self.content_id = 0;
         self.IGFIKGHLLNO = false;
         self.entry_id_list.clear();
         self.floor_id_list.clear();
+        self.entry_story_line_id = 0;
+        self.content_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoCsReq {
         static instance: GetSceneMapInfoCsReq = GetSceneMapInfoCsReq {
-            entry_story_line_id: 0,
-            content_id: 0,
             IGFIKGHLLNO: false,
             entry_id_list: ::std::vec::Vec::new(),
             floor_id_list: ::std::vec::Vec::new(),
+            entry_story_line_id: 0,
+            content_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetSceneMapInfoCsReq.proto\"\xce\x01\n\x14GetSceneMapInfoCsReq\x12\
-    -\n\x13entry_story_line_id\x18\x01\x20\x01(\rR\x10entryStoryLineId\x12\
-    \x1d\n\ncontent_id\x18\t\x20\x01(\rR\tcontentId\x12\x20\n\x0bIGFIKGHLLNO\
-    \x18\x07\x20\x01(\x08R\x0bIGFIKGHLLNO\x12\"\n\rentry_id_list\x18\x0f\x20\
-    \x03(\rR\x0bentryIdList\x12\"\n\rfloor_id_list\x18\x05\x20\x03(\rR\x0bfl\
-    oorIdListb\x06proto3\
+    \x20\n\x0bIGFIKGHLLNO\x18\r\x20\x01(\x08R\x0bIGFIKGHLLNO\x12\"\n\rentry_\
+    id_list\x18\x0f\x20\x03(\rR\x0bentryIdList\x12\"\n\rfloor_id_list\x18\
+    \x0c\x20\x03(\rR\x0bfloorIdList\x12-\n\x13entry_story_line_id\x18\x07\
+    \x20\x01(\rR\x10entryStoryLineId\x12\x1d\n\ncontent_id\x18\x04\x20\x01(\
+    \rR\tcontentIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

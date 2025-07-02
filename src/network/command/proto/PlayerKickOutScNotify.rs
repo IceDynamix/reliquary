@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
                     self.kick_type = is.read_enum_or_unknown()?;
                 },
-                10 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(6, self.kick_type.value());
+            my_size += ::protobuf::rt::int32_size(7, self.kick_type.value());
         }
         if let Some(v) = self.black_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerKickOutScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerKickOutScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x0eKickType\
-    .proto\"j\n\x15PlayerKickOutScNotify\x12&\n\tkick_type\x18\x06\x20\x01(\
-    \x0e2\t.KickTypeR\x08kickType\x12)\n\nblack_info\x18\x01\x20\x01(\x0b2\n\
-    .BlackInfoR\tblackInfob\x06proto3\
+    .proto\"j\n\x15PlayerKickOutScNotify\x12&\n\tkick_type\x18\x07\x20\x01(\
+    \x0e2\t.KickTypeR\x08kickType\x12)\n\nblack_info\x18\r\x20\x01(\x0b2\n.B\
+    lackInfoR\tblackInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

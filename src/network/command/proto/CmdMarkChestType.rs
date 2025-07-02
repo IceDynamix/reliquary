@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMarkChestType {
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestTypeNone)
     CmdMarkChestTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdUpdateMarkChestScRsp)
-    CmdUpdateMarkChestScRsp = 8190,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdGetMarkChestScRsp)
-    CmdGetMarkChestScRsp = 8193,
+    CmdGetMarkChestScRsp = 8189,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdUpdateMarkChestScRsp)
+    CmdUpdateMarkChestScRsp = 8196,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdGetMarkChestCsReq)
-    CmdGetMarkChestCsReq = 8194,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestChangedScNotify)
-    CmdMarkChestChangedScNotify = 8184,
+    CmdGetMarkChestCsReq = 8198,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdUpdateMarkChestCsReq)
-    CmdUpdateMarkChestCsReq = 8188,
+    CmdUpdateMarkChestCsReq = 8190,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestChangedScNotify)
+    CmdMarkChestChangedScNotify = 8187,
 }
 
 impl ::protobuf::Enum for CmdMarkChestType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdMarkChestType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarkChestType> {
         match value {
             0 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestTypeNone),
-            8190 => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestScRsp),
-            8193 => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestScRsp),
-            8194 => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestCsReq),
-            8184 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestChangedScNotify),
-            8188 => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestCsReq),
+            8189 => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestScRsp),
+            8196 => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestScRsp),
+            8198 => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestCsReq),
+            8190 => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestCsReq),
+            8187 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestChangedScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdMarkChestType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMarkChestType> {
         match str {
             "CmdMarkChestTypeNone" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestTypeNone),
-            "CmdUpdateMarkChestScRsp" => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestScRsp),
             "CmdGetMarkChestScRsp" => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestScRsp),
+            "CmdUpdateMarkChestScRsp" => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestScRsp),
             "CmdGetMarkChestCsReq" => ::std::option::Option::Some(CmdMarkChestType::CmdGetMarkChestCsReq),
-            "CmdMarkChestChangedScNotify" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestChangedScNotify),
             "CmdUpdateMarkChestCsReq" => ::std::option::Option::Some(CmdMarkChestType::CmdUpdateMarkChestCsReq),
+            "CmdMarkChestChangedScNotify" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestChangedScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMarkChestType] = &[
         CmdMarkChestType::CmdMarkChestTypeNone,
-        CmdMarkChestType::CmdUpdateMarkChestScRsp,
         CmdMarkChestType::CmdGetMarkChestScRsp,
+        CmdMarkChestType::CmdUpdateMarkChestScRsp,
         CmdMarkChestType::CmdGetMarkChestCsReq,
-        CmdMarkChestType::CmdMarkChestChangedScNotify,
         CmdMarkChestType::CmdUpdateMarkChestCsReq,
+        CmdMarkChestType::CmdMarkChestChangedScNotify,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdMarkChestType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMarkChestType::CmdMarkChestTypeNone => 0,
-            CmdMarkChestType::CmdUpdateMarkChestScRsp => 1,
-            CmdMarkChestType::CmdGetMarkChestScRsp => 2,
+            CmdMarkChestType::CmdGetMarkChestScRsp => 1,
+            CmdMarkChestType::CmdUpdateMarkChestScRsp => 2,
             CmdMarkChestType::CmdGetMarkChestCsReq => 3,
-            CmdMarkChestType::CmdMarkChestChangedScNotify => 4,
-            CmdMarkChestType::CmdUpdateMarkChestCsReq => 5,
+            CmdMarkChestType::CmdUpdateMarkChestCsReq => 4,
+            CmdMarkChestType::CmdMarkChestChangedScNotify => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdMarkChestType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdMarkChestType.proto*\xc0\x01\n\x10CmdMarkChestType\x12\x18\n\
-    \x14CmdMarkChestTypeNone\x10\0\x12\x1c\n\x17CmdUpdateMarkChestScRsp\x10\
-    \xfe?\x12\x19\n\x14CmdGetMarkChestScRsp\x10\x81@\x12\x19\n\x14CmdGetMark\
-    ChestCsReq\x10\x82@\x12\x20\n\x1bCmdMarkChestChangedScNotify\x10\xf8?\
-    \x12\x1c\n\x17CmdUpdateMarkChestCsReq\x10\xfc?b\x06proto3\
+    \x14CmdMarkChestTypeNone\x10\0\x12\x19\n\x14CmdGetMarkChestScRsp\x10\xfd\
+    ?\x12\x1c\n\x17CmdUpdateMarkChestScRsp\x10\x84@\x12\x19\n\x14CmdGetMarkC\
+    hestCsReq\x10\x86@\x12\x1c\n\x17CmdUpdateMarkChestCsReq\x10\xfe?\x12\x20\
+    \n\x1bCmdMarkChestChangedScNotify\x10\xfb?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

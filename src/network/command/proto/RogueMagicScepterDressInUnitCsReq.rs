@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicScepterDressInUnitCsReq {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.dice_slot_id)
+    pub dice_slot_id: u32,
     // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.scepter_id)
     pub scepter_id: u32,
     // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.ELPINNNALBD)
     pub ELPINNNALBD: u32,
-    // @@protoc_insertion_point(field:RogueMagicScepterDressInUnitCsReq.dice_slot_id)
-    pub dice_slot_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicScepterDressInUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl RogueMagicScepterDressInUnitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dice_slot_id",
+            |m: &RogueMagicScepterDressInUnitCsReq| { &m.dice_slot_id },
+            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.dice_slot_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "scepter_id",
             |m: &RogueMagicScepterDressInUnitCsReq| { &m.scepter_id },
             |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.scepter_id },
@@ -62,11 +67,6 @@ impl RogueMagicScepterDressInUnitCsReq {
             "ELPINNNALBD",
             |m: &RogueMagicScepterDressInUnitCsReq| { &m.ELPINNNALBD },
             |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.ELPINNNALBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dice_slot_id",
-            |m: &RogueMagicScepterDressInUnitCsReq| { &m.dice_slot_id },
-            |m: &mut RogueMagicScepterDressInUnitCsReq| { &mut m.dice_slot_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicScepterDressInUnitCsReq>(
             "RogueMagicScepterDressInUnitCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
+                    self.dice_slot_id = is.read_uint32()?;
+                },
+                112 => {
                     self.scepter_id = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.ELPINNNALBD = is.read_uint32()?;
-                },
-                40 => {
-                    self.dice_slot_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.dice_slot_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.dice_slot_id);
+        }
         if self.scepter_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.scepter_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.scepter_id);
         }
         if self.ELPINNNALBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ELPINNNALBD);
-        }
-        if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.dice_slot_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.ELPINNNALBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.dice_slot_id != 0 {
+            os.write_uint32(1, self.dice_slot_id)?;
+        }
         if self.scepter_id != 0 {
-            os.write_uint32(12, self.scepter_id)?;
+            os.write_uint32(14, self.scepter_id)?;
         }
         if self.ELPINNNALBD != 0 {
-            os.write_uint32(7, self.ELPINNNALBD)?;
-        }
-        if self.dice_slot_id != 0 {
-            os.write_uint32(5, self.dice_slot_id)?;
+            os.write_uint32(12, self.ELPINNNALBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     }
 
     fn clear(&mut self) {
+        self.dice_slot_id = 0;
         self.scepter_id = 0;
         self.ELPINNNALBD = 0;
-        self.dice_slot_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicScepterDressInUnitCsReq {
         static instance: RogueMagicScepterDressInUnitCsReq = RogueMagicScepterDressInUnitCsReq {
+            dice_slot_id: 0,
             scepter_id: 0,
             ELPINNNALBD: 0,
-            dice_slot_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicScepterDressInUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicScepterDressInUnitCsReq.proto\"\x86\x01\n!RogueMagicScepter\
-    DressInUnitCsReq\x12\x1d\n\nscepter_id\x18\x0c\x20\x01(\rR\tscepterId\
-    \x12\x20\n\x0bELPINNNALBD\x18\x07\x20\x01(\rR\x0bELPINNNALBD\x12\x20\n\
-    \x0cdice_slot_id\x18\x05\x20\x01(\rR\ndiceSlotIdb\x06proto3\
+    DressInUnitCsReq\x12\x20\n\x0cdice_slot_id\x18\x01\x20\x01(\rR\ndiceSlot\
+    Id\x12\x1d\n\nscepter_id\x18\x0e\x20\x01(\rR\tscepterId\x12\x20\n\x0bELP\
+    INNNALBD\x18\x0c\x20\x01(\rR\x0bELPINNNALBDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

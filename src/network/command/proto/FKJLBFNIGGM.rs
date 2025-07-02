@@ -72,10 +72,10 @@ impl ::protobuf::Message for FKJLBFNIGGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.diary_data_list)?;
                 },
-                104 => {
+                16 => {
                     self.diary_data_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for FKJLBFNIGGM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.diary_data_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.diary_data_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.diary_data_list)?;
+        os.write_repeated_packed_uint32(2, &self.diary_data_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for FKJLBFNIGGM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FKJLBFNIGGM.proto\"5\n\x0bFKJLBFNIGGM\x12&\n\x0fdiary_data_list\
-    \x18\r\x20\x03(\rR\rdiaryDataListb\x06proto3\
+    \x18\x02\x20\x03(\rR\rdiaryDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

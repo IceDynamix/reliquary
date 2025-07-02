@@ -89,10 +89,10 @@ impl ::protobuf::Message for FJEMJBNAJFJ {
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                42 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                10 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEILFHHNLIH)?;
                 },
                 tag => {
@@ -129,10 +129,10 @@ impl ::protobuf::Message for FJEMJBNAJFJ {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.KEILFHHNLIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -189,8 +189,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FJEMJBNAJFJ.proto\x1a\x10LineupInfo.proto\x1a\x18RogueMapRotateInf\
     o.proto\x1a\x0fSceneInfo.proto\"\x8b\x01\n\x0bFJEMJBNAJFJ\x12\x20\n\x05s\
     cene\x18\x04\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\
-    \x05\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x125\n\x0bKEILFHHNLIH\x18\
-    \x01\x20\x01(\x0b2\x13.RogueMapRotateInfoR\x0bKEILFHHNLIHb\x06proto3\
+    \x02\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x125\n\x0bKEILFHHNLIH\x18\
+    \x05\x20\x01(\x0b2\x13.RogueMapRotateInfoR\x0bKEILFHHNLIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

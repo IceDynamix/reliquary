@@ -79,7 +79,7 @@ impl ::protobuf::Message for SwitchItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.daily_index = is.read_uint32()?;
                 },
                 56 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SwitchItem {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.daily_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.daily_index);
+            my_size += ::protobuf::rt::uint32_size(6, self.daily_index);
         }
         if self.EINFBGKENDH != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SwitchItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.daily_index != 0 {
-            os.write_uint32(8, self.daily_index)?;
+            os.write_uint32(6, self.daily_index)?;
         }
         if self.EINFBGKENDH != false {
             os.write_bool(7, self.EINFBGKENDH)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for SwitchItem {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x1f\n\x0bdaily_index\x18\x08\
+    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x1f\n\x0bdaily_index\x18\x06\
     \x20\x01(\rR\ndailyIndex\x12\x20\n\x0bEINFBGKENDH\x18\x07\x20\x01(\x08R\
     \x0bEINFBGKENDHb\x06proto3\
 ";

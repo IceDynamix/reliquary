@@ -73,7 +73,7 @@ impl ActivityRaidPlacingGameScRsp {
         self.IPCMEJKOEDA = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::IPCMEJKOEDA::CJEMMDPICLJ(v))
     }
 
-    // uint32 FJDABPPANDC = 13;
+    // uint32 FJDABPPANDC = 14;
 
     pub fn FJDABPPANDC(&self) -> u32 {
         match self.IPCMEJKOEDA {
@@ -137,13 +137,13 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 32 => {
                     self.IPCMEJKOEDA = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::IPCMEJKOEDA::CJEMMDPICLJ(is.read_uint32()?));
                 },
-                104 => {
+                112 => {
                     self.IPCMEJKOEDA = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::IPCMEJKOEDA::FJDABPPANDC(is.read_uint32()?));
                 },
                 tag => {
@@ -159,7 +159,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.IPCMEJKOEDA {
             match v {
@@ -167,7 +167,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
                     my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &activity_raid_placing_game_sc_rsp::IPCMEJKOEDA::FJDABPPANDC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
             };
         }
@@ -178,7 +178,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.IPCMEJKOEDA {
             match v {
@@ -186,7 +186,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
                     os.write_uint32(4, v)?;
                 },
                 &activity_raid_placing_game_sc_rsp::IPCMEJKOEDA::FJDABPPANDC(v) => {
-                    os.write_uint32(13, v)?;
+                    os.write_uint32(14, v)?;
                 },
             };
         }
@@ -272,9 +272,10 @@ pub mod activity_raid_placing_game_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ActivityRaidPlacingGameScRsp.proto\"\x8f\x01\n\x1cActivityRaidPlacin\
-    gGameScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\"\n\
+    gGameScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\"\n\
     \x0bCJEMMDPICLJ\x18\x04\x20\x01(\rH\0R\x0bCJEMMDPICLJ\x12\"\n\x0bFJDABPP\
-    ANDC\x18\r\x20\x01(\rH\0R\x0bFJDABPPANDCB\r\n\x0bIPCMEJKOEDAb\x06proto3\
+    ANDC\x18\x0e\x20\x01(\rH\0R\x0bFJDABPPANDCB\r\n\x0bIPCMEJKOEDAb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

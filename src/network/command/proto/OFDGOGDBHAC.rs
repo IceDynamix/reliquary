@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OFDGOGDBHAC {
     // message fields
+    // @@protoc_insertion_point(field:OFDGOGDBHAC.OMICAJEOLJF)
+    pub OMICAJEOLJF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OFDGOGDBHAC.LIBLLKBLDCH)
     pub LIBLLKBLDCH: ::std::vec::Vec<u32>,
     // special fields
@@ -47,8 +49,13 @@ impl OFDGOGDBHAC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OMICAJEOLJF",
+            |m: &OFDGOGDBHAC| { &m.OMICAJEOLJF },
+            |m: &mut OFDGOGDBHAC| { &mut m.OMICAJEOLJF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LIBLLKBLDCH",
             |m: &OFDGOGDBHAC| { &m.LIBLLKBLDCH },
@@ -72,10 +79,16 @@ impl ::protobuf::Message for OFDGOGDBHAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OMICAJEOLJF)?;
+                },
+                88 => {
+                    self.OMICAJEOLJF.push(is.read_uint32()?);
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.LIBLLKBLDCH)?;
                 },
-                48 => {
+                32 => {
                     self.LIBLLKBLDCH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +103,16 @@ impl ::protobuf::Message for OFDGOGDBHAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LIBLLKBLDCH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.OMICAJEOLJF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LIBLLKBLDCH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.LIBLLKBLDCH)?;
+        os.write_repeated_packed_uint32(11, &self.OMICAJEOLJF)?;
+        os.write_repeated_packed_uint32(4, &self.LIBLLKBLDCH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,12 +130,14 @@ impl ::protobuf::Message for OFDGOGDBHAC {
     }
 
     fn clear(&mut self) {
+        self.OMICAJEOLJF.clear();
         self.LIBLLKBLDCH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OFDGOGDBHAC {
         static instance: OFDGOGDBHAC = OFDGOGDBHAC {
+            OMICAJEOLJF: ::std::vec::Vec::new(),
             LIBLLKBLDCH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -146,8 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for OFDGOGDBHAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OFDGOGDBHAC.proto\"/\n\x0bOFDGOGDBHAC\x12\x20\n\x0bLIBLLKBLDCH\x18\
-    \x06\x20\x03(\rR\x0bLIBLLKBLDCHb\x06proto3\
+    \n\x11OFDGOGDBHAC.proto\"Q\n\x0bOFDGOGDBHAC\x12\x20\n\x0bOMICAJEOLJF\x18\
+    \x0b\x20\x03(\rR\x0bOMICAJEOLJF\x12\x20\n\x0bLIBLLKBLDCH\x18\x04\x20\x03\
+    (\rR\x0bLIBLLKBLDCHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

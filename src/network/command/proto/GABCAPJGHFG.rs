@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GABCAPJGHFG {
     // message fields
-    // @@protoc_insertion_point(field:GABCAPJGHFG.game_aeon_id)
-    pub game_aeon_id: u32,
-    // @@protoc_insertion_point(field:GABCAPJGHFG.HLBFBFDLACA)
-    pub HLBFBFDLACA: u32,
     // @@protoc_insertion_point(field:GABCAPJGHFG.AOELKJEEGKG)
     pub AOELKJEEGKG: bool,
+    // @@protoc_insertion_point(field:GABCAPJGHFG.HLBFBFDLACA)
+    pub HLBFBFDLACA: u32,
+    // @@protoc_insertion_point(field:GABCAPJGHFG.game_aeon_id)
+    pub game_aeon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GABCAPJGHFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl GABCAPJGHFG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_aeon_id",
-            |m: &GABCAPJGHFG| { &m.game_aeon_id },
-            |m: &mut GABCAPJGHFG| { &mut m.game_aeon_id },
+            "AOELKJEEGKG",
+            |m: &GABCAPJGHFG| { &m.AOELKJEEGKG },
+            |m: &mut GABCAPJGHFG| { &mut m.AOELKJEEGKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HLBFBFDLACA",
@@ -64,9 +64,9 @@ impl GABCAPJGHFG {
             |m: &mut GABCAPJGHFG| { &mut m.HLBFBFDLACA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AOELKJEEGKG",
-            |m: &GABCAPJGHFG| { &m.AOELKJEEGKG },
-            |m: &mut GABCAPJGHFG| { &mut m.AOELKJEEGKG },
+            "game_aeon_id",
+            |m: &GABCAPJGHFG| { &m.game_aeon_id },
+            |m: &mut GABCAPJGHFG| { &mut m.game_aeon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GABCAPJGHFG>(
             "GABCAPJGHFG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GABCAPJGHFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.game_aeon_id = is.read_uint32()?;
+                32 => {
+                    self.AOELKJEEGKG = is.read_bool()?;
                 },
-                64 => {
+                56 => {
                     self.HLBFBFDLACA = is.read_uint32()?;
                 },
-                72 => {
-                    self.AOELKJEEGKG = is.read_bool()?;
+                80 => {
+                    self.game_aeon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GABCAPJGHFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.game_aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.game_aeon_id);
-        }
-        if self.HLBFBFDLACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HLBFBFDLACA);
-        }
         if self.AOELKJEEGKG != false {
             my_size += 1 + 1;
+        }
+        if self.HLBFBFDLACA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HLBFBFDLACA);
+        }
+        if self.game_aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.game_aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GABCAPJGHFG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.game_aeon_id != 0 {
-            os.write_uint32(12, self.game_aeon_id)?;
+        if self.AOELKJEEGKG != false {
+            os.write_bool(4, self.AOELKJEEGKG)?;
         }
         if self.HLBFBFDLACA != 0 {
-            os.write_uint32(8, self.HLBFBFDLACA)?;
+            os.write_uint32(7, self.HLBFBFDLACA)?;
         }
-        if self.AOELKJEEGKG != false {
-            os.write_bool(9, self.AOELKJEEGKG)?;
+        if self.game_aeon_id != 0 {
+            os.write_uint32(10, self.game_aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GABCAPJGHFG {
     }
 
     fn clear(&mut self) {
-        self.game_aeon_id = 0;
-        self.HLBFBFDLACA = 0;
         self.AOELKJEEGKG = false;
+        self.HLBFBFDLACA = 0;
+        self.game_aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GABCAPJGHFG {
         static instance: GABCAPJGHFG = GABCAPJGHFG {
-            game_aeon_id: 0,
-            HLBFBFDLACA: 0,
             AOELKJEEGKG: false,
+            HLBFBFDLACA: 0,
+            game_aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GABCAPJGHFG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GABCAPJGHFG.proto\"s\n\x0bGABCAPJGHFG\x12\x20\n\x0cgame_aeon_id\
-    \x18\x0c\x20\x01(\rR\ngameAeonId\x12\x20\n\x0bHLBFBFDLACA\x18\x08\x20\
-    \x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0bAOELKJEEGKG\x18\t\x20\x01(\x08R\x0b\
-    AOELKJEEGKGb\x06proto3\
+    \n\x11GABCAPJGHFG.proto\"s\n\x0bGABCAPJGHFG\x12\x20\n\x0bAOELKJEEGKG\x18\
+    \x04\x20\x01(\x08R\x0bAOELKJEEGKG\x12\x20\n\x0bHLBFBFDLACA\x18\x07\x20\
+    \x01(\rR\x0bHLBFBFDLACA\x12\x20\n\x0cgame_aeon_id\x18\n\x20\x01(\rR\ngam\
+    eAeonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

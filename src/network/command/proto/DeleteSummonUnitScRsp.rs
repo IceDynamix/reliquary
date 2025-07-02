@@ -79,13 +79,13 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.entity_id_list)?;
                 },
-                16 => {
+                80 => {
                     self.entity_id_list.push(is.read_uint32()?);
                 },
-                80 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.entity_id_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.entity_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.entity_id_list)?;
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSummonUnitScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDeleteSummonUnitScRsp.proto\"W\n\x15DeleteSummonUnitScRsp\x12$\n\
-    \x0eentity_id_list\x18\x02\x20\x03(\rR\x0centityIdList\x12\x18\n\x07retc\
-    ode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x0eentity_id_list\x18\n\x20\x03(\rR\x0centityIdList\x12\x18\n\x07retcod\
+    e\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

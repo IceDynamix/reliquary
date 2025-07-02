@@ -45,7 +45,7 @@ impl UpdatePlayerSetting {
         ::std::default::Default::default()
     }
 
-    // bool KAPDIMGJLNF = 1;
+    // bool KAPDIMGJLNF = 11;
 
     pub fn KAPDIMGJLNF(&self) -> bool {
         match self.LNLINHANENB {
@@ -70,7 +70,7 @@ impl UpdatePlayerSetting {
         self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::KAPDIMGJLNF(v))
     }
 
-    // bool MMMNJCHEMFN = 8;
+    // bool MMMNJCHEMFN = 9;
 
     pub fn MMMNJCHEMFN(&self) -> bool {
         match self.LNLINHANENB {
@@ -95,7 +95,7 @@ impl UpdatePlayerSetting {
         self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::MMMNJCHEMFN(v))
     }
 
-    // bool NKEKIBNJMPA = 5;
+    // bool NKEKIBNJMPA = 14;
 
     pub fn NKEKIBNJMPA(&self) -> bool {
         match self.LNLINHANENB {
@@ -145,7 +145,7 @@ impl UpdatePlayerSetting {
         self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::PBKBGLHHKPE(v))
     }
 
-    // bool NJFMILJOFOK = 2;
+    // bool NJFMILJOFOK = 3;
 
     pub fn NJFMILJOFOK(&self) -> bool {
         match self.LNLINHANENB {
@@ -195,7 +195,7 @@ impl UpdatePlayerSetting {
         self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::AICNFAOBCPI(v))
     }
 
-    // bool KJNCCKHJFHE = 11;
+    // bool KJNCCKHJFHE = 13;
 
     pub fn KJNCCKHJFHE(&self) -> bool {
         match self.LNLINHANENB {
@@ -270,7 +270,7 @@ impl UpdatePlayerSetting {
         self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::GMJANOJMKCE(v))
     }
 
-    // .OGFIODPILEL GHKCMDNKOPN = 9;
+    // .OGFIODPILEL GHKCMDNKOPN = 2;
 
     pub fn GHKCMDNKOPN(&self) -> &super::OGFIODPILEL::OGFIODPILEL {
         match self.LNLINHANENB {
@@ -319,7 +319,7 @@ impl UpdatePlayerSetting {
         }
     }
 
-    // bool ILFALCDLAOL = 12;
+    // bool ILFALCDLAOL = 1;
 
     pub fn ILFALCDLAOL(&self) -> bool {
         match self.LNLINHANENB {
@@ -433,25 +433,25 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::KAPDIMGJLNF(is.read_bool()?));
                 },
-                64 => {
+                72 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::MMMNJCHEMFN(is.read_bool()?));
                 },
-                40 => {
+                112 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::NKEKIBNJMPA(is.read_bool()?));
                 },
                 56 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::PBKBGLHHKPE(is.read_bool()?));
                 },
-                16 => {
+                24 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::NJFMILJOFOK(is.read_bool()?));
                 },
                 32 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::AICNFAOBCPI(is.read_bool()?));
                 },
-                88 => {
+                104 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::KJNCCKHJFHE(is.read_bool()?));
                 },
                 120 => {
@@ -460,10 +460,10 @@ impl ::protobuf::Message for UpdatePlayerSetting {
                 48 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::GMJANOJMKCE(is.read_bool()?));
                 },
-                74 => {
+                18 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::GHKCMDNKOPN(is.read_message()?));
                 },
-                96 => {
+                8 => {
                     self.LNLINHANENB = ::std::option::Option::Some(update_player_setting::LNLINHANENB::ILFALCDLAOL(is.read_bool()?));
                 },
                 tag => {
@@ -525,25 +525,25 @@ impl ::protobuf::Message for UpdatePlayerSetting {
         if let ::std::option::Option::Some(ref v) = self.LNLINHANENB {
             match v {
                 &update_player_setting::LNLINHANENB::KAPDIMGJLNF(v) => {
-                    os.write_bool(1, v)?;
+                    os.write_bool(11, v)?;
                 },
                 &update_player_setting::LNLINHANENB::MMMNJCHEMFN(v) => {
-                    os.write_bool(8, v)?;
+                    os.write_bool(9, v)?;
                 },
                 &update_player_setting::LNLINHANENB::NKEKIBNJMPA(v) => {
-                    os.write_bool(5, v)?;
+                    os.write_bool(14, v)?;
                 },
                 &update_player_setting::LNLINHANENB::PBKBGLHHKPE(v) => {
                     os.write_bool(7, v)?;
                 },
                 &update_player_setting::LNLINHANENB::NJFMILJOFOK(v) => {
-                    os.write_bool(2, v)?;
+                    os.write_bool(3, v)?;
                 },
                 &update_player_setting::LNLINHANENB::AICNFAOBCPI(v) => {
                     os.write_bool(4, v)?;
                 },
                 &update_player_setting::LNLINHANENB::KJNCCKHJFHE(v) => {
-                    os.write_bool(11, v)?;
+                    os.write_bool(13, v)?;
                 },
                 &update_player_setting::LNLINHANENB::APONEIDMPHL(v) => {
                     os.write_bool(15, v)?;
@@ -552,10 +552,10 @@ impl ::protobuf::Message for UpdatePlayerSetting {
                     os.write_bool(6, v)?;
                 },
                 &update_player_setting::LNLINHANENB::GHKCMDNKOPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &update_player_setting::LNLINHANENB::ILFALCDLAOL(v) => {
-                    os.write_bool(12, v)?;
+                    os.write_bool(1, v)?;
                 },
             };
         }
@@ -666,17 +666,17 @@ pub mod update_player_setting {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19UpdatePlayerSetting.proto\x1a\x11OGFIODPILEL.proto\"\xbe\x03\n\x13\
-    UpdatePlayerSetting\x12\"\n\x0bKAPDIMGJLNF\x18\x01\x20\x01(\x08H\0R\x0bK\
-    APDIMGJLNF\x12\"\n\x0bMMMNJCHEMFN\x18\x08\x20\x01(\x08H\0R\x0bMMMNJCHEMF\
-    N\x12\"\n\x0bNKEKIBNJMPA\x18\x05\x20\x01(\x08H\0R\x0bNKEKIBNJMPA\x12\"\n\
+    UpdatePlayerSetting\x12\"\n\x0bKAPDIMGJLNF\x18\x0b\x20\x01(\x08H\0R\x0bK\
+    APDIMGJLNF\x12\"\n\x0bMMMNJCHEMFN\x18\t\x20\x01(\x08H\0R\x0bMMMNJCHEMFN\
+    \x12\"\n\x0bNKEKIBNJMPA\x18\x0e\x20\x01(\x08H\0R\x0bNKEKIBNJMPA\x12\"\n\
     \x0bPBKBGLHHKPE\x18\x07\x20\x01(\x08H\0R\x0bPBKBGLHHKPE\x12\"\n\x0bNJFMI\
-    LJOFOK\x18\x02\x20\x01(\x08H\0R\x0bNJFMILJOFOK\x12\"\n\x0bAICNFAOBCPI\
-    \x18\x04\x20\x01(\x08H\0R\x0bAICNFAOBCPI\x12\"\n\x0bKJNCCKHJFHE\x18\x0b\
+    LJOFOK\x18\x03\x20\x01(\x08H\0R\x0bNJFMILJOFOK\x12\"\n\x0bAICNFAOBCPI\
+    \x18\x04\x20\x01(\x08H\0R\x0bAICNFAOBCPI\x12\"\n\x0bKJNCCKHJFHE\x18\r\
     \x20\x01(\x08H\0R\x0bKJNCCKHJFHE\x12\"\n\x0bAPONEIDMPHL\x18\x0f\x20\x01(\
     \x08H\0R\x0bAPONEIDMPHL\x12\"\n\x0bGMJANOJMKCE\x18\x06\x20\x01(\x08H\0R\
-    \x0bGMJANOJMKCE\x120\n\x0bGHKCMDNKOPN\x18\t\x20\x01(\x0b2\x0c.OGFIODPILE\
-    LH\0R\x0bGHKCMDNKOPN\x12\"\n\x0bILFALCDLAOL\x18\x0c\x20\x01(\x08H\0R\x0b\
-    ILFALCDLAOLB\r\n\x0bLNLINHANENBb\x06proto3\
+    \x0bGMJANOJMKCE\x120\n\x0bGHKCMDNKOPN\x18\x02\x20\x01(\x0b2\x0c.OGFIODPI\
+    LELH\0R\x0bGHKCMDNKOPN\x12\"\n\x0bILFALCDLAOL\x18\x01\x20\x01(\x08H\0R\
+    \x0bILFALCDLAOLB\r\n\x0bLNLINHANENBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

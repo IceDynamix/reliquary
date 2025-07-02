@@ -45,7 +45,7 @@ impl NDHOPEDOFOC {
         ::std::default::Default::default()
     }
 
-    // .IEKHJDECAPE OEKHNGFFGKB = 14;
+    // .IEKHJDECAPE OEKHNGFFGKB = 2;
 
     pub fn OEKHNGFFGKB(&self) -> &super::IEKHJDECAPE::IEKHJDECAPE {
         match self.OHMHKKLMKHD {
@@ -143,7 +143,7 @@ impl NDHOPEDOFOC {
         }
     }
 
-    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 13;
+    // .NHDBOFCFCJM FUNC_UNLOCK_ID_RELIC = 5;
 
     pub fn FUNC_UNLOCK_ID_RELIC(&self) -> &super::NHDBOFCFCJM::NHDBOFCFCJM {
         match self.OHMHKKLMKHD {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for NDHOPEDOFOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(is.read_message()?));
                 },
                 26 => {
                     self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(is.read_message()?));
                 },
-                106 => {
+                42 => {
                     self.OHMHKKLMKHD = ::std::option::Option::Some(ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for NDHOPEDOFOC {
         if let ::std::option::Option::Some(ref v) = self.OHMHKKLMKHD {
             match v {
                 &ndhopedofoc::OHMHKKLMKHD::OEKHNGFFGKB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &ndhopedofoc::OHMHKKLMKHD::ADEOIGEBMDF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &ndhopedofoc::OHMHKKLMKHD::FUNCUNLOCKIDRELIC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod ndhopedofoc {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NDHOPEDOFOC.proto\x1a\x11AKCPALGEMOL.proto\x1a\x11IEKHJDECAPE.prot\
     o\x1a\x11NHDBOFCFCJM.proto\"\xc1\x01\n\x0bNDHOPEDOFOC\x120\n\x0bOEKHNGFF\
-    GKB\x18\x0e\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
+    GKB\x18\x02\x20\x01(\x0b2\x0c.IEKHJDECAPEH\0R\x0bOEKHNGFFGKB\x120\n\x0bA\
     DEOIGEBMDF\x18\x03\x20\x01(\x0b2\x0c.AKCPALGEMOLH\0R\x0bADEOIGEBMDF\x12?\
-    \n\x14FUNC_UNLOCK_ID_RELIC\x18\r\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11FU\
-    NCUNLOCKIDRELICB\r\n\x0bOHMHKKLMKHDb\x06proto3\
+    \n\x14FUNC_UNLOCK_ID_RELIC\x18\x05\x20\x01(\x0b2\x0c.NHDBOFCFCJMH\0R\x11\
+    FUNCUNLOCKIDRELICB\r\n\x0bOHMHKKLMKHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

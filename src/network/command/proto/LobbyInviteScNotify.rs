@@ -86,13 +86,13 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.room_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                104 => {
                     self.sender_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.room_id);
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::int32_size(11, self.NBDLPGBIDLC.value());
         }
         if self.sender_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.sender_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.sender_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LobbyInviteScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.room_id != 0 {
-            os.write_uint32(10, self.room_id)?;
+            os.write_uint32(5, self.room_id)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         if self.sender_id != 0 {
-            os.write_uint32(9, self.sender_id)?;
+            os.write_uint32(13, self.sender_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInviteScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19LobbyInviteScNotify.proto\x1a\x13FightGameMode.proto\"}\n\x13Lobby\
-    InviteScNotify\x12\x17\n\x07room_id\x18\n\x20\x01(\rR\x06roomId\x120\n\
-    \x0bNBDLPGBIDLC\x18\r\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\
-    \x12\x1b\n\tsender_id\x18\t\x20\x01(\rR\x08senderIdb\x06proto3\
+    InviteScNotify\x12\x17\n\x07room_id\x18\x05\x20\x01(\rR\x06roomId\x120\n\
+    \x0bNBDLPGBIDLC\x18\x0b\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\
+    \x12\x1b\n\tsender_id\x18\r\x20\x01(\rR\x08senderIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

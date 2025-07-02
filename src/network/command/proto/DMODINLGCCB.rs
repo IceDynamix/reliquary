@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMODINLGCCB {
     // message fields
+    // @@protoc_insertion_point(field:DMODINLGCCB.KBDFBGINNBJ)
+    pub KBDFBGINNBJ: u32,
     // @@protoc_insertion_point(field:DMODINLGCCB.EONLMDCBNME)
     pub EONLMDCBNME: u32,
     // @@protoc_insertion_point(field:DMODINLGCCB.status)
     pub status: ::protobuf::EnumOrUnknown<super::HHICLPLJNCO::HHICLPLJNCO>,
-    // @@protoc_insertion_point(field:DMODINLGCCB.KBDFBGINNBJ)
-    pub KBDFBGINNBJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DMODINLGCCB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl DMODINLGCCB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBDFBGINNBJ",
+            |m: &DMODINLGCCB| { &m.KBDFBGINNBJ },
+            |m: &mut DMODINLGCCB| { &mut m.KBDFBGINNBJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EONLMDCBNME",
             |m: &DMODINLGCCB| { &m.EONLMDCBNME },
             |m: &mut DMODINLGCCB| { &mut m.EONLMDCBNME },
@@ -62,11 +67,6 @@ impl DMODINLGCCB {
             "status",
             |m: &DMODINLGCCB| { &m.status },
             |m: &mut DMODINLGCCB| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBDFBGINNBJ",
-            |m: &DMODINLGCCB| { &m.KBDFBGINNBJ },
-            |m: &mut DMODINLGCCB| { &mut m.KBDFBGINNBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DMODINLGCCB>(
             "DMODINLGCCB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DMODINLGCCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                104 => {
+                    self.KBDFBGINNBJ = is.read_uint32()?;
+                },
+                120 => {
                     self.EONLMDCBNME = is.read_uint32()?;
                 },
                 80 => {
                     self.status = is.read_enum_or_unknown()?;
-                },
-                48 => {
-                    self.KBDFBGINNBJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for DMODINLGCCB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KBDFBGINNBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KBDFBGINNBJ);
+        }
         if self.EONLMDCBNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EONLMDCBNME);
+            my_size += ::protobuf::rt::uint32_size(15, self.EONLMDCBNME);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
             my_size += ::protobuf::rt::int32_size(10, self.status.value());
-        }
-        if self.KBDFBGINNBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KBDFBGINNBJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for DMODINLGCCB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KBDFBGINNBJ != 0 {
+            os.write_uint32(13, self.KBDFBGINNBJ)?;
+        }
         if self.EONLMDCBNME != 0 {
-            os.write_uint32(12, self.EONLMDCBNME)?;
+            os.write_uint32(15, self.EONLMDCBNME)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.KBDFBGINNBJ != 0 {
-            os.write_uint32(6, self.KBDFBGINNBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for DMODINLGCCB {
     }
 
     fn clear(&mut self) {
+        self.KBDFBGINNBJ = 0;
         self.EONLMDCBNME = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE);
-        self.KBDFBGINNBJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DMODINLGCCB {
         static instance: DMODINLGCCB = DMODINLGCCB {
+            KBDFBGINNBJ: 0,
             EONLMDCBNME: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            KBDFBGINNBJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DMODINLGCCB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMODINLGCCB.proto\x1a\x11HHICLPLJNCO.proto\"w\n\x0bDMODINLGCCB\x12\
-    \x20\n\x0bEONLMDCBNME\x18\x0c\x20\x01(\rR\x0bEONLMDCBNME\x12$\n\x06statu\
-    s\x18\n\x20\x01(\x0e2\x0c.HHICLPLJNCOR\x06status\x12\x20\n\x0bKBDFBGINNB\
-    J\x18\x06\x20\x01(\rR\x0bKBDFBGINNBJb\x06proto3\
+    \x20\n\x0bKBDFBGINNBJ\x18\r\x20\x01(\rR\x0bKBDFBGINNBJ\x12\x20\n\x0bEONL\
+    MDCBNME\x18\x0f\x20\x01(\rR\x0bEONLMDCBNME\x12$\n\x06status\x18\n\x20\
+    \x01(\x0e2\x0c.HHICLPLJNCOR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

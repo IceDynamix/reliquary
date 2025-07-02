@@ -82,7 +82,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
                 8 => {
                     self.JIENHHAHFGI = is.read_bool()?;
                 },
-                40 => {
+                88 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
             my_size += 1 + 1;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
             os.write_bool(1, self.JIENHHAHFGI)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueStatusScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncRogueStatusScNotify.proto\x1a\x11RogueStatus.proto\"a\n\x17Syn\
     cRogueStatusScNotify\x12\x20\n\x0bJIENHHAHFGI\x18\x01\x20\x01(\x08R\x0bJ\
-    IENHHAHFGI\x12$\n\x06status\x18\x05\x20\x01(\x0e2\x0c.RogueStatusR\x06st\
+    IENHHAHFGI\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.RogueStatusR\x06st\
     atusb\x06proto3\
 ";
 

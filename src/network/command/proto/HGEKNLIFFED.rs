@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGEKNLIFFED {
     // message fields
+    // @@protoc_insertion_point(field:HGEKNLIFFED.BDOEMGMHALJ)
+    pub BDOEMGMHALJ: ::protobuf::MessageField<super::JBMECLKGGDK::JBMECLKGGDK>,
     // @@protoc_insertion_point(field:HGEKNLIFFED.LEKPKOCNJAL)
     pub LEKPKOCNJAL: ::std::vec::Vec<super::GBABEKPBLHN::GBABEKPBLHN>,
     // @@protoc_insertion_point(field:HGEKNLIFFED.event_unique_id)
     pub event_unique_id: u32,
-    // @@protoc_insertion_point(field:HGEKNLIFFED.BDOEMGMHALJ)
-    pub BDOEMGMHALJ: ::protobuf::MessageField<super::JBMECLKGGDK::JBMECLKGGDK>,
     // special fields
     // @@protoc_insertion_point(special_field:HGEKNLIFFED.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl HGEKNLIFFED {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBMECLKGGDK::JBMECLKGGDK>(
+            "BDOEMGMHALJ",
+            |m: &HGEKNLIFFED| { &m.BDOEMGMHALJ },
+            |m: &mut HGEKNLIFFED| { &mut m.BDOEMGMHALJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LEKPKOCNJAL",
             |m: &HGEKNLIFFED| { &m.LEKPKOCNJAL },
@@ -62,11 +67,6 @@ impl HGEKNLIFFED {
             "event_unique_id",
             |m: &HGEKNLIFFED| { &m.event_unique_id },
             |m: &mut HGEKNLIFFED| { &mut m.event_unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBMECLKGGDK::JBMECLKGGDK>(
-            "BDOEMGMHALJ",
-            |m: &HGEKNLIFFED| { &m.BDOEMGMHALJ },
-            |m: &mut HGEKNLIFFED| { &mut m.BDOEMGMHALJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGEKNLIFFED>(
             "HGEKNLIFFED",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HGEKNLIFFED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.LEKPKOCNJAL.push(is.read_message()?);
-                },
-                40 => {
-                    self.event_unique_id = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDOEMGMHALJ)?;
                 },
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDOEMGMHALJ)?;
+                    self.LEKPKOCNJAL.push(is.read_message()?);
+                },
+                16 => {
+                    self.event_unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for HGEKNLIFFED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.BDOEMGMHALJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         for value in &self.LEKPKOCNJAL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.event_unique_id);
-        }
-        if let Some(v) = self.BDOEMGMHALJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(2, self.event_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for HGEKNLIFFED {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.BDOEMGMHALJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         for v in &self.LEKPKOCNJAL {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.event_unique_id != 0 {
-            os.write_uint32(5, self.event_unique_id)?;
-        }
-        if let Some(v) = self.BDOEMGMHALJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            os.write_uint32(2, self.event_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for HGEKNLIFFED {
     }
 
     fn clear(&mut self) {
+        self.BDOEMGMHALJ.clear();
         self.LEKPKOCNJAL.clear();
         self.event_unique_id = 0;
-        self.BDOEMGMHALJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGEKNLIFFED {
         static instance: HGEKNLIFFED = HGEKNLIFFED {
+            BDOEMGMHALJ: ::protobuf::MessageField::none(),
             LEKPKOCNJAL: ::std::vec::Vec::new(),
             event_unique_id: 0,
-            BDOEMGMHALJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for HGEKNLIFFED {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGEKNLIFFED.proto\x1a\x11GBABEKPBLHN.proto\x1a\x11JBMECLKGGDK.prot\
-    o\"\x95\x01\n\x0bHGEKNLIFFED\x12.\n\x0bLEKPKOCNJAL\x18\x04\x20\x03(\x0b2\
-    \x0c.GBABEKPBLHNR\x0bLEKPKOCNJAL\x12&\n\x0fevent_unique_id\x18\x05\x20\
-    \x01(\rR\reventUniqueId\x12.\n\x0bBDOEMGMHALJ\x18\x0b\x20\x01(\x0b2\x0c.\
-    JBMECLKGGDKR\x0bBDOEMGMHALJb\x06proto3\
+    o\"\x95\x01\n\x0bHGEKNLIFFED\x12.\n\x0bBDOEMGMHALJ\x18\x01\x20\x01(\x0b2\
+    \x0c.JBMECLKGGDKR\x0bBDOEMGMHALJ\x12.\n\x0bLEKPKOCNJAL\x18\x0b\x20\x03(\
+    \x0b2\x0c.GBABEKPBLHNR\x0bLEKPKOCNJAL\x12&\n\x0fevent_unique_id\x18\x02\
+    \x20\x01(\rR\reventUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

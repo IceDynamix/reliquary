@@ -37,12 +37,8 @@ pub enum BFILLIOBMFN {
     EVENT_REFRESH = 3,
     // @@protoc_insertion_point(enum_value:BFILLIOBMFN.EVENT_BIRD_SKILL)
     EVENT_BIRD_SKILL = 4,
-    // @@protoc_insertion_point(enum_value:BFILLIOBMFN.EVENT_ENV)
-    EVENT_ENV = 5,
     // @@protoc_insertion_point(enum_value:BFILLIOBMFN.EVENT_SHUFFLE)
-    EVENT_SHUFFLE = 6,
-    // @@protoc_insertion_point(enum_value:BFILLIOBMFN.EVENT_SETTLE_TAG)
-    EVENT_SETTLE_TAG = 7,
+    EVENT_SHUFFLE = 5,
 }
 
 impl ::protobuf::Enum for BFILLIOBMFN {
@@ -59,9 +55,7 @@ impl ::protobuf::Enum for BFILLIOBMFN {
             2 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_FALL),
             3 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_REFRESH),
             4 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_BIRD_SKILL),
-            5 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_ENV),
-            6 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_SHUFFLE),
-            7 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_SETTLE_TAG),
+            5 => ::std::option::Option::Some(BFILLIOBMFN::EVENT_SHUFFLE),
             _ => ::std::option::Option::None
         }
     }
@@ -73,9 +67,7 @@ impl ::protobuf::Enum for BFILLIOBMFN {
             "EVENT_FALL" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_FALL),
             "EVENT_REFRESH" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_REFRESH),
             "EVENT_BIRD_SKILL" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_BIRD_SKILL),
-            "EVENT_ENV" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_ENV),
             "EVENT_SHUFFLE" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_SHUFFLE),
-            "EVENT_SETTLE_TAG" => ::std::option::Option::Some(BFILLIOBMFN::EVENT_SETTLE_TAG),
             _ => ::std::option::Option::None
         }
     }
@@ -86,9 +78,7 @@ impl ::protobuf::Enum for BFILLIOBMFN {
         BFILLIOBMFN::EVENT_FALL,
         BFILLIOBMFN::EVENT_REFRESH,
         BFILLIOBMFN::EVENT_BIRD_SKILL,
-        BFILLIOBMFN::EVENT_ENV,
         BFILLIOBMFN::EVENT_SHUFFLE,
-        BFILLIOBMFN::EVENT_SETTLE_TAG,
     ];
 }
 
@@ -117,11 +107,10 @@ impl BFILLIOBMFN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BFILLIOBMFN.proto*\xa0\x01\n\x0bBFILLIOBMFN\x12\x0f\n\x0bEVENT_BEG\
-    IN\x10\0\x12\x0f\n\x0bEVENT_BREAK\x10\x01\x12\x0e\n\nEVENT_FALL\x10\x02\
-    \x12\x11\n\rEVENT_REFRESH\x10\x03\x12\x14\n\x10EVENT_BIRD_SKILL\x10\x04\
-    \x12\r\n\tEVENT_ENV\x10\x05\x12\x11\n\rEVENT_SHUFFLE\x10\x06\x12\x14\n\
-    \x10EVENT_SETTLE_TAG\x10\x07b\x06proto3\
+    \n\x11BFILLIOBMFN.proto*{\n\x0bBFILLIOBMFN\x12\x0f\n\x0bEVENT_BEGIN\x10\
+    \0\x12\x0f\n\x0bEVENT_BREAK\x10\x01\x12\x0e\n\nEVENT_FALL\x10\x02\x12\
+    \x11\n\rEVENT_REFRESH\x10\x03\x12\x14\n\x10EVENT_BIRD_SKILL\x10\x04\x12\
+    \x11\n\rEVENT_SHUFFLE\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

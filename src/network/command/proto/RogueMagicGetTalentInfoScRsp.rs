@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueMagicGetTalentInfoScRsp {
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OKAKAMONPFL)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RogueMagicGetTalentInfoScRsp {
             os.write_uint32(14, self.retcode)?;
         }
         if let Some(v) = self.OKAKAMONPFL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicGetTalentInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueMagicGetTalentInfoScRsp.proto\x1a\x11IEJPPFJFJLJ.proto\"h\n\x1c\
     RogueMagicGetTalentInfoScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bOKAKAMONPFL\x18\x0c\x20\x01(\x0b2\x0c.IEJPPFJFJLJR\
+    \x07retcode\x12.\n\x0bOKAKAMONPFL\x18\t\x20\x01(\x0b2\x0c.IEJPPFJFJLJR\
     \x0bOKAKAMONPFLb\x06proto3\
 ";
 

@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierAddNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueModifierAddNotify.proto\x1a\x13RogueModifier.proto\"}\n\x16Ro\
     gueModifierAddNotify\x12c\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\x18\
-    \x06\x20\x01(\x0b2\x0e.RogueModifierR\"CHESSROGUECELLUPDATEREASONMODIFIE\
+    \x01\x20\x01(\x0b2\x0e.RogueModifierR\"CHESSROGUECELLUPDATEREASONMODIFIE\
     Rb\x06proto3\
 ";
 

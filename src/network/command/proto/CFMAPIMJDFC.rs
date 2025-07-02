@@ -72,7 +72,7 @@ impl ::protobuf::Message for CFMAPIMJDFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                90 => {
                     self.maze_buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CFMAPIMJDFC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.maze_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for CFMAPIMJDFC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFMAPIMJDFC.proto\x1a\x11MKEELPFDCLM.proto\"A\n\x0bCFMAPIMJDFC\x12\
-    2\n\x0emaze_buff_list\x18\x03\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0cmazeBuff\
+    2\n\x0emaze_buff_list\x18\x0b\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0cmazeBuff\
     Listb\x06proto3\
 ";
 

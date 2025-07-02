@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetChessRogueBuffEnhanceInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 74 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetChessRogueBuffEnhanceInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GetChessRogueBuffEnhanceInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueBuffEnhanceInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetChessRogueBuffEnhanceInfoScRsp.proto\x1a\x11NGPIMHHELMM.proto\"m\n\
-    !GetChessRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\
+    !GetChessRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\
     \rR\x07retcode\x12.\n\x0bFHLOMGDANJM\x18\t\x20\x01(\x0b2\x0c.NGPIMHHELMM\
     R\x0bFHLOMGDANJMb\x06proto3\
 ";

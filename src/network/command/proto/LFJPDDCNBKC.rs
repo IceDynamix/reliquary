@@ -30,12 +30,12 @@ pub struct LFJPDDCNBKC {
     // message fields
     // @@protoc_insertion_point(field:LFJPDDCNBKC.FJHIGBBMJDM)
     pub FJHIGBBMJDM: u32,
-    // @@protoc_insertion_point(field:LFJPDDCNBKC.area_id)
-    pub area_id: u32,
-    // @@protoc_insertion_point(field:LFJPDDCNBKC.FNMGAOHMLIM)
-    pub FNMGAOHMLIM: u32,
     // @@protoc_insertion_point(field:LFJPDDCNBKC.EPLJMCAPMPC)
     pub EPLJMCAPMPC: u32,
+    // @@protoc_insertion_point(field:LFJPDDCNBKC.FNMGAOHMLIM)
+    pub FNMGAOHMLIM: u32,
+    // @@protoc_insertion_point(field:LFJPDDCNBKC.area_id)
+    pub area_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LFJPDDCNBKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl LFJPDDCNBKC {
             |m: &mut LFJPDDCNBKC| { &mut m.FJHIGBBMJDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &LFJPDDCNBKC| { &m.area_id },
-            |m: &mut LFJPDDCNBKC| { &mut m.area_id },
+            "EPLJMCAPMPC",
+            |m: &LFJPDDCNBKC| { &m.EPLJMCAPMPC },
+            |m: &mut LFJPDDCNBKC| { &mut m.EPLJMCAPMPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FNMGAOHMLIM",
@@ -71,9 +71,9 @@ impl LFJPDDCNBKC {
             |m: &mut LFJPDDCNBKC| { &mut m.FNMGAOHMLIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPLJMCAPMPC",
-            |m: &LFJPDDCNBKC| { &m.EPLJMCAPMPC },
-            |m: &mut LFJPDDCNBKC| { &mut m.EPLJMCAPMPC },
+            "area_id",
+            |m: &LFJPDDCNBKC| { &m.area_id },
+            |m: &mut LFJPDDCNBKC| { &mut m.area_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LFJPDDCNBKC>(
             "LFJPDDCNBKC",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.FJHIGBBMJDM = is.read_uint32()?;
                 },
-                16 => {
-                    self.area_id = is.read_uint32()?;
+                112 => {
+                    self.EPLJMCAPMPC = is.read_uint32()?;
                 },
-                56 => {
+                40 => {
                     self.FNMGAOHMLIM = is.read_uint32()?;
                 },
-                104 => {
-                    self.EPLJMCAPMPC = is.read_uint32()?;
+                24 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for LFJPDDCNBKC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FJHIGBBMJDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FJHIGBBMJDM);
-        }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.area_id);
-        }
-        if self.FNMGAOHMLIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FNMGAOHMLIM);
+            my_size += ::protobuf::rt::uint32_size(1, self.FJHIGBBMJDM);
         }
         if self.EPLJMCAPMPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EPLJMCAPMPC);
+            my_size += ::protobuf::rt::uint32_size(14, self.EPLJMCAPMPC);
+        }
+        if self.FNMGAOHMLIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FNMGAOHMLIM);
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for LFJPDDCNBKC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FJHIGBBMJDM != 0 {
-            os.write_uint32(10, self.FJHIGBBMJDM)?;
-        }
-        if self.area_id != 0 {
-            os.write_uint32(2, self.area_id)?;
-        }
-        if self.FNMGAOHMLIM != 0 {
-            os.write_uint32(7, self.FNMGAOHMLIM)?;
+            os.write_uint32(1, self.FJHIGBBMJDM)?;
         }
         if self.EPLJMCAPMPC != 0 {
-            os.write_uint32(13, self.EPLJMCAPMPC)?;
+            os.write_uint32(14, self.EPLJMCAPMPC)?;
+        }
+        if self.FNMGAOHMLIM != 0 {
+            os.write_uint32(5, self.FNMGAOHMLIM)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(3, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for LFJPDDCNBKC {
 
     fn clear(&mut self) {
         self.FJHIGBBMJDM = 0;
-        self.area_id = 0;
-        self.FNMGAOHMLIM = 0;
         self.EPLJMCAPMPC = 0;
+        self.FNMGAOHMLIM = 0;
+        self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LFJPDDCNBKC {
         static instance: LFJPDDCNBKC = LFJPDDCNBKC {
             FJHIGBBMJDM: 0,
-            area_id: 0,
-            FNMGAOHMLIM: 0,
             EPLJMCAPMPC: 0,
+            FNMGAOHMLIM: 0,
+            area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LFJPDDCNBKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LFJPDDCNBKC.proto\"\x8c\x01\n\x0bLFJPDDCNBKC\x12\x20\n\x0bFJHIGBBM\
-    JDM\x18\n\x20\x01(\rR\x0bFJHIGBBMJDM\x12\x17\n\x07area_id\x18\x02\x20\
-    \x01(\rR\x06areaId\x12\x20\n\x0bFNMGAOHMLIM\x18\x07\x20\x01(\rR\x0bFNMGA\
-    OHMLIM\x12\x20\n\x0bEPLJMCAPMPC\x18\r\x20\x01(\rR\x0bEPLJMCAPMPCb\x06pro\
-    to3\
+    JDM\x18\x01\x20\x01(\rR\x0bFJHIGBBMJDM\x12\x20\n\x0bEPLJMCAPMPC\x18\x0e\
+    \x20\x01(\rR\x0bEPLJMCAPMPC\x12\x20\n\x0bFNMGAOHMLIM\x18\x05\x20\x01(\rR\
+    \x0bFNMGAOHMLIM\x12\x17\n\x07area_id\x18\x03\x20\x01(\rR\x06areaIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

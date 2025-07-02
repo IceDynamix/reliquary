@@ -45,7 +45,7 @@ impl SceneEntityRefreshInfo {
         ::std::default::Default::default()
     }
 
-    // .SceneEntityInfo add_entity = 3;
+    // .SceneEntityInfo add_entity = 6;
 
     pub fn add_entity(&self) -> &super::SceneEntityInfo::SceneEntityInfo {
         match self.EEOBCPEJEJN {
@@ -94,7 +94,7 @@ impl SceneEntityRefreshInfo {
         }
     }
 
-    // uint32 delete_entity = 9;
+    // uint32 delete_entity = 4;
 
     pub fn delete_entity(&self) -> u32 {
         match self.EEOBCPEJEJN {
@@ -119,7 +119,7 @@ impl SceneEntityRefreshInfo {
         self.EEOBCPEJEJN = ::std::option::Option::Some(scene_entity_refresh_info::EEOBCPEJEJN::DeleteEntity(v))
     }
 
-    // uint32 MHHOAAHDGAO = 5;
+    // uint32 MHHOAAHDGAO = 12;
 
     pub fn MHHOAAHDGAO(&self) -> u32 {
         match self.EEOBCPEJEJN {
@@ -185,13 +185,13 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                50 => {
                     self.EEOBCPEJEJN = ::std::option::Option::Some(scene_entity_refresh_info::EEOBCPEJEJN::AddEntity(is.read_message()?));
                 },
-                72 => {
+                32 => {
                     self.EEOBCPEJEJN = ::std::option::Option::Some(scene_entity_refresh_info::EEOBCPEJEJN::DeleteEntity(is.read_uint32()?));
                 },
-                40 => {
+                96 => {
                     self.EEOBCPEJEJN = ::std::option::Option::Some(scene_entity_refresh_info::EEOBCPEJEJN::MHHOAAHDGAO(is.read_uint32()?));
                 },
                 tag => {
@@ -213,10 +213,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &scene_entity_refresh_info::EEOBCPEJEJN::DeleteEntity(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &scene_entity_refresh_info::EEOBCPEJEJN::MHHOAAHDGAO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(5, v);
+                    my_size += ::protobuf::rt::uint32_size(12, v);
                 },
             };
         }
@@ -229,13 +229,13 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
         if let ::std::option::Option::Some(ref v) = self.EEOBCPEJEJN {
             match v {
                 &scene_entity_refresh_info::EEOBCPEJEJN::AddEntity(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &scene_entity_refresh_info::EEOBCPEJEJN::DeleteEntity(v) => {
-                    os.write_uint32(9, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &scene_entity_refresh_info::EEOBCPEJEJN::MHHOAAHDGAO(v) => {
-                    os.write_uint32(5, v)?;
+                    os.write_uint32(12, v)?;
                 },
             };
         }
@@ -322,10 +322,10 @@ pub mod scene_entity_refresh_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"\xa5\
-    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x03\x20\x01(\x0b\
-    2\x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\t\x20\x01\
-    (\rH\0R\x0cdeleteEntity\x12\"\n\x0bMHHOAAHDGAO\x18\x05\x20\x01(\rH\0R\
-    \x0bMHHOAAHDGAOB\r\n\x0bEEOBCPEJEJNb\x06proto3\
+    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x06\x20\x01(\x0b\
+    2\x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x04\x20\
+    \x01(\rH\0R\x0cdeleteEntity\x12\"\n\x0bMHHOAAHDGAO\x18\x0c\x20\x01(\rH\0\
+    R\x0bMHHOAAHDGAOB\r\n\x0bEEOBCPEJEJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

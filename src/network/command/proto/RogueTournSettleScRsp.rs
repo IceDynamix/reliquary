@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournSettleScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueTournSettleScRsp.LCOCLENJJAI)
+    pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
     // @@protoc_insertion_point(field:RogueTournSettleScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournSettleScRsp.tourn_finish_info)
     pub tourn_finish_info: ::protobuf::MessageField<super::RogueTournFinishInfo::RogueTournFinishInfo>,
-    // @@protoc_insertion_point(field:RogueTournSettleScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl RogueTournSettleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJEMJBNAJFJ::FJEMJBNAJFJ>(
+            "LCOCLENJJAI",
+            |m: &RogueTournSettleScRsp| { &m.LCOCLENJJAI },
+            |m: &mut RogueTournSettleScRsp| { &mut m.LCOCLENJJAI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournSettleScRsp| { &m.retcode },
@@ -62,11 +67,6 @@ impl RogueTournSettleScRsp {
             "tourn_finish_info",
             |m: &RogueTournSettleScRsp| { &m.tourn_finish_info },
             |m: &mut RogueTournSettleScRsp| { &mut m.tourn_finish_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJEMJBNAJFJ::FJEMJBNAJFJ>(
-            "LCOCLENJJAI",
-            |m: &RogueTournSettleScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueTournSettleScRsp| { &mut m.LCOCLENJJAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournSettleScRsp>(
             "RogueTournSettleScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.tourn_finish_info.as_ref() {
+        if let Some(v) = self.LCOCLENJJAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        if let Some(v) = self.tourn_finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueTournSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueTournSettleScRsp {
     }
 
     fn clear(&mut self) {
+        self.LCOCLENJJAI.clear();
         self.retcode = 0;
         self.tourn_finish_info.clear();
-        self.LCOCLENJJAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournSettleScRsp {
         static instance: RogueTournSettleScRsp = RogueTournSettleScRsp {
+            LCOCLENJJAI: ::protobuf::MessageField::none(),
             retcode: 0,
             tourn_finish_info: ::protobuf::MessageField::none(),
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournSettleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueTournSettleScRsp.proto\x1a\x11FJEMJBNAJFJ.proto\x1a\x1aRogueT\
-    ournFinishInfo.proto\"\xa4\x01\n\x15RogueTournSettleScRsp\x12\x18\n\x07r\
-    etcode\x18\x0b\x20\x01(\rR\x07retcode\x12A\n\x11tourn_finish_info\x18\
-    \x07\x20\x01(\x0b2\x15.RogueTournFinishInfoR\x0ftournFinishInfo\x12.\n\
-    \x0bLCOCLENJJAI\x18\x0c\x20\x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAIb\
-    \x06proto3\
+    ournFinishInfo.proto\"\xa4\x01\n\x15RogueTournSettleScRsp\x12.\n\x0bLCOC\
+    LENJJAI\x18\x01\x20\x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\x12\x18\n\
+    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12A\n\x11tourn_finish_info\
+    \x18\x05\x20\x01(\x0b2\x15.RogueTournFinishInfoR\x0ftournFinishInfob\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

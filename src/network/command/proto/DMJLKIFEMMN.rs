@@ -48,7 +48,7 @@ impl DMJLKIFEMMN {
         ::std::default::Default::default()
     }
 
-    // .KLINPBNKIIA GAIBHJHDOHB = 10;
+    // .KLINPBNKIIA GAIBHJHDOHB = 11;
 
     pub fn GAIBHJHDOHB(&self) -> &super::KLINPBNKIIA::KLINPBNKIIA {
         match self.AECFJFGKKAH {
@@ -97,7 +97,7 @@ impl DMJLKIFEMMN {
         }
     }
 
-    // .PBMKKICMLDA KPJAFBCPEGI = 11;
+    // .PBMKKICMLDA KPJAFBCPEGI = 13;
 
     pub fn KPJAFBCPEGI(&self) -> &super::PBMKKICMLDA::PBMKKICMLDA {
         match self.AECFJFGKKAH {
@@ -187,13 +187,13 @@ impl ::protobuf::Message for DMJLKIFEMMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                9960 => {
+                2672 => {
                     self.IGHLABGGIJE = is.read_uint32()?;
                 },
-                82 => {
+                90 => {
                     self.AECFJFGKKAH = ::std::option::Option::Some(dmjlkifemmn::AECFJFGKKAH::GAIBHJHDOHB(is.read_message()?));
                 },
-                90 => {
+                106 => {
                     self.AECFJFGKKAH = ::std::option::Option::Some(dmjlkifemmn::AECFJFGKKAH::KPJAFBCPEGI(is.read_message()?));
                 },
                 tag => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for DMJLKIFEMMN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IGHLABGGIJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1245, self.IGHLABGGIJE);
+            my_size += ::protobuf::rt::uint32_size(334, self.IGHLABGGIJE);
         }
         if let ::std::option::Option::Some(ref v) = self.AECFJFGKKAH {
             match v {
@@ -230,15 +230,15 @@ impl ::protobuf::Message for DMJLKIFEMMN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IGHLABGGIJE != 0 {
-            os.write_uint32(1245, self.IGHLABGGIJE)?;
+            os.write_uint32(334, self.IGHLABGGIJE)?;
         }
         if let ::std::option::Option::Some(ref v) = self.AECFJFGKKAH {
             match v {
                 &dmjlkifemmn::AECFJFGKKAH::GAIBHJHDOHB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &dmjlkifemmn::AECFJFGKKAH::KPJAFBCPEGI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -324,10 +324,10 @@ pub mod dmjlkifemmn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMJLKIFEMMN.proto\x1a\x11KLINPBNKIIA.proto\x1a\x11PBMKKICMLDA.prot\
-    o\"\xa3\x01\n\x0bDMJLKIFEMMN\x12!\n\x0bIGHLABGGIJE\x18\xdd\t\x20\x01(\rR\
-    \x0bIGHLABGGIJE\x120\n\x0bGAIBHJHDOHB\x18\n\x20\x01(\x0b2\x0c.KLINPBNKII\
-    AH\0R\x0bGAIBHJHDOHB\x120\n\x0bKPJAFBCPEGI\x18\x0b\x20\x01(\x0b2\x0c.PBM\
-    KKICMLDAH\0R\x0bKPJAFBCPEGIB\r\n\x0bAECFJFGKKAHb\x06proto3\
+    o\"\xa3\x01\n\x0bDMJLKIFEMMN\x12!\n\x0bIGHLABGGIJE\x18\xce\x02\x20\x01(\
+    \rR\x0bIGHLABGGIJE\x120\n\x0bGAIBHJHDOHB\x18\x0b\x20\x01(\x0b2\x0c.KLINP\
+    BNKIIAH\0R\x0bGAIBHJHDOHB\x120\n\x0bKPJAFBCPEGI\x18\r\x20\x01(\x0b2\x0c.\
+    PBMKKICMLDAH\0R\x0bKPJAFBCPEGIB\r\n\x0bAECFJFGKKAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

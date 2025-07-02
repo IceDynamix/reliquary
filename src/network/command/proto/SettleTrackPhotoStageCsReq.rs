@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SettleTrackPhotoStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.cost_time)
-    pub cost_time: u32,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.cost_time)
+    pub cost_time: u32,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageCsReq.LPIHANIOJFI)
     pub LPIHANIOJFI: ::std::vec::Vec<super::GEOAEOFJOGC::GEOAEOFJOGC>,
     // special fields
@@ -54,14 +54,14 @@ impl SettleTrackPhotoStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cost_time",
-            |m: &SettleTrackPhotoStageCsReq| { &m.cost_time },
-            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.cost_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
             |m: &SettleTrackPhotoStageCsReq| { &m.stage_id },
             |m: &mut SettleTrackPhotoStageCsReq| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cost_time",
+            |m: &SettleTrackPhotoStageCsReq| { &m.cost_time },
+            |m: &mut SettleTrackPhotoStageCsReq| { &mut m.cost_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LPIHANIOJFI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.stage_id = is.read_uint32()?;
+                },
                 32 => {
                     self.cost_time = is.read_uint32()?;
                 },
-                96 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                18 => {
+                98 => {
                     self.LPIHANIOJFI.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.stage_id);
+        }
         if self.cost_time != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.cost_time);
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.stage_id);
         }
         for value in &self.LPIHANIOJFI {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.stage_id != 0 {
+            os.write_uint32(13, self.stage_id)?;
+        }
         if self.cost_time != 0 {
             os.write_uint32(4, self.cost_time)?;
         }
-        if self.stage_id != 0 {
-            os.write_uint32(12, self.stage_id)?;
-        }
         for v in &self.LPIHANIOJFI {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SettleTrackPhotoStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.cost_time = 0;
         self.stage_id = 0;
+        self.cost_time = 0;
         self.LPIHANIOJFI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SettleTrackPhotoStageCsReq {
         static instance: SettleTrackPhotoStageCsReq = SettleTrackPhotoStageCsReq {
-            cost_time: 0,
             stage_id: 0,
+            cost_time: 0,
             LPIHANIOJFI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SettleTrackPhotoStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SettleTrackPhotoStageCsReq.proto\x1a\x11GEOAEOFJOGC.proto\"\x84\
-    \x01\n\x1aSettleTrackPhotoStageCsReq\x12\x1b\n\tcost_time\x18\x04\x20\
-    \x01(\rR\x08costTime\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\rR\x07stageI\
-    d\x12.\n\x0bLPIHANIOJFI\x18\x02\x20\x03(\x0b2\x0c.GEOAEOFJOGCR\x0bLPIHAN\
-    IOJFIb\x06proto3\
+    \x01\n\x1aSettleTrackPhotoStageCsReq\x12\x19\n\x08stage_id\x18\r\x20\x01\
+    (\rR\x07stageId\x12\x1b\n\tcost_time\x18\x04\x20\x01(\rR\x08costTime\x12\
+    .\n\x0bLPIHANIOJFI\x18\x0c\x20\x03(\x0b2\x0c.GEOAEOFJOGCR\x0bLPIHANIOJFI\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

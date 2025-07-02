@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CACLANLOOLK {
     // message fields
-    // @@protoc_insertion_point(field:CACLANLOOLK.EFKEGDOAJBH)
-    pub EFKEGDOAJBH: u32,
     // @@protoc_insertion_point(field:CACLANLOOLK.FBJHGPDKBGM)
     pub FBJHGPDKBGM: bool,
+    // @@protoc_insertion_point(field:CACLANLOOLK.EFKEGDOAJBH)
+    pub EFKEGDOAJBH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CACLANLOOLK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CACLANLOOLK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFKEGDOAJBH",
-            |m: &CACLANLOOLK| { &m.EFKEGDOAJBH },
-            |m: &mut CACLANLOOLK| { &mut m.EFKEGDOAJBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBJHGPDKBGM",
             |m: &CACLANLOOLK| { &m.FBJHGPDKBGM },
             |m: &mut CACLANLOOLK| { &mut m.FBJHGPDKBGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EFKEGDOAJBH",
+            |m: &CACLANLOOLK| { &m.EFKEGDOAJBH },
+            |m: &mut CACLANLOOLK| { &mut m.EFKEGDOAJBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CACLANLOOLK>(
             "CACLANLOOLK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CACLANLOOLK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.EFKEGDOAJBH = is.read_uint32()?;
-                },
                 112 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
+                },
+                16 => {
+                    self.EFKEGDOAJBH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CACLANLOOLK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EFKEGDOAJBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EFKEGDOAJBH);
-        }
         if self.FBJHGPDKBGM != false {
             my_size += 1 + 1;
+        }
+        if self.EFKEGDOAJBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EFKEGDOAJBH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CACLANLOOLK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EFKEGDOAJBH != 0 {
-            os.write_uint32(2, self.EFKEGDOAJBH)?;
-        }
         if self.FBJHGPDKBGM != false {
             os.write_bool(14, self.FBJHGPDKBGM)?;
+        }
+        if self.EFKEGDOAJBH != 0 {
+            os.write_uint32(2, self.EFKEGDOAJBH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CACLANLOOLK {
     }
 
     fn clear(&mut self) {
-        self.EFKEGDOAJBH = 0;
         self.FBJHGPDKBGM = false;
+        self.EFKEGDOAJBH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CACLANLOOLK {
         static instance: CACLANLOOLK = CACLANLOOLK {
-            EFKEGDOAJBH: 0,
             FBJHGPDKBGM: false,
+            EFKEGDOAJBH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CACLANLOOLK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CACLANLOOLK.proto\"Q\n\x0bCACLANLOOLK\x12\x20\n\x0bEFKEGDOAJBH\x18\
-    \x02\x20\x01(\rR\x0bEFKEGDOAJBH\x12\x20\n\x0bFBJHGPDKBGM\x18\x0e\x20\x01\
-    (\x08R\x0bFBJHGPDKBGMb\x06proto3\
+    \n\x11CACLANLOOLK.proto\"Q\n\x0bCACLANLOOLK\x12\x20\n\x0bFBJHGPDKBGM\x18\
+    \x0e\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bEFKEGDOAJBH\x18\x02\x20\
+    \x01(\rR\x0bEFKEGDOAJBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

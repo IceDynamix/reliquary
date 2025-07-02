@@ -30,10 +30,10 @@ pub struct CEENLALPDMK {
     // message fields
     // @@protoc_insertion_point(field:CEENLALPDMK.ACJCPHIFMLN)
     pub ACJCPHIFMLN: u32,
-    // @@protoc_insertion_point(field:CEENLALPDMK.CEADMDAMHMO)
-    pub CEADMDAMHMO: u32,
     // @@protoc_insertion_point(field:CEENLALPDMK.max_score)
     pub max_score: u32,
+    // @@protoc_insertion_point(field:CEENLALPDMK.CEADMDAMHMO)
+    pub CEADMDAMHMO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CEENLALPDMK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl CEENLALPDMK {
             |m: &mut CEENLALPDMK| { &mut m.ACJCPHIFMLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEADMDAMHMO",
-            |m: &CEENLALPDMK| { &m.CEADMDAMHMO },
-            |m: &mut CEENLALPDMK| { &mut m.CEADMDAMHMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_score",
             |m: &CEENLALPDMK| { &m.max_score },
             |m: &mut CEENLALPDMK| { &mut m.max_score },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CEADMDAMHMO",
+            |m: &CEENLALPDMK| { &m.CEADMDAMHMO },
+            |m: &mut CEENLALPDMK| { &mut m.CEADMDAMHMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEENLALPDMK>(
             "CEENLALPDMK",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CEENLALPDMK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                120 => {
                     self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 16 => {
-                    self.CEADMDAMHMO = is.read_uint32()?;
-                },
-                96 => {
                     self.max_score = is.read_uint32()?;
+                },
+                24 => {
+                    self.CEADMDAMHMO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for CEENLALPDMK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ACJCPHIFMLN);
-        }
-        if self.CEADMDAMHMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CEADMDAMHMO);
+            my_size += ::protobuf::rt::uint32_size(15, self.ACJCPHIFMLN);
         }
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(2, self.max_score);
+        }
+        if self.CEADMDAMHMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.CEADMDAMHMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CEENLALPDMK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(6, self.ACJCPHIFMLN)?;
-        }
-        if self.CEADMDAMHMO != 0 {
-            os.write_uint32(2, self.CEADMDAMHMO)?;
+            os.write_uint32(15, self.ACJCPHIFMLN)?;
         }
         if self.max_score != 0 {
-            os.write_uint32(12, self.max_score)?;
+            os.write_uint32(2, self.max_score)?;
+        }
+        if self.CEADMDAMHMO != 0 {
+            os.write_uint32(3, self.CEADMDAMHMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for CEENLALPDMK {
 
     fn clear(&mut self) {
         self.ACJCPHIFMLN = 0;
-        self.CEADMDAMHMO = 0;
         self.max_score = 0;
+        self.CEADMDAMHMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEENLALPDMK {
         static instance: CEENLALPDMK = CEENLALPDMK {
             ACJCPHIFMLN: 0,
-            CEADMDAMHMO: 0,
             max_score: 0,
+            CEADMDAMHMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for CEENLALPDMK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEENLALPDMK.proto\"n\n\x0bCEENLALPDMK\x12\x20\n\x0bACJCPHIFMLN\x18\
-    \x06\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bCEADMDAMHMO\x18\x02\x20\x01\
-    (\rR\x0bCEADMDAMHMO\x12\x1b\n\tmax_score\x18\x0c\x20\x01(\rR\x08maxScore\
+    \x0f\x20\x01(\rR\x0bACJCPHIFMLN\x12\x1b\n\tmax_score\x18\x02\x20\x01(\rR\
+    \x08maxScore\x12\x20\n\x0bCEADMDAMHMO\x18\x03\x20\x01(\rR\x0bCEADMDAMHMO\
     b\x06proto3\
 ";
 

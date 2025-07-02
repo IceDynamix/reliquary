@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBigDataAllRecommendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBigDataAllRecommendScRsp.big_data_recommend_type)
-    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
     // @@protoc_insertion_point(field:GetBigDataAllRecommendScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetBigDataAllRecommendScRsp.big_data_recommend_type)
+    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
     // message oneof groups
     pub NJNIONMBMKE: ::std::option::Option<get_big_data_all_recommend_sc_rsp::NJNIONMBMKE>,
     // special fields
@@ -50,7 +50,7 @@ impl GetBigDataAllRecommendScRsp {
         ::std::default::Default::default()
     }
 
-    // .PIIIPHEFDJO DKLBNBDPMPO = 14;
+    // .PIIIPHEFDJO DKLBNBDPMPO = 1;
 
     pub fn DKLBNBDPMPO(&self) -> &super::PIIIPHEFDJO::PIIIPHEFDJO {
         match self.NJNIONMBMKE {
@@ -99,7 +99,7 @@ impl GetBigDataAllRecommendScRsp {
         }
     }
 
-    // .MKJALMKMPGL PFOPJPJKKLK = 13;
+    // .MKJALMKMPGL PFOPJPJKKLK = 15;
 
     pub fn PFOPJPJKKLK(&self) -> &super::MKJALMKMPGL::MKJALMKMPGL {
         match self.NJNIONMBMKE {
@@ -152,14 +152,14 @@ impl GetBigDataAllRecommendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "big_data_recommend_type",
-            |m: &GetBigDataAllRecommendScRsp| { &m.big_data_recommend_type },
-            |m: &mut GetBigDataAllRecommendScRsp| { &mut m.big_data_recommend_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetBigDataAllRecommendScRsp| { &m.retcode },
             |m: &mut GetBigDataAllRecommendScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "big_data_recommend_type",
+            |m: &GetBigDataAllRecommendScRsp| { &m.big_data_recommend_type },
+            |m: &mut GetBigDataAllRecommendScRsp| { &mut m.big_data_recommend_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIIIPHEFDJO::PIIIPHEFDJO>(
             "DKLBNBDPMPO",
@@ -194,16 +194,16 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.big_data_recommend_type = is.read_enum_or_unknown()?;
-                },
-                120 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                64 => {
+                    self.big_data_recommend_type = is.read_enum_or_unknown()?;
+                },
+                10 => {
                     self.NJNIONMBMKE = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::NJNIONMBMKE::DKLBNBDPMPO(is.read_message()?));
                 },
-                106 => {
+                122 => {
                     self.NJNIONMBMKE = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::NJNIONMBMKE::PFOPJPJKKLK(is.read_message()?));
                 },
                 tag => {
@@ -218,11 +218,11 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.big_data_recommend_type.value());
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.big_data_recommend_type.value());
         }
         if let ::std::option::Option::Some(ref v) = self.NJNIONMBMKE {
             match v {
@@ -242,19 +242,19 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
         }
         if let ::std::option::Option::Some(ref v) = self.NJNIONMBMKE {
             match v {
                 &get_big_data_all_recommend_sc_rsp::NJNIONMBMKE::DKLBNBDPMPO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &get_big_data_all_recommend_sc_rsp::NJNIONMBMKE::PFOPJPJKKLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -275,8 +275,8 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     }
 
     fn clear(&mut self) {
-        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
         self.retcode = 0;
+        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
         self.NJNIONMBMKE = ::std::option::Option::None;
         self.NJNIONMBMKE = ::std::option::Option::None;
         self.special_fields.clear();
@@ -284,8 +284,8 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
 
     fn default_instance() -> &'static GetBigDataAllRecommendScRsp {
         static instance: GetBigDataAllRecommendScRsp = GetBigDataAllRecommendScRsp {
-            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
+            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
             NJNIONMBMKE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -343,11 +343,11 @@ pub mod get_big_data_all_recommend_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetBigDataAllRecommendScRsp.proto\x1a\x1aBigDataRecommendType.proto\
     \x1a\x11MKJALMKMPGL.proto\x1a\x11PIIIPHEFDJO.proto\"\xf8\x01\n\x1bGetBig\
-    DataAllRecommendScRsp\x12L\n\x17big_data_recommend_type\x18\x02\x20\x01(\
-    \x0e2\x15.BigDataRecommendTypeR\x14bigDataRecommendType\x12\x18\n\x07ret\
-    code\x18\x0f\x20\x01(\rR\x07retcode\x120\n\x0bDKLBNBDPMPO\x18\x0e\x20\
-    \x01(\x0b2\x0c.PIIIPHEFDJOH\0R\x0bDKLBNBDPMPO\x120\n\x0bPFOPJPJKKLK\x18\
-    \r\x20\x01(\x0b2\x0c.MKJALMKMPGLH\0R\x0bPFOPJPJKKLKB\r\n\x0bNJNIONMBMKEb\
+    DataAllRecommendScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    \x12L\n\x17big_data_recommend_type\x18\x08\x20\x01(\x0e2\x15.BigDataReco\
+    mmendTypeR\x14bigDataRecommendType\x120\n\x0bDKLBNBDPMPO\x18\x01\x20\x01\
+    (\x0b2\x0c.PIIIPHEFDJOH\0R\x0bDKLBNBDPMPO\x120\n\x0bPFOPJPJKKLK\x18\x0f\
+    \x20\x01(\x0b2\x0c.MKJALMKMPGLH\0R\x0bPFOPJPJKKLKB\r\n\x0bNJNIONMBMKEb\
     \x06proto3\
 ";
 

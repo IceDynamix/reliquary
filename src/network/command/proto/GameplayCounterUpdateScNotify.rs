@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GameplayCounterUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.BLOGJDCKAHM)
-    pub BLOGJDCKAHM: u32,
     // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::GameplayCounterUpdateReason::GameplayCounterUpdateReason>,
     // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.NMGLNHPANAH)
     pub NMGLNHPANAH: u32,
+    // @@protoc_insertion_point(field:GameplayCounterUpdateScNotify.BLOGJDCKAHM)
+    pub BLOGJDCKAHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GameplayCounterUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl GameplayCounterUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLOGJDCKAHM",
-            |m: &GameplayCounterUpdateScNotify| { &m.BLOGJDCKAHM },
-            |m: &mut GameplayCounterUpdateScNotify| { &mut m.BLOGJDCKAHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &GameplayCounterUpdateScNotify| { &m.reason },
             |m: &mut GameplayCounterUpdateScNotify| { &mut m.reason },
@@ -67,6 +62,11 @@ impl GameplayCounterUpdateScNotify {
             "NMGLNHPANAH",
             |m: &GameplayCounterUpdateScNotify| { &m.NMGLNHPANAH },
             |m: &mut GameplayCounterUpdateScNotify| { &mut m.NMGLNHPANAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLOGJDCKAHM",
+            |m: &GameplayCounterUpdateScNotify| { &m.BLOGJDCKAHM },
+            |m: &mut GameplayCounterUpdateScNotify| { &mut m.BLOGJDCKAHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GameplayCounterUpdateScNotify>(
             "GameplayCounterUpdateScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BLOGJDCKAHM = is.read_uint32()?;
-                },
-                40 => {
+                120 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                112 => {
                     self.NMGLNHPANAH = is.read_uint32()?;
+                },
+                96 => {
+                    self.BLOGJDCKAHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLOGJDCKAHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BLOGJDCKAHM);
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
         }
         if self.NMGLNHPANAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NMGLNHPANAH);
+            my_size += ::protobuf::rt::uint32_size(14, self.NMGLNHPANAH);
+        }
+        if self.BLOGJDCKAHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BLOGJDCKAHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLOGJDCKAHM != 0 {
-            os.write_uint32(13, self.BLOGJDCKAHM)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.NMGLNHPANAH != 0 {
-            os.write_uint32(15, self.NMGLNHPANAH)?;
+            os.write_uint32(14, self.NMGLNHPANAH)?;
+        }
+        if self.BLOGJDCKAHM != 0 {
+            os.write_uint32(12, self.BLOGJDCKAHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GameplayCounterUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.BLOGJDCKAHM = 0;
         self.reason = ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
         self.NMGLNHPANAH = 0;
+        self.BLOGJDCKAHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GameplayCounterUpdateScNotify {
         static instance: GameplayCounterUpdateScNotify = GameplayCounterUpdateScNotify {
-            BLOGJDCKAHM: 0,
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
             NMGLNHPANAH: 0,
+            BLOGJDCKAHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GameplayCounterUpdateScNotify.proto\x1a!GameplayCounterUpdateReason.p\
-    roto\"\x99\x01\n\x1dGameplayCounterUpdateScNotify\x12\x20\n\x0bBLOGJDCKA\
-    HM\x18\r\x20\x01(\rR\x0bBLOGJDCKAHM\x124\n\x06reason\x18\x05\x20\x01(\
-    \x0e2\x1c.GameplayCounterUpdateReasonR\x06reason\x12\x20\n\x0bNMGLNHPANA\
-    H\x18\x0f\x20\x01(\rR\x0bNMGLNHPANAHb\x06proto3\
+    roto\"\x99\x01\n\x1dGameplayCounterUpdateScNotify\x124\n\x06reason\x18\
+    \x0f\x20\x01(\x0e2\x1c.GameplayCounterUpdateReasonR\x06reason\x12\x20\n\
+    \x0bNMGLNHPANAH\x18\x0e\x20\x01(\rR\x0bNMGLNHPANAH\x12\x20\n\x0bBLOGJDCK\
+    AHM\x18\x0c\x20\x01(\rR\x0bBLOGJDCKAHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnInfoQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnInfoQueryScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlayerReturnInfoQueryScRsp.PFEIDPOLOKM)
     pub PFEIDPOLOKM: ::protobuf::MessageField<super::AFBNEIBIJND::AFBNEIBIJND>,
+    // @@protoc_insertion_point(field:PlayerReturnInfoQueryScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:PlayerReturnInfoQueryScRsp.GMFIDNOHGCO)
     pub GMFIDNOHGCO: u32,
     // special fields
@@ -53,15 +53,15 @@ impl PlayerReturnInfoQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlayerReturnInfoQueryScRsp| { &m.retcode },
-            |m: &mut PlayerReturnInfoQueryScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AFBNEIBIJND::AFBNEIBIJND>(
             "PFEIDPOLOKM",
             |m: &PlayerReturnInfoQueryScRsp| { &m.PFEIDPOLOKM },
             |m: &mut PlayerReturnInfoQueryScRsp| { &mut m.PFEIDPOLOKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlayerReturnInfoQueryScRsp| { &m.retcode },
+            |m: &mut PlayerReturnInfoQueryScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMFIDNOHGCO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlayerReturnInfoQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFEIDPOLOKM)?;
                 },
-                72 => {
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                96 => {
                     self.GMFIDNOHGCO = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for PlayerReturnInfoQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         if let Some(v) = self.PFEIDPOLOKM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         if self.GMFIDNOHGCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GMFIDNOHGCO);
+            my_size += ::protobuf::rt::uint32_size(12, self.GMFIDNOHGCO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PlayerReturnInfoQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
         if let Some(v) = self.PFEIDPOLOKM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         if self.GMFIDNOHGCO != 0 {
-            os.write_uint32(9, self.GMFIDNOHGCO)?;
+            os.write_uint32(12, self.GMFIDNOHGCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for PlayerReturnInfoQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.PFEIDPOLOKM.clear();
+        self.retcode = 0;
         self.GMFIDNOHGCO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnInfoQueryScRsp {
         static instance: PlayerReturnInfoQueryScRsp = PlayerReturnInfoQueryScRsp {
-            retcode: 0,
             PFEIDPOLOKM: ::protobuf::MessageField::none(),
+            retcode: 0,
             GMFIDNOHGCO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnInfoQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20PlayerReturnInfoQueryScRsp.proto\x1a\x11AFBNEIBIJND.proto\"\x88\
-    \x01\n\x1aPlayerReturnInfoQueryScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bPFEIDPOLOKM\x18\x0e\x20\x01(\x0b2\x0c.AFBNEIBIJ\
-    NDR\x0bPFEIDPOLOKM\x12\x20\n\x0bGMFIDNOHGCO\x18\t\x20\x01(\rR\x0bGMFIDNO\
-    HGCOb\x06proto3\
+    \x01\n\x1aPlayerReturnInfoQueryScRsp\x12.\n\x0bPFEIDPOLOKM\x18\x08\x20\
+    \x01(\x0b2\x0c.AFBNEIBIJNDR\x0bPFEIDPOLOKM\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bGMFIDNOHGCO\x18\x0c\x20\x01(\rR\x0b\
+    GMFIDNOHGCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

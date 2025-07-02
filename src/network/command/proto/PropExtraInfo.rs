@@ -48,7 +48,7 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .PropRogueInfo rogue_info = 5;
+    // .PropRogueInfo rogue_info = 3;
 
     pub fn rogue_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
         match self.InfoOneofCase {
@@ -97,7 +97,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .PropAeonInfo aeon_info = 11;
+    // .PropAeonInfo aeon_info = 15;
 
     pub fn aeon_info(&self) -> &super::PropAeonInfo::PropAeonInfo {
         match self.InfoOneofCase {
@@ -146,7 +146,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .PropChessRogueInfo chess_rogue_info = 6;
+    // .PropChessRogueInfo chess_rogue_info = 14;
 
     pub fn chess_rogue_info(&self) -> &super::PropChessRogueInfo::PropChessRogueInfo {
         match self.InfoOneofCase {
@@ -195,7 +195,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .RogueTournDoorInfo rogue_tourn_door_info = 7;
+    // .RogueTournDoorInfo rogue_tourn_door_info = 9;
 
     pub fn rogue_tourn_door_info(&self) -> &super::RogueTournDoorInfo::RogueTournDoorInfo {
         match self.InfoOneofCase {
@@ -244,7 +244,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .RogueTournWorkbenchInfo rogue_tourn_workbench_info = 3;
+    // .RogueTournWorkbenchInfo rogue_tourn_workbench_info = 6;
 
     pub fn rogue_tourn_workbench_info(&self) -> &super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
         match self.InfoOneofCase {
@@ -293,7 +293,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .RogueGambleMachineInfo rogue_gamble_machine_info = 10;
+    // .RogueGambleMachineInfo rogue_gamble_machine_info = 1;
 
     pub fn rogue_gamble_machine_info(&self) -> &super::RogueGambleMachineInfo::RogueGambleMachineInfo {
         match self.InfoOneofCase {
@@ -342,7 +342,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .RogueCurseChestInfo rogue_curse_chest_info = 14;
+    // .RogueCurseChestInfo rogue_curse_chest_info = 11;
 
     pub fn rogue_curse_chest_info(&self) -> &super::RogueCurseChestInfo::RogueCurseChestInfo {
         match self.InfoOneofCase {
@@ -391,7 +391,7 @@ impl PropExtraInfo {
         }
     }
 
-    // .RogueMagicDoorInfo rogue_magic_door_info = 12;
+    // .RogueMagicDoorInfo rogue_magic_door_info = 8;
 
     pub fn rogue_magic_door_info(&self) -> &super::RogueMagicDoorInfo::RogueMagicDoorInfo {
         match self.InfoOneofCase {
@@ -523,31 +523,31 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
-                42 => {
+                26 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueInfo(is.read_message()?));
                 },
-                90 => {
+                122 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::AeonInfo(is.read_message()?));
                 },
-                50 => {
+                114 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::ChessRogueInfo(is.read_message()?));
                 },
-                58 => {
+                74 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournDoorInfo(is.read_message()?));
                 },
-                26 => {
+                50 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(is.read_message()?));
                 },
-                82 => {
+                10 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(is.read_message()?));
                 },
-                114 => {
+                90 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueCurseChestInfo(is.read_message()?));
                 },
-                98 => {
+                66 => {
                     self.InfoOneofCase = ::std::option::Option::Some(prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(is.read_message()?));
                 },
                 tag => {
@@ -609,33 +609,33 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
                 &prop_extra_info::InfoOneofCase::RogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &prop_extra_info::InfoOneofCase::AeonInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &prop_extra_info::InfoOneofCase::ChessRogueInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
-                &prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                &prop_extra_info::InfoOneofCase::AeonInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref v) => {
+                &prop_extra_info::InfoOneofCase::ChessRogueInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
+                &prop_extra_info::InfoOneofCase::RogueTournDoorInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &prop_extra_info::InfoOneofCase::RogueTournWorkbenchInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                },
+                &prop_extra_info::InfoOneofCase::RogueGambleMachineInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &prop_extra_info::InfoOneofCase::RogueCurseChestInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
                 &prop_extra_info::InfoOneofCase::RogueMagicDoorInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -743,19 +743,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x19RogueCurseChestInfo.proto\x1a\x1cRogueGambleMachineInfo.proto\x1a\
     \x18RogueMagicDoorInfo.proto\x1a\x18RogueTournDoorInfo.proto\x1a\x1dRogu\
     eTournWorkbenchInfo.proto\"\x88\x05\n\rPropExtraInfo\x126\n\rtimeline_in\
-    fo\x18\t\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimelineInfo\x12/\n\nrog\
-    ue_info\x18\x05\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueInfo\x12,\n\ta\
-    eon_info\x18\x0b\x20\x01(\x0b2\r.PropAeonInfoH\0R\x08aeonInfo\x12?\n\x10\
-    chess_rogue_info\x18\x06\x20\x01(\x0b2\x13.PropChessRogueInfoH\0R\x0eche\
-    ssRogueInfo\x12H\n\x15rogue_tourn_door_info\x18\x07\x20\x01(\x0b2\x13.Ro\
-    gueTournDoorInfoH\0R\x12rogueTournDoorInfo\x12W\n\x1arogue_tourn_workben\
-    ch_info\x18\x03\x20\x01(\x0b2\x18.RogueTournWorkbenchInfoH\0R\x17rogueTo\
-    urnWorkbenchInfo\x12T\n\x19rogue_gamble_machine_info\x18\n\x20\x01(\x0b2\
-    \x17.RogueGambleMachineInfoH\0R\x16rogueGambleMachineInfo\x12K\n\x16rogu\
-    e_curse_chest_info\x18\x0e\x20\x01(\x0b2\x14.RogueCurseChestInfoH\0R\x13\
-    rogueCurseChestInfo\x12H\n\x15rogue_magic_door_info\x18\x0c\x20\x01(\x0b\
-    2\x13.RogueMagicDoorInfoH\0R\x12rogueMagicDoorInfoB\x0f\n\rInfoOneofCase\
-    b\x06proto3\
+    fo\x18\x02\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimelineInfo\x12/\n\nr\
+    ogue_info\x18\x03\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\trogueInfo\x12,\n\
+    \taeon_info\x18\x0f\x20\x01(\x0b2\r.PropAeonInfoH\0R\x08aeonInfo\x12?\n\
+    \x10chess_rogue_info\x18\x0e\x20\x01(\x0b2\x13.PropChessRogueInfoH\0R\
+    \x0echessRogueInfo\x12H\n\x15rogue_tourn_door_info\x18\t\x20\x01(\x0b2\
+    \x13.RogueTournDoorInfoH\0R\x12rogueTournDoorInfo\x12W\n\x1arogue_tourn_\
+    workbench_info\x18\x06\x20\x01(\x0b2\x18.RogueTournWorkbenchInfoH\0R\x17\
+    rogueTournWorkbenchInfo\x12T\n\x19rogue_gamble_machine_info\x18\x01\x20\
+    \x01(\x0b2\x17.RogueGambleMachineInfoH\0R\x16rogueGambleMachineInfo\x12K\
+    \n\x16rogue_curse_chest_info\x18\x0b\x20\x01(\x0b2\x14.RogueCurseChestIn\
+    foH\0R\x13rogueCurseChestInfo\x12H\n\x15rogue_magic_door_info\x18\x08\
+    \x20\x01(\x0b2\x13.RogueMagicDoorInfoH\0R\x12rogueMagicDoorInfoB\x0f\n\r\
+    InfoOneofCaseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,19 +86,19 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.KFMFFGGJMNE)?;
                 },
-                80 => {
+                96 => {
                     self.KFMFFGGJMNE.push(is.read_uint32()?);
                 },
-                74 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.IBLBNIANPHD)?;
                 },
-                72 => {
+                8 => {
                     self.IBLBNIANPHD.push(is.read_uint32()?);
                 },
-                24 => {
+                112 => {
                     self.CLIIGMNMHNA = is.read_bool()?;
                 },
                 tag => {
@@ -113,8 +113,8 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KFMFFGGJMNE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IBLBNIANPHD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.KFMFFGGJMNE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.IBLBNIANPHD);
         if self.CLIIGMNMHNA != false {
             my_size += 1 + 1;
         }
@@ -124,10 +124,10 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.KFMFFGGJMNE)?;
-        os.write_repeated_packed_uint32(9, &self.IBLBNIANPHD)?;
+        os.write_repeated_packed_uint32(12, &self.KFMFFGGJMNE)?;
+        os.write_repeated_packed_uint32(1, &self.IBLBNIANPHD)?;
         if self.CLIIGMNMHNA != false {
-            os.write_bool(3, self.CLIIGMNMHNA)?;
+            os.write_bool(14, self.CLIIGMNMHNA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineTrialAvatarChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(StoryLineTrialAvatarChangeScNotify.proto\"\x8a\x01\n\"StoryLineTrialA\
-    vatarChangeScNotify\x12\x20\n\x0bKFMFFGGJMNE\x18\n\x20\x03(\rR\x0bKFMFFG\
-    GJMNE\x12\x20\n\x0bIBLBNIANPHD\x18\t\x20\x03(\rR\x0bIBLBNIANPHD\x12\x20\
-    \n\x0bCLIIGMNMHNA\x18\x03\x20\x01(\x08R\x0bCLIIGMNMHNAb\x06proto3\
+    vatarChangeScNotify\x12\x20\n\x0bKFMFFGGJMNE\x18\x0c\x20\x03(\rR\x0bKFMF\
+    FGGJMNE\x12\x20\n\x0bIBLBNIANPHD\x18\x01\x20\x03(\rR\x0bIBLBNIANPHD\x12\
+    \x20\n\x0bCLIIGMNMHNA\x18\x0e\x20\x01(\x08R\x0bCLIIGMNMHNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

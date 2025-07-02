@@ -86,10 +86,10 @@ impl ::protobuf::Message for MusicRhythmLevel {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.GKJGCBPOJCM = is.read_bool()?;
                 },
-                96 => {
+                56 => {
                     self.ACJCPHIFMLN = is.read_uint32()?;
                 },
                 8 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for MusicRhythmLevel {
             my_size += 1 + 1;
         }
         if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ACJCPHIFMLN);
+            my_size += ::protobuf::rt::uint32_size(7, self.ACJCPHIFMLN);
         }
         if self.IMMAPHMHIJK != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.IMMAPHMHIJK);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for MusicRhythmLevel {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GKJGCBPOJCM != false {
-            os.write_bool(5, self.GKJGCBPOJCM)?;
+            os.write_bool(11, self.GKJGCBPOJCM)?;
         }
         if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(12, self.ACJCPHIFMLN)?;
+            os.write_uint32(7, self.ACJCPHIFMLN)?;
         }
         if self.IMMAPHMHIJK != 0 {
             os.write_uint32(1, self.IMMAPHMHIJK)?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmLevel {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16MusicRhythmLevel.proto\"x\n\x10MusicRhythmLevel\x12\x20\n\x0bGKJGC\
-    BPOJCM\x18\x05\x20\x01(\x08R\x0bGKJGCBPOJCM\x12\x20\n\x0bACJCPHIFMLN\x18\
-    \x0c\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bIMMAPHMHIJK\x18\x01\x20\x01\
+    BPOJCM\x18\x0b\x20\x01(\x08R\x0bGKJGCBPOJCM\x12\x20\n\x0bACJCPHIFMLN\x18\
+    \x07\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bIMMAPHMHIJK\x18\x01\x20\x01\
     (\rR\x0bIMMAPHMHIJKb\x06proto3\
 ";
 

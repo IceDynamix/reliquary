@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                96 => {
                     self.level = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.MDHJKKBNMCF = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         if self.MDHJKKBNMCF != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(12, self.level)?;
         }
         if self.MDHJKKBNMCF != false {
-            os.write_bool(12, self.MDHJKKBNMCF)?;
+            os.write_bool(11, self.MDHJKKBNMCF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityPointRewardC
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.TakeRogueEndlessActivityPointRewardCsReq.proto\"b\n(TakeRogueEndlessA\
-    ctivityPointRewardCsReq\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\
-    \x12\x20\n\x0bMDHJKKBNMCF\x18\x0c\x20\x01(\x08R\x0bMDHJKKBNMCFb\x06proto\
+    ctivityPointRewardCsReq\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05level\
+    \x12\x20\n\x0bMDHJKKBNMCF\x18\x0b\x20\x01(\x08R\x0bMDHJKKBNMCFb\x06proto\
     3\
 ";
 

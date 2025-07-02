@@ -79,10 +79,10 @@ impl ::protobuf::Message for TrainPartySettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_settle_data)?;
                 },
-                40 => {
+                16 => {
                     self.use_card_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for TrainPartySettleNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.use_card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.use_card_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.use_card_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TrainPartySettleNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.train_party_settle_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.use_card_id != 0 {
-            os.write_uint32(5, self.use_card_id)?;
+            os.write_uint32(2, self.use_card_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySettleNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartySettleNotify.proto\x1a\x1aTrainPartySettleData.proto\"\
     \x86\x01\n\x16TrainPartySettleNotify\x12L\n\x17train_party_settle_data\
-    \x18\n\x20\x01(\x0b2\x15.TrainPartySettleDataR\x14trainPartySettleData\
-    \x12\x1e\n\x0buse_card_id\x18\x05\x20\x01(\rR\tuseCardIdb\x06proto3\
+    \x18\x08\x20\x01(\x0b2\x15.TrainPartySettleDataR\x14trainPartySettleData\
+    \x12\x1e\n\x0buse_card_id\x18\x02\x20\x01(\rR\tuseCardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

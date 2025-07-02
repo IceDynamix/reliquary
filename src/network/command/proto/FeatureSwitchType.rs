@@ -159,6 +159,24 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_RELIC_SMART_DISCARD = 66,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_PLANETFES_SOCIAL)
     FEATURE_SWITCH_PLANETFES_SOCIAL = 67,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_REFORGE)
+    FEATURE_SWITCH_RELIC_REFORGE = 68,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_COMPOSE)
+    FEATURE_SWITCH_RELIC_COMPOSE = 69,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_DECOMPOSE)
+    FEATURE_SWITCH_RELIC_DECOMPOSE = 70,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ROGUE_TOURN_COCOON)
+    FEATURE_SWITCH_ROGUE_TOURN_COCOON = 71,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ITEM_COMPOSE)
+    FEATURE_SWITCH_ITEM_COMPOSE = 72,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE)
+    FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE = 73,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_SKIP_PERFORMANCE)
+    FEATURE_SWITCH_SKIP_PERFORMANCE = 74,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_FATE)
+    FEATURE_SWITCH_FATE = 75,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_FATE_AVATAR_HANDBOOK)
+    FEATURE_SWITCH_FATE_AVATAR_HANDBOOK = 76,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -236,6 +254,15 @@ impl ::protobuf::Enum for FeatureSwitchType {
             65 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME),
             66 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
             67 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
+            68 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_REFORGE),
+            69 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_COMPOSE),
+            70 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_DECOMPOSE),
+            71 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_COCOON),
+            72 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_COMPOSE),
+            73 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE),
+            74 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE),
+            75 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE),
+            76 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK),
             _ => ::std::option::Option::None
         }
     }
@@ -308,6 +335,15 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME),
             "FEATURE_SWITCH_RELIC_SMART_DISCARD" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD),
             "FEATURE_SWITCH_PLANETFES_SOCIAL" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL),
+            "FEATURE_SWITCH_RELIC_REFORGE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_REFORGE),
+            "FEATURE_SWITCH_RELIC_COMPOSE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_COMPOSE),
+            "FEATURE_SWITCH_RELIC_DECOMPOSE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_DECOMPOSE),
+            "FEATURE_SWITCH_ROGUE_TOURN_COCOON" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_COCOON),
+            "FEATURE_SWITCH_ITEM_COMPOSE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ITEM_COMPOSE),
+            "FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE),
+            "FEATURE_SWITCH_SKIP_PERFORMANCE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE),
+            "FEATURE_SWITCH_FATE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE),
+            "FEATURE_SWITCH_FATE_AVATAR_HANDBOOK" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK),
             _ => ::std::option::Option::None
         }
     }
@@ -379,6 +415,15 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME,
         FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD,
         FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL,
+        FeatureSwitchType::FEATURE_SWITCH_RELIC_REFORGE,
+        FeatureSwitchType::FEATURE_SWITCH_RELIC_COMPOSE,
+        FeatureSwitchType::FEATURE_SWITCH_RELIC_DECOMPOSE,
+        FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_COCOON,
+        FeatureSwitchType::FEATURE_SWITCH_ITEM_COMPOSE,
+        FeatureSwitchType::FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE,
+        FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE,
+        FeatureSwitchType::FEATURE_SWITCH_FATE,
+        FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK,
     ];
 }
 
@@ -456,6 +501,15 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE_RENAME => 63,
             FeatureSwitchType::FEATURE_SWITCH_RELIC_SMART_DISCARD => 64,
             FeatureSwitchType::FEATURE_SWITCH_PLANETFES_SOCIAL => 65,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_REFORGE => 66,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_COMPOSE => 67,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_DECOMPOSE => 68,
+            FeatureSwitchType::FEATURE_SWITCH_ROGUE_TOURN_COCOON => 69,
+            FeatureSwitchType::FEATURE_SWITCH_ITEM_COMPOSE => 70,
+            FeatureSwitchType::FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE => 71,
+            FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE => 72,
+            FeatureSwitchType::FEATURE_SWITCH_FATE => 73,
+            FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK => 74,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -474,7 +528,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xbf\x12\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\x86\x15\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -518,7 +572,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     /FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_SHARE_CODE\x10?\x12%\n!FEATURE_SWI\
     TCH_GACHA_AVATAR_TOAST\x10@\x12:\n6FEATURE_SWITCH_ROGUE_TOURN_BUILD_REF_\
     SHARE_CODE_RENAME\x10A\x12&\n\"FEATURE_SWITCH_RELIC_SMART_DISCARD\x10B\
-    \x12#\n\x1fFEATURE_SWITCH_PLANETFES_SOCIAL\x10Cb\x06proto3\
+    \x12#\n\x1fFEATURE_SWITCH_PLANETFES_SOCIAL\x10C\x12\x20\n\x1cFEATURE_SWI\
+    TCH_RELIC_REFORGE\x10D\x12\x20\n\x1cFEATURE_SWITCH_RELIC_COMPOSE\x10E\
+    \x12\"\n\x1eFEATURE_SWITCH_RELIC_DECOMPOSE\x10F\x12%\n!FEATURE_SWITCH_RO\
+    GUE_TOURN_COCOON\x10G\x12\x1f\n\x1bFEATURE_SWITCH_ITEM_COMPOSE\x10H\x12.\
+    \n*FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE\x10I\x12#\n\x1fFEATURE_SWI\
+    TCH_SKIP_PERFORMANCE\x10J\x12\x17\n\x13FEATURE_SWITCH_FATE\x10K\x12'\n#F\
+    EATURE_SWITCH_FATE_AVATAR_HANDBOOK\x10Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

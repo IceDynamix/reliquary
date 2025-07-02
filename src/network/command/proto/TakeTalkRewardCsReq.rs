@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLCONCNJMMP)?;
                 },
-                24 => {
+                104 => {
                     self.IEMOEOIMHMA = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IEMOEOIMHMA);
+            my_size += ::protobuf::rt::uint32_size(13, self.IEMOEOIMHMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.IEMOEOIMHMA != 0 {
-            os.write_uint32(3, self.IEMOEOIMHMA)?;
+            os.write_uint32(13, self.IEMOEOIMHMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardCsReq.proto\x1a\x0cVector.proto\"b\n\x13TakeTalkRewa\
-    rdCsReq\x12)\n\x0bOLCONCNJMMP\x18\t\x20\x01(\x0b2\x07.VectorR\x0bOLCONCN\
-    JMMP\x12\x20\n\x0bIEMOEOIMHMA\x18\x03\x20\x01(\rR\x0bIEMOEOIMHMAb\x06pro\
+    rdCsReq\x12)\n\x0bOLCONCNJMMP\x18\x07\x20\x01(\x0b2\x07.VectorR\x0bOLCON\
+    CNJMMP\x12\x20\n\x0bIEMOEOIMHMA\x18\r\x20\x01(\rR\x0bIEMOEOIMHMAb\x06pro\
     to3\
 ";
 

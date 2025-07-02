@@ -45,7 +45,7 @@ impl UpdatePsnSettingsInfoCsReq {
         ::std::default::Default::default()
     }
 
-    // .NCBIMLPODON DOOCPLCLDPD = 1512;
+    // .NCBIMLPODON DOOCPLCLDPD = 237;
 
     pub fn DOOCPLCLDPD(&self) -> &super::NCBIMLPODON::NCBIMLPODON {
         match self.CMBKKKAPAKM {
@@ -94,7 +94,7 @@ impl UpdatePsnSettingsInfoCsReq {
         }
     }
 
-    // .CJAKIBDIMMJ INHLDIDJGHA = 1533;
+    // .CJAKIBDIMMJ INHLDIDJGHA = 908;
 
     pub fn INHLDIDJGHA(&self) -> &super::CJAKIBDIMMJ::CJAKIBDIMMJ {
         match self.CMBKKKAPAKM {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                12098 => {
+                1898 => {
                     self.CMBKKKAPAKM = ::std::option::Option::Some(update_psn_settings_info_cs_req::CMBKKKAPAKM::DOOCPLCLDPD(is.read_message()?));
                 },
-                12266 => {
+                7266 => {
                     self.CMBKKKAPAKM = ::std::option::Option::Some(update_psn_settings_info_cs_req::CMBKKKAPAKM::INHLDIDJGHA(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
         if let ::std::option::Option::Some(ref v) = self.CMBKKKAPAKM {
             match v {
                 &update_psn_settings_info_cs_req::CMBKKKAPAKM::DOOCPLCLDPD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1512, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(237, v, os)?;
                 },
                 &update_psn_settings_info_cs_req::CMBKKKAPAKM::INHLDIDJGHA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1533, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(908, v, os)?;
                 },
             };
         }
@@ -306,8 +306,8 @@ pub mod update_psn_settings_info_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11CJAKIBDIMMJ.proto\x1a\x11N\
     CBIMLPODON.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bDOO\
-    CPLCLDPD\x18\xe8\x0b\x20\x01(\x0b2\x0c.NCBIMLPODONH\0R\x0bDOOCPLCLDPD\
-    \x121\n\x0bINHLDIDJGHA\x18\xfd\x0b\x20\x01(\x0b2\x0c.CJAKIBDIMMJH\0R\x0b\
+    CPLCLDPD\x18\xed\x01\x20\x01(\x0b2\x0c.NCBIMLPODONH\0R\x0bDOOCPLCLDPD\
+    \x121\n\x0bINHLDIDJGHA\x18\x8c\x07\x20\x01(\x0b2\x0c.CJAKIBDIMMJH\0R\x0b\
     INHLDIDJGHAB\r\n\x0bCMBKKKAPAKMb\x06proto3\
 ";
 

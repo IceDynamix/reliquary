@@ -30,10 +30,10 @@ pub struct SetGachaDecideItemCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.loss_decision_list)
     pub loss_decision_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.gacha_id)
-    pub gacha_id: u32,
     // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.CHDOIBFEHLP)
     pub CHDOIBFEHLP: u32,
+    // @@protoc_insertion_point(field:SetGachaDecideItemCsReq.gacha_id)
+    pub gacha_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetGachaDecideItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SetGachaDecideItemCsReq {
             |m: &mut SetGachaDecideItemCsReq| { &mut m.loss_decision_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gacha_id",
-            |m: &SetGachaDecideItemCsReq| { &m.gacha_id },
-            |m: &mut SetGachaDecideItemCsReq| { &mut m.gacha_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CHDOIBFEHLP",
             |m: &SetGachaDecideItemCsReq| { &m.CHDOIBFEHLP },
             |m: &mut SetGachaDecideItemCsReq| { &mut m.CHDOIBFEHLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gacha_id",
+            |m: &SetGachaDecideItemCsReq| { &m.gacha_id },
+            |m: &mut SetGachaDecideItemCsReq| { &mut m.gacha_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGachaDecideItemCsReq>(
             "SetGachaDecideItemCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.loss_decision_list)?;
                 },
-                32 => {
+                80 => {
                     self.loss_decision_list.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.gacha_id = is.read_uint32()?;
-                },
-                56 => {
+                40 => {
                     self.CHDOIBFEHLP = is.read_uint32()?;
+                },
+                32 => {
+                    self.gacha_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.loss_decision_list);
-        if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.gacha_id);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.loss_decision_list);
         if self.CHDOIBFEHLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CHDOIBFEHLP);
+            my_size += ::protobuf::rt::uint32_size(5, self.CHDOIBFEHLP);
+        }
+        if self.gacha_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.gacha_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.loss_decision_list)?;
-        if self.gacha_id != 0 {
-            os.write_uint32(8, self.gacha_id)?;
-        }
+        os.write_repeated_packed_uint32(10, &self.loss_decision_list)?;
         if self.CHDOIBFEHLP != 0 {
-            os.write_uint32(7, self.CHDOIBFEHLP)?;
+            os.write_uint32(5, self.CHDOIBFEHLP)?;
+        }
+        if self.gacha_id != 0 {
+            os.write_uint32(4, self.gacha_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetGachaDecideItemCsReq {
 
     fn clear(&mut self) {
         self.loss_decision_list.clear();
-        self.gacha_id = 0;
         self.CHDOIBFEHLP = 0;
+        self.gacha_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGachaDecideItemCsReq {
         static instance: SetGachaDecideItemCsReq = SetGachaDecideItemCsReq {
             loss_decision_list: ::std::vec::Vec::new(),
-            gacha_id: 0,
             CHDOIBFEHLP: 0,
+            gacha_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGachaDecideItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetGachaDecideItemCsReq.proto\"\x84\x01\n\x17SetGachaDecideItemCsR\
-    eq\x12,\n\x12loss_decision_list\x18\x04\x20\x03(\rR\x10lossDecisionList\
-    \x12\x19\n\x08gacha_id\x18\x08\x20\x01(\rR\x07gachaId\x12\x20\n\x0bCHDOI\
-    BFEHLP\x18\x07\x20\x01(\rR\x0bCHDOIBFEHLPb\x06proto3\
+    eq\x12,\n\x12loss_decision_list\x18\n\x20\x03(\rR\x10lossDecisionList\
+    \x12\x20\n\x0bCHDOIBFEHLP\x18\x05\x20\x01(\rR\x0bCHDOIBFEHLP\x12\x19\n\
+    \x08gacha_id\x18\x04\x20\x01(\rR\x07gachaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

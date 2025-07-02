@@ -30,12 +30,12 @@ pub struct AEKNFLOMLJH {
     // message fields
     // @@protoc_insertion_point(field:AEKNFLOMLJH.CKGFONMAEKO)
     pub CKGFONMAEKO: ::std::vec::Vec<super::GIADLHEEPHD::GIADLHEEPHD>,
-    // @@protoc_insertion_point(field:AEKNFLOMLJH.buff_list)
-    pub buff_list: ::std::vec::Vec<super::FCPMBJHFBNJ::FCPMBJHFBNJ>,
-    // @@protoc_insertion_point(field:AEKNFLOMLJH.BJCMPHLPKNF)
-    pub BJCMPHLPKNF: ::std::vec::Vec<super::LOGNKEKHBAI::LOGNKEKHBAI>,
     // @@protoc_insertion_point(field:AEKNFLOMLJH.BELOFMFHFDK)
     pub BELOFMFHFDK: ::std::vec::Vec<super::KNIJHGNJIJM::KNIJHGNJIJM>,
+    // @@protoc_insertion_point(field:AEKNFLOMLJH.BJCMPHLPKNF)
+    pub BJCMPHLPKNF: ::std::vec::Vec<super::LOGNKEKHBAI::LOGNKEKHBAI>,
+    // @@protoc_insertion_point(field:AEKNFLOMLJH.buff_list)
+    pub buff_list: ::std::vec::Vec<super::FCPMBJHFBNJ::FCPMBJHFBNJ>,
     // special fields
     // @@protoc_insertion_point(special_field:AEKNFLOMLJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl AEKNFLOMLJH {
             |m: &mut AEKNFLOMLJH| { &mut m.CKGFONMAEKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &AEKNFLOMLJH| { &m.buff_list },
-            |m: &mut AEKNFLOMLJH| { &mut m.buff_list },
+            "BELOFMFHFDK",
+            |m: &AEKNFLOMLJH| { &m.BELOFMFHFDK },
+            |m: &mut AEKNFLOMLJH| { &mut m.BELOFMFHFDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BJCMPHLPKNF",
@@ -71,9 +71,9 @@ impl AEKNFLOMLJH {
             |m: &mut AEKNFLOMLJH| { &mut m.BJCMPHLPKNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BELOFMFHFDK",
-            |m: &AEKNFLOMLJH| { &m.BELOFMFHFDK },
-            |m: &mut AEKNFLOMLJH| { &mut m.BELOFMFHFDK },
+            "buff_list",
+            |m: &AEKNFLOMLJH| { &m.buff_list },
+            |m: &mut AEKNFLOMLJH| { &mut m.buff_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AEKNFLOMLJH>(
             "AEKNFLOMLJH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AEKNFLOMLJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                122 => {
                     self.CKGFONMAEKO.push(is.read_message()?);
                 },
-                66 => {
-                    self.buff_list.push(is.read_message()?);
+                50 => {
+                    self.BELOFMFHFDK.push(is.read_message()?);
                 },
-                18 => {
+                10 => {
                     self.BJCMPHLPKNF.push(is.read_message()?);
                 },
-                58 => {
-                    self.BELOFMFHFDK.push(is.read_message()?);
+                98 => {
+                    self.buff_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,7 +121,7 @@ impl ::protobuf::Message for AEKNFLOMLJH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.buff_list {
+        for value in &self.BELOFMFHFDK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -129,7 +129,7 @@ impl ::protobuf::Message for AEKNFLOMLJH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.BELOFMFHFDK {
+        for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -140,16 +140,16 @@ impl ::protobuf::Message for AEKNFLOMLJH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.CKGFONMAEKO {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.BJCMPHLPKNF {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.BELOFMFHFDK {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.BJCMPHLPKNF {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +169,18 @@ impl ::protobuf::Message for AEKNFLOMLJH {
 
     fn clear(&mut self) {
         self.CKGFONMAEKO.clear();
-        self.buff_list.clear();
-        self.BJCMPHLPKNF.clear();
         self.BELOFMFHFDK.clear();
+        self.BJCMPHLPKNF.clear();
+        self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AEKNFLOMLJH {
         static instance: AEKNFLOMLJH = AEKNFLOMLJH {
             CKGFONMAEKO: ::std::vec::Vec::new(),
-            buff_list: ::std::vec::Vec::new(),
-            BJCMPHLPKNF: ::std::vec::Vec::new(),
             BELOFMFHFDK: ::std::vec::Vec::new(),
+            BJCMPHLPKNF: ::std::vec::Vec::new(),
+            buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -207,11 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for AEKNFLOMLJH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AEKNFLOMLJH.proto\x1a\x11FCPMBJHFBNJ.proto\x1a\x11GIADLHEEPHD.prot\
     o\x1a\x11KNIJHGNJIJM.proto\x1a\x11LOGNKEKHBAI.proto\"\xc8\x01\n\x0bAEKNF\
-    LOMLJH\x12.\n\x0bCKGFONMAEKO\x18\x06\x20\x03(\x0b2\x0c.GIADLHEEPHDR\x0bC\
-    KGFONMAEKO\x12)\n\tbuff_list\x18\x08\x20\x03(\x0b2\x0c.FCPMBJHFBNJR\x08b\
-    uffList\x12.\n\x0bBJCMPHLPKNF\x18\x02\x20\x03(\x0b2\x0c.LOGNKEKHBAIR\x0b\
-    BJCMPHLPKNF\x12.\n\x0bBELOFMFHFDK\x18\x07\x20\x03(\x0b2\x0c.KNIJHGNJIJMR\
-    \x0bBELOFMFHFDKb\x06proto3\
+    LOMLJH\x12.\n\x0bCKGFONMAEKO\x18\x0f\x20\x03(\x0b2\x0c.GIADLHEEPHDR\x0bC\
+    KGFONMAEKO\x12.\n\x0bBELOFMFHFDK\x18\x06\x20\x03(\x0b2\x0c.KNIJHGNJIJMR\
+    \x0bBELOFMFHFDK\x12.\n\x0bBJCMPHLPKNF\x18\x01\x20\x03(\x0b2\x0c.LOGNKEKH\
+    BAIR\x0bBJCMPHLPKNF\x12)\n\tbuff_list\x18\x0c\x20\x03(\x0b2\x0c.FCPMBJHF\
+    BNJR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

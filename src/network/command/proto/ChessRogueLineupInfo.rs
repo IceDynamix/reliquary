@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueLineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.chess_avatar_list.push(is.read_message()?);
                 },
-                50 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ChessRogueLineupInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.chess_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if let Some(v) = self.revive_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLineupInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueLineupInfo.proto\x1a\x20ChessRogueLineupAvatarInfo.proto\
     \x1a\x1bRogueAvatarReviveCost.proto\"\x98\x01\n\x14ChessRogueLineupInfo\
-    \x12G\n\x11chess_avatar_list\x18\x02\x20\x03(\x0b2\x1b.ChessRogueLineupA\
-    vatarInfoR\x0fchessAvatarList\x127\n\x0brevive_info\x18\x06\x20\x01(\x0b\
+    \x12G\n\x11chess_avatar_list\x18\x01\x20\x03(\x0b2\x1b.ChessRogueLineupA\
+    vatarInfoR\x0fchessAvatarList\x127\n\x0brevive_info\x18\x0c\x20\x01(\x0b\
     2\x16.RogueAvatarReviveCostR\nreviveInfob\x06proto3\
 ";
 

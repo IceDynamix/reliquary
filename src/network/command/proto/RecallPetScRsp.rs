@@ -30,10 +30,10 @@ pub struct RecallPetScRsp {
     // message fields
     // @@protoc_insertion_point(field:RecallPetScRsp.cur_pet_id)
     pub cur_pet_id: u32,
-    // @@protoc_insertion_point(field:RecallPetScRsp.select_pet_id)
-    pub select_pet_id: u32,
     // @@protoc_insertion_point(field:RecallPetScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RecallPetScRsp.select_pet_id)
+    pub select_pet_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RecallPetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl RecallPetScRsp {
             |m: &mut RecallPetScRsp| { &mut m.cur_pet_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_pet_id",
-            |m: &RecallPetScRsp| { &m.select_pet_id },
-            |m: &mut RecallPetScRsp| { &mut m.select_pet_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RecallPetScRsp| { &m.retcode },
             |m: &mut RecallPetScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "select_pet_id",
+            |m: &RecallPetScRsp| { &m.select_pet_id },
+            |m: &mut RecallPetScRsp| { &mut m.select_pet_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RecallPetScRsp>(
             "RecallPetScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RecallPetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.cur_pet_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.select_pet_id = is.read_uint32()?;
-                },
-                112 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                96 => {
+                    self.select_pet_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RecallPetScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cur_pet_id);
-        }
-        if self.select_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.select_pet_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.cur_pet_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.select_pet_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.select_pet_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RecallPetScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_pet_id != 0 {
-            os.write_uint32(4, self.cur_pet_id)?;
-        }
-        if self.select_pet_id != 0 {
-            os.write_uint32(7, self.select_pet_id)?;
+            os.write_uint32(8, self.cur_pet_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.select_pet_id != 0 {
+            os.write_uint32(12, self.select_pet_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RecallPetScRsp {
 
     fn clear(&mut self) {
         self.cur_pet_id = 0;
-        self.select_pet_id = 0;
         self.retcode = 0;
+        self.select_pet_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RecallPetScRsp {
         static instance: RecallPetScRsp = RecallPetScRsp {
             cur_pet_id: 0,
-            select_pet_id: 0,
             retcode: 0,
+            select_pet_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for RecallPetScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RecallPetScRsp.proto\"l\n\x0eRecallPetScRsp\x12\x1c\n\ncur_pet_id\
-    \x18\x04\x20\x01(\rR\x08curPetId\x12\"\n\rselect_pet_id\x18\x07\x20\x01(\
-    \rR\x0bselectPetId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
+    \x18\x08\x20\x01(\rR\x08curPetId\x12\x18\n\x07retcode\x18\x02\x20\x01(\r\
+    R\x07retcode\x12\"\n\rselect_pet_id\x18\x0c\x20\x01(\rR\x0bselectPetIdb\
     \x06proto3\
 ";
 

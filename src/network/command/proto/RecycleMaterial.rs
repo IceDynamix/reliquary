@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RecycleMaterial {
     // message fields
-    // @@protoc_insertion_point(field:RecycleMaterial.num)
-    pub num: u32,
     // @@protoc_insertion_point(field:RecycleMaterial.expire_time)
     pub expire_time: u64,
     // @@protoc_insertion_point(field:RecycleMaterial.tid)
     pub tid: u32,
+    // @@protoc_insertion_point(field:RecycleMaterial.num)
+    pub num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RecycleMaterial.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl RecycleMaterial {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num",
-            |m: &RecycleMaterial| { &m.num },
-            |m: &mut RecycleMaterial| { &mut m.num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "expire_time",
             |m: &RecycleMaterial| { &m.expire_time },
             |m: &mut RecycleMaterial| { &mut m.expire_time },
@@ -67,6 +62,11 @@ impl RecycleMaterial {
             "tid",
             |m: &RecycleMaterial| { &m.tid },
             |m: &mut RecycleMaterial| { &mut m.tid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "num",
+            |m: &RecycleMaterial| { &m.num },
+            |m: &mut RecycleMaterial| { &mut m.num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RecycleMaterial>(
             "RecycleMaterial",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RecycleMaterial {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.num = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.expire_time = is.read_uint64()?;
                 },
-                56 => {
+                120 => {
                     self.tid = is.read_uint32()?;
+                },
+                24 => {
+                    self.num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RecycleMaterial {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.num);
-        }
         if self.expire_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.expire_time);
+            my_size += ::protobuf::rt::uint64_size(1, self.expire_time);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.tid);
+            my_size += ::protobuf::rt::uint32_size(15, self.tid);
+        }
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RecycleMaterial {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num != 0 {
-            os.write_uint32(15, self.num)?;
-        }
         if self.expire_time != 0 {
-            os.write_uint64(5, self.expire_time)?;
+            os.write_uint64(1, self.expire_time)?;
         }
         if self.tid != 0 {
-            os.write_uint32(7, self.tid)?;
+            os.write_uint32(15, self.tid)?;
+        }
+        if self.num != 0 {
+            os.write_uint32(3, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RecycleMaterial {
     }
 
     fn clear(&mut self) {
-        self.num = 0;
         self.expire_time = 0;
         self.tid = 0;
+        self.num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RecycleMaterial {
         static instance: RecycleMaterial = RecycleMaterial {
-            num: 0,
             expire_time: 0,
             tid: 0,
+            num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RecycleMaterial {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RecycleMaterial.proto\"V\n\x0fRecycleMaterial\x12\x10\n\x03num\x18\
-    \x0f\x20\x01(\rR\x03num\x12\x1f\n\x0bexpire_time\x18\x05\x20\x01(\x04R\n\
-    expireTime\x12\x10\n\x03tid\x18\x07\x20\x01(\rR\x03tidb\x06proto3\
+    \n\x15RecycleMaterial.proto\"V\n\x0fRecycleMaterial\x12\x1f\n\x0bexpire_\
+    time\x18\x01\x20\x01(\x04R\nexpireTime\x12\x10\n\x03tid\x18\x0f\x20\x01(\
+    \rR\x03tid\x12\x10\n\x03num\x18\x03\x20\x01(\rR\x03numb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

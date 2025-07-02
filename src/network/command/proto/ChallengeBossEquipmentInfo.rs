@@ -32,12 +32,12 @@ pub struct ChallengeBossEquipmentInfo {
     pub level: u32,
     // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.tid)
-    pub tid: u32,
     // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.promotion)
     pub promotion: u32,
+    // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.tid)
+    pub tid: u32,
+    // @@protoc_insertion_point(field:ChallengeBossEquipmentInfo.rank)
+    pub rank: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBossEquipmentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,9 +68,9 @@ impl ChallengeBossEquipmentInfo {
             |m: &mut ChallengeBossEquipmentInfo| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &ChallengeBossEquipmentInfo| { &m.rank },
-            |m: &mut ChallengeBossEquipmentInfo| { &mut m.rank },
+            "promotion",
+            |m: &ChallengeBossEquipmentInfo| { &m.promotion },
+            |m: &mut ChallengeBossEquipmentInfo| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
@@ -78,9 +78,9 @@ impl ChallengeBossEquipmentInfo {
             |m: &mut ChallengeBossEquipmentInfo| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &ChallengeBossEquipmentInfo| { &m.promotion },
-            |m: &mut ChallengeBossEquipmentInfo| { &mut m.promotion },
+            "rank",
+            |m: &ChallengeBossEquipmentInfo| { &m.rank },
+            |m: &mut ChallengeBossEquipmentInfo| { &mut m.rank },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBossEquipmentInfo>(
             "ChallengeBossEquipmentInfo",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for ChallengeBossEquipmentInfo {
                 56 => {
                     self.level = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.rank = is.read_uint32()?;
+                72 => {
+                    self.promotion = is.read_uint32()?;
                 },
-                48 => {
+                40 => {
                     self.tid = is.read_uint32()?;
                 },
-                96 => {
-                    self.promotion = is.read_uint32()?;
+                88 => {
+                    self.rank = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,16 +131,16 @@ impl ::protobuf::Message for ChallengeBossEquipmentInfo {
             my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.rank);
-        }
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.tid);
+            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(9, self.promotion);
+        }
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.tid);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,16 +152,16 @@ impl ::protobuf::Message for ChallengeBossEquipmentInfo {
             os.write_uint32(7, self.level)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(2, self.unique_id)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(10, self.rank)?;
-        }
-        if self.tid != 0 {
-            os.write_uint32(6, self.tid)?;
+            os.write_uint32(12, self.unique_id)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(12, self.promotion)?;
+            os.write_uint32(9, self.promotion)?;
+        }
+        if self.tid != 0 {
+            os.write_uint32(5, self.tid)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(11, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::Message for ChallengeBossEquipmentInfo {
     fn clear(&mut self) {
         self.level = 0;
         self.unique_id = 0;
-        self.rank = 0;
-        self.tid = 0;
         self.promotion = 0;
+        self.tid = 0;
+        self.rank = 0;
         self.special_fields.clear();
     }
 
@@ -192,9 +192,9 @@ impl ::protobuf::Message for ChallengeBossEquipmentInfo {
         static instance: ChallengeBossEquipmentInfo = ChallengeBossEquipmentInfo {
             level: 0,
             unique_id: 0,
-            rank: 0,
-            tid: 0,
             promotion: 0,
+            tid: 0,
+            rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,9 +221,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossEquipmentInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChallengeBossEquipmentInfo.proto\"\x93\x01\n\x1aChallengeBossEquip\
     mentInfo\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12\x1b\n\tuniq\
-    ue_id\x18\x02\x20\x01(\rR\x08uniqueId\x12\x12\n\x04rank\x18\n\x20\x01(\r\
-    R\x04rank\x12\x10\n\x03tid\x18\x06\x20\x01(\rR\x03tid\x12\x1c\n\tpromoti\
-    on\x18\x0c\x20\x01(\rR\tpromotionb\x06proto3\
+    ue_id\x18\x0c\x20\x01(\rR\x08uniqueId\x12\x1c\n\tpromotion\x18\t\x20\x01\
+    (\rR\tpromotion\x12\x10\n\x03tid\x18\x05\x20\x01(\rR\x03tid\x12\x12\n\
+    \x04rank\x18\x0b\x20\x01(\rR\x04rankb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

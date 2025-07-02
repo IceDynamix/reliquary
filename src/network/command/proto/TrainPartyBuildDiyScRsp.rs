@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildDiyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.FFLPKLLDHLM)
-    pub FFLPKLLDHLM: ::std::vec::Vec<super::CIKOHJNAGON::CIKOHJNAGON>,
     // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.GANHKLNPAPI)
     pub GANHKLNPAPI: bool,
-    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.build_slot_list)
-    pub build_slot_list: ::std::vec::Vec<super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>,
     // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.build_slot_list)
+    pub build_slot_list: ::std::vec::Vec<super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>,
+    // @@protoc_insertion_point(field:TrainPartyBuildDiyScRsp.FFLPKLLDHLM)
+    pub FFLPKLLDHLM: ::std::vec::Vec<super::CIKOHJNAGON::CIKOHJNAGON>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildDiyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,11 +57,6 @@ impl TrainPartyBuildDiyScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFLPKLLDHLM",
-            |m: &TrainPartyBuildDiyScRsp| { &m.FFLPKLLDHLM },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.FFLPKLLDHLM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrainPartyBuildDiyScRsp| { &m.retcode },
@@ -72,15 +67,20 @@ impl TrainPartyBuildDiyScRsp {
             |m: &TrainPartyBuildDiyScRsp| { &m.GANHKLNPAPI },
             |m: &mut TrainPartyBuildDiyScRsp| { &mut m.GANHKLNPAPI },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &TrainPartyBuildDiyScRsp| { &m.area_id },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.area_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "build_slot_list",
             |m: &TrainPartyBuildDiyScRsp| { &m.build_slot_list },
             |m: &mut TrainPartyBuildDiyScRsp| { &mut m.build_slot_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &TrainPartyBuildDiyScRsp| { &m.area_id },
-            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.area_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FFLPKLLDHLM",
+            |m: &TrainPartyBuildDiyScRsp| { &m.FFLPKLLDHLM },
+            |m: &mut TrainPartyBuildDiyScRsp| { &mut m.FFLPKLLDHLM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildDiyScRsp>(
             "TrainPartyBuildDiyScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.FFLPKLLDHLM.push(is.read_message()?);
-                },
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.GANHKLNPAPI = is.read_bool()?;
                 },
-                82 => {
+                48 => {
+                    self.area_id = is.read_uint32()?;
+                },
+                66 => {
                     self.build_slot_list.push(is.read_message()?);
                 },
-                88 => {
-                    self.area_id = is.read_uint32()?;
+                18 => {
+                    self.FFLPKLLDHLM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,44 +127,44 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FFLPKLLDHLM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.GANHKLNPAPI != false {
             my_size += 1 + 1;
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         for value in &self.build_slot_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.area_id);
-        }
+        for value in &self.FFLPKLLDHLM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FFLPKLLDHLM {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.GANHKLNPAPI != false {
-            os.write_bool(5, self.GANHKLNPAPI)?;
+            os.write_bool(13, self.GANHKLNPAPI)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(6, self.area_id)?;
         }
         for v in &self.build_slot_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.area_id != 0 {
-            os.write_uint32(11, self.area_id)?;
-        }
+        for v in &self.FFLPKLLDHLM {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for TrainPartyBuildDiyScRsp {
     }
 
     fn clear(&mut self) {
-        self.FFLPKLLDHLM.clear();
         self.retcode = 0;
         self.GANHKLNPAPI = false;
-        self.build_slot_list.clear();
         self.area_id = 0;
+        self.build_slot_list.clear();
+        self.FFLPKLLDHLM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildDiyScRsp {
         static instance: TrainPartyBuildDiyScRsp = TrainPartyBuildDiyScRsp {
-            FFLPKLLDHLM: ::std::vec::Vec::new(),
             retcode: 0,
             GANHKLNPAPI: false,
-            build_slot_list: ::std::vec::Vec::new(),
             area_id: 0,
+            build_slot_list: ::std::vec::Vec::new(),
+            FFLPKLLDHLM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildDiyScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyBuildDiyScRsp.proto\x1a\x11CIKOHJNAGON.proto\x1a\x1dTrai\
-    nPartyBuildSlotInfo.proto\"\xe0\x01\n\x17TrainPartyBuildDiyScRsp\x12.\n\
-    \x0bFFLPKLLDHLM\x18\t\x20\x03(\x0b2\x0c.CIKOHJNAGONR\x0bFFLPKLLDHLM\x12\
-    \x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bGANHKLNPAP\
-    I\x18\x05\x20\x01(\x08R\x0bGANHKLNPAPI\x12@\n\x0fbuild_slot_list\x18\n\
-    \x20\x03(\x0b2\x18.TrainPartyBuildSlotInfoR\rbuildSlotList\x12\x17\n\x07\
-    area_id\x18\x0b\x20\x01(\rR\x06areaIdb\x06proto3\
+    nPartyBuildSlotInfo.proto\"\xe0\x01\n\x17TrainPartyBuildDiyScRsp\x12\x18\
+    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bGANHKLNPAPI\
+    \x18\r\x20\x01(\x08R\x0bGANHKLNPAPI\x12\x17\n\x07area_id\x18\x06\x20\x01\
+    (\rR\x06areaId\x12@\n\x0fbuild_slot_list\x18\x08\x20\x03(\x0b2\x18.Train\
+    PartyBuildSlotInfoR\rbuildSlotList\x12.\n\x0bFFLPKLLDHLM\x18\x02\x20\x03\
+    (\x0b2\x0c.CIKOHJNAGONR\x0bFFLPKLLDHLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyGoodsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyGoodsCsReq.interacted_prop_entity_id)
-    pub interacted_prop_entity_id: u32,
-    // @@protoc_insertion_point(field:BuyGoodsCsReq.FMPNHEAIMDN)
-    pub FMPNHEAIMDN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_num)
+    pub goods_num: u32,
     // @@protoc_insertion_point(field:BuyGoodsCsReq.item_id)
     pub item_id: u32,
     // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_id)
     pub goods_id: u32,
+    // @@protoc_insertion_point(field:BuyGoodsCsReq.FMPNHEAIMDN)
+    pub FMPNHEAIMDN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BuyGoodsCsReq.interacted_prop_entity_id)
+    pub interacted_prop_entity_id: u32,
     // @@protoc_insertion_point(field:BuyGoodsCsReq.shop_id)
     pub shop_id: u32,
-    // @@protoc_insertion_point(field:BuyGoodsCsReq.goods_num)
-    pub goods_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyGoodsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,9 @@ impl BuyGoodsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interacted_prop_entity_id",
-            |m: &BuyGoodsCsReq| { &m.interacted_prop_entity_id },
-            |m: &mut BuyGoodsCsReq| { &mut m.interacted_prop_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMPNHEAIMDN",
-            |m: &BuyGoodsCsReq| { &m.FMPNHEAIMDN },
-            |m: &mut BuyGoodsCsReq| { &mut m.FMPNHEAIMDN },
+            "goods_num",
+            |m: &BuyGoodsCsReq| { &m.goods_num },
+            |m: &mut BuyGoodsCsReq| { &mut m.goods_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -79,15 +74,20 @@ impl BuyGoodsCsReq {
             |m: &BuyGoodsCsReq| { &m.goods_id },
             |m: &mut BuyGoodsCsReq| { &mut m.goods_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FMPNHEAIMDN",
+            |m: &BuyGoodsCsReq| { &m.FMPNHEAIMDN },
+            |m: &mut BuyGoodsCsReq| { &mut m.FMPNHEAIMDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interacted_prop_entity_id",
+            |m: &BuyGoodsCsReq| { &m.interacted_prop_entity_id },
+            |m: &mut BuyGoodsCsReq| { &mut m.interacted_prop_entity_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "shop_id",
             |m: &BuyGoodsCsReq| { &m.shop_id },
             |m: &mut BuyGoodsCsReq| { &mut m.shop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "goods_num",
-            |m: &BuyGoodsCsReq| { &m.goods_num },
-            |m: &mut BuyGoodsCsReq| { &mut m.goods_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyGoodsCsReq>(
             "BuyGoodsCsReq",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.interacted_prop_entity_id = is.read_uint32()?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FMPNHEAIMDN)?;
-                },
-                120 => {
-                    self.FMPNHEAIMDN.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.item_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.goods_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.shop_id = is.read_uint32()?;
-                },
                 8 => {
                     self.goods_num = is.read_uint32()?;
+                },
+                24 => {
+                    self.item_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.goods_id = is.read_uint32()?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FMPNHEAIMDN)?;
+                },
+                64 => {
+                    self.FMPNHEAIMDN.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.interacted_prop_entity_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.shop_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.interacted_prop_entity_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.FMPNHEAIMDN);
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
-        }
-        if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.goods_id);
-        }
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.shop_id);
-        }
         if self.goods_num != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.goods_num);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.item_id);
+        }
+        if self.goods_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.goods_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FMPNHEAIMDN);
+        if self.interacted_prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.interacted_prop_entity_id);
+        }
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(6, self.interacted_prop_entity_id)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.FMPNHEAIMDN)?;
-        if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
-        }
-        if self.goods_id != 0 {
-            os.write_uint32(7, self.goods_id)?;
-        }
-        if self.shop_id != 0 {
-            os.write_uint32(9, self.shop_id)?;
-        }
         if self.goods_num != 0 {
             os.write_uint32(1, self.goods_num)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(3, self.item_id)?;
+        }
+        if self.goods_id != 0 {
+            os.write_uint32(4, self.goods_id)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.FMPNHEAIMDN)?;
+        if self.interacted_prop_entity_id != 0 {
+            os.write_uint32(12, self.interacted_prop_entity_id)?;
+        }
+        if self.shop_id != 0 {
+            os.write_uint32(5, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for BuyGoodsCsReq {
     }
 
     fn clear(&mut self) {
-        self.interacted_prop_entity_id = 0;
-        self.FMPNHEAIMDN.clear();
+        self.goods_num = 0;
         self.item_id = 0;
         self.goods_id = 0;
+        self.FMPNHEAIMDN.clear();
+        self.interacted_prop_entity_id = 0;
         self.shop_id = 0;
-        self.goods_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyGoodsCsReq {
         static instance: BuyGoodsCsReq = BuyGoodsCsReq {
-            interacted_prop_entity_id: 0,
-            FMPNHEAIMDN: ::std::vec::Vec::new(),
+            goods_num: 0,
             item_id: 0,
             goods_id: 0,
+            FMPNHEAIMDN: ::std::vec::Vec::new(),
+            interacted_prop_entity_id: 0,
             shop_id: 0,
-            goods_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for BuyGoodsCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13BuyGoodsCsReq.proto\"\xd6\x01\n\rBuyGoodsCsReq\x129\n\x19interacte\
-    d_prop_entity_id\x18\x06\x20\x01(\rR\x16interactedPropEntityId\x12\x20\n\
-    \x0bFMPNHEAIMDN\x18\x0f\x20\x03(\rR\x0bFMPNHEAIMDN\x12\x17\n\x07item_id\
-    \x18\n\x20\x01(\rR\x06itemId\x12\x19\n\x08goods_id\x18\x07\x20\x01(\rR\
-    \x07goodsId\x12\x17\n\x07shop_id\x18\t\x20\x01(\rR\x06shopId\x12\x1b\n\t\
-    goods_num\x18\x01\x20\x01(\rR\x08goodsNumb\x06proto3\
+    \n\x13BuyGoodsCsReq.proto\"\xd6\x01\n\rBuyGoodsCsReq\x12\x1b\n\tgoods_nu\
+    m\x18\x01\x20\x01(\rR\x08goodsNum\x12\x17\n\x07item_id\x18\x03\x20\x01(\
+    \rR\x06itemId\x12\x19\n\x08goods_id\x18\x04\x20\x01(\rR\x07goodsId\x12\
+    \x20\n\x0bFMPNHEAIMDN\x18\x08\x20\x03(\rR\x0bFMPNHEAIMDN\x129\n\x19inter\
+    acted_prop_entity_id\x18\x0c\x20\x01(\rR\x16interactedPropEntityId\x12\
+    \x17\n\x07shop_id\x18\x05\x20\x01(\rR\x06shopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RewardSwitchItem {
     // message fields
-    // @@protoc_insertion_point(field:RewardSwitchItem.EINFBGKENDH)
-    pub EINFBGKENDH: bool,
     // @@protoc_insertion_point(field:RewardSwitchItem.daily_index)
     pub daily_index: u32,
+    // @@protoc_insertion_point(field:RewardSwitchItem.EINFBGKENDH)
+    pub EINFBGKENDH: bool,
     // @@protoc_insertion_point(field:RewardSwitchItem.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -54,14 +54,14 @@ impl RewardSwitchItem {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EINFBGKENDH",
-            |m: &RewardSwitchItem| { &m.EINFBGKENDH },
-            |m: &mut RewardSwitchItem| { &mut m.EINFBGKENDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "daily_index",
             |m: &RewardSwitchItem| { &m.daily_index },
             |m: &mut RewardSwitchItem| { &mut m.daily_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EINFBGKENDH",
+            |m: &RewardSwitchItem| { &m.EINFBGKENDH },
+            |m: &mut RewardSwitchItem| { &mut m.EINFBGKENDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RewardSwitchItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.EINFBGKENDH = is.read_bool()?;
-                },
-                96 => {
+                16 => {
                     self.daily_index = is.read_uint32()?;
                 },
-                18 => {
+                48 => {
+                    self.EINFBGKENDH = is.read_bool()?;
+                },
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for RewardSwitchItem {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.daily_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.daily_index);
+        }
         if self.EINFBGKENDH != false {
             my_size += 1 + 1;
-        }
-        if self.daily_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.daily_index);
         }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RewardSwitchItem {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EINFBGKENDH != false {
-            os.write_bool(8, self.EINFBGKENDH)?;
-        }
         if self.daily_index != 0 {
-            os.write_uint32(12, self.daily_index)?;
+            os.write_uint32(2, self.daily_index)?;
+        }
+        if self.EINFBGKENDH != false {
+            os.write_bool(6, self.EINFBGKENDH)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RewardSwitchItem {
     }
 
     fn clear(&mut self) {
-        self.EINFBGKENDH = false;
         self.daily_index = 0;
+        self.EINFBGKENDH = false;
         self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RewardSwitchItem {
         static instance: RewardSwitchItem = RewardSwitchItem {
-            EINFBGKENDH: false,
             daily_index: 0,
+            EINFBGKENDH: false,
             item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RewardSwitchItem {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16RewardSwitchItem.proto\x1a\x0eItemList.proto\"}\n\x10RewardSwitchI\
-    tem\x12\x20\n\x0bEINFBGKENDH\x18\x08\x20\x01(\x08R\x0bEINFBGKENDH\x12\
-    \x1f\n\x0bdaily_index\x18\x0c\x20\x01(\rR\ndailyIndex\x12&\n\titem_list\
-    \x18\x02\x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
+    tem\x12\x1f\n\x0bdaily_index\x18\x02\x20\x01(\rR\ndailyIndex\x12\x20\n\
+    \x0bEINFBGKENDH\x18\x06\x20\x01(\x08R\x0bEINFBGKENDH\x12&\n\titem_list\
+    \x18\x01\x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

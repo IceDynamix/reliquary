@@ -48,7 +48,7 @@ impl TrainPartyPendingAction {
         ::std::default::Default::default()
     }
 
-    // .NJKENNCJLCF IAMKDJCFMIB = 1184;
+    // .NJKENNCJLCF IAMKDJCFMIB = 388;
 
     pub fn IAMKDJCFMIB(&self) -> &super::NJKENNCJLCF::NJKENNCJLCF {
         match self.LHDFJAJFHFO {
@@ -97,7 +97,7 @@ impl TrainPartyPendingAction {
         }
     }
 
-    // .MIIAIODLEOA LEEHAEOBEBA = 343;
+    // .MIIAIODLEOA LEEHAEOBEBA = 406;
 
     pub fn LEEHAEOBEBA(&self) -> &super::MIIAIODLEOA::MIIAIODLEOA {
         match self.LHDFJAJFHFO {
@@ -146,7 +146,7 @@ impl TrainPartyPendingAction {
         }
     }
 
-    // .EMMDENJBFPF OAOOFNJGIDH = 238;
+    // .EMMDENJBFPF OAOOFNJGIDH = 881;
 
     pub fn OAOOFNJGIDH(&self) -> &super::EMMDENJBFPF::EMMDENJBFPF {
         match self.LHDFJAJFHFO {
@@ -195,7 +195,7 @@ impl TrainPartyPendingAction {
         }
     }
 
-    // .EPBGFBEDANM PMMGOCJFEEJ = 700;
+    // .EPBGFBEDANM PMMGOCJFEEJ = 1396;
 
     pub fn PMMGOCJFEEJ(&self) -> &super::EPBGFBEDANM::EPBGFBEDANM {
         match self.LHDFJAJFHFO {
@@ -299,19 +299,19 @@ impl ::protobuf::Message for TrainPartyPendingAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.HBAPCCEGNME = is.read_uint32()?;
                 },
-                9474 => {
+                3106 => {
                     self.LHDFJAJFHFO = ::std::option::Option::Some(train_party_pending_action::LHDFJAJFHFO::IAMKDJCFMIB(is.read_message()?));
                 },
-                2746 => {
+                3250 => {
                     self.LHDFJAJFHFO = ::std::option::Option::Some(train_party_pending_action::LHDFJAJFHFO::LEEHAEOBEBA(is.read_message()?));
                 },
-                1906 => {
+                7050 => {
                     self.LHDFJAJFHFO = ::std::option::Option::Some(train_party_pending_action::LHDFJAJFHFO::OAOOFNJGIDH(is.read_message()?));
                 },
-                5602 => {
+                11170 => {
                     self.LHDFJAJFHFO = ::std::option::Option::Some(train_party_pending_action::LHDFJAJFHFO::PMMGOCJFEEJ(is.read_message()?));
                 },
                 tag => {
@@ -327,7 +327,7 @@ impl ::protobuf::Message for TrainPartyPendingAction {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HBAPCCEGNME);
+            my_size += ::protobuf::rt::uint32_size(2, self.HBAPCCEGNME);
         }
         if let ::std::option::Option::Some(ref v) = self.LHDFJAJFHFO {
             match v {
@@ -356,21 +356,21 @@ impl ::protobuf::Message for TrainPartyPendingAction {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HBAPCCEGNME != 0 {
-            os.write_uint32(14, self.HBAPCCEGNME)?;
+            os.write_uint32(2, self.HBAPCCEGNME)?;
         }
         if let ::std::option::Option::Some(ref v) = self.LHDFJAJFHFO {
             match v {
                 &train_party_pending_action::LHDFJAJFHFO::IAMKDJCFMIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1184, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(388, v, os)?;
                 },
                 &train_party_pending_action::LHDFJAJFHFO::LEEHAEOBEBA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(343, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(406, v, os)?;
                 },
                 &train_party_pending_action::LHDFJAJFHFO::OAOOFNJGIDH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(238, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(881, v, os)?;
                 },
                 &train_party_pending_action::LHDFJAJFHFO::PMMGOCJFEEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(700, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1396, v, os)?;
                 },
             };
         }
@@ -463,13 +463,13 @@ pub mod train_party_pending_action {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPendingAction.proto\x1a\x11EMMDENJBFPF.proto\x1a\x11EPBG\
     FBEDANM.proto\x1a\x11MIIAIODLEOA.proto\x1a\x11NJKENNCJLCF.proto\"\x96\
-    \x02\n\x17TrainPartyPendingAction\x12\x20\n\x0bHBAPCCEGNME\x18\x0e\x20\
-    \x01(\rR\x0bHBAPCCEGNME\x121\n\x0bIAMKDJCFMIB\x18\xa0\t\x20\x01(\x0b2\
-    \x0c.NJKENNCJLCFH\0R\x0bIAMKDJCFMIB\x121\n\x0bLEEHAEOBEBA\x18\xd7\x02\
+    \x02\n\x17TrainPartyPendingAction\x12\x20\n\x0bHBAPCCEGNME\x18\x02\x20\
+    \x01(\rR\x0bHBAPCCEGNME\x121\n\x0bIAMKDJCFMIB\x18\x84\x03\x20\x01(\x0b2\
+    \x0c.NJKENNCJLCFH\0R\x0bIAMKDJCFMIB\x121\n\x0bLEEHAEOBEBA\x18\x96\x03\
     \x20\x01(\x0b2\x0c.MIIAIODLEOAH\0R\x0bLEEHAEOBEBA\x121\n\x0bOAOOFNJGIDH\
-    \x18\xee\x01\x20\x01(\x0b2\x0c.EMMDENJBFPFH\0R\x0bOAOOFNJGIDH\x121\n\x0b\
-    PMMGOCJFEEJ\x18\xbc\x05\x20\x01(\x0b2\x0c.EPBGFBEDANMH\0R\x0bPMMGOCJFEEJ\
-    B\r\n\x0bLHDFJAJFHFOb\x06proto3\
+    \x18\xf1\x06\x20\x01(\x0b2\x0c.EMMDENJBFPFH\0R\x0bOAOOFNJGIDH\x121\n\x0b\
+    PMMGOCJFEEJ\x18\xf4\n\x20\x01(\x0b2\x0c.EPBGFBEDANMH\0R\x0bPMMGOCJFEEJB\
+    \r\n\x0bLHDFJAJFHFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

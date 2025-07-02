@@ -45,7 +45,7 @@ impl KEHMGKIHEFN {
         ::std::default::Default::default()
     }
 
-    // .FCNOLLFGPCK GIEIDJEEPAC = 5;
+    // .FCNOLLFGPCK GIEIDJEEPAC = 15;
 
     pub fn GIEIDJEEPAC(&self) -> &super::FCNOLLFGPCK::FCNOLLFGPCK {
         match self.GLMPLDBLMEC {
@@ -94,7 +94,7 @@ impl KEHMGKIHEFN {
         }
     }
 
-    // .KAMCIOPBPGA ADDCJEJPFEF = 10;
+    // .KAMCIOPBPGA ADDCJEJPFEF = 7;
 
     pub fn ADDCJEJPFEF(&self) -> &super::KAMCIOPBPGA::KAMCIOPBPGA {
         match self.GLMPLDBLMEC {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                122 => {
                     self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(is.read_message()?));
                 },
-                82 => {
+                58 => {
                     self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for KEHMGKIHEFN {
         if let ::std::option::Option::Some(ref v) = self.GLMPLDBLMEC {
             match v {
                 &kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -305,9 +305,10 @@ pub mod kehmgkihefn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEHMGKIHEFN.proto\x1a\x11FCNOLLFGPCK.proto\x1a\x11KAMCIOPBPGA.prot\
-    o\"\x80\x01\n\x0bKEHMGKIHEFN\x120\n\x0bGIEIDJEEPAC\x18\x05\x20\x01(\x0b2\
-    \x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\n\x20\x01(\
-    \x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEFB\r\n\x0bGLMPLDBLMECb\x06proto3\
+    o\"\x80\x01\n\x0bKEHMGKIHEFN\x120\n\x0bGIEIDJEEPAC\x18\x0f\x20\x01(\x0b2\
+    \x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\x07\x20\
+    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEFB\r\n\x0bGLMPLDBLMECb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

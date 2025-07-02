@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendAssistListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendAssistListCsReq.KCPAODEBJDG)
-    pub KCPAODEBJDG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFriendAssistListCsReq.MLOOGABMIHP)
     pub MLOOGABMIHP: ::protobuf::EnumOrUnknown<super::AssistAvatarType::AssistAvatarType>,
-    // @@protoc_insertion_point(field:GetFriendAssistListCsReq.target_side)
-    pub target_side: u32,
     // @@protoc_insertion_point(field:GetFriendAssistListCsReq.AHOILNFIIEG)
     pub AHOILNFIIEG: bool,
+    // @@protoc_insertion_point(field:GetFriendAssistListCsReq.KCPAODEBJDG)
+    pub KCPAODEBJDG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFriendAssistListCsReq.BIJGJECJMHM)
     pub BIJGJECJMHM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFriendAssistListCsReq.target_side)
+    pub target_side: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendAssistListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,10 @@ impl GetFriendAssistListCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KCPAODEBJDG",
-            |m: &GetFriendAssistListCsReq| { &m.KCPAODEBJDG },
-            |m: &mut GetFriendAssistListCsReq| { &mut m.KCPAODEBJDG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MLOOGABMIHP",
             |m: &GetFriendAssistListCsReq| { &m.MLOOGABMIHP },
             |m: &mut GetFriendAssistListCsReq| { &mut m.MLOOGABMIHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "target_side",
-            |m: &GetFriendAssistListCsReq| { &m.target_side },
-            |m: &mut GetFriendAssistListCsReq| { &mut m.target_side },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHOILNFIIEG",
@@ -78,9 +68,19 @@ impl GetFriendAssistListCsReq {
             |m: &mut GetFriendAssistListCsReq| { &mut m.AHOILNFIIEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KCPAODEBJDG",
+            |m: &GetFriendAssistListCsReq| { &m.KCPAODEBJDG },
+            |m: &mut GetFriendAssistListCsReq| { &mut m.KCPAODEBJDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BIJGJECJMHM",
             |m: &GetFriendAssistListCsReq| { &m.BIJGJECJMHM },
             |m: &mut GetFriendAssistListCsReq| { &mut m.BIJGJECJMHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "target_side",
+            |m: &GetFriendAssistListCsReq| { &m.target_side },
+            |m: &mut GetFriendAssistListCsReq| { &mut m.target_side },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendAssistListCsReq>(
             "GetFriendAssistListCsReq",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for GetFriendAssistListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                112 => {
+                    self.MLOOGABMIHP = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.AHOILNFIIEG = is.read_bool()?;
+                },
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.KCPAODEBJDG)?;
                 },
-                16 => {
+                72 => {
                     self.KCPAODEBJDG.push(is.read_uint32()?);
                 },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BIJGJECJMHM)?;
+                },
                 8 => {
-                    self.MLOOGABMIHP = is.read_enum_or_unknown()?;
+                    self.BIJGJECJMHM.push(is.read_uint32()?);
                 },
                 64 => {
                     self.target_side = is.read_uint32()?;
-                },
-                72 => {
-                    self.AHOILNFIIEG = is.read_bool()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BIJGJECJMHM)?;
-                },
-                48 => {
-                    self.BIJGJECJMHM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +133,34 @@ impl ::protobuf::Message for GetFriendAssistListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.KCPAODEBJDG);
         if self.MLOOGABMIHP != ::protobuf::EnumOrUnknown::new(super::AssistAvatarType::AssistAvatarType::ASSIST_AVATAR_UNKNOW) {
-            my_size += ::protobuf::rt::int32_size(1, self.MLOOGABMIHP.value());
-        }
-        if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.target_side);
+            my_size += ::protobuf::rt::int32_size(14, self.MLOOGABMIHP.value());
         }
         if self.AHOILNFIIEG != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.BIJGJECJMHM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.KCPAODEBJDG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BIJGJECJMHM);
+        if self.target_side != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.target_side);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.KCPAODEBJDG)?;
         if self.MLOOGABMIHP != ::protobuf::EnumOrUnknown::new(super::AssistAvatarType::AssistAvatarType::ASSIST_AVATAR_UNKNOW) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.MLOOGABMIHP))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.MLOOGABMIHP))?;
         }
+        if self.AHOILNFIIEG != false {
+            os.write_bool(13, self.AHOILNFIIEG)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.KCPAODEBJDG)?;
+        os.write_repeated_packed_uint32(1, &self.BIJGJECJMHM)?;
         if self.target_side != 0 {
             os.write_uint32(8, self.target_side)?;
         }
-        if self.AHOILNFIIEG != false {
-            os.write_bool(9, self.AHOILNFIIEG)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.BIJGJECJMHM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +178,21 @@ impl ::protobuf::Message for GetFriendAssistListCsReq {
     }
 
     fn clear(&mut self) {
-        self.KCPAODEBJDG.clear();
         self.MLOOGABMIHP = ::protobuf::EnumOrUnknown::new(super::AssistAvatarType::AssistAvatarType::ASSIST_AVATAR_UNKNOW);
-        self.target_side = 0;
         self.AHOILNFIIEG = false;
+        self.KCPAODEBJDG.clear();
         self.BIJGJECJMHM.clear();
+        self.target_side = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendAssistListCsReq {
         static instance: GetFriendAssistListCsReq = GetFriendAssistListCsReq {
-            KCPAODEBJDG: ::std::vec::Vec::new(),
             MLOOGABMIHP: ::protobuf::EnumOrUnknown::from_i32(0),
-            target_side: 0,
             AHOILNFIIEG: false,
+            KCPAODEBJDG: ::std::vec::Vec::new(),
             BIJGJECJMHM: ::std::vec::Vec::new(),
+            target_side: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,12 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendAssistListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetFriendAssistListCsReq.proto\x1a\x16AssistAvatarType.proto\"\xd6\
-    \x01\n\x18GetFriendAssistListCsReq\x12\x20\n\x0bKCPAODEBJDG\x18\x02\x20\
-    \x03(\rR\x0bKCPAODEBJDG\x123\n\x0bMLOOGABMIHP\x18\x01\x20\x01(\x0e2\x11.\
-    AssistAvatarTypeR\x0bMLOOGABMIHP\x12\x1f\n\x0btarget_side\x18\x08\x20\
-    \x01(\rR\ntargetSide\x12\x20\n\x0bAHOILNFIIEG\x18\t\x20\x01(\x08R\x0bAHO\
-    ILNFIIEG\x12\x20\n\x0bBIJGJECJMHM\x18\x06\x20\x03(\rR\x0bBIJGJECJMHMb\
-    \x06proto3\
+    \x01\n\x18GetFriendAssistListCsReq\x123\n\x0bMLOOGABMIHP\x18\x0e\x20\x01\
+    (\x0e2\x11.AssistAvatarTypeR\x0bMLOOGABMIHP\x12\x20\n\x0bAHOILNFIIEG\x18\
+    \r\x20\x01(\x08R\x0bAHOILNFIIEG\x12\x20\n\x0bKCPAODEBJDG\x18\t\x20\x03(\
+    \rR\x0bKCPAODEBJDG\x12\x20\n\x0bBIJGJECJMHM\x18\x01\x20\x03(\rR\x0bBIJGJ\
+    ECJMHM\x12\x1f\n\x0btarget_side\x18\x08\x20\x01(\rR\ntargetSideb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

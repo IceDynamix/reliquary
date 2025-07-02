@@ -45,7 +45,7 @@ impl JBMECLKGGDK {
         ::std::default::Default::default()
     }
 
-    // .IKAMKNHGGOK HPNOGGFDPKM = 9;
+    // .IKAMKNHGGOK HPNOGGFDPKM = 3;
 
     pub fn HPNOGGFDPKM(&self) -> &super::IKAMKNHGGOK::IKAMKNHGGOK {
         match self.PHKENLKHINL {
@@ -94,7 +94,7 @@ impl JBMECLKGGDK {
         }
     }
 
-    // .GNJAPOMLLHE ADMAHLAALNH = 4;
+    // .GNJAPOMLLHE ADMAHLAALNH = 8;
 
     pub fn ADMAHLAALNH(&self) -> &super::GNJAPOMLLHE::GNJAPOMLLHE {
         match self.PHKENLKHINL {
@@ -143,7 +143,7 @@ impl JBMECLKGGDK {
         }
     }
 
-    // .CNHHPDHBMDC ODDGCBPOPLF = 8;
+    // .CNHHPDHBMDC ODDGCBPOPLF = 7;
 
     pub fn ODDGCBPOPLF(&self) -> &super::CNHHPDHBMDC::CNHHPDHBMDC {
         match self.PHKENLKHINL {
@@ -192,7 +192,7 @@ impl JBMECLKGGDK {
         }
     }
 
-    // .JIEAAFJENLK GMAKHONAEPH = 2;
+    // .JIEAAFJENLK GMAKHONAEPH = 5;
 
     pub fn GMAKHONAEPH(&self) -> &super::JIEAAFJENLK::JIEAAFJENLK {
         match self.PHKENLKHINL {
@@ -241,7 +241,7 @@ impl JBMECLKGGDK {
         }
     }
 
-    // .HPJLAFHHGJG CACGEKAANKL = 6;
+    // .HPJLAFHHGJG CACGEKAANKL = 1;
 
     pub fn CACGEKAANKL(&self) -> &super::HPJLAFHHGJG::HPJLAFHHGJG {
         match self.PHKENLKHINL {
@@ -290,7 +290,7 @@ impl JBMECLKGGDK {
         }
     }
 
-    // .AFCCAOACNAK AGGBLHGKPFJ = 1;
+    // .AFCCAOACNAK AGGBLHGKPFJ = 4;
 
     pub fn AGGBLHGKPFJ(&self) -> &super::AFCCAOACNAK::AFCCAOACNAK {
         match self.PHKENLKHINL {
@@ -403,22 +403,22 @@ impl ::protobuf::Message for JBMECLKGGDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                26 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::HPNOGGFDPKM(is.read_message()?));
                 },
-                34 => {
+                66 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::ADMAHLAALNH(is.read_message()?));
                 },
-                66 => {
+                58 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::ODDGCBPOPLF(is.read_message()?));
                 },
-                18 => {
+                42 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::GMAKHONAEPH(is.read_message()?));
                 },
-                50 => {
+                10 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::CACGEKAANKL(is.read_message()?));
                 },
-                10 => {
+                34 => {
                     self.PHKENLKHINL = ::std::option::Option::Some(jbmeclkggdk::PHKENLKHINL::AGGBLHGKPFJ(is.read_message()?));
                 },
                 tag => {
@@ -470,22 +470,22 @@ impl ::protobuf::Message for JBMECLKGGDK {
         if let ::std::option::Option::Some(ref v) = self.PHKENLKHINL {
             match v {
                 &jbmeclkggdk::PHKENLKHINL::HPNOGGFDPKM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &jbmeclkggdk::PHKENLKHINL::ADMAHLAALNH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-                },
-                &jbmeclkggdk::PHKENLKHINL::ODDGCBPOPLF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
+                &jbmeclkggdk::PHKENLKHINL::ODDGCBPOPLF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
                 &jbmeclkggdk::PHKENLKHINL::GMAKHONAEPH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &jbmeclkggdk::PHKENLKHINL::CACGEKAANKL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &jbmeclkggdk::PHKENLKHINL::AGGBLHGKPFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -583,13 +583,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBMECLKGGDK.proto\x1a\x11AFCCAOACNAK.proto\x1a\x11CNHHPDHBMDC.prot\
     o\x1a\x11GNJAPOMLLHE.proto\x1a\x11HPJLAFHHGJG.proto\x1a\x11IKAMKNHGGOK.p\
     roto\x1a\x11JIEAAFJENLK.proto\"\xc8\x02\n\x0bJBMECLKGGDK\x120\n\x0bHPNOG\
-    GFDPKM\x18\t\x20\x01(\x0b2\x0c.IKAMKNHGGOKH\0R\x0bHPNOGGFDPKM\x120\n\x0b\
-    ADMAHLAALNH\x18\x04\x20\x01(\x0b2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\x12\
-    0\n\x0bODDGCBPOPLF\x18\x08\x20\x01(\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDGCBPO\
-    PLF\x120\n\x0bGMAKHONAEPH\x18\x02\x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\x0bG\
-    MAKHONAEPH\x120\n\x0bCACGEKAANKL\x18\x06\x20\x01(\x0b2\x0c.HPJLAFHHGJGH\
-    \0R\x0bCACGEKAANKL\x120\n\x0bAGGBLHGKPFJ\x18\x01\x20\x01(\x0b2\x0c.AFCCA\
-    OACNAKH\0R\x0bAGGBLHGKPFJB\r\n\x0bPHKENLKHINLb\x06proto3\
+    GFDPKM\x18\x03\x20\x01(\x0b2\x0c.IKAMKNHGGOKH\0R\x0bHPNOGGFDPKM\x120\n\
+    \x0bADMAHLAALNH\x18\x08\x20\x01(\x0b2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\
+    \x120\n\x0bODDGCBPOPLF\x18\x07\x20\x01(\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDG\
+    CBPOPLF\x120\n\x0bGMAKHONAEPH\x18\x05\x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\
+    \x0bGMAKHONAEPH\x120\n\x0bCACGEKAANKL\x18\x01\x20\x01(\x0b2\x0c.HPJLAFHH\
+    GJGH\0R\x0bCACGEKAANKL\x120\n\x0bAGGBLHGKPFJ\x18\x04\x20\x01(\x0b2\x0c.A\
+    FCCAOACNAKH\0R\x0bAGGBLHGKPFJB\r\n\x0bPHKENLKHINLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

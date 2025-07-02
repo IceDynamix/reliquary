@@ -79,10 +79,10 @@ impl ::protobuf::Message for ContentPackageGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ContentPackageGetDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.data.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ContentPackageGetDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ContentPackageGetDataScRsp.proto\x1a\x18ContentPackageData.proto\"\
-    _\n\x1aContentPackageGetDataScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\
-    \rR\x07retcode\x12'\n\x04data\x18\x01\x20\x01(\x0b2\x13.ContentPackageDa\
+    _\n\x1aContentPackageGetDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\
+    \rR\x07retcode\x12'\n\x04data\x18\x0f\x20\x01(\x0b2\x13.ContentPackageDa\
     taR\x04datab\x06proto3\
 ";
 

@@ -30,10 +30,10 @@ pub struct RemoveRotaterScRsp {
     // message fields
     // @@protoc_insertion_point(field:RemoveRotaterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RemoveRotaterScRsp.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // @@protoc_insertion_point(field:RemoveRotaterScRsp.rotater_data)
     pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
+    // @@protoc_insertion_point(field:RemoveRotaterScRsp.energy_info)
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveRotaterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl RemoveRotaterScRsp {
             |m: &RemoveRotaterScRsp| { &m.retcode },
             |m: &mut RemoveRotaterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
-            "energy_info",
-            |m: &RemoveRotaterScRsp| { &m.energy_info },
-            |m: &mut RemoveRotaterScRsp| { &mut m.energy_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterData::RotaterData>(
             "rotater_data",
             |m: &RemoveRotaterScRsp| { &m.rotater_data },
             |m: &mut RemoveRotaterScRsp| { &mut m.rotater_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
+            "energy_info",
+            |m: &RemoveRotaterScRsp| { &m.energy_info },
+            |m: &mut RemoveRotaterScRsp| { &mut m.energy_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveRotaterScRsp>(
             "RemoveRotaterScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if let Some(v) = self.energy_info.as_ref() {
+        if let Some(v) = self.rotater_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rotater_data.as_ref() {
+        if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.rotater_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.energy_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for RemoveRotaterScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.energy_info.clear();
         self.rotater_data.clear();
+        self.energy_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveRotaterScRsp {
         static instance: RemoveRotaterScRsp = RemoveRotaterScRsp {
             retcode: 0,
-            energy_info: ::protobuf::MessageField::none(),
             rotater_data: ::protobuf::MessageField::none(),
+            energy_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for RemoveRotaterScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RemoveRotaterScRsp.proto\x1a\x11RotaterData.proto\x1a\x17RotaterEn\
     ergyInfo.proto\"\x94\x01\n\x12RemoveRotaterScRsp\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x123\n\x0benergy_info\x18\x07\x20\x01(\x0b\
-    2\x12.RotaterEnergyInfoR\nenergyInfo\x12/\n\x0crotater_data\x18\t\x20\
-    \x01(\x0b2\x0c.RotaterDataR\x0brotaterDatab\x06proto3\
+    \x18\x08\x20\x01(\rR\x07retcode\x12/\n\x0crotater_data\x18\t\x20\x01(\
+    \x0b2\x0c.RotaterDataR\x0brotaterData\x123\n\x0benergy_info\x18\x0b\x20\
+    \x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

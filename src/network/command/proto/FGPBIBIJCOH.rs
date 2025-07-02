@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FGPBIBIJCOH {
     // message fields
-    // @@protoc_insertion_point(field:FGPBIBIJCOH.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
     // @@protoc_insertion_point(field:FGPBIBIJCOH.HHGAPDFINDI)
     pub HHGAPDFINDI: bool,
+    // @@protoc_insertion_point(field:FGPBIBIJCOH.BGLEHMKMAPG)
+    pub BGLEHMKMAPG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FGPBIBIJCOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FGPBIBIJCOH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &FGPBIBIJCOH| { &m.BGLEHMKMAPG },
-            |m: &mut FGPBIBIJCOH| { &mut m.BGLEHMKMAPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HHGAPDFINDI",
             |m: &FGPBIBIJCOH| { &m.HHGAPDFINDI },
             |m: &mut FGPBIBIJCOH| { &mut m.HHGAPDFINDI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BGLEHMKMAPG",
+            |m: &FGPBIBIJCOH| { &m.BGLEHMKMAPG },
+            |m: &mut FGPBIBIJCOH| { &mut m.BGLEHMKMAPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FGPBIBIJCOH>(
             "FGPBIBIJCOH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FGPBIBIJCOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BGLEHMKMAPG = is.read_uint32()?;
-                },
-                112 => {
+                104 => {
                     self.HHGAPDFINDI = is.read_bool()?;
+                },
+                80 => {
+                    self.BGLEHMKMAPG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FGPBIBIJCOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BGLEHMKMAPG);
-        }
         if self.HHGAPDFINDI != false {
             my_size += 1 + 1;
+        }
+        if self.BGLEHMKMAPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BGLEHMKMAPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FGPBIBIJCOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(15, self.BGLEHMKMAPG)?;
-        }
         if self.HHGAPDFINDI != false {
-            os.write_bool(14, self.HHGAPDFINDI)?;
+            os.write_bool(13, self.HHGAPDFINDI)?;
+        }
+        if self.BGLEHMKMAPG != 0 {
+            os.write_uint32(10, self.BGLEHMKMAPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FGPBIBIJCOH {
     }
 
     fn clear(&mut self) {
-        self.BGLEHMKMAPG = 0;
         self.HHGAPDFINDI = false;
+        self.BGLEHMKMAPG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FGPBIBIJCOH {
         static instance: FGPBIBIJCOH = FGPBIBIJCOH {
-            BGLEHMKMAPG: 0,
             HHGAPDFINDI: false,
+            BGLEHMKMAPG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FGPBIBIJCOH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FGPBIBIJCOH.proto\"Q\n\x0bFGPBIBIJCOH\x12\x20\n\x0bBGLEHMKMAPG\x18\
-    \x0f\x20\x01(\rR\x0bBGLEHMKMAPG\x12\x20\n\x0bHHGAPDFINDI\x18\x0e\x20\x01\
-    (\x08R\x0bHHGAPDFINDIb\x06proto3\
+    \n\x11FGPBIBIJCOH.proto\"Q\n\x0bFGPBIBIJCOH\x12\x20\n\x0bHHGAPDFINDI\x18\
+    \r\x20\x01(\x08R\x0bHHGAPDFINDI\x12\x20\n\x0bBGLEHMKMAPG\x18\n\x20\x01(\
+    \rR\x0bBGLEHMKMAPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

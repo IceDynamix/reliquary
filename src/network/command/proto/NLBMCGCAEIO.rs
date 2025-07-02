@@ -30,10 +30,10 @@ pub struct NLBMCGCAEIO {
     // message fields
     // @@protoc_insertion_point(field:NLBMCGCAEIO.PILDEFKPKLE)
     pub PILDEFKPKLE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NLBMCGCAEIO.type)
-    pub type_: u32,
     // @@protoc_insertion_point(field:NLBMCGCAEIO.AFLEAJIHNEB)
     pub AFLEAJIHNEB: u32,
+    // @@protoc_insertion_point(field:NLBMCGCAEIO.type)
+    pub type_: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NLBMCGCAEIO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl NLBMCGCAEIO {
             |m: &mut NLBMCGCAEIO| { &mut m.PILDEFKPKLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &NLBMCGCAEIO| { &m.type_ },
-            |m: &mut NLBMCGCAEIO| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFLEAJIHNEB",
             |m: &NLBMCGCAEIO| { &m.AFLEAJIHNEB },
             |m: &mut NLBMCGCAEIO| { &mut m.AFLEAJIHNEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &NLBMCGCAEIO| { &m.type_ },
+            |m: &mut NLBMCGCAEIO| { &mut m.type_ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NLBMCGCAEIO>(
             "NLBMCGCAEIO",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.PILDEFKPKLE)?;
                 },
-                120 => {
+                40 => {
                     self.PILDEFKPKLE.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.type_ = is.read_uint32()?;
-                },
-                96 => {
+                104 => {
                     self.AFLEAJIHNEB = is.read_uint32()?;
+                },
+                120 => {
+                    self.type_ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.PILDEFKPKLE);
-        if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.type_);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PILDEFKPKLE);
         if self.AFLEAJIHNEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AFLEAJIHNEB);
+            my_size += ::protobuf::rt::uint32_size(13, self.AFLEAJIHNEB);
+        }
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.type_);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.PILDEFKPKLE)?;
-        if self.type_ != 0 {
-            os.write_uint32(14, self.type_)?;
-        }
+        os.write_repeated_packed_uint32(5, &self.PILDEFKPKLE)?;
         if self.AFLEAJIHNEB != 0 {
-            os.write_uint32(12, self.AFLEAJIHNEB)?;
+            os.write_uint32(13, self.AFLEAJIHNEB)?;
+        }
+        if self.type_ != 0 {
+            os.write_uint32(15, self.type_)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for NLBMCGCAEIO {
 
     fn clear(&mut self) {
         self.PILDEFKPKLE.clear();
-        self.type_ = 0;
         self.AFLEAJIHNEB = 0;
+        self.type_ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NLBMCGCAEIO {
         static instance: NLBMCGCAEIO = NLBMCGCAEIO {
             PILDEFKPKLE: ::std::vec::Vec::new(),
-            type_: 0,
             AFLEAJIHNEB: 0,
+            type_: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NLBMCGCAEIO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLBMCGCAEIO.proto\"e\n\x0bNLBMCGCAEIO\x12\x20\n\x0bPILDEFKPKLE\x18\
-    \x0f\x20\x03(\rR\x0bPILDEFKPKLE\x12\x12\n\x04type\x18\x0e\x20\x01(\rR\
-    \x04type\x12\x20\n\x0bAFLEAJIHNEB\x18\x0c\x20\x01(\rR\x0bAFLEAJIHNEBb\
-    \x06proto3\
+    \x05\x20\x03(\rR\x0bPILDEFKPKLE\x12\x20\n\x0bAFLEAJIHNEB\x18\r\x20\x01(\
+    \rR\x0bAFLEAJIHNEB\x12\x12\n\x04type\x18\x0f\x20\x01(\rR\x04typeb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

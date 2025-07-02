@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesSetCustomKeyValueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueScRsp.key)
-    pub key: u32,
-    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueScRsp.value)
     pub value: u32,
+    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesSetCustomKeyValueScRsp.key)
+    pub key: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesSetCustomKeyValueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl PlanetFesSetCustomKeyValueScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &PlanetFesSetCustomKeyValueScRsp| { &m.key },
-            |m: &mut PlanetFesSetCustomKeyValueScRsp| { &mut m.key },
+            "value",
+            |m: &PlanetFesSetCustomKeyValueScRsp| { &m.value },
+            |m: &mut PlanetFesSetCustomKeyValueScRsp| { &mut m.value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -64,9 +64,9 @@ impl PlanetFesSetCustomKeyValueScRsp {
             |m: &mut PlanetFesSetCustomKeyValueScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "value",
-            |m: &PlanetFesSetCustomKeyValueScRsp| { &m.value },
-            |m: &mut PlanetFesSetCustomKeyValueScRsp| { &mut m.value },
+            "key",
+            |m: &PlanetFesSetCustomKeyValueScRsp| { &m.key },
+            |m: &mut PlanetFesSetCustomKeyValueScRsp| { &mut m.key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesSetCustomKeyValueScRsp>(
             "PlanetFesSetCustomKeyValueScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.key = is.read_uint32()?;
+                88 => {
+                    self.value = is.read_uint32()?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.value = is.read_uint32()?;
+                72 => {
+                    self.key = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.key);
+        if self.value != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.value);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.value);
+        if self.key != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.key != 0 {
-            os.write_uint32(4, self.key)?;
+        if self.value != 0 {
+            os.write_uint32(11, self.value)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
-        if self.value != 0 {
-            os.write_uint32(3, self.value)?;
+        if self.key != 0 {
+            os.write_uint32(9, self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueScRsp {
     }
 
     fn clear(&mut self) {
-        self.key = 0;
-        self.retcode = 0;
         self.value = 0;
+        self.retcode = 0;
+        self.key = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesSetCustomKeyValueScRsp {
         static instance: PlanetFesSetCustomKeyValueScRsp = PlanetFesSetCustomKeyValueScRsp {
-            key: 0,
-            retcode: 0,
             value: 0,
+            retcode: 0,
+            key: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSetCustomKeyValueScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%PlanetFesSetCustomKeyValueScRsp.proto\"c\n\x1fPlanetFesSetCustomKeyVa\
-    lueScRsp\x12\x10\n\x03key\x18\x04\x20\x01(\rR\x03key\x12\x18\n\x07retcod\
-    e\x18\x0e\x20\x01(\rR\x07retcode\x12\x14\n\x05value\x18\x03\x20\x01(\rR\
-    \x05valueb\x06proto3\
+    lueScRsp\x12\x14\n\x05value\x18\x0b\x20\x01(\rR\x05value\x12\x18\n\x07re\
+    tcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x10\n\x03key\x18\t\x20\x01(\rR\
+    \x03keyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

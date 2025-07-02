@@ -30,18 +30,18 @@ pub struct ChessRogueQuitScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueQuitScRsp.stage_info)
     pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.rogue_get_info)
+    pub rogue_get_info: ::protobuf::MessageField<super::ChessRogueGetInfo::ChessRogueGetInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.BOIKABLFKEC)
+    pub BOIKABLFKEC: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.level_info)
+    pub level_info: ::protobuf::MessageField<super::ChessRogueLevelInfo::ChessRogueLevelInfo>,
     // @@protoc_insertion_point(field:ChessRogueQuitScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueQuitScRsp.BLNDMFGKPMJ)
     pub BLNDMFGKPMJ: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
-    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
-    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.rogue_get_info)
-    pub rogue_get_info: ::protobuf::MessageField<super::ChessRogueGetInfo::ChessRogueGetInfo>,
-    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.level_info)
-    pub level_info: ::protobuf::MessageField<super::ChessRogueLevelInfo::ChessRogueLevelInfo>,
-    // @@protoc_insertion_point(field:ChessRogueQuitScRsp.BOIKABLFKEC)
-    pub BOIKABLFKEC: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQuitScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,6 +66,26 @@ impl ChessRogueQuitScRsp {
             |m: &ChessRogueQuitScRsp| { &m.stage_info },
             |m: &mut ChessRogueQuitScRsp| { &mut m.stage_info },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGetInfo::ChessRogueGetInfo>(
+            "rogue_get_info",
+            |m: &ChessRogueQuitScRsp| { &m.rogue_get_info },
+            |m: &mut ChessRogueQuitScRsp| { &mut m.rogue_get_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
+            "BOIKABLFKEC",
+            |m: &ChessRogueQuitScRsp| { &m.BOIKABLFKEC },
+            |m: &mut ChessRogueQuitScRsp| { &mut m.BOIKABLFKEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
+            "rogue_aeon_info",
+            |m: &ChessRogueQuitScRsp| { &m.rogue_aeon_info },
+            |m: &mut ChessRogueQuitScRsp| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLevelInfo::ChessRogueLevelInfo>(
+            "level_info",
+            |m: &ChessRogueQuitScRsp| { &m.level_info },
+            |m: &mut ChessRogueQuitScRsp| { &mut m.level_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueQuitScRsp| { &m.retcode },
@@ -75,26 +95,6 @@ impl ChessRogueQuitScRsp {
             "BLNDMFGKPMJ",
             |m: &ChessRogueQuitScRsp| { &m.BLNDMFGKPMJ },
             |m: &mut ChessRogueQuitScRsp| { &mut m.BLNDMFGKPMJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
-            "rogue_aeon_info",
-            |m: &ChessRogueQuitScRsp| { &m.rogue_aeon_info },
-            |m: &mut ChessRogueQuitScRsp| { &mut m.rogue_aeon_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGetInfo::ChessRogueGetInfo>(
-            "rogue_get_info",
-            |m: &ChessRogueQuitScRsp| { &m.rogue_get_info },
-            |m: &mut ChessRogueQuitScRsp| { &mut m.rogue_get_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLevelInfo::ChessRogueLevelInfo>(
-            "level_info",
-            |m: &ChessRogueQuitScRsp| { &m.level_info },
-            |m: &mut ChessRogueQuitScRsp| { &mut m.level_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
-            "BOIKABLFKEC",
-            |m: &ChessRogueQuitScRsp| { &m.BOIKABLFKEC },
-            |m: &mut ChessRogueQuitScRsp| { &mut m.BOIKABLFKEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQuitScRsp>(
             "ChessRogueQuitScRsp",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ChessRogueQuitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
-                },
-                122 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
                 26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOIKABLFKEC)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOIKABLFKEC)?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,10 +151,11 @@ impl ::protobuf::Message for ChessRogueQuitScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if let Some(v) = self.rogue_get_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+        if let Some(v) = self.BOIKABLFKEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -162,15 +163,14 @@ impl ::protobuf::Message for ChessRogueQuitScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_get_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.level_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BOIKABLFKEC.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -181,25 +181,25 @@ impl ::protobuf::Message for ChessRogueQuitScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.level_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.BOIKABLFKEC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.level_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
+        }
+        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -219,24 +219,24 @@ impl ::protobuf::Message for ChessRogueQuitScRsp {
 
     fn clear(&mut self) {
         self.stage_info.clear();
+        self.rogue_get_info.clear();
+        self.BOIKABLFKEC.clear();
+        self.rogue_aeon_info.clear();
+        self.level_info.clear();
         self.retcode = 0;
         self.BLNDMFGKPMJ.clear();
-        self.rogue_aeon_info.clear();
-        self.rogue_get_info.clear();
-        self.level_info.clear();
-        self.BOIKABLFKEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQuitScRsp {
         static instance: ChessRogueQuitScRsp = ChessRogueQuitScRsp {
             stage_info: ::protobuf::MessageField::none(),
+            rogue_get_info: ::protobuf::MessageField::none(),
+            BOIKABLFKEC: ::protobuf::MessageField::none(),
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            level_info: ::protobuf::MessageField::none(),
             retcode: 0,
             BLNDMFGKPMJ: ::protobuf::MessageField::none(),
-            rogue_aeon_info: ::protobuf::MessageField::none(),
-            rogue_get_info: ::protobuf::MessageField::none(),
-            level_info: ::protobuf::MessageField::none(),
-            BOIKABLFKEC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -264,15 +264,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChessRogueQuitScRsp.proto\x1a\x18ChessRogueAeonInfo.proto\x1a\x1aC\
     hessRogueFinishInfo.proto\x1a\x17ChessRogueGetInfo.proto\x1a\x14ChessRog\
     ueInfo.proto\x1a\x19ChessRogueLevelInfo.proto\x1a\x19ChessRogueQueryInfo\
-    .proto\"\xfc\x02\n\x13ChessRogueQuitScRsp\x12.\n\nstage_info\x18\x0c\x20\
-    \x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcode\x126\n\x0bBLNDMFGKPMJ\x18\t\x20\x01(\x0b2\x14.Ch\
-    essRogueQueryInfoR\x0bBLNDMFGKPMJ\x12;\n\x0frogue_aeon_info\x18\x07\x20\
-    \x01(\x0b2\x13.ChessRogueAeonInfoR\rrogueAeonInfo\x128\n\x0erogue_get_in\
-    fo\x18\x0f\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogueGetInfo\x123\n\n\
-    level_info\x18\x03\x20\x01(\x0b2\x14.ChessRogueLevelInfoR\tlevelInfo\x12\
-    7\n\x0bBOIKABLFKEC\x18\x08\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bBO\
-    IKABLFKECb\x06proto3\
+    .proto\"\xfc\x02\n\x13ChessRogueQuitScRsp\x12.\n\nstage_info\x18\x07\x20\
+    \x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x128\n\x0erogue_get_info\x18\
+    \x0b\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogueGetInfo\x127\n\x0bBOIK\
+    ABLFKEC\x18\x03\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\
+    \x12;\n\x0frogue_aeon_info\x18\t\x20\x01(\x0b2\x13.ChessRogueAeonInfoR\r\
+    rogueAeonInfo\x123\n\nlevel_info\x18\x04\x20\x01(\x0b2\x14.ChessRogueLev\
+    elInfoR\tlevelInfo\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
+    \x126\n\x0bBLNDMFGKPMJ\x18\r\x20\x01(\x0b2\x14.ChessRogueQueryInfoR\x0bB\
+    LNDMFGKPMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

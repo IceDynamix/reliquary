@@ -79,13 +79,13 @@ impl ::protobuf::Message for ChallengeBossBuffList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                40 => {
+                96 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
-                80 => {
+                32 => {
                     self.challenge_boss_const = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for ChallengeBossBuffList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.buff_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.buff_list);
         if self.challenge_boss_const != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.challenge_boss_const);
+            my_size += ::protobuf::rt::uint32_size(4, self.challenge_boss_const);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for ChallengeBossBuffList {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.buff_list)?;
+        os.write_repeated_packed_uint32(12, &self.buff_list)?;
         if self.challenge_boss_const != 0 {
-            os.write_uint32(10, self.challenge_boss_const)?;
+            os.write_uint32(4, self.challenge_boss_const)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossBuffList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeBossBuffList.proto\"f\n\x15ChallengeBossBuffList\x12\x1b\
-    \n\tbuff_list\x18\x05\x20\x03(\rR\x08buffList\x120\n\x14challenge_boss_c\
-    onst\x18\n\x20\x01(\rR\x12challengeBossConstb\x06proto3\
+    \n\tbuff_list\x18\x0c\x20\x03(\rR\x08buffList\x120\n\x14challenge_boss_c\
+    onst\x18\x04\x20\x01(\rR\x12challengeBossConstb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

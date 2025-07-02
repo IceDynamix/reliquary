@@ -45,7 +45,7 @@ impl RogueGameInfo {
         ::std::default::Default::default()
     }
 
-    // .ChessRogueBuffInfo rogue_buff_info = 15;
+    // .ChessRogueBuffInfo rogue_buff_info = 6;
 
     pub fn rogue_buff_info(&self) -> &super::ChessRogueBuffInfo::ChessRogueBuffInfo {
         match self.DEPKICGAIIM {
@@ -94,7 +94,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .ChessRogueMiracleInfo game_miracle_info = 6;
+    // .ChessRogueMiracleInfo game_miracle_info = 14;
 
     pub fn game_miracle_info(&self) -> &super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
         match self.DEPKICGAIIM {
@@ -143,7 +143,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .FINDAFKPOOF FFFCCEJIFDK = 8;
+    // .FINDAFKPOOF FFFCCEJIFDK = 9;
 
     pub fn FFFCCEJIFDK(&self) -> &super::FINDAFKPOOF::FINDAFKPOOF {
         match self.DEPKICGAIIM {
@@ -241,7 +241,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .OHLCJEDCOFN rogue_difficulty_info = 14;
+    // .OHLCJEDCOFN rogue_difficulty_info = 12;
 
     pub fn rogue_difficulty_info(&self) -> &super::OHLCJEDCOFN::OHLCJEDCOFN {
         match self.DEPKICGAIIM {
@@ -290,7 +290,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .KAAJBAOAKBO CKAANMDDKCJ = 12;
+    // .KAAJBAOAKBO CKAANMDDKCJ = 8;
 
     pub fn CKAANMDDKCJ(&self) -> &super::KAAJBAOAKBO::KAAJBAOAKBO {
         match self.DEPKICGAIIM {
@@ -339,7 +339,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .FBNJOFCEMIL NBDACDNBJIK = 2;
+    // .FBNJOFCEMIL NBDACDNBJIK = 7;
 
     pub fn NBDACDNBJIK(&self) -> &super::FBNJOFCEMIL::FBNJOFCEMIL {
         match self.DEPKICGAIIM {
@@ -388,20 +388,20 @@ impl RogueGameInfo {
         }
     }
 
-    // .OMDEFBABNNB rogue_lineup_info = 11;
+    // .OMDEFBABNNB rogue__lineup_info = 15;
 
-    pub fn rogue_lineup_info(&self) -> &super::OMDEFBABNNB::OMDEFBABNNB {
+    pub fn rogue__lineup_info(&self) -> &super::OMDEFBABNNB::OMDEFBABNNB {
         match self.DEPKICGAIIM {
             ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(ref v)) => v,
             _ => <super::OMDEFBABNNB::OMDEFBABNNB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_rogue_lineup_info(&mut self) {
+    pub fn clear_rogue__lineup_info(&mut self) {
         self.DEPKICGAIIM = ::std::option::Option::None;
     }
 
-    pub fn has_rogue_lineup_info(&self) -> bool {
+    pub fn has_rogue__lineup_info(&self) -> bool {
         match self.DEPKICGAIIM {
             ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(..)) => true,
             _ => false,
@@ -409,12 +409,12 @@ impl RogueGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_lineup_info(&mut self, v: super::OMDEFBABNNB::OMDEFBABNNB) {
+    pub fn set_rogue__lineup_info(&mut self, v: super::OMDEFBABNNB::OMDEFBABNNB) {
         self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_lineup_info(&mut self) -> &mut super::OMDEFBABNNB::OMDEFBABNNB {
+    pub fn mut_rogue__lineup_info(&mut self) -> &mut super::OMDEFBABNNB::OMDEFBABNNB {
         if let ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(_)) = self.DEPKICGAIIM {
         } else {
             self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(super::OMDEFBABNNB::OMDEFBABNNB::new()));
@@ -426,8 +426,8 @@ impl RogueGameInfo {
     }
 
     // Take field
-    pub fn take_rogue_lineup_info(&mut self) -> super::OMDEFBABNNB::OMDEFBABNNB {
-        if self.has_rogue_lineup_info() {
+    pub fn take_rogue__lineup_info(&mut self) -> super::OMDEFBABNNB::OMDEFBABNNB {
+        if self.has_rogue__lineup_info() {
             match self.DEPKICGAIIM.take() {
                 ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(v)) => v,
                 _ => panic!(),
@@ -490,11 +490,11 @@ impl RogueGameInfo {
             RogueGameInfo::set_NBDACDNBJIK,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OMDEFBABNNB::OMDEFBABNNB>(
-            "rogue_lineup_info",
-            RogueGameInfo::has_rogue_lineup_info,
-            RogueGameInfo::rogue_lineup_info,
-            RogueGameInfo::mut_rogue_lineup_info,
-            RogueGameInfo::set_rogue_lineup_info,
+            "rogue__lineup_info",
+            RogueGameInfo::has_rogue__lineup_info,
+            RogueGameInfo::rogue__lineup_info,
+            RogueGameInfo::mut_rogue__lineup_info,
+            RogueGameInfo::set_rogue__lineup_info,
         ));
         oneofs.push(rogue_game_info::DEPKICGAIIM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGameInfo>(
@@ -515,28 +515,28 @@ impl ::protobuf::Message for RogueGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                50 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueBuffInfo(is.read_message()?));
                 },
-                50 => {
+                114 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::GameMiracleInfo(is.read_message()?));
                 },
-                66 => {
+                74 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::FFFCCEJIFDK(is.read_message()?));
                 },
                 10 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueAeonInfo(is.read_message()?));
                 },
-                114 => {
+                98 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueDifficultyInfo(is.read_message()?));
                 },
-                98 => {
+                66 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::CKAANMDDKCJ(is.read_message()?));
                 },
-                18 => {
+                58 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::NBDACDNBJIK(is.read_message()?));
                 },
-                90 => {
+                122 => {
                     self.DEPKICGAIIM = ::std::option::Option::Some(rogue_game_info::DEPKICGAIIM::RogueLineupInfo(is.read_message()?));
                 },
                 tag => {
@@ -596,28 +596,28 @@ impl ::protobuf::Message for RogueGameInfo {
         if let ::std::option::Option::Some(ref v) = self.DEPKICGAIIM {
             match v {
                 &rogue_game_info::DEPKICGAIIM::RogueBuffInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &rogue_game_info::DEPKICGAIIM::GameMiracleInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
+                &rogue_game_info::DEPKICGAIIM::GameMiracleInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
                 &rogue_game_info::DEPKICGAIIM::FFFCCEJIFDK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &rogue_game_info::DEPKICGAIIM::RogueAeonInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &rogue_game_info::DEPKICGAIIM::RogueDifficultyInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-                },
-                &rogue_game_info::DEPKICGAIIM::CKAANMDDKCJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
+                &rogue_game_info::DEPKICGAIIM::CKAANMDDKCJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
                 &rogue_game_info::DEPKICGAIIM::NBDACDNBJIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &rogue_game_info::DEPKICGAIIM::RogueLineupInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -696,7 +696,7 @@ pub mod rogue_game_info {
         CKAANMDDKCJ(super::super::KAAJBAOAKBO::KAAJBAOAKBO),
         // @@protoc_insertion_point(oneof_field:RogueGameInfo.NBDACDNBJIK)
         NBDACDNBJIK(super::super::FBNJOFCEMIL::FBNJOFCEMIL),
-        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_lineup_info)
+        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue__lineup_info)
         RogueLineupInfo(super::super::OMDEFBABNNB::OMDEFBABNNB),
     }
 
@@ -721,17 +721,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13RogueGameInfo.proto\x1a\x18ChessRogueBuffInfo.proto\x1a\x1bChessRo\
     gueMiracleInfo.proto\x1a\x11FBNJOFCEMIL.proto\x1a\x11FINDAFKPOOF.proto\
     \x1a\x11KAAJBAOAKBO.proto\x1a\x11LADHIKPAJCJ.proto\x1a\x11OHLCJEDCOFN.pr\
-    oto\x1a\x11OMDEFBABNNB.proto\"\xf1\x03\n\rRogueGameInfo\x12=\n\x0frogue_\
-    buff_info\x18\x0f\x20\x01(\x0b2\x13.ChessRogueBuffInfoH\0R\rrogueBuffInf\
-    o\x12D\n\x11game_miracle_info\x18\x06\x20\x01(\x0b2\x16.ChessRogueMiracl\
-    eInfoH\0R\x0fgameMiracleInfo\x120\n\x0bFFFCCEJIFDK\x18\x08\x20\x01(\x0b2\
+    oto\x1a\x11OMDEFBABNNB.proto\"\xf2\x03\n\rRogueGameInfo\x12=\n\x0frogue_\
+    buff_info\x18\x06\x20\x01(\x0b2\x13.ChessRogueBuffInfoH\0R\rrogueBuffInf\
+    o\x12D\n\x11game_miracle_info\x18\x0e\x20\x01(\x0b2\x16.ChessRogueMiracl\
+    eInfoH\0R\x0fgameMiracleInfo\x120\n\x0bFFFCCEJIFDK\x18\t\x20\x01(\x0b2\
     \x0c.FINDAFKPOOFH\0R\x0bFFFCCEJIFDK\x126\n\x0frogue_aeon_info\x18\x01\
     \x20\x01(\x0b2\x0c.LADHIKPAJCJH\0R\rrogueAeonInfo\x12B\n\x15rogue_diffic\
-    ulty_info\x18\x0e\x20\x01(\x0b2\x0c.OHLCJEDCOFNH\0R\x13rogueDifficultyIn\
-    fo\x120\n\x0bCKAANMDDKCJ\x18\x0c\x20\x01(\x0b2\x0c.KAAJBAOAKBOH\0R\x0bCK\
-    AANMDDKCJ\x120\n\x0bNBDACDNBJIK\x18\x02\x20\x01(\x0b2\x0c.FBNJOFCEMILH\0\
-    R\x0bNBDACDNBJIK\x12:\n\x11rogue_lineup_info\x18\x0b\x20\x01(\x0b2\x0c.O\
-    MDEFBABNNBH\0R\x0frogueLineupInfoB\r\n\x0bDEPKICGAIIMb\x06proto3\
+    ulty_info\x18\x0c\x20\x01(\x0b2\x0c.OHLCJEDCOFNH\0R\x13rogueDifficultyIn\
+    fo\x120\n\x0bCKAANMDDKCJ\x18\x08\x20\x01(\x0b2\x0c.KAAJBAOAKBOH\0R\x0bCK\
+    AANMDDKCJ\x120\n\x0bNBDACDNBJIK\x18\x07\x20\x01(\x0b2\x0c.FBNJOFCEMILH\0\
+    R\x0bNBDACDNBJIK\x12;\n\x12rogue__lineup_info\x18\x0f\x20\x01(\x0b2\x0c.\
+    OMDEFBABNNBH\0R\x0frogueLineupInfoB\r\n\x0bDEPKICGAIIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

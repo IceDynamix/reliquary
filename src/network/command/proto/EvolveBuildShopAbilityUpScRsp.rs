@@ -86,13 +86,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.NECILJOJGAN = is.read_uint32()?;
                 },
                 96 => {
                     self.level = is.read_uint32()?;
                 },
-                112 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NECILJOJGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NECILJOJGAN);
+            my_size += ::protobuf::rt::uint32_size(8, self.NECILJOJGAN);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NECILJOJGAN != 0 {
-            os.write_uint32(4, self.NECILJOJGAN)?;
+            os.write_uint32(8, self.NECILJOJGAN)?;
         }
         if self.level != 0 {
             os.write_uint32(12, self.level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityUpScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#EvolveBuildShopAbilityUpScRsp.proto\"q\n\x1dEvolveBuildShopAbilityUpS\
-    cRsp\x12\x20\n\x0bNECILJOJGAN\x18\x04\x20\x01(\rR\x0bNECILJOJGAN\x12\x14\
-    \n\x05level\x18\x0c\x20\x01(\rR\x05level\x12\x18\n\x07retcode\x18\x0e\
+    cRsp\x12\x20\n\x0bNECILJOJGAN\x18\x08\x20\x01(\rR\x0bNECILJOJGAN\x12\x14\
+    \n\x05level\x18\x0c\x20\x01(\rR\x05level\x12\x18\n\x07retcode\x18\x06\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

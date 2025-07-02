@@ -79,7 +79,7 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                82 => {
                     self.challenge_list.push(is.read_message()?);
                 },
                 58 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for PlayerDisplaySettings {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if let Some(v) = self.JFPCPDCFLMD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDisplaySettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerDisplaySettings.proto\x1a\x11IHKGNJDNALJ.proto\x1a\x11OBIHNG\
-    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x123\n\x0echallenge_list\x18\
-    \x08\x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeList\x12.\n\x0bJFPCPDCFLMD\
-    \x18\x07\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMDb\x06proto3\
+    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x123\n\x0echallenge_list\x18\n\
+    \x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeList\x12.\n\x0bJFPCPDCFLMD\x18\
+    \x07\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

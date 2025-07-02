@@ -72,7 +72,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"R\n\x15Gr\
-    oupStateChangeCsReq\x129\n\x10group_state_info\x18\t\x20\x01(\x0b2\x0f.G\
-    roupStateInfoR\x0egroupStateInfob\x06proto3\
+    oupStateChangeCsReq\x129\n\x10group_state_info\x18\x02\x20\x01(\x0b2\x0f\
+    .GroupStateInfoR\x0egroupStateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

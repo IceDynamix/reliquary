@@ -30,12 +30,12 @@ pub struct ChessRogueDice {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueDice.DHNDAMPBHPP)
     pub DHNDAMPBHPP: u32,
+    // @@protoc_insertion_point(field:ChessRogueDice.IGBCACGFCKB)
+    pub IGBCACGFCKB: ::std::vec::Vec<super::HNGIHJJIACO::HNGIHJJIACO>,
     // @@protoc_insertion_point(field:ChessRogueDice.OABLIOFCOFO)
     pub OABLIOFCOFO: u32,
     // @@protoc_insertion_point(field:ChessRogueDice.HMKEBDLFLPG)
     pub HMKEBDLFLPG: u32,
-    // @@protoc_insertion_point(field:ChessRogueDice.IGBCACGFCKB)
-    pub IGBCACGFCKB: ::std::vec::Vec<super::HNGIHJJIACO::HNGIHJJIACO>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueDice.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl ChessRogueDice {
             |m: &ChessRogueDice| { &m.DHNDAMPBHPP },
             |m: &mut ChessRogueDice| { &mut m.DHNDAMPBHPP },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IGBCACGFCKB",
+            |m: &ChessRogueDice| { &m.IGBCACGFCKB },
+            |m: &mut ChessRogueDice| { &mut m.IGBCACGFCKB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OABLIOFCOFO",
             |m: &ChessRogueDice| { &m.OABLIOFCOFO },
@@ -69,11 +74,6 @@ impl ChessRogueDice {
             "HMKEBDLFLPG",
             |m: &ChessRogueDice| { &m.HMKEBDLFLPG },
             |m: &mut ChessRogueDice| { &mut m.HMKEBDLFLPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IGBCACGFCKB",
-            |m: &ChessRogueDice| { &m.IGBCACGFCKB },
-            |m: &mut ChessRogueDice| { &mut m.IGBCACGFCKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueDice>(
             "ChessRogueDice",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChessRogueDice {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.DHNDAMPBHPP = is.read_uint32()?;
                 },
-                120 => {
+                82 => {
+                    self.IGBCACGFCKB.push(is.read_message()?);
+                },
+                64 => {
                     self.OABLIOFCOFO = is.read_uint32()?;
                 },
-                16 => {
+                40 => {
                     self.HMKEBDLFLPG = is.read_uint32()?;
-                },
-                90 => {
-                    self.IGBCACGFCKB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,18 +118,18 @@ impl ::protobuf::Message for ChessRogueDice {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DHNDAMPBHPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DHNDAMPBHPP);
-        }
-        if self.OABLIOFCOFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OABLIOFCOFO);
-        }
-        if self.HMKEBDLFLPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HMKEBDLFLPG);
+            my_size += ::protobuf::rt::uint32_size(1, self.DHNDAMPBHPP);
         }
         for value in &self.IGBCACGFCKB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.OABLIOFCOFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OABLIOFCOFO);
+        }
+        if self.HMKEBDLFLPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HMKEBDLFLPG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -137,17 +137,17 @@ impl ::protobuf::Message for ChessRogueDice {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DHNDAMPBHPP != 0 {
-            os.write_uint32(7, self.DHNDAMPBHPP)?;
-        }
-        if self.OABLIOFCOFO != 0 {
-            os.write_uint32(15, self.OABLIOFCOFO)?;
-        }
-        if self.HMKEBDLFLPG != 0 {
-            os.write_uint32(2, self.HMKEBDLFLPG)?;
+            os.write_uint32(1, self.DHNDAMPBHPP)?;
         }
         for v in &self.IGBCACGFCKB {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.OABLIOFCOFO != 0 {
+            os.write_uint32(8, self.OABLIOFCOFO)?;
+        }
+        if self.HMKEBDLFLPG != 0 {
+            os.write_uint32(5, self.HMKEBDLFLPG)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,18 +166,18 @@ impl ::protobuf::Message for ChessRogueDice {
 
     fn clear(&mut self) {
         self.DHNDAMPBHPP = 0;
+        self.IGBCACGFCKB.clear();
         self.OABLIOFCOFO = 0;
         self.HMKEBDLFLPG = 0;
-        self.IGBCACGFCKB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueDice {
         static instance: ChessRogueDice = ChessRogueDice {
             DHNDAMPBHPP: 0,
+            IGBCACGFCKB: ::std::vec::Vec::new(),
             OABLIOFCOFO: 0,
             HMKEBDLFLPG: 0,
-            IGBCACGFCKB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueDice {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14ChessRogueDice.proto\x1a\x11HNGIHJJIACO.proto\"\xa6\x01\n\x0eChess\
-    RogueDice\x12\x20\n\x0bDHNDAMPBHPP\x18\x07\x20\x01(\rR\x0bDHNDAMPBHPP\
-    \x12\x20\n\x0bOABLIOFCOFO\x18\x0f\x20\x01(\rR\x0bOABLIOFCOFO\x12\x20\n\
-    \x0bHMKEBDLFLPG\x18\x02\x20\x01(\rR\x0bHMKEBDLFLPG\x12.\n\x0bIGBCACGFCKB\
-    \x18\x0b\x20\x03(\x0b2\x0c.HNGIHJJIACOR\x0bIGBCACGFCKBb\x06proto3\
+    RogueDice\x12\x20\n\x0bDHNDAMPBHPP\x18\x01\x20\x01(\rR\x0bDHNDAMPBHPP\
+    \x12.\n\x0bIGBCACGFCKB\x18\n\x20\x03(\x0b2\x0c.HNGIHJJIACOR\x0bIGBCACGFC\
+    KB\x12\x20\n\x0bOABLIOFCOFO\x18\x08\x20\x01(\rR\x0bOABLIOFCOFO\x12\x20\n\
+    \x0bHMKEBDLFLPG\x18\x05\x20\x01(\rR\x0bHMKEBDLFLPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

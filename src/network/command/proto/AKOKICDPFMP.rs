@@ -48,7 +48,7 @@ impl AKOKICDPFMP {
         ::std::default::Default::default()
     }
 
-    // .LBAOGIBPJOP LGPIEMDLHJM = 1365;
+    // .LBAOGIBPJOP LGPIEMDLHJM = 775;
 
     pub fn LGPIEMDLHJM(&self) -> &super::LBAOGIBPJOP::LBAOGIBPJOP {
         match self.GFIPHJBLGBN {
@@ -97,7 +97,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .GLDNBPFCNHD PHMCJEJIDJA = 1070;
+    // .GLDNBPFCNHD PHMCJEJIDJA = 144;
 
     pub fn PHMCJEJIDJA(&self) -> &super::GLDNBPFCNHD::GLDNBPFCNHD {
         match self.GFIPHJBLGBN {
@@ -146,7 +146,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .ICAOOPPMJDJ rogue_finish_info = 1206;
+    // .ICAOOPPMJDJ rogue_finish_info = 307;
 
     pub fn rogue_finish_info(&self) -> &super::ICAOOPPMJDJ::ICAOOPPMJDJ {
         match self.GFIPHJBLGBN {
@@ -195,7 +195,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .MAOGFDKDCKM MEJDMJIKIMO = 742;
+    // .MAOGFDKDCKM MEJDMJIKIMO = 902;
 
     pub fn MEJDMJIKIMO(&self) -> &super::MAOGFDKDCKM::MAOGFDKDCKM {
         match self.GFIPHJBLGBN {
@@ -244,7 +244,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .GOCKGIGBDCG JHFGDIJPFCG = 1622;
+    // .GOCKGIGBDCG JHFGDIJPFCG = 653;
 
     pub fn JHFGDIJPFCG(&self) -> &super::GOCKGIGBDCG::GOCKGIGBDCG {
         match self.GFIPHJBLGBN {
@@ -355,22 +355,22 @@ impl ::protobuf::Message for AKOKICDPFMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.AHEHKCILDFA = is.read_uint32()?;
                 },
-                10922 => {
+                6202 => {
                     self.GFIPHJBLGBN = ::std::option::Option::Some(akokicdpfmp::GFIPHJBLGBN::LGPIEMDLHJM(is.read_message()?));
                 },
-                8562 => {
+                1154 => {
                     self.GFIPHJBLGBN = ::std::option::Option::Some(akokicdpfmp::GFIPHJBLGBN::PHMCJEJIDJA(is.read_message()?));
                 },
-                9650 => {
+                2458 => {
                     self.GFIPHJBLGBN = ::std::option::Option::Some(akokicdpfmp::GFIPHJBLGBN::RogueFinishInfo(is.read_message()?));
                 },
-                5938 => {
+                7218 => {
                     self.GFIPHJBLGBN = ::std::option::Option::Some(akokicdpfmp::GFIPHJBLGBN::MEJDMJIKIMO(is.read_message()?));
                 },
-                12978 => {
+                5226 => {
                     self.GFIPHJBLGBN = ::std::option::Option::Some(akokicdpfmp::GFIPHJBLGBN::JHFGDIJPFCG(is.read_message()?));
                 },
                 tag => {
@@ -386,7 +386,7 @@ impl ::protobuf::Message for AKOKICDPFMP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AHEHKCILDFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AHEHKCILDFA);
+            my_size += ::protobuf::rt::uint32_size(2, self.AHEHKCILDFA);
         }
         if let ::std::option::Option::Some(ref v) = self.GFIPHJBLGBN {
             match v {
@@ -419,24 +419,24 @@ impl ::protobuf::Message for AKOKICDPFMP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AHEHKCILDFA != 0 {
-            os.write_uint32(15, self.AHEHKCILDFA)?;
+            os.write_uint32(2, self.AHEHKCILDFA)?;
         }
         if let ::std::option::Option::Some(ref v) = self.GFIPHJBLGBN {
             match v {
                 &akokicdpfmp::GFIPHJBLGBN::LGPIEMDLHJM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1365, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(775, v, os)?;
                 },
                 &akokicdpfmp::GFIPHJBLGBN::PHMCJEJIDJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1070, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(144, v, os)?;
                 },
                 &akokicdpfmp::GFIPHJBLGBN::RogueFinishInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1206, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(307, v, os)?;
                 },
                 &akokicdpfmp::GFIPHJBLGBN::MEJDMJIKIMO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(742, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(902, v, os)?;
                 },
                 &akokicdpfmp::GFIPHJBLGBN::JHFGDIJPFCG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1622, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(653, v, os)?;
                 },
             };
         }
@@ -532,14 +532,14 @@ pub mod akokicdpfmp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AKOKICDPFMP.proto\x1a\x11GLDNBPFCNHD.proto\x1a\x11GOCKGIGBDCG.prot\
     o\x1a\x11ICAOOPPMJDJ.proto\x1a\x11LBAOGIBPJOP.proto\x1a\x11MAOGFDKDCKM.p\
-    roto\"\xc7\x02\n\x0bAKOKICDPFMP\x12\x20\n\x0bAHEHKCILDFA\x18\x0f\x20\x01\
-    (\rR\x0bAHEHKCILDFA\x121\n\x0bLGPIEMDLHJM\x18\xd5\n\x20\x01(\x0b2\x0c.LB\
-    AOGIBPJOPH\0R\x0bLGPIEMDLHJM\x121\n\x0bPHMCJEJIDJA\x18\xae\x08\x20\x01(\
-    \x0b2\x0c.GLDNBPFCNHDH\0R\x0bPHMCJEJIDJA\x12;\n\x11rogue_finish_info\x18\
-    \xb6\t\x20\x01(\x0b2\x0c.ICAOOPPMJDJH\0R\x0frogueFinishInfo\x121\n\x0bME\
-    JDMJIKIMO\x18\xe6\x05\x20\x01(\x0b2\x0c.MAOGFDKDCKMH\0R\x0bMEJDMJIKIMO\
-    \x121\n\x0bJHFGDIJPFCG\x18\xd6\x0c\x20\x01(\x0b2\x0c.GOCKGIGBDCGH\0R\x0b\
-    JHFGDIJPFCGB\r\n\x0bGFIPHJBLGBNb\x06proto3\
+    roto\"\xc7\x02\n\x0bAKOKICDPFMP\x12\x20\n\x0bAHEHKCILDFA\x18\x02\x20\x01\
+    (\rR\x0bAHEHKCILDFA\x121\n\x0bLGPIEMDLHJM\x18\x87\x06\x20\x01(\x0b2\x0c.\
+    LBAOGIBPJOPH\0R\x0bLGPIEMDLHJM\x121\n\x0bPHMCJEJIDJA\x18\x90\x01\x20\x01\
+    (\x0b2\x0c.GLDNBPFCNHDH\0R\x0bPHMCJEJIDJA\x12;\n\x11rogue_finish_info\
+    \x18\xb3\x02\x20\x01(\x0b2\x0c.ICAOOPPMJDJH\0R\x0frogueFinishInfo\x121\n\
+    \x0bMEJDMJIKIMO\x18\x86\x07\x20\x01(\x0b2\x0c.MAOGFDKDCKMH\0R\x0bMEJDMJI\
+    KIMO\x121\n\x0bJHFGDIJPFCG\x18\x8d\x05\x20\x01(\x0b2\x0c.GOCKGIGBDCGH\0R\
+    \x0bJHFGDIJPFCGB\r\n\x0bGFIPHJBLGBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

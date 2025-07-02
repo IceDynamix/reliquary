@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRoguePickAvatarInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.LGHCAHBBCAM)
     pub LGHCAHBBCAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncRoguePickAvatarInfoScNotify.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRoguePickAvatarInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncRoguePickAvatarInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &SyncRoguePickAvatarInfoScNotify| { &m.base_avatar_id_list },
-            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.base_avatar_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LGHCAHBBCAM",
             |m: &SyncRoguePickAvatarInfoScNotify| { &m.LGHCAHBBCAM },
             |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.LGHCAHBBCAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "base_avatar_id_list",
+            |m: &SyncRoguePickAvatarInfoScNotify| { &m.base_avatar_id_list },
+            |m: &mut SyncRoguePickAvatarInfoScNotify| { &mut m.base_avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRoguePickAvatarInfoScNotify>(
             "SyncRoguePickAvatarInfoScNotify",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
-                },
-                96 => {
-                    self.base_avatar_id_list.push(is.read_uint32()?);
-                },
-                58 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.LGHCAHBBCAM)?;
                 },
-                56 => {
+                24 => {
                     self.LGHCAHBBCAM.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                },
+                80 => {
+                    self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.base_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.LGHCAHBBCAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.base_avatar_id_list)?;
-        os.write_repeated_packed_uint32(7, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(3, &self.LGHCAHBBCAM)?;
+        os.write_repeated_packed_uint32(10, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id_list.clear();
         self.LGHCAHBBCAM.clear();
+        self.base_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRoguePickAvatarInfoScNotify {
         static instance: SyncRoguePickAvatarInfoScNotify = SyncRoguePickAvatarInfoScNotify {
-            base_avatar_id_list: ::std::vec::Vec::new(),
             LGHCAHBBCAM: ::std::vec::Vec::new(),
+            base_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRoguePickAvatarInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SyncRoguePickAvatarInfoScNotify.proto\"r\n\x1fSyncRoguePickAvatarInfo\
-    ScNotify\x12-\n\x13base_avatar_id_list\x18\x0c\x20\x03(\rR\x10baseAvatar\
-    IdList\x12\x20\n\x0bLGHCAHBBCAM\x18\x07\x20\x03(\rR\x0bLGHCAHBBCAMb\x06p\
-    roto3\
+    ScNotify\x12\x20\n\x0bLGHCAHBBCAM\x18\x03\x20\x03(\rR\x0bLGHCAHBBCAM\x12\
+    -\n\x13base_avatar_id_list\x18\n\x20\x03(\rR\x10baseAvatarIdListb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

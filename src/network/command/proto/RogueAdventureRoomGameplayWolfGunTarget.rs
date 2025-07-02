@@ -45,7 +45,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         ::std::default::Default::default()
     }
 
-    // .AHCCDBFMNDI target_none = 8;
+    // .AHCCDBFMNDI target_none = 7;
 
     pub fn target_none(&self) -> &super::AHCCDBFMNDI::AHCCDBFMNDI {
         match self.TargetImplOneofCase {
@@ -94,7 +94,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .AOKIJGCOAPD target_coin = 12;
+    // .AOKIJGCOAPD target_coin = 2;
 
     pub fn target_coin(&self) -> &super::AOKIJGCOAPD::AOKIJGCOAPD {
         match self.TargetImplOneofCase {
@@ -192,7 +192,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .EKELNNLPLOD target_ruanmei = 10;
+    // .EKELNNLPLOD target_ruanmei = 12;
 
     pub fn target_ruanmei(&self) -> &super::EKELNNLPLOD::EKELNNLPLOD {
         match self.TargetImplOneofCase {
@@ -291,16 +291,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                58 => {
                     self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(is.read_message()?));
                 },
-                98 => {
+                18 => {
                     self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(is.read_message()?));
                 },
                 114 => {
                     self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(is.read_message()?));
                 },
-                82 => {
+                98 => {
                     self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(is.read_message()?));
                 },
                 tag => {
@@ -344,16 +344,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
         if let ::std::option::Option::Some(ref v) = self.TargetImplOneofCase {
             match v {
                 &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -445,11 +445,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n-RogueAdventureRoomGameplayWolfGunTarget.proto\x1a\x11AHCCDBFMNDI.prot\
     o\x1a\x11AOKIJGCOAPD.proto\x1a\x11CIHFCLEAKIJ.proto\x1a\x11EKELNNLPLOD.p\
     roto\"\x90\x02\n'RogueAdventureRoomGameplayWolfGunTarget\x12/\n\x0btarge\
-    t_none\x18\x08\x20\x01(\x0b2\x0c.AHCCDBFMNDIH\0R\ntargetNone\x12/\n\x0bt\
-    arget_coin\x18\x0c\x20\x01(\x0b2\x0c.AOKIJGCOAPDH\0R\ntargetCoin\x125\n\
+    t_none\x18\x07\x20\x01(\x0b2\x0c.AHCCDBFMNDIH\0R\ntargetNone\x12/\n\x0bt\
+    arget_coin\x18\x02\x20\x01(\x0b2\x0c.AOKIJGCOAPDH\0R\ntargetCoin\x125\n\
     \x0etarget_miracle\x18\x0e\x20\x01(\x0b2\x0c.CIHFCLEAKIJH\0R\rtargetMira\
-    cle\x125\n\x0etarget_ruanmei\x18\n\x20\x01(\x0b2\x0c.EKELNNLPLODH\0R\rta\
-    rgetRuanmeiB\x15\n\x13TargetImplOneofCaseb\x06proto3\
+    cle\x125\n\x0etarget_ruanmei\x18\x0c\x20\x01(\x0b2\x0c.EKELNNLPLODH\0R\r\
+    targetRuanmeiB\x15\n\x13TargetImplOneofCaseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

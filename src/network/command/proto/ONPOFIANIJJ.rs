@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONPOFIANIJJ {
     // message fields
-    // @@protoc_insertion_point(field:ONPOFIANIJJ.MDMGKHLHIIN)
-    pub MDMGKHLHIIN: u32,
     // @@protoc_insertion_point(field:ONPOFIANIJJ.LGIIAHIDLMG)
     pub LGIIAHIDLMG: u32,
+    // @@protoc_insertion_point(field:ONPOFIANIJJ.MDMGKHLHIIN)
+    pub MDMGKHLHIIN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ONPOFIANIJJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ONPOFIANIJJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDMGKHLHIIN",
-            |m: &ONPOFIANIJJ| { &m.MDMGKHLHIIN },
-            |m: &mut ONPOFIANIJJ| { &mut m.MDMGKHLHIIN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGIIAHIDLMG",
             |m: &ONPOFIANIJJ| { &m.LGIIAHIDLMG },
             |m: &mut ONPOFIANIJJ| { &mut m.LGIIAHIDLMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDMGKHLHIIN",
+            |m: &ONPOFIANIJJ| { &m.MDMGKHLHIIN },
+            |m: &mut ONPOFIANIJJ| { &mut m.MDMGKHLHIIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONPOFIANIJJ>(
             "ONPOFIANIJJ",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ONPOFIANIJJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.MDMGKHLHIIN = is.read_uint32()?;
-                },
-                104 => {
                     self.LGIIAHIDLMG = is.read_uint32()?;
+                },
+                64 => {
+                    self.MDMGKHLHIIN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ONPOFIANIJJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MDMGKHLHIIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MDMGKHLHIIN);
-        }
         if self.LGIIAHIDLMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LGIIAHIDLMG);
+            my_size += ::protobuf::rt::uint32_size(2, self.LGIIAHIDLMG);
+        }
+        if self.MDMGKHLHIIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MDMGKHLHIIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ONPOFIANIJJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MDMGKHLHIIN != 0 {
-            os.write_uint32(2, self.MDMGKHLHIIN)?;
-        }
         if self.LGIIAHIDLMG != 0 {
-            os.write_uint32(13, self.LGIIAHIDLMG)?;
+            os.write_uint32(2, self.LGIIAHIDLMG)?;
+        }
+        if self.MDMGKHLHIIN != 0 {
+            os.write_uint32(8, self.MDMGKHLHIIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ONPOFIANIJJ {
     }
 
     fn clear(&mut self) {
-        self.MDMGKHLHIIN = 0;
         self.LGIIAHIDLMG = 0;
+        self.MDMGKHLHIIN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONPOFIANIJJ {
         static instance: ONPOFIANIJJ = ONPOFIANIJJ {
-            MDMGKHLHIIN: 0,
             LGIIAHIDLMG: 0,
+            MDMGKHLHIIN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ONPOFIANIJJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONPOFIANIJJ.proto\"Q\n\x0bONPOFIANIJJ\x12\x20\n\x0bMDMGKHLHIIN\x18\
-    \x02\x20\x01(\rR\x0bMDMGKHLHIIN\x12\x20\n\x0bLGIIAHIDLMG\x18\r\x20\x01(\
-    \rR\x0bLGIIAHIDLMGb\x06proto3\
+    \n\x11ONPOFIANIJJ.proto\"Q\n\x0bONPOFIANIJJ\x12\x20\n\x0bLGIIAHIDLMG\x18\
+    \x02\x20\x01(\rR\x0bLGIIAHIDLMG\x12\x20\n\x0bMDMGKHLHIIN\x18\x08\x20\x01\
+    (\rR\x0bMDMGKHLHIINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

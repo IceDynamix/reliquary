@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelCacheNotifyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::CancelCacheType::CancelCacheType>,
-    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.daily_index)
-    pub daily_index: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.KCLJMCAKOJF)
     pub KCLJMCAKOJF: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.daily_index)
+    pub daily_index: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CancelCacheNotifyCsReq.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::CancelCacheType::CancelCacheType>,
     // special fields
     // @@protoc_insertion_point(special_field:CancelCacheNotifyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl CancelCacheNotifyCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &CancelCacheNotifyCsReq| { &m.type_ },
-            |m: &mut CancelCacheNotifyCsReq| { &mut m.type_ },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KCLJMCAKOJF",
+            |m: &CancelCacheNotifyCsReq| { &m.KCLJMCAKOJF },
+            |m: &mut CancelCacheNotifyCsReq| { &mut m.KCLJMCAKOJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "daily_index",
             |m: &CancelCacheNotifyCsReq| { &m.daily_index },
             |m: &mut CancelCacheNotifyCsReq| { &mut m.daily_index },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KCLJMCAKOJF",
-            |m: &CancelCacheNotifyCsReq| { &m.KCLJMCAKOJF },
-            |m: &mut CancelCacheNotifyCsReq| { &mut m.KCLJMCAKOJF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &CancelCacheNotifyCsReq| { &m.type_ },
+            |m: &mut CancelCacheNotifyCsReq| { &mut m.type_ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelCacheNotifyCsReq>(
             "CancelCacheNotifyCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.type_ = is.read_enum_or_unknown()?;
+                66 => {
+                    self.KCLJMCAKOJF.push(is.read_string()?);
                 },
-                18 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.daily_index)?;
                 },
-                16 => {
+                40 => {
                     self.daily_index.push(is.read_uint32()?);
                 },
-                122 => {
-                    self.KCLJMCAKOJF.push(is.read_string()?);
+                24 => {
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.daily_index);
         for value in &self.KCLJMCAKOJF {
-            my_size += ::protobuf::rt::string_size(15, &value);
+            my_size += ::protobuf::rt::string_size(8, &value);
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.daily_index);
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.type_.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
-        os.write_repeated_packed_uint32(2, &self.daily_index)?;
         for v in &self.KCLJMCAKOJF {
-            os.write_string(15, &v)?;
+            os.write_string(8, &v)?;
         };
+        os.write_repeated_packed_uint32(5, &self.daily_index)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for CancelCacheNotifyCsReq {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE);
-        self.daily_index.clear();
         self.KCLJMCAKOJF.clear();
+        self.daily_index.clear();
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::CancelCacheType::CancelCacheType::CACHE_NOTIFY_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelCacheNotifyCsReq {
         static instance: CancelCacheNotifyCsReq = CancelCacheNotifyCsReq {
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            daily_index: ::std::vec::Vec::new(),
             KCLJMCAKOJF: ::std::vec::Vec::new(),
+            daily_index: ::std::vec::Vec::new(),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CancelCacheNotifyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCancelCacheNotifyCsReq.proto\x1a\x15CancelCacheType.proto\"\x81\
-    \x01\n\x16CancelCacheNotifyCsReq\x12$\n\x04type\x18\x01\x20\x01(\x0e2\
-    \x10.CancelCacheTypeR\x04type\x12\x1f\n\x0bdaily_index\x18\x02\x20\x03(\
-    \rR\ndailyIndex\x12\x20\n\x0bKCLJMCAKOJF\x18\x0f\x20\x03(\tR\x0bKCLJMCAK\
-    OJFb\x06proto3\
+    \x01\n\x16CancelCacheNotifyCsReq\x12\x20\n\x0bKCLJMCAKOJF\x18\x08\x20\
+    \x03(\tR\x0bKCLJMCAKOJF\x12\x1f\n\x0bdaily_index\x18\x05\x20\x03(\rR\nda\
+    ilyIndex\x12$\n\x04type\x18\x03\x20\x01(\x0e2\x10.CancelCacheTypeR\x04ty\
+    peb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

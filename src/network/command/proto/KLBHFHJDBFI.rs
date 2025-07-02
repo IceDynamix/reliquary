@@ -30,12 +30,12 @@ pub struct KLBHFHJDBFI {
     // message fields
     // @@protoc_insertion_point(field:KLBHFHJDBFI.NCNAONIFPFM)
     pub NCNAONIFPFM: bool,
-    // @@protoc_insertion_point(field:KLBHFHJDBFI.BMCJHONBHJH)
-    pub BMCJHONBHJH: u32,
     // @@protoc_insertion_point(field:KLBHFHJDBFI.IFAIKOIOIDD)
     pub IFAIKOIOIDD: u32,
     // @@protoc_insertion_point(field:KLBHFHJDBFI.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:KLBHFHJDBFI.BMCJHONBHJH)
+    pub BMCJHONBHJH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KLBHFHJDBFI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl KLBHFHJDBFI {
             |m: &mut KLBHFHJDBFI| { &mut m.NCNAONIFPFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMCJHONBHJH",
-            |m: &KLBHFHJDBFI| { &m.BMCJHONBHJH },
-            |m: &mut KLBHFHJDBFI| { &mut m.BMCJHONBHJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFAIKOIOIDD",
             |m: &KLBHFHJDBFI| { &m.IFAIKOIOIDD },
             |m: &mut KLBHFHJDBFI| { &mut m.IFAIKOIOIDD },
@@ -74,6 +69,11 @@ impl KLBHFHJDBFI {
             "level",
             |m: &KLBHFHJDBFI| { &m.level },
             |m: &mut KLBHFHJDBFI| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BMCJHONBHJH",
+            |m: &KLBHFHJDBFI| { &m.BMCJHONBHJH },
+            |m: &mut KLBHFHJDBFI| { &mut m.BMCJHONBHJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KLBHFHJDBFI>(
             "KLBHFHJDBFI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for KLBHFHJDBFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                120 => {
                     self.NCNAONIFPFM = is.read_bool()?;
                 },
-                48 => {
-                    self.BMCJHONBHJH = is.read_uint32()?;
-                },
-                104 => {
+                88 => {
                     self.IFAIKOIOIDD = is.read_uint32()?;
                 },
-                80 => {
+                8 => {
                     self.level = is.read_uint32()?;
+                },
+                40 => {
+                    self.BMCJHONBHJH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for KLBHFHJDBFI {
         if self.NCNAONIFPFM != false {
             my_size += 1 + 1;
         }
-        if self.BMCJHONBHJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BMCJHONBHJH);
-        }
         if self.IFAIKOIOIDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IFAIKOIOIDD);
+            my_size += ::protobuf::rt::uint32_size(11, self.IFAIKOIOIDD);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
+        }
+        if self.BMCJHONBHJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BMCJHONBHJH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for KLBHFHJDBFI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NCNAONIFPFM != false {
-            os.write_bool(8, self.NCNAONIFPFM)?;
-        }
-        if self.BMCJHONBHJH != 0 {
-            os.write_uint32(6, self.BMCJHONBHJH)?;
+            os.write_bool(15, self.NCNAONIFPFM)?;
         }
         if self.IFAIKOIOIDD != 0 {
-            os.write_uint32(13, self.IFAIKOIOIDD)?;
+            os.write_uint32(11, self.IFAIKOIOIDD)?;
         }
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(1, self.level)?;
+        }
+        if self.BMCJHONBHJH != 0 {
+            os.write_uint32(5, self.BMCJHONBHJH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for KLBHFHJDBFI {
 
     fn clear(&mut self) {
         self.NCNAONIFPFM = false;
-        self.BMCJHONBHJH = 0;
         self.IFAIKOIOIDD = 0;
         self.level = 0;
+        self.BMCJHONBHJH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KLBHFHJDBFI {
         static instance: KLBHFHJDBFI = KLBHFHJDBFI {
             NCNAONIFPFM: false,
-            BMCJHONBHJH: 0,
             IFAIKOIOIDD: 0,
             level: 0,
+            BMCJHONBHJH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for KLBHFHJDBFI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KLBHFHJDBFI.proto\"\x89\x01\n\x0bKLBHFHJDBFI\x12\x20\n\x0bNCNAONIF\
-    PFM\x18\x08\x20\x01(\x08R\x0bNCNAONIFPFM\x12\x20\n\x0bBMCJHONBHJH\x18\
-    \x06\x20\x01(\rR\x0bBMCJHONBHJH\x12\x20\n\x0bIFAIKOIOIDD\x18\r\x20\x01(\
-    \rR\x0bIFAIKOIOIDD\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05levelb\x06pro\
-    to3\
+    PFM\x18\x0f\x20\x01(\x08R\x0bNCNAONIFPFM\x12\x20\n\x0bIFAIKOIOIDD\x18\
+    \x0b\x20\x01(\rR\x0bIFAIKOIOIDD\x12\x14\n\x05level\x18\x01\x20\x01(\rR\
+    \x05level\x12\x20\n\x0bBMCJHONBHJH\x18\x05\x20\x01(\rR\x0bBMCJHONBHJHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

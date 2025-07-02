@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyCard {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyCard.card_data_list)
-    pub card_data_list: ::protobuf::MessageField<super::TrainPartyCards::TrainPartyCards>,
     // @@protoc_insertion_point(field:TrainPartyCard.extra_ratio)
     pub extra_ratio: u32,
     // @@protoc_insertion_point(field:TrainPartyCard.has_modify_all_passenger_stat_effect)
     pub has_modify_all_passenger_stat_effect: bool,
+    // @@protoc_insertion_point(field:TrainPartyCard.card_data_list)
+    pub card_data_list: ::protobuf::MessageField<super::TrainPartyCards::TrainPartyCards>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyCard.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl TrainPartyCard {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyCards::TrainPartyCards>(
-            "card_data_list",
-            |m: &TrainPartyCard| { &m.card_data_list },
-            |m: &mut TrainPartyCard| { &mut m.card_data_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "extra_ratio",
             |m: &TrainPartyCard| { &m.extra_ratio },
@@ -67,6 +62,11 @@ impl TrainPartyCard {
             "has_modify_all_passenger_stat_effect",
             |m: &TrainPartyCard| { &m.has_modify_all_passenger_stat_effect },
             |m: &mut TrainPartyCard| { &mut m.has_modify_all_passenger_stat_effect },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyCards::TrainPartyCards>(
+            "card_data_list",
+            |m: &TrainPartyCard| { &m.card_data_list },
+            |m: &mut TrainPartyCard| { &mut m.card_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyCard>(
             "TrainPartyCard",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TrainPartyCard {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.card_data_list)?;
-                },
-                16 => {
+                120 => {
                     self.extra_ratio = is.read_uint32()?;
                 },
-                48 => {
+                64 => {
                     self.has_modify_all_passenger_stat_effect = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.card_data_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for TrainPartyCard {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.card_data_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.extra_ratio != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.extra_ratio);
+            my_size += ::protobuf::rt::uint32_size(15, self.extra_ratio);
         }
         if self.has_modify_all_passenger_stat_effect != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.card_data_list.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TrainPartyCard {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.card_data_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if self.extra_ratio != 0 {
-            os.write_uint32(2, self.extra_ratio)?;
+            os.write_uint32(15, self.extra_ratio)?;
         }
         if self.has_modify_all_passenger_stat_effect != false {
-            os.write_bool(6, self.has_modify_all_passenger_stat_effect)?;
+            os.write_bool(8, self.has_modify_all_passenger_stat_effect)?;
+        }
+        if let Some(v) = self.card_data_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for TrainPartyCard {
     }
 
     fn clear(&mut self) {
-        self.card_data_list.clear();
         self.extra_ratio = 0;
         self.has_modify_all_passenger_stat_effect = false;
+        self.card_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyCard {
         static instance: TrainPartyCard = TrainPartyCard {
-            card_data_list: ::protobuf::MessageField::none(),
             extra_ratio: 0,
             has_modify_all_passenger_stat_effect: false,
+            card_data_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyCard {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14TrainPartyCard.proto\x1a\x15TrainPartyCards.proto\"\xb8\x01\n\x0eT\
-    rainPartyCard\x126\n\x0ecard_data_list\x18\x0e\x20\x01(\x0b2\x10.TrainPa\
-    rtyCardsR\x0ccardDataList\x12\x1f\n\x0bextra_ratio\x18\x02\x20\x01(\rR\n\
-    extraRatio\x12M\n$has_modify_all_passenger_stat_effect\x18\x06\x20\x01(\
-    \x08R\x1fhasModifyAllPassengerStatEffectb\x06proto3\
+    rainPartyCard\x12\x1f\n\x0bextra_ratio\x18\x0f\x20\x01(\rR\nextraRatio\
+    \x12M\n$has_modify_all_passenger_stat_effect\x18\x08\x20\x01(\x08R\x1fha\
+    sModifyAllPassengerStatEffect\x126\n\x0ecard_data_list\x18\x0b\x20\x01(\
+    \x0b2\x10.TrainPartyCardsR\x0ccardDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

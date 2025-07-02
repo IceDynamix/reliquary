@@ -79,7 +79,7 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.FIOCDBIPCGB = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FIOCDBIPCGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FIOCDBIPCGB);
+            my_size += ::protobuf::rt::uint32_size(14, self.FIOCDBIPCGB);
         }
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.uid);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for DeleteFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FIOCDBIPCGB != 0 {
-            os.write_uint32(8, self.FIOCDBIPCGB)?;
+            os.write_uint32(14, self.FIOCDBIPCGB)?;
         }
         if self.uid != 0 {
             os.write_uint32(15, self.uid)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DeleteFriendCsReq.proto\"G\n\x11DeleteFriendCsReq\x12\x20\n\x0bFIO\
-    CDBIPCGB\x18\x08\x20\x01(\rR\x0bFIOCDBIPCGB\x12\x10\n\x03uid\x18\x0f\x20\
+    CDBIPCGB\x18\x0e\x20\x01(\rR\x0bFIOCDBIPCGB\x12\x10\n\x03uid\x18\x0f\x20\
     \x01(\rR\x03uidb\x06proto3\
 ";
 

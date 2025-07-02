@@ -45,7 +45,7 @@ impl RogueTournHandBookNotify {
         ::std::default::Default::default()
     }
 
-    // .JNIAOGIIOGB IIHOPMEEAJA = 11;
+    // .JNIAOGIIOGB IIHOPMEEAJA = 6;
 
     pub fn IIHOPMEEAJA(&self) -> &super::JNIAOGIIOGB::JNIAOGIIOGB {
         match self.PGOCCMGHLHK {
@@ -94,7 +94,7 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .JCCCACNFDJG GPOLBDGOOOD = 10;
+    // .JCCCACNFDJG GPOLBDGOOOD = 9;
 
     pub fn GPOLBDGOOOD(&self) -> &super::JCCCACNFDJG::JCCCACNFDJG {
         match self.PGOCCMGHLHK {
@@ -143,7 +143,7 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .JFIHGDPOIID ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF = 5;
+    // .JFIHGDPOIID ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF = 12;
 
     pub fn ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&self) -> &super::JFIHGDPOIID::JFIHGDPOIID {
         match self.PGOCCMGHLHK {
@@ -192,7 +192,7 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .ECGOCHPMCPD NFLDODIABCL = 3;
+    // .ECGOCHPMCPD NFLDODIABCL = 11;
 
     pub fn NFLDODIABCL(&self) -> &super::ECGOCHPMCPD::ECGOCHPMCPD {
         match self.PGOCCMGHLHK {
@@ -241,7 +241,7 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .APFJLOFINFJ HPDBJALEMMO = 9;
+    // .APFJLOFINFJ HPDBJALEMMO = 14;
 
     pub fn HPDBJALEMMO(&self) -> &super::APFJLOFINFJ::APFJLOFINFJ {
         match self.PGOCCMGHLHK {
@@ -290,7 +290,7 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .FIDFNNCJAJE JMIDLLDKJBI = 13;
+    // .FIDFNNCJAJE JMIDLLDKJBI = 3;
 
     pub fn JMIDLLDKJBI(&self) -> &super::FIDFNNCJAJE::FIDFNNCJAJE {
         match self.PGOCCMGHLHK {
@@ -403,22 +403,22 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                50 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(is.read_message()?));
                 },
-                82 => {
+                74 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(is.read_message()?));
                 },
-                42 => {
+                98 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(is.read_message()?));
                 },
-                26 => {
+                90 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(is.read_message()?));
                 },
-                74 => {
+                114 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(is.read_message()?));
                 },
-                106 => {
+                26 => {
                     self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(is.read_message()?));
                 },
                 tag => {
@@ -470,22 +470,22 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
         if let ::std::option::Option::Some(ref v) = self.PGOCCMGHLHK {
             match v {
                 &rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-                },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
+                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
                 &rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -583,14 +583,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueTournHandBookNotify.proto\x1a\x11APFJLOFINFJ.proto\x1a\x11ECG\
     OCHPMCPD.proto\x1a\x11FIDFNNCJAJE.proto\x1a\x11JCCCACNFDJG.proto\x1a\x11\
     JFIHGDPOIID.proto\x1a\x11JNIAOGIIOGB.proto\"\x8f\x03\n\x18RogueTournHand\
-    BookNotify\x120\n\x0bIIHOPMEEAJA\x18\x0b\x20\x01(\x0b2\x0c.JNIAOGIIOGBH\
-    \0R\x0bIIHOPMEEAJA\x120\n\x0bGPOLBDGOOOD\x18\n\x20\x01(\x0b2\x0c.JCCCACN\
+    BookNotify\x120\n\x0bIIHOPMEEAJA\x18\x06\x20\x01(\x0b2\x0c.JNIAOGIIOGBH\
+    \0R\x0bIIHOPMEEAJA\x120\n\x0bGPOLBDGOOOD\x18\t\x20\x01(\x0b2\x0c.JCCCACN\
     FDJGH\0R\x0bGPOLBDGOOOD\x12j\n+ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BU\
-    FF\x18\x05\x20\x01(\x0b2\x0c.JFIHGDPOIIDH\0R%ROGUECOMMONACTIONRESULTSOUR\
-    CETYPEBUFF\x120\n\x0bNFLDODIABCL\x18\x03\x20\x01(\x0b2\x0c.ECGOCHPMCPDH\
-    \0R\x0bNFLDODIABCL\x120\n\x0bHPDBJALEMMO\x18\t\x20\x01(\x0b2\x0c.APFJLOF\
-    INFJH\0R\x0bHPDBJALEMMO\x120\n\x0bJMIDLLDKJBI\x18\r\x20\x01(\x0b2\x0c.FI\
-    DFNNCJAJEH\0R\x0bJMIDLLDKJBIB\r\n\x0bPGOCCMGHLHKb\x06proto3\
+    FF\x18\x0c\x20\x01(\x0b2\x0c.JFIHGDPOIIDH\0R%ROGUECOMMONACTIONRESULTSOUR\
+    CETYPEBUFF\x120\n\x0bNFLDODIABCL\x18\x0b\x20\x01(\x0b2\x0c.ECGOCHPMCPDH\
+    \0R\x0bNFLDODIABCL\x120\n\x0bHPDBJALEMMO\x18\x0e\x20\x01(\x0b2\x0c.APFJL\
+    OFINFJH\0R\x0bHPDBJALEMMO\x120\n\x0bJMIDLLDKJBI\x18\x03\x20\x01(\x0b2\
+    \x0c.FIDFNNCJAJEH\0R\x0bJMIDLLDKJBIB\r\n\x0bPGOCCMGHLHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

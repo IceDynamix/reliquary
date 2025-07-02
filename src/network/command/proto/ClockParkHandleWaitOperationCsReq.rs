@@ -50,7 +50,7 @@ impl ClockParkHandleWaitOperationCsReq {
         ::std::default::Default::default()
     }
 
-    // .OBNONMHMECK JFBCKCLPAKO = 9;
+    // .OBNONMHMECK JFBCKCLPAKO = 6;
 
     pub fn JFBCKCLPAKO(&self) -> &super::OBNONMHMECK::OBNONMHMECK {
         match self.DBPOBFJIJIK {
@@ -99,7 +99,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .FFOMIBNCFKI IPIKFLCEFLA = 8;
+    // .FFOMIBNCFKI IPIKFLCEFLA = 5;
 
     pub fn IPIKFLCEFLA(&self) -> &super::FFOMIBNCFKI::FFOMIBNCFKI {
         match self.DBPOBFJIJIK {
@@ -148,7 +148,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .AJEHAMDABNA MEGNBBFILNL = 7;
+    // .AJEHAMDABNA MEGNBBFILNL = 15;
 
     pub fn MEGNBBFILNL(&self) -> &super::AJEHAMDABNA::AJEHAMDABNA {
         match self.DBPOBFJIJIK {
@@ -197,7 +197,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .AMGHDCABJMJ ABKKDHAPCHN = 13;
+    // .AMGHDCABJMJ ABKKDHAPCHN = 14;
 
     pub fn ABKKDHAPCHN(&self) -> &super::AMGHDCABJMJ::AMGHDCABJMJ {
         match self.DBPOBFJIJIK {
@@ -246,7 +246,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .INNNICFOLII LIHJMEINGIK = 6;
+    // .INNNICFOLII LIHJMEINGIK = 9;
 
     pub fn LIHJMEINGIK(&self) -> &super::INNNICFOLII::INNNICFOLII {
         match self.DBPOBFJIJIK {
@@ -295,7 +295,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .CEOONFLONDJ LMGGLCNCDHF = 5;
+    // .CEOONFLONDJ LMGGLCNCDHF = 4;
 
     pub fn LMGGLCNCDHF(&self) -> &super::CEOONFLONDJ::CEOONFLONDJ {
         match self.DBPOBFJIJIK {
@@ -344,7 +344,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .HELNOIHMDHA FNGFOAEPFJN = 11;
+    // .HELNOIHMDHA FNGFOAEPFJN = 3;
 
     pub fn FNGFOAEPFJN(&self) -> &super::HELNOIHMDHA::HELNOIHMDHA {
         match self.DBPOBFJIJIK {
@@ -393,7 +393,7 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // uint32 OBPFBLNBFKI = 12;
+    // uint32 OBPFBLNBFKI = 7;
 
     pub fn OBPFBLNBFKI(&self) -> u32 {
         match self.DBPOBFJIJIK {
@@ -508,31 +508,31 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
                 8 => {
                     self.script_id = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.AHIDJBJGGPP = is.read_uint32()?;
                 },
-                74 => {
+                50 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::JFBCKCLPAKO(is.read_message()?));
                 },
-                66 => {
+                42 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::IPIKFLCEFLA(is.read_message()?));
                 },
-                58 => {
+                122 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::MEGNBBFILNL(is.read_message()?));
                 },
-                106 => {
+                114 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::ABKKDHAPCHN(is.read_message()?));
                 },
-                50 => {
+                74 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LIHJMEINGIK(is.read_message()?));
                 },
-                42 => {
+                34 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LMGGLCNCDHF(is.read_message()?));
                 },
-                90 => {
+                26 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::FNGFOAEPFJN(is.read_message()?));
                 },
-                96 => {
+                56 => {
                     self.DBPOBFJIJIK = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::OBPFBLNBFKI(is.read_uint32()?));
                 },
                 tag => {
@@ -551,7 +551,7 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
             my_size += ::protobuf::rt::uint32_size(1, self.script_id);
         }
         if self.AHIDJBJGGPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AHIDJBJGGPP);
+            my_size += ::protobuf::rt::uint32_size(11, self.AHIDJBJGGPP);
         }
         if let ::std::option::Option::Some(ref v) = self.DBPOBFJIJIK {
             match v {
@@ -584,7 +584,7 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::OBPFBLNBFKI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
             };
         }
@@ -598,33 +598,33 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
             os.write_uint32(1, self.script_id)?;
         }
         if self.AHIDJBJGGPP != 0 {
-            os.write_uint32(4, self.AHIDJBJGGPP)?;
+            os.write_uint32(11, self.AHIDJBJGGPP)?;
         }
         if let ::std::option::Option::Some(ref v) = self.DBPOBFJIJIK {
             match v {
                 &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::JFBCKCLPAKO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::IPIKFLCEFLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::MEGNBBFILNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::ABKKDHAPCHN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LIHJMEINGIK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LMGGLCNCDHF(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::IPIKFLCEFLA(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
+                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::MEGNBBFILNL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::ABKKDHAPCHN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LIHJMEINGIK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::LMGGLCNCDHF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
                 &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::FNGFOAEPFJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &clock_park_handle_wait_operation_cs_req::DBPOBFJIJIK::OBPFBLNBFKI(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(7, v)?;
                 },
             };
         }
@@ -733,17 +733,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x11AMGHDCABJMJ.proto\x1a\x11CEOONFLONDJ.proto\x1a\x11FFOMIBNCFKI.proto\
     \x1a\x11HELNOIHMDHA.proto\x1a\x11INNNICFOLII.proto\x1a\x11OBNONMHMECK.pr\
     oto\"\xf3\x03\n!ClockParkHandleWaitOperationCsReq\x12\x1b\n\tscript_id\
-    \x18\x01\x20\x01(\rR\x08scriptId\x12\x20\n\x0bAHIDJBJGGPP\x18\x04\x20\
-    \x01(\rR\x0bAHIDJBJGGPP\x120\n\x0bJFBCKCLPAKO\x18\t\x20\x01(\x0b2\x0c.OB\
-    NONMHMECKH\0R\x0bJFBCKCLPAKO\x120\n\x0bIPIKFLCEFLA\x18\x08\x20\x01(\x0b2\
-    \x0c.FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\x120\n\x0bMEGNBBFILNL\x18\x07\x20\
-    \x01(\x0b2\x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bABKKDHAPCHN\x18\
-    \r\x20\x01(\x0b2\x0c.AMGHDCABJMJH\0R\x0bABKKDHAPCHN\x120\n\x0bLIHJMEINGI\
-    K\x18\x06\x20\x01(\x0b2\x0c.INNNICFOLIIH\0R\x0bLIHJMEINGIK\x120\n\x0bLMG\
-    GLCNCDHF\x18\x05\x20\x01(\x0b2\x0c.CEOONFLONDJH\0R\x0bLMGGLCNCDHF\x120\n\
-    \x0bFNGFOAEPFJN\x18\x0b\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGFOAEPFJN\
-    \x12\"\n\x0bOBPFBLNBFKI\x18\x0c\x20\x01(\rH\0R\x0bOBPFBLNBFKIB\r\n\x0bDB\
-    POBFJIJIKb\x06proto3\
+    \x18\x01\x20\x01(\rR\x08scriptId\x12\x20\n\x0bAHIDJBJGGPP\x18\x0b\x20\
+    \x01(\rR\x0bAHIDJBJGGPP\x120\n\x0bJFBCKCLPAKO\x18\x06\x20\x01(\x0b2\x0c.\
+    OBNONMHMECKH\0R\x0bJFBCKCLPAKO\x120\n\x0bIPIKFLCEFLA\x18\x05\x20\x01(\
+    \x0b2\x0c.FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\x120\n\x0bMEGNBBFILNL\x18\x0f\
+    \x20\x01(\x0b2\x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bABKKDHAPCHN\
+    \x18\x0e\x20\x01(\x0b2\x0c.AMGHDCABJMJH\0R\x0bABKKDHAPCHN\x120\n\x0bLIHJ\
+    MEINGIK\x18\t\x20\x01(\x0b2\x0c.INNNICFOLIIH\0R\x0bLIHJMEINGIK\x120\n\
+    \x0bLMGGLCNCDHF\x18\x04\x20\x01(\x0b2\x0c.CEOONFLONDJH\0R\x0bLMGGLCNCDHF\
+    \x120\n\x0bFNGFOAEPFJN\x18\x03\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGF\
+    OAEPFJN\x12\"\n\x0bOBPFBLNBFKI\x18\x07\x20\x01(\rH\0R\x0bOBPFBLNBFKIB\r\
+    \n\x0bDBPOBFJIJIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

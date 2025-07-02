@@ -72,7 +72,7 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                50 => {
                     self.mark_chest_func_info.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MarkChestChangedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.mark_chest_func_info {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MarkChestChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkChestChangedScNotify.proto\x1a\x17MarkChestFuncInfo.proto\"_\n\
-    \x18MarkChestChangedScNotify\x12C\n\x14mark_chest_func_info\x18\x0b\x20\
+    \x18MarkChestChangedScNotify\x12C\n\x14mark_chest_func_info\x18\x06\x20\
     \x03(\x0b2\x12.MarkChestFuncInfoR\x11markChestFuncInfob\x06proto3\
 ";
 

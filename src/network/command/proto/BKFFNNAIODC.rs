@@ -86,13 +86,13 @@ impl ::protobuf::Message for BKFFNNAIODC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     self.CKGFONMAEKO.push(is.read_message()?);
                 },
-                96 => {
+                32 => {
                     self.item_value = is.read_uint32()?;
                 },
-                50 => {
+                18 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for BKFFNNAIODC {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(4, self.item_value);
         }
         for value in &self.buff_list {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for BKFFNNAIODC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.CKGFONMAEKO {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.item_value != 0 {
-            os.write_uint32(12, self.item_value)?;
+            os.write_uint32(4, self.item_value)?;
         }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for BKFFNNAIODC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BKFFNNAIODC.proto\x1a\x11FFAMNKOAIHF.proto\x1a\x11GJOIBMFANHL.prot\
-    o\"\x87\x01\n\x0bBKFFNNAIODC\x12.\n\x0bCKGFONMAEKO\x18\x05\x20\x03(\x0b2\
-    \x0c.GJOIBMFANHLR\x0bCKGFONMAEKO\x12\x1d\n\nitem_value\x18\x0c\x20\x01(\
-    \rR\titemValue\x12)\n\tbuff_list\x18\x06\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\
+    o\"\x87\x01\n\x0bBKFFNNAIODC\x12.\n\x0bCKGFONMAEKO\x18\t\x20\x03(\x0b2\
+    \x0c.GJOIBMFANHLR\x0bCKGFONMAEKO\x12\x1d\n\nitem_value\x18\x04\x20\x01(\
+    \rR\titemValue\x12)\n\tbuff_list\x18\x02\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\
     \x08buffListb\x06proto3\
 ";
 

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JCIJCAFJJKN {
     // message fields
-    // @@protoc_insertion_point(field:JCIJCAFJJKN.JIFKHCKPNFM)
-    pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:JCIJCAFJJKN.FOBAOEAFNAM)
     pub FOBAOEAFNAM: bool,
-    // @@protoc_insertion_point(field:JCIJCAFJJKN.ANLINCFGFAN)
-    pub ANLINCFGFAN: u32,
     // @@protoc_insertion_point(field:JCIJCAFJJKN.DMMAMJGNGNN)
     pub DMMAMJGNGNN: i32,
+    // @@protoc_insertion_point(field:JCIJCAFJJKN.JIFKHCKPNFM)
+    pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:JCIJCAFJJKN.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:JCIJCAFJJKN.ANLINCFGFAN)
+    pub ANLINCFGFAN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JCIJCAFJJKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl JCIJCAFJJKN {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &JCIJCAFJJKN| { &m.JIFKHCKPNFM },
-            |m: &mut JCIJCAFJJKN| { &mut m.JIFKHCKPNFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOBAOEAFNAM",
             |m: &JCIJCAFJJKN| { &m.FOBAOEAFNAM },
             |m: &mut JCIJCAFJJKN| { &mut m.FOBAOEAFNAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANLINCFGFAN",
-            |m: &JCIJCAFJJKN| { &m.ANLINCFGFAN },
-            |m: &mut JCIJCAFJJKN| { &mut m.ANLINCFGFAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMMAMJGNGNN",
             |m: &JCIJCAFJJKN| { &m.DMMAMJGNGNN },
             |m: &mut JCIJCAFJJKN| { &mut m.DMMAMJGNGNN },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIFKHCKPNFM",
+            |m: &JCIJCAFJJKN| { &m.JIFKHCKPNFM },
+            |m: &mut JCIJCAFJJKN| { &mut m.JIFKHCKPNFM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
             |m: &JCIJCAFJJKN| { &m.cost_data },
             |m: &mut JCIJCAFJJKN| { &mut m.cost_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANLINCFGFAN",
+            |m: &JCIJCAFJJKN| { &m.ANLINCFGFAN },
+            |m: &mut JCIJCAFJJKN| { &mut m.ANLINCFGFAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCIJCAFJJKN>(
             "JCIJCAFJJKN",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for JCIJCAFJJKN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
-                },
-                24 => {
                     self.FOBAOEAFNAM = is.read_bool()?;
                 },
-                96 => {
-                    self.ANLINCFGFAN = is.read_uint32()?;
-                },
-                16 => {
+                112 => {
                     self.DMMAMJGNGNN = is.read_int32()?;
                 },
-                106 => {
+                72 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
+                },
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
+                },
+                104 => {
+                    self.ANLINCFGFAN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for JCIJCAFJJKN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JIFKHCKPNFM);
-        }
         if self.FOBAOEAFNAM != false {
             my_size += 1 + 1;
         }
-        if self.ANLINCFGFAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ANLINCFGFAN);
-        }
         if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.DMMAMJGNGNN);
+            my_size += ::protobuf::rt::int32_size(14, self.DMMAMJGNGNN);
+        }
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JIFKHCKPNFM);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ANLINCFGFAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ANLINCFGFAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for JCIJCAFJJKN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(10, self.JIFKHCKPNFM)?;
-        }
         if self.FOBAOEAFNAM != false {
-            os.write_bool(3, self.FOBAOEAFNAM)?;
-        }
-        if self.ANLINCFGFAN != 0 {
-            os.write_uint32(12, self.ANLINCFGFAN)?;
+            os.write_bool(10, self.FOBAOEAFNAM)?;
         }
         if self.DMMAMJGNGNN != 0 {
-            os.write_int32(2, self.DMMAMJGNGNN)?;
+            os.write_int32(14, self.DMMAMJGNGNN)?;
+        }
+        if self.JIFKHCKPNFM != 0 {
+            os.write_uint32(9, self.JIFKHCKPNFM)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.ANLINCFGFAN != 0 {
+            os.write_uint32(13, self.ANLINCFGFAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for JCIJCAFJJKN {
     }
 
     fn clear(&mut self) {
-        self.JIFKHCKPNFM = 0;
         self.FOBAOEAFNAM = false;
-        self.ANLINCFGFAN = 0;
         self.DMMAMJGNGNN = 0;
+        self.JIFKHCKPNFM = 0;
         self.cost_data.clear();
+        self.ANLINCFGFAN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCIJCAFJJKN {
         static instance: JCIJCAFJJKN = JCIJCAFJJKN {
-            JIFKHCKPNFM: 0,
             FOBAOEAFNAM: false,
-            ANLINCFGFAN: 0,
             DMMAMJGNGNN: 0,
+            JIFKHCKPNFM: 0,
             cost_data: ::protobuf::MessageField::none(),
+            ANLINCFGFAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for JCIJCAFJJKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCIJCAFJJKN.proto\x1a\x12ItemCostData.proto\"\xc1\x01\n\x0bJCIJCAF\
-    JJKN\x12\x20\n\x0bJIFKHCKPNFM\x18\n\x20\x01(\rR\x0bJIFKHCKPNFM\x12\x20\n\
-    \x0bFOBAOEAFNAM\x18\x03\x20\x01(\x08R\x0bFOBAOEAFNAM\x12\x20\n\x0bANLINC\
-    FGFAN\x18\x0c\x20\x01(\rR\x0bANLINCFGFAN\x12\x20\n\x0bDMMAMJGNGNN\x18\
-    \x02\x20\x01(\x05R\x0bDMMAMJGNGNN\x12*\n\tcost_data\x18\r\x20\x01(\x0b2\
-    \r.ItemCostDataR\x08costDatab\x06proto3\
+    JJKN\x12\x20\n\x0bFOBAOEAFNAM\x18\n\x20\x01(\x08R\x0bFOBAOEAFNAM\x12\x20\
+    \n\x0bDMMAMJGNGNN\x18\x0e\x20\x01(\x05R\x0bDMMAMJGNGNN\x12\x20\n\x0bJIFK\
+    HCKPNFM\x18\t\x20\x01(\rR\x0bJIFKHCKPNFM\x12*\n\tcost_data\x18\x03\x20\
+    \x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\x0bANLINCFGFAN\x18\r\
+    \x20\x01(\rR\x0bANLINCFGFANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

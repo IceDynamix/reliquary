@@ -79,10 +79,10 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.entity_motion)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.entry_id);
         }
         if let Some(v) = self.entity_motion.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(3, self.entry_id)?;
+            os.write_uint32(7, self.entry_id)?;
         }
         if let Some(v) = self.entity_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityTeleportCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSceneEntityTeleportCsReq.proto\x1a\x12EntityMotion.proto\"i\n\x18S\
-    ceneEntityTeleportCsReq\x12\x19\n\x08entry_id\x18\x03\x20\x01(\rR\x07ent\
-    ryId\x122\n\rentity_motion\x18\x08\x20\x01(\x0b2\r.EntityMotionR\x0centi\
-    tyMotionb\x06proto3\
+    ceneEntityTeleportCsReq\x12\x19\n\x08entry_id\x18\x07\x20\x01(\rR\x07ent\
+    ryId\x122\n\rentity_motion\x18\r\x20\x01(\x0b2\r.EntityMotionR\x0centity\
+    Motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

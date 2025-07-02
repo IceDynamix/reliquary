@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureApplyPasterListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.CPODEJOFPDD)
-    pub CPODEJOFPDD: u32,
     // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.GEDGLNCPGGN)
     pub GEDGLNCPGGN: ::std::vec::Vec<super::KBJPHLNAPGI::KBJPHLNAPGI>,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListCsReq.CPODEJOFPDD)
+    pub CPODEJOFPDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureApplyPasterListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TravelBrochureApplyPasterListCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPODEJOFPDD",
-            |m: &TravelBrochureApplyPasterListCsReq| { &m.CPODEJOFPDD },
-            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.CPODEJOFPDD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GEDGLNCPGGN",
             |m: &TravelBrochureApplyPasterListCsReq| { &m.GEDGLNCPGGN },
             |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.GEDGLNCPGGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CPODEJOFPDD",
+            |m: &TravelBrochureApplyPasterListCsReq| { &m.CPODEJOFPDD },
+            |m: &mut TravelBrochureApplyPasterListCsReq| { &mut m.CPODEJOFPDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureApplyPasterListCsReq>(
             "TravelBrochureApplyPasterListCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                66 => {
+                    self.GEDGLNCPGGN.push(is.read_message()?);
+                },
                 72 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
-                },
-                58 => {
-                    self.GEDGLNCPGGN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CPODEJOFPDD);
-        }
         for value in &self.GEDGLNCPGGN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.CPODEJOFPDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CPODEJOFPDD);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.GEDGLNCPGGN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         if self.CPODEJOFPDD != 0 {
             os.write_uint32(9, self.CPODEJOFPDD)?;
         }
-        for v in &self.GEDGLNCPGGN {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListCsReq {
     }
 
     fn clear(&mut self) {
-        self.CPODEJOFPDD = 0;
         self.GEDGLNCPGGN.clear();
+        self.CPODEJOFPDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureApplyPasterListCsReq {
         static instance: TravelBrochureApplyPasterListCsReq = TravelBrochureApplyPasterListCsReq {
-            CPODEJOFPDD: 0,
             GEDGLNCPGGN: ::std::vec::Vec::new(),
+            CPODEJOFPDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TravelBrochureApplyPasterListCsReq.proto\x1a\x11KBJPHLNAPGI.proto\"v\
-    \n\"TravelBrochureApplyPasterListCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\t\
-    \x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEDGLNCPGGN\x18\x07\x20\x03(\x0b2\
-    \x0c.KBJPHLNAPGIR\x0bGEDGLNCPGGNb\x06proto3\
+    \n\"TravelBrochureApplyPasterListCsReq\x12.\n\x0bGEDGLNCPGGN\x18\x08\x20\
+    \x03(\x0b2\x0c.KBJPHLNAPGIR\x0bGEDGLNCPGGN\x12\x20\n\x0bCPODEJOFPDD\x18\
+    \t\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

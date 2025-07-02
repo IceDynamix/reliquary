@@ -30,12 +30,12 @@ pub struct JCHCGFMGBAK {
     // message fields
     // @@protoc_insertion_point(field:JCHCGFMGBAK.ELDOLKCAKAE)
     pub ELDOLKCAKAE: ::std::vec::Vec<super::JBIHOCIOANH::JBIHOCIOANH>,
+    // @@protoc_insertion_point(field:JCHCGFMGBAK.rogue_magic_unit_info_list)
+    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // @@protoc_insertion_point(field:JCHCGFMGBAK.NMJAIBBLDOC)
     pub NMJAIBBLDOC: u32,
     // @@protoc_insertion_point(field:JCHCGFMGBAK.JFCNAJMIHCI)
     pub JFCNAJMIHCI: bool,
-    // @@protoc_insertion_point(field:JCHCGFMGBAK.rogue_magic_unit_info_list)
-    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
     // special fields
     // @@protoc_insertion_point(special_field:JCHCGFMGBAK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl JCHCGFMGBAK {
             |m: &JCHCGFMGBAK| { &m.ELDOLKCAKAE },
             |m: &mut JCHCGFMGBAK| { &mut m.ELDOLKCAKAE },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_magic_unit_info_list",
+            |m: &JCHCGFMGBAK| { &m.rogue_magic_unit_info_list },
+            |m: &mut JCHCGFMGBAK| { &mut m.rogue_magic_unit_info_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMJAIBBLDOC",
             |m: &JCHCGFMGBAK| { &m.NMJAIBBLDOC },
@@ -69,11 +74,6 @@ impl JCHCGFMGBAK {
             "JFCNAJMIHCI",
             |m: &JCHCGFMGBAK| { &m.JFCNAJMIHCI },
             |m: &mut JCHCGFMGBAK| { &mut m.JFCNAJMIHCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rogue_magic_unit_info_list",
-            |m: &JCHCGFMGBAK| { &m.rogue_magic_unit_info_list },
-            |m: &mut JCHCGFMGBAK| { &mut m.rogue_magic_unit_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCHCGFMGBAK>(
             "JCHCGFMGBAK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JCHCGFMGBAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                74 => {
                     self.ELDOLKCAKAE.push(is.read_message()?);
                 },
-                56 => {
-                    self.NMJAIBBLDOC = is.read_uint32()?;
+                66 => {
+                    self.rogue_magic_unit_info_list.push(is.read_message()?);
                 },
                 88 => {
-                    self.JFCNAJMIHCI = is.read_bool()?;
+                    self.NMJAIBBLDOC = is.read_uint32()?;
                 },
-                10 => {
-                    self.rogue_magic_unit_info_list.push(is.read_message()?);
+                40 => {
+                    self.JFCNAJMIHCI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,16 +121,16 @@ impl ::protobuf::Message for JCHCGFMGBAK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NMJAIBBLDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NMJAIBBLDOC);
-        }
-        if self.JFCNAJMIHCI != false {
-            my_size += 1 + 1;
-        }
         for value in &self.rogue_magic_unit_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NMJAIBBLDOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NMJAIBBLDOC);
+        }
+        if self.JFCNAJMIHCI != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,17 +138,17 @@ impl ::protobuf::Message for JCHCGFMGBAK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.ELDOLKCAKAE {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for v in &self.rogue_magic_unit_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.NMJAIBBLDOC != 0 {
-            os.write_uint32(7, self.NMJAIBBLDOC)?;
+            os.write_uint32(11, self.NMJAIBBLDOC)?;
         }
         if self.JFCNAJMIHCI != false {
-            os.write_bool(11, self.JFCNAJMIHCI)?;
+            os.write_bool(5, self.JFCNAJMIHCI)?;
         }
-        for v in &self.rogue_magic_unit_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,18 +167,18 @@ impl ::protobuf::Message for JCHCGFMGBAK {
 
     fn clear(&mut self) {
         self.ELDOLKCAKAE.clear();
+        self.rogue_magic_unit_info_list.clear();
         self.NMJAIBBLDOC = 0;
         self.JFCNAJMIHCI = false;
-        self.rogue_magic_unit_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCHCGFMGBAK {
         static instance: JCHCGFMGBAK = JCHCGFMGBAK {
             ELDOLKCAKAE: ::std::vec::Vec::new(),
+            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
             NMJAIBBLDOC: 0,
             JFCNAJMIHCI: false,
-            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for JCHCGFMGBAK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCHCGFMGBAK.proto\x1a\x11JBIHOCIOANH.proto\x1a\x11JFGFLGBLCAJ.prot\
-    o\"\xcb\x01\n\x0bJCHCGFMGBAK\x12.\n\x0bELDOLKCAKAE\x18\x06\x20\x03(\x0b2\
-    \x0c.JBIHOCIOANHR\x0bELDOLKCAKAE\x12\x20\n\x0bNMJAIBBLDOC\x18\x07\x20\
-    \x01(\rR\x0bNMJAIBBLDOC\x12\x20\n\x0bJFCNAJMIHCI\x18\x0b\x20\x01(\x08R\
-    \x0bJFCNAJMIHCI\x12H\n\x1arogue_magic_unit_info_list\x18\x01\x20\x03(\
-    \x0b2\x0c.JFGFLGBLCAJR\x16rogueMagicUnitInfoListb\x06proto3\
+    o\"\xcb\x01\n\x0bJCHCGFMGBAK\x12.\n\x0bELDOLKCAKAE\x18\t\x20\x03(\x0b2\
+    \x0c.JBIHOCIOANHR\x0bELDOLKCAKAE\x12H\n\x1arogue_magic_unit_info_list\
+    \x18\x08\x20\x03(\x0b2\x0c.JFGFLGBLCAJR\x16rogueMagicUnitInfoList\x12\
+    \x20\n\x0bNMJAIBBLDOC\x18\x0b\x20\x01(\rR\x0bNMJAIBBLDOC\x12\x20\n\x0bJF\
+    CNAJMIHCI\x18\x05\x20\x01(\x08R\x0bJFCNAJMIHCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

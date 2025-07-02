@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyInteractScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LobbyInteractScRsp.CBEGNBKMHCD)
-    pub CBEGNBKMHCD: u32,
     // @@protoc_insertion_point(field:LobbyInteractScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:LobbyInteractScRsp.CBEGNBKMHCD)
+    pub CBEGNBKMHCD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyInteractScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LobbyInteractScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBEGNBKMHCD",
-            |m: &LobbyInteractScRsp| { &m.CBEGNBKMHCD },
-            |m: &mut LobbyInteractScRsp| { &mut m.CBEGNBKMHCD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &LobbyInteractScRsp| { &m.retcode },
             |m: &mut LobbyInteractScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBEGNBKMHCD",
+            |m: &LobbyInteractScRsp| { &m.CBEGNBKMHCD },
+            |m: &mut LobbyInteractScRsp| { &mut m.CBEGNBKMHCD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyInteractScRsp>(
             "LobbyInteractScRsp",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for LobbyInteractScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.CBEGNBKMHCD = is.read_uint32()?;
-                },
-                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.CBEGNBKMHCD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LobbyInteractScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBEGNBKMHCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CBEGNBKMHCD);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if self.CBEGNBKMHCD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CBEGNBKMHCD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LobbyInteractScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBEGNBKMHCD != 0 {
-            os.write_uint32(10, self.CBEGNBKMHCD)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
+        }
+        if self.CBEGNBKMHCD != 0 {
+            os.write_uint32(13, self.CBEGNBKMHCD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LobbyInteractScRsp {
     }
 
     fn clear(&mut self) {
-        self.CBEGNBKMHCD = 0;
         self.retcode = 0;
+        self.CBEGNBKMHCD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInteractScRsp {
         static instance: LobbyInteractScRsp = LobbyInteractScRsp {
-            CBEGNBKMHCD: 0,
             retcode: 0,
+            CBEGNBKMHCD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInteractScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18LobbyInteractScRsp.proto\"P\n\x12LobbyInteractScRsp\x12\x20\n\x0bC\
-    BEGNBKMHCD\x18\n\x20\x01(\rR\x0bCBEGNBKMHCD\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x18LobbyInteractScRsp.proto\"P\n\x12LobbyInteractScRsp\x12\x18\n\x07r\
+    etcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bCBEGNBKMHCD\x18\r\x20\
+    \x01(\rR\x0bCBEGNBKMHCDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

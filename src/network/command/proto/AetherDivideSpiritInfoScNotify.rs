@@ -86,13 +86,13 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                98 => {
                     self.MGEGIMBBAJB.push(is.read_message()?);
                 },
                 88 => {
                     self.JDHLMHJBOJM = is.read_uint32()?;
                 },
-                82 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.aether_info)?;
                 },
                 tag => {
@@ -125,13 +125,13 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MGEGIMBBAJB {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.JDHLMHJBOJM != 0 {
             os.write_uint32(11, self.JDHLMHJBOJM)?;
         }
         if let Some(v) = self.aether_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfoScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$AetherDivideSpiritInfoScNotify.proto\x1a\x1cAetherDivideSpiritInfo.pr\
     oto\"\xb7\x01\n\x1eAetherDivideSpiritInfoScNotify\x129\n\x0bMGEGIMBBAJB\
-    \x18\x0f\x20\x03(\x0b2\x17.AetherDivideSpiritInfoR\x0bMGEGIMBBAJB\x12\
+    \x18\x0c\x20\x03(\x0b2\x17.AetherDivideSpiritInfoR\x0bMGEGIMBBAJB\x12\
     \x20\n\x0bJDHLMHJBOJM\x18\x0b\x20\x01(\rR\x0bJDHLMHJBOJM\x128\n\x0baethe\
-    r_info\x18\n\x20\x01(\x0b2\x17.AetherDivideSpiritInfoR\naetherInfob\x06p\
-    roto3\
+    r_info\x18\x07\x20\x01(\x0b2\x17.AetherDivideSpiritInfoR\naetherInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

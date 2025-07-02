@@ -34,10 +34,10 @@ pub struct HGLKMJFEHMB {
     pub visitor_id: u32,
     // @@protoc_insertion_point(field:HGLKMJFEHMB.EDHHGCPDKIK)
     pub EDHHGCPDKIK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HGLKMJFEHMB.status)
-    pub status: ::protobuf::EnumOrUnknown<super::TrainVisitorStatus::TrainVisitorStatus>,
     // @@protoc_insertion_point(field:HGLKMJFEHMB.OPAOKGJBOOE)
     pub OPAOKGJBOOE: u32,
+    // @@protoc_insertion_point(field:HGLKMJFEHMB.status)
+    pub status: ::protobuf::EnumOrUnknown<super::TrainVisitorStatus::TrainVisitorStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:HGLKMJFEHMB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl HGLKMJFEHMB {
             |m: &mut HGLKMJFEHMB| { &mut m.EDHHGCPDKIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &HGLKMJFEHMB| { &m.status },
-            |m: &mut HGLKMJFEHMB| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OPAOKGJBOOE",
             |m: &HGLKMJFEHMB| { &m.OPAOKGJBOOE },
             |m: &mut HGLKMJFEHMB| { &mut m.OPAOKGJBOOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &HGLKMJFEHMB| { &m.status },
+            |m: &mut HGLKMJFEHMB| { &mut m.status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGLKMJFEHMB>(
             "HGLKMJFEHMB",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for HGLKMJFEHMB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                56 => {
                     self.IJABKDEPGMA = is.read_bool()?;
                 },
-                8 => {
+                88 => {
                     self.visitor_id = is.read_uint32()?;
                 },
-                82 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.EDHHGCPDKIK)?;
                 },
-                80 => {
+                120 => {
                     self.EDHHGCPDKIK.push(is.read_uint32()?);
-                },
-                48 => {
-                    self.status = is.read_enum_or_unknown()?;
                 },
                 104 => {
                     self.OPAOKGJBOOE = is.read_uint32()?;
+                },
+                40 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,14 +134,14 @@ impl ::protobuf::Message for HGLKMJFEHMB {
             my_size += 1 + 1;
         }
         if self.visitor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.visitor_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.visitor_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.EDHHGCPDKIK);
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.status.value());
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.EDHHGCPDKIK);
         if self.OPAOKGJBOOE != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.OPAOKGJBOOE);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,17 +150,17 @@ impl ::protobuf::Message for HGLKMJFEHMB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IJABKDEPGMA != false {
-            os.write_bool(15, self.IJABKDEPGMA)?;
+            os.write_bool(7, self.IJABKDEPGMA)?;
         }
         if self.visitor_id != 0 {
-            os.write_uint32(1, self.visitor_id)?;
+            os.write_uint32(11, self.visitor_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.EDHHGCPDKIK)?;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
+        os.write_repeated_packed_uint32(15, &self.EDHHGCPDKIK)?;
         if self.OPAOKGJBOOE != 0 {
             os.write_uint32(13, self.OPAOKGJBOOE)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,8 +182,8 @@ impl ::protobuf::Message for HGLKMJFEHMB {
         self.IJABKDEPGMA = false;
         self.visitor_id = 0;
         self.EDHHGCPDKIK.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE);
         self.OPAOKGJBOOE = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::TrainVisitorStatus::TrainVisitorStatus::TRAIN_VISITOR_STATUS_NONE);
         self.special_fields.clear();
     }
 
@@ -192,8 +192,8 @@ impl ::protobuf::Message for HGLKMJFEHMB {
             IJABKDEPGMA: false,
             visitor_id: 0,
             EDHHGCPDKIK: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             OPAOKGJBOOE: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for HGLKMJFEHMB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGLKMJFEHMB.proto\x1a\x18TrainVisitorStatus.proto\"\xbf\x01\n\x0bH\
-    GLKMJFEHMB\x12\x20\n\x0bIJABKDEPGMA\x18\x0f\x20\x01(\x08R\x0bIJABKDEPGMA\
-    \x12\x1d\n\nvisitor_id\x18\x01\x20\x01(\rR\tvisitorId\x12\x20\n\x0bEDHHG\
-    CPDKIK\x18\n\x20\x03(\rR\x0bEDHHGCPDKIK\x12+\n\x06status\x18\x06\x20\x01\
-    (\x0e2\x13.TrainVisitorStatusR\x06status\x12\x20\n\x0bOPAOKGJBOOE\x18\r\
-    \x20\x01(\rR\x0bOPAOKGJBOOEb\x06proto3\
+    GLKMJFEHMB\x12\x20\n\x0bIJABKDEPGMA\x18\x07\x20\x01(\x08R\x0bIJABKDEPGMA\
+    \x12\x1d\n\nvisitor_id\x18\x0b\x20\x01(\rR\tvisitorId\x12\x20\n\x0bEDHHG\
+    CPDKIK\x18\x0f\x20\x03(\rR\x0bEDHHGCPDKIK\x12\x20\n\x0bOPAOKGJBOOE\x18\r\
+    \x20\x01(\rR\x0bOPAOKGJBOOE\x12+\n\x06status\x18\x05\x20\x01(\x0e2\x13.T\
+    rainVisitorStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

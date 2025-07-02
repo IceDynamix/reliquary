@@ -37,6 +37,10 @@ pub enum SyncLineupReason {
     SYNC_REASON_HP_ADD = 3,
     // @@protoc_insertion_point(enum_value:SyncLineupReason.SYNC_REASON_HP_ADD_PROP_HIT)
     SYNC_REASON_HP_ADD_PROP_HIT = 4,
+    // @@protoc_insertion_point(enum_value:SyncLineupReason.SYNC_REASON_MP_MAX_CHANGED_PERMANENT)
+    SYNC_REASON_MP_MAX_CHANGED_PERMANENT = 5,
+    // @@protoc_insertion_point(enum_value:SyncLineupReason.SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER)
+    SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER = 6,
 }
 
 impl ::protobuf::Enum for SyncLineupReason {
@@ -53,6 +57,8 @@ impl ::protobuf::Enum for SyncLineupReason {
             2 => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_ADD_PROP_HIT),
             3 => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_HP_ADD),
             4 => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_HP_ADD_PROP_HIT),
+            5 => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_PERMANENT),
+            6 => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +70,8 @@ impl ::protobuf::Enum for SyncLineupReason {
             "SYNC_REASON_MP_ADD_PROP_HIT" => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_ADD_PROP_HIT),
             "SYNC_REASON_HP_ADD" => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_HP_ADD),
             "SYNC_REASON_HP_ADD_PROP_HIT" => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_HP_ADD_PROP_HIT),
+            "SYNC_REASON_MP_MAX_CHANGED_PERMANENT" => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_PERMANENT),
+            "SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER" => ::std::option::Option::Some(SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER),
             _ => ::std::option::Option::None
         }
     }
@@ -74,6 +82,8 @@ impl ::protobuf::Enum for SyncLineupReason {
         SyncLineupReason::SYNC_REASON_MP_ADD_PROP_HIT,
         SyncLineupReason::SYNC_REASON_HP_ADD,
         SyncLineupReason::SYNC_REASON_HP_ADD_PROP_HIT,
+        SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_PERMANENT,
+        SyncLineupReason::SYNC_REASON_MP_MAX_CHANGED_BY_MODIFIER,
     ];
 }
 
@@ -102,11 +112,12 @@ impl SyncLineupReason {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SyncLineupReason.proto*\x9a\x01\n\x10SyncLineupReason\x12\x14\n\
+    \n\x16SyncLineupReason.proto*\xf0\x01\n\x10SyncLineupReason\x12\x14\n\
     \x10SYNC_REASON_NONE\x10\0\x12\x16\n\x12SYNC_REASON_MP_ADD\x10\x01\x12\
     \x1f\n\x1bSYNC_REASON_MP_ADD_PROP_HIT\x10\x02\x12\x16\n\x12SYNC_REASON_H\
-    P_ADD\x10\x03\x12\x1f\n\x1bSYNC_REASON_HP_ADD_PROP_HIT\x10\x04b\x06proto\
-    3\
+    P_ADD\x10\x03\x12\x1f\n\x1bSYNC_REASON_HP_ADD_PROP_HIT\x10\x04\x12(\n$SY\
+    NC_REASON_MP_MAX_CHANGED_PERMANENT\x10\x05\x12*\n&SYNC_REASON_MP_MAX_CHA\
+    NGED_BY_MODIFIER\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

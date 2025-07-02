@@ -86,13 +86,13 @@ impl ::protobuf::Message for GGKBHALPIDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.LHBDONJIICC = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
                     self.area_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.IMLHFGEPCAN = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GGKBHALPIDK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LHBDONJIICC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LHBDONJIICC);
+            my_size += ::protobuf::rt::uint32_size(8, self.LHBDONJIICC);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         if self.IMLHFGEPCAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IMLHFGEPCAN);
+            my_size += ::protobuf::rt::uint32_size(11, self.IMLHFGEPCAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GGKBHALPIDK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LHBDONJIICC != 0 {
-            os.write_uint32(6, self.LHBDONJIICC)?;
+            os.write_uint32(8, self.LHBDONJIICC)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(9, self.area_id)?;
+            os.write_uint32(6, self.area_id)?;
         }
         if self.IMLHFGEPCAN != 0 {
-            os.write_uint32(13, self.IMLHFGEPCAN)?;
+            os.write_uint32(11, self.IMLHFGEPCAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for GGKBHALPIDK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGKBHALPIDK.proto\"j\n\x0bGGKBHALPIDK\x12\x20\n\x0bLHBDONJIICC\x18\
-    \x06\x20\x01(\rR\x0bLHBDONJIICC\x12\x17\n\x07area_id\x18\t\x20\x01(\rR\
-    \x06areaId\x12\x20\n\x0bIMLHFGEPCAN\x18\r\x20\x01(\rR\x0bIMLHFGEPCANb\
+    \x08\x20\x01(\rR\x0bLHBDONJIICC\x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\
+    \x06areaId\x12\x20\n\x0bIMLHFGEPCAN\x18\x0b\x20\x01(\rR\x0bIMLHFGEPCANb\
     \x06proto3\
 ";
 

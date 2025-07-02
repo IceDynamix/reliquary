@@ -48,7 +48,7 @@ impl ModifyRelicFilterPlanCsReq {
         ::std::default::Default::default()
     }
 
-    // string name = 9;
+    // string name = 11;
 
     pub fn name(&self) -> &str {
         match self.InfoOneofCase {
@@ -146,7 +146,7 @@ impl ModifyRelicFilterPlanCsReq {
         }
     }
 
-    // .RelicFilterPlanSettings settings = 8;
+    // .RelicFilterPlanSettings settings = 14;
 
     pub fn settings(&self) -> &super::RelicFilterPlanSettings::RelicFilterPlanSettings {
         match self.InfoOneofCase {
@@ -242,16 +242,16 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                96 => {
                     self.slot_index = is.read_uint32()?;
                 },
-                74 => {
+                90 => {
                     self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(is.read_string()?));
                 },
                 122 => {
                     self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(is.read_message()?));
                 },
-                66 => {
+                114 => {
                     self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(is.read_message()?));
                 },
                 tag => {
@@ -267,12 +267,12 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.slot_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.slot_index);
+            my_size += ::protobuf::rt::uint32_size(12, self.slot_index);
         }
         if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
                 &modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(9, &v);
+                    my_size += ::protobuf::rt::string_size(11, &v);
                 },
                 &modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref v) => {
                     let len = v.compute_size();
@@ -291,18 +291,18 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.slot_index != 0 {
-            os.write_uint32(10, self.slot_index)?;
+            os.write_uint32(12, self.slot_index)?;
         }
         if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
             match v {
                 &modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref v) => {
-                    os.write_string(9, v)?;
+                    os.write_string(11, v)?;
                 },
                 &modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -392,11 +392,11 @@ pub mod modify_relic_filter_plan_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ModifyRelicFilterPlanCsReq.proto\x1a\x19RelicFilterPlanIcon.proto\
     \x1a\x1dRelicFilterPlanSettings.proto\"\xc6\x01\n\x1aModifyRelicFilterPl\
-    anCsReq\x12\x1d\n\nslot_index\x18\n\x20\x01(\rR\tslotIndex\x12\x14\n\x04\
-    name\x18\t\x20\x01(\tH\0R\x04name\x12*\n\x04icon\x18\x0f\x20\x01(\x0b2\
-    \x14.RelicFilterPlanIconH\0R\x04icon\x126\n\x08settings\x18\x08\x20\x01(\
-    \x0b2\x18.RelicFilterPlanSettingsH\0R\x08settingsB\x0f\n\rInfoOneofCaseb\
-    \x06proto3\
+    anCsReq\x12\x1d\n\nslot_index\x18\x0c\x20\x01(\rR\tslotIndex\x12\x14\n\
+    \x04name\x18\x0b\x20\x01(\tH\0R\x04name\x12*\n\x04icon\x18\x0f\x20\x01(\
+    \x0b2\x14.RelicFilterPlanIconH\0R\x04icon\x126\n\x08settings\x18\x0e\x20\
+    \x01(\x0b2\x18.RelicFilterPlanSettingsH\0R\x08settingsB\x0f\n\rInfoOneof\
+    Caseb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

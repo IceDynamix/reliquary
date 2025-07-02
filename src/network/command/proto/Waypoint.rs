@@ -86,13 +86,13 @@ impl ::protobuf::Message for Waypoint {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.KHFGDKNGFDP = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.id = is.read_uint32()?;
                 },
-                48 => {
+                64 => {
                     self.is_new = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for Waypoint {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KHFGDKNGFDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KHFGDKNGFDP);
+            my_size += ::protobuf::rt::uint32_size(1, self.KHFGDKNGFDP);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(4, self.id);
         }
         if self.is_new != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for Waypoint {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KHFGDKNGFDP != 0 {
-            os.write_uint32(9, self.KHFGDKNGFDP)?;
+            os.write_uint32(1, self.KHFGDKNGFDP)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(4, self.id)?;
         }
         if self.is_new != false {
-            os.write_bool(6, self.is_new)?;
+            os.write_bool(8, self.is_new)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for Waypoint {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x20\n\x0bKHFGDKNGFDP\x18\t\x20\
-    \x01(\rR\x0bKHFGDKNGFDP\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\x02id\x12\
-    \x15\n\x06is_new\x18\x06\x20\x01(\x08R\x05isNewb\x06proto3\
+    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x20\n\x0bKHFGDKNGFDP\x18\x01\
+    \x20\x01(\rR\x0bKHFGDKNGFDP\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02id\
+    \x12\x15\n\x06is_new\x18\x08\x20\x01(\x08R\x05isNewb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

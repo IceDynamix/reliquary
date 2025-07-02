@@ -72,7 +72,7 @@ impl ::protobuf::Message for EHEFOMMBNAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJEHOAFBHBE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EHEFOMMBNAF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BJEHOAFBHBE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EHEFOMMBNAF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EHEFOMMBNAF.proto\x1a\x1cRogueFormulaSelectInfo.proto\"H\n\x0bEHEF\
-    OMMBNAF\x129\n\x0bBJEHOAFBHBE\x18\x03\x20\x01(\x0b2\x17.RogueFormulaSele\
+    OMMBNAF\x129\n\x0bBJEHOAFBHBE\x18\x05\x20\x01(\x0b2\x17.RogueFormulaSele\
     ctInfoR\x0bBJEHOAFBHBEb\x06proto3\
 ";
 

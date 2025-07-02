@@ -94,6 +94,10 @@ pub struct BattleStatistics {
     pub HMPGMILJAPB: ::protobuf::MessageField<super::BDMGOEJBFGL::BDMGOEJBFGL>,
     // @@protoc_insertion_point(field:BattleStatistics.NOCIGFLLIFG)
     pub NOCIGFLLIFG: ::protobuf::MessageField<super::NMCMOHAHOPL::NMCMOHAHOPL>,
+    // @@protoc_insertion_point(field:BattleStatistics.JNJIIMJBOJP)
+    pub JNJIIMJBOJP: ::protobuf::MessageField<super::DEMLPCNDJJP::DEMLPCNDJJP>,
+    // @@protoc_insertion_point(field:BattleStatistics.KKPKALJMAMF)
+    pub KKPKALJMAMF: u32,
     // @@protoc_insertion_point(field:BattleStatistics.OKGCIPAHMEI)
     pub OKGCIPAHMEI: ::std::vec::Vec<super::PEDJNPJKOCK::PEDJNPJKOCK>,
     // special fields
@@ -113,7 +117,7 @@ impl BattleStatistics {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(34);
+        let mut fields = ::std::vec::Vec::with_capacity(36);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_battle_turns",
@@ -280,6 +284,16 @@ impl BattleStatistics {
             |m: &BattleStatistics| { &m.NOCIGFLLIFG },
             |m: &mut BattleStatistics| { &mut m.NOCIGFLLIFG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DEMLPCNDJJP::DEMLPCNDJJP>(
+            "JNJIIMJBOJP",
+            |m: &BattleStatistics| { &m.JNJIIMJBOJP },
+            |m: &mut BattleStatistics| { &mut m.JNJIIMJBOJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKPKALJMAMF",
+            |m: &BattleStatistics| { &m.KKPKALJMAMF },
+            |m: &mut BattleStatistics| { &mut m.KKPKALJMAMF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OKGCIPAHMEI",
             |m: &BattleStatistics| { &m.OKGCIPAHMEI },
@@ -432,6 +446,12 @@ impl ::protobuf::Message for BattleStatistics {
                 314 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOCIGFLLIFG)?;
                 },
+                322 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNJIIMJBOJP)?;
+                },
+                328 => {
+                    self.KKPKALJMAMF = is.read_uint32()?;
+                },
                 338 => {
                     self.OKGCIPAHMEI.push(is.read_message()?);
                 },
@@ -565,6 +585,13 @@ impl ::protobuf::Message for BattleStatistics {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.JNJIIMJBOJP.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.KKPKALJMAMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(41, self.KKPKALJMAMF);
+        }
         for value in &self.OKGCIPAHMEI {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -683,6 +710,12 @@ impl ::protobuf::Message for BattleStatistics {
         if let Some(v) = self.NOCIGFLLIFG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(39, v, os)?;
         }
+        if let Some(v) = self.JNJIIMJBOJP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(40, v, os)?;
+        }
+        if self.KKPKALJMAMF != 0 {
+            os.write_uint32(41, self.KKPKALJMAMF)?;
+        }
         for v in &self.OKGCIPAHMEI {
             ::protobuf::rt::write_message_field_with_cached_size(42, v, os)?;
         };
@@ -736,6 +769,8 @@ impl ::protobuf::Message for BattleStatistics {
         self.BILLJJBFIOL.clear();
         self.HMPGMILJAPB.clear();
         self.NOCIGFLLIFG.clear();
+        self.JNJIIMJBOJP.clear();
+        self.KKPKALJMAMF = 0;
         self.OKGCIPAHMEI.clear();
         self.special_fields.clear();
     }
@@ -767,51 +802,53 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16BattleStatistics.proto\x1a\x11AIGKNHFANGA.proto\x1a\x16AvatarBattl\
     eInfo.proto\x1a\x11BAAGNOHEHMA.proto\x1a\x11BDMGOEJBFGL.proto\x1a\x15Bat\
     tleEndReason.proto\x1a\x1bBattleEventBattleInfo.proto\x1a\x16BattleTarge\
-    tList.proto\x1a\x11CHDONIGOKNM.proto\x1a\x11EAGOCAHFGAF.proto\x1a\x11EKB\
-    AGMOMECL.proto\x1a\x1bEvolveBuildBattleInfo.proto\x1a\x11GMKEPCOMHPN.pro\
-    to\x1a\x11IBFFAJOHKMO.proto\x1a\x11IIIPHJIMNID.proto\x1a\x11JFFNDOBBNFB.\
-    proto\x1a\x11LAFIENGMEMJ.proto\x1a\x11MMNDJAMEBML.proto\x1a\x11NMCMOHAHO\
-    PL.proto\x1a\x11PEDJNPJKOCK.proto\"\x8d\x0e\n\x10BattleStatistics\x12,\n\
-    \x12total_battle_turns\x18\x01\x20\x01(\rR\x10totalBattleTurns\x12(\n\
-    \x10total_auto_turns\x18\x02\x20\x01(\rR\x0etotalAutoTurns\x12$\n\x0eava\
-    tar_id_list\x18\x03\x20\x03(\rR\x0cavatarIdList\x12\x1b\n\tultra_cnt\x18\
-    \x04\x20\x01(\rR\x08ultraCnt\x120\n\x14total_delay_cumulate\x18\x05\x20\
-    \x01(\x01R\x12totalDelayCumulate\x12\x1b\n\tcost_time\x18\x06\x20\x01(\
-    \x01R\x08costTime\x129\n\x0fpve_avatar_list\x18\x07\x20\x03(\x0b2\x11.Av\
-    atarBattleInfoR\rpveAvatarList\x12/\n\x0cmonster_list\x18\x08\x20\x03(\
-    \x0b2\x0c.LAFIENGMEMJR\x0bmonsterList\x12\x1b\n\tround_cnt\x18\t\x20\x01\
-    (\rR\x08roundCnt\x12(\n\x10cocoon_dead_wave\x18\n\x20\x01(\rR\x0ecocoonD\
-    eadWave\x12.\n\x13avatar_battle_turns\x18\x0b\x20\x01(\rR\x11avatarBattl\
-    eTurns\x120\n\x14monster_battle_turns\x18\x0c\x20\x01(\rR\x12monsterBatt\
-    leTurns\x12D\n\x0bNBDEKMAKPKJ\x18\r\x20\x03(\x0b2\".BattleStatistics.NBD\
-    EKMAKPKJEntryR\x0bNBDEKMAKPKJ\x12J\n\"BATTLE_TARGET_TYPE_CHALLENGE_SCORE\
-    \x18\x0e\x20\x01(\rR\x1eBATTLETARGETTYPECHALLENGESCORE\x128\n\x0bIJOLOFB\
-    JINB\x18\x10\x20\x03(\x0b2\x16.BattleEventBattleInfoR\x0bIJOLOFBJINB\x12\
-    /\n\nend_reason\x18\x13\x20\x01(\x0e2\x10.BattleEndReasonR\tendReason\
-    \x12.\n\x0bGLOJPNLNHJH\x18\x15\x20\x03(\x0b2\x0c.IBFFAJOHKMOR\x0bGLOJPNL\
-    NHJH\x12\x20\n\x0bIICCEFCGPAK\x18\x16\x20\x03(\x05R\x0bIICCEFCGPAK\x12.\
-    \n\x0bLDGAANONMBK\x18\x17\x20\x03(\x0b2\x0c.IIIPHJIMNIDR\x0bLDGAANONMBK\
-    \x12.\n\x0bADBHGKPNIKP\x18\x1a\x20\x03(\x0b2\x0c.MMNDJAMEBMLR\x0bADBHGKP\
-    NIKP\x12.\n\x0bECEFBCNOFKB\x18\x1b\x20\x03(\x0b2\x0c.GMKEPCOMHPNR\x0bECE\
-    FBCNOFKB\x12U\n\x12battle_target_info\x18\x1c\x20\x03(\x0b2'.BattleStati\
-    stics.BattleTargetInfoEntryR\x10battleTargetInfo\x12.\n\x0bNAJLKHFLLPG\
-    \x18\x1d\x20\x03(\x0b2\x0c.EAGOCAHFGAFR\x0bNAJLKHFLLPG\x128\n\x0bJPGIFCH\
-    JDLK\x18\x1e\x20\x01(\x0b2\x16.EvolveBuildBattleInfoR\x0bJPGIFCHJDLK\x12\
-    .\n\x0bMNPHNJKGPKL\x18\x1f\x20\x01(\x0b2\x0c.CHDONIGOKNMR\x0bMNPHNJKGPKL\
-    \x12\x20\n\x0bLEDDODAMMNO\x18\x20\x20\x01(\x08R\x0bLEDDODAMMNO\x12.\n\
-    \x0bENBJCPKGCOL\x18!\x20\x03(\x0b2\x0c.JFFNDOBBNFBR\x0bENBJCPKGCOL\x12.\
-    \n\x0bNGOKNFDMHMF\x18\"\x20\x03(\x0b2\x0c.EKBAGMOMECLR\x0bNGOKNFDMHMF\
-    \x12\x20\n\x0bDKOEADNAMCJ\x18#\x20\x01(\rR\x0bDKOEADNAMCJ\x12.\n\x0bIDCG\
-    PAKJFMD\x18$\x20\x01(\x0b2\x0c.AIGKNHFANGAR\x0bIDCGPAKJFMD\x12.\n\x0bBIL\
-    LJJBFIOL\x18%\x20\x01(\x0b2\x0c.BAAGNOHEHMAR\x0bBILLJJBFIOL\x12.\n\x0bHM\
-    PGMILJAPB\x18&\x20\x01(\x0b2\x0c.BDMGOEJBFGLR\x0bHMPGMILJAPB\x12.\n\x0bN\
-    OCIGFLLIFG\x18'\x20\x01(\x0b2\x0c.NMCMOHAHOPLR\x0bNOCIGFLLIFG\x12.\n\x0b\
-    OKGCIPAHMEI\x18*\x20\x03(\x0b2\x0c.PEDJNPJKOCKR\x0bOKGCIPAHMEI\x1a>\n\
-    \x10NBDEKMAKPKJEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\
-    \n\x05value\x18\x02\x20\x01(\x02R\x05value:\x028\x01\x1aV\n\x15BattleTar\
-    getInfoEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\
-    \x18\x02\x20\x01(\x0b2\x11.BattleTargetListR\x05value:\x028\x01b\x06prot\
-    o3\
+    tList.proto\x1a\x11CHDONIGOKNM.proto\x1a\x11DEMLPCNDJJP.proto\x1a\x11EAG\
+    OCAHFGAF.proto\x1a\x11EKBAGMOMECL.proto\x1a\x1bEvolveBuildBattleInfo.pro\
+    to\x1a\x11GMKEPCOMHPN.proto\x1a\x11IBFFAJOHKMO.proto\x1a\x11IIIPHJIMNID.\
+    proto\x1a\x11JFFNDOBBNFB.proto\x1a\x11LAFIENGMEMJ.proto\x1a\x11MMNDJAMEB\
+    ML.proto\x1a\x11NMCMOHAHOPL.proto\x1a\x11PEDJNPJKOCK.proto\"\xdf\x0e\n\
+    \x10BattleStatistics\x12,\n\x12total_battle_turns\x18\x01\x20\x01(\rR\
+    \x10totalBattleTurns\x12(\n\x10total_auto_turns\x18\x02\x20\x01(\rR\x0et\
+    otalAutoTurns\x12$\n\x0eavatar_id_list\x18\x03\x20\x03(\rR\x0cavatarIdLi\
+    st\x12\x1b\n\tultra_cnt\x18\x04\x20\x01(\rR\x08ultraCnt\x120\n\x14total_\
+    delay_cumulate\x18\x05\x20\x01(\x01R\x12totalDelayCumulate\x12\x1b\n\tco\
+    st_time\x18\x06\x20\x01(\x01R\x08costTime\x129\n\x0fpve_avatar_list\x18\
+    \x07\x20\x03(\x0b2\x11.AvatarBattleInfoR\rpveAvatarList\x12/\n\x0cmonste\
+    r_list\x18\x08\x20\x03(\x0b2\x0c.LAFIENGMEMJR\x0bmonsterList\x12\x1b\n\t\
+    round_cnt\x18\t\x20\x01(\rR\x08roundCnt\x12(\n\x10cocoon_dead_wave\x18\n\
+    \x20\x01(\rR\x0ecocoonDeadWave\x12.\n\x13avatar_battle_turns\x18\x0b\x20\
+    \x01(\rR\x11avatarBattleTurns\x120\n\x14monster_battle_turns\x18\x0c\x20\
+    \x01(\rR\x12monsterBattleTurns\x12D\n\x0bNBDEKMAKPKJ\x18\r\x20\x03(\x0b2\
+    \".BattleStatistics.NBDEKMAKPKJEntryR\x0bNBDEKMAKPKJ\x12J\n\"BATTLE_TARG\
+    ET_TYPE_CHALLENGE_SCORE\x18\x0e\x20\x01(\rR\x1eBATTLETARGETTYPECHALLENGE\
+    SCORE\x128\n\x0bIJOLOFBJINB\x18\x10\x20\x03(\x0b2\x16.BattleEventBattleI\
+    nfoR\x0bIJOLOFBJINB\x12/\n\nend_reason\x18\x13\x20\x01(\x0e2\x10.BattleE\
+    ndReasonR\tendReason\x12.\n\x0bGLOJPNLNHJH\x18\x15\x20\x03(\x0b2\x0c.IBF\
+    FAJOHKMOR\x0bGLOJPNLNHJH\x12\x20\n\x0bIICCEFCGPAK\x18\x16\x20\x03(\x05R\
+    \x0bIICCEFCGPAK\x12.\n\x0bLDGAANONMBK\x18\x17\x20\x03(\x0b2\x0c.IIIPHJIM\
+    NIDR\x0bLDGAANONMBK\x12.\n\x0bADBHGKPNIKP\x18\x1a\x20\x03(\x0b2\x0c.MMND\
+    JAMEBMLR\x0bADBHGKPNIKP\x12.\n\x0bECEFBCNOFKB\x18\x1b\x20\x03(\x0b2\x0c.\
+    GMKEPCOMHPNR\x0bECEFBCNOFKB\x12U\n\x12battle_target_info\x18\x1c\x20\x03\
+    (\x0b2'.BattleStatistics.BattleTargetInfoEntryR\x10battleTargetInfo\x12.\
+    \n\x0bNAJLKHFLLPG\x18\x1d\x20\x03(\x0b2\x0c.EAGOCAHFGAFR\x0bNAJLKHFLLPG\
+    \x128\n\x0bJPGIFCHJDLK\x18\x1e\x20\x01(\x0b2\x16.EvolveBuildBattleInfoR\
+    \x0bJPGIFCHJDLK\x12.\n\x0bMNPHNJKGPKL\x18\x1f\x20\x01(\x0b2\x0c.CHDONIGO\
+    KNMR\x0bMNPHNJKGPKL\x12\x20\n\x0bLEDDODAMMNO\x18\x20\x20\x01(\x08R\x0bLE\
+    DDODAMMNO\x12.\n\x0bENBJCPKGCOL\x18!\x20\x03(\x0b2\x0c.JFFNDOBBNFBR\x0bE\
+    NBJCPKGCOL\x12.\n\x0bNGOKNFDMHMF\x18\"\x20\x03(\x0b2\x0c.EKBAGMOMECLR\
+    \x0bNGOKNFDMHMF\x12\x20\n\x0bDKOEADNAMCJ\x18#\x20\x01(\rR\x0bDKOEADNAMCJ\
+    \x12.\n\x0bIDCGPAKJFMD\x18$\x20\x01(\x0b2\x0c.AIGKNHFANGAR\x0bIDCGPAKJFM\
+    D\x12.\n\x0bBILLJJBFIOL\x18%\x20\x01(\x0b2\x0c.BAAGNOHEHMAR\x0bBILLJJBFI\
+    OL\x12.\n\x0bHMPGMILJAPB\x18&\x20\x01(\x0b2\x0c.BDMGOEJBFGLR\x0bHMPGMILJ\
+    APB\x12.\n\x0bNOCIGFLLIFG\x18'\x20\x01(\x0b2\x0c.NMCMOHAHOPLR\x0bNOCIGFL\
+    LIFG\x12.\n\x0bJNJIIMJBOJP\x18(\x20\x01(\x0b2\x0c.DEMLPCNDJJPR\x0bJNJIIM\
+    JBOJP\x12\x20\n\x0bKKPKALJMAMF\x18)\x20\x01(\rR\x0bKKPKALJMAMF\x12.\n\
+    \x0bOKGCIPAHMEI\x18*\x20\x03(\x0b2\x0c.PEDJNPJKOCKR\x0bOKGCIPAHMEI\x1a>\
+    \n\x10NBDEKMAKPKJEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\
+    \x14\n\x05value\x18\x02\x20\x01(\x02R\x05value:\x028\x01\x1aV\n\x15Battl\
+    eTargetInfoEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05v\
+    alue\x18\x02\x20\x01(\x0b2\x11.BattleTargetListR\x05value:\x028\x01b\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -828,7 +865,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(19);
+            let mut deps = ::std::vec::Vec::with_capacity(20);
             deps.push(super::AIGKNHFANGA::file_descriptor().clone());
             deps.push(super::AvatarBattleInfo::file_descriptor().clone());
             deps.push(super::BAAGNOHEHMA::file_descriptor().clone());
@@ -837,6 +874,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleEventBattleInfo::file_descriptor().clone());
             deps.push(super::BattleTargetList::file_descriptor().clone());
             deps.push(super::CHDONIGOKNM::file_descriptor().clone());
+            deps.push(super::DEMLPCNDJJP::file_descriptor().clone());
             deps.push(super::EAGOCAHFGAF::file_descriptor().clone());
             deps.push(super::EKBAGMOMECL::file_descriptor().clone());
             deps.push(super::EvolveBuildBattleInfo::file_descriptor().clone());

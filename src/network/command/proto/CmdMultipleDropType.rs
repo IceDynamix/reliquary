@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMultipleDropType {
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropTypeNone)
     CmdMultipleDropTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoScNotify)
-    CmdMultipleDropInfoScNotify = 4631,
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetMultipleDropInfoScRsp)
-    CmdGetMultipleDropInfoScRsp = 4632,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoScRsp)
-    CmdGetPlayerReturnMultiDropInfoScRsp = 4676,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoNotify)
-    CmdMultipleDropInfoNotify = 4648,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoCsReq)
-    CmdGetPlayerReturnMultiDropInfoCsReq = 4640,
+    CmdGetMultipleDropInfoScRsp = 4691,
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetMultipleDropInfoCsReq)
-    CmdGetMultipleDropInfoCsReq = 4695,
+    CmdGetMultipleDropInfoCsReq = 4620,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoScNotify)
+    CmdMultipleDropInfoScNotify = 4667,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoCsReq)
+    CmdGetPlayerReturnMultiDropInfoCsReq = 4639,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoNotify)
+    CmdMultipleDropInfoNotify = 4621,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoScRsp)
+    CmdGetPlayerReturnMultiDropInfoScRsp = 4627,
 }
 
 impl ::protobuf::Enum for CmdMultipleDropType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdMultipleDropType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultipleDropType> {
         match value {
             0 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropTypeNone),
-            4631 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
-            4632 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoScRsp),
-            4676 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
-            4648 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
-            4640 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
-            4695 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoCsReq),
+            4691 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoScRsp),
+            4620 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoCsReq),
+            4667 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
+            4639 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
+            4621 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
+            4627 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdMultipleDropType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMultipleDropType> {
         match str {
             "CmdMultipleDropTypeNone" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropTypeNone),
-            "CmdMultipleDropInfoScNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
             "CmdGetMultipleDropInfoScRsp" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoScRsp),
-            "CmdGetPlayerReturnMultiDropInfoScRsp" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
-            "CmdMultipleDropInfoNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
-            "CmdGetPlayerReturnMultiDropInfoCsReq" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
             "CmdGetMultipleDropInfoCsReq" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoCsReq),
+            "CmdMultipleDropInfoScNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
+            "CmdGetPlayerReturnMultiDropInfoCsReq" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
+            "CmdMultipleDropInfoNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
+            "CmdGetPlayerReturnMultiDropInfoScRsp" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMultipleDropType] = &[
         CmdMultipleDropType::CmdMultipleDropTypeNone,
-        CmdMultipleDropType::CmdMultipleDropInfoScNotify,
         CmdMultipleDropType::CmdGetMultipleDropInfoScRsp,
-        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp,
-        CmdMultipleDropType::CmdMultipleDropInfoNotify,
-        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq,
         CmdMultipleDropType::CmdGetMultipleDropInfoCsReq,
+        CmdMultipleDropType::CmdMultipleDropInfoScNotify,
+        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq,
+        CmdMultipleDropType::CmdMultipleDropInfoNotify,
+        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdMultipleDropType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMultipleDropType::CmdMultipleDropTypeNone => 0,
-            CmdMultipleDropType::CmdMultipleDropInfoScNotify => 1,
-            CmdMultipleDropType::CmdGetMultipleDropInfoScRsp => 2,
-            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp => 3,
-            CmdMultipleDropType::CmdMultipleDropInfoNotify => 4,
-            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq => 5,
-            CmdMultipleDropType::CmdGetMultipleDropInfoCsReq => 6,
+            CmdMultipleDropType::CmdGetMultipleDropInfoScRsp => 1,
+            CmdMultipleDropType::CmdGetMultipleDropInfoCsReq => 2,
+            CmdMultipleDropType::CmdMultipleDropInfoScNotify => 3,
+            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq => 4,
+            CmdMultipleDropType::CmdMultipleDropInfoNotify => 5,
+            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CmdMultipleDropType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdMultipleDropType.proto*\x8e\x02\n\x13CmdMultipleDropType\x12\
-    \x1b\n\x17CmdMultipleDropTypeNone\x10\0\x12\x20\n\x1bCmdMultipleDropInfo\
-    ScNotify\x10\x97$\x12\x20\n\x1bCmdGetMultipleDropInfoScRsp\x10\x98$\x12)\
-    \n$CmdGetPlayerReturnMultiDropInfoScRsp\x10\xc4$\x12\x1e\n\x19CmdMultipl\
-    eDropInfoNotify\x10\xa8$\x12)\n$CmdGetPlayerReturnMultiDropInfoCsReq\x10\
-    \xa0$\x12\x20\n\x1bCmdGetMultipleDropInfoCsReq\x10\xd7$b\x06proto3\
+    \x1b\n\x17CmdMultipleDropTypeNone\x10\0\x12\x20\n\x1bCmdGetMultipleDropI\
+    nfoScRsp\x10\xd3$\x12\x20\n\x1bCmdGetMultipleDropInfoCsReq\x10\x8c$\x12\
+    \x20\n\x1bCmdMultipleDropInfoScNotify\x10\xbb$\x12)\n$CmdGetPlayerReturn\
+    MultiDropInfoCsReq\x10\x9f$\x12\x1e\n\x19CmdMultipleDropInfoNotify\x10\
+    \x8d$\x12)\n$CmdGetPlayerReturnMultiDropInfoScRsp\x10\x93$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

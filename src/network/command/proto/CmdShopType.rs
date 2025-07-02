@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdShopType {
     // @@protoc_insertion_point(enum_value:CmdShopType.CmdShopTypeNone)
     CmdShopTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsCsReq)
-    CmdBuyGoodsCsReq = 1531,
     // @@protoc_insertion_point(enum_value:CmdShopType.CmdGetShopListCsReq)
-    CmdGetShopListCsReq = 1595,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsScRsp)
-    CmdBuyGoodsScRsp = 1540,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdTakeCityShopRewardScRsp)
-    CmdTakeCityShopRewardScRsp = 1548,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdTakeCityShopRewardCsReq)
-    CmdTakeCityShopRewardCsReq = 1576,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdCityShopInfoScNotify)
-    CmdCityShopInfoScNotify = 1571,
+    CmdGetShopListCsReq = 1520,
+    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsCsReq)
+    CmdBuyGoodsCsReq = 1567,
     // @@protoc_insertion_point(enum_value:CmdShopType.CmdGetShopListScRsp)
-    CmdGetShopListScRsp = 1532,
+    CmdGetShopListScRsp = 1591,
+    // @@protoc_insertion_point(enum_value:CmdShopType.CmdTakeCityShopRewardScRsp)
+    CmdTakeCityShopRewardScRsp = 1521,
+    // @@protoc_insertion_point(enum_value:CmdShopType.CmdTakeCityShopRewardCsReq)
+    CmdTakeCityShopRewardCsReq = 1527,
+    // @@protoc_insertion_point(enum_value:CmdShopType.CmdCityShopInfoScNotify)
+    CmdCityShopInfoScNotify = 1570,
+    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsScRsp)
+    CmdBuyGoodsScRsp = 1539,
 }
 
 impl ::protobuf::Enum for CmdShopType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdShopType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdShopType> {
         match value {
             0 => ::std::option::Option::Some(CmdShopType::CmdShopTypeNone),
-            1531 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
-            1595 => ::std::option::Option::Some(CmdShopType::CmdGetShopListCsReq),
-            1540 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
-            1548 => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardScRsp),
-            1576 => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardCsReq),
-            1571 => ::std::option::Option::Some(CmdShopType::CmdCityShopInfoScNotify),
-            1532 => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
+            1520 => ::std::option::Option::Some(CmdShopType::CmdGetShopListCsReq),
+            1567 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
+            1591 => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
+            1521 => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardScRsp),
+            1527 => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardCsReq),
+            1570 => ::std::option::Option::Some(CmdShopType::CmdCityShopInfoScNotify),
+            1539 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdShopType {
     fn from_str(str: &str) -> ::std::option::Option<CmdShopType> {
         match str {
             "CmdShopTypeNone" => ::std::option::Option::Some(CmdShopType::CmdShopTypeNone),
-            "CmdBuyGoodsCsReq" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
             "CmdGetShopListCsReq" => ::std::option::Option::Some(CmdShopType::CmdGetShopListCsReq),
-            "CmdBuyGoodsScRsp" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
+            "CmdBuyGoodsCsReq" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
+            "CmdGetShopListScRsp" => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
             "CmdTakeCityShopRewardScRsp" => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardScRsp),
             "CmdTakeCityShopRewardCsReq" => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardCsReq),
             "CmdCityShopInfoScNotify" => ::std::option::Option::Some(CmdShopType::CmdCityShopInfoScNotify),
-            "CmdGetShopListScRsp" => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
+            "CmdBuyGoodsScRsp" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdShopType] = &[
         CmdShopType::CmdShopTypeNone,
-        CmdShopType::CmdBuyGoodsCsReq,
         CmdShopType::CmdGetShopListCsReq,
-        CmdShopType::CmdBuyGoodsScRsp,
+        CmdShopType::CmdBuyGoodsCsReq,
+        CmdShopType::CmdGetShopListScRsp,
         CmdShopType::CmdTakeCityShopRewardScRsp,
         CmdShopType::CmdTakeCityShopRewardCsReq,
         CmdShopType::CmdCityShopInfoScNotify,
-        CmdShopType::CmdGetShopListScRsp,
+        CmdShopType::CmdBuyGoodsScRsp,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdShopType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdShopType::CmdShopTypeNone => 0,
-            CmdShopType::CmdBuyGoodsCsReq => 1,
-            CmdShopType::CmdGetShopListCsReq => 2,
-            CmdShopType::CmdBuyGoodsScRsp => 3,
+            CmdShopType::CmdGetShopListCsReq => 1,
+            CmdShopType::CmdBuyGoodsCsReq => 2,
+            CmdShopType::CmdGetShopListScRsp => 3,
             CmdShopType::CmdTakeCityShopRewardScRsp => 4,
             CmdShopType::CmdTakeCityShopRewardCsReq => 5,
             CmdShopType::CmdCityShopInfoScNotify => 6,
-            CmdShopType::CmdGetShopListScRsp => 7,
+            CmdShopType::CmdBuyGoodsScRsp => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,11 +127,11 @@ impl CmdShopType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdShopType.proto*\xe4\x01\n\x0bCmdShopType\x12\x13\n\x0fCmdShopTy\
-    peNone\x10\0\x12\x15\n\x10CmdBuyGoodsCsReq\x10\xfb\x0b\x12\x18\n\x13CmdG\
-    etShopListCsReq\x10\xbb\x0c\x12\x15\n\x10CmdBuyGoodsScRsp\x10\x84\x0c\
-    \x12\x1f\n\x1aCmdTakeCityShopRewardScRsp\x10\x8c\x0c\x12\x1f\n\x1aCmdTak\
-    eCityShopRewardCsReq\x10\xa8\x0c\x12\x1c\n\x17CmdCityShopInfoScNotify\
-    \x10\xa3\x0c\x12\x18\n\x13CmdGetShopListScRsp\x10\xfc\x0bb\x06proto3\
+    peNone\x10\0\x12\x18\n\x13CmdGetShopListCsReq\x10\xf0\x0b\x12\x15\n\x10C\
+    mdBuyGoodsCsReq\x10\x9f\x0c\x12\x18\n\x13CmdGetShopListScRsp\x10\xb7\x0c\
+    \x12\x1f\n\x1aCmdTakeCityShopRewardScRsp\x10\xf1\x0b\x12\x1f\n\x1aCmdTak\
+    eCityShopRewardCsReq\x10\xf7\x0b\x12\x1c\n\x17CmdCityShopInfoScNotify\
+    \x10\xa2\x0c\x12\x15\n\x10CmdBuyGoodsScRsp\x10\x83\x0cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

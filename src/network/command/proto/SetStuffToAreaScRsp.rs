@@ -30,12 +30,12 @@ pub struct SetStuffToAreaScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos)
-    pub pos: ::protobuf::EnumOrUnknown<super::KAMLGLMNJGJ::KAMLGLMNJGJ>,
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.LGKIIELGHDJ)
     pub LGKIIELGHDJ: u32,
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.BDJCGCDJOEO)
     pub BDJCGCDJOEO: u32,
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos)
+    pub pos: ::protobuf::EnumOrUnknown<super::KAMLGLMNJGJ::KAMLGLMNJGJ>,
     // special fields
     // @@protoc_insertion_point(special_field:SetStuffToAreaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl SetStuffToAreaScRsp {
             |m: &mut SetStuffToAreaScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos",
-            |m: &SetStuffToAreaScRsp| { &m.pos },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.pos },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGKIIELGHDJ",
             |m: &SetStuffToAreaScRsp| { &m.LGKIIELGHDJ },
             |m: &mut SetStuffToAreaScRsp| { &mut m.LGKIIELGHDJ },
@@ -74,6 +69,11 @@ impl SetStuffToAreaScRsp {
             "BDJCGCDJOEO",
             |m: &SetStuffToAreaScRsp| { &m.BDJCGCDJOEO },
             |m: &mut SetStuffToAreaScRsp| { &mut m.BDJCGCDJOEO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos",
+            |m: &SetStuffToAreaScRsp| { &m.pos },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.pos },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetStuffToAreaScRsp>(
             "SetStuffToAreaScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.pos = is.read_enum_or_unknown()?;
-                },
-                72 => {
+                16 => {
                     self.LGKIIELGHDJ = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.BDJCGCDJOEO = is.read_uint32()?;
+                },
+                8 => {
+                    self.pos = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.pos.value());
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.LGKIIELGHDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LGKIIELGHDJ);
+            my_size += ::protobuf::rt::uint32_size(2, self.LGKIIELGHDJ);
         }
         if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BDJCGCDJOEO);
+            my_size += ::protobuf::rt::uint32_size(10, self.BDJCGCDJOEO);
+        }
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.pos.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.pos))?;
+            os.write_uint32(6, self.retcode)?;
         }
         if self.LGKIIELGHDJ != 0 {
-            os.write_uint32(9, self.LGKIIELGHDJ)?;
+            os.write_uint32(2, self.LGKIIELGHDJ)?;
         }
         if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(5, self.BDJCGCDJOEO)?;
+            os.write_uint32(10, self.BDJCGCDJOEO)?;
+        }
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.pos))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.pos = ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE);
         self.LGKIIELGHDJ = 0;
         self.BDJCGCDJOEO = 0;
+        self.pos = ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetStuffToAreaScRsp {
         static instance: SetStuffToAreaScRsp = SetStuffToAreaScRsp {
             retcode: 0,
-            pos: ::protobuf::EnumOrUnknown::from_i32(0),
             LGKIIELGHDJ: 0,
             BDJCGCDJOEO: 0,
+            pos: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SetStuffToAreaScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SetStuffToAreaScRsp.proto\x1a\x11KAMLGLMNJGJ.proto\"\x93\x01\n\x13\
-    SetStuffToAreaScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
-    \x12\x1e\n\x03pos\x18\x0b\x20\x01(\x0e2\x0c.KAMLGLMNJGJR\x03pos\x12\x20\
-    \n\x0bLGKIIELGHDJ\x18\t\x20\x01(\rR\x0bLGKIIELGHDJ\x12\x20\n\x0bBDJCGCDJ\
-    OEO\x18\x05\x20\x01(\rR\x0bBDJCGCDJOEOb\x06proto3\
+    SetStuffToAreaScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bLGKIIELGHDJ\x18\x02\x20\x01(\rR\x0bLGKIIELGHDJ\x12\x20\n\
+    \x0bBDJCGCDJOEO\x18\n\x20\x01(\rR\x0bBDJCGCDJOEO\x12\x1e\n\x03pos\x18\
+    \x01\x20\x01(\x0e2\x0c.KAMLGLMNJGJR\x03posb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

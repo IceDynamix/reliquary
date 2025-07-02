@@ -86,10 +86,10 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                48 => {
                     self.target_side = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 66 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.target_side);
+            my_size += ::protobuf::rt::uint32_size(6, self.target_side);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         for value in &self.assist_list {
             let len = value.compute_size();
@@ -124,10 +124,10 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.target_side != 0 {
-            os.write_uint32(14, self.target_side)?;
+            os.write_uint32(6, self.target_side)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         for v in &self.assist_list {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendAssistListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetFriendAssistListScRsp.proto\x1a\x16PlayerAssistInfo.proto\"\x89\
-    \x01\n\x18GetFriendAssistListScRsp\x12\x1f\n\x0btarget_side\x18\x0e\x20\
-    \x01(\rR\ntargetSide\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    \x01\n\x18GetFriendAssistListScRsp\x12\x1f\n\x0btarget_side\x18\x06\x20\
+    \x01(\rR\ntargetSide\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
     \x122\n\x0bassist_list\x18\x08\x20\x03(\x0b2\x11.PlayerAssistInfoR\nassi\
     stListb\x06proto3\
 ";

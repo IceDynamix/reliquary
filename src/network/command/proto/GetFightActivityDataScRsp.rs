@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFightActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.groups)
-    pub groups: ::std::vec::Vec<super::FightActivityGroup::FightActivityGroup>,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.groups)
+    pub groups: ::std::vec::Vec<super::FightActivityGroup::FightActivityGroup>,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.KAIOMPFBGKL)
     pub KAIOMPFBGKL: bool,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.retcode)
@@ -57,15 +57,15 @@ impl GetFightActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "groups",
-            |m: &GetFightActivityDataScRsp| { &m.groups },
-            |m: &mut GetFightActivityDataScRsp| { &mut m.groups },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
             |m: &GetFightActivityDataScRsp| { &m.world_level },
             |m: &mut GetFightActivityDataScRsp| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "groups",
+            |m: &GetFightActivityDataScRsp| { &m.groups },
+            |m: &mut GetFightActivityDataScRsp| { &mut m.groups },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KAIOMPFBGKL",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.groups.push(is.read_message()?);
-                },
-                72 => {
+                24 => {
                     self.world_level = is.read_uint32()?;
                 },
-                112 => {
+                58 => {
+                    self.groups.push(is.read_message()?);
+                },
+                48 => {
                     self.KAIOMPFBGKL = is.read_bool()?;
                 },
-                88 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                74 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -139,18 +139,18 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
+        }
         for value in &self.groups {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.world_level);
-        }
         if self.KAIOMPFBGKL != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         for (k, v) in &self.DGNFCMDJOPA {
             let mut entry_size = 0;
@@ -164,23 +164,23 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.groups {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.world_level != 0 {
-            os.write_uint32(9, self.world_level)?;
+            os.write_uint32(3, self.world_level)?;
         }
+        for v in &self.groups {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if self.KAIOMPFBGKL != false {
-            os.write_bool(14, self.KAIOMPFBGKL)?;
+            os.write_bool(6, self.KAIOMPFBGKL)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         for (k, v) in &self.DGNFCMDJOPA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(74)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -202,8 +202,8 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.groups.clear();
         self.world_level = 0;
+        self.groups.clear();
         self.KAIOMPFBGKL = false;
         self.retcode = 0;
         self.DGNFCMDJOPA.clear();
@@ -235,14 +235,14 @@ impl ::protobuf::reflect::ProtobufValue for GetFightActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFightActivityDataScRsp.proto\x1a\x18FightActivityGroup.proto\"\
-    \xb4\x02\n\x19GetFightActivityDataScRsp\x12+\n\x06groups\x18\x02\x20\x03\
-    (\x0b2\x13.FightActivityGroupR\x06groups\x12\x1f\n\x0bworld_level\x18\t\
-    \x20\x01(\rR\nworldLevel\x12\x20\n\x0bKAIOMPFBGKL\x18\x0e\x20\x01(\x08R\
-    \x0bKAIOMPFBGKL\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12M\
-    \n\x0bDGNFCMDJOPA\x18\x0c\x20\x03(\x0b2+.GetFightActivityDataScRsp.DGNFC\
-    MDJOPAEntryR\x0bDGNFCMDJOPA\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
-    lue:\x028\x01b\x06proto3\
+    \xb4\x02\n\x19GetFightActivityDataScRsp\x12\x1f\n\x0bworld_level\x18\x03\
+    \x20\x01(\rR\nworldLevel\x12+\n\x06groups\x18\x07\x20\x03(\x0b2\x13.Figh\
+    tActivityGroupR\x06groups\x12\x20\n\x0bKAIOMPFBGKL\x18\x06\x20\x01(\x08R\
+    \x0bKAIOMPFBGKL\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12M\n\
+    \x0bDGNFCMDJOPA\x18\t\x20\x03(\x0b2+.GetFightActivityDataScRsp.DGNFCMDJO\
+    PAEntryR\x0bDGNFCMDJOPA\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

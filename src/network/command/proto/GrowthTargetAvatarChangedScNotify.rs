@@ -79,13 +79,13 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.JPNLPOPMKEJ = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.growth_target_type_list.push(is.read_enum_or_unknown()?);
                 },
-                122 => {
+                98 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.growth_target_type_list)?
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JPNLPOPMKEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JPNLPOPMKEJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.JPNLPOPMKEJ);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(15, &self.growth_target_type_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(12, &self.growth_target_type_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JPNLPOPMKEJ != 0 {
-            os.write_uint32(8, self.JPNLPOPMKEJ)?;
+            os.write_uint32(11, self.JPNLPOPMKEJ)?;
         }
-        os.write_repeated_packed_enum_or_unknown(15, &self.growth_target_type_list)?;
+        os.write_repeated_packed_enum_or_unknown(12, &self.growth_target_type_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GrowthTargetAvatarChangedScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GrowthTargetAvatarChangedScNotify.proto\x1a\x1eGrowthTargetFunctionTy\
     pe.proto\"\x97\x01\n!GrowthTargetAvatarChangedScNotify\x12\x20\n\x0bJPNL\
-    POPMKEJ\x18\x08\x20\x01(\rR\x0bJPNLPOPMKEJ\x12P\n\x17growth_target_type_\
-    list\x18\x0f\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthTarget\
+    POPMKEJ\x18\x0b\x20\x01(\rR\x0bJPNLPOPMKEJ\x12P\n\x17growth_target_type_\
+    list\x18\x0c\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthTarget\
     TypeListb\x06proto3\
 ";
 

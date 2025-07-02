@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyEventLoadUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyEventLoadUpdateScNotify.NBMPBGPJONH)
-    pub NBMPBGPJONH: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // @@protoc_insertion_point(field:MonopolyEventLoadUpdateScNotify.IMOPIEJBHOD)
     pub IMOPIEJBHOD: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
+    // @@protoc_insertion_point(field:MonopolyEventLoadUpdateScNotify.NBMPBGPJONH)
+    pub NBMPBGPJONH: ::std::vec::Vec<super::IAACCAFGEPI::IAACCAFGEPI>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyEventLoadUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MonopolyEventLoadUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBMPBGPJONH",
-            |m: &MonopolyEventLoadUpdateScNotify| { &m.NBMPBGPJONH },
-            |m: &mut MonopolyEventLoadUpdateScNotify| { &mut m.NBMPBGPJONH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IMOPIEJBHOD",
             |m: &MonopolyEventLoadUpdateScNotify| { &m.IMOPIEJBHOD },
             |m: &mut MonopolyEventLoadUpdateScNotify| { &mut m.IMOPIEJBHOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NBMPBGPJONH",
+            |m: &MonopolyEventLoadUpdateScNotify| { &m.NBMPBGPJONH },
+            |m: &mut MonopolyEventLoadUpdateScNotify| { &mut m.NBMPBGPJONH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyEventLoadUpdateScNotify>(
             "MonopolyEventLoadUpdateScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.NBMPBGPJONH.push(is.read_message()?);
-                },
-                82 => {
+                66 => {
                     self.IMOPIEJBHOD.push(is.read_message()?);
+                },
+                26 => {
+                    self.NBMPBGPJONH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NBMPBGPJONH {
+        for value in &self.IMOPIEJBHOD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.IMOPIEJBHOD {
+        for value in &self.NBMPBGPJONH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NBMPBGPJONH {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         for v in &self.IMOPIEJBHOD {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        for v in &self.NBMPBGPJONH {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.NBMPBGPJONH.clear();
         self.IMOPIEJBHOD.clear();
+        self.NBMPBGPJONH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyEventLoadUpdateScNotify {
         static instance: MonopolyEventLoadUpdateScNotify = MonopolyEventLoadUpdateScNotify {
-            NBMPBGPJONH: ::std::vec::Vec::new(),
             IMOPIEJBHOD: ::std::vec::Vec::new(),
+            NBMPBGPJONH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventLoadUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyEventLoadUpdateScNotify.proto\x1a\x11IAACCAFGEPI.proto\"\x81\
-    \x01\n\x1fMonopolyEventLoadUpdateScNotify\x12.\n\x0bNBMPBGPJONH\x18\x06\
-    \x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bNBMPBGPJONH\x12.\n\x0bIMOPIEJBHOD\x18\
-    \n\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bIMOPIEJBHODb\x06proto3\
+    \x01\n\x1fMonopolyEventLoadUpdateScNotify\x12.\n\x0bIMOPIEJBHOD\x18\x08\
+    \x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bIMOPIEJBHOD\x12.\n\x0bNBMPBGPJONH\x18\
+    \x03\x20\x03(\x0b2\x0c.IAACCAFGEPIR\x0bNBMPBGPJONHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

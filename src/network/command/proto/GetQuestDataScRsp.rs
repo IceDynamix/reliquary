@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetQuestDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetQuestDataScRsp.total_achievement_exp)
-    pub total_achievement_exp: u32,
     // @@protoc_insertion_point(field:GetQuestDataScRsp.quest_list)
     pub quest_list: ::std::vec::Vec<super::Quest::Quest>,
+    // @@protoc_insertion_point(field:GetQuestDataScRsp.total_achievement_exp)
+    pub total_achievement_exp: u32,
     // @@protoc_insertion_point(field:GetQuestDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl GetQuestDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_achievement_exp",
-            |m: &GetQuestDataScRsp| { &m.total_achievement_exp },
-            |m: &mut GetQuestDataScRsp| { &mut m.total_achievement_exp },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "quest_list",
             |m: &GetQuestDataScRsp| { &m.quest_list },
             |m: &mut GetQuestDataScRsp| { &mut m.quest_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_achievement_exp",
+            |m: &GetQuestDataScRsp| { &m.total_achievement_exp },
+            |m: &mut GetQuestDataScRsp| { &mut m.total_achievement_exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.total_achievement_exp = is.read_uint32()?;
-                },
-                34 => {
+                90 => {
                     self.quest_list.push(is.read_message()?);
                 },
-                8 => {
+                112 => {
+                    self.total_achievement_exp = is.read_uint32()?;
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.total_achievement_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.total_achievement_exp);
-        }
         for value in &self.quest_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.total_achievement_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.total_achievement_exp);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.total_achievement_exp != 0 {
-            os.write_uint32(6, self.total_achievement_exp)?;
-        }
         for v in &self.quest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.total_achievement_exp != 0 {
+            os.write_uint32(14, self.total_achievement_exp)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetQuestDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.total_achievement_exp = 0;
         self.quest_list.clear();
+        self.total_achievement_exp = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetQuestDataScRsp {
         static instance: GetQuestDataScRsp = GetQuestDataScRsp {
-            total_achievement_exp: 0,
             quest_list: ::std::vec::Vec::new(),
+            total_achievement_exp: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetQuestDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetQuestDataScRsp.proto\x1a\x0bQuest.proto\"\x88\x01\n\x11GetQuest\
-    DataScRsp\x122\n\x15total_achievement_exp\x18\x06\x20\x01(\rR\x13totalAc\
-    hievementExp\x12%\n\nquest_list\x18\x04\x20\x03(\x0b2\x06.QuestR\tquestL\
-    ist\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    DataScRsp\x12%\n\nquest_list\x18\x0b\x20\x03(\x0b2\x06.QuestR\tquestList\
+    \x122\n\x15total_achievement_exp\x18\x0e\x20\x01(\rR\x13totalAchievement\
+    Exp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

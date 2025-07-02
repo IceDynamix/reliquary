@@ -72,7 +72,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.avatar_id = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(11, self.avatar_id.value());
+            my_size += ::protobuf::rt::int32_size(2, self.avatar_id.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockAvatarPathCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUnlockAvatarPathCsReq.proto\x1a\x19MultiPathAvatarType.proto\"J\n\
-    \x15UnlockAvatarPathCsReq\x121\n\tavatar_id\x18\x0b\x20\x01(\x0e2\x14.Mu\
+    \x15UnlockAvatarPathCsReq\x121\n\tavatar_id\x18\x02\x20\x01(\x0e2\x14.Mu\
     ltiPathAvatarTypeR\x08avatarIdb\x06proto3\
 ";
 

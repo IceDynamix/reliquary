@@ -79,13 +79,13 @@ impl ::protobuf::Message for DEJAKPOEPKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                56 => {
                     self.CGFGFMGDPNJ = is.read_uint32()?;
                 },
-                18 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.LFPMAOBGNEN)?;
                 },
-                16 => {
+                40 => {
                     self.LFPMAOBGNEN.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for DEJAKPOEPKN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CGFGFMGDPNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CGFGFMGDPNJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.CGFGFMGDPNJ);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LFPMAOBGNEN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.LFPMAOBGNEN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for DEJAKPOEPKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CGFGFMGDPNJ != 0 {
-            os.write_uint32(13, self.CGFGFMGDPNJ)?;
+            os.write_uint32(7, self.CGFGFMGDPNJ)?;
         }
-        os.write_repeated_packed_uint32(2, &self.LFPMAOBGNEN)?;
+        os.write_repeated_packed_uint32(5, &self.LFPMAOBGNEN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DEJAKPOEPKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEJAKPOEPKN.proto\"Q\n\x0bDEJAKPOEPKN\x12\x20\n\x0bCGFGFMGDPNJ\x18\
-    \r\x20\x01(\rR\x0bCGFGFMGDPNJ\x12\x20\n\x0bLFPMAOBGNEN\x18\x02\x20\x03(\
-    \rR\x0bLFPMAOBGNENb\x06proto3\
+    \x07\x20\x01(\rR\x0bCGFGFMGDPNJ\x12\x20\n\x0bLFPMAOBGNEN\x18\x05\x20\x03\
+    (\rR\x0bLFPMAOBGNENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

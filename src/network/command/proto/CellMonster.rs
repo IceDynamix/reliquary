@@ -79,10 +79,10 @@ impl ::protobuf::Message for CellMonster {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.monster_id = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.boss_decay_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CellMonster {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.monster_id);
         }
         if self.boss_decay_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.boss_decay_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.boss_decay_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CellMonster {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.monster_id != 0 {
-            os.write_uint32(13, self.monster_id)?;
+            os.write_uint32(4, self.monster_id)?;
         }
         if self.boss_decay_id != 0 {
-            os.write_uint32(6, self.boss_decay_id)?;
+            os.write_uint32(14, self.boss_decay_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CellMonster {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CellMonster.proto\"P\n\x0bCellMonster\x12\x1d\n\nmonster_id\x18\r\
-    \x20\x01(\rR\tmonsterId\x12\"\n\rboss_decay_id\x18\x06\x20\x01(\rR\x0bbo\
-    ssDecayIdb\x06proto3\
+    \n\x11CellMonster.proto\"P\n\x0bCellMonster\x12\x1d\n\nmonster_id\x18\
+    \x04\x20\x01(\rR\tmonsterId\x12\"\n\rboss_decay_id\x18\x0e\x20\x01(\rR\
+    \x0bbossDecayIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

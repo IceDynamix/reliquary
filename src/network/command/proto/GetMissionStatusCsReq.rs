@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionStatusCsReq.main_mission_id_list)
-    pub main_mission_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetMissionStatusCsReq.sub_mission_id_list)
     pub sub_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusCsReq.main_mission_id_list)
+    pub main_mission_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetMissionStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "main_mission_id_list",
-            |m: &GetMissionStatusCsReq| { &m.main_mission_id_list },
-            |m: &mut GetMissionStatusCsReq| { &mut m.main_mission_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "sub_mission_id_list",
             |m: &GetMissionStatusCsReq| { &m.sub_mission_id_list },
             |m: &mut GetMissionStatusCsReq| { &mut m.sub_mission_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "main_mission_id_list",
+            |m: &GetMissionStatusCsReq| { &m.main_mission_id_list },
+            |m: &mut GetMissionStatusCsReq| { &mut m.main_mission_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionStatusCsReq>(
             "GetMissionStatusCsReq",
@@ -80,16 +80,16 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.main_mission_id_list)?;
-                },
-                24 => {
-                    self.main_mission_id_list.push(is.read_uint32()?);
-                },
-                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.sub_mission_id_list)?;
                 },
-                80 => {
+                24 => {
                     self.sub_mission_id_list.push(is.read_uint32()?);
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.main_mission_id_list)?;
+                },
+                104 => {
+                    self.main_mission_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.main_mission_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.sub_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.sub_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.main_mission_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.main_mission_id_list)?;
-        os.write_repeated_packed_uint32(10, &self.sub_mission_id_list)?;
+        os.write_repeated_packed_uint32(3, &self.sub_mission_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.main_mission_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for GetMissionStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.main_mission_id_list.clear();
         self.sub_mission_id_list.clear();
+        self.main_mission_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionStatusCsReq {
         static instance: GetMissionStatusCsReq = GetMissionStatusCsReq {
-            main_mission_id_list: ::std::vec::Vec::new(),
             sub_mission_id_list: ::std::vec::Vec::new(),
+            main_mission_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetMissionStatusCsReq.proto\"w\n\x15GetMissionStatusCsReq\x12/\n\
-    \x14main_mission_id_list\x18\x03\x20\x03(\rR\x11mainMissionIdList\x12-\n\
-    \x13sub_mission_id_list\x18\n\x20\x03(\rR\x10subMissionIdListb\x06proto3\
+    \n\x1bGetMissionStatusCsReq.proto\"w\n\x15GetMissionStatusCsReq\x12-\n\
+    \x13sub_mission_id_list\x18\x03\x20\x03(\rR\x10subMissionIdList\x12/\n\
+    \x14main_mission_id_list\x18\r\x20\x03(\rR\x11mainMissionIdListb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

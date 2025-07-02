@@ -79,10 +79,10 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                112 => {
                     self.era_flipper_region_id = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
                     self.state = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.era_flipper_region_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.era_flipper_region_id);
         }
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.state);
+            my_size += ::protobuf::rt::uint32_size(3, self.state);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GOAHFMLPDMF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.era_flipper_region_id != 0 {
-            os.write_uint32(9, self.era_flipper_region_id)?;
+            os.write_uint32(14, self.era_flipper_region_id)?;
         }
         if self.state != 0 {
-            os.write_uint32(2, self.state)?;
+            os.write_uint32(3, self.state)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GOAHFMLPDMF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GOAHFMLPDMF.proto\"V\n\x0bGOAHFMLPDMF\x121\n\x15era_flipper_region\
-    _id\x18\t\x20\x01(\rR\x12eraFlipperRegionId\x12\x14\n\x05state\x18\x02\
+    _id\x18\x0e\x20\x01(\rR\x12eraFlipperRegionId\x12\x14\n\x05state\x18\x03\
     \x20\x01(\rR\x05stateb\x06proto3\
 ";
 

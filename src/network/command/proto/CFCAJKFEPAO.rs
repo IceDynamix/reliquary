@@ -86,13 +86,13 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                106 => {
                     self.msg = is.read_string()?;
                 },
-                80 => {
+                88 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
-                50 => {
+                26 => {
                     self.BENANABPPJN = is.read_string()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.msg);
+            my_size += ::protobuf::rt::string_size(13, &self.msg);
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            my_size += ::protobuf::rt::int32_size(10, self.state.value());
+            my_size += ::protobuf::rt::int32_size(11, self.state.value());
         }
         if !self.BENANABPPJN.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.BENANABPPJN);
+            my_size += ::protobuf::rt::string_size(3, &self.BENANABPPJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CFCAJKFEPAO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.msg.is_empty() {
-            os.write_string(9, &self.msg)?;
+            os.write_string(13, &self.msg)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
         if !self.BENANABPPJN.is_empty() {
-            os.write_string(6, &self.BENANABPPJN)?;
+            os.write_string(3, &self.BENANABPPJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for CFCAJKFEPAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFCAJKFEPAO.proto\x1a\x11OJIDJNDHDGA.proto\"e\n\x0bCFCAJKFEPAO\x12\
-    \x10\n\x03msg\x18\t\x20\x01(\tR\x03msg\x12\"\n\x05state\x18\n\x20\x01(\
-    \x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x20\n\x0bBENANABPPJN\x18\x06\x20\x01\
+    \x10\n\x03msg\x18\r\x20\x01(\tR\x03msg\x12\"\n\x05state\x18\x0b\x20\x01(\
+    \x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x20\n\x0bBENANABPPJN\x18\x03\x20\x01\
     (\tR\x0bBENANABPPJNb\x06proto3\
 ";
 

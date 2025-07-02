@@ -93,13 +93,13 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
+                64 => {
                     self.room_id = is.read_uint64()?;
                 },
-                64 => {
+                96 => {
                     self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
                 8 => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.room_id);
+            my_size += ::protobuf::rt::uint64_size(8, self.room_id);
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::int32_size(12, self.NBDLPGBIDLC.value());
         }
         if self.NOGFEEMNHPC != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.NOGFEEMNHPC);
@@ -136,13 +136,13 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.room_id != 0 {
-            os.write_uint64(3, self.room_id)?;
+            os.write_uint64(8, self.room_id)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         if self.NOGFEEMNHPC != 0 {
             os.write_uint64(1, self.NOGFEEMNHPC)?;
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for GetCrossInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetCrossInfoScRsp.proto\x1a\x13FightGameMode.proto\"\x9a\x01\n\x11\
-    GetCrossInfoScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\
-    \x17\n\x07room_id\x18\x03\x20\x01(\x04R\x06roomId\x120\n\x0bNBDLPGBIDLC\
-    \x18\x08\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12\x20\n\x0bNO\
+    GetCrossInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\
+    \x17\n\x07room_id\x18\x08\x20\x01(\x04R\x06roomId\x120\n\x0bNBDLPGBIDLC\
+    \x18\x0c\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12\x20\n\x0bNO\
     GFEEMNHPC\x18\x01\x20\x01(\x04R\x0bNOGFEEMNHPCb\x06proto3\
 ";
 

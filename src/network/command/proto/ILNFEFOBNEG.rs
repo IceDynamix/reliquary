@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ILNFEFOBNEG {
     // message fields
-    // @@protoc_insertion_point(field:ILNFEFOBNEG.OMCBCGCHLGN)
-    pub OMCBCGCHLGN: ::protobuf::MessageField<super::DKNMKFBOBJF::DKNMKFBOBJF>,
     // @@protoc_insertion_point(field:ILNFEFOBNEG.rogue_get_info)
     pub rogue_get_info: ::protobuf::MessageField<super::LIIKCGNCBBF::LIIKCGNCBBF>,
+    // @@protoc_insertion_point(field:ILNFEFOBNEG.OMCBCGCHLGN)
+    pub OMCBCGCHLGN: ::protobuf::MessageField<super::DKNMKFBOBJF::DKNMKFBOBJF>,
     // special fields
     // @@protoc_insertion_point(special_field:ILNFEFOBNEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ILNFEFOBNEG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKNMKFBOBJF::DKNMKFBOBJF>(
-            "OMCBCGCHLGN",
-            |m: &ILNFEFOBNEG| { &m.OMCBCGCHLGN },
-            |m: &mut ILNFEFOBNEG| { &mut m.OMCBCGCHLGN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIIKCGNCBBF::LIIKCGNCBBF>(
             "rogue_get_info",
             |m: &ILNFEFOBNEG| { &m.rogue_get_info },
             |m: &mut ILNFEFOBNEG| { &mut m.rogue_get_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKNMKFBOBJF::DKNMKFBOBJF>(
+            "OMCBCGCHLGN",
+            |m: &ILNFEFOBNEG| { &m.OMCBCGCHLGN },
+            |m: &mut ILNFEFOBNEG| { &mut m.OMCBCGCHLGN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ILNFEFOBNEG>(
             "ILNFEFOBNEG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ILNFEFOBNEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8554 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
-                },
-                13194 => {
+                2842 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
+                },
+                9682 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMCBCGCHLGN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ILNFEFOBNEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
+        if let Some(v) = self.rogue_get_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_get_info.as_ref() {
+        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ILNFEFOBNEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1069, v, os)?;
-        }
         if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1649, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(355, v, os)?;
+        }
+        if let Some(v) = self.OMCBCGCHLGN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1210, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ILNFEFOBNEG {
     }
 
     fn clear(&mut self) {
-        self.OMCBCGCHLGN.clear();
         self.rogue_get_info.clear();
+        self.OMCBCGCHLGN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ILNFEFOBNEG {
         static instance: ILNFEFOBNEG = ILNFEFOBNEG {
-            OMCBCGCHLGN: ::protobuf::MessageField::none(),
             rogue_get_info: ::protobuf::MessageField::none(),
+            OMCBCGCHLGN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ILNFEFOBNEG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ILNFEFOBNEG.proto\x1a\x11DKNMKFBOBJF.proto\x1a\x11LIIKCGNCBBF.prot\
-    o\"s\n\x0bILNFEFOBNEG\x12/\n\x0bOMCBCGCHLGN\x18\xad\x08\x20\x01(\x0b2\
-    \x0c.DKNMKFBOBJFR\x0bOMCBCGCHLGN\x123\n\x0erogue_get_info\x18\xf1\x0c\
-    \x20\x01(\x0b2\x0c.LIIKCGNCBBFR\x0crogueGetInfob\x06proto3\
+    o\"s\n\x0bILNFEFOBNEG\x123\n\x0erogue_get_info\x18\xe3\x02\x20\x01(\x0b2\
+    \x0c.LIIKCGNCBBFR\x0crogueGetInfo\x12/\n\x0bOMCBCGCHLGN\x18\xba\t\x20\
+    \x01(\x0b2\x0c.DKNMKFBOBJFR\x0bOMCBCGCHLGNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

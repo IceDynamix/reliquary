@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                80 => {
                     self.event_id = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.event_id);
         }
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(6, self.KDMLLLGHJON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.event_id != 0 {
-            os.write_uint32(11, self.event_id)?;
+            os.write_uint32(10, self.event_id)?;
         }
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(12, self.KDMLLLGHJON)?;
+            os.write_uint32(6, self.KDMLLLGHJON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolySelectOptionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolySelectOptionCsReq.proto\"X\n\x19MonopolySelectOptionCsReq\
-    \x12\x19\n\x08event_id\x18\x0b\x20\x01(\rR\x07eventId\x12\x20\n\x0bKDMLL\
-    LGHJON\x18\x0c\x20\x01(\rR\x0bKDMLLLGHJONb\x06proto3\
+    \x12\x19\n\x08event_id\x18\n\x20\x01(\rR\x07eventId\x12\x20\n\x0bKDMLLLG\
+    HJON\x18\x06\x20\x01(\rR\x0bKDMLLLGHJONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

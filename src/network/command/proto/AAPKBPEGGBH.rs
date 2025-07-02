@@ -30,18 +30,18 @@ pub struct AAPKBPEGGBH {
     // message fields
     // @@protoc_insertion_point(field:AAPKBPEGGBH.CACGEKAANKL)
     pub CACGEKAANKL: ::protobuf::MessageField<super::KLOHNFGBNPH::KLOHNFGBNPH>,
-    // @@protoc_insertion_point(field:AAPKBPEGGBH.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::MIKFNBBOPIP::MIKFNBBOPIP>,
     // @@protoc_insertion_point(field:AAPKBPEGGBH.JIBDGCFCDIO)
     pub JIBDGCFCDIO: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
-    // @@protoc_insertion_point(field:AAPKBPEGGBH.JLFDDMEKLJK)
-    pub JLFDDMEKLJK: ::protobuf::MessageField<super::JCHCGFMGBAK::JCHCGFMGBAK>,
-    // @@protoc_insertion_point(field:AAPKBPEGGBH.lineup)
-    pub lineup: ::protobuf::MessageField<super::OMDEFBABNNB::OMDEFBABNNB>,
-    // @@protoc_insertion_point(field:AAPKBPEGGBH.level)
-    pub level: ::protobuf::MessageField<super::MJKKONEIOBO::MJKKONEIOBO>,
     // @@protoc_insertion_point(field:AAPKBPEGGBH.KKOBBENPFPH)
     pub KKOBBENPFPH: ::protobuf::MessageField<super::LLNHFMGMCMN::LLNHFMGMCMN>,
+    // @@protoc_insertion_point(field:AAPKBPEGGBH.lineup)
+    pub lineup: ::protobuf::MessageField<super::OMDEFBABNNB::OMDEFBABNNB>,
+    // @@protoc_insertion_point(field:AAPKBPEGGBH.basic_info)
+    pub basic_info: ::protobuf::MessageField<super::MIKFNBBOPIP::MIKFNBBOPIP>,
+    // @@protoc_insertion_point(field:AAPKBPEGGBH.level)
+    pub level: ::protobuf::MessageField<super::MJKKONEIOBO::MJKKONEIOBO>,
+    // @@protoc_insertion_point(field:AAPKBPEGGBH.JLFDDMEKLJK)
+    pub JLFDDMEKLJK: ::protobuf::MessageField<super::JCHCGFMGBAK::JCHCGFMGBAK>,
     // @@protoc_insertion_point(field:AAPKBPEGGBH.item_value)
     pub item_value: ::protobuf::MessageField<super::FINDAFKPOOF::FINDAFKPOOF>,
     // special fields
@@ -68,35 +68,35 @@ impl AAPKBPEGGBH {
             |m: &AAPKBPEGGBH| { &m.CACGEKAANKL },
             |m: &mut AAPKBPEGGBH| { &mut m.CACGEKAANKL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MIKFNBBOPIP::MIKFNBBOPIP>(
-            "basic_info",
-            |m: &AAPKBPEGGBH| { &m.basic_info },
-            |m: &mut AAPKBPEGGBH| { &mut m.basic_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
             "JIBDGCFCDIO",
             |m: &AAPKBPEGGBH| { &m.JIBDGCFCDIO },
             |m: &mut AAPKBPEGGBH| { &mut m.JIBDGCFCDIO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCHCGFMGBAK::JCHCGFMGBAK>(
-            "JLFDDMEKLJK",
-            |m: &AAPKBPEGGBH| { &m.JLFDDMEKLJK },
-            |m: &mut AAPKBPEGGBH| { &mut m.JLFDDMEKLJK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LLNHFMGMCMN::LLNHFMGMCMN>(
+            "KKOBBENPFPH",
+            |m: &AAPKBPEGGBH| { &m.KKOBBENPFPH },
+            |m: &mut AAPKBPEGGBH| { &mut m.KKOBBENPFPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMDEFBABNNB::OMDEFBABNNB>(
             "lineup",
             |m: &AAPKBPEGGBH| { &m.lineup },
             |m: &mut AAPKBPEGGBH| { &mut m.lineup },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MIKFNBBOPIP::MIKFNBBOPIP>(
+            "basic_info",
+            |m: &AAPKBPEGGBH| { &m.basic_info },
+            |m: &mut AAPKBPEGGBH| { &mut m.basic_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJKKONEIOBO::MJKKONEIOBO>(
             "level",
             |m: &AAPKBPEGGBH| { &m.level },
             |m: &mut AAPKBPEGGBH| { &mut m.level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LLNHFMGMCMN::LLNHFMGMCMN>(
-            "KKOBBENPFPH",
-            |m: &AAPKBPEGGBH| { &m.KKOBBENPFPH },
-            |m: &mut AAPKBPEGGBH| { &mut m.KKOBBENPFPH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCHCGFMGBAK::JCHCGFMGBAK>(
+            "JLFDDMEKLJK",
+            |m: &AAPKBPEGGBH| { &m.JLFDDMEKLJK },
+            |m: &mut AAPKBPEGGBH| { &mut m.JLFDDMEKLJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FINDAFKPOOF::FINDAFKPOOF>(
             "item_value",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for AAPKBPEGGBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CACGEKAANKL)?;
                 },
-                82 => {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIBDGCFCDIO)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KKOBBENPFPH)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIBDGCFCDIO)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLFDDMEKLJK)?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.level)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KKOBBENPFPH)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLFDDMEKLJK)?;
                 },
-                74 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
                 tag => {
@@ -161,15 +161,11 @@ impl ::protobuf::Message for AAPKBPEGGBH {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.basic_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.JIBDGCFCDIO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
+        if let Some(v) = self.KKOBBENPFPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -177,11 +173,15 @@ impl ::protobuf::Message for AAPKBPEGGBH {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.basic_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.level.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.KKOBBENPFPH.as_ref() {
+        if let Some(v) = self.JLFDDMEKLJK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -196,28 +196,28 @@ impl ::protobuf::Message for AAPKBPEGGBH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CACGEKAANKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.basic_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.JIBDGCFCDIO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.KKOBBENPFPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.level.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.JLFDDMEKLJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.level.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.KKOBBENPFPH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -237,12 +237,12 @@ impl ::protobuf::Message for AAPKBPEGGBH {
 
     fn clear(&mut self) {
         self.CACGEKAANKL.clear();
-        self.basic_info.clear();
         self.JIBDGCFCDIO.clear();
-        self.JLFDDMEKLJK.clear();
-        self.lineup.clear();
-        self.level.clear();
         self.KKOBBENPFPH.clear();
+        self.lineup.clear();
+        self.basic_info.clear();
+        self.level.clear();
+        self.JLFDDMEKLJK.clear();
         self.item_value.clear();
         self.special_fields.clear();
     }
@@ -250,12 +250,12 @@ impl ::protobuf::Message for AAPKBPEGGBH {
     fn default_instance() -> &'static AAPKBPEGGBH {
         static instance: AAPKBPEGGBH = AAPKBPEGGBH {
             CACGEKAANKL: ::protobuf::MessageField::none(),
-            basic_info: ::protobuf::MessageField::none(),
             JIBDGCFCDIO: ::protobuf::MessageField::none(),
-            JLFDDMEKLJK: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
-            level: ::protobuf::MessageField::none(),
             KKOBBENPFPH: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
+            basic_info: ::protobuf::MessageField::none(),
+            level: ::protobuf::MessageField::none(),
+            JLFDDMEKLJK: ::protobuf::MessageField::none(),
             item_value: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -284,15 +284,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AAPKBPEGGBH.proto\x1a\x1bChessRogueMiracleInfo.proto\x1a\x11FINDAF\
     KPOOF.proto\x1a\x11JCHCGFMGBAK.proto\x1a\x11KLOHNFGBNPH.proto\x1a\x11LLN\
     HFMGMCMN.proto\x1a\x11MIKFNBBOPIP.proto\x1a\x11MJKKONEIOBO.proto\x1a\x11\
-    OMDEFBABNNB.proto\"\xfb\x02\n\x0bAAPKBPEGGBH\x12.\n\x0bCACGEKAANKL\x18\
-    \x0f\x20\x01(\x0b2\x0c.KLOHNFGBNPHR\x0bCACGEKAANKL\x12+\n\nbasic_info\
-    \x18\n\x20\x01(\x0b2\x0c.MIKFNBBOPIPR\tbasicInfo\x128\n\x0bJIBDGCFCDIO\
-    \x18\x06\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bJIBDGCFCDIO\x12.\n\
-    \x0bJLFDDMEKLJK\x18\x05\x20\x01(\x0b2\x0c.JCHCGFMGBAKR\x0bJLFDDMEKLJK\
-    \x12$\n\x06lineup\x18\x02\x20\x01(\x0b2\x0c.OMDEFBABNNBR\x06lineup\x12\"\
-    \n\x05level\x18\x0b\x20\x01(\x0b2\x0c.MJKKONEIOBOR\x05level\x12.\n\x0bKK\
-    OBBENPFPH\x18\x03\x20\x01(\x0b2\x0c.LLNHFMGMCMNR\x0bKKOBBENPFPH\x12+\n\n\
-    item_value\x18\t\x20\x01(\x0b2\x0c.FINDAFKPOOFR\titemValueb\x06proto3\
+    OMDEFBABNNB.proto\"\xfb\x02\n\x0bAAPKBPEGGBH\x12.\n\x0bCACGEKAANKL\x18\n\
+    \x20\x01(\x0b2\x0c.KLOHNFGBNPHR\x0bCACGEKAANKL\x128\n\x0bJIBDGCFCDIO\x18\
+    \x01\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bJIBDGCFCDIO\x12.\n\x0bK\
+    KOBBENPFPH\x18\t\x20\x01(\x0b2\x0c.LLNHFMGMCMNR\x0bKKOBBENPFPH\x12$\n\
+    \x06lineup\x18\x05\x20\x01(\x0b2\x0c.OMDEFBABNNBR\x06lineup\x12+\n\nbasi\
+    c_info\x18\x08\x20\x01(\x0b2\x0c.MIKFNBBOPIPR\tbasicInfo\x12\"\n\x05leve\
+    l\x18\x06\x20\x01(\x0b2\x0c.MJKKONEIOBOR\x05level\x12.\n\x0bJLFDDMEKLJK\
+    \x18\x0e\x20\x01(\x0b2\x0c.JCHCGFMGBAKR\x0bJLFDDMEKLJK\x12+\n\nitem_valu\
+    e\x18\x04\x20\x01(\x0b2\x0c.FINDAFKPOOFR\titemValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

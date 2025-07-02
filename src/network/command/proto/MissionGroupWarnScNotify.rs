@@ -72,10 +72,10 @@ impl ::protobuf::Message for MissionGroupWarnScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.group_id_list)?;
                 },
-                16 => {
+                112 => {
                     self.group_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MissionGroupWarnScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.group_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.group_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.group_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.group_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for MissionGroupWarnScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMissionGroupWarnScNotify.proto\">\n\x18MissionGroupWarnScNotify\
-    \x12\"\n\rgroup_id_list\x18\x02\x20\x03(\rR\x0bgroupIdListb\x06proto3\
+    \x12\"\n\rgroup_id_list\x18\x0e\x20\x03(\rR\x0bgroupIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl OBIHNGMNKEK {
         ::std::default::Default::default()
     }
 
-    // .KPIGLOPEMCF LOONEHFNAPC = 14;
+    // .KPIGLOPEMCF LOONEHFNAPC = 2;
 
     pub fn LOONEHFNAPC(&self) -> &super::KPIGLOPEMCF::KPIGLOPEMCF {
         match self.KHDFNALHMFI {
@@ -94,7 +94,7 @@ impl OBIHNGMNKEK {
         }
     }
 
-    // .BCPDFIPOMAP DAOPOHAMOMF = 5;
+    // .BCPDFIPOMAP DAOPOHAMOMF = 11;
 
     pub fn DAOPOHAMOMF(&self) -> &super::BCPDFIPOMAP::BCPDFIPOMAP {
         match self.KHDFNALHMFI {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for OBIHNGMNKEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                18 => {
                     self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(is.read_message()?));
                 },
-                42 => {
+                90 => {
                     self.KHDFNALHMFI = ::std::option::Option::Some(obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for OBIHNGMNKEK {
         if let ::std::option::Option::Some(ref v) = self.KHDFNALHMFI {
             match v {
                 &obihngmnkek::KHDFNALHMFI::LOONEHFNAPC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &obihngmnkek::KHDFNALHMFI::DAOPOHAMOMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -305,8 +305,8 @@ pub mod obihngmnkek {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OBIHNGMNKEK.proto\x1a\x11BCPDFIPOMAP.proto\x1a\x11KPIGLOPEMCF.prot\
-    o\"\x80\x01\n\x0bOBIHNGMNKEK\x120\n\x0bLOONEHFNAPC\x18\x0e\x20\x01(\x0b2\
-    \x0c.KPIGLOPEMCFH\0R\x0bLOONEHFNAPC\x120\n\x0bDAOPOHAMOMF\x18\x05\x20\
+    o\"\x80\x01\n\x0bOBIHNGMNKEK\x120\n\x0bLOONEHFNAPC\x18\x02\x20\x01(\x0b2\
+    \x0c.KPIGLOPEMCFH\0R\x0bLOONEHFNAPC\x120\n\x0bDAOPOHAMOMF\x18\x0b\x20\
     \x01(\x0b2\x0c.BCPDFIPOMAPH\0R\x0bDAOPOHAMOMFB\r\n\x0bKHDFNALHMFIb\x06pr\
     oto3\
 ";

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenRogueChestScRsp {
     // message fields
-    // @@protoc_insertion_point(field:OpenRogueChestScRsp.drop_data)
-    pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:OpenRogueChestScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:OpenRogueChestScRsp.KJCHGEHDLNO)
-    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
+    // @@protoc_insertion_point(field:OpenRogueChestScRsp.drop_data)
+    pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:OpenRogueChestScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:OpenRogueChestScRsp.KJCHGEHDLNO)
+    pub KJCHGEHDLNO: ::protobuf::MessageField<super::ReturnItemList::ReturnItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRogueChestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl OpenRogueChestScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "drop_data",
-            |m: &OpenRogueChestScRsp| { &m.drop_data },
-            |m: &mut OpenRogueChestScRsp| { &mut m.drop_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &OpenRogueChestScRsp| { &m.reward },
             |m: &mut OpenRogueChestScRsp| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
-            "KJCHGEHDLNO",
-            |m: &OpenRogueChestScRsp| { &m.KJCHGEHDLNO },
-            |m: &mut OpenRogueChestScRsp| { &mut m.KJCHGEHDLNO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "drop_data",
+            |m: &OpenRogueChestScRsp| { &m.drop_data },
+            |m: &mut OpenRogueChestScRsp| { &mut m.drop_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &OpenRogueChestScRsp| { &m.retcode },
             |m: &mut OpenRogueChestScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReturnItemList::ReturnItemList>(
+            "KJCHGEHDLNO",
+            |m: &OpenRogueChestScRsp| { &m.KJCHGEHDLNO },
+            |m: &mut OpenRogueChestScRsp| { &mut m.KJCHGEHDLNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRogueChestScRsp>(
             "OpenRogueChestScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
-                },
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCHGEHDLNO)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
                 },
-                112 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCHGEHDLNO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +117,20 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.drop_data.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
+        if let Some(v) = self.drop_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.drop_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.KJCHGEHDLNO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for OpenRogueChestScRsp {
     }
 
     fn clear(&mut self) {
-        self.drop_data.clear();
         self.reward.clear();
-        self.KJCHGEHDLNO.clear();
+        self.drop_data.clear();
         self.retcode = 0;
+        self.KJCHGEHDLNO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRogueChestScRsp {
         static instance: OpenRogueChestScRsp = OpenRogueChestScRsp {
-            drop_data: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
-            KJCHGEHDLNO: ::protobuf::MessageField::none(),
+            drop_data: ::protobuf::MessageField::none(),
             retcode: 0,
+            KJCHGEHDLNO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19OpenRogueChestScRsp.proto\x1a\x0eItemList.proto\x1a\x14ReturnItemL\
-    ist.proto\"\xad\x01\n\x13OpenRogueChestScRsp\x12&\n\tdrop_data\x18\x07\
-    \x20\x01(\x0b2\t.ItemListR\x08dropData\x12!\n\x06reward\x18\x0c\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x121\n\x0bKJCHGEHDLNO\x18\x06\x20\x01(\x0b2\
-    \x0f.ReturnItemListR\x0bKJCHGEHDLNO\x12\x18\n\x07retcode\x18\x0e\x20\x01\
-    (\rR\x07retcodeb\x06proto3\
+    ist.proto\"\xad\x01\n\x13OpenRogueChestScRsp\x12!\n\x06reward\x18\r\x20\
+    \x01(\x0b2\t.ItemListR\x06reward\x12&\n\tdrop_data\x18\x08\x20\x01(\x0b2\
+    \t.ItemListR\x08dropData\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07ret\
+    code\x121\n\x0bKJCHGEHDLNO\x18\x0f\x20\x01(\x0b2\x0f.ReturnItemListR\x0b\
+    KJCHGEHDLNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

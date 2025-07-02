@@ -30,10 +30,10 @@ pub struct PlayCardBrief {
     // message fields
     // @@protoc_insertion_point(field:PlayCardBrief.base_value)
     pub base_value: u32,
-    // @@protoc_insertion_point(field:PlayCardBrief.skill_brief_list)
-    pub skill_brief_list: ::std::vec::Vec<super::PlaySkillBrief::PlaySkillBrief>,
     // @@protoc_insertion_point(field:PlayCardBrief.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:PlayCardBrief.skill_brief_list)
+    pub skill_brief_list: ::std::vec::Vec<super::PlaySkillBrief::PlaySkillBrief>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayCardBrief.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PlayCardBrief {
             |m: &PlayCardBrief| { &m.base_value },
             |m: &mut PlayCardBrief| { &mut m.base_value },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skill_brief_list",
-            |m: &PlayCardBrief| { &m.skill_brief_list },
-            |m: &mut PlayCardBrief| { &mut m.skill_brief_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &PlayCardBrief| { &m.unique_id },
             |m: &mut PlayCardBrief| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "skill_brief_list",
+            |m: &PlayCardBrief| { &m.skill_brief_list },
+            |m: &mut PlayCardBrief| { &mut m.skill_brief_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayCardBrief>(
             "PlayCardBrief",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlayCardBrief {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.base_value = is.read_uint32()?;
                 },
-                122 => {
-                    self.skill_brief_list.push(is.read_message()?);
-                },
-                40 => {
+                96 => {
                     self.unique_id = is.read_uint32()?;
+                },
+                58 => {
+                    self.skill_brief_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for PlayCardBrief {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.base_value);
+            my_size += ::protobuf::rt::uint32_size(3, self.base_value);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
         }
         for value in &self.skill_brief_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for PlayCardBrief {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_value != 0 {
-            os.write_uint32(8, self.base_value)?;
+            os.write_uint32(3, self.base_value)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(12, self.unique_id)?;
         }
         for v in &self.skill_brief_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.unique_id != 0 {
-            os.write_uint32(5, self.unique_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for PlayCardBrief {
 
     fn clear(&mut self) {
         self.base_value = 0;
-        self.skill_brief_list.clear();
         self.unique_id = 0;
+        self.skill_brief_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayCardBrief {
         static instance: PlayCardBrief = PlayCardBrief {
             base_value: 0,
-            skill_brief_list: ::std::vec::Vec::new(),
             unique_id: 0,
+            skill_brief_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayCardBrief {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13PlayCardBrief.proto\x1a\x14PlaySkillBrief.proto\"\x86\x01\n\rPlayC\
-    ardBrief\x12\x1d\n\nbase_value\x18\x08\x20\x01(\rR\tbaseValue\x129\n\x10\
-    skill_brief_list\x18\x0f\x20\x03(\x0b2\x0f.PlaySkillBriefR\x0eskillBrief\
-    List\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    ardBrief\x12\x1d\n\nbase_value\x18\x03\x20\x01(\rR\tbaseValue\x12\x1b\n\
+    \tunique_id\x18\x0c\x20\x01(\rR\x08uniqueId\x129\n\x10skill_brief_list\
+    \x18\x07\x20\x03(\x0b2\x0f.PlaySkillBriefR\x0eskillBriefListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

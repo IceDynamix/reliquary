@@ -30,10 +30,10 @@ pub struct PlayBackGroundMusicScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.play_music_id)
     pub play_music_id: u32,
-    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.current_music_id)
     pub current_music_id: u32,
+    // @@protoc_insertion_point(field:PlayBackGroundMusicScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayBackGroundMusicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl PlayBackGroundMusicScRsp {
             |m: &mut PlayBackGroundMusicScRsp| { &mut m.play_music_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlayBackGroundMusicScRsp| { &m.retcode },
-            |m: &mut PlayBackGroundMusicScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "current_music_id",
             |m: &PlayBackGroundMusicScRsp| { &m.current_music_id },
             |m: &mut PlayBackGroundMusicScRsp| { &mut m.current_music_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlayBackGroundMusicScRsp| { &m.retcode },
+            |m: &mut PlayBackGroundMusicScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayBackGroundMusicScRsp>(
             "PlayBackGroundMusicScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                112 => {
                     self.play_music_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                80 => {
+                104 => {
                     self.current_music_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.play_music_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.play_music_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.play_music_id);
         }
         if self.current_music_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.current_music_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.current_music_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.play_music_id != 0 {
-            os.write_uint32(6, self.play_music_id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(14, self.play_music_id)?;
         }
         if self.current_music_id != 0 {
-            os.write_uint32(10, self.current_music_id)?;
+            os.write_uint32(13, self.current_music_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for PlayBackGroundMusicScRsp {
 
     fn clear(&mut self) {
         self.play_music_id = 0;
-        self.retcode = 0;
         self.current_music_id = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayBackGroundMusicScRsp {
         static instance: PlayBackGroundMusicScRsp = PlayBackGroundMusicScRsp {
             play_music_id: 0,
-            retcode: 0,
             current_music_id: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePlayBackGroundMusicScRsp.proto\"\x82\x01\n\x18PlayBackGroundMusicS\
-    cRsp\x12\"\n\rplay_music_id\x18\x06\x20\x01(\rR\x0bplayMusicId\x12\x18\n\
-    \x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12(\n\x10current_music_id\
-    \x18\n\x20\x01(\rR\x0ecurrentMusicIdb\x06proto3\
+    cRsp\x12\"\n\rplay_music_id\x18\x0e\x20\x01(\rR\x0bplayMusicId\x12(\n\
+    \x10current_music_id\x18\r\x20\x01(\rR\x0ecurrentMusicId\x12\x18\n\x07re\
+    tcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

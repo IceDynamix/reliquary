@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SwapCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.PHNLDPOKBKL)
-    pub PHNLDPOKBKL: ::protobuf::MessageField<super::JJAEPDIHCNL::JJAEPDIHCNL>,
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.upgrade_level)
-    pub upgrade_level: u32,
-    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.ECKKBLNELBM)
-    pub ECKKBLNELBM: ::std::vec::Vec<super::EGCDDLKHFEB::EGCDDLKHFEB>,
     // @@protoc_insertion_point(field:FightMatch3SwapCsReq.FECLGLBFIDH)
     pub FECLGLBFIDH: ::protobuf::MessageField<super::JJAEPDIHCNL::JJAEPDIHCNL>,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.ECKKBLNELBM)
+    pub ECKKBLNELBM: ::std::vec::Vec<super::EGCDDLKHFEB::EGCDDLKHFEB>,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.upgrade_level)
+    pub upgrade_level: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapCsReq.PHNLDPOKBKL)
+    pub PHNLDPOKBKL: ::protobuf::MessageField<super::JJAEPDIHCNL::JJAEPDIHCNL>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3SwapCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl FightMatch3SwapCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAEPDIHCNL::JJAEPDIHCNL>(
-            "PHNLDPOKBKL",
-            |m: &FightMatch3SwapCsReq| { &m.PHNLDPOKBKL },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.PHNLDPOKBKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upgrade_level",
-            |m: &FightMatch3SwapCsReq| { &m.upgrade_level },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.upgrade_level },
+            "FECLGLBFIDH",
+            |m: &FightMatch3SwapCsReq| { &m.FECLGLBFIDH },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.FECLGLBFIDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ECKKBLNELBM",
             |m: &FightMatch3SwapCsReq| { &m.ECKKBLNELBM },
             |m: &mut FightMatch3SwapCsReq| { &mut m.ECKKBLNELBM },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "upgrade_level",
+            |m: &FightMatch3SwapCsReq| { &m.upgrade_level },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.upgrade_level },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JJAEPDIHCNL::JJAEPDIHCNL>(
-            "FECLGLBFIDH",
-            |m: &FightMatch3SwapCsReq| { &m.FECLGLBFIDH },
-            |m: &mut FightMatch3SwapCsReq| { &mut m.FECLGLBFIDH },
+            "PHNLDPOKBKL",
+            |m: &FightMatch3SwapCsReq| { &m.PHNLDPOKBKL },
+            |m: &mut FightMatch3SwapCsReq| { &mut m.PHNLDPOKBKL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3SwapCsReq>(
             "FightMatch3SwapCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHNLDPOKBKL)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FECLGLBFIDH)?;
                 },
-                56 => {
-                    self.upgrade_level = is.read_uint32()?;
-                },
-                50 => {
+                10 => {
                     self.ECKKBLNELBM.push(is.read_message()?);
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FECLGLBFIDH)?;
+                104 => {
+                    self.upgrade_level = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHNLDPOKBKL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PHNLDPOKBKL.as_ref() {
+        if let Some(v) = self.FECLGLBFIDH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.upgrade_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.upgrade_level);
         }
         for value in &self.ECKKBLNELBM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.FECLGLBFIDH.as_ref() {
+        if self.upgrade_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.upgrade_level);
+        }
+        if let Some(v) = self.PHNLDPOKBKL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PHNLDPOKBKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.upgrade_level != 0 {
-            os.write_uint32(7, self.upgrade_level)?;
+        if let Some(v) = self.FECLGLBFIDH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.ECKKBLNELBM {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if let Some(v) = self.FECLGLBFIDH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.upgrade_level != 0 {
+            os.write_uint32(13, self.upgrade_level)?;
+        }
+        if let Some(v) = self.PHNLDPOKBKL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for FightMatch3SwapCsReq {
     }
 
     fn clear(&mut self) {
-        self.PHNLDPOKBKL.clear();
-        self.upgrade_level = 0;
-        self.ECKKBLNELBM.clear();
         self.FECLGLBFIDH.clear();
+        self.ECKKBLNELBM.clear();
+        self.upgrade_level = 0;
+        self.PHNLDPOKBKL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SwapCsReq {
         static instance: FightMatch3SwapCsReq = FightMatch3SwapCsReq {
-            PHNLDPOKBKL: ::protobuf::MessageField::none(),
-            upgrade_level: 0,
-            ECKKBLNELBM: ::std::vec::Vec::new(),
             FECLGLBFIDH: ::protobuf::MessageField::none(),
+            ECKKBLNELBM: ::std::vec::Vec::new(),
+            upgrade_level: 0,
+            PHNLDPOKBKL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SwapCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aFightMatch3SwapCsReq.proto\x1a\x11EGCDDLKHFEB.proto\x1a\x11JJAEPDI\
-    HCNL.proto\"\xcb\x01\n\x14FightMatch3SwapCsReq\x12.\n\x0bPHNLDPOKBKL\x18\
-    \n\x20\x01(\x0b2\x0c.JJAEPDIHCNLR\x0bPHNLDPOKBKL\x12#\n\rupgrade_level\
-    \x18\x07\x20\x01(\rR\x0cupgradeLevel\x12.\n\x0bECKKBLNELBM\x18\x06\x20\
-    \x03(\x0b2\x0c.EGCDDLKHFEBR\x0bECKKBLNELBM\x12.\n\x0bFECLGLBFIDH\x18\x0f\
-    \x20\x01(\x0b2\x0c.JJAEPDIHCNLR\x0bFECLGLBFIDHb\x06proto3\
+    HCNL.proto\"\xcb\x01\n\x14FightMatch3SwapCsReq\x12.\n\x0bFECLGLBFIDH\x18\
+    \x04\x20\x01(\x0b2\x0c.JJAEPDIHCNLR\x0bFECLGLBFIDH\x12.\n\x0bECKKBLNELBM\
+    \x18\x01\x20\x03(\x0b2\x0c.EGCDDLKHFEBR\x0bECKKBLNELBM\x12#\n\rupgrade_l\
+    evel\x18\r\x20\x01(\rR\x0cupgradeLevel\x12.\n\x0bPHNLDPOKBKL\x18\x05\x20\
+    \x01(\x0b2\x0c.JJAEPDIHCNLR\x0bPHNLDPOKBKLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

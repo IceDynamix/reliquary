@@ -30,10 +30,10 @@ pub struct IGILOGOHEJP {
     // message fields
     // @@protoc_insertion_point(field:IGILOGOHEJP.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:IGILOGOHEJP.JIFKHCKPNFM)
-    pub JIFKHCKPNFM: u32,
     // @@protoc_insertion_point(field:IGILOGOHEJP.DMMAMJGNGNN)
     pub DMMAMJGNGNN: i32,
+    // @@protoc_insertion_point(field:IGILOGOHEJP.JIFKHCKPNFM)
+    pub JIFKHCKPNFM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IGILOGOHEJP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IGILOGOHEJP {
             |m: &mut IGILOGOHEJP| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &IGILOGOHEJP| { &m.JIFKHCKPNFM },
-            |m: &mut IGILOGOHEJP| { &mut m.JIFKHCKPNFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMMAMJGNGNN",
             |m: &IGILOGOHEJP| { &m.DMMAMJGNGNN },
             |m: &mut IGILOGOHEJP| { &mut m.DMMAMJGNGNN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JIFKHCKPNFM",
+            |m: &IGILOGOHEJP| { &m.JIFKHCKPNFM },
+            |m: &mut IGILOGOHEJP| { &mut m.JIFKHCKPNFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IGILOGOHEJP>(
             "IGILOGOHEJP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IGILOGOHEJP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                24 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
-                },
-                120 => {
+                112 => {
                     self.DMMAMJGNGNN = is.read_int32()?;
+                },
+                88 => {
+                    self.JIFKHCKPNFM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for IGILOGOHEJP {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JIFKHCKPNFM);
-        }
         if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.DMMAMJGNGNN);
+            my_size += ::protobuf::rt::int32_size(14, self.DMMAMJGNGNN);
+        }
+        if self.JIFKHCKPNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JIFKHCKPNFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for IGILOGOHEJP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(3, self.JIFKHCKPNFM)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.DMMAMJGNGNN != 0 {
-            os.write_int32(15, self.DMMAMJGNGNN)?;
+            os.write_int32(14, self.DMMAMJGNGNN)?;
+        }
+        if self.JIFKHCKPNFM != 0 {
+            os.write_uint32(11, self.JIFKHCKPNFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for IGILOGOHEJP {
 
     fn clear(&mut self) {
         self.cost_data.clear();
-        self.JIFKHCKPNFM = 0;
         self.DMMAMJGNGNN = 0;
+        self.JIFKHCKPNFM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IGILOGOHEJP {
         static instance: IGILOGOHEJP = IGILOGOHEJP {
             cost_data: ::protobuf::MessageField::none(),
-            JIFKHCKPNFM: 0,
             DMMAMJGNGNN: 0,
+            JIFKHCKPNFM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for IGILOGOHEJP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IGILOGOHEJP.proto\x1a\x12ItemCostData.proto\"}\n\x0bIGILOGOHEJP\
-    \x12*\n\tcost_data\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    \x20\n\x0bJIFKHCKPNFM\x18\x03\x20\x01(\rR\x0bJIFKHCKPNFM\x12\x20\n\x0bDM\
-    MAMJGNGNN\x18\x0f\x20\x01(\x05R\x0bDMMAMJGNGNNb\x06proto3\
+    \x12*\n\tcost_data\x18\x0f\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bDMMAMJGNGNN\x18\x0e\x20\x01(\x05R\x0bDMMAMJGNGNN\x12\x20\n\x0b\
+    JIFKHCKPNFM\x18\x0b\x20\x01(\rR\x0bJIFKHCKPNFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

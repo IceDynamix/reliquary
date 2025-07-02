@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                82 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                120 => {
+                24 => {
                     self.MGIGDCMLEOG = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.MGIGDCMLEOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MGIGDCMLEOG);
+            my_size += ::protobuf::rt::uint32_size(3, self.MGIGDCMLEOG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.MGIGDCMLEOG != 0 {
-            os.write_uint32(15, self.MGIGDCMLEOG)?;
+            os.write_uint32(3, self.MGIGDCMLEOG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueEndlessActivityStageCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)EnterRogueEndlessActivityStageCsReq.proto\x1a\x11BBNHEMCKDIN.proto\"v\
-    \n#EnterRogueEndlessActivityStageCsReq\x12-\n\x0bavatar_list\x18\r\x20\
-    \x03(\x0b2\x0c.BBNHEMCKDINR\navatarList\x12\x20\n\x0bMGIGDCMLEOG\x18\x0f\
+    \n#EnterRogueEndlessActivityStageCsReq\x12-\n\x0bavatar_list\x18\n\x20\
+    \x03(\x0b2\x0c.BBNHEMCKDINR\navatarList\x12\x20\n\x0bMGIGDCMLEOG\x18\x03\
     \x20\x01(\rR\x0bMGIGDCMLEOGb\x06proto3\
 ";
 

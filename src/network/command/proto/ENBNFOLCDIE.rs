@@ -79,10 +79,10 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                120 => {
                     self.AKAHNMLNEFN = is.read_uint32()?;
                 },
-                96 => {
+                8 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ENBNFOLCDIE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AKAHNMLNEFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AKAHNMLNEFN);
+            my_size += ::protobuf::rt::uint32_size(15, self.AKAHNMLNEFN);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ENBNFOLCDIE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AKAHNMLNEFN != 0 {
-            os.write_uint32(9, self.AKAHNMLNEFN)?;
+            os.write_uint32(15, self.AKAHNMLNEFN)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(12, self.buff_id)?;
+            os.write_uint32(1, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ENBNFOLCDIE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENBNFOLCDIE.proto\"H\n\x0bENBNFOLCDIE\x12\x20\n\x0bAKAHNMLNEFN\x18\
-    \t\x20\x01(\rR\x0bAKAHNMLNEFN\x12\x17\n\x07buff_id\x18\x0c\x20\x01(\rR\
+    \x0f\x20\x01(\rR\x0bAKAHNMLNEFN\x12\x17\n\x07buff_id\x18\x01\x20\x01(\rR\
     \x06buffIdb\x06proto3\
 ";
 

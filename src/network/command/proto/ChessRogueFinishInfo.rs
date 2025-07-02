@@ -28,44 +28,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueFinishInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.EGPCIBJIAJD)
-    pub EGPCIBJIAJD: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.ANNIAOIDADO)
-    pub ANNIAOIDADO: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.DMBDNAICPFB)
-    pub DMBDNAICPFB: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.game_miracle_info)
+    pub game_miracle_info: ::protobuf::MessageField<super::AJPFPHKKLPG::AJPFPHKKLPG>,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.FGOMIPLMEIC)
     pub FGOMIPLMEIC: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.PLBCDIAADKD)
-    pub PLBCDIAADKD: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.rogue_buff_info)
+    pub rogue_buff_info: ::protobuf::MessageField<super::GCKBLHADLGN::GCKBLHADLGN>,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.rogue_sub_mode)
     pub rogue_sub_mode: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.OPAKJJMAGPH)
-    pub OPAKJJMAGPH: ::protobuf::MessageField<super::IMNPEAJAJJO::IMNPEAJAJJO>,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.EGPCIBJIAJD)
+    pub EGPCIBJIAJD: u32,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.GMOLNJIBNJA)
     pub GMOLNJIBNJA: ::protobuf::EnumOrUnknown<super::ChessRogueQuitReason::ChessRogueQuitReason>,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.BGPECKFDELD)
-    pub BGPECKFDELD: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.OPAKJJMAGPH)
+    pub OPAKJJMAGPH: ::protobuf::MessageField<super::IMNPEAJAJJO::IMNPEAJAJJO>,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.DMBDNAICPFB)
+    pub DMBDNAICPFB: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.BLBBOKOGFDA)
+    pub BLBBOKOGFDA: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.IPOJMMGOOPJ)
+    pub IPOJMMGOOPJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.ANNIAOIDADO)
+    pub ANNIAOIDADO: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.OPOIMHHAFJO)
     pub OPOIMHHAFJO: u32,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.is_finish)
     pub is_finish: bool,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.ABEHKCJHCEH)
     pub ABEHKCJHCEH: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.BLBBOKOGFDA)
-    pub BLBBOKOGFDA: u32,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.PBALFIENEFO)
     pub PBALFIENEFO: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.rogue_buff_info)
-    pub rogue_buff_info: ::protobuf::MessageField<super::GCKBLHADLGN::GCKBLHADLGN>,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.IPOJMMGOOPJ)
-    pub IPOJMMGOOPJ: u32,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.score_id)
-    pub score_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.BGPECKFDELD)
+    pub BGPECKFDELD: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChessRogueFinishInfo.PLBCDIAADKD)
+    pub PLBCDIAADKD: u32,
     // @@protoc_insertion_point(field:ChessRogueFinishInfo.OJGGMOOPGIL)
     pub OJGGMOOPGIL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueFinishInfo.game_miracle_info)
-    pub game_miracle_info: ::protobuf::MessageField<super::AJPFPHKKLPG::AJPFPHKKLPG>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueFinishInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,35 +85,40 @@ impl ChessRogueFinishInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(19);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGPCIBJIAJD",
-            |m: &ChessRogueFinishInfo| { &m.EGPCIBJIAJD },
-            |m: &mut ChessRogueFinishInfo| { &mut m.EGPCIBJIAJD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "ANNIAOIDADO",
-            |m: &ChessRogueFinishInfo| { &m.ANNIAOIDADO },
-            |m: &mut ChessRogueFinishInfo| { &mut m.ANNIAOIDADO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMBDNAICPFB",
-            |m: &ChessRogueFinishInfo| { &m.DMBDNAICPFB },
-            |m: &mut ChessRogueFinishInfo| { &mut m.DMBDNAICPFB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AJPFPHKKLPG::AJPFPHKKLPG>(
+            "game_miracle_info",
+            |m: &ChessRogueFinishInfo| { &m.game_miracle_info },
+            |m: &mut ChessRogueFinishInfo| { &mut m.game_miracle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGOMIPLMEIC",
             |m: &ChessRogueFinishInfo| { &m.FGOMIPLMEIC },
             |m: &mut ChessRogueFinishInfo| { &mut m.FGOMIPLMEIC },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCKBLHADLGN::GCKBLHADLGN>(
+            "rogue_buff_info",
+            |m: &ChessRogueFinishInfo| { &m.rogue_buff_info },
+            |m: &mut ChessRogueFinishInfo| { &mut m.rogue_buff_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLBCDIAADKD",
-            |m: &ChessRogueFinishInfo| { &m.PLBCDIAADKD },
-            |m: &mut ChessRogueFinishInfo| { &mut m.PLBCDIAADKD },
+            "score_id",
+            |m: &ChessRogueFinishInfo| { &m.score_id },
+            |m: &mut ChessRogueFinishInfo| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_sub_mode",
             |m: &ChessRogueFinishInfo| { &m.rogue_sub_mode },
             |m: &mut ChessRogueFinishInfo| { &mut m.rogue_sub_mode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGPCIBJIAJD",
+            |m: &ChessRogueFinishInfo| { &m.EGPCIBJIAJD },
+            |m: &mut ChessRogueFinishInfo| { &mut m.EGPCIBJIAJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMOLNJIBNJA",
+            |m: &ChessRogueFinishInfo| { &m.GMOLNJIBNJA },
+            |m: &mut ChessRogueFinishInfo| { &mut m.GMOLNJIBNJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMNPEAJAJJO::IMNPEAJAJJO>(
             "OPAKJJMAGPH",
@@ -121,14 +126,24 @@ impl ChessRogueFinishInfo {
             |m: &mut ChessRogueFinishInfo| { &mut m.OPAKJJMAGPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMOLNJIBNJA",
-            |m: &ChessRogueFinishInfo| { &m.GMOLNJIBNJA },
-            |m: &mut ChessRogueFinishInfo| { &mut m.GMOLNJIBNJA },
+            "DMBDNAICPFB",
+            |m: &ChessRogueFinishInfo| { &m.DMBDNAICPFB },
+            |m: &mut ChessRogueFinishInfo| { &mut m.DMBDNAICPFB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "BGPECKFDELD",
-            |m: &ChessRogueFinishInfo| { &m.BGPECKFDELD },
-            |m: &mut ChessRogueFinishInfo| { &mut m.BGPECKFDELD },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLBBOKOGFDA",
+            |m: &ChessRogueFinishInfo| { &m.BLBBOKOGFDA },
+            |m: &mut ChessRogueFinishInfo| { &mut m.BLBBOKOGFDA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPOJMMGOOPJ",
+            |m: &ChessRogueFinishInfo| { &m.IPOJMMGOOPJ },
+            |m: &mut ChessRogueFinishInfo| { &mut m.IPOJMMGOOPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "ANNIAOIDADO",
+            |m: &ChessRogueFinishInfo| { &m.ANNIAOIDADO },
+            |m: &mut ChessRogueFinishInfo| { &mut m.ANNIAOIDADO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OPOIMHHAFJO",
@@ -146,39 +161,24 @@ impl ChessRogueFinishInfo {
             |m: &mut ChessRogueFinishInfo| { &mut m.ABEHKCJHCEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLBBOKOGFDA",
-            |m: &ChessRogueFinishInfo| { &m.BLBBOKOGFDA },
-            |m: &mut ChessRogueFinishInfo| { &mut m.BLBBOKOGFDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBALFIENEFO",
             |m: &ChessRogueFinishInfo| { &m.PBALFIENEFO },
             |m: &mut ChessRogueFinishInfo| { &mut m.PBALFIENEFO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCKBLHADLGN::GCKBLHADLGN>(
-            "rogue_buff_info",
-            |m: &ChessRogueFinishInfo| { &m.rogue_buff_info },
-            |m: &mut ChessRogueFinishInfo| { &mut m.rogue_buff_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "BGPECKFDELD",
+            |m: &ChessRogueFinishInfo| { &m.BGPECKFDELD },
+            |m: &mut ChessRogueFinishInfo| { &mut m.BGPECKFDELD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPOJMMGOOPJ",
-            |m: &ChessRogueFinishInfo| { &m.IPOJMMGOOPJ },
-            |m: &mut ChessRogueFinishInfo| { &mut m.IPOJMMGOOPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &ChessRogueFinishInfo| { &m.score_id },
-            |m: &mut ChessRogueFinishInfo| { &mut m.score_id },
+            "PLBCDIAADKD",
+            |m: &ChessRogueFinishInfo| { &m.PLBCDIAADKD },
+            |m: &mut ChessRogueFinishInfo| { &mut m.PLBCDIAADKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OJGGMOOPGIL",
             |m: &ChessRogueFinishInfo| { &m.OJGGMOOPGIL },
             |m: &mut ChessRogueFinishInfo| { &mut m.OJGGMOOPGIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AJPFPHKKLPG::AJPFPHKKLPG>(
-            "game_miracle_info",
-            |m: &ChessRogueFinishInfo| { &m.game_miracle_info },
-            |m: &mut ChessRogueFinishInfo| { &mut m.game_miracle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueFinishInfo>(
             "ChessRogueFinishInfo",
@@ -198,65 +198,65 @@ impl ::protobuf::Message for ChessRogueFinishInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                2560 => {
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
+                },
+                48 => {
+                    self.FGOMIPLMEIC = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
+                },
+                5672 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                6744 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
+                },
+                2080 => {
                     self.EGPCIBJIAJD = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANNIAOIDADO)?;
+                16 => {
+                    self.GMOLNJIBNJA = is.read_enum_or_unknown()?;
+                },
+                13986 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPAKJJMAGPH)?;
                 },
                 8 => {
                     self.DMBDNAICPFB = is.read_uint32()?;
                 },
-                80 => {
-                    self.FGOMIPLMEIC = is.read_uint32()?;
+                88 => {
+                    self.BLBBOKOGFDA = is.read_uint32()?;
                 },
-                112 => {
-                    self.PLBCDIAADKD = is.read_uint32()?;
+                56 => {
+                    self.IPOJMMGOOPJ = is.read_uint32()?;
                 },
-                8032 => {
-                    self.rogue_sub_mode = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANNIAOIDADO)?;
                 },
-                14458 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPAKJJMAGPH)?;
-                },
-                32 => {
-                    self.GMOLNJIBNJA = is.read_enum_or_unknown()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGPECKFDELD)?;
-                },
-                14728 => {
+                8968 => {
                     self.OPOIMHHAFJO = is.read_uint32()?;
                 },
                 40 => {
                     self.is_finish = is.read_bool()?;
                 },
-                16128 => {
+                1456 => {
                     self.ABEHKCJHCEH = is.read_uint32()?;
                 },
-                64 => {
-                    self.BLBBOKOGFDA = is.read_uint32()?;
-                },
-                16 => {
+                104 => {
                     self.PBALFIENEFO = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGPECKFDELD)?;
                 },
-                72 => {
-                    self.IPOJMMGOOPJ = is.read_uint32()?;
+                64 => {
+                    self.PLBCDIAADKD = is.read_uint32()?;
                 },
-                6488 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                106 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.OJGGMOOPGIL)?;
                 },
-                104 => {
+                32 => {
                     self.OJGGMOOPGIL.push(is.read_uint32()?);
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -270,127 +270,127 @@ impl ::protobuf::Message for ChessRogueFinishInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGPCIBJIAJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(320, self.EGPCIBJIAJD);
-        }
-        if let Some(v) = self.ANNIAOIDADO.as_ref() {
+        if let Some(v) = self.game_miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DMBDNAICPFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DMBDNAICPFB);
         }
         if self.FGOMIPLMEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FGOMIPLMEIC);
-        }
-        if self.PLBCDIAADKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PLBCDIAADKD);
-        }
-        if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1004, self.rogue_sub_mode);
-        }
-        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GMOLNJIBNJA != ::protobuf::EnumOrUnknown::new(super::ChessRogueQuitReason::ChessRogueQuitReason::CHESS_ROGUE_ACCOUNT_BY_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.GMOLNJIBNJA.value());
-        }
-        if let Some(v) = self.BGPECKFDELD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.OPOIMHHAFJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1841, self.OPOIMHHAFJO);
-        }
-        if self.is_finish != false {
-            my_size += 1 + 1;
-        }
-        if self.ABEHKCJHCEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2016, self.ABEHKCJHCEH);
-        }
-        if self.BLBBOKOGFDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BLBBOKOGFDA);
-        }
-        if self.PBALFIENEFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PBALFIENEFO);
+            my_size += ::protobuf::rt::uint32_size(6, self.FGOMIPLMEIC);
         }
         if let Some(v) = self.rogue_buff_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IPOJMMGOOPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IPOJMMGOOPJ);
-        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(811, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(709, self.score_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.OJGGMOOPGIL);
-        if let Some(v) = self.game_miracle_info.as_ref() {
+        if self.rogue_sub_mode != 0 {
+            my_size += ::protobuf::rt::uint32_size(843, self.rogue_sub_mode);
+        }
+        if self.EGPCIBJIAJD != 0 {
+            my_size += ::protobuf::rt::uint32_size(260, self.EGPCIBJIAJD);
+        }
+        if self.GMOLNJIBNJA != ::protobuf::EnumOrUnknown::new(super::ChessRogueQuitReason::ChessRogueQuitReason::CHESS_ROGUE_ACCOUNT_BY_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.GMOLNJIBNJA.value());
+        }
+        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DMBDNAICPFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DMBDNAICPFB);
+        }
+        if self.BLBBOKOGFDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BLBBOKOGFDA);
+        }
+        if self.IPOJMMGOOPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IPOJMMGOOPJ);
+        }
+        if let Some(v) = self.ANNIAOIDADO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.OPOIMHHAFJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1121, self.OPOIMHHAFJO);
+        }
+        if self.is_finish != false {
+            my_size += 1 + 1;
+        }
+        if self.ABEHKCJHCEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(182, self.ABEHKCJHCEH);
+        }
+        if self.PBALFIENEFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PBALFIENEFO);
+        }
+        if let Some(v) = self.BGPECKFDELD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.PLBCDIAADKD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PLBCDIAADKD);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.OJGGMOOPGIL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGPCIBJIAJD != 0 {
-            os.write_uint32(320, self.EGPCIBJIAJD)?;
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.ANNIAOIDADO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.FGOMIPLMEIC != 0 {
+            os.write_uint32(6, self.FGOMIPLMEIC)?;
+        }
+        if let Some(v) = self.rogue_buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(709, self.score_id)?;
+        }
+        if self.rogue_sub_mode != 0 {
+            os.write_uint32(843, self.rogue_sub_mode)?;
+        }
+        if self.EGPCIBJIAJD != 0 {
+            os.write_uint32(260, self.EGPCIBJIAJD)?;
+        }
+        if self.GMOLNJIBNJA != ::protobuf::EnumOrUnknown::new(super::ChessRogueQuitReason::ChessRogueQuitReason::CHESS_ROGUE_ACCOUNT_BY_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.GMOLNJIBNJA))?;
+        }
+        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1748, v, os)?;
         }
         if self.DMBDNAICPFB != 0 {
             os.write_uint32(1, self.DMBDNAICPFB)?;
         }
-        if self.FGOMIPLMEIC != 0 {
-            os.write_uint32(10, self.FGOMIPLMEIC)?;
+        if self.BLBBOKOGFDA != 0 {
+            os.write_uint32(11, self.BLBBOKOGFDA)?;
         }
-        if self.PLBCDIAADKD != 0 {
-            os.write_uint32(14, self.PLBCDIAADKD)?;
+        if self.IPOJMMGOOPJ != 0 {
+            os.write_uint32(7, self.IPOJMMGOOPJ)?;
         }
-        if self.rogue_sub_mode != 0 {
-            os.write_uint32(1004, self.rogue_sub_mode)?;
-        }
-        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1807, v, os)?;
-        }
-        if self.GMOLNJIBNJA != ::protobuf::EnumOrUnknown::new(super::ChessRogueQuitReason::ChessRogueQuitReason::CHESS_ROGUE_ACCOUNT_BY_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.GMOLNJIBNJA))?;
-        }
-        if let Some(v) = self.BGPECKFDELD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.ANNIAOIDADO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.OPOIMHHAFJO != 0 {
-            os.write_uint32(1841, self.OPOIMHHAFJO)?;
+            os.write_uint32(1121, self.OPOIMHHAFJO)?;
         }
         if self.is_finish != false {
             os.write_bool(5, self.is_finish)?;
         }
         if self.ABEHKCJHCEH != 0 {
-            os.write_uint32(2016, self.ABEHKCJHCEH)?;
-        }
-        if self.BLBBOKOGFDA != 0 {
-            os.write_uint32(8, self.BLBBOKOGFDA)?;
+            os.write_uint32(182, self.ABEHKCJHCEH)?;
         }
         if self.PBALFIENEFO != 0 {
-            os.write_uint32(2, self.PBALFIENEFO)?;
+            os.write_uint32(13, self.PBALFIENEFO)?;
         }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.BGPECKFDELD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.IPOJMMGOOPJ != 0 {
-            os.write_uint32(9, self.IPOJMMGOOPJ)?;
+        if self.PLBCDIAADKD != 0 {
+            os.write_uint32(8, self.PLBCDIAADKD)?;
         }
-        if self.score_id != 0 {
-            os.write_uint32(811, self.score_id)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.OJGGMOOPGIL)?;
-        if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
+        os.write_repeated_packed_uint32(4, &self.OJGGMOOPGIL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -408,49 +408,49 @@ impl ::protobuf::Message for ChessRogueFinishInfo {
     }
 
     fn clear(&mut self) {
-        self.EGPCIBJIAJD = 0;
-        self.ANNIAOIDADO.clear();
-        self.DMBDNAICPFB = 0;
+        self.game_miracle_info.clear();
         self.FGOMIPLMEIC = 0;
-        self.PLBCDIAADKD = 0;
+        self.rogue_buff_info.clear();
+        self.score_id = 0;
         self.rogue_sub_mode = 0;
-        self.OPAKJJMAGPH.clear();
+        self.EGPCIBJIAJD = 0;
         self.GMOLNJIBNJA = ::protobuf::EnumOrUnknown::new(super::ChessRogueQuitReason::ChessRogueQuitReason::CHESS_ROGUE_ACCOUNT_BY_NONE);
-        self.BGPECKFDELD.clear();
+        self.OPAKJJMAGPH.clear();
+        self.DMBDNAICPFB = 0;
+        self.BLBBOKOGFDA = 0;
+        self.IPOJMMGOOPJ = 0;
+        self.ANNIAOIDADO.clear();
         self.OPOIMHHAFJO = 0;
         self.is_finish = false;
         self.ABEHKCJHCEH = 0;
-        self.BLBBOKOGFDA = 0;
         self.PBALFIENEFO = 0;
-        self.rogue_buff_info.clear();
-        self.IPOJMMGOOPJ = 0;
-        self.score_id = 0;
+        self.BGPECKFDELD.clear();
+        self.PLBCDIAADKD = 0;
         self.OJGGMOOPGIL.clear();
-        self.game_miracle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueFinishInfo {
         static instance: ChessRogueFinishInfo = ChessRogueFinishInfo {
-            EGPCIBJIAJD: 0,
-            ANNIAOIDADO: ::protobuf::MessageField::none(),
-            DMBDNAICPFB: 0,
+            game_miracle_info: ::protobuf::MessageField::none(),
             FGOMIPLMEIC: 0,
-            PLBCDIAADKD: 0,
+            rogue_buff_info: ::protobuf::MessageField::none(),
+            score_id: 0,
             rogue_sub_mode: 0,
-            OPAKJJMAGPH: ::protobuf::MessageField::none(),
+            EGPCIBJIAJD: 0,
             GMOLNJIBNJA: ::protobuf::EnumOrUnknown::from_i32(0),
-            BGPECKFDELD: ::protobuf::MessageField::none(),
+            OPAKJJMAGPH: ::protobuf::MessageField::none(),
+            DMBDNAICPFB: 0,
+            BLBBOKOGFDA: 0,
+            IPOJMMGOOPJ: 0,
+            ANNIAOIDADO: ::protobuf::MessageField::none(),
             OPOIMHHAFJO: 0,
             is_finish: false,
             ABEHKCJHCEH: 0,
-            BLBBOKOGFDA: 0,
             PBALFIENEFO: 0,
-            rogue_buff_info: ::protobuf::MessageField::none(),
-            IPOJMMGOOPJ: 0,
-            score_id: 0,
+            BGPECKFDELD: ::protobuf::MessageField::none(),
+            PLBCDIAADKD: 0,
             OJGGMOOPGIL: ::std::vec::Vec::new(),
-            game_miracle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -478,24 +478,24 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueFinishInfo.proto\x1a\x11AJPFPHKKLPG.proto\x1a\x1aChessRo\
     gueQuitReason.proto\x1a\x11GCKBLHADLGN.proto\x1a\x11IMNPEAJAJJO.proto\
     \x1a\x0eItemList.proto\x1a\x10LineupInfo.proto\"\x83\x06\n\x14ChessRogue\
-    FinishInfo\x12!\n\x0bEGPCIBJIAJD\x18\xc0\x02\x20\x01(\rR\x0bEGPCIBJIAJD\
-    \x12-\n\x0bANNIAOIDADO\x18\x03\x20\x01(\x0b2\x0b.LineupInfoR\x0bANNIAOID\
-    ADO\x12\x20\n\x0bDMBDNAICPFB\x18\x01\x20\x01(\rR\x0bDMBDNAICPFB\x12\x20\
-    \n\x0bFGOMIPLMEIC\x18\n\x20\x01(\rR\x0bFGOMIPLMEIC\x12\x20\n\x0bPLBCDIAA\
-    DKD\x18\x0e\x20\x01(\rR\x0bPLBCDIAADKD\x12%\n\x0erogue_sub_mode\x18\xec\
-    \x07\x20\x01(\rR\x0crogueSubMode\x12/\n\x0bOPAKJJMAGPH\x18\x8f\x0e\x20\
-    \x01(\x0b2\x0c.IMNPEAJAJJOR\x0bOPAKJJMAGPH\x127\n\x0bGMOLNJIBNJA\x18\x04\
-    \x20\x01(\x0e2\x15.ChessRogueQuitReasonR\x0bGMOLNJIBNJA\x12+\n\x0bBGPECK\
-    FDELD\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bBGPECKFDELD\x12!\n\x0bOPOIMHH\
-    AFJO\x18\xb1\x0e\x20\x01(\rR\x0bOPOIMHHAFJO\x12\x1b\n\tis_finish\x18\x05\
-    \x20\x01(\x08R\x08isFinish\x12!\n\x0bABEHKCJHCEH\x18\xe0\x0f\x20\x01(\rR\
-    \x0bABEHKCJHCEH\x12\x20\n\x0bBLBBOKOGFDA\x18\x08\x20\x01(\rR\x0bBLBBOKOG\
-    FDA\x12\x20\n\x0bPBALFIENEFO\x18\x02\x20\x01(\rR\x0bPBALFIENEFO\x124\n\
-    \x0frogue_buff_info\x18\x0c\x20\x01(\x0b2\x0c.GCKBLHADLGNR\rrogueBuffInf\
-    o\x12\x20\n\x0bIPOJMMGOOPJ\x18\t\x20\x01(\rR\x0bIPOJMMGOOPJ\x12\x1a\n\
-    \x08score_id\x18\xab\x06\x20\x01(\rR\x07scoreId\x12\x20\n\x0bOJGGMOOPGIL\
-    \x18\r\x20\x03(\rR\x0bOJGGMOOPGIL\x128\n\x11game_miracle_info\x18\x06\
-    \x20\x01(\x0b2\x0c.AJPFPHKKLPGR\x0fgameMiracleInfob\x06proto3\
+    FinishInfo\x128\n\x11game_miracle_info\x18\x0c\x20\x01(\x0b2\x0c.AJPFPHK\
+    KLPGR\x0fgameMiracleInfo\x12\x20\n\x0bFGOMIPLMEIC\x18\x06\x20\x01(\rR\
+    \x0bFGOMIPLMEIC\x124\n\x0frogue_buff_info\x18\x0e\x20\x01(\x0b2\x0c.GCKB\
+    LHADLGNR\rrogueBuffInfo\x12\x1a\n\x08score_id\x18\xc5\x05\x20\x01(\rR\
+    \x07scoreId\x12%\n\x0erogue_sub_mode\x18\xcb\x06\x20\x01(\rR\x0crogueSub\
+    Mode\x12!\n\x0bEGPCIBJIAJD\x18\x84\x02\x20\x01(\rR\x0bEGPCIBJIAJD\x127\n\
+    \x0bGMOLNJIBNJA\x18\x02\x20\x01(\x0e2\x15.ChessRogueQuitReasonR\x0bGMOLN\
+    JIBNJA\x12/\n\x0bOPAKJJMAGPH\x18\xd4\r\x20\x01(\x0b2\x0c.IMNPEAJAJJOR\
+    \x0bOPAKJJMAGPH\x12\x20\n\x0bDMBDNAICPFB\x18\x01\x20\x01(\rR\x0bDMBDNAIC\
+    PFB\x12\x20\n\x0bBLBBOKOGFDA\x18\x0b\x20\x01(\rR\x0bBLBBOKOGFDA\x12\x20\
+    \n\x0bIPOJMMGOOPJ\x18\x07\x20\x01(\rR\x0bIPOJMMGOOPJ\x12-\n\x0bANNIAOIDA\
+    DO\x18\t\x20\x01(\x0b2\x0b.LineupInfoR\x0bANNIAOIDADO\x12!\n\x0bOPOIMHHA\
+    FJO\x18\xe1\x08\x20\x01(\rR\x0bOPOIMHHAFJO\x12\x1b\n\tis_finish\x18\x05\
+    \x20\x01(\x08R\x08isFinish\x12!\n\x0bABEHKCJHCEH\x18\xb6\x01\x20\x01(\rR\
+    \x0bABEHKCJHCEH\x12\x20\n\x0bPBALFIENEFO\x18\r\x20\x01(\rR\x0bPBALFIENEF\
+    O\x12+\n\x0bBGPECKFDELD\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bBGPECKFDELD\
+    \x12\x20\n\x0bPLBCDIAADKD\x18\x08\x20\x01(\rR\x0bPLBCDIAADKD\x12\x20\n\
+    \x0bOJGGMOOPGIL\x18\x04\x20\x03(\rR\x0bOJGGMOOPGILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

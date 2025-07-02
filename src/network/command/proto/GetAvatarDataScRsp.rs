@@ -28,18 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDataScRsp.is_get_all)
-    pub is_get_all: bool,
-    // @@protoc_insertion_point(field:GetAvatarDataScRsp.JPNLPOPMKEJ)
-    pub JPNLPOPMKEJ: u32,
-    // @@protoc_insertion_point(field:GetAvatarDataScRsp.skin_list)
-    pub skin_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAvatarDataScRsp.PNKCFEALAMI)
     pub PNKCFEALAMI: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::GrowthTargetFunctionType::GrowthTargetFunctionType>>,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.FEFPIJJLNFG)
+    pub FEFPIJJLNFG: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
     // @@protoc_insertion_point(field:GetAvatarDataScRsp.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::Avatar::Avatar>,
     // @@protoc_insertion_point(field:GetAvatarDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.JPNLPOPMKEJ)
+    pub JPNLPOPMKEJ: u32,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.basic_type_id_list)
+    pub basic_type_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.is_get_all)
+    pub is_get_all: bool,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.multi_path_avatar_type_info_list)
+    pub multi_path_avatar_type_info_list: ::std::vec::Vec<super::MultiPathAvatarInfo::MultiPathAvatarInfo>,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.skin_list)
+    pub skin_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAvatarDataScRsp.cur_multi_path_avatar_type_map)
+    pub cur_multi_path_avatar_type_map: ::std::collections::HashMap<u32, ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAvatarDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,27 +65,17 @@ impl GetAvatarDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_get_all",
-            |m: &GetAvatarDataScRsp| { &m.is_get_all },
-            |m: &mut GetAvatarDataScRsp| { &mut m.is_get_all },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPNLPOPMKEJ",
-            |m: &GetAvatarDataScRsp| { &m.JPNLPOPMKEJ },
-            |m: &mut GetAvatarDataScRsp| { &mut m.JPNLPOPMKEJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skin_list",
-            |m: &GetAvatarDataScRsp| { &m.skin_list },
-            |m: &mut GetAvatarDataScRsp| { &mut m.skin_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PNKCFEALAMI",
             |m: &GetAvatarDataScRsp| { &m.PNKCFEALAMI },
             |m: &mut GetAvatarDataScRsp| { &mut m.PNKCFEALAMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FEFPIJJLNFG",
+            |m: &GetAvatarDataScRsp| { &m.FEFPIJJLNFG },
+            |m: &mut GetAvatarDataScRsp| { &mut m.FEFPIJJLNFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -88,6 +86,36 @@ impl GetAvatarDataScRsp {
             "retcode",
             |m: &GetAvatarDataScRsp| { &m.retcode },
             |m: &mut GetAvatarDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPNLPOPMKEJ",
+            |m: &GetAvatarDataScRsp| { &m.JPNLPOPMKEJ },
+            |m: &mut GetAvatarDataScRsp| { &mut m.JPNLPOPMKEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "basic_type_id_list",
+            |m: &GetAvatarDataScRsp| { &m.basic_type_id_list },
+            |m: &mut GetAvatarDataScRsp| { &mut m.basic_type_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_get_all",
+            |m: &GetAvatarDataScRsp| { &m.is_get_all },
+            |m: &mut GetAvatarDataScRsp| { &mut m.is_get_all },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "multi_path_avatar_type_info_list",
+            |m: &GetAvatarDataScRsp| { &m.multi_path_avatar_type_info_list },
+            |m: &mut GetAvatarDataScRsp| { &mut m.multi_path_avatar_type_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "skin_list",
+            |m: &GetAvatarDataScRsp| { &m.skin_list },
+            |m: &mut GetAvatarDataScRsp| { &mut m.skin_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "cur_multi_path_avatar_type_map",
+            |m: &GetAvatarDataScRsp| { &m.cur_multi_path_avatar_type_map },
+            |m: &mut GetAvatarDataScRsp| { &mut m.cur_multi_path_avatar_type_map },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAvatarDataScRsp>(
             "GetAvatarDataScRsp",
@@ -107,29 +135,56 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_get_all = is.read_bool()?;
-                },
                 40 => {
-                    self.JPNLPOPMKEJ = is.read_uint32()?;
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.skin_list)?;
-                },
-                104 => {
-                    self.skin_list.push(is.read_uint32()?);
-                },
-                8 => {
                     self.PNKCFEALAMI.push(is.read_enum_or_unknown()?);
                 },
-                10 => {
+                42 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.PNKCFEALAMI)?
+                },
+                106 => {
+                    self.FEFPIJJLNFG.push(is.read_message()?);
                 },
                 82 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                88 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.JPNLPOPMKEJ = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.basic_type_id_list)?;
+                },
+                24 => {
+                    self.basic_type_id_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.is_get_all = is.read_bool()?;
+                },
+                34 => {
+                    self.multi_path_avatar_type_info_list.push(is.read_message()?);
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.skin_list)?;
+                },
+                112 => {
+                    self.skin_list.push(is.read_uint32()?);
+                },
+                122 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_enum_or_unknown()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.cur_multi_path_avatar_type_map.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,41 +198,72 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_get_all != false {
-            my_size += 1 + 1;
-        }
-        if self.JPNLPOPMKEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JPNLPOPMKEJ);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.skin_list);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(1, &self.PNKCFEALAMI);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(5, &self.PNKCFEALAMI);
+        for value in &self.FEFPIJJLNFG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
+        if self.JPNLPOPMKEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JPNLPOPMKEJ);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.basic_type_id_list);
+        if self.is_get_all != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.multi_path_avatar_type_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.skin_list);
+        for (k, v) in &self.cur_multi_path_avatar_type_map {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::int32_size(2, v.value());
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_get_all != false {
-            os.write_bool(14, self.is_get_all)?;
-        }
-        if self.JPNLPOPMKEJ != 0 {
-            os.write_uint32(5, self.JPNLPOPMKEJ)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.skin_list)?;
-        os.write_repeated_packed_enum_or_unknown(1, &self.PNKCFEALAMI)?;
+        os.write_repeated_packed_enum_or_unknown(5, &self.PNKCFEALAMI)?;
+        for v in &self.FEFPIJJLNFG {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
+        if self.JPNLPOPMKEJ != 0 {
+            os.write_uint32(9, self.JPNLPOPMKEJ)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.basic_type_id_list)?;
+        if self.is_get_all != false {
+            os.write_bool(6, self.is_get_all)?;
+        }
+        for v in &self.multi_path_avatar_type_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        os.write_repeated_packed_uint32(14, &self.skin_list)?;
+        for (k, v) in &self.cur_multi_path_avatar_type_map {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::int32_size(2, v.value());
+            os.write_raw_varint32(122)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(v))?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -195,26 +281,22 @@ impl ::protobuf::Message for GetAvatarDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_get_all = false;
-        self.JPNLPOPMKEJ = 0;
-        self.skin_list.clear();
         self.PNKCFEALAMI.clear();
+        self.FEFPIJJLNFG.clear();
         self.avatar_list.clear();
         self.retcode = 0;
+        self.JPNLPOPMKEJ = 0;
+        self.basic_type_id_list.clear();
+        self.is_get_all = false;
+        self.multi_path_avatar_type_info_list.clear();
+        self.skin_list.clear();
+        self.cur_multi_path_avatar_type_map.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDataScRsp {
-        static instance: GetAvatarDataScRsp = GetAvatarDataScRsp {
-            is_get_all: false,
-            JPNLPOPMKEJ: 0,
-            skin_list: ::std::vec::Vec::new(),
-            PNKCFEALAMI: ::std::vec::Vec::new(),
-            avatar_list: ::std::vec::Vec::new(),
-            retcode: 0,
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
+        static instance: ::protobuf::rt::Lazy<GetAvatarDataScRsp> = ::protobuf::rt::Lazy::new();
+        instance.get(GetAvatarDataScRsp::new)
     }
 }
 
@@ -237,13 +319,22 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAvatarDataScRsp.proto\x1a\x0cAvatar.proto\x1a\x1eGrowthTargetFu\
-    nctionType.proto\"\xf2\x01\n\x12GetAvatarDataScRsp\x12\x1c\n\nis_get_all\
-    \x18\x0e\x20\x01(\x08R\x08isGetAll\x12\x20\n\x0bJPNLPOPMKEJ\x18\x05\x20\
-    \x01(\rR\x0bJPNLPOPMKEJ\x12\x1b\n\tskin_list\x18\r\x20\x03(\rR\x08skinLi\
-    st\x12;\n\x0bPNKCFEALAMI\x18\x01\x20\x03(\x0e2\x19.GrowthTargetFunctionT\
-    ypeR\x0bPNKCFEALAMI\x12(\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x07.Avatar\
-    R\navatarList\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06pr\
-    oto3\
+    nctionType.proto\x1a\x11KHOCCHABNMN.proto\x1a\x19MultiPathAvatarInfo.pro\
+    to\x1a\x19MultiPathAvatarType.proto\"\x87\x05\n\x12GetAvatarDataScRsp\
+    \x12;\n\x0bPNKCFEALAMI\x18\x05\x20\x03(\x0e2\x19.GrowthTargetFunctionTyp\
+    eR\x0bPNKCFEALAMI\x12.\n\x0bFEFPIJJLNFG\x18\r\x20\x03(\x0b2\x0c.KHOCCHAB\
+    NMNR\x0bFEFPIJJLNFG\x12(\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x07.Avatar\
+    R\navatarList\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bJPNLPOPMKEJ\x18\t\x20\x01(\rR\x0bJPNLPOPMKEJ\x12+\n\x12basic_t\
+    ype_id_list\x18\x03\x20\x03(\rR\x0fbasicTypeIdList\x12\x1c\n\nis_get_all\
+    \x18\x06\x20\x01(\x08R\x08isGetAll\x12[\n\x20multi_path_avatar_type_info\
+    _list\x18\x04\x20\x03(\x0b2\x14.MultiPathAvatarInfoR\x1bmultiPathAvatarT\
+    ypeInfoList\x12\x1b\n\tskin_list\x18\x0e\x20\x03(\rR\x08skinList\x12u\n\
+    \x1ecur_multi_path_avatar_type_map\x18\x0f\x20\x03(\x0b22.GetAvatarDataS\
+    cRsp.CurMultiPathAvatarTypeMapEntryR\x19curMultiPathAvatarTypeMap\x1ab\n\
+    \x1eCurMultiPathAvatarTypeMapEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    \x03key\x12*\n\x05value\x18\x02\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\
+    \x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -260,9 +351,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::Avatar::file_descriptor().clone());
             deps.push(super::GrowthTargetFunctionType::file_descriptor().clone());
+            deps.push(super::KHOCCHABNMN::file_descriptor().clone());
+            deps.push(super::MultiPathAvatarInfo::file_descriptor().clone());
+            deps.push(super::MultiPathAvatarType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAvatarDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

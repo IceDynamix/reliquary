@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendDevelopmentInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetFriendDevelopmentInfoScRsp.JBHBFBJGBPH)
     pub JBHBFBJGBPH: ::std::vec::Vec<super::DHAHAKMPNAF::DHAHAKMPNAF>,
     // special fields
@@ -54,14 +54,14 @@ impl GetFriendDevelopmentInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFriendDevelopmentInfoScRsp| { &m.retcode },
-            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &GetFriendDevelopmentInfoScRsp| { &m.uid },
             |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetFriendDevelopmentInfoScRsp| { &m.retcode },
+            |m: &mut GetFriendDevelopmentInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JBHBFBJGBPH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                40 => {
+                32 => {
                     self.uid = is.read_uint32()?;
                 },
-                74 => {
+                8 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                98 => {
                     self.JBHBFBJGBPH.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         for value in &self.JBHBFBJGBPH {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
         if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
+            os.write_uint32(4, self.uid)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         for v in &self.JBHBFBJGBPH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetFriendDevelopmentInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.uid = 0;
+        self.retcode = 0;
         self.JBHBFBJGBPH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendDevelopmentInfoScRsp {
         static instance: GetFriendDevelopmentInfoScRsp = GetFriendDevelopmentInfoScRsp {
-            retcode: 0,
             uid: 0,
+            retcode: 0,
             JBHBFBJGBPH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendDevelopmentInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetFriendDevelopmentInfoScRsp.proto\x1a\x11DHAHAKMPNAF.proto\"{\n\x1d\
-    GetFriendDevelopmentInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
-    \x07retcode\x12\x10\n\x03uid\x18\x05\x20\x01(\rR\x03uid\x12.\n\x0bJBHBFB\
-    JGBPH\x18\t\x20\x03(\x0b2\x0c.DHAHAKMPNAFR\x0bJBHBFBJGBPHb\x06proto3\
+    GetFriendDevelopmentInfoScRsp\x12\x10\n\x03uid\x18\x04\x20\x01(\rR\x03ui\
+    d\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bJBHBFBJG\
+    BPH\x18\x0c\x20\x03(\x0b2\x0c.DHAHAKMPNAFR\x0bJBHBFBJGBPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

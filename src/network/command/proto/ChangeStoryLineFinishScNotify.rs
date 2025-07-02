@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeStoryLineFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.KIDKHJECJLF)
-    pub KIDKHJECJLF: u32,
     // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.GLHFLIEIMJK)
     pub GLHFLIEIMJK: u32,
+    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.KIDKHJECJLF)
+    pub KIDKHJECJLF: u32,
     // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION)
     pub SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION: ::protobuf::EnumOrUnknown<super::AMJOCDIAPHF::AMJOCDIAPHF>,
     // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.KOOCCEIGHMA)
@@ -56,14 +56,14 @@ impl ChangeStoryLineFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIDKHJECJLF",
-            |m: &ChangeStoryLineFinishScNotify| { &m.KIDKHJECJLF },
-            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.KIDKHJECJLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GLHFLIEIMJK",
             |m: &ChangeStoryLineFinishScNotify| { &m.GLHFLIEIMJK },
             |m: &mut ChangeStoryLineFinishScNotify| { &mut m.GLHFLIEIMJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIDKHJECJLF",
+            |m: &ChangeStoryLineFinishScNotify| { &m.KIDKHJECJLF },
+            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.KIDKHJECJLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.KIDKHJECJLF = is.read_uint32()?;
-                },
-                64 => {
+                16 => {
                     self.GLHFLIEIMJK = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
+                    self.KIDKHJECJLF = is.read_uint32()?;
+                },
+                72 => {
                     self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                32 => {
                     self.KOOCCEIGHMA = is.read_bool()?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KIDKHJECJLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KIDKHJECJLF);
-        }
         if self.GLHFLIEIMJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GLHFLIEIMJK);
+            my_size += ::protobuf::rt::uint32_size(2, self.GLHFLIEIMJK);
+        }
+        if self.KIDKHJECJLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KIDKHJECJLF);
         }
         if self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION != ::protobuf::EnumOrUnknown::new(super::AMJOCDIAPHF::AMJOCDIAPHF::ChangeStoryLineAction_None) {
-            my_size += ::protobuf::rt::int32_size(15, self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION.value());
+            my_size += ::protobuf::rt::int32_size(9, self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION.value());
         }
         if self.KOOCCEIGHMA != false {
             my_size += 1 + 1;
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KIDKHJECJLF != 0 {
-            os.write_uint32(9, self.KIDKHJECJLF)?;
-        }
         if self.GLHFLIEIMJK != 0 {
-            os.write_uint32(8, self.GLHFLIEIMJK)?;
+            os.write_uint32(2, self.GLHFLIEIMJK)?;
+        }
+        if self.KIDKHJECJLF != 0 {
+            os.write_uint32(12, self.KIDKHJECJLF)?;
         }
         if self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION != ::protobuf::EnumOrUnknown::new(super::AMJOCDIAPHF::AMJOCDIAPHF::ChangeStoryLineAction_None) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION))?;
         }
         if self.KOOCCEIGHMA != false {
-            os.write_bool(10, self.KOOCCEIGHMA)?;
+            os.write_bool(4, self.KOOCCEIGHMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.KIDKHJECJLF = 0;
         self.GLHFLIEIMJK = 0;
+        self.KIDKHJECJLF = 0;
         self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION = ::protobuf::EnumOrUnknown::new(super::AMJOCDIAPHF::AMJOCDIAPHF::ChangeStoryLineAction_None);
         self.KOOCCEIGHMA = false;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
 
     fn default_instance() -> &'static ChangeStoryLineFinishScNotify {
         static instance: ChangeStoryLineFinishScNotify = ChangeStoryLineFinishScNotify {
-            KIDKHJECJLF: 0,
             GLHFLIEIMJK: 0,
+            KIDKHJECJLF: 0,
             SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION: ::protobuf::EnumOrUnknown::from_i32(0),
             KOOCCEIGHMA: false,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ChangeStoryLineFinishScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ChangeStoryLineFinishScNotify.proto\x1a\x11AMJOCDIAPHF.proto\"\xe0\
-    \x01\n\x1dChangeStoryLineFinishScNotify\x12\x20\n\x0bKIDKHJECJLF\x18\t\
-    \x20\x01(\rR\x0bKIDKHJECJLF\x12\x20\n\x0bGLHFLIEIMJK\x18\x08\x20\x01(\rR\
-    \x0bGLHFLIEIMJK\x12Y\n#SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION\x18\x0f\x20\
-    \x01(\x0e2\x0c.AMJOCDIAPHFR\x1eSWORDTRAINGAMESOURCETYPEACTION\x12\x20\n\
-    \x0bKOOCCEIGHMA\x18\n\x20\x01(\x08R\x0bKOOCCEIGHMAb\x06proto3\
+    \x01\n\x1dChangeStoryLineFinishScNotify\x12\x20\n\x0bGLHFLIEIMJK\x18\x02\
+    \x20\x01(\rR\x0bGLHFLIEIMJK\x12\x20\n\x0bKIDKHJECJLF\x18\x0c\x20\x01(\rR\
+    \x0bKIDKHJECJLF\x12Y\n#SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION\x18\t\x20\x01\
+    (\x0e2\x0c.AMJOCDIAPHFR\x1eSWORDTRAINGAMESOURCETYPEACTION\x12\x20\n\x0bK\
+    OOCCEIGHMA\x18\x04\x20\x01(\x08R\x0bKOOCCEIGHMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,6 +31,8 @@ pub enum ServerLogTag {
     SERVER_LOG_TAG_DEFAULT = 0,
     // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_ROGUE)
     SERVER_LOG_TAG_ROGUE = 1,
+    // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_FATE)
+    SERVER_LOG_TAG_FATE = 2,
     // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_SCENE)
     SERVER_LOG_TAG_SCENE = 3,
     // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_BATTLE)
@@ -54,6 +56,7 @@ impl ::protobuf::Enum for ServerLogTag {
         match value {
             0 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_DEFAULT),
             1 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_ROGUE),
+            2 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_FATE),
             3 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_SCENE),
             4 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_BATTLE),
             5 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE),
@@ -67,6 +70,7 @@ impl ::protobuf::Enum for ServerLogTag {
         match str {
             "SERVER_LOG_TAG_DEFAULT" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_DEFAULT),
             "SERVER_LOG_TAG_ROGUE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_ROGUE),
+            "SERVER_LOG_TAG_FATE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_FATE),
             "SERVER_LOG_TAG_SCENE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_SCENE),
             "SERVER_LOG_TAG_BATTLE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_BATTLE),
             "SERVER_LOG_TAG_CPP_GAMECORE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE),
@@ -79,6 +83,7 @@ impl ::protobuf::Enum for ServerLogTag {
     const VALUES: &'static [ServerLogTag] = &[
         ServerLogTag::SERVER_LOG_TAG_DEFAULT,
         ServerLogTag::SERVER_LOG_TAG_ROGUE,
+        ServerLogTag::SERVER_LOG_TAG_FATE,
         ServerLogTag::SERVER_LOG_TAG_SCENE,
         ServerLogTag::SERVER_LOG_TAG_BATTLE,
         ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE,
@@ -94,15 +99,7 @@ impl ::protobuf::EnumFull for ServerLogTag {
     }
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
-        let index = match self {
-            ServerLogTag::SERVER_LOG_TAG_DEFAULT => 0,
-            ServerLogTag::SERVER_LOG_TAG_ROGUE => 1,
-            ServerLogTag::SERVER_LOG_TAG_SCENE => 2,
-            ServerLogTag::SERVER_LOG_TAG_BATTLE => 3,
-            ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE => 4,
-            ServerLogTag::SERVER_LOG_TAG_LEVEL_GRAPH => 5,
-            ServerLogTag::SERVER_LOG_TAG_PLANET_FES => 6,
-        };
+        let index = *self as usize;
         Self::enum_descriptor().value_by_index(index)
     }
 }
@@ -120,12 +117,12 @@ impl ServerLogTag {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12ServerLogTag.proto*\xd9\x01\n\x0cServerLogTag\x12\x1a\n\x16SERVER_\
-    LOG_TAG_DEFAULT\x10\0\x12\x18\n\x14SERVER_LOG_TAG_ROGUE\x10\x01\x12\x18\
-    \n\x14SERVER_LOG_TAG_SCENE\x10\x03\x12\x19\n\x15SERVER_LOG_TAG_BATTLE\
-    \x10\x04\x12\x1f\n\x1bSERVER_LOG_TAG_CPP_GAMECORE\x10\x05\x12\x1e\n\x1aS\
-    ERVER_LOG_TAG_LEVEL_GRAPH\x10\x06\x12\x1d\n\x19SERVER_LOG_TAG_PLANET_FES\
-    \x10\x07b\x06proto3\
+    \n\x12ServerLogTag.proto*\xf2\x01\n\x0cServerLogTag\x12\x1a\n\x16SERVER_\
+    LOG_TAG_DEFAULT\x10\0\x12\x18\n\x14SERVER_LOG_TAG_ROGUE\x10\x01\x12\x17\
+    \n\x13SERVER_LOG_TAG_FATE\x10\x02\x12\x18\n\x14SERVER_LOG_TAG_SCENE\x10\
+    \x03\x12\x19\n\x15SERVER_LOG_TAG_BATTLE\x10\x04\x12\x1f\n\x1bSERVER_LOG_\
+    TAG_CPP_GAMECORE\x10\x05\x12\x1e\n\x1aSERVER_LOG_TAG_LEVEL_GRAPH\x10\x06\
+    \x12\x1d\n\x19SERVER_LOG_TAG_PLANET_FES\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for RelicSmartWearPinRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.BAOONJDCFKD = is.read_bool()?;
                 },
                 120 => {
                     self.relic_type = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RelicSmartWearPinRelicCsReq {
             my_size += ::protobuf::rt::uint32_size(15, self.relic_type);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RelicSmartWearPinRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BAOONJDCFKD != false {
-            os.write_bool(9, self.BAOONJDCFKD)?;
+            os.write_bool(11, self.BAOONJDCFKD)?;
         }
         if self.relic_type != 0 {
             os.write_uint32(15, self.relic_type)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearPinRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RelicSmartWearPinRelicCsReq.proto\"{\n\x1bRelicSmartWearPinRelicCsReq\
-    \x12\x20\n\x0bBAOONJDCFKD\x18\t\x20\x01(\x08R\x0bBAOONJDCFKD\x12\x1d\n\n\
-    relic_type\x18\x0f\x20\x01(\rR\trelicType\x12\x1b\n\tavatar_id\x18\r\x20\
-    \x01(\rR\x08avatarIdb\x06proto3\
+    \x12\x20\n\x0bBAOONJDCFKD\x18\x0b\x20\x01(\x08R\x0bBAOONJDCFKD\x12\x1d\n\
+    \nrelic_type\x18\x0f\x20\x01(\rR\trelicType\x12\x1b\n\tavatar_id\x18\x07\
+    \x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl FIMACPHLMNO {
         ::std::default::Default::default()
     }
 
-    // int64 KBEFCMIIIIN = 9;
+    // int64 KBEFCMIIIIN = 1;
 
     pub fn KBEFCMIIIIN(&self) -> i64 {
         match self.AINCOIONFDJ {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FIMACPHLMNO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.AINCOIONFDJ = ::std::option::Option::Some(fimacphlmno::AINCOIONFDJ::KBEFCMIIIIN(is.read_int64()?));
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for FIMACPHLMNO {
         if let ::std::option::Option::Some(ref v) = self.AINCOIONFDJ {
             match v {
                 &fimacphlmno::AINCOIONFDJ::KBEFCMIIIIN(v) => {
-                    my_size += ::protobuf::rt::int64_size(9, v);
+                    my_size += ::protobuf::rt::int64_size(1, v);
                 },
             };
         }
@@ -129,7 +129,7 @@ impl ::protobuf::Message for FIMACPHLMNO {
         if let ::std::option::Option::Some(ref v) = self.AINCOIONFDJ {
             match v {
                 &fimacphlmno::AINCOIONFDJ::KBEFCMIIIIN(v) => {
-                    os.write_int64(9, v)?;
+                    os.write_int64(1, v)?;
                 },
             };
         }
@@ -209,8 +209,8 @@ pub mod fimacphlmno {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FIMACPHLMNO.proto\"@\n\x0bFIMACPHLMNO\x12\"\n\x0bKBEFCMIIIIN\x18\t\
-    \x20\x01(\x03H\0R\x0bKBEFCMIIIINB\r\n\x0bAINCOIONFDJb\x06proto3\
+    \n\x11FIMACPHLMNO.proto\"@\n\x0bFIMACPHLMNO\x12\"\n\x0bKBEFCMIIIIN\x18\
+    \x01\x20\x01(\x03H\0R\x0bKBEFCMIIIINB\r\n\x0bAINCOIONFDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueNousEnableRogueTalentScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.POFMJBLMBJI)
-    pub POFMJBLMBJI: u32,
     // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.talent_info_list)
     pub talent_info_list: ::protobuf::MessageField<super::IMJMGEENCEH::IMJMGEENCEH>,
+    // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.POFMJBLMBJI)
+    pub POFMJBLMBJI: u32,
     // @@protoc_insertion_point(field:ChessRogueNousEnableRogueTalentScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl ChessRogueNousEnableRogueTalentScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POFMJBLMBJI",
-            |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.POFMJBLMBJI },
-            |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.POFMJBLMBJI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMJMGEENCEH::IMJMGEENCEH>(
             "talent_info_list",
             |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.talent_info_list },
             |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.talent_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "POFMJBLMBJI",
+            |m: &ChessRogueNousEnableRogueTalentScRsp| { &m.POFMJBLMBJI },
+            |m: &mut ChessRogueNousEnableRogueTalentScRsp| { &mut m.POFMJBLMBJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.POFMJBLMBJI = is.read_uint32()?;
-                },
-                18 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info_list)?;
                 },
-                112 => {
+                88 => {
+                    self.POFMJBLMBJI = is.read_uint32()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.POFMJBLMBJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.POFMJBLMBJI);
-        }
         if let Some(v) = self.talent_info_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.POFMJBLMBJI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.POFMJBLMBJI);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.POFMJBLMBJI != 0 {
-            os.write_uint32(12, self.POFMJBLMBJI)?;
-        }
         if let Some(v) = self.talent_info_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.POFMJBLMBJI != 0 {
+            os.write_uint32(11, self.POFMJBLMBJI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ChessRogueNousEnableRogueTalentScRsp {
     }
 
     fn clear(&mut self) {
-        self.POFMJBLMBJI = 0;
         self.talent_info_list.clear();
+        self.POFMJBLMBJI = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousEnableRogueTalentScRsp {
         static instance: ChessRogueNousEnableRogueTalentScRsp = ChessRogueNousEnableRogueTalentScRsp {
-            POFMJBLMBJI: 0,
             talent_info_list: ::protobuf::MessageField::none(),
+            POFMJBLMBJI: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousEnableRogueTalentScRsp
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ChessRogueNousEnableRogueTalentScRsp.proto\x1a\x11IMJMGEENCEH.proto\"\
-    \x9a\x01\n$ChessRogueNousEnableRogueTalentScRsp\x12\x20\n\x0bPOFMJBLMBJI\
-    \x18\x0c\x20\x01(\rR\x0bPOFMJBLMBJI\x126\n\x10talent_info_list\x18\x02\
-    \x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0etalentInfoList\x12\x18\n\x07retcode\
-    \x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x9a\x01\n$ChessRogueNousEnableRogueTalentScRsp\x126\n\x10talent_info_li\
+    st\x18\x01\x20\x01(\x0b2\x0c.IMJMGEENCEHR\x0etalentInfoList\x12\x20\n\
+    \x0bPOFMJBLMBJI\x18\x0b\x20\x01(\rR\x0bPOFMJBLMBJI\x12\x18\n\x07retcode\
+    \x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

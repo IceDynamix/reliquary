@@ -79,13 +79,13 @@ impl ::protobuf::Message for ServerLogSettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.notify_tag_list.push(is.read_enum_or_unknown()?);
                 },
-                82 => {
+                10 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.notify_tag_list)?
                 },
-                112 => {
+                104 => {
                     self.notify_level = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for ServerLogSettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(10, &self.notify_tag_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(1, &self.notify_tag_list);
         if self.notify_level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.notify_level.value());
+            my_size += ::protobuf::rt::int32_size(13, self.notify_level.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for ServerLogSettings {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(10, &self.notify_tag_list)?;
+        os.write_repeated_packed_enum_or_unknown(1, &self.notify_tag_list)?;
         if self.notify_level != ::protobuf::EnumOrUnknown::new(super::ServerLogLevel::ServerLogLevel::SERVER_LOG_LEVEL_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.notify_level))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.notify_level))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ServerLogSettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ServerLogSettings.proto\x1a\x14ServerLogLevel.proto\x1a\x12ServerL\
-    ogTag.proto\"~\n\x11ServerLogSettings\x125\n\x0fnotify_tag_list\x18\n\
+    ogTag.proto\"~\n\x11ServerLogSettings\x125\n\x0fnotify_tag_list\x18\x01\
     \x20\x03(\x0e2\r.ServerLogTagR\rnotifyTagList\x122\n\x0cnotify_level\x18\
-    \x0e\x20\x01(\x0e2\x0f.ServerLogLevelR\x0bnotifyLevelb\x06proto3\
+    \r\x20\x01(\x0e2\x0f.ServerLogLevelR\x0bnotifyLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

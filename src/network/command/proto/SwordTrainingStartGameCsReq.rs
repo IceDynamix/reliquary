@@ -72,7 +72,7 @@ impl ::protobuf::Message for SwordTrainingStartGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                112 => {
                     self.game_story_line_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SwordTrainingStartGameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.game_story_line_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SwordTrainingStartGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.game_story_line_id != 0 {
-            os.write_uint32(10, self.game_story_line_id)?;
+            os.write_uint32(14, self.game_story_line_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingStartGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SwordTrainingStartGameCsReq.proto\"J\n\x1bSwordTrainingStartGameCsReq\
-    \x12+\n\x12game_story_line_id\x18\n\x20\x01(\rR\x0fgameStoryLineIdb\x06p\
-    roto3\
+    \x12+\n\x12game_story_line_id\x18\x0e\x20\x01(\rR\x0fgameStoryLineIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

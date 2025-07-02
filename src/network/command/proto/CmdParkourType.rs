@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdParkourType {
     // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourTypeNone)
     CmdParkourTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetDataCsReq)
-    CmdParkourGetDataCsReq = 8394,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelCsReq)
-    CmdParkourEndLevelCsReq = 8400,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelCsReq)
-    CmdParkourStartLevelCsReq = 8384,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelScRsp)
-    CmdParkourStartLevelScRsp = 8382,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoCsReq)
-    CmdParkourGetRankingInfoCsReq = 8388,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelScRsp)
-    CmdParkourEndLevelScRsp = 8389,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoScRsp)
-    CmdParkourGetRankingInfoScRsp = 8390,
     // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetDataScRsp)
-    CmdParkourGetDataScRsp = 8393,
+    CmdParkourGetDataScRsp = 8389,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelScRsp)
+    CmdParkourStartLevelScRsp = 8391,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelCsReq)
+    CmdParkourStartLevelCsReq = 8387,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetDataCsReq)
+    CmdParkourGetDataCsReq = 8398,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelScRsp)
+    CmdParkourEndLevelScRsp = 8383,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoScRsp)
+    CmdParkourGetRankingInfoScRsp = 8396,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelCsReq)
+    CmdParkourEndLevelCsReq = 8385,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoCsReq)
+    CmdParkourGetRankingInfoCsReq = 8390,
 }
 
 impl ::protobuf::Enum for CmdParkourType {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for CmdParkourType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdParkourType> {
         match value {
             0 => ::std::option::Option::Some(CmdParkourType::CmdParkourTypeNone),
-            8394 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
-            8400 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
-            8384 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
-            8382 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelScRsp),
-            8388 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
-            8389 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelScRsp),
-            8390 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoScRsp),
-            8393 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
+            8389 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
+            8391 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelScRsp),
+            8387 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
+            8398 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
+            8383 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelScRsp),
+            8396 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoScRsp),
+            8385 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
+            8390 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for CmdParkourType {
     fn from_str(str: &str) -> ::std::option::Option<CmdParkourType> {
         match str {
             "CmdParkourTypeNone" => ::std::option::Option::Some(CmdParkourType::CmdParkourTypeNone),
-            "CmdParkourGetDataCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
-            "CmdParkourEndLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
-            "CmdParkourStartLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
+            "CmdParkourGetDataScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
             "CmdParkourStartLevelScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelScRsp),
-            "CmdParkourGetRankingInfoCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
+            "CmdParkourStartLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
+            "CmdParkourGetDataCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
             "CmdParkourEndLevelScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelScRsp),
             "CmdParkourGetRankingInfoScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoScRsp),
-            "CmdParkourGetDataScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
+            "CmdParkourEndLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
+            "CmdParkourGetRankingInfoCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdParkourType] = &[
         CmdParkourType::CmdParkourTypeNone,
-        CmdParkourType::CmdParkourGetDataCsReq,
-        CmdParkourType::CmdParkourEndLevelCsReq,
-        CmdParkourType::CmdParkourStartLevelCsReq,
+        CmdParkourType::CmdParkourGetDataScRsp,
         CmdParkourType::CmdParkourStartLevelScRsp,
-        CmdParkourType::CmdParkourGetRankingInfoCsReq,
+        CmdParkourType::CmdParkourStartLevelCsReq,
+        CmdParkourType::CmdParkourGetDataCsReq,
         CmdParkourType::CmdParkourEndLevelScRsp,
         CmdParkourType::CmdParkourGetRankingInfoScRsp,
-        CmdParkourType::CmdParkourGetDataScRsp,
+        CmdParkourType::CmdParkourEndLevelCsReq,
+        CmdParkourType::CmdParkourGetRankingInfoCsReq,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for CmdParkourType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdParkourType::CmdParkourTypeNone => 0,
-            CmdParkourType::CmdParkourGetDataCsReq => 1,
-            CmdParkourType::CmdParkourEndLevelCsReq => 2,
+            CmdParkourType::CmdParkourGetDataScRsp => 1,
+            CmdParkourType::CmdParkourStartLevelScRsp => 2,
             CmdParkourType::CmdParkourStartLevelCsReq => 3,
-            CmdParkourType::CmdParkourStartLevelScRsp => 4,
-            CmdParkourType::CmdParkourGetRankingInfoCsReq => 5,
-            CmdParkourType::CmdParkourEndLevelScRsp => 6,
-            CmdParkourType::CmdParkourGetRankingInfoScRsp => 7,
-            CmdParkourType::CmdParkourGetDataScRsp => 8,
+            CmdParkourType::CmdParkourGetDataCsReq => 4,
+            CmdParkourType::CmdParkourEndLevelScRsp => 5,
+            CmdParkourType::CmdParkourGetRankingInfoScRsp => 6,
+            CmdParkourType::CmdParkourEndLevelCsReq => 7,
+            CmdParkourType::CmdParkourGetRankingInfoCsReq => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,12 +133,12 @@ impl CmdParkourType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdParkourType.proto*\xa6\x02\n\x0eCmdParkourType\x12\x16\n\x12Cmd\
-    ParkourTypeNone\x10\0\x12\x1b\n\x16CmdParkourGetDataCsReq\x10\xcaA\x12\
-    \x1c\n\x17CmdParkourEndLevelCsReq\x10\xd0A\x12\x1e\n\x19CmdParkourStartL\
-    evelCsReq\x10\xc0A\x12\x1e\n\x19CmdParkourStartLevelScRsp\x10\xbeA\x12\"\
-    \n\x1dCmdParkourGetRankingInfoCsReq\x10\xc4A\x12\x1c\n\x17CmdParkourEndL\
-    evelScRsp\x10\xc5A\x12\"\n\x1dCmdParkourGetRankingInfoScRsp\x10\xc6A\x12\
-    \x1b\n\x16CmdParkourGetDataScRsp\x10\xc9Ab\x06proto3\
+    ParkourTypeNone\x10\0\x12\x1b\n\x16CmdParkourGetDataScRsp\x10\xc5A\x12\
+    \x1e\n\x19CmdParkourStartLevelScRsp\x10\xc7A\x12\x1e\n\x19CmdParkourStar\
+    tLevelCsReq\x10\xc3A\x12\x1b\n\x16CmdParkourGetDataCsReq\x10\xceA\x12\
+    \x1c\n\x17CmdParkourEndLevelScRsp\x10\xbfA\x12\"\n\x1dCmdParkourGetRanki\
+    ngInfoScRsp\x10\xccA\x12\x1c\n\x17CmdParkourEndLevelCsReq\x10\xc1A\x12\"\
+    \n\x1dCmdParkourGetRankingInfoCsReq\x10\xc6Ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

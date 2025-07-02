@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdBattlePassType {
     // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassTypeNone)
     CmdBattlePassTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeBpRewardCsReq)
-    CmdTakeBpRewardCsReq = 3040,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeAllRewardScRsp)
-    CmdTakeAllRewardScRsp = 3022,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeBpRewardScRsp)
-    CmdTakeBpRewardScRsp = 3076,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassInfoNotify)
-    CmdBattlePassInfoNotify = 3095,
     // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBuyBpLevelScRsp)
-    CmdBuyBpLevelScRsp = 3071,
+    CmdBuyBpLevelScRsp = 3070,
     // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBuyBpLevelCsReq)
-    CmdBuyBpLevelCsReq = 3048,
+    CmdBuyBpLevelCsReq = 3021,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeAllRewardScRsp)
+    CmdTakeAllRewardScRsp = 3054,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeBpRewardScRsp)
+    CmdTakeBpRewardScRsp = 3027,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeBpRewardCsReq)
+    CmdTakeBpRewardCsReq = 3039,
     // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdTakeAllRewardCsReq)
-    CmdTakeAllRewardCsReq = 3052,
+    CmdTakeAllRewardCsReq = 3059,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassInfoNotify)
+    CmdBattlePassInfoNotify = 3020,
 }
 
 impl ::protobuf::Enum for CmdBattlePassType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdBattlePassType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattlePassType> {
         match value {
             0 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassTypeNone),
-            3040 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardCsReq),
-            3022 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardScRsp),
-            3076 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardScRsp),
-            3095 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassInfoNotify),
-            3071 => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelScRsp),
-            3048 => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelCsReq),
-            3052 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardCsReq),
+            3070 => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelScRsp),
+            3021 => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelCsReq),
+            3054 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardScRsp),
+            3027 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardScRsp),
+            3039 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardCsReq),
+            3059 => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardCsReq),
+            3020 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassInfoNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdBattlePassType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBattlePassType> {
         match str {
             "CmdBattlePassTypeNone" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassTypeNone),
-            "CmdTakeBpRewardCsReq" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardCsReq),
-            "CmdTakeAllRewardScRsp" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardScRsp),
-            "CmdTakeBpRewardScRsp" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardScRsp),
-            "CmdBattlePassInfoNotify" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassInfoNotify),
             "CmdBuyBpLevelScRsp" => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelScRsp),
             "CmdBuyBpLevelCsReq" => ::std::option::Option::Some(CmdBattlePassType::CmdBuyBpLevelCsReq),
+            "CmdTakeAllRewardScRsp" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardScRsp),
+            "CmdTakeBpRewardScRsp" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardScRsp),
+            "CmdTakeBpRewardCsReq" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeBpRewardCsReq),
             "CmdTakeAllRewardCsReq" => ::std::option::Option::Some(CmdBattlePassType::CmdTakeAllRewardCsReq),
+            "CmdBattlePassInfoNotify" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassInfoNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattlePassType] = &[
         CmdBattlePassType::CmdBattlePassTypeNone,
-        CmdBattlePassType::CmdTakeBpRewardCsReq,
-        CmdBattlePassType::CmdTakeAllRewardScRsp,
-        CmdBattlePassType::CmdTakeBpRewardScRsp,
-        CmdBattlePassType::CmdBattlePassInfoNotify,
         CmdBattlePassType::CmdBuyBpLevelScRsp,
         CmdBattlePassType::CmdBuyBpLevelCsReq,
+        CmdBattlePassType::CmdTakeAllRewardScRsp,
+        CmdBattlePassType::CmdTakeBpRewardScRsp,
+        CmdBattlePassType::CmdTakeBpRewardCsReq,
         CmdBattlePassType::CmdTakeAllRewardCsReq,
+        CmdBattlePassType::CmdBattlePassInfoNotify,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdBattlePassType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBattlePassType::CmdBattlePassTypeNone => 0,
-            CmdBattlePassType::CmdTakeBpRewardCsReq => 1,
-            CmdBattlePassType::CmdTakeAllRewardScRsp => 2,
-            CmdBattlePassType::CmdTakeBpRewardScRsp => 3,
-            CmdBattlePassType::CmdBattlePassInfoNotify => 4,
-            CmdBattlePassType::CmdBuyBpLevelScRsp => 5,
-            CmdBattlePassType::CmdBuyBpLevelCsReq => 6,
-            CmdBattlePassType::CmdTakeAllRewardCsReq => 7,
+            CmdBattlePassType::CmdBuyBpLevelScRsp => 1,
+            CmdBattlePassType::CmdBuyBpLevelCsReq => 2,
+            CmdBattlePassType::CmdTakeAllRewardScRsp => 3,
+            CmdBattlePassType::CmdTakeBpRewardScRsp => 4,
+            CmdBattlePassType::CmdTakeBpRewardCsReq => 5,
+            CmdBattlePassType::CmdTakeAllRewardCsReq => 6,
+            CmdBattlePassType::CmdBattlePassInfoNotify => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,11 +127,11 @@ impl CmdBattlePassType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdBattlePassType.proto*\xec\x01\n\x11CmdBattlePassType\x12\x19\n\
-    \x15CmdBattlePassTypeNone\x10\0\x12\x19\n\x14CmdTakeBpRewardCsReq\x10\
-    \xe0\x17\x12\x1a\n\x15CmdTakeAllRewardScRsp\x10\xce\x17\x12\x19\n\x14Cmd\
-    TakeBpRewardScRsp\x10\x84\x18\x12\x1c\n\x17CmdBattlePassInfoNotify\x10\
-    \x97\x18\x12\x17\n\x12CmdBuyBpLevelScRsp\x10\xff\x17\x12\x17\n\x12CmdBuy\
-    BpLevelCsReq\x10\xe8\x17\x12\x1a\n\x15CmdTakeAllRewardCsReq\x10\xec\x17b\
+    \x15CmdBattlePassTypeNone\x10\0\x12\x17\n\x12CmdBuyBpLevelScRsp\x10\xfe\
+    \x17\x12\x17\n\x12CmdBuyBpLevelCsReq\x10\xcd\x17\x12\x1a\n\x15CmdTakeAll\
+    RewardScRsp\x10\xee\x17\x12\x19\n\x14CmdTakeBpRewardScRsp\x10\xd3\x17\
+    \x12\x19\n\x14CmdTakeBpRewardCsReq\x10\xdf\x17\x12\x1a\n\x15CmdTakeAllRe\
+    wardCsReq\x10\xf3\x17\x12\x1c\n\x17CmdBattlePassInfoNotify\x10\xcc\x17b\
     \x06proto3\
 ";
 

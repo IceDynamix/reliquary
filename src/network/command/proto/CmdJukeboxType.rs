@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdJukeboxType {
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdJukeboxTypeNone)
     CmdJukeboxTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicCsReq)
-    CmdPlayBackGroundMusicCsReq = 3131,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataScRsp)
-    CmdGetJukeboxDataScRsp = 3132,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicScRsp)
-    CmdPlayBackGroundMusicScRsp = 3140,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdUnlockBackGroundMusicCsReq)
-    CmdUnlockBackGroundMusicCsReq = 3176,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdTrialBackGroundMusicScRsp)
-    CmdTrialBackGroundMusicScRsp = 3152,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataCsReq)
-    CmdGetJukeboxDataCsReq = 3195,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdUnlockBackGroundMusicScRsp)
-    CmdUnlockBackGroundMusicScRsp = 3148,
+    CmdUnlockBackGroundMusicScRsp = 3121,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdTrialBackGroundMusicCsReq)
-    CmdTrialBackGroundMusicCsReq = 3171,
+    CmdTrialBackGroundMusicCsReq = 3170,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataScRsp)
+    CmdGetJukeboxDataScRsp = 3191,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataCsReq)
+    CmdGetJukeboxDataCsReq = 3120,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdTrialBackGroundMusicScRsp)
+    CmdTrialBackGroundMusicScRsp = 3159,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdUnlockBackGroundMusicCsReq)
+    CmdUnlockBackGroundMusicCsReq = 3127,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicScRsp)
+    CmdPlayBackGroundMusicScRsp = 3139,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicCsReq)
+    CmdPlayBackGroundMusicCsReq = 3167,
 }
 
 impl ::protobuf::Enum for CmdJukeboxType {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for CmdJukeboxType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdJukeboxType> {
         match value {
             0 => ::std::option::Option::Some(CmdJukeboxType::CmdJukeboxTypeNone),
-            3131 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
-            3132 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
-            3140 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
-            3176 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
-            3152 => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicScRsp),
-            3195 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
-            3148 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicScRsp),
-            3171 => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicCsReq),
+            3121 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicScRsp),
+            3170 => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicCsReq),
+            3191 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
+            3120 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
+            3159 => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicScRsp),
+            3127 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
+            3139 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
+            3167 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for CmdJukeboxType {
     fn from_str(str: &str) -> ::std::option::Option<CmdJukeboxType> {
         match str {
             "CmdJukeboxTypeNone" => ::std::option::Option::Some(CmdJukeboxType::CmdJukeboxTypeNone),
-            "CmdPlayBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
-            "CmdGetJukeboxDataScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
-            "CmdPlayBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
-            "CmdUnlockBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
-            "CmdTrialBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicScRsp),
-            "CmdGetJukeboxDataCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
             "CmdUnlockBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicScRsp),
             "CmdTrialBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicCsReq),
+            "CmdGetJukeboxDataScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
+            "CmdGetJukeboxDataCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
+            "CmdTrialBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdTrialBackGroundMusicScRsp),
+            "CmdUnlockBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
+            "CmdPlayBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
+            "CmdPlayBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdJukeboxType] = &[
         CmdJukeboxType::CmdJukeboxTypeNone,
-        CmdJukeboxType::CmdPlayBackGroundMusicCsReq,
-        CmdJukeboxType::CmdGetJukeboxDataScRsp,
-        CmdJukeboxType::CmdPlayBackGroundMusicScRsp,
-        CmdJukeboxType::CmdUnlockBackGroundMusicCsReq,
-        CmdJukeboxType::CmdTrialBackGroundMusicScRsp,
-        CmdJukeboxType::CmdGetJukeboxDataCsReq,
         CmdJukeboxType::CmdUnlockBackGroundMusicScRsp,
         CmdJukeboxType::CmdTrialBackGroundMusicCsReq,
+        CmdJukeboxType::CmdGetJukeboxDataScRsp,
+        CmdJukeboxType::CmdGetJukeboxDataCsReq,
+        CmdJukeboxType::CmdTrialBackGroundMusicScRsp,
+        CmdJukeboxType::CmdUnlockBackGroundMusicCsReq,
+        CmdJukeboxType::CmdPlayBackGroundMusicScRsp,
+        CmdJukeboxType::CmdPlayBackGroundMusicCsReq,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for CmdJukeboxType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdJukeboxType::CmdJukeboxTypeNone => 0,
-            CmdJukeboxType::CmdPlayBackGroundMusicCsReq => 1,
-            CmdJukeboxType::CmdGetJukeboxDataScRsp => 2,
-            CmdJukeboxType::CmdPlayBackGroundMusicScRsp => 3,
-            CmdJukeboxType::CmdUnlockBackGroundMusicCsReq => 4,
+            CmdJukeboxType::CmdUnlockBackGroundMusicScRsp => 1,
+            CmdJukeboxType::CmdTrialBackGroundMusicCsReq => 2,
+            CmdJukeboxType::CmdGetJukeboxDataScRsp => 3,
+            CmdJukeboxType::CmdGetJukeboxDataCsReq => 4,
             CmdJukeboxType::CmdTrialBackGroundMusicScRsp => 5,
-            CmdJukeboxType::CmdGetJukeboxDataCsReq => 6,
-            CmdJukeboxType::CmdUnlockBackGroundMusicScRsp => 7,
-            CmdJukeboxType::CmdTrialBackGroundMusicCsReq => 8,
+            CmdJukeboxType::CmdUnlockBackGroundMusicCsReq => 6,
+            CmdJukeboxType::CmdPlayBackGroundMusicScRsp => 7,
+            CmdJukeboxType::CmdPlayBackGroundMusicCsReq => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,12 +133,12 @@ impl CmdJukeboxType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdJukeboxType.proto*\xb4\x02\n\x0eCmdJukeboxType\x12\x16\n\x12Cmd\
-    JukeboxTypeNone\x10\0\x12\x20\n\x1bCmdPlayBackGroundMusicCsReq\x10\xbb\
-    \x18\x12\x1b\n\x16CmdGetJukeboxDataScRsp\x10\xbc\x18\x12\x20\n\x1bCmdPla\
-    yBackGroundMusicScRsp\x10\xc4\x18\x12\"\n\x1dCmdUnlockBackGroundMusicCsR\
-    eq\x10\xe8\x18\x12!\n\x1cCmdTrialBackGroundMusicScRsp\x10\xd0\x18\x12\
-    \x1b\n\x16CmdGetJukeboxDataCsReq\x10\xfb\x18\x12\"\n\x1dCmdUnlockBackGro\
-    undMusicScRsp\x10\xcc\x18\x12!\n\x1cCmdTrialBackGroundMusicCsReq\x10\xe3\
+    JukeboxTypeNone\x10\0\x12\"\n\x1dCmdUnlockBackGroundMusicScRsp\x10\xb1\
+    \x18\x12!\n\x1cCmdTrialBackGroundMusicCsReq\x10\xe2\x18\x12\x1b\n\x16Cmd\
+    GetJukeboxDataScRsp\x10\xf7\x18\x12\x1b\n\x16CmdGetJukeboxDataCsReq\x10\
+    \xb0\x18\x12!\n\x1cCmdTrialBackGroundMusicScRsp\x10\xd7\x18\x12\"\n\x1dC\
+    mdUnlockBackGroundMusicCsReq\x10\xb7\x18\x12\x20\n\x1bCmdPlayBackGroundM\
+    usicScRsp\x10\xc3\x18\x12\x20\n\x1bCmdPlayBackGroundMusicCsReq\x10\xdf\
     \x18b\x06proto3\
 ";
 

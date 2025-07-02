@@ -32,10 +32,10 @@ pub struct FIDFNNCJAJE {
     pub IJPPKNKNLNL: u32,
     // @@protoc_insertion_point(field:FIDFNNCJAJE.DCHPOGOBDKO)
     pub DCHPOGOBDKO: u32,
-    // @@protoc_insertion_point(field:FIDFNNCJAJE.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:FIDFNNCJAJE.IBOEKJBOMOG)
     pub IBOEKJBOMOG: u32,
+    // @@protoc_insertion_point(field:FIDFNNCJAJE.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FIDFNNCJAJE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl FIDFNNCJAJE {
             |m: &mut FIDFNNCJAJE| { &mut m.DCHPOGOBDKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &FIDFNNCJAJE| { &m.level },
-            |m: &mut FIDFNNCJAJE| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IBOEKJBOMOG",
             |m: &FIDFNNCJAJE| { &m.IBOEKJBOMOG },
             |m: &mut FIDFNNCJAJE| { &mut m.IBOEKJBOMOG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &FIDFNNCJAJE| { &m.level },
+            |m: &mut FIDFNNCJAJE| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FIDFNNCJAJE>(
             "FIDFNNCJAJE",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.IJPPKNKNLNL = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.DCHPOGOBDKO = is.read_uint32()?;
                 },
-                88 => {
-                    self.level = is.read_uint32()?;
+                80 => {
+                    self.IBOEKJBOMOG = is.read_uint32()?;
                 },
                 112 => {
-                    self.IBOEKJBOMOG = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IJPPKNKNLNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IJPPKNKNLNL);
+            my_size += ::protobuf::rt::uint32_size(9, self.IJPPKNKNLNL);
         }
         if self.DCHPOGOBDKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DCHPOGOBDKO);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.DCHPOGOBDKO);
         }
         if self.IBOEKJBOMOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IBOEKJBOMOG);
+            my_size += ::protobuf::rt::uint32_size(10, self.IBOEKJBOMOG);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for FIDFNNCJAJE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IJPPKNKNLNL != 0 {
-            os.write_uint32(2, self.IJPPKNKNLNL)?;
+            os.write_uint32(9, self.IJPPKNKNLNL)?;
         }
         if self.DCHPOGOBDKO != 0 {
-            os.write_uint32(5, self.DCHPOGOBDKO)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(13, self.DCHPOGOBDKO)?;
         }
         if self.IBOEKJBOMOG != 0 {
-            os.write_uint32(14, self.IBOEKJBOMOG)?;
+            os.write_uint32(10, self.IBOEKJBOMOG)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     fn clear(&mut self) {
         self.IJPPKNKNLNL = 0;
         self.DCHPOGOBDKO = 0;
-        self.level = 0;
         self.IBOEKJBOMOG = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for FIDFNNCJAJE {
         static instance: FIDFNNCJAJE = FIDFNNCJAJE {
             IJPPKNKNLNL: 0,
             DCHPOGOBDKO: 0,
-            level: 0,
             IBOEKJBOMOG: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for FIDFNNCJAJE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FIDFNNCJAJE.proto\"\x89\x01\n\x0bFIDFNNCJAJE\x12\x20\n\x0bIJPPKNKN\
-    LNL\x18\x02\x20\x01(\rR\x0bIJPPKNKNLNL\x12\x20\n\x0bDCHPOGOBDKO\x18\x05\
-    \x20\x01(\rR\x0bDCHPOGOBDKO\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05le\
-    vel\x12\x20\n\x0bIBOEKJBOMOG\x18\x0e\x20\x01(\rR\x0bIBOEKJBOMOGb\x06prot\
-    o3\
+    LNL\x18\t\x20\x01(\rR\x0bIJPPKNKNLNL\x12\x20\n\x0bDCHPOGOBDKO\x18\r\x20\
+    \x01(\rR\x0bDCHPOGOBDKO\x12\x20\n\x0bIBOEKJBOMOG\x18\n\x20\x01(\rR\x0bIB\
+    OEKJBOMOG\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

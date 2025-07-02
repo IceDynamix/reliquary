@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdDrinkMakerType {
     // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerTypeNone)
     CmdDrinkMakerTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceCsReq)
-    CmdEndDrinkMakerSequenceCsReq = 6984,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerDayEndScNotify)
-    CmdDrinkMakerDayEndScNotify = 6987,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkScRsp)
-    CmdMakeMissionDrinkScRsp = 6989,
     // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeDrinkScRsp)
-    CmdMakeDrinkScRsp = 6990,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerUpdateTipsNotify)
-    CmdDrinkMakerUpdateTipsNotify = 6981,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerChallengeCsReq)
-    CmdDrinkMakerChallengeCsReq = 6983,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeDrinkCsReq)
-    CmdMakeDrinkCsReq = 6988,
+    CmdMakeDrinkScRsp = 6996,
     // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdGetDrinkMakerDataCsReq)
-    CmdGetDrinkMakerDataCsReq = 6994,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceScRsp)
-    CmdEndDrinkMakerSequenceScRsp = 6982,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdGetDrinkMakerDataScRsp)
-    CmdGetDrinkMakerDataScRsp = 6993,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkCsReq)
-    CmdMakeMissionDrinkCsReq = 7000,
+    CmdGetDrinkMakerDataCsReq = 6998,
     // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerChallengeScRsp)
-    CmdDrinkMakerChallengeScRsp = 6985,
+    CmdDrinkMakerChallengeScRsp = 6992,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerChallengeCsReq)
+    CmdDrinkMakerChallengeCsReq = 6999,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerUpdateTipsNotify)
+    CmdDrinkMakerUpdateTipsNotify = 6986,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkScRsp)
+    CmdMakeMissionDrinkScRsp = 6983,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdGetDrinkMakerDataScRsp)
+    CmdGetDrinkMakerDataScRsp = 6989,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeDrinkCsReq)
+    CmdMakeDrinkCsReq = 6990,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceCsReq)
+    CmdEndDrinkMakerSequenceCsReq = 6987,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkCsReq)
+    CmdMakeMissionDrinkCsReq = 6985,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceScRsp)
+    CmdEndDrinkMakerSequenceScRsp = 6991,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerDayEndScNotify)
+    CmdDrinkMakerDayEndScNotify = 6994,
 }
 
 impl ::protobuf::Enum for CmdDrinkMakerType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdDrinkMakerType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdDrinkMakerType> {
         match value {
             0 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerTypeNone),
-            6984 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
-            6987 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
-            6989 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
-            6990 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkScRsp),
-            6981 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
-            6983 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
-            6988 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
-            6994 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq),
-            6982 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
-            6993 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
-            7000 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
-            6985 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp),
+            6996 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkScRsp),
+            6998 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq),
+            6992 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp),
+            6999 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
+            6986 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
+            6983 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
+            6989 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
+            6990 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
+            6987 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
+            6985 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
+            6991 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
+            6994 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdDrinkMakerType {
     fn from_str(str: &str) -> ::std::option::Option<CmdDrinkMakerType> {
         match str {
             "CmdDrinkMakerTypeNone" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerTypeNone),
-            "CmdEndDrinkMakerSequenceCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
-            "CmdDrinkMakerDayEndScNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
-            "CmdMakeMissionDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
             "CmdMakeDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkScRsp),
-            "CmdDrinkMakerUpdateTipsNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
-            "CmdDrinkMakerChallengeCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
-            "CmdMakeDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
             "CmdGetDrinkMakerDataCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq),
-            "CmdEndDrinkMakerSequenceScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
-            "CmdGetDrinkMakerDataScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
-            "CmdMakeMissionDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
             "CmdDrinkMakerChallengeScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp),
+            "CmdDrinkMakerChallengeCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
+            "CmdDrinkMakerUpdateTipsNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
+            "CmdMakeMissionDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
+            "CmdGetDrinkMakerDataScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
+            "CmdMakeDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
+            "CmdEndDrinkMakerSequenceCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
+            "CmdMakeMissionDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
+            "CmdEndDrinkMakerSequenceScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
+            "CmdDrinkMakerDayEndScNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDrinkMakerType] = &[
         CmdDrinkMakerType::CmdDrinkMakerTypeNone,
-        CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq,
-        CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify,
-        CmdDrinkMakerType::CmdMakeMissionDrinkScRsp,
         CmdDrinkMakerType::CmdMakeDrinkScRsp,
-        CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify,
-        CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq,
-        CmdDrinkMakerType::CmdMakeDrinkCsReq,
         CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq,
-        CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp,
-        CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp,
-        CmdDrinkMakerType::CmdMakeMissionDrinkCsReq,
         CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp,
+        CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq,
+        CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify,
+        CmdDrinkMakerType::CmdMakeMissionDrinkScRsp,
+        CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp,
+        CmdDrinkMakerType::CmdMakeDrinkCsReq,
+        CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq,
+        CmdDrinkMakerType::CmdMakeMissionDrinkCsReq,
+        CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp,
+        CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdDrinkMakerType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdDrinkMakerType::CmdDrinkMakerTypeNone => 0,
-            CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq => 1,
-            CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify => 2,
-            CmdDrinkMakerType::CmdMakeMissionDrinkScRsp => 3,
-            CmdDrinkMakerType::CmdMakeDrinkScRsp => 4,
+            CmdDrinkMakerType::CmdMakeDrinkScRsp => 1,
+            CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq => 2,
+            CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp => 3,
+            CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq => 4,
             CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify => 5,
-            CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq => 6,
-            CmdDrinkMakerType::CmdMakeDrinkCsReq => 7,
-            CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq => 8,
-            CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp => 9,
-            CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp => 10,
-            CmdDrinkMakerType::CmdMakeMissionDrinkCsReq => 11,
-            CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp => 12,
+            CmdDrinkMakerType::CmdMakeMissionDrinkScRsp => 6,
+            CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp => 7,
+            CmdDrinkMakerType::CmdMakeDrinkCsReq => 8,
+            CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq => 9,
+            CmdDrinkMakerType::CmdMakeMissionDrinkCsReq => 10,
+            CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp => 11,
+            CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +157,15 @@ impl CmdDrinkMakerType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdDrinkMakerType.proto*\xae\x03\n\x11CmdDrinkMakerType\x12\x19\n\
-    \x15CmdDrinkMakerTypeNone\x10\0\x12\"\n\x1dCmdEndDrinkMakerSequenceCsReq\
-    \x10\xc86\x12\x20\n\x1bCmdDrinkMakerDayEndScNotify\x10\xcb6\x12\x1d\n\
-    \x18CmdMakeMissionDrinkScRsp\x10\xcd6\x12\x16\n\x11CmdMakeDrinkScRsp\x10\
-    \xce6\x12\"\n\x1dCmdDrinkMakerUpdateTipsNotify\x10\xc56\x12\x20\n\x1bCmd\
-    DrinkMakerChallengeCsReq\x10\xc76\x12\x16\n\x11CmdMakeDrinkCsReq\x10\xcc\
-    6\x12\x1e\n\x19CmdGetDrinkMakerDataCsReq\x10\xd26\x12\"\n\x1dCmdEndDrink\
-    MakerSequenceScRsp\x10\xc66\x12\x1e\n\x19CmdGetDrinkMakerDataScRsp\x10\
-    \xd16\x12\x1d\n\x18CmdMakeMissionDrinkCsReq\x10\xd86\x12\x20\n\x1bCmdDri\
-    nkMakerChallengeScRsp\x10\xc96b\x06proto3\
+    \x15CmdDrinkMakerTypeNone\x10\0\x12\x16\n\x11CmdMakeDrinkScRsp\x10\xd46\
+    \x12\x1e\n\x19CmdGetDrinkMakerDataCsReq\x10\xd66\x12\x20\n\x1bCmdDrinkMa\
+    kerChallengeScRsp\x10\xd06\x12\x20\n\x1bCmdDrinkMakerChallengeCsReq\x10\
+    \xd76\x12\"\n\x1dCmdDrinkMakerUpdateTipsNotify\x10\xca6\x12\x1d\n\x18Cmd\
+    MakeMissionDrinkScRsp\x10\xc76\x12\x1e\n\x19CmdGetDrinkMakerDataScRsp\
+    \x10\xcd6\x12\x16\n\x11CmdMakeDrinkCsReq\x10\xce6\x12\"\n\x1dCmdEndDrink\
+    MakerSequenceCsReq\x10\xcb6\x12\x1d\n\x18CmdMakeMissionDrinkCsReq\x10\
+    \xc96\x12\"\n\x1dCmdEndDrinkMakerSequenceScRsp\x10\xcf6\x12\x20\n\x1bCmd\
+    DrinkMakerDayEndScNotify\x10\xd26b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -37,6 +37,12 @@ pub enum Match3FinishReason {
     MATCH3_FINISH_REASON_GAMEEND = 3,
     // @@protoc_insertion_point(enum_value:Match3FinishReason.MATCH3_FINISH_REASON_KICKOUT)
     MATCH3_FINISH_REASON_KICKOUT = 4,
+    // @@protoc_insertion_point(enum_value:Match3FinishReason.MATCH3_FINISH_REASON_WIN)
+    MATCH3_FINISH_REASON_WIN = 5,
+    // @@protoc_insertion_point(enum_value:Match3FinishReason.MATCH3_FINISH_REASON_LOSE)
+    MATCH3_FINISH_REASON_LOSE = 6,
+    // @@protoc_insertion_point(enum_value:Match3FinishReason.MATCH3_FINISH_REASON_TIE)
+    MATCH3_FINISH_REASON_TIE = 7,
 }
 
 impl ::protobuf::Enum for Match3FinishReason {
@@ -53,6 +59,9 @@ impl ::protobuf::Enum for Match3FinishReason {
             2 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_DIE),
             3 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_GAMEEND),
             4 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_KICKOUT),
+            5 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_WIN),
+            6 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_LOSE),
+            7 => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_TIE),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +73,9 @@ impl ::protobuf::Enum for Match3FinishReason {
             "MATCH3_FINISH_REASON_DIE" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_DIE),
             "MATCH3_FINISH_REASON_GAMEEND" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_GAMEEND),
             "MATCH3_FINISH_REASON_KICKOUT" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_KICKOUT),
+            "MATCH3_FINISH_REASON_WIN" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_WIN),
+            "MATCH3_FINISH_REASON_LOSE" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_LOSE),
+            "MATCH3_FINISH_REASON_TIE" => ::std::option::Option::Some(Match3FinishReason::MATCH3_FINISH_REASON_TIE),
             _ => ::std::option::Option::None
         }
     }
@@ -74,6 +86,9 @@ impl ::protobuf::Enum for Match3FinishReason {
         Match3FinishReason::MATCH3_FINISH_REASON_DIE,
         Match3FinishReason::MATCH3_FINISH_REASON_GAMEEND,
         Match3FinishReason::MATCH3_FINISH_REASON_KICKOUT,
+        Match3FinishReason::MATCH3_FINISH_REASON_WIN,
+        Match3FinishReason::MATCH3_FINISH_REASON_LOSE,
+        Match3FinishReason::MATCH3_FINISH_REASON_TIE,
     ];
 }
 
@@ -102,11 +117,13 @@ impl Match3FinishReason {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18Match3FinishReason.proto*\xb8\x01\n\x12Match3FinishReason\x12\x20\
+    \n\x18Match3FinishReason.proto*\x93\x02\n\x12Match3FinishReason\x12\x20\
     \n\x1cMATCH3_FINISH_REASON_DEFAULT\x10\0\x12\x1e\n\x1aMATCH3_FINISH_REAS\
     ON_LEAVE\x10\x01\x12\x1c\n\x18MATCH3_FINISH_REASON_DIE\x10\x02\x12\x20\n\
     \x1cMATCH3_FINISH_REASON_GAMEEND\x10\x03\x12\x20\n\x1cMATCH3_FINISH_REAS\
-    ON_KICKOUT\x10\x04b\x06proto3\
+    ON_KICKOUT\x10\x04\x12\x1c\n\x18MATCH3_FINISH_REASON_WIN\x10\x05\x12\x1d\
+    \n\x19MATCH3_FINISH_REASON_LOSE\x10\x06\x12\x1c\n\x18MATCH3_FINISH_REASO\
+    N_TIE\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

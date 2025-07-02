@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GBABEKPBLHN {
     // message fields
+    // @@protoc_insertion_point(field:GBABEKPBLHN.POCJCMKKJIK)
+    pub POCJCMKKJIK: ::std::vec::Vec<super::HJPGNCNGILG::HJPGNCNGILG>,
+    // @@protoc_insertion_point(field:GBABEKPBLHN.arg_id)
+    pub arg_id: u32,
     // @@protoc_insertion_point(field:GBABEKPBLHN.is_valid)
     pub is_valid: bool,
     // @@protoc_insertion_point(field:GBABEKPBLHN.confirm)
     pub confirm: bool,
-    // @@protoc_insertion_point(field:GBABEKPBLHN.arg_id)
-    pub arg_id: u32,
-    // @@protoc_insertion_point(field:GBABEKPBLHN.POCJCMKKJIK)
-    pub POCJCMKKJIK: ::std::vec::Vec<super::HJPGNCNGILG::HJPGNCNGILG>,
     // @@protoc_insertion_point(field:GBABEKPBLHN.KDMLLLGHJON)
     pub KDMLLLGHJON: u32,
     // @@protoc_insertion_point(field:GBABEKPBLHN.display_value)
@@ -59,6 +59,16 @@ impl GBABEKPBLHN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "POCJCMKKJIK",
+            |m: &GBABEKPBLHN| { &m.POCJCMKKJIK },
+            |m: &mut GBABEKPBLHN| { &mut m.POCJCMKKJIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "arg_id",
+            |m: &GBABEKPBLHN| { &m.arg_id },
+            |m: &mut GBABEKPBLHN| { &mut m.arg_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_valid",
             |m: &GBABEKPBLHN| { &m.is_valid },
@@ -68,16 +78,6 @@ impl GBABEKPBLHN {
             "confirm",
             |m: &GBABEKPBLHN| { &m.confirm },
             |m: &mut GBABEKPBLHN| { &mut m.confirm },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "arg_id",
-            |m: &GBABEKPBLHN| { &m.arg_id },
-            |m: &mut GBABEKPBLHN| { &mut m.arg_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POCJCMKKJIK",
-            |m: &GBABEKPBLHN| { &m.POCJCMKKJIK },
-            |m: &mut GBABEKPBLHN| { &mut m.POCJCMKKJIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDMLLLGHJON",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for GBABEKPBLHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_valid = is.read_bool()?;
-                },
-                48 => {
-                    self.confirm = is.read_bool()?;
-                },
-                104 => {
-                    self.arg_id = is.read_uint32()?;
-                },
-                58 => {
+                98 => {
                     self.POCJCMKKJIK.push(is.read_message()?);
                 },
-                96 => {
+                32 => {
+                    self.arg_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.is_valid = is.read_bool()?;
+                },
+                112 => {
+                    self.confirm = is.read_bool()?;
+                },
+                48 => {
                     self.KDMLLLGHJON = is.read_uint32()?;
                 },
-                26 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
                 },
                 tag => {
@@ -137,21 +137,21 @@ impl ::protobuf::Message for GBABEKPBLHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.POCJCMKKJIK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.arg_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.arg_id);
+        }
         if self.is_valid != false {
             my_size += 1 + 1;
         }
         if self.confirm != false {
             my_size += 1 + 1;
         }
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.arg_id);
-        }
-        for value in &self.POCJCMKKJIK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KDMLLLGHJON);
+            my_size += ::protobuf::rt::uint32_size(6, self.KDMLLLGHJON);
         }
         if let Some(v) = self.display_value.as_ref() {
             let len = v.compute_size();
@@ -163,23 +163,23 @@ impl ::protobuf::Message for GBABEKPBLHN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.POCJCMKKJIK {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.arg_id != 0 {
+            os.write_uint32(4, self.arg_id)?;
+        }
         if self.is_valid != false {
-            os.write_bool(14, self.is_valid)?;
+            os.write_bool(7, self.is_valid)?;
         }
         if self.confirm != false {
-            os.write_bool(6, self.confirm)?;
+            os.write_bool(14, self.confirm)?;
         }
-        if self.arg_id != 0 {
-            os.write_uint32(13, self.arg_id)?;
-        }
-        for v in &self.POCJCMKKJIK {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if self.KDMLLLGHJON != 0 {
-            os.write_uint32(12, self.KDMLLLGHJON)?;
+            os.write_uint32(6, self.KDMLLLGHJON)?;
         }
         if let Some(v) = self.display_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,10 +198,10 @@ impl ::protobuf::Message for GBABEKPBLHN {
     }
 
     fn clear(&mut self) {
+        self.POCJCMKKJIK.clear();
+        self.arg_id = 0;
         self.is_valid = false;
         self.confirm = false;
-        self.arg_id = 0;
-        self.POCJCMKKJIK.clear();
         self.KDMLLLGHJON = 0;
         self.display_value.clear();
         self.special_fields.clear();
@@ -209,10 +209,10 @@ impl ::protobuf::Message for GBABEKPBLHN {
 
     fn default_instance() -> &'static GBABEKPBLHN {
         static instance: GBABEKPBLHN = GBABEKPBLHN {
+            POCJCMKKJIK: ::std::vec::Vec::new(),
+            arg_id: 0,
             is_valid: false,
             confirm: false,
-            arg_id: 0,
-            POCJCMKKJIK: ::std::vec::Vec::new(),
             KDMLLLGHJON: 0,
             display_value: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -240,11 +240,11 @@ impl ::protobuf::reflect::ProtobufValue for GBABEKPBLHN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBABEKPBLHN.proto\x1a\x11ABENFANELFL.proto\x1a\x11HJPGNCNGILG.prot\
-    o\"\xde\x01\n\x0bGBABEKPBLHN\x12\x19\n\x08is_valid\x18\x0e\x20\x01(\x08R\
-    \x07isValid\x12\x18\n\x07confirm\x18\x06\x20\x01(\x08R\x07confirm\x12\
-    \x15\n\x06arg_id\x18\r\x20\x01(\rR\x05argId\x12.\n\x0bPOCJCMKKJIK\x18\
-    \x07\x20\x03(\x0b2\x0c.HJPGNCNGILGR\x0bPOCJCMKKJIK\x12\x20\n\x0bKDMLLLGH\
-    JON\x18\x0c\x20\x01(\rR\x0bKDMLLLGHJON\x121\n\rdisplay_value\x18\x03\x20\
+    o\"\xde\x01\n\x0bGBABEKPBLHN\x12.\n\x0bPOCJCMKKJIK\x18\x0c\x20\x03(\x0b2\
+    \x0c.HJPGNCNGILGR\x0bPOCJCMKKJIK\x12\x15\n\x06arg_id\x18\x04\x20\x01(\rR\
+    \x05argId\x12\x19\n\x08is_valid\x18\x07\x20\x01(\x08R\x07isValid\x12\x18\
+    \n\x07confirm\x18\x0e\x20\x01(\x08R\x07confirm\x12\x20\n\x0bKDMLLLGHJON\
+    \x18\x06\x20\x01(\rR\x0bKDMLLLGHJON\x121\n\rdisplay_value\x18\x08\x20\
     \x01(\x0b2\x0c.ABENFANELFLR\x0cdisplayValueb\x06proto3\
 ";
 

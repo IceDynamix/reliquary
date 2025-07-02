@@ -49,6 +49,12 @@ pub enum MatchThreeStatisticsType {
     MatchThreeStatistics_Energy = 9,
     // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatistics_SwapBomb)
     MatchThreeStatistics_SwapBomb = 10,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatistics_UseItem)
+    MatchThreeStatistics_UseItem = 11,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatistics_SoloMaxStep)
+    MatchThreeStatistics_SoloMaxStep = 12,
+    // @@protoc_insertion_point(enum_value:MatchThreeStatisticsType.MatchThreeStatistics_SoloScore)
+    MatchThreeStatistics_SoloScore = 13,
 }
 
 impl ::protobuf::Enum for MatchThreeStatisticsType {
@@ -71,6 +77,9 @@ impl ::protobuf::Enum for MatchThreeStatisticsType {
             8 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_Damage),
             9 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_Energy),
             10 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SwapBomb),
+            11 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_UseItem),
+            12 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SoloMaxStep),
+            13 => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SoloScore),
             _ => ::std::option::Option::None
         }
     }
@@ -88,6 +97,9 @@ impl ::protobuf::Enum for MatchThreeStatisticsType {
             "MatchThreeStatistics_Damage" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_Damage),
             "MatchThreeStatistics_Energy" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_Energy),
             "MatchThreeStatistics_SwapBomb" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SwapBomb),
+            "MatchThreeStatistics_UseItem" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_UseItem),
+            "MatchThreeStatistics_SoloMaxStep" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SoloMaxStep),
+            "MatchThreeStatistics_SoloScore" => ::std::option::Option::Some(MatchThreeStatisticsType::MatchThreeStatistics_SoloScore),
             _ => ::std::option::Option::None
         }
     }
@@ -104,6 +116,9 @@ impl ::protobuf::Enum for MatchThreeStatisticsType {
         MatchThreeStatisticsType::MatchThreeStatistics_Damage,
         MatchThreeStatisticsType::MatchThreeStatistics_Energy,
         MatchThreeStatisticsType::MatchThreeStatistics_SwapBomb,
+        MatchThreeStatisticsType::MatchThreeStatistics_UseItem,
+        MatchThreeStatisticsType::MatchThreeStatistics_SoloMaxStep,
+        MatchThreeStatisticsType::MatchThreeStatistics_SoloScore,
     ];
 }
 
@@ -132,7 +147,7 @@ impl MatchThreeStatisticsType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMatchThreeStatisticsType.proto*\xff\x02\n\x18MatchThreeStatisticsT\
+    \n\x1eMatchThreeStatisticsType.proto*\xeb\x03\n\x18MatchThreeStatisticsT\
     ype\x12\x1d\n\x19MatchThreeStatistics_None\x10\0\x12\x1e\n\x1aMatchThree\
     Statistics_First\x10\x01\x12\x1f\n\x1bMatchThreeStatistics_Second\x10\
     \x02\x12\x1e\n\x1aMatchThreeStatistics_Third\x10\x03\x12\x1e\n\x1aMatchT\
@@ -140,7 +155,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x05\x12\x1f\n\x1bMatchThreeStatistics_Defeat\x10\x06\x12\x1d\n\x19Match\
     ThreeStatistics_Bomb\x10\x07\x12\x1f\n\x1bMatchThreeStatistics_Damage\
     \x10\x08\x12\x1f\n\x1bMatchThreeStatistics_Energy\x10\t\x12!\n\x1dMatchT\
-    hreeStatistics_SwapBomb\x10\nb\x06proto3\
+    hreeStatistics_SwapBomb\x10\n\x12\x20\n\x1cMatchThreeStatistics_UseItem\
+    \x10\x0b\x12$\n\x20MatchThreeStatistics_SoloMaxStep\x10\x0c\x12\"\n\x1eM\
+    atchThreeStatistics_SoloScore\x10\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

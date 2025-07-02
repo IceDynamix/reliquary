@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainVisitorBehavior {
     // message fields
-    // @@protoc_insertion_point(field:TrainVisitorBehavior.visitor_id)
-    pub visitor_id: u32,
     // @@protoc_insertion_point(field:TrainVisitorBehavior.is_meet)
     pub is_meet: bool,
+    // @@protoc_insertion_point(field:TrainVisitorBehavior.visitor_id)
+    pub visitor_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainVisitorBehavior.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainVisitorBehavior {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "visitor_id",
-            |m: &TrainVisitorBehavior| { &m.visitor_id },
-            |m: &mut TrainVisitorBehavior| { &mut m.visitor_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_meet",
             |m: &TrainVisitorBehavior| { &m.is_meet },
             |m: &mut TrainVisitorBehavior| { &mut m.is_meet },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "visitor_id",
+            |m: &TrainVisitorBehavior| { &m.visitor_id },
+            |m: &mut TrainVisitorBehavior| { &mut m.visitor_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainVisitorBehavior>(
             "TrainVisitorBehavior",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.visitor_id = is.read_uint32()?;
-                },
-                72 => {
+                32 => {
                     self.is_meet = is.read_bool()?;
+                },
+                104 => {
+                    self.visitor_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.visitor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.visitor_id);
-        }
         if self.is_meet != false {
             my_size += 1 + 1;
+        }
+        if self.visitor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.visitor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.visitor_id != 0 {
-            os.write_uint32(2, self.visitor_id)?;
-        }
         if self.is_meet != false {
-            os.write_bool(9, self.is_meet)?;
+            os.write_bool(4, self.is_meet)?;
+        }
+        if self.visitor_id != 0 {
+            os.write_uint32(13, self.visitor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     }
 
     fn clear(&mut self) {
-        self.visitor_id = 0;
         self.is_meet = false;
+        self.visitor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainVisitorBehavior {
         static instance: TrainVisitorBehavior = TrainVisitorBehavior {
-            visitor_id: 0,
             is_meet: false,
+            visitor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainVisitorBehavior {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aTrainVisitorBehavior.proto\"N\n\x14TrainVisitorBehavior\x12\x1d\n\
-    \nvisitor_id\x18\x02\x20\x01(\rR\tvisitorId\x12\x17\n\x07is_meet\x18\t\
-    \x20\x01(\x08R\x06isMeetb\x06proto3\
+    \n\x1aTrainVisitorBehavior.proto\"N\n\x14TrainVisitorBehavior\x12\x17\n\
+    \x07is_meet\x18\x04\x20\x01(\x08R\x06isMeet\x12\x1d\n\nvisitor_id\x18\r\
+    \x20\x01(\rR\tvisitorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

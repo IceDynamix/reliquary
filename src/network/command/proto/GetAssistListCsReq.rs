@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetAssistListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.KIBOAGMOJCP = is.read_bool()?;
                 },
                 56 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetAssistListCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KIBOAGMOJCP != false {
-            os.write_bool(13, self.KIBOAGMOJCP)?;
+            os.write_bool(10, self.KIBOAGMOJCP)?;
         }
         if self.AHOILNFIIEG != false {
             os.write_bool(7, self.AHOILNFIIEG)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAssistListCsReq.proto\"X\n\x12GetAssistListCsReq\x12\x20\n\x0bK\
-    IBOAGMOJCP\x18\r\x20\x01(\x08R\x0bKIBOAGMOJCP\x12\x20\n\x0bAHOILNFIIEG\
+    IBOAGMOJCP\x18\n\x20\x01(\x08R\x0bKIBOAGMOJCP\x12\x20\n\x0bAHOILNFIIEG\
     \x18\x07\x20\x01(\x08R\x0bAHOILNFIIEGb\x06proto3\
 ";
 

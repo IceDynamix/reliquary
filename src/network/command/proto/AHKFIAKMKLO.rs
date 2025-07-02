@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AHKFIAKMKLO {
     // message fields
-    // @@protoc_insertion_point(field:AHKFIAKMKLO.OBFPAIAMIJL)
-    pub OBFPAIAMIJL: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
     // @@protoc_insertion_point(field:AHKFIAKMKLO.ABBMHPKGAIK)
     pub ABBMHPKGAIK: bool,
+    // @@protoc_insertion_point(field:AHKFIAKMKLO.OBFPAIAMIJL)
+    pub OBFPAIAMIJL: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
     // special fields
     // @@protoc_insertion_point(special_field:AHKFIAKMKLO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AHKFIAKMKLO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
-            "OBFPAIAMIJL",
-            |m: &AHKFIAKMKLO| { &m.OBFPAIAMIJL },
-            |m: &mut AHKFIAKMKLO| { &mut m.OBFPAIAMIJL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ABBMHPKGAIK",
             |m: &AHKFIAKMKLO| { &m.ABBMHPKGAIK },
             |m: &mut AHKFIAKMKLO| { &mut m.ABBMHPKGAIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
+            "OBFPAIAMIJL",
+            |m: &AHKFIAKMKLO| { &m.OBFPAIAMIJL },
+            |m: &mut AHKFIAKMKLO| { &mut m.OBFPAIAMIJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AHKFIAKMKLO>(
             "AHKFIAKMKLO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AHKFIAKMKLO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBFPAIAMIJL)?;
-                },
-                80 => {
+                64 => {
                     self.ABBMHPKGAIK = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBFPAIAMIJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for AHKFIAKMKLO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ABBMHPKGAIK != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.OBFPAIAMIJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ABBMHPKGAIK != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AHKFIAKMKLO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OBFPAIAMIJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.ABBMHPKGAIK != false {
-            os.write_bool(10, self.ABBMHPKGAIK)?;
+            os.write_bool(8, self.ABBMHPKGAIK)?;
+        }
+        if let Some(v) = self.OBFPAIAMIJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AHKFIAKMKLO {
     }
 
     fn clear(&mut self) {
-        self.OBFPAIAMIJL.clear();
         self.ABBMHPKGAIK = false;
+        self.OBFPAIAMIJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHKFIAKMKLO {
         static instance: AHKFIAKMKLO = AHKFIAKMKLO {
-            OBFPAIAMIJL: ::protobuf::MessageField::none(),
             ABBMHPKGAIK: false,
+            OBFPAIAMIJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AHKFIAKMKLO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AHKFIAKMKLO.proto\x1a\x11INPINNPIHOB.proto\"_\n\x0bAHKFIAKMKLO\x12\
-    .\n\x0bOBFPAIAMIJL\x18\x06\x20\x01(\x0b2\x0c.INPINNPIHOBR\x0bOBFPAIAMIJL\
-    \x12\x20\n\x0bABBMHPKGAIK\x18\n\x20\x01(\x08R\x0bABBMHPKGAIKb\x06proto3\
+    \x20\n\x0bABBMHPKGAIK\x18\x08\x20\x01(\x08R\x0bABBMHPKGAIK\x12.\n\x0bOBF\
+    PAIAMIJL\x18\x0b\x20\x01(\x0b2\x0c.INPINNPIHOBR\x0bOBFPAIAMIJLb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BKAAEBJKJKH {
     // message fields
-    // @@protoc_insertion_point(field:BKAAEBJKJKH.area_id)
-    pub area_id: u32,
-    // @@protoc_insertion_point(field:BKAAEBJKJKH.GMPIIAEGGEK)
-    pub GMPIIAEGGEK: u32,
     // @@protoc_insertion_point(field:BKAAEBJKJKH.MKEGBHJLJNH)
     pub MKEGBHJLJNH: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
-    // @@protoc_insertion_point(field:BKAAEBJKJKH.NOOKGAJMFJI)
-    pub NOOKGAJMFJI: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
+    // @@protoc_insertion_point(field:BKAAEBJKJKH.area_id)
+    pub area_id: u32,
     // @@protoc_insertion_point(field:BKAAEBJKJKH.FJOILOHPHLC)
     pub FJOILOHPHLC: bool,
+    // @@protoc_insertion_point(field:BKAAEBJKJKH.GMPIIAEGGEK)
+    pub GMPIIAEGGEK: u32,
     // @@protoc_insertion_point(field:BKAAEBJKJKH.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:BKAAEBJKJKH.NOOKGAJMFJI)
+    pub NOOKGAJMFJI: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:BKAAEBJKJKH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,14 @@ impl BKAAEBJKJKH {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &BKAAEBJKJKH| { &m.area_id },
-            |m: &mut BKAAEBJKJKH| { &mut m.area_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMPIIAEGGEK",
-            |m: &BKAAEBJKJKH| { &m.GMPIIAEGGEK },
-            |m: &mut BKAAEBJKJKH| { &mut m.GMPIIAEGGEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MKEGBHJLJNH",
             |m: &BKAAEBJKJKH| { &m.MKEGBHJLJNH },
             |m: &mut BKAAEBJKJKH| { &mut m.MKEGBHJLJNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOOKGAJMFJI",
-            |m: &BKAAEBJKJKH| { &m.NOOKGAJMFJI },
-            |m: &mut BKAAEBJKJKH| { &mut m.NOOKGAJMFJI },
+            "area_id",
+            |m: &BKAAEBJKJKH| { &m.area_id },
+            |m: &mut BKAAEBJKJKH| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJOILOHPHLC",
@@ -85,9 +75,19 @@ impl BKAAEBJKJKH {
             |m: &mut BKAAEBJKJKH| { &mut m.FJOILOHPHLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMPIIAEGGEK",
+            |m: &BKAAEBJKJKH| { &m.GMPIIAEGGEK },
+            |m: &mut BKAAEBJKJKH| { &mut m.GMPIIAEGGEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &BKAAEBJKJKH| { &m.map_id },
             |m: &mut BKAAEBJKJKH| { &mut m.map_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NOOKGAJMFJI",
+            |m: &BKAAEBJKJKH| { &m.NOOKGAJMFJI },
+            |m: &mut BKAAEBJKJKH| { &mut m.NOOKGAJMFJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKAAEBJKJKH>(
             "BKAAEBJKJKH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for BKAAEBJKJKH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.GMPIIAEGGEK = is.read_uint32()?;
-                },
-                104 => {
+                80 => {
                     self.MKEGBHJLJNH = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.NOOKGAJMFJI = is.read_enum_or_unknown()?;
-                },
                 48 => {
-                    self.FJOILOHPHLC = is.read_bool()?;
+                    self.area_id = is.read_uint32()?;
                 },
                 16 => {
+                    self.FJOILOHPHLC = is.read_bool()?;
+                },
+                64 => {
+                    self.GMPIIAEGGEK = is.read_uint32()?;
+                },
+                24 => {
                     self.map_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.NOOKGAJMFJI = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for BKAAEBJKJKH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
-        }
-        if self.GMPIIAEGGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GMPIIAEGGEK);
-        }
         if self.MKEGBHJLJNH != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.MKEGBHJLJNH.value());
+            my_size += ::protobuf::rt::int32_size(10, self.MKEGBHJLJNH.value());
         }
-        if self.NOOKGAJMFJI != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(7, self.NOOKGAJMFJI.value());
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         if self.FJOILOHPHLC != false {
             my_size += 1 + 1;
         }
+        if self.GMPIIAEGGEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GMPIIAEGGEK);
+        }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.map_id);
+        }
+        if self.NOOKGAJMFJI != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(12, self.NOOKGAJMFJI.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for BKAAEBJKJKH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.area_id != 0 {
-            os.write_uint32(4, self.area_id)?;
-        }
-        if self.GMPIIAEGGEK != 0 {
-            os.write_uint32(9, self.GMPIIAEGGEK)?;
-        }
         if self.MKEGBHJLJNH != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.MKEGBHJLJNH))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MKEGBHJLJNH))?;
         }
-        if self.NOOKGAJMFJI != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.NOOKGAJMFJI))?;
+        if self.area_id != 0 {
+            os.write_uint32(6, self.area_id)?;
         }
         if self.FJOILOHPHLC != false {
-            os.write_bool(6, self.FJOILOHPHLC)?;
+            os.write_bool(2, self.FJOILOHPHLC)?;
+        }
+        if self.GMPIIAEGGEK != 0 {
+            os.write_uint32(8, self.GMPIIAEGGEK)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(2, self.map_id)?;
+            os.write_uint32(3, self.map_id)?;
+        }
+        if self.NOOKGAJMFJI != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NOOKGAJMFJI))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for BKAAEBJKJKH {
     }
 
     fn clear(&mut self) {
-        self.area_id = 0;
-        self.GMPIIAEGGEK = 0;
         self.MKEGBHJLJNH = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
-        self.NOOKGAJMFJI = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK);
+        self.area_id = 0;
         self.FJOILOHPHLC = false;
+        self.GMPIIAEGGEK = 0;
         self.map_id = 0;
+        self.NOOKGAJMFJI = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BKAAEBJKJKH {
         static instance: BKAAEBJKJKH = BKAAEBJKJKH {
-            area_id: 0,
-            GMPIIAEGGEK: 0,
             MKEGBHJLJNH: ::protobuf::EnumOrUnknown::from_i32(0),
-            NOOKGAJMFJI: ::protobuf::EnumOrUnknown::from_i32(0),
+            area_id: 0,
             FJOILOHPHLC: false,
+            GMPIIAEGGEK: 0,
             map_id: 0,
+            NOOKGAJMFJI: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for BKAAEBJKJKH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BKAAEBJKJKH.proto\x1a\x15RogueAreaStatus.proto\x1a\x11RogueStatus.\
-    proto\"\xe5\x01\n\x0bBKAAEBJKJKH\x12\x17\n\x07area_id\x18\x04\x20\x01(\r\
-    R\x06areaId\x12\x20\n\x0bGMPIIAEGGEK\x18\t\x20\x01(\rR\x0bGMPIIAEGGEK\
-    \x12.\n\x0bMKEGBHJLJNH\x18\r\x20\x01(\x0e2\x0c.RogueStatusR\x0bMKEGBHJLJ\
-    NH\x122\n\x0bNOOKGAJMFJI\x18\x07\x20\x01(\x0e2\x10.RogueAreaStatusR\x0bN\
-    OOKGAJMFJI\x12\x20\n\x0bFJOILOHPHLC\x18\x06\x20\x01(\x08R\x0bFJOILOHPHLC\
-    \x12\x15\n\x06map_id\x18\x02\x20\x01(\rR\x05mapIdb\x06proto3\
+    proto\"\xe5\x01\n\x0bBKAAEBJKJKH\x12.\n\x0bMKEGBHJLJNH\x18\n\x20\x01(\
+    \x0e2\x0c.RogueStatusR\x0bMKEGBHJLJNH\x12\x17\n\x07area_id\x18\x06\x20\
+    \x01(\rR\x06areaId\x12\x20\n\x0bFJOILOHPHLC\x18\x02\x20\x01(\x08R\x0bFJO\
+    ILOHPHLC\x12\x20\n\x0bGMPIIAEGGEK\x18\x08\x20\x01(\rR\x0bGMPIIAEGGEK\x12\
+    \x15\n\x06map_id\x18\x03\x20\x01(\rR\x05mapId\x122\n\x0bNOOKGAJMFJI\x18\
+    \x0c\x20\x01(\x0e2\x10.RogueAreaStatusR\x0bNOOKGAJMFJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

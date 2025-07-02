@@ -72,10 +72,10 @@ impl ::protobuf::Message for GetFarmStageGachaInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.farm_stage_gacha_id_list)?;
                 },
-                72 => {
+                56 => {
                     self.farm_stage_gacha_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetFarmStageGachaInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.farm_stage_gacha_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.farm_stage_gacha_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.farm_stage_gacha_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.farm_stage_gacha_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFarmStageGachaInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetFarmStageGachaInfoCsReq.proto\"T\n\x1aGetFarmStageGachaInfoCsRe\
-    q\x126\n\x18farm_stage_gacha_id_list\x18\t\x20\x03(\rR\x14farmStageGacha\
-    IdListb\x06proto3\
+    q\x126\n\x18farm_stage_gacha_id_list\x18\x07\x20\x03(\rR\x14farmStageGac\
+    haIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

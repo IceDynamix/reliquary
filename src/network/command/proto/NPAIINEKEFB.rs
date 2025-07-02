@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NPAIINEKEFB {
     // message fields
+    // @@protoc_insertion_point(field:NPAIINEKEFB.avatar_id)
+    pub avatar_id: u32,
     // @@protoc_insertion_point(field:NPAIINEKEFB.DMAIMCPPJGH)
     pub DMAIMCPPJGH: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // @@protoc_insertion_point(field:NPAIINEKEFB.PEFDLAJLCJB)
     pub PEFDLAJLCJB: u32,
-    // @@protoc_insertion_point(field:NPAIINEKEFB.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:NPAIINEKEFB.JLCEEFBLJDC)
     pub JLCEEFBLJDC: u32,
     // special fields
@@ -55,6 +55,11 @@ impl NPAIINEKEFB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &NPAIINEKEFB| { &m.avatar_id },
+            |m: &mut NPAIINEKEFB| { &mut m.avatar_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
             "DMAIMCPPJGH",
             |m: &NPAIINEKEFB| { &m.DMAIMCPPJGH },
@@ -64,11 +69,6 @@ impl NPAIINEKEFB {
             "PEFDLAJLCJB",
             |m: &NPAIINEKEFB| { &m.PEFDLAJLCJB },
             |m: &mut NPAIINEKEFB| { &mut m.PEFDLAJLCJB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &NPAIINEKEFB| { &m.avatar_id },
-            |m: &mut NPAIINEKEFB| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JLCEEFBLJDC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for NPAIINEKEFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMAIMCPPJGH)?;
-                },
-                16 => {
-                    self.PEFDLAJLCJB = is.read_uint32()?;
-                },
-                32 => {
+                40 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                48 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMAIMCPPJGH)?;
+                },
+                96 => {
+                    self.PEFDLAJLCJB = is.read_uint32()?;
+                },
+                120 => {
                     self.JLCEEFBLJDC = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for NPAIINEKEFB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
+        }
         if let Some(v) = self.DMAIMCPPJGH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.PEFDLAJLCJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PEFDLAJLCJB);
-        }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.PEFDLAJLCJB);
         }
         if self.JLCEEFBLJDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JLCEEFBLJDC);
+            my_size += ::protobuf::rt::uint32_size(15, self.JLCEEFBLJDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for NPAIINEKEFB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.avatar_id != 0 {
+            os.write_uint32(5, self.avatar_id)?;
+        }
         if let Some(v) = self.DMAIMCPPJGH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.PEFDLAJLCJB != 0 {
-            os.write_uint32(2, self.PEFDLAJLCJB)?;
-        }
-        if self.avatar_id != 0 {
-            os.write_uint32(4, self.avatar_id)?;
+            os.write_uint32(12, self.PEFDLAJLCJB)?;
         }
         if self.JLCEEFBLJDC != 0 {
-            os.write_uint32(6, self.JLCEEFBLJDC)?;
+            os.write_uint32(15, self.JLCEEFBLJDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for NPAIINEKEFB {
     }
 
     fn clear(&mut self) {
+        self.avatar_id = 0;
         self.DMAIMCPPJGH.clear();
         self.PEFDLAJLCJB = 0;
-        self.avatar_id = 0;
         self.JLCEEFBLJDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NPAIINEKEFB {
         static instance: NPAIINEKEFB = NPAIINEKEFB {
+            avatar_id: 0,
             DMAIMCPPJGH: ::protobuf::MessageField::none(),
             PEFDLAJLCJB: 0,
-            avatar_id: 0,
             JLCEEFBLJDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for NPAIINEKEFB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPAIINEKEFB.proto\x1a\x11IIKNGNHDMFI.proto\"\x9e\x01\n\x0bNPAIINEK\
-    EFB\x12.\n\x0bDMAIMCPPJGH\x18\x07\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bDMAI\
-    MCPPJGH\x12\x20\n\x0bPEFDLAJLCJB\x18\x02\x20\x01(\rR\x0bPEFDLAJLCJB\x12\
-    \x1b\n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\x12\x20\n\x0bJLCEEFBLJ\
-    DC\x18\x06\x20\x01(\rR\x0bJLCEEFBLJDCb\x06proto3\
+    EFB\x12\x1b\n\tavatar_id\x18\x05\x20\x01(\rR\x08avatarId\x12.\n\x0bDMAIM\
+    CPPJGH\x18\x06\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bDMAIMCPPJGH\x12\x20\n\
+    \x0bPEFDLAJLCJB\x18\x0c\x20\x01(\rR\x0bPEFDLAJLCJB\x12\x20\n\x0bJLCEEFBL\
+    JDC\x18\x0f\x20\x01(\rR\x0bJLCEEFBLJDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

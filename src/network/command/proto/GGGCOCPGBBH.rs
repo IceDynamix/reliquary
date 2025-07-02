@@ -30,14 +30,14 @@ pub struct GGGCOCPGBBH {
     // message fields
     // @@protoc_insertion_point(field:GGGCOCPGBBH.LEAAEBAFCHP)
     pub LEAAEBAFCHP: u32,
-    // @@protoc_insertion_point(field:GGGCOCPGBBH.ECGHNFCCBJJ)
-    pub ECGHNFCCBJJ: u32,
     // @@protoc_insertion_point(field:GGGCOCPGBBH.HFNHLCFNHKD)
     pub HFNHLCFNHKD: u32,
     // @@protoc_insertion_point(field:GGGCOCPGBBH.buff_id)
     pub buff_id: u32,
     // @@protoc_insertion_point(field:GGGCOCPGBBH.EGKDINMMENA)
     pub EGKDINMMENA: u32,
+    // @@protoc_insertion_point(field:GGGCOCPGBBH.ECGHNFCCBJJ)
+    pub ECGHNFCCBJJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GGGCOCPGBBH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,11 +63,6 @@ impl GGGCOCPGBBH {
             |m: &mut GGGCOCPGBBH| { &mut m.LEAAEBAFCHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECGHNFCCBJJ",
-            |m: &GGGCOCPGBBH| { &m.ECGHNFCCBJJ },
-            |m: &mut GGGCOCPGBBH| { &mut m.ECGHNFCCBJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HFNHLCFNHKD",
             |m: &GGGCOCPGBBH| { &m.HFNHLCFNHKD },
             |m: &mut GGGCOCPGBBH| { &mut m.HFNHLCFNHKD },
@@ -81,6 +76,11 @@ impl GGGCOCPGBBH {
             "EGKDINMMENA",
             |m: &GGGCOCPGBBH| { &m.EGKDINMMENA },
             |m: &mut GGGCOCPGBBH| { &mut m.EGKDINMMENA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ECGHNFCCBJJ",
+            |m: &GGGCOCPGBBH| { &m.ECGHNFCCBJJ },
+            |m: &mut GGGCOCPGBBH| { &mut m.ECGHNFCCBJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GGGCOCPGBBH>(
             "GGGCOCPGBBH",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GGGCOCPGBBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                56 => {
                     self.LEAAEBAFCHP = is.read_uint32()?;
                 },
-                96 => {
-                    self.ECGHNFCCBJJ = is.read_uint32()?;
-                },
-                48 => {
+                64 => {
                     self.HFNHLCFNHKD = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.EGKDINMMENA = is.read_uint32()?;
+                },
+                24 => {
+                    self.ECGHNFCCBJJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for GGGCOCPGBBH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LEAAEBAFCHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LEAAEBAFCHP);
-        }
-        if self.ECGHNFCCBJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ECGHNFCCBJJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.LEAAEBAFCHP);
         }
         if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HFNHLCFNHKD);
+            my_size += ::protobuf::rt::uint32_size(8, self.HFNHLCFNHKD);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.buff_id);
         }
         if self.EGKDINMMENA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EGKDINMMENA);
+            my_size += ::protobuf::rt::uint32_size(10, self.EGKDINMMENA);
+        }
+        if self.ECGHNFCCBJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ECGHNFCCBJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for GGGCOCPGBBH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LEAAEBAFCHP != 0 {
-            os.write_uint32(11, self.LEAAEBAFCHP)?;
-        }
-        if self.ECGHNFCCBJJ != 0 {
-            os.write_uint32(12, self.ECGHNFCCBJJ)?;
+            os.write_uint32(7, self.LEAAEBAFCHP)?;
         }
         if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(6, self.HFNHLCFNHKD)?;
+            os.write_uint32(8, self.HFNHLCFNHKD)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(3, self.buff_id)?;
+            os.write_uint32(5, self.buff_id)?;
         }
         if self.EGKDINMMENA != 0 {
-            os.write_uint32(1, self.EGKDINMMENA)?;
+            os.write_uint32(10, self.EGKDINMMENA)?;
+        }
+        if self.ECGHNFCCBJJ != 0 {
+            os.write_uint32(3, self.ECGHNFCCBJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for GGGCOCPGBBH {
 
     fn clear(&mut self) {
         self.LEAAEBAFCHP = 0;
-        self.ECGHNFCCBJJ = 0;
         self.HFNHLCFNHKD = 0;
         self.buff_id = 0;
         self.EGKDINMMENA = 0;
+        self.ECGHNFCCBJJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGGCOCPGBBH {
         static instance: GGGCOCPGBBH = GGGCOCPGBBH {
             LEAAEBAFCHP: 0,
-            ECGHNFCCBJJ: 0,
             HFNHLCFNHKD: 0,
             buff_id: 0,
             EGKDINMMENA: 0,
+            ECGHNFCCBJJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for GGGCOCPGBBH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGGCOCPGBBH.proto\"\xae\x01\n\x0bGGGCOCPGBBH\x12\x20\n\x0bLEAAEBAF\
-    CHP\x18\x0b\x20\x01(\rR\x0bLEAAEBAFCHP\x12\x20\n\x0bECGHNFCCBJJ\x18\x0c\
-    \x20\x01(\rR\x0bECGHNFCCBJJ\x12\x20\n\x0bHFNHLCFNHKD\x18\x06\x20\x01(\rR\
-    \x0bHFNHLCFNHKD\x12\x17\n\x07buff_id\x18\x03\x20\x01(\rR\x06buffId\x12\
-    \x20\n\x0bEGKDINMMENA\x18\x01\x20\x01(\rR\x0bEGKDINMMENAb\x06proto3\
+    CHP\x18\x07\x20\x01(\rR\x0bLEAAEBAFCHP\x12\x20\n\x0bHFNHLCFNHKD\x18\x08\
+    \x20\x01(\rR\x0bHFNHLCFNHKD\x12\x17\n\x07buff_id\x18\x05\x20\x01(\rR\x06\
+    buffId\x12\x20\n\x0bEGKDINMMENA\x18\n\x20\x01(\rR\x0bEGKDINMMENA\x12\x20\
+    \n\x0bECGHNFCCBJJ\x18\x03\x20\x01(\rR\x0bECGHNFCCBJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

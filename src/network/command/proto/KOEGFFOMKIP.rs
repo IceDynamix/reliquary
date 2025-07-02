@@ -30,10 +30,10 @@ pub struct KOEGFFOMKIP {
     // message fields
     // @@protoc_insertion_point(field:KOEGFFOMKIP.slot)
     pub slot: u32,
-    // @@protoc_insertion_point(field:KOEGFFOMKIP.ELPINNNALBD)
-    pub ELPINNNALBD: u32,
     // @@protoc_insertion_point(field:KOEGFFOMKIP.type)
     pub type_: u32,
+    // @@protoc_insertion_point(field:KOEGFFOMKIP.ELPINNNALBD)
+    pub ELPINNNALBD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KOEGFFOMKIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl KOEGFFOMKIP {
             |m: &mut KOEGFFOMKIP| { &mut m.slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELPINNNALBD",
-            |m: &KOEGFFOMKIP| { &m.ELPINNNALBD },
-            |m: &mut KOEGFFOMKIP| { &mut m.ELPINNNALBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &KOEGFFOMKIP| { &m.type_ },
             |m: &mut KOEGFFOMKIP| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELPINNNALBD",
+            |m: &KOEGFFOMKIP| { &m.ELPINNNALBD },
+            |m: &mut KOEGFFOMKIP| { &mut m.ELPINNNALBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOEGFFOMKIP>(
             "KOEGFFOMKIP",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for KOEGFFOMKIP {
                 48 => {
                     self.slot = is.read_uint32()?;
                 },
-                120 => {
-                    self.ELPINNNALBD = is.read_uint32()?;
-                },
-                112 => {
+                40 => {
                     self.type_ = is.read_uint32()?;
+                },
+                32 => {
+                    self.ELPINNNALBD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for KOEGFFOMKIP {
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.slot);
         }
-        if self.ELPINNNALBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ELPINNNALBD);
-        }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.type_);
+            my_size += ::protobuf::rt::uint32_size(5, self.type_);
+        }
+        if self.ELPINNNALBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ELPINNNALBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for KOEGFFOMKIP {
         if self.slot != 0 {
             os.write_uint32(6, self.slot)?;
         }
-        if self.ELPINNNALBD != 0 {
-            os.write_uint32(15, self.ELPINNNALBD)?;
-        }
         if self.type_ != 0 {
-            os.write_uint32(14, self.type_)?;
+            os.write_uint32(5, self.type_)?;
+        }
+        if self.ELPINNNALBD != 0 {
+            os.write_uint32(4, self.ELPINNNALBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for KOEGFFOMKIP {
 
     fn clear(&mut self) {
         self.slot = 0;
-        self.ELPINNNALBD = 0;
         self.type_ = 0;
+        self.ELPINNNALBD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOEGFFOMKIP {
         static instance: KOEGFFOMKIP = KOEGFFOMKIP {
             slot: 0,
-            ELPINNNALBD: 0,
             type_: 0,
+            ELPINNNALBD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for KOEGFFOMKIP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KOEGFFOMKIP.proto\"W\n\x0bKOEGFFOMKIP\x12\x12\n\x04slot\x18\x06\
-    \x20\x01(\rR\x04slot\x12\x20\n\x0bELPINNNALBD\x18\x0f\x20\x01(\rR\x0bELP\
-    INNNALBD\x12\x12\n\x04type\x18\x0e\x20\x01(\rR\x04typeb\x06proto3\
+    \x20\x01(\rR\x04slot\x12\x12\n\x04type\x18\x05\x20\x01(\rR\x04type\x12\
+    \x20\n\x0bELPINNNALBD\x18\x04\x20\x01(\rR\x0bELPINNNALBDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

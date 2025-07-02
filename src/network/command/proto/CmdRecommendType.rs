@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRecommendType {
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CMD_RECOMMEND_TYPE_NONE)
     CMD_RECOMMEND_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendScRsp)
-    CmdGetBigDataAllRecommendScRsp = 2409,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListScRsp)
-    CmdGetChallengeRecommendLineupListScRsp = 2417,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendScRsp)
-    CmdGetBigDataRecommendScRsp = 2415,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendCsReq)
-    CmdGetBigDataAllRecommendCsReq = 2443,
+    CmdGetBigDataRecommendScRsp = 2439,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendCsReq)
-    CmdGetBigDataRecommendCsReq = 2427,
+    CmdGetBigDataRecommendCsReq = 2417,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendScRsp)
+    CmdGetBigDataAllRecommendScRsp = 2410,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendCsReq)
+    CmdGetBigDataAllRecommendCsReq = 2412,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListCsReq)
-    CmdGetChallengeRecommendLineupListCsReq = 2436,
+    CmdGetChallengeRecommendLineupListCsReq = 2411,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetChallengeRecommendLineupListScRsp)
+    CmdGetChallengeRecommendLineupListScRsp = 2437,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
             0 => ::std::option::Option::Some(CmdRecommendType::CMD_RECOMMEND_TYPE_NONE),
-            2409 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
-            2417 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
-            2415 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
-            2443 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
-            2427 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
-            2436 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
+            2439 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
+            2417 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
+            2410 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
+            2412 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
+            2411 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
+            2437 => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRecommendType> {
         match str {
             "CMD_RECOMMEND_TYPE_NONE" => ::std::option::Option::Some(CmdRecommendType::CMD_RECOMMEND_TYPE_NONE),
-            "CmdGetBigDataAllRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
-            "CmdGetChallengeRecommendLineupListScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
             "CmdGetBigDataRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
-            "CmdGetBigDataAllRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
             "CmdGetBigDataRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
+            "CmdGetBigDataAllRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
+            "CmdGetBigDataAllRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
             "CmdGetChallengeRecommendLineupListCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq),
+            "CmdGetChallengeRecommendLineupListScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRecommendType] = &[
         CmdRecommendType::CMD_RECOMMEND_TYPE_NONE,
-        CmdRecommendType::CmdGetBigDataAllRecommendScRsp,
-        CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp,
         CmdRecommendType::CmdGetBigDataRecommendScRsp,
-        CmdRecommendType::CmdGetBigDataAllRecommendCsReq,
         CmdRecommendType::CmdGetBigDataRecommendCsReq,
+        CmdRecommendType::CmdGetBigDataAllRecommendScRsp,
+        CmdRecommendType::CmdGetBigDataAllRecommendCsReq,
         CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq,
+        CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdRecommendType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRecommendType::CMD_RECOMMEND_TYPE_NONE => 0,
-            CmdRecommendType::CmdGetBigDataAllRecommendScRsp => 1,
-            CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp => 2,
-            CmdRecommendType::CmdGetBigDataRecommendScRsp => 3,
+            CmdRecommendType::CmdGetBigDataRecommendScRsp => 1,
+            CmdRecommendType::CmdGetBigDataRecommendCsReq => 2,
+            CmdRecommendType::CmdGetBigDataAllRecommendScRsp => 3,
             CmdRecommendType::CmdGetBigDataAllRecommendCsReq => 4,
-            CmdRecommendType::CmdGetBigDataRecommendCsReq => 5,
-            CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq => 6,
+            CmdRecommendType::CmdGetChallengeRecommendLineupListCsReq => 5,
+            CmdRecommendType::CmdGetChallengeRecommendLineupListScRsp => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,12 +121,12 @@ impl CmdRecommendType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRecommendType.proto*\x99\x02\n\x10CmdRecommendType\x12\x1b\n\
-    \x17CMD_RECOMMEND_TYPE_NONE\x10\0\x12#\n\x1eCmdGetBigDataAllRecommendScR\
-    sp\x10\xe9\x12\x12,\n'CmdGetChallengeRecommendLineupListScRsp\x10\xf1\
-    \x12\x12\x20\n\x1bCmdGetBigDataRecommendScRsp\x10\xef\x12\x12#\n\x1eCmdG\
-    etBigDataAllRecommendCsReq\x10\x8b\x13\x12\x20\n\x1bCmdGetBigDataRecomme\
-    ndCsReq\x10\xfb\x12\x12,\n'CmdGetChallengeRecommendLineupListCsReq\x10\
-    \x84\x13b\x06proto3\
+    \x17CMD_RECOMMEND_TYPE_NONE\x10\0\x12\x20\n\x1bCmdGetBigDataRecommendScR\
+    sp\x10\x87\x13\x12\x20\n\x1bCmdGetBigDataRecommendCsReq\x10\xf1\x12\x12#\
+    \n\x1eCmdGetBigDataAllRecommendScRsp\x10\xea\x12\x12#\n\x1eCmdGetBigData\
+    AllRecommendCsReq\x10\xec\x12\x12,\n'CmdGetChallengeRecommendLineupListC\
+    sReq\x10\xeb\x12\x12,\n'CmdGetChallengeRecommendLineupListScRsp\x10\x85\
+    \x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

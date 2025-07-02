@@ -72,7 +72,7 @@ impl ::protobuf::Message for BFIFANAOCPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_settle_data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BFIFANAOCPC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.train_party_settle_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for BFIFANAOCPC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFIFANAOCPC.proto\x1a\x1aTrainPartySettleData.proto\"[\n\x0bBFIFAN\
-    AOCPC\x12L\n\x17train_party_settle_data\x18\x05\x20\x01(\x0b2\x15.TrainP\
+    AOCPC\x12L\n\x17train_party_settle_data\x18\x06\x20\x01(\x0b2\x15.TrainP\
     artySettleDataR\x14trainPartySettleDatab\x06proto3\
 ";
 

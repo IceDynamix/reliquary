@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChapterRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.KIEKJEFFPHK)
-    pub KIEKJEFFPHK: u32,
     // @@protoc_insertion_point(field:TakeChapterRewardScRsp.AKDGHHNKLEJ)
     pub AKDGHHNKLEJ: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.KIEKJEFFPHK)
+    pub KIEKJEFFPHK: u32,
+    // @@protoc_insertion_point(field:TakeChapterRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChapterRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl TakeChapterRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeChapterRewardScRsp| { &m.retcode },
-            |m: &mut TakeChapterRewardScRsp| { &mut m.retcode },
+            "AKDGHHNKLEJ",
+            |m: &TakeChapterRewardScRsp| { &m.AKDGHHNKLEJ },
+            |m: &mut TakeChapterRewardScRsp| { &mut m.AKDGHHNKLEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KIEKJEFFPHK",
@@ -64,9 +64,9 @@ impl TakeChapterRewardScRsp {
             |m: &mut TakeChapterRewardScRsp| { &mut m.KIEKJEFFPHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKDGHHNKLEJ",
-            |m: &TakeChapterRewardScRsp| { &m.AKDGHHNKLEJ },
-            |m: &mut TakeChapterRewardScRsp| { &mut m.AKDGHHNKLEJ },
+            "retcode",
+            |m: &TakeChapterRewardScRsp| { &m.retcode },
+            |m: &mut TakeChapterRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChapterRewardScRsp>(
             "TakeChapterRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                32 => {
-                    self.KIEKJEFFPHK = is.read_uint32()?;
+                40 => {
+                    self.AKDGHHNKLEJ = is.read_uint32()?;
                 },
                 24 => {
-                    self.AKDGHHNKLEJ = is.read_uint32()?;
+                    self.KIEKJEFFPHK = is.read_uint32()?;
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if self.AKDGHHNKLEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AKDGHHNKLEJ);
         }
         if self.KIEKJEFFPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KIEKJEFFPHK);
+            my_size += ::protobuf::rt::uint32_size(3, self.KIEKJEFFPHK);
         }
-        if self.AKDGHHNKLEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AKDGHHNKLEJ);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if self.AKDGHHNKLEJ != 0 {
+            os.write_uint32(5, self.AKDGHHNKLEJ)?;
         }
         if self.KIEKJEFFPHK != 0 {
-            os.write_uint32(4, self.KIEKJEFFPHK)?;
+            os.write_uint32(3, self.KIEKJEFFPHK)?;
         }
-        if self.AKDGHHNKLEJ != 0 {
-            os.write_uint32(3, self.AKDGHHNKLEJ)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TakeChapterRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.KIEKJEFFPHK = 0;
         self.AKDGHHNKLEJ = 0;
+        self.KIEKJEFFPHK = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChapterRewardScRsp {
         static instance: TakeChapterRewardScRsp = TakeChapterRewardScRsp {
-            retcode: 0,
-            KIEKJEFFPHK: 0,
             AKDGHHNKLEJ: 0,
+            KIEKJEFFPHK: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeChapterRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTakeChapterRewardScRsp.proto\"v\n\x16TakeChapterRewardScRsp\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bKIEKJEFFPH\
-    K\x18\x04\x20\x01(\rR\x0bKIEKJEFFPHK\x12\x20\n\x0bAKDGHHNKLEJ\x18\x03\
-    \x20\x01(\rR\x0bAKDGHHNKLEJb\x06proto3\
+    \x20\n\x0bAKDGHHNKLEJ\x18\x05\x20\x01(\rR\x0bAKDGHHNKLEJ\x12\x20\n\x0bKI\
+    EKJEFFPHK\x18\x03\x20\x01(\rR\x0bKIEKJEFFPHK\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for ReBattleAfterBattleLoseCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                112 => {
                     self.PMJAHILBLFL = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ReBattleAfterBattleLoseCsNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PMJAHILBLFL != false {
-            os.write_bool(4, self.PMJAHILBLFL)?;
+            os.write_bool(14, self.PMJAHILBLFL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ReBattleAfterBattleLoseCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ReBattleAfterBattleLoseCsNotify.proto\"C\n\x1fReBattleAfterBattleLose\
-    CsNotify\x12\x20\n\x0bPMJAHILBLFL\x18\x04\x20\x01(\x08R\x0bPMJAHILBLFLb\
+    CsNotify\x12\x20\n\x0bPMJAHILBLFL\x18\x0e\x20\x01(\x08R\x0bPMJAHILBLFLb\
     \x06proto3\
 ";
 

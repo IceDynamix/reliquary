@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueDoGambleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueDoGambleScRsp.gamble_info)
-    pub gamble_info: ::protobuf::MessageField<super::RogueGambleInfo::RogueGambleInfo>,
-    // @@protoc_insertion_point(field:RogueDoGambleScRsp.CFBGLFOJODA)
-    pub CFBGLFOJODA: u32,
     // @@protoc_insertion_point(field:RogueDoGambleScRsp.JPKLMPPOGDH)
     pub JPKLMPPOGDH: u32,
+    // @@protoc_insertion_point(field:RogueDoGambleScRsp.CFBGLFOJODA)
+    pub CFBGLFOJODA: u32,
     // @@protoc_insertion_point(field:RogueDoGambleScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueDoGambleScRsp.gamble_info)
+    pub gamble_info: ::protobuf::MessageField<super::RogueGambleInfo::RogueGambleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueDoGambleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl RogueDoGambleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGambleInfo::RogueGambleInfo>(
-            "gamble_info",
-            |m: &RogueDoGambleScRsp| { &m.gamble_info },
-            |m: &mut RogueDoGambleScRsp| { &mut m.gamble_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPKLMPPOGDH",
+            |m: &RogueDoGambleScRsp| { &m.JPKLMPPOGDH },
+            |m: &mut RogueDoGambleScRsp| { &mut m.JPKLMPPOGDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFBGLFOJODA",
@@ -66,14 +66,14 @@ impl RogueDoGambleScRsp {
             |m: &mut RogueDoGambleScRsp| { &mut m.CFBGLFOJODA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPKLMPPOGDH",
-            |m: &RogueDoGambleScRsp| { &m.JPKLMPPOGDH },
-            |m: &mut RogueDoGambleScRsp| { &mut m.JPKLMPPOGDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueDoGambleScRsp| { &m.retcode },
             |m: &mut RogueDoGambleScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGambleInfo::RogueGambleInfo>(
+            "gamble_info",
+            |m: &RogueDoGambleScRsp| { &m.gamble_info },
+            |m: &mut RogueDoGambleScRsp| { &mut m.gamble_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueDoGambleScRsp>(
             "RogueDoGambleScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gamble_info)?;
-                },
-                96 => {
-                    self.CFBGLFOJODA = is.read_uint32()?;
-                },
-                8 => {
+                16 => {
                     self.JPKLMPPOGDH = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
+                    self.CFBGLFOJODA = is.read_uint32()?;
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gamble_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JPKLMPPOGDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JPKLMPPOGDH);
+        }
+        if self.CFBGLFOJODA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CFBGLFOJODA);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if let Some(v) = self.gamble_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.CFBGLFOJODA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CFBGLFOJODA);
-        }
-        if self.JPKLMPPOGDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JPKLMPPOGDH);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.gamble_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.JPKLMPPOGDH != 0 {
+            os.write_uint32(2, self.JPKLMPPOGDH)?;
         }
         if self.CFBGLFOJODA != 0 {
-            os.write_uint32(12, self.CFBGLFOJODA)?;
-        }
-        if self.JPKLMPPOGDH != 0 {
-            os.write_uint32(1, self.JPKLMPPOGDH)?;
+            os.write_uint32(8, self.CFBGLFOJODA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.gamble_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for RogueDoGambleScRsp {
     }
 
     fn clear(&mut self) {
-        self.gamble_info.clear();
-        self.CFBGLFOJODA = 0;
         self.JPKLMPPOGDH = 0;
+        self.CFBGLFOJODA = 0;
         self.retcode = 0;
+        self.gamble_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueDoGambleScRsp {
         static instance: RogueDoGambleScRsp = RogueDoGambleScRsp {
-            gamble_info: ::protobuf::MessageField::none(),
-            CFBGLFOJODA: 0,
             JPKLMPPOGDH: 0,
+            CFBGLFOJODA: 0,
             retcode: 0,
+            gamble_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueDoGambleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueDoGambleScRsp.proto\x1a\x15RogueGambleInfo.proto\"\xa5\x01\n\
-    \x12RogueDoGambleScRsp\x121\n\x0bgamble_info\x18\x07\x20\x01(\x0b2\x10.R\
-    ogueGambleInfoR\ngambleInfo\x12\x20\n\x0bCFBGLFOJODA\x18\x0c\x20\x01(\rR\
-    \x0bCFBGLFOJODA\x12\x20\n\x0bJPKLMPPOGDH\x18\x01\x20\x01(\rR\x0bJPKLMPPO\
-    GDH\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12RogueDoGambleScRsp\x12\x20\n\x0bJPKLMPPOGDH\x18\x02\x20\x01(\rR\x0bJ\
+    PKLMPPOGDH\x12\x20\n\x0bCFBGLFOJODA\x18\x08\x20\x01(\rR\x0bCFBGLFOJODA\
+    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x121\n\x0bgamble_in\
+    fo\x18\x0f\x20\x01(\x0b2\x10.RogueGambleInfoR\ngambleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

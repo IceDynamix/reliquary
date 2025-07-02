@@ -79,7 +79,7 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.mp = is.read_uint32()?;
                 },
                 80 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.mp);
+            my_size += ::protobuf::rt::uint32_size(11, self.mp);
         }
         if self.cast_entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.cast_entity_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.mp != 0 {
-            os.write_uint32(5, self.mp)?;
+            os.write_uint32(11, self.mp)?;
         }
         if self.cast_entity_id != 0 {
             os.write_uint32(10, self.cast_entity_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillMpUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SceneCastSkillMpUpdateScNotify.proto\"V\n\x1eSceneCastSkillMpUpdateSc\
-    Notify\x12\x0e\n\x02mp\x18\x05\x20\x01(\rR\x02mp\x12$\n\x0ecast_entity_i\
+    Notify\x12\x0e\n\x02mp\x18\x0b\x20\x01(\rR\x02mp\x12$\n\x0ecast_entity_i\
     d\x18\n\x20\x01(\rR\x0ccastEntityIdb\x06proto3\
 ";
 
