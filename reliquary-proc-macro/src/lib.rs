@@ -61,6 +61,10 @@ pub fn derive(input: TokenStream) -> TokenStream {
         pub struct #map_name(pub Vec<#struct_name>);
 
         impl #map_name {
+            pub fn new_empty() -> Self {
+                Self(Vec::new())
+            }
+
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {
                 let entry = self.0.iter().find(|config| #(#matching)&&*);
                 if entry.is_none() {
