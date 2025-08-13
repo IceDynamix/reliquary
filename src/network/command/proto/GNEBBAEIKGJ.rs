@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GNEBBAEIKGJ {
     // message fields
-    // @@protoc_insertion_point(field:GNEBBAEIKGJ.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
     // @@protoc_insertion_point(field:GNEBBAEIKGJ.AKLOEIGKGAN)
     pub AKLOEIGKGAN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GNEBBAEIKGJ.level_id)
+    pub level_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GNEBBAEIKGJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GNEBBAEIKGJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &GNEBBAEIKGJ| { &m.ACJCPHIFMLN },
-            |m: &mut GNEBBAEIKGJ| { &mut m.ACJCPHIFMLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AKLOEIGKGAN",
             |m: &GNEBBAEIKGJ| { &m.AKLOEIGKGAN },
             |m: &mut GNEBBAEIKGJ| { &mut m.AKLOEIGKGAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_id",
+            |m: &GNEBBAEIKGJ| { &m.level_id },
+            |m: &mut GNEBBAEIKGJ| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GNEBBAEIKGJ>(
             "GNEBBAEIKGJ",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GNEBBAEIKGJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
-                },
-                18 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.AKLOEIGKGAN)?;
                 },
-                16 => {
+                32 => {
                     self.AKLOEIGKGAN.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.level_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GNEBBAEIKGJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ACJCPHIFMLN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.AKLOEIGKGAN);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.level_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.AKLOEIGKGAN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(7, self.ACJCPHIFMLN)?;
+        os.write_repeated_packed_uint32(4, &self.AKLOEIGKGAN)?;
+        if self.level_id != 0 {
+            os.write_uint32(12, self.level_id)?;
         }
-        os.write_repeated_packed_uint32(2, &self.AKLOEIGKGAN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GNEBBAEIKGJ {
     }
 
     fn clear(&mut self) {
-        self.ACJCPHIFMLN = 0;
         self.AKLOEIGKGAN.clear();
+        self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GNEBBAEIKGJ {
         static instance: GNEBBAEIKGJ = GNEBBAEIKGJ {
-            ACJCPHIFMLN: 0,
             AKLOEIGKGAN: ::std::vec::Vec::new(),
+            level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GNEBBAEIKGJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GNEBBAEIKGJ.proto\"Q\n\x0bGNEBBAEIKGJ\x12\x20\n\x0bACJCPHIFMLN\x18\
-    \x07\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bAKLOEIGKGAN\x18\x02\x20\x03\
-    (\rR\x0bAKLOEIGKGANb\x06proto3\
+    \n\x11GNEBBAEIKGJ.proto\"J\n\x0bGNEBBAEIKGJ\x12\x20\n\x0bAKLOEIGKGAN\x18\
+    \x04\x20\x03(\rR\x0bAKLOEIGKGAN\x12\x19\n\x08level_id\x18\x0c\x20\x01(\r\
+    R\x07levelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

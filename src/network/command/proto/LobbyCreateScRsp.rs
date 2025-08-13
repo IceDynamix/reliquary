@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyCreateScRsp {
     // message fields
+    // @@protoc_insertion_point(field:LobbyCreateScRsp.LIPJDJPMOKB)
+    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
     // @@protoc_insertion_point(field:LobbyCreateScRsp.NEPODDOJJFE)
     pub NEPODDOJJFE: u32,
     // @@protoc_insertion_point(field:LobbyCreateScRsp.NBDLPGBIDLC)
     pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:LobbyCreateScRsp.LIPJDJPMOKB)
-    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
     // @@protoc_insertion_point(field:LobbyCreateScRsp.room_id)
     pub room_id: u64,
     // @@protoc_insertion_point(field:LobbyCreateScRsp.retcode)
@@ -57,6 +57,11 @@ impl LobbyCreateScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LIPJDJPMOKB",
+            |m: &LobbyCreateScRsp| { &m.LIPJDJPMOKB },
+            |m: &mut LobbyCreateScRsp| { &mut m.LIPJDJPMOKB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEPODDOJJFE",
             |m: &LobbyCreateScRsp| { &m.NEPODDOJJFE },
@@ -66,11 +71,6 @@ impl LobbyCreateScRsp {
             "NBDLPGBIDLC",
             |m: &LobbyCreateScRsp| { &m.NBDLPGBIDLC },
             |m: &mut LobbyCreateScRsp| { &mut m.NBDLPGBIDLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LIPJDJPMOKB",
-            |m: &LobbyCreateScRsp| { &m.LIPJDJPMOKB },
-            |m: &mut LobbyCreateScRsp| { &mut m.LIPJDJPMOKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for LobbyCreateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.NEPODDOJJFE = is.read_uint32()?;
-                },
-                72 => {
-                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
-                },
-                42 => {
+                58 => {
                     self.LIPJDJPMOKB.push(is.read_message()?);
                 },
-                88 => {
+                104 => {
+                    self.NEPODDOJJFE = is.read_uint32()?;
+                },
+                48 => {
+                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
+                },
+                80 => {
                     self.room_id = is.read_uint64()?;
                 },
-                32 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for LobbyCreateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NEPODDOJJFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NEPODDOJJFE);
-        }
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.NBDLPGBIDLC.value());
-        }
         for value in &self.LIPJDJPMOKB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NEPODDOJJFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.NEPODDOJJFE);
+        }
+        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.NBDLPGBIDLC.value());
+        }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.room_id);
+            my_size += ::protobuf::rt::uint64_size(10, self.room_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for LobbyCreateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.LIPJDJPMOKB {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if self.NEPODDOJJFE != 0 {
-            os.write_uint32(12, self.NEPODDOJJFE)?;
+            os.write_uint32(13, self.NEPODDOJJFE)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
-        for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.room_id != 0 {
-            os.write_uint64(11, self.room_id)?;
+            os.write_uint64(10, self.room_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,9 +181,9 @@ impl ::protobuf::Message for LobbyCreateScRsp {
     }
 
     fn clear(&mut self) {
+        self.LIPJDJPMOKB.clear();
         self.NEPODDOJJFE = 0;
         self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
-        self.LIPJDJPMOKB.clear();
         self.room_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
@@ -191,9 +191,9 @@ impl ::protobuf::Message for LobbyCreateScRsp {
 
     fn default_instance() -> &'static LobbyCreateScRsp {
         static instance: LobbyCreateScRsp = LobbyCreateScRsp {
+            LIPJDJPMOKB: ::std::vec::Vec::new(),
             NEPODDOJJFE: 0,
             NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
-            LIPJDJPMOKB: ::std::vec::Vec::new(),
             room_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for LobbyCreateScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16LobbyCreateScRsp.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x13FightGameMo\
-    de.proto\"\xc9\x01\n\x10LobbyCreateScRsp\x12\x20\n\x0bNEPODDOJJFE\x18\
-    \x0c\x20\x01(\rR\x0bNEPODDOJJFE\x120\n\x0bNBDLPGBIDLC\x18\t\x20\x01(\x0e\
-    2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12.\n\x0bLIPJDJPMOKB\x18\x05\x20\
-    \x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\x12\x17\n\x07room_id\x18\x0b\
-    \x20\x01(\x04R\x06roomId\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07ret\
-    codeb\x06proto3\
+    de.proto\"\xc9\x01\n\x10LobbyCreateScRsp\x12.\n\x0bLIPJDJPMOKB\x18\x07\
+    \x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\x12\x20\n\x0bNEPODDOJJFE\
+    \x18\r\x20\x01(\rR\x0bNEPODDOJJFE\x120\n\x0bNBDLPGBIDLC\x18\x06\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12\x17\n\x07room_id\x18\n\x20\
+    \x01(\x04R\x06roomId\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

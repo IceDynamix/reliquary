@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetShopListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.shop_type = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetShopListCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.shop_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.shop_type);
+            my_size += ::protobuf::rt::uint32_size(4, self.shop_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetShopListCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.shop_type != 0 {
-            os.write_uint32(5, self.shop_type)?;
+            os.write_uint32(4, self.shop_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetShopListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetShopListCsReq.proto\"/\n\x10GetShopListCsReq\x12\x1b\n\tshop_ty\
-    pe\x18\x05\x20\x01(\rR\x08shopTypeb\x06proto3\
+    pe\x18\x04\x20\x01(\rR\x08shopTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

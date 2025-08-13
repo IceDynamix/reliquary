@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterEraFlipperRegionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterEraFlipperRegionCsReq.state)
-    pub state: u32,
     // @@protoc_insertion_point(field:EnterEraFlipperRegionCsReq.era_flipper_region_id)
     pub era_flipper_region_id: u32,
+    // @@protoc_insertion_point(field:EnterEraFlipperRegionCsReq.state)
+    pub state: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterEraFlipperRegionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EnterEraFlipperRegionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &EnterEraFlipperRegionCsReq| { &m.state },
-            |m: &mut EnterEraFlipperRegionCsReq| { &mut m.state },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "era_flipper_region_id",
             |m: &EnterEraFlipperRegionCsReq| { &m.era_flipper_region_id },
             |m: &mut EnterEraFlipperRegionCsReq| { &mut m.era_flipper_region_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &EnterEraFlipperRegionCsReq| { &m.state },
+            |m: &mut EnterEraFlipperRegionCsReq| { &mut m.state },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterEraFlipperRegionCsReq>(
             "EnterEraFlipperRegionCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.state = is.read_uint32()?;
-                },
-                120 => {
+                88 => {
                     self.era_flipper_region_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.state = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.state);
-        }
         if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.era_flipper_region_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.era_flipper_region_id);
+        }
+        if self.state != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.state);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.state != 0 {
-            os.write_uint32(12, self.state)?;
-        }
         if self.era_flipper_region_id != 0 {
-            os.write_uint32(15, self.era_flipper_region_id)?;
+            os.write_uint32(11, self.era_flipper_region_id)?;
+        }
+        if self.state != 0 {
+            os.write_uint32(6, self.state)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EnterEraFlipperRegionCsReq {
     }
 
     fn clear(&mut self) {
-        self.state = 0;
         self.era_flipper_region_id = 0;
+        self.state = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterEraFlipperRegionCsReq {
         static instance: EnterEraFlipperRegionCsReq = EnterEraFlipperRegionCsReq {
-            state: 0,
             era_flipper_region_id: 0,
+            state: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterEraFlipperRegionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EnterEraFlipperRegionCsReq.proto\"e\n\x1aEnterEraFlipperRegionCsRe\
-    q\x12\x14\n\x05state\x18\x0c\x20\x01(\rR\x05state\x121\n\x15era_flipper_\
-    region_id\x18\x0f\x20\x01(\rR\x12eraFlipperRegionIdb\x06proto3\
+    q\x121\n\x15era_flipper_region_id\x18\x0b\x20\x01(\rR\x12eraFlipperRegio\
+    nId\x12\x14\n\x05state\x18\x06\x20\x01(\rR\x05stateb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

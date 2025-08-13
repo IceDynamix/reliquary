@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AINBLBBFDBJ {
     // message fields
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.INBJPPAPCAG)
-    pub INBJPPAPCAG: u32,
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.NIJAGOAJPEM)
-    pub NIJAGOAJPEM: u32,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.select_cell_id)
+    pub select_cell_id: u32,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.NHGOJDODGMA)
     pub NHGOJDODGMA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.NIJAGOAJPEM)
+    pub NIJAGOAJPEM: u32,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.confirm)
     pub confirm: bool,
     // special fields
@@ -56,19 +56,19 @@ impl AINBLBBFDBJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INBJPPAPCAG",
-            |m: &AINBLBBFDBJ| { &m.INBJPPAPCAG },
-            |m: &mut AINBLBBFDBJ| { &mut m.INBJPPAPCAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIJAGOAJPEM",
-            |m: &AINBLBBFDBJ| { &m.NIJAGOAJPEM },
-            |m: &mut AINBLBBFDBJ| { &mut m.NIJAGOAJPEM },
+            "select_cell_id",
+            |m: &AINBLBBFDBJ| { &m.select_cell_id },
+            |m: &mut AINBLBBFDBJ| { &mut m.select_cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NHGOJDODGMA",
             |m: &AINBLBBFDBJ| { &m.NHGOJDODGMA },
             |m: &mut AINBLBBFDBJ| { &mut m.NHGOJDODGMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NIJAGOAJPEM",
+            |m: &AINBLBBFDBJ| { &m.NIJAGOAJPEM },
+            |m: &mut AINBLBBFDBJ| { &mut m.NIJAGOAJPEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "confirm",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.INBJPPAPCAG = is.read_uint32()?;
+                112 => {
+                    self.select_cell_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.NIJAGOAJPEM = is.read_uint32()?;
-                },
-                90 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NHGOJDODGMA)?;
                 },
-                88 => {
+                64 => {
                     self.NHGOJDODGMA.push(is.read_uint32()?);
                 },
-                48 => {
+                96 => {
+                    self.NIJAGOAJPEM = is.read_uint32()?;
+                },
+                120 => {
                     self.confirm = is.read_bool()?;
                 },
                 tag => {
@@ -120,13 +120,13 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INBJPPAPCAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.INBJPPAPCAG);
+        if self.select_cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.select_cell_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NHGOJDODGMA);
         if self.NIJAGOAJPEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NIJAGOAJPEM);
+            my_size += ::protobuf::rt::uint32_size(12, self.NIJAGOAJPEM);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NHGOJDODGMA);
         if self.confirm != false {
             my_size += 1 + 1;
         }
@@ -136,15 +136,15 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INBJPPAPCAG != 0 {
-            os.write_uint32(8, self.INBJPPAPCAG)?;
+        if self.select_cell_id != 0 {
+            os.write_uint32(14, self.select_cell_id)?;
         }
+        os.write_repeated_packed_uint32(8, &self.NHGOJDODGMA)?;
         if self.NIJAGOAJPEM != 0 {
-            os.write_uint32(3, self.NIJAGOAJPEM)?;
+            os.write_uint32(12, self.NIJAGOAJPEM)?;
         }
-        os.write_repeated_packed_uint32(11, &self.NHGOJDODGMA)?;
         if self.confirm != false {
-            os.write_bool(6, self.confirm)?;
+            os.write_bool(15, self.confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     }
 
     fn clear(&mut self) {
-        self.INBJPPAPCAG = 0;
-        self.NIJAGOAJPEM = 0;
+        self.select_cell_id = 0;
         self.NHGOJDODGMA.clear();
+        self.NIJAGOAJPEM = 0;
         self.confirm = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AINBLBBFDBJ {
         static instance: AINBLBBFDBJ = AINBLBBFDBJ {
-            INBJPPAPCAG: 0,
-            NIJAGOAJPEM: 0,
+            select_cell_id: 0,
             NHGOJDODGMA: ::std::vec::Vec::new(),
+            NIJAGOAJPEM: 0,
             confirm: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for AINBLBBFDBJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AINBLBBFDBJ.proto\"\x8d\x01\n\x0bAINBLBBFDBJ\x12\x20\n\x0bINBJPPAP\
-    CAG\x18\x08\x20\x01(\rR\x0bINBJPPAPCAG\x12\x20\n\x0bNIJAGOAJPEM\x18\x03\
-    \x20\x01(\rR\x0bNIJAGOAJPEM\x12\x20\n\x0bNHGOJDODGMA\x18\x0b\x20\x03(\rR\
-    \x0bNHGOJDODGMA\x12\x18\n\x07confirm\x18\x06\x20\x01(\x08R\x07confirmb\
+    \n\x11AINBLBBFDBJ.proto\"\x91\x01\n\x0bAINBLBBFDBJ\x12$\n\x0eselect_cell\
+    _id\x18\x0e\x20\x01(\rR\x0cselectCellId\x12\x20\n\x0bNHGOJDODGMA\x18\x08\
+    \x20\x03(\rR\x0bNHGOJDODGMA\x12\x20\n\x0bNIJAGOAJPEM\x18\x0c\x20\x01(\rR\
+    \x0bNIJAGOAJPEM\x12\x18\n\x07confirm\x18\x0f\x20\x01(\x08R\x07confirmb\
     \x06proto3\
 ";
 

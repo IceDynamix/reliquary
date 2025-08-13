@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BHMCFKHILFO {
     // message fields
-    // @@protoc_insertion_point(field:BHMCFKHILFO.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:BHMCFKHILFO.id)
-    pub id: u32,
-    // @@protoc_insertion_point(field:BHMCFKHILFO.CHNPDAJEIPK)
-    pub CHNPDAJEIPK: bool,
     // @@protoc_insertion_point(field:BHMCFKHILFO.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:BHMCFKHILFO.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:BHMCFKHILFO.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:BHMCFKHILFO.CHNPDAJEIPK)
+    pub CHNPDAJEIPK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:BHMCFKHILFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl BHMCFKHILFO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &BHMCFKHILFO| { &m.level },
-            |m: &mut BHMCFKHILFO| { &mut m.level },
+            "avatar_type",
+            |m: &BHMCFKHILFO| { &m.avatar_type },
+            |m: &mut BHMCFKHILFO| { &mut m.avatar_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -66,14 +66,14 @@ impl BHMCFKHILFO {
             |m: &mut BHMCFKHILFO| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &BHMCFKHILFO| { &m.level },
+            |m: &mut BHMCFKHILFO| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CHNPDAJEIPK",
             |m: &BHMCFKHILFO| { &m.CHNPDAJEIPK },
             |m: &mut BHMCFKHILFO| { &mut m.CHNPDAJEIPK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &BHMCFKHILFO| { &m.avatar_type },
-            |m: &mut BHMCFKHILFO| { &mut m.avatar_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BHMCFKHILFO>(
             "BHMCFKHILFO",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for BHMCFKHILFO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.level = is.read_uint32()?;
-                },
-                72 => {
-                    self.id = is.read_uint32()?;
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 88 => {
-                    self.CHNPDAJEIPK = is.read_bool()?;
+                    self.id = is.read_uint32()?;
                 },
-                80 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
+                96 => {
+                    self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.CHNPDAJEIPK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for BHMCFKHILFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.avatar_type.value());
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         if self.CHNPDAJEIPK != false {
             my_size += 1 + 1;
-        }
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BHMCFKHILFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.id != 0 {
-            os.write_uint32(9, self.id)?;
+            os.write_uint32(11, self.id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(12, self.level)?;
         }
         if self.CHNPDAJEIPK != false {
-            os.write_bool(11, self.CHNPDAJEIPK)?;
-        }
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_bool(14, self.CHNPDAJEIPK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for BHMCFKHILFO {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.id = 0;
-        self.CHNPDAJEIPK = false;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.id = 0;
+        self.level = 0;
+        self.CHNPDAJEIPK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BHMCFKHILFO {
         static instance: BHMCFKHILFO = BHMCFKHILFO {
-            level: 0,
-            id: 0,
-            CHNPDAJEIPK: false,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            id: 0,
+            level: 0,
+            CHNPDAJEIPK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for BHMCFKHILFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHMCFKHILFO.proto\x1a\x10AvatarType.proto\"\x83\x01\n\x0bBHMCFKHIL\
-    FO\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12\x0e\n\x02id\x18\t\
-    \x20\x01(\rR\x02id\x12\x20\n\x0bCHNPDAJEIPK\x18\x0b\x20\x01(\x08R\x0bCHN\
-    PDAJEIPK\x12,\n\x0bavatar_type\x18\n\x20\x01(\x0e2\x0b.AvatarTypeR\navat\
-    arTypeb\x06proto3\
+    FO\x12,\n\x0bavatar_type\x18\x02\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTy\
+    pe\x12\x0e\n\x02id\x18\x0b\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x0c\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bCHNPDAJEIPK\x18\x0e\x20\x01(\x08R\x0b\
+    CHNPDAJEIPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

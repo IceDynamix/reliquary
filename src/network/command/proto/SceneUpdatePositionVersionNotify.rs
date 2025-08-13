@@ -72,7 +72,7 @@ impl ::protobuf::Message for SceneUpdatePositionVersionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                112 => {
                     self.pos_version = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SceneUpdatePositionVersionNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.pos_version);
+            my_size += ::protobuf::rt::uint32_size(14, self.pos_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SceneUpdatePositionVersionNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.pos_version != 0 {
-            os.write_uint32(10, self.pos_version)?;
+            os.write_uint32(14, self.pos_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneUpdatePositionVersionNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SceneUpdatePositionVersionNotify.proto\"C\n\x20SceneUpdatePositionVer\
-    sionNotify\x12\x1f\n\x0bpos_version\x18\n\x20\x01(\rR\nposVersionb\x06pr\
-    oto3\
+    sionNotify\x12\x1f\n\x0bpos_version\x18\x0e\x20\x01(\rR\nposVersionb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

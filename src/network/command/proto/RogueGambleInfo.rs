@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGambleInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueGambleInfo.HFBKBHJIEGD)
-    pub HFBKBHJIEGD: u32,
-    // @@protoc_insertion_point(field:RogueGambleInfo.maze_group_list)
-    pub maze_group_list: ::std::vec::Vec<super::LOPJEJMOFBG::LOPJEJMOFBG>,
-    // @@protoc_insertion_point(field:RogueGambleInfo.DDJDDBKNPFF)
-    pub DDJDDBKNPFF: u32,
-    // @@protoc_insertion_point(field:RogueGambleInfo.AKKONOBBJNK)
-    pub AKKONOBBJNK: u32,
     // @@protoc_insertion_point(field:RogueGambleInfo.LOFFEOHFPFL)
     pub LOFFEOHFPFL: bool,
-    // @@protoc_insertion_point(field:RogueGambleInfo.KEDCOHKKNAK)
-    pub KEDCOHKKNAK: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueGambleInfo.AKKONOBBJNK)
+    pub AKKONOBBJNK: u32,
     // @@protoc_insertion_point(field:RogueGambleInfo.cur_times)
     pub cur_times: u32,
+    // @@protoc_insertion_point(field:RogueGambleInfo.KEDCOHKKNAK)
+    pub KEDCOHKKNAK: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueGambleInfo.HFBKBHJIEGD)
+    pub HFBKBHJIEGD: u32,
+    // @@protoc_insertion_point(field:RogueGambleInfo.DDJDDBKNPFF)
+    pub DDJDDBKNPFF: u32,
+    // @@protoc_insertion_point(field:RogueGambleInfo.maze_group_list)
+    pub maze_group_list: ::std::vec::Vec<super::LOPJEJMOFBG::LOPJEJMOFBG>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGambleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,19 +62,9 @@ impl RogueGambleInfo {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFBKBHJIEGD",
-            |m: &RogueGambleInfo| { &m.HFBKBHJIEGD },
-            |m: &mut RogueGambleInfo| { &mut m.HFBKBHJIEGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_group_list",
-            |m: &RogueGambleInfo| { &m.maze_group_list },
-            |m: &mut RogueGambleInfo| { &mut m.maze_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDJDDBKNPFF",
-            |m: &RogueGambleInfo| { &m.DDJDDBKNPFF },
-            |m: &mut RogueGambleInfo| { &mut m.DDJDDBKNPFF },
+            "LOFFEOHFPFL",
+            |m: &RogueGambleInfo| { &m.LOFFEOHFPFL },
+            |m: &mut RogueGambleInfo| { &mut m.LOFFEOHFPFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKKONOBBJNK",
@@ -82,9 +72,9 @@ impl RogueGambleInfo {
             |m: &mut RogueGambleInfo| { &mut m.AKKONOBBJNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFFEOHFPFL",
-            |m: &RogueGambleInfo| { &m.LOFFEOHFPFL },
-            |m: &mut RogueGambleInfo| { &mut m.LOFFEOHFPFL },
+            "cur_times",
+            |m: &RogueGambleInfo| { &m.cur_times },
+            |m: &mut RogueGambleInfo| { &mut m.cur_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "KEDCOHKKNAK",
@@ -92,9 +82,19 @@ impl RogueGambleInfo {
             |m: &mut RogueGambleInfo| { &mut m.KEDCOHKKNAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_times",
-            |m: &RogueGambleInfo| { &m.cur_times },
-            |m: &mut RogueGambleInfo| { &mut m.cur_times },
+            "HFBKBHJIEGD",
+            |m: &RogueGambleInfo| { &m.HFBKBHJIEGD },
+            |m: &mut RogueGambleInfo| { &mut m.HFBKBHJIEGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DDJDDBKNPFF",
+            |m: &RogueGambleInfo| { &m.DDJDDBKNPFF },
+            |m: &mut RogueGambleInfo| { &mut m.DDJDDBKNPFF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "maze_group_list",
+            |m: &RogueGambleInfo| { &m.maze_group_list },
+            |m: &mut RogueGambleInfo| { &mut m.maze_group_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGambleInfo>(
             "RogueGambleInfo",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for RogueGambleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.HFBKBHJIEGD = is.read_uint32()?;
-                },
-                66 => {
-                    self.maze_group_list.push(is.read_message()?);
-                },
                 56 => {
-                    self.DDJDDBKNPFF = is.read_uint32()?;
+                    self.LOFFEOHFPFL = is.read_bool()?;
                 },
-                48 => {
+                104 => {
                     self.AKKONOBBJNK = is.read_uint32()?;
                 },
-                88 => {
-                    self.LOFFEOHFPFL = is.read_bool()?;
+                96 => {
+                    self.cur_times = is.read_uint32()?;
                 },
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEDCOHKKNAK)?;
                 },
-                80 => {
-                    self.cur_times = is.read_uint32()?;
+                88 => {
+                    self.HFBKBHJIEGD = is.read_uint32()?;
+                },
+                16 => {
+                    self.DDJDDBKNPFF = is.read_uint32()?;
+                },
+                122 => {
+                    self.maze_group_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,56 +147,56 @@ impl ::protobuf::Message for RogueGambleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HFBKBHJIEGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HFBKBHJIEGD);
-        }
-        for value in &self.maze_group_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.DDJDDBKNPFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DDJDDBKNPFF);
-        }
-        if self.AKKONOBBJNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AKKONOBBJNK);
-        }
         if self.LOFFEOHFPFL != false {
             my_size += 1 + 1;
+        }
+        if self.AKKONOBBJNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AKKONOBBJNK);
+        }
+        if self.cur_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_times);
         }
         if let Some(v) = self.KEDCOHKKNAK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cur_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_times);
+        if self.HFBKBHJIEGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HFBKBHJIEGD);
         }
+        if self.DDJDDBKNPFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DDJDDBKNPFF);
+        }
+        for value in &self.maze_group_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HFBKBHJIEGD != 0 {
-            os.write_uint32(2, self.HFBKBHJIEGD)?;
-        }
-        for v in &self.maze_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.DDJDDBKNPFF != 0 {
-            os.write_uint32(7, self.DDJDDBKNPFF)?;
+        if self.LOFFEOHFPFL != false {
+            os.write_bool(7, self.LOFFEOHFPFL)?;
         }
         if self.AKKONOBBJNK != 0 {
-            os.write_uint32(6, self.AKKONOBBJNK)?;
+            os.write_uint32(13, self.AKKONOBBJNK)?;
         }
-        if self.LOFFEOHFPFL != false {
-            os.write_bool(11, self.LOFFEOHFPFL)?;
+        if self.cur_times != 0 {
+            os.write_uint32(12, self.cur_times)?;
         }
         if let Some(v) = self.KEDCOHKKNAK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.cur_times != 0 {
-            os.write_uint32(10, self.cur_times)?;
+        if self.HFBKBHJIEGD != 0 {
+            os.write_uint32(11, self.HFBKBHJIEGD)?;
         }
+        if self.DDJDDBKNPFF != 0 {
+            os.write_uint32(2, self.DDJDDBKNPFF)?;
+        }
+        for v in &self.maze_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for RogueGambleInfo {
     }
 
     fn clear(&mut self) {
-        self.HFBKBHJIEGD = 0;
-        self.maze_group_list.clear();
-        self.DDJDDBKNPFF = 0;
-        self.AKKONOBBJNK = 0;
         self.LOFFEOHFPFL = false;
-        self.KEDCOHKKNAK.clear();
+        self.AKKONOBBJNK = 0;
         self.cur_times = 0;
+        self.KEDCOHKKNAK.clear();
+        self.HFBKBHJIEGD = 0;
+        self.DDJDDBKNPFF = 0;
+        self.maze_group_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGambleInfo {
         static instance: RogueGambleInfo = RogueGambleInfo {
-            HFBKBHJIEGD: 0,
-            maze_group_list: ::std::vec::Vec::new(),
-            DDJDDBKNPFF: 0,
-            AKKONOBBJNK: 0,
             LOFFEOHFPFL: false,
-            KEDCOHKKNAK: ::protobuf::MessageField::none(),
+            AKKONOBBJNK: 0,
             cur_times: 0,
+            KEDCOHKKNAK: ::protobuf::MessageField::none(),
+            HFBKBHJIEGD: 0,
+            DDJDDBKNPFF: 0,
+            maze_group_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueGambleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueGambleInfo.proto\x1a\x12ItemCostData.proto\x1a\x11LOPJEJMOFBG\
-    .proto\"\x9d\x02\n\x0fRogueGambleInfo\x12\x20\n\x0bHFBKBHJIEGD\x18\x02\
-    \x20\x01(\rR\x0bHFBKBHJIEGD\x124\n\x0fmaze_group_list\x18\x08\x20\x03(\
-    \x0b2\x0c.LOPJEJMOFBGR\rmazeGroupList\x12\x20\n\x0bDDJDDBKNPFF\x18\x07\
-    \x20\x01(\rR\x0bDDJDDBKNPFF\x12\x20\n\x0bAKKONOBBJNK\x18\x06\x20\x01(\rR\
-    \x0bAKKONOBBJNK\x12\x20\n\x0bLOFFEOHFPFL\x18\x0b\x20\x01(\x08R\x0bLOFFEO\
-    HFPFL\x12/\n\x0bKEDCOHKKNAK\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x0bKED\
-    COHKKNAK\x12\x1b\n\tcur_times\x18\n\x20\x01(\rR\x08curTimesb\x06proto3\
+    .proto\"\x9d\x02\n\x0fRogueGambleInfo\x12\x20\n\x0bLOFFEOHFPFL\x18\x07\
+    \x20\x01(\x08R\x0bLOFFEOHFPFL\x12\x20\n\x0bAKKONOBBJNK\x18\r\x20\x01(\rR\
+    \x0bAKKONOBBJNK\x12\x1b\n\tcur_times\x18\x0c\x20\x01(\rR\x08curTimes\x12\
+    /\n\x0bKEDCOHKKNAK\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x0bKEDCOHKKNAK\
+    \x12\x20\n\x0bHFBKBHJIEGD\x18\x0b\x20\x01(\rR\x0bHFBKBHJIEGD\x12\x20\n\
+    \x0bDDJDDBKNPFF\x18\x02\x20\x01(\rR\x0bDDJDDBKNPFF\x124\n\x0fmaze_group_\
+    list\x18\x0f\x20\x03(\x0b2\x0c.LOPJEJMOFBGR\rmazeGroupListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

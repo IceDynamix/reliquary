@@ -30,8 +30,8 @@ pub struct PEDJNPJKOCK {
     // message fields
     // @@protoc_insertion_point(field:PEDJNPJKOCK.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:PEDJNPJKOCK.OJEBLMKKMGO)
-    pub OJEBLMKKMGO: u32,
+    // @@protoc_insertion_point(field:PEDJNPJKOCK.maze_buff_id)
+    pub maze_buff_id: u32,
     // @@protoc_insertion_point(field:PEDJNPJKOCK.IAGENFADHLP)
     pub IAGENFADHLP: u32,
     // special fields
@@ -59,9 +59,9 @@ impl PEDJNPJKOCK {
             |m: &mut PEDJNPJKOCK| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJEBLMKKMGO",
-            |m: &PEDJNPJKOCK| { &m.OJEBLMKKMGO },
-            |m: &mut PEDJNPJKOCK| { &mut m.OJEBLMKKMGO },
+            "maze_buff_id",
+            |m: &PEDJNPJKOCK| { &m.maze_buff_id },
+            |m: &mut PEDJNPJKOCK| { &mut m.maze_buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IAGENFADHLP",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
                     self.avatar_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.OJEBLMKKMGO = is.read_uint32()?;
+                    self.maze_buff_id = is.read_uint32()?;
                 },
                 24 => {
                     self.IAGENFADHLP = is.read_uint32()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for PEDJNPJKOCK {
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
         }
-        if self.OJEBLMKKMGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OJEBLMKKMGO);
+        if self.maze_buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.maze_buff_id);
         }
         if self.IAGENFADHLP != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.IAGENFADHLP);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for PEDJNPJKOCK {
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
         }
-        if self.OJEBLMKKMGO != 0 {
-            os.write_uint32(2, self.OJEBLMKKMGO)?;
+        if self.maze_buff_id != 0 {
+            os.write_uint32(2, self.maze_buff_id)?;
         }
         if self.IAGENFADHLP != 0 {
             os.write_uint32(3, self.IAGENFADHLP)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
 
     fn clear(&mut self) {
         self.avatar_id = 0;
-        self.OJEBLMKKMGO = 0;
+        self.maze_buff_id = 0;
         self.IAGENFADHLP = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
     fn default_instance() -> &'static PEDJNPJKOCK {
         static instance: PEDJNPJKOCK = PEDJNPJKOCK {
             avatar_id: 0,
-            OJEBLMKKMGO: 0,
+            maze_buff_id: 0,
             IAGENFADHLP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PEDJNPJKOCK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEDJNPJKOCK.proto\"n\n\x0bPEDJNPJKOCK\x12\x1b\n\tavatar_id\x18\x01\
-    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bOJEBLMKKMGO\x18\x02\x20\x01(\rR\
-    \x0bOJEBLMKKMGO\x12\x20\n\x0bIAGENFADHLP\x18\x03\x20\x01(\rR\x0bIAGENFAD\
-    HLPb\x06proto3\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0cmaze_buff_id\x18\x02\x20\x01(\rR\n\
+    mazeBuffId\x12\x20\n\x0bIAGENFADHLP\x18\x03\x20\x01(\rR\x0bIAGENFADHLPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

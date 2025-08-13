@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicBattleFailSettleInfoScNotify {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>,
     // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.tourn_finish_info)
     pub tourn_finish_info: ::protobuf::MessageField<super::OGNBIGKHHBM::OGNBIGKHHBM>,
-    // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::HFIPPDGGJOL::HFIPPDGGJOL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicBattleFailSettleInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicBattleFailSettleInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.rogue_tourn_cur_scene_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGNBIGKHHBM::OGNBIGKHHBM>(
             "tourn_finish_info",
             |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.tourn_finish_info },
             |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.tourn_finish_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFIPPDGGJOL::HFIPPDGGJOL>(
-            "LCOCLENJJAI",
-            |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.LCOCLENJJAI },
-            |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.LCOCLENJJAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicBattleFailSettleInfoScNotify>(
             "RogueMagicBattleFailSettleInfoScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
-                },
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.tourn_finish_info.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if let Some(v) = self.tourn_finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.tourn_finish_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     }
 
     fn clear(&mut self) {
+        self.rogue_tourn_cur_scene_info.clear();
         self.tourn_finish_info.clear();
-        self.LCOCLENJJAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicBattleFailSettleInfoScNotify {
         static instance: RogueMagicBattleFailSettleInfoScNotify = RogueMagicBattleFailSettleInfoScNotify {
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             tourn_finish_info: ::protobuf::MessageField::none(),
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicBattleFailSettleInfoScNoti
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n,RogueMagicBattleFailSettleInfoScNotify.proto\x1a\x11HFIPPDGGJOL.proto\
-    \x1a\x11OGNBIGKHHBM.proto\"\x92\x01\n&RogueMagicBattleFailSettleInfoScNo\
-    tify\x128\n\x11tourn_finish_info\x18\x03\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\
-    \x0ftournFinishInfo\x12.\n\x0bLCOCLENJJAI\x18\x01\x20\x01(\x0b2\x0c.HFIP\
-    PDGGJOLR\x0bLCOCLENJJAIb\x06proto3\
+    \n,RogueMagicBattleFailSettleInfoScNotify.proto\x1a\x11OGNBIGKHHBM.proto\
+    \x1a\x1cRogueMagicCurSceneInfo.proto\"\xb7\x01\n&RogueMagicBattleFailSet\
+    tleInfoScNotify\x12S\n\x1arogue_tourn_cur_scene_info\x18\x01\x20\x01(\
+    \x0b2\x17.RogueMagicCurSceneInfoR\x16rogueTournCurSceneInfo\x128\n\x11to\
+    urn_finish_info\x18\n\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\x0ftournFinishInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,8 +190,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HFIPPDGGJOL::file_descriptor().clone());
             deps.push(super::OGNBIGKHHBM::file_descriptor().clone());
+            deps.push(super::RogueMagicCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicBattleFailSettleInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,13 +79,13 @@ impl ::protobuf::Message for PGGGCFBKDPK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.game_story_line_id = is.read_uint32()?;
                 },
-                74 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.CNBCKEFNFGE)?;
                 },
-                72 => {
+                32 => {
                     self.CNBCKEFNFGE.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for PGGGCFBKDPK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.game_story_line_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CNBCKEFNFGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CNBCKEFNFGE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for PGGGCFBKDPK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.game_story_line_id != 0 {
-            os.write_uint32(15, self.game_story_line_id)?;
+            os.write_uint32(12, self.game_story_line_id)?;
         }
-        os.write_repeated_packed_uint32(9, &self.CNBCKEFNFGE)?;
+        os.write_repeated_packed_uint32(4, &self.CNBCKEFNFGE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for PGGGCFBKDPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGGGCFBKDPK.proto\"\\\n\x0bPGGGCFBKDPK\x12+\n\x12game_story_line_i\
-    d\x18\x0f\x20\x01(\rR\x0fgameStoryLineId\x12\x20\n\x0bCNBCKEFNFGE\x18\t\
-    \x20\x03(\rR\x0bCNBCKEFNFGEb\x06proto3\
+    d\x18\x0c\x20\x01(\rR\x0fgameStoryLineId\x12\x20\n\x0bCNBCKEFNFGE\x18\
+    \x04\x20\x03(\rR\x0bCNBCKEFNFGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

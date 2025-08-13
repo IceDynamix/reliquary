@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
                 },
-                112 => {
+                16 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
             my_size += 1 + 1;
         }
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(8, self.PUNK_LORD_OPERATION_REFRESH)?;
+            os.write_bool(14, self.PUNK_LORD_OPERATION_REFRESH)?;
         }
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(14, self.interacted_prop_entity_id)?;
+            os.write_uint32(2, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopFormulaInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopFormulaInfoCsReq.proto\"\x98\x01\n\x1cGetRogueShopFormul\
-    aInfoCsReq\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x08\x20\x01(\x08R\
-    \x18PUNKLORDOPERATIONREFRESH\x129\n\x19interacted_prop_entity_id\x18\x0e\
+    aInfoCsReq\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\x0e\x20\x01(\x08R\
+    \x18PUNKLORDOPERATIONREFRESH\x129\n\x19interacted_prop_entity_id\x18\x02\
     \x20\x01(\rR\x16interactedPropEntityIdb\x06proto3\
 ";
 

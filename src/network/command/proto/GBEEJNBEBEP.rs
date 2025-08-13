@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GBEEJNBEBEP {
     // message fields
-    // @@protoc_insertion_point(field:GBEEJNBEBEP.FGOMIPLMEIC)
-    pub FGOMIPLMEIC: u32,
     // @@protoc_insertion_point(field:GBEEJNBEBEP.status)
     pub status: ::protobuf::EnumOrUnknown<super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus>,
+    // @@protoc_insertion_point(field:GBEEJNBEBEP.chess_rogue_main_story_id)
+    pub chess_rogue_main_story_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GBEEJNBEBEP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GBEEJNBEBEP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGOMIPLMEIC",
-            |m: &GBEEJNBEBEP| { &m.FGOMIPLMEIC },
-            |m: &mut GBEEJNBEBEP| { &mut m.FGOMIPLMEIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &GBEEJNBEBEP| { &m.status },
             |m: &mut GBEEJNBEBEP| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "chess_rogue_main_story_id",
+            |m: &GBEEJNBEBEP| { &m.chess_rogue_main_story_id },
+            |m: &mut GBEEJNBEBEP| { &mut m.chess_rogue_main_story_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GBEEJNBEBEP>(
             "GBEEJNBEBEP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FGOMIPLMEIC = is.read_uint32()?;
+                104 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 32 => {
-                    self.status = is.read_enum_or_unknown()?;
+                    self.chess_rogue_main_story_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FGOMIPLMEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FGOMIPLMEIC);
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus::CHESS_ROGUE_NOUS_MAIN_STORY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.status.value());
+            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+        }
+        if self.chess_rogue_main_story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.chess_rogue_main_story_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FGOMIPLMEIC != 0 {
-            os.write_uint32(8, self.FGOMIPLMEIC)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus::CHESS_ROGUE_NOUS_MAIN_STORY_STATUS_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.chess_rogue_main_story_id != 0 {
+            os.write_uint32(4, self.chess_rogue_main_story_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GBEEJNBEBEP {
     }
 
     fn clear(&mut self) {
-        self.FGOMIPLMEIC = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::ChessRogueNousMainStoryStatus::ChessRogueNousMainStoryStatus::CHESS_ROGUE_NOUS_MAIN_STORY_STATUS_NONE);
+        self.chess_rogue_main_story_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GBEEJNBEBEP {
         static instance: GBEEJNBEBEP = GBEEJNBEBEP {
-            FGOMIPLMEIC: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            chess_rogue_main_story_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GBEEJNBEBEP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GBEEJNBEBEP.proto\x1a#ChessRogueNousMainStoryStatus.proto\"g\n\x0b\
-    GBEEJNBEBEP\x12\x20\n\x0bFGOMIPLMEIC\x18\x08\x20\x01(\rR\x0bFGOMIPLMEIC\
-    \x126\n\x06status\x18\x04\x20\x01(\x0e2\x1e.ChessRogueNousMainStoryStatu\
-    sR\x06statusb\x06proto3\
+    \n\x11GBEEJNBEBEP.proto\x1a#ChessRogueNousMainStoryStatus.proto\"\x7f\n\
+    \x0bGBEEJNBEBEP\x126\n\x06status\x18\r\x20\x01(\x0e2\x1e.ChessRogueNousM\
+    ainStoryStatusR\x06status\x128\n\x19chess_rogue_main_story_id\x18\x04\
+    \x20\x01(\rR\x15chessRogueMainStoryIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

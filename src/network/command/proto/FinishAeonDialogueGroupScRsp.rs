@@ -30,10 +30,10 @@ pub struct FinishAeonDialogueGroupScRsp {
     // message fields
     // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::EACOFHBFMLB::EACOFHBFMLB>,
     // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::EACOFHBFMLB::EACOFHBFMLB>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishAeonDialogueGroupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl FinishAeonDialogueGroupScRsp {
             |m: &FinishAeonDialogueGroupScRsp| { &m.retcode },
             |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EACOFHBFMLB::EACOFHBFMLB>(
-            "rogue_aeon_info",
-            |m: &FinishAeonDialogueGroupScRsp| { &m.rogue_aeon_info },
-            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.rogue_aeon_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &FinishAeonDialogueGroupScRsp| { &m.reward },
             |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EACOFHBFMLB::EACOFHBFMLB>(
+            "rogue_aeon_info",
+            |m: &FinishAeonDialogueGroupScRsp| { &m.rogue_aeon_info },
+            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.rogue_aeon_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishAeonDialogueGroupScRsp>(
             "FinishAeonDialogueGroupScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
-                },
-                42 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +125,13 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.rogue_aeon_info.clear();
         self.reward.clear();
+        self.rogue_aeon_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishAeonDialogueGroupScRsp {
         static instance: FinishAeonDialogueGroupScRsp = FinishAeonDialogueGroupScRsp {
             retcode: 0,
-            rogue_aeon_info: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
+            rogue_aeon_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishAeonDialogueGroupScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishAeonDialogueGroupScRsp.proto\x1a\x11EACOFHBFMLB.proto\x1a\x0eI\
     temList.proto\"\x91\x01\n\x1cFinishAeonDialogueGroupScRsp\x12\x18\n\x07r\
-    etcode\x18\x0c\x20\x01(\rR\x07retcode\x124\n\x0frogue_aeon_info\x18\r\
-    \x20\x01(\x0b2\x0c.EACOFHBFMLBR\rrogueAeonInfo\x12!\n\x06reward\x18\x05\
-    \x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    etcode\x18\x0e\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x01\x20\x01(\
+    \x0b2\t.ItemListR\x06reward\x124\n\x0frogue_aeon_info\x18\x08\x20\x01(\
+    \x0b2\x0c.EACOFHBFMLBR\rrogueAeonInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

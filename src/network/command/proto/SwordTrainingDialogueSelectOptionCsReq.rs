@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingDialogueSelectOptionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingDialogueSelectOptionCsReq.KDMLLLGHJON)
-    pub KDMLLLGHJON: u32,
+    // @@protoc_insertion_point(field:SwordTrainingDialogueSelectOptionCsReq.option_id)
+    pub option_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingDialogueSelectOptionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwordTrainingDialogueSelectOptionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDMLLLGHJON",
-            |m: &SwordTrainingDialogueSelectOptionCsReq| { &m.KDMLLLGHJON },
-            |m: &mut SwordTrainingDialogueSelectOptionCsReq| { &mut m.KDMLLLGHJON },
+            "option_id",
+            |m: &SwordTrainingDialogueSelectOptionCsReq| { &m.option_id },
+            |m: &mut SwordTrainingDialogueSelectOptionCsReq| { &mut m.option_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingDialogueSelectOptionCsReq>(
             "SwordTrainingDialogueSelectOptionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwordTrainingDialogueSelectOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.KDMLLLGHJON = is.read_uint32()?;
+                8 => {
+                    self.option_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SwordTrainingDialogueSelectOptionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KDMLLLGHJON);
+        if self.option_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.option_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SwordTrainingDialogueSelectOptionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDMLLLGHJON != 0 {
-            os.write_uint32(13, self.KDMLLLGHJON)?;
+        if self.option_id != 0 {
+            os.write_uint32(1, self.option_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SwordTrainingDialogueSelectOptionCsReq {
     }
 
     fn clear(&mut self) {
-        self.KDMLLLGHJON = 0;
+        self.option_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingDialogueSelectOptionCsReq {
         static instance: SwordTrainingDialogueSelectOptionCsReq = SwordTrainingDialogueSelectOptionCsReq {
-            KDMLLLGHJON: 0,
+            option_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingDialogueSelectOptionCsR
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n,SwordTrainingDialogueSelectOptionCsReq.proto\"J\n&SwordTrainingDialog\
-    ueSelectOptionCsReq\x12\x20\n\x0bKDMLLLGHJON\x18\r\x20\x01(\rR\x0bKDMLLL\
-    GHJONb\x06proto3\
+    \n,SwordTrainingDialogueSelectOptionCsReq.proto\"E\n&SwordTrainingDialog\
+    ueSelectOptionCsReq\x12\x1b\n\toption_id\x18\x01\x20\x01(\rR\x08optionId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddRelicFilterPlanScRsp {
     // message fields
+    // @@protoc_insertion_point(field:AddRelicFilterPlanScRsp.relic_plan)
+    pub relic_plan: ::protobuf::MessageField<super::KFPJGGIFIEN::KFPJGGIFIEN>,
     // @@protoc_insertion_point(field:AddRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AddRelicFilterPlanScRsp.plan)
-    pub plan: ::protobuf::MessageField<super::RelicFilterPlan::RelicFilterPlan>,
     // special fields
     // @@protoc_insertion_point(special_field:AddRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AddRelicFilterPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFPJGGIFIEN::KFPJGGIFIEN>(
+            "relic_plan",
+            |m: &AddRelicFilterPlanScRsp| { &m.relic_plan },
+            |m: &mut AddRelicFilterPlanScRsp| { &mut m.relic_plan },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AddRelicFilterPlanScRsp| { &m.retcode },
             |m: &mut AddRelicFilterPlanScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicFilterPlan::RelicFilterPlan>(
-            "plan",
-            |m: &AddRelicFilterPlanScRsp| { &m.plan },
-            |m: &mut AddRelicFilterPlanScRsp| { &mut m.plan },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddRelicFilterPlanScRsp>(
             "AddRelicFilterPlanScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AddRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.relic_plan)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.plan)?;
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for AddRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if let Some(v) = self.plan.as_ref() {
+        if let Some(v) = self.relic_plan.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AddRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if let Some(v) = self.relic_plan.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.plan.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AddRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
+        self.relic_plan.clear();
         self.retcode = 0;
-        self.plan.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddRelicFilterPlanScRsp {
         static instance: AddRelicFilterPlanScRsp = AddRelicFilterPlanScRsp {
+            relic_plan: ::protobuf::MessageField::none(),
             retcode: 0,
-            plan: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for AddRelicFilterPlanScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dAddRelicFilterPlanScRsp.proto\x1a\x15RelicFilterPlan.proto\"Y\n\
-    \x17AddRelicFilterPlanScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07re\
-    tcode\x12$\n\x04plan\x18\r\x20\x01(\x0b2\x10.RelicFilterPlanR\x04planb\
-    \x06proto3\
+    \n\x1dAddRelicFilterPlanScRsp.proto\x1a\x11KFPJGGIFIEN.proto\"`\n\x17Add\
+    RelicFilterPlanScRsp\x12+\n\nrelic_plan\x18\x02\x20\x01(\x0b2\x0c.KFPJGG\
+    IFIENR\trelicPlan\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RelicFilterPlan::file_descriptor().clone());
+            deps.push(super::KFPJGGIFIEN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AddRelicFilterPlanScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,7 +72,7 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                96 => {
                     self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.PJGBFKNJPNO.value());
+            my_size += ::protobuf::rt::int32_size(12, self.PJGBFKNJPNO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for CIFDFLDEOKC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for CIFDFLDEOKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIFDFLDEOKC.proto\x1a\x11GHHDMEMLKPO.proto\"=\n\x0bCIFDFLDEOKC\x12\
-    .\n\x0bPJGBFKNJPNO\x18\x01\x20\x01(\x0e2\x0c.GHHDMEMLKPOR\x0bPJGBFKNJPNO\
+    .\n\x0bPJGBFKNJPNO\x18\x0c\x20\x01(\x0e2\x0c.GHHDMEMLKPOR\x0bPJGBFKNJPNO\
     b\x06proto3\
 ";
 

@@ -72,7 +72,7 @@ impl ::protobuf::Message for GBMCHNAAPHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.BDKNGDOCPGP = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GBMCHNAAPHJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BDKNGDOCPGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BDKNGDOCPGP);
+            my_size += ::protobuf::rt::uint32_size(14, self.BDKNGDOCPGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GBMCHNAAPHJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BDKNGDOCPGP != 0 {
-            os.write_uint32(13, self.BDKNGDOCPGP)?;
+            os.write_uint32(14, self.BDKNGDOCPGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GBMCHNAAPHJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBMCHNAAPHJ.proto\"/\n\x0bGBMCHNAAPHJ\x12\x20\n\x0bBDKNGDOCPGP\x18\
-    \r\x20\x01(\rR\x0bBDKNGDOCPGPb\x06proto3\
+    \x0e\x20\x01(\rR\x0bBDKNGDOCPGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

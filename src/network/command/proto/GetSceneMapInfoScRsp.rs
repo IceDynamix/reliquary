@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSceneMapInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.IGFIKGHLLNO)
-    pub IGFIKGHLLNO: bool,
-    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.content_id)
-    pub content_id: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.entry_story_line_id)
     pub entry_story_line_id: u32,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.scene_map_info)
     pub scene_map_info: ::std::vec::Vec<super::SceneMapInfo::SceneMapInfo>,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.content_id)
+    pub content_id: u32,
+    // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.IGFIKGHLLNO)
+    pub IGFIKGHLLNO: bool,
     // @@protoc_insertion_point(field:GetSceneMapInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -58,16 +58,6 @@ impl GetSceneMapInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGFIKGHLLNO",
-            |m: &GetSceneMapInfoScRsp| { &m.IGFIKGHLLNO },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.IGFIKGHLLNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &GetSceneMapInfoScRsp| { &m.content_id },
-            |m: &mut GetSceneMapInfoScRsp| { &mut m.content_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entry_story_line_id",
             |m: &GetSceneMapInfoScRsp| { &m.entry_story_line_id },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.entry_story_line_id },
@@ -76,6 +66,16 @@ impl GetSceneMapInfoScRsp {
             "scene_map_info",
             |m: &GetSceneMapInfoScRsp| { &m.scene_map_info },
             |m: &mut GetSceneMapInfoScRsp| { &mut m.scene_map_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "content_id",
+            |m: &GetSceneMapInfoScRsp| { &m.content_id },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.content_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGFIKGHLLNO",
+            |m: &GetSceneMapInfoScRsp| { &m.IGFIKGHLLNO },
+            |m: &mut GetSceneMapInfoScRsp| { &mut m.IGFIKGHLLNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IGFIKGHLLNO = is.read_bool()?;
-                },
-                64 => {
-                    self.content_id = is.read_uint32()?;
-                },
-                120 => {
+                48 => {
                     self.entry_story_line_id = is.read_uint32()?;
                 },
-                58 => {
+                82 => {
                     self.scene_map_info.push(is.read_message()?);
                 },
-                16 => {
+                24 => {
+                    self.content_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.IGFIKGHLLNO = is.read_bool()?;
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IGFIKGHLLNO != false {
-            my_size += 1 + 1;
-        }
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.content_id);
-        }
         if self.entry_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.entry_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.entry_story_line_id);
         }
         for value in &self.scene_map_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.content_id);
+        }
+        if self.IGFIKGHLLNO != false {
+            my_size += 1 + 1;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IGFIKGHLLNO != false {
-            os.write_bool(5, self.IGFIKGHLLNO)?;
-        }
-        if self.content_id != 0 {
-            os.write_uint32(8, self.content_id)?;
-        }
         if self.entry_story_line_id != 0 {
-            os.write_uint32(15, self.entry_story_line_id)?;
+            os.write_uint32(6, self.entry_story_line_id)?;
         }
         for v in &self.scene_map_info {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.content_id != 0 {
+            os.write_uint32(3, self.content_id)?;
+        }
+        if self.IGFIKGHLLNO != false {
+            os.write_bool(14, self.IGFIKGHLLNO)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for GetSceneMapInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.IGFIKGHLLNO = false;
-        self.content_id = 0;
         self.entry_story_line_id = 0;
         self.scene_map_info.clear();
+        self.content_id = 0;
+        self.IGFIKGHLLNO = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSceneMapInfoScRsp {
         static instance: GetSceneMapInfoScRsp = GetSceneMapInfoScRsp {
-            IGFIKGHLLNO: false,
-            content_id: 0,
             entry_story_line_id: 0,
             scene_map_info: ::std::vec::Vec::new(),
+            content_id: 0,
+            IGFIKGHLLNO: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSceneMapInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetSceneMapInfoScRsp.proto\x1a\x12SceneMapInfo.proto\"\xd5\x01\n\
-    \x14GetSceneMapInfoScRsp\x12\x20\n\x0bIGFIKGHLLNO\x18\x05\x20\x01(\x08R\
-    \x0bIGFIKGHLLNO\x12\x1d\n\ncontent_id\x18\x08\x20\x01(\rR\tcontentId\x12\
-    -\n\x13entry_story_line_id\x18\x0f\x20\x01(\rR\x10entryStoryLineId\x123\
-    \n\x0escene_map_info\x18\x07\x20\x03(\x0b2\r.SceneMapInfoR\x0csceneMapIn\
-    fo\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x14GetSceneMapInfoScRsp\x12-\n\x13entry_story_line_id\x18\x06\x20\x01(\
+    \rR\x10entryStoryLineId\x123\n\x0escene_map_info\x18\n\x20\x03(\x0b2\r.S\
+    ceneMapInfoR\x0csceneMapInfo\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\t\
+    contentId\x12\x20\n\x0bIGFIKGHLLNO\x18\x0e\x20\x01(\x08R\x0bIGFIKGHLLNO\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

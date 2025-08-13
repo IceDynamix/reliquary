@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDJLOJFMEMC {
     // message fields
+    // @@protoc_insertion_point(field:MDJLOJFMEMC.progress)
+    pub progress: u32,
+    // @@protoc_insertion_point(field:MDJLOJFMEMC.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MDJLOJFMEMC.script_id)
+    pub script_id: u32,
+    // @@protoc_insertion_point(field:MDJLOJFMEMC.EEEHGHKOCJI)
+    pub EEEHGHKOCJI: bool,
     // @@protoc_insertion_point(field:MDJLOJFMEMC.AIGEHHNHKPM)
     pub AIGEHHNHKPM: u32,
     // @@protoc_insertion_point(field:MDJLOJFMEMC.KIEKJEFFPHK)
     pub KIEKJEFFPHK: u32,
-    // @@protoc_insertion_point(field:MDJLOJFMEMC.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:MDJLOJFMEMC.progress)
-    pub progress: u32,
     // @@protoc_insertion_point(field:MDJLOJFMEMC.KFDAICILNMB)
     pub KFDAICILNMB: bool,
-    // @@protoc_insertion_point(field:MDJLOJFMEMC.EEEHGHKOCJI)
-    pub EEEHGHKOCJI: bool,
-    // @@protoc_insertion_point(field:MDJLOJFMEMC.script_id)
-    pub script_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MDJLOJFMEMC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,6 +62,26 @@ impl MDJLOJFMEMC {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &MDJLOJFMEMC| { &m.progress },
+            |m: &mut MDJLOJFMEMC| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &MDJLOJFMEMC| { &m.reward },
+            |m: &mut MDJLOJFMEMC| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "script_id",
+            |m: &MDJLOJFMEMC| { &m.script_id },
+            |m: &mut MDJLOJFMEMC| { &mut m.script_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EEEHGHKOCJI",
+            |m: &MDJLOJFMEMC| { &m.EEEHGHKOCJI },
+            |m: &mut MDJLOJFMEMC| { &mut m.EEEHGHKOCJI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AIGEHHNHKPM",
             |m: &MDJLOJFMEMC| { &m.AIGEHHNHKPM },
             |m: &mut MDJLOJFMEMC| { &mut m.AIGEHHNHKPM },
@@ -71,30 +91,10 @@ impl MDJLOJFMEMC {
             |m: &MDJLOJFMEMC| { &m.KIEKJEFFPHK },
             |m: &mut MDJLOJFMEMC| { &mut m.KIEKJEFFPHK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &MDJLOJFMEMC| { &m.reward },
-            |m: &mut MDJLOJFMEMC| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &MDJLOJFMEMC| { &m.progress },
-            |m: &mut MDJLOJFMEMC| { &mut m.progress },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFDAICILNMB",
             |m: &MDJLOJFMEMC| { &m.KFDAICILNMB },
             |m: &mut MDJLOJFMEMC| { &mut m.KFDAICILNMB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEEHGHKOCJI",
-            |m: &MDJLOJFMEMC| { &m.EEEHGHKOCJI },
-            |m: &mut MDJLOJFMEMC| { &mut m.EEEHGHKOCJI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "script_id",
-            |m: &MDJLOJFMEMC| { &m.script_id },
-            |m: &mut MDJLOJFMEMC| { &mut m.script_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MDJLOJFMEMC>(
             "MDJLOJFMEMC",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for MDJLOJFMEMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.AIGEHHNHKPM = is.read_uint32()?;
-                },
-                8 => {
-                    self.KIEKJEFFPHK = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                40 => {
+                32 => {
                     self.progress = is.read_uint32()?;
                 },
-                112 => {
-                    self.KFDAICILNMB = is.read_bool()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                72 => {
+                56 => {
+                    self.script_id = is.read_uint32()?;
+                },
+                64 => {
                     self.EEEHGHKOCJI = is.read_bool()?;
                 },
-                104 => {
-                    self.script_id = is.read_uint32()?;
+                48 => {
+                    self.AIGEHHNHKPM = is.read_uint32()?;
+                },
+                112 => {
+                    self.KIEKJEFFPHK = is.read_uint32()?;
+                },
+                120 => {
+                    self.KFDAICILNMB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for MDJLOJFMEMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AIGEHHNHKPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AIGEHHNHKPM);
-        }
-        if self.KIEKJEFFPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KIEKJEFFPHK);
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.progress);
-        }
-        if self.KFDAICILNMB != false {
-            my_size += 1 + 1;
+        if self.script_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.script_id);
         }
         if self.EEEHGHKOCJI != false {
             my_size += 1 + 1;
         }
-        if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.script_id);
+        if self.AIGEHHNHKPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AIGEHHNHKPM);
+        }
+        if self.KIEKJEFFPHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KIEKJEFFPHK);
+        }
+        if self.KFDAICILNMB != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for MDJLOJFMEMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AIGEHHNHKPM != 0 {
-            os.write_uint32(11, self.AIGEHHNHKPM)?;
-        }
-        if self.KIEKJEFFPHK != 0 {
-            os.write_uint32(1, self.KIEKJEFFPHK)?;
+        if self.progress != 0 {
+            os.write_uint32(4, self.progress)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.progress != 0 {
-            os.write_uint32(5, self.progress)?;
-        }
-        if self.KFDAICILNMB != false {
-            os.write_bool(14, self.KFDAICILNMB)?;
-        }
-        if self.EEEHGHKOCJI != false {
-            os.write_bool(9, self.EEEHGHKOCJI)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.script_id != 0 {
-            os.write_uint32(13, self.script_id)?;
+            os.write_uint32(7, self.script_id)?;
+        }
+        if self.EEEHGHKOCJI != false {
+            os.write_bool(8, self.EEEHGHKOCJI)?;
+        }
+        if self.AIGEHHNHKPM != 0 {
+            os.write_uint32(6, self.AIGEHHNHKPM)?;
+        }
+        if self.KIEKJEFFPHK != 0 {
+            os.write_uint32(14, self.KIEKJEFFPHK)?;
+        }
+        if self.KFDAICILNMB != false {
+            os.write_bool(15, self.KFDAICILNMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for MDJLOJFMEMC {
     }
 
     fn clear(&mut self) {
+        self.progress = 0;
+        self.reward.clear();
+        self.script_id = 0;
+        self.EEEHGHKOCJI = false;
         self.AIGEHHNHKPM = 0;
         self.KIEKJEFFPHK = 0;
-        self.reward.clear();
-        self.progress = 0;
         self.KFDAICILNMB = false;
-        self.EEEHGHKOCJI = false;
-        self.script_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDJLOJFMEMC {
         static instance: MDJLOJFMEMC = MDJLOJFMEMC {
+            progress: 0,
+            reward: ::protobuf::MessageField::none(),
+            script_id: 0,
+            EEEHGHKOCJI: false,
             AIGEHHNHKPM: 0,
             KIEKJEFFPHK: 0,
-            reward: ::protobuf::MessageField::none(),
-            progress: 0,
             KFDAICILNMB: false,
-            EEEHGHKOCJI: false,
-            script_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,12 +257,12 @@ impl ::protobuf::reflect::ProtobufValue for MDJLOJFMEMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MDJLOJFMEMC.proto\x1a\x0eItemList.proto\"\xf1\x01\n\x0bMDJLOJFMEMC\
-    \x12\x20\n\x0bAIGEHHNHKPM\x18\x0b\x20\x01(\rR\x0bAIGEHHNHKPM\x12\x20\n\
-    \x0bKIEKJEFFPHK\x18\x01\x20\x01(\rR\x0bKIEKJEFFPHK\x12!\n\x06reward\x18\
-    \n\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1a\n\x08progress\x18\x05\x20\
-    \x01(\rR\x08progress\x12\x20\n\x0bKFDAICILNMB\x18\x0e\x20\x01(\x08R\x0bK\
-    FDAICILNMB\x12\x20\n\x0bEEEHGHKOCJI\x18\t\x20\x01(\x08R\x0bEEEHGHKOCJI\
-    \x12\x1b\n\tscript_id\x18\r\x20\x01(\rR\x08scriptIdb\x06proto3\
+    \x12\x1a\n\x08progress\x18\x04\x20\x01(\rR\x08progress\x12!\n\x06reward\
+    \x18\x03\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1b\n\tscript_id\x18\
+    \x07\x20\x01(\rR\x08scriptId\x12\x20\n\x0bEEEHGHKOCJI\x18\x08\x20\x01(\
+    \x08R\x0bEEEHGHKOCJI\x12\x20\n\x0bAIGEHHNHKPM\x18\x06\x20\x01(\rR\x0bAIG\
+    EHHNHKPM\x12\x20\n\x0bKIEKJEFFPHK\x18\x0e\x20\x01(\rR\x0bKIEKJEFFPHK\x12\
+    \x20\n\x0bKFDAICILNMB\x18\x0f\x20\x01(\x08R\x0bKFDAICILNMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

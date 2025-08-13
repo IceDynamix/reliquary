@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CNLMDFFEFJM {
     // message fields
-    // @@protoc_insertion_point(field:CNLMDFFEFJM.CDLBEHLAMMM)
-    pub CDLBEHLAMMM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CNLMDFFEFJM.HFKGGOEPPLE)
     pub HFKGGOEPPLE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CNLMDFFEFJM.CDLBEHLAMMM)
+    pub CDLBEHLAMMM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CNLMDFFEFJM.ALHANJKLBOO)
     pub ALHANJKLBOO: u32,
     // @@protoc_insertion_point(field:CNLMDFFEFJM.GPAGHIAJICD)
@@ -56,14 +56,14 @@ impl CNLMDFFEFJM {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CDLBEHLAMMM",
-            |m: &CNLMDFFEFJM| { &m.CDLBEHLAMMM },
-            |m: &mut CNLMDFFEFJM| { &mut m.CDLBEHLAMMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HFKGGOEPPLE",
             |m: &CNLMDFFEFJM| { &m.HFKGGOEPPLE },
             |m: &mut CNLMDFFEFJM| { &mut m.HFKGGOEPPLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CDLBEHLAMMM",
+            |m: &CNLMDFFEFJM| { &m.CDLBEHLAMMM },
+            |m: &mut CNLMDFFEFJM| { &mut m.CDLBEHLAMMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALHANJKLBOO",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for CNLMDFFEFJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CDLBEHLAMMM)?;
-                },
-                16 => {
-                    self.CDLBEHLAMMM.push(is.read_uint32()?);
-                },
-                106 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.HFKGGOEPPLE)?;
                 },
-                104 => {
+                48 => {
                     self.HFKGGOEPPLE.push(is.read_uint32()?);
                 },
-                32 => {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CDLBEHLAMMM)?;
+                },
+                80 => {
+                    self.CDLBEHLAMMM.push(is.read_uint32()?);
+                },
+                64 => {
                     self.ALHANJKLBOO = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.GPAGHIAJICD = is.read_uint32()?;
                 },
                 tag => {
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CNLMDFFEFJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.CDLBEHLAMMM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.HFKGGOEPPLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HFKGGOEPPLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CDLBEHLAMMM);
         if self.ALHANJKLBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ALHANJKLBOO);
+            my_size += ::protobuf::rt::uint32_size(8, self.ALHANJKLBOO);
         }
         if self.GPAGHIAJICD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GPAGHIAJICD);
+            my_size += ::protobuf::rt::uint32_size(12, self.GPAGHIAJICD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for CNLMDFFEFJM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.CDLBEHLAMMM)?;
-        os.write_repeated_packed_uint32(13, &self.HFKGGOEPPLE)?;
+        os.write_repeated_packed_uint32(6, &self.HFKGGOEPPLE)?;
+        os.write_repeated_packed_uint32(10, &self.CDLBEHLAMMM)?;
         if self.ALHANJKLBOO != 0 {
-            os.write_uint32(4, self.ALHANJKLBOO)?;
+            os.write_uint32(8, self.ALHANJKLBOO)?;
         }
         if self.GPAGHIAJICD != 0 {
-            os.write_uint32(3, self.GPAGHIAJICD)?;
+            os.write_uint32(12, self.GPAGHIAJICD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,8 +162,8 @@ impl ::protobuf::Message for CNLMDFFEFJM {
     }
 
     fn clear(&mut self) {
-        self.CDLBEHLAMMM.clear();
         self.HFKGGOEPPLE.clear();
+        self.CDLBEHLAMMM.clear();
         self.ALHANJKLBOO = 0;
         self.GPAGHIAJICD = 0;
         self.special_fields.clear();
@@ -171,8 +171,8 @@ impl ::protobuf::Message for CNLMDFFEFJM {
 
     fn default_instance() -> &'static CNLMDFFEFJM {
         static instance: CNLMDFFEFJM = CNLMDFFEFJM {
-            CDLBEHLAMMM: ::std::vec::Vec::new(),
             HFKGGOEPPLE: ::std::vec::Vec::new(),
+            CDLBEHLAMMM: ::std::vec::Vec::new(),
             ALHANJKLBOO: 0,
             GPAGHIAJICD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for CNLMDFFEFJM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CNLMDFFEFJM.proto\"\x95\x01\n\x0bCNLMDFFEFJM\x12\x20\n\x0bCDLBEHLA\
-    MMM\x18\x02\x20\x03(\rR\x0bCDLBEHLAMMM\x12\x20\n\x0bHFKGGOEPPLE\x18\r\
-    \x20\x03(\rR\x0bHFKGGOEPPLE\x12\x20\n\x0bALHANJKLBOO\x18\x04\x20\x01(\rR\
-    \x0bALHANJKLBOO\x12\x20\n\x0bGPAGHIAJICD\x18\x03\x20\x01(\rR\x0bGPAGHIAJ\
+    \n\x11CNLMDFFEFJM.proto\"\x95\x01\n\x0bCNLMDFFEFJM\x12\x20\n\x0bHFKGGOEP\
+    PLE\x18\x06\x20\x03(\rR\x0bHFKGGOEPPLE\x12\x20\n\x0bCDLBEHLAMMM\x18\n\
+    \x20\x03(\rR\x0bCDLBEHLAMMM\x12\x20\n\x0bALHANJKLBOO\x18\x08\x20\x01(\rR\
+    \x0bALHANJKLBOO\x12\x20\n\x0bGPAGHIAJICD\x18\x0c\x20\x01(\rR\x0bGPAGHIAJ\
     ICDb\x06proto3\
 ";
 

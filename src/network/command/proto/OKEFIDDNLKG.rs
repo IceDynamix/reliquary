@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKEFIDDNLKG {
     // message fields
-    // @@protoc_insertion_point(field:OKEFIDDNLKG.DHMNNEMGFBL)
-    pub DHMNNEMGFBL: u32,
+    // @@protoc_insertion_point(field:OKEFIDDNLKG.buff_select_id)
+    pub buff_select_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OKEFIDDNLKG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OKEFIDDNLKG {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHMNNEMGFBL",
-            |m: &OKEFIDDNLKG| { &m.DHMNNEMGFBL },
-            |m: &mut OKEFIDDNLKG| { &mut m.DHMNNEMGFBL },
+            "buff_select_id",
+            |m: &OKEFIDDNLKG| { &m.buff_select_id },
+            |m: &mut OKEFIDDNLKG| { &mut m.buff_select_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKEFIDDNLKG>(
             "OKEFIDDNLKG",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for OKEFIDDNLKG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.DHMNNEMGFBL = is.read_uint32()?;
+                    self.buff_select_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for OKEFIDDNLKG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHMNNEMGFBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DHMNNEMGFBL);
+        if self.buff_select_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.buff_select_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for OKEFIDDNLKG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHMNNEMGFBL != 0 {
-            os.write_uint32(4, self.DHMNNEMGFBL)?;
+        if self.buff_select_id != 0 {
+            os.write_uint32(4, self.buff_select_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for OKEFIDDNLKG {
     }
 
     fn clear(&mut self) {
-        self.DHMNNEMGFBL = 0;
+        self.buff_select_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKEFIDDNLKG {
         static instance: OKEFIDDNLKG = OKEFIDDNLKG {
-            DHMNNEMGFBL: 0,
+            buff_select_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for OKEFIDDNLKG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKEFIDDNLKG.proto\"/\n\x0bOKEFIDDNLKG\x12\x20\n\x0bDHMNNEMGFBL\x18\
-    \x04\x20\x01(\rR\x0bDHMNNEMGFBLb\x06proto3\
+    \n\x11OKEFIDDNLKG.proto\"3\n\x0bOKEFIDDNLKG\x12$\n\x0ebuff_select_id\x18\
+    \x04\x20\x01(\rR\x0cbuffSelectIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

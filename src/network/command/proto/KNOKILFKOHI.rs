@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNOKILFKOHI {
     // message fields
-    // @@protoc_insertion_point(field:KNOKILFKOHI.JOOOEAFOKHK)
-    pub JOOOEAFOKHK: u32,
     // @@protoc_insertion_point(field:KNOKILFKOHI.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:KNOKILFKOHI.JOOOEAFOKHK)
+    pub JOOOEAFOKHK: u32,
     // @@protoc_insertion_point(field:KNOKILFKOHI.AOPIKHKKGLM)
     pub AOPIKHKKGLM: u32,
     // special fields
@@ -54,14 +54,14 @@ impl KNOKILFKOHI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOOOEAFOKHK",
-            |m: &KNOKILFKOHI| { &m.JOOOEAFOKHK },
-            |m: &mut KNOKILFKOHI| { &mut m.JOOOEAFOKHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &KNOKILFKOHI| { &m.avatar_id },
             |m: &mut KNOKILFKOHI| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOOOEAFOKHK",
+            |m: &KNOKILFKOHI| { &m.JOOOEAFOKHK },
+            |m: &mut KNOKILFKOHI| { &mut m.JOOOEAFOKHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AOPIKHKKGLM",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for KNOKILFKOHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.JOOOEAFOKHK = is.read_uint32()?;
-                },
-                48 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 96 => {
+                    self.JOOOEAFOKHK = is.read_uint32()?;
+                },
+                72 => {
                     self.AOPIKHKKGLM = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KNOKILFKOHI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JOOOEAFOKHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JOOOEAFOKHK);
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+        }
+        if self.JOOOEAFOKHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JOOOEAFOKHK);
         }
         if self.AOPIKHKKGLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AOPIKHKKGLM);
+            my_size += ::protobuf::rt::uint32_size(9, self.AOPIKHKKGLM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KNOKILFKOHI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JOOOEAFOKHK != 0 {
-            os.write_uint32(7, self.JOOOEAFOKHK)?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
+        }
+        if self.JOOOEAFOKHK != 0 {
+            os.write_uint32(12, self.JOOOEAFOKHK)?;
         }
         if self.AOPIKHKKGLM != 0 {
-            os.write_uint32(12, self.AOPIKHKKGLM)?;
+            os.write_uint32(9, self.AOPIKHKKGLM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KNOKILFKOHI {
     }
 
     fn clear(&mut self) {
-        self.JOOOEAFOKHK = 0;
         self.avatar_id = 0;
+        self.JOOOEAFOKHK = 0;
         self.AOPIKHKKGLM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNOKILFKOHI {
         static instance: KNOKILFKOHI = KNOKILFKOHI {
-            JOOOEAFOKHK: 0,
             avatar_id: 0,
+            JOOOEAFOKHK: 0,
             AOPIKHKKGLM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KNOKILFKOHI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNOKILFKOHI.proto\"n\n\x0bKNOKILFKOHI\x12\x20\n\x0bJOOOEAFOKHK\x18\
-    \x07\x20\x01(\rR\x0bJOOOEAFOKHK\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\
-    \x08avatarId\x12\x20\n\x0bAOPIKHKKGLM\x18\x0c\x20\x01(\rR\x0bAOPIKHKKGLM\
-    b\x06proto3\
+    \n\x11KNOKILFKOHI.proto\"n\n\x0bKNOKILFKOHI\x12\x1b\n\tavatar_id\x18\r\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bJOOOEAFOKHK\x18\x0c\x20\x01(\rR\
+    \x0bJOOOEAFOKHK\x12\x20\n\x0bAOPIKHKKGLM\x18\t\x20\x01(\rR\x0bAOPIKHKKGL\
+    Mb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

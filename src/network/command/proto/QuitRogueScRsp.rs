@@ -31,7 +31,7 @@ pub struct QuitRogueScRsp {
     // @@protoc_insertion_point(field:QuitRogueScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:QuitRogueScRsp.rogue_game_info)
-    pub rogue_game_info: ::protobuf::MessageField<super::ILNFEFOBNEG::ILNFEFOBNEG>,
+    pub rogue_game_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:QuitRogueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl QuitRogueScRsp {
             |m: &QuitRogueScRsp| { &m.retcode },
             |m: &mut QuitRogueScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILNFEFOBNEG::ILNFEFOBNEG>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
             "rogue_game_info",
             |m: &QuitRogueScRsp| { &m.rogue_game_info },
             |m: &mut QuitRogueScRsp| { &mut m.rogue_game_info },
@@ -82,7 +82,7 @@ impl ::protobuf::Message for QuitRogueScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_game_info)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for QuitRogueScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.rogue_game_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for QuitRogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14QuitRogueScRsp.proto\x1a\x11ILNFEFOBNEG.proto\"`\n\x0eQuitRogueScR\
-    sp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x124\n\x0frogue_g\
-    ame_info\x18\r\x20\x01(\x0b2\x0c.ILNFEFOBNEGR\rrogueGameInfob\x06proto3\
+    \n\x14QuitRogueScRsp.proto\x1a\x0fRogueInfo.proto\"^\n\x0eQuitRogueScRsp\
+    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x122\n\x0frogue_gam\
+    e_info\x18\x0b\x20\x01(\x0b2\n.RogueInfoR\rrogueGameInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ILNFEFOBNEG::file_descriptor().clone());
+            deps.push(super::RogueInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(QuitRogueScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

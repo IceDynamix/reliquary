@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLPPDLECCLI {
     // message fields
-    // @@protoc_insertion_point(field:GLPPDLECCLI.OMFDHFGBGAA)
-    pub OMFDHFGBGAA: ::std::vec::Vec<super::IILHOAKJDNH::IILHOAKJDNH>,
+    // @@protoc_insertion_point(field:GLPPDLECCLI.game_formula_info)
+    pub game_formula_info: ::std::vec::Vec<super::IILHOAKJDNH::IILHOAKJDNH>,
     // special fields
     // @@protoc_insertion_point(special_field:GLPPDLECCLI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GLPPDLECCLI {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OMFDHFGBGAA",
-            |m: &GLPPDLECCLI| { &m.OMFDHFGBGAA },
-            |m: &mut GLPPDLECCLI| { &mut m.OMFDHFGBGAA },
+            "game_formula_info",
+            |m: &GLPPDLECCLI| { &m.game_formula_info },
+            |m: &mut GLPPDLECCLI| { &mut m.game_formula_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLPPDLECCLI>(
             "GLPPDLECCLI",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for GLPPDLECCLI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 82 => {
-                    self.OMFDHFGBGAA.push(is.read_message()?);
+                    self.game_formula_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GLPPDLECCLI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OMFDHFGBGAA {
+        for value in &self.game_formula_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GLPPDLECCLI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OMFDHFGBGAA {
+        for v in &self.game_formula_info {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GLPPDLECCLI {
     }
 
     fn clear(&mut self) {
-        self.OMFDHFGBGAA.clear();
+        self.game_formula_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLPPDLECCLI {
         static instance: GLPPDLECCLI = GLPPDLECCLI {
-            OMFDHFGBGAA: ::std::vec::Vec::new(),
+            game_formula_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GLPPDLECCLI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLPPDLECCLI.proto\x1a\x11IILHOAKJDNH.proto\"=\n\x0bGLPPDLECCLI\x12\
-    .\n\x0bOMFDHFGBGAA\x18\n\x20\x03(\x0b2\x0c.IILHOAKJDNHR\x0bOMFDHFGBGAAb\
-    \x06proto3\
+    \n\x11GLPPDLECCLI.proto\x1a\x11IILHOAKJDNH.proto\"G\n\x0bGLPPDLECCLI\x12\
+    8\n\x11game_formula_info\x18\n\x20\x03(\x0b2\x0c.IILHOAKJDNHR\x0fgameFor\
+    mulaInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

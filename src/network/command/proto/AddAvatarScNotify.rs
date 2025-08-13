@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddAvatarScNotify {
     // message fields
+    // @@protoc_insertion_point(field:AddAvatarScNotify.base_avatar_id)
+    pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:AddAvatarScNotify.src)
     pub src: ::protobuf::EnumOrUnknown<super::AddAvatarSrcState::AddAvatarSrcState>,
     // @@protoc_insertion_point(field:AddAvatarScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:AddAvatarScNotify.base_avatar_id)
-    pub base_avatar_id: u32,
     // @@protoc_insertion_point(field:AddAvatarScNotify.is_new)
     pub is_new: bool,
     // special fields
@@ -56,6 +56,11 @@ impl AddAvatarScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "base_avatar_id",
+            |m: &AddAvatarScNotify| { &m.base_avatar_id },
+            |m: &mut AddAvatarScNotify| { &mut m.base_avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "src",
             |m: &AddAvatarScNotify| { &m.src },
             |m: &mut AddAvatarScNotify| { &mut m.src },
@@ -64,11 +69,6 @@ impl AddAvatarScNotify {
             "reward",
             |m: &AddAvatarScNotify| { &m.reward },
             |m: &mut AddAvatarScNotify| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &AddAvatarScNotify| { &m.base_avatar_id },
-            |m: &mut AddAvatarScNotify| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_new",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for AddAvatarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.src = is.read_enum_or_unknown()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                48 => {
+                24 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                80 => {
+                16 => {
+                    self.src = is.read_enum_or_unknown()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                72 => {
                     self.is_new = is.read_bool()?;
                 },
                 tag => {
@@ -117,15 +117,15 @@ impl ::protobuf::Message for AddAvatarScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.base_avatar_id);
+        }
         if self.src != ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.src.value());
+            my_size += ::protobuf::rt::int32_size(2, self.src.value());
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.base_avatar_id);
         }
         if self.is_new != false {
             my_size += 1 + 1;
@@ -136,17 +136,17 @@ impl ::protobuf::Message for AddAvatarScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.base_avatar_id != 0 {
+            os.write_uint32(3, self.base_avatar_id)?;
+        }
         if self.src != ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.src))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.src))?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.base_avatar_id != 0 {
-            os.write_uint32(6, self.base_avatar_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.is_new != false {
-            os.write_bool(10, self.is_new)?;
+            os.write_bool(9, self.is_new)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for AddAvatarScNotify {
     }
 
     fn clear(&mut self) {
+        self.base_avatar_id = 0;
         self.src = ::protobuf::EnumOrUnknown::new(super::AddAvatarSrcState::AddAvatarSrcState::ADD_AVATAR_SRC_NONE);
         self.reward.clear();
-        self.base_avatar_id = 0;
         self.is_new = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddAvatarScNotify {
         static instance: AddAvatarScNotify = AddAvatarScNotify {
+            base_avatar_id: 0,
             src: ::protobuf::EnumOrUnknown::from_i32(0),
             reward: ::protobuf::MessageField::none(),
-            base_avatar_id: 0,
             is_new: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for AddAvatarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AddAvatarScNotify.proto\x1a\x17AddAvatarSrcState.proto\x1a\x0eItem\
-    List.proto\"\x99\x01\n\x11AddAvatarScNotify\x12$\n\x03src\x18\x0f\x20\
-    \x01(\x0e2\x12.AddAvatarSrcStateR\x03src\x12!\n\x06reward\x18\x07\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12$\n\x0ebase_avatar_id\x18\x06\x20\
-    \x01(\rR\x0cbaseAvatarId\x12\x15\n\x06is_new\x18\n\x20\x01(\x08R\x05isNe\
-    wb\x06proto3\
+    List.proto\"\x99\x01\n\x11AddAvatarScNotify\x12$\n\x0ebase_avatar_id\x18\
+    \x03\x20\x01(\rR\x0cbaseAvatarId\x12$\n\x03src\x18\x02\x20\x01(\x0e2\x12\
+    .AddAvatarSrcStateR\x03src\x12!\n\x06reward\x18\x05\x20\x01(\x0b2\t.Item\
+    ListR\x06reward\x12\x15\n\x06is_new\x18\t\x20\x01(\x08R\x05isNewb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

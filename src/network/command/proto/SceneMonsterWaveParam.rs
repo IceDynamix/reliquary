@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneMonsterWaveParam {
     // message fields
-    // @@protoc_insertion_point(field:SceneMonsterWaveParam.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:SceneMonsterWaveParam.hard_level_group)
-    pub hard_level_group: u32,
     // @@protoc_insertion_point(field:SceneMonsterWaveParam.DNEAMPLLFME)
     pub DNEAMPLLFME: u32,
+    // @@protoc_insertion_point(field:SceneMonsterWaveParam.hard_level_group)
+    pub hard_level_group: u32,
+    // @@protoc_insertion_point(field:SceneMonsterWaveParam.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:SceneMonsterWaveParam.elite_group)
     pub elite_group: u32,
     // special fields
@@ -56,9 +56,9 @@ impl SceneMonsterWaveParam {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &SceneMonsterWaveParam| { &m.level },
-            |m: &mut SceneMonsterWaveParam| { &mut m.level },
+            "DNEAMPLLFME",
+            |m: &SceneMonsterWaveParam| { &m.DNEAMPLLFME },
+            |m: &mut SceneMonsterWaveParam| { &mut m.DNEAMPLLFME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hard_level_group",
@@ -66,9 +66,9 @@ impl SceneMonsterWaveParam {
             |m: &mut SceneMonsterWaveParam| { &mut m.hard_level_group },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNEAMPLLFME",
-            |m: &SceneMonsterWaveParam| { &m.DNEAMPLLFME },
-            |m: &mut SceneMonsterWaveParam| { &mut m.DNEAMPLLFME },
+            "level",
+            |m: &SceneMonsterWaveParam| { &m.level },
+            |m: &mut SceneMonsterWaveParam| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "elite_group",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.level = is.read_uint32()?;
-                },
-                72 => {
-                    self.hard_level_group = is.read_uint32()?;
-                },
                 16 => {
                     self.DNEAMPLLFME = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
+                    self.hard_level_group = is.read_uint32()?;
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
+                },
+                24 => {
                     self.elite_group = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
-        }
-        if self.hard_level_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.hard_level_group);
-        }
         if self.DNEAMPLLFME != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.DNEAMPLLFME);
         }
+        if self.hard_level_group != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.hard_level_group);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
         if self.elite_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.elite_group);
+            my_size += ::protobuf::rt::uint32_size(3, self.elite_group);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(7, self.level)?;
-        }
-        if self.hard_level_group != 0 {
-            os.write_uint32(9, self.hard_level_group)?;
-        }
         if self.DNEAMPLLFME != 0 {
             os.write_uint32(2, self.DNEAMPLLFME)?;
         }
+        if self.hard_level_group != 0 {
+            os.write_uint32(10, self.hard_level_group)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
+        }
         if self.elite_group != 0 {
-            os.write_uint32(5, self.elite_group)?;
+            os.write_uint32(3, self.elite_group)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.hard_level_group = 0;
         self.DNEAMPLLFME = 0;
+        self.hard_level_group = 0;
+        self.level = 0;
         self.elite_group = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneMonsterWaveParam {
         static instance: SceneMonsterWaveParam = SceneMonsterWaveParam {
-            level: 0,
-            hard_level_group: 0,
             DNEAMPLLFME: 0,
+            hard_level_group: 0,
+            level: 0,
             elite_group: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonsterWaveParam {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSceneMonsterWaveParam.proto\"\x9a\x01\n\x15SceneMonsterWaveParam\
-    \x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05level\x12(\n\x10hard_level_gr\
-    oup\x18\t\x20\x01(\rR\x0ehardLevelGroup\x12\x20\n\x0bDNEAMPLLFME\x18\x02\
-    \x20\x01(\rR\x0bDNEAMPLLFME\x12\x1f\n\x0belite_group\x18\x05\x20\x01(\rR\
+    \x12\x20\n\x0bDNEAMPLLFME\x18\x02\x20\x01(\rR\x0bDNEAMPLLFME\x12(\n\x10h\
+    ard_level_group\x18\n\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05level\
+    \x18\r\x20\x01(\rR\x05level\x12\x1f\n\x0belite_group\x18\x03\x20\x01(\rR\
     \neliteGroupb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEDBONHALOD)?;
                 },
-                90 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHELGAOABJJ)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MEDBONHALOD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.EHELGAOABJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SoloUseItemNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FightMatch3SoloUseItemNotify.proto\x1a\x11BCEKDIDFLCM.proto\x1a\x11M\
     DOHAFBEEPK.proto\"~\n\x1cFightMatch3SoloUseItemNotify\x12.\n\x0bMEDBONHA\
-    LOD\x18\n\x20\x01(\x0b2\x0c.BCEKDIDFLCMR\x0bMEDBONHALOD\x12.\n\x0bEHELGA\
-    OABJJ\x18\x0b\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bEHELGAOABJJb\x06proto3\
+    LOD\x18\x08\x20\x01(\x0b2\x0c.BCEKDIDFLCMR\x0bMEDBONHALOD\x12.\n\x0bEHEL\
+    GAOABJJ\x18\x0c\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bEHELGAOABJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

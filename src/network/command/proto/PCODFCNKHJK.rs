@@ -79,10 +79,10 @@ impl ::protobuf::Message for PCODFCNKHJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.DCNPHBDDDIP = is.read_uint32()?;
                 },
-                48 => {
+                120 => {
                     self.EOFELDEAPEO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PCODFCNKHJK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCNPHBDDDIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DCNPHBDDDIP);
+            my_size += ::protobuf::rt::uint32_size(4, self.DCNPHBDDDIP);
         }
         if self.EOFELDEAPEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EOFELDEAPEO);
+            my_size += ::protobuf::rt::uint32_size(15, self.EOFELDEAPEO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PCODFCNKHJK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCNPHBDDDIP != 0 {
-            os.write_uint32(9, self.DCNPHBDDDIP)?;
+            os.write_uint32(4, self.DCNPHBDDDIP)?;
         }
         if self.EOFELDEAPEO != 0 {
-            os.write_uint32(6, self.EOFELDEAPEO)?;
+            os.write_uint32(15, self.EOFELDEAPEO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PCODFCNKHJK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PCODFCNKHJK.proto\"Q\n\x0bPCODFCNKHJK\x12\x20\n\x0bDCNPHBDDDIP\x18\
-    \t\x20\x01(\rR\x0bDCNPHBDDDIP\x12\x20\n\x0bEOFELDEAPEO\x18\x06\x20\x01(\
-    \rR\x0bEOFELDEAPEOb\x06proto3\
+    \x04\x20\x01(\rR\x0bDCNPHBDDDIP\x12\x20\n\x0bEOFELDEAPEO\x18\x0f\x20\x01\
+    (\rR\x0bEOFELDEAPEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

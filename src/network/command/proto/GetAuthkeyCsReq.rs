@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAuthkeyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAuthkeyCsReq.sign_type)
-    pub sign_type: u32,
     // @@protoc_insertion_point(field:GetAuthkeyCsReq.authkey_ver)
     pub authkey_ver: u32,
+    // @@protoc_insertion_point(field:GetAuthkeyCsReq.sign_type)
+    pub sign_type: u32,
     // @@protoc_insertion_point(field:GetAuthkeyCsReq.auth_appid)
     pub auth_appid: ::std::string::String,
     // special fields
@@ -54,14 +54,14 @@ impl GetAuthkeyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sign_type",
-            |m: &GetAuthkeyCsReq| { &m.sign_type },
-            |m: &mut GetAuthkeyCsReq| { &mut m.sign_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "authkey_ver",
             |m: &GetAuthkeyCsReq| { &m.authkey_ver },
             |m: &mut GetAuthkeyCsReq| { &mut m.authkey_ver },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "sign_type",
+            |m: &GetAuthkeyCsReq| { &m.sign_type },
+            |m: &mut GetAuthkeyCsReq| { &mut m.sign_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "auth_appid",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.sign_type = is.read_uint32()?;
-                },
-                112 => {
+                104 => {
                     self.authkey_ver = is.read_uint32()?;
                 },
-                34 => {
+                40 => {
+                    self.sign_type = is.read_uint32()?;
+                },
+                10 => {
                     self.auth_appid = is.read_string()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.sign_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.sign_type);
-        }
         if self.authkey_ver != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.authkey_ver);
+            my_size += ::protobuf::rt::uint32_size(13, self.authkey_ver);
+        }
+        if self.sign_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.sign_type);
         }
         if !self.auth_appid.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.auth_appid);
+            my_size += ::protobuf::rt::string_size(1, &self.auth_appid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.sign_type != 0 {
-            os.write_uint32(2, self.sign_type)?;
-        }
         if self.authkey_ver != 0 {
-            os.write_uint32(14, self.authkey_ver)?;
+            os.write_uint32(13, self.authkey_ver)?;
+        }
+        if self.sign_type != 0 {
+            os.write_uint32(5, self.sign_type)?;
         }
         if !self.auth_appid.is_empty() {
-            os.write_string(4, &self.auth_appid)?;
+            os.write_string(1, &self.auth_appid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GetAuthkeyCsReq {
     }
 
     fn clear(&mut self) {
-        self.sign_type = 0;
         self.authkey_ver = 0;
+        self.sign_type = 0;
         self.auth_appid.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAuthkeyCsReq {
         static instance: GetAuthkeyCsReq = GetAuthkeyCsReq {
-            sign_type: 0,
             authkey_ver: 0,
+            sign_type: 0,
             auth_appid: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAuthkeyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetAuthkeyCsReq.proto\"n\n\x0fGetAuthkeyCsReq\x12\x1b\n\tsign_type\
-    \x18\x02\x20\x01(\rR\x08signType\x12\x1f\n\x0bauthkey_ver\x18\x0e\x20\
-    \x01(\rR\nauthkeyVer\x12\x1d\n\nauth_appid\x18\x04\x20\x01(\tR\tauthAppi\
-    db\x06proto3\
+    \n\x15GetAuthkeyCsReq.proto\"n\n\x0fGetAuthkeyCsReq\x12\x1f\n\x0bauthkey\
+    _ver\x18\r\x20\x01(\rR\nauthkeyVer\x12\x1b\n\tsign_type\x18\x05\x20\x01(\
+    \rR\x08signType\x12\x1d\n\nauth_appid\x18\x01\x20\x01(\tR\tauthAppidb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

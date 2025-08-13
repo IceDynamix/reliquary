@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HLDHEMLPJNG {
     // message fields
-    // @@protoc_insertion_point(field:HLDHEMLPJNG.ACDOPCBMPNL)
-    pub ACDOPCBMPNL: u32,
     // @@protoc_insertion_point(field:HLDHEMLPJNG.OOHNKOJHDHO)
     pub OOHNKOJHDHO: u32,
+    // @@protoc_insertion_point(field:HLDHEMLPJNG.ACDOPCBMPNL)
+    pub ACDOPCBMPNL: u32,
     // message oneof groups
-    pub CBCPHFDKCOD: ::std::option::Option<hldhemlpjng::CBCPHFDKCOD>,
+    pub NGIKDJMNGBG: ::std::option::Option<hldhemlpjng::NGIKDJMNGBG>,
     // special fields
     // @@protoc_insertion_point(special_field:HLDHEMLPJNG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,39 +50,39 @@ impl HLDHEMLPJNG {
         ::std::default::Default::default()
     }
 
-    // .CNLMDFFEFJM EJCOLGNJGDC = 14;
+    // .CNLMDFFEFJM EJCOLGNJGDC = 5;
 
     pub fn EJCOLGNJGDC(&self) -> &super::CNLMDFFEFJM::CNLMDFFEFJM {
-        match self.CBCPHFDKCOD {
-            ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(ref v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(ref v)) => v,
             _ => <super::CNLMDFFEFJM::CNLMDFFEFJM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_EJCOLGNJGDC(&mut self) {
-        self.CBCPHFDKCOD = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
     }
 
     pub fn has_EJCOLGNJGDC(&self) -> bool {
-        match self.CBCPHFDKCOD {
-            ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(..)) => true,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_EJCOLGNJGDC(&mut self, v: super::CNLMDFFEFJM::CNLMDFFEFJM) {
-        self.CBCPHFDKCOD = ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(v))
+        self.NGIKDJMNGBG = ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_EJCOLGNJGDC(&mut self) -> &mut super::CNLMDFFEFJM::CNLMDFFEFJM {
-        if let ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(_)) = self.CBCPHFDKCOD {
+        if let ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(_)) = self.NGIKDJMNGBG {
         } else {
-            self.CBCPHFDKCOD = ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(super::CNLMDFFEFJM::CNLMDFFEFJM::new()));
+            self.NGIKDJMNGBG = ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(super::CNLMDFFEFJM::CNLMDFFEFJM::new()));
         }
-        match self.CBCPHFDKCOD {
-            ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(ref mut v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl HLDHEMLPJNG {
     // Take field
     pub fn take_EJCOLGNJGDC(&mut self) -> super::CNLMDFFEFJM::CNLMDFFEFJM {
         if self.has_EJCOLGNJGDC() {
-            match self.CBCPHFDKCOD.take() {
-                ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(v)) => v,
+            match self.NGIKDJMNGBG.take() {
+                ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -103,14 +103,14 @@ impl HLDHEMLPJNG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACDOPCBMPNL",
-            |m: &HLDHEMLPJNG| { &m.ACDOPCBMPNL },
-            |m: &mut HLDHEMLPJNG| { &mut m.ACDOPCBMPNL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OOHNKOJHDHO",
             |m: &HLDHEMLPJNG| { &m.OOHNKOJHDHO },
             |m: &mut HLDHEMLPJNG| { &mut m.OOHNKOJHDHO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACDOPCBMPNL",
+            |m: &HLDHEMLPJNG| { &m.ACDOPCBMPNL },
+            |m: &mut HLDHEMLPJNG| { &mut m.ACDOPCBMPNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CNLMDFFEFJM::CNLMDFFEFJM>(
             "EJCOLGNJGDC",
@@ -119,7 +119,7 @@ impl HLDHEMLPJNG {
             HLDHEMLPJNG::mut_EJCOLGNJGDC,
             HLDHEMLPJNG::set_EJCOLGNJGDC,
         ));
-        oneofs.push(hldhemlpjng::CBCPHFDKCOD::generated_oneof_descriptor_data());
+        oneofs.push(hldhemlpjng::NGIKDJMNGBG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HLDHEMLPJNG>(
             "HLDHEMLPJNG",
             fields,
@@ -138,14 +138,14 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ACDOPCBMPNL = is.read_uint32()?;
-                },
-                32 => {
+                24 => {
                     self.OOHNKOJHDHO = is.read_uint32()?;
                 },
-                114 => {
-                    self.CBCPHFDKCOD = ::std::option::Option::Some(hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(is.read_message()?));
+                72 => {
+                    self.ACDOPCBMPNL = is.read_uint32()?;
+                },
+                42 => {
+                    self.NGIKDJMNGBG = ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,15 +159,15 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ACDOPCBMPNL);
-        }
         if self.OOHNKOJHDHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OOHNKOJHDHO);
+            my_size += ::protobuf::rt::uint32_size(3, self.OOHNKOJHDHO);
         }
-        if let ::std::option::Option::Some(ref v) = self.CBCPHFDKCOD {
+        if self.ACDOPCBMPNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ACDOPCBMPNL);
+        }
+        if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
-                &hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(ref v) => {
+                &hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -179,16 +179,16 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(11, self.ACDOPCBMPNL)?;
-        }
         if self.OOHNKOJHDHO != 0 {
-            os.write_uint32(4, self.OOHNKOJHDHO)?;
+            os.write_uint32(3, self.OOHNKOJHDHO)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.CBCPHFDKCOD {
+        if self.ACDOPCBMPNL != 0 {
+            os.write_uint32(9, self.ACDOPCBMPNL)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
-                &hldhemlpjng::CBCPHFDKCOD::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -209,17 +209,17 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     }
 
     fn clear(&mut self) {
-        self.ACDOPCBMPNL = 0;
         self.OOHNKOJHDHO = 0;
-        self.CBCPHFDKCOD = ::std::option::Option::None;
+        self.ACDOPCBMPNL = 0;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HLDHEMLPJNG {
         static instance: HLDHEMLPJNG = HLDHEMLPJNG {
-            ACDOPCBMPNL: 0,
             OOHNKOJHDHO: 0,
-            CBCPHFDKCOD: ::std::option::Option::None,
+            ACDOPCBMPNL: 0,
+            NGIKDJMNGBG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -248,35 +248,35 @@ pub mod hldhemlpjng {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:HLDHEMLPJNG.CBCPHFDKCOD)
-    pub enum CBCPHFDKCOD {
+    // @@protoc_insertion_point(oneof:HLDHEMLPJNG.NGIKDJMNGBG)
+    pub enum NGIKDJMNGBG {
         // @@protoc_insertion_point(oneof_field:HLDHEMLPJNG.EJCOLGNJGDC)
         EJCOLGNJGDC(super::super::CNLMDFFEFJM::CNLMDFFEFJM),
     }
 
-    impl ::protobuf::Oneof for CBCPHFDKCOD {
+    impl ::protobuf::Oneof for NGIKDJMNGBG {
     }
 
-    impl ::protobuf::OneofFull for CBCPHFDKCOD {
+    impl ::protobuf::OneofFull for NGIKDJMNGBG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::HLDHEMLPJNG as ::protobuf::MessageFull>::descriptor().oneof_by_name("CBCPHFDKCOD").unwrap()).clone()
+            descriptor.get(|| <super::HLDHEMLPJNG as ::protobuf::MessageFull>::descriptor().oneof_by_name("NGIKDJMNGBG").unwrap()).clone()
         }
     }
 
-    impl CBCPHFDKCOD {
+    impl NGIKDJMNGBG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CBCPHFDKCOD>("CBCPHFDKCOD")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NGIKDJMNGBG>("NGIKDJMNGBG")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLDHEMLPJNG.proto\x1a\x11CNLMDFFEFJM.proto\"\x92\x01\n\x0bHLDHEMLP\
-    JNG\x12\x20\n\x0bACDOPCBMPNL\x18\x0b\x20\x01(\rR\x0bACDOPCBMPNL\x12\x20\
-    \n\x0bOOHNKOJHDHO\x18\x04\x20\x01(\rR\x0bOOHNKOJHDHO\x120\n\x0bEJCOLGNJG\
-    DC\x18\x0e\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bCBCP\
-    HFDKCODb\x06proto3\
+    JNG\x12\x20\n\x0bOOHNKOJHDHO\x18\x03\x20\x01(\rR\x0bOOHNKOJHDHO\x12\x20\
+    \n\x0bACDOPCBMPNL\x18\t\x20\x01(\rR\x0bACDOPCBMPNL\x120\n\x0bEJCOLGNJGDC\
+    \x18\x05\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bNGIKDJ\
+    MNGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

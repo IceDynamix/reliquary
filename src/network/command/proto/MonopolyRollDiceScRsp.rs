@@ -79,7 +79,7 @@ impl ::protobuf::Message for MonopolyRollDiceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
                     self.BLHIABBKGPB = is.read_uint32()?;
                 },
                 112 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyRollDiceScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BLHIABBKGPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BLHIABBKGPB);
+            my_size += ::protobuf::rt::uint32_size(6, self.BLHIABBKGPB);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MonopolyRollDiceScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BLHIABBKGPB != 0 {
-            os.write_uint32(5, self.BLHIABBKGPB)?;
+            os.write_uint32(6, self.BLHIABBKGPB)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyRollDiceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMonopolyRollDiceScRsp.proto\"S\n\x15MonopolyRollDiceScRsp\x12\x20\
-    \n\x0bBLHIABBKGPB\x18\x05\x20\x01(\rR\x0bBLHIABBKGPB\x12\x18\n\x07retcod\
+    \n\x0bBLHIABBKGPB\x18\x06\x20\x01(\rR\x0bBLHIABBKGPB\x12\x18\n\x07retcod\
     e\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

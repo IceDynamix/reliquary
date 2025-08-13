@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorldUnlockScRsp {
     // message fields
-    // @@protoc_insertion_point(field:WorldUnlockScRsp.NPEBNEKDLEN)
-    pub NPEBNEKDLEN: u32,
     // @@protoc_insertion_point(field:WorldUnlockScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:WorldUnlockScRsp.NPEBNEKDLEN)
+    pub NPEBNEKDLEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WorldUnlockScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl WorldUnlockScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPEBNEKDLEN",
-            |m: &WorldUnlockScRsp| { &m.NPEBNEKDLEN },
-            |m: &mut WorldUnlockScRsp| { &mut m.NPEBNEKDLEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &WorldUnlockScRsp| { &m.retcode },
             |m: &mut WorldUnlockScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NPEBNEKDLEN",
+            |m: &WorldUnlockScRsp| { &m.NPEBNEKDLEN },
+            |m: &mut WorldUnlockScRsp| { &mut m.NPEBNEKDLEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorldUnlockScRsp>(
             "WorldUnlockScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for WorldUnlockScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NPEBNEKDLEN = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.NPEBNEKDLEN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for WorldUnlockScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPEBNEKDLEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NPEBNEKDLEN);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.NPEBNEKDLEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NPEBNEKDLEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for WorldUnlockScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPEBNEKDLEN != 0 {
-            os.write_uint32(4, self.NPEBNEKDLEN)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.NPEBNEKDLEN != 0 {
+            os.write_uint32(5, self.NPEBNEKDLEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for WorldUnlockScRsp {
     }
 
     fn clear(&mut self) {
-        self.NPEBNEKDLEN = 0;
         self.retcode = 0;
+        self.NPEBNEKDLEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WorldUnlockScRsp {
         static instance: WorldUnlockScRsp = WorldUnlockScRsp {
-            NPEBNEKDLEN: 0,
             retcode: 0,
+            NPEBNEKDLEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for WorldUnlockScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16WorldUnlockScRsp.proto\"N\n\x10WorldUnlockScRsp\x12\x20\n\x0bNPEBN\
-    EKDLEN\x18\x04\x20\x01(\rR\x0bNPEBNEKDLEN\x12\x18\n\x07retcode\x18\x06\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x16WorldUnlockScRsp.proto\"N\n\x10WorldUnlockScRsp\x12\x18\n\x07retco\
+    de\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bNPEBNEKDLEN\x18\x05\x20\
+    \x01(\rR\x0bNPEBNEKDLENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

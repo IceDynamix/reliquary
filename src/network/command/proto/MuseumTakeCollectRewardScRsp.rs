@@ -86,13 +86,13 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                24 => {
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MuseumTakeCollectRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(3, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MuseumTakeCollectRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MuseumTakeCollectRewardScRsp.proto\x1a\x0eItemList.proto\"t\n\x1cMus\
-    eumTakeCollectRewardScRsp\x12!\n\x06reward\x18\r\x20\x01(\x0b2\t.ItemLis\
-    tR\x06reward\x12\x17\n\x07item_id\x18\x03\x20\x01(\rR\x06itemId\x12\x18\
-    \n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    eumTakeCollectRewardScRsp\x12!\n\x06reward\x18\x03\x20\x01(\x0b2\t.ItemL\
+    istR\x06reward\x12\x17\n\x07item_id\x18\x0b\x20\x01(\rR\x06itemId\x12\
+    \x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

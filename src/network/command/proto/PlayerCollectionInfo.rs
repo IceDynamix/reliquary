@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerCollectionInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerCollectionInfo.LJPEKEDICML)
-    pub LJPEKEDICML: u32,
     // @@protoc_insertion_point(field:PlayerCollectionInfo.NLJIFEKDPHN)
     pub NLJIFEKDPHN: u32,
-    // @@protoc_insertion_point(field:PlayerCollectionInfo.PJCJNKBEIMK)
-    pub PJCJNKBEIMK: u32,
     // @@protoc_insertion_point(field:PlayerCollectionInfo.PGCDMMNNCJC)
     pub PGCDMMNNCJC: u32,
+    // @@protoc_insertion_point(field:PlayerCollectionInfo.PJCJNKBEIMK)
+    pub PJCJNKBEIMK: u32,
     // @@protoc_insertion_point(field:PlayerCollectionInfo.BDBMIKDJLKO)
     pub BDBMIKDJLKO: u32,
+    // @@protoc_insertion_point(field:PlayerCollectionInfo.LJPEKEDICML)
+    pub LJPEKEDICML: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerCollectionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,9 @@ impl PlayerCollectionInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJPEKEDICML",
-            |m: &PlayerCollectionInfo| { &m.LJPEKEDICML },
-            |m: &mut PlayerCollectionInfo| { &mut m.LJPEKEDICML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLJIFEKDPHN",
             |m: &PlayerCollectionInfo| { &m.NLJIFEKDPHN },
             |m: &mut PlayerCollectionInfo| { &mut m.NLJIFEKDPHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJCJNKBEIMK",
-            |m: &PlayerCollectionInfo| { &m.PJCJNKBEIMK },
-            |m: &mut PlayerCollectionInfo| { &mut m.PJCJNKBEIMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PGCDMMNNCJC",
@@ -78,9 +68,19 @@ impl PlayerCollectionInfo {
             |m: &mut PlayerCollectionInfo| { &mut m.PGCDMMNNCJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PJCJNKBEIMK",
+            |m: &PlayerCollectionInfo| { &m.PJCJNKBEIMK },
+            |m: &mut PlayerCollectionInfo| { &mut m.PJCJNKBEIMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BDBMIKDJLKO",
             |m: &PlayerCollectionInfo| { &m.BDBMIKDJLKO },
             |m: &mut PlayerCollectionInfo| { &mut m.BDBMIKDJLKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJPEKEDICML",
+            |m: &PlayerCollectionInfo| { &m.LJPEKEDICML },
+            |m: &mut PlayerCollectionInfo| { &mut m.LJPEKEDICML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerCollectionInfo>(
             "PlayerCollectionInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PlayerCollectionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.LJPEKEDICML = is.read_uint32()?;
-                },
-                112 => {
+                96 => {
                     self.NLJIFEKDPHN = is.read_uint32()?;
                 },
                 40 => {
+                    self.PGCDMMNNCJC = is.read_uint32()?;
+                },
+                48 => {
                     self.PJCJNKBEIMK = is.read_uint32()?;
                 },
                 120 => {
-                    self.PGCDMMNNCJC = is.read_uint32()?;
-                },
-                24 => {
                     self.BDBMIKDJLKO = is.read_uint32()?;
+                },
+                56 => {
+                    self.LJPEKEDICML = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for PlayerCollectionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJPEKEDICML != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LJPEKEDICML);
-        }
         if self.NLJIFEKDPHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NLJIFEKDPHN);
-        }
-        if self.PJCJNKBEIMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PJCJNKBEIMK);
+            my_size += ::protobuf::rt::uint32_size(12, self.NLJIFEKDPHN);
         }
         if self.PGCDMMNNCJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PGCDMMNNCJC);
+            my_size += ::protobuf::rt::uint32_size(5, self.PGCDMMNNCJC);
+        }
+        if self.PJCJNKBEIMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PJCJNKBEIMK);
         }
         if self.BDBMIKDJLKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BDBMIKDJLKO);
+            my_size += ::protobuf::rt::uint32_size(15, self.BDBMIKDJLKO);
+        }
+        if self.LJPEKEDICML != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LJPEKEDICML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for PlayerCollectionInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJPEKEDICML != 0 {
-            os.write_uint32(4, self.LJPEKEDICML)?;
-        }
         if self.NLJIFEKDPHN != 0 {
-            os.write_uint32(14, self.NLJIFEKDPHN)?;
-        }
-        if self.PJCJNKBEIMK != 0 {
-            os.write_uint32(5, self.PJCJNKBEIMK)?;
+            os.write_uint32(12, self.NLJIFEKDPHN)?;
         }
         if self.PGCDMMNNCJC != 0 {
-            os.write_uint32(15, self.PGCDMMNNCJC)?;
+            os.write_uint32(5, self.PGCDMMNNCJC)?;
+        }
+        if self.PJCJNKBEIMK != 0 {
+            os.write_uint32(6, self.PJCJNKBEIMK)?;
         }
         if self.BDBMIKDJLKO != 0 {
-            os.write_uint32(3, self.BDBMIKDJLKO)?;
+            os.write_uint32(15, self.BDBMIKDJLKO)?;
+        }
+        if self.LJPEKEDICML != 0 {
+            os.write_uint32(7, self.LJPEKEDICML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for PlayerCollectionInfo {
     }
 
     fn clear(&mut self) {
-        self.LJPEKEDICML = 0;
         self.NLJIFEKDPHN = 0;
-        self.PJCJNKBEIMK = 0;
         self.PGCDMMNNCJC = 0;
+        self.PJCJNKBEIMK = 0;
         self.BDBMIKDJLKO = 0;
+        self.LJPEKEDICML = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerCollectionInfo {
         static instance: PlayerCollectionInfo = PlayerCollectionInfo {
-            LJPEKEDICML: 0,
             NLJIFEKDPHN: 0,
-            PJCJNKBEIMK: 0,
             PGCDMMNNCJC: 0,
+            PJCJNKBEIMK: 0,
             BDBMIKDJLKO: 0,
+            LJPEKEDICML: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PlayerCollectionInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPlayerCollectionInfo.proto\"\xc0\x01\n\x14PlayerCollectionInfo\x12\
-    \x20\n\x0bLJPEKEDICML\x18\x04\x20\x01(\rR\x0bLJPEKEDICML\x12\x20\n\x0bNL\
-    JIFEKDPHN\x18\x0e\x20\x01(\rR\x0bNLJIFEKDPHN\x12\x20\n\x0bPJCJNKBEIMK\
-    \x18\x05\x20\x01(\rR\x0bPJCJNKBEIMK\x12\x20\n\x0bPGCDMMNNCJC\x18\x0f\x20\
-    \x01(\rR\x0bPGCDMMNNCJC\x12\x20\n\x0bBDBMIKDJLKO\x18\x03\x20\x01(\rR\x0b\
-    BDBMIKDJLKOb\x06proto3\
+    \x20\n\x0bNLJIFEKDPHN\x18\x0c\x20\x01(\rR\x0bNLJIFEKDPHN\x12\x20\n\x0bPG\
+    CDMMNNCJC\x18\x05\x20\x01(\rR\x0bPGCDMMNNCJC\x12\x20\n\x0bPJCJNKBEIMK\
+    \x18\x06\x20\x01(\rR\x0bPJCJNKBEIMK\x12\x20\n\x0bBDBMIKDJLKO\x18\x0f\x20\
+    \x01(\rR\x0bBDBMIKDJLKO\x12\x20\n\x0bLJPEKEDICML\x18\x07\x20\x01(\rR\x0b\
+    LJPEKEDICMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

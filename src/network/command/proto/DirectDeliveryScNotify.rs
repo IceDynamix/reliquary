@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DirectDeliveryScNotify {
     // message fields
-    // @@protoc_insertion_point(field:DirectDeliveryScNotify.MDDJNCKMJHG)
-    pub MDDJNCKMJHG: u32,
     // @@protoc_insertion_point(field:DirectDeliveryScNotify.reward_list)
     pub reward_list: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:DirectDeliveryScNotify.MDDJNCKMJHG)
+    pub MDDJNCKMJHG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DirectDeliveryScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DirectDeliveryScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDDJNCKMJHG",
-            |m: &DirectDeliveryScNotify| { &m.MDDJNCKMJHG },
-            |m: &mut DirectDeliveryScNotify| { &mut m.MDDJNCKMJHG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "reward_list",
             |m: &DirectDeliveryScNotify| { &m.reward_list },
             |m: &mut DirectDeliveryScNotify| { &mut m.reward_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDDJNCKMJHG",
+            |m: &DirectDeliveryScNotify| { &m.MDDJNCKMJHG },
+            |m: &mut DirectDeliveryScNotify| { &mut m.MDDJNCKMJHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DirectDeliveryScNotify>(
             "DirectDeliveryScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.MDDJNCKMJHG = is.read_uint32()?;
-                },
-                18 => {
+                34 => {
                     self.reward_list.push(is.read_message()?);
+                },
+                56 => {
+                    self.MDDJNCKMJHG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MDDJNCKMJHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MDDJNCKMJHG);
-        }
         for value in &self.reward_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.MDDJNCKMJHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MDDJNCKMJHG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MDDJNCKMJHG != 0 {
-            os.write_uint32(15, self.MDDJNCKMJHG)?;
-        }
         for v in &self.reward_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.MDDJNCKMJHG != 0 {
+            os.write_uint32(7, self.MDDJNCKMJHG)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     }
 
     fn clear(&mut self) {
-        self.MDDJNCKMJHG = 0;
         self.reward_list.clear();
+        self.MDDJNCKMJHG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DirectDeliveryScNotify {
         static instance: DirectDeliveryScNotify = DirectDeliveryScNotify {
-            MDDJNCKMJHG: 0,
             reward_list: ::std::vec::Vec::new(),
+            MDDJNCKMJHG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for DirectDeliveryScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDirectDeliveryScNotify.proto\x1a\x0eItemList.proto\"f\n\x16DirectD\
-    eliveryScNotify\x12\x20\n\x0bMDDJNCKMJHG\x18\x0f\x20\x01(\rR\x0bMDDJNCKM\
-    JHG\x12*\n\x0breward_list\x18\x02\x20\x03(\x0b2\t.ItemListR\nrewardListb\
-    \x06proto3\
+    eliveryScNotify\x12*\n\x0breward_list\x18\x04\x20\x03(\x0b2\t.ItemListR\
+    \nrewardList\x12\x20\n\x0bMDDJNCKMJHG\x18\x07\x20\x01(\rR\x0bMDDJNCKMJHG\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

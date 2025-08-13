@@ -79,10 +79,10 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                96 => {
                     self.is_meet = is.read_bool()?;
                 },
-                64 => {
+                40 => {
                     self.performance_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
             my_size += 1 + 1;
         }
         if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.performance_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.performance_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_meet != false {
-            os.write_bool(6, self.is_meet)?;
+            os.write_bool(12, self.is_meet)?;
         }
         if self.performance_id != 0 {
-            os.write_uint32(8, self.performance_id)?;
+            os.write_uint32(5, self.performance_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NpcMeetByPerformanceStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20NpcMeetByPerformanceStatus.proto\"\\\n\x1aNpcMeetByPerformanceStat\
-    us\x12\x17\n\x07is_meet\x18\x06\x20\x01(\x08R\x06isMeet\x12%\n\x0eperfor\
-    mance_id\x18\x08\x20\x01(\rR\rperformanceIdb\x06proto3\
+    us\x12\x17\n\x07is_meet\x18\x0c\x20\x01(\x08R\x06isMeet\x12%\n\x0eperfor\
+    mance_id\x18\x05\x20\x01(\rR\rperformanceIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

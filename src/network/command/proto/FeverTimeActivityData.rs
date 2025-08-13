@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeverTimeActivityData {
     // message fields
-    // @@protoc_insertion_point(field:FeverTimeActivityData.NLPKLPCCJPL)
-    pub NLPKLPCCJPL: u32,
     // @@protoc_insertion_point(field:FeverTimeActivityData.PLIKADKKLGD)
     pub PLIKADKKLGD: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
+    // @@protoc_insertion_point(field:FeverTimeActivityData.NLPKLPCCJPL)
+    pub NLPKLPCCJPL: u32,
     // @@protoc_insertion_point(field:FeverTimeActivityData.JBOLAAFDKAN)
     pub JBOLAAFDKAN: u32,
     // special fields
@@ -54,14 +54,14 @@ impl FeverTimeActivityData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLPKLPCCJPL",
-            |m: &FeverTimeActivityData| { &m.NLPKLPCCJPL },
-            |m: &mut FeverTimeActivityData| { &mut m.NLPKLPCCJPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLIKADKKLGD",
             |m: &FeverTimeActivityData| { &m.PLIKADKKLGD },
             |m: &mut FeverTimeActivityData| { &mut m.PLIKADKKLGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLPKLPCCJPL",
+            |m: &FeverTimeActivityData| { &m.NLPKLPCCJPL },
+            |m: &mut FeverTimeActivityData| { &mut m.NLPKLPCCJPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JBOLAAFDKAN",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FeverTimeActivityData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NLPKLPCCJPL = is.read_uint32()?;
-                },
-                16 => {
+                88 => {
                     self.PLIKADKKLGD = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                112 => {
+                    self.NLPKLPCCJPL = is.read_uint32()?;
+                },
+                24 => {
                     self.JBOLAAFDKAN = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FeverTimeActivityData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLPKLPCCJPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NLPKLPCCJPL);
-        }
         if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(2, self.PLIKADKKLGD.value());
+            my_size += ::protobuf::rt::int32_size(11, self.PLIKADKKLGD.value());
+        }
+        if self.NLPKLPCCJPL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NLPKLPCCJPL);
         }
         if self.JBOLAAFDKAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JBOLAAFDKAN);
+            my_size += ::protobuf::rt::uint32_size(3, self.JBOLAAFDKAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FeverTimeActivityData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLPKLPCCJPL != 0 {
-            os.write_uint32(4, self.NLPKLPCCJPL)?;
-        }
         if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.PLIKADKKLGD))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PLIKADKKLGD))?;
+        }
+        if self.NLPKLPCCJPL != 0 {
+            os.write_uint32(14, self.NLPKLPCCJPL)?;
         }
         if self.JBOLAAFDKAN != 0 {
-            os.write_uint32(8, self.JBOLAAFDKAN)?;
+            os.write_uint32(3, self.JBOLAAFDKAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for FeverTimeActivityData {
     }
 
     fn clear(&mut self) {
-        self.NLPKLPCCJPL = 0;
         self.PLIKADKKLGD = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
+        self.NLPKLPCCJPL = 0;
         self.JBOLAAFDKAN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeverTimeActivityData {
         static instance: FeverTimeActivityData = FeverTimeActivityData {
-            NLPKLPCCJPL: 0,
             PLIKADKKLGD: ::protobuf::EnumOrUnknown::from_i32(0),
+            NLPKLPCCJPL: 0,
             JBOLAAFDKAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for FeverTimeActivityData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFeverTimeActivityData.proto\x1a\x19FeverTimeBattleRank.proto\"\x93\
-    \x01\n\x15FeverTimeActivityData\x12\x20\n\x0bNLPKLPCCJPL\x18\x04\x20\x01\
-    (\rR\x0bNLPKLPCCJPL\x126\n\x0bPLIKADKKLGD\x18\x02\x20\x01(\x0e2\x14.Feve\
-    rTimeBattleRankR\x0bPLIKADKKLGD\x12\x20\n\x0bJBOLAAFDKAN\x18\x08\x20\x01\
-    (\rR\x0bJBOLAAFDKANb\x06proto3\
+    \x01\n\x15FeverTimeActivityData\x126\n\x0bPLIKADKKLGD\x18\x0b\x20\x01(\
+    \x0e2\x14.FeverTimeBattleRankR\x0bPLIKADKKLGD\x12\x20\n\x0bNLPKLPCCJPL\
+    \x18\x0e\x20\x01(\rR\x0bNLPKLPCCJPL\x12\x20\n\x0bJBOLAAFDKAN\x18\x03\x20\
+    \x01(\rR\x0bJBOLAAFDKANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

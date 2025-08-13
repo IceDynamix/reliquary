@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeGroupStatisticsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
+    pub retcode: u32,
     // message oneof groups
-    pub LCDJBAAKIHB: ::std::option::Option<get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB>,
+    pub JDICGGKKOOI: ::std::option::Option<get_challenge_group_statistics_sc_rsp::JDICGGKKOOI>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeGroupStatisticsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,39 +50,39 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 12;
+    // .ChallengeStatistics challenge_default = 9;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(ref v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(ref v)) => v,
             _ => <super::ChallengeStatistics::ChallengeStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_challenge_default(&mut self) {
-        self.LCDJBAAKIHB = ::std::option::Option::None;
+        self.JDICGGKKOOI = ::std::option::Option::None;
     }
 
     pub fn has_challenge_default(&self) -> bool {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(..)) => true,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_challenge_default(&mut self, v: super::ChallengeStatistics::ChallengeStatistics) {
-        self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(v))
+        self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_challenge_default(&mut self) -> &mut super::ChallengeStatistics::ChallengeStatistics {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(_)) = self.LCDJBAAKIHB {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(_)) = self.JDICGGKKOOI {
         } else {
-            self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
+            self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
         }
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(ref mut v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl GetChallengeGroupStatisticsScRsp {
     // Take field
     pub fn take_challenge_default(&mut self) -> super::ChallengeStatistics::ChallengeStatistics {
         if self.has_challenge_default() {
-            match self.LCDJBAAKIHB.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(v)) => v,
+            match self.JDICGGKKOOI.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -99,39 +99,39 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 1;
+    // .ChallengeStoryStatistics challenge_story = 5;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(ref v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(ref v)) => v,
             _ => <super::ChallengeStoryStatistics::ChallengeStoryStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_challenge_story(&mut self) {
-        self.LCDJBAAKIHB = ::std::option::Option::None;
+        self.JDICGGKKOOI = ::std::option::Option::None;
     }
 
     pub fn has_challenge_story(&self) -> bool {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(..)) => true,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_challenge_story(&mut self, v: super::ChallengeStoryStatistics::ChallengeStoryStatistics) {
-        self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(v))
+        self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_challenge_story(&mut self) -> &mut super::ChallengeStoryStatistics::ChallengeStoryStatistics {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(_)) = self.LCDJBAAKIHB {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(_)) = self.JDICGGKKOOI {
         } else {
-            self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()));
+            self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()));
         }
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(ref mut v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -139,8 +139,8 @@ impl GetChallengeGroupStatisticsScRsp {
     // Take field
     pub fn take_challenge_story(&mut self) -> super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         if self.has_challenge_story() {
-            match self.LCDJBAAKIHB.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(v)) => v,
+            match self.JDICGGKKOOI.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -148,39 +148,39 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 10;
+    // .ChallengeBossStatistics challenge_boss = 3;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(ref v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(ref v)) => v,
             _ => <super::ChallengeBossStatistics::ChallengeBossStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_challenge_boss(&mut self) {
-        self.LCDJBAAKIHB = ::std::option::Option::None;
+        self.JDICGGKKOOI = ::std::option::Option::None;
     }
 
     pub fn has_challenge_boss(&self) -> bool {
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(..)) => true,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_challenge_boss(&mut self, v: super::ChallengeBossStatistics::ChallengeBossStatistics) {
-        self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(v))
+        self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_challenge_boss(&mut self) -> &mut super::ChallengeBossStatistics::ChallengeBossStatistics {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(_)) = self.LCDJBAAKIHB {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(_)) = self.JDICGGKKOOI {
         } else {
-            self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(super::ChallengeBossStatistics::ChallengeBossStatistics::new()));
+            self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(super::ChallengeBossStatistics::ChallengeBossStatistics::new()));
         }
-        match self.LCDJBAAKIHB {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(ref mut v)) => v,
+        match self.JDICGGKKOOI {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -188,8 +188,8 @@ impl GetChallengeGroupStatisticsScRsp {
     // Take field
     pub fn take_challenge_boss(&mut self) -> super::ChallengeBossStatistics::ChallengeBossStatistics {
         if self.has_challenge_boss() {
-            match self.LCDJBAAKIHB.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(v)) => v,
+            match self.JDICGGKKOOI.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -201,14 +201,14 @@ impl GetChallengeGroupStatisticsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
-            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
+            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
             "challenge_default",
@@ -231,7 +231,7 @@ impl GetChallengeGroupStatisticsScRsp {
             GetChallengeGroupStatisticsScRsp::mut_challenge_boss,
             GetChallengeGroupStatisticsScRsp::set_challenge_boss,
         ));
-        oneofs.push(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::generated_oneof_descriptor_data());
+        oneofs.push(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeGroupStatisticsScRsp>(
             "GetChallengeGroupStatisticsScRsp",
             fields,
@@ -250,20 +250,20 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                40 => {
+                56 => {
                     self.group_id = is.read_uint32()?;
                 },
-                98 => {
-                    self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(is.read_message()?));
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(is.read_message()?));
+                74 => {
+                    self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(is.read_message()?));
                 },
-                82 => {
-                    self.LCDJBAAKIHB = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(is.read_message()?));
+                42 => {
+                    self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(is.read_message()?));
+                },
+                26 => {
+                    self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -277,23 +277,23 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.LCDJBAAKIHB {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -305,22 +305,22 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(5, self.group_id)?;
+            os.write_uint32(7, self.group_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.LCDJBAAKIHB {
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
-                &get_challenge_group_statistics_sc_rsp::LCDJBAAKIHB::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -341,19 +341,19 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.group_id = 0;
-        self.LCDJBAAKIHB = ::std::option::Option::None;
-        self.LCDJBAAKIHB = ::std::option::Option::None;
-        self.LCDJBAAKIHB = ::std::option::Option::None;
+        self.retcode = 0;
+        self.JDICGGKKOOI = ::std::option::Option::None;
+        self.JDICGGKKOOI = ::std::option::Option::None;
+        self.JDICGGKKOOI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeGroupStatisticsScRsp {
         static instance: GetChallengeGroupStatisticsScRsp = GetChallengeGroupStatisticsScRsp {
-            retcode: 0,
             group_id: 0,
-            LCDJBAAKIHB: ::std::option::Option::None,
+            retcode: 0,
+            JDICGGKKOOI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -382,8 +382,8 @@ pub mod get_challenge_group_statistics_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GetChallengeGroupStatisticsScRsp.LCDJBAAKIHB)
-    pub enum LCDJBAAKIHB {
+    // @@protoc_insertion_point(oneof:GetChallengeGroupStatisticsScRsp.JDICGGKKOOI)
+    pub enum JDICGGKKOOI {
         // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.challenge_default)
         ChallengeDefault(super::super::ChallengeStatistics::ChallengeStatistics),
         // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.challenge_story)
@@ -392,19 +392,19 @@ pub mod get_challenge_group_statistics_sc_rsp {
         ChallengeBoss(super::super::ChallengeBossStatistics::ChallengeBossStatistics),
     }
 
-    impl ::protobuf::Oneof for LCDJBAAKIHB {
+    impl ::protobuf::Oneof for JDICGGKKOOI {
     }
 
-    impl ::protobuf::OneofFull for LCDJBAAKIHB {
+    impl ::protobuf::OneofFull for JDICGGKKOOI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GetChallengeGroupStatisticsScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("LCDJBAAKIHB").unwrap()).clone()
+            descriptor.get(|| <super::GetChallengeGroupStatisticsScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("JDICGGKKOOI").unwrap()).clone()
         }
     }
 
-    impl LCDJBAAKIHB {
+    impl JDICGGKKOOI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LCDJBAAKIHB>("LCDJBAAKIHB")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<JDICGGKKOOI>("JDICGGKKOOI")
         }
     }
 }
@@ -412,13 +412,13 @@ pub mod get_challenge_group_statistics_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x1dChallengeBossStatistics\
     .proto\x1a\x19ChallengeStatistics.proto\x1a\x1eChallengeStoryStatistics.\
-    proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x18\n\x07retco\
-    de\x18\t\x20\x01(\rR\x07retcode\x12\x19\n\x08group_id\x18\x05\x20\x01(\r\
-    R\x07groupId\x12C\n\x11challenge_default\x18\x0c\x20\x01(\x0b2\x14.Chall\
-    engeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x01\
+    proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x19\n\x08group\
+    _id\x18\x07\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x02\x20\x01(\
+    \rR\x07retcode\x12C\n\x11challenge_default\x18\t\x20\x01(\x0b2\x14.Chall\
+    engeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x05\
     \x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\x12A\n\
-    \x0echallenge_boss\x18\n\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\r\
-    challengeBossB\r\n\x0bLCDJBAAKIHBb\x06proto3\
+    \x0echallenge_boss\x18\x03\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\
+    \rchallengeBossB\r\n\x0bJDICGGKKOOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

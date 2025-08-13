@@ -86,13 +86,13 @@ impl ::protobuf::Message for Material {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.tid = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.expire_time = is.read_uint64()?;
                 },
-                24 => {
+                104 => {
                     self.num = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for Material {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.tid);
+            my_size += ::protobuf::rt::uint32_size(4, self.tid);
         }
         if self.expire_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.expire_time);
+            my_size += ::protobuf::rt::uint64_size(12, self.expire_time);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.num);
+            my_size += ::protobuf::rt::uint32_size(13, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for Material {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tid != 0 {
-            os.write_uint32(5, self.tid)?;
+            os.write_uint32(4, self.tid)?;
         }
         if self.expire_time != 0 {
-            os.write_uint64(10, self.expire_time)?;
+            os.write_uint64(12, self.expire_time)?;
         }
         if self.num != 0 {
-            os.write_uint32(3, self.num)?;
+            os.write_uint32(13, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for Material {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eMaterial.proto\"O\n\x08Material\x12\x10\n\x03tid\x18\x05\x20\x01(\
-    \rR\x03tid\x12\x1f\n\x0bexpire_time\x18\n\x20\x01(\x04R\nexpireTime\x12\
-    \x10\n\x03num\x18\x03\x20\x01(\rR\x03numb\x06proto3\
+    \n\x0eMaterial.proto\"O\n\x08Material\x12\x10\n\x03tid\x18\x04\x20\x01(\
+    \rR\x03tid\x12\x1f\n\x0bexpire_time\x18\x0c\x20\x01(\x04R\nexpireTime\
+    \x12\x10\n\x03num\x18\r\x20\x01(\rR\x03numb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

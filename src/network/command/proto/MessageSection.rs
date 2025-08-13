@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MessageSection {
     // message fields
-    // @@protoc_insertion_point(field:MessageSection.message_item_list)
-    pub message_item_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MessageSection.item_list)
-    pub item_list: ::std::vec::Vec<super::MessageItem::MessageItem>,
-    // @@protoc_insertion_point(field:MessageSection.status)
-    pub status: ::protobuf::EnumOrUnknown<super::MessageSectionStatus::MessageSectionStatus>,
     // @@protoc_insertion_point(field:MessageSection.frozen_item_id)
     pub frozen_item_id: u32,
+    // @@protoc_insertion_point(field:MessageSection.item_list)
+    pub item_list: ::std::vec::Vec<super::MessageItem::MessageItem>,
     // @@protoc_insertion_point(field:MessageSection.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:MessageSection.message_item_list)
+    pub message_item_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MessageSection.status)
+    pub status: ::protobuf::EnumOrUnknown<super::MessageSectionStatus::MessageSectionStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:MessageSection.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl MessageSection {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "message_item_list",
-            |m: &MessageSection| { &m.message_item_list },
-            |m: &mut MessageSection| { &mut m.message_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "frozen_item_id",
+            |m: &MessageSection| { &m.frozen_item_id },
+            |m: &mut MessageSection| { &mut m.frozen_item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "item_list",
@@ -68,19 +68,19 @@ impl MessageSection {
             |m: &mut MessageSection| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &MessageSection| { &m.status },
-            |m: &mut MessageSection| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "frozen_item_id",
-            |m: &MessageSection| { &m.frozen_item_id },
-            |m: &mut MessageSection| { &mut m.frozen_item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &MessageSection| { &m.id },
             |m: &mut MessageSection| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "message_item_list",
+            |m: &MessageSection| { &m.message_item_list },
+            |m: &mut MessageSection| { &mut m.message_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &MessageSection| { &m.status },
+            |m: &mut MessageSection| { &mut m.status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MessageSection>(
             "MessageSection",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for MessageSection {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                120 => {
+                    self.frozen_item_id = is.read_uint32()?;
+                },
+                18 => {
+                    self.item_list.push(is.read_message()?);
+                },
+                8 => {
+                    self.id = is.read_uint32()?;
+                },
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.message_item_list)?;
                 },
-                72 => {
+                40 => {
                     self.message_item_list.push(is.read_uint32()?);
-                },
-                106 => {
-                    self.item_list.push(is.read_message()?);
                 },
                 88 => {
                     self.status = is.read_enum_or_unknown()?;
-                },
-                40 => {
-                    self.frozen_item_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,19 +130,19 @@ impl ::protobuf::Message for MessageSection {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.message_item_list);
+        if self.frozen_item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.frozen_item_id);
+        }
         for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.message_item_list);
         if self.status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
             my_size += ::protobuf::rt::int32_size(11, self.status.value());
-        }
-        if self.frozen_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.frozen_item_id);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,18 +150,18 @@ impl ::protobuf::Message for MessageSection {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.message_item_list)?;
+        if self.frozen_item_id != 0 {
+            os.write_uint32(15, self.frozen_item_id)?;
+        }
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.id != 0 {
+            os.write_uint32(1, self.id)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.message_item_list)?;
         if self.status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.frozen_item_id != 0 {
-            os.write_uint32(5, self.frozen_item_id)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(2, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for MessageSection {
     }
 
     fn clear(&mut self) {
-        self.message_item_list.clear();
-        self.item_list.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE);
         self.frozen_item_id = 0;
+        self.item_list.clear();
         self.id = 0;
+        self.message_item_list.clear();
+        self.status = ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MessageSection {
         static instance: MessageSection = MessageSection {
-            message_item_list: ::std::vec::Vec::new(),
-            item_list: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             frozen_item_id: 0,
+            item_list: ::std::vec::Vec::new(),
             id: 0,
+            message_item_list: ::std::vec::Vec::new(),
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for MessageSection {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14MessageSection.proto\x1a\x11MessageItem.proto\x1a\x1aMessageSectio\
-    nStatus.proto\"\xcc\x01\n\x0eMessageSection\x12*\n\x11message_item_list\
-    \x18\t\x20\x03(\rR\x0fmessageItemList\x12)\n\titem_list\x18\r\x20\x03(\
-    \x0b2\x0c.MessageItemR\x08itemList\x12-\n\x06status\x18\x0b\x20\x01(\x0e\
-    2\x15.MessageSectionStatusR\x06status\x12$\n\x0efrozen_item_id\x18\x05\
-    \x20\x01(\rR\x0cfrozenItemId\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02idb\
+    nStatus.proto\"\xcc\x01\n\x0eMessageSection\x12$\n\x0efrozen_item_id\x18\
+    \x0f\x20\x01(\rR\x0cfrozenItemId\x12)\n\titem_list\x18\x02\x20\x03(\x0b2\
+    \x0c.MessageItemR\x08itemList\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\
+    \x12*\n\x11message_item_list\x18\x05\x20\x03(\rR\x0fmessageItemList\x12-\
+    \n\x06status\x18\x0b\x20\x01(\x0e2\x15.MessageSectionStatusR\x06statusb\
     \x06proto3\
 ";
 

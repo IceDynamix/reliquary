@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LNDGCGOBDJL {
     // message fields
-    // @@protoc_insertion_point(field:LNDGCGOBDJL.LLEPHOELGDA)
-    pub LLEPHOELGDA: ::std::vec::Vec<super::MCLNCBCPAFF::MCLNCBCPAFF>,
+    // @@protoc_insertion_point(field:LNDGCGOBDJL.area_list)
+    pub area_list: ::std::vec::Vec<super::MCLNCBCPAFF::MCLNCBCPAFF>,
     // special fields
     // @@protoc_insertion_point(special_field:LNDGCGOBDJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LNDGCGOBDJL {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LLEPHOELGDA",
-            |m: &LNDGCGOBDJL| { &m.LLEPHOELGDA },
-            |m: &mut LNDGCGOBDJL| { &mut m.LLEPHOELGDA },
+            "area_list",
+            |m: &LNDGCGOBDJL| { &m.area_list },
+            |m: &mut LNDGCGOBDJL| { &mut m.area_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LNDGCGOBDJL>(
             "LNDGCGOBDJL",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for LNDGCGOBDJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.LLEPHOELGDA.push(is.read_message()?);
+                66 => {
+                    self.area_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for LNDGCGOBDJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LLEPHOELGDA {
+        for value in &self.area_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LNDGCGOBDJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LLEPHOELGDA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.area_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for LNDGCGOBDJL {
     }
 
     fn clear(&mut self) {
-        self.LLEPHOELGDA.clear();
+        self.area_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LNDGCGOBDJL {
         static instance: LNDGCGOBDJL = LNDGCGOBDJL {
-            LLEPHOELGDA: ::std::vec::Vec::new(),
+            area_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for LNDGCGOBDJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LNDGCGOBDJL.proto\x1a\x11MCLNCBCPAFF.proto\"=\n\x0bLNDGCGOBDJL\x12\
-    .\n\x0bLLEPHOELGDA\x18\r\x20\x03(\x0b2\x0c.MCLNCBCPAFFR\x0bLLEPHOELGDAb\
-    \x06proto3\
+    \n\x11LNDGCGOBDJL.proto\x1a\x11MCLNCBCPAFF.proto\"8\n\x0bLNDGCGOBDJL\x12\
+    )\n\tarea_list\x18\x08\x20\x03(\x0b2\x0c.MCLNCBCPAFFR\x08areaListb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

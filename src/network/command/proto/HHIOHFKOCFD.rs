@@ -86,13 +86,13 @@ impl ::protobuf::Message for HHIOHFKOCFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.key = is.read_uint32()?;
                 },
-                40 => {
+                48 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                88 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HHIOHFKOCFD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.key);
+            my_size += ::protobuf::rt::uint32_size(3, self.key);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::DLLLEANDAIH::DLLLEANDAIH::FRIEND_RECOMMEND_LINEUP_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(6, self.type_.value());
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.uid);
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HHIOHFKOCFD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(12, self.key)?;
+            os.write_uint32(3, self.key)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::DLLLEANDAIH::DLLLEANDAIH::FRIEND_RECOMMEND_LINEUP_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.uid != 0 {
-            os.write_uint32(10, self.uid)?;
+            os.write_uint32(11, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HHIOHFKOCFD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HHIOHFKOCFD.proto\x1a\x11DLLLEANDAIH.proto\"S\n\x0bHHIOHFKOCFD\x12\
-    \x10\n\x03key\x18\x0c\x20\x01(\rR\x03key\x12\x20\n\x04type\x18\x05\x20\
-    \x01(\x0e2\x0c.DLLLEANDAIHR\x04type\x12\x10\n\x03uid\x18\n\x20\x01(\rR\
+    \x10\n\x03key\x18\x03\x20\x01(\rR\x03key\x12\x20\n\x04type\x18\x06\x20\
+    \x01(\x0e2\x0c.DLLLEANDAIHR\x04type\x12\x10\n\x03uid\x18\x0b\x20\x01(\rR\
     \x03uidb\x06proto3\
 ";
 

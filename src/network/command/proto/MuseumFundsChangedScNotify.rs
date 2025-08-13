@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumFundsChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MuseumFundsChangedScNotify.DBJHEMIPPIM)
-    pub DBJHEMIPPIM: u32,
+    // @@protoc_insertion_point(field:MuseumFundsChangedScNotify.cur_fund)
+    pub cur_fund: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumFundsChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MuseumFundsChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBJHEMIPPIM",
-            |m: &MuseumFundsChangedScNotify| { &m.DBJHEMIPPIM },
-            |m: &mut MuseumFundsChangedScNotify| { &mut m.DBJHEMIPPIM },
+            "cur_fund",
+            |m: &MuseumFundsChangedScNotify| { &m.cur_fund },
+            |m: &mut MuseumFundsChangedScNotify| { &mut m.cur_fund },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumFundsChangedScNotify>(
             "MuseumFundsChangedScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DBJHEMIPPIM = is.read_uint32()?;
+                56 => {
+                    self.cur_fund = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DBJHEMIPPIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DBJHEMIPPIM);
+        if self.cur_fund != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.cur_fund);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DBJHEMIPPIM != 0 {
-            os.write_uint32(9, self.DBJHEMIPPIM)?;
+        if self.cur_fund != 0 {
+            os.write_uint32(7, self.cur_fund)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MuseumFundsChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.DBJHEMIPPIM = 0;
+        self.cur_fund = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumFundsChangedScNotify {
         static instance: MuseumFundsChangedScNotify = MuseumFundsChangedScNotify {
-            DBJHEMIPPIM: 0,
+            cur_fund: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for MuseumFundsChangedScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20MuseumFundsChangedScNotify.proto\">\n\x1aMuseumFundsChangedScNotif\
-    y\x12\x20\n\x0bDBJHEMIPPIM\x18\t\x20\x01(\rR\x0bDBJHEMIPPIMb\x06proto3\
+    \n\x20MuseumFundsChangedScNotify.proto\"7\n\x1aMuseumFundsChangedScNotif\
+    y\x12\x19\n\x08cur_fund\x18\x07\x20\x01(\rR\x07curFundb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

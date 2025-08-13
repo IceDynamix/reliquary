@@ -82,7 +82,7 @@ impl ::protobuf::Message for TakePromotionRewardScRsp {
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for TakePromotionRewardScRsp {
             os.write_uint32(14, self.retcode)?;
         }
         if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for TakePromotionRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eTakePromotionRewardScRsp.proto\x1a\x0eItemList.proto\"`\n\x18TakeP\
     romotionRewardScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
-    \x12*\n\x0breward_list\x18\x08\x20\x01(\x0b2\t.ItemListR\nrewardListb\
-    \x06proto3\
+    \x12*\n\x0breward_list\x18\r\x20\x01(\x0b2\t.ItemListR\nrewardListb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

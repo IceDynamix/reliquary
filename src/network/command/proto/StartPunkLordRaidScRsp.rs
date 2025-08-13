@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPunkLordRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.AGEGDMGNPDK)
-    pub AGEGDMGNPDK: i64,
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.DPMKAMMIOLB)
-    pub DPMKAMMIOLB: ::protobuf::MessageField<super::KAOAHKAOHFI::KAOAHKAOHFI>,
     // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.CLOMMFKJPMM)
     pub CLOMMFKJPMM: bool,
     // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.DMILCFHLIHP)
     pub DMILCFHLIHP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.AGEGDMGNPDK)
+    pub AGEGDMGNPDK: i64,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.DPMKAMMIOLB)
+    pub DPMKAMMIOLB: ::protobuf::MessageField<super::KAOAHKAOHFI::KAOAHKAOHFI>,
     // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.scene)
     pub scene: ::protobuf::MessageField<super::FNLGPLNCPCL::FNLGPLNCPCL>,
     // special fields
@@ -60,21 +60,6 @@ impl StartPunkLordRaidScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEGDMGNPDK",
-            |m: &StartPunkLordRaidScRsp| { &m.AGEGDMGNPDK },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.AGEGDMGNPDK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartPunkLordRaidScRsp| { &m.retcode },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KAOAHKAOHFI::KAOAHKAOHFI>(
-            "DPMKAMMIOLB",
-            |m: &StartPunkLordRaidScRsp| { &m.DPMKAMMIOLB },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.DPMKAMMIOLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLOMMFKJPMM",
             |m: &StartPunkLordRaidScRsp| { &m.CLOMMFKJPMM },
             |m: &mut StartPunkLordRaidScRsp| { &mut m.CLOMMFKJPMM },
@@ -83,6 +68,21 @@ impl StartPunkLordRaidScRsp {
             "DMILCFHLIHP",
             |m: &StartPunkLordRaidScRsp| { &m.DMILCFHLIHP },
             |m: &mut StartPunkLordRaidScRsp| { &mut m.DMILCFHLIHP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartPunkLordRaidScRsp| { &m.retcode },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AGEGDMGNPDK",
+            |m: &StartPunkLordRaidScRsp| { &m.AGEGDMGNPDK },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.AGEGDMGNPDK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KAOAHKAOHFI::KAOAHKAOHFI>(
+            "DPMKAMMIOLB",
+            |m: &StartPunkLordRaidScRsp| { &m.DPMKAMMIOLB },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.DPMKAMMIOLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FNLGPLNCPCL::FNLGPLNCPCL>(
             "scene",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.AGEGDMGNPDK = is.read_int64()?;
-                },
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
-                },
-                48 => {
+                40 => {
                     self.CLOMMFKJPMM = is.read_bool()?;
                 },
-                114 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.DMILCFHLIHP)?;
                 },
-                112 => {
+                56 => {
                     self.DMILCFHLIHP.push(is.read_uint32()?);
                 },
-                66 => {
+                24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.AGEGDMGNPDK = is.read_int64()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -140,20 +140,20 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AGEGDMGNPDK != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.AGEGDMGNPDK);
+        if self.CLOMMFKJPMM != false {
+            my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DMILCFHLIHP);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.AGEGDMGNPDK != 0 {
+            my_size += ::protobuf::rt::int64_size(13, self.AGEGDMGNPDK);
         }
         if let Some(v) = self.DPMKAMMIOLB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.CLOMMFKJPMM != false {
-            my_size += 1 + 1;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.DMILCFHLIHP);
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -164,21 +164,21 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AGEGDMGNPDK != 0 {
-            os.write_int64(2, self.AGEGDMGNPDK)?;
+        if self.CLOMMFKJPMM != false {
+            os.write_bool(5, self.CLOMMFKJPMM)?;
         }
+        os.write_repeated_packed_uint32(7, &self.DMILCFHLIHP)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.AGEGDMGNPDK != 0 {
+            os.write_int64(13, self.AGEGDMGNPDK)?;
         }
         if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.CLOMMFKJPMM != false {
-            os.write_bool(6, self.CLOMMFKJPMM)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.DMILCFHLIHP)?;
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.AGEGDMGNPDK = 0;
-        self.retcode = 0;
-        self.DPMKAMMIOLB.clear();
         self.CLOMMFKJPMM = false;
         self.DMILCFHLIHP.clear();
+        self.retcode = 0;
+        self.AGEGDMGNPDK = 0;
+        self.DPMKAMMIOLB.clear();
         self.scene.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPunkLordRaidScRsp {
         static instance: StartPunkLordRaidScRsp = StartPunkLordRaidScRsp {
-            AGEGDMGNPDK: 0,
-            retcode: 0,
-            DPMKAMMIOLB: ::protobuf::MessageField::none(),
             CLOMMFKJPMM: false,
             DMILCFHLIHP: ::std::vec::Vec::new(),
+            retcode: 0,
+            AGEGDMGNPDK: 0,
+            DPMKAMMIOLB: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for StartPunkLordRaidScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cStartPunkLordRaidScRsp.proto\x1a\x11FNLGPLNCPCL.proto\x1a\x11KAOAH\
-    KAOHFI.proto\"\xec\x01\n\x16StartPunkLordRaidScRsp\x12\x20\n\x0bAGEGDMGN\
-    PDK\x18\x02\x20\x01(\x03R\x0bAGEGDMGNPDK\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bDPMKAMMIOLB\x18\t\x20\x01(\x0b2\x0c.KA\
-    OAHKAOHFIR\x0bDPMKAMMIOLB\x12\x20\n\x0bCLOMMFKJPMM\x18\x06\x20\x01(\x08R\
-    \x0bCLOMMFKJPMM\x12\x20\n\x0bDMILCFHLIHP\x18\x0e\x20\x03(\rR\x0bDMILCFHL\
-    IHP\x12\"\n\x05scene\x18\x08\x20\x01(\x0b2\x0c.FNLGPLNCPCLR\x05sceneb\
+    KAOHFI.proto\"\xec\x01\n\x16StartPunkLordRaidScRsp\x12\x20\n\x0bCLOMMFKJ\
+    PMM\x18\x05\x20\x01(\x08R\x0bCLOMMFKJPMM\x12\x20\n\x0bDMILCFHLIHP\x18\
+    \x07\x20\x03(\rR\x0bDMILCFHLIHP\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bAGEGDMGNPDK\x18\r\x20\x01(\x03R\x0bAGEGDMGNPDK\
+    \x12.\n\x0bDPMKAMMIOLB\x18\x0b\x20\x01(\x0b2\x0c.KAOAHKAOHFIR\x0bDPMKAMM\
+    IOLB\x12\"\n\x05scene\x18\x0c\x20\x01(\x0b2\x0c.FNLGPLNCPCLR\x05sceneb\
     \x06proto3\
 ";
 

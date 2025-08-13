@@ -79,13 +79,13 @@ impl ::protobuf::Message for SyncLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                48 => {
+                32 => {
                     self.reason_list.push(is.read_enum_or_unknown()?);
                 },
-                50 => {
+                34 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.reason_list)?
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for SyncLineupNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(6, &self.reason_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.reason_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for SyncLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        os.write_repeated_packed_enum_or_unknown(6, &self.reason_list)?;
+        os.write_repeated_packed_enum_or_unknown(4, &self.reason_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SyncLineupNotify.proto\x1a\x10LineupInfo.proto\x1a\x16SyncLineupRe\
-    ason.proto\"k\n\x10SyncLineupNotify\x12#\n\x06lineup\x18\n\x20\x01(\x0b2\
-    \x0b.LineupInfoR\x06lineup\x122\n\x0breason_list\x18\x06\x20\x03(\x0e2\
-    \x11.SyncLineupReasonR\nreasonListb\x06proto3\
+    ason.proto\"k\n\x10SyncLineupNotify\x12#\n\x06lineup\x18\x0e\x20\x01(\
+    \x0b2\x0b.LineupInfoR\x06lineup\x122\n\x0breason_list\x18\x04\x20\x03(\
+    \x0e2\x11.SyncLineupReasonR\nreasonListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournWeekChallengeUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournWeekChallengeUpdateScNotify.JDBMBIKPBJB)
-    pub JDBMBIKPBJB: ::protobuf::MessageField<super::LHAEABOJGOP::LHAEABOJGOP>,
+    // @@protoc_insertion_point(field:RogueTournWeekChallengeUpdateScNotify.extra_score_info)
+    pub extra_score_info: ::protobuf::MessageField<super::ExtraScoreInfo::ExtraScoreInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournWeekChallengeUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl RogueTournWeekChallengeUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LHAEABOJGOP::LHAEABOJGOP>(
-            "JDBMBIKPBJB",
-            |m: &RogueTournWeekChallengeUpdateScNotify| { &m.JDBMBIKPBJB },
-            |m: &mut RogueTournWeekChallengeUpdateScNotify| { &mut m.JDBMBIKPBJB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ExtraScoreInfo::ExtraScoreInfo>(
+            "extra_score_info",
+            |m: &RogueTournWeekChallengeUpdateScNotify| { &m.extra_score_info },
+            |m: &mut RogueTournWeekChallengeUpdateScNotify| { &mut m.extra_score_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournWeekChallengeUpdateScNotify>(
             "RogueTournWeekChallengeUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournWeekChallengeUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDBMBIKPBJB)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_score_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueTournWeekChallengeUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JDBMBIKPBJB.as_ref() {
+        if let Some(v) = self.extra_score_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueTournWeekChallengeUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JDBMBIKPBJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.extra_score_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueTournWeekChallengeUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.JDBMBIKPBJB.clear();
+        self.extra_score_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournWeekChallengeUpdateScNotify {
         static instance: RogueTournWeekChallengeUpdateScNotify = RogueTournWeekChallengeUpdateScNotify {
-            JDBMBIKPBJB: ::protobuf::MessageField::none(),
+            extra_score_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournWeekChallengeUpdateScNotif
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+RogueTournWeekChallengeUpdateScNotify.proto\x1a\x11LHAEABOJGOP.proto\
-    \"W\n%RogueTournWeekChallengeUpdateScNotify\x12.\n\x0bJDBMBIKPBJB\x18\
-    \x0b\x20\x01(\x0b2\x0c.LHAEABOJGOPR\x0bJDBMBIKPBJBb\x06proto3\
+    \n+RogueTournWeekChallengeUpdateScNotify.proto\x1a\x14ExtraScoreInfo.pro\
+    to\"b\n%RogueTournWeekChallengeUpdateScNotify\x129\n\x10extra_score_info\
+    \x18\x08\x20\x01(\x0b2\x0f.ExtraScoreInfoR\x0eextraScoreInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LHAEABOJGOP::file_descriptor().clone());
+            deps.push(super::ExtraScoreInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournWeekChallengeUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

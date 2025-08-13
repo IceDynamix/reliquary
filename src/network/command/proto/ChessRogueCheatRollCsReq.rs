@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueCheatRollCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueCheatRollCsReq.EOOADPOCPHD)
-    pub EOOADPOCPHD: u32,
+    // @@protoc_insertion_point(field:ChessRogueCheatRollCsReq.dice_surface_id)
+    pub dice_surface_id: u32,
     // @@protoc_insertion_point(field:ChessRogueCheatRollCsReq.KCHFJDAJECM)
     pub KCHFJDAJECM: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ChessRogueCheatRollCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOOADPOCPHD",
-            |m: &ChessRogueCheatRollCsReq| { &m.EOOADPOCPHD },
-            |m: &mut ChessRogueCheatRollCsReq| { &mut m.EOOADPOCPHD },
+            "dice_surface_id",
+            |m: &ChessRogueCheatRollCsReq| { &m.dice_surface_id },
+            |m: &mut ChessRogueCheatRollCsReq| { &mut m.dice_surface_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KCHFJDAJECM",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueCheatRollCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.EOOADPOCPHD = is.read_uint32()?;
+                24 => {
+                    self.dice_surface_id = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.KCHFJDAJECM = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueCheatRollCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EOOADPOCPHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.EOOADPOCPHD);
+        if self.dice_surface_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.dice_surface_id);
         }
         if self.KCHFJDAJECM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KCHFJDAJECM);
+            my_size += ::protobuf::rt::uint32_size(2, self.KCHFJDAJECM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueCheatRollCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EOOADPOCPHD != 0 {
-            os.write_uint32(10, self.EOOADPOCPHD)?;
+        if self.dice_surface_id != 0 {
+            os.write_uint32(3, self.dice_surface_id)?;
         }
         if self.KCHFJDAJECM != 0 {
-            os.write_uint32(4, self.KCHFJDAJECM)?;
+            os.write_uint32(2, self.KCHFJDAJECM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChessRogueCheatRollCsReq {
     }
 
     fn clear(&mut self) {
-        self.EOOADPOCPHD = 0;
+        self.dice_surface_id = 0;
         self.KCHFJDAJECM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueCheatRollCsReq {
         static instance: ChessRogueCheatRollCsReq = ChessRogueCheatRollCsReq {
-            EOOADPOCPHD: 0,
+            dice_surface_id: 0,
             KCHFJDAJECM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueCheatRollCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eChessRogueCheatRollCsReq.proto\"^\n\x18ChessRogueCheatRollCsReq\
-    \x12\x20\n\x0bEOOADPOCPHD\x18\n\x20\x01(\rR\x0bEOOADPOCPHD\x12\x20\n\x0b\
-    KCHFJDAJECM\x18\x04\x20\x01(\rR\x0bKCHFJDAJECMb\x06proto3\
+    \n\x1eChessRogueCheatRollCsReq.proto\"d\n\x18ChessRogueCheatRollCsReq\
+    \x12&\n\x0fdice_surface_id\x18\x03\x20\x01(\rR\rdiceSurfaceId\x12\x20\n\
+    \x0bKCHFJDAJECM\x18\x02\x20\x01(\rR\x0bKCHFJDAJECMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

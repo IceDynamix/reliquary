@@ -28,18 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActivityExpedition {
     // message fields
-    // @@protoc_insertion_point(field:ActivityExpedition.start_expedition_time)
-    pub start_expedition_time: i64,
-    // @@protoc_insertion_point(field:ActivityExpedition.OJFNLMHMLOF)
-    pub OJFNLMHMLOF: u32,
-    // @@protoc_insertion_point(field:ActivityExpedition.avatar_id_list)
-    pub avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ActivityExpedition.FNGGNBMOFAA)
     pub FNGGNBMOFAA: u32,
+    // @@protoc_insertion_point(field:ActivityExpedition.start_expedition_time)
+    pub start_expedition_time: i64,
     // @@protoc_insertion_point(field:ActivityExpedition.IPGECLELHGJ)
     pub IPGECLELHGJ: u32,
+    // @@protoc_insertion_point(field:ActivityExpedition.HNAAMDCFIDA)
+    pub HNAAMDCFIDA: u32,
+    // @@protoc_insertion_point(field:ActivityExpedition.OJFNLMHMLOF)
+    pub OJFNLMHMLOF: u32,
     // @@protoc_insertion_point(field:ActivityExpedition.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ActivityExpedition.avatar_id_list)
+    pub avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ActivityExpedition.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,27 +59,17 @@ impl ActivityExpedition {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "start_expedition_time",
-            |m: &ActivityExpedition| { &m.start_expedition_time },
-            |m: &mut ActivityExpedition| { &mut m.start_expedition_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJFNLMHMLOF",
-            |m: &ActivityExpedition| { &m.OJFNLMHMLOF },
-            |m: &mut ActivityExpedition| { &mut m.OJFNLMHMLOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &ActivityExpedition| { &m.avatar_id_list },
-            |m: &mut ActivityExpedition| { &mut m.avatar_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FNGGNBMOFAA",
             |m: &ActivityExpedition| { &m.FNGGNBMOFAA },
             |m: &mut ActivityExpedition| { &mut m.FNGGNBMOFAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "start_expedition_time",
+            |m: &ActivityExpedition| { &m.start_expedition_time },
+            |m: &mut ActivityExpedition| { &mut m.start_expedition_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPGECLELHGJ",
@@ -85,9 +77,24 @@ impl ActivityExpedition {
             |m: &mut ActivityExpedition| { &mut m.IPGECLELHGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNAAMDCFIDA",
+            |m: &ActivityExpedition| { &m.HNAAMDCFIDA },
+            |m: &mut ActivityExpedition| { &mut m.HNAAMDCFIDA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OJFNLMHMLOF",
+            |m: &ActivityExpedition| { &m.OJFNLMHMLOF },
+            |m: &mut ActivityExpedition| { &mut m.OJFNLMHMLOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &ActivityExpedition| { &m.id },
             |m: &mut ActivityExpedition| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_id_list",
+            |m: &ActivityExpedition| { &m.avatar_id_list },
+            |m: &mut ActivityExpedition| { &mut m.avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivityExpedition>(
             "ActivityExpedition",
@@ -107,26 +114,29 @@ impl ::protobuf::Message for ActivityExpedition {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                40 => {
+                    self.FNGGNBMOFAA = is.read_uint32()?;
+                },
                 112 => {
                     self.start_expedition_time = is.read_int64()?;
-                },
-                88 => {
-                    self.OJFNLMHMLOF = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
-                },
-                80 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.FNGGNBMOFAA = is.read_uint32()?;
                 },
                 64 => {
                     self.IPGECLELHGJ = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
+                    self.HNAAMDCFIDA = is.read_uint32()?;
+                },
+                16 => {
+                    self.OJFNLMHMLOF = is.read_uint32()?;
+                },
+                56 => {
                     self.id = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                },
+                88 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,44 +150,50 @@ impl ::protobuf::Message for ActivityExpedition {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FNGGNBMOFAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FNGGNBMOFAA);
+        }
         if self.start_expedition_time != 0 {
             my_size += ::protobuf::rt::int64_size(14, self.start_expedition_time);
-        }
-        if self.OJFNLMHMLOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OJFNLMHMLOF);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.avatar_id_list);
-        if self.FNGGNBMOFAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FNGGNBMOFAA);
         }
         if self.IPGECLELHGJ != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.IPGECLELHGJ);
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+        if self.HNAAMDCFIDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HNAAMDCFIDA);
         }
+        if self.OJFNLMHMLOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.OJFNLMHMLOF);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FNGGNBMOFAA != 0 {
+            os.write_uint32(5, self.FNGGNBMOFAA)?;
+        }
         if self.start_expedition_time != 0 {
             os.write_int64(14, self.start_expedition_time)?;
-        }
-        if self.OJFNLMHMLOF != 0 {
-            os.write_uint32(11, self.OJFNLMHMLOF)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.avatar_id_list)?;
-        if self.FNGGNBMOFAA != 0 {
-            os.write_uint32(12, self.FNGGNBMOFAA)?;
         }
         if self.IPGECLELHGJ != 0 {
             os.write_uint32(8, self.IPGECLELHGJ)?;
         }
-        if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+        if self.HNAAMDCFIDA != 0 {
+            os.write_uint32(6, self.HNAAMDCFIDA)?;
         }
+        if self.OJFNLMHMLOF != 0 {
+            os.write_uint32(2, self.OJFNLMHMLOF)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(7, self.id)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -195,23 +211,25 @@ impl ::protobuf::Message for ActivityExpedition {
     }
 
     fn clear(&mut self) {
-        self.start_expedition_time = 0;
-        self.OJFNLMHMLOF = 0;
-        self.avatar_id_list.clear();
         self.FNGGNBMOFAA = 0;
+        self.start_expedition_time = 0;
         self.IPGECLELHGJ = 0;
+        self.HNAAMDCFIDA = 0;
+        self.OJFNLMHMLOF = 0;
         self.id = 0;
+        self.avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivityExpedition {
         static instance: ActivityExpedition = ActivityExpedition {
-            start_expedition_time: 0,
-            OJFNLMHMLOF: 0,
-            avatar_id_list: ::std::vec::Vec::new(),
             FNGGNBMOFAA: 0,
+            start_expedition_time: 0,
             IPGECLELHGJ: 0,
+            HNAAMDCFIDA: 0,
+            OJFNLMHMLOF: 0,
             id: 0,
+            avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,13 +254,13 @@ impl ::protobuf::reflect::ProtobufValue for ActivityExpedition {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ActivityExpedition.proto\"\xe4\x01\n\x12ActivityExpedition\x122\n\
-    \x15start_expedition_time\x18\x0e\x20\x01(\x03R\x13startExpeditionTime\
-    \x12\x20\n\x0bOJFNLMHMLOF\x18\x0b\x20\x01(\rR\x0bOJFNLMHMLOF\x12$\n\x0ea\
-    vatar_id_list\x18\n\x20\x03(\rR\x0cavatarIdList\x12\x20\n\x0bFNGGNBMOFAA\
-    \x18\x0c\x20\x01(\rR\x0bFNGGNBMOFAA\x12\x20\n\x0bIPGECLELHGJ\x18\x08\x20\
-    \x01(\rR\x0bIPGECLELHGJ\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02idb\x06pr\
-    oto3\
+    \n\x18ActivityExpedition.proto\"\x86\x02\n\x12ActivityExpedition\x12\x20\
+    \n\x0bFNGGNBMOFAA\x18\x05\x20\x01(\rR\x0bFNGGNBMOFAA\x122\n\x15start_exp\
+    edition_time\x18\x0e\x20\x01(\x03R\x13startExpeditionTime\x12\x20\n\x0bI\
+    PGECLELHGJ\x18\x08\x20\x01(\rR\x0bIPGECLELHGJ\x12\x20\n\x0bHNAAMDCFIDA\
+    \x18\x06\x20\x01(\rR\x0bHNAAMDCFIDA\x12\x20\n\x0bOJFNLMHMLOF\x18\x02\x20\
+    \x01(\rR\x0bOJFNLMHMLOF\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12$\n\
+    \x0eavatar_id_list\x18\x0b\x20\x03(\rR\x0cavatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

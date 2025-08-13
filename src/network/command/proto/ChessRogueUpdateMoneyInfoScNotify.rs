@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueUpdateMoneyInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.virtual_item_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateMoneyInfoScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'ChessRogueUpdateMoneyInfoScNotify.proto\x1a\x16RogueVirtualItem.proto\
     \"b\n!ChessRogueUpdateMoneyInfoScNotify\x12=\n\x11virtual_item_info\x18\
-    \x06\x20\x01(\x0b2\x11.RogueVirtualItemR\x0fvirtualItemInfob\x06proto3\
+    \x05\x20\x01(\x0b2\x11.RogueVirtualItemR\x0fvirtualItemInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for FFIHDGGAEKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.MJJMPIFLMKF = is.read_bool()?;
                 },
-                122 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FFIHDGGAEKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MJJMPIFLMKF != false {
-            os.write_bool(4, self.MJJMPIFLMKF)?;
+            os.write_bool(6, self.MJJMPIFLMKF)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FFIHDGGAEKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFIHDGGAEKN.proto\x1a\x10MotionInfo.proto\"T\n\x0bFFIHDGGAEKN\x12\
-    \x20\n\x0bMJJMPIFLMKF\x18\x04\x20\x01(\x08R\x0bMJJMPIFLMKF\x12#\n\x06mot\
-    ion\x18\x0f\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    \x20\n\x0bMJJMPIFLMKF\x18\x06\x20\x01(\x08R\x0bMJJMPIFLMKF\x12#\n\x06mot\
+    ion\x18\x0c\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

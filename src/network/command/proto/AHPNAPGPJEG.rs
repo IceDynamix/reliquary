@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AHPNAPGPJEG {
     // message fields
-    // @@protoc_insertion_point(field:AHPNAPGPJEG.OJEBLMKKMGO)
-    pub OJEBLMKKMGO: u32,
+    // @@protoc_insertion_point(field:AHPNAPGPJEG.maze_buff_id)
+    pub maze_buff_id: u32,
     // @@protoc_insertion_point(field:AHPNAPGPJEG.AMOJFMFEOGE)
     pub AMOJFMFEOGE: u32,
     // special fields
@@ -52,9 +52,9 @@ impl AHPNAPGPJEG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJEBLMKKMGO",
-            |m: &AHPNAPGPJEG| { &m.OJEBLMKKMGO },
-            |m: &mut AHPNAPGPJEG| { &mut m.OJEBLMKKMGO },
+            "maze_buff_id",
+            |m: &AHPNAPGPJEG| { &m.maze_buff_id },
+            |m: &mut AHPNAPGPJEG| { &mut m.maze_buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMOJFMFEOGE",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AHPNAPGPJEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.OJEBLMKKMGO = is.read_uint32()?;
+                72 => {
+                    self.maze_buff_id = is.read_uint32()?;
                 },
-                112 => {
+                48 => {
                     self.AMOJFMFEOGE = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AHPNAPGPJEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OJEBLMKKMGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OJEBLMKKMGO);
+        if self.maze_buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.maze_buff_id);
         }
         if self.AMOJFMFEOGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AMOJFMFEOGE);
+            my_size += ::protobuf::rt::uint32_size(6, self.AMOJFMFEOGE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AHPNAPGPJEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OJEBLMKKMGO != 0 {
-            os.write_uint32(7, self.OJEBLMKKMGO)?;
+        if self.maze_buff_id != 0 {
+            os.write_uint32(9, self.maze_buff_id)?;
         }
         if self.AMOJFMFEOGE != 0 {
-            os.write_uint32(14, self.AMOJFMFEOGE)?;
+            os.write_uint32(6, self.AMOJFMFEOGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for AHPNAPGPJEG {
     }
 
     fn clear(&mut self) {
-        self.OJEBLMKKMGO = 0;
+        self.maze_buff_id = 0;
         self.AMOJFMFEOGE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHPNAPGPJEG {
         static instance: AHPNAPGPJEG = AHPNAPGPJEG {
-            OJEBLMKKMGO: 0,
+            maze_buff_id: 0,
             AMOJFMFEOGE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AHPNAPGPJEG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AHPNAPGPJEG.proto\"Q\n\x0bAHPNAPGPJEG\x12\x20\n\x0bOJEBLMKKMGO\x18\
-    \x07\x20\x01(\rR\x0bOJEBLMKKMGO\x12\x20\n\x0bAMOJFMFEOGE\x18\x0e\x20\x01\
-    (\rR\x0bAMOJFMFEOGEb\x06proto3\
+    \n\x11AHPNAPGPJEG.proto\"Q\n\x0bAHPNAPGPJEG\x12\x20\n\x0cmaze_buff_id\
+    \x18\t\x20\x01(\rR\nmazeBuffId\x12\x20\n\x0bAMOJFMFEOGE\x18\x06\x20\x01(\
+    \rR\x0bAMOJFMFEOGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

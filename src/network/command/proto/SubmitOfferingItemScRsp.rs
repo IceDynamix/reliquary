@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitOfferingItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SubmitOfferingItemScRsp.PPJDAPBPOAP)
-    pub PPJDAPBPOAP: ::protobuf::MessageField<super::HKMKCHNPKDC::HKMKCHNPKDC>,
+    // @@protoc_insertion_point(field:SubmitOfferingItemScRsp.offering_info)
+    pub offering_info: ::protobuf::MessageField<super::OfferingInfo::OfferingInfo>,
     // @@protoc_insertion_point(field:SubmitOfferingItemScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl SubmitOfferingItemScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKMKCHNPKDC::HKMKCHNPKDC>(
-            "PPJDAPBPOAP",
-            |m: &SubmitOfferingItemScRsp| { &m.PPJDAPBPOAP },
-            |m: &mut SubmitOfferingItemScRsp| { &mut m.PPJDAPBPOAP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OfferingInfo::OfferingInfo>(
+            "offering_info",
+            |m: &SubmitOfferingItemScRsp| { &m.offering_info },
+            |m: &mut SubmitOfferingItemScRsp| { &mut m.offering_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for SubmitOfferingItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJDAPBPOAP)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.offering_info)?;
                 },
-                16 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SubmitOfferingItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PPJDAPBPOAP.as_ref() {
+        if let Some(v) = self.offering_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SubmitOfferingItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PPJDAPBPOAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.offering_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SubmitOfferingItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.PPJDAPBPOAP.clear();
+        self.offering_info.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitOfferingItemScRsp {
         static instance: SubmitOfferingItemScRsp = SubmitOfferingItemScRsp {
-            PPJDAPBPOAP: ::protobuf::MessageField::none(),
+            offering_info: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SubmitOfferingItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSubmitOfferingItemScRsp.proto\x1a\x11HKMKCHNPKDC.proto\"c\n\x17Sub\
-    mitOfferingItemScRsp\x12.\n\x0bPPJDAPBPOAP\x18\x0f\x20\x01(\x0b2\x0c.HKM\
-    KCHNPKDCR\x0bPPJDAPBPOAP\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07ret\
-    codeb\x06proto3\
+    \n\x1dSubmitOfferingItemScRsp.proto\x1a\x12OfferingInfo.proto\"g\n\x17Su\
+    bmitOfferingItemScRsp\x122\n\roffering_info\x18\n\x20\x01(\x0b2\r.Offeri\
+    ngInfoR\x0cofferingInfo\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retc\
+    odeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HKMKCHNPKDC::file_descriptor().clone());
+            deps.push(super::OfferingInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SubmitOfferingItemScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

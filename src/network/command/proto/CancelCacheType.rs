@@ -33,6 +33,8 @@ pub enum CancelCacheType {
     CACHE_NOTIFY_TYPE_RECYCLE = 1,
     // @@protoc_insertion_point(enum_value:CancelCacheType.CACHE_NOTIFY_TYPE_RECHARGE)
     CACHE_NOTIFY_TYPE_RECHARGE = 2,
+    // @@protoc_insertion_point(enum_value:CancelCacheType.CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER)
+    CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER = 3,
 }
 
 impl ::protobuf::Enum for CancelCacheType {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for CancelCacheType {
             0 => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_NONE),
             1 => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_RECYCLE),
             2 => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_RECHARGE),
+            3 => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for CancelCacheType {
             "CACHE_NOTIFY_TYPE_NONE" => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_NONE),
             "CACHE_NOTIFY_TYPE_RECYCLE" => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_RECYCLE),
             "CACHE_NOTIFY_TYPE_RECHARGE" => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_RECHARGE),
+            "CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER" => ::std::option::Option::Some(CancelCacheType::CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for CancelCacheType {
         CancelCacheType::CACHE_NOTIFY_TYPE_NONE,
         CancelCacheType::CACHE_NOTIFY_TYPE_RECYCLE,
         CancelCacheType::CACHE_NOTIFY_TYPE_RECHARGE,
+        CancelCacheType::CACHE_NOTIFY_TYPE_ITEM_AUTO_TRANSFER,
     ];
 }
 
@@ -92,9 +97,10 @@ impl CancelCacheType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CancelCacheType.proto*l\n\x0fCancelCacheType\x12\x1a\n\x16CACHE_NO\
-    TIFY_TYPE_NONE\x10\0\x12\x1d\n\x19CACHE_NOTIFY_TYPE_RECYCLE\x10\x01\x12\
-    \x1e\n\x1aCACHE_NOTIFY_TYPE_RECHARGE\x10\x02b\x06proto3\
+    \n\x15CancelCacheType.proto*\x96\x01\n\x0fCancelCacheType\x12\x1a\n\x16C\
+    ACHE_NOTIFY_TYPE_NONE\x10\0\x12\x1d\n\x19CACHE_NOTIFY_TYPE_RECYCLE\x10\
+    \x01\x12\x1e\n\x1aCACHE_NOTIFY_TYPE_RECHARGE\x10\x02\x12(\n$CACHE_NOTIFY\
+    _TYPE_ITEM_AUTO_TRANSFER\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

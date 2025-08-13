@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBuffInfo {
     // message oneof groups
-    pub BCMEKLNAEBE: ::std::option::Option<challenge_buff_info::BCMEKLNAEBE>,
+    pub KFELKJLDKEH: ::std::option::Option<challenge_buff_info::KFELKJLDKEH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl ChallengeBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffInfo story_info = 14;
+    // .ChallengeStoryBuffInfo story_info = 3;
 
     pub fn story_info(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(ref v)) => v,
             _ => <super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_story_info(&mut self) {
-        self.BCMEKLNAEBE = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_story_info(&self) -> bool {
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_story_info(&mut self, v: super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo) {
-        self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_story_info(&mut self) -> &mut super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        if let ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(_)) = self.BCMEKLNAEBE {
+        if let ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(_)) = self.KFELKJLDKEH {
         } else {
-            self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
         }
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl ChallengeBuffInfo {
     // Take field
     pub fn take_story_info(&mut self) -> super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
         if self.has_story_info() {
-            match self.BCMEKLNAEBE.take() {
-                ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl ChallengeBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffInfo boss_info = 11;
+    // .ChallengeBossBuffInfo boss_info = 15;
 
     pub fn boss_info(&self) -> &super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(ref v)) => v,
             _ => <super::ChallengeBossBuffInfo::ChallengeBossBuffInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_boss_info(&mut self) {
-        self.BCMEKLNAEBE = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_boss_info(&self) -> bool {
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_boss_info(&mut self, v: super::ChallengeBossBuffInfo::ChallengeBossBuffInfo) {
-        self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_boss_info(&mut self) -> &mut super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
-        if let ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(_)) = self.BCMEKLNAEBE {
+        if let ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(_)) = self.KFELKJLDKEH {
         } else {
-            self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(super::ChallengeBossBuffInfo::ChallengeBossBuffInfo::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(super::ChallengeBossBuffInfo::ChallengeBossBuffInfo::new()));
         }
-        match self.BCMEKLNAEBE {
-            ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl ChallengeBuffInfo {
     // Take field
     pub fn take_boss_info(&mut self) -> super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
         if self.has_boss_info() {
-            match self.BCMEKLNAEBE.take() {
-                ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl ChallengeBuffInfo {
             ChallengeBuffInfo::mut_boss_info,
             ChallengeBuffInfo::set_boss_info,
         ));
-        oneofs.push(challenge_buff_info::BCMEKLNAEBE::generated_oneof_descriptor_data());
+        oneofs.push(challenge_buff_info::KFELKJLDKEH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBuffInfo>(
             "ChallengeBuffInfo",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::StoryInfo(is.read_message()?));
+                26 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::StoryInfo(is.read_message()?));
                 },
-                90 => {
-                    self.BCMEKLNAEBE = ::std::option::Option::Some(challenge_buff_info::BCMEKLNAEBE::BossInfo(is.read_message()?));
+                122 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(challenge_buff_info::KFELKJLDKEH::BossInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.BCMEKLNAEBE {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &challenge_buff_info::BCMEKLNAEBE::StoryInfo(ref v) => {
+                &challenge_buff_info::KFELKJLDKEH::StoryInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &challenge_buff_info::BCMEKLNAEBE::BossInfo(ref v) => {
+                &challenge_buff_info::KFELKJLDKEH::BossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.BCMEKLNAEBE {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &challenge_buff_info::BCMEKLNAEBE::StoryInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &challenge_buff_info::KFELKJLDKEH::StoryInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &challenge_buff_info::BCMEKLNAEBE::BossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &challenge_buff_info::KFELKJLDKEH::BossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.BCMEKLNAEBE = ::std::option::Option::None;
-        self.BCMEKLNAEBE = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBuffInfo {
         static instance: ChallengeBuffInfo = ChallengeBuffInfo {
-            BCMEKLNAEBE: ::std::option::Option::None,
+            KFELKJLDKEH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod challenge_buff_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChallengeBuffInfo.BCMEKLNAEBE)
-    pub enum BCMEKLNAEBE {
+    // @@protoc_insertion_point(oneof:ChallengeBuffInfo.KFELKJLDKEH)
+    pub enum KFELKJLDKEH {
         // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.story_info)
         StoryInfo(super::super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo),
         // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.boss_info)
         BossInfo(super::super::ChallengeBossBuffInfo::ChallengeBossBuffInfo),
     }
 
-    impl ::protobuf::Oneof for BCMEKLNAEBE {
+    impl ::protobuf::Oneof for KFELKJLDKEH {
     }
 
-    impl ::protobuf::OneofFull for BCMEKLNAEBE {
+    impl ::protobuf::OneofFull for KFELKJLDKEH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChallengeBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("BCMEKLNAEBE").unwrap()).clone()
+            descriptor.get(|| <super::ChallengeBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
         }
     }
 
-    impl BCMEKLNAEBE {
+    impl KFELKJLDKEH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BCMEKLNAEBE>("BCMEKLNAEBE")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
         }
     }
 }
@@ -306,9 +306,9 @@ pub mod challenge_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBuffInfo.proto\x1a\x1bChallengeBossBuffInfo.proto\x1a\x1c\
     ChallengeStoryBuffInfo.proto\"\x93\x01\n\x11ChallengeBuffInfo\x128\n\nst\
-    ory_info\x18\x0e\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
-    \x125\n\tboss_info\x18\x0b\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
-    \x08bossInfoB\r\n\x0bBCMEKLNAEBEb\x06proto3\
+    ory_info\x18\x03\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
+    \x125\n\tboss_info\x18\x0f\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
+    \x08bossInfoB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

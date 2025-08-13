@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PunkLordBattleRecordList {
     // message fields
     // @@protoc_insertion_point(field:PunkLordBattleRecordList.battle_record_list)
-    pub battle_record_list: ::std::vec::Vec<super::PunkLordBattleRecord::PunkLordBattleRecord>,
+    pub battle_record_list: ::std::vec::Vec<super::AHKANKEPADJ::AHKANKEPADJ>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordBattleRecordList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordBattleRecordList {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1ePunkLordBattleRecordList.proto\x1a\x1aPunkLordBattleRecord.proto\"\
-    _\n\x18PunkLordBattleRecordList\x12C\n\x12battle_record_list\x18\x01\x20\
-    \x03(\x0b2\x15.PunkLordBattleRecordR\x10battleRecordListb\x06proto3\
+    \n\x1ePunkLordBattleRecordList.proto\x1a\x11AHKANKEPADJ.proto\"V\n\x18Pu\
+    nkLordBattleRecordList\x12:\n\x12battle_record_list\x18\x01\x20\x03(\x0b\
+    2\x0c.AHKANKEPADJR\x10battleRecordListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PunkLordBattleRecord::file_descriptor().clone());
+            deps.push(super::AHKANKEPADJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PunkLordBattleRecordList::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,7 +72,7 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.NOGFEEMNHPC = is.read_uint64()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NOGFEEMNHPC != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.NOGFEEMNHPC);
+            my_size += ::protobuf::rt::uint64_size(6, self.NOGFEEMNHPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MultiplayerFightGiveUpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NOGFEEMNHPC != 0 {
-            os.write_uint64(7, self.NOGFEEMNHPC)?;
+            os.write_uint64(6, self.NOGFEEMNHPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MultiplayerFightGiveUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MultiplayerFightGiveUpCsReq.proto\"?\n\x1bMultiplayerFightGiveUpCsReq\
-    \x12\x20\n\x0bNOGFEEMNHPC\x18\x07\x20\x01(\x04R\x0bNOGFEEMNHPCb\x06proto\
+    \x12\x20\n\x0bNOGFEEMNHPC\x18\x06\x20\x01(\x04R\x0bNOGFEEMNHPCb\x06proto\
     3\
 ";
 

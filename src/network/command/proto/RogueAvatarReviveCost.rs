@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueAvatarReviveCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueAvatarReviveCost {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueAvatarReviveCost {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueAvatarReviveCost.proto\x1a\x12ItemCostData.proto\"R\n\x15Rogu\
-    eAvatarReviveCost\x129\n\x11rogue_revive_cost\x18\x05\x20\x01(\x0b2\r.It\
-    emCostDataR\x0frogueReviveCostb\x06proto3\
+    eAvatarReviveCost\x129\n\x11rogue_revive_cost\x18\t\x20\x01(\x0b2\r.Item\
+    CostDataR\x0frogueReviveCostb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

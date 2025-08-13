@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKLOALDHNEF {
     // message fields
-    // @@protoc_insertion_point(field:GKLOALDHNEF.total_damage)
-    pub total_damage: i32,
     // @@protoc_insertion_point(field:GKLOALDHNEF.item_id)
     pub item_id: u32,
+    // @@protoc_insertion_point(field:GKLOALDHNEF.JPHEDNECAGD)
+    pub JPHEDNECAGD: i32,
     // @@protoc_insertion_point(field:GKLOALDHNEF.FALBKIMMPIH)
     pub FALBKIMMPIH: i32,
     // @@protoc_insertion_point(field:GKLOALDHNEF.JOJAHIAFNLK)
     pub JOJAHIAFNLK: u32,
-    // @@protoc_insertion_point(field:GKLOALDHNEF.JPHEDNECAGD)
-    pub JPHEDNECAGD: i32,
+    // @@protoc_insertion_point(field:GKLOALDHNEF.total_damage)
+    pub total_damage: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GKLOALDHNEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,14 @@ impl GKLOALDHNEF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &GKLOALDHNEF| { &m.total_damage },
-            |m: &mut GKLOALDHNEF| { &mut m.total_damage },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &GKLOALDHNEF| { &m.item_id },
             |m: &mut GKLOALDHNEF| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPHEDNECAGD",
+            |m: &GKLOALDHNEF| { &m.JPHEDNECAGD },
+            |m: &mut GKLOALDHNEF| { &mut m.JPHEDNECAGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FALBKIMMPIH",
@@ -78,9 +78,9 @@ impl GKLOALDHNEF {
             |m: &mut GKLOALDHNEF| { &mut m.JOJAHIAFNLK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPHEDNECAGD",
-            |m: &GKLOALDHNEF| { &m.JPHEDNECAGD },
-            |m: &mut GKLOALDHNEF| { &mut m.JPHEDNECAGD },
+            "total_damage",
+            |m: &GKLOALDHNEF| { &m.total_damage },
+            |m: &mut GKLOALDHNEF| { &mut m.total_damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKLOALDHNEF>(
             "GKLOALDHNEF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GKLOALDHNEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.total_damage = is.read_int32()?;
-                },
-                80 => {
+                104 => {
                     self.item_id = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
+                    self.JPHEDNECAGD = is.read_int32()?;
+                },
+                16 => {
                     self.FALBKIMMPIH = is.read_int32()?;
                 },
-                104 => {
+                72 => {
                     self.JOJAHIAFNLK = is.read_uint32()?;
                 },
-                32 => {
-                    self.JPHEDNECAGD = is.read_int32()?;
+                40 => {
+                    self.total_damage = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for GKLOALDHNEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.total_damage != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.total_damage);
-        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
-        }
-        if self.FALBKIMMPIH != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.FALBKIMMPIH);
-        }
-        if self.JOJAHIAFNLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JOJAHIAFNLK);
+            my_size += ::protobuf::rt::uint32_size(13, self.item_id);
         }
         if self.JPHEDNECAGD != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.JPHEDNECAGD);
+            my_size += ::protobuf::rt::int32_size(11, self.JPHEDNECAGD);
+        }
+        if self.FALBKIMMPIH != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.FALBKIMMPIH);
+        }
+        if self.JOJAHIAFNLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JOJAHIAFNLK);
+        }
+        if self.total_damage != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.total_damage);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for GKLOALDHNEF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.total_damage != 0 {
-            os.write_int32(11, self.total_damage)?;
-        }
         if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
-        }
-        if self.FALBKIMMPIH != 0 {
-            os.write_int32(12, self.FALBKIMMPIH)?;
-        }
-        if self.JOJAHIAFNLK != 0 {
-            os.write_uint32(13, self.JOJAHIAFNLK)?;
+            os.write_uint32(13, self.item_id)?;
         }
         if self.JPHEDNECAGD != 0 {
-            os.write_int32(4, self.JPHEDNECAGD)?;
+            os.write_int32(11, self.JPHEDNECAGD)?;
+        }
+        if self.FALBKIMMPIH != 0 {
+            os.write_int32(2, self.FALBKIMMPIH)?;
+        }
+        if self.JOJAHIAFNLK != 0 {
+            os.write_uint32(9, self.JOJAHIAFNLK)?;
+        }
+        if self.total_damage != 0 {
+            os.write_int32(5, self.total_damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for GKLOALDHNEF {
     }
 
     fn clear(&mut self) {
-        self.total_damage = 0;
         self.item_id = 0;
+        self.JPHEDNECAGD = 0;
         self.FALBKIMMPIH = 0;
         self.JOJAHIAFNLK = 0;
-        self.JPHEDNECAGD = 0;
+        self.total_damage = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKLOALDHNEF {
         static instance: GKLOALDHNEF = GKLOALDHNEF {
-            total_damage: 0,
             item_id: 0,
+            JPHEDNECAGD: 0,
             FALBKIMMPIH: 0,
             JOJAHIAFNLK: 0,
-            JPHEDNECAGD: 0,
+            total_damage: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for GKLOALDHNEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKLOALDHNEF.proto\"\xaf\x01\n\x0bGKLOALDHNEF\x12!\n\x0ctotal_damag\
-    e\x18\x0b\x20\x01(\x05R\x0btotalDamage\x12\x17\n\x07item_id\x18\n\x20\
-    \x01(\rR\x06itemId\x12\x20\n\x0bFALBKIMMPIH\x18\x0c\x20\x01(\x05R\x0bFAL\
-    BKIMMPIH\x12\x20\n\x0bJOJAHIAFNLK\x18\r\x20\x01(\rR\x0bJOJAHIAFNLK\x12\
-    \x20\n\x0bJPHEDNECAGD\x18\x04\x20\x01(\x05R\x0bJPHEDNECAGDb\x06proto3\
+    \n\x11GKLOALDHNEF.proto\"\xaf\x01\n\x0bGKLOALDHNEF\x12\x17\n\x07item_id\
+    \x18\r\x20\x01(\rR\x06itemId\x12\x20\n\x0bJPHEDNECAGD\x18\x0b\x20\x01(\
+    \x05R\x0bJPHEDNECAGD\x12\x20\n\x0bFALBKIMMPIH\x18\x02\x20\x01(\x05R\x0bF\
+    ALBKIMMPIH\x12\x20\n\x0bJOJAHIAFNLK\x18\t\x20\x01(\rR\x0bJOJAHIAFNLK\x12\
+    !\n\x0ctotal_damage\x18\x05\x20\x01(\x05R\x0btotalDamageb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

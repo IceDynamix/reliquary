@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KEHMGKIHEFN {
     // message oneof groups
-    pub GLMPLDBLMEC: ::std::option::Option<kehmgkihefn::GLMPLDBLMEC>,
+    pub NFGNBBJGANG: ::std::option::Option<kehmgkihefn::NFGNBBJGANG>,
     // special fields
     // @@protoc_insertion_point(special_field:KEHMGKIHEFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl KEHMGKIHEFN {
         ::std::default::Default::default()
     }
 
-    // .FCNOLLFGPCK GIEIDJEEPAC = 15;
+    // .FCNOLLFGPCK GIEIDJEEPAC = 11;
 
     pub fn GIEIDJEEPAC(&self) -> &super::FCNOLLFGPCK::FCNOLLFGPCK {
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(ref v)) => v,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v)) => v,
             _ => <super::FCNOLLFGPCK::FCNOLLFGPCK as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_GIEIDJEEPAC(&mut self) {
-        self.GLMPLDBLMEC = ::std::option::Option::None;
+        self.NFGNBBJGANG = ::std::option::Option::None;
     }
 
     pub fn has_GIEIDJEEPAC(&self) -> bool {
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(..)) => true,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_GIEIDJEEPAC(&mut self, v: super::FCNOLLFGPCK::FCNOLLFGPCK) {
-        self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(v))
+        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_GIEIDJEEPAC(&mut self) -> &mut super::FCNOLLFGPCK::FCNOLLFGPCK {
-        if let ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(_)) = self.GLMPLDBLMEC {
+        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(_)) = self.NFGNBBJGANG {
         } else {
-            self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(super::FCNOLLFGPCK::FCNOLLFGPCK::new()));
+            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(super::FCNOLLFGPCK::FCNOLLFGPCK::new()));
         }
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(ref mut v)) => v,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl KEHMGKIHEFN {
     // Take field
     pub fn take_GIEIDJEEPAC(&mut self) -> super::FCNOLLFGPCK::FCNOLLFGPCK {
         if self.has_GIEIDJEEPAC() {
-            match self.GLMPLDBLMEC.take() {
-                ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(v)) => v,
+            match self.NFGNBBJGANG.take() {
+                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl KEHMGKIHEFN {
         }
     }
 
-    // .KAMCIOPBPGA ADDCJEJPFEF = 7;
+    // .KAMCIOPBPGA ADDCJEJPFEF = 3;
 
     pub fn ADDCJEJPFEF(&self) -> &super::KAMCIOPBPGA::KAMCIOPBPGA {
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(ref v)) => v,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v)) => v,
             _ => <super::KAMCIOPBPGA::KAMCIOPBPGA as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ADDCJEJPFEF(&mut self) {
-        self.GLMPLDBLMEC = ::std::option::Option::None;
+        self.NFGNBBJGANG = ::std::option::Option::None;
     }
 
     pub fn has_ADDCJEJPFEF(&self) -> bool {
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(..)) => true,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ADDCJEJPFEF(&mut self, v: super::KAMCIOPBPGA::KAMCIOPBPGA) {
-        self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(v))
+        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ADDCJEJPFEF(&mut self) -> &mut super::KAMCIOPBPGA::KAMCIOPBPGA {
-        if let ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(_)) = self.GLMPLDBLMEC {
+        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(_)) = self.NFGNBBJGANG {
         } else {
-            self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(super::KAMCIOPBPGA::KAMCIOPBPGA::new()));
+            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(super::KAMCIOPBPGA::KAMCIOPBPGA::new()));
         }
-        match self.GLMPLDBLMEC {
-            ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(ref mut v)) => v,
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl KEHMGKIHEFN {
     // Take field
     pub fn take_ADDCJEJPFEF(&mut self) -> super::KAMCIOPBPGA::KAMCIOPBPGA {
         if self.has_ADDCJEJPFEF() {
-            match self.GLMPLDBLMEC.take() {
-                ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(v)) => v,
+            match self.NFGNBBJGANG.take() {
+                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl KEHMGKIHEFN {
             KEHMGKIHEFN::mut_ADDCJEJPFEF,
             KEHMGKIHEFN::set_ADDCJEJPFEF,
         ));
-        oneofs.push(kehmgkihefn::GLMPLDBLMEC::generated_oneof_descriptor_data());
+        oneofs.push(kehmgkihefn::NFGNBBJGANG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KEHMGKIHEFN>(
             "KEHMGKIHEFN",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(is.read_message()?));
+                90 => {
+                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(is.read_message()?));
                 },
-                58 => {
-                    self.GLMPLDBLMEC = ::std::option::Option::Some(kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(is.read_message()?));
+                26 => {
+                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.GLMPLDBLMEC {
+        if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
             match v {
-                &kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(ref v) => {
+                &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(ref v) => {
+                &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.GLMPLDBLMEC {
+        if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
             match v {
-                &kehmgkihefn::GLMPLDBLMEC::GIEIDJEEPAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
-                &kehmgkihefn::GLMPLDBLMEC::ADDCJEJPFEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     }
 
     fn clear(&mut self) {
-        self.GLMPLDBLMEC = ::std::option::Option::None;
-        self.GLMPLDBLMEC = ::std::option::Option::None;
+        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NFGNBBJGANG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KEHMGKIHEFN {
         static instance: KEHMGKIHEFN = KEHMGKIHEFN {
-            GLMPLDBLMEC: ::std::option::Option::None,
+            NFGNBBJGANG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,36 +278,36 @@ pub mod kehmgkihefn {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:KEHMGKIHEFN.GLMPLDBLMEC)
-    pub enum GLMPLDBLMEC {
+    // @@protoc_insertion_point(oneof:KEHMGKIHEFN.NFGNBBJGANG)
+    pub enum NFGNBBJGANG {
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.GIEIDJEEPAC)
         GIEIDJEEPAC(super::super::FCNOLLFGPCK::FCNOLLFGPCK),
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.ADDCJEJPFEF)
         ADDCJEJPFEF(super::super::KAMCIOPBPGA::KAMCIOPBPGA),
     }
 
-    impl ::protobuf::Oneof for GLMPLDBLMEC {
+    impl ::protobuf::Oneof for NFGNBBJGANG {
     }
 
-    impl ::protobuf::OneofFull for GLMPLDBLMEC {
+    impl ::protobuf::OneofFull for NFGNBBJGANG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::KEHMGKIHEFN as ::protobuf::MessageFull>::descriptor().oneof_by_name("GLMPLDBLMEC").unwrap()).clone()
+            descriptor.get(|| <super::KEHMGKIHEFN as ::protobuf::MessageFull>::descriptor().oneof_by_name("NFGNBBJGANG").unwrap()).clone()
         }
     }
 
-    impl GLMPLDBLMEC {
+    impl NFGNBBJGANG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GLMPLDBLMEC>("GLMPLDBLMEC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NFGNBBJGANG>("NFGNBBJGANG")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEHMGKIHEFN.proto\x1a\x11FCNOLLFGPCK.proto\x1a\x11KAMCIOPBPGA.prot\
-    o\"\x80\x01\n\x0bKEHMGKIHEFN\x120\n\x0bGIEIDJEEPAC\x18\x0f\x20\x01(\x0b2\
-    \x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\x07\x20\
-    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEFB\r\n\x0bGLMPLDBLMECb\x06pr\
+    o\"\x80\x01\n\x0bKEHMGKIHEFN\x120\n\x0bGIEIDJEEPAC\x18\x0b\x20\x01(\x0b2\
+    \x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\x03\x20\
+    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEFB\r\n\x0bNFGNBBJGANGb\x06pr\
     oto3\
 ";
 

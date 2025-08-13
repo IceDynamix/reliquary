@@ -79,7 +79,7 @@ impl ::protobuf::Message for OIEGKNHNIAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMJDBALGMHD)?;
                 },
                 66 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for OIEGKNHNIAN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JMJDBALGMHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.LGHOCABPPEH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for OIEGKNHNIAN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIEGKNHNIAN.proto\x1a\x11FEKFBAOCGKP.proto\"m\n\x0bOIEGKNHNIAN\x12\
-    .\n\x0bJMJDBALGMHD\x18\x06\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bJMJDBALGMHD\
+    .\n\x0bJMJDBALGMHD\x18\x0b\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bJMJDBALGMHD\
     \x12.\n\x0bLGHOCABPPEH\x18\x08\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bLGHOCAB\
     PPEHb\x06proto3\
 ";

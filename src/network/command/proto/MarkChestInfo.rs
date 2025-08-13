@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChestInfo {
     // message fields
-    // @@protoc_insertion_point(field:MarkChestInfo.config_id)
-    pub config_id: u32,
     // @@protoc_insertion_point(field:MarkChestInfo.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:MarkChestInfo.floor_id)
     pub floor_id: u32,
+    // @@protoc_insertion_point(field:MarkChestInfo.config_id)
+    pub config_id: u32,
     // @@protoc_insertion_point(field:MarkChestInfo.plane_id)
     pub plane_id: u32,
     // special fields
@@ -56,11 +56,6 @@ impl MarkChestInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &MarkChestInfo| { &m.config_id },
-            |m: &mut MarkChestInfo| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &MarkChestInfo| { &m.group_id },
             |m: &mut MarkChestInfo| { &mut m.group_id },
@@ -69,6 +64,11 @@ impl MarkChestInfo {
             "floor_id",
             |m: &MarkChestInfo| { &m.floor_id },
             |m: &mut MarkChestInfo| { &mut m.floor_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &MarkChestInfo| { &m.config_id },
+            |m: &mut MarkChestInfo| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for MarkChestInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                8 => {
                     self.group_id = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                64 => {
                     self.plane_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for MarkChestInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.config_id);
-        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.floor_id);
+        }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.config_id);
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.plane_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for MarkChestInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.config_id != 0 {
-            os.write_uint32(3, self.config_id)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(3, self.group_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(15, self.floor_id)?;
+            os.write_uint32(6, self.floor_id)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(7, self.config_id)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(9, self.plane_id)?;
+            os.write_uint32(8, self.plane_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for MarkChestInfo {
     }
 
     fn clear(&mut self) {
-        self.config_id = 0;
         self.group_id = 0;
         self.floor_id = 0;
+        self.config_id = 0;
         self.plane_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChestInfo {
         static instance: MarkChestInfo = MarkChestInfo {
-            config_id: 0,
             group_id: 0,
             floor_id: 0,
+            config_id: 0,
             plane_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkChestInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13MarkChestInfo.proto\"}\n\rMarkChestInfo\x12\x1b\n\tconfig_id\x18\
-    \x03\x20\x01(\rR\x08configId\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\
-    \x07groupId\x12\x19\n\x08floor_id\x18\x0f\x20\x01(\rR\x07floorId\x12\x19\
-    \n\x08plane_id\x18\t\x20\x01(\rR\x07planeIdb\x06proto3\
+    \n\x13MarkChestInfo.proto\"}\n\rMarkChestInfo\x12\x19\n\x08group_id\x18\
+    \x03\x20\x01(\rR\x07groupId\x12\x19\n\x08floor_id\x18\x06\x20\x01(\rR\
+    \x07floorId\x12\x1b\n\tconfig_id\x18\x07\x20\x01(\rR\x08configId\x12\x19\
+    \n\x08plane_id\x18\x08\x20\x01(\rR\x07planeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

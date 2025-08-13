@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueChangeyAeonDimensionNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HNDLHICDNPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueChangeyAeonDimensionNotify
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ChessRogueChangeyAeonDimensionNotify.proto\x1a\x19ChessRogueQueryAeon\
     .proto\"^\n$ChessRogueChangeyAeonDimensionNotify\x126\n\x0bHNDLHICDNPC\
-    \x18\x0b\x20\x01(\x0b2\x14.ChessRogueQueryAeonR\x0bHNDLHICDNPCb\x06proto\
+    \x18\x05\x20\x01(\x0b2\x14.ChessRogueQueryAeonR\x0bHNDLHICDNPCb\x06proto\
     3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKDIHIFFHFD {
     // message fields
-    // @@protoc_insertion_point(field:GKDIHIFFHFD.FKKOBDMFHIL)
-    pub FKKOBDMFHIL: u32,
     // @@protoc_insertion_point(field:GKDIHIFFHFD.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:GKDIHIFFHFD.FKKOBDMFHIL)
+    pub FKKOBDMFHIL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GKDIHIFFHFD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GKDIHIFFHFD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKKOBDMFHIL",
-            |m: &GKDIHIFFHFD| { &m.FKKOBDMFHIL },
-            |m: &mut GKDIHIFFHFD| { &mut m.FKKOBDMFHIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
             |m: &GKDIHIFFHFD| { &m.num },
             |m: &mut GKDIHIFFHFD| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FKKOBDMFHIL",
+            |m: &GKDIHIFFHFD| { &m.FKKOBDMFHIL },
+            |m: &mut GKDIHIFFHFD| { &mut m.FKKOBDMFHIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKDIHIFFHFD>(
             "GKDIHIFFHFD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GKDIHIFFHFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                64 => {
+                    self.num = is.read_uint32()?;
+                },
                 72 => {
                     self.FKKOBDMFHIL = is.read_uint32()?;
-                },
-                120 => {
-                    self.num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GKDIHIFFHFD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.num);
+        }
         if self.FKKOBDMFHIL != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.FKKOBDMFHIL);
-        }
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GKDIHIFFHFD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.num != 0 {
+            os.write_uint32(8, self.num)?;
+        }
         if self.FKKOBDMFHIL != 0 {
             os.write_uint32(9, self.FKKOBDMFHIL)?;
-        }
-        if self.num != 0 {
-            os.write_uint32(15, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GKDIHIFFHFD {
     }
 
     fn clear(&mut self) {
-        self.FKKOBDMFHIL = 0;
         self.num = 0;
+        self.FKKOBDMFHIL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKDIHIFFHFD {
         static instance: GKDIHIFFHFD = GKDIHIFFHFD {
-            FKKOBDMFHIL: 0,
             num: 0,
+            FKKOBDMFHIL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GKDIHIFFHFD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKDIHIFFHFD.proto\"A\n\x0bGKDIHIFFHFD\x12\x20\n\x0bFKKOBDMFHIL\x18\
-    \t\x20\x01(\rR\x0bFKKOBDMFHIL\x12\x10\n\x03num\x18\x0f\x20\x01(\rR\x03nu\
-    mb\x06proto3\
+    \n\x11GKDIHIFFHFD.proto\"A\n\x0bGKDIHIFFHFD\x12\x10\n\x03num\x18\x08\x20\
+    \x01(\rR\x03num\x12\x20\n\x0bFKKOBDMFHIL\x18\t\x20\x01(\rR\x0bFKKOBDMFHI\
+    Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

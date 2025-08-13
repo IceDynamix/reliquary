@@ -30,8 +30,6 @@ pub struct FightFestUpdateCoinNotify {
     // message fields
     // @@protoc_insertion_point(field:FightFestUpdateCoinNotify.item_value)
     pub item_value: u32,
-    // message oneof groups
-    pub CmdFightMarbleType: ::std::option::Option<fight_fest_update_coin_notify::CmdFightMarbleType>,
     // special fields
     // @@protoc_insertion_point(special_field:FightFestUpdateCoinNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,13 +48,12 @@ impl FightFestUpdateCoinNotify {
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &FightFestUpdateCoinNotify| { &m.item_value },
             |m: &mut FightFestUpdateCoinNotify| { &mut m.item_value },
         ));
-        oneofs.push(fight_fest_update_coin_notify::CmdFightMarbleType::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightFestUpdateCoinNotify>(
             "FightFestUpdateCoinNotify",
             fields,
@@ -75,7 +72,7 @@ impl ::protobuf::Message for FightFestUpdateCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.item_value = is.read_uint32()?;
                 },
                 tag => {
@@ -91,7 +88,7 @@ impl ::protobuf::Message for FightFestUpdateCoinNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(14, self.item_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -100,7 +97,7 @@ impl ::protobuf::Message for FightFestUpdateCoinNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(5, self.item_value)?;
+            os.write_uint32(14, self.item_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -126,7 +123,6 @@ impl ::protobuf::Message for FightFestUpdateCoinNotify {
     fn default_instance() -> &'static FightFestUpdateCoinNotify {
         static instance: FightFestUpdateCoinNotify = FightFestUpdateCoinNotify {
             item_value: 0,
-            CmdFightMarbleType: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -150,36 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for FightFestUpdateCoinNotify {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
-/// Nested message and enums of message `FightFestUpdateCoinNotify`
-pub mod fight_fest_update_coin_notify {
-
-    #[derive(Clone,PartialEq,Debug)]
-    #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:FightFestUpdateCoinNotify.CmdFightMarbleType)
-    pub enum CmdFightMarbleType {
-    }
-
-    impl ::protobuf::Oneof for CmdFightMarbleType {
-    }
-
-    impl ::protobuf::OneofFull for CmdFightMarbleType {
-        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
-            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::FightFestUpdateCoinNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("CmdFightMarbleType").unwrap()).clone()
-        }
-    }
-
-    impl CmdFightMarbleType {
-        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CmdFightMarbleType>("CmdFightMarbleType")
-        }
-    }
-}
-
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fFightFestUpdateCoinNotify.proto\"P\n\x19FightFestUpdateCoinNotify\
-    \x12\x1d\n\nitem_value\x18\x05\x20\x01(\rR\titemValueB\x14\n\x12CmdFight\
-    MarbleTypeb\x06proto3\
+    \n\x1fFightFestUpdateCoinNotify.proto\":\n\x19FightFestUpdateCoinNotify\
+    \x12\x1d\n\nitem_value\x18\x0e\x20\x01(\rR\titemValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

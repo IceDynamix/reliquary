@@ -40,8 +40,8 @@ pub struct AvatarProperty {
     pub left_hp: f64,
     // @@protoc_insertion_point(field:AvatarProperty.left_sp)
     pub left_sp: f64,
-    // @@protoc_insertion_point(field:AvatarProperty.sp_max)
-    pub sp_max: f64,
+    // @@protoc_insertion_point(field:AvatarProperty.max_sp)
+    pub max_sp: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -92,9 +92,9 @@ impl AvatarProperty {
             |m: &mut AvatarProperty| { &mut m.left_sp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sp_max",
-            |m: &AvatarProperty| { &m.sp_max },
-            |m: &mut AvatarProperty| { &mut m.sp_max },
+            "max_sp",
+            |m: &AvatarProperty| { &m.max_sp },
+            |m: &mut AvatarProperty| { &mut m.max_sp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarProperty>(
             "AvatarProperty",
@@ -133,7 +133,7 @@ impl ::protobuf::Message for AvatarProperty {
                     self.left_sp = is.read_double()?;
                 },
                 57 => {
-                    self.sp_max = is.read_double()?;
+                    self.max_sp = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::Message for AvatarProperty {
         if self.left_sp != 0. {
             my_size += 1 + 8;
         }
-        if self.sp_max != 0. {
+        if self.max_sp != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -192,8 +192,8 @@ impl ::protobuf::Message for AvatarProperty {
         if self.left_sp != 0. {
             os.write_double(6, self.left_sp)?;
         }
-        if self.sp_max != 0. {
-            os.write_double(7, self.sp_max)?;
+        if self.max_sp != 0. {
+            os.write_double(7, self.max_sp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -218,7 +218,7 @@ impl ::protobuf::Message for AvatarProperty {
         self.speed = 0.;
         self.left_hp = 0.;
         self.left_sp = 0.;
-        self.sp_max = 0.;
+        self.max_sp = 0.;
         self.special_fields.clear();
     }
 
@@ -230,7 +230,7 @@ impl ::protobuf::Message for AvatarProperty {
             speed: 0.,
             left_hp: 0.,
             left_sp: 0.,
-            sp_max: 0.,
+            max_sp: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -260,8 +260,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x18\x02\x20\x01(\x01R\x14TURNFOODSWITCHATTACK\x12\x18\n\x07defence\x18\
     \x03\x20\x01(\x01R\x07defence\x12\x14\n\x05speed\x18\x04\x20\x01(\x01R\
     \x05speed\x12\x17\n\x07left_hp\x18\x05\x20\x01(\x01R\x06leftHp\x12\x17\n\
-    \x07left_sp\x18\x06\x20\x01(\x01R\x06leftSp\x12\x15\n\x06sp_max\x18\x07\
-    \x20\x01(\x01R\x05spMaxb\x06proto3\
+    \x07left_sp\x18\x06\x20\x01(\x01R\x06leftSp\x12\x15\n\x06max_sp\x18\x07\
+    \x20\x01(\x01R\x05maxSpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

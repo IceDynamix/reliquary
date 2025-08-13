@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueDebugReplaySaveScNotify {
     // message fields
+    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.DFPFALBJHJH)
     pub DFPFALBJHJH: ::std::string::String,
     // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.JDEDCKKACGO)
     pub JDEDCKKACGO: ::std::string::String,
     // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.NEPGEEJCLAH)
     pub NEPGEEJCLAH: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.JHJGFDMKIHG)
-    pub JHJGFDMKIHG: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.IJPPKNKNLNL)
-    pub IJPPKNKNLNL: ::std::string::String,
     // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.KFAMACKFHPM)
     pub KFAMACKFHPM: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.IJPPKNKNLNL)
+    pub IJPPKNKNLNL: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueDebugReplaySaveScNotify.JHJGFDMKIHG)
+    pub JHJGFDMKIHG: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RogueDebugReplaySaveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,6 +62,11 @@ impl RogueDebugReplaySaveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &RogueDebugReplaySaveScNotify| { &m.uid },
+            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DFPFALBJHJH",
             |m: &RogueDebugReplaySaveScNotify| { &m.DFPFALBJHJH },
             |m: &mut RogueDebugReplaySaveScNotify| { &mut m.DFPFALBJHJH },
@@ -77,14 +82,9 @@ impl RogueDebugReplaySaveScNotify {
             |m: &mut RogueDebugReplaySaveScNotify| { &mut m.NEPGEEJCLAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHJGFDMKIHG",
-            |m: &RogueDebugReplaySaveScNotify| { &m.JHJGFDMKIHG },
-            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.JHJGFDMKIHG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &RogueDebugReplaySaveScNotify| { &m.uid },
-            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.uid },
+            "KFAMACKFHPM",
+            |m: &RogueDebugReplaySaveScNotify| { &m.KFAMACKFHPM },
+            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.KFAMACKFHPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJPPKNKNLNL",
@@ -92,9 +92,9 @@ impl RogueDebugReplaySaveScNotify {
             |m: &mut RogueDebugReplaySaveScNotify| { &mut m.IJPPKNKNLNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFAMACKFHPM",
-            |m: &RogueDebugReplaySaveScNotify| { &m.KFAMACKFHPM },
-            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.KFAMACKFHPM },
+            "JHJGFDMKIHG",
+            |m: &RogueDebugReplaySaveScNotify| { &m.JHJGFDMKIHG },
+            |m: &mut RogueDebugReplaySaveScNotify| { &mut m.JHJGFDMKIHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueDebugReplaySaveScNotify>(
             "RogueDebugReplaySaveScNotify",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for RogueDebugReplaySaveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.DFPFALBJHJH = is.read_string()?;
-                },
-                10 => {
-                    self.JDEDCKKACGO = is.read_string()?;
-                },
-                50 => {
-                    self.NEPGEEJCLAH = is.read_string()?;
-                },
-                98 => {
-                    self.JHJGFDMKIHG = is.read_string()?;
-                },
-                64 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
-                106 => {
-                    self.IJPPKNKNLNL = is.read_string()?;
+                122 => {
+                    self.DFPFALBJHJH = is.read_string()?;
+                },
+                18 => {
+                    self.JDEDCKKACGO = is.read_string()?;
+                },
+                74 => {
+                    self.NEPGEEJCLAH = is.read_string()?;
+                },
+                26 => {
+                    self.KFAMACKFHPM = is.read_string()?;
                 },
                 82 => {
-                    self.KFAMACKFHPM = is.read_string()?;
+                    self.IJPPKNKNLNL = is.read_string()?;
+                },
+                10 => {
+                    self.JHJGFDMKIHG = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for RogueDebugReplaySaveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+        }
         if !self.DFPFALBJHJH.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.DFPFALBJHJH);
+            my_size += ::protobuf::rt::string_size(15, &self.DFPFALBJHJH);
         }
         if !self.JDEDCKKACGO.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.JDEDCKKACGO);
+            my_size += ::protobuf::rt::string_size(2, &self.JDEDCKKACGO);
         }
         if !self.NEPGEEJCLAH.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.NEPGEEJCLAH);
-        }
-        if !self.JHJGFDMKIHG.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.JHJGFDMKIHG);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
-        }
-        if !self.IJPPKNKNLNL.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.IJPPKNKNLNL);
+            my_size += ::protobuf::rt::string_size(9, &self.NEPGEEJCLAH);
         }
         if !self.KFAMACKFHPM.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.KFAMACKFHPM);
+            my_size += ::protobuf::rt::string_size(3, &self.KFAMACKFHPM);
+        }
+        if !self.IJPPKNKNLNL.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.IJPPKNKNLNL);
+        }
+        if !self.JHJGFDMKIHG.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.JHJGFDMKIHG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for RogueDebugReplaySaveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
+        }
         if !self.DFPFALBJHJH.is_empty() {
-            os.write_string(7, &self.DFPFALBJHJH)?;
+            os.write_string(15, &self.DFPFALBJHJH)?;
         }
         if !self.JDEDCKKACGO.is_empty() {
-            os.write_string(1, &self.JDEDCKKACGO)?;
+            os.write_string(2, &self.JDEDCKKACGO)?;
         }
         if !self.NEPGEEJCLAH.is_empty() {
-            os.write_string(6, &self.NEPGEEJCLAH)?;
-        }
-        if !self.JHJGFDMKIHG.is_empty() {
-            os.write_string(12, &self.JHJGFDMKIHG)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
-        }
-        if !self.IJPPKNKNLNL.is_empty() {
-            os.write_string(13, &self.IJPPKNKNLNL)?;
+            os.write_string(9, &self.NEPGEEJCLAH)?;
         }
         if !self.KFAMACKFHPM.is_empty() {
-            os.write_string(10, &self.KFAMACKFHPM)?;
+            os.write_string(3, &self.KFAMACKFHPM)?;
+        }
+        if !self.IJPPKNKNLNL.is_empty() {
+            os.write_string(10, &self.IJPPKNKNLNL)?;
+        }
+        if !self.JHJGFDMKIHG.is_empty() {
+            os.write_string(1, &self.JHJGFDMKIHG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for RogueDebugReplaySaveScNotify {
     }
 
     fn clear(&mut self) {
+        self.uid = 0;
         self.DFPFALBJHJH.clear();
         self.JDEDCKKACGO.clear();
         self.NEPGEEJCLAH.clear();
-        self.JHJGFDMKIHG.clear();
-        self.uid = 0;
-        self.IJPPKNKNLNL.clear();
         self.KFAMACKFHPM.clear();
+        self.IJPPKNKNLNL.clear();
+        self.JHJGFDMKIHG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueDebugReplaySaveScNotify {
         static instance: RogueDebugReplaySaveScNotify = RogueDebugReplaySaveScNotify {
+            uid: 0,
             DFPFALBJHJH: ::std::string::String::new(),
             JDEDCKKACGO: ::std::string::String::new(),
             NEPGEEJCLAH: ::std::string::String::new(),
-            JHJGFDMKIHG: ::std::string::String::new(),
-            uid: 0,
-            IJPPKNKNLNL: ::std::string::String::new(),
             KFAMACKFHPM: ::std::string::String::new(),
+            IJPPKNKNLNL: ::std::string::String::new(),
+            JHJGFDMKIHG: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,12 +256,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueDebugReplaySaveScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueDebugReplaySaveScNotify.proto\"\xfc\x01\n\x1cRogueDebugReplaySa\
-    veScNotify\x12\x20\n\x0bDFPFALBJHJH\x18\x07\x20\x01(\tR\x0bDFPFALBJHJH\
-    \x12\x20\n\x0bJDEDCKKACGO\x18\x01\x20\x01(\tR\x0bJDEDCKKACGO\x12\x20\n\
-    \x0bNEPGEEJCLAH\x18\x06\x20\x01(\tR\x0bNEPGEEJCLAH\x12\x20\n\x0bJHJGFDMK\
-    IHG\x18\x0c\x20\x01(\tR\x0bJHJGFDMKIHG\x12\x10\n\x03uid\x18\x08\x20\x01(\
-    \rR\x03uid\x12\x20\n\x0bIJPPKNKNLNL\x18\r\x20\x01(\tR\x0bIJPPKNKNLNL\x12\
-    \x20\n\x0bKFAMACKFHPM\x18\n\x20\x01(\tR\x0bKFAMACKFHPMb\x06proto3\
+    veScNotify\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x12\x20\n\x0bDFPF\
+    ALBJHJH\x18\x0f\x20\x01(\tR\x0bDFPFALBJHJH\x12\x20\n\x0bJDEDCKKACGO\x18\
+    \x02\x20\x01(\tR\x0bJDEDCKKACGO\x12\x20\n\x0bNEPGEEJCLAH\x18\t\x20\x01(\
+    \tR\x0bNEPGEEJCLAH\x12\x20\n\x0bKFAMACKFHPM\x18\x03\x20\x01(\tR\x0bKFAMA\
+    CKFHPM\x12\x20\n\x0bIJPPKNKNLNL\x18\n\x20\x01(\tR\x0bIJPPKNKNLNL\x12\x20\
+    \n\x0bJHJGFDMKIHG\x18\x01\x20\x01(\tR\x0bJHJGFDMKIHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

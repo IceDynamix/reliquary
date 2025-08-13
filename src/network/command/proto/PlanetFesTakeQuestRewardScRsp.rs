@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesTakeQuestRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.DNFFKABFOEF)
-    pub DNFFKABFOEF: ::protobuf::MessageField<super::DJIAEMANGCG::DJIAEMANGCG>,
     // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.quest_id)
     pub quest_id: u32,
     // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.DNFFKABFOEF)
+    pub DNFFKABFOEF: ::protobuf::MessageField<super::DJIAEMANGCG::DJIAEMANGCG>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesTakeQuestRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl PlanetFesTakeQuestRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJIAEMANGCG::DJIAEMANGCG>(
-            "DNFFKABFOEF",
-            |m: &PlanetFesTakeQuestRewardScRsp| { &m.DNFFKABFOEF },
-            |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.DNFFKABFOEF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "quest_id",
             |m: &PlanetFesTakeQuestRewardScRsp| { &m.quest_id },
@@ -67,6 +62,11 @@ impl PlanetFesTakeQuestRewardScRsp {
             "retcode",
             |m: &PlanetFesTakeQuestRewardScRsp| { &m.retcode },
             |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DJIAEMANGCG::DJIAEMANGCG>(
+            "DNFFKABFOEF",
+            |m: &PlanetFesTakeQuestRewardScRsp| { &m.DNFFKABFOEF },
+            |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.DNFFKABFOEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesTakeQuestRewardScRsp>(
             "PlanetFesTakeQuestRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNFFKABFOEF)?;
-                },
-                96 => {
+                48 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNFFKABFOEF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.quest_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.quest_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if let Some(v) = self.DNFFKABFOEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.quest_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DNFFKABFOEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.quest_id != 0 {
-            os.write_uint32(12, self.quest_id)?;
+            os.write_uint32(6, self.quest_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.DNFFKABFOEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.DNFFKABFOEF.clear();
         self.quest_id = 0;
         self.retcode = 0;
+        self.DNFFKABFOEF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesTakeQuestRewardScRsp {
         static instance: PlanetFesTakeQuestRewardScRsp = PlanetFesTakeQuestRewardScRsp {
-            DNFFKABFOEF: ::protobuf::MessageField::none(),
             quest_id: 0,
             retcode: 0,
+            DNFFKABFOEF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeQuestRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#PlanetFesTakeQuestRewardScRsp.proto\x1a\x11DJIAEMANGCG.proto\"\x84\
-    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12.\n\x0bDNFFKABFOEF\x18\x04\
-    \x20\x01(\x0b2\x0c.DJIAEMANGCGR\x0bDNFFKABFOEF\x12\x19\n\x08quest_id\x18\
-    \x0c\x20\x01(\rR\x07questId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07\
-    retcodeb\x06proto3\
+    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12\x19\n\x08quest_id\x18\x06\
+    \x20\x01(\rR\x07questId\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retc\
+    ode\x12.\n\x0bDNFFKABFOEF\x18\x02\x20\x01(\x0b2\x0c.DJIAEMANGCGR\x0bDNFF\
+    KABFOEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

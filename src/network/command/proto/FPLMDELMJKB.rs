@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FPLMDELMJKB {
     // message fields
-    // @@protoc_insertion_point(field:FPLMDELMJKB.unique_id)
-    pub unique_id: u32,
+    // @@protoc_insertion_point(field:FPLMDELMJKB.cur_index)
+    pub cur_index: u32,
     // @@protoc_insertion_point(field:FPLMDELMJKB.card_id)
     pub card_id: u32,
-    // @@protoc_insertion_point(field:FPLMDELMJKB.upgrade_level)
-    pub upgrade_level: u32,
     // @@protoc_insertion_point(field:FPLMDELMJKB.HCPGEALODME)
     pub HCPGEALODME: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FPLMDELMJKB.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FPLMDELMJKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl FPLMDELMJKB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &FPLMDELMJKB| { &m.unique_id },
-            |m: &mut FPLMDELMJKB| { &mut m.unique_id },
+            "cur_index",
+            |m: &FPLMDELMJKB| { &m.cur_index },
+            |m: &mut FPLMDELMJKB| { &mut m.cur_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "card_id",
             |m: &FPLMDELMJKB| { &m.card_id },
             |m: &mut FPLMDELMJKB| { &mut m.card_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upgrade_level",
-            |m: &FPLMDELMJKB| { &m.upgrade_level },
-            |m: &mut FPLMDELMJKB| { &mut m.upgrade_level },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HCPGEALODME",
             |m: &FPLMDELMJKB| { &m.HCPGEALODME },
             |m: &mut FPLMDELMJKB| { &mut m.HCPGEALODME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &FPLMDELMJKB| { &m.unique_id },
+            |m: &mut FPLMDELMJKB| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FPLMDELMJKB>(
             "FPLMDELMJKB",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for FPLMDELMJKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.unique_id = is.read_uint32()?;
+                96 => {
+                    self.cur_index = is.read_uint32()?;
                 },
-                48 => {
+                40 => {
                     self.card_id = is.read_uint32()?;
                 },
-                104 => {
-                    self.upgrade_level = is.read_uint32()?;
-                },
-                122 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.HCPGEALODME)?;
                 },
-                120 => {
+                72 => {
                     self.HCPGEALODME.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for FPLMDELMJKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_index);
         }
         if self.card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.card_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.card_id);
         }
-        if self.upgrade_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.upgrade_level);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HCPGEALODME);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.HCPGEALODME);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint32(7, self.unique_id)?;
+        if self.cur_index != 0 {
+            os.write_uint32(12, self.cur_index)?;
         }
         if self.card_id != 0 {
-            os.write_uint32(6, self.card_id)?;
+            os.write_uint32(5, self.card_id)?;
         }
-        if self.upgrade_level != 0 {
-            os.write_uint32(13, self.upgrade_level)?;
+        os.write_repeated_packed_uint32(9, &self.HCPGEALODME)?;
+        if self.unique_id != 0 {
+            os.write_uint32(15, self.unique_id)?;
         }
-        os.write_repeated_packed_uint32(15, &self.HCPGEALODME)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for FPLMDELMJKB {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
+        self.cur_index = 0;
         self.card_id = 0;
-        self.upgrade_level = 0;
         self.HCPGEALODME.clear();
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FPLMDELMJKB {
         static instance: FPLMDELMJKB = FPLMDELMJKB {
-            unique_id: 0,
+            cur_index: 0,
             card_id: 0,
-            upgrade_level: 0,
             HCPGEALODME: ::std::vec::Vec::new(),
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for FPLMDELMJKB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FPLMDELMJKB.proto\"\x8a\x01\n\x0bFPLMDELMJKB\x12\x1b\n\tunique_id\
-    \x18\x07\x20\x01(\rR\x08uniqueId\x12\x17\n\x07card_id\x18\x06\x20\x01(\r\
-    R\x06cardId\x12#\n\rupgrade_level\x18\r\x20\x01(\rR\x0cupgradeLevel\x12\
-    \x20\n\x0bHCPGEALODME\x18\x0f\x20\x03(\rR\x0bHCPGEALODMEb\x06proto3\
+    \n\x11FPLMDELMJKB.proto\"\x82\x01\n\x0bFPLMDELMJKB\x12\x1b\n\tcur_index\
+    \x18\x0c\x20\x01(\rR\x08curIndex\x12\x17\n\x07card_id\x18\x05\x20\x01(\r\
+    R\x06cardId\x12\x20\n\x0bHCPGEALODME\x18\t\x20\x03(\rR\x0bHCPGEALODME\
+    \x12\x1b\n\tunique_id\x18\x0f\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

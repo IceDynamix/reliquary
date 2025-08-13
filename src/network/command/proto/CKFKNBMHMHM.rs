@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKFKNBMHMHM {
     // message fields
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.PBALFIENEFO)
-    pub PBALFIENEFO: u32,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.CHCBOPFLICI)
-    pub CHCBOPFLICI: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.OBNDMKNGOJJ)
-    pub OBNDMKNGOJJ: u32,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.NDBOJANDNJN)
-    pub NDBOJANDNJN: u32,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.NLMHPLDMCMD)
     pub NLMHPLDMCMD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.GIBCHCAGIAN)
     pub GIBCHCAGIAN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.CBFHIDMKFLB)
     pub CBFHIDMKFLB: u32,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.difficulty_level)
+    pub difficulty_level: u32,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.FBFJMPFBCHB)
     pub FBFJMPFBCHB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.CHCBOPFLICI)
+    pub CHCBOPFLICI: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.HPLJNILNICK)
+    pub HPLJNILNICK: u32,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.EAEFKGOKFKH)
+    pub EAEFKGOKFKH: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.NDBOJANDNJN)
+    pub NDBOJANDNJN: u32,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.level_id)
+    pub level_id: u32,
+    // @@protoc_insertion_point(field:CKFKNBMHMHM.OBNDMKNGOJJ)
+    pub OBNDMKNGOJJ: u32,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.NODMOBECPEO)
     pub NODMOBECPEO: u32,
     // @@protoc_insertion_point(field:CKFKNBMHMHM.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::BHMCFKHILFO::BHMCFKHILFO>,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.EAEFKGOKFKH)
-    pub EAEFKGOKFKH: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:CKFKNBMHMHM.HPLJNILNICK)
-    pub HPLJNILNICK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CKFKNBMHMHM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,31 +73,6 @@ impl CKFKNBMHMHM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBALFIENEFO",
-            |m: &CKFKNBMHMHM| { &m.PBALFIENEFO },
-            |m: &mut CKFKNBMHMHM| { &mut m.PBALFIENEFO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "CHCBOPFLICI",
-            |m: &CKFKNBMHMHM| { &m.CHCBOPFLICI },
-            |m: &mut CKFKNBMHMHM| { &mut m.CHCBOPFLICI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBNDMKNGOJJ",
-            |m: &CKFKNBMHMHM| { &m.OBNDMKNGOJJ },
-            |m: &mut CKFKNBMHMHM| { &mut m.OBNDMKNGOJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDBOJANDNJN",
-            |m: &CKFKNBMHMHM| { &m.NDBOJANDNJN },
-            |m: &mut CKFKNBMHMHM| { &mut m.NDBOJANDNJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &CKFKNBMHMHM| { &m.ACJCPHIFMLN },
-            |m: &mut CKFKNBMHMHM| { &mut m.ACJCPHIFMLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NLMHPLDMCMD",
             |m: &CKFKNBMHMHM| { &m.NLMHPLDMCMD },
@@ -113,10 +88,45 @@ impl CKFKNBMHMHM {
             |m: &CKFKNBMHMHM| { &m.CBFHIDMKFLB },
             |m: &mut CKFKNBMHMHM| { &mut m.CBFHIDMKFLB },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "difficulty_level",
+            |m: &CKFKNBMHMHM| { &m.difficulty_level },
+            |m: &mut CKFKNBMHMHM| { &mut m.difficulty_level },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FBFJMPFBCHB",
             |m: &CKFKNBMHMHM| { &m.FBFJMPFBCHB },
             |m: &mut CKFKNBMHMHM| { &mut m.FBFJMPFBCHB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "CHCBOPFLICI",
+            |m: &CKFKNBMHMHM| { &m.CHCBOPFLICI },
+            |m: &mut CKFKNBMHMHM| { &mut m.CHCBOPFLICI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HPLJNILNICK",
+            |m: &CKFKNBMHMHM| { &m.HPLJNILNICK },
+            |m: &mut CKFKNBMHMHM| { &mut m.HPLJNILNICK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "EAEFKGOKFKH",
+            |m: &CKFKNBMHMHM| { &m.EAEFKGOKFKH },
+            |m: &mut CKFKNBMHMHM| { &mut m.EAEFKGOKFKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDBOJANDNJN",
+            |m: &CKFKNBMHMHM| { &m.NDBOJANDNJN },
+            |m: &mut CKFKNBMHMHM| { &mut m.NDBOJANDNJN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_id",
+            |m: &CKFKNBMHMHM| { &m.level_id },
+            |m: &mut CKFKNBMHMHM| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OBNDMKNGOJJ",
+            |m: &CKFKNBMHMHM| { &m.OBNDMKNGOJJ },
+            |m: &mut CKFKNBMHMHM| { &mut m.OBNDMKNGOJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NODMOBECPEO",
@@ -127,16 +137,6 @@ impl CKFKNBMHMHM {
             "avatar_list",
             |m: &CKFKNBMHMHM| { &m.avatar_list },
             |m: &mut CKFKNBMHMHM| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "EAEFKGOKFKH",
-            |m: &CKFKNBMHMHM| { &m.EAEFKGOKFKH },
-            |m: &mut CKFKNBMHMHM| { &mut m.EAEFKGOKFKH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPLJNILNICK",
-            |m: &CKFKNBMHMHM| { &m.HPLJNILNICK },
-            |m: &mut CKFKNBMHMHM| { &mut m.HPLJNILNICK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKFKNBMHMHM>(
             "CKFKNBMHMHM",
@@ -156,40 +156,13 @@ impl ::protobuf::Message for CKFKNBMHMHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PBALFIENEFO = is.read_uint32()?;
-                },
-                34 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.CHCBOPFLICI.insert(key, value);
-                },
-                24 => {
-                    self.OBNDMKNGOJJ = is.read_uint32()?;
-                },
-                112 => {
-                    self.NDBOJANDNJN = is.read_uint32()?;
-                },
-                72 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
-                },
-                58 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NLMHPLDMCMD)?;
                 },
-                56 => {
+                64 => {
                     self.NLMHPLDMCMD.push(is.read_uint32()?);
                 },
-                6562 => {
+                9778 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -204,22 +177,37 @@ impl ::protobuf::Message for CKFKNBMHMHM {
                     is.pop_limit(old_limit);
                     self.GIBCHCAGIAN.insert(key, value);
                 },
-                88 => {
+                24 => {
                     self.CBFHIDMKFLB = is.read_uint32()?;
                 },
-                98 => {
+                88 => {
+                    self.difficulty_level = is.read_uint32()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.FBFJMPFBCHB)?;
                 },
-                96 => {
+                56 => {
                     self.FBFJMPFBCHB.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.NODMOBECPEO = is.read_uint32()?;
-                },
                 10 => {
-                    self.avatar_list.push(is.read_message()?);
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.CHCBOPFLICI.insert(key, value);
                 },
-                42 => {
+                48 => {
+                    self.HPLJNILNICK = is.read_uint32()?;
+                },
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -234,8 +222,20 @@ impl ::protobuf::Message for CKFKNBMHMHM {
                     is.pop_limit(old_limit);
                     self.EAEFKGOKFKH.insert(key, value);
                 },
-                104 => {
-                    self.HPLJNILNICK = is.read_uint32()?;
+                72 => {
+                    self.NDBOJANDNJN = is.read_uint32()?;
+                },
+                40 => {
+                    self.level_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.OBNDMKNGOJJ = is.read_uint32()?;
+                },
+                32 => {
+                    self.NODMOBECPEO = is.read_uint32()?;
+                },
+                114 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -249,25 +249,7 @@ impl ::protobuf::Message for CKFKNBMHMHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBALFIENEFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PBALFIENEFO);
-        }
-        for (k, v) in &self.CHCBOPFLICI {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if self.OBNDMKNGOJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OBNDMKNGOJJ);
-        }
-        if self.NDBOJANDNJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NDBOJANDNJN);
-        }
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACJCPHIFMLN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NLMHPLDMCMD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NLMHPLDMCMD);
         for (k, v) in &self.GIBCHCAGIAN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -275,84 +257,102 @@ impl ::protobuf::Message for CKFKNBMHMHM {
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.CBFHIDMKFLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CBFHIDMKFLB);
+            my_size += ::protobuf::rt::uint32_size(3, self.CBFHIDMKFLB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FBFJMPFBCHB);
-        if self.NODMOBECPEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NODMOBECPEO);
+        if self.difficulty_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.difficulty_level);
         }
-        for value in &self.avatar_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for (k, v) in &self.EAEFKGOKFKH {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FBFJMPFBCHB);
+        for (k, v) in &self.CHCBOPFLICI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.HPLJNILNICK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HPLJNILNICK);
+            my_size += ::protobuf::rt::uint32_size(6, self.HPLJNILNICK);
         }
+        for (k, v) in &self.EAEFKGOKFKH {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.NDBOJANDNJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NDBOJANDNJN);
+        }
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.level_id);
+        }
+        if self.OBNDMKNGOJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.OBNDMKNGOJJ);
+        }
+        if self.NODMOBECPEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NODMOBECPEO);
+        }
+        for value in &self.avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBALFIENEFO != 0 {
-            os.write_uint32(10, self.PBALFIENEFO)?;
-        }
-        for (k, v) in &self.CHCBOPFLICI {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
-        if self.OBNDMKNGOJJ != 0 {
-            os.write_uint32(3, self.OBNDMKNGOJJ)?;
-        }
-        if self.NDBOJANDNJN != 0 {
-            os.write_uint32(14, self.NDBOJANDNJN)?;
-        }
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(9, self.ACJCPHIFMLN)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.NLMHPLDMCMD)?;
+        os.write_repeated_packed_uint32(8, &self.NLMHPLDMCMD)?;
         for (k, v) in &self.GIBCHCAGIAN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(6562)?; // Tag.
+            os.write_raw_varint32(9778)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.CBFHIDMKFLB != 0 {
-            os.write_uint32(11, self.CBFHIDMKFLB)?;
+            os.write_uint32(3, self.CBFHIDMKFLB)?;
         }
-        os.write_repeated_packed_uint32(12, &self.FBFJMPFBCHB)?;
-        if self.NODMOBECPEO != 0 {
-            os.write_uint32(15, self.NODMOBECPEO)?;
+        if self.difficulty_level != 0 {
+            os.write_uint32(11, self.difficulty_level)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        for (k, v) in &self.EAEFKGOKFKH {
+        os.write_repeated_packed_uint32(7, &self.FBFJMPFBCHB)?;
+        for (k, v) in &self.CHCBOPFLICI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.HPLJNILNICK != 0 {
-            os.write_uint32(13, self.HPLJNILNICK)?;
+            os.write_uint32(6, self.HPLJNILNICK)?;
         }
+        for (k, v) in &self.EAEFKGOKFKH {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        if self.NDBOJANDNJN != 0 {
+            os.write_uint32(9, self.NDBOJANDNJN)?;
+        }
+        if self.level_id != 0 {
+            os.write_uint32(5, self.level_id)?;
+        }
+        if self.OBNDMKNGOJJ != 0 {
+            os.write_uint32(2, self.OBNDMKNGOJJ)?;
+        }
+        if self.NODMOBECPEO != 0 {
+            os.write_uint32(4, self.NODMOBECPEO)?;
+        }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -370,19 +370,19 @@ impl ::protobuf::Message for CKFKNBMHMHM {
     }
 
     fn clear(&mut self) {
-        self.PBALFIENEFO = 0;
-        self.CHCBOPFLICI.clear();
-        self.OBNDMKNGOJJ = 0;
-        self.NDBOJANDNJN = 0;
-        self.ACJCPHIFMLN = 0;
         self.NLMHPLDMCMD.clear();
         self.GIBCHCAGIAN.clear();
         self.CBFHIDMKFLB = 0;
+        self.difficulty_level = 0;
         self.FBFJMPFBCHB.clear();
+        self.CHCBOPFLICI.clear();
+        self.HPLJNILNICK = 0;
+        self.EAEFKGOKFKH.clear();
+        self.NDBOJANDNJN = 0;
+        self.level_id = 0;
+        self.OBNDMKNGOJJ = 0;
         self.NODMOBECPEO = 0;
         self.avatar_list.clear();
-        self.EAEFKGOKFKH.clear();
-        self.HPLJNILNICK = 0;
         self.special_fields.clear();
     }
 
@@ -410,22 +410,22 @@ impl ::protobuf::reflect::ProtobufValue for CKFKNBMHMHM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKFKNBMHMHM.proto\x1a\x11BHMCFKHILFO.proto\"\xf2\x05\n\x0bCKFKNBMH\
-    MHM\x12\x20\n\x0bPBALFIENEFO\x18\n\x20\x01(\rR\x0bPBALFIENEFO\x12?\n\x0b\
-    CHCBOPFLICI\x18\x04\x20\x03(\x0b2\x1d.CKFKNBMHMHM.CHCBOPFLICIEntryR\x0bC\
-    HCBOPFLICI\x12\x20\n\x0bOBNDMKNGOJJ\x18\x03\x20\x01(\rR\x0bOBNDMKNGOJJ\
-    \x12\x20\n\x0bNDBOJANDNJN\x18\x0e\x20\x01(\rR\x0bNDBOJANDNJN\x12\x20\n\
-    \x0bACJCPHIFMLN\x18\t\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bNLMHPLDMCM\
-    D\x18\x07\x20\x03(\rR\x0bNLMHPLDMCMD\x12@\n\x0bGIBCHCAGIAN\x18\xb4\x06\
-    \x20\x03(\x0b2\x1d.CKFKNBMHMHM.GIBCHCAGIANEntryR\x0bGIBCHCAGIAN\x12\x20\
-    \n\x0bCBFHIDMKFLB\x18\x0b\x20\x01(\rR\x0bCBFHIDMKFLB\x12\x20\n\x0bFBFJMP\
-    FBCHB\x18\x0c\x20\x03(\rR\x0bFBFJMPFBCHB\x12\x20\n\x0bNODMOBECPEO\x18\
-    \x0f\x20\x01(\rR\x0bNODMOBECPEO\x12-\n\x0bavatar_list\x18\x01\x20\x03(\
-    \x0b2\x0c.BHMCFKHILFOR\navatarList\x12?\n\x0bEAEFKGOKFKH\x18\x05\x20\x03\
-    (\x0b2\x1d.CKFKNBMHMHM.EAEFKGOKFKHEntryR\x0bEAEFKGOKFKH\x12\x20\n\x0bHPL\
-    JNILNICK\x18\r\x20\x01(\rR\x0bHPLJNILNICK\x1a>\n\x10CHCBOPFLICIEntry\x12\
+    \n\x11CKFKNBMHMHM.proto\x1a\x11BHMCFKHILFO.proto\"\xf4\x05\n\x0bCKFKNBMH\
+    MHM\x12\x20\n\x0bNLMHPLDMCMD\x18\x08\x20\x03(\rR\x0bNLMHPLDMCMD\x12@\n\
+    \x0bGIBCHCAGIAN\x18\xc6\t\x20\x03(\x0b2\x1d.CKFKNBMHMHM.GIBCHCAGIANEntry\
+    R\x0bGIBCHCAGIAN\x12\x20\n\x0bCBFHIDMKFLB\x18\x03\x20\x01(\rR\x0bCBFHIDM\
+    KFLB\x12)\n\x10difficulty_level\x18\x0b\x20\x01(\rR\x0fdifficultyLevel\
+    \x12\x20\n\x0bFBFJMPFBCHB\x18\x07\x20\x03(\rR\x0bFBFJMPFBCHB\x12?\n\x0bC\
+    HCBOPFLICI\x18\x01\x20\x03(\x0b2\x1d.CKFKNBMHMHM.CHCBOPFLICIEntryR\x0bCH\
+    CBOPFLICI\x12\x20\n\x0bHPLJNILNICK\x18\x06\x20\x01(\rR\x0bHPLJNILNICK\
+    \x12?\n\x0bEAEFKGOKFKH\x18\r\x20\x03(\x0b2\x1d.CKFKNBMHMHM.EAEFKGOKFKHEn\
+    tryR\x0bEAEFKGOKFKH\x12\x20\n\x0bNDBOJANDNJN\x18\t\x20\x01(\rR\x0bNDBOJA\
+    NDNJN\x12\x19\n\x08level_id\x18\x05\x20\x01(\rR\x07levelId\x12\x20\n\x0b\
+    OBNDMKNGOJJ\x18\x02\x20\x01(\rR\x0bOBNDMKNGOJJ\x12\x20\n\x0bNODMOBECPEO\
+    \x18\x04\x20\x01(\rR\x0bNODMOBECPEO\x12-\n\x0bavatar_list\x18\x0e\x20\
+    \x03(\x0b2\x0c.BHMCFKHILFOR\navatarList\x1a>\n\x10GIBCHCAGIANEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01\x1a>\n\x10GIBCHCAGIANEntry\x12\x10\n\x03key\
+    \x01(\rR\x05value:\x028\x01\x1a>\n\x10CHCBOPFLICIEntry\x12\x10\n\x03key\
     \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
     lue:\x028\x01\x1a>\n\x10EAEFKGOKFKHEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\

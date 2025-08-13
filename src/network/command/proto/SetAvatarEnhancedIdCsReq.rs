@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAvatarEnhancedIdCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SetAvatarEnhancedIdCsReq.enhanced_id)
+    pub enhanced_id: u32,
     // @@protoc_insertion_point(field:SetAvatarEnhancedIdCsReq.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:SetAvatarEnhancedIdCsReq.GLACKHOPMIO)
-    pub GLACKHOPMIO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetAvatarEnhancedIdCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetAvatarEnhancedIdCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enhanced_id",
+            |m: &SetAvatarEnhancedIdCsReq| { &m.enhanced_id },
+            |m: &mut SetAvatarEnhancedIdCsReq| { &mut m.enhanced_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &SetAvatarEnhancedIdCsReq| { &m.avatar_id },
             |m: &mut SetAvatarEnhancedIdCsReq| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLACKHOPMIO",
-            |m: &SetAvatarEnhancedIdCsReq| { &m.GLACKHOPMIO },
-            |m: &mut SetAvatarEnhancedIdCsReq| { &mut m.GLACKHOPMIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetAvatarEnhancedIdCsReq>(
             "SetAvatarEnhancedIdCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.avatar_id = is.read_uint32()?;
+                88 => {
+                    self.enhanced_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.GLACKHOPMIO = is.read_uint32()?;
+                56 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+        if self.enhanced_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.enhanced_id);
         }
-        if self.GLACKHOPMIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GLACKHOPMIO);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+        if self.enhanced_id != 0 {
+            os.write_uint32(11, self.enhanced_id)?;
         }
-        if self.GLACKHOPMIO != 0 {
-            os.write_uint32(2, self.GLACKHOPMIO)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(7, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     }
 
     fn clear(&mut self) {
+        self.enhanced_id = 0;
         self.avatar_id = 0;
-        self.GLACKHOPMIO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAvatarEnhancedIdCsReq {
         static instance: SetAvatarEnhancedIdCsReq = SetAvatarEnhancedIdCsReq {
+            enhanced_id: 0,
             avatar_id: 0,
-            GLACKHOPMIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SetAvatarEnhancedIdCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSetAvatarEnhancedIdCsReq.proto\"Y\n\x18SetAvatarEnhancedIdCsReq\
-    \x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarId\x12\x20\n\x0bGLACK\
-    HOPMIO\x18\x02\x20\x01(\rR\x0bGLACKHOPMIOb\x06proto3\
+    \n\x1eSetAvatarEnhancedIdCsReq.proto\"X\n\x18SetAvatarEnhancedIdCsReq\
+    \x12\x1f\n\x0benhanced_id\x18\x0b\x20\x01(\rR\nenhancedId\x12\x1b\n\tava\
+    tar_id\x18\x07\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

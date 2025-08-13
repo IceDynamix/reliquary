@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.BHPGJCICMJM)
-    pub BHPGJCICMJM: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.cur_room_index)
+    pub cur_room_index: u32,
     // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.FLLABLFBEIK)
     pub FLLABLFBEIK: u32,
     // special fields
@@ -52,9 +52,9 @@ impl RogueMagicEnterRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHPGJCICMJM",
-            |m: &RogueMagicEnterRoomCsReq| { &m.BHPGJCICMJM },
-            |m: &mut RogueMagicEnterRoomCsReq| { &mut m.BHPGJCICMJM },
+            "cur_room_index",
+            |m: &RogueMagicEnterRoomCsReq| { &m.cur_room_index },
+            |m: &mut RogueMagicEnterRoomCsReq| { &mut m.cur_room_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLLABLFBEIK",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.BHPGJCICMJM = is.read_uint32()?;
+                    self.cur_room_index = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.FLLABLFBEIK = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BHPGJCICMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BHPGJCICMJM);
+        if self.cur_room_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.cur_room_index);
         }
         if self.FLLABLFBEIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FLLABLFBEIK);
+            my_size += ::protobuf::rt::uint32_size(13, self.FLLABLFBEIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BHPGJCICMJM != 0 {
-            os.write_uint32(10, self.BHPGJCICMJM)?;
+        if self.cur_room_index != 0 {
+            os.write_uint32(10, self.cur_room_index)?;
         }
         if self.FLLABLFBEIK != 0 {
-            os.write_uint32(14, self.FLLABLFBEIK)?;
+            os.write_uint32(13, self.FLLABLFBEIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.BHPGJCICMJM = 0;
+        self.cur_room_index = 0;
         self.FLLABLFBEIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterRoomCsReq {
         static instance: RogueMagicEnterRoomCsReq = RogueMagicEnterRoomCsReq {
-            BHPGJCICMJM: 0,
+            cur_room_index: 0,
             FLLABLFBEIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueMagicEnterRoomCsReq.proto\"^\n\x18RogueMagicEnterRoomCsReq\
-    \x12\x20\n\x0bBHPGJCICMJM\x18\n\x20\x01(\rR\x0bBHPGJCICMJM\x12\x20\n\x0b\
-    FLLABLFBEIK\x18\x0e\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
+    \n\x1eRogueMagicEnterRoomCsReq.proto\"b\n\x18RogueMagicEnterRoomCsReq\
+    \x12$\n\x0ecur_room_index\x18\n\x20\x01(\rR\x0ccurRoomIndex\x12\x20\n\
+    \x0bFLLABLFBEIK\x18\r\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DynamicValues {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.key = is.read_string()?;
                 },
-                61 => {
+                117 => {
                     self.value = is.read_float()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DynamicValues {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.key.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.key);
+            my_size += ::protobuf::rt::string_size(1, &self.key);
         }
         if self.value != 0. {
             my_size += 1 + 4;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DynamicValues {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.key.is_empty() {
-            os.write_string(10, &self.key)?;
+            os.write_string(1, &self.key)?;
         }
         if self.value != 0. {
-            os.write_float(7, self.value)?;
+            os.write_float(14, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DynamicValues {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13DynamicValues.proto\"7\n\rDynamicValues\x12\x10\n\x03key\x18\n\x20\
-    \x01(\tR\x03key\x12\x14\n\x05value\x18\x07\x20\x01(\x02R\x05valueb\x06pr\
-    oto3\
+    \n\x13DynamicValues.proto\"7\n\rDynamicValues\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x0e\x20\x01(\x02R\x05valueb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

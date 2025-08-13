@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADAFJFOJDEG {
     // message fields
-    // @@protoc_insertion_point(field:ADAFJFOJDEG.MFANNCAGDMP)
-    pub MFANNCAGDMP: u32,
-    // @@protoc_insertion_point(field:ADAFJFOJDEG.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:ADAFJFOJDEG.quest_id)
-    pub quest_id: u32,
     // @@protoc_insertion_point(field:ADAFJFOJDEG.status)
     pub status: ::protobuf::EnumOrUnknown<super::PlanetFesQuestState::PlanetFesQuestState>,
+    // @@protoc_insertion_point(field:ADAFJFOJDEG.quest_id)
+    pub quest_id: u32,
+    // @@protoc_insertion_point(field:ADAFJFOJDEG.progress)
+    pub progress: u32,
+    // @@protoc_insertion_point(field:ADAFJFOJDEG.MFANNCAGDMP)
+    pub MFANNCAGDMP: u32,
     // message oneof groups
-    pub DADJJBHOGMC: ::std::option::Option<adafjfojdeg::DADJJBHOGMC>,
+    pub EHACJJJDPAH: ::std::option::Option<adafjfojdeg::EHACJJJDPAH>,
     // special fields
     // @@protoc_insertion_point(special_field:ADAFJFOJDEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,64 +54,64 @@ impl ADAFJFOJDEG {
         ::std::default::Default::default()
     }
 
-    // uint32 BONAGHBBICF = 15;
+    // uint32 BONAGHBBICF = 6;
 
     pub fn BONAGHBBICF(&self) -> u32 {
-        match self.DADJJBHOGMC {
-            ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(v)) => v,
+        match self.EHACJJJDPAH {
+            ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_BONAGHBBICF(&mut self) {
-        self.DADJJBHOGMC = ::std::option::Option::None;
+        self.EHACJJJDPAH = ::std::option::Option::None;
     }
 
     pub fn has_BONAGHBBICF(&self) -> bool {
-        match self.DADJJBHOGMC {
-            ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(..)) => true,
+        match self.EHACJJJDPAH {
+            ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_BONAGHBBICF(&mut self, v: u32) {
-        self.DADJJBHOGMC = ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(v))
+        self.EHACJJJDPAH = ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(v))
     }
 
     // .IIKNGNHDMFI NNHPCOIIKFF = 5;
 
     pub fn NNHPCOIIKFF(&self) -> &super::IIKNGNHDMFI::IIKNGNHDMFI {
-        match self.DADJJBHOGMC {
-            ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(ref v)) => v,
+        match self.EHACJJJDPAH {
+            ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(ref v)) => v,
             _ => <super::IIKNGNHDMFI::IIKNGNHDMFI as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_NNHPCOIIKFF(&mut self) {
-        self.DADJJBHOGMC = ::std::option::Option::None;
+        self.EHACJJJDPAH = ::std::option::Option::None;
     }
 
     pub fn has_NNHPCOIIKFF(&self) -> bool {
-        match self.DADJJBHOGMC {
-            ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(..)) => true,
+        match self.EHACJJJDPAH {
+            ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_NNHPCOIIKFF(&mut self, v: super::IIKNGNHDMFI::IIKNGNHDMFI) {
-        self.DADJJBHOGMC = ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(v))
+        self.EHACJJJDPAH = ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_NNHPCOIIKFF(&mut self) -> &mut super::IIKNGNHDMFI::IIKNGNHDMFI {
-        if let ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(_)) = self.DADJJBHOGMC {
+        if let ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(_)) = self.EHACJJJDPAH {
         } else {
-            self.DADJJBHOGMC = ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(super::IIKNGNHDMFI::IIKNGNHDMFI::new()));
+            self.EHACJJJDPAH = ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(super::IIKNGNHDMFI::IIKNGNHDMFI::new()));
         }
-        match self.DADJJBHOGMC {
-            ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(ref mut v)) => v,
+        match self.EHACJJJDPAH {
+            ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -119,8 +119,8 @@ impl ADAFJFOJDEG {
     // Take field
     pub fn take_NNHPCOIIKFF(&mut self) -> super::IIKNGNHDMFI::IIKNGNHDMFI {
         if self.has_NNHPCOIIKFF() {
-            match self.DADJJBHOGMC.take() {
-                ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(v)) => v,
+            match self.EHACJJJDPAH.take() {
+                ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -132,14 +132,9 @@ impl ADAFJFOJDEG {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFANNCAGDMP",
-            |m: &ADAFJFOJDEG| { &m.MFANNCAGDMP },
-            |m: &mut ADAFJFOJDEG| { &mut m.MFANNCAGDMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &ADAFJFOJDEG| { &m.progress },
-            |m: &mut ADAFJFOJDEG| { &mut m.progress },
+            "status",
+            |m: &ADAFJFOJDEG| { &m.status },
+            |m: &mut ADAFJFOJDEG| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "quest_id",
@@ -147,9 +142,14 @@ impl ADAFJFOJDEG {
             |m: &mut ADAFJFOJDEG| { &mut m.quest_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &ADAFJFOJDEG| { &m.status },
-            |m: &mut ADAFJFOJDEG| { &mut m.status },
+            "progress",
+            |m: &ADAFJFOJDEG| { &m.progress },
+            |m: &mut ADAFJFOJDEG| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFANNCAGDMP",
+            |m: &ADAFJFOJDEG| { &m.MFANNCAGDMP },
+            |m: &mut ADAFJFOJDEG| { &mut m.MFANNCAGDMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "BONAGHBBICF",
@@ -164,7 +164,7 @@ impl ADAFJFOJDEG {
             ADAFJFOJDEG::mut_NNHPCOIIKFF,
             ADAFJFOJDEG::set_NNHPCOIIKFF,
         ));
-        oneofs.push(adafjfojdeg::DADJJBHOGMC::generated_oneof_descriptor_data());
+        oneofs.push(adafjfojdeg::EHACJJJDPAH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADAFJFOJDEG>(
             "ADAFJFOJDEG",
             fields,
@@ -184,22 +184,22 @@ impl ::protobuf::Message for ADAFJFOJDEG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.MFANNCAGDMP = is.read_uint32()?;
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 16 => {
+                    self.quest_id = is.read_uint32()?;
+                },
+                112 => {
                     self.progress = is.read_uint32()?;
                 },
                 64 => {
-                    self.quest_id = is.read_uint32()?;
+                    self.MFANNCAGDMP = is.read_uint32()?;
                 },
                 48 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                120 => {
-                    self.DADJJBHOGMC = ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(is.read_uint32()?));
+                    self.EHACJJJDPAH = ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(is.read_uint32()?));
                 },
                 42 => {
-                    self.DADJJBHOGMC = ::std::option::Option::Some(adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(is.read_message()?));
+                    self.EHACJJJDPAH = ::std::option::Option::Some(adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -213,24 +213,24 @@ impl ::protobuf::Message for ADAFJFOJDEG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFANNCAGDMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MFANNCAGDMP);
-        }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PLANET_FES_QUEST_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.status.value());
         }
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.quest_id);
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PLANET_FES_QUEST_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.status.value());
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.progress);
         }
-        if let ::std::option::Option::Some(ref v) = self.DADJJBHOGMC {
+        if self.MFANNCAGDMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MFANNCAGDMP);
+        }
+        if let ::std::option::Option::Some(ref v) = self.EHACJJJDPAH {
             match v {
-                &adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(v) => {
-                    my_size += ::protobuf::rt::uint32_size(15, v);
+                &adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(v) => {
+                    my_size += ::protobuf::rt::uint32_size(6, v);
                 },
-                &adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(ref v) => {
+                &adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -242,24 +242,24 @@ impl ::protobuf::Message for ADAFJFOJDEG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFANNCAGDMP != 0 {
-            os.write_uint32(3, self.MFANNCAGDMP)?;
-        }
-        if self.progress != 0 {
-            os.write_uint32(2, self.progress)?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PLANET_FES_QUEST_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.quest_id != 0 {
-            os.write_uint32(8, self.quest_id)?;
+            os.write_uint32(2, self.quest_id)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PLANET_FES_QUEST_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.progress != 0 {
+            os.write_uint32(14, self.progress)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.DADJJBHOGMC {
+        if self.MFANNCAGDMP != 0 {
+            os.write_uint32(8, self.MFANNCAGDMP)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.EHACJJJDPAH {
             match v {
-                &adafjfojdeg::DADJJBHOGMC::BONAGHBBICF(v) => {
-                    os.write_uint32(15, v)?;
+                &adafjfojdeg::EHACJJJDPAH::BONAGHBBICF(v) => {
+                    os.write_uint32(6, v)?;
                 },
-                &adafjfojdeg::DADJJBHOGMC::NNHPCOIIKFF(ref v) => {
+                &adafjfojdeg::EHACJJJDPAH::NNHPCOIIKFF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
@@ -281,22 +281,22 @@ impl ::protobuf::Message for ADAFJFOJDEG {
     }
 
     fn clear(&mut self) {
-        self.MFANNCAGDMP = 0;
-        self.progress = 0;
-        self.quest_id = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PLANET_FES_QUEST_NONE);
-        self.DADJJBHOGMC = ::std::option::Option::None;
-        self.DADJJBHOGMC = ::std::option::Option::None;
+        self.quest_id = 0;
+        self.progress = 0;
+        self.MFANNCAGDMP = 0;
+        self.EHACJJJDPAH = ::std::option::Option::None;
+        self.EHACJJJDPAH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADAFJFOJDEG {
         static instance: ADAFJFOJDEG = ADAFJFOJDEG {
-            MFANNCAGDMP: 0,
-            progress: 0,
-            quest_id: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            DADJJBHOGMC: ::std::option::Option::None,
+            quest_id: 0,
+            progress: 0,
+            MFANNCAGDMP: 0,
+            EHACJJJDPAH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -325,40 +325,40 @@ pub mod adafjfojdeg {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ADAFJFOJDEG.DADJJBHOGMC)
-    pub enum DADJJBHOGMC {
+    // @@protoc_insertion_point(oneof:ADAFJFOJDEG.EHACJJJDPAH)
+    pub enum EHACJJJDPAH {
         // @@protoc_insertion_point(oneof_field:ADAFJFOJDEG.BONAGHBBICF)
         BONAGHBBICF(u32),
         // @@protoc_insertion_point(oneof_field:ADAFJFOJDEG.NNHPCOIIKFF)
         NNHPCOIIKFF(super::super::IIKNGNHDMFI::IIKNGNHDMFI),
     }
 
-    impl ::protobuf::Oneof for DADJJBHOGMC {
+    impl ::protobuf::Oneof for EHACJJJDPAH {
     }
 
-    impl ::protobuf::OneofFull for DADJJBHOGMC {
+    impl ::protobuf::OneofFull for EHACJJJDPAH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ADAFJFOJDEG as ::protobuf::MessageFull>::descriptor().oneof_by_name("DADJJBHOGMC").unwrap()).clone()
+            descriptor.get(|| <super::ADAFJFOJDEG as ::protobuf::MessageFull>::descriptor().oneof_by_name("EHACJJJDPAH").unwrap()).clone()
         }
     }
 
-    impl DADJJBHOGMC {
+    impl EHACJJJDPAH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DADJJBHOGMC>("DADJJBHOGMC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<EHACJJJDPAH>("EHACJJJDPAH")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ADAFJFOJDEG.proto\x1a\x11IIKNGNHDMFI.proto\x1a\x19PlanetFesQuestSt\
-    ate.proto\"\xf9\x01\n\x0bADAFJFOJDEG\x12\x20\n\x0bMFANNCAGDMP\x18\x03\
-    \x20\x01(\rR\x0bMFANNCAGDMP\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\
-    \x08progress\x12\x19\n\x08quest_id\x18\x08\x20\x01(\rR\x07questId\x12,\n\
-    \x06status\x18\x06\x20\x01(\x0e2\x14.PlanetFesQuestStateR\x06status\x12\
-    \"\n\x0bBONAGHBBICF\x18\x0f\x20\x01(\rH\0R\x0bBONAGHBBICF\x120\n\x0bNNHP\
-    COIIKFF\x18\x05\x20\x01(\x0b2\x0c.IIKNGNHDMFIH\0R\x0bNNHPCOIIKFFB\r\n\
-    \x0bDADJJBHOGMCb\x06proto3\
+    ate.proto\"\xf9\x01\n\x0bADAFJFOJDEG\x12,\n\x06status\x18\x03\x20\x01(\
+    \x0e2\x14.PlanetFesQuestStateR\x06status\x12\x19\n\x08quest_id\x18\x02\
+    \x20\x01(\rR\x07questId\x12\x1a\n\x08progress\x18\x0e\x20\x01(\rR\x08pro\
+    gress\x12\x20\n\x0bMFANNCAGDMP\x18\x08\x20\x01(\rR\x0bMFANNCAGDMP\x12\"\
+    \n\x0bBONAGHBBICF\x18\x06\x20\x01(\rH\0R\x0bBONAGHBBICF\x120\n\x0bNNHPCO\
+    IIKFF\x18\x05\x20\x01(\x0b2\x0c.IIKNGNHDMFIH\0R\x0bNNHPCOIIKFFB\r\n\x0bE\
+    HACJJJDPAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchItem {
     // message fields
-    // @@protoc_insertion_point(field:SwitchItem.daily_index)
-    pub daily_index: u32,
     // @@protoc_insertion_point(field:SwitchItem.EINFBGKENDH)
     pub EINFBGKENDH: bool,
+    // @@protoc_insertion_point(field:SwitchItem.daily_index)
+    pub daily_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchItem.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SwitchItem {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "daily_index",
-            |m: &SwitchItem| { &m.daily_index },
-            |m: &mut SwitchItem| { &mut m.daily_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EINFBGKENDH",
             |m: &SwitchItem| { &m.EINFBGKENDH },
             |m: &mut SwitchItem| { &mut m.EINFBGKENDH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "daily_index",
+            |m: &SwitchItem| { &m.daily_index },
+            |m: &mut SwitchItem| { &mut m.daily_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchItem>(
             "SwitchItem",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwitchItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.daily_index = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.EINFBGKENDH = is.read_bool()?;
+                },
+                64 => {
+                    self.daily_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwitchItem {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.daily_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.daily_index);
-        }
         if self.EINFBGKENDH != false {
             my_size += 1 + 1;
+        }
+        if self.daily_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.daily_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SwitchItem {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.daily_index != 0 {
-            os.write_uint32(6, self.daily_index)?;
-        }
         if self.EINFBGKENDH != false {
-            os.write_bool(7, self.EINFBGKENDH)?;
+            os.write_bool(4, self.EINFBGKENDH)?;
+        }
+        if self.daily_index != 0 {
+            os.write_uint32(8, self.daily_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SwitchItem {
     }
 
     fn clear(&mut self) {
-        self.daily_index = 0;
         self.EINFBGKENDH = false;
+        self.daily_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchItem {
         static instance: SwitchItem = SwitchItem {
-            daily_index: 0,
             EINFBGKENDH: false,
+            daily_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchItem {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x1f\n\x0bdaily_index\x18\x06\
-    \x20\x01(\rR\ndailyIndex\x12\x20\n\x0bEINFBGKENDH\x18\x07\x20\x01(\x08R\
-    \x0bEINFBGKENDHb\x06proto3\
+    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x20\n\x0bEINFBGKENDH\x18\x04\
+    \x20\x01(\x08R\x0bEINFBGKENDH\x12\x1f\n\x0bdaily_index\x18\x08\x20\x01(\
+    \rR\ndailyIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

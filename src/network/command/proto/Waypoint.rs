@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Waypoint {
     // message fields
-    // @@protoc_insertion_point(field:Waypoint.KHFGDKNGFDP)
-    pub KHFGDKNGFDP: u32,
     // @@protoc_insertion_point(field:Waypoint.id)
     pub id: u32,
     // @@protoc_insertion_point(field:Waypoint.is_new)
     pub is_new: bool,
+    // @@protoc_insertion_point(field:Waypoint.KHFGDKNGFDP)
+    pub KHFGDKNGFDP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:Waypoint.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl Waypoint {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHFGDKNGFDP",
-            |m: &Waypoint| { &m.KHFGDKNGFDP },
-            |m: &mut Waypoint| { &mut m.KHFGDKNGFDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &Waypoint| { &m.id },
             |m: &mut Waypoint| { &mut m.id },
@@ -67,6 +62,11 @@ impl Waypoint {
             "is_new",
             |m: &Waypoint| { &m.is_new },
             |m: &mut Waypoint| { &mut m.is_new },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KHFGDKNGFDP",
+            |m: &Waypoint| { &m.KHFGDKNGFDP },
+            |m: &mut Waypoint| { &mut m.KHFGDKNGFDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Waypoint>(
             "Waypoint",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for Waypoint {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KHFGDKNGFDP = is.read_uint32()?;
-                },
-                32 => {
+                56 => {
                     self.id = is.read_uint32()?;
                 },
-                64 => {
+                24 => {
                     self.is_new = is.read_bool()?;
+                },
+                16 => {
+                    self.KHFGDKNGFDP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for Waypoint {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHFGDKNGFDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KHFGDKNGFDP);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+            my_size += ::protobuf::rt::uint32_size(7, self.id);
         }
         if self.is_new != false {
             my_size += 1 + 1;
+        }
+        if self.KHFGDKNGFDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KHFGDKNGFDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for Waypoint {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHFGDKNGFDP != 0 {
-            os.write_uint32(1, self.KHFGDKNGFDP)?;
-        }
         if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+            os.write_uint32(7, self.id)?;
         }
         if self.is_new != false {
-            os.write_bool(8, self.is_new)?;
+            os.write_bool(3, self.is_new)?;
+        }
+        if self.KHFGDKNGFDP != 0 {
+            os.write_uint32(2, self.KHFGDKNGFDP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for Waypoint {
     }
 
     fn clear(&mut self) {
-        self.KHFGDKNGFDP = 0;
         self.id = 0;
         self.is_new = false;
+        self.KHFGDKNGFDP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Waypoint {
         static instance: Waypoint = Waypoint {
-            KHFGDKNGFDP: 0,
             id: 0,
             is_new: false,
+            KHFGDKNGFDP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for Waypoint {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x20\n\x0bKHFGDKNGFDP\x18\x01\
-    \x20\x01(\rR\x0bKHFGDKNGFDP\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02id\
-    \x12\x15\n\x06is_new\x18\x08\x20\x01(\x08R\x05isNewb\x06proto3\
+    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x0e\n\x02id\x18\x07\x20\x01(\r\
+    R\x02id\x12\x15\n\x06is_new\x18\x03\x20\x01(\x08R\x05isNew\x12\x20\n\x0b\
+    KHFGDKNGFDP\x18\x02\x20\x01(\rR\x0bKHFGDKNGFDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

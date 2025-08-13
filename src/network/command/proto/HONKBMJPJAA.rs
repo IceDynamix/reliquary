@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HONKBMJPJAA {
     // message fields
-    // @@protoc_insertion_point(field:HONKBMJPJAA.CJENJIFEIDI)
-    pub CJENJIFEIDI: ::protobuf::MessageField<super::EBHGHGIIGOM::EBHGHGIIGOM>,
+    // @@protoc_insertion_point(field:HONKBMJPJAA.miracle_select_info)
+    pub miracle_select_info: ::protobuf::MessageField<super::RogueMiracleSelectInfo::RogueMiracleSelectInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HONKBMJPJAA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl HONKBMJPJAA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EBHGHGIIGOM::EBHGHGIIGOM>(
-            "CJENJIFEIDI",
-            |m: &HONKBMJPJAA| { &m.CJENJIFEIDI },
-            |m: &mut HONKBMJPJAA| { &mut m.CJENJIFEIDI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMiracleSelectInfo::RogueMiracleSelectInfo>(
+            "miracle_select_info",
+            |m: &HONKBMJPJAA| { &m.miracle_select_info },
+            |m: &mut HONKBMJPJAA| { &mut m.miracle_select_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HONKBMJPJAA>(
             "HONKBMJPJAA",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HONKBMJPJAA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CJENJIFEIDI)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_select_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HONKBMJPJAA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CJENJIFEIDI.as_ref() {
+        if let Some(v) = self.miracle_select_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HONKBMJPJAA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CJENJIFEIDI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.miracle_select_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HONKBMJPJAA {
     }
 
     fn clear(&mut self) {
-        self.CJENJIFEIDI.clear();
+        self.miracle_select_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HONKBMJPJAA {
         static instance: HONKBMJPJAA = HONKBMJPJAA {
-            CJENJIFEIDI: ::protobuf::MessageField::none(),
+            miracle_select_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HONKBMJPJAA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HONKBMJPJAA.proto\x1a\x11EBHGHGIIGOM.proto\"=\n\x0bHONKBMJPJAA\x12\
-    .\n\x0bCJENJIFEIDI\x18\x0e\x20\x01(\x0b2\x0c.EBHGHGIIGOMR\x0bCJENJIFEIDI\
-    b\x06proto3\
+    \n\x11HONKBMJPJAA.proto\x1a\x1cRogueMiracleSelectInfo.proto\"V\n\x0bHONK\
+    BMJPJAA\x12G\n\x13miracle_select_info\x18\x07\x20\x01(\x0b2\x17.RogueMir\
+    acleSelectInfoR\x11miracleSelectInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EBHGHGIIGOM::file_descriptor().clone());
+            deps.push(super::RogueMiracleSelectInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HONKBMJPJAA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

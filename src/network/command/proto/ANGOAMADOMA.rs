@@ -30,12 +30,12 @@ pub struct ANGOAMADOMA {
     // message fields
     // @@protoc_insertion_point(field:ANGOAMADOMA.tourn_finish_info)
     pub tourn_finish_info: ::protobuf::MessageField<super::RogueTournFinishInfo::RogueTournFinishInfo>,
+    // @@protoc_insertion_point(field:ANGOAMADOMA.JBLOKLCPAFN)
+    pub JBLOKLCPAFN: u32,
     // @@protoc_insertion_point(field:ANGOAMADOMA.IJHLOJEFCPM)
     pub IJHLOJEFCPM: u32,
     // @@protoc_insertion_point(field:ANGOAMADOMA.OFGBJCCCIKE)
     pub OFGBJCCCIKE: u32,
-    // @@protoc_insertion_point(field:ANGOAMADOMA.JBLOKLCPAFN)
-    pub JBLOKLCPAFN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ANGOAMADOMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl ANGOAMADOMA {
             |m: &mut ANGOAMADOMA| { &mut m.tourn_finish_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JBLOKLCPAFN",
+            |m: &ANGOAMADOMA| { &m.JBLOKLCPAFN },
+            |m: &mut ANGOAMADOMA| { &mut m.JBLOKLCPAFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJHLOJEFCPM",
             |m: &ANGOAMADOMA| { &m.IJHLOJEFCPM },
             |m: &mut ANGOAMADOMA| { &mut m.IJHLOJEFCPM },
@@ -69,11 +74,6 @@ impl ANGOAMADOMA {
             "OFGBJCCCIKE",
             |m: &ANGOAMADOMA| { &m.OFGBJCCCIKE },
             |m: &mut ANGOAMADOMA| { &mut m.OFGBJCCCIKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBLOKLCPAFN",
-            |m: &ANGOAMADOMA| { &m.JBLOKLCPAFN },
-            |m: &mut ANGOAMADOMA| { &mut m.JBLOKLCPAFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ANGOAMADOMA>(
             "ANGOAMADOMA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ANGOAMADOMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
-                8 => {
+                24 => {
+                    self.JBLOKLCPAFN = is.read_uint32()?;
+                },
+                96 => {
                     self.IJHLOJEFCPM = is.read_uint32()?;
                 },
-                16 => {
+                48 => {
                     self.OFGBJCCCIKE = is.read_uint32()?;
-                },
-                112 => {
-                    self.JBLOKLCPAFN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for ANGOAMADOMA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.JBLOKLCPAFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JBLOKLCPAFN);
+        }
         if self.IJHLOJEFCPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IJHLOJEFCPM);
+            my_size += ::protobuf::rt::uint32_size(12, self.IJHLOJEFCPM);
         }
         if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OFGBJCCCIKE);
-        }
-        if self.JBLOKLCPAFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JBLOKLCPAFN);
+            my_size += ::protobuf::rt::uint32_size(6, self.OFGBJCCCIKE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ANGOAMADOMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.IJHLOJEFCPM != 0 {
-            os.write_uint32(1, self.IJHLOJEFCPM)?;
-        }
-        if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(2, self.OFGBJCCCIKE)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.JBLOKLCPAFN != 0 {
-            os.write_uint32(14, self.JBLOKLCPAFN)?;
+            os.write_uint32(3, self.JBLOKLCPAFN)?;
+        }
+        if self.IJHLOJEFCPM != 0 {
+            os.write_uint32(12, self.IJHLOJEFCPM)?;
+        }
+        if self.OFGBJCCCIKE != 0 {
+            os.write_uint32(6, self.OFGBJCCCIKE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for ANGOAMADOMA {
 
     fn clear(&mut self) {
         self.tourn_finish_info.clear();
+        self.JBLOKLCPAFN = 0;
         self.IJHLOJEFCPM = 0;
         self.OFGBJCCCIKE = 0;
-        self.JBLOKLCPAFN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ANGOAMADOMA {
         static instance: ANGOAMADOMA = ANGOAMADOMA {
             tourn_finish_info: ::protobuf::MessageField::none(),
+            JBLOKLCPAFN: 0,
             IJHLOJEFCPM: 0,
             OFGBJCCCIKE: 0,
-            JBLOKLCPAFN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for ANGOAMADOMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ANGOAMADOMA.proto\x1a\x1aRogueTournFinishInfo.proto\"\xb6\x01\n\
-    \x0bANGOAMADOMA\x12A\n\x11tourn_finish_info\x18\x0c\x20\x01(\x0b2\x15.Ro\
-    gueTournFinishInfoR\x0ftournFinishInfo\x12\x20\n\x0bIJHLOJEFCPM\x18\x01\
-    \x20\x01(\rR\x0bIJHLOJEFCPM\x12\x20\n\x0bOFGBJCCCIKE\x18\x02\x20\x01(\rR\
-    \x0bOFGBJCCCIKE\x12\x20\n\x0bJBLOKLCPAFN\x18\x0e\x20\x01(\rR\x0bJBLOKLCP\
-    AFNb\x06proto3\
+    \x0bANGOAMADOMA\x12A\n\x11tourn_finish_info\x18\x0e\x20\x01(\x0b2\x15.Ro\
+    gueTournFinishInfoR\x0ftournFinishInfo\x12\x20\n\x0bJBLOKLCPAFN\x18\x03\
+    \x20\x01(\rR\x0bJBLOKLCPAFN\x12\x20\n\x0bIJHLOJEFCPM\x18\x0c\x20\x01(\rR\
+    \x0bIJHLOJEFCPM\x12\x20\n\x0bOFGBJCCCIKE\x18\x06\x20\x01(\rR\x0bOFGBJCCC\
+    IKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

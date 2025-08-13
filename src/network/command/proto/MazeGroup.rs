@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeGroup {
     // message fields
-    // @@protoc_insertion_point(field:MazeGroup.NOBKEONAKLE)
-    pub NOBKEONAKLE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MazeGroup.ILBEAAOOJJP)
-    pub ILBEAAOOJJP: bool,
     // @@protoc_insertion_point(field:MazeGroup.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:MazeGroup.INLDCCLIOAN)
     pub INLDCCLIOAN: i64,
+    // @@protoc_insertion_point(field:MazeGroup.NOBKEONAKLE)
+    pub NOBKEONAKLE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MazeGroup.ILBEAAOOJJP)
+    pub ILBEAAOOJJP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MazeGroup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl MazeGroup {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NOBKEONAKLE",
-            |m: &MazeGroup| { &m.NOBKEONAKLE },
-            |m: &mut MazeGroup| { &mut m.NOBKEONAKLE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILBEAAOOJJP",
-            |m: &MazeGroup| { &m.ILBEAAOOJJP },
-            |m: &mut MazeGroup| { &mut m.ILBEAAOOJJP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &MazeGroup| { &m.group_id },
@@ -74,6 +64,16 @@ impl MazeGroup {
             "INLDCCLIOAN",
             |m: &MazeGroup| { &m.INLDCCLIOAN },
             |m: &mut MazeGroup| { &mut m.INLDCCLIOAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NOBKEONAKLE",
+            |m: &MazeGroup| { &m.NOBKEONAKLE },
+            |m: &mut MazeGroup| { &mut m.NOBKEONAKLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ILBEAAOOJJP",
+            |m: &MazeGroup| { &m.ILBEAAOOJJP },
+            |m: &mut MazeGroup| { &mut m.ILBEAAOOJJP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MazeGroup>(
             "MazeGroup",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for MazeGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NOBKEONAKLE)?;
-                },
-                120 => {
-                    self.NOBKEONAKLE.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.ILBEAAOOJJP = is.read_bool()?;
-                },
-                72 => {
+                112 => {
                     self.group_id = is.read_uint32()?;
                 },
                 32 => {
                     self.INLDCCLIOAN = is.read_int64()?;
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NOBKEONAKLE)?;
+                },
+                8 => {
+                    self.NOBKEONAKLE.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.ILBEAAOOJJP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for MazeGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NOBKEONAKLE);
-        if self.ILBEAAOOJJP != false {
-            my_size += 1 + 1;
-        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         if self.INLDCCLIOAN != 0 {
             my_size += ::protobuf::rt::int64_size(4, self.INLDCCLIOAN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NOBKEONAKLE);
+        if self.ILBEAAOOJJP != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.NOBKEONAKLE)?;
-        if self.ILBEAAOOJJP != false {
-            os.write_bool(5, self.ILBEAAOOJJP)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
         if self.INLDCCLIOAN != 0 {
             os.write_int64(4, self.INLDCCLIOAN)?;
+        }
+        os.write_repeated_packed_uint32(1, &self.NOBKEONAKLE)?;
+        if self.ILBEAAOOJJP != false {
+            os.write_bool(13, self.ILBEAAOOJJP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn clear(&mut self) {
-        self.NOBKEONAKLE.clear();
-        self.ILBEAAOOJJP = false;
         self.group_id = 0;
         self.INLDCCLIOAN = 0;
+        self.NOBKEONAKLE.clear();
+        self.ILBEAAOOJJP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MazeGroup {
         static instance: MazeGroup = MazeGroup {
-            NOBKEONAKLE: ::std::vec::Vec::new(),
-            ILBEAAOOJJP: false,
             group_id: 0,
             INLDCCLIOAN: 0,
+            NOBKEONAKLE: ::std::vec::Vec::new(),
+            ILBEAAOOJJP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for MazeGroup {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fMazeGroup.proto\"\x8c\x01\n\tMazeGroup\x12\x20\n\x0bNOBKEONAKLE\
-    \x18\x0f\x20\x03(\rR\x0bNOBKEONAKLE\x12\x20\n\x0bILBEAAOOJJP\x18\x05\x20\
-    \x01(\x08R\x0bILBEAAOOJJP\x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07gro\
-    upId\x12\x20\n\x0bINLDCCLIOAN\x18\x04\x20\x01(\x03R\x0bINLDCCLIOANb\x06p\
-    roto3\
+    \n\x0fMazeGroup.proto\"\x8c\x01\n\tMazeGroup\x12\x19\n\x08group_id\x18\
+    \x0e\x20\x01(\rR\x07groupId\x12\x20\n\x0bINLDCCLIOAN\x18\x04\x20\x01(\
+    \x03R\x0bINLDCCLIOAN\x12\x20\n\x0bNOBKEONAKLE\x18\x01\x20\x03(\rR\x0bNOB\
+    KEONAKLE\x12\x20\n\x0bILBEAAOOJJP\x18\r\x20\x01(\x08R\x0bILBEAAOOJJPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

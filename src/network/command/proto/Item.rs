@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Item {
     // message fields
-    // @@protoc_insertion_point(field:Item.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:Item.rank)
     pub rank: u32,
-    // @@protoc_insertion_point(field:Item.unique_id)
-    pub unique_id: u32,
-    // @@protoc_insertion_point(field:Item.item_id)
-    pub item_id: u32,
     // @@protoc_insertion_point(field:Item.promotion)
     pub promotion: u32,
     // @@protoc_insertion_point(field:Item.main_affix_id)
     pub main_affix_id: u32,
+    // @@protoc_insertion_point(field:Item.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:Item.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:Item.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:Item.item_id)
+    pub item_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:Item.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,24 +62,9 @@ impl Item {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &Item| { &m.level },
-            |m: &mut Item| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
             |m: &Item| { &m.rank },
             |m: &mut Item| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &Item| { &m.unique_id },
-            |m: &mut Item| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &Item| { &m.item_id },
-            |m: &mut Item| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
@@ -92,9 +77,24 @@ impl Item {
             |m: &mut Item| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &Item| { &m.unique_id },
+            |m: &mut Item| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &Item| { &m.level },
+            |m: &mut Item| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
             |m: &Item| { &m.num },
             |m: &mut Item| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &Item| { &m.item_id },
+            |m: &mut Item| { &mut m.item_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Item>(
             "Item",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for Item {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.level = is.read_uint32()?;
-                },
-                120 => {
                     self.rank = is.read_uint32()?;
                 },
-                104 => {
+                16 => {
+                    self.promotion = is.read_uint32()?;
+                },
+                56 => {
+                    self.main_affix_id = is.read_uint32()?;
+                },
+                96 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 72 => {
-                    self.item_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.promotion = is.read_uint32()?;
-                },
-                16 => {
-                    self.main_affix_id = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
                 24 => {
                     self.num = is.read_uint32()?;
+                },
+                48 => {
+                    self.item_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for Item {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
-        }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.rank);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
-        }
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.rank);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(2, self.promotion);
         }
         if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.main_affix_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.main_affix_id);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.num != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.num);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for Item {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(14, self.level)?;
-        }
         if self.rank != 0 {
-            os.write_uint32(15, self.rank)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint32(13, self.unique_id)?;
-        }
-        if self.item_id != 0 {
-            os.write_uint32(9, self.item_id)?;
+            os.write_uint32(14, self.rank)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(1, self.promotion)?;
+            os.write_uint32(2, self.promotion)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(2, self.main_affix_id)?;
+            os.write_uint32(7, self.main_affix_id)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(12, self.unique_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
         }
         if self.num != 0 {
             os.write_uint32(3, self.num)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(6, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for Item {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.rank = 0;
-        self.unique_id = 0;
-        self.item_id = 0;
         self.promotion = 0;
         self.main_affix_id = 0;
+        self.unique_id = 0;
+        self.level = 0;
         self.num = 0;
+        self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Item {
         static instance: Item = Item {
-            level: 0,
             rank: 0,
-            unique_id: 0,
-            item_id: 0,
             promotion: 0,
             main_affix_id: 0,
+            unique_id: 0,
+            level: 0,
             num: 0,
+            item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,12 +255,12 @@ impl ::protobuf::reflect::ProtobufValue for Item {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\nItem.proto\"\xba\x01\n\x04Item\x12\x14\n\x05level\x18\x0e\x20\x01(\r\
-    R\x05level\x12\x12\n\x04rank\x18\x0f\x20\x01(\rR\x04rank\x12\x1b\n\tuniq\
-    ue_id\x18\r\x20\x01(\rR\x08uniqueId\x12\x17\n\x07item_id\x18\t\x20\x01(\
-    \rR\x06itemId\x12\x1c\n\tpromotion\x18\x01\x20\x01(\rR\tpromotion\x12\"\
-    \n\rmain_affix_id\x18\x02\x20\x01(\rR\x0bmainAffixId\x12\x10\n\x03num\
-    \x18\x03\x20\x01(\rR\x03numb\x06proto3\
+    \n\nItem.proto\"\xba\x01\n\x04Item\x12\x12\n\x04rank\x18\x0e\x20\x01(\rR\
+    \x04rank\x12\x1c\n\tpromotion\x18\x02\x20\x01(\rR\tpromotion\x12\"\n\rma\
+    in_affix_id\x18\x07\x20\x01(\rR\x0bmainAffixId\x12\x1b\n\tunique_id\x18\
+    \x0c\x20\x01(\rR\x08uniqueId\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05lev\
+    el\x12\x10\n\x03num\x18\x03\x20\x01(\rR\x03num\x12\x17\n\x07item_id\x18\
+    \x06\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

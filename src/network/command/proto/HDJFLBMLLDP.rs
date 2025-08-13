@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDJFLBMLLDP {
     // message fields
-    // @@protoc_insertion_point(field:HDJFLBMLLDP.GKFLNMOJNCP)
-    pub GKFLNMOJNCP: ::protobuf::MessageField<super::FLECFLLDNFP::FLECFLLDNFP>,
+    // @@protoc_insertion_point(field:HDJFLBMLLDP.bonus_select_info)
+    pub bonus_select_info: ::protobuf::MessageField<super::FLECFLLDNFP::FLECFLLDNFP>,
     // special fields
     // @@protoc_insertion_point(special_field:HDJFLBMLLDP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl HDJFLBMLLDP {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FLECFLLDNFP::FLECFLLDNFP>(
-            "GKFLNMOJNCP",
-            |m: &HDJFLBMLLDP| { &m.GKFLNMOJNCP },
-            |m: &mut HDJFLBMLLDP| { &mut m.GKFLNMOJNCP },
+            "bonus_select_info",
+            |m: &HDJFLBMLLDP| { &m.bonus_select_info },
+            |m: &mut HDJFLBMLLDP| { &mut m.bonus_select_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDJFLBMLLDP>(
             "HDJFLBMLLDP",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HDJFLBMLLDP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GKFLNMOJNCP)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.bonus_select_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HDJFLBMLLDP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GKFLNMOJNCP.as_ref() {
+        if let Some(v) = self.bonus_select_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HDJFLBMLLDP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GKFLNMOJNCP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.bonus_select_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HDJFLBMLLDP {
     }
 
     fn clear(&mut self) {
-        self.GKFLNMOJNCP.clear();
+        self.bonus_select_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDJFLBMLLDP {
         static instance: HDJFLBMLLDP = HDJFLBMLLDP {
-            GKFLNMOJNCP: ::protobuf::MessageField::none(),
+            bonus_select_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HDJFLBMLLDP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDJFLBMLLDP.proto\x1a\x11FLECFLLDNFP.proto\"=\n\x0bHDJFLBMLLDP\x12\
-    .\n\x0bGKFLNMOJNCP\x18\n\x20\x01(\x0b2\x0c.FLECFLLDNFPR\x0bGKFLNMOJNCPb\
-    \x06proto3\
+    \n\x11HDJFLBMLLDP.proto\x1a\x11FLECFLLDNFP.proto\"G\n\x0bHDJFLBMLLDP\x12\
+    8\n\x11bonus_select_info\x18\x08\x20\x01(\x0b2\x0c.FLECFLLDNFPR\x0fbonus\
+    SelectInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

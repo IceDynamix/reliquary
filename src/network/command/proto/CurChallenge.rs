@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CurChallenge {
     // message fields
-    // @@protoc_insertion_point(field:CurChallenge.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:CurChallenge.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::ChallengeCurBuffInfo::ChallengeCurBuffInfo>,
     // @@protoc_insertion_point(field:CurChallenge.score_two)
     pub score_two: u32,
     // @@protoc_insertion_point(field:CurChallenge.dead_avatar_num)
     pub dead_avatar_num: u32,
-    // @@protoc_insertion_point(field:CurChallenge.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:CurChallenge.challenge_id)
     pub challenge_id: u32,
     // @@protoc_insertion_point(field:CurChallenge.round_count)
     pub round_count: u32,
+    // @@protoc_insertion_point(field:CurChallenge.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChallengeCurBuffInfo::ChallengeCurBuffInfo>,
     // @@protoc_insertion_point(field:CurChallenge.status)
     pub status: ::protobuf::EnumOrUnknown<super::ChallengeStatus::ChallengeStatus>,
+    // @@protoc_insertion_point(field:CurChallenge.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:CurChallenge.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:CurChallenge.kill_monster_list)
     pub kill_monster_list: ::std::vec::Vec<super::KillMonster::KillMonster>,
     // special fields
@@ -66,16 +66,6 @@ impl CurChallenge {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &CurChallenge| { &m.score_id },
-            |m: &mut CurChallenge| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeCurBuffInfo::ChallengeCurBuffInfo>(
-            "stage_info",
-            |m: &CurChallenge| { &m.stage_info },
-            |m: &mut CurChallenge| { &mut m.stage_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_two",
             |m: &CurChallenge| { &m.score_two },
             |m: &mut CurChallenge| { &mut m.score_two },
@@ -84,11 +74,6 @@ impl CurChallenge {
             "dead_avatar_num",
             |m: &CurChallenge| { &m.dead_avatar_num },
             |m: &mut CurChallenge| { &mut m.dead_avatar_num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &CurChallenge| { &m.extra_lineup_type },
-            |m: &mut CurChallenge| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -100,10 +85,25 @@ impl CurChallenge {
             |m: &CurChallenge| { &m.round_count },
             |m: &mut CurChallenge| { &mut m.round_count },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeCurBuffInfo::ChallengeCurBuffInfo>(
+            "stage_info",
+            |m: &CurChallenge| { &m.stage_info },
+            |m: &mut CurChallenge| { &mut m.stage_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &CurChallenge| { &m.status },
             |m: &mut CurChallenge| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &CurChallenge| { &m.score_id },
+            |m: &mut CurChallenge| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_lineup_type",
+            |m: &CurChallenge| { &m.extra_lineup_type },
+            |m: &mut CurChallenge| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "kill_monster_list",
@@ -128,31 +128,31 @@ impl ::protobuf::Message for CurChallenge {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
-                8 => {
+                104 => {
                     self.score_two = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.dead_avatar_num = is.read_uint32()?;
+                },
+                88 => {
+                    self.challenge_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.round_count = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                40 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.score_id = is.read_uint32()?;
                 },
                 16 => {
                     self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
-                112 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.round_count = is.read_uint32()?;
-                },
-                120 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                98 => {
+                50 => {
                     self.kill_monster_list.push(is.read_message()?);
                 },
                 tag => {
@@ -167,30 +167,30 @@ impl ::protobuf::Message for CurChallenge {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
+        if self.score_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.score_two);
+        }
+        if self.dead_avatar_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.dead_avatar_num);
+        }
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.challenge_id);
+        }
+        if self.round_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.round_count);
         }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.score_two);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::ChallengeStatus::ChallengeStatus::CHALLENGE_UNKNOWN) {
+            my_size += ::protobuf::rt::int32_size(5, self.status.value());
         }
-        if self.dead_avatar_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.dead_avatar_num);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
             my_size += ::protobuf::rt::int32_size(2, self.extra_lineup_type.value());
-        }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
-        }
-        if self.round_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.round_count);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::ChallengeStatus::ChallengeStatus::CHALLENGE_UNKNOWN) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
         }
         for value in &self.kill_monster_list {
             let len = value.compute_size();
@@ -202,32 +202,32 @@ impl ::protobuf::Message for CurChallenge {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(8, self.score_id)?;
-        }
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.score_two != 0 {
-            os.write_uint32(1, self.score_two)?;
+            os.write_uint32(13, self.score_two)?;
         }
         if self.dead_avatar_num != 0 {
-            os.write_uint32(7, self.dead_avatar_num)?;
+            os.write_uint32(1, self.dead_avatar_num)?;
+        }
+        if self.challenge_id != 0 {
+            os.write_uint32(11, self.challenge_id)?;
+        }
+        if self.round_count != 0 {
+            os.write_uint32(4, self.round_count)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::ChallengeStatus::ChallengeStatus::CHALLENGE_UNKNOWN) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(8, self.score_id)?;
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(14, self.challenge_id)?;
-        }
-        if self.round_count != 0 {
-            os.write_uint32(10, self.round_count)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::ChallengeStatus::ChallengeStatus::CHALLENGE_UNKNOWN) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         for v in &self.kill_monster_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,28 +246,28 @@ impl ::protobuf::Message for CurChallenge {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
-        self.stage_info.clear();
         self.score_two = 0;
         self.dead_avatar_num = 0;
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.challenge_id = 0;
         self.round_count = 0;
+        self.stage_info.clear();
         self.status = ::protobuf::EnumOrUnknown::new(super::ChallengeStatus::ChallengeStatus::CHALLENGE_UNKNOWN);
+        self.score_id = 0;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.kill_monster_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CurChallenge {
         static instance: CurChallenge = CurChallenge {
-            score_id: 0,
-            stage_info: ::protobuf::MessageField::none(),
             score_two: 0,
             dead_avatar_num: 0,
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             challenge_id: 0,
             round_count: 0,
+            stage_info: ::protobuf::MessageField::none(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            score_id: 0,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             kill_monster_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -295,15 +295,15 @@ impl ::protobuf::reflect::ProtobufValue for CurChallenge {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CurChallenge.proto\x1a\x1aChallengeCurBuffInfo.proto\x1a\x15Challe\
     ngeStatus.proto\x1a\x15ExtraLineupType.proto\x1a\x11KillMonster.proto\"\
-    \x8a\x03\n\x0cCurChallenge\x12\x19\n\x08score_id\x18\x08\x20\x01(\rR\x07\
-    scoreId\x124\n\nstage_info\x18\t\x20\x01(\x0b2\x15.ChallengeCurBuffInfoR\
-    \tstageInfo\x12\x1b\n\tscore_two\x18\x01\x20\x01(\rR\x08scoreTwo\x12&\n\
-    \x0fdead_avatar_num\x18\x07\x20\x01(\rR\rdeadAvatarNum\x12<\n\x11extra_l\
-    ineup_type\x18\x02\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\
-    \x12!\n\x0cchallenge_id\x18\x0e\x20\x01(\rR\x0bchallengeId\x12\x1f\n\x0b\
-    round_count\x18\n\x20\x01(\rR\nroundCount\x12(\n\x06status\x18\x0f\x20\
-    \x01(\x0e2\x10.ChallengeStatusR\x06status\x128\n\x11kill_monster_list\
-    \x18\x0c\x20\x03(\x0b2\x0c.KillMonsterR\x0fkillMonsterListb\x06proto3\
+    \x8a\x03\n\x0cCurChallenge\x12\x1b\n\tscore_two\x18\r\x20\x01(\rR\x08sco\
+    reTwo\x12&\n\x0fdead_avatar_num\x18\x01\x20\x01(\rR\rdeadAvatarNum\x12!\
+    \n\x0cchallenge_id\x18\x0b\x20\x01(\rR\x0bchallengeId\x12\x1f\n\x0bround\
+    _count\x18\x04\x20\x01(\rR\nroundCount\x124\n\nstage_info\x18\x0e\x20\
+    \x01(\x0b2\x15.ChallengeCurBuffInfoR\tstageInfo\x12(\n\x06status\x18\x05\
+    \x20\x01(\x0e2\x10.ChallengeStatusR\x06status\x12\x19\n\x08score_id\x18\
+    \x08\x20\x01(\rR\x07scoreId\x12<\n\x11extra_lineup_type\x18\x02\x20\x01(\
+    \x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x128\n\x11kill_monster_lis\
+    t\x18\x06\x20\x03(\x0b2\x0c.KillMonsterR\x0fkillMonsterListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

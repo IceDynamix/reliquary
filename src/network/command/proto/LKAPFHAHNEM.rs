@@ -30,8 +30,8 @@ pub struct LKAPFHAHNEM {
     // message fields
     // @@protoc_insertion_point(field:LKAPFHAHNEM.panel_id)
     pub panel_id: u32,
-    // @@protoc_insertion_point(field:LKAPFHAHNEM.LGHOKGABGCK)
-    pub LGHOKGABGCK: u32,
+    // @@protoc_insertion_point(field:LKAPFHAHNEM.modifier_content_type)
+    pub modifier_content_type: u32,
     // @@protoc_insertion_point(field:LKAPFHAHNEM.CFDANMOMHPI)
     pub CFDANMOMHPI: u64,
     // special fields
@@ -59,9 +59,9 @@ impl LKAPFHAHNEM {
             |m: &mut LKAPFHAHNEM| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGHOKGABGCK",
-            |m: &LKAPFHAHNEM| { &m.LGHOKGABGCK },
-            |m: &mut LKAPFHAHNEM| { &mut m.LGHOKGABGCK },
+            "modifier_content_type",
+            |m: &LKAPFHAHNEM| { &m.modifier_content_type },
+            |m: &mut LKAPFHAHNEM| { &mut m.modifier_content_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFDANMOMHPI",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
                     self.panel_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.LGHOKGABGCK = is.read_uint32()?;
+                    self.modifier_content_type = is.read_uint32()?;
                 },
                 24 => {
                     self.CFDANMOMHPI = is.read_uint64()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for LKAPFHAHNEM {
         if self.panel_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
-        if self.LGHOKGABGCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LGHOKGABGCK);
+        if self.modifier_content_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.modifier_content_type);
         }
         if self.CFDANMOMHPI != 0 {
             my_size += ::protobuf::rt::uint64_size(3, self.CFDANMOMHPI);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for LKAPFHAHNEM {
         if self.panel_id != 0 {
             os.write_uint32(1, self.panel_id)?;
         }
-        if self.LGHOKGABGCK != 0 {
-            os.write_uint32(2, self.LGHOKGABGCK)?;
+        if self.modifier_content_type != 0 {
+            os.write_uint32(2, self.modifier_content_type)?;
         }
         if self.CFDANMOMHPI != 0 {
             os.write_uint64(3, self.CFDANMOMHPI)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
 
     fn clear(&mut self) {
         self.panel_id = 0;
-        self.LGHOKGABGCK = 0;
+        self.modifier_content_type = 0;
         self.CFDANMOMHPI = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for LKAPFHAHNEM {
     fn default_instance() -> &'static LKAPFHAHNEM {
         static instance: LKAPFHAHNEM = LKAPFHAHNEM {
             panel_id: 0,
-            LGHOKGABGCK: 0,
+            modifier_content_type: 0,
             CFDANMOMHPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LKAPFHAHNEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LKAPFHAHNEM.proto\"l\n\x0bLKAPFHAHNEM\x12\x19\n\x08panel_id\x18\
-    \x01\x20\x01(\rR\x07panelId\x12\x20\n\x0bLGHOKGABGCK\x18\x02\x20\x01(\rR\
-    \x0bLGHOKGABGCK\x12\x20\n\x0bCFDANMOMHPI\x18\x03\x20\x01(\x04R\x0bCFDANM\
-    OMHPIb\x06proto3\
+    \n\x11LKAPFHAHNEM.proto\"~\n\x0bLKAPFHAHNEM\x12\x19\n\x08panel_id\x18\
+    \x01\x20\x01(\rR\x07panelId\x122\n\x15modifier_content_type\x18\x02\x20\
+    \x01(\rR\x13modifierContentType\x12\x20\n\x0bCFDANMOMHPI\x18\x03\x20\x01\
+    (\x04R\x0bCFDANMOMHPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

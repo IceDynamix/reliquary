@@ -72,7 +72,7 @@ impl ::protobuf::Message for LIMLKCFGKFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.BCFAIIJFLFA = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for LIMLKCFGKFA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BCFAIIJFLFA != false {
-            os.write_bool(1, self.BCFAIIJFLFA)?;
+            os.write_bool(9, self.BCFAIIJFLFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for LIMLKCFGKFA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LIMLKCFGKFA.proto\"/\n\x0bLIMLKCFGKFA\x12\x20\n\x0bBCFAIIJFLFA\x18\
-    \x01\x20\x01(\x08R\x0bBCFAIIJFLFAb\x06proto3\
+    \t\x20\x01(\x08R\x0bBCFAIIJFLFAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

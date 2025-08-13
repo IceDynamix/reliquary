@@ -86,13 +86,13 @@ impl ::protobuf::Message for MarkItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.NAEHPHHDGEK = is.read_bool()?;
                 },
-                64 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MarkItemScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MarkItemScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NAEHPHHDGEK != false {
-            os.write_bool(2, self.NAEHPHHDGEK)?;
+            os.write_bool(15, self.NAEHPHHDGEK)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(14, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13MarkItemScRsp.proto\"d\n\rMarkItemScRsp\x12\x20\n\x0bNAEHPHHDGEK\
-    \x18\x02\x20\x01(\x08R\x0bNAEHPHHDGEK\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12\x17\n\x07item_id\x18\x0e\x20\x01(\rR\x06itemIdb\
-    \x06proto3\
+    \x18\x0f\x20\x01(\x08R\x0bNAEHPHHDGEK\x12\x18\n\x07retcode\x18\r\x20\x01\
+    (\rR\x07retcode\x12\x17\n\x07item_id\x18\x0b\x20\x01(\rR\x06itemIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

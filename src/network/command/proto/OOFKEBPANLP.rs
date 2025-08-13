@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OOFKEBPANLP {
     // message fields
-    // @@protoc_insertion_point(field:OOFKEBPANLP.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:OOFKEBPANLP.level_id)
+    pub level_id: u32,
     // @@protoc_insertion_point(field:OOFKEBPANLP.DCFHGAAJLNN)
     pub DCFHGAAJLNN: ::std::vec::Vec<super::DGEFMLBPFMM::DGEFMLBPFMM>,
     // special fields
@@ -52,9 +52,9 @@ impl OOFKEBPANLP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &OOFKEBPANLP| { &m.ACJCPHIFMLN },
-            |m: &mut OOFKEBPANLP| { &mut m.ACJCPHIFMLN },
+            "level_id",
+            |m: &OOFKEBPANLP| { &m.level_id },
+            |m: &mut OOFKEBPANLP| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCFHGAAJLNN",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for OOFKEBPANLP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                32 => {
+                    self.level_id = is.read_uint32()?;
                 },
-                34 => {
+                58 => {
                     self.DCFHGAAJLNN.push(is.read_message()?);
                 },
                 tag => {
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OOFKEBPANLP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ACJCPHIFMLN);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.level_id);
         }
         for value in &self.DCFHGAAJLNN {
             let len = value.compute_size();
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OOFKEBPANLP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(2, self.ACJCPHIFMLN)?;
+        if self.level_id != 0 {
+            os.write_uint32(4, self.level_id)?;
         }
         for v in &self.DCFHGAAJLNN {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for OOFKEBPANLP {
     }
 
     fn clear(&mut self) {
-        self.ACJCPHIFMLN = 0;
+        self.level_id = 0;
         self.DCFHGAAJLNN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OOFKEBPANLP {
         static instance: OOFKEBPANLP = OOFKEBPANLP {
-            ACJCPHIFMLN: 0,
+            level_id: 0,
             DCFHGAAJLNN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OOFKEBPANLP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OOFKEBPANLP.proto\x1a\x11DGEFMLBPFMM.proto\"_\n\x0bOOFKEBPANLP\x12\
-    \x20\n\x0bACJCPHIFMLN\x18\x02\x20\x01(\rR\x0bACJCPHIFMLN\x12.\n\x0bDCFHG\
-    AAJLNN\x18\x04\x20\x03(\x0b2\x0c.DGEFMLBPFMMR\x0bDCFHGAAJLNNb\x06proto3\
+    \n\x11OOFKEBPANLP.proto\x1a\x11DGEFMLBPFMM.proto\"X\n\x0bOOFKEBPANLP\x12\
+    \x19\n\x08level_id\x18\x04\x20\x01(\rR\x07levelId\x12.\n\x0bDCFHGAAJLNN\
+    \x18\x07\x20\x03(\x0b2\x0c.DGEFMLBPFMMR\x0bDCFHGAAJLNNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

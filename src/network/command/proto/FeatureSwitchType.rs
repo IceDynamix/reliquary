@@ -177,6 +177,10 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_FATE = 75,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_FATE_AVATAR_HANDBOOK)
     FEATURE_SWITCH_FATE_AVATAR_HANDBOOK = 76,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_ELF_RESTAURANT)
+    FEATURE_SWITCH_ELF_RESTAURANT = 77,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL)
+    FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL = 78,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -263,6 +267,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             74 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE),
             75 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE),
             76 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK),
+            77 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ELF_RESTAURANT),
+            78 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL),
             _ => ::std::option::Option::None
         }
     }
@@ -344,6 +350,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_SKIP_PERFORMANCE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE),
             "FEATURE_SWITCH_FATE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE),
             "FEATURE_SWITCH_FATE_AVATAR_HANDBOOK" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK),
+            "FEATURE_SWITCH_ELF_RESTAURANT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_ELF_RESTAURANT),
+            "FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL),
             _ => ::std::option::Option::None
         }
     }
@@ -424,6 +432,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE,
         FeatureSwitchType::FEATURE_SWITCH_FATE,
         FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK,
+        FeatureSwitchType::FEATURE_SWITCH_ELF_RESTAURANT,
+        FeatureSwitchType::FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL,
     ];
 }
 
@@ -510,6 +520,8 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_SKIP_PERFORMANCE => 72,
             FeatureSwitchType::FEATURE_SWITCH_FATE => 73,
             FeatureSwitchType::FEATURE_SWITCH_FATE_AVATAR_HANDBOOK => 74,
+            FeatureSwitchType::FEATURE_SWITCH_ELF_RESTAURANT => 75,
+            FeatureSwitchType::FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL => 76,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -528,7 +540,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\x86\x15\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\xd2\x15\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -578,7 +590,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     GUE_TOURN_COCOON\x10G\x12\x1f\n\x1bFEATURE_SWITCH_ITEM_COMPOSE\x10H\x12.\
     \n*FEATURE_SWITCH_GROW_MATERIAL_AUTO_COMPLETE\x10I\x12#\n\x1fFEATURE_SWI\
     TCH_SKIP_PERFORMANCE\x10J\x12\x17\n\x13FEATURE_SWITCH_FATE\x10K\x12'\n#F\
-    EATURE_SWITCH_FATE_AVATAR_HANDBOOK\x10Lb\x06proto3\
+    EATURE_SWITCH_FATE_AVATAR_HANDBOOK\x10L\x12!\n\x1dFEATURE_SWITCH_ELF_RES\
+    TAURANT\x10M\x12'\n#FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL\x10Nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

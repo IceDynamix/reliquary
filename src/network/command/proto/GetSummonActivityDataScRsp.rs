@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSummonActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.JHOMKEMCDMG)
-    pub JHOMKEMCDMG: ::std::vec::Vec<super::PGBHMOLFBMM::PGBHMOLFBMM>,
     // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.JHOMKEMCDMG)
+    pub JHOMKEMCDMG: ::std::vec::Vec<super::PGBHMOLFBMM::PGBHMOLFBMM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSummonActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetSummonActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JHOMKEMCDMG",
-            |m: &GetSummonActivityDataScRsp| { &m.JHOMKEMCDMG },
-            |m: &mut GetSummonActivityDataScRsp| { &mut m.JHOMKEMCDMG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSummonActivityDataScRsp| { &m.retcode },
             |m: &mut GetSummonActivityDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JHOMKEMCDMG",
+            |m: &GetSummonActivityDataScRsp| { &m.JHOMKEMCDMG },
+            |m: &mut GetSummonActivityDataScRsp| { &mut m.JHOMKEMCDMG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSummonActivityDataScRsp>(
             "GetSummonActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.JHOMKEMCDMG.push(is.read_message()?);
-                },
-                56 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    self.JHOMKEMCDMG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         for value in &self.JHOMKEMCDMG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JHOMKEMCDMG {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
+        for v in &self.JHOMKEMCDMG {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.JHOMKEMCDMG.clear();
         self.retcode = 0;
+        self.JHOMKEMCDMG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSummonActivityDataScRsp {
         static instance: GetSummonActivityDataScRsp = GetSummonActivityDataScRsp {
-            JHOMKEMCDMG: ::std::vec::Vec::new(),
             retcode: 0,
+            JHOMKEMCDMG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSummonActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetSummonActivityDataScRsp.proto\x1a\x11PGBHMOLFBMM.proto\"f\n\x1a\
-    GetSummonActivityDataScRsp\x12.\n\x0bJHOMKEMCDMG\x18\n\x20\x03(\x0b2\x0c\
-    .PGBHMOLFBMMR\x0bJHOMKEMCDMG\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    GetSummonActivityDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bJHOMKEMCDMG\x18\r\x20\x03(\x0b2\x0c.PGBHMOLFBMMR\x0bJHO\
+    MKEMCDMGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -43,6 +43,10 @@ pub enum ServerLogTag {
     SERVER_LOG_TAG_LEVEL_GRAPH = 6,
     // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_PLANET_FES)
     SERVER_LOG_TAG_PLANET_FES = 7,
+    // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_ELF_RESTAURANT)
+    SERVER_LOG_TAG_ELF_RESTAURANT = 8,
+    // @@protoc_insertion_point(enum_value:ServerLogTag.SERVER_LOG_TAG_AVATAR)
+    SERVER_LOG_TAG_AVATAR = 9,
 }
 
 impl ::protobuf::Enum for ServerLogTag {
@@ -62,6 +66,8 @@ impl ::protobuf::Enum for ServerLogTag {
             5 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE),
             6 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_LEVEL_GRAPH),
             7 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_PLANET_FES),
+            8 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_ELF_RESTAURANT),
+            9 => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_AVATAR),
             _ => ::std::option::Option::None
         }
     }
@@ -76,6 +82,8 @@ impl ::protobuf::Enum for ServerLogTag {
             "SERVER_LOG_TAG_CPP_GAMECORE" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE),
             "SERVER_LOG_TAG_LEVEL_GRAPH" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_LEVEL_GRAPH),
             "SERVER_LOG_TAG_PLANET_FES" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_PLANET_FES),
+            "SERVER_LOG_TAG_ELF_RESTAURANT" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_ELF_RESTAURANT),
+            "SERVER_LOG_TAG_AVATAR" => ::std::option::Option::Some(ServerLogTag::SERVER_LOG_TAG_AVATAR),
             _ => ::std::option::Option::None
         }
     }
@@ -89,6 +97,8 @@ impl ::protobuf::Enum for ServerLogTag {
         ServerLogTag::SERVER_LOG_TAG_CPP_GAMECORE,
         ServerLogTag::SERVER_LOG_TAG_LEVEL_GRAPH,
         ServerLogTag::SERVER_LOG_TAG_PLANET_FES,
+        ServerLogTag::SERVER_LOG_TAG_ELF_RESTAURANT,
+        ServerLogTag::SERVER_LOG_TAG_AVATAR,
     ];
 }
 
@@ -117,12 +127,14 @@ impl ServerLogTag {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12ServerLogTag.proto*\xf2\x01\n\x0cServerLogTag\x12\x1a\n\x16SERVER_\
+    \n\x12ServerLogTag.proto*\xb0\x02\n\x0cServerLogTag\x12\x1a\n\x16SERVER_\
     LOG_TAG_DEFAULT\x10\0\x12\x18\n\x14SERVER_LOG_TAG_ROGUE\x10\x01\x12\x17\
     \n\x13SERVER_LOG_TAG_FATE\x10\x02\x12\x18\n\x14SERVER_LOG_TAG_SCENE\x10\
     \x03\x12\x19\n\x15SERVER_LOG_TAG_BATTLE\x10\x04\x12\x1f\n\x1bSERVER_LOG_\
     TAG_CPP_GAMECORE\x10\x05\x12\x1e\n\x1aSERVER_LOG_TAG_LEVEL_GRAPH\x10\x06\
-    \x12\x1d\n\x19SERVER_LOG_TAG_PLANET_FES\x10\x07b\x06proto3\
+    \x12\x1d\n\x19SERVER_LOG_TAG_PLANET_FES\x10\x07\x12!\n\x1dSERVER_LOG_TAG\
+    _ELF_RESTAURANT\x10\x08\x12\x19\n\x15SERVER_LOG_TAG_AVATAR\x10\tb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

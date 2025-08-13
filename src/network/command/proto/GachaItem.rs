@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GachaItem {
     // message fields
-    // @@protoc_insertion_point(field:GachaItem.token_item)
-    pub token_item: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:GachaItem.gacha_item)
-    pub gacha_item: ::protobuf::MessageField<super::Item::Item>,
     // @@protoc_insertion_point(field:GachaItem.is_new)
     pub is_new: bool,
     // @@protoc_insertion_point(field:GachaItem.transfer_item_list)
     pub transfer_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:GachaItem.gacha_item)
+    pub gacha_item: ::protobuf::MessageField<super::Item::Item>,
+    // @@protoc_insertion_point(field:GachaItem.token_item)
+    pub token_item: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:GachaItem.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl GachaItem {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "token_item",
-            |m: &GachaItem| { &m.token_item },
-            |m: &mut GachaItem| { &mut m.token_item },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Item::Item>(
-            "gacha_item",
-            |m: &GachaItem| { &m.gacha_item },
-            |m: &mut GachaItem| { &mut m.gacha_item },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_new",
             |m: &GachaItem| { &m.is_new },
@@ -74,6 +64,16 @@ impl GachaItem {
             "transfer_item_list",
             |m: &GachaItem| { &m.transfer_item_list },
             |m: &mut GachaItem| { &mut m.transfer_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Item::Item>(
+            "gacha_item",
+            |m: &GachaItem| { &m.gacha_item },
+            |m: &mut GachaItem| { &mut m.gacha_item },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "token_item",
+            |m: &GachaItem| { &m.token_item },
+            |m: &mut GachaItem| { &mut m.token_item },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GachaItem>(
             "GachaItem",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GachaItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.token_item)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_item)?;
-                },
                 72 => {
                     self.is_new = is.read_bool()?;
                 },
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.transfer_item_list)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_item)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.token_item)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,7 +117,10 @@ impl ::protobuf::Message for GachaItem {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.token_item.as_ref() {
+        if self.is_new != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.transfer_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,10 +128,7 @@ impl ::protobuf::Message for GachaItem {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.is_new != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.transfer_item_list.as_ref() {
+        if let Some(v) = self.token_item.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GachaItem {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.token_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.gacha_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.is_new != false {
             os.write_bool(9, self.is_new)?;
         }
         if let Some(v) = self.transfer_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.gacha_item.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.token_item.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for GachaItem {
     }
 
     fn clear(&mut self) {
-        self.token_item.clear();
-        self.gacha_item.clear();
         self.is_new = false;
         self.transfer_item_list.clear();
+        self.gacha_item.clear();
+        self.token_item.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GachaItem {
         static instance: GachaItem = GachaItem {
-            token_item: ::protobuf::MessageField::none(),
-            gacha_item: ::protobuf::MessageField::none(),
             is_new: false,
             transfer_item_list: ::protobuf::MessageField::none(),
+            gacha_item: ::protobuf::MessageField::none(),
+            token_item: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for GachaItem {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fGachaItem.proto\x1a\nItem.proto\x1a\x0eItemList.proto\"\xab\x01\n\
-    \tGachaItem\x12(\n\ntoken_item\x18\r\x20\x01(\x0b2\t.ItemListR\ttokenIte\
-    m\x12$\n\ngacha_item\x18\n\x20\x01(\x0b2\x05.ItemR\tgachaItem\x12\x15\n\
-    \x06is_new\x18\t\x20\x01(\x08R\x05isNew\x127\n\x12transfer_item_list\x18\
-    \x06\x20\x01(\x0b2\t.ItemListR\x10transferItemListb\x06proto3\
+    \tGachaItem\x12\x15\n\x06is_new\x18\t\x20\x01(\x08R\x05isNew\x127\n\x12t\
+    ransfer_item_list\x18\x07\x20\x01(\x0b2\t.ItemListR\x10transferItemList\
+    \x12$\n\ngacha_item\x18\x02\x20\x01(\x0b2\x05.ItemR\tgachaItem\x12(\n\nt\
+    oken_item\x18\x0f\x20\x01(\x0b2\t.ItemListR\ttokenItemb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

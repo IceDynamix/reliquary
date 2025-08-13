@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HBLNHGANBAB {
     // message fields
-    // @@protoc_insertion_point(field:HBLNHGANBAB.JIBDGCFCDIO)
-    pub JIBDGCFCDIO: ::protobuf::MessageField<super::GJOIBMFANHL::GJOIBMFANHL>,
+    // @@protoc_insertion_point(field:HBLNHGANBAB.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
     // special fields
     // @@protoc_insertion_point(special_field:HBLNHGANBAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl HBLNHGANBAB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJOIBMFANHL::GJOIBMFANHL>(
-            "JIBDGCFCDIO",
-            |m: &HBLNHGANBAB| { &m.JIBDGCFCDIO },
-            |m: &mut HBLNHGANBAB| { &mut m.JIBDGCFCDIO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameRogueMiracle::GameRogueMiracle>(
+            "miracle_info",
+            |m: &HBLNHGANBAB| { &m.miracle_info },
+            |m: &mut HBLNHGANBAB| { &mut m.miracle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HBLNHGANBAB>(
             "HBLNHGANBAB",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HBLNHGANBAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIBDGCFCDIO)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HBLNHGANBAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JIBDGCFCDIO.as_ref() {
+        if let Some(v) = self.miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HBLNHGANBAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JIBDGCFCDIO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HBLNHGANBAB {
     }
 
     fn clear(&mut self) {
-        self.JIBDGCFCDIO.clear();
+        self.miracle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HBLNHGANBAB {
         static instance: HBLNHGANBAB = HBLNHGANBAB {
-            JIBDGCFCDIO: ::protobuf::MessageField::none(),
+            miracle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HBLNHGANBAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HBLNHGANBAB.proto\x1a\x11GJOIBMFANHL.proto\"=\n\x0bHBLNHGANBAB\x12\
-    .\n\x0bJIBDGCFCDIO\x18\x0c\x20\x01(\x0b2\x0c.GJOIBMFANHLR\x0bJIBDGCFCDIO\
-    b\x06proto3\
+    \n\x11HBLNHGANBAB.proto\x1a\x16GameRogueMiracle.proto\"C\n\x0bHBLNHGANBA\
+    B\x124\n\x0cmiracle_info\x18\x01\x20\x01(\x0b2\x11.GameRogueMiracleR\x0b\
+    miracleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GJOIBMFANHL::file_descriptor().clone());
+            deps.push(super::GameRogueMiracle::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HBLNHGANBAB::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

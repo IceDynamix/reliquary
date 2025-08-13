@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CellAdvanceInfo {
     // message oneof groups
-    pub HBPGJBBALCC: ::std::option::Option<cell_advance_info::HBPGJBBALCC>,
+    pub INBKIJDHPLP: ::std::option::Option<cell_advance_info::INBKIJDHPLP>,
     // special fields
     // @@protoc_insertion_point(special_field:CellAdvanceInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl CellAdvanceInfo {
         ::std::default::Default::default()
     }
 
-    // .CellMonsterInfo cell_boss_info = 12;
+    // .CellMonsterInfo cell_boss_info = 13;
 
     pub fn cell_boss_info(&self) -> &super::CellMonsterInfo::CellMonsterInfo {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(ref v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(ref v)) => v,
             _ => <super::CellMonsterInfo::CellMonsterInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_cell_boss_info(&mut self) {
-        self.HBPGJBBALCC = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
     }
 
     pub fn has_cell_boss_info(&self) -> bool {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(..)) => true,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_cell_boss_info(&mut self, v: super::CellMonsterInfo::CellMonsterInfo) {
-        self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(v))
+        self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_cell_boss_info(&mut self) -> &mut super::CellMonsterInfo::CellMonsterInfo {
-        if let ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(_)) = self.HBPGJBBALCC {
+        if let ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(_)) = self.INBKIJDHPLP {
         } else {
-            self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(super::CellMonsterInfo::CellMonsterInfo::new()));
+            self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(super::CellMonsterInfo::CellMonsterInfo::new()));
         }
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(ref mut v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl CellAdvanceInfo {
     // Take field
     pub fn take_cell_boss_info(&mut self) -> super::CellMonsterInfo::CellMonsterInfo {
         if self.has_cell_boss_info() {
-            match self.HBPGJBBALCC.take() {
-                ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(v)) => v,
+            match self.INBKIJDHPLP.take() {
+                ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl CellAdvanceInfo {
         }
     }
 
-    // .CellMonsterSelectInfo select_boss_info = 11;
+    // .CellMonsterSelectInfo select_boss_info = 5;
 
     pub fn select_boss_info(&self) -> &super::CellMonsterSelectInfo::CellMonsterSelectInfo {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(ref v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(ref v)) => v,
             _ => <super::CellMonsterSelectInfo::CellMonsterSelectInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_select_boss_info(&mut self) {
-        self.HBPGJBBALCC = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
     }
 
     pub fn has_select_boss_info(&self) -> bool {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(..)) => true,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_select_boss_info(&mut self, v: super::CellMonsterSelectInfo::CellMonsterSelectInfo) {
-        self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(v))
+        self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_select_boss_info(&mut self) -> &mut super::CellMonsterSelectInfo::CellMonsterSelectInfo {
-        if let ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(_)) = self.HBPGJBBALCC {
+        if let ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(_)) = self.INBKIJDHPLP {
         } else {
-            self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(super::CellMonsterSelectInfo::CellMonsterSelectInfo::new()));
+            self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(super::CellMonsterSelectInfo::CellMonsterSelectInfo::new()));
         }
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(ref mut v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl CellAdvanceInfo {
     // Take field
     pub fn take_select_boss_info(&mut self) -> super::CellMonsterSelectInfo::CellMonsterSelectInfo {
         if self.has_select_boss_info() {
-            match self.HBPGJBBALCC.take() {
-                ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(v)) => v,
+            match self.INBKIJDHPLP.take() {
+                ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -143,39 +143,39 @@ impl CellAdvanceInfo {
         }
     }
 
-    // .CellFinalMonsterInfo final_boss_info = 14;
+    // .CellFinalMonsterInfo final_boss_info = 8;
 
     pub fn final_boss_info(&self) -> &super::CellFinalMonsterInfo::CellFinalMonsterInfo {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(ref v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(ref v)) => v,
             _ => <super::CellFinalMonsterInfo::CellFinalMonsterInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_final_boss_info(&mut self) {
-        self.HBPGJBBALCC = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
     }
 
     pub fn has_final_boss_info(&self) -> bool {
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(..)) => true,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_final_boss_info(&mut self, v: super::CellFinalMonsterInfo::CellFinalMonsterInfo) {
-        self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(v))
+        self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_final_boss_info(&mut self) -> &mut super::CellFinalMonsterInfo::CellFinalMonsterInfo {
-        if let ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(_)) = self.HBPGJBBALCC {
+        if let ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(_)) = self.INBKIJDHPLP {
         } else {
-            self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(super::CellFinalMonsterInfo::CellFinalMonsterInfo::new()));
+            self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(super::CellFinalMonsterInfo::CellFinalMonsterInfo::new()));
         }
-        match self.HBPGJBBALCC {
-            ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(ref mut v)) => v,
+        match self.INBKIJDHPLP {
+            ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl CellAdvanceInfo {
     // Take field
     pub fn take_final_boss_info(&mut self) -> super::CellFinalMonsterInfo::CellFinalMonsterInfo {
         if self.has_final_boss_info() {
-            match self.HBPGJBBALCC.take() {
-                ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(v)) => v,
+            match self.INBKIJDHPLP.take() {
+                ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -216,7 +216,7 @@ impl CellAdvanceInfo {
             CellAdvanceInfo::mut_final_boss_info,
             CellAdvanceInfo::set_final_boss_info,
         ));
-        oneofs.push(cell_advance_info::HBPGJBBALCC::generated_oneof_descriptor_data());
+        oneofs.push(cell_advance_info::INBKIJDHPLP::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CellAdvanceInfo>(
             "CellAdvanceInfo",
             fields,
@@ -235,14 +235,14 @@ impl ::protobuf::Message for CellAdvanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::CellBossInfo(is.read_message()?));
+                106 => {
+                    self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(is.read_message()?));
                 },
-                90 => {
-                    self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::SelectBossInfo(is.read_message()?));
+                42 => {
+                    self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(is.read_message()?));
                 },
-                114 => {
-                    self.HBPGJBBALCC = ::std::option::Option::Some(cell_advance_info::HBPGJBBALCC::FinalBossInfo(is.read_message()?));
+                66 => {
+                    self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -256,17 +256,17 @@ impl ::protobuf::Message for CellAdvanceInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.HBPGJBBALCC {
+        if let ::std::option::Option::Some(ref v) = self.INBKIJDHPLP {
             match v {
-                &cell_advance_info::HBPGJBBALCC::CellBossInfo(ref v) => {
+                &cell_advance_info::INBKIJDHPLP::CellBossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cell_advance_info::HBPGJBBALCC::SelectBossInfo(ref v) => {
+                &cell_advance_info::INBKIJDHPLP::SelectBossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cell_advance_info::HBPGJBBALCC::FinalBossInfo(ref v) => {
+                &cell_advance_info::INBKIJDHPLP::FinalBossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -278,16 +278,16 @@ impl ::protobuf::Message for CellAdvanceInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.HBPGJBBALCC {
+        if let ::std::option::Option::Some(ref v) = self.INBKIJDHPLP {
             match v {
-                &cell_advance_info::HBPGJBBALCC::CellBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                &cell_advance_info::INBKIJDHPLP::CellBossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &cell_advance_info::HBPGJBBALCC::SelectBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &cell_advance_info::INBKIJDHPLP::SelectBossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
-                &cell_advance_info::HBPGJBBALCC::FinalBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &cell_advance_info::INBKIJDHPLP::FinalBossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -308,15 +308,15 @@ impl ::protobuf::Message for CellAdvanceInfo {
     }
 
     fn clear(&mut self) {
-        self.HBPGJBBALCC = ::std::option::Option::None;
-        self.HBPGJBBALCC = ::std::option::Option::None;
-        self.HBPGJBBALCC = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
+        self.INBKIJDHPLP = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CellAdvanceInfo {
         static instance: CellAdvanceInfo = CellAdvanceInfo {
-            HBPGJBBALCC: ::std::option::Option::None,
+            INBKIJDHPLP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -345,8 +345,8 @@ pub mod cell_advance_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CellAdvanceInfo.HBPGJBBALCC)
-    pub enum HBPGJBBALCC {
+    // @@protoc_insertion_point(oneof:CellAdvanceInfo.INBKIJDHPLP)
+    pub enum INBKIJDHPLP {
         // @@protoc_insertion_point(oneof_field:CellAdvanceInfo.cell_boss_info)
         CellBossInfo(super::super::CellMonsterInfo::CellMonsterInfo),
         // @@protoc_insertion_point(oneof_field:CellAdvanceInfo.select_boss_info)
@@ -355,19 +355,19 @@ pub mod cell_advance_info {
         FinalBossInfo(super::super::CellFinalMonsterInfo::CellFinalMonsterInfo),
     }
 
-    impl ::protobuf::Oneof for HBPGJBBALCC {
+    impl ::protobuf::Oneof for INBKIJDHPLP {
     }
 
-    impl ::protobuf::OneofFull for HBPGJBBALCC {
+    impl ::protobuf::OneofFull for INBKIJDHPLP {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CellAdvanceInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("HBPGJBBALCC").unwrap()).clone()
+            descriptor.get(|| <super::CellAdvanceInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("INBKIJDHPLP").unwrap()).clone()
         }
     }
 
-    impl HBPGJBBALCC {
+    impl INBKIJDHPLP {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HBPGJBBALCC>("HBPGJBBALCC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<INBKIJDHPLP>("INBKIJDHPLP")
         }
     }
 }
@@ -375,11 +375,11 @@ pub mod cell_advance_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CellAdvanceInfo.proto\x1a\x1aCellFinalMonsterInfo.proto\x1a\x15Cel\
     lMonsterInfo.proto\x1a\x1bCellMonsterSelectInfo.proto\"\xdf\x01\n\x0fCel\
-    lAdvanceInfo\x128\n\x0ecell_boss_info\x18\x0c\x20\x01(\x0b2\x10.CellMons\
-    terInfoH\0R\x0ccellBossInfo\x12B\n\x10select_boss_info\x18\x0b\x20\x01(\
+    lAdvanceInfo\x128\n\x0ecell_boss_info\x18\r\x20\x01(\x0b2\x10.CellMonste\
+    rInfoH\0R\x0ccellBossInfo\x12B\n\x10select_boss_info\x18\x05\x20\x01(\
     \x0b2\x16.CellMonsterSelectInfoH\0R\x0eselectBossInfo\x12?\n\x0ffinal_bo\
-    ss_info\x18\x0e\x20\x01(\x0b2\x15.CellFinalMonsterInfoH\0R\rfinalBossInf\
-    oB\r\n\x0bHBPGJBBALCCb\x06proto3\
+    ss_info\x18\x08\x20\x01(\x0b2\x15.CellFinalMonsterInfoH\0R\rfinalBossInf\
+    oB\r\n\x0bINBKIJDHPLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

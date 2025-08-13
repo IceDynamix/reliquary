@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBOMDFHFFCF)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.LBOMDFHFFCF.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.LBOMDFHFFCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandResetHandPosScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SwitchHandResetHandPosScRsp.proto\x1a\x0eHandInfo.proto\"d\n\x1bSwitc\
-    hHandResetHandPosScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retco\
-    de\x12+\n\x0bLBOMDFHFFCF\x18\x0c\x20\x01(\x0b2\t.HandInfoR\x0bLBOMDFHFFC\
+    hHandResetHandPosScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
+    de\x12+\n\x0bLBOMDFHFFCF\x18\x04\x20\x01(\x0b2\t.HandInfoR\x0bLBOMDFHFFC\
     Fb\x06proto3\
 ";
 

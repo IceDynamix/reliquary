@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIAOLBGOAAG {
     // message fields
-    // @@protoc_insertion_point(field:OIAOLBGOAAG.NOAEDNNIBAF)
-    pub NOAEDNNIBAF: ::protobuf::MessageField<super::RogueSyncContextBoardEvent::RogueSyncContextBoardEvent>,
     // @@protoc_insertion_point(field:OIAOLBGOAAG.HHPHLEGCLDM)
     pub HHPHLEGCLDM: ::protobuf::MessageField<super::CFELLCPMONH::CFELLCPMONH>,
+    // @@protoc_insertion_point(field:OIAOLBGOAAG.NOAEDNNIBAF)
+    pub NOAEDNNIBAF: ::protobuf::MessageField<super::DDJHDEHMHCF::DDJHDEHMHCF>,
     // special fields
     // @@protoc_insertion_point(special_field:OIAOLBGOAAG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OIAOLBGOAAG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueSyncContextBoardEvent::RogueSyncContextBoardEvent>(
-            "NOAEDNNIBAF",
-            |m: &OIAOLBGOAAG| { &m.NOAEDNNIBAF },
-            |m: &mut OIAOLBGOAAG| { &mut m.NOAEDNNIBAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFELLCPMONH::CFELLCPMONH>(
             "HHPHLEGCLDM",
             |m: &OIAOLBGOAAG| { &m.HHPHLEGCLDM },
             |m: &mut OIAOLBGOAAG| { &mut m.HHPHLEGCLDM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDJHDEHMHCF::DDJHDEHMHCF>(
+            "NOAEDNNIBAF",
+            |m: &OIAOLBGOAAG| { &m.NOAEDNNIBAF },
+            |m: &mut OIAOLBGOAAG| { &mut m.NOAEDNNIBAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIAOLBGOAAG>(
             "OIAOLBGOAAG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOAEDNNIBAF)?;
-                },
-                106 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHPHLEGCLDM)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOAEDNNIBAF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
+        if let Some(v) = self.HHPHLEGCLDM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.HHPHLEGCLDM.as_ref() {
+        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if let Some(v) = self.HHPHLEGCLDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     }
 
     fn clear(&mut self) {
-        self.NOAEDNNIBAF.clear();
         self.HHPHLEGCLDM.clear();
+        self.NOAEDNNIBAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIAOLBGOAAG {
         static instance: OIAOLBGOAAG = OIAOLBGOAAG {
-            NOAEDNNIBAF: ::protobuf::MessageField::none(),
             HHPHLEGCLDM: ::protobuf::MessageField::none(),
+            NOAEDNNIBAF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for OIAOLBGOAAG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OIAOLBGOAAG.proto\x1a\x11CFELLCPMONH.proto\x1a\x20RogueSyncContext\
-    BoardEvent.proto\"|\n\x0bOIAOLBGOAAG\x12=\n\x0bNOAEDNNIBAF\x18\x04\x20\
-    \x01(\x0b2\x1b.RogueSyncContextBoardEventR\x0bNOAEDNNIBAF\x12.\n\x0bHHPH\
-    LEGCLDM\x18\r\x20\x01(\x0b2\x0c.CFELLCPMONHR\x0bHHPHLEGCLDMb\x06proto3\
+    \n\x11OIAOLBGOAAG.proto\x1a\x11CFELLCPMONH.proto\x1a\x11DDJHDEHMHCF.prot\
+    o\"m\n\x0bOIAOLBGOAAG\x12.\n\x0bHHPHLEGCLDM\x18\x0c\x20\x01(\x0b2\x0c.CF\
+    ELLCPMONHR\x0bHHPHLEGCLDM\x12.\n\x0bNOAEDNNIBAF\x18\n\x20\x01(\x0b2\x0c.\
+    DDJHDEHMHCFR\x0bNOAEDNNIBAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,7 +189,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::CFELLCPMONH::file_descriptor().clone());
-            deps.push(super::RogueSyncContextBoardEvent::file_descriptor().clone());
+            deps.push(super::DDJHDEHMHCF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OIAOLBGOAAG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

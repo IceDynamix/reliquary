@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SyncRogueRewardInfoScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncRogueRewardInfoScNotify.rogue_score_reward_info)
-    pub rogue_score_reward_info: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
+    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueRewardInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl SyncRogueRewardInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGHCOGEPIDM::HGHCOGEPIDM>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
             "rogue_score_reward_info",
             |m: &SyncRogueRewardInfoScNotify| { &m.rogue_score_reward_info },
             |m: &mut SyncRogueRewardInfoScNotify| { &mut m.rogue_score_reward_info },
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueRewardInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SyncRogueRewardInfoScNotify.proto\x1a\x11HGHCOGEPIDM.proto\"b\n\x1bSy\
-    ncRogueRewardInfoScNotify\x12C\n\x17rogue_score_reward_info\x18\r\x20\
-    \x01(\x0b2\x0c.HGHCOGEPIDMR\x14rogueScoreRewardInfob\x06proto3\
+    \n!SyncRogueRewardInfoScNotify.proto\x1a\x1aRogueScoreRewardInfo.proto\"\
+    k\n\x1bSyncRogueRewardInfoScNotify\x12L\n\x17rogue_score_reward_info\x18\
+    \r\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x14rogueScoreRewardInfob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HGHCOGEPIDM::file_descriptor().clone());
+            deps.push(super::RogueScoreRewardInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueRewardInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

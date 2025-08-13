@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::HFIPPDGGJOL::HFIPPDGGJOL>,
     // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicEnterRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicEnterRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFIPPDGGJOL::HFIPPDGGJOL>(
-            "LCOCLENJJAI",
-            |m: &RogueMagicEnterRoomScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueMagicEnterRoomScRsp| { &mut m.LCOCLENJJAI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicEnterRoomScRsp| { &m.retcode },
             |m: &mut RogueMagicEnterRoomScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueMagicEnterRoomScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueMagicEnterRoomScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicEnterRoomScRsp>(
             "RogueMagicEnterRoomScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
-                },
-                24 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.LCOCLENJJAI.clear();
         self.retcode = 0;
+        self.rogue_tourn_cur_scene_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterRoomScRsp {
         static instance: RogueMagicEnterRoomScRsp = RogueMagicEnterRoomScRsp {
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
             retcode: 0,
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueMagicEnterRoomScRsp.proto\x1a\x11HFIPPDGGJOL.proto\"d\n\x18Ro\
-    gueMagicEnterRoomScRsp\x12.\n\x0bLCOCLENJJAI\x18\x06\x20\x01(\x0b2\x0c.H\
-    FIPPDGGJOLR\x0bLCOCLENJJAI\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x1eRogueMagicEnterRoomScRsp.proto\x1a\x1cRogueMagicCurSceneInfo.proto\
+    \"\x89\x01\n\x18RogueMagicEnterRoomScRsp\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcode\x12S\n\x1arogue_tourn_cur_scene_info\x18\x0e\x20\
+    \x01(\x0b2\x17.RogueMagicCurSceneInfoR\x16rogueTournCurSceneInfob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HFIPPDGGJOL::file_descriptor().clone());
+            deps.push(super::RogueMagicCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicEnterRoomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

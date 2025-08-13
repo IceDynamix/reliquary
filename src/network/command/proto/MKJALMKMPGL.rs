@@ -72,7 +72,7 @@ impl ::protobuf::Message for MKJALMKMPGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                114 => {
                     self.BFDMGINBOIB.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MKJALMKMPGL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BFDMGINBOIB {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MKJALMKMPGL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MKJALMKMPGL.proto\x1a\x11OFNGPLJKLOJ.proto\"=\n\x0bMKJALMKMPGL\x12\
-    .\n\x0bBFDMGINBOIB\x18\x02\x20\x03(\x0b2\x0c.OFNGPLJKLOJR\x0bBFDMGINBOIB\
+    .\n\x0bBFDMGINBOIB\x18\x0e\x20\x03(\x0b2\x0c.OFNGPLJKLOJR\x0bBFDMGINBOIB\
     b\x06proto3\
 ";
 

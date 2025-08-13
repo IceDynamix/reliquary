@@ -33,6 +33,8 @@ pub enum CHEHBBADKBG {
     BATTLE_CHECK_STRATEGY_SERVER = 1,
     // @@protoc_insertion_point(enum_value:CHEHBBADKBG.BATTLE_CHECK_STRATEGY_CLIENT)
     BATTLE_CHECK_STRATEGY_CLIENT = 2,
+    // @@protoc_insertion_point(enum_value:CHEHBBADKBG.BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL)
+    BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL = 3,
 }
 
 impl ::protobuf::Enum for CHEHBBADKBG {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for CHEHBBADKBG {
             0 => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL),
             1 => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_SERVER),
             2 => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_CLIENT),
+            3 => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for CHEHBBADKBG {
             "BATTLE_CHECK_STRATEGY_IDENTICAL" => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL),
             "BATTLE_CHECK_STRATEGY_SERVER" => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_SERVER),
             "BATTLE_CHECK_STRATEGY_CLIENT" => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_CLIENT),
+            "BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL" => ::std::option::Option::Some(CHEHBBADKBG::BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for CHEHBBADKBG {
         CHEHBBADKBG::BATTLE_CHECK_STRATEGY_IDENTICAL,
         CHEHBBADKBG::BATTLE_CHECK_STRATEGY_SERVER,
         CHEHBBADKBG::BATTLE_CHECK_STRATEGY_CLIENT,
+        CHEHBBADKBG::BATTLE_CHECK_STRATEGY_TIMEOUT_LEGAL,
     ];
 }
 
@@ -92,9 +97,10 @@ impl CHEHBBADKBG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CHEHBBADKBG.proto*v\n\x0bCHEHBBADKBG\x12#\n\x1fBATTLE_CHECK_STRATE\
-    GY_IDENTICAL\x10\0\x12\x20\n\x1cBATTLE_CHECK_STRATEGY_SERVER\x10\x01\x12\
-    \x20\n\x1cBATTLE_CHECK_STRATEGY_CLIENT\x10\x02b\x06proto3\
+    \n\x11CHEHBBADKBG.proto*\x9f\x01\n\x0bCHEHBBADKBG\x12#\n\x1fBATTLE_CHECK\
+    _STRATEGY_IDENTICAL\x10\0\x12\x20\n\x1cBATTLE_CHECK_STRATEGY_SERVER\x10\
+    \x01\x12\x20\n\x1cBATTLE_CHECK_STRATEGY_CLIENT\x10\x02\x12'\n#BATTLE_CHE\
+    CK_STRATEGY_TIMEOUT_LEGAL\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

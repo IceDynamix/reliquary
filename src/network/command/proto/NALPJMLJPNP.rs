@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NALPJMLJPNP {
     // message fields
-    // @@protoc_insertion_point(field:NALPJMLJPNP.IEEJCHFEPHA)
-    pub IEEJCHFEPHA: u32,
+    // @@protoc_insertion_point(field:NALPJMLJPNP.get_item_list)
+    pub get_item_list: u32,
     // @@protoc_insertion_point(field:NALPJMLJPNP.OEFHMBJBLGC)
     pub OEFHMBJBLGC: u32,
     // special fields
@@ -52,9 +52,9 @@ impl NALPJMLJPNP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEEJCHFEPHA",
-            |m: &NALPJMLJPNP| { &m.IEEJCHFEPHA },
-            |m: &mut NALPJMLJPNP| { &mut m.IEEJCHFEPHA },
+            "get_item_list",
+            |m: &NALPJMLJPNP| { &m.get_item_list },
+            |m: &mut NALPJMLJPNP| { &mut m.get_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OEFHMBJBLGC",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for NALPJMLJPNP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.IEEJCHFEPHA = is.read_uint32()?;
+                    self.get_item_list = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
                     self.OEFHMBJBLGC = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NALPJMLJPNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEEJCHFEPHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IEEJCHFEPHA);
+        if self.get_item_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.get_item_list);
         }
         if self.OEFHMBJBLGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OEFHMBJBLGC);
+            my_size += ::protobuf::rt::uint32_size(4, self.OEFHMBJBLGC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NALPJMLJPNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEEJCHFEPHA != 0 {
-            os.write_uint32(5, self.IEEJCHFEPHA)?;
+        if self.get_item_list != 0 {
+            os.write_uint32(5, self.get_item_list)?;
         }
         if self.OEFHMBJBLGC != 0 {
-            os.write_uint32(8, self.OEFHMBJBLGC)?;
+            os.write_uint32(4, self.OEFHMBJBLGC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for NALPJMLJPNP {
     }
 
     fn clear(&mut self) {
-        self.IEEJCHFEPHA = 0;
+        self.get_item_list = 0;
         self.OEFHMBJBLGC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NALPJMLJPNP {
         static instance: NALPJMLJPNP = NALPJMLJPNP {
-            IEEJCHFEPHA: 0,
+            get_item_list: 0,
             OEFHMBJBLGC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for NALPJMLJPNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NALPJMLJPNP.proto\"Q\n\x0bNALPJMLJPNP\x12\x20\n\x0bIEEJCHFEPHA\x18\
-    \x05\x20\x01(\rR\x0bIEEJCHFEPHA\x12\x20\n\x0bOEFHMBJBLGC\x18\x08\x20\x01\
+    \n\x11NALPJMLJPNP.proto\"S\n\x0bNALPJMLJPNP\x12\"\n\rget_item_list\x18\
+    \x05\x20\x01(\rR\x0bgetItemList\x12\x20\n\x0bOEFHMBJBLGC\x18\x04\x20\x01\
     (\rR\x0bOEFHMBJBLGCb\x06proto3\
 ";
 

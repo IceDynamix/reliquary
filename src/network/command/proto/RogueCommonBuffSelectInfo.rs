@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonBuffSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.IGCHBPAKBCB)
-    pub IGCHBPAKBCB: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.CKKEKMJMABC)
-    pub CKKEKMJMABC: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.EKFLPNLAPDF)
-    pub EKFLPNLAPDF: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.KKHDLJFOHKC)
-    pub KKHDLJFOHKC: ::std::vec::Vec<super::FFAMNKOAIHF::FFAMNKOAIHF>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.DJFCKFEMGOJ)
-    pub DJFCKFEMGOJ: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.PDIHILCLENM)
-    pub PDIHILCLENM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.FPOELPFCNBI)
-    pub FPOELPFCNBI: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.PDAPEHEAMBM)
-    pub PDAPEHEAMBM: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.CPIAAHJFIGL)
-    pub CPIAAHJFIGL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.EHPMCGOELGB)
-    pub EHPMCGOELGB: bool,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.CMOGBLHAFHN)
-    pub CMOGBLHAFHN: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.BHEIDPPFCKA)
-    pub BHEIDPPFCKA: u32,
-    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.HHMABJDIMGM)
-    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.certain_select_buff_id)
+    pub certain_select_buff_id: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_type)
+    pub source_type: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.handbook_unlock_buff_id_list)
+    pub handbook_unlock_buff_id_list: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_total_count)
+    pub source_total_count: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.first_buff_type_list)
+    pub first_buff_type_list: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.can_rolls)
+    pub can_rolls: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_hint_id)
+    pub source_hint_id: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.can_roll)
+    pub can_roll: bool,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.source_cur_count)
+    pub source_cur_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.select_buff_list)
+    pub select_buff_list: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_max_count)
+    pub roll_buff_max_count: u32,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.roll_buff_cost_data)
+    pub roll_buff_cost_data: ::std::vec::Vec<super::RogueCommonBuff::RogueCommonBuff>,
+    // @@protoc_insertion_point(field:RogueCommonBuffSelectInfo.modifier_source_type)
+    pub modifier_source_type: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonBuffSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,70 +73,70 @@ impl RogueCommonBuffSelectInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGCHBPAKBCB",
-            |m: &RogueCommonBuffSelectInfo| { &m.IGCHBPAKBCB },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.IGCHBPAKBCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKKEKMJMABC",
-            |m: &RogueCommonBuffSelectInfo| { &m.CKKEKMJMABC },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.CKKEKMJMABC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKFLPNLAPDF",
-            |m: &RogueCommonBuffSelectInfo| { &m.EKFLPNLAPDF },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.EKFLPNLAPDF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKHDLJFOHKC",
-            |m: &RogueCommonBuffSelectInfo| { &m.KKHDLJFOHKC },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.KKHDLJFOHKC },
+            "certain_select_buff_id",
+            |m: &RogueCommonBuffSelectInfo| { &m.certain_select_buff_id },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.certain_select_buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFCKFEMGOJ",
-            |m: &RogueCommonBuffSelectInfo| { &m.DJFCKFEMGOJ },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.DJFCKFEMGOJ },
+            "source_type",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_type },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_type },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PDIHILCLENM",
-            |m: &RogueCommonBuffSelectInfo| { &m.PDIHILCLENM },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.PDIHILCLENM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "handbook_unlock_buff_id_list",
+            |m: &RogueCommonBuffSelectInfo| { &m.handbook_unlock_buff_id_list },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.handbook_unlock_buff_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "FPOELPFCNBI",
-            |m: &RogueCommonBuffSelectInfo| { &m.FPOELPFCNBI },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.FPOELPFCNBI },
+            "source_total_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_total_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_total_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDAPEHEAMBM",
-            |m: &RogueCommonBuffSelectInfo| { &m.PDAPEHEAMBM },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.PDAPEHEAMBM },
+            "first_buff_type_list",
+            |m: &RogueCommonBuffSelectInfo| { &m.first_buff_type_list },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.first_buff_type_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CPIAAHJFIGL",
-            |m: &RogueCommonBuffSelectInfo| { &m.CPIAAHJFIGL },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.CPIAAHJFIGL },
+            "can_rolls",
+            |m: &RogueCommonBuffSelectInfo| { &m.can_rolls },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.can_rolls },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHPMCGOELGB",
-            |m: &RogueCommonBuffSelectInfo| { &m.EHPMCGOELGB },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.EHPMCGOELGB },
+            "source_hint_id",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_hint_id },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_hint_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMOGBLHAFHN",
-            |m: &RogueCommonBuffSelectInfo| { &m.CMOGBLHAFHN },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.CMOGBLHAFHN },
+            "can_roll",
+            |m: &RogueCommonBuffSelectInfo| { &m.can_roll },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.can_roll },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHEIDPPFCKA",
-            |m: &RogueCommonBuffSelectInfo| { &m.BHEIDPPFCKA },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.BHEIDPPFCKA },
+            "source_cur_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.source_cur_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.source_cur_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHMABJDIMGM",
-            |m: &RogueCommonBuffSelectInfo| { &m.HHMABJDIMGM },
-            |m: &mut RogueCommonBuffSelectInfo| { &mut m.HHMABJDIMGM },
+            "select_buff_list",
+            |m: &RogueCommonBuffSelectInfo| { &m.select_buff_list },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.select_buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "roll_buff_max_count",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_max_count },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_max_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "roll_buff_cost_data",
+            |m: &RogueCommonBuffSelectInfo| { &m.roll_buff_cost_data },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.roll_buff_cost_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "modifier_source_type",
+            |m: &RogueCommonBuffSelectInfo| { &m.modifier_source_type },
+            |m: &mut RogueCommonBuffSelectInfo| { &mut m.modifier_source_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonBuffSelectInfo>(
             "RogueCommonBuffSelectInfo",
@@ -156,50 +156,50 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IGCHBPAKBCB = is.read_uint32()?;
-                },
-                88 => {
-                    self.CKKEKMJMABC = is.read_uint32()?;
-                },
-                24 => {
-                    self.EKFLPNLAPDF = is.read_uint32()?;
-                },
-                74 => {
-                    self.KKHDLJFOHKC.push(is.read_message()?);
-                },
-                120 => {
-                    self.DJFCKFEMGOJ = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PDIHILCLENM)?;
-                },
-                96 => {
-                    self.PDIHILCLENM.push(is.read_uint32()?);
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPOELPFCNBI)?;
-                },
-                48 => {
-                    self.PDAPEHEAMBM = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CPIAAHJFIGL)?;
-                },
-                80 => {
-                    self.CPIAAHJFIGL.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.EHPMCGOELGB = is.read_bool()?;
-                },
-                112 => {
-                    self.CMOGBLHAFHN = is.read_uint32()?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.certain_select_buff_id)?;
                 },
                 16 => {
-                    self.BHEIDPPFCKA = is.read_uint32()?;
+                    self.certain_select_buff_id.push(is.read_uint32()?);
+                },
+                40 => {
+                    self.source_type = is.read_uint32()?;
+                },
+                8 => {
+                    self.handbook_unlock_buff_id_list = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source_total_count)?;
+                },
+                64 => {
+                    self.first_buff_type_list = is.read_uint32()?;
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.can_rolls)?;
+                },
+                80 => {
+                    self.can_rolls.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.source_hint_id = is.read_uint32()?;
                 },
                 104 => {
-                    self.HHMABJDIMGM = is.read_enum_or_unknown()?;
+                    self.can_roll = is.read_bool()?;
+                },
+                24 => {
+                    self.source_cur_count = is.read_uint32()?;
+                },
+                96 => {
+                    self.select_buff_list = is.read_uint32()?;
+                },
+                120 => {
+                    self.roll_buff_max_count = is.read_uint32()?;
+                },
+                74 => {
+                    self.roll_buff_cost_data.push(is.read_message()?);
+                },
+                88 => {
+                    self.modifier_source_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -213,42 +213,42 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IGCHBPAKBCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGCHBPAKBCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.certain_select_buff_id);
+        if self.source_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.source_type);
         }
-        if self.CKKEKMJMABC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CKKEKMJMABC);
+        if self.handbook_unlock_buff_id_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.handbook_unlock_buff_id_list);
         }
-        if self.EKFLPNLAPDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EKFLPNLAPDF);
-        }
-        for value in &self.KKHDLJFOHKC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.DJFCKFEMGOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DJFCKFEMGOJ);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.PDIHILCLENM);
-        if let Some(v) = self.FPOELPFCNBI.as_ref() {
+        if let Some(v) = self.source_total_count.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PDAPEHEAMBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PDAPEHEAMBM);
+        if self.first_buff_type_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.first_buff_type_list);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CPIAAHJFIGL);
-        if self.EHPMCGOELGB != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.can_rolls);
+        if self.source_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.source_hint_id);
+        }
+        if self.can_roll != false {
             my_size += 1 + 1;
         }
-        if self.CMOGBLHAFHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CMOGBLHAFHN);
+        if self.source_cur_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.source_cur_count);
         }
-        if self.BHEIDPPFCKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BHEIDPPFCKA);
+        if self.select_buff_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.select_buff_list);
         }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.HHMABJDIMGM.value());
+        if self.roll_buff_max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.roll_buff_max_count);
+        }
+        for value in &self.roll_buff_cost_data {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(11, self.modifier_source_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -256,40 +256,40 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IGCHBPAKBCB != 0 {
-            os.write_uint32(5, self.IGCHBPAKBCB)?;
+        os.write_repeated_packed_uint32(2, &self.certain_select_buff_id)?;
+        if self.source_type != 0 {
+            os.write_uint32(5, self.source_type)?;
         }
-        if self.CKKEKMJMABC != 0 {
-            os.write_uint32(11, self.CKKEKMJMABC)?;
+        if self.handbook_unlock_buff_id_list != 0 {
+            os.write_uint32(1, self.handbook_unlock_buff_id_list)?;
         }
-        if self.EKFLPNLAPDF != 0 {
-            os.write_uint32(3, self.EKFLPNLAPDF)?;
+        if let Some(v) = self.source_total_count.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        for v in &self.KKHDLJFOHKC {
+        if self.first_buff_type_list != 0 {
+            os.write_uint32(8, self.first_buff_type_list)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.can_rolls)?;
+        if self.source_hint_id != 0 {
+            os.write_uint32(7, self.source_hint_id)?;
+        }
+        if self.can_roll != false {
+            os.write_bool(13, self.can_roll)?;
+        }
+        if self.source_cur_count != 0 {
+            os.write_uint32(3, self.source_cur_count)?;
+        }
+        if self.select_buff_list != 0 {
+            os.write_uint32(12, self.select_buff_list)?;
+        }
+        if self.roll_buff_max_count != 0 {
+            os.write_uint32(15, self.roll_buff_max_count)?;
+        }
+        for v in &self.roll_buff_cost_data {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.DJFCKFEMGOJ != 0 {
-            os.write_uint32(15, self.DJFCKFEMGOJ)?;
-        }
-        os.write_repeated_packed_uint32(12, &self.PDIHILCLENM)?;
-        if let Some(v) = self.FPOELPFCNBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.PDAPEHEAMBM != 0 {
-            os.write_uint32(6, self.PDAPEHEAMBM)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.CPIAAHJFIGL)?;
-        if self.EHPMCGOELGB != false {
-            os.write_bool(1, self.EHPMCGOELGB)?;
-        }
-        if self.CMOGBLHAFHN != 0 {
-            os.write_uint32(14, self.CMOGBLHAFHN)?;
-        }
-        if self.BHEIDPPFCKA != 0 {
-            os.write_uint32(2, self.BHEIDPPFCKA)?;
-        }
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -308,37 +308,37 @@ impl ::protobuf::Message for RogueCommonBuffSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.IGCHBPAKBCB = 0;
-        self.CKKEKMJMABC = 0;
-        self.EKFLPNLAPDF = 0;
-        self.KKHDLJFOHKC.clear();
-        self.DJFCKFEMGOJ = 0;
-        self.PDIHILCLENM.clear();
-        self.FPOELPFCNBI.clear();
-        self.PDAPEHEAMBM = 0;
-        self.CPIAAHJFIGL.clear();
-        self.EHPMCGOELGB = false;
-        self.CMOGBLHAFHN = 0;
-        self.BHEIDPPFCKA = 0;
-        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
+        self.certain_select_buff_id.clear();
+        self.source_type = 0;
+        self.handbook_unlock_buff_id_list = 0;
+        self.source_total_count.clear();
+        self.first_buff_type_list = 0;
+        self.can_rolls.clear();
+        self.source_hint_id = 0;
+        self.can_roll = false;
+        self.source_cur_count = 0;
+        self.select_buff_list = 0;
+        self.roll_buff_max_count = 0;
+        self.roll_buff_cost_data.clear();
+        self.modifier_source_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonBuffSelectInfo {
         static instance: RogueCommonBuffSelectInfo = RogueCommonBuffSelectInfo {
-            IGCHBPAKBCB: 0,
-            CKKEKMJMABC: 0,
-            EKFLPNLAPDF: 0,
-            KKHDLJFOHKC: ::std::vec::Vec::new(),
-            DJFCKFEMGOJ: 0,
-            PDIHILCLENM: ::std::vec::Vec::new(),
-            FPOELPFCNBI: ::protobuf::MessageField::none(),
-            PDAPEHEAMBM: 0,
-            CPIAAHJFIGL: ::std::vec::Vec::new(),
-            EHPMCGOELGB: false,
-            CMOGBLHAFHN: 0,
-            BHEIDPPFCKA: 0,
-            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
+            certain_select_buff_id: ::std::vec::Vec::new(),
+            source_type: 0,
+            handbook_unlock_buff_id_list: 0,
+            source_total_count: ::protobuf::MessageField::none(),
+            first_buff_type_list: 0,
+            can_rolls: ::std::vec::Vec::new(),
+            source_hint_id: 0,
+            can_roll: false,
+            source_cur_count: 0,
+            select_buff_list: 0,
+            roll_buff_max_count: 0,
+            roll_buff_cost_data: ::std::vec::Vec::new(),
+            modifier_source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -363,21 +363,22 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonBuffSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueCommonBuffSelectInfo.proto\x1a\x11FFAMNKOAIHF.proto\x1a\x12It\
-    emCostData.proto\x1a%RogueCommonBuffSelectSourceType.proto\"\x94\x04\n\
-    \x19RogueCommonBuffSelectInfo\x12\x20\n\x0bIGCHBPAKBCB\x18\x05\x20\x01(\
-    \rR\x0bIGCHBPAKBCB\x12\x20\n\x0bCKKEKMJMABC\x18\x0b\x20\x01(\rR\x0bCKKEK\
-    MJMABC\x12\x20\n\x0bEKFLPNLAPDF\x18\x03\x20\x01(\rR\x0bEKFLPNLAPDF\x12.\
-    \n\x0bKKHDLJFOHKC\x18\t\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\x0bKKHDLJFOHKC\
-    \x12\x20\n\x0bDJFCKFEMGOJ\x18\x0f\x20\x01(\rR\x0bDJFCKFEMGOJ\x12\x20\n\
-    \x0bPDIHILCLENM\x18\x0c\x20\x03(\rR\x0bPDIHILCLENM\x12/\n\x0bFPOELPFCNBI\
-    \x18\x08\x20\x01(\x0b2\r.ItemCostDataR\x0bFPOELPFCNBI\x12\x20\n\x0bPDAPE\
-    HEAMBM\x18\x06\x20\x01(\rR\x0bPDAPEHEAMBM\x12\x20\n\x0bCPIAAHJFIGL\x18\n\
-    \x20\x03(\rR\x0bCPIAAHJFIGL\x12\x20\n\x0bEHPMCGOELGB\x18\x01\x20\x01(\
-    \x08R\x0bEHPMCGOELGB\x12\x20\n\x0bCMOGBLHAFHN\x18\x0e\x20\x01(\rR\x0bCMO\
-    GBLHAFHN\x12\x20\n\x0bBHEIDPPFCKA\x18\x02\x20\x01(\rR\x0bBHEIDPPFCKA\x12\
-    B\n\x0bHHMABJDIMGM\x18\r\x20\x01(\x0e2\x20.RogueCommonBuffSelectSourceTy\
-    peR\x0bHHMABJDIMGMb\x06proto3\
+    \n\x1fRogueCommonBuffSelectInfo.proto\x1a\x12ItemCostData.proto\x1a\x15R\
+    ogueCommonBuff.proto\x1a%RogueCommonBuffSelectSourceType.proto\"\x95\x05\
+    \n\x19RogueCommonBuffSelectInfo\x123\n\x16certain_select_buff_id\x18\x02\
+    \x20\x03(\rR\x13certainSelectBuffId\x12\x1f\n\x0bsource_type\x18\x05\x20\
+    \x01(\rR\nsourceType\x12>\n\x1chandbook_unlock_buff_id_list\x18\x01\x20\
+    \x01(\rR\x18handbookUnlockBuffIdList\x12;\n\x12source_total_count\x18\
+    \x04\x20\x01(\x0b2\r.ItemCostDataR\x10sourceTotalCount\x12/\n\x14first_b\
+    uff_type_list\x18\x08\x20\x01(\rR\x11firstBuffTypeList\x12\x1b\n\tcan_ro\
+    lls\x18\n\x20\x03(\rR\x08canRolls\x12$\n\x0esource_hint_id\x18\x07\x20\
+    \x01(\rR\x0csourceHintId\x12\x19\n\x08can_roll\x18\r\x20\x01(\x08R\x07ca\
+    nRoll\x12(\n\x10source_cur_count\x18\x03\x20\x01(\rR\x0esourceCurCount\
+    \x12(\n\x10select_buff_list\x18\x0c\x20\x01(\rR\x0eselectBuffList\x12-\n\
+    \x13roll_buff_max_count\x18\x0f\x20\x01(\rR\x10rollBuffMaxCount\x12?\n\
+    \x13roll_buff_cost_data\x18\t\x20\x03(\x0b2\x10.RogueCommonBuffR\x10roll\
+    BuffCostData\x12R\n\x14modifier_source_type\x18\x0b\x20\x01(\x0e2\x20.Ro\
+    gueCommonBuffSelectSourceTypeR\x12modifierSourceTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -395,8 +396,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::FFAMNKOAIHF::file_descriptor().clone());
             deps.push(super::ItemCostData::file_descriptor().clone());
+            deps.push(super::RogueCommonBuff::file_descriptor().clone());
             deps.push(super::RogueCommonBuffSelectSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueCommonBuffSelectInfo::generated_message_descriptor_data());

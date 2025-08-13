@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChatEmojiCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MarkChatEmojiCsReq.extra_id)
-    pub extra_id: u32,
     // @@protoc_insertion_point(field:MarkChatEmojiCsReq.is_remove_id)
     pub is_remove_id: bool,
+    // @@protoc_insertion_point(field:MarkChatEmojiCsReq.extra_id)
+    pub extra_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MarkChatEmojiCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MarkChatEmojiCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_id",
-            |m: &MarkChatEmojiCsReq| { &m.extra_id },
-            |m: &mut MarkChatEmojiCsReq| { &mut m.extra_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_remove_id",
             |m: &MarkChatEmojiCsReq| { &m.is_remove_id },
             |m: &mut MarkChatEmojiCsReq| { &mut m.is_remove_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_id",
+            |m: &MarkChatEmojiCsReq| { &m.extra_id },
+            |m: &mut MarkChatEmojiCsReq| { &mut m.extra_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkChatEmojiCsReq>(
             "MarkChatEmojiCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.is_remove_id = is.read_bool()?;
+                },
                 88 => {
                     self.extra_id = is.read_uint32()?;
-                },
-                120 => {
-                    self.is_remove_id = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.extra_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.extra_id);
-        }
         if self.is_remove_id != false {
             my_size += 1 + 1;
+        }
+        if self.extra_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.extra_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_remove_id != false {
+            os.write_bool(2, self.is_remove_id)?;
+        }
         if self.extra_id != 0 {
             os.write_uint32(11, self.extra_id)?;
-        }
-        if self.is_remove_id != false {
-            os.write_bool(15, self.is_remove_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     }
 
     fn clear(&mut self) {
-        self.extra_id = 0;
         self.is_remove_id = false;
+        self.extra_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChatEmojiCsReq {
         static instance: MarkChatEmojiCsReq = MarkChatEmojiCsReq {
-            extra_id: 0,
             is_remove_id: false,
+            extra_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkChatEmojiCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarkChatEmojiCsReq.proto\"Q\n\x12MarkChatEmojiCsReq\x12\x19\n\x08e\
-    xtra_id\x18\x0b\x20\x01(\rR\x07extraId\x12\x20\n\x0cis_remove_id\x18\x0f\
-    \x20\x01(\x08R\nisRemoveIdb\x06proto3\
+    \n\x18MarkChatEmojiCsReq.proto\"Q\n\x12MarkChatEmojiCsReq\x12\x20\n\x0ci\
+    s_remove_id\x18\x02\x20\x01(\x08R\nisRemoveId\x12\x19\n\x08extra_id\x18\
+    \x0b\x20\x01(\rR\x07extraIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

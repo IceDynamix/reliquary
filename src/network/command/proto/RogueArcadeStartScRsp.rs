@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueArcadeStartScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::LLPNBNEJKII::LLPNBNEJKII>,
     // @@protoc_insertion_point(field:RogueArcadeStartScRsp.room_id)
     pub room_id: u32,
-    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::LLPNBNEJKII::LLPNBNEJKII>,
     // @@protoc_insertion_point(field:RogueArcadeStartScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RogueArcadeStartScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LLPNBNEJKII::LLPNBNEJKII>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueArcadeStartScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueArcadeStartScRsp| { &mut m.rogue_tourn_cur_scene_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &RogueArcadeStartScRsp| { &m.room_id },
             |m: &mut RogueArcadeStartScRsp| { &mut m.room_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LLPNBNEJKII::LLPNBNEJKII>(
-            "LCOCLENJJAI",
-            |m: &RogueArcadeStartScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueArcadeStartScRsp| { &mut m.LCOCLENJJAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
+                },
+                40 => {
                     self.room_id = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
-                },
-                88 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.room_id);
-        }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.room_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_id != 0 {
-            os.write_uint32(8, self.room_id)?;
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.room_id != 0 {
+            os.write_uint32(5, self.room_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     }
 
     fn clear(&mut self) {
+        self.rogue_tourn_cur_scene_info.clear();
         self.room_id = 0;
-        self.LCOCLENJJAI.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueArcadeStartScRsp {
         static instance: RogueArcadeStartScRsp = RogueArcadeStartScRsp {
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             room_id: 0,
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueArcadeStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueArcadeStartScRsp.proto\x1a\x11LLPNBNEJKII.proto\"z\n\x15Rogue\
-    ArcadeStartScRsp\x12\x17\n\x07room_id\x18\x08\x20\x01(\rR\x06roomId\x12.\
-    \n\x0bLCOCLENJJAI\x18\x05\x20\x01(\x0b2\x0c.LLPNBNEJKIIR\x0bLCOCLENJJAI\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bRogueArcadeStartScRsp.proto\x1a\x11LLPNBNEJKII.proto\"\x94\x01\n\
+    \x15RogueArcadeStartScRsp\x12H\n\x1arogue_tourn_cur_scene_info\x18\x03\
+    \x20\x01(\x0b2\x0c.LLPNBNEJKIIR\x16rogueTournCurSceneInfo\x12\x17\n\x07r\
+    oom_id\x18\x05\x20\x01(\rR\x06roomId\x12\x18\n\x07retcode\x18\x0f\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

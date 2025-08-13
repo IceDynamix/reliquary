@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.LDNJEACFBJE = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LDNJEACFBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LDNJEACFBJE);
+            my_size += ::protobuf::rt::uint32_size(8, self.LDNJEACFBJE);
         }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.skill_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LDNJEACFBJE != 0 {
-            os.write_uint32(4, self.LDNJEACFBJE)?;
+            os.write_uint32(8, self.LDNJEACFBJE)?;
         }
         if self.skill_id != 0 {
-            os.write_uint32(9, self.skill_id)?;
+            os.write_uint32(6, self.skill_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUpgradeSkillLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%PlanetFesUpgradeSkillLevelCsReq.proto\"^\n\x1fPlanetFesUpgradeSkillLe\
-    velCsReq\x12\x20\n\x0bLDNJEACFBJE\x18\x04\x20\x01(\rR\x0bLDNJEACFBJE\x12\
-    \x19\n\x08skill_id\x18\t\x20\x01(\rR\x07skillIdb\x06proto3\
+    velCsReq\x12\x20\n\x0bLDNJEACFBJE\x18\x08\x20\x01(\rR\x0bLDNJEACFBJE\x12\
+    \x19\n\x08skill_id\x18\x06\x20\x01(\rR\x07skillIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                120 => {
                     self.HOIOKBKGFDN = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.APMODAGOHNA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HOIOKBKGFDN);
+            my_size += ::protobuf::rt::uint32_size(15, self.HOIOKBKGFDN);
         }
         if self.APMODAGOHNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.APMODAGOHNA);
+            my_size += ::protobuf::rt::uint32_size(14, self.APMODAGOHNA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(3, self.HOIOKBKGFDN)?;
+            os.write_uint32(15, self.HOIOKBKGFDN)?;
         }
         if self.APMODAGOHNA != 0 {
-            os.write_uint32(15, self.APMODAGOHNA)?;
+            os.write_uint32(14, self.APMODAGOHNA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBonusEventInteractCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlanetFesBonusEventInteractCsReq.proto\"f\n\x20PlanetFesBonusEventInt\
-    eractCsReq\x12\x20\n\x0bHOIOKBKGFDN\x18\x03\x20\x01(\rR\x0bHOIOKBKGFDN\
-    \x12\x20\n\x0bAPMODAGOHNA\x18\x0f\x20\x01(\rR\x0bAPMODAGOHNAb\x06proto3\
+    eractCsReq\x12\x20\n\x0bHOIOKBKGFDN\x18\x0f\x20\x01(\rR\x0bHOIOKBKGFDN\
+    \x12\x20\n\x0bAPMODAGOHNA\x18\x0e\x20\x01(\rR\x0bAPMODAGOHNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

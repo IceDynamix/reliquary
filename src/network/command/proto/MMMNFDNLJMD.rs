@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMMNFDNLJMD {
     // message fields
-    // @@protoc_insertion_point(field:MMMNFDNLJMD.HBAPCCEGNME)
-    pub HBAPCCEGNME: u32,
+    // @@protoc_insertion_point(field:MMMNFDNLJMD.queue_position)
+    pub queue_position: u32,
     // @@protoc_insertion_point(field:MMMNFDNLJMD.GPJGGKNOAFD)
     pub GPJGGKNOAFD: u32,
     // message oneof groups
-    pub body_data_case: ::std::option::Option<mmmnfdnljmd::Body_data_case>,
+    pub OEEHIFHNFDH: ::std::option::Option<mmmnfdnljmd::OEEHIFHNFDH>,
     // special fields
     // @@protoc_insertion_point(special_field:MMMNFDNLJMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,36 +53,36 @@ impl MMMNFDNLJMD {
     // .LJNPGKDOJHO marble_game_begin = 101;
 
     pub fn marble_game_begin(&self) -> &super::LJNPGKDOJHO::LJNPGKDOJHO {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(ref v)) => v,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v)) => v,
             _ => <super::LJNPGKDOJHO::LJNPGKDOJHO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_marble_game_begin(&mut self) {
-        self.body_data_case = ::std::option::Option::None;
+        self.OEEHIFHNFDH = ::std::option::Option::None;
     }
 
     pub fn has_marble_game_begin(&self) -> bool {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(..)) => true,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_marble_game_begin(&mut self, v: super::LJNPGKDOJHO::LJNPGKDOJHO) {
-        self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(v))
+        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_marble_game_begin(&mut self) -> &mut super::LJNPGKDOJHO::LJNPGKDOJHO {
-        if let ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(_)) = self.body_data_case {
+        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(_)) = self.OEEHIFHNFDH {
         } else {
-            self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(super::LJNPGKDOJHO::LJNPGKDOJHO::new()));
+            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(super::LJNPGKDOJHO::LJNPGKDOJHO::new()));
         }
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(ref mut v)) => v,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl MMMNFDNLJMD {
     // Take field
     pub fn take_marble_game_begin(&mut self) -> super::LJNPGKDOJHO::LJNPGKDOJHO {
         if self.has_marble_game_begin() {
-            match self.body_data_case.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(v)) => v,
+            match self.OEEHIFHNFDH.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -99,48 +99,48 @@ impl MMMNFDNLJMD {
         }
     }
 
-    // .BPNMJCHEDNL marble_game_bnd = 102;
+    // .BPNMJCHEDNL marble_game_end = 102;
 
-    pub fn marble_game_bnd(&self) -> &super::BPNMJCHEDNL::BPNMJCHEDNL {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(ref v)) => v,
+    pub fn marble_game_end(&self) -> &super::BPNMJCHEDNL::BPNMJCHEDNL {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v)) => v,
             _ => <super::BPNMJCHEDNL::BPNMJCHEDNL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_marble_game_bnd(&mut self) {
-        self.body_data_case = ::std::option::Option::None;
+    pub fn clear_marble_game_end(&mut self) {
+        self.OEEHIFHNFDH = ::std::option::Option::None;
     }
 
-    pub fn has_marble_game_bnd(&self) -> bool {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(..)) => true,
+    pub fn has_marble_game_end(&self) -> bool {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_marble_game_bnd(&mut self, v: super::BPNMJCHEDNL::BPNMJCHEDNL) {
-        self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(v))
+    pub fn set_marble_game_end(&mut self, v: super::BPNMJCHEDNL::BPNMJCHEDNL) {
+        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_marble_game_bnd(&mut self) -> &mut super::BPNMJCHEDNL::BPNMJCHEDNL {
-        if let ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(_)) = self.body_data_case {
+    pub fn mut_marble_game_end(&mut self) -> &mut super::BPNMJCHEDNL::BPNMJCHEDNL {
+        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(_)) = self.OEEHIFHNFDH {
         } else {
-            self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(super::BPNMJCHEDNL::BPNMJCHEDNL::new()));
+            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(super::BPNMJCHEDNL::BPNMJCHEDNL::new()));
         }
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(ref mut v)) => v,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_marble_game_bnd(&mut self) -> super::BPNMJCHEDNL::BPNMJCHEDNL {
-        if self.has_marble_game_bnd() {
-            match self.body_data_case.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(v)) => v,
+    pub fn take_marble_game_end(&mut self) -> super::BPNMJCHEDNL::BPNMJCHEDNL {
+        if self.has_marble_game_end() {
+            match self.OEEHIFHNFDH.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -148,48 +148,48 @@ impl MMMNFDNLJMD {
         }
     }
 
-    // .FOOPINGAFEG marble_game_bound = 103;
+    // .FOOPINGAFEG marble_game_round = 103;
 
-    pub fn marble_game_bound(&self) -> &super::FOOPINGAFEG::FOOPINGAFEG {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(ref v)) => v,
+    pub fn marble_game_round(&self) -> &super::FOOPINGAFEG::FOOPINGAFEG {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v)) => v,
             _ => <super::FOOPINGAFEG::FOOPINGAFEG as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_marble_game_bound(&mut self) {
-        self.body_data_case = ::std::option::Option::None;
+    pub fn clear_marble_game_round(&mut self) {
+        self.OEEHIFHNFDH = ::std::option::Option::None;
     }
 
-    pub fn has_marble_game_bound(&self) -> bool {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(..)) => true,
+    pub fn has_marble_game_round(&self) -> bool {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_marble_game_bound(&mut self, v: super::FOOPINGAFEG::FOOPINGAFEG) {
-        self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(v))
+    pub fn set_marble_game_round(&mut self, v: super::FOOPINGAFEG::FOOPINGAFEG) {
+        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_marble_game_bound(&mut self) -> &mut super::FOOPINGAFEG::FOOPINGAFEG {
-        if let ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(_)) = self.body_data_case {
+    pub fn mut_marble_game_round(&mut self) -> &mut super::FOOPINGAFEG::FOOPINGAFEG {
+        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(_)) = self.OEEHIFHNFDH {
         } else {
-            self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(super::FOOPINGAFEG::FOOPINGAFEG::new()));
+            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(super::FOOPINGAFEG::FOOPINGAFEG::new()));
         }
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(ref mut v)) => v,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_marble_game_bound(&mut self) -> super::FOOPINGAFEG::FOOPINGAFEG {
-        if self.has_marble_game_bound() {
-            match self.body_data_case.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(v)) => v,
+    pub fn take_marble_game_round(&mut self) -> super::FOOPINGAFEG::FOOPINGAFEG {
+        if self.has_marble_game_round() {
+            match self.OEEHIFHNFDH.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -197,48 +197,48 @@ impl MMMNFDNLJMD {
         }
     }
 
-    // .OFILKJCLEGI marble_game_burn = 104;
+    // .OFILKJCLEGI marble_game_turn = 104;
 
-    pub fn marble_game_burn(&self) -> &super::OFILKJCLEGI::OFILKJCLEGI {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(ref v)) => v,
+    pub fn marble_game_turn(&self) -> &super::OFILKJCLEGI::OFILKJCLEGI {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v)) => v,
             _ => <super::OFILKJCLEGI::OFILKJCLEGI as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_marble_game_burn(&mut self) {
-        self.body_data_case = ::std::option::Option::None;
+    pub fn clear_marble_game_turn(&mut self) {
+        self.OEEHIFHNFDH = ::std::option::Option::None;
     }
 
-    pub fn has_marble_game_burn(&self) -> bool {
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(..)) => true,
+    pub fn has_marble_game_turn(&self) -> bool {
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_marble_game_burn(&mut self, v: super::OFILKJCLEGI::OFILKJCLEGI) {
-        self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(v))
+    pub fn set_marble_game_turn(&mut self, v: super::OFILKJCLEGI::OFILKJCLEGI) {
+        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_marble_game_burn(&mut self) -> &mut super::OFILKJCLEGI::OFILKJCLEGI {
-        if let ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(_)) = self.body_data_case {
+    pub fn mut_marble_game_turn(&mut self) -> &mut super::OFILKJCLEGI::OFILKJCLEGI {
+        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(_)) = self.OEEHIFHNFDH {
         } else {
-            self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(super::OFILKJCLEGI::OFILKJCLEGI::new()));
+            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(super::OFILKJCLEGI::OFILKJCLEGI::new()));
         }
-        match self.body_data_case {
-            ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(ref mut v)) => v,
+        match self.OEEHIFHNFDH {
+            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_marble_game_burn(&mut self) -> super::OFILKJCLEGI::OFILKJCLEGI {
-        if self.has_marble_game_burn() {
-            match self.body_data_case.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(v)) => v,
+    pub fn take_marble_game_turn(&mut self) -> super::OFILKJCLEGI::OFILKJCLEGI {
+        if self.has_marble_game_turn() {
+            match self.OEEHIFHNFDH.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -250,9 +250,9 @@ impl MMMNFDNLJMD {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBAPCCEGNME",
-            |m: &MMMNFDNLJMD| { &m.HBAPCCEGNME },
-            |m: &mut MMMNFDNLJMD| { &mut m.HBAPCCEGNME },
+            "queue_position",
+            |m: &MMMNFDNLJMD| { &m.queue_position },
+            |m: &mut MMMNFDNLJMD| { &mut m.queue_position },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GPJGGKNOAFD",
@@ -267,27 +267,27 @@ impl MMMNFDNLJMD {
             MMMNFDNLJMD::set_marble_game_begin,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BPNMJCHEDNL::BPNMJCHEDNL>(
-            "marble_game_bnd",
-            MMMNFDNLJMD::has_marble_game_bnd,
-            MMMNFDNLJMD::marble_game_bnd,
-            MMMNFDNLJMD::mut_marble_game_bnd,
-            MMMNFDNLJMD::set_marble_game_bnd,
+            "marble_game_end",
+            MMMNFDNLJMD::has_marble_game_end,
+            MMMNFDNLJMD::marble_game_end,
+            MMMNFDNLJMD::mut_marble_game_end,
+            MMMNFDNLJMD::set_marble_game_end,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FOOPINGAFEG::FOOPINGAFEG>(
-            "marble_game_bound",
-            MMMNFDNLJMD::has_marble_game_bound,
-            MMMNFDNLJMD::marble_game_bound,
-            MMMNFDNLJMD::mut_marble_game_bound,
-            MMMNFDNLJMD::set_marble_game_bound,
+            "marble_game_round",
+            MMMNFDNLJMD::has_marble_game_round,
+            MMMNFDNLJMD::marble_game_round,
+            MMMNFDNLJMD::mut_marble_game_round,
+            MMMNFDNLJMD::set_marble_game_round,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OFILKJCLEGI::OFILKJCLEGI>(
-            "marble_game_burn",
-            MMMNFDNLJMD::has_marble_game_burn,
-            MMMNFDNLJMD::marble_game_burn,
-            MMMNFDNLJMD::mut_marble_game_burn,
-            MMMNFDNLJMD::set_marble_game_burn,
+            "marble_game_turn",
+            MMMNFDNLJMD::has_marble_game_turn,
+            MMMNFDNLJMD::marble_game_turn,
+            MMMNFDNLJMD::mut_marble_game_turn,
+            MMMNFDNLJMD::set_marble_game_turn,
         ));
-        oneofs.push(mmmnfdnljmd::Body_data_case::generated_oneof_descriptor_data());
+        oneofs.push(mmmnfdnljmd::OEEHIFHNFDH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMMNFDNLJMD>(
             "MMMNFDNLJMD",
             fields,
@@ -307,22 +307,22 @@ impl ::protobuf::Message for MMMNFDNLJMD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.HBAPCCEGNME = is.read_uint32()?;
+                    self.queue_position = is.read_uint32()?;
                 },
                 16 => {
                     self.GPJGGKNOAFD = is.read_uint32()?;
                 },
                 810 => {
-                    self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBegin(is.read_message()?));
+                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(is.read_message()?));
                 },
                 818 => {
-                    self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBnd(is.read_message()?));
+                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(is.read_message()?));
                 },
                 826 => {
-                    self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBound(is.read_message()?));
+                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(is.read_message()?));
                 },
                 834 => {
-                    self.body_data_case = ::std::option::Option::Some(mmmnfdnljmd::Body_data_case::MarbleGameBurn(is.read_message()?));
+                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -336,27 +336,27 @@ impl ::protobuf::Message for MMMNFDNLJMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HBAPCCEGNME);
+        if self.queue_position != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.queue_position);
         }
         if self.GPJGGKNOAFD != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.GPJGGKNOAFD);
         }
-        if let ::std::option::Option::Some(ref v) = self.body_data_case {
+        if let ::std::option::Option::Some(ref v) = self.OEEHIFHNFDH {
             match v {
-                &mmmnfdnljmd::Body_data_case::MarbleGameBegin(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBnd(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBound(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBurn(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -368,24 +368,24 @@ impl ::protobuf::Message for MMMNFDNLJMD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HBAPCCEGNME != 0 {
-            os.write_uint32(1, self.HBAPCCEGNME)?;
+        if self.queue_position != 0 {
+            os.write_uint32(1, self.queue_position)?;
         }
         if self.GPJGGKNOAFD != 0 {
             os.write_uint32(2, self.GPJGGKNOAFD)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.body_data_case {
+        if let ::std::option::Option::Some(ref v) = self.OEEHIFHNFDH {
             match v {
-                &mmmnfdnljmd::Body_data_case::MarbleGameBegin(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBnd(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBound(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(103, v, os)?;
                 },
-                &mmmnfdnljmd::Body_data_case::MarbleGameBurn(ref v) => {
+                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(104, v, os)?;
                 },
             };
@@ -407,20 +407,20 @@ impl ::protobuf::Message for MMMNFDNLJMD {
     }
 
     fn clear(&mut self) {
-        self.HBAPCCEGNME = 0;
+        self.queue_position = 0;
         self.GPJGGKNOAFD = 0;
-        self.body_data_case = ::std::option::Option::None;
-        self.body_data_case = ::std::option::Option::None;
-        self.body_data_case = ::std::option::Option::None;
-        self.body_data_case = ::std::option::Option::None;
+        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.OEEHIFHNFDH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMMNFDNLJMD {
         static instance: MMMNFDNLJMD = MMMNFDNLJMD {
-            HBAPCCEGNME: 0,
+            queue_position: 0,
             GPJGGKNOAFD: 0,
-            body_data_case: ::std::option::Option::None,
+            OEEHIFHNFDH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -449,45 +449,45 @@ pub mod mmmnfdnljmd {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:MMMNFDNLJMD.body_data_case)
-    pub enum Body_data_case {
+    // @@protoc_insertion_point(oneof:MMMNFDNLJMD.OEEHIFHNFDH)
+    pub enum OEEHIFHNFDH {
         // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_begin)
         MarbleGameBegin(super::super::LJNPGKDOJHO::LJNPGKDOJHO),
-        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_bnd)
-        MarbleGameBnd(super::super::BPNMJCHEDNL::BPNMJCHEDNL),
-        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_bound)
-        MarbleGameBound(super::super::FOOPINGAFEG::FOOPINGAFEG),
-        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_burn)
-        MarbleGameBurn(super::super::OFILKJCLEGI::OFILKJCLEGI),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_end)
+        MarbleGameEnd(super::super::BPNMJCHEDNL::BPNMJCHEDNL),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_round)
+        MarbleGameRound(super::super::FOOPINGAFEG::FOOPINGAFEG),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_turn)
+        MarbleGameTurn(super::super::OFILKJCLEGI::OFILKJCLEGI),
     }
 
-    impl ::protobuf::Oneof for Body_data_case {
+    impl ::protobuf::Oneof for OEEHIFHNFDH {
     }
 
-    impl ::protobuf::OneofFull for Body_data_case {
+    impl ::protobuf::OneofFull for OEEHIFHNFDH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::MMMNFDNLJMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("body_data_case").unwrap()).clone()
+            descriptor.get(|| <super::MMMNFDNLJMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("OEEHIFHNFDH").unwrap()).clone()
         }
     }
 
-    impl Body_data_case {
+    impl OEEHIFHNFDH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Body_data_case>("body_data_case")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OEEHIFHNFDH>("OEEHIFHNFDH")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMMNFDNLJMD.proto\x1a\x11BPNMJCHEDNL.proto\x1a\x11FOOPINGAFEG.prot\
-    o\x1a\x11LJNPGKDOJHO.proto\x1a\x11OFILKJCLEGI.proto\"\xcd\x02\n\x0bMMMNF\
-    DNLJMD\x12\x20\n\x0bHBAPCCEGNME\x18\x01\x20\x01(\rR\x0bHBAPCCEGNME\x12\
+    o\x1a\x11LJNPGKDOJHO.proto\x1a\x11OFILKJCLEGI.proto\"\xcf\x02\n\x0bMMMNF\
+    DNLJMD\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueuePosition\x12\
     \x20\n\x0bGPJGGKNOAFD\x18\x02\x20\x01(\rR\x0bGPJGGKNOAFD\x12:\n\x11marbl\
     e_game_begin\x18e\x20\x01(\x0b2\x0c.LJNPGKDOJHOH\0R\x0fmarbleGameBegin\
-    \x126\n\x0fmarble_game_bnd\x18f\x20\x01(\x0b2\x0c.BPNMJCHEDNLH\0R\rmarbl\
-    eGameBnd\x12:\n\x11marble_game_bound\x18g\x20\x01(\x0b2\x0c.FOOPINGAFEGH\
-    \0R\x0fmarbleGameBound\x128\n\x10marble_game_burn\x18h\x20\x01(\x0b2\x0c\
-    .OFILKJCLEGIH\0R\x0emarbleGameBurnB\x10\n\x0ebody_data_caseb\x06proto3\
+    \x126\n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c.BPNMJCHEDNLH\0R\rmarbl\
+    eGameEnd\x12:\n\x11marble_game_round\x18g\x20\x01(\x0b2\x0c.FOOPINGAFEGH\
+    \0R\x0fmarbleGameRound\x128\n\x10marble_game_turn\x18h\x20\x01(\x0b2\x0c\
+    .OFILKJCLEGIH\0R\x0emarbleGameTurnB\r\n\x0bOEEHIFHNFDHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

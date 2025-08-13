@@ -31,7 +31,7 @@ pub struct NGFFCEICACD {
     // @@protoc_insertion_point(field:NGFFCEICACD.EBNPOCIDPKE)
     pub EBNPOCIDPKE: u32,
     // message oneof groups
-    pub OKDDFLKAPGM: ::std::option::Option<ngffceicacd::OKDDFLKAPGM>,
+    pub MICMCKAHMPL: ::std::option::Option<ngffceicacd::MICMCKAHMPL>,
     // special fields
     // @@protoc_insertion_point(special_field:NGFFCEICACD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl NGFFCEICACD {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 6;
+    // .ItemList JDIJKEGCIBP = 14;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(ref v)) => v,
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref v)) => v,
             _ => <super::ItemList::ItemList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JDIJKEGCIBP(&mut self) {
-        self.OKDDFLKAPGM = ::std::option::Option::None;
+        self.MICMCKAHMPL = ::std::option::Option::None;
     }
 
     pub fn has_JDIJKEGCIBP(&self) -> bool {
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(..)) => true,
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JDIJKEGCIBP(&mut self, v: super::ItemList::ItemList) {
-        self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(v))
+        self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JDIJKEGCIBP(&mut self) -> &mut super::ItemList::ItemList {
-        if let ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(_)) = self.OKDDFLKAPGM {
+        if let ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(_)) = self.MICMCKAHMPL {
         } else {
-            self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(super::ItemList::ItemList::new()));
+            self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(super::ItemList::ItemList::new()));
         }
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(ref mut v)) => v,
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl NGFFCEICACD {
     // Take field
     pub fn take_JDIJKEGCIBP(&mut self) -> super::ItemList::ItemList {
         if self.has_JDIJKEGCIBP() {
-            match self.OKDDFLKAPGM.take() {
-                ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(v)) => v,
+            match self.MICMCKAHMPL.take() {
+                ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,52 +97,52 @@ impl NGFFCEICACD {
         }
     }
 
-    // .OOBCEJFEHMK CNDGJJLJDOF = 7;
+    // .RogueBuffList CNDGJJLJDOF = 8;
 
-    pub fn CNDGJJLJDOF(&self) -> &super::OOBCEJFEHMK::OOBCEJFEHMK {
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(ref v)) => v,
-            _ => <super::OOBCEJFEHMK::OOBCEJFEHMK as ::protobuf::Message>::default_instance(),
+    pub fn CNDGJJLJDOF(&self) -> &super::RogueBuffList::RogueBuffList {
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref v)) => v,
+            _ => <super::RogueBuffList::RogueBuffList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CNDGJJLJDOF(&mut self) {
-        self.OKDDFLKAPGM = ::std::option::Option::None;
+        self.MICMCKAHMPL = ::std::option::Option::None;
     }
 
     pub fn has_CNDGJJLJDOF(&self) -> bool {
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(..)) => true,
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CNDGJJLJDOF(&mut self, v: super::OOBCEJFEHMK::OOBCEJFEHMK) {
-        self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(v))
+    pub fn set_CNDGJJLJDOF(&mut self, v: super::RogueBuffList::RogueBuffList) {
+        self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CNDGJJLJDOF(&mut self) -> &mut super::OOBCEJFEHMK::OOBCEJFEHMK {
-        if let ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(_)) = self.OKDDFLKAPGM {
+    pub fn mut_CNDGJJLJDOF(&mut self) -> &mut super::RogueBuffList::RogueBuffList {
+        if let ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(_)) = self.MICMCKAHMPL {
         } else {
-            self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(super::OOBCEJFEHMK::OOBCEJFEHMK::new()));
+            self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(super::RogueBuffList::RogueBuffList::new()));
         }
-        match self.OKDDFLKAPGM {
-            ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(ref mut v)) => v,
+        match self.MICMCKAHMPL {
+            ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CNDGJJLJDOF(&mut self) -> super::OOBCEJFEHMK::OOBCEJFEHMK {
+    pub fn take_CNDGJJLJDOF(&mut self) -> super::RogueBuffList::RogueBuffList {
         if self.has_CNDGJJLJDOF() {
-            match self.OKDDFLKAPGM.take() {
-                ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(v)) => v,
+            match self.MICMCKAHMPL.take() {
+                ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OOBCEJFEHMK::OOBCEJFEHMK::new()
+            super::RogueBuffList::RogueBuffList::new()
         }
     }
 
@@ -161,14 +161,14 @@ impl NGFFCEICACD {
             NGFFCEICACD::mut_JDIJKEGCIBP,
             NGFFCEICACD::set_JDIJKEGCIBP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OOBCEJFEHMK::OOBCEJFEHMK>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueBuffList::RogueBuffList>(
             "CNDGJJLJDOF",
             NGFFCEICACD::has_CNDGJJLJDOF,
             NGFFCEICACD::CNDGJJLJDOF,
             NGFFCEICACD::mut_CNDGJJLJDOF,
             NGFFCEICACD::set_CNDGJJLJDOF,
         ));
-        oneofs.push(ngffceicacd::OKDDFLKAPGM::generated_oneof_descriptor_data());
+        oneofs.push(ngffceicacd::MICMCKAHMPL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NGFFCEICACD>(
             "NGFFCEICACD",
             fields,
@@ -187,14 +187,14 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                96 => {
                     self.EBNPOCIDPKE = is.read_uint32()?;
                 },
-                50 => {
-                    self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(is.read_message()?));
+                114 => {
+                    self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
                 },
-                58 => {
-                    self.OKDDFLKAPGM = ::std::option::Option::Some(ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(is.read_message()?));
+                66 => {
+                    self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -209,15 +209,15 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EBNPOCIDPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EBNPOCIDPKE);
+            my_size += ::protobuf::rt::uint32_size(12, self.EBNPOCIDPKE);
         }
-        if let ::std::option::Option::Some(ref v) = self.OKDDFLKAPGM {
+        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
-                &ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(ref v) => {
+                &ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(ref v) => {
+                &ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -230,15 +230,15 @@ impl ::protobuf::Message for NGFFCEICACD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBNPOCIDPKE != 0 {
-            os.write_uint32(1, self.EBNPOCIDPKE)?;
+            os.write_uint32(12, self.EBNPOCIDPKE)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.OKDDFLKAPGM {
+        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
-                &ngffceicacd::OKDDFLKAPGM::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                &ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &ngffceicacd::OKDDFLKAPGM::CNDGJJLJDOF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -260,15 +260,15 @@ impl ::protobuf::Message for NGFFCEICACD {
 
     fn clear(&mut self) {
         self.EBNPOCIDPKE = 0;
-        self.OKDDFLKAPGM = ::std::option::Option::None;
-        self.OKDDFLKAPGM = ::std::option::Option::None;
+        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.MICMCKAHMPL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGFFCEICACD {
         static instance: NGFFCEICACD = NGFFCEICACD {
             EBNPOCIDPKE: 0,
-            OKDDFLKAPGM: ::std::option::Option::None,
+            MICMCKAHMPL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -297,37 +297,37 @@ pub mod ngffceicacd {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:NGFFCEICACD.OKDDFLKAPGM)
-    pub enum OKDDFLKAPGM {
+    // @@protoc_insertion_point(oneof:NGFFCEICACD.MICMCKAHMPL)
+    pub enum MICMCKAHMPL {
         // @@protoc_insertion_point(oneof_field:NGFFCEICACD.JDIJKEGCIBP)
         JDIJKEGCIBP(super::super::ItemList::ItemList),
         // @@protoc_insertion_point(oneof_field:NGFFCEICACD.CNDGJJLJDOF)
-        CNDGJJLJDOF(super::super::OOBCEJFEHMK::OOBCEJFEHMK),
+        CNDGJJLJDOF(super::super::RogueBuffList::RogueBuffList),
     }
 
-    impl ::protobuf::Oneof for OKDDFLKAPGM {
+    impl ::protobuf::Oneof for MICMCKAHMPL {
     }
 
-    impl ::protobuf::OneofFull for OKDDFLKAPGM {
+    impl ::protobuf::OneofFull for MICMCKAHMPL {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::NGFFCEICACD as ::protobuf::MessageFull>::descriptor().oneof_by_name("OKDDFLKAPGM").unwrap()).clone()
+            descriptor.get(|| <super::NGFFCEICACD as ::protobuf::MessageFull>::descriptor().oneof_by_name("MICMCKAHMPL").unwrap()).clone()
         }
     }
 
-    impl OKDDFLKAPGM {
+    impl MICMCKAHMPL {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OKDDFLKAPGM>("OKDDFLKAPGM")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MICMCKAHMPL>("MICMCKAHMPL")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NGFFCEICACD.proto\x1a\x0eItemList.proto\x1a\x11OOBCEJFEHMK.proto\"\
-    \x9f\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x01\x20\x01(\rR\
-    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x06\x20\x01(\x0b2\t.ItemListH\
-    \0R\x0bJDIJKEGCIBP\x120\n\x0bCNDGJJLJDOF\x18\x07\x20\x01(\x0b2\x0c.OOBCE\
-    JFEHMKH\0R\x0bCNDGJJLJDOFB\r\n\x0bOKDDFLKAPGMb\x06proto3\
+    \n\x11NGFFCEICACD.proto\x1a\x0eItemList.proto\x1a\x13RogueBuffList.proto\
+    \"\xa1\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x0c\x20\x01(\rR\
+    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x0e\x20\x01(\x0b2\t.ItemListH\
+    \0R\x0bJDIJKEGCIBP\x122\n\x0bCNDGJJLJDOF\x18\x08\x20\x01(\x0b2\x0e.Rogue\
+    BuffListH\0R\x0bCNDGJJLJDOFB\r\n\x0bMICMCKAHMPLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -346,7 +346,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::OOBCEJFEHMK::file_descriptor().clone());
+            deps.push(super::RogueBuffList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NGFFCEICACD::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

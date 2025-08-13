@@ -31,7 +31,7 @@ pub struct CIKOHJNAGON {
     // @@protoc_insertion_point(field:CIKOHJNAGON.area_id)
     pub area_id: u32,
     // @@protoc_insertion_point(field:CIKOHJNAGON.KCJBMKJLFBA)
-    pub KCJBMKJLFBA: ::protobuf::MessageField<super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>,
+    pub KCJBMKJLFBA: ::protobuf::MessageField<super::AreaDynamicInfo::AreaDynamicInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:CIKOHJNAGON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl CIKOHJNAGON {
             |m: &CIKOHJNAGON| { &m.area_id },
             |m: &mut CIKOHJNAGON| { &mut m.area_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyBuildSlotInfo::TrainPartyBuildSlotInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AreaDynamicInfo::AreaDynamicInfo>(
             "KCJBMKJLFBA",
             |m: &CIKOHJNAGON| { &m.KCJBMKJLFBA },
             |m: &mut CIKOHJNAGON| { &mut m.KCJBMKJLFBA },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.area_id = is.read_uint32()?;
                 },
-                50 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCJBMKJLFBA)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         if let Some(v) = self.KCJBMKJLFBA.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for CIKOHJNAGON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(7, self.area_id)?;
+            os.write_uint32(6, self.area_id)?;
         }
         if let Some(v) = self.KCJBMKJLFBA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for CIKOHJNAGON {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CIKOHJNAGON.proto\x1a\x1dTrainPartyBuildSlotInfo.proto\"b\n\x0bCIK\
-    OHJNAGON\x12\x17\n\x07area_id\x18\x07\x20\x01(\rR\x06areaId\x12:\n\x0bKC\
-    JBMKJLFBA\x18\x06\x20\x01(\x0b2\x18.TrainPartyBuildSlotInfoR\x0bKCJBMKJL\
-    FBAb\x06proto3\
+    \n\x11CIKOHJNAGON.proto\x1a\x15AreaDynamicInfo.proto\"Z\n\x0bCIKOHJNAGON\
+    \x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\x06areaId\x122\n\x0bKCJBMKJLFB\
+    A\x18\x0e\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bKCJBMKJLFBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::TrainPartyBuildSlotInfo::file_descriptor().clone());
+            deps.push(super::AreaDynamicInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CIKOHJNAGON::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

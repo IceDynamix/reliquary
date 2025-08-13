@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODDKKAHNMHK {
     // message fields
-    // @@protoc_insertion_point(field:ODDKKAHNMHK.op_type)
-    pub op_type: ::protobuf::EnumOrUnknown<super::NLAAMOGOOBE::NLAAMOGOOBE>,
     // @@protoc_insertion_point(field:ODDKKAHNMHK.HEFMJAHOHKG)
     pub HEFMJAHOHKG: u32,
+    // @@protoc_insertion_point(field:ODDKKAHNMHK.op_type)
+    pub op_type: ::protobuf::EnumOrUnknown<super::NLAAMOGOOBE::NLAAMOGOOBE>,
     // special fields
     // @@protoc_insertion_point(special_field:ODDKKAHNMHK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ODDKKAHNMHK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "op_type",
-            |m: &ODDKKAHNMHK| { &m.op_type },
-            |m: &mut ODDKKAHNMHK| { &mut m.op_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HEFMJAHOHKG",
             |m: &ODDKKAHNMHK| { &m.HEFMJAHOHKG },
             |m: &mut ODDKKAHNMHK| { &mut m.HEFMJAHOHKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "op_type",
+            |m: &ODDKKAHNMHK| { &m.op_type },
+            |m: &mut ODDKKAHNMHK| { &mut m.op_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ODDKKAHNMHK>(
             "ODDKKAHNMHK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.op_type = is.read_enum_or_unknown()?;
-                },
-                16 => {
+                104 => {
                     self.HEFMJAHOHKG = is.read_uint32()?;
+                },
+                72 => {
+                    self.op_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.op_type.value());
-        }
         if self.HEFMJAHOHKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HEFMJAHOHKG);
+            my_size += ::protobuf::rt::uint32_size(13, self.HEFMJAHOHKG);
+        }
+        if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.op_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
-        }
         if self.HEFMJAHOHKG != 0 {
-            os.write_uint32(2, self.HEFMJAHOHKG)?;
+            os.write_uint32(13, self.HEFMJAHOHKG)?;
+        }
+        if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     }
 
     fn clear(&mut self) {
-        self.op_type = ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE);
         self.HEFMJAHOHKG = 0;
+        self.op_type = ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODDKKAHNMHK {
         static instance: ODDKKAHNMHK = ODDKKAHNMHK {
-            op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             HEFMJAHOHKG: 0,
+            op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ODDKKAHNMHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ODDKKAHNMHK.proto\x1a\x11NLAAMOGOOBE.proto\"V\n\x0bODDKKAHNMHK\x12\
-    %\n\x07op_type\x18\x03\x20\x01(\x0e2\x0c.NLAAMOGOOBER\x06opType\x12\x20\
-    \n\x0bHEFMJAHOHKG\x18\x02\x20\x01(\rR\x0bHEFMJAHOHKGb\x06proto3\
+    \x20\n\x0bHEFMJAHOHKG\x18\r\x20\x01(\rR\x0bHEFMJAHOHKG\x12%\n\x07op_type\
+    \x18\t\x20\x01(\x0e2\x0c.NLAAMOGOOBER\x06opTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

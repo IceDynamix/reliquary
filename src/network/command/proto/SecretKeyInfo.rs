@@ -79,10 +79,10 @@ impl ::protobuf::Message for SecretKeyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                114 => {
                     self.secret_key = is.read_string()?;
                 },
-                104 => {
+                88 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SecretKeyInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.secret_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.secret_key);
+            my_size += ::protobuf::rt::string_size(14, &self.secret_key);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::SecretKeyType::SecretKeyType::SECRET_KEY_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(11, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SecretKeyInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.secret_key.is_empty() {
-            os.write_string(9, &self.secret_key)?;
+            os.write_string(14, &self.secret_key)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::SecretKeyType::SecretKeyType::SECRET_KEY_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SecretKeyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SecretKeyInfo.proto\x1a\x13SecretKeyType.proto\"R\n\rSecretKeyInfo\
-    \x12\x1d\n\nsecret_key\x18\t\x20\x01(\tR\tsecretKey\x12\"\n\x04type\x18\
-    \r\x20\x01(\x0e2\x0e.SecretKeyTypeR\x04typeb\x06proto3\
+    \x12\x1d\n\nsecret_key\x18\x0e\x20\x01(\tR\tsecretKey\x12\"\n\x04type\
+    \x18\x0b\x20\x01(\x0e2\x0e.SecretKeyTypeR\x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

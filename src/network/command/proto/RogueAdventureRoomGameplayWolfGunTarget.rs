@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueAdventureRoomGameplayWolfGunTarget {
     // message oneof groups
-    pub TargetImplOneofCase: ::std::option::Option<rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase>,
+    pub target_impl: ::std::option::Option<rogue_adventure_room_gameplay_wolf_gun_target::Target_impl>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueAdventureRoomGameplayWolfGunTarget.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,234 +45,234 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         ::std::default::Default::default()
     }
 
-    // .AHCCDBFMNDI target_none = 7;
+    // .RogueAdventureRoomTargetNone target_none = 8;
 
-    pub fn target_none(&self) -> &super::AHCCDBFMNDI::AHCCDBFMNDI {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(ref v)) => v,
-            _ => <super::AHCCDBFMNDI::AHCCDBFMNDI as ::protobuf::Message>::default_instance(),
+    pub fn target_none(&self) -> &super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone {
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref v)) => v,
+            _ => <super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_target_none(&mut self) {
-        self.TargetImplOneofCase = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
     }
 
     pub fn has_target_none(&self) -> bool {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(..)) => true,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_target_none(&mut self, v: super::AHCCDBFMNDI::AHCCDBFMNDI) {
-        self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(v))
+    pub fn set_target_none(&mut self, v: super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone) {
+        self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_target_none(&mut self) -> &mut super::AHCCDBFMNDI::AHCCDBFMNDI {
-        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(_)) = self.TargetImplOneofCase {
+    pub fn mut_target_none(&mut self) -> &mut super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone {
+        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(_)) = self.target_impl {
         } else {
-            self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(super::AHCCDBFMNDI::AHCCDBFMNDI::new()));
+            self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone::new()));
         }
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(ref mut v)) => v,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_target_none(&mut self) -> super::AHCCDBFMNDI::AHCCDBFMNDI {
+    pub fn take_target_none(&mut self) -> super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone {
         if self.has_target_none() {
-            match self.TargetImplOneofCase.take() {
-                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(v)) => v,
+            match self.target_impl.take() {
+                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AHCCDBFMNDI::AHCCDBFMNDI::new()
+            super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone::new()
         }
     }
 
-    // .AOKIJGCOAPD target_coin = 2;
+    // .RogueAdventureRoomTargetCoin target_coin = 12;
 
-    pub fn target_coin(&self) -> &super::AOKIJGCOAPD::AOKIJGCOAPD {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(ref v)) => v,
-            _ => <super::AOKIJGCOAPD::AOKIJGCOAPD as ::protobuf::Message>::default_instance(),
+    pub fn target_coin(&self) -> &super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin {
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref v)) => v,
+            _ => <super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_target_coin(&mut self) {
-        self.TargetImplOneofCase = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
     }
 
     pub fn has_target_coin(&self) -> bool {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(..)) => true,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_target_coin(&mut self, v: super::AOKIJGCOAPD::AOKIJGCOAPD) {
-        self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(v))
+    pub fn set_target_coin(&mut self, v: super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin) {
+        self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_target_coin(&mut self) -> &mut super::AOKIJGCOAPD::AOKIJGCOAPD {
-        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(_)) = self.TargetImplOneofCase {
+    pub fn mut_target_coin(&mut self) -> &mut super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin {
+        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(_)) = self.target_impl {
         } else {
-            self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(super::AOKIJGCOAPD::AOKIJGCOAPD::new()));
+            self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin::new()));
         }
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(ref mut v)) => v,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_target_coin(&mut self) -> super::AOKIJGCOAPD::AOKIJGCOAPD {
+    pub fn take_target_coin(&mut self) -> super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin {
         if self.has_target_coin() {
-            match self.TargetImplOneofCase.take() {
-                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(v)) => v,
+            match self.target_impl.take() {
+                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AOKIJGCOAPD::AOKIJGCOAPD::new()
+            super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin::new()
         }
     }
 
-    // .CIHFCLEAKIJ target_miracle = 14;
+    // .RogueAdventureRoomTargetMiracle target_miracle = 15;
 
-    pub fn target_miracle(&self) -> &super::CIHFCLEAKIJ::CIHFCLEAKIJ {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(ref v)) => v,
-            _ => <super::CIHFCLEAKIJ::CIHFCLEAKIJ as ::protobuf::Message>::default_instance(),
+    pub fn target_miracle(&self) -> &super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle {
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref v)) => v,
+            _ => <super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_target_miracle(&mut self) {
-        self.TargetImplOneofCase = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
     }
 
     pub fn has_target_miracle(&self) -> bool {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(..)) => true,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_target_miracle(&mut self, v: super::CIHFCLEAKIJ::CIHFCLEAKIJ) {
-        self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(v))
+    pub fn set_target_miracle(&mut self, v: super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle) {
+        self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_target_miracle(&mut self) -> &mut super::CIHFCLEAKIJ::CIHFCLEAKIJ {
-        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(_)) = self.TargetImplOneofCase {
+    pub fn mut_target_miracle(&mut self) -> &mut super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle {
+        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(_)) = self.target_impl {
         } else {
-            self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(super::CIHFCLEAKIJ::CIHFCLEAKIJ::new()));
+            self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle::new()));
         }
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(ref mut v)) => v,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_target_miracle(&mut self) -> super::CIHFCLEAKIJ::CIHFCLEAKIJ {
+    pub fn take_target_miracle(&mut self) -> super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle {
         if self.has_target_miracle() {
-            match self.TargetImplOneofCase.take() {
-                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(v)) => v,
+            match self.target_impl.take() {
+                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CIHFCLEAKIJ::CIHFCLEAKIJ::new()
+            super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle::new()
         }
     }
 
-    // .EKELNNLPLOD target_ruanmei = 12;
+    // .RogueAdventureRoomTargetRuanmei target_ruanmei = 14;
 
-    pub fn target_ruanmei(&self) -> &super::EKELNNLPLOD::EKELNNLPLOD {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(ref v)) => v,
-            _ => <super::EKELNNLPLOD::EKELNNLPLOD as ::protobuf::Message>::default_instance(),
+    pub fn target_ruanmei(&self) -> &super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei {
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref v)) => v,
+            _ => <super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_target_ruanmei(&mut self) {
-        self.TargetImplOneofCase = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
     }
 
     pub fn has_target_ruanmei(&self) -> bool {
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(..)) => true,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_target_ruanmei(&mut self, v: super::EKELNNLPLOD::EKELNNLPLOD) {
-        self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(v))
+    pub fn set_target_ruanmei(&mut self, v: super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei) {
+        self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_target_ruanmei(&mut self) -> &mut super::EKELNNLPLOD::EKELNNLPLOD {
-        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(_)) = self.TargetImplOneofCase {
+    pub fn mut_target_ruanmei(&mut self) -> &mut super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei {
+        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(_)) = self.target_impl {
         } else {
-            self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(super::EKELNNLPLOD::EKELNNLPLOD::new()));
+            self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei::new()));
         }
-        match self.TargetImplOneofCase {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(ref mut v)) => v,
+        match self.target_impl {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_target_ruanmei(&mut self) -> super::EKELNNLPLOD::EKELNNLPLOD {
+    pub fn take_target_ruanmei(&mut self) -> super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei {
         if self.has_target_ruanmei() {
-            match self.TargetImplOneofCase.take() {
-                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(v)) => v,
+            match self.target_impl.take() {
+                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EKELNNLPLOD::EKELNNLPLOD::new()
+            super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHCCDBFMNDI::AHCCDBFMNDI>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone>(
             "target_none",
             RogueAdventureRoomGameplayWolfGunTarget::has_target_none,
             RogueAdventureRoomGameplayWolfGunTarget::target_none,
             RogueAdventureRoomGameplayWolfGunTarget::mut_target_none,
             RogueAdventureRoomGameplayWolfGunTarget::set_target_none,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AOKIJGCOAPD::AOKIJGCOAPD>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin>(
             "target_coin",
             RogueAdventureRoomGameplayWolfGunTarget::has_target_coin,
             RogueAdventureRoomGameplayWolfGunTarget::target_coin,
             RogueAdventureRoomGameplayWolfGunTarget::mut_target_coin,
             RogueAdventureRoomGameplayWolfGunTarget::set_target_coin,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CIHFCLEAKIJ::CIHFCLEAKIJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle>(
             "target_miracle",
             RogueAdventureRoomGameplayWolfGunTarget::has_target_miracle,
             RogueAdventureRoomGameplayWolfGunTarget::target_miracle,
             RogueAdventureRoomGameplayWolfGunTarget::mut_target_miracle,
             RogueAdventureRoomGameplayWolfGunTarget::set_target_miracle,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EKELNNLPLOD::EKELNNLPLOD>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei>(
             "target_ruanmei",
             RogueAdventureRoomGameplayWolfGunTarget::has_target_ruanmei,
             RogueAdventureRoomGameplayWolfGunTarget::target_ruanmei,
             RogueAdventureRoomGameplayWolfGunTarget::mut_target_ruanmei,
             RogueAdventureRoomGameplayWolfGunTarget::set_target_ruanmei,
         ));
-        oneofs.push(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::generated_oneof_descriptor_data());
+        oneofs.push(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueAdventureRoomGameplayWolfGunTarget>(
             "RogueAdventureRoomGameplayWolfGunTarget",
             fields,
@@ -291,17 +291,17 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(is.read_message()?));
-                },
-                18 => {
-                    self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(is.read_message()?));
-                },
-                114 => {
-                    self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(is.read_message()?));
+                66 => {
+                    self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(is.read_message()?));
                 },
                 98 => {
-                    self.TargetImplOneofCase = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(is.read_message()?));
+                    self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(is.read_message()?));
+                },
+                122 => {
+                    self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(is.read_message()?));
+                },
+                114 => {
+                    self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -315,21 +315,21 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.TargetImplOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.target_impl {
             match v {
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -341,19 +341,19 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.TargetImplOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.target_impl {
             match v {
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetNone(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetCoin(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetMiracle(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-                },
-                &rogue_adventure_room_gameplay_wolf_gun_target::TargetImplOneofCase::TargetRuanmei(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -374,16 +374,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     }
 
     fn clear(&mut self) {
-        self.TargetImplOneofCase = ::std::option::Option::None;
-        self.TargetImplOneofCase = ::std::option::Option::None;
-        self.TargetImplOneofCase = ::std::option::Option::None;
-        self.TargetImplOneofCase = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
+        self.target_impl = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueAdventureRoomGameplayWolfGunTarget {
         static instance: RogueAdventureRoomGameplayWolfGunTarget = RogueAdventureRoomGameplayWolfGunTarget {
-            TargetImplOneofCase: ::std::option::Option::None,
+            target_impl: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -412,44 +412,46 @@ pub mod rogue_adventure_room_gameplay_wolf_gun_target {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueAdventureRoomGameplayWolfGunTarget.TargetImplOneofCase)
-    pub enum TargetImplOneofCase {
+    // @@protoc_insertion_point(oneof:RogueAdventureRoomGameplayWolfGunTarget.target_impl)
+    pub enum Target_impl {
         // @@protoc_insertion_point(oneof_field:RogueAdventureRoomGameplayWolfGunTarget.target_none)
-        TargetNone(super::super::AHCCDBFMNDI::AHCCDBFMNDI),
+        TargetNone(super::super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone),
         // @@protoc_insertion_point(oneof_field:RogueAdventureRoomGameplayWolfGunTarget.target_coin)
-        TargetCoin(super::super::AOKIJGCOAPD::AOKIJGCOAPD),
+        TargetCoin(super::super::RogueAdventureRoomTargetCoin::RogueAdventureRoomTargetCoin),
         // @@protoc_insertion_point(oneof_field:RogueAdventureRoomGameplayWolfGunTarget.target_miracle)
-        TargetMiracle(super::super::CIHFCLEAKIJ::CIHFCLEAKIJ),
+        TargetMiracle(super::super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle),
         // @@protoc_insertion_point(oneof_field:RogueAdventureRoomGameplayWolfGunTarget.target_ruanmei)
-        TargetRuanmei(super::super::EKELNNLPLOD::EKELNNLPLOD),
+        TargetRuanmei(super::super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei),
     }
 
-    impl ::protobuf::Oneof for TargetImplOneofCase {
+    impl ::protobuf::Oneof for Target_impl {
     }
 
-    impl ::protobuf::OneofFull for TargetImplOneofCase {
+    impl ::protobuf::OneofFull for Target_impl {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueAdventureRoomGameplayWolfGunTarget as ::protobuf::MessageFull>::descriptor().oneof_by_name("TargetImplOneofCase").unwrap()).clone()
+            descriptor.get(|| <super::RogueAdventureRoomGameplayWolfGunTarget as ::protobuf::MessageFull>::descriptor().oneof_by_name("target_impl").unwrap()).clone()
         }
     }
 
-    impl TargetImplOneofCase {
+    impl Target_impl {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<TargetImplOneofCase>("TargetImplOneofCase")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Target_impl>("target_impl")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n-RogueAdventureRoomGameplayWolfGunTarget.proto\x1a\x11AHCCDBFMNDI.prot\
-    o\x1a\x11AOKIJGCOAPD.proto\x1a\x11CIHFCLEAKIJ.proto\x1a\x11EKELNNLPLOD.p\
-    roto\"\x90\x02\n'RogueAdventureRoomGameplayWolfGunTarget\x12/\n\x0btarge\
-    t_none\x18\x07\x20\x01(\x0b2\x0c.AHCCDBFMNDIH\0R\ntargetNone\x12/\n\x0bt\
-    arget_coin\x18\x02\x20\x01(\x0b2\x0c.AOKIJGCOAPDH\0R\ntargetCoin\x125\n\
-    \x0etarget_miracle\x18\x0e\x20\x01(\x0b2\x0c.CIHFCLEAKIJH\0R\rtargetMira\
-    cle\x125\n\x0etarget_ruanmei\x18\x0c\x20\x01(\x0b2\x0c.EKELNNLPLODH\0R\r\
-    targetRuanmeiB\x15\n\x13TargetImplOneofCaseb\x06proto3\
+    \n-RogueAdventureRoomGameplayWolfGunTarget.proto\x1a\"RogueAdventureRoom\
+    TargetCoin.proto\x1a%RogueAdventureRoomTargetMiracle.proto\x1a\"RogueAdv\
+    entureRoomTargetNone.proto\x1a%RogueAdventureRoomTargetRuanmei.proto\"\
+    \xd2\x02\n'RogueAdventureRoomGameplayWolfGunTarget\x12@\n\x0btarget_none\
+    \x18\x08\x20\x01(\x0b2\x1d.RogueAdventureRoomTargetNoneH\0R\ntargetNone\
+    \x12@\n\x0btarget_coin\x18\x0c\x20\x01(\x0b2\x1d.RogueAdventureRoomTarge\
+    tCoinH\0R\ntargetCoin\x12I\n\x0etarget_miracle\x18\x0f\x20\x01(\x0b2\x20\
+    .RogueAdventureRoomTargetMiracleH\0R\rtargetMiracle\x12I\n\x0etarget_rua\
+    nmei\x18\x0e\x20\x01(\x0b2\x20.RogueAdventureRoomTargetRuanmeiH\0R\rtarg\
+    etRuanmeiB\r\n\x0btarget_implb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -467,10 +469,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::AHCCDBFMNDI::file_descriptor().clone());
-            deps.push(super::AOKIJGCOAPD::file_descriptor().clone());
-            deps.push(super::CIHFCLEAKIJ::file_descriptor().clone());
-            deps.push(super::EKELNNLPLOD::file_descriptor().clone());
+            deps.push(super::RogueAdventureRoomTargetCoin::file_descriptor().clone());
+            deps.push(super::RogueAdventureRoomTargetMiracle::file_descriptor().clone());
+            deps.push(super::RogueAdventureRoomTargetNone::file_descriptor().clone());
+            deps.push(super::RogueAdventureRoomTargetRuanmei::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueAdventureRoomGameplayWolfGunTarget::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

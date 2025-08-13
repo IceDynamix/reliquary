@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                96 => {
                     self.level = is.read_uint32()?;
                 },
-                40 => {
+                120 => {
                     self.MDHJKKBNMCF = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         if self.MDHJKKBNMCF != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakePunkLordPointRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(12, self.level)?;
         }
         if self.MDHJKKBNMCF != false {
-            os.write_bool(5, self.MDHJKKBNMCF)?;
+            os.write_bool(15, self.MDHJKKBNMCF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakePunkLordPointRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakePunkLordPointRewardCsReq.proto\"V\n\x1cTakePunkLordPointRewardCs\
-    Req\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x20\n\x0bMDHJKKB\
-    NMCF\x18\x05\x20\x01(\x08R\x0bMDHJKKBNMCFb\x06proto3\
+    Req\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05level\x12\x20\n\x0bMDHJKKB\
+    NMCF\x18\x0f\x20\x01(\x08R\x0bMDHJKKBNMCFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookFinishStoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookFinishStoryScRsp.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
     // @@protoc_insertion_point(field:TarotBookFinishStoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TarotBookFinishStoryScRsp.BGLEHMKMAPG)
+    pub BGLEHMKMAPG: u32,
     // @@protoc_insertion_point(field:TarotBookFinishStoryScRsp.HEFJEJHOJEA)
     pub HEFJEJHOJEA: ::protobuf::MessageField<super::FLOICKMNMLL::FLOICKMNMLL>,
     // special fields
@@ -54,14 +54,14 @@ impl TarotBookFinishStoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &TarotBookFinishStoryScRsp| { &m.BGLEHMKMAPG },
-            |m: &mut TarotBookFinishStoryScRsp| { &mut m.BGLEHMKMAPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TarotBookFinishStoryScRsp| { &m.retcode },
             |m: &mut TarotBookFinishStoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BGLEHMKMAPG",
+            |m: &TarotBookFinishStoryScRsp| { &m.BGLEHMKMAPG },
+            |m: &mut TarotBookFinishStoryScRsp| { &mut m.BGLEHMKMAPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FLOICKMNMLL::FLOICKMNMLL>(
             "HEFJEJHOJEA",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TarotBookFinishStoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.BGLEHMKMAPG = is.read_uint32()?;
-                },
-                8 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                64 => {
+                    self.BGLEHMKMAPG = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEFJEJHOJEA)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for TarotBookFinishStoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BGLEHMKMAPG);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.BGLEHMKMAPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BGLEHMKMAPG);
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for TarotBookFinishStoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(6, self.BGLEHMKMAPG)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.BGLEHMKMAPG != 0 {
+            os.write_uint32(8, self.BGLEHMKMAPG)?;
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for TarotBookFinishStoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.BGLEHMKMAPG = 0;
         self.retcode = 0;
+        self.BGLEHMKMAPG = 0;
         self.HEFJEJHOJEA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TarotBookFinishStoryScRsp {
         static instance: TarotBookFinishStoryScRsp = TarotBookFinishStoryScRsp {
-            BGLEHMKMAPG: 0,
             retcode: 0,
+            BGLEHMKMAPG: 0,
             HEFJEJHOJEA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookFinishStoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTarotBookFinishStoryScRsp.proto\x1a\x11FLOICKMNMLL.proto\"\x87\x01\
-    \n\x19TarotBookFinishStoryScRsp\x12\x20\n\x0bBGLEHMKMAPG\x18\x06\x20\x01\
-    (\rR\x0bBGLEHMKMAPG\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bHEFJEJHOJEA\x18\x04\x20\x01(\x0b2\x0c.FLOICKMNMLLR\x0bHEFJEJH\
-    OJEAb\x06proto3\
+    \n\x19TarotBookFinishStoryScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bBGLEHMKMAPG\x18\x08\x20\x01(\rR\x0bBGLEHMKMAPG\
+    \x12.\n\x0bHEFJEJHOJEA\x18\r\x20\x01(\x0b2\x0c.FLOICKMNMLLR\x0bHEFJEJHOJ\
+    EAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

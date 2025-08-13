@@ -31,7 +31,7 @@ pub struct LAJBHGHNBAC {
     // @@protoc_insertion_point(field:LAJBHGHNBAC.BEMCEEDABFD)
     pub BEMCEEDABFD: u32,
     // @@protoc_insertion_point(field:LAJBHGHNBAC.JALAMOPLDHO)
-    pub JALAMOPLDHO: ::protobuf::MessageField<super::GJOIBMFANHL::GJOIBMFANHL>,
+    pub JALAMOPLDHO: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
     // @@protoc_insertion_point(field:LAJBHGHNBAC.GANHKLNPAPI)
     pub GANHKLNPAPI: bool,
     // special fields
@@ -58,7 +58,7 @@ impl LAJBHGHNBAC {
             |m: &LAJBHGHNBAC| { &m.BEMCEEDABFD },
             |m: &mut LAJBHGHNBAC| { &mut m.BEMCEEDABFD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJOIBMFANHL::GJOIBMFANHL>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameRogueMiracle::GameRogueMiracle>(
             "JALAMOPLDHO",
             |m: &LAJBHGHNBAC| { &m.JALAMOPLDHO },
             |m: &mut LAJBHGHNBAC| { &mut m.JALAMOPLDHO },
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                48 => {
                     self.BEMCEEDABFD = is.read_uint32()?;
                 },
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JALAMOPLDHO)?;
                 },
-                56 => {
+                120 => {
                     self.GANHKLNPAPI = is.read_bool()?;
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for LAJBHGHNBAC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BEMCEEDABFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BEMCEEDABFD);
+            my_size += ::protobuf::rt::uint32_size(6, self.BEMCEEDABFD);
         }
         if let Some(v) = self.JALAMOPLDHO.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LAJBHGHNBAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BEMCEEDABFD != 0 {
-            os.write_uint32(12, self.BEMCEEDABFD)?;
+            os.write_uint32(6, self.BEMCEEDABFD)?;
         }
         if let Some(v) = self.JALAMOPLDHO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.GANHKLNPAPI != false {
-            os.write_bool(7, self.GANHKLNPAPI)?;
+            os.write_bool(15, self.GANHKLNPAPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for LAJBHGHNBAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LAJBHGHNBAC.proto\x1a\x11GJOIBMFANHL.proto\"\x81\x01\n\x0bLAJBHGHN\
-    BAC\x12\x20\n\x0bBEMCEEDABFD\x18\x0c\x20\x01(\rR\x0bBEMCEEDABFD\x12.\n\
-    \x0bJALAMOPLDHO\x18\x01\x20\x01(\x0b2\x0c.GJOIBMFANHLR\x0bJALAMOPLDHO\
-    \x12\x20\n\x0bGANHKLNPAPI\x18\x07\x20\x01(\x08R\x0bGANHKLNPAPIb\x06proto\
-    3\
+    \n\x11LAJBHGHNBAC.proto\x1a\x16GameRogueMiracle.proto\"\x86\x01\n\x0bLAJ\
+    BHGHNBAC\x12\x20\n\x0bBEMCEEDABFD\x18\x06\x20\x01(\rR\x0bBEMCEEDABFD\x12\
+    3\n\x0bJALAMOPLDHO\x18\t\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bJALAMOPL\
+    DHO\x12\x20\n\x0bGANHKLNPAPI\x18\x0f\x20\x01(\x08R\x0bGANHKLNPAPIb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GJOIBMFANHL::file_descriptor().clone());
+            deps.push(super::GameRogueMiracle::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LAJBHGHNBAC::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

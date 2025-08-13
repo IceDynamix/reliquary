@@ -136,8 +136,8 @@ pub struct AvatarBattleInfo {
     pub PMKLPHJIOHC: u32,
     // @@protoc_insertion_point(field:AvatarBattleInfo.MPFAENEKFDC)
     pub MPFAENEKFDC: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.GLACKHOPMIO)
-    pub GLACKHOPMIO: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.enhanced_id)
+    pub enhanced_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -428,9 +428,9 @@ impl AvatarBattleInfo {
             |m: &mut AvatarBattleInfo| { &mut m.MPFAENEKFDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLACKHOPMIO",
-            |m: &AvatarBattleInfo| { &m.GLACKHOPMIO },
-            |m: &mut AvatarBattleInfo| { &mut m.GLACKHOPMIO },
+            "enhanced_id",
+            |m: &AvatarBattleInfo| { &m.enhanced_id },
+            |m: &mut AvatarBattleInfo| { &mut m.enhanced_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarBattleInfo>(
             "AvatarBattleInfo",
@@ -613,7 +613,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
                     self.MPFAENEKFDC = is.read_uint32()?;
                 },
                 440 => {
-                    self.GLACKHOPMIO = is.read_uint32()?;
+                    self.enhanced_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -801,8 +801,8 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.MPFAENEKFDC != 0 {
             my_size += ::protobuf::rt::uint32_size(54, self.MPFAENEKFDC);
         }
-        if self.GLACKHOPMIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(55, self.GLACKHOPMIO);
+        if self.enhanced_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(55, self.enhanced_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -972,8 +972,8 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.MPFAENEKFDC != 0 {
             os.write_uint32(54, self.MPFAENEKFDC)?;
         }
-        if self.GLACKHOPMIO != 0 {
-            os.write_uint32(55, self.GLACKHOPMIO)?;
+        if self.enhanced_id != 0 {
+            os.write_uint32(55, self.enhanced_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -1046,7 +1046,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
         self.PDLILFICHIL = 0.;
         self.PMKLPHJIOHC = 0;
         self.MPFAENEKFDC = 0;
-        self.GLACKHOPMIO = 0;
+        self.enhanced_id = 0;
         self.special_fields.clear();
     }
 
@@ -1106,7 +1106,7 @@ impl ::protobuf::Message for AvatarBattleInfo {
             PDLILFICHIL: 0.,
             PMKLPHJIOHC: 0,
             MPFAENEKFDC: 0,
-            GLACKHOPMIO: 0,
+            enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -1134,7 +1134,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarBattleInfo.proto\x1a\x13AbilityUseStt.proto\x1a\x1aAttackDam\
     ageProperty.proto\x1a\x14AvatarProperty.proto\x1a\x15AvatarSkillTree.pro\
     to\x1a\x10AvatarType.proto\x1a\x11BattleRelic.proto\x1a\x17EquipmentProp\
-    erty.proto\x1a\x16SkillUseProperty.proto\x1a\x11SpAddSource.proto\"\xb3\
+    erty.proto\x1a\x16SkillUseProperty.proto\x1a\x11SpAddSource.proto\"\xb2\
     \x11\n\x10AvatarBattleInfo\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\
     \x0b.AvatarTypeR\navatarType\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\
     \x12!\n\x0cavatar_level\x18\x03\x20\x01(\rR\x0bavatarLevel\x12\x1f\n\x0b\
@@ -1184,8 +1184,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     (\rR\x0bCHNIKKCIBEG\x12\x20\n\x0bLBNJHHHLPMO\x183\x20\x01(\rR\x0bLBNJHHH\
     LPMO\x12\x20\n\x0bPDLILFICHIL\x184\x20\x01(\x01R\x0bPDLILFICHIL\x12\x20\
     \n\x0bPMKLPHJIOHC\x185\x20\x01(\rR\x0bPMKLPHJIOHC\x12\x20\n\x0bMPFAENEKF\
-    DC\x186\x20\x01(\rR\x0bMPFAENEKFDC\x12\x20\n\x0bGLACKHOPMIO\x187\x20\x01\
-    (\rR\x0bGLACKHOPMIOb\x06proto3\
+    DC\x186\x20\x01(\rR\x0bMPFAENEKFDC\x12\x1f\n\x0benhanced_id\x187\x20\x01\
+    (\rR\nenhancedIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

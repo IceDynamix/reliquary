@@ -72,7 +72,7 @@ impl ::protobuf::Message for AcceptMultipleExpeditionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                90 => {
                     self.expedition.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AcceptMultipleExpeditionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.expedition {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMultipleExpeditionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#AcceptMultipleExpeditionCsReq.proto\x1a\x14ExpeditionInfo.proto\"P\n\
-    \x1dAcceptMultipleExpeditionCsReq\x12/\n\nexpedition\x18\x07\x20\x03(\
+    \x1dAcceptMultipleExpeditionCsReq\x12/\n\nexpedition\x18\x0b\x20\x03(\
     \x0b2\x0f.ExpeditionInfoR\nexpeditionb\x06proto3\
 ";
 

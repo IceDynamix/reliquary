@@ -79,10 +79,10 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                88 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                10 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.floor_id);
         }
         if let Some(v) = self.data.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.floor_id != 0 {
-            os.write_uint32(4, self.floor_id)?;
+            os.write_uint32(11, self.floor_id)?;
         }
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EraFlipperDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"EraFlipperDataChangeScNotify.proto\x1a\x11KKEAENNDMKB.proto\"[\n\x1c\
-    EraFlipperDataChangeScNotify\x12\x19\n\x08floor_id\x18\x04\x20\x01(\rR\
-    \x07floorId\x12\x20\n\x04data\x18\x01\x20\x01(\x0b2\x0c.KKEAENNDMKBR\x04\
+    EraFlipperDataChangeScNotify\x12\x19\n\x08floor_id\x18\x0b\x20\x01(\rR\
+    \x07floorId\x12\x20\n\x04data\x18\x08\x20\x01(\x0b2\x0c.KKEAENNDMKBR\x04\
     datab\x06proto3\
 ";
 

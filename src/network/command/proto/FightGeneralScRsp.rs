@@ -86,13 +86,13 @@ impl ::protobuf::Message for FightGeneralScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                34 => {
                     self.MBBDNLNCEJD = is.read_bytes()?;
                 },
-                8 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.JJCMFKJHCFA = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FightGeneralScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.MBBDNLNCEJD.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(15, &self.MBBDNLNCEJD);
+            my_size += ::protobuf::rt::bytes_size(4, &self.MBBDNLNCEJD);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if self.JJCMFKJHCFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JJCMFKJHCFA);
+            my_size += ::protobuf::rt::uint32_size(7, self.JJCMFKJHCFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FightGeneralScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.MBBDNLNCEJD.is_empty() {
-            os.write_bytes(15, &self.MBBDNLNCEJD)?;
+            os.write_bytes(4, &self.MBBDNLNCEJD)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if self.JJCMFKJHCFA != 0 {
-            os.write_uint32(11, self.JJCMFKJHCFA)?;
+            os.write_uint32(7, self.JJCMFKJHCFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for FightGeneralScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17FightGeneralScRsp.proto\"q\n\x11FightGeneralScRsp\x12\x20\n\x0bMBB\
-    DNLNCEJD\x18\x0f\x20\x01(\x0cR\x0bMBBDNLNCEJD\x12\x18\n\x07retcode\x18\
-    \x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bJJCMFKJHCFA\x18\x0b\x20\x01(\rR\
+    DNLNCEJD\x18\x04\x20\x01(\x0cR\x0bMBBDNLNCEJD\x12\x18\n\x07retcode\x18\
+    \x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bJJCMFKJHCFA\x18\x07\x20\x01(\rR\
     \x0bJJCMFKJHCFAb\x06proto3\
 ";
 

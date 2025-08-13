@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.IKMNAMKJAFA = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IKMNAMKJAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IKMNAMKJAFA);
+            my_size += ::protobuf::rt::uint32_size(3, self.IKMNAMKJAFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SyncChessRogueNousSubStoryScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IKMNAMKJAFA != 0 {
-            os.write_uint32(8, self.IKMNAMKJAFA)?;
+            os.write_uint32(3, self.IKMNAMKJAFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousSubStoryScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(SyncChessRogueNousSubStoryScNotify.proto\"F\n\"SyncChessRogueNousSubS\
-    toryScNotify\x12\x20\n\x0bIKMNAMKJAFA\x18\x08\x20\x01(\rR\x0bIKMNAMKJAFA\
+    toryScNotify\x12\x20\n\x0bIKMNAMKJAFA\x18\x03\x20\x01(\rR\x0bIKMNAMKJAFA\
     b\x06proto3\
 ";
 

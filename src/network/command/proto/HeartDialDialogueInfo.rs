@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialDialogueInfo {
     // message fields
-    // @@protoc_insertion_point(field:HeartDialDialogueInfo.FBKEKCGELBE)
-    pub FBKEKCGELBE: bool,
     // @@protoc_insertion_point(field:HeartDialDialogueInfo.dialogue_id)
     pub dialogue_id: u32,
+    // @@protoc_insertion_point(field:HeartDialDialogueInfo.FBKEKCGELBE)
+    pub FBKEKCGELBE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HeartDialDialogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HeartDialDialogueInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBKEKCGELBE",
-            |m: &HeartDialDialogueInfo| { &m.FBKEKCGELBE },
-            |m: &mut HeartDialDialogueInfo| { &mut m.FBKEKCGELBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dialogue_id",
             |m: &HeartDialDialogueInfo| { &m.dialogue_id },
             |m: &mut HeartDialDialogueInfo| { &mut m.dialogue_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FBKEKCGELBE",
+            |m: &HeartDialDialogueInfo| { &m.FBKEKCGELBE },
+            |m: &mut HeartDialDialogueInfo| { &mut m.FBKEKCGELBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeartDialDialogueInfo>(
             "HeartDialDialogueInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.FBKEKCGELBE = is.read_bool()?;
-                },
-                112 => {
+                80 => {
                     self.dialogue_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.FBKEKCGELBE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.dialogue_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.dialogue_id);
+        }
         if self.FBKEKCGELBE != false {
             my_size += 1 + 1;
-        }
-        if self.dialogue_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.dialogue_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FBKEKCGELBE != false {
-            os.write_bool(12, self.FBKEKCGELBE)?;
-        }
         if self.dialogue_id != 0 {
-            os.write_uint32(14, self.dialogue_id)?;
+            os.write_uint32(10, self.dialogue_id)?;
+        }
+        if self.FBKEKCGELBE != false {
+            os.write_bool(13, self.FBKEKCGELBE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     }
 
     fn clear(&mut self) {
-        self.FBKEKCGELBE = false;
         self.dialogue_id = 0;
+        self.FBKEKCGELBE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialDialogueInfo {
         static instance: HeartDialDialogueInfo = HeartDialDialogueInfo {
-            FBKEKCGELBE: false,
             dialogue_id: 0,
+            FBKEKCGELBE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialDialogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bHeartDialDialogueInfo.proto\"Z\n\x15HeartDialDialogueInfo\x12\x20\
-    \n\x0bFBKEKCGELBE\x18\x0c\x20\x01(\x08R\x0bFBKEKCGELBE\x12\x1f\n\x0bdial\
-    ogue_id\x18\x0e\x20\x01(\rR\ndialogueIdb\x06proto3\
+    \n\x1bHeartDialDialogueInfo.proto\"Z\n\x15HeartDialDialogueInfo\x12\x1f\
+    \n\x0bdialogue_id\x18\n\x20\x01(\rR\ndialogueId\x12\x20\n\x0bFBKEKCGELBE\
+    \x18\r\x20\x01(\x08R\x0bFBKEKCGELBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

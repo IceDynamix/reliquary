@@ -92,7 +92,7 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.ACHOPOJLCCE = is.read_uint32()?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if self.ACHOPOJLCCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.ACHOPOJLCCE);
+            my_size += ::protobuf::rt::uint32_size(11, self.ACHOPOJLCCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -129,7 +129,7 @@ impl ::protobuf::Message for SelectPhoneThemeScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         if self.ACHOPOJLCCE != 0 {
-            os.write_uint32(10, self.ACHOPOJLCCE)?;
+            os.write_uint32(11, self.ACHOPOJLCCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectPhoneThemeScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSelectPhoneThemeScRsp.proto\"{\n\x15SelectPhoneThemeScRsp\x12&\n\
     \x0fcur_phone_theme\x18\r\x20\x01(\rR\rcurPhoneTheme\x12\x18\n\x07retcod\
-    e\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bACHOPOJLCCE\x18\n\x20\x01(\
-    \rR\x0bACHOPOJLCCEb\x06proto3\
+    e\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bACHOPOJLCCE\x18\x0b\x20\
+    \x01(\rR\x0bACHOPOJLCCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

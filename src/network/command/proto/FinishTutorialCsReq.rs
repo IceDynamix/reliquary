@@ -30,6 +30,8 @@ pub struct FinishTutorialCsReq {
     // message fields
     // @@protoc_insertion_point(field:FinishTutorialCsReq.tutorial_id)
     pub tutorial_id: u32,
+    // @@protoc_insertion_point(field:FinishTutorialCsReq.BMLEMOBCNCM)
+    pub BMLEMOBCNCM: ::protobuf::EnumOrUnknown<super::TutorialFinishType::TutorialFinishType>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishTutorialCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl FinishTutorialCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tutorial_id",
             |m: &FinishTutorialCsReq| { &m.tutorial_id },
             |m: &mut FinishTutorialCsReq| { &mut m.tutorial_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BMLEMOBCNCM",
+            |m: &FinishTutorialCsReq| { &m.BMLEMOBCNCM },
+            |m: &mut FinishTutorialCsReq| { &mut m.BMLEMOBCNCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishTutorialCsReq>(
             "FinishTutorialCsReq",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                40 => {
                     self.tutorial_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.BMLEMOBCNCM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -88,7 +98,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tutorial_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.tutorial_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.tutorial_id);
+        }
+        if self.BMLEMOBCNCM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(11, self.BMLEMOBCNCM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +110,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tutorial_id != 0 {
-            os.write_uint32(14, self.tutorial_id)?;
+            os.write_uint32(5, self.tutorial_id)?;
+        }
+        if self.BMLEMOBCNCM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.BMLEMOBCNCM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +133,14 @@ impl ::protobuf::Message for FinishTutorialCsReq {
 
     fn clear(&mut self) {
         self.tutorial_id = 0;
+        self.BMLEMOBCNCM = ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTutorialCsReq {
         static instance: FinishTutorialCsReq = FinishTutorialCsReq {
             tutorial_id: 0,
+            BMLEMOBCNCM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FinishTutorialCsReq.proto\"6\n\x13FinishTutorialCsReq\x12\x1f\n\
-    \x0btutorial_id\x18\x0e\x20\x01(\rR\ntutorialIdb\x06proto3\
+    \n\x19FinishTutorialCsReq.proto\x1a\x18TutorialFinishType.proto\"m\n\x13\
+    FinishTutorialCsReq\x12\x1f\n\x0btutorial_id\x18\x05\x20\x01(\rR\ntutori\
+    alId\x125\n\x0bBMLEMOBCNCM\x18\x0b\x20\x01(\x0e2\x13.TutorialFinishTypeR\
+    \x0bBMLEMOBCNCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -165,7 +185,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::TutorialFinishType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishTutorialCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

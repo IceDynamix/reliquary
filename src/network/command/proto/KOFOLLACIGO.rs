@@ -72,7 +72,7 @@ impl ::protobuf::Message for KOFOLLACIGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                82 => {
                     self.INLLEKAMNPF.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KOFOLLACIGO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.INLLEKAMNPF {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for KOFOLLACIGO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KOFOLLACIGO.proto\x1a\x11OFGBMCKNLDJ.proto\"=\n\x0bKOFOLLACIGO\x12\
-    .\n\x0bINLLEKAMNPF\x18\x08\x20\x03(\x0b2\x0c.OFGBMCKNLDJR\x0bINLLEKAMNPF\
-    b\x06proto3\
+    .\n\x0bINLLEKAMNPF\x18\n\x20\x03(\x0b2\x0c.OFGBMCKNLDJR\x0bINLLEKAMNPFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

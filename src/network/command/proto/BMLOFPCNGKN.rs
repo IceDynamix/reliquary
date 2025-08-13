@@ -30,10 +30,10 @@ pub struct BMLOFPCNGKN {
     // message fields
     // @@protoc_insertion_point(field:BMLOFPCNGKN.OFCNDEMAPPL)
     pub OFCNDEMAPPL: i32,
-    // @@protoc_insertion_point(field:BMLOFPCNGKN.DJFHCDDIFMI)
-    pub DJFHCDDIFMI: i32,
     // @@protoc_insertion_point(field:BMLOFPCNGKN.IHLHDPNAEKC)
     pub IHLHDPNAEKC: i32,
+    // @@protoc_insertion_point(field:BMLOFPCNGKN.DJFHCDDIFMI)
+    pub DJFHCDDIFMI: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BMLOFPCNGKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl BMLOFPCNGKN {
             |m: &mut BMLOFPCNGKN| { &mut m.OFCNDEMAPPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFHCDDIFMI",
-            |m: &BMLOFPCNGKN| { &m.DJFHCDDIFMI },
-            |m: &mut BMLOFPCNGKN| { &mut m.DJFHCDDIFMI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHLHDPNAEKC",
             |m: &BMLOFPCNGKN| { &m.IHLHDPNAEKC },
             |m: &mut BMLOFPCNGKN| { &mut m.IHLHDPNAEKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJFHCDDIFMI",
+            |m: &BMLOFPCNGKN| { &m.DJFHCDDIFMI },
+            |m: &mut BMLOFPCNGKN| { &mut m.DJFHCDDIFMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMLOFPCNGKN>(
             "BMLOFPCNGKN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.OFCNDEMAPPL = is.read_int32()?;
                 },
-                56 => {
-                    self.DJFHCDDIFMI = is.read_int32()?;
+                88 => {
+                    self.IHLHDPNAEKC = is.read_int32()?;
                 },
                 16 => {
-                    self.IHLHDPNAEKC = is.read_int32()?;
+                    self.DJFHCDDIFMI = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OFCNDEMAPPL != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.OFCNDEMAPPL);
-        }
-        if self.DJFHCDDIFMI != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.DJFHCDDIFMI);
+            my_size += ::protobuf::rt::int32_size(4, self.OFCNDEMAPPL);
         }
         if self.IHLHDPNAEKC != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.IHLHDPNAEKC);
+            my_size += ::protobuf::rt::int32_size(11, self.IHLHDPNAEKC);
+        }
+        if self.DJFHCDDIFMI != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.DJFHCDDIFMI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BMLOFPCNGKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OFCNDEMAPPL != 0 {
-            os.write_int32(3, self.OFCNDEMAPPL)?;
-        }
-        if self.DJFHCDDIFMI != 0 {
-            os.write_int32(7, self.DJFHCDDIFMI)?;
+            os.write_int32(4, self.OFCNDEMAPPL)?;
         }
         if self.IHLHDPNAEKC != 0 {
-            os.write_int32(2, self.IHLHDPNAEKC)?;
+            os.write_int32(11, self.IHLHDPNAEKC)?;
+        }
+        if self.DJFHCDDIFMI != 0 {
+            os.write_int32(2, self.DJFHCDDIFMI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BMLOFPCNGKN {
 
     fn clear(&mut self) {
         self.OFCNDEMAPPL = 0;
-        self.DJFHCDDIFMI = 0;
         self.IHLHDPNAEKC = 0;
+        self.DJFHCDDIFMI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMLOFPCNGKN {
         static instance: BMLOFPCNGKN = BMLOFPCNGKN {
             OFCNDEMAPPL: 0,
-            DJFHCDDIFMI: 0,
             IHLHDPNAEKC: 0,
+            DJFHCDDIFMI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for BMLOFPCNGKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMLOFPCNGKN.proto\"s\n\x0bBMLOFPCNGKN\x12\x20\n\x0bOFCNDEMAPPL\x18\
-    \x03\x20\x01(\x05R\x0bOFCNDEMAPPL\x12\x20\n\x0bDJFHCDDIFMI\x18\x07\x20\
-    \x01(\x05R\x0bDJFHCDDIFMI\x12\x20\n\x0bIHLHDPNAEKC\x18\x02\x20\x01(\x05R\
-    \x0bIHLHDPNAEKCb\x06proto3\
+    \x04\x20\x01(\x05R\x0bOFCNDEMAPPL\x12\x20\n\x0bIHLHDPNAEKC\x18\x0b\x20\
+    \x01(\x05R\x0bIHLHDPNAEKC\x12\x20\n\x0bDJFHCDDIFMI\x18\x02\x20\x01(\x05R\
+    \x0bDJFHCDDIFMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

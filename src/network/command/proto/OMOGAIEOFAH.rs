@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMOGAIEOFAH {
     // message fields
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.HHMABJDIMGM)
-    pub HHMABJDIMGM: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDAPEHEAMBM)
-    pub PDAPEHEAMBM: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.CKKEKMJMABC)
-    pub CKKEKMJMABC: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.EKFLPNLAPDF)
-    pub EKFLPNLAPDF: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.PDIHILCLENM)
-    pub PDIHILCLENM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.IGCHBPAKBCB)
-    pub IGCHBPAKBCB: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.EHPMCGOELGB)
-    pub EHPMCGOELGB: bool,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.source_type)
+    pub source_type: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.handbook_unlock_buff_id_list)
+    pub handbook_unlock_buff_id_list: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.select_buff_list)
+    pub select_buff_list: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.roll_buff_max_count)
+    pub roll_buff_max_count: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.can_rolls)
+    pub can_rolls: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.can_roll)
+    pub can_roll: bool,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.modifier_source_type)
+    pub modifier_source_type: ::protobuf::EnumOrUnknown<super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType>,
     // @@protoc_insertion_point(field:OMOGAIEOFAH.IPODNBLJPOL)
     pub IPODNBLJPOL: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.DJFCKFEMGOJ)
-    pub DJFCKFEMGOJ: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.first_buff_type_list)
+    pub first_buff_type_list: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.source_cur_count)
+    pub source_cur_count: u32,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.source_total_count)
+    pub source_total_count: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OMOGAIEOFAH.maze_buff_list)
-    pub maze_buff_list: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.FPOELPFCNBI)
-    pub FPOELPFCNBI: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.BHEIDPPFCKA)
-    pub BHEIDPPFCKA: u32,
-    // @@protoc_insertion_point(field:OMOGAIEOFAH.CMOGBLHAFHN)
-    pub CMOGBLHAFHN: u32,
+    pub maze_buff_list: ::std::vec::Vec<super::RogueBuff::RogueBuff>,
+    // @@protoc_insertion_point(field:OMOGAIEOFAH.source_hint_id)
+    pub source_hint_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OMOGAIEOFAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,39 +74,39 @@ impl OMOGAIEOFAH {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHMABJDIMGM",
-            |m: &OMOGAIEOFAH| { &m.HHMABJDIMGM },
-            |m: &mut OMOGAIEOFAH| { &mut m.HHMABJDIMGM },
+            "source_type",
+            |m: &OMOGAIEOFAH| { &m.source_type },
+            |m: &mut OMOGAIEOFAH| { &mut m.source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDAPEHEAMBM",
-            |m: &OMOGAIEOFAH| { &m.PDAPEHEAMBM },
-            |m: &mut OMOGAIEOFAH| { &mut m.PDAPEHEAMBM },
+            "handbook_unlock_buff_id_list",
+            |m: &OMOGAIEOFAH| { &m.handbook_unlock_buff_id_list },
+            |m: &mut OMOGAIEOFAH| { &mut m.handbook_unlock_buff_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKKEKMJMABC",
-            |m: &OMOGAIEOFAH| { &m.CKKEKMJMABC },
-            |m: &mut OMOGAIEOFAH| { &mut m.CKKEKMJMABC },
+            "select_buff_list",
+            |m: &OMOGAIEOFAH| { &m.select_buff_list },
+            |m: &mut OMOGAIEOFAH| { &mut m.select_buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKFLPNLAPDF",
-            |m: &OMOGAIEOFAH| { &m.EKFLPNLAPDF },
-            |m: &mut OMOGAIEOFAH| { &mut m.EKFLPNLAPDF },
+            "roll_buff_max_count",
+            |m: &OMOGAIEOFAH| { &m.roll_buff_max_count },
+            |m: &mut OMOGAIEOFAH| { &mut m.roll_buff_max_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PDIHILCLENM",
-            |m: &OMOGAIEOFAH| { &m.PDIHILCLENM },
-            |m: &mut OMOGAIEOFAH| { &mut m.PDIHILCLENM },
+            "can_rolls",
+            |m: &OMOGAIEOFAH| { &m.can_rolls },
+            |m: &mut OMOGAIEOFAH| { &mut m.can_rolls },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGCHBPAKBCB",
-            |m: &OMOGAIEOFAH| { &m.IGCHBPAKBCB },
-            |m: &mut OMOGAIEOFAH| { &mut m.IGCHBPAKBCB },
+            "can_roll",
+            |m: &OMOGAIEOFAH| { &m.can_roll },
+            |m: &mut OMOGAIEOFAH| { &mut m.can_roll },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHPMCGOELGB",
-            |m: &OMOGAIEOFAH| { &m.EHPMCGOELGB },
-            |m: &mut OMOGAIEOFAH| { &mut m.EHPMCGOELGB },
+            "modifier_source_type",
+            |m: &OMOGAIEOFAH| { &m.modifier_source_type },
+            |m: &mut OMOGAIEOFAH| { &mut m.modifier_source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPODNBLJPOL",
@@ -114,29 +114,29 @@ impl OMOGAIEOFAH {
             |m: &mut OMOGAIEOFAH| { &mut m.IPODNBLJPOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFCKFEMGOJ",
-            |m: &OMOGAIEOFAH| { &m.DJFCKFEMGOJ },
-            |m: &mut OMOGAIEOFAH| { &mut m.DJFCKFEMGOJ },
+            "first_buff_type_list",
+            |m: &OMOGAIEOFAH| { &m.first_buff_type_list },
+            |m: &mut OMOGAIEOFAH| { &mut m.first_buff_type_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source_cur_count",
+            |m: &OMOGAIEOFAH| { &m.source_cur_count },
+            |m: &mut OMOGAIEOFAH| { &mut m.source_cur_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "source_total_count",
+            |m: &OMOGAIEOFAH| { &m.source_total_count },
+            |m: &mut OMOGAIEOFAH| { &mut m.source_total_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "maze_buff_list",
             |m: &OMOGAIEOFAH| { &m.maze_buff_list },
             |m: &mut OMOGAIEOFAH| { &mut m.maze_buff_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "FPOELPFCNBI",
-            |m: &OMOGAIEOFAH| { &m.FPOELPFCNBI },
-            |m: &mut OMOGAIEOFAH| { &mut m.FPOELPFCNBI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHEIDPPFCKA",
-            |m: &OMOGAIEOFAH| { &m.BHEIDPPFCKA },
-            |m: &mut OMOGAIEOFAH| { &mut m.BHEIDPPFCKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMOGBLHAFHN",
-            |m: &OMOGAIEOFAH| { &m.CMOGBLHAFHN },
-            |m: &mut OMOGAIEOFAH| { &mut m.CMOGBLHAFHN },
+            "source_hint_id",
+            |m: &OMOGAIEOFAH| { &m.source_hint_id },
+            |m: &mut OMOGAIEOFAH| { &mut m.source_hint_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMOGAIEOFAH>(
             "OMOGAIEOFAH",
@@ -156,47 +156,47 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.HHMABJDIMGM = is.read_enum_or_unknown()?;
-                },
                 40 => {
-                    self.PDAPEHEAMBM = is.read_uint32()?;
-                },
-                64 => {
-                    self.CKKEKMJMABC = is.read_uint32()?;
-                },
-                72 => {
-                    self.EKFLPNLAPDF = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PDIHILCLENM)?;
-                },
-                48 => {
-                    self.PDIHILCLENM.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.IGCHBPAKBCB = is.read_uint32()?;
+                    self.source_type = is.read_uint32()?;
                 },
                 88 => {
-                    self.EHPMCGOELGB = is.read_bool()?;
+                    self.handbook_unlock_buff_id_list = is.read_uint32()?;
                 },
-                80 => {
-                    self.IPODNBLJPOL = is.read_uint32()?;
+                64 => {
+                    self.select_buff_list = is.read_uint32()?;
                 },
-                96 => {
-                    self.DJFCKFEMGOJ = is.read_uint32()?;
-                },
-                26 => {
-                    self.maze_buff_list.push(is.read_message()?);
+                112 => {
+                    self.roll_buff_max_count = is.read_uint32()?;
                 },
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPOELPFCNBI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.can_rolls)?;
                 },
-                56 => {
-                    self.BHEIDPPFCKA = is.read_uint32()?;
+                104 => {
+                    self.can_rolls.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.can_roll = is.read_bool()?;
+                },
+                24 => {
+                    self.modifier_source_type = is.read_enum_or_unknown()?;
+                },
+                8 => {
+                    self.IPODNBLJPOL = is.read_uint32()?;
+                },
+                48 => {
+                    self.first_buff_type_list = is.read_uint32()?;
                 },
                 16 => {
-                    self.CMOGBLHAFHN = is.read_uint32()?;
+                    self.source_cur_count = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source_total_count)?;
+                },
+                82 => {
+                    self.maze_buff_list.push(is.read_message()?);
+                },
+                56 => {
+                    self.source_hint_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -210,44 +210,44 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.HHMABJDIMGM.value());
+        if self.source_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.source_type);
         }
-        if self.PDAPEHEAMBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PDAPEHEAMBM);
+        if self.handbook_unlock_buff_id_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.handbook_unlock_buff_id_list);
         }
-        if self.CKKEKMJMABC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CKKEKMJMABC);
+        if self.select_buff_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.select_buff_list);
         }
-        if self.EKFLPNLAPDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EKFLPNLAPDF);
+        if self.roll_buff_max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.roll_buff_max_count);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PDIHILCLENM);
-        if self.IGCHBPAKBCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IGCHBPAKBCB);
-        }
-        if self.EHPMCGOELGB != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.can_rolls);
+        if self.can_roll != false {
             my_size += 1 + 1;
         }
-        if self.IPODNBLJPOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IPODNBLJPOL);
+        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.modifier_source_type.value());
         }
-        if self.DJFCKFEMGOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DJFCKFEMGOJ);
+        if self.IPODNBLJPOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IPODNBLJPOL);
+        }
+        if self.first_buff_type_list != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.first_buff_type_list);
+        }
+        if self.source_cur_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.source_cur_count);
+        }
+        if let Some(v) = self.source_total_count.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.maze_buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.FPOELPFCNBI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BHEIDPPFCKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BHEIDPPFCKA);
-        }
-        if self.CMOGBLHAFHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CMOGBLHAFHN);
+        if self.source_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.source_hint_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -255,42 +255,42 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HHMABJDIMGM != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.HHMABJDIMGM))?;
+        if self.source_type != 0 {
+            os.write_uint32(5, self.source_type)?;
         }
-        if self.PDAPEHEAMBM != 0 {
-            os.write_uint32(5, self.PDAPEHEAMBM)?;
+        if self.handbook_unlock_buff_id_list != 0 {
+            os.write_uint32(11, self.handbook_unlock_buff_id_list)?;
         }
-        if self.CKKEKMJMABC != 0 {
-            os.write_uint32(8, self.CKKEKMJMABC)?;
+        if self.select_buff_list != 0 {
+            os.write_uint32(8, self.select_buff_list)?;
         }
-        if self.EKFLPNLAPDF != 0 {
-            os.write_uint32(9, self.EKFLPNLAPDF)?;
+        if self.roll_buff_max_count != 0 {
+            os.write_uint32(14, self.roll_buff_max_count)?;
         }
-        os.write_repeated_packed_uint32(6, &self.PDIHILCLENM)?;
-        if self.IGCHBPAKBCB != 0 {
-            os.write_uint32(14, self.IGCHBPAKBCB)?;
+        os.write_repeated_packed_uint32(13, &self.can_rolls)?;
+        if self.can_roll != false {
+            os.write_bool(12, self.can_roll)?;
         }
-        if self.EHPMCGOELGB != false {
-            os.write_bool(11, self.EHPMCGOELGB)?;
+        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
         }
         if self.IPODNBLJPOL != 0 {
-            os.write_uint32(10, self.IPODNBLJPOL)?;
+            os.write_uint32(1, self.IPODNBLJPOL)?;
         }
-        if self.DJFCKFEMGOJ != 0 {
-            os.write_uint32(12, self.DJFCKFEMGOJ)?;
+        if self.first_buff_type_list != 0 {
+            os.write_uint32(6, self.first_buff_type_list)?;
+        }
+        if self.source_cur_count != 0 {
+            os.write_uint32(2, self.source_cur_count)?;
+        }
+        if let Some(v) = self.source_total_count.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.maze_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if let Some(v) = self.FPOELPFCNBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.BHEIDPPFCKA != 0 {
-            os.write_uint32(7, self.BHEIDPPFCKA)?;
-        }
-        if self.CMOGBLHAFHN != 0 {
-            os.write_uint32(2, self.CMOGBLHAFHN)?;
+        if self.source_hint_id != 0 {
+            os.write_uint32(7, self.source_hint_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -309,37 +309,37 @@ impl ::protobuf::Message for OMOGAIEOFAH {
     }
 
     fn clear(&mut self) {
-        self.HHMABJDIMGM = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
-        self.PDAPEHEAMBM = 0;
-        self.CKKEKMJMABC = 0;
-        self.EKFLPNLAPDF = 0;
-        self.PDIHILCLENM.clear();
-        self.IGCHBPAKBCB = 0;
-        self.EHPMCGOELGB = false;
+        self.source_type = 0;
+        self.handbook_unlock_buff_id_list = 0;
+        self.select_buff_list = 0;
+        self.roll_buff_max_count = 0;
+        self.can_rolls.clear();
+        self.can_roll = false;
+        self.modifier_source_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType::ROGUE_COMMON_BUFF_SELECT_SOURCE_TYPE_NONE);
         self.IPODNBLJPOL = 0;
-        self.DJFCKFEMGOJ = 0;
+        self.first_buff_type_list = 0;
+        self.source_cur_count = 0;
+        self.source_total_count.clear();
         self.maze_buff_list.clear();
-        self.FPOELPFCNBI.clear();
-        self.BHEIDPPFCKA = 0;
-        self.CMOGBLHAFHN = 0;
+        self.source_hint_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMOGAIEOFAH {
         static instance: OMOGAIEOFAH = OMOGAIEOFAH {
-            HHMABJDIMGM: ::protobuf::EnumOrUnknown::from_i32(0),
-            PDAPEHEAMBM: 0,
-            CKKEKMJMABC: 0,
-            EKFLPNLAPDF: 0,
-            PDIHILCLENM: ::std::vec::Vec::new(),
-            IGCHBPAKBCB: 0,
-            EHPMCGOELGB: false,
+            source_type: 0,
+            handbook_unlock_buff_id_list: 0,
+            select_buff_list: 0,
+            roll_buff_max_count: 0,
+            can_rolls: ::std::vec::Vec::new(),
+            can_roll: false,
+            modifier_source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             IPODNBLJPOL: 0,
-            DJFCKFEMGOJ: 0,
+            first_buff_type_list: 0,
+            source_cur_count: 0,
+            source_total_count: ::protobuf::MessageField::none(),
             maze_buff_list: ::std::vec::Vec::new(),
-            FPOELPFCNBI: ::protobuf::MessageField::none(),
-            BHEIDPPFCKA: 0,
-            CMOGBLHAFHN: 0,
+            source_hint_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -364,21 +364,21 @@ impl ::protobuf::reflect::ProtobufValue for OMOGAIEOFAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OMOGAIEOFAH.proto\x1a\x12ItemCostData.proto\x1a\x11MKEELPFDCLM.pro\
-    to\x1a%RogueCommonBuffSelectSourceType.proto\"\x8a\x04\n\x0bOMOGAIEOFAH\
-    \x12B\n\x0bHHMABJDIMGM\x18\x04\x20\x01(\x0e2\x20.RogueCommonBuffSelectSo\
-    urceTypeR\x0bHHMABJDIMGM\x12\x20\n\x0bPDAPEHEAMBM\x18\x05\x20\x01(\rR\
-    \x0bPDAPEHEAMBM\x12\x20\n\x0bCKKEKMJMABC\x18\x08\x20\x01(\rR\x0bCKKEKMJM\
-    ABC\x12\x20\n\x0bEKFLPNLAPDF\x18\t\x20\x01(\rR\x0bEKFLPNLAPDF\x12\x20\n\
-    \x0bPDIHILCLENM\x18\x06\x20\x03(\rR\x0bPDIHILCLENM\x12\x20\n\x0bIGCHBPAK\
-    BCB\x18\x0e\x20\x01(\rR\x0bIGCHBPAKBCB\x12\x20\n\x0bEHPMCGOELGB\x18\x0b\
-    \x20\x01(\x08R\x0bEHPMCGOELGB\x12\x20\n\x0bIPODNBLJPOL\x18\n\x20\x01(\rR\
-    \x0bIPODNBLJPOL\x12\x20\n\x0bDJFCKFEMGOJ\x18\x0c\x20\x01(\rR\x0bDJFCKFEM\
-    GOJ\x122\n\x0emaze_buff_list\x18\x03\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0cm\
-    azeBuffList\x12/\n\x0bFPOELPFCNBI\x18\r\x20\x01(\x0b2\r.ItemCostDataR\
-    \x0bFPOELPFCNBI\x12\x20\n\x0bBHEIDPPFCKA\x18\x07\x20\x01(\rR\x0bBHEIDPPF\
-    CKA\x12\x20\n\x0bCMOGBLHAFHN\x18\x02\x20\x01(\rR\x0bCMOGBLHAFHNb\x06prot\
-    o3\
+    \n\x11OMOGAIEOFAH.proto\x1a\x12ItemCostData.proto\x1a\x0fRogueBuff.proto\
+    \x1a%RogueCommonBuffSelectSourceType.proto\"\xe5\x04\n\x0bOMOGAIEOFAH\
+    \x12\x1f\n\x0bsource_type\x18\x05\x20\x01(\rR\nsourceType\x12>\n\x1chand\
+    book_unlock_buff_id_list\x18\x0b\x20\x01(\rR\x18handbookUnlockBuffIdList\
+    \x12(\n\x10select_buff_list\x18\x08\x20\x01(\rR\x0eselectBuffList\x12-\n\
+    \x13roll_buff_max_count\x18\x0e\x20\x01(\rR\x10rollBuffMaxCount\x12\x1b\
+    \n\tcan_rolls\x18\r\x20\x03(\rR\x08canRolls\x12\x19\n\x08can_roll\x18\
+    \x0c\x20\x01(\x08R\x07canRoll\x12R\n\x14modifier_source_type\x18\x03\x20\
+    \x01(\x0e2\x20.RogueCommonBuffSelectSourceTypeR\x12modifierSourceType\
+    \x12\x20\n\x0bIPODNBLJPOL\x18\x01\x20\x01(\rR\x0bIPODNBLJPOL\x12/\n\x14f\
+    irst_buff_type_list\x18\x06\x20\x01(\rR\x11firstBuffTypeList\x12(\n\x10s\
+    ource_cur_count\x18\x02\x20\x01(\rR\x0esourceCurCount\x12;\n\x12source_t\
+    otal_count\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x10sourceTotalCount\x12\
+    0\n\x0emaze_buff_list\x18\n\x20\x03(\x0b2\n.RogueBuffR\x0cmazeBuffList\
+    \x12$\n\x0esource_hint_id\x18\x07\x20\x01(\rR\x0csourceHintIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -397,7 +397,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::ItemCostData::file_descriptor().clone());
-            deps.push(super::MKEELPFDCLM::file_descriptor().clone());
+            deps.push(super::RogueBuff::file_descriptor().clone());
             deps.push(super::RogueCommonBuffSelectSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OMOGAIEOFAH::generated_message_descriptor_data());

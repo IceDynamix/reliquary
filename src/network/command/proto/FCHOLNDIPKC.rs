@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FCHOLNDIPKC {
     // message fields
-    // @@protoc_insertion_point(field:FCHOLNDIPKC.floor_id)
-    pub floor_id: u32,
     // @@protoc_insertion_point(field:FCHOLNDIPKC.CLJJAFGFKEL)
     pub CLJJAFGFKEL: ::std::vec::Vec<super::LAMMCHABAGH::LAMMCHABAGH>,
+    // @@protoc_insertion_point(field:FCHOLNDIPKC.floor_id)
+    pub floor_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FCHOLNDIPKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FCHOLNDIPKC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &FCHOLNDIPKC| { &m.floor_id },
-            |m: &mut FCHOLNDIPKC| { &mut m.floor_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CLJJAFGFKEL",
             |m: &FCHOLNDIPKC| { &m.CLJJAFGFKEL },
             |m: &mut FCHOLNDIPKC| { &mut m.CLJJAFGFKEL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &FCHOLNDIPKC| { &m.floor_id },
+            |m: &mut FCHOLNDIPKC| { &mut m.floor_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FCHOLNDIPKC>(
             "FCHOLNDIPKC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FCHOLNDIPKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                58 => {
+                42 => {
                     self.CLJJAFGFKEL.push(is.read_message()?);
+                },
+                8 => {
+                    self.floor_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for FCHOLNDIPKC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.floor_id);
-        }
         for value in &self.CLJJAFGFKEL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.floor_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.floor_id != 0 {
-            os.write_uint32(5, self.floor_id)?;
-        }
         for v in &self.CLJJAFGFKEL {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.floor_id != 0 {
+            os.write_uint32(1, self.floor_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FCHOLNDIPKC {
     }
 
     fn clear(&mut self) {
-        self.floor_id = 0;
         self.CLJJAFGFKEL.clear();
+        self.floor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FCHOLNDIPKC {
         static instance: FCHOLNDIPKC = FCHOLNDIPKC {
-            floor_id: 0,
             CLJJAFGFKEL: ::std::vec::Vec::new(),
+            floor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FCHOLNDIPKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FCHOLNDIPKC.proto\x1a\x11LAMMCHABAGH.proto\"X\n\x0bFCHOLNDIPKC\x12\
-    \x19\n\x08floor_id\x18\x05\x20\x01(\rR\x07floorId\x12.\n\x0bCLJJAFGFKEL\
-    \x18\x07\x20\x03(\x0b2\x0c.LAMMCHABAGHR\x0bCLJJAFGFKELb\x06proto3\
+    .\n\x0bCLJJAFGFKEL\x18\x05\x20\x03(\x0b2\x0c.LAMMCHABAGHR\x0bCLJJAFGFKEL\
+    \x12\x19\n\x08floor_id\x18\x01\x20\x01(\rR\x07floorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

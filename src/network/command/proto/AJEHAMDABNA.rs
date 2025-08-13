@@ -79,7 +79,7 @@ impl ::protobuf::Message for AJEHAMDABNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                80 => {
                     self.is_win = is.read_bool()?;
                 },
                 72 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AJEHAMDABNA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_win != false {
-            os.write_bool(15, self.is_win)?;
+            os.write_bool(10, self.is_win)?;
         }
         if self.OMDDFKMAAPE != 0 {
             os.write_uint32(9, self.OMDDFKMAAPE)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for AJEHAMDABNA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJEHAMDABNA.proto\"F\n\x0bAJEHAMDABNA\x12\x15\n\x06is_win\x18\x0f\
+    \n\x11AJEHAMDABNA.proto\"F\n\x0bAJEHAMDABNA\x12\x15\n\x06is_win\x18\n\
     \x20\x01(\x08R\x05isWin\x12\x20\n\x0bOMDDFKMAAPE\x18\t\x20\x01(\rR\x0bOM\
     DDFKMAAPEb\x06proto3\
 ";

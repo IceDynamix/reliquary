@@ -79,10 +79,10 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                112 => {
                     self.APPKEEOBJKC = is.read_uint32()?;
                 },
-                8 => {
+                120 => {
                     self.HAPEKNJBOJE = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.APPKEEOBJKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.APPKEEOBJKC);
+            my_size += ::protobuf::rt::uint32_size(14, self.APPKEEOBJKC);
         }
         if self.HAPEKNJBOJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HAPEKNJBOJE);
+            my_size += ::protobuf::rt::uint32_size(15, self.HAPEKNJBOJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.APPKEEOBJKC != 0 {
-            os.write_uint32(3, self.APPKEEOBJKC)?;
+            os.write_uint32(14, self.APPKEEOBJKC)?;
         }
         if self.HAPEKNJBOJE != 0 {
-            os.write_uint32(1, self.HAPEKNJBOJE)?;
+            os.write_uint32(15, self.HAPEKNJBOJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IDMDLOKHEBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IDMDLOKHEBJ.proto\"Q\n\x0bIDMDLOKHEBJ\x12\x20\n\x0bAPPKEEOBJKC\x18\
-    \x03\x20\x01(\rR\x0bAPPKEEOBJKC\x12\x20\n\x0bHAPEKNJBOJE\x18\x01\x20\x01\
+    \x0e\x20\x01(\rR\x0bAPPKEEOBJKC\x12\x20\n\x0bHAPEKNJBOJE\x18\x0f\x20\x01\
     (\rR\x0bHAPEKNJBOJEb\x06proto3\
 ";
 

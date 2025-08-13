@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournHandBookNotify {
     // message oneof groups
-    pub PGOCCMGHLHK: ::std::option::Option<rogue_tourn_hand_book_notify::PGOCCMGHLHK>,
+    pub KFELKJLDKEH: ::std::option::Option<rogue_tourn_hand_book_notify::KFELKJLDKEH>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournHandBookNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl RogueTournHandBookNotify {
         ::std::default::Default::default()
     }
 
-    // .JNIAOGIIOGB IIHOPMEEAJA = 6;
+    // .JNIAOGIIOGB IIHOPMEEAJA = 10;
 
     pub fn IIHOPMEEAJA(&self) -> &super::JNIAOGIIOGB::JNIAOGIIOGB {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(ref v)) => v,
             _ => <super::JNIAOGIIOGB::JNIAOGIIOGB as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_IIHOPMEEAJA(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_IIHOPMEEAJA(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_IIHOPMEEAJA(&mut self, v: super::JNIAOGIIOGB::JNIAOGIIOGB) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_IIHOPMEEAJA(&mut self) -> &mut super::JNIAOGIIOGB::JNIAOGIIOGB {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(_)) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(super::JNIAOGIIOGB::JNIAOGIIOGB::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(super::JNIAOGIIOGB::JNIAOGIIOGB::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl RogueTournHandBookNotify {
     // Take field
     pub fn take_IIHOPMEEAJA(&mut self) -> super::JNIAOGIIOGB::JNIAOGIIOGB {
         if self.has_IIHOPMEEAJA() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .JCCCACNFDJG GPOLBDGOOOD = 9;
+    // .JCCCACNFDJG GPOLBDGOOOD = 15;
 
     pub fn GPOLBDGOOOD(&self) -> &super::JCCCACNFDJG::JCCCACNFDJG {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(ref v)) => v,
             _ => <super::JCCCACNFDJG::JCCCACNFDJG as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_GPOLBDGOOOD(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_GPOLBDGOOOD(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_GPOLBDGOOOD(&mut self, v: super::JCCCACNFDJG::JCCCACNFDJG) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_GPOLBDGOOOD(&mut self) -> &mut super::JCCCACNFDJG::JCCCACNFDJG {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(_)) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(super::JCCCACNFDJG::JCCCACNFDJG::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(super::JCCCACNFDJG::JCCCACNFDJG::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl RogueTournHandBookNotify {
     // Take field
     pub fn take_GPOLBDGOOOD(&mut self) -> super::JCCCACNFDJG::JCCCACNFDJG {
         if self.has_GPOLBDGOOOD() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -146,36 +146,36 @@ impl RogueTournHandBookNotify {
     // .JFIHGDPOIID ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF = 12;
 
     pub fn ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&self) -> &super::JFIHGDPOIID::JFIHGDPOIID {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v)) => v,
             _ => <super::JFIHGDPOIID::JFIHGDPOIID as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&mut self, v: super::JFIHGDPOIID::JFIHGDPOIID) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&mut self) -> &mut super::JFIHGDPOIID::JFIHGDPOIID {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(_)) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(super::JFIHGDPOIID::JFIHGDPOIID::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(super::JFIHGDPOIID::JFIHGDPOIID::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl RogueTournHandBookNotify {
     // Take field
     pub fn take_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF(&mut self) -> super::JFIHGDPOIID::JFIHGDPOIID {
         if self.has_ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -192,39 +192,39 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .ECGOCHPMCPD NFLDODIABCL = 11;
+    // .ECGOCHPMCPD NFLDODIABCL = 8;
 
     pub fn NFLDODIABCL(&self) -> &super::ECGOCHPMCPD::ECGOCHPMCPD {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(ref v)) => v,
             _ => <super::ECGOCHPMCPD::ECGOCHPMCPD as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_NFLDODIABCL(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_NFLDODIABCL(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_NFLDODIABCL(&mut self, v: super::ECGOCHPMCPD::ECGOCHPMCPD) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_NFLDODIABCL(&mut self) -> &mut super::ECGOCHPMCPD::ECGOCHPMCPD {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(_)) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(super::ECGOCHPMCPD::ECGOCHPMCPD::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(super::ECGOCHPMCPD::ECGOCHPMCPD::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -232,8 +232,8 @@ impl RogueTournHandBookNotify {
     // Take field
     pub fn take_NFLDODIABCL(&mut self) -> super::ECGOCHPMCPD::ECGOCHPMCPD {
         if self.has_NFLDODIABCL() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -241,48 +241,48 @@ impl RogueTournHandBookNotify {
         }
     }
 
-    // .APFJLOFINFJ HPDBJALEMMO = 14;
+    // .APFJLOFINFJ tourn_formula_info = 9;
 
-    pub fn HPDBJALEMMO(&self) -> &super::APFJLOFINFJ::APFJLOFINFJ {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref v)) => v,
+    pub fn tourn_formula_info(&self) -> &super::APFJLOFINFJ::APFJLOFINFJ {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(ref v)) => v,
             _ => <super::APFJLOFINFJ::APFJLOFINFJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HPDBJALEMMO(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+    pub fn clear_tourn_formula_info(&mut self) {
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
-    pub fn has_HPDBJALEMMO(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(..)) => true,
+    pub fn has_tourn_formula_info(&self) -> bool {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HPDBJALEMMO(&mut self, v: super::APFJLOFINFJ::APFJLOFINFJ) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(v))
+    pub fn set_tourn_formula_info(&mut self, v: super::APFJLOFINFJ::APFJLOFINFJ) {
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HPDBJALEMMO(&mut self) -> &mut super::APFJLOFINFJ::APFJLOFINFJ {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(_)) = self.PGOCCMGHLHK {
+    pub fn mut_tourn_formula_info(&mut self) -> &mut super::APFJLOFINFJ::APFJLOFINFJ {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(super::APFJLOFINFJ::APFJLOFINFJ::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(super::APFJLOFINFJ::APFJLOFINFJ::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HPDBJALEMMO(&mut self) -> super::APFJLOFINFJ::APFJLOFINFJ {
-        if self.has_HPDBJALEMMO() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(v)) => v,
+    pub fn take_tourn_formula_info(&mut self) -> super::APFJLOFINFJ::APFJLOFINFJ {
+        if self.has_tourn_formula_info() {
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -293,36 +293,36 @@ impl RogueTournHandBookNotify {
     // .FIDFNNCJAJE JMIDLLDKJBI = 3;
 
     pub fn JMIDLLDKJBI(&self) -> &super::FIDFNNCJAJE::FIDFNNCJAJE {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(ref v)) => v,
             _ => <super::FIDFNNCJAJE::FIDFNNCJAJE as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JMIDLLDKJBI(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_JMIDLLDKJBI(&self) -> bool {
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JMIDLLDKJBI(&mut self, v: super::FIDFNNCJAJE::FIDFNNCJAJE) {
-        self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JMIDLLDKJBI(&mut self) -> &mut super::FIDFNNCJAJE::FIDFNNCJAJE {
-        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(_)) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(_)) = self.KFELKJLDKEH {
         } else {
-            self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(super::FIDFNNCJAJE::FIDFNNCJAJE::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(super::FIDFNNCJAJE::FIDFNNCJAJE::new()));
         }
-        match self.PGOCCMGHLHK {
-            ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -330,8 +330,8 @@ impl RogueTournHandBookNotify {
     // Take field
     pub fn take_JMIDLLDKJBI(&mut self) -> super::FIDFNNCJAJE::FIDFNNCJAJE {
         if self.has_JMIDLLDKJBI() {
-            match self.PGOCCMGHLHK.take() {
-                ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -371,11 +371,11 @@ impl RogueTournHandBookNotify {
             RogueTournHandBookNotify::set_NFLDODIABCL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APFJLOFINFJ::APFJLOFINFJ>(
-            "HPDBJALEMMO",
-            RogueTournHandBookNotify::has_HPDBJALEMMO,
-            RogueTournHandBookNotify::HPDBJALEMMO,
-            RogueTournHandBookNotify::mut_HPDBJALEMMO,
-            RogueTournHandBookNotify::set_HPDBJALEMMO,
+            "tourn_formula_info",
+            RogueTournHandBookNotify::has_tourn_formula_info,
+            RogueTournHandBookNotify::tourn_formula_info,
+            RogueTournHandBookNotify::mut_tourn_formula_info,
+            RogueTournHandBookNotify::set_tourn_formula_info,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FIDFNNCJAJE::FIDFNNCJAJE>(
             "JMIDLLDKJBI",
@@ -384,7 +384,7 @@ impl RogueTournHandBookNotify {
             RogueTournHandBookNotify::mut_JMIDLLDKJBI,
             RogueTournHandBookNotify::set_JMIDLLDKJBI,
         ));
-        oneofs.push(rogue_tourn_hand_book_notify::PGOCCMGHLHK::generated_oneof_descriptor_data());
+        oneofs.push(rogue_tourn_hand_book_notify::KFELKJLDKEH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournHandBookNotify>(
             "RogueTournHandBookNotify",
             fields,
@@ -403,23 +403,23 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(is.read_message()?));
+                82 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(is.read_message()?));
                 },
-                74 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(is.read_message()?));
+                122 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(is.read_message()?));
                 },
                 98 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(is.read_message()?));
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(is.read_message()?));
                 },
-                90 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(is.read_message()?));
+                66 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(is.read_message()?));
                 },
-                114 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(is.read_message()?));
+                74 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(is.read_message()?));
                 },
                 26 => {
-                    self.PGOCCMGHLHK = ::std::option::Option::Some(rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(is.read_message()?));
+                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -433,29 +433,29 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -467,24 +467,24 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.PGOCCMGHLHK {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::IIHOPMEEAJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::IIHOPMEEAJA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::GPOLBDGOOOD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::GPOLBDGOOOD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::NFLDODIABCL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::NFLDODIABCL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::HPDBJALEMMO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::TournFormulaInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &rogue_tourn_hand_book_notify::PGOCCMGHLHK::JMIDLLDKJBI(ref v) => {
+                &rogue_tourn_hand_book_notify::KFELKJLDKEH::JMIDLLDKJBI(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
@@ -506,18 +506,18 @@ impl ::protobuf::Message for RogueTournHandBookNotify {
     }
 
     fn clear(&mut self) {
-        self.PGOCCMGHLHK = ::std::option::Option::None;
-        self.PGOCCMGHLHK = ::std::option::Option::None;
-        self.PGOCCMGHLHK = ::std::option::Option::None;
-        self.PGOCCMGHLHK = ::std::option::Option::None;
-        self.PGOCCMGHLHK = ::std::option::Option::None;
-        self.PGOCCMGHLHK = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournHandBookNotify {
         static instance: RogueTournHandBookNotify = RogueTournHandBookNotify {
-            PGOCCMGHLHK: ::std::option::Option::None,
+            KFELKJLDKEH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -546,8 +546,8 @@ pub mod rogue_tourn_hand_book_notify {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueTournHandBookNotify.PGOCCMGHLHK)
-    pub enum PGOCCMGHLHK {
+    // @@protoc_insertion_point(oneof:RogueTournHandBookNotify.KFELKJLDKEH)
+    pub enum KFELKJLDKEH {
         // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.IIHOPMEEAJA)
         IIHOPMEEAJA(super::super::JNIAOGIIOGB::JNIAOGIIOGB),
         // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.GPOLBDGOOOD)
@@ -556,25 +556,25 @@ pub mod rogue_tourn_hand_book_notify {
         ROGUECOMMONACTIONRESULTSOURCETYPEBUFF(super::super::JFIHGDPOIID::JFIHGDPOIID),
         // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.NFLDODIABCL)
         NFLDODIABCL(super::super::ECGOCHPMCPD::ECGOCHPMCPD),
-        // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.HPDBJALEMMO)
-        HPDBJALEMMO(super::super::APFJLOFINFJ::APFJLOFINFJ),
+        // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.tourn_formula_info)
+        TournFormulaInfo(super::super::APFJLOFINFJ::APFJLOFINFJ),
         // @@protoc_insertion_point(oneof_field:RogueTournHandBookNotify.JMIDLLDKJBI)
         JMIDLLDKJBI(super::super::FIDFNNCJAJE::FIDFNNCJAJE),
     }
 
-    impl ::protobuf::Oneof for PGOCCMGHLHK {
+    impl ::protobuf::Oneof for KFELKJLDKEH {
     }
 
-    impl ::protobuf::OneofFull for PGOCCMGHLHK {
+    impl ::protobuf::OneofFull for KFELKJLDKEH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueTournHandBookNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("PGOCCMGHLHK").unwrap()).clone()
+            descriptor.get(|| <super::RogueTournHandBookNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
         }
     }
 
-    impl PGOCCMGHLHK {
+    impl KFELKJLDKEH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PGOCCMGHLHK>("PGOCCMGHLHK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
         }
     }
 }
@@ -582,15 +582,15 @@ pub mod rogue_tourn_hand_book_notify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueTournHandBookNotify.proto\x1a\x11APFJLOFINFJ.proto\x1a\x11ECG\
     OCHPMCPD.proto\x1a\x11FIDFNNCJAJE.proto\x1a\x11JCCCACNFDJG.proto\x1a\x11\
-    JFIHGDPOIID.proto\x1a\x11JNIAOGIIOGB.proto\"\x8f\x03\n\x18RogueTournHand\
-    BookNotify\x120\n\x0bIIHOPMEEAJA\x18\x06\x20\x01(\x0b2\x0c.JNIAOGIIOGBH\
-    \0R\x0bIIHOPMEEAJA\x120\n\x0bGPOLBDGOOOD\x18\t\x20\x01(\x0b2\x0c.JCCCACN\
-    FDJGH\0R\x0bGPOLBDGOOOD\x12j\n+ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BU\
-    FF\x18\x0c\x20\x01(\x0b2\x0c.JFIHGDPOIIDH\0R%ROGUECOMMONACTIONRESULTSOUR\
-    CETYPEBUFF\x120\n\x0bNFLDODIABCL\x18\x0b\x20\x01(\x0b2\x0c.ECGOCHPMCPDH\
-    \0R\x0bNFLDODIABCL\x120\n\x0bHPDBJALEMMO\x18\x0e\x20\x01(\x0b2\x0c.APFJL\
-    OFINFJH\0R\x0bHPDBJALEMMO\x120\n\x0bJMIDLLDKJBI\x18\x03\x20\x01(\x0b2\
-    \x0c.FIDFNNCJAJEH\0R\x0bJMIDLLDKJBIB\r\n\x0bPGOCCMGHLHKb\x06proto3\
+    JFIHGDPOIID.proto\x1a\x11JNIAOGIIOGB.proto\"\x9b\x03\n\x18RogueTournHand\
+    BookNotify\x120\n\x0bIIHOPMEEAJA\x18\n\x20\x01(\x0b2\x0c.JNIAOGIIOGBH\0R\
+    \x0bIIHOPMEEAJA\x120\n\x0bGPOLBDGOOOD\x18\x0f\x20\x01(\x0b2\x0c.JCCCACNF\
+    DJGH\0R\x0bGPOLBDGOOOD\x12j\n+ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUF\
+    F\x18\x0c\x20\x01(\x0b2\x0c.JFIHGDPOIIDH\0R%ROGUECOMMONACTIONRESULTSOURC\
+    ETYPEBUFF\x120\n\x0bNFLDODIABCL\x18\x08\x20\x01(\x0b2\x0c.ECGOCHPMCPDH\0\
+    R\x0bNFLDODIABCL\x12<\n\x12tourn_formula_info\x18\t\x20\x01(\x0b2\x0c.AP\
+    FJLOFINFJH\0R\x10tournFormulaInfo\x120\n\x0bJMIDLLDKJBI\x18\x03\x20\x01(\
+    \x0b2\x0c.FIDFNNCJAJEH\0R\x0bJMIDLLDKJBIB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

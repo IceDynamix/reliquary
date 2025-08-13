@@ -72,7 +72,7 @@ impl ::protobuf::Message for EENDHPKPFLP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                122 => {
                     self.MEBJCLENPIO.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EENDHPKPFLP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MEBJCLENPIO {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EENDHPKPFLP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EENDHPKPFLP.proto\x1a\x13RogueModifier.proto\"?\n\x0bEENDHPKPFLP\
-    \x120\n\x0bMEBJCLENPIO\x18\x04\x20\x03(\x0b2\x0e.RogueModifierR\x0bMEBJC\
+    \x120\n\x0bMEBJCLENPIO\x18\x0f\x20\x03(\x0b2\x0e.RogueModifierR\x0bMEBJC\
     LENPIOb\x06proto3\
 ";
 

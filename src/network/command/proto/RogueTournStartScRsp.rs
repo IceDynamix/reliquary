@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.KHJCGNLLFOH)
-    pub KHJCGNLLFOH: u32,
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.week)
+    pub week: u32,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>,
     // @@protoc_insertion_point(field:RogueTournStartScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.BHMHLPCHKLG)
-    pub BHMHLPCHKLG: ::protobuf::MessageField<super::CFCDHLPOOGC::CFCDHLPOOGC>,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.rogue_tourn_cur_info)
+    pub rogue_tourn_cur_info: ::protobuf::MessageField<super::RogueTournCurInfo::RogueTournCurInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl RogueTournStartScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHJCGNLLFOH",
-            |m: &RogueTournStartScRsp| { &m.KHJCGNLLFOH },
-            |m: &mut RogueTournStartScRsp| { &mut m.KHJCGNLLFOH },
+            "week",
+            |m: &RogueTournStartScRsp| { &m.week },
+            |m: &mut RogueTournStartScRsp| { &mut m.week },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJEMJBNAJFJ::FJEMJBNAJFJ>(
-            "LCOCLENJJAI",
-            |m: &RogueTournStartScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueTournStartScRsp| { &mut m.LCOCLENJJAI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueTournStartScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueTournStartScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournStartScRsp| { &m.retcode },
             |m: &mut RogueTournStartScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFCDHLPOOGC::CFCDHLPOOGC>(
-            "BHMHLPCHKLG",
-            |m: &RogueTournStartScRsp| { &m.BHMHLPCHKLG },
-            |m: &mut RogueTournStartScRsp| { &mut m.BHMHLPCHKLG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurInfo::RogueTournCurInfo>(
+            "rogue_tourn_cur_info",
+            |m: &RogueTournStartScRsp| { &m.rogue_tourn_cur_info },
+            |m: &mut RogueTournStartScRsp| { &mut m.rogue_tourn_cur_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartScRsp>(
             "RogueTournStartScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.KHJCGNLLFOH = is.read_uint32()?;
+                88 => {
+                    self.week = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
-                64 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHMHLPCHKLG)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHJCGNLLFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KHJCGNLLFOH);
+        if self.week != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.week);
         }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHJCGNLLFOH != 0 {
-            os.write_uint32(3, self.KHJCGNLLFOH)?;
+        if self.week != 0 {
+            os.write_uint32(11, self.week)?;
         }
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if let Some(v) = self.BHMHLPCHKLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.KHJCGNLLFOH = 0;
-        self.LCOCLENJJAI.clear();
+        self.week = 0;
+        self.rogue_tourn_cur_scene_info.clear();
         self.retcode = 0;
-        self.BHMHLPCHKLG.clear();
+        self.rogue_tourn_cur_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournStartScRsp {
         static instance: RogueTournStartScRsp = RogueTournStartScRsp {
-            KHJCGNLLFOH: 0,
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
+            week: 0,
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            BHMHLPCHKLG: ::protobuf::MessageField::none(),
+            rogue_tourn_cur_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueTournStartScRsp.proto\x1a\x11CFCDHLPOOGC.proto\x1a\x11FJEMJBN\
-    AJFJ.proto\"\xb2\x01\n\x14RogueTournStartScRsp\x12\x20\n\x0bKHJCGNLLFOH\
-    \x18\x03\x20\x01(\rR\x0bKHJCGNLLFOH\x12.\n\x0bLCOCLENJJAI\x18\x01\x20\
-    \x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\x12\x18\n\x07retcode\x18\x08\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bBHMHLPCHKLG\x18\x0b\x20\x01(\x0b2\x0c.\
-    CFCDHLPOOGCR\x0bBHMHLPCHKLGb\x06proto3\
+    \n\x1aRogueTournStartScRsp.proto\x1a\x17RogueTournCurInfo.proto\x1a\x1cR\
+    ogueTournCurSceneInfo.proto\"\xde\x01\n\x14RogueTournStartScRsp\x12\x12\
+    \n\x04week\x18\x0b\x20\x01(\rR\x04week\x12S\n\x1arogue_tourn_cur_scene_i\
+    nfo\x18\x0f\x20\x01(\x0b2\x17.RogueTournCurSceneInfoR\x16rogueTournCurSc\
+    eneInfo\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12C\n\x14ro\
+    gue_tourn_cur_info\x18\r\x20\x01(\x0b2\x12.RogueTournCurInfoR\x11rogueTo\
+    urnCurInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CFCDHLPOOGC::file_descriptor().clone());
-            deps.push(super::FJEMJBNAJFJ::file_descriptor().clone());
+            deps.push(super::RogueTournCurInfo::file_descriptor().clone());
+            deps.push(super::RogueTournCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournStartScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

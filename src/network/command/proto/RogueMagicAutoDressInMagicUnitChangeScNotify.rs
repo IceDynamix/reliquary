@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.KHDHAHNNALM = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KHDHAHNNALM != false {
-            os.write_bool(4, self.KHDHAHNNALM)?;
+            os.write_bool(12, self.KHDHAHNNALM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAutoDressInMagicUnitChange
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n2RogueMagicAutoDressInMagicUnitChangeScNotify.proto\"P\n,RogueMagicAut\
-    oDressInMagicUnitChangeScNotify\x12\x20\n\x0bKHDHAHNNALM\x18\x04\x20\x01\
+    oDressInMagicUnitChangeScNotify\x12\x20\n\x0bKHDHAHNNALM\x18\x0c\x20\x01\
     (\x08R\x0bKHDHAHNNALMb\x06proto3\
 ";
 

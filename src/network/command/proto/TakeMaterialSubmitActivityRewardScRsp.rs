@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.PEHOFBBDNIC = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PEHOFBBDNIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PEHOFBBDNIC);
+            my_size += ::protobuf::rt::uint32_size(1, self.PEHOFBBDNIC);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeMaterialSubmitActivityRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PEHOFBBDNIC != 0 {
-            os.write_uint32(8, self.PEHOFBBDNIC)?;
+            os.write_uint32(1, self.PEHOFBBDNIC)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeMaterialSubmitActivityRewardScRs
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+TakeMaterialSubmitActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\
     \x86\x01\n%TakeMaterialSubmitActivityRewardScRsp\x12\x20\n\x0bPEHOFBBDNI\
-    C\x18\x08\x20\x01(\rR\x0bPEHOFBBDNIC\x12\x18\n\x07retcode\x18\x0b\x20\
-    \x01(\rR\x07retcode\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\
+    C\x18\x01\x20\x01(\rR\x0bPEHOFBBDNIC\x12\x18\n\x07retcode\x18\x08\x20\
+    \x01(\rR\x07retcode\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\
     \x06rewardb\x06proto3\
 ";
 

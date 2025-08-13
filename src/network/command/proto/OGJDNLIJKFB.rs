@@ -86,13 +86,13 @@ impl ::protobuf::Message for OGJDNLIJKFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                64 => {
                     self.NINLFBGLBLL = is.read_uint32()?;
                 },
-                64 => {
+                24 => {
                     self.KEGCJPPOKBK = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.max_score = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for OGJDNLIJKFB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NINLFBGLBLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NINLFBGLBLL);
+            my_size += ::protobuf::rt::uint32_size(8, self.NINLFBGLBLL);
         }
         if self.KEGCJPPOKBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KEGCJPPOKBK);
+            my_size += ::protobuf::rt::uint32_size(3, self.KEGCJPPOKBK);
         }
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(9, self.max_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for OGJDNLIJKFB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NINLFBGLBLL != 0 {
-            os.write_uint32(13, self.NINLFBGLBLL)?;
+            os.write_uint32(8, self.NINLFBGLBLL)?;
         }
         if self.KEGCJPPOKBK != 0 {
-            os.write_uint32(8, self.KEGCJPPOKBK)?;
+            os.write_uint32(3, self.KEGCJPPOKBK)?;
         }
         if self.max_score != 0 {
-            os.write_uint32(7, self.max_score)?;
+            os.write_uint32(9, self.max_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for OGJDNLIJKFB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OGJDNLIJKFB.proto\"n\n\x0bOGJDNLIJKFB\x12\x20\n\x0bNINLFBGLBLL\x18\
-    \r\x20\x01(\rR\x0bNINLFBGLBLL\x12\x20\n\x0bKEGCJPPOKBK\x18\x08\x20\x01(\
-    \rR\x0bKEGCJPPOKBK\x12\x1b\n\tmax_score\x18\x07\x20\x01(\rR\x08maxScoreb\
+    \x08\x20\x01(\rR\x0bNINLFBGLBLL\x12\x20\n\x0bKEGCJPPOKBK\x18\x03\x20\x01\
+    (\rR\x0bKEGCJPPOKBK\x12\x1b\n\tmax_score\x18\t\x20\x01(\rR\x08maxScoreb\
     \x06proto3\
 ";
 

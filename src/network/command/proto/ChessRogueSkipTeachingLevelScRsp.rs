@@ -30,8 +30,8 @@ pub struct ChessRogueSkipTeachingLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.skip_reward_list)
-    pub skip_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.NDEEFFOOFLG)
+    pub NDEEFFOOFLG: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSkipTeachingLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ChessRogueSkipTeachingLevelScRsp {
             |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "skip_reward_list",
-            |m: &ChessRogueSkipTeachingLevelScRsp| { &m.skip_reward_list },
-            |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.skip_reward_list },
+            "NDEEFFOOFLG",
+            |m: &ChessRogueSkipTeachingLevelScRsp| { &m.NDEEFFOOFLG },
+            |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.NDEEFFOOFLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSkipTeachingLevelScRsp>(
             "ChessRogueSkipTeachingLevelScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.skip_reward_list)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDEEFFOOFLG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if let Some(v) = self.skip_reward_list.as_ref() {
+        if let Some(v) = self.NDEEFFOOFLG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if let Some(v) = self.skip_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.NDEEFFOOFLG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.skip_reward_list.clear();
+        self.NDEEFFOOFLG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSkipTeachingLevelScRsp {
         static instance: ChessRogueSkipTeachingLevelScRsp = ChessRogueSkipTeachingLevelScRsp {
             retcode: 0,
-            skip_reward_list: ::protobuf::MessageField::none(),
+            NDEEFFOOFLG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSkipTeachingLevelScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&ChessRogueSkipTeachingLevelScRsp.proto\x1a\x0eItemList.proto\"q\n\x20\
-    ChessRogueSkipTeachingLevelScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\r\
-    R\x07retcode\x123\n\x10skip_reward_list\x18\x08\x20\x01(\x0b2\t.ItemList\
-    R\x0eskipRewardListb\x06proto3\
+    \n&ChessRogueSkipTeachingLevelScRsp.proto\x1a\x0eItemList.proto\"i\n\x20\
+    ChessRogueSkipTeachingLevelScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
+    R\x07retcode\x12+\n\x0bNDEEFFOOFLG\x18\n\x20\x01(\x0b2\t.ItemListR\x0bND\
+    EEFFOOFLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

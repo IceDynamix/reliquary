@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ScenePlaneEventScNotify {
     // message fields
+    // @@protoc_insertion_point(field:ScenePlaneEventScNotify.get_item_list)
+    pub get_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ScenePlaneEventScNotify.MHDJADHNDKD)
     pub MHDJADHNDKD: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ScenePlaneEventScNotify.MEEKFPCOBAI)
     pub MEEKFPCOBAI: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:ScenePlaneEventScNotify.ACFCJIOMJNF)
-    pub ACFCJIOMJNF: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ScenePlaneEventScNotify.EPOJGHEBPKC)
     pub EPOJGHEBPKC: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -56,6 +56,11 @@ impl ScenePlaneEventScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "get_item_list",
+            |m: &ScenePlaneEventScNotify| { &m.get_item_list },
+            |m: &mut ScenePlaneEventScNotify| { &mut m.get_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "MHDJADHNDKD",
             |m: &ScenePlaneEventScNotify| { &m.MHDJADHNDKD },
             |m: &mut ScenePlaneEventScNotify| { &mut m.MHDJADHNDKD },
@@ -64,11 +69,6 @@ impl ScenePlaneEventScNotify {
             "MEEKFPCOBAI",
             |m: &ScenePlaneEventScNotify| { &m.MEEKFPCOBAI },
             |m: &mut ScenePlaneEventScNotify| { &mut m.MEEKFPCOBAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ACFCJIOMJNF",
-            |m: &ScenePlaneEventScNotify| { &m.ACFCJIOMJNF },
-            |m: &mut ScenePlaneEventScNotify| { &mut m.ACFCJIOMJNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "EPOJGHEBPKC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ScenePlaneEventScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.get_item_list)?;
+                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MHDJADHNDKD)?;
                 },
-                122 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEEKFPCOBAI)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACFCJIOMJNF)?;
-                },
-                106 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EPOJGHEBPKC)?;
                 },
                 tag => {
@@ -117,15 +117,15 @@ impl ::protobuf::Message for ScenePlaneEventScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.get_item_list.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.MHDJADHNDKD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.MEEKFPCOBAI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ACFCJIOMJNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -139,17 +139,17 @@ impl ::protobuf::Message for ScenePlaneEventScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.get_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         if let Some(v) = self.MHDJADHNDKD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.MEEKFPCOBAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.ACFCJIOMJNF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.EPOJGHEBPKC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,18 +168,18 @@ impl ::protobuf::Message for ScenePlaneEventScNotify {
     }
 
     fn clear(&mut self) {
+        self.get_item_list.clear();
         self.MHDJADHNDKD.clear();
         self.MEEKFPCOBAI.clear();
-        self.ACFCJIOMJNF.clear();
         self.EPOJGHEBPKC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ScenePlaneEventScNotify {
         static instance: ScenePlaneEventScNotify = ScenePlaneEventScNotify {
+            get_item_list: ::protobuf::MessageField::none(),
             MHDJADHNDKD: ::protobuf::MessageField::none(),
             MEEKFPCOBAI: ::protobuf::MessageField::none(),
-            ACFCJIOMJNF: ::protobuf::MessageField::none(),
             EPOJGHEBPKC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,12 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for ScenePlaneEventScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dScenePlaneEventScNotify.proto\x1a\x0eItemList.proto\"\xcd\x01\n\
-    \x17ScenePlaneEventScNotify\x12+\n\x0bMHDJADHNDKD\x18\x02\x20\x01(\x0b2\
-    \t.ItemListR\x0bMHDJADHNDKD\x12+\n\x0bMEEKFPCOBAI\x18\x0f\x20\x01(\x0b2\
-    \t.ItemListR\x0bMEEKFPCOBAI\x12+\n\x0bACFCJIOMJNF\x18\x04\x20\x01(\x0b2\
-    \t.ItemListR\x0bACFCJIOMJNF\x12+\n\x0bEPOJGHEBPKC\x18\r\x20\x01(\x0b2\t.\
-    ItemListR\x0bEPOJGHEBPKCb\x06proto3\
+    \n\x1dScenePlaneEventScNotify.proto\x1a\x0eItemList.proto\"\xcf\x01\n\
+    \x17ScenePlaneEventScNotify\x12-\n\rget_item_list\x18\x0b\x20\x01(\x0b2\
+    \t.ItemListR\x0bgetItemList\x12+\n\x0bMHDJADHNDKD\x18\x02\x20\x01(\x0b2\
+    \t.ItemListR\x0bMHDJADHNDKD\x12+\n\x0bMEEKFPCOBAI\x18\x07\x20\x01(\x0b2\
+    \t.ItemListR\x0bMEEKFPCOBAI\x12+\n\x0bEPOJGHEBPKC\x18\x0e\x20\x01(\x0b2\
+    \t.ItemListR\x0bEPOJGHEBPKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

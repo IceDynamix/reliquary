@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EACOFHBFMLB {
     // message fields
+    // @@protoc_insertion_point(field:EACOFHBFMLB.aeon_id)
+    pub aeon_id: u32,
+    // @@protoc_insertion_point(field:EACOFHBFMLB.exp)
+    pub exp: u32,
     // @@protoc_insertion_point(field:EACOFHBFMLB.JGMIPMDPPIJ)
     pub JGMIPMDPPIJ: u32,
     // @@protoc_insertion_point(field:EACOFHBFMLB.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:EACOFHBFMLB.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:EACOFHBFMLB.aeon_id)
-    pub aeon_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EACOFHBFMLB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl EACOFHBFMLB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "aeon_id",
+            |m: &EACOFHBFMLB| { &m.aeon_id },
+            |m: &mut EACOFHBFMLB| { &mut m.aeon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &EACOFHBFMLB| { &m.exp },
+            |m: &mut EACOFHBFMLB| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGMIPMDPPIJ",
             |m: &EACOFHBFMLB| { &m.JGMIPMDPPIJ },
             |m: &mut EACOFHBFMLB| { &mut m.JGMIPMDPPIJ },
@@ -64,16 +74,6 @@ impl EACOFHBFMLB {
             "level",
             |m: &EACOFHBFMLB| { &m.level },
             |m: &mut EACOFHBFMLB| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &EACOFHBFMLB| { &m.exp },
-            |m: &mut EACOFHBFMLB| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aeon_id",
-            |m: &EACOFHBFMLB| { &m.aeon_id },
-            |m: &mut EACOFHBFMLB| { &mut m.aeon_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EACOFHBFMLB>(
             "EACOFHBFMLB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EACOFHBFMLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.JGMIPMDPPIJ = is.read_uint32()?;
-                },
-                40 => {
-                    self.level = is.read_uint32()?;
+                72 => {
+                    self.aeon_id = is.read_uint32()?;
                 },
                 96 => {
                     self.exp = is.read_uint32()?;
                 },
-                48 => {
-                    self.aeon_id = is.read_uint32()?;
+                80 => {
+                    self.JGMIPMDPPIJ = is.read_uint32()?;
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EACOFHBFMLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JGMIPMDPPIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JGMIPMDPPIJ);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.aeon_id);
         }
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.exp);
         }
-        if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.aeon_id);
+        if self.JGMIPMDPPIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JGMIPMDPPIJ);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EACOFHBFMLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JGMIPMDPPIJ != 0 {
-            os.write_uint32(11, self.JGMIPMDPPIJ)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(9, self.aeon_id)?;
         }
         if self.exp != 0 {
             os.write_uint32(12, self.exp)?;
         }
-        if self.aeon_id != 0 {
-            os.write_uint32(6, self.aeon_id)?;
+        if self.JGMIPMDPPIJ != 0 {
+            os.write_uint32(10, self.JGMIPMDPPIJ)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EACOFHBFMLB {
     }
 
     fn clear(&mut self) {
+        self.aeon_id = 0;
+        self.exp = 0;
         self.JGMIPMDPPIJ = 0;
         self.level = 0;
-        self.exp = 0;
-        self.aeon_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EACOFHBFMLB {
         static instance: EACOFHBFMLB = EACOFHBFMLB {
+            aeon_id: 0,
+            exp: 0,
             JGMIPMDPPIJ: 0,
             level: 0,
-            exp: 0,
-            aeon_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for EACOFHBFMLB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EACOFHBFMLB.proto\"p\n\x0bEACOFHBFMLB\x12\x20\n\x0bJGMIPMDPPIJ\x18\
-    \x0b\x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x14\n\x05level\x18\x05\x20\x01(\rR\
-    \x05level\x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03exp\x12\x17\n\x07aeon_\
-    id\x18\x06\x20\x01(\rR\x06aeonIdb\x06proto3\
+    \n\x11EACOFHBFMLB.proto\"p\n\x0bEACOFHBFMLB\x12\x17\n\x07aeon_id\x18\t\
+    \x20\x01(\rR\x06aeonId\x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03exp\x12\
+    \x20\n\x0bJGMIPMDPPIJ\x18\n\x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x14\n\x05leve\
+    l\x18\r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

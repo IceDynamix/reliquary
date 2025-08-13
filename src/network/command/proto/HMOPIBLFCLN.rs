@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HMOPIBLFCLN {
     // message fields
-    // @@protoc_insertion_point(field:HMOPIBLFCLN.extra_ratio)
-    pub extra_ratio: u32,
-    // @@protoc_insertion_point(field:HMOPIBLFCLN.has_modify_all_passenger_stat_effect)
-    pub has_modify_all_passenger_stat_effect: bool,
+    // @@protoc_insertion_point(field:HMOPIBLFCLN.LKLLMPOKOGH)
+    pub LKLLMPOKOGH: bool,
+    // @@protoc_insertion_point(field:HMOPIBLFCLN.HAFCKONEHFM)
+    pub HAFCKONEHFM: u32,
+    // @@protoc_insertion_point(field:HMOPIBLFCLN.GDGHCBGHLND)
+    pub GDGHCBGHLND: ::protobuf::MessageField<super::KACKJJDJONI::KACKJJDJONI>,
     // @@protoc_insertion_point(field:HMOPIBLFCLN.LNMMKFMEAJM)
-    pub LNMMKFMEAJM: ::protobuf::MessageField<super::TrainPartyCards::TrainPartyCards>,
-    // @@protoc_insertion_point(field:HMOPIBLFCLN.meeting_count_info)
-    pub meeting_count_info: ::protobuf::MessageField<super::TrainPartyMeetingCountInfo::TrainPartyMeetingCountInfo>,
+    pub LNMMKFMEAJM: ::protobuf::MessageField<super::HBCINIKPAFI::HBCINIKPAFI>,
     // special fields
     // @@protoc_insertion_point(special_field:HMOPIBLFCLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl HMOPIBLFCLN {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_ratio",
-            |m: &HMOPIBLFCLN| { &m.extra_ratio },
-            |m: &mut HMOPIBLFCLN| { &mut m.extra_ratio },
+            "LKLLMPOKOGH",
+            |m: &HMOPIBLFCLN| { &m.LKLLMPOKOGH },
+            |m: &mut HMOPIBLFCLN| { &mut m.LKLLMPOKOGH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "has_modify_all_passenger_stat_effect",
-            |m: &HMOPIBLFCLN| { &m.has_modify_all_passenger_stat_effect },
-            |m: &mut HMOPIBLFCLN| { &mut m.has_modify_all_passenger_stat_effect },
+            "HAFCKONEHFM",
+            |m: &HMOPIBLFCLN| { &m.HAFCKONEHFM },
+            |m: &mut HMOPIBLFCLN| { &mut m.HAFCKONEHFM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyCards::TrainPartyCards>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KACKJJDJONI::KACKJJDJONI>(
+            "GDGHCBGHLND",
+            |m: &HMOPIBLFCLN| { &m.GDGHCBGHLND },
+            |m: &mut HMOPIBLFCLN| { &mut m.GDGHCBGHLND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBCINIKPAFI::HBCINIKPAFI>(
             "LNMMKFMEAJM",
             |m: &HMOPIBLFCLN| { &m.LNMMKFMEAJM },
             |m: &mut HMOPIBLFCLN| { &mut m.LNMMKFMEAJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyMeetingCountInfo::TrainPartyMeetingCountInfo>(
-            "meeting_count_info",
-            |m: &HMOPIBLFCLN| { &m.meeting_count_info },
-            |m: &mut HMOPIBLFCLN| { &mut m.meeting_count_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HMOPIBLFCLN>(
             "HMOPIBLFCLN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.extra_ratio = is.read_uint32()?;
+                120 => {
+                    self.LKLLMPOKOGH = is.read_bool()?;
                 },
-                32 => {
-                    self.has_modify_all_passenger_stat_effect = is.read_bool()?;
+                48 => {
+                    self.HAFCKONEHFM = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GDGHCBGHLND)?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNMMKFMEAJM)?;
-                },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.meeting_count_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.extra_ratio != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.extra_ratio);
-        }
-        if self.has_modify_all_passenger_stat_effect != false {
+        if self.LKLLMPOKOGH != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
+        if self.HAFCKONEHFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HAFCKONEHFM);
+        }
+        if let Some(v) = self.GDGHCBGHLND.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.meeting_count_info.as_ref() {
+        if let Some(v) = self.LNMMKFMEAJM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.extra_ratio != 0 {
-            os.write_uint32(13, self.extra_ratio)?;
+        if self.LKLLMPOKOGH != false {
+            os.write_bool(15, self.LKLLMPOKOGH)?;
         }
-        if self.has_modify_all_passenger_stat_effect != false {
-            os.write_bool(4, self.has_modify_all_passenger_stat_effect)?;
+        if self.HAFCKONEHFM != 0 {
+            os.write_uint32(6, self.HAFCKONEHFM)?;
+        }
+        if let Some(v) = self.GDGHCBGHLND.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.LNMMKFMEAJM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if let Some(v) = self.meeting_count_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     }
 
     fn clear(&mut self) {
-        self.extra_ratio = 0;
-        self.has_modify_all_passenger_stat_effect = false;
+        self.LKLLMPOKOGH = false;
+        self.HAFCKONEHFM = 0;
+        self.GDGHCBGHLND.clear();
         self.LNMMKFMEAJM.clear();
-        self.meeting_count_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HMOPIBLFCLN {
         static instance: HMOPIBLFCLN = HMOPIBLFCLN {
-            extra_ratio: 0,
-            has_modify_all_passenger_stat_effect: false,
+            LKLLMPOKOGH: false,
+            HAFCKONEHFM: 0,
+            GDGHCBGHLND: ::protobuf::MessageField::none(),
             LNMMKFMEAJM: ::protobuf::MessageField::none(),
-            meeting_count_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,13 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for HMOPIBLFCLN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HMOPIBLFCLN.proto\x1a\x15TrainPartyCards.proto\x1a\x20TrainPartyMe\
-    etingCountInfo.proto\"\xfc\x01\n\x0bHMOPIBLFCLN\x12\x1f\n\x0bextra_ratio\
-    \x18\r\x20\x01(\rR\nextraRatio\x12M\n$has_modify_all_passenger_stat_effe\
-    ct\x18\x04\x20\x01(\x08R\x1fhasModifyAllPassengerStatEffect\x122\n\x0bLN\
-    MMKFMEAJM\x18\x0c\x20\x01(\x0b2\x10.TrainPartyCardsR\x0bLNMMKFMEAJM\x12I\
-    \n\x12meeting_count_info\x18\x03\x20\x01(\x0b2\x1b.TrainPartyMeetingCoun\
-    tInfoR\x10meetingCountInfob\x06proto3\
+    \n\x11HMOPIBLFCLN.proto\x1a\x11HBCINIKPAFI.proto\x1a\x11KACKJJDJONI.prot\
+    o\"\xb1\x01\n\x0bHMOPIBLFCLN\x12\x20\n\x0bLKLLMPOKOGH\x18\x0f\x20\x01(\
+    \x08R\x0bLKLLMPOKOGH\x12\x20\n\x0bHAFCKONEHFM\x18\x06\x20\x01(\rR\x0bHAF\
+    CKONEHFM\x12.\n\x0bGDGHCBGHLND\x18\x0b\x20\x01(\x0b2\x0c.KACKJJDJONIR\
+    \x0bGDGHCBGHLND\x12.\n\x0bLNMMKFMEAJM\x18\x0c\x20\x01(\x0b2\x0c.HBCINIKP\
+    AFIR\x0bLNMMKFMEAJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::TrainPartyCards::file_descriptor().clone());
-            deps.push(super::TrainPartyMeetingCountInfo::file_descriptor().clone());
+            deps.push(super::HBCINIKPAFI::file_descriptor().clone());
+            deps.push(super::KACKJJDJONI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HMOPIBLFCLN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

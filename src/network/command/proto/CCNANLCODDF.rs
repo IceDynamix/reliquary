@@ -30,8 +30,8 @@ pub struct CCNANLCODDF {
     // message fields
     // @@protoc_insertion_point(field:CCNANLCODDF.source)
     pub source: ::protobuf::MessageField<super::OIDFFLEEALL::OIDFFLEEALL>,
-    // @@protoc_insertion_point(field:CCNANLCODDF.PBHMGCHKJGO)
-    pub PBHMGCHKJGO: ::protobuf::MessageField<super::HMBANCKGBII::HMBANCKGBII>,
+    // @@protoc_insertion_point(field:CCNANLCODDF.rogue_action)
+    pub rogue_action: ::protobuf::MessageField<super::HMBANCKGBII::HMBANCKGBII>,
     // special fields
     // @@protoc_insertion_point(special_field:CCNANLCODDF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl CCNANLCODDF {
             |m: &mut CCNANLCODDF| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HMBANCKGBII::HMBANCKGBII>(
-            "PBHMGCHKJGO",
-            |m: &CCNANLCODDF| { &m.PBHMGCHKJGO },
-            |m: &mut CCNANLCODDF| { &mut m.PBHMGCHKJGO },
+            "rogue_action",
+            |m: &CCNANLCODDF| { &m.rogue_action },
+            |m: &mut CCNANLCODDF| { &mut m.rogue_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CCNANLCODDF>(
             "CCNANLCODDF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CCNANLCODDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBHMGCHKJGO)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CCNANLCODDF {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.PBHMGCHKJGO.as_ref() {
+        if let Some(v) = self.rogue_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for CCNANLCODDF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.PBHMGCHKJGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.rogue_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for CCNANLCODDF {
 
     fn clear(&mut self) {
         self.source.clear();
-        self.PBHMGCHKJGO.clear();
+        self.rogue_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CCNANLCODDF {
         static instance: CCNANLCODDF = CCNANLCODDF {
             source: ::protobuf::MessageField::none(),
-            PBHMGCHKJGO: ::protobuf::MessageField::none(),
+            rogue_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for CCNANLCODDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCNANLCODDF.proto\x1a\x11HMBANCKGBII.proto\x1a\x11OIDFFLEEALL.prot\
-    o\"c\n\x0bCCNANLCODDF\x12$\n\x06source\x18\t\x20\x01(\x0b2\x0c.OIDFFLEEA\
-    LLR\x06source\x12.\n\x0bPBHMGCHKJGO\x18\x07\x20\x01(\x0b2\x0c.HMBANCKGBI\
-    IR\x0bPBHMGCHKJGOb\x06proto3\
+    o\"d\n\x0bCCNANLCODDF\x12$\n\x06source\x18\x01\x20\x01(\x0b2\x0c.OIDFFLE\
+    EALLR\x06source\x12/\n\x0crogue_action\x18\x0e\x20\x01(\x0b2\x0c.HMBANCK\
+    GBIIR\x0brogueActionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for FBHNFJCNHML {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
                 },
                 72 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FBHNFJCNHML {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FBJHGPDKBGM != false {
-            os.write_bool(3, self.FBJHGPDKBGM)?;
+            os.write_bool(7, self.FBJHGPDKBGM)?;
         }
         if self.JAPDCMJPIEJ != 0 {
             os.write_uint32(9, self.JAPDCMJPIEJ)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FBHNFJCNHML {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBHNFJCNHML.proto\"Q\n\x0bFBHNFJCNHML\x12\x20\n\x0bFBJHGPDKBGM\x18\
-    \x03\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\t\x20\x01\
+    \x07\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\t\x20\x01\
     (\rR\x0bJAPDCMJPIEJb\x06proto3\
 ";
 

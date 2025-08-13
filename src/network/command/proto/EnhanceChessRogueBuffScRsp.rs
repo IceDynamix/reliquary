@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceChessRogueBuffScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.FGEFCEFKHMH)
+    pub FGEFCEFKHMH: bool,
+    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.ANAGCODDMOM)
+    pub ANAGCODDMOM: ::protobuf::MessageField<super::RogueCommonBuff::RogueCommonBuff>,
     // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.ANAGCODDMOM)
-    pub ANAGCODDMOM: ::protobuf::MessageField<super::FFAMNKOAIHF::FFAMNKOAIHF>,
     // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.FHLOMGDANJM)
-    pub FHLOMGDANJM: ::protobuf::MessageField<super::NGPIMHHELMM::NGPIMHHELMM>,
-    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.is_success)
-    pub is_success: bool,
+    pub FHLOMGDANJM: ::protobuf::MessageField<super::ChessRogueBuffEnhanceList::ChessRogueBuffEnhanceList>,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceChessRogueBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl EnhanceChessRogueBuffScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnhanceChessRogueBuffScRsp| { &m.retcode },
-            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.retcode },
+            "FGEFCEFKHMH",
+            |m: &EnhanceChessRogueBuffScRsp| { &m.FGEFCEFKHMH },
+            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.FGEFCEFKHMH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFAMNKOAIHF::FFAMNKOAIHF>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonBuff::RogueCommonBuff>(
             "ANAGCODDMOM",
             |m: &EnhanceChessRogueBuffScRsp| { &m.ANAGCODDMOM },
             |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.ANAGCODDMOM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NGPIMHHELMM::NGPIMHHELMM>(
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EnhanceChessRogueBuffScRsp| { &m.retcode },
+            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffEnhanceList::ChessRogueBuffEnhanceList>(
             "FHLOMGDANJM",
             |m: &EnhanceChessRogueBuffScRsp| { &m.FHLOMGDANJM },
             |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.FHLOMGDANJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_success",
-            |m: &EnhanceChessRogueBuffScRsp| { &m.is_success },
-            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.is_success },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceChessRogueBuffScRsp>(
             "EnhanceChessRogueBuffScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                88 => {
+                    self.FGEFCEFKHMH = is.read_bool()?;
                 },
-                50 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANAGCODDMOM)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHLOMGDANJM)?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.is_success = is.read_bool()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHLOMGDANJM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        if self.FGEFCEFKHMH != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.ANAGCODDMOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.is_success != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if self.FGEFCEFKHMH != false {
+            os.write_bool(11, self.FGEFCEFKHMH)?;
         }
         if let Some(v) = self.ANAGCODDMOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if self.is_success != false {
-            os.write_bool(10, self.is_success)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.FGEFCEFKHMH = false;
         self.ANAGCODDMOM.clear();
+        self.retcode = 0;
         self.FHLOMGDANJM.clear();
-        self.is_success = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceChessRogueBuffScRsp {
         static instance: EnhanceChessRogueBuffScRsp = EnhanceChessRogueBuffScRsp {
-            retcode: 0,
+            FGEFCEFKHMH: false,
             ANAGCODDMOM: ::protobuf::MessageField::none(),
+            retcode: 0,
             FHLOMGDANJM: ::protobuf::MessageField::none(),
-            is_success: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceChessRogueBuffScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnhanceChessRogueBuffScRsp.proto\x1a\x11FFAMNKOAIHF.proto\x1a\x11N\
-    GPIMHHELMM.proto\"\xb5\x01\n\x1aEnhanceChessRogueBuffScRsp\x12\x18\n\x07\
-    retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bANAGCODDMOM\x18\x06\x20\
-    \x01(\x0b2\x0c.FFAMNKOAIHFR\x0bANAGCODDMOM\x12.\n\x0bFHLOMGDANJM\x18\x02\
-    \x20\x01(\x0b2\x0c.NGPIMHHELMMR\x0bFHLOMGDANJM\x12\x1d\n\nis_success\x18\
-    \n\x20\x01(\x08R\tisSuccessb\x06proto3\
+    \n\x20EnhanceChessRogueBuffScRsp.proto\x1a\x1fChessRogueBuffEnhanceList.\
+    proto\x1a\x15RogueCommonBuff.proto\"\xca\x01\n\x1aEnhanceChessRogueBuffS\
+    cRsp\x12\x20\n\x0bFGEFCEFKHMH\x18\x0b\x20\x01(\x08R\x0bFGEFCEFKHMH\x122\
+    \n\x0bANAGCODDMOM\x18\x08\x20\x01(\x0b2\x10.RogueCommonBuffR\x0bANAGCODD\
+    MOM\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12<\n\x0bFHLOMG\
+    DANJM\x18\x04\x20\x01(\x0b2\x1a.ChessRogueBuffEnhanceListR\x0bFHLOMGDANJ\
+    Mb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FFAMNKOAIHF::file_descriptor().clone());
-            deps.push(super::NGPIMHHELMM::file_descriptor().clone());
+            deps.push(super::ChessRogueBuffEnhanceList::file_descriptor().clone());
+            deps.push(super::RogueCommonBuff::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnhanceChessRogueBuffScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

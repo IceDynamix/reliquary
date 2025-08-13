@@ -85,7 +85,7 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
                 72 => {
                     self.level_reward_taken_list.push(is.read_uint32()?);
                 },
-                64 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.level_reward_taken_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetLevelRewardTakenListScRsp {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(9, &self.level_reward_taken_list)?;
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GetLevelRewardTakenListScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetLevelRewardTakenListScRsp.proto\"o\n\x1cGetLevelRewardTakenListSc\
     Rsp\x125\n\x17level_reward_taken_list\x18\t\x20\x03(\rR\x14levelRewardTa\
-    kenList\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    kenList\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

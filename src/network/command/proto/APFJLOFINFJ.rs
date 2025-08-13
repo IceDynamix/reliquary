@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct APFJLOFINFJ {
     // message fields
-    // @@protoc_insertion_point(field:APFJLOFINFJ.AMBDKDAMHLH)
-    pub AMBDKDAMHLH: u32,
+    // @@protoc_insertion_point(field:APFJLOFINFJ.formula_id)
+    pub formula_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:APFJLOFINFJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl APFJLOFINFJ {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMBDKDAMHLH",
-            |m: &APFJLOFINFJ| { &m.AMBDKDAMHLH },
-            |m: &mut APFJLOFINFJ| { &mut m.AMBDKDAMHLH },
+            "formula_id",
+            |m: &APFJLOFINFJ| { &m.formula_id },
+            |m: &mut APFJLOFINFJ| { &mut m.formula_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<APFJLOFINFJ>(
             "APFJLOFINFJ",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for APFJLOFINFJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.AMBDKDAMHLH = is.read_uint32()?;
+                    self.formula_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for APFJLOFINFJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMBDKDAMHLH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AMBDKDAMHLH);
+        if self.formula_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.formula_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for APFJLOFINFJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMBDKDAMHLH != 0 {
-            os.write_uint32(11, self.AMBDKDAMHLH)?;
+        if self.formula_id != 0 {
+            os.write_uint32(11, self.formula_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for APFJLOFINFJ {
     }
 
     fn clear(&mut self) {
-        self.AMBDKDAMHLH = 0;
+        self.formula_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static APFJLOFINFJ {
         static instance: APFJLOFINFJ = APFJLOFINFJ {
-            AMBDKDAMHLH: 0,
+            formula_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for APFJLOFINFJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11APFJLOFINFJ.proto\"/\n\x0bAPFJLOFINFJ\x12\x20\n\x0bAMBDKDAMHLH\x18\
-    \x0b\x20\x01(\rR\x0bAMBDKDAMHLHb\x06proto3\
+    \n\x11APFJLOFINFJ.proto\",\n\x0bAPFJLOFINFJ\x12\x1d\n\nformula_id\x18\
+    \x0b\x20\x01(\rR\tformulaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

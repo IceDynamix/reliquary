@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KHCBGNLNPEL {
     // message fields
-    // @@protoc_insertion_point(field:KHCBGNLNPEL.PICFHPKDNEL)
-    pub PICFHPKDNEL: ::std::vec::Vec<super::COAHGFLONAN::COAHGFLONAN>,
+    // @@protoc_insertion_point(field:KHCBGNLNPEL.rogue_magic_scepter_info_list)
+    pub rogue_magic_scepter_info_list: ::std::vec::Vec<super::COAHGFLONAN::COAHGFLONAN>,
     // special fields
     // @@protoc_insertion_point(special_field:KHCBGNLNPEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KHCBGNLNPEL {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PICFHPKDNEL",
-            |m: &KHCBGNLNPEL| { &m.PICFHPKDNEL },
-            |m: &mut KHCBGNLNPEL| { &mut m.PICFHPKDNEL },
+            "rogue_magic_scepter_info_list",
+            |m: &KHCBGNLNPEL| { &m.rogue_magic_scepter_info_list },
+            |m: &mut KHCBGNLNPEL| { &mut m.rogue_magic_scepter_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KHCBGNLNPEL>(
             "KHCBGNLNPEL",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for KHCBGNLNPEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.PICFHPKDNEL.push(is.read_message()?);
+                10 => {
+                    self.rogue_magic_scepter_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for KHCBGNLNPEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PICFHPKDNEL {
+        for value in &self.rogue_magic_scepter_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for KHCBGNLNPEL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PICFHPKDNEL {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.rogue_magic_scepter_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for KHCBGNLNPEL {
     }
 
     fn clear(&mut self) {
-        self.PICFHPKDNEL.clear();
+        self.rogue_magic_scepter_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KHCBGNLNPEL {
         static instance: KHCBGNLNPEL = KHCBGNLNPEL {
-            PICFHPKDNEL: ::std::vec::Vec::new(),
+            rogue_magic_scepter_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for KHCBGNLNPEL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KHCBGNLNPEL.proto\x1a\x11COAHGFLONAN.proto\"=\n\x0bKHCBGNLNPEL\x12\
-    .\n\x0bPICFHPKDNEL\x18\x08\x20\x03(\x0b2\x0c.COAHGFLONANR\x0bPICFHPKDNEL\
-    b\x06proto3\
+    \n\x11KHCBGNLNPEL.proto\x1a\x11COAHGFLONAN.proto\"]\n\x0bKHCBGNLNPEL\x12\
+    N\n\x1drogue_magic_scepter_info_list\x18\x01\x20\x03(\x0b2\x0c.COAHGFLON\
+    ANR\x19rogueMagicScepterInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

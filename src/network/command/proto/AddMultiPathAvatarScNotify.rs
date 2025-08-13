@@ -30,10 +30,10 @@ pub struct AddMultiPathAvatarScNotify {
     // message fields
     // @@protoc_insertion_point(field:AddMultiPathAvatarScNotify.is_new)
     pub is_new: bool,
-    // @@protoc_insertion_point(field:AddMultiPathAvatarScNotify.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:AddMultiPathAvatarScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:AddMultiPathAvatarScNotify.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AddMultiPathAvatarScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl AddMultiPathAvatarScNotify {
             |m: &AddMultiPathAvatarScNotify| { &m.is_new },
             |m: &mut AddMultiPathAvatarScNotify| { &mut m.is_new },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &AddMultiPathAvatarScNotify| { &m.avatar_id },
-            |m: &mut AddMultiPathAvatarScNotify| { &mut m.avatar_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &AddMultiPathAvatarScNotify| { &m.reward },
             |m: &mut AddMultiPathAvatarScNotify| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &AddMultiPathAvatarScNotify| { &m.avatar_id },
+            |m: &mut AddMultiPathAvatarScNotify| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddMultiPathAvatarScNotify>(
             "AddMultiPathAvatarScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.is_new = is.read_bool()?;
                 },
-                32 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                66 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                72 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
         if self.is_new != false {
             my_size += 1 + 1;
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_new != false {
-            os.write_bool(15, self.is_new)?;
-        }
-        if self.avatar_id != 0 {
-            os.write_uint32(4, self.avatar_id)?;
+            os.write_bool(11, self.is_new)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(9, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for AddMultiPathAvatarScNotify {
 
     fn clear(&mut self) {
         self.is_new = false;
-        self.avatar_id = 0;
         self.reward.clear();
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddMultiPathAvatarScNotify {
         static instance: AddMultiPathAvatarScNotify = AddMultiPathAvatarScNotify {
             is_new: false,
-            avatar_id: 0,
             reward: ::protobuf::MessageField::none(),
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AddMultiPathAvatarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AddMultiPathAvatarScNotify.proto\x1a\x0eItemList.proto\"s\n\x1aAdd\
-    MultiPathAvatarScNotify\x12\x15\n\x06is_new\x18\x0f\x20\x01(\x08R\x05isN\
-    ew\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\x12!\n\x06reward\
-    \x18\x08\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    MultiPathAvatarScNotify\x12\x15\n\x06is_new\x18\x0b\x20\x01(\x08R\x05isN\
+    ew\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1b\
+    \n\tavatar_id\x18\t\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

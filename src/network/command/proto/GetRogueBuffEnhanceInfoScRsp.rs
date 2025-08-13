@@ -31,7 +31,7 @@ pub struct GetRogueBuffEnhanceInfoScRsp {
     // @@protoc_insertion_point(field:GetRogueBuffEnhanceInfoScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetRogueBuffEnhanceInfoScRsp.FHLOMGDANJM)
-    pub FHLOMGDANJM: ::protobuf::MessageField<super::BHJPKLCMLEJ::BHJPKLCMLEJ>,
+    pub FHLOMGDANJM: ::protobuf::MessageField<super::RogueBuffEnhanceInfoList::RogueBuffEnhanceInfoList>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueBuffEnhanceInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl GetRogueBuffEnhanceInfoScRsp {
             |m: &GetRogueBuffEnhanceInfoScRsp| { &m.retcode },
             |m: &mut GetRogueBuffEnhanceInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHJPKLCMLEJ::BHJPKLCMLEJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffEnhanceInfoList::RogueBuffEnhanceInfoList>(
             "FHLOMGDANJM",
             |m: &GetRogueBuffEnhanceInfoScRsp| { &m.FHLOMGDANJM },
             |m: &mut GetRogueBuffEnhanceInfoScRsp| { &mut m.FHLOMGDANJM },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHLOMGDANJM)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRogueBuffEnhanceInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.FHLOMGDANJM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueBuffEnhanceInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueBuffEnhanceInfoScRsp.proto\x1a\x11BHJPKLCMLEJ.proto\"h\n\x1c\
-    GetRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07r\
-    etcode\x12.\n\x0bFHLOMGDANJM\x18\r\x20\x01(\x0b2\x0c.BHJPKLCMLEJR\x0bFHL\
-    OMGDANJMb\x06proto3\
+    \n\"GetRogueBuffEnhanceInfoScRsp.proto\x1a\x1eRogueBuffEnhanceInfoList.p\
+    roto\"u\n\x1cGetRogueBuffEnhanceInfoScRsp\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcode\x12;\n\x0bFHLOMGDANJM\x18\x02\x20\x01(\x0b2\x19.\
+    RogueBuffEnhanceInfoListR\x0bFHLOMGDANJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BHJPKLCMLEJ::file_descriptor().clone());
+            deps.push(super::RogueBuffEnhanceInfoList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueBuffEnhanceInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

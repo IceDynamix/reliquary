@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SwapScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.upgrade_level)
-    pub upgrade_level: u32,
     // @@protoc_insertion_point(field:FightMatch3SwapScRsp.PGMGMJDILCL)
     pub PGMGMJDILCL: bool,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FightMatch3SwapScRsp.cur_index)
+    pub cur_index: u32,
     // @@protoc_insertion_point(field:FightMatch3SwapScRsp.CHMAONMMEGM)
     pub CHMAONMMEGM: ::protobuf::MessageField<super::MDOHAFBEEPK::MDOHAFBEEPK>,
     // special fields
@@ -56,19 +56,19 @@ impl FightMatch3SwapScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGMGMJDILCL",
+            |m: &FightMatch3SwapScRsp| { &m.PGMGMJDILCL },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.PGMGMJDILCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FightMatch3SwapScRsp| { &m.retcode },
             |m: &mut FightMatch3SwapScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upgrade_level",
-            |m: &FightMatch3SwapScRsp| { &m.upgrade_level },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.upgrade_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGMGMJDILCL",
-            |m: &FightMatch3SwapScRsp| { &m.PGMGMJDILCL },
-            |m: &mut FightMatch3SwapScRsp| { &mut m.PGMGMJDILCL },
+            "cur_index",
+            |m: &FightMatch3SwapScRsp| { &m.cur_index },
+            |m: &mut FightMatch3SwapScRsp| { &mut m.cur_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDOHAFBEEPK::MDOHAFBEEPK>(
             "CHMAONMMEGM",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                104 => {
+                    self.PGMGMJDILCL = is.read_bool()?;
+                },
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 40 => {
-                    self.upgrade_level = is.read_uint32()?;
+                    self.cur_index = is.read_uint32()?;
                 },
-                72 => {
-                    self.PGMGMJDILCL = is.read_bool()?;
-                },
-                66 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHMAONMMEGM)?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.upgrade_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.upgrade_level);
-        }
         if self.PGMGMJDILCL != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.cur_index);
         }
         if let Some(v) = self.CHMAONMMEGM.as_ref() {
             let len = v.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if self.upgrade_level != 0 {
-            os.write_uint32(5, self.upgrade_level)?;
-        }
         if self.PGMGMJDILCL != false {
-            os.write_bool(9, self.PGMGMJDILCL)?;
+            os.write_bool(13, self.PGMGMJDILCL)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.cur_index != 0 {
+            os.write_uint32(5, self.cur_index)?;
         }
         if let Some(v) = self.CHMAONMMEGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for FightMatch3SwapScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.upgrade_level = 0;
         self.PGMGMJDILCL = false;
+        self.retcode = 0;
+        self.cur_index = 0;
         self.CHMAONMMEGM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SwapScRsp {
         static instance: FightMatch3SwapScRsp = FightMatch3SwapScRsp {
-            retcode: 0,
-            upgrade_level: 0,
             PGMGMJDILCL: false,
+            retcode: 0,
+            cur_index: 0,
             CHMAONMMEGM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SwapScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFightMatch3SwapScRsp.proto\x1a\x11MDOHAFBEEPK.proto\"\xa7\x01\n\
-    \x14FightMatch3SwapScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07ret\
-    code\x12#\n\rupgrade_level\x18\x05\x20\x01(\rR\x0cupgradeLevel\x12\x20\n\
-    \x0bPGMGMJDILCL\x18\t\x20\x01(\x08R\x0bPGMGMJDILCL\x12.\n\x0bCHMAONMMEGM\
-    \x18\x08\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bCHMAONMMEGMb\x06proto3\
+    \n\x1aFightMatch3SwapScRsp.proto\x1a\x11MDOHAFBEEPK.proto\"\x9f\x01\n\
+    \x14FightMatch3SwapScRsp\x12\x20\n\x0bPGMGMJDILCL\x18\r\x20\x01(\x08R\
+    \x0bPGMGMJDILCL\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\
+    \x1b\n\tcur_index\x18\x05\x20\x01(\rR\x08curIndex\x12.\n\x0bCHMAONMMEGM\
+    \x18\x02\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bCHMAONMMEGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

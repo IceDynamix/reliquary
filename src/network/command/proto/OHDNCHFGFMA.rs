@@ -30,12 +30,12 @@ pub struct OHDNCHFGFMA {
     // message fields
     // @@protoc_insertion_point(field:OHDNCHFGFMA.panel_id)
     pub panel_id: u32,
-    // @@protoc_insertion_point(field:OHDNCHFGFMA.BLFAANHJPAD)
-    pub BLFAANHJPAD: u32,
     // @@protoc_insertion_point(field:OHDNCHFGFMA.BJFBGLBJBNN)
     pub BJFBGLBJBNN: u32,
     // @@protoc_insertion_point(field:OHDNCHFGFMA.LCLMHEGDGGB)
     pub LCLMHEGDGGB: u32,
+    // @@protoc_insertion_point(field:OHDNCHFGFMA.durability)
+    pub durability: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OHDNCHFGFMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl OHDNCHFGFMA {
             |m: &mut OHDNCHFGFMA| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLFAANHJPAD",
-            |m: &OHDNCHFGFMA| { &m.BLFAANHJPAD },
-            |m: &mut OHDNCHFGFMA| { &mut m.BLFAANHJPAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BJFBGLBJBNN",
             |m: &OHDNCHFGFMA| { &m.BJFBGLBJBNN },
             |m: &mut OHDNCHFGFMA| { &mut m.BJFBGLBJBNN },
@@ -74,6 +69,11 @@ impl OHDNCHFGFMA {
             "LCLMHEGDGGB",
             |m: &OHDNCHFGFMA| { &m.LCLMHEGDGGB },
             |m: &mut OHDNCHFGFMA| { &mut m.LCLMHEGDGGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "durability",
+            |m: &OHDNCHFGFMA| { &m.durability },
+            |m: &mut OHDNCHFGFMA| { &mut m.durability },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHDNCHFGFMA>(
             "OHDNCHFGFMA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.BLFAANHJPAD = is.read_uint32()?;
-                },
-                8 => {
+                88 => {
                     self.BJFBGLBJBNN = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.LCLMHEGDGGB = is.read_uint32()?;
+                },
+                8 => {
+                    self.durability = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.panel_id);
-        }
-        if self.BLFAANHJPAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BLFAANHJPAD);
+            my_size += ::protobuf::rt::uint32_size(9, self.panel_id);
         }
         if self.BJFBGLBJBNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BJFBGLBJBNN);
+            my_size += ::protobuf::rt::uint32_size(11, self.BJFBGLBJBNN);
         }
         if self.LCLMHEGDGGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LCLMHEGDGGB);
+            my_size += ::protobuf::rt::uint32_size(13, self.LCLMHEGDGGB);
+        }
+        if self.durability != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.durability);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for OHDNCHFGFMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.panel_id != 0 {
-            os.write_uint32(10, self.panel_id)?;
-        }
-        if self.BLFAANHJPAD != 0 {
-            os.write_uint32(3, self.BLFAANHJPAD)?;
+            os.write_uint32(9, self.panel_id)?;
         }
         if self.BJFBGLBJBNN != 0 {
-            os.write_uint32(1, self.BJFBGLBJBNN)?;
+            os.write_uint32(11, self.BJFBGLBJBNN)?;
         }
         if self.LCLMHEGDGGB != 0 {
-            os.write_uint32(5, self.LCLMHEGDGGB)?;
+            os.write_uint32(13, self.LCLMHEGDGGB)?;
+        }
+        if self.durability != 0 {
+            os.write_uint32(1, self.durability)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for OHDNCHFGFMA {
 
     fn clear(&mut self) {
         self.panel_id = 0;
-        self.BLFAANHJPAD = 0;
         self.BJFBGLBJBNN = 0;
         self.LCLMHEGDGGB = 0;
+        self.durability = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHDNCHFGFMA {
         static instance: OHDNCHFGFMA = OHDNCHFGFMA {
             panel_id: 0,
-            BLFAANHJPAD: 0,
             BJFBGLBJBNN: 0,
             LCLMHEGDGGB: 0,
+            durability: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for OHDNCHFGFMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHDNCHFGFMA.proto\"\x8e\x01\n\x0bOHDNCHFGFMA\x12\x19\n\x08panel_id\
-    \x18\n\x20\x01(\rR\x07panelId\x12\x20\n\x0bBLFAANHJPAD\x18\x03\x20\x01(\
-    \rR\x0bBLFAANHJPAD\x12\x20\n\x0bBJFBGLBJBNN\x18\x01\x20\x01(\rR\x0bBJFBG\
-    LBJBNN\x12\x20\n\x0bLCLMHEGDGGB\x18\x05\x20\x01(\rR\x0bLCLMHEGDGGBb\x06p\
-    roto3\
+    \n\x11OHDNCHFGFMA.proto\"\x8c\x01\n\x0bOHDNCHFGFMA\x12\x19\n\x08panel_id\
+    \x18\t\x20\x01(\rR\x07panelId\x12\x20\n\x0bBJFBGLBJBNN\x18\x0b\x20\x01(\
+    \rR\x0bBJFBGLBJBNN\x12\x20\n\x0bLCLMHEGDGGB\x18\r\x20\x01(\rR\x0bLCLMHEG\
+    DGGB\x12\x1e\n\ndurability\x18\x01\x20\x01(\rR\ndurabilityb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

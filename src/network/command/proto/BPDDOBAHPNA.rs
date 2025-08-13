@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPDDOBAHPNA {
     // message fields
-    // @@protoc_insertion_point(field:BPDDOBAHPNA.BJEHOAFBHBE)
-    pub BJEHOAFBHBE: ::protobuf::MessageField<super::RogueFormulaSelectInfo::RogueFormulaSelectInfo>,
+    // @@protoc_insertion_point(field:BPDDOBAHPNA.rogue_formula_select_info)
+    pub rogue_formula_select_info: ::protobuf::MessageField<super::RogueFormulaSelectInfo::RogueFormulaSelectInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:BPDDOBAHPNA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BPDDOBAHPNA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFormulaSelectInfo::RogueFormulaSelectInfo>(
-            "BJEHOAFBHBE",
-            |m: &BPDDOBAHPNA| { &m.BJEHOAFBHBE },
-            |m: &mut BPDDOBAHPNA| { &mut m.BJEHOAFBHBE },
+            "rogue_formula_select_info",
+            |m: &BPDDOBAHPNA| { &m.rogue_formula_select_info },
+            |m: &mut BPDDOBAHPNA| { &mut m.rogue_formula_select_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPDDOBAHPNA>(
             "BPDDOBAHPNA",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for BPDDOBAHPNA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJEHOAFBHBE)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_formula_select_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for BPDDOBAHPNA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BJEHOAFBHBE.as_ref() {
+        if let Some(v) = self.rogue_formula_select_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BPDDOBAHPNA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BJEHOAFBHBE.as_ref() {
+        if let Some(v) = self.rogue_formula_select_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for BPDDOBAHPNA {
     }
 
     fn clear(&mut self) {
-        self.BJEHOAFBHBE.clear();
+        self.rogue_formula_select_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPDDOBAHPNA {
         static instance: BPDDOBAHPNA = BPDDOBAHPNA {
-            BJEHOAFBHBE: ::protobuf::MessageField::none(),
+            rogue_formula_select_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for BPDDOBAHPNA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPDDOBAHPNA.proto\x1a\x1cRogueFormulaSelectInfo.proto\"H\n\x0bBPDD\
-    OBAHPNA\x129\n\x0bBJEHOAFBHBE\x18\x07\x20\x01(\x0b2\x17.RogueFormulaSele\
-    ctInfoR\x0bBJEHOAFBHBEb\x06proto3\
+    \n\x11BPDDOBAHPNA.proto\x1a\x1cRogueFormulaSelectInfo.proto\"a\n\x0bBPDD\
+    OBAHPNA\x12R\n\x19rogue_formula_select_info\x18\x07\x20\x01(\x0b2\x17.Ro\
+    gueFormulaSelectInfoR\x16rogueFormulaSelectInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

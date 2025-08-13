@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.prop_entity_id != 0 {
-            os.write_uint32(5, self.prop_entity_id)?;
+            os.write_uint32(11, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchGetInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueWorkbenchGetInfoCsReq.proto\"B\n\x1aRogueWorkbenchGetInfoCsRe\
-    q\x12$\n\x0eprop_entity_id\x18\x05\x20\x01(\rR\x0cpropEntityIdb\x06proto\
+    q\x12$\n\x0eprop_entity_id\x18\x0b\x20\x01(\rR\x0cpropEntityIdb\x06proto\
     3\
 ";
 

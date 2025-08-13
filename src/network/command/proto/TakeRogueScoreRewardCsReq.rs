@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueScoreRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueScoreRewardCsReq.pool_id)
-    pub pool_id: u32,
+    // @@protoc_insertion_point(field:TakeRogueScoreRewardCsReq.HHJPBLEKAPN)
+    pub HHJPBLEKAPN: u32,
     // @@protoc_insertion_point(field:TakeRogueScoreRewardCsReq.LMMFPCOKHEE)
     pub LMMFPCOKHEE: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl TakeRogueScoreRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pool_id",
-            |m: &TakeRogueScoreRewardCsReq| { &m.pool_id },
-            |m: &mut TakeRogueScoreRewardCsReq| { &mut m.pool_id },
+            "HHJPBLEKAPN",
+            |m: &TakeRogueScoreRewardCsReq| { &m.HHJPBLEKAPN },
+            |m: &mut TakeRogueScoreRewardCsReq| { &mut m.HHJPBLEKAPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LMMFPCOKHEE",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for TakeRogueScoreRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.pool_id = is.read_uint32()?;
+                8 => {
+                    self.HHJPBLEKAPN = is.read_uint32()?;
                 },
-                98 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.LMMFPCOKHEE)?;
                 },
-                96 => {
+                120 => {
                     self.LMMFPCOKHEE.push(is.read_uint32()?);
                 },
                 tag => {
@@ -100,20 +100,20 @@ impl ::protobuf::Message for TakeRogueScoreRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.pool_id);
+        if self.HHJPBLEKAPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HHJPBLEKAPN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LMMFPCOKHEE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LMMFPCOKHEE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pool_id != 0 {
-            os.write_uint32(11, self.pool_id)?;
+        if self.HHJPBLEKAPN != 0 {
+            os.write_uint32(1, self.HHJPBLEKAPN)?;
         }
-        os.write_repeated_packed_uint32(12, &self.LMMFPCOKHEE)?;
+        os.write_repeated_packed_uint32(15, &self.LMMFPCOKHEE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for TakeRogueScoreRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.pool_id = 0;
+        self.HHJPBLEKAPN = 0;
         self.LMMFPCOKHEE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueScoreRewardCsReq {
         static instance: TakeRogueScoreRewardCsReq = TakeRogueScoreRewardCsReq {
-            pool_id: 0,
+            HHJPBLEKAPN: 0,
             LMMFPCOKHEE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueScoreRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fTakeRogueScoreRewardCsReq.proto\"V\n\x19TakeRogueScoreRewardCsReq\
-    \x12\x17\n\x07pool_id\x18\x0b\x20\x01(\rR\x06poolId\x12\x20\n\x0bLMMFPCO\
-    KHEE\x18\x0c\x20\x03(\rR\x0bLMMFPCOKHEEb\x06proto3\
+    \n\x1fTakeRogueScoreRewardCsReq.proto\"_\n\x19TakeRogueScoreRewardCsReq\
+    \x12\x20\n\x0bHHJPBLEKAPN\x18\x01\x20\x01(\rR\x0bHHJPBLEKAPN\x12\x20\n\
+    \x0bLMMFPCOKHEE\x18\x0f\x20\x03(\rR\x0bLMMFPCOKHEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

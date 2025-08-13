@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                112 => {
                     self.rogue_door_next_room_type = is.read_uint32()?;
                 },
-                64 => {
+                104 => {
                     self.enter_next_layer = is.read_bool()?;
                 },
-                56 => {
+                88 => {
                     self.EIPNNEJNNKJ = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_door_next_room_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.rogue_door_next_room_type);
+            my_size += ::protobuf::rt::uint32_size(14, self.rogue_door_next_room_type);
         }
         if self.enter_next_layer != false {
             my_size += 1 + 1;
         }
         if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EIPNNEJNNKJ);
+            my_size += ::protobuf::rt::uint32_size(11, self.EIPNNEJNNKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournDoorInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_door_next_room_type != 0 {
-            os.write_uint32(2, self.rogue_door_next_room_type)?;
+            os.write_uint32(14, self.rogue_door_next_room_type)?;
         }
         if self.enter_next_layer != false {
-            os.write_bool(8, self.enter_next_layer)?;
+            os.write_bool(13, self.enter_next_layer)?;
         }
         if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(7, self.EIPNNEJNNKJ)?;
+            os.write_uint32(11, self.EIPNNEJNNKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournDoorInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueTournDoorInfo.proto\"\x9a\x01\n\x12RogueTournDoorInfo\x128\n\
-    \x19rogue_door_next_room_type\x18\x02\x20\x01(\rR\x15rogueDoorNextRoomTy\
-    pe\x12(\n\x10enter_next_layer\x18\x08\x20\x01(\x08R\x0eenterNextLayer\
-    \x12\x20\n\x0bEIPNNEJNNKJ\x18\x07\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
+    \x19rogue_door_next_room_type\x18\x0e\x20\x01(\rR\x15rogueDoorNextRoomTy\
+    pe\x12(\n\x10enter_next_layer\x18\r\x20\x01(\x08R\x0eenterNextLayer\x12\
+    \x20\n\x0bEIPNNEJNNKJ\x18\x0b\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

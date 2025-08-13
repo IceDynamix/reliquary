@@ -35,7 +35,7 @@ pub struct HAKNOFDPBOD {
     // @@protoc_insertion_point(field:HAKNOFDPBOD.config_id)
     pub config_id: u32,
     // message oneof groups
-    pub BFBEEHNJMCF: ::std::option::Option<haknofdpbod::BFBEEHNJMCF>,
+    pub NGIKDJMNGBG: ::std::option::Option<haknofdpbod::NGIKDJMNGBG>,
     // special fields
     // @@protoc_insertion_point(special_field:HAKNOFDPBOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,39 +52,39 @@ impl HAKNOFDPBOD {
         ::std::default::Default::default()
     }
 
-    // .GJKIAPIPGAN EJCOLGNJGDC = 6;
+    // .GJKIAPIPGAN EJCOLGNJGDC = 1;
 
     pub fn EJCOLGNJGDC(&self) -> &super::GJKIAPIPGAN::GJKIAPIPGAN {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(ref v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref v)) => v,
             _ => <super::GJKIAPIPGAN::GJKIAPIPGAN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_EJCOLGNJGDC(&mut self) {
-        self.BFBEEHNJMCF = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
     }
 
     pub fn has_EJCOLGNJGDC(&self) -> bool {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(..)) => true,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_EJCOLGNJGDC(&mut self, v: super::GJKIAPIPGAN::GJKIAPIPGAN) {
-        self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(v))
+        self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_EJCOLGNJGDC(&mut self) -> &mut super::GJKIAPIPGAN::GJKIAPIPGAN {
-        if let ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(_)) = self.BFBEEHNJMCF {
+        if let ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(_)) = self.NGIKDJMNGBG {
         } else {
-            self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(super::GJKIAPIPGAN::GJKIAPIPGAN::new()));
+            self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(super::GJKIAPIPGAN::GJKIAPIPGAN::new()));
         }
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(ref mut v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -92,8 +92,8 @@ impl HAKNOFDPBOD {
     // Take field
     pub fn take_EJCOLGNJGDC(&mut self) -> super::GJKIAPIPGAN::GJKIAPIPGAN {
         if self.has_EJCOLGNJGDC() {
-            match self.BFBEEHNJMCF.take() {
-                ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(v)) => v,
+            match self.NGIKDJMNGBG.take() {
+                ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -101,39 +101,39 @@ impl HAKNOFDPBOD {
         }
     }
 
-    // .EIMOBGLLEFO LKANIPLNKGC = 4;
+    // .EIMOBGLLEFO LKANIPLNKGC = 10;
 
     pub fn LKANIPLNKGC(&self) -> &super::EIMOBGLLEFO::EIMOBGLLEFO {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(ref v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v)) => v,
             _ => <super::EIMOBGLLEFO::EIMOBGLLEFO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_LKANIPLNKGC(&mut self) {
-        self.BFBEEHNJMCF = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
     }
 
     pub fn has_LKANIPLNKGC(&self) -> bool {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(..)) => true,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_LKANIPLNKGC(&mut self, v: super::EIMOBGLLEFO::EIMOBGLLEFO) {
-        self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(v))
+        self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_LKANIPLNKGC(&mut self) -> &mut super::EIMOBGLLEFO::EIMOBGLLEFO {
-        if let ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(_)) = self.BFBEEHNJMCF {
+        if let ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(_)) = self.NGIKDJMNGBG {
         } else {
-            self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(super::EIMOBGLLEFO::EIMOBGLLEFO::new()));
+            self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(super::EIMOBGLLEFO::EIMOBGLLEFO::new()));
         }
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(ref mut v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -141,8 +141,8 @@ impl HAKNOFDPBOD {
     // Take field
     pub fn take_LKANIPLNKGC(&mut self) -> super::EIMOBGLLEFO::EIMOBGLLEFO {
         if self.has_LKANIPLNKGC() {
-            match self.BFBEEHNJMCF.take() {
-                ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(v)) => v,
+            match self.NGIKDJMNGBG.take() {
+                ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -150,39 +150,39 @@ impl HAKNOFDPBOD {
         }
     }
 
-    // .EOPFMPAOOJE BDEMPAKHGMJ = 5;
+    // .EOPFMPAOOJE BDEMPAKHGMJ = 8;
 
     pub fn BDEMPAKHGMJ(&self) -> &super::EOPFMPAOOJE::EOPFMPAOOJE {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(ref v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref v)) => v,
             _ => <super::EOPFMPAOOJE::EOPFMPAOOJE as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_BDEMPAKHGMJ(&mut self) {
-        self.BFBEEHNJMCF = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
     }
 
     pub fn has_BDEMPAKHGMJ(&self) -> bool {
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(..)) => true,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_BDEMPAKHGMJ(&mut self, v: super::EOPFMPAOOJE::EOPFMPAOOJE) {
-        self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(v))
+        self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_BDEMPAKHGMJ(&mut self) -> &mut super::EOPFMPAOOJE::EOPFMPAOOJE {
-        if let ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(_)) = self.BFBEEHNJMCF {
+        if let ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(_)) = self.NGIKDJMNGBG {
         } else {
-            self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(super::EOPFMPAOOJE::EOPFMPAOOJE::new()));
+            self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(super::EOPFMPAOOJE::EOPFMPAOOJE::new()));
         }
-        match self.BFBEEHNJMCF {
-            ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(ref mut v)) => v,
+        match self.NGIKDJMNGBG {
+            ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -190,8 +190,8 @@ impl HAKNOFDPBOD {
     // Take field
     pub fn take_BDEMPAKHGMJ(&mut self) -> super::EOPFMPAOOJE::EOPFMPAOOJE {
         if self.has_BDEMPAKHGMJ() {
-            match self.BFBEEHNJMCF.take() {
-                ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(v)) => v,
+            match self.NGIKDJMNGBG.take() {
+                ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -238,7 +238,7 @@ impl HAKNOFDPBOD {
             HAKNOFDPBOD::mut_BDEMPAKHGMJ,
             HAKNOFDPBOD::set_BDEMPAKHGMJ,
         ));
-        oneofs.push(haknofdpbod::BFBEEHNJMCF::generated_oneof_descriptor_data());
+        oneofs.push(haknofdpbod::NGIKDJMNGBG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HAKNOFDPBOD>(
             "HAKNOFDPBOD",
             fields,
@@ -257,7 +257,7 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                32 => {
                     self.FPOGIALMCIP = is.read_uint32()?;
                 },
                 104 => {
@@ -266,14 +266,14 @@ impl ::protobuf::Message for HAKNOFDPBOD {
                 112 => {
                     self.config_id = is.read_uint32()?;
                 },
-                50 => {
-                    self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(is.read_message()?));
+                10 => {
+                    self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(is.read_message()?));
                 },
-                34 => {
-                    self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(is.read_message()?));
+                82 => {
+                    self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(is.read_message()?));
                 },
-                42 => {
-                    self.BFBEEHNJMCF = ::std::option::Option::Some(haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(is.read_message()?));
+                66 => {
+                    self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -288,7 +288,7 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FPOGIALMCIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FPOGIALMCIP);
+            my_size += ::protobuf::rt::uint32_size(4, self.FPOGIALMCIP);
         }
         if self.ACDOPCBMPNL != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.ACDOPCBMPNL);
@@ -296,17 +296,17 @@ impl ::protobuf::Message for HAKNOFDPBOD {
         if self.config_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.config_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.BFBEEHNJMCF {
+        if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
-                &haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(ref v) => {
+                &haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(ref v) => {
+                &haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(ref v) => {
+                &haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -319,7 +319,7 @@ impl ::protobuf::Message for HAKNOFDPBOD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FPOGIALMCIP != 0 {
-            os.write_uint32(12, self.FPOGIALMCIP)?;
+            os.write_uint32(4, self.FPOGIALMCIP)?;
         }
         if self.ACDOPCBMPNL != 0 {
             os.write_uint32(13, self.ACDOPCBMPNL)?;
@@ -327,16 +327,16 @@ impl ::protobuf::Message for HAKNOFDPBOD {
         if self.config_id != 0 {
             os.write_uint32(14, self.config_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.BFBEEHNJMCF {
+        if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
-                &haknofdpbod::BFBEEHNJMCF::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                &haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &haknofdpbod::BFBEEHNJMCF::LKANIPLNKGC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &haknofdpbod::BFBEEHNJMCF::BDEMPAKHGMJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                &haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -360,9 +360,9 @@ impl ::protobuf::Message for HAKNOFDPBOD {
         self.FPOGIALMCIP = 0;
         self.ACDOPCBMPNL = 0;
         self.config_id = 0;
-        self.BFBEEHNJMCF = ::std::option::Option::None;
-        self.BFBEEHNJMCF = ::std::option::Option::None;
-        self.BFBEEHNJMCF = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
+        self.NGIKDJMNGBG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -371,7 +371,7 @@ impl ::protobuf::Message for HAKNOFDPBOD {
             FPOGIALMCIP: 0,
             ACDOPCBMPNL: 0,
             config_id: 0,
-            BFBEEHNJMCF: ::std::option::Option::None,
+            NGIKDJMNGBG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -400,8 +400,8 @@ pub mod haknofdpbod {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:HAKNOFDPBOD.BFBEEHNJMCF)
-    pub enum BFBEEHNJMCF {
+    // @@protoc_insertion_point(oneof:HAKNOFDPBOD.NGIKDJMNGBG)
+    pub enum NGIKDJMNGBG {
         // @@protoc_insertion_point(oneof_field:HAKNOFDPBOD.EJCOLGNJGDC)
         EJCOLGNJGDC(super::super::GJKIAPIPGAN::GJKIAPIPGAN),
         // @@protoc_insertion_point(oneof_field:HAKNOFDPBOD.LKANIPLNKGC)
@@ -410,19 +410,19 @@ pub mod haknofdpbod {
         BDEMPAKHGMJ(super::super::EOPFMPAOOJE::EOPFMPAOOJE),
     }
 
-    impl ::protobuf::Oneof for BFBEEHNJMCF {
+    impl ::protobuf::Oneof for NGIKDJMNGBG {
     }
 
-    impl ::protobuf::OneofFull for BFBEEHNJMCF {
+    impl ::protobuf::OneofFull for NGIKDJMNGBG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::HAKNOFDPBOD as ::protobuf::MessageFull>::descriptor().oneof_by_name("BFBEEHNJMCF").unwrap()).clone()
+            descriptor.get(|| <super::HAKNOFDPBOD as ::protobuf::MessageFull>::descriptor().oneof_by_name("NGIKDJMNGBG").unwrap()).clone()
         }
     }
 
-    impl BFBEEHNJMCF {
+    impl NGIKDJMNGBG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BFBEEHNJMCF>("BFBEEHNJMCF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NGIKDJMNGBG>("NGIKDJMNGBG")
         }
     }
 }
@@ -430,12 +430,12 @@ pub mod haknofdpbod {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HAKNOFDPBOD.proto\x1a\x11EIMOBGLLEFO.proto\x1a\x11EOPFMPAOOJE.prot\
     o\x1a\x11GJKIAPIPGAN.proto\"\x93\x02\n\x0bHAKNOFDPBOD\x12\x20\n\x0bFPOGI\
-    ALMCIP\x18\x0c\x20\x01(\rR\x0bFPOGIALMCIP\x12\x20\n\x0bACDOPCBMPNL\x18\r\
+    ALMCIP\x18\x04\x20\x01(\rR\x0bFPOGIALMCIP\x12\x20\n\x0bACDOPCBMPNL\x18\r\
     \x20\x01(\rR\x0bACDOPCBMPNL\x12\x1b\n\tconfig_id\x18\x0e\x20\x01(\rR\x08\
-    configId\x120\n\x0bEJCOLGNJGDC\x18\x06\x20\x01(\x0b2\x0c.GJKIAPIPGANH\0R\
-    \x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\x04\x20\x01(\x0b2\x0c.EIMOBGLL\
-    EFOH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\x05\x20\x01(\x0b2\x0c.E\
-    OPFMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bBFBEEHNJMCFb\x06proto3\
+    configId\x120\n\x0bEJCOLGNJGDC\x18\x01\x20\x01(\x0b2\x0c.GJKIAPIPGANH\0R\
+    \x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\n\x20\x01(\x0b2\x0c.EIMOBGLLEF\
+    OH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\x08\x20\x01(\x0b2\x0c.EOP\
+    FMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bNGIKDJMNGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMDKBOHCFIA {
     // message fields
-    // @@protoc_insertion_point(field:AMDKBOHCFIA.CENIFNKNFNP)
-    pub CENIFNKNFNP: u32,
+    // @@protoc_insertion_point(field:AMDKBOHCFIA.raid_id)
+    pub raid_id: u32,
     // @@protoc_insertion_point(field:AMDKBOHCFIA.max_score)
     pub max_score: u32,
     // special fields
@@ -52,9 +52,9 @@ impl AMDKBOHCFIA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CENIFNKNFNP",
-            |m: &AMDKBOHCFIA| { &m.CENIFNKNFNP },
-            |m: &mut AMDKBOHCFIA| { &mut m.CENIFNKNFNP },
+            "raid_id",
+            |m: &AMDKBOHCFIA| { &m.raid_id },
+            |m: &mut AMDKBOHCFIA| { &mut m.raid_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_score",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CENIFNKNFNP = is.read_uint32()?;
+                40 => {
+                    self.raid_id = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.max_score = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CENIFNKNFNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CENIFNKNFNP);
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.raid_id);
         }
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(3, self.max_score);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CENIFNKNFNP != 0 {
-            os.write_uint32(3, self.CENIFNKNFNP)?;
+        if self.raid_id != 0 {
+            os.write_uint32(5, self.raid_id)?;
         }
         if self.max_score != 0 {
-            os.write_uint32(9, self.max_score)?;
+            os.write_uint32(3, self.max_score)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for AMDKBOHCFIA {
     }
 
     fn clear(&mut self) {
-        self.CENIFNKNFNP = 0;
+        self.raid_id = 0;
         self.max_score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMDKBOHCFIA {
         static instance: AMDKBOHCFIA = AMDKBOHCFIA {
-            CENIFNKNFNP: 0,
+            raid_id: 0,
             max_score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AMDKBOHCFIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMDKBOHCFIA.proto\"L\n\x0bAMDKBOHCFIA\x12\x20\n\x0bCENIFNKNFNP\x18\
-    \x03\x20\x01(\rR\x0bCENIFNKNFNP\x12\x1b\n\tmax_score\x18\t\x20\x01(\rR\
-    \x08maxScoreb\x06proto3\
+    \n\x11AMDKBOHCFIA.proto\"C\n\x0bAMDKBOHCFIA\x12\x17\n\x07raid_id\x18\x05\
+    \x20\x01(\rR\x06raidId\x12\x1b\n\tmax_score\x18\x03\x20\x01(\rR\x08maxSc\
+    oreb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

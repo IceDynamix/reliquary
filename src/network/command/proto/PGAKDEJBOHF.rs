@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PGAKDEJBOHF {
     // message fields
     // @@protoc_insertion_point(field:PGAKDEJBOHF.JFPJBBJLIFK)
-    pub JFPJBBJLIFK: ::protobuf::MessageField<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
+    pub JFPJBBJLIFK: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PGAKDEJBOHF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl PGAKDEJBOHF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFGFLGBLCAJ::JFGFLGBLCAJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>(
             "JFPJBBJLIFK",
             |m: &PGAKDEJBOHF| { &m.JFPJBBJLIFK },
             |m: &mut PGAKDEJBOHF| { &mut m.JFPJBBJLIFK },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for PGAKDEJBOHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPJBBJLIFK)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PGAKDEJBOHF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JFPJBBJLIFK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PGAKDEJBOHF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGAKDEJBOHF.proto\x1a\x11JFGFLGBLCAJ.proto\"=\n\x0bPGAKDEJBOHF\x12\
-    .\n\x0bJFPJBBJLIFK\x18\x08\x20\x01(\x0b2\x0c.JFGFLGBLCAJR\x0bJFPJBBJLIFK\
-    b\x06proto3\
+    \n\x11PGAKDEJBOHF.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"H\n\x0bPGAK\
+    DEJBOHF\x129\n\x0bJFPJBBJLIFK\x18\r\x20\x01(\x0b2\x17.RogueMagicGameUnit\
+    InfoR\x0bJFPJBBJLIFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JFGFLGBLCAJ::file_descriptor().clone());
+            deps.push(super::RogueMagicGameUnitInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PGAKDEJBOHF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,7 +72,7 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                48 => {
                     self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.MDCJFOAFDJK.value());
+            my_size += ::protobuf::rt::int32_size(6, self.MDCJFOAFDJK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityResetCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&EvolveBuildShopAbilityResetCsReq.proto\x1a\x11KLNIPNJCNMJ.proto\"R\n\
-    \x20EvolveBuildShopAbilityResetCsReq\x12.\n\x0bMDCJFOAFDJK\x18\x0b\x20\
+    \x20EvolveBuildShopAbilityResetCsReq\x12.\n\x0bMDCJFOAFDJK\x18\x06\x20\
     \x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFDJKb\x06proto3\
 ";
 

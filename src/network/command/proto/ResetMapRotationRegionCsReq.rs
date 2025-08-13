@@ -79,10 +79,10 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                74 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ResetMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\x1a\x13Rota\
     teMapInfo.proto\"o\n\x1bResetMapRotationRegionCsReq\x12#\n\x06motion\x18\
-    \x0f\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12+\n\trogue_map\x18\t\x20\
-    \x01(\x0b2\x0e.RotateMapInfoR\x08rogueMapb\x06proto3\
+    \x0e\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12+\n\trogue_map\x18\x05\
+    \x20\x01(\x0b2\x0e.RotateMapInfoR\x08rogueMapb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

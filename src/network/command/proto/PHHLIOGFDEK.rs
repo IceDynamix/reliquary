@@ -30,10 +30,10 @@ pub struct PHHLIOGFDEK {
     // message fields
     // @@protoc_insertion_point(field:PHHLIOGFDEK.CAPICCCIEBO)
     pub CAPICCCIEBO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PHHLIOGFDEK.IJHLOJEFCPM)
-    pub IJHLOJEFCPM: u32,
     // @@protoc_insertion_point(field:PHHLIOGFDEK.OFGBJCCCIKE)
     pub OFGBJCCCIKE: u32,
+    // @@protoc_insertion_point(field:PHHLIOGFDEK.IJHLOJEFCPM)
+    pub IJHLOJEFCPM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PHHLIOGFDEK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl PHHLIOGFDEK {
             |m: &mut PHHLIOGFDEK| { &mut m.CAPICCCIEBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJHLOJEFCPM",
-            |m: &PHHLIOGFDEK| { &m.IJHLOJEFCPM },
-            |m: &mut PHHLIOGFDEK| { &mut m.IJHLOJEFCPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFGBJCCCIKE",
             |m: &PHHLIOGFDEK| { &m.OFGBJCCCIKE },
             |m: &mut PHHLIOGFDEK| { &mut m.OFGBJCCCIKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJHLOJEFCPM",
+            |m: &PHHLIOGFDEK| { &m.IJHLOJEFCPM },
+            |m: &mut PHHLIOGFDEK| { &mut m.IJHLOJEFCPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PHHLIOGFDEK>(
             "PHHLIOGFDEK",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for PHHLIOGFDEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.CAPICCCIEBO)?;
                 },
-                88 => {
+                104 => {
                     self.CAPICCCIEBO.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.IJHLOJEFCPM = is.read_uint32()?;
-                },
-                80 => {
+                112 => {
                     self.OFGBJCCCIKE = is.read_uint32()?;
+                },
+                120 => {
+                    self.IJHLOJEFCPM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for PHHLIOGFDEK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CAPICCCIEBO);
-        if self.IJHLOJEFCPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IJHLOJEFCPM);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CAPICCCIEBO);
         if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OFGBJCCCIKE);
+            my_size += ::protobuf::rt::uint32_size(14, self.OFGBJCCCIKE);
+        }
+        if self.IJHLOJEFCPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IJHLOJEFCPM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for PHHLIOGFDEK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.CAPICCCIEBO)?;
-        if self.IJHLOJEFCPM != 0 {
-            os.write_uint32(13, self.IJHLOJEFCPM)?;
-        }
+        os.write_repeated_packed_uint32(13, &self.CAPICCCIEBO)?;
         if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(10, self.OFGBJCCCIKE)?;
+            os.write_uint32(14, self.OFGBJCCCIKE)?;
+        }
+        if self.IJHLOJEFCPM != 0 {
+            os.write_uint32(15, self.IJHLOJEFCPM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PHHLIOGFDEK {
 
     fn clear(&mut self) {
         self.CAPICCCIEBO.clear();
-        self.IJHLOJEFCPM = 0;
         self.OFGBJCCCIKE = 0;
+        self.IJHLOJEFCPM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PHHLIOGFDEK {
         static instance: PHHLIOGFDEK = PHHLIOGFDEK {
             CAPICCCIEBO: ::std::vec::Vec::new(),
-            IJHLOJEFCPM: 0,
             OFGBJCCCIKE: 0,
+            IJHLOJEFCPM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PHHLIOGFDEK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PHHLIOGFDEK.proto\"s\n\x0bPHHLIOGFDEK\x12\x20\n\x0bCAPICCCIEBO\x18\
-    \x0b\x20\x03(\rR\x0bCAPICCCIEBO\x12\x20\n\x0bIJHLOJEFCPM\x18\r\x20\x01(\
-    \rR\x0bIJHLOJEFCPM\x12\x20\n\x0bOFGBJCCCIKE\x18\n\x20\x01(\rR\x0bOFGBJCC\
-    CIKEb\x06proto3\
+    \r\x20\x03(\rR\x0bCAPICCCIEBO\x12\x20\n\x0bOFGBJCCCIKE\x18\x0e\x20\x01(\
+    \rR\x0bOFGBJCCCIKE\x12\x20\n\x0bIJHLOJEFCPM\x18\x0f\x20\x01(\rR\x0bIJHLO\
+    JEFCPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

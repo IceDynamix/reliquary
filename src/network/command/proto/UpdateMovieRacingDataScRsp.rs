@@ -79,10 +79,10 @@ impl ::protobuf::Message for UpdateMovieRacingDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIHCHDFFPOL)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UpdateMovieRacingDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if let Some(v) = self.KIHCHDFFPOL.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for UpdateMovieRacingDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if let Some(v) = self.KIHCHDFFPOL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMovieRacingDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdateMovieRacingDataScRsp.proto\x1a\x11GMAAJHDFACD.proto\"f\n\x1a\
-    UpdateMovieRacingDataScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bKIHCHDFFPOL\x18\x0f\x20\x01(\x0b2\x0c.GMAAJHDFACDR\x0bKIH\
-    CHDFFPOLb\x06proto3\
+    UpdateMovieRacingDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bKIHCHDFFPOL\x18\x08\x20\x01(\x0b2\x0c.GMAAJHDFACDR\x0bK\
+    IHCHDFFPOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DisplayRelicInfo {
     // message fields
-    // @@protoc_insertion_point(field:DisplayRelicInfo.sub_affix_list)
-    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:DisplayRelicInfo.tid)
     pub tid: u32,
-    // @@protoc_insertion_point(field:DisplayRelicInfo.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:DisplayRelicInfo.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:DisplayRelicInfo.type)
-    pub type_: u32,
     // @@protoc_insertion_point(field:DisplayRelicInfo.main_affix_id)
     pub main_affix_id: u32,
+    // @@protoc_insertion_point(field:DisplayRelicInfo.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:DisplayRelicInfo.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:DisplayRelicInfo.type)
+    pub type_: u32,
+    // @@protoc_insertion_point(field:DisplayRelicInfo.sub_affix_list)
+    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // special fields
     // @@protoc_insertion_point(special_field:DisplayRelicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,15 @@ impl DisplayRelicInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sub_affix_list",
-            |m: &DisplayRelicInfo| { &m.sub_affix_list },
-            |m: &mut DisplayRelicInfo| { &mut m.sub_affix_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
             |m: &DisplayRelicInfo| { &m.tid },
             |m: &mut DisplayRelicInfo| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &DisplayRelicInfo| { &m.exp },
-            |m: &mut DisplayRelicInfo| { &mut m.exp },
+            "main_affix_id",
+            |m: &DisplayRelicInfo| { &m.main_affix_id },
+            |m: &mut DisplayRelicInfo| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -80,14 +75,19 @@ impl DisplayRelicInfo {
             |m: &mut DisplayRelicInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &DisplayRelicInfo| { &m.exp },
+            |m: &mut DisplayRelicInfo| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &DisplayRelicInfo| { &m.type_ },
             |m: &mut DisplayRelicInfo| { &mut m.type_ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_affix_id",
-            |m: &DisplayRelicInfo| { &m.main_affix_id },
-            |m: &mut DisplayRelicInfo| { &mut m.main_affix_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "sub_affix_list",
+            |m: &DisplayRelicInfo| { &m.sub_affix_list },
+            |m: &mut DisplayRelicInfo| { &mut m.sub_affix_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DisplayRelicInfo>(
             "DisplayRelicInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for DisplayRelicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.sub_affix_list.push(is.read_message()?);
-                },
-                64 => {
+                48 => {
                     self.tid = is.read_uint32()?;
                 },
-                40 => {
-                    self.exp = is.read_uint32()?;
-                },
-                24 => {
-                    self.level = is.read_uint32()?;
-                },
-                48 => {
-                    self.type_ = is.read_uint32()?;
+                104 => {
+                    self.main_affix_id = is.read_uint32()?;
                 },
                 8 => {
-                    self.main_affix_id = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
+                },
+                16 => {
+                    self.exp = is.read_uint32()?;
+                },
+                112 => {
+                    self.type_ = is.read_uint32()?;
+                },
+                90 => {
+                    self.sub_affix_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,49 +137,49 @@ impl ::protobuf::Message for DisplayRelicInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.tid);
+        }
+        if self.main_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.main_affix_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.exp);
+        }
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.type_);
+        }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.exp);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
-        if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.type_);
-        }
-        if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.main_affix_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(5, self.exp)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(3, self.level)?;
-        }
-        if self.type_ != 0 {
-            os.write_uint32(6, self.type_)?;
+            os.write_uint32(6, self.tid)?;
         }
         if self.main_affix_id != 0 {
-            os.write_uint32(1, self.main_affix_id)?;
+            os.write_uint32(13, self.main_affix_id)?;
         }
+        if self.level != 0 {
+            os.write_uint32(1, self.level)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(2, self.exp)?;
+        }
+        if self.type_ != 0 {
+            os.write_uint32(14, self.type_)?;
+        }
+        for v in &self.sub_affix_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +197,23 @@ impl ::protobuf::Message for DisplayRelicInfo {
     }
 
     fn clear(&mut self) {
-        self.sub_affix_list.clear();
         self.tid = 0;
-        self.exp = 0;
-        self.level = 0;
-        self.type_ = 0;
         self.main_affix_id = 0;
+        self.level = 0;
+        self.exp = 0;
+        self.type_ = 0;
+        self.sub_affix_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DisplayRelicInfo {
         static instance: DisplayRelicInfo = DisplayRelicInfo {
-            sub_affix_list: ::std::vec::Vec::new(),
             tid: 0,
-            exp: 0,
-            level: 0,
-            type_: 0,
             main_affix_id: 0,
+            level: 0,
+            exp: 0,
+            type_: 0,
+            sub_affix_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for DisplayRelicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DisplayRelicInfo.proto\x1a\x10RelicAffix.proto\"\xb7\x01\n\x10Disp\
-    layRelicInfo\x121\n\x0esub_affix_list\x18\x04\x20\x03(\x0b2\x0b.RelicAff\
-    ixR\x0csubAffixList\x12\x10\n\x03tid\x18\x08\x20\x01(\rR\x03tid\x12\x10\
-    \n\x03exp\x18\x05\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\x03\x20\x01(\
-    \rR\x05level\x12\x12\n\x04type\x18\x06\x20\x01(\rR\x04type\x12\"\n\rmain\
-    _affix_id\x18\x01\x20\x01(\rR\x0bmainAffixIdb\x06proto3\
+    layRelicInfo\x12\x10\n\x03tid\x18\x06\x20\x01(\rR\x03tid\x12\"\n\rmain_a\
+    ffix_id\x18\r\x20\x01(\rR\x0bmainAffixId\x12\x14\n\x05level\x18\x01\x20\
+    \x01(\rR\x05level\x12\x10\n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12\x12\n\
+    \x04type\x18\x0e\x20\x01(\rR\x04type\x121\n\x0esub_affix_list\x18\x0b\
+    \x20\x03(\x0b2\x0b.RelicAffixR\x0csubAffixListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

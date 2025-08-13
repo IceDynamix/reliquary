@@ -72,7 +72,7 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.relic_plan)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RelicSmartWearUpdatePlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.relic_plan.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearUpdatePlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RelicSmartWearUpdatePlanCsReq.proto\x1a\x18RelicSmartWearPlan.proto\"\
-    S\n\x1dRelicSmartWearUpdatePlanCsReq\x122\n\nrelic_plan\x18\x0c\x20\x01(\
+    S\n\x1dRelicSmartWearUpdatePlanCsReq\x122\n\nrelic_plan\x18\n\x20\x01(\
     \x0b2\x13.RelicSmartWearPlanR\trelicPlanb\x06proto3\
 ";
 

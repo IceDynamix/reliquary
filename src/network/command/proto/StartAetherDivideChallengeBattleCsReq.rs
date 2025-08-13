@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.lineup_index = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.challenge_id);
         }
         if self.lineup_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.lineup_index);
+            my_size += ::protobuf::rt::uint32_size(3, self.lineup_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for StartAetherDivideChallengeBattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(5, self.challenge_id)?;
+            os.write_uint32(11, self.challenge_id)?;
         }
         if self.lineup_index != 0 {
-            os.write_uint32(6, self.lineup_index)?;
+            os.write_uint32(3, self.lineup_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideChallengeBattleCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+StartAetherDivideChallengeBattleCsReq.proto\"m\n%StartAetherDivideCha\
-    llengeBattleCsReq\x12!\n\x0cchallenge_id\x18\x05\x20\x01(\rR\x0bchalleng\
-    eId\x12!\n\x0clineup_index\x18\x06\x20\x01(\rR\x0blineupIndexb\x06proto3\
+    llengeBattleCsReq\x12!\n\x0cchallenge_id\x18\x0b\x20\x01(\rR\x0bchalleng\
+    eId\x12!\n\x0clineup_index\x18\x03\x20\x01(\rR\x0blineupIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

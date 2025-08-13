@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFCAJKFEPAO {
     // message fields
-    // @@protoc_insertion_point(field:CFCAJKFEPAO.msg)
-    pub msg: ::std::string::String,
-    // @@protoc_insertion_point(field:CFCAJKFEPAO.state)
-    pub state: ::protobuf::EnumOrUnknown<super::OJIDJNDHDGA::OJIDJNDHDGA>,
     // @@protoc_insertion_point(field:CFCAJKFEPAO.BENANABPPJN)
     pub BENANABPPJN: ::std::string::String,
+    // @@protoc_insertion_point(field:CFCAJKFEPAO.state)
+    pub state: ::protobuf::EnumOrUnknown<super::OJIDJNDHDGA::OJIDJNDHDGA>,
+    // @@protoc_insertion_point(field:CFCAJKFEPAO.msg)
+    pub msg: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:CFCAJKFEPAO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl CFCAJKFEPAO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg",
-            |m: &CFCAJKFEPAO| { &m.msg },
-            |m: &mut CFCAJKFEPAO| { &mut m.msg },
+            "BENANABPPJN",
+            |m: &CFCAJKFEPAO| { &m.BENANABPPJN },
+            |m: &mut CFCAJKFEPAO| { &mut m.BENANABPPJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
@@ -64,9 +64,9 @@ impl CFCAJKFEPAO {
             |m: &mut CFCAJKFEPAO| { &mut m.state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BENANABPPJN",
-            |m: &CFCAJKFEPAO| { &m.BENANABPPJN },
-            |m: &mut CFCAJKFEPAO| { &mut m.BENANABPPJN },
+            "msg",
+            |m: &CFCAJKFEPAO| { &m.msg },
+            |m: &mut CFCAJKFEPAO| { &mut m.msg },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFCAJKFEPAO>(
             "CFCAJKFEPAO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.msg = is.read_string()?;
+                90 => {
+                    self.BENANABPPJN = is.read_string()?;
                 },
-                88 => {
+                64 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
-                26 => {
-                    self.BENANABPPJN = is.read_string()?;
+                106 => {
+                    self.msg = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.msg);
+        if !self.BENANABPPJN.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.BENANABPPJN);
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            my_size += ::protobuf::rt::int32_size(11, self.state.value());
+            my_size += ::protobuf::rt::int32_size(8, self.state.value());
         }
-        if !self.BENANABPPJN.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.BENANABPPJN);
+        if !self.msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.msg);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.msg.is_empty() {
-            os.write_string(13, &self.msg)?;
+        if !self.BENANABPPJN.is_empty() {
+            os.write_string(11, &self.BENANABPPJN)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
-        if !self.BENANABPPJN.is_empty() {
-            os.write_string(3, &self.BENANABPPJN)?;
+        if !self.msg.is_empty() {
+            os.write_string(13, &self.msg)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CFCAJKFEPAO {
     }
 
     fn clear(&mut self) {
-        self.msg.clear();
-        self.state = ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY);
         self.BENANABPPJN.clear();
+        self.state = ::protobuf::EnumOrUnknown::new(super::OJIDJNDHDGA::OJIDJNDHDGA::READY);
+        self.msg.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFCAJKFEPAO {
         static instance: CFCAJKFEPAO = CFCAJKFEPAO {
-            msg: ::std::string::String::new(),
-            state: ::protobuf::EnumOrUnknown::from_i32(0),
             BENANABPPJN: ::std::string::String::new(),
+            state: ::protobuf::EnumOrUnknown::from_i32(0),
+            msg: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CFCAJKFEPAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFCAJKFEPAO.proto\x1a\x11OJIDJNDHDGA.proto\"e\n\x0bCFCAJKFEPAO\x12\
-    \x10\n\x03msg\x18\r\x20\x01(\tR\x03msg\x12\"\n\x05state\x18\x0b\x20\x01(\
-    \x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x20\n\x0bBENANABPPJN\x18\x03\x20\x01\
-    (\tR\x0bBENANABPPJNb\x06proto3\
+    \x20\n\x0bBENANABPPJN\x18\x0b\x20\x01(\tR\x0bBENANABPPJN\x12\"\n\x05stat\
+    e\x18\x08\x20\x01(\x0e2\x0c.OJIDJNDHDGAR\x05state\x12\x10\n\x03msg\x18\r\
+    \x20\x01(\tR\x03msgb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

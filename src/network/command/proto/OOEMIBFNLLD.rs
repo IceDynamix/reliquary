@@ -79,10 +79,10 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.progress = is.read_uint32()?;
                 },
-                24 => {
+                56 => {
                     self.EKPNCLPOENK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.progress);
+            my_size += ::protobuf::rt::uint32_size(2, self.progress);
         }
         if self.EKPNCLPOENK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EKPNCLPOENK);
+            my_size += ::protobuf::rt::uint32_size(7, self.EKPNCLPOENK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OOEMIBFNLLD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.progress != 0 {
-            os.write_uint32(6, self.progress)?;
+            os.write_uint32(2, self.progress)?;
         }
         if self.EKPNCLPOENK != 0 {
-            os.write_uint32(3, self.EKPNCLPOENK)?;
+            os.write_uint32(7, self.EKPNCLPOENK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for OOEMIBFNLLD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OOEMIBFNLLD.proto\"K\n\x0bOOEMIBFNLLD\x12\x1a\n\x08progress\x18\
-    \x06\x20\x01(\rR\x08progress\x12\x20\n\x0bEKPNCLPOENK\x18\x03\x20\x01(\r\
+    \x02\x20\x01(\rR\x08progress\x12\x20\n\x0bEKPNCLPOENK\x18\x07\x20\x01(\r\
     R\x0bEKPNCLPOENKb\x06proto3\
 ";
 

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterMapRotationRegionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.NFLBONDJAIE)
-    pub NFLBONDJAIE: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.client_pos_version)
-    pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.motion)
-    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.era_flipper_region_id)
     pub era_flipper_region_id: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.client_pos_version)
+    pub client_pos_version: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.energy_info)
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.NFLBONDJAIE)
+    pub NFLBONDJAIE: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionScRsp.motion)
+    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterMapRotationRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,19 @@ impl EnterMapRotationRegionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFLBONDJAIE",
-            |m: &EnterMapRotationRegionScRsp| { &m.NFLBONDJAIE },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.NFLBONDJAIE },
+            "era_flipper_region_id",
+            |m: &EnterMapRotationRegionScRsp| { &m.era_flipper_region_id },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.era_flipper_region_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "client_pos_version",
             |m: &EnterMapRotationRegionScRsp| { &m.client_pos_version },
             |m: &mut EnterMapRotationRegionScRsp| { &mut m.client_pos_version },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &EnterMapRotationRegionScRsp| { &m.motion },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.motion },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EnterMapRotationRegionScRsp| { &m.retcode },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
             "energy_info",
@@ -80,14 +80,14 @@ impl EnterMapRotationRegionScRsp {
             |m: &mut EnterMapRotationRegionScRsp| { &mut m.energy_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterMapRotationRegionScRsp| { &m.retcode },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.retcode },
+            "NFLBONDJAIE",
+            |m: &EnterMapRotationRegionScRsp| { &m.NFLBONDJAIE },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.NFLBONDJAIE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "era_flipper_region_id",
-            |m: &EnterMapRotationRegionScRsp| { &m.era_flipper_region_id },
-            |m: &mut EnterMapRotationRegionScRsp| { &mut m.era_flipper_region_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &EnterMapRotationRegionScRsp| { &m.motion },
+            |m: &mut EnterMapRotationRegionScRsp| { &mut m.motion },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterMapRotationRegionScRsp>(
             "EnterMapRotationRegionScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.NFLBONDJAIE = is.read_uint32()?;
+                40 => {
+                    self.era_flipper_region_id = is.read_uint32()?;
                 },
-                120 => {
+                8 => {
                     self.client_pos_version = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
-                },
-                80 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.era_flipper_region_id = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
+                },
+                72 => {
+                    self.NFLBONDJAIE = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFLBONDJAIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NFLBONDJAIE);
+        if self.era_flipper_region_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.era_flipper_region_id);
         }
         if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.client_pos_version);
+            my_size += ::protobuf::rt::uint32_size(1, self.client_pos_version);
         }
-        if let Some(v) = self.motion.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        if self.NFLBONDJAIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NFLBONDJAIE);
         }
-        if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.era_flipper_region_id);
+        if let Some(v) = self.motion.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFLBONDJAIE != 0 {
-            os.write_uint32(14, self.NFLBONDJAIE)?;
+        if self.era_flipper_region_id != 0 {
+            os.write_uint32(5, self.era_flipper_region_id)?;
         }
         if self.client_pos_version != 0 {
-            os.write_uint32(15, self.client_pos_version)?;
-        }
-        if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            os.write_uint32(1, self.client_pos_version)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.era_flipper_region_id != 0 {
-            os.write_uint32(8, self.era_flipper_region_id)?;
+        if let Some(v) = self.energy_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.NFLBONDJAIE != 0 {
+            os.write_uint32(9, self.NFLBONDJAIE)?;
+        }
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for EnterMapRotationRegionScRsp {
     }
 
     fn clear(&mut self) {
-        self.NFLBONDJAIE = 0;
-        self.client_pos_version = 0;
-        self.motion.clear();
-        self.energy_info.clear();
-        self.retcode = 0;
         self.era_flipper_region_id = 0;
+        self.client_pos_version = 0;
+        self.retcode = 0;
+        self.energy_info.clear();
+        self.NFLBONDJAIE = 0;
+        self.motion.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterMapRotationRegionScRsp {
         static instance: EnterMapRotationRegionScRsp = EnterMapRotationRegionScRsp {
-            NFLBONDJAIE: 0,
-            client_pos_version: 0,
-            motion: ::protobuf::MessageField::none(),
-            energy_info: ::protobuf::MessageField::none(),
-            retcode: 0,
             era_flipper_region_id: 0,
+            client_pos_version: 0,
+            retcode: 0,
+            energy_info: ::protobuf::MessageField::none(),
+            NFLBONDJAIE: 0,
+            motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for EnterMapRotationRegionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EnterMapRotationRegionScRsp.proto\x1a\x10MotionInfo.proto\x1a\x17Rota\
-    terEnergyInfo.proto\"\x94\x02\n\x1bEnterMapRotationRegionScRsp\x12\x20\n\
-    \x0bNFLBONDJAIE\x18\x0e\x20\x01(\rR\x0bNFLBONDJAIE\x12,\n\x12client_pos_\
-    version\x18\x0f\x20\x01(\rR\x10clientPosVersion\x12#\n\x06motion\x18\x06\
-    \x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x123\n\x0benergy_info\x18\x02\
-    \x20\x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfo\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x121\n\x15era_flipper_region_id\x18\x08\
-    \x20\x01(\rR\x12eraFlipperRegionIdb\x06proto3\
+    terEnergyInfo.proto\"\x94\x02\n\x1bEnterMapRotationRegionScRsp\x121\n\
+    \x15era_flipper_region_id\x18\x05\x20\x01(\rR\x12eraFlipperRegionId\x12,\
+    \n\x12client_pos_version\x18\x01\x20\x01(\rR\x10clientPosVersion\x12\x18\
+    \n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x123\n\x0benergy_info\x18\
+    \x08\x20\x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfo\x12\x20\n\x0bNFLBO\
+    NDJAIE\x18\t\x20\x01(\rR\x0bNFLBONDJAIE\x12#\n\x06motion\x18\x0e\x20\x01\
+    (\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,14 +30,14 @@ pub struct ClockParkUseBuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:ClockParkUseBuffScRsp.AHIDJBJGGPP)
     pub AHIDJBJGGPP: u32,
-    // @@protoc_insertion_point(field:ClockParkUseBuffScRsp.script_id)
-    pub script_id: u32,
     // @@protoc_insertion_point(field:ClockParkUseBuffScRsp.rogue_buff_info)
     pub rogue_buff_info: ::protobuf::MessageField<super::ECMILHCKOMO::ECMILHCKOMO>,
     // @@protoc_insertion_point(field:ClockParkUseBuffScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ClockParkUseBuffScRsp.script_id)
+    pub script_id: u32,
     // message oneof groups
-    pub BCMFEHNOJJK: ::std::option::Option<clock_park_use_buff_sc_rsp::BCMFEHNOJJK>,
+    pub DBLAAOKFNIH: ::std::option::Option<clock_park_use_buff_sc_rsp::DBLAAOKFNIH>,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkUseBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,39 +54,39 @@ impl ClockParkUseBuffScRsp {
         ::std::default::Default::default()
     }
 
-    // .HDCKCHPDMMI ANCPCPCLJED = 223;
+    // .HDCKCHPDMMI ANCPCPCLJED = 1930;
 
     pub fn ANCPCPCLJED(&self) -> &super::HDCKCHPDMMI::HDCKCHPDMMI {
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(ref v)) => v,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(ref v)) => v,
             _ => <super::HDCKCHPDMMI::HDCKCHPDMMI as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ANCPCPCLJED(&mut self) {
-        self.BCMFEHNOJJK = ::std::option::Option::None;
+        self.DBLAAOKFNIH = ::std::option::Option::None;
     }
 
     pub fn has_ANCPCPCLJED(&self) -> bool {
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(..)) => true,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ANCPCPCLJED(&mut self, v: super::HDCKCHPDMMI::HDCKCHPDMMI) {
-        self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(v))
+        self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ANCPCPCLJED(&mut self) -> &mut super::HDCKCHPDMMI::HDCKCHPDMMI {
-        if let ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(_)) = self.BCMFEHNOJJK {
+        if let ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(_)) = self.DBLAAOKFNIH {
         } else {
-            self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(super::HDCKCHPDMMI::HDCKCHPDMMI::new()));
+            self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(super::HDCKCHPDMMI::HDCKCHPDMMI::new()));
         }
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(ref mut v)) => v,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -94,8 +94,8 @@ impl ClockParkUseBuffScRsp {
     // Take field
     pub fn take_ANCPCPCLJED(&mut self) -> super::HDCKCHPDMMI::HDCKCHPDMMI {
         if self.has_ANCPCPCLJED() {
-            match self.BCMFEHNOJJK.take() {
-                ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(v)) => v,
+            match self.DBLAAOKFNIH.take() {
+                ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -103,39 +103,39 @@ impl ClockParkUseBuffScRsp {
         }
     }
 
-    // .BMLOFPCNGKN MJDOGPBOJIP = 1911;
+    // .BMLOFPCNGKN MJDOGPBOJIP = 558;
 
     pub fn MJDOGPBOJIP(&self) -> &super::BMLOFPCNGKN::BMLOFPCNGKN {
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(ref v)) => v,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(ref v)) => v,
             _ => <super::BMLOFPCNGKN::BMLOFPCNGKN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_MJDOGPBOJIP(&mut self) {
-        self.BCMFEHNOJJK = ::std::option::Option::None;
+        self.DBLAAOKFNIH = ::std::option::Option::None;
     }
 
     pub fn has_MJDOGPBOJIP(&self) -> bool {
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(..)) => true,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_MJDOGPBOJIP(&mut self, v: super::BMLOFPCNGKN::BMLOFPCNGKN) {
-        self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(v))
+        self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_MJDOGPBOJIP(&mut self) -> &mut super::BMLOFPCNGKN::BMLOFPCNGKN {
-        if let ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(_)) = self.BCMFEHNOJJK {
+        if let ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(_)) = self.DBLAAOKFNIH {
         } else {
-            self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(super::BMLOFPCNGKN::BMLOFPCNGKN::new()));
+            self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(super::BMLOFPCNGKN::BMLOFPCNGKN::new()));
         }
-        match self.BCMFEHNOJJK {
-            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(ref mut v)) => v,
+        match self.DBLAAOKFNIH {
+            ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -143,8 +143,8 @@ impl ClockParkUseBuffScRsp {
     // Take field
     pub fn take_MJDOGPBOJIP(&mut self) -> super::BMLOFPCNGKN::BMLOFPCNGKN {
         if self.has_MJDOGPBOJIP() {
-            match self.BCMFEHNOJJK.take() {
-                ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(v)) => v,
+            match self.DBLAAOKFNIH.take() {
+                ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,11 +160,6 @@ impl ClockParkUseBuffScRsp {
             |m: &ClockParkUseBuffScRsp| { &m.AHIDJBJGGPP },
             |m: &mut ClockParkUseBuffScRsp| { &mut m.AHIDJBJGGPP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "script_id",
-            |m: &ClockParkUseBuffScRsp| { &m.script_id },
-            |m: &mut ClockParkUseBuffScRsp| { &mut m.script_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ECMILHCKOMO::ECMILHCKOMO>(
             "rogue_buff_info",
             |m: &ClockParkUseBuffScRsp| { &m.rogue_buff_info },
@@ -174,6 +169,11 @@ impl ClockParkUseBuffScRsp {
             "retcode",
             |m: &ClockParkUseBuffScRsp| { &m.retcode },
             |m: &mut ClockParkUseBuffScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "script_id",
+            |m: &ClockParkUseBuffScRsp| { &m.script_id },
+            |m: &mut ClockParkUseBuffScRsp| { &mut m.script_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HDCKCHPDMMI::HDCKCHPDMMI>(
             "ANCPCPCLJED",
@@ -189,7 +189,7 @@ impl ClockParkUseBuffScRsp {
             ClockParkUseBuffScRsp::mut_MJDOGPBOJIP,
             ClockParkUseBuffScRsp::set_MJDOGPBOJIP,
         ));
-        oneofs.push(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::generated_oneof_descriptor_data());
+        oneofs.push(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkUseBuffScRsp>(
             "ClockParkUseBuffScRsp",
             fields,
@@ -208,23 +208,23 @@ impl ::protobuf::Message for ClockParkUseBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.AHIDJBJGGPP = is.read_uint32()?;
                 },
-                96 => {
-                    self.script_id = is.read_uint32()?;
-                },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
                 },
-                112 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                1786 => {
-                    self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(is.read_message()?));
+                104 => {
+                    self.script_id = is.read_uint32()?;
                 },
-                15290 => {
-                    self.BCMFEHNOJJK = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(is.read_message()?));
+                15442 => {
+                    self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(is.read_message()?));
+                },
+                4466 => {
+                    self.DBLAAOKFNIH = ::std::option::Option::Some(clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -239,25 +239,25 @@ impl ::protobuf::Message for ClockParkUseBuffScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AHIDJBJGGPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AHIDJBJGGPP);
-        }
-        if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.AHIDJBJGGPP);
         }
         if let Some(v) = self.rogue_buff_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.BCMFEHNOJJK {
+        if self.script_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.script_id);
+        }
+        if let ::std::option::Option::Some(ref v) = self.DBLAAOKFNIH {
             match v {
-                &clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(ref v) => {
+                &clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(ref v) => {
+                &clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -270,24 +270,24 @@ impl ::protobuf::Message for ClockParkUseBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AHIDJBJGGPP != 0 {
-            os.write_uint32(13, self.AHIDJBJGGPP)?;
-        }
-        if self.script_id != 0 {
-            os.write_uint32(12, self.script_id)?;
+            os.write_uint32(14, self.AHIDJBJGGPP)?;
         }
         if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.BCMFEHNOJJK {
+        if self.script_id != 0 {
+            os.write_uint32(13, self.script_id)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.DBLAAOKFNIH {
             match v {
-                &clock_park_use_buff_sc_rsp::BCMFEHNOJJK::ANCPCPCLJED(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(223, v, os)?;
+                &clock_park_use_buff_sc_rsp::DBLAAOKFNIH::ANCPCPCLJED(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1930, v, os)?;
                 },
-                &clock_park_use_buff_sc_rsp::BCMFEHNOJJK::MJDOGPBOJIP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1911, v, os)?;
+                &clock_park_use_buff_sc_rsp::DBLAAOKFNIH::MJDOGPBOJIP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(558, v, os)?;
                 },
             };
         }
@@ -309,21 +309,21 @@ impl ::protobuf::Message for ClockParkUseBuffScRsp {
 
     fn clear(&mut self) {
         self.AHIDJBJGGPP = 0;
-        self.script_id = 0;
         self.rogue_buff_info.clear();
         self.retcode = 0;
-        self.BCMFEHNOJJK = ::std::option::Option::None;
-        self.BCMFEHNOJJK = ::std::option::Option::None;
+        self.script_id = 0;
+        self.DBLAAOKFNIH = ::std::option::Option::None;
+        self.DBLAAOKFNIH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkUseBuffScRsp {
         static instance: ClockParkUseBuffScRsp = ClockParkUseBuffScRsp {
             AHIDJBJGGPP: 0,
-            script_id: 0,
             rogue_buff_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            BCMFEHNOJJK: ::std::option::Option::None,
+            script_id: 0,
+            DBLAAOKFNIH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -352,27 +352,27 @@ pub mod clock_park_use_buff_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ClockParkUseBuffScRsp.BCMFEHNOJJK)
-    pub enum BCMFEHNOJJK {
+    // @@protoc_insertion_point(oneof:ClockParkUseBuffScRsp.DBLAAOKFNIH)
+    pub enum DBLAAOKFNIH {
         // @@protoc_insertion_point(oneof_field:ClockParkUseBuffScRsp.ANCPCPCLJED)
         ANCPCPCLJED(super::super::HDCKCHPDMMI::HDCKCHPDMMI),
         // @@protoc_insertion_point(oneof_field:ClockParkUseBuffScRsp.MJDOGPBOJIP)
         MJDOGPBOJIP(super::super::BMLOFPCNGKN::BMLOFPCNGKN),
     }
 
-    impl ::protobuf::Oneof for BCMFEHNOJJK {
+    impl ::protobuf::Oneof for DBLAAOKFNIH {
     }
 
-    impl ::protobuf::OneofFull for BCMFEHNOJJK {
+    impl ::protobuf::OneofFull for DBLAAOKFNIH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ClockParkUseBuffScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("BCMFEHNOJJK").unwrap()).clone()
+            descriptor.get(|| <super::ClockParkUseBuffScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("DBLAAOKFNIH").unwrap()).clone()
         }
     }
 
-    impl BCMFEHNOJJK {
+    impl DBLAAOKFNIH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BCMFEHNOJJK>("BCMFEHNOJJK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DBLAAOKFNIH>("DBLAAOKFNIH")
         }
     }
 }
@@ -380,13 +380,13 @@ pub mod clock_park_use_buff_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bClockParkUseBuffScRsp.proto\x1a\x11BMLOFPCNGKN.proto\x1a\x11ECMILH\
     CKOMO.proto\x1a\x11HDCKCHPDMMI.proto\"\x9b\x02\n\x15ClockParkUseBuffScRs\
-    p\x12\x20\n\x0bAHIDJBJGGPP\x18\r\x20\x01(\rR\x0bAHIDJBJGGPP\x12\x1b\n\ts\
-    cript_id\x18\x0c\x20\x01(\rR\x08scriptId\x124\n\x0frogue_buff_info\x18\
-    \x0b\x20\x01(\x0b2\x0c.ECMILHCKOMOR\rrogueBuffInfo\x12\x18\n\x07retcode\
-    \x18\x0e\x20\x01(\rR\x07retcode\x121\n\x0bANCPCPCLJED\x18\xdf\x01\x20\
+    p\x12\x20\n\x0bAHIDJBJGGPP\x18\x0e\x20\x01(\rR\x0bAHIDJBJGGPP\x124\n\x0f\
+    rogue_buff_info\x18\x0f\x20\x01(\x0b2\x0c.ECMILHCKOMOR\rrogueBuffInfo\
+    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x1b\n\tscript_i\
+    d\x18\r\x20\x01(\rR\x08scriptId\x121\n\x0bANCPCPCLJED\x18\x8a\x0f\x20\
     \x01(\x0b2\x0c.HDCKCHPDMMIH\0R\x0bANCPCPCLJED\x121\n\x0bMJDOGPBOJIP\x18\
-    \xf7\x0e\x20\x01(\x0b2\x0c.BMLOFPCNGKNH\0R\x0bMJDOGPBOJIPB\r\n\x0bBCMFEH\
-    NOJJKb\x06proto3\
+    \xae\x04\x20\x01(\x0b2\x0c.BMLOFPCNGKNH\0R\x0bMJDOGPBOJIPB\r\n\x0bDBLAAO\
+    KFNIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

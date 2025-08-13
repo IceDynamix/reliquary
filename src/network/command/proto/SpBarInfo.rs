@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpBarInfo {
     // message fields
-    // @@protoc_insertion_point(field:SpBarInfo.sp_cur)
-    pub sp_cur: u32,
-    // @@protoc_insertion_point(field:SpBarInfo.sp_max)
-    pub sp_max: u32,
+    // @@protoc_insertion_point(field:SpBarInfo.cur_sp)
+    pub cur_sp: u32,
+    // @@protoc_insertion_point(field:SpBarInfo.max_sp)
+    pub max_sp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpBarInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SpBarInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sp_cur",
-            |m: &SpBarInfo| { &m.sp_cur },
-            |m: &mut SpBarInfo| { &mut m.sp_cur },
+            "cur_sp",
+            |m: &SpBarInfo| { &m.cur_sp },
+            |m: &mut SpBarInfo| { &mut m.cur_sp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sp_max",
-            |m: &SpBarInfo| { &m.sp_max },
-            |m: &mut SpBarInfo| { &mut m.sp_max },
+            "max_sp",
+            |m: &SpBarInfo| { &m.max_sp },
+            |m: &mut SpBarInfo| { &mut m.max_sp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpBarInfo>(
             "SpBarInfo",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for SpBarInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.sp_cur = is.read_uint32()?;
+                    self.cur_sp = is.read_uint32()?;
                 },
                 16 => {
-                    self.sp_max = is.read_uint32()?;
+                    self.max_sp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SpBarInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.sp_cur != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.sp_cur);
+        if self.cur_sp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.cur_sp);
         }
-        if self.sp_max != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.sp_max);
+        if self.max_sp != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.max_sp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SpBarInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.sp_cur != 0 {
-            os.write_uint32(1, self.sp_cur)?;
+        if self.cur_sp != 0 {
+            os.write_uint32(1, self.cur_sp)?;
         }
-        if self.sp_max != 0 {
-            os.write_uint32(2, self.sp_max)?;
+        if self.max_sp != 0 {
+            os.write_uint32(2, self.max_sp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SpBarInfo {
     }
 
     fn clear(&mut self) {
-        self.sp_cur = 0;
-        self.sp_max = 0;
+        self.cur_sp = 0;
+        self.max_sp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpBarInfo {
         static instance: SpBarInfo = SpBarInfo {
-            sp_cur: 0,
-            sp_max: 0,
+            cur_sp: 0,
+            max_sp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SpBarInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fSpBarInfo.proto\"9\n\tSpBarInfo\x12\x15\n\x06sp_cur\x18\x01\x20\
-    \x01(\rR\x05spCur\x12\x15\n\x06sp_max\x18\x02\x20\x01(\rR\x05spMaxb\x06p\
+    \n\x0fSpBarInfo.proto\"9\n\tSpBarInfo\x12\x15\n\x06cur_sp\x18\x01\x20\
+    \x01(\rR\x05curSp\x12\x15\n\x06max_sp\x18\x02\x20\x01(\rR\x05maxSpb\x06p\
     roto3\
 ";
 

@@ -79,7 +79,7 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.era_flipper_region_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.era_flipper_region_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.era_flipper_region_id != 0 {
             os.write_uint32(6, self.era_flipper_region_id)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterEraFlipperRegionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EnterEraFlipperRegionScRsp.proto\"i\n\x1aEnterEraFlipperRegionScRs\
-    p\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x121\n\x15era_flip\
-    per_region_id\x18\x06\x20\x01(\rR\x12eraFlipperRegionIdb\x06proto3\
+    p\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x121\n\x15era_flippe\
+    r_region_id\x18\x06\x20\x01(\rR\x12eraFlipperRegionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

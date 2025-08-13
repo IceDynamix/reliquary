@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEAJLADINFK {
     // message oneof groups
-    pub PHJLFCJJHME: ::std::option::Option<peajladinfk::PHJLFCJJHME>,
+    pub ECOEKHPGMEA: ::std::option::Option<peajladinfk::ECOEKHPGMEA>,
     // special fields
     // @@protoc_insertion_point(special_field:PEAJLADINFK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl PEAJLADINFK {
         ::std::default::Default::default()
     }
 
-    // .CMHMBLALOHN BAMNOJKMBMN = 5;
+    // .CMHMBLALOHN BAMNOJKMBMN = 12;
 
     pub fn BAMNOJKMBMN(&self) -> &super::CMHMBLALOHN::CMHMBLALOHN {
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(ref v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(ref v)) => v,
             _ => <super::CMHMBLALOHN::CMHMBLALOHN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_BAMNOJKMBMN(&mut self) {
-        self.PHJLFCJJHME = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
     }
 
     pub fn has_BAMNOJKMBMN(&self) -> bool {
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(..)) => true,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_BAMNOJKMBMN(&mut self, v: super::CMHMBLALOHN::CMHMBLALOHN) {
-        self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(v))
+        self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_BAMNOJKMBMN(&mut self) -> &mut super::CMHMBLALOHN::CMHMBLALOHN {
-        if let ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(_)) = self.PHJLFCJJHME {
+        if let ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(_)) = self.ECOEKHPGMEA {
         } else {
-            self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(super::CMHMBLALOHN::CMHMBLALOHN::new()));
+            self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(super::CMHMBLALOHN::CMHMBLALOHN::new()));
         }
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(ref mut v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl PEAJLADINFK {
     // Take field
     pub fn take_BAMNOJKMBMN(&mut self) -> super::CMHMBLALOHN::CMHMBLALOHN {
         if self.has_BAMNOJKMBMN() {
-            match self.PHJLFCJJHME.take() {
-                ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(v)) => v,
+            match self.ECOEKHPGMEA.take() {
+                ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl PEAJLADINFK {
         }
     }
 
-    // .NLFDKOIODMD FJGMNIOILOK = 11;
+    // .NLFDKOIODMD FJGMNIOILOK = 4;
 
     pub fn FJGMNIOILOK(&self) -> &super::NLFDKOIODMD::NLFDKOIODMD {
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(ref v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(ref v)) => v,
             _ => <super::NLFDKOIODMD::NLFDKOIODMD as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FJGMNIOILOK(&mut self) {
-        self.PHJLFCJJHME = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
     }
 
     pub fn has_FJGMNIOILOK(&self) -> bool {
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(..)) => true,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FJGMNIOILOK(&mut self, v: super::NLFDKOIODMD::NLFDKOIODMD) {
-        self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(v))
+        self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FJGMNIOILOK(&mut self) -> &mut super::NLFDKOIODMD::NLFDKOIODMD {
-        if let ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(_)) = self.PHJLFCJJHME {
+        if let ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(_)) = self.ECOEKHPGMEA {
         } else {
-            self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(super::NLFDKOIODMD::NLFDKOIODMD::new()));
+            self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(super::NLFDKOIODMD::NLFDKOIODMD::new()));
         }
-        match self.PHJLFCJJHME {
-            ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(ref mut v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl PEAJLADINFK {
     // Take field
     pub fn take_FJGMNIOILOK(&mut self) -> super::NLFDKOIODMD::NLFDKOIODMD {
         if self.has_FJGMNIOILOK() {
-            match self.PHJLFCJJHME.take() {
-                ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(v)) => v,
+            match self.ECOEKHPGMEA.take() {
+                ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl PEAJLADINFK {
             PEAJLADINFK::mut_FJGMNIOILOK,
             PEAJLADINFK::set_FJGMNIOILOK,
         ));
-        oneofs.push(peajladinfk::PHJLFCJJHME::generated_oneof_descriptor_data());
+        oneofs.push(peajladinfk::ECOEKHPGMEA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEAJLADINFK>(
             "PEAJLADINFK",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for PEAJLADINFK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(is.read_message()?));
+                98 => {
+                    self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(is.read_message()?));
                 },
-                90 => {
-                    self.PHJLFCJJHME = ::std::option::Option::Some(peajladinfk::PHJLFCJJHME::FJGMNIOILOK(is.read_message()?));
+                34 => {
+                    self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for PEAJLADINFK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.PHJLFCJJHME {
+        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
-                &peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(ref v) => {
+                &peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &peajladinfk::PHJLFCJJHME::FJGMNIOILOK(ref v) => {
+                &peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for PEAJLADINFK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.PHJLFCJJHME {
+        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
-                &peajladinfk::PHJLFCJJHME::BAMNOJKMBMN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                &peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &peajladinfk::PHJLFCJJHME::FJGMNIOILOK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for PEAJLADINFK {
     }
 
     fn clear(&mut self) {
-        self.PHJLFCJJHME = ::std::option::Option::None;
-        self.PHJLFCJJHME = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEAJLADINFK {
         static instance: PEAJLADINFK = PEAJLADINFK {
-            PHJLFCJJHME: ::std::option::Option::None,
+            ECOEKHPGMEA: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,36 +278,36 @@ pub mod peajladinfk {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:PEAJLADINFK.PHJLFCJJHME)
-    pub enum PHJLFCJJHME {
+    // @@protoc_insertion_point(oneof:PEAJLADINFK.ECOEKHPGMEA)
+    pub enum ECOEKHPGMEA {
         // @@protoc_insertion_point(oneof_field:PEAJLADINFK.BAMNOJKMBMN)
         BAMNOJKMBMN(super::super::CMHMBLALOHN::CMHMBLALOHN),
         // @@protoc_insertion_point(oneof_field:PEAJLADINFK.FJGMNIOILOK)
         FJGMNIOILOK(super::super::NLFDKOIODMD::NLFDKOIODMD),
     }
 
-    impl ::protobuf::Oneof for PHJLFCJJHME {
+    impl ::protobuf::Oneof for ECOEKHPGMEA {
     }
 
-    impl ::protobuf::OneofFull for PHJLFCJJHME {
+    impl ::protobuf::OneofFull for ECOEKHPGMEA {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::PEAJLADINFK as ::protobuf::MessageFull>::descriptor().oneof_by_name("PHJLFCJJHME").unwrap()).clone()
+            descriptor.get(|| <super::PEAJLADINFK as ::protobuf::MessageFull>::descriptor().oneof_by_name("ECOEKHPGMEA").unwrap()).clone()
         }
     }
 
-    impl PHJLFCJJHME {
+    impl ECOEKHPGMEA {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PHJLFCJJHME>("PHJLFCJJHME")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ECOEKHPGMEA>("ECOEKHPGMEA")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEAJLADINFK.proto\x1a\x11CMHMBLALOHN.proto\x1a\x11NLFDKOIODMD.prot\
-    o\"\x80\x01\n\x0bPEAJLADINFK\x120\n\x0bBAMNOJKMBMN\x18\x05\x20\x01(\x0b2\
-    \x0c.CMHMBLALOHNH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGMNIOILOK\x18\x0b\x20\
-    \x01(\x0b2\x0c.NLFDKOIODMDH\0R\x0bFJGMNIOILOKB\r\n\x0bPHJLFCJJHMEb\x06pr\
+    o\"\x80\x01\n\x0bPEAJLADINFK\x120\n\x0bBAMNOJKMBMN\x18\x0c\x20\x01(\x0b2\
+    \x0c.CMHMBLALOHNH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGMNIOILOK\x18\x04\x20\
+    \x01(\x0b2\x0c.NLFDKOIODMDH\0R\x0bFJGMNIOILOKB\r\n\x0bECOEKHPGMEAb\x06pr\
     oto3\
 ";
 

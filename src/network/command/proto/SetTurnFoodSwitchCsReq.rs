@@ -82,7 +82,7 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
                 72 => {
                     self.JCAKHHKFDFN = is.read_enum_or_unknown()?;
                 },
-                32 => {
+                112 => {
                     self.BNDLHJHALMB = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
             os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.JCAKHHKFDFN))?;
         }
         if self.BNDLHJHALMB != false {
-            os.write_bool(4, self.BNDLHJHALMB)?;
+            os.write_bool(14, self.BNDLHJHALMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
     etTurnFoodSwitchCsReq\x121\n\x0bJCAKHHKFDFN\x18\t\x20\x01(\x0e2\x0f.Turn\
-    FoodSwitchR\x0bJCAKHHKFDFN\x12\x20\n\x0bBNDLHJHALMB\x18\x04\x20\x01(\x08\
+    FoodSwitchR\x0bJCAKHHKFDFN\x12\x20\n\x0bBNDLHJHALMB\x18\x0e\x20\x01(\x08\
     R\x0bBNDLHJHALMBb\x06proto3\
 ";
 

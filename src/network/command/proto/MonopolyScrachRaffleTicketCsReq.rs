@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyScrachRaffleTicketCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketCsReq.pool_id)
-    pub pool_id: u32,
+    // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketCsReq.HHJPBLEKAPN)
+    pub HHJPBLEKAPN: u32,
     // @@protoc_insertion_point(field:MonopolyScrachRaffleTicketCsReq.PMELCDFHGKC)
     pub PMELCDFHGKC: u64,
     // special fields
@@ -52,9 +52,9 @@ impl MonopolyScrachRaffleTicketCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pool_id",
-            |m: &MonopolyScrachRaffleTicketCsReq| { &m.pool_id },
-            |m: &mut MonopolyScrachRaffleTicketCsReq| { &mut m.pool_id },
+            "HHJPBLEKAPN",
+            |m: &MonopolyScrachRaffleTicketCsReq| { &m.HHJPBLEKAPN },
+            |m: &mut MonopolyScrachRaffleTicketCsReq| { &mut m.HHJPBLEKAPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PMELCDFHGKC",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.pool_id = is.read_uint32()?;
+                32 => {
+                    self.HHJPBLEKAPN = is.read_uint32()?;
                 },
                 104 => {
                     self.PMELCDFHGKC = is.read_uint64()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pool_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.pool_id);
+        if self.HHJPBLEKAPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HHJPBLEKAPN);
         }
         if self.PMELCDFHGKC != 0 {
             my_size += ::protobuf::rt::uint64_size(13, self.PMELCDFHGKC);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pool_id != 0 {
-            os.write_uint32(7, self.pool_id)?;
+        if self.HHJPBLEKAPN != 0 {
+            os.write_uint32(4, self.HHJPBLEKAPN)?;
         }
         if self.PMELCDFHGKC != 0 {
             os.write_uint64(13, self.PMELCDFHGKC)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for MonopolyScrachRaffleTicketCsReq {
     }
 
     fn clear(&mut self) {
-        self.pool_id = 0;
+        self.HHJPBLEKAPN = 0;
         self.PMELCDFHGKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyScrachRaffleTicketCsReq {
         static instance: MonopolyScrachRaffleTicketCsReq = MonopolyScrachRaffleTicketCsReq {
-            pool_id: 0,
+            HHJPBLEKAPN: 0,
             PMELCDFHGKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyScrachRaffleTicketCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%MonopolyScrachRaffleTicketCsReq.proto\"\\\n\x1fMonopolyScrachRaffleTi\
-    cketCsReq\x12\x17\n\x07pool_id\x18\x07\x20\x01(\rR\x06poolId\x12\x20\n\
-    \x0bPMELCDFHGKC\x18\r\x20\x01(\x04R\x0bPMELCDFHGKCb\x06proto3\
+    \n%MonopolyScrachRaffleTicketCsReq.proto\"e\n\x1fMonopolyScrachRaffleTic\
+    ketCsReq\x12\x20\n\x0bHHJPBLEKAPN\x18\x04\x20\x01(\rR\x0bHHJPBLEKAPN\x12\
+    \x20\n\x0bPMELCDFHGKC\x18\r\x20\x01(\x04R\x0bPMELCDFHGKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

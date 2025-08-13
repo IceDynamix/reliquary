@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLDHEPJPMFM {
     // message fields
-    // @@protoc_insertion_point(field:GLDHEPJPMFM.FLBMHLPHFND)
-    pub FLBMHLPHFND: ::std::vec::Vec<super::KPBFCKNEEIA::KPBFCKNEEIA>,
+    // @@protoc_insertion_point(field:GLDHEPJPMFM.action_result_list)
+    pub action_result_list: ::std::vec::Vec<super::KPBFCKNEEIA::KPBFCKNEEIA>,
     // special fields
     // @@protoc_insertion_point(special_field:GLDHEPJPMFM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GLDHEPJPMFM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FLBMHLPHFND",
-            |m: &GLDHEPJPMFM| { &m.FLBMHLPHFND },
-            |m: &mut GLDHEPJPMFM| { &mut m.FLBMHLPHFND },
+            "action_result_list",
+            |m: &GLDHEPJPMFM| { &m.action_result_list },
+            |m: &mut GLDHEPJPMFM| { &mut m.action_result_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLDHEPJPMFM>(
             "GLDHEPJPMFM",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GLDHEPJPMFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.FLBMHLPHFND.push(is.read_message()?);
+                114 => {
+                    self.action_result_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GLDHEPJPMFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FLBMHLPHFND {
+        for value in &self.action_result_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GLDHEPJPMFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FLBMHLPHFND {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.action_result_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GLDHEPJPMFM {
     }
 
     fn clear(&mut self) {
-        self.FLBMHLPHFND.clear();
+        self.action_result_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLDHEPJPMFM {
         static instance: GLDHEPJPMFM = GLDHEPJPMFM {
-            FLBMHLPHFND: ::std::vec::Vec::new(),
+            action_result_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GLDHEPJPMFM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLDHEPJPMFM.proto\x1a\x11KPBFCKNEEIA.proto\"=\n\x0bGLDHEPJPMFM\x12\
-    .\n\x0bFLBMHLPHFND\x18\n\x20\x03(\x0b2\x0c.KPBFCKNEEIAR\x0bFLBMHLPHFNDb\
-    \x06proto3\
+    \n\x11GLDHEPJPMFM.proto\x1a\x11KPBFCKNEEIA.proto\"I\n\x0bGLDHEPJPMFM\x12\
+    :\n\x12action_result_list\x18\x0e\x20\x03(\x0b2\x0c.KPBFCKNEEIAR\x10acti\
+    onResultListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

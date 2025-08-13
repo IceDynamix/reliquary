@@ -72,7 +72,7 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.value = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.value);
+            my_size += ::protobuf::rt::uint32_size(3, self.value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TravelBrochureSetCustomValueCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0 {
-            os.write_uint32(14, self.value)?;
+            os.write_uint32(3, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSetCustomValueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TravelBrochureSetCustomValueCsReq.proto\"9\n!TravelBrochureSetCustomV\
-    alueCsReq\x12\x14\n\x05value\x18\x0e\x20\x01(\rR\x05valueb\x06proto3\
+    alueCsReq\x12\x14\n\x05value\x18\x03\x20\x01(\rR\x05valueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

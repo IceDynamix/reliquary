@@ -36,8 +36,8 @@ pub struct EACDEAPKILK {
     pub FEBMNCJIFMN: ::std::vec::Vec<super::PFKAMAFIKKO::PFKAMAFIKKO>,
     // @@protoc_insertion_point(field:EACDEAPKILK.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:EACDEAPKILK.PBALFIENEFO)
-    pub PBALFIENEFO: u32,
+    // @@protoc_insertion_point(field:EACDEAPKILK.difficulty_level)
+    pub difficulty_level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EACDEAPKILK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl EACDEAPKILK {
             |m: &mut EACDEAPKILK| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBALFIENEFO",
-            |m: &EACDEAPKILK| { &m.PBALFIENEFO },
-            |m: &mut EACDEAPKILK| { &mut m.PBALFIENEFO },
+            "difficulty_level",
+            |m: &EACDEAPKILK| { &m.difficulty_level },
+            |m: &mut EACDEAPKILK| { &mut m.difficulty_level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EACDEAPKILK>(
             "EACDEAPKILK",
@@ -125,7 +125,7 @@ impl ::protobuf::Message for EACDEAPKILK {
                     self.area_id = is.read_uint32()?;
                 },
                 40 => {
-                    self.PBALFIENEFO = is.read_uint32()?;
+                    self.difficulty_level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -156,8 +156,8 @@ impl ::protobuf::Message for EACDEAPKILK {
         if self.area_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
-        if self.PBALFIENEFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PBALFIENEFO);
+        if self.difficulty_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.difficulty_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -183,8 +183,8 @@ impl ::protobuf::Message for EACDEAPKILK {
         if self.area_id != 0 {
             os.write_uint32(4, self.area_id)?;
         }
-        if self.PBALFIENEFO != 0 {
-            os.write_uint32(5, self.PBALFIENEFO)?;
+        if self.difficulty_level != 0 {
+            os.write_uint32(5, self.difficulty_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -207,7 +207,7 @@ impl ::protobuf::Message for EACDEAPKILK {
         self.LKGDFHFBLDE.clear();
         self.FEBMNCJIFMN.clear();
         self.area_id = 0;
-        self.PBALFIENEFO = 0;
+        self.difficulty_level = 0;
         self.special_fields.clear();
     }
 
@@ -236,14 +236,14 @@ impl ::protobuf::reflect::ProtobufValue for EACDEAPKILK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EACDEAPKILK.proto\x1a\x11HPKEFFECHFG.proto\x1a\x11PFKAMAFIKKO.prot\
-    o\"\xa9\x02\n\x0bEACDEAPKILK\x12.\n\x0bCFKJEPMNLJI\x18\x01\x20\x03(\x0b2\
+    o\"\xb2\x02\n\x0bEACDEAPKILK\x12.\n\x0bCFKJEPMNLJI\x18\x01\x20\x03(\x0b2\
     \x0c.HPKEFFECHFGR\x0bCFKJEPMNLJI\x12?\n\x0bLKGDFHFBLDE\x18\x02\x20\x03(\
     \x0b2\x1d.EACDEAPKILK.LKGDFHFBLDEEntryR\x0bLKGDFHFBLDE\x12.\n\x0bFEBMNCJ\
     IFMN\x18\x03\x20\x03(\x0b2\x0c.PFKAMAFIKKOR\x0bFEBMNCJIFMN\x12\x17\n\x07\
-    area_id\x18\x04\x20\x01(\rR\x06areaId\x12\x20\n\x0bPBALFIENEFO\x18\x05\
-    \x20\x01(\rR\x0bPBALFIENEFO\x1a>\n\x10LKGDFHFBLDEEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
-    lue:\x028\x01b\x06proto3\
+    area_id\x18\x04\x20\x01(\rR\x06areaId\x12)\n\x10difficulty_level\x18\x05\
+    \x20\x01(\rR\x0fdifficultyLevel\x1a>\n\x10LKGDFHFBLDEEntry\x12\x10\n\x03\
+    key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
+    \x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

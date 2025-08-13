@@ -79,13 +79,13 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                80 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                82 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_id_list)?;
                 },
-                80 => {
+                48 => {
                     self.buff_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.interacted_prop_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.buff_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.buff_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(2, self.interacted_prop_entity_id)?;
+            os.write_uint32(10, self.interacted_prop_entity_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.buff_id_list)?;
+        os.write_repeated_packed_uint32(6, &self.buff_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bBuyRogueShopBuffCsReq.proto\"t\n\x15BuyRogueShopBuffCsReq\x129\n\
-    \x19interacted_prop_entity_id\x18\x02\x20\x01(\rR\x16interactedPropEntit\
-    yId\x12\x20\n\x0cbuff_id_list\x18\n\x20\x03(\rR\nbuffIdListb\x06proto3\
+    \x19interacted_prop_entity_id\x18\n\x20\x01(\rR\x16interactedPropEntityI\
+    d\x12\x20\n\x0cbuff_id_list\x18\x06\x20\x03(\rR\nbuffIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

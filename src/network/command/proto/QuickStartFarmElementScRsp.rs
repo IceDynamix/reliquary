@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuickStartFarmElementScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.battle_info)
-    pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
-    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.JDANOKNHNHL)
-    pub JDANOKNHNHL: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.JDANOKNHNHL)
+    pub JDANOKNHNHL: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.battle_info)
+    pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:QuickStartFarmElementScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl QuickStartFarmElementScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "battle_info",
-            |m: &QuickStartFarmElementScRsp| { &m.battle_info },
-            |m: &mut QuickStartFarmElementScRsp| { &mut m.battle_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &QuickStartFarmElementScRsp| { &m.world_level },
+            |m: &mut QuickStartFarmElementScRsp| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JDANOKNHNHL",
@@ -66,14 +66,14 @@ impl QuickStartFarmElementScRsp {
             |m: &mut QuickStartFarmElementScRsp| { &mut m.JDANOKNHNHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &QuickStartFarmElementScRsp| { &m.world_level },
-            |m: &mut QuickStartFarmElementScRsp| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &QuickStartFarmElementScRsp| { &m.retcode },
             |m: &mut QuickStartFarmElementScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
+            "battle_info",
+            |m: &QuickStartFarmElementScRsp| { &m.battle_info },
+            |m: &mut QuickStartFarmElementScRsp| { &mut m.battle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuickStartFarmElementScRsp>(
             "QuickStartFarmElementScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
-                },
-                64 => {
-                    self.JDANOKNHNHL = is.read_uint32()?;
-                },
-                72 => {
+                32 => {
                     self.world_level = is.read_uint32()?;
                 },
-                16 => {
+                120 => {
+                    self.JDANOKNHNHL = is.read_uint32()?;
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
+        }
+        if self.JDANOKNHNHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JDANOKNHNHL);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JDANOKNHNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JDANOKNHNHL);
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.world_level);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.world_level != 0 {
+            os.write_uint32(4, self.world_level)?;
         }
         if self.JDANOKNHNHL != 0 {
-            os.write_uint32(8, self.JDANOKNHNHL)?;
-        }
-        if self.world_level != 0 {
-            os.write_uint32(9, self.world_level)?;
+            os.write_uint32(15, self.JDANOKNHNHL)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if let Some(v) = self.battle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn clear(&mut self) {
-        self.battle_info.clear();
-        self.JDANOKNHNHL = 0;
         self.world_level = 0;
+        self.JDANOKNHNHL = 0;
         self.retcode = 0;
+        self.battle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuickStartFarmElementScRsp {
         static instance: QuickStartFarmElementScRsp = QuickStartFarmElementScRsp {
-            battle_info: ::protobuf::MessageField::none(),
-            JDANOKNHNHL: 0,
             world_level: 0,
+            JDANOKNHNHL: 0,
             retcode: 0,
+            battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartFarmElementScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartFarmElementScRsp.proto\x1a\x15SceneBattleInfo.proto\"\
-    \xac\x01\n\x1aQuickStartFarmElementScRsp\x121\n\x0bbattle_info\x18\x07\
-    \x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x20\n\x0bJDANOKNHNHL\
-    \x18\x08\x20\x01(\rR\x0bJDANOKNHNHL\x12\x1f\n\x0bworld_level\x18\t\x20\
-    \x01(\rR\nworldLevel\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \xac\x01\n\x1aQuickStartFarmElementScRsp\x12\x1f\n\x0bworld_level\x18\
+    \x04\x20\x01(\rR\nworldLevel\x12\x20\n\x0bJDANOKNHNHL\x18\x0f\x20\x01(\r\
+    R\x0bJDANOKNHNHL\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x121\
+    \n\x0bbattle_info\x18\n\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

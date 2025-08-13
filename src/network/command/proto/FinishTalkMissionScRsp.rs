@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTalkMissionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.talk_str)
-    pub talk_str: ::std::string::String,
-    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FinishTalkMissionScRsp.sub_mission_id)
     pub sub_mission_id: u32,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishTalkMissionScRsp.talk_str)
+    pub talk_str: ::std::string::String,
     // @@protoc_insertion_point(field:FinishTalkMissionScRsp.custom_value_list)
     pub custom_value_list: ::std::vec::Vec<super::MissionCustomValue::MissionCustomValue>,
     // special fields
@@ -56,9 +56,9 @@ impl FinishTalkMissionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talk_str",
-            |m: &FinishTalkMissionScRsp| { &m.talk_str },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.talk_str },
+            "sub_mission_id",
+            |m: &FinishTalkMissionScRsp| { &m.sub_mission_id },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.sub_mission_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -66,9 +66,9 @@ impl FinishTalkMissionScRsp {
             |m: &mut FinishTalkMissionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sub_mission_id",
-            |m: &FinishTalkMissionScRsp| { &m.sub_mission_id },
-            |m: &mut FinishTalkMissionScRsp| { &mut m.sub_mission_id },
+            "talk_str",
+            |m: &FinishTalkMissionScRsp| { &m.talk_str },
+            |m: &mut FinishTalkMissionScRsp| { &mut m.talk_str },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "custom_value_list",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.talk_str = is.read_string()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
+                8 => {
                     self.sub_mission_id = is.read_uint32()?;
                 },
-                90 => {
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    self.talk_str = is.read_string()?;
+                },
+                114 => {
                     self.custom_value_list.push(is.read_message()?);
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.talk_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.talk_str);
+        if self.sub_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.sub_mission_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.sub_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.sub_mission_id);
+        if !self.talk_str.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.talk_str);
         }
         for value in &self.custom_value_list {
             let len = value.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.talk_str.is_empty() {
-            os.write_string(2, &self.talk_str)?;
+        if self.sub_mission_id != 0 {
+            os.write_uint32(1, self.sub_mission_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.sub_mission_id != 0 {
-            os.write_uint32(3, self.sub_mission_id)?;
+        if !self.talk_str.is_empty() {
+            os.write_string(5, &self.talk_str)?;
         }
         for v in &self.custom_value_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for FinishTalkMissionScRsp {
     }
 
     fn clear(&mut self) {
-        self.talk_str.clear();
-        self.retcode = 0;
         self.sub_mission_id = 0;
+        self.retcode = 0;
+        self.talk_str.clear();
         self.custom_value_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTalkMissionScRsp {
         static instance: FinishTalkMissionScRsp = FinishTalkMissionScRsp {
-            talk_str: ::std::string::String::new(),
-            retcode: 0,
             sub_mission_id: 0,
+            retcode: 0,
+            talk_str: ::std::string::String::new(),
             custom_value_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishTalkMissionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFinishTalkMissionScRsp.proto\x1a\x18MissionCustomValue.proto\"\xb4\
-    \x01\n\x16FinishTalkMissionScRsp\x12\x19\n\x08talk_str\x18\x02\x20\x01(\
-    \tR\x07talkStr\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12$\
-    \n\x0esub_mission_id\x18\x03\x20\x01(\rR\x0csubMissionId\x12?\n\x11custo\
-    m_value_list\x18\x0b\x20\x03(\x0b2\x13.MissionCustomValueR\x0fcustomValu\
-    eListb\x06proto3\
+    \x01\n\x16FinishTalkMissionScRsp\x12$\n\x0esub_mission_id\x18\x01\x20\
+    \x01(\rR\x0csubMissionId\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retco\
+    de\x12\x19\n\x08talk_str\x18\x05\x20\x01(\tR\x07talkStr\x12?\n\x11custom\
+    _value_list\x18\x0e\x20\x03(\x0b2\x13.MissionCustomValueR\x0fcustomValue\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

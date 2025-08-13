@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.KHDHAHNNALM = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KHDHAHNNALM != false {
-            os.write_bool(10, self.KHDHAHNNALM)?;
+            os.write_bool(6, self.KHDHAHNNALM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSetAutoDressInMagicUnitCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicSetAutoDressInMagicUnitCsReq.proto\"J\n&RogueMagicSetAutoDr\
-    essInMagicUnitCsReq\x12\x20\n\x0bKHDHAHNNALM\x18\n\x20\x01(\x08R\x0bKHDH\
-    AHNNALMb\x06proto3\
+    essInMagicUnitCsReq\x12\x20\n\x0bKHDHAHNNALM\x18\x06\x20\x01(\x08R\x0bKH\
+    DHAHNNALMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

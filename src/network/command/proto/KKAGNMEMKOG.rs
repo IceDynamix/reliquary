@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKAGNMEMKOG {
     // message fields
-    // @@protoc_insertion_point(field:KKAGNMEMKOG.GIGIBIPGPFC)
-    pub GIGIBIPGPFC: ::std::vec::Vec<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
-    // @@protoc_insertion_point(field:KKAGNMEMKOG.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
+    // @@protoc_insertion_point(field:KKAGNMEMKOG.select_magic_units)
+    pub select_magic_units: ::std::vec::Vec<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
+    // @@protoc_insertion_point(field:KKAGNMEMKOG.select_hint_id)
+    pub select_hint_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KKAGNMEMKOG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KKAGNMEMKOG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GIGIBIPGPFC",
-            |m: &KKAGNMEMKOG| { &m.GIGIBIPGPFC },
-            |m: &mut KKAGNMEMKOG| { &mut m.GIGIBIPGPFC },
+            "select_magic_units",
+            |m: &KKAGNMEMKOG| { &m.select_magic_units },
+            |m: &mut KKAGNMEMKOG| { &mut m.select_magic_units },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &KKAGNMEMKOG| { &m.BILBOHBDBPN },
-            |m: &mut KKAGNMEMKOG| { &mut m.BILBOHBDBPN },
+            "select_hint_id",
+            |m: &KKAGNMEMKOG| { &m.select_hint_id },
+            |m: &mut KKAGNMEMKOG| { &mut m.select_hint_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKAGNMEMKOG>(
             "KKAGNMEMKOG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KKAGNMEMKOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.GIGIBIPGPFC.push(is.read_message()?);
+                58 => {
+                    self.select_magic_units.push(is.read_message()?);
                 },
-                80 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
+                88 => {
+                    self.select_hint_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for KKAGNMEMKOG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GIGIBIPGPFC {
+        for value in &self.select_magic_units {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BILBOHBDBPN);
+        if self.select_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.select_hint_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for KKAGNMEMKOG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GIGIBIPGPFC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.select_magic_units {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.BILBOHBDBPN != 0 {
-            os.write_uint32(10, self.BILBOHBDBPN)?;
+        if self.select_hint_id != 0 {
+            os.write_uint32(11, self.select_hint_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for KKAGNMEMKOG {
     }
 
     fn clear(&mut self) {
-        self.GIGIBIPGPFC.clear();
-        self.BILBOHBDBPN = 0;
+        self.select_magic_units.clear();
+        self.select_hint_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKAGNMEMKOG {
         static instance: KKAGNMEMKOG = KKAGNMEMKOG {
-            GIGIBIPGPFC: ::std::vec::Vec::new(),
-            BILBOHBDBPN: 0,
+            select_magic_units: ::std::vec::Vec::new(),
+            select_hint_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for KKAGNMEMKOG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKAGNMEMKOG.proto\x1a\x11JFGFLGBLCAJ.proto\"_\n\x0bKKAGNMEMKOG\x12\
-    .\n\x0bGIGIBIPGPFC\x18\x06\x20\x03(\x0b2\x0c.JFGFLGBLCAJR\x0bGIGIBIPGPFC\
-    \x12\x20\n\x0bBILBOHBDBPN\x18\n\x20\x01(\rR\x0bBILBOHBDBPNb\x06proto3\
+    \n\x11KKAGNMEMKOG.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"z\n\x0bKKAG\
+    NMEMKOG\x12E\n\x12select_magic_units\x18\x07\x20\x03(\x0b2\x17.RogueMagi\
+    cGameUnitInfoR\x10selectMagicUnits\x12$\n\x0eselect_hint_id\x18\x0b\x20\
+    \x01(\rR\x0cselectHintIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JFGFLGBLCAJ::file_descriptor().clone());
+            deps.push(super::RogueMagicGameUnitInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KKAGNMEMKOG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DANEMLLJACO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.LECDHDDCEIA = is.read_bool()?;
                 },
-                96 => {
+                32 => {
                     self.BCOLEEDGCPK = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DANEMLLJACO {
             my_size += 1 + 1;
         }
         if self.BCOLEEDGCPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BCOLEEDGCPK);
+            my_size += ::protobuf::rt::uint32_size(4, self.BCOLEEDGCPK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DANEMLLJACO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LECDHDDCEIA != false {
-            os.write_bool(3, self.LECDHDDCEIA)?;
+            os.write_bool(2, self.LECDHDDCEIA)?;
         }
         if self.BCOLEEDGCPK != 0 {
-            os.write_uint32(12, self.BCOLEEDGCPK)?;
+            os.write_uint32(4, self.BCOLEEDGCPK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DANEMLLJACO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DANEMLLJACO.proto\"Q\n\x0bDANEMLLJACO\x12\x20\n\x0bLECDHDDCEIA\x18\
-    \x03\x20\x01(\x08R\x0bLECDHDDCEIA\x12\x20\n\x0bBCOLEEDGCPK\x18\x0c\x20\
+    \x02\x20\x01(\x08R\x0bLECDHDDCEIA\x12\x20\n\x0bBCOLEEDGCPK\x18\x04\x20\
     \x01(\rR\x0bBCOLEEDGCPKb\x06proto3\
 ";
 

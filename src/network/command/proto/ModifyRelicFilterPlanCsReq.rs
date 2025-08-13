@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ModifyRelicFilterPlanCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ModifyRelicFilterPlanCsReq.slot_index)
-    pub slot_index: u32,
+    // @@protoc_insertion_point(field:ModifyRelicFilterPlanCsReq.max_times)
+    pub max_times: u32,
     // message oneof groups
-    pub InfoOneofCase: ::std::option::Option<modify_relic_filter_plan_cs_req::InfoOneofCase>,
+    pub KFELKJLDKEH: ::std::option::Option<modify_relic_filter_plan_cs_req::KFELKJLDKEH>,
     // special fields
     // @@protoc_insertion_point(special_field:ModifyRelicFilterPlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl ModifyRelicFilterPlanCsReq {
         ::std::default::Default::default()
     }
 
-    // string name = 11;
+    // string name = 8;
 
     pub fn name(&self) -> &str {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(ref v)) => v,
             _ => "",
         }
     }
 
     pub fn clear_name(&mut self) {
-        self.InfoOneofCase = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
     pub fn has_name(&self) -> bool {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(..)) => true,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_name(&mut self, v: ::std::string::String) {
-        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(v))
+        self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_name(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(_)) = self.InfoOneofCase {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(_)) = self.KFELKJLDKEH {
         } else {
-            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(::std::string::String::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(::std::string::String::new()));
         }
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl ModifyRelicFilterPlanCsReq {
     // Take field
     pub fn take_name(&mut self) -> ::std::string::String {
         if self.has_name() {
-            match self.InfoOneofCase.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(v)) => v,
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,101 +97,101 @@ impl ModifyRelicFilterPlanCsReq {
         }
     }
 
-    // .RelicFilterPlanIcon icon = 15;
+    // .PACFHNEJADB GFIDNAANAFH = 10;
 
-    pub fn icon(&self) -> &super::RelicFilterPlanIcon::RelicFilterPlanIcon {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref v)) => v,
-            _ => <super::RelicFilterPlanIcon::RelicFilterPlanIcon as ::protobuf::Message>::default_instance(),
+    pub fn GFIDNAANAFH(&self) -> &super::PACFHNEJADB::PACFHNEJADB {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(ref v)) => v,
+            _ => <super::PACFHNEJADB::PACFHNEJADB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_icon(&mut self) {
-        self.InfoOneofCase = ::std::option::Option::None;
+    pub fn clear_GFIDNAANAFH(&mut self) {
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
-    pub fn has_icon(&self) -> bool {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(..)) => true,
+    pub fn has_GFIDNAANAFH(&self) -> bool {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_icon(&mut self, v: super::RelicFilterPlanIcon::RelicFilterPlanIcon) {
-        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(v))
+    pub fn set_GFIDNAANAFH(&mut self, v: super::PACFHNEJADB::PACFHNEJADB) {
+        self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_icon(&mut self) -> &mut super::RelicFilterPlanIcon::RelicFilterPlanIcon {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(_)) = self.InfoOneofCase {
+    pub fn mut_GFIDNAANAFH(&mut self) -> &mut super::PACFHNEJADB::PACFHNEJADB {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(_)) = self.KFELKJLDKEH {
         } else {
-            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(super::RelicFilterPlanIcon::RelicFilterPlanIcon::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(super::PACFHNEJADB::PACFHNEJADB::new()));
         }
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_icon(&mut self) -> super::RelicFilterPlanIcon::RelicFilterPlanIcon {
-        if self.has_icon() {
-            match self.InfoOneofCase.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(v)) => v,
+    pub fn take_GFIDNAANAFH(&mut self) -> super::PACFHNEJADB::PACFHNEJADB {
+        if self.has_GFIDNAANAFH() {
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RelicFilterPlanIcon::RelicFilterPlanIcon::new()
+            super::PACFHNEJADB::PACFHNEJADB::new()
         }
     }
 
-    // .RelicFilterPlanSettings settings = 14;
+    // .IIPKANNMLFN IBPDGNOHFPM = 11;
 
-    pub fn settings(&self) -> &super::RelicFilterPlanSettings::RelicFilterPlanSettings {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(ref v)) => v,
-            _ => <super::RelicFilterPlanSettings::RelicFilterPlanSettings as ::protobuf::Message>::default_instance(),
+    pub fn IBPDGNOHFPM(&self) -> &super::IIPKANNMLFN::IIPKANNMLFN {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(ref v)) => v,
+            _ => <super::IIPKANNMLFN::IIPKANNMLFN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_settings(&mut self) {
-        self.InfoOneofCase = ::std::option::Option::None;
+    pub fn clear_IBPDGNOHFPM(&mut self) {
+        self.KFELKJLDKEH = ::std::option::Option::None;
     }
 
-    pub fn has_settings(&self) -> bool {
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(..)) => true,
+    pub fn has_IBPDGNOHFPM(&self) -> bool {
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_settings(&mut self, v: super::RelicFilterPlanSettings::RelicFilterPlanSettings) {
-        self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(v))
+    pub fn set_IBPDGNOHFPM(&mut self, v: super::IIPKANNMLFN::IIPKANNMLFN) {
+        self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_settings(&mut self) -> &mut super::RelicFilterPlanSettings::RelicFilterPlanSettings {
-        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(_)) = self.InfoOneofCase {
+    pub fn mut_IBPDGNOHFPM(&mut self) -> &mut super::IIPKANNMLFN::IIPKANNMLFN {
+        if let ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(_)) = self.KFELKJLDKEH {
         } else {
-            self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(super::RelicFilterPlanSettings::RelicFilterPlanSettings::new()));
+            self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(super::IIPKANNMLFN::IIPKANNMLFN::new()));
         }
-        match self.InfoOneofCase {
-            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(ref mut v)) => v,
+        match self.KFELKJLDKEH {
+            ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_settings(&mut self) -> super::RelicFilterPlanSettings::RelicFilterPlanSettings {
-        if self.has_settings() {
-            match self.InfoOneofCase.take() {
-                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(v)) => v,
+    pub fn take_IBPDGNOHFPM(&mut self) -> super::IIPKANNMLFN::IIPKANNMLFN {
+        if self.has_IBPDGNOHFPM() {
+            match self.KFELKJLDKEH.take() {
+                ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RelicFilterPlanSettings::RelicFilterPlanSettings::new()
+            super::IIPKANNMLFN::IIPKANNMLFN::new()
         }
     }
 
@@ -199,9 +199,9 @@ impl ModifyRelicFilterPlanCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot_index",
-            |m: &ModifyRelicFilterPlanCsReq| { &m.slot_index },
-            |m: &mut ModifyRelicFilterPlanCsReq| { &mut m.slot_index },
+            "max_times",
+            |m: &ModifyRelicFilterPlanCsReq| { &m.max_times },
+            |m: &mut ModifyRelicFilterPlanCsReq| { &mut m.max_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "name",
@@ -209,21 +209,21 @@ impl ModifyRelicFilterPlanCsReq {
             ModifyRelicFilterPlanCsReq::name,
             ModifyRelicFilterPlanCsReq::set_name,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RelicFilterPlanIcon::RelicFilterPlanIcon>(
-            "icon",
-            ModifyRelicFilterPlanCsReq::has_icon,
-            ModifyRelicFilterPlanCsReq::icon,
-            ModifyRelicFilterPlanCsReq::mut_icon,
-            ModifyRelicFilterPlanCsReq::set_icon,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PACFHNEJADB::PACFHNEJADB>(
+            "GFIDNAANAFH",
+            ModifyRelicFilterPlanCsReq::has_GFIDNAANAFH,
+            ModifyRelicFilterPlanCsReq::GFIDNAANAFH,
+            ModifyRelicFilterPlanCsReq::mut_GFIDNAANAFH,
+            ModifyRelicFilterPlanCsReq::set_GFIDNAANAFH,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RelicFilterPlanSettings::RelicFilterPlanSettings>(
-            "settings",
-            ModifyRelicFilterPlanCsReq::has_settings,
-            ModifyRelicFilterPlanCsReq::settings,
-            ModifyRelicFilterPlanCsReq::mut_settings,
-            ModifyRelicFilterPlanCsReq::set_settings,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IIPKANNMLFN::IIPKANNMLFN>(
+            "IBPDGNOHFPM",
+            ModifyRelicFilterPlanCsReq::has_IBPDGNOHFPM,
+            ModifyRelicFilterPlanCsReq::IBPDGNOHFPM,
+            ModifyRelicFilterPlanCsReq::mut_IBPDGNOHFPM,
+            ModifyRelicFilterPlanCsReq::set_IBPDGNOHFPM,
         ));
-        oneofs.push(modify_relic_filter_plan_cs_req::InfoOneofCase::generated_oneof_descriptor_data());
+        oneofs.push(modify_relic_filter_plan_cs_req::KFELKJLDKEH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ModifyRelicFilterPlanCsReq>(
             "ModifyRelicFilterPlanCsReq",
             fields,
@@ -242,17 +242,17 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.slot_index = is.read_uint32()?;
+                32 => {
+                    self.max_times = is.read_uint32()?;
+                },
+                66 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(is.read_string()?));
+                },
+                82 => {
+                    self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(is.read_message()?));
                 },
                 90 => {
-                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Name(is.read_string()?));
-                },
-                122 => {
-                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(is.read_message()?));
-                },
-                114 => {
-                    self.InfoOneofCase = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(is.read_message()?));
+                    self.KFELKJLDKEH = ::std::option::Option::Some(modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -266,19 +266,19 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.slot_index);
+        if self.max_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.max_times);
         }
-        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(11, &v);
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(ref v) => {
+                    my_size += ::protobuf::rt::string_size(8, &v);
                 },
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref v) => {
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(ref v) => {
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -290,19 +290,19 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot_index != 0 {
-            os.write_uint32(12, self.slot_index)?;
+        if self.max_times != 0 {
+            os.write_uint32(4, self.max_times)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.InfoOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Name(ref v) => {
-                    os.write_string(11, v)?;
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::Name(ref v) => {
+                    os.write_string(8, v)?;
                 },
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Icon(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::GFIDNAANAFH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &modify_relic_filter_plan_cs_req::InfoOneofCase::Settings(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &modify_relic_filter_plan_cs_req::KFELKJLDKEH::IBPDGNOHFPM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -323,17 +323,17 @@ impl ::protobuf::Message for ModifyRelicFilterPlanCsReq {
     }
 
     fn clear(&mut self) {
-        self.slot_index = 0;
-        self.InfoOneofCase = ::std::option::Option::None;
-        self.InfoOneofCase = ::std::option::Option::None;
-        self.InfoOneofCase = ::std::option::Option::None;
+        self.max_times = 0;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.KFELKJLDKEH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ModifyRelicFilterPlanCsReq {
         static instance: ModifyRelicFilterPlanCsReq = ModifyRelicFilterPlanCsReq {
-            slot_index: 0,
-            InfoOneofCase: ::std::option::Option::None,
+            max_times: 0,
+            KFELKJLDKEH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -362,41 +362,40 @@ pub mod modify_relic_filter_plan_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ModifyRelicFilterPlanCsReq.InfoOneofCase)
-    pub enum InfoOneofCase {
+    // @@protoc_insertion_point(oneof:ModifyRelicFilterPlanCsReq.KFELKJLDKEH)
+    pub enum KFELKJLDKEH {
         // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanCsReq.name)
         Name(::std::string::String),
-        // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanCsReq.icon)
-        Icon(super::super::RelicFilterPlanIcon::RelicFilterPlanIcon),
-        // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanCsReq.settings)
-        Settings(super::super::RelicFilterPlanSettings::RelicFilterPlanSettings),
+        // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanCsReq.GFIDNAANAFH)
+        GFIDNAANAFH(super::super::PACFHNEJADB::PACFHNEJADB),
+        // @@protoc_insertion_point(oneof_field:ModifyRelicFilterPlanCsReq.IBPDGNOHFPM)
+        IBPDGNOHFPM(super::super::IIPKANNMLFN::IIPKANNMLFN),
     }
 
-    impl ::protobuf::Oneof for InfoOneofCase {
+    impl ::protobuf::Oneof for KFELKJLDKEH {
     }
 
-    impl ::protobuf::OneofFull for InfoOneofCase {
+    impl ::protobuf::OneofFull for KFELKJLDKEH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ModifyRelicFilterPlanCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("InfoOneofCase").unwrap()).clone()
+            descriptor.get(|| <super::ModifyRelicFilterPlanCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
         }
     }
 
-    impl InfoOneofCase {
+    impl KFELKJLDKEH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<InfoOneofCase>("InfoOneofCase")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ModifyRelicFilterPlanCsReq.proto\x1a\x19RelicFilterPlanIcon.proto\
-    \x1a\x1dRelicFilterPlanSettings.proto\"\xc6\x01\n\x1aModifyRelicFilterPl\
-    anCsReq\x12\x1d\n\nslot_index\x18\x0c\x20\x01(\rR\tslotIndex\x12\x14\n\
-    \x04name\x18\x0b\x20\x01(\tH\0R\x04name\x12*\n\x04icon\x18\x0f\x20\x01(\
-    \x0b2\x14.RelicFilterPlanIconH\0R\x04icon\x126\n\x08settings\x18\x0e\x20\
-    \x01(\x0b2\x18.RelicFilterPlanSettingsH\0R\x08settingsB\x0f\n\rInfoOneof\
-    Caseb\x06proto3\
+    \n\x20ModifyRelicFilterPlanCsReq.proto\x1a\x11IIPKANNMLFN.proto\x1a\x11P\
+    ACFHNEJADB.proto\"\xc2\x01\n\x1aModifyRelicFilterPlanCsReq\x12\x1b\n\tma\
+    x_times\x18\x04\x20\x01(\rR\x08maxTimes\x12\x14\n\x04name\x18\x08\x20\
+    \x01(\tH\0R\x04name\x120\n\x0bGFIDNAANAFH\x18\n\x20\x01(\x0b2\x0c.PACFHN\
+    EJADBH\0R\x0bGFIDNAANAFH\x120\n\x0bIBPDGNOHFPM\x18\x0b\x20\x01(\x0b2\x0c\
+    .IIPKANNMLFNH\0R\x0bIBPDGNOHFPMB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -414,8 +413,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::RelicFilterPlanIcon::file_descriptor().clone());
-            deps.push(super::RelicFilterPlanSettings::file_descriptor().clone());
+            deps.push(super::IIPKANNMLFN::file_descriptor().clone());
+            deps.push(super::PACFHNEJADB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ModifyRelicFilterPlanCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

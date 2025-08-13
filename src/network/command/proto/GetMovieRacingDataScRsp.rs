@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                74 => {
                     self.ODJIGEBEHGC.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         for value in &self.ODJIGEBEHGC {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         for v in &self.ODJIGEBEHGC {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMovieRacingDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetMovieRacingDataScRsp.proto\x1a\x11GMAAJHDFACD.proto\"c\n\x17Get\
-    MovieRacingDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bODJIGEBEHGC\x18\x0c\x20\x03(\x0b2\x0c.GMAAJHDFACDR\x0bODJIGEB\
-    EHGCb\x06proto3\
+    MovieRacingDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bODJIGEBEHGC\x18\t\x20\x03(\x0b2\x0c.GMAAJHDFACDR\x0bODJIGEBEH\
+    GCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

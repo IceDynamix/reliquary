@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerGetTokenScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlayerGetTokenScRsp.black_info)
-    pub black_info: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // @@protoc_insertion_point(field:PlayerGetTokenScRsp.secret_key_seed)
     pub secret_key_seed: u64,
+    // @@protoc_insertion_point(field:PlayerGetTokenScRsp.black_info)
+    pub black_info: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // @@protoc_insertion_point(field:PlayerGetTokenScRsp.msg)
     pub msg: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerGetTokenScRsp.retcode)
@@ -57,15 +57,15 @@ impl PlayerGetTokenScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BlackInfo::BlackInfo>(
-            "black_info",
-            |m: &PlayerGetTokenScRsp| { &m.black_info },
-            |m: &mut PlayerGetTokenScRsp| { &mut m.black_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "secret_key_seed",
             |m: &PlayerGetTokenScRsp| { &m.secret_key_seed },
             |m: &mut PlayerGetTokenScRsp| { &mut m.secret_key_seed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BlackInfo::BlackInfo>(
+            "black_info",
+            |m: &PlayerGetTokenScRsp| { &m.black_info },
+            |m: &mut PlayerGetTokenScRsp| { &mut m.black_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "msg",
@@ -100,16 +100,16 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
-                },
-                112 => {
+                72 => {
                     self.secret_key_seed = is.read_uint64()?;
                 },
-                42 => {
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
+                },
+                34 => {
                     self.msg = is.read_string()?;
                 },
-                72 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 16 => {
@@ -127,18 +127,18 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.secret_key_seed != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.secret_key_seed);
+        }
         if let Some(v) = self.black_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.secret_key_seed != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.secret_key_seed);
-        }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.msg);
+            my_size += ::protobuf::rt::string_size(4, &self.msg);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.uid);
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.secret_key_seed != 0 {
-            os.write_uint64(14, self.secret_key_seed)?;
+            os.write_uint64(9, self.secret_key_seed)?;
+        }
+        if let Some(v) = self.black_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if !self.msg.is_empty() {
-            os.write_string(5, &self.msg)?;
+            os.write_string(4, &self.msg)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if self.uid != 0 {
             os.write_uint32(2, self.uid)?;
@@ -181,8 +181,8 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
     }
 
     fn clear(&mut self) {
-        self.black_info.clear();
         self.secret_key_seed = 0;
+        self.black_info.clear();
         self.msg.clear();
         self.retcode = 0;
         self.uid = 0;
@@ -191,8 +191,8 @@ impl ::protobuf::Message for PlayerGetTokenScRsp {
 
     fn default_instance() -> &'static PlayerGetTokenScRsp {
         static instance: PlayerGetTokenScRsp = PlayerGetTokenScRsp {
-            black_info: ::protobuf::MessageField::none(),
             secret_key_seed: 0,
+            black_info: ::protobuf::MessageField::none(),
             msg: ::std::string::String::new(),
             retcode: 0,
             uid: 0,
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerGetTokenScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19PlayerGetTokenScRsp.proto\x1a\x0fBlackInfo.proto\"\xa6\x01\n\x13Pl\
-    ayerGetTokenScRsp\x12)\n\nblack_info\x18\x01\x20\x01(\x0b2\n.BlackInfoR\
-    \tblackInfo\x12&\n\x0fsecret_key_seed\x18\x0e\x20\x01(\x04R\rsecretKeySe\
-    ed\x12\x10\n\x03msg\x18\x05\x20\x01(\tR\x03msg\x12\x18\n\x07retcode\x18\
-    \t\x20\x01(\rR\x07retcode\x12\x10\n\x03uid\x18\x02\x20\x01(\rR\x03uidb\
+    ayerGetTokenScRsp\x12&\n\x0fsecret_key_seed\x18\t\x20\x01(\x04R\rsecretK\
+    eySeed\x12)\n\nblack_info\x18\x0c\x20\x01(\x0b2\n.BlackInfoR\tblackInfo\
+    \x12\x10\n\x03msg\x18\x04\x20\x01(\tR\x03msg\x12\x18\n\x07retcode\x18\
+    \x0e\x20\x01(\rR\x07retcode\x12\x10\n\x03uid\x18\x02\x20\x01(\rR\x03uidb\
     \x06proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MFLPAMAFJNC {
     // message fields
-    // @@protoc_insertion_point(field:MFLPAMAFJNC.is_success)
-    pub is_success: bool,
+    // @@protoc_insertion_point(field:MFLPAMAFJNC.FGEFCEFKHMH)
+    pub FGEFCEFKHMH: bool,
     // @@protoc_insertion_point(field:MFLPAMAFJNC.KCFPIECMGBD)
     pub KCFPIECMGBD: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MFLPAMAFJNC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_success",
-            |m: &MFLPAMAFJNC| { &m.is_success },
-            |m: &mut MFLPAMAFJNC| { &mut m.is_success },
+            "FGEFCEFKHMH",
+            |m: &MFLPAMAFJNC| { &m.FGEFCEFKHMH },
+            |m: &mut MFLPAMAFJNC| { &mut m.FGEFCEFKHMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KCFPIECMGBD",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MFLPAMAFJNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.is_success = is.read_bool()?;
-                },
                 32 => {
+                    self.FGEFCEFKHMH = is.read_bool()?;
+                },
+                104 => {
                     self.KCFPIECMGBD = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MFLPAMAFJNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_success != false {
+        if self.FGEFCEFKHMH != false {
             my_size += 1 + 1;
         }
         if self.KCFPIECMGBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KCFPIECMGBD);
+            my_size += ::protobuf::rt::uint32_size(13, self.KCFPIECMGBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MFLPAMAFJNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_success != false {
-            os.write_bool(1, self.is_success)?;
+        if self.FGEFCEFKHMH != false {
+            os.write_bool(4, self.FGEFCEFKHMH)?;
         }
         if self.KCFPIECMGBD != 0 {
-            os.write_uint32(4, self.KCFPIECMGBD)?;
+            os.write_uint32(13, self.KCFPIECMGBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for MFLPAMAFJNC {
     }
 
     fn clear(&mut self) {
-        self.is_success = false;
+        self.FGEFCEFKHMH = false;
         self.KCFPIECMGBD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MFLPAMAFJNC {
         static instance: MFLPAMAFJNC = MFLPAMAFJNC {
-            is_success: false,
+            FGEFCEFKHMH: false,
             KCFPIECMGBD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MFLPAMAFJNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MFLPAMAFJNC.proto\"N\n\x0bMFLPAMAFJNC\x12\x1d\n\nis_success\x18\
-    \x01\x20\x01(\x08R\tisSuccess\x12\x20\n\x0bKCFPIECMGBD\x18\x04\x20\x01(\
-    \rR\x0bKCFPIECMGBDb\x06proto3\
+    \n\x11MFLPAMAFJNC.proto\"Q\n\x0bMFLPAMAFJNC\x12\x20\n\x0bFGEFCEFKHMH\x18\
+    \x04\x20\x01(\x08R\x0bFGEFCEFKHMH\x12\x20\n\x0bKCFPIECMGBD\x18\r\x20\x01\
+    (\rR\x0bKCFPIECMGBDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

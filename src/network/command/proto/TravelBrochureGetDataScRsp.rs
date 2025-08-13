@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.FKBBOMHEKPE)
-    pub FKBBOMHEKPE: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.custom_value)
     pub custom_value: u32,
+    // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.MIBCLBGMDLA)
     pub MIBCLBGMDLA: ::std::collections::HashMap<u32, super::KCHJHCLJOCK::KCHJHCLJOCK>,
+    // @@protoc_insertion_point(field:TravelBrochureGetDataScRsp.FKBBOMHEKPE)
+    pub FKBBOMHEKPE: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl TravelBrochureGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "FKBBOMHEKPE",
-            |m: &TravelBrochureGetDataScRsp| { &m.FKBBOMHEKPE },
-            |m: &mut TravelBrochureGetDataScRsp| { &mut m.FKBBOMHEKPE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "custom_value",
+            |m: &TravelBrochureGetDataScRsp| { &m.custom_value },
+            |m: &mut TravelBrochureGetDataScRsp| { &mut m.custom_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TravelBrochureGetDataScRsp| { &m.retcode },
             |m: &mut TravelBrochureGetDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "custom_value",
-            |m: &TravelBrochureGetDataScRsp| { &m.custom_value },
-            |m: &mut TravelBrochureGetDataScRsp| { &mut m.custom_value },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "MIBCLBGMDLA",
             |m: &TravelBrochureGetDataScRsp| { &m.MIBCLBGMDLA },
             |m: &mut TravelBrochureGetDataScRsp| { &mut m.MIBCLBGMDLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "FKBBOMHEKPE",
+            |m: &TravelBrochureGetDataScRsp| { &m.FKBBOMHEKPE },
+            |m: &mut TravelBrochureGetDataScRsp| { &mut m.FKBBOMHEKPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureGetDataScRsp>(
             "TravelBrochureGetDataScRsp",
@@ -93,6 +93,27 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.custom_value = is.read_uint32()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                42 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            18 => value = is.read_message()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.MIBCLBGMDLA.insert(key, value);
+                },
                 74 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -108,27 +129,6 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
                     is.pop_limit(old_limit);
                     self.FKBBOMHEKPE.insert(key, value);
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.custom_value = is.read_uint32()?;
-                },
-                114 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            18 => value = is.read_message()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.MIBCLBGMDLA.insert(key, value);
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -141,17 +141,11 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.FKBBOMHEKPE {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         if self.custom_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.custom_value);
+            my_size += ::protobuf::rt::uint32_size(15, self.custom_value);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         for (k, v) in &self.MIBCLBGMDLA {
             let mut entry_size = 0;
@@ -160,12 +154,34 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        for (k, v) in &self.FKBBOMHEKPE {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.custom_value != 0 {
+            os.write_uint32(15, self.custom_value)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        for (k, v) in &self.MIBCLBGMDLA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.cached_size() as u64;
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         for (k, v) in &self.FKBBOMHEKPE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -174,22 +190,6 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if self.custom_value != 0 {
-            os.write_uint32(3, self.custom_value)?;
-        }
-        for (k, v) in &self.MIBCLBGMDLA {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            let len = v.cached_size() as u64;
-            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(114)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -208,10 +208,10 @@ impl ::protobuf::Message for TravelBrochureGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.FKBBOMHEKPE.clear();
-        self.retcode = 0;
         self.custom_value = 0;
+        self.retcode = 0;
         self.MIBCLBGMDLA.clear();
+        self.FKBBOMHEKPE.clear();
         self.special_fields.clear();
     }
 
@@ -240,15 +240,15 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20TravelBrochureGetDataScRsp.proto\x1a\x11KCHJHCLJOCK.proto\"\x87\
-    \x03\n\x1aTravelBrochureGetDataScRsp\x12N\n\x0bFKBBOMHEKPE\x18\t\x20\x03\
-    (\x0b2,.TravelBrochureGetDataScRsp.FKBBOMHEKPEEntryR\x0bFKBBOMHEKPE\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12!\n\x0ccustom_value\
-    \x18\x03\x20\x01(\rR\x0bcustomValue\x12N\n\x0bMIBCLBGMDLA\x18\x0e\x20\
-    \x03(\x0b2,.TravelBrochureGetDataScRsp.MIBCLBGMDLAEntryR\x0bMIBCLBGMDLA\
+    \x03\n\x1aTravelBrochureGetDataScRsp\x12!\n\x0ccustom_value\x18\x0f\x20\
+    \x01(\rR\x0bcustomValue\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retc\
+    ode\x12N\n\x0bMIBCLBGMDLA\x18\x05\x20\x03(\x0b2,.TravelBrochureGetDataSc\
+    Rsp.MIBCLBGMDLAEntryR\x0bMIBCLBGMDLA\x12N\n\x0bFKBBOMHEKPE\x18\t\x20\x03\
+    (\x0b2,.TravelBrochureGetDataScRsp.FKBBOMHEKPEEntryR\x0bFKBBOMHEKPE\x1aL\
+    \n\x10MIBCLBGMDLAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\
+    \n\x05value\x18\x02\x20\x01(\x0b2\x0c.KCHJHCLJOCKR\x05value:\x028\x01\
     \x1a>\n\x10FKBBOMHEKPEEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
-    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1aL\n\x10MIB\
-    CLBGMDLAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05val\
-    ue\x18\x02\x20\x01(\x0b2\x0c.KCHJHCLJOCKR\x05value:\x028\x01b\x06proto3\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

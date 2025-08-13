@@ -34,8 +34,8 @@ pub mod proto {
     pub mod Avatar;
     pub mod AvatarSkillTree;
     pub mod AvatarSync;
+    pub mod BasicModuleSync;
     pub mod BlackInfo;
-    pub mod BoardDataSync;
     pub mod DoGachaScRsp;
     pub mod EquipRelic;
     pub mod Equipment;
@@ -51,7 +51,6 @@ pub mod proto {
     pub mod HeadIconData;
     pub mod Item;
     pub mod ItemList;
-    pub mod LossInfo;
     pub mod Material;
     pub mod MessageGroupStatus;
     pub mod MessageSectionStatus;
@@ -65,6 +64,7 @@ pub mod proto {
     pub mod MultiPathAvatarType;
     pub mod PileItem;
     pub mod PlayerBasicInfo;
+    pub mod PlayerBoardModuleSync;
     pub mod PlayerGetTokenScRsp;
     pub mod PlayerLoginScRsp;
     pub mod PlayerSyncScNotify;
@@ -75,17 +75,19 @@ pub mod proto {
     pub mod RelicAffix;
     pub mod SectionStatus;
     pub mod SetAvatarEnhancedIdScRsp;
+    pub mod SyncStatus;
     pub mod TurnFoodSwitch;
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod BLPMHFGIOAC;
     pub mod DMBMPAHKHLA;
     pub mod FHABEIKAFBO;
     pub mod GKDIHIFFHFD;
     pub mod IKAMMKLBOCO;
+    pub mod JLEHFBOHNIE;
     pub mod KHOCCHABNMN;
-    pub mod LPFMHAJHDMM;
+    pub mod LOPDJAHFPHN;
+    pub mod NKDOHHODNNH;
 }
 
 /// Game command header.

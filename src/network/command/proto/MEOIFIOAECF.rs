@@ -30,8 +30,8 @@ pub struct MEOIFIOAECF {
     // message fields
     // @@protoc_insertion_point(field:MEOIFIOAECF.JJCCJJINLFL)
     pub JJCCJJINLFL: u32,
-    // @@protoc_insertion_point(field:MEOIFIOAECF.locked)
-    pub locked: bool,
+    // @@protoc_insertion_point(field:MEOIFIOAECF.HEMJHDOEEBL)
+    pub HEMJHDOEEBL: bool,
     // @@protoc_insertion_point(field:MEOIFIOAECF.KACALGIOEDB)
     pub KACALGIOEDB: ::protobuf::MessageField<super::KPKKKJPJCPC::KPKKKJPJCPC>,
     // special fields
@@ -59,9 +59,9 @@ impl MEOIFIOAECF {
             |m: &mut MEOIFIOAECF| { &mut m.JJCCJJINLFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "locked",
-            |m: &MEOIFIOAECF| { &m.locked },
-            |m: &mut MEOIFIOAECF| { &mut m.locked },
+            "HEMJHDOEEBL",
+            |m: &MEOIFIOAECF| { &m.HEMJHDOEEBL },
+            |m: &mut MEOIFIOAECF| { &mut m.HEMJHDOEEBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPKKKJPJCPC::KPKKKJPJCPC>(
             "KACALGIOEDB",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for MEOIFIOAECF {
                     self.JJCCJJINLFL = is.read_uint32()?;
                 },
                 16 => {
-                    self.locked = is.read_bool()?;
+                    self.HEMJHDOEEBL = is.read_bool()?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KACALGIOEDB)?;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MEOIFIOAECF {
         if self.JJCCJJINLFL != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.JJCCJJINLFL);
         }
-        if self.locked != false {
+        if self.HEMJHDOEEBL != false {
             my_size += 1 + 1;
         }
         if let Some(v) = self.KACALGIOEDB.as_ref() {
@@ -126,8 +126,8 @@ impl ::protobuf::Message for MEOIFIOAECF {
         if self.JJCCJJINLFL != 0 {
             os.write_uint32(1, self.JJCCJJINLFL)?;
         }
-        if self.locked != false {
-            os.write_bool(2, self.locked)?;
+        if self.HEMJHDOEEBL != false {
+            os.write_bool(2, self.HEMJHDOEEBL)?;
         }
         if let Some(v) = self.KACALGIOEDB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
@@ -150,7 +150,7 @@ impl ::protobuf::Message for MEOIFIOAECF {
 
     fn clear(&mut self) {
         self.JJCCJJINLFL = 0;
-        self.locked = false;
+        self.HEMJHDOEEBL = false;
         self.KACALGIOEDB.clear();
         self.special_fields.clear();
     }
@@ -158,7 +158,7 @@ impl ::protobuf::Message for MEOIFIOAECF {
     fn default_instance() -> &'static MEOIFIOAECF {
         static instance: MEOIFIOAECF = MEOIFIOAECF {
             JJCCJJINLFL: 0,
-            locked: false,
+            HEMJHDOEEBL: false,
             KACALGIOEDB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MEOIFIOAECF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MEOIFIOAECF.proto\x1a\x11KPKKKJPJCPC.proto\"w\n\x0bMEOIFIOAECF\x12\
-    \x20\n\x0bJJCCJJINLFL\x18\x01\x20\x01(\rR\x0bJJCCJJINLFL\x12\x16\n\x06lo\
-    cked\x18\x02\x20\x01(\x08R\x06locked\x12.\n\x0bKACALGIOEDB\x18\x03\x20\
-    \x01(\x0b2\x0c.KPKKKJPJCPCR\x0bKACALGIOEDBb\x06proto3\
+    \n\x11MEOIFIOAECF.proto\x1a\x11KPKKKJPJCPC.proto\"\x81\x01\n\x0bMEOIFIOA\
+    ECF\x12\x20\n\x0bJJCCJJINLFL\x18\x01\x20\x01(\rR\x0bJJCCJJINLFL\x12\x20\
+    \n\x0bHEMJHDOEEBL\x18\x02\x20\x01(\x08R\x0bHEMJHDOEEBL\x12.\n\x0bKACALGI\
+    OEDB\x18\x03\x20\x01(\x0b2\x0c.KPKKKJPJCPCR\x0bKACALGIOEDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

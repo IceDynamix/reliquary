@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.level_status = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                72 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueLevelStatus::ChessRogueLevelStatus::CHESS_ROGUE_LEVEL_IDLE) {
-            my_size += ::protobuf::rt::int32_size(3, self.level_status.value());
+            my_size += ::protobuf::rt::int32_size(11, self.level_status.value());
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::ChessRogueUpdateLevelStatus::ChessRogueUpdateLevelStatus::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(9, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueLevelStatus::ChessRogueLevelStatus::CHESS_ROGUE_LEVEL_IDLE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.level_status))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.level_status))?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::ChessRogueUpdateLevelStatus::ChessRogueUpdateLevelStatus::CHESS_ROGUE_UPDATE_LEVEL_STATUS_BY_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateLevelBaseInfoScNotif
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+ChessRogueUpdateLevelBaseInfoScNotify.proto\x1a\x1bChessRogueLevelSta\
     tus.proto\x1a!ChessRogueUpdateLevelStatus.proto\"\x98\x01\n%ChessRogueUp\
-    dateLevelBaseInfoScNotify\x129\n\x0clevel_status\x18\x03\x20\x01(\x0e2\
-    \x16.ChessRogueLevelStatusR\x0blevelStatus\x124\n\x06reason\x18\x0f\x20\
+    dateLevelBaseInfoScNotify\x129\n\x0clevel_status\x18\x0b\x20\x01(\x0e2\
+    \x16.ChessRogueLevelStatusR\x0blevelStatus\x124\n\x06reason\x18\t\x20\
     \x01(\x0e2\x1c.ChessRogueUpdateLevelStatusR\x06reasonb\x06proto3\
 ";
 

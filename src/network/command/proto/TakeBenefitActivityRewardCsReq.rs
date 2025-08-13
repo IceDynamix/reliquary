@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                106 => {
                     self.switch_list.push(is.read_message()?);
                 },
-                32 => {
+                80 => {
                     self.BFBPCBNPFPH = is.read_bool()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.BFBPCBNPFPH != false {
-            os.write_bool(4, self.BFBPCBNPFPH)?;
+            os.write_bool(10, self.BFBPCBNPFPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeBenefitActivityRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TakeBenefitActivityRewardCsReq.proto\x1a\x10SwitchItem.proto\"p\n\x1e\
-    TakeBenefitActivityRewardCsReq\x12,\n\x0bswitch_list\x18\x0e\x20\x03(\
-    \x0b2\x0b.SwitchItemR\nswitchList\x12\x20\n\x0bBFBPCBNPFPH\x18\x04\x20\
-    \x01(\x08R\x0bBFBPCBNPFPHb\x06proto3\
+    TakeBenefitActivityRewardCsReq\x12,\n\x0bswitch_list\x18\r\x20\x03(\x0b2\
+    \x0b.SwitchItemR\nswitchList\x12\x20\n\x0bBFBPCBNPFPH\x18\n\x20\x01(\x08\
+    R\x0bBFBPCBNPFPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

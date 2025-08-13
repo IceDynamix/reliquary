@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkGetInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.progress)
-    pub progress: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.IBJPCOFDLJI)
     pub IBJPCOFDLJI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.GFADCAHLKFP)
-    pub GFADCAHLKFP: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.EDIAJGCBPFO)
     pub EDIAJGCBPFO: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.BNFHFHEFMEM)
     pub BNFHFHEFMEM: ::std::vec::Vec<super::NLLJBBCJIAM::NLLJBBCJIAM>,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.GFADCAHLKFP)
+    pub GFADCAHLKFP: u32,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.progress)
+    pub progress: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -59,20 +59,10 @@ impl ClockParkGetInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &ClockParkGetInfoScRsp| { &m.progress },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.progress },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IBJPCOFDLJI",
             |m: &ClockParkGetInfoScRsp| { &m.IBJPCOFDLJI },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.IBJPCOFDLJI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFADCAHLKFP",
-            |m: &ClockParkGetInfoScRsp| { &m.GFADCAHLKFP },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.GFADCAHLKFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EDIAJGCBPFO",
@@ -83,6 +73,16 @@ impl ClockParkGetInfoScRsp {
             "BNFHFHEFMEM",
             |m: &ClockParkGetInfoScRsp| { &m.BNFHFHEFMEM },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.BNFHFHEFMEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GFADCAHLKFP",
+            |m: &ClockParkGetInfoScRsp| { &m.GFADCAHLKFP },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.GFADCAHLKFP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &ClockParkGetInfoScRsp| { &m.progress },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.progress = is.read_uint32()?;
-                },
-                18 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.IBJPCOFDLJI)?;
                 },
-                16 => {
+                112 => {
                     self.IBJPCOFDLJI.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.GFADCAHLKFP = is.read_uint32()?;
-                },
-                24 => {
+                120 => {
                     self.EDIAJGCBPFO = is.read_uint32()?;
                 },
-                58 => {
+                34 => {
                     self.BNFHFHEFMEM.push(is.read_message()?);
                 },
-                104 => {
+                24 => {
+                    self.GFADCAHLKFP = is.read_uint32()?;
+                },
+                64 => {
+                    self.progress = is.read_uint32()?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -140,22 +140,22 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IBJPCOFDLJI);
-        if self.GFADCAHLKFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GFADCAHLKFP);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IBJPCOFDLJI);
         if self.EDIAJGCBPFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EDIAJGCBPFO);
+            my_size += ::protobuf::rt::uint32_size(15, self.EDIAJGCBPFO);
         }
         for value in &self.BNFHFHEFMEM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GFADCAHLKFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GFADCAHLKFP);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.progress);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,21 +163,21 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
-        }
-        os.write_repeated_packed_uint32(2, &self.IBJPCOFDLJI)?;
-        if self.GFADCAHLKFP != 0 {
-            os.write_uint32(5, self.GFADCAHLKFP)?;
-        }
+        os.write_repeated_packed_uint32(14, &self.IBJPCOFDLJI)?;
         if self.EDIAJGCBPFO != 0 {
-            os.write_uint32(3, self.EDIAJGCBPFO)?;
+            os.write_uint32(15, self.EDIAJGCBPFO)?;
         }
         for v in &self.BNFHFHEFMEM {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.GFADCAHLKFP != 0 {
+            os.write_uint32(3, self.GFADCAHLKFP)?;
+        }
+        if self.progress != 0 {
+            os.write_uint32(8, self.progress)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,22 +196,22 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.progress = 0;
         self.IBJPCOFDLJI.clear();
-        self.GFADCAHLKFP = 0;
         self.EDIAJGCBPFO = 0;
         self.BNFHFHEFMEM.clear();
+        self.GFADCAHLKFP = 0;
+        self.progress = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkGetInfoScRsp {
         static instance: ClockParkGetInfoScRsp = ClockParkGetInfoScRsp {
-            progress: 0,
             IBJPCOFDLJI: ::std::vec::Vec::new(),
-            GFADCAHLKFP: 0,
             EDIAJGCBPFO: 0,
             BNFHFHEFMEM: ::std::vec::Vec::new(),
+            GFADCAHLKFP: 0,
+            progress: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkGetInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bClockParkGetInfoScRsp.proto\x1a\x11NLLJBBCJIAM.proto\"\xe3\x01\n\
-    \x15ClockParkGetInfoScRsp\x12\x1a\n\x08progress\x18\x0b\x20\x01(\rR\x08p\
-    rogress\x12\x20\n\x0bIBJPCOFDLJI\x18\x02\x20\x03(\rR\x0bIBJPCOFDLJI\x12\
-    \x20\n\x0bGFADCAHLKFP\x18\x05\x20\x01(\rR\x0bGFADCAHLKFP\x12\x20\n\x0bED\
-    IAJGCBPFO\x18\x03\x20\x01(\rR\x0bEDIAJGCBPFO\x12.\n\x0bBNFHFHEFMEM\x18\
-    \x07\x20\x03(\x0b2\x0c.NLLJBBCJIAMR\x0bBNFHFHEFMEM\x12\x18\n\x07retcode\
-    \x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x15ClockParkGetInfoScRsp\x12\x20\n\x0bIBJPCOFDLJI\x18\x0e\x20\x03(\rR\
+    \x0bIBJPCOFDLJI\x12\x20\n\x0bEDIAJGCBPFO\x18\x0f\x20\x01(\rR\x0bEDIAJGCB\
+    PFO\x12.\n\x0bBNFHFHEFMEM\x18\x04\x20\x03(\x0b2\x0c.NLLJBBCJIAMR\x0bBNFH\
+    FHEFMEM\x12\x20\n\x0bGFADCAHLKFP\x18\x03\x20\x01(\rR\x0bGFADCAHLKFP\x12\
+    \x1a\n\x08progress\x18\x08\x20\x01(\rR\x08progress\x12\x18\n\x07retcode\
+    \x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

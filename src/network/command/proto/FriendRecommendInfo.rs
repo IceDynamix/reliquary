@@ -30,8 +30,8 @@ pub struct FriendRecommendInfo {
     // message fields
     // @@protoc_insertion_point(field:FriendRecommendInfo.JHOLBLPEGLJ)
     pub JHOLBLPEGLJ: bool,
-    // @@protoc_insertion_point(field:FriendRecommendInfo.player_simple_info)
-    pub player_simple_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
+    // @@protoc_insertion_point(field:FriendRecommendInfo.player_info)
+    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:FriendRecommendInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FriendRecommendInfo {
             |m: &mut FriendRecommendInfo| { &mut m.JHOLBLPEGLJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_simple_info",
-            |m: &FriendRecommendInfo| { &m.player_simple_info },
-            |m: &mut FriendRecommendInfo| { &mut m.player_simple_info },
+            "player_info",
+            |m: &FriendRecommendInfo| { &m.player_info },
+            |m: &mut FriendRecommendInfo| { &mut m.player_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendRecommendInfo>(
             "FriendRecommendInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FriendRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                96 => {
                     self.JHOLBLPEGLJ = is.read_bool()?;
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_simple_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for FriendRecommendInfo {
         if self.JHOLBLPEGLJ != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.player_simple_info.as_ref() {
+        if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,9 +111,9 @@ impl ::protobuf::Message for FriendRecommendInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JHOLBLPEGLJ != false {
-            os.write_bool(3, self.JHOLBLPEGLJ)?;
+            os.write_bool(12, self.JHOLBLPEGLJ)?;
         }
-        if let Some(v) = self.player_simple_info.as_ref() {
+        if let Some(v) = self.player_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -134,14 +134,14 @@ impl ::protobuf::Message for FriendRecommendInfo {
 
     fn clear(&mut self) {
         self.JHOLBLPEGLJ = false;
-        self.player_simple_info.clear();
+        self.player_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendRecommendInfo {
         static instance: FriendRecommendInfo = FriendRecommendInfo {
             JHOLBLPEGLJ: false,
-            player_simple_info: ::protobuf::MessageField::none(),
+            player_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for FriendRecommendInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"x\n\x13Fr\
-    iendRecommendInfo\x12\x20\n\x0bJHOLBLPEGLJ\x18\x03\x20\x01(\x08R\x0bJHOL\
-    BLPEGLJ\x12?\n\x12player_simple_info\x18\x02\x20\x01(\x0b2\x11.PlayerSim\
-    pleInfoR\x10playerSimpleInfob\x06proto3\
+    \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"k\n\x13Fr\
+    iendRecommendInfo\x12\x20\n\x0bJHOLBLPEGLJ\x18\x0c\x20\x01(\x08R\x0bJHOL\
+    BLPEGLJ\x122\n\x0bplayer_info\x18\x02\x20\x01(\x0b2\x11.PlayerSimpleInfo\
+    R\nplayerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

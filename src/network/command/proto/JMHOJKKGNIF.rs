@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMHOJKKGNIF {
     // message fields
-    // @@protoc_insertion_point(field:JMHOJKKGNIF.JCLOBIAPKEG)
-    pub JCLOBIAPKEG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JMHOJKKGNIF.progress)
-    pub progress: u32,
     // @@protoc_insertion_point(field:JMHOJKKGNIF.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:JMHOJKKGNIF.progress)
+    pub progress: u32,
+    // @@protoc_insertion_point(field:JMHOJKKGNIF.JCLOBIAPKEG)
+    pub JCLOBIAPKEG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JMHOJKKGNIF.panel_id)
     pub panel_id: u32,
     // special fields
@@ -55,20 +55,20 @@ impl JMHOJKKGNIF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JCLOBIAPKEG",
-            |m: &JMHOJKKGNIF| { &m.JCLOBIAPKEG },
-            |m: &mut JMHOJKKGNIF| { &mut m.JCLOBIAPKEG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &JMHOJKKGNIF| { &m.id },
+            |m: &mut JMHOJKKGNIF| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &JMHOJKKGNIF| { &m.progress },
             |m: &mut JMHOJKKGNIF| { &mut m.progress },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &JMHOJKKGNIF| { &m.id },
-            |m: &mut JMHOJKKGNIF| { &mut m.id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JCLOBIAPKEG",
+            |m: &JMHOJKKGNIF| { &m.JCLOBIAPKEG },
+            |m: &mut JMHOJKKGNIF| { &mut m.JCLOBIAPKEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "panel_id",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for JMHOJKKGNIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JCLOBIAPKEG)?;
-                },
-                32 => {
-                    self.JCLOBIAPKEG.push(is.read_uint32()?);
-                },
                 16 => {
+                    self.id = is.read_uint32()?;
+                },
+                64 => {
                     self.progress = is.read_uint32()?;
                 },
-                120 => {
-                    self.id = is.read_uint32()?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JCLOBIAPKEG)?;
+                },
+                104 => {
+                    self.JCLOBIAPKEG.push(is.read_uint32()?);
                 },
                 112 => {
                     self.panel_id = is.read_uint32()?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for JMHOJKKGNIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JCLOBIAPKEG);
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.progress);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.progress);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.JCLOBIAPKEG);
         if self.panel_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.panel_id);
         }
@@ -136,13 +136,13 @@ impl ::protobuf::Message for JMHOJKKGNIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.JCLOBIAPKEG)?;
-        if self.progress != 0 {
-            os.write_uint32(2, self.progress)?;
-        }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_uint32(2, self.id)?;
         }
+        if self.progress != 0 {
+            os.write_uint32(8, self.progress)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.JCLOBIAPKEG)?;
         if self.panel_id != 0 {
             os.write_uint32(14, self.panel_id)?;
         }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for JMHOJKKGNIF {
     }
 
     fn clear(&mut self) {
-        self.JCLOBIAPKEG.clear();
-        self.progress = 0;
         self.id = 0;
+        self.progress = 0;
+        self.JCLOBIAPKEG.clear();
         self.panel_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMHOJKKGNIF {
         static instance: JMHOJKKGNIF = JMHOJKKGNIF {
-            JCLOBIAPKEG: ::std::vec::Vec::new(),
-            progress: 0,
             id: 0,
+            progress: 0,
+            JCLOBIAPKEG: ::std::vec::Vec::new(),
             panel_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for JMHOJKKGNIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JMHOJKKGNIF.proto\"v\n\x0bJMHOJKKGNIF\x12\x20\n\x0bJCLOBIAPKEG\x18\
-    \x04\x20\x03(\rR\x0bJCLOBIAPKEG\x12\x1a\n\x08progress\x18\x02\x20\x01(\r\
-    R\x08progress\x12\x0e\n\x02id\x18\x0f\x20\x01(\rR\x02id\x12\x19\n\x08pan\
-    el_id\x18\x0e\x20\x01(\rR\x07panelIdb\x06proto3\
+    \n\x11JMHOJKKGNIF.proto\"v\n\x0bJMHOJKKGNIF\x12\x0e\n\x02id\x18\x02\x20\
+    \x01(\rR\x02id\x12\x1a\n\x08progress\x18\x08\x20\x01(\rR\x08progress\x12\
+    \x20\n\x0bJCLOBIAPKEG\x18\r\x20\x03(\rR\x0bJCLOBIAPKEG\x12\x19\n\x08pane\
+    l_id\x18\x0e\x20\x01(\rR\x07panelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

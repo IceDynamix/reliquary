@@ -79,7 +79,7 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                104 => {
                     self.config_id = is.read_uint32()?;
                 },
                 40 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.config_id);
         }
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.group_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for WolfBroGameActivateBulletCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.config_id != 0 {
-            os.write_uint32(11, self.config_id)?;
+            os.write_uint32(13, self.config_id)?;
         }
         if self.group_id != 0 {
             os.write_uint32(5, self.group_id)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameActivateBulletCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$WolfBroGameActivateBulletCsReq.proto\"X\n\x1eWolfBroGameActivateBulle\
-    tCsReq\x12\x1b\n\tconfig_id\x18\x0b\x20\x01(\rR\x08configId\x12\x19\n\
-    \x08group_id\x18\x05\x20\x01(\rR\x07groupIdb\x06proto3\
+    tCsReq\x12\x1b\n\tconfig_id\x18\r\x20\x01(\rR\x08configId\x12\x19\n\x08g\
+    roup_id\x18\x05\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

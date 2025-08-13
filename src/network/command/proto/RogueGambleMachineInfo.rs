@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGambleMachineInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueGambleMachineInfo.gamble_info)
-    pub gamble_info: ::protobuf::MessageField<super::RogueGambleInfo::RogueGambleInfo>,
     // @@protoc_insertion_point(field:RogueGambleMachineInfo.MGDMHLGJHOC)
     pub MGDMHLGJHOC: u32,
+    // @@protoc_insertion_point(field:RogueGambleMachineInfo.gamble_info)
+    pub gamble_info: ::protobuf::MessageField<super::RogueGambleInfo::RogueGambleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGambleMachineInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueGambleMachineInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGambleInfo::RogueGambleInfo>(
-            "gamble_info",
-            |m: &RogueGambleMachineInfo| { &m.gamble_info },
-            |m: &mut RogueGambleMachineInfo| { &mut m.gamble_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGDMHLGJHOC",
             |m: &RogueGambleMachineInfo| { &m.MGDMHLGJHOC },
             |m: &mut RogueGambleMachineInfo| { &mut m.MGDMHLGJHOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGambleInfo::RogueGambleInfo>(
+            "gamble_info",
+            |m: &RogueGambleMachineInfo| { &m.gamble_info },
+            |m: &mut RogueGambleMachineInfo| { &mut m.gamble_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGambleMachineInfo>(
             "RogueGambleMachineInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gamble_info)?;
-                },
-                72 => {
+                104 => {
                     self.MGDMHLGJHOC = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gamble_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MGDMHLGJHOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MGDMHLGJHOC);
+        }
         if let Some(v) = self.gamble_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.MGDMHLGJHOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MGDMHLGJHOC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.gamble_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.MGDMHLGJHOC != 0 {
-            os.write_uint32(9, self.MGDMHLGJHOC)?;
+            os.write_uint32(13, self.MGDMHLGJHOC)?;
+        }
+        if let Some(v) = self.gamble_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     }
 
     fn clear(&mut self) {
-        self.gamble_info.clear();
         self.MGDMHLGJHOC = 0;
+        self.gamble_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGambleMachineInfo {
         static instance: RogueGambleMachineInfo = RogueGambleMachineInfo {
-            gamble_info: ::protobuf::MessageField::none(),
             MGDMHLGJHOC: 0,
+            gamble_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueGambleMachineInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueGambleMachineInfo.proto\x1a\x15RogueGambleInfo.proto\"m\n\x16\
-    RogueGambleMachineInfo\x121\n\x0bgamble_info\x18\n\x20\x01(\x0b2\x10.Rog\
-    ueGambleInfoR\ngambleInfo\x12\x20\n\x0bMGDMHLGJHOC\x18\t\x20\x01(\rR\x0b\
-    MGDMHLGJHOCb\x06proto3\
+    RogueGambleMachineInfo\x12\x20\n\x0bMGDMHLGJHOC\x18\r\x20\x01(\rR\x0bMGD\
+    MHLGJHOC\x121\n\x0bgamble_info\x18\x06\x20\x01(\x0b2\x10.RogueGambleInfo\
+    R\ngambleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

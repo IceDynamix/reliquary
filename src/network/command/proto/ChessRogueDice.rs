@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueDice {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueDice.DHNDAMPBHPP)
-    pub DHNDAMPBHPP: u32,
-    // @@protoc_insertion_point(field:ChessRogueDice.IGBCACGFCKB)
-    pub IGBCACGFCKB: ::std::vec::Vec<super::HNGIHJJIACO::HNGIHJJIACO>,
-    // @@protoc_insertion_point(field:ChessRogueDice.OABLIOFCOFO)
-    pub OABLIOFCOFO: u32,
-    // @@protoc_insertion_point(field:ChessRogueDice.HMKEBDLFLPG)
-    pub HMKEBDLFLPG: u32,
+    // @@protoc_insertion_point(field:ChessRogueDice.surface_list)
+    pub surface_list: ::std::vec::Vec<super::ChessRogueDiceSurfaceInfo::ChessRogueDiceSurfaceInfo>,
+    // @@protoc_insertion_point(field:ChessRogueDice.surface_id)
+    pub surface_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueDice.branch_id)
+    pub branch_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueDice.slot_id)
+    pub slot_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueDice.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl ChessRogueDice {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHNDAMPBHPP",
-            |m: &ChessRogueDice| { &m.DHNDAMPBHPP },
-            |m: &mut ChessRogueDice| { &mut m.DHNDAMPBHPP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IGBCACGFCKB",
-            |m: &ChessRogueDice| { &m.IGBCACGFCKB },
-            |m: &mut ChessRogueDice| { &mut m.IGBCACGFCKB },
+            "surface_list",
+            |m: &ChessRogueDice| { &m.surface_list },
+            |m: &mut ChessRogueDice| { &mut m.surface_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OABLIOFCOFO",
-            |m: &ChessRogueDice| { &m.OABLIOFCOFO },
-            |m: &mut ChessRogueDice| { &mut m.OABLIOFCOFO },
+            "surface_id",
+            |m: &ChessRogueDice| { &m.surface_id },
+            |m: &mut ChessRogueDice| { &mut m.surface_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMKEBDLFLPG",
-            |m: &ChessRogueDice| { &m.HMKEBDLFLPG },
-            |m: &mut ChessRogueDice| { &mut m.HMKEBDLFLPG },
+            "branch_id",
+            |m: &ChessRogueDice| { &m.branch_id },
+            |m: &mut ChessRogueDice| { &mut m.branch_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot_id",
+            |m: &ChessRogueDice| { &m.slot_id },
+            |m: &mut ChessRogueDice| { &mut m.slot_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueDice>(
             "ChessRogueDice",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChessRogueDice {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DHNDAMPBHPP = is.read_uint32()?;
+                26 => {
+                    self.surface_list.push(is.read_message()?);
                 },
-                82 => {
-                    self.IGBCACGFCKB.push(is.read_message()?);
+                96 => {
+                    self.surface_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.branch_id = is.read_uint32()?;
                 },
                 64 => {
-                    self.OABLIOFCOFO = is.read_uint32()?;
-                },
-                40 => {
-                    self.HMKEBDLFLPG = is.read_uint32()?;
+                    self.slot_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for ChessRogueDice {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHNDAMPBHPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DHNDAMPBHPP);
-        }
-        for value in &self.IGBCACGFCKB {
+        for value in &self.surface_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OABLIOFCOFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OABLIOFCOFO);
+        if self.surface_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.surface_id);
         }
-        if self.HMKEBDLFLPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HMKEBDLFLPG);
+        if self.branch_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.branch_id);
+        }
+        if self.slot_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.slot_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ChessRogueDice {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHNDAMPBHPP != 0 {
-            os.write_uint32(1, self.DHNDAMPBHPP)?;
-        }
-        for v in &self.IGBCACGFCKB {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.surface_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.OABLIOFCOFO != 0 {
-            os.write_uint32(8, self.OABLIOFCOFO)?;
+        if self.surface_id != 0 {
+            os.write_uint32(12, self.surface_id)?;
         }
-        if self.HMKEBDLFLPG != 0 {
-            os.write_uint32(5, self.HMKEBDLFLPG)?;
+        if self.branch_id != 0 {
+            os.write_uint32(9, self.branch_id)?;
+        }
+        if self.slot_id != 0 {
+            os.write_uint32(8, self.slot_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ChessRogueDice {
     }
 
     fn clear(&mut self) {
-        self.DHNDAMPBHPP = 0;
-        self.IGBCACGFCKB.clear();
-        self.OABLIOFCOFO = 0;
-        self.HMKEBDLFLPG = 0;
+        self.surface_list.clear();
+        self.surface_id = 0;
+        self.branch_id = 0;
+        self.slot_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueDice {
         static instance: ChessRogueDice = ChessRogueDice {
-            DHNDAMPBHPP: 0,
-            IGBCACGFCKB: ::std::vec::Vec::new(),
-            OABLIOFCOFO: 0,
-            HMKEBDLFLPG: 0,
+            surface_list: ::std::vec::Vec::new(),
+            surface_id: 0,
+            branch_id: 0,
+            slot_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueDice {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14ChessRogueDice.proto\x1a\x11HNGIHJJIACO.proto\"\xa6\x01\n\x0eChess\
-    RogueDice\x12\x20\n\x0bDHNDAMPBHPP\x18\x01\x20\x01(\rR\x0bDHNDAMPBHPP\
-    \x12.\n\x0bIGBCACGFCKB\x18\n\x20\x03(\x0b2\x0c.HNGIHJJIACOR\x0bIGBCACGFC\
-    KB\x12\x20\n\x0bOABLIOFCOFO\x18\x08\x20\x01(\rR\x0bOABLIOFCOFO\x12\x20\n\
-    \x0bHMKEBDLFLPG\x18\x05\x20\x01(\rR\x0bHMKEBDLFLPGb\x06proto3\
+    \n\x14ChessRogueDice.proto\x1a\x1fChessRogueDiceSurfaceInfo.proto\"\xa4\
+    \x01\n\x0eChessRogueDice\x12=\n\x0csurface_list\x18\x03\x20\x03(\x0b2\
+    \x1a.ChessRogueDiceSurfaceInfoR\x0bsurfaceList\x12\x1d\n\nsurface_id\x18\
+    \x0c\x20\x01(\rR\tsurfaceId\x12\x1b\n\tbranch_id\x18\t\x20\x01(\rR\x08br\
+    anchId\x12\x17\n\x07slot_id\x18\x08\x20\x01(\rR\x06slotIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HNGIHJJIACO::file_descriptor().clone());
+            deps.push(super::ChessRogueDiceSurfaceInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueDice::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

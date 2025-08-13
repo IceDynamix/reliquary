@@ -86,16 +86,16 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_college_id_list)?;
                 },
-                40 => {
+                112 => {
                     self.finished_college_id_list.push(is.read_uint32()?);
                 },
-                96 => {
+                72 => {
                     self.MAMHOJMFJOF = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.finished_college_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.finished_college_id_list);
         if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MAMHOJMFJOF);
+            my_size += ::protobuf::rt::uint32_size(9, self.MAMHOJMFJOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for GetBattleCollegeDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(5, &self.finished_college_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.finished_college_id_list)?;
         if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(12, self.MAMHOJMFJOF)?;
+            os.write_uint32(9, self.MAMHOJMFJOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GetBattleCollegeDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetBattleCollegeDataScRsp.proto\"\x90\x01\n\x19GetBattleCollegeDat\
-    aScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x127\n\x18fin\
-    ished_college_id_list\x18\x05\x20\x03(\rR\x15finishedCollegeIdList\x12\
-    \x20\n\x0bMAMHOJMFJOF\x18\x0c\x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
+    aScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x127\n\x18fin\
+    ished_college_id_list\x18\x0e\x20\x03(\rR\x15finishedCollegeIdList\x12\
+    \x20\n\x0bMAMHOJMFJOF\x18\t\x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

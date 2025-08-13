@@ -30,8 +30,8 @@ pub struct GetRelicFilterPlanScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRelicFilterPlanScRsp.relic_filter_plan_list)
-    pub relic_filter_plan_list: ::std::vec::Vec<super::RelicFilterPlan::RelicFilterPlan>,
+    // @@protoc_insertion_point(field:GetRelicFilterPlanScRsp.ECNAFDIBCKF)
+    pub ECNAFDIBCKF: ::std::vec::Vec<super::KFPJGGIFIEN::KFPJGGIFIEN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetRelicFilterPlanScRsp {
             |m: &mut GetRelicFilterPlanScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "relic_filter_plan_list",
-            |m: &GetRelicFilterPlanScRsp| { &m.relic_filter_plan_list },
-            |m: &mut GetRelicFilterPlanScRsp| { &mut m.relic_filter_plan_list },
+            "ECNAFDIBCKF",
+            |m: &GetRelicFilterPlanScRsp| { &m.ECNAFDIBCKF },
+            |m: &mut GetRelicFilterPlanScRsp| { &mut m.ECNAFDIBCKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRelicFilterPlanScRsp>(
             "GetRelicFilterPlanScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    self.relic_filter_plan_list.push(is.read_message()?);
+                18 => {
+                    self.ECNAFDIBCKF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        for value in &self.relic_filter_plan_list {
+        for value in &self.ECNAFDIBCKF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        for v in &self.relic_filter_plan_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.ECNAFDIBCKF {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetRelicFilterPlanScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.relic_filter_plan_list.clear();
+        self.ECNAFDIBCKF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRelicFilterPlanScRsp {
         static instance: GetRelicFilterPlanScRsp = GetRelicFilterPlanScRsp {
             retcode: 0,
-            relic_filter_plan_list: ::std::vec::Vec::new(),
+            ECNAFDIBCKF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRelicFilterPlanScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetRelicFilterPlanScRsp.proto\x1a\x15RelicFilterPlan.proto\"z\n\
-    \x17GetRelicFilterPlanScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07\
-    retcode\x12E\n\x16relic_filter_plan_list\x18\r\x20\x03(\x0b2\x10.RelicFi\
-    lterPlanR\x13relicFilterPlanListb\x06proto3\
+    \n\x1dGetRelicFilterPlanScRsp.proto\x1a\x11KFPJGGIFIEN.proto\"c\n\x17Get\
+    RelicFilterPlanScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bECNAFDIBCKF\x18\x02\x20\x03(\x0b2\x0c.KFPJGGIFIENR\x0bECNAFDI\
+    BCKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RelicFilterPlan::file_descriptor().clone());
+            deps.push(super::KFPJGGIFIEN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRelicFilterPlanScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterSceneByServerScNotify {
     // message fields
+    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::EnterSceneReason::EnterSceneReason>,
     // @@protoc_insertion_point(field:EnterSceneByServerScNotify.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:EnterSceneByServerScNotify.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:EnterSceneByServerScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::EnterSceneReason::EnterSceneReason>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneByServerScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl EnterSceneByServerScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &EnterSceneByServerScNotify| { &m.reason },
+            |m: &mut EnterSceneByServerScNotify| { &mut m.reason },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
             |m: &EnterSceneByServerScNotify| { &m.scene },
@@ -62,11 +67,6 @@ impl EnterSceneByServerScNotify {
             "lineup",
             |m: &EnterSceneByServerScNotify| { &m.lineup },
             |m: &mut EnterSceneByServerScNotify| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &EnterSceneByServerScNotify| { &m.reason },
-            |m: &mut EnterSceneByServerScNotify| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneByServerScNotify>(
             "EnterSceneByServerScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                106 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                64 => {
-                    self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.reason.value());
+        }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -114,9 +117,6 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
         if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EnterSceneByServerScNotify {
     }
 
     fn clear(&mut self) {
+        self.reason = ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE);
         self.scene.clear();
         self.lineup.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::EnterSceneReason::EnterSceneReason::ENTER_SCENE_REASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneByServerScNotify {
         static instance: EnterSceneByServerScNotify = EnterSceneByServerScNotify {
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             scene: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneByServerScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EnterSceneByServerScNotify.proto\x1a\x16EnterSceneReason.proto\x1a\
     \x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\x8e\x01\n\x1aEnterSceneByS\
-    erverScNotify\x12\x20\n\x05scene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05s\
-    cene\x12#\n\x06lineup\x18\r\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12)\
-    \n\x06reason\x18\x08\x20\x01(\x0e2\x11.EnterSceneReasonR\x06reasonb\x06p\
+    erverScNotify\x12)\n\x06reason\x18\r\x20\x01(\x0e2\x11.EnterSceneReasonR\
+    \x06reason\x12\x20\n\x05scene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05scen\
+    e\x12#\n\x06lineup\x18\x0e\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupb\x06p\
     roto3\
 ";
 

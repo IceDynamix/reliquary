@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.workbench_id = is.read_uint32()?;
                 },
-                34 => {
+                66 => {
                     self.workbench_func_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.workbench_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.workbench_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.workbench_id);
         }
         for value in &self.workbench_func_list {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.workbench_id != 0 {
-            os.write_uint32(13, self.workbench_id)?;
+            os.write_uint32(5, self.workbench_id)?;
         }
         for v in &self.workbench_func_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournWorkbenchInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueTournWorkbenchInfo.proto\x1a\x19WorkbenchFuncIdInfo.proto\"\
-    \x82\x01\n\x17RogueTournWorkbenchInfo\x12!\n\x0cworkbench_id\x18\r\x20\
-    \x01(\rR\x0bworkbenchId\x12D\n\x13workbench_func_list\x18\x04\x20\x03(\
+    \x82\x01\n\x17RogueTournWorkbenchInfo\x12!\n\x0cworkbench_id\x18\x05\x20\
+    \x01(\rR\x0bworkbenchId\x12D\n\x13workbench_func_list\x18\x08\x20\x03(\
     \x0b2\x14.WorkbenchFuncIdInfoR\x11workbenchFuncListb\x06proto3\
 ";
 

@@ -85,7 +85,7 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
                 8 => {
                     self.OFIODJNLBEA.push(is.read_uint32()?);
                 },
-                40 => {
+                88 => {
                     self.HDILBDIPGHO = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OFIODJNLBEA);
         if self.HDILBDIPGHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HDILBDIPGHO);
+            my_size += ::protobuf::rt::uint32_size(11, self.HDILBDIPGHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,7 +112,7 @@ impl ::protobuf::Message for MonopolyLikeScNotify {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.OFIODJNLBEA)?;
         if self.HDILBDIPGHO != 0 {
-            os.write_uint32(5, self.HDILBDIPGHO)?;
+            os.write_uint32(11, self.HDILBDIPGHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyLikeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMonopolyLikeScNotify.proto\"Z\n\x14MonopolyLikeScNotify\x12\x20\n\
     \x0bOFIODJNLBEA\x18\x01\x20\x03(\rR\x0bOFIODJNLBEA\x12\x20\n\x0bHDILBDIP\
-    GHO\x18\x05\x20\x01(\rR\x0bHDILBDIPGHOb\x06proto3\
+    GHO\x18\x0b\x20\x01(\rR\x0bHDILBDIPGHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

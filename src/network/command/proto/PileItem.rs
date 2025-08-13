@@ -79,7 +79,7 @@ impl ::protobuf::Message for PileItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.item_id = is.read_uint32()?;
                 },
                 24 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PileItem {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.item_id);
         }
         if self.item_num != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.item_num);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for PileItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(4, self.item_id)?;
+            os.write_uint32(13, self.item_id)?;
         }
         if self.item_num != 0 {
             os.write_uint32(3, self.item_num)?;
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PileItem {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0ePileItem.proto\">\n\x08PileItem\x12\x17\n\x07item_id\x18\x04\x20\
-    \x01(\rR\x06itemId\x12\x19\n\x08item_num\x18\x03\x20\x01(\rR\x07itemNumb\
-    \x06proto3\
+    \n\x0ePileItem.proto\">\n\x08PileItem\x12\x17\n\x07item_id\x18\r\x20\x01\
+    (\rR\x06itemId\x12\x19\n\x08item_num\x18\x03\x20\x01(\rR\x07itemNumb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

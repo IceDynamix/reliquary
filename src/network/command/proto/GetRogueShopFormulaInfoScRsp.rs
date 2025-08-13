@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKAANMDDKCJ)?;
                 },
-                120 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.AEFHKANBFNC = is.read_int32()?;
                 },
-                10 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHJHCCFMIFD)?;
                 },
-                56 => {
+                80 => {
                     self.EFOJOCFGIDJ = is.read_int32()?;
                 },
                 tag => {
@@ -132,17 +132,17 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.AEFHKANBFNC != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.AEFHKANBFNC);
+            my_size += ::protobuf::rt::int32_size(7, self.AEFHKANBFNC);
         }
         if let Some(v) = self.IHJHCCFMIFD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.EFOJOCFGIDJ != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.EFOJOCFGIDJ);
+            my_size += ::protobuf::rt::int32_size(10, self.EFOJOCFGIDJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CKAANMDDKCJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.AEFHKANBFNC != 0 {
-            os.write_int32(6, self.AEFHKANBFNC)?;
+            os.write_int32(7, self.AEFHKANBFNC)?;
         }
         if let Some(v) = self.IHJHCCFMIFD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.EFOJOCFGIDJ != 0 {
-            os.write_int32(7, self.EFOJOCFGIDJ)?;
+            os.write_int32(10, self.EFOJOCFGIDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopFormulaInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetRogueShopFormulaInfoScRsp.proto\x1a\x11GLPPDLECCLI.proto\x1a\x12I\
     temCostData.proto\"\xdd\x01\n\x1cGetRogueShopFormulaInfoScRsp\x12.\n\x0b\
-    CKAANMDDKCJ\x18\x08\x20\x01(\x0b2\x0c.GLPPDLECCLIR\x0bCKAANMDDKCJ\x12\
-    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bAEFHKANBFN\
-    C\x18\x06\x20\x01(\x05R\x0bAEFHKANBFNC\x12/\n\x0bIHJHCCFMIFD\x18\x01\x20\
-    \x01(\x0b2\r.ItemCostDataR\x0bIHJHCCFMIFD\x12\x20\n\x0bEFOJOCFGIDJ\x18\
-    \x07\x20\x01(\x05R\x0bEFOJOCFGIDJb\x06proto3\
+    CKAANMDDKCJ\x18\x04\x20\x01(\x0b2\x0c.GLPPDLECCLIR\x0bCKAANMDDKCJ\x12\
+    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bAEFHKANBFN\
+    C\x18\x07\x20\x01(\x05R\x0bAEFHKANBFNC\x12/\n\x0bIHJHCCFMIFD\x18\x0e\x20\
+    \x01(\x0b2\r.ItemCostDataR\x0bIHJHCCFMIFD\x12\x20\n\x0bEFOJOCFGIDJ\x18\n\
+    \x20\x01(\x05R\x0bEFOJOCFGIDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

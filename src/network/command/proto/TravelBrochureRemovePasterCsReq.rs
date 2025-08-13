@@ -86,13 +86,13 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.item_id = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.unique_id = is.read_uint64()?;
                 },
-                56 => {
+                16 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.unique_id);
+            my_size += ::protobuf::rt::uint64_size(6, self.unique_id);
         }
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(2, self.CPODEJOFPDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(8, self.item_id)?;
+            os.write_uint32(7, self.item_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(12, self.unique_id)?;
+            os.write_uint64(6, self.unique_id)?;
         }
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(7, self.CPODEJOFPDD)?;
+            os.write_uint32(2, self.CPODEJOFPDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureRemovePasterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TravelBrochureRemovePasterCsReq.proto\"y\n\x1fTravelBrochureRemovePas\
-    terCsReq\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\x06itemId\x12\x1b\n\tu\
-    nique_id\x18\x0c\x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bCPODEJOFPDD\x18\
-    \x07\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
+    terCsReq\x12\x17\n\x07item_id\x18\x07\x20\x01(\rR\x06itemId\x12\x1b\n\tu\
+    nique_id\x18\x06\x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bCPODEJOFPDD\x18\
+    \x02\x20\x01(\rR\x0bCPODEJOFPDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

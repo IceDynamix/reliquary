@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueEnterScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.HNDLHICDNPC)
     pub HNDLHICDNPC: ::protobuf::MessageField<super::ChessRogueGameInfo::ChessRogueGameInfo>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.stage_info)
     pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
     // @@protoc_insertion_point(field:ChessRogueEnterScRsp.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:ChessRogueEnterScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,11 @@ impl ChessRogueEnterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChessRogueEnterScRsp| { &m.retcode },
+            |m: &mut ChessRogueEnterScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGameInfo::ChessRogueGameInfo>(
             "HNDLHICDNPC",
             |m: &ChessRogueEnterScRsp| { &m.HNDLHICDNPC },
@@ -69,11 +74,6 @@ impl ChessRogueEnterScRsp {
             "id",
             |m: &ChessRogueEnterScRsp| { &m.id },
             |m: &mut ChessRogueEnterScRsp| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueEnterScRsp| { &m.retcode },
-            |m: &mut ChessRogueEnterScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueEnterScRsp>(
             "ChessRogueEnterScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
-                82 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                120 => {
+                16 => {
                     self.id = is.read_uint32()?;
-                },
-                64 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,6 +117,9 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
         if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -126,10 +129,7 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
+        }
         if let Some(v) = self.HNDLHICDNPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(2, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for ChessRogueEnterScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.HNDLHICDNPC.clear();
         self.stage_info.clear();
         self.id = 0;
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueEnterScRsp {
         static instance: ChessRogueEnterScRsp = ChessRogueEnterScRsp {
+            retcode: 0,
             HNDLHICDNPC: ::protobuf::MessageField::none(),
             stage_info: ::protobuf::MessageField::none(),
             id: 0,
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueEnterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueEnterScRsp.proto\x1a\x18ChessRogueGameInfo.proto\x1a\x14\
-    ChessRogueInfo.proto\"\xa7\x01\n\x14ChessRogueEnterScRsp\x125\n\x0bHNDLH\
-    ICDNPC\x18\r\x20\x01(\x0b2\x13.ChessRogueGameInfoR\x0bHNDLHICDNPC\x12.\n\
-    \nstage_info\x18\n\x20\x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x12\x0e\
-    \n\x02id\x18\x0f\x20\x01(\rR\x02id\x12\x18\n\x07retcode\x18\x08\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    ChessRogueInfo.proto\"\xa7\x01\n\x14ChessRogueEnterScRsp\x12\x18\n\x07re\
+    tcode\x18\x0c\x20\x01(\rR\x07retcode\x125\n\x0bHNDLHICDNPC\x18\x0b\x20\
+    \x01(\x0b2\x13.ChessRogueGameInfoR\x0bHNDLHICDNPC\x12.\n\nstage_info\x18\
+    \x04\x20\x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x12\x0e\n\x02id\x18\
+    \x02\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

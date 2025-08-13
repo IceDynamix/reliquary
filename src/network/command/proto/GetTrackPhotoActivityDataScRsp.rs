@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                42 => {
                     self.EMGFLDOPKGL.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         for value in &self.EMGFLDOPKGL {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         for v in &self.EMGFLDOPKGL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetTrackPhotoActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetTrackPhotoActivityDataScRsp.proto\x1a\x11CGLIGECGAKN.proto\"j\n\
-    \x1eGetTrackPhotoActivityDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\r\
-    R\x07retcode\x12.\n\x0bEMGFLDOPKGL\x18\x0b\x20\x03(\x0b2\x0c.CGLIGECGAKN\
-    R\x0bEMGFLDOPKGLb\x06proto3\
+    \x1eGetTrackPhotoActivityDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bEMGFLDOPKGL\x18\x05\x20\x03(\x0b2\x0c.CGLIGECGA\
+    KNR\x0bEMGFLDOPKGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

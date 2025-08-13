@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueFormulaSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.HABOHEJFCKE)
-    pub HABOHEJFCKE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.EHPMCGOELGB)
-    pub EHPMCGOELGB: bool,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.KEMEOOJKOIB)
-    pub KEMEOOJKOIB: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.hint_id)
+    pub hint_id: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.can_roll)
+    pub can_roll: bool,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.select_hint_id)
+    pub select_hint_id: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_max_count)
+    pub roll_formula_max_count: u32,
     // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_cost_data)
     pub roll_formula_cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.JCOGGOBKBPJ)
-    pub JCOGGOBKBPJ: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.ACBGGDLENHP)
-    pub ACBGGDLENHP: u32,
-    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.AHCGPCCOOFO)
-    pub AHCGPCCOOFO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.select_formula_id_list)
+    pub select_formula_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.roll_formula_free_count)
+    pub roll_formula_free_count: u32,
+    // @@protoc_insertion_point(field:RogueFormulaSelectInfo.handbook_unlock_formula_id_list)
+    pub handbook_unlock_formula_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueFormulaSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,45 +63,45 @@ impl RogueFormulaSelectInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HABOHEJFCKE",
-            |m: &RogueFormulaSelectInfo| { &m.HABOHEJFCKE },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.HABOHEJFCKE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hint_id",
+            |m: &RogueFormulaSelectInfo| { &m.hint_id },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.hint_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &RogueFormulaSelectInfo| { &m.BILBOHBDBPN },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.BILBOHBDBPN },
+            "can_roll",
+            |m: &RogueFormulaSelectInfo| { &m.can_roll },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.can_roll },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHPMCGOELGB",
-            |m: &RogueFormulaSelectInfo| { &m.EHPMCGOELGB },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.EHPMCGOELGB },
+            "select_hint_id",
+            |m: &RogueFormulaSelectInfo| { &m.select_hint_id },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.select_hint_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEMEOOJKOIB",
-            |m: &RogueFormulaSelectInfo| { &m.KEMEOOJKOIB },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.KEMEOOJKOIB },
+            "roll_formula_max_count",
+            |m: &RogueFormulaSelectInfo| { &m.roll_formula_max_count },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_max_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "roll_formula_cost_data",
             |m: &RogueFormulaSelectInfo| { &m.roll_formula_cost_data },
             |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_cost_data },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCOGGOBKBPJ",
-            |m: &RogueFormulaSelectInfo| { &m.JCOGGOBKBPJ },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.JCOGGOBKBPJ },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "select_formula_id_list",
+            |m: &RogueFormulaSelectInfo| { &m.select_formula_id_list },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.select_formula_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACBGGDLENHP",
-            |m: &RogueFormulaSelectInfo| { &m.ACBGGDLENHP },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.ACBGGDLENHP },
+            "roll_formula_free_count",
+            |m: &RogueFormulaSelectInfo| { &m.roll_formula_free_count },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.roll_formula_free_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AHCGPCCOOFO",
-            |m: &RogueFormulaSelectInfo| { &m.AHCGPCCOOFO },
-            |m: &mut RogueFormulaSelectInfo| { &mut m.AHCGPCCOOFO },
+            "handbook_unlock_formula_id_list",
+            |m: &RogueFormulaSelectInfo| { &m.handbook_unlock_formula_id_list },
+            |m: &mut RogueFormulaSelectInfo| { &mut m.handbook_unlock_formula_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueFormulaSelectInfo>(
             "RogueFormulaSelectInfo",
@@ -121,35 +121,35 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HABOHEJFCKE)?;
+                96 => {
+                    self.hint_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.HABOHEJFCKE.push(is.read_uint32()?);
+                48 => {
+                    self.can_roll = is.read_bool()?;
                 },
-                104 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
+                64 => {
+                    self.select_hint_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.EHPMCGOELGB = is.read_bool()?;
+                88 => {
+                    self.roll_formula_max_count = is.read_uint32()?;
                 },
-                16 => {
-                    self.KEMEOOJKOIB = is.read_uint32()?;
-                },
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.roll_formula_cost_data)?;
                 },
-                56 => {
-                    self.JCOGGOBKBPJ = is.read_uint32()?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.select_formula_id_list)?;
                 },
-                72 => {
-                    self.ACBGGDLENHP = is.read_uint32()?;
+                32 => {
+                    self.select_formula_id_list.push(is.read_uint32()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AHCGPCCOOFO)?;
+                80 => {
+                    self.roll_formula_free_count = is.read_uint32()?;
                 },
-                96 => {
-                    self.AHCGPCCOOFO.push(is.read_uint32()?);
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.handbook_unlock_formula_id_list)?;
+                },
+                24 => {
+                    self.handbook_unlock_formula_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,53 +163,53 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.HABOHEJFCKE);
-        if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BILBOHBDBPN);
+        if self.hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.hint_id);
         }
-        if self.EHPMCGOELGB != false {
+        if self.can_roll != false {
             my_size += 1 + 1;
         }
-        if self.KEMEOOJKOIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KEMEOOJKOIB);
+        if self.select_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.select_hint_id);
+        }
+        if self.roll_formula_max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.roll_formula_max_count);
         }
         if let Some(v) = self.roll_formula_cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JCOGGOBKBPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JCOGGOBKBPJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.select_formula_id_list);
+        if self.roll_formula_free_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.roll_formula_free_count);
         }
-        if self.ACBGGDLENHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACBGGDLENHP);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.AHCGPCCOOFO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.handbook_unlock_formula_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.HABOHEJFCKE)?;
-        if self.BILBOHBDBPN != 0 {
-            os.write_uint32(13, self.BILBOHBDBPN)?;
+        if self.hint_id != 0 {
+            os.write_uint32(12, self.hint_id)?;
         }
-        if self.EHPMCGOELGB != false {
-            os.write_bool(10, self.EHPMCGOELGB)?;
+        if self.can_roll != false {
+            os.write_bool(6, self.can_roll)?;
         }
-        if self.KEMEOOJKOIB != 0 {
-            os.write_uint32(2, self.KEMEOOJKOIB)?;
+        if self.select_hint_id != 0 {
+            os.write_uint32(8, self.select_hint_id)?;
+        }
+        if self.roll_formula_max_count != 0 {
+            os.write_uint32(11, self.roll_formula_max_count)?;
         }
         if let Some(v) = self.roll_formula_cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.JCOGGOBKBPJ != 0 {
-            os.write_uint32(7, self.JCOGGOBKBPJ)?;
+        os.write_repeated_packed_uint32(4, &self.select_formula_id_list)?;
+        if self.roll_formula_free_count != 0 {
+            os.write_uint32(10, self.roll_formula_free_count)?;
         }
-        if self.ACBGGDLENHP != 0 {
-            os.write_uint32(9, self.ACBGGDLENHP)?;
-        }
-        os.write_repeated_packed_uint32(12, &self.AHCGPCCOOFO)?;
+        os.write_repeated_packed_uint32(3, &self.handbook_unlock_formula_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -227,27 +227,27 @@ impl ::protobuf::Message for RogueFormulaSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.HABOHEJFCKE.clear();
-        self.BILBOHBDBPN = 0;
-        self.EHPMCGOELGB = false;
-        self.KEMEOOJKOIB = 0;
+        self.hint_id = 0;
+        self.can_roll = false;
+        self.select_hint_id = 0;
+        self.roll_formula_max_count = 0;
         self.roll_formula_cost_data.clear();
-        self.JCOGGOBKBPJ = 0;
-        self.ACBGGDLENHP = 0;
-        self.AHCGPCCOOFO.clear();
+        self.select_formula_id_list.clear();
+        self.roll_formula_free_count = 0;
+        self.handbook_unlock_formula_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueFormulaSelectInfo {
         static instance: RogueFormulaSelectInfo = RogueFormulaSelectInfo {
-            HABOHEJFCKE: ::std::vec::Vec::new(),
-            BILBOHBDBPN: 0,
-            EHPMCGOELGB: false,
-            KEMEOOJKOIB: 0,
+            hint_id: 0,
+            can_roll: false,
+            select_hint_id: 0,
+            roll_formula_max_count: 0,
             roll_formula_cost_data: ::protobuf::MessageField::none(),
-            JCOGGOBKBPJ: 0,
-            ACBGGDLENHP: 0,
-            AHCGPCCOOFO: ::std::vec::Vec::new(),
+            select_formula_id_list: ::std::vec::Vec::new(),
+            roll_formula_free_count: 0,
+            handbook_unlock_formula_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -272,15 +272,16 @@ impl ::protobuf::reflect::ProtobufValue for RogueFormulaSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueFormulaSelectInfo.proto\x1a\x12ItemCostData.proto\"\xca\x02\n\
-    \x16RogueFormulaSelectInfo\x12\x20\n\x0bHABOHEJFCKE\x18\x05\x20\x03(\rR\
-    \x0bHABOHEJFCKE\x12\x20\n\x0bBILBOHBDBPN\x18\r\x20\x01(\rR\x0bBILBOHBDBP\
-    N\x12\x20\n\x0bEHPMCGOELGB\x18\n\x20\x01(\x08R\x0bEHPMCGOELGB\x12\x20\n\
-    \x0bKEMEOOJKOIB\x18\x02\x20\x01(\rR\x0bKEMEOOJKOIB\x12B\n\x16roll_formul\
-    a_cost_data\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x13rollFormulaCostData\
-    \x12\x20\n\x0bJCOGGOBKBPJ\x18\x07\x20\x01(\rR\x0bJCOGGOBKBPJ\x12\x20\n\
-    \x0bACBGGDLENHP\x18\t\x20\x01(\rR\x0bACBGGDLENHP\x12\x20\n\x0bAHCGPCCOOF\
-    O\x18\x0c\x20\x03(\rR\x0bAHCGPCCOOFOb\x06proto3\
+    \n\x1cRogueFormulaSelectInfo.proto\x1a\x12ItemCostData.proto\"\x9d\x03\n\
+    \x16RogueFormulaSelectInfo\x12\x17\n\x07hint_id\x18\x0c\x20\x01(\rR\x06h\
+    intId\x12\x19\n\x08can_roll\x18\x06\x20\x01(\x08R\x07canRoll\x12$\n\x0es\
+    elect_hint_id\x18\x08\x20\x01(\rR\x0cselectHintId\x123\n\x16roll_formula\
+    _max_count\x18\x0b\x20\x01(\rR\x13rollFormulaMaxCount\x12B\n\x16roll_for\
+    mula_cost_data\x18\x0e\x20\x01(\x0b2\r.ItemCostDataR\x13rollFormulaCostD\
+    ata\x123\n\x16select_formula_id_list\x18\x04\x20\x03(\rR\x13selectFormul\
+    aIdList\x125\n\x17roll_formula_free_count\x18\n\x20\x01(\rR\x14rollFormu\
+    laFreeCount\x12D\n\x1fhandbook_unlock_formula_id_list\x18\x03\x20\x03(\r\
+    R\x1bhandbookUnlockFormulaIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

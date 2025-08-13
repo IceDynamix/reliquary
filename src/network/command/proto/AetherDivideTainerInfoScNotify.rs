@@ -72,7 +72,7 @@ impl ::protobuf::Message for AetherDivideTainerInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                96 => {
                     self.EGEMNDNEDIP = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for AetherDivideTainerInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EGEMNDNEDIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EGEMNDNEDIP);
+            my_size += ::protobuf::rt::uint32_size(12, self.EGEMNDNEDIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for AetherDivideTainerInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EGEMNDNEDIP != 0 {
-            os.write_uint32(11, self.EGEMNDNEDIP)?;
+            os.write_uint32(12, self.EGEMNDNEDIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideTainerInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$AetherDivideTainerInfoScNotify.proto\"B\n\x1eAetherDivideTainerInfoSc\
-    Notify\x12\x20\n\x0bEGEMNDNEDIP\x18\x0b\x20\x01(\rR\x0bEGEMNDNEDIPb\x06p\
+    Notify\x12\x20\n\x0bEGEMNDNEDIP\x18\x0c\x20\x01(\rR\x0bEGEMNDNEDIPb\x06p\
     roto3\
 ";
 

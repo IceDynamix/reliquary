@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ACCBIGFANOA {
     // message fields
+    // @@protoc_insertion_point(field:ACCBIGFANOA.BJKHPADCLHI)
+    pub BJKHPADCLHI: u32,
     // @@protoc_insertion_point(field:ACCBIGFANOA.card_id)
     pub card_id: u32,
     // @@protoc_insertion_point(field:ACCBIGFANOA.PNEOOLFLNLK)
     pub PNEOOLFLNLK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ACCBIGFANOA.BJKHPADCLHI)
-    pub BJKHPADCLHI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ACCBIGFANOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl ACCBIGFANOA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJKHPADCLHI",
+            |m: &ACCBIGFANOA| { &m.BJKHPADCLHI },
+            |m: &mut ACCBIGFANOA| { &mut m.BJKHPADCLHI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "card_id",
             |m: &ACCBIGFANOA| { &m.card_id },
             |m: &mut ACCBIGFANOA| { &mut m.card_id },
@@ -62,11 +67,6 @@ impl ACCBIGFANOA {
             "PNEOOLFLNLK",
             |m: &ACCBIGFANOA| { &m.PNEOOLFLNLK },
             |m: &mut ACCBIGFANOA| { &mut m.PNEOOLFLNLK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJKHPADCLHI",
-            |m: &ACCBIGFANOA| { &m.BJKHPADCLHI },
-            |m: &mut ACCBIGFANOA| { &mut m.BJKHPADCLHI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ACCBIGFANOA>(
             "ACCBIGFANOA",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ACCBIGFANOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                88 => {
+                    self.BJKHPADCLHI = is.read_uint32()?;
+                },
+                32 => {
                     self.card_id = is.read_uint32()?;
                 },
-                50 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.PNEOOLFLNLK)?;
                 },
-                48 => {
+                80 => {
                     self.PNEOOLFLNLK.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.BJKHPADCLHI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for ACCBIGFANOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.card_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PNEOOLFLNLK);
         if self.BJKHPADCLHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BJKHPADCLHI);
+            my_size += ::protobuf::rt::uint32_size(11, self.BJKHPADCLHI);
         }
+        if self.card_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.card_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.PNEOOLFLNLK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.card_id != 0 {
-            os.write_uint32(14, self.card_id)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.PNEOOLFLNLK)?;
         if self.BJKHPADCLHI != 0 {
-            os.write_uint32(7, self.BJKHPADCLHI)?;
+            os.write_uint32(11, self.BJKHPADCLHI)?;
         }
+        if self.card_id != 0 {
+            os.write_uint32(4, self.card_id)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.PNEOOLFLNLK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for ACCBIGFANOA {
     }
 
     fn clear(&mut self) {
+        self.BJKHPADCLHI = 0;
         self.card_id = 0;
         self.PNEOOLFLNLK.clear();
-        self.BJKHPADCLHI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ACCBIGFANOA {
         static instance: ACCBIGFANOA = ACCBIGFANOA {
+            BJKHPADCLHI: 0,
             card_id: 0,
             PNEOOLFLNLK: ::std::vec::Vec::new(),
-            BJKHPADCLHI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for ACCBIGFANOA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ACCBIGFANOA.proto\"j\n\x0bACCBIGFANOA\x12\x17\n\x07card_id\x18\x0e\
-    \x20\x01(\rR\x06cardId\x12\x20\n\x0bPNEOOLFLNLK\x18\x06\x20\x03(\rR\x0bP\
-    NEOOLFLNLK\x12\x20\n\x0bBJKHPADCLHI\x18\x07\x20\x01(\rR\x0bBJKHPADCLHIb\
+    \n\x11ACCBIGFANOA.proto\"j\n\x0bACCBIGFANOA\x12\x20\n\x0bBJKHPADCLHI\x18\
+    \x0b\x20\x01(\rR\x0bBJKHPADCLHI\x12\x17\n\x07card_id\x18\x04\x20\x01(\rR\
+    \x06cardId\x12\x20\n\x0bPNEOOLFLNLK\x18\n\x20\x03(\rR\x0bPNEOOLFLNLKb\
     \x06proto3\
 ";
 

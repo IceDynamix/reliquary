@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ItemCost {
     // message oneof groups
-    pub ItemOneofCase: ::std::option::Option<item_cost::ItemOneofCase>,
+    pub item: ::std::option::Option<item_cost::Item>,
     // special fields
     // @@protoc_insertion_point(special_field:ItemCost.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl ItemCost {
         ::std::default::Default::default()
     }
 
-    // .PileItem pile_item = 11;
+    // .PileItem pile_item = 6;
 
     pub fn pile_item(&self) -> &super::PileItem::PileItem {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(ref v)) => v,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::PileItem(ref v)) => v,
             _ => <super::PileItem::PileItem as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_pile_item(&mut self) {
-        self.ItemOneofCase = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
     }
 
     pub fn has_pile_item(&self) -> bool {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(..)) => true,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::PileItem(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_pile_item(&mut self, v: super::PileItem::PileItem) {
-        self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(v))
+        self.item = ::std::option::Option::Some(item_cost::Item::PileItem(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_pile_item(&mut self) -> &mut super::PileItem::PileItem {
-        if let ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(_)) = self.ItemOneofCase {
+        if let ::std::option::Option::Some(item_cost::Item::PileItem(_)) = self.item {
         } else {
-            self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(super::PileItem::PileItem::new()));
+            self.item = ::std::option::Option::Some(item_cost::Item::PileItem(super::PileItem::PileItem::new()));
         }
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(ref mut v)) => v,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::PileItem(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl ItemCost {
     // Take field
     pub fn take_pile_item(&mut self) -> super::PileItem::PileItem {
         if self.has_pile_item() {
-            match self.ItemOneofCase.take() {
-                ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(v)) => v,
+            match self.item.take() {
+                ::std::option::Option::Some(item_cost::Item::PileItem(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,51 +97,51 @@ impl ItemCost {
     // uint32 equipment_unique_id = 2;
 
     pub fn equipment_unique_id(&self) -> u32 {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::EquipmentUniqueId(v)) => v,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_equipment_unique_id(&mut self) {
-        self.ItemOneofCase = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
     }
 
     pub fn has_equipment_unique_id(&self) -> bool {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::EquipmentUniqueId(..)) => true,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_equipment_unique_id(&mut self, v: u32) {
-        self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::EquipmentUniqueId(v))
+        self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(v))
     }
 
-    // uint32 relic_unique_id = 6;
+    // uint32 relic_unique_id = 7;
 
     pub fn relic_unique_id(&self) -> u32 {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::RelicUniqueId(v)) => v,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::RelicUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_relic_unique_id(&mut self) {
-        self.ItemOneofCase = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
     }
 
     pub fn has_relic_unique_id(&self) -> bool {
-        match self.ItemOneofCase {
-            ::std::option::Option::Some(item_cost::ItemOneofCase::RelicUniqueId(..)) => true,
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::RelicUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_relic_unique_id(&mut self, v: u32) {
-        self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::RelicUniqueId(v))
+        self.item = ::std::option::Option::Some(item_cost::Item::RelicUniqueId(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
@@ -166,7 +166,7 @@ impl ItemCost {
             ItemCost::relic_unique_id,
             ItemCost::set_relic_unique_id,
         ));
-        oneofs.push(item_cost::ItemOneofCase::generated_oneof_descriptor_data());
+        oneofs.push(item_cost::Item::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ItemCost>(
             "ItemCost",
             fields,
@@ -185,14 +185,14 @@ impl ::protobuf::Message for ItemCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::PileItem(is.read_message()?));
+                50 => {
+                    self.item = ::std::option::Option::Some(item_cost::Item::PileItem(is.read_message()?));
                 },
                 16 => {
-                    self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::EquipmentUniqueId(is.read_uint32()?));
+                    self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(is.read_uint32()?));
                 },
-                48 => {
-                    self.ItemOneofCase = ::std::option::Option::Some(item_cost::ItemOneofCase::RelicUniqueId(is.read_uint32()?));
+                56 => {
+                    self.item = ::std::option::Option::Some(item_cost::Item::RelicUniqueId(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -206,17 +206,17 @@ impl ::protobuf::Message for ItemCost {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.ItemOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.item {
             match v {
-                &item_cost::ItemOneofCase::PileItem(ref v) => {
+                &item_cost::Item::PileItem(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &item_cost::ItemOneofCase::EquipmentUniqueId(v) => {
+                &item_cost::Item::EquipmentUniqueId(v) => {
                     my_size += ::protobuf::rt::uint32_size(2, v);
                 },
-                &item_cost::ItemOneofCase::RelicUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                &item_cost::Item::RelicUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
             };
         }
@@ -226,16 +226,16 @@ impl ::protobuf::Message for ItemCost {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.ItemOneofCase {
+        if let ::std::option::Option::Some(ref v) = self.item {
             match v {
-                &item_cost::ItemOneofCase::PileItem(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &item_cost::Item::PileItem(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &item_cost::ItemOneofCase::EquipmentUniqueId(v) => {
+                &item_cost::Item::EquipmentUniqueId(v) => {
                     os.write_uint32(2, v)?;
                 },
-                &item_cost::ItemOneofCase::RelicUniqueId(v) => {
-                    os.write_uint32(6, v)?;
+                &item_cost::Item::RelicUniqueId(v) => {
+                    os.write_uint32(7, v)?;
                 },
             };
         }
@@ -256,15 +256,15 @@ impl ::protobuf::Message for ItemCost {
     }
 
     fn clear(&mut self) {
-        self.ItemOneofCase = ::std::option::Option::None;
-        self.ItemOneofCase = ::std::option::Option::None;
-        self.ItemOneofCase = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ItemCost {
         static instance: ItemCost = ItemCost {
-            ItemOneofCase: ::std::option::Option::None,
+            item: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,8 +293,8 @@ pub mod item_cost {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ItemCost.ItemOneofCase)
-    pub enum ItemOneofCase {
+    // @@protoc_insertion_point(oneof:ItemCost.item)
+    pub enum Item {
         // @@protoc_insertion_point(oneof_field:ItemCost.pile_item)
         PileItem(super::super::PileItem::PileItem),
         // @@protoc_insertion_point(oneof_field:ItemCost.equipment_unique_id)
@@ -303,29 +303,29 @@ pub mod item_cost {
         RelicUniqueId(u32),
     }
 
-    impl ::protobuf::Oneof for ItemOneofCase {
+    impl ::protobuf::Oneof for Item {
     }
 
-    impl ::protobuf::OneofFull for ItemOneofCase {
+    impl ::protobuf::OneofFull for Item {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ItemCost as ::protobuf::MessageFull>::descriptor().oneof_by_name("ItemOneofCase").unwrap()).clone()
+            descriptor.get(|| <super::ItemCost as ::protobuf::MessageFull>::descriptor().oneof_by_name("item").unwrap()).clone()
         }
     }
 
-    impl ItemOneofCase {
+    impl Item {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ItemOneofCase>("ItemOneofCase")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<Item>("item")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\xa1\x01\n\x08ItemCost\x12(\
-    \n\tpile_item\x18\x0b\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\
+    \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\x98\x01\n\x08ItemCost\x12(\
+    \n\tpile_item\x18\x06\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\
     \x13equipment_unique_id\x18\x02\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\
-    \n\x0frelic_unique_id\x18\x06\x20\x01(\rH\0R\rrelicUniqueIdB\x0f\n\rItem\
-    OneofCaseb\x06proto3\
+    \n\x0frelic_unique_id\x18\x07\x20\x01(\rH\0R\rrelicUniqueIdB\x06\n\x04it\
+    emb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

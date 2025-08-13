@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKCPJJNOALN)?;
                 },
-                80 => {
+                96 => {
                     self.KFEJGFNONIP = is.read_bool()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PKCPJJNOALN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.KFEJGFNONIP != false {
-            os.write_bool(10, self.KFEJGFNONIP)?;
+            os.write_bool(12, self.KFEJGFNONIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeKilledPunkLordMonsterScoreCsReq 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeKilledPunkLordMonsterScoreCsReq.proto\x1a\x18PunkLordMonsterKey.p\
     roto\"~\n#TakeKilledPunkLordMonsterScoreCsReq\x125\n\x0bPKCPJJNOALN\x18\
-    \x08\x20\x01(\x0b2\x13.PunkLordMonsterKeyR\x0bPKCPJJNOALN\x12\x20\n\x0bK\
-    FEJGFNONIP\x18\n\x20\x01(\x08R\x0bKFEJGFNONIPb\x06proto3\
+    \x03\x20\x01(\x0b2\x13.PunkLordMonsterKeyR\x0bPKCPJJNOALN\x12\x20\n\x0bK\
+    FEJGFNONIP\x18\x0c\x20\x01(\x08R\x0bKFEJGFNONIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

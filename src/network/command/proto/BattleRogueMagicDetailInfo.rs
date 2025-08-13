@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleRogueMagicDetailInfo {
     // message oneof groups
-    pub GKFHBNEHGEK: ::std::option::Option<battle_rogue_magic_detail_info::GKFHBNEHGEK>,
+    pub ECOEKHPGMEA: ::std::option::Option<battle_rogue_magic_detail_info::ECOEKHPGMEA>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleRogueMagicDetailInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,36 +48,36 @@ impl BattleRogueMagicDetailInfo {
     // .BattleRogueMagicItemInfo battle_magic_item_info = 1;
 
     pub fn battle_magic_item_info(&self) -> &super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo {
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(ref v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(ref v)) => v,
             _ => <super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_battle_magic_item_info(&mut self) {
-        self.GKFHBNEHGEK = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
     }
 
     pub fn has_battle_magic_item_info(&self) -> bool {
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(..)) => true,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_battle_magic_item_info(&mut self, v: super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo) {
-        self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(v))
+        self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_battle_magic_item_info(&mut self) -> &mut super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo {
-        if let ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(_)) = self.GKFHBNEHGEK {
+        if let ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(_)) = self.ECOEKHPGMEA {
         } else {
-            self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo::new()));
+            self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo::new()));
         }
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(ref mut v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl BattleRogueMagicDetailInfo {
     // Take field
     pub fn take_battle_magic_item_info(&mut self) -> super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo {
         if self.has_battle_magic_item_info() {
-            match self.GKFHBNEHGEK.take() {
-                ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(v)) => v,
+            match self.ECOEKHPGMEA.take() {
+                ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,36 +97,36 @@ impl BattleRogueMagicDetailInfo {
     // .FKOCBOOCDNL ENNPJGLCBEM = 2;
 
     pub fn ENNPJGLCBEM(&self) -> &super::FKOCBOOCDNL::FKOCBOOCDNL {
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(ref v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(ref v)) => v,
             _ => <super::FKOCBOOCDNL::FKOCBOOCDNL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ENNPJGLCBEM(&mut self) {
-        self.GKFHBNEHGEK = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
     }
 
     pub fn has_ENNPJGLCBEM(&self) -> bool {
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(..)) => true,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ENNPJGLCBEM(&mut self, v: super::FKOCBOOCDNL::FKOCBOOCDNL) {
-        self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(v))
+        self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ENNPJGLCBEM(&mut self) -> &mut super::FKOCBOOCDNL::FKOCBOOCDNL {
-        if let ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(_)) = self.GKFHBNEHGEK {
+        if let ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(_)) = self.ECOEKHPGMEA {
         } else {
-            self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(super::FKOCBOOCDNL::FKOCBOOCDNL::new()));
+            self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(super::FKOCBOOCDNL::FKOCBOOCDNL::new()));
         }
-        match self.GKFHBNEHGEK {
-            ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(ref mut v)) => v,
+        match self.ECOEKHPGMEA {
+            ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl BattleRogueMagicDetailInfo {
     // Take field
     pub fn take_ENNPJGLCBEM(&mut self) -> super::FKOCBOOCDNL::FKOCBOOCDNL {
         if self.has_ENNPJGLCBEM() {
-            match self.GKFHBNEHGEK.take() {
-                ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(v)) => v,
+            match self.ECOEKHPGMEA.take() {
+                ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl BattleRogueMagicDetailInfo {
             BattleRogueMagicDetailInfo::mut_ENNPJGLCBEM,
             BattleRogueMagicDetailInfo::set_ENNPJGLCBEM,
         ));
-        oneofs.push(battle_rogue_magic_detail_info::GKFHBNEHGEK::generated_oneof_descriptor_data());
+        oneofs.push(battle_rogue_magic_detail_info::ECOEKHPGMEA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleRogueMagicDetailInfo>(
             "BattleRogueMagicDetailInfo",
             fields,
@@ -180,10 +180,10 @@ impl ::protobuf::Message for BattleRogueMagicDetailInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(is.read_message()?));
+                    self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(is.read_message()?));
                 },
                 18 => {
-                    self.GKFHBNEHGEK = ::std::option::Option::Some(battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(is.read_message()?));
+                    self.ECOEKHPGMEA = ::std::option::Option::Some(battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for BattleRogueMagicDetailInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.GKFHBNEHGEK {
+        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
-                &battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(ref v) => {
+                &battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(ref v) => {
+                &battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,12 +215,12 @@ impl ::protobuf::Message for BattleRogueMagicDetailInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.GKFHBNEHGEK {
+        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
-                &battle_rogue_magic_detail_info::GKFHBNEHGEK::BattleMagicItemInfo(ref v) => {
+                &battle_rogue_magic_detail_info::ECOEKHPGMEA::BattleMagicItemInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &battle_rogue_magic_detail_info::GKFHBNEHGEK::ENNPJGLCBEM(ref v) => {
+                &battle_rogue_magic_detail_info::ECOEKHPGMEA::ENNPJGLCBEM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
@@ -242,14 +242,14 @@ impl ::protobuf::Message for BattleRogueMagicDetailInfo {
     }
 
     fn clear(&mut self) {
-        self.GKFHBNEHGEK = ::std::option::Option::None;
-        self.GKFHBNEHGEK = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.ECOEKHPGMEA = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleRogueMagicDetailInfo {
         static instance: BattleRogueMagicDetailInfo = BattleRogueMagicDetailInfo {
-            GKFHBNEHGEK: ::std::option::Option::None,
+            ECOEKHPGMEA: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod battle_rogue_magic_detail_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:BattleRogueMagicDetailInfo.GKFHBNEHGEK)
-    pub enum GKFHBNEHGEK {
+    // @@protoc_insertion_point(oneof:BattleRogueMagicDetailInfo.ECOEKHPGMEA)
+    pub enum ECOEKHPGMEA {
         // @@protoc_insertion_point(oneof_field:BattleRogueMagicDetailInfo.battle_magic_item_info)
         BattleMagicItemInfo(super::super::BattleRogueMagicItemInfo::BattleRogueMagicItemInfo),
         // @@protoc_insertion_point(oneof_field:BattleRogueMagicDetailInfo.ENNPJGLCBEM)
         ENNPJGLCBEM(super::super::FKOCBOOCDNL::FKOCBOOCDNL),
     }
 
-    impl ::protobuf::Oneof for GKFHBNEHGEK {
+    impl ::protobuf::Oneof for ECOEKHPGMEA {
     }
 
-    impl ::protobuf::OneofFull for GKFHBNEHGEK {
+    impl ::protobuf::OneofFull for ECOEKHPGMEA {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::BattleRogueMagicDetailInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("GKFHBNEHGEK").unwrap()).clone()
+            descriptor.get(|| <super::BattleRogueMagicDetailInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("ECOEKHPGMEA").unwrap()).clone()
         }
     }
 
-    impl GKFHBNEHGEK {
+    impl ECOEKHPGMEA {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GKFHBNEHGEK>("GKFHBNEHGEK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ECOEKHPGMEA>("ECOEKHPGMEA")
         }
     }
 }
@@ -308,7 +308,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     roto\x1a\x11FKOCBOOCDNL.proto\"\xaf\x01\n\x1aBattleRogueMagicDetailInfo\
     \x12P\n\x16battle_magic_item_info\x18\x01\x20\x01(\x0b2\x19.BattleRogueM\
     agicItemInfoH\0R\x13battleMagicItemInfo\x120\n\x0bENNPJGLCBEM\x18\x02\
-    \x20\x01(\x0b2\x0c.FKOCBOOCDNLH\0R\x0bENNPJGLCBEMB\r\n\x0bGKFHBNEHGEKb\
+    \x20\x01(\x0b2\x0c.FKOCBOOCDNLH\0R\x0bENNPJGLCBEMB\r\n\x0bECOEKHPGMEAb\
     \x06proto3\
 ";
 

@@ -86,13 +86,13 @@ impl ::protobuf::Message for OGFIODPILEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.DMKLNJBOABO = is.read_bool()?;
                 },
-                32 => {
+                120 => {
                     self.AKHEILMNDHJ = is.read_bool()?;
                 },
-                16 => {
+                32 => {
                     self.CACEKELNMIN = is.read_uint32()?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for OGFIODPILEL {
             my_size += 1 + 1;
         }
         if self.CACEKELNMIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CACEKELNMIN);
+            my_size += ::protobuf::rt::uint32_size(4, self.CACEKELNMIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for OGFIODPILEL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DMKLNJBOABO != false {
-            os.write_bool(14, self.DMKLNJBOABO)?;
+            os.write_bool(3, self.DMKLNJBOABO)?;
         }
         if self.AKHEILMNDHJ != false {
-            os.write_bool(4, self.AKHEILMNDHJ)?;
+            os.write_bool(15, self.AKHEILMNDHJ)?;
         }
         if self.CACEKELNMIN != 0 {
-            os.write_uint32(2, self.CACEKELNMIN)?;
+            os.write_uint32(4, self.CACEKELNMIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for OGFIODPILEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OGFIODPILEL.proto\"s\n\x0bOGFIODPILEL\x12\x20\n\x0bDMKLNJBOABO\x18\
-    \x0e\x20\x01(\x08R\x0bDMKLNJBOABO\x12\x20\n\x0bAKHEILMNDHJ\x18\x04\x20\
-    \x01(\x08R\x0bAKHEILMNDHJ\x12\x20\n\x0bCACEKELNMIN\x18\x02\x20\x01(\rR\
+    \x03\x20\x01(\x08R\x0bDMKLNJBOABO\x12\x20\n\x0bAKHEILMNDHJ\x18\x0f\x20\
+    \x01(\x08R\x0bAKHEILMNDHJ\x12\x20\n\x0bCACEKELNMIN\x18\x04\x20\x01(\rR\
     \x0bCACEKELNMINb\x06proto3\
 ";
 

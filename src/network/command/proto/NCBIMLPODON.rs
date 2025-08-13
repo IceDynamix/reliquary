@@ -79,7 +79,7 @@ impl ::protobuf::Message for NCBIMLPODON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_list)?;
                 },
                 32 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for NCBIMLPODON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.black_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.IAHOPFNPFLN != false {
             os.write_bool(4, self.IAHOPFNPFLN)?;
@@ -167,9 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NCBIMLPODON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NCBIMLPODON.proto\x1a\x11MENPBGGOGMC.proto\"\\\n\x0bNCBIMLPODON\
-    \x12+\n\nblack_list\x18\x01\x20\x01(\x0b2\x0c.MENPBGGOGMCR\tblackList\
-    \x12\x20\n\x0bIAHOPFNPFLN\x18\x04\x20\x01(\x08R\x0bIAHOPFNPFLNb\x06proto\
-    3\
+    \x12+\n\nblack_list\x18\t\x20\x01(\x0b2\x0c.MENPBGGOGMCR\tblackList\x12\
+    \x20\n\x0bIAHOPFNPFLN\x18\x04\x20\x01(\x08R\x0bIAHOPFNPFLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AEFFJLGFAMH {
     // message fields
-    // @@protoc_insertion_point(field:AEFFJLGFAMH.CLMFNAHFNLL)
-    pub CLMFNAHFNLL: ::protobuf::MessageField<super::JBIHOCIOANH::JBIHOCIOANH>,
+    // @@protoc_insertion_point(field:AEFFJLGFAMH.update_scepter_info)
+    pub update_scepter_info: ::protobuf::MessageField<super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:AEFFJLGFAMH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl AEFFJLGFAMH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBIHOCIOANH::JBIHOCIOANH>(
-            "CLMFNAHFNLL",
-            |m: &AEFFJLGFAMH| { &m.CLMFNAHFNLL },
-            |m: &mut AEFFJLGFAMH| { &mut m.CLMFNAHFNLL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo>(
+            "update_scepter_info",
+            |m: &AEFFJLGFAMH| { &m.update_scepter_info },
+            |m: &mut AEFFJLGFAMH| { &mut m.update_scepter_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AEFFJLGFAMH>(
             "AEFFJLGFAMH",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for AEFFJLGFAMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLMFNAHFNLL)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.update_scepter_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for AEFFJLGFAMH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CLMFNAHFNLL.as_ref() {
+        if let Some(v) = self.update_scepter_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AEFFJLGFAMH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CLMFNAHFNLL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.update_scepter_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AEFFJLGFAMH {
     }
 
     fn clear(&mut self) {
-        self.CLMFNAHFNLL.clear();
+        self.update_scepter_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AEFFJLGFAMH {
         static instance: AEFFJLGFAMH = AEFFJLGFAMH {
-            CLMFNAHFNLL: ::protobuf::MessageField::none(),
+            update_scepter_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for AEFFJLGFAMH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AEFFJLGFAMH.proto\x1a\x11JBIHOCIOANH.proto\"=\n\x0bAEFFJLGFAMH\x12\
-    .\n\x0bCLMFNAHFNLL\x18\x04\x20\x01(\x0b2\x0c.JBIHOCIOANHR\x0bCLMFNAHFNLL\
-    b\x06proto3\
+    \n\x11AEFFJLGFAMH.proto\x1a\x1fRogueMagicGameScepterInfo.proto\"Y\n\x0bA\
+    EFFJLGFAMH\x12J\n\x13update_scepter_info\x18\t\x20\x01(\x0b2\x1a.RogueMa\
+    gicGameScepterInfoR\x11updateScepterInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JBIHOCIOANH::file_descriptor().clone());
+            deps.push(super::RogueMagicGameScepterInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AEFFJLGFAMH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,7 +72,7 @@ impl ::protobuf::Message for LOLENBEAHBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FATE_SOURCE_TYPE_HOUGU)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LOLENBEAHBI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FATE_SOURCE_TYPE_HOUGU.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for LOLENBEAHBI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LOLENBEAHBI.proto\x1a\x11LOMJKOBDJFP.proto\"P\n\x0bLOLENBEAHBI\x12\
-    A\n\x16FATE_SOURCE_TYPE_HOUGU\x18\t\x20\x01(\x0b2\x0c.LOMJKOBDJFPR\x13FA\
-    TESOURCETYPEHOUGUb\x06proto3\
+    A\n\x16FATE_SOURCE_TYPE_HOUGU\x18\x0c\x20\x01(\x0b2\x0c.LOMJKOBDJFPR\x13\
+    FATESOURCETYPEHOUGUb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

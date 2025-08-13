@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSettleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::HFIPPDGGJOL::HFIPPDGGJOL>,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.MGCFOGLKMCH)
-    pub MGCFOGLKMCH: ::protobuf::MessageField<super::HCJGPMDGBJO::HCJGPMDGBJO>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.tourn_finish_info)
     pub tourn_finish_info: ::protobuf::MessageField<super::OGNBIGKHHBM::OGNBIGKHHBM>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.MGCFOGLKMCH)
+    pub MGCFOGLKMCH: ::protobuf::MessageField<super::HCJGPMDGBJO::HCJGPMDGBJO>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.GFONFDBFBNA)
     pub GFONFDBFBNA: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.retcode)
@@ -57,20 +57,20 @@ impl RogueMagicSettleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFIPPDGGJOL::HFIPPDGGJOL>(
-            "LCOCLENJJAI",
-            |m: &RogueMagicSettleScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.LCOCLENJJAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCJGPMDGBJO::HCJGPMDGBJO>(
-            "MGCFOGLKMCH",
-            |m: &RogueMagicSettleScRsp| { &m.MGCFOGLKMCH },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.MGCFOGLKMCH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueMagicSettleScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGNBIGKHHBM::OGNBIGKHHBM>(
             "tourn_finish_info",
             |m: &RogueMagicSettleScRsp| { &m.tourn_finish_info },
             |m: &mut RogueMagicSettleScRsp| { &mut m.tourn_finish_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCJGPMDGBJO::HCJGPMDGBJO>(
+            "MGCFOGLKMCH",
+            |m: &RogueMagicSettleScRsp| { &m.MGCFOGLKMCH },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.MGCFOGLKMCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "GFONFDBFBNA",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGCFOGLKMCH)?;
-                },
                 98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
-                10 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGCFOGLKMCH)?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFONFDBFBNA)?;
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,15 +127,15 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -144,7 +144,7 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.tourn_finish_info.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
+        if let Some(v) = self.tourn_finish_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
         if let Some(v) = self.GFONFDBFBNA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn clear(&mut self) {
-        self.LCOCLENJJAI.clear();
-        self.MGCFOGLKMCH.clear();
+        self.rogue_tourn_cur_scene_info.clear();
         self.tourn_finish_info.clear();
+        self.MGCFOGLKMCH.clear();
         self.GFONFDBFBNA.clear();
         self.retcode = 0;
         self.special_fields.clear();
@@ -194,9 +194,9 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
 
     fn default_instance() -> &'static RogueMagicSettleScRsp {
         static instance: RogueMagicSettleScRsp = RogueMagicSettleScRsp {
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
-            MGCFOGLKMCH: ::protobuf::MessageField::none(),
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             tourn_finish_info: ::protobuf::MessageField::none(),
+            MGCFOGLKMCH: ::protobuf::MessageField::none(),
             GFONFDBFBNA: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -223,14 +223,15 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSettleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11HCJGPMDGBJO.proto\x1a\x11HFIPPD\
-    GGJOL.proto\x1a\x0eItemList.proto\x1a\x11OGNBIGKHHBM.proto\"\xf8\x01\n\
-    \x15RogueMagicSettleScRsp\x12.\n\x0bLCOCLENJJAI\x18\x06\x20\x01(\x0b2\
-    \x0c.HFIPPDGGJOLR\x0bLCOCLENJJAI\x12.\n\x0bMGCFOGLKMCH\x18\r\x20\x01(\
-    \x0b2\x0c.HCJGPMDGBJOR\x0bMGCFOGLKMCH\x128\n\x11tourn_finish_info\x18\
-    \x0c\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\x0ftournFinishInfo\x12+\n\x0bGFONFDB\
-    FBNA\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBNA\x12\x18\n\x07retco\
-    de\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11HCJGPMDGBJO.proto\x1a\x0eItemLi\
+    st.proto\x1a\x11OGNBIGKHHBM.proto\x1a\x1cRogueMagicCurSceneInfo.proto\"\
+    \x9d\x02\n\x15RogueMagicSettleScRsp\x12S\n\x1arogue_tourn_cur_scene_info\
+    \x18\x0c\x20\x01(\x0b2\x17.RogueMagicCurSceneInfoR\x16rogueTournCurScene\
+    Info\x128\n\x11tourn_finish_info\x18\x08\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\
+    \x0ftournFinishInfo\x12.\n\x0bMGCFOGLKMCH\x18\n\x20\x01(\x0b2\x0c.HCJGPM\
+    DGBJOR\x0bMGCFOGLKMCH\x12+\n\x0bGFONFDBFBNA\x18\r\x20\x01(\x0b2\t.ItemLi\
+    stR\x0bGFONFDBFBNA\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -249,9 +250,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::HCJGPMDGBJO::file_descriptor().clone());
-            deps.push(super::HFIPPDGGJOL::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             deps.push(super::OGNBIGKHHBM::file_descriptor().clone());
+            deps.push(super::RogueMagicCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicSettleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

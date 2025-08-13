@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFAPKCNAPID {
     // message fields
-    // @@protoc_insertion_point(field:FFAPKCNAPID.HLKPNECAMBL)
-    pub HLKPNECAMBL: u32,
-    // @@protoc_insertion_point(field:FFAPKCNAPID.AIIEKLILMJC)
-    pub AIIEKLILMJC: i64,
     // @@protoc_insertion_point(field:FFAPKCNAPID.GEDGLNCPGGN)
     pub GEDGLNCPGGN: ::std::vec::Vec<super::DEINADPEHKE::DEINADPEHKE>,
-    // @@protoc_insertion_point(field:FFAPKCNAPID.IEMNJHLFGKD)
-    pub IEMNJHLFGKD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:FFAPKCNAPID.PBFHDNBGMBP)
-    pub PBFHDNBGMBP: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
-    // @@protoc_insertion_point(field:FFAPKCNAPID.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:FFAPKCNAPID.AOAEFEIBBMF)
     pub AOAEFEIBBMF: u32,
+    // @@protoc_insertion_point(field:FFAPKCNAPID.IEMNJHLFGKD)
+    pub IEMNJHLFGKD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FFAPKCNAPID.AIIEKLILMJC)
+    pub AIIEKLILMJC: i64,
+    // @@protoc_insertion_point(field:FFAPKCNAPID.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:FFAPKCNAPID.OBBOCCNFLOL)
     pub OBBOCCNFLOL: ::std::vec::Vec<super::GJIPJNGNFEJ::GJIPJNGNFEJ>,
+    // @@protoc_insertion_point(field:FFAPKCNAPID.HLKPNECAMBL)
+    pub HLKPNECAMBL: u32,
+    // @@protoc_insertion_point(field:FFAPKCNAPID.PBFHDNBGMBP)
+    pub PBFHDNBGMBP: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
     // special fields
     // @@protoc_insertion_point(special_field:FFAPKCNAPID.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,35 +63,10 @@ impl FFAPKCNAPID {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLKPNECAMBL",
-            |m: &FFAPKCNAPID| { &m.HLKPNECAMBL },
-            |m: &mut FFAPKCNAPID| { &mut m.HLKPNECAMBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIIEKLILMJC",
-            |m: &FFAPKCNAPID| { &m.AIIEKLILMJC },
-            |m: &mut FFAPKCNAPID| { &mut m.AIIEKLILMJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GEDGLNCPGGN",
             |m: &FFAPKCNAPID| { &m.GEDGLNCPGGN },
             |m: &mut FFAPKCNAPID| { &mut m.GEDGLNCPGGN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IEMNJHLFGKD",
-            |m: &FFAPKCNAPID| { &m.IEMNJHLFGKD },
-            |m: &mut FFAPKCNAPID| { &mut m.IEMNJHLFGKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBFHDNBGMBP",
-            |m: &FFAPKCNAPID| { &m.PBFHDNBGMBP },
-            |m: &mut FFAPKCNAPID| { &mut m.PBFHDNBGMBP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &FFAPKCNAPID| { &m.uid },
-            |m: &mut FFAPKCNAPID| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AOAEFEIBBMF",
@@ -99,9 +74,34 @@ impl FFAPKCNAPID {
             |m: &mut FFAPKCNAPID| { &mut m.AOAEFEIBBMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IEMNJHLFGKD",
+            |m: &FFAPKCNAPID| { &m.IEMNJHLFGKD },
+            |m: &mut FFAPKCNAPID| { &mut m.IEMNJHLFGKD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIIEKLILMJC",
+            |m: &FFAPKCNAPID| { &m.AIIEKLILMJC },
+            |m: &mut FFAPKCNAPID| { &mut m.AIIEKLILMJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &FFAPKCNAPID| { &m.uid },
+            |m: &mut FFAPKCNAPID| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OBBOCCNFLOL",
             |m: &FFAPKCNAPID| { &m.OBBOCCNFLOL },
             |m: &mut FFAPKCNAPID| { &mut m.OBBOCCNFLOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HLKPNECAMBL",
+            |m: &FFAPKCNAPID| { &m.HLKPNECAMBL },
+            |m: &mut FFAPKCNAPID| { &mut m.HLKPNECAMBL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBFHDNBGMBP",
+            |m: &FFAPKCNAPID| { &m.PBFHDNBGMBP },
+            |m: &mut FFAPKCNAPID| { &mut m.PBFHDNBGMBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFAPKCNAPID>(
             "FFAPKCNAPID",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for FFAPKCNAPID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.HLKPNECAMBL = is.read_uint32()?;
-                },
-                112 => {
-                    self.AIIEKLILMJC = is.read_int64()?;
-                },
-                58 => {
+                114 => {
                     self.GEDGLNCPGGN.push(is.read_message()?);
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IEMNJHLFGKD)?;
-                },
-                104 => {
-                    self.IEMNJHLFGKD.push(is.read_uint32()?);
-                },
-                34 => {
-                    self.PBFHDNBGMBP.push(is.read_message()?);
-                },
-                48 => {
-                    self.uid = is.read_uint32()?;
-                },
-                88 => {
+                56 => {
                     self.AOAEFEIBBMF = is.read_uint32()?;
                 },
-                18 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IEMNJHLFGKD)?;
+                },
+                48 => {
+                    self.IEMNJHLFGKD.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.AIIEKLILMJC = is.read_int64()?;
+                },
+                8 => {
+                    self.uid = is.read_uint32()?;
+                },
+                74 => {
                     self.OBBOCCNFLOL.push(is.read_message()?);
+                },
+                32 => {
+                    self.HLKPNECAMBL = is.read_uint32()?;
+                },
+                42 => {
+                    self.PBFHDNBGMBP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,28 +160,28 @@ impl ::protobuf::Message for FFAPKCNAPID {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLKPNECAMBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HLKPNECAMBL);
-        }
-        if self.AIIEKLILMJC != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.AIIEKLILMJC);
-        }
         for value in &self.GEDGLNCPGGN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.IEMNJHLFGKD);
-        for value in &self.PBFHDNBGMBP {
+        if self.AOAEFEIBBMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.AOAEFEIBBMF);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.IEMNJHLFGKD);
+        if self.AIIEKLILMJC != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.AIIEKLILMJC);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        }
+        for value in &self.OBBOCCNFLOL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+        if self.HLKPNECAMBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HLKPNECAMBL);
         }
-        if self.AOAEFEIBBMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AOAEFEIBBMF);
-        }
-        for value in &self.OBBOCCNFLOL {
+        for value in &self.PBFHDNBGMBP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -191,27 +191,27 @@ impl ::protobuf::Message for FFAPKCNAPID {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLKPNECAMBL != 0 {
-            os.write_uint32(10, self.HLKPNECAMBL)?;
-        }
-        if self.AIIEKLILMJC != 0 {
-            os.write_int64(14, self.AIIEKLILMJC)?;
-        }
         for v in &self.GEDGLNCPGGN {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        os.write_repeated_packed_uint32(13, &self.IEMNJHLFGKD)?;
-        for v in &self.PBFHDNBGMBP {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.uid != 0 {
-            os.write_uint32(6, self.uid)?;
-        }
         if self.AOAEFEIBBMF != 0 {
-            os.write_uint32(11, self.AOAEFEIBBMF)?;
+            os.write_uint32(7, self.AOAEFEIBBMF)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.IEMNJHLFGKD)?;
+        if self.AIIEKLILMJC != 0 {
+            os.write_int64(11, self.AIIEKLILMJC)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
         }
         for v in &self.OBBOCCNFLOL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.HLKPNECAMBL != 0 {
+            os.write_uint32(4, self.HLKPNECAMBL)?;
+        }
+        for v in &self.PBFHDNBGMBP {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,27 +230,27 @@ impl ::protobuf::Message for FFAPKCNAPID {
     }
 
     fn clear(&mut self) {
-        self.HLKPNECAMBL = 0;
-        self.AIIEKLILMJC = 0;
         self.GEDGLNCPGGN.clear();
-        self.IEMNJHLFGKD.clear();
-        self.PBFHDNBGMBP.clear();
-        self.uid = 0;
         self.AOAEFEIBBMF = 0;
+        self.IEMNJHLFGKD.clear();
+        self.AIIEKLILMJC = 0;
+        self.uid = 0;
         self.OBBOCCNFLOL.clear();
+        self.HLKPNECAMBL = 0;
+        self.PBFHDNBGMBP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFAPKCNAPID {
         static instance: FFAPKCNAPID = FFAPKCNAPID {
-            HLKPNECAMBL: 0,
-            AIIEKLILMJC: 0,
             GEDGLNCPGGN: ::std::vec::Vec::new(),
-            IEMNJHLFGKD: ::std::vec::Vec::new(),
-            PBFHDNBGMBP: ::std::vec::Vec::new(),
-            uid: 0,
             AOAEFEIBBMF: 0,
+            IEMNJHLFGKD: ::std::vec::Vec::new(),
+            AIIEKLILMJC: 0,
+            uid: 0,
             OBBOCCNFLOL: ::std::vec::Vec::new(),
+            HLKPNECAMBL: 0,
+            PBFHDNBGMBP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,14 +276,15 @@ impl ::protobuf::reflect::ProtobufValue for FFAPKCNAPID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFAPKCNAPID.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11DEINADPEHKE.prot\
-    o\x1a\x11GJIPJNGNFEJ.proto\"\xb7\x02\n\x0bFFAPKCNAPID\x12\x20\n\x0bHLKPN\
-    ECAMBL\x18\n\x20\x01(\rR\x0bHLKPNECAMBL\x12\x20\n\x0bAIIEKLILMJC\x18\x0e\
-    \x20\x01(\x03R\x0bAIIEKLILMJC\x12.\n\x0bGEDGLNCPGGN\x18\x07\x20\x03(\x0b\
-    2\x0c.DEINADPEHKER\x0bGEDGLNCPGGN\x12\x20\n\x0bIEMNJHLFGKD\x18\r\x20\x03\
-    (\rR\x0bIEMNJHLFGKD\x12.\n\x0bPBFHDNBGMBP\x18\x04\x20\x03(\x0b2\x0c.CEOD\
-    DCEIDDLR\x0bPBFHDNBGMBP\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x12\
-    \x20\n\x0bAOAEFEIBBMF\x18\x0b\x20\x01(\rR\x0bAOAEFEIBBMF\x12.\n\x0bOBBOC\
-    CNFLOL\x18\x02\x20\x03(\x0b2\x0c.GJIPJNGNFEJR\x0bOBBOCCNFLOLb\x06proto3\
+    o\x1a\x11GJIPJNGNFEJ.proto\"\xb7\x02\n\x0bFFAPKCNAPID\x12.\n\x0bGEDGLNCP\
+    GGN\x18\x0e\x20\x03(\x0b2\x0c.DEINADPEHKER\x0bGEDGLNCPGGN\x12\x20\n\x0bA\
+    OAEFEIBBMF\x18\x07\x20\x01(\rR\x0bAOAEFEIBBMF\x12\x20\n\x0bIEMNJHLFGKD\
+    \x18\x06\x20\x03(\rR\x0bIEMNJHLFGKD\x12\x20\n\x0bAIIEKLILMJC\x18\x0b\x20\
+    \x01(\x03R\x0bAIIEKLILMJC\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\
+    \x12.\n\x0bOBBOCCNFLOL\x18\t\x20\x03(\x0b2\x0c.GJIPJNGNFEJR\x0bOBBOCCNFL\
+    OL\x12\x20\n\x0bHLKPNECAMBL\x18\x04\x20\x01(\rR\x0bHLKPNECAMBL\x12.\n\
+    \x0bPBFHDNBGMBP\x18\x05\x20\x03(\x0b2\x0c.CEODDCEIDDLR\x0bPBFHDNBGMBPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

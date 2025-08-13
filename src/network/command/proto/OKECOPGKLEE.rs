@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct OKECOPGKLEE {
     // message fields
     // @@protoc_insertion_point(field:OKECOPGKLEE.PMGJICCHHDL)
-    pub PMGJICCHHDL: ::protobuf::MessageField<super::JFGFLGBLCAJ::JFGFLGBLCAJ>,
+    pub PMGJICCHHDL: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OKECOPGKLEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl OKECOPGKLEE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFGFLGBLCAJ::JFGFLGBLCAJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>(
             "PMGJICCHHDL",
             |m: &OKECOPGKLEE| { &m.PMGJICCHHDL },
             |m: &mut OKECOPGKLEE| { &mut m.PMGJICCHHDL },
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for OKECOPGKLEE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKECOPGKLEE.proto\x1a\x11JFGFLGBLCAJ.proto\"=\n\x0bOKECOPGKLEE\x12\
-    .\n\x0bPMGJICCHHDL\x18\r\x20\x01(\x0b2\x0c.JFGFLGBLCAJR\x0bPMGJICCHHDLb\
-    \x06proto3\
+    \n\x11OKECOPGKLEE.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"H\n\x0bOKEC\
+    OPGKLEE\x129\n\x0bPMGJICCHHDL\x18\r\x20\x01(\x0b2\x17.RogueMagicGameUnit\
+    InfoR\x0bPMGJICCHHDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JFGFLGBLCAJ::file_descriptor().clone());
+            deps.push(super::RogueMagicGameUnitInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OKECOPGKLEE::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

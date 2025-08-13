@@ -79,10 +79,10 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                8 => {
+                88 => {
                     self.PCPDFJHDJCC = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.challenge_id);
         }
         if self.PCPDFJHDJCC != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(12, self.challenge_id)?;
+            os.write_uint32(3, self.challenge_id)?;
         }
         if self.PCPDFJHDJCC != false {
-            os.write_bool(1, self.PCPDFJHDJCC)?;
+            os.write_bool(11, self.PCPDFJHDJCC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GiveUpBoxingClubChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GiveUpBoxingClubChallengeCsReq.proto\"e\n\x1eGiveUpBoxingClubChalleng\
-    eCsReq\x12!\n\x0cchallenge_id\x18\x0c\x20\x01(\rR\x0bchallengeId\x12\x20\
-    \n\x0bPCPDFJHDJCC\x18\x01\x20\x01(\x08R\x0bPCPDFJHDJCCb\x06proto3\
+    eCsReq\x12!\n\x0cchallenge_id\x18\x03\x20\x01(\rR\x0bchallengeId\x12\x20\
+    \n\x0bPCPDFJHDJCC\x18\x0b\x20\x01(\x08R\x0bPCPDFJHDJCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

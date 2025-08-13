@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BKFFNNAIODC {
     // message fields
-    // @@protoc_insertion_point(field:BKFFNNAIODC.CKGFONMAEKO)
-    pub CKGFONMAEKO: ::std::vec::Vec<super::GJOIBMFANHL::GJOIBMFANHL>,
+    // @@protoc_insertion_point(field:BKFFNNAIODC.miracle_list)
+    pub miracle_list: ::std::vec::Vec<super::GameRogueMiracle::GameRogueMiracle>,
     // @@protoc_insertion_point(field:BKFFNNAIODC.item_value)
     pub item_value: u32,
     // @@protoc_insertion_point(field:BKFFNNAIODC.buff_list)
-    pub buff_list: ::std::vec::Vec<super::FFAMNKOAIHF::FFAMNKOAIHF>,
+    pub buff_list: ::std::vec::Vec<super::RogueCommonBuff::RogueCommonBuff>,
     // special fields
     // @@protoc_insertion_point(special_field:BKFFNNAIODC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl BKFFNNAIODC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKGFONMAEKO",
-            |m: &BKFFNNAIODC| { &m.CKGFONMAEKO },
-            |m: &mut BKFFNNAIODC| { &mut m.CKGFONMAEKO },
+            "miracle_list",
+            |m: &BKFFNNAIODC| { &m.miracle_list },
+            |m: &mut BKFFNNAIODC| { &mut m.miracle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BKFFNNAIODC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.CKGFONMAEKO.push(is.read_message()?);
+                66 => {
+                    self.miracle_list.push(is.read_message()?);
                 },
-                32 => {
+                24 => {
                     self.item_value = is.read_uint32()?;
                 },
-                18 => {
+                114 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for BKFFNNAIODC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CKGFONMAEKO {
+        for value in &self.miracle_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(3, self.item_value);
         }
         for value in &self.buff_list {
             let len = value.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for BKFFNNAIODC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CKGFONMAEKO {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.miracle_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.item_value != 0 {
-            os.write_uint32(4, self.item_value)?;
+            os.write_uint32(3, self.item_value)?;
         }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for BKFFNNAIODC {
     }
 
     fn clear(&mut self) {
-        self.CKGFONMAEKO.clear();
+        self.miracle_list.clear();
         self.item_value = 0;
         self.buff_list.clear();
         self.special_fields.clear();
@@ -158,7 +158,7 @@ impl ::protobuf::Message for BKFFNNAIODC {
 
     fn default_instance() -> &'static BKFFNNAIODC {
         static instance: BKFFNNAIODC = BKFFNNAIODC {
-            CKGFONMAEKO: ::std::vec::Vec::new(),
+            miracle_list: ::std::vec::Vec::new(),
             item_value: 0,
             buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for BKFFNNAIODC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BKFFNNAIODC.proto\x1a\x11FFAMNKOAIHF.proto\x1a\x11GJOIBMFANHL.prot\
-    o\"\x87\x01\n\x0bBKFFNNAIODC\x12.\n\x0bCKGFONMAEKO\x18\t\x20\x03(\x0b2\
-    \x0c.GJOIBMFANHLR\x0bCKGFONMAEKO\x12\x1d\n\nitem_value\x18\x04\x20\x01(\
-    \rR\titemValue\x12)\n\tbuff_list\x18\x02\x20\x03(\x0b2\x0c.FFAMNKOAIHFR\
-    \x08buffListb\x06proto3\
+    \n\x11BKFFNNAIODC.proto\x1a\x16GameRogueMiracle.proto\x1a\x15RogueCommon\
+    Buff.proto\"\x91\x01\n\x0bBKFFNNAIODC\x124\n\x0cmiracle_list\x18\x08\x20\
+    \x03(\x0b2\x11.GameRogueMiracleR\x0bmiracleList\x12\x1d\n\nitem_value\
+    \x18\x03\x20\x01(\rR\titemValue\x12-\n\tbuff_list\x18\x0e\x20\x03(\x0b2\
+    \x10.RogueCommonBuffR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FFAMNKOAIHF::file_descriptor().clone());
-            deps.push(super::GJOIBMFANHL::file_descriptor().clone());
+            deps.push(super::GameRogueMiracle::file_descriptor().clone());
+            deps.push(super::RogueCommonBuff::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BKFFNNAIODC::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,18 +30,18 @@ pub struct RogueMapRotateInfo {
     // message fields
     // @@protoc_insertion_point(field:RogueMapRotateInfo.rotater_data_list)
     pub rotater_data_list: ::std::vec::Vec<super::RotaterData::RotaterData>,
-    // @@protoc_insertion_point(field:RogueMapRotateInfo.is_rotate)
-    pub is_rotate: bool,
-    // @@protoc_insertion_point(field:RogueMapRotateInfo.rogue_map)
-    pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
-    // @@protoc_insertion_point(field:RogueMapRotateInfo.NFLBONDJAIE)
-    pub NFLBONDJAIE: u32,
-    // @@protoc_insertion_point(field:RogueMapRotateInfo.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
-    // @@protoc_insertion_point(field:RogueMapRotateInfo.era_flipper_region_id)
-    pub era_flipper_region_id: i32,
     // @@protoc_insertion_point(field:RogueMapRotateInfo.charger_info)
     pub charger_info: ::std::vec::Vec<super::ChargerInfo::ChargerInfo>,
+    // @@protoc_insertion_point(field:RogueMapRotateInfo.era_flipper_region_id)
+    pub era_flipper_region_id: i32,
+    // @@protoc_insertion_point(field:RogueMapRotateInfo.is_rotate)
+    pub is_rotate: bool,
+    // @@protoc_insertion_point(field:RogueMapRotateInfo.NFLBONDJAIE)
+    pub NFLBONDJAIE: u32,
+    // @@protoc_insertion_point(field:RogueMapRotateInfo.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
+    // @@protoc_insertion_point(field:RogueMapRotateInfo.energy_info)
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMapRotateInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,35 +66,35 @@ impl RogueMapRotateInfo {
             |m: &RogueMapRotateInfo| { &m.rotater_data_list },
             |m: &mut RogueMapRotateInfo| { &mut m.rotater_data_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_rotate",
-            |m: &RogueMapRotateInfo| { &m.is_rotate },
-            |m: &mut RogueMapRotateInfo| { &mut m.is_rotate },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
-            "rogue_map",
-            |m: &RogueMapRotateInfo| { &m.rogue_map },
-            |m: &mut RogueMapRotateInfo| { &mut m.rogue_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFLBONDJAIE",
-            |m: &RogueMapRotateInfo| { &m.NFLBONDJAIE },
-            |m: &mut RogueMapRotateInfo| { &mut m.NFLBONDJAIE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
-            "energy_info",
-            |m: &RogueMapRotateInfo| { &m.energy_info },
-            |m: &mut RogueMapRotateInfo| { &mut m.energy_info },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "charger_info",
+            |m: &RogueMapRotateInfo| { &m.charger_info },
+            |m: &mut RogueMapRotateInfo| { &mut m.charger_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "era_flipper_region_id",
             |m: &RogueMapRotateInfo| { &m.era_flipper_region_id },
             |m: &mut RogueMapRotateInfo| { &mut m.era_flipper_region_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "charger_info",
-            |m: &RogueMapRotateInfo| { &m.charger_info },
-            |m: &mut RogueMapRotateInfo| { &mut m.charger_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_rotate",
+            |m: &RogueMapRotateInfo| { &m.is_rotate },
+            |m: &mut RogueMapRotateInfo| { &mut m.is_rotate },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFLBONDJAIE",
+            |m: &RogueMapRotateInfo| { &m.NFLBONDJAIE },
+            |m: &mut RogueMapRotateInfo| { &mut m.NFLBONDJAIE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
+            "rogue_map",
+            |m: &RogueMapRotateInfo| { &m.rogue_map },
+            |m: &mut RogueMapRotateInfo| { &mut m.rogue_map },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
+            "energy_info",
+            |m: &RogueMapRotateInfo| { &m.energy_info },
+            |m: &mut RogueMapRotateInfo| { &mut m.energy_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMapRotateInfo>(
             "RogueMapRotateInfo",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for RogueMapRotateInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                82 => {
                     self.rotater_data_list.push(is.read_message()?);
                 },
-                72 => {
-                    self.is_rotate = is.read_bool()?;
-                },
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
+                    self.charger_info.push(is.read_message()?);
+                },
+                32 => {
+                    self.era_flipper_region_id = is.read_int32()?;
+                },
+                120 => {
+                    self.is_rotate = is.read_bool()?;
                 },
                 112 => {
                     self.NFLBONDJAIE = is.read_uint32()?;
                 },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
+                },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
-                },
-                48 => {
-                    self.era_flipper_region_id = is.read_int32()?;
-                },
-                10 => {
-                    self.charger_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,27 +151,27 @@ impl ::protobuf::Message for RogueMapRotateInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.charger_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.era_flipper_region_id != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.era_flipper_region_id);
+        }
         if self.is_rotate != false {
             my_size += 1 + 1;
+        }
+        if self.NFLBONDJAIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NFLBONDJAIE);
         }
         if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NFLBONDJAIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NFLBONDJAIE);
-        }
         if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.era_flipper_region_id);
-        }
-        for value in &self.charger_info {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -179,26 +179,26 @@ impl ::protobuf::Message for RogueMapRotateInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rotater_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.is_rotate != false {
-            os.write_bool(9, self.is_rotate)?;
-        }
-        if let Some(v) = self.rogue_map.as_ref() {
+        for v in &self.charger_info {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.era_flipper_region_id != 0 {
+            os.write_int32(4, self.era_flipper_region_id)?;
+        }
+        if self.is_rotate != false {
+            os.write_bool(15, self.is_rotate)?;
         }
         if self.NFLBONDJAIE != 0 {
             os.write_uint32(14, self.NFLBONDJAIE)?;
         }
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         if let Some(v) = self.energy_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.era_flipper_region_id != 0 {
-            os.write_int32(6, self.era_flipper_region_id)?;
-        }
-        for v in &self.charger_info {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -217,24 +217,24 @@ impl ::protobuf::Message for RogueMapRotateInfo {
 
     fn clear(&mut self) {
         self.rotater_data_list.clear();
-        self.is_rotate = false;
-        self.rogue_map.clear();
-        self.NFLBONDJAIE = 0;
-        self.energy_info.clear();
-        self.era_flipper_region_id = 0;
         self.charger_info.clear();
+        self.era_flipper_region_id = 0;
+        self.is_rotate = false;
+        self.NFLBONDJAIE = 0;
+        self.rogue_map.clear();
+        self.energy_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMapRotateInfo {
         static instance: RogueMapRotateInfo = RogueMapRotateInfo {
             rotater_data_list: ::std::vec::Vec::new(),
-            is_rotate: false,
-            rogue_map: ::protobuf::MessageField::none(),
-            NFLBONDJAIE: 0,
-            energy_info: ::protobuf::MessageField::none(),
-            era_flipper_region_id: 0,
             charger_info: ::std::vec::Vec::new(),
+            era_flipper_region_id: 0,
+            is_rotate: false,
+            NFLBONDJAIE: 0,
+            rogue_map: ::protobuf::MessageField::none(),
+            energy_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -261,14 +261,14 @@ impl ::protobuf::reflect::ProtobufValue for RogueMapRotateInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueMapRotateInfo.proto\x1a\x11ChargerInfo.proto\x1a\x13RotateMap\
     Info.proto\x1a\x11RotaterData.proto\x1a\x17RotaterEnergyInfo.proto\"\xd3\
-    \x02\n\x12RogueMapRotateInfo\x128\n\x11rotater_data_list\x18\x04\x20\x03\
-    (\x0b2\x0c.RotaterDataR\x0frotaterDataList\x12\x1b\n\tis_rotate\x18\t\
-    \x20\x01(\x08R\x08isRotate\x12+\n\trogue_map\x18\x0b\x20\x01(\x0b2\x0e.R\
-    otateMapInfoR\x08rogueMap\x12\x20\n\x0bNFLBONDJAIE\x18\x0e\x20\x01(\rR\
-    \x0bNFLBONDJAIE\x123\n\x0benergy_info\x18\x08\x20\x01(\x0b2\x12.RotaterE\
-    nergyInfoR\nenergyInfo\x121\n\x15era_flipper_region_id\x18\x06\x20\x01(\
-    \x05R\x12eraFlipperRegionId\x12/\n\x0ccharger_info\x18\x01\x20\x03(\x0b2\
-    \x0c.ChargerInfoR\x0bchargerInfob\x06proto3\
+    \x02\n\x12RogueMapRotateInfo\x128\n\x11rotater_data_list\x18\n\x20\x03(\
+    \x0b2\x0c.RotaterDataR\x0frotaterDataList\x12/\n\x0ccharger_info\x18\x0b\
+    \x20\x03(\x0b2\x0c.ChargerInfoR\x0bchargerInfo\x121\n\x15era_flipper_reg\
+    ion_id\x18\x04\x20\x01(\x05R\x12eraFlipperRegionId\x12\x1b\n\tis_rotate\
+    \x18\x0f\x20\x01(\x08R\x08isRotate\x12\x20\n\x0bNFLBONDJAIE\x18\x0e\x20\
+    \x01(\rR\x0bNFLBONDJAIE\x12+\n\trogue_map\x18\x02\x20\x01(\x0b2\x0e.Rota\
+    teMapInfoR\x08rogueMap\x123\n\x0benergy_info\x18\x08\x20\x01(\x0b2\x12.R\
+    otaterEnergyInfoR\nenergyInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

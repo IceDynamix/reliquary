@@ -72,7 +72,7 @@ impl ::protobuf::Message for SwitchHandResetGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPJNCBBOHKE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SwitchHandResetGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.DPJNCBBOHKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandResetGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSwitchHandResetGameCsReq.proto\x1a\x0eHandInfo.proto\"G\n\x18Switc\
-    hHandResetGameCsReq\x12+\n\x0bDPJNCBBOHKE\x18\x02\x20\x01(\x0b2\t.HandIn\
+    hHandResetGameCsReq\x12+\n\x0bDPJNCBBOHKE\x18\x03\x20\x01(\x0b2\t.HandIn\
     foR\x0bDPJNCBBOHKEb\x06proto3\
 ";
 

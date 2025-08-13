@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.MNBCCBABCHA = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MNBCCBABCHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MNBCCBABCHA);
+            my_size += ::protobuf::rt::uint32_size(15, self.MNBCCBABCHA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueMagicStoryInfoUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MNBCCBABCHA != 0 {
-            os.write_uint32(2, self.MNBCCBABCHA)?;
+            os.write_uint32(15, self.MNBCCBABCHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicStoryInfoUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicStoryInfoUpdateScNotify.proto\"E\n!RogueMagicStoryInfoUpdat\
-    eScNotify\x12\x20\n\x0bMNBCCBABCHA\x18\x02\x20\x01(\rR\x0bMNBCCBABCHAb\
+    eScNotify\x12\x20\n\x0bMNBCCBABCHA\x18\x0f\x20\x01(\rR\x0bMNBCCBABCHAb\
     \x06proto3\
 ";
 

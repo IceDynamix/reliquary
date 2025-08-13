@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerDisplaySettings {
     // message fields
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.challenge_list)
-    pub challenge_list: ::std::vec::Vec<super::IHKGNJDNALJ::IHKGNJDNALJ>,
     // @@protoc_insertion_point(field:PlayerDisplaySettings.JFPCPDCFLMD)
     pub JFPCPDCFLMD: ::protobuf::MessageField<super::OBIHNGMNKEK::OBIHNGMNKEK>,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.challenge_list)
+    pub challenge_list: ::std::vec::Vec<super::IHKGNJDNALJ::IHKGNJDNALJ>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerDisplaySettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PlayerDisplaySettings {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "challenge_list",
-            |m: &PlayerDisplaySettings| { &m.challenge_list },
-            |m: &mut PlayerDisplaySettings| { &mut m.challenge_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBIHNGMNKEK::OBIHNGMNKEK>(
             "JFPCPDCFLMD",
             |m: &PlayerDisplaySettings| { &m.JFPCPDCFLMD },
             |m: &mut PlayerDisplaySettings| { &mut m.JFPCPDCFLMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "challenge_list",
+            |m: &PlayerDisplaySettings| { &m.challenge_list },
+            |m: &mut PlayerDisplaySettings| { &mut m.challenge_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerDisplaySettings>(
             "PlayerDisplaySettings",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.challenge_list.push(is.read_message()?);
-                },
-                58 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPCPDCFLMD)?;
+                },
+                106 => {
+                    self.challenge_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.challenge_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.JFPCPDCFLMD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.challenge_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if let Some(v) = self.JFPCPDCFLMD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
+        for v in &self.challenge_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     }
 
     fn clear(&mut self) {
-        self.challenge_list.clear();
         self.JFPCPDCFLMD.clear();
+        self.challenge_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerDisplaySettings {
         static instance: PlayerDisplaySettings = PlayerDisplaySettings {
-            challenge_list: ::std::vec::Vec::new(),
             JFPCPDCFLMD: ::protobuf::MessageField::none(),
+            challenge_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDisplaySettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerDisplaySettings.proto\x1a\x11IHKGNJDNALJ.proto\x1a\x11OBIHNG\
-    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x123\n\x0echallenge_list\x18\n\
-    \x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeList\x12.\n\x0bJFPCPDCFLMD\x18\
-    \x07\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMDb\x06proto3\
+    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x12.\n\x0bJFPCPDCFLMD\x18\x0c\
+    \x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMD\x123\n\x0echallenge_list\
+    \x18\r\x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

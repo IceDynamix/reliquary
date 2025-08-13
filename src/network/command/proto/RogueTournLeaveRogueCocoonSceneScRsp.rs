@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournLeaveRogueCocoonSceneScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournLeaveRogueCocoonSceneScRsp.LCOCLENJJAI)
-    pub LCOCLENJJAI: ::protobuf::MessageField<super::FJEMJBNAJFJ::FJEMJBNAJFJ>,
+    // @@protoc_insertion_point(field:RogueTournLeaveRogueCocoonSceneScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>,
     // @@protoc_insertion_point(field:RogueTournLeaveRogueCocoonSceneScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl RogueTournLeaveRogueCocoonSceneScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJEMJBNAJFJ::FJEMJBNAJFJ>(
-            "LCOCLENJJAI",
-            |m: &RogueTournLeaveRogueCocoonSceneScRsp| { &m.LCOCLENJJAI },
-            |m: &mut RogueTournLeaveRogueCocoonSceneScRsp| { &mut m.LCOCLENJJAI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueTournLeaveRogueCocoonSceneScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueTournLeaveRogueCocoonSceneScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCOCLENJJAI)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
-                104 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LCOCLENJJAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     }
 
     fn clear(&mut self) {
-        self.LCOCLENJJAI.clear();
+        self.rogue_tourn_cur_scene_info.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournLeaveRogueCocoonSceneScRsp {
         static instance: RogueTournLeaveRogueCocoonSceneScRsp = RogueTournLeaveRogueCocoonSceneScRsp {
-            LCOCLENJJAI: ::protobuf::MessageField::none(),
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournLeaveRogueCocoonSceneScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RogueTournLeaveRogueCocoonSceneScRsp.proto\x1a\x11FJEMJBNAJFJ.proto\"\
-    p\n$RogueTournLeaveRogueCocoonSceneScRsp\x12.\n\x0bLCOCLENJJAI\x18\n\x20\
-    \x01(\x0b2\x0c.FJEMJBNAJFJR\x0bLCOCLENJJAI\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n*RogueTournLeaveRogueCocoonSceneScRsp.proto\x1a\x1cRogueTournCurSceneI\
+    nfo.proto\"\x95\x01\n$RogueTournLeaveRogueCocoonSceneScRsp\x12S\n\x1arog\
+    ue_tourn_cur_scene_info\x18\x04\x20\x01(\x0b2\x17.RogueTournCurSceneInfo\
+    R\x16rogueTournCurSceneInfo\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FJEMJBNAJFJ::file_descriptor().clone());
+            deps.push(super::RogueTournCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournLeaveRogueCocoonSceneScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

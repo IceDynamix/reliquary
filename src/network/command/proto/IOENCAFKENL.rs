@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IOENCAFKENL {
     // message fields
-    // @@protoc_insertion_point(field:IOENCAFKENL.ICMFPNPIJJF)
-    pub ICMFPNPIJJF: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.client_res_version)
-    pub client_res_version: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.MKINIOFGIAG)
-    pub MKINIOFGIAG: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.FGOJLPAEJEC)
-    pub FGOJLPAEJEC: u32,
     // @@protoc_insertion_point(field:IOENCAFKENL.platform)
     pub platform: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.AOKCMMPFGBC)
-    pub AOKCMMPFGBC: ::std::string::String,
     // @@protoc_insertion_point(field:IOENCAFKENL.KPKDNMDAJGL)
     pub KPKDNMDAJGL: u64,
+    // @@protoc_insertion_point(field:IOENCAFKENL.client_res_version)
+    pub client_res_version: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.AOKCMMPFGBC)
+    pub AOKCMMPFGBC: ::std::string::String,
+    // @@protoc_insertion_point(field:IOENCAFKENL.MKINIOFGIAG)
+    pub MKINIOFGIAG: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.ICMFPNPIJJF)
+    pub ICMFPNPIJJF: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.FGOJLPAEJEC)
+    pub FGOJLPAEJEC: u32,
     // @@protoc_insertion_point(field:IOENCAFKENL.uid)
     pub uid: u32,
     // special fields
@@ -64,9 +64,14 @@ impl IOENCAFKENL {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICMFPNPIJJF",
-            |m: &IOENCAFKENL| { &m.ICMFPNPIJJF },
-            |m: &mut IOENCAFKENL| { &mut m.ICMFPNPIJJF },
+            "platform",
+            |m: &IOENCAFKENL| { &m.platform },
+            |m: &mut IOENCAFKENL| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPKDNMDAJGL",
+            |m: &IOENCAFKENL| { &m.KPKDNMDAJGL },
+            |m: &mut IOENCAFKENL| { &mut m.KPKDNMDAJGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "client_res_version",
@@ -74,29 +79,24 @@ impl IOENCAFKENL {
             |m: &mut IOENCAFKENL| { &mut m.client_res_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKINIOFGIAG",
-            |m: &IOENCAFKENL| { &m.MKINIOFGIAG },
-            |m: &mut IOENCAFKENL| { &mut m.MKINIOFGIAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGOJLPAEJEC",
-            |m: &IOENCAFKENL| { &m.FGOJLPAEJEC },
-            |m: &mut IOENCAFKENL| { &mut m.FGOJLPAEJEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &IOENCAFKENL| { &m.platform },
-            |m: &mut IOENCAFKENL| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AOKCMMPFGBC",
             |m: &IOENCAFKENL| { &m.AOKCMMPFGBC },
             |m: &mut IOENCAFKENL| { &mut m.AOKCMMPFGBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPKDNMDAJGL",
-            |m: &IOENCAFKENL| { &m.KPKDNMDAJGL },
-            |m: &mut IOENCAFKENL| { &mut m.KPKDNMDAJGL },
+            "MKINIOFGIAG",
+            |m: &IOENCAFKENL| { &m.MKINIOFGIAG },
+            |m: &mut IOENCAFKENL| { &mut m.MKINIOFGIAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ICMFPNPIJJF",
+            |m: &IOENCAFKENL| { &m.ICMFPNPIJJF },
+            |m: &mut IOENCAFKENL| { &mut m.ICMFPNPIJJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGOJLPAEJEC",
+            |m: &IOENCAFKENL| { &m.FGOJLPAEJEC },
+            |m: &mut IOENCAFKENL| { &mut m.FGOJLPAEJEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for IOENCAFKENL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                96 => {
+                    self.platform = is.read_uint32()?;
+                },
+                48 => {
+                    self.KPKDNMDAJGL = is.read_uint64()?;
+                },
+                16 => {
+                    self.client_res_version = is.read_uint32()?;
+                },
+                106 => {
+                    self.AOKCMMPFGBC = is.read_string()?;
+                },
+                8 => {
+                    self.MKINIOFGIAG = is.read_uint32()?;
+                },
+                112 => {
                     self.ICMFPNPIJJF = is.read_uint32()?;
                 },
                 80 => {
-                    self.client_res_version = is.read_uint32()?;
-                },
-                96 => {
-                    self.MKINIOFGIAG = is.read_uint32()?;
-                },
-                64 => {
                     self.FGOJLPAEJEC = is.read_uint32()?;
                 },
                 32 => {
-                    self.platform = is.read_uint32()?;
-                },
-                26 => {
-                    self.AOKCMMPFGBC = is.read_string()?;
-                },
-                104 => {
-                    self.KPKDNMDAJGL = is.read_uint64()?;
-                },
-                40 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -157,29 +157,29 @@ impl ::protobuf::Message for IOENCAFKENL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICMFPNPIJJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ICMFPNPIJJF);
-        }
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.client_res_version);
-        }
-        if self.MKINIOFGIAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MKINIOFGIAG);
-        }
-        if self.FGOJLPAEJEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FGOJLPAEJEC);
-        }
         if self.platform != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.platform);
-        }
-        if !self.AOKCMMPFGBC.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.AOKCMMPFGBC);
+            my_size += ::protobuf::rt::uint32_size(12, self.platform);
         }
         if self.KPKDNMDAJGL != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.KPKDNMDAJGL);
+            my_size += ::protobuf::rt::uint64_size(6, self.KPKDNMDAJGL);
+        }
+        if self.client_res_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.client_res_version);
+        }
+        if !self.AOKCMMPFGBC.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.AOKCMMPFGBC);
+        }
+        if self.MKINIOFGIAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MKINIOFGIAG);
+        }
+        if self.ICMFPNPIJJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ICMFPNPIJJF);
+        }
+        if self.FGOJLPAEJEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FGOJLPAEJEC);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for IOENCAFKENL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICMFPNPIJJF != 0 {
-            os.write_uint32(9, self.ICMFPNPIJJF)?;
-        }
-        if self.client_res_version != 0 {
-            os.write_uint32(10, self.client_res_version)?;
-        }
-        if self.MKINIOFGIAG != 0 {
-            os.write_uint32(12, self.MKINIOFGIAG)?;
-        }
-        if self.FGOJLPAEJEC != 0 {
-            os.write_uint32(8, self.FGOJLPAEJEC)?;
-        }
         if self.platform != 0 {
-            os.write_uint32(4, self.platform)?;
-        }
-        if !self.AOKCMMPFGBC.is_empty() {
-            os.write_string(3, &self.AOKCMMPFGBC)?;
+            os.write_uint32(12, self.platform)?;
         }
         if self.KPKDNMDAJGL != 0 {
-            os.write_uint64(13, self.KPKDNMDAJGL)?;
+            os.write_uint64(6, self.KPKDNMDAJGL)?;
+        }
+        if self.client_res_version != 0 {
+            os.write_uint32(2, self.client_res_version)?;
+        }
+        if !self.AOKCMMPFGBC.is_empty() {
+            os.write_string(13, &self.AOKCMMPFGBC)?;
+        }
+        if self.MKINIOFGIAG != 0 {
+            os.write_uint32(1, self.MKINIOFGIAG)?;
+        }
+        if self.ICMFPNPIJJF != 0 {
+            os.write_uint32(14, self.ICMFPNPIJJF)?;
+        }
+        if self.FGOJLPAEJEC != 0 {
+            os.write_uint32(10, self.FGOJLPAEJEC)?;
         }
         if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
+            os.write_uint32(4, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,26 +228,26 @@ impl ::protobuf::Message for IOENCAFKENL {
     }
 
     fn clear(&mut self) {
-        self.ICMFPNPIJJF = 0;
-        self.client_res_version = 0;
-        self.MKINIOFGIAG = 0;
-        self.FGOJLPAEJEC = 0;
         self.platform = 0;
-        self.AOKCMMPFGBC.clear();
         self.KPKDNMDAJGL = 0;
+        self.client_res_version = 0;
+        self.AOKCMMPFGBC.clear();
+        self.MKINIOFGIAG = 0;
+        self.ICMFPNPIJJF = 0;
+        self.FGOJLPAEJEC = 0;
         self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOENCAFKENL {
         static instance: IOENCAFKENL = IOENCAFKENL {
-            ICMFPNPIJJF: 0,
-            client_res_version: 0,
-            MKINIOFGIAG: 0,
-            FGOJLPAEJEC: 0,
             platform: 0,
-            AOKCMMPFGBC: ::std::string::String::new(),
             KPKDNMDAJGL: 0,
+            client_res_version: 0,
+            AOKCMMPFGBC: ::std::string::String::new(),
+            MKINIOFGIAG: 0,
+            ICMFPNPIJJF: 0,
+            FGOJLPAEJEC: 0,
             uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for IOENCAFKENL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IOENCAFKENL.proto\"\x93\x02\n\x0bIOENCAFKENL\x12\x20\n\x0bICMFPNPI\
-    JJF\x18\t\x20\x01(\rR\x0bICMFPNPIJJF\x12,\n\x12client_res_version\x18\n\
-    \x20\x01(\rR\x10clientResVersion\x12\x20\n\x0bMKINIOFGIAG\x18\x0c\x20\
-    \x01(\rR\x0bMKINIOFGIAG\x12\x20\n\x0bFGOJLPAEJEC\x18\x08\x20\x01(\rR\x0b\
-    FGOJLPAEJEC\x12\x1a\n\x08platform\x18\x04\x20\x01(\rR\x08platform\x12\
-    \x20\n\x0bAOKCMMPFGBC\x18\x03\x20\x01(\tR\x0bAOKCMMPFGBC\x12\x20\n\x0bKP\
-    KDNMDAJGL\x18\r\x20\x01(\x04R\x0bKPKDNMDAJGL\x12\x10\n\x03uid\x18\x05\
-    \x20\x01(\rR\x03uidb\x06proto3\
+    \n\x11IOENCAFKENL.proto\"\x93\x02\n\x0bIOENCAFKENL\x12\x1a\n\x08platform\
+    \x18\x0c\x20\x01(\rR\x08platform\x12\x20\n\x0bKPKDNMDAJGL\x18\x06\x20\
+    \x01(\x04R\x0bKPKDNMDAJGL\x12,\n\x12client_res_version\x18\x02\x20\x01(\
+    \rR\x10clientResVersion\x12\x20\n\x0bAOKCMMPFGBC\x18\r\x20\x01(\tR\x0bAO\
+    KCMMPFGBC\x12\x20\n\x0bMKINIOFGIAG\x18\x01\x20\x01(\rR\x0bMKINIOFGIAG\
+    \x12\x20\n\x0bICMFPNPIJJF\x18\x0e\x20\x01(\rR\x0bICMFPNPIJJF\x12\x20\n\
+    \x0bFGOJLPAEJEC\x18\n\x20\x01(\rR\x0bFGOJLPAEJEC\x12\x10\n\x03uid\x18\
+    \x04\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

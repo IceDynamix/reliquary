@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueAeonInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueAeonInfoScRsp.BELOFMFHFDK)
-    pub BELOFMFHFDK: ::std::vec::Vec<super::EACOFHBFMLB::EACOFHBFMLB>,
     // @@protoc_insertion_point(field:GetRogueAeonInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetRogueAeonInfoScRsp.BELOFMFHFDK)
+    pub BELOFMFHFDK: ::std::vec::Vec<super::EACOFHBFMLB::EACOFHBFMLB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueAeonInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetRogueAeonInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BELOFMFHFDK",
-            |m: &GetRogueAeonInfoScRsp| { &m.BELOFMFHFDK },
-            |m: &mut GetRogueAeonInfoScRsp| { &mut m.BELOFMFHFDK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRogueAeonInfoScRsp| { &m.retcode },
             |m: &mut GetRogueAeonInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BELOFMFHFDK",
+            |m: &GetRogueAeonInfoScRsp| { &m.BELOFMFHFDK },
+            |m: &mut GetRogueAeonInfoScRsp| { &mut m.BELOFMFHFDK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueAeonInfoScRsp>(
             "GetRogueAeonInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.BELOFMFHFDK.push(is.read_message()?);
-                },
-                104 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
+                },
+                18 => {
+                    self.BELOFMFHFDK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
         for value in &self.BELOFMFHFDK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BELOFMFHFDK {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
+        for v in &self.BELOFMFHFDK {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetRogueAeonInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.BELOFMFHFDK.clear();
         self.retcode = 0;
+        self.BELOFMFHFDK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueAeonInfoScRsp {
         static instance: GetRogueAeonInfoScRsp = GetRogueAeonInfoScRsp {
-            BELOFMFHFDK: ::std::vec::Vec::new(),
             retcode: 0,
+            BELOFMFHFDK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueAeonInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetRogueAeonInfoScRsp.proto\x1a\x11EACOFHBFMLB.proto\"a\n\x15GetRo\
-    gueAeonInfoScRsp\x12.\n\x0bBELOFMFHFDK\x18\x07\x20\x03(\x0b2\x0c.EACOFHB\
-    FMLBR\x0bBELOFMFHFDK\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    gueAeonInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bBELOFMFHFDK\x18\x02\x20\x03(\x0b2\x0c.EACOFHBFMLBR\x0bBELOFMFHFDK\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

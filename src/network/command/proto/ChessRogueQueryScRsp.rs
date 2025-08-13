@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.HNDLHICDNPC)
-    pub HNDLHICDNPC: ::protobuf::MessageField<super::ChessRogueGameInfo::ChessRogueGameInfo>,
     // @@protoc_insertion_point(field:ChessRogueQueryScRsp.BOIKABLFKEC)
     pub BOIKABLFKEC: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.query_info)
+    pub query_info: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
     // @@protoc_insertion_point(field:ChessRogueQueryScRsp.rogue_get_info)
     pub rogue_get_info: ::protobuf::MessageField<super::ChessRogueGetInfo::ChessRogueGetInfo>,
-    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.BLNDMFGKPMJ)
-    pub BLNDMFGKPMJ: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
+    // @@protoc_insertion_point(field:ChessRogueQueryScRsp.HNDLHICDNPC)
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::ChessRogueGameInfo::ChessRogueGameInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl ChessRogueQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
+            "BOIKABLFKEC",
+            |m: &ChessRogueQueryScRsp| { &m.BOIKABLFKEC },
+            |m: &mut ChessRogueQueryScRsp| { &mut m.BOIKABLFKEC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueQueryScRsp| { &m.retcode },
             |m: &mut ChessRogueQueryScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGameInfo::ChessRogueGameInfo>(
-            "HNDLHICDNPC",
-            |m: &ChessRogueQueryScRsp| { &m.HNDLHICDNPC },
-            |m: &mut ChessRogueQueryScRsp| { &mut m.HNDLHICDNPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
-            "BOIKABLFKEC",
-            |m: &ChessRogueQueryScRsp| { &m.BOIKABLFKEC },
-            |m: &mut ChessRogueQueryScRsp| { &mut m.BOIKABLFKEC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryInfo::ChessRogueQueryInfo>(
+            "query_info",
+            |m: &ChessRogueQueryScRsp| { &m.query_info },
+            |m: &mut ChessRogueQueryScRsp| { &mut m.query_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGetInfo::ChessRogueGetInfo>(
             "rogue_get_info",
             |m: &ChessRogueQueryScRsp| { &m.rogue_get_info },
             |m: &mut ChessRogueQueryScRsp| { &mut m.rogue_get_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryInfo::ChessRogueQueryInfo>(
-            "BLNDMFGKPMJ",
-            |m: &ChessRogueQueryScRsp| { &m.BLNDMFGKPMJ },
-            |m: &mut ChessRogueQueryScRsp| { &mut m.BLNDMFGKPMJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueGameInfo::ChessRogueGameInfo>(
+            "HNDLHICDNPC",
+            |m: &ChessRogueQueryScRsp| { &m.HNDLHICDNPC },
+            |m: &mut ChessRogueQueryScRsp| { &mut m.HNDLHICDNPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQueryScRsp>(
             "ChessRogueQueryScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ChessRogueQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
-                },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOIKABLFKEC)?;
                 },
-                34 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.query_info)?;
+                },
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLNDMFGKPMJ)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,14 +127,14 @@ impl ::protobuf::Message for ChessRogueQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+        if let Some(v) = self.BOIKABLFKEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BOIKABLFKEC.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if let Some(v) = self.query_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -142,7 +142,7 @@ impl ::protobuf::Message for ChessRogueQueryScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,20 +152,20 @@ impl ::protobuf::Message for ChessRogueQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if let Some(v) = self.HNDLHICDNPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if let Some(v) = self.BOIKABLFKEC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
-        if let Some(v) = self.BLNDMFGKPMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.query_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.rogue_get_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for ChessRogueQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.HNDLHICDNPC.clear();
         self.BOIKABLFKEC.clear();
+        self.retcode = 0;
+        self.query_info.clear();
         self.rogue_get_info.clear();
-        self.BLNDMFGKPMJ.clear();
+        self.HNDLHICDNPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQueryScRsp {
         static instance: ChessRogueQueryScRsp = ChessRogueQueryScRsp {
-            retcode: 0,
-            HNDLHICDNPC: ::protobuf::MessageField::none(),
             BOIKABLFKEC: ::protobuf::MessageField::none(),
+            retcode: 0,
+            query_info: ::protobuf::MessageField::none(),
             rogue_get_info: ::protobuf::MessageField::none(),
-            BLNDMFGKPMJ: ::protobuf::MessageField::none(),
+            HNDLHICDNPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,13 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueQueryScRsp.proto\x1a\x1aChessRogueFinishInfo.proto\x1a\
     \x18ChessRogueGameInfo.proto\x1a\x17ChessRogueGetInfo.proto\x1a\x19Chess\
-    RogueQueryInfo.proto\"\x92\x02\n\x14ChessRogueQueryScRsp\x12\x18\n\x07re\
-    tcode\x18\x0b\x20\x01(\rR\x07retcode\x125\n\x0bHNDLHICDNPC\x18\x06\x20\
-    \x01(\x0b2\x13.ChessRogueGameInfoR\x0bHNDLHICDNPC\x127\n\x0bBOIKABLFKEC\
-    \x18\x0c\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\x128\n\
-    \x0erogue_get_info\x18\x04\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogue\
-    GetInfo\x126\n\x0bBLNDMFGKPMJ\x18\r\x20\x01(\x0b2\x14.ChessRogueQueryInf\
-    oR\x0bBLNDMFGKPMJb\x06proto3\
+    RogueQueryInfo.proto\"\x8f\x02\n\x14ChessRogueQueryScRsp\x127\n\x0bBOIKA\
+    BLFKEC\x18\x0c\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x123\n\nquery_info\
+    \x18\x01\x20\x01(\x0b2\x14.ChessRogueQueryInfoR\tqueryInfo\x128\n\x0erog\
+    ue_get_info\x18\x05\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogueGetInfo\
+    \x125\n\x0bHNDLHICDNPC\x18\x0e\x20\x01(\x0b2\x13.ChessRogueGameInfoR\x0b\
+    HNDLHICDNPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

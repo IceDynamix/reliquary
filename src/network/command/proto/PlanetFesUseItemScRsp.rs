@@ -82,7 +82,7 @@ impl ::protobuf::Message for PlanetFesUseItemScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for PlanetFesUseItemScRsp {
             os.write_uint32(9, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUseItemScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesUseItemScRsp.proto\x1a\x15PlanetFesReward.proto\"[\n\x15P\
     lanetFesUseItemScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
-    \x12(\n\x06reward\x18\x0b\x20\x01(\x0b2\x10.PlanetFesRewardR\x06rewardb\
+    \x12(\n\x06reward\x18\x0f\x20\x01(\x0b2\x10.PlanetFesRewardR\x06rewardb\
     \x06proto3\
 ";
 

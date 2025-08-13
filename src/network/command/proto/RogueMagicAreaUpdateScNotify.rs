@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAreaUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAreaUpdateScNotify.JIDJEAMDKDE)
-    pub JIDJEAMDKDE: ::std::vec::Vec<super::PJEBCBNPDIC::PJEBCBNPDIC>,
+    // @@protoc_insertion_point(field:RogueMagicAreaUpdateScNotify.rogue_tourn_area_info)
+    pub rogue_tourn_area_info: ::std::vec::Vec<super::RogueMagicAreaInfo::RogueMagicAreaInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAreaUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicAreaUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JIDJEAMDKDE",
-            |m: &RogueMagicAreaUpdateScNotify| { &m.JIDJEAMDKDE },
-            |m: &mut RogueMagicAreaUpdateScNotify| { &mut m.JIDJEAMDKDE },
+            "rogue_tourn_area_info",
+            |m: &RogueMagicAreaUpdateScNotify| { &m.rogue_tourn_area_info },
+            |m: &mut RogueMagicAreaUpdateScNotify| { &mut m.rogue_tourn_area_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAreaUpdateScNotify>(
             "RogueMagicAreaUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.JIDJEAMDKDE.push(is.read_message()?);
+                66 => {
+                    self.rogue_tourn_area_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JIDJEAMDKDE {
+        for value in &self.rogue_tourn_area_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JIDJEAMDKDE {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.rogue_tourn_area_info {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.JIDJEAMDKDE.clear();
+        self.rogue_tourn_area_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAreaUpdateScNotify {
         static instance: RogueMagicAreaUpdateScNotify = RogueMagicAreaUpdateScNotify {
-            JIDJEAMDKDE: ::std::vec::Vec::new(),
+            rogue_tourn_area_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAreaUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueMagicAreaUpdateScNotify.proto\x1a\x11PJEBCBNPDIC.proto\"N\n\x1c\
-    RogueMagicAreaUpdateScNotify\x12.\n\x0bJIDJEAMDKDE\x18\x04\x20\x03(\x0b2\
-    \x0c.PJEBCBNPDICR\x0bJIDJEAMDKDEb\x06proto3\
+    \n\"RogueMagicAreaUpdateScNotify.proto\x1a\x18RogueMagicAreaInfo.proto\"\
+    f\n\x1cRogueMagicAreaUpdateScNotify\x12F\n\x15rogue_tourn_area_info\x18\
+    \x08\x20\x03(\x0b2\x13.RogueMagicAreaInfoR\x12rogueTournAreaInfob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PJEBCBNPDIC::file_descriptor().clone());
+            deps.push(super::RogueMagicAreaInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicAreaUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

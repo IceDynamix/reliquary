@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DHMFCIDJBFD {
     // message fields
-    // @@protoc_insertion_point(field:DHMFCIDJBFD.ELDOLKCAKAE)
-    pub ELDOLKCAKAE: ::std::vec::Vec<super::KIFILCJOLCH::KIFILCJOLCH>,
+    // @@protoc_insertion_point(field:DHMFCIDJBFD.magic_scepter_info_list)
+    pub magic_scepter_info_list: ::std::vec::Vec<super::KIFILCJOLCH::KIFILCJOLCH>,
     // special fields
     // @@protoc_insertion_point(special_field:DHMFCIDJBFD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DHMFCIDJBFD {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ELDOLKCAKAE",
-            |m: &DHMFCIDJBFD| { &m.ELDOLKCAKAE },
-            |m: &mut DHMFCIDJBFD| { &mut m.ELDOLKCAKAE },
+            "magic_scepter_info_list",
+            |m: &DHMFCIDJBFD| { &m.magic_scepter_info_list },
+            |m: &mut DHMFCIDJBFD| { &mut m.magic_scepter_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DHMFCIDJBFD>(
             "DHMFCIDJBFD",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DHMFCIDJBFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.ELDOLKCAKAE.push(is.read_message()?);
+                66 => {
+                    self.magic_scepter_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for DHMFCIDJBFD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ELDOLKCAKAE {
+        for value in &self.magic_scepter_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for DHMFCIDJBFD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ELDOLKCAKAE {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.magic_scepter_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for DHMFCIDJBFD {
     }
 
     fn clear(&mut self) {
-        self.ELDOLKCAKAE.clear();
+        self.magic_scepter_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DHMFCIDJBFD {
         static instance: DHMFCIDJBFD = DHMFCIDJBFD {
-            ELDOLKCAKAE: ::std::vec::Vec::new(),
+            magic_scepter_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for DHMFCIDJBFD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DHMFCIDJBFD.proto\x1a\x11KIFILCJOLCH.proto\"=\n\x0bDHMFCIDJBFD\x12\
-    .\n\x0bELDOLKCAKAE\x18\x05\x20\x03(\x0b2\x0c.KIFILCJOLCHR\x0bELDOLKCAKAE\
-    b\x06proto3\
+    \n\x11DHMFCIDJBFD.proto\x1a\x11KIFILCJOLCH.proto\"R\n\x0bDHMFCIDJBFD\x12\
+    C\n\x17magic_scepter_info_list\x18\x08\x20\x03(\x0b2\x0c.KIFILCJOLCHR\
+    \x14magicScepterInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

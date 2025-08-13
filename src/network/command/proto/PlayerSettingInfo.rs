@@ -28,28 +28,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerSettingInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerSettingInfo.MMMNJCHEMFN)
-    pub MMMNJCHEMFN: bool,
     // @@protoc_insertion_point(field:PlayerSettingInfo.APONEIDMPHL)
     pub APONEIDMPHL: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.ILFALCDLAOL)
-    pub ILFALCDLAOL: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.GHKCMDNKOPN)
-    pub GHKCMDNKOPN: ::protobuf::MessageField<super::OGFIODPILEL::OGFIODPILEL>,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.NJFMILJOFOK)
-    pub NJFMILJOFOK: bool,
     // @@protoc_insertion_point(field:PlayerSettingInfo.NKEKIBNJMPA)
     pub NKEKIBNJMPA: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.KAPDIMGJLNF)
-    pub KAPDIMGJLNF: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.AICNFAOBCPI)
-    pub AICNFAOBCPI: bool,
     // @@protoc_insertion_point(field:PlayerSettingInfo.PBKBGLHHKPE)
     pub PBKBGLHHKPE: bool,
-    // @@protoc_insertion_point(field:PlayerSettingInfo.KJNCCKHJFHE)
-    pub KJNCCKHJFHE: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.MMMNJCHEMFN)
+    pub MMMNJCHEMFN: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.NJFMILJOFOK)
+    pub NJFMILJOFOK: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.ILFALCDLAOL)
+    pub ILFALCDLAOL: bool,
     // @@protoc_insertion_point(field:PlayerSettingInfo.GMJANOJMKCE)
     pub GMJANOJMKCE: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.KAPDIMGJLNF)
+    pub KAPDIMGJLNF: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.GHKCMDNKOPN)
+    pub GHKCMDNKOPN: ::protobuf::MessageField<super::OGFIODPILEL::OGFIODPILEL>,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.KJNCCKHJFHE)
+    pub KJNCCKHJFHE: bool,
+    // @@protoc_insertion_point(field:PlayerSettingInfo.AICNFAOBCPI)
+    pub AICNFAOBCPI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerSettingInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,29 +70,9 @@ impl PlayerSettingInfo {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMMNJCHEMFN",
-            |m: &PlayerSettingInfo| { &m.MMMNJCHEMFN },
-            |m: &mut PlayerSettingInfo| { &mut m.MMMNJCHEMFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APONEIDMPHL",
             |m: &PlayerSettingInfo| { &m.APONEIDMPHL },
             |m: &mut PlayerSettingInfo| { &mut m.APONEIDMPHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILFALCDLAOL",
-            |m: &PlayerSettingInfo| { &m.ILFALCDLAOL },
-            |m: &mut PlayerSettingInfo| { &mut m.ILFALCDLAOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGFIODPILEL::OGFIODPILEL>(
-            "GHKCMDNKOPN",
-            |m: &PlayerSettingInfo| { &m.GHKCMDNKOPN },
-            |m: &mut PlayerSettingInfo| { &mut m.GHKCMDNKOPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJFMILJOFOK",
-            |m: &PlayerSettingInfo| { &m.NJFMILJOFOK },
-            |m: &mut PlayerSettingInfo| { &mut m.NJFMILJOFOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NKEKIBNJMPA",
@@ -100,19 +80,39 @@ impl PlayerSettingInfo {
             |m: &mut PlayerSettingInfo| { &mut m.NKEKIBNJMPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBKBGLHHKPE",
+            |m: &PlayerSettingInfo| { &m.PBKBGLHHKPE },
+            |m: &mut PlayerSettingInfo| { &mut m.PBKBGLHHKPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMMNJCHEMFN",
+            |m: &PlayerSettingInfo| { &m.MMMNJCHEMFN },
+            |m: &mut PlayerSettingInfo| { &mut m.MMMNJCHEMFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NJFMILJOFOK",
+            |m: &PlayerSettingInfo| { &m.NJFMILJOFOK },
+            |m: &mut PlayerSettingInfo| { &mut m.NJFMILJOFOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ILFALCDLAOL",
+            |m: &PlayerSettingInfo| { &m.ILFALCDLAOL },
+            |m: &mut PlayerSettingInfo| { &mut m.ILFALCDLAOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMJANOJMKCE",
+            |m: &PlayerSettingInfo| { &m.GMJANOJMKCE },
+            |m: &mut PlayerSettingInfo| { &mut m.GMJANOJMKCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KAPDIMGJLNF",
             |m: &PlayerSettingInfo| { &m.KAPDIMGJLNF },
             |m: &mut PlayerSettingInfo| { &mut m.KAPDIMGJLNF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AICNFAOBCPI",
-            |m: &PlayerSettingInfo| { &m.AICNFAOBCPI },
-            |m: &mut PlayerSettingInfo| { &mut m.AICNFAOBCPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBKBGLHHKPE",
-            |m: &PlayerSettingInfo| { &m.PBKBGLHHKPE },
-            |m: &mut PlayerSettingInfo| { &mut m.PBKBGLHHKPE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGFIODPILEL::OGFIODPILEL>(
+            "GHKCMDNKOPN",
+            |m: &PlayerSettingInfo| { &m.GHKCMDNKOPN },
+            |m: &mut PlayerSettingInfo| { &mut m.GHKCMDNKOPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KJNCCKHJFHE",
@@ -120,9 +120,9 @@ impl PlayerSettingInfo {
             |m: &mut PlayerSettingInfo| { &mut m.KJNCCKHJFHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMJANOJMKCE",
-            |m: &PlayerSettingInfo| { &m.GMJANOJMKCE },
-            |m: &mut PlayerSettingInfo| { &mut m.GMJANOJMKCE },
+            "AICNFAOBCPI",
+            |m: &PlayerSettingInfo| { &m.AICNFAOBCPI },
+            |m: &mut PlayerSettingInfo| { &mut m.AICNFAOBCPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerSettingInfo>(
             "PlayerSettingInfo",
@@ -142,38 +142,38 @@ impl ::protobuf::Message for PlayerSettingInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.MMMNJCHEMFN = is.read_bool()?;
-                },
-                48 => {
+                8 => {
                     self.APONEIDMPHL = is.read_bool()?;
-                },
-                64 => {
-                    self.ILFALCDLAOL = is.read_bool()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHKCMDNKOPN)?;
-                },
-                32 => {
-                    self.NJFMILJOFOK = is.read_bool()?;
                 },
                 72 => {
                     self.NKEKIBNJMPA = is.read_bool()?;
                 },
-                16 => {
-                    self.KAPDIMGJLNF = is.read_bool()?;
-                },
-                24 => {
-                    self.AICNFAOBCPI = is.read_bool()?;
-                },
-                96 => {
+                112 => {
                     self.PBKBGLHHKPE = is.read_bool()?;
                 },
-                80 => {
+                40 => {
+                    self.MMMNJCHEMFN = is.read_bool()?;
+                },
+                24 => {
+                    self.NJFMILJOFOK = is.read_bool()?;
+                },
+                104 => {
+                    self.ILFALCDLAOL = is.read_bool()?;
+                },
+                88 => {
+                    self.GMJANOJMKCE = is.read_bool()?;
+                },
+                48 => {
+                    self.KAPDIMGJLNF = is.read_bool()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHKCMDNKOPN)?;
+                },
+                96 => {
                     self.KJNCCKHJFHE = is.read_bool()?;
                 },
-                8 => {
-                    self.GMJANOJMKCE = is.read_bool()?;
+                16 => {
+                    self.AICNFAOBCPI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -187,38 +187,38 @@ impl ::protobuf::Message for PlayerSettingInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MMMNJCHEMFN != false {
-            my_size += 1 + 1;
-        }
         if self.APONEIDMPHL != false {
             my_size += 1 + 1;
         }
+        if self.NKEKIBNJMPA != false {
+            my_size += 1 + 1;
+        }
+        if self.PBKBGLHHKPE != false {
+            my_size += 1 + 1;
+        }
+        if self.MMMNJCHEMFN != false {
+            my_size += 1 + 1;
+        }
+        if self.NJFMILJOFOK != false {
+            my_size += 1 + 1;
+        }
         if self.ILFALCDLAOL != false {
+            my_size += 1 + 1;
+        }
+        if self.GMJANOJMKCE != false {
+            my_size += 1 + 1;
+        }
+        if self.KAPDIMGJLNF != false {
             my_size += 1 + 1;
         }
         if let Some(v) = self.GHKCMDNKOPN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NJFMILJOFOK != false {
-            my_size += 1 + 1;
-        }
-        if self.NKEKIBNJMPA != false {
-            my_size += 1 + 1;
-        }
-        if self.KAPDIMGJLNF != false {
-            my_size += 1 + 1;
-        }
-        if self.AICNFAOBCPI != false {
-            my_size += 1 + 1;
-        }
-        if self.PBKBGLHHKPE != false {
-            my_size += 1 + 1;
-        }
         if self.KJNCCKHJFHE != false {
             my_size += 1 + 1;
         }
-        if self.GMJANOJMKCE != false {
+        if self.AICNFAOBCPI != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -227,38 +227,38 @@ impl ::protobuf::Message for PlayerSettingInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMMNJCHEMFN != false {
-            os.write_bool(15, self.MMMNJCHEMFN)?;
-        }
         if self.APONEIDMPHL != false {
-            os.write_bool(6, self.APONEIDMPHL)?;
-        }
-        if self.ILFALCDLAOL != false {
-            os.write_bool(8, self.ILFALCDLAOL)?;
-        }
-        if let Some(v) = self.GHKCMDNKOPN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if self.NJFMILJOFOK != false {
-            os.write_bool(4, self.NJFMILJOFOK)?;
+            os.write_bool(1, self.APONEIDMPHL)?;
         }
         if self.NKEKIBNJMPA != false {
             os.write_bool(9, self.NKEKIBNJMPA)?;
         }
-        if self.KAPDIMGJLNF != false {
-            os.write_bool(2, self.KAPDIMGJLNF)?;
-        }
-        if self.AICNFAOBCPI != false {
-            os.write_bool(3, self.AICNFAOBCPI)?;
-        }
         if self.PBKBGLHHKPE != false {
-            os.write_bool(12, self.PBKBGLHHKPE)?;
+            os.write_bool(14, self.PBKBGLHHKPE)?;
         }
-        if self.KJNCCKHJFHE != false {
-            os.write_bool(10, self.KJNCCKHJFHE)?;
+        if self.MMMNJCHEMFN != false {
+            os.write_bool(5, self.MMMNJCHEMFN)?;
+        }
+        if self.NJFMILJOFOK != false {
+            os.write_bool(3, self.NJFMILJOFOK)?;
+        }
+        if self.ILFALCDLAOL != false {
+            os.write_bool(13, self.ILFALCDLAOL)?;
         }
         if self.GMJANOJMKCE != false {
-            os.write_bool(1, self.GMJANOJMKCE)?;
+            os.write_bool(11, self.GMJANOJMKCE)?;
+        }
+        if self.KAPDIMGJLNF != false {
+            os.write_bool(6, self.KAPDIMGJLNF)?;
+        }
+        if let Some(v) = self.GHKCMDNKOPN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.KJNCCKHJFHE != false {
+            os.write_bool(12, self.KJNCCKHJFHE)?;
+        }
+        if self.AICNFAOBCPI != false {
+            os.write_bool(2, self.AICNFAOBCPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -277,33 +277,33 @@ impl ::protobuf::Message for PlayerSettingInfo {
     }
 
     fn clear(&mut self) {
-        self.MMMNJCHEMFN = false;
         self.APONEIDMPHL = false;
-        self.ILFALCDLAOL = false;
-        self.GHKCMDNKOPN.clear();
-        self.NJFMILJOFOK = false;
         self.NKEKIBNJMPA = false;
-        self.KAPDIMGJLNF = false;
-        self.AICNFAOBCPI = false;
         self.PBKBGLHHKPE = false;
-        self.KJNCCKHJFHE = false;
+        self.MMMNJCHEMFN = false;
+        self.NJFMILJOFOK = false;
+        self.ILFALCDLAOL = false;
         self.GMJANOJMKCE = false;
+        self.KAPDIMGJLNF = false;
+        self.GHKCMDNKOPN.clear();
+        self.KJNCCKHJFHE = false;
+        self.AICNFAOBCPI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerSettingInfo {
         static instance: PlayerSettingInfo = PlayerSettingInfo {
-            MMMNJCHEMFN: false,
             APONEIDMPHL: false,
-            ILFALCDLAOL: false,
-            GHKCMDNKOPN: ::protobuf::MessageField::none(),
-            NJFMILJOFOK: false,
             NKEKIBNJMPA: false,
-            KAPDIMGJLNF: false,
-            AICNFAOBCPI: false,
             PBKBGLHHKPE: false,
-            KJNCCKHJFHE: false,
+            MMMNJCHEMFN: false,
+            NJFMILJOFOK: false,
+            ILFALCDLAOL: false,
             GMJANOJMKCE: false,
+            KAPDIMGJLNF: false,
+            GHKCMDNKOPN: ::protobuf::MessageField::none(),
+            KJNCCKHJFHE: false,
+            AICNFAOBCPI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -329,17 +329,17 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSettingInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17PlayerSettingInfo.proto\x1a\x11OGFIODPILEL.proto\"\x97\x03\n\x11Pl\
-    ayerSettingInfo\x12\x20\n\x0bMMMNJCHEMFN\x18\x0f\x20\x01(\x08R\x0bMMMNJC\
-    HEMFN\x12\x20\n\x0bAPONEIDMPHL\x18\x06\x20\x01(\x08R\x0bAPONEIDMPHL\x12\
-    \x20\n\x0bILFALCDLAOL\x18\x08\x20\x01(\x08R\x0bILFALCDLAOL\x12.\n\x0bGHK\
-    CMDNKOPN\x18\x0e\x20\x01(\x0b2\x0c.OGFIODPILELR\x0bGHKCMDNKOPN\x12\x20\n\
-    \x0bNJFMILJOFOK\x18\x04\x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0bNKEKIB\
-    NJMPA\x18\t\x20\x01(\x08R\x0bNKEKIBNJMPA\x12\x20\n\x0bKAPDIMGJLNF\x18\
-    \x02\x20\x01(\x08R\x0bKAPDIMGJLNF\x12\x20\n\x0bAICNFAOBCPI\x18\x03\x20\
-    \x01(\x08R\x0bAICNFAOBCPI\x12\x20\n\x0bPBKBGLHHKPE\x18\x0c\x20\x01(\x08R\
-    \x0bPBKBGLHHKPE\x12\x20\n\x0bKJNCCKHJFHE\x18\n\x20\x01(\x08R\x0bKJNCCKHJ\
-    FHE\x12\x20\n\x0bGMJANOJMKCE\x18\x01\x20\x01(\x08R\x0bGMJANOJMKCEb\x06pr\
-    oto3\
+    ayerSettingInfo\x12\x20\n\x0bAPONEIDMPHL\x18\x01\x20\x01(\x08R\x0bAPONEI\
+    DMPHL\x12\x20\n\x0bNKEKIBNJMPA\x18\t\x20\x01(\x08R\x0bNKEKIBNJMPA\x12\
+    \x20\n\x0bPBKBGLHHKPE\x18\x0e\x20\x01(\x08R\x0bPBKBGLHHKPE\x12\x20\n\x0b\
+    MMMNJCHEMFN\x18\x05\x20\x01(\x08R\x0bMMMNJCHEMFN\x12\x20\n\x0bNJFMILJOFO\
+    K\x18\x03\x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0bILFALCDLAOL\x18\r\
+    \x20\x01(\x08R\x0bILFALCDLAOL\x12\x20\n\x0bGMJANOJMKCE\x18\x0b\x20\x01(\
+    \x08R\x0bGMJANOJMKCE\x12\x20\n\x0bKAPDIMGJLNF\x18\x06\x20\x01(\x08R\x0bK\
+    APDIMGJLNF\x12.\n\x0bGHKCMDNKOPN\x18\x0f\x20\x01(\x0b2\x0c.OGFIODPILELR\
+    \x0bGHKCMDNKOPN\x12\x20\n\x0bKJNCCKHJFHE\x18\x0c\x20\x01(\x08R\x0bKJNCCK\
+    HJFHE\x12\x20\n\x0bAICNFAOBCPI\x18\x02\x20\x01(\x08R\x0bAICNFAOBCPIb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

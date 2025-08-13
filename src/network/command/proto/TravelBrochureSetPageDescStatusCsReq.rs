@@ -79,10 +79,10 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.CPODEJOFPDD = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.GEIBGFDENJA = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CPODEJOFPDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CPODEJOFPDD);
+            my_size += ::protobuf::rt::uint32_size(13, self.CPODEJOFPDD);
         }
         if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.GEIBGFDENJA.value());
+            my_size += ::protobuf::rt::int32_size(11, self.GEIBGFDENJA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TravelBrochureSetPageDescStatusCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CPODEJOFPDD != 0 {
-            os.write_uint32(6, self.CPODEJOFPDD)?;
+            os.write_uint32(13, self.CPODEJOFPDD)?;
         }
         if self.GEIBGFDENJA != ::protobuf::EnumOrUnknown::new(super::DCJAOPDINOI::DCJAOPDINOI::PAGE_DESC_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GEIBGFDENJA))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.GEIBGFDENJA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSetPageDescStatusCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*TravelBrochureSetPageDescStatusCsReq.proto\x1a\x11DCJAOPDINOI.proto\"\
-    x\n$TravelBrochureSetPageDescStatusCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\
-    \x06\x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEIBGFDENJA\x18\x0f\x20\x01(\
-    \x0e2\x0c.DCJAOPDINOIR\x0bGEIBGFDENJAb\x06proto3\
+    x\n$TravelBrochureSetPageDescStatusCsReq\x12\x20\n\x0bCPODEJOFPDD\x18\r\
+    \x20\x01(\rR\x0bCPODEJOFPDD\x12.\n\x0bGEIBGFDENJA\x18\x0b\x20\x01(\x0e2\
+    \x0c.DCJAOPDINOIR\x0bGEIBGFDENJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

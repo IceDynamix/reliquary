@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MFDKINPDMKE {
     // message fields
-    // @@protoc_insertion_point(field:MFDKINPDMKE.FIOEPGPEBFD)
-    pub FIOEPGPEBFD: u32,
     // @@protoc_insertion_point(field:MFDKINPDMKE.cnt)
     pub cnt: u32,
+    // @@protoc_insertion_point(field:MFDKINPDMKE.FIOEPGPEBFD)
+    pub FIOEPGPEBFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MFDKINPDMKE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MFDKINPDMKE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIOEPGPEBFD",
-            |m: &MFDKINPDMKE| { &m.FIOEPGPEBFD },
-            |m: &mut MFDKINPDMKE| { &mut m.FIOEPGPEBFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cnt",
             |m: &MFDKINPDMKE| { &m.cnt },
             |m: &mut MFDKINPDMKE| { &mut m.cnt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIOEPGPEBFD",
+            |m: &MFDKINPDMKE| { &m.FIOEPGPEBFD },
+            |m: &mut MFDKINPDMKE| { &mut m.FIOEPGPEBFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MFDKINPDMKE>(
             "MFDKINPDMKE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MFDKINPDMKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.FIOEPGPEBFD = is.read_uint32()?;
-                },
-                64 => {
+                48 => {
                     self.cnt = is.read_uint32()?;
+                },
+                40 => {
+                    self.FIOEPGPEBFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MFDKINPDMKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FIOEPGPEBFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FIOEPGPEBFD);
-        }
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(6, self.cnt);
+        }
+        if self.FIOEPGPEBFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FIOEPGPEBFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MFDKINPDMKE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FIOEPGPEBFD != 0 {
-            os.write_uint32(13, self.FIOEPGPEBFD)?;
-        }
         if self.cnt != 0 {
-            os.write_uint32(8, self.cnt)?;
+            os.write_uint32(6, self.cnt)?;
+        }
+        if self.FIOEPGPEBFD != 0 {
+            os.write_uint32(5, self.FIOEPGPEBFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MFDKINPDMKE {
     }
 
     fn clear(&mut self) {
-        self.FIOEPGPEBFD = 0;
         self.cnt = 0;
+        self.FIOEPGPEBFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MFDKINPDMKE {
         static instance: MFDKINPDMKE = MFDKINPDMKE {
-            FIOEPGPEBFD: 0,
             cnt: 0,
+            FIOEPGPEBFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MFDKINPDMKE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MFDKINPDMKE.proto\"A\n\x0bMFDKINPDMKE\x12\x20\n\x0bFIOEPGPEBFD\x18\
-    \r\x20\x01(\rR\x0bFIOEPGPEBFD\x12\x10\n\x03cnt\x18\x08\x20\x01(\rR\x03cn\
-    tb\x06proto3\
+    \n\x11MFDKINPDMKE.proto\"A\n\x0bMFDKINPDMKE\x12\x10\n\x03cnt\x18\x06\x20\
+    \x01(\rR\x03cnt\x12\x20\n\x0bFIOEPGPEBFD\x18\x05\x20\x01(\rR\x0bFIOEPGPE\
+    BFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

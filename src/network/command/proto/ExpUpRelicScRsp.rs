@@ -82,7 +82,7 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
                 34 => {
                     self.return_item_list.push(is.read_message()?);
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ExpUpRelicScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpRelicScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15ExpUpRelicScRsp.proto\x1a\x0ePileItem.proto\"`\n\x0fExpUpRelicScRs\
     p\x123\n\x10return_item_list\x18\x04\x20\x03(\x0b2\t.PileItemR\x0ereturn\
-    ItemList\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    ItemList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueGetInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueGetInfo.talent_info_list)
-    pub talent_info_list: ::protobuf::MessageField<super::ChessRogueTalentInfo::ChessRogueTalentInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGetInfo.area_id_list)
-    pub area_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueGetInfo.query_dice_info)
     pub query_dice_info: ::protobuf::MessageField<super::ChessRogueQueryDiceInfo::ChessRogueQueryDiceInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGetInfo.rogue_difficulty_info)
-    pub rogue_difficulty_info: ::protobuf::MessageField<super::AFAGHELICPD::AFAGHELICPD>,
+    // @@protoc_insertion_point(field:ChessRogueGetInfo.talent_info_list)
+    pub talent_info_list: ::protobuf::MessageField<super::ChessRogueTalentInfo::ChessRogueTalentInfo>,
     // @@protoc_insertion_point(field:ChessRogueGetInfo.explored_area_id_list)
     pub explored_area_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueGetInfo.chess_aeon_info)
     pub chess_aeon_info: ::protobuf::MessageField<super::ChessRogueQueryAeonInfo::ChessRogueQueryAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGetInfo.rogue_difficulty_info)
+    pub rogue_difficulty_info: ::protobuf::MessageField<super::ChessRogueQueryDiffcultyInfo::ChessRogueQueryDiffcultyInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGetInfo.area_id_list)
+    pub area_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueGetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,15 @@ impl ChessRogueGetInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueTalentInfo::ChessRogueTalentInfo>(
-            "talent_info_list",
-            |m: &ChessRogueGetInfo| { &m.talent_info_list },
-            |m: &mut ChessRogueGetInfo| { &mut m.talent_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "area_id_list",
-            |m: &ChessRogueGetInfo| { &m.area_id_list },
-            |m: &mut ChessRogueGetInfo| { &mut m.area_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryDiceInfo::ChessRogueQueryDiceInfo>(
             "query_dice_info",
             |m: &ChessRogueGetInfo| { &m.query_dice_info },
             |m: &mut ChessRogueGetInfo| { &mut m.query_dice_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AFAGHELICPD::AFAGHELICPD>(
-            "rogue_difficulty_info",
-            |m: &ChessRogueGetInfo| { &m.rogue_difficulty_info },
-            |m: &mut ChessRogueGetInfo| { &mut m.rogue_difficulty_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueTalentInfo::ChessRogueTalentInfo>(
+            "talent_info_list",
+            |m: &ChessRogueGetInfo| { &m.talent_info_list },
+            |m: &mut ChessRogueGetInfo| { &mut m.talent_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "explored_area_id_list",
@@ -88,6 +78,16 @@ impl ChessRogueGetInfo {
             "chess_aeon_info",
             |m: &ChessRogueGetInfo| { &m.chess_aeon_info },
             |m: &mut ChessRogueGetInfo| { &mut m.chess_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryDiffcultyInfo::ChessRogueQueryDiffcultyInfo>(
+            "rogue_difficulty_info",
+            |m: &ChessRogueGetInfo| { &m.rogue_difficulty_info },
+            |m: &mut ChessRogueGetInfo| { &mut m.rogue_difficulty_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "area_id_list",
+            |m: &ChessRogueGetInfo| { &m.area_id_list },
+            |m: &mut ChessRogueGetInfo| { &mut m.area_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueGetInfo>(
             "ChessRogueGetInfo",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for ChessRogueGetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info_list)?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.area_id_list)?;
-                },
-                40 => {
-                    self.area_id_list.push(is.read_uint32()?);
-                },
-                74 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.query_dice_info)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_difficulty_info)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info_list)?;
                 },
-                98 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.explored_area_id_list)?;
                 },
-                96 => {
+                64 => {
                     self.explored_area_id_list.push(is.read_uint32()?);
                 },
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.chess_aeon_info)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_difficulty_info)?;
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.area_id_list)?;
+                },
+                16 => {
+                    self.area_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,12 +143,16 @@ impl ::protobuf::Message for ChessRogueGetInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.query_dice_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.talent_info_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.area_id_list);
-        if let Some(v) = self.query_dice_info.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.explored_area_id_list);
+        if let Some(v) = self.chess_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -156,31 +160,27 @@ impl ::protobuf::Message for ChessRogueGetInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.explored_area_id_list);
-        if let Some(v) = self.chess_aeon_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.area_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.talent_info_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        os.write_repeated_packed_uint32(5, &self.area_id_list)?;
         if let Some(v) = self.query_dice_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.talent_info_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.explored_area_id_list)?;
+        if let Some(v) = self.chess_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.rogue_difficulty_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        os.write_repeated_packed_uint32(12, &self.explored_area_id_list)?;
-        if let Some(v) = self.chess_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
+        os.write_repeated_packed_uint32(2, &self.area_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for ChessRogueGetInfo {
     }
 
     fn clear(&mut self) {
-        self.talent_info_list.clear();
-        self.area_id_list.clear();
         self.query_dice_info.clear();
-        self.rogue_difficulty_info.clear();
+        self.talent_info_list.clear();
         self.explored_area_id_list.clear();
         self.chess_aeon_info.clear();
+        self.rogue_difficulty_info.clear();
+        self.area_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueGetInfo {
         static instance: ChessRogueGetInfo = ChessRogueGetInfo {
-            talent_info_list: ::protobuf::MessageField::none(),
-            area_id_list: ::std::vec::Vec::new(),
             query_dice_info: ::protobuf::MessageField::none(),
-            rogue_difficulty_info: ::protobuf::MessageField::none(),
+            talent_info_list: ::protobuf::MessageField::none(),
             explored_area_id_list: ::std::vec::Vec::new(),
             chess_aeon_info: ::protobuf::MessageField::none(),
+            rogue_difficulty_info: ::protobuf::MessageField::none(),
+            area_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,16 +239,17 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueGetInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17ChessRogueGetInfo.proto\x1a\x11AFAGHELICPD.proto\x1a\x1dChessRogue\
-    QueryAeonInfo.proto\x1a\x1dChessRogueQueryDiceInfo.proto\x1a\x1aChessRog\
-    ueTalentInfo.proto\"\xef\x02\n\x11ChessRogueGetInfo\x12?\n\x10talent_inf\
-    o_list\x18\x02\x20\x01(\x0b2\x15.ChessRogueTalentInfoR\x0etalentInfoList\
-    \x12\x20\n\x0carea_id_list\x18\x05\x20\x03(\rR\nareaIdList\x12@\n\x0fque\
-    ry_dice_info\x18\t\x20\x01(\x0b2\x18.ChessRogueQueryDiceInfoR\rqueryDice\
-    Info\x12@\n\x15rogue_difficulty_info\x18\x04\x20\x01(\x0b2\x0c.AFAGHELIC\
-    PDR\x13rogueDifficultyInfo\x121\n\x15explored_area_id_list\x18\x0c\x20\
-    \x03(\rR\x12exploredAreaIdList\x12@\n\x0fchess_aeon_info\x18\r\x20\x01(\
-    \x0b2\x18.ChessRogueQueryAeonInfoR\rchessAeonInfob\x06proto3\
+    \n\x17ChessRogueGetInfo.proto\x1a\x1dChessRogueQueryAeonInfo.proto\x1a\
+    \x1dChessRogueQueryDiceInfo.proto\x1a\"ChessRogueQueryDiffcultyInfo.prot\
+    o\x1a\x1aChessRogueTalentInfo.proto\"\x80\x03\n\x11ChessRogueGetInfo\x12\
+    @\n\x0fquery_dice_info\x18\x0b\x20\x01(\x0b2\x18.ChessRogueQueryDiceInfo\
+    R\rqueryDiceInfo\x12?\n\x10talent_info_list\x18\x0e\x20\x01(\x0b2\x15.Ch\
+    essRogueTalentInfoR\x0etalentInfoList\x121\n\x15explored_area_id_list\
+    \x18\x08\x20\x03(\rR\x12exploredAreaIdList\x12@\n\x0fchess_aeon_info\x18\
+    \x05\x20\x01(\x0b2\x18.ChessRogueQueryAeonInfoR\rchessAeonInfo\x12Q\n\
+    \x15rogue_difficulty_info\x18\t\x20\x01(\x0b2\x1d.ChessRogueQueryDiffcul\
+    tyInfoR\x13rogueDifficultyInfo\x12\x20\n\x0carea_id_list\x18\x02\x20\x03\
+    (\rR\nareaIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -266,9 +267,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::AFAGHELICPD::file_descriptor().clone());
             deps.push(super::ChessRogueQueryAeonInfo::file_descriptor().clone());
             deps.push(super::ChessRogueQueryDiceInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueQueryDiffcultyInfo::file_descriptor().clone());
             deps.push(super::ChessRogueTalentInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueGetInfo::generated_message_descriptor_data());

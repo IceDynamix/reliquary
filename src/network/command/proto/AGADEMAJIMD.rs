@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AGADEMAJIMD {
     // message fields
-    // @@protoc_insertion_point(field:AGADEMAJIMD.OMNGCIJALFM)
-    pub OMNGCIJALFM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:AGADEMAJIMD.IMMLPHDNMOL)
-    pub IMMLPHDNMOL: ::std::vec::Vec<super::ADOLEOFEGOK::ADOLEOFEGOK>,
     // @@protoc_insertion_point(field:AGADEMAJIMD.HNFOJBCJAMG)
     pub HNFOJBCJAMG: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
+    // @@protoc_insertion_point(field:AGADEMAJIMD.IMMLPHDNMOL)
+    pub IMMLPHDNMOL: ::std::vec::Vec<super::ADOLEOFEGOK::ADOLEOFEGOK>,
     // @@protoc_insertion_point(field:AGADEMAJIMD.FMJPLHOHBAB)
     pub FMJPLHOHBAB: ::std::vec::Vec<super::LogisticsScore::LogisticsScore>,
+    // @@protoc_insertion_point(field:AGADEMAJIMD.OMNGCIJALFM)
+    pub OMNGCIJALFM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:AGADEMAJIMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl AGADEMAJIMD {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OMNGCIJALFM",
-            |m: &AGADEMAJIMD| { &m.OMNGCIJALFM },
-            |m: &mut AGADEMAJIMD| { &mut m.OMNGCIJALFM },
+            "HNFOJBCJAMG",
+            |m: &AGADEMAJIMD| { &m.HNFOJBCJAMG },
+            |m: &mut AGADEMAJIMD| { &mut m.HNFOJBCJAMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IMMLPHDNMOL",
@@ -66,14 +66,14 @@ impl AGADEMAJIMD {
             |m: &mut AGADEMAJIMD| { &mut m.IMMLPHDNMOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNFOJBCJAMG",
-            |m: &AGADEMAJIMD| { &m.HNFOJBCJAMG },
-            |m: &mut AGADEMAJIMD| { &mut m.HNFOJBCJAMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FMJPLHOHBAB",
             |m: &AGADEMAJIMD| { &m.FMJPLHOHBAB },
             |m: &mut AGADEMAJIMD| { &mut m.FMJPLHOHBAB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OMNGCIJALFM",
+            |m: &AGADEMAJIMD| { &m.OMNGCIJALFM },
+            |m: &mut AGADEMAJIMD| { &mut m.OMNGCIJALFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AGADEMAJIMD>(
             "AGADEMAJIMD",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for AGADEMAJIMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OMNGCIJALFM)?;
-                },
-                16 => {
-                    self.OMNGCIJALFM.push(is.read_uint32()?);
+                26 => {
+                    self.HNFOJBCJAMG.push(is.read_message()?);
                 },
                 114 => {
                     self.IMMLPHDNMOL.push(is.read_message()?);
                 },
-                122 => {
-                    self.HNFOJBCJAMG.push(is.read_message()?);
-                },
                 74 => {
                     self.FMJPLHOHBAB.push(is.read_message()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OMNGCIJALFM)?;
+                },
+                80 => {
+                    self.OMNGCIJALFM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,12 +120,11 @@ impl ::protobuf::Message for AGADEMAJIMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.OMNGCIJALFM);
-        for value in &self.IMMLPHDNMOL {
+        for value in &self.HNFOJBCJAMG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HNFOJBCJAMG {
+        for value in &self.IMMLPHDNMOL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -133,22 +132,23 @@ impl ::protobuf::Message for AGADEMAJIMD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OMNGCIJALFM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.OMNGCIJALFM)?;
+        for v in &self.HNFOJBCJAMG {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         for v in &self.IMMLPHDNMOL {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        for v in &self.HNFOJBCJAMG {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.FMJPLHOHBAB {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        os.write_repeated_packed_uint32(10, &self.OMNGCIJALFM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for AGADEMAJIMD {
     }
 
     fn clear(&mut self) {
-        self.OMNGCIJALFM.clear();
-        self.IMMLPHDNMOL.clear();
         self.HNFOJBCJAMG.clear();
+        self.IMMLPHDNMOL.clear();
         self.FMJPLHOHBAB.clear();
+        self.OMNGCIJALFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AGADEMAJIMD {
         static instance: AGADEMAJIMD = AGADEMAJIMD {
-            OMNGCIJALFM: ::std::vec::Vec::new(),
-            IMMLPHDNMOL: ::std::vec::Vec::new(),
             HNFOJBCJAMG: ::std::vec::Vec::new(),
+            IMMLPHDNMOL: ::std::vec::Vec::new(),
             FMJPLHOHBAB: ::std::vec::Vec::new(),
+            OMNGCIJALFM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for AGADEMAJIMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AGADEMAJIMD.proto\x1a\x11ADOLEOFEGOK.proto\x1a\x14LogisticsScore.p\
-    roto\x1a\x11NJAOIGGMEAL.proto\"\xc2\x01\n\x0bAGADEMAJIMD\x12\x20\n\x0bOM\
-    NGCIJALFM\x18\x02\x20\x03(\rR\x0bOMNGCIJALFM\x12.\n\x0bIMMLPHDNMOL\x18\
-    \x0e\x20\x03(\x0b2\x0c.ADOLEOFEGOKR\x0bIMMLPHDNMOL\x12.\n\x0bHNFOJBCJAMG\
-    \x18\x0f\x20\x03(\x0b2\x0c.NJAOIGGMEALR\x0bHNFOJBCJAMG\x121\n\x0bFMJPLHO\
-    HBAB\x18\t\x20\x03(\x0b2\x0f.LogisticsScoreR\x0bFMJPLHOHBABb\x06proto3\
+    roto\x1a\x11NJAOIGGMEAL.proto\"\xc2\x01\n\x0bAGADEMAJIMD\x12.\n\x0bHNFOJ\
+    BCJAMG\x18\x03\x20\x03(\x0b2\x0c.NJAOIGGMEALR\x0bHNFOJBCJAMG\x12.\n\x0bI\
+    MMLPHDNMOL\x18\x0e\x20\x03(\x0b2\x0c.ADOLEOFEGOKR\x0bIMMLPHDNMOL\x121\n\
+    \x0bFMJPLHOHBAB\x18\t\x20\x03(\x0b2\x0f.LogisticsScoreR\x0bFMJPLHOHBAB\
+    \x12\x20\n\x0bOMNGCIJALFM\x18\n\x20\x03(\rR\x0bOMNGCIJALFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

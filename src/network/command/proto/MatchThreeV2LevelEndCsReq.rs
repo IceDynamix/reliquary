@@ -30,20 +30,20 @@ pub struct MatchThreeV2LevelEndCsReq {
     // message fields
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.uuid)
     pub uuid: ::std::string::String,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.EHMPEMEONGE)
-    pub EHMPEMEONGE: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.JKFPENGNJPI)
-    pub JKFPENGNJPI: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.BBGKAKHGOIO)
-    pub BBGKAKHGOIO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.HLDNMIBKLKJ)
     pub HLDNMIBKLKJ: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.DKBJHPIJCAE)
-    pub DKBJHPIJCAE: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.JKFPENGNJPI)
+    pub JKFPENGNJPI: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.EHMPEMEONGE)
+    pub EHMPEMEONGE: u32,
     // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.BKMPFEOCFIB)
     pub BKMPFEOCFIB: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.level_id)
+    pub level_id: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.BBGKAKHGOIO)
+    pub BBGKAKHGOIO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MatchThreeV2LevelEndCsReq.DKBJHPIJCAE)
+    pub DKBJHPIJCAE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeV2LevelEndCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,40 +68,40 @@ impl MatchThreeV2LevelEndCsReq {
             |m: &MatchThreeV2LevelEndCsReq| { &m.uuid },
             |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.uuid },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHMPEMEONGE",
-            |m: &MatchThreeV2LevelEndCsReq| { &m.EHMPEMEONGE },
-            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.EHMPEMEONGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKFPENGNJPI",
-            |m: &MatchThreeV2LevelEndCsReq| { &m.JKFPENGNJPI },
-            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.JKFPENGNJPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BBGKAKHGOIO",
-            |m: &MatchThreeV2LevelEndCsReq| { &m.BBGKAKHGOIO },
-            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.BBGKAKHGOIO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HLDNMIBKLKJ",
             |m: &MatchThreeV2LevelEndCsReq| { &m.HLDNMIBKLKJ },
             |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.HLDNMIBKLKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &MatchThreeV2LevelEndCsReq| { &m.ACJCPHIFMLN },
-            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.ACJCPHIFMLN },
+            "JKFPENGNJPI",
+            |m: &MatchThreeV2LevelEndCsReq| { &m.JKFPENGNJPI },
+            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.JKFPENGNJPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKBJHPIJCAE",
-            |m: &MatchThreeV2LevelEndCsReq| { &m.DKBJHPIJCAE },
-            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.DKBJHPIJCAE },
+            "EHMPEMEONGE",
+            |m: &MatchThreeV2LevelEndCsReq| { &m.EHMPEMEONGE },
+            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.EHMPEMEONGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BKMPFEOCFIB",
             |m: &MatchThreeV2LevelEndCsReq| { &m.BKMPFEOCFIB },
             |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.BKMPFEOCFIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_id",
+            |m: &MatchThreeV2LevelEndCsReq| { &m.level_id },
+            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BBGKAKHGOIO",
+            |m: &MatchThreeV2LevelEndCsReq| { &m.BBGKAKHGOIO },
+            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.BBGKAKHGOIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DKBJHPIJCAE",
+            |m: &MatchThreeV2LevelEndCsReq| { &m.DKBJHPIJCAE },
+            |m: &mut MatchThreeV2LevelEndCsReq| { &mut m.DKBJHPIJCAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeV2LevelEndCsReq>(
             "MatchThreeV2LevelEndCsReq",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for MatchThreeV2LevelEndCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                90 => {
                     self.uuid = is.read_string()?;
                 },
-                80 => {
-                    self.EHMPEMEONGE = is.read_uint32()?;
-                },
-                96 => {
-                    self.JKFPENGNJPI = is.read_uint32()?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BBGKAKHGOIO)?;
-                },
-                56 => {
-                    self.BBGKAKHGOIO.push(is.read_uint32()?);
-                },
-                34 => {
+                50 => {
                     self.HLDNMIBKLKJ.push(is.read_message()?);
                 },
-                48 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                72 => {
+                    self.JKFPENGNJPI = is.read_uint32()?;
+                },
+                96 => {
+                    self.EHMPEMEONGE = is.read_uint32()?;
+                },
+                40 => {
+                    self.BKMPFEOCFIB = is.read_uint32()?;
+                },
+                120 => {
+                    self.level_id = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BBGKAKHGOIO)?;
                 },
                 24 => {
-                    self.DKBJHPIJCAE = is.read_uint32()?;
+                    self.BBGKAKHGOIO.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.BKMPFEOCFIB = is.read_uint32()?;
+                16 => {
+                    self.DKBJHPIJCAE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -161,27 +161,27 @@ impl ::protobuf::Message for MatchThreeV2LevelEndCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.uuid.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.uuid);
+            my_size += ::protobuf::rt::string_size(11, &self.uuid);
         }
-        if self.EHMPEMEONGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.EHMPEMEONGE);
-        }
-        if self.JKFPENGNJPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JKFPENGNJPI);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BBGKAKHGOIO);
         for value in &self.HLDNMIBKLKJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ACJCPHIFMLN);
+        if self.JKFPENGNJPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JKFPENGNJPI);
         }
-        if self.DKBJHPIJCAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DKBJHPIJCAE);
+        if self.EHMPEMEONGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.EHMPEMEONGE);
         }
         if self.BKMPFEOCFIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BKMPFEOCFIB);
+            my_size += ::protobuf::rt::uint32_size(5, self.BKMPFEOCFIB);
+        }
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BBGKAKHGOIO);
+        if self.DKBJHPIJCAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DKBJHPIJCAE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,26 +190,26 @@ impl ::protobuf::Message for MatchThreeV2LevelEndCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.uuid.is_empty() {
-            os.write_string(14, &self.uuid)?;
+            os.write_string(11, &self.uuid)?;
+        }
+        for v in &self.HLDNMIBKLKJ {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.JKFPENGNJPI != 0 {
+            os.write_uint32(9, self.JKFPENGNJPI)?;
         }
         if self.EHMPEMEONGE != 0 {
-            os.write_uint32(10, self.EHMPEMEONGE)?;
-        }
-        if self.JKFPENGNJPI != 0 {
-            os.write_uint32(12, self.JKFPENGNJPI)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.BBGKAKHGOIO)?;
-        for v in &self.HLDNMIBKLKJ {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(6, self.ACJCPHIFMLN)?;
-        }
-        if self.DKBJHPIJCAE != 0 {
-            os.write_uint32(3, self.DKBJHPIJCAE)?;
+            os.write_uint32(12, self.EHMPEMEONGE)?;
         }
         if self.BKMPFEOCFIB != 0 {
-            os.write_uint32(13, self.BKMPFEOCFIB)?;
+            os.write_uint32(5, self.BKMPFEOCFIB)?;
+        }
+        if self.level_id != 0 {
+            os.write_uint32(15, self.level_id)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.BBGKAKHGOIO)?;
+        if self.DKBJHPIJCAE != 0 {
+            os.write_uint32(2, self.DKBJHPIJCAE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,26 +229,26 @@ impl ::protobuf::Message for MatchThreeV2LevelEndCsReq {
 
     fn clear(&mut self) {
         self.uuid.clear();
-        self.EHMPEMEONGE = 0;
-        self.JKFPENGNJPI = 0;
-        self.BBGKAKHGOIO.clear();
         self.HLDNMIBKLKJ.clear();
-        self.ACJCPHIFMLN = 0;
-        self.DKBJHPIJCAE = 0;
+        self.JKFPENGNJPI = 0;
+        self.EHMPEMEONGE = 0;
         self.BKMPFEOCFIB = 0;
+        self.level_id = 0;
+        self.BBGKAKHGOIO.clear();
+        self.DKBJHPIJCAE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeV2LevelEndCsReq {
         static instance: MatchThreeV2LevelEndCsReq = MatchThreeV2LevelEndCsReq {
             uuid: ::std::string::String::new(),
-            EHMPEMEONGE: 0,
-            JKFPENGNJPI: 0,
-            BBGKAKHGOIO: ::std::vec::Vec::new(),
             HLDNMIBKLKJ: ::std::vec::Vec::new(),
-            ACJCPHIFMLN: 0,
-            DKBJHPIJCAE: 0,
+            JKFPENGNJPI: 0,
+            EHMPEMEONGE: 0,
             BKMPFEOCFIB: 0,
+            level_id: 0,
+            BBGKAKHGOIO: ::std::vec::Vec::new(),
+            DKBJHPIJCAE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,15 +273,15 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2LevelEndCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fMatchThreeV2LevelEndCsReq.proto\x1a\x11KHOCCHABNMN.proto\"\xab\x02\
-    \n\x19MatchThreeV2LevelEndCsReq\x12\x12\n\x04uuid\x18\x0e\x20\x01(\tR\
-    \x04uuid\x12\x20\n\x0bEHMPEMEONGE\x18\n\x20\x01(\rR\x0bEHMPEMEONGE\x12\
-    \x20\n\x0bJKFPENGNJPI\x18\x0c\x20\x01(\rR\x0bJKFPENGNJPI\x12\x20\n\x0bBB\
-    GKAKHGOIO\x18\x07\x20\x03(\rR\x0bBBGKAKHGOIO\x12.\n\x0bHLDNMIBKLKJ\x18\
-    \x04\x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bHLDNMIBKLKJ\x12\x20\n\x0bACJCPHIF\
-    MLN\x18\x06\x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bDKBJHPIJCAE\x18\x03\
-    \x20\x01(\rR\x0bDKBJHPIJCAE\x12\x20\n\x0bBKMPFEOCFIB\x18\r\x20\x01(\rR\
-    \x0bBKMPFEOCFIBb\x06proto3\
+    \n\x1fMatchThreeV2LevelEndCsReq.proto\x1a\x11KHOCCHABNMN.proto\"\xa4\x02\
+    \n\x19MatchThreeV2LevelEndCsReq\x12\x12\n\x04uuid\x18\x0b\x20\x01(\tR\
+    \x04uuid\x12.\n\x0bHLDNMIBKLKJ\x18\x06\x20\x03(\x0b2\x0c.KHOCCHABNMNR\
+    \x0bHLDNMIBKLKJ\x12\x20\n\x0bJKFPENGNJPI\x18\t\x20\x01(\rR\x0bJKFPENGNJP\
+    I\x12\x20\n\x0bEHMPEMEONGE\x18\x0c\x20\x01(\rR\x0bEHMPEMEONGE\x12\x20\n\
+    \x0bBKMPFEOCFIB\x18\x05\x20\x01(\rR\x0bBKMPFEOCFIB\x12\x19\n\x08level_id\
+    \x18\x0f\x20\x01(\rR\x07levelId\x12\x20\n\x0bBBGKAKHGOIO\x18\x03\x20\x03\
+    (\rR\x0bBBGKAKHGOIO\x12\x20\n\x0bDKBJHPIJCAE\x18\x02\x20\x01(\rR\x0bDKBJ\
+    HPIJCAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

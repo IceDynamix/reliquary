@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionCustomValue {
     // message fields
+    // @@protoc_insertion_point(field:MissionCustomValue.custom_value)
+    pub custom_value: u32,
     // @@protoc_insertion_point(field:MissionCustomValue.index)
     pub index: u32,
     // @@protoc_insertion_point(field:MissionCustomValue.DFDEKANJBLG)
     pub DFDEKANJBLG: ::std::string::String,
-    // @@protoc_insertion_point(field:MissionCustomValue.custom_value)
-    pub custom_value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MissionCustomValue.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl MissionCustomValue {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "custom_value",
+            |m: &MissionCustomValue| { &m.custom_value },
+            |m: &mut MissionCustomValue| { &mut m.custom_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &MissionCustomValue| { &m.index },
             |m: &mut MissionCustomValue| { &mut m.index },
@@ -62,11 +67,6 @@ impl MissionCustomValue {
             "DFDEKANJBLG",
             |m: &MissionCustomValue| { &m.DFDEKANJBLG },
             |m: &mut MissionCustomValue| { &mut m.DFDEKANJBLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "custom_value",
-            |m: &MissionCustomValue| { &m.custom_value },
-            |m: &mut MissionCustomValue| { &mut m.custom_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionCustomValue>(
             "MissionCustomValue",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MissionCustomValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.index = is.read_uint32()?;
-                },
-                66 => {
-                    self.DFDEKANJBLG = is.read_string()?;
+                96 => {
+                    self.custom_value = is.read_uint32()?;
                 },
                 40 => {
-                    self.custom_value = is.read_uint32()?;
+                    self.index = is.read_uint32()?;
+                },
+                10 => {
+                    self.DFDEKANJBLG = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MissionCustomValue {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.custom_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.custom_value);
+        }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.index);
+            my_size += ::protobuf::rt::uint32_size(5, self.index);
         }
         if !self.DFDEKANJBLG.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.DFDEKANJBLG);
-        }
-        if self.custom_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.custom_value);
+            my_size += ::protobuf::rt::string_size(1, &self.DFDEKANJBLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MissionCustomValue {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.custom_value != 0 {
+            os.write_uint32(12, self.custom_value)?;
+        }
         if self.index != 0 {
-            os.write_uint32(3, self.index)?;
+            os.write_uint32(5, self.index)?;
         }
         if !self.DFDEKANJBLG.is_empty() {
-            os.write_string(8, &self.DFDEKANJBLG)?;
-        }
-        if self.custom_value != 0 {
-            os.write_uint32(5, self.custom_value)?;
+            os.write_string(1, &self.DFDEKANJBLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MissionCustomValue {
     }
 
     fn clear(&mut self) {
+        self.custom_value = 0;
         self.index = 0;
         self.DFDEKANJBLG.clear();
-        self.custom_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionCustomValue {
         static instance: MissionCustomValue = MissionCustomValue {
+            custom_value: 0,
             index: 0,
             DFDEKANJBLG: ::std::string::String::new(),
-            custom_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValue {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MissionCustomValue.proto\"o\n\x12MissionCustomValue\x12\x14\n\x05i\
-    ndex\x18\x03\x20\x01(\rR\x05index\x12\x20\n\x0bDFDEKANJBLG\x18\x08\x20\
-    \x01(\tR\x0bDFDEKANJBLG\x12!\n\x0ccustom_value\x18\x05\x20\x01(\rR\x0bcu\
-    stomValueb\x06proto3\
+    \n\x18MissionCustomValue.proto\"o\n\x12MissionCustomValue\x12!\n\x0ccust\
+    om_value\x18\x0c\x20\x01(\rR\x0bcustomValue\x12\x14\n\x05index\x18\x05\
+    \x20\x01(\rR\x05index\x12\x20\n\x0bDFDEKANJBLG\x18\x01\x20\x01(\tR\x0bDF\
+    DEKANJBLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

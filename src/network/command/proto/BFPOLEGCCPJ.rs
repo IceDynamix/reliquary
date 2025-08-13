@@ -82,7 +82,7 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
                 88 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                16 => {
                     self.cnt = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
             my_size += ::protobuf::rt::int32_size(11, self.type_.value());
         }
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(2, self.cnt);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.cnt != 0 {
-            os.write_uint32(13, self.cnt)?;
+            os.write_uint32(2, self.cnt)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for BFPOLEGCCPJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFPOLEGCCPJ.proto\x1a\x11HCFFFEIMCMF.proto\"A\n\x0bBFPOLEGCCPJ\x12\
     \x20\n\x04type\x18\x0b\x20\x01(\x0e2\x0c.HCFFFEIMCMFR\x04type\x12\x10\n\
-    \x03cnt\x18\r\x20\x01(\rR\x03cntb\x06proto3\
+    \x03cnt\x18\x02\x20\x01(\rR\x03cntb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

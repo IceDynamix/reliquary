@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JGOGDBMPLCP {
     // message fields
-    // @@protoc_insertion_point(field:JGOGDBMPLCP.FMCDGPJFEAF)
-    pub FMCDGPJFEAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JGOGDBMPLCP.FJOKPLKODLD)
     pub FJOKPLKODLD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JGOGDBMPLCP.FMCDGPJFEAF)
+    pub FMCDGPJFEAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JGOGDBMPLCP.exp)
     pub exp: u32,
     // special fields
@@ -54,14 +54,14 @@ impl JGOGDBMPLCP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMCDGPJFEAF",
-            |m: &JGOGDBMPLCP| { &m.FMCDGPJFEAF },
-            |m: &mut JGOGDBMPLCP| { &mut m.FMCDGPJFEAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FJOKPLKODLD",
             |m: &JGOGDBMPLCP| { &m.FJOKPLKODLD },
             |m: &mut JGOGDBMPLCP| { &mut m.FJOKPLKODLD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FMCDGPJFEAF",
+            |m: &JGOGDBMPLCP| { &m.FMCDGPJFEAF },
+            |m: &mut JGOGDBMPLCP| { &mut m.FMCDGPJFEAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FMCDGPJFEAF)?;
-                },
-                72 => {
-                    self.FMCDGPJFEAF.push(is.read_uint32()?);
-                },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.FJOKPLKODLD)?;
                 },
-                48 => {
+                64 => {
                     self.FJOKPLKODLD.push(is.read_uint32()?);
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FMCDGPJFEAF)?;
+                },
+                120 => {
+                    self.FMCDGPJFEAF.push(is.read_uint32()?);
                 },
                 40 => {
                     self.exp = is.read_uint32()?;
@@ -113,8 +113,8 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.FMCDGPJFEAF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FJOKPLKODLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FJOKPLKODLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.FMCDGPJFEAF);
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.exp);
         }
@@ -124,8 +124,8 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.FMCDGPJFEAF)?;
-        os.write_repeated_packed_uint32(6, &self.FJOKPLKODLD)?;
+        os.write_repeated_packed_uint32(8, &self.FJOKPLKODLD)?;
+        os.write_repeated_packed_uint32(15, &self.FMCDGPJFEAF)?;
         if self.exp != 0 {
             os.write_uint32(5, self.exp)?;
         }
@@ -146,16 +146,16 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     }
 
     fn clear(&mut self) {
-        self.FMCDGPJFEAF.clear();
         self.FJOKPLKODLD.clear();
+        self.FMCDGPJFEAF.clear();
         self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGOGDBMPLCP {
         static instance: JGOGDBMPLCP = JGOGDBMPLCP {
-            FMCDGPJFEAF: ::std::vec::Vec::new(),
             FJOKPLKODLD: ::std::vec::Vec::new(),
+            FMCDGPJFEAF: ::std::vec::Vec::new(),
             exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -181,10 +181,10 @@ impl ::protobuf::reflect::ProtobufValue for JGOGDBMPLCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JGOGDBMPLCP.proto\"c\n\x0bJGOGDBMPLCP\x12\x20\n\x0bFMCDGPJFEAF\x18\
-    \t\x20\x03(\rR\x0bFMCDGPJFEAF\x12\x20\n\x0bFJOKPLKODLD\x18\x06\x20\x03(\
-    \rR\x0bFJOKPLKODLD\x12\x10\n\x03exp\x18\x05\x20\x01(\rR\x03expb\x06proto\
-    3\
+    \n\x11JGOGDBMPLCP.proto\"c\n\x0bJGOGDBMPLCP\x12\x20\n\x0bFJOKPLKODLD\x18\
+    \x08\x20\x03(\rR\x0bFJOKPLKODLD\x12\x20\n\x0bFMCDGPJFEAF\x18\x0f\x20\x03\
+    (\rR\x0bFMCDGPJFEAF\x12\x10\n\x03exp\x18\x05\x20\x01(\rR\x03expb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

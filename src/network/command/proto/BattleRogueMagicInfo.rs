@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleRogueMagicInfo {
     // message fields
-    // @@protoc_insertion_point(field:BattleRogueMagicInfo.modifier__content)
-    pub modifier__content: ::protobuf::MessageField<super::BattleRogueMagicModifierInfo::BattleRogueMagicModifierInfo>,
+    // @@protoc_insertion_point(field:BattleRogueMagicInfo.modifier_content)
+    pub modifier_content: ::protobuf::MessageField<super::BattleRogueMagicModifierInfo::BattleRogueMagicModifierInfo>,
     // @@protoc_insertion_point(field:BattleRogueMagicInfo.detail_info)
     pub detail_info: ::protobuf::MessageField<super::BattleRogueMagicDetailInfo::BattleRogueMagicDetailInfo>,
     // special fields
@@ -52,9 +52,9 @@ impl BattleRogueMagicInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleRogueMagicModifierInfo::BattleRogueMagicModifierInfo>(
-            "modifier__content",
-            |m: &BattleRogueMagicInfo| { &m.modifier__content },
-            |m: &mut BattleRogueMagicInfo| { &mut m.modifier__content },
+            "modifier_content",
+            |m: &BattleRogueMagicInfo| { &m.modifier_content },
+            |m: &mut BattleRogueMagicInfo| { &mut m.modifier_content },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleRogueMagicDetailInfo::BattleRogueMagicDetailInfo>(
             "detail_info",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier__content)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier_content)?;
                 },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail_info)?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.modifier__content.as_ref() {
+        if let Some(v) = self.modifier_content.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,7 +111,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.modifier__content.as_ref() {
+        if let Some(v) = self.modifier_content.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.detail_info.as_ref() {
@@ -134,14 +134,14 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     }
 
     fn clear(&mut self) {
-        self.modifier__content.clear();
+        self.modifier_content.clear();
         self.detail_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleRogueMagicInfo {
         static instance: BattleRogueMagicInfo = BattleRogueMagicInfo {
-            modifier__content: ::protobuf::MessageField::none(),
+            modifier_content: ::protobuf::MessageField::none(),
             detail_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleRogueMagicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBattleRogueMagicInfo.proto\x1a\x20BattleRogueMagicDetailInfo.proto\
-    \x1a\"BattleRogueMagicModifierInfo.proto\"\x9f\x01\n\x14BattleRogueMagic\
-    Info\x12I\n\x11modifier__content\x18\x01\x20\x01(\x0b2\x1d.BattleRogueMa\
-    gicModifierInfoR\x0fmodifierContent\x12<\n\x0bdetail_info\x18\x02\x20\
-    \x01(\x0b2\x1b.BattleRogueMagicDetailInfoR\ndetailInfob\x06proto3\
+    \x1a\"BattleRogueMagicModifierInfo.proto\"\x9e\x01\n\x14BattleRogueMagic\
+    Info\x12H\n\x10modifier_content\x18\x01\x20\x01(\x0b2\x1d.BattleRogueMag\
+    icModifierInfoR\x0fmodifierContent\x12<\n\x0bdetail_info\x18\x02\x20\x01\
+    (\x0b2\x1b.BattleRogueMagicDetailInfoR\ndetailInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

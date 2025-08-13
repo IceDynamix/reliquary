@@ -72,7 +72,7 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.pam_skin = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.pam_skin != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.pam_skin);
+            my_size += ::protobuf::rt::uint32_size(5, self.pam_skin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SelectPamSkinCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.pam_skin != 0 {
-            os.write_uint32(11, self.pam_skin)?;
+            os.write_uint32(5, self.pam_skin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SelectPamSkinCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SelectPamSkinCsReq.proto\"/\n\x12SelectPamSkinCsReq\x12\x19\n\x08p\
-    am_skin\x18\x0b\x20\x01(\rR\x07pamSkinb\x06proto3\
+    am_skin\x18\x05\x20\x01(\rR\x07pamSkinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

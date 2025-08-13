@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingStoryConfirmScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
     // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.BGLEHMKMAPG)
+    pub BGLEHMKMAPG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingStoryConfirmScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SwordTrainingStoryConfirmScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &SwordTrainingStoryConfirmScRsp| { &m.BGLEHMKMAPG },
-            |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.BGLEHMKMAPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SwordTrainingStoryConfirmScRsp| { &m.retcode },
             |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BGLEHMKMAPG",
+            |m: &SwordTrainingStoryConfirmScRsp| { &m.BGLEHMKMAPG },
+            |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.BGLEHMKMAPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingStoryConfirmScRsp>(
             "SwordTrainingStoryConfirmScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 32 => {
                     self.BGLEHMKMAPG = is.read_uint32()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         if self.BGLEHMKMAPG != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.BGLEHMKMAPG);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
+        }
         if self.BGLEHMKMAPG != 0 {
             os.write_uint32(4, self.BGLEHMKMAPG)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     }
 
     fn clear(&mut self) {
-        self.BGLEHMKMAPG = 0;
         self.retcode = 0;
+        self.BGLEHMKMAPG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingStoryConfirmScRsp {
         static instance: SwordTrainingStoryConfirmScRsp = SwordTrainingStoryConfirmScRsp {
-            BGLEHMKMAPG: 0,
             retcode: 0,
+            BGLEHMKMAPG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingStoryConfirmScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SwordTrainingStoryConfirmScRsp.proto\"\\\n\x1eSwordTrainingStoryConfi\
-    rmScRsp\x12\x20\n\x0bBGLEHMKMAPG\x18\x04\x20\x01(\rR\x0bBGLEHMKMAPG\x12\
-    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    rmScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bBGLEHMKMAPG\x18\x04\x20\x01(\rR\x0bBGLEHMKMAPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

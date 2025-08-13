@@ -32,10 +32,10 @@ pub struct StartAetherDivideSceneBattleCsReq {
     pub assist_monster_entity_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.cast_entity_id)
     pub cast_entity_id: u32,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.skill_index)
-    pub skill_index: u32,
     // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.assist_monster_entity_info)
     pub assist_monster_entity_info: ::std::vec::Vec<super::AssistMonsterEntityInfo::AssistMonsterEntityInfo>,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.skill_index)
+    pub skill_index: u32,
     // @@protoc_insertion_point(field:StartAetherDivideSceneBattleCsReq.attacked_by_entity_id)
     pub attacked_by_entity_id: u32,
     // special fields
@@ -67,15 +67,15 @@ impl StartAetherDivideSceneBattleCsReq {
             |m: &StartAetherDivideSceneBattleCsReq| { &m.cast_entity_id },
             |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.cast_entity_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skill_index",
-            |m: &StartAetherDivideSceneBattleCsReq| { &m.skill_index },
-            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.skill_index },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "assist_monster_entity_info",
             |m: &StartAetherDivideSceneBattleCsReq| { &m.assist_monster_entity_info },
             |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.assist_monster_entity_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "skill_index",
+            |m: &StartAetherDivideSceneBattleCsReq| { &m.skill_index },
+            |m: &mut StartAetherDivideSceneBattleCsReq| { &mut m.skill_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "attacked_by_entity_id",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.assist_monster_entity_id_list)?;
                 },
-                56 => {
+                72 => {
                     self.assist_monster_entity_id_list.push(is.read_uint32()?);
                 },
-                112 => {
+                96 => {
                     self.cast_entity_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.skill_index = is.read_uint32()?;
                 },
                 82 => {
                     self.assist_monster_entity_info.push(is.read_message()?);
                 },
-                48 => {
+                64 => {
+                    self.skill_index = is.read_uint32()?;
+                },
+                112 => {
                     self.attacked_by_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -130,19 +130,19 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.assist_monster_entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.assist_monster_entity_id_list);
         if self.cast_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cast_entity_id);
-        }
-        if self.skill_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.skill_index);
+            my_size += ::protobuf::rt::uint32_size(12, self.cast_entity_id);
         }
         for value in &self.assist_monster_entity_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.skill_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.skill_index);
+        }
         if self.attacked_by_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.attacked_by_entity_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.attacked_by_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,18 +150,18 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.assist_monster_entity_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.assist_monster_entity_id_list)?;
         if self.cast_entity_id != 0 {
-            os.write_uint32(14, self.cast_entity_id)?;
-        }
-        if self.skill_index != 0 {
-            os.write_uint32(11, self.skill_index)?;
+            os.write_uint32(12, self.cast_entity_id)?;
         }
         for v in &self.assist_monster_entity_info {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.skill_index != 0 {
+            os.write_uint32(8, self.skill_index)?;
+        }
         if self.attacked_by_entity_id != 0 {
-            os.write_uint32(6, self.attacked_by_entity_id)?;
+            os.write_uint32(14, self.attacked_by_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,8 +182,8 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
     fn clear(&mut self) {
         self.assist_monster_entity_id_list.clear();
         self.cast_entity_id = 0;
-        self.skill_index = 0;
         self.assist_monster_entity_info.clear();
+        self.skill_index = 0;
         self.attacked_by_entity_id = 0;
         self.special_fields.clear();
     }
@@ -192,8 +192,8 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleCsReq {
         static instance: StartAetherDivideSceneBattleCsReq = StartAetherDivideSceneBattleCsReq {
             assist_monster_entity_id_list: ::std::vec::Vec::new(),
             cast_entity_id: 0,
-            skill_index: 0,
             assist_monster_entity_info: ::std::vec::Vec::new(),
+            skill_index: 0,
             attacked_by_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideSceneBattleCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'StartAetherDivideSceneBattleCsReq.proto\x1a\x1dAssistMonsterEntityInf\
     o.proto\"\xb6\x02\n!StartAetherDivideSceneBattleCsReq\x12@\n\x1dassist_m\
-    onster_entity_id_list\x18\x07\x20\x03(\rR\x19assistMonsterEntityIdList\
-    \x12$\n\x0ecast_entity_id\x18\x0e\x20\x01(\rR\x0ccastEntityId\x12\x1f\n\
-    \x0bskill_index\x18\x0b\x20\x01(\rR\nskillIndex\x12U\n\x1aassist_monster\
-    _entity_info\x18\n\x20\x03(\x0b2\x18.AssistMonsterEntityInfoR\x17assistM\
-    onsterEntityInfo\x121\n\x15attacked_by_entity_id\x18\x06\x20\x01(\rR\x12\
-    attackedByEntityIdb\x06proto3\
+    onster_entity_id_list\x18\t\x20\x03(\rR\x19assistMonsterEntityIdList\x12\
+    $\n\x0ecast_entity_id\x18\x0c\x20\x01(\rR\x0ccastEntityId\x12U\n\x1aassi\
+    st_monster_entity_info\x18\n\x20\x03(\x0b2\x18.AssistMonsterEntityInfoR\
+    \x17assistMonsterEntityInfo\x12\x1f\n\x0bskill_index\x18\x08\x20\x01(\rR\
+    \nskillIndex\x121\n\x15attacked_by_entity_id\x18\x0e\x20\x01(\rR\x12atta\
+    ckedByEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

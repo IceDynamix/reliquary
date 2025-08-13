@@ -79,13 +79,13 @@ impl ::protobuf::Message for AFBAMPLGHEH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.IHBJIIHBIBP)?;
                 },
-                8 => {
+                112 => {
                     self.IHBJIIHBIBP.push(is.read_uint32()?);
                 },
-                50 => {
+                74 => {
                     self.NCKCMGCBEHK.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for AFBAMPLGHEH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.IHBJIIHBIBP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IHBJIIHBIBP);
         for value in &self.NCKCMGCBEHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for AFBAMPLGHEH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.IHBJIIHBIBP)?;
+        os.write_repeated_packed_uint32(14, &self.IHBJIIHBIBP)?;
         for v in &self.NCKCMGCBEHK {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AFBAMPLGHEH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFBAMPLGHEH.proto\x1a\x11DHNFBGENLIG.proto\"_\n\x0bAFBAMPLGHEH\x12\
-    \x20\n\x0bIHBJIIHBIBP\x18\x01\x20\x03(\rR\x0bIHBJIIHBIBP\x12.\n\x0bNCKCM\
-    GCBEHK\x18\x06\x20\x03(\x0b2\x0c.DHNFBGENLIGR\x0bNCKCMGCBEHKb\x06proto3\
+    \x20\n\x0bIHBJIIHBIBP\x18\x0e\x20\x03(\rR\x0bIHBJIIHBIBP\x12.\n\x0bNCKCM\
+    GCBEHK\x18\t\x20\x03(\x0b2\x0c.DHNFBGENLIGR\x0bNCKCMGCBEHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

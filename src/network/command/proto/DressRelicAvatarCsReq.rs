@@ -79,10 +79,10 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                98 => {
+                106 => {
                     self.switch_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
         }
         for value in &self.switch_list {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+            os.write_uint32(6, self.avatar_id)?;
         }
         for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for DressRelicAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDressRelicAvatarCsReq.proto\x1a\x15DressRelicParam.proto\"g\n\x15D\
-    ressRelicAvatarCsReq\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarId\
-    \x121\n\x0bswitch_list\x18\x0c\x20\x03(\x0b2\x10.DressRelicParamR\nswitc\
-    hListb\x06proto3\
+    ressRelicAvatarCsReq\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarI\
+    d\x121\n\x0bswitch_list\x18\r\x20\x03(\x0b2\x10.DressRelicParamR\nswitch\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

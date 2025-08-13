@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendChallengeLineupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendChallengeLineupScRsp.JAEJJMJPMNC)
-    pub JAEJJMJPMNC: ::std::vec::Vec<super::FCNOLLFGPCK::FCNOLLFGPCK>,
-    // @@protoc_insertion_point(field:GetFriendChallengeLineupScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetFriendChallengeLineupScRsp.ONOCJEEBFCI)
     pub ONOCJEEBFCI: bool,
+    // @@protoc_insertion_point(field:GetFriendChallengeLineupScRsp.challenge_recommend_list)
+    pub challenge_recommend_list: ::std::vec::Vec<super::FCNOLLFGPCK::FCNOLLFGPCK>,
+    // @@protoc_insertion_point(field:GetFriendChallengeLineupScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendChallengeLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetFriendChallengeLineupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ONOCJEEBFCI",
+            |m: &GetFriendChallengeLineupScRsp| { &m.ONOCJEEBFCI },
+            |m: &mut GetFriendChallengeLineupScRsp| { &mut m.ONOCJEEBFCI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JAEJJMJPMNC",
-            |m: &GetFriendChallengeLineupScRsp| { &m.JAEJJMJPMNC },
-            |m: &mut GetFriendChallengeLineupScRsp| { &mut m.JAEJJMJPMNC },
+            "challenge_recommend_list",
+            |m: &GetFriendChallengeLineupScRsp| { &m.challenge_recommend_list },
+            |m: &mut GetFriendChallengeLineupScRsp| { &mut m.challenge_recommend_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendChallengeLineupScRsp| { &m.retcode },
             |m: &mut GetFriendChallengeLineupScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONOCJEEBFCI",
-            |m: &GetFriendChallengeLineupScRsp| { &m.ONOCJEEBFCI },
-            |m: &mut GetFriendChallengeLineupScRsp| { &mut m.ONOCJEEBFCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendChallengeLineupScRsp>(
             "GetFriendChallengeLineupScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetFriendChallengeLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.JAEJJMJPMNC.push(is.read_message()?);
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                48 => {
+                104 => {
                     self.ONOCJEEBFCI = is.read_bool()?;
+                },
+                26 => {
+                    self.challenge_recommend_list.push(is.read_message()?);
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetFriendChallengeLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JAEJJMJPMNC {
+        if self.ONOCJEEBFCI != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.challenge_recommend_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if self.ONOCJEEBFCI != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetFriendChallengeLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JAEJJMJPMNC {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.ONOCJEEBFCI != false {
+            os.write_bool(13, self.ONOCJEEBFCI)?;
+        }
+        for v in &self.challenge_recommend_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if self.ONOCJEEBFCI != false {
-            os.write_bool(6, self.ONOCJEEBFCI)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetFriendChallengeLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.JAEJJMJPMNC.clear();
-        self.retcode = 0;
         self.ONOCJEEBFCI = false;
+        self.challenge_recommend_list.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendChallengeLineupScRsp {
         static instance: GetFriendChallengeLineupScRsp = GetFriendChallengeLineupScRsp {
-            JAEJJMJPMNC: ::std::vec::Vec::new(),
-            retcode: 0,
             ONOCJEEBFCI: false,
+            challenge_recommend_list: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendChallengeLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendChallengeLineupScRsp.proto\x1a\x11FCNOLLFGPCK.proto\"\x8b\
-    \x01\n\x1dGetFriendChallengeLineupScRsp\x12.\n\x0bJAEJJMJPMNC\x18\x07\
-    \x20\x03(\x0b2\x0c.FCNOLLFGPCKR\x0bJAEJJMJPMNC\x12\x18\n\x07retcode\x18\
-    \x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bONOCJEEBFCI\x18\x06\x20\x01(\
-    \x08R\x0bONOCJEEBFCIb\x06proto3\
+    \n#GetFriendChallengeLineupScRsp.proto\x1a\x11FCNOLLFGPCK.proto\"\xa3\
+    \x01\n\x1dGetFriendChallengeLineupScRsp\x12\x20\n\x0bONOCJEEBFCI\x18\r\
+    \x20\x01(\x08R\x0bONOCJEEBFCI\x12F\n\x18challenge_recommend_list\x18\x03\
+    \x20\x03(\x0b2\x0c.FCNOLLFGPCKR\x16challengeRecommendList\x12\x18\n\x07r\
+    etcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

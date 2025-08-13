@@ -30,8 +30,8 @@ pub struct ParkourStartLevelCsReq {
     // message fields
     // @@protoc_insertion_point(field:ParkourStartLevelCsReq.POFMCALHOOC)
     pub POFMCALHOOC: u32,
-    // @@protoc_insertion_point(field:ParkourStartLevelCsReq.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:ParkourStartLevelCsReq.level_id)
+    pub level_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ParkourStartLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ParkourStartLevelCsReq {
             |m: &mut ParkourStartLevelCsReq| { &mut m.POFMCALHOOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &ParkourStartLevelCsReq| { &m.ACJCPHIFMLN },
-            |m: &mut ParkourStartLevelCsReq| { &mut m.ACJCPHIFMLN },
+            "level_id",
+            |m: &ParkourStartLevelCsReq| { &m.level_id },
+            |m: &mut ParkourStartLevelCsReq| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ParkourStartLevelCsReq>(
             "ParkourStartLevelCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                56 => {
                     self.POFMCALHOOC = is.read_uint32()?;
                 },
-                24 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                48 => {
+                    self.level_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.POFMCALHOOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.POFMCALHOOC);
+            my_size += ::protobuf::rt::uint32_size(7, self.POFMCALHOOC);
         }
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ACJCPHIFMLN);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.POFMCALHOOC != 0 {
-            os.write_uint32(9, self.POFMCALHOOC)?;
+            os.write_uint32(7, self.POFMCALHOOC)?;
         }
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(3, self.ACJCPHIFMLN)?;
+        if self.level_id != 0 {
+            os.write_uint32(6, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
 
     fn clear(&mut self) {
         self.POFMCALHOOC = 0;
-        self.ACJCPHIFMLN = 0;
+        self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourStartLevelCsReq {
         static instance: ParkourStartLevelCsReq = ParkourStartLevelCsReq {
             POFMCALHOOC: 0,
-            ACJCPHIFMLN: 0,
+            level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ParkourStartLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cParkourStartLevelCsReq.proto\"\\\n\x16ParkourStartLevelCsReq\x12\
-    \x20\n\x0bPOFMCALHOOC\x18\t\x20\x01(\rR\x0bPOFMCALHOOC\x12\x20\n\x0bACJC\
-    PHIFMLN\x18\x03\x20\x01(\rR\x0bACJCPHIFMLNb\x06proto3\
+    \n\x1cParkourStartLevelCsReq.proto\"U\n\x16ParkourStartLevelCsReq\x12\
+    \x20\n\x0bPOFMCALHOOC\x18\x07\x20\x01(\rR\x0bPOFMCALHOOC\x12\x19\n\x08le\
+    vel_id\x18\x06\x20\x01(\rR\x07levelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.CABEHKOFLPG = is.read_bool()?;
                 },
-                64 => {
+                88 => {
                     self.HPJJDCJHHOA = is.read_uint64()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
             my_size += 1 + 1;
         }
         if self.HPJJDCJHHOA != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.HPJJDCJHHOA);
+            my_size += ::protobuf::rt::uint64_size(11, self.HPJJDCJHHOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CABEHKOFLPG != false {
-            os.write_bool(12, self.CABEHKOFLPG)?;
+            os.write_bool(8, self.CABEHKOFLPG)?;
         }
         if self.HPJJDCJHHOA != 0 {
-            os.write_uint64(8, self.HPJJDCJHHOA)?;
+            os.write_uint64(11, self.HPJJDCJHHOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetOfferedCardPieceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'PlanetFesGetOfferedCardPieceCsReq.proto\"g\n!PlanetFesGetOfferedCardP\
-    ieceCsReq\x12\x20\n\x0bCABEHKOFLPG\x18\x0c\x20\x01(\x08R\x0bCABEHKOFLPG\
-    \x12\x20\n\x0bHPJJDCJHHOA\x18\x08\x20\x01(\x04R\x0bHPJJDCJHHOAb\x06proto\
+    ieceCsReq\x12\x20\n\x0bCABEHKOFLPG\x18\x08\x20\x01(\x08R\x0bCABEHKOFLPG\
+    \x12\x20\n\x0bHPJJDCJHHOA\x18\x0b\x20\x01(\x04R\x0bHPJJDCJHHOAb\x06proto\
     3\
 ";
 

@@ -72,7 +72,7 @@ impl ::protobuf::Message for CurAssistChangedNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FRIEND_APPLY_SOURCE_ASSIST)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CurAssistChangedNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FRIEND_APPLY_SOURCE_ASSIST.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for CurAssistChangedNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCurAssistChangedNotify.proto\x1a\x16PlayerAssistInfo.proto\"h\n\
-    \x16CurAssistChangedNotify\x12N\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x02\
+    \x16CurAssistChangedNotify\x12N\n\x1aFRIEND_APPLY_SOURCE_ASSIST\x18\x01\
     \x20\x01(\x0b2\x11.PlayerAssistInfoR\x17FRIENDAPPLYSOURCEASSISTb\x06prot\
     o3\
 ";

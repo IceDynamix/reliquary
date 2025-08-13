@@ -33,7 +33,7 @@ pub struct DMODINLGCCB {
     // @@protoc_insertion_point(field:DMODINLGCCB.EONLMDCBNME)
     pub EONLMDCBNME: u32,
     // @@protoc_insertion_point(field:DMODINLGCCB.status)
-    pub status: ::protobuf::EnumOrUnknown<super::HHICLPLJNCO::HHICLPLJNCO>,
+    pub status: ::protobuf::EnumOrUnknown<super::RogueBoothStatus::RogueBoothStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:DMODINLGCCB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -86,13 +86,13 @@ impl ::protobuf::Message for DMODINLGCCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                64 => {
                     self.KBDFBGINNBJ = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.EONLMDCBNME = is.read_uint32()?;
                 },
-                80 => {
+                32 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for DMODINLGCCB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KBDFBGINNBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KBDFBGINNBJ);
+            my_size += ::protobuf::rt::uint32_size(8, self.KBDFBGINNBJ);
         }
         if self.EONLMDCBNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EONLMDCBNME);
+            my_size += ::protobuf::rt::uint32_size(6, self.EONLMDCBNME);
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.status.value());
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DMODINLGCCB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KBDFBGINNBJ != 0 {
-            os.write_uint32(13, self.KBDFBGINNBJ)?;
+            os.write_uint32(8, self.KBDFBGINNBJ)?;
         }
         if self.EONLMDCBNME != 0 {
-            os.write_uint32(15, self.EONLMDCBNME)?;
+            os.write_uint32(6, self.EONLMDCBNME)?;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for DMODINLGCCB {
     fn clear(&mut self) {
         self.KBDFBGINNBJ = 0;
         self.EONLMDCBNME = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::HHICLPLJNCO::HHICLPLJNCO::ROGUE_BOOTH_NONE);
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE);
         self.special_fields.clear();
     }
 
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for DMODINLGCCB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DMODINLGCCB.proto\x1a\x11HHICLPLJNCO.proto\"w\n\x0bDMODINLGCCB\x12\
-    \x20\n\x0bKBDFBGINNBJ\x18\r\x20\x01(\rR\x0bKBDFBGINNBJ\x12\x20\n\x0bEONL\
-    MDCBNME\x18\x0f\x20\x01(\rR\x0bEONLMDCBNME\x12$\n\x06status\x18\n\x20\
-    \x01(\x0e2\x0c.HHICLPLJNCOR\x06statusb\x06proto3\
+    \n\x11DMODINLGCCB.proto\x1a\x16RogueBoothStatus.proto\"|\n\x0bDMODINLGCC\
+    B\x12\x20\n\x0bKBDFBGINNBJ\x18\x08\x20\x01(\rR\x0bKBDFBGINNBJ\x12\x20\n\
+    \x0bEONLMDCBNME\x18\x06\x20\x01(\rR\x0bEONLMDCBNME\x12)\n\x06status\x18\
+    \x04\x20\x01(\x0e2\x11.RogueBoothStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,7 +204,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HHICLPLJNCO::file_descriptor().clone());
+            deps.push(super::RogueBoothStatus::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DMODINLGCCB::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMaterialSubmitActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMaterialSubmitActivityDataScRsp.NBLHGEHLODN)
-    pub NBLHGEHLODN: ::std::vec::Vec<super::BCEKBNMNHOO::BCEKBNMNHOO>,
     // @@protoc_insertion_point(field:GetMaterialSubmitActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMaterialSubmitActivityDataScRsp.NBLHGEHLODN)
+    pub NBLHGEHLODN: ::std::vec::Vec<super::BCEKBNMNHOO::BCEKBNMNHOO>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMaterialSubmitActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetMaterialSubmitActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBLHGEHLODN",
-            |m: &GetMaterialSubmitActivityDataScRsp| { &m.NBLHGEHLODN },
-            |m: &mut GetMaterialSubmitActivityDataScRsp| { &mut m.NBLHGEHLODN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetMaterialSubmitActivityDataScRsp| { &m.retcode },
             |m: &mut GetMaterialSubmitActivityDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NBLHGEHLODN",
+            |m: &GetMaterialSubmitActivityDataScRsp| { &m.NBLHGEHLODN },
+            |m: &mut GetMaterialSubmitActivityDataScRsp| { &mut m.NBLHGEHLODN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMaterialSubmitActivityDataScRsp>(
             "GetMaterialSubmitActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetMaterialSubmitActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.NBLHGEHLODN.push(is.read_message()?);
-                },
-                112 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                66 => {
+                    self.NBLHGEHLODN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetMaterialSubmitActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         for value in &self.NBLHGEHLODN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NBLHGEHLODN {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
+        for v in &self.NBLHGEHLODN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetMaterialSubmitActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.NBLHGEHLODN.clear();
         self.retcode = 0;
+        self.NBLHGEHLODN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMaterialSubmitActivityDataScRsp {
         static instance: GetMaterialSubmitActivityDataScRsp = GetMaterialSubmitActivityDataScRsp {
-            NBLHGEHLODN: ::std::vec::Vec::new(),
             retcode: 0,
+            NBLHGEHLODN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMaterialSubmitActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(GetMaterialSubmitActivityDataScRsp.proto\x1a\x11BCEKBNMNHOO.proto\"n\
-    \n\"GetMaterialSubmitActivityDataScRsp\x12.\n\x0bNBLHGEHLODN\x18\x01\x20\
-    \x03(\x0b2\x0c.BCEKBNMNHOOR\x0bNBLHGEHLODN\x12\x18\n\x07retcode\x18\x0e\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\"GetMaterialSubmitActivityDataScRsp\x12\x18\n\x07retcode\x18\x03\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bNBLHGEHLODN\x18\x08\x20\x03(\x0b2\x0c.BCEK\
+    BNMNHOOR\x0bNBLHGEHLODNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

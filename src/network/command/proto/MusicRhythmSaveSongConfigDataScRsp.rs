@@ -30,8 +30,8 @@ pub struct MusicRhythmSaveSongConfigDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.CDIGALBEIMA)
-    pub CDIGALBEIMA: u32,
+    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.cur_song_id)
+    pub cur_song_id: u32,
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.MBLDFHLDCPI)
     pub MBLDFHLDCPI: u32,
     // special fields
@@ -59,9 +59,9 @@ impl MusicRhythmSaveSongConfigDataScRsp {
             |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDIGALBEIMA",
-            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.CDIGALBEIMA },
-            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.CDIGALBEIMA },
+            "cur_song_id",
+            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.cur_song_id },
+            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.cur_song_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBLDFHLDCPI",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
-                    self.CDIGALBEIMA = is.read_uint32()?;
+                64 => {
+                    self.cur_song_id = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.MBLDFHLDCPI = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.CDIGALBEIMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CDIGALBEIMA);
+        if self.cur_song_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.cur_song_id);
         }
         if self.MBLDFHLDCPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MBLDFHLDCPI);
+            my_size += ::protobuf::rt::uint32_size(14, self.MBLDFHLDCPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.CDIGALBEIMA != 0 {
-            os.write_uint32(1, self.CDIGALBEIMA)?;
+        if self.cur_song_id != 0 {
+            os.write_uint32(8, self.cur_song_id)?;
         }
         if self.MBLDFHLDCPI != 0 {
-            os.write_uint32(6, self.MBLDFHLDCPI)?;
+            os.write_uint32(14, self.MBLDFHLDCPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CDIGALBEIMA = 0;
+        self.cur_song_id = 0;
         self.MBLDFHLDCPI = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     fn default_instance() -> &'static MusicRhythmSaveSongConfigDataScRsp {
         static instance: MusicRhythmSaveSongConfigDataScRsp = MusicRhythmSaveSongConfigDataScRsp {
             retcode: 0,
-            CDIGALBEIMA: 0,
+            cur_song_id: 0,
             MBLDFHLDCPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(MusicRhythmSaveSongConfigDataScRsp.proto\"\x82\x01\n\"MusicRhythmSave\
-    SongConfigDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bCDIGALBEIMA\x18\x01\x20\x01(\rR\x0bCDIGALBEIMA\x12\x20\n\
-    \x0bMBLDFHLDCPI\x18\x06\x20\x01(\rR\x0bMBLDFHLDCPIb\x06proto3\
+    \n(MusicRhythmSaveSongConfigDataScRsp.proto\"\x80\x01\n\"MusicRhythmSave\
+    SongConfigDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    \x12\x1e\n\x0bcur_song_id\x18\x08\x20\x01(\rR\tcurSongId\x12\x20\n\x0bMB\
+    LDFHLDCPI\x18\x0e\x20\x01(\rR\x0bMBLDFHLDCPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

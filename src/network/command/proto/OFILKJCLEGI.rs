@@ -32,8 +32,8 @@ pub struct OFILKJCLEGI {
     pub monster_battle_type: u32,
     // @@protoc_insertion_point(field:OFILKJCLEGI.DBADLNFOPAO)
     pub DBADLNFOPAO: u64,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.ACJCPHIFMLN)
-    pub ACJCPHIFMLN: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.level_id)
+    pub level_id: u32,
     // @@protoc_insertion_point(field:OFILKJCLEGI.NLIBKABFGCC)
     pub NLIBKABFGCC: u32,
     // @@protoc_insertion_point(field:OFILKJCLEGI.NLEAIJHAPAP)
@@ -82,9 +82,9 @@ impl OFILKJCLEGI {
             |m: &mut OFILKJCLEGI| { &mut m.DBADLNFOPAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACJCPHIFMLN",
-            |m: &OFILKJCLEGI| { &m.ACJCPHIFMLN },
-            |m: &mut OFILKJCLEGI| { &mut m.ACJCPHIFMLN },
+            "level_id",
+            |m: &OFILKJCLEGI| { &m.level_id },
+            |m: &mut OFILKJCLEGI| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLIBKABFGCC",
@@ -156,7 +156,7 @@ impl ::protobuf::Message for OFILKJCLEGI {
                     self.DBADLNFOPAO = is.read_uint64()?;
                 },
                 24 => {
-                    self.ACJCPHIFMLN = is.read_uint32()?;
+                    self.level_id = is.read_uint32()?;
                 },
                 32 => {
                     self.NLIBKABFGCC = is.read_uint32()?;
@@ -206,8 +206,8 @@ impl ::protobuf::Message for OFILKJCLEGI {
         if self.DBADLNFOPAO != 0 {
             my_size += ::protobuf::rt::uint64_size(2, self.DBADLNFOPAO);
         }
-        if self.ACJCPHIFMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ACJCPHIFMLN);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level_id);
         }
         if self.NLIBKABFGCC != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.NLIBKABFGCC);
@@ -246,8 +246,8 @@ impl ::protobuf::Message for OFILKJCLEGI {
         if self.DBADLNFOPAO != 0 {
             os.write_uint64(2, self.DBADLNFOPAO)?;
         }
-        if self.ACJCPHIFMLN != 0 {
-            os.write_uint32(3, self.ACJCPHIFMLN)?;
+        if self.level_id != 0 {
+            os.write_uint32(3, self.level_id)?;
         }
         if self.NLIBKABFGCC != 0 {
             os.write_uint32(4, self.NLIBKABFGCC)?;
@@ -293,7 +293,7 @@ impl ::protobuf::Message for OFILKJCLEGI {
     fn clear(&mut self) {
         self.monster_battle_type = 0;
         self.DBADLNFOPAO = 0;
-        self.ACJCPHIFMLN = 0;
+        self.level_id = 0;
         self.NLIBKABFGCC = 0;
         self.NLEAIJHAPAP = false;
         self.IGHLABGGIJE = 0;
@@ -310,7 +310,7 @@ impl ::protobuf::Message for OFILKJCLEGI {
         static instance: OFILKJCLEGI = OFILKJCLEGI {
             monster_battle_type: 0,
             DBADLNFOPAO: 0,
-            ACJCPHIFMLN: 0,
+            level_id: 0,
             NLIBKABFGCC: 0,
             NLEAIJHAPAP: false,
             IGHLABGGIJE: 0,
@@ -344,17 +344,17 @@ impl ::protobuf::reflect::ProtobufValue for OFILKJCLEGI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OFILKJCLEGI.proto\"\xa0\x03\n\x0bOFILKJCLEGI\x12.\n\x13monster_bat\
+    \n\x11OFILKJCLEGI.proto\"\x99\x03\n\x0bOFILKJCLEGI\x12.\n\x13monster_bat\
     tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bDBADLNFOP\
-    AO\x18\x02\x20\x01(\x04R\x0bDBADLNFOPAO\x12\x20\n\x0bACJCPHIFMLN\x18\x03\
-    \x20\x01(\rR\x0bACJCPHIFMLN\x12\x20\n\x0bNLIBKABFGCC\x18\x04\x20\x01(\rR\
-    \x0bNLIBKABFGCC\x12\x20\n\x0bNLEAIJHAPAP\x18\x05\x20\x01(\x08R\x0bNLEAIJ\
-    HAPAP\x12\x20\n\x0bIGHLABGGIJE\x18\x06\x20\x01(\rR\x0bIGHLABGGIJE\x12\
-    \x12\n\x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\
-    \x08\x20\x01(\x04R\x0bEKLDPALNLDC\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\x01\
-    (\rR\x0bJBLMGNPMADM\x12\x20\n\x0bCBOIIACBAKF\x18\n\x20\x01(\rR\x0bCBOIIA\
-    CBAKF\x12\x1b\n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0b\
-    DJNMHMPKKKB\x18\x0c\x20\x01(\rR\x0bDJNMHMPKKKBb\x06proto3\
+    AO\x18\x02\x20\x01(\x04R\x0bDBADLNFOPAO\x12\x19\n\x08level_id\x18\x03\
+    \x20\x01(\rR\x07levelId\x12\x20\n\x0bNLIBKABFGCC\x18\x04\x20\x01(\rR\x0b\
+    NLIBKABFGCC\x12\x20\n\x0bNLEAIJHAPAP\x18\x05\x20\x01(\x08R\x0bNLEAIJHAPA\
+    P\x12\x20\n\x0bIGHLABGGIJE\x18\x06\x20\x01(\rR\x0bIGHLABGGIJE\x12\x12\n\
+    \x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\x08\
+    \x20\x01(\x04R\x0bEKLDPALNLDC\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\x01(\rR\
+    \x0bJBLMGNPMADM\x12\x20\n\x0bCBOIIACBAKF\x18\n\x20\x01(\rR\x0bCBOIIACBAK\
+    F\x12\x1b\n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bDJNM\
+    HMPKKKB\x18\x0c\x20\x01(\rR\x0bDJNMHMPKKKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

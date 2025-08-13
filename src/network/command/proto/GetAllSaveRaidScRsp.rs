@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAllSaveRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAllSaveRaidScRsp.NPJHICINONA)
-    pub NPJHICINONA: ::std::vec::Vec<super::JKDINNEDBAO::JKDINNEDBAO>,
+    // @@protoc_insertion_point(field:GetAllSaveRaidScRsp.raid_data_list)
+    pub raid_data_list: ::std::vec::Vec<super::RaidData::RaidData>,
     // @@protoc_insertion_point(field:GetAllSaveRaidScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetAllSaveRaidScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NPJHICINONA",
-            |m: &GetAllSaveRaidScRsp| { &m.NPJHICINONA },
-            |m: &mut GetAllSaveRaidScRsp| { &mut m.NPJHICINONA },
+            "raid_data_list",
+            |m: &GetAllSaveRaidScRsp| { &m.raid_data_list },
+            |m: &mut GetAllSaveRaidScRsp| { &mut m.raid_data_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.NPJHICINONA.push(is.read_message()?);
+                114 => {
+                    self.raid_data_list.push(is.read_message()?);
                 },
-                104 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NPJHICINONA {
+        for value in &self.raid_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NPJHICINONA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.raid_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.NPJHICINONA.clear();
+        self.raid_data_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAllSaveRaidScRsp {
         static instance: GetAllSaveRaidScRsp = GetAllSaveRaidScRsp {
-            NPJHICINONA: ::std::vec::Vec::new(),
+            raid_data_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAllSaveRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetAllSaveRaidScRsp.proto\x1a\x11JKDINNEDBAO.proto\"_\n\x13GetAllS\
-    aveRaidScRsp\x12.\n\x0bNPJHICINONA\x18\x01\x20\x03(\x0b2\x0c.JKDINNEDBAO\
-    R\x0bNPJHICINONA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06p\
-    roto3\
+    \n\x19GetAllSaveRaidScRsp.proto\x1a\x0eRaidData.proto\"`\n\x13GetAllSave\
+    RaidScRsp\x12/\n\x0eraid_data_list\x18\x0e\x20\x03(\x0b2\t.RaidDataR\x0c\
+    raidDataList\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JKDINNEDBAO::file_descriptor().clone());
+            deps.push(super::RaidData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAllSaveRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SyncRogueReviveInfoScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncRogueReviveInfoScNotify.revive_info)
-    pub revive_info: ::protobuf::MessageField<super::EJJGLGPEDEE::EJJGLGPEDEE>,
+    pub revive_info: ::protobuf::MessageField<super::RogueReviveInfo::RogueReviveInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueReviveInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl SyncRogueReviveInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJJGLGPEDEE::EJJGLGPEDEE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueReviveInfo::RogueReviveInfo>(
             "revive_info",
             |m: &SyncRogueReviveInfoScNotify| { &m.revive_info },
             |m: &mut SyncRogueReviveInfoScNotify| { &mut m.revive_info },
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueReviveInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SyncRogueReviveInfoScNotify.proto\x1a\x11EJJGLGPEDEE.proto\"L\n\x1bSy\
-    ncRogueReviveInfoScNotify\x12-\n\x0brevive_info\x18\x08\x20\x01(\x0b2\
-    \x0c.EJJGLGPEDEER\nreviveInfob\x06proto3\
+    \n!SyncRogueReviveInfoScNotify.proto\x1a\x15RogueReviveInfo.proto\"P\n\
+    \x1bSyncRogueReviveInfoScNotify\x121\n\x0brevive_info\x18\x08\x20\x01(\
+    \x0b2\x10.RogueReviveInfoR\nreviveInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EJJGLGPEDEE::file_descriptor().clone());
+            deps.push(super::RogueReviveInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueReviveInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

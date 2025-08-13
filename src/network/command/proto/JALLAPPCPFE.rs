@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JALLAPPCPFE {
     // message fields
-    // @@protoc_insertion_point(field:JALLAPPCPFE.DHELBCIMLGA)
-    pub DHELBCIMLGA: u32,
     // @@protoc_insertion_point(field:JALLAPPCPFE.FHOKFDMFNKG)
     pub FHOKFDMFNKG: bool,
+    // @@protoc_insertion_point(field:JALLAPPCPFE.DHELBCIMLGA)
+    pub DHELBCIMLGA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JALLAPPCPFE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JALLAPPCPFE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHELBCIMLGA",
-            |m: &JALLAPPCPFE| { &m.DHELBCIMLGA },
-            |m: &mut JALLAPPCPFE| { &mut m.DHELBCIMLGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FHOKFDMFNKG",
             |m: &JALLAPPCPFE| { &m.FHOKFDMFNKG },
             |m: &mut JALLAPPCPFE| { &mut m.FHOKFDMFNKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DHELBCIMLGA",
+            |m: &JALLAPPCPFE| { &m.DHELBCIMLGA },
+            |m: &mut JALLAPPCPFE| { &mut m.DHELBCIMLGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JALLAPPCPFE>(
             "JALLAPPCPFE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JALLAPPCPFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DHELBCIMLGA = is.read_uint32()?;
-                },
-                72 => {
+                64 => {
                     self.FHOKFDMFNKG = is.read_bool()?;
+                },
+                104 => {
+                    self.DHELBCIMLGA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JALLAPPCPFE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHELBCIMLGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DHELBCIMLGA);
-        }
         if self.FHOKFDMFNKG != false {
             my_size += 1 + 1;
+        }
+        if self.DHELBCIMLGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DHELBCIMLGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JALLAPPCPFE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHELBCIMLGA != 0 {
-            os.write_uint32(4, self.DHELBCIMLGA)?;
-        }
         if self.FHOKFDMFNKG != false {
-            os.write_bool(9, self.FHOKFDMFNKG)?;
+            os.write_bool(8, self.FHOKFDMFNKG)?;
+        }
+        if self.DHELBCIMLGA != 0 {
+            os.write_uint32(13, self.DHELBCIMLGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JALLAPPCPFE {
     }
 
     fn clear(&mut self) {
-        self.DHELBCIMLGA = 0;
         self.FHOKFDMFNKG = false;
+        self.DHELBCIMLGA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JALLAPPCPFE {
         static instance: JALLAPPCPFE = JALLAPPCPFE {
-            DHELBCIMLGA: 0,
             FHOKFDMFNKG: false,
+            DHELBCIMLGA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JALLAPPCPFE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JALLAPPCPFE.proto\"Q\n\x0bJALLAPPCPFE\x12\x20\n\x0bDHELBCIMLGA\x18\
-    \x04\x20\x01(\rR\x0bDHELBCIMLGA\x12\x20\n\x0bFHOKFDMFNKG\x18\t\x20\x01(\
-    \x08R\x0bFHOKFDMFNKGb\x06proto3\
+    \n\x11JALLAPPCPFE.proto\"Q\n\x0bJALLAPPCPFE\x12\x20\n\x0bFHOKFDMFNKG\x18\
+    \x08\x20\x01(\x08R\x0bFHOKFDMFNKG\x12\x20\n\x0bDHELBCIMLGA\x18\r\x20\x01\
+    (\rR\x0bDHELBCIMLGAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateShopLockGoodsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FateShopLockGoodsCsReq.is_protected)
-    pub is_protected: bool,
+    // @@protoc_insertion_point(field:FateShopLockGoodsCsReq.is_locked)
+    pub is_locked: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FateShopLockGoodsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FateShopLockGoodsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_protected",
-            |m: &FateShopLockGoodsCsReq| { &m.is_protected },
-            |m: &mut FateShopLockGoodsCsReq| { &mut m.is_protected },
+            "is_locked",
+            |m: &FateShopLockGoodsCsReq| { &m.is_locked },
+            |m: &mut FateShopLockGoodsCsReq| { &mut m.is_locked },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateShopLockGoodsCsReq>(
             "FateShopLockGoodsCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_protected = is.read_bool()?;
+                16 => {
+                    self.is_locked = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_protected != false {
+        if self.is_locked != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_protected != false {
-            os.write_bool(14, self.is_protected)?;
+        if self.is_locked != false {
+            os.write_bool(2, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_protected = false;
+        self.is_locked = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateShopLockGoodsCsReq {
         static instance: FateShopLockGoodsCsReq = FateShopLockGoodsCsReq {
-            is_protected: false,
+            is_locked: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FateShopLockGoodsCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cFateShopLockGoodsCsReq.proto\";\n\x16FateShopLockGoodsCsReq\x12!\n\
-    \x0cis_protected\x18\x0e\x20\x01(\x08R\x0bisProtectedb\x06proto3\
+    \n\x1cFateShopLockGoodsCsReq.proto\"5\n\x16FateShopLockGoodsCsReq\x12\
+    \x1b\n\tis_locked\x18\x02\x20\x01(\x08R\x08isLockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

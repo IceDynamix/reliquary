@@ -28,34 +28,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueGameInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.pending_action)
-    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.nous_value_info)
-    pub nous_value_info: ::protobuf::MessageField<super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_difficulty_info)
-    pub rogue_difficulty_info: ::protobuf::MessageField<super::ChessRogueCurrentDifficultyInfo::ChessRogueCurrentDifficultyInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.game_miracle_info)
-    pub game_miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_dice_info)
-    pub rogue_dice_info: ::protobuf::MessageField<super::ChessRogueDiceInfo::ChessRogueDiceInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue__lineup_info)
-    pub rogue__lineup_info: ::protobuf::MessageField<super::ChessRogueLineupInfo::ChessRogueLineupInfo>,
     // @@protoc_insertion_point(field:ChessRogueGameInfo.story_info)
     pub story_info: ::protobuf::MessageField<super::HKMLALBDPGO::HKMLALBDPGO>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_sub_mode)
-    pub rogue_sub_mode: u32,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_buff_info)
-    pub rogue_buff_info: ::protobuf::MessageField<super::ChessRogueBuffInfo::ChessRogueBuffInfo>,
     // @@protoc_insertion_point(field:ChessRogueGameInfo.level_info)
     pub level_info: ::protobuf::MessageField<super::ChessRogueLevelInfo::ChessRogueLevelInfo>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.virtual_item_info)
-    pub virtual_item_info: ::protobuf::MessageField<super::RogueVirtualItem::RogueVirtualItem>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_buff_info)
+    pub rogue_buff_info: ::protobuf::MessageField<super::ChessRogueBuffInfo::ChessRogueBuffInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.nous_value_info)
+    pub nous_value_info: ::protobuf::MessageField<super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_sub_mode)
+    pub rogue_sub_mode: u32,
     // @@protoc_insertion_point(field:ChessRogueGameInfo.OPAKJJMAGPH)
     pub OPAKJJMAGPH: ::protobuf::MessageField<super::IMNPEAJAJJO::IMNPEAJAJJO>,
-    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_difficulty_info)
+    pub rogue_difficulty_info: ::protobuf::MessageField<super::ChessRogueCurrentDifficultyInfo::ChessRogueCurrentDifficultyInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::ChessRogueLineupInfo::ChessRogueLineupInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_dice_info)
+    pub rogue_dice_info: ::protobuf::MessageField<super::ChessRogueDiceInfo::ChessRogueDiceInfo>,
     // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_current_game_info)
     pub rogue_current_game_info: ::std::vec::Vec<super::RogueGameInfo::RogueGameInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.game_miracle_info)
+    pub game_miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.virtual_item_info)
+    pub virtual_item_info: ::protobuf::MessageField<super::RogueVirtualItem::RogueVirtualItem>,
+    // @@protoc_insertion_point(field:ChessRogueGameInfo.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueGameInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,75 +75,75 @@ impl ChessRogueGameInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
-            "pending_action",
-            |m: &ChessRogueGameInfo| { &m.pending_action },
-            |m: &mut ChessRogueGameInfo| { &mut m.pending_action },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>(
-            "nous_value_info",
-            |m: &ChessRogueGameInfo| { &m.nous_value_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.nous_value_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueCurrentDifficultyInfo::ChessRogueCurrentDifficultyInfo>(
-            "rogue_difficulty_info",
-            |m: &ChessRogueGameInfo| { &m.rogue_difficulty_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue_difficulty_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
-            "game_miracle_info",
-            |m: &ChessRogueGameInfo| { &m.game_miracle_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.game_miracle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDiceInfo::ChessRogueDiceInfo>(
-            "rogue_dice_info",
-            |m: &ChessRogueGameInfo| { &m.rogue_dice_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue_dice_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLineupInfo::ChessRogueLineupInfo>(
-            "rogue__lineup_info",
-            |m: &ChessRogueGameInfo| { &m.rogue__lineup_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue__lineup_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKMLALBDPGO::HKMLALBDPGO>(
             "story_info",
             |m: &ChessRogueGameInfo| { &m.story_info },
             |m: &mut ChessRogueGameInfo| { &mut m.story_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_sub_mode",
-            |m: &ChessRogueGameInfo| { &m.rogue_sub_mode },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue_sub_mode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
-            "rogue_buff_info",
-            |m: &ChessRogueGameInfo| { &m.rogue_buff_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue_buff_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLevelInfo::ChessRogueLevelInfo>(
             "level_info",
             |m: &ChessRogueGameInfo| { &m.level_info },
             |m: &mut ChessRogueGameInfo| { &mut m.level_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItem::RogueVirtualItem>(
-            "virtual_item_info",
-            |m: &ChessRogueGameInfo| { &m.virtual_item_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.virtual_item_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
+            "rogue_buff_info",
+            |m: &ChessRogueGameInfo| { &m.rogue_buff_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_buff_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>(
+            "nous_value_info",
+            |m: &ChessRogueGameInfo| { &m.nous_value_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.nous_value_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_sub_mode",
+            |m: &ChessRogueGameInfo| { &m.rogue_sub_mode },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_sub_mode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMNPEAJAJJO::IMNPEAJAJJO>(
             "OPAKJJMAGPH",
             |m: &ChessRogueGameInfo| { &m.OPAKJJMAGPH },
             |m: &mut ChessRogueGameInfo| { &mut m.OPAKJJMAGPH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
-            "rogue_aeon_info",
-            |m: &ChessRogueGameInfo| { &m.rogue_aeon_info },
-            |m: &mut ChessRogueGameInfo| { &mut m.rogue_aeon_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueCurrentDifficultyInfo::ChessRogueCurrentDifficultyInfo>(
+            "rogue_difficulty_info",
+            |m: &ChessRogueGameInfo| { &m.rogue_difficulty_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_difficulty_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLineupInfo::ChessRogueLineupInfo>(
+            "rogue_lineup_info",
+            |m: &ChessRogueGameInfo| { &m.rogue_lineup_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDiceInfo::ChessRogueDiceInfo>(
+            "rogue_dice_info",
+            |m: &ChessRogueGameInfo| { &m.rogue_dice_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_dice_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_current_game_info",
             |m: &ChessRogueGameInfo| { &m.rogue_current_game_info },
             |m: &mut ChessRogueGameInfo| { &mut m.rogue_current_game_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
+            "game_miracle_info",
+            |m: &ChessRogueGameInfo| { &m.game_miracle_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.game_miracle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
+            "rogue_aeon_info",
+            |m: &ChessRogueGameInfo| { &m.rogue_aeon_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItem::RogueVirtualItem>(
+            "virtual_item_info",
+            |m: &ChessRogueGameInfo| { &m.virtual_item_info },
+            |m: &mut ChessRogueGameInfo| { &mut m.virtual_item_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "pending_action",
+            |m: &ChessRogueGameInfo| { &m.pending_action },
+            |m: &mut ChessRogueGameInfo| { &mut m.pending_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueGameInfo>(
             "ChessRogueGameInfo",
@@ -163,47 +163,47 @@ impl ::protobuf::Message for ChessRogueGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.nous_value_info)?;
-                },
-                11826 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_difficulty_info)?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_dice_info)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue__lineup_info)?;
-                },
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
                 },
-                96 => {
-                    self.rogue_sub_mode = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.nous_value_info)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
+                96 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
                 },
-                106 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPAKJJMAGPH)?;
                 },
-                26 => {
+                11114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_difficulty_info)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_dice_info)?;
+                },
+                50 => {
+                    self.rogue_current_game_info.push(is.read_message()?);
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
-                74 => {
-                    self.rogue_current_game_info.push(is.read_message()?);
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -217,11 +217,26 @@ impl ::protobuf::Message for ChessRogueGameInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.pending_action.as_ref() {
+        if let Some(v) = self.story_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.level_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_buff_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.nous_value_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.rogue_sub_mode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.rogue_sub_mode);
+        }
+        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -229,42 +244,11 @@ impl ::protobuf::Message for ChessRogueGameInfo {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.game_miracle_info.as_ref() {
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.rogue_dice_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue__lineup_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.story_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.rogue_sub_mode);
-        }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.level_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.virtual_item_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -272,54 +256,70 @@ impl ::protobuf::Message for ChessRogueGameInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.virtual_item_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.nous_value_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.rogue_difficulty_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1478, v, os)?;
-        }
-        if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.rogue_dice_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.rogue__lineup_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
         if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.rogue_sub_mode != 0 {
-            os.write_uint32(12, self.rogue_sub_mode)?;
+        if let Some(v) = self.level_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.rogue_buff_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.level_info.as_ref() {
+        if let Some(v) = self.nous_value_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.rogue_sub_mode != 0 {
+            os.write_uint32(12, self.rogue_sub_mode)?;
+        }
+        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.rogue_difficulty_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1389, v, os)?;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.rogue_dice_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        for v in &self.rogue_current_game_info {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if let Some(v) = self.game_miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.virtual_item_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.OPAKJJMAGPH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        for v in &self.rogue_current_game_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -337,39 +337,39 @@ impl ::protobuf::Message for ChessRogueGameInfo {
     }
 
     fn clear(&mut self) {
-        self.pending_action.clear();
-        self.nous_value_info.clear();
-        self.rogue_difficulty_info.clear();
-        self.game_miracle_info.clear();
-        self.rogue_dice_info.clear();
-        self.rogue__lineup_info.clear();
         self.story_info.clear();
-        self.rogue_sub_mode = 0;
-        self.rogue_buff_info.clear();
         self.level_info.clear();
-        self.virtual_item_info.clear();
+        self.rogue_buff_info.clear();
+        self.nous_value_info.clear();
+        self.rogue_sub_mode = 0;
         self.OPAKJJMAGPH.clear();
-        self.rogue_aeon_info.clear();
+        self.rogue_difficulty_info.clear();
+        self.rogue_lineup_info.clear();
+        self.rogue_dice_info.clear();
         self.rogue_current_game_info.clear();
+        self.game_miracle_info.clear();
+        self.rogue_aeon_info.clear();
+        self.virtual_item_info.clear();
+        self.pending_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueGameInfo {
         static instance: ChessRogueGameInfo = ChessRogueGameInfo {
-            pending_action: ::protobuf::MessageField::none(),
-            nous_value_info: ::protobuf::MessageField::none(),
-            rogue_difficulty_info: ::protobuf::MessageField::none(),
-            game_miracle_info: ::protobuf::MessageField::none(),
-            rogue_dice_info: ::protobuf::MessageField::none(),
-            rogue__lineup_info: ::protobuf::MessageField::none(),
             story_info: ::protobuf::MessageField::none(),
-            rogue_sub_mode: 0,
-            rogue_buff_info: ::protobuf::MessageField::none(),
             level_info: ::protobuf::MessageField::none(),
-            virtual_item_info: ::protobuf::MessageField::none(),
+            rogue_buff_info: ::protobuf::MessageField::none(),
+            nous_value_info: ::protobuf::MessageField::none(),
+            rogue_sub_mode: 0,
             OPAKJJMAGPH: ::protobuf::MessageField::none(),
-            rogue_aeon_info: ::protobuf::MessageField::none(),
+            rogue_difficulty_info: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            rogue_dice_info: ::protobuf::MessageField::none(),
             rogue_current_game_info: ::std::vec::Vec::new(),
+            game_miracle_info: ::protobuf::MessageField::none(),
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            virtual_item_info: ::protobuf::MessageField::none(),
+            pending_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -400,25 +400,25 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     gueLineupInfo.proto\x1a\x1bChessRogueMiracleInfo.proto\x1a\x1dChessRogue\
     NousValueInfo.proto\x1a\x11HKMLALBDPGO.proto\x1a\x11IMNPEAJAJJO.proto\
     \x1a\x1eRogueCommonPendingAction.proto\x1a\x13RogueGameInfo.proto\x1a\
-    \x16RogueVirtualItem.proto\"\xec\x06\n\x12ChessRogueGameInfo\x12@\n\x0ep\
-    ending_action\x18\n\x20\x01(\x0b2\x19.RogueCommonPendingActionR\rpending\
-    Action\x12@\n\x0fnous_value_info\x18\x01\x20\x01(\x0b2\x18.ChessRogueNou\
-    sValueInfoR\rnousValueInfo\x12U\n\x15rogue_difficulty_info\x18\xc6\x0b\
-    \x20\x01(\x0b2\x20.ChessRogueCurrentDifficultyInfoR\x13rogueDifficultyIn\
-    fo\x12B\n\x11game_miracle_info\x18\x02\x20\x01(\x0b2\x16.ChessRogueMirac\
-    leInfoR\x0fgameMiracleInfo\x12;\n\x0frogue_dice_info\x18\x07\x20\x01(\
-    \x0b2\x13.ChessRogueDiceInfoR\rrogueDiceInfo\x12B\n\x12rogue__lineup_inf\
-    o\x18\x0b\x20\x01(\x0b2\x15.ChessRogueLineupInfoR\x0frogueLineupInfo\x12\
-    +\n\nstory_info\x18\x06\x20\x01(\x0b2\x0c.HKMLALBDPGOR\tstoryInfo\x12$\n\
-    \x0erogue_sub_mode\x18\x0c\x20\x01(\rR\x0crogueSubMode\x12;\n\x0frogue_b\
-    uff_info\x18\x0f\x20\x01(\x0b2\x13.ChessRogueBuffInfoR\rrogueBuffInfo\
-    \x123\n\nlevel_info\x18\x04\x20\x01(\x0b2\x14.ChessRogueLevelInfoR\tleve\
-    lInfo\x12=\n\x11virtual_item_info\x18\x0e\x20\x01(\x0b2\x11.RogueVirtual\
-    ItemR\x0fvirtualItemInfo\x12.\n\x0bOPAKJJMAGPH\x18\r\x20\x01(\x0b2\x0c.I\
-    MNPEAJAJJOR\x0bOPAKJJMAGPH\x12;\n\x0frogue_aeon_info\x18\x03\x20\x01(\
-    \x0b2\x13.ChessRogueAeonInfoR\rrogueAeonInfo\x12E\n\x17rogue_current_gam\
-    e_info\x18\t\x20\x03(\x0b2\x0e.RogueGameInfoR\x14rogueCurrentGameInfob\
-    \x06proto3\
+    \x16RogueVirtualItem.proto\"\xeb\x06\n\x12ChessRogueGameInfo\x12+\n\nsto\
+    ry_info\x18\t\x20\x01(\x0b2\x0c.HKMLALBDPGOR\tstoryInfo\x123\n\nlevel_in\
+    fo\x18\x05\x20\x01(\x0b2\x14.ChessRogueLevelInfoR\tlevelInfo\x12;\n\x0fr\
+    ogue_buff_info\x18\x0f\x20\x01(\x0b2\x13.ChessRogueBuffInfoR\rrogueBuffI\
+    nfo\x12@\n\x0fnous_value_info\x18\x02\x20\x01(\x0b2\x18.ChessRogueNousVa\
+    lueInfoR\rnousValueInfo\x12$\n\x0erogue_sub_mode\x18\x0c\x20\x01(\rR\x0c\
+    rogueSubMode\x12.\n\x0bOPAKJJMAGPH\x18\x07\x20\x01(\x0b2\x0c.IMNPEAJAJJO\
+    R\x0bOPAKJJMAGPH\x12U\n\x15rogue_difficulty_info\x18\xed\n\x20\x01(\x0b2\
+    \x20.ChessRogueCurrentDifficultyInfoR\x13rogueDifficultyInfo\x12A\n\x11r\
+    ogue_lineup_info\x18\n\x20\x01(\x0b2\x15.ChessRogueLineupInfoR\x0frogueL\
+    ineupInfo\x12;\n\x0frogue_dice_info\x18\x0e\x20\x01(\x0b2\x13.ChessRogue\
+    DiceInfoR\rrogueDiceInfo\x12E\n\x17rogue_current_game_info\x18\x06\x20\
+    \x03(\x0b2\x0e.RogueGameInfoR\x14rogueCurrentGameInfo\x12B\n\x11game_mir\
+    acle_info\x18\x0b\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0fgameMiracl\
+    eInfo\x12;\n\x0frogue_aeon_info\x18\x04\x20\x01(\x0b2\x13.ChessRogueAeon\
+    InfoR\rrogueAeonInfo\x12=\n\x11virtual_item_info\x18\x03\x20\x01(\x0b2\
+    \x11.RogueVirtualItemR\x0fvirtualItemInfo\x12@\n\x0epending_action\x18\
+    \x01\x20\x01(\x0b2\x19.RogueCommonPendingActionR\rpendingActionb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

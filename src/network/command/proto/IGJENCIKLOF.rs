@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IGJENCIKLOF {
     // message fields
+    // @@protoc_insertion_point(field:IGJENCIKLOF.select_hint_id)
+    pub select_hint_id: u32,
     // @@protoc_insertion_point(field:IGJENCIKLOF.IHGMPJNNMKI)
-    pub IHGMPJNNMKI: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
+    pub IHGMPJNNMKI: ::std::vec::Vec<super::RogueBuff::RogueBuff>,
     // @@protoc_insertion_point(field:IGJENCIKLOF.CLPLEFHHAFB)
-    pub CLPLEFHHAFB: ::std::vec::Vec<super::MKEELPFDCLM::MKEELPFDCLM>,
-    // @@protoc_insertion_point(field:IGJENCIKLOF.BILBOHBDBPN)
-    pub BILBOHBDBPN: u32,
+    pub CLPLEFHHAFB: ::std::vec::Vec<super::RogueBuff::RogueBuff>,
     // special fields
     // @@protoc_insertion_point(special_field:IGJENCIKLOF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl IGJENCIKLOF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "select_hint_id",
+            |m: &IGJENCIKLOF| { &m.select_hint_id },
+            |m: &mut IGJENCIKLOF| { &mut m.select_hint_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHGMPJNNMKI",
             |m: &IGJENCIKLOF| { &m.IHGMPJNNMKI },
@@ -62,11 +67,6 @@ impl IGJENCIKLOF {
             "CLPLEFHHAFB",
             |m: &IGJENCIKLOF| { &m.CLPLEFHHAFB },
             |m: &mut IGJENCIKLOF| { &mut m.CLPLEFHHAFB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILBOHBDBPN",
-            |m: &IGJENCIKLOF| { &m.BILBOHBDBPN },
-            |m: &mut IGJENCIKLOF| { &mut m.BILBOHBDBPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IGJENCIKLOF>(
             "IGJENCIKLOF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IGJENCIKLOF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                48 => {
+                    self.select_hint_id = is.read_uint32()?;
+                },
+                26 => {
                     self.IHGMPJNNMKI.push(is.read_message()?);
                 },
-                74 => {
+                66 => {
                     self.CLPLEFHHAFB.push(is.read_message()?);
-                },
-                56 => {
-                    self.BILBOHBDBPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for IGJENCIKLOF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.select_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.select_hint_id);
+        }
         for value in &self.IHGMPJNNMKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -115,24 +118,21 @@ impl ::protobuf::Message for IGJENCIKLOF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BILBOHBDBPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BILBOHBDBPN);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.select_hint_id != 0 {
+            os.write_uint32(6, self.select_hint_id)?;
+        }
         for v in &self.IHGMPJNNMKI {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.CLPLEFHHAFB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.BILBOHBDBPN != 0 {
-            os.write_uint32(7, self.BILBOHBDBPN)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for IGJENCIKLOF {
     }
 
     fn clear(&mut self) {
+        self.select_hint_id = 0;
         self.IHGMPJNNMKI.clear();
         self.CLPLEFHHAFB.clear();
-        self.BILBOHBDBPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IGJENCIKLOF {
         static instance: IGJENCIKLOF = IGJENCIKLOF {
+            select_hint_id: 0,
             IHGMPJNNMKI: ::std::vec::Vec::new(),
             CLPLEFHHAFB: ::std::vec::Vec::new(),
-            BILBOHBDBPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for IGJENCIKLOF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IGJENCIKLOF.proto\x1a\x11MKEELPFDCLM.proto\"\x8f\x01\n\x0bIGJENCIK\
-    LOF\x12.\n\x0bIHGMPJNNMKI\x18\x0e\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bIHGM\
-    PJNNMKI\x12.\n\x0bCLPLEFHHAFB\x18\t\x20\x03(\x0b2\x0c.MKEELPFDCLMR\x0bCL\
-    PLEFHHAFB\x12\x20\n\x0bBILBOHBDBPN\x18\x07\x20\x01(\rR\x0bBILBOHBDBPNb\
-    \x06proto3\
+    \n\x11IGJENCIKLOF.proto\x1a\x0fRogueBuff.proto\"\x8f\x01\n\x0bIGJENCIKLO\
+    F\x12$\n\x0eselect_hint_id\x18\x06\x20\x01(\rR\x0cselectHintId\x12,\n\
+    \x0bIHGMPJNNMKI\x18\x03\x20\x03(\x0b2\n.RogueBuffR\x0bIHGMPJNNMKI\x12,\n\
+    \x0bCLPLEFHHAFB\x18\x08\x20\x03(\x0b2\n.RogueBuffR\x0bCLPLEFHHAFBb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MKEELPFDCLM::file_descriptor().clone());
+            deps.push(super::RogueBuff::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IGJENCIKLOF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

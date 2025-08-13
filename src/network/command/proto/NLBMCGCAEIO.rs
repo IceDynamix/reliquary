@@ -86,16 +86,16 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.PILDEFKPKLE)?;
                 },
-                40 => {
+                24 => {
                     self.PILDEFKPKLE.push(is.read_uint32()?);
                 },
-                104 => {
+                32 => {
                     self.AFLEAJIHNEB = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.type_ = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PILDEFKPKLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PILDEFKPKLE);
         if self.AFLEAJIHNEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFLEAJIHNEB);
+            my_size += ::protobuf::rt::uint32_size(4, self.AFLEAJIHNEB);
         }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.type_);
+            my_size += ::protobuf::rt::uint32_size(6, self.type_);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for NLBMCGCAEIO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.PILDEFKPKLE)?;
+        os.write_repeated_packed_uint32(3, &self.PILDEFKPKLE)?;
         if self.AFLEAJIHNEB != 0 {
-            os.write_uint32(13, self.AFLEAJIHNEB)?;
+            os.write_uint32(4, self.AFLEAJIHNEB)?;
         }
         if self.type_ != 0 {
-            os.write_uint32(15, self.type_)?;
+            os.write_uint32(6, self.type_)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NLBMCGCAEIO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLBMCGCAEIO.proto\"e\n\x0bNLBMCGCAEIO\x12\x20\n\x0bPILDEFKPKLE\x18\
-    \x05\x20\x03(\rR\x0bPILDEFKPKLE\x12\x20\n\x0bAFLEAJIHNEB\x18\r\x20\x01(\
-    \rR\x0bAFLEAJIHNEB\x12\x12\n\x04type\x18\x0f\x20\x01(\rR\x04typeb\x06pro\
-    to3\
+    \x03\x20\x03(\rR\x0bPILDEFKPKLE\x12\x20\n\x0bAFLEAJIHNEB\x18\x04\x20\x01\
+    (\rR\x0bAFLEAJIHNEB\x12\x12\n\x04type\x18\x06\x20\x01(\rR\x04typeb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

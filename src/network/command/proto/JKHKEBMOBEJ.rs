@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct JKHKEBMOBEJ {
     // message fields
     // @@protoc_insertion_point(field:JKHKEBMOBEJ.JBJGGNBJKDJ)
-    pub JBJGGNBJKDJ: ::protobuf::MessageField<super::INPINNPIHOB::INPINNPIHOB>,
+    pub JBJGGNBJKDJ: ::protobuf::MessageField<super::RogueMagicScepter::RogueMagicScepter>,
     // special fields
     // @@protoc_insertion_point(special_field:JKHKEBMOBEJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl JKHKEBMOBEJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INPINNPIHOB::INPINNPIHOB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicScepter::RogueMagicScepter>(
             "JBJGGNBJKDJ",
             |m: &JKHKEBMOBEJ| { &m.JBJGGNBJKDJ },
             |m: &mut JKHKEBMOBEJ| { &mut m.JBJGGNBJKDJ },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for JKHKEBMOBEJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBJGGNBJKDJ)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for JKHKEBMOBEJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JBJGGNBJKDJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for JKHKEBMOBEJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JKHKEBMOBEJ.proto\x1a\x11INPINNPIHOB.proto\"=\n\x0bJKHKEBMOBEJ\x12\
-    .\n\x0bJBJGGNBJKDJ\x18\x08\x20\x01(\x0b2\x0c.INPINNPIHOBR\x0bJBJGGNBJKDJ\
-    b\x06proto3\
+    \n\x11JKHKEBMOBEJ.proto\x1a\x17RogueMagicScepter.proto\"C\n\x0bJKHKEBMOB\
+    EJ\x124\n\x0bJBJGGNBJKDJ\x18\x06\x20\x01(\x0b2\x12.RogueMagicScepterR\
+    \x0bJBJGGNBJKDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::INPINNPIHOB::file_descriptor().clone());
+            deps.push(super::RogueMagicScepter::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JKHKEBMOBEJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

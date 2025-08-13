@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LFGGPNGKBCH {
     // message fields
-    // @@protoc_insertion_point(field:LFGGPNGKBCH.JIFKHCKPNFM)
-    pub JIFKHCKPNFM: u32,
+    // @@protoc_insertion_point(field:LFGGPNGKBCH.int_reforge_num_value)
+    pub int_reforge_num_value: i32,
+    // @@protoc_insertion_point(field:LFGGPNGKBCH.free_reforge_num)
+    pub free_reforge_num: u32,
     // @@protoc_insertion_point(field:LFGGPNGKBCH.IAKHMMELMFD)
     pub IAKHMMELMFD: ::std::collections::HashMap<u32, super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:LFGGPNGKBCH.DMMAMJGNGNN)
-    pub DMMAMJGNGNN: i32,
     // @@protoc_insertion_point(field:LFGGPNGKBCH.FAIDIBODMCH)
     pub FAIDIBODMCH: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
@@ -56,19 +56,19 @@ impl LFGGPNGKBCH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIFKHCKPNFM",
-            |m: &LFGGPNGKBCH| { &m.JIFKHCKPNFM },
-            |m: &mut LFGGPNGKBCH| { &mut m.JIFKHCKPNFM },
+            "int_reforge_num_value",
+            |m: &LFGGPNGKBCH| { &m.int_reforge_num_value },
+            |m: &mut LFGGPNGKBCH| { &mut m.int_reforge_num_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "free_reforge_num",
+            |m: &LFGGPNGKBCH| { &m.free_reforge_num },
+            |m: &mut LFGGPNGKBCH| { &mut m.free_reforge_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "IAKHMMELMFD",
             |m: &LFGGPNGKBCH| { &m.IAKHMMELMFD },
             |m: &mut LFGGPNGKBCH| { &mut m.IAKHMMELMFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMMAMJGNGNN",
-            |m: &LFGGPNGKBCH| { &m.DMMAMJGNGNN },
-            |m: &mut LFGGPNGKBCH| { &mut m.DMMAMJGNGNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "FAIDIBODMCH",
@@ -93,10 +93,13 @@ impl ::protobuf::Message for LFGGPNGKBCH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JIFKHCKPNFM = is.read_uint32()?;
+                48 => {
+                    self.int_reforge_num_value = is.read_int32()?;
                 },
-                74 => {
+                56 => {
+                    self.free_reforge_num = is.read_uint32()?;
+                },
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,10 +114,7 @@ impl ::protobuf::Message for LFGGPNGKBCH {
                     is.pop_limit(old_limit);
                     self.IAKHMMELMFD.insert(key, value);
                 },
-                96 => {
-                    self.DMMAMJGNGNN = is.read_int32()?;
-                },
-                90 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FAIDIBODMCH)?;
                 },
                 tag => {
@@ -129,8 +129,11 @@ impl ::protobuf::Message for LFGGPNGKBCH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JIFKHCKPNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JIFKHCKPNFM);
+        if self.int_reforge_num_value != 0 {
+            my_size += ::protobuf::rt::int32_size(6, self.int_reforge_num_value);
+        }
+        if self.free_reforge_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.free_reforge_num);
         }
         for (k, v) in &self.IAKHMMELMFD {
             let mut entry_size = 0;
@@ -139,9 +142,6 @@ impl ::protobuf::Message for LFGGPNGKBCH {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.DMMAMJGNGNN != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.DMMAMJGNGNN);
-        }
         if let Some(v) = self.FAIDIBODMCH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -152,24 +152,24 @@ impl ::protobuf::Message for LFGGPNGKBCH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JIFKHCKPNFM != 0 {
-            os.write_uint32(3, self.JIFKHCKPNFM)?;
+        if self.int_reforge_num_value != 0 {
+            os.write_int32(6, self.int_reforge_num_value)?;
+        }
+        if self.free_reforge_num != 0 {
+            os.write_uint32(7, self.free_reforge_num)?;
         }
         for (k, v) in &self.IAKHMMELMFD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(74)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.DMMAMJGNGNN != 0 {
-            os.write_int32(12, self.DMMAMJGNGNN)?;
-        }
         if let Some(v) = self.FAIDIBODMCH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,9 @@ impl ::protobuf::Message for LFGGPNGKBCH {
     }
 
     fn clear(&mut self) {
-        self.JIFKHCKPNFM = 0;
+        self.int_reforge_num_value = 0;
+        self.free_reforge_num = 0;
         self.IAKHMMELMFD.clear();
-        self.DMMAMJGNGNN = 0;
         self.FAIDIBODMCH.clear();
         self.special_fields.clear();
     }
@@ -219,14 +219,14 @@ impl ::protobuf::reflect::ProtobufValue for LFGGPNGKBCH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LFGGPNGKBCH.proto\x1a\x12ItemCostData.proto\"\x92\x02\n\x0bLFGGPNG\
-    KBCH\x12\x20\n\x0bJIFKHCKPNFM\x18\x03\x20\x01(\rR\x0bJIFKHCKPNFM\x12?\n\
-    \x0bIAKHMMELMFD\x18\t\x20\x03(\x0b2\x1d.LFGGPNGKBCH.IAKHMMELMFDEntryR\
-    \x0bIAKHMMELMFD\x12\x20\n\x0bDMMAMJGNGNN\x18\x0c\x20\x01(\x05R\x0bDMMAMJ\
-    GNGNN\x12/\n\x0bFAIDIBODMCH\x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x0bFAI\
-    DIBODMCH\x1aM\n\x10IAKHMMELMFDEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
-    \x03key\x12#\n\x05value\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\x05value:\
-    \x028\x01b\x06proto3\
+    \n\x11LFGGPNGKBCH.proto\x1a\x12ItemCostData.proto\"\xab\x02\n\x0bLFGGPNG\
+    KBCH\x121\n\x15int_reforge_num_value\x18\x06\x20\x01(\x05R\x12intReforge\
+    NumValue\x12(\n\x10free_reforge_num\x18\x07\x20\x01(\rR\x0efreeReforgeNu\
+    m\x12?\n\x0bIAKHMMELMFD\x18\x0f\x20\x03(\x0b2\x1d.LFGGPNGKBCH.IAKHMMELMF\
+    DEntryR\x0bIAKHMMELMFD\x12/\n\x0bFAIDIBODMCH\x18\x05\x20\x01(\x0b2\r.Ite\
+    mCostDataR\x0bFAIDIBODMCH\x1aM\n\x10IAKHMMELMFDEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\rR\x03key\x12#\n\x05value\x18\x02\x20\x01(\x0b2\r.Item\
+    CostDataR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

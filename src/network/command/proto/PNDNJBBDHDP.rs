@@ -82,7 +82,7 @@ impl ::protobuf::Message for PNDNJBBDHDP {
                 16 => {
                     self.BIMBFJGNPFB = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PNDNJBBDHDP {
             my_size += ::protobuf::rt::uint32_size(2, self.BIMBFJGNPFB);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PNDNJBBDHDP {
             os.write_uint32(2, self.BIMBFJGNPFB)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PNDNJBBDHDP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNDNJBBDHDP.proto\"E\n\x0bPNDNJBBDHDP\x12\x20\n\x0bBIMBFJGNPFB\x18\
-    \x02\x20\x01(\rR\x0bBIMBFJGNPFB\x12\x14\n\x05level\x18\x04\x20\x01(\rR\
+    \x02\x20\x01(\rR\x0bBIMBFJGNPFB\x12\x14\n\x05level\x18\x05\x20\x01(\rR\
     \x05levelb\x06proto3\
 ";
 

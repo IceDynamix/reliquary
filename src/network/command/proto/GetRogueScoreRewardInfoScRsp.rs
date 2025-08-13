@@ -31,7 +31,7 @@ pub struct GetRogueScoreRewardInfoScRsp {
     // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.HNDLHICDNPC)
-    pub HNDLHICDNPC: ::protobuf::MessageField<super::HGHCOGEPIDM::HGHCOGEPIDM>,
+    pub HNDLHICDNPC: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueScoreRewardInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl GetRogueScoreRewardInfoScRsp {
             |m: &GetRogueScoreRewardInfoScRsp| { &m.retcode },
             |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGHCOGEPIDM::HGHCOGEPIDM>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
             "HNDLHICDNPC",
             |m: &GetRogueScoreRewardInfoScRsp| { &m.HNDLHICDNPC },
             |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.HNDLHICDNPC },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if let Some(v) = self.HNDLHICDNPC.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if let Some(v) = self.HNDLHICDNPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueScoreRewardInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x11HGHCOGEPIDM.proto\"h\n\x1c\
-    GetRogueScoreRewardInfoScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07r\
-    etcode\x12.\n\x0bHNDLHICDNPC\x18\x02\x20\x01(\x0b2\x0c.HGHCOGEPIDMR\x0bH\
-    NDLHICDNPCb\x06proto3\
+    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x1aRogueScoreRewardInfo.proto\
+    \"q\n\x1cGetRogueScoreRewardInfoScRsp\x12\x18\n\x07retcode\x18\t\x20\x01\
+    (\rR\x07retcode\x127\n\x0bHNDLHICDNPC\x18\n\x20\x01(\x0b2\x15.RogueScore\
+    RewardInfoR\x0bHNDLHICDNPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HGHCOGEPIDM::file_descriptor().clone());
+            deps.push(super::RogueScoreRewardInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueScoreRewardInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

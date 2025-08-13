@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PLGDCFIPEAA {
     // message fields
     // @@protoc_insertion_point(field:PLGDCFIPEAA.JPGCDJDGDBI)
-    pub JPGCDJDGDBI: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::ODOPDKELAEB::ODOPDKELAEB>>,
+    pub JPGCDJDGDBI: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::RogueUnlockFunctionType::RogueUnlockFunctionType>>,
     // special fields
     // @@protoc_insertion_point(special_field:PLGDCFIPEAA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,10 +72,10 @@ impl ::protobuf::Message for PLGDCFIPEAA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                64 => {
                     self.JPGCDJDGDBI.push(is.read_enum_or_unknown()?);
                 },
-                18 => {
+                66 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.JPGCDJDGDBI)?
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for PLGDCFIPEAA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(2, &self.JPGCDJDGDBI);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.JPGCDJDGDBI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(2, &self.JPGCDJDGDBI)?;
+        os.write_repeated_packed_enum_or_unknown(8, &self.JPGCDJDGDBI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,9 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for PLGDCFIPEAA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PLGDCFIPEAA.proto\x1a\x11ODOPDKELAEB.proto\"=\n\x0bPLGDCFIPEAA\x12\
-    .\n\x0bJPGCDJDGDBI\x18\x02\x20\x03(\x0e2\x0c.ODOPDKELAEBR\x0bJPGCDJDGDBI\
-    b\x06proto3\
+    \n\x11PLGDCFIPEAA.proto\x1a\x1dRogueUnlockFunctionType.proto\"I\n\x0bPLG\
+    DCFIPEAA\x12:\n\x0bJPGCDJDGDBI\x18\x08\x20\x03(\x0e2\x18.RogueUnlockFunc\
+    tionTypeR\x0bJPGCDJDGDBIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -166,7 +166,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ODOPDKELAEB::file_descriptor().clone());
+            deps.push(super::RogueUnlockFunctionType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PLGDCFIPEAA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

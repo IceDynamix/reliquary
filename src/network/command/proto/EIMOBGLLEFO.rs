@@ -32,14 +32,14 @@ pub struct EIMOBGLLEFO {
     pub NDGGACPICBF: ::std::vec::Vec<super::NKACIMEOAPD::NKACIMEOAPD>,
     // @@protoc_insertion_point(field:EIMOBGLLEFO.HPNHHCMKJCB)
     pub HPNHHCMKJCB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EIMOBGLLEFO.CHJNGDIOOME)
-    pub CHJNGDIOOME: u32,
-    // @@protoc_insertion_point(field:EIMOBGLLEFO.EAEJLOFGAFO)
-    pub EAEJLOFGAFO: u32,
-    // @@protoc_insertion_point(field:EIMOBGLLEFO.BHPFPEJBKEC)
-    pub BHPFPEJBKEC: u32,
     // @@protoc_insertion_point(field:EIMOBGLLEFO.OHLEPKEKMNH)
     pub OHLEPKEKMNH: u32,
+    // @@protoc_insertion_point(field:EIMOBGLLEFO.EAEJLOFGAFO)
+    pub EAEJLOFGAFO: u32,
+    // @@protoc_insertion_point(field:EIMOBGLLEFO.CHJNGDIOOME)
+    pub CHJNGDIOOME: u32,
+    // @@protoc_insertion_point(field:EIMOBGLLEFO.BHPFPEJBKEC)
+    pub BHPFPEJBKEC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EIMOBGLLEFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,9 +70,9 @@ impl EIMOBGLLEFO {
             |m: &mut EIMOBGLLEFO| { &mut m.HPNHHCMKJCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHJNGDIOOME",
-            |m: &EIMOBGLLEFO| { &m.CHJNGDIOOME },
-            |m: &mut EIMOBGLLEFO| { &mut m.CHJNGDIOOME },
+            "OHLEPKEKMNH",
+            |m: &EIMOBGLLEFO| { &m.OHLEPKEKMNH },
+            |m: &mut EIMOBGLLEFO| { &mut m.OHLEPKEKMNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAEJLOFGAFO",
@@ -80,14 +80,14 @@ impl EIMOBGLLEFO {
             |m: &mut EIMOBGLLEFO| { &mut m.EAEJLOFGAFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHJNGDIOOME",
+            |m: &EIMOBGLLEFO| { &m.CHJNGDIOOME },
+            |m: &mut EIMOBGLLEFO| { &mut m.CHJNGDIOOME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BHPFPEJBKEC",
             |m: &EIMOBGLLEFO| { &m.BHPFPEJBKEC },
             |m: &mut EIMOBGLLEFO| { &mut m.BHPFPEJBKEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHLEPKEKMNH",
-            |m: &EIMOBGLLEFO| { &m.OHLEPKEKMNH },
-            |m: &mut EIMOBGLLEFO| { &mut m.OHLEPKEKMNH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EIMOBGLLEFO>(
             "EIMOBGLLEFO",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for EIMOBGLLEFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                122 => {
                     self.NDGGACPICBF.push(is.read_message()?);
                 },
-                18 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.HPNHHCMKJCB)?;
                 },
-                16 => {
+                104 => {
                     self.HPNHHCMKJCB.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.CHJNGDIOOME = is.read_uint32()?;
-                },
                 32 => {
+                    self.OHLEPKEKMNH = is.read_uint32()?;
+                },
+                80 => {
                     self.EAEJLOFGAFO = is.read_uint32()?;
+                },
+                88 => {
+                    self.CHJNGDIOOME = is.read_uint32()?;
                 },
                 24 => {
                     self.BHPFPEJBKEC = is.read_uint32()?;
-                },
-                96 => {
-                    self.OHLEPKEKMNH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -144,18 +144,18 @@ impl ::protobuf::Message for EIMOBGLLEFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HPNHHCMKJCB);
-        if self.CHJNGDIOOME != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CHJNGDIOOME);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.HPNHHCMKJCB);
+        if self.OHLEPKEKMNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.OHLEPKEKMNH);
         }
         if self.EAEJLOFGAFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EAEJLOFGAFO);
+            my_size += ::protobuf::rt::uint32_size(10, self.EAEJLOFGAFO);
+        }
+        if self.CHJNGDIOOME != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CHJNGDIOOME);
         }
         if self.BHPFPEJBKEC != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.BHPFPEJBKEC);
-        }
-        if self.OHLEPKEKMNH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OHLEPKEKMNH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,20 +164,20 @@ impl ::protobuf::Message for EIMOBGLLEFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.NDGGACPICBF {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(2, &self.HPNHHCMKJCB)?;
-        if self.CHJNGDIOOME != 0 {
-            os.write_uint32(10, self.CHJNGDIOOME)?;
+        os.write_repeated_packed_uint32(13, &self.HPNHHCMKJCB)?;
+        if self.OHLEPKEKMNH != 0 {
+            os.write_uint32(4, self.OHLEPKEKMNH)?;
         }
         if self.EAEJLOFGAFO != 0 {
-            os.write_uint32(4, self.EAEJLOFGAFO)?;
+            os.write_uint32(10, self.EAEJLOFGAFO)?;
+        }
+        if self.CHJNGDIOOME != 0 {
+            os.write_uint32(11, self.CHJNGDIOOME)?;
         }
         if self.BHPFPEJBKEC != 0 {
             os.write_uint32(3, self.BHPFPEJBKEC)?;
-        }
-        if self.OHLEPKEKMNH != 0 {
-            os.write_uint32(12, self.OHLEPKEKMNH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,10 +198,10 @@ impl ::protobuf::Message for EIMOBGLLEFO {
     fn clear(&mut self) {
         self.NDGGACPICBF.clear();
         self.HPNHHCMKJCB.clear();
-        self.CHJNGDIOOME = 0;
-        self.EAEJLOFGAFO = 0;
-        self.BHPFPEJBKEC = 0;
         self.OHLEPKEKMNH = 0;
+        self.EAEJLOFGAFO = 0;
+        self.CHJNGDIOOME = 0;
+        self.BHPFPEJBKEC = 0;
         self.special_fields.clear();
     }
 
@@ -209,10 +209,10 @@ impl ::protobuf::Message for EIMOBGLLEFO {
         static instance: EIMOBGLLEFO = EIMOBGLLEFO {
             NDGGACPICBF: ::std::vec::Vec::new(),
             HPNHHCMKJCB: ::std::vec::Vec::new(),
-            CHJNGDIOOME: 0,
-            EAEJLOFGAFO: 0,
-            BHPFPEJBKEC: 0,
             OHLEPKEKMNH: 0,
+            EAEJLOFGAFO: 0,
+            CHJNGDIOOME: 0,
+            BHPFPEJBKEC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for EIMOBGLLEFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIMOBGLLEFO.proto\x1a\x11NKACIMEOAPD.proto\"\xe7\x01\n\x0bEIMOBGLL\
-    EFO\x12.\n\x0bNDGGACPICBF\x18\x08\x20\x03(\x0b2\x0c.NKACIMEOAPDR\x0bNDGG\
-    ACPICBF\x12\x20\n\x0bHPNHHCMKJCB\x18\x02\x20\x03(\rR\x0bHPNHHCMKJCB\x12\
-    \x20\n\x0bCHJNGDIOOME\x18\n\x20\x01(\rR\x0bCHJNGDIOOME\x12\x20\n\x0bEAEJ\
-    LOFGAFO\x18\x04\x20\x01(\rR\x0bEAEJLOFGAFO\x12\x20\n\x0bBHPFPEJBKEC\x18\
-    \x03\x20\x01(\rR\x0bBHPFPEJBKEC\x12\x20\n\x0bOHLEPKEKMNH\x18\x0c\x20\x01\
-    (\rR\x0bOHLEPKEKMNHb\x06proto3\
+    EFO\x12.\n\x0bNDGGACPICBF\x18\x0f\x20\x03(\x0b2\x0c.NKACIMEOAPDR\x0bNDGG\
+    ACPICBF\x12\x20\n\x0bHPNHHCMKJCB\x18\r\x20\x03(\rR\x0bHPNHHCMKJCB\x12\
+    \x20\n\x0bOHLEPKEKMNH\x18\x04\x20\x01(\rR\x0bOHLEPKEKMNH\x12\x20\n\x0bEA\
+    EJLOFGAFO\x18\n\x20\x01(\rR\x0bEAEJLOFGAFO\x12\x20\n\x0bCHJNGDIOOME\x18\
+    \x0b\x20\x01(\rR\x0bCHJNGDIOOME\x12\x20\n\x0bBHPFPEJBKEC\x18\x03\x20\x01\
+    (\rR\x0bBHPFPEJBKECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

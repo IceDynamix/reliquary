@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeV2BattleItemLevelUpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpScRsp.LDNJEACFBJE)
-    pub LDNJEACFBJE: u32,
     // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpScRsp.DMKFFFPDLDI)
     pub DMKFFFPDLDI: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpScRsp.LDNJEACFBJE)
+    pub LDNJEACFBJE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeV2BattleItemLevelUpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MatchThreeV2BattleItemLevelUpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNJEACFBJE",
-            |m: &MatchThreeV2BattleItemLevelUpScRsp| { &m.LDNJEACFBJE },
-            |m: &mut MatchThreeV2BattleItemLevelUpScRsp| { &mut m.LDNJEACFBJE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MatchThreeV2BattleItemLevelUpScRsp| { &m.retcode },
             |m: &mut MatchThreeV2BattleItemLevelUpScRsp| { &mut m.retcode },
@@ -67,6 +62,11 @@ impl MatchThreeV2BattleItemLevelUpScRsp {
             "DMKFFFPDLDI",
             |m: &MatchThreeV2BattleItemLevelUpScRsp| { &m.DMKFFFPDLDI },
             |m: &mut MatchThreeV2BattleItemLevelUpScRsp| { &mut m.DMKFFFPDLDI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDNJEACFBJE",
+            |m: &MatchThreeV2BattleItemLevelUpScRsp| { &m.LDNJEACFBJE },
+            |m: &mut MatchThreeV2BattleItemLevelUpScRsp| { &mut m.LDNJEACFBJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeV2BattleItemLevelUpScRsp>(
             "MatchThreeV2BattleItemLevelUpScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.LDNJEACFBJE = is.read_uint32()?;
-                },
-                8 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
                     self.DMKFFFPDLDI = is.read_uint32()?;
+                },
+                40 => {
+                    self.LDNJEACFBJE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDNJEACFBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LDNJEACFBJE);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.DMKFFFPDLDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DMKFFFPDLDI);
+            my_size += ::protobuf::rt::uint32_size(7, self.DMKFFFPDLDI);
+        }
+        if self.LDNJEACFBJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LDNJEACFBJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDNJEACFBJE != 0 {
-            os.write_uint32(12, self.LDNJEACFBJE)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.DMKFFFPDLDI != 0 {
-            os.write_uint32(13, self.DMKFFFPDLDI)?;
+            os.write_uint32(7, self.DMKFFFPDLDI)?;
+        }
+        if self.LDNJEACFBJE != 0 {
+            os.write_uint32(5, self.LDNJEACFBJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpScRsp {
     }
 
     fn clear(&mut self) {
-        self.LDNJEACFBJE = 0;
         self.retcode = 0;
         self.DMKFFFPDLDI = 0;
+        self.LDNJEACFBJE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeV2BattleItemLevelUpScRsp {
         static instance: MatchThreeV2BattleItemLevelUpScRsp = MatchThreeV2BattleItemLevelUpScRsp {
-            LDNJEACFBJE: 0,
             retcode: 0,
             DMKFFFPDLDI: 0,
+            LDNJEACFBJE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2BattleItemLevelUpScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MatchThreeV2BattleItemLevelUpScRsp.proto\"\x82\x01\n\"MatchThreeV2Bat\
-    tleItemLevelUpScRsp\x12\x20\n\x0bLDNJEACFBJE\x18\x0c\x20\x01(\rR\x0bLDNJ\
-    EACFBJE\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bDMKFFFPDLDI\x18\r\x20\x01(\rR\x0bDMKFFFPDLDIb\x06proto3\
+    tleItemLevelUpScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bDMKFFFPDLDI\x18\x07\x20\x01(\rR\x0bDMKFFFPDLDI\x12\x20\n\
+    \x0bLDNJEACFBJE\x18\x05\x20\x01(\rR\x0bLDNJEACFBJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

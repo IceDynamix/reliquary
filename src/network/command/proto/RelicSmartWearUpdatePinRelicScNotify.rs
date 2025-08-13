@@ -28,10 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearUpdatePinRelicScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.pin_relic_id_list)
-    pub pin_relic_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.avatar_id)
-    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.relic_unique_id)
+    pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.NONCKFAOGJE)
+    pub NONCKFAOGJE: ::std::vec::Vec<super::HAMMFOJBJHF::HAMMFOJBJHF>,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.EODJILEFGFB)
+    pub EODJILEFGFB: ::std::vec::Vec<super::HAMMFOJBJHF::HAMMFOJBJHF>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicSmartWearUpdatePinRelicScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +51,22 @@ impl RelicSmartWearUpdatePinRelicScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "pin_relic_id_list",
-            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.pin_relic_id_list },
-            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.pin_relic_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.avatar_id },
-            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.avatar_id },
+            "relic_unique_id",
+            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.relic_unique_id },
+            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.relic_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NONCKFAOGJE",
+            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.NONCKFAOGJE },
+            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.NONCKFAOGJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EODJILEFGFB",
+            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.EODJILEFGFB },
+            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.EODJILEFGFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicSmartWearUpdatePinRelicScNotify>(
             "RelicSmartWearUpdatePinRelicScNotify",
@@ -79,14 +86,14 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.pin_relic_id_list)?;
+                72 => {
+                    self.relic_unique_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.pin_relic_id_list.push(is.read_uint32()?);
+                98 => {
+                    self.NONCKFAOGJE.push(is.read_message()?);
                 },
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
+                66 => {
+                    self.EODJILEFGFB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +107,32 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.pin_relic_id_list);
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        if self.relic_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.relic_unique_id);
         }
+        for value in &self.NONCKFAOGJE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.EODJILEFGFB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.pin_relic_id_list)?;
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
+        if self.relic_unique_id != 0 {
+            os.write_uint32(9, self.relic_unique_id)?;
         }
+        for v in &self.NONCKFAOGJE {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.EODJILEFGFB {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +150,17 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     }
 
     fn clear(&mut self) {
-        self.pin_relic_id_list.clear();
-        self.avatar_id = 0;
+        self.relic_unique_id = 0;
+        self.NONCKFAOGJE.clear();
+        self.EODJILEFGFB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearUpdatePinRelicScNotify {
         static instance: RelicSmartWearUpdatePinRelicScNotify = RelicSmartWearUpdatePinRelicScNotify {
-            pin_relic_id_list: ::std::vec::Vec::new(),
-            avatar_id: 0,
+            relic_unique_id: 0,
+            NONCKFAOGJE: ::std::vec::Vec::new(),
+            EODJILEFGFB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,10 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearUpdatePinRelicScNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RelicSmartWearUpdatePinRelicScNotify.proto\"n\n$RelicSmartWearUpdateP\
-    inRelicScNotify\x12)\n\x11pin_relic_id_list\x18\x0f\x20\x03(\rR\x0epinRe\
-    licIdList\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarIdb\x06proto\
-    3\
+    \n*RelicSmartWearUpdatePinRelicScNotify.proto\x1a\x11HAMMFOJBJHF.proto\"\
+    \xae\x01\n$RelicSmartWearUpdatePinRelicScNotify\x12&\n\x0frelic_unique_i\
+    d\x18\t\x20\x01(\rR\rrelicUniqueId\x12.\n\x0bNONCKFAOGJE\x18\x0c\x20\x03\
+    (\x0b2\x0c.HAMMFOJBJHFR\x0bNONCKFAOGJE\x12.\n\x0bEODJILEFGFB\x18\x08\x20\
+    \x03(\x0b2\x0c.HAMMFOJBJHFR\x0bEODJILEFGFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -184,7 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::HAMMFOJBJHF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicSmartWearUpdatePinRelicScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

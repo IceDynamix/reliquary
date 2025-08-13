@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Challenge {
     // message fields
-    // @@protoc_insertion_point(field:Challenge.challenge_id)
-    pub challenge_id: u32,
     // @@protoc_insertion_point(field:Challenge.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:Challenge.taken_reward)
-    pub taken_reward: u32,
-    // @@protoc_insertion_point(field:Challenge.KFDAICILNMB)
-    pub KFDAICILNMB: bool,
-    // @@protoc_insertion_point(field:Challenge.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::ChallengeStageInfo::ChallengeStageInfo>,
+    // @@protoc_insertion_point(field:Challenge.challenge_id)
+    pub challenge_id: u32,
     // @@protoc_insertion_point(field:Challenge.star)
     pub star: u32,
-    // @@protoc_insertion_point(field:Challenge.record_id)
-    pub record_id: u32,
+    // @@protoc_insertion_point(field:Challenge.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChallengeStageInfo::ChallengeStageInfo>,
+    // @@protoc_insertion_point(field:Challenge.taken_reward)
+    pub taken_reward: u32,
     // @@protoc_insertion_point(field:Challenge.score_two)
     pub score_two: u32,
+    // @@protoc_insertion_point(field:Challenge.record_id)
+    pub record_id: u32,
+    // @@protoc_insertion_point(field:Challenge.KFDAICILNMB)
+    pub KFDAICILNMB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:Challenge.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,24 +64,19 @@ impl Challenge {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &Challenge| { &m.challenge_id },
-            |m: &mut Challenge| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &Challenge| { &m.score_id },
             |m: &mut Challenge| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "taken_reward",
-            |m: &Challenge| { &m.taken_reward },
-            |m: &mut Challenge| { &mut m.taken_reward },
+            "challenge_id",
+            |m: &Challenge| { &m.challenge_id },
+            |m: &mut Challenge| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFDAICILNMB",
-            |m: &Challenge| { &m.KFDAICILNMB },
-            |m: &mut Challenge| { &mut m.KFDAICILNMB },
+            "star",
+            |m: &Challenge| { &m.star },
+            |m: &mut Challenge| { &mut m.star },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeStageInfo::ChallengeStageInfo>(
             "stage_info",
@@ -89,9 +84,14 @@ impl Challenge {
             |m: &mut Challenge| { &mut m.stage_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "star",
-            |m: &Challenge| { &m.star },
-            |m: &mut Challenge| { &mut m.star },
+            "taken_reward",
+            |m: &Challenge| { &m.taken_reward },
+            |m: &mut Challenge| { &mut m.taken_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_two",
+            |m: &Challenge| { &m.score_two },
+            |m: &mut Challenge| { &mut m.score_two },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "record_id",
@@ -99,9 +99,9 @@ impl Challenge {
             |m: &mut Challenge| { &mut m.record_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_two",
-            |m: &Challenge| { &m.score_two },
-            |m: &mut Challenge| { &mut m.score_two },
+            "KFDAICILNMB",
+            |m: &Challenge| { &m.KFDAICILNMB },
+            |m: &mut Challenge| { &mut m.KFDAICILNMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Challenge>(
             "Challenge",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for Challenge {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                40 => {
+                72 => {
                     self.score_id = is.read_uint32()?;
                 },
                 112 => {
+                    self.challenge_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.star = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                40 => {
                     self.taken_reward = is.read_uint32()?;
+                },
+                56 => {
+                    self.score_two = is.read_uint32()?;
+                },
+                24 => {
+                    self.record_id = is.read_uint32()?;
                 },
                 88 => {
                     self.KFDAICILNMB = is.read_bool()?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
-                48 => {
-                    self.star = is.read_uint32()?;
-                },
-                72 => {
-                    self.record_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.score_two = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,30 +157,30 @@ impl ::protobuf::Message for Challenge {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
-        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.score_id);
         }
-        if self.taken_reward != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.taken_reward);
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
         }
-        if self.KFDAICILNMB != false {
-            my_size += 1 + 1;
+        if self.star != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.star);
         }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.star);
-        }
-        if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.record_id);
+        if self.taken_reward != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.taken_reward);
         }
         if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_two);
+            my_size += ::protobuf::rt::uint32_size(7, self.score_two);
+        }
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.record_id);
+        }
+        if self.KFDAICILNMB != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,29 +188,29 @@ impl ::protobuf::Message for Challenge {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.challenge_id != 0 {
-            os.write_uint32(15, self.challenge_id)?;
-        }
         if self.score_id != 0 {
-            os.write_uint32(5, self.score_id)?;
+            os.write_uint32(9, self.score_id)?;
+        }
+        if self.challenge_id != 0 {
+            os.write_uint32(14, self.challenge_id)?;
+        }
+        if self.star != 0 {
+            os.write_uint32(4, self.star)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.taken_reward != 0 {
-            os.write_uint32(14, self.taken_reward)?;
+            os.write_uint32(5, self.taken_reward)?;
+        }
+        if self.score_two != 0 {
+            os.write_uint32(7, self.score_two)?;
+        }
+        if self.record_id != 0 {
+            os.write_uint32(3, self.record_id)?;
         }
         if self.KFDAICILNMB != false {
             os.write_bool(11, self.KFDAICILNMB)?;
-        }
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.star != 0 {
-            os.write_uint32(6, self.star)?;
-        }
-        if self.record_id != 0 {
-            os.write_uint32(9, self.record_id)?;
-        }
-        if self.score_two != 0 {
-            os.write_uint32(4, self.score_two)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,27 +229,27 @@ impl ::protobuf::Message for Challenge {
     }
 
     fn clear(&mut self) {
-        self.challenge_id = 0;
         self.score_id = 0;
-        self.taken_reward = 0;
-        self.KFDAICILNMB = false;
-        self.stage_info.clear();
+        self.challenge_id = 0;
         self.star = 0;
-        self.record_id = 0;
+        self.stage_info.clear();
+        self.taken_reward = 0;
         self.score_two = 0;
+        self.record_id = 0;
+        self.KFDAICILNMB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Challenge {
         static instance: Challenge = Challenge {
-            challenge_id: 0,
             score_id: 0,
-            taken_reward: 0,
-            KFDAICILNMB: false,
-            stage_info: ::protobuf::MessageField::none(),
+            challenge_id: 0,
             star: 0,
-            record_id: 0,
+            stage_info: ::protobuf::MessageField::none(),
+            taken_reward: 0,
             score_two: 0,
+            record_id: 0,
+            KFDAICILNMB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -275,13 +275,13 @@ impl ::protobuf::reflect::ProtobufValue for Challenge {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fChallenge.proto\x1a\x18ChallengeStageInfo.proto\"\x90\x02\n\tChall\
-    enge\x12!\n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bchallengeId\x12\x19\n\
-    \x08score_id\x18\x05\x20\x01(\rR\x07scoreId\x12!\n\x0ctaken_reward\x18\
-    \x0e\x20\x01(\rR\x0btakenReward\x12\x20\n\x0bKFDAICILNMB\x18\x0b\x20\x01\
-    (\x08R\x0bKFDAICILNMB\x122\n\nstage_info\x18\x0c\x20\x01(\x0b2\x13.Chall\
-    engeStageInfoR\tstageInfo\x12\x12\n\x04star\x18\x06\x20\x01(\rR\x04star\
-    \x12\x1b\n\trecord_id\x18\t\x20\x01(\rR\x08recordId\x12\x1b\n\tscore_two\
-    \x18\x04\x20\x01(\rR\x08scoreTwob\x06proto3\
+    enge\x12\x19\n\x08score_id\x18\t\x20\x01(\rR\x07scoreId\x12!\n\x0cchalle\
+    nge_id\x18\x0e\x20\x01(\rR\x0bchallengeId\x12\x12\n\x04star\x18\x04\x20\
+    \x01(\rR\x04star\x122\n\nstage_info\x18\x0f\x20\x01(\x0b2\x13.ChallengeS\
+    tageInfoR\tstageInfo\x12!\n\x0ctaken_reward\x18\x05\x20\x01(\rR\x0btaken\
+    Reward\x12\x1b\n\tscore_two\x18\x07\x20\x01(\rR\x08scoreTwo\x12\x1b\n\tr\
+    ecord_id\x18\x03\x20\x01(\rR\x08recordId\x12\x20\n\x0bKFDAICILNMB\x18\
+    \x0b\x20\x01(\x08R\x0bKFDAICILNMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

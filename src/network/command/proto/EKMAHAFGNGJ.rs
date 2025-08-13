@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EKMAHAFGNGJ {
     // message fields
-    // @@protoc_insertion_point(field:EKMAHAFGNGJ.OAMBGHFHFMO)
-    pub OAMBGHFHFMO: u32,
+    // @@protoc_insertion_point(field:EKMAHAFGNGJ.tourn_formula_id)
+    pub tourn_formula_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EKMAHAFGNGJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EKMAHAFGNGJ {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAMBGHFHFMO",
-            |m: &EKMAHAFGNGJ| { &m.OAMBGHFHFMO },
-            |m: &mut EKMAHAFGNGJ| { &mut m.OAMBGHFHFMO },
+            "tourn_formula_id",
+            |m: &EKMAHAFGNGJ| { &m.tourn_formula_id },
+            |m: &mut EKMAHAFGNGJ| { &mut m.tourn_formula_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EKMAHAFGNGJ>(
             "EKMAHAFGNGJ",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for EKMAHAFGNGJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.OAMBGHFHFMO = is.read_uint32()?;
+                72 => {
+                    self.tourn_formula_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for EKMAHAFGNGJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OAMBGHFHFMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OAMBGHFHFMO);
+        if self.tourn_formula_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.tourn_formula_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for EKMAHAFGNGJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OAMBGHFHFMO != 0 {
-            os.write_uint32(7, self.OAMBGHFHFMO)?;
+        if self.tourn_formula_id != 0 {
+            os.write_uint32(9, self.tourn_formula_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for EKMAHAFGNGJ {
     }
 
     fn clear(&mut self) {
-        self.OAMBGHFHFMO = 0;
+        self.tourn_formula_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EKMAHAFGNGJ {
         static instance: EKMAHAFGNGJ = EKMAHAFGNGJ {
-            OAMBGHFHFMO: 0,
+            tourn_formula_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for EKMAHAFGNGJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EKMAHAFGNGJ.proto\"/\n\x0bEKMAHAFGNGJ\x12\x20\n\x0bOAMBGHFHFMO\x18\
-    \x07\x20\x01(\rR\x0bOAMBGHFHFMOb\x06proto3\
+    \n\x11EKMAHAFGNGJ.proto\"7\n\x0bEKMAHAFGNGJ\x12(\n\x10tourn_formula_id\
+    \x18\t\x20\x01(\rR\x0etournFormulaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

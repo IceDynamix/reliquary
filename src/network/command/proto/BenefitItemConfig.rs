@@ -30,16 +30,16 @@ pub struct BenefitItemConfig {
     // message fields
     // @@protoc_insertion_point(field:BenefitItemConfig.rogue_score_reward_info)
     pub rogue_score_reward_info: ::std::vec::Vec<super::BenefitRewardItem::BenefitRewardItem>,
-    // @@protoc_insertion_point(field:BenefitItemConfig.reveal_time)
-    pub reveal_time: u64,
     // @@protoc_insertion_point(field:BenefitItemConfig.reveal_num_limit)
     pub reveal_num_limit: u32,
+    // @@protoc_insertion_point(field:BenefitItemConfig.lucky_koi_list)
+    pub lucky_koi_list: ::std::vec::Vec<super::ECMKALKCJAC::ECMKALKCJAC>,
     // @@protoc_insertion_point(field:BenefitItemConfig.end_time)
     pub end_time: u64,
     // @@protoc_insertion_point(field:BenefitItemConfig.begin_time)
     pub begin_time: u64,
-    // @@protoc_insertion_point(field:BenefitItemConfig.lucky_koi_list)
-    pub lucky_koi_list: ::std::vec::Vec<super::LuckyKoiInfo::LuckyKoiInfo>,
+    // @@protoc_insertion_point(field:BenefitItemConfig.reveal_time)
+    pub reveal_time: u64,
     // special fields
     // @@protoc_insertion_point(special_field:BenefitItemConfig.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,14 @@ impl BenefitItemConfig {
             |m: &mut BenefitItemConfig| { &mut m.rogue_score_reward_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reveal_time",
-            |m: &BenefitItemConfig| { &m.reveal_time },
-            |m: &mut BenefitItemConfig| { &mut m.reveal_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reveal_num_limit",
             |m: &BenefitItemConfig| { &m.reveal_num_limit },
             |m: &mut BenefitItemConfig| { &mut m.reveal_num_limit },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lucky_koi_list",
+            |m: &BenefitItemConfig| { &m.lucky_koi_list },
+            |m: &mut BenefitItemConfig| { &mut m.lucky_koi_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
@@ -84,10 +84,10 @@ impl BenefitItemConfig {
             |m: &BenefitItemConfig| { &m.begin_time },
             |m: &mut BenefitItemConfig| { &mut m.begin_time },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lucky_koi_list",
-            |m: &BenefitItemConfig| { &m.lucky_koi_list },
-            |m: &mut BenefitItemConfig| { &mut m.lucky_koi_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reveal_time",
+            |m: &BenefitItemConfig| { &m.reveal_time },
+            |m: &mut BenefitItemConfig| { &mut m.reveal_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BenefitItemConfig>(
             "BenefitItemConfig",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for BenefitItemConfig {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                50 => {
                     self.rogue_score_reward_info.push(is.read_message()?);
                 },
-                88 => {
-                    self.reveal_time = is.read_uint64()?;
-                },
-                104 => {
+                40 => {
                     self.reveal_num_limit = is.read_uint32()?;
                 },
-                64 => {
+                122 => {
+                    self.lucky_koi_list.push(is.read_message()?);
+                },
+                16 => {
                     self.end_time = is.read_uint64()?;
                 },
-                120 => {
+                96 => {
                     self.begin_time = is.read_uint64()?;
                 },
-                114 => {
-                    self.lucky_koi_list.push(is.read_message()?);
+                72 => {
+                    self.reveal_time = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,22 +141,22 @@ impl ::protobuf::Message for BenefitItemConfig {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.reveal_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.reveal_time);
-        }
         if self.reveal_num_limit != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.reveal_num_limit);
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.end_time);
-        }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.begin_time);
+            my_size += ::protobuf::rt::uint32_size(5, self.reveal_num_limit);
         }
         for value in &self.lucky_koi_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.end_time);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.begin_time);
+        }
+        if self.reveal_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.reveal_time);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -164,23 +164,23 @@ impl ::protobuf::Message for BenefitItemConfig {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rogue_score_reward_info {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.reveal_time != 0 {
-            os.write_uint64(11, self.reveal_time)?;
-        }
         if self.reveal_num_limit != 0 {
-            os.write_uint32(13, self.reveal_num_limit)?;
-        }
-        if self.end_time != 0 {
-            os.write_uint64(8, self.end_time)?;
-        }
-        if self.begin_time != 0 {
-            os.write_uint64(15, self.begin_time)?;
+            os.write_uint32(5, self.reveal_num_limit)?;
         }
         for v in &self.lucky_koi_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
+        if self.end_time != 0 {
+            os.write_uint64(2, self.end_time)?;
+        }
+        if self.begin_time != 0 {
+            os.write_uint64(12, self.begin_time)?;
+        }
+        if self.reveal_time != 0 {
+            os.write_uint64(9, self.reveal_time)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -199,22 +199,22 @@ impl ::protobuf::Message for BenefitItemConfig {
 
     fn clear(&mut self) {
         self.rogue_score_reward_info.clear();
-        self.reveal_time = 0;
         self.reveal_num_limit = 0;
+        self.lucky_koi_list.clear();
         self.end_time = 0;
         self.begin_time = 0;
-        self.lucky_koi_list.clear();
+        self.reveal_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BenefitItemConfig {
         static instance: BenefitItemConfig = BenefitItemConfig {
             rogue_score_reward_info: ::std::vec::Vec::new(),
-            reveal_time: 0,
             reveal_num_limit: 0,
+            lucky_koi_list: ::std::vec::Vec::new(),
             end_time: 0,
             begin_time: 0,
-            lucky_koi_list: ::std::vec::Vec::new(),
+            reveal_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for BenefitItemConfig {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17BenefitItemConfig.proto\x1a\x17BenefitRewardItem.proto\x1a\x12Luck\
-    yKoiInfo.proto\"\x98\x02\n\x11BenefitItemConfig\x12I\n\x17rogue_score_re\
-    ward_info\x18\x01\x20\x03(\x0b2\x12.BenefitRewardItemR\x14rogueScoreRewa\
-    rdInfo\x12\x1f\n\x0breveal_time\x18\x0b\x20\x01(\x04R\nrevealTime\x12(\n\
-    \x10reveal_num_limit\x18\r\x20\x01(\rR\x0erevealNumLimit\x12\x19\n\x08en\
-    d_time\x18\x08\x20\x01(\x04R\x07endTime\x12\x1d\n\nbegin_time\x18\x0f\
-    \x20\x01(\x04R\tbeginTime\x123\n\x0elucky_koi_list\x18\x0e\x20\x03(\x0b2\
-    \r.LuckyKoiInfoR\x0cluckyKoiListb\x06proto3\
+    \n\x17BenefitItemConfig.proto\x1a\x17BenefitRewardItem.proto\x1a\x11ECMK\
+    ALKCJAC.proto\"\x97\x02\n\x11BenefitItemConfig\x12I\n\x17rogue_score_rew\
+    ard_info\x18\x06\x20\x03(\x0b2\x12.BenefitRewardItemR\x14rogueScoreRewar\
+    dInfo\x12(\n\x10reveal_num_limit\x18\x05\x20\x01(\rR\x0erevealNumLimit\
+    \x122\n\x0elucky_koi_list\x18\x0f\x20\x03(\x0b2\x0c.ECMKALKCJACR\x0cluck\
+    yKoiList\x12\x19\n\x08end_time\x18\x02\x20\x01(\x04R\x07endTime\x12\x1d\
+    \n\nbegin_time\x18\x0c\x20\x01(\x04R\tbeginTime\x12\x1f\n\x0breveal_time\
+    \x18\t\x20\x01(\x04R\nrevealTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -265,7 +265,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::BenefitRewardItem::file_descriptor().clone());
-            deps.push(super::LuckyKoiInfo::file_descriptor().clone());
+            deps.push(super::ECMKALKCJAC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BenefitItemConfig::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

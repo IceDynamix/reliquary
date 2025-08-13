@@ -79,10 +79,10 @@ impl ::protobuf::Message for PGNDIBBGIJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.GFJAGHLJJDN = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.ECILICNOLFN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PGNDIBBGIJN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GFJAGHLJJDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GFJAGHLJJDN);
+            my_size += ::protobuf::rt::uint32_size(8, self.GFJAGHLJJDN);
         }
         if self.ECILICNOLFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ECILICNOLFN);
+            my_size += ::protobuf::rt::uint32_size(6, self.ECILICNOLFN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PGNDIBBGIJN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GFJAGHLJJDN != 0 {
-            os.write_uint32(14, self.GFJAGHLJJDN)?;
+            os.write_uint32(8, self.GFJAGHLJJDN)?;
         }
         if self.ECILICNOLFN != 0 {
-            os.write_uint32(8, self.ECILICNOLFN)?;
+            os.write_uint32(6, self.ECILICNOLFN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PGNDIBBGIJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGNDIBBGIJN.proto\"Q\n\x0bPGNDIBBGIJN\x12\x20\n\x0bGFJAGHLJJDN\x18\
-    \x0e\x20\x01(\rR\x0bGFJAGHLJJDN\x12\x20\n\x0bECILICNOLFN\x18\x08\x20\x01\
+    \x08\x20\x01(\rR\x0bGFJAGHLJJDN\x12\x20\n\x0bECILICNOLFN\x18\x06\x20\x01\
     (\rR\x0bECILICNOLFNb\x06proto3\
 ";
 

@@ -119,7 +119,7 @@ pub struct ItemConfig {
     #[resource_key]
     pub ID: u32,
     pub ItemMainType: String,
-    pub ItemSubType: String,
+    pub ItemSubType: serde_json::Value,
     pub InventoryDisplayTag: u32,
     pub Rarity: String,
     pub PurposeType: Option<u32>,

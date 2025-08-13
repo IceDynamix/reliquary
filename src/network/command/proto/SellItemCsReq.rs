@@ -30,8 +30,8 @@ pub struct SellItemCsReq {
     // message fields
     // @@protoc_insertion_point(field:SellItemCsReq.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:SellItemCsReq.to_material)
-    pub to_material: bool,
+    // @@protoc_insertion_point(field:SellItemCsReq.OLFKACKGOFK)
+    pub OLFKACKGOFK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SellItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SellItemCsReq {
             |m: &mut SellItemCsReq| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "to_material",
-            |m: &SellItemCsReq| { &m.to_material },
-            |m: &mut SellItemCsReq| { &mut m.to_material },
+            "OLFKACKGOFK",
+            |m: &SellItemCsReq| { &m.OLFKACKGOFK },
+            |m: &mut SellItemCsReq| { &mut m.OLFKACKGOFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SellItemCsReq>(
             "SellItemCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SellItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                104 => {
-                    self.to_material = is.read_bool()?;
+                72 => {
+                    self.OLFKACKGOFK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SellItemCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.to_material != false {
+        if self.OLFKACKGOFK != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SellItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.to_material != false {
-            os.write_bool(13, self.to_material)?;
+        if self.OLFKACKGOFK != false {
+            os.write_bool(9, self.OLFKACKGOFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SellItemCsReq {
 
     fn clear(&mut self) {
         self.cost_data.clear();
-        self.to_material = false;
+        self.OLFKACKGOFK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SellItemCsReq {
         static instance: SellItemCsReq = SellItemCsReq {
             cost_data: ::protobuf::MessageField::none(),
-            to_material: false,
+            OLFKACKGOFK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SellItemCsReq.proto\x1a\x12ItemCostData.proto\"\\\n\rSellItemCsReq\
-    \x12*\n\tcost_data\x18\x0e\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    \x1f\n\x0bto_material\x18\r\x20\x01(\x08R\ntoMaterialb\x06proto3\
+    \n\x13SellItemCsReq.proto\x1a\x12ItemCostData.proto\"]\n\rSellItemCsReq\
+    \x12*\n\tcost_data\x18\x08\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bOLFKACKGOFK\x18\t\x20\x01(\x08R\x0bOLFKACKGOFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordMonsterInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.DHLPKMIHDNM)
-    pub DHLPKMIHDNM: ::protobuf::MessageField<super::PunkLordBattleRecord::PunkLordBattleRecord>,
-    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason>,
-    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.DMILCFHLIHP)
-    pub DMILCFHLIHP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.basic_info)
     pub basic_info: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.DMILCFHLIHP)
+    pub DMILCFHLIHP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason>,
+    // @@protoc_insertion_point(field:PunkLordMonsterInfoScNotify.DHLPKMIHDNM)
+    pub DHLPKMIHDNM: ::protobuf::MessageField<super::AHKANKEPADJ::AHKANKEPADJ>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordMonsterInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl PunkLordMonsterInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordBattleRecord::PunkLordBattleRecord>(
-            "DHLPKMIHDNM",
-            |m: &PunkLordMonsterInfoScNotify| { &m.DHLPKMIHDNM },
-            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.DHLPKMIHDNM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &PunkLordMonsterInfoScNotify| { &m.reason },
-            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.reason },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
+            "basic_info",
+            |m: &PunkLordMonsterInfoScNotify| { &m.basic_info },
+            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DMILCFHLIHP",
             |m: &PunkLordMonsterInfoScNotify| { &m.DMILCFHLIHP },
             |m: &mut PunkLordMonsterInfoScNotify| { &mut m.DMILCFHLIHP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
-            "basic_info",
-            |m: &PunkLordMonsterInfoScNotify| { &m.basic_info },
-            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.basic_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &PunkLordMonsterInfoScNotify| { &m.reason },
+            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHKANKEPADJ::AHKANKEPADJ>(
+            "DHLPKMIHDNM",
+            |m: &PunkLordMonsterInfoScNotify| { &m.DHLPKMIHDNM },
+            |m: &mut PunkLordMonsterInfoScNotify| { &mut m.DHLPKMIHDNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordMonsterInfoScNotify>(
             "PunkLordMonsterInfoScNotify",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for PunkLordMonsterInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHLPKMIHDNM)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                120 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                82 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.DMILCFHLIHP)?;
                 },
-                80 => {
+                96 => {
                     self.DMILCFHLIHP.push(is.read_uint32()?);
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
+                40 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHLPKMIHDNM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for PunkLordMonsterInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
+        if let Some(v) = self.basic_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.DMILCFHLIHP);
         if self.reason != ::protobuf::EnumOrUnknown::new(super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason::PUNK_LORD_MONSTER_INFO_NOTIFY_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.DMILCFHLIHP);
-        if let Some(v) = self.basic_info.as_ref() {
+        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,15 +138,15 @@ impl ::protobuf::Message for PunkLordMonsterInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason::PUNK_LORD_MONSTER_INFO_NOTIFY_REASON_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        os.write_repeated_packed_uint32(10, &self.DMILCFHLIHP)?;
         if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.DMILCFHLIHP)?;
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason::PUNK_LORD_MONSTER_INFO_NOTIFY_REASON_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for PunkLordMonsterInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.DHLPKMIHDNM.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason::PUNK_LORD_MONSTER_INFO_NOTIFY_REASON_NONE);
-        self.DMILCFHLIHP.clear();
         self.basic_info.clear();
+        self.DMILCFHLIHP.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::PunkLordMonsterInfoNotifyReason::PunkLordMonsterInfoNotifyReason::PUNK_LORD_MONSTER_INFO_NOTIFY_REASON_NONE);
+        self.DHLPKMIHDNM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordMonsterInfoScNotify {
         static instance: PunkLordMonsterInfoScNotify = PunkLordMonsterInfoScNotify {
-            DHLPKMIHDNM: ::protobuf::MessageField::none(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            DMILCFHLIHP: ::std::vec::Vec::new(),
             basic_info: ::protobuf::MessageField::none(),
+            DMILCFHLIHP: ::std::vec::Vec::new(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            DHLPKMIHDNM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,14 +202,13 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordMonsterInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PunkLordMonsterInfoScNotify.proto\x1a\x1aPunkLordBattleRecord.proto\
-    \x1a\x1ePunkLordMonsterBasicInfo.proto\x1a%PunkLordMonsterInfoNotifyReas\
-    on.proto\"\xec\x01\n\x1bPunkLordMonsterInfoScNotify\x127\n\x0bDHLPKMIHDN\
-    M\x18\x08\x20\x01(\x0b2\x15.PunkLordBattleRecordR\x0bDHLPKMIHDNM\x128\n\
-    \x06reason\x18\x0f\x20\x01(\x0e2\x20.PunkLordMonsterInfoNotifyReasonR\
-    \x06reason\x12\x20\n\x0bDMILCFHLIHP\x18\n\x20\x03(\rR\x0bDMILCFHLIHP\x12\
-    8\n\nbasic_info\x18\x0b\x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\tbas\
-    icInfob\x06proto3\
+    \n!PunkLordMonsterInfoScNotify.proto\x1a\x11AHKANKEPADJ.proto\x1a\x1ePun\
+    kLordMonsterBasicInfo.proto\x1a%PunkLordMonsterInfoNotifyReason.proto\"\
+    \xe3\x01\n\x1bPunkLordMonsterInfoScNotify\x128\n\nbasic_info\x18\x04\x20\
+    \x01(\x0b2\x19.PunkLordMonsterBasicInfoR\tbasicInfo\x12\x20\n\x0bDMILCFH\
+    LIHP\x18\x0c\x20\x03(\rR\x0bDMILCFHLIHP\x128\n\x06reason\x18\x05\x20\x01\
+    (\x0e2\x20.PunkLordMonsterInfoNotifyReasonR\x06reason\x12.\n\x0bDHLPKMIH\
+    DNM\x18\x06\x20\x01(\x0b2\x0c.AHKANKEPADJR\x0bDHLPKMIHDNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::PunkLordBattleRecord::file_descriptor().clone());
+            deps.push(super::AHKANKEPADJ::file_descriptor().clone());
             deps.push(super::PunkLordMonsterBasicInfo::file_descriptor().clone());
             deps.push(super::PunkLordMonsterInfoNotifyReason::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyJoinCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LobbyJoinCsReq.room_id)
-    pub room_id: u64,
     // @@protoc_insertion_point(field:LobbyJoinCsReq.EJOFCNAEDHK)
     pub EJOFCNAEDHK: ::protobuf::MessageField<super::EPEGHCGCMHP::EPEGHCGCMHP>,
+    // @@protoc_insertion_point(field:LobbyJoinCsReq.room_id)
+    pub room_id: u64,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyJoinCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LobbyJoinCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &LobbyJoinCsReq| { &m.room_id },
-            |m: &mut LobbyJoinCsReq| { &mut m.room_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPEGHCGCMHP::EPEGHCGCMHP>(
             "EJOFCNAEDHK",
             |m: &LobbyJoinCsReq| { &m.EJOFCNAEDHK },
             |m: &mut LobbyJoinCsReq| { &mut m.EJOFCNAEDHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_id",
+            |m: &LobbyJoinCsReq| { &m.room_id },
+            |m: &mut LobbyJoinCsReq| { &mut m.room_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyJoinCsReq>(
             "LobbyJoinCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.room_id = is.read_uint64()?;
-                },
                 74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJOFCNAEDHK)?;
+                },
+                104 => {
+                    self.room_id = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.room_id);
-        }
         if let Some(v) = self.EJOFCNAEDHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.room_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_id != 0 {
-            os.write_uint64(5, self.room_id)?;
-        }
         if let Some(v) = self.EJOFCNAEDHK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.room_id != 0 {
+            os.write_uint64(13, self.room_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LobbyJoinCsReq {
     }
 
     fn clear(&mut self) {
-        self.room_id = 0;
         self.EJOFCNAEDHK.clear();
+        self.room_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyJoinCsReq {
         static instance: LobbyJoinCsReq = LobbyJoinCsReq {
-            room_id: 0,
             EJOFCNAEDHK: ::protobuf::MessageField::none(),
+            room_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LobbyJoinCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LobbyJoinCsReq.proto\x1a\x11EPEGHCGCMHP.proto\"Y\n\x0eLobbyJoinCsR\
-    eq\x12\x17\n\x07room_id\x18\x05\x20\x01(\x04R\x06roomId\x12.\n\x0bEJOFCN\
-    AEDHK\x18\t\x20\x01(\x0b2\x0c.EPEGHCGCMHPR\x0bEJOFCNAEDHKb\x06proto3\
+    eq\x12.\n\x0bEJOFCNAEDHK\x18\t\x20\x01(\x0b2\x0c.EPEGHCGCMHPR\x0bEJOFCNA\
+    EDHK\x12\x17\n\x07room_id\x18\r\x20\x01(\x04R\x06roomIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

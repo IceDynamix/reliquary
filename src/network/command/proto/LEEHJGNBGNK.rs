@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LEEHJGNBGNK {
     // message fields
-    // @@protoc_insertion_point(field:LEEHJGNBGNK.HBAPCCEGNME)
-    pub HBAPCCEGNME: u32,
     // @@protoc_insertion_point(field:LEEHJGNBGNK.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:LEEHJGNBGNK.queue_position)
+    pub queue_position: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LEEHJGNBGNK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LEEHJGNBGNK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBAPCCEGNME",
-            |m: &LEEHJGNBGNK| { &m.HBAPCCEGNME },
-            |m: &mut LEEHJGNBGNK| { &mut m.HBAPCCEGNME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &LEEHJGNBGNK| { &m.level },
             |m: &mut LEEHJGNBGNK| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "queue_position",
+            |m: &LEEHJGNBGNK| { &m.queue_position },
+            |m: &mut LEEHJGNBGNK| { &mut m.queue_position },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEEHJGNBGNK>(
             "LEEHJGNBGNK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LEEHJGNBGNK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.HBAPCCEGNME = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.queue_position = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LEEHJGNBGNK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HBAPCCEGNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HBAPCCEGNME);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        }
+        if self.queue_position != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LEEHJGNBGNK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HBAPCCEGNME != 0 {
-            os.write_uint32(15, self.HBAPCCEGNME)?;
-        }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(5, self.level)?;
+        }
+        if self.queue_position != 0 {
+            os.write_uint32(14, self.queue_position)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LEEHJGNBGNK {
     }
 
     fn clear(&mut self) {
-        self.HBAPCCEGNME = 0;
         self.level = 0;
+        self.queue_position = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LEEHJGNBGNK {
         static instance: LEEHJGNBGNK = LEEHJGNBGNK {
-            HBAPCCEGNME: 0,
             level: 0,
+            queue_position: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LEEHJGNBGNK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LEEHJGNBGNK.proto\"E\n\x0bLEEHJGNBGNK\x12\x20\n\x0bHBAPCCEGNME\x18\
-    \x0f\x20\x01(\rR\x0bHBAPCCEGNME\x12\x14\n\x05level\x18\x03\x20\x01(\rR\
-    \x05levelb\x06proto3\
+    \n\x11LEEHJGNBGNK.proto\"J\n\x0bLEEHJGNBGNK\x12\x14\n\x05level\x18\x05\
+    \x20\x01(\rR\x05level\x12%\n\x0equeue_position\x18\x0e\x20\x01(\rR\rqueu\
+    ePositionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

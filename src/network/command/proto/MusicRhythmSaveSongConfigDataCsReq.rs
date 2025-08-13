@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MusicRhythmSaveSongConfigDataCsReq {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataCsReq.CGEDABOABOH)
-    pub CGEDABOABOH: ::protobuf::MessageField<super::PAKPCCILOLN::PAKPCCILOLN>,
+    pub CGEDABOABOH: ::protobuf::MessageField<super::MusicRhythmGroup::MusicRhythmGroup>,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmSaveSongConfigDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl MusicRhythmSaveSongConfigDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PAKPCCILOLN::PAKPCCILOLN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MusicRhythmGroup::MusicRhythmGroup>(
             "CGEDABOABOH",
             |m: &MusicRhythmSaveSongConfigDataCsReq| { &m.CGEDABOABOH },
             |m: &mut MusicRhythmSaveSongConfigDataCsReq| { &mut m.CGEDABOABOH },
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x11PAKPCCILOLN.proto\"T\
-    \n\"MusicRhythmSaveSongConfigDataCsReq\x12.\n\x0bCGEDABOABOH\x18\x0c\x20\
-    \x01(\x0b2\x0c.PAKPCCILOLNR\x0bCGEDABOABOHb\x06proto3\
+    \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x16MusicRhythmGroup.prot\
+    o\"Y\n\"MusicRhythmSaveSongConfigDataCsReq\x123\n\x0bCGEDABOABOH\x18\x0c\
+    \x20\x01(\x0b2\x11.MusicRhythmGroupR\x0bCGEDABOABOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PAKPCCILOLN::file_descriptor().clone());
+            deps.push(super::MusicRhythmGroup::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MusicRhythmSaveSongConfigDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

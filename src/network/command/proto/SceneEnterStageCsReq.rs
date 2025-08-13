@@ -86,13 +86,13 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                64 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
                 },
-                88 => {
+                104 => {
                     self.event_id = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.PMJAHILBLFL = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.rebattle_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.rebattle_type.value());
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.event_id);
         }
         if self.PMJAHILBLFL != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         if self.event_id != 0 {
-            os.write_uint32(11, self.event_id)?;
+            os.write_uint32(13, self.event_id)?;
         }
         if self.PMJAHILBLFL != false {
-            os.write_bool(7, self.PMJAHILBLFL)?;
+            os.write_bool(9, self.PMJAHILBLFL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEnterStageCsReq.proto\x1a\x12RebattleType.proto\"\x87\x01\n\
-    \x14SceneEnterStageCsReq\x122\n\rrebattle_type\x18\x0f\x20\x01(\x0e2\r.R\
-    ebattleTypeR\x0crebattleType\x12\x19\n\x08event_id\x18\x0b\x20\x01(\rR\
-    \x07eventId\x12\x20\n\x0bPMJAHILBLFL\x18\x07\x20\x01(\x08R\x0bPMJAHILBLF\
-    Lb\x06proto3\
+    \x14SceneEnterStageCsReq\x122\n\rrebattle_type\x18\x08\x20\x01(\x0e2\r.R\
+    ebattleTypeR\x0crebattleType\x12\x19\n\x08event_id\x18\r\x20\x01(\rR\x07\
+    eventId\x12\x20\n\x0bPMJAHILBLFL\x18\t\x20\x01(\x08R\x0bPMJAHILBLFLb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

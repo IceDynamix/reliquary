@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HHPIAFBHJCF {
     // message fields
-    // @@protoc_insertion_point(field:HHPIAFBHJCF.KDMLLLGHJON)
-    pub KDMLLLGHJON: u32,
     // @@protoc_insertion_point(field:HHPIAFBHJCF.confirm)
     pub confirm: bool,
+    // @@protoc_insertion_point(field:HHPIAFBHJCF.option_id)
+    pub option_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HHPIAFBHJCF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HHPIAFBHJCF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDMLLLGHJON",
-            |m: &HHPIAFBHJCF| { &m.KDMLLLGHJON },
-            |m: &mut HHPIAFBHJCF| { &mut m.KDMLLLGHJON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "confirm",
             |m: &HHPIAFBHJCF| { &m.confirm },
             |m: &mut HHPIAFBHJCF| { &mut m.confirm },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "option_id",
+            |m: &HHPIAFBHJCF| { &m.option_id },
+            |m: &mut HHPIAFBHJCF| { &mut m.option_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HHPIAFBHJCF>(
             "HHPIAFBHJCF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.KDMLLLGHJON = is.read_uint32()?;
+                48 => {
+                    self.confirm = is.read_bool()?;
                 },
                 32 => {
-                    self.confirm = is.read_bool()?;
+                    self.option_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDMLLLGHJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KDMLLLGHJON);
-        }
         if self.confirm != false {
             my_size += 1 + 1;
+        }
+        if self.option_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.option_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDMLLLGHJON != 0 {
-            os.write_uint32(11, self.KDMLLLGHJON)?;
-        }
         if self.confirm != false {
-            os.write_bool(4, self.confirm)?;
+            os.write_bool(6, self.confirm)?;
+        }
+        if self.option_id != 0 {
+            os.write_uint32(4, self.option_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     }
 
     fn clear(&mut self) {
-        self.KDMLLLGHJON = 0;
         self.confirm = false;
+        self.option_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HHPIAFBHJCF {
         static instance: HHPIAFBHJCF = HHPIAFBHJCF {
-            KDMLLLGHJON: 0,
             confirm: false,
+            option_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HHPIAFBHJCF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HHPIAFBHJCF.proto\"I\n\x0bHHPIAFBHJCF\x12\x20\n\x0bKDMLLLGHJON\x18\
-    \x0b\x20\x01(\rR\x0bKDMLLLGHJON\x12\x18\n\x07confirm\x18\x04\x20\x01(\
-    \x08R\x07confirmb\x06proto3\
+    \n\x11HHPIAFBHJCF.proto\"D\n\x0bHHPIAFBHJCF\x12\x18\n\x07confirm\x18\x06\
+    \x20\x01(\x08R\x07confirm\x12\x1b\n\toption_id\x18\x04\x20\x01(\rR\x08op\
+    tionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OAINKJLPCDK {
     // message fields
-    // @@protoc_insertion_point(field:OAINKJLPCDK.POCJCMKKJIK)
-    pub POCJCMKKJIK: ::std::vec::Vec<super::PPFCJHEKOLG::PPFCJHEKOLG>,
+    // @@protoc_insertion_point(field:OAINKJLPCDK.option_result_info)
+    pub option_result_info: ::std::vec::Vec<super::PPFCJHEKOLG::PPFCJHEKOLG>,
     // special fields
     // @@protoc_insertion_point(special_field:OAINKJLPCDK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OAINKJLPCDK {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POCJCMKKJIK",
-            |m: &OAINKJLPCDK| { &m.POCJCMKKJIK },
-            |m: &mut OAINKJLPCDK| { &mut m.POCJCMKKJIK },
+            "option_result_info",
+            |m: &OAINKJLPCDK| { &m.option_result_info },
+            |m: &mut OAINKJLPCDK| { &mut m.option_result_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OAINKJLPCDK>(
             "OAINKJLPCDK",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for OAINKJLPCDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.POCJCMKKJIK.push(is.read_message()?);
+                58 => {
+                    self.option_result_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OAINKJLPCDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.POCJCMKKJIK {
+        for value in &self.option_result_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OAINKJLPCDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.POCJCMKKJIK {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.option_result_info {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OAINKJLPCDK {
     }
 
     fn clear(&mut self) {
-        self.POCJCMKKJIK.clear();
+        self.option_result_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OAINKJLPCDK {
         static instance: OAINKJLPCDK = OAINKJLPCDK {
-            POCJCMKKJIK: ::std::vec::Vec::new(),
+            option_result_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for OAINKJLPCDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OAINKJLPCDK.proto\x1a\x11PPFCJHEKOLG.proto\"=\n\x0bOAINKJLPCDK\x12\
-    .\n\x0bPOCJCMKKJIK\x18\x06\x20\x03(\x0b2\x0c.PPFCJHEKOLGR\x0bPOCJCMKKJIK\
-    b\x06proto3\
+    \n\x11OAINKJLPCDK.proto\x1a\x11PPFCJHEKOLG.proto\"I\n\x0bOAINKJLPCDK\x12\
+    :\n\x12option_result_info\x18\x07\x20\x03(\x0b2\x0c.PPFCJHEKOLGR\x10opti\
+    onResultInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

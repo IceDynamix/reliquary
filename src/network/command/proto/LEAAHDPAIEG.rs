@@ -79,10 +79,10 @@ impl ::protobuf::Message for LEAAHDPAIEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                120 => {
                     self.AGMAMBDEHLK = is.read_bool()?;
                 },
-                40 => {
+                88 => {
                     self.HOIOKBKGFDN = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LEAAHDPAIEG {
             my_size += 1 + 1;
         }
         if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HOIOKBKGFDN);
+            my_size += ::protobuf::rt::uint32_size(11, self.HOIOKBKGFDN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LEAAHDPAIEG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AGMAMBDEHLK != false {
-            os.write_bool(11, self.AGMAMBDEHLK)?;
+            os.write_bool(15, self.AGMAMBDEHLK)?;
         }
         if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(5, self.HOIOKBKGFDN)?;
+            os.write_uint32(11, self.HOIOKBKGFDN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LEAAHDPAIEG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEAAHDPAIEG.proto\"Q\n\x0bLEAAHDPAIEG\x12\x20\n\x0bAGMAMBDEHLK\x18\
-    \x0b\x20\x01(\x08R\x0bAGMAMBDEHLK\x12\x20\n\x0bHOIOKBKGFDN\x18\x05\x20\
+    \x0f\x20\x01(\x08R\x0bAGMAMBDEHLK\x12\x20\n\x0bHOIOKBKGFDN\x18\x0b\x20\
     \x01(\rR\x0bHOIOKBKGFDNb\x06proto3\
 ";
 

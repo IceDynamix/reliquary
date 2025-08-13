@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KHOCCHABNMN {
     // message fields
-    // @@protoc_insertion_point(field:KHOCCHABNMN.key)
-    pub key: u32,
     // @@protoc_insertion_point(field:KHOCCHABNMN.value)
     pub value: u32,
+    // @@protoc_insertion_point(field:KHOCCHABNMN.key)
+    pub key: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KHOCCHABNMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KHOCCHABNMN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &KHOCCHABNMN| { &m.key },
-            |m: &mut KHOCCHABNMN| { &mut m.key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "value",
             |m: &KHOCCHABNMN| { &m.value },
             |m: &mut KHOCCHABNMN| { &mut m.value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "key",
+            |m: &KHOCCHABNMN| { &m.key },
+            |m: &mut KHOCCHABNMN| { &mut m.key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KHOCCHABNMN>(
             "KHOCCHABNMN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KHOCCHABNMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.key = is.read_uint32()?;
-                },
-                88 => {
+                24 => {
                     self.value = is.read_uint32()?;
+                },
+                40 => {
+                    self.key = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KHOCCHABNMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.key);
-        }
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.value);
+            my_size += ::protobuf::rt::uint32_size(3, self.value);
+        }
+        if self.key != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KHOCCHABNMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.key != 0 {
-            os.write_uint32(10, self.key)?;
-        }
         if self.value != 0 {
-            os.write_uint32(11, self.value)?;
+            os.write_uint32(3, self.value)?;
+        }
+        if self.key != 0 {
+            os.write_uint32(5, self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KHOCCHABNMN {
     }
 
     fn clear(&mut self) {
-        self.key = 0;
         self.value = 0;
+        self.key = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KHOCCHABNMN {
         static instance: KHOCCHABNMN = KHOCCHABNMN {
-            key: 0,
             value: 0,
+            key: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KHOCCHABNMN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KHOCCHABNMN.proto\"5\n\x0bKHOCCHABNMN\x12\x10\n\x03key\x18\n\x20\
-    \x01(\rR\x03key\x12\x14\n\x05value\x18\x0b\x20\x01(\rR\x05valueb\x06prot\
-    o3\
+    \n\x11KHOCCHABNMN.proto\"5\n\x0bKHOCCHABNMN\x12\x14\n\x05value\x18\x03\
+    \x20\x01(\rR\x05value\x12\x10\n\x03key\x18\x05\x20\x01(\rR\x03keyb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

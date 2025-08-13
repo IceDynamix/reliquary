@@ -86,13 +86,13 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
                 },
-                122 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOPHEEHJHEK)?;
                 },
-                56 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for EvolveBuildStartLevelScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.level_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.NOPHEEHJHEK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartLevelScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EvolveBuildStartLevelScRsp.proto\x1a\x1aEvolveBuildLevelInfo.proto\
     \x1a\x15SceneBattleInfo.proto\"\xa0\x01\n\x1aEvolveBuildStartLevelScRsp\
-    \x124\n\nlevel_info\x18\x0e\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\tlev\
-    elInfo\x122\n\x0bNOPHEEHJHEK\x18\x0f\x20\x01(\x0b2\x10.SceneBattleInfoR\
-    \x0bNOPHEEHJHEK\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06\
+    \x124\n\nlevel_info\x18\x06\x20\x01(\x0b2\x15.EvolveBuildLevelInfoR\tlev\
+    elInfo\x122\n\x0bNOPHEEHJHEK\x18\t\x20\x01(\x0b2\x10.SceneBattleInfoR\
+    \x0bNOPHEEHJHEK\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06\
     proto3\
 ";
 

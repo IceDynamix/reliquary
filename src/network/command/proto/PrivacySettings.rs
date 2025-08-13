@@ -100,19 +100,19 @@ impl ::protobuf::Message for PrivacySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                56 => {
                     self.KJNCCKHJFHE = is.read_bool()?;
                 },
-                56 => {
+                48 => {
                     self.AICNFAOBCPI = is.read_bool()?;
                 },
-                32 => {
+                96 => {
                     self.NJFMILJOFOK = is.read_bool()?;
                 },
-                112 => {
+                32 => {
                     self.APONEIDMPHL = is.read_bool()?;
                 },
-                80 => {
+                64 => {
                     self.PBKBGLHHKPE = is.read_bool()?;
                 },
                 tag => {
@@ -149,19 +149,19 @@ impl ::protobuf::Message for PrivacySettings {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KJNCCKHJFHE != false {
-            os.write_bool(11, self.KJNCCKHJFHE)?;
+            os.write_bool(7, self.KJNCCKHJFHE)?;
         }
         if self.AICNFAOBCPI != false {
-            os.write_bool(7, self.AICNFAOBCPI)?;
+            os.write_bool(6, self.AICNFAOBCPI)?;
         }
         if self.NJFMILJOFOK != false {
-            os.write_bool(4, self.NJFMILJOFOK)?;
+            os.write_bool(12, self.NJFMILJOFOK)?;
         }
         if self.APONEIDMPHL != false {
-            os.write_bool(14, self.APONEIDMPHL)?;
+            os.write_bool(4, self.APONEIDMPHL)?;
         }
         if self.PBKBGLHHKPE != false {
-            os.write_bool(10, self.PBKBGLHHKPE)?;
+            os.write_bool(8, self.PBKBGLHHKPE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PrivacySettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15PrivacySettings.proto\"\xbb\x01\n\x0fPrivacySettings\x12\x20\n\x0b\
-    KJNCCKHJFHE\x18\x0b\x20\x01(\x08R\x0bKJNCCKHJFHE\x12\x20\n\x0bAICNFAOBCP\
-    I\x18\x07\x20\x01(\x08R\x0bAICNFAOBCPI\x12\x20\n\x0bNJFMILJOFOK\x18\x04\
-    \x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0bAPONEIDMPHL\x18\x0e\x20\x01(\
-    \x08R\x0bAPONEIDMPHL\x12\x20\n\x0bPBKBGLHHKPE\x18\n\x20\x01(\x08R\x0bPBK\
-    BGLHHKPEb\x06proto3\
+    KJNCCKHJFHE\x18\x07\x20\x01(\x08R\x0bKJNCCKHJFHE\x12\x20\n\x0bAICNFAOBCP\
+    I\x18\x06\x20\x01(\x08R\x0bAICNFAOBCPI\x12\x20\n\x0bNJFMILJOFOK\x18\x0c\
+    \x20\x01(\x08R\x0bNJFMILJOFOK\x12\x20\n\x0bAPONEIDMPHL\x18\x04\x20\x01(\
+    \x08R\x0bAPONEIDMPHL\x12\x20\n\x0bPBKBGLHHKPE\x18\x08\x20\x01(\x08R\x0bP\
+    BKBGLHHKPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

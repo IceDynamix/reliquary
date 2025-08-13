@@ -86,13 +86,13 @@ impl ::protobuf::Message for FateSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OKECGDDEMBL)?;
                 },
-                32 => {
+                120 => {
                     self.score_id = is.read_uint32()?;
                 },
-                50 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for FateSettleScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.score_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for FateSettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OKECGDDEMBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
+            os.write_uint32(15, self.score_id)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for FateSettleScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FateSettleScNotify.proto\x1a\x11CKFKNBMHMHM.proto\x1a\x0eItemList.\
-    proto\"\x82\x01\n\x12FateSettleScNotify\x12.\n\x0bOKECGDDEMBL\x18\n\x20\
-    \x01(\x0b2\x0c.CKFKNBMHMHMR\x0bOKECGDDEMBL\x12\x19\n\x08score_id\x18\x04\
-    \x20\x01(\rR\x07scoreId\x12!\n\x06reward\x18\x06\x20\x01(\x0b2\t.ItemLis\
+    proto\"\x82\x01\n\x12FateSettleScNotify\x12.\n\x0bOKECGDDEMBL\x18\t\x20\
+    \x01(\x0b2\x0c.CKFKNBMHMHMR\x0bOKECGDDEMBL\x12\x19\n\x08score_id\x18\x0f\
+    \x20\x01(\rR\x07scoreId\x12!\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemLis\
     tR\x06rewardb\x06proto3\
 ";
 

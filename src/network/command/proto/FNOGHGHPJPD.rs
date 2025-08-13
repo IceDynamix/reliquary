@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FNOGHGHPJPD {
     // message fields
-    // @@protoc_insertion_point(field:FNOGHGHPJPD.upgrade_level)
-    pub upgrade_level: u32,
+    // @@protoc_insertion_point(field:FNOGHGHPJPD.cur_index)
+    pub cur_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FNOGHGHPJPD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FNOGHGHPJPD {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upgrade_level",
-            |m: &FNOGHGHPJPD| { &m.upgrade_level },
-            |m: &mut FNOGHGHPJPD| { &mut m.upgrade_level },
+            "cur_index",
+            |m: &FNOGHGHPJPD| { &m.cur_index },
+            |m: &mut FNOGHGHPJPD| { &mut m.cur_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FNOGHGHPJPD>(
             "FNOGHGHPJPD",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FNOGHGHPJPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.upgrade_level = is.read_uint32()?;
+                104 => {
+                    self.cur_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FNOGHGHPJPD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.upgrade_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.upgrade_level);
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.cur_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FNOGHGHPJPD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.upgrade_level != 0 {
-            os.write_uint32(4, self.upgrade_level)?;
+        if self.cur_index != 0 {
+            os.write_uint32(13, self.cur_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FNOGHGHPJPD {
     }
 
     fn clear(&mut self) {
-        self.upgrade_level = 0;
+        self.cur_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FNOGHGHPJPD {
         static instance: FNOGHGHPJPD = FNOGHGHPJPD {
-            upgrade_level: 0,
+            cur_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FNOGHGHPJPD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FNOGHGHPJPD.proto\"2\n\x0bFNOGHGHPJPD\x12#\n\rupgrade_level\x18\
-    \x04\x20\x01(\rR\x0cupgradeLevelb\x06proto3\
+    \n\x11FNOGHGHPJPD.proto\"*\n\x0bFNOGHGHPJPD\x12\x1b\n\tcur_index\x18\r\
+    \x20\x01(\rR\x08curIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

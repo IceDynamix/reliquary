@@ -86,13 +86,13 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.item_id = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.BMALPKEKBEL = is.read_uint32()?;
                 },
-                48 => {
+                8 => {
                     self.OGJOFMCMFPG = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.item_id);
         }
         if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BMALPKEKBEL);
+            my_size += ::protobuf::rt::uint32_size(11, self.BMALPKEKBEL);
         }
         if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OGJOFMCMFPG);
+            my_size += ::protobuf::rt::uint32_size(1, self.OGJOFMCMFPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LMKAAEFPFFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(1, self.item_id)?;
+            os.write_uint32(9, self.item_id)?;
         }
         if self.BMALPKEKBEL != 0 {
-            os.write_uint32(12, self.BMALPKEKBEL)?;
+            os.write_uint32(11, self.BMALPKEKBEL)?;
         }
         if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(6, self.OGJOFMCMFPG)?;
+            os.write_uint32(1, self.OGJOFMCMFPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LMKAAEFPFFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LMKAAEFPFFO.proto\"j\n\x0bLMKAAEFPFFO\x12\x17\n\x07item_id\x18\x01\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bBMALPKEKBEL\x18\x0c\x20\x01(\rR\x0bB\
-    MALPKEKBEL\x12\x20\n\x0bOGJOFMCMFPG\x18\x06\x20\x01(\rR\x0bOGJOFMCMFPGb\
+    \n\x11LMKAAEFPFFO.proto\"j\n\x0bLMKAAEFPFFO\x12\x17\n\x07item_id\x18\t\
+    \x20\x01(\rR\x06itemId\x12\x20\n\x0bBMALPKEKBEL\x18\x0b\x20\x01(\rR\x0bB\
+    MALPKEKBEL\x12\x20\n\x0bOGJOFMCMFPG\x18\x01\x20\x01(\rR\x0bOGJOFMCMFPGb\
     \x06proto3\
 ";
 

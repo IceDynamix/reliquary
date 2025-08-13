@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearPlan {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearPlan.inside_relic_list)
-    pub inside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RelicSmartWearPlan.outside_relic_list)
     pub outside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RelicSmartWearPlan.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:RelicSmartWearPlan.inside_relic_list)
+    pub inside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RelicSmartWearPlan.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -56,11 +56,6 @@ impl RelicSmartWearPlan {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "inside_relic_list",
-            |m: &RelicSmartWearPlan| { &m.inside_relic_list },
-            |m: &mut RelicSmartWearPlan| { &mut m.inside_relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "outside_relic_list",
             |m: &RelicSmartWearPlan| { &m.outside_relic_list },
             |m: &mut RelicSmartWearPlan| { &mut m.outside_relic_list },
@@ -69,6 +64,11 @@ impl RelicSmartWearPlan {
             "unique_id",
             |m: &RelicSmartWearPlan| { &m.unique_id },
             |m: &mut RelicSmartWearPlan| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "inside_relic_list",
+            |m: &RelicSmartWearPlan| { &m.inside_relic_list },
+            |m: &mut RelicSmartWearPlan| { &mut m.inside_relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for RelicSmartWearPlan {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.inside_relic_list)?;
-                },
-                120 => {
-                    self.inside_relic_list.push(is.read_uint32()?);
-                },
-                106 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.outside_relic_list)?;
                 },
-                104 => {
+                56 => {
                     self.outside_relic_list.push(is.read_uint32()?);
                 },
-                48 => {
+                24 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                8 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.inside_relic_list)?;
+                },
+                32 => {
+                    self.inside_relic_list.push(is.read_uint32()?);
+                },
+                112 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RelicSmartWearPlan {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.inside_relic_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.outside_relic_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.outside_relic_list);
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.inside_relic_list);
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for RelicSmartWearPlan {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.inside_relic_list)?;
-        os.write_repeated_packed_uint32(13, &self.outside_relic_list)?;
+        os.write_repeated_packed_uint32(7, &self.outside_relic_list)?;
         if self.unique_id != 0 {
-            os.write_uint32(6, self.unique_id)?;
+            os.write_uint32(3, self.unique_id)?;
         }
+        os.write_repeated_packed_uint32(4, &self.inside_relic_list)?;
         if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
+            os.write_uint32(14, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,18 +162,18 @@ impl ::protobuf::Message for RelicSmartWearPlan {
     }
 
     fn clear(&mut self) {
-        self.inside_relic_list.clear();
         self.outside_relic_list.clear();
         self.unique_id = 0;
+        self.inside_relic_list.clear();
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearPlan {
         static instance: RelicSmartWearPlan = RelicSmartWearPlan {
-            inside_relic_list: ::std::vec::Vec::new(),
             outside_relic_list: ::std::vec::Vec::new(),
             unique_id: 0,
+            inside_relic_list: ::std::vec::Vec::new(),
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearPlan {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RelicSmartWearPlan.proto\"\xa8\x01\n\x12RelicSmartWearPlan\x12*\n\
-    \x11inside_relic_list\x18\x0f\x20\x03(\rR\x0finsideRelicList\x12,\n\x12o\
-    utside_relic_list\x18\r\x20\x03(\rR\x10outsideRelicList\x12\x1b\n\tuniqu\
-    e_id\x18\x06\x20\x01(\rR\x08uniqueId\x12\x1b\n\tavatar_id\x18\x01\x20\
+    \n\x18RelicSmartWearPlan.proto\"\xa8\x01\n\x12RelicSmartWearPlan\x12,\n\
+    \x12outside_relic_list\x18\x07\x20\x03(\rR\x10outsideRelicList\x12\x1b\n\
+    \tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12*\n\x11inside_relic_list\
+    \x18\x04\x20\x03(\rR\x0finsideRelicList\x12\x1b\n\tavatar_id\x18\x0e\x20\
     \x01(\rR\x08avatarIdb\x06proto3\
 ";
 

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesHandleCardPieceApplyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.PNAKHNBDJAE)
-    pub PNAKHNBDJAE: u32,
-    // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.MDAPCFHELJL)
     pub MDAPCFHELJL: bool,
     // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.DLHBCOKCIDP)
     pub DLHBCOKCIDP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.PPIOLCLPMPL)
     pub PPIOLCLPMPL: i64,
+    // @@protoc_insertion_point(field:PlanetFesHandleCardPieceApplyScRsp.PNAKHNBDJAE)
+    pub PNAKHNBDJAE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesHandleCardPieceApplyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl PlanetFesHandleCardPieceApplyScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNAKHNBDJAE",
-            |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.PNAKHNBDJAE },
-            |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.PNAKHNBDJAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.retcode },
-            |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDAPCFHELJL",
             |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.MDAPCFHELJL },
             |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.MDAPCFHELJL },
@@ -78,9 +68,19 @@ impl PlanetFesHandleCardPieceApplyScRsp {
             |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.DLHBCOKCIDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.retcode },
+            |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPIOLCLPMPL",
             |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.PPIOLCLPMPL },
             |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.PPIOLCLPMPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PNAKHNBDJAE",
+            |m: &PlanetFesHandleCardPieceApplyScRsp| { &m.PNAKHNBDJAE },
+            |m: &mut PlanetFesHandleCardPieceApplyScRsp| { &mut m.PNAKHNBDJAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesHandleCardPieceApplyScRsp>(
             "PlanetFesHandleCardPieceApplyScRsp",
@@ -101,22 +101,22 @@ impl ::protobuf::Message for PlanetFesHandleCardPieceApplyScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 120 => {
-                    self.PNAKHNBDJAE = is.read_uint32()?;
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                32 => {
                     self.MDAPCFHELJL = is.read_bool()?;
                 },
-                66 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.DLHBCOKCIDP)?;
                 },
-                64 => {
+                40 => {
                     self.DLHBCOKCIDP.push(is.read_uint32()?);
                 },
                 24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                64 => {
                     self.PPIOLCLPMPL = is.read_int64()?;
+                },
+                96 => {
+                    self.PNAKHNBDJAE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for PlanetFesHandleCardPieceApplyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNAKHNBDJAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PNAKHNBDJAE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.MDAPCFHELJL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DLHBCOKCIDP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.DLHBCOKCIDP);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         if self.PPIOLCLPMPL != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.PPIOLCLPMPL);
+            my_size += ::protobuf::rt::int64_size(8, self.PPIOLCLPMPL);
+        }
+        if self.PNAKHNBDJAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PNAKHNBDJAE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for PlanetFesHandleCardPieceApplyScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNAKHNBDJAE != 0 {
-            os.write_uint32(15, self.PNAKHNBDJAE)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         if self.MDAPCFHELJL != false {
-            os.write_bool(4, self.MDAPCFHELJL)?;
+            os.write_bool(15, self.MDAPCFHELJL)?;
         }
-        os.write_repeated_packed_uint32(8, &self.DLHBCOKCIDP)?;
+        os.write_repeated_packed_uint32(5, &self.DLHBCOKCIDP)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
         if self.PPIOLCLPMPL != 0 {
-            os.write_int64(3, self.PPIOLCLPMPL)?;
+            os.write_int64(8, self.PPIOLCLPMPL)?;
+        }
+        if self.PNAKHNBDJAE != 0 {
+            os.write_uint32(12, self.PNAKHNBDJAE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for PlanetFesHandleCardPieceApplyScRsp {
     }
 
     fn clear(&mut self) {
-        self.PNAKHNBDJAE = 0;
-        self.retcode = 0;
         self.MDAPCFHELJL = false;
         self.DLHBCOKCIDP.clear();
+        self.retcode = 0;
         self.PPIOLCLPMPL = 0;
+        self.PNAKHNBDJAE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesHandleCardPieceApplyScRsp {
         static instance: PlanetFesHandleCardPieceApplyScRsp = PlanetFesHandleCardPieceApplyScRsp {
-            PNAKHNBDJAE: 0,
-            retcode: 0,
             MDAPCFHELJL: false,
             DLHBCOKCIDP: ::std::vec::Vec::new(),
+            retcode: 0,
             PPIOLCLPMPL: 0,
+            PNAKHNBDJAE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesHandleCardPieceApplyScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(PlanetFesHandleCardPieceApplyScRsp.proto\"\xc6\x01\n\"PlanetFesHandle\
-    CardPieceApplyScRsp\x12\x20\n\x0bPNAKHNBDJAE\x18\x0f\x20\x01(\rR\x0bPNAK\
-    HNBDJAE\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bM\
-    DAPCFHELJL\x18\x04\x20\x01(\x08R\x0bMDAPCFHELJL\x12\x20\n\x0bDLHBCOKCIDP\
-    \x18\x08\x20\x03(\rR\x0bDLHBCOKCIDP\x12\x20\n\x0bPPIOLCLPMPL\x18\x03\x20\
-    \x01(\x03R\x0bPPIOLCLPMPLb\x06proto3\
+    CardPieceApplyScRsp\x12\x20\n\x0bMDAPCFHELJL\x18\x0f\x20\x01(\x08R\x0bMD\
+    APCFHELJL\x12\x20\n\x0bDLHBCOKCIDP\x18\x05\x20\x03(\rR\x0bDLHBCOKCIDP\
+    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bPPIOLC\
+    LPMPL\x18\x08\x20\x01(\x03R\x0bPPIOLCLPMPL\x12\x20\n\x0bPNAKHNBDJAE\x18\
+    \x0c\x20\x01(\rR\x0bPNAKHNBDJAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

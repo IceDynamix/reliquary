@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SendMsgScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SendMsgScRsp.end_time)
-    pub end_time: u64,
     // @@protoc_insertion_point(field:SendMsgScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SendMsgScRsp.end_time)
+    pub end_time: u64,
     // special fields
     // @@protoc_insertion_point(special_field:SendMsgScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SendMsgScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &SendMsgScRsp| { &m.end_time },
-            |m: &mut SendMsgScRsp| { &mut m.end_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SendMsgScRsp| { &m.retcode },
             |m: &mut SendMsgScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &SendMsgScRsp| { &m.end_time },
+            |m: &mut SendMsgScRsp| { &mut m.end_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SendMsgScRsp>(
             "SendMsgScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SendMsgScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.end_time = is.read_uint64()?;
-                },
-                56 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                88 => {
+                    self.end_time = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SendMsgScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.end_time);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SendMsgScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_time != 0 {
-            os.write_uint64(8, self.end_time)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.end_time != 0 {
+            os.write_uint64(11, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SendMsgScRsp {
     }
 
     fn clear(&mut self) {
-        self.end_time = 0;
         self.retcode = 0;
+        self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SendMsgScRsp {
         static instance: SendMsgScRsp = SendMsgScRsp {
-            end_time: 0,
             retcode: 0,
+            end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SendMsgScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12SendMsgScRsp.proto\"C\n\x0cSendMsgScRsp\x12\x19\n\x08end_time\x18\
-    \x08\x20\x01(\x04R\x07endTime\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x12SendMsgScRsp.proto\"C\n\x0cSendMsgScRsp\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x04R\
+    \x07endTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

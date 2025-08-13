@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ICAOOPPMJDJ {
     // message fields
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.BLKFGAJHMLK)
-    pub BLKFGAJHMLK: u32,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CLBNHPEABFK)
-    pub CLBNHPEABFK: i32,
     // @@protoc_insertion_point(field:ICAOOPPMJDJ.BPIPOBHCMFD)
     pub BPIPOBHCMFD: ::std::vec::Vec<super::GKLOALDHNEF::GKLOALDHNEF>,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.KJPMOHFIILO)
-    pub KJPMOHFIILO: ::protobuf::EnumOrUnknown<super::EEIBHJPNJCF::EEIBHJPNJCF>,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CHLLMFJGPPA)
-    pub CHLLMFJGPPA: u32,
     // @@protoc_insertion_point(field:ICAOOPPMJDJ.DJEEEABMDDK)
     pub DJEEEABMDDK: bool,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.BLKFGAJHMLK)
+    pub BLKFGAJHMLK: u32,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CHLLMFJGPPA)
+    pub CHLLMFJGPPA: u32,
     // @@protoc_insertion_point(field:ICAOOPPMJDJ.is_win)
     pub is_win: bool,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CLBNHPEABFK)
+    pub CLBNHPEABFK: i32,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.KJPMOHFIILO)
+    pub KJPMOHFIILO: ::protobuf::EnumOrUnknown<super::EEIBHJPNJCF::EEIBHJPNJCF>,
     // special fields
     // @@protoc_insertion_point(special_field:ICAOOPPMJDJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,30 +61,10 @@ impl ICAOOPPMJDJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLKFGAJHMLK",
-            |m: &ICAOOPPMJDJ| { &m.BLKFGAJHMLK },
-            |m: &mut ICAOOPPMJDJ| { &mut m.BLKFGAJHMLK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLBNHPEABFK",
-            |m: &ICAOOPPMJDJ| { &m.CLBNHPEABFK },
-            |m: &mut ICAOOPPMJDJ| { &mut m.CLBNHPEABFK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BPIPOBHCMFD",
             |m: &ICAOOPPMJDJ| { &m.BPIPOBHCMFD },
             |m: &mut ICAOOPPMJDJ| { &mut m.BPIPOBHCMFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJPMOHFIILO",
-            |m: &ICAOOPPMJDJ| { &m.KJPMOHFIILO },
-            |m: &mut ICAOOPPMJDJ| { &mut m.KJPMOHFIILO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHLLMFJGPPA",
-            |m: &ICAOOPPMJDJ| { &m.CHLLMFJGPPA },
-            |m: &mut ICAOOPPMJDJ| { &mut m.CHLLMFJGPPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DJEEEABMDDK",
@@ -92,9 +72,29 @@ impl ICAOOPPMJDJ {
             |m: &mut ICAOOPPMJDJ| { &mut m.DJEEEABMDDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLKFGAJHMLK",
+            |m: &ICAOOPPMJDJ| { &m.BLKFGAJHMLK },
+            |m: &mut ICAOOPPMJDJ| { &mut m.BLKFGAJHMLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHLLMFJGPPA",
+            |m: &ICAOOPPMJDJ| { &m.CHLLMFJGPPA },
+            |m: &mut ICAOOPPMJDJ| { &mut m.CHLLMFJGPPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ICAOOPPMJDJ| { &m.is_win },
             |m: &mut ICAOOPPMJDJ| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLBNHPEABFK",
+            |m: &ICAOOPPMJDJ| { &m.CLBNHPEABFK },
+            |m: &mut ICAOOPPMJDJ| { &mut m.CLBNHPEABFK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KJPMOHFIILO",
+            |m: &ICAOOPPMJDJ| { &m.KJPMOHFIILO },
+            |m: &mut ICAOOPPMJDJ| { &mut m.KJPMOHFIILO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICAOOPPMJDJ>(
             "ICAOOPPMJDJ",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BLKFGAJHMLK = is.read_uint32()?;
-                },
-                72 => {
-                    self.CLBNHPEABFK = is.read_int32()?;
-                },
-                114 => {
+                50 => {
                     self.BPIPOBHCMFD.push(is.read_message()?);
                 },
-                88 => {
-                    self.KJPMOHFIILO = is.read_enum_or_unknown()?;
-                },
-                104 => {
-                    self.CHLLMFJGPPA = is.read_uint32()?;
-                },
-                48 => {
+                24 => {
                     self.DJEEEABMDDK = is.read_bool()?;
+                },
+                8 => {
+                    self.BLKFGAJHMLK = is.read_uint32()?;
+                },
+                16 => {
+                    self.CHLLMFJGPPA = is.read_uint32()?;
                 },
                 32 => {
                     self.is_win = is.read_bool()?;
+                },
+                56 => {
+                    self.CLBNHPEABFK = is.read_int32()?;
+                },
+                120 => {
+                    self.KJPMOHFIILO = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLKFGAJHMLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BLKFGAJHMLK);
-        }
-        if self.CLBNHPEABFK != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.CLBNHPEABFK);
-        }
         for value in &self.BPIPOBHCMFD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
-            my_size += ::protobuf::rt::int32_size(11, self.KJPMOHFIILO.value());
-        }
-        if self.CHLLMFJGPPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CHLLMFJGPPA);
-        }
         if self.DJEEEABMDDK != false {
             my_size += 1 + 1;
         }
+        if self.BLKFGAJHMLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BLKFGAJHMLK);
+        }
+        if self.CHLLMFJGPPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CHLLMFJGPPA);
+        }
         if self.is_win != false {
             my_size += 1 + 1;
+        }
+        if self.CLBNHPEABFK != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.CLBNHPEABFK);
+        }
+        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
+            my_size += ::protobuf::rt::int32_size(15, self.KJPMOHFIILO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLKFGAJHMLK != 0 {
-            os.write_uint32(12, self.BLKFGAJHMLK)?;
-        }
-        if self.CLBNHPEABFK != 0 {
-            os.write_int32(9, self.CLBNHPEABFK)?;
-        }
         for v in &self.BPIPOBHCMFD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.KJPMOHFIILO))?;
+        if self.DJEEEABMDDK != false {
+            os.write_bool(3, self.DJEEEABMDDK)?;
+        }
+        if self.BLKFGAJHMLK != 0 {
+            os.write_uint32(1, self.BLKFGAJHMLK)?;
         }
         if self.CHLLMFJGPPA != 0 {
-            os.write_uint32(13, self.CHLLMFJGPPA)?;
-        }
-        if self.DJEEEABMDDK != false {
-            os.write_bool(6, self.DJEEEABMDDK)?;
+            os.write_uint32(2, self.CHLLMFJGPPA)?;
         }
         if self.is_win != false {
             os.write_bool(4, self.is_win)?;
+        }
+        if self.CLBNHPEABFK != 0 {
+            os.write_int32(7, self.CLBNHPEABFK)?;
+        }
+        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.KJPMOHFIILO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     }
 
     fn clear(&mut self) {
-        self.BLKFGAJHMLK = 0;
-        self.CLBNHPEABFK = 0;
         self.BPIPOBHCMFD.clear();
-        self.KJPMOHFIILO = ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default);
-        self.CHLLMFJGPPA = 0;
         self.DJEEEABMDDK = false;
+        self.BLKFGAJHMLK = 0;
+        self.CHLLMFJGPPA = 0;
         self.is_win = false;
+        self.CLBNHPEABFK = 0;
+        self.KJPMOHFIILO = ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICAOOPPMJDJ {
         static instance: ICAOOPPMJDJ = ICAOOPPMJDJ {
-            BLKFGAJHMLK: 0,
-            CLBNHPEABFK: 0,
             BPIPOBHCMFD: ::std::vec::Vec::new(),
-            KJPMOHFIILO: ::protobuf::EnumOrUnknown::from_i32(0),
-            CHLLMFJGPPA: 0,
             DJEEEABMDDK: false,
+            BLKFGAJHMLK: 0,
+            CHLLMFJGPPA: 0,
             is_win: false,
+            CLBNHPEABFK: 0,
+            KJPMOHFIILO: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,13 @@ impl ::protobuf::reflect::ProtobufValue for ICAOOPPMJDJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICAOOPPMJDJ.proto\x1a\x11EEIBHJPNJCF.proto\x1a\x11GKLOALDHNEF.prot\
-    o\"\x8c\x02\n\x0bICAOOPPMJDJ\x12\x20\n\x0bBLKFGAJHMLK\x18\x0c\x20\x01(\r\
-    R\x0bBLKFGAJHMLK\x12\x20\n\x0bCLBNHPEABFK\x18\t\x20\x01(\x05R\x0bCLBNHPE\
-    ABFK\x12.\n\x0bBPIPOBHCMFD\x18\x0e\x20\x03(\x0b2\x0c.GKLOALDHNEFR\x0bBPI\
-    POBHCMFD\x12.\n\x0bKJPMOHFIILO\x18\x0b\x20\x01(\x0e2\x0c.EEIBHJPNJCFR\
-    \x0bKJPMOHFIILO\x12\x20\n\x0bCHLLMFJGPPA\x18\r\x20\x01(\rR\x0bCHLLMFJGPP\
-    A\x12\x20\n\x0bDJEEEABMDDK\x18\x06\x20\x01(\x08R\x0bDJEEEABMDDK\x12\x15\
-    \n\x06is_win\x18\x04\x20\x01(\x08R\x05isWinb\x06proto3\
+    o\"\x8c\x02\n\x0bICAOOPPMJDJ\x12.\n\x0bBPIPOBHCMFD\x18\x06\x20\x03(\x0b2\
+    \x0c.GKLOALDHNEFR\x0bBPIPOBHCMFD\x12\x20\n\x0bDJEEEABMDDK\x18\x03\x20\
+    \x01(\x08R\x0bDJEEEABMDDK\x12\x20\n\x0bBLKFGAJHMLK\x18\x01\x20\x01(\rR\
+    \x0bBLKFGAJHMLK\x12\x20\n\x0bCHLLMFJGPPA\x18\x02\x20\x01(\rR\x0bCHLLMFJG\
+    PPA\x12\x15\n\x06is_win\x18\x04\x20\x01(\x08R\x05isWin\x12\x20\n\x0bCLBN\
+    HPEABFK\x18\x07\x20\x01(\x05R\x0bCLBNHPEABFK\x12.\n\x0bKJPMOHFIILO\x18\
+    \x0f\x20\x01(\x0e2\x0c.EEIBHJPNJCFR\x0bKJPMOHFIILOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

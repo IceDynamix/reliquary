@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueEndlessActivityPointRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.MDHJKKBNMCF)
     pub MDHJKKBNMCF: bool,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardCsReq.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueEndlessActivityPointRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeRogueEndlessActivityPointRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.level },
-            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDHJKKBNMCF",
             |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.MDHJKKBNMCF },
             |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.MDHJKKBNMCF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &TakeRogueEndlessActivityPointRewardCsReq| { &m.level },
+            |m: &mut TakeRogueEndlessActivityPointRewardCsReq| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueEndlessActivityPointRewardCsReq>(
             "TakeRogueEndlessActivityPointRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.level = is.read_uint32()?;
-                },
-                88 => {
+                72 => {
                     self.MDHJKKBNMCF = is.read_bool()?;
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
-        }
         if self.MDHJKKBNMCF != false {
             my_size += 1 + 1;
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(12, self.level)?;
-        }
         if self.MDHJKKBNMCF != false {
-            os.write_bool(11, self.MDHJKKBNMCF)?;
+            os.write_bool(9, self.MDHJKKBNMCF)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.MDHJKKBNMCF = false;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueEndlessActivityPointRewardCsReq {
         static instance: TakeRogueEndlessActivityPointRewardCsReq = TakeRogueEndlessActivityPointRewardCsReq {
-            level: 0,
             MDHJKKBNMCF: false,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityPointRewardC
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.TakeRogueEndlessActivityPointRewardCsReq.proto\"b\n(TakeRogueEndlessA\
-    ctivityPointRewardCsReq\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05level\
-    \x12\x20\n\x0bMDHJKKBNMCF\x18\x0b\x20\x01(\x08R\x0bMDHJKKBNMCFb\x06proto\
-    3\
+    ctivityPointRewardCsReq\x12\x20\n\x0bMDHJKKBNMCF\x18\t\x20\x01(\x08R\x0b\
+    MDHJKKBNMCF\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPassenger {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPassenger.OAFAAEEMNFB)
-    pub OAFAAEEMNFB: u32,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.PKIDBDGPILO)
-    pub PKIDBDGPILO: u32,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.upgrade_level)
-    pub upgrade_level: u32,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.passenger_data_list)
-    pub passenger_data_list: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.CFKPAICDJPJ)
-    pub CFKPAICDJPJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.skill_list)
-    pub skill_list: ::std::vec::Vec<super::GOCKBLNJIBG::GOCKBLNJIBG>,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.PCLMNBILAPH)
+    pub PCLMNBILAPH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.record_id)
+    pub record_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.CINMLCKBHIM)
+    pub CINMLCKBHIM: bool,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.passenger_id)
+    pub passenger_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyPassenger.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,37 +53,27 @@ impl TrainPartyPassenger {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAFAAEEMNFB",
-            |m: &TrainPartyPassenger| { &m.OAFAAEEMNFB },
-            |m: &mut TrainPartyPassenger| { &mut m.OAFAAEEMNFB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKIDBDGPILO",
-            |m: &TrainPartyPassenger| { &m.PKIDBDGPILO },
-            |m: &mut TrainPartyPassenger| { &mut m.PKIDBDGPILO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PCLMNBILAPH",
+            |m: &TrainPartyPassenger| { &m.PCLMNBILAPH },
+            |m: &mut TrainPartyPassenger| { &mut m.PCLMNBILAPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upgrade_level",
-            |m: &TrainPartyPassenger| { &m.upgrade_level },
-            |m: &mut TrainPartyPassenger| { &mut m.upgrade_level },
+            "record_id",
+            |m: &TrainPartyPassenger| { &m.record_id },
+            |m: &mut TrainPartyPassenger| { &mut m.record_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "passenger_data_list",
-            |m: &TrainPartyPassenger| { &m.passenger_data_list },
-            |m: &mut TrainPartyPassenger| { &mut m.passenger_data_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CINMLCKBHIM",
+            |m: &TrainPartyPassenger| { &m.CINMLCKBHIM },
+            |m: &mut TrainPartyPassenger| { &mut m.CINMLCKBHIM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFKPAICDJPJ",
-            |m: &TrainPartyPassenger| { &m.CFKPAICDJPJ },
-            |m: &mut TrainPartyPassenger| { &mut m.CFKPAICDJPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skill_list",
-            |m: &TrainPartyPassenger| { &m.skill_list },
-            |m: &mut TrainPartyPassenger| { &mut m.skill_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "passenger_id",
+            |m: &TrainPartyPassenger| { &m.passenger_id },
+            |m: &mut TrainPartyPassenger| { &mut m.passenger_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyPassenger>(
             "TrainPartyPassenger",
@@ -107,26 +93,20 @@ impl ::protobuf::Message for TrainPartyPassenger {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.OAFAAEEMNFB = is.read_uint32()?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PCLMNBILAPH)?;
+                },
+                48 => {
+                    self.PCLMNBILAPH.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.record_id = is.read_uint32()?;
                 },
                 120 => {
-                    self.PKIDBDGPILO = is.read_uint32()?;
+                    self.CINMLCKBHIM = is.read_bool()?;
                 },
-                96 => {
-                    self.upgrade_level = is.read_uint32()?;
-                },
-                58 => {
-                    self.passenger_data_list.push(is.read_message()?);
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CFKPAICDJPJ)?;
-                },
-                32 => {
-                    self.CFKPAICDJPJ.push(is.read_uint32()?);
-                },
-                106 => {
-                    self.skill_list.push(is.read_message()?);
+                64 => {
+                    self.passenger_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,46 +120,32 @@ impl ::protobuf::Message for TrainPartyPassenger {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OAFAAEEMNFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OAFAAEEMNFB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PCLMNBILAPH);
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.record_id);
         }
-        if self.PKIDBDGPILO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PKIDBDGPILO);
+        if self.CINMLCKBHIM != false {
+            my_size += 1 + 1;
         }
-        if self.upgrade_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.upgrade_level);
+        if self.passenger_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.passenger_id);
         }
-        for value in &self.passenger_data_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CFKPAICDJPJ);
-        for value in &self.skill_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OAFAAEEMNFB != 0 {
-            os.write_uint32(5, self.OAFAAEEMNFB)?;
+        os.write_repeated_packed_uint32(6, &self.PCLMNBILAPH)?;
+        if self.record_id != 0 {
+            os.write_uint32(7, self.record_id)?;
         }
-        if self.PKIDBDGPILO != 0 {
-            os.write_uint32(15, self.PKIDBDGPILO)?;
+        if self.CINMLCKBHIM != false {
+            os.write_bool(15, self.CINMLCKBHIM)?;
         }
-        if self.upgrade_level != 0 {
-            os.write_uint32(12, self.upgrade_level)?;
+        if self.passenger_id != 0 {
+            os.write_uint32(8, self.passenger_id)?;
         }
-        for v in &self.passenger_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        os.write_repeated_packed_uint32(4, &self.CFKPAICDJPJ)?;
-        for v in &self.skill_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +163,19 @@ impl ::protobuf::Message for TrainPartyPassenger {
     }
 
     fn clear(&mut self) {
-        self.OAFAAEEMNFB = 0;
-        self.PKIDBDGPILO = 0;
-        self.upgrade_level = 0;
-        self.passenger_data_list.clear();
-        self.CFKPAICDJPJ.clear();
-        self.skill_list.clear();
+        self.PCLMNBILAPH.clear();
+        self.record_id = 0;
+        self.CINMLCKBHIM = false;
+        self.passenger_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassenger {
         static instance: TrainPartyPassenger = TrainPartyPassenger {
-            OAFAAEEMNFB: 0,
-            PKIDBDGPILO: 0,
-            upgrade_level: 0,
-            passenger_data_list: ::std::vec::Vec::new(),
-            CFKPAICDJPJ: ::std::vec::Vec::new(),
-            skill_list: ::std::vec::Vec::new(),
+            PCLMNBILAPH: ::std::vec::Vec::new(),
+            record_id: 0,
+            CINMLCKBHIM: false,
+            passenger_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,14 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassenger {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19TrainPartyPassenger.proto\x1a\x11GOCKBLNJIBG.proto\x1a\x11MAONNNEL\
-    GCC.proto\"\x8b\x02\n\x13TrainPartyPassenger\x12\x20\n\x0bOAFAAEEMNFB\
-    \x18\x05\x20\x01(\rR\x0bOAFAAEEMNFB\x12\x20\n\x0bPKIDBDGPILO\x18\x0f\x20\
-    \x01(\rR\x0bPKIDBDGPILO\x12#\n\rupgrade_level\x18\x0c\x20\x01(\rR\x0cupg\
-    radeLevel\x12<\n\x13passenger_data_list\x18\x07\x20\x03(\x0b2\x0c.MAONNN\
-    ELGCCR\x11passengerDataList\x12\x20\n\x0bCFKPAICDJPJ\x18\x04\x20\x03(\rR\
-    \x0bCFKPAICDJPJ\x12+\n\nskill_list\x18\r\x20\x03(\x0b2\x0c.GOCKBLNJIBGR\
-    \tskillListb\x06proto3\
+    \n\x19TrainPartyPassenger.proto\"\x99\x01\n\x13TrainPartyPassenger\x12\
+    \x20\n\x0bPCLMNBILAPH\x18\x06\x20\x03(\rR\x0bPCLMNBILAPH\x12\x1b\n\treco\
+    rd_id\x18\x07\x20\x01(\rR\x08recordId\x12\x20\n\x0bCINMLCKBHIM\x18\x0f\
+    \x20\x01(\x08R\x0bCINMLCKBHIM\x12!\n\x0cpassenger_id\x18\x08\x20\x01(\rR\
+    \x0bpassengerIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,9 +221,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GOCKBLNJIBG::file_descriptor().clone());
-            deps.push(super::MAONNNELGCC::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyPassenger::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

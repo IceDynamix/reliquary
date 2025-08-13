@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.round_count = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.level = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.INHDDNNPBDB = is.read_uint32()?;
                 },
-                58 => {
+                106 => {
                     self.lineup_list.push(is.read_message()?);
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.round_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.round_count);
+            my_size += ::protobuf::rt::uint32_size(9, self.round_count);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.INHDDNNPBDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.INHDDNNPBDB);
+            my_size += ::protobuf::rt::uint32_size(14, self.INHDDNNPBDB);
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.round_count != 0 {
-            os.write_uint32(4, self.round_count)?;
+            os.write_uint32(9, self.round_count)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         if self.INHDDNNPBDB != 0 {
-            os.write_uint32(2, self.INHDDNNPBDB)?;
+            os.write_uint32(14, self.INHDDNNPBDB)?;
         }
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStageTertinggi {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChallengeStageTertinggi.proto\x1a\x19ChallengeLineupList.proto\"\
-    \xa9\x01\n\x17ChallengeStageTertinggi\x12\x1f\n\x0bround_count\x18\x04\
-    \x20\x01(\rR\nroundCount\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\
-    \x12\x20\n\x0bINHDDNNPBDB\x18\x02\x20\x01(\rR\x0bINHDDNNPBDB\x125\n\x0bl\
-    ineup_list\x18\x07\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupListb\
-    \x06proto3\
+    \xa9\x01\n\x17ChallengeStageTertinggi\x12\x1f\n\x0bround_count\x18\t\x20\
+    \x01(\rR\nroundCount\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\
+    \x20\n\x0bINHDDNNPBDB\x18\x0e\x20\x01(\rR\x0bINHDDNNPBDB\x125\n\x0blineu\
+    p_list\x18\r\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupListb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IKAMMKLBOCO {
     // message fields
-    // @@protoc_insertion_point(field:IKAMMKLBOCO.display_value)
-    pub display_value: u32,
-    // @@protoc_insertion_point(field:IKAMMKLBOCO.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:IKAMMKLBOCO.type)
     pub type_: ::protobuf::EnumOrUnknown<super::MissionSyncRecord::MissionSyncRecord>,
+    // @@protoc_insertion_point(field:IKAMMKLBOCO.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:IKAMMKLBOCO.display_value)
+    pub display_value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IKAMMKLBOCO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl IKAMMKLBOCO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &IKAMMKLBOCO| { &m.display_value },
-            |m: &mut IKAMMKLBOCO| { &mut m.display_value },
+            "type",
+            |m: &IKAMMKLBOCO| { &m.type_ },
+            |m: &mut IKAMMKLBOCO| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -64,9 +64,9 @@ impl IKAMMKLBOCO {
             |m: &mut IKAMMKLBOCO| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &IKAMMKLBOCO| { &m.type_ },
-            |m: &mut IKAMMKLBOCO| { &mut m.type_ },
+            "display_value",
+            |m: &IKAMMKLBOCO| { &m.display_value },
+            |m: &mut IKAMMKLBOCO| { &mut m.display_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IKAMMKLBOCO>(
             "IKAMMKLBOCO",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for IKAMMKLBOCO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.display_value = is.read_uint32()?;
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                80 => {
                     self.id = is.read_uint32()?;
                 },
-                72 => {
-                    self.type_ = is.read_enum_or_unknown()?;
+                32 => {
+                    self.display_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for IKAMMKLBOCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.display_value);
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MissionSyncRecord::MissionSyncRecord::MISSION_SYNC_RECORD_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.type_.value());
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(10, self.id);
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MissionSyncRecord::MissionSyncRecord::MISSION_SYNC_RECORD_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
+        if self.display_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.display_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for IKAMMKLBOCO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.display_value != 0 {
-            os.write_uint32(2, self.display_value)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MissionSyncRecord::MissionSyncRecord::MISSION_SYNC_RECORD_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(10, self.id)?;
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::MissionSyncRecord::MissionSyncRecord::MISSION_SYNC_RECORD_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        if self.display_value != 0 {
+            os.write_uint32(4, self.display_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for IKAMMKLBOCO {
     }
 
     fn clear(&mut self) {
-        self.display_value = 0;
-        self.id = 0;
         self.type_ = ::protobuf::EnumOrUnknown::new(super::MissionSyncRecord::MissionSyncRecord::MISSION_SYNC_RECORD_NONE);
+        self.id = 0;
+        self.display_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IKAMMKLBOCO {
         static instance: IKAMMKLBOCO = IKAMMKLBOCO {
-            display_value: 0,
-            id: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            id: 0,
+            display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for IKAMMKLBOCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IKAMMKLBOCO.proto\x1a\x17MissionSyncRecord.proto\"j\n\x0bIKAMMKLBO\
-    CO\x12#\n\rdisplay_value\x18\x02\x20\x01(\rR\x0cdisplayValue\x12\x0e\n\
-    \x02id\x18\x05\x20\x01(\rR\x02id\x12&\n\x04type\x18\t\x20\x01(\x0e2\x12.\
-    MissionSyncRecordR\x04typeb\x06proto3\
+    CO\x12&\n\x04type\x18\x02\x20\x01(\x0e2\x12.MissionSyncRecordR\x04type\
+    \x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02id\x12#\n\rdisplay_value\x18\x04\
+    \x20\x01(\rR\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

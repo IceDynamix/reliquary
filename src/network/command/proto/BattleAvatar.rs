@@ -60,8 +60,8 @@ pub struct BattleAvatar {
     pub GMOBAOCEFCE: u32,
     // @@protoc_insertion_point(field:BattleAvatar.IMJJKBJOOHJ)
     pub IMJJKBJOOHJ: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
-    // @@protoc_insertion_point(field:BattleAvatar.GLACKHOPMIO)
-    pub GLACKHOPMIO: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.enhanced_id)
+    pub enhanced_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleAvatar.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -162,9 +162,9 @@ impl BattleAvatar {
             |m: &mut BattleAvatar| { &mut m.IMJJKBJOOHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLACKHOPMIO",
-            |m: &BattleAvatar| { &m.GLACKHOPMIO },
-            |m: &mut BattleAvatar| { &mut m.GLACKHOPMIO },
+            "enhanced_id",
+            |m: &BattleAvatar| { &m.enhanced_id },
+            |m: &mut BattleAvatar| { &mut m.enhanced_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleAvatar>(
             "BattleAvatar",
@@ -233,7 +233,7 @@ impl ::protobuf::Message for BattleAvatar {
                     self.IMJJKBJOOHJ.push(is.read_message()?);
                 },
                 152 => {
-                    self.GLACKHOPMIO = is.read_uint32()?;
+                    self.enhanced_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -301,8 +301,8 @@ impl ::protobuf::Message for BattleAvatar {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GLACKHOPMIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(19, self.GLACKHOPMIO);
+        if self.enhanced_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(19, self.enhanced_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -358,8 +358,8 @@ impl ::protobuf::Message for BattleAvatar {
         for v in &self.IMJJKBJOOHJ {
             ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
         };
-        if self.GLACKHOPMIO != 0 {
-            os.write_uint32(19, self.GLACKHOPMIO)?;
+        if self.enhanced_id != 0 {
+            os.write_uint32(19, self.enhanced_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -394,7 +394,7 @@ impl ::protobuf::Message for BattleAvatar {
         self.sp_bar.clear();
         self.GMOBAOCEFCE = 0;
         self.IMJJKBJOOHJ.clear();
-        self.GLACKHOPMIO = 0;
+        self.enhanced_id = 0;
         self.special_fields.clear();
     }
 
@@ -416,7 +416,7 @@ impl ::protobuf::Message for BattleAvatar {
             sp_bar: ::protobuf::MessageField::none(),
             GMOBAOCEFCE: 0,
             IMJJKBJOOHJ: ::std::vec::Vec::new(),
-            GLACKHOPMIO: 0,
+            enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -443,7 +443,7 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatar {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12BattleAvatar.proto\x1a\x15AvatarSkillTree.proto\x1a\x10AvatarType.\
     proto\x1a\x11BJHEBCCBANA.proto\x1a\x15BattleEquipment.proto\x1a\x11Battl\
-    eRelic.proto\x1a\x0fSpBarInfo.proto\"\xf1\x04\n\x0cBattleAvatar\x12,\n\
+    eRelic.proto\x1a\x0fSpBarInfo.proto\"\xf0\x04\n\x0cBattleAvatar\x12,\n\
     \x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
     \x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\x20\
     \x01(\rR\x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x14\
@@ -457,8 +457,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x0bECIFJLAKHCL\x18\x0f\x20\x01(\x0b2\x0c.BJHEBCCBANAR\x0bECIFJLAKHCL\
     \x12!\n\x06sp_bar\x18\x10\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\
     \x0bGMOBAOCEFCE\x18\x11\x20\x01(\rR\x0bGMOBAOCEFCE\x122\n\x0bIMJJKBJOOHJ\
-    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bIMJJKBJOOHJ\x12\x20\n\x0b\
-    GLACKHOPMIO\x18\x13\x20\x01(\rR\x0bGLACKHOPMIOb\x06proto3\
+    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bIMJJKBJOOHJ\x12\x1f\n\x0b\
+    enhanced_id\x18\x13\x20\x01(\rR\nenhancedIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

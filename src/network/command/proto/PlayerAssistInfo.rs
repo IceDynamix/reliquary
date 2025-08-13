@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerAssistInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerAssistInfo.player_simple_info)
-    pub player_simple_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // @@protoc_insertion_point(field:PlayerAssistInfo.MDHFANLHNMA)
     pub MDHFANLHNMA: ::protobuf::MessageField<super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>,
+    // @@protoc_insertion_point(field:PlayerAssistInfo.player_info)
+    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerAssistInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PlayerAssistInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_simple_info",
-            |m: &PlayerAssistInfo| { &m.player_simple_info },
-            |m: &mut PlayerAssistInfo| { &mut m.player_simple_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DisplayAvatarDetailInfo::DisplayAvatarDetailInfo>(
             "MDHFANLHNMA",
             |m: &PlayerAssistInfo| { &m.MDHFANLHNMA },
             |m: &mut PlayerAssistInfo| { &mut m.MDHFANLHNMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_info",
+            |m: &PlayerAssistInfo| { &m.player_info },
+            |m: &mut PlayerAssistInfo| { &mut m.player_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerAssistInfo>(
             "PlayerAssistInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerAssistInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_simple_info)?;
-                },
-                106 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MDHFANLHNMA)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlayerAssistInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.player_simple_info.as_ref() {
+        if let Some(v) = self.MDHFANLHNMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.MDHFANLHNMA.as_ref() {
+        if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for PlayerAssistInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.player_simple_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if let Some(v) = self.MDHFANLHNMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.player_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for PlayerAssistInfo {
     }
 
     fn clear(&mut self) {
-        self.player_simple_info.clear();
         self.MDHFANLHNMA.clear();
+        self.player_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerAssistInfo {
         static instance: PlayerAssistInfo = PlayerAssistInfo {
-            player_simple_info: ::protobuf::MessageField::none(),
             MDHFANLHNMA: ::protobuf::MessageField::none(),
+            player_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for PlayerAssistInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerAssistInfo.proto\x1a\x1dDisplayAvatarDetailInfo.proto\x1a\
-    \x16PlayerSimpleInfo.proto\"\x8f\x01\n\x10PlayerAssistInfo\x12?\n\x12pla\
-    yer_simple_info\x18\x03\x20\x01(\x0b2\x11.PlayerSimpleInfoR\x10playerSim\
-    pleInfo\x12:\n\x0bMDHFANLHNMA\x18\r\x20\x01(\x0b2\x18.DisplayAvatarDetai\
-    lInfoR\x0bMDHFANLHNMAb\x06proto3\
+    \x16PlayerSimpleInfo.proto\"\x82\x01\n\x10PlayerAssistInfo\x12:\n\x0bMDH\
+    FANLHNMA\x18\x02\x20\x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0bMDHFANLHN\
+    MA\x122\n\x0bplayer_info\x18\x0c\x20\x01(\x0b2\x11.PlayerSimpleInfoR\npl\
+    ayerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
