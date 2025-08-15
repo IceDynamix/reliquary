@@ -187,4 +187,6 @@ pub enum GameCommandError {
     CommandTooShort { expected: usize, actual: usize },
     #[error("decryption key is missing for command")]
     DecryptionKeyMissing,
+    #[error("decrypted version does not match expected version")]
+    VersionMismatch,
 }

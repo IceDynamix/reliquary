@@ -42,7 +42,7 @@
 //! ```
 //!
 
-use std::collections::HashMap;
+use std::collections::{HashMap, VecDeque};
 use std::fmt::Write;
 
 use base64::prelude::BASE64_STANDARD;
@@ -52,7 +52,7 @@ use tracing::{info, info_span, instrument, trace, warn};
 
 use crate::network::command::{GameCommand, GameCommandError};
 use crate::network::connection::{parse_connection_packet, ConnectionPacketError};
-use crate::network::crypto::{decrypt_command, lookup_initial_key, new_key_from_seed};
+use crate::network::crypto::{decrypt_command, get_game_version, lookup_initial_key, new_key_from_seed};
 use crate::network::command::proto::PlayerGetTokenScRsp::PlayerGetTokenScRsp;
 use crate::network::kcp::{KcpError, KcpSniffer};
 use crate::network::command::command_id;
@@ -108,6 +108,13 @@ pub struct GameSniffer {
     recv_kcp: Option<KcpSniffer>,
     key: Option<Vec<u8>>,
     initial_keys: HashMap<u32, Vec<u8>>,
+    // Commands sent by client that couldn't be decrypted due to a version mismatch.
+    // We buffer the raw command bytes and retry after we learn the new session key
+    // from PlayerGetTokenScRsp.
+    pending_sent: VecDeque<Vec<u8>>,
+    // Commands that were successfully retried after setting the new key. These are
+    // emitted with the next receive_packet() response.
+    deferred_commands: Vec<GameCommand>,
 }
 
 impl GameSniffer {
@@ -130,6 +137,8 @@ impl GameSniffer {
                 self.recv_kcp = None;
                 self.sent_kcp = None;
                 self.key = None;
+                self.pending_sent.clear();
+                self.deferred_commands.clear();
                 Ok(vec![GamePacket::Connection(packet)])
             }
 
@@ -138,11 +147,20 @@ impl GameSniffer {
             }
 
             ConnectionPacket::SegmentData(direction, kcp_seg) => {
-                let commands = self
+                let mut commands: Vec<GamePacket> = self
                     .receive_kcp_segment(direction, &kcp_seg)?
                     .into_iter()
                     .map(GamePacket::Commands)
                     .collect();
+
+                // If processing this segment resulted in learning a new key (via
+                // PlayerGetTokenScRsp), we may have retried previously buffered
+                // sent commands. Emit those now as part of this packet's output.
+                if !self.deferred_commands.is_empty() {
+                    for cmd in self.deferred_commands.drain(..) {
+                        commands.push(GamePacket::Commands(Ok(cmd)));
+                    }
+                }
 
                 Ok(commands)
             }
@@ -170,16 +188,27 @@ impl GameSniffer {
             .map(|segments| {
                 segments
                     .into_iter()
-                    .map(|data| self.receive_command(data))
+                    .map(|data| self.receive_command(direction, data))
                     .collect()
             })
     }
 
     #[instrument(skip_all, fields(len = data.len()))]
-    fn receive_command(&mut self, mut data: Vec<u8>) -> Result<GameCommand, GameCommandError> {
+    fn receive_command(
+        &mut self,
+        direction: PacketDirection,
+        mut data: Vec<u8>,
+    ) -> Result<GameCommand, GameCommandError> {
+        // Keep original bytes in case we need to buffer on version mismatch (client-sent only)
+        let original_data = if matches!(direction, PacketDirection::Sent) {
+            Some(data.clone())
+        } else {
+            None
+        };
+
         let key = match self.key.as_ref() {
             Some(key) => key,
-            None => match lookup_initial_key(&self.initial_keys, &data) {
+            None => match lookup_initial_key(&self.initial_keys, get_game_version(&data)) {
                 Some(key) => {
                     self.key = Some(key);
                     self.key.as_ref().unwrap()
@@ -189,6 +218,21 @@ impl GameSniffer {
         };
 
         decrypt_command(key, &mut data);
+
+        let decrypted_version = get_game_version(&data);
+        if decrypted_version != 0 {
+            warn!(
+                decrypted = decrypted_version,
+                "decrypted version does not match expected version"
+            );
+            
+            // If the client sent this command, we likely used an outdated key.
+            // Buffer the original bytes and retry after we get PlayerGetTokenScRsp.
+            if let Some(orig) = original_data {
+                self.pending_sent.push_back(orig);
+            }
+            return Err(GameCommandError::VersionMismatch);
+        }
 
         let command = GameCommand::try_new(data)?;
 
@@ -203,6 +247,29 @@ impl GameSniffer {
             let seed = token_command.secret_key_seed;
             info!(?seed, "setting new session key");
             self.key = Some(new_key_from_seed(seed));
+
+            // Now that we have the new session key, retry any buffered client-sent
+            // commands that previously failed with VersionMismatch.
+            while let Some(bytes) = self.pending_sent.pop_front() {
+                match self.receive_command(PacketDirection::Sent, bytes.clone()) {
+                    Ok(cmd) => {
+                        // Defer emission to receive_packet so we can include
+                        // these in the same output batch.
+                        self.deferred_commands.push(cmd);
+                    }
+                    Err(GameCommandError::VersionMismatch) => {
+                        // Still mismatched; push back and stop to avoid a busy loop.
+                        // We'll try again when another key update occurs.
+                        // (Shouldn't normally happen.)
+                        // Re-queue at the front to preserve order for next retry.
+                        self.pending_sent.push_front(bytes);
+                        break;
+                    }
+                    Err(e) => {
+                        warn!(?e, "failed to retry buffered sent command");
+                    }
+                }
+            }
         }
 
         Ok(command)
