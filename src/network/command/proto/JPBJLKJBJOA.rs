@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JPBJLKJBJOA {
     // message fields
-    // @@protoc_insertion_point(field:JPBJLKJBJOA.INBADCFNJIF)
-    pub INBADCFNJIF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JPBJLKJBJOA.IJOMBHBCGNN)
     pub IJOMBHBCGNN: ::std::vec::Vec<super::GKICOCCLPMG::GKICOCCLPMG>,
+    // @@protoc_insertion_point(field:JPBJLKJBJOA.INBADCFNJIF)
+    pub INBADCFNJIF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:JPBJLKJBJOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JPBJLKJBJOA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INBADCFNJIF",
-            |m: &JPBJLKJBJOA| { &m.INBADCFNJIF },
-            |m: &mut JPBJLKJBJOA| { &mut m.INBADCFNJIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IJOMBHBCGNN",
             |m: &JPBJLKJBJOA| { &m.IJOMBHBCGNN },
             |m: &mut JPBJLKJBJOA| { &mut m.IJOMBHBCGNN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "INBADCFNJIF",
+            |m: &JPBJLKJBJOA| { &m.INBADCFNJIF },
+            |m: &mut JPBJLKJBJOA| { &mut m.INBADCFNJIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPBJLKJBJOA>(
             "JPBJLKJBJOA",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for JPBJLKJBJOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                34 => {
+                    self.IJOMBHBCGNN.push(is.read_message()?);
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.INBADCFNJIF)?;
                 },
-                80 => {
+                112 => {
                     self.INBADCFNJIF.push(is.read_uint32()?);
-                },
-                58 => {
-                    self.IJOMBHBCGNN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for JPBJLKJBJOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.INBADCFNJIF);
         for value in &self.IJOMBHBCGNN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.INBADCFNJIF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.INBADCFNJIF)?;
         for v in &self.IJOMBHBCGNN {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        os.write_repeated_packed_uint32(14, &self.INBADCFNJIF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JPBJLKJBJOA {
     }
 
     fn clear(&mut self) {
-        self.INBADCFNJIF.clear();
         self.IJOMBHBCGNN.clear();
+        self.INBADCFNJIF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPBJLKJBJOA {
         static instance: JPBJLKJBJOA = JPBJLKJBJOA {
-            INBADCFNJIF: ::std::vec::Vec::new(),
             IJOMBHBCGNN: ::std::vec::Vec::new(),
+            INBADCFNJIF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JPBJLKJBJOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPBJLKJBJOA.proto\x1a\x11GKICOCCLPMG.proto\"_\n\x0bJPBJLKJBJOA\x12\
-    \x20\n\x0bINBADCFNJIF\x18\n\x20\x03(\rR\x0bINBADCFNJIF\x12.\n\x0bIJOMBHB\
-    CGNN\x18\x07\x20\x03(\x0b2\x0c.GKICOCCLPMGR\x0bIJOMBHBCGNNb\x06proto3\
+    .\n\x0bIJOMBHBCGNN\x18\x04\x20\x03(\x0b2\x0c.GKICOCCLPMGR\x0bIJOMBHBCGNN\
+    \x12\x20\n\x0bINBADCFNJIF\x18\x0e\x20\x03(\rR\x0bINBADCFNJIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

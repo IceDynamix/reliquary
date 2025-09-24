@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.EIDDMGHLPBP = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EIDDMGHLPBP != false {
-            os.write_bool(7, self.EIDDMGHLPBP)?;
+            os.write_bool(5, self.EIDDMGHLPBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReEnterRogueCocoonStageCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueTournReEnterRogueCocoonStageCsReq.proto\"J\n&RogueTournReEnterRo\
-    gueCocoonStageCsReq\x12\x20\n\x0bEIDDMGHLPBP\x18\x07\x20\x01(\x08R\x0bEI\
+    gueCocoonStageCsReq\x12\x20\n\x0bEIDDMGHLPBP\x18\x05\x20\x01(\x08R\x0bEI\
     DDMGHLPBPb\x06proto3\
 ";
 

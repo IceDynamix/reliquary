@@ -45,7 +45,7 @@ impl PEAJLADINFK {
         ::std::default::Default::default()
     }
 
-    // .CMHMBLALOHN BAMNOJKMBMN = 12;
+    // .CMHMBLALOHN BAMNOJKMBMN = 10;
 
     pub fn BAMNOJKMBMN(&self) -> &super::CMHMBLALOHN::CMHMBLALOHN {
         match self.ECOEKHPGMEA {
@@ -94,7 +94,7 @@ impl PEAJLADINFK {
         }
     }
 
-    // .NLFDKOIODMD FJGMNIOILOK = 4;
+    // .NLFDKOIODMD FJGMNIOILOK = 14;
 
     pub fn FJGMNIOILOK(&self) -> &super::NLFDKOIODMD::NLFDKOIODMD {
         match self.ECOEKHPGMEA {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for PEAJLADINFK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                82 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(is.read_message()?));
                 },
-                34 => {
+                114 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for PEAJLADINFK {
         if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
                 &peajladinfk::ECOEKHPGMEA::BAMNOJKMBMN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &peajladinfk::ECOEKHPGMEA::FJGMNIOILOK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -305,8 +305,8 @@ pub mod peajladinfk {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEAJLADINFK.proto\x1a\x11CMHMBLALOHN.proto\x1a\x11NLFDKOIODMD.prot\
-    o\"\x80\x01\n\x0bPEAJLADINFK\x120\n\x0bBAMNOJKMBMN\x18\x0c\x20\x01(\x0b2\
-    \x0c.CMHMBLALOHNH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGMNIOILOK\x18\x04\x20\
+    o\"\x80\x01\n\x0bPEAJLADINFK\x120\n\x0bBAMNOJKMBMN\x18\n\x20\x01(\x0b2\
+    \x0c.CMHMBLALOHNH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGMNIOILOK\x18\x0e\x20\
     \x01(\x0b2\x0c.NLFDKOIODMDH\0R\x0bFJGMNIOILOKB\r\n\x0bECOEKHPGMEAb\x06pr\
     oto3\
 ";

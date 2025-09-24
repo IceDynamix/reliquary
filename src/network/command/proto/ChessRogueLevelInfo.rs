@@ -30,18 +30,18 @@ pub struct ChessRogueLevelInfo {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueLevelInfo.OCDNMHNNKGM)
     pub OCDNMHNNKGM: i32,
-    // @@protoc_insertion_point(field:ChessRogueLevelInfo.MHOIJAFGECP)
-    pub MHOIJAFGECP: u32,
-    // @@protoc_insertion_point(field:ChessRogueLevelInfo.action_point)
-    pub action_point: i32,
-    // @@protoc_insertion_point(field:ChessRogueLevelInfo.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:ChessRogueLevelInfo.level_status)
     pub level_status: u32,
     // @@protoc_insertion_point(field:ChessRogueLevelInfo.area_id_list)
     pub area_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueLevelInfo.action_point)
+    pub action_point: i32,
     // @@protoc_insertion_point(field:ChessRogueLevelInfo.area_info)
     pub area_info: ::protobuf::MessageField<super::ChessRogueAreaInfo::ChessRogueAreaInfo>,
+    // @@protoc_insertion_point(field:ChessRogueLevelInfo.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:ChessRogueLevelInfo.MHOIJAFGECP)
+    pub MHOIJAFGECP: u32,
     // @@protoc_insertion_point(field:ChessRogueLevelInfo.layer_id)
     pub layer_id: u32,
     // special fields
@@ -69,21 +69,6 @@ impl ChessRogueLevelInfo {
             |m: &mut ChessRogueLevelInfo| { &mut m.OCDNMHNNKGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHOIJAFGECP",
-            |m: &ChessRogueLevelInfo| { &m.MHOIJAFGECP },
-            |m: &mut ChessRogueLevelInfo| { &mut m.MHOIJAFGECP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "action_point",
-            |m: &ChessRogueLevelInfo| { &m.action_point },
-            |m: &mut ChessRogueLevelInfo| { &mut m.action_point },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &ChessRogueLevelInfo| { &m.id },
-            |m: &mut ChessRogueLevelInfo| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_status",
             |m: &ChessRogueLevelInfo| { &m.level_status },
             |m: &mut ChessRogueLevelInfo| { &mut m.level_status },
@@ -93,10 +78,25 @@ impl ChessRogueLevelInfo {
             |m: &ChessRogueLevelInfo| { &m.area_id_list },
             |m: &mut ChessRogueLevelInfo| { &mut m.area_id_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "action_point",
+            |m: &ChessRogueLevelInfo| { &m.action_point },
+            |m: &mut ChessRogueLevelInfo| { &mut m.action_point },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAreaInfo::ChessRogueAreaInfo>(
             "area_info",
             |m: &ChessRogueLevelInfo| { &m.area_info },
             |m: &mut ChessRogueLevelInfo| { &mut m.area_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &ChessRogueLevelInfo| { &m.id },
+            |m: &mut ChessRogueLevelInfo| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MHOIJAFGECP",
+            |m: &ChessRogueLevelInfo| { &m.MHOIJAFGECP },
+            |m: &mut ChessRogueLevelInfo| { &mut m.MHOIJAFGECP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "layer_id",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for ChessRogueLevelInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.OCDNMHNNKGM = is.read_int32()?;
                 },
-                96 => {
-                    self.MHOIJAFGECP = is.read_uint32()?;
+                56 => {
+                    self.level_status = is.read_uint32()?;
                 },
-                72 => {
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.area_id_list)?;
+                },
+                120 => {
+                    self.area_id_list.push(is.read_uint32()?);
+                },
+                16 => {
                     self.action_point = is.read_int32()?;
                 },
-                48 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.area_info)?;
+                },
+                64 => {
                     self.id = is.read_uint32()?;
                 },
                 104 => {
-                    self.level_status = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.area_id_list)?;
-                },
-                32 => {
-                    self.area_id_list.push(is.read_uint32()?);
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.area_info)?;
+                    self.MHOIJAFGECP = is.read_uint32()?;
                 },
                 8 => {
                     self.layer_id = is.read_uint32()?;
@@ -161,24 +161,24 @@ impl ::protobuf::Message for ChessRogueLevelInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OCDNMHNNKGM != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.OCDNMHNNKGM);
-        }
-        if self.MHOIJAFGECP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MHOIJAFGECP);
-        }
-        if self.action_point != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.action_point);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::int32_size(14, self.OCDNMHNNKGM);
         }
         if self.level_status != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level_status);
+            my_size += ::protobuf::rt::uint32_size(7, self.level_status);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.area_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.area_id_list);
+        if self.action_point != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.action_point);
+        }
         if let Some(v) = self.area_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
+        }
+        if self.MHOIJAFGECP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MHOIJAFGECP);
         }
         if self.layer_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.layer_id);
@@ -190,23 +190,23 @@ impl ::protobuf::Message for ChessRogueLevelInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OCDNMHNNKGM != 0 {
-            os.write_int32(8, self.OCDNMHNNKGM)?;
-        }
-        if self.MHOIJAFGECP != 0 {
-            os.write_uint32(12, self.MHOIJAFGECP)?;
-        }
-        if self.action_point != 0 {
-            os.write_int32(9, self.action_point)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_int32(14, self.OCDNMHNNKGM)?;
         }
         if self.level_status != 0 {
-            os.write_uint32(13, self.level_status)?;
+            os.write_uint32(7, self.level_status)?;
         }
-        os.write_repeated_packed_uint32(4, &self.area_id_list)?;
+        os.write_repeated_packed_uint32(15, &self.area_id_list)?;
+        if self.action_point != 0 {
+            os.write_int32(2, self.action_point)?;
+        }
         if let Some(v) = self.area_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(8, self.id)?;
+        }
+        if self.MHOIJAFGECP != 0 {
+            os.write_uint32(13, self.MHOIJAFGECP)?;
         }
         if self.layer_id != 0 {
             os.write_uint32(1, self.layer_id)?;
@@ -229,12 +229,12 @@ impl ::protobuf::Message for ChessRogueLevelInfo {
 
     fn clear(&mut self) {
         self.OCDNMHNNKGM = 0;
-        self.MHOIJAFGECP = 0;
-        self.action_point = 0;
-        self.id = 0;
         self.level_status = 0;
         self.area_id_list.clear();
+        self.action_point = 0;
         self.area_info.clear();
+        self.id = 0;
+        self.MHOIJAFGECP = 0;
         self.layer_id = 0;
         self.special_fields.clear();
     }
@@ -242,12 +242,12 @@ impl ::protobuf::Message for ChessRogueLevelInfo {
     fn default_instance() -> &'static ChessRogueLevelInfo {
         static instance: ChessRogueLevelInfo = ChessRogueLevelInfo {
             OCDNMHNNKGM: 0,
-            MHOIJAFGECP: 0,
-            action_point: 0,
-            id: 0,
             level_status: 0,
             area_id_list: ::std::vec::Vec::new(),
+            action_point: 0,
             area_info: ::protobuf::MessageField::none(),
+            id: 0,
+            MHOIJAFGECP: 0,
             layer_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLevelInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChessRogueLevelInfo.proto\x1a\x18ChessRogueAreaInfo.proto\"\x9e\
-    \x02\n\x13ChessRogueLevelInfo\x12\x20\n\x0bOCDNMHNNKGM\x18\x08\x20\x01(\
-    \x05R\x0bOCDNMHNNKGM\x12\x20\n\x0bMHOIJAFGECP\x18\x0c\x20\x01(\rR\x0bMHO\
-    IJAFGECP\x12!\n\x0caction_point\x18\t\x20\x01(\x05R\x0bactionPoint\x12\
-    \x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12!\n\x0clevel_status\x18\r\x20\
-    \x01(\rR\x0blevelStatus\x12\x20\n\x0carea_id_list\x18\x04\x20\x03(\rR\na\
-    reaIdList\x120\n\tarea_info\x18\x02\x20\x01(\x0b2\x13.ChessRogueAreaInfo\
-    R\x08areaInfo\x12\x19\n\x08layer_id\x18\x01\x20\x01(\rR\x07layerIdb\x06p\
-    roto3\
+    \x02\n\x13ChessRogueLevelInfo\x12\x20\n\x0bOCDNMHNNKGM\x18\x0e\x20\x01(\
+    \x05R\x0bOCDNMHNNKGM\x12!\n\x0clevel_status\x18\x07\x20\x01(\rR\x0blevel\
+    Status\x12\x20\n\x0carea_id_list\x18\x0f\x20\x03(\rR\nareaIdList\x12!\n\
+    \x0caction_point\x18\x02\x20\x01(\x05R\x0bactionPoint\x120\n\tarea_info\
+    \x18\x05\x20\x01(\x0b2\x13.ChessRogueAreaInfoR\x08areaInfo\x12\x0e\n\x02\
+    id\x18\x08\x20\x01(\rR\x02id\x12\x20\n\x0bMHOIJAFGECP\x18\r\x20\x01(\rR\
+    \x0bMHOIJAFGECP\x12\x19\n\x08layer_id\x18\x01\x20\x01(\rR\x07layerIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

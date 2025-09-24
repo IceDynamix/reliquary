@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBigDataRecommendScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.big_data_recommend_type)
-    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
-    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.equip_avatar)
-    pub equip_avatar: u32,
-    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.ROGUE_TALENT_STATUS_ENABLE)
-    pub ROGUE_TALENT_STATUS_ENABLE: bool,
     // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.equip_avatar)
+    pub equip_avatar: u32,
+    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.enable)
+    pub enable: bool,
+    // @@protoc_insertion_point(field:GetBigDataRecommendScRsp.big_data_recommend_type)
+    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
     // message oneof groups
     pub FCDDBOIEOIP: ::std::option::Option<get_big_data_recommend_sc_rsp::FCDDBOIEOIP>,
     // special fields
@@ -54,7 +54,7 @@ impl GetBigDataRecommendScRsp {
         ::std::default::Default::default()
     }
 
-    // .EquipmentRecommend equipment_recommend = 10;
+    // .EquipmentRecommend equipment_recommend = 7;
 
     pub fn equipment_recommend(&self) -> &super::EquipmentRecommend::EquipmentRecommend {
         match self.FCDDBOIEOIP {
@@ -103,7 +103,7 @@ impl GetBigDataRecommendScRsp {
         }
     }
 
-    // .RelicRecommend relic_recommend = 1;
+    // .RelicRecommend relic_recommend = 11;
 
     pub fn relic_recommend(&self) -> &super::RelicRecommend::RelicRecommend {
         match self.FCDDBOIEOIP {
@@ -152,52 +152,52 @@ impl GetBigDataRecommendScRsp {
         }
     }
 
-    // .GPCPGBHOFCF KGHLFCEOBKK = 11;
+    // .AAGFIJMMOKL FOOLKFAFNBD = 1;
 
-    pub fn KGHLFCEOBKK(&self) -> &super::GPCPGBHOFCF::GPCPGBHOFCF {
+    pub fn FOOLKFAFNBD(&self) -> &super::AAGFIJMMOKL::AAGFIJMMOKL {
         match self.FCDDBOIEOIP {
-            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(ref v)) => v,
-            _ => <super::GPCPGBHOFCF::GPCPGBHOFCF as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(ref v)) => v,
+            _ => <super::AAGFIJMMOKL::AAGFIJMMOKL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KGHLFCEOBKK(&mut self) {
+    pub fn clear_FOOLKFAFNBD(&mut self) {
         self.FCDDBOIEOIP = ::std::option::Option::None;
     }
 
-    pub fn has_KGHLFCEOBKK(&self) -> bool {
+    pub fn has_FOOLKFAFNBD(&self) -> bool {
         match self.FCDDBOIEOIP {
-            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(..)) => true,
+            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KGHLFCEOBKK(&mut self, v: super::GPCPGBHOFCF::GPCPGBHOFCF) {
-        self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(v))
+    pub fn set_FOOLKFAFNBD(&mut self, v: super::AAGFIJMMOKL::AAGFIJMMOKL) {
+        self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KGHLFCEOBKK(&mut self) -> &mut super::GPCPGBHOFCF::GPCPGBHOFCF {
-        if let ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(_)) = self.FCDDBOIEOIP {
+    pub fn mut_FOOLKFAFNBD(&mut self) -> &mut super::AAGFIJMMOKL::AAGFIJMMOKL {
+        if let ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(_)) = self.FCDDBOIEOIP {
         } else {
-            self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(super::GPCPGBHOFCF::GPCPGBHOFCF::new()));
+            self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(super::AAGFIJMMOKL::AAGFIJMMOKL::new()));
         }
         match self.FCDDBOIEOIP {
-            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(ref mut v)) => v,
+            ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KGHLFCEOBKK(&mut self) -> super::GPCPGBHOFCF::GPCPGBHOFCF {
-        if self.has_KGHLFCEOBKK() {
+    pub fn take_FOOLKFAFNBD(&mut self) -> super::AAGFIJMMOKL::AAGFIJMMOKL {
+        if self.has_FOOLKFAFNBD() {
             match self.FCDDBOIEOIP.take() {
-                ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(v)) => v,
+                ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GPCPGBHOFCF::GPCPGBHOFCF::new()
+            super::AAGFIJMMOKL::AAGFIJMMOKL::new()
         }
     }
 
@@ -205,9 +205,9 @@ impl GetBigDataRecommendScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "big_data_recommend_type",
-            |m: &GetBigDataRecommendScRsp| { &m.big_data_recommend_type },
-            |m: &mut GetBigDataRecommendScRsp| { &mut m.big_data_recommend_type },
+            "retcode",
+            |m: &GetBigDataRecommendScRsp| { &m.retcode },
+            |m: &mut GetBigDataRecommendScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equip_avatar",
@@ -215,14 +215,14 @@ impl GetBigDataRecommendScRsp {
             |m: &mut GetBigDataRecommendScRsp| { &mut m.equip_avatar },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ROGUE_TALENT_STATUS_ENABLE",
-            |m: &GetBigDataRecommendScRsp| { &m.ROGUE_TALENT_STATUS_ENABLE },
-            |m: &mut GetBigDataRecommendScRsp| { &mut m.ROGUE_TALENT_STATUS_ENABLE },
+            "enable",
+            |m: &GetBigDataRecommendScRsp| { &m.enable },
+            |m: &mut GetBigDataRecommendScRsp| { &mut m.enable },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetBigDataRecommendScRsp| { &m.retcode },
-            |m: &mut GetBigDataRecommendScRsp| { &mut m.retcode },
+            "big_data_recommend_type",
+            |m: &GetBigDataRecommendScRsp| { &m.big_data_recommend_type },
+            |m: &mut GetBigDataRecommendScRsp| { &mut m.big_data_recommend_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EquipmentRecommend::EquipmentRecommend>(
             "equipment_recommend",
@@ -238,12 +238,12 @@ impl GetBigDataRecommendScRsp {
             GetBigDataRecommendScRsp::mut_relic_recommend,
             GetBigDataRecommendScRsp::set_relic_recommend,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GPCPGBHOFCF::GPCPGBHOFCF>(
-            "KGHLFCEOBKK",
-            GetBigDataRecommendScRsp::has_KGHLFCEOBKK,
-            GetBigDataRecommendScRsp::KGHLFCEOBKK,
-            GetBigDataRecommendScRsp::mut_KGHLFCEOBKK,
-            GetBigDataRecommendScRsp::set_KGHLFCEOBKK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AAGFIJMMOKL::AAGFIJMMOKL>(
+            "FOOLKFAFNBD",
+            GetBigDataRecommendScRsp::has_FOOLKFAFNBD,
+            GetBigDataRecommendScRsp::FOOLKFAFNBD,
+            GetBigDataRecommendScRsp::mut_FOOLKFAFNBD,
+            GetBigDataRecommendScRsp::set_FOOLKFAFNBD,
         ));
         oneofs.push(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBigDataRecommendScRsp>(
@@ -264,26 +264,26 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.big_data_recommend_type = is.read_enum_or_unknown()?;
-                },
-                40 => {
-                    self.equip_avatar = is.read_uint32()?;
-                },
-                32 => {
-                    self.ROGUE_TALENT_STATUS_ENABLE = is.read_bool()?;
-                },
-                72 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                80 => {
+                    self.equip_avatar = is.read_uint32()?;
+                },
+                40 => {
+                    self.enable = is.read_bool()?;
+                },
+                112 => {
+                    self.big_data_recommend_type = is.read_enum_or_unknown()?;
+                },
+                58 => {
                     self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::EquipmentRecommend(is.read_message()?));
                 },
-                10 => {
+                90 => {
                     self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::RelicRecommend(is.read_message()?));
                 },
-                90 => {
-                    self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(is.read_message()?));
+                10 => {
+                    self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -297,17 +297,17 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.big_data_recommend_type.value());
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.equip_avatar != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.equip_avatar);
+            my_size += ::protobuf::rt::uint32_size(10, self.equip_avatar);
         }
-        if self.ROGUE_TALENT_STATUS_ENABLE != false {
+        if self.enable != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.big_data_recommend_type.value());
         }
         if let ::std::option::Option::Some(ref v) = self.FCDDBOIEOIP {
             match v {
@@ -319,7 +319,7 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(ref v) => {
+                &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -331,28 +331,28 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         if self.equip_avatar != 0 {
-            os.write_uint32(5, self.equip_avatar)?;
+            os.write_uint32(10, self.equip_avatar)?;
         }
-        if self.ROGUE_TALENT_STATUS_ENABLE != false {
-            os.write_bool(4, self.ROGUE_TALENT_STATUS_ENABLE)?;
+        if self.enable != false {
+            os.write_bool(5, self.enable)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
         }
         if let ::std::option::Option::Some(ref v) = self.FCDDBOIEOIP {
             match v {
                 &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::EquipmentRecommend(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::RelicRecommend(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::KGHLFCEOBKK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &get_big_data_recommend_sc_rsp::FCDDBOIEOIP::FOOLKFAFNBD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
             };
         }
@@ -373,10 +373,10 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
     }
 
     fn clear(&mut self) {
-        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
-        self.equip_avatar = 0;
-        self.ROGUE_TALENT_STATUS_ENABLE = false;
         self.retcode = 0;
+        self.equip_avatar = 0;
+        self.enable = false;
+        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
         self.FCDDBOIEOIP = ::std::option::Option::None;
         self.FCDDBOIEOIP = ::std::option::Option::None;
         self.FCDDBOIEOIP = ::std::option::Option::None;
@@ -385,10 +385,10 @@ impl ::protobuf::Message for GetBigDataRecommendScRsp {
 
     fn default_instance() -> &'static GetBigDataRecommendScRsp {
         static instance: GetBigDataRecommendScRsp = GetBigDataRecommendScRsp {
-            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            equip_avatar: 0,
-            ROGUE_TALENT_STATUS_ENABLE: false,
             retcode: 0,
+            equip_avatar: 0,
+            enable: false,
+            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
             FCDDBOIEOIP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -424,8 +424,8 @@ pub mod get_big_data_recommend_sc_rsp {
         EquipmentRecommend(super::super::EquipmentRecommend::EquipmentRecommend),
         // @@protoc_insertion_point(oneof_field:GetBigDataRecommendScRsp.relic_recommend)
         RelicRecommend(super::super::RelicRecommend::RelicRecommend),
-        // @@protoc_insertion_point(oneof_field:GetBigDataRecommendScRsp.KGHLFCEOBKK)
-        KGHLFCEOBKK(super::super::GPCPGBHOFCF::GPCPGBHOFCF),
+        // @@protoc_insertion_point(oneof_field:GetBigDataRecommendScRsp.FOOLKFAFNBD)
+        FOOLKFAFNBD(super::super::AAGFIJMMOKL::AAGFIJMMOKL),
     }
 
     impl ::protobuf::Oneof for FCDDBOIEOIP {
@@ -446,18 +446,17 @@ pub mod get_big_data_recommend_sc_rsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetBigDataRecommendScRsp.proto\x1a\x1aBigDataRecommendType.proto\
-    \x1a\x18EquipmentRecommend.proto\x1a\x11GPCPGBHOFCF.proto\x1a\x14RelicRe\
-    commend.proto\"\xa7\x03\n\x18GetBigDataRecommendScRsp\x12L\n\x17big_data\
-    _recommend_type\x18\x08\x20\x01(\x0e2\x15.BigDataRecommendTypeR\x14bigDa\
-    taRecommendType\x12!\n\x0cequip_avatar\x18\x05\x20\x01(\rR\x0bequipAvata\
-    r\x12;\n\x1aROGUE_TALENT_STATUS_ENABLE\x18\x04\x20\x01(\x08R\x17ROGUETAL\
-    ENTSTATUSENABLE\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12F\n\
-    \x13equipment_recommend\x18\n\x20\x01(\x0b2\x13.EquipmentRecommendH\0R\
-    \x12equipmentRecommend\x12:\n\x0frelic_recommend\x18\x01\x20\x01(\x0b2\
-    \x0f.RelicRecommendH\0R\x0erelicRecommend\x120\n\x0bKGHLFCEOBKK\x18\x0b\
-    \x20\x01(\x0b2\x0c.GPCPGBHOFCFH\0R\x0bKGHLFCEOBKKB\r\n\x0bFCDDBOIEOIPb\
-    \x06proto3\
+    \n\x1eGetBigDataRecommendScRsp.proto\x1a\x11AAGFIJMMOKL.proto\x1a\x1aBig\
+    DataRecommendType.proto\x1a\x18EquipmentRecommend.proto\x1a\x14RelicReco\
+    mmend.proto\"\x82\x03\n\x18GetBigDataRecommendScRsp\x12\x18\n\x07retcode\
+    \x18\x0c\x20\x01(\rR\x07retcode\x12!\n\x0cequip_avatar\x18\n\x20\x01(\rR\
+    \x0bequipAvatar\x12\x16\n\x06enable\x18\x05\x20\x01(\x08R\x06enable\x12L\
+    \n\x17big_data_recommend_type\x18\x0e\x20\x01(\x0e2\x15.BigDataRecommend\
+    TypeR\x14bigDataRecommendType\x12F\n\x13equipment_recommend\x18\x07\x20\
+    \x01(\x0b2\x13.EquipmentRecommendH\0R\x12equipmentRecommend\x12:\n\x0fre\
+    lic_recommend\x18\x0b\x20\x01(\x0b2\x0f.RelicRecommendH\0R\x0erelicRecom\
+    mend\x120\n\x0bFOOLKFAFNBD\x18\x01\x20\x01(\x0b2\x0c.AAGFIJMMOKLH\0R\x0b\
+    FOOLKFAFNBDB\r\n\x0bFCDDBOIEOIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -475,9 +474,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::AAGFIJMMOKL::file_descriptor().clone());
             deps.push(super::BigDataRecommendType::file_descriptor().clone());
             deps.push(super::EquipmentRecommend::file_descriptor().clone());
-            deps.push(super::GPCPGBHOFCF::file_descriptor().clone());
             deps.push(super::RelicRecommend::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBigDataRecommendScRsp::generated_message_descriptor_data());

@@ -79,13 +79,13 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.IEMNPGOMJCO = is.read_bool()?;
                 },
-                98 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.NDOBMAJMLNK)?;
                 },
-                96 => {
+                88 => {
                     self.NDOBMAJMLNK.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
         if self.IEMNPGOMJCO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.NDOBMAJMLNK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NDOBMAJMLNK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IEMNPGOMJCO != false {
-            os.write_bool(5, self.IEMNPGOMJCO)?;
+            os.write_bool(7, self.IEMNPGOMJCO)?;
         }
-        os.write_repeated_packed_uint32(12, &self.NDOBMAJMLNK)?;
+        os.write_repeated_packed_uint32(11, &self.NDOBMAJMLNK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20DeleteRelicFilterPlanCsReq.proto\"`\n\x1aDeleteRelicFilterPlanCsRe\
-    q\x12\x20\n\x0bIEMNPGOMJCO\x18\x05\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x20\
-    \n\x0bNDOBMAJMLNK\x18\x0c\x20\x03(\rR\x0bNDOBMAJMLNKb\x06proto3\
+    q\x12\x20\n\x0bIEMNPGOMJCO\x18\x07\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x20\
+    \n\x0bNDOBMAJMLNK\x18\x0b\x20\x03(\rR\x0bNDOBMAJMLNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

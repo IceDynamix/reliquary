@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KACKJJDJONI {
     // message fields
-    // @@protoc_insertion_point(field:KACKJJDJONI.HCFOCPKFOBG)
-    pub HCFOCPKFOBG: u32,
-    // @@protoc_insertion_point(field:KACKJJDJONI.NCDCGFKOLOE)
-    pub NCDCGFKOLOE: u32,
+    // @@protoc_insertion_point(field:KACKJJDJONI.JODNMDOAMKC)
+    pub JODNMDOAMKC: u32,
     // @@protoc_insertion_point(field:KACKJJDJONI.BLHPICIOFAI)
     pub BLHPICIOFAI: u32,
     // @@protoc_insertion_point(field:KACKJJDJONI.PAPKGJOJPII)
     pub PAPKGJOJPII: u32,
     // @@protoc_insertion_point(field:KACKJJDJONI.KDDPPGOCOMB)
     pub KDDPPGOCOMB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KACKJJDJONI.JODNMDOAMKC)
-    pub JODNMDOAMKC: u32,
+    // @@protoc_insertion_point(field:KACKJJDJONI.HCFOCPKFOBG)
+    pub HCFOCPKFOBG: u32,
+    // @@protoc_insertion_point(field:KACKJJDJONI.NCDCGFKOLOE)
+    pub NCDCGFKOLOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KACKJJDJONI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,9 @@ impl KACKJJDJONI {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCFOCPKFOBG",
-            |m: &KACKJJDJONI| { &m.HCFOCPKFOBG },
-            |m: &mut KACKJJDJONI| { &mut m.HCFOCPKFOBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCDCGFKOLOE",
-            |m: &KACKJJDJONI| { &m.NCDCGFKOLOE },
-            |m: &mut KACKJJDJONI| { &mut m.NCDCGFKOLOE },
+            "JODNMDOAMKC",
+            |m: &KACKJJDJONI| { &m.JODNMDOAMKC },
+            |m: &mut KACKJJDJONI| { &mut m.JODNMDOAMKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLHPICIOFAI",
@@ -85,9 +80,14 @@ impl KACKJJDJONI {
             |m: &mut KACKJJDJONI| { &mut m.KDDPPGOCOMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JODNMDOAMKC",
-            |m: &KACKJJDJONI| { &m.JODNMDOAMKC },
-            |m: &mut KACKJJDJONI| { &mut m.JODNMDOAMKC },
+            "HCFOCPKFOBG",
+            |m: &KACKJJDJONI| { &m.HCFOCPKFOBG },
+            |m: &mut KACKJJDJONI| { &mut m.HCFOCPKFOBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NCDCGFKOLOE",
+            |m: &KACKJJDJONI| { &m.NCDCGFKOLOE },
+            |m: &mut KACKJJDJONI| { &mut m.NCDCGFKOLOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KACKJJDJONI>(
             "KACKJJDJONI",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for KACKJJDJONI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.HCFOCPKFOBG = is.read_uint32()?;
+                48 => {
+                    self.JODNMDOAMKC = is.read_uint32()?;
                 },
-                64 => {
-                    self.NCDCGFKOLOE = is.read_uint32()?;
-                },
-                8 => {
+                88 => {
                     self.BLHPICIOFAI = is.read_uint32()?;
                 },
-                72 => {
+                16 => {
                     self.PAPKGJOJPII = is.read_uint32()?;
                 },
-                50 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.KDDPPGOCOMB)?;
                 },
-                48 => {
+                72 => {
                     self.KDDPPGOCOMB.push(is.read_uint32()?);
                 },
                 120 => {
-                    self.JODNMDOAMKC = is.read_uint32()?;
+                    self.HCFOCPKFOBG = is.read_uint32()?;
+                },
+                112 => {
+                    self.NCDCGFKOLOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for KACKJJDJONI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCFOCPKFOBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HCFOCPKFOBG);
-        }
-        if self.NCDCGFKOLOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NCDCGFKOLOE);
+        if self.JODNMDOAMKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JODNMDOAMKC);
         }
         if self.BLHPICIOFAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BLHPICIOFAI);
+            my_size += ::protobuf::rt::uint32_size(11, self.BLHPICIOFAI);
         }
         if self.PAPKGJOJPII != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PAPKGJOJPII);
+            my_size += ::protobuf::rt::uint32_size(2, self.PAPKGJOJPII);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KDDPPGOCOMB);
-        if self.JODNMDOAMKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JODNMDOAMKC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.KDDPPGOCOMB);
+        if self.HCFOCPKFOBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HCFOCPKFOBG);
+        }
+        if self.NCDCGFKOLOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NCDCGFKOLOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for KACKJJDJONI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCFOCPKFOBG != 0 {
-            os.write_uint32(10, self.HCFOCPKFOBG)?;
-        }
-        if self.NCDCGFKOLOE != 0 {
-            os.write_uint32(8, self.NCDCGFKOLOE)?;
+        if self.JODNMDOAMKC != 0 {
+            os.write_uint32(6, self.JODNMDOAMKC)?;
         }
         if self.BLHPICIOFAI != 0 {
-            os.write_uint32(1, self.BLHPICIOFAI)?;
+            os.write_uint32(11, self.BLHPICIOFAI)?;
         }
         if self.PAPKGJOJPII != 0 {
-            os.write_uint32(9, self.PAPKGJOJPII)?;
+            os.write_uint32(2, self.PAPKGJOJPII)?;
         }
-        os.write_repeated_packed_uint32(6, &self.KDDPPGOCOMB)?;
-        if self.JODNMDOAMKC != 0 {
-            os.write_uint32(15, self.JODNMDOAMKC)?;
+        os.write_repeated_packed_uint32(9, &self.KDDPPGOCOMB)?;
+        if self.HCFOCPKFOBG != 0 {
+            os.write_uint32(15, self.HCFOCPKFOBG)?;
+        }
+        if self.NCDCGFKOLOE != 0 {
+            os.write_uint32(14, self.NCDCGFKOLOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for KACKJJDJONI {
     }
 
     fn clear(&mut self) {
-        self.HCFOCPKFOBG = 0;
-        self.NCDCGFKOLOE = 0;
+        self.JODNMDOAMKC = 0;
         self.BLHPICIOFAI = 0;
         self.PAPKGJOJPII = 0;
         self.KDDPPGOCOMB.clear();
-        self.JODNMDOAMKC = 0;
+        self.HCFOCPKFOBG = 0;
+        self.NCDCGFKOLOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KACKJJDJONI {
         static instance: KACKJJDJONI = KACKJJDJONI {
-            HCFOCPKFOBG: 0,
-            NCDCGFKOLOE: 0,
+            JODNMDOAMKC: 0,
             BLHPICIOFAI: 0,
             PAPKGJOJPII: 0,
             KDDPPGOCOMB: ::std::vec::Vec::new(),
-            JODNMDOAMKC: 0,
+            HCFOCPKFOBG: 0,
+            NCDCGFKOLOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for KACKJJDJONI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KACKJJDJONI.proto\"\xd9\x01\n\x0bKACKJJDJONI\x12\x20\n\x0bHCFOCPKF\
-    OBG\x18\n\x20\x01(\rR\x0bHCFOCPKFOBG\x12\x20\n\x0bNCDCGFKOLOE\x18\x08\
-    \x20\x01(\rR\x0bNCDCGFKOLOE\x12\x20\n\x0bBLHPICIOFAI\x18\x01\x20\x01(\rR\
-    \x0bBLHPICIOFAI\x12\x20\n\x0bPAPKGJOJPII\x18\t\x20\x01(\rR\x0bPAPKGJOJPI\
-    I\x12\x20\n\x0bKDDPPGOCOMB\x18\x06\x20\x03(\rR\x0bKDDPPGOCOMB\x12\x20\n\
-    \x0bJODNMDOAMKC\x18\x0f\x20\x01(\rR\x0bJODNMDOAMKCb\x06proto3\
+    \n\x11KACKJJDJONI.proto\"\xd9\x01\n\x0bKACKJJDJONI\x12\x20\n\x0bJODNMDOA\
+    MKC\x18\x06\x20\x01(\rR\x0bJODNMDOAMKC\x12\x20\n\x0bBLHPICIOFAI\x18\x0b\
+    \x20\x01(\rR\x0bBLHPICIOFAI\x12\x20\n\x0bPAPKGJOJPII\x18\x02\x20\x01(\rR\
+    \x0bPAPKGJOJPII\x12\x20\n\x0bKDDPPGOCOMB\x18\t\x20\x03(\rR\x0bKDDPPGOCOM\
+    B\x12\x20\n\x0bHCFOCPKFOBG\x18\x0f\x20\x01(\rR\x0bHCFOCPKFOBG\x12\x20\n\
+    \x0bNCDCGFKOLOE\x18\x0e\x20\x01(\rR\x0bNCDCGFKOLOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

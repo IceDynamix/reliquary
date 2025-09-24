@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                96 => {
                     self.platform = is.read_enum_or_unknown()?;
                 },
-                26 => {
+                18 => {
                     self.DNENLCHJEKG.push(is.read_string()?);
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(2, self.platform.value());
+            my_size += ::protobuf::rt::int32_size(12, self.platform.value());
         }
         for value in &self.DNENLCHJEKG {
-            my_size += ::protobuf::rt::string_size(3, &value);
+            my_size += ::protobuf::rt::string_size(2, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.platform))?;
         }
         for v in &self.DNENLCHJEKG {
-            os.write_string(3, &v)?;
+            os.write_string(2, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetPlatformPlayerInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPlatformPlayerInfoCsReq.proto\x1a\x12PlatformType.proto\"i\n\
-    \x1aGetPlatformPlayerInfoCsReq\x12)\n\x08platform\x18\x02\x20\x01(\x0e2\
-    \r.PlatformTypeR\x08platform\x12\x20\n\x0bDNENLCHJEKG\x18\x03\x20\x03(\t\
+    \x1aGetPlatformPlayerInfoCsReq\x12)\n\x08platform\x18\x0c\x20\x01(\x0e2\
+    \r.PlatformTypeR\x08platform\x12\x20\n\x0bDNENLCHJEKG\x18\x02\x20\x03(\t\
     R\x0bDNENLCHJEKGb\x06proto3\
 ";
 

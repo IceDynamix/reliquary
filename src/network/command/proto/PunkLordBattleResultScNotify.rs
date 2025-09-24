@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordBattleResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.PGOFPNLAPOE)
-    pub PGOFPNLAPOE: u32,
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.NCACOCCJNLD)
-    pub NCACOCCJNLD: u32,
-    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.DPMKAMMIOLB)
-    pub DPMKAMMIOLB: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
     // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.DHLPKMIHDNM)
     pub DHLPKMIHDNM: ::protobuf::MessageField<super::AHKANKEPADJ::AHKANKEPADJ>,
     // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.AHJFPNGDBDO)
     pub AHJFPNGDBDO: u32,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.DPMKAMMIOLB)
+    pub DPMKAMMIOLB: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.PGOFPNLAPOE)
+    pub PGOFPNLAPOE: u32,
+    // @@protoc_insertion_point(field:PunkLordBattleResultScNotify.NCACOCCJNLD)
+    pub NCACOCCJNLD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordBattleResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,21 +57,6 @@ impl PunkLordBattleResultScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGOFPNLAPOE",
-            |m: &PunkLordBattleResultScNotify| { &m.PGOFPNLAPOE },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.PGOFPNLAPOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCACOCCJNLD",
-            |m: &PunkLordBattleResultScNotify| { &m.NCACOCCJNLD },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.NCACOCCJNLD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
-            "DPMKAMMIOLB",
-            |m: &PunkLordBattleResultScNotify| { &m.DPMKAMMIOLB },
-            |m: &mut PunkLordBattleResultScNotify| { &mut m.DPMKAMMIOLB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHKANKEPADJ::AHKANKEPADJ>(
             "DHLPKMIHDNM",
             |m: &PunkLordBattleResultScNotify| { &m.DHLPKMIHDNM },
@@ -81,6 +66,21 @@ impl PunkLordBattleResultScNotify {
             "AHJFPNGDBDO",
             |m: &PunkLordBattleResultScNotify| { &m.AHJFPNGDBDO },
             |m: &mut PunkLordBattleResultScNotify| { &mut m.AHJFPNGDBDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
+            "DPMKAMMIOLB",
+            |m: &PunkLordBattleResultScNotify| { &m.DPMKAMMIOLB },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.DPMKAMMIOLB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGOFPNLAPOE",
+            |m: &PunkLordBattleResultScNotify| { &m.PGOFPNLAPOE },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.PGOFPNLAPOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NCACOCCJNLD",
+            |m: &PunkLordBattleResultScNotify| { &m.NCACOCCJNLD },
+            |m: &mut PunkLordBattleResultScNotify| { &mut m.NCACOCCJNLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordBattleResultScNotify>(
             "PunkLordBattleResultScNotify",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PGOFPNLAPOE = is.read_uint32()?;
-                },
-                56 => {
-                    self.NCACOCCJNLD = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
-                },
-                34 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHLPKMIHDNM)?;
                 },
-                64 => {
+                112 => {
                     self.AHJFPNGDBDO = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
+                },
+                16 => {
+                    self.PGOFPNLAPOE = is.read_uint32()?;
+                },
+                64 => {
+                    self.NCACOCCJNLD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PGOFPNLAPOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PGOFPNLAPOE);
-        }
-        if self.NCACOCCJNLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NCACOCCJNLD);
-        }
-        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.DHLPKMIHDNM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.AHJFPNGDBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AHJFPNGDBDO);
+            my_size += ::protobuf::rt::uint32_size(14, self.AHJFPNGDBDO);
+        }
+        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.PGOFPNLAPOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PGOFPNLAPOE);
+        }
+        if self.NCACOCCJNLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NCACOCCJNLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PGOFPNLAPOE != 0 {
-            os.write_uint32(12, self.PGOFPNLAPOE)?;
-        }
-        if self.NCACOCCJNLD != 0 {
-            os.write_uint32(7, self.NCACOCCJNLD)?;
-        }
-        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if let Some(v) = self.DHLPKMIHDNM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.AHJFPNGDBDO != 0 {
-            os.write_uint32(8, self.AHJFPNGDBDO)?;
+            os.write_uint32(14, self.AHJFPNGDBDO)?;
+        }
+        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.PGOFPNLAPOE != 0 {
+            os.write_uint32(2, self.PGOFPNLAPOE)?;
+        }
+        if self.NCACOCCJNLD != 0 {
+            os.write_uint32(8, self.NCACOCCJNLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for PunkLordBattleResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.PGOFPNLAPOE = 0;
-        self.NCACOCCJNLD = 0;
-        self.DPMKAMMIOLB.clear();
         self.DHLPKMIHDNM.clear();
         self.AHJFPNGDBDO = 0;
+        self.DPMKAMMIOLB.clear();
+        self.PGOFPNLAPOE = 0;
+        self.NCACOCCJNLD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordBattleResultScNotify {
         static instance: PunkLordBattleResultScNotify = PunkLordBattleResultScNotify {
-            PGOFPNLAPOE: 0,
-            NCACOCCJNLD: 0,
-            DPMKAMMIOLB: ::protobuf::MessageField::none(),
             DHLPKMIHDNM: ::protobuf::MessageField::none(),
             AHJFPNGDBDO: 0,
+            DPMKAMMIOLB: ::protobuf::MessageField::none(),
+            PGOFPNLAPOE: 0,
+            NCACOCCJNLD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordBattleResultScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"PunkLordBattleResultScNotify.proto\x1a\x11AHKANKEPADJ.proto\x1a\x1eP\
     unkLordMonsterBasicInfo.proto\"\xf1\x01\n\x1cPunkLordBattleResultScNotif\
-    y\x12\x20\n\x0bPGOFPNLAPOE\x18\x0c\x20\x01(\rR\x0bPGOFPNLAPOE\x12\x20\n\
-    \x0bNCACOCCJNLD\x18\x07\x20\x01(\rR\x0bNCACOCCJNLD\x12;\n\x0bDPMKAMMIOLB\
-    \x18\x0e\x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bDPMKAMMIOLB\x12.\
-    \n\x0bDHLPKMIHDNM\x18\x04\x20\x01(\x0b2\x0c.AHKANKEPADJR\x0bDHLPKMIHDNM\
-    \x12\x20\n\x0bAHJFPNGDBDO\x18\x08\x20\x01(\rR\x0bAHJFPNGDBDOb\x06proto3\
+    y\x12.\n\x0bDHLPKMIHDNM\x18\n\x20\x01(\x0b2\x0c.AHKANKEPADJR\x0bDHLPKMIH\
+    DNM\x12\x20\n\x0bAHJFPNGDBDO\x18\x0e\x20\x01(\rR\x0bAHJFPNGDBDO\x12;\n\
+    \x0bDPMKAMMIOLB\x18\x0f\x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bD\
+    PMKAMMIOLB\x12\x20\n\x0bPGOFPNLAPOE\x18\x02\x20\x01(\rR\x0bPGOFPNLAPOE\
+    \x12\x20\n\x0bNCACOCCJNLD\x18\x08\x20\x01(\rR\x0bNCACOCCJNLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

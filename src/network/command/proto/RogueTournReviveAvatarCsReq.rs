@@ -79,13 +79,13 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                112 => {
+                48 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                104 => {
+                96 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.base_avatar_id_list);
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(6, &self.base_avatar_id_list)?;
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(13, self.interacted_prop_entity_id)?;
+            os.write_uint32(12, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReviveAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournReviveAvatarCsReq.proto\"\x87\x01\n\x1bRogueTournReviveAvat\
-    arCsReq\x12-\n\x13base_avatar_id_list\x18\x0e\x20\x03(\rR\x10baseAvatarI\
-    dList\x129\n\x19interacted_prop_entity_id\x18\r\x20\x01(\rR\x16interacte\
-    dPropEntityIdb\x06proto3\
+    arCsReq\x12-\n\x13base_avatar_id_list\x18\x06\x20\x03(\rR\x10baseAvatarI\
+    dList\x129\n\x19interacted_prop_entity_id\x18\x0c\x20\x01(\rR\x16interac\
+    tedPropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

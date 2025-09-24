@@ -79,10 +79,10 @@ impl ::protobuf::Message for GIADLHEEPHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.has_taken_reward = is.read_bool()?;
                 },
-                32 => {
+                72 => {
                     self.FHHGDPCECEE = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GIADLHEEPHD {
             my_size += 1 + 1;
         }
         if self.FHHGDPCECEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FHHGDPCECEE);
+            my_size += ::protobuf::rt::uint32_size(9, self.FHHGDPCECEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GIADLHEEPHD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.has_taken_reward != false {
-            os.write_bool(13, self.has_taken_reward)?;
+            os.write_bool(12, self.has_taken_reward)?;
         }
         if self.FHHGDPCECEE != 0 {
-            os.write_uint32(4, self.FHHGDPCECEE)?;
+            os.write_uint32(9, self.FHHGDPCECEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GIADLHEEPHD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIADLHEEPHD.proto\"Y\n\x0bGIADLHEEPHD\x12(\n\x10has_taken_reward\
-    \x18\r\x20\x01(\x08R\x0ehasTakenReward\x12\x20\n\x0bFHHGDPCECEE\x18\x04\
+    \x18\x0c\x20\x01(\x08R\x0ehasTakenReward\x12\x20\n\x0bFHHGDPCECEE\x18\t\
     \x20\x01(\rR\x0bFHHGDPCECEEb\x06proto3\
 ";
 

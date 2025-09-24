@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyPlacingShip {
     // message fields
-    // @@protoc_insertion_point(field:AlleyPlacingShip.goods_list)
-    pub goods_list: ::std::vec::Vec<super::KGCANLJIKCP::KGCANLJIKCP>,
     // @@protoc_insertion_point(field:AlleyPlacingShip.ship_id)
     pub ship_id: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingShip.goods_list)
+    pub goods_list: ::std::vec::Vec<super::KGCANLJIKCP::KGCANLJIKCP>,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyPlacingShip.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AlleyPlacingShip {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "goods_list",
-            |m: &AlleyPlacingShip| { &m.goods_list },
-            |m: &mut AlleyPlacingShip| { &mut m.goods_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ship_id",
             |m: &AlleyPlacingShip| { &m.ship_id },
             |m: &mut AlleyPlacingShip| { &mut m.ship_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "goods_list",
+            |m: &AlleyPlacingShip| { &m.goods_list },
+            |m: &mut AlleyPlacingShip| { &mut m.goods_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyPlacingShip>(
             "AlleyPlacingShip",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AlleyPlacingShip {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.goods_list.push(is.read_message()?);
-                },
-                104 => {
+                32 => {
                     self.ship_id = is.read_uint32()?;
+                },
+                90 => {
+                    self.goods_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for AlleyPlacingShip {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ship_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ship_id);
+        }
         for value in &self.goods_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ship_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ship_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.goods_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         if self.ship_id != 0 {
-            os.write_uint32(13, self.ship_id)?;
+            os.write_uint32(4, self.ship_id)?;
         }
+        for v in &self.goods_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for AlleyPlacingShip {
     }
 
     fn clear(&mut self) {
-        self.goods_list.clear();
         self.ship_id = 0;
+        self.goods_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyPlacingShip {
         static instance: AlleyPlacingShip = AlleyPlacingShip {
-            goods_list: ::std::vec::Vec::new(),
             ship_id: 0,
+            goods_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AlleyPlacingShip {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AlleyPlacingShip.proto\x1a\x11KGCANLJIKCP.proto\"X\n\x10AlleyPlaci\
-    ngShip\x12+\n\ngoods_list\x18\x0f\x20\x03(\x0b2\x0c.KGCANLJIKCPR\tgoodsL\
-    ist\x12\x17\n\x07ship_id\x18\r\x20\x01(\rR\x06shipIdb\x06proto3\
+    ngShip\x12\x17\n\x07ship_id\x18\x04\x20\x01(\rR\x06shipId\x12+\n\ngoods_\
+    list\x18\x0b\x20\x03(\x0b2\x0c.KGCANLJIKCPR\tgoodsListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

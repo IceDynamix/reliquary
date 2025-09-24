@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplaceLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
-    pub is_virtual: bool,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.game_story_line_id)
+    pub game_story_line_id: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.lineup_slot_list)
     pub lineup_slot_list: ::std::vec::Vec<super::LineupSlotData::LineupSlotData>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
+    pub index: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.plane_id)
     pub plane_id: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.leader_slot)
     pub leader_slot: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.game_story_line_id)
-    pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
-    pub index: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
+    pub is_virtual: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ReplaceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,19 +62,19 @@ impl ReplaceLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &ReplaceLineupCsReq| { &m.is_virtual },
-            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &ReplaceLineupCsReq| { &m.extra_lineup_type },
-            |m: &mut ReplaceLineupCsReq| { &mut m.extra_lineup_type },
+            "game_story_line_id",
+            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
+            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_slot_list",
             |m: &ReplaceLineupCsReq| { &m.lineup_slot_list },
             |m: &mut ReplaceLineupCsReq| { &mut m.lineup_slot_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &ReplaceLineupCsReq| { &m.index },
+            |m: &mut ReplaceLineupCsReq| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
@@ -87,14 +87,14 @@ impl ReplaceLineupCsReq {
             |m: &mut ReplaceLineupCsReq| { &mut m.leader_slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
-            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
+            "extra_lineup_type",
+            |m: &ReplaceLineupCsReq| { &m.extra_lineup_type },
+            |m: &mut ReplaceLineupCsReq| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &ReplaceLineupCsReq| { &m.index },
-            |m: &mut ReplaceLineupCsReq| { &mut m.index },
+            "is_virtual",
+            |m: &ReplaceLineupCsReq| { &m.is_virtual },
+            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplaceLineupCsReq>(
             "ReplaceLineupCsReq",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_virtual = is.read_bool()?;
-                },
-                40 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                82 => {
-                    self.lineup_slot_list.push(is.read_message()?);
-                },
-                64 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.leader_slot = is.read_uint32()?;
-                },
-                32 => {
+                56 => {
                     self.game_story_line_id = is.read_uint32()?;
+                },
+                66 => {
+                    self.lineup_slot_list.push(is.read_message()?);
                 },
                 88 => {
                     self.index = is.read_uint32()?;
+                },
+                24 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.leader_slot = is.read_uint32()?;
+                },
+                32 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                },
+                72 => {
+                    self.is_virtual = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_virtual != false {
-            my_size += 1 + 1;
-        }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.extra_lineup_type.value());
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.game_story_line_id);
         }
         for value in &self.lineup_slot_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.plane_id);
-        }
-        if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.leader_slot);
-        }
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.game_story_line_id);
-        }
         if self.index != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.index);
+        }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
+        }
+        if self.leader_slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.leader_slot);
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.extra_lineup_type.value());
+        }
+        if self.is_virtual != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_virtual != false {
-            os.write_bool(14, self.is_virtual)?;
-        }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+        if self.game_story_line_id != 0 {
+            os.write_uint32(7, self.game_story_line_id)?;
         }
         for v in &self.lineup_slot_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.plane_id != 0 {
-            os.write_uint32(8, self.plane_id)?;
-        }
-        if self.leader_slot != 0 {
-            os.write_uint32(1, self.leader_slot)?;
-        }
-        if self.game_story_line_id != 0 {
-            os.write_uint32(4, self.game_story_line_id)?;
-        }
         if self.index != 0 {
             os.write_uint32(11, self.index)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(3, self.plane_id)?;
+        }
+        if self.leader_slot != 0 {
+            os.write_uint32(2, self.leader_slot)?;
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+        }
+        if self.is_virtual != false {
+            os.write_bool(9, self.is_virtual)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_virtual = false;
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.game_story_line_id = 0;
         self.lineup_slot_list.clear();
+        self.index = 0;
         self.plane_id = 0;
         self.leader_slot = 0;
-        self.game_story_line_id = 0;
-        self.index = 0;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.is_virtual = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplaceLineupCsReq {
         static instance: ReplaceLineupCsReq = ReplaceLineupCsReq {
-            is_virtual: false,
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            game_story_line_id: 0,
             lineup_slot_list: ::std::vec::Vec::new(),
+            index: 0,
             plane_id: 0,
             leader_slot: 0,
-            game_story_line_id: 0,
-            index: 0,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            is_virtual: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for ReplaceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ReplaceLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x14Lineu\
-    pSlotData.proto\"\xab\x02\n\x12ReplaceLineupCsReq\x12\x1d\n\nis_virtual\
-    \x18\x0e\x20\x01(\x08R\tisVirtual\x12<\n\x11extra_lineup_type\x18\x05\
-    \x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x129\n\x10lineup_\
-    slot_list\x18\n\x20\x03(\x0b2\x0f.LineupSlotDataR\x0elineupSlotList\x12\
-    \x19\n\x08plane_id\x18\x08\x20\x01(\rR\x07planeId\x12\x1f\n\x0bleader_sl\
-    ot\x18\x01\x20\x01(\rR\nleaderSlot\x12+\n\x12game_story_line_id\x18\x04\
-    \x20\x01(\rR\x0fgameStoryLineId\x12\x14\n\x05index\x18\x0b\x20\x01(\rR\
-    \x05indexb\x06proto3\
+    pSlotData.proto\"\xab\x02\n\x12ReplaceLineupCsReq\x12+\n\x12game_story_l\
+    ine_id\x18\x07\x20\x01(\rR\x0fgameStoryLineId\x129\n\x10lineup_slot_list\
+    \x18\x08\x20\x03(\x0b2\x0f.LineupSlotDataR\x0elineupSlotList\x12\x14\n\
+    \x05index\x18\x0b\x20\x01(\rR\x05index\x12\x19\n\x08plane_id\x18\x03\x20\
+    \x01(\rR\x07planeId\x12\x1f\n\x0bleader_slot\x18\x02\x20\x01(\rR\nleader\
+    Slot\x12<\n\x11extra_lineup_type\x18\x04\x20\x01(\x0e2\x10.ExtraLineupTy\
+    peR\x0fextraLineupType\x12\x1d\n\nis_virtual\x18\t\x20\x01(\x08R\tisVirt\
+    ualb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

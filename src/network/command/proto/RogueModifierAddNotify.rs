@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierAddNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierAddNotify.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)
-    pub CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField<super::RogueModifier::RogueModifier>,
+    // @@protoc_insertion_point(field:RogueModifierAddNotify.rogue_modifier)
+    pub rogue_modifier: ::protobuf::MessageField<super::RogueModifier::RogueModifier>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierAddNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueModifierAddNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModifier::RogueModifier>(
-            "CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER",
-            |m: &RogueModifierAddNotify| { &m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
-            |m: &mut RogueModifierAddNotify| { &mut m.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER },
+            "rogue_modifier",
+            |m: &RogueModifierAddNotify| { &m.rogue_modifier },
+            |m: &mut RogueModifierAddNotify| { &mut m.rogue_modifier },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierAddNotify>(
             "RogueModifierAddNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_modifier)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER.as_ref() {
+        if let Some(v) = self.rogue_modifier.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.rogue_modifier.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     }
 
     fn clear(&mut self) {
-        self.CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER.clear();
+        self.rogue_modifier.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierAddNotify {
         static instance: RogueModifierAddNotify = RogueModifierAddNotify {
-            CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER: ::protobuf::MessageField::none(),
+            rogue_modifier: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,10 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierAddNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueModifierAddNotify.proto\x1a\x13RogueModifier.proto\"}\n\x16Ro\
-    gueModifierAddNotify\x12c\n'CHESS_ROGUE_CELL_UPDATE_REASON_MODIFIER\x18\
-    \x03\x20\x01(\x0b2\x0e.RogueModifierR\"CHESSROGUECELLUPDATEREASONMODIFIE\
-    Rb\x06proto3\
+    \n\x1cRogueModifierAddNotify.proto\x1a\x13RogueModifier.proto\"O\n\x16Ro\
+    gueModifierAddNotify\x125\n\x0erogue_modifier\x18\x01\x20\x01(\x0b2\x0e.\
+    RogueModifierR\rrogueModifierb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

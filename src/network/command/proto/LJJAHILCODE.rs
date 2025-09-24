@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LJJAHILCODE {
     // message fields
-    // @@protoc_insertion_point(field:LJJAHILCODE.MFAMKIBGBBG)
-    pub MFAMKIBGBBG: u32,
     // @@protoc_insertion_point(field:LJJAHILCODE.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:LJJAHILCODE.MFAMKIBGBBG)
+    pub MFAMKIBGBBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LJJAHILCODE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LJJAHILCODE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFAMKIBGBBG",
-            |m: &LJJAHILCODE| { &m.MFAMKIBGBBG },
-            |m: &mut LJJAHILCODE| { &mut m.MFAMKIBGBBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &LJJAHILCODE| { &m.level },
             |m: &mut LJJAHILCODE| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFAMKIBGBBG",
+            |m: &LJJAHILCODE| { &m.MFAMKIBGBBG },
+            |m: &mut LJJAHILCODE| { &mut m.MFAMKIBGBBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LJJAHILCODE>(
             "LJJAHILCODE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LJJAHILCODE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MFAMKIBGBBG = is.read_uint32()?;
-                },
-                56 => {
+                64 => {
                     self.level = is.read_uint32()?;
+                },
+                96 => {
+                    self.MFAMKIBGBBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LJJAHILCODE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFAMKIBGBBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MFAMKIBGBBG);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.MFAMKIBGBBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.MFAMKIBGBBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LJJAHILCODE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFAMKIBGBBG != 0 {
-            os.write_uint32(2, self.MFAMKIBGBBG)?;
-        }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(8, self.level)?;
+        }
+        if self.MFAMKIBGBBG != 0 {
+            os.write_uint32(12, self.MFAMKIBGBBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LJJAHILCODE {
     }
 
     fn clear(&mut self) {
-        self.MFAMKIBGBBG = 0;
         self.level = 0;
+        self.MFAMKIBGBBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LJJAHILCODE {
         static instance: LJJAHILCODE = LJJAHILCODE {
-            MFAMKIBGBBG: 0,
             level: 0,
+            MFAMKIBGBBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LJJAHILCODE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LJJAHILCODE.proto\"E\n\x0bLJJAHILCODE\x12\x20\n\x0bMFAMKIBGBBG\x18\
-    \x02\x20\x01(\rR\x0bMFAMKIBGBBG\x12\x14\n\x05level\x18\x07\x20\x01(\rR\
-    \x05levelb\x06proto3\
+    \n\x11LJJAHILCODE.proto\"E\n\x0bLJJAHILCODE\x12\x14\n\x05level\x18\x08\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bMFAMKIBGBBG\x18\x0c\x20\x01(\rR\x0bMF\
+    AMKIBGBBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

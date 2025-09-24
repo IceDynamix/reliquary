@@ -82,7 +82,7 @@ impl ::protobuf::Message for LobbyInteractScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.CBEGNBKMHCD = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LobbyInteractScRsp {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.CBEGNBKMHCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CBEGNBKMHCD);
+            my_size += ::protobuf::rt::uint32_size(3, self.CBEGNBKMHCD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for LobbyInteractScRsp {
             os.write_uint32(9, self.retcode)?;
         }
         if self.CBEGNBKMHCD != 0 {
-            os.write_uint32(7, self.CBEGNBKMHCD)?;
+            os.write_uint32(3, self.CBEGNBKMHCD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInteractScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LobbyInteractScRsp.proto\"P\n\x12LobbyInteractScRsp\x12\x18\n\x07r\
-    etcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bCBEGNBKMHCD\x18\x07\x20\
+    etcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bCBEGNBKMHCD\x18\x03\x20\
     \x01(\rR\x0bCBEGNBKMHCDb\x06proto3\
 ";
 

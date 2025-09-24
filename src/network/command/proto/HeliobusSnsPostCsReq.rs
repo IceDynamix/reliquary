@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusSnsPostCsReq {
     // message fields
+    // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.FCLNOOGEHMC)
+    pub FCLNOOGEHMC: u32,
     // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.IHKEJEBCEIB)
     pub IHKEJEBCEIB: u32,
     // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.JFMOFIIDCNP)
     pub JFMOFIIDCNP: u32,
-    // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.FCLNOOGEHMC)
-    pub FCLNOOGEHMC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsPostCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl HeliobusSnsPostCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FCLNOOGEHMC",
+            |m: &HeliobusSnsPostCsReq| { &m.FCLNOOGEHMC },
+            |m: &mut HeliobusSnsPostCsReq| { &mut m.FCLNOOGEHMC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHKEJEBCEIB",
             |m: &HeliobusSnsPostCsReq| { &m.IHKEJEBCEIB },
             |m: &mut HeliobusSnsPostCsReq| { &mut m.IHKEJEBCEIB },
@@ -62,11 +67,6 @@ impl HeliobusSnsPostCsReq {
             "JFMOFIIDCNP",
             |m: &HeliobusSnsPostCsReq| { &m.JFMOFIIDCNP },
             |m: &mut HeliobusSnsPostCsReq| { &mut m.JFMOFIIDCNP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCLNOOGEHMC",
-            |m: &HeliobusSnsPostCsReq| { &m.FCLNOOGEHMC },
-            |m: &mut HeliobusSnsPostCsReq| { &mut m.FCLNOOGEHMC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsPostCsReq>(
             "HeliobusSnsPostCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
+                    self.FCLNOOGEHMC = is.read_uint32()?;
+                },
+                32 => {
                     self.IHKEJEBCEIB = is.read_uint32()?;
                 },
-                56 => {
-                    self.JFMOFIIDCNP = is.read_uint32()?;
-                },
                 72 => {
-                    self.FCLNOOGEHMC = is.read_uint32()?;
+                    self.JFMOFIIDCNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FCLNOOGEHMC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FCLNOOGEHMC);
+        }
         if self.IHKEJEBCEIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IHKEJEBCEIB);
+            my_size += ::protobuf::rt::uint32_size(4, self.IHKEJEBCEIB);
         }
         if self.JFMOFIIDCNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JFMOFIIDCNP);
-        }
-        if self.FCLNOOGEHMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FCLNOOGEHMC);
+            my_size += ::protobuf::rt::uint32_size(9, self.JFMOFIIDCNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FCLNOOGEHMC != 0 {
+            os.write_uint32(7, self.FCLNOOGEHMC)?;
+        }
         if self.IHKEJEBCEIB != 0 {
-            os.write_uint32(6, self.IHKEJEBCEIB)?;
+            os.write_uint32(4, self.IHKEJEBCEIB)?;
         }
         if self.JFMOFIIDCNP != 0 {
-            os.write_uint32(7, self.JFMOFIIDCNP)?;
-        }
-        if self.FCLNOOGEHMC != 0 {
-            os.write_uint32(9, self.FCLNOOGEHMC)?;
+            os.write_uint32(9, self.JFMOFIIDCNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     }
 
     fn clear(&mut self) {
+        self.FCLNOOGEHMC = 0;
         self.IHKEJEBCEIB = 0;
         self.JFMOFIIDCNP = 0;
-        self.FCLNOOGEHMC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsPostCsReq {
         static instance: HeliobusSnsPostCsReq = HeliobusSnsPostCsReq {
+            FCLNOOGEHMC: 0,
             IHKEJEBCEIB: 0,
             JFMOFIIDCNP: 0,
-            FCLNOOGEHMC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsPostCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsPostCsReq.proto\"|\n\x14HeliobusSnsPostCsReq\x12\x20\n\
-    \x0bIHKEJEBCEIB\x18\x06\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x20\n\x0bJFMOFIID\
-    CNP\x18\x07\x20\x01(\rR\x0bJFMOFIIDCNP\x12\x20\n\x0bFCLNOOGEHMC\x18\t\
-    \x20\x01(\rR\x0bFCLNOOGEHMCb\x06proto3\
+    \x0bFCLNOOGEHMC\x18\x07\x20\x01(\rR\x0bFCLNOOGEHMC\x12\x20\n\x0bIHKEJEBC\
+    EIB\x18\x04\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x20\n\x0bJFMOFIIDCNP\x18\t\
+    \x20\x01(\rR\x0bJFMOFIIDCNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

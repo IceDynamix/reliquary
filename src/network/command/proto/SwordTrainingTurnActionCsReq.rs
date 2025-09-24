@@ -85,10 +85,10 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
                 88 => {
                     self.BHNFGPEHOMO.push(is.read_uint32()?);
                 },
-                18 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.PHAJEHIBKFI)?;
                 },
-                16 => {
+                120 => {
                     self.PHAJEHIBKFI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.BHNFGPEHOMO);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.PHAJEHIBKFI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.PHAJEHIBKFI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,7 +112,7 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(11, &self.BHNFGPEHOMO)?;
-        os.write_repeated_packed_uint32(2, &self.PHAJEHIBKFI)?;
+        os.write_repeated_packed_uint32(15, &self.PHAJEHIBKFI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingTurnActionCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingTurnActionCsReq.proto\"b\n\x1cSwordTrainingTurnActionCs\
     Req\x12\x20\n\x0bBHNFGPEHOMO\x18\x0b\x20\x03(\rR\x0bBHNFGPEHOMO\x12\x20\
-    \n\x0bPHAJEHIBKFI\x18\x02\x20\x03(\rR\x0bPHAJEHIBKFIb\x06proto3\
+    \n\x0bPHAJEHIBKFI\x18\x0f\x20\x03(\rR\x0bPHAJEHIBKFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct StoryLineTrialAvatarChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.CLIIGMNMHNA)
     pub CLIIGMNMHNA: bool,
-    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.KFMFFGGJMNE)
-    pub KFMFFGGJMNE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.IBLBNIANPHD)
     pub IBLBNIANPHD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.KFMFFGGJMNE)
+    pub KFMFFGGJMNE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:StoryLineTrialAvatarChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl StoryLineTrialAvatarChangeScNotify {
             |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.CLIIGMNMHNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KFMFFGGJMNE",
-            |m: &StoryLineTrialAvatarChangeScNotify| { &m.KFMFFGGJMNE },
-            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.KFMFFGGJMNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IBLBNIANPHD",
             |m: &StoryLineTrialAvatarChangeScNotify| { &m.IBLBNIANPHD },
             |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.IBLBNIANPHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KFMFFGGJMNE",
+            |m: &StoryLineTrialAvatarChangeScNotify| { &m.KFMFFGGJMNE },
+            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.KFMFFGGJMNE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StoryLineTrialAvatarChangeScNotify>(
             "StoryLineTrialAvatarChangeScNotify",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.CLIIGMNMHNA = is.read_bool()?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KFMFFGGJMNE)?;
-                },
-                80 => {
-                    self.KFMFFGGJMNE.push(is.read_uint32()?);
-                },
-                122 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.IBLBNIANPHD)?;
                 },
-                120 => {
+                72 => {
                     self.IBLBNIANPHD.push(is.read_uint32()?);
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KFMFFGGJMNE)?;
+                },
+                104 => {
+                    self.KFMFFGGJMNE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,8 +116,8 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
         if self.CLIIGMNMHNA != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KFMFFGGJMNE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IBLBNIANPHD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IBLBNIANPHD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.KFMFFGGJMNE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,10 +125,10 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLIIGMNMHNA != false {
-            os.write_bool(6, self.CLIIGMNMHNA)?;
+            os.write_bool(3, self.CLIIGMNMHNA)?;
         }
-        os.write_repeated_packed_uint32(10, &self.KFMFFGGJMNE)?;
-        os.write_repeated_packed_uint32(15, &self.IBLBNIANPHD)?;
+        os.write_repeated_packed_uint32(9, &self.IBLBNIANPHD)?;
+        os.write_repeated_packed_uint32(13, &self.KFMFFGGJMNE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
 
     fn clear(&mut self) {
         self.CLIIGMNMHNA = false;
-        self.KFMFFGGJMNE.clear();
         self.IBLBNIANPHD.clear();
+        self.KFMFFGGJMNE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StoryLineTrialAvatarChangeScNotify {
         static instance: StoryLineTrialAvatarChangeScNotify = StoryLineTrialAvatarChangeScNotify {
             CLIIGMNMHNA: false,
-            KFMFFGGJMNE: ::std::vec::Vec::new(),
             IBLBNIANPHD: ::std::vec::Vec::new(),
+            KFMFFGGJMNE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineTrialAvatarChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(StoryLineTrialAvatarChangeScNotify.proto\"\x8a\x01\n\"StoryLineTrialA\
-    vatarChangeScNotify\x12\x20\n\x0bCLIIGMNMHNA\x18\x06\x20\x01(\x08R\x0bCL\
-    IIGMNMHNA\x12\x20\n\x0bKFMFFGGJMNE\x18\n\x20\x03(\rR\x0bKFMFFGGJMNE\x12\
-    \x20\n\x0bIBLBNIANPHD\x18\x0f\x20\x03(\rR\x0bIBLBNIANPHDb\x06proto3\
+    vatarChangeScNotify\x12\x20\n\x0bCLIIGMNMHNA\x18\x03\x20\x01(\x08R\x0bCL\
+    IIGMNMHNA\x12\x20\n\x0bIBLBNIANPHD\x18\t\x20\x03(\rR\x0bIBLBNIANPHD\x12\
+    \x20\n\x0bKFMFFGGJMNE\x18\r\x20\x03(\rR\x0bKFMFFGGJMNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

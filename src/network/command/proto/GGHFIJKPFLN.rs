@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GGHFIJKPFLN {
     // message fields
-    // @@protoc_insertion_point(field:GGHFIJKPFLN.JJEALOEMMKK)
-    pub JJEALOEMMKK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GGHFIJKPFLN.BPLMPMEFEAM)
     pub BPLMPMEFEAM: ::protobuf::EnumOrUnknown<super::RogueDialogueResult::RogueDialogueResult>,
+    // @@protoc_insertion_point(field:GGHFIJKPFLN.JJEALOEMMKK)
+    pub JJEALOEMMKK: ::std::vec::Vec<u32>,
     // message oneof groups
     pub MICMCKAHMPL: ::std::option::Option<gghfijkpfln::MICMCKAHMPL>,
     // special fields
@@ -50,7 +50,7 @@ impl GGHFIJKPFLN {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 15;
+    // .ItemList JDIJKEGCIBP = 1;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
         match self.MICMCKAHMPL {
@@ -102,15 +102,15 @@ impl GGHFIJKPFLN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJEALOEMMKK",
-            |m: &GGHFIJKPFLN| { &m.JJEALOEMMKK },
-            |m: &mut GGHFIJKPFLN| { &mut m.JJEALOEMMKK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPLMPMEFEAM",
             |m: &GGHFIJKPFLN| { &m.BPLMPMEFEAM },
             |m: &mut GGHFIJKPFLN| { &mut m.BPLMPMEFEAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JJEALOEMMKK",
+            |m: &GGHFIJKPFLN| { &m.JJEALOEMMKK },
+            |m: &mut GGHFIJKPFLN| { &mut m.JJEALOEMMKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ItemList::ItemList>(
             "JDIJKEGCIBP",
@@ -138,16 +138,16 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JJEALOEMMKK)?;
-                },
-                8 => {
-                    self.JJEALOEMMKK.push(is.read_uint32()?);
-                },
-                24 => {
+                48 => {
                     self.BPLMPMEFEAM = is.read_enum_or_unknown()?;
                 },
-                122 => {
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JJEALOEMMKK)?;
+                },
+                16 => {
+                    self.JJEALOEMMKK.push(is.read_uint32()?);
+                },
+                10 => {
                     self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
                 },
                 tag => {
@@ -162,10 +162,10 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JJEALOEMMKK);
         if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC) {
-            my_size += ::protobuf::rt::int32_size(3, self.BPLMPMEFEAM.value());
+            my_size += ::protobuf::rt::int32_size(6, self.BPLMPMEFEAM.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JJEALOEMMKK);
         if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
                 &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
@@ -180,14 +180,14 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.JJEALOEMMKK)?;
         if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BPLMPMEFEAM))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.BPLMPMEFEAM))?;
         }
+        os.write_repeated_packed_uint32(2, &self.JJEALOEMMKK)?;
         if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
                 &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
             };
         }
@@ -208,16 +208,16 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn clear(&mut self) {
-        self.JJEALOEMMKK.clear();
         self.BPLMPMEFEAM = ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC);
+        self.JJEALOEMMKK.clear();
         self.MICMCKAHMPL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGHFIJKPFLN {
         static instance: GGHFIJKPFLN = GGHFIJKPFLN {
-            JJEALOEMMKK: ::std::vec::Vec::new(),
             BPLMPMEFEAM: ::protobuf::EnumOrUnknown::from_i32(0),
+            JJEALOEMMKK: ::std::vec::Vec::new(),
             MICMCKAHMPL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -272,9 +272,9 @@ pub mod gghfijkpfln {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GGHFIJKPFLN.proto\x1a\x0eItemList.proto\x1a\x19RogueDialogueResult\
-    .proto\"\xa5\x01\n\x0bGGHFIJKPFLN\x12\x20\n\x0bJJEALOEMMKK\x18\x01\x20\
-    \x03(\rR\x0bJJEALOEMMKK\x126\n\x0bBPLMPMEFEAM\x18\x03\x20\x01(\x0e2\x14.\
-    RogueDialogueResultR\x0bBPLMPMEFEAM\x12-\n\x0bJDIJKEGCIBP\x18\x0f\x20\
+    .proto\"\xa5\x01\n\x0bGGHFIJKPFLN\x126\n\x0bBPLMPMEFEAM\x18\x06\x20\x01(\
+    \x0e2\x14.RogueDialogueResultR\x0bBPLMPMEFEAM\x12\x20\n\x0bJJEALOEMMKK\
+    \x18\x02\x20\x03(\rR\x0bJJEALOEMMKK\x12-\n\x0bJDIJKEGCIBP\x18\x01\x20\
     \x01(\x0b2\t.ItemListH\0R\x0bJDIJKEGCIBPB\r\n\x0bMICMCKAHMPLb\x06proto3\
 ";
 

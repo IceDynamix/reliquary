@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchHandUpdateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwitchHandUpdateScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SwitchHandUpdateScRsp.CMFMACMIPEE)
     pub CMFMACMIPEE: ::protobuf::MessageField<super::HandInfo::HandInfo>,
+    // @@protoc_insertion_point(field:SwitchHandUpdateScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:SwitchHandUpdateScRsp.CLBMGBFANLC)
     pub CLBMGBFANLC: ::protobuf::MessageField<super::PMGECPBKJCJ::PMGECPBKJCJ>,
     // special fields
@@ -53,15 +53,15 @@ impl SwitchHandUpdateScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SwitchHandUpdateScRsp| { &m.retcode },
-            |m: &mut SwitchHandUpdateScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HandInfo::HandInfo>(
             "CMFMACMIPEE",
             |m: &SwitchHandUpdateScRsp| { &m.CMFMACMIPEE },
             |m: &mut SwitchHandUpdateScRsp| { &mut m.CMFMACMIPEE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SwitchHandUpdateScRsp| { &m.retcode },
+            |m: &mut SwitchHandUpdateScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PMGECPBKJCJ::PMGECPBKJCJ>(
             "CLBMGBFANLC",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SwitchHandUpdateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMFMACMIPEE)?;
                 },
-                82 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLBMGBFANLC)?;
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for SwitchHandUpdateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         if let Some(v) = self.CMFMACMIPEE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.CLBMGBFANLC.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for SwitchHandUpdateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         if let Some(v) = self.CMFMACMIPEE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         if let Some(v) = self.CLBMGBFANLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SwitchHandUpdateScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.CMFMACMIPEE.clear();
+        self.retcode = 0;
         self.CLBMGBFANLC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchHandUpdateScRsp {
         static instance: SwitchHandUpdateScRsp = SwitchHandUpdateScRsp {
-            retcode: 0,
             CMFMACMIPEE: ::protobuf::MessageField::none(),
+            retcode: 0,
             CLBMGBFANLC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandUpdateScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSwitchHandUpdateScRsp.proto\x1a\x0eHandInfo.proto\x1a\x11PMGECPBKJ\
-    CJ.proto\"\x8e\x01\n\x15SwitchHandUpdateScRsp\x12\x18\n\x07retcode\x18\
-    \x01\x20\x01(\rR\x07retcode\x12+\n\x0bCMFMACMIPEE\x18\t\x20\x01(\x0b2\t.\
-    HandInfoR\x0bCMFMACMIPEE\x12.\n\x0bCLBMGBFANLC\x18\n\x20\x01(\x0b2\x0c.P\
-    MGECPBKJCJR\x0bCLBMGBFANLCb\x06proto3\
+    CJ.proto\"\x8e\x01\n\x15SwitchHandUpdateScRsp\x12+\n\x0bCMFMACMIPEE\x18\
+    \x0f\x20\x01(\x0b2\t.HandInfoR\x0bCMFMACMIPEE\x12\x18\n\x07retcode\x18\
+    \x08\x20\x01(\rR\x07retcode\x12.\n\x0bCLBMGBFANLC\x18\x01\x20\x01(\x0b2\
+    \x0c.PMGECPBKJCJR\x0bCLBMGBFANLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

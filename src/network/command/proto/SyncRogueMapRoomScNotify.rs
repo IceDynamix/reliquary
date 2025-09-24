@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KPEKCLBEPGB)?;
                 },
-                16 => {
+                48 => {
                     self.map_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SyncRogueMapRoomScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KPEKCLBEPGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(2, self.map_id)?;
+            os.write_uint32(6, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueMapRoomScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncRogueMapRoomScNotify.proto\x1a\x0fRogueRoom.proto\"_\n\x18Sync\
-    RogueMapRoomScNotify\x12,\n\x0bKPEKCLBEPGB\x18\x0b\x20\x01(\x0b2\n.Rogue\
-    RoomR\x0bKPEKCLBEPGB\x12\x15\n\x06map_id\x18\x02\x20\x01(\rR\x05mapIdb\
+    RogueMapRoomScNotify\x12,\n\x0bKPEKCLBEPGB\x18\x04\x20\x01(\x0b2\n.Rogue\
+    RoomR\x0bKPEKCLBEPGB\x12\x15\n\x06map_id\x18\x06\x20\x01(\rR\x05mapIdb\
     \x06proto3\
 ";
 

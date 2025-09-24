@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJCJCHLJBGF {
     // message fields
-    // @@protoc_insertion_point(field:AJCJCHLJBGF.item_list)
-    pub item_list: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
     // @@protoc_insertion_point(field:AJCJCHLJBGF.item_value)
     pub item_value: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // @@protoc_insertion_point(field:AJCJCHLJBGF.PCAJNCBMIMM)
     pub PCAJNCBMIMM: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
+    // @@protoc_insertion_point(field:AJCJCHLJBGF.item_list)
+    pub item_list: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
     // special fields
     // @@protoc_insertion_point(special_field:AJCJCHLJBGF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl AJCJCHLJBGF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &AJCJCHLJBGF| { &m.item_list },
-            |m: &mut AJCJCHLJBGF| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
             "item_value",
             |m: &AJCJCHLJBGF| { &m.item_value },
@@ -67,6 +62,11 @@ impl AJCJCHLJBGF {
             "PCAJNCBMIMM",
             |m: &AJCJCHLJBGF| { &m.PCAJNCBMIMM },
             |m: &mut AJCJCHLJBGF| { &mut m.PCAJNCBMIMM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "item_list",
+            |m: &AJCJCHLJBGF| { &m.item_list },
+            |m: &mut AJCJCHLJBGF| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJCJCHLJBGF>(
             "AJCJCHLJBGF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AJCJCHLJBGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.item_list.push(is.read_message()?);
-                },
-                74 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
-                26 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PCAJNCBMIMM)?;
+                },
+                18 => {
+                    self.item_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,10 +107,6 @@ impl ::protobuf::Message for AJCJCHLJBGF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.item_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.item_value.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -119,21 +115,25 @@ impl ::protobuf::Message for AJCJCHLJBGF {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.item_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.PCAJNCBMIMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
+        for v in &self.item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for AJCJCHLJBGF {
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
         self.item_value.clear();
         self.PCAJNCBMIMM.clear();
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJCJCHLJBGF {
         static instance: AJCJCHLJBGF = AJCJCHLJBGF {
-            item_list: ::std::vec::Vec::new(),
             item_value: ::protobuf::MessageField::none(),
             PCAJNCBMIMM: ::protobuf::MessageField::none(),
+            item_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for AJCJCHLJBGF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AJCJCHLJBGF.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11IIKNGNHDMFI.prot\
-    o\"\x95\x01\n\x0bAJCJCHLJBGF\x12)\n\titem_list\x18\x05\x20\x03(\x0b2\x0c\
-    .CEODDCEIDDLR\x08itemList\x12+\n\nitem_value\x18\t\x20\x01(\x0b2\x0c.IIK\
-    NGNHDMFIR\titemValue\x12.\n\x0bPCAJNCBMIMM\x18\x03\x20\x01(\x0b2\x0c.IIK\
-    NGNHDMFIR\x0bPCAJNCBMIMMb\x06proto3\
+    o\"\x95\x01\n\x0bAJCJCHLJBGF\x12+\n\nitem_value\x18\n\x20\x01(\x0b2\x0c.\
+    IIKNGNHDMFIR\titemValue\x12.\n\x0bPCAJNCBMIMM\x18\r\x20\x01(\x0b2\x0c.II\
+    KNGNHDMFIR\x0bPCAJNCBMIMM\x12)\n\titem_list\x18\x02\x20\x03(\x0b2\x0c.CE\
+    ODDCEIDDLR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

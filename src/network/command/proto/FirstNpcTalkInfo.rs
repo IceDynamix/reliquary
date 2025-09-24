@@ -79,7 +79,7 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.is_meet = is.read_bool()?;
                 },
                 48 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FirstNpcTalkInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_meet != false {
-            os.write_bool(5, self.is_meet)?;
+            os.write_bool(3, self.is_meet)?;
         }
         if self.npc_id != 0 {
             os.write_uint32(6, self.npc_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FirstNpcTalkInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16FirstNpcTalkInfo.proto\"B\n\x10FirstNpcTalkInfo\x12\x17\n\x07is_me\
-    et\x18\x05\x20\x01(\x08R\x06isMeet\x12\x15\n\x06npc_id\x18\x06\x20\x01(\
+    et\x18\x03\x20\x01(\x08R\x06isMeet\x12\x15\n\x06npc_id\x18\x06\x20\x01(\
     \rR\x05npcIdb\x06proto3\
 ";
 

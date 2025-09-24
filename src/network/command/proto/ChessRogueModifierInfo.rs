@@ -86,16 +86,16 @@ impl ::protobuf::Message for ChessRogueModifierInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.confirm = is.read_bool()?;
                 },
-                80 => {
+                88 => {
                     self.select_cell_id = is.read_uint32()?;
                 },
-                34 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.modifier_effect_cell_id_list)?;
                 },
-                32 => {
+                56 => {
                     self.modifier_effect_cell_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -114,9 +114,9 @@ impl ::protobuf::Message for ChessRogueModifierInfo {
             my_size += 1 + 1;
         }
         if self.select_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.select_cell_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.select_cell_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.modifier_effect_cell_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.modifier_effect_cell_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for ChessRogueModifierInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.confirm != false {
-            os.write_bool(5, self.confirm)?;
+            os.write_bool(13, self.confirm)?;
         }
         if self.select_cell_id != 0 {
-            os.write_uint32(10, self.select_cell_id)?;
+            os.write_uint32(11, self.select_cell_id)?;
         }
-        os.write_repeated_packed_uint32(4, &self.modifier_effect_cell_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.modifier_effect_cell_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueModifierInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cChessRogueModifierInfo.proto\"\x98\x01\n\x16ChessRogueModifierInfo\
-    \x12\x18\n\x07confirm\x18\x05\x20\x01(\x08R\x07confirm\x12$\n\x0eselect_\
-    cell_id\x18\n\x20\x01(\rR\x0cselectCellId\x12>\n\x1cmodifier_effect_cell\
-    _id_list\x18\x04\x20\x03(\rR\x18modifierEffectCellIdListb\x06proto3\
+    \x12\x18\n\x07confirm\x18\r\x20\x01(\x08R\x07confirm\x12$\n\x0eselect_ce\
+    ll_id\x18\x0b\x20\x01(\rR\x0cselectCellId\x12>\n\x1cmodifier_effect_cell\
+    _id_list\x18\x07\x20\x03(\rR\x18modifierEffectCellIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueSeasonFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.rogue_finish_info)
-    pub rogue_finish_info: ::protobuf::MessageField<super::RogueFinishInfo::RogueFinishInfo>,
-    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.rogue_score_reward_info)
-    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.rogue_finish_info)
+    pub rogue_finish_info: ::protobuf::MessageField<super::RogueFinishInfo::RogueFinishInfo>,
     // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.rogue_score_reward_info)
+    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // @@protoc_insertion_point(field:SyncRogueSeasonFinishScNotify.NIOLDFFFELN)
     pub NIOLDFFFELN: bool,
     // special fields
@@ -57,25 +57,25 @@ impl SyncRogueSeasonFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFinishInfo::RogueFinishInfo>(
-            "rogue_finish_info",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.rogue_finish_info },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.rogue_finish_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
-            "rogue_score_reward_info",
-            |m: &SyncRogueSeasonFinishScNotify| { &m.rogue_score_reward_info },
-            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.rogue_score_reward_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &SyncRogueSeasonFinishScNotify| { &m.lineup },
             |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.lineup },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFinishInfo::RogueFinishInfo>(
+            "rogue_finish_info",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.rogue_finish_info },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.rogue_finish_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
             |m: &SyncRogueSeasonFinishScNotify| { &m.scene },
             |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.scene },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
+            "rogue_score_reward_info",
+            |m: &SyncRogueSeasonFinishScNotify| { &m.rogue_score_reward_info },
+            |m: &mut SyncRogueSeasonFinishScNotify| { &mut m.rogue_score_reward_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NIOLDFFFELN",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_finish_info)?;
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
-                },
-                18 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                74 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_finish_info)?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                48 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
+                },
+                16 => {
                     self.NIOLDFFFELN = is.read_bool()?;
                 },
                 tag => {
@@ -127,19 +127,19 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_finish_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue_score_reward_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.rogue_finish_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.scene.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,20 +152,20 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.rogue_score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.rogue_finish_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.NIOLDFFFELN != false {
-            os.write_bool(6, self.NIOLDFFFELN)?;
+            os.write_bool(2, self.NIOLDFFFELN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,20 +184,20 @@ impl ::protobuf::Message for SyncRogueSeasonFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.rogue_finish_info.clear();
-        self.rogue_score_reward_info.clear();
         self.lineup.clear();
+        self.rogue_finish_info.clear();
         self.scene.clear();
+        self.rogue_score_reward_info.clear();
         self.NIOLDFFFELN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueSeasonFinishScNotify {
         static instance: SyncRogueSeasonFinishScNotify = SyncRogueSeasonFinishScNotify {
-            rogue_finish_info: ::protobuf::MessageField::none(),
-            rogue_score_reward_info: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
+            rogue_finish_info: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
+            rogue_score_reward_info: ::protobuf::MessageField::none(),
             NIOLDFFFELN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -225,13 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueSeasonFinishScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SyncRogueSeasonFinishScNotify.proto\x1a\x10LineupInfo.proto\x1a\x15Ro\
     gueFinishInfo.proto\x1a\x1aRogueScoreRewardInfo.proto\x1a\x0fSceneInfo.p\
-    roto\"\x94\x02\n\x1dSyncRogueSeasonFinishScNotify\x12<\n\x11rogue_finish\
-    _info\x18\r\x20\x01(\x0b2\x10.RogueFinishInfoR\x0frogueFinishInfo\x12L\n\
-    \x17rogue_score_reward_info\x18\x01\x20\x01(\x0b2\x15.RogueScoreRewardIn\
-    foR\x14rogueScoreRewardInfo\x12#\n\x06lineup\x18\x02\x20\x01(\x0b2\x0b.L\
-    ineupInfoR\x06lineup\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.SceneInfoR\
-    \x05scene\x12\x20\n\x0bNIOLDFFFELN\x18\x06\x20\x01(\x08R\x0bNIOLDFFFELNb\
-    \x06proto3\
+    roto\"\x94\x02\n\x1dSyncRogueSeasonFinishScNotify\x12#\n\x06lineup\x18\
+    \x0e\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12<\n\x11rogue_finish_info\
+    \x18\x07\x20\x01(\x0b2\x10.RogueFinishInfoR\x0frogueFinishInfo\x12\x20\n\
+    \x05scene\x18\x0f\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12L\n\x17rogue_sc\
+    ore_reward_info\x18\x05\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x14rogue\
+    ScoreRewardInfo\x12\x20\n\x0bNIOLDFFFELN\x18\x02\x20\x01(\x08R\x0bNIOLDF\
+    FFELNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOFLGICOPCJ {
     // message fields
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.IMMANIPGMIF)
-    pub IMMANIPGMIF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOFLGICOPCJ.JKEDDOGNLIF)
     pub JKEDDOGNLIF: u32,
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.PBHEDBCPDMI)
-    pub PBHEDBCPDMI: bool,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.IMMANIPGMIF)
+    pub IMMANIPGMIF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOFLGICOPCJ.LPMCGNJLBGD)
     pub LPMCGNJLBGD: ::protobuf::MessageField<super::EEKFECDIHJE::EEKFECDIHJE>,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.PBHEDBCPDMI)
+    pub PBHEDBCPDMI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LOFLGICOPCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl LOFLGICOPCJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IMMANIPGMIF",
-            |m: &LOFLGICOPCJ| { &m.IMMANIPGMIF },
-            |m: &mut LOFLGICOPCJ| { &mut m.IMMANIPGMIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JKEDDOGNLIF",
             |m: &LOFLGICOPCJ| { &m.JKEDDOGNLIF },
             |m: &mut LOFLGICOPCJ| { &mut m.JKEDDOGNLIF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBHEDBCPDMI",
-            |m: &LOFLGICOPCJ| { &m.PBHEDBCPDMI },
-            |m: &mut LOFLGICOPCJ| { &mut m.PBHEDBCPDMI },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IMMANIPGMIF",
+            |m: &LOFLGICOPCJ| { &m.IMMANIPGMIF },
+            |m: &mut LOFLGICOPCJ| { &mut m.IMMANIPGMIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEKFECDIHJE::EEKFECDIHJE>(
             "LPMCGNJLBGD",
             |m: &LOFLGICOPCJ| { &m.LPMCGNJLBGD },
             |m: &mut LOFLGICOPCJ| { &mut m.LPMCGNJLBGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBHEDBCPDMI",
+            |m: &LOFLGICOPCJ| { &m.PBHEDBCPDMI },
+            |m: &mut LOFLGICOPCJ| { &mut m.PBHEDBCPDMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOFLGICOPCJ>(
             "LOFLGICOPCJ",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IMMANIPGMIF)?;
-                },
-                24 => {
-                    self.IMMANIPGMIF.push(is.read_uint32()?);
-                },
-                32 => {
+                8 => {
                     self.JKEDDOGNLIF = is.read_uint32()?;
                 },
-                88 => {
-                    self.PBHEDBCPDMI = is.read_bool()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IMMANIPGMIF)?;
                 },
-                114 => {
+                80 => {
+                    self.IMMANIPGMIF.push(is.read_uint32()?);
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPMCGNJLBGD)?;
+                },
+                32 => {
+                    self.PBHEDBCPDMI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.IMMANIPGMIF);
         if self.JKEDDOGNLIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JKEDDOGNLIF);
+            my_size += ::protobuf::rt::uint32_size(1, self.JKEDDOGNLIF);
         }
-        if self.PBHEDBCPDMI != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IMMANIPGMIF);
         if let Some(v) = self.LPMCGNJLBGD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.PBHEDBCPDMI != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.IMMANIPGMIF)?;
         if self.JKEDDOGNLIF != 0 {
-            os.write_uint32(4, self.JKEDDOGNLIF)?;
+            os.write_uint32(1, self.JKEDDOGNLIF)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.IMMANIPGMIF)?;
+        if let Some(v) = self.LPMCGNJLBGD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.PBHEDBCPDMI != false {
-            os.write_bool(11, self.PBHEDBCPDMI)?;
-        }
-        if let Some(v) = self.LPMCGNJLBGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            os.write_bool(4, self.PBHEDBCPDMI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     }
 
     fn clear(&mut self) {
-        self.IMMANIPGMIF.clear();
         self.JKEDDOGNLIF = 0;
-        self.PBHEDBCPDMI = false;
+        self.IMMANIPGMIF.clear();
         self.LPMCGNJLBGD.clear();
+        self.PBHEDBCPDMI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOFLGICOPCJ {
         static instance: LOFLGICOPCJ = LOFLGICOPCJ {
-            IMMANIPGMIF: ::std::vec::Vec::new(),
             JKEDDOGNLIF: 0,
-            PBHEDBCPDMI: false,
+            IMMANIPGMIF: ::std::vec::Vec::new(),
             LPMCGNJLBGD: ::protobuf::MessageField::none(),
+            PBHEDBCPDMI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LOFLGICOPCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LOFLGICOPCJ.proto\x1a\x11EEKFECDIHJE.proto\"\xa3\x01\n\x0bLOFLGICO\
-    PCJ\x12\x20\n\x0bIMMANIPGMIF\x18\x03\x20\x03(\rR\x0bIMMANIPGMIF\x12\x20\
-    \n\x0bJKEDDOGNLIF\x18\x04\x20\x01(\rR\x0bJKEDDOGNLIF\x12\x20\n\x0bPBHEDB\
-    CPDMI\x18\x0b\x20\x01(\x08R\x0bPBHEDBCPDMI\x12.\n\x0bLPMCGNJLBGD\x18\x0e\
-    \x20\x01(\x0b2\x0c.EEKFECDIHJER\x0bLPMCGNJLBGDb\x06proto3\
+    PCJ\x12\x20\n\x0bJKEDDOGNLIF\x18\x01\x20\x01(\rR\x0bJKEDDOGNLIF\x12\x20\
+    \n\x0bIMMANIPGMIF\x18\n\x20\x03(\rR\x0bIMMANIPGMIF\x12.\n\x0bLPMCGNJLBGD\
+    \x18\t\x20\x01(\x0b2\x0c.EEKFECDIHJER\x0bLPMCGNJLBGD\x12\x20\n\x0bPBHEDB\
+    CPDMI\x18\x04\x20\x01(\x08R\x0bPBHEDBCPDMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

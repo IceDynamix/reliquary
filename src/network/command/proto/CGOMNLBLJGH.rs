@@ -30,10 +30,10 @@ pub struct CGOMNLBLJGH {
     // message fields
     // @@protoc_insertion_point(field:CGOMNLBLJGH.OOHNKOJHDHO)
     pub OOHNKOJHDHO: u32,
-    // @@protoc_insertion_point(field:CGOMNLBLJGH.rogue_current_info)
-    pub rogue_current_info: ::protobuf::MessageField<super::HLDHEMLPJNG::HLDHEMLPJNG>,
     // @@protoc_insertion_point(field:CGOMNLBLJGH.AFGKFIFJFCL)
     pub AFGKFIFJFCL: u32,
+    // @@protoc_insertion_point(field:CGOMNLBLJGH.rogue_current_info)
+    pub rogue_current_info: ::protobuf::MessageField<super::HLDHEMLPJNG::HLDHEMLPJNG>,
     // special fields
     // @@protoc_insertion_point(special_field:CGOMNLBLJGH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl CGOMNLBLJGH {
             |m: &CGOMNLBLJGH| { &m.OOHNKOJHDHO },
             |m: &mut CGOMNLBLJGH| { &mut m.OOHNKOJHDHO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLDHEMLPJNG::HLDHEMLPJNG>(
-            "rogue_current_info",
-            |m: &CGOMNLBLJGH| { &m.rogue_current_info },
-            |m: &mut CGOMNLBLJGH| { &mut m.rogue_current_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFGKFIFJFCL",
             |m: &CGOMNLBLJGH| { &m.AFGKFIFJFCL },
             |m: &mut CGOMNLBLJGH| { &mut m.AFGKFIFJFCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLDHEMLPJNG::HLDHEMLPJNG>(
+            "rogue_current_info",
+            |m: &CGOMNLBLJGH| { &m.rogue_current_info },
+            |m: &mut CGOMNLBLJGH| { &mut m.rogue_current_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CGOMNLBLJGH>(
             "CGOMNLBLJGH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CGOMNLBLJGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                120 => {
                     self.OOHNKOJHDHO = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_current_info)?;
-                },
-                88 => {
+                72 => {
                     self.AFGKFIFJFCL = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_current_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for CGOMNLBLJGH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OOHNKOJHDHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OOHNKOJHDHO);
+            my_size += ::protobuf::rt::uint32_size(15, self.OOHNKOJHDHO);
+        }
+        if self.AFGKFIFJFCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.AFGKFIFJFCL);
         }
         if let Some(v) = self.rogue_current_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.AFGKFIFJFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AFGKFIFJFCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for CGOMNLBLJGH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OOHNKOJHDHO != 0 {
-            os.write_uint32(8, self.OOHNKOJHDHO)?;
-        }
-        if let Some(v) = self.rogue_current_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            os.write_uint32(15, self.OOHNKOJHDHO)?;
         }
         if self.AFGKFIFJFCL != 0 {
-            os.write_uint32(11, self.AFGKFIFJFCL)?;
+            os.write_uint32(9, self.AFGKFIFJFCL)?;
+        }
+        if let Some(v) = self.rogue_current_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for CGOMNLBLJGH {
 
     fn clear(&mut self) {
         self.OOHNKOJHDHO = 0;
-        self.rogue_current_info.clear();
         self.AFGKFIFJFCL = 0;
+        self.rogue_current_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CGOMNLBLJGH {
         static instance: CGOMNLBLJGH = CGOMNLBLJGH {
             OOHNKOJHDHO: 0,
-            rogue_current_info: ::protobuf::MessageField::none(),
             AFGKFIFJFCL: 0,
+            rogue_current_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for CGOMNLBLJGH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGOMNLBLJGH.proto\x1a\x11HLDHEMLPJNG.proto\"\x8d\x01\n\x0bCGOMNLBL\
-    JGH\x12\x20\n\x0bOOHNKOJHDHO\x18\x08\x20\x01(\rR\x0bOOHNKOJHDHO\x12:\n\
-    \x12rogue_current_info\x18\x03\x20\x01(\x0b2\x0c.HLDHEMLPJNGR\x10rogueCu\
-    rrentInfo\x12\x20\n\x0bAFGKFIFJFCL\x18\x0b\x20\x01(\rR\x0bAFGKFIFJFCLb\
-    \x06proto3\
+    JGH\x12\x20\n\x0bOOHNKOJHDHO\x18\x0f\x20\x01(\rR\x0bOOHNKOJHDHO\x12\x20\
+    \n\x0bAFGKFIFJFCL\x18\t\x20\x01(\rR\x0bAFGKFIFJFCL\x12:\n\x12rogue_curre\
+    nt_info\x18\x08\x20\x01(\x0b2\x0c.HLDHEMLPJNGR\x10rogueCurrentInfob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

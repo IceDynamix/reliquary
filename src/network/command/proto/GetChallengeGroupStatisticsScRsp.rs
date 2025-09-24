@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeGroupStatisticsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.group_id)
+    pub group_id: u32,
     // message oneof groups
     pub JDICGGKKOOI: ::std::option::Option<get_challenge_group_statistics_sc_rsp::JDICGGKKOOI>,
     // special fields
@@ -50,7 +50,7 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 9;
+    // .ChallengeStatistics challenge_default = 2;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
         match self.JDICGGKKOOI {
@@ -99,7 +99,7 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 5;
+    // .ChallengeStoryStatistics challenge_story = 14;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.JDICGGKKOOI {
@@ -201,14 +201,14 @@ impl GetChallengeGroupStatisticsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
-            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
+            |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
             "challenge_default",
@@ -250,16 +250,16 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                16 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                8 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                18 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(is.read_message()?));
                 },
-                42 => {
+                114 => {
                     self.JDICGGKKOOI = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(is.read_message()?));
                 },
                 26 => {
@@ -277,11 +277,11 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
@@ -305,19 +305,19 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(7, self.group_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(1, self.group_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JDICGGKKOOI {
             match v {
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &get_challenge_group_statistics_sc_rsp::JDICGGKKOOI::ChallengeBoss(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
@@ -341,8 +341,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.retcode = 0;
+        self.group_id = 0;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
         self.JDICGGKKOOI = ::std::option::Option::None;
@@ -351,8 +351,8 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
 
     fn default_instance() -> &'static GetChallengeGroupStatisticsScRsp {
         static instance: GetChallengeGroupStatisticsScRsp = GetChallengeGroupStatisticsScRsp {
-            group_id: 0,
             retcode: 0,
+            group_id: 0,
             JDICGGKKOOI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -412,13 +412,13 @@ pub mod get_challenge_group_statistics_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x1dChallengeBossStatistics\
     .proto\x1a\x19ChallengeStatistics.proto\x1a\x1eChallengeStoryStatistics.\
-    proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x19\n\x08group\
-    _id\x18\x07\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x02\x20\x01(\
-    \rR\x07retcode\x12C\n\x11challenge_default\x18\t\x20\x01(\x0b2\x14.Chall\
-    engeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x05\
-    \x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\x12A\n\
-    \x0echallenge_boss\x18\x03\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\
-    \rchallengeBossB\r\n\x0bJDICGGKKOOIb\x06proto3\
+    proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x18\n\x07retco\
+    de\x18\x0f\x20\x01(\rR\x07retcode\x12\x19\n\x08group_id\x18\x01\x20\x01(\
+    \rR\x07groupId\x12C\n\x11challenge_default\x18\x02\x20\x01(\x0b2\x14.Cha\
+    llengeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\
+    \x0e\x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\
+    \x12A\n\x0echallenge_boss\x18\x03\x20\x01(\x0b2\x18.ChallengeBossStatist\
+    icsH\0R\rchallengeBossB\r\n\x0bJDICGGKKOOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

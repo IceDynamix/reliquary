@@ -79,7 +79,7 @@ impl ::protobuf::Message for CACLANLOOLK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
                 },
                 48 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CACLANLOOLK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FBJHGPDKBGM != false {
-            os.write_bool(14, self.FBJHGPDKBGM)?;
+            os.write_bool(15, self.FBJHGPDKBGM)?;
         }
         if self.EFKEGDOAJBH != 0 {
             os.write_uint32(6, self.EFKEGDOAJBH)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CACLANLOOLK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CACLANLOOLK.proto\"Q\n\x0bCACLANLOOLK\x12\x20\n\x0bFBJHGPDKBGM\x18\
-    \x0e\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bEFKEGDOAJBH\x18\x06\x20\
+    \x0f\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bEFKEGDOAJBH\x18\x06\x20\
     \x01(\rR\x0bEFKEGDOAJBHb\x06proto3\
 ";
 

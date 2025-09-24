@@ -30,8 +30,8 @@ pub struct MonsterProperty {
     // message fields
     // @@protoc_insertion_point(field:MonsterProperty.max_hp)
     pub max_hp: f64,
-    // @@protoc_insertion_point(field:MonsterProperty.TURN_FOOD_SWITCH_ATTACK)
-    pub TURN_FOOD_SWITCH_ATTACK: f64,
+    // @@protoc_insertion_point(field:MonsterProperty.attack)
+    pub attack: f64,
     // @@protoc_insertion_point(field:MonsterProperty.defence)
     pub defence: f64,
     // @@protoc_insertion_point(field:MonsterProperty.shield)
@@ -67,9 +67,9 @@ impl MonsterProperty {
             |m: &mut MonsterProperty| { &mut m.max_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "TURN_FOOD_SWITCH_ATTACK",
-            |m: &MonsterProperty| { &m.TURN_FOOD_SWITCH_ATTACK },
-            |m: &mut MonsterProperty| { &mut m.TURN_FOOD_SWITCH_ATTACK },
+            "attack",
+            |m: &MonsterProperty| { &m.attack },
+            |m: &mut MonsterProperty| { &mut m.attack },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "defence",
@@ -118,7 +118,7 @@ impl ::protobuf::Message for MonsterProperty {
                     self.max_hp = is.read_double()?;
                 },
                 17 => {
-                    self.TURN_FOOD_SWITCH_ATTACK = is.read_double()?;
+                    self.attack = is.read_double()?;
                 },
                 25 => {
                     self.defence = is.read_double()?;
@@ -150,7 +150,7 @@ impl ::protobuf::Message for MonsterProperty {
         if self.max_hp != 0. {
             my_size += 1 + 8;
         }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0. {
+        if self.attack != 0. {
             my_size += 1 + 8;
         }
         if self.defence != 0. {
@@ -177,8 +177,8 @@ impl ::protobuf::Message for MonsterProperty {
         if self.max_hp != 0. {
             os.write_double(1, self.max_hp)?;
         }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0. {
-            os.write_double(2, self.TURN_FOOD_SWITCH_ATTACK)?;
+        if self.attack != 0. {
+            os.write_double(2, self.attack)?;
         }
         if self.defence != 0. {
             os.write_double(3, self.defence)?;
@@ -213,7 +213,7 @@ impl ::protobuf::Message for MonsterProperty {
 
     fn clear(&mut self) {
         self.max_hp = 0.;
-        self.TURN_FOOD_SWITCH_ATTACK = 0.;
+        self.attack = 0.;
         self.defence = 0.;
         self.shield = 0.;
         self.speed = 0.;
@@ -225,7 +225,7 @@ impl ::protobuf::Message for MonsterProperty {
     fn default_instance() -> &'static MonsterProperty {
         static instance: MonsterProperty = MonsterProperty {
             max_hp: 0.,
-            TURN_FOOD_SWITCH_ATTACK: 0.,
+            attack: 0.,
             defence: 0.,
             shield: 0.,
             speed: 0.,
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for MonsterProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15MonsterProperty.proto\"\xe8\x01\n\x0fMonsterProperty\x12\x15\n\x06\
-    max_hp\x18\x01\x20\x01(\x01R\x05maxHp\x125\n\x17TURN_FOOD_SWITCH_ATTACK\
-    \x18\x02\x20\x01(\x01R\x14TURNFOODSWITCHATTACK\x12\x18\n\x07defence\x18\
-    \x03\x20\x01(\x01R\x07defence\x12\x16\n\x06shield\x18\x04\x20\x01(\x01R\
-    \x06shield\x12\x14\n\x05speed\x18\x05\x20\x01(\x01R\x05speed\x12\x17\n\
-    \x07left_hp\x18\x06\x20\x01(\x01R\x06leftHp\x12&\n\x0fenter_battle_hp\
-    \x18\x07\x20\x01(\x01R\renterBattleHpb\x06proto3\
+    \n\x15MonsterProperty.proto\"\xc9\x01\n\x0fMonsterProperty\x12\x15\n\x06\
+    max_hp\x18\x01\x20\x01(\x01R\x05maxHp\x12\x16\n\x06attack\x18\x02\x20\
+    \x01(\x01R\x06attack\x12\x18\n\x07defence\x18\x03\x20\x01(\x01R\x07defen\
+    ce\x12\x16\n\x06shield\x18\x04\x20\x01(\x01R\x06shield\x12\x14\n\x05spee\
+    d\x18\x05\x20\x01(\x01R\x05speed\x12\x17\n\x07left_hp\x18\x06\x20\x01(\
+    \x01R\x06leftHp\x12&\n\x0fenter_battle_hp\x18\x07\x20\x01(\x01R\renterBa\
+    ttleHpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

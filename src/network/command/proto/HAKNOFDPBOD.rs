@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HAKNOFDPBOD {
     // message fields
-    // @@protoc_insertion_point(field:HAKNOFDPBOD.FPOGIALMCIP)
-    pub FPOGIALMCIP: u32,
-    // @@protoc_insertion_point(field:HAKNOFDPBOD.ACDOPCBMPNL)
-    pub ACDOPCBMPNL: u32,
     // @@protoc_insertion_point(field:HAKNOFDPBOD.config_id)
     pub config_id: u32,
+    // @@protoc_insertion_point(field:HAKNOFDPBOD.ACDOPCBMPNL)
+    pub ACDOPCBMPNL: u32,
+    // @@protoc_insertion_point(field:HAKNOFDPBOD.FPOGIALMCIP)
+    pub FPOGIALMCIP: u32,
     // message oneof groups
     pub NGIKDJMNGBG: ::std::option::Option<haknofdpbod::NGIKDJMNGBG>,
     // special fields
@@ -52,7 +52,7 @@ impl HAKNOFDPBOD {
         ::std::default::Default::default()
     }
 
-    // .GJKIAPIPGAN EJCOLGNJGDC = 1;
+    // .GJKIAPIPGAN EJCOLGNJGDC = 2;
 
     pub fn EJCOLGNJGDC(&self) -> &super::GJKIAPIPGAN::GJKIAPIPGAN {
         match self.NGIKDJMNGBG {
@@ -101,7 +101,7 @@ impl HAKNOFDPBOD {
         }
     }
 
-    // .EIMOBGLLEFO LKANIPLNKGC = 10;
+    // .EIMOBGLLEFO LKANIPLNKGC = 5;
 
     pub fn LKANIPLNKGC(&self) -> &super::EIMOBGLLEFO::EIMOBGLLEFO {
         match self.NGIKDJMNGBG {
@@ -203,9 +203,9 @@ impl HAKNOFDPBOD {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPOGIALMCIP",
-            |m: &HAKNOFDPBOD| { &m.FPOGIALMCIP },
-            |m: &mut HAKNOFDPBOD| { &mut m.FPOGIALMCIP },
+            "config_id",
+            |m: &HAKNOFDPBOD| { &m.config_id },
+            |m: &mut HAKNOFDPBOD| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACDOPCBMPNL",
@@ -213,9 +213,9 @@ impl HAKNOFDPBOD {
             |m: &mut HAKNOFDPBOD| { &mut m.ACDOPCBMPNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &HAKNOFDPBOD| { &m.config_id },
-            |m: &mut HAKNOFDPBOD| { &mut m.config_id },
+            "FPOGIALMCIP",
+            |m: &HAKNOFDPBOD| { &m.FPOGIALMCIP },
+            |m: &mut HAKNOFDPBOD| { &mut m.FPOGIALMCIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJKIAPIPGAN::GJKIAPIPGAN>(
             "EJCOLGNJGDC",
@@ -257,19 +257,19 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.ACDOPCBMPNL = is.read_uint32()?;
+                },
                 32 => {
                     self.FPOGIALMCIP = is.read_uint32()?;
                 },
-                104 => {
-                    self.ACDOPCBMPNL = is.read_uint32()?;
-                },
-                112 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                10 => {
+                18 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(is.read_message()?));
                 },
-                82 => {
+                42 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(is.read_message()?));
                 },
                 66 => {
@@ -287,14 +287,14 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FPOGIALMCIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FPOGIALMCIP);
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.config_id);
         }
         if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ACDOPCBMPNL);
+            my_size += ::protobuf::rt::uint32_size(3, self.ACDOPCBMPNL);
         }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.config_id);
+        if self.FPOGIALMCIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FPOGIALMCIP);
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
@@ -318,22 +318,22 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FPOGIALMCIP != 0 {
-            os.write_uint32(4, self.FPOGIALMCIP)?;
+        if self.config_id != 0 {
+            os.write_uint32(6, self.config_id)?;
         }
         if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(13, self.ACDOPCBMPNL)?;
+            os.write_uint32(3, self.ACDOPCBMPNL)?;
         }
-        if self.config_id != 0 {
-            os.write_uint32(14, self.config_id)?;
+        if self.FPOGIALMCIP != 0 {
+            os.write_uint32(4, self.FPOGIALMCIP)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
                 &haknofdpbod::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &haknofdpbod::NGIKDJMNGBG::LKANIPLNKGC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &haknofdpbod::NGIKDJMNGBG::BDEMPAKHGMJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
@@ -357,9 +357,9 @@ impl ::protobuf::Message for HAKNOFDPBOD {
     }
 
     fn clear(&mut self) {
-        self.FPOGIALMCIP = 0;
-        self.ACDOPCBMPNL = 0;
         self.config_id = 0;
+        self.ACDOPCBMPNL = 0;
+        self.FPOGIALMCIP = 0;
         self.NGIKDJMNGBG = ::std::option::Option::None;
         self.NGIKDJMNGBG = ::std::option::Option::None;
         self.NGIKDJMNGBG = ::std::option::Option::None;
@@ -368,9 +368,9 @@ impl ::protobuf::Message for HAKNOFDPBOD {
 
     fn default_instance() -> &'static HAKNOFDPBOD {
         static instance: HAKNOFDPBOD = HAKNOFDPBOD {
-            FPOGIALMCIP: 0,
-            ACDOPCBMPNL: 0,
             config_id: 0,
+            ACDOPCBMPNL: 0,
+            FPOGIALMCIP: 0,
             NGIKDJMNGBG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -429,13 +429,13 @@ pub mod haknofdpbod {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HAKNOFDPBOD.proto\x1a\x11EIMOBGLLEFO.proto\x1a\x11EOPFMPAOOJE.prot\
-    o\x1a\x11GJKIAPIPGAN.proto\"\x93\x02\n\x0bHAKNOFDPBOD\x12\x20\n\x0bFPOGI\
-    ALMCIP\x18\x04\x20\x01(\rR\x0bFPOGIALMCIP\x12\x20\n\x0bACDOPCBMPNL\x18\r\
-    \x20\x01(\rR\x0bACDOPCBMPNL\x12\x1b\n\tconfig_id\x18\x0e\x20\x01(\rR\x08\
-    configId\x120\n\x0bEJCOLGNJGDC\x18\x01\x20\x01(\x0b2\x0c.GJKIAPIPGANH\0R\
-    \x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\n\x20\x01(\x0b2\x0c.EIMOBGLLEF\
-    OH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\x08\x20\x01(\x0b2\x0c.EOP\
-    FMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bNGIKDJMNGBGb\x06proto3\
+    o\x1a\x11GJKIAPIPGAN.proto\"\x93\x02\n\x0bHAKNOFDPBOD\x12\x1b\n\tconfig_\
+    id\x18\x06\x20\x01(\rR\x08configId\x12\x20\n\x0bACDOPCBMPNL\x18\x03\x20\
+    \x01(\rR\x0bACDOPCBMPNL\x12\x20\n\x0bFPOGIALMCIP\x18\x04\x20\x01(\rR\x0b\
+    FPOGIALMCIP\x120\n\x0bEJCOLGNJGDC\x18\x02\x20\x01(\x0b2\x0c.GJKIAPIPGANH\
+    \0R\x0bEJCOLGNJGDC\x120\n\x0bLKANIPLNKGC\x18\x05\x20\x01(\x0b2\x0c.EIMOB\
+    GLLEFOH\0R\x0bLKANIPLNKGC\x120\n\x0bBDEMPAKHGMJ\x18\x08\x20\x01(\x0b2\
+    \x0c.EOPFMPAOOJEH\0R\x0bBDEMPAKHGMJB\r\n\x0bNGIKDJMNGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

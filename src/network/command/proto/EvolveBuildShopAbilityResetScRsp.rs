@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityResetScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.MDCJFOAFDJK)
+    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.COKDNPEEMAG)
     pub COKDNPEEMAG: ::std::vec::Vec<super::IMGJIEBFGPF::IMGJIEBFGPF>,
     // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetScRsp.MDCJFOAFDJK)
-    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityResetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,16 @@ impl EvolveBuildShopAbilityResetScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDCJFOAFDJK",
+            |m: &EvolveBuildShopAbilityResetScRsp| { &m.MDCJFOAFDJK },
+            |m: &mut EvolveBuildShopAbilityResetScRsp| { &mut m.MDCJFOAFDJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EvolveBuildShopAbilityResetScRsp| { &m.retcode },
+            |m: &mut EvolveBuildShopAbilityResetScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "COKDNPEEMAG",
             |m: &EvolveBuildShopAbilityResetScRsp| { &m.COKDNPEEMAG },
@@ -64,16 +74,6 @@ impl EvolveBuildShopAbilityResetScRsp {
             "item_value",
             |m: &EvolveBuildShopAbilityResetScRsp| { &m.item_value },
             |m: &mut EvolveBuildShopAbilityResetScRsp| { &mut m.item_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EvolveBuildShopAbilityResetScRsp| { &m.retcode },
-            |m: &mut EvolveBuildShopAbilityResetScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDCJFOAFDJK",
-            |m: &EvolveBuildShopAbilityResetScRsp| { &m.MDCJFOAFDJK },
-            |m: &mut EvolveBuildShopAbilityResetScRsp| { &mut m.MDCJFOAFDJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityResetScRsp>(
             "EvolveBuildShopAbilityResetScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.COKDNPEEMAG.push(is.read_message()?);
+                48 => {
+                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
                 },
-                64 => {
-                    self.item_value = is.read_uint32()?;
-                },
-                80 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
+                66 => {
+                    self.COKDNPEEMAG.push(is.read_message()?);
+                },
+                40 => {
+                    self.item_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.MDCJFOAFDJK.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         for value in &self.COKDNPEEMAG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_value);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.MDCJFOAFDJK.value());
+            my_size += ::protobuf::rt::uint32_size(5, self.item_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.COKDNPEEMAG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.item_value != 0 {
-            os.write_uint32(8, self.item_value)?;
+        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+        for v in &self.COKDNPEEMAG {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.item_value != 0 {
+            os.write_uint32(5, self.item_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetScRsp {
     }
 
     fn clear(&mut self) {
+        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
+        self.retcode = 0;
         self.COKDNPEEMAG.clear();
         self.item_value = 0;
-        self.retcode = 0;
-        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityResetScRsp {
         static instance: EvolveBuildShopAbilityResetScRsp = EvolveBuildShopAbilityResetScRsp {
+            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
             COKDNPEEMAG: ::std::vec::Vec::new(),
             item_value: 0,
-            retcode: 0,
-            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityResetScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&EvolveBuildShopAbilityResetScRsp.proto\x1a\x11IMGJIEBFGPF.proto\x1a\
     \x11KLNIPNJCNMJ.proto\"\xbb\x01\n\x20EvolveBuildShopAbilityResetScRsp\
-    \x12.\n\x0bCOKDNPEEMAG\x18\x04\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0bCOKDNPE\
-    EMAG\x12\x1d\n\nitem_value\x18\x08\x20\x01(\rR\titemValue\x12\x18\n\x07r\
-    etcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bMDCJFOAFDJK\x18\x0b\x20\
-    \x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFDJKb\x06proto3\
+    \x12.\n\x0bMDCJFOAFDJK\x18\x06\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOA\
+    FDJK\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bCOKDN\
+    PEEMAG\x18\x08\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0bCOKDNPEEMAG\x12\x1d\n\n\
+    item_value\x18\x05\x20\x01(\rR\titemValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

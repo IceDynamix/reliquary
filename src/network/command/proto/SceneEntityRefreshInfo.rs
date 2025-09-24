@@ -45,7 +45,7 @@ impl SceneEntityRefreshInfo {
         ::std::default::Default::default()
     }
 
-    // .SceneEntityInfo add_entity = 1;
+    // .SceneEntityInfo add_entity = 9;
 
     pub fn add_entity(&self) -> &super::SceneEntityInfo::SceneEntityInfo {
         match self.BOBJACMDBMN {
@@ -94,7 +94,7 @@ impl SceneEntityRefreshInfo {
         }
     }
 
-    // uint32 delete_entity = 15;
+    // uint32 delete_entity = 7;
 
     pub fn delete_entity(&self) -> u32 {
         match self.BOBJACMDBMN {
@@ -119,7 +119,7 @@ impl SceneEntityRefreshInfo {
         self.BOBJACMDBMN = ::std::option::Option::Some(scene_entity_refresh_info::BOBJACMDBMN::DeleteEntity(v))
     }
 
-    // uint32 MHHOAAHDGAO = 12;
+    // uint32 MHHOAAHDGAO = 1;
 
     pub fn MHHOAAHDGAO(&self) -> u32 {
         match self.BOBJACMDBMN {
@@ -185,13 +185,13 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     self.BOBJACMDBMN = ::std::option::Option::Some(scene_entity_refresh_info::BOBJACMDBMN::AddEntity(is.read_message()?));
                 },
-                120 => {
+                56 => {
                     self.BOBJACMDBMN = ::std::option::Option::Some(scene_entity_refresh_info::BOBJACMDBMN::DeleteEntity(is.read_uint32()?));
                 },
-                96 => {
+                8 => {
                     self.BOBJACMDBMN = ::std::option::Option::Some(scene_entity_refresh_info::BOBJACMDBMN::MHHOAAHDGAO(is.read_uint32()?));
                 },
                 tag => {
@@ -213,10 +213,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &scene_entity_refresh_info::BOBJACMDBMN::DeleteEntity(v) => {
-                    my_size += ::protobuf::rt::uint32_size(15, v);
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
                 &scene_entity_refresh_info::BOBJACMDBMN::MHHOAAHDGAO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(1, v);
                 },
             };
         }
@@ -229,13 +229,13 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
         if let ::std::option::Option::Some(ref v) = self.BOBJACMDBMN {
             match v {
                 &scene_entity_refresh_info::BOBJACMDBMN::AddEntity(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &scene_entity_refresh_info::BOBJACMDBMN::DeleteEntity(v) => {
-                    os.write_uint32(15, v)?;
+                    os.write_uint32(7, v)?;
                 },
                 &scene_entity_refresh_info::BOBJACMDBMN::MHHOAAHDGAO(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(1, v)?;
                 },
             };
         }
@@ -322,9 +322,9 @@ pub mod scene_entity_refresh_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"\xa5\
-    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x01\x20\x01(\x0b\
-    2\x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x0f\x20\
-    \x01(\rH\0R\x0cdeleteEntity\x12\"\n\x0bMHHOAAHDGAO\x18\x0c\x20\x01(\rH\0\
+    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\t\x20\x01(\x0b2\
+    \x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x07\x20\
+    \x01(\rH\0R\x0cdeleteEntity\x12\"\n\x0bMHHOAAHDGAO\x18\x01\x20\x01(\rH\0\
     R\x0bMHHOAAHDGAOB\r\n\x0bBOBJACMDBMNb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.item_value = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(9, self.item_value);
         }
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.MDCJFOAFDJK.value());
+            my_size += ::protobuf::rt::int32_size(10, self.MDCJFOAFDJK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(3, self.item_value)?;
+            os.write_uint32(9, self.item_value)?;
         }
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildCoinNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEvolveBuildCoinNotify.proto\x1a\x11KLNIPNJCNMJ.proto\"f\n\x15Evolv\
-    eBuildCoinNotify\x12\x1d\n\nitem_value\x18\x03\x20\x01(\rR\titemValue\
-    \x12.\n\x0bMDCJFOAFDJK\x18\r\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFD\
-    JKb\x06proto3\
+    eBuildCoinNotify\x12\x1d\n\nitem_value\x18\t\x20\x01(\rR\titemValue\x12.\
+    \n\x0bMDCJFOAFDJK\x18\n\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFDJKb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

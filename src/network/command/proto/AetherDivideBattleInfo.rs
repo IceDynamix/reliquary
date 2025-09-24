@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideBattleInfo {
     // message fields
+    // @@protoc_insertion_point(field:AetherDivideBattleInfo.NBCKFDGMFDB)
+    pub NBCKFDGMFDB: bool,
     // @@protoc_insertion_point(field:AetherDivideBattleInfo.buff_list)
     pub buff_list: ::std::vec::Vec<super::BattleBuff::BattleBuff>,
-    // @@protoc_insertion_point(field:AetherDivideBattleInfo.monster_wave_list)
-    pub monster_wave_list: ::std::vec::Vec<super::SceneMonsterWave::SceneMonsterWave>,
     // @@protoc_insertion_point(field:AetherDivideBattleInfo.battle_avatar_list)
     pub battle_avatar_list: ::std::vec::Vec<super::AetherAvatarInfo::AetherAvatarInfo>,
+    // @@protoc_insertion_point(field:AetherDivideBattleInfo.monster_wave_list)
+    pub monster_wave_list: ::std::vec::Vec<super::SceneMonsterWave::SceneMonsterWave>,
+    // @@protoc_insertion_point(field:AetherDivideBattleInfo.battle_id)
+    pub battle_id: u32,
     // @@protoc_insertion_point(field:AetherDivideBattleInfo.stage_id)
     pub stage_id: u32,
     // @@protoc_insertion_point(field:AetherDivideBattleInfo.logic_random_seed)
     pub logic_random_seed: u32,
-    // @@protoc_insertion_point(field:AetherDivideBattleInfo.battle_id)
-    pub battle_id: u32,
-    // @@protoc_insertion_point(field:AetherDivideBattleInfo.NBCKFDGMFDB)
-    pub NBCKFDGMFDB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,30 @@ impl AetherDivideBattleInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NBCKFDGMFDB",
+            |m: &AetherDivideBattleInfo| { &m.NBCKFDGMFDB },
+            |m: &mut AetherDivideBattleInfo| { &mut m.NBCKFDGMFDB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &AetherDivideBattleInfo| { &m.buff_list },
             |m: &mut AetherDivideBattleInfo| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_avatar_list",
+            |m: &AetherDivideBattleInfo| { &m.battle_avatar_list },
+            |m: &mut AetherDivideBattleInfo| { &mut m.battle_avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_wave_list",
             |m: &AetherDivideBattleInfo| { &m.monster_wave_list },
             |m: &mut AetherDivideBattleInfo| { &mut m.monster_wave_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_avatar_list",
-            |m: &AetherDivideBattleInfo| { &m.battle_avatar_list },
-            |m: &mut AetherDivideBattleInfo| { &mut m.battle_avatar_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "battle_id",
+            |m: &AetherDivideBattleInfo| { &m.battle_id },
+            |m: &mut AetherDivideBattleInfo| { &mut m.battle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
@@ -85,16 +95,6 @@ impl AetherDivideBattleInfo {
             "logic_random_seed",
             |m: &AetherDivideBattleInfo| { &m.logic_random_seed },
             |m: &mut AetherDivideBattleInfo| { &mut m.logic_random_seed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_id",
-            |m: &AetherDivideBattleInfo| { &m.battle_id },
-            |m: &mut AetherDivideBattleInfo| { &mut m.battle_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBCKFDGMFDB",
-            |m: &AetherDivideBattleInfo| { &m.NBCKFDGMFDB },
-            |m: &mut AetherDivideBattleInfo| { &mut m.NBCKFDGMFDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideBattleInfo>(
             "AetherDivideBattleInfo",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for AetherDivideBattleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                24 => {
+                    self.NBCKFDGMFDB = is.read_bool()?;
+                },
+                10 => {
                     self.buff_list.push(is.read_message()?);
                 },
-                106 => {
-                    self.monster_wave_list.push(is.read_message()?);
+                122 => {
+                    self.battle_avatar_list.push(is.read_message()?);
                 },
                 74 => {
-                    self.battle_avatar_list.push(is.read_message()?);
+                    self.monster_wave_list.push(is.read_message()?);
+                },
+                56 => {
+                    self.battle_id = is.read_uint32()?;
                 },
                 32 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 48 => {
                     self.logic_random_seed = is.read_uint32()?;
-                },
-                24 => {
-                    self.battle_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.NBCKFDGMFDB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,11 +147,10 @@ impl ::protobuf::Message for AetherDivideBattleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NBCKFDGMFDB != false {
+            my_size += 1 + 1;
+        }
         for value in &self.buff_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.monster_wave_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -159,17 +158,18 @@ impl ::protobuf::Message for AetherDivideBattleInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.monster_wave_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.battle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.battle_id);
+        }
         if self.stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.stage_id);
         }
         if self.logic_random_seed != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.logic_random_seed);
-        }
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
-        }
-        if self.NBCKFDGMFDB != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -177,26 +177,26 @@ impl ::protobuf::Message for AetherDivideBattleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NBCKFDGMFDB != false {
+            os.write_bool(3, self.NBCKFDGMFDB)?;
+        }
         for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        for v in &self.battle_avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.monster_wave_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        for v in &self.battle_avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        if self.battle_id != 0 {
+            os.write_uint32(7, self.battle_id)?;
+        }
         if self.stage_id != 0 {
             os.write_uint32(4, self.stage_id)?;
         }
         if self.logic_random_seed != 0 {
             os.write_uint32(6, self.logic_random_seed)?;
-        }
-        if self.battle_id != 0 {
-            os.write_uint32(3, self.battle_id)?;
-        }
-        if self.NBCKFDGMFDB != false {
-            os.write_bool(12, self.NBCKFDGMFDB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,25 +215,25 @@ impl ::protobuf::Message for AetherDivideBattleInfo {
     }
 
     fn clear(&mut self) {
+        self.NBCKFDGMFDB = false;
         self.buff_list.clear();
-        self.monster_wave_list.clear();
         self.battle_avatar_list.clear();
+        self.monster_wave_list.clear();
+        self.battle_id = 0;
         self.stage_id = 0;
         self.logic_random_seed = 0;
-        self.battle_id = 0;
-        self.NBCKFDGMFDB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideBattleInfo {
         static instance: AetherDivideBattleInfo = AetherDivideBattleInfo {
+            NBCKFDGMFDB: false,
             buff_list: ::std::vec::Vec::new(),
-            monster_wave_list: ::std::vec::Vec::new(),
             battle_avatar_list: ::std::vec::Vec::new(),
+            monster_wave_list: ::std::vec::Vec::new(),
+            battle_id: 0,
             stage_id: 0,
             logic_random_seed: 0,
-            battle_id: 0,
-            NBCKFDGMFDB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -260,14 +260,14 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideBattleInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cAetherDivideBattleInfo.proto\x1a\x16AetherAvatarInfo.proto\x1a\x10\
     BattleBuff.proto\x1a\x16SceneMonsterWave.proto\"\xc8\x02\n\x16AetherDivi\
-    deBattleInfo\x12(\n\tbuff_list\x18\x0f\x20\x03(\x0b2\x0b.BattleBuffR\x08\
-    buffList\x12=\n\x11monster_wave_list\x18\r\x20\x03(\x0b2\x11.SceneMonste\
-    rWaveR\x0fmonsterWaveList\x12?\n\x12battle_avatar_list\x18\t\x20\x03(\
-    \x0b2\x11.AetherAvatarInfoR\x10battleAvatarList\x12\x19\n\x08stage_id\
-    \x18\x04\x20\x01(\rR\x07stageId\x12*\n\x11logic_random_seed\x18\x06\x20\
-    \x01(\rR\x0flogicRandomSeed\x12\x1b\n\tbattle_id\x18\x03\x20\x01(\rR\x08\
-    battleId\x12\x20\n\x0bNBCKFDGMFDB\x18\x0c\x20\x01(\x08R\x0bNBCKFDGMFDBb\
-    \x06proto3\
+    deBattleInfo\x12\x20\n\x0bNBCKFDGMFDB\x18\x03\x20\x01(\x08R\x0bNBCKFDGMF\
+    DB\x12(\n\tbuff_list\x18\x01\x20\x03(\x0b2\x0b.BattleBuffR\x08buffList\
+    \x12?\n\x12battle_avatar_list\x18\x0f\x20\x03(\x0b2\x11.AetherAvatarInfo\
+    R\x10battleAvatarList\x12=\n\x11monster_wave_list\x18\t\x20\x03(\x0b2\
+    \x11.SceneMonsterWaveR\x0fmonsterWaveList\x12\x1b\n\tbattle_id\x18\x07\
+    \x20\x01(\rR\x08battleId\x12\x19\n\x08stage_id\x18\x04\x20\x01(\rR\x07st\
+    ageId\x12*\n\x11logic_random_seed\x18\x06\x20\x01(\rR\x0flogicRandomSeed\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

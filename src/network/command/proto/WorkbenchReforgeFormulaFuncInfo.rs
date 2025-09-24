@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorkbenchReforgeFormulaFuncInfo {
     // message fields
-    // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.uint_reforge_num_value)
-    pub uint_reforge_num_value: u32,
-    // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.free_reforge_num)
-    pub free_reforge_num: u32,
     // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.int_reforge_num_value)
     pub int_reforge_num_value: i32,
     // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.can_free_reforge)
     pub can_free_reforge: bool,
+    // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.uint_reforge_num_value)
+    pub uint_reforge_num_value: u32,
+    // @@protoc_insertion_point(field:WorkbenchReforgeFormulaFuncInfo.free_reforge_num)
+    pub free_reforge_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WorkbenchReforgeFormulaFuncInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl WorkbenchReforgeFormulaFuncInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uint_reforge_num_value",
-            |m: &WorkbenchReforgeFormulaFuncInfo| { &m.uint_reforge_num_value },
-            |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.uint_reforge_num_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "free_reforge_num",
-            |m: &WorkbenchReforgeFormulaFuncInfo| { &m.free_reforge_num },
-            |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.free_reforge_num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "int_reforge_num_value",
             |m: &WorkbenchReforgeFormulaFuncInfo| { &m.int_reforge_num_value },
             |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.int_reforge_num_value },
@@ -81,6 +71,16 @@ impl WorkbenchReforgeFormulaFuncInfo {
             "can_free_reforge",
             |m: &WorkbenchReforgeFormulaFuncInfo| { &m.can_free_reforge },
             |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.can_free_reforge },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uint_reforge_num_value",
+            |m: &WorkbenchReforgeFormulaFuncInfo| { &m.uint_reforge_num_value },
+            |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.uint_reforge_num_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "free_reforge_num",
+            |m: &WorkbenchReforgeFormulaFuncInfo| { &m.free_reforge_num },
+            |m: &mut WorkbenchReforgeFormulaFuncInfo| { &mut m.free_reforge_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorkbenchReforgeFormulaFuncInfo>(
             "WorkbenchReforgeFormulaFuncInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for WorkbenchReforgeFormulaFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.uint_reforge_num_value = is.read_uint32()?;
-                },
-                88 => {
-                    self.free_reforge_num = is.read_uint32()?;
-                },
-                64 => {
+                8 => {
                     self.int_reforge_num_value = is.read_int32()?;
                 },
-                50 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                112 => {
+                48 => {
                     self.can_free_reforge = is.read_bool()?;
+                },
+                32 => {
+                    self.uint_reforge_num_value = is.read_uint32()?;
+                },
+                104 => {
+                    self.free_reforge_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,14 +127,8 @@ impl ::protobuf::Message for WorkbenchReforgeFormulaFuncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uint_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uint_reforge_num_value);
-        }
-        if self.free_reforge_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.free_reforge_num);
-        }
         if self.int_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.int_reforge_num_value);
+            my_size += ::protobuf::rt::int32_size(1, self.int_reforge_num_value);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -143,26 +137,32 @@ impl ::protobuf::Message for WorkbenchReforgeFormulaFuncInfo {
         if self.can_free_reforge != false {
             my_size += 1 + 1;
         }
+        if self.uint_reforge_num_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.uint_reforge_num_value);
+        }
+        if self.free_reforge_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.free_reforge_num);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uint_reforge_num_value != 0 {
-            os.write_uint32(7, self.uint_reforge_num_value)?;
-        }
-        if self.free_reforge_num != 0 {
-            os.write_uint32(11, self.free_reforge_num)?;
-        }
         if self.int_reforge_num_value != 0 {
-            os.write_int32(8, self.int_reforge_num_value)?;
+            os.write_int32(1, self.int_reforge_num_value)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.can_free_reforge != false {
-            os.write_bool(14, self.can_free_reforge)?;
+            os.write_bool(6, self.can_free_reforge)?;
+        }
+        if self.uint_reforge_num_value != 0 {
+            os.write_uint32(4, self.uint_reforge_num_value)?;
+        }
+        if self.free_reforge_num != 0 {
+            os.write_uint32(13, self.free_reforge_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for WorkbenchReforgeFormulaFuncInfo {
     }
 
     fn clear(&mut self) {
-        self.uint_reforge_num_value = 0;
-        self.free_reforge_num = 0;
         self.int_reforge_num_value = 0;
         self.cost_data.clear();
         self.can_free_reforge = false;
+        self.uint_reforge_num_value = 0;
+        self.free_reforge_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WorkbenchReforgeFormulaFuncInfo {
         static instance: WorkbenchReforgeFormulaFuncInfo = WorkbenchReforgeFormulaFuncInfo {
-            uint_reforge_num_value: 0,
-            free_reforge_num: 0,
             int_reforge_num_value: 0,
             cost_data: ::protobuf::MessageField::none(),
             can_free_reforge: false,
+            uint_reforge_num_value: 0,
+            free_reforge_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchReforgeFormulaFuncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%WorkbenchReforgeFormulaFuncInfo.proto\x1a\x12ItemCostData.proto\"\x89\
-    \x02\n\x1fWorkbenchReforgeFormulaFuncInfo\x123\n\x16uint_reforge_num_val\
-    ue\x18\x07\x20\x01(\rR\x13uintReforgeNumValue\x12(\n\x10free_reforge_num\
-    \x18\x0b\x20\x01(\rR\x0efreeReforgeNum\x121\n\x15int_reforge_num_value\
-    \x18\x08\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tcost_data\x18\x06\
+    \x02\n\x1fWorkbenchReforgeFormulaFuncInfo\x121\n\x15int_reforge_num_valu\
+    e\x18\x01\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tcost_data\x18\x0c\
     \x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12(\n\x10can_free_reforge\
-    \x18\x0e\x20\x01(\x08R\x0ecanFreeReforgeb\x06proto3\
+    \x18\x06\x20\x01(\x08R\x0ecanFreeReforge\x123\n\x16uint_reforge_num_valu\
+    e\x18\x04\x20\x01(\rR\x13uintReforgeNumValue\x12(\n\x10free_reforge_num\
+    \x18\r\x20\x01(\rR\x0efreeReforgeNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

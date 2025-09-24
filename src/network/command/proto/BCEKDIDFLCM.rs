@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCEKDIDFLCM {
     // message fields
+    // @@protoc_insertion_point(field:BCEKDIDFLCM.ECKKBLNELBM)
+    pub ECKKBLNELBM: ::std::vec::Vec<super::EGCDDLKHFEB::EGCDDLKHFEB>,
     // @@protoc_insertion_point(field:BCEKDIDFLCM.GDIMMFMFPJA)
     pub GDIMMFMFPJA: ::std::vec::Vec<super::JJAEPDIHCNL::JJAEPDIHCNL>,
     // @@protoc_insertion_point(field:BCEKDIDFLCM.use_item_id)
     pub use_item_id: u32,
-    // @@protoc_insertion_point(field:BCEKDIDFLCM.ECKKBLNELBM)
-    pub ECKKBLNELBM: ::std::vec::Vec<super::EGCDDLKHFEB::EGCDDLKHFEB>,
+    // @@protoc_insertion_point(field:BCEKDIDFLCM.HNPKGHLOIID)
+    pub HNPKGHLOIID: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BCEKDIDFLCM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,8 +53,13 @@ impl BCEKDIDFLCM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ECKKBLNELBM",
+            |m: &BCEKDIDFLCM| { &m.ECKKBLNELBM },
+            |m: &mut BCEKDIDFLCM| { &mut m.ECKKBLNELBM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GDIMMFMFPJA",
             |m: &BCEKDIDFLCM| { &m.GDIMMFMFPJA },
@@ -63,10 +70,10 @@ impl BCEKDIDFLCM {
             |m: &BCEKDIDFLCM| { &m.use_item_id },
             |m: &mut BCEKDIDFLCM| { &mut m.use_item_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ECKKBLNELBM",
-            |m: &BCEKDIDFLCM| { &m.ECKKBLNELBM },
-            |m: &mut BCEKDIDFLCM| { &mut m.ECKKBLNELBM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNPKGHLOIID",
+            |m: &BCEKDIDFLCM| { &m.HNPKGHLOIID },
+            |m: &mut BCEKDIDFLCM| { &mut m.HNPKGHLOIID },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCEKDIDFLCM>(
             "BCEKDIDFLCM",
@@ -86,14 +93,17 @@ impl ::protobuf::Message for BCEKDIDFLCM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                50 => {
+                    self.ECKKBLNELBM.push(is.read_message()?);
+                },
+                42 => {
                     self.GDIMMFMFPJA.push(is.read_message()?);
                 },
-                24 => {
+                112 => {
                     self.use_item_id = is.read_uint32()?;
                 },
-                106 => {
-                    self.ECKKBLNELBM.push(is.read_message()?);
+                120 => {
+                    self.HNPKGHLOIID = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +117,38 @@ impl ::protobuf::Message for BCEKDIDFLCM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.ECKKBLNELBM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.GDIMMFMFPJA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.use_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.use_item_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.use_item_id);
         }
-        for value in &self.ECKKBLNELBM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.HNPKGHLOIID != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HNPKGHLOIID);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.ECKKBLNELBM {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         for v in &self.GDIMMFMFPJA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.use_item_id != 0 {
-            os.write_uint32(3, self.use_item_id)?;
+            os.write_uint32(14, self.use_item_id)?;
         }
-        for v in &self.ECKKBLNELBM {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
+        if self.HNPKGHLOIID != 0 {
+            os.write_uint32(15, self.HNPKGHLOIID)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +166,19 @@ impl ::protobuf::Message for BCEKDIDFLCM {
     }
 
     fn clear(&mut self) {
+        self.ECKKBLNELBM.clear();
         self.GDIMMFMFPJA.clear();
         self.use_item_id = 0;
-        self.ECKKBLNELBM.clear();
+        self.HNPKGHLOIID = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCEKDIDFLCM {
         static instance: BCEKDIDFLCM = BCEKDIDFLCM {
+            ECKKBLNELBM: ::std::vec::Vec::new(),
             GDIMMFMFPJA: ::std::vec::Vec::new(),
             use_item_id: 0,
-            ECKKBLNELBM: ::std::vec::Vec::new(),
+            HNPKGHLOIID: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for BCEKDIDFLCM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BCEKDIDFLCM.proto\x1a\x11EGCDDLKHFEB.proto\x1a\x11JJAEPDIHCNL.prot\
-    o\"\x8d\x01\n\x0bBCEKDIDFLCM\x12.\n\x0bGDIMMFMFPJA\x18\x01\x20\x03(\x0b2\
-    \x0c.JJAEPDIHCNLR\x0bGDIMMFMFPJA\x12\x1e\n\x0buse_item_id\x18\x03\x20\
-    \x01(\rR\tuseItemId\x12.\n\x0bECKKBLNELBM\x18\r\x20\x03(\x0b2\x0c.EGCDDL\
-    KHFEBR\x0bECKKBLNELBMb\x06proto3\
+    o\"\xaf\x01\n\x0bBCEKDIDFLCM\x12.\n\x0bECKKBLNELBM\x18\x06\x20\x03(\x0b2\
+    \x0c.EGCDDLKHFEBR\x0bECKKBLNELBM\x12.\n\x0bGDIMMFMFPJA\x18\x05\x20\x03(\
+    \x0b2\x0c.JJAEPDIHCNLR\x0bGDIMMFMFPJA\x12\x1e\n\x0buse_item_id\x18\x0e\
+    \x20\x01(\rR\tuseItemId\x12\x20\n\x0bHNPKGHLOIID\x18\x0f\x20\x01(\rR\x0b\
+    HNPKGHLOIIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

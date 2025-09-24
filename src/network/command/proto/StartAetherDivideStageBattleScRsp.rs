@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartAetherDivideStageBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                8 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for StartAetherDivideStageBattleScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for StartAetherDivideStageBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideStageBattleScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'StartAetherDivideStageBattleScRsp.proto\x1a\x1cAetherDivideBattleInfo\
     .proto\"w\n!StartAetherDivideStageBattleScRsp\x128\n\x0bbattle_info\x18\
-    \x0c\x20\x01(\x0b2\x17.AetherDivideBattleInfoR\nbattleInfo\x12\x18\n\x07\
-    retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x01\x20\x01(\x0b2\x17.AetherDivideBattleInfoR\nbattleInfo\x12\x18\n\x07\
+    retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

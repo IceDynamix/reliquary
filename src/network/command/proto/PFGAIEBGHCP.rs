@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFGAIEBGHCP {
     // message fields
-    // @@protoc_insertion_point(field:PFGAIEBGHCP.x)
-    pub x: f32,
     // @@protoc_insertion_point(field:PFGAIEBGHCP.y)
     pub y: f32,
+    // @@protoc_insertion_point(field:PFGAIEBGHCP.x)
+    pub x: f32,
     // special fields
     // @@protoc_insertion_point(special_field:PFGAIEBGHCP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PFGAIEBGHCP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "x",
-            |m: &PFGAIEBGHCP| { &m.x },
-            |m: &mut PFGAIEBGHCP| { &mut m.x },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "y",
             |m: &PFGAIEBGHCP| { &m.y },
             |m: &mut PFGAIEBGHCP| { &mut m.y },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "x",
+            |m: &PFGAIEBGHCP| { &m.x },
+            |m: &mut PFGAIEBGHCP| { &mut m.x },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PFGAIEBGHCP>(
             "PFGAIEBGHCP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                125 => {
-                    self.x = is.read_float()?;
-                },
-                77 => {
+                69 => {
                     self.y = is.read_float()?;
+                },
+                13 => {
+                    self.x = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.x != 0. {
+        if self.y != 0. {
             my_size += 1 + 4;
         }
-        if self.y != 0. {
+        if self.x != 0. {
             my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.x != 0. {
-            os.write_float(15, self.x)?;
-        }
         if self.y != 0. {
-            os.write_float(9, self.y)?;
+            os.write_float(8, self.y)?;
+        }
+        if self.x != 0. {
+            os.write_float(1, self.x)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PFGAIEBGHCP {
     }
 
     fn clear(&mut self) {
-        self.x = 0.;
         self.y = 0.;
+        self.x = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PFGAIEBGHCP {
         static instance: PFGAIEBGHCP = PFGAIEBGHCP {
-            x: 0.,
             y: 0.,
+            x: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for PFGAIEBGHCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PFGAIEBGHCP.proto\")\n\x0bPFGAIEBGHCP\x12\x0c\n\x01x\x18\x0f\x20\
-    \x01(\x02R\x01x\x12\x0c\n\x01y\x18\t\x20\x01(\x02R\x01yb\x06proto3\
+    \n\x11PFGAIEBGHCP.proto\")\n\x0bPFGAIEBGHCP\x12\x0c\n\x01y\x18\x08\x20\
+    \x01(\x02R\x01y\x12\x0c\n\x01x\x18\x01\x20\x01(\x02R\x01xb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

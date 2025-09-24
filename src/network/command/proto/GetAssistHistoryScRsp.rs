@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAssistHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.today_use_uid_list)
-    pub today_use_uid_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.OMHCHJLLIIF)
     pub OMHCHJLLIIF: u32,
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.NFJJAPNPPKP)
-    pub NFJJAPNPPKP: u32,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.PBFNEIGOPMP)
     pub PBFNEIGOPMP: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.today_use_uid_list)
+    pub today_use_uid_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.NFJJAPNPPKP)
+    pub NFJJAPNPPKP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAssistHistoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl GetAssistHistoryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "today_use_uid_list",
-            |m: &GetAssistHistoryScRsp| { &m.today_use_uid_list },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.today_use_uid_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OMHCHJLLIIF",
             |m: &GetAssistHistoryScRsp| { &m.OMHCHJLLIIF },
             |m: &mut GetAssistHistoryScRsp| { &mut m.OMHCHJLLIIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFJJAPNPPKP",
-            |m: &GetAssistHistoryScRsp| { &m.NFJJAPNPPKP },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.NFJJAPNPPKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBFNEIGOPMP",
             |m: &GetAssistHistoryScRsp| { &m.PBFNEIGOPMP },
             |m: &mut GetAssistHistoryScRsp| { &mut m.PBFNEIGOPMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "today_use_uid_list",
+            |m: &GetAssistHistoryScRsp| { &m.today_use_uid_list },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.today_use_uid_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAssistHistoryScRsp| { &m.retcode },
             |m: &mut GetAssistHistoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFJJAPNPPKP",
+            |m: &GetAssistHistoryScRsp| { &m.NFJJAPNPPKP },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.NFJJAPNPPKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAssistHistoryScRsp>(
             "GetAssistHistoryScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.today_use_uid_list)?;
-                },
-                64 => {
-                    self.today_use_uid_list.push(is.read_uint32()?);
-                },
-                40 => {
+                96 => {
                     self.OMHCHJLLIIF = is.read_uint32()?;
                 },
-                96 => {
-                    self.NFJJAPNPPKP = is.read_uint32()?;
-                },
-                8 => {
+                16 => {
                     self.PBFNEIGOPMP = is.read_uint32()?;
                 },
-                48 => {
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.today_use_uid_list)?;
+                },
+                8 => {
+                    self.today_use_uid_list.push(is.read_uint32()?);
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.NFJJAPNPPKP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.today_use_uid_list);
         if self.OMHCHJLLIIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OMHCHJLLIIF);
-        }
-        if self.NFJJAPNPPKP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NFJJAPNPPKP);
+            my_size += ::protobuf::rt::uint32_size(12, self.OMHCHJLLIIF);
         }
         if self.PBFNEIGOPMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PBFNEIGOPMP);
+            my_size += ::protobuf::rt::uint32_size(2, self.PBFNEIGOPMP);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.today_use_uid_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.NFJJAPNPPKP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NFJJAPNPPKP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.today_use_uid_list)?;
         if self.OMHCHJLLIIF != 0 {
-            os.write_uint32(5, self.OMHCHJLLIIF)?;
-        }
-        if self.NFJJAPNPPKP != 0 {
-            os.write_uint32(12, self.NFJJAPNPPKP)?;
+            os.write_uint32(12, self.OMHCHJLLIIF)?;
         }
         if self.PBFNEIGOPMP != 0 {
-            os.write_uint32(1, self.PBFNEIGOPMP)?;
+            os.write_uint32(2, self.PBFNEIGOPMP)?;
         }
+        os.write_repeated_packed_uint32(1, &self.today_use_uid_list)?;
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.NFJJAPNPPKP != 0 {
+            os.write_uint32(9, self.NFJJAPNPPKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.today_use_uid_list.clear();
         self.OMHCHJLLIIF = 0;
-        self.NFJJAPNPPKP = 0;
         self.PBFNEIGOPMP = 0;
+        self.today_use_uid_list.clear();
         self.retcode = 0;
+        self.NFJJAPNPPKP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAssistHistoryScRsp {
         static instance: GetAssistHistoryScRsp = GetAssistHistoryScRsp {
-            today_use_uid_list: ::std::vec::Vec::new(),
             OMHCHJLLIIF: 0,
-            NFJJAPNPPKP: 0,
             PBFNEIGOPMP: 0,
+            today_use_uid_list: ::std::vec::Vec::new(),
             retcode: 0,
+            NFJJAPNPPKP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetAssistHistoryScRsp.proto\"\xc4\x01\n\x15GetAssistHistoryScRsp\
-    \x12+\n\x12today_use_uid_list\x18\x08\x20\x03(\rR\x0ftodayUseUidList\x12\
-    \x20\n\x0bOMHCHJLLIIF\x18\x05\x20\x01(\rR\x0bOMHCHJLLIIF\x12\x20\n\x0bNF\
-    JJAPNPPKP\x18\x0c\x20\x01(\rR\x0bNFJJAPNPPKP\x12\x20\n\x0bPBFNEIGOPMP\
-    \x18\x01\x20\x01(\rR\x0bPBFNEIGOPMP\x12\x18\n\x07retcode\x18\x06\x20\x01\
-    (\rR\x07retcodeb\x06proto3\
+    \x12\x20\n\x0bOMHCHJLLIIF\x18\x0c\x20\x01(\rR\x0bOMHCHJLLIIF\x12\x20\n\
+    \x0bPBFNEIGOPMP\x18\x02\x20\x01(\rR\x0bPBFNEIGOPMP\x12+\n\x12today_use_u\
+    id_list\x18\x01\x20\x03(\rR\x0ftodayUseUidList\x12\x18\n\x07retcode\x18\
+    \x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bNFJJAPNPPKP\x18\t\x20\x01(\rR\
+    \x0bNFJJAPNPPKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

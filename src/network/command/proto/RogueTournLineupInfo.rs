@@ -79,13 +79,13 @@ impl ::protobuf::Message for RogueTournLineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
-                114 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                112 => {
+                72 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for RogueTournLineupInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for RogueTournLineupInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.avatar_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournLineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournLineupInfo.proto\x1a\x12ItemCostData.proto\"w\n\x14Rogue\
-    TournLineupInfo\x129\n\x11rogue_revive_cost\x18\t\x20\x01(\x0b2\r.ItemCo\
-    stDataR\x0frogueReviveCost\x12$\n\x0eavatar_id_list\x18\x0e\x20\x03(\rR\
+    TournLineupInfo\x129\n\x11rogue_revive_cost\x18\x02\x20\x01(\x0b2\r.Item\
+    CostDataR\x0frogueReviveCost\x12$\n\x0eavatar_id_list\x18\t\x20\x03(\rR\
     \x0cavatarIdListb\x06proto3\
 ";
 

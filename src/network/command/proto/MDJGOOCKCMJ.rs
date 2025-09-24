@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDJGOOCKCMJ {
     // message fields
+    // @@protoc_insertion_point(field:MDJGOOCKCMJ.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:MDJGOOCKCMJ.PPBOCECKCAH)
+    pub PPBOCECKCAH: bool,
+    // @@protoc_insertion_point(field:MDJGOOCKCMJ.config_id)
+    pub config_id: u32,
     // @@protoc_insertion_point(field:MDJGOOCKCMJ.LKKJEILKPNI)
     pub LKKJEILKPNI: u32,
     // @@protoc_insertion_point(field:MDJGOOCKCMJ.create_time)
     pub create_time: i64,
-    // @@protoc_insertion_point(field:MDJGOOCKCMJ.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:MDJGOOCKCMJ.config_id)
-    pub config_id: u32,
-    // @@protoc_insertion_point(field:MDJGOOCKCMJ.PPBOCECKCAH)
-    pub PPBOCECKCAH: bool,
     // @@protoc_insertion_point(field:MDJGOOCKCMJ.monster_id)
     pub monster_id: u32,
     // special fields
@@ -60,6 +60,21 @@ impl MDJGOOCKCMJ {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &MDJGOOCKCMJ| { &m.world_level },
+            |m: &mut MDJGOOCKCMJ| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PPBOCECKCAH",
+            |m: &MDJGOOCKCMJ| { &m.PPBOCECKCAH },
+            |m: &mut MDJGOOCKCMJ| { &mut m.PPBOCECKCAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &MDJGOOCKCMJ| { &m.config_id },
+            |m: &mut MDJGOOCKCMJ| { &mut m.config_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LKKJEILKPNI",
             |m: &MDJGOOCKCMJ| { &m.LKKJEILKPNI },
             |m: &mut MDJGOOCKCMJ| { &mut m.LKKJEILKPNI },
@@ -68,21 +83,6 @@ impl MDJGOOCKCMJ {
             "create_time",
             |m: &MDJGOOCKCMJ| { &m.create_time },
             |m: &mut MDJGOOCKCMJ| { &mut m.create_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &MDJGOOCKCMJ| { &m.world_level },
-            |m: &mut MDJGOOCKCMJ| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &MDJGOOCKCMJ| { &m.config_id },
-            |m: &mut MDJGOOCKCMJ| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPBOCECKCAH",
-            |m: &MDJGOOCKCMJ| { &m.PPBOCECKCAH },
-            |m: &mut MDJGOOCKCMJ| { &mut m.PPBOCECKCAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for MDJGOOCKCMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.LKKJEILKPNI = is.read_uint32()?;
-                },
-                72 => {
-                    self.create_time = is.read_int64()?;
-                },
-                80 => {
+                56 => {
                     self.world_level = is.read_uint32()?;
                 },
-                48 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                56 => {
+                64 => {
                     self.PPBOCECKCAH = is.read_bool()?;
                 },
+                16 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.LKKJEILKPNI = is.read_uint32()?;
+                },
                 24 => {
+                    self.create_time = is.read_int64()?;
+                },
+                72 => {
                     self.monster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -137,23 +137,23 @@ impl ::protobuf::Message for MDJGOOCKCMJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LKKJEILKPNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LKKJEILKPNI);
-        }
-        if self.create_time != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.create_time);
-        }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.world_level);
-        }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.world_level);
         }
         if self.PPBOCECKCAH != false {
             my_size += 1 + 1;
         }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
+        }
+        if self.LKKJEILKPNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LKKJEILKPNI);
+        }
+        if self.create_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.create_time);
+        }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.monster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for MDJGOOCKCMJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LKKJEILKPNI != 0 {
-            os.write_uint32(4, self.LKKJEILKPNI)?;
-        }
-        if self.create_time != 0 {
-            os.write_int64(9, self.create_time)?;
-        }
         if self.world_level != 0 {
-            os.write_uint32(10, self.world_level)?;
-        }
-        if self.config_id != 0 {
-            os.write_uint32(6, self.config_id)?;
+            os.write_uint32(7, self.world_level)?;
         }
         if self.PPBOCECKCAH != false {
-            os.write_bool(7, self.PPBOCECKCAH)?;
+            os.write_bool(8, self.PPBOCECKCAH)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(2, self.config_id)?;
+        }
+        if self.LKKJEILKPNI != 0 {
+            os.write_uint32(6, self.LKKJEILKPNI)?;
+        }
+        if self.create_time != 0 {
+            os.write_int64(3, self.create_time)?;
         }
         if self.monster_id != 0 {
-            os.write_uint32(3, self.monster_id)?;
+            os.write_uint32(9, self.monster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,22 +196,22 @@ impl ::protobuf::Message for MDJGOOCKCMJ {
     }
 
     fn clear(&mut self) {
+        self.world_level = 0;
+        self.PPBOCECKCAH = false;
+        self.config_id = 0;
         self.LKKJEILKPNI = 0;
         self.create_time = 0;
-        self.world_level = 0;
-        self.config_id = 0;
-        self.PPBOCECKCAH = false;
         self.monster_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDJGOOCKCMJ {
         static instance: MDJGOOCKCMJ = MDJGOOCKCMJ {
+            world_level: 0,
+            PPBOCECKCAH: false,
+            config_id: 0,
             LKKJEILKPNI: 0,
             create_time: 0,
-            world_level: 0,
-            config_id: 0,
-            PPBOCECKCAH: false,
             monster_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for MDJGOOCKCMJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MDJGOOCKCMJ.proto\"\xcf\x01\n\x0bMDJGOOCKCMJ\x12\x20\n\x0bLKKJEILK\
-    PNI\x18\x04\x20\x01(\rR\x0bLKKJEILKPNI\x12\x1f\n\x0bcreate_time\x18\t\
-    \x20\x01(\x03R\ncreateTime\x12\x1f\n\x0bworld_level\x18\n\x20\x01(\rR\nw\
-    orldLevel\x12\x1b\n\tconfig_id\x18\x06\x20\x01(\rR\x08configId\x12\x20\n\
-    \x0bPPBOCECKCAH\x18\x07\x20\x01(\x08R\x0bPPBOCECKCAH\x12\x1d\n\nmonster_\
-    id\x18\x03\x20\x01(\rR\tmonsterIdb\x06proto3\
+    \n\x11MDJGOOCKCMJ.proto\"\xcf\x01\n\x0bMDJGOOCKCMJ\x12\x1f\n\x0bworld_le\
+    vel\x18\x07\x20\x01(\rR\nworldLevel\x12\x20\n\x0bPPBOCECKCAH\x18\x08\x20\
+    \x01(\x08R\x0bPPBOCECKCAH\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\x08co\
+    nfigId\x12\x20\n\x0bLKKJEILKPNI\x18\x06\x20\x01(\rR\x0bLKKJEILKPNI\x12\
+    \x1f\n\x0bcreate_time\x18\x03\x20\x01(\x03R\ncreateTime\x12\x1d\n\nmonst\
+    er_id\x18\t\x20\x01(\rR\tmonsterIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

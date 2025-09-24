@@ -96,13 +96,13 @@ impl ::protobuf::Message for NNIJCDKHPKL {
                 8 => {
                     self.CDINHFHBMOG = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.FBJHGPDKBGM = is.read_bool()?;
                 },
-                48 => {
+                24 => {
                     self.AIPLFLIBPKJ = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.JEDJBEDKCJI = is.read_uint32()?;
                 },
                 tag => {
@@ -124,10 +124,10 @@ impl ::protobuf::Message for NNIJCDKHPKL {
             my_size += 1 + 1;
         }
         if self.AIPLFLIBPKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AIPLFLIBPKJ);
+            my_size += ::protobuf::rt::uint32_size(3, self.AIPLFLIBPKJ);
         }
         if self.JEDJBEDKCJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JEDJBEDKCJI);
+            my_size += ::protobuf::rt::uint32_size(14, self.JEDJBEDKCJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,13 +139,13 @@ impl ::protobuf::Message for NNIJCDKHPKL {
             os.write_uint32(1, self.CDINHFHBMOG)?;
         }
         if self.FBJHGPDKBGM != false {
-            os.write_bool(13, self.FBJHGPDKBGM)?;
+            os.write_bool(4, self.FBJHGPDKBGM)?;
         }
         if self.AIPLFLIBPKJ != 0 {
-            os.write_uint32(6, self.AIPLFLIBPKJ)?;
+            os.write_uint32(3, self.AIPLFLIBPKJ)?;
         }
         if self.JEDJBEDKCJI != 0 {
-            os.write_uint32(12, self.JEDJBEDKCJI)?;
+            os.write_uint32(14, self.JEDJBEDKCJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for NNIJCDKHPKL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NNIJCDKHPKL.proto\"\x95\x01\n\x0bNNIJCDKHPKL\x12\x20\n\x0bCDINHFHB\
-    MOG\x18\x01\x20\x01(\rR\x0bCDINHFHBMOG\x12\x20\n\x0bFBJHGPDKBGM\x18\r\
-    \x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bAIPLFLIBPKJ\x18\x06\x20\x01(\
-    \rR\x0bAIPLFLIBPKJ\x12\x20\n\x0bJEDJBEDKCJI\x18\x0c\x20\x01(\rR\x0bJEDJB\
+    MOG\x18\x01\x20\x01(\rR\x0bCDINHFHBMOG\x12\x20\n\x0bFBJHGPDKBGM\x18\x04\
+    \x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bAIPLFLIBPKJ\x18\x03\x20\x01(\
+    \rR\x0bAIPLFLIBPKJ\x12\x20\n\x0bJEDJBEDKCJI\x18\x0e\x20\x01(\rR\x0bJEDJB\
     EDKCJIb\x06proto3\
 ";
 

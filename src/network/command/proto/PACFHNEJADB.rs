@@ -79,7 +79,7 @@ impl ::protobuf::Message for PACFHNEJADB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.PBKOLNFGJDL = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PACFHNEJADB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PBKOLNFGJDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PBKOLNFGJDL);
+            my_size += ::protobuf::rt::uint32_size(9, self.PBKOLNFGJDL);
         }
         if self.HNMGPIIILON != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for PACFHNEJADB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PBKOLNFGJDL != 0 {
-            os.write_uint32(2, self.PBKOLNFGJDL)?;
+            os.write_uint32(9, self.PBKOLNFGJDL)?;
         }
         if self.HNMGPIIILON != false {
             os.write_bool(12, self.HNMGPIIILON)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PACFHNEJADB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PACFHNEJADB.proto\"Q\n\x0bPACFHNEJADB\x12\x20\n\x0bPBKOLNFGJDL\x18\
-    \x02\x20\x01(\rR\x0bPBKOLNFGJDL\x12\x20\n\x0bHNMGPIIILON\x18\x0c\x20\x01\
-    (\x08R\x0bHNMGPIIILONb\x06proto3\
+    \t\x20\x01(\rR\x0bPBKOLNFGJDL\x12\x20\n\x0bHNMGPIIILON\x18\x0c\x20\x01(\
+    \x08R\x0bHNMGPIIILONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

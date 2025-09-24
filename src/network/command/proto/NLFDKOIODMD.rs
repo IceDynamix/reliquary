@@ -72,7 +72,7 @@ impl ::protobuf::Message for NLFDKOIODMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     self.IPMAJOJKBDB.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NLFDKOIODMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IPMAJOJKBDB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for NLFDKOIODMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLFDKOIODMD.proto\x1a\x11IDMDLOKHEBJ.proto\"=\n\x0bNLFDKOIODMD\x12\
-    .\n\x0bIPMAJOJKBDB\x18\x05\x20\x03(\x0b2\x0c.IDMDLOKHEBJR\x0bIPMAJOJKBDB\
-    b\x06proto3\
+    .\n\x0bIPMAJOJKBDB\x18\t\x20\x03(\x0b2\x0c.IDMDLOKHEBJR\x0bIPMAJOJKBDBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

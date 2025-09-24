@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IOENCAFKENL {
     // message fields
-    // @@protoc_insertion_point(field:IOENCAFKENL.platform)
-    pub platform: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.KPKDNMDAJGL)
-    pub KPKDNMDAJGL: u64,
     // @@protoc_insertion_point(field:IOENCAFKENL.client_res_version)
     pub client_res_version: u32,
     // @@protoc_insertion_point(field:IOENCAFKENL.AOKCMMPFGBC)
     pub AOKCMMPFGBC: ::std::string::String,
-    // @@protoc_insertion_point(field:IOENCAFKENL.MKINIOFGIAG)
-    pub MKINIOFGIAG: u32,
-    // @@protoc_insertion_point(field:IOENCAFKENL.ICMFPNPIJJF)
-    pub ICMFPNPIJJF: u32,
     // @@protoc_insertion_point(field:IOENCAFKENL.FGOJLPAEJEC)
     pub FGOJLPAEJEC: u32,
     // @@protoc_insertion_point(field:IOENCAFKENL.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.KPKDNMDAJGL)
+    pub KPKDNMDAJGL: u64,
+    // @@protoc_insertion_point(field:IOENCAFKENL.MKINIOFGIAG)
+    pub MKINIOFGIAG: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.platform)
+    pub platform: u32,
+    // @@protoc_insertion_point(field:IOENCAFKENL.ICMFPNPIJJF)
+    pub ICMFPNPIJJF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IOENCAFKENL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,16 +64,6 @@ impl IOENCAFKENL {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &IOENCAFKENL| { &m.platform },
-            |m: &mut IOENCAFKENL| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPKDNMDAJGL",
-            |m: &IOENCAFKENL| { &m.KPKDNMDAJGL },
-            |m: &mut IOENCAFKENL| { &mut m.KPKDNMDAJGL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "client_res_version",
             |m: &IOENCAFKENL| { &m.client_res_version },
             |m: &mut IOENCAFKENL| { &mut m.client_res_version },
@@ -84,16 +74,6 @@ impl IOENCAFKENL {
             |m: &mut IOENCAFKENL| { &mut m.AOKCMMPFGBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKINIOFGIAG",
-            |m: &IOENCAFKENL| { &m.MKINIOFGIAG },
-            |m: &mut IOENCAFKENL| { &mut m.MKINIOFGIAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICMFPNPIJJF",
-            |m: &IOENCAFKENL| { &m.ICMFPNPIJJF },
-            |m: &mut IOENCAFKENL| { &mut m.ICMFPNPIJJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGOJLPAEJEC",
             |m: &IOENCAFKENL| { &m.FGOJLPAEJEC },
             |m: &mut IOENCAFKENL| { &mut m.FGOJLPAEJEC },
@@ -102,6 +82,26 @@ impl IOENCAFKENL {
             "uid",
             |m: &IOENCAFKENL| { &m.uid },
             |m: &mut IOENCAFKENL| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPKDNMDAJGL",
+            |m: &IOENCAFKENL| { &m.KPKDNMDAJGL },
+            |m: &mut IOENCAFKENL| { &mut m.KPKDNMDAJGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MKINIOFGIAG",
+            |m: &IOENCAFKENL| { &m.MKINIOFGIAG },
+            |m: &mut IOENCAFKENL| { &mut m.MKINIOFGIAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &IOENCAFKENL| { &m.platform },
+            |m: &mut IOENCAFKENL| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ICMFPNPIJJF",
+            |m: &IOENCAFKENL| { &m.ICMFPNPIJJF },
+            |m: &mut IOENCAFKENL| { &mut m.ICMFPNPIJJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IOENCAFKENL>(
             "IOENCAFKENL",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for IOENCAFKENL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.platform = is.read_uint32()?;
-                },
-                48 => {
-                    self.KPKDNMDAJGL = is.read_uint64()?;
-                },
-                16 => {
+                104 => {
                     self.client_res_version = is.read_uint32()?;
                 },
-                106 => {
+                122 => {
                     self.AOKCMMPFGBC = is.read_string()?;
                 },
-                8 => {
-                    self.MKINIOFGIAG = is.read_uint32()?;
-                },
                 112 => {
-                    self.ICMFPNPIJJF = is.read_uint32()?;
-                },
-                80 => {
                     self.FGOJLPAEJEC = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.uid = is.read_uint32()?;
+                },
+                40 => {
+                    self.KPKDNMDAJGL = is.read_uint64()?;
+                },
+                64 => {
+                    self.MKINIOFGIAG = is.read_uint32()?;
+                },
+                24 => {
+                    self.platform = is.read_uint32()?;
+                },
+                56 => {
+                    self.ICMFPNPIJJF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for IOENCAFKENL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.platform != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.platform);
-        }
-        if self.KPKDNMDAJGL != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.KPKDNMDAJGL);
-        }
         if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.client_res_version);
+            my_size += ::protobuf::rt::uint32_size(13, self.client_res_version);
         }
         if !self.AOKCMMPFGBC.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.AOKCMMPFGBC);
-        }
-        if self.MKINIOFGIAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MKINIOFGIAG);
-        }
-        if self.ICMFPNPIJJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ICMFPNPIJJF);
+            my_size += ::protobuf::rt::string_size(15, &self.AOKCMMPFGBC);
         }
         if self.FGOJLPAEJEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FGOJLPAEJEC);
+            my_size += ::protobuf::rt::uint32_size(14, self.FGOJLPAEJEC);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+            my_size += ::protobuf::rt::uint32_size(12, self.uid);
+        }
+        if self.KPKDNMDAJGL != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.KPKDNMDAJGL);
+        }
+        if self.MKINIOFGIAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MKINIOFGIAG);
+        }
+        if self.platform != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.platform);
+        }
+        if self.ICMFPNPIJJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ICMFPNPIJJF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for IOENCAFKENL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.platform != 0 {
-            os.write_uint32(12, self.platform)?;
-        }
-        if self.KPKDNMDAJGL != 0 {
-            os.write_uint64(6, self.KPKDNMDAJGL)?;
-        }
         if self.client_res_version != 0 {
-            os.write_uint32(2, self.client_res_version)?;
+            os.write_uint32(13, self.client_res_version)?;
         }
         if !self.AOKCMMPFGBC.is_empty() {
-            os.write_string(13, &self.AOKCMMPFGBC)?;
-        }
-        if self.MKINIOFGIAG != 0 {
-            os.write_uint32(1, self.MKINIOFGIAG)?;
-        }
-        if self.ICMFPNPIJJF != 0 {
-            os.write_uint32(14, self.ICMFPNPIJJF)?;
+            os.write_string(15, &self.AOKCMMPFGBC)?;
         }
         if self.FGOJLPAEJEC != 0 {
-            os.write_uint32(10, self.FGOJLPAEJEC)?;
+            os.write_uint32(14, self.FGOJLPAEJEC)?;
         }
         if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
+            os.write_uint32(12, self.uid)?;
+        }
+        if self.KPKDNMDAJGL != 0 {
+            os.write_uint64(5, self.KPKDNMDAJGL)?;
+        }
+        if self.MKINIOFGIAG != 0 {
+            os.write_uint32(8, self.MKINIOFGIAG)?;
+        }
+        if self.platform != 0 {
+            os.write_uint32(3, self.platform)?;
+        }
+        if self.ICMFPNPIJJF != 0 {
+            os.write_uint32(7, self.ICMFPNPIJJF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for IOENCAFKENL {
     }
 
     fn clear(&mut self) {
-        self.platform = 0;
-        self.KPKDNMDAJGL = 0;
         self.client_res_version = 0;
         self.AOKCMMPFGBC.clear();
-        self.MKINIOFGIAG = 0;
-        self.ICMFPNPIJJF = 0;
         self.FGOJLPAEJEC = 0;
         self.uid = 0;
+        self.KPKDNMDAJGL = 0;
+        self.MKINIOFGIAG = 0;
+        self.platform = 0;
+        self.ICMFPNPIJJF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOENCAFKENL {
         static instance: IOENCAFKENL = IOENCAFKENL {
-            platform: 0,
-            KPKDNMDAJGL: 0,
             client_res_version: 0,
             AOKCMMPFGBC: ::std::string::String::new(),
-            MKINIOFGIAG: 0,
-            ICMFPNPIJJF: 0,
             FGOJLPAEJEC: 0,
             uid: 0,
+            KPKDNMDAJGL: 0,
+            MKINIOFGIAG: 0,
+            platform: 0,
+            ICMFPNPIJJF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for IOENCAFKENL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IOENCAFKENL.proto\"\x93\x02\n\x0bIOENCAFKENL\x12\x1a\n\x08platform\
-    \x18\x0c\x20\x01(\rR\x08platform\x12\x20\n\x0bKPKDNMDAJGL\x18\x06\x20\
-    \x01(\x04R\x0bKPKDNMDAJGL\x12,\n\x12client_res_version\x18\x02\x20\x01(\
-    \rR\x10clientResVersion\x12\x20\n\x0bAOKCMMPFGBC\x18\r\x20\x01(\tR\x0bAO\
-    KCMMPFGBC\x12\x20\n\x0bMKINIOFGIAG\x18\x01\x20\x01(\rR\x0bMKINIOFGIAG\
-    \x12\x20\n\x0bICMFPNPIJJF\x18\x0e\x20\x01(\rR\x0bICMFPNPIJJF\x12\x20\n\
-    \x0bFGOJLPAEJEC\x18\n\x20\x01(\rR\x0bFGOJLPAEJEC\x12\x10\n\x03uid\x18\
-    \x04\x20\x01(\rR\x03uidb\x06proto3\
+    \n\x11IOENCAFKENL.proto\"\x93\x02\n\x0bIOENCAFKENL\x12,\n\x12client_res_\
+    version\x18\r\x20\x01(\rR\x10clientResVersion\x12\x20\n\x0bAOKCMMPFGBC\
+    \x18\x0f\x20\x01(\tR\x0bAOKCMMPFGBC\x12\x20\n\x0bFGOJLPAEJEC\x18\x0e\x20\
+    \x01(\rR\x0bFGOJLPAEJEC\x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\x03uid\x12\
+    \x20\n\x0bKPKDNMDAJGL\x18\x05\x20\x01(\x04R\x0bKPKDNMDAJGL\x12\x20\n\x0b\
+    MKINIOFGIAG\x18\x08\x20\x01(\rR\x0bMKINIOFGIAG\x12\x1a\n\x08platform\x18\
+    \x03\x20\x01(\rR\x08platform\x12\x20\n\x0bICMFPNPIJJF\x18\x07\x20\x01(\r\
+    R\x0bICMFPNPIJJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

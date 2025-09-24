@@ -48,7 +48,7 @@ impl NGFFCEICACD {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 14;
+    // .ItemList JDIJKEGCIBP = 2;
 
     pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
         match self.MICMCKAHMPL {
@@ -187,10 +187,10 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                88 => {
                     self.EBNPOCIDPKE = is.read_uint32()?;
                 },
-                114 => {
+                18 => {
                     self.MICMCKAHMPL = ::std::option::Option::Some(ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
                 },
                 66 => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for NGFFCEICACD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EBNPOCIDPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EBNPOCIDPKE);
+            my_size += ::protobuf::rt::uint32_size(11, self.EBNPOCIDPKE);
         }
         if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
@@ -230,12 +230,12 @@ impl ::protobuf::Message for NGFFCEICACD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBNPOCIDPKE != 0 {
-            os.write_uint32(12, self.EBNPOCIDPKE)?;
+            os.write_uint32(11, self.EBNPOCIDPKE)?;
         }
         if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
             match v {
                 &ngffceicacd::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &ngffceicacd::MICMCKAHMPL::CNDGJJLJDOF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
@@ -324,8 +324,8 @@ pub mod ngffceicacd {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGFFCEICACD.proto\x1a\x0eItemList.proto\x1a\x13RogueBuffList.proto\
-    \"\xa1\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x0c\x20\x01(\rR\
-    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x0e\x20\x01(\x0b2\t.ItemListH\
+    \"\xa1\x01\n\x0bNGFFCEICACD\x12\x20\n\x0bEBNPOCIDPKE\x18\x0b\x20\x01(\rR\
+    \x0bEBNPOCIDPKE\x12-\n\x0bJDIJKEGCIBP\x18\x02\x20\x01(\x0b2\t.ItemListH\
     \0R\x0bJDIJKEGCIBP\x122\n\x0bCNDGJJLJDOF\x18\x08\x20\x01(\x0b2\x0e.Rogue\
     BuffListH\0R\x0bCNDGJJLJDOFB\r\n\x0bMICMCKAHMPLb\x06proto3\
 ";

@@ -86,13 +86,13 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.star = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.GJIEAHDBNNI = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for JMIJJHKIBLB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.challenge_id);
         }
         if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.star);
+            my_size += ::protobuf::rt::uint32_size(8, self.star);
         }
         if self.GJIEAHDBNNI != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for JMIJJHKIBLB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(14, self.challenge_id)?;
+            os.write_uint32(7, self.challenge_id)?;
         }
         if self.star != 0 {
-            os.write_uint32(7, self.star)?;
+            os.write_uint32(8, self.star)?;
         }
         if self.GJIEAHDBNNI != false {
-            os.write_bool(10, self.GJIEAHDBNNI)?;
+            os.write_bool(13, self.GJIEAHDBNNI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for JMIJJHKIBLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JMIJJHKIBLB.proto\"f\n\x0bJMIJJHKIBLB\x12!\n\x0cchallenge_id\x18\
-    \x0e\x20\x01(\rR\x0bchallengeId\x12\x12\n\x04star\x18\x07\x20\x01(\rR\
-    \x04star\x12\x20\n\x0bGJIEAHDBNNI\x18\n\x20\x01(\x08R\x0bGJIEAHDBNNIb\
+    \x07\x20\x01(\rR\x0bchallengeId\x12\x12\n\x04star\x18\x08\x20\x01(\rR\
+    \x04star\x12\x20\n\x0bGJIEAHDBNNI\x18\r\x20\x01(\x08R\x0bGJIEAHDBNNIb\
     \x06proto3\
 ";
 

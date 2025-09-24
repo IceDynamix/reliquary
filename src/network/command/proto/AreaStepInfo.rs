@@ -79,10 +79,10 @@ impl ::protobuf::Message for AreaStepInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                106 => {
                     self.IMEKHGCIEDN.push(is.read_message()?);
                 },
-                40 => {
+                88 => {
                     self.HEIDCIKEDPD = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for AreaStepInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.HEIDCIKEDPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HEIDCIKEDPD);
+            my_size += ::protobuf::rt::uint32_size(11, self.HEIDCIKEDPD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AreaStepInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IMEKHGCIEDN {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.HEIDCIKEDPD != 0 {
-            os.write_uint32(5, self.HEIDCIKEDPD)?;
+            os.write_uint32(11, self.HEIDCIKEDPD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AreaStepInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AreaStepInfo.proto\x1a\x11PPKDPAJPAGF.proto\"`\n\x0cAreaStepInfo\
-    \x12.\n\x0bIMEKHGCIEDN\x18\x01\x20\x03(\x0b2\x0c.PPKDPAJPAGFR\x0bIMEKHGC\
-    IEDN\x12\x20\n\x0bHEIDCIKEDPD\x18\x05\x20\x01(\rR\x0bHEIDCIKEDPDb\x06pro\
-    to3\
+    \x12.\n\x0bIMEKHGCIEDN\x18\r\x20\x03(\x0b2\x0c.PPKDPAJPAGFR\x0bIMEKHGCIE\
+    DN\x12\x20\n\x0bHEIDCIKEDPD\x18\x0b\x20\x01(\rR\x0bHEIDCIKEDPDb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

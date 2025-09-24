@@ -86,13 +86,13 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                98 => {
+                18 => {
                     self.NONCKFAOGJE.push(is.read_message()?);
                 },
-                66 => {
+                58 => {
                     self.EODJILEFGFB.push(is.read_message()?);
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.relic_unique_id);
         }
         for value in &self.NONCKFAOGJE {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(9, self.relic_unique_id)?;
+            os.write_uint32(8, self.relic_unique_id)?;
         }
         for v in &self.NONCKFAOGJE {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.EODJILEFGFB {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearUpdatePinRelicScNotify
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RelicSmartWearUpdatePinRelicScNotify.proto\x1a\x11HAMMFOJBJHF.proto\"\
     \xae\x01\n$RelicSmartWearUpdatePinRelicScNotify\x12&\n\x0frelic_unique_i\
-    d\x18\t\x20\x01(\rR\rrelicUniqueId\x12.\n\x0bNONCKFAOGJE\x18\x0c\x20\x03\
-    (\x0b2\x0c.HAMMFOJBJHFR\x0bNONCKFAOGJE\x12.\n\x0bEODJILEFGFB\x18\x08\x20\
-    \x03(\x0b2\x0c.HAMMFOJBJHFR\x0bEODJILEFGFBb\x06proto3\
+    d\x18\x08\x20\x01(\rR\rrelicUniqueId\x12.\n\x0bNONCKFAOGJE\x18\x02\x20\
+    \x03(\x0b2\x0c.HAMMFOJBJHFR\x0bNONCKFAOGJE\x12.\n\x0bEODJILEFGFB\x18\x07\
+    \x20\x03(\x0b2\x0c.HAMMFOJBJHFR\x0bEODJILEFGFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

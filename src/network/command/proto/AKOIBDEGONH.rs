@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKOIBDEGONH {
     // message fields
-    // @@protoc_insertion_point(field:AKOIBDEGONH.ADINNBPINAK)
-    pub ADINNBPINAK: u32,
     // @@protoc_insertion_point(field:AKOIBDEGONH.HBJKEEBDJML)
     pub HBJKEEBDJML: ::std::string::String,
+    // @@protoc_insertion_point(field:AKOIBDEGONH.ADINNBPINAK)
+    pub ADINNBPINAK: u32,
     // @@protoc_insertion_point(field:AKOIBDEGONH.FANOKEMBMPB)
     pub FANOKEMBMPB: u32,
     // special fields
@@ -54,14 +54,14 @@ impl AKOIBDEGONH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADINNBPINAK",
-            |m: &AKOIBDEGONH| { &m.ADINNBPINAK },
-            |m: &mut AKOIBDEGONH| { &mut m.ADINNBPINAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBJKEEBDJML",
             |m: &AKOIBDEGONH| { &m.HBJKEEBDJML },
             |m: &mut AKOIBDEGONH| { &mut m.HBJKEEBDJML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADINNBPINAK",
+            |m: &AKOIBDEGONH| { &m.ADINNBPINAK },
+            |m: &mut AKOIBDEGONH| { &mut m.ADINNBPINAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FANOKEMBMPB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AKOIBDEGONH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ADINNBPINAK = is.read_uint32()?;
-                },
-                58 => {
+                90 => {
                     self.HBJKEEBDJML = is.read_string()?;
                 },
-                80 => {
+                56 => {
+                    self.ADINNBPINAK = is.read_uint32()?;
+                },
+                104 => {
                     self.FANOKEMBMPB = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AKOIBDEGONH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ADINNBPINAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ADINNBPINAK);
-        }
         if !self.HBJKEEBDJML.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.HBJKEEBDJML);
+            my_size += ::protobuf::rt::string_size(11, &self.HBJKEEBDJML);
+        }
+        if self.ADINNBPINAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ADINNBPINAK);
         }
         if self.FANOKEMBMPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FANOKEMBMPB);
+            my_size += ::protobuf::rt::uint32_size(13, self.FANOKEMBMPB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AKOIBDEGONH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ADINNBPINAK != 0 {
-            os.write_uint32(6, self.ADINNBPINAK)?;
-        }
         if !self.HBJKEEBDJML.is_empty() {
-            os.write_string(7, &self.HBJKEEBDJML)?;
+            os.write_string(11, &self.HBJKEEBDJML)?;
+        }
+        if self.ADINNBPINAK != 0 {
+            os.write_uint32(7, self.ADINNBPINAK)?;
         }
         if self.FANOKEMBMPB != 0 {
-            os.write_uint32(10, self.FANOKEMBMPB)?;
+            os.write_uint32(13, self.FANOKEMBMPB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for AKOIBDEGONH {
     }
 
     fn clear(&mut self) {
-        self.ADINNBPINAK = 0;
         self.HBJKEEBDJML.clear();
+        self.ADINNBPINAK = 0;
         self.FANOKEMBMPB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKOIBDEGONH {
         static instance: AKOIBDEGONH = AKOIBDEGONH {
-            ADINNBPINAK: 0,
             HBJKEEBDJML: ::std::string::String::new(),
+            ADINNBPINAK: 0,
             FANOKEMBMPB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for AKOIBDEGONH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKOIBDEGONH.proto\"s\n\x0bAKOIBDEGONH\x12\x20\n\x0bADINNBPINAK\x18\
-    \x06\x20\x01(\rR\x0bADINNBPINAK\x12\x20\n\x0bHBJKEEBDJML\x18\x07\x20\x01\
-    (\tR\x0bHBJKEEBDJML\x12\x20\n\x0bFANOKEMBMPB\x18\n\x20\x01(\rR\x0bFANOKE\
+    \n\x11AKOIBDEGONH.proto\"s\n\x0bAKOIBDEGONH\x12\x20\n\x0bHBJKEEBDJML\x18\
+    \x0b\x20\x01(\tR\x0bHBJKEEBDJML\x12\x20\n\x0bADINNBPINAK\x18\x07\x20\x01\
+    (\rR\x0bADINNBPINAK\x12\x20\n\x0bFANOKEMBMPB\x18\r\x20\x01(\rR\x0bFANOKE\
     MBMPBb\x06proto3\
 ";
 

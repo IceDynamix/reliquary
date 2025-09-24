@@ -79,10 +79,10 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CINLCMHHKKO)?;
                 },
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HIKLOBGICMP)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for FightMatch3TurnEndScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CINLCMHHKKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.HIKLOBGICMP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3TurnEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FightMatch3TurnEndScNotify.proto\x1a\x11KLDMJEMIMCN.proto\"|\n\x1a\
-    FightMatch3TurnEndScNotify\x12.\n\x0bCINLCMHHKKO\x18\x0b\x20\x01(\x0b2\
-    \x0c.KLDMJEMIMCNR\x0bCINLCMHHKKO\x12.\n\x0bHIKLOBGICMP\x18\t\x20\x01(\
+    FightMatch3TurnEndScNotify\x12.\n\x0bCINLCMHHKKO\x18\x02\x20\x01(\x0b2\
+    \x0c.KLDMJEMIMCNR\x0bCINLCMHHKKO\x12.\n\x0bHIKLOBGICMP\x18\x0f\x20\x01(\
     \x0b2\x0c.KLDMJEMIMCNR\x0bHIKLOBGICMPb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DJIAEMANGCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                122 => {
                     self.transfer_item_list.push(is.read_message()?);
                 },
-                66 => {
+                106 => {
                     self.item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for DJIAEMANGCG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.transfer_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for DJIAEMANGCG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJIAEMANGCG.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11OHDHPCLIJNH.prot\
-    o\"t\n\x0bDJIAEMANGCG\x12:\n\x12transfer_item_list\x18\x07\x20\x03(\x0b2\
-    \x0c.OHDHPCLIJNHR\x10transferItemList\x12)\n\titem_list\x18\x08\x20\x03(\
+    o\"t\n\x0bDJIAEMANGCG\x12:\n\x12transfer_item_list\x18\x0f\x20\x03(\x0b2\
+    \x0c.OHDHPCLIJNHR\x10transferItemList\x12)\n\titem_list\x18\r\x20\x03(\
     \x0b2\x0c.CEODDCEIDDLR\x08itemListb\x06proto3\
 ";
 

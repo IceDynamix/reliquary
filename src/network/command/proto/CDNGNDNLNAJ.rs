@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDNGNDNLNAJ {
     // message fields
+    // @@protoc_insertion_point(field:CDNGNDNLNAJ.GONEAKBDGEK)
+    pub GONEAKBDGEK: u32,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.AAKHCNEDBCD)
     pub AAKHCNEDBCD: ::protobuf::MessageField<super::LHLEEHCBMOL::LHLEEHCBMOL>,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.EEIHDCPOLEF)
     pub EEIHDCPOLEF: ::protobuf::MessageField<super::EDFABKMNBLI::EDFABKMNBLI>,
-    // @@protoc_insertion_point(field:CDNGNDNLNAJ.GONEAKBDGEK)
-    pub GONEAKBDGEK: u32,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.GBFCLMLIMHC)
     pub GBFCLMLIMHC: ::protobuf::MessageField<super::GCFEHMENONM::GCFEHMENONM>,
     // @@protoc_insertion_point(field:CDNGNDNLNAJ.HBHEAJIJEGF)
@@ -57,6 +57,11 @@ impl CDNGNDNLNAJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GONEAKBDGEK",
+            |m: &CDNGNDNLNAJ| { &m.GONEAKBDGEK },
+            |m: &mut CDNGNDNLNAJ| { &mut m.GONEAKBDGEK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LHLEEHCBMOL::LHLEEHCBMOL>(
             "AAKHCNEDBCD",
             |m: &CDNGNDNLNAJ| { &m.AAKHCNEDBCD },
@@ -66,11 +71,6 @@ impl CDNGNDNLNAJ {
             "EEIHDCPOLEF",
             |m: &CDNGNDNLNAJ| { &m.EEIHDCPOLEF },
             |m: &mut CDNGNDNLNAJ| { &mut m.EEIHDCPOLEF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GONEAKBDGEK",
-            |m: &CDNGNDNLNAJ| { &m.GONEAKBDGEK },
-            |m: &mut CDNGNDNLNAJ| { &mut m.GONEAKBDGEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFEHMENONM::GCFEHMENONM>(
             "GBFCLMLIMHC",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAKHCNEDBCD)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEIHDCPOLEF)?;
-                },
-                120 => {
+                40 => {
                     self.GONEAKBDGEK = is.read_uint32()?;
                 },
-                50 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAKHCNEDBCD)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEIHDCPOLEF)?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GBFCLMLIMHC)?;
                 },
-                114 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBHEAJIJEGF)?;
                 },
                 tag => {
@@ -127,6 +127,9 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GONEAKBDGEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GONEAKBDGEK);
+        }
         if let Some(v) = self.AAKHCNEDBCD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -134,9 +137,6 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
         if let Some(v) = self.EEIHDCPOLEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GONEAKBDGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GONEAKBDGEK);
         }
         if let Some(v) = self.GBFCLMLIMHC.as_ref() {
             let len = v.compute_size();
@@ -152,20 +152,20 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GONEAKBDGEK != 0 {
+            os.write_uint32(5, self.GONEAKBDGEK)?;
+        }
         if let Some(v) = self.AAKHCNEDBCD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.EEIHDCPOLEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.GONEAKBDGEK != 0 {
-            os.write_uint32(15, self.GONEAKBDGEK)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.GBFCLMLIMHC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.HBHEAJIJEGF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
     }
 
     fn clear(&mut self) {
+        self.GONEAKBDGEK = 0;
         self.AAKHCNEDBCD.clear();
         self.EEIHDCPOLEF.clear();
-        self.GONEAKBDGEK = 0;
         self.GBFCLMLIMHC.clear();
         self.HBHEAJIJEGF.clear();
         self.special_fields.clear();
@@ -194,9 +194,9 @@ impl ::protobuf::Message for CDNGNDNLNAJ {
 
     fn default_instance() -> &'static CDNGNDNLNAJ {
         static instance: CDNGNDNLNAJ = CDNGNDNLNAJ {
+            GONEAKBDGEK: 0,
             AAKHCNEDBCD: ::protobuf::MessageField::none(),
             EEIHDCPOLEF: ::protobuf::MessageField::none(),
-            GONEAKBDGEK: 0,
             GBFCLMLIMHC: ::protobuf::MessageField::none(),
             HBHEAJIJEGF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -225,12 +225,12 @@ impl ::protobuf::reflect::ProtobufValue for CDNGNDNLNAJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CDNGNDNLNAJ.proto\x1a\x11CGCONJFFFBB.proto\x1a\x11EDFABKMNBLI.prot\
     o\x1a\x11GCFEHMENONM.proto\x1a\x11LHLEEHCBMOL.proto\"\xef\x01\n\x0bCDNGN\
-    DNLNAJ\x12.\n\x0bAAKHCNEDBCD\x18\t\x20\x01(\x0b2\x0c.LHLEEHCBMOLR\x0bAAK\
-    HCNEDBCD\x12.\n\x0bEEIHDCPOLEF\x18\x0b\x20\x01(\x0b2\x0c.EDFABKMNBLIR\
-    \x0bEEIHDCPOLEF\x12\x20\n\x0bGONEAKBDGEK\x18\x0f\x20\x01(\rR\x0bGONEAKBD\
-    GEK\x12.\n\x0bGBFCLMLIMHC\x18\x06\x20\x01(\x0b2\x0c.GCFEHMENONMR\x0bGBFC\
-    LMLIMHC\x12.\n\x0bHBHEAJIJEGF\x18\x0e\x20\x01(\x0b2\x0c.CGCONJFFFBBR\x0b\
-    HBHEAJIJEGFb\x06proto3\
+    DNLNAJ\x12\x20\n\x0bGONEAKBDGEK\x18\x05\x20\x01(\rR\x0bGONEAKBDGEK\x12.\
+    \n\x0bAAKHCNEDBCD\x18\x08\x20\x01(\x0b2\x0c.LHLEEHCBMOLR\x0bAAKHCNEDBCD\
+    \x12.\n\x0bEEIHDCPOLEF\x18\x0f\x20\x01(\x0b2\x0c.EDFABKMNBLIR\x0bEEIHDCP\
+    OLEF\x12.\n\x0bGBFCLMLIMHC\x18\x04\x20\x01(\x0b2\x0c.GCFEHMENONMR\x0bGBF\
+    CLMLIMHC\x12.\n\x0bHBHEAJIJEGF\x18\t\x20\x01(\x0b2\x0c.CGCONJFFFBBR\x0bH\
+    BHEAJIJEGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPLBHACNEGO {
     // message fields
-    // @@protoc_insertion_point(field:PPLBHACNEGO.POIJKBLCJLA)
-    pub POIJKBLCJLA: u32,
-    // @@protoc_insertion_point(field:PPLBHACNEGO.aeon_id)
-    pub aeon_id: u32,
     // @@protoc_insertion_point(field:PPLBHACNEGO.KAPMKJGHIEI)
     pub KAPMKJGHIEI: u32,
+    // @@protoc_insertion_point(field:PPLBHACNEGO.aeon_id)
+    pub aeon_id: u32,
+    // @@protoc_insertion_point(field:PPLBHACNEGO.POIJKBLCJLA)
+    pub POIJKBLCJLA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PPLBHACNEGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl PPLBHACNEGO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POIJKBLCJLA",
-            |m: &PPLBHACNEGO| { &m.POIJKBLCJLA },
-            |m: &mut PPLBHACNEGO| { &mut m.POIJKBLCJLA },
+            "KAPMKJGHIEI",
+            |m: &PPLBHACNEGO| { &m.KAPMKJGHIEI },
+            |m: &mut PPLBHACNEGO| { &mut m.KAPMKJGHIEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "aeon_id",
@@ -64,9 +64,9 @@ impl PPLBHACNEGO {
             |m: &mut PPLBHACNEGO| { &mut m.aeon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KAPMKJGHIEI",
-            |m: &PPLBHACNEGO| { &m.KAPMKJGHIEI },
-            |m: &mut PPLBHACNEGO| { &mut m.KAPMKJGHIEI },
+            "POIJKBLCJLA",
+            |m: &PPLBHACNEGO| { &m.POIJKBLCJLA },
+            |m: &mut PPLBHACNEGO| { &mut m.POIJKBLCJLA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PPLBHACNEGO>(
             "PPLBHACNEGO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PPLBHACNEGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.POIJKBLCJLA = is.read_uint32()?;
+                112 => {
+                    self.KAPMKJGHIEI = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.aeon_id = is.read_uint32()?;
                 },
-                96 => {
-                    self.KAPMKJGHIEI = is.read_uint32()?;
+                56 => {
+                    self.POIJKBLCJLA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PPLBHACNEGO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.POIJKBLCJLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.POIJKBLCJLA);
+        if self.KAPMKJGHIEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KAPMKJGHIEI);
         }
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.aeon_id);
         }
-        if self.KAPMKJGHIEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KAPMKJGHIEI);
+        if self.POIJKBLCJLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.POIJKBLCJLA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PPLBHACNEGO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.POIJKBLCJLA != 0 {
-            os.write_uint32(2, self.POIJKBLCJLA)?;
+        if self.KAPMKJGHIEI != 0 {
+            os.write_uint32(14, self.KAPMKJGHIEI)?;
         }
         if self.aeon_id != 0 {
-            os.write_uint32(5, self.aeon_id)?;
+            os.write_uint32(8, self.aeon_id)?;
         }
-        if self.KAPMKJGHIEI != 0 {
-            os.write_uint32(12, self.KAPMKJGHIEI)?;
+        if self.POIJKBLCJLA != 0 {
+            os.write_uint32(7, self.POIJKBLCJLA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PPLBHACNEGO {
     }
 
     fn clear(&mut self) {
-        self.POIJKBLCJLA = 0;
-        self.aeon_id = 0;
         self.KAPMKJGHIEI = 0;
+        self.aeon_id = 0;
+        self.POIJKBLCJLA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPLBHACNEGO {
         static instance: PPLBHACNEGO = PPLBHACNEGO {
-            POIJKBLCJLA: 0,
-            aeon_id: 0,
             KAPMKJGHIEI: 0,
+            aeon_id: 0,
+            POIJKBLCJLA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PPLBHACNEGO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PPLBHACNEGO.proto\"j\n\x0bPPLBHACNEGO\x12\x20\n\x0bPOIJKBLCJLA\x18\
-    \x02\x20\x01(\rR\x0bPOIJKBLCJLA\x12\x17\n\x07aeon_id\x18\x05\x20\x01(\rR\
-    \x06aeonId\x12\x20\n\x0bKAPMKJGHIEI\x18\x0c\x20\x01(\rR\x0bKAPMKJGHIEIb\
+    \n\x11PPLBHACNEGO.proto\"j\n\x0bPPLBHACNEGO\x12\x20\n\x0bKAPMKJGHIEI\x18\
+    \x0e\x20\x01(\rR\x0bKAPMKJGHIEI\x12\x17\n\x07aeon_id\x18\x08\x20\x01(\rR\
+    \x06aeonId\x12\x20\n\x0bPOIJKBLCJLA\x18\x07\x20\x01(\rR\x0bPOIJKBLCJLAb\
     \x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for NpcStatus {
                 80 => {
                     self.npc_id = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.is_finish = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for NpcStatus {
             os.write_uint32(10, self.npc_id)?;
         }
         if self.is_finish != false {
-            os.write_bool(5, self.is_finish)?;
+            os.write_bool(11, self.is_finish)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NpcStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fNpcStatus.proto\"?\n\tNpcStatus\x12\x15\n\x06npc_id\x18\n\x20\x01(\
-    \rR\x05npcId\x12\x1b\n\tis_finish\x18\x05\x20\x01(\x08R\x08isFinishb\x06\
+    \rR\x05npcId\x12\x1b\n\tis_finish\x18\x0b\x20\x01(\x08R\x08isFinishb\x06\
     proto3\
 ";
 

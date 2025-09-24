@@ -30,8 +30,14 @@ pub struct CancelExpeditionScRsp {
     // message fields
     // @@protoc_insertion_point(field:CancelExpeditionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:CancelExpeditionScRsp.finish_time)
+    pub finish_time: i64,
     // @@protoc_insertion_point(field:CancelExpeditionScRsp.expedition_id)
     pub expedition_id: u32,
+    // @@protoc_insertion_point(field:CancelExpeditionScRsp.extra_reward)
+    pub extra_reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:CancelExpeditionScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:CancelExpeditionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +55,7 @@ impl CancelExpeditionScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -57,9 +63,24 @@ impl CancelExpeditionScRsp {
             |m: &mut CancelExpeditionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "finish_time",
+            |m: &CancelExpeditionScRsp| { &m.finish_time },
+            |m: &mut CancelExpeditionScRsp| { &mut m.finish_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "expedition_id",
             |m: &CancelExpeditionScRsp| { &m.expedition_id },
             |m: &mut CancelExpeditionScRsp| { &mut m.expedition_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "extra_reward",
+            |m: &CancelExpeditionScRsp| { &m.extra_reward },
+            |m: &mut CancelExpeditionScRsp| { &mut m.extra_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "player_return_reward_list",
+            |m: &CancelExpeditionScRsp| { &m.player_return_reward_list },
+            |m: &mut CancelExpeditionScRsp| { &mut m.player_return_reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelExpeditionScRsp>(
             "CancelExpeditionScRsp",
@@ -79,11 +100,20 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
+                    self.finish_time = is.read_int64()?;
+                },
+                64 => {
                     self.expedition_id = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_reward)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +128,21 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if self.finish_time != 0 {
+            my_size += ::protobuf::rt::int64_size(5, self.finish_time);
         }
         if self.expedition_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.expedition_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.expedition_id);
+        }
+        if let Some(v) = self.extra_reward.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +151,19 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
+        }
+        if self.finish_time != 0 {
+            os.write_int64(5, self.finish_time)?;
         }
         if self.expedition_id != 0 {
-            os.write_uint32(11, self.expedition_id)?;
+            os.write_uint32(8, self.expedition_id)?;
+        }
+        if let Some(v) = self.extra_reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +183,20 @@ impl ::protobuf::Message for CancelExpeditionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.finish_time = 0;
         self.expedition_id = 0;
+        self.extra_reward.clear();
+        self.player_return_reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelExpeditionScRsp {
         static instance: CancelExpeditionScRsp = CancelExpeditionScRsp {
             retcode: 0,
+            finish_time: 0,
             expedition_id: 0,
+            extra_reward: ::protobuf::MessageField::none(),
+            player_return_reward_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for CancelExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCancelExpeditionScRsp.proto\"V\n\x15CancelExpeditionScRsp\x12\x18\
-    \n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12#\n\rexpedition_id\x18\x0b\
-    \x20\x01(\rR\x0cexpeditionIdb\x06proto3\
+    \n\x1bCancelExpeditionScRsp.proto\x1a\x0eItemList.proto\"\xeb\x01\n\x15C\
+    ancelExpeditionScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
+    \x12\x1f\n\x0bfinish_time\x18\x05\x20\x01(\x03R\nfinishTime\x12#\n\rexpe\
+    dition_id\x18\x08\x20\x01(\rR\x0cexpeditionId\x12,\n\x0cextra_reward\x18\
+    \x04\x20\x01(\x0b2\t.ItemListR\x0bextraReward\x12D\n\x19player_return_re\
+    ward_list\x18\t\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardListb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -184,7 +244,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CancelExpeditionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

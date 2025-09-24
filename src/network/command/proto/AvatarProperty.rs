@@ -30,8 +30,8 @@ pub struct AvatarProperty {
     // message fields
     // @@protoc_insertion_point(field:AvatarProperty.max_hp)
     pub max_hp: f64,
-    // @@protoc_insertion_point(field:AvatarProperty.TURN_FOOD_SWITCH_ATTACK)
-    pub TURN_FOOD_SWITCH_ATTACK: f64,
+    // @@protoc_insertion_point(field:AvatarProperty.attack)
+    pub attack: f64,
     // @@protoc_insertion_point(field:AvatarProperty.defence)
     pub defence: f64,
     // @@protoc_insertion_point(field:AvatarProperty.speed)
@@ -67,9 +67,9 @@ impl AvatarProperty {
             |m: &mut AvatarProperty| { &mut m.max_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "TURN_FOOD_SWITCH_ATTACK",
-            |m: &AvatarProperty| { &m.TURN_FOOD_SWITCH_ATTACK },
-            |m: &mut AvatarProperty| { &mut m.TURN_FOOD_SWITCH_ATTACK },
+            "attack",
+            |m: &AvatarProperty| { &m.attack },
+            |m: &mut AvatarProperty| { &mut m.attack },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "defence",
@@ -118,7 +118,7 @@ impl ::protobuf::Message for AvatarProperty {
                     self.max_hp = is.read_double()?;
                 },
                 17 => {
-                    self.TURN_FOOD_SWITCH_ATTACK = is.read_double()?;
+                    self.attack = is.read_double()?;
                 },
                 25 => {
                     self.defence = is.read_double()?;
@@ -150,7 +150,7 @@ impl ::protobuf::Message for AvatarProperty {
         if self.max_hp != 0. {
             my_size += 1 + 8;
         }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0. {
+        if self.attack != 0. {
             my_size += 1 + 8;
         }
         if self.defence != 0. {
@@ -177,8 +177,8 @@ impl ::protobuf::Message for AvatarProperty {
         if self.max_hp != 0. {
             os.write_double(1, self.max_hp)?;
         }
-        if self.TURN_FOOD_SWITCH_ATTACK != 0. {
-            os.write_double(2, self.TURN_FOOD_SWITCH_ATTACK)?;
+        if self.attack != 0. {
+            os.write_double(2, self.attack)?;
         }
         if self.defence != 0. {
             os.write_double(3, self.defence)?;
@@ -213,7 +213,7 @@ impl ::protobuf::Message for AvatarProperty {
 
     fn clear(&mut self) {
         self.max_hp = 0.;
-        self.TURN_FOOD_SWITCH_ATTACK = 0.;
+        self.attack = 0.;
         self.defence = 0.;
         self.speed = 0.;
         self.left_hp = 0.;
@@ -225,7 +225,7 @@ impl ::protobuf::Message for AvatarProperty {
     fn default_instance() -> &'static AvatarProperty {
         static instance: AvatarProperty = AvatarProperty {
             max_hp: 0.,
-            TURN_FOOD_SWITCH_ATTACK: 0.,
+            attack: 0.,
             defence: 0.,
             speed: 0.,
             left_hp: 0.,
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for AvatarProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14AvatarProperty.proto\"\xd7\x01\n\x0eAvatarProperty\x12\x15\n\x06ma\
-    x_hp\x18\x01\x20\x01(\x01R\x05maxHp\x125\n\x17TURN_FOOD_SWITCH_ATTACK\
-    \x18\x02\x20\x01(\x01R\x14TURNFOODSWITCHATTACK\x12\x18\n\x07defence\x18\
-    \x03\x20\x01(\x01R\x07defence\x12\x14\n\x05speed\x18\x04\x20\x01(\x01R\
-    \x05speed\x12\x17\n\x07left_hp\x18\x05\x20\x01(\x01R\x06leftHp\x12\x17\n\
-    \x07left_sp\x18\x06\x20\x01(\x01R\x06leftSp\x12\x15\n\x06max_sp\x18\x07\
-    \x20\x01(\x01R\x05maxSpb\x06proto3\
+    \n\x14AvatarProperty.proto\"\xb8\x01\n\x0eAvatarProperty\x12\x15\n\x06ma\
+    x_hp\x18\x01\x20\x01(\x01R\x05maxHp\x12\x16\n\x06attack\x18\x02\x20\x01(\
+    \x01R\x06attack\x12\x18\n\x07defence\x18\x03\x20\x01(\x01R\x07defence\
+    \x12\x14\n\x05speed\x18\x04\x20\x01(\x01R\x05speed\x12\x17\n\x07left_hp\
+    \x18\x05\x20\x01(\x01R\x06leftHp\x12\x17\n\x07left_sp\x18\x06\x20\x01(\
+    \x01R\x06leftSp\x12\x15\n\x06max_sp\x18\x07\x20\x01(\x01R\x05maxSpb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct GetChapterScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetChapterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChapterScRsp.IELPICLBBJI)
-    pub IELPICLBBJI: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
     // @@protoc_insertion_point(field:GetChapterScRsp.HOEAHBIFKCI)
     pub HOEAHBIFKCI: u32,
+    // @@protoc_insertion_point(field:GetChapterScRsp.IELPICLBBJI)
+    pub IELPICLBBJI: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChapterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetChapterScRsp {
             |m: &GetChapterScRsp| { &m.retcode },
             |m: &mut GetChapterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IELPICLBBJI",
-            |m: &GetChapterScRsp| { &m.IELPICLBBJI },
-            |m: &mut GetChapterScRsp| { &mut m.IELPICLBBJI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HOEAHBIFKCI",
             |m: &GetChapterScRsp| { &m.HOEAHBIFKCI },
             |m: &mut GetChapterScRsp| { &mut m.HOEAHBIFKCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IELPICLBBJI",
+            |m: &GetChapterScRsp| { &m.IELPICLBBJI },
+            |m: &mut GetChapterScRsp| { &mut m.IELPICLBBJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChapterScRsp>(
             "GetChapterScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    self.IELPICLBBJI.push(is.read_message()?);
-                },
-                120 => {
+                32 => {
                     self.HOEAHBIFKCI = is.read_uint32()?;
+                },
+                122 => {
+                    self.IELPICLBBJI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.HOEAHBIFKCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HOEAHBIFKCI);
         }
         for value in &self.IELPICLBBJI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HOEAHBIFKCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HOEAHBIFKCI);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetChapterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.HOEAHBIFKCI != 0 {
+            os.write_uint32(4, self.HOEAHBIFKCI)?;
         }
         for v in &self.IELPICLBBJI {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.HOEAHBIFKCI != 0 {
-            os.write_uint32(15, self.HOEAHBIFKCI)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetChapterScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.IELPICLBBJI.clear();
         self.HOEAHBIFKCI = 0;
+        self.IELPICLBBJI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChapterScRsp {
         static instance: GetChapterScRsp = GetChapterScRsp {
             retcode: 0,
-            IELPICLBBJI: ::std::vec::Vec::new(),
             HOEAHBIFKCI: 0,
+            IELPICLBBJI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetChapterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15GetChapterScRsp.proto\x1a\x12ChapterBrief.proto\"~\n\x0fGetChapter\
-    ScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12/\n\x0bIELP\
-    ICLBBJI\x18\t\x20\x03(\x0b2\r.ChapterBriefR\x0bIELPICLBBJI\x12\x20\n\x0b\
-    HOEAHBIFKCI\x18\x0f\x20\x01(\rR\x0bHOEAHBIFKCIb\x06proto3\
+    ScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bH\
+    OEAHBIFKCI\x18\x04\x20\x01(\rR\x0bHOEAHBIFKCI\x12/\n\x0bIELPICLBBJI\x18\
+    \x0f\x20\x03(\x0b2\r.ChapterBriefR\x0bIELPICLBBJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

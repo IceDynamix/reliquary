@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.IEMNPGOMJCO)
-    pub IEMNPGOMJCO: bool,
     // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.NDOBMAJMLNK)
     pub NDOBMAJMLNK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.IEMNPGOMJCO)
+    pub IEMNPGOMJCO: bool,
     // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl DeleteRelicFilterPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEMNPGOMJCO",
-            |m: &DeleteRelicFilterPlanScRsp| { &m.IEMNPGOMJCO },
-            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.IEMNPGOMJCO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NDOBMAJMLNK",
             |m: &DeleteRelicFilterPlanScRsp| { &m.NDOBMAJMLNK },
             |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.NDOBMAJMLNK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEMNPGOMJCO",
+            |m: &DeleteRelicFilterPlanScRsp| { &m.IEMNPGOMJCO },
+            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.IEMNPGOMJCO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.IEMNPGOMJCO = is.read_bool()?;
-                },
-                34 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.NDOBMAJMLNK)?;
                 },
-                32 => {
+                112 => {
                     self.NDOBMAJMLNK.push(is.read_uint32()?);
                 },
-                24 => {
+                40 => {
+                    self.IEMNPGOMJCO = is.read_bool()?;
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NDOBMAJMLNK);
         if self.IEMNPGOMJCO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NDOBMAJMLNK);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(14, &self.NDOBMAJMLNK)?;
         if self.IEMNPGOMJCO != false {
-            os.write_bool(13, self.IEMNPGOMJCO)?;
+            os.write_bool(5, self.IEMNPGOMJCO)?;
         }
-        os.write_repeated_packed_uint32(4, &self.NDOBMAJMLNK)?;
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.IEMNPGOMJCO = false;
         self.NDOBMAJMLNK.clear();
+        self.IEMNPGOMJCO = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteRelicFilterPlanScRsp {
         static instance: DeleteRelicFilterPlanScRsp = DeleteRelicFilterPlanScRsp {
-            IEMNPGOMJCO: false,
             NDOBMAJMLNK: ::std::vec::Vec::new(),
+            IEMNPGOMJCO: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteRelicFilterPlanScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20DeleteRelicFilterPlanScRsp.proto\"z\n\x1aDeleteRelicFilterPlanScRs\
-    p\x12\x20\n\x0bIEMNPGOMJCO\x18\r\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x20\n\
-    \x0bNDOBMAJMLNK\x18\x04\x20\x03(\rR\x0bNDOBMAJMLNK\x12\x18\n\x07retcode\
-    \x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    p\x12\x20\n\x0bNDOBMAJMLNK\x18\x0e\x20\x03(\rR\x0bNDOBMAJMLNK\x12\x20\n\
+    \x0bIEMNPGOMJCO\x18\x05\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x18\n\x07retcod\
+    e\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

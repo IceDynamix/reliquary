@@ -30,10 +30,10 @@ pub struct GetWaypointScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetWaypointScRsp.HOEAHBIFKCI)
     pub HOEAHBIFKCI: u32,
-    // @@protoc_insertion_point(field:GetWaypointScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetWaypointScRsp.FJJFLKCMIDJ)
     pub FJJFLKCMIDJ: ::protobuf::MessageField<super::Chapter::Chapter>,
+    // @@protoc_insertion_point(field:GetWaypointScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetWaypointScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetWaypointScRsp {
             |m: &GetWaypointScRsp| { &m.HOEAHBIFKCI },
             |m: &mut GetWaypointScRsp| { &mut m.HOEAHBIFKCI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetWaypointScRsp| { &m.retcode },
-            |m: &mut GetWaypointScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Chapter::Chapter>(
             "FJJFLKCMIDJ",
             |m: &GetWaypointScRsp| { &m.FJJFLKCMIDJ },
             |m: &mut GetWaypointScRsp| { &mut m.FJJFLKCMIDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetWaypointScRsp| { &m.retcode },
+            |m: &mut GetWaypointScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetWaypointScRsp>(
             "GetWaypointScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.HOEAHBIFKCI = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJJFLKCMIDJ)?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOEAHBIFKCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HOEAHBIFKCI);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.HOEAHBIFKCI);
         }
         if let Some(v) = self.FJJFLKCMIDJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetWaypointScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOEAHBIFKCI != 0 {
-            os.write_uint32(12, self.HOEAHBIFKCI)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(7, self.HOEAHBIFKCI)?;
         }
         if let Some(v) = self.FJJFLKCMIDJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetWaypointScRsp {
 
     fn clear(&mut self) {
         self.HOEAHBIFKCI = 0;
-        self.retcode = 0;
         self.FJJFLKCMIDJ.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetWaypointScRsp {
         static instance: GetWaypointScRsp = GetWaypointScRsp {
             HOEAHBIFKCI: 0,
-            retcode: 0,
             FJJFLKCMIDJ: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetWaypointScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetWaypointScRsp.proto\x1a\rChapter.proto\"z\n\x10GetWaypointScRsp\
-    \x12\x20\n\x0bHOEAHBIFKCI\x18\x0c\x20\x01(\rR\x0bHOEAHBIFKCI\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12*\n\x0bFJJFLKCMIDJ\x18\x01\
-    \x20\x01(\x0b2\x08.ChapterR\x0bFJJFLKCMIDJb\x06proto3\
+    \x12\x20\n\x0bHOEAHBIFKCI\x18\x07\x20\x01(\rR\x0bHOEAHBIFKCI\x12*\n\x0bF\
+    JJFLKCMIDJ\x18\x04\x20\x01(\x0b2\x08.ChapterR\x0bFJJFLKCMIDJ\x12\x18\n\
+    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

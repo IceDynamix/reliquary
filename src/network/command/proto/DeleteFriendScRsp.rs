@@ -79,10 +79,10 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DeleteFriendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.uid);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DeleteFriendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.uid != 0 {
-            os.write_uint32(12, self.uid)?;
+            os.write_uint32(10, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteFriendScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DeleteFriendScRsp.proto\"?\n\x11DeleteFriendScRsp\x12\x18\n\x07ret\
-    code\x18\x06\x20\x01(\rR\x07retcode\x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\
+    code\x18\x0c\x20\x01(\rR\x07retcode\x12\x10\n\x03uid\x18\n\x20\x01(\rR\
     \x03uidb\x06proto3\
 ";
 

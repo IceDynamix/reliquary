@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
+                74 => {
                     self.IJONOMEJOHM.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         for v in &self.IJONOMEJOHM {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for GetPreAvatarGrowthInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetPreAvatarGrowthInfoScRsp.proto\x1a\x11NMIFOLJFCJH.proto\"g\n\x1bGe\
     tPreAvatarGrowthInfoScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bIJONOMEJOHM\x18\x03\x20\x03(\x0b2\x0c.NMIFOLJFCJHR\x0bIJ\
-    ONOMEJOHMb\x06proto3\
+    tcode\x12.\n\x0bIJONOMEJOHM\x18\t\x20\x03(\x0b2\x0c.NMIFOLJFCJHR\x0bIJON\
+    OMEJOHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

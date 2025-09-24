@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOPDJAHFPHN {
     // message fields
+    // @@protoc_insertion_point(field:LOPDJAHFPHN.DLABDNPIHFF)
+    pub DLABDNPIHFF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOPDJAHFPHN.CHDOIBFEHLP)
     pub CHDOIBFEHLP: u32,
     // @@protoc_insertion_point(field:LOPDJAHFPHN.IINCDJPOOMC)
     pub IINCDJPOOMC: u32,
-    // @@protoc_insertion_point(field:LOPDJAHFPHN.DLABDNPIHFF)
-    pub DLABDNPIHFF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LOPDJAHFPHN.JIGONEALCPC)
     pub JIGONEALCPC: ::std::vec::Vec<u32>,
     // special fields
@@ -55,6 +55,11 @@ impl LOPDJAHFPHN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DLABDNPIHFF",
+            |m: &LOPDJAHFPHN| { &m.DLABDNPIHFF },
+            |m: &mut LOPDJAHFPHN| { &mut m.DLABDNPIHFF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CHDOIBFEHLP",
             |m: &LOPDJAHFPHN| { &m.CHDOIBFEHLP },
@@ -64,11 +69,6 @@ impl LOPDJAHFPHN {
             "IINCDJPOOMC",
             |m: &LOPDJAHFPHN| { &m.IINCDJPOOMC },
             |m: &mut LOPDJAHFPHN| { &mut m.IINCDJPOOMC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DLABDNPIHFF",
-            |m: &LOPDJAHFPHN| { &m.DLABDNPIHFF },
-            |m: &mut LOPDJAHFPHN| { &mut m.DLABDNPIHFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JIGONEALCPC",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for LOPDJAHFPHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.CHDOIBFEHLP = is.read_uint32()?;
-                },
-                48 => {
-                    self.IINCDJPOOMC = is.read_uint32()?;
-                },
-                114 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.DLABDNPIHFF)?;
                 },
-                112 => {
+                32 => {
                     self.DLABDNPIHFF.push(is.read_uint32()?);
                 },
-                74 => {
+                16 => {
+                    self.CHDOIBFEHLP = is.read_uint32()?;
+                },
+                24 => {
+                    self.IINCDJPOOMC = is.read_uint32()?;
+                },
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.JIGONEALCPC)?;
                 },
-                72 => {
+                48 => {
                     self.JIGONEALCPC.push(is.read_uint32()?);
                 },
                 tag => {
@@ -123,28 +123,28 @@ impl ::protobuf::Message for LOPDJAHFPHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DLABDNPIHFF);
         if self.CHDOIBFEHLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CHDOIBFEHLP);
+            my_size += ::protobuf::rt::uint32_size(2, self.CHDOIBFEHLP);
         }
         if self.IINCDJPOOMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IINCDJPOOMC);
+            my_size += ::protobuf::rt::uint32_size(3, self.IINCDJPOOMC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.DLABDNPIHFF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JIGONEALCPC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JIGONEALCPC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(4, &self.DLABDNPIHFF)?;
         if self.CHDOIBFEHLP != 0 {
-            os.write_uint32(4, self.CHDOIBFEHLP)?;
+            os.write_uint32(2, self.CHDOIBFEHLP)?;
         }
         if self.IINCDJPOOMC != 0 {
-            os.write_uint32(6, self.IINCDJPOOMC)?;
+            os.write_uint32(3, self.IINCDJPOOMC)?;
         }
-        os.write_repeated_packed_uint32(14, &self.DLABDNPIHFF)?;
-        os.write_repeated_packed_uint32(9, &self.JIGONEALCPC)?;
+        os.write_repeated_packed_uint32(6, &self.JIGONEALCPC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,18 +162,18 @@ impl ::protobuf::Message for LOPDJAHFPHN {
     }
 
     fn clear(&mut self) {
+        self.DLABDNPIHFF.clear();
         self.CHDOIBFEHLP = 0;
         self.IINCDJPOOMC = 0;
-        self.DLABDNPIHFF.clear();
         self.JIGONEALCPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOPDJAHFPHN {
         static instance: LOPDJAHFPHN = LOPDJAHFPHN {
+            DLABDNPIHFF: ::std::vec::Vec::new(),
             CHDOIBFEHLP: 0,
             IINCDJPOOMC: 0,
-            DLABDNPIHFF: ::std::vec::Vec::new(),
             JIGONEALCPC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for LOPDJAHFPHN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOPDJAHFPHN.proto\"\x95\x01\n\x0bLOPDJAHFPHN\x12\x20\n\x0bCHDOIBFE\
-    HLP\x18\x04\x20\x01(\rR\x0bCHDOIBFEHLP\x12\x20\n\x0bIINCDJPOOMC\x18\x06\
-    \x20\x01(\rR\x0bIINCDJPOOMC\x12\x20\n\x0bDLABDNPIHFF\x18\x0e\x20\x03(\rR\
-    \x0bDLABDNPIHFF\x12\x20\n\x0bJIGONEALCPC\x18\t\x20\x03(\rR\x0bJIGONEALCP\
-    Cb\x06proto3\
+    \n\x11LOPDJAHFPHN.proto\"\x95\x01\n\x0bLOPDJAHFPHN\x12\x20\n\x0bDLABDNPI\
+    HFF\x18\x04\x20\x03(\rR\x0bDLABDNPIHFF\x12\x20\n\x0bCHDOIBFEHLP\x18\x02\
+    \x20\x01(\rR\x0bCHDOIBFEHLP\x12\x20\n\x0bIINCDJPOOMC\x18\x03\x20\x01(\rR\
+    \x0bIINCDJPOOMC\x12\x20\n\x0bJIGONEALCPC\x18\x06\x20\x03(\rR\x0bJIGONEAL\
+    CPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

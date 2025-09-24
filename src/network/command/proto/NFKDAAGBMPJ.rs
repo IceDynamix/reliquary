@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NFKDAAGBMPJ {
     // message fields
-    // @@protoc_insertion_point(field:NFKDAAGBMPJ.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:NFKDAAGBMPJ.hp)
-    pub hp: i32,
     // @@protoc_insertion_point(field:NFKDAAGBMPJ.max_hp)
     pub max_hp: i32,
-    // @@protoc_insertion_point(field:NFKDAAGBMPJ.MHGDGGNIJCG)
-    pub MHGDGGNIJCG: ::std::vec::Vec<super::MAAOLKGLLBI::MAAOLKGLLBI>,
-    // @@protoc_insertion_point(field:NFKDAAGBMPJ.status)
-    pub status: ::protobuf::EnumOrUnknown<super::FateMasterStatusType::FateMasterStatusType>,
     // @@protoc_insertion_point(field:NFKDAAGBMPJ.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:NFKDAAGBMPJ.MHGDGGNIJCG)
+    pub MHGDGGNIJCG: ::std::vec::Vec<super::MAAOLKGLLBI::MAAOLKGLLBI>,
+    // @@protoc_insertion_point(field:NFKDAAGBMPJ.hp)
+    pub hp: i32,
+    // @@protoc_insertion_point(field:NFKDAAGBMPJ.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:NFKDAAGBMPJ.status)
+    pub status: ::protobuf::EnumOrUnknown<super::FateMasterStatusType::FateMasterStatusType>,
     // special fields
     // @@protoc_insertion_point(special_field:NFKDAAGBMPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,14 @@ impl NFKDAAGBMPJ {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &NFKDAAGBMPJ| { &m.rank },
-            |m: &mut NFKDAAGBMPJ| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hp",
-            |m: &NFKDAAGBMPJ| { &m.hp },
-            |m: &mut NFKDAAGBMPJ| { &mut m.hp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_hp",
             |m: &NFKDAAGBMPJ| { &m.max_hp },
             |m: &mut NFKDAAGBMPJ| { &mut m.max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &NFKDAAGBMPJ| { &m.avatar_id },
+            |m: &mut NFKDAAGBMPJ| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MHGDGGNIJCG",
@@ -80,14 +75,19 @@ impl NFKDAAGBMPJ {
             |m: &mut NFKDAAGBMPJ| { &mut m.MHGDGGNIJCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hp",
+            |m: &NFKDAAGBMPJ| { &m.hp },
+            |m: &mut NFKDAAGBMPJ| { &mut m.hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &NFKDAAGBMPJ| { &m.rank },
+            |m: &mut NFKDAAGBMPJ| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &NFKDAAGBMPJ| { &m.status },
             |m: &mut NFKDAAGBMPJ| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &NFKDAAGBMPJ| { &m.avatar_id },
-            |m: &mut NFKDAAGBMPJ| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NFKDAAGBMPJ>(
             "NFKDAAGBMPJ",
@@ -108,22 +108,22 @@ impl ::protobuf::Message for NFKDAAGBMPJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.rank = is.read_uint32()?;
-                },
-                48 => {
-                    self.hp = is.read_int32()?;
-                },
-                80 => {
                     self.max_hp = is.read_int32()?;
                 },
-                42 => {
+                56 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                82 => {
                     self.MHGDGGNIJCG.push(is.read_message()?);
                 },
-                56 => {
-                    self.status = is.read_enum_or_unknown()?;
+                88 => {
+                    self.hp = is.read_int32()?;
                 },
-                96 => {
-                    self.avatar_id = is.read_uint32()?;
+                40 => {
+                    self.rank = is.read_uint32()?;
+                },
+                64 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for NFKDAAGBMPJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.rank);
-        }
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.hp);
-        }
         if self.max_hp != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.max_hp);
+            my_size += ::protobuf::rt::int32_size(14, self.max_hp);
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         for value in &self.MHGDGGNIJCG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.status.value());
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.hp);
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.rank);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for NFKDAAGBMPJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rank != 0 {
-            os.write_uint32(14, self.rank)?;
-        }
-        if self.hp != 0 {
-            os.write_int32(6, self.hp)?;
-        }
         if self.max_hp != 0 {
-            os.write_int32(10, self.max_hp)?;
-        }
-        for v in &self.MHGDGGNIJCG {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_int32(14, self.max_hp)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(12, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
+        }
+        for v in &self.MHGDGGNIJCG {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.hp != 0 {
+            os.write_int32(11, self.hp)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(5, self.rank)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for NFKDAAGBMPJ {
     }
 
     fn clear(&mut self) {
-        self.rank = 0;
-        self.hp = 0;
         self.max_hp = 0;
-        self.MHGDGGNIJCG.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE);
         self.avatar_id = 0;
+        self.MHGDGGNIJCG.clear();
+        self.hp = 0;
+        self.rank = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::FateMasterStatusType::FateMasterStatusType::FATE_MASTER_STATUS_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NFKDAAGBMPJ {
         static instance: NFKDAAGBMPJ = NFKDAAGBMPJ {
-            rank: 0,
-            hp: 0,
             max_hp: 0,
-            MHGDGGNIJCG: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             avatar_id: 0,
+            MHGDGGNIJCG: ::std::vec::Vec::new(),
+            hp: 0,
+            rank: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for NFKDAAGBMPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NFKDAAGBMPJ.proto\x1a\x1aFateMasterStatusType.proto\x1a\x11MAAOLKG\
-    LLBI.proto\"\xc4\x01\n\x0bNFKDAAGBMPJ\x12\x12\n\x04rank\x18\x0e\x20\x01(\
-    \rR\x04rank\x12\x0e\n\x02hp\x18\x06\x20\x01(\x05R\x02hp\x12\x15\n\x06max\
-    _hp\x18\n\x20\x01(\x05R\x05maxHp\x12.\n\x0bMHGDGGNIJCG\x18\x05\x20\x03(\
-    \x0b2\x0c.MAAOLKGLLBIR\x0bMHGDGGNIJCG\x12-\n\x06status\x18\x07\x20\x01(\
-    \x0e2\x15.FateMasterStatusTypeR\x06status\x12\x1b\n\tavatar_id\x18\x0c\
-    \x20\x01(\rR\x08avatarIdb\x06proto3\
+    LLBI.proto\"\xc4\x01\n\x0bNFKDAAGBMPJ\x12\x15\n\x06max_hp\x18\x0e\x20\
+    \x01(\x05R\x05maxHp\x12\x1b\n\tavatar_id\x18\x07\x20\x01(\rR\x08avatarId\
+    \x12.\n\x0bMHGDGGNIJCG\x18\n\x20\x03(\x0b2\x0c.MAAOLKGLLBIR\x0bMHGDGGNIJ\
+    CG\x12\x0e\n\x02hp\x18\x0b\x20\x01(\x05R\x02hp\x12\x12\n\x04rank\x18\x05\
+    \x20\x01(\rR\x04rank\x12-\n\x06status\x18\x08\x20\x01(\x0e2\x15.FateMast\
+    erStatusTypeR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPerformSectionIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.item_list)
-    pub item_list: ::std::vec::Vec<super::MessageItem::MessageItem>,
     // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.section_id)
     pub section_id: u32,
+    // @@protoc_insertion_point(field:FinishPerformSectionIdCsReq.item_list)
+    pub item_list: ::std::vec::Vec<super::MessageItem::MessageItem>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPerformSectionIdCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FinishPerformSectionIdCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &FinishPerformSectionIdCsReq| { &m.item_list },
-            |m: &mut FinishPerformSectionIdCsReq| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "section_id",
             |m: &FinishPerformSectionIdCsReq| { &m.section_id },
             |m: &mut FinishPerformSectionIdCsReq| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "item_list",
+            |m: &FinishPerformSectionIdCsReq| { &m.item_list },
+            |m: &mut FinishPerformSectionIdCsReq| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPerformSectionIdCsReq>(
             "FinishPerformSectionIdCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.item_list.push(is.read_message()?);
-                },
-                56 => {
+                48 => {
                     self.section_id = is.read_uint32()?;
+                },
+                26 => {
+                    self.item_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.section_id);
+        }
         for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.section_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.section_id != 0 {
-            os.write_uint32(7, self.section_id)?;
+            os.write_uint32(6, self.section_id)?;
         }
+        for v in &self.item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
         self.section_id = 0;
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPerformSectionIdCsReq {
         static instance: FinishPerformSectionIdCsReq = FinishPerformSectionIdCsReq {
-            item_list: ::std::vec::Vec::new(),
             section_id: 0,
+            item_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FinishPerformSectionIdCsReq.proto\x1a\x11MessageItem.proto\"g\n\x1bFi\
-    nishPerformSectionIdCsReq\x12)\n\titem_list\x18\x06\x20\x03(\x0b2\x0c.Me\
-    ssageItemR\x08itemList\x12\x1d\n\nsection_id\x18\x07\x20\x01(\rR\tsectio\
-    nIdb\x06proto3\
+    nishPerformSectionIdCsReq\x12\x1d\n\nsection_id\x18\x06\x20\x01(\rR\tsec\
+    tionId\x12)\n\titem_list\x18\x03\x20\x03(\x0b2\x0c.MessageItemR\x08itemL\
+    istb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

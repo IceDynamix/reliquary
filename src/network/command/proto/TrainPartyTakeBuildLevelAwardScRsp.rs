@@ -30,10 +30,10 @@ pub struct TrainPartyTakeBuildLevelAwardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.ECCLPIFMMPP)
     pub ECCLPIFMMPP: u32,
+    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyTakeBuildLevelAwardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl TrainPartyTakeBuildLevelAwardScRsp {
             |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.retcode },
-            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ECCLPIFMMPP",
             |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.ECCLPIFMMPP },
             |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.ECCLPIFMMPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TrainPartyTakeBuildLevelAwardScRsp| { &m.retcode },
+            |m: &mut TrainPartyTakeBuildLevelAwardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyTakeBuildLevelAwardScRsp>(
             "TrainPartyTakeBuildLevelAwardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
+                64 => {
                     self.ECCLPIFMMPP = is.read_uint32()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if self.ECCLPIFMMPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ECCLPIFMMPP);
+            my_size += ::protobuf::rt::uint32_size(8, self.ECCLPIFMMPP);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.ECCLPIFMMPP != 0 {
-            os.write_uint32(12, self.ECCLPIFMMPP)?;
+            os.write_uint32(8, self.ECCLPIFMMPP)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardScRsp {
 
     fn clear(&mut self) {
         self.item_list.clear();
-        self.retcode = 0;
         self.ECCLPIFMMPP = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyTakeBuildLevelAwardScRsp {
         static instance: TrainPartyTakeBuildLevelAwardScRsp = TrainPartyTakeBuildLevelAwardScRsp {
             item_list: ::protobuf::MessageField::none(),
-            retcode: 0,
             ECCLPIFMMPP: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyTakeBuildLevelAwardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyTakeBuildLevelAwardScRsp.proto\x1a\x0eItemList.proto\"\x88\
-    \x01\n\"TrainPartyTakeBuildLevelAwardScRsp\x12&\n\titem_list\x18\x03\x20\
-    \x01(\x0b2\t.ItemListR\x08itemList\x12\x18\n\x07retcode\x18\n\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bECCLPIFMMPP\x18\x0c\x20\x01(\rR\x0bECCLPIFMMPP\
-    b\x06proto3\
+    \x01\n\"TrainPartyTakeBuildLevelAwardScRsp\x12&\n\titem_list\x18\x0e\x20\
+    \x01(\x0b2\t.ItemListR\x08itemList\x12\x20\n\x0bECCLPIFMMPP\x18\x08\x20\
+    \x01(\rR\x0bECCLPIFMMPP\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retc\
+    odeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

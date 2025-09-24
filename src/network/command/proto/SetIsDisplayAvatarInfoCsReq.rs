@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.is_display = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetIsDisplayAvatarInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_display != false {
-            os.write_bool(8, self.is_display)?;
+            os.write_bool(1, self.is_display)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetIsDisplayAvatarInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetIsDisplayAvatarInfoCsReq.proto\"<\n\x1bSetIsDisplayAvatarInfoCsReq\
-    \x12\x1d\n\nis_display\x18\x08\x20\x01(\x08R\tisDisplayb\x06proto3\
+    \x12\x1d\n\nis_display\x18\x01\x20\x01(\x08R\tisDisplayb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

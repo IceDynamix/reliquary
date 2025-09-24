@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidTargetInfo {
     // message fields
-    // @@protoc_insertion_point(field:RaidTargetInfo.HFALJIHKECN)
-    pub HFALJIHKECN: u32,
     // @@protoc_insertion_point(field:RaidTargetInfo.MDDOFMCJJHH)
     pub MDDOFMCJJHH: ::protobuf::EnumOrUnknown<super::FOCHDFJANPC::FOCHDFJANPC>,
     // @@protoc_insertion_point(field:RaidTargetInfo.DLPPDPBJIIM)
     pub DLPPDPBJIIM: u32,
+    // @@protoc_insertion_point(field:RaidTargetInfo.HFALJIHKECN)
+    pub HFALJIHKECN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidTargetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl RaidTargetInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFALJIHKECN",
-            |m: &RaidTargetInfo| { &m.HFALJIHKECN },
-            |m: &mut RaidTargetInfo| { &mut m.HFALJIHKECN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDDOFMCJJHH",
             |m: &RaidTargetInfo| { &m.MDDOFMCJJHH },
             |m: &mut RaidTargetInfo| { &mut m.MDDOFMCJJHH },
@@ -67,6 +62,11 @@ impl RaidTargetInfo {
             "DLPPDPBJIIM",
             |m: &RaidTargetInfo| { &m.DLPPDPBJIIM },
             |m: &mut RaidTargetInfo| { &mut m.DLPPDPBJIIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HFALJIHKECN",
+            |m: &RaidTargetInfo| { &m.HFALJIHKECN },
+            |m: &mut RaidTargetInfo| { &mut m.HFALJIHKECN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidTargetInfo>(
             "RaidTargetInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.HFALJIHKECN = is.read_uint32()?;
-                },
-                64 => {
+                88 => {
                     self.MDDOFMCJJHH = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                64 => {
                     self.DLPPDPBJIIM = is.read_uint32()?;
+                },
+                80 => {
+                    self.HFALJIHKECN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HFALJIHKECN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HFALJIHKECN);
-        }
         if self.MDDOFMCJJHH != ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.MDDOFMCJJHH.value());
+            my_size += ::protobuf::rt::int32_size(11, self.MDDOFMCJJHH.value());
         }
         if self.DLPPDPBJIIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DLPPDPBJIIM);
+            my_size += ::protobuf::rt::uint32_size(8, self.DLPPDPBJIIM);
+        }
+        if self.HFALJIHKECN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HFALJIHKECN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HFALJIHKECN != 0 {
-            os.write_uint32(3, self.HFALJIHKECN)?;
-        }
         if self.MDDOFMCJJHH != ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.MDDOFMCJJHH))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MDDOFMCJJHH))?;
         }
         if self.DLPPDPBJIIM != 0 {
-            os.write_uint32(12, self.DLPPDPBJIIM)?;
+            os.write_uint32(8, self.DLPPDPBJIIM)?;
+        }
+        if self.HFALJIHKECN != 0 {
+            os.write_uint32(10, self.HFALJIHKECN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RaidTargetInfo {
     }
 
     fn clear(&mut self) {
-        self.HFALJIHKECN = 0;
         self.MDDOFMCJJHH = ::protobuf::EnumOrUnknown::new(super::FOCHDFJANPC::FOCHDFJANPC::RAID_TARGET_STATUS_NONE);
         self.DLPPDPBJIIM = 0;
+        self.HFALJIHKECN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidTargetInfo {
         static instance: RaidTargetInfo = RaidTargetInfo {
-            HFALJIHKECN: 0,
             MDDOFMCJJHH: ::protobuf::EnumOrUnknown::from_i32(0),
             DLPPDPBJIIM: 0,
+            HFALJIHKECN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RaidTargetInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RaidTargetInfo.proto\x1a\x11FOCHDFJANPC.proto\"\x84\x01\n\x0eRaidT\
-    argetInfo\x12\x20\n\x0bHFALJIHKECN\x18\x03\x20\x01(\rR\x0bHFALJIHKECN\
-    \x12.\n\x0bMDDOFMCJJHH\x18\x08\x20\x01(\x0e2\x0c.FOCHDFJANPCR\x0bMDDOFMC\
-    JJHH\x12\x20\n\x0bDLPPDPBJIIM\x18\x0c\x20\x01(\rR\x0bDLPPDPBJIIMb\x06pro\
-    to3\
+    argetInfo\x12.\n\x0bMDDOFMCJJHH\x18\x0b\x20\x01(\x0e2\x0c.FOCHDFJANPCR\
+    \x0bMDDOFMCJJHH\x12\x20\n\x0bDLPPDPBJIIM\x18\x08\x20\x01(\rR\x0bDLPPDPBJ\
+    IIM\x12\x20\n\x0bHFALJIHKECN\x18\n\x20\x01(\rR\x0bHFALJIHKECNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueBuffEnhanceInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.buff_id)
-    pub buff_id: u32,
     // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.FAMCMAGFKCL)
     pub FAMCMAGFKCL: f32,
+    // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.buff_id)
+    pub buff_id: u32,
     // @@protoc_insertion_point(field:RogueBuffEnhanceInfo.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
@@ -54,14 +54,14 @@ impl RogueBuffEnhanceInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_id",
-            |m: &RogueBuffEnhanceInfo| { &m.buff_id },
-            |m: &mut RogueBuffEnhanceInfo| { &mut m.buff_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FAMCMAGFKCL",
             |m: &RogueBuffEnhanceInfo| { &m.FAMCMAGFKCL },
             |m: &mut RogueBuffEnhanceInfo| { &mut m.FAMCMAGFKCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_id",
+            |m: &RogueBuffEnhanceInfo| { &m.buff_id },
+            |m: &mut RogueBuffEnhanceInfo| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.buff_id = is.read_uint32()?;
-                },
-                109 => {
+                69 => {
                     self.FAMCMAGFKCL = is.read_float()?;
                 },
-                50 => {
+                24 => {
+                    self.buff_id = is.read_uint32()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
-        }
         if self.FAMCMAGFKCL != 0. {
             my_size += 1 + 4;
+        }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.buff_id != 0 {
-            os.write_uint32(8, self.buff_id)?;
-        }
         if self.FAMCMAGFKCL != 0. {
-            os.write_float(13, self.FAMCMAGFKCL)?;
+            os.write_float(8, self.FAMCMAGFKCL)?;
+        }
+        if self.buff_id != 0 {
+            os.write_uint32(3, self.buff_id)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueBuffEnhanceInfo {
     }
 
     fn clear(&mut self) {
-        self.buff_id = 0;
         self.FAMCMAGFKCL = 0.;
+        self.buff_id = 0;
         self.cost_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueBuffEnhanceInfo {
         static instance: RogueBuffEnhanceInfo = RogueBuffEnhanceInfo {
-            buff_id: 0,
             FAMCMAGFKCL: 0.,
+            buff_id: 0,
             cost_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueBuffEnhanceInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueBuffEnhanceInfo.proto\x1a\x12ItemCostData.proto\"}\n\x14Rogue\
-    BuffEnhanceInfo\x12\x17\n\x07buff_id\x18\x08\x20\x01(\rR\x06buffId\x12\
-    \x20\n\x0bFAMCMAGFKCL\x18\r\x20\x01(\x02R\x0bFAMCMAGFKCL\x12*\n\tcost_da\
-    ta\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    BuffEnhanceInfo\x12\x20\n\x0bFAMCMAGFKCL\x18\x08\x20\x01(\x02R\x0bFAMCMA\
+    GFKCL\x12\x17\n\x07buff_id\x18\x03\x20\x01(\rR\x06buffId\x12*\n\tcost_da\
+    ta\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

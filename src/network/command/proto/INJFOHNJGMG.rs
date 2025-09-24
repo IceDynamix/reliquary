@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct INJFOHNJGMG {
     // message fields
-    // @@protoc_insertion_point(field:INJFOHNJGMG.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::TreasureDungeonRecordType::TreasureDungeonRecordType>,
-    // @@protoc_insertion_point(field:INJFOHNJGMG.ILHGNEPLODM)
-    pub ILHGNEPLODM: u32,
-    // @@protoc_insertion_point(field:INJFOHNJGMG.NCLOMNEHPMJ)
-    pub NCLOMNEHPMJ: u32,
-    // @@protoc_insertion_point(field:INJFOHNJGMG.JELMCJBICJN)
-    pub JELMCJBICJN: u32,
     // @@protoc_insertion_point(field:INJFOHNJGMG.EGKDINMMENA)
     pub EGKDINMMENA: u32,
+    // @@protoc_insertion_point(field:INJFOHNJGMG.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::TreasureDungeonRecordType::TreasureDungeonRecordType>,
+    // @@protoc_insertion_point(field:INJFOHNJGMG.NCLOMNEHPMJ)
+    pub NCLOMNEHPMJ: u32,
+    // @@protoc_insertion_point(field:INJFOHNJGMG.ILHGNEPLODM)
+    pub ILHGNEPLODM: u32,
+    // @@protoc_insertion_point(field:INJFOHNJGMG.JELMCJBICJN)
+    pub JELMCJBICJN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:INJFOHNJGMG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,14 @@ impl INJFOHNJGMG {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGKDINMMENA",
+            |m: &INJFOHNJGMG| { &m.EGKDINMMENA },
+            |m: &mut INJFOHNJGMG| { &mut m.EGKDINMMENA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &INJFOHNJGMG| { &m.type_ },
             |m: &mut INJFOHNJGMG| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILHGNEPLODM",
-            |m: &INJFOHNJGMG| { &m.ILHGNEPLODM },
-            |m: &mut INJFOHNJGMG| { &mut m.ILHGNEPLODM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NCLOMNEHPMJ",
@@ -73,14 +73,14 @@ impl INJFOHNJGMG {
             |m: &mut INJFOHNJGMG| { &mut m.NCLOMNEHPMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ILHGNEPLODM",
+            |m: &INJFOHNJGMG| { &m.ILHGNEPLODM },
+            |m: &mut INJFOHNJGMG| { &mut m.ILHGNEPLODM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JELMCJBICJN",
             |m: &INJFOHNJGMG| { &m.JELMCJBICJN },
             |m: &mut INJFOHNJGMG| { &mut m.JELMCJBICJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGKDINMMENA",
-            |m: &INJFOHNJGMG| { &m.EGKDINMMENA },
-            |m: &mut INJFOHNJGMG| { &mut m.EGKDINMMENA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<INJFOHNJGMG>(
             "INJFOHNJGMG",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for INJFOHNJGMG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
+                    self.EGKDINMMENA = is.read_uint32()?;
+                },
+                72 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.NCLOMNEHPMJ = is.read_uint32()?;
                 },
                 80 => {
                     self.ILHGNEPLODM = is.read_uint32()?;
                 },
-                8 => {
-                    self.NCLOMNEHPMJ = is.read_uint32()?;
-                },
-                88 => {
+                104 => {
                     self.JELMCJBICJN = is.read_uint32()?;
-                },
-                24 => {
-                    self.EGKDINMMENA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for INJFOHNJGMG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EGKDINMMENA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EGKDINMMENA);
+        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::TREASURE_DUNGEON_RECORD_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
+        }
+        if self.NCLOMNEHPMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NCLOMNEHPMJ);
         }
         if self.ILHGNEPLODM != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.ILHGNEPLODM);
         }
-        if self.NCLOMNEHPMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NCLOMNEHPMJ);
-        }
         if self.JELMCJBICJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JELMCJBICJN);
-        }
-        if self.EGKDINMMENA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EGKDINMMENA);
+            my_size += ::protobuf::rt::uint32_size(13, self.JELMCJBICJN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for INJFOHNJGMG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EGKDINMMENA != 0 {
+            os.write_uint32(2, self.EGKDINMMENA)?;
+        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::TREASURE_DUNGEON_RECORD_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if self.NCLOMNEHPMJ != 0 {
+            os.write_uint32(15, self.NCLOMNEHPMJ)?;
         }
         if self.ILHGNEPLODM != 0 {
             os.write_uint32(10, self.ILHGNEPLODM)?;
         }
-        if self.NCLOMNEHPMJ != 0 {
-            os.write_uint32(1, self.NCLOMNEHPMJ)?;
-        }
         if self.JELMCJBICJN != 0 {
-            os.write_uint32(11, self.JELMCJBICJN)?;
-        }
-        if self.EGKDINMMENA != 0 {
-            os.write_uint32(3, self.EGKDINMMENA)?;
+            os.write_uint32(13, self.JELMCJBICJN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for INJFOHNJGMG {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::TREASURE_DUNGEON_RECORD_NONE);
-        self.ILHGNEPLODM = 0;
-        self.NCLOMNEHPMJ = 0;
-        self.JELMCJBICJN = 0;
         self.EGKDINMMENA = 0;
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::TREASURE_DUNGEON_RECORD_NONE);
+        self.NCLOMNEHPMJ = 0;
+        self.ILHGNEPLODM = 0;
+        self.JELMCJBICJN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static INJFOHNJGMG {
         static instance: INJFOHNJGMG = INJFOHNJGMG {
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            ILHGNEPLODM: 0,
-            NCLOMNEHPMJ: 0,
-            JELMCJBICJN: 0,
             EGKDINMMENA: 0,
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            NCLOMNEHPMJ: 0,
+            ILHGNEPLODM: 0,
+            JELMCJBICJN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for INJFOHNJGMG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11INJFOHNJGMG.proto\x1a\x1fTreasureDungeonRecordType.proto\"\xc5\x01\
-    \n\x0bINJFOHNJGMG\x12.\n\x04type\x18\x0f\x20\x01(\x0e2\x1a.TreasureDunge\
-    onRecordTypeR\x04type\x12\x20\n\x0bILHGNEPLODM\x18\n\x20\x01(\rR\x0bILHG\
-    NEPLODM\x12\x20\n\x0bNCLOMNEHPMJ\x18\x01\x20\x01(\rR\x0bNCLOMNEHPMJ\x12\
-    \x20\n\x0bJELMCJBICJN\x18\x0b\x20\x01(\rR\x0bJELMCJBICJN\x12\x20\n\x0bEG\
-    KDINMMENA\x18\x03\x20\x01(\rR\x0bEGKDINMMENAb\x06proto3\
+    \n\x0bINJFOHNJGMG\x12\x20\n\x0bEGKDINMMENA\x18\x02\x20\x01(\rR\x0bEGKDIN\
+    MMENA\x12.\n\x04type\x18\t\x20\x01(\x0e2\x1a.TreasureDungeonRecordTypeR\
+    \x04type\x12\x20\n\x0bNCLOMNEHPMJ\x18\x0f\x20\x01(\rR\x0bNCLOMNEHPMJ\x12\
+    \x20\n\x0bILHGNEPLODM\x18\n\x20\x01(\rR\x0bILHGNEPLODM\x12\x20\n\x0bJELM\
+    CJBICJN\x18\r\x20\x01(\rR\x0bJELMCJBICJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

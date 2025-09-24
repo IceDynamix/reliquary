@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JFNBFKBLGOH {
     // message fields
-    // @@protoc_insertion_point(field:JFNBFKBLGOH.AFPKFGMAGKL)
-    pub AFPKFGMAGKL: bool,
     // @@protoc_insertion_point(field:JFNBFKBLGOH.BFECJMDNNOB)
     pub BFECJMDNNOB: u32,
+    // @@protoc_insertion_point(field:JFNBFKBLGOH.HGMNJFJPMDF)
+    pub HGMNJFJPMDF: u32,
+    // @@protoc_insertion_point(field:JFNBFKBLGOH.AFPKFGMAGKL)
+    pub AFPKFGMAGKL: bool,
+    // @@protoc_insertion_point(field:JFNBFKBLGOH.FNDDKOPJGDA)
+    pub FNDDKOPJGDA: u32,
     // @@protoc_insertion_point(field:JFNBFKBLGOH.EGEGCKINJJD)
     pub EGEGCKINJJD: bool,
     // @@protoc_insertion_point(field:JFNBFKBLGOH.cell_id)
     pub cell_id: u32,
-    // @@protoc_insertion_point(field:JFNBFKBLGOH.FNDDKOPJGDA)
-    pub FNDDKOPJGDA: u32,
-    // @@protoc_insertion_point(field:JFNBFKBLGOH.HGMNJFJPMDF)
-    pub HGMNJFJPMDF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JFNBFKBLGOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,24 @@ impl JFNBFKBLGOH {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BFECJMDNNOB",
+            |m: &JFNBFKBLGOH| { &m.BFECJMDNNOB },
+            |m: &mut JFNBFKBLGOH| { &mut m.BFECJMDNNOB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGMNJFJPMDF",
+            |m: &JFNBFKBLGOH| { &m.HGMNJFJPMDF },
+            |m: &mut JFNBFKBLGOH| { &mut m.HGMNJFJPMDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFPKFGMAGKL",
             |m: &JFNBFKBLGOH| { &m.AFPKFGMAGKL },
             |m: &mut JFNBFKBLGOH| { &mut m.AFPKFGMAGKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFECJMDNNOB",
-            |m: &JFNBFKBLGOH| { &m.BFECJMDNNOB },
-            |m: &mut JFNBFKBLGOH| { &mut m.BFECJMDNNOB },
+            "FNDDKOPJGDA",
+            |m: &JFNBFKBLGOH| { &m.FNDDKOPJGDA },
+            |m: &mut JFNBFKBLGOH| { &mut m.FNDDKOPJGDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGEGCKINJJD",
@@ -78,16 +88,6 @@ impl JFNBFKBLGOH {
             "cell_id",
             |m: &JFNBFKBLGOH| { &m.cell_id },
             |m: &mut JFNBFKBLGOH| { &mut m.cell_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNDDKOPJGDA",
-            |m: &JFNBFKBLGOH| { &m.FNDDKOPJGDA },
-            |m: &mut JFNBFKBLGOH| { &mut m.FNDDKOPJGDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGMNJFJPMDF",
-            |m: &JFNBFKBLGOH| { &m.HGMNJFJPMDF },
-            |m: &mut JFNBFKBLGOH| { &mut m.HGMNJFJPMDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JFNBFKBLGOH>(
             "JFNBFKBLGOH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for JFNBFKBLGOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.AFPKFGMAGKL = is.read_bool()?;
-                },
-                40 => {
+                120 => {
                     self.BFECJMDNNOB = is.read_uint32()?;
                 },
-                80 => {
-                    self.EGEGCKINJJD = is.read_bool()?;
-                },
-                88 => {
-                    self.cell_id = is.read_uint32()?;
+                96 => {
+                    self.HGMNJFJPMDF = is.read_uint32()?;
                 },
                 16 => {
+                    self.AFPKFGMAGKL = is.read_bool()?;
+                },
+                24 => {
                     self.FNDDKOPJGDA = is.read_uint32()?;
                 },
-                72 => {
-                    self.HGMNJFJPMDF = is.read_uint32()?;
+                56 => {
+                    self.EGEGCKINJJD = is.read_bool()?;
+                },
+                112 => {
+                    self.cell_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for JFNBFKBLGOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BFECJMDNNOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BFECJMDNNOB);
+        }
+        if self.HGMNJFJPMDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HGMNJFJPMDF);
+        }
         if self.AFPKFGMAGKL != false {
             my_size += 1 + 1;
         }
-        if self.BFECJMDNNOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BFECJMDNNOB);
+        if self.FNDDKOPJGDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FNDDKOPJGDA);
         }
         if self.EGEGCKINJJD != false {
             my_size += 1 + 1;
         }
         if self.cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cell_id);
-        }
-        if self.FNDDKOPJGDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FNDDKOPJGDA);
-        }
-        if self.HGMNJFJPMDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HGMNJFJPMDF);
+            my_size += ::protobuf::rt::uint32_size(14, self.cell_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for JFNBFKBLGOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AFPKFGMAGKL != false {
-            os.write_bool(14, self.AFPKFGMAGKL)?;
-        }
         if self.BFECJMDNNOB != 0 {
-            os.write_uint32(5, self.BFECJMDNNOB)?;
-        }
-        if self.EGEGCKINJJD != false {
-            os.write_bool(10, self.EGEGCKINJJD)?;
-        }
-        if self.cell_id != 0 {
-            os.write_uint32(11, self.cell_id)?;
-        }
-        if self.FNDDKOPJGDA != 0 {
-            os.write_uint32(2, self.FNDDKOPJGDA)?;
+            os.write_uint32(15, self.BFECJMDNNOB)?;
         }
         if self.HGMNJFJPMDF != 0 {
-            os.write_uint32(9, self.HGMNJFJPMDF)?;
+            os.write_uint32(12, self.HGMNJFJPMDF)?;
+        }
+        if self.AFPKFGMAGKL != false {
+            os.write_bool(2, self.AFPKFGMAGKL)?;
+        }
+        if self.FNDDKOPJGDA != 0 {
+            os.write_uint32(3, self.FNDDKOPJGDA)?;
+        }
+        if self.EGEGCKINJJD != false {
+            os.write_bool(7, self.EGEGCKINJJD)?;
+        }
+        if self.cell_id != 0 {
+            os.write_uint32(14, self.cell_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for JFNBFKBLGOH {
     }
 
     fn clear(&mut self) {
-        self.AFPKFGMAGKL = false;
         self.BFECJMDNNOB = 0;
+        self.HGMNJFJPMDF = 0;
+        self.AFPKFGMAGKL = false;
+        self.FNDDKOPJGDA = 0;
         self.EGEGCKINJJD = false;
         self.cell_id = 0;
-        self.FNDDKOPJGDA = 0;
-        self.HGMNJFJPMDF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JFNBFKBLGOH {
         static instance: JFNBFKBLGOH = JFNBFKBLGOH {
-            AFPKFGMAGKL: false,
             BFECJMDNNOB: 0,
+            HGMNJFJPMDF: 0,
+            AFPKFGMAGKL: false,
+            FNDDKOPJGDA: 0,
             EGEGCKINJJD: false,
             cell_id: 0,
-            FNDDKOPJGDA: 0,
-            HGMNJFJPMDF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for JFNBFKBLGOH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JFNBFKBLGOH.proto\"\xd0\x01\n\x0bJFNBFKBLGOH\x12\x20\n\x0bAFPKFGMA\
-    GKL\x18\x0e\x20\x01(\x08R\x0bAFPKFGMAGKL\x12\x20\n\x0bBFECJMDNNOB\x18\
-    \x05\x20\x01(\rR\x0bBFECJMDNNOB\x12\x20\n\x0bEGEGCKINJJD\x18\n\x20\x01(\
-    \x08R\x0bEGEGCKINJJD\x12\x17\n\x07cell_id\x18\x0b\x20\x01(\rR\x06cellId\
-    \x12\x20\n\x0bFNDDKOPJGDA\x18\x02\x20\x01(\rR\x0bFNDDKOPJGDA\x12\x20\n\
-    \x0bHGMNJFJPMDF\x18\t\x20\x01(\rR\x0bHGMNJFJPMDFb\x06proto3\
+    \n\x11JFNBFKBLGOH.proto\"\xd0\x01\n\x0bJFNBFKBLGOH\x12\x20\n\x0bBFECJMDN\
+    NOB\x18\x0f\x20\x01(\rR\x0bBFECJMDNNOB\x12\x20\n\x0bHGMNJFJPMDF\x18\x0c\
+    \x20\x01(\rR\x0bHGMNJFJPMDF\x12\x20\n\x0bAFPKFGMAGKL\x18\x02\x20\x01(\
+    \x08R\x0bAFPKFGMAGKL\x12\x20\n\x0bFNDDKOPJGDA\x18\x03\x20\x01(\rR\x0bFND\
+    DKOPJGDA\x12\x20\n\x0bEGEGCKINJJD\x18\x07\x20\x01(\x08R\x0bEGEGCKINJJD\
+    \x12\x17\n\x07cell_id\x18\x0e\x20\x01(\rR\x06cellIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                50 => {
                     self.CAAEJFIJIDJ.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
             os.write_uint32(4, self.retcode)?;
         }
         for v in &self.CAAEJFIJIDJ {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFeverTimeActivityDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetFeverTimeActivityDataScRsp.proto\x1a\x1bFeverTimeActivityData.prot\
     o\"s\n\x1dGetFeverTimeActivityDataScRsp\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcode\x128\n\x0bCAAEJFIJIDJ\x18\x0c\x20\x03(\x0b2\x16.Feve\
+    \x01(\rR\x07retcode\x128\n\x0bCAAEJFIJIDJ\x18\x06\x20\x03(\x0b2\x16.Feve\
     rTimeActivityDataR\x0bCAAEJFIJIDJb\x06proto3\
 ";
 

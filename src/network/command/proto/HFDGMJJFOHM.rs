@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HFDGMJJFOHM {
     // message fields
+    // @@protoc_insertion_point(field:HFDGMJJFOHM.PEFMDFKECOD)
+    pub PEFMDFKECOD: ::std::vec::Vec<super::HAKNOFDPBOD::HAKNOFDPBOD>,
     // @@protoc_insertion_point(field:HFDGMJJFOHM.NPOIGJPCGFB)
     pub NPOIGJPCGFB: ::protobuf::MessageField<super::LMMEBMBGLDN::LMMEBMBGLDN>,
     // @@protoc_insertion_point(field:HFDGMJJFOHM.AJCINKHBDJB)
     pub AJCINKHBDJB: ::protobuf::MessageField<super::HAKNOFDPBOD::HAKNOFDPBOD>,
-    // @@protoc_insertion_point(field:HFDGMJJFOHM.PEFMDFKECOD)
-    pub PEFMDFKECOD: ::std::vec::Vec<super::HAKNOFDPBOD::HAKNOFDPBOD>,
     // special fields
     // @@protoc_insertion_point(special_field:HFDGMJJFOHM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl HFDGMJJFOHM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PEFMDFKECOD",
+            |m: &HFDGMJJFOHM| { &m.PEFMDFKECOD },
+            |m: &mut HFDGMJJFOHM| { &mut m.PEFMDFKECOD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMMEBMBGLDN::LMMEBMBGLDN>(
             "NPOIGJPCGFB",
             |m: &HFDGMJJFOHM| { &m.NPOIGJPCGFB },
@@ -62,11 +67,6 @@ impl HFDGMJJFOHM {
             "AJCINKHBDJB",
             |m: &HFDGMJJFOHM| { &m.AJCINKHBDJB },
             |m: &mut HFDGMJJFOHM| { &mut m.AJCINKHBDJB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PEFMDFKECOD",
-            |m: &HFDGMJJFOHM| { &m.PEFMDFKECOD },
-            |m: &mut HFDGMJJFOHM| { &mut m.PEFMDFKECOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFDGMJJFOHM>(
             "HFDGMJJFOHM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HFDGMJJFOHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                82 => {
+                    self.PEFMDFKECOD.push(is.read_message()?);
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPOIGJPCGFB)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJCINKHBDJB)?;
-                },
                 98 => {
-                    self.PEFMDFKECOD.push(is.read_message()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJCINKHBDJB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,10 @@ impl ::protobuf::Message for HFDGMJJFOHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.PEFMDFKECOD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if let Some(v) = self.NPOIGJPCGFB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -115,25 +119,21 @@ impl ::protobuf::Message for HFDGMJJFOHM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.PEFMDFKECOD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.PEFMDFKECOD {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         if let Some(v) = self.NPOIGJPCGFB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.AJCINKHBDJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        for v in &self.PEFMDFKECOD {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for HFDGMJJFOHM {
     }
 
     fn clear(&mut self) {
+        self.PEFMDFKECOD.clear();
         self.NPOIGJPCGFB.clear();
         self.AJCINKHBDJB.clear();
-        self.PEFMDFKECOD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFDGMJJFOHM {
         static instance: HFDGMJJFOHM = HFDGMJJFOHM {
+            PEFMDFKECOD: ::std::vec::Vec::new(),
             NPOIGJPCGFB: ::protobuf::MessageField::none(),
             AJCINKHBDJB: ::protobuf::MessageField::none(),
-            PEFMDFKECOD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for HFDGMJJFOHM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFDGMJJFOHM.proto\x1a\x11HAKNOFDPBOD.proto\x1a\x11LMMEBMBGLDN.prot\
-    o\"\x9d\x01\n\x0bHFDGMJJFOHM\x12.\n\x0bNPOIGJPCGFB\x18\x01\x20\x01(\x0b2\
-    \x0c.LMMEBMBGLDNR\x0bNPOIGJPCGFB\x12.\n\x0bAJCINKHBDJB\x18\x02\x20\x01(\
-    \x0b2\x0c.HAKNOFDPBODR\x0bAJCINKHBDJB\x12.\n\x0bPEFMDFKECOD\x18\x0c\x20\
-    \x03(\x0b2\x0c.HAKNOFDPBODR\x0bPEFMDFKECODb\x06proto3\
+    o\"\x9d\x01\n\x0bHFDGMJJFOHM\x12.\n\x0bPEFMDFKECOD\x18\n\x20\x03(\x0b2\
+    \x0c.HAKNOFDPBODR\x0bPEFMDFKECOD\x12.\n\x0bNPOIGJPCGFB\x18\x0f\x20\x01(\
+    \x0b2\x0c.LMMEBMBGLDNR\x0bNPOIGJPCGFB\x12.\n\x0bAJCINKHBDJB\x18\x0c\x20\
+    \x01(\x0b2\x0c.HAKNOFDPBODR\x0bAJCINKHBDJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

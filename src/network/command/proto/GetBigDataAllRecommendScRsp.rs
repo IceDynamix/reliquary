@@ -50,7 +50,7 @@ impl GetBigDataAllRecommendScRsp {
         ::std::default::Default::default()
     }
 
-    // .PIIIPHEFDJO DKLBNBDPMPO = 4;
+    // .PIIIPHEFDJO DKLBNBDPMPO = 5;
 
     pub fn DKLBNBDPMPO(&self) -> &super::PIIIPHEFDJO::PIIIPHEFDJO {
         match self.FCDDBOIEOIP {
@@ -99,7 +99,7 @@ impl GetBigDataAllRecommendScRsp {
         }
     }
 
-    // .MKJALMKMPGL PFOPJPJKKLK = 15;
+    // .MKJALMKMPGL PFOPJPJKKLK = 11;
 
     pub fn PFOPJPJKKLK(&self) -> &super::MKJALMKMPGL::MKJALMKMPGL {
         match self.FCDDBOIEOIP {
@@ -194,16 +194,16 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
+                64 => {
                     self.big_data_recommend_type = is.read_enum_or_unknown()?;
                 },
-                34 => {
+                42 => {
                     self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::FCDDBOIEOIP::DKLBNBDPMPO(is.read_message()?));
                 },
-                122 => {
+                90 => {
                     self.FCDDBOIEOIP = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::FCDDBOIEOIP::PFOPJPJKKLK(is.read_message()?));
                 },
                 tag => {
@@ -219,10 +219,10 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.big_data_recommend_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.big_data_recommend_type.value());
         }
         if let ::std::option::Option::Some(ref v) = self.FCDDBOIEOIP {
             match v {
@@ -243,18 +243,18 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
         }
         if let ::std::option::Option::Some(ref v) = self.FCDDBOIEOIP {
             match v {
                 &get_big_data_all_recommend_sc_rsp::FCDDBOIEOIP::DKLBNBDPMPO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &get_big_data_all_recommend_sc_rsp::FCDDBOIEOIP::PFOPJPJKKLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -343,11 +343,11 @@ pub mod get_big_data_all_recommend_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetBigDataAllRecommendScRsp.proto\x1a\x1aBigDataRecommendType.proto\
     \x1a\x11MKJALMKMPGL.proto\x1a\x11PIIIPHEFDJO.proto\"\xf8\x01\n\x1bGetBig\
-    DataAllRecommendScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcod\
-    e\x12L\n\x17big_data_recommend_type\x18\x03\x20\x01(\x0e2\x15.BigDataRec\
-    ommendTypeR\x14bigDataRecommendType\x120\n\x0bDKLBNBDPMPO\x18\x04\x20\
+    DataAllRecommendScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcod\
+    e\x12L\n\x17big_data_recommend_type\x18\x08\x20\x01(\x0e2\x15.BigDataRec\
+    ommendTypeR\x14bigDataRecommendType\x120\n\x0bDKLBNBDPMPO\x18\x05\x20\
     \x01(\x0b2\x0c.PIIIPHEFDJOH\0R\x0bDKLBNBDPMPO\x120\n\x0bPFOPJPJKKLK\x18\
-    \x0f\x20\x01(\x0b2\x0c.MKJALMKMPGLH\0R\x0bPFOPJPJKKLKB\r\n\x0bFCDDBOIEOI\
+    \x0b\x20\x01(\x0b2\x0c.MKJALMKMPGLH\0R\x0bPFOPJPJKKLKB\r\n\x0bFCDDBOIEOI\
     Pb\x06proto3\
 ";
 

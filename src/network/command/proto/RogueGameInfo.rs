@@ -45,7 +45,7 @@ impl RogueGameInfo {
         ::std::default::Default::default()
     }
 
-    // .ChessRogueBuffInfo rogue_buff_info = 12;
+    // .ChessRogueBuffInfo rogue_buff_info = 4;
 
     pub fn rogue_buff_info(&self) -> &super::ChessRogueBuffInfo::ChessRogueBuffInfo {
         match self.JPBHEOJAKGE {
@@ -94,7 +94,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .ChessRogueMiracleInfo game_miracle_info = 13;
+    // .ChessRogueMiracleInfo game_miracle_info = 11;
 
     pub fn game_miracle_info(&self) -> &super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
         match self.JPBHEOJAKGE {
@@ -143,7 +143,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .RogueGameItemValue FFFCCEJIFDK = 8;
+    // .RogueGameItemValue FFFCCEJIFDK = 10;
 
     pub fn FFFCCEJIFDK(&self) -> &super::RogueGameItemValue::RogueGameItemValue {
         match self.JPBHEOJAKGE {
@@ -192,7 +192,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .ChessRogueGameAeonInfo rogue_aeon_info = 1;
+    // .ChessRogueGameAeonInfo rogue_aeon_info = 14;
 
     pub fn rogue_aeon_info(&self) -> &super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo {
         match self.JPBHEOJAKGE {
@@ -241,7 +241,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .RogueDifficultyLevelInfo rogue_difficulty_info = 7;
+    // .RogueDifficultyLevelInfo rogue_difficulty_info = 5;
 
     pub fn rogue_difficulty_info(&self) -> &super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
         match self.JPBHEOJAKGE {
@@ -290,7 +290,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .RogueTournFormulaInfo CKAANMDDKCJ = 11;
+    // .RogueTournFormulaInfo CKAANMDDKCJ = 1;
 
     pub fn CKAANMDDKCJ(&self) -> &super::RogueTournFormulaInfo::RogueTournFormulaInfo {
         match self.JPBHEOJAKGE {
@@ -339,7 +339,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .KeywordUnlockValue NBDACDNBJIK = 15;
+    // .KeywordUnlockValue NBDACDNBJIK = 3;
 
     pub fn NBDACDNBJIK(&self) -> &super::KeywordUnlockValue::KeywordUnlockValue {
         match self.JPBHEOJAKGE {
@@ -388,7 +388,7 @@ impl RogueGameInfo {
         }
     }
 
-    // .RogueTournLineupInfo rogue_lineup_info = 3;
+    // .RogueTournLineupInfo rogue_lineup_info = 12;
 
     pub fn rogue_lineup_info(&self) -> &super::RogueTournLineupInfo::RogueTournLineupInfo {
         match self.JPBHEOJAKGE {
@@ -515,28 +515,28 @@ impl ::protobuf::Message for RogueGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                34 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(is.read_message()?));
                 },
-                106 => {
+                90 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(is.read_message()?));
                 },
-                66 => {
+                82 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(is.read_message()?));
                 },
-                10 => {
+                114 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(is.read_message()?));
                 },
-                58 => {
+                42 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(is.read_message()?));
                 },
-                90 => {
+                10 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(is.read_message()?));
                 },
-                122 => {
+                26 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(is.read_message()?));
                 },
-                26 => {
+                98 => {
                     self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(is.read_message()?));
                 },
                 tag => {
@@ -596,28 +596,28 @@ impl ::protobuf::Message for RogueGameInfo {
         if let ::std::option::Option::Some(ref v) = self.JPBHEOJAKGE {
             match v {
                 &rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
+                &rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
                 &rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -722,17 +722,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     gueGameAeonInfo.proto\x1a\x1bChessRogueMiracleInfo.proto\x1a\x18KeywordU\
     nlockValue.proto\x1a\x1eRogueDifficultyLevelInfo.proto\x1a\x18RogueGameI\
     temValue.proto\x1a\x1bRogueTournFormulaInfo.proto\x1a\x1aRogueTournLineu\
-    pInfo.proto\"\xaa\x04\n\rRogueGameInfo\x12=\n\x0frogue_buff_info\x18\x0c\
+    pInfo.proto\"\xaa\x04\n\rRogueGameInfo\x12=\n\x0frogue_buff_info\x18\x04\
     \x20\x01(\x0b2\x13.ChessRogueBuffInfoH\0R\rrogueBuffInfo\x12D\n\x11game_\
-    miracle_info\x18\r\x20\x01(\x0b2\x16.ChessRogueMiracleInfoH\0R\x0fgameMi\
-    racleInfo\x127\n\x0bFFFCCEJIFDK\x18\x08\x20\x01(\x0b2\x13.RogueGameItemV\
-    alueH\0R\x0bFFFCCEJIFDK\x12A\n\x0frogue_aeon_info\x18\x01\x20\x01(\x0b2\
+    miracle_info\x18\x0b\x20\x01(\x0b2\x16.ChessRogueMiracleInfoH\0R\x0fgame\
+    MiracleInfo\x127\n\x0bFFFCCEJIFDK\x18\n\x20\x01(\x0b2\x13.RogueGameItemV\
+    alueH\0R\x0bFFFCCEJIFDK\x12A\n\x0frogue_aeon_info\x18\x0e\x20\x01(\x0b2\
     \x17.ChessRogueGameAeonInfoH\0R\rrogueAeonInfo\x12O\n\x15rogue_difficult\
-    y_info\x18\x07\x20\x01(\x0b2\x19.RogueDifficultyLevelInfoH\0R\x13rogueDi\
-    fficultyInfo\x12:\n\x0bCKAANMDDKCJ\x18\x0b\x20\x01(\x0b2\x16.RogueTournF\
-    ormulaInfoH\0R\x0bCKAANMDDKCJ\x127\n\x0bNBDACDNBJIK\x18\x0f\x20\x01(\x0b\
+    y_info\x18\x05\x20\x01(\x0b2\x19.RogueDifficultyLevelInfoH\0R\x13rogueDi\
+    fficultyInfo\x12:\n\x0bCKAANMDDKCJ\x18\x01\x20\x01(\x0b2\x16.RogueTournF\
+    ormulaInfoH\0R\x0bCKAANMDDKCJ\x127\n\x0bNBDACDNBJIK\x18\x03\x20\x01(\x0b\
     2\x13.KeywordUnlockValueH\0R\x0bNBDACDNBJIK\x12C\n\x11rogue_lineup_info\
-    \x18\x03\x20\x01(\x0b2\x15.RogueTournLineupInfoH\0R\x0frogueLineupInfoB\
+    \x18\x0c\x20\x01(\x0b2\x15.RogueTournLineupInfoH\0R\x0frogueLineupInfoB\
     \r\n\x0bJPBHEOJAKGEb\x06proto3\
 ";
 

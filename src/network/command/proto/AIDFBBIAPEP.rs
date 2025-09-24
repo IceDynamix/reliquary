@@ -30,10 +30,10 @@ pub struct AIDFBBIAPEP {
     // message fields
     // @@protoc_insertion_point(field:AIDFBBIAPEP.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:AIDFBBIAPEP.MILKEACFLPO)
-    pub MILKEACFLPO: u32,
     // @@protoc_insertion_point(field:AIDFBBIAPEP.PAGCAMAGFLB)
     pub PAGCAMAGFLB: u32,
+    // @@protoc_insertion_point(field:AIDFBBIAPEP.MILKEACFLPO)
+    pub MILKEACFLPO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AIDFBBIAPEP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl AIDFBBIAPEP {
             |m: &mut AIDFBBIAPEP| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MILKEACFLPO",
-            |m: &AIDFBBIAPEP| { &m.MILKEACFLPO },
-            |m: &mut AIDFBBIAPEP| { &mut m.MILKEACFLPO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PAGCAMAGFLB",
             |m: &AIDFBBIAPEP| { &m.PAGCAMAGFLB },
             |m: &mut AIDFBBIAPEP| { &mut m.PAGCAMAGFLB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MILKEACFLPO",
+            |m: &AIDFBBIAPEP| { &m.MILKEACFLPO },
+            |m: &mut AIDFBBIAPEP| { &mut m.MILKEACFLPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AIDFBBIAPEP>(
             "AIDFBBIAPEP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AIDFBBIAPEP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                24 => {
                     self.level = is.read_uint32()?;
                 },
-                48 => {
-                    self.MILKEACFLPO = is.read_uint32()?;
-                },
-                40 => {
+                56 => {
                     self.PAGCAMAGFLB = is.read_uint32()?;
+                },
+                80 => {
+                    self.MILKEACFLPO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for AIDFBBIAPEP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
-        if self.MILKEACFLPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MILKEACFLPO);
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         if self.PAGCAMAGFLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PAGCAMAGFLB);
+            my_size += ::protobuf::rt::uint32_size(7, self.PAGCAMAGFLB);
+        }
+        if self.MILKEACFLPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MILKEACFLPO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AIDFBBIAPEP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
-        }
-        if self.MILKEACFLPO != 0 {
-            os.write_uint32(6, self.MILKEACFLPO)?;
+            os.write_uint32(3, self.level)?;
         }
         if self.PAGCAMAGFLB != 0 {
-            os.write_uint32(5, self.PAGCAMAGFLB)?;
+            os.write_uint32(7, self.PAGCAMAGFLB)?;
+        }
+        if self.MILKEACFLPO != 0 {
+            os.write_uint32(10, self.MILKEACFLPO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AIDFBBIAPEP {
 
     fn clear(&mut self) {
         self.level = 0;
-        self.MILKEACFLPO = 0;
         self.PAGCAMAGFLB = 0;
+        self.MILKEACFLPO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIDFBBIAPEP {
         static instance: AIDFBBIAPEP = AIDFBBIAPEP {
             level: 0,
-            MILKEACFLPO: 0,
             PAGCAMAGFLB: 0,
+            MILKEACFLPO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for AIDFBBIAPEP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIDFBBIAPEP.proto\"g\n\x0bAIDFBBIAPEP\x12\x14\n\x05level\x18\r\x20\
-    \x01(\rR\x05level\x12\x20\n\x0bMILKEACFLPO\x18\x06\x20\x01(\rR\x0bMILKEA\
-    CFLPO\x12\x20\n\x0bPAGCAMAGFLB\x18\x05\x20\x01(\rR\x0bPAGCAMAGFLBb\x06pr\
-    oto3\
+    \n\x11AIDFBBIAPEP.proto\"g\n\x0bAIDFBBIAPEP\x12\x14\n\x05level\x18\x03\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bPAGCAMAGFLB\x18\x07\x20\x01(\rR\x0bPA\
+    GCAMAGFLB\x12\x20\n\x0bMILKEACFLPO\x18\n\x20\x01(\rR\x0bMILKEACFLPOb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

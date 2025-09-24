@@ -86,13 +86,13 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                88 => {
                     self.NEPODDOJJFE = is.read_uint32()?;
                 },
-                112 => {
+                40 => {
                     self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
-                26 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJOFCNAEDHK)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NEPODDOJJFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NEPODDOJJFE);
+            my_size += ::protobuf::rt::uint32_size(11, self.NEPODDOJJFE);
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::int32_size(5, self.NBDLPGBIDLC.value());
         }
         if let Some(v) = self.EJOFCNAEDHK.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LobbyCreateCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NEPODDOJJFE != 0 {
-            os.write_uint32(4, self.NEPODDOJJFE)?;
+            os.write_uint32(11, self.NEPODDOJJFE)?;
         }
         if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
         }
         if let Some(v) = self.EJOFCNAEDHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for LobbyCreateCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16LobbyCreateCsReq.proto\x1a\x11EPEGHCGCMHP.proto\x1a\x13FightGameMo\
     de.proto\"\x96\x01\n\x10LobbyCreateCsReq\x12\x20\n\x0bNEPODDOJJFE\x18\
-    \x04\x20\x01(\rR\x0bNEPODDOJJFE\x120\n\x0bNBDLPGBIDLC\x18\x0e\x20\x01(\
-    \x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12.\n\x0bEJOFCNAEDHK\x18\x03\
+    \x0b\x20\x01(\rR\x0bNEPODDOJJFE\x120\n\x0bNBDLPGBIDLC\x18\x05\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLC\x12.\n\x0bEJOFCNAEDHK\x18\x0c\
     \x20\x01(\x0b2\x0c.EPEGHCGCMHPR\x0bEJOFCNAEDHKb\x06proto3\
 ";
 

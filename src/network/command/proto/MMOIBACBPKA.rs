@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMOIBACBPKA {
     // message fields
-    // @@protoc_insertion_point(field:MMOIBACBPKA.PJGBFKNJPNO)
-    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::HDIJJMDPILE::HDIJJMDPILE>,
     // @@protoc_insertion_point(field:MMOIBACBPKA.value)
     pub value: u32,
+    // @@protoc_insertion_point(field:MMOIBACBPKA.PJGBFKNJPNO)
+    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::HDIJJMDPILE::HDIJJMDPILE>,
     // special fields
     // @@protoc_insertion_point(special_field:MMOIBACBPKA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MMOIBACBPKA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJGBFKNJPNO",
-            |m: &MMOIBACBPKA| { &m.PJGBFKNJPNO },
-            |m: &mut MMOIBACBPKA| { &mut m.PJGBFKNJPNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "value",
             |m: &MMOIBACBPKA| { &m.value },
             |m: &mut MMOIBACBPKA| { &mut m.value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PJGBFKNJPNO",
+            |m: &MMOIBACBPKA| { &m.PJGBFKNJPNO },
+            |m: &mut MMOIBACBPKA| { &mut m.PJGBFKNJPNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMOIBACBPKA>(
             "MMOIBACBPKA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MMOIBACBPKA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
-                },
-                112 => {
+                80 => {
                     self.value = is.read_uint32()?;
+                },
+                40 => {
+                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MMOIBACBPKA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.PJGBFKNJPNO.value());
-        }
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.value);
+            my_size += ::protobuf::rt::uint32_size(10, self.value);
+        }
+        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.PJGBFKNJPNO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MMOIBACBPKA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
-        }
         if self.value != 0 {
-            os.write_uint32(14, self.value)?;
+            os.write_uint32(10, self.value)?;
+        }
+        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MMOIBACBPKA {
     }
 
     fn clear(&mut self) {
-        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE);
         self.value = 0;
+        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMOIBACBPKA {
         static instance: MMOIBACBPKA = MMOIBACBPKA {
-            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
             value: 0,
+            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MMOIBACBPKA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMOIBACBPKA.proto\x1a\x11HDIJJMDPILE.proto\"S\n\x0bMMOIBACBPKA\x12\
-    .\n\x0bPJGBFKNJPNO\x18\t\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNO\
-    \x12\x14\n\x05value\x18\x0e\x20\x01(\rR\x05valueb\x06proto3\
+    \x14\n\x05value\x18\n\x20\x01(\rR\x05value\x12.\n\x0bPJGBFKNJPNO\x18\x05\
+    \x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StopRogueAdventureRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StopRogueAdventureRoomScRsp.adventure_room_info)
-    pub adventure_room_info: ::protobuf::MessageField<super::AdventureRoomInfo::AdventureRoomInfo>,
     // @@protoc_insertion_point(field:StopRogueAdventureRoomScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StopRogueAdventureRoomScRsp.adventure_room_info)
+    pub adventure_room_info: ::protobuf::MessageField<super::AdventureRoomInfo::AdventureRoomInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:StopRogueAdventureRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl StopRogueAdventureRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AdventureRoomInfo::AdventureRoomInfo>(
-            "adventure_room_info",
-            |m: &StopRogueAdventureRoomScRsp| { &m.adventure_room_info },
-            |m: &mut StopRogueAdventureRoomScRsp| { &mut m.adventure_room_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StopRogueAdventureRoomScRsp| { &m.retcode },
             |m: &mut StopRogueAdventureRoomScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AdventureRoomInfo::AdventureRoomInfo>(
+            "adventure_room_info",
+            |m: &StopRogueAdventureRoomScRsp| { &m.adventure_room_info },
+            |m: &mut StopRogueAdventureRoomScRsp| { &mut m.adventure_room_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StopRogueAdventureRoomScRsp>(
             "StopRogueAdventureRoomScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.adventure_room_info)?;
-                },
-                88 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.adventure_room_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
         if let Some(v) = self.adventure_room_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.adventure_room_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if let Some(v) = self.adventure_room_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StopRogueAdventureRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.adventure_room_info.clear();
         self.retcode = 0;
+        self.adventure_room_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StopRogueAdventureRoomScRsp {
         static instance: StopRogueAdventureRoomScRsp = StopRogueAdventureRoomScRsp {
-            adventure_room_info: ::protobuf::MessageField::none(),
             retcode: 0,
+            adventure_room_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StopRogueAdventureRoomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!StopRogueAdventureRoomScRsp.proto\x1a\x17AdventureRoomInfo.proto\"{\n\
-    \x1bStopRogueAdventureRoomScRsp\x12B\n\x13adventure_room_info\x18\x07\
-    \x20\x01(\x0b2\x12.AdventureRoomInfoR\x11adventureRoomInfo\x12\x18\n\x07\
-    retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x1bStopRogueAdventureRoomScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
+    \x07retcode\x12B\n\x13adventure_room_info\x18\t\x20\x01(\x0b2\x12.Advent\
+    ureRoomInfoR\x11adventureRoomInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

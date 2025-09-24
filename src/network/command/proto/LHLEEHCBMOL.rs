@@ -30,16 +30,16 @@ pub struct LHLEEHCBMOL {
     // message fields
     // @@protoc_insertion_point(field:LHLEEHCBMOL.skill_list)
     pub skill_list: ::std::vec::Vec<super::GOCKBLNJIBG::GOCKBLNJIBG>,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.CFKPAICDJPJ)
-    pub CFKPAICDJPJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.KBGDCEHIFFJ)
-    pub KBGDCEHIFFJ: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.cur_index)
-    pub cur_index: u32,
     // @@protoc_insertion_point(field:LHLEEHCBMOL.PKIDBDGPILO)
     pub PKIDBDGPILO: u32,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.CFKPAICDJPJ)
+    pub CFKPAICDJPJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LHLEEHCBMOL.OAFAAEEMNFB)
     pub OAFAAEEMNFB: u32,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.cur_index)
+    pub cur_index: u32,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.KBGDCEHIFFJ)
+    pub KBGDCEHIFFJ: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
     // special fields
     // @@protoc_insertion_point(special_field:LHLEEHCBMOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,30 +64,30 @@ impl LHLEEHCBMOL {
             |m: &LHLEEHCBMOL| { &m.skill_list },
             |m: &mut LHLEEHCBMOL| { &mut m.skill_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PKIDBDGPILO",
+            |m: &LHLEEHCBMOL| { &m.PKIDBDGPILO },
+            |m: &mut LHLEEHCBMOL| { &mut m.PKIDBDGPILO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CFKPAICDJPJ",
             |m: &LHLEEHCBMOL| { &m.CFKPAICDJPJ },
             |m: &mut LHLEEHCBMOL| { &mut m.CFKPAICDJPJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KBGDCEHIFFJ",
-            |m: &LHLEEHCBMOL| { &m.KBGDCEHIFFJ },
-            |m: &mut LHLEEHCBMOL| { &mut m.KBGDCEHIFFJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OAFAAEEMNFB",
+            |m: &LHLEEHCBMOL| { &m.OAFAAEEMNFB },
+            |m: &mut LHLEEHCBMOL| { &mut m.OAFAAEEMNFB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_index",
             |m: &LHLEEHCBMOL| { &m.cur_index },
             |m: &mut LHLEEHCBMOL| { &mut m.cur_index },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKIDBDGPILO",
-            |m: &LHLEEHCBMOL| { &m.PKIDBDGPILO },
-            |m: &mut LHLEEHCBMOL| { &mut m.PKIDBDGPILO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAFAAEEMNFB",
-            |m: &LHLEEHCBMOL| { &m.OAFAAEEMNFB },
-            |m: &mut LHLEEHCBMOL| { &mut m.OAFAAEEMNFB },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KBGDCEHIFFJ",
+            |m: &LHLEEHCBMOL| { &m.KBGDCEHIFFJ },
+            |m: &mut LHLEEHCBMOL| { &mut m.KBGDCEHIFFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHLEEHCBMOL>(
             "LHLEEHCBMOL",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for LHLEEHCBMOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                66 => {
                     self.skill_list.push(is.read_message()?);
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CFKPAICDJPJ)?;
-                },
-                96 => {
-                    self.CFKPAICDJPJ.push(is.read_uint32()?);
-                },
-                50 => {
-                    self.KBGDCEHIFFJ.push(is.read_message()?);
-                },
                 112 => {
-                    self.cur_index = is.read_uint32()?;
-                },
-                24 => {
                     self.PKIDBDGPILO = is.read_uint32()?;
                 },
-                56 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CFKPAICDJPJ)?;
+                },
+                32 => {
+                    self.CFKPAICDJPJ.push(is.read_uint32()?);
+                },
+                96 => {
                     self.OAFAAEEMNFB = is.read_uint32()?;
+                },
+                88 => {
+                    self.cur_index = is.read_uint32()?;
+                },
+                122 => {
+                    self.KBGDCEHIFFJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -144,20 +144,20 @@ impl ::protobuf::Message for LHLEEHCBMOL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CFKPAICDJPJ);
+        if self.PKIDBDGPILO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PKIDBDGPILO);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CFKPAICDJPJ);
+        if self.OAFAAEEMNFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OAFAAEEMNFB);
+        }
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_index);
+        }
         for value in &self.KBGDCEHIFFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.cur_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cur_index);
-        }
-        if self.PKIDBDGPILO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PKIDBDGPILO);
-        }
-        if self.OAFAAEEMNFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OAFAAEEMNFB);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -165,21 +165,21 @@ impl ::protobuf::Message for LHLEEHCBMOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.skill_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        os.write_repeated_packed_uint32(12, &self.CFKPAICDJPJ)?;
-        for v in &self.KBGDCEHIFFJ {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.cur_index != 0 {
-            os.write_uint32(14, self.cur_index)?;
-        }
         if self.PKIDBDGPILO != 0 {
-            os.write_uint32(3, self.PKIDBDGPILO)?;
+            os.write_uint32(14, self.PKIDBDGPILO)?;
         }
+        os.write_repeated_packed_uint32(4, &self.CFKPAICDJPJ)?;
         if self.OAFAAEEMNFB != 0 {
-            os.write_uint32(7, self.OAFAAEEMNFB)?;
+            os.write_uint32(12, self.OAFAAEEMNFB)?;
         }
+        if self.cur_index != 0 {
+            os.write_uint32(11, self.cur_index)?;
+        }
+        for v in &self.KBGDCEHIFFJ {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,22 +198,22 @@ impl ::protobuf::Message for LHLEEHCBMOL {
 
     fn clear(&mut self) {
         self.skill_list.clear();
-        self.CFKPAICDJPJ.clear();
-        self.KBGDCEHIFFJ.clear();
-        self.cur_index = 0;
         self.PKIDBDGPILO = 0;
+        self.CFKPAICDJPJ.clear();
         self.OAFAAEEMNFB = 0;
+        self.cur_index = 0;
+        self.KBGDCEHIFFJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHLEEHCBMOL {
         static instance: LHLEEHCBMOL = LHLEEHCBMOL {
             skill_list: ::std::vec::Vec::new(),
-            CFKPAICDJPJ: ::std::vec::Vec::new(),
-            KBGDCEHIFFJ: ::std::vec::Vec::new(),
-            cur_index: 0,
             PKIDBDGPILO: 0,
+            CFKPAICDJPJ: ::std::vec::Vec::new(),
             OAFAAEEMNFB: 0,
+            cur_index: 0,
+            KBGDCEHIFFJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for LHLEEHCBMOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHLEEHCBMOL.proto\x1a\x11GOCKBLNJIBG.proto\x1a\x11MAONNNELGCC.prot\
-    o\"\xed\x01\n\x0bLHLEEHCBMOL\x12+\n\nskill_list\x18\x04\x20\x03(\x0b2\
-    \x0c.GOCKBLNJIBGR\tskillList\x12\x20\n\x0bCFKPAICDJPJ\x18\x0c\x20\x03(\r\
-    R\x0bCFKPAICDJPJ\x12.\n\x0bKBGDCEHIFFJ\x18\x06\x20\x03(\x0b2\x0c.MAONNNE\
-    LGCCR\x0bKBGDCEHIFFJ\x12\x1b\n\tcur_index\x18\x0e\x20\x01(\rR\x08curInde\
-    x\x12\x20\n\x0bPKIDBDGPILO\x18\x03\x20\x01(\rR\x0bPKIDBDGPILO\x12\x20\n\
-    \x0bOAFAAEEMNFB\x18\x07\x20\x01(\rR\x0bOAFAAEEMNFBb\x06proto3\
+    o\"\xed\x01\n\x0bLHLEEHCBMOL\x12+\n\nskill_list\x18\x08\x20\x03(\x0b2\
+    \x0c.GOCKBLNJIBGR\tskillList\x12\x20\n\x0bPKIDBDGPILO\x18\x0e\x20\x01(\r\
+    R\x0bPKIDBDGPILO\x12\x20\n\x0bCFKPAICDJPJ\x18\x04\x20\x03(\rR\x0bCFKPAIC\
+    DJPJ\x12\x20\n\x0bOAFAAEEMNFB\x18\x0c\x20\x01(\rR\x0bOAFAAEEMNFB\x12\x1b\
+    \n\tcur_index\x18\x0b\x20\x01(\rR\x08curIndex\x12.\n\x0bKBGDCEHIFFJ\x18\
+    \x0f\x20\x03(\x0b2\x0c.MAONNNELGCCR\x0bKBGDCEHIFFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

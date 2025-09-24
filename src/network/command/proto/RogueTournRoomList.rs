@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournRoomList {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournRoomList.room_index)
-    pub room_index: u32,
     // @@protoc_insertion_point(field:RogueTournRoomList.room_id)
     pub room_id: u32,
-    // @@protoc_insertion_point(field:RogueTournRoomList.EIPNNEJNNKJ)
-    pub EIPNNEJNNKJ: u32,
     // @@protoc_insertion_point(field:RogueTournRoomList.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueTournRoomStatus::RogueTournRoomStatus>,
+    // @@protoc_insertion_point(field:RogueTournRoomList.room_index)
+    pub room_index: u32,
+    // @@protoc_insertion_point(field:RogueTournRoomList.EIPNNEJNNKJ)
+    pub EIPNNEJNNKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournRoomList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl RogueTournRoomList {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_index",
-            |m: &RogueTournRoomList| { &m.room_index },
-            |m: &mut RogueTournRoomList| { &mut m.room_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &RogueTournRoomList| { &m.room_id },
             |m: &mut RogueTournRoomList| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIPNNEJNNKJ",
-            |m: &RogueTournRoomList| { &m.EIPNNEJNNKJ },
-            |m: &mut RogueTournRoomList| { &mut m.EIPNNEJNNKJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &RogueTournRoomList| { &m.status },
             |m: &mut RogueTournRoomList| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_index",
+            |m: &RogueTournRoomList| { &m.room_index },
+            |m: &mut RogueTournRoomList| { &mut m.room_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIPNNEJNNKJ",
+            |m: &RogueTournRoomList| { &m.EIPNNEJNNKJ },
+            |m: &mut RogueTournRoomList| { &mut m.EIPNNEJNNKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournRoomList>(
             "RogueTournRoomList",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueTournRoomList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.room_index = is.read_uint32()?;
-                },
-                104 => {
+                72 => {
                     self.room_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.EIPNNEJNNKJ = is.read_uint32()?;
-                },
-                88 => {
+                40 => {
                     self.status = is.read_enum_or_unknown()?;
+                },
+                32 => {
+                    self.room_index = is.read_uint32()?;
+                },
+                24 => {
+                    self.EIPNNEJNNKJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RogueTournRoomList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.room_index);
-        }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.room_id);
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EIPNNEJNNKJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.room_id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournRoomStatus::RogueTournRoomStatus::ROGUE_TOURN_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+            my_size += ::protobuf::rt::int32_size(5, self.status.value());
+        }
+        if self.room_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.room_index);
+        }
+        if self.EIPNNEJNNKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EIPNNEJNNKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for RogueTournRoomList {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_index != 0 {
-            os.write_uint32(6, self.room_index)?;
-        }
         if self.room_id != 0 {
-            os.write_uint32(13, self.room_id)?;
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(2, self.EIPNNEJNNKJ)?;
+            os.write_uint32(9, self.room_id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournRoomStatus::RogueTournRoomStatus::ROGUE_TOURN_ROOM_STATUS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.room_index != 0 {
+            os.write_uint32(4, self.room_index)?;
+        }
+        if self.EIPNNEJNNKJ != 0 {
+            os.write_uint32(3, self.EIPNNEJNNKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RogueTournRoomList {
     }
 
     fn clear(&mut self) {
-        self.room_index = 0;
         self.room_id = 0;
-        self.EIPNNEJNNKJ = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournRoomStatus::RogueTournRoomStatus::ROGUE_TOURN_ROOM_STATUS_NONE);
+        self.room_index = 0;
+        self.EIPNNEJNNKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournRoomList {
         static instance: RogueTournRoomList = RogueTournRoomList {
-            room_index: 0,
             room_id: 0,
-            EIPNNEJNNKJ: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            room_index: 0,
+            EIPNNEJNNKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRoomList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueTournRoomList.proto\x1a\x1aRogueTournRoomStatus.proto\"\x9d\
-    \x01\n\x12RogueTournRoomList\x12\x1d\n\nroom_index\x18\x06\x20\x01(\rR\t\
-    roomIndex\x12\x17\n\x07room_id\x18\r\x20\x01(\rR\x06roomId\x12\x20\n\x0b\
-    EIPNNEJNNKJ\x18\x02\x20\x01(\rR\x0bEIPNNEJNNKJ\x12-\n\x06status\x18\x0b\
-    \x20\x01(\x0e2\x15.RogueTournRoomStatusR\x06statusb\x06proto3\
+    \x01\n\x12RogueTournRoomList\x12\x17\n\x07room_id\x18\t\x20\x01(\rR\x06r\
+    oomId\x12-\n\x06status\x18\x05\x20\x01(\x0e2\x15.RogueTournRoomStatusR\
+    \x06status\x12\x1d\n\nroom_index\x18\x04\x20\x01(\rR\troomIndex\x12\x20\
+    \n\x0bEIPNNEJNNKJ\x18\x03\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KADINMKCJBH {
     // message fields
-    // @@protoc_insertion_point(field:KADINMKCJBH.KIABCFHDGBK)
-    pub KIABCFHDGBK: ::protobuf::MessageField<super::PEAJLADINFK::PEAJLADINFK>,
     // @@protoc_insertion_point(field:KADINMKCJBH.queue_position)
     pub queue_position: u32,
+    // @@protoc_insertion_point(field:KADINMKCJBH.KIABCFHDGBK)
+    pub KIABCFHDGBK: ::protobuf::MessageField<super::PEAJLADINFK::PEAJLADINFK>,
     // special fields
     // @@protoc_insertion_point(special_field:KADINMKCJBH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl KADINMKCJBH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEAJLADINFK::PEAJLADINFK>(
-            "KIABCFHDGBK",
-            |m: &KADINMKCJBH| { &m.KIABCFHDGBK },
-            |m: &mut KADINMKCJBH| { &mut m.KIABCFHDGBK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
             |m: &KADINMKCJBH| { &m.queue_position },
             |m: &mut KADINMKCJBH| { &mut m.queue_position },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEAJLADINFK::PEAJLADINFK>(
+            "KIABCFHDGBK",
+            |m: &KADINMKCJBH| { &m.KIABCFHDGBK },
+            |m: &mut KADINMKCJBH| { &mut m.KIABCFHDGBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KADINMKCJBH>(
             "KADINMKCJBH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KADINMKCJBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIABCFHDGBK)?;
-                },
-                16 => {
+                96 => {
                     self.queue_position = is.read_uint32()?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIABCFHDGBK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for KADINMKCJBH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.queue_position != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.queue_position);
+        }
         if let Some(v) = self.KIABCFHDGBK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for KADINMKCJBH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KIABCFHDGBK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.queue_position != 0 {
-            os.write_uint32(2, self.queue_position)?;
+            os.write_uint32(12, self.queue_position)?;
+        }
+        if let Some(v) = self.KIABCFHDGBK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for KADINMKCJBH {
     }
 
     fn clear(&mut self) {
-        self.KIABCFHDGBK.clear();
         self.queue_position = 0;
+        self.KIABCFHDGBK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KADINMKCJBH {
         static instance: KADINMKCJBH = KADINMKCJBH {
-            KIABCFHDGBK: ::protobuf::MessageField::none(),
             queue_position: 0,
+            KIABCFHDGBK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for KADINMKCJBH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KADINMKCJBH.proto\x1a\x11PEAJLADINFK.proto\"d\n\x0bKADINMKCJBH\x12\
-    .\n\x0bKIABCFHDGBK\x18\r\x20\x01(\x0b2\x0c.PEAJLADINFKR\x0bKIABCFHDGBK\
-    \x12%\n\x0equeue_position\x18\x02\x20\x01(\rR\rqueuePositionb\x06proto3\
+    %\n\x0equeue_position\x18\x0c\x20\x01(\rR\rqueuePosition\x12.\n\x0bKIABC\
+    FHDGBK\x18\x02\x20\x01(\x0b2\x0c.PEAJLADINFKR\x0bKIABCFHDGBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

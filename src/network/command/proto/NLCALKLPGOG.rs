@@ -86,13 +86,13 @@ impl ::protobuf::Message for NLCALKLPGOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.OGJOFMCMFPG = is.read_uint32()?;
                 },
-                56 => {
+                24 => {
                     self.BMALPKEKBEL = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for NLCALKLPGOG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OGJOFMCMFPG);
+            my_size += ::protobuf::rt::uint32_size(4, self.OGJOFMCMFPG);
         }
         if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BMALPKEKBEL);
+            my_size += ::protobuf::rt::uint32_size(3, self.BMALPKEKBEL);
         }
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.PJGBFKNJPNO.value());
+            my_size += ::protobuf::rt::int32_size(13, self.PJGBFKNJPNO.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for NLCALKLPGOG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(15, self.OGJOFMCMFPG)?;
+            os.write_uint32(4, self.OGJOFMCMFPG)?;
         }
         if self.BMALPKEKBEL != 0 {
-            os.write_uint32(7, self.BMALPKEKBEL)?;
+            os.write_uint32(3, self.BMALPKEKBEL)?;
         }
         if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for NLCALKLPGOG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLCALKLPGOG.proto\x1a\x11HDIJJMDPILE.proto\"\x81\x01\n\x0bNLCALKLP\
-    GOG\x12\x20\n\x0bOGJOFMCMFPG\x18\x0f\x20\x01(\rR\x0bOGJOFMCMFPG\x12\x20\
-    \n\x0bBMALPKEKBEL\x18\x07\x20\x01(\rR\x0bBMALPKEKBEL\x12.\n\x0bPJGBFKNJP\
-    NO\x18\n\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNOb\x06proto3\
+    GOG\x12\x20\n\x0bOGJOFMCMFPG\x18\x04\x20\x01(\rR\x0bOGJOFMCMFPG\x12\x20\
+    \n\x0bBMALPKEKBEL\x18\x03\x20\x01(\rR\x0bBMALPKEKBEL\x12.\n\x0bPJGBFKNJP\
+    NO\x18\r\x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

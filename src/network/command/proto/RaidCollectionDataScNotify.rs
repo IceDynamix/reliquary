@@ -72,7 +72,7 @@ impl ::protobuf::Message for RaidCollectionDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.collection_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RaidCollectionDataScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.collection_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RaidCollectionDataScNotify.proto\x1a\x11ACONLFJEJOK.proto\"S\n\x1a\
-    RaidCollectionDataScNotify\x125\n\x0fcollection_info\x18\x08\x20\x01(\
+    RaidCollectionDataScNotify\x125\n\x0fcollection_info\x18\x0b\x20\x01(\
     \x0b2\x0c.ACONLFJEJOKR\x0ecollectionInfob\x06proto3\
 ";
 

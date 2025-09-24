@@ -79,7 +79,7 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
         }
         if self.DJFCMLIPDAB != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stage_id != 0 {
-            os.write_uint32(7, self.stage_id)?;
+            os.write_uint32(5, self.stage_id)?;
         }
         if self.DJFCMLIPDAB != false {
             os.write_bool(15, self.DJFCMLIPDAB)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartTrackPhotoStageCsReq.proto\"X\n\x19StartTrackPhotoStageCsReq\
-    \x12\x19\n\x08stage_id\x18\x07\x20\x01(\rR\x07stageId\x12\x20\n\x0bDJFCM\
+    \x12\x19\n\x08stage_id\x18\x05\x20\x01(\rR\x07stageId\x12\x20\n\x0bDJFCM\
     LIPDAB\x18\x0f\x20\x01(\x08R\x0bDJFCMLIPDABb\x06proto3\
 ";
 

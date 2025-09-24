@@ -27,6 +27,11 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:KEHMGKIHEFN)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KEHMGKIHEFN {
+    // message fields
+    // @@protoc_insertion_point(field:KEHMGKIHEFN.remark_name)
+    pub remark_name: ::std::string::String,
+    // @@protoc_insertion_point(field:KEHMGKIHEFN.player_info)
+    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // message oneof groups
     pub NFGNBBJGANG: ::std::option::Option<kehmgkihefn::NFGNBBJGANG>,
     // special fields
@@ -45,7 +50,7 @@ impl KEHMGKIHEFN {
         ::std::default::Default::default()
     }
 
-    // .FCNOLLFGPCK GIEIDJEEPAC = 11;
+    // .FCNOLLFGPCK GIEIDJEEPAC = 14;
 
     pub fn GIEIDJEEPAC(&self) -> &super::FCNOLLFGPCK::FCNOLLFGPCK {
         match self.NFGNBBJGANG {
@@ -94,7 +99,7 @@ impl KEHMGKIHEFN {
         }
     }
 
-    // .KAMCIOPBPGA ADDCJEJPFEF = 3;
+    // .KAMCIOPBPGA ADDCJEJPFEF = 10;
 
     pub fn ADDCJEJPFEF(&self) -> &super::KAMCIOPBPGA::KAMCIOPBPGA {
         match self.NFGNBBJGANG {
@@ -143,9 +148,117 @@ impl KEHMGKIHEFN {
         }
     }
 
+    // .DKHENLMAEBE PMHIBHNEPHI = 5;
+
+    pub fn PMHIBHNEPHI(&self) -> &super::DKHENLMAEBE::DKHENLMAEBE {
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v)) => v,
+            _ => <super::DKHENLMAEBE::DKHENLMAEBE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_PMHIBHNEPHI(&mut self) {
+        self.NFGNBBJGANG = ::std::option::Option::None;
+    }
+
+    pub fn has_PMHIBHNEPHI(&self) -> bool {
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_PMHIBHNEPHI(&mut self, v: super::DKHENLMAEBE::DKHENLMAEBE) {
+        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_PMHIBHNEPHI(&mut self) -> &mut super::DKHENLMAEBE::DKHENLMAEBE {
+        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(_)) = self.NFGNBBJGANG {
+        } else {
+            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(super::DKHENLMAEBE::DKHENLMAEBE::new()));
+        }
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_PMHIBHNEPHI(&mut self) -> super::DKHENLMAEBE::DKHENLMAEBE {
+        if self.has_PMHIBHNEPHI() {
+            match self.NFGNBBJGANG.take() {
+                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DKHENLMAEBE::DKHENLMAEBE::new()
+        }
+    }
+
+    // .IIGJFPMIGKF JILKKAJBLJK = 4;
+
+    pub fn JILKKAJBLJK(&self) -> &super::IIGJFPMIGKF::IIGJFPMIGKF {
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v)) => v,
+            _ => <super::IIGJFPMIGKF::IIGJFPMIGKF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_JILKKAJBLJK(&mut self) {
+        self.NFGNBBJGANG = ::std::option::Option::None;
+    }
+
+    pub fn has_JILKKAJBLJK(&self) -> bool {
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_JILKKAJBLJK(&mut self, v: super::IIGJFPMIGKF::IIGJFPMIGKF) {
+        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_JILKKAJBLJK(&mut self) -> &mut super::IIGJFPMIGKF::IIGJFPMIGKF {
+        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(_)) = self.NFGNBBJGANG {
+        } else {
+            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(super::IIGJFPMIGKF::IIGJFPMIGKF::new()));
+        }
+        match self.NFGNBBJGANG {
+            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_JILKKAJBLJK(&mut self) -> super::IIGJFPMIGKF::IIGJFPMIGKF {
+        if self.has_JILKKAJBLJK() {
+            match self.NFGNBBJGANG.take() {
+                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IIGJFPMIGKF::IIGJFPMIGKF::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &KEHMGKIHEFN| { &m.remark_name },
+            |m: &mut KEHMGKIHEFN| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_info",
+            |m: &KEHMGKIHEFN| { &m.player_info },
+            |m: &mut KEHMGKIHEFN| { &mut m.player_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FCNOLLFGPCK::FCNOLLFGPCK>(
             "GIEIDJEEPAC",
             KEHMGKIHEFN::has_GIEIDJEEPAC,
@@ -159,6 +272,20 @@ impl KEHMGKIHEFN {
             KEHMGKIHEFN::ADDCJEJPFEF,
             KEHMGKIHEFN::mut_ADDCJEJPFEF,
             KEHMGKIHEFN::set_ADDCJEJPFEF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DKHENLMAEBE::DKHENLMAEBE>(
+            "PMHIBHNEPHI",
+            KEHMGKIHEFN::has_PMHIBHNEPHI,
+            KEHMGKIHEFN::PMHIBHNEPHI,
+            KEHMGKIHEFN::mut_PMHIBHNEPHI,
+            KEHMGKIHEFN::set_PMHIBHNEPHI,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IIGJFPMIGKF::IIGJFPMIGKF>(
+            "JILKKAJBLJK",
+            KEHMGKIHEFN::has_JILKKAJBLJK,
+            KEHMGKIHEFN::JILKKAJBLJK,
+            KEHMGKIHEFN::mut_JILKKAJBLJK,
+            KEHMGKIHEFN::set_JILKKAJBLJK,
         ));
         oneofs.push(kehmgkihefn::NFGNBBJGANG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KEHMGKIHEFN>(
@@ -179,11 +306,23 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                50 => {
+                    self.remark_name = is.read_string()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
+                },
+                114 => {
                     self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(is.read_message()?));
                 },
-                26 => {
+                82 => {
                     self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(is.read_message()?));
+                },
+                42 => {
+                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(is.read_message()?));
+                },
+                34 => {
+                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,6 +336,13 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.remark_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.remark_name);
+        }
+        if let Some(v) = self.player_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
             match v {
                 &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
@@ -204,6 +350,14 @@ impl ::protobuf::Message for KEHMGKIHEFN {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +369,25 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if !self.remark_name.is_empty() {
+            os.write_string(6, &self.remark_name)?;
+        }
+        if let Some(v) = self.player_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
         if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
             match v {
                 &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -242,6 +408,10 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     }
 
     fn clear(&mut self) {
+        self.remark_name.clear();
+        self.player_info.clear();
+        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NFGNBBJGANG = ::std::option::Option::None;
         self.NFGNBBJGANG = ::std::option::Option::None;
         self.NFGNBBJGANG = ::std::option::Option::None;
         self.special_fields.clear();
@@ -249,6 +419,8 @@ impl ::protobuf::Message for KEHMGKIHEFN {
 
     fn default_instance() -> &'static KEHMGKIHEFN {
         static instance: KEHMGKIHEFN = KEHMGKIHEFN {
+            remark_name: ::std::string::String::new(),
+            player_info: ::protobuf::MessageField::none(),
             NFGNBBJGANG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -284,6 +456,10 @@ pub mod kehmgkihefn {
         GIEIDJEEPAC(super::super::FCNOLLFGPCK::FCNOLLFGPCK),
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.ADDCJEJPFEF)
         ADDCJEJPFEF(super::super::KAMCIOPBPGA::KAMCIOPBPGA),
+        // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.PMHIBHNEPHI)
+        PMHIBHNEPHI(super::super::DKHENLMAEBE::DKHENLMAEBE),
+        // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.JILKKAJBLJK)
+        JILKKAJBLJK(super::super::IIGJFPMIGKF::IIGJFPMIGKF),
     }
 
     impl ::protobuf::Oneof for NFGNBBJGANG {
@@ -304,11 +480,16 @@ pub mod kehmgkihefn {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KEHMGKIHEFN.proto\x1a\x11FCNOLLFGPCK.proto\x1a\x11KAMCIOPBPGA.prot\
-    o\"\x80\x01\n\x0bKEHMGKIHEFN\x120\n\x0bGIEIDJEEPAC\x18\x0b\x20\x01(\x0b2\
-    \x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\x03\x20\
-    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEFB\r\n\x0bNFGNBBJGANGb\x06pr\
-    oto3\
+    \n\x11KEHMGKIHEFN.proto\x1a\x11DKHENLMAEBE.proto\x1a\x11FCNOLLFGPCK.prot\
+    o\x1a\x11IIGJFPMIGKF.proto\x1a\x11KAMCIOPBPGA.proto\x1a\x16PlayerSimpleI\
+    nfo.proto\"\xb9\x02\n\x0bKEHMGKIHEFN\x12\x1f\n\x0bremark_name\x18\x06\
+    \x20\x01(\tR\nremarkName\x122\n\x0bplayer_info\x18\x0f\x20\x01(\x0b2\x11\
+    .PlayerSimpleInfoR\nplayerInfo\x120\n\x0bGIEIDJEEPAC\x18\x0e\x20\x01(\
+    \x0b2\x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\n\x20\
+    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEF\x120\n\x0bPMHIBHNEPHI\x18\
+    \x05\x20\x01(\x0b2\x0c.DKHENLMAEBEH\0R\x0bPMHIBHNEPHI\x120\n\x0bJILKKAJB\
+    LJK\x18\x04\x20\x01(\x0b2\x0c.IIGJFPMIGKFH\0R\x0bJILKKAJBLJKB\r\n\x0bNFG\
+    NBBJGANGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -325,9 +506,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(5);
+            deps.push(super::DKHENLMAEBE::file_descriptor().clone());
             deps.push(super::FCNOLLFGPCK::file_descriptor().clone());
+            deps.push(super::IIGJFPMIGKF::file_descriptor().clone());
             deps.push(super::KAMCIOPBPGA::file_descriptor().clone());
+            deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KEHMGKIHEFN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

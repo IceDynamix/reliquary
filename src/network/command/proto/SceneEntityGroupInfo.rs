@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityGroupInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityGroupInfo.entity_list)
-    pub entity_list: ::std::vec::Vec<super::SceneEntityInfo::SceneEntityInfo>,
     // @@protoc_insertion_point(field:SceneEntityGroupInfo.state)
     pub state: u32,
+    // @@protoc_insertion_point(field:SceneEntityGroupInfo.entity_list)
+    pub entity_list: ::std::vec::Vec<super::SceneEntityInfo::SceneEntityInfo>,
     // @@protoc_insertion_point(field:SceneEntityGroupInfo.HEJAMOOJBCJ)
     pub HEJAMOOJBCJ: ::std::collections::HashMap<::std::string::String, i32>,
     // @@protoc_insertion_point(field:SceneEntityGroupInfo.group_id)
@@ -55,15 +55,15 @@ impl SceneEntityGroupInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_list",
-            |m: &SceneEntityGroupInfo| { &m.entity_list },
-            |m: &mut SceneEntityGroupInfo| { &mut m.entity_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &SceneEntityGroupInfo| { &m.state },
             |m: &mut SceneEntityGroupInfo| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "entity_list",
+            |m: &SceneEntityGroupInfo| { &m.entity_list },
+            |m: &mut SceneEntityGroupInfo| { &mut m.entity_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "HEJAMOOJBCJ",
@@ -93,13 +93,13 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.entity_list.push(is.read_message()?);
-                },
-                80 => {
+                32 => {
                     self.state = is.read_uint32()?;
                 },
-                34 => {
+                98 => {
+                    self.entity_list.push(is.read_message()?);
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
                     is.pop_limit(old_limit);
                     self.HEJAMOOJBCJ.insert(key, value);
                 },
-                24 => {
+                112 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -129,13 +129,13 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.state != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.state);
+        }
         for value in &self.entity_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.state);
-        }
         for (k, v) in &self.HEJAMOOJBCJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -143,7 +143,7 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,23 +151,23 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.entity_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if self.state != 0 {
-            os.write_uint32(10, self.state)?;
+            os.write_uint32(4, self.state)?;
         }
+        for v in &self.entity_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         for (k, v) in &self.HEJAMOOJBCJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
         if self.group_id != 0 {
-            os.write_uint32(3, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::Message for SceneEntityGroupInfo {
     }
 
     fn clear(&mut self) {
-        self.entity_list.clear();
         self.state = 0;
+        self.entity_list.clear();
         self.HEJAMOOJBCJ.clear();
         self.group_id = 0;
         self.special_fields.clear();
@@ -218,13 +218,13 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityGroupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEntityGroupInfo.proto\x1a\x15SceneEntityInfo.proto\"\x84\x02\
-    \n\x14SceneEntityGroupInfo\x121\n\x0bentity_list\x18\x07\x20\x03(\x0b2\
-    \x10.SceneEntityInfoR\nentityList\x12\x14\n\x05state\x18\n\x20\x01(\rR\
-    \x05state\x12H\n\x0bHEJAMOOJBCJ\x18\x04\x20\x03(\x0b2&.SceneEntityGroupI\
-    nfo.HEJAMOOJBCJEntryR\x0bHEJAMOOJBCJ\x12\x19\n\x08group_id\x18\x03\x20\
-    \x01(\rR\x07groupId\x1a>\n\x10HEJAMOOJBCJEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\
-    \x028\x01b\x06proto3\
+    \n\x14SceneEntityGroupInfo\x12\x14\n\x05state\x18\x04\x20\x01(\rR\x05sta\
+    te\x121\n\x0bentity_list\x18\x0c\x20\x03(\x0b2\x10.SceneEntityInfoR\nent\
+    ityList\x12H\n\x0bHEJAMOOJBCJ\x18\x06\x20\x03(\x0b2&.SceneEntityGroupInf\
+    o.HEJAMOOJBCJEntryR\x0bHEJAMOOJBCJ\x12\x19\n\x08group_id\x18\x0e\x20\x01\
+    (\rR\x07groupId\x1a>\n\x10HEJAMOOJBCJEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

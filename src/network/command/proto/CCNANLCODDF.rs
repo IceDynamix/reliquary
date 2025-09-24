@@ -79,10 +79,10 @@ impl ::protobuf::Message for CCNANLCODDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                114 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for CCNANLCODDF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for CCNANLCODDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCNANLCODDF.proto\x1a\x11HMBANCKGBII.proto\x1a\x11OIDFFLEEALL.prot\
-    o\"d\n\x0bCCNANLCODDF\x12$\n\x06source\x18\x01\x20\x01(\x0b2\x0c.OIDFFLE\
-    EALLR\x06source\x12/\n\x0crogue_action\x18\x0e\x20\x01(\x0b2\x0c.HMBANCK\
-    GBIIR\x0brogueActionb\x06proto3\
+    o\"d\n\x0bCCNANLCODDF\x12$\n\x06source\x18\n\x20\x01(\x0b2\x0c.OIDFFLEEA\
+    LLR\x06source\x12/\n\x0crogue_action\x18\x0c\x20\x01(\x0b2\x0c.HMBANCKGB\
+    IIR\x0brogueActionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

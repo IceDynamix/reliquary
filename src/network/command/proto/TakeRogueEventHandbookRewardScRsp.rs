@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueEventHandbookRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardScRsp.DPJHILHGOKE)
     pub DPJHILHGOKE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueEventHandbookRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueEventHandbookRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl TakeRogueEventHandbookRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakeRogueEventHandbookRewardScRsp| { &m.reward },
-            |m: &mut TakeRogueEventHandbookRewardScRsp| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeRogueEventHandbookRewardScRsp| { &m.retcode },
-            |m: &mut TakeRogueEventHandbookRewardScRsp| { &mut m.retcode },
+            "player_return_reward_list",
+            |m: &TakeRogueEventHandbookRewardScRsp| { &m.player_return_reward_list },
+            |m: &mut TakeRogueEventHandbookRewardScRsp| { &mut m.player_return_reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DPJHILHGOKE",
             |m: &TakeRogueEventHandbookRewardScRsp| { &m.DPJHILHGOKE },
             |m: &mut TakeRogueEventHandbookRewardScRsp| { &mut m.DPJHILHGOKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeRogueEventHandbookRewardScRsp| { &m.retcode },
+            |m: &mut TakeRogueEventHandbookRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueEventHandbookRewardScRsp>(
             "TakeRogueEventHandbookRewardScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                66 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.DPJHILHGOKE)?;
                 },
-                64 => {
+                120 => {
                     self.DPJHILHGOKE.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.player_return_reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DPJHILHGOKE);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DPJHILHGOKE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
+        os.write_repeated_packed_uint32(15, &self.DPJHILHGOKE)?;
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(8, &self.DPJHILHGOKE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TakeRogueEventHandbookRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
-        self.retcode = 0;
+        self.player_return_reward_list.clear();
         self.DPJHILHGOKE.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueEventHandbookRewardScRsp {
         static instance: TakeRogueEventHandbookRewardScRsp = TakeRogueEventHandbookRewardScRsp {
-            reward: ::protobuf::MessageField::none(),
-            retcode: 0,
+            player_return_reward_list: ::protobuf::MessageField::none(),
             DPJHILHGOKE: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEventHandbookRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'TakeRogueEventHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\x82\
-    \x01\n!TakeRogueEventHandbookRewardScRsp\x12!\n\x06reward\x18\x0c\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
-    R\x07retcode\x12\x20\n\x0bDPJHILHGOKE\x18\x08\x20\x03(\rR\x0bDPJHILHGOKE\
-    b\x06proto3\
+    \n'TakeRogueEventHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"\xa5\
+    \x01\n!TakeRogueEventHandbookRewardScRsp\x12D\n\x19player_return_reward_\
+    list\x18\n\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardList\x12\x20\n\
+    \x0bDPJHILHGOKE\x18\x0f\x20\x03(\rR\x0bDPJHILHGOKE\x12\x18\n\x07retcode\
+    \x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

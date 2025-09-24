@@ -30,12 +30,12 @@ pub struct HKMLALBDPGO {
     // message fields
     // @@protoc_insertion_point(field:HKMLALBDPGO.LHCBBGIMMDG)
     pub LHCBBGIMMDG: u32,
+    // @@protoc_insertion_point(field:HKMLALBDPGO.FJKGKAEKBKJ)
+    pub FJKGKAEKBKJ: bool,
     // @@protoc_insertion_point(field:HKMLALBDPGO.BOONPDEOBLA)
     pub BOONPDEOBLA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HKMLALBDPGO.FAHIHDJFOHM)
     pub FAHIHDJFOHM: u32,
-    // @@protoc_insertion_point(field:HKMLALBDPGO.FJKGKAEKBKJ)
-    pub FJKGKAEKBKJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HKMLALBDPGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl HKMLALBDPGO {
             |m: &HKMLALBDPGO| { &m.LHCBBGIMMDG },
             |m: &mut HKMLALBDPGO| { &mut m.LHCBBGIMMDG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJKGKAEKBKJ",
+            |m: &HKMLALBDPGO| { &m.FJKGKAEKBKJ },
+            |m: &mut HKMLALBDPGO| { &mut m.FJKGKAEKBKJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BOONPDEOBLA",
             |m: &HKMLALBDPGO| { &m.BOONPDEOBLA },
@@ -69,11 +74,6 @@ impl HKMLALBDPGO {
             "FAHIHDJFOHM",
             |m: &HKMLALBDPGO| { &m.FAHIHDJFOHM },
             |m: &mut HKMLALBDPGO| { &mut m.FAHIHDJFOHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJKGKAEKBKJ",
-            |m: &HKMLALBDPGO| { &m.FJKGKAEKBKJ },
-            |m: &mut HKMLALBDPGO| { &mut m.FJKGKAEKBKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HKMLALBDPGO>(
             "HKMLALBDPGO",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for HKMLALBDPGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.LHCBBGIMMDG = is.read_uint32()?;
                 },
-                58 => {
+                88 => {
+                    self.FJKGKAEKBKJ = is.read_bool()?;
+                },
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.BOONPDEOBLA)?;
                 },
-                56 => {
+                80 => {
                     self.BOONPDEOBLA.push(is.read_uint32()?);
                 },
-                80 => {
+                112 => {
                     self.FAHIHDJFOHM = is.read_uint32()?;
-                },
-                40 => {
-                    self.FJKGKAEKBKJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for HKMLALBDPGO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LHCBBGIMMDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LHCBBGIMMDG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BOONPDEOBLA);
-        if self.FAHIHDJFOHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FAHIHDJFOHM);
+            my_size += ::protobuf::rt::uint32_size(2, self.LHCBBGIMMDG);
         }
         if self.FJKGKAEKBKJ != false {
             my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.BOONPDEOBLA);
+        if self.FAHIHDJFOHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FAHIHDJFOHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,14 +137,14 @@ impl ::protobuf::Message for HKMLALBDPGO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LHCBBGIMMDG != 0 {
-            os.write_uint32(13, self.LHCBBGIMMDG)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.BOONPDEOBLA)?;
-        if self.FAHIHDJFOHM != 0 {
-            os.write_uint32(10, self.FAHIHDJFOHM)?;
+            os.write_uint32(2, self.LHCBBGIMMDG)?;
         }
         if self.FJKGKAEKBKJ != false {
-            os.write_bool(5, self.FJKGKAEKBKJ)?;
+            os.write_bool(11, self.FJKGKAEKBKJ)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.BOONPDEOBLA)?;
+        if self.FAHIHDJFOHM != 0 {
+            os.write_uint32(14, self.FAHIHDJFOHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for HKMLALBDPGO {
 
     fn clear(&mut self) {
         self.LHCBBGIMMDG = 0;
+        self.FJKGKAEKBKJ = false;
         self.BOONPDEOBLA.clear();
         self.FAHIHDJFOHM = 0;
-        self.FJKGKAEKBKJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HKMLALBDPGO {
         static instance: HKMLALBDPGO = HKMLALBDPGO {
             LHCBBGIMMDG: 0,
+            FJKGKAEKBKJ: false,
             BOONPDEOBLA: ::std::vec::Vec::new(),
             FAHIHDJFOHM: 0,
-            FJKGKAEKBKJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for HKMLALBDPGO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HKMLALBDPGO.proto\"\x95\x01\n\x0bHKMLALBDPGO\x12\x20\n\x0bLHCBBGIM\
-    MDG\x18\r\x20\x01(\rR\x0bLHCBBGIMMDG\x12\x20\n\x0bBOONPDEOBLA\x18\x07\
-    \x20\x03(\rR\x0bBOONPDEOBLA\x12\x20\n\x0bFAHIHDJFOHM\x18\n\x20\x01(\rR\
-    \x0bFAHIHDJFOHM\x12\x20\n\x0bFJKGKAEKBKJ\x18\x05\x20\x01(\x08R\x0bFJKGKA\
-    EKBKJb\x06proto3\
+    MDG\x18\x02\x20\x01(\rR\x0bLHCBBGIMMDG\x12\x20\n\x0bFJKGKAEKBKJ\x18\x0b\
+    \x20\x01(\x08R\x0bFJKGKAEKBKJ\x12\x20\n\x0bBOONPDEOBLA\x18\n\x20\x03(\rR\
+    \x0bBOONPDEOBLA\x12\x20\n\x0bFAHIHDJFOHM\x18\x0e\x20\x01(\rR\x0bFAHIHDJF\
+    OHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

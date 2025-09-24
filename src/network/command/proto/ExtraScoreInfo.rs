@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExtraScoreInfo {
     // message fields
-    // @@protoc_insertion_point(field:ExtraScoreInfo.week)
-    pub week: u32,
     // @@protoc_insertion_point(field:ExtraScoreInfo.LFPCCPOLJPC)
     pub LFPCCPOLJPC: u32,
-    // @@protoc_insertion_point(field:ExtraScoreInfo.end_time)
-    pub end_time: i64,
     // @@protoc_insertion_point(field:ExtraScoreInfo.GPODHHAOHNP)
     pub GPODHHAOHNP: bool,
+    // @@protoc_insertion_point(field:ExtraScoreInfo.end_time)
+    pub end_time: i64,
+    // @@protoc_insertion_point(field:ExtraScoreInfo.week)
+    pub week: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ExtraScoreInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,14 @@ impl ExtraScoreInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "week",
-            |m: &ExtraScoreInfo| { &m.week },
-            |m: &mut ExtraScoreInfo| { &mut m.week },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LFPCCPOLJPC",
             |m: &ExtraScoreInfo| { &m.LFPCCPOLJPC },
             |m: &mut ExtraScoreInfo| { &mut m.LFPCCPOLJPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPODHHAOHNP",
+            |m: &ExtraScoreInfo| { &m.GPODHHAOHNP },
+            |m: &mut ExtraScoreInfo| { &mut m.GPODHHAOHNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
@@ -71,9 +71,9 @@ impl ExtraScoreInfo {
             |m: &mut ExtraScoreInfo| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPODHHAOHNP",
-            |m: &ExtraScoreInfo| { &m.GPODHHAOHNP },
-            |m: &mut ExtraScoreInfo| { &mut m.GPODHHAOHNP },
+            "week",
+            |m: &ExtraScoreInfo| { &m.week },
+            |m: &mut ExtraScoreInfo| { &mut m.week },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExtraScoreInfo>(
             "ExtraScoreInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ExtraScoreInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.week = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.LFPCCPOLJPC = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
+                    self.GPODHHAOHNP = is.read_bool()?;
+                },
+                56 => {
                     self.end_time = is.read_int64()?;
                 },
                 112 => {
-                    self.GPODHHAOHNP = is.read_bool()?;
+                    self.week = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ExtraScoreInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.week != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.week);
-        }
         if self.LFPCCPOLJPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LFPCCPOLJPC);
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.end_time);
+            my_size += ::protobuf::rt::uint32_size(5, self.LFPCCPOLJPC);
         }
         if self.GPODHHAOHNP != false {
             my_size += 1 + 1;
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.end_time);
+        }
+        if self.week != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.week);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ExtraScoreInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.week != 0 {
-            os.write_uint32(12, self.week)?;
-        }
         if self.LFPCCPOLJPC != 0 {
-            os.write_uint32(3, self.LFPCCPOLJPC)?;
-        }
-        if self.end_time != 0 {
-            os.write_int64(11, self.end_time)?;
+            os.write_uint32(5, self.LFPCCPOLJPC)?;
         }
         if self.GPODHHAOHNP != false {
-            os.write_bool(14, self.GPODHHAOHNP)?;
+            os.write_bool(15, self.GPODHHAOHNP)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(7, self.end_time)?;
+        }
+        if self.week != 0 {
+            os.write_uint32(14, self.week)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ExtraScoreInfo {
     }
 
     fn clear(&mut self) {
-        self.week = 0;
         self.LFPCCPOLJPC = 0;
-        self.end_time = 0;
         self.GPODHHAOHNP = false;
+        self.end_time = 0;
+        self.week = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExtraScoreInfo {
         static instance: ExtraScoreInfo = ExtraScoreInfo {
-            week: 0,
             LFPCCPOLJPC: 0,
-            end_time: 0,
             GPODHHAOHNP: false,
+            end_time: 0,
+            week: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for ExtraScoreInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14ExtraScoreInfo.proto\"\x83\x01\n\x0eExtraScoreInfo\x12\x12\n\x04we\
-    ek\x18\x0c\x20\x01(\rR\x04week\x12\x20\n\x0bLFPCCPOLJPC\x18\x03\x20\x01(\
-    \rR\x0bLFPCCPOLJPC\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x03R\x07endTim\
-    e\x12\x20\n\x0bGPODHHAOHNP\x18\x0e\x20\x01(\x08R\x0bGPODHHAOHNPb\x06prot\
-    o3\
+    \n\x14ExtraScoreInfo.proto\"\x83\x01\n\x0eExtraScoreInfo\x12\x20\n\x0bLF\
+    PCCPOLJPC\x18\x05\x20\x01(\rR\x0bLFPCCPOLJPC\x12\x20\n\x0bGPODHHAOHNP\
+    \x18\x0f\x20\x01(\x08R\x0bGPODHHAOHNP\x12\x19\n\x08end_time\x18\x07\x20\
+    \x01(\x03R\x07endTime\x12\x12\n\x04week\x18\x0e\x20\x01(\rR\x04weekb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

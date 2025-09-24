@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KAOAHKAOHFI {
     // message fields
-    // @@protoc_insertion_point(field:KAOAHKAOHFI.DHLPKMIHDNM)
-    pub DHLPKMIHDNM: ::protobuf::MessageField<super::PunkLordBattleRecordList::PunkLordBattleRecordList>,
+    // @@protoc_insertion_point(field:KAOAHKAOHFI.basic_info)
+    pub basic_info: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
     // @@protoc_insertion_point(field:KAOAHKAOHFI.COJKEIFJNEK)
     pub COJKEIFJNEK: u32,
     // @@protoc_insertion_point(field:KAOAHKAOHFI.EKKJLAOKIJI)
     pub EKKJLAOKIJI: ::protobuf::EnumOrUnknown<super::PunkLordAttackerStatus::PunkLordAttackerStatus>,
-    // @@protoc_insertion_point(field:KAOAHKAOHFI.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:KAOAHKAOHFI.DHLPKMIHDNM)
+    pub DHLPKMIHDNM: ::protobuf::MessageField<super::PunkLordBattleRecordList::PunkLordBattleRecordList>,
     // special fields
     // @@protoc_insertion_point(special_field:KAOAHKAOHFI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl KAOAHKAOHFI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordBattleRecordList::PunkLordBattleRecordList>(
-            "DHLPKMIHDNM",
-            |m: &KAOAHKAOHFI| { &m.DHLPKMIHDNM },
-            |m: &mut KAOAHKAOHFI| { &mut m.DHLPKMIHDNM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
+            "basic_info",
+            |m: &KAOAHKAOHFI| { &m.basic_info },
+            |m: &mut KAOAHKAOHFI| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "COJKEIFJNEK",
@@ -70,10 +70,10 @@ impl KAOAHKAOHFI {
             |m: &KAOAHKAOHFI| { &m.EKKJLAOKIJI },
             |m: &mut KAOAHKAOHFI| { &mut m.EKKJLAOKIJI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
-            "basic_info",
-            |m: &KAOAHKAOHFI| { &m.basic_info },
-            |m: &mut KAOAHKAOHFI| { &mut m.basic_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordBattleRecordList::PunkLordBattleRecordList>(
+            "DHLPKMIHDNM",
+            |m: &KAOAHKAOHFI| { &m.DHLPKMIHDNM },
+            |m: &mut KAOAHKAOHFI| { &mut m.DHLPKMIHDNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KAOAHKAOHFI>(
             "KAOAHKAOHFI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for KAOAHKAOHFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHLPKMIHDNM)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                32 => {
+                80 => {
                     self.COJKEIFJNEK = is.read_uint32()?;
                 },
-                8 => {
+                48 => {
                     self.EKKJLAOKIJI = is.read_enum_or_unknown()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHLPKMIHDNM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for KAOAHKAOHFI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
+        if let Some(v) = self.basic_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.COJKEIFJNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.COJKEIFJNEK);
+            my_size += ::protobuf::rt::uint32_size(10, self.COJKEIFJNEK);
         }
         if self.EKKJLAOKIJI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.EKKJLAOKIJI.value());
+            my_size += ::protobuf::rt::int32_size(6, self.EKKJLAOKIJI.value());
         }
-        if let Some(v) = self.basic_info.as_ref() {
+        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for KAOAHKAOHFI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.COJKEIFJNEK != 0 {
-            os.write_uint32(4, self.COJKEIFJNEK)?;
+            os.write_uint32(10, self.COJKEIFJNEK)?;
         }
         if self.EKKJLAOKIJI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.EKKJLAOKIJI))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.EKKJLAOKIJI))?;
         }
-        if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.DHLPKMIHDNM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for KAOAHKAOHFI {
     }
 
     fn clear(&mut self) {
-        self.DHLPKMIHDNM.clear();
+        self.basic_info.clear();
         self.COJKEIFJNEK = 0;
         self.EKKJLAOKIJI = ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE);
-        self.basic_info.clear();
+        self.DHLPKMIHDNM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAOAHKAOHFI {
         static instance: KAOAHKAOHFI = KAOAHKAOHFI {
-            DHLPKMIHDNM: ::protobuf::MessageField::none(),
+            basic_info: ::protobuf::MessageField::none(),
             COJKEIFJNEK: 0,
             EKKJLAOKIJI: ::protobuf::EnumOrUnknown::from_i32(0),
-            basic_info: ::protobuf::MessageField::none(),
+            DHLPKMIHDNM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for KAOAHKAOHFI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KAOAHKAOHFI.proto\x1a\x1cPunkLordAttackerStatus.proto\x1a\x1ePunkL\
     ordBattleRecordList.proto\x1a\x1ePunkLordMonsterBasicInfo.proto\"\xe1\
-    \x01\n\x0bKAOAHKAOHFI\x12;\n\x0bDHLPKMIHDNM\x18\x05\x20\x01(\x0b2\x19.Pu\
-    nkLordBattleRecordListR\x0bDHLPKMIHDNM\x12\x20\n\x0bCOJKEIFJNEK\x18\x04\
-    \x20\x01(\rR\x0bCOJKEIFJNEK\x129\n\x0bEKKJLAOKIJI\x18\x01\x20\x01(\x0e2\
-    \x17.PunkLordAttackerStatusR\x0bEKKJLAOKIJI\x128\n\nbasic_info\x18\x0e\
-    \x20\x01(\x0b2\x19.PunkLordMonsterBasicInfoR\tbasicInfob\x06proto3\
+    \x01\n\x0bKAOAHKAOHFI\x128\n\nbasic_info\x18\x01\x20\x01(\x0b2\x19.PunkL\
+    ordMonsterBasicInfoR\tbasicInfo\x12\x20\n\x0bCOJKEIFJNEK\x18\n\x20\x01(\
+    \rR\x0bCOJKEIFJNEK\x129\n\x0bEKKJLAOKIJI\x18\x06\x20\x01(\x0e2\x17.PunkL\
+    ordAttackerStatusR\x0bEKKJLAOKIJI\x12;\n\x0bDHLPKMIHDNM\x18\x03\x20\x01(\
+    \x0b2\x19.PunkLordBattleRecordListR\x0bDHLPKMIHDNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

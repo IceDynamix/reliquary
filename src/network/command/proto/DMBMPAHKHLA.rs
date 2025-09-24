@@ -79,16 +79,16 @@ impl ::protobuf::Message for DMBMPAHKHLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.LKKIDNJCFJA)?;
                 },
-                112 => {
+                8 => {
                     self.LKKIDNJCFJA.push(is.read_uint32()?);
                 },
-                98 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.DINGKFDBCJJ)?;
                 },
-                96 => {
+                56 => {
                     self.DINGKFDBCJJ.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for DMBMPAHKHLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.LKKIDNJCFJA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.DINGKFDBCJJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LKKIDNJCFJA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DINGKFDBCJJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.LKKIDNJCFJA)?;
-        os.write_repeated_packed_uint32(12, &self.DINGKFDBCJJ)?;
+        os.write_repeated_packed_uint32(1, &self.LKKIDNJCFJA)?;
+        os.write_repeated_packed_uint32(7, &self.DINGKFDBCJJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,7 +164,7 @@ impl ::protobuf::reflect::ProtobufValue for DMBMPAHKHLA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMBMPAHKHLA.proto\"Q\n\x0bDMBMPAHKHLA\x12\x20\n\x0bLKKIDNJCFJA\x18\
-    \x0e\x20\x03(\rR\x0bLKKIDNJCFJA\x12\x20\n\x0bDINGKFDBCJJ\x18\x0c\x20\x03\
+    \x01\x20\x03(\rR\x0bLKKIDNJCFJA\x12\x20\n\x0bDINGKFDBCJJ\x18\x07\x20\x03\
     (\rR\x0bDINGKFDBCJJb\x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchHandResetHandPosScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwitchHandResetHandPosScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SwitchHandResetHandPosScRsp.LBOMDFHFFCF)
     pub LBOMDFHFFCF: ::protobuf::MessageField<super::HandInfo::HandInfo>,
+    // @@protoc_insertion_point(field:SwitchHandResetHandPosScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchHandResetHandPosScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SwitchHandResetHandPosScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SwitchHandResetHandPosScRsp| { &m.retcode },
-            |m: &mut SwitchHandResetHandPosScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HandInfo::HandInfo>(
             "LBOMDFHFFCF",
             |m: &SwitchHandResetHandPosScRsp| { &m.LBOMDFHFFCF },
             |m: &mut SwitchHandResetHandPosScRsp| { &mut m.LBOMDFHFFCF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SwitchHandResetHandPosScRsp| { &m.retcode },
+            |m: &mut SwitchHandResetHandPosScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchHandResetHandPosScRsp>(
             "SwitchHandResetHandPosScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                34 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBOMDFHFFCF)?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         if let Some(v) = self.LBOMDFHFFCF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
         if let Some(v) = self.LBOMDFHFFCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SwitchHandResetHandPosScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.LBOMDFHFFCF.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchHandResetHandPosScRsp {
         static instance: SwitchHandResetHandPosScRsp = SwitchHandResetHandPosScRsp {
-            retcode: 0,
             LBOMDFHFFCF: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandResetHandPosScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SwitchHandResetHandPosScRsp.proto\x1a\x0eHandInfo.proto\"d\n\x1bSwitc\
-    hHandResetHandPosScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
-    de\x12+\n\x0bLBOMDFHFFCF\x18\x04\x20\x01(\x0b2\t.HandInfoR\x0bLBOMDFHFFC\
-    Fb\x06proto3\
+    hHandResetHandPosScRsp\x12+\n\x0bLBOMDFHFFCF\x18\x0f\x20\x01(\x0b2\t.Han\
+    dInfoR\x0bLBOMDFHFFCF\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcod\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

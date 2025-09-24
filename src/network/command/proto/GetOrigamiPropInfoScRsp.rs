@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetOrigamiPropInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.LMEBHNLDKDJ)
     pub LMEBHNLDKDJ: ::std::vec::Vec<super::FCHOLNDIPKC::FCHOLNDIPKC>,
-    // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.entry_story_line_id)
-    pub entry_story_line_id: u32,
+    // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.content_id)
     pub content_id: u32,
+    // @@protoc_insertion_point(field:GetOrigamiPropInfoScRsp.entry_story_line_id)
+    pub entry_story_line_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetOrigamiPropInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl GetOrigamiPropInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetOrigamiPropInfoScRsp| { &m.retcode },
-            |m: &mut GetOrigamiPropInfoScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LMEBHNLDKDJ",
             |m: &GetOrigamiPropInfoScRsp| { &m.LMEBHNLDKDJ },
             |m: &mut GetOrigamiPropInfoScRsp| { &mut m.LMEBHNLDKDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_story_line_id",
-            |m: &GetOrigamiPropInfoScRsp| { &m.entry_story_line_id },
-            |m: &mut GetOrigamiPropInfoScRsp| { &mut m.entry_story_line_id },
+            "retcode",
+            |m: &GetOrigamiPropInfoScRsp| { &m.retcode },
+            |m: &mut GetOrigamiPropInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
             |m: &GetOrigamiPropInfoScRsp| { &m.content_id },
             |m: &mut GetOrigamiPropInfoScRsp| { &mut m.content_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_story_line_id",
+            |m: &GetOrigamiPropInfoScRsp| { &m.entry_story_line_id },
+            |m: &mut GetOrigamiPropInfoScRsp| { &mut m.entry_story_line_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetOrigamiPropInfoScRsp>(
             "GetOrigamiPropInfoScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GetOrigamiPropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                82 => {
                     self.LMEBHNLDKDJ.push(is.read_message()?);
                 },
-                24 => {
-                    self.entry_story_line_id = is.read_uint32()?;
+                32 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                72 => {
                     self.content_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.entry_story_line_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for GetOrigamiPropInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         for value in &self.LMEBHNLDKDJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.entry_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.entry_story_line_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.content_id);
+        }
+        if self.entry_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.entry_story_line_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GetOrigamiPropInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
         for v in &self.LMEBHNLDKDJ {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.entry_story_line_id != 0 {
-            os.write_uint32(3, self.entry_story_line_id)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if self.content_id != 0 {
-            os.write_uint32(13, self.content_id)?;
+            os.write_uint32(9, self.content_id)?;
+        }
+        if self.entry_story_line_id != 0 {
+            os.write_uint32(12, self.entry_story_line_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for GetOrigamiPropInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.LMEBHNLDKDJ.clear();
-        self.entry_story_line_id = 0;
+        self.retcode = 0;
         self.content_id = 0;
+        self.entry_story_line_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetOrigamiPropInfoScRsp {
         static instance: GetOrigamiPropInfoScRsp = GetOrigamiPropInfoScRsp {
-            retcode: 0,
             LMEBHNLDKDJ: ::std::vec::Vec::new(),
-            entry_story_line_id: 0,
+            retcode: 0,
             content_id: 0,
+            entry_story_line_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for GetOrigamiPropInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetOrigamiPropInfoScRsp.proto\x1a\x11FCHOLNDIPKC.proto\"\xb1\x01\n\
-    \x17GetOrigamiPropInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07\
-    retcode\x12.\n\x0bLMEBHNLDKDJ\x18\t\x20\x03(\x0b2\x0c.FCHOLNDIPKCR\x0bLM\
-    EBHNLDKDJ\x12-\n\x13entry_story_line_id\x18\x03\x20\x01(\rR\x10entryStor\
-    yLineId\x12\x1d\n\ncontent_id\x18\r\x20\x01(\rR\tcontentIdb\x06proto3\
+    \x17GetOrigamiPropInfoScRsp\x12.\n\x0bLMEBHNLDKDJ\x18\n\x20\x03(\x0b2\
+    \x0c.FCHOLNDIPKCR\x0bLMEBHNLDKDJ\x12\x18\n\x07retcode\x18\x04\x20\x01(\r\
+    R\x07retcode\x12\x1d\n\ncontent_id\x18\t\x20\x01(\rR\tcontentId\x12-\n\
+    \x13entry_story_line_id\x18\x0c\x20\x01(\rR\x10entryStoryLineIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

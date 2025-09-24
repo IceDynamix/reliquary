@@ -79,10 +79,10 @@ impl ::protobuf::Message for CellFinalMonsterInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.select_boss_info)?;
                 },
-                34 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cell_boss_info)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for CellFinalMonsterInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.select_boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.cell_boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::reflect::ProtobufValue for CellFinalMonsterInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCellFinalMonsterInfo.proto\x1a\x15CellMonsterInfo.proto\x1a\x1bCel\
     lMonsterSelectInfo.proto\"\x90\x01\n\x14CellFinalMonsterInfo\x12@\n\x10s\
-    elect_boss_info\x18\x01\x20\x01(\x0b2\x16.CellMonsterSelectInfoR\x0esele\
-    ctBossInfo\x126\n\x0ecell_boss_info\x18\x04\x20\x01(\x0b2\x10.CellMonste\
+    elect_boss_info\x18\x04\x20\x01(\x0b2\x16.CellMonsterSelectInfoR\x0esele\
+    ctBossInfo\x126\n\x0ecell_boss_info\x18\x08\x20\x01(\x0b2\x10.CellMonste\
     rInfoR\x0ccellBossInfob\x06proto3\
 ";
 

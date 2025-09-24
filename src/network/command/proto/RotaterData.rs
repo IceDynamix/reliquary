@@ -86,13 +86,13 @@ impl ::protobuf::Message for RotaterData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.group_id = is.read_uint32()?;
                 },
-                112 => {
+                96 => {
                     self.GLHAGJGAEHE = is.read_uint32()?;
                 },
-                77 => {
+                45 => {
                     self.LKEFOLCGFGD = is.read_float()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for RotaterData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         if self.GLHAGJGAEHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GLHAGJGAEHE);
+            my_size += ::protobuf::rt::uint32_size(12, self.GLHAGJGAEHE);
         }
         if self.LKEFOLCGFGD != 0. {
             my_size += 1 + 4;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RotaterData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(13, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
         if self.GLHAGJGAEHE != 0 {
-            os.write_uint32(14, self.GLHAGJGAEHE)?;
+            os.write_uint32(12, self.GLHAGJGAEHE)?;
         }
         if self.LKEFOLCGFGD != 0. {
-            os.write_float(9, self.LKEFOLCGFGD)?;
+            os.write_float(5, self.LKEFOLCGFGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RotaterData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11RotaterData.proto\"l\n\x0bRotaterData\x12\x19\n\x08group_id\x18\r\
-    \x20\x01(\rR\x07groupId\x12\x20\n\x0bGLHAGJGAEHE\x18\x0e\x20\x01(\rR\x0b\
-    GLHAGJGAEHE\x12\x20\n\x0bLKEFOLCGFGD\x18\t\x20\x01(\x02R\x0bLKEFOLCGFGDb\
-    \x06proto3\
+    \n\x11RotaterData.proto\"l\n\x0bRotaterData\x12\x19\n\x08group_id\x18\
+    \x0e\x20\x01(\rR\x07groupId\x12\x20\n\x0bGLHAGJGAEHE\x18\x0c\x20\x01(\rR\
+    \x0bGLHAGJGAEHE\x12\x20\n\x0bLKEFOLCGFGD\x18\x05\x20\x01(\x02R\x0bLKEFOL\
+    CGFGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

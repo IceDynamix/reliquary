@@ -86,13 +86,13 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.aether_info)?;
                 },
-                58 => {
+                18 => {
                     self.MGEGIMBBAJB.push(is.read_message()?);
                 },
-                24 => {
+                64 => {
                     self.JDHLMHJBOJM = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.JDHLMHJBOJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JDHLMHJBOJM);
+            my_size += ::protobuf::rt::uint32_size(8, self.JDHLMHJBOJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.aether_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         for v in &self.MGEGIMBBAJB {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.JDHLMHJBOJM != 0 {
-            os.write_uint32(3, self.JDHLMHJBOJM)?;
+            os.write_uint32(8, self.JDHLMHJBOJM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfoScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$AetherDivideSpiritInfoScNotify.proto\x1a\x1cAetherDivideSpiritInfo.pr\
     oto\"\xb7\x01\n\x1eAetherDivideSpiritInfoScNotify\x128\n\x0baether_info\
-    \x18\x08\x20\x01(\x0b2\x17.AetherDivideSpiritInfoR\naetherInfo\x129\n\
-    \x0bMGEGIMBBAJB\x18\x07\x20\x03(\x0b2\x17.AetherDivideSpiritInfoR\x0bMGE\
-    GIMBBAJB\x12\x20\n\x0bJDHLMHJBOJM\x18\x03\x20\x01(\rR\x0bJDHLMHJBOJMb\
+    \x18\x03\x20\x01(\x0b2\x17.AetherDivideSpiritInfoR\naetherInfo\x129\n\
+    \x0bMGEGIMBBAJB\x18\x02\x20\x03(\x0b2\x17.AetherDivideSpiritInfoR\x0bMGE\
+    GIMBBAJB\x12\x20\n\x0bJDHLMHJBOJM\x18\x08\x20\x01(\rR\x0bJDHLMHJBOJMb\
     \x06proto3\
 ";
 

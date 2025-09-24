@@ -100,19 +100,19 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.PPMIOGCFOOC = is.read_uint32()?;
                 },
-                16 => {
+                88 => {
                     self.magic_unit_id = is.read_uint32()?;
                 },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBPBLGLLIEN)?;
                 },
-                98 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                56 => {
+                64 => {
                     self.NGKJPCEHMBA = is.read_bool()?;
                 },
                 tag => {
@@ -128,10 +128,10 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PPMIOGCFOOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PPMIOGCFOOC);
+            my_size += ::protobuf::rt::uint32_size(12, self.PPMIOGCFOOC);
         }
         if self.magic_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.magic_unit_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.magic_unit_id);
         }
         if let Some(v) = self.HBPBLGLLIEN.as_ref() {
             let len = v.compute_size();
@@ -151,19 +151,19 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PPMIOGCFOOC != 0 {
-            os.write_uint32(13, self.PPMIOGCFOOC)?;
+            os.write_uint32(12, self.PPMIOGCFOOC)?;
         }
         if self.magic_unit_id != 0 {
-            os.write_uint32(2, self.magic_unit_id)?;
+            os.write_uint32(11, self.magic_unit_id)?;
         }
         if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.NGKJPCEHMBA != false {
-            os.write_bool(7, self.NGKJPCEHMBA)?;
+            os.write_bool(8, self.NGKJPCEHMBA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for AOGIIMKCJDJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AOGIIMKCJDJ.proto\x1a\x12ItemCostData.proto\"\xd2\x01\n\x0bAOGIIMK\
-    CJDJ\x12\x20\n\x0bPPMIOGCFOOC\x18\r\x20\x01(\rR\x0bPPMIOGCFOOC\x12\"\n\r\
-    magic_unit_id\x18\x02\x20\x01(\rR\x0bmagicUnitId\x12/\n\x0bHBPBLGLLIEN\
-    \x18\n\x20\x01(\x0b2\r.ItemCostDataR\x0bHBPBLGLLIEN\x12*\n\tcost_data\
-    \x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\x0bNGKJPCEH\
-    MBA\x18\x07\x20\x01(\x08R\x0bNGKJPCEHMBAb\x06proto3\
+    CJDJ\x12\x20\n\x0bPPMIOGCFOOC\x18\x0c\x20\x01(\rR\x0bPPMIOGCFOOC\x12\"\n\
+    \rmagic_unit_id\x18\x0b\x20\x01(\rR\x0bmagicUnitId\x12/\n\x0bHBPBLGLLIEN\
+    \x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x0bHBPBLGLLIEN\x12*\n\tcost_data\
+    \x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\x0bNGKJPCEH\
+    MBA\x18\x08\x20\x01(\x08R\x0bNGKJPCEHMBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

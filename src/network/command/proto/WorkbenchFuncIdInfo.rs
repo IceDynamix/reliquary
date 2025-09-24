@@ -79,10 +79,10 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.is_valid = is.read_bool()?;
                 },
-                56 => {
+                96 => {
                     self.func_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
             my_size += 1 + 1;
         }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.func_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_valid != false {
-            os.write_bool(13, self.is_valid)?;
+            os.write_bool(10, self.is_valid)?;
         }
         if self.func_id != 0 {
-            os.write_uint32(7, self.func_id)?;
+            os.write_uint32(12, self.func_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchFuncIdInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19WorkbenchFuncIdInfo.proto\"I\n\x13WorkbenchFuncIdInfo\x12\x19\n\
-    \x08is_valid\x18\r\x20\x01(\x08R\x07isValid\x12\x17\n\x07func_id\x18\x07\
+    \x08is_valid\x18\n\x20\x01(\x08R\x07isValid\x12\x17\n\x07func_id\x18\x0c\
     \x20\x01(\rR\x06funcIdb\x06proto3\
 ";
 

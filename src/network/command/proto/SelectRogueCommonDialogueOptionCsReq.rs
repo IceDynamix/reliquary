@@ -79,10 +79,10 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.option_id = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.event_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.option_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.option_id);
         }
         if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.event_unique_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.event_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.option_id != 0 {
-            os.write_uint32(7, self.option_id)?;
+            os.write_uint32(5, self.option_id)?;
         }
         if self.event_unique_id != 0 {
-            os.write_uint32(12, self.event_unique_id)?;
+            os.write_uint32(10, self.event_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectRogueCommonDialogueOptionCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SelectRogueCommonDialogueOptionCsReq.proto\"k\n$SelectRogueCommonDial\
-    ogueOptionCsReq\x12\x1b\n\toption_id\x18\x07\x20\x01(\rR\x08optionId\x12\
-    &\n\x0fevent_unique_id\x18\x0c\x20\x01(\rR\reventUniqueIdb\x06proto3\
+    ogueOptionCsReq\x12\x1b\n\toption_id\x18\x05\x20\x01(\rR\x08optionId\x12\
+    &\n\x0fevent_unique_id\x18\n\x20\x01(\rR\reventUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

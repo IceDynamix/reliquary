@@ -72,7 +72,7 @@ impl ::protobuf::Message for IIPEGHDKHGD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.select_magic_unit)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for IIPEGHDKHGD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.select_magic_unit.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for IIPEGHDKHGD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IIPEGHDKHGD.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"R\n\x0bIIPE\
-    GHDKHGD\x12C\n\x11select_magic_unit\x18\x0b\x20\x01(\x0b2\x17.RogueMagic\
+    GHDKHGD\x12C\n\x11select_magic_unit\x18\x04\x20\x01(\x0b2\x17.RogueMagic\
     GameUnitInfoR\x0fselectMagicUnitb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DDJHDEHMHCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.content_modifier_effect_id = is.read_uint32()?;
                 },
-                104 => {
+                112 => {
                     self.GEEFHDJKOKG = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DDJHDEHMHCF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.content_modifier_effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.content_modifier_effect_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.content_modifier_effect_id);
         }
         if self.GEEFHDJKOKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GEEFHDJKOKG);
+            my_size += ::protobuf::rt::uint32_size(14, self.GEEFHDJKOKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DDJHDEHMHCF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.content_modifier_effect_id != 0 {
-            os.write_uint32(15, self.content_modifier_effect_id)?;
+            os.write_uint32(12, self.content_modifier_effect_id)?;
         }
         if self.GEEFHDJKOKG != 0 {
-            os.write_uint32(13, self.GEEFHDJKOKG)?;
+            os.write_uint32(14, self.GEEFHDJKOKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DDJHDEHMHCF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDJHDEHMHCF.proto\"l\n\x0bDDJHDEHMHCF\x12;\n\x1acontent_modifier_e\
-    ffect_id\x18\x0f\x20\x01(\rR\x17contentModifierEffectId\x12\x20\n\x0bGEE\
-    FHDJKOKG\x18\r\x20\x01(\rR\x0bGEEFHDJKOKGb\x06proto3\
+    ffect_id\x18\x0c\x20\x01(\rR\x17contentModifierEffectId\x12\x20\n\x0bGEE\
+    FHDJKOKG\x18\x0e\x20\x01(\rR\x0bGEEFHDJKOKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

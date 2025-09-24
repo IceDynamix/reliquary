@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AceAntiCheaterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.DGDLNIEFCPF)
-    pub DGDLNIEFCPF: ::std::string::String,
     // @@protoc_insertion_point(field:AceAntiCheaterCsReq.GLNKKFAIPOB)
     pub GLNKKFAIPOB: u32,
+    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.DGDLNIEFCPF)
+    pub DGDLNIEFCPF: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:AceAntiCheaterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AceAntiCheaterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGDLNIEFCPF",
-            |m: &AceAntiCheaterCsReq| { &m.DGDLNIEFCPF },
-            |m: &mut AceAntiCheaterCsReq| { &mut m.DGDLNIEFCPF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GLNKKFAIPOB",
             |m: &AceAntiCheaterCsReq| { &m.GLNKKFAIPOB },
             |m: &mut AceAntiCheaterCsReq| { &mut m.GLNKKFAIPOB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGDLNIEFCPF",
+            |m: &AceAntiCheaterCsReq| { &m.DGDLNIEFCPF },
+            |m: &mut AceAntiCheaterCsReq| { &mut m.DGDLNIEFCPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AceAntiCheaterCsReq>(
             "AceAntiCheaterCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.DGDLNIEFCPF = is.read_string()?;
-                },
-                96 => {
+                40 => {
                     self.GLNKKFAIPOB = is.read_uint32()?;
+                },
+                58 => {
+                    self.DGDLNIEFCPF = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.DGDLNIEFCPF.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.DGDLNIEFCPF);
-        }
         if self.GLNKKFAIPOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GLNKKFAIPOB);
+            my_size += ::protobuf::rt::uint32_size(5, self.GLNKKFAIPOB);
+        }
+        if !self.DGDLNIEFCPF.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.DGDLNIEFCPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.DGDLNIEFCPF.is_empty() {
-            os.write_string(15, &self.DGDLNIEFCPF)?;
-        }
         if self.GLNKKFAIPOB != 0 {
-            os.write_uint32(12, self.GLNKKFAIPOB)?;
+            os.write_uint32(5, self.GLNKKFAIPOB)?;
+        }
+        if !self.DGDLNIEFCPF.is_empty() {
+            os.write_string(7, &self.DGDLNIEFCPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGDLNIEFCPF.clear();
         self.GLNKKFAIPOB = 0;
+        self.DGDLNIEFCPF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AceAntiCheaterCsReq {
         static instance: AceAntiCheaterCsReq = AceAntiCheaterCsReq {
-            DGDLNIEFCPF: ::std::string::String::new(),
             GLNKKFAIPOB: 0,
+            DGDLNIEFCPF: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AceAntiCheaterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19AceAntiCheaterCsReq.proto\"Y\n\x13AceAntiCheaterCsReq\x12\x20\n\
-    \x0bDGDLNIEFCPF\x18\x0f\x20\x01(\tR\x0bDGDLNIEFCPF\x12\x20\n\x0bGLNKKFAI\
-    POB\x18\x0c\x20\x01(\rR\x0bGLNKKFAIPOBb\x06proto3\
+    \x0bGLNKKFAIPOB\x18\x05\x20\x01(\rR\x0bGLNKKFAIPOB\x12\x20\n\x0bDGDLNIEF\
+    CPF\x18\x07\x20\x01(\tR\x0bDGDLNIEFCPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

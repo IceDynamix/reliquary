@@ -79,13 +79,13 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.PCLMNBILAPH)?;
                 },
-                80 => {
+                32 => {
                     self.PCLMNBILAPH.push(is.read_uint32()?);
                 },
-                10 => {
+                106 => {
                     self.passenger_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.PCLMNBILAPH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PCLMNBILAPH);
         for value in &self.passenger_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.PCLMNBILAPH)?;
+        os.write_repeated_packed_uint32(4, &self.PCLMNBILAPH)?;
         for v in &self.passenger_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPassengerInfo.proto\x1a\x19TrainPartyPassenger.proto\"\
-    \x81\x01\n\x17TrainPartyPassengerInfo\x12\x20\n\x0bPCLMNBILAPH\x18\n\x20\
-    \x03(\rR\x0bPCLMNBILAPH\x12D\n\x13passenger_info_list\x18\x01\x20\x03(\
+    \x81\x01\n\x17TrainPartyPassengerInfo\x12\x20\n\x0bPCLMNBILAPH\x18\x04\
+    \x20\x03(\rR\x0bPCLMNBILAPH\x12D\n\x13passenger_info_list\x18\r\x20\x03(\
     \x0b2\x14.TrainPartyPassengerR\x11passengerInfoListb\x06proto3\
 ";
 

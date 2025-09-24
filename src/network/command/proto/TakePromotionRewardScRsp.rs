@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakePromotionRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakePromotionRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakePromotionRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TakePromotionRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eTakePromotionRewardScRsp.proto\x1a\x0eItemList.proto\"`\n\x18TakeP\
-    romotionRewardScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
-    \x12*\n\x0breward_list\x18\r\x20\x01(\x0b2\t.ItemListR\nrewardListb\x06p\
-    roto3\
+    romotionRewardScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
+    \x12*\n\x0breward_list\x18\x06\x20\x01(\x0b2\t.ItemListR\nrewardListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

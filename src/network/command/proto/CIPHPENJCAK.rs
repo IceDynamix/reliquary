@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIPHPENJCAK {
     // message fields
-    // @@protoc_insertion_point(field:CIPHPENJCAK.GACJIFJKDAJ)
-    pub GACJIFJKDAJ: ::std::vec::Vec<super::PKDKNKJMFDI::PKDKNKJMFDI>,
-    // @@protoc_insertion_point(field:CIPHPENJCAK.EEJJGINLMOO)
-    pub EEJJGINLMOO: bool,
-    // @@protoc_insertion_point(field:CIPHPENJCAK.HFLCMJBGOME)
-    pub HFLCMJBGOME: bool,
     // @@protoc_insertion_point(field:CIPHPENJCAK.IOFLMHAMFHJ)
     pub IOFLMHAMFHJ: u32,
+    // @@protoc_insertion_point(field:CIPHPENJCAK.GACJIFJKDAJ)
+    pub GACJIFJKDAJ: ::std::vec::Vec<super::PKDKNKJMFDI::PKDKNKJMFDI>,
+    // @@protoc_insertion_point(field:CIPHPENJCAK.HFLCMJBGOME)
+    pub HFLCMJBGOME: bool,
+    // @@protoc_insertion_point(field:CIPHPENJCAK.EEJJGINLMOO)
+    pub EEJJGINLMOO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:CIPHPENJCAK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl CIPHPENJCAK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOFLMHAMFHJ",
+            |m: &CIPHPENJCAK| { &m.IOFLMHAMFHJ },
+            |m: &mut CIPHPENJCAK| { &mut m.IOFLMHAMFHJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GACJIFJKDAJ",
             |m: &CIPHPENJCAK| { &m.GACJIFJKDAJ },
             |m: &mut CIPHPENJCAK| { &mut m.GACJIFJKDAJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEJJGINLMOO",
-            |m: &CIPHPENJCAK| { &m.EEJJGINLMOO },
-            |m: &mut CIPHPENJCAK| { &mut m.EEJJGINLMOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HFLCMJBGOME",
@@ -71,9 +71,9 @@ impl CIPHPENJCAK {
             |m: &mut CIPHPENJCAK| { &mut m.HFLCMJBGOME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOFLMHAMFHJ",
-            |m: &CIPHPENJCAK| { &m.IOFLMHAMFHJ },
-            |m: &mut CIPHPENJCAK| { &mut m.IOFLMHAMFHJ },
+            "EEJJGINLMOO",
+            |m: &CIPHPENJCAK| { &m.EEJJGINLMOO },
+            |m: &mut CIPHPENJCAK| { &mut m.EEJJGINLMOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIPHPENJCAK>(
             "CIPHPENJCAK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for CIPHPENJCAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                88 => {
+                    self.IOFLMHAMFHJ = is.read_uint32()?;
+                },
+                50 => {
                     self.GACJIFJKDAJ.push(is.read_message()?);
                 },
-                80 => {
-                    self.EEJJGINLMOO = is.read_bool()?;
-                },
-                32 => {
+                40 => {
                     self.HFLCMJBGOME = is.read_bool()?;
                 },
-                48 => {
-                    self.IOFLMHAMFHJ = is.read_uint32()?;
+                104 => {
+                    self.EEJJGINLMOO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for CIPHPENJCAK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IOFLMHAMFHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.IOFLMHAMFHJ);
+        }
         for value in &self.GACJIFJKDAJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EEJJGINLMOO != false {
-            my_size += 1 + 1;
-        }
         if self.HFLCMJBGOME != false {
             my_size += 1 + 1;
         }
-        if self.IOFLMHAMFHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IOFLMHAMFHJ);
+        if self.EEJJGINLMOO != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for CIPHPENJCAK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GACJIFJKDAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        if self.EEJJGINLMOO != false {
-            os.write_bool(10, self.EEJJGINLMOO)?;
-        }
-        if self.HFLCMJBGOME != false {
-            os.write_bool(4, self.HFLCMJBGOME)?;
-        }
         if self.IOFLMHAMFHJ != 0 {
-            os.write_uint32(6, self.IOFLMHAMFHJ)?;
+            os.write_uint32(11, self.IOFLMHAMFHJ)?;
+        }
+        for v in &self.GACJIFJKDAJ {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.HFLCMJBGOME != false {
+            os.write_bool(5, self.HFLCMJBGOME)?;
+        }
+        if self.EEJJGINLMOO != false {
+            os.write_bool(13, self.EEJJGINLMOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for CIPHPENJCAK {
     }
 
     fn clear(&mut self) {
-        self.GACJIFJKDAJ.clear();
-        self.EEJJGINLMOO = false;
-        self.HFLCMJBGOME = false;
         self.IOFLMHAMFHJ = 0;
+        self.GACJIFJKDAJ.clear();
+        self.HFLCMJBGOME = false;
+        self.EEJJGINLMOO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIPHPENJCAK {
         static instance: CIPHPENJCAK = CIPHPENJCAK {
-            GACJIFJKDAJ: ::std::vec::Vec::new(),
-            EEJJGINLMOO: false,
-            HFLCMJBGOME: false,
             IOFLMHAMFHJ: 0,
+            GACJIFJKDAJ: ::std::vec::Vec::new(),
+            HFLCMJBGOME: false,
+            EEJJGINLMOO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for CIPHPENJCAK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIPHPENJCAK.proto\x1a\x11PKDKNKJMFDI.proto\"\xa3\x01\n\x0bCIPHPENJ\
-    CAK\x12.\n\x0bGACJIFJKDAJ\x18\r\x20\x03(\x0b2\x0c.PKDKNKJMFDIR\x0bGACJIF\
-    JKDAJ\x12\x20\n\x0bEEJJGINLMOO\x18\n\x20\x01(\x08R\x0bEEJJGINLMOO\x12\
-    \x20\n\x0bHFLCMJBGOME\x18\x04\x20\x01(\x08R\x0bHFLCMJBGOME\x12\x20\n\x0b\
-    IOFLMHAMFHJ\x18\x06\x20\x01(\rR\x0bIOFLMHAMFHJb\x06proto3\
+    CAK\x12\x20\n\x0bIOFLMHAMFHJ\x18\x0b\x20\x01(\rR\x0bIOFLMHAMFHJ\x12.\n\
+    \x0bGACJIFJKDAJ\x18\x06\x20\x03(\x0b2\x0c.PKDKNKJMFDIR\x0bGACJIFJKDAJ\
+    \x12\x20\n\x0bHFLCMJBGOME\x18\x05\x20\x01(\x08R\x0bHFLCMJBGOME\x12\x20\n\
+    \x0bEEJJGINLMOO\x18\r\x20\x01(\x08R\x0bEEJJGINLMOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

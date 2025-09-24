@@ -72,7 +72,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -115,7 +115,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for KeywordUnlockValue {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18KeywordUnlockValue.proto\"\x9c\x01\n\x12KeywordUnlockValue\x12F\n\
-    \x0bNFNMBGBOCCL\x18\x05\x20\x03(\x0b2$.KeywordUnlockValue.NFNMBGBOCCLEnt\
+    \x0bNFNMBGBOCCL\x18\x0f\x20\x03(\x0b2$.KeywordUnlockValue.NFNMBGBOCCLEnt\
     ryR\x0bNFNMBGBOCCL\x1a>\n\x10NFNMBGBOCCLEntry\x12\x10\n\x03key\x18\x01\
     \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\
     \x028\x01b\x06proto3\

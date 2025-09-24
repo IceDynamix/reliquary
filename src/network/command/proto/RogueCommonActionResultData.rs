@@ -45,7 +45,7 @@ impl RogueCommonActionResultData {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonMoney get_item_list = 3;
+    // .RogueCommonMoney get_item_list = 13;
 
     pub fn get_item_list(&self) -> &super::RogueCommonMoney::RogueCommonMoney {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonMoney remove_item_list = 7;
+    // .RogueCommonMoney remove_item_list = 15;
 
     pub fn remove_item_list(&self) -> &super::RogueCommonMoney::RogueCommonMoney {
         match self.KFELKJLDKEH {
@@ -143,7 +143,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonBuff get_buff_list = 1987;
+    // .RogueCommonBuff get_buff_list = 1163;
 
     pub fn get_buff_list(&self) -> &super::RogueCommonBuff::RogueCommonBuff {
         match self.KFELKJLDKEH {
@@ -192,7 +192,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonBuff remove_buff_list = 241;
+    // .RogueCommonBuff remove_buff_list = 1725;
 
     pub fn remove_buff_list(&self) -> &super::RogueCommonBuff::RogueCommonBuff {
         match self.KFELKJLDKEH {
@@ -241,7 +241,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonMiracle get_miracle_list = 1521;
+    // .RogueCommonMiracle get_miracle_list = 1133;
 
     pub fn get_miracle_list(&self) -> &super::RogueCommonMiracle::RogueCommonMiracle {
         match self.KFELKJLDKEH {
@@ -290,7 +290,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonRemoveMiracle remove_miracle_list = 55;
+    // .RogueCommonRemoveMiracle remove_miracle_list = 1752;
 
     pub fn remove_miracle_list(&self) -> &super::RogueCommonRemoveMiracle::RogueCommonRemoveMiracle {
         match self.KFELKJLDKEH {
@@ -339,7 +339,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .IBIBPOOPDEN APFMFBBDCJK = 104;
+    // .IBIBPOOPDEN APFMFBBDCJK = 627;
 
     pub fn APFMFBBDCJK(&self) -> &super::IBIBPOOPDEN::IBIBPOOPDEN {
         match self.KFELKJLDKEH {
@@ -388,7 +388,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .MAAAAGPJJFE BMDJOPGHLCA = 1700;
+    // .MAAAAGPJJFE BMDJOPGHLCA = 1604;
 
     pub fn BMDJOPGHLCA(&self) -> &super::MAAAAGPJJFE::MAAAAGPJJFE {
         match self.KFELKJLDKEH {
@@ -437,7 +437,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .PBALOEJCGFN OMPBJJOHPOO = 1918;
+    // .PBALOEJCGFN OMPBJJOHPOO = 1710;
 
     pub fn OMPBJJOHPOO(&self) -> &super::PBALOEJCGFN::PBALOEJCGFN {
         match self.KFELKJLDKEH {
@@ -486,7 +486,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .HBLNHGANBAB IOMJMEAOMFI = 1443;
+    // .HBLNHGANBAB IOMJMEAOMFI = 1043;
 
     pub fn IOMJMEAOMFI(&self) -> &super::HBLNHGANBAB::HBLNHGANBAB {
         match self.KFELKJLDKEH {
@@ -535,7 +535,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .MDGJIKLJDDE BBLGEEMHIIM = 1398;
+    // .MDGJIKLJDDE BBLGEEMHIIM = 1262;
 
     pub fn BBLGEEMHIIM(&self) -> &super::MDGJIKLJDDE::MDGJIKLJDDE {
         match self.KFELKJLDKEH {
@@ -584,7 +584,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonFormula get_formula_list = 240;
+    // .RogueCommonFormula get_formula_list = 80;
 
     pub fn get_formula_list(&self) -> &super::RogueCommonFormula::RogueCommonFormula {
         match self.KFELKJLDKEH {
@@ -633,7 +633,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonRemoveFormula remove_formula_list = 744;
+    // .RogueCommonRemoveFormula remove_formula_list = 1161;
 
     pub fn remove_formula_list(&self) -> &super::RogueCommonRemoveFormula::RogueCommonRemoveFormula {
         match self.KFELKJLDKEH {
@@ -682,7 +682,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonExpandedFormula expand_formula_list = 1055;
+    // .RogueCommonExpandedFormula expand_formula_list = 1074;
 
     pub fn expand_formula_list(&self) -> &super::RogueCommonExpandedFormula::RogueCommonExpandedFormula {
         match self.KFELKJLDKEH {
@@ -731,7 +731,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonContractFormula contract_formula_list = 775;
+    // .RogueCommonContractFormula contract_formula_list = 196;
 
     pub fn contract_formula_list(&self) -> &super::RogueCommonContractFormula::RogueCommonContractFormula {
         match self.KFELKJLDKEH {
@@ -780,7 +780,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .FIPFPHBPHLH DMKGEBHPIPJ = 227;
+    // .FIPFPHBPHLH DMKGEBHPIPJ = 916;
 
     pub fn DMKGEBHPIPJ(&self) -> &super::FIPFPHBPHLH::FIPFPHBPHLH {
         match self.KFELKJLDKEH {
@@ -829,7 +829,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonPathBuff path_buff_list = 1115;
+    // .RogueCommonPathBuff path_buff_list = 146;
 
     pub fn path_buff_list(&self) -> &super::RogueCommonPathBuff::RogueCommonPathBuff {
         match self.KFELKJLDKEH {
@@ -878,7 +878,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonKeyword get_keyword_list = 1246;
+    // .RogueCommonKeyword get_keyword_list = 284;
 
     pub fn get_keyword_list(&self) -> &super::RogueCommonKeyword::RogueCommonKeyword {
         match self.KFELKJLDKEH {
@@ -927,7 +927,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonRemoveKeyword remove_keyword_list = 1748;
+    // .RogueCommonRemoveKeyword remove_keyword_list = 339;
 
     pub fn remove_keyword_list(&self) -> &super::RogueCommonRemoveKeyword::RogueCommonRemoveKeyword {
         match self.KFELKJLDKEH {
@@ -976,7 +976,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonDressScepter dress_scepter_list = 341;
+    // .RogueCommonDressScepter dress_scepter_list = 323;
 
     pub fn dress_scepter_list(&self) -> &super::RogueCommonDressScepter::RogueCommonDressScepter {
         match self.KFELKJLDKEH {
@@ -1025,7 +1025,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueCommonGetScepter get_scepter_list = 1304;
+    // .RogueCommonGetScepter get_scepter_list = 1022;
 
     pub fn get_scepter_list(&self) -> &super::RogueCommonGetScepter::RogueCommonGetScepter {
         match self.KFELKJLDKEH {
@@ -1074,7 +1074,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .AEFFJLGFAMH KAAILMGCHOK = 751;
+    // .AEFFJLGFAMH KAAILMGCHOK = 107;
 
     pub fn KAAILMGCHOK(&self) -> &super::AEFFJLGFAMH::AEFFJLGFAMH {
         match self.KFELKJLDKEH {
@@ -1123,7 +1123,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueMagicGameUnitInfo get_magic_unit_list = 1268;
+    // .RogueMagicGameUnitInfo get_magic_unit_list = 1245;
 
     pub fn get_magic_unit_list(&self) -> &super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo {
         match self.KFELKJLDKEH {
@@ -1172,7 +1172,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueMagicGameUnitInfo remove_magic_unit_list = 960;
+    // .RogueMagicGameUnitInfo remove_magic_unit_list = 1920;
 
     pub fn remove_magic_unit_list(&self) -> &super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo {
         match self.KFELKJLDKEH {
@@ -1221,7 +1221,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueMagicGameUnitInfo JGDAEBNEFKA = 1979;
+    // .RogueMagicGameUnitInfo JGDAEBNEFKA = 1410;
 
     pub fn JGDAEBNEFKA(&self) -> &super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo {
         match self.KFELKJLDKEH {
@@ -1270,7 +1270,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .RogueMagicGameScepterInfo AOIBHCMANFK = 1424;
+    // .RogueMagicGameScepterInfo AOIBHCMANFK = 2014;
 
     pub fn AOIBHCMANFK(&self) -> &super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo {
         match self.KFELKJLDKEH {
@@ -1319,7 +1319,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .HOBKEOICBMI ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_MAGIC_UNIT_COMPOSE = 1745;
+    // .HOBKEOICBMI ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_MAGIC_UNIT_COMPOSE = 940;
 
     pub fn ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_MAGIC_UNIT_COMPOSE(&self) -> &super::HOBKEOICBMI::HOBKEOICBMI {
         match self.KFELKJLDKEH {
@@ -1368,7 +1368,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .LNAMGOMHGJB EDBPEHABHBI = 1202;
+    // .LNAMGOMHGJB EDBPEHABHBI = 97;
 
     pub fn EDBPEHABHBI(&self) -> &super::LNAMGOMHGJB::LNAMGOMHGJB {
         match self.KFELKJLDKEH {
@@ -1417,7 +1417,7 @@ impl RogueCommonActionResultData {
         }
     }
 
-    // .LNAMGOMHGJB CJOHMIPJHNM = 845;
+    // .LNAMGOMHGJB CJOHMIPJHNM = 286;
 
     pub fn CJOHMIPJHNM(&self) -> &super::LNAMGOMHGJB::LNAMGOMHGJB {
         match self.KFELKJLDKEH {
@@ -1691,91 +1691,91 @@ impl ::protobuf::Message for RogueCommonActionResultData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                106 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetItemList(is.read_message()?));
                 },
-                58 => {
+                122 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveItemList(is.read_message()?));
                 },
-                15898 => {
+                9306 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetBuffList(is.read_message()?));
                 },
-                1930 => {
+                13802 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveBuffList(is.read_message()?));
                 },
-                12170 => {
+                9066 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetMiracleList(is.read_message()?));
                 },
-                442 => {
+                14018 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveMiracleList(is.read_message()?));
                 },
-                834 => {
+                5018 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::APFMFBBDCJK(is.read_message()?));
                 },
-                13602 => {
+                12834 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::BMDJOPGHLCA(is.read_message()?));
                 },
-                15346 => {
+                13682 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::OMPBJJOHPOO(is.read_message()?));
                 },
-                11546 => {
+                8346 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::IOMJMEAOMFI(is.read_message()?));
                 },
-                11186 => {
+                10098 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::BBLGEEMHIIM(is.read_message()?));
                 },
-                1922 => {
+                642 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetFormulaList(is.read_message()?));
                 },
-                5954 => {
+                9290 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveFormulaList(is.read_message()?));
                 },
-                8442 => {
+                8594 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::ExpandFormulaList(is.read_message()?));
                 },
-                6202 => {
+                1570 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::ContractFormulaList(is.read_message()?));
                 },
-                1818 => {
+                7330 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::DMKGEBHPIPJ(is.read_message()?));
                 },
-                8922 => {
+                1170 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::PathBuffList(is.read_message()?));
                 },
-                9970 => {
+                2274 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetKeywordList(is.read_message()?));
                 },
-                13986 => {
+                2714 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveKeywordList(is.read_message()?));
                 },
-                2730 => {
+                2586 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::DressScepterList(is.read_message()?));
                 },
-                10434 => {
+                8178 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetScepterList(is.read_message()?));
                 },
-                6010 => {
+                858 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::KAAILMGCHOK(is.read_message()?));
                 },
-                10146 => {
+                9962 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::GetMagicUnitList(is.read_message()?));
                 },
-                7682 => {
+                15362 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::RemoveMagicUnitList(is.read_message()?));
                 },
-                15834 => {
+                11282 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::JGDAEBNEFKA(is.read_message()?));
                 },
-                11394 => {
+                16114 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::AOIBHCMANFK(is.read_message()?));
                 },
-                13962 => {
+                7522 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEMAGICUNITCOMPOSE(is.read_message()?));
                 },
-                9618 => {
+                778 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::EDBPEHABHBI(is.read_message()?));
                 },
-                6762 => {
+                2290 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_common_action_result_data::KFELKJLDKEH::CJOHMIPJHNM(is.read_message()?));
                 },
                 tag => {
@@ -1919,91 +1919,91 @@ impl ::protobuf::Message for RogueCommonActionResultData {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &rogue_common_action_result_data::KFELKJLDKEH::GetItemList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveItemList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetBuffList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1987, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1163, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveBuffList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(241, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1725, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetMiracleList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1521, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1133, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveMiracleList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(55, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1752, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::APFMFBBDCJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(104, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(627, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::BMDJOPGHLCA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1700, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1604, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::OMPBJJOHPOO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1918, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1710, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::IOMJMEAOMFI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1443, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1043, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::BBLGEEMHIIM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1398, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1262, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetFormulaList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(240, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(80, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveFormulaList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(744, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1161, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::ExpandFormulaList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1055, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1074, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::ContractFormulaList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(775, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(196, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::DMKGEBHPIPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(227, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(916, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::PathBuffList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1115, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(146, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetKeywordList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1246, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(284, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveKeywordList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1748, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(339, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::DressScepterList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(341, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(323, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetScepterList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1304, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1022, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::KAAILMGCHOK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(751, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(107, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::GetMagicUnitList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1268, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1245, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::RemoveMagicUnitList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(960, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1920, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::JGDAEBNEFKA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1979, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1410, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::AOIBHCMANFK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1424, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2014, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::ROGUECOMMONACTIONRESULTSOURCETYPEMAGICUNITCOMPOSE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1745, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(940, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::EDBPEHABHBI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1202, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(97, v, os)?;
                 },
                 &rogue_common_action_result_data::KFELKJLDKEH::CJOHMIPJHNM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(845, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(286, v, os)?;
                 },
             };
         }
@@ -2178,46 +2178,46 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x19RogueCommonPathBuff.proto\x1a\x1eRogueCommonRemoveFormula.proto\x1a\
     \x1eRogueCommonRemoveKeyword.proto\x1a\x1eRogueCommonRemoveMiracle.proto\
     \x1a\x1fRogueMagicGameScepterInfo.proto\x1a\x1cRogueMagicGameUnitInfo.pr\
-    oto\"\xab\x0f\n\x1bRogueCommonActionResultData\x127\n\rget_item_list\x18\
-    \x03\x20\x01(\x0b2\x11.RogueCommonMoneyH\0R\x0bgetItemList\x12=\n\x10rem\
-    ove_item_list\x18\x07\x20\x01(\x0b2\x11.RogueCommonMoneyH\0R\x0eremoveIt\
-    emList\x127\n\rget_buff_list\x18\xc3\x0f\x20\x01(\x0b2\x10.RogueCommonBu\
-    ffH\0R\x0bgetBuffList\x12=\n\x10remove_buff_list\x18\xf1\x01\x20\x01(\
-    \x0b2\x10.RogueCommonBuffH\0R\x0eremoveBuffList\x12@\n\x10get_miracle_li\
-    st\x18\xf1\x0b\x20\x01(\x0b2\x13.RogueCommonMiracleH\0R\x0egetMiracleLis\
-    t\x12K\n\x13remove_miracle_list\x187\x20\x01(\x0b2\x19.RogueCommonRemove\
-    MiracleH\0R\x11removeMiracleList\x120\n\x0bAPFMFBBDCJK\x18h\x20\x01(\x0b\
-    2\x0c.IBIBPOOPDENH\0R\x0bAPFMFBBDCJK\x121\n\x0bBMDJOPGHLCA\x18\xa4\r\x20\
-    \x01(\x0b2\x0c.MAAAAGPJJFEH\0R\x0bBMDJOPGHLCA\x121\n\x0bOMPBJJOHPOO\x18\
-    \xfe\x0e\x20\x01(\x0b2\x0c.PBALOEJCGFNH\0R\x0bOMPBJJOHPOO\x121\n\x0bIOMJ\
-    MEAOMFI\x18\xa3\x0b\x20\x01(\x0b2\x0c.HBLNHGANBABH\0R\x0bIOMJMEAOMFI\x12\
-    1\n\x0bBBLGEEMHIIM\x18\xf6\n\x20\x01(\x0b2\x0c.MDGJIKLJDDEH\0R\x0bBBLGEE\
-    MHIIM\x12@\n\x10get_formula_list\x18\xf0\x01\x20\x01(\x0b2\x13.RogueComm\
-    onFormulaH\0R\x0egetFormulaList\x12L\n\x13remove_formula_list\x18\xe8\
-    \x05\x20\x01(\x0b2\x19.RogueCommonRemoveFormulaH\0R\x11removeFormulaList\
-    \x12N\n\x13expand_formula_list\x18\x9f\x08\x20\x01(\x0b2\x1b.RogueCommon\
-    ExpandedFormulaH\0R\x11expandFormulaList\x12R\n\x15contract_formula_list\
-    \x18\x87\x06\x20\x01(\x0b2\x1b.RogueCommonContractFormulaH\0R\x13contrac\
-    tFormulaList\x121\n\x0bDMKGEBHPIPJ\x18\xe3\x01\x20\x01(\x0b2\x0c.FIPFPHB\
-    PHLHH\0R\x0bDMKGEBHPIPJ\x12=\n\x0epath_buff_list\x18\xdb\x08\x20\x01(\
-    \x0b2\x14.RogueCommonPathBuffH\0R\x0cpathBuffList\x12@\n\x10get_keyword_\
-    list\x18\xde\t\x20\x01(\x0b2\x13.RogueCommonKeywordH\0R\x0egetKeywordLis\
-    t\x12L\n\x13remove_keyword_list\x18\xd4\r\x20\x01(\x0b2\x19.RogueCommonR\
-    emoveKeywordH\0R\x11removeKeywordList\x12I\n\x12dress_scepter_list\x18\
-    \xd5\x02\x20\x01(\x0b2\x18.RogueCommonDressScepterH\0R\x10dressScepterLi\
-    st\x12C\n\x10get_scepter_list\x18\x98\n\x20\x01(\x0b2\x16.RogueCommonGet\
-    ScepterH\0R\x0egetScepterList\x121\n\x0bKAAILMGCHOK\x18\xef\x05\x20\x01(\
-    \x0b2\x0c.AEFFJLGFAMHH\0R\x0bKAAILMGCHOK\x12I\n\x13get_magic_unit_list\
-    \x18\xf4\t\x20\x01(\x0b2\x17.RogueMagicGameUnitInfoH\0R\x10getMagicUnitL\
-    ist\x12O\n\x16remove_magic_unit_list\x18\xc0\x07\x20\x01(\x0b2\x17.Rogue\
-    MagicGameUnitInfoH\0R\x13removeMagicUnitList\x12<\n\x0bJGDAEBNEFKA\x18\
-    \xbb\x0f\x20\x01(\x0b2\x17.RogueMagicGameUnitInfoH\0R\x0bJGDAEBNEFKA\x12\
-    ?\n\x0bAOIBHCMANFK\x18\x90\x0b\x20\x01(\x0b2\x1a.RogueMagicGameScepterIn\
-    foH\0R\x0bAOIBHCMANFK\x12\x85\x01\n9ROGUE_COMMON_ACTION_RESULT_SOURCE_TY\
-    PE_MAGIC_UNIT_COMPOSE\x18\xd1\r\x20\x01(\x0b2\x0c.HOBKEOICBMIH\0R1ROGUEC\
-    OMMONACTIONRESULTSOURCETYPEMAGICUNITCOMPOSE\x121\n\x0bEDBPEHABHBI\x18\
-    \xb2\t\x20\x01(\x0b2\x0c.LNAMGOMHGJBH\0R\x0bEDBPEHABHBI\x121\n\x0bCJOHMI\
-    PJHNM\x18\xcd\x06\x20\x01(\x0b2\x0c.LNAMGOMHGJBH\0R\x0bCJOHMIPJHNMB\r\n\
+    oto\"\xaa\x0f\n\x1bRogueCommonActionResultData\x127\n\rget_item_list\x18\
+    \r\x20\x01(\x0b2\x11.RogueCommonMoneyH\0R\x0bgetItemList\x12=\n\x10remov\
+    e_item_list\x18\x0f\x20\x01(\x0b2\x11.RogueCommonMoneyH\0R\x0eremoveItem\
+    List\x127\n\rget_buff_list\x18\x8b\t\x20\x01(\x0b2\x10.RogueCommonBuffH\
+    \0R\x0bgetBuffList\x12=\n\x10remove_buff_list\x18\xbd\r\x20\x01(\x0b2\
+    \x10.RogueCommonBuffH\0R\x0eremoveBuffList\x12@\n\x10get_miracle_list\
+    \x18\xed\x08\x20\x01(\x0b2\x13.RogueCommonMiracleH\0R\x0egetMiracleList\
+    \x12L\n\x13remove_miracle_list\x18\xd8\r\x20\x01(\x0b2\x19.RogueCommonRe\
+    moveMiracleH\0R\x11removeMiracleList\x121\n\x0bAPFMFBBDCJK\x18\xf3\x04\
+    \x20\x01(\x0b2\x0c.IBIBPOOPDENH\0R\x0bAPFMFBBDCJK\x121\n\x0bBMDJOPGHLCA\
+    \x18\xc4\x0c\x20\x01(\x0b2\x0c.MAAAAGPJJFEH\0R\x0bBMDJOPGHLCA\x121\n\x0b\
+    OMPBJJOHPOO\x18\xae\r\x20\x01(\x0b2\x0c.PBALOEJCGFNH\0R\x0bOMPBJJOHPOO\
+    \x121\n\x0bIOMJMEAOMFI\x18\x93\x08\x20\x01(\x0b2\x0c.HBLNHGANBABH\0R\x0b\
+    IOMJMEAOMFI\x121\n\x0bBBLGEEMHIIM\x18\xee\t\x20\x01(\x0b2\x0c.MDGJIKLJDD\
+    EH\0R\x0bBBLGEEMHIIM\x12?\n\x10get_formula_list\x18P\x20\x01(\x0b2\x13.R\
+    ogueCommonFormulaH\0R\x0egetFormulaList\x12L\n\x13remove_formula_list\
+    \x18\x89\t\x20\x01(\x0b2\x19.RogueCommonRemoveFormulaH\0R\x11removeFormu\
+    laList\x12N\n\x13expand_formula_list\x18\xb2\x08\x20\x01(\x0b2\x1b.Rogue\
+    CommonExpandedFormulaH\0R\x11expandFormulaList\x12R\n\x15contract_formul\
+    a_list\x18\xc4\x01\x20\x01(\x0b2\x1b.RogueCommonContractFormulaH\0R\x13c\
+    ontractFormulaList\x121\n\x0bDMKGEBHPIPJ\x18\x94\x07\x20\x01(\x0b2\x0c.F\
+    IPFPHBPHLHH\0R\x0bDMKGEBHPIPJ\x12=\n\x0epath_buff_list\x18\x92\x01\x20\
+    \x01(\x0b2\x14.RogueCommonPathBuffH\0R\x0cpathBuffList\x12@\n\x10get_key\
+    word_list\x18\x9c\x02\x20\x01(\x0b2\x13.RogueCommonKeywordH\0R\x0egetKey\
+    wordList\x12L\n\x13remove_keyword_list\x18\xd3\x02\x20\x01(\x0b2\x19.Rog\
+    ueCommonRemoveKeywordH\0R\x11removeKeywordList\x12I\n\x12dress_scepter_l\
+    ist\x18\xc3\x02\x20\x01(\x0b2\x18.RogueCommonDressScepterH\0R\x10dressSc\
+    epterList\x12C\n\x10get_scepter_list\x18\xfe\x07\x20\x01(\x0b2\x16.Rogue\
+    CommonGetScepterH\0R\x0egetScepterList\x120\n\x0bKAAILMGCHOK\x18k\x20\
+    \x01(\x0b2\x0c.AEFFJLGFAMHH\0R\x0bKAAILMGCHOK\x12I\n\x13get_magic_unit_l\
+    ist\x18\xdd\t\x20\x01(\x0b2\x17.RogueMagicGameUnitInfoH\0R\x10getMagicUn\
+    itList\x12O\n\x16remove_magic_unit_list\x18\x80\x0f\x20\x01(\x0b2\x17.Ro\
+    gueMagicGameUnitInfoH\0R\x13removeMagicUnitList\x12<\n\x0bJGDAEBNEFKA\
+    \x18\x82\x0b\x20\x01(\x0b2\x17.RogueMagicGameUnitInfoH\0R\x0bJGDAEBNEFKA\
+    \x12?\n\x0bAOIBHCMANFK\x18\xde\x0f\x20\x01(\x0b2\x1a.RogueMagicGameScept\
+    erInfoH\0R\x0bAOIBHCMANFK\x12\x85\x01\n9ROGUE_COMMON_ACTION_RESULT_SOURC\
+    E_TYPE_MAGIC_UNIT_COMPOSE\x18\xac\x07\x20\x01(\x0b2\x0c.HOBKEOICBMIH\0R1\
+    ROGUECOMMONACTIONRESULTSOURCETYPEMAGICUNITCOMPOSE\x120\n\x0bEDBPEHABHBI\
+    \x18a\x20\x01(\x0b2\x0c.LNAMGOMHGJBH\0R\x0bEDBPEHABHBI\x121\n\x0bCJOHMIP\
+    JHNM\x18\x9e\x02\x20\x01(\x0b2\x0c.LNAMGOMHGJBH\0R\x0bCJOHMIPJHNMB\r\n\
     \x0bKFELKJLDKEHb\x06proto3\
 ";
 

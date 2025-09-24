@@ -86,13 +86,13 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                114 => {
                     self.MANGJGKHKNJ.push(is.read_message()?);
                 },
-                80 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                66 => {
                     self.AOGDKLONIHI.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         for value in &self.AOGDKLONIHI {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MANGJGKHKNJ {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         for v in &self.AOGDKLONIHI {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantPlantSeedScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ElfRestaurantPlantSeedScRsp.proto\x1a\x11GMANHHHCPME.proto\x1a\x11OJF\
     PDNAJKPL.proto\"\x97\x01\n\x1bElfRestaurantPlantSeedScRsp\x12.\n\x0bMANG\
-    JGKHKNJ\x18\x07\x20\x03(\x0b2\x0c.GMANHHHCPMER\x0bMANGJGKHKNJ\x12\x18\n\
-    \x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bAOGDKLONIHI\x18\r\x20\
-    \x03(\x0b2\x0c.OJFPDNAJKPLR\x0bAOGDKLONIHIb\x06proto3\
+    JGKHKNJ\x18\x0e\x20\x03(\x0b2\x0c.GMANHHHCPMER\x0bMANGJGKHKNJ\x12\x18\n\
+    \x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bAOGDKLONIHI\x18\x08\
+    \x20\x03(\x0b2\x0c.OJFPDNAJKPLR\x0bAOGDKLONIHIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

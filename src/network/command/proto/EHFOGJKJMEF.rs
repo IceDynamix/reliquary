@@ -79,10 +79,10 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.IMFCIMKMJPL = is.read_uint32()?;
                 },
-                56 => {
+                8 => {
                     self.modifier_source_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IMFCIMKMJPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IMFCIMKMJPL);
+            my_size += ::protobuf::rt::uint32_size(2, self.IMFCIMKMJPL);
         }
         if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.modifier_source_type.value());
+            my_size += ::protobuf::rt::int32_size(1, self.modifier_source_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EHFOGJKJMEF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IMFCIMKMJPL != 0 {
-            os.write_uint32(5, self.IMFCIMKMJPL)?;
+            os.write_uint32(2, self.IMFCIMKMJPL)?;
         }
         if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EHFOGJKJMEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EHFOGJKJMEF.proto\x1a\x11DLBFAHOAGPH.proto\"o\n\x0bEHFOGJKJMEF\x12\
-    \x20\n\x0bIMFCIMKMJPL\x18\x05\x20\x01(\rR\x0bIMFCIMKMJPL\x12>\n\x14modif\
-    ier_source_type\x18\x07\x20\x01(\x0e2\x0c.DLBFAHOAGPHR\x12modifierSource\
+    \x20\n\x0bIMFCIMKMJPL\x18\x02\x20\x01(\rR\x0bIMFCIMKMJPL\x12>\n\x14modif\
+    ier_source_type\x18\x01\x20\x01(\x0e2\x0c.DLBFAHOAGPHR\x12modifierSource\
     Typeb\x06proto3\
 ";
 

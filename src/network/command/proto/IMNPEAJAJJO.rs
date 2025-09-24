@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IMNPEAJAJJO {
     // message fields
+    // @@protoc_insertion_point(field:IMNPEAJAJJO.IKMNAMKJAFA)
+    pub IKMNAMKJAFA: u32,
+    // @@protoc_insertion_point(field:IMNPEAJAJJO.OBLHBOEOLAF)
+    pub OBLHBOEOLAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IMNPEAJAJJO.ILMOOKBJHHC)
     pub ILMOOKBJHHC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IMNPEAJAJJO.EMLLECGEPCK)
     pub EMLLECGEPCK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IMNPEAJAJJO.OBLHBOEOLAF)
-    pub OBLHBOEOLAF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IMNPEAJAJJO.FFHEEIDBHEA)
-    pub FFHEEIDBHEA: bool,
-    // @@protoc_insertion_point(field:IMNPEAJAJJO.IKMNAMKJAFA)
-    pub IKMNAMKJAFA: u32,
-    // @@protoc_insertion_point(field:IMNPEAJAJJO.FFMDBDEHHEG)
-    pub FFMDBDEHHEG: u32,
     // @@protoc_insertion_point(field:IMNPEAJAJJO.FJKGKAEKBKJ)
     pub FJKGKAEKBKJ: bool,
     // @@protoc_insertion_point(field:IMNPEAJAJJO.chess_rogue_main_story_id)
     pub chess_rogue_main_story_id: u32,
+    // @@protoc_insertion_point(field:IMNPEAJAJJO.FFHEEIDBHEA)
+    pub FFHEEIDBHEA: bool,
+    // @@protoc_insertion_point(field:IMNPEAJAJJO.FFMDBDEHHEG)
+    pub FFMDBDEHHEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IMNPEAJAJJO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,6 +63,16 @@ impl IMNPEAJAJJO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IKMNAMKJAFA",
+            |m: &IMNPEAJAJJO| { &m.IKMNAMKJAFA },
+            |m: &mut IMNPEAJAJJO| { &mut m.IKMNAMKJAFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OBLHBOEOLAF",
+            |m: &IMNPEAJAJJO| { &m.OBLHBOEOLAF },
+            |m: &mut IMNPEAJAJJO| { &mut m.OBLHBOEOLAF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ILMOOKBJHHC",
             |m: &IMNPEAJAJJO| { &m.ILMOOKBJHHC },
@@ -73,26 +83,6 @@ impl IMNPEAJAJJO {
             |m: &IMNPEAJAJJO| { &m.EMLLECGEPCK },
             |m: &mut IMNPEAJAJJO| { &mut m.EMLLECGEPCK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OBLHBOEOLAF",
-            |m: &IMNPEAJAJJO| { &m.OBLHBOEOLAF },
-            |m: &mut IMNPEAJAJJO| { &mut m.OBLHBOEOLAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFHEEIDBHEA",
-            |m: &IMNPEAJAJJO| { &m.FFHEEIDBHEA },
-            |m: &mut IMNPEAJAJJO| { &mut m.FFHEEIDBHEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKMNAMKJAFA",
-            |m: &IMNPEAJAJJO| { &m.IKMNAMKJAFA },
-            |m: &mut IMNPEAJAJJO| { &mut m.IKMNAMKJAFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFMDBDEHHEG",
-            |m: &IMNPEAJAJJO| { &m.FFMDBDEHHEG },
-            |m: &mut IMNPEAJAJJO| { &mut m.FFMDBDEHHEG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJKGKAEKBKJ",
             |m: &IMNPEAJAJJO| { &m.FJKGKAEKBKJ },
@@ -102,6 +92,16 @@ impl IMNPEAJAJJO {
             "chess_rogue_main_story_id",
             |m: &IMNPEAJAJJO| { &m.chess_rogue_main_story_id },
             |m: &mut IMNPEAJAJJO| { &mut m.chess_rogue_main_story_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FFHEEIDBHEA",
+            |m: &IMNPEAJAJJO| { &m.FFHEEIDBHEA },
+            |m: &mut IMNPEAJAJJO| { &mut m.FFHEEIDBHEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FFMDBDEHHEG",
+            |m: &IMNPEAJAJJO| { &m.FFMDBDEHHEG },
+            |m: &mut IMNPEAJAJJO| { &mut m.FFMDBDEHHEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IMNPEAJAJJO>(
             "IMNPEAJAJJO",
@@ -121,38 +121,38 @@ impl ::protobuf::Message for IMNPEAJAJJO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ILMOOKBJHHC)?;
-                },
-                32 => {
-                    self.ILMOOKBJHHC.push(is.read_uint32()?);
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EMLLECGEPCK)?;
-                },
-                104 => {
-                    self.EMLLECGEPCK.push(is.read_uint32()?);
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OBLHBOEOLAF)?;
-                },
-                16 => {
-                    self.OBLHBOEOLAF.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.FFHEEIDBHEA = is.read_bool()?;
-                },
-                120 => {
+                72 => {
                     self.IKMNAMKJAFA = is.read_uint32()?;
                 },
-                96 => {
-                    self.FFMDBDEHHEG = is.read_uint32()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OBLHBOEOLAF)?;
+                },
+                120 => {
+                    self.OBLHBOEOLAF.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ILMOOKBJHHC)?;
                 },
                 80 => {
+                    self.ILMOOKBJHHC.push(is.read_uint32()?);
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EMLLECGEPCK)?;
+                },
+                88 => {
+                    self.EMLLECGEPCK.push(is.read_uint32()?);
+                },
+                32 => {
                     self.FJKGKAEKBKJ = is.read_bool()?;
                 },
-                64 => {
+                40 => {
                     self.chess_rogue_main_story_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.FFHEEIDBHEA = is.read_bool()?;
+                },
+                48 => {
+                    self.FFMDBDEHHEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -166,23 +166,23 @@ impl ::protobuf::Message for IMNPEAJAJJO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ILMOOKBJHHC);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EMLLECGEPCK);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.OBLHBOEOLAF);
-        if self.FFHEEIDBHEA != false {
-            my_size += 1 + 1;
-        }
         if self.IKMNAMKJAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IKMNAMKJAFA);
+            my_size += ::protobuf::rt::uint32_size(9, self.IKMNAMKJAFA);
         }
-        if self.FFMDBDEHHEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FFMDBDEHHEG);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OBLHBOEOLAF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.ILMOOKBJHHC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EMLLECGEPCK);
         if self.FJKGKAEKBKJ != false {
             my_size += 1 + 1;
         }
         if self.chess_rogue_main_story_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.chess_rogue_main_story_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.chess_rogue_main_story_id);
+        }
+        if self.FFHEEIDBHEA != false {
+            my_size += 1 + 1;
+        }
+        if self.FFMDBDEHHEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FFMDBDEHHEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,23 +190,23 @@ impl ::protobuf::Message for IMNPEAJAJJO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.ILMOOKBJHHC)?;
-        os.write_repeated_packed_uint32(13, &self.EMLLECGEPCK)?;
-        os.write_repeated_packed_uint32(2, &self.OBLHBOEOLAF)?;
-        if self.FFHEEIDBHEA != false {
-            os.write_bool(1, self.FFHEEIDBHEA)?;
-        }
         if self.IKMNAMKJAFA != 0 {
-            os.write_uint32(15, self.IKMNAMKJAFA)?;
+            os.write_uint32(9, self.IKMNAMKJAFA)?;
         }
-        if self.FFMDBDEHHEG != 0 {
-            os.write_uint32(12, self.FFMDBDEHHEG)?;
-        }
+        os.write_repeated_packed_uint32(15, &self.OBLHBOEOLAF)?;
+        os.write_repeated_packed_uint32(10, &self.ILMOOKBJHHC)?;
+        os.write_repeated_packed_uint32(11, &self.EMLLECGEPCK)?;
         if self.FJKGKAEKBKJ != false {
-            os.write_bool(10, self.FJKGKAEKBKJ)?;
+            os.write_bool(4, self.FJKGKAEKBKJ)?;
         }
         if self.chess_rogue_main_story_id != 0 {
-            os.write_uint32(8, self.chess_rogue_main_story_id)?;
+            os.write_uint32(5, self.chess_rogue_main_story_id)?;
+        }
+        if self.FFHEEIDBHEA != false {
+            os.write_bool(14, self.FFHEEIDBHEA)?;
+        }
+        if self.FFMDBDEHHEG != 0 {
+            os.write_uint32(6, self.FFMDBDEHHEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -225,27 +225,27 @@ impl ::protobuf::Message for IMNPEAJAJJO {
     }
 
     fn clear(&mut self) {
+        self.IKMNAMKJAFA = 0;
+        self.OBLHBOEOLAF.clear();
         self.ILMOOKBJHHC.clear();
         self.EMLLECGEPCK.clear();
-        self.OBLHBOEOLAF.clear();
-        self.FFHEEIDBHEA = false;
-        self.IKMNAMKJAFA = 0;
-        self.FFMDBDEHHEG = 0;
         self.FJKGKAEKBKJ = false;
         self.chess_rogue_main_story_id = 0;
+        self.FFHEEIDBHEA = false;
+        self.FFMDBDEHHEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IMNPEAJAJJO {
         static instance: IMNPEAJAJJO = IMNPEAJAJJO {
+            IKMNAMKJAFA: 0,
+            OBLHBOEOLAF: ::std::vec::Vec::new(),
             ILMOOKBJHHC: ::std::vec::Vec::new(),
             EMLLECGEPCK: ::std::vec::Vec::new(),
-            OBLHBOEOLAF: ::std::vec::Vec::new(),
-            FFHEEIDBHEA: false,
-            IKMNAMKJAFA: 0,
-            FFMDBDEHHEG: 0,
             FJKGKAEKBKJ: false,
             chess_rogue_main_story_id: 0,
+            FFHEEIDBHEA: false,
+            FFMDBDEHHEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -270,14 +270,14 @@ impl ::protobuf::reflect::ProtobufValue for IMNPEAJAJJO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IMNPEAJAJJO.proto\"\xb5\x02\n\x0bIMNPEAJAJJO\x12\x20\n\x0bILMOOKBJ\
-    HHC\x18\x04\x20\x03(\rR\x0bILMOOKBJHHC\x12\x20\n\x0bEMLLECGEPCK\x18\r\
-    \x20\x03(\rR\x0bEMLLECGEPCK\x12\x20\n\x0bOBLHBOEOLAF\x18\x02\x20\x03(\rR\
-    \x0bOBLHBOEOLAF\x12\x20\n\x0bFFHEEIDBHEA\x18\x01\x20\x01(\x08R\x0bFFHEEI\
-    DBHEA\x12\x20\n\x0bIKMNAMKJAFA\x18\x0f\x20\x01(\rR\x0bIKMNAMKJAFA\x12\
-    \x20\n\x0bFFMDBDEHHEG\x18\x0c\x20\x01(\rR\x0bFFMDBDEHHEG\x12\x20\n\x0bFJ\
-    KGKAEKBKJ\x18\n\x20\x01(\x08R\x0bFJKGKAEKBKJ\x128\n\x19chess_rogue_main_\
-    story_id\x18\x08\x20\x01(\rR\x15chessRogueMainStoryIdb\x06proto3\
+    \n\x11IMNPEAJAJJO.proto\"\xb5\x02\n\x0bIMNPEAJAJJO\x12\x20\n\x0bIKMNAMKJ\
+    AFA\x18\t\x20\x01(\rR\x0bIKMNAMKJAFA\x12\x20\n\x0bOBLHBOEOLAF\x18\x0f\
+    \x20\x03(\rR\x0bOBLHBOEOLAF\x12\x20\n\x0bILMOOKBJHHC\x18\n\x20\x03(\rR\
+    \x0bILMOOKBJHHC\x12\x20\n\x0bEMLLECGEPCK\x18\x0b\x20\x03(\rR\x0bEMLLECGE\
+    PCK\x12\x20\n\x0bFJKGKAEKBKJ\x18\x04\x20\x01(\x08R\x0bFJKGKAEKBKJ\x128\n\
+    \x19chess_rogue_main_story_id\x18\x05\x20\x01(\rR\x15chessRogueMainStory\
+    Id\x12\x20\n\x0bFFHEEIDBHEA\x18\x0e\x20\x01(\x08R\x0bFFHEEIDBHEA\x12\x20\
+    \n\x0bFFMDBDEHHEG\x18\x06\x20\x01(\rR\x0bFFMDBDEHHEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.MGDMHLGJHOC = is.read_uint32()?;
                 },
-                50 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.gamble_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MGDMHLGJHOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MGDMHLGJHOC);
+            my_size += ::protobuf::rt::uint32_size(6, self.MGDMHLGJHOC);
         }
         if let Some(v) = self.gamble_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueGambleMachineInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MGDMHLGJHOC != 0 {
-            os.write_uint32(13, self.MGDMHLGJHOC)?;
+            os.write_uint32(6, self.MGDMHLGJHOC)?;
         }
         if let Some(v) = self.gamble_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueGambleMachineInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueGambleMachineInfo.proto\x1a\x15RogueGambleInfo.proto\"m\n\x16\
-    RogueGambleMachineInfo\x12\x20\n\x0bMGDMHLGJHOC\x18\r\x20\x01(\rR\x0bMGD\
-    MHLGJHOC\x121\n\x0bgamble_info\x18\x06\x20\x01(\x0b2\x10.RogueGambleInfo\
-    R\ngambleInfob\x06proto3\
+    RogueGambleMachineInfo\x12\x20\n\x0bMGDMHLGJHOC\x18\x06\x20\x01(\rR\x0bM\
+    GDMHLGJHOC\x121\n\x0bgamble_info\x18\x0f\x20\x01(\x0b2\x10.RogueGambleIn\
+    foR\ngambleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.cur_level_index = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.FLLABLFBEIK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_level_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_level_index);
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_level_index);
         }
         if self.FLLABLFBEIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FLLABLFBEIK);
+            my_size += ::protobuf::rt::uint32_size(6, self.FLLABLFBEIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_level_index != 0 {
-            os.write_uint32(3, self.cur_level_index)?;
+            os.write_uint32(11, self.cur_level_index)?;
         }
         if self.FLLABLFBEIK != 0 {
-            os.write_uint32(8, self.FLLABLFBEIK)?;
+            os.write_uint32(6, self.FLLABLFBEIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterLayerCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueMagicEnterLayerCsReq.proto\"e\n\x19RogueMagicEnterLayerCsReq\
-    \x12&\n\x0fcur_level_index\x18\x03\x20\x01(\rR\rcurLevelIndex\x12\x20\n\
-    \x0bFLLABLFBEIK\x18\x08\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
+    \x12&\n\x0fcur_level_index\x18\x0b\x20\x01(\rR\rcurLevelIndex\x12\x20\n\
+    \x0bFLLABLFBEIK\x18\x06\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

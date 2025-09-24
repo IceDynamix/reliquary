@@ -30,14 +30,14 @@ pub struct StartFightFestScRsp {
     // message fields
     // @@protoc_insertion_point(field:StartFightFestScRsp.type)
     pub type_: ::protobuf::EnumOrUnknown<super::FightFestType::FightFestType>,
-    // @@protoc_insertion_point(field:StartFightFestScRsp.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:StartFightFestScRsp.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:StartFightFestScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // @@protoc_insertion_point(field:StartFightFestScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartFightFestScRsp.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:StartFightFestScRsp.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartFightFestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,16 +62,6 @@ impl StartFightFestScRsp {
             |m: &StartFightFestScRsp| { &m.type_ },
             |m: &mut StartFightFestScRsp| { &mut m.type_ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &StartFightFestScRsp| { &m.event_id },
-            |m: &mut StartFightFestScRsp| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &StartFightFestScRsp| { &m.id },
-            |m: &mut StartFightFestScRsp| { &mut m.id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
             "battle_info",
             |m: &StartFightFestScRsp| { &m.battle_info },
@@ -81,6 +71,16 @@ impl StartFightFestScRsp {
             "retcode",
             |m: &StartFightFestScRsp| { &m.retcode },
             |m: &mut StartFightFestScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &StartFightFestScRsp| { &m.event_id },
+            |m: &mut StartFightFestScRsp| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &StartFightFestScRsp| { &m.id },
+            |m: &mut StartFightFestScRsp| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartFightFestScRsp>(
             "StartFightFestScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartFightFestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                88 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.event_id = is.read_uint32()?;
-                },
-                120 => {
-                    self.id = is.read_uint32()?;
-                },
-                26 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for StartFightFestScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
-        }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::int32_size(11, self.type_.value());
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for StartFightFestScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
-        if self.event_id != 0 {
-            os.write_uint32(11, self.event_id)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.event_id != 0 {
+            os.write_uint32(8, self.event_id)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(2, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for StartFightFestScRsp {
 
     fn clear(&mut self) {
         self.type_ = ::protobuf::EnumOrUnknown::new(super::FightFestType::FightFestType::FIGHT_FEST_TYPE_NONE);
-        self.event_id = 0;
-        self.id = 0;
         self.battle_info.clear();
         self.retcode = 0;
+        self.event_id = 0;
+        self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartFightFestScRsp {
         static instance: StartFightFestScRsp = StartFightFestScRsp {
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            event_id: 0,
-            id: 0,
             battle_info: ::protobuf::MessageField::none(),
             retcode: 0,
+            event_id: 0,
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for StartFightFestScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StartFightFestScRsp.proto\x1a\x13FightFestType.proto\x1a\x15SceneB\
     attleInfo.proto\"\xb1\x01\n\x13StartFightFestScRsp\x12\"\n\x04type\x18\
-    \x0e\x20\x01(\x0e2\x0e.FightFestTypeR\x04type\x12\x19\n\x08event_id\x18\
-    \x0b\x20\x01(\rR\x07eventId\x12\x0e\n\x02id\x18\x0f\x20\x01(\rR\x02id\
-    \x121\n\x0bbattle_info\x18\x03\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattl\
-    eInfo\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x0b\x20\x01(\x0e2\x0e.FightFestTypeR\x04type\x121\n\x0bbattle_info\x18\
+    \x0e\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x18\n\x07retcode\
+    \x18\x07\x20\x01(\rR\x07retcode\x12\x19\n\x08event_id\x18\x08\x20\x01(\r\
+    R\x07eventId\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPKDPAJPAGF {
     // message fields
-    // @@protoc_insertion_point(field:PPKDPAJPAGF.GJFHPCIEBOJ)
-    pub GJFHPCIEBOJ: u32,
     // @@protoc_insertion_point(field:PPKDPAJPAGF.status)
     pub status: ::protobuf::EnumOrUnknown<super::KNOOCOCANAM::KNOOCOCANAM>,
     // @@protoc_insertion_point(field:PPKDPAJPAGF.JLHDKOLMEDA)
     pub JLHDKOLMEDA: u32,
+    // @@protoc_insertion_point(field:PPKDPAJPAGF.GJFHPCIEBOJ)
+    pub GJFHPCIEBOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PPKDPAJPAGF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl PPKDPAJPAGF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJFHPCIEBOJ",
-            |m: &PPKDPAJPAGF| { &m.GJFHPCIEBOJ },
-            |m: &mut PPKDPAJPAGF| { &mut m.GJFHPCIEBOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &PPKDPAJPAGF| { &m.status },
             |m: &mut PPKDPAJPAGF| { &mut m.status },
@@ -67,6 +62,11 @@ impl PPKDPAJPAGF {
             "JLHDKOLMEDA",
             |m: &PPKDPAJPAGF| { &m.JLHDKOLMEDA },
             |m: &mut PPKDPAJPAGF| { &mut m.JLHDKOLMEDA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJFHPCIEBOJ",
+            |m: &PPKDPAJPAGF| { &m.GJFHPCIEBOJ },
+            |m: &mut PPKDPAJPAGF| { &mut m.GJFHPCIEBOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PPKDPAJPAGF>(
             "PPKDPAJPAGF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PPKDPAJPAGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.GJFHPCIEBOJ = is.read_uint32()?;
-                },
                 80 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 48 => {
                     self.JLHDKOLMEDA = is.read_uint32()?;
+                },
+                24 => {
+                    self.GJFHPCIEBOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PPKDPAJPAGF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GJFHPCIEBOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GJFHPCIEBOJ);
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::KNOOCOCANAM::KNOOCOCANAM::BuildGoalStepNone) {
             my_size += ::protobuf::rt::int32_size(10, self.status.value());
         }
         if self.JLHDKOLMEDA != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.JLHDKOLMEDA);
+        }
+        if self.GJFHPCIEBOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GJFHPCIEBOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PPKDPAJPAGF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GJFHPCIEBOJ != 0 {
-            os.write_uint32(7, self.GJFHPCIEBOJ)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::KNOOCOCANAM::KNOOCOCANAM::BuildGoalStepNone) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.JLHDKOLMEDA != 0 {
             os.write_uint32(6, self.JLHDKOLMEDA)?;
+        }
+        if self.GJFHPCIEBOJ != 0 {
+            os.write_uint32(3, self.GJFHPCIEBOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PPKDPAJPAGF {
     }
 
     fn clear(&mut self) {
-        self.GJFHPCIEBOJ = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::KNOOCOCANAM::KNOOCOCANAM::BuildGoalStepNone);
         self.JLHDKOLMEDA = 0;
+        self.GJFHPCIEBOJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPKDPAJPAGF {
         static instance: PPKDPAJPAGF = PPKDPAJPAGF {
-            GJFHPCIEBOJ: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             JLHDKOLMEDA: 0,
+            GJFHPCIEBOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PPKDPAJPAGF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PPKDPAJPAGF.proto\x1a\x11KNOOCOCANAM.proto\"w\n\x0bPPKDPAJPAGF\x12\
-    \x20\n\x0bGJFHPCIEBOJ\x18\x07\x20\x01(\rR\x0bGJFHPCIEBOJ\x12$\n\x06statu\
-    s\x18\n\x20\x01(\x0e2\x0c.KNOOCOCANAMR\x06status\x12\x20\n\x0bJLHDKOLMED\
-    A\x18\x06\x20\x01(\rR\x0bJLHDKOLMEDAb\x06proto3\
+    $\n\x06status\x18\n\x20\x01(\x0e2\x0c.KNOOCOCANAMR\x06status\x12\x20\n\
+    \x0bJLHDKOLMEDA\x18\x06\x20\x01(\rR\x0bJLHDKOLMEDA\x12\x20\n\x0bGJFHPCIE\
+    BOJ\x18\x03\x20\x01(\rR\x0bGJFHPCIEBOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

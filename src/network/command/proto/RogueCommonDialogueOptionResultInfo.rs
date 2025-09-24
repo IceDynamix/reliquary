@@ -45,7 +45,7 @@ impl RogueCommonDialogueOptionResultInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonDialogueOptionBattleResultInfo battle_result_info = 10;
+    // .RogueCommonDialogueOptionBattleResultInfo battle_result_info = 7;
 
     pub fn battle_result_info(&self) -> &super::RogueCommonDialogueOptionBattleResultInfo::RogueCommonDialogueOptionBattleResultInfo {
         match self.DCOECLCEDOB {
@@ -94,7 +94,7 @@ impl RogueCommonDialogueOptionResultInfo {
         }
     }
 
-    // .NEBPGHDDEPC HMLCEHIKFFK = 3;
+    // .NEBPGHDDEPC HMLCEHIKFFK = 6;
 
     pub fn HMLCEHIKFFK(&self) -> &super::NEBPGHDDEPC::NEBPGHDDEPC {
         match self.DCOECLCEDOB {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for RogueCommonDialogueOptionResultInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                58 => {
                     self.DCOECLCEDOB = ::std::option::Option::Some(rogue_common_dialogue_option_result_info::DCOECLCEDOB::BattleResultInfo(is.read_message()?));
                 },
-                26 => {
+                50 => {
                     self.DCOECLCEDOB = ::std::option::Option::Some(rogue_common_dialogue_option_result_info::DCOECLCEDOB::HMLCEHIKFFK(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for RogueCommonDialogueOptionResultInfo {
         if let ::std::option::Option::Some(ref v) = self.DCOECLCEDOB {
             match v {
                 &rogue_common_dialogue_option_result_info::DCOECLCEDOB::BattleResultInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &rogue_common_dialogue_option_result_info::DCOECLCEDOB::HMLCEHIKFFK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -306,10 +306,10 @@ pub mod rogue_common_dialogue_option_result_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)RogueCommonDialogueOptionResultInfo.proto\x1a\x11NEBPGHDDEPC.proto\
     \x1a/RogueCommonDialogueOptionBattleResultInfo.proto\"\xc2\x01\n#RogueCo\
-    mmonDialogueOptionResultInfo\x12Z\n\x12battle_result_info\x18\n\x20\x01(\
-    \x0b2*.RogueCommonDialogueOptionBattleResultInfoH\0R\x10battleResultInfo\
-    \x120\n\x0bHMLCEHIKFFK\x18\x03\x20\x01(\x0b2\x0c.NEBPGHDDEPCH\0R\x0bHMLC\
-    EHIKFFKB\r\n\x0bDCOECLCEDOBb\x06proto3\
+    mmonDialogueOptionResultInfo\x12Z\n\x12battle_result_info\x18\x07\x20\
+    \x01(\x0b2*.RogueCommonDialogueOptionBattleResultInfoH\0R\x10battleResul\
+    tInfo\x120\n\x0bHMLCEHIKFFK\x18\x06\x20\x01(\x0b2\x0c.NEBPGHDDEPCH\0R\
+    \x0bHMLCEHIKFFKB\r\n\x0bDCOECLCEDOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

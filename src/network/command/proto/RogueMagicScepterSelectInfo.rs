@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueMagicScepterSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                106 => {
                     self.select_scepters.push(is.read_message()?);
                 },
-                16 => {
+                8 => {
                     self.select_hint_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RogueMagicScepterSelectInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.select_hint_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.select_hint_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueMagicScepterSelectInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.select_scepters {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.select_hint_id != 0 {
-            os.write_uint32(2, self.select_hint_id)?;
+            os.write_uint32(1, self.select_hint_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicScepterSelectInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueMagicScepterSelectInfo.proto\x1a\x17RogueMagicScepter.proto\"\
     \x80\x01\n\x1bRogueMagicScepterSelectInfo\x12;\n\x0fselect_scepters\x18\
-    \x05\x20\x03(\x0b2\x12.RogueMagicScepterR\x0eselectScepters\x12$\n\x0ese\
-    lect_hint_id\x18\x02\x20\x01(\rR\x0cselectHintIdb\x06proto3\
+    \r\x20\x03(\x0b2\x12.RogueMagicScepterR\x0eselectScepters\x12$\n\x0esele\
+    ct_hint_id\x18\x01\x20\x01(\rR\x0cselectHintIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

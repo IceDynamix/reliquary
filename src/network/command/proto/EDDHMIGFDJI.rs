@@ -86,13 +86,13 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                120 => {
                     self.select_cell_id = is.read_uint32()?;
                 },
-                40 => {
+                16 => {
                     self.MBGKCKLDHIB = is.read_uint32()?;
                 },
-                80 => {
+                56 => {
                     self.confirm = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.select_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.select_cell_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.select_cell_id);
         }
         if self.MBGKCKLDHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MBGKCKLDHIB);
+            my_size += ::protobuf::rt::uint32_size(2, self.MBGKCKLDHIB);
         }
         if self.confirm != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EDDHMIGFDJI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.select_cell_id != 0 {
-            os.write_uint32(1, self.select_cell_id)?;
+            os.write_uint32(15, self.select_cell_id)?;
         }
         if self.MBGKCKLDHIB != 0 {
-            os.write_uint32(5, self.MBGKCKLDHIB)?;
+            os.write_uint32(2, self.MBGKCKLDHIB)?;
         }
         if self.confirm != false {
-            os.write_bool(10, self.confirm)?;
+            os.write_bool(7, self.confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EDDHMIGFDJI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EDDHMIGFDJI.proto\"o\n\x0bEDDHMIGFDJI\x12$\n\x0eselect_cell_id\x18\
-    \x01\x20\x01(\rR\x0cselectCellId\x12\x20\n\x0bMBGKCKLDHIB\x18\x05\x20\
-    \x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\n\x20\x01(\x08R\x07conf\
-    irmb\x06proto3\
+    \x0f\x20\x01(\rR\x0cselectCellId\x12\x20\n\x0bMBGKCKLDHIB\x18\x02\x20\
+    \x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\x07\x20\x01(\x08R\x07co\
+    nfirmb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

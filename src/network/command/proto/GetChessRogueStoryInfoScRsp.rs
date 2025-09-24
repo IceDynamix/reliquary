@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetChessRogueStoryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                106 => {
                     self.IDGIAHOPGAJ.push(is.read_message()?);
                 },
-                112 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                74 => {
                     self.MNHMEKKHKNA.push(is.read_message()?);
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GetChessRogueStoryInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         for value in &self.MNHMEKKHKNA {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetChessRogueStoryInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IDGIAHOPGAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         for v in &self.MNHMEKKHKNA {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,8 +187,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetChessRogueStoryInfoScRsp.proto\x1a\x11DIPMFOMGCGL.proto\x1a\x11LAH\
     JPFOOHEB.proto\"\x97\x01\n\x1bGetChessRogueStoryInfoScRsp\x12.\n\x0bIDGI\
-    AHOPGAJ\x18\x08\x20\x03(\x0b2\x0c.LAHJPFOOHEBR\x0bIDGIAHOPGAJ\x12\x18\n\
-    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12.\n\x0bMNHMEKKHKNA\x18\x04\
+    AHOPGAJ\x18\r\x20\x03(\x0b2\x0c.LAHJPFOOHEBR\x0bIDGIAHOPGAJ\x12\x18\n\
+    \x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bMNHMEKKHKNA\x18\t\
     \x20\x03(\x0b2\x0c.DIPMFOMGCGLR\x0bMNHMEKKHKNAb\x06proto3\
 ";
 

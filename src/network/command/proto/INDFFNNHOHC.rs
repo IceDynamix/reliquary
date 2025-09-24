@@ -79,13 +79,13 @@ impl ::protobuf::Message for INDFFNNHOHC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.step_id_list)?;
                 },
-                80 => {
+                32 => {
                     self.step_id_list.push(is.read_uint32()?);
                 },
-                8 => {
+                120 => {
                     self.area_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for INDFFNNHOHC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.step_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.step_id_list);
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for INDFFNNHOHC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.step_id_list)?;
+        os.write_repeated_packed_uint32(4, &self.step_id_list)?;
         if self.area_id != 0 {
-            os.write_uint32(1, self.area_id)?;
+            os.write_uint32(15, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for INDFFNNHOHC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11INDFFNNHOHC.proto\"H\n\x0bINDFFNNHOHC\x12\x20\n\x0cstep_id_list\
-    \x18\n\x20\x03(\rR\nstepIdList\x12\x17\n\x07area_id\x18\x01\x20\x01(\rR\
-    \x06areaIdb\x06proto3\
+    \x18\x04\x20\x03(\rR\nstepIdList\x12\x17\n\x07area_id\x18\x0f\x20\x01(\r\
+    R\x06areaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

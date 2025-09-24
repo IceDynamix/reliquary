@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicScepterSelectResult {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicScepterSelectResult.ABBMHPKGAIK)
-    pub ABBMHPKGAIK: bool,
     // @@protoc_insertion_point(field:RogueMagicScepterSelectResult.select_scepter)
     pub select_scepter: ::protobuf::MessageField<super::RogueMagicScepter::RogueMagicScepter>,
+    // @@protoc_insertion_point(field:RogueMagicScepterSelectResult.ABBMHPKGAIK)
+    pub ABBMHPKGAIK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicScepterSelectResult.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicScepterSelectResult {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABBMHPKGAIK",
-            |m: &RogueMagicScepterSelectResult| { &m.ABBMHPKGAIK },
-            |m: &mut RogueMagicScepterSelectResult| { &mut m.ABBMHPKGAIK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicScepter::RogueMagicScepter>(
             "select_scepter",
             |m: &RogueMagicScepterSelectResult| { &m.select_scepter },
             |m: &mut RogueMagicScepterSelectResult| { &mut m.select_scepter },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABBMHPKGAIK",
+            |m: &RogueMagicScepterSelectResult| { &m.ABBMHPKGAIK },
+            |m: &mut RogueMagicScepterSelectResult| { &mut m.ABBMHPKGAIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicScepterSelectResult>(
             "RogueMagicScepterSelectResult",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicScepterSelectResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.ABBMHPKGAIK = is.read_bool()?;
-                },
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.select_scepter)?;
+                },
+                40 => {
+                    self.ABBMHPKGAIK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueMagicScepterSelectResult {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABBMHPKGAIK != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.select_scepter.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ABBMHPKGAIK != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueMagicScepterSelectResult {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABBMHPKGAIK != false {
-            os.write_bool(15, self.ABBMHPKGAIK)?;
-        }
         if let Some(v) = self.select_scepter.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.ABBMHPKGAIK != false {
+            os.write_bool(5, self.ABBMHPKGAIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueMagicScepterSelectResult {
     }
 
     fn clear(&mut self) {
-        self.ABBMHPKGAIK = false;
         self.select_scepter.clear();
+        self.ABBMHPKGAIK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicScepterSelectResult {
         static instance: RogueMagicScepterSelectResult = RogueMagicScepterSelectResult {
-            ABBMHPKGAIK: false,
             select_scepter: ::protobuf::MessageField::none(),
+            ABBMHPKGAIK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicScepterSelectResult {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueMagicScepterSelectResult.proto\x1a\x17RogueMagicScepter.proto\"|\
-    \n\x1dRogueMagicScepterSelectResult\x12\x20\n\x0bABBMHPKGAIK\x18\x0f\x20\
-    \x01(\x08R\x0bABBMHPKGAIK\x129\n\x0eselect_scepter\x18\r\x20\x01(\x0b2\
-    \x12.RogueMagicScepterR\rselectScepterb\x06proto3\
+    \n\x1dRogueMagicScepterSelectResult\x129\n\x0eselect_scepter\x18\x06\x20\
+    \x01(\x0b2\x12.RogueMagicScepterR\rselectScepter\x12\x20\n\x0bABBMHPKGAI\
+    K\x18\x05\x20\x01(\x08R\x0bABBMHPKGAIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

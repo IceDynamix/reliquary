@@ -86,13 +86,13 @@ impl ::protobuf::Message for SceneGroupState {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.state = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.group_id = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
                     self.is_default = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for SceneGroupState {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.state);
+            my_size += ::protobuf::rt::uint32_size(6, self.state);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
         }
         if self.is_default != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SceneGroupState {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.state != 0 {
-            os.write_uint32(2, self.state)?;
+            os.write_uint32(6, self.state)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(5, self.group_id)?;
+            os.write_uint32(8, self.group_id)?;
         }
         if self.is_default != false {
-            os.write_bool(1, self.is_default)?;
+            os.write_bool(12, self.is_default)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneGroupState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneGroupState.proto\"a\n\x0fSceneGroupState\x12\x14\n\x05state\
-    \x18\x02\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\
-    \x07groupId\x12\x1d\n\nis_default\x18\x01\x20\x01(\x08R\tisDefaultb\x06p\
+    \x18\x06\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\
+    \x07groupId\x12\x1d\n\nis_default\x18\x0c\x20\x01(\x08R\tisDefaultb\x06p\
     roto3\
 ";
 

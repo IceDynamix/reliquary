@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.cur_room_index = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.FLLABLFBEIK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_room_index);
+            my_size += ::protobuf::rt::uint32_size(9, self.cur_room_index);
         }
         if self.FLLABLFBEIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FLLABLFBEIK);
+            my_size += ::protobuf::rt::uint32_size(11, self.FLLABLFBEIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_room_index != 0 {
-            os.write_uint32(10, self.cur_room_index)?;
+            os.write_uint32(9, self.cur_room_index)?;
         }
         if self.FLLABLFBEIK != 0 {
-            os.write_uint32(13, self.FLLABLFBEIK)?;
+            os.write_uint32(11, self.FLLABLFBEIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueMagicEnterRoomCsReq.proto\"b\n\x18RogueMagicEnterRoomCsReq\
-    \x12$\n\x0ecur_room_index\x18\n\x20\x01(\rR\x0ccurRoomIndex\x12\x20\n\
-    \x0bFLLABLFBEIK\x18\r\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
+    \x12$\n\x0ecur_room_index\x18\t\x20\x01(\rR\x0ccurRoomIndex\x12\x20\n\
+    \x0bFLLABLFBEIK\x18\x0b\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

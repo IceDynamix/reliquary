@@ -72,7 +72,7 @@ impl ::protobuf::Message for JGMOEPGHEMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                8 => {
                     self.player_data = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for JGMOEPGHEMC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.player_data != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.player_data);
+            my_size += ::protobuf::rt::int32_size(1, self.player_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for JGMOEPGHEMC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.player_data != 0 {
-            os.write_int32(13, self.player_data)?;
+            os.write_int32(1, self.player_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for JGMOEPGHEMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGMOEPGHEMC.proto\".\n\x0bJGMOEPGHEMC\x12\x1f\n\x0bplayer_data\x18\
-    \r\x20\x01(\x05R\nplayerDatab\x06proto3\
+    \x01\x20\x01(\x05R\nplayerDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

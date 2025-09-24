@@ -82,7 +82,7 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
                 16 => {
                     self.BAGMAOIPMJE = is.read_bool()?;
                 },
-                96 => {
+                112 => {
                     self.IPGECLELHGJ = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
             my_size += 1 + 1;
         }
         if self.IPGECLELHGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IPGECLELHGJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.IPGECLELHGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
             os.write_bool(2, self.BAGMAOIPMJE)?;
         }
         if self.IPGECLELHGJ != 0 {
-            os.write_uint32(12, self.IPGECLELHGJ)?;
+            os.write_uint32(14, self.IPGECLELHGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventSelectFriendCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$MonopolyEventSelectFriendCsReq.proto\"d\n\x1eMonopolyEventSelectFrien\
     dCsReq\x12\x20\n\x0bBAGMAOIPMJE\x18\x02\x20\x01(\x08R\x0bBAGMAOIPMJE\x12\
-    \x20\n\x0bIPGECLELHGJ\x18\x0c\x20\x01(\rR\x0bIPGECLELHGJb\x06proto3\
+    \x20\n\x0bIPGECLELHGJ\x18\x0e\x20\x01(\rR\x0bIPGECLELHGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

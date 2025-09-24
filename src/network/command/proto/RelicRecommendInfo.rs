@@ -86,13 +86,13 @@ impl ::protobuf::Message for RelicRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.EHCEEPMBDDI = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.FIKKGBIBCJK = is.read_uint32()?;
                 },
-                40 => {
+                24 => {
                     self.PDMGJKODFOP = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RelicRecommendInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EHCEEPMBDDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EHCEEPMBDDI);
+            my_size += ::protobuf::rt::uint32_size(4, self.EHCEEPMBDDI);
         }
         if self.FIKKGBIBCJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FIKKGBIBCJK);
+            my_size += ::protobuf::rt::uint32_size(6, self.FIKKGBIBCJK);
         }
         if self.PDMGJKODFOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PDMGJKODFOP);
+            my_size += ::protobuf::rt::uint32_size(3, self.PDMGJKODFOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RelicRecommendInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EHCEEPMBDDI != 0 {
-            os.write_uint32(8, self.EHCEEPMBDDI)?;
+            os.write_uint32(4, self.EHCEEPMBDDI)?;
         }
         if self.FIKKGBIBCJK != 0 {
-            os.write_uint32(15, self.FIKKGBIBCJK)?;
+            os.write_uint32(6, self.FIKKGBIBCJK)?;
         }
         if self.PDMGJKODFOP != 0 {
-            os.write_uint32(5, self.PDMGJKODFOP)?;
+            os.write_uint32(3, self.PDMGJKODFOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicRecommendInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RelicRecommendInfo.proto\"z\n\x12RelicRecommendInfo\x12\x20\n\x0bE\
-    HCEEPMBDDI\x18\x08\x20\x01(\rR\x0bEHCEEPMBDDI\x12\x20\n\x0bFIKKGBIBCJK\
-    \x18\x0f\x20\x01(\rR\x0bFIKKGBIBCJK\x12\x20\n\x0bPDMGJKODFOP\x18\x05\x20\
+    HCEEPMBDDI\x18\x04\x20\x01(\rR\x0bEHCEEPMBDDI\x12\x20\n\x0bFIKKGBIBCJK\
+    \x18\x06\x20\x01(\rR\x0bFIKKGBIBCJK\x12\x20\n\x0bPDMGJKODFOP\x18\x03\x20\
     \x01(\rR\x0bPDMGJKODFOPb\x06proto3\
 ";
 

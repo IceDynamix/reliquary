@@ -30,10 +30,10 @@ pub struct MBLNBBODELL {
     // message fields
     // @@protoc_insertion_point(field:MBLNBBODELL.value)
     pub value: i32,
-    // @@protoc_insertion_point(field:MBLNBBODELL.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:MBLNBBODELL.HAPEKNJBOJE)
     pub HAPEKNJBOJE: u32,
+    // @@protoc_insertion_point(field:MBLNBBODELL.unique_id)
+    pub unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MBLNBBODELL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MBLNBBODELL {
             |m: &mut MBLNBBODELL| { &mut m.value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &MBLNBBODELL| { &m.unique_id },
-            |m: &mut MBLNBBODELL| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAPEKNJBOJE",
             |m: &MBLNBBODELL| { &m.HAPEKNJBOJE },
             |m: &mut MBLNBBODELL| { &mut m.HAPEKNJBOJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &MBLNBBODELL| { &m.unique_id },
+            |m: &mut MBLNBBODELL| { &mut m.unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MBLNBBODELL>(
             "MBLNBBODELL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MBLNBBODELL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.value = is.read_int32()?;
                 },
-                40 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.HAPEKNJBOJE = is.read_uint32()?;
+                },
+                112 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MBLNBBODELL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.value != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.value);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
+            my_size += ::protobuf::rt::int32_size(9, self.value);
         }
         if self.HAPEKNJBOJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HAPEKNJBOJE);
+            my_size += ::protobuf::rt::uint32_size(4, self.HAPEKNJBOJE);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MBLNBBODELL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0 {
-            os.write_int32(8, self.value)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint32(5, self.unique_id)?;
+            os.write_int32(9, self.value)?;
         }
         if self.HAPEKNJBOJE != 0 {
-            os.write_uint32(12, self.HAPEKNJBOJE)?;
+            os.write_uint32(4, self.HAPEKNJBOJE)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(14, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MBLNBBODELL {
 
     fn clear(&mut self) {
         self.value = 0;
-        self.unique_id = 0;
         self.HAPEKNJBOJE = 0;
+        self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MBLNBBODELL {
         static instance: MBLNBBODELL = MBLNBBODELL {
             value: 0,
-            unique_id: 0,
             HAPEKNJBOJE: 0,
+            unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MBLNBBODELL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MBLNBBODELL.proto\"b\n\x0bMBLNBBODELL\x12\x14\n\x05value\x18\x08\
-    \x20\x01(\x05R\x05value\x12\x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08uniq\
-    ueId\x12\x20\n\x0bHAPEKNJBOJE\x18\x0c\x20\x01(\rR\x0bHAPEKNJBOJEb\x06pro\
-    to3\
+    \n\x11MBLNBBODELL.proto\"b\n\x0bMBLNBBODELL\x12\x14\n\x05value\x18\t\x20\
+    \x01(\x05R\x05value\x12\x20\n\x0bHAPEKNJBOJE\x18\x04\x20\x01(\rR\x0bHAPE\
+    KNJBOJE\x12\x1b\n\tunique_id\x18\x0e\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

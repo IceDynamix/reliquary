@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGetVirtualItemInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueGetVirtualItemInfo.IFEHBIMEMEC)
-    pub IFEHBIMEMEC: u32,
     // @@protoc_insertion_point(field:RogueGetVirtualItemInfo.BILEOOPHJEF)
     pub BILEOOPHJEF: u32,
+    // @@protoc_insertion_point(field:RogueGetVirtualItemInfo.IFEHBIMEMEC)
+    pub IFEHBIMEMEC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGetVirtualItemInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueGetVirtualItemInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFEHBIMEMEC",
-            |m: &RogueGetVirtualItemInfo| { &m.IFEHBIMEMEC },
-            |m: &mut RogueGetVirtualItemInfo| { &mut m.IFEHBIMEMEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BILEOOPHJEF",
             |m: &RogueGetVirtualItemInfo| { &m.BILEOOPHJEF },
             |m: &mut RogueGetVirtualItemInfo| { &mut m.BILEOOPHJEF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEHBIMEMEC",
+            |m: &RogueGetVirtualItemInfo| { &m.IFEHBIMEMEC },
+            |m: &mut RogueGetVirtualItemInfo| { &mut m.IFEHBIMEMEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGetVirtualItemInfo>(
             "RogueGetVirtualItemInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueGetVirtualItemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.BILEOOPHJEF = is.read_uint32()?;
+                },
                 8 => {
                     self.IFEHBIMEMEC = is.read_uint32()?;
-                },
-                120 => {
-                    self.BILEOOPHJEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueGetVirtualItemInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BILEOOPHJEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BILEOOPHJEF);
+        }
         if self.IFEHBIMEMEC != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.IFEHBIMEMEC);
-        }
-        if self.BILEOOPHJEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BILEOOPHJEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueGetVirtualItemInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BILEOOPHJEF != 0 {
+            os.write_uint32(13, self.BILEOOPHJEF)?;
+        }
         if self.IFEHBIMEMEC != 0 {
             os.write_uint32(1, self.IFEHBIMEMEC)?;
-        }
-        if self.BILEOOPHJEF != 0 {
-            os.write_uint32(15, self.BILEOOPHJEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueGetVirtualItemInfo {
     }
 
     fn clear(&mut self) {
-        self.IFEHBIMEMEC = 0;
         self.BILEOOPHJEF = 0;
+        self.IFEHBIMEMEC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGetVirtualItemInfo {
         static instance: RogueGetVirtualItemInfo = RogueGetVirtualItemInfo {
-            IFEHBIMEMEC: 0,
             BILEOOPHJEF: 0,
+            IFEHBIMEMEC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueGetVirtualItemInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueGetVirtualItemInfo.proto\"]\n\x17RogueGetVirtualItemInfo\x12\
-    \x20\n\x0bIFEHBIMEMEC\x18\x01\x20\x01(\rR\x0bIFEHBIMEMEC\x12\x20\n\x0bBI\
-    LEOOPHJEF\x18\x0f\x20\x01(\rR\x0bBILEOOPHJEFb\x06proto3\
+    \x20\n\x0bBILEOOPHJEF\x18\r\x20\x01(\rR\x0bBILEOOPHJEF\x12\x20\n\x0bIFEH\
+    BIMEMEC\x18\x01\x20\x01(\rR\x0bIFEHBIMEMECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

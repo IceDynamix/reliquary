@@ -45,7 +45,7 @@ impl RogueAdventureRoomGameplayWolfGunInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueAdventureRoomGameplayWolfGunGameInfo game_info = 11;
+    // .RogueAdventureRoomGameplayWolfGunGameInfo game_info = 7;
 
     pub fn game_info(&self) -> &super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo {
         match self.KFELKJLDKEH {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                58 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -237,7 +237,7 @@ pub mod rogue_adventure_room_gameplay_wolf_gun_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+RogueAdventureRoomGameplayWolfGunInfo.proto\x1a/RogueAdventureRoomGam\
     eplayWolfGunGameInfo.proto\"\x81\x01\n%RogueAdventureRoomGameplayWolfGun\
-    Info\x12I\n\tgame_info\x18\x0b\x20\x01(\x0b2*.RogueAdventureRoomGameplay\
+    Info\x12I\n\tgame_info\x18\x07\x20\x01(\x0b2*.RogueAdventureRoomGameplay\
     WolfGunGameInfoH\0R\x08gameInfoB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 

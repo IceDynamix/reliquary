@@ -30,8 +30,8 @@ pub struct FinishAeonDialogueGroupScRsp {
     // message fields
     // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:FinishAeonDialogueGroupScRsp.rogue_aeon_info)
     pub rogue_aeon_info: ::protobuf::MessageField<super::EACOFHBFMLB::EACOFHBFMLB>,
     // special fields
@@ -59,9 +59,9 @@ impl FinishAeonDialogueGroupScRsp {
             |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &FinishAeonDialogueGroupScRsp| { &m.reward },
-            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.reward },
+            "player_return_reward_list",
+            |m: &FinishAeonDialogueGroupScRsp| { &m.player_return_reward_list },
+            |m: &mut FinishAeonDialogueGroupScRsp| { &mut m.player_return_reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EACOFHBFMLB::EACOFHBFMLB>(
             "rogue_aeon_info",
@@ -89,10 +89,10 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
-                66 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
                 tag => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.player_return_reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -127,11 +127,11 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.reward.clear();
+        self.player_return_reward_list.clear();
         self.rogue_aeon_info.clear();
         self.special_fields.clear();
     }
@@ -159,7 +159,7 @@ impl ::protobuf::Message for FinishAeonDialogueGroupScRsp {
     fn default_instance() -> &'static FinishAeonDialogueGroupScRsp {
         static instance: FinishAeonDialogueGroupScRsp = FinishAeonDialogueGroupScRsp {
             retcode: 0,
-            reward: ::protobuf::MessageField::none(),
+            player_return_reward_list: ::protobuf::MessageField::none(),
             rogue_aeon_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for FinishAeonDialogueGroupScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishAeonDialogueGroupScRsp.proto\x1a\x11EACOFHBFMLB.proto\x1a\x0eI\
-    temList.proto\"\x91\x01\n\x1cFinishAeonDialogueGroupScRsp\x12\x18\n\x07r\
-    etcode\x18\x0e\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x01\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x124\n\x0frogue_aeon_info\x18\x08\x20\x01(\
-    \x0b2\x0c.EACOFHBFMLBR\rrogueAeonInfob\x06proto3\
+    temList.proto\"\xb4\x01\n\x1cFinishAeonDialogueGroupScRsp\x12\x18\n\x07r\
+    etcode\x18\x0e\x20\x01(\rR\x07retcode\x12D\n\x19player_return_reward_lis\
+    t\x18\x0f\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardList\x124\n\x0f\
+    rogue_aeon_info\x18\x01\x20\x01(\x0b2\x0c.EACOFHBFMLBR\rrogueAeonInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

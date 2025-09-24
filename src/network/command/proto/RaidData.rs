@@ -86,10 +86,10 @@ impl ::protobuf::Message for RaidData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     self.raid_target_info.push(is.read_message()?);
                 },
-                24 => {
+                32 => {
                     self.world_level = is.read_uint32()?;
                 },
                 48 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for RaidData {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
         }
         if self.raid_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.raid_id);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for RaidData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.raid_target_info {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.world_level != 0 {
-            os.write_uint32(3, self.world_level)?;
+            os.write_uint32(4, self.world_level)?;
         }
         if self.raid_id != 0 {
             os.write_uint32(6, self.raid_id)?;
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for RaidData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eRaidData.proto\x1a\x14RaidTargetInfo.proto\"\x7f\n\x08RaidData\x12\
-    9\n\x10raid_target_info\x18\x0c\x20\x03(\x0b2\x0f.RaidTargetInfoR\x0erai\
-    dTargetInfo\x12\x1f\n\x0bworld_level\x18\x03\x20\x01(\rR\nworldLevel\x12\
+    9\n\x10raid_target_info\x18\r\x20\x03(\x0b2\x0f.RaidTargetInfoR\x0eraidT\
+    argetInfo\x12\x1f\n\x0bworld_level\x18\x04\x20\x01(\rR\nworldLevel\x12\
     \x17\n\x07raid_id\x18\x06\x20\x01(\rR\x06raidIdb\x06proto3\
 ";
 

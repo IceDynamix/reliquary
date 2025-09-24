@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKDBFBHKAKK {
     // message fields
-    // @@protoc_insertion_point(field:OKDBFBHKAKK.LBBJIMAMCGE)
-    pub LBBJIMAMCGE: u32,
-    // @@protoc_insertion_point(field:OKDBFBHKAKK.LJLKNDJCBMF)
-    pub LJLKNDJCBMF: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:OKDBFBHKAKK.CEIHFOKENOB)
     pub CEIHFOKENOB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OKDBFBHKAKK.durability)
     pub durability: u32,
+    // @@protoc_insertion_point(field:OKDBFBHKAKK.LJLKNDJCBMF)
+    pub LJLKNDJCBMF: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:OKDBFBHKAKK.LBBJIMAMCGE)
+    pub LBBJIMAMCGE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OKDBFBHKAKK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl OKDBFBHKAKK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBBJIMAMCGE",
-            |m: &OKDBFBHKAKK| { &m.LBBJIMAMCGE },
-            |m: &mut OKDBFBHKAKK| { &mut m.LBBJIMAMCGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "LJLKNDJCBMF",
-            |m: &OKDBFBHKAKK| { &m.LJLKNDJCBMF },
-            |m: &mut OKDBFBHKAKK| { &mut m.LJLKNDJCBMF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CEIHFOKENOB",
             |m: &OKDBFBHKAKK| { &m.CEIHFOKENOB },
@@ -74,6 +64,16 @@ impl OKDBFBHKAKK {
             "durability",
             |m: &OKDBFBHKAKK| { &m.durability },
             |m: &mut OKDBFBHKAKK| { &mut m.durability },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "LJLKNDJCBMF",
+            |m: &OKDBFBHKAKK| { &m.LJLKNDJCBMF },
+            |m: &mut OKDBFBHKAKK| { &mut m.LJLKNDJCBMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LBBJIMAMCGE",
+            |m: &OKDBFBHKAKK| { &m.LBBJIMAMCGE },
+            |m: &mut OKDBFBHKAKK| { &mut m.LBBJIMAMCGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKDBFBHKAKK>(
             "OKDBFBHKAKK",
@@ -93,10 +93,16 @@ impl ::protobuf::Message for OKDBFBHKAKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.LBBJIMAMCGE = is.read_uint32()?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CEIHFOKENOB)?;
                 },
-                42 => {
+                96 => {
+                    self.CEIHFOKENOB.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.durability = is.read_uint32()?;
+                },
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,14 +117,8 @@ impl ::protobuf::Message for OKDBFBHKAKK {
                     is.pop_limit(old_limit);
                     self.LJLKNDJCBMF.insert(key, value);
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CEIHFOKENOB)?;
-                },
-                16 => {
-                    self.CEIHFOKENOB.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.durability = is.read_uint32()?;
+                56 => {
+                    self.LBBJIMAMCGE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -132,8 +132,9 @@ impl ::protobuf::Message for OKDBFBHKAKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LBBJIMAMCGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LBBJIMAMCGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CEIHFOKENOB);
+        if self.durability != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.durability);
         }
         for (k, v) in &self.LJLKNDJCBMF {
             let mut entry_size = 0;
@@ -141,9 +142,8 @@ impl ::protobuf::Message for OKDBFBHKAKK {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.CEIHFOKENOB);
-        if self.durability != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.durability);
+        if self.LBBJIMAMCGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LBBJIMAMCGE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,21 +151,21 @@ impl ::protobuf::Message for OKDBFBHKAKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LBBJIMAMCGE != 0 {
-            os.write_uint32(14, self.LBBJIMAMCGE)?;
+        os.write_repeated_packed_uint32(12, &self.CEIHFOKENOB)?;
+        if self.durability != 0 {
+            os.write_uint32(11, self.durability)?;
         }
         for (k, v) in &self.LJLKNDJCBMF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(2, &self.CEIHFOKENOB)?;
-        if self.durability != 0 {
-            os.write_uint32(9, self.durability)?;
+        if self.LBBJIMAMCGE != 0 {
+            os.write_uint32(7, self.LBBJIMAMCGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,10 +184,10 @@ impl ::protobuf::Message for OKDBFBHKAKK {
     }
 
     fn clear(&mut self) {
-        self.LBBJIMAMCGE = 0;
-        self.LJLKNDJCBMF.clear();
         self.CEIHFOKENOB.clear();
         self.durability = 0;
+        self.LJLKNDJCBMF.clear();
+        self.LBBJIMAMCGE = 0;
         self.special_fields.clear();
     }
 
@@ -215,13 +215,13 @@ impl ::protobuf::reflect::ProtobufValue for OKDBFBHKAKK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKDBFBHKAKK.proto\"\xf2\x01\n\x0bOKDBFBHKAKK\x12\x20\n\x0bLBBJIMAM\
-    CGE\x18\x0e\x20\x01(\rR\x0bLBBJIMAMCGE\x12?\n\x0bLJLKNDJCBMF\x18\x05\x20\
-    \x03(\x0b2\x1d.OKDBFBHKAKK.LJLKNDJCBMFEntryR\x0bLJLKNDJCBMF\x12\x20\n\
-    \x0bCEIHFOKENOB\x18\x02\x20\x03(\rR\x0bCEIHFOKENOB\x12\x1e\n\ndurability\
-    \x18\t\x20\x01(\rR\ndurability\x1a>\n\x10LJLKNDJCBMFEntry\x12\x10\n\x03k\
-    ey\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05\
-    value:\x028\x01b\x06proto3\
+    \n\x11OKDBFBHKAKK.proto\"\xf2\x01\n\x0bOKDBFBHKAKK\x12\x20\n\x0bCEIHFOKE\
+    NOB\x18\x0c\x20\x03(\rR\x0bCEIHFOKENOB\x12\x1e\n\ndurability\x18\x0b\x20\
+    \x01(\rR\ndurability\x12?\n\x0bLJLKNDJCBMF\x18\x0f\x20\x03(\x0b2\x1d.OKD\
+    BFBHKAKK.LJLKNDJCBMFEntryR\x0bLJLKNDJCBMF\x12\x20\n\x0bLBBJIMAMCGE\x18\
+    \x07\x20\x01(\rR\x0bLBBJIMAMCGE\x1a>\n\x10LJLKNDJCBMFEntry\x12\x10\n\x03\
+    key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
+    \x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

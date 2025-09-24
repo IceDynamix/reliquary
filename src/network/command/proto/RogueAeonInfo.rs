@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueAeonInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueAeonInfo.is_unlocked)
-    pub is_unlocked: bool,
     // @@protoc_insertion_point(field:RogueAeonInfo.unlocked_aeon_enhance_num)
     pub unlocked_aeon_enhance_num: u32,
-    // @@protoc_insertion_point(field:RogueAeonInfo.unlocked_aeon_num)
-    pub unlocked_aeon_num: u32,
+    // @@protoc_insertion_point(field:RogueAeonInfo.is_unlocked)
+    pub is_unlocked: bool,
     // @@protoc_insertion_point(field:RogueAeonInfo.aeon_id_list)
     pub aeon_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueAeonInfo.unlocked_aeon_num)
+    pub unlocked_aeon_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueAeonInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl RogueAeonInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlocked",
-            |m: &RogueAeonInfo| { &m.is_unlocked },
-            |m: &mut RogueAeonInfo| { &mut m.is_unlocked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unlocked_aeon_enhance_num",
             |m: &RogueAeonInfo| { &m.unlocked_aeon_enhance_num },
             |m: &mut RogueAeonInfo| { &mut m.unlocked_aeon_enhance_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlocked_aeon_num",
-            |m: &RogueAeonInfo| { &m.unlocked_aeon_num },
-            |m: &mut RogueAeonInfo| { &mut m.unlocked_aeon_num },
+            "is_unlocked",
+            |m: &RogueAeonInfo| { &m.is_unlocked },
+            |m: &mut RogueAeonInfo| { &mut m.is_unlocked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "aeon_id_list",
             |m: &RogueAeonInfo| { &m.aeon_id_list },
             |m: &mut RogueAeonInfo| { &mut m.aeon_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlocked_aeon_num",
+            |m: &RogueAeonInfo| { &m.unlocked_aeon_num },
+            |m: &mut RogueAeonInfo| { &mut m.unlocked_aeon_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueAeonInfo>(
             "RogueAeonInfo",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for RogueAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.is_unlocked = is.read_bool()?;
-                },
-                24 => {
+                80 => {
                     self.unlocked_aeon_enhance_num = is.read_uint32()?;
                 },
-                64 => {
-                    self.unlocked_aeon_num = is.read_uint32()?;
+                72 => {
+                    self.is_unlocked = is.read_bool()?;
                 },
-                18 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.aeon_id_list)?;
                 },
-                16 => {
+                96 => {
                     self.aeon_id_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.unlocked_aeon_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for RogueAeonInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.unlocked_aeon_enhance_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.unlocked_aeon_enhance_num);
+        }
         if self.is_unlocked != false {
             my_size += 1 + 1;
         }
-        if self.unlocked_aeon_enhance_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unlocked_aeon_enhance_num);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.aeon_id_list);
         if self.unlocked_aeon_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unlocked_aeon_num);
+            my_size += ::protobuf::rt::uint32_size(6, self.unlocked_aeon_num);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.aeon_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_unlocked != false {
-            os.write_bool(14, self.is_unlocked)?;
-        }
         if self.unlocked_aeon_enhance_num != 0 {
-            os.write_uint32(3, self.unlocked_aeon_enhance_num)?;
+            os.write_uint32(10, self.unlocked_aeon_enhance_num)?;
         }
+        if self.is_unlocked != false {
+            os.write_bool(9, self.is_unlocked)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.aeon_id_list)?;
         if self.unlocked_aeon_num != 0 {
-            os.write_uint32(8, self.unlocked_aeon_num)?;
+            os.write_uint32(6, self.unlocked_aeon_num)?;
         }
-        os.write_repeated_packed_uint32(2, &self.aeon_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for RogueAeonInfo {
     }
 
     fn clear(&mut self) {
-        self.is_unlocked = false;
         self.unlocked_aeon_enhance_num = 0;
-        self.unlocked_aeon_num = 0;
+        self.is_unlocked = false;
         self.aeon_id_list.clear();
+        self.unlocked_aeon_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueAeonInfo {
         static instance: RogueAeonInfo = RogueAeonInfo {
-            is_unlocked: false,
             unlocked_aeon_enhance_num: 0,
-            unlocked_aeon_num: 0,
+            is_unlocked: false,
             aeon_id_list: ::std::vec::Vec::new(),
+            unlocked_aeon_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueAeonInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RogueAeonInfo.proto\"\xb9\x01\n\rRogueAeonInfo\x12\x1f\n\x0bis_unl\
-    ocked\x18\x0e\x20\x01(\x08R\nisUnlocked\x129\n\x19unlocked_aeon_enhance_\
-    num\x18\x03\x20\x01(\rR\x16unlockedAeonEnhanceNum\x12*\n\x11unlocked_aeo\
-    n_num\x18\x08\x20\x01(\rR\x0funlockedAeonNum\x12\x20\n\x0caeon_id_list\
-    \x18\x02\x20\x03(\rR\naeonIdListb\x06proto3\
+    \n\x13RogueAeonInfo.proto\"\xb9\x01\n\rRogueAeonInfo\x129\n\x19unlocked_\
+    aeon_enhance_num\x18\n\x20\x01(\rR\x16unlockedAeonEnhanceNum\x12\x1f\n\
+    \x0bis_unlocked\x18\t\x20\x01(\x08R\nisUnlocked\x12\x20\n\x0caeon_id_lis\
+    t\x18\x0c\x20\x03(\rR\naeonIdList\x12*\n\x11unlocked_aeon_num\x18\x06\
+    \x20\x01(\rR\x0funlockedAeonNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

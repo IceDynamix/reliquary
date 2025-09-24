@@ -72,7 +72,7 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                42 => {
                     self.FMJPLHOHBAB.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FMJPLHOHBAB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsScoreRewardSyncInfoScNotify
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*LogisticsScoreRewardSyncInfoScNotify.proto\x1a\x14LogisticsScore.prot\
-    o\"Y\n$LogisticsScoreRewardSyncInfoScNotify\x121\n\x0bFMJPLHOHBAB\x18\t\
-    \x20\x03(\x0b2\x0f.LogisticsScoreR\x0bFMJPLHOHBABb\x06proto3\
+    o\"Y\n$LogisticsScoreRewardSyncInfoScNotify\x121\n\x0bFMJPLHOHBAB\x18\
+    \x05\x20\x03(\x0b2\x0f.LogisticsScoreR\x0bFMJPLHOHBABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for RewardSwitchItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.EINFBGKENDH = is.read_bool()?;
                 },
                 48 => {
                     self.daily_index = is.read_uint32()?;
                 },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RewardSwitchItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EINFBGKENDH != false {
-            os.write_bool(5, self.EINFBGKENDH)?;
+            os.write_bool(13, self.EINFBGKENDH)?;
         }
         if self.daily_index != 0 {
             os.write_uint32(6, self.daily_index)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RewardSwitchItem {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16RewardSwitchItem.proto\x1a\x0eItemList.proto\"}\n\x10RewardSwitchI\
-    tem\x12\x20\n\x0bEINFBGKENDH\x18\x05\x20\x01(\x08R\x0bEINFBGKENDH\x12\
-    \x1f\n\x0bdaily_index\x18\x06\x20\x01(\rR\ndailyIndex\x12&\n\titem_list\
-    \x18\x0c\x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
+    tem\x12\x20\n\x0bEINFBGKENDH\x18\r\x20\x01(\x08R\x0bEINFBGKENDH\x12\x1f\
+    \n\x0bdaily_index\x18\x06\x20\x01(\rR\ndailyIndex\x12&\n\titem_list\x18\
+    \t\x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

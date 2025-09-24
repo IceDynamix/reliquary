@@ -79,7 +79,7 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.NMGLNHPANAH = is.read_uint32()?;
                 },
                 8 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NMGLNHPANAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NMGLNHPANAH);
+            my_size += ::protobuf::rt::uint32_size(5, self.NMGLNHPANAH);
         }
         if self.LABOODDALOE != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.LABOODDALOE);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GameplayCounterRecoverCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NMGLNHPANAH != 0 {
-            os.write_uint32(10, self.NMGLNHPANAH)?;
+            os.write_uint32(5, self.NMGLNHPANAH)?;
         }
         if self.LABOODDALOE != 0 {
             os.write_uint32(1, self.LABOODDALOE)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GameplayCounterRecoverCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GameplayCounterRecoverCsReq.proto\"a\n\x1bGameplayCounterRecoverCsReq\
-    \x12\x20\n\x0bNMGLNHPANAH\x18\n\x20\x01(\rR\x0bNMGLNHPANAH\x12\x20\n\x0b\
-    LABOODDALOE\x18\x01\x20\x01(\rR\x0bLABOODDALOEb\x06proto3\
+    \x12\x20\n\x0bNMGLNHPANAH\x18\x05\x20\x01(\rR\x0bNMGLNHPANAH\x12\x20\n\
+    \x0bLABOODDALOE\x18\x01\x20\x01(\rR\x0bLABOODDALOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

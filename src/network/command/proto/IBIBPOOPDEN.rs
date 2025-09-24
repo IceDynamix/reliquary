@@ -30,10 +30,10 @@ pub struct IBIBPOOPDEN {
     // message fields
     // @@protoc_insertion_point(field:IBIBPOOPDEN.LGJFNAIAGLD)
     pub LGJFNAIAGLD: u32,
-    // @@protoc_insertion_point(field:IBIBPOOPDEN.miracle_info)
-    pub miracle_info: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
     // @@protoc_insertion_point(field:IBIBPOOPDEN.FKPIHAAHHBI)
     pub FKPIHAAHHBI: u32,
+    // @@protoc_insertion_point(field:IBIBPOOPDEN.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
     // special fields
     // @@protoc_insertion_point(special_field:IBIBPOOPDEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl IBIBPOOPDEN {
             |m: &IBIBPOOPDEN| { &m.LGJFNAIAGLD },
             |m: &mut IBIBPOOPDEN| { &mut m.LGJFNAIAGLD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameRogueMiracle::GameRogueMiracle>(
-            "miracle_info",
-            |m: &IBIBPOOPDEN| { &m.miracle_info },
-            |m: &mut IBIBPOOPDEN| { &mut m.miracle_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FKPIHAAHHBI",
             |m: &IBIBPOOPDEN| { &m.FKPIHAAHHBI },
             |m: &mut IBIBPOOPDEN| { &mut m.FKPIHAAHHBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameRogueMiracle::GameRogueMiracle>(
+            "miracle_info",
+            |m: &IBIBPOOPDEN| { &m.miracle_info },
+            |m: &mut IBIBPOOPDEN| { &mut m.miracle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBIBPOOPDEN>(
             "IBIBPOOPDEN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IBIBPOOPDEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.LGJFNAIAGLD = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
-                },
-                112 => {
+                80 => {
                     self.FKPIHAAHHBI = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for IBIBPOOPDEN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LGJFNAIAGLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LGJFNAIAGLD);
+            my_size += ::protobuf::rt::uint32_size(2, self.LGJFNAIAGLD);
+        }
+        if self.FKPIHAAHHBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FKPIHAAHHBI);
         }
         if let Some(v) = self.miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FKPIHAAHHBI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FKPIHAAHHBI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for IBIBPOOPDEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LGJFNAIAGLD != 0 {
-            os.write_uint32(15, self.LGJFNAIAGLD)?;
-        }
-        if let Some(v) = self.miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            os.write_uint32(2, self.LGJFNAIAGLD)?;
         }
         if self.FKPIHAAHHBI != 0 {
-            os.write_uint32(14, self.FKPIHAAHHBI)?;
+            os.write_uint32(10, self.FKPIHAAHHBI)?;
+        }
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for IBIBPOOPDEN {
 
     fn clear(&mut self) {
         self.LGJFNAIAGLD = 0;
-        self.miracle_info.clear();
         self.FKPIHAAHHBI = 0;
+        self.miracle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IBIBPOOPDEN {
         static instance: IBIBPOOPDEN = IBIBPOOPDEN {
             LGJFNAIAGLD: 0,
-            miracle_info: ::protobuf::MessageField::none(),
             FKPIHAAHHBI: 0,
+            miracle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for IBIBPOOPDEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBIBPOOPDEN.proto\x1a\x16GameRogueMiracle.proto\"\x87\x01\n\x0bIBI\
-    BPOOPDEN\x12\x20\n\x0bLGJFNAIAGLD\x18\x0f\x20\x01(\rR\x0bLGJFNAIAGLD\x12\
-    4\n\x0cmiracle_info\x18\x02\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bmirac\
-    leInfo\x12\x20\n\x0bFKPIHAAHHBI\x18\x0e\x20\x01(\rR\x0bFKPIHAAHHBIb\x06p\
-    roto3\
+    BPOOPDEN\x12\x20\n\x0bLGJFNAIAGLD\x18\x02\x20\x01(\rR\x0bLGJFNAIAGLD\x12\
+    \x20\n\x0bFKPIHAAHHBI\x18\n\x20\x01(\rR\x0bFKPIHAAHHBI\x124\n\x0cmiracle\
+    _info\x18\x0b\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bmiracleInfob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

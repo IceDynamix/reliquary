@@ -72,7 +72,7 @@ impl ::protobuf::Message for KMHIBNGAFEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     self.rogue_magic_unit_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KMHIBNGAFEO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rogue_magic_unit_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for KMHIBNGAFEO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KMHIBNGAFEO.proto\x1a\x11AOGIIMKCJDJ.proto\"W\n\x0bKMHIBNGAFEO\x12\
-    H\n\x1arogue_magic_unit_info_list\x18\t\x20\x03(\x0b2\x0c.AOGIIMKCJDJR\
+    H\n\x1arogue_magic_unit_info_list\x18\x06\x20\x03(\x0b2\x0c.AOGIIMKCJDJR\
     \x16rogueMagicUnitInfoListb\x06proto3\
 ";
 

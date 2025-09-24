@@ -79,10 +79,10 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHPHLEGCLDM)?;
                 },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOAEDNNIBAF)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for OIAOLBGOAAG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HHPHLEGCLDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.NOAEDNNIBAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for OIAOLBGOAAG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIAOLBGOAAG.proto\x1a\x11CFELLCPMONH.proto\x1a\x11DDJHDEHMHCF.prot\
-    o\"m\n\x0bOIAOLBGOAAG\x12.\n\x0bHHPHLEGCLDM\x18\x0c\x20\x01(\x0b2\x0c.CF\
-    ELLCPMONHR\x0bHHPHLEGCLDM\x12.\n\x0bNOAEDNNIBAF\x18\n\x20\x01(\x0b2\x0c.\
+    o\"m\n\x0bOIAOLBGOAAG\x12.\n\x0bHHPHLEGCLDM\x18\r\x20\x01(\x0b2\x0c.CFEL\
+    LCPMONHR\x0bHHPHLEGCLDM\x12.\n\x0bNOAEDNNIBAF\x18\x05\x20\x01(\x0b2\x0c.\
     DDJHDEHMHCFR\x0bNOAEDNNIBAFb\x06proto3\
 ";
 

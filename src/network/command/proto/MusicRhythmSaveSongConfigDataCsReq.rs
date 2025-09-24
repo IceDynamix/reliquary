@@ -72,7 +72,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CGEDABOABOH)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CGEDABOABOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x16MusicRhythmGroup.prot\
-    o\"Y\n\"MusicRhythmSaveSongConfigDataCsReq\x123\n\x0bCGEDABOABOH\x18\x0c\
+    o\"Y\n\"MusicRhythmSaveSongConfigDataCsReq\x123\n\x0bCGEDABOABOH\x18\x08\
     \x20\x01(\x0b2\x11.MusicRhythmGroupR\x0bCGEDABOABOHb\x06proto3\
 ";
 

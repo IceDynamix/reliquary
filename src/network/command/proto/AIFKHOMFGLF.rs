@@ -72,7 +72,7 @@ impl ::protobuf::Message for AIFKHOMFGLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for AIFKHOMFGLF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for AIFKHOMFGLF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(8, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for AIFKHOMFGLF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIFKHOMFGLF.proto\"*\n\x0bAIFKHOMFGLF\x12\x1b\n\tunique_id\x18\x03\
+    \n\x11AIFKHOMFGLF.proto\"*\n\x0bAIFKHOMFGLF\x12\x1b\n\tunique_id\x18\x08\
     \x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 

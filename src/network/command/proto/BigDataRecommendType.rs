@@ -39,6 +39,12 @@ pub enum BigDataRecommendType {
     BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC = 4,
     // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND)
     BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND = 5,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB)
+    BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB = 6,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS)
+    BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS = 7,
+    // @@protoc_insertion_point(enum_value:BigDataRecommendType.BIG_DATA_RECOMMEND_TYPE_CHALLENGE)
+    BIG_DATA_RECOMMEND_TYPE_CHALLENGE = 8,
 }
 
 impl ::protobuf::Enum for BigDataRecommendType {
@@ -56,6 +62,9 @@ impl ::protobuf::Enum for BigDataRecommendType {
             3 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
             4 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
             5 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
+            6 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB),
+            7 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS),
+            8 => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE),
             _ => ::std::option::Option::None
         }
     }
@@ -68,6 +77,9 @@ impl ::protobuf::Enum for BigDataRecommendType {
             "BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR),
             "BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC),
             "BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND),
+            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB),
+            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS),
+            "BIG_DATA_RECOMMEND_TYPE_CHALLENGE" => ::std::option::Option::Some(BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE),
             _ => ::std::option::Option::None
         }
     }
@@ -79,6 +91,9 @@ impl ::protobuf::Enum for BigDataRecommendType {
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR,
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_AVATAR_RELIC,
         BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_LOCAL_LEGEND,
+        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB,
+        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS,
+        BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_CHALLENGE,
     ];
 }
 
@@ -107,12 +122,14 @@ impl BigDataRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aBigDataRecommendType.proto*\x85\x02\n\x14BigDataRecommendType\x12\
+    \n\x1aBigDataRecommendType.proto*\x8d\x03\n\x14BigDataRecommendType\x12\
     \x20\n\x1cBIG_DATA_RECOMMEND_TYPE_NONE\x10\0\x12%\n!BIG_DATA_RECOMMEND_T\
     YPE_EQUIPMENT\x10\x01\x12&\n\"BIG_DATA_RECOMMEND_TYPE_RELIC_SUIT\x10\x02\
     \x12(\n$BIG_DATA_RECOMMEND_TYPE_RELIC_AVATAR\x10\x03\x12(\n$BIG_DATA_REC\
     OMMEND_TYPE_AVATAR_RELIC\x10\x04\x12(\n$BIG_DATA_RECOMMEND_TYPE_LOCAL_LE\
-    GEND\x10\x05b\x06proto3\
+    GEND\x10\x05\x12.\n*BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_MOB\x10\x06\
+    \x12/\n+BIG_DATA_RECOMMEND_TYPE_CHALLENGE_PEAK_BOSS\x10\x07\x12%\n!BIG_D\
+    ATA_RECOMMEND_TYPE_CHALLENGE\x10\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

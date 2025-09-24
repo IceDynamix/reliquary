@@ -45,7 +45,7 @@ impl RogueWorkbenchContentInfo {
         ::std::default::Default::default()
     }
 
-    // .WorkbenchReforgeBuffTargetInfo reforge_buff_func = 15;
+    // .WorkbenchReforgeBuffTargetInfo reforge_buff_func = 1;
 
     pub fn reforge_buff_func(&self) -> &super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo {
         match self.ECOEKHPGMEA {
@@ -94,7 +94,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .WorkbenchReforgeFormulaTargetInfo reforge_formula_func = 10;
+    // .WorkbenchReforgeFormulaTargetInfo reforge_formula_func = 3;
 
     pub fn reforge_formula_func(&self) -> &super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo {
         match self.ECOEKHPGMEA {
@@ -143,7 +143,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .WorkbenchEnhanceBuffTargetInfo enhance_buff_func = 11;
+    // .WorkbenchEnhanceBuffTargetInfo enhance_buff_func = 8;
 
     pub fn enhance_buff_func(&self) -> &super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo {
         match self.ECOEKHPGMEA {
@@ -192,7 +192,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .WorkbenchComposeMiracleTargetInfo compose_miracle_func = 3;
+    // .WorkbenchComposeMiracleTargetInfo compose_miracle_func = 15;
 
     pub fn compose_miracle_func(&self) -> &super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo {
         match self.ECOEKHPGMEA {
@@ -339,7 +339,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .GJBBLCIPBHD game_magic_unit = 8;
+    // .GJBBLCIPBHD game_magic_unit = 12;
 
     pub fn game_magic_unit(&self) -> &super::GJBBLCIPBHD::GJBBLCIPBHD {
         match self.ECOEKHPGMEA {
@@ -388,7 +388,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .LEHGLCELJMF CEAJNLIOFHF = 2;
+    // .LEHGLCELJMF CEAJNLIOFHF = 11;
 
     pub fn CEAJNLIOFHF(&self) -> &super::LEHGLCELJMF::LEHGLCELJMF {
         match self.ECOEKHPGMEA {
@@ -437,7 +437,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .FHJGLOPMFNC PGPAAPOPDOC = 13;
+    // .FHJGLOPMFNC PGPAAPOPDOC = 9;
 
     pub fn PGPAAPOPDOC(&self) -> &super::FHJGLOPMFNC::FHJGLOPMFNC {
         match self.ECOEKHPGMEA {
@@ -486,7 +486,7 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .JBNCDFFPDOP PMKEHGBPCNG = 14;
+    // .JBNCDFFPDOP PMKEHGBPCNG = 2;
 
     pub fn PMKEHGBPCNG(&self) -> &super::JBNCDFFPDOP::JBNCDFFPDOP {
         match self.ECOEKHPGMEA {
@@ -627,16 +627,16 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                10 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(is.read_message()?));
                 },
-                82 => {
+                26 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(is.read_message()?));
                 },
-                90 => {
+                66 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(is.read_message()?));
                 },
-                26 => {
+                122 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(is.read_message()?));
                 },
                 42 => {
@@ -645,16 +645,16 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
                 58 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(is.read_message()?));
                 },
-                66 => {
+                98 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(is.read_message()?));
                 },
-                18 => {
+                90 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(is.read_message()?));
                 },
-                106 => {
+                74 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(is.read_message()?));
                 },
-                114 => {
+                18 => {
                     self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(is.read_message()?));
                 },
                 tag => {
@@ -722,16 +722,16 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
         if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
             match v {
                 &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -740,16 +740,16 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -862,19 +862,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     rkbenchEnhanceBuffTargetInfo.proto\x1a$WorkbenchReforgeBuffTargetInfo.pr\
     oto\x1a'WorkbenchReforgeFormulaTargetInfo.proto\x1a)WorkbenchReforgeHexA\
     vatarTargetInfo.proto\"\xd4\x05\n\x19RogueWorkbenchContentInfo\x12M\n\
-    \x11reforge_buff_func\x18\x0f\x20\x01(\x0b2\x1f.WorkbenchReforgeBuffTarg\
-    etInfoH\0R\x0freforgeBuffFunc\x12V\n\x14reforge_formula_func\x18\n\x20\
+    \x11reforge_buff_func\x18\x01\x20\x01(\x0b2\x1f.WorkbenchReforgeBuffTarg\
+    etInfoH\0R\x0freforgeBuffFunc\x12V\n\x14reforge_formula_func\x18\x03\x20\
     \x01(\x0b2\".WorkbenchReforgeFormulaTargetInfoH\0R\x12reforgeFormulaFunc\
-    \x12M\n\x11enhance_buff_func\x18\x0b\x20\x01(\x0b2\x1f.WorkbenchEnhanceB\
+    \x12M\n\x11enhance_buff_func\x18\x08\x20\x01(\x0b2\x1f.WorkbenchEnhanceB\
     uffTargetInfoH\0R\x0fenhanceBuffFunc\x12V\n\x14compose_miracle_func\x18\
-    \x03\x20\x01(\x0b2\".WorkbenchComposeMiracleTargetInfoH\0R\x12composeMir\
+    \x0f\x20\x01(\x0b2\".WorkbenchComposeMiracleTargetInfoH\0R\x12composeMir\
     acleFunc\x12]\n\x17reforge_hex_avatar_func\x18\x05\x20\x01(\x0b2$.Workbe\
     nchReforgeHexAvatarTargetInfoH\0R\x14reforgeHexAvatarFunc\x12-\n\nmagic_\
     item\x18\x07\x20\x01(\x0b2\x0c.JDOOIDBKCIMH\0R\tmagicItem\x126\n\x0fgame\
-    _magic_unit\x18\x08\x20\x01(\x0b2\x0c.GJBBLCIPBHDH\0R\rgameMagicUnit\x12\
-    0\n\x0bCEAJNLIOFHF\x18\x02\x20\x01(\x0b2\x0c.LEHGLCELJMFH\0R\x0bCEAJNLIO\
-    FHF\x120\n\x0bPGPAAPOPDOC\x18\r\x20\x01(\x0b2\x0c.FHJGLOPMFNCH\0R\x0bPGP\
-    AAPOPDOC\x120\n\x0bPMKEHGBPCNG\x18\x0e\x20\x01(\x0b2\x0c.JBNCDFFPDOPH\0R\
+    _magic_unit\x18\x0c\x20\x01(\x0b2\x0c.GJBBLCIPBHDH\0R\rgameMagicUnit\x12\
+    0\n\x0bCEAJNLIOFHF\x18\x0b\x20\x01(\x0b2\x0c.LEHGLCELJMFH\0R\x0bCEAJNLIO\
+    FHF\x120\n\x0bPGPAAPOPDOC\x18\t\x20\x01(\x0b2\x0c.FHJGLOPMFNCH\0R\x0bPGP\
+    AAPOPDOC\x120\n\x0bPMKEHGBPCNG\x18\x02\x20\x01(\x0b2\x0c.JBNCDFFPDOPH\0R\
     \x0bPMKEHGBPCNGB\r\n\x0bECOEKHPGMEAb\x06proto3\
 ";
 

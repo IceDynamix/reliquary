@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAFGMLPADMI {
     // message fields
-    // @@protoc_insertion_point(field:FAFGMLPADMI.HALBHKNPIKH)
-    pub HALBHKNPIKH: bool,
-    // @@protoc_insertion_point(field:FAFGMLPADMI.unique_id)
-    pub unique_id: u32,
-    // @@protoc_insertion_point(field:FAFGMLPADMI.BEJEEDAEBBE)
-    pub BEJEEDAEBBE: u32,
     // @@protoc_insertion_point(field:FAFGMLPADMI.item_list)
     pub item_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FAFGMLPADMI.unique_id)
+    pub unique_id: u32,
     // @@protoc_insertion_point(field:FAFGMLPADMI.IGJCPPKAIBI)
     pub IGJCPPKAIBI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FAFGMLPADMI.HALBHKNPIKH)
+    pub HALBHKNPIKH: bool,
+    // @@protoc_insertion_point(field:FAFGMLPADMI.BEJEEDAEBBE)
+    pub BEJEEDAEBBE: u32,
     // @@protoc_insertion_point(field:FAFGMLPADMI.FCLNOOGEHMC)
     pub FCLNOOGEHMC: u32,
     // special fields
@@ -59,30 +59,30 @@ impl FAFGMLPADMI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HALBHKNPIKH",
-            |m: &FAFGMLPADMI| { &m.HALBHKNPIKH },
-            |m: &mut FAFGMLPADMI| { &mut m.HALBHKNPIKH },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "item_list",
+            |m: &FAFGMLPADMI| { &m.item_list },
+            |m: &mut FAFGMLPADMI| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &FAFGMLPADMI| { &m.unique_id },
             |m: &mut FAFGMLPADMI| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEJEEDAEBBE",
-            |m: &FAFGMLPADMI| { &m.BEJEEDAEBBE },
-            |m: &mut FAFGMLPADMI| { &mut m.BEJEEDAEBBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list",
-            |m: &FAFGMLPADMI| { &m.item_list },
-            |m: &mut FAFGMLPADMI| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IGJCPPKAIBI",
             |m: &FAFGMLPADMI| { &m.IGJCPPKAIBI },
             |m: &mut FAFGMLPADMI| { &mut m.IGJCPPKAIBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HALBHKNPIKH",
+            |m: &FAFGMLPADMI| { &m.HALBHKNPIKH },
+            |m: &mut FAFGMLPADMI| { &mut m.HALBHKNPIKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BEJEEDAEBBE",
+            |m: &FAFGMLPADMI| { &m.BEJEEDAEBBE },
+            |m: &mut FAFGMLPADMI| { &mut m.BEJEEDAEBBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FCLNOOGEHMC",
@@ -107,28 +107,28 @@ impl ::protobuf::Message for FAFGMLPADMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.HALBHKNPIKH = is.read_bool()?;
-                },
-                64 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.BEJEEDAEBBE = is.read_uint32()?;
-                },
-                82 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.item_list)?;
                 },
-                80 => {
+                104 => {
                     self.item_list.push(is.read_uint32()?);
                 },
-                98 => {
+                96 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.IGJCPPKAIBI)?;
                 },
-                96 => {
+                8 => {
                     self.IGJCPPKAIBI.push(is.read_uint32()?);
                 },
                 16 => {
+                    self.HALBHKNPIKH = is.read_bool()?;
+                },
+                112 => {
+                    self.BEJEEDAEBBE = is.read_uint32()?;
+                },
+                48 => {
                     self.FCLNOOGEHMC = is.read_uint32()?;
                 },
                 tag => {
@@ -143,19 +143,19 @@ impl ::protobuf::Message for FAFGMLPADMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.item_list);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.IGJCPPKAIBI);
         if self.HALBHKNPIKH != false {
             my_size += 1 + 1;
         }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
-        }
         if self.BEJEEDAEBBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BEJEEDAEBBE);
+            my_size += ::protobuf::rt::uint32_size(14, self.BEJEEDAEBBE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.item_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.IGJCPPKAIBI);
         if self.FCLNOOGEHMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FCLNOOGEHMC);
+            my_size += ::protobuf::rt::uint32_size(6, self.FCLNOOGEHMC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,19 +163,19 @@ impl ::protobuf::Message for FAFGMLPADMI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HALBHKNPIKH != false {
-            os.write_bool(3, self.HALBHKNPIKH)?;
-        }
+        os.write_repeated_packed_uint32(13, &self.item_list)?;
         if self.unique_id != 0 {
-            os.write_uint32(8, self.unique_id)?;
+            os.write_uint32(12, self.unique_id)?;
+        }
+        os.write_repeated_packed_uint32(1, &self.IGJCPPKAIBI)?;
+        if self.HALBHKNPIKH != false {
+            os.write_bool(2, self.HALBHKNPIKH)?;
         }
         if self.BEJEEDAEBBE != 0 {
-            os.write_uint32(11, self.BEJEEDAEBBE)?;
+            os.write_uint32(14, self.BEJEEDAEBBE)?;
         }
-        os.write_repeated_packed_uint32(10, &self.item_list)?;
-        os.write_repeated_packed_uint32(12, &self.IGJCPPKAIBI)?;
         if self.FCLNOOGEHMC != 0 {
-            os.write_uint32(2, self.FCLNOOGEHMC)?;
+            os.write_uint32(6, self.FCLNOOGEHMC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -194,22 +194,22 @@ impl ::protobuf::Message for FAFGMLPADMI {
     }
 
     fn clear(&mut self) {
-        self.HALBHKNPIKH = false;
-        self.unique_id = 0;
-        self.BEJEEDAEBBE = 0;
         self.item_list.clear();
+        self.unique_id = 0;
         self.IGJCPPKAIBI.clear();
+        self.HALBHKNPIKH = false;
+        self.BEJEEDAEBBE = 0;
         self.FCLNOOGEHMC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FAFGMLPADMI {
         static instance: FAFGMLPADMI = FAFGMLPADMI {
-            HALBHKNPIKH: false,
-            unique_id: 0,
-            BEJEEDAEBBE: 0,
             item_list: ::std::vec::Vec::new(),
+            unique_id: 0,
             IGJCPPKAIBI: ::std::vec::Vec::new(),
+            HALBHKNPIKH: false,
+            BEJEEDAEBBE: 0,
             FCLNOOGEHMC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -235,12 +235,12 @@ impl ::protobuf::reflect::ProtobufValue for FAFGMLPADMI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FAFGMLPADMI.proto\"\xcf\x01\n\x0bFAFGMLPADMI\x12\x20\n\x0bHALBHKNP\
-    IKH\x18\x03\x20\x01(\x08R\x0bHALBHKNPIKH\x12\x1b\n\tunique_id\x18\x08\
-    \x20\x01(\rR\x08uniqueId\x12\x20\n\x0bBEJEEDAEBBE\x18\x0b\x20\x01(\rR\
-    \x0bBEJEEDAEBBE\x12\x1b\n\titem_list\x18\n\x20\x03(\rR\x08itemList\x12\
-    \x20\n\x0bIGJCPPKAIBI\x18\x0c\x20\x03(\rR\x0bIGJCPPKAIBI\x12\x20\n\x0bFC\
-    LNOOGEHMC\x18\x02\x20\x01(\rR\x0bFCLNOOGEHMCb\x06proto3\
+    \n\x11FAFGMLPADMI.proto\"\xcf\x01\n\x0bFAFGMLPADMI\x12\x1b\n\titem_list\
+    \x18\r\x20\x03(\rR\x08itemList\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\rR\
+    \x08uniqueId\x12\x20\n\x0bIGJCPPKAIBI\x18\x01\x20\x03(\rR\x0bIGJCPPKAIBI\
+    \x12\x20\n\x0bHALBHKNPIKH\x18\x02\x20\x01(\x08R\x0bHALBHKNPIKH\x12\x20\n\
+    \x0bBEJEEDAEBBE\x18\x0e\x20\x01(\rR\x0bBEJEEDAEBBE\x12\x20\n\x0bFCLNOOGE\
+    HMC\x18\x06\x20\x01(\rR\x0bFCLNOOGEHMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

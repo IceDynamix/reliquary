@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.ADJGKCOKOLN)
-    pub ADJGKCOKOLN: bool,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.NDOBMAJMLNK)
     pub NDOBMAJMLNK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.IEMNPGOMJCO)
-    pub IEMNPGOMJCO: bool,
+    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.ADJGKCOKOLN)
+    pub ADJGKCOKOLN: bool,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.IEMNPGOMJCO)
+    pub IEMNPGOMJCO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MarkRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl MarkRelicFilterPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADJGKCOKOLN",
-            |m: &MarkRelicFilterPlanScRsp| { &m.ADJGKCOKOLN },
-            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.ADJGKCOKOLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NDOBMAJMLNK",
             |m: &MarkRelicFilterPlanScRsp| { &m.NDOBMAJMLNK },
             |m: &mut MarkRelicFilterPlanScRsp| { &mut m.NDOBMAJMLNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEMNPGOMJCO",
-            |m: &MarkRelicFilterPlanScRsp| { &m.IEMNPGOMJCO },
-            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.IEMNPGOMJCO },
+            "ADJGKCOKOLN",
+            |m: &MarkRelicFilterPlanScRsp| { &m.ADJGKCOKOLN },
+            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.ADJGKCOKOLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MarkRelicFilterPlanScRsp| { &m.retcode },
             |m: &mut MarkRelicFilterPlanScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEMNPGOMJCO",
+            |m: &MarkRelicFilterPlanScRsp| { &m.IEMNPGOMJCO },
+            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.IEMNPGOMJCO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkRelicFilterPlanScRsp>(
             "MarkRelicFilterPlanScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ADJGKCOKOLN = is.read_bool()?;
-                },
-                34 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.NDOBMAJMLNK)?;
                 },
-                32 => {
+                120 => {
                     self.NDOBMAJMLNK.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.IEMNPGOMJCO = is.read_bool()?;
+                40 => {
+                    self.ADJGKCOKOLN = is.read_bool()?;
                 },
                 72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                16 => {
+                    self.IEMNPGOMJCO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NDOBMAJMLNK);
         if self.ADJGKCOKOLN != false {
-            my_size += 1 + 1;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NDOBMAJMLNK);
-        if self.IEMNPGOMJCO != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.IEMNPGOMJCO != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(15, &self.NDOBMAJMLNK)?;
         if self.ADJGKCOKOLN != false {
-            os.write_bool(12, self.ADJGKCOKOLN)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.NDOBMAJMLNK)?;
-        if self.IEMNPGOMJCO != false {
-            os.write_bool(1, self.IEMNPGOMJCO)?;
+            os.write_bool(5, self.ADJGKCOKOLN)?;
         }
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
+        }
+        if self.IEMNPGOMJCO != false {
+            os.write_bool(2, self.IEMNPGOMJCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADJGKCOKOLN = false;
         self.NDOBMAJMLNK.clear();
-        self.IEMNPGOMJCO = false;
+        self.ADJGKCOKOLN = false;
         self.retcode = 0;
+        self.IEMNPGOMJCO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkRelicFilterPlanScRsp {
         static instance: MarkRelicFilterPlanScRsp = MarkRelicFilterPlanScRsp {
-            ADJGKCOKOLN: false,
             NDOBMAJMLNK: ::std::vec::Vec::new(),
-            IEMNPGOMJCO: false,
+            ADJGKCOKOLN: false,
             retcode: 0,
+            IEMNPGOMJCO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkRelicFilterPlanScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkRelicFilterPlanScRsp.proto\"\x9a\x01\n\x18MarkRelicFilterPlanS\
-    cRsp\x12\x20\n\x0bADJGKCOKOLN\x18\x0c\x20\x01(\x08R\x0bADJGKCOKOLN\x12\
-    \x20\n\x0bNDOBMAJMLNK\x18\x04\x20\x03(\rR\x0bNDOBMAJMLNK\x12\x20\n\x0bIE\
-    MNPGOMJCO\x18\x01\x20\x01(\x08R\x0bIEMNPGOMJCO\x12\x18\n\x07retcode\x18\
-    \t\x20\x01(\rR\x07retcodeb\x06proto3\
+    cRsp\x12\x20\n\x0bNDOBMAJMLNK\x18\x0f\x20\x03(\rR\x0bNDOBMAJMLNK\x12\x20\
+    \n\x0bADJGKCOKOLN\x18\x05\x20\x01(\x08R\x0bADJGKCOKOLN\x12\x18\n\x07retc\
+    ode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bIEMNPGOMJCO\x18\x02\x20\
+    \x01(\x08R\x0bIEMNPGOMJCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishFirstTalkByPerformanceNpcScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcScRsp.performance_id)
     pub performance_id: u32,
-    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishFirstTalkByPerformanceNpcScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishFirstTalkByPerformanceNpcScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl FinishFirstTalkByPerformanceNpcScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FinishFirstTalkByPerformanceNpcScRsp| { &m.retcode },
-            |m: &mut FinishFirstTalkByPerformanceNpcScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "performance_id",
             |m: &FinishFirstTalkByPerformanceNpcScRsp| { &m.performance_id },
             |m: &mut FinishFirstTalkByPerformanceNpcScRsp| { &mut m.performance_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FinishFirstTalkByPerformanceNpcScRsp| { &m.retcode },
+            |m: &mut FinishFirstTalkByPerformanceNpcScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &FinishFirstTalkByPerformanceNpcScRsp| { &m.reward },
-            |m: &mut FinishFirstTalkByPerformanceNpcScRsp| { &mut m.reward },
+            "player_return_reward_list",
+            |m: &FinishFirstTalkByPerformanceNpcScRsp| { &m.player_return_reward_list },
+            |m: &mut FinishFirstTalkByPerformanceNpcScRsp| { &mut m.player_return_reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishFirstTalkByPerformanceNpcScRsp>(
             "FinishFirstTalkByPerformanceNpcScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
+                16 => {
                     self.performance_id = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.performance_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.performance_id);
         }
-        if let Some(v) = self.reward.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         if self.performance_id != 0 {
-            os.write_uint32(12, self.performance_id)?;
+            os.write_uint32(2, self.performance_id)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FinishFirstTalkByPerformanceNpcScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.performance_id = 0;
-        self.reward.clear();
+        self.retcode = 0;
+        self.player_return_reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishFirstTalkByPerformanceNpcScRsp {
         static instance: FinishFirstTalkByPerformanceNpcScRsp = FinishFirstTalkByPerformanceNpcScRsp {
-            retcode: 0,
             performance_id: 0,
-            reward: ::protobuf::MessageField::none(),
+            retcode: 0,
+            player_return_reward_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishFirstTalkByPerformanceNpcScRsp
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*FinishFirstTalkByPerformanceNpcScRsp.proto\x1a\x0eItemList.proto\"\
-    \x8a\x01\n$FinishFirstTalkByPerformanceNpcScRsp\x12\x18\n\x07retcode\x18\
-    \t\x20\x01(\rR\x07retcode\x12%\n\x0eperformance_id\x18\x0c\x20\x01(\rR\r\
-    performanceId\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\x06rewa\
-    rdb\x06proto3\
+    \xad\x01\n$FinishFirstTalkByPerformanceNpcScRsp\x12%\n\x0eperformance_id\
+    \x18\x02\x20\x01(\rR\rperformanceId\x12\x18\n\x07retcode\x18\x08\x20\x01\
+    (\rR\x07retcode\x12D\n\x19player_return_reward_list\x18\x01\x20\x01(\x0b\
+    2\t.ItemListR\x16playerReturnRewardListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.index = is.read_uint32()?;
                 },
-                50 => {
+                66 => {
                     self.name = is.read_string()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SetLineupNameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.index);
+            my_size += ::protobuf::rt::uint32_size(13, self.index);
         }
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.name);
+            my_size += ::protobuf::rt::string_size(8, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetLineupNameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.index != 0 {
-            os.write_uint32(4, self.index)?;
+            os.write_uint32(13, self.index)?;
         }
         if !self.name.is_empty() {
-            os.write_string(6, &self.name)?;
+            os.write_string(8, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetLineupNameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetLineupNameCsReq.proto\">\n\x12SetLineupNameCsReq\x12\x14\n\x05i\
-    ndex\x18\x04\x20\x01(\rR\x05index\x12\x12\n\x04name\x18\x06\x20\x01(\tR\
+    ndex\x18\r\x20\x01(\rR\x05index\x12\x12\n\x04name\x18\x08\x20\x01(\tR\
     \x04nameb\x06proto3\
 ";
 

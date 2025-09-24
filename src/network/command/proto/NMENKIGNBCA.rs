@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMENKIGNBCA {
     // message fields
-    // @@protoc_insertion_point(field:NMENKIGNBCA.EENJBPMNDOL)
-    pub EENJBPMNDOL: u32,
     // @@protoc_insertion_point(field:NMENKIGNBCA.IFNMBNGIFPH)
     pub IFNMBNGIFPH: ::protobuf::MessageField<super::DMJLKIFEMMN::DMJLKIFEMMN>,
+    // @@protoc_insertion_point(field:NMENKIGNBCA.EENJBPMNDOL)
+    pub EENJBPMNDOL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NMENKIGNBCA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NMENKIGNBCA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EENJBPMNDOL",
-            |m: &NMENKIGNBCA| { &m.EENJBPMNDOL },
-            |m: &mut NMENKIGNBCA| { &mut m.EENJBPMNDOL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMJLKIFEMMN::DMJLKIFEMMN>(
             "IFNMBNGIFPH",
             |m: &NMENKIGNBCA| { &m.IFNMBNGIFPH },
             |m: &mut NMENKIGNBCA| { &mut m.IFNMBNGIFPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EENJBPMNDOL",
+            |m: &NMENKIGNBCA| { &m.EENJBPMNDOL },
+            |m: &mut NMENKIGNBCA| { &mut m.EENJBPMNDOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMENKIGNBCA>(
             "NMENKIGNBCA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NMENKIGNBCA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.EENJBPMNDOL = is.read_uint32()?;
-                },
-                50 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IFNMBNGIFPH)?;
+                },
+                80 => {
+                    self.EENJBPMNDOL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for NMENKIGNBCA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EENJBPMNDOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EENJBPMNDOL);
-        }
         if let Some(v) = self.IFNMBNGIFPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.EENJBPMNDOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EENJBPMNDOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for NMENKIGNBCA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EENJBPMNDOL != 0 {
-            os.write_uint32(9, self.EENJBPMNDOL)?;
-        }
         if let Some(v) = self.IFNMBNGIFPH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.EENJBPMNDOL != 0 {
+            os.write_uint32(10, self.EENJBPMNDOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for NMENKIGNBCA {
     }
 
     fn clear(&mut self) {
-        self.EENJBPMNDOL = 0;
         self.IFNMBNGIFPH.clear();
+        self.EENJBPMNDOL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMENKIGNBCA {
         static instance: NMENKIGNBCA = NMENKIGNBCA {
-            EENJBPMNDOL: 0,
             IFNMBNGIFPH: ::protobuf::MessageField::none(),
+            EENJBPMNDOL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NMENKIGNBCA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NMENKIGNBCA.proto\x1a\x11DMJLKIFEMMN.proto\"_\n\x0bNMENKIGNBCA\x12\
-    \x20\n\x0bEENJBPMNDOL\x18\t\x20\x01(\rR\x0bEENJBPMNDOL\x12.\n\x0bIFNMBNG\
-    IFPH\x18\x06\x20\x01(\x0b2\x0c.DMJLKIFEMMNR\x0bIFNMBNGIFPHb\x06proto3\
+    .\n\x0bIFNMBNGIFPH\x18\x03\x20\x01(\x0b2\x0c.DMJLKIFEMMNR\x0bIFNMBNGIFPH\
+    \x12\x20\n\x0bEENJBPMNDOL\x18\n\x20\x01(\rR\x0bEENJBPMNDOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

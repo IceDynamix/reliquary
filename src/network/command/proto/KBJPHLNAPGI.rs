@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KBJPHLNAPGI {
     // message fields
-    // @@protoc_insertion_point(field:KBJPHLNAPGI.item_id)
-    pub item_id: u32,
-    // @@protoc_insertion_point(field:KBJPHLNAPGI.IIMOPLCFHAH)
-    pub IIMOPLCFHAH: u32,
-    // @@protoc_insertion_point(field:KBJPHLNAPGI.LLJAEGOBHMP)
-    pub LLJAEGOBHMP: i32,
     // @@protoc_insertion_point(field:KBJPHLNAPGI.KBCDECDNEFM)
     pub KBCDECDNEFM: u32,
+    // @@protoc_insertion_point(field:KBJPHLNAPGI.LLJAEGOBHMP)
+    pub LLJAEGOBHMP: i32,
+    // @@protoc_insertion_point(field:KBJPHLNAPGI.IIMOPLCFHAH)
+    pub IIMOPLCFHAH: u32,
+    // @@protoc_insertion_point(field:KBJPHLNAPGI.item_id)
+    pub item_id: u32,
     // @@protoc_insertion_point(field:KBJPHLNAPGI.IEAGBPEMFLG)
     pub IEAGBPEMFLG: i32,
     // special fields
@@ -58,14 +58,9 @@ impl KBJPHLNAPGI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &KBJPHLNAPGI| { &m.item_id },
-            |m: &mut KBJPHLNAPGI| { &mut m.item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIMOPLCFHAH",
-            |m: &KBJPHLNAPGI| { &m.IIMOPLCFHAH },
-            |m: &mut KBJPHLNAPGI| { &mut m.IIMOPLCFHAH },
+            "KBCDECDNEFM",
+            |m: &KBJPHLNAPGI| { &m.KBCDECDNEFM },
+            |m: &mut KBJPHLNAPGI| { &mut m.KBCDECDNEFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LLJAEGOBHMP",
@@ -73,9 +68,14 @@ impl KBJPHLNAPGI {
             |m: &mut KBJPHLNAPGI| { &mut m.LLJAEGOBHMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBCDECDNEFM",
-            |m: &KBJPHLNAPGI| { &m.KBCDECDNEFM },
-            |m: &mut KBJPHLNAPGI| { &mut m.KBCDECDNEFM },
+            "IIMOPLCFHAH",
+            |m: &KBJPHLNAPGI| { &m.IIMOPLCFHAH },
+            |m: &mut KBJPHLNAPGI| { &mut m.IIMOPLCFHAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &KBJPHLNAPGI| { &m.item_id },
+            |m: &mut KBJPHLNAPGI| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IEAGBPEMFLG",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for KBJPHLNAPGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.item_id = is.read_uint32()?;
+                88 => {
+                    self.KBCDECDNEFM = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
+                    self.LLJAEGOBHMP = is.read_int32()?;
+                },
+                112 => {
                     self.IIMOPLCFHAH = is.read_uint32()?;
                 },
                 96 => {
-                    self.LLJAEGOBHMP = is.read_int32()?;
+                    self.item_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.KBCDECDNEFM = is.read_uint32()?;
-                },
-                16 => {
+                48 => {
                     self.IEAGBPEMFLG = is.read_int32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for KBJPHLNAPGI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.item_id);
-        }
-        if self.IIMOPLCFHAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IIMOPLCFHAH);
+        if self.KBCDECDNEFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KBCDECDNEFM);
         }
         if self.LLJAEGOBHMP != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.LLJAEGOBHMP);
+            my_size += ::protobuf::rt::int32_size(7, self.LLJAEGOBHMP);
         }
-        if self.KBCDECDNEFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.KBCDECDNEFM);
+        if self.IIMOPLCFHAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.IIMOPLCFHAH);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
         }
         if self.IEAGBPEMFLG != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.IEAGBPEMFLG);
+            my_size += ::protobuf::rt::int32_size(6, self.IEAGBPEMFLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for KBJPHLNAPGI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_id != 0 {
-            os.write_uint32(13, self.item_id)?;
-        }
-        if self.IIMOPLCFHAH != 0 {
-            os.write_uint32(15, self.IIMOPLCFHAH)?;
+        if self.KBCDECDNEFM != 0 {
+            os.write_uint32(11, self.KBCDECDNEFM)?;
         }
         if self.LLJAEGOBHMP != 0 {
-            os.write_int32(12, self.LLJAEGOBHMP)?;
+            os.write_int32(7, self.LLJAEGOBHMP)?;
         }
-        if self.KBCDECDNEFM != 0 {
-            os.write_uint32(5, self.KBCDECDNEFM)?;
+        if self.IIMOPLCFHAH != 0 {
+            os.write_uint32(14, self.IIMOPLCFHAH)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(12, self.item_id)?;
         }
         if self.IEAGBPEMFLG != 0 {
-            os.write_int32(2, self.IEAGBPEMFLG)?;
+            os.write_int32(6, self.IEAGBPEMFLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for KBJPHLNAPGI {
     }
 
     fn clear(&mut self) {
-        self.item_id = 0;
-        self.IIMOPLCFHAH = 0;
-        self.LLJAEGOBHMP = 0;
         self.KBCDECDNEFM = 0;
+        self.LLJAEGOBHMP = 0;
+        self.IIMOPLCFHAH = 0;
+        self.item_id = 0;
         self.IEAGBPEMFLG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KBJPHLNAPGI {
         static instance: KBJPHLNAPGI = KBJPHLNAPGI {
-            item_id: 0,
-            IIMOPLCFHAH: 0,
-            LLJAEGOBHMP: 0,
             KBCDECDNEFM: 0,
+            LLJAEGOBHMP: 0,
+            IIMOPLCFHAH: 0,
+            item_id: 0,
             IEAGBPEMFLG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for KBJPHLNAPGI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KBJPHLNAPGI.proto\"\xae\x01\n\x0bKBJPHLNAPGI\x12\x17\n\x07item_id\
-    \x18\r\x20\x01(\rR\x06itemId\x12\x20\n\x0bIIMOPLCFHAH\x18\x0f\x20\x01(\r\
-    R\x0bIIMOPLCFHAH\x12\x20\n\x0bLLJAEGOBHMP\x18\x0c\x20\x01(\x05R\x0bLLJAE\
-    GOBHMP\x12\x20\n\x0bKBCDECDNEFM\x18\x05\x20\x01(\rR\x0bKBCDECDNEFM\x12\
-    \x20\n\x0bIEAGBPEMFLG\x18\x02\x20\x01(\x05R\x0bIEAGBPEMFLGb\x06proto3\
+    \n\x11KBJPHLNAPGI.proto\"\xae\x01\n\x0bKBJPHLNAPGI\x12\x20\n\x0bKBCDECDN\
+    EFM\x18\x0b\x20\x01(\rR\x0bKBCDECDNEFM\x12\x20\n\x0bLLJAEGOBHMP\x18\x07\
+    \x20\x01(\x05R\x0bLLJAEGOBHMP\x12\x20\n\x0bIIMOPLCFHAH\x18\x0e\x20\x01(\
+    \rR\x0bIIMOPLCFHAH\x12\x17\n\x07item_id\x18\x0c\x20\x01(\rR\x06itemId\
+    \x12\x20\n\x0bIEAGBPEMFLG\x18\x06\x20\x01(\x05R\x0bIEAGBPEMFLGb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

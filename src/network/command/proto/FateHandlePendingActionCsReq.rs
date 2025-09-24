@@ -48,7 +48,7 @@ impl FateHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .LICMPOLBCFJ BAMNOJKMBMN = 12;
+    // .LICMPOLBCFJ BAMNOJKMBMN = 6;
 
     pub fn BAMNOJKMBMN(&self) -> &super::LICMPOLBCFJ::LICMPOLBCFJ {
         match self.KOIJFOFFJNJ {
@@ -97,7 +97,7 @@ impl FateHandlePendingActionCsReq {
         }
     }
 
-    // .DANEMLLJACO FJGMNIOILOK = 10;
+    // .DANEMLLJACO FJGMNIOILOK = 8;
 
     pub fn FJGMNIOILOK(&self) -> &super::DANEMLLJACO::DANEMLLJACO {
         match self.KOIJFOFFJNJ {
@@ -187,13 +187,13 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                80 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                98 => {
+                50 => {
                     self.KOIJFOFFJNJ = ::std::option::Option::Some(fate_handle_pending_action_cs_req::KOIJFOFFJNJ::BAMNOJKMBMN(is.read_message()?));
                 },
-                82 => {
+                66 => {
                     self.KOIJFOFFJNJ = ::std::option::Option::Some(fate_handle_pending_action_cs_req::KOIJFOFFJNJ::FJGMNIOILOK(is.read_message()?));
                 },
                 tag => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(10, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.KOIJFOFFJNJ {
             match v {
@@ -230,15 +230,15 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(3, self.queue_position)?;
+            os.write_uint32(10, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KOIJFOFFJNJ {
             match v {
                 &fate_handle_pending_action_cs_req::KOIJFOFFJNJ::BAMNOJKMBMN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &fate_handle_pending_action_cs_req::KOIJFOFFJNJ::FJGMNIOILOK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -325,10 +325,10 @@ pub mod fate_handle_pending_action_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FateHandlePendingActionCsReq.proto\x1a\x11DANEMLLJACO.proto\x1a\x11L\
     ICMPOLBCFJ.proto\"\xb8\x01\n\x1cFateHandlePendingActionCsReq\x12%\n\x0eq\
-    ueue_position\x18\x03\x20\x01(\rR\rqueuePosition\x120\n\x0bBAMNOJKMBMN\
-    \x18\x0c\x20\x01(\x0b2\x0c.LICMPOLBCFJH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGM\
-    NIOILOK\x18\n\x20\x01(\x0b2\x0c.DANEMLLJACOH\0R\x0bFJGMNIOILOKB\r\n\x0bK\
-    OIJFOFFJNJb\x06proto3\
+    ueue_position\x18\n\x20\x01(\rR\rqueuePosition\x120\n\x0bBAMNOJKMBMN\x18\
+    \x06\x20\x01(\x0b2\x0c.LICMPOLBCFJH\0R\x0bBAMNOJKMBMN\x120\n\x0bFJGMNIOI\
+    LOK\x18\x08\x20\x01(\x0b2\x0c.DANEMLLJACOH\0R\x0bFJGMNIOILOKB\r\n\x0bKOI\
+    JFOFFJNJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

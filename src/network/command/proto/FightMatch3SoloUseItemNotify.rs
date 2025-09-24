@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SoloUseItemNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SoloUseItemNotify.MEDBONHALOD)
-    pub MEDBONHALOD: ::protobuf::MessageField<super::BCEKDIDFLCM::BCEKDIDFLCM>,
     // @@protoc_insertion_point(field:FightMatch3SoloUseItemNotify.EHELGAOABJJ)
     pub EHELGAOABJJ: ::protobuf::MessageField<super::MDOHAFBEEPK::MDOHAFBEEPK>,
+    // @@protoc_insertion_point(field:FightMatch3SoloUseItemNotify.MEDBONHALOD)
+    pub MEDBONHALOD: ::protobuf::MessageField<super::BCEKDIDFLCM::BCEKDIDFLCM>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3SoloUseItemNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FightMatch3SoloUseItemNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCEKDIDFLCM::BCEKDIDFLCM>(
-            "MEDBONHALOD",
-            |m: &FightMatch3SoloUseItemNotify| { &m.MEDBONHALOD },
-            |m: &mut FightMatch3SoloUseItemNotify| { &mut m.MEDBONHALOD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDOHAFBEEPK::MDOHAFBEEPK>(
             "EHELGAOABJJ",
             |m: &FightMatch3SoloUseItemNotify| { &m.EHELGAOABJJ },
             |m: &mut FightMatch3SoloUseItemNotify| { &mut m.EHELGAOABJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BCEKDIDFLCM::BCEKDIDFLCM>(
+            "MEDBONHALOD",
+            |m: &FightMatch3SoloUseItemNotify| { &m.MEDBONHALOD },
+            |m: &mut FightMatch3SoloUseItemNotify| { &mut m.MEDBONHALOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3SoloUseItemNotify>(
             "FightMatch3SoloUseItemNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHELGAOABJJ)?;
+                },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEDBONHALOD)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHELGAOABJJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MEDBONHALOD.as_ref() {
+        if let Some(v) = self.EHELGAOABJJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.EHELGAOABJJ.as_ref() {
+        if let Some(v) = self.MEDBONHALOD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.EHELGAOABJJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
         if let Some(v) = self.MEDBONHALOD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if let Some(v) = self.EHELGAOABJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for FightMatch3SoloUseItemNotify {
     }
 
     fn clear(&mut self) {
-        self.MEDBONHALOD.clear();
         self.EHELGAOABJJ.clear();
+        self.MEDBONHALOD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SoloUseItemNotify {
         static instance: FightMatch3SoloUseItemNotify = FightMatch3SoloUseItemNotify {
-            MEDBONHALOD: ::protobuf::MessageField::none(),
             EHELGAOABJJ: ::protobuf::MessageField::none(),
+            MEDBONHALOD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SoloUseItemNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FightMatch3SoloUseItemNotify.proto\x1a\x11BCEKDIDFLCM.proto\x1a\x11M\
-    DOHAFBEEPK.proto\"~\n\x1cFightMatch3SoloUseItemNotify\x12.\n\x0bMEDBONHA\
-    LOD\x18\x08\x20\x01(\x0b2\x0c.BCEKDIDFLCMR\x0bMEDBONHALOD\x12.\n\x0bEHEL\
-    GAOABJJ\x18\x0c\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bEHELGAOABJJb\x06proto3\
+    DOHAFBEEPK.proto\"~\n\x1cFightMatch3SoloUseItemNotify\x12.\n\x0bEHELGAOA\
+    BJJ\x18\n\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bEHELGAOABJJ\x12.\n\x0bMEDBON\
+    HALOD\x18\x08\x20\x01(\x0b2\x0c.BCEKDIDFLCMR\x0bMEDBONHALODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

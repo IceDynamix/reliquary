@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGameGachaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGameGachaScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:MonopolyGameGachaScRsp.result_list)
     pub result_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyGameGachaScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGameGachaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MonopolyGameGachaScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyGameGachaScRsp| { &m.retcode },
-            |m: &mut MonopolyGameGachaScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "result_list",
             |m: &MonopolyGameGachaScRsp| { &m.result_list },
             |m: &mut MonopolyGameGachaScRsp| { &mut m.result_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MonopolyGameGachaScRsp| { &m.retcode },
+            |m: &mut MonopolyGameGachaScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGameGachaScRsp>(
             "MonopolyGameGachaScRsp",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for MonopolyGameGachaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                122 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.result_list)?;
                 },
-                120 => {
+                8 => {
                     self.result_list.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MonopolyGameGachaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.result_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.result_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.result_list)?;
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(15, &self.result_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for MonopolyGameGachaScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.result_list.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGameGachaScRsp {
         static instance: MonopolyGameGachaScRsp = MonopolyGameGachaScRsp {
-            retcode: 0,
             result_list: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameGachaScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyGameGachaScRsp.proto\"S\n\x16MonopolyGameGachaScRsp\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x1f\n\x0bresult_lis\
-    t\x18\x0f\x20\x03(\rR\nresultListb\x06proto3\
+    \x1f\n\x0bresult_list\x18\x01\x20\x03(\rR\nresultList\x12\x18\n\x07retco\
+    de\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

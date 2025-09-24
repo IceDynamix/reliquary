@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                72 => {
                     self.reason = is.read_uint32()?;
                 },
                 120 => {
                     self.ADJGKCOKOLN = is.read_bool()?;
                 },
-                24 => {
+                80 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.reason);
+            my_size += ::protobuf::rt::uint32_size(9, self.reason);
         }
         if self.ADJGKCOKOLN != false {
             my_size += 1 + 1;
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.uid);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != 0 {
-            os.write_uint32(10, self.reason)?;
+            os.write_uint32(9, self.reason)?;
         }
         if self.ADJGKCOKOLN != false {
             os.write_bool(15, self.ADJGKCOKOLN)?;
         }
         if self.uid != 0 {
-            os.write_uint32(3, self.uid)?;
+            os.write_uint32(10, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x16\n\x06r\
-    eason\x18\n\x20\x01(\rR\x06reason\x12\x20\n\x0bADJGKCOKOLN\x18\x0f\x20\
-    \x01(\x08R\x0bADJGKCOKOLN\x12\x10\n\x03uid\x18\x03\x20\x01(\rR\x03uidb\
-    \x06proto3\
+    eason\x18\t\x20\x01(\rR\x06reason\x12\x20\n\x0bADJGKCOKOLN\x18\x0f\x20\
+    \x01(\x08R\x0bADJGKCOKOLN\x12\x10\n\x03uid\x18\n\x20\x01(\rR\x03uidb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

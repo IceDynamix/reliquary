@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneSummonUnitInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneSummonUnitInfo.summon_unit_id)
-    pub summon_unit_id: u32,
-    // @@protoc_insertion_point(field:SceneSummonUnitInfo.trigger_name_list)
-    pub trigger_name_list: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:SceneSummonUnitInfo.attach_entity_id)
     pub attach_entity_id: u32,
-    // @@protoc_insertion_point(field:SceneSummonUnitInfo.life_time_ms)
-    pub life_time_ms: i32,
-    // @@protoc_insertion_point(field:SceneSummonUnitInfo.caster_entity_id)
-    pub caster_entity_id: u32,
     // @@protoc_insertion_point(field:SceneSummonUnitInfo.create_time_ms)
     pub create_time_ms: u64,
+    // @@protoc_insertion_point(field:SceneSummonUnitInfo.trigger_name_list)
+    pub trigger_name_list: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:SceneSummonUnitInfo.life_time_ms)
+    pub life_time_ms: i32,
+    // @@protoc_insertion_point(field:SceneSummonUnitInfo.summon_unit_id)
+    pub summon_unit_id: u32,
+    // @@protoc_insertion_point(field:SceneSummonUnitInfo.caster_entity_id)
+    pub caster_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneSummonUnitInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,14 @@ impl SceneSummonUnitInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "summon_unit_id",
-            |m: &SceneSummonUnitInfo| { &m.summon_unit_id },
-            |m: &mut SceneSummonUnitInfo| { &mut m.summon_unit_id },
+            "attach_entity_id",
+            |m: &SceneSummonUnitInfo| { &m.attach_entity_id },
+            |m: &mut SceneSummonUnitInfo| { &mut m.attach_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "create_time_ms",
+            |m: &SceneSummonUnitInfo| { &m.create_time_ms },
+            |m: &mut SceneSummonUnitInfo| { &mut m.create_time_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trigger_name_list",
@@ -70,24 +75,19 @@ impl SceneSummonUnitInfo {
             |m: &mut SceneSummonUnitInfo| { &mut m.trigger_name_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "attach_entity_id",
-            |m: &SceneSummonUnitInfo| { &m.attach_entity_id },
-            |m: &mut SceneSummonUnitInfo| { &mut m.attach_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "life_time_ms",
             |m: &SceneSummonUnitInfo| { &m.life_time_ms },
             |m: &mut SceneSummonUnitInfo| { &mut m.life_time_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "summon_unit_id",
+            |m: &SceneSummonUnitInfo| { &m.summon_unit_id },
+            |m: &mut SceneSummonUnitInfo| { &mut m.summon_unit_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "caster_entity_id",
             |m: &SceneSummonUnitInfo| { &m.caster_entity_id },
             |m: &mut SceneSummonUnitInfo| { &mut m.caster_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "create_time_ms",
-            |m: &SceneSummonUnitInfo| { &m.create_time_ms },
-            |m: &mut SceneSummonUnitInfo| { &mut m.create_time_ms },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneSummonUnitInfo>(
             "SceneSummonUnitInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.summon_unit_id = is.read_uint32()?;
-                },
-                18 => {
-                    self.trigger_name_list.push(is.read_string()?);
-                },
-                48 => {
+                104 => {
                     self.attach_entity_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
+                    self.create_time_ms = is.read_uint64()?;
+                },
+                90 => {
+                    self.trigger_name_list.push(is.read_string()?);
+                },
+                56 => {
                     self.life_time_ms = is.read_int32()?;
                 },
-                120 => {
-                    self.caster_entity_id = is.read_uint32()?;
+                64 => {
+                    self.summon_unit_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.create_time_ms = is.read_uint64()?;
+                    self.caster_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.summon_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.summon_unit_id);
-        }
-        for value in &self.trigger_name_list {
-            my_size += ::protobuf::rt::string_size(2, &value);
-        };
         if self.attach_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.attach_entity_id);
-        }
-        if self.life_time_ms != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.life_time_ms);
-        }
-        if self.caster_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.caster_entity_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.attach_entity_id);
         }
         if self.create_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.create_time_ms);
+            my_size += ::protobuf::rt::uint64_size(9, self.create_time_ms);
+        }
+        for value in &self.trigger_name_list {
+            my_size += ::protobuf::rt::string_size(11, &value);
+        };
+        if self.life_time_ms != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.life_time_ms);
+        }
+        if self.summon_unit_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.summon_unit_id);
+        }
+        if self.caster_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.caster_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.summon_unit_id != 0 {
-            os.write_uint32(11, self.summon_unit_id)?;
-        }
-        for v in &self.trigger_name_list {
-            os.write_string(2, &v)?;
-        };
         if self.attach_entity_id != 0 {
-            os.write_uint32(6, self.attach_entity_id)?;
-        }
-        if self.life_time_ms != 0 {
-            os.write_int32(14, self.life_time_ms)?;
-        }
-        if self.caster_entity_id != 0 {
-            os.write_uint32(15, self.caster_entity_id)?;
+            os.write_uint32(13, self.attach_entity_id)?;
         }
         if self.create_time_ms != 0 {
-            os.write_uint64(3, self.create_time_ms)?;
+            os.write_uint64(9, self.create_time_ms)?;
+        }
+        for v in &self.trigger_name_list {
+            os.write_string(11, &v)?;
+        };
+        if self.life_time_ms != 0 {
+            os.write_int32(7, self.life_time_ms)?;
+        }
+        if self.summon_unit_id != 0 {
+            os.write_uint32(8, self.summon_unit_id)?;
+        }
+        if self.caster_entity_id != 0 {
+            os.write_uint32(3, self.caster_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for SceneSummonUnitInfo {
     }
 
     fn clear(&mut self) {
-        self.summon_unit_id = 0;
-        self.trigger_name_list.clear();
         self.attach_entity_id = 0;
-        self.life_time_ms = 0;
-        self.caster_entity_id = 0;
         self.create_time_ms = 0;
+        self.trigger_name_list.clear();
+        self.life_time_ms = 0;
+        self.summon_unit_id = 0;
+        self.caster_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneSummonUnitInfo {
         static instance: SceneSummonUnitInfo = SceneSummonUnitInfo {
-            summon_unit_id: 0,
-            trigger_name_list: ::std::vec::Vec::new(),
             attach_entity_id: 0,
-            life_time_ms: 0,
-            caster_entity_id: 0,
             create_time_ms: 0,
+            trigger_name_list: ::std::vec::Vec::new(),
+            life_time_ms: 0,
+            summon_unit_id: 0,
+            caster_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,13 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for SceneSummonUnitInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SceneSummonUnitInfo.proto\"\x83\x02\n\x13SceneSummonUnitInfo\x12$\
-    \n\x0esummon_unit_id\x18\x0b\x20\x01(\rR\x0csummonUnitId\x12*\n\x11trigg\
-    er_name_list\x18\x02\x20\x03(\tR\x0ftriggerNameList\x12(\n\x10attach_ent\
-    ity_id\x18\x06\x20\x01(\rR\x0eattachEntityId\x12\x20\n\x0clife_time_ms\
-    \x18\x0e\x20\x01(\x05R\nlifeTimeMs\x12(\n\x10caster_entity_id\x18\x0f\
-    \x20\x01(\rR\x0ecasterEntityId\x12$\n\x0ecreate_time_ms\x18\x03\x20\x01(\
-    \x04R\x0ccreateTimeMsb\x06proto3\
+    \n\x19SceneSummonUnitInfo.proto\"\x83\x02\n\x13SceneSummonUnitInfo\x12(\
+    \n\x10attach_entity_id\x18\r\x20\x01(\rR\x0eattachEntityId\x12$\n\x0ecre\
+    ate_time_ms\x18\t\x20\x01(\x04R\x0ccreateTimeMs\x12*\n\x11trigger_name_l\
+    ist\x18\x0b\x20\x03(\tR\x0ftriggerNameList\x12\x20\n\x0clife_time_ms\x18\
+    \x07\x20\x01(\x05R\nlifeTimeMs\x12$\n\x0esummon_unit_id\x18\x08\x20\x01(\
+    \rR\x0csummonUnitId\x12(\n\x10caster_entity_id\x18\x03\x20\x01(\rR\x0eca\
+    sterEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

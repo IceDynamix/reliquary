@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNIJHGNJIJM {
     // message fields
-    // @@protoc_insertion_point(field:KNIJHGNJIJM.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:KNIJHGNJIJM.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:KNIJHGNJIJM.aeon_id)
-    pub aeon_id: u32,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.DPMIBDHKDAE)
     pub DPMIBDHKDAE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.JGMIPMDPPIJ)
     pub JGMIPMDPPIJ: u32,
+    // @@protoc_insertion_point(field:KNIJHGNJIJM.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:KNIJHGNJIJM.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:KNIJHGNJIJM.aeon_id)
+    pub aeon_id: u32,
     // @@protoc_insertion_point(field:KNIJHGNJIJM.DDGCFJDBOOH)
     pub DDGCFJDBOOH: ::std::vec::Vec<u32>,
     // special fields
@@ -59,21 +59,6 @@ impl KNIJHGNJIJM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &KNIJHGNJIJM| { &m.level },
-            |m: &mut KNIJHGNJIJM| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &KNIJHGNJIJM| { &m.exp },
-            |m: &mut KNIJHGNJIJM| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aeon_id",
-            |m: &KNIJHGNJIJM| { &m.aeon_id },
-            |m: &mut KNIJHGNJIJM| { &mut m.aeon_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DPMIBDHKDAE",
             |m: &KNIJHGNJIJM| { &m.DPMIBDHKDAE },
@@ -83,6 +68,21 @@ impl KNIJHGNJIJM {
             "JGMIPMDPPIJ",
             |m: &KNIJHGNJIJM| { &m.JGMIPMDPPIJ },
             |m: &mut KNIJHGNJIJM| { &mut m.JGMIPMDPPIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &KNIJHGNJIJM| { &m.exp },
+            |m: &mut KNIJHGNJIJM| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &KNIJHGNJIJM| { &m.level },
+            |m: &mut KNIJHGNJIJM| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "aeon_id",
+            |m: &KNIJHGNJIJM| { &m.aeon_id },
+            |m: &mut KNIJHGNJIJM| { &mut m.aeon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DDGCFJDBOOH",
@@ -107,28 +107,28 @@ impl ::protobuf::Message for KNIJHGNJIJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.level = is.read_uint32()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DPMIBDHKDAE)?;
                 },
-                32 => {
+                24 => {
+                    self.DPMIBDHKDAE.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.JGMIPMDPPIJ = is.read_uint32()?;
+                },
+                40 => {
                     self.exp = is.read_uint32()?;
                 },
                 48 => {
+                    self.level = is.read_uint32()?;
+                },
+                64 => {
                     self.aeon_id = is.read_uint32()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DPMIBDHKDAE)?;
-                },
-                120 => {
-                    self.DPMIBDHKDAE.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.JGMIPMDPPIJ = is.read_uint32()?;
-                },
-                114 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.DDGCFJDBOOH)?;
                 },
-                112 => {
+                96 => {
                     self.DDGCFJDBOOH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -143,40 +143,40 @@ impl ::protobuf::Message for KNIJHGNJIJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.DPMIBDHKDAE);
+        if self.JGMIPMDPPIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JGMIPMDPPIJ);
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.exp);
+            my_size += ::protobuf::rt::uint32_size(5, self.exp);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
         }
         if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.aeon_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.aeon_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DPMIBDHKDAE);
-        if self.JGMIPMDPPIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JGMIPMDPPIJ);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.DDGCFJDBOOH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.DDGCFJDBOOH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+        os.write_repeated_packed_uint32(3, &self.DPMIBDHKDAE)?;
+        if self.JGMIPMDPPIJ != 0 {
+            os.write_uint32(14, self.JGMIPMDPPIJ)?;
         }
         if self.exp != 0 {
-            os.write_uint32(4, self.exp)?;
+            os.write_uint32(5, self.exp)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(6, self.level)?;
         }
         if self.aeon_id != 0 {
-            os.write_uint32(6, self.aeon_id)?;
+            os.write_uint32(8, self.aeon_id)?;
         }
-        os.write_repeated_packed_uint32(15, &self.DPMIBDHKDAE)?;
-        if self.JGMIPMDPPIJ != 0 {
-            os.write_uint32(1, self.JGMIPMDPPIJ)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.DDGCFJDBOOH)?;
+        os.write_repeated_packed_uint32(12, &self.DDGCFJDBOOH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -194,22 +194,22 @@ impl ::protobuf::Message for KNIJHGNJIJM {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.exp = 0;
-        self.aeon_id = 0;
         self.DPMIBDHKDAE.clear();
         self.JGMIPMDPPIJ = 0;
+        self.exp = 0;
+        self.level = 0;
+        self.aeon_id = 0;
         self.DDGCFJDBOOH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNIJHGNJIJM {
         static instance: KNIJHGNJIJM = KNIJHGNJIJM {
-            level: 0,
-            exp: 0,
-            aeon_id: 0,
             DPMIBDHKDAE: ::std::vec::Vec::new(),
             JGMIPMDPPIJ: 0,
+            exp: 0,
+            level: 0,
+            aeon_id: 0,
             DDGCFJDBOOH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -235,12 +235,12 @@ impl ::protobuf::reflect::ProtobufValue for KNIJHGNJIJM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNIJHGNJIJM.proto\"\xb4\x01\n\x0bKNIJHGNJIJM\x12\x14\n\x05level\
-    \x18\t\x20\x01(\rR\x05level\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03exp\
-    \x12\x17\n\x07aeon_id\x18\x06\x20\x01(\rR\x06aeonId\x12\x20\n\x0bDPMIBDH\
-    KDAE\x18\x0f\x20\x03(\rR\x0bDPMIBDHKDAE\x12\x20\n\x0bJGMIPMDPPIJ\x18\x01\
-    \x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x20\n\x0bDDGCFJDBOOH\x18\x0e\x20\x03(\rR\
-    \x0bDDGCFJDBOOHb\x06proto3\
+    \n\x11KNIJHGNJIJM.proto\"\xb4\x01\n\x0bKNIJHGNJIJM\x12\x20\n\x0bDPMIBDHK\
+    DAE\x18\x03\x20\x03(\rR\x0bDPMIBDHKDAE\x12\x20\n\x0bJGMIPMDPPIJ\x18\x0e\
+    \x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x10\n\x03exp\x18\x05\x20\x01(\rR\x03exp\
+    \x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05level\x12\x17\n\x07aeon_id\
+    \x18\x08\x20\x01(\rR\x06aeonId\x12\x20\n\x0bDDGCFJDBOOH\x18\x0c\x20\x03(\
+    \rR\x0bDDGCFJDBOOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

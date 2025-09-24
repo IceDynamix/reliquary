@@ -30,10 +30,10 @@ pub struct EnhanceRogueBuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.ANAGCODDMOM)
-    pub ANAGCODDMOM: ::protobuf::MessageField<super::RogueBuff::RogueBuff>,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.FGEFCEFKHMH)
     pub FGEFCEFKHMH: bool,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.ANAGCODDMOM)
+    pub ANAGCODDMOM: ::protobuf::MessageField<super::RogueBuff::RogueBuff>,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceRogueBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl EnhanceRogueBuffScRsp {
             |m: &EnhanceRogueBuffScRsp| { &m.retcode },
             |m: &mut EnhanceRogueBuffScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuff::RogueBuff>(
-            "ANAGCODDMOM",
-            |m: &EnhanceRogueBuffScRsp| { &m.ANAGCODDMOM },
-            |m: &mut EnhanceRogueBuffScRsp| { &mut m.ANAGCODDMOM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGEFCEFKHMH",
             |m: &EnhanceRogueBuffScRsp| { &m.FGEFCEFKHMH },
             |m: &mut EnhanceRogueBuffScRsp| { &mut m.FGEFCEFKHMH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuff::RogueBuff>(
+            "ANAGCODDMOM",
+            |m: &EnhanceRogueBuffScRsp| { &m.ANAGCODDMOM },
+            |m: &mut EnhanceRogueBuffScRsp| { &mut m.ANAGCODDMOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceRogueBuffScRsp>(
             "EnhanceRogueBuffScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANAGCODDMOM)?;
-                },
-                72 => {
+                16 => {
                     self.FGEFCEFKHMH = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANAGCODDMOM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if self.FGEFCEFKHMH != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.ANAGCODDMOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FGEFCEFKHMH != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        if let Some(v) = self.ANAGCODDMOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if self.FGEFCEFKHMH != false {
-            os.write_bool(9, self.FGEFCEFKHMH)?;
+            os.write_bool(2, self.FGEFCEFKHMH)?;
+        }
+        if let Some(v) = self.ANAGCODDMOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.ANAGCODDMOM.clear();
         self.FGEFCEFKHMH = false;
+        self.ANAGCODDMOM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceRogueBuffScRsp {
         static instance: EnhanceRogueBuffScRsp = EnhanceRogueBuffScRsp {
             retcode: 0,
-            ANAGCODDMOM: ::protobuf::MessageField::none(),
             FGEFCEFKHMH: false,
+            ANAGCODDMOM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x0fRogueBuff.proto\"\x81\x01\n\x15\
-    EnhanceRogueBuffScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcod\
-    e\x12,\n\x0bANAGCODDMOM\x18\x0f\x20\x01(\x0b2\n.RogueBuffR\x0bANAGCODDMO\
-    M\x12\x20\n\x0bFGEFCEFKHMH\x18\t\x20\x01(\x08R\x0bFGEFCEFKHMHb\x06proto3\
+    EnhanceRogueBuffScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcod\
+    e\x12\x20\n\x0bFGEFCEFKHMH\x18\x02\x20\x01(\x08R\x0bFGEFCEFKHMH\x12,\n\
+    \x0bANAGCODDMOM\x18\x0b\x20\x01(\x0b2\n.RogueBuffR\x0bANAGCODDMOMb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

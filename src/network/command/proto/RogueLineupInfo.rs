@@ -30,10 +30,10 @@ pub struct RogueLineupInfo {
     // message fields
     // @@protoc_insertion_point(field:RogueLineupInfo.base_avatar_id_list)
     pub base_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueLineupInfo.MANKKFPBFCB)
-    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueLineupInfo.revive_info)
     pub revive_info: ::protobuf::MessageField<super::RogueReviveInfo::RogueReviveInfo>,
+    // @@protoc_insertion_point(field:RogueLineupInfo.MANKKFPBFCB)
+    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueLineupInfo.trial_avatar_id_list)
     pub trial_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -60,15 +60,15 @@ impl RogueLineupInfo {
             |m: &RogueLineupInfo| { &m.base_avatar_id_list },
             |m: &mut RogueLineupInfo| { &mut m.base_avatar_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MANKKFPBFCB",
-            |m: &RogueLineupInfo| { &m.MANKKFPBFCB },
-            |m: &mut RogueLineupInfo| { &mut m.MANKKFPBFCB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueReviveInfo::RogueReviveInfo>(
             "revive_info",
             |m: &RogueLineupInfo| { &m.revive_info },
             |m: &mut RogueLineupInfo| { &mut m.revive_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MANKKFPBFCB",
+            |m: &RogueLineupInfo| { &m.MANKKFPBFCB },
+            |m: &mut RogueLineupInfo| { &mut m.MANKKFPBFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trial_avatar_id_list",
@@ -93,25 +93,25 @@ impl ::protobuf::Message for RogueLineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                48 => {
+                56 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
-                },
-                8 => {
-                    self.MANKKFPBFCB.push(is.read_uint32()?);
-                },
-                58 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
                 },
-                98 => {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
+                },
+                80 => {
+                    self.MANKKFPBFCB.push(is.read_uint32()?);
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                96 => {
+                24 => {
                     self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -126,25 +126,25 @@ impl ::protobuf::Message for RogueLineupInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.base_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MANKKFPBFCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.base_avatar_id_list);
         if let Some(v) = self.revive_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.trial_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.MANKKFPBFCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.trial_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.base_avatar_id_list)?;
-        os.write_repeated_packed_uint32(1, &self.MANKKFPBFCB)?;
+        os.write_repeated_packed_uint32(7, &self.base_avatar_id_list)?;
         if let Some(v) = self.revive_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(12, &self.trial_avatar_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.MANKKFPBFCB)?;
+        os.write_repeated_packed_uint32(3, &self.trial_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,8 +163,8 @@ impl ::protobuf::Message for RogueLineupInfo {
 
     fn clear(&mut self) {
         self.base_avatar_id_list.clear();
-        self.MANKKFPBFCB.clear();
         self.revive_info.clear();
+        self.MANKKFPBFCB.clear();
         self.trial_avatar_id_list.clear();
         self.special_fields.clear();
     }
@@ -172,8 +172,8 @@ impl ::protobuf::Message for RogueLineupInfo {
     fn default_instance() -> &'static RogueLineupInfo {
         static instance: RogueLineupInfo = RogueLineupInfo {
             base_avatar_id_list: ::std::vec::Vec::new(),
-            MANKKFPBFCB: ::std::vec::Vec::new(),
             revive_info: ::protobuf::MessageField::none(),
+            MANKKFPBFCB: ::std::vec::Vec::new(),
             trial_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueLineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15RogueLineupInfo.proto\x1a\x15RogueReviveInfo.proto\"\xc6\x01\n\x0f\
-    RogueLineupInfo\x12-\n\x13base_avatar_id_list\x18\x06\x20\x03(\rR\x10bas\
-    eAvatarIdList\x12\x20\n\x0bMANKKFPBFCB\x18\x01\x20\x03(\rR\x0bMANKKFPBFC\
-    B\x121\n\x0brevive_info\x18\x07\x20\x01(\x0b2\x10.RogueReviveInfoR\nrevi\
-    veInfo\x12/\n\x14trial_avatar_id_list\x18\x0c\x20\x03(\rR\x11trialAvatar\
-    IdListb\x06proto3\
+    RogueLineupInfo\x12-\n\x13base_avatar_id_list\x18\x07\x20\x03(\rR\x10bas\
+    eAvatarIdList\x121\n\x0brevive_info\x18\x02\x20\x01(\x0b2\x10.RogueReviv\
+    eInfoR\nreviveInfo\x12\x20\n\x0bMANKKFPBFCB\x18\n\x20\x03(\rR\x0bMANKKFP\
+    BFCB\x12/\n\x14trial_avatar_id_list\x18\x03\x20\x03(\rR\x11trialAvatarId\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

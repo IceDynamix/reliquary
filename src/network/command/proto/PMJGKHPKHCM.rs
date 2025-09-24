@@ -30,14 +30,14 @@ pub struct PMJGKHPKHCM {
     // message fields
     // @@protoc_insertion_point(field:PMJGKHPKHCM.sub_area_id)
     pub sub_area_id: u32,
+    // @@protoc_insertion_point(field:PMJGKHPKHCM.rogue_magic_battle_const)
+    pub rogue_magic_battle_const: u32,
     // @@protoc_insertion_point(field:PMJGKHPKHCM.AGEBAMBKKBC)
     pub AGEBAMBKKBC: u32,
     // @@protoc_insertion_point(field:PMJGKHPKHCM.rogue_sub_mode)
     pub rogue_sub_mode: u32,
     // @@protoc_insertion_point(field:PMJGKHPKHCM.rogue_current_game_info)
     pub rogue_current_game_info: ::std::vec::Vec<super::RogueGameInfo::RogueGameInfo>,
-    // @@protoc_insertion_point(field:PMJGKHPKHCM.rogue_magic_battle_const)
-    pub rogue_magic_battle_const: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PMJGKHPKHCM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,6 +63,11 @@ impl PMJGKHPKHCM {
             |m: &mut PMJGKHPKHCM| { &mut m.sub_area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_magic_battle_const",
+            |m: &PMJGKHPKHCM| { &m.rogue_magic_battle_const },
+            |m: &mut PMJGKHPKHCM| { &mut m.rogue_magic_battle_const },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AGEBAMBKKBC",
             |m: &PMJGKHPKHCM| { &m.AGEBAMBKKBC },
             |m: &mut PMJGKHPKHCM| { &mut m.AGEBAMBKKBC },
@@ -76,11 +81,6 @@ impl PMJGKHPKHCM {
             "rogue_current_game_info",
             |m: &PMJGKHPKHCM| { &m.rogue_current_game_info },
             |m: &mut PMJGKHPKHCM| { &mut m.rogue_current_game_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_magic_battle_const",
-            |m: &PMJGKHPKHCM| { &m.rogue_magic_battle_const },
-            |m: &mut PMJGKHPKHCM| { &mut m.rogue_magic_battle_const },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PMJGKHPKHCM>(
             "PMJGKHPKHCM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PMJGKHPKHCM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.sub_area_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.AGEBAMBKKBC = is.read_uint32()?;
+                32 => {
+                    self.rogue_magic_battle_const = is.read_uint32()?;
                 },
                 80 => {
+                    self.AGEBAMBKKBC = is.read_uint32()?;
+                },
+                16 => {
                     self.rogue_sub_mode = is.read_uint32()?;
                 },
-                34 => {
+                10 => {
                     self.rogue_current_game_info.push(is.read_message()?);
-                },
-                56 => {
-                    self.rogue_magic_battle_const = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,21 +128,21 @@ impl ::protobuf::Message for PMJGKHPKHCM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.sub_area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.sub_area_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.sub_area_id);
+        }
+        if self.rogue_magic_battle_const != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.rogue_magic_battle_const);
         }
         if self.AGEBAMBKKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AGEBAMBKKBC);
+            my_size += ::protobuf::rt::uint32_size(10, self.AGEBAMBKKBC);
         }
         if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.rogue_sub_mode);
+            my_size += ::protobuf::rt::uint32_size(2, self.rogue_sub_mode);
         }
         for value in &self.rogue_current_game_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.rogue_magic_battle_const != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rogue_magic_battle_const);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -150,20 +150,20 @@ impl ::protobuf::Message for PMJGKHPKHCM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.sub_area_id != 0 {
-            os.write_uint32(15, self.sub_area_id)?;
+            os.write_uint32(14, self.sub_area_id)?;
+        }
+        if self.rogue_magic_battle_const != 0 {
+            os.write_uint32(4, self.rogue_magic_battle_const)?;
         }
         if self.AGEBAMBKKBC != 0 {
-            os.write_uint32(5, self.AGEBAMBKKBC)?;
+            os.write_uint32(10, self.AGEBAMBKKBC)?;
         }
         if self.rogue_sub_mode != 0 {
-            os.write_uint32(10, self.rogue_sub_mode)?;
+            os.write_uint32(2, self.rogue_sub_mode)?;
         }
         for v in &self.rogue_current_game_info {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.rogue_magic_battle_const != 0 {
-            os.write_uint32(7, self.rogue_magic_battle_const)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,20 +182,20 @@ impl ::protobuf::Message for PMJGKHPKHCM {
 
     fn clear(&mut self) {
         self.sub_area_id = 0;
+        self.rogue_magic_battle_const = 0;
         self.AGEBAMBKKBC = 0;
         self.rogue_sub_mode = 0;
         self.rogue_current_game_info.clear();
-        self.rogue_magic_battle_const = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PMJGKHPKHCM {
         static instance: PMJGKHPKHCM = PMJGKHPKHCM {
             sub_area_id: 0,
+            rogue_magic_battle_const: 0,
             AGEBAMBKKBC: 0,
             rogue_sub_mode: 0,
             rogue_current_game_info: ::std::vec::Vec::new(),
-            rogue_magic_battle_const: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for PMJGKHPKHCM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PMJGKHPKHCM.proto\x1a\x13RogueGameInfo.proto\"\xf5\x01\n\x0bPMJGKH\
-    PKHCM\x12\x1e\n\x0bsub_area_id\x18\x0f\x20\x01(\rR\tsubAreaId\x12\x20\n\
-    \x0bAGEBAMBKKBC\x18\x05\x20\x01(\rR\x0bAGEBAMBKKBC\x12$\n\x0erogue_sub_m\
-    ode\x18\n\x20\x01(\rR\x0crogueSubMode\x12E\n\x17rogue_current_game_info\
-    \x18\x04\x20\x03(\x0b2\x0e.RogueGameInfoR\x14rogueCurrentGameInfo\x127\n\
-    \x18rogue_magic_battle_const\x18\x07\x20\x01(\rR\x15rogueMagicBattleCons\
-    tb\x06proto3\
+    PKHCM\x12\x1e\n\x0bsub_area_id\x18\x0e\x20\x01(\rR\tsubAreaId\x127\n\x18\
+    rogue_magic_battle_const\x18\x04\x20\x01(\rR\x15rogueMagicBattleConst\
+    \x12\x20\n\x0bAGEBAMBKKBC\x18\n\x20\x01(\rR\x0bAGEBAMBKKBC\x12$\n\x0erog\
+    ue_sub_mode\x18\x02\x20\x01(\rR\x0crogueSubMode\x12E\n\x17rogue_current_\
+    game_info\x18\x01\x20\x03(\x0b2\x0e.RogueGameInfoR\x14rogueCurrentGameIn\
+    fob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FormulaBuffTypeInfo {
     // message fields
-    // @@protoc_insertion_point(field:FormulaBuffTypeInfo.formula_buff_num)
-    pub formula_buff_num: i32,
     // @@protoc_insertion_point(field:FormulaBuffTypeInfo.key)
     pub key: u32,
+    // @@protoc_insertion_point(field:FormulaBuffTypeInfo.formula_buff_num)
+    pub formula_buff_num: i32,
     // special fields
     // @@protoc_insertion_point(special_field:FormulaBuffTypeInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FormulaBuffTypeInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "formula_buff_num",
-            |m: &FormulaBuffTypeInfo| { &m.formula_buff_num },
-            |m: &mut FormulaBuffTypeInfo| { &mut m.formula_buff_num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "key",
             |m: &FormulaBuffTypeInfo| { &m.key },
             |m: &mut FormulaBuffTypeInfo| { &mut m.key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "formula_buff_num",
+            |m: &FormulaBuffTypeInfo| { &m.formula_buff_num },
+            |m: &mut FormulaBuffTypeInfo| { &mut m.formula_buff_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FormulaBuffTypeInfo>(
             "FormulaBuffTypeInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FormulaBuffTypeInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.formula_buff_num = is.read_int32()?;
-                },
-                24 => {
+                64 => {
                     self.key = is.read_uint32()?;
+                },
+                56 => {
+                    self.formula_buff_num = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FormulaBuffTypeInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.formula_buff_num != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.formula_buff_num);
-        }
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.key);
+            my_size += ::protobuf::rt::uint32_size(8, self.key);
+        }
+        if self.formula_buff_num != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.formula_buff_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FormulaBuffTypeInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.formula_buff_num != 0 {
-            os.write_int32(11, self.formula_buff_num)?;
-        }
         if self.key != 0 {
-            os.write_uint32(3, self.key)?;
+            os.write_uint32(8, self.key)?;
+        }
+        if self.formula_buff_num != 0 {
+            os.write_int32(7, self.formula_buff_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FormulaBuffTypeInfo {
     }
 
     fn clear(&mut self) {
-        self.formula_buff_num = 0;
         self.key = 0;
+        self.formula_buff_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FormulaBuffTypeInfo {
         static instance: FormulaBuffTypeInfo = FormulaBuffTypeInfo {
-            formula_buff_num: 0,
             key: 0,
+            formula_buff_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FormulaBuffTypeInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FormulaBuffTypeInfo.proto\"Q\n\x13FormulaBuffTypeInfo\x12(\n\x10fo\
-    rmula_buff_num\x18\x0b\x20\x01(\x05R\x0eformulaBuffNum\x12\x10\n\x03key\
-    \x18\x03\x20\x01(\rR\x03keyb\x06proto3\
+    \n\x19FormulaBuffTypeInfo.proto\"Q\n\x13FormulaBuffTypeInfo\x12\x10\n\
+    \x03key\x18\x08\x20\x01(\rR\x03key\x12(\n\x10formula_buff_num\x18\x07\
+    \x20\x01(\x05R\x0eformulaBuffNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

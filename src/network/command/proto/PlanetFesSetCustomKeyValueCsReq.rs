@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.value = is.read_uint32()?;
                 },
-                8 => {
+                96 => {
                     self.key = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.value);
+            my_size += ::protobuf::rt::uint32_size(6, self.value);
         }
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.key);
+            my_size += ::protobuf::rt::uint32_size(12, self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesSetCustomKeyValueCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0 {
-            os.write_uint32(2, self.value)?;
+            os.write_uint32(6, self.value)?;
         }
         if self.key != 0 {
-            os.write_uint32(1, self.key)?;
+            os.write_uint32(12, self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSetCustomKeyValueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%PlanetFesSetCustomKeyValueCsReq.proto\"I\n\x1fPlanetFesSetCustomKeyVa\
-    lueCsReq\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value\x12\x10\n\x03ke\
-    y\x18\x01\x20\x01(\rR\x03keyb\x06proto3\
+    lueCsReq\x12\x14\n\x05value\x18\x06\x20\x01(\rR\x05value\x12\x10\n\x03ke\
+    y\x18\x0c\x20\x01(\rR\x03keyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

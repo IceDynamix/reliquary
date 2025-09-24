@@ -79,10 +79,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.miracle_id = is.read_uint32()?;
                 },
-                72 => {
+                40 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.miracle_id);
         }
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.miracle_id != 0 {
-            os.write_uint32(6, self.miracle_id)?;
+            os.write_uint32(8, self.miracle_id)?;
         }
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(9, self.interacted_prop_entity_id)?;
+            os.write_uint32(5, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopMiracleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eBuyRogueShopMiracleCsReq.proto\"t\n\x18BuyRogueShopMiracleCsReq\
-    \x12\x1d\n\nmiracle_id\x18\x06\x20\x01(\rR\tmiracleId\x129\n\x19interact\
-    ed_prop_entity_id\x18\t\x20\x01(\rR\x16interactedPropEntityIdb\x06proto3\
+    \x12\x1d\n\nmiracle_id\x18\x08\x20\x01(\rR\tmiracleId\x129\n\x19interact\
+    ed_prop_entity_id\x18\x05\x20\x01(\rR\x16interactedPropEntityIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

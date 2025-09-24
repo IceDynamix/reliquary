@@ -30,10 +30,10 @@ pub struct GKJFBBHHLAC {
     // message fields
     // @@protoc_insertion_point(field:GKJFBBHHLAC.buff_list)
     pub buff_list: ::std::vec::Vec<super::RogueBuff::RogueBuff>,
-    // @@protoc_insertion_point(field:GKJFBBHHLAC.miracle_list)
-    pub miracle_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GKJFBBHHLAC.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::FGKCAMBIAHB::FGKCAMBIAHB>,
+    // @@protoc_insertion_point(field:GKJFBBHHLAC.miracle_list)
+    pub miracle_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GKJFBBHHLAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GKJFBBHHLAC {
             |m: &mut GKJFBBHHLAC| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "miracle_list",
-            |m: &GKJFBBHHLAC| { &m.miracle_list },
-            |m: &mut GKJFBBHHLAC| { &mut m.miracle_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &GKJFBBHHLAC| { &m.avatar_list },
             |m: &mut GKJFBBHHLAC| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "miracle_list",
+            |m: &GKJFBBHHLAC| { &m.miracle_list },
+            |m: &mut GKJFBBHHLAC| { &mut m.miracle_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKJFBBHHLAC>(
             "GKJFBBHHLAC",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for GKJFBBHHLAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                50 => {
                     self.buff_list.push(is.read_message()?);
                 },
-                50 => {
+                74 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_list)?;
                 },
-                48 => {
+                96 => {
                     self.miracle_list.push(is.read_uint32()?);
-                },
-                26 => {
-                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,11 +114,11 @@ impl ::protobuf::Message for GKJFBBHHLAC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.miracle_list);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.miracle_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -126,12 +126,12 @@ impl ::protobuf::Message for GKJFBBHHLAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.miracle_list)?;
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        os.write_repeated_packed_uint32(12, &self.miracle_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GKJFBBHHLAC {
 
     fn clear(&mut self) {
         self.buff_list.clear();
-        self.miracle_list.clear();
         self.avatar_list.clear();
+        self.miracle_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKJFBBHHLAC {
         static instance: GKJFBBHHLAC = GKJFBBHHLAC {
             buff_list: ::std::vec::Vec::new(),
-            miracle_list: ::std::vec::Vec::new(),
             avatar_list: ::std::vec::Vec::new(),
+            miracle_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GKJFBBHHLAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKJFBBHHLAC.proto\x1a\x11FGKCAMBIAHB.proto\x1a\x0fRogueBuff.proto\
-    \"\x88\x01\n\x0bGKJFBBHHLAC\x12'\n\tbuff_list\x18\x01\x20\x03(\x0b2\n.Ro\
-    gueBuffR\x08buffList\x12!\n\x0cmiracle_list\x18\x06\x20\x03(\rR\x0bmirac\
-    leList\x12-\n\x0bavatar_list\x18\x03\x20\x03(\x0b2\x0c.FGKCAMBIAHBR\nava\
-    tarListb\x06proto3\
+    \"\x88\x01\n\x0bGKJFBBHHLAC\x12'\n\tbuff_list\x18\x06\x20\x03(\x0b2\n.Ro\
+    gueBuffR\x08buffList\x12-\n\x0bavatar_list\x18\t\x20\x03(\x0b2\x0c.FGKCA\
+    MBIAHBR\navatarList\x12!\n\x0cmiracle_list\x18\x0c\x20\x03(\rR\x0bmiracl\
+    eListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

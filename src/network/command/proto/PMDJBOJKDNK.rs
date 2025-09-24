@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PMDJBOJKDNK {
     // message fields
-    // @@protoc_insertion_point(field:PMDJBOJKDNK.inside_relic_list)
-    pub inside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PMDJBOJKDNK.JCCFEACHMBP)
     pub JCCFEACHMBP: ::protobuf::EnumOrUnknown<super::ANCCGLMMDJJ::ANCCGLMMDJJ>,
+    // @@protoc_insertion_point(field:PMDJBOJKDNK.inside_relic_list)
+    pub inside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PMDJBOJKDNK.outside_relic_list)
     pub outside_relic_list: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl PMDJBOJKDNK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "inside_relic_list",
-            |m: &PMDJBOJKDNK| { &m.inside_relic_list },
-            |m: &mut PMDJBOJKDNK| { &mut m.inside_relic_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JCCFEACHMBP",
             |m: &PMDJBOJKDNK| { &m.JCCFEACHMBP },
             |m: &mut PMDJBOJKDNK| { &mut m.JCCFEACHMBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "inside_relic_list",
+            |m: &PMDJBOJKDNK| { &m.inside_relic_list },
+            |m: &mut PMDJBOJKDNK| { &mut m.inside_relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "outside_relic_list",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PMDJBOJKDNK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                40 => {
+                    self.JCCFEACHMBP = is.read_enum_or_unknown()?;
+                },
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.inside_relic_list)?;
                 },
-                16 => {
+                64 => {
                     self.inside_relic_list.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.JCCFEACHMBP = is.read_enum_or_unknown()?;
                 },
                 74 => {
                     is.read_repeated_packed_uint32_into(&mut self.outside_relic_list)?;
@@ -113,10 +113,10 @@ impl ::protobuf::Message for PMDJBOJKDNK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.inside_relic_list);
         if self.JCCFEACHMBP != ::protobuf::EnumOrUnknown::new(super::ANCCGLMMDJJ::ANCCGLMMDJJ::RELIC_SMART_WEAR_PLAN_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.JCCFEACHMBP.value());
+            my_size += ::protobuf::rt::int32_size(5, self.JCCFEACHMBP.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.inside_relic_list);
         my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.outside_relic_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for PMDJBOJKDNK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.inside_relic_list)?;
         if self.JCCFEACHMBP != ::protobuf::EnumOrUnknown::new(super::ANCCGLMMDJJ::ANCCGLMMDJJ::RELIC_SMART_WEAR_PLAN_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.JCCFEACHMBP))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.JCCFEACHMBP))?;
         }
+        os.write_repeated_packed_uint32(8, &self.inside_relic_list)?;
         os.write_repeated_packed_uint32(9, &self.outside_relic_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -146,16 +146,16 @@ impl ::protobuf::Message for PMDJBOJKDNK {
     }
 
     fn clear(&mut self) {
-        self.inside_relic_list.clear();
         self.JCCFEACHMBP = ::protobuf::EnumOrUnknown::new(super::ANCCGLMMDJJ::ANCCGLMMDJJ::RELIC_SMART_WEAR_PLAN_TYPE_NONE);
+        self.inside_relic_list.clear();
         self.outside_relic_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PMDJBOJKDNK {
         static instance: PMDJBOJKDNK = PMDJBOJKDNK {
-            inside_relic_list: ::std::vec::Vec::new(),
             JCCFEACHMBP: ::protobuf::EnumOrUnknown::from_i32(0),
+            inside_relic_list: ::std::vec::Vec::new(),
             outside_relic_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for PMDJBOJKDNK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PMDJBOJKDNK.proto\x1a\x11ANCCGLMMDJJ.proto\"\x97\x01\n\x0bPMDJBOJK\
-    DNK\x12*\n\x11inside_relic_list\x18\x02\x20\x03(\rR\x0finsideRelicList\
-    \x12.\n\x0bJCCFEACHMBP\x18\r\x20\x01(\x0e2\x0c.ANCCGLMMDJJR\x0bJCCFEACHM\
-    BP\x12,\n\x12outside_relic_list\x18\t\x20\x03(\rR\x10outsideRelicListb\
+    DNK\x12.\n\x0bJCCFEACHMBP\x18\x05\x20\x01(\x0e2\x0c.ANCCGLMMDJJR\x0bJCCF\
+    EACHMBP\x12*\n\x11inside_relic_list\x18\x08\x20\x03(\rR\x0finsideRelicLi\
+    st\x12,\n\x12outside_relic_list\x18\t\x20\x03(\rR\x10outsideRelicListb\
     \x06proto3\
 ";
 

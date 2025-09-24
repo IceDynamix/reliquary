@@ -43,7 +43,7 @@ pub struct DBDGPCBJEHG {
     // @@protoc_insertion_point(field:DBDGPCBJEHG.EJCLJLDENDM)
     pub EJCLJLDENDM: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // @@protoc_insertion_point(field:DBDGPCBJEHG.JPGIFCHJDLK)
-    pub JPGIFCHJDLK: ::protobuf::MessageField<super::EvolveBuildBattleInfo::EvolveBuildBattleInfo>,
+    pub JPGIFCHJDLK: ::protobuf::MessageField<super::INKFCPKBGPH::INKFCPKBGPH>,
     // @@protoc_insertion_point(field:DBDGPCBJEHG.MFKJOKAJJMJ)
     pub MFKJOKAJJMJ: ::protobuf::MessageField<super::GIEIBEACBAO::GIEIBEACBAO>,
     // @@protoc_insertion_point(field:DBDGPCBJEHG.battle_rogue_magic_info)
@@ -104,7 +104,7 @@ impl DBDGPCBJEHG {
             |m: &DBDGPCBJEHG| { &m.EJCLJLDENDM },
             |m: &mut DBDGPCBJEHG| { &mut m.EJCLJLDENDM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EvolveBuildBattleInfo::EvolveBuildBattleInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INKFCPKBGPH::INKFCPKBGPH>(
             "JPGIFCHJDLK",
             |m: &DBDGPCBJEHG| { &m.JPGIFCHJDLK },
             |m: &mut DBDGPCBJEHG| { &mut m.JPGIFCHJDLK },
@@ -348,24 +348,23 @@ impl ::protobuf::reflect::ProtobufValue for DBDGPCBJEHG {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBDGPCBJEHG.proto\x1a\x12BattleAvatar.proto\x1a\x10BattleBuff.prot\
     o\x1a\x17BattleMonsterWave.proto\x1a\x1aBattleRogueMagicInfo.proto\x1a\
-    \x16BattleTargetList.proto\x1a\x11EACDEAPKILK.proto\x1a\x1bEvolveBuildBa\
-    ttleInfo.proto\x1a\x11GIEIBEACBAO.proto\x1a\x11LJGIAGLFHHC.proto\"\xbb\
-    \x05\n\x0bDBDGPCBJEHG\x12.\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\r.Batt\
-    leAvatarR\navatarList\x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\
-    \x12.BattleMonsterWaveR\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\
-    \x03(\x0b2\x0b.BattleBuffR\x08buffList\x12\x1f\n\x0bworld_level\x18\x07\
-    \x20\x01(\rR\nworldLevel\x12P\n\x12battle_target_info\x18\t\x20\x03(\x0b\
-    2\".DBDGPCBJEHG.BattleTargetInfoEntryR\x10battleTargetInfo\x12.\n\x0bAJG\
-    PJGLPMIO\x18\n\x20\x01(\x0b2\x0c.LJGIAGLFHHCR\x0bAJGPJGLPMIO\x12/\n\x0bE\
-    JCLJLDENDM\x18\x0b\x20\x03(\x0b2\r.BattleAvatarR\x0bEJCLJLDENDM\x128\n\
-    \x0bJPGIFCHJDLK\x18\x0c\x20\x01(\x0b2\x16.EvolveBuildBattleInfoR\x0bJPGI\
-    FCHJDLK\x12.\n\x0bMFKJOKAJJMJ\x18\r\x20\x01(\x0b2\x0c.GIEIBEACBAOR\x0bMF\
-    KJOKAJJMJ\x12L\n\x17battle_rogue_magic_info\x18\x0e\x20\x01(\x0b2\x15.Ba\
-    ttleRogueMagicInfoR\x14battleRogueMagicInfo\x12.\n\x0bGEGDPNKKAKG\x18\
-    \x0f\x20\x01(\x0b2\x0c.EACDEAPKILKR\x0bGEGDPNKKAKG\x1aV\n\x15BattleTarge\
-    tInfoEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\
-    \x18\x02\x20\x01(\x0b2\x11.BattleTargetListR\x05value:\x028\x01b\x06prot\
-    o3\
+    \x16BattleTargetList.proto\x1a\x11EACDEAPKILK.proto\x1a\x11GIEIBEACBAO.p\
+    roto\x1a\x11INKFCPKBGPH.proto\x1a\x11LJGIAGLFHHC.proto\"\xb1\x05\n\x0bDB\
+    DGPCBJEHG\x12.\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\na\
+    vatarList\x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMo\
+    nsterWaveR\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\
+    \x0b.BattleBuffR\x08buffList\x12\x1f\n\x0bworld_level\x18\x07\x20\x01(\r\
+    R\nworldLevel\x12P\n\x12battle_target_info\x18\t\x20\x03(\x0b2\".DBDGPCB\
+    JEHG.BattleTargetInfoEntryR\x10battleTargetInfo\x12.\n\x0bAJGPJGLPMIO\
+    \x18\n\x20\x01(\x0b2\x0c.LJGIAGLFHHCR\x0bAJGPJGLPMIO\x12/\n\x0bEJCLJLDEN\
+    DM\x18\x0b\x20\x03(\x0b2\r.BattleAvatarR\x0bEJCLJLDENDM\x12.\n\x0bJPGIFC\
+    HJDLK\x18\x0c\x20\x01(\x0b2\x0c.INKFCPKBGPHR\x0bJPGIFCHJDLK\x12.\n\x0bMF\
+    KJOKAJJMJ\x18\r\x20\x01(\x0b2\x0c.GIEIBEACBAOR\x0bMFKJOKAJJMJ\x12L\n\x17\
+    battle_rogue_magic_info\x18\x0e\x20\x01(\x0b2\x15.BattleRogueMagicInfoR\
+    \x14battleRogueMagicInfo\x12.\n\x0bGEGDPNKKAKG\x18\x0f\x20\x01(\x0b2\x0c\
+    .EACDEAPKILKR\x0bGEGDPNKKAKG\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01(\x0b2\
+    \x11.BattleTargetListR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -389,8 +388,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleRogueMagicInfo::file_descriptor().clone());
             deps.push(super::BattleTargetList::file_descriptor().clone());
             deps.push(super::EACDEAPKILK::file_descriptor().clone());
-            deps.push(super::EvolveBuildBattleInfo::file_descriptor().clone());
             deps.push(super::GIEIBEACBAO::file_descriptor().clone());
+            deps.push(super::INKFCPKBGPH::file_descriptor().clone());
             deps.push(super::LJGIAGLFHHC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DBDGPCBJEHG::generated_message_descriptor_data());

@@ -79,10 +79,10 @@ impl ::protobuf::Message for GmTalkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     self.BJDOJLKEHNA = is.read_string()?;
                 },
-                120 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GmTalkScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.BJDOJLKEHNA.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.BJDOJLKEHNA);
+            my_size += ::protobuf::rt::string_size(9, &self.BJDOJLKEHNA);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GmTalkScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.BJDOJLKEHNA.is_empty() {
-            os.write_string(5, &self.BJDOJLKEHNA)?;
+            os.write_string(9, &self.BJDOJLKEHNA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GmTalkScRsp.proto\"I\n\x0bGmTalkScRsp\x12\x20\n\x0bBJDOJLKEHNA\x18\
-    \x05\x20\x01(\tR\x0bBJDOJLKEHNA\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \t\x20\x01(\tR\x0bBJDOJLKEHNA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

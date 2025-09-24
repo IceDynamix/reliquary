@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMiracle {
     // message fields
+    // @@protoc_insertion_point(field:RogueMiracle.max_times)
+    pub max_times: u32,
     // @@protoc_insertion_point(field:RogueMiracle.cur_times)
     pub cur_times: u32,
-    // @@protoc_insertion_point(field:RogueMiracle.miracle_id)
-    pub miracle_id: u32,
     // @@protoc_insertion_point(field:RogueMiracle.durability)
     pub durability: u32,
     // @@protoc_insertion_point(field:RogueMiracle.GMAFEJEJBHO)
     pub GMAFEJEJBHO: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:RogueMiracle.max_times)
-    pub max_times: u32,
+    // @@protoc_insertion_point(field:RogueMiracle.miracle_id)
+    pub miracle_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMiracle.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,14 @@ impl RogueMiracle {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_times",
+            |m: &RogueMiracle| { &m.max_times },
+            |m: &mut RogueMiracle| { &mut m.max_times },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_times",
             |m: &RogueMiracle| { &m.cur_times },
             |m: &mut RogueMiracle| { &mut m.cur_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "miracle_id",
-            |m: &RogueMiracle| { &m.miracle_id },
-            |m: &mut RogueMiracle| { &mut m.miracle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "durability",
@@ -78,9 +78,9 @@ impl RogueMiracle {
             |m: &mut RogueMiracle| { &mut m.GMAFEJEJBHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_times",
-            |m: &RogueMiracle| { &m.max_times },
-            |m: &mut RogueMiracle| { &mut m.max_times },
+            "miracle_id",
+            |m: &RogueMiracle| { &m.miracle_id },
+            |m: &mut RogueMiracle| { &mut m.miracle_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMiracle>(
             "RogueMiracle",
@@ -100,16 +100,16 @@ impl ::protobuf::Message for RogueMiracle {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
+                    self.max_times = is.read_uint32()?;
+                },
+                104 => {
                     self.cur_times = is.read_uint32()?;
                 },
-                88 => {
-                    self.miracle_id = is.read_uint32()?;
-                },
-                96 => {
+                24 => {
                     self.durability = is.read_uint32()?;
                 },
-                106 => {
+                74 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -124,8 +124,8 @@ impl ::protobuf::Message for RogueMiracle {
                     is.pop_limit(old_limit);
                     self.GMAFEJEJBHO.insert(key, value);
                 },
-                112 => {
-                    self.max_times = is.read_uint32()?;
+                96 => {
+                    self.miracle_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,14 +139,14 @@ impl ::protobuf::Message for RogueMiracle {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cur_times);
+        if self.max_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.max_times);
         }
-        if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.miracle_id);
+        if self.cur_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.cur_times);
         }
         if self.durability != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.durability);
+            my_size += ::protobuf::rt::uint32_size(3, self.durability);
         }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
@@ -154,8 +154,8 @@ impl ::protobuf::Message for RogueMiracle {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.max_times);
+        if self.miracle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.miracle_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,26 +163,26 @@ impl ::protobuf::Message for RogueMiracle {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_times != 0 {
-            os.write_uint32(5, self.cur_times)?;
+        if self.max_times != 0 {
+            os.write_uint32(8, self.max_times)?;
         }
-        if self.miracle_id != 0 {
-            os.write_uint32(11, self.miracle_id)?;
+        if self.cur_times != 0 {
+            os.write_uint32(13, self.cur_times)?;
         }
         if self.durability != 0 {
-            os.write_uint32(12, self.durability)?;
+            os.write_uint32(3, self.durability)?;
         }
         for (k, v) in &self.GMAFEJEJBHO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(74)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.max_times != 0 {
-            os.write_uint32(14, self.max_times)?;
+        if self.miracle_id != 0 {
+            os.write_uint32(12, self.miracle_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,11 +201,11 @@ impl ::protobuf::Message for RogueMiracle {
     }
 
     fn clear(&mut self) {
+        self.max_times = 0;
         self.cur_times = 0;
-        self.miracle_id = 0;
         self.durability = 0;
         self.GMAFEJEJBHO.clear();
-        self.max_times = 0;
+        self.miracle_id = 0;
         self.special_fields.clear();
     }
 
@@ -233,13 +233,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracle {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12RogueMiracle.proto\"\x89\x02\n\x0cRogueMiracle\x12\x1b\n\tcur_time\
-    s\x18\x05\x20\x01(\rR\x08curTimes\x12\x1d\n\nmiracle_id\x18\x0b\x20\x01(\
-    \rR\tmiracleId\x12\x1e\n\ndurability\x18\x0c\x20\x01(\rR\ndurability\x12\
-    @\n\x0bGMAFEJEJBHO\x18\r\x20\x03(\x0b2\x1e.RogueMiracle.GMAFEJEJBHOEntry\
-    R\x0bGMAFEJEJBHO\x12\x1b\n\tmax_times\x18\x0e\x20\x01(\rR\x08maxTimes\
-    \x1a>\n\x10GMAFEJEJBHOEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
-    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x12RogueMiracle.proto\"\x89\x02\n\x0cRogueMiracle\x12\x1b\n\tmax_time\
+    s\x18\x08\x20\x01(\rR\x08maxTimes\x12\x1b\n\tcur_times\x18\r\x20\x01(\rR\
+    \x08curTimes\x12\x1e\n\ndurability\x18\x03\x20\x01(\rR\ndurability\x12@\
+    \n\x0bGMAFEJEJBHO\x18\t\x20\x03(\x0b2\x1e.RogueMiracle.GMAFEJEJBHOEntryR\
+    \x0bGMAFEJEJBHO\x12\x1d\n\nmiracle_id\x18\x0c\x20\x01(\rR\tmiracleId\x1a\
+    >\n\x10GMAFEJEJBHOEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\
+    \x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KJBMLBGIBJF {
     // message fields
-    // @@protoc_insertion_point(field:KJBMLBGIBJF.OCCMNIDEBBJ)
-    pub OCCMNIDEBBJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KJBMLBGIBJF.JIHCHILFJPI)
     pub JIHCHILFJPI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KJBMLBGIBJF.OCCMNIDEBBJ)
+    pub OCCMNIDEBBJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KJBMLBGIBJF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KJBMLBGIBJF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OCCMNIDEBBJ",
-            |m: &KJBMLBGIBJF| { &m.OCCMNIDEBBJ },
-            |m: &mut KJBMLBGIBJF| { &mut m.OCCMNIDEBBJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JIHCHILFJPI",
             |m: &KJBMLBGIBJF| { &m.JIHCHILFJPI },
             |m: &mut KJBMLBGIBJF| { &mut m.JIHCHILFJPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OCCMNIDEBBJ",
+            |m: &KJBMLBGIBJF| { &m.OCCMNIDEBBJ },
+            |m: &mut KJBMLBGIBJF| { &mut m.OCCMNIDEBBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KJBMLBGIBJF>(
             "KJBMLBGIBJF",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for KJBMLBGIBJF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OCCMNIDEBBJ)?;
-                },
-                56 => {
-                    self.OCCMNIDEBBJ.push(is.read_uint32()?);
-                },
-                74 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.JIHCHILFJPI)?;
                 },
-                72 => {
+                24 => {
                     self.JIHCHILFJPI.push(is.read_uint32()?);
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OCCMNIDEBBJ)?;
+                },
+                16 => {
+                    self.OCCMNIDEBBJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for KJBMLBGIBJF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.OCCMNIDEBBJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JIHCHILFJPI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.JIHCHILFJPI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.OCCMNIDEBBJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.OCCMNIDEBBJ)?;
-        os.write_repeated_packed_uint32(9, &self.JIHCHILFJPI)?;
+        os.write_repeated_packed_uint32(3, &self.JIHCHILFJPI)?;
+        os.write_repeated_packed_uint32(2, &self.OCCMNIDEBBJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for KJBMLBGIBJF {
     }
 
     fn clear(&mut self) {
-        self.OCCMNIDEBBJ.clear();
         self.JIHCHILFJPI.clear();
+        self.OCCMNIDEBBJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KJBMLBGIBJF {
         static instance: KJBMLBGIBJF = KJBMLBGIBJF {
-            OCCMNIDEBBJ: ::std::vec::Vec::new(),
             JIHCHILFJPI: ::std::vec::Vec::new(),
+            OCCMNIDEBBJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for KJBMLBGIBJF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KJBMLBGIBJF.proto\"Q\n\x0bKJBMLBGIBJF\x12\x20\n\x0bOCCMNIDEBBJ\x18\
-    \x07\x20\x03(\rR\x0bOCCMNIDEBBJ\x12\x20\n\x0bJIHCHILFJPI\x18\t\x20\x03(\
-    \rR\x0bJIHCHILFJPIb\x06proto3\
+    \n\x11KJBMLBGIBJF.proto\"Q\n\x0bKJBMLBGIBJF\x12\x20\n\x0bJIHCHILFJPI\x18\
+    \x03\x20\x03(\rR\x0bJIHCHILFJPI\x12\x20\n\x0bOCCMNIDEBBJ\x18\x02\x20\x03\
+    (\rR\x0bOCCMNIDEBBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

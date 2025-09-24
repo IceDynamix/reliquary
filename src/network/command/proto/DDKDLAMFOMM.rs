@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DDKDLAMFOMM {
     // message fields
-    // @@protoc_insertion_point(field:DDKDLAMFOMM.JOBMNGMJJMM)
-    pub JOBMNGMJJMM: ::std::vec::Vec<super::PKIKEFAOIDE::PKIKEFAOIDE>,
     // @@protoc_insertion_point(field:DDKDLAMFOMM.BAOJDBHJOKD)
     pub BAOJDBHJOKD: ::protobuf::MessageField<super::JMGEGGOLAMN::JMGEGGOLAMN>,
     // @@protoc_insertion_point(field:DDKDLAMFOMM.DAFDGJLDNAH)
     pub DAFDGJLDNAH: ::std::vec::Vec<super::LJJAHILCODE::LJJAHILCODE>,
+    // @@protoc_insertion_point(field:DDKDLAMFOMM.JOBMNGMJJMM)
+    pub JOBMNGMJJMM: ::std::vec::Vec<super::PKIKEFAOIDE::PKIKEFAOIDE>,
     // special fields
     // @@protoc_insertion_point(special_field:DDKDLAMFOMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl DDKDLAMFOMM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JOBMNGMJJMM",
-            |m: &DDKDLAMFOMM| { &m.JOBMNGMJJMM },
-            |m: &mut DDKDLAMFOMM| { &mut m.JOBMNGMJJMM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMGEGGOLAMN::JMGEGGOLAMN>(
             "BAOJDBHJOKD",
             |m: &DDKDLAMFOMM| { &m.BAOJDBHJOKD },
@@ -67,6 +62,11 @@ impl DDKDLAMFOMM {
             "DAFDGJLDNAH",
             |m: &DDKDLAMFOMM| { &m.DAFDGJLDNAH },
             |m: &mut DDKDLAMFOMM| { &mut m.DAFDGJLDNAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JOBMNGMJJMM",
+            |m: &DDKDLAMFOMM| { &m.JOBMNGMJJMM },
+            |m: &mut DDKDLAMFOMM| { &mut m.JOBMNGMJJMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DDKDLAMFOMM>(
             "DDKDLAMFOMM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DDKDLAMFOMM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.JOBMNGMJJMM.push(is.read_message()?);
-                },
-                26 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAOJDBHJOKD)?;
                 },
-                74 => {
+                82 => {
                     self.DAFDGJLDNAH.push(is.read_message()?);
+                },
+                74 => {
+                    self.JOBMNGMJJMM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for DDKDLAMFOMM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JOBMNGMJJMM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.BAOJDBHJOKD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.DAFDGJLDNAH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.JOBMNGMJJMM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,13 +125,13 @@ impl ::protobuf::Message for DDKDLAMFOMM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JOBMNGMJJMM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if let Some(v) = self.BAOJDBHJOKD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         for v in &self.DAFDGJLDNAH {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.JOBMNGMJJMM {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -151,17 +151,17 @@ impl ::protobuf::Message for DDKDLAMFOMM {
     }
 
     fn clear(&mut self) {
-        self.JOBMNGMJJMM.clear();
         self.BAOJDBHJOKD.clear();
         self.DAFDGJLDNAH.clear();
+        self.JOBMNGMJJMM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDKDLAMFOMM {
         static instance: DDKDLAMFOMM = DDKDLAMFOMM {
-            JOBMNGMJJMM: ::std::vec::Vec::new(),
             BAOJDBHJOKD: ::protobuf::MessageField::none(),
             DAFDGJLDNAH: ::std::vec::Vec::new(),
+            JOBMNGMJJMM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for DDKDLAMFOMM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDKDLAMFOMM.proto\x1a\x11JMGEGGOLAMN.proto\x1a\x11LJJAHILCODE.prot\
-    o\x1a\x11PKIKEFAOIDE.proto\"\x9d\x01\n\x0bDDKDLAMFOMM\x12.\n\x0bJOBMNGMJ\
-    JMM\x18\x08\x20\x03(\x0b2\x0c.PKIKEFAOIDER\x0bJOBMNGMJJMM\x12.\n\x0bBAOJ\
-    DBHJOKD\x18\x03\x20\x01(\x0b2\x0c.JMGEGGOLAMNR\x0bBAOJDBHJOKD\x12.\n\x0b\
-    DAFDGJLDNAH\x18\t\x20\x03(\x0b2\x0c.LJJAHILCODER\x0bDAFDGJLDNAHb\x06prot\
-    o3\
+    o\x1a\x11PKIKEFAOIDE.proto\"\x9d\x01\n\x0bDDKDLAMFOMM\x12.\n\x0bBAOJDBHJ\
+    OKD\x18\x0f\x20\x01(\x0b2\x0c.JMGEGGOLAMNR\x0bBAOJDBHJOKD\x12.\n\x0bDAFD\
+    GJLDNAH\x18\n\x20\x03(\x0b2\x0c.LJJAHILCODER\x0bDAFDGJLDNAH\x12.\n\x0bJO\
+    BMNGMJJMM\x18\t\x20\x03(\x0b2\x0c.PKIKEFAOIDER\x0bJOBMNGMJJMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -85,7 +85,7 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
                 72 => {
                     self.mail_id_list.push(is.read_uint32()?);
                 },
-                96 => {
+                40 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.mail_id_list);
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.optional_reward_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,7 +112,7 @@ impl ::protobuf::Message for TakeMailAttachmentCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(9, &self.mail_id_list)?;
         if self.optional_reward_id != 0 {
-            os.write_uint32(12, self.optional_reward_id)?;
+            os.write_uint32(5, self.optional_reward_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeMailAttachmentCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeMailAttachmentCsReq.proto\"i\n\x17TakeMailAttachmentCsReq\x12\
     \x20\n\x0cmail_id_list\x18\t\x20\x03(\rR\nmailIdList\x12,\n\x12optional_\
-    reward_id\x18\x0c\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
+    reward_id\x18\x05\x20\x01(\rR\x10optionalRewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

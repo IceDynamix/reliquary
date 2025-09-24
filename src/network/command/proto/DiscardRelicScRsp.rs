@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiscardRelicScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DiscardRelicScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:DiscardRelicScRsp.relic_ids)
     pub relic_ids: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DiscardRelicScRsp.JNKHGFILJPB)
-    pub JNKHGFILJPB: bool,
     // @@protoc_insertion_point(field:DiscardRelicScRsp.NLPCONNJONF)
     pub NLPCONNJONF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
+    // @@protoc_insertion_point(field:DiscardRelicScRsp.JNKHGFILJPB)
+    pub JNKHGFILJPB: bool,
+    // @@protoc_insertion_point(field:DiscardRelicScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl DiscardRelicScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DiscardRelicScRsp| { &m.retcode },
-            |m: &mut DiscardRelicScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
             |m: &DiscardRelicScRsp| { &m.relic_ids },
             |m: &mut DiscardRelicScRsp| { &mut m.relic_ids },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLPCONNJONF",
+            |m: &DiscardRelicScRsp| { &m.NLPCONNJONF },
+            |m: &mut DiscardRelicScRsp| { &mut m.NLPCONNJONF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNKHGFILJPB",
@@ -71,9 +71,9 @@ impl DiscardRelicScRsp {
             |m: &mut DiscardRelicScRsp| { &mut m.JNKHGFILJPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLPCONNJONF",
-            |m: &DiscardRelicScRsp| { &m.NLPCONNJONF },
-            |m: &mut DiscardRelicScRsp| { &mut m.NLPCONNJONF },
+            "retcode",
+            |m: &DiscardRelicScRsp| { &m.retcode },
+            |m: &mut DiscardRelicScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicScRsp>(
             "DiscardRelicScRsp",
@@ -93,9 +93,6 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 98 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
@@ -103,10 +100,13 @@ impl ::protobuf::Message for DiscardRelicScRsp {
                     self.relic_ids.push(is.read_uint32()?);
                 },
                 64 => {
+                    self.NLPCONNJONF = is.read_enum_or_unknown()?;
+                },
+                80 => {
                     self.JNKHGFILJPB = is.read_bool()?;
                 },
-                72 => {
-                    self.NLPCONNJONF = is.read_enum_or_unknown()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.relic_ids);
+        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
+            my_size += ::protobuf::rt::int32_size(8, self.NLPCONNJONF.value());
+        }
         if self.JNKHGFILJPB != false {
             my_size += 1 + 1;
         }
-        if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            my_size += ::protobuf::rt::int32_size(9, self.NLPCONNJONF.value());
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
         os.write_repeated_packed_uint32(12, &self.relic_ids)?;
-        if self.JNKHGFILJPB != false {
-            os.write_bool(8, self.JNKHGFILJPB)?;
-        }
         if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+        }
+        if self.JNKHGFILJPB != false {
+            os.write_bool(10, self.JNKHGFILJPB)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.relic_ids.clear();
-        self.JNKHGFILJPB = false;
         self.NLPCONNJONF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE);
+        self.JNKHGFILJPB = false;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicScRsp {
         static instance: DiscardRelicScRsp = DiscardRelicScRsp {
-            retcode: 0,
             relic_ids: ::std::vec::Vec::new(),
-            JNKHGFILJPB: false,
             NLPCONNJONF: ::protobuf::EnumOrUnknown::from_i32(0),
+            JNKHGFILJPB: false,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicScRsp.proto\x1a\x16RelicDiscardType.proto\"\xa1\x01\n\
-    \x11DiscardRelicScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcod\
-    e\x12\x1b\n\trelic_ids\x18\x0c\x20\x03(\rR\x08relicIds\x12\x20\n\x0bJNKH\
-    GFILJPB\x18\x08\x20\x01(\x08R\x0bJNKHGFILJPB\x123\n\x0bNLPCONNJONF\x18\t\
-    \x20\x01(\x0e2\x11.RelicDiscardTypeR\x0bNLPCONNJONFb\x06proto3\
+    \x11DiscardRelicScRsp\x12\x1b\n\trelic_ids\x18\x0c\x20\x03(\rR\x08relicI\
+    ds\x123\n\x0bNLPCONNJONF\x18\x08\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0b\
+    NLPCONNJONF\x12\x20\n\x0bJNKHGFILJPB\x18\n\x20\x01(\x08R\x0bJNKHGFILJPB\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

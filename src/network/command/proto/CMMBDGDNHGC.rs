@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CMMBDGDNHGC {
     // message fields
-    // @@protoc_insertion_point(field:CMMBDGDNHGC.group_id)
-    pub group_id: u32,
-    // @@protoc_insertion_point(field:CMMBDGDNHGC.NOPDKLDEKKF)
-    pub NOPDKLDEKKF: u32,
     // @@protoc_insertion_point(field:CMMBDGDNHGC.panel_id)
     pub panel_id: u32,
+    // @@protoc_insertion_point(field:CMMBDGDNHGC.NOPDKLDEKKF)
+    pub NOPDKLDEKKF: u32,
+    // @@protoc_insertion_point(field:CMMBDGDNHGC.group_id)
+    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CMMBDGDNHGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl CMMBDGDNHGC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &CMMBDGDNHGC| { &m.group_id },
-            |m: &mut CMMBDGDNHGC| { &mut m.group_id },
+            "panel_id",
+            |m: &CMMBDGDNHGC| { &m.panel_id },
+            |m: &mut CMMBDGDNHGC| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOPDKLDEKKF",
@@ -64,9 +64,9 @@ impl CMMBDGDNHGC {
             |m: &mut CMMBDGDNHGC| { &mut m.NOPDKLDEKKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &CMMBDGDNHGC| { &m.panel_id },
-            |m: &mut CMMBDGDNHGC| { &mut m.panel_id },
+            "group_id",
+            |m: &CMMBDGDNHGC| { &m.group_id },
+            |m: &mut CMMBDGDNHGC| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CMMBDGDNHGC>(
             "CMMBDGDNHGC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CMMBDGDNHGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.group_id = is.read_uint32()?;
+                104 => {
+                    self.panel_id = is.read_uint32()?;
                 },
-                48 => {
+                8 => {
                     self.NOPDKLDEKKF = is.read_uint32()?;
                 },
-                56 => {
-                    self.panel_id = is.read_uint32()?;
+                24 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CMMBDGDNHGC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.panel_id);
         }
         if self.NOPDKLDEKKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NOPDKLDEKKF);
+            my_size += ::protobuf::rt::uint32_size(1, self.NOPDKLDEKKF);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.panel_id);
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CMMBDGDNHGC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+        if self.panel_id != 0 {
+            os.write_uint32(13, self.panel_id)?;
         }
         if self.NOPDKLDEKKF != 0 {
-            os.write_uint32(6, self.NOPDKLDEKKF)?;
+            os.write_uint32(1, self.NOPDKLDEKKF)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(7, self.panel_id)?;
+        if self.group_id != 0 {
+            os.write_uint32(3, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CMMBDGDNHGC {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
-        self.NOPDKLDEKKF = 0;
         self.panel_id = 0;
+        self.NOPDKLDEKKF = 0;
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CMMBDGDNHGC {
         static instance: CMMBDGDNHGC = CMMBDGDNHGC {
-            group_id: 0,
-            NOPDKLDEKKF: 0,
             panel_id: 0,
+            NOPDKLDEKKF: 0,
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CMMBDGDNHGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CMMBDGDNHGC.proto\"e\n\x0bCMMBDGDNHGC\x12\x19\n\x08group_id\x18\
-    \x04\x20\x01(\rR\x07groupId\x12\x20\n\x0bNOPDKLDEKKF\x18\x06\x20\x01(\rR\
-    \x0bNOPDKLDEKKF\x12\x19\n\x08panel_id\x18\x07\x20\x01(\rR\x07panelIdb\
-    \x06proto3\
+    \n\x11CMMBDGDNHGC.proto\"e\n\x0bCMMBDGDNHGC\x12\x19\n\x08panel_id\x18\r\
+    \x20\x01(\rR\x07panelId\x12\x20\n\x0bNOPDKLDEKKF\x18\x01\x20\x01(\rR\x0b\
+    NOPDKLDEKKF\x12\x19\n\x08group_id\x18\x03\x20\x01(\rR\x07groupIdb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStageTertinggi {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeStageTertinggi.round_count)
-    pub round_count: u32,
     // @@protoc_insertion_point(field:ChallengeStageTertinggi.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:ChallengeStageTertinggi.round_count)
+    pub round_count: u32,
     // @@protoc_insertion_point(field:ChallengeStageTertinggi.INHDDNNPBDB)
     pub INHDDNNPBDB: u32,
     // @@protoc_insertion_point(field:ChallengeStageTertinggi.lineup_list)
@@ -56,14 +56,14 @@ impl ChallengeStageTertinggi {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "round_count",
-            |m: &ChallengeStageTertinggi| { &m.round_count },
-            |m: &mut ChallengeStageTertinggi| { &mut m.round_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &ChallengeStageTertinggi| { &m.level },
             |m: &mut ChallengeStageTertinggi| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "round_count",
+            |m: &ChallengeStageTertinggi| { &m.round_count },
+            |m: &mut ChallengeStageTertinggi| { &mut m.round_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INHDDNNPBDB",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.round_count = is.read_uint32()?;
-                },
-                64 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
+                    self.round_count = is.read_uint32()?;
+                },
+                56 => {
                     self.INHDDNNPBDB = is.read_uint32()?;
                 },
-                106 => {
+                26 => {
                     self.lineup_list.push(is.read_message()?);
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.round_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.round_count);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        }
+        if self.round_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.round_count);
         }
         if self.INHDDNNPBDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.INHDDNNPBDB);
+            my_size += ::protobuf::rt::uint32_size(7, self.INHDDNNPBDB);
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.round_count != 0 {
-            os.write_uint32(9, self.round_count)?;
-        }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(2, self.level)?;
+        }
+        if self.round_count != 0 {
+            os.write_uint32(10, self.round_count)?;
         }
         if self.INHDDNNPBDB != 0 {
-            os.write_uint32(14, self.INHDDNNPBDB)?;
+            os.write_uint32(7, self.INHDDNNPBDB)?;
         }
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     }
 
     fn clear(&mut self) {
-        self.round_count = 0;
         self.level = 0;
+        self.round_count = 0;
         self.INHDDNNPBDB = 0;
         self.lineup_list.clear();
         self.special_fields.clear();
@@ -174,8 +174,8 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
 
     fn default_instance() -> &'static ChallengeStageTertinggi {
         static instance: ChallengeStageTertinggi = ChallengeStageTertinggi {
-            round_count: 0,
             level: 0,
+            round_count: 0,
             INHDDNNPBDB: 0,
             lineup_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStageTertinggi {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChallengeStageTertinggi.proto\x1a\x19ChallengeLineupList.proto\"\
-    \xa9\x01\n\x17ChallengeStageTertinggi\x12\x1f\n\x0bround_count\x18\t\x20\
-    \x01(\rR\nroundCount\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\
-    \x20\n\x0bINHDDNNPBDB\x18\x0e\x20\x01(\rR\x0bINHDDNNPBDB\x125\n\x0blineu\
-    p_list\x18\r\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupListb\x06prot\
-    o3\
+    \xa9\x01\n\x17ChallengeStageTertinggi\x12\x14\n\x05level\x18\x02\x20\x01\
+    (\rR\x05level\x12\x1f\n\x0bround_count\x18\n\x20\x01(\rR\nroundCount\x12\
+    \x20\n\x0bINHDDNNPBDB\x18\x07\x20\x01(\rR\x0bINHDDNNPBDB\x125\n\x0blineu\
+    p_list\x18\x03\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupListb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

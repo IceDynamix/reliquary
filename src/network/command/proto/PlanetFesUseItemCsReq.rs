@@ -79,7 +79,7 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.DIOOKFOCCMO = is.read_uint32()?;
                 },
                 40 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DIOOKFOCCMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DIOOKFOCCMO);
+            my_size += ::protobuf::rt::uint32_size(14, self.DIOOKFOCCMO);
         }
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.item_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DIOOKFOCCMO != 0 {
-            os.write_uint32(13, self.DIOOKFOCCMO)?;
+            os.write_uint32(14, self.DIOOKFOCCMO)?;
         }
         if self.item_id != 0 {
             os.write_uint32(5, self.item_id)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUseItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesUseItemCsReq.proto\"R\n\x15PlanetFesUseItemCsReq\x12\x20\
-    \n\x0bDIOOKFOCCMO\x18\r\x20\x01(\rR\x0bDIOOKFOCCMO\x12\x17\n\x07item_id\
-    \x18\x05\x20\x01(\rR\x06itemIdb\x06proto3\
+    \n\x0bDIOOKFOCCMO\x18\x0e\x20\x01(\rR\x0bDIOOKFOCCMO\x12\x17\n\x07item_i\
+    d\x18\x05\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

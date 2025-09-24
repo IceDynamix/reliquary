@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLPNBNEJKII {
     // message fields
-    // @@protoc_insertion_point(field:LLPNBNEJKII.rotate_info)
-    pub rotate_info: ::protobuf::MessageField<super::RogueMapRotateInfo::RogueMapRotateInfo>,
-    // @@protoc_insertion_point(field:LLPNBNEJKII.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:LLPNBNEJKII.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:LLPNBNEJKII.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:LLPNBNEJKII.rotate_info)
+    pub rotate_info: ::protobuf::MessageField<super::RogueMapRotateInfo::RogueMapRotateInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:LLPNBNEJKII.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl LLPNBNEJKII {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMapRotateInfo::RogueMapRotateInfo>(
-            "rotate_info",
-            |m: &LLPNBNEJKII| { &m.rotate_info },
-            |m: &mut LLPNBNEJKII| { &mut m.rotate_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &LLPNBNEJKII| { &m.scene },
+            |m: &mut LLPNBNEJKII| { &mut m.scene },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &LLPNBNEJKII| { &m.lineup },
             |m: &mut LLPNBNEJKII| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &LLPNBNEJKII| { &m.scene },
-            |m: &mut LLPNBNEJKII| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMapRotateInfo::RogueMapRotateInfo>(
+            "rotate_info",
+            |m: &LLPNBNEJKII| { &m.rotate_info },
+            |m: &mut LLPNBNEJKII| { &mut m.rotate_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLPNBNEJKII>(
             "LLPNBNEJKII",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LLPNBNEJKII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotate_info)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                10 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotate_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,7 +107,7 @@ impl ::protobuf::Message for LLPNBNEJKII {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rotate_info.as_ref() {
+        if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -115,7 +115,7 @@ impl ::protobuf::Message for LLPNBNEJKII {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.rotate_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for LLPNBNEJKII {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rotate_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.rotate_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for LLPNBNEJKII {
     }
 
     fn clear(&mut self) {
-        self.rotate_info.clear();
-        self.lineup.clear();
         self.scene.clear();
+        self.lineup.clear();
+        self.rotate_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLPNBNEJKII {
         static instance: LLPNBNEJKII = LLPNBNEJKII {
-            rotate_info: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
+            rotate_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for LLPNBNEJKII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LLPNBNEJKII.proto\x1a\x10LineupInfo.proto\x1a\x18RogueMapRotateInf\
-    o.proto\x1a\x0fSceneInfo.proto\"\x8a\x01\n\x0bLLPNBNEJKII\x124\n\x0brota\
-    te_info\x18\x06\x20\x01(\x0b2\x13.RogueMapRotateInfoR\nrotateInfo\x12#\n\
-    \x06lineup\x18\x01\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x20\n\x05\
-    scene\x18\x0c\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
+    o.proto\x1a\x0fSceneInfo.proto\"\x8a\x01\n\x0bLLPNBNEJKII\x12\x20\n\x05s\
+    cene\x18\x02\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\n\
+    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x124\n\x0brotate_info\x18\r\x20\
+    \x01(\x0b2\x13.RogueMapRotateInfoR\nrotateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

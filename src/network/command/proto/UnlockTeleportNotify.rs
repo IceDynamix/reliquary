@@ -79,10 +79,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                64 => {
+                88 => {
                     self.teleport_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.entry_id);
         }
         if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.teleport_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.teleport_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for UnlockTeleportNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(4, self.entry_id)?;
+            os.write_uint32(9, self.entry_id)?;
         }
         if self.teleport_id != 0 {
-            os.write_uint32(8, self.teleport_id)?;
+            os.write_uint32(11, self.teleport_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTeleportNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockTeleportNotify.proto\"R\n\x14UnlockTeleportNotify\x12\x19\n\
-    \x08entry_id\x18\x04\x20\x01(\rR\x07entryId\x12\x1f\n\x0bteleport_id\x18\
-    \x08\x20\x01(\rR\nteleportIdb\x06proto3\
+    \x08entry_id\x18\t\x20\x01(\rR\x07entryId\x12\x1f\n\x0bteleport_id\x18\
+    \x0b\x20\x01(\rR\nteleportIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

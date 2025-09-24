@@ -79,10 +79,10 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.count = is.read_uint32()?;
                 },
-                40 => {
+                32 => {
                     self.HPCHOLPMJFP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.count);
+            my_size += ::protobuf::rt::uint32_size(6, self.count);
         }
         if self.HPCHOLPMJFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HPCHOLPMJFP);
+            my_size += ::protobuf::rt::uint32_size(4, self.HPCHOLPMJFP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DFKMFNDIIPE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(1, self.count)?;
+            os.write_uint32(6, self.count)?;
         }
         if self.HPCHOLPMJFP != 0 {
-            os.write_uint32(5, self.HPCHOLPMJFP)?;
+            os.write_uint32(4, self.HPCHOLPMJFP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DFKMFNDIIPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DFKMFNDIIPE.proto\"E\n\x0bDFKMFNDIIPE\x12\x14\n\x05count\x18\x01\
-    \x20\x01(\rR\x05count\x12\x20\n\x0bHPCHOLPMJFP\x18\x05\x20\x01(\rR\x0bHP\
+    \n\x11DFKMFNDIIPE.proto\"E\n\x0bDFKMFNDIIPE\x12\x14\n\x05count\x18\x06\
+    \x20\x01(\rR\x05count\x12\x20\n\x0bHPCHOLPMJFP\x18\x04\x20\x01(\rR\x0bHP\
     CHOLPMJFPb\x06proto3\
 ";
 

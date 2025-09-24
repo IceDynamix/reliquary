@@ -86,13 +86,13 @@ impl ::protobuf::Message for AOJOFBBNEPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                53 => {
+                117 => {
                     self.DPFBDJMNCEO = is.read_float()?;
                 },
-                98 => {
+                34 => {
                     self.DCMHGOKCINF.push(is.read_message()?);
                 },
-                120 => {
+                40 => {
                     self.NPJEECEDPOK = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for AOJOFBBNEPA {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.NPJEECEDPOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NPJEECEDPOK);
+            my_size += ::protobuf::rt::uint32_size(5, self.NPJEECEDPOK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for AOJOFBBNEPA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DPFBDJMNCEO != 0. {
-            os.write_float(6, self.DPFBDJMNCEO)?;
+            os.write_float(14, self.DPFBDJMNCEO)?;
         }
         for v in &self.DCMHGOKCINF {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.NPJEECEDPOK != 0 {
-            os.write_uint32(15, self.NPJEECEDPOK)?;
+            os.write_uint32(5, self.NPJEECEDPOK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AOJOFBBNEPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AOJOFBBNEPA.proto\x1a\x11MNCDPEPCFGC.proto\"\x81\x01\n\x0bAOJOFBBN\
-    EPA\x12\x20\n\x0bDPFBDJMNCEO\x18\x06\x20\x01(\x02R\x0bDPFBDJMNCEO\x12.\n\
-    \x0bDCMHGOKCINF\x18\x0c\x20\x03(\x0b2\x0c.MNCDPEPCFGCR\x0bDCMHGOKCINF\
-    \x12\x20\n\x0bNPJEECEDPOK\x18\x0f\x20\x01(\rR\x0bNPJEECEDPOKb\x06proto3\
+    EPA\x12\x20\n\x0bDPFBDJMNCEO\x18\x0e\x20\x01(\x02R\x0bDPFBDJMNCEO\x12.\n\
+    \x0bDCMHGOKCINF\x18\x04\x20\x03(\x0b2\x0c.MNCDPEPCFGCR\x0bDCMHGOKCINF\
+    \x12\x20\n\x0bNPJEECEDPOK\x18\x05\x20\x01(\rR\x0bNPJEECEDPOKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -48,7 +48,7 @@ impl RogueTournCurInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueTournCurGameInfo rogue_tourn_cur_game_info = 184;
+    // .RogueTournCurGameInfo rogue_tourn_cur_game_info = 726;
 
     pub fn rogue_tourn_cur_game_info(&self) -> &super::RogueTournCurGameInfo::RogueTournCurGameInfo {
         match self.KFELKJLDKEH {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for RogueTournCurInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKOBKINKHCF)?;
                 },
-                1474 => {
+                5810 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(is.read_message()?));
                 },
                 tag => {
@@ -168,12 +168,12 @@ impl ::protobuf::Message for RogueTournCurInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IKOBKINKHCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(184, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(726, v, os)?;
                 },
             };
         }
@@ -257,8 +257,8 @@ pub mod rogue_tourn_cur_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueTournCurInfo.proto\x1a\x1bRogueTournCurAreaInfo.proto\x1a\x1b\
     RogueTournCurGameInfo.proto\"\xb1\x01\n\x11RogueTournCurInfo\x128\n\x0bI\
-    KOBKINKHCF\x18\x01\x20\x01(\x0b2\x16.RogueTournCurAreaInfoR\x0bIKOBKINKH\
-    CF\x12S\n\x19rogue_tourn_cur_game_info\x18\xb8\x01\x20\x01(\x0b2\x16.Rog\
+    KOBKINKHCF\x18\x06\x20\x01(\x0b2\x16.RogueTournCurAreaInfoR\x0bIKOBKINKH\
+    CF\x12S\n\x19rogue_tourn_cur_game_info\x18\xd6\x05\x20\x01(\x0b2\x16.Rog\
     ueTournCurGameInfoH\0R\x15rogueTournCurGameInfoB\r\n\x0bKFELKJLDKEHb\x06\
     proto3\
 ";

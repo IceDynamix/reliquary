@@ -79,7 +79,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,7 +94,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
                     is.pop_limit(old_limit);
                     self.DGNFCMDJOPA.insert(key, value);
                 },
-                26 => {
+                98 => {
                     self.JKHIFDGHJDO.push(is.read_message()?);
                 },
                 tag => {
@@ -129,13 +129,13 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         for v in &self.JKHIFDGHJDO {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FightActivityDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%FightActivityDataChangeScNotify.proto\x1a\x11ICLFKKNFDME.proto\"\xe6\
-    \x01\n\x1fFightActivityDataChangeScNotify\x12S\n\x0bDGNFCMDJOPA\x18\x04\
+    \x01\n\x1fFightActivityDataChangeScNotify\x12S\n\x0bDGNFCMDJOPA\x18\x05\
     \x20\x03(\x0b21.FightActivityDataChangeScNotify.DGNFCMDJOPAEntryR\x0bDGN\
-    FCMDJOPA\x12.\n\x0bJKHIFDGHJDO\x18\x03\x20\x03(\x0b2\x0c.ICLFKKNFDMER\
+    FCMDJOPA\x12.\n\x0bJKHIFDGHJDO\x18\x0c\x20\x03(\x0b2\x0c.ICLFKKNFDMER\
     \x0bJKHIFDGHJDO\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
     \x01b\x06proto3\

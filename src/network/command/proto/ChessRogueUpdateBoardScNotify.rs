@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHDKNMFMGBC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.DHDKNMFMGBC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateBoardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ChessRogueUpdateBoardScNotify.proto\x1a\x0eCellInfo.proto\"L\n\x1dChe\
-    ssRogueUpdateBoardScNotify\x12+\n\x0bDHDKNMFMGBC\x18\x08\x20\x01(\x0b2\t\
+    ssRogueUpdateBoardScNotify\x12+\n\x0bDHDKNMFMGBC\x18\x0e\x20\x01(\x0b2\t\
     .CellInfoR\x0bDHDKNMFMGBCb\x06proto3\
 ";
 

@@ -32,8 +32,8 @@ pub struct ILLCDMOCLDO {
     pub id: u32,
     // @@protoc_insertion_point(field:ILLCDMOCLDO.HFALJIHKECN)
     pub HFALJIHKECN: u32,
-    // @@protoc_insertion_point(field:ILLCDMOCLDO.LAEJDGHMKDB)
-    pub LAEJDGHMKDB: u32,
+    // @@protoc_insertion_point(field:ILLCDMOCLDO.total_progress)
+    pub total_progress: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ILLCDMOCLDO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl ILLCDMOCLDO {
             |m: &mut ILLCDMOCLDO| { &mut m.HFALJIHKECN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAEJDGHMKDB",
-            |m: &ILLCDMOCLDO| { &m.LAEJDGHMKDB },
-            |m: &mut ILLCDMOCLDO| { &mut m.LAEJDGHMKDB },
+            "total_progress",
+            |m: &ILLCDMOCLDO| { &m.total_progress },
+            |m: &mut ILLCDMOCLDO| { &mut m.total_progress },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ILLCDMOCLDO>(
             "ILLCDMOCLDO",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for ILLCDMOCLDO {
                     self.HFALJIHKECN = is.read_uint32()?;
                 },
                 24 => {
-                    self.LAEJDGHMKDB = is.read_uint32()?;
+                    self.total_progress = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,8 +113,8 @@ impl ::protobuf::Message for ILLCDMOCLDO {
         if self.HFALJIHKECN != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.HFALJIHKECN);
         }
-        if self.LAEJDGHMKDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LAEJDGHMKDB);
+        if self.total_progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.total_progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,8 +128,8 @@ impl ::protobuf::Message for ILLCDMOCLDO {
         if self.HFALJIHKECN != 0 {
             os.write_uint32(2, self.HFALJIHKECN)?;
         }
-        if self.LAEJDGHMKDB != 0 {
-            os.write_uint32(3, self.LAEJDGHMKDB)?;
+        if self.total_progress != 0 {
+            os.write_uint32(3, self.total_progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for ILLCDMOCLDO {
     fn clear(&mut self) {
         self.id = 0;
         self.HFALJIHKECN = 0;
-        self.LAEJDGHMKDB = 0;
+        self.total_progress = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for ILLCDMOCLDO {
         static instance: ILLCDMOCLDO = ILLCDMOCLDO {
             id: 0,
             HFALJIHKECN: 0,
-            LAEJDGHMKDB: 0,
+            total_progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ILLCDMOCLDO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ILLCDMOCLDO.proto\"a\n\x0bILLCDMOCLDO\x12\x0e\n\x02id\x18\x01\x20\
+    \n\x11ILLCDMOCLDO.proto\"f\n\x0bILLCDMOCLDO\x12\x0e\n\x02id\x18\x01\x20\
     \x01(\rR\x02id\x12\x20\n\x0bHFALJIHKECN\x18\x02\x20\x01(\rR\x0bHFALJIHKE\
-    CN\x12\x20\n\x0bLAEJDGHMKDB\x18\x03\x20\x01(\rR\x0bLAEJDGHMKDBb\x06proto\
+    CN\x12%\n\x0etotal_progress\x18\x03\x20\x01(\rR\rtotalProgressb\x06proto\
     3\
 ";
 

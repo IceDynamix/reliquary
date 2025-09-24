@@ -82,7 +82,7 @@ impl ::protobuf::Message for DIFPDPLCIGD {
                 48 => {
                     self.JFPNMOONLNJ = is.read_uint32()?;
                 },
-                112 => {
+                32 => {
                     self.GONEAKBDGEK = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DIFPDPLCIGD {
             my_size += ::protobuf::rt::uint32_size(6, self.JFPNMOONLNJ);
         }
         if self.GONEAKBDGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GONEAKBDGEK);
+            my_size += ::protobuf::rt::uint32_size(4, self.GONEAKBDGEK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for DIFPDPLCIGD {
             os.write_uint32(6, self.JFPNMOONLNJ)?;
         }
         if self.GONEAKBDGEK != 0 {
-            os.write_uint32(14, self.GONEAKBDGEK)?;
+            os.write_uint32(4, self.GONEAKBDGEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DIFPDPLCIGD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DIFPDPLCIGD.proto\"Q\n\x0bDIFPDPLCIGD\x12\x20\n\x0bJFPNMOONLNJ\x18\
-    \x06\x20\x01(\rR\x0bJFPNMOONLNJ\x12\x20\n\x0bGONEAKBDGEK\x18\x0e\x20\x01\
+    \x06\x20\x01(\rR\x0bJFPNMOONLNJ\x12\x20\n\x0bGONEAKBDGEK\x18\x04\x20\x01\
     (\rR\x0bGONEAKBDGEKb\x06proto3\
 ";
 

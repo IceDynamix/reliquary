@@ -79,10 +79,10 @@ impl ::protobuf::Message for JCDLJBPHOMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHELBOBFPAM)?;
                 },
-                24 => {
+                16 => {
                     self.BLCILJENELO = is.read_bool()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JCDLJBPHOMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GHELBOBFPAM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.BLCILJENELO != false {
-            os.write_bool(3, self.BLCILJENELO)?;
+            os.write_bool(2, self.BLCILJENELO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for JCDLJBPHOMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCDLJBPHOMD.proto\x1a\x17RogueMagicScepter.proto\"e\n\x0bJCDLJBPHO\
-    MD\x124\n\x0bGHELBOBFPAM\x18\n\x20\x01(\x0b2\x12.RogueMagicScepterR\x0bG\
-    HELBOBFPAM\x12\x20\n\x0bBLCILJENELO\x18\x03\x20\x01(\x08R\x0bBLCILJENELO\
-    b\x06proto3\
+    MD\x124\n\x0bGHELBOBFPAM\x18\x08\x20\x01(\x0b2\x12.RogueMagicScepterR\
+    \x0bGHELBOBFPAM\x12\x20\n\x0bBLCILJENELO\x18\x02\x20\x01(\x08R\x0bBLCILJ\
+    ENELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

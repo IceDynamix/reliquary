@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJAKDCDDAMO {
     // message fields
+    // @@protoc_insertion_point(field:AJAKDCDDAMO.INFBHPGDLND)
+    pub INFBHPGDLND: u32,
     // @@protoc_insertion_point(field:AJAKDCDDAMO.EONLMDCBNME)
     pub EONLMDCBNME: u32,
     // @@protoc_insertion_point(field:AJAKDCDDAMO.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueBoothStatus::RogueBoothStatus>,
-    // @@protoc_insertion_point(field:AJAKDCDDAMO.INFBHPGDLND)
-    pub INFBHPGDLND: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJAKDCDDAMO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl AJAKDCDDAMO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INFBHPGDLND",
+            |m: &AJAKDCDDAMO| { &m.INFBHPGDLND },
+            |m: &mut AJAKDCDDAMO| { &mut m.INFBHPGDLND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EONLMDCBNME",
             |m: &AJAKDCDDAMO| { &m.EONLMDCBNME },
             |m: &mut AJAKDCDDAMO| { &mut m.EONLMDCBNME },
@@ -62,11 +67,6 @@ impl AJAKDCDDAMO {
             "status",
             |m: &AJAKDCDDAMO| { &m.status },
             |m: &mut AJAKDCDDAMO| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INFBHPGDLND",
-            |m: &AJAKDCDDAMO| { &m.INFBHPGDLND },
-            |m: &mut AJAKDCDDAMO| { &mut m.INFBHPGDLND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJAKDCDDAMO>(
             "AJAKDCDDAMO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
+                    self.INFBHPGDLND = is.read_uint32()?;
+                },
+                104 => {
                     self.EONLMDCBNME = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
                     self.status = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.INFBHPGDLND = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.INFBHPGDLND != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.INFBHPGDLND);
+        }
         if self.EONLMDCBNME != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EONLMDCBNME);
+            my_size += ::protobuf::rt::uint32_size(13, self.EONLMDCBNME);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
-        }
-        if self.INFBHPGDLND != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.INFBHPGDLND);
+            my_size += ::protobuf::rt::int32_size(2, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.INFBHPGDLND != 0 {
+            os.write_uint32(6, self.INFBHPGDLND)?;
+        }
         if self.EONLMDCBNME != 0 {
-            os.write_uint32(8, self.EONLMDCBNME)?;
+            os.write_uint32(13, self.EONLMDCBNME)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.INFBHPGDLND != 0 {
-            os.write_uint32(7, self.INFBHPGDLND)?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for AJAKDCDDAMO {
     }
 
     fn clear(&mut self) {
+        self.INFBHPGDLND = 0;
         self.EONLMDCBNME = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueBoothStatus::RogueBoothStatus::ROGUE_BOOTH_NONE);
-        self.INFBHPGDLND = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJAKDCDDAMO {
         static instance: AJAKDCDDAMO = AJAKDCDDAMO {
+            INFBHPGDLND: 0,
             EONLMDCBNME: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            INFBHPGDLND: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AJAKDCDDAMO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AJAKDCDDAMO.proto\x1a\x16RogueBoothStatus.proto\"|\n\x0bAJAKDCDDAM\
-    O\x12\x20\n\x0bEONLMDCBNME\x18\x08\x20\x01(\rR\x0bEONLMDCBNME\x12)\n\x06\
-    status\x18\x0f\x20\x01(\x0e2\x11.RogueBoothStatusR\x06status\x12\x20\n\
-    \x0bINFBHPGDLND\x18\x07\x20\x01(\rR\x0bINFBHPGDLNDb\x06proto3\
+    O\x12\x20\n\x0bINFBHPGDLND\x18\x06\x20\x01(\rR\x0bINFBHPGDLND\x12\x20\n\
+    \x0bEONLMDCBNME\x18\r\x20\x01(\rR\x0bEONLMDCBNME\x12)\n\x06status\x18\
+    \x02\x20\x01(\x0e2\x11.RogueBoothStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

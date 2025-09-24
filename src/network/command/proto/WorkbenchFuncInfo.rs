@@ -45,7 +45,7 @@ impl WorkbenchFuncInfo {
         ::std::default::Default::default()
     }
 
-    // .WorkbenchReforgeBuffFuncInfo reforge_buff_func = 3;
+    // .WorkbenchReforgeBuffFuncInfo reforge_buff_func = 14;
 
     pub fn reforge_buff_func(&self) -> &super::WorkbenchReforgeBuffFuncInfo::WorkbenchReforgeBuffFuncInfo {
         match self.PNECCABBLHB {
@@ -94,7 +94,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .WorkbenchReforgeFormulaFuncInfo reforge_formula_func = 1;
+    // .WorkbenchReforgeFormulaFuncInfo reforge_formula_func = 13;
 
     pub fn reforge_formula_func(&self) -> &super::WorkbenchReforgeFormulaFuncInfo::WorkbenchReforgeFormulaFuncInfo {
         match self.PNECCABBLHB {
@@ -143,7 +143,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .WorkbenchEnhanceBuffFuncInfo enhance_buff_func = 15;
+    // .WorkbenchEnhanceBuffFuncInfo enhance_buff_func = 2;
 
     pub fn enhance_buff_func(&self) -> &super::WorkbenchEnhanceBuffFuncInfo::WorkbenchEnhanceBuffFuncInfo {
         match self.PNECCABBLHB {
@@ -192,7 +192,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .WorkbenchComposeMiracleFunc compose_miracle_func = 8;
+    // .WorkbenchComposeMiracleFunc compose_miracle_func = 1;
 
     pub fn compose_miracle_func(&self) -> &super::WorkbenchComposeMiracleFunc::WorkbenchComposeMiracleFunc {
         match self.PNECCABBLHB {
@@ -241,7 +241,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .WorkbenchReforgeHexAvatarFunc reforge_hex_avatar_func = 11;
+    // .WorkbenchReforgeHexAvatarFunc reforge_hex_avatar_func = 3;
 
     pub fn reforge_hex_avatar_func(&self) -> &super::WorkbenchReforgeHexAvatarFunc::WorkbenchReforgeHexAvatarFunc {
         match self.PNECCABBLHB {
@@ -290,7 +290,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .KHCBGNLNPEL magic_item = 13;
+    // .KHCBGNLNPEL magic_item = 9;
 
     pub fn magic_item(&self) -> &super::KHCBGNLNPEL::KHCBGNLNPEL {
         match self.PNECCABBLHB {
@@ -339,7 +339,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .KMHIBNGAFEO game_magic_unit = 4;
+    // .KMHIBNGAFEO game_magic_unit = 6;
 
     pub fn game_magic_unit(&self) -> &super::KMHIBNGAFEO::KMHIBNGAFEO {
         match self.PNECCABBLHB {
@@ -388,7 +388,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .DMKPFGEBILH CEAJNLIOFHF = 5;
+    // .DMKPFGEBILH CEAJNLIOFHF = 12;
 
     pub fn CEAJNLIOFHF(&self) -> &super::DMKPFGEBILH::DMKPFGEBILH {
         match self.PNECCABBLHB {
@@ -437,7 +437,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .LFGGPNGKBCH PGPAAPOPDOC = 7;
+    // .LFGGPNGKBCH PGPAAPOPDOC = 4;
 
     pub fn PGPAAPOPDOC(&self) -> &super::LFGGPNGKBCH::LFGGPNGKBCH {
         match self.PNECCABBLHB {
@@ -486,7 +486,7 @@ impl WorkbenchFuncInfo {
         }
     }
 
-    // .DHMFCIDJBFD PMKEHGBPCNG = 9;
+    // .DHMFCIDJBFD PMKEHGBPCNG = 7;
 
     pub fn PMKEHGBPCNG(&self) -> &super::DHMFCIDJBFD::DHMFCIDJBFD {
         match self.PNECCABBLHB {
@@ -627,34 +627,34 @@ impl ::protobuf::Message for WorkbenchFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                114 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::ReforgeBuffFunc(is.read_message()?));
                 },
-                10 => {
+                106 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::ReforgeFormulaFunc(is.read_message()?));
                 },
-                122 => {
+                18 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::EnhanceBuffFunc(is.read_message()?));
                 },
-                66 => {
+                10 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::ComposeMiracleFunc(is.read_message()?));
                 },
-                90 => {
+                26 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::ReforgeHexAvatarFunc(is.read_message()?));
                 },
-                106 => {
+                74 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::MagicItem(is.read_message()?));
                 },
-                34 => {
+                50 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::GameMagicUnit(is.read_message()?));
                 },
-                42 => {
+                98 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::CEAJNLIOFHF(is.read_message()?));
                 },
-                58 => {
+                34 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::PGPAAPOPDOC(is.read_message()?));
                 },
-                74 => {
+                58 => {
                     self.PNECCABBLHB = ::std::option::Option::Some(workbench_func_info::PNECCABBLHB::PMKEHGBPCNG(is.read_message()?));
                 },
                 tag => {
@@ -722,34 +722,34 @@ impl ::protobuf::Message for WorkbenchFuncInfo {
         if let ::std::option::Option::Some(ref v) = self.PNECCABBLHB {
             match v {
                 &workbench_func_info::PNECCABBLHB::ReforgeBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &workbench_func_info::PNECCABBLHB::ReforgeFormulaFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &workbench_func_info::PNECCABBLHB::EnhanceBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &workbench_func_info::PNECCABBLHB::ComposeMiracleFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &workbench_func_info::PNECCABBLHB::ReforgeHexAvatarFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &workbench_func_info::PNECCABBLHB::MagicItem(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
+                &workbench_func_info::PNECCABBLHB::EnhanceBuffFunc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
+                &workbench_func_info::PNECCABBLHB::ComposeMiracleFunc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &workbench_func_info::PNECCABBLHB::ReforgeHexAvatarFunc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &workbench_func_info::PNECCABBLHB::MagicItem(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
                 &workbench_func_info::PNECCABBLHB::GameMagicUnit(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &workbench_func_info::PNECCABBLHB::CEAJNLIOFHF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &workbench_func_info::PNECCABBLHB::PGPAAPOPDOC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &workbench_func_info::PNECCABBLHB::PMKEHGBPCNG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -861,20 +861,21 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     KBCH.proto\x1a!WorkbenchComposeMiracleFunc.proto\x1a\"WorkbenchEnhanceBu\
     ffFuncInfo.proto\x1a\"WorkbenchReforgeBuffFuncInfo.proto\x1a%WorkbenchRe\
     forgeFormulaFuncInfo.proto\x1a#WorkbenchReforgeHexAvatarFunc.proto\"\xba\
-    \x05\n\x11WorkbenchFuncInfo\x12K\n\x11reforge_buff_func\x18\x03\x20\x01(\
+    \x05\n\x11WorkbenchFuncInfo\x12K\n\x11reforge_buff_func\x18\x0e\x20\x01(\
     \x0b2\x1d.WorkbenchReforgeBuffFuncInfoH\0R\x0freforgeBuffFunc\x12T\n\x14\
-    reforge_formula_func\x18\x01\x20\x01(\x0b2\x20.WorkbenchReforgeFormulaFu\
-    ncInfoH\0R\x12reforgeFormulaFunc\x12K\n\x11enhance_buff_func\x18\x0f\x20\
+    reforge_formula_func\x18\r\x20\x01(\x0b2\x20.WorkbenchReforgeFormulaFunc\
+    InfoH\0R\x12reforgeFormulaFunc\x12K\n\x11enhance_buff_func\x18\x02\x20\
     \x01(\x0b2\x1d.WorkbenchEnhanceBuffFuncInfoH\0R\x0fenhanceBuffFunc\x12P\
-    \n\x14compose_miracle_func\x18\x08\x20\x01(\x0b2\x1c.WorkbenchComposeMir\
+    \n\x14compose_miracle_func\x18\x01\x20\x01(\x0b2\x1c.WorkbenchComposeMir\
     acleFuncH\0R\x12composeMiracleFunc\x12W\n\x17reforge_hex_avatar_func\x18\
-    \x0b\x20\x01(\x0b2\x1e.WorkbenchReforgeHexAvatarFuncH\0R\x14reforgeHexAv\
-    atarFunc\x12-\n\nmagic_item\x18\r\x20\x01(\x0b2\x0c.KHCBGNLNPELH\0R\tmag\
-    icItem\x126\n\x0fgame_magic_unit\x18\x04\x20\x01(\x0b2\x0c.KMHIBNGAFEOH\
-    \0R\rgameMagicUnit\x120\n\x0bCEAJNLIOFHF\x18\x05\x20\x01(\x0b2\x0c.DMKPF\
-    GEBILHH\0R\x0bCEAJNLIOFHF\x120\n\x0bPGPAAPOPDOC\x18\x07\x20\x01(\x0b2\
-    \x0c.LFGGPNGKBCHH\0R\x0bPGPAAPOPDOC\x120\n\x0bPMKEHGBPCNG\x18\t\x20\x01(\
-    \x0b2\x0c.DHMFCIDJBFDH\0R\x0bPMKEHGBPCNGB\r\n\x0bPNECCABBLHBb\x06proto3\
+    \x03\x20\x01(\x0b2\x1e.WorkbenchReforgeHexAvatarFuncH\0R\x14reforgeHexAv\
+    atarFunc\x12-\n\nmagic_item\x18\t\x20\x01(\x0b2\x0c.KHCBGNLNPELH\0R\tmag\
+    icItem\x126\n\x0fgame_magic_unit\x18\x06\x20\x01(\x0b2\x0c.KMHIBNGAFEOH\
+    \0R\rgameMagicUnit\x120\n\x0bCEAJNLIOFHF\x18\x0c\x20\x01(\x0b2\x0c.DMKPF\
+    GEBILHH\0R\x0bCEAJNLIOFHF\x120\n\x0bPGPAAPOPDOC\x18\x04\x20\x01(\x0b2\
+    \x0c.LFGGPNGKBCHH\0R\x0bPGPAAPOPDOC\x120\n\x0bPMKEHGBPCNG\x18\x07\x20\
+    \x01(\x0b2\x0c.DHMFCIDJBFDH\0R\x0bPMKEHGBPCNGB\r\n\x0bPNECCABBLHBb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

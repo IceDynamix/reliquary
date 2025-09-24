@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                112 => {
                     self.game_area_id = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.game_week = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.game_area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.game_area_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.game_area_id);
         }
         if self.game_week != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.game_week);
+            my_size += ::protobuf::rt::uint32_size(13, self.game_week);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.game_area_id != 0 {
-            os.write_uint32(1, self.game_area_id)?;
+            os.write_uint32(14, self.game_area_id)?;
         }
         if self.game_week != 0 {
-            os.write_uint32(11, self.game_week)?;
+            os.write_uint32(13, self.game_week)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGameAreaInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueTournGameAreaInfo.proto\"W\n\x16RogueTournGameAreaInfo\x12\
-    \x20\n\x0cgame_area_id\x18\x01\x20\x01(\rR\ngameAreaId\x12\x1b\n\tgame_w\
-    eek\x18\x0b\x20\x01(\rR\x08gameWeekb\x06proto3\
+    \x20\n\x0cgame_area_id\x18\x0e\x20\x01(\rR\ngameAreaId\x12\x1b\n\tgame_w\
+    eek\x18\r\x20\x01(\rR\x08gameWeekb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

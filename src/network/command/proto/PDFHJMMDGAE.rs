@@ -86,13 +86,13 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                80 => {
                     self.item_value = is.read_uint32()?;
                 },
-                122 => {
+                114 => {
                     self.COKDNPEEMAG.push(is.read_message()?);
                 },
-                88 => {
+                120 => {
                     self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(10, self.item_value);
         }
         for value in &self.COKDNPEEMAG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.MDCJFOAFDJK.value());
+            my_size += ::protobuf::rt::int32_size(15, self.MDCJFOAFDJK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PDFHJMMDGAE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_value != 0 {
-            os.write_uint32(9, self.item_value)?;
+            os.write_uint32(10, self.item_value)?;
         }
         for v in &self.COKDNPEEMAG {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PDFHJMMDGAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PDFHJMMDGAE.proto\x1a\x11IMGJIEBFGPF.proto\x1a\x11KLNIPNJCNMJ.prot\
-    o\"\x8c\x01\n\x0bPDFHJMMDGAE\x12\x1d\n\nitem_value\x18\t\x20\x01(\rR\tit\
-    emValue\x12.\n\x0bCOKDNPEEMAG\x18\x0f\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0b\
-    COKDNPEEMAG\x12.\n\x0bMDCJFOAFDJK\x18\x0b\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\
+    o\"\x8c\x01\n\x0bPDFHJMMDGAE\x12\x1d\n\nitem_value\x18\n\x20\x01(\rR\tit\
+    emValue\x12.\n\x0bCOKDNPEEMAG\x18\x0e\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0b\
+    COKDNPEEMAG\x12.\n\x0bMDCJFOAFDJK\x18\x0f\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\
     \x0bMDCJFOAFDJKb\x06proto3\
 ";
 

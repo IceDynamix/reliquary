@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonActionResult {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonActionResult.rogue_action)
-    pub rogue_action: ::protobuf::MessageField<super::RogueCommonActionResultData::RogueCommonActionResultData>,
     // @@protoc_insertion_point(field:RogueCommonActionResult.source)
     pub source: ::protobuf::EnumOrUnknown<super::RogueCommonActionResultSourceType::RogueCommonActionResultSourceType>,
+    // @@protoc_insertion_point(field:RogueCommonActionResult.rogue_action)
+    pub rogue_action: ::protobuf::MessageField<super::RogueCommonActionResultData::RogueCommonActionResultData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonActionResult.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueCommonActionResult {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonActionResultData::RogueCommonActionResultData>(
-            "rogue_action",
-            |m: &RogueCommonActionResult| { &m.rogue_action },
-            |m: &mut RogueCommonActionResult| { &mut m.rogue_action },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source",
             |m: &RogueCommonActionResult| { &m.source },
             |m: &mut RogueCommonActionResult| { &mut m.source },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonActionResultData::RogueCommonActionResultData>(
+            "rogue_action",
+            |m: &RogueCommonActionResult| { &m.rogue_action },
+            |m: &mut RogueCommonActionResult| { &mut m.rogue_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonActionResult>(
             "RogueCommonActionResult",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueCommonActionResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
-                },
-                64 => {
+                120 => {
                     self.source = is.read_enum_or_unknown()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueCommonActionResult {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultSourceType::RogueCommonActionResultSourceType::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.source.value());
+        }
         if let Some(v) = self.rogue_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultSourceType::RogueCommonActionResultSourceType::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueCommonActionResult {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.source != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultSourceType::RogueCommonActionResultSourceType::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        }
+        if let Some(v) = self.rogue_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueCommonActionResult {
     }
 
     fn clear(&mut self) {
-        self.rogue_action.clear();
         self.source = ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultSourceType::RogueCommonActionResultSourceType::ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_NONE);
+        self.rogue_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonActionResult {
         static instance: RogueCommonActionResult = RogueCommonActionResult {
-            rogue_action: ::protobuf::MessageField::none(),
             source: ::protobuf::EnumOrUnknown::from_i32(0),
+            rogue_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonActionResult {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueCommonActionResult.proto\x1a!RogueCommonActionResultData.prot\
     o\x1a'RogueCommonActionResultSourceType.proto\"\x96\x01\n\x17RogueCommon\
-    ActionResult\x12?\n\x0crogue_action\x18\x04\x20\x01(\x0b2\x1c.RogueCommo\
-    nActionResultDataR\x0brogueAction\x12:\n\x06source\x18\x08\x20\x01(\x0e2\
-    \".RogueCommonActionResultSourceTypeR\x06sourceb\x06proto3\
+    ActionResult\x12:\n\x06source\x18\x0f\x20\x01(\x0e2\".RogueCommonActionR\
+    esultSourceTypeR\x06source\x12?\n\x0crogue_action\x18\r\x20\x01(\x0b2\
+    \x1c.RogueCommonActionResultDataR\x0brogueActionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

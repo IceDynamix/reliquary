@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicLayerInfo {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicLayerInfo.status)
+    pub status: ::protobuf::EnumOrUnknown<super::RogueMagicLayerStatus::RogueMagicLayerStatus>,
+    // @@protoc_insertion_point(field:RogueMagicLayerInfo.layer_id)
+    pub layer_id: u32,
     // @@protoc_insertion_point(field:RogueMagicLayerInfo.tourn_room_list)
     pub tourn_room_list: ::std::vec::Vec<super::RogueMagicRoomInfo::RogueMagicRoomInfo>,
     // @@protoc_insertion_point(field:RogueMagicLayerInfo.level_index)
     pub level_index: u32,
-    // @@protoc_insertion_point(field:RogueMagicLayerInfo.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueMagicLayerStatus::RogueMagicLayerStatus>,
     // @@protoc_insertion_point(field:RogueMagicLayerInfo.cur_room_index)
     pub cur_room_index: u32,
-    // @@protoc_insertion_point(field:RogueMagicLayerInfo.layer_id)
-    pub layer_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicLayerInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,6 +57,16 @@ impl RogueMagicLayerInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &RogueMagicLayerInfo| { &m.status },
+            |m: &mut RogueMagicLayerInfo| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "layer_id",
+            |m: &RogueMagicLayerInfo| { &m.layer_id },
+            |m: &mut RogueMagicLayerInfo| { &mut m.layer_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "tourn_room_list",
             |m: &RogueMagicLayerInfo| { &m.tourn_room_list },
@@ -68,19 +78,9 @@ impl RogueMagicLayerInfo {
             |m: &mut RogueMagicLayerInfo| { &mut m.level_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &RogueMagicLayerInfo| { &m.status },
-            |m: &mut RogueMagicLayerInfo| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_room_index",
             |m: &RogueMagicLayerInfo| { &m.cur_room_index },
             |m: &mut RogueMagicLayerInfo| { &mut m.cur_room_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "layer_id",
-            |m: &RogueMagicLayerInfo| { &m.layer_id },
-            |m: &mut RogueMagicLayerInfo| { &mut m.layer_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicLayerInfo>(
             "RogueMagicLayerInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueMagicLayerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.tourn_room_list.push(is.read_message()?);
-                },
-                104 => {
-                    self.level_index = is.read_uint32()?;
-                },
                 48 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
-                    self.cur_room_index = is.read_uint32()?;
-                },
-                32 => {
+                72 => {
                     self.layer_id = is.read_uint32()?;
+                },
+                98 => {
+                    self.tourn_room_list.push(is.read_message()?);
+                },
+                16 => {
+                    self.level_index = is.read_uint32()?;
+                },
+                88 => {
+                    self.cur_room_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for RogueMagicLayerInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLayerStatus::RogueMagicLayerStatus::ROGUE_MAGIC_LAYER_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.status.value());
+        }
+        if self.layer_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.layer_id);
+        }
         for value in &self.tourn_room_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.level_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level_index);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLayerStatus::RogueMagicLayerStatus::ROGUE_MAGIC_LAYER_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.status.value());
+            my_size += ::protobuf::rt::uint32_size(2, self.level_index);
         }
         if self.cur_room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_room_index);
-        }
-        if self.layer_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.layer_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_room_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for RogueMagicLayerInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.tourn_room_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if self.level_index != 0 {
-            os.write_uint32(13, self.level_index)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLayerStatus::RogueMagicLayerStatus::ROGUE_MAGIC_LAYER_STATUS_NONE) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
-        if self.cur_room_index != 0 {
-            os.write_uint32(10, self.cur_room_index)?;
-        }
         if self.layer_id != 0 {
-            os.write_uint32(4, self.layer_id)?;
+            os.write_uint32(9, self.layer_id)?;
+        }
+        for v in &self.tourn_room_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.level_index != 0 {
+            os.write_uint32(2, self.level_index)?;
+        }
+        if self.cur_room_index != 0 {
+            os.write_uint32(11, self.cur_room_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for RogueMagicLayerInfo {
     }
 
     fn clear(&mut self) {
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueMagicLayerStatus::RogueMagicLayerStatus::ROGUE_MAGIC_LAYER_STATUS_NONE);
+        self.layer_id = 0;
         self.tourn_room_list.clear();
         self.level_index = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueMagicLayerStatus::RogueMagicLayerStatus::ROGUE_MAGIC_LAYER_STATUS_NONE);
         self.cur_room_index = 0;
-        self.layer_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicLayerInfo {
         static instance: RogueMagicLayerInfo = RogueMagicLayerInfo {
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            layer_id: 0,
             tourn_room_list: ::std::vec::Vec::new(),
             level_index: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             cur_room_index: 0,
-            layer_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicLayerInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19RogueMagicLayerInfo.proto\x1a\x1bRogueMagicLayerStatus.proto\x1a\
-    \x18RogueMagicRoomInfo.proto\"\xe4\x01\n\x13RogueMagicLayerInfo\x12;\n\
-    \x0ftourn_room_list\x18\x02\x20\x03(\x0b2\x13.RogueMagicRoomInfoR\rtourn\
-    RoomList\x12\x1f\n\x0blevel_index\x18\r\x20\x01(\rR\nlevelIndex\x12.\n\
+    \x18RogueMagicRoomInfo.proto\"\xe4\x01\n\x13RogueMagicLayerInfo\x12.\n\
     \x06status\x18\x06\x20\x01(\x0e2\x16.RogueMagicLayerStatusR\x06status\
-    \x12$\n\x0ecur_room_index\x18\n\x20\x01(\rR\x0ccurRoomIndex\x12\x19\n\
-    \x08layer_id\x18\x04\x20\x01(\rR\x07layerIdb\x06proto3\
+    \x12\x19\n\x08layer_id\x18\t\x20\x01(\rR\x07layerId\x12;\n\x0ftourn_room\
+    _list\x18\x0c\x20\x03(\x0b2\x13.RogueMagicRoomInfoR\rtournRoomList\x12\
+    \x1f\n\x0blevel_index\x18\x02\x20\x01(\rR\nlevelIndex\x12$\n\x0ecur_room\
+    _index\x18\x0b\x20\x01(\rR\x0ccurRoomIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

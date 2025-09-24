@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJEHAMDABNA {
     // message fields
-    // @@protoc_insertion_point(field:AJEHAMDABNA.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:AJEHAMDABNA.OMDDFKMAAPE)
     pub OMDDFKMAAPE: u32,
+    // @@protoc_insertion_point(field:AJEHAMDABNA.is_win)
+    pub is_win: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AJEHAMDABNA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AJEHAMDABNA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &AJEHAMDABNA| { &m.is_win },
-            |m: &mut AJEHAMDABNA| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OMDDFKMAAPE",
             |m: &AJEHAMDABNA| { &m.OMDDFKMAAPE },
             |m: &mut AJEHAMDABNA| { &mut m.OMDDFKMAAPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &AJEHAMDABNA| { &m.is_win },
+            |m: &mut AJEHAMDABNA| { &mut m.is_win },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJEHAMDABNA>(
             "AJEHAMDABNA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AJEHAMDABNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.is_win = is.read_bool()?;
-                },
-                72 => {
+                8 => {
                     self.OMDDFKMAAPE = is.read_uint32()?;
+                },
+                88 => {
+                    self.is_win = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AJEHAMDABNA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OMDDFKMAAPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.OMDDFKMAAPE);
+        }
         if self.is_win != false {
             my_size += 1 + 1;
-        }
-        if self.OMDDFKMAAPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OMDDFKMAAPE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AJEHAMDABNA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_win != false {
-            os.write_bool(10, self.is_win)?;
-        }
         if self.OMDDFKMAAPE != 0 {
-            os.write_uint32(9, self.OMDDFKMAAPE)?;
+            os.write_uint32(1, self.OMDDFKMAAPE)?;
+        }
+        if self.is_win != false {
+            os.write_bool(11, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AJEHAMDABNA {
     }
 
     fn clear(&mut self) {
-        self.is_win = false;
         self.OMDDFKMAAPE = 0;
+        self.is_win = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJEHAMDABNA {
         static instance: AJEHAMDABNA = AJEHAMDABNA {
-            is_win: false,
             OMDDFKMAAPE: 0,
+            is_win: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AJEHAMDABNA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJEHAMDABNA.proto\"F\n\x0bAJEHAMDABNA\x12\x15\n\x06is_win\x18\n\
-    \x20\x01(\x08R\x05isWin\x12\x20\n\x0bOMDDFKMAAPE\x18\t\x20\x01(\rR\x0bOM\
-    DDFKMAAPEb\x06proto3\
+    \n\x11AJEHAMDABNA.proto\"F\n\x0bAJEHAMDABNA\x12\x20\n\x0bOMDDFKMAAPE\x18\
+    \x01\x20\x01(\rR\x0bOMDDFKMAAPE\x12\x15\n\x06is_win\x18\x0b\x20\x01(\x08\
+    R\x05isWinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

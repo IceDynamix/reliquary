@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeBpRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeBpRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeBpRewardScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeBpRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeBpRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakeBpRewardScRsp| { &m.reward },
-            |m: &mut TakeBpRewardScRsp| { &mut m.reward },
+            "player_return_reward_list",
+            |m: &TakeBpRewardScRsp| { &m.player_return_reward_list },
+            |m: &mut TakeBpRewardScRsp| { &mut m.player_return_reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeBpRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
-                88 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TakeBpRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.player_return_reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeBpRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TakeBpRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
+        self.player_return_reward_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeBpRewardScRsp {
         static instance: TakeBpRewardScRsp = TakeBpRewardScRsp {
-            reward: ::protobuf::MessageField::none(),
+            player_return_reward_list: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeBpRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TakeBpRewardScRsp.proto\x1a\x0eItemList.proto\"P\n\x11TakeBpReward\
-    ScRsp\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
-    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x17TakeBpRewardScRsp.proto\x1a\x0eItemList.proto\"s\n\x11TakeBpReward\
+    ScRsp\x12D\n\x19player_return_reward_list\x18\x0f\x20\x01(\x0b2\t.ItemLi\
+    stR\x16playerReturnRewardList\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

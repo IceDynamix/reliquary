@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueVirtualItem {
     // message fields
-    // @@protoc_insertion_point(field:RogueVirtualItem.AMNKMBMHKDF)
-    pub AMNKMBMHKDF: u32,
-    // @@protoc_insertion_point(field:RogueVirtualItem.BPJOAPFAFKK)
-    pub BPJOAPFAFKK: u32,
     // @@protoc_insertion_point(field:RogueVirtualItem.DAFALAOAOOI)
     pub DAFALAOAOOI: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItem.BPJOAPFAFKK)
+    pub BPJOAPFAFKK: u32,
     // @@protoc_insertion_point(field:RogueVirtualItem.rogue_money)
     pub rogue_money: u32,
+    // @@protoc_insertion_point(field:RogueVirtualItem.AMNKMBMHKDF)
+    pub AMNKMBMHKDF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueVirtualItem.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl RogueVirtualItem {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMNKMBMHKDF",
-            |m: &RogueVirtualItem| { &m.AMNKMBMHKDF },
-            |m: &mut RogueVirtualItem| { &mut m.AMNKMBMHKDF },
+            "DAFALAOAOOI",
+            |m: &RogueVirtualItem| { &m.DAFALAOAOOI },
+            |m: &mut RogueVirtualItem| { &mut m.DAFALAOAOOI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPJOAPFAFKK",
@@ -66,14 +66,14 @@ impl RogueVirtualItem {
             |m: &mut RogueVirtualItem| { &mut m.BPJOAPFAFKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAFALAOAOOI",
-            |m: &RogueVirtualItem| { &m.DAFALAOAOOI },
-            |m: &mut RogueVirtualItem| { &mut m.DAFALAOAOOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_money",
             |m: &RogueVirtualItem| { &m.rogue_money },
             |m: &mut RogueVirtualItem| { &mut m.rogue_money },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AMNKMBMHKDF",
+            |m: &RogueVirtualItem| { &m.AMNKMBMHKDF },
+            |m: &mut RogueVirtualItem| { &mut m.AMNKMBMHKDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueVirtualItem>(
             "RogueVirtualItem",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueVirtualItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.AMNKMBMHKDF = is.read_uint32()?;
-                },
-                104 => {
-                    self.BPJOAPFAFKK = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.DAFALAOAOOI = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
+                    self.BPJOAPFAFKK = is.read_uint32()?;
+                },
+                24 => {
                     self.rogue_money = is.read_uint32()?;
+                },
+                16 => {
+                    self.AMNKMBMHKDF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RogueVirtualItem {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMNKMBMHKDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AMNKMBMHKDF);
+        if self.DAFALAOAOOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DAFALAOAOOI);
         }
         if self.BPJOAPFAFKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BPJOAPFAFKK);
-        }
-        if self.DAFALAOAOOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DAFALAOAOOI);
+            my_size += ::protobuf::rt::uint32_size(7, self.BPJOAPFAFKK);
         }
         if self.rogue_money != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.rogue_money);
+            my_size += ::protobuf::rt::uint32_size(3, self.rogue_money);
+        }
+        if self.AMNKMBMHKDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AMNKMBMHKDF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for RogueVirtualItem {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMNKMBMHKDF != 0 {
-            os.write_uint32(3, self.AMNKMBMHKDF)?;
+        if self.DAFALAOAOOI != 0 {
+            os.write_uint32(1, self.DAFALAOAOOI)?;
         }
         if self.BPJOAPFAFKK != 0 {
-            os.write_uint32(13, self.BPJOAPFAFKK)?;
-        }
-        if self.DAFALAOAOOI != 0 {
-            os.write_uint32(14, self.DAFALAOAOOI)?;
+            os.write_uint32(7, self.BPJOAPFAFKK)?;
         }
         if self.rogue_money != 0 {
-            os.write_uint32(6, self.rogue_money)?;
+            os.write_uint32(3, self.rogue_money)?;
+        }
+        if self.AMNKMBMHKDF != 0 {
+            os.write_uint32(2, self.AMNKMBMHKDF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RogueVirtualItem {
     }
 
     fn clear(&mut self) {
-        self.AMNKMBMHKDF = 0;
-        self.BPJOAPFAFKK = 0;
         self.DAFALAOAOOI = 0;
+        self.BPJOAPFAFKK = 0;
         self.rogue_money = 0;
+        self.AMNKMBMHKDF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueVirtualItem {
         static instance: RogueVirtualItem = RogueVirtualItem {
-            AMNKMBMHKDF: 0,
-            BPJOAPFAFKK: 0,
             DAFALAOAOOI: 0,
+            BPJOAPFAFKK: 0,
             rogue_money: 0,
+            AMNKMBMHKDF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueVirtualItem {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16RogueVirtualItem.proto\"\x99\x01\n\x10RogueVirtualItem\x12\x20\n\
-    \x0bAMNKMBMHKDF\x18\x03\x20\x01(\rR\x0bAMNKMBMHKDF\x12\x20\n\x0bBPJOAPFA\
-    FKK\x18\r\x20\x01(\rR\x0bBPJOAPFAFKK\x12\x20\n\x0bDAFALAOAOOI\x18\x0e\
-    \x20\x01(\rR\x0bDAFALAOAOOI\x12\x1f\n\x0brogue_money\x18\x06\x20\x01(\rR\
-    \nrogueMoneyb\x06proto3\
+    \x0bDAFALAOAOOI\x18\x01\x20\x01(\rR\x0bDAFALAOAOOI\x12\x20\n\x0bBPJOAPFA\
+    FKK\x18\x07\x20\x01(\rR\x0bBPJOAPFAFKK\x12\x1f\n\x0brogue_money\x18\x03\
+    \x20\x01(\rR\nrogueMoney\x12\x20\n\x0bAMNKMBMHKDF\x18\x02\x20\x01(\rR\
+    \x0bAMNKMBMHKDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -45,7 +45,7 @@ impl RogueAction {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonBuffSelectInfo buff_select_info = 2030;
+    // .RogueCommonBuffSelectInfo buff_select_info = 171;
 
     pub fn buff_select_info(&self) -> &super::RogueCommonBuffSelectInfo::RogueCommonBuffSelectInfo {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl RogueAction {
         }
     }
 
-    // .LEFCOMGMPCL FPHHHIOBFAI = 1743;
+    // .LEFCOMGMPCL FPHHHIOBFAI = 1272;
 
     pub fn FPHHHIOBFAI(&self) -> &super::LEFCOMGMPCL::LEFCOMGMPCL {
         match self.KFELKJLDKEH {
@@ -143,7 +143,7 @@ impl RogueAction {
         }
     }
 
-    // .IPGKAGFFBHF AJDDFANCEJN = 880;
+    // .IPGKAGFFBHF AJDDFANCEJN = 266;
 
     pub fn AJDDFANCEJN(&self) -> &super::IPGKAGFFBHF::IPGKAGFFBHF {
         match self.KFELKJLDKEH {
@@ -192,7 +192,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueCommonBuffReforgeSelectInfo buff_reforge_select_info = 1272;
+    // .RogueCommonBuffReforgeSelectInfo buff_reforge_select_info = 1681;
 
     pub fn buff_reforge_select_info(&self) -> &super::RogueCommonBuffReforgeSelectInfo::RogueCommonBuffReforgeSelectInfo {
         match self.KFELKJLDKEH {
@@ -241,7 +241,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMiracleSelectInfo miracle_select_info = 315;
+    // .RogueMiracleSelectInfo miracle_select_info = 1286;
 
     pub fn miracle_select_info(&self) -> &super::RogueMiracleSelectInfo::RogueMiracleSelectInfo {
         match self.KFELKJLDKEH {
@@ -290,7 +290,7 @@ impl RogueAction {
         }
     }
 
-    // .ANMCAIMELCA BICJEMPPLAM = 747;
+    // .ANMCAIMELCA BICJEMPPLAM = 406;
 
     pub fn BICJEMPPLAM(&self) -> &super::ANMCAIMELCA::ANMCAIMELCA {
         match self.KFELKJLDKEH {
@@ -339,7 +339,7 @@ impl RogueAction {
         }
     }
 
-    // .GABBEHOIPJC AELPPPIEFAB = 1992;
+    // .GABBEHOIPJC AELPPPIEFAB = 1235;
 
     pub fn AELPPPIEFAB(&self) -> &super::GABBEHOIPJC::GABBEHOIPJC {
         match self.KFELKJLDKEH {
@@ -388,7 +388,7 @@ impl RogueAction {
         }
     }
 
-    // .MLKICCAELKE BEDIACHLCII = 1829;
+    // .MLKICCAELKE BEDIACHLCII = 593;
 
     pub fn BEDIACHLCII(&self) -> &super::MLKICCAELKE::MLKICCAELKE {
         match self.KFELKJLDKEH {
@@ -437,7 +437,7 @@ impl RogueAction {
         }
     }
 
-    // .EAKECFAPPKD LADGCOOMNKA = 2044;
+    // .EAKECFAPPKD LADGCOOMNKA = 626;
 
     pub fn LADGCOOMNKA(&self) -> &super::EAKECFAPPKD::EAKECFAPPKD {
         match self.KFELKJLDKEH {
@@ -486,7 +486,7 @@ impl RogueAction {
         }
     }
 
-    // .ELDAFCNMFBF CGKFOMNCNAK = 1373;
+    // .ELDAFCNMFBF CGKFOMNCNAK = 1401;
 
     pub fn CGKFOMNCNAK(&self) -> &super::ELDAFCNMFBF::ELDAFCNMFBF {
         match self.KFELKJLDKEH {
@@ -535,7 +535,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueComposeMiracleSelectInfo compose_miracle_select_info = 1195;
+    // .RogueComposeMiracleSelectInfo compose_miracle_select_info = 778;
 
     pub fn compose_miracle_select_info(&self) -> &super::RogueComposeMiracleSelectInfo::RogueComposeMiracleSelectInfo {
         match self.KFELKJLDKEH {
@@ -584,7 +584,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueHexAvatarSelectInfo hex_avatar_select_info = 88;
+    // .RogueHexAvatarSelectInfo hex_avatar_select_info = 1948;
 
     pub fn hex_avatar_select_info(&self) -> &super::RogueHexAvatarSelectInfo::RogueHexAvatarSelectInfo {
         match self.KFELKJLDKEH {
@@ -633,7 +633,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueBonusSelectInfo bonus_select_info = 1153;
+    // .RogueBonusSelectInfo bonus_select_info = 1209;
 
     pub fn bonus_select_info(&self) -> &super::RogueBonusSelectInfo::RogueBonusSelectInfo {
         match self.KFELKJLDKEH {
@@ -682,7 +682,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueFormulaSelectInfo rogue_formula_select_info = 500;
+    // .RogueFormulaSelectInfo rogue_formula_select_info = 1575;
 
     pub fn rogue_formula_select_info(&self) -> &super::RogueFormulaSelectInfo::RogueFormulaSelectInfo {
         match self.KFELKJLDKEH {
@@ -731,7 +731,7 @@ impl RogueAction {
         }
     }
 
-    // .FHMAIANENPO JBKPIKAJPEB = 523;
+    // .FHMAIANENPO JBKPIKAJPEB = 1683;
 
     pub fn JBKPIKAJPEB(&self) -> &super::FHMAIANENPO::FHMAIANENPO {
         match self.KFELKJLDKEH {
@@ -780,7 +780,7 @@ impl RogueAction {
         }
     }
 
-    // .BPDDOBAHPNA HCCHFJEFANJ = 1071;
+    // .BPDDOBAHPNA HCCHFJEFANJ = 300;
 
     pub fn HCCHFJEFANJ(&self) -> &super::BPDDOBAHPNA::BPDDOBAHPNA {
         match self.KFELKJLDKEH {
@@ -829,7 +829,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMagicUnitSelectInfo OIOMHOPNIMF = 1665;
+    // .RogueMagicUnitSelectInfo OIOMHOPNIMF = 1885;
 
     pub fn OIOMHOPNIMF(&self) -> &super::RogueMagicUnitSelectInfo::RogueMagicUnitSelectInfo {
         match self.KFELKJLDKEH {
@@ -878,7 +878,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMagicScepterSelectInfo IFCLAAFPKHC = 1470;
+    // .RogueMagicScepterSelectInfo IFCLAAFPKHC = 1022;
 
     pub fn IFCLAAFPKHC(&self) -> &super::RogueMagicScepterSelectInfo::RogueMagicScepterSelectInfo {
         match self.KFELKJLDKEH {
@@ -927,7 +927,7 @@ impl RogueAction {
         }
     }
 
-    // .JKHKEBMOBEJ HFJECHFANNF = 836;
+    // .JKHKEBMOBEJ HFJECHFANNF = 512;
 
     pub fn HFJECHFANNF(&self) -> &super::JKHKEBMOBEJ::JKHKEBMOBEJ {
         match self.KFELKJLDKEH {
@@ -976,7 +976,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMagicUnitSelectInfo LDJOMIOJEPF = 1003;
+    // .RogueMagicUnitSelectInfo LDJOMIOJEPF = 655;
 
     pub fn LDJOMIOJEPF(&self) -> &super::RogueMagicUnitSelectInfo::RogueMagicUnitSelectInfo {
         match self.KFELKJLDKEH {
@@ -1025,7 +1025,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMagicUnitSelectInfo LMNONCMBIOO = 469;
+    // .RogueMagicUnitSelectInfo LMNONCMBIOO = 1692;
 
     pub fn LMNONCMBIOO(&self) -> &super::RogueMagicUnitSelectInfo::RogueMagicUnitSelectInfo {
         match self.KFELKJLDKEH {
@@ -1074,7 +1074,7 @@ impl RogueAction {
         }
     }
 
-    // .RogueMagicUnitSelectInfo CNLMCOBNCAI = 1991;
+    // .RogueMagicUnitSelectInfo CNLMCOBNCAI = 517;
 
     pub fn CNLMCOBNCAI(&self) -> &super::RogueMagicUnitSelectInfo::RogueMagicUnitSelectInfo {
         match self.KFELKJLDKEH {
@@ -1123,7 +1123,7 @@ impl RogueAction {
         }
     }
 
-    // .KKAGNMEMKOG FHOKDLLICJL = 1379;
+    // .KKAGNMEMKOG FHOKDLLICJL = 1113;
 
     pub fn FHOKDLLICJL(&self) -> &super::KKAGNMEMKOG::KKAGNMEMKOG {
         match self.KFELKJLDKEH {
@@ -1172,7 +1172,7 @@ impl RogueAction {
         }
     }
 
-    // .KKAGNMEMKOG PHDEMDBGOIB = 2001;
+    // .KKAGNMEMKOG PHDEMDBGOIB = 802;
 
     pub fn PHDEMDBGOIB(&self) -> &super::KKAGNMEMKOG::KKAGNMEMKOG {
         match self.KFELKJLDKEH {
@@ -1221,7 +1221,7 @@ impl RogueAction {
         }
     }
 
-    // .KKAGNMEMKOG KLJJIBPJGFF = 532;
+    // .KKAGNMEMKOG KLJJIBPJGFF = 864;
 
     pub fn KLJJIBPJGFF(&self) -> &super::KKAGNMEMKOG::KKAGNMEMKOG {
         match self.KFELKJLDKEH {
@@ -1270,7 +1270,7 @@ impl RogueAction {
         }
     }
 
-    // .PIGFBKOJNHG DLFALFGFDHE = 296;
+    // .PIGFBKOJNHG DLFALFGFDHE = 1211;
 
     pub fn DLFALFGFDHE(&self) -> &super::PIGFBKOJNHG::PIGFBKOJNHG {
         match self.KFELKJLDKEH {
@@ -1319,7 +1319,7 @@ impl RogueAction {
         }
     }
 
-    // .CGGBPJICHGF NPCDBPNDGOP = 53;
+    // .CGGBPJICHGF NPCDBPNDGOP = 920;
 
     pub fn NPCDBPNDGOP(&self) -> &super::CGGBPJICHGF::CGGBPJICHGF {
         match self.KFELKJLDKEH {
@@ -1579,85 +1579,85 @@ impl ::protobuf::Message for RogueAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16242 => {
+                1370 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::BuffSelectInfo(is.read_message()?));
                 },
-                13946 => {
+                10178 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::FPHHHIOBFAI(is.read_message()?));
                 },
-                7042 => {
+                2130 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::AJDDFANCEJN(is.read_message()?));
                 },
-                10178 => {
+                13450 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::BuffReforgeSelectInfo(is.read_message()?));
                 },
-                2522 => {
+                10290 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::MiracleSelectInfo(is.read_message()?));
                 },
-                5978 => {
+                3250 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::BICJEMPPLAM(is.read_message()?));
                 },
-                15938 => {
+                9882 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::AELPPPIEFAB(is.read_message()?));
                 },
-                14634 => {
+                4746 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::BEDIACHLCII(is.read_message()?));
                 },
-                16354 => {
+                5010 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::LADGCOOMNKA(is.read_message()?));
                 },
-                10986 => {
+                11210 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::CGKFOMNCNAK(is.read_message()?));
                 },
-                9562 => {
+                6226 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::ComposeMiracleSelectInfo(is.read_message()?));
                 },
-                706 => {
+                15586 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::HexAvatarSelectInfo(is.read_message()?));
                 },
-                9226 => {
+                9674 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::BonusSelectInfo(is.read_message()?));
                 },
-                4002 => {
+                12602 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::RogueFormulaSelectInfo(is.read_message()?));
                 },
-                4186 => {
+                13466 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::JBKPIKAJPEB(is.read_message()?));
                 },
-                8570 => {
+                2402 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::HCCHFJEFANJ(is.read_message()?));
                 },
-                13322 => {
+                15082 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::OIOMHOPNIMF(is.read_message()?));
                 },
-                11762 => {
+                8178 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::IFCLAAFPKHC(is.read_message()?));
                 },
-                6690 => {
+                4098 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::HFJECHFANNF(is.read_message()?));
                 },
-                8026 => {
+                5242 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::LDJOMIOJEPF(is.read_message()?));
                 },
-                3754 => {
+                13538 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::LMNONCMBIOO(is.read_message()?));
                 },
-                15930 => {
+                4138 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::CNLMCOBNCAI(is.read_message()?));
                 },
-                11034 => {
+                8906 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::FHOKDLLICJL(is.read_message()?));
                 },
-                16010 => {
+                6418 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::PHDEMDBGOIB(is.read_message()?));
                 },
-                4258 => {
+                6914 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::KLJJIBPJGFF(is.read_message()?));
                 },
-                2370 => {
+                9690 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::DLFALFGFDHE(is.read_message()?));
                 },
-                426 => {
+                7362 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(rogue_action::KFELKJLDKEH::NPCDBPNDGOP(is.read_message()?));
                 },
                 tag => {
@@ -1793,85 +1793,85 @@ impl ::protobuf::Message for RogueAction {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &rogue_action::KFELKJLDKEH::BuffSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2030, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(171, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::FPHHHIOBFAI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1743, v, os)?;
-                },
-                &rogue_action::KFELKJLDKEH::AJDDFANCEJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(880, v, os)?;
-                },
-                &rogue_action::KFELKJLDKEH::BuffReforgeSelectInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1272, v, os)?;
                 },
+                &rogue_action::KFELKJLDKEH::AJDDFANCEJN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(266, v, os)?;
+                },
+                &rogue_action::KFELKJLDKEH::BuffReforgeSelectInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1681, v, os)?;
+                },
                 &rogue_action::KFELKJLDKEH::MiracleSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(315, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1286, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::BICJEMPPLAM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(747, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(406, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::AELPPPIEFAB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1992, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1235, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::BEDIACHLCII(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1829, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(593, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::LADGCOOMNKA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2044, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(626, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::CGKFOMNCNAK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1373, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1401, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::ComposeMiracleSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1195, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(778, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::HexAvatarSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(88, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1948, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::BonusSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1153, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1209, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::RogueFormulaSelectInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(500, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1575, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::JBKPIKAJPEB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(523, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1683, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::HCCHFJEFANJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1071, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(300, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::OIOMHOPNIMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1665, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1885, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::IFCLAAFPKHC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1470, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1022, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::HFJECHFANNF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(836, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(512, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::LDJOMIOJEPF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1003, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(655, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::LMNONCMBIOO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(469, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1692, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::CNLMCOBNCAI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1991, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(517, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::FHOKDLLICJL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1379, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1113, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::PHDEMDBGOIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2001, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(802, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::KLJJIBPJGFF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(532, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(864, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::DLFALFGFDHE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(296, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1211, v, os)?;
                 },
                 &rogue_action::KFELKJLDKEH::NPCDBPNDGOP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(53, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(920, v, os)?;
                 },
             };
         }
@@ -2038,43 +2038,43 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x1fRogueCommonBuffSelectInfo.proto\x1a#RogueComposeMiracleSelectInfo.pr\
     oto\x1a\x1cRogueFormulaSelectInfo.proto\x1a\x1eRogueHexAvatarSelectInfo.\
     proto\x1a!RogueMagicScepterSelectInfo.proto\x1a\x1eRogueMagicUnitSelectI\
-    nfo.proto\x1a\x1cRogueMiracleSelectInfo.proto\"\xa0\r\n\x0bRogueAction\
-    \x12G\n\x10buff_select_info\x18\xee\x0f\x20\x01(\x0b2\x1a.RogueCommonBuf\
-    fSelectInfoH\0R\x0ebuffSelectInfo\x121\n\x0bFPHHHIOBFAI\x18\xcf\r\x20\
+    nfo.proto\x1a\x1cRogueMiracleSelectInfo.proto\"\xa2\r\n\x0bRogueAction\
+    \x12G\n\x10buff_select_info\x18\xab\x01\x20\x01(\x0b2\x1a.RogueCommonBuf\
+    fSelectInfoH\0R\x0ebuffSelectInfo\x121\n\x0bFPHHHIOBFAI\x18\xf8\t\x20\
     \x01(\x0b2\x0c.LEFCOMGMPCLH\0R\x0bFPHHHIOBFAI\x121\n\x0bAJDDFANCEJN\x18\
-    \xf0\x06\x20\x01(\x0b2\x0c.IPGKAGFFBHFH\0R\x0bAJDDFANCEJN\x12]\n\x18buff\
-    _reforge_select_info\x18\xf8\t\x20\x01(\x0b2!.RogueCommonBuffReforgeSele\
+    \x8a\x02\x20\x01(\x0b2\x0c.IPGKAGFFBHFH\0R\x0bAJDDFANCEJN\x12]\n\x18buff\
+    _reforge_select_info\x18\x91\r\x20\x01(\x0b2!.RogueCommonBuffReforgeSele\
     ctInfoH\0R\x15buffReforgeSelectInfo\x12J\n\x13miracle_select_info\x18\
-    \xbb\x02\x20\x01(\x0b2\x17.RogueMiracleSelectInfoH\0R\x11miracleSelectIn\
-    fo\x121\n\x0bBICJEMPPLAM\x18\xeb\x05\x20\x01(\x0b2\x0c.ANMCAIMELCAH\0R\
-    \x0bBICJEMPPLAM\x121\n\x0bAELPPPIEFAB\x18\xc8\x0f\x20\x01(\x0b2\x0c.GABB\
-    EHOIPJCH\0R\x0bAELPPPIEFAB\x121\n\x0bBEDIACHLCII\x18\xa5\x0e\x20\x01(\
-    \x0b2\x0c.MLKICCAELKEH\0R\x0bBEDIACHLCII\x121\n\x0bLADGCOOMNKA\x18\xfc\
-    \x0f\x20\x01(\x0b2\x0c.EAKECFAPPKDH\0R\x0bLADGCOOMNKA\x121\n\x0bCGKFOMNC\
-    NAK\x18\xdd\n\x20\x01(\x0b2\x0c.ELDAFCNMFBFH\0R\x0bCGKFOMNCNAK\x12`\n\
-    \x1bcompose_miracle_select_info\x18\xab\t\x20\x01(\x0b2\x1e.RogueCompose\
-    MiracleSelectInfoH\0R\x18composeMiracleSelectInfo\x12P\n\x16hex_avatar_s\
-    elect_info\x18X\x20\x01(\x0b2\x19.RogueHexAvatarSelectInfoH\0R\x13hexAva\
-    tarSelectInfo\x12D\n\x11bonus_select_info\x18\x81\t\x20\x01(\x0b2\x15.Ro\
-    gueBonusSelectInfoH\0R\x0fbonusSelectInfo\x12U\n\x19rogue_formula_select\
-    _info\x18\xf4\x03\x20\x01(\x0b2\x17.RogueFormulaSelectInfoH\0R\x16rogueF\
-    ormulaSelectInfo\x121\n\x0bJBKPIKAJPEB\x18\x8b\x04\x20\x01(\x0b2\x0c.FHM\
-    AIANENPOH\0R\x0bJBKPIKAJPEB\x121\n\x0bHCCHFJEFANJ\x18\xaf\x08\x20\x01(\
-    \x0b2\x0c.BPDDOBAHPNAH\0R\x0bHCCHFJEFANJ\x12>\n\x0bOIOMHOPNIMF\x18\x81\r\
+    \x86\n\x20\x01(\x0b2\x17.RogueMiracleSelectInfoH\0R\x11miracleSelectInfo\
+    \x121\n\x0bBICJEMPPLAM\x18\x96\x03\x20\x01(\x0b2\x0c.ANMCAIMELCAH\0R\x0b\
+    BICJEMPPLAM\x121\n\x0bAELPPPIEFAB\x18\xd3\t\x20\x01(\x0b2\x0c.GABBEHOIPJ\
+    CH\0R\x0bAELPPPIEFAB\x121\n\x0bBEDIACHLCII\x18\xd1\x04\x20\x01(\x0b2\x0c\
+    .MLKICCAELKEH\0R\x0bBEDIACHLCII\x121\n\x0bLADGCOOMNKA\x18\xf2\x04\x20\
+    \x01(\x0b2\x0c.EAKECFAPPKDH\0R\x0bLADGCOOMNKA\x121\n\x0bCGKFOMNCNAK\x18\
+    \xf9\n\x20\x01(\x0b2\x0c.ELDAFCNMFBFH\0R\x0bCGKFOMNCNAK\x12`\n\x1bcompos\
+    e_miracle_select_info\x18\x8a\x06\x20\x01(\x0b2\x1e.RogueComposeMiracleS\
+    electInfoH\0R\x18composeMiracleSelectInfo\x12Q\n\x16hex_avatar_select_in\
+    fo\x18\x9c\x0f\x20\x01(\x0b2\x19.RogueHexAvatarSelectInfoH\0R\x13hexAvat\
+    arSelectInfo\x12D\n\x11bonus_select_info\x18\xb9\t\x20\x01(\x0b2\x15.Rog\
+    ueBonusSelectInfoH\0R\x0fbonusSelectInfo\x12U\n\x19rogue_formula_select_\
+    info\x18\xa7\x0c\x20\x01(\x0b2\x17.RogueFormulaSelectInfoH\0R\x16rogueFo\
+    rmulaSelectInfo\x121\n\x0bJBKPIKAJPEB\x18\x93\r\x20\x01(\x0b2\x0c.FHMAIA\
+    NENPOH\0R\x0bJBKPIKAJPEB\x121\n\x0bHCCHFJEFANJ\x18\xac\x02\x20\x01(\x0b2\
+    \x0c.BPDDOBAHPNAH\0R\x0bHCCHFJEFANJ\x12>\n\x0bOIOMHOPNIMF\x18\xdd\x0e\
     \x20\x01(\x0b2\x19.RogueMagicUnitSelectInfoH\0R\x0bOIOMHOPNIMF\x12A\n\
-    \x0bIFCLAAFPKHC\x18\xbe\x0b\x20\x01(\x0b2\x1c.RogueMagicScepterSelectInf\
-    oH\0R\x0bIFCLAAFPKHC\x121\n\x0bHFJECHFANNF\x18\xc4\x06\x20\x01(\x0b2\x0c\
-    .JKHKEBMOBEJH\0R\x0bHFJECHFANNF\x12>\n\x0bLDJOMIOJEPF\x18\xeb\x07\x20\
+    \x0bIFCLAAFPKHC\x18\xfe\x07\x20\x01(\x0b2\x1c.RogueMagicScepterSelectInf\
+    oH\0R\x0bIFCLAAFPKHC\x121\n\x0bHFJECHFANNF\x18\x80\x04\x20\x01(\x0b2\x0c\
+    .JKHKEBMOBEJH\0R\x0bHFJECHFANNF\x12>\n\x0bLDJOMIOJEPF\x18\x8f\x05\x20\
     \x01(\x0b2\x19.RogueMagicUnitSelectInfoH\0R\x0bLDJOMIOJEPF\x12>\n\x0bLMN\
-    ONCMBIOO\x18\xd5\x03\x20\x01(\x0b2\x19.RogueMagicUnitSelectInfoH\0R\x0bL\
-    MNONCMBIOO\x12>\n\x0bCNLMCOBNCAI\x18\xc7\x0f\x20\x01(\x0b2\x19.RogueMagi\
-    cUnitSelectInfoH\0R\x0bCNLMCOBNCAI\x121\n\x0bFHOKDLLICJL\x18\xe3\n\x20\
+    ONCMBIOO\x18\x9c\r\x20\x01(\x0b2\x19.RogueMagicUnitSelectInfoH\0R\x0bLMN\
+    ONCMBIOO\x12>\n\x0bCNLMCOBNCAI\x18\x85\x04\x20\x01(\x0b2\x19.RogueMagicU\
+    nitSelectInfoH\0R\x0bCNLMCOBNCAI\x121\n\x0bFHOKDLLICJL\x18\xd9\x08\x20\
     \x01(\x0b2\x0c.KKAGNMEMKOGH\0R\x0bFHOKDLLICJL\x121\n\x0bPHDEMDBGOIB\x18\
-    \xd1\x0f\x20\x01(\x0b2\x0c.KKAGNMEMKOGH\0R\x0bPHDEMDBGOIB\x121\n\x0bKLJJ\
-    IBPJGFF\x18\x94\x04\x20\x01(\x0b2\x0c.KKAGNMEMKOGH\0R\x0bKLJJIBPJGFF\x12\
-    1\n\x0bDLFALFGFDHE\x18\xa8\x02\x20\x01(\x0b2\x0c.PIGFBKOJNHGH\0R\x0bDLFA\
-    LFGFDHE\x120\n\x0bNPCDBPNDGOP\x185\x20\x01(\x0b2\x0c.CGGBPJICHGFH\0R\x0b\
-    NPCDBPNDGOPB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    \xa2\x06\x20\x01(\x0b2\x0c.KKAGNMEMKOGH\0R\x0bPHDEMDBGOIB\x121\n\x0bKLJJ\
+    IBPJGFF\x18\xe0\x06\x20\x01(\x0b2\x0c.KKAGNMEMKOGH\0R\x0bKLJJIBPJGFF\x12\
+    1\n\x0bDLFALFGFDHE\x18\xbb\t\x20\x01(\x0b2\x0c.PIGFBKOJNHGH\0R\x0bDLFALF\
+    GFDHE\x121\n\x0bNPCDBPNDGOP\x18\x98\x07\x20\x01(\x0b2\x0c.CGGBPJICHGFH\0\
+    R\x0bNPCDBPNDGOPB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

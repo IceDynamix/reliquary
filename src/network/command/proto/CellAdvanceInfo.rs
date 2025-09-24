@@ -45,7 +45,7 @@ impl CellAdvanceInfo {
         ::std::default::Default::default()
     }
 
-    // .CellMonsterInfo cell_boss_info = 13;
+    // .CellMonsterInfo cell_boss_info = 8;
 
     pub fn cell_boss_info(&self) -> &super::CellMonsterInfo::CellMonsterInfo {
         match self.INBKIJDHPLP {
@@ -94,7 +94,7 @@ impl CellAdvanceInfo {
         }
     }
 
-    // .CellMonsterSelectInfo select_boss_info = 5;
+    // .CellMonsterSelectInfo select_boss_info = 15;
 
     pub fn select_boss_info(&self) -> &super::CellMonsterSelectInfo::CellMonsterSelectInfo {
         match self.INBKIJDHPLP {
@@ -143,7 +143,7 @@ impl CellAdvanceInfo {
         }
     }
 
-    // .CellFinalMonsterInfo final_boss_info = 8;
+    // .CellFinalMonsterInfo final_boss_info = 7;
 
     pub fn final_boss_info(&self) -> &super::CellFinalMonsterInfo::CellFinalMonsterInfo {
         match self.INBKIJDHPLP {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for CellAdvanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                66 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::CellBossInfo(is.read_message()?));
                 },
-                42 => {
+                122 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::SelectBossInfo(is.read_message()?));
                 },
-                66 => {
+                58 => {
                     self.INBKIJDHPLP = ::std::option::Option::Some(cell_advance_info::INBKIJDHPLP::FinalBossInfo(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for CellAdvanceInfo {
         if let ::std::option::Option::Some(ref v) = self.INBKIJDHPLP {
             match v {
                 &cell_advance_info::INBKIJDHPLP::CellBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &cell_advance_info::INBKIJDHPLP::SelectBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &cell_advance_info::INBKIJDHPLP::FinalBossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -375,10 +375,10 @@ pub mod cell_advance_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CellAdvanceInfo.proto\x1a\x1aCellFinalMonsterInfo.proto\x1a\x15Cel\
     lMonsterInfo.proto\x1a\x1bCellMonsterSelectInfo.proto\"\xdf\x01\n\x0fCel\
-    lAdvanceInfo\x128\n\x0ecell_boss_info\x18\r\x20\x01(\x0b2\x10.CellMonste\
-    rInfoH\0R\x0ccellBossInfo\x12B\n\x10select_boss_info\x18\x05\x20\x01(\
+    lAdvanceInfo\x128\n\x0ecell_boss_info\x18\x08\x20\x01(\x0b2\x10.CellMons\
+    terInfoH\0R\x0ccellBossInfo\x12B\n\x10select_boss_info\x18\x0f\x20\x01(\
     \x0b2\x16.CellMonsterSelectInfoH\0R\x0eselectBossInfo\x12?\n\x0ffinal_bo\
-    ss_info\x18\x08\x20\x01(\x0b2\x15.CellFinalMonsterInfoH\0R\rfinalBossInf\
+    ss_info\x18\x07\x20\x01(\x0b2\x15.CellFinalMonsterInfoH\0R\rfinalBossInf\
     oB\r\n\x0bINBKIJDHPLPb\x06proto3\
 ";
 

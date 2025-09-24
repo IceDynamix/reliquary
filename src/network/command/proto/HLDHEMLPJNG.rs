@@ -50,7 +50,7 @@ impl HLDHEMLPJNG {
         ::std::default::Default::default()
     }
 
-    // .CNLMDFFEFJM EJCOLGNJGDC = 5;
+    // .CNLMDFFEFJM EJCOLGNJGDC = 6;
 
     pub fn EJCOLGNJGDC(&self) -> &super::CNLMDFFEFJM::CNLMDFFEFJM {
         match self.NGIKDJMNGBG {
@@ -138,13 +138,13 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                96 => {
                     self.OOHNKOJHDHO = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.ACDOPCBMPNL = is.read_uint32()?;
                 },
-                42 => {
+                50 => {
                     self.NGIKDJMNGBG = ::std::option::Option::Some(hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(is.read_message()?));
                 },
                 tag => {
@@ -160,10 +160,10 @@ impl ::protobuf::Message for HLDHEMLPJNG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OOHNKOJHDHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OOHNKOJHDHO);
+            my_size += ::protobuf::rt::uint32_size(12, self.OOHNKOJHDHO);
         }
         if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACDOPCBMPNL);
+            my_size += ::protobuf::rt::uint32_size(7, self.ACDOPCBMPNL);
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
@@ -180,15 +180,15 @@ impl ::protobuf::Message for HLDHEMLPJNG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OOHNKOJHDHO != 0 {
-            os.write_uint32(3, self.OOHNKOJHDHO)?;
+            os.write_uint32(12, self.OOHNKOJHDHO)?;
         }
         if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(9, self.ACDOPCBMPNL)?;
+            os.write_uint32(7, self.ACDOPCBMPNL)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NGIKDJMNGBG {
             match v {
                 &hldhemlpjng::NGIKDJMNGBG::EJCOLGNJGDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -273,10 +273,10 @@ pub mod hldhemlpjng {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLDHEMLPJNG.proto\x1a\x11CNLMDFFEFJM.proto\"\x92\x01\n\x0bHLDHEMLP\
-    JNG\x12\x20\n\x0bOOHNKOJHDHO\x18\x03\x20\x01(\rR\x0bOOHNKOJHDHO\x12\x20\
-    \n\x0bACDOPCBMPNL\x18\t\x20\x01(\rR\x0bACDOPCBMPNL\x120\n\x0bEJCOLGNJGDC\
-    \x18\x05\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bNGIKDJ\
-    MNGBGb\x06proto3\
+    JNG\x12\x20\n\x0bOOHNKOJHDHO\x18\x0c\x20\x01(\rR\x0bOOHNKOJHDHO\x12\x20\
+    \n\x0bACDOPCBMPNL\x18\x07\x20\x01(\rR\x0bACDOPCBMPNL\x120\n\x0bEJCOLGNJG\
+    DC\x18\x06\x20\x01(\x0b2\x0c.CNLMDFFEFJMH\0R\x0bEJCOLGNJGDCB\r\n\x0bNGIK\
+    DJMNGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

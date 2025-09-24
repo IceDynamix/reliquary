@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FNLGPLNCPCL {
     // message fields
-    // @@protoc_insertion_point(field:FNLGPLNCPCL.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:FNLGPLNCPCL.GHEDLCLNHIJ)
     pub GHEDLCLNHIJ: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:FNLGPLNCPCL.raid_id)
-    pub raid_id: u32,
     // @@protoc_insertion_point(field:FNLGPLNCPCL.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:FNLGPLNCPCL.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:FNLGPLNCPCL.raid_id)
+    pub raid_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FNLGPLNCPCL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl FNLGPLNCPCL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &FNLGPLNCPCL| { &m.world_level },
-            |m: &mut FNLGPLNCPCL| { &mut m.world_level },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "GHEDLCLNHIJ",
             |m: &FNLGPLNCPCL| { &m.GHEDLCLNHIJ },
             |m: &mut FNLGPLNCPCL| { &mut m.GHEDLCLNHIJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "raid_id",
-            |m: &FNLGPLNCPCL| { &m.raid_id },
-            |m: &mut FNLGPLNCPCL| { &mut m.raid_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &FNLGPLNCPCL| { &m.lineup },
             |m: &mut FNLGPLNCPCL| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &FNLGPLNCPCL| { &m.world_level },
+            |m: &mut FNLGPLNCPCL| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "raid_id",
+            |m: &FNLGPLNCPCL| { &m.raid_id },
+            |m: &mut FNLGPLNCPCL| { &mut m.raid_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FNLGPLNCPCL>(
             "FNLGPLNCPCL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                34 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHEDLCLNHIJ)?;
                 },
-                16 => {
-                    self.raid_id = is.read_uint32()?;
-                },
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                48 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                32 => {
+                    self.raid_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
-        }
         if let Some(v) = self.GHEDLCLNHIJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.raid_id);
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+        }
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.raid_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(5, self.world_level)?;
-        }
         if let Some(v) = self.GHEDLCLNHIJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.raid_id != 0 {
-            os.write_uint32(2, self.raid_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(6, self.world_level)?;
+        }
+        if self.raid_id != 0 {
+            os.write_uint32(4, self.raid_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for FNLGPLNCPCL {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
         self.GHEDLCLNHIJ.clear();
-        self.raid_id = 0;
         self.lineup.clear();
+        self.world_level = 0;
+        self.raid_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FNLGPLNCPCL {
         static instance: FNLGPLNCPCL = FNLGPLNCPCL {
-            world_level: 0,
             GHEDLCLNHIJ: ::protobuf::MessageField::none(),
-            raid_id: 0,
             lineup: ::protobuf::MessageField::none(),
+            world_level: 0,
+            raid_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for FNLGPLNCPCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FNLGPLNCPCL.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\
-    \x9a\x01\n\x0bFNLGPLNCPCL\x12\x1f\n\x0bworld_level\x18\x05\x20\x01(\rR\n\
-    worldLevel\x12,\n\x0bGHEDLCLNHIJ\x18\x04\x20\x01(\x0b2\n.SceneInfoR\x0bG\
-    HEDLCLNHIJ\x12\x17\n\x07raid_id\x18\x02\x20\x01(\rR\x06raidId\x12#\n\x06\
-    lineup\x18\x0b\x20\x01(\x0b2\x0b.LineupInfoR\x06lineupb\x06proto3\
+    \x9a\x01\n\x0bFNLGPLNCPCL\x12,\n\x0bGHEDLCLNHIJ\x18\x0e\x20\x01(\x0b2\n.\
+    SceneInfoR\x0bGHEDLCLNHIJ\x12#\n\x06lineup\x18\n\x20\x01(\x0b2\x0b.Lineu\
+    pInfoR\x06lineup\x12\x1f\n\x0bworld_level\x18\x06\x20\x01(\rR\nworldLeve\
+    l\x12\x17\n\x07raid_id\x18\x04\x20\x01(\rR\x06raidIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddRelicFilterPlanCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.GFIDNAANAFH)
-    pub GFIDNAANAFH: ::protobuf::MessageField<super::PACFHNEJADB::PACFHNEJADB>,
-    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.name)
-    pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.is_marked)
-    pub is_marked: bool,
     // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.EHKJHCOAKBK)
     pub EHKJHCOAKBK: u32,
+    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.name)
+    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.GFIDNAANAFH)
+    pub GFIDNAANAFH: ::protobuf::MessageField<super::PACFHNEJADB::PACFHNEJADB>,
+    // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.is_marked)
+    pub is_marked: bool,
     // @@protoc_insertion_point(field:AddRelicFilterPlanCsReq.IBPDGNOHFPM)
     pub IBPDGNOHFPM: ::protobuf::MessageField<super::IIPKANNMLFN::IIPKANNMLFN>,
     // special fields
@@ -57,25 +57,25 @@ impl AddRelicFilterPlanCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PACFHNEJADB::PACFHNEJADB>(
-            "GFIDNAANAFH",
-            |m: &AddRelicFilterPlanCsReq| { &m.GFIDNAANAFH },
-            |m: &mut AddRelicFilterPlanCsReq| { &mut m.GFIDNAANAFH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EHKJHCOAKBK",
+            |m: &AddRelicFilterPlanCsReq| { &m.EHKJHCOAKBK },
+            |m: &mut AddRelicFilterPlanCsReq| { &mut m.EHKJHCOAKBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
             |m: &AddRelicFilterPlanCsReq| { &m.name },
             |m: &mut AddRelicFilterPlanCsReq| { &mut m.name },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PACFHNEJADB::PACFHNEJADB>(
+            "GFIDNAANAFH",
+            |m: &AddRelicFilterPlanCsReq| { &m.GFIDNAANAFH },
+            |m: &mut AddRelicFilterPlanCsReq| { &mut m.GFIDNAANAFH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
             |m: &AddRelicFilterPlanCsReq| { &m.is_marked },
             |m: &mut AddRelicFilterPlanCsReq| { &mut m.is_marked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHKJHCOAKBK",
-            |m: &AddRelicFilterPlanCsReq| { &m.EHKJHCOAKBK },
-            |m: &mut AddRelicFilterPlanCsReq| { &mut m.EHKJHCOAKBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIPKANNMLFN::IIPKANNMLFN>(
             "IBPDGNOHFPM",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFIDNAANAFH)?;
-                },
-                90 => {
-                    self.name = is.read_string()?;
-                },
-                48 => {
-                    self.is_marked = is.read_bool()?;
-                },
-                96 => {
+                16 => {
                     self.EHKJHCOAKBK = is.read_uint32()?;
                 },
-                122 => {
+                10 => {
+                    self.name = is.read_string()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFIDNAANAFH)?;
+                },
+                96 => {
+                    self.is_marked = is.read_bool()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IBPDGNOHFPM)?;
                 },
                 tag => {
@@ -127,18 +127,18 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EHKJHCOAKBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EHKJHCOAKBK);
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.name);
+        }
         if let Some(v) = self.GFIDNAANAFH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.name);
-        }
         if self.is_marked != false {
             my_size += 1 + 1;
-        }
-        if self.EHKJHCOAKBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EHKJHCOAKBK);
         }
         if let Some(v) = self.IBPDGNOHFPM.as_ref() {
             let len = v.compute_size();
@@ -150,20 +150,20 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GFIDNAANAFH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.EHKJHCOAKBK != 0 {
+            os.write_uint32(2, self.EHKJHCOAKBK)?;
         }
         if !self.name.is_empty() {
-            os.write_string(11, &self.name)?;
+            os.write_string(1, &self.name)?;
+        }
+        if let Some(v) = self.GFIDNAANAFH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.is_marked != false {
-            os.write_bool(6, self.is_marked)?;
-        }
-        if self.EHKJHCOAKBK != 0 {
-            os.write_uint32(12, self.EHKJHCOAKBK)?;
+            os.write_bool(12, self.is_marked)?;
         }
         if let Some(v) = self.IBPDGNOHFPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for AddRelicFilterPlanCsReq {
     }
 
     fn clear(&mut self) {
-        self.GFIDNAANAFH.clear();
-        self.name.clear();
-        self.is_marked = false;
         self.EHKJHCOAKBK = 0;
+        self.name.clear();
+        self.GFIDNAANAFH.clear();
+        self.is_marked = false;
         self.IBPDGNOHFPM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddRelicFilterPlanCsReq {
         static instance: AddRelicFilterPlanCsReq = AddRelicFilterPlanCsReq {
-            GFIDNAANAFH: ::protobuf::MessageField::none(),
-            name: ::std::string::String::new(),
-            is_marked: false,
             EHKJHCOAKBK: 0,
+            name: ::std::string::String::new(),
+            GFIDNAANAFH: ::protobuf::MessageField::none(),
+            is_marked: false,
             IBPDGNOHFPM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for AddRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAddRelicFilterPlanCsReq.proto\x1a\x11IIPKANNMLFN.proto\x1a\x11PACF\
-    HNEJADB.proto\"\xcc\x01\n\x17AddRelicFilterPlanCsReq\x12.\n\x0bGFIDNAANA\
-    FH\x18\x04\x20\x01(\x0b2\x0c.PACFHNEJADBR\x0bGFIDNAANAFH\x12\x12\n\x04na\
-    me\x18\x0b\x20\x01(\tR\x04name\x12\x1b\n\tis_marked\x18\x06\x20\x01(\x08\
-    R\x08isMarked\x12\x20\n\x0bEHKJHCOAKBK\x18\x0c\x20\x01(\rR\x0bEHKJHCOAKB\
-    K\x12.\n\x0bIBPDGNOHFPM\x18\x0f\x20\x01(\x0b2\x0c.IIPKANNMLFNR\x0bIBPDGN\
-    OHFPMb\x06proto3\
+    HNEJADB.proto\"\xcc\x01\n\x17AddRelicFilterPlanCsReq\x12\x20\n\x0bEHKJHC\
+    OAKBK\x18\x02\x20\x01(\rR\x0bEHKJHCOAKBK\x12\x12\n\x04name\x18\x01\x20\
+    \x01(\tR\x04name\x12.\n\x0bGFIDNAANAFH\x18\t\x20\x01(\x0b2\x0c.PACFHNEJA\
+    DBR\x0bGFIDNAANAFH\x12\x1b\n\tis_marked\x18\x0c\x20\x01(\x08R\x08isMarke\
+    d\x12.\n\x0bIBPDGNOHFPM\x18\n\x20\x01(\x0b2\x0c.IIPKANNMLFNR\x0bIBPDGNOH\
+    FPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

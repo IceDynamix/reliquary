@@ -30,10 +30,10 @@ pub struct GetChessRogueNousStoryInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetChessRogueNousStoryInfoScRsp.IDGIAHOPGAJ)
     pub IDGIAHOPGAJ: ::std::vec::Vec<super::GBEEJNBEBEP::GBEEJNBEBEP>,
-    // @@protoc_insertion_point(field:GetChessRogueNousStoryInfoScRsp.MNHMEKKHKNA)
-    pub MNHMEKKHKNA: ::std::vec::Vec<super::DIECDDGEBNB::DIECDDGEBNB>,
     // @@protoc_insertion_point(field:GetChessRogueNousStoryInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChessRogueNousStoryInfoScRsp.MNHMEKKHKNA)
+    pub MNHMEKKHKNA: ::std::vec::Vec<super::DIECDDGEBNB::DIECDDGEBNB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChessRogueNousStoryInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetChessRogueNousStoryInfoScRsp {
             |m: &GetChessRogueNousStoryInfoScRsp| { &m.IDGIAHOPGAJ },
             |m: &mut GetChessRogueNousStoryInfoScRsp| { &mut m.IDGIAHOPGAJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MNHMEKKHKNA",
-            |m: &GetChessRogueNousStoryInfoScRsp| { &m.MNHMEKKHKNA },
-            |m: &mut GetChessRogueNousStoryInfoScRsp| { &mut m.MNHMEKKHKNA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChessRogueNousStoryInfoScRsp| { &m.retcode },
             |m: &mut GetChessRogueNousStoryInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MNHMEKKHKNA",
+            |m: &GetChessRogueNousStoryInfoScRsp| { &m.MNHMEKKHKNA },
+            |m: &mut GetChessRogueNousStoryInfoScRsp| { &mut m.MNHMEKKHKNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChessRogueNousStoryInfoScRsp>(
             "GetChessRogueNousStoryInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                18 => {
                     self.IDGIAHOPGAJ.push(is.read_message()?);
                 },
-                66 => {
-                    self.MNHMEKKHKNA.push(is.read_message()?);
-                },
-                96 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                26 => {
+                    self.MNHMEKKHKNA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
         for value in &self.MNHMEKKHKNA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IDGIAHOPGAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.MNHMEKKHKNA {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
+        for v in &self.MNHMEKKHKNA {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GetChessRogueNousStoryInfoScRsp {
 
     fn clear(&mut self) {
         self.IDGIAHOPGAJ.clear();
-        self.MNHMEKKHKNA.clear();
         self.retcode = 0;
+        self.MNHMEKKHKNA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChessRogueNousStoryInfoScRsp {
         static instance: GetChessRogueNousStoryInfoScRsp = GetChessRogueNousStoryInfoScRsp {
             IDGIAHOPGAJ: ::std::vec::Vec::new(),
-            MNHMEKKHKNA: ::std::vec::Vec::new(),
             retcode: 0,
+            MNHMEKKHKNA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueNousStoryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetChessRogueNousStoryInfoScRsp.proto\x1a\x11DIECDDGEBNB.proto\x1a\
     \x11GBEEJNBEBEP.proto\"\x9b\x01\n\x1fGetChessRogueNousStoryInfoScRsp\x12\
-    .\n\x0bIDGIAHOPGAJ\x18\x06\x20\x03(\x0b2\x0c.GBEEJNBEBEPR\x0bIDGIAHOPGAJ\
-    \x12.\n\x0bMNHMEKKHKNA\x18\x08\x20\x03(\x0b2\x0c.DIECDDGEBNBR\x0bMNHMEKK\
-    HKNA\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    .\n\x0bIDGIAHOPGAJ\x18\x02\x20\x03(\x0b2\x0c.GBEEJNBEBEPR\x0bIDGIAHOPGAJ\
+    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bMNHMEKKHK\
+    NA\x18\x03\x20\x03(\x0b2\x0c.DIECDDGEBNBR\x0bMNHMEKKHKNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

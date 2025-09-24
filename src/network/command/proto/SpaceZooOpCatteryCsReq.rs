@@ -86,13 +86,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                112 => {
                     self.NILEEDJLGIN = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.op_type = is.read_uint32()?;
                 },
-                24 => {
+                72 => {
                     self.ALGEIENIOAN = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NILEEDJLGIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NILEEDJLGIN);
+            my_size += ::protobuf::rt::uint32_size(14, self.NILEEDJLGIN);
         }
         if self.op_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.op_type);
+            my_size += ::protobuf::rt::uint32_size(8, self.op_type);
         }
         if self.ALGEIENIOAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ALGEIENIOAN);
+            my_size += ::protobuf::rt::uint32_size(9, self.ALGEIENIOAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NILEEDJLGIN != 0 {
-            os.write_uint32(5, self.NILEEDJLGIN)?;
+            os.write_uint32(14, self.NILEEDJLGIN)?;
         }
         if self.op_type != 0 {
-            os.write_uint32(7, self.op_type)?;
+            os.write_uint32(8, self.op_type)?;
         }
         if self.ALGEIENIOAN != 0 {
-            os.write_uint32(3, self.ALGEIENIOAN)?;
+            os.write_uint32(9, self.ALGEIENIOAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooOpCatteryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooOpCatteryCsReq.proto\"u\n\x16SpaceZooOpCatteryCsReq\x12\
-    \x20\n\x0bNILEEDJLGIN\x18\x05\x20\x01(\rR\x0bNILEEDJLGIN\x12\x17\n\x07op\
-    _type\x18\x07\x20\x01(\rR\x06opType\x12\x20\n\x0bALGEIENIOAN\x18\x03\x20\
+    \x20\n\x0bNILEEDJLGIN\x18\x0e\x20\x01(\rR\x0bNILEEDJLGIN\x12\x17\n\x07op\
+    _type\x18\x08\x20\x01(\rR\x06opType\x12\x20\n\x0bALGEIENIOAN\x18\t\x20\
     \x01(\rR\x0bALGEIENIOANb\x06proto3\
 ";
 

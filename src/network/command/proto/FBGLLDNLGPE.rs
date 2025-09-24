@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FBGLLDNLGPE {
     // message fields
-    // @@protoc_insertion_point(field:FBGLLDNLGPE.KMLPPMNMPKE)
-    pub KMLPPMNMPKE: u32,
     // @@protoc_insertion_point(field:FBGLLDNLGPE.NICGNEMCHED)
     pub NICGNEMCHED: ::std::vec::Vec<super::LPCNJMFIPNP::LPCNJMFIPNP>,
-    // @@protoc_insertion_point(field:FBGLLDNLGPE.MMEIPHBNKED)
-    pub MMEIPHBNKED: ::std::vec::Vec<super::PJJDMMBKKCN::PJJDMMBKKCN>,
+    // @@protoc_insertion_point(field:FBGLLDNLGPE.KMLPPMNMPKE)
+    pub KMLPPMNMPKE: u32,
     // @@protoc_insertion_point(field:FBGLLDNLGPE.CCGBHHFBAFJ)
     pub CCGBHHFBAFJ: ::std::vec::Vec<super::HEOJLDBKKGE::HEOJLDBKKGE>,
+    // @@protoc_insertion_point(field:FBGLLDNLGPE.MMEIPHBNKED)
+    pub MMEIPHBNKED: ::std::vec::Vec<super::PJJDMMBKKCN::PJJDMMBKKCN>,
     // special fields
     // @@protoc_insertion_point(special_field:FBGLLDNLGPE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl FBGLLDNLGPE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NICGNEMCHED",
+            |m: &FBGLLDNLGPE| { &m.NICGNEMCHED },
+            |m: &mut FBGLLDNLGPE| { &mut m.NICGNEMCHED },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KMLPPMNMPKE",
             |m: &FBGLLDNLGPE| { &m.KMLPPMNMPKE },
             |m: &mut FBGLLDNLGPE| { &mut m.KMLPPMNMPKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NICGNEMCHED",
-            |m: &FBGLLDNLGPE| { &m.NICGNEMCHED },
-            |m: &mut FBGLLDNLGPE| { &mut m.NICGNEMCHED },
+            "CCGBHHFBAFJ",
+            |m: &FBGLLDNLGPE| { &m.CCGBHHFBAFJ },
+            |m: &mut FBGLLDNLGPE| { &mut m.CCGBHHFBAFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MMEIPHBNKED",
             |m: &FBGLLDNLGPE| { &m.MMEIPHBNKED },
             |m: &mut FBGLLDNLGPE| { &mut m.MMEIPHBNKED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CCGBHHFBAFJ",
-            |m: &FBGLLDNLGPE| { &m.CCGBHHFBAFJ },
-            |m: &mut FBGLLDNLGPE| { &mut m.CCGBHHFBAFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FBGLLDNLGPE>(
             "FBGLLDNLGPE",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.KMLPPMNMPKE = is.read_uint32()?;
-                },
-                26 => {
+                10 => {
                     self.NICGNEMCHED.push(is.read_message()?);
                 },
-                98 => {
-                    self.MMEIPHBNKED.push(is.read_message()?);
+                80 => {
+                    self.KMLPPMNMPKE = is.read_uint32()?;
                 },
-                82 => {
+                98 => {
                     self.CCGBHHFBAFJ.push(is.read_message()?);
+                },
+                50 => {
+                    self.MMEIPHBNKED.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMLPPMNMPKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KMLPPMNMPKE);
-        }
         for value in &self.NICGNEMCHED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.MMEIPHBNKED {
+        if self.KMLPPMNMPKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KMLPPMNMPKE);
+        }
+        for value in &self.CCGBHHFBAFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CCGBHHFBAFJ {
+        for value in &self.MMEIPHBNKED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -138,17 +138,17 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMLPPMNMPKE != 0 {
-            os.write_uint32(4, self.KMLPPMNMPKE)?;
-        }
         for v in &self.NICGNEMCHED {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.MMEIPHBNKED {
+        if self.KMLPPMNMPKE != 0 {
+            os.write_uint32(10, self.KMLPPMNMPKE)?;
+        }
+        for v in &self.CCGBHHFBAFJ {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.CCGBHHFBAFJ {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.MMEIPHBNKED {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for FBGLLDNLGPE {
     }
 
     fn clear(&mut self) {
-        self.KMLPPMNMPKE = 0;
         self.NICGNEMCHED.clear();
-        self.MMEIPHBNKED.clear();
+        self.KMLPPMNMPKE = 0;
         self.CCGBHHFBAFJ.clear();
+        self.MMEIPHBNKED.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FBGLLDNLGPE {
         static instance: FBGLLDNLGPE = FBGLLDNLGPE {
-            KMLPPMNMPKE: 0,
             NICGNEMCHED: ::std::vec::Vec::new(),
-            MMEIPHBNKED: ::std::vec::Vec::new(),
+            KMLPPMNMPKE: 0,
             CCGBHHFBAFJ: ::std::vec::Vec::new(),
+            MMEIPHBNKED: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for FBGLLDNLGPE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBGLLDNLGPE.proto\x1a\x11HEOJLDBKKGE.proto\x1a\x11LPCNJMFIPNP.prot\
-    o\x1a\x11PJJDMMBKKCN.proto\"\xbf\x01\n\x0bFBGLLDNLGPE\x12\x20\n\x0bKMLPP\
-    MNMPKE\x18\x04\x20\x01(\rR\x0bKMLPPMNMPKE\x12.\n\x0bNICGNEMCHED\x18\x03\
-    \x20\x03(\x0b2\x0c.LPCNJMFIPNPR\x0bNICGNEMCHED\x12.\n\x0bMMEIPHBNKED\x18\
-    \x0c\x20\x03(\x0b2\x0c.PJJDMMBKKCNR\x0bMMEIPHBNKED\x12.\n\x0bCCGBHHFBAFJ\
-    \x18\n\x20\x03(\x0b2\x0c.HEOJLDBKKGER\x0bCCGBHHFBAFJb\x06proto3\
+    o\x1a\x11PJJDMMBKKCN.proto\"\xbf\x01\n\x0bFBGLLDNLGPE\x12.\n\x0bNICGNEMC\
+    HED\x18\x01\x20\x03(\x0b2\x0c.LPCNJMFIPNPR\x0bNICGNEMCHED\x12\x20\n\x0bK\
+    MLPPMNMPKE\x18\n\x20\x01(\rR\x0bKMLPPMNMPKE\x12.\n\x0bCCGBHHFBAFJ\x18\
+    \x0c\x20\x03(\x0b2\x0c.HEOJLDBKKGER\x0bCCGBHHFBAFJ\x12.\n\x0bMMEIPHBNKED\
+    \x18\x06\x20\x03(\x0b2\x0c.PJJDMMBKKCNR\x0bMMEIPHBNKEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for DHMFCIDJBFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
                     self.magic_scepter_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DHMFCIDJBFD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.magic_scepter_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for DHMFCIDJBFD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DHMFCIDJBFD.proto\x1a\x11KIFILCJOLCH.proto\"R\n\x0bDHMFCIDJBFD\x12\
-    C\n\x17magic_scepter_info_list\x18\x08\x20\x03(\x0b2\x0c.KIFILCJOLCHR\
+    C\n\x17magic_scepter_info_list\x18\x01\x20\x03(\x0b2\x0c.KIFILCJOLCHR\
     \x14magicScepterInfoListb\x06proto3\
 ";
 

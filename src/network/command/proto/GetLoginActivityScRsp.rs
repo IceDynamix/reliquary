@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
                 98 => {
                     self.login_activity_list.push(is.read_message()?);
                 },
-                112 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetLoginActivityScRsp.proto\x1a\x17LoginActivityData.proto\"u\n\
     \x15GetLoginActivityScRsp\x12B\n\x13login_activity_list\x18\x0c\x20\x03(\
     \x0b2\x12.LoginActivityDataR\x11loginActivityList\x12\x18\n\x07retcode\
-    \x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

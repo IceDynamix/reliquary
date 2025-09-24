@@ -30,32 +30,32 @@ pub struct LineupInfo {
     // message fields
     // @@protoc_insertion_point(field:LineupInfo.index)
     pub index: u32,
-    // @@protoc_insertion_point(field:LineupInfo.BFNBKLMAMKB)
-    pub BFNBKLMAMKB: bool,
     // @@protoc_insertion_point(field:LineupInfo.mp)
     pub mp: u32,
-    // @@protoc_insertion_point(field:LineupInfo.MANKKFPBFCB)
-    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LineupInfo.max_mp)
-    pub max_mp: u32,
-    // @@protoc_insertion_point(field:LineupInfo.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:LineupInfo.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:LineupInfo.game_story_line_id)
     pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:LineupInfo.leader_slot)
-    pub leader_slot: u32,
-    // @@protoc_insertion_point(field:LineupInfo.name)
-    pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:LineupInfo.KOMPCJPAPKM)
-    pub KOMPCJPAPKM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LineupInfo.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::LineupAvatar::LineupAvatar>,
+    // @@protoc_insertion_point(field:LineupInfo.MANKKFPBFCB)
+    pub MANKKFPBFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LineupInfo.story_line_avatar_id_list)
     pub story_line_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LineupInfo.leader_slot)
+    pub leader_slot: u32,
+    // @@protoc_insertion_point(field:LineupInfo.KOMPCJPAPKM)
+    pub KOMPCJPAPKM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LineupInfo.BFNBKLMAMKB)
+    pub BFNBKLMAMKB: bool,
+    // @@protoc_insertion_point(field:LineupInfo.plane_id)
+    pub plane_id: u32,
+    // @@protoc_insertion_point(field:LineupInfo.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::LineupAvatar::LineupAvatar>,
+    // @@protoc_insertion_point(field:LineupInfo.max_mp)
+    pub max_mp: u32,
+    // @@protoc_insertion_point(field:LineupInfo.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:LineupInfo.is_virtual)
     pub is_virtual: bool,
+    // @@protoc_insertion_point(field:LineupInfo.name)
+    pub name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:LineupInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -81,59 +81,19 @@ impl LineupInfo {
             |m: &mut LineupInfo| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFNBKLMAMKB",
-            |m: &LineupInfo| { &m.BFNBKLMAMKB },
-            |m: &mut LineupInfo| { &mut m.BFNBKLMAMKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "mp",
             |m: &LineupInfo| { &m.mp },
             |m: &mut LineupInfo| { &mut m.mp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MANKKFPBFCB",
-            |m: &LineupInfo| { &m.MANKKFPBFCB },
-            |m: &mut LineupInfo| { &mut m.MANKKFPBFCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_mp",
-            |m: &LineupInfo| { &m.max_mp },
-            |m: &mut LineupInfo| { &mut m.max_mp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &LineupInfo| { &m.plane_id },
-            |m: &mut LineupInfo| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &LineupInfo| { &m.extra_lineup_type },
-            |m: &mut LineupInfo| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "game_story_line_id",
             |m: &LineupInfo| { &m.game_story_line_id },
             |m: &mut LineupInfo| { &mut m.game_story_line_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "leader_slot",
-            |m: &LineupInfo| { &m.leader_slot },
-            |m: &mut LineupInfo| { &mut m.leader_slot },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &LineupInfo| { &m.name },
-            |m: &mut LineupInfo| { &mut m.name },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KOMPCJPAPKM",
-            |m: &LineupInfo| { &m.KOMPCJPAPKM },
-            |m: &mut LineupInfo| { &mut m.KOMPCJPAPKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &LineupInfo| { &m.avatar_list },
-            |m: &mut LineupInfo| { &mut m.avatar_list },
+            "MANKKFPBFCB",
+            |m: &LineupInfo| { &m.MANKKFPBFCB },
+            |m: &mut LineupInfo| { &mut m.MANKKFPBFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "story_line_avatar_id_list",
@@ -141,9 +101,49 @@ impl LineupInfo {
             |m: &mut LineupInfo| { &mut m.story_line_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "leader_slot",
+            |m: &LineupInfo| { &m.leader_slot },
+            |m: &mut LineupInfo| { &mut m.leader_slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KOMPCJPAPKM",
+            |m: &LineupInfo| { &m.KOMPCJPAPKM },
+            |m: &mut LineupInfo| { &mut m.KOMPCJPAPKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BFNBKLMAMKB",
+            |m: &LineupInfo| { &m.BFNBKLMAMKB },
+            |m: &mut LineupInfo| { &mut m.BFNBKLMAMKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &LineupInfo| { &m.plane_id },
+            |m: &mut LineupInfo| { &mut m.plane_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &LineupInfo| { &m.avatar_list },
+            |m: &mut LineupInfo| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_mp",
+            |m: &LineupInfo| { &m.max_mp },
+            |m: &mut LineupInfo| { &mut m.max_mp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_lineup_type",
+            |m: &LineupInfo| { &m.extra_lineup_type },
+            |m: &mut LineupInfo| { &mut m.extra_lineup_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_virtual",
             |m: &LineupInfo| { &m.is_virtual },
             |m: &mut LineupInfo| { &mut m.is_virtual },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &LineupInfo| { &m.name },
+            |m: &mut LineupInfo| { &mut m.name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LineupInfo>(
             "LineupInfo",
@@ -163,56 +163,56 @@ impl ::protobuf::Message for LineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                40 => {
                     self.index = is.read_uint32()?;
                 },
-                16 => {
-                    self.BFNBKLMAMKB = is.read_bool()?;
-                },
-                80 => {
+                88 => {
                     self.mp = is.read_uint32()?;
                 },
-                42 => {
+                48 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.MANKKFPBFCB)?;
                 },
-                40 => {
+                32 => {
                     self.MANKKFPBFCB.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.max_mp = is.read_uint32()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.story_line_avatar_id_list)?;
                 },
-                48 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                32 => {
-                    self.game_story_line_id = is.read_uint32()?;
+                24 => {
+                    self.story_line_avatar_id_list.push(is.read_uint32()?);
                 },
                 120 => {
                     self.leader_slot = is.read_uint32()?;
                 },
-                98 => {
-                    self.name = is.read_string()?;
-                },
-                26 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.KOMPCJPAPKM)?;
                 },
-                24 => {
+                112 => {
                     self.KOMPCJPAPKM.push(is.read_uint32()?);
                 },
-                66 => {
+                64 => {
+                    self.BFNBKLMAMKB = is.read_bool()?;
+                },
+                104 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                18 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.story_line_avatar_id_list)?;
-                },
-                88 => {
-                    self.story_line_avatar_id_list.push(is.read_uint32()?);
-                },
                 56 => {
+                    self.max_mp = is.read_uint32()?;
+                },
+                72 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                },
+                8 => {
                     self.is_virtual = is.read_bool()?;
+                },
+                82 => {
+                    self.name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -227,41 +227,41 @@ impl ::protobuf::Message for LineupInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.index);
-        }
-        if self.BFNBKLMAMKB != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(5, self.index);
         }
         if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.mp);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.MANKKFPBFCB);
-        if self.max_mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.max_mp);
-        }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.plane_id);
-        }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::uint32_size(11, self.mp);
         }
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.game_story_line_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.MANKKFPBFCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.story_line_avatar_id_list);
         if self.leader_slot != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.leader_slot);
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.name);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.KOMPCJPAPKM);
+        if self.BFNBKLMAMKB != false {
+            my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.KOMPCJPAPKM);
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.plane_id);
+        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.story_line_avatar_id_list);
+        if self.max_mp != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.max_mp);
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.extra_lineup_type.value());
+        }
         if self.is_virtual != false {
             my_size += 1 + 1;
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -270,40 +270,40 @@ impl ::protobuf::Message for LineupInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.index != 0 {
-            os.write_uint32(9, self.index)?;
-        }
-        if self.BFNBKLMAMKB != false {
-            os.write_bool(2, self.BFNBKLMAMKB)?;
+            os.write_uint32(5, self.index)?;
         }
         if self.mp != 0 {
-            os.write_uint32(10, self.mp)?;
-        }
-        os.write_repeated_packed_uint32(5, &self.MANKKFPBFCB)?;
-        if self.max_mp != 0 {
-            os.write_uint32(14, self.max_mp)?;
-        }
-        if self.plane_id != 0 {
-            os.write_uint32(6, self.plane_id)?;
-        }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_uint32(11, self.mp)?;
         }
         if self.game_story_line_id != 0 {
-            os.write_uint32(4, self.game_story_line_id)?;
+            os.write_uint32(6, self.game_story_line_id)?;
         }
+        os.write_repeated_packed_uint32(4, &self.MANKKFPBFCB)?;
+        os.write_repeated_packed_uint32(3, &self.story_line_avatar_id_list)?;
         if self.leader_slot != 0 {
             os.write_uint32(15, self.leader_slot)?;
         }
-        if !self.name.is_empty() {
-            os.write_string(12, &self.name)?;
+        os.write_repeated_packed_uint32(14, &self.KOMPCJPAPKM)?;
+        if self.BFNBKLMAMKB != false {
+            os.write_bool(8, self.BFNBKLMAMKB)?;
         }
-        os.write_repeated_packed_uint32(3, &self.KOMPCJPAPKM)?;
+        if self.plane_id != 0 {
+            os.write_uint32(13, self.plane_id)?;
+        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        os.write_repeated_packed_uint32(11, &self.story_line_avatar_id_list)?;
+        if self.max_mp != 0 {
+            os.write_uint32(7, self.max_mp)?;
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+        }
         if self.is_virtual != false {
-            os.write_bool(7, self.is_virtual)?;
+            os.write_bool(1, self.is_virtual)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(10, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -323,38 +323,38 @@ impl ::protobuf::Message for LineupInfo {
 
     fn clear(&mut self) {
         self.index = 0;
-        self.BFNBKLMAMKB = false;
         self.mp = 0;
-        self.MANKKFPBFCB.clear();
-        self.max_mp = 0;
-        self.plane_id = 0;
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.game_story_line_id = 0;
-        self.leader_slot = 0;
-        self.name.clear();
-        self.KOMPCJPAPKM.clear();
-        self.avatar_list.clear();
+        self.MANKKFPBFCB.clear();
         self.story_line_avatar_id_list.clear();
+        self.leader_slot = 0;
+        self.KOMPCJPAPKM.clear();
+        self.BFNBKLMAMKB = false;
+        self.plane_id = 0;
+        self.avatar_list.clear();
+        self.max_mp = 0;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.is_virtual = false;
+        self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LineupInfo {
         static instance: LineupInfo = LineupInfo {
             index: 0,
-            BFNBKLMAMKB: false,
             mp: 0,
-            MANKKFPBFCB: ::std::vec::Vec::new(),
-            max_mp: 0,
-            plane_id: 0,
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             game_story_line_id: 0,
-            leader_slot: 0,
-            name: ::std::string::String::new(),
-            KOMPCJPAPKM: ::std::vec::Vec::new(),
-            avatar_list: ::std::vec::Vec::new(),
+            MANKKFPBFCB: ::std::vec::Vec::new(),
             story_line_avatar_id_list: ::std::vec::Vec::new(),
+            leader_slot: 0,
+            KOMPCJPAPKM: ::std::vec::Vec::new(),
+            BFNBKLMAMKB: false,
+            plane_id: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            max_mp: 0,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             is_virtual: false,
+            name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -380,19 +380,19 @@ impl ::protobuf::reflect::ProtobufValue for LineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10LineupInfo.proto\x1a\x15ExtraLineupType.proto\x1a\x12LineupAvatar.\
-    proto\"\xf3\x03\n\nLineupInfo\x12\x14\n\x05index\x18\t\x20\x01(\rR\x05in\
-    dex\x12\x20\n\x0bBFNBKLMAMKB\x18\x02\x20\x01(\x08R\x0bBFNBKLMAMKB\x12\
-    \x0e\n\x02mp\x18\n\x20\x01(\rR\x02mp\x12\x20\n\x0bMANKKFPBFCB\x18\x05\
-    \x20\x03(\rR\x0bMANKKFPBFCB\x12\x15\n\x06max_mp\x18\x0e\x20\x01(\rR\x05m\
-    axMp\x12\x19\n\x08plane_id\x18\x06\x20\x01(\rR\x07planeId\x12<\n\x11extr\
-    a_lineup_type\x18\x01\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupT\
-    ype\x12+\n\x12game_story_line_id\x18\x04\x20\x01(\rR\x0fgameStoryLineId\
-    \x12\x1f\n\x0bleader_slot\x18\x0f\x20\x01(\rR\nleaderSlot\x12\x12\n\x04n\
-    ame\x18\x0c\x20\x01(\tR\x04name\x12\x20\n\x0bKOMPCJPAPKM\x18\x03\x20\x03\
-    (\rR\x0bKOMPCJPAPKM\x12.\n\x0bavatar_list\x18\x08\x20\x03(\x0b2\r.Lineup\
-    AvatarR\navatarList\x128\n\x19story_line_avatar_id_list\x18\x0b\x20\x03(\
-    \rR\x15storyLineAvatarIdList\x12\x1d\n\nis_virtual\x18\x07\x20\x01(\x08R\
-    \tisVirtualb\x06proto3\
+    proto\"\xf3\x03\n\nLineupInfo\x12\x14\n\x05index\x18\x05\x20\x01(\rR\x05\
+    index\x12\x0e\n\x02mp\x18\x0b\x20\x01(\rR\x02mp\x12+\n\x12game_story_lin\
+    e_id\x18\x06\x20\x01(\rR\x0fgameStoryLineId\x12\x20\n\x0bMANKKFPBFCB\x18\
+    \x04\x20\x03(\rR\x0bMANKKFPBFCB\x128\n\x19story_line_avatar_id_list\x18\
+    \x03\x20\x03(\rR\x15storyLineAvatarIdList\x12\x1f\n\x0bleader_slot\x18\
+    \x0f\x20\x01(\rR\nleaderSlot\x12\x20\n\x0bKOMPCJPAPKM\x18\x0e\x20\x03(\r\
+    R\x0bKOMPCJPAPKM\x12\x20\n\x0bBFNBKLMAMKB\x18\x08\x20\x01(\x08R\x0bBFNBK\
+    LMAMKB\x12\x19\n\x08plane_id\x18\r\x20\x01(\rR\x07planeId\x12.\n\x0bavat\
+    ar_list\x18\x02\x20\x03(\x0b2\r.LineupAvatarR\navatarList\x12\x15\n\x06m\
+    ax_mp\x18\x07\x20\x01(\rR\x05maxMp\x12<\n\x11extra_lineup_type\x18\t\x20\
+    \x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x1d\n\nis_virtual\
+    \x18\x01\x20\x01(\x08R\tisVirtual\x12\x12\n\x04name\x18\n\x20\x01(\tR\
+    \x04nameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

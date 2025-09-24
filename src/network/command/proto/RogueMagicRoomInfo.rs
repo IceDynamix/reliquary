@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicRoomInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicRoomInfo.room_index)
-    pub room_index: u32,
-    // @@protoc_insertion_point(field:RogueMagicRoomInfo.EIPNNEJNNKJ)
-    pub EIPNNEJNNKJ: u32,
     // @@protoc_insertion_point(field:RogueMagicRoomInfo.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueMagicRoomStatus::RogueMagicRoomStatus>,
     // @@protoc_insertion_point(field:RogueMagicRoomInfo.room_id)
     pub room_id: u32,
+    // @@protoc_insertion_point(field:RogueMagicRoomInfo.EIPNNEJNNKJ)
+    pub EIPNNEJNNKJ: u32,
+    // @@protoc_insertion_point(field:RogueMagicRoomInfo.room_index)
+    pub room_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicRoomInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl RogueMagicRoomInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_index",
-            |m: &RogueMagicRoomInfo| { &m.room_index },
-            |m: &mut RogueMagicRoomInfo| { &mut m.room_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIPNNEJNNKJ",
-            |m: &RogueMagicRoomInfo| { &m.EIPNNEJNNKJ },
-            |m: &mut RogueMagicRoomInfo| { &mut m.EIPNNEJNNKJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &RogueMagicRoomInfo| { &m.status },
             |m: &mut RogueMagicRoomInfo| { &mut m.status },
@@ -74,6 +64,16 @@ impl RogueMagicRoomInfo {
             "room_id",
             |m: &RogueMagicRoomInfo| { &m.room_id },
             |m: &mut RogueMagicRoomInfo| { &mut m.room_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIPNNEJNNKJ",
+            |m: &RogueMagicRoomInfo| { &m.EIPNNEJNNKJ },
+            |m: &mut RogueMagicRoomInfo| { &mut m.EIPNNEJNNKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_index",
+            |m: &RogueMagicRoomInfo| { &m.room_index },
+            |m: &mut RogueMagicRoomInfo| { &mut m.room_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicRoomInfo>(
             "RogueMagicRoomInfo",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for RogueMagicRoomInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.room_index = is.read_uint32()?;
-                },
-                72 => {
-                    self.EIPNNEJNNKJ = is.read_uint32()?;
-                },
-                88 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                64 => {
                     self.room_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.EIPNNEJNNKJ = is.read_uint32()?;
+                },
+                120 => {
+                    self.room_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RogueMagicRoomInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.room_index);
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EIPNNEJNNKJ);
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicRoomStatus::RogueMagicRoomStatus::ROGUE_MAGIC_ROOM_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+            my_size += ::protobuf::rt::int32_size(14, self.status.value());
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.room_id);
+        }
+        if self.EIPNNEJNNKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EIPNNEJNNKJ);
+        }
+        if self.room_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.room_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for RogueMagicRoomInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_index != 0 {
-            os.write_uint32(14, self.room_index)?;
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(9, self.EIPNNEJNNKJ)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicRoomStatus::RogueMagicRoomStatus::ROGUE_MAGIC_ROOM_STATUS_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.room_id != 0 {
-            os.write_uint32(13, self.room_id)?;
+            os.write_uint32(8, self.room_id)?;
+        }
+        if self.EIPNNEJNNKJ != 0 {
+            os.write_uint32(6, self.EIPNNEJNNKJ)?;
+        }
+        if self.room_index != 0 {
+            os.write_uint32(15, self.room_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RogueMagicRoomInfo {
     }
 
     fn clear(&mut self) {
-        self.room_index = 0;
-        self.EIPNNEJNNKJ = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueMagicRoomStatus::RogueMagicRoomStatus::ROGUE_MAGIC_ROOM_STATUS_NONE);
         self.room_id = 0;
+        self.EIPNNEJNNKJ = 0;
+        self.room_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicRoomInfo {
         static instance: RogueMagicRoomInfo = RogueMagicRoomInfo {
-            room_index: 0,
-            EIPNNEJNNKJ: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
+            EIPNNEJNNKJ: 0,
+            room_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicRoomInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueMagicRoomInfo.proto\x1a\x1aRogueMagicRoomStatus.proto\"\x9d\
-    \x01\n\x12RogueMagicRoomInfo\x12\x1d\n\nroom_index\x18\x0e\x20\x01(\rR\t\
-    roomIndex\x12\x20\n\x0bEIPNNEJNNKJ\x18\t\x20\x01(\rR\x0bEIPNNEJNNKJ\x12-\
-    \n\x06status\x18\x0b\x20\x01(\x0e2\x15.RogueMagicRoomStatusR\x06status\
-    \x12\x17\n\x07room_id\x18\r\x20\x01(\rR\x06roomIdb\x06proto3\
+    \x01\n\x12RogueMagicRoomInfo\x12-\n\x06status\x18\x0e\x20\x01(\x0e2\x15.\
+    RogueMagicRoomStatusR\x06status\x12\x17\n\x07room_id\x18\x08\x20\x01(\rR\
+    \x06roomId\x12\x20\n\x0bEIPNNEJNNKJ\x18\x06\x20\x01(\rR\x0bEIPNNEJNNKJ\
+    \x12\x1d\n\nroom_index\x18\x0f\x20\x01(\rR\troomIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

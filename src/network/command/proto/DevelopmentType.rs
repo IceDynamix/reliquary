@@ -55,6 +55,10 @@ pub enum DevelopmentType {
     DEVELOPMENT_ROGUE_TOURN_WEEK = 12,
     // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_MAGIC)
     DEVELOPMENT_ROGUE_MAGIC = 13,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_CHALLENGE_PEAK)
+    DEVELOPMENT_CHALLENGE_PEAK = 14,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN_DIVISION)
+    DEVELOPMENT_ROGUE_TOURN_DIVISION = 15,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -80,6 +84,8 @@ impl ::protobuf::Enum for DevelopmentType {
             11 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
             12 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
             13 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
+            14 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
+            15 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
             _ => ::std::option::Option::None
         }
     }
@@ -100,6 +106,8 @@ impl ::protobuf::Enum for DevelopmentType {
             "DEVELOPMENT_ROGUE_TOURN" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
             "DEVELOPMENT_ROGUE_TOURN_WEEK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
             "DEVELOPMENT_ROGUE_MAGIC" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
+            "DEVELOPMENT_CHALLENGE_PEAK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
+            "DEVELOPMENT_ROGUE_TOURN_DIVISION" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
             _ => ::std::option::Option::None
         }
     }
@@ -119,6 +127,8 @@ impl ::protobuf::Enum for DevelopmentType {
         DevelopmentType::DEVELOPMENT_ROGUE_TOURN,
         DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK,
         DevelopmentType::DEVELOPMENT_ROGUE_MAGIC,
+        DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK,
+        DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION,
     ];
 }
 
@@ -147,7 +157,7 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\xc2\x03\n\x0fDevelopmentType\x12\x14\n\x10D\
+    \n\x15DevelopmentType.proto*\x88\x04\n\x0fDevelopmentType\x12\x14\n\x10D\
     EVELOPMENT_NONE\x10\0\x12\x1c\n\x18DEVELOPMENT_ROGUE_COSMOS\x10\x01\x12\
     \x1b\n\x17DEVELOPMENT_ROGUE_CHESS\x10\x02\x12\x20\n\x1cDEVELOPMENT_ROGUE\
     _CHESS_NOUS\x10\x03\x12\x20\n\x1cDEVELOPMENT_MEMORY_CHALLENGE\x10\x04\
@@ -156,8 +166,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x07\x12\x1e\n\x1aDEVELOPMENT_ACTIVITY_START\x10\x08\x12\x1c\n\x18DEVELO\
     PMENT_ACTIVITY_END\x10\t\x12\x1e\n\x1aDEVELOPMENT_BOSS_CHALLENGE\x10\n\
     \x12\x1b\n\x17DEVELOPMENT_ROGUE_TOURN\x10\x0b\x12\x20\n\x1cDEVELOPMENT_R\
-    OGUE_TOURN_WEEK\x10\x0c\x12\x1b\n\x17DEVELOPMENT_ROGUE_MAGIC\x10\rb\x06p\
-    roto3\
+    OGUE_TOURN_WEEK\x10\x0c\x12\x1b\n\x17DEVELOPMENT_ROGUE_MAGIC\x10\r\x12\
+    \x1e\n\x1aDEVELOPMENT_CHALLENGE_PEAK\x10\x0e\x12$\n\x20DEVELOPMENT_ROGUE\
+    _TOURN_DIVISION\x10\x0fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

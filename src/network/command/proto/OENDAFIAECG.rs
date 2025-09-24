@@ -30,20 +30,20 @@ pub struct OENDAFIAECG {
     // message fields
     // @@protoc_insertion_point(field:OENDAFIAECG.HDLLMDNLOKP)
     pub HDLLMDNLOKP: u32,
-    // @@protoc_insertion_point(field:OENDAFIAECG.KKPKALJMAMF)
-    pub KKPKALJMAMF: u32,
     // @@protoc_insertion_point(field:OENDAFIAECG.JPKJKIMNIGG)
     pub JPKJKIMNIGG: u32,
-    // @@protoc_insertion_point(field:OENDAFIAECG.HDJCJBBKNAF)
-    pub HDJCJBBKNAF: u32,
     // @@protoc_insertion_point(field:OENDAFIAECG.BPEKCEJPOFE)
     pub BPEKCEJPOFE: u32,
+    // @@protoc_insertion_point(field:OENDAFIAECG.is_rotate)
+    pub is_rotate: bool,
     // @@protoc_insertion_point(field:OENDAFIAECG.AEIEOJGCMMO)
     pub AEIEOJGCMMO: u32,
     // @@protoc_insertion_point(field:OENDAFIAECG.battle_id)
     pub battle_id: u32,
-    // @@protoc_insertion_point(field:OENDAFIAECG.is_rotate)
-    pub is_rotate: bool,
+    // @@protoc_insertion_point(field:OENDAFIAECG.KKPKALJMAMF)
+    pub KKPKALJMAMF: u32,
+    // @@protoc_insertion_point(field:OENDAFIAECG.HDJCJBBKNAF)
+    pub HDJCJBBKNAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OENDAFIAECG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,24 +69,19 @@ impl OENDAFIAECG {
             |m: &mut OENDAFIAECG| { &mut m.HDLLMDNLOKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKPKALJMAMF",
-            |m: &OENDAFIAECG| { &m.KKPKALJMAMF },
-            |m: &mut OENDAFIAECG| { &mut m.KKPKALJMAMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JPKJKIMNIGG",
             |m: &OENDAFIAECG| { &m.JPKJKIMNIGG },
             |m: &mut OENDAFIAECG| { &mut m.JPKJKIMNIGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDJCJBBKNAF",
-            |m: &OENDAFIAECG| { &m.HDJCJBBKNAF },
-            |m: &mut OENDAFIAECG| { &mut m.HDJCJBBKNAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPEKCEJPOFE",
             |m: &OENDAFIAECG| { &m.BPEKCEJPOFE },
             |m: &mut OENDAFIAECG| { &mut m.BPEKCEJPOFE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_rotate",
+            |m: &OENDAFIAECG| { &m.is_rotate },
+            |m: &mut OENDAFIAECG| { &mut m.is_rotate },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AEIEOJGCMMO",
@@ -99,9 +94,14 @@ impl OENDAFIAECG {
             |m: &mut OENDAFIAECG| { &mut m.battle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_rotate",
-            |m: &OENDAFIAECG| { &m.is_rotate },
-            |m: &mut OENDAFIAECG| { &mut m.is_rotate },
+            "KKPKALJMAMF",
+            |m: &OENDAFIAECG| { &m.KKPKALJMAMF },
+            |m: &mut OENDAFIAECG| { &mut m.KKPKALJMAMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDJCJBBKNAF",
+            |m: &OENDAFIAECG| { &m.HDJCJBBKNAF },
+            |m: &mut OENDAFIAECG| { &mut m.HDJCJBBKNAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OENDAFIAECG>(
             "OENDAFIAECG",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for OENDAFIAECG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.HDLLMDNLOKP = is.read_uint32()?;
                 },
-                112 => {
-                    self.KKPKALJMAMF = is.read_uint32()?;
-                },
-                88 => {
+                80 => {
                     self.JPKJKIMNIGG = is.read_uint32()?;
                 },
-                16 => {
-                    self.HDJCJBBKNAF = is.read_uint32()?;
-                },
-                40 => {
+                48 => {
                     self.BPEKCEJPOFE = is.read_uint32()?;
                 },
-                64 => {
+                56 => {
+                    self.is_rotate = is.read_bool()?;
+                },
+                16 => {
                     self.AEIEOJGCMMO = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.is_rotate = is.read_bool()?;
+                104 => {
+                    self.KKPKALJMAMF = is.read_uint32()?;
+                },
+                120 => {
+                    self.HDJCJBBKNAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -158,28 +158,28 @@ impl ::protobuf::Message for OENDAFIAECG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HDLLMDNLOKP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HDLLMDNLOKP);
-        }
-        if self.KKPKALJMAMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KKPKALJMAMF);
+            my_size += ::protobuf::rt::uint32_size(12, self.HDLLMDNLOKP);
         }
         if self.JPKJKIMNIGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JPKJKIMNIGG);
-        }
-        if self.HDJCJBBKNAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HDJCJBBKNAF);
+            my_size += ::protobuf::rt::uint32_size(10, self.JPKJKIMNIGG);
         }
         if self.BPEKCEJPOFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BPEKCEJPOFE);
-        }
-        if self.AEIEOJGCMMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AEIEOJGCMMO);
-        }
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.BPEKCEJPOFE);
         }
         if self.is_rotate != false {
             my_size += 1 + 1;
+        }
+        if self.AEIEOJGCMMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AEIEOJGCMMO);
+        }
+        if self.battle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.battle_id);
+        }
+        if self.KKPKALJMAMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KKPKALJMAMF);
+        }
+        if self.HDJCJBBKNAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HDJCJBBKNAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,28 +188,28 @@ impl ::protobuf::Message for OENDAFIAECG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HDLLMDNLOKP != 0 {
-            os.write_uint32(13, self.HDLLMDNLOKP)?;
-        }
-        if self.KKPKALJMAMF != 0 {
-            os.write_uint32(14, self.KKPKALJMAMF)?;
+            os.write_uint32(12, self.HDLLMDNLOKP)?;
         }
         if self.JPKJKIMNIGG != 0 {
-            os.write_uint32(11, self.JPKJKIMNIGG)?;
-        }
-        if self.HDJCJBBKNAF != 0 {
-            os.write_uint32(2, self.HDJCJBBKNAF)?;
+            os.write_uint32(10, self.JPKJKIMNIGG)?;
         }
         if self.BPEKCEJPOFE != 0 {
-            os.write_uint32(5, self.BPEKCEJPOFE)?;
-        }
-        if self.AEIEOJGCMMO != 0 {
-            os.write_uint32(8, self.AEIEOJGCMMO)?;
-        }
-        if self.battle_id != 0 {
-            os.write_uint32(9, self.battle_id)?;
+            os.write_uint32(6, self.BPEKCEJPOFE)?;
         }
         if self.is_rotate != false {
-            os.write_bool(4, self.is_rotate)?;
+            os.write_bool(7, self.is_rotate)?;
+        }
+        if self.AEIEOJGCMMO != 0 {
+            os.write_uint32(2, self.AEIEOJGCMMO)?;
+        }
+        if self.battle_id != 0 {
+            os.write_uint32(11, self.battle_id)?;
+        }
+        if self.KKPKALJMAMF != 0 {
+            os.write_uint32(13, self.KKPKALJMAMF)?;
+        }
+        if self.HDJCJBBKNAF != 0 {
+            os.write_uint32(15, self.HDJCJBBKNAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,26 +229,26 @@ impl ::protobuf::Message for OENDAFIAECG {
 
     fn clear(&mut self) {
         self.HDLLMDNLOKP = 0;
-        self.KKPKALJMAMF = 0;
         self.JPKJKIMNIGG = 0;
-        self.HDJCJBBKNAF = 0;
         self.BPEKCEJPOFE = 0;
+        self.is_rotate = false;
         self.AEIEOJGCMMO = 0;
         self.battle_id = 0;
-        self.is_rotate = false;
+        self.KKPKALJMAMF = 0;
+        self.HDJCJBBKNAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OENDAFIAECG {
         static instance: OENDAFIAECG = OENDAFIAECG {
             HDLLMDNLOKP: 0,
-            KKPKALJMAMF: 0,
             JPKJKIMNIGG: 0,
-            HDJCJBBKNAF: 0,
             BPEKCEJPOFE: 0,
+            is_rotate: false,
             AEIEOJGCMMO: 0,
             battle_id: 0,
-            is_rotate: false,
+            KKPKALJMAMF: 0,
+            HDJCJBBKNAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,13 +274,13 @@ impl ::protobuf::reflect::ProtobufValue for OENDAFIAECG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OENDAFIAECG.proto\"\x93\x02\n\x0bOENDAFIAECG\x12\x20\n\x0bHDLLMDNL\
-    OKP\x18\r\x20\x01(\rR\x0bHDLLMDNLOKP\x12\x20\n\x0bKKPKALJMAMF\x18\x0e\
-    \x20\x01(\rR\x0bKKPKALJMAMF\x12\x20\n\x0bJPKJKIMNIGG\x18\x0b\x20\x01(\rR\
-    \x0bJPKJKIMNIGG\x12\x20\n\x0bHDJCJBBKNAF\x18\x02\x20\x01(\rR\x0bHDJCJBBK\
-    NAF\x12\x20\n\x0bBPEKCEJPOFE\x18\x05\x20\x01(\rR\x0bBPEKCEJPOFE\x12\x20\
-    \n\x0bAEIEOJGCMMO\x18\x08\x20\x01(\rR\x0bAEIEOJGCMMO\x12\x1b\n\tbattle_i\
-    d\x18\t\x20\x01(\rR\x08battleId\x12\x1b\n\tis_rotate\x18\x04\x20\x01(\
-    \x08R\x08isRotateb\x06proto3\
+    OKP\x18\x0c\x20\x01(\rR\x0bHDLLMDNLOKP\x12\x20\n\x0bJPKJKIMNIGG\x18\n\
+    \x20\x01(\rR\x0bJPKJKIMNIGG\x12\x20\n\x0bBPEKCEJPOFE\x18\x06\x20\x01(\rR\
+    \x0bBPEKCEJPOFE\x12\x1b\n\tis_rotate\x18\x07\x20\x01(\x08R\x08isRotate\
+    \x12\x20\n\x0bAEIEOJGCMMO\x18\x02\x20\x01(\rR\x0bAEIEOJGCMMO\x12\x1b\n\t\
+    battle_id\x18\x0b\x20\x01(\rR\x08battleId\x12\x20\n\x0bKKPKALJMAMF\x18\r\
+    \x20\x01(\rR\x0bKKPKALJMAMF\x12\x20\n\x0bHDJCJBBKNAF\x18\x0f\x20\x01(\rR\
+    \x0bHDJCJBBKNAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

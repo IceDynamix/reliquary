@@ -28,14 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KAMCIOPBPGA {
     // message fields
-    // @@protoc_insertion_point(field:KAMCIOPBPGA.JHIAKMCHPLB)
-    pub JHIAKMCHPLB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KAMCIOPBPGA.remark_name)
-    pub remark_name: ::std::string::String,
+    // @@protoc_insertion_point(field:KAMCIOPBPGA.peak_target)
+    pub peak_target: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KAMCIOPBPGA.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::OILPIACENNH::OILPIACENNH>,
-    // @@protoc_insertion_point(field:KAMCIOPBPGA.player_info)
-    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:KAMCIOPBPGA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,27 +49,17 @@ impl KAMCIOPBPGA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JHIAKMCHPLB",
-            |m: &KAMCIOPBPGA| { &m.JHIAKMCHPLB },
-            |m: &mut KAMCIOPBPGA| { &mut m.JHIAKMCHPLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &KAMCIOPBPGA| { &m.remark_name },
-            |m: &mut KAMCIOPBPGA| { &mut m.remark_name },
+            "peak_target",
+            |m: &KAMCIOPBPGA| { &m.peak_target },
+            |m: &mut KAMCIOPBPGA| { &mut m.peak_target },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &KAMCIOPBPGA| { &m.avatar_list },
             |m: &mut KAMCIOPBPGA| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_info",
-            |m: &KAMCIOPBPGA| { &m.player_info },
-            |m: &mut KAMCIOPBPGA| { &mut m.player_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KAMCIOPBPGA>(
             "KAMCIOPBPGA",
@@ -93,20 +79,14 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JHIAKMCHPLB)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
                 },
-                96 => {
-                    self.JHIAKMCHPLB.push(is.read_uint32()?);
+                80 => {
+                    self.peak_target.push(is.read_uint32()?);
                 },
-                26 => {
-                    self.remark_name = is.read_string()?;
-                },
-                106 => {
+                66 => {
                     self.avatar_list.push(is.read_message()?);
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,34 +100,21 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.JHIAKMCHPLB);
-        if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.remark_name);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.peak_target);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.player_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.JHIAKMCHPLB)?;
-        if !self.remark_name.is_empty() {
-            os.write_string(3, &self.remark_name)?;
-        }
+        os.write_repeated_packed_uint32(10, &self.peak_target)?;
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +132,15 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     }
 
     fn clear(&mut self) {
-        self.JHIAKMCHPLB.clear();
-        self.remark_name.clear();
+        self.peak_target.clear();
         self.avatar_list.clear();
-        self.player_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAMCIOPBPGA {
         static instance: KAMCIOPBPGA = KAMCIOPBPGA {
-            JHIAKMCHPLB: ::std::vec::Vec::new(),
-            remark_name: ::std::string::String::new(),
+            peak_target: ::std::vec::Vec::new(),
             avatar_list: ::std::vec::Vec::new(),
-            player_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KAMCIOPBPGA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KAMCIOPBPGA.proto\x1a\x11OILPIACENNH.proto\x1a\x16PlayerSimpleInfo\
-    .proto\"\xb3\x01\n\x0bKAMCIOPBPGA\x12\x20\n\x0bJHIAKMCHPLB\x18\x0c\x20\
-    \x03(\rR\x0bJHIAKMCHPLB\x12\x1f\n\x0bremark_name\x18\x03\x20\x01(\tR\nre\
-    markName\x12-\n\x0bavatar_list\x18\r\x20\x03(\x0b2\x0c.OILPIACENNHR\nava\
-    tarList\x122\n\x0bplayer_info\x18\x01\x20\x01(\x0b2\x11.PlayerSimpleInfo\
-    R\nplayerInfob\x06proto3\
+    \n\x11KAMCIOPBPGA.proto\x1a\x11OILPIACENNH.proto\"]\n\x0bKAMCIOPBPGA\x12\
+    \x1f\n\x0bpeak_target\x18\n\x20\x03(\rR\npeakTarget\x12-\n\x0bavatar_lis\
+    t\x18\x08\x20\x03(\x0b2\x0c.OILPIACENNHR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,9 +184,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::OILPIACENNH::file_descriptor().clone());
-            deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KAMCIOPBPGA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

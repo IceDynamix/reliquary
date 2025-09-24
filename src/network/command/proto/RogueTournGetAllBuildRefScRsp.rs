@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetAllBuildRefScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetAllBuildRefScRsp.IICCNGOKKLF)
-    pub IICCNGOKKLF: ::std::vec::Vec<super::ABDABIIKOJC::ABDABIIKOJC>,
     // @@protoc_insertion_point(field:RogueTournGetAllBuildRefScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournGetAllBuildRefScRsp.IICCNGOKKLF)
+    pub IICCNGOKKLF: ::std::vec::Vec<super::ABDABIIKOJC::ABDABIIKOJC>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetAllBuildRefScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueTournGetAllBuildRefScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IICCNGOKKLF",
-            |m: &RogueTournGetAllBuildRefScRsp| { &m.IICCNGOKKLF },
-            |m: &mut RogueTournGetAllBuildRefScRsp| { &mut m.IICCNGOKKLF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetAllBuildRefScRsp| { &m.retcode },
             |m: &mut RogueTournGetAllBuildRefScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IICCNGOKKLF",
+            |m: &RogueTournGetAllBuildRefScRsp| { &m.IICCNGOKKLF },
+            |m: &mut RogueTournGetAllBuildRefScRsp| { &mut m.IICCNGOKKLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetAllBuildRefScRsp>(
             "RogueTournGetAllBuildRefScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournGetAllBuildRefScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.IICCNGOKKLF.push(is.read_message()?);
-                },
-                24 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                50 => {
+                    self.IICCNGOKKLF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for RogueTournGetAllBuildRefScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         for value in &self.IICCNGOKKLF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IICCNGOKKLF {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.IICCNGOKKLF {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournGetAllBuildRefScRsp {
     }
 
     fn clear(&mut self) {
-        self.IICCNGOKKLF.clear();
         self.retcode = 0;
+        self.IICCNGOKKLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetAllBuildRefScRsp {
         static instance: RogueTournGetAllBuildRefScRsp = RogueTournGetAllBuildRefScRsp {
-            IICCNGOKKLF: ::std::vec::Vec::new(),
             retcode: 0,
+            IICCNGOKKLF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetAllBuildRefScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueTournGetAllBuildRefScRsp.proto\x1a\x11ABDABIIKOJC.proto\"i\n\x1d\
-    RogueTournGetAllBuildRefScRsp\x12.\n\x0bIICCNGOKKLF\x18\x02\x20\x03(\x0b\
-    2\x0c.ABDABIIKOJCR\x0bIICCNGOKKLF\x12\x18\n\x07retcode\x18\x03\x20\x01(\
-    \rR\x07retcodeb\x06proto3\
+    RogueTournGetAllBuildRefScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bIICCNGOKKLF\x18\x06\x20\x03(\x0b2\x0c.ABDABIIKOJCR\
+    \x0bIICCNGOKKLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueCommonDialogueOptionDisplayInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.display_int_value = is.read_int32()?;
                 },
-                29 => {
+                53 => {
                     self.display_float_value = is.read_float()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueCommonDialogueOptionDisplayInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.display_int_value != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.display_int_value);
+            my_size += ::protobuf::rt::int32_size(8, self.display_int_value);
         }
         if self.display_float_value != 0. {
             my_size += 1 + 4;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueCommonDialogueOptionDisplayInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.display_int_value != 0 {
-            os.write_int32(7, self.display_int_value)?;
+            os.write_int32(8, self.display_int_value)?;
         }
         if self.display_float_value != 0. {
-            os.write_float(3, self.display_float_value)?;
+            os.write_float(6, self.display_float_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonDialogueOptionDisplayInfo
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RogueCommonDialogueOptionDisplayInfo.proto\"\x82\x01\n$RogueCommonDia\
-    logueOptionDisplayInfo\x12*\n\x11display_int_value\x18\x07\x20\x01(\x05R\
-    \x0fdisplayIntValue\x12.\n\x13display_float_value\x18\x03\x20\x01(\x02R\
+    logueOptionDisplayInfo\x12*\n\x11display_int_value\x18\x08\x20\x01(\x05R\
+    \x0fdisplayIntValue\x12.\n\x13display_float_value\x18\x06\x20\x01(\x02R\
     \x11displayFloatValueb\x06proto3\
 ";
 

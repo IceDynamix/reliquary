@@ -79,10 +79,10 @@ impl ::protobuf::Message for OMOJDEIFDAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
                 },
-                104 => {
+                16 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for OMOJDEIFDAM {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.source.value());
+            my_size += ::protobuf::rt::int32_size(2, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for OMOJDEIFDAM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.source != ::protobuf::EnumOrUnknown::new(super::PKHJBPMIBBA::PKHJBPMIBBA::SWORD_TRAIN_GAME_SOURCE_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for OMOJDEIFDAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMOJDEIFDAM.proto\x1a\x11CGHKIDBJHFH.proto\x1a\x11PKHJBPMIBBA.prot\
-    o\"d\n\x0bOMOJDEIFDAM\x12/\n\x0crogue_action\x18\x06\x20\x01(\x0b2\x0c.C\
-    GHKIDBJHFHR\x0brogueAction\x12$\n\x06source\x18\r\x20\x01(\x0e2\x0c.PKHJ\
-    BPMIBBAR\x06sourceb\x06proto3\
+    o\"d\n\x0bOMOJDEIFDAM\x12/\n\x0crogue_action\x18\x05\x20\x01(\x0b2\x0c.C\
+    GHKIDBJHFHR\x0brogueAction\x12$\n\x06source\x18\x02\x20\x01(\x0e2\x0c.PK\
+    HJBPMIBBAR\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

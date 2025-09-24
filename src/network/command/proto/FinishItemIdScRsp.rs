@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishItemIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishItemIdScRsp.item_id)
-    pub item_id: u32,
     // @@protoc_insertion_point(field:FinishItemIdScRsp.text_id)
     pub text_id: u32,
+    // @@protoc_insertion_point(field:FinishItemIdScRsp.item_id)
+    pub item_id: u32,
     // @@protoc_insertion_point(field:FinishItemIdScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl FinishItemIdScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &FinishItemIdScRsp| { &m.item_id },
-            |m: &mut FinishItemIdScRsp| { &mut m.item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "text_id",
             |m: &FinishItemIdScRsp| { &m.text_id },
             |m: &mut FinishItemIdScRsp| { &mut m.text_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &FinishItemIdScRsp| { &m.item_id },
+            |m: &mut FinishItemIdScRsp| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FinishItemIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.item_id = is.read_uint32()?;
-                },
-                96 => {
+                56 => {
                     self.text_id = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
+                    self.item_id = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FinishItemIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.item_id);
-        }
         if self.text_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.text_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.text_id);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FinishItemIdScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_id != 0 {
-            os.write_uint32(3, self.item_id)?;
-        }
         if self.text_id != 0 {
-            os.write_uint32(12, self.text_id)?;
+            os.write_uint32(7, self.text_id)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(12, self.item_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for FinishItemIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.item_id = 0;
         self.text_id = 0;
+        self.item_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishItemIdScRsp {
         static instance: FinishItemIdScRsp = FinishItemIdScRsp {
-            item_id: 0,
             text_id: 0,
+            item_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishItemIdScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FinishItemIdScRsp.proto\"_\n\x11FinishItemIdScRsp\x12\x17\n\x07ite\
-    m_id\x18\x03\x20\x01(\rR\x06itemId\x12\x17\n\x07text_id\x18\x0c\x20\x01(\
-    \rR\x06textId\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06pr\
+    \n\x17FinishItemIdScRsp.proto\"_\n\x11FinishItemIdScRsp\x12\x17\n\x07tex\
+    t_id\x18\x07\x20\x01(\rR\x06textId\x12\x17\n\x07item_id\x18\x0c\x20\x01(\
+    \rR\x06itemId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06pr\
     oto3\
 ";
 

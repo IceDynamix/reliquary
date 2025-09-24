@@ -79,16 +79,16 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                40 => {
+                80 => {
                     self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
-                34 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                32 => {
+                72 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SyncRoguePickAvatarInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.trial_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.trial_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.trial_avatar_id_list)?;
-        os.write_repeated_packed_uint32(4, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.trial_avatar_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRoguePickAvatarInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SyncRoguePickAvatarInfoScNotify.proto\"\x81\x01\n\x1fSyncRoguePickAva\
-    tarInfoScNotify\x12/\n\x14trial_avatar_id_list\x18\x05\x20\x03(\rR\x11tr\
-    ialAvatarIdList\x12-\n\x13base_avatar_id_list\x18\x04\x20\x03(\rR\x10bas\
-    eAvatarIdListb\x06proto3\
+    tarInfoScNotify\x12/\n\x14trial_avatar_id_list\x18\n\x20\x03(\rR\x11tria\
+    lAvatarIdList\x12-\n\x13base_avatar_id_list\x18\t\x20\x03(\rR\x10baseAva\
+    tarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

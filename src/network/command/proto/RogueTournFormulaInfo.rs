@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournFormulaInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournFormulaInfo.formula_type_value)
-    pub formula_type_value: ::protobuf::MessageField<super::FormulaTypeValue::FormulaTypeValue>,
-    // @@protoc_insertion_point(field:RogueTournFormulaInfo.ILBKMNAJGMO)
-    pub ILBKMNAJGMO: ::std::vec::Vec<super::MLPKNLLAOIF::MLPKNLLAOIF>,
     // @@protoc_insertion_point(field:RogueTournFormulaInfo.game_formula_info)
     pub game_formula_info: ::std::vec::Vec<super::FormulaInfo::FormulaInfo>,
+    // @@protoc_insertion_point(field:RogueTournFormulaInfo.ILBKMNAJGMO)
+    pub ILBKMNAJGMO: ::std::vec::Vec<super::MLPKNLLAOIF::MLPKNLLAOIF>,
+    // @@protoc_insertion_point(field:RogueTournFormulaInfo.formula_type_value)
+    pub formula_type_value: ::protobuf::MessageField<super::FormulaTypeValue::FormulaTypeValue>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournFormulaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueTournFormulaInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FormulaTypeValue::FormulaTypeValue>(
-            "formula_type_value",
-            |m: &RogueTournFormulaInfo| { &m.formula_type_value },
-            |m: &mut RogueTournFormulaInfo| { &mut m.formula_type_value },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "game_formula_info",
+            |m: &RogueTournFormulaInfo| { &m.game_formula_info },
+            |m: &mut RogueTournFormulaInfo| { &mut m.game_formula_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ILBKMNAJGMO",
             |m: &RogueTournFormulaInfo| { &m.ILBKMNAJGMO },
             |m: &mut RogueTournFormulaInfo| { &mut m.ILBKMNAJGMO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "game_formula_info",
-            |m: &RogueTournFormulaInfo| { &m.game_formula_info },
-            |m: &mut RogueTournFormulaInfo| { &mut m.game_formula_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FormulaTypeValue::FormulaTypeValue>(
+            "formula_type_value",
+            |m: &RogueTournFormulaInfo| { &m.formula_type_value },
+            |m: &mut RogueTournFormulaInfo| { &mut m.formula_type_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournFormulaInfo>(
             "RogueTournFormulaInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournFormulaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.formula_type_value)?;
+                34 => {
+                    self.game_formula_info.push(is.read_message()?);
                 },
                 90 => {
                     self.ILBKMNAJGMO.push(is.read_message()?);
                 },
-                74 => {
-                    self.game_formula_info.push(is.read_message()?);
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.formula_type_value)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,33 +107,33 @@ impl ::protobuf::Message for RogueTournFormulaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.formula_type_value.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.ILBKMNAJGMO {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.game_formula_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.ILBKMNAJGMO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.formula_type_value.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.formula_type_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
+        for v in &self.game_formula_info {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         for v in &self.ILBKMNAJGMO {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        for v in &self.game_formula_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
+        if let Some(v) = self.formula_type_value.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for RogueTournFormulaInfo {
     }
 
     fn clear(&mut self) {
-        self.formula_type_value.clear();
-        self.ILBKMNAJGMO.clear();
         self.game_formula_info.clear();
+        self.ILBKMNAJGMO.clear();
+        self.formula_type_value.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournFormulaInfo {
         static instance: RogueTournFormulaInfo = RogueTournFormulaInfo {
-            formula_type_value: ::protobuf::MessageField::none(),
-            ILBKMNAJGMO: ::std::vec::Vec::new(),
             game_formula_info: ::std::vec::Vec::new(),
+            ILBKMNAJGMO: ::std::vec::Vec::new(),
+            formula_type_value: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournFormulaInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueTournFormulaInfo.proto\x1a\x11FormulaInfo.proto\x1a\x16Formul\
     aTypeValue.proto\x1a\x11MLPKNLLAOIF.proto\"\xc2\x01\n\x15RogueTournFormu\
-    laInfo\x12?\n\x12formula_type_value\x18\x02\x20\x01(\x0b2\x11.FormulaTyp\
-    eValueR\x10formulaTypeValue\x12.\n\x0bILBKMNAJGMO\x18\x0b\x20\x03(\x0b2\
-    \x0c.MLPKNLLAOIFR\x0bILBKMNAJGMO\x128\n\x11game_formula_info\x18\t\x20\
-    \x03(\x0b2\x0c.FormulaInfoR\x0fgameFormulaInfob\x06proto3\
+    laInfo\x128\n\x11game_formula_info\x18\x04\x20\x03(\x0b2\x0c.FormulaInfo\
+    R\x0fgameFormulaInfo\x12.\n\x0bILBKMNAJGMO\x18\x0b\x20\x03(\x0b2\x0c.MLP\
+    KNLLAOIFR\x0bILBKMNAJGMO\x12?\n\x12formula_type_value\x18\x0f\x20\x01(\
+    \x0b2\x11.FormulaTypeValueR\x10formulaTypeValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

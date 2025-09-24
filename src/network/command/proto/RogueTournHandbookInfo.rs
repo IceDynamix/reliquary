@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournHandbookInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournHandbookInfo.NFFBJBBCDMG)
-    pub NFFBJBBCDMG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournHandbookInfo.BKGJPCCLIDN)
-    pub BKGJPCCLIDN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournHandbookInfo.handbook_buff_list)
-    pub handbook_buff_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournHandbookInfo.FAJCNMEKKNN)
-    pub FAJCNMEKKNN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournHandbookInfo.PPCONKKPIPM)
     pub PPCONKKPIPM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournHandbookInfo.BKGJPCCLIDN)
+    pub BKGJPCCLIDN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournHandbookInfo.FAJCNMEKKNN)
+    pub FAJCNMEKKNN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournHandbookInfo.handbook_buff_list)
+    pub handbook_buff_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournHandbookInfo.rogue_tourn_handbook_const)
     pub rogue_tourn_handbook_const: u32,
+    // @@protoc_insertion_point(field:RogueTournHandbookInfo.NFFBJBBCDMG)
+    pub NFFBJBBCDMG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournHandbookInfo.KCDLMNINCGE)
     pub KCDLMNINCGE: ::std::vec::Vec<u32>,
     // special fields
@@ -62,9 +62,9 @@ impl RogueTournHandbookInfo {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFFBJBBCDMG",
-            |m: &RogueTournHandbookInfo| { &m.NFFBJBBCDMG },
-            |m: &mut RogueTournHandbookInfo| { &mut m.NFFBJBBCDMG },
+            "PPCONKKPIPM",
+            |m: &RogueTournHandbookInfo| { &m.PPCONKKPIPM },
+            |m: &mut RogueTournHandbookInfo| { &mut m.PPCONKKPIPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BKGJPCCLIDN",
@@ -72,24 +72,24 @@ impl RogueTournHandbookInfo {
             |m: &mut RogueTournHandbookInfo| { &mut m.BKGJPCCLIDN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "handbook_buff_list",
-            |m: &RogueTournHandbookInfo| { &m.handbook_buff_list },
-            |m: &mut RogueTournHandbookInfo| { &mut m.handbook_buff_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FAJCNMEKKNN",
             |m: &RogueTournHandbookInfo| { &m.FAJCNMEKKNN },
             |m: &mut RogueTournHandbookInfo| { &mut m.FAJCNMEKKNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPCONKKPIPM",
-            |m: &RogueTournHandbookInfo| { &m.PPCONKKPIPM },
-            |m: &mut RogueTournHandbookInfo| { &mut m.PPCONKKPIPM },
+            "handbook_buff_list",
+            |m: &RogueTournHandbookInfo| { &m.handbook_buff_list },
+            |m: &mut RogueTournHandbookInfo| { &mut m.handbook_buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_tourn_handbook_const",
             |m: &RogueTournHandbookInfo| { &m.rogue_tourn_handbook_const },
             |m: &mut RogueTournHandbookInfo| { &mut m.rogue_tourn_handbook_const },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NFFBJBBCDMG",
+            |m: &RogueTournHandbookInfo| { &m.NFFBJBBCDMG },
+            |m: &mut RogueTournHandbookInfo| { &mut m.NFFBJBBCDMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KCDLMNINCGE",
@@ -114,43 +114,43 @@ impl ::protobuf::Message for RogueTournHandbookInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PPCONKKPIPM)?;
+                },
+                32 => {
+                    self.PPCONKKPIPM.push(is.read_uint32()?);
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BKGJPCCLIDN)?;
+                },
+                88 => {
+                    self.BKGJPCCLIDN.push(is.read_uint32()?);
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FAJCNMEKKNN)?;
+                },
+                24 => {
+                    self.FAJCNMEKKNN.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.handbook_buff_list)?;
+                },
+                48 => {
+                    self.handbook_buff_list.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.rogue_tourn_handbook_const = is.read_uint32()?;
+                },
                 122 => {
                     is.read_repeated_packed_uint32_into(&mut self.NFFBJBBCDMG)?;
                 },
                 120 => {
                     self.NFFBJBBCDMG.push(is.read_uint32()?);
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BKGJPCCLIDN)?;
-                },
-                32 => {
-                    self.BKGJPCCLIDN.push(is.read_uint32()?);
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.handbook_buff_list)?;
-                },
-                40 => {
-                    self.handbook_buff_list.push(is.read_uint32()?);
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FAJCNMEKKNN)?;
-                },
-                96 => {
-                    self.FAJCNMEKKNN.push(is.read_uint32()?);
-                },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PPCONKKPIPM)?;
-                },
-                56 => {
-                    self.PPCONKKPIPM.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.rogue_tourn_handbook_const = is.read_uint32()?;
-                },
-                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.KCDLMNINCGE)?;
                 },
-                104 => {
+                56 => {
                     self.KCDLMNINCGE.push(is.read_uint32()?);
                 },
                 tag => {
@@ -165,30 +165,30 @@ impl ::protobuf::Message for RogueTournHandbookInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NFFBJBBCDMG);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.BKGJPCCLIDN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.handbook_buff_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FAJCNMEKKNN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.PPCONKKPIPM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PPCONKKPIPM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.BKGJPCCLIDN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FAJCNMEKKNN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.handbook_buff_list);
         if self.rogue_tourn_handbook_const != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.rogue_tourn_handbook_const);
+            my_size += ::protobuf::rt::uint32_size(10, self.rogue_tourn_handbook_const);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.KCDLMNINCGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NFFBJBBCDMG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.KCDLMNINCGE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.NFFBJBBCDMG)?;
-        os.write_repeated_packed_uint32(4, &self.BKGJPCCLIDN)?;
-        os.write_repeated_packed_uint32(5, &self.handbook_buff_list)?;
-        os.write_repeated_packed_uint32(12, &self.FAJCNMEKKNN)?;
-        os.write_repeated_packed_uint32(7, &self.PPCONKKPIPM)?;
+        os.write_repeated_packed_uint32(4, &self.PPCONKKPIPM)?;
+        os.write_repeated_packed_uint32(11, &self.BKGJPCCLIDN)?;
+        os.write_repeated_packed_uint32(3, &self.FAJCNMEKKNN)?;
+        os.write_repeated_packed_uint32(6, &self.handbook_buff_list)?;
         if self.rogue_tourn_handbook_const != 0 {
-            os.write_uint32(1, self.rogue_tourn_handbook_const)?;
+            os.write_uint32(10, self.rogue_tourn_handbook_const)?;
         }
-        os.write_repeated_packed_uint32(13, &self.KCDLMNINCGE)?;
+        os.write_repeated_packed_uint32(15, &self.NFFBJBBCDMG)?;
+        os.write_repeated_packed_uint32(7, &self.KCDLMNINCGE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -206,24 +206,24 @@ impl ::protobuf::Message for RogueTournHandbookInfo {
     }
 
     fn clear(&mut self) {
-        self.NFFBJBBCDMG.clear();
-        self.BKGJPCCLIDN.clear();
-        self.handbook_buff_list.clear();
-        self.FAJCNMEKKNN.clear();
         self.PPCONKKPIPM.clear();
+        self.BKGJPCCLIDN.clear();
+        self.FAJCNMEKKNN.clear();
+        self.handbook_buff_list.clear();
         self.rogue_tourn_handbook_const = 0;
+        self.NFFBJBBCDMG.clear();
         self.KCDLMNINCGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournHandbookInfo {
         static instance: RogueTournHandbookInfo = RogueTournHandbookInfo {
-            NFFBJBBCDMG: ::std::vec::Vec::new(),
-            BKGJPCCLIDN: ::std::vec::Vec::new(),
-            handbook_buff_list: ::std::vec::Vec::new(),
-            FAJCNMEKKNN: ::std::vec::Vec::new(),
             PPCONKKPIPM: ::std::vec::Vec::new(),
+            BKGJPCCLIDN: ::std::vec::Vec::new(),
+            FAJCNMEKKNN: ::std::vec::Vec::new(),
+            handbook_buff_list: ::std::vec::Vec::new(),
             rogue_tourn_handbook_const: 0,
+            NFFBJBBCDMG: ::std::vec::Vec::new(),
             KCDLMNINCGE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -250,12 +250,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournHandbookInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueTournHandbookInfo.proto\"\xad\x02\n\x16RogueTournHandbookInfo\
-    \x12\x20\n\x0bNFFBJBBCDMG\x18\x0f\x20\x03(\rR\x0bNFFBJBBCDMG\x12\x20\n\
-    \x0bBKGJPCCLIDN\x18\x04\x20\x03(\rR\x0bBKGJPCCLIDN\x12,\n\x12handbook_bu\
-    ff_list\x18\x05\x20\x03(\rR\x10handbookBuffList\x12\x20\n\x0bFAJCNMEKKNN\
-    \x18\x0c\x20\x03(\rR\x0bFAJCNMEKKNN\x12\x20\n\x0bPPCONKKPIPM\x18\x07\x20\
-    \x03(\rR\x0bPPCONKKPIPM\x12;\n\x1arogue_tourn_handbook_const\x18\x01\x20\
-    \x01(\rR\x17rogueTournHandbookConst\x12\x20\n\x0bKCDLMNINCGE\x18\r\x20\
+    \x12\x20\n\x0bPPCONKKPIPM\x18\x04\x20\x03(\rR\x0bPPCONKKPIPM\x12\x20\n\
+    \x0bBKGJPCCLIDN\x18\x0b\x20\x03(\rR\x0bBKGJPCCLIDN\x12\x20\n\x0bFAJCNMEK\
+    KNN\x18\x03\x20\x03(\rR\x0bFAJCNMEKKNN\x12,\n\x12handbook_buff_list\x18\
+    \x06\x20\x03(\rR\x10handbookBuffList\x12;\n\x1arogue_tourn_handbook_cons\
+    t\x18\n\x20\x01(\rR\x17rogueTournHandbookConst\x12\x20\n\x0bNFFBJBBCDMG\
+    \x18\x0f\x20\x03(\rR\x0bNFFBJBBCDMG\x12\x20\n\x0bKCDLMNINCGE\x18\x07\x20\
     \x03(\rR\x0bKCDLMNINCGEb\x06proto3\
 ";
 

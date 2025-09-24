@@ -86,19 +86,19 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.LNEJMJBFLLH)?;
                 },
-                120 => {
+                32 => {
                     self.LNEJMJBFLLH.push(is.read_uint32()?);
                 },
-                50 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.HKDOCLOPKOH)?;
                 },
-                48 => {
+                80 => {
                     self.HKDOCLOPKOH.push(is.read_uint32()?);
                 },
-                40 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LNEJMJBFLLH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HKDOCLOPKOH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LNEJMJBFLLH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HKDOCLOPKOH);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.LNEJMJBFLLH)?;
-        os.write_repeated_packed_uint32(6, &self.HKDOCLOPKOH)?;
+        os.write_repeated_packed_uint32(4, &self.LNEJMJBFLLH)?;
+        os.write_repeated_packed_uint32(10, &self.HKDOCLOPKOH)?;
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetArchiveRepositoryScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)RogueTournGetArchiveRepositoryScRsp.proto\"\x83\x01\n#RogueTournGetAr\
-    chiveRepositoryScRsp\x12\x20\n\x0bLNEJMJBFLLH\x18\x0f\x20\x03(\rR\x0bLNE\
-    JMJBFLLH\x12\x20\n\x0bHKDOCLOPKOH\x18\x06\x20\x03(\rR\x0bHKDOCLOPKOH\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    chiveRepositoryScRsp\x12\x20\n\x0bLNEJMJBFLLH\x18\x04\x20\x03(\rR\x0bLNE\
+    JMJBFLLH\x12\x20\n\x0bHKDOCLOPKOH\x18\n\x20\x03(\rR\x0bHKDOCLOPKOH\x12\
+    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

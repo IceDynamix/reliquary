@@ -79,10 +79,10 @@ impl ::protobuf::Message for Chapter {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOKHJLMPNFF)?;
                 },
-                106 => {
+                42 => {
                     self.KONBFJPINHN.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for Chapter {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GOKHJLMPNFF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         for v in &self.KONBFJPINHN {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for Chapter {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\rChapter.proto\x1a\x12ChapterBrief.proto\x1a\x0eWaypoint.proto\"g\n\
-    \x07Chapter\x12/\n\x0bGOKHJLMPNFF\x18\x0e\x20\x01(\x0b2\r.ChapterBriefR\
-    \x0bGOKHJLMPNFF\x12+\n\x0bKONBFJPINHN\x18\r\x20\x03(\x0b2\t.WaypointR\
+    \x07Chapter\x12/\n\x0bGOKHJLMPNFF\x18\t\x20\x01(\x0b2\r.ChapterBriefR\
+    \x0bGOKHJLMPNFF\x12+\n\x0bKONBFJPINHN\x18\x05\x20\x03(\x0b2\t.WaypointR\
     \x0bKONBFJPINHNb\x06proto3\
 ";
 

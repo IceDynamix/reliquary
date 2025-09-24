@@ -30,8 +30,8 @@ pub struct GetRogueShopBuffInfoCsReq {
     // message fields
     // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.PUNK_LORD_OPERATION_REFRESH)
-    pub PUNK_LORD_OPERATION_REFRESH: bool,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.refresh)
+    pub refresh: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopBuffInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetRogueShopBuffInfoCsReq {
             |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.interacted_prop_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PUNK_LORD_OPERATION_REFRESH",
-            |m: &GetRogueShopBuffInfoCsReq| { &m.PUNK_LORD_OPERATION_REFRESH },
-            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.PUNK_LORD_OPERATION_REFRESH },
+            "refresh",
+            |m: &GetRogueShopBuffInfoCsReq| { &m.refresh },
+            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.refresh },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopBuffInfoCsReq>(
             "GetRogueShopBuffInfoCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                64 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.PUNK_LORD_OPERATION_REFRESH = is.read_bool()?;
+                24 => {
+                    self.refresh = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.interacted_prop_entity_id);
         }
-        if self.PUNK_LORD_OPERATION_REFRESH != false {
+        if self.refresh != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(6, self.interacted_prop_entity_id)?;
+            os.write_uint32(8, self.interacted_prop_entity_id)?;
         }
-        if self.PUNK_LORD_OPERATION_REFRESH != false {
-            os.write_bool(10, self.PUNK_LORD_OPERATION_REFRESH)?;
+        if self.refresh != false {
+            os.write_bool(3, self.refresh)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
 
     fn clear(&mut self) {
         self.interacted_prop_entity_id = 0;
-        self.PUNK_LORD_OPERATION_REFRESH = false;
+        self.refresh = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopBuffInfoCsReq {
         static instance: GetRogueShopBuffInfoCsReq = GetRogueShopBuffInfoCsReq {
             interacted_prop_entity_id: 0,
-            PUNK_LORD_OPERATION_REFRESH: false,
+            refresh: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopBuffInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetRogueShopBuffInfoCsReq.proto\"\x95\x01\n\x19GetRogueShopBuffInf\
-    oCsReq\x129\n\x19interacted_prop_entity_id\x18\x06\x20\x01(\rR\x16intera\
-    ctedPropEntityId\x12=\n\x1bPUNK_LORD_OPERATION_REFRESH\x18\n\x20\x01(\
-    \x08R\x18PUNKLORDOPERATIONREFRESHb\x06proto3\
+    \n\x1fGetRogueShopBuffInfoCsReq.proto\"p\n\x19GetRogueShopBuffInfoCsReq\
+    \x129\n\x19interacted_prop_entity_id\x18\x08\x20\x01(\rR\x16interactedPr\
+    opEntityId\x12\x18\n\x07refresh\x18\x03\x20\x01(\x08R\x07refreshb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

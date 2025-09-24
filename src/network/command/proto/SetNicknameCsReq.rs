@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetNicknameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetNicknameCsReq.is_modify)
-    pub is_modify: bool,
     // @@protoc_insertion_point(field:SetNicknameCsReq.nickname)
     pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:SetNicknameCsReq.is_modify)
+    pub is_modify: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetNicknameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetNicknameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_modify",
-            |m: &SetNicknameCsReq| { &m.is_modify },
-            |m: &mut SetNicknameCsReq| { &mut m.is_modify },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "nickname",
             |m: &SetNicknameCsReq| { &m.nickname },
             |m: &mut SetNicknameCsReq| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_modify",
+            |m: &SetNicknameCsReq| { &m.is_modify },
+            |m: &mut SetNicknameCsReq| { &mut m.is_modify },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetNicknameCsReq>(
             "SetNicknameCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.is_modify = is.read_bool()?;
-                },
-                26 => {
+                58 => {
                     self.nickname = is.read_string()?;
+                },
+                24 => {
+                    self.is_modify = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.nickname);
+        }
         if self.is_modify != false {
             my_size += 1 + 1;
-        }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.nickname);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetNicknameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_modify != false {
-            os.write_bool(7, self.is_modify)?;
-        }
         if !self.nickname.is_empty() {
-            os.write_string(3, &self.nickname)?;
+            os.write_string(7, &self.nickname)?;
+        }
+        if self.is_modify != false {
+            os.write_bool(3, self.is_modify)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetNicknameCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_modify = false;
         self.nickname.clear();
+        self.is_modify = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetNicknameCsReq {
         static instance: SetNicknameCsReq = SetNicknameCsReq {
-            is_modify: false,
             nickname: ::std::string::String::new(),
+            is_modify: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SetNicknameCsReq.proto\"K\n\x10SetNicknameCsReq\x12\x1b\n\tis_modi\
-    fy\x18\x07\x20\x01(\x08R\x08isModify\x12\x1a\n\x08nickname\x18\x03\x20\
-    \x01(\tR\x08nicknameb\x06proto3\
+    \n\x16SetNicknameCsReq.proto\"K\n\x10SetNicknameCsReq\x12\x1a\n\x08nickn\
+    ame\x18\x07\x20\x01(\tR\x08nickname\x12\x1b\n\tis_modify\x18\x03\x20\x01\
+    (\x08R\x08isModifyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

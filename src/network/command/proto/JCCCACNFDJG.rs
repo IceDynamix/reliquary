@@ -72,7 +72,7 @@ impl ::protobuf::Message for JCCCACNFDJG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.miracle_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for JCCCACNFDJG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.miracle_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for JCCCACNFDJG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.miracle_id != 0 {
-            os.write_uint32(3, self.miracle_id)?;
+            os.write_uint32(11, self.miracle_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for JCCCACNFDJG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCCCACNFDJG.proto\",\n\x0bJCCCACNFDJG\x12\x1d\n\nmiracle_id\x18\
-    \x03\x20\x01(\rR\tmiracleIdb\x06proto3\
+    \x0b\x20\x01(\rR\tmiracleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

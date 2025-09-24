@@ -79,10 +79,10 @@ impl ::protobuf::Message for ServerPrefs {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                72 => {
                     self.server_prefs_id = is.read_uint32()?;
                 },
-                122 => {
+                34 => {
                     self.data = is.read_bytes()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ServerPrefs {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.server_prefs_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.server_prefs_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.server_prefs_id);
         }
         if !self.data.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(15, &self.data);
+            my_size += ::protobuf::rt::bytes_size(4, &self.data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ServerPrefs {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.server_prefs_id != 0 {
-            os.write_uint32(11, self.server_prefs_id)?;
+            os.write_uint32(9, self.server_prefs_id)?;
         }
         if !self.data.is_empty() {
-            os.write_bytes(15, &self.data)?;
+            os.write_bytes(4, &self.data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ServerPrefs {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ServerPrefs.proto\"I\n\x0bServerPrefs\x12&\n\x0fserver_prefs_id\
-    \x18\x0b\x20\x01(\rR\rserverPrefsId\x12\x12\n\x04data\x18\x0f\x20\x01(\
-    \x0cR\x04datab\x06proto3\
+    \x18\t\x20\x01(\rR\rserverPrefsId\x12\x12\n\x04data\x18\x04\x20\x01(\x0c\
+    R\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

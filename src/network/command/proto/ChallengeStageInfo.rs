@@ -45,7 +45,7 @@ impl ChallengeStageInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeBossInfo boss_info = 1;
+    // .ChallengeBossInfo boss_info = 11;
 
     pub fn boss_info(&self) -> &super::ChallengeBossInfo::ChallengeBossInfo {
         match self.KFELKJLDKEH {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for ChallengeStageInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                90 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(challenge_stage_info::KFELKJLDKEH::BossInfo(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for ChallengeStageInfo {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &challenge_stage_info::KFELKJLDKEH::BossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -236,7 +236,7 @@ pub mod challenge_stage_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChallengeStageInfo.proto\x1a\x17ChallengeBossInfo.proto\"V\n\x12Ch\
-    allengeStageInfo\x121\n\tboss_info\x18\x01\x20\x01(\x0b2\x12.ChallengeBo\
+    allengeStageInfo\x121\n\tboss_info\x18\x0b\x20\x01(\x0b2\x12.ChallengeBo\
     ssInfoH\0R\x08bossInfoB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 

@@ -79,13 +79,13 @@ impl ::protobuf::Message for EAKECFAPPKD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.FIKENBEONDJ)?;
                 },
-                32 => {
+                16 => {
                     self.FIKENBEONDJ.push(is.read_uint32()?);
                 },
-                24 => {
+                56 => {
                     self.select_hint_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for EAKECFAPPKD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.FIKENBEONDJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.FIKENBEONDJ);
         if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.select_hint_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.select_hint_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for EAKECFAPPKD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.FIKENBEONDJ)?;
+        os.write_repeated_packed_uint32(2, &self.FIKENBEONDJ)?;
         if self.select_hint_id != 0 {
-            os.write_uint32(3, self.select_hint_id)?;
+            os.write_uint32(7, self.select_hint_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for EAKECFAPPKD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EAKECFAPPKD.proto\"U\n\x0bEAKECFAPPKD\x12\x20\n\x0bFIKENBEONDJ\x18\
-    \x04\x20\x03(\rR\x0bFIKENBEONDJ\x12$\n\x0eselect_hint_id\x18\x03\x20\x01\
+    \x02\x20\x03(\rR\x0bFIKENBEONDJ\x12$\n\x0eselect_hint_id\x18\x07\x20\x01\
     (\rR\x0cselectHintIdb\x06proto3\
 ";
 

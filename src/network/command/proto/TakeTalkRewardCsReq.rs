@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                96 => {
                     self.IEMOEOIMHMA = is.read_uint32()?;
                 },
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLCONCNJMMP)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IEMOEOIMHMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IEMOEOIMHMA);
+            my_size += ::protobuf::rt::uint32_size(12, self.IEMOEOIMHMA);
         }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IEMOEOIMHMA != 0 {
-            os.write_uint32(8, self.IEMOEOIMHMA)?;
+            os.write_uint32(12, self.IEMOEOIMHMA)?;
         }
         if let Some(v) = self.OLCONCNJMMP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTalkRewardCsReq.proto\x1a\x0cVector.proto\"b\n\x13TakeTalkRewa\
-    rdCsReq\x12\x20\n\x0bIEMOEOIMHMA\x18\x08\x20\x01(\rR\x0bIEMOEOIMHMA\x12)\
-    \n\x0bOLCONCNJMMP\x18\x07\x20\x01(\x0b2\x07.VectorR\x0bOLCONCNJMMPb\x06p\
-    roto3\
+    rdCsReq\x12\x20\n\x0bIEMOEOIMHMA\x18\x0c\x20\x01(\rR\x0bIEMOEOIMHMA\x12)\
+    \n\x0bOLCONCNJMMP\x18\n\x20\x01(\x0b2\x07.VectorR\x0bOLCONCNJMMPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

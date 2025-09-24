@@ -93,19 +93,19 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.JNKHGFILJPB = is.read_bool()?;
                 },
-                80 => {
+                112 => {
                     self.NLPCONNJONF = is.read_enum_or_unknown()?;
                 },
                 48 => {
                     self.HNHFDMDIBIO = is.read_uint64()?;
                 },
-                98 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                96 => {
+                56 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
                 tag => {
@@ -124,12 +124,12 @@ impl ::protobuf::Message for DiscardRelicCsReq {
             my_size += 1 + 1;
         }
         if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            my_size += ::protobuf::rt::int32_size(10, self.NLPCONNJONF.value());
+            my_size += ::protobuf::rt::int32_size(14, self.NLPCONNJONF.value());
         }
         if self.HNHFDMDIBIO != 0 {
             my_size += ::protobuf::rt::uint64_size(6, self.HNHFDMDIBIO);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.relic_ids);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.relic_ids);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -137,15 +137,15 @@ impl ::protobuf::Message for DiscardRelicCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JNKHGFILJPB != false {
-            os.write_bool(2, self.JNKHGFILJPB)?;
+            os.write_bool(9, self.JNKHGFILJPB)?;
         }
         if self.NLPCONNJONF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RELIC_DISCARD_TYPE_SINGLE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.NLPCONNJONF))?;
         }
         if self.HNHFDMDIBIO != 0 {
             os.write_uint64(6, self.HNHFDMDIBIO)?;
         }
-        os.write_repeated_packed_uint32(12, &self.relic_ids)?;
+        os.write_repeated_packed_uint32(7, &self.relic_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicCsReq.proto\x1a\x16RelicDiscardType.proto\"\xa9\x01\n\
-    \x11DiscardRelicCsReq\x12\x20\n\x0bJNKHGFILJPB\x18\x02\x20\x01(\x08R\x0b\
-    JNKHGFILJPB\x123\n\x0bNLPCONNJONF\x18\n\x20\x01(\x0e2\x11.RelicDiscardTy\
+    \x11DiscardRelicCsReq\x12\x20\n\x0bJNKHGFILJPB\x18\t\x20\x01(\x08R\x0bJN\
+    KHGFILJPB\x123\n\x0bNLPCONNJONF\x18\x0e\x20\x01(\x0e2\x11.RelicDiscardTy\
     peR\x0bNLPCONNJONF\x12\x20\n\x0bHNHFDMDIBIO\x18\x06\x20\x01(\x04R\x0bHNH\
-    FDMDIBIO\x12\x1b\n\trelic_ids\x18\x0c\x20\x03(\rR\x08relicIdsb\x06proto3\
+    FDMDIBIO\x12\x1b\n\trelic_ids\x18\x07\x20\x03(\rR\x08relicIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

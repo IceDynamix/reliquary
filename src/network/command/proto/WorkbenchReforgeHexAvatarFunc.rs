@@ -86,13 +86,13 @@ impl ::protobuf::Message for WorkbenchReforgeHexAvatarFunc {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.free_reforge_num = is.read_uint32()?;
                 },
-                24 => {
+                16 => {
                     self.int_reforge_num_value = is.read_int32()?;
                 },
-                50 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for WorkbenchReforgeHexAvatarFunc {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.free_reforge_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.free_reforge_num);
+            my_size += ::protobuf::rt::uint32_size(1, self.free_reforge_num);
         }
         if self.int_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.int_reforge_num_value);
+            my_size += ::protobuf::rt::int32_size(2, self.int_reforge_num_value);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for WorkbenchReforgeHexAvatarFunc {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.free_reforge_num != 0 {
-            os.write_uint32(2, self.free_reforge_num)?;
+            os.write_uint32(1, self.free_reforge_num)?;
         }
         if self.int_reforge_num_value != 0 {
-            os.write_int32(3, self.int_reforge_num_value)?;
+            os.write_int32(2, self.int_reforge_num_value)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchReforgeHexAvatarFunc {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#WorkbenchReforgeHexAvatarFunc.proto\x1a\x12ItemCostData.proto\"\xa8\
     \x01\n\x1dWorkbenchReforgeHexAvatarFunc\x12(\n\x10free_reforge_num\x18\
-    \x02\x20\x01(\rR\x0efreeReforgeNum\x121\n\x15int_reforge_num_value\x18\
-    \x03\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tcost_data\x18\x06\x20\
-    \x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    \x01\x20\x01(\rR\x0efreeReforgeNum\x121\n\x15int_reforge_num_value\x18\
+    \x02\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tcost_data\x18\r\x20\x01\
+    (\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

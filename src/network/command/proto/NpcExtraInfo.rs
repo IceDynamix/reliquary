@@ -45,7 +45,7 @@ impl NpcExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .NpcRogueGameInfo rogue_game_info = 15;
+    // .NpcRogueGameInfo rogue_game_info = 2;
 
     pub fn rogue_game_info(&self) -> &super::NpcRogueGameInfo::NpcRogueGameInfo {
         match self.KFELKJLDKEH {
@@ -94,7 +94,7 @@ impl NpcExtraInfo {
         }
     }
 
-    // .KKFKKPPLDAI JKJOPMEFCBO = 10;
+    // .KKFKKPPLDAI JKJOPMEFCBO = 13;
 
     pub fn JKJOPMEFCBO(&self) -> &super::KKFKKPPLDAI::KKFKKPPLDAI {
         match self.KFELKJLDKEH {
@@ -143,7 +143,7 @@ impl NpcExtraInfo {
         }
     }
 
-    // .CLFACBCGIFL PNBJJBJNMGL = 6;
+    // .CLFACBCGIFL PNBJJBJNMGL = 3;
 
     pub fn PNBJJBJNMGL(&self) -> &super::CLFACBCGIFL::CLFACBCGIFL {
         match self.KFELKJLDKEH {
@@ -235,13 +235,13 @@ impl ::protobuf::Message for NpcExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(is.read_message()?));
                 },
-                82 => {
+                106 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(is.read_message()?));
                 },
-                50 => {
+                26 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(is.read_message()?));
                 },
                 tag => {
@@ -281,13 +281,13 @@ impl ::protobuf::Message for NpcExtraInfo {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &npc_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -375,9 +375,9 @@ pub mod npc_extra_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12NpcExtraInfo.proto\x1a\x11CLFACBCGIFL.proto\x1a\x11KKFKKPPLDAI.pro\
     to\x1a\x16NpcRogueGameInfo.proto\"\xbe\x01\n\x0cNpcExtraInfo\x12;\n\x0fr\
-    ogue_game_info\x18\x0f\x20\x01(\x0b2\x11.NpcRogueGameInfoH\0R\rrogueGame\
-    Info\x120\n\x0bJKJOPMEFCBO\x18\n\x20\x01(\x0b2\x0c.KKFKKPPLDAIH\0R\x0bJK\
-    JOPMEFCBO\x120\n\x0bPNBJJBJNMGL\x18\x06\x20\x01(\x0b2\x0c.CLFACBCGIFLH\0\
+    ogue_game_info\x18\x02\x20\x01(\x0b2\x11.NpcRogueGameInfoH\0R\rrogueGame\
+    Info\x120\n\x0bJKJOPMEFCBO\x18\r\x20\x01(\x0b2\x0c.KKFKKPPLDAIH\0R\x0bJK\
+    JOPMEFCBO\x120\n\x0bPNBJJBJNMGL\x18\x03\x20\x01(\x0b2\x0c.CLFACBCGIFLH\0\
     R\x0bPNBJJBJNMGLB\r\n\x0bKFELKJLDKEHb\x06proto3\
 ";
 

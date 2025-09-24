@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicCurInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicCurInfo.lineup)
-    pub lineup: ::protobuf::MessageField<super::RogueTournLineupInfo::RogueTournLineupInfo>,
-    // @@protoc_insertion_point(field:RogueMagicCurInfo.miracle_info)
-    pub miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
     // @@protoc_insertion_point(field:RogueMagicCurInfo.item_value)
     pub item_value: ::protobuf::MessageField<super::RogueGameItemValue::RogueGameItemValue>,
-    // @@protoc_insertion_point(field:RogueMagicCurInfo.CACGEKAANKL)
-    pub CACGEKAANKL: ::protobuf::MessageField<super::KLOHNFGBNPH::KLOHNFGBNPH>,
+    // @@protoc_insertion_point(field:RogueMagicCurInfo.magic_item)
+    pub magic_item: ::protobuf::MessageField<super::RogueMagicGameItemInfo::RogueMagicGameItemInfo>,
     // @@protoc_insertion_point(field:RogueMagicCurInfo.game_difficulty_info)
     pub game_difficulty_info: ::protobuf::MessageField<super::RogueMagicGameDifficultyInfo::RogueMagicGameDifficultyInfo>,
     // @@protoc_insertion_point(field:RogueMagicCurInfo.level)
     pub level: ::protobuf::MessageField<super::RogueMagicGameLevelInfo::RogueMagicGameLevelInfo>,
     // @@protoc_insertion_point(field:RogueMagicCurInfo.basic_info)
     pub basic_info: ::protobuf::MessageField<super::RogueTournCurAreaInfo::RogueTournCurAreaInfo>,
-    // @@protoc_insertion_point(field:RogueMagicCurInfo.magic_item)
-    pub magic_item: ::protobuf::MessageField<super::RogueMagicGameItemInfo::RogueMagicGameItemInfo>,
+    // @@protoc_insertion_point(field:RogueMagicCurInfo.lineup)
+    pub lineup: ::protobuf::MessageField<super::RogueTournLineupInfo::RogueTournLineupInfo>,
+    // @@protoc_insertion_point(field:RogueMagicCurInfo.CACGEKAANKL)
+    pub CACGEKAANKL: ::protobuf::MessageField<super::KLOHNFGBNPH::KLOHNFGBNPH>,
+    // @@protoc_insertion_point(field:RogueMagicCurInfo.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicCurInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,25 +63,15 @@ impl RogueMagicCurInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournLineupInfo::RogueTournLineupInfo>(
-            "lineup",
-            |m: &RogueMagicCurInfo| { &m.lineup },
-            |m: &mut RogueMagicCurInfo| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
-            "miracle_info",
-            |m: &RogueMagicCurInfo| { &m.miracle_info },
-            |m: &mut RogueMagicCurInfo| { &mut m.miracle_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGameItemValue::RogueGameItemValue>(
             "item_value",
             |m: &RogueMagicCurInfo| { &m.item_value },
             |m: &mut RogueMagicCurInfo| { &mut m.item_value },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLOHNFGBNPH::KLOHNFGBNPH>(
-            "CACGEKAANKL",
-            |m: &RogueMagicCurInfo| { &m.CACGEKAANKL },
-            |m: &mut RogueMagicCurInfo| { &mut m.CACGEKAANKL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameItemInfo::RogueMagicGameItemInfo>(
+            "magic_item",
+            |m: &RogueMagicCurInfo| { &m.magic_item },
+            |m: &mut RogueMagicCurInfo| { &mut m.magic_item },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameDifficultyInfo::RogueMagicGameDifficultyInfo>(
             "game_difficulty_info",
@@ -98,10 +88,20 @@ impl RogueMagicCurInfo {
             |m: &RogueMagicCurInfo| { &m.basic_info },
             |m: &mut RogueMagicCurInfo| { &mut m.basic_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameItemInfo::RogueMagicGameItemInfo>(
-            "magic_item",
-            |m: &RogueMagicCurInfo| { &m.magic_item },
-            |m: &mut RogueMagicCurInfo| { &mut m.magic_item },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournLineupInfo::RogueTournLineupInfo>(
+            "lineup",
+            |m: &RogueMagicCurInfo| { &m.lineup },
+            |m: &mut RogueMagicCurInfo| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLOHNFGBNPH::KLOHNFGBNPH>(
+            "CACGEKAANKL",
+            |m: &RogueMagicCurInfo| { &m.CACGEKAANKL },
+            |m: &mut RogueMagicCurInfo| { &mut m.CACGEKAANKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
+            "miracle_info",
+            |m: &RogueMagicCurInfo| { &m.miracle_info },
+            |m: &mut RogueMagicCurInfo| { &mut m.miracle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicCurInfo>(
             "RogueMagicCurInfo",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for RogueMagicCurInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
-                },
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CACGEKAANKL)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.magic_item)?;
                 },
-                34 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_difficulty_info)?;
                 },
-                18 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.level)?;
                 },
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.magic_item)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CACGEKAANKL)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,19 +157,11 @@ impl ::protobuf::Message for RogueMagicCurInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.lineup.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.miracle_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.item_value.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CACGEKAANKL.as_ref() {
+        if let Some(v) = self.magic_item.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -185,7 +177,15 @@ impl ::protobuf::Message for RogueMagicCurInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.magic_item.as_ref() {
+        if let Some(v) = self.lineup.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.CACGEKAANKL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -195,29 +195,29 @@ impl ::protobuf::Message for RogueMagicCurInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.item_value.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.miracle_info.as_ref() {
+        if let Some(v) = self.magic_item.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.item_value.as_ref() {
+        if let Some(v) = self.game_difficulty_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.level.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.CACGEKAANKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if let Some(v) = self.game_difficulty_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.level.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.basic_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.magic_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -236,27 +236,27 @@ impl ::protobuf::Message for RogueMagicCurInfo {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
-        self.miracle_info.clear();
         self.item_value.clear();
-        self.CACGEKAANKL.clear();
+        self.magic_item.clear();
         self.game_difficulty_info.clear();
         self.level.clear();
         self.basic_info.clear();
-        self.magic_item.clear();
+        self.lineup.clear();
+        self.CACGEKAANKL.clear();
+        self.miracle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicCurInfo {
         static instance: RogueMagicCurInfo = RogueMagicCurInfo {
-            lineup: ::protobuf::MessageField::none(),
-            miracle_info: ::protobuf::MessageField::none(),
             item_value: ::protobuf::MessageField::none(),
-            CACGEKAANKL: ::protobuf::MessageField::none(),
+            magic_item: ::protobuf::MessageField::none(),
             game_difficulty_info: ::protobuf::MessageField::none(),
             level: ::protobuf::MessageField::none(),
             basic_info: ::protobuf::MessageField::none(),
-            magic_item: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
+            CACGEKAANKL: ::protobuf::MessageField::none(),
+            miracle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -285,17 +285,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     KLOHNFGBNPH.proto\x1a\x18RogueGameItemValue.proto\x1a\"RogueMagicGameDif\
     ficultyInfo.proto\x1a\x1cRogueMagicGameItemInfo.proto\x1a\x1dRogueMagicG\
     ameLevelInfo.proto\x1a\x1bRogueTournCurAreaInfo.proto\x1a\x1aRogueTournL\
-    ineupInfo.proto\"\xd1\x03\n\x11RogueMagicCurInfo\x12-\n\x06lineup\x18\
-    \x06\x20\x01(\x0b2\x15.RogueTournLineupInfoR\x06lineup\x129\n\x0cmiracle\
-    _info\x18\x07\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmiracleInfo\
-    \x122\n\nitem_value\x18\x0b\x20\x01(\x0b2\x13.RogueGameItemValueR\titemV\
-    alue\x12.\n\x0bCACGEKAANKL\x18\x08\x20\x01(\x0b2\x0c.KLOHNFGBNPHR\x0bCAC\
-    GEKAANKL\x12O\n\x14game_difficulty_info\x18\x04\x20\x01(\x0b2\x1d.RogueM\
-    agicGameDifficultyInfoR\x12gameDifficultyInfo\x12.\n\x05level\x18\x02\
-    \x20\x01(\x0b2\x18.RogueMagicGameLevelInfoR\x05level\x125\n\nbasic_info\
-    \x18\x01\x20\x01(\x0b2\x16.RogueTournCurAreaInfoR\tbasicInfo\x126\n\nmag\
-    ic_item\x18\t\x20\x01(\x0b2\x17.RogueMagicGameItemInfoR\tmagicItemb\x06p\
-    roto3\
+    ineupInfo.proto\"\xd1\x03\n\x11RogueMagicCurInfo\x122\n\nitem_value\x18\
+    \x04\x20\x01(\x0b2\x13.RogueGameItemValueR\titemValue\x126\n\nmagic_item\
+    \x18\x07\x20\x01(\x0b2\x17.RogueMagicGameItemInfoR\tmagicItem\x12O\n\x14\
+    game_difficulty_info\x18\x06\x20\x01(\x0b2\x1d.RogueMagicGameDifficultyI\
+    nfoR\x12gameDifficultyInfo\x12.\n\x05level\x18\x0f\x20\x01(\x0b2\x18.Rog\
+    ueMagicGameLevelInfoR\x05level\x125\n\nbasic_info\x18\t\x20\x01(\x0b2\
+    \x16.RogueTournCurAreaInfoR\tbasicInfo\x12-\n\x06lineup\x18\x0b\x20\x01(\
+    \x0b2\x15.RogueTournLineupInfoR\x06lineup\x12.\n\x0bCACGEKAANKL\x18\x01\
+    \x20\x01(\x0b2\x0c.KLOHNFGBNPHR\x0bCACGEKAANKL\x129\n\x0cmiracle_info\
+    \x18\x08\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmiracleInfob\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

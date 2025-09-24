@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NHDBOFCFCJM {
     // message fields
-    // @@protoc_insertion_point(field:NHDBOFCFCJM.main_affix_id)
-    pub main_affix_id: u32,
     // @@protoc_insertion_point(field:NHDBOFCFCJM.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:NHDBOFCFCJM.sub_affix_list)
-    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:NHDBOFCFCJM.tid)
     pub tid: u32,
+    // @@protoc_insertion_point(field:NHDBOFCFCJM.main_affix_id)
+    pub main_affix_id: u32,
+    // @@protoc_insertion_point(field:NHDBOFCFCJM.sub_affix_list)
+    pub sub_affix_list: ::std::vec::Vec<super::RelicAffix::RelicAffix>,
     // @@protoc_insertion_point(field:NHDBOFCFCJM.exp)
     pub exp: u32,
     // special fields
@@ -58,24 +58,24 @@ impl NHDBOFCFCJM {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_affix_id",
-            |m: &NHDBOFCFCJM| { &m.main_affix_id },
-            |m: &mut NHDBOFCFCJM| { &mut m.main_affix_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &NHDBOFCFCJM| { &m.level },
             |m: &mut NHDBOFCFCJM| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sub_affix_list",
-            |m: &NHDBOFCFCJM| { &m.sub_affix_list },
-            |m: &mut NHDBOFCFCJM| { &mut m.sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
             |m: &NHDBOFCFCJM| { &m.tid },
             |m: &mut NHDBOFCFCJM| { &mut m.tid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "main_affix_id",
+            |m: &NHDBOFCFCJM| { &m.main_affix_id },
+            |m: &mut NHDBOFCFCJM| { &mut m.main_affix_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "sub_affix_list",
+            |m: &NHDBOFCFCJM| { &m.sub_affix_list },
+            |m: &mut NHDBOFCFCJM| { &mut m.sub_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for NHDBOFCFCJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.main_affix_id = is.read_uint32()?;
-                },
-                24 => {
+                104 => {
                     self.level = is.read_uint32()?;
                 },
-                50 => {
-                    self.sub_affix_list.push(is.read_message()?);
-                },
-                112 => {
+                96 => {
                     self.tid = is.read_uint32()?;
                 },
-                16 => {
+                24 => {
+                    self.main_affix_id = is.read_uint32()?;
+                },
+                58 => {
+                    self.sub_affix_list.push(is.read_message()?);
+                },
+                40 => {
                     self.exp = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for NHDBOFCFCJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.main_affix_id);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.tid);
+        }
+        if self.main_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.main_affix_id);
         }
         for value in &self.sub_affix_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.tid);
-        }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.exp);
+            my_size += ::protobuf::rt::uint32_size(5, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for NHDBOFCFCJM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.main_affix_id != 0 {
-            os.write_uint32(10, self.main_affix_id)?;
-        }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(13, self.level)?;
+        }
+        if self.tid != 0 {
+            os.write_uint32(12, self.tid)?;
+        }
+        if self.main_affix_id != 0 {
+            os.write_uint32(3, self.main_affix_id)?;
         }
         for v in &self.sub_affix_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.tid != 0 {
-            os.write_uint32(14, self.tid)?;
-        }
         if self.exp != 0 {
-            os.write_uint32(2, self.exp)?;
+            os.write_uint32(5, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for NHDBOFCFCJM {
     }
 
     fn clear(&mut self) {
-        self.main_affix_id = 0;
         self.level = 0;
-        self.sub_affix_list.clear();
         self.tid = 0;
+        self.main_affix_id = 0;
+        self.sub_affix_list.clear();
         self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NHDBOFCFCJM {
         static instance: NHDBOFCFCJM = NHDBOFCFCJM {
-            main_affix_id: 0,
             level: 0,
-            sub_affix_list: ::std::vec::Vec::new(),
             tid: 0,
+            main_affix_id: 0,
+            sub_affix_list: ::std::vec::Vec::new(),
             exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for NHDBOFCFCJM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHDBOFCFCJM.proto\x1a\x10RelicAffix.proto\"\x9e\x01\n\x0bNHDBOFCFC\
-    JM\x12\"\n\rmain_affix_id\x18\n\x20\x01(\rR\x0bmainAffixId\x12\x14\n\x05\
-    level\x18\x03\x20\x01(\rR\x05level\x121\n\x0esub_affix_list\x18\x06\x20\
-    \x03(\x0b2\x0b.RelicAffixR\x0csubAffixList\x12\x10\n\x03tid\x18\x0e\x20\
-    \x01(\rR\x03tid\x12\x10\n\x03exp\x18\x02\x20\x01(\rR\x03expb\x06proto3\
+    JM\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x10\n\x03tid\x18\
+    \x0c\x20\x01(\rR\x03tid\x12\"\n\rmain_affix_id\x18\x03\x20\x01(\rR\x0bma\
+    inAffixId\x121\n\x0esub_affix_list\x18\x07\x20\x03(\x0b2\x0b.RelicAffixR\
+    \x0csubAffixList\x12\x10\n\x03exp\x18\x05\x20\x01(\rR\x03expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

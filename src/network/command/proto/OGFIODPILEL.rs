@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGFIODPILEL {
     // message fields
-    // @@protoc_insertion_point(field:OGFIODPILEL.DMKLNJBOABO)
-    pub DMKLNJBOABO: bool,
     // @@protoc_insertion_point(field:OGFIODPILEL.AKHEILMNDHJ)
     pub AKHEILMNDHJ: bool,
+    // @@protoc_insertion_point(field:OGFIODPILEL.DMKLNJBOABO)
+    pub DMKLNJBOABO: bool,
     // @@protoc_insertion_point(field:OGFIODPILEL.CACEKELNMIN)
     pub CACEKELNMIN: u32,
     // special fields
@@ -54,14 +54,14 @@ impl OGFIODPILEL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMKLNJBOABO",
-            |m: &OGFIODPILEL| { &m.DMKLNJBOABO },
-            |m: &mut OGFIODPILEL| { &mut m.DMKLNJBOABO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKHEILMNDHJ",
             |m: &OGFIODPILEL| { &m.AKHEILMNDHJ },
             |m: &mut OGFIODPILEL| { &mut m.AKHEILMNDHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMKLNJBOABO",
+            |m: &OGFIODPILEL| { &m.DMKLNJBOABO },
+            |m: &mut OGFIODPILEL| { &mut m.DMKLNJBOABO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CACEKELNMIN",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for OGFIODPILEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DMKLNJBOABO = is.read_bool()?;
-                },
-                120 => {
+                96 => {
                     self.AKHEILMNDHJ = is.read_bool()?;
                 },
                 32 => {
+                    self.DMKLNJBOABO = is.read_bool()?;
+                },
+                16 => {
                     self.CACEKELNMIN = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OGFIODPILEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DMKLNJBOABO != false {
-            my_size += 1 + 1;
-        }
         if self.AKHEILMNDHJ != false {
             my_size += 1 + 1;
         }
+        if self.DMKLNJBOABO != false {
+            my_size += 1 + 1;
+        }
         if self.CACEKELNMIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CACEKELNMIN);
+            my_size += ::protobuf::rt::uint32_size(2, self.CACEKELNMIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OGFIODPILEL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMKLNJBOABO != false {
-            os.write_bool(3, self.DMKLNJBOABO)?;
-        }
         if self.AKHEILMNDHJ != false {
-            os.write_bool(15, self.AKHEILMNDHJ)?;
+            os.write_bool(12, self.AKHEILMNDHJ)?;
+        }
+        if self.DMKLNJBOABO != false {
+            os.write_bool(4, self.DMKLNJBOABO)?;
         }
         if self.CACEKELNMIN != 0 {
-            os.write_uint32(4, self.CACEKELNMIN)?;
+            os.write_uint32(2, self.CACEKELNMIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for OGFIODPILEL {
     }
 
     fn clear(&mut self) {
-        self.DMKLNJBOABO = false;
         self.AKHEILMNDHJ = false;
+        self.DMKLNJBOABO = false;
         self.CACEKELNMIN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGFIODPILEL {
         static instance: OGFIODPILEL = OGFIODPILEL {
-            DMKLNJBOABO: false,
             AKHEILMNDHJ: false,
+            DMKLNJBOABO: false,
             CACEKELNMIN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for OGFIODPILEL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OGFIODPILEL.proto\"s\n\x0bOGFIODPILEL\x12\x20\n\x0bDMKLNJBOABO\x18\
-    \x03\x20\x01(\x08R\x0bDMKLNJBOABO\x12\x20\n\x0bAKHEILMNDHJ\x18\x0f\x20\
-    \x01(\x08R\x0bAKHEILMNDHJ\x12\x20\n\x0bCACEKELNMIN\x18\x04\x20\x01(\rR\
+    \n\x11OGFIODPILEL.proto\"s\n\x0bOGFIODPILEL\x12\x20\n\x0bAKHEILMNDHJ\x18\
+    \x0c\x20\x01(\x08R\x0bAKHEILMNDHJ\x12\x20\n\x0bDMKLNJBOABO\x18\x04\x20\
+    \x01(\x08R\x0bDMKLNJBOABO\x12\x20\n\x0bCACEKELNMIN\x18\x02\x20\x01(\rR\
     \x0bCACEKELNMINb\x06proto3\
 ";
 

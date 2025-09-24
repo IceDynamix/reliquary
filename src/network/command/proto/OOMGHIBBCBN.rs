@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OOMGHIBBCBN {
     // message fields
-    // @@protoc_insertion_point(field:OOMGHIBBCBN.HMJFCDLCIFD)
-    pub HMJFCDLCIFD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OOMGHIBBCBN.HGCGILABNDL)
-    pub HGCGILABNDL: ::std::vec::Vec<super::BMPCJDEAIIH::BMPCJDEAIIH>,
-    // @@protoc_insertion_point(field:OOMGHIBBCBN.sub_tourn_id)
-    pub sub_tourn_id: u32,
     // @@protoc_insertion_point(field:OOMGHIBBCBN.MKAIFJIBJIK)
     pub MKAIFJIBJIK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OOMGHIBBCBN.HGCGILABNDL)
+    pub HGCGILABNDL: ::std::vec::Vec<super::BMPCJDEAIIH::BMPCJDEAIIH>,
     // @@protoc_insertion_point(field:OOMGHIBBCBN.main_tourn_id)
     pub main_tourn_id: u32,
+    // @@protoc_insertion_point(field:OOMGHIBBCBN.HMJFCDLCIFD)
+    pub HMJFCDLCIFD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OOMGHIBBCBN.AMLDAILBMBO)
     pub AMLDAILBMBO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OOMGHIBBCBN.JNCBPDHCAHI)
     pub JNCBPDHCAHI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OOMGHIBBCBN.sub_tourn_id)
+    pub sub_tourn_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OOMGHIBBCBN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,9 @@ impl OOMGHIBBCBN {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HMJFCDLCIFD",
-            |m: &OOMGHIBBCBN| { &m.HMJFCDLCIFD },
-            |m: &mut OOMGHIBBCBN| { &mut m.HMJFCDLCIFD },
+            "MKAIFJIBJIK",
+            |m: &OOMGHIBBCBN| { &m.MKAIFJIBJIK },
+            |m: &mut OOMGHIBBCBN| { &mut m.MKAIFJIBJIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HGCGILABNDL",
@@ -72,19 +72,14 @@ impl OOMGHIBBCBN {
             |m: &mut OOMGHIBBCBN| { &mut m.HGCGILABNDL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sub_tourn_id",
-            |m: &OOMGHIBBCBN| { &m.sub_tourn_id },
-            |m: &mut OOMGHIBBCBN| { &mut m.sub_tourn_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MKAIFJIBJIK",
-            |m: &OOMGHIBBCBN| { &m.MKAIFJIBJIK },
-            |m: &mut OOMGHIBBCBN| { &mut m.MKAIFJIBJIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_tourn_id",
             |m: &OOMGHIBBCBN| { &m.main_tourn_id },
             |m: &mut OOMGHIBBCBN| { &mut m.main_tourn_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HMJFCDLCIFD",
+            |m: &OOMGHIBBCBN| { &m.HMJFCDLCIFD },
+            |m: &mut OOMGHIBBCBN| { &mut m.HMJFCDLCIFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AMLDAILBMBO",
@@ -95,6 +90,11 @@ impl OOMGHIBBCBN {
             "JNCBPDHCAHI",
             |m: &OOMGHIBBCBN| { &m.JNCBPDHCAHI },
             |m: &mut OOMGHIBBCBN| { &mut m.JNCBPDHCAHI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "sub_tourn_id",
+            |m: &OOMGHIBBCBN| { &m.sub_tourn_id },
+            |m: &mut OOMGHIBBCBN| { &mut m.sub_tourn_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OOMGHIBBCBN>(
             "OOMGHIBBCBN",
@@ -114,31 +114,28 @@ impl ::protobuf::Message for OOMGHIBBCBN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HMJFCDLCIFD)?;
-                },
-                80 => {
-                    self.HMJFCDLCIFD.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.HGCGILABNDL.push(is.read_message()?);
-                },
-                88 => {
-                    self.sub_tourn_id = is.read_uint32()?;
-                },
-                26 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.MKAIFJIBJIK)?;
                 },
-                24 => {
+                8 => {
                     self.MKAIFJIBJIK.push(is.read_uint32()?);
                 },
-                32 => {
+                34 => {
+                    self.HGCGILABNDL.push(is.read_message()?);
+                },
+                120 => {
                     self.main_tourn_id = is.read_uint32()?;
                 },
-                98 => {
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HMJFCDLCIFD)?;
+                },
+                40 => {
+                    self.HMJFCDLCIFD.push(is.read_uint32()?);
+                },
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.AMLDAILBMBO)?;
                 },
-                96 => {
+                72 => {
                     self.AMLDAILBMBO.push(is.read_uint32()?);
                 },
                 18 => {
@@ -146,6 +143,9 @@ impl ::protobuf::Message for OOMGHIBBCBN {
                 },
                 16 => {
                     self.JNCBPDHCAHI.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.sub_tourn_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,39 +159,39 @@ impl ::protobuf::Message for OOMGHIBBCBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HMJFCDLCIFD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MKAIFJIBJIK);
         for value in &self.HGCGILABNDL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.sub_tourn_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.sub_tourn_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MKAIFJIBJIK);
         if self.main_tourn_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.main_tourn_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.main_tourn_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.AMLDAILBMBO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.HMJFCDLCIFD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.AMLDAILBMBO);
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JNCBPDHCAHI);
+        if self.sub_tourn_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.sub_tourn_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.HMJFCDLCIFD)?;
+        os.write_repeated_packed_uint32(1, &self.MKAIFJIBJIK)?;
         for v in &self.HGCGILABNDL {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.sub_tourn_id != 0 {
-            os.write_uint32(11, self.sub_tourn_id)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.MKAIFJIBJIK)?;
         if self.main_tourn_id != 0 {
-            os.write_uint32(4, self.main_tourn_id)?;
+            os.write_uint32(15, self.main_tourn_id)?;
         }
-        os.write_repeated_packed_uint32(12, &self.AMLDAILBMBO)?;
+        os.write_repeated_packed_uint32(5, &self.HMJFCDLCIFD)?;
+        os.write_repeated_packed_uint32(9, &self.AMLDAILBMBO)?;
         os.write_repeated_packed_uint32(2, &self.JNCBPDHCAHI)?;
+        if self.sub_tourn_id != 0 {
+            os.write_uint32(7, self.sub_tourn_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -209,25 +209,25 @@ impl ::protobuf::Message for OOMGHIBBCBN {
     }
 
     fn clear(&mut self) {
-        self.HMJFCDLCIFD.clear();
-        self.HGCGILABNDL.clear();
-        self.sub_tourn_id = 0;
         self.MKAIFJIBJIK.clear();
+        self.HGCGILABNDL.clear();
         self.main_tourn_id = 0;
+        self.HMJFCDLCIFD.clear();
         self.AMLDAILBMBO.clear();
         self.JNCBPDHCAHI.clear();
+        self.sub_tourn_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OOMGHIBBCBN {
         static instance: OOMGHIBBCBN = OOMGHIBBCBN {
-            HMJFCDLCIFD: ::std::vec::Vec::new(),
-            HGCGILABNDL: ::std::vec::Vec::new(),
-            sub_tourn_id: 0,
             MKAIFJIBJIK: ::std::vec::Vec::new(),
+            HGCGILABNDL: ::std::vec::Vec::new(),
             main_tourn_id: 0,
+            HMJFCDLCIFD: ::std::vec::Vec::new(),
             AMLDAILBMBO: ::std::vec::Vec::new(),
             JNCBPDHCAHI: ::std::vec::Vec::new(),
+            sub_tourn_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -253,13 +253,13 @@ impl ::protobuf::reflect::ProtobufValue for OOMGHIBBCBN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OOMGHIBBCBN.proto\x1a\x11BMPCJDEAIIH.proto\"\x8b\x02\n\x0bOOMGHIBB\
-    CBN\x12\x20\n\x0bHMJFCDLCIFD\x18\n\x20\x03(\rR\x0bHMJFCDLCIFD\x12.\n\x0b\
-    HGCGILABNDL\x18\x08\x20\x03(\x0b2\x0c.BMPCJDEAIIHR\x0bHGCGILABNDL\x12\
-    \x20\n\x0csub_tourn_id\x18\x0b\x20\x01(\rR\nsubTournId\x12\x20\n\x0bMKAI\
-    FJIBJIK\x18\x03\x20\x03(\rR\x0bMKAIFJIBJIK\x12\"\n\rmain_tourn_id\x18\
-    \x04\x20\x01(\rR\x0bmainTournId\x12\x20\n\x0bAMLDAILBMBO\x18\x0c\x20\x03\
-    (\rR\x0bAMLDAILBMBO\x12\x20\n\x0bJNCBPDHCAHI\x18\x02\x20\x03(\rR\x0bJNCB\
-    PDHCAHIb\x06proto3\
+    CBN\x12\x20\n\x0bMKAIFJIBJIK\x18\x01\x20\x03(\rR\x0bMKAIFJIBJIK\x12.\n\
+    \x0bHGCGILABNDL\x18\x04\x20\x03(\x0b2\x0c.BMPCJDEAIIHR\x0bHGCGILABNDL\
+    \x12\"\n\rmain_tourn_id\x18\x0f\x20\x01(\rR\x0bmainTournId\x12\x20\n\x0b\
+    HMJFCDLCIFD\x18\x05\x20\x03(\rR\x0bHMJFCDLCIFD\x12\x20\n\x0bAMLDAILBMBO\
+    \x18\t\x20\x03(\rR\x0bAMLDAILBMBO\x12\x20\n\x0bJNCBPDHCAHI\x18\x02\x20\
+    \x03(\rR\x0bJNCBPDHCAHI\x12\x20\n\x0csub_tourn_id\x18\x07\x20\x01(\rR\ns\
+    ubTournIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

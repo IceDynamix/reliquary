@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonPendingActionScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.action)
+    pub action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.rogue_sub_mode)
     pub rogue_sub_mode: u32,
-    // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION)
-    pub SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonPendingActionScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SyncRogueCommonPendingActionScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "action",
+            |m: &SyncRogueCommonPendingActionScNotify| { &m.action },
+            |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.action },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_sub_mode",
             |m: &SyncRogueCommonPendingActionScNotify| { &m.rogue_sub_mode },
             |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.rogue_sub_mode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
-            "SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION",
-            |m: &SyncRogueCommonPendingActionScNotify| { &m.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION },
-            |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonPendingActionScNotify>(
             "SyncRogueCommonPendingActionScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.rogue_sub_mode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.action)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION)?;
+                56 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.rogue_sub_mode);
-        }
-        if let Some(v) = self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION.as_ref() {
+        if let Some(v) = self.action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.rogue_sub_mode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.rogue_sub_mode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rogue_sub_mode != 0 {
-            os.write_uint32(4, self.rogue_sub_mode)?;
+        if let Some(v) = self.action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.rogue_sub_mode != 0 {
+            os.write_uint32(7, self.rogue_sub_mode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     }
 
     fn clear(&mut self) {
+        self.action.clear();
         self.rogue_sub_mode = 0;
-        self.SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonPendingActionScNotify {
         static instance: SyncRogueCommonPendingActionScNotify = SyncRogueCommonPendingActionScNotify {
+            action: ::protobuf::MessageField::none(),
             rogue_sub_mode: 0,
-            SWORD_TRAIN_GAME_SOURCE_TYPE_ACTION: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonPendingActionScNotify
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SyncRogueCommonPendingActionScNotify.proto\x1a\x1eRogueCommonPendingA\
-    ction.proto\"\xb4\x01\n$SyncRogueCommonPendingActionScNotify\x12$\n\x0er\
-    ogue_sub_mode\x18\x04\x20\x01(\rR\x0crogueSubMode\x12f\n#SWORD_TRAIN_GAM\
-    E_SOURCE_TYPE_ACTION\x18\x01\x20\x01(\x0b2\x19.RogueCommonPendingActionR\
-    \x1eSWORDTRAINGAMESOURCETYPEACTIONb\x06proto3\
+    ction.proto\"\x7f\n$SyncRogueCommonPendingActionScNotify\x121\n\x06actio\
+    n\x18\x02\x20\x01(\x0b2\x19.RogueCommonPendingActionR\x06action\x12$\n\
+    \x0erogue_sub_mode\x18\x07\x20\x01(\rR\x0crogueSubModeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

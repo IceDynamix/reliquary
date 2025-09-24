@@ -72,7 +72,7 @@ impl ::protobuf::Message for GameMiracleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GameMiracleInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GameMiracleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15GameMiracleInfo.proto\x1a\x11OLFPCKAGKAK.proto\"K\n\x0fGameMiracle\
-    Info\x128\n\x11game_miracle_info\x18\r\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\
+    Info\x128\n\x11game_miracle_info\x18\x0f\x20\x01(\x0b2\x0c.OLFPCKAGKAKR\
     \x0fgameMiracleInfob\x06proto3\
 ";
 

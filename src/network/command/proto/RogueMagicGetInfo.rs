@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicGetInfo {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicGetInfo.KGLBNDEAPHF)
+    pub KGLBNDEAPHF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_magic_talent_info)
+    pub rogue_magic_talent_info: ::protobuf::MessageField<super::RogueMagicTalentInfo::RogueMagicTalentInfo>,
+    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_tourn_difficulty_info)
+    pub rogue_tourn_difficulty_info: ::std::vec::Vec<super::RogueMagicDifficultyInfo::RogueMagicDifficultyInfo>,
+    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_magic_unit_info_list)
+    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::RogueMagicUnitInfo::RogueMagicUnitInfo>,
     // @@protoc_insertion_point(field:RogueMagicGetInfo.story_info)
     pub story_info: ::protobuf::MessageField<super::RogueMagicStoryInfo::RogueMagicStoryInfo>,
     // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_magic_scepter_info_list)
     pub rogue_magic_scepter_info_list: ::std::vec::Vec<super::OOCEOILKCFI::OOCEOILKCFI>,
     // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_tourn_area_info)
     pub rogue_tourn_area_info: ::std::vec::Vec<super::RogueMagicAreaInfo::RogueMagicAreaInfo>,
-    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_tourn_difficulty_info)
-    pub rogue_tourn_difficulty_info: ::std::vec::Vec<super::RogueMagicDifficultyInfo::RogueMagicDifficultyInfo>,
-    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_magic_unit_info_list)
-    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::RogueMagicUnitInfo::RogueMagicUnitInfo>,
-    // @@protoc_insertion_point(field:RogueMagicGetInfo.KGLBNDEAPHF)
-    pub KGLBNDEAPHF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMagicGetInfo.rogue_magic_talent_info)
-    pub rogue_magic_talent_info: ::protobuf::MessageField<super::RogueMagicTalentInfo::RogueMagicTalentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicGetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,26 @@ impl RogueMagicGetInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KGLBNDEAPHF",
+            |m: &RogueMagicGetInfo| { &m.KGLBNDEAPHF },
+            |m: &mut RogueMagicGetInfo| { &mut m.KGLBNDEAPHF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicTalentInfo::RogueMagicTalentInfo>(
+            "rogue_magic_talent_info",
+            |m: &RogueMagicGetInfo| { &m.rogue_magic_talent_info },
+            |m: &mut RogueMagicGetInfo| { &mut m.rogue_magic_talent_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_tourn_difficulty_info",
+            |m: &RogueMagicGetInfo| { &m.rogue_tourn_difficulty_info },
+            |m: &mut RogueMagicGetInfo| { &mut m.rogue_tourn_difficulty_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_magic_unit_info_list",
+            |m: &RogueMagicGetInfo| { &m.rogue_magic_unit_info_list },
+            |m: &mut RogueMagicGetInfo| { &mut m.rogue_magic_unit_info_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicStoryInfo::RogueMagicStoryInfo>(
             "story_info",
             |m: &RogueMagicGetInfo| { &m.story_info },
@@ -75,26 +95,6 @@ impl RogueMagicGetInfo {
             "rogue_tourn_area_info",
             |m: &RogueMagicGetInfo| { &m.rogue_tourn_area_info },
             |m: &mut RogueMagicGetInfo| { &mut m.rogue_tourn_area_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rogue_tourn_difficulty_info",
-            |m: &RogueMagicGetInfo| { &m.rogue_tourn_difficulty_info },
-            |m: &mut RogueMagicGetInfo| { &mut m.rogue_tourn_difficulty_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rogue_magic_unit_info_list",
-            |m: &RogueMagicGetInfo| { &m.rogue_magic_unit_info_list },
-            |m: &mut RogueMagicGetInfo| { &mut m.rogue_magic_unit_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGLBNDEAPHF",
-            |m: &RogueMagicGetInfo| { &m.KGLBNDEAPHF },
-            |m: &mut RogueMagicGetInfo| { &mut m.KGLBNDEAPHF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicTalentInfo::RogueMagicTalentInfo>(
-            "rogue_magic_talent_info",
-            |m: &RogueMagicGetInfo| { &m.rogue_magic_talent_info },
-            |m: &mut RogueMagicGetInfo| { &mut m.rogue_magic_talent_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicGetInfo>(
             "RogueMagicGetInfo",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for RogueMagicGetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
-                },
-                74 => {
-                    self.rogue_magic_scepter_info_list.push(is.read_message()?);
-                },
-                34 => {
-                    self.rogue_tourn_area_info.push(is.read_message()?);
-                },
-                122 => {
-                    self.rogue_tourn_difficulty_info.push(is.read_message()?);
-                },
-                50 => {
-                    self.rogue_magic_unit_info_list.push(is.read_message()?);
-                },
-                42 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.KGLBNDEAPHF)?;
                 },
-                40 => {
+                56 => {
                     self.KGLBNDEAPHF.push(is.read_uint32()?);
                 },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_magic_talent_info)?;
+                },
+                98 => {
+                    self.rogue_tourn_difficulty_info.push(is.read_message()?);
+                },
+                82 => {
+                    self.rogue_magic_unit_info_list.push(is.read_message()?);
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.story_info)?;
+                },
+                50 => {
+                    self.rogue_magic_scepter_info_list.push(is.read_message()?);
+                },
+                122 => {
+                    self.rogue_tourn_area_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,6 +150,19 @@ impl ::protobuf::Message for RogueMagicGetInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.KGLBNDEAPHF);
+        if let Some(v) = self.rogue_magic_talent_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.rogue_tourn_difficulty_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.rogue_magic_unit_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if let Some(v) = self.story_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -162,44 +175,31 @@ impl ::protobuf::Message for RogueMagicGetInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.rogue_tourn_difficulty_info {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.rogue_magic_unit_info_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KGLBNDEAPHF);
-        if let Some(v) = self.rogue_magic_talent_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.story_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        for v in &self.rogue_magic_scepter_info_list {
+        os.write_repeated_packed_uint32(7, &self.KGLBNDEAPHF)?;
+        if let Some(v) = self.rogue_magic_talent_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        for v in &self.rogue_tourn_area_info {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
+        }
         for v in &self.rogue_tourn_difficulty_info {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         for v in &self.rogue_magic_unit_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if let Some(v) = self.story_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        for v in &self.rogue_magic_scepter_info_list {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.KGLBNDEAPHF)?;
-        if let Some(v) = self.rogue_magic_talent_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
+        for v in &self.rogue_tourn_area_info {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -217,25 +217,25 @@ impl ::protobuf::Message for RogueMagicGetInfo {
     }
 
     fn clear(&mut self) {
+        self.KGLBNDEAPHF.clear();
+        self.rogue_magic_talent_info.clear();
+        self.rogue_tourn_difficulty_info.clear();
+        self.rogue_magic_unit_info_list.clear();
         self.story_info.clear();
         self.rogue_magic_scepter_info_list.clear();
         self.rogue_tourn_area_info.clear();
-        self.rogue_tourn_difficulty_info.clear();
-        self.rogue_magic_unit_info_list.clear();
-        self.KGLBNDEAPHF.clear();
-        self.rogue_magic_talent_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicGetInfo {
         static instance: RogueMagicGetInfo = RogueMagicGetInfo {
+            KGLBNDEAPHF: ::std::vec::Vec::new(),
+            rogue_magic_talent_info: ::protobuf::MessageField::none(),
+            rogue_tourn_difficulty_info: ::std::vec::Vec::new(),
+            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
             story_info: ::protobuf::MessageField::none(),
             rogue_magic_scepter_info_list: ::std::vec::Vec::new(),
             rogue_tourn_area_info: ::std::vec::Vec::new(),
-            rogue_tourn_difficulty_info: ::std::vec::Vec::new(),
-            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
-            KGLBNDEAPHF: ::std::vec::Vec::new(),
-            rogue_magic_talent_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -263,17 +263,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueMagicGetInfo.proto\x1a\x11OOCEOILKCFI.proto\x1a\x18RogueMagic\
     AreaInfo.proto\x1a\x1eRogueMagicDifficultyInfo.proto\x1a\x19RogueMagicSt\
     oryInfo.proto\x1a\x1aRogueMagicTalentInfo.proto\x1a\x18RogueMagicUnitInf\
-    o.proto\"\xfb\x03\n\x11RogueMagicGetInfo\x123\n\nstory_info\x18\x01\x20\
-    \x01(\x0b2\x14.RogueMagicStoryInfoR\tstoryInfo\x12N\n\x1drogue_magic_sce\
-    pter_info_list\x18\t\x20\x03(\x0b2\x0c.OOCEOILKCFIR\x19rogueMagicScepter\
-    InfoList\x12F\n\x15rogue_tourn_area_info\x18\x04\x20\x03(\x0b2\x13.Rogue\
-    MagicAreaInfoR\x12rogueTournAreaInfo\x12X\n\x1brogue_tourn_difficulty_in\
-    fo\x18\x0f\x20\x03(\x0b2\x19.RogueMagicDifficultyInfoR\x18rogueTournDiff\
-    icultyInfo\x12O\n\x1arogue_magic_unit_info_list\x18\x06\x20\x03(\x0b2\
-    \x13.RogueMagicUnitInfoR\x16rogueMagicUnitInfoList\x12\x20\n\x0bKGLBNDEA\
-    PHF\x18\x05\x20\x03(\rR\x0bKGLBNDEAPHF\x12L\n\x17rogue_magic_talent_info\
-    \x18\x02\x20\x01(\x0b2\x15.RogueMagicTalentInfoR\x14rogueMagicTalentInfo\
-    b\x06proto3\
+    o.proto\"\xfb\x03\n\x11RogueMagicGetInfo\x12\x20\n\x0bKGLBNDEAPHF\x18\
+    \x07\x20\x03(\rR\x0bKGLBNDEAPHF\x12L\n\x17rogue_magic_talent_info\x18\t\
+    \x20\x01(\x0b2\x15.RogueMagicTalentInfoR\x14rogueMagicTalentInfo\x12X\n\
+    \x1brogue_tourn_difficulty_info\x18\x0c\x20\x03(\x0b2\x19.RogueMagicDiff\
+    icultyInfoR\x18rogueTournDifficultyInfo\x12O\n\x1arogue_magic_unit_info_\
+    list\x18\n\x20\x03(\x0b2\x13.RogueMagicUnitInfoR\x16rogueMagicUnitInfoLi\
+    st\x123\n\nstory_info\x18\r\x20\x01(\x0b2\x14.RogueMagicStoryInfoR\tstor\
+    yInfo\x12N\n\x1drogue_magic_scepter_info_list\x18\x06\x20\x03(\x0b2\x0c.\
+    OOCEOILKCFIR\x19rogueMagicScepterInfoList\x12F\n\x15rogue_tourn_area_inf\
+    o\x18\x0f\x20\x03(\x0b2\x13.RogueMagicAreaInfoR\x12rogueTournAreaInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

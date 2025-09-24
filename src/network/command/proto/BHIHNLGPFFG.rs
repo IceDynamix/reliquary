@@ -79,16 +79,16 @@ impl ::protobuf::Message for BHIHNLGPFFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.ICFPFLMBJGP)?;
                 },
-                72 => {
+                48 => {
                     self.ICFPFLMBJGP.push(is.read_uint32()?);
                 },
-                26 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.FNDGCJHFCDG)?;
                 },
-                24 => {
+                56 => {
                     self.FNDGCJHFCDG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for BHIHNLGPFFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ICFPFLMBJGP);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FNDGCJHFCDG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.ICFPFLMBJGP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FNDGCJHFCDG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.ICFPFLMBJGP)?;
-        os.write_repeated_packed_uint32(3, &self.FNDGCJHFCDG)?;
+        os.write_repeated_packed_uint32(6, &self.ICFPFLMBJGP)?;
+        os.write_repeated_packed_uint32(7, &self.FNDGCJHFCDG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for BHIHNLGPFFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHIHNLGPFFG.proto\"Q\n\x0bBHIHNLGPFFG\x12\x20\n\x0bICFPFLMBJGP\x18\
-    \t\x20\x03(\rR\x0bICFPFLMBJGP\x12\x20\n\x0bFNDGCJHFCDG\x18\x03\x20\x03(\
-    \rR\x0bFNDGCJHFCDGb\x06proto3\
+    \x06\x20\x03(\rR\x0bICFPFLMBJGP\x12\x20\n\x0bFNDGCJHFCDG\x18\x07\x20\x03\
+    (\rR\x0bFNDGCJHFCDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournRenameBuildRefCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                42 => {
                     self.name = is.read_string()?;
                 },
-                80 => {
+                96 => {
                     self.max_times = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueTournRenameBuildRefCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.name);
+            my_size += ::protobuf::rt::string_size(5, &self.name);
         }
         if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.max_times);
+            my_size += ::protobuf::rt::uint32_size(12, self.max_times);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueTournRenameBuildRefCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.name.is_empty() {
-            os.write_string(11, &self.name)?;
+            os.write_string(5, &self.name)?;
         }
         if self.max_times != 0 {
-            os.write_uint32(10, self.max_times)?;
+            os.write_uint32(12, self.max_times)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameBuildRefCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueTournRenameBuildRefCsReq.proto\"P\n\x1dRogueTournRenameBuildRefC\
-    sReq\x12\x12\n\x04name\x18\x0b\x20\x01(\tR\x04name\x12\x1b\n\tmax_times\
-    \x18\n\x20\x01(\rR\x08maxTimesb\x06proto3\
+    sReq\x12\x12\n\x04name\x18\x05\x20\x01(\tR\x04name\x12\x1b\n\tmax_times\
+    \x18\x0c\x20\x01(\rR\x08maxTimesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

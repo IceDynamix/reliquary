@@ -72,7 +72,7 @@ impl ::protobuf::Message for EJLIFAJIAEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for EJLIFAJIAEF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.client_time_ms);
+            my_size += ::protobuf::rt::uint64_size(11, self.client_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for EJLIFAJIAEF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_time_ms != 0 {
-            os.write_uint64(9, self.client_time_ms)?;
+            os.write_uint64(11, self.client_time_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for EJLIFAJIAEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJLIFAJIAEF.proto\"3\n\x0bEJLIFAJIAEF\x12$\n\x0eclient_time_ms\x18\
-    \t\x20\x01(\x04R\x0cclientTimeMsb\x06proto3\
+    \x0b\x20\x01(\x04R\x0cclientTimeMsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

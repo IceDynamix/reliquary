@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueNousValueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.nous_value = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChessRogueNousValueInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.nous_value != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.nous_value);
+            my_size += ::protobuf::rt::int32_size(4, self.nous_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChessRogueNousValueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.nous_value != 0 {
-            os.write_int32(11, self.nous_value)?;
+            os.write_int32(4, self.nous_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousValueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChessRogueNousValueInfo.proto\"8\n\x17ChessRogueNousValueInfo\x12\
-    \x1d\n\nnous_value\x18\x0b\x20\x01(\x05R\tnousValueb\x06proto3\
+    \x1d\n\nnous_value\x18\x04\x20\x01(\x05R\tnousValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournSaveList {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournSaveList.data)
-    pub data: ::protobuf::MessageField<super::BKFFNNAIODC::BKFFNNAIODC>,
-    // @@protoc_insertion_point(field:RogueTournSaveList.rogue_tourn_cur_info)
-    pub rogue_tourn_cur_info: ::protobuf::MessageField<super::RogueTournCurInfo::RogueTournCurInfo>,
     // @@protoc_insertion_point(field:RogueTournSaveList.time)
     pub time: i64,
-    // @@protoc_insertion_point(field:RogueTournSaveList.name)
-    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueTournSaveList.data)
+    pub data: ::protobuf::MessageField<super::BKFFNNAIODC::BKFFNNAIODC>,
     // @@protoc_insertion_point(field:RogueTournSaveList.max_times)
     pub max_times: u32,
-    // @@protoc_insertion_point(field:RogueTournSaveList.end_time)
-    pub end_time: i64,
+    // @@protoc_insertion_point(field:RogueTournSaveList.name)
+    pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RogueTournSaveList.rogue_season_info)
     pub rogue_season_info: ::protobuf::MessageField<super::RogueTournSeasonInfo::RogueTournSeasonInfo>,
+    // @@protoc_insertion_point(field:RogueTournSaveList.rogue_tourn_cur_info)
+    pub rogue_tourn_cur_info: ::protobuf::MessageField<super::RogueTournCurInfo::RogueTournCurInfo>,
+    // @@protoc_insertion_point(field:RogueTournSaveList.end_time)
+    pub end_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournSaveList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,15 @@ impl RogueTournSaveList {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKFFNNAIODC::BKFFNNAIODC>(
-            "data",
-            |m: &RogueTournSaveList| { &m.data },
-            |m: &mut RogueTournSaveList| { &mut m.data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurInfo::RogueTournCurInfo>(
-            "rogue_tourn_cur_info",
-            |m: &RogueTournSaveList| { &m.rogue_tourn_cur_info },
-            |m: &mut RogueTournSaveList| { &mut m.rogue_tourn_cur_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
             |m: &RogueTournSaveList| { &m.time },
             |m: &mut RogueTournSaveList| { &mut m.time },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &RogueTournSaveList| { &m.name },
-            |m: &mut RogueTournSaveList| { &mut m.name },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BKFFNNAIODC::BKFFNNAIODC>(
+            "data",
+            |m: &RogueTournSaveList| { &m.data },
+            |m: &mut RogueTournSaveList| { &mut m.data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_times",
@@ -87,14 +77,24 @@ impl RogueTournSaveList {
             |m: &mut RogueTournSaveList| { &mut m.max_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &RogueTournSaveList| { &m.end_time },
-            |m: &mut RogueTournSaveList| { &mut m.end_time },
+            "name",
+            |m: &RogueTournSaveList| { &m.name },
+            |m: &mut RogueTournSaveList| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSeasonInfo::RogueTournSeasonInfo>(
             "rogue_season_info",
             |m: &RogueTournSaveList| { &m.rogue_season_info },
             |m: &mut RogueTournSaveList| { &mut m.rogue_season_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurInfo::RogueTournCurInfo>(
+            "rogue_tourn_cur_info",
+            |m: &RogueTournSaveList| { &m.rogue_tourn_cur_info },
+            |m: &mut RogueTournSaveList| { &mut m.rogue_tourn_cur_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &RogueTournSaveList| { &m.end_time },
+            |m: &mut RogueTournSaveList| { &mut m.end_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournSaveList>(
             "RogueTournSaveList",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for RogueTournSaveList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_info)?;
-                },
-                120 => {
+                8 => {
                     self.time = is.read_int64()?;
                 },
-                82 => {
-                    self.name = is.read_string()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
-                24 => {
+                104 => {
                     self.max_times = is.read_uint32()?;
                 },
-                96 => {
-                    self.end_time = is.read_int64()?;
+                66 => {
+                    self.name = is.read_string()?;
                 },
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_season_info)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_info)?;
+                },
+                56 => {
+                    self.end_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,7 +147,20 @@ impl ::protobuf::Message for RogueTournSaveList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.time != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.time);
+        }
         if let Some(v) = self.data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.max_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.max_times);
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.name);
+        }
+        if let Some(v) = self.rogue_season_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -155,21 +168,8 @@ impl ::protobuf::Message for RogueTournSaveList {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.time);
-        }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.name);
-        }
-        if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.max_times);
-        }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.end_time);
-        }
-        if let Some(v) = self.rogue_season_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::int64_size(7, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -177,26 +177,26 @@ impl ::protobuf::Message for RogueTournSaveList {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.time != 0 {
-            os.write_int64(15, self.time)?;
+            os.write_int64(1, self.time)?;
         }
-        if !self.name.is_empty() {
-            os.write_string(10, &self.name)?;
+        if let Some(v) = self.data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.max_times != 0 {
-            os.write_uint32(3, self.max_times)?;
+            os.write_uint32(13, self.max_times)?;
         }
-        if self.end_time != 0 {
-            os.write_int64(12, self.end_time)?;
+        if !self.name.is_empty() {
+            os.write_string(8, &self.name)?;
         }
         if let Some(v) = self.rogue_season_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(7, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,25 +215,25 @@ impl ::protobuf::Message for RogueTournSaveList {
     }
 
     fn clear(&mut self) {
-        self.data.clear();
-        self.rogue_tourn_cur_info.clear();
         self.time = 0;
-        self.name.clear();
+        self.data.clear();
         self.max_times = 0;
-        self.end_time = 0;
+        self.name.clear();
         self.rogue_season_info.clear();
+        self.rogue_tourn_cur_info.clear();
+        self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournSaveList {
         static instance: RogueTournSaveList = RogueTournSaveList {
-            data: ::protobuf::MessageField::none(),
-            rogue_tourn_cur_info: ::protobuf::MessageField::none(),
             time: 0,
-            name: ::std::string::String::new(),
+            data: ::protobuf::MessageField::none(),
             max_times: 0,
-            end_time: 0,
+            name: ::std::string::String::new(),
             rogue_season_info: ::protobuf::MessageField::none(),
+            rogue_tourn_cur_info: ::protobuf::MessageField::none(),
+            end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -260,13 +260,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournSaveList {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueTournSaveList.proto\x1a\x11BKFFNNAIODC.proto\x1a\x17RogueTour\
     nCurInfo.proto\x1a\x1aRogueTournSeasonInfo.proto\"\x9e\x02\n\x12RogueTou\
-    rnSaveList\x12\x20\n\x04data\x18\x01\x20\x01(\x0b2\x0c.BKFFNNAIODCR\x04d\
-    ata\x12C\n\x14rogue_tourn_cur_info\x18\x08\x20\x01(\x0b2\x12.RogueTournC\
-    urInfoR\x11rogueTournCurInfo\x12\x12\n\x04time\x18\x0f\x20\x01(\x03R\x04\
-    time\x12\x12\n\x04name\x18\n\x20\x01(\tR\x04name\x12\x1b\n\tmax_times\
-    \x18\x03\x20\x01(\rR\x08maxTimes\x12\x19\n\x08end_time\x18\x0c\x20\x01(\
-    \x03R\x07endTime\x12A\n\x11rogue_season_info\x18\r\x20\x01(\x0b2\x15.Rog\
-    ueTournSeasonInfoR\x0frogueSeasonInfob\x06proto3\
+    rnSaveList\x12\x12\n\x04time\x18\x01\x20\x01(\x03R\x04time\x12\x20\n\x04\
+    data\x18\x05\x20\x01(\x0b2\x0c.BKFFNNAIODCR\x04data\x12\x1b\n\tmax_times\
+    \x18\r\x20\x01(\rR\x08maxTimes\x12\x12\n\x04name\x18\x08\x20\x01(\tR\x04\
+    name\x12A\n\x11rogue_season_info\x18\x06\x20\x01(\x0b2\x15.RogueTournSea\
+    sonInfoR\x0frogueSeasonInfo\x12C\n\x14rogue_tourn_cur_info\x18\n\x20\x01\
+    (\x0b2\x12.RogueTournCurInfoR\x11rogueTournCurInfo\x12\x19\n\x08end_time\
+    \x18\x07\x20\x01(\x03R\x07endTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

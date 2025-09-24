@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                96 => {
                     self.MDHJKKBNMCF = is.read_bool()?;
                 },
-                104 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
             my_size += 1 + 1;
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MDHJKKBNMCF != false {
-            os.write_bool(9, self.MDHJKKBNMCF)?;
+            os.write_bool(12, self.MDHJKKBNMCF)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityPointRewardC
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.TakeRogueEndlessActivityPointRewardCsReq.proto\"b\n(TakeRogueEndlessA\
-    ctivityPointRewardCsReq\x12\x20\n\x0bMDHJKKBNMCF\x18\t\x20\x01(\x08R\x0b\
-    MDHJKKBNMCF\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
+    ctivityPointRewardCsReq\x12\x20\n\x0bMDHJKKBNMCF\x18\x0c\x20\x01(\x08R\
+    \x0bMDHJKKBNMCF\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05levelb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

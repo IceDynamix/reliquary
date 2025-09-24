@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournConfirmSettleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.JPLAAPJCCBH)
-    pub JPLAAPJCCBH: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.rogue_tourn_cur_scene_info)
     pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>,
-    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.JPLAAPJCCBH)
+    pub JPLAAPJCCBH: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.GFONFDBFBNA)
     pub GFONFDBFBNA: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.OHHJKGFOFHB)
     pub OHHJKGFOFHB: ::protobuf::MessageField<super::RogueTournSaveList::RogueTournSaveList>,
+    // @@protoc_insertion_point(field:RogueTournConfirmSettleScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournConfirmSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl RogueTournConfirmSettleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "JPLAAPJCCBH",
-            |m: &RogueTournConfirmSettleScRsp| { &m.JPLAAPJCCBH },
-            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.JPLAAPJCCBH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>(
             "rogue_tourn_cur_scene_info",
             |m: &RogueTournConfirmSettleScRsp| { &m.rogue_tourn_cur_scene_info },
             |m: &mut RogueTournConfirmSettleScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueTournConfirmSettleScRsp| { &m.retcode },
-            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "JPLAAPJCCBH",
+            |m: &RogueTournConfirmSettleScRsp| { &m.JPLAAPJCCBH },
+            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.JPLAAPJCCBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "GFONFDBFBNA",
@@ -81,6 +76,11 @@ impl RogueTournConfirmSettleScRsp {
             "OHHJKGFOFHB",
             |m: &RogueTournConfirmSettleScRsp| { &m.OHHJKGFOFHB },
             |m: &mut RogueTournConfirmSettleScRsp| { &mut m.OHHJKGFOFHB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RogueTournConfirmSettleScRsp| { &m.retcode },
+            |m: &mut RogueTournConfirmSettleScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournConfirmSettleScRsp>(
             "RogueTournConfirmSettleScRsp",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPLAAPJCCBH)?;
-                },
-                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPLAAPJCCBH)?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFONFDBFBNA)?;
                 },
-                42 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHHJKGFOFHB)?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,16 +127,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.GFONFDBFBNA.as_ref() {
             let len = v.compute_size();
@@ -145,6 +142,9 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
         if let Some(v) = self.OHHJKGFOFHB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,20 +152,20 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        if let Some(v) = self.JPLAAPJCCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.GFONFDBFBNA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.OHHJKGFOFHB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for RogueTournConfirmSettleScRsp {
     }
 
     fn clear(&mut self) {
-        self.JPLAAPJCCBH.clear();
         self.rogue_tourn_cur_scene_info.clear();
-        self.retcode = 0;
+        self.JPLAAPJCCBH.clear();
         self.GFONFDBFBNA.clear();
         self.OHHJKGFOFHB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournConfirmSettleScRsp {
         static instance: RogueTournConfirmSettleScRsp = RogueTournConfirmSettleScRsp {
-            JPLAAPJCCBH: ::protobuf::MessageField::none(),
             rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
-            retcode: 0,
+            JPLAAPJCCBH: ::protobuf::MessageField::none(),
             GFONFDBFBNA: ::protobuf::MessageField::none(),
             OHHJKGFOFHB: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,12 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournConfirmSettleScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournConfirmSettleScRsp.proto\x1a\x0eItemList.proto\x1a\x1cRogu\
     eTournCurSceneInfo.proto\x1a\x18RogueTournSaveList.proto\"\x9e\x02\n\x1c\
-    RogueTournConfirmSettleScRsp\x12+\n\x0bJPLAAPJCCBH\x18\x02\x20\x01(\x0b2\
-    \t.ItemListR\x0bJPLAAPJCCBH\x12S\n\x1arogue_tourn_cur_scene_info\x18\x06\
-    \x20\x01(\x0b2\x17.RogueTournCurSceneInfoR\x16rogueTournCurSceneInfo\x12\
-    \x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12+\n\x0bGFONFDBFBNA\
-    \x18\x08\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBNA\x125\n\x0bOHHJKGFOFHB\
-    \x18\x05\x20\x01(\x0b2\x13.RogueTournSaveListR\x0bOHHJKGFOFHBb\x06proto3\
+    RogueTournConfirmSettleScRsp\x12S\n\x1arogue_tourn_cur_scene_info\x18\
+    \x02\x20\x01(\x0b2\x17.RogueTournCurSceneInfoR\x16rogueTournCurSceneInfo\
+    \x12+\n\x0bJPLAAPJCCBH\x18\r\x20\x01(\x0b2\t.ItemListR\x0bJPLAAPJCCBH\
+    \x12+\n\x0bGFONFDBFBNA\x18\t\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBNA\
+    \x125\n\x0bOHHJKGFOFHB\x18\x04\x20\x01(\x0b2\x13.RogueTournSaveListR\x0b\
+    OHHJKGFOFHB\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

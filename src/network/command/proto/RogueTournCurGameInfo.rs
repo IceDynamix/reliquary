@@ -28,28 +28,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournCurGameInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.tourn_formula_info)
-    pub tourn_formula_info: ::protobuf::MessageField<super::RogueTournFormulaInfo::RogueTournFormulaInfo>,
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.unlock_value)
-    pub unlock_value: ::protobuf::MessageField<super::KeywordUnlockValue::KeywordUnlockValue>,
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.tourn_module_info)
-    pub tourn_module_info: ::protobuf::MessageField<super::RogueTournModuleInfo::RogueTournModuleInfo>,
     // @@protoc_insertion_point(field:RogueTournCurGameInfo.miracle_info)
     pub miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.game_difficulty_info)
-    pub game_difficulty_info: ::protobuf::MessageField<super::RogueTournGameDifficultyInfo::RogueTournGameDifficultyInfo>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.tourn_formula_info)
+    pub tourn_formula_info: ::protobuf::MessageField<super::RogueTournFormulaInfo::RogueTournFormulaInfo>,
     // @@protoc_insertion_point(field:RogueTournCurGameInfo.rogue_tourn_game_area_info)
     pub rogue_tourn_game_area_info: ::protobuf::MessageField<super::RogueTournGameAreaInfo::RogueTournGameAreaInfo>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.buff)
+    pub buff: ::protobuf::MessageField<super::ChessRogueBuffInfo::ChessRogueBuffInfo>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.unlock_value)
+    pub unlock_value: ::protobuf::MessageField<super::KeywordUnlockValue::KeywordUnlockValue>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.JMIDLLDKJBI)
+    pub JMIDLLDKJBI: ::protobuf::MessageField<super::CGJNHNMAMDH::CGJNHNMAMDH>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.tourn_module_info)
+    pub tourn_module_info: ::protobuf::MessageField<super::RogueTournModuleInfo::RogueTournModuleInfo>,
     // @@protoc_insertion_point(field:RogueTournCurGameInfo.lineup)
     pub lineup: ::protobuf::MessageField<super::RogueTournLineupInfo::RogueTournLineupInfo>,
     // @@protoc_insertion_point(field:RogueTournCurGameInfo.item_value)
     pub item_value: ::protobuf::MessageField<super::RogueGameItemValue::RogueGameItemValue>,
+    // @@protoc_insertion_point(field:RogueTournCurGameInfo.game_difficulty_info)
+    pub game_difficulty_info: ::protobuf::MessageField<super::RogueTournGameDifficultyInfo::RogueTournGameDifficultyInfo>,
     // @@protoc_insertion_point(field:RogueTournCurGameInfo.level)
     pub level: ::protobuf::MessageField<super::RogueTournLevelInfo::RogueTournLevelInfo>,
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF)
-    pub ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF: ::protobuf::MessageField<super::ChessRogueBuffInfo::ChessRogueBuffInfo>,
-    // @@protoc_insertion_point(field:RogueTournCurGameInfo.JMIDLLDKJBI)
-    pub JMIDLLDKJBI: ::protobuf::MessageField<super::CGJNHNMAMDH::CGJNHNMAMDH>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournCurGameInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,35 +69,40 @@ impl RogueTournCurGameInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
+            "miracle_info",
+            |m: &RogueTournCurGameInfo| { &m.miracle_info },
+            |m: &mut RogueTournCurGameInfo| { &mut m.miracle_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournFormulaInfo::RogueTournFormulaInfo>(
             "tourn_formula_info",
             |m: &RogueTournCurGameInfo| { &m.tourn_formula_info },
             |m: &mut RogueTournCurGameInfo| { &mut m.tourn_formula_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournGameAreaInfo::RogueTournGameAreaInfo>(
+            "rogue_tourn_game_area_info",
+            |m: &RogueTournCurGameInfo| { &m.rogue_tourn_game_area_info },
+            |m: &mut RogueTournCurGameInfo| { &mut m.rogue_tourn_game_area_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
+            "buff",
+            |m: &RogueTournCurGameInfo| { &m.buff },
+            |m: &mut RogueTournCurGameInfo| { &mut m.buff },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KeywordUnlockValue::KeywordUnlockValue>(
             "unlock_value",
             |m: &RogueTournCurGameInfo| { &m.unlock_value },
             |m: &mut RogueTournCurGameInfo| { &mut m.unlock_value },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGJNHNMAMDH::CGJNHNMAMDH>(
+            "JMIDLLDKJBI",
+            |m: &RogueTournCurGameInfo| { &m.JMIDLLDKJBI },
+            |m: &mut RogueTournCurGameInfo| { &mut m.JMIDLLDKJBI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournModuleInfo::RogueTournModuleInfo>(
             "tourn_module_info",
             |m: &RogueTournCurGameInfo| { &m.tourn_module_info },
             |m: &mut RogueTournCurGameInfo| { &mut m.tourn_module_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
-            "miracle_info",
-            |m: &RogueTournCurGameInfo| { &m.miracle_info },
-            |m: &mut RogueTournCurGameInfo| { &mut m.miracle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournGameDifficultyInfo::RogueTournGameDifficultyInfo>(
-            "game_difficulty_info",
-            |m: &RogueTournCurGameInfo| { &m.game_difficulty_info },
-            |m: &mut RogueTournCurGameInfo| { &mut m.game_difficulty_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournGameAreaInfo::RogueTournGameAreaInfo>(
-            "rogue_tourn_game_area_info",
-            |m: &RogueTournCurGameInfo| { &m.rogue_tourn_game_area_info },
-            |m: &mut RogueTournCurGameInfo| { &mut m.rogue_tourn_game_area_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournLineupInfo::RogueTournLineupInfo>(
             "lineup",
@@ -109,20 +114,15 @@ impl RogueTournCurGameInfo {
             |m: &RogueTournCurGameInfo| { &m.item_value },
             |m: &mut RogueTournCurGameInfo| { &mut m.item_value },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournGameDifficultyInfo::RogueTournGameDifficultyInfo>(
+            "game_difficulty_info",
+            |m: &RogueTournCurGameInfo| { &m.game_difficulty_info },
+            |m: &mut RogueTournCurGameInfo| { &mut m.game_difficulty_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournLevelInfo::RogueTournLevelInfo>(
             "level",
             |m: &RogueTournCurGameInfo| { &m.level },
             |m: &mut RogueTournCurGameInfo| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
-            "ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF",
-            |m: &RogueTournCurGameInfo| { &m.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF },
-            |m: &mut RogueTournCurGameInfo| { &mut m.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGJNHNMAMDH::CGJNHNMAMDH>(
-            "JMIDLLDKJBI",
-            |m: &RogueTournCurGameInfo| { &m.JMIDLLDKJBI },
-            |m: &mut RogueTournCurGameInfo| { &mut m.JMIDLLDKJBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournCurGameInfo>(
             "RogueTournCurGameInfo",
@@ -142,38 +142,38 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_formula_info)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.unlock_value)?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_module_info)?;
-                },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_difficulty_info)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_formula_info)?;
                 },
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_game_area_info)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff)?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.unlock_value)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMIDLLDKJBI)?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_module_info)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMIDLLDKJBI)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_difficulty_info)?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -187,7 +187,19 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.miracle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.tourn_formula_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_tourn_game_area_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.buff.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -195,19 +207,11 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.JMIDLLDKJBI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.tourn_module_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.miracle_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.game_difficulty_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue_tourn_game_area_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -219,15 +223,11 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.game_difficulty_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.level.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.JMIDLLDKJBI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -237,38 +237,38 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.tourn_formula_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.unlock_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.tourn_module_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if let Some(v) = self.miracle_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.game_difficulty_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.tourn_formula_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.rogue_tourn_game_area_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.buff.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.level.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.as_ref() {
+        if let Some(v) = self.unlock_value.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.JMIDLLDKJBI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.tourn_module_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.item_value.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.game_difficulty_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.level.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -287,33 +287,33 @@ impl ::protobuf::Message for RogueTournCurGameInfo {
     }
 
     fn clear(&mut self) {
-        self.tourn_formula_info.clear();
-        self.unlock_value.clear();
-        self.tourn_module_info.clear();
         self.miracle_info.clear();
-        self.game_difficulty_info.clear();
+        self.tourn_formula_info.clear();
         self.rogue_tourn_game_area_info.clear();
+        self.buff.clear();
+        self.unlock_value.clear();
+        self.JMIDLLDKJBI.clear();
+        self.tourn_module_info.clear();
         self.lineup.clear();
         self.item_value.clear();
+        self.game_difficulty_info.clear();
         self.level.clear();
-        self.ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF.clear();
-        self.JMIDLLDKJBI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournCurGameInfo {
         static instance: RogueTournCurGameInfo = RogueTournCurGameInfo {
-            tourn_formula_info: ::protobuf::MessageField::none(),
-            unlock_value: ::protobuf::MessageField::none(),
-            tourn_module_info: ::protobuf::MessageField::none(),
             miracle_info: ::protobuf::MessageField::none(),
-            game_difficulty_info: ::protobuf::MessageField::none(),
+            tourn_formula_info: ::protobuf::MessageField::none(),
             rogue_tourn_game_area_info: ::protobuf::MessageField::none(),
+            buff: ::protobuf::MessageField::none(),
+            unlock_value: ::protobuf::MessageField::none(),
+            JMIDLLDKJBI: ::protobuf::MessageField::none(),
+            tourn_module_info: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
             item_value: ::protobuf::MessageField::none(),
+            game_difficulty_info: ::protobuf::MessageField::none(),
             level: ::protobuf::MessageField::none(),
-            ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF: ::protobuf::MessageField::none(),
-            JMIDLLDKJBI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -343,22 +343,21 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ckValue.proto\x1a\x18RogueGameItemValue.proto\x1a\x1bRogueTournFormulaIn\
     fo.proto\x1a\x1cRogueTournGameAreaInfo.proto\x1a\"RogueTournGameDifficul\
     tyInfo.proto\x1a\x19RogueTournLevelInfo.proto\x1a\x1aRogueTournLineupInf\
-    o.proto\x1a\x1aRogueTournModuleInfo.proto\"\xe9\x05\n\x15RogueTournCurGa\
-    meInfo\x12D\n\x12tourn_formula_info\x18\x05\x20\x01(\x0b2\x16.RogueTourn\
-    FormulaInfoR\x10tournFormulaInfo\x126\n\x0cunlock_value\x18\x04\x20\x01(\
-    \x0b2\x13.KeywordUnlockValueR\x0bunlockValue\x12A\n\x11tourn_module_info\
-    \x18\t\x20\x01(\x0b2\x15.RogueTournModuleInfoR\x0ftournModuleInfo\x129\n\
-    \x0cmiracle_info\x18\x08\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmir\
-    acleInfo\x12O\n\x14game_difficulty_info\x18\n\x20\x01(\x0b2\x1d.RogueTou\
-    rnGameDifficultyInfoR\x12gameDifficultyInfo\x12S\n\x1arogue_tourn_game_a\
-    rea_info\x18\x01\x20\x01(\x0b2\x17.RogueTournGameAreaInfoR\x16rogueTourn\
-    GameAreaInfo\x12-\n\x06lineup\x18\x02\x20\x01(\x0b2\x15.RogueTournLineup\
-    InfoR\x06lineup\x122\n\nitem_value\x18\x0b\x20\x01(\x0b2\x13.RogueGameIt\
-    emValueR\titemValue\x12*\n\x05level\x18\x07\x20\x01(\x0b2\x14.RogueTourn\
-    LevelInfoR\x05level\x12o\n+ROGUE_COMMON_ACTION_RESULT_SOURCE_TYPE_BUFF\
-    \x18\x0f\x20\x01(\x0b2\x13.ChessRogueBuffInfoR%ROGUECOMMONACTIONRESULTSO\
-    URCETYPEBUFF\x12.\n\x0bJMIDLLDKJBI\x18\x03\x20\x01(\x0b2\x0c.CGJNHNMAMDH\
-    R\x0bJMIDLLDKJBIb\x06proto3\
+    o.proto\x1a\x1aRogueTournModuleInfo.proto\"\xa1\x05\n\x15RogueTournCurGa\
+    meInfo\x129\n\x0cmiracle_info\x18\x08\x20\x01(\x0b2\x16.ChessRogueMiracl\
+    eInfoR\x0bmiracleInfo\x12D\n\x12tourn_formula_info\x18\x05\x20\x01(\x0b2\
+    \x16.RogueTournFormulaInfoR\x10tournFormulaInfo\x12S\n\x1arogue_tourn_ga\
+    me_area_info\x18\t\x20\x01(\x0b2\x17.RogueTournGameAreaInfoR\x16rogueTou\
+    rnGameAreaInfo\x12'\n\x04buff\x18\n\x20\x01(\x0b2\x13.ChessRogueBuffInfo\
+    R\x04buff\x126\n\x0cunlock_value\x18\x0f\x20\x01(\x0b2\x13.KeywordUnlock\
+    ValueR\x0bunlockValue\x12.\n\x0bJMIDLLDKJBI\x18\r\x20\x01(\x0b2\x0c.CGJN\
+    HNMAMDHR\x0bJMIDLLDKJBI\x12A\n\x11tourn_module_info\x18\x01\x20\x01(\x0b\
+    2\x15.RogueTournModuleInfoR\x0ftournModuleInfo\x12-\n\x06lineup\x18\x0e\
+    \x20\x01(\x0b2\x15.RogueTournLineupInfoR\x06lineup\x122\n\nitem_value\
+    \x18\x02\x20\x01(\x0b2\x13.RogueGameItemValueR\titemValue\x12O\n\x14game\
+    _difficulty_info\x18\x03\x20\x01(\x0b2\x1d.RogueTournGameDifficultyInfoR\
+    \x12gameDifficultyInfo\x12*\n\x05level\x18\x06\x20\x01(\x0b2\x14.RogueTo\
+    urnLevelInfoR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

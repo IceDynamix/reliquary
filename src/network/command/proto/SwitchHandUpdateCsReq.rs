@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPBHJAGOAGG)?;
                 },
-                34 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLBMGBFANLC)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OPBHJAGOAGG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.CLBMGBFANLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandUpdateCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSwitchHandUpdateCsReq.proto\x1a\x0eHandInfo.proto\x1a\x11PMGECPBKJ\
-    CJ.proto\"t\n\x15SwitchHandUpdateCsReq\x12+\n\x0bOPBHJAGOAGG\x18\x0b\x20\
-    \x01(\x0b2\t.HandInfoR\x0bOPBHJAGOAGG\x12.\n\x0bCLBMGBFANLC\x18\x04\x20\
+    CJ.proto\"t\n\x15SwitchHandUpdateCsReq\x12+\n\x0bOPBHJAGOAGG\x18\x0e\x20\
+    \x01(\x0b2\t.HandInfoR\x0bOPBHJAGOAGG\x12.\n\x0bCLBMGBFANLC\x18\x02\x20\
     \x01(\x0b2\x0c.PMGECPBKJCJR\x0bCLBMGBFANLCb\x06proto3\
 ";
 

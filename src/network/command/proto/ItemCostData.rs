@@ -72,7 +72,7 @@ impl ::protobuf::Message for ItemCostData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                26 => {
                     self.item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ItemCostData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ItemCostData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12ItemCostData.proto\x1a\x0eItemCost.proto\"6\n\x0cItemCostData\x12&\
-    \n\titem_list\x18\x07\x20\x03(\x0b2\t.ItemCostR\x08itemListb\x06proto3\
+    \n\titem_list\x18\x03\x20\x03(\x0b2\t.ItemCostR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

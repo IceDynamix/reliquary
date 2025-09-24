@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct INDGLKCECDC {
     // message fields
-    // @@protoc_insertion_point(field:INDGLKCECDC.FNIGPGBGEHN)
-    pub FNIGPGBGEHN: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.HDILBDIPGHO)
     pub HDILBDIPGHO: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.DPJKOJGCJLP)
     pub DPJKOJGCJLP: u32,
+    // @@protoc_insertion_point(field:INDGLKCECDC.FNIGPGBGEHN)
+    pub FNIGPGBGEHN: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.uid)
     pub uid: u32,
     // @@protoc_insertion_point(field:INDGLKCECDC.PILAAGOKAOF)
@@ -58,11 +58,6 @@ impl INDGLKCECDC {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNIGPGBGEHN",
-            |m: &INDGLKCECDC| { &m.FNIGPGBGEHN },
-            |m: &mut INDGLKCECDC| { &mut m.FNIGPGBGEHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HDILBDIPGHO",
             |m: &INDGLKCECDC| { &m.HDILBDIPGHO },
             |m: &mut INDGLKCECDC| { &mut m.HDILBDIPGHO },
@@ -71,6 +66,11 @@ impl INDGLKCECDC {
             "DPJKOJGCJLP",
             |m: &INDGLKCECDC| { &m.DPJKOJGCJLP },
             |m: &mut INDGLKCECDC| { &mut m.DPJKOJGCJLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FNIGPGBGEHN",
+            |m: &INDGLKCECDC| { &m.FNIGPGBGEHN },
+            |m: &mut INDGLKCECDC| { &mut m.FNIGPGBGEHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for INDGLKCECDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FNIGPGBGEHN = is.read_uint32()?;
-                },
-                96 => {
+                16 => {
                     self.HDILBDIPGHO = is.read_uint32()?;
                 },
-                48 => {
+                8 => {
                     self.DPJKOJGCJLP = is.read_uint32()?;
+                },
+                88 => {
+                    self.FNIGPGBGEHN = is.read_uint32()?;
                 },
                 56 => {
                     self.uid = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.PILAAGOKAOF = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for INDGLKCECDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FNIGPGBGEHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FNIGPGBGEHN);
-        }
         if self.HDILBDIPGHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HDILBDIPGHO);
+            my_size += ::protobuf::rt::uint32_size(2, self.HDILBDIPGHO);
         }
         if self.DPJKOJGCJLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DPJKOJGCJLP);
+            my_size += ::protobuf::rt::uint32_size(1, self.DPJKOJGCJLP);
+        }
+        if self.FNIGPGBGEHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FNIGPGBGEHN);
         }
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.uid);
         }
         if self.PILAAGOKAOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PILAAGOKAOF);
+            my_size += ::protobuf::rt::uint32_size(12, self.PILAAGOKAOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for INDGLKCECDC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FNIGPGBGEHN != 0 {
-            os.write_uint32(4, self.FNIGPGBGEHN)?;
-        }
         if self.HDILBDIPGHO != 0 {
-            os.write_uint32(12, self.HDILBDIPGHO)?;
+            os.write_uint32(2, self.HDILBDIPGHO)?;
         }
         if self.DPJKOJGCJLP != 0 {
-            os.write_uint32(6, self.DPJKOJGCJLP)?;
+            os.write_uint32(1, self.DPJKOJGCJLP)?;
+        }
+        if self.FNIGPGBGEHN != 0 {
+            os.write_uint32(11, self.FNIGPGBGEHN)?;
         }
         if self.uid != 0 {
             os.write_uint32(7, self.uid)?;
         }
         if self.PILAAGOKAOF != 0 {
-            os.write_uint32(13, self.PILAAGOKAOF)?;
+            os.write_uint32(12, self.PILAAGOKAOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,9 +180,9 @@ impl ::protobuf::Message for INDGLKCECDC {
     }
 
     fn clear(&mut self) {
-        self.FNIGPGBGEHN = 0;
         self.HDILBDIPGHO = 0;
         self.DPJKOJGCJLP = 0;
+        self.FNIGPGBGEHN = 0;
         self.uid = 0;
         self.PILAAGOKAOF = 0;
         self.special_fields.clear();
@@ -190,9 +190,9 @@ impl ::protobuf::Message for INDGLKCECDC {
 
     fn default_instance() -> &'static INDGLKCECDC {
         static instance: INDGLKCECDC = INDGLKCECDC {
-            FNIGPGBGEHN: 0,
             HDILBDIPGHO: 0,
             DPJKOJGCJLP: 0,
+            FNIGPGBGEHN: 0,
             uid: 0,
             PILAAGOKAOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for INDGLKCECDC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11INDGLKCECDC.proto\"\xa7\x01\n\x0bINDGLKCECDC\x12\x20\n\x0bFNIGPGBG\
-    EHN\x18\x04\x20\x01(\rR\x0bFNIGPGBGEHN\x12\x20\n\x0bHDILBDIPGHO\x18\x0c\
-    \x20\x01(\rR\x0bHDILBDIPGHO\x12\x20\n\x0bDPJKOJGCJLP\x18\x06\x20\x01(\rR\
-    \x0bDPJKOJGCJLP\x12\x10\n\x03uid\x18\x07\x20\x01(\rR\x03uid\x12\x20\n\
-    \x0bPILAAGOKAOF\x18\r\x20\x01(\rR\x0bPILAAGOKAOFb\x06proto3\
+    \n\x11INDGLKCECDC.proto\"\xa7\x01\n\x0bINDGLKCECDC\x12\x20\n\x0bHDILBDIP\
+    GHO\x18\x02\x20\x01(\rR\x0bHDILBDIPGHO\x12\x20\n\x0bDPJKOJGCJLP\x18\x01\
+    \x20\x01(\rR\x0bDPJKOJGCJLP\x12\x20\n\x0bFNIGPGBGEHN\x18\x0b\x20\x01(\rR\
+    \x0bFNIGPGBGEHN\x12\x10\n\x03uid\x18\x07\x20\x01(\rR\x03uid\x12\x20\n\
+    \x0bPILAAGOKAOF\x18\x0c\x20\x01(\rR\x0bPILAAGOKAOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCEKBNMNHOO {
     // message fields
-    // @@protoc_insertion_point(field:BCEKBNMNHOO.PEHOFBBDNIC)
-    pub PEHOFBBDNIC: u32,
+    // @@protoc_insertion_point(field:BCEKBNMNHOO.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:BCEKBNMNHOO.is_taken_reward)
     pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:BCEKBNMNHOO.CBNFFEMDBKF)
     pub CBNFFEMDBKF: bool,
-    // @@protoc_insertion_point(field:BCEKBNMNHOO.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:BCEKBNMNHOO.PEHOFBBDNIC)
+    pub PEHOFBBDNIC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BCEKBNMNHOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl BCEKBNMNHOO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PEHOFBBDNIC",
-            |m: &BCEKBNMNHOO| { &m.PEHOFBBDNIC },
-            |m: &mut BCEKBNMNHOO| { &mut m.PEHOFBBDNIC },
+            "panel_id",
+            |m: &BCEKBNMNHOO| { &m.panel_id },
+            |m: &mut BCEKBNMNHOO| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_taken_reward",
@@ -71,9 +71,9 @@ impl BCEKBNMNHOO {
             |m: &mut BCEKBNMNHOO| { &mut m.CBNFFEMDBKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &BCEKBNMNHOO| { &m.panel_id },
-            |m: &mut BCEKBNMNHOO| { &mut m.panel_id },
+            "PEHOFBBDNIC",
+            |m: &BCEKBNMNHOO| { &m.PEHOFBBDNIC },
+            |m: &mut BCEKBNMNHOO| { &mut m.PEHOFBBDNIC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCEKBNMNHOO>(
             "BCEKBNMNHOO",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.PEHOFBBDNIC = is.read_uint32()?;
+                24 => {
+                    self.panel_id = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
-                32 => {
+                96 => {
                     self.CBNFFEMDBKF = is.read_bool()?;
                 },
-                40 => {
-                    self.panel_id = is.read_uint32()?;
+                32 => {
+                    self.PEHOFBBDNIC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,8 +117,8 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PEHOFBBDNIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PEHOFBBDNIC);
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.panel_id);
         }
         if self.is_taken_reward != false {
             my_size += 1 + 1;
@@ -126,8 +126,8 @@ impl ::protobuf::Message for BCEKBNMNHOO {
         if self.CBNFFEMDBKF != false {
             my_size += 1 + 1;
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.panel_id);
+        if self.PEHOFBBDNIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PEHOFBBDNIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PEHOFBBDNIC != 0 {
-            os.write_uint32(6, self.PEHOFBBDNIC)?;
+        if self.panel_id != 0 {
+            os.write_uint32(3, self.panel_id)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(9, self.is_taken_reward)?;
+            os.write_bool(10, self.is_taken_reward)?;
         }
         if self.CBNFFEMDBKF != false {
-            os.write_bool(4, self.CBNFFEMDBKF)?;
+            os.write_bool(12, self.CBNFFEMDBKF)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(5, self.panel_id)?;
+        if self.PEHOFBBDNIC != 0 {
+            os.write_uint32(4, self.PEHOFBBDNIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for BCEKBNMNHOO {
     }
 
     fn clear(&mut self) {
-        self.PEHOFBBDNIC = 0;
+        self.panel_id = 0;
         self.is_taken_reward = false;
         self.CBNFFEMDBKF = false;
-        self.panel_id = 0;
+        self.PEHOFBBDNIC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCEKBNMNHOO {
         static instance: BCEKBNMNHOO = BCEKBNMNHOO {
-            PEHOFBBDNIC: 0,
+            panel_id: 0,
             is_taken_reward: false,
             CBNFFEMDBKF: false,
-            panel_id: 0,
+            PEHOFBBDNIC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for BCEKBNMNHOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCEKBNMNHOO.proto\"\x94\x01\n\x0bBCEKBNMNHOO\x12\x20\n\x0bPEHOFBBD\
-    NIC\x18\x06\x20\x01(\rR\x0bPEHOFBBDNIC\x12&\n\x0fis_taken_reward\x18\t\
-    \x20\x01(\x08R\risTakenReward\x12\x20\n\x0bCBNFFEMDBKF\x18\x04\x20\x01(\
-    \x08R\x0bCBNFFEMDBKF\x12\x19\n\x08panel_id\x18\x05\x20\x01(\rR\x07panelI\
-    db\x06proto3\
+    \n\x11BCEKBNMNHOO.proto\"\x94\x01\n\x0bBCEKBNMNHOO\x12\x19\n\x08panel_id\
+    \x18\x03\x20\x01(\rR\x07panelId\x12&\n\x0fis_taken_reward\x18\n\x20\x01(\
+    \x08R\risTakenReward\x12\x20\n\x0bCBNFFEMDBKF\x18\x0c\x20\x01(\x08R\x0bC\
+    BNFFEMDBKF\x12\x20\n\x0bPEHOFBBDNIC\x18\x04\x20\x01(\rR\x0bPEHOFBBDNICb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

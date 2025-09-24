@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
-                82 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -171,7 +171,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x1a\x1cRogueMagicCurSceneInfo.proto\"\xb7\x01\n&RogueMagicBattleFailSet\
     tleInfoScNotify\x12S\n\x1arogue_tourn_cur_scene_info\x18\x01\x20\x01(\
     \x0b2\x17.RogueMagicCurSceneInfoR\x16rogueTournCurSceneInfo\x128\n\x11to\
-    urn_finish_info\x18\n\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\x0ftournFinishInfob\
+    urn_finish_info\x18\r\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\x0ftournFinishInfob\
     \x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNDBNNPIDPB {
     // message fields
-    // @@protoc_insertion_point(field:KNDBNNPIDPB.display_value)
-    pub display_value: u32,
     // @@protoc_insertion_point(field:KNDBNNPIDPB.PEPLINOGEGC)
     pub PEPLINOGEGC: ::protobuf::EnumOrUnknown<super::GANMCIJCOKI::GANMCIJCOKI>,
+    // @@protoc_insertion_point(field:KNDBNNPIDPB.display_value)
+    pub display_value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KNDBNNPIDPB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KNDBNNPIDPB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &KNDBNNPIDPB| { &m.display_value },
-            |m: &mut KNDBNNPIDPB| { &mut m.display_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PEPLINOGEGC",
             |m: &KNDBNNPIDPB| { &m.PEPLINOGEGC },
             |m: &mut KNDBNNPIDPB| { &mut m.PEPLINOGEGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "display_value",
+            |m: &KNDBNNPIDPB| { &m.display_value },
+            |m: &mut KNDBNNPIDPB| { &mut m.display_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNDBNNPIDPB>(
             "KNDBNNPIDPB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KNDBNNPIDPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.display_value = is.read_uint32()?;
-                },
-                120 => {
+                32 => {
                     self.PEPLINOGEGC = is.read_enum_or_unknown()?;
+                },
+                40 => {
+                    self.display_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KNDBNNPIDPB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.display_value);
-        }
         if self.PEPLINOGEGC != ::protobuf::EnumOrUnknown::new(super::GANMCIJCOKI::GANMCIJCOKI::MATCH3_BATTLE_BUFF_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.PEPLINOGEGC.value());
+            my_size += ::protobuf::rt::int32_size(4, self.PEPLINOGEGC.value());
+        }
+        if self.display_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.display_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KNDBNNPIDPB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.display_value != 0 {
-            os.write_uint32(8, self.display_value)?;
-        }
         if self.PEPLINOGEGC != ::protobuf::EnumOrUnknown::new(super::GANMCIJCOKI::GANMCIJCOKI::MATCH3_BATTLE_BUFF_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.PEPLINOGEGC))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.PEPLINOGEGC))?;
+        }
+        if self.display_value != 0 {
+            os.write_uint32(5, self.display_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KNDBNNPIDPB {
     }
 
     fn clear(&mut self) {
-        self.display_value = 0;
         self.PEPLINOGEGC = ::protobuf::EnumOrUnknown::new(super::GANMCIJCOKI::GANMCIJCOKI::MATCH3_BATTLE_BUFF_TYPE_NONE);
+        self.display_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNDBNNPIDPB {
         static instance: KNDBNNPIDPB = KNDBNNPIDPB {
-            display_value: 0,
             PEPLINOGEGC: ::protobuf::EnumOrUnknown::from_i32(0),
+            display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KNDBNNPIDPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KNDBNNPIDPB.proto\x1a\x11GANMCIJCOKI.proto\"b\n\x0bKNDBNNPIDPB\x12\
-    #\n\rdisplay_value\x18\x08\x20\x01(\rR\x0cdisplayValue\x12.\n\x0bPEPLINO\
-    GEGC\x18\x0f\x20\x01(\x0e2\x0c.GANMCIJCOKIR\x0bPEPLINOGEGCb\x06proto3\
+    .\n\x0bPEPLINOGEGC\x18\x04\x20\x01(\x0e2\x0c.GANMCIJCOKIR\x0bPEPLINOGEGC\
+    \x12#\n\rdisplay_value\x18\x05\x20\x01(\rR\x0cdisplayValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

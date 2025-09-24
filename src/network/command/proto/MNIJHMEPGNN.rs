@@ -33,6 +33,8 @@ pub enum MNIJHMEPGNN {
     MAZE_KILL_SOURCE_SWITCH_HAND = 1,
     // @@protoc_insertion_point(enum_value:MNIJHMEPGNN.MAZE_KILL_SOURCE_TIME_LINE)
     MAZE_KILL_SOURCE_TIME_LINE = 2,
+    // @@protoc_insertion_point(enum_value:MNIJHMEPGNN.MAZE_KILL_SOURCE_SWITCH_MASCOT)
+    MAZE_KILL_SOURCE_SWITCH_MASCOT = 3,
 }
 
 impl ::protobuf::Enum for MNIJHMEPGNN {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for MNIJHMEPGNN {
             0 => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_NONE),
             1 => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_HAND),
             2 => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_TIME_LINE),
+            3 => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_MASCOT),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for MNIJHMEPGNN {
             "MAZE_KILL_SOURCE_NONE" => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_NONE),
             "MAZE_KILL_SOURCE_SWITCH_HAND" => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_HAND),
             "MAZE_KILL_SOURCE_TIME_LINE" => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_TIME_LINE),
+            "MAZE_KILL_SOURCE_SWITCH_MASCOT" => ::std::option::Option::Some(MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_MASCOT),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for MNIJHMEPGNN {
         MNIJHMEPGNN::MAZE_KILL_SOURCE_NONE,
         MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_HAND,
         MNIJHMEPGNN::MAZE_KILL_SOURCE_TIME_LINE,
+        MNIJHMEPGNN::MAZE_KILL_SOURCE_SWITCH_MASCOT,
     ];
 }
 
@@ -92,9 +97,10 @@ impl MNIJHMEPGNN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MNIJHMEPGNN.proto*j\n\x0bMNIJHMEPGNN\x12\x19\n\x15MAZE_KILL_SOURCE\
-    _NONE\x10\0\x12\x20\n\x1cMAZE_KILL_SOURCE_SWITCH_HAND\x10\x01\x12\x1e\n\
-    \x1aMAZE_KILL_SOURCE_TIME_LINE\x10\x02b\x06proto3\
+    \n\x11MNIJHMEPGNN.proto*\x8e\x01\n\x0bMNIJHMEPGNN\x12\x19\n\x15MAZE_KILL\
+    _SOURCE_NONE\x10\0\x12\x20\n\x1cMAZE_KILL_SOURCE_SWITCH_HAND\x10\x01\x12\
+    \x1e\n\x1aMAZE_KILL_SOURCE_TIME_LINE\x10\x02\x12\"\n\x1eMAZE_KILL_SOURCE\
+    _SWITCH_MASCOT\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.cur_room_index)
-    pub cur_room_index: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.FLLABLFBEIK)
     pub FLLABLFBEIK: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.cur_room_index)
+    pub cur_room_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnterRoomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueTournEnterRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_room_index",
-            |m: &RogueTournEnterRoomCsReq| { &m.cur_room_index },
-            |m: &mut RogueTournEnterRoomCsReq| { &mut m.cur_room_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLLABLFBEIK",
             |m: &RogueTournEnterRoomCsReq| { &m.FLLABLFBEIK },
             |m: &mut RogueTournEnterRoomCsReq| { &mut m.FLLABLFBEIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_room_index",
+            |m: &RogueTournEnterRoomCsReq| { &m.cur_room_index },
+            |m: &mut RogueTournEnterRoomCsReq| { &mut m.cur_room_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnterRoomCsReq>(
             "RogueTournEnterRoomCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.cur_room_index = is.read_uint32()?;
-                },
-                72 => {
+                32 => {
                     self.FLLABLFBEIK = is.read_uint32()?;
+                },
+                48 => {
+                    self.cur_room_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cur_room_index);
-        }
         if self.FLLABLFBEIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FLLABLFBEIK);
+            my_size += ::protobuf::rt::uint32_size(4, self.FLLABLFBEIK);
+        }
+        if self.cur_room_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.cur_room_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_room_index != 0 {
-            os.write_uint32(7, self.cur_room_index)?;
-        }
         if self.FLLABLFBEIK != 0 {
-            os.write_uint32(9, self.FLLABLFBEIK)?;
+            os.write_uint32(4, self.FLLABLFBEIK)?;
+        }
+        if self.cur_room_index != 0 {
+            os.write_uint32(6, self.cur_room_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.cur_room_index = 0;
         self.FLLABLFBEIK = 0;
+        self.cur_room_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRoomCsReq {
         static instance: RogueTournEnterRoomCsReq = RogueTournEnterRoomCsReq {
-            cur_room_index: 0,
             FLLABLFBEIK: 0,
+            cur_room_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueTournEnterRoomCsReq.proto\"b\n\x18RogueTournEnterRoomCsReq\
-    \x12$\n\x0ecur_room_index\x18\x07\x20\x01(\rR\x0ccurRoomIndex\x12\x20\n\
-    \x0bFLLABLFBEIK\x18\t\x20\x01(\rR\x0bFLLABLFBEIKb\x06proto3\
+    \x12\x20\n\x0bFLLABLFBEIK\x18\x04\x20\x01(\rR\x0bFLLABLFBEIK\x12$\n\x0ec\
+    ur_room_index\x18\x06\x20\x01(\rR\x0ccurRoomIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

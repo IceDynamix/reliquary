@@ -30,10 +30,10 @@ pub struct ACKNCAAAMJM {
     // message fields
     // @@protoc_insertion_point(field:ACKNCAAAMJM.PPCLBDBJLMO)
     pub PPCLBDBJLMO: u32,
-    // @@protoc_insertion_point(field:ACKNCAAAMJM.item_list)
-    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ACKNCAAAMJM.GIACFCDDJNM)
     pub GIACFCDDJNM: u32,
+    // @@protoc_insertion_point(field:ACKNCAAAMJM.item_list)
+    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:ACKNCAAAMJM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ACKNCAAAMJM {
             |m: &ACKNCAAAMJM| { &m.PPCLBDBJLMO },
             |m: &mut ACKNCAAAMJM| { &mut m.PPCLBDBJLMO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "item_list",
-            |m: &ACKNCAAAMJM| { &m.item_list },
-            |m: &mut ACKNCAAAMJM| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GIACFCDDJNM",
             |m: &ACKNCAAAMJM| { &m.GIACFCDDJNM },
             |m: &mut ACKNCAAAMJM| { &mut m.GIACFCDDJNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "item_list",
+            |m: &ACKNCAAAMJM| { &m.item_list },
+            |m: &mut ACKNCAAAMJM| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ACKNCAAAMJM>(
             "ACKNCAAAMJM",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for ACKNCAAAMJM {
                 120 => {
                     self.PPCLBDBJLMO = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
-                },
-                88 => {
+                96 => {
                     self.GIACFCDDJNM = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for ACKNCAAAMJM {
         if self.PPCLBDBJLMO != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.PPCLBDBJLMO);
         }
+        if self.GIACFCDDJNM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GIACFCDDJNM);
+        }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GIACFCDDJNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GIACFCDDJNM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +126,11 @@ impl ::protobuf::Message for ACKNCAAAMJM {
         if self.PPCLBDBJLMO != 0 {
             os.write_uint32(15, self.PPCLBDBJLMO)?;
         }
-        if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if self.GIACFCDDJNM != 0 {
-            os.write_uint32(11, self.GIACFCDDJNM)?;
+            os.write_uint32(12, self.GIACFCDDJNM)?;
+        }
+        if let Some(v) = self.item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ACKNCAAAMJM {
 
     fn clear(&mut self) {
         self.PPCLBDBJLMO = 0;
-        self.item_list.clear();
         self.GIACFCDDJNM = 0;
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ACKNCAAAMJM {
         static instance: ACKNCAAAMJM = ACKNCAAAMJM {
             PPCLBDBJLMO: 0,
-            item_list: ::protobuf::MessageField::none(),
             GIACFCDDJNM: 0,
+            item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ACKNCAAAMJM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ACKNCAAAMJM.proto\x1a\x0eItemList.proto\"y\n\x0bACKNCAAAMJM\x12\
-    \x20\n\x0bPPCLBDBJLMO\x18\x0f\x20\x01(\rR\x0bPPCLBDBJLMO\x12&\n\titem_li\
-    st\x18\x0e\x20\x01(\x0b2\t.ItemListR\x08itemList\x12\x20\n\x0bGIACFCDDJN\
-    M\x18\x0b\x20\x01(\rR\x0bGIACFCDDJNMb\x06proto3\
+    \x20\n\x0bPPCLBDBJLMO\x18\x0f\x20\x01(\rR\x0bPPCLBDBJLMO\x12\x20\n\x0bGI\
+    ACFCDDJNM\x18\x0c\x20\x01(\rR\x0bGIACFCDDJNM\x12&\n\titem_list\x18\x07\
+    \x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

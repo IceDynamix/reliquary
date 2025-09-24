@@ -79,13 +79,13 @@ impl ::protobuf::Message for GABBEHOIPJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                104 => {
                     self.select_hint_id = is.read_uint32()?;
                 },
-                50 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.DCJEGGJPCDF)?;
                 },
-                48 => {
+                8 => {
                     self.DCJEGGJPCDF.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for GABBEHOIPJC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.select_hint_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.select_hint_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DCJEGGJPCDF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DCJEGGJPCDF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for GABBEHOIPJC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.select_hint_id != 0 {
-            os.write_uint32(14, self.select_hint_id)?;
+            os.write_uint32(13, self.select_hint_id)?;
         }
-        os.write_repeated_packed_uint32(6, &self.DCJEGGJPCDF)?;
+        os.write_repeated_packed_uint32(1, &self.DCJEGGJPCDF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GABBEHOIPJC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GABBEHOIPJC.proto\"U\n\x0bGABBEHOIPJC\x12$\n\x0eselect_hint_id\x18\
-    \x0e\x20\x01(\rR\x0cselectHintId\x12\x20\n\x0bDCJEGGJPCDF\x18\x06\x20\
-    \x03(\rR\x0bDCJEGGJPCDFb\x06proto3\
+    \r\x20\x01(\rR\x0cselectHintId\x12\x20\n\x0bDCJEGGJPCDF\x18\x01\x20\x03(\
+    \rR\x0bDCJEGGJPCDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

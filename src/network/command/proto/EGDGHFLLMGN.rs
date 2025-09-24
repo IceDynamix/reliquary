@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGDGHFLLMGN {
     // message fields
-    // @@protoc_insertion_point(field:EGDGHFLLMGN.total_auto_turns)
-    pub total_auto_turns: u32,
     // @@protoc_insertion_point(field:EGDGHFLLMGN.total_turns)
     pub total_turns: u32,
-    // @@protoc_insertion_point(field:EGDGHFLLMGN.cost_time)
-    pub cost_time: u32,
-    // @@protoc_insertion_point(field:EGDGHFLLMGN.total_damage)
-    pub total_damage: u32,
     // @@protoc_insertion_point(field:EGDGHFLLMGN.CFIJIPCHHGO)
     pub CFIJIPCHHGO: u32,
+    // @@protoc_insertion_point(field:EGDGHFLLMGN.cost_time)
+    pub cost_time: u32,
     // @@protoc_insertion_point(field:EGDGHFLLMGN.LCJHGDJDENG)
     pub LCJHGDJDENG: u32,
+    // @@protoc_insertion_point(field:EGDGHFLLMGN.total_auto_turns)
+    pub total_auto_turns: u32,
+    // @@protoc_insertion_point(field:EGDGHFLLMGN.total_damage)
+    pub total_damage: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EGDGHFLLMGN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,9 @@ impl EGDGHFLLMGN {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_auto_turns",
-            |m: &EGDGHFLLMGN| { &m.total_auto_turns },
-            |m: &mut EGDGHFLLMGN| { &mut m.total_auto_turns },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_turns",
             |m: &EGDGHFLLMGN| { &m.total_turns },
             |m: &mut EGDGHFLLMGN| { &mut m.total_turns },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cost_time",
-            |m: &EGDGHFLLMGN| { &m.cost_time },
-            |m: &mut EGDGHFLLMGN| { &mut m.cost_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &EGDGHFLLMGN| { &m.total_damage },
-            |m: &mut EGDGHFLLMGN| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFIJIPCHHGO",
@@ -85,9 +70,24 @@ impl EGDGHFLLMGN {
             |m: &mut EGDGHFLLMGN| { &mut m.CFIJIPCHHGO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cost_time",
+            |m: &EGDGHFLLMGN| { &m.cost_time },
+            |m: &mut EGDGHFLLMGN| { &mut m.cost_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LCJHGDJDENG",
             |m: &EGDGHFLLMGN| { &m.LCJHGDJDENG },
             |m: &mut EGDGHFLLMGN| { &mut m.LCJHGDJDENG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_auto_turns",
+            |m: &EGDGHFLLMGN| { &m.total_auto_turns },
+            |m: &mut EGDGHFLLMGN| { &mut m.total_auto_turns },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_damage",
+            |m: &EGDGHFLLMGN| { &m.total_damage },
+            |m: &mut EGDGHFLLMGN| { &mut m.total_damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGDGHFLLMGN>(
             "EGDGHFLLMGN",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for EGDGHFLLMGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.total_auto_turns = is.read_uint32()?;
-                },
-                16 => {
+                48 => {
                     self.total_turns = is.read_uint32()?;
                 },
-                48 => {
+                72 => {
+                    self.CFIJIPCHHGO = is.read_uint32()?;
+                },
+                32 => {
                     self.cost_time = is.read_uint32()?;
                 },
                 24 => {
-                    self.total_damage = is.read_uint32()?;
+                    self.LCJHGDJDENG = is.read_uint32()?;
                 },
                 104 => {
-                    self.CFIJIPCHHGO = is.read_uint32()?;
+                    self.total_auto_turns = is.read_uint32()?;
                 },
                 88 => {
-                    self.LCJHGDJDENG = is.read_uint32()?;
+                    self.total_damage = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for EGDGHFLLMGN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.total_auto_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.total_auto_turns);
-        }
         if self.total_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.total_turns);
-        }
-        if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.cost_time);
-        }
-        if self.total_damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.total_damage);
+            my_size += ::protobuf::rt::uint32_size(6, self.total_turns);
         }
         if self.CFIJIPCHHGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CFIJIPCHHGO);
+            my_size += ::protobuf::rt::uint32_size(9, self.CFIJIPCHHGO);
+        }
+        if self.cost_time != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cost_time);
         }
         if self.LCJHGDJDENG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LCJHGDJDENG);
+            my_size += ::protobuf::rt::uint32_size(3, self.LCJHGDJDENG);
+        }
+        if self.total_auto_turns != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.total_auto_turns);
+        }
+        if self.total_damage != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.total_damage);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for EGDGHFLLMGN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.total_auto_turns != 0 {
-            os.write_uint32(5, self.total_auto_turns)?;
-        }
         if self.total_turns != 0 {
-            os.write_uint32(2, self.total_turns)?;
-        }
-        if self.cost_time != 0 {
-            os.write_uint32(6, self.cost_time)?;
-        }
-        if self.total_damage != 0 {
-            os.write_uint32(3, self.total_damage)?;
+            os.write_uint32(6, self.total_turns)?;
         }
         if self.CFIJIPCHHGO != 0 {
-            os.write_uint32(13, self.CFIJIPCHHGO)?;
+            os.write_uint32(9, self.CFIJIPCHHGO)?;
+        }
+        if self.cost_time != 0 {
+            os.write_uint32(4, self.cost_time)?;
         }
         if self.LCJHGDJDENG != 0 {
-            os.write_uint32(11, self.LCJHGDJDENG)?;
+            os.write_uint32(3, self.LCJHGDJDENG)?;
+        }
+        if self.total_auto_turns != 0 {
+            os.write_uint32(13, self.total_auto_turns)?;
+        }
+        if self.total_damage != 0 {
+            os.write_uint32(11, self.total_damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for EGDGHFLLMGN {
     }
 
     fn clear(&mut self) {
-        self.total_auto_turns = 0;
         self.total_turns = 0;
-        self.cost_time = 0;
-        self.total_damage = 0;
         self.CFIJIPCHHGO = 0;
+        self.cost_time = 0;
         self.LCJHGDJDENG = 0;
+        self.total_auto_turns = 0;
+        self.total_damage = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGDGHFLLMGN {
         static instance: EGDGHFLLMGN = EGDGHFLLMGN {
-            total_auto_turns: 0,
             total_turns: 0,
-            cost_time: 0,
-            total_damage: 0,
             CFIJIPCHHGO: 0,
+            cost_time: 0,
             LCJHGDJDENG: 0,
+            total_auto_turns: 0,
+            total_damage: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for EGDGHFLLMGN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGDGHFLLMGN.proto\"\xdc\x01\n\x0bEGDGHFLLMGN\x12(\n\x10total_auto_\
-    turns\x18\x05\x20\x01(\rR\x0etotalAutoTurns\x12\x1f\n\x0btotal_turns\x18\
-    \x02\x20\x01(\rR\ntotalTurns\x12\x1b\n\tcost_time\x18\x06\x20\x01(\rR\
-    \x08costTime\x12!\n\x0ctotal_damage\x18\x03\x20\x01(\rR\x0btotalDamage\
-    \x12\x20\n\x0bCFIJIPCHHGO\x18\r\x20\x01(\rR\x0bCFIJIPCHHGO\x12\x20\n\x0b\
-    LCJHGDJDENG\x18\x0b\x20\x01(\rR\x0bLCJHGDJDENGb\x06proto3\
+    \n\x11EGDGHFLLMGN.proto\"\xdc\x01\n\x0bEGDGHFLLMGN\x12\x1f\n\x0btotal_tu\
+    rns\x18\x06\x20\x01(\rR\ntotalTurns\x12\x20\n\x0bCFIJIPCHHGO\x18\t\x20\
+    \x01(\rR\x0bCFIJIPCHHGO\x12\x1b\n\tcost_time\x18\x04\x20\x01(\rR\x08cost\
+    Time\x12\x20\n\x0bLCJHGDJDENG\x18\x03\x20\x01(\rR\x0bLCJHGDJDENG\x12(\n\
+    \x10total_auto_turns\x18\r\x20\x01(\rR\x0etotalAutoTurns\x12!\n\x0ctotal\
+    _damage\x18\x0b\x20\x01(\rR\x0btotalDamageb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMKPFGEBILH {
     // message fields
-    // @@protoc_insertion_point(field:DMKPFGEBILH.cost_data)
-    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:DMKPFGEBILH.free_reforge_num)
     pub free_reforge_num: u32,
+    // @@protoc_insertion_point(field:DMKPFGEBILH.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:DMKPFGEBILH.int_reforge_num_value)
     pub int_reforge_num_value: i32,
     // special fields
@@ -53,15 +53,15 @@ impl DMKPFGEBILH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "cost_data",
-            |m: &DMKPFGEBILH| { &m.cost_data },
-            |m: &mut DMKPFGEBILH| { &mut m.cost_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "free_reforge_num",
             |m: &DMKPFGEBILH| { &m.free_reforge_num },
             |m: &mut DMKPFGEBILH| { &mut m.free_reforge_num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &DMKPFGEBILH| { &m.cost_data },
+            |m: &mut DMKPFGEBILH| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "int_reforge_num_value",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for DMKPFGEBILH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
-                },
-                120 => {
+                56 => {
                     self.free_reforge_num = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 40 => {
                     self.int_reforge_num_value = is.read_int32()?;
@@ -107,12 +107,12 @@ impl ::protobuf::Message for DMKPFGEBILH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.free_reforge_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.free_reforge_num);
+        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.free_reforge_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.free_reforge_num);
         }
         if self.int_reforge_num_value != 0 {
             my_size += ::protobuf::rt::int32_size(5, self.int_reforge_num_value);
@@ -123,11 +123,11 @@ impl ::protobuf::Message for DMKPFGEBILH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
         if self.free_reforge_num != 0 {
-            os.write_uint32(15, self.free_reforge_num)?;
+            os.write_uint32(7, self.free_reforge_num)?;
+        }
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.int_reforge_num_value != 0 {
             os.write_int32(5, self.int_reforge_num_value)?;
@@ -149,16 +149,16 @@ impl ::protobuf::Message for DMKPFGEBILH {
     }
 
     fn clear(&mut self) {
-        self.cost_data.clear();
         self.free_reforge_num = 0;
+        self.cost_data.clear();
         self.int_reforge_num_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DMKPFGEBILH {
         static instance: DMKPFGEBILH = DMKPFGEBILH {
-            cost_data: ::protobuf::MessageField::none(),
             free_reforge_num: 0,
+            cost_data: ::protobuf::MessageField::none(),
             int_reforge_num_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for DMKPFGEBILH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMKPFGEBILH.proto\x1a\x12ItemCostData.proto\"\x96\x01\n\x0bDMKPFGE\
-    BILH\x12*\n\tcost_data\x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x08costData\
-    \x12(\n\x10free_reforge_num\x18\x0f\x20\x01(\rR\x0efreeReforgeNum\x121\n\
-    \x15int_reforge_num_value\x18\x05\x20\x01(\x05R\x12intReforgeNumValueb\
-    \x06proto3\
+    BILH\x12(\n\x10free_reforge_num\x18\x07\x20\x01(\rR\x0efreeReforgeNum\
+    \x12*\n\tcost_data\x18\x0f\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    1\n\x15int_reforge_num_value\x18\x05\x20\x01(\x05R\x12intReforgeNumValue\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

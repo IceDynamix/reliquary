@@ -30,10 +30,10 @@ pub struct UpdateMechanismBarScNotify {
     // message fields
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.plane_id)
     pub plane_id: u32,
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.floor_id)
-    pub floor_id: u32,
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.GIGKDAPGNME)
     pub GIGKDAPGNME: ::protobuf::MessageField<super::MechanismBarInfo::MechanismBarInfo>,
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.floor_id)
+    pub floor_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMechanismBarScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl UpdateMechanismBarScNotify {
             |m: &UpdateMechanismBarScNotify| { &m.plane_id },
             |m: &mut UpdateMechanismBarScNotify| { &mut m.plane_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &UpdateMechanismBarScNotify| { &m.floor_id },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.floor_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MechanismBarInfo::MechanismBarInfo>(
             "GIGKDAPGNME",
             |m: &UpdateMechanismBarScNotify| { &m.GIGKDAPGNME },
             |m: &mut UpdateMechanismBarScNotify| { &mut m.GIGKDAPGNME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &UpdateMechanismBarScNotify| { &m.floor_id },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.floor_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMechanismBarScNotify>(
             "UpdateMechanismBarScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                34 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIGKDAPGNME)?;
+                },
+                16 => {
+                    self.floor_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.plane_id);
-        }
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
         }
         if let Some(v) = self.GIGKDAPGNME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.plane_id != 0 {
-            os.write_uint32(1, self.plane_id)?;
-        }
-        if self.floor_id != 0 {
-            os.write_uint32(10, self.floor_id)?;
+            os.write_uint32(7, self.plane_id)?;
         }
         if let Some(v) = self.GIGKDAPGNME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.floor_id != 0 {
+            os.write_uint32(2, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
 
     fn clear(&mut self) {
         self.plane_id = 0;
-        self.floor_id = 0;
         self.GIGKDAPGNME.clear();
+        self.floor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMechanismBarScNotify {
         static instance: UpdateMechanismBarScNotify = UpdateMechanismBarScNotify {
             plane_id: 0,
-            floor_id: 0,
             GIGKDAPGNME: ::protobuf::MessageField::none(),
+            floor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMechanismBarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdateMechanismBarScNotify.proto\x1a\x16MechanismBarInfo.proto\"\
-    \x87\x01\n\x1aUpdateMechanismBarScNotify\x12\x19\n\x08plane_id\x18\x01\
-    \x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\n\x20\x01(\rR\x07floor\
-    Id\x123\n\x0bGIGKDAPGNME\x18\x04\x20\x01(\x0b2\x11.MechanismBarInfoR\x0b\
-    GIGKDAPGNMEb\x06proto3\
+    \x87\x01\n\x1aUpdateMechanismBarScNotify\x12\x19\n\x08plane_id\x18\x07\
+    \x20\x01(\rR\x07planeId\x123\n\x0bGIGKDAPGNME\x18\x01\x20\x01(\x0b2\x11.\
+    MechanismBarInfoR\x0bGIGKDAPGNME\x12\x19\n\x08floor_id\x18\x02\x20\x01(\
+    \rR\x07floorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

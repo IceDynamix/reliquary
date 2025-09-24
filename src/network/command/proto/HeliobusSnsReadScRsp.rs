@@ -79,7 +79,7 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.IHKEJEBCEIB = is.read_uint32()?;
                 },
                 56 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHKEJEBCEIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IHKEJEBCEIB);
+            my_size += ::protobuf::rt::uint32_size(2, self.IHKEJEBCEIB);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for HeliobusSnsReadScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHKEJEBCEIB != 0 {
-            os.write_uint32(14, self.IHKEJEBCEIB)?;
+            os.write_uint32(2, self.IHKEJEBCEIB)?;
         }
         if self.retcode != 0 {
             os.write_uint32(7, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsReadScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsReadScRsp.proto\"R\n\x14HeliobusSnsReadScRsp\x12\x20\n\
-    \x0bIHKEJEBCEIB\x18\x0e\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x18\n\x07retcode\
+    \x0bIHKEJEBCEIB\x18\x02\x20\x01(\rR\x0bIHKEJEBCEIB\x12\x18\n\x07retcode\
     \x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

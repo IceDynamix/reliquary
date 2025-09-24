@@ -79,10 +79,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.game_miracle_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopMiracleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eBuyRogueShopMiracleScRsp.proto\x1a\x11NNJOLKJLPJG.proto\"n\n\x18Bu\
-    yRogueShopMiracleScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retco\
-    de\x128\n\x11game_miracle_info\x18\r\x20\x01(\x0b2\x0c.NNJOLKJLPJGR\x0fg\
+    yRogueShopMiracleScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retco\
+    de\x128\n\x11game_miracle_info\x18\t\x20\x01(\x0b2\x0c.NNJOLKJLPJGR\x0fg\
     ameMiracleInfob\x06proto3\
 ";
 

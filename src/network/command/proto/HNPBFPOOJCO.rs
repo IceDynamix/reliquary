@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HNPBFPOOJCO {
     // message fields
-    // @@protoc_insertion_point(field:HNPBFPOOJCO.panel_id)
-    pub panel_id: u32,
-    // @@protoc_insertion_point(field:HNPBFPOOJCO.group_id)
-    pub group_id: u32,
-    // @@protoc_insertion_point(field:HNPBFPOOJCO.NOPDKLDEKKF)
-    pub NOPDKLDEKKF: u32,
-    // @@protoc_insertion_point(field:HNPBFPOOJCO.HONEMGCFBGI)
-    pub HONEMGCFBGI: ::protobuf::EnumOrUnknown<super::OJLJHFNFDKP::OJLJHFNFDKP>,
     // @@protoc_insertion_point(field:HNPBFPOOJCO.switch_list)
     pub switch_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HNPBFPOOJCO.HONEMGCFBGI)
+    pub HONEMGCFBGI: ::protobuf::EnumOrUnknown<super::OJLJHFNFDKP::OJLJHFNFDKP>,
+    // @@protoc_insertion_point(field:HNPBFPOOJCO.group_id)
+    pub group_id: u32,
+    // @@protoc_insertion_point(field:HNPBFPOOJCO.panel_id)
+    pub panel_id: u32,
+    // @@protoc_insertion_point(field:HNPBFPOOJCO.NOPDKLDEKKF)
+    pub NOPDKLDEKKF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HNPBFPOOJCO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,15 @@ impl HNPBFPOOJCO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "switch_list",
+            |m: &HNPBFPOOJCO| { &m.switch_list },
+            |m: &mut HNPBFPOOJCO| { &mut m.switch_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &HNPBFPOOJCO| { &m.panel_id },
-            |m: &mut HNPBFPOOJCO| { &mut m.panel_id },
+            "HONEMGCFBGI",
+            |m: &HNPBFPOOJCO| { &m.HONEMGCFBGI },
+            |m: &mut HNPBFPOOJCO| { &mut m.HONEMGCFBGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -68,19 +73,14 @@ impl HNPBFPOOJCO {
             |m: &mut HNPBFPOOJCO| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &HNPBFPOOJCO| { &m.panel_id },
+            |m: &mut HNPBFPOOJCO| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOPDKLDEKKF",
             |m: &HNPBFPOOJCO| { &m.NOPDKLDEKKF },
             |m: &mut HNPBFPOOJCO| { &mut m.NOPDKLDEKKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HONEMGCFBGI",
-            |m: &HNPBFPOOJCO| { &m.HONEMGCFBGI },
-            |m: &mut HNPBFPOOJCO| { &mut m.HONEMGCFBGI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &HNPBFPOOJCO| { &m.switch_list },
-            |m: &mut HNPBFPOOJCO| { &mut m.switch_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HNPBFPOOJCO>(
             "HNPBFPOOJCO",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for HNPBFPOOJCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.NOPDKLDEKKF = is.read_uint32()?;
-                },
-                120 => {
-                    self.HONEMGCFBGI = is.read_enum_or_unknown()?;
-                },
                 114 => {
                     is.read_repeated_packed_uint32_into(&mut self.switch_list)?;
                 },
                 112 => {
                     self.switch_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.HONEMGCFBGI = is.read_enum_or_unknown()?;
+                },
+                8 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.NOPDKLDEKKF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,38 +130,38 @@ impl ::protobuf::Message for HNPBFPOOJCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.panel_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.switch_list);
+        if self.HONEMGCFBGI != ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE) {
+            my_size += ::protobuf::rt::int32_size(6, self.HONEMGCFBGI.value());
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
         }
         if self.NOPDKLDEKKF != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.NOPDKLDEKKF);
         }
-        if self.HONEMGCFBGI != ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.HONEMGCFBGI.value());
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.switch_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(11, self.panel_id)?;
+        os.write_repeated_packed_uint32(14, &self.switch_list)?;
+        if self.HONEMGCFBGI != ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.HONEMGCFBGI))?;
         }
         if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
+            os.write_uint32(1, self.group_id)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(12, self.panel_id)?;
         }
         if self.NOPDKLDEKKF != 0 {
             os.write_uint32(4, self.NOPDKLDEKKF)?;
         }
-        if self.HONEMGCFBGI != ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.HONEMGCFBGI))?;
-        }
-        os.write_repeated_packed_uint32(14, &self.switch_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for HNPBFPOOJCO {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
-        self.group_id = 0;
-        self.NOPDKLDEKKF = 0;
-        self.HONEMGCFBGI = ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE);
         self.switch_list.clear();
+        self.HONEMGCFBGI = ::protobuf::EnumOrUnknown::new(super::OJLJHFNFDKP::OJLJHFNFDKP::UPDATE_REDDOT_NONE);
+        self.group_id = 0;
+        self.panel_id = 0;
+        self.NOPDKLDEKKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HNPBFPOOJCO {
         static instance: HNPBFPOOJCO = HNPBFPOOJCO {
-            panel_id: 0,
-            group_id: 0,
-            NOPDKLDEKKF: 0,
-            HONEMGCFBGI: ::protobuf::EnumOrUnknown::from_i32(0),
             switch_list: ::std::vec::Vec::new(),
+            HONEMGCFBGI: ::protobuf::EnumOrUnknown::from_i32(0),
+            group_id: 0,
+            panel_id: 0,
+            NOPDKLDEKKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for HNPBFPOOJCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HNPBFPOOJCO.proto\x1a\x11OJLJHFNFDKP.proto\"\xb6\x01\n\x0bHNPBFPOO\
-    JCO\x12\x19\n\x08panel_id\x18\x0b\x20\x01(\rR\x07panelId\x12\x19\n\x08gr\
-    oup_id\x18\t\x20\x01(\rR\x07groupId\x12\x20\n\x0bNOPDKLDEKKF\x18\x04\x20\
-    \x01(\rR\x0bNOPDKLDEKKF\x12.\n\x0bHONEMGCFBGI\x18\x0f\x20\x01(\x0e2\x0c.\
-    OJLJHFNFDKPR\x0bHONEMGCFBGI\x12\x1f\n\x0bswitch_list\x18\x0e\x20\x03(\rR\
-    \nswitchListb\x06proto3\
+    JCO\x12\x1f\n\x0bswitch_list\x18\x0e\x20\x03(\rR\nswitchList\x12.\n\x0bH\
+    ONEMGCFBGI\x18\x06\x20\x01(\x0e2\x0c.OJLJHFNFDKPR\x0bHONEMGCFBGI\x12\x19\
+    \n\x08group_id\x18\x01\x20\x01(\rR\x07groupId\x12\x19\n\x08panel_id\x18\
+    \x0c\x20\x01(\rR\x07panelId\x12\x20\n\x0bNOPDKLDEKKF\x18\x04\x20\x01(\rR\
+    \x0bNOPDKLDEKKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

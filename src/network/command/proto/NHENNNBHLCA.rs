@@ -72,7 +72,7 @@ impl ::protobuf::Message for NHENNNBHLCA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NHENNNBHLCA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for NHENNNBHLCA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHENNNBHLCA.proto\x1a\x11MPJDIBCCOHF.proto\"3\n\x0bNHENNNBHLCA\x12\
-    $\n\x06lineup\x18\x0b\x20\x01(\x0b2\x0c.MPJDIBCCOHFR\x06lineupb\x06proto\
-    3\
+    $\n\x06lineup\x18\n\x20\x01(\x0b2\x0c.MPJDIBCCOHFR\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterStrongChallengeActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.stage_id)
-    pub stage_id: u32,
     // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::StrongChallengeAvatar::StrongChallengeAvatar>,
+    // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.stage_id)
+    pub stage_id: u32,
     // @@protoc_insertion_point(field:EnterStrongChallengeActivityStageCsReq.buff_list)
     pub buff_list: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl EnterStrongChallengeActivityStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &EnterStrongChallengeActivityStageCsReq| { &m.stage_id },
-            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.stage_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &EnterStrongChallengeActivityStageCsReq| { &m.avatar_list },
             |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &EnterStrongChallengeActivityStageCsReq| { &m.stage_id },
+            |m: &mut EnterStrongChallengeActivityStageCsReq| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                42 => {
+                90 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                82 => {
+                80 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                80 => {
+                24 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -110,27 +110,27 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.buff_list);
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.stage_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.buff_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_id != 0 {
-            os.write_uint32(3, self.stage_id)?;
-        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        os.write_repeated_packed_uint32(10, &self.buff_list)?;
+        if self.stage_id != 0 {
+            os.write_uint32(10, self.stage_id)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.buff_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.stage_id = 0;
         self.avatar_list.clear();
+        self.stage_id = 0;
         self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterStrongChallengeActivityStageCsReq {
         static instance: EnterStrongChallengeActivityStageCsReq = EnterStrongChallengeActivityStageCsReq {
-            stage_id: 0,
             avatar_list: ::std::vec::Vec::new(),
+            stage_id: 0,
             buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterStrongChallengeActivityStageCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,EnterStrongChallengeActivityStageCsReq.proto\x1a\x1bStrongChallengeAv\
-    atar.proto\"\x99\x01\n&EnterStrongChallengeActivityStageCsReq\x12\x19\n\
-    \x08stage_id\x18\x03\x20\x01(\rR\x07stageId\x127\n\x0bavatar_list\x18\
-    \x05\x20\x03(\x0b2\x16.StrongChallengeAvatarR\navatarList\x12\x1b\n\tbuf\
-    f_list\x18\n\x20\x03(\rR\x08buffListb\x06proto3\
+    atar.proto\"\x99\x01\n&EnterStrongChallengeActivityStageCsReq\x127\n\x0b\
+    avatar_list\x18\x0b\x20\x03(\x0b2\x16.StrongChallengeAvatarR\navatarList\
+    \x12\x19\n\x08stage_id\x18\n\x20\x01(\rR\x07stageId\x12\x1b\n\tbuff_list\
+    \x18\x03\x20\x03(\rR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,24 +30,24 @@ pub struct ChallengeSettleNotify {
     // message fields
     // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_score)
     pub challenge_score: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.max_level)
-    pub max_level: ::protobuf::MessageField<super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.cur_challenge)
-    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.LPLJMKPBLIF)
-    pub LPLJMKPBLIF: u32,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.is_win)
     pub is_win: bool,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.star)
-    pub star: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.score_two)
-    pub score_two: u32,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.HAHAEIFMLBM)
     pub HAHAEIFMLBM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.score_two)
+    pub score_two: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.LPLJMKPBLIF)
+    pub LPLJMKPBLIF: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.max_level)
+    pub max_level: ::protobuf::MessageField<super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.star)
+    pub star: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.cur_challenge)
+    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeSettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,50 +72,50 @@ impl ChallengeSettleNotify {
             |m: &ChallengeSettleNotify| { &m.challenge_score },
             |m: &mut ChallengeSettleNotify| { &mut m.challenge_score },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>(
-            "max_level",
-            |m: &ChallengeSettleNotify| { &m.max_level },
-            |m: &mut ChallengeSettleNotify| { &mut m.max_level },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &ChallengeSettleNotify| { &m.challenge_id },
             |m: &mut ChallengeSettleNotify| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurChallenge::CurChallenge>(
-            "cur_challenge",
-            |m: &ChallengeSettleNotify| { &m.cur_challenge },
-            |m: &mut ChallengeSettleNotify| { &mut m.cur_challenge },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLJMKPBLIF",
-            |m: &ChallengeSettleNotify| { &m.LPLJMKPBLIF },
-            |m: &mut ChallengeSettleNotify| { &mut m.LPLJMKPBLIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ChallengeSettleNotify| { &m.is_win },
             |m: &mut ChallengeSettleNotify| { &mut m.is_win },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &ChallengeSettleNotify| { &m.reward },
-            |m: &mut ChallengeSettleNotify| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "star",
-            |m: &ChallengeSettleNotify| { &m.star },
-            |m: &mut ChallengeSettleNotify| { &mut m.star },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HAHAEIFMLBM",
+            |m: &ChallengeSettleNotify| { &m.HAHAEIFMLBM },
+            |m: &mut ChallengeSettleNotify| { &mut m.HAHAEIFMLBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_two",
             |m: &ChallengeSettleNotify| { &m.score_two },
             |m: &mut ChallengeSettleNotify| { &mut m.score_two },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HAHAEIFMLBM",
-            |m: &ChallengeSettleNotify| { &m.HAHAEIFMLBM },
-            |m: &mut ChallengeSettleNotify| { &mut m.HAHAEIFMLBM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LPLJMKPBLIF",
+            |m: &ChallengeSettleNotify| { &m.LPLJMKPBLIF },
+            |m: &mut ChallengeSettleNotify| { &mut m.LPLJMKPBLIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>(
+            "max_level",
+            |m: &ChallengeSettleNotify| { &m.max_level },
+            |m: &mut ChallengeSettleNotify| { &mut m.max_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "star",
+            |m: &ChallengeSettleNotify| { &m.star },
+            |m: &mut ChallengeSettleNotify| { &mut m.star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "player_return_reward_list",
+            |m: &ChallengeSettleNotify| { &m.player_return_reward_list },
+            |m: &mut ChallengeSettleNotify| { &mut m.player_return_reward_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurChallenge::CurChallenge>(
+            "cur_challenge",
+            |m: &ChallengeSettleNotify| { &m.cur_challenge },
+            |m: &mut ChallengeSettleNotify| { &mut m.cur_challenge },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeSettleNotify>(
             "ChallengeSettleNotify",
@@ -135,38 +135,38 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.challenge_score = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.max_level)?;
-                },
-                8 => {
+                80 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
-                },
-                120 => {
-                    self.LPLJMKPBLIF = is.read_uint32()?;
-                },
-                56 => {
+                72 => {
                     self.is_win = is.read_bool()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HAHAEIFMLBM)?;
                 },
                 48 => {
-                    self.star = is.read_uint32()?;
+                    self.HAHAEIFMLBM.push(is.read_uint32()?);
                 },
                 88 => {
                     self.score_two = is.read_uint32()?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HAHAEIFMLBM)?;
+                112 => {
+                    self.LPLJMKPBLIF = is.read_uint32()?;
                 },
-                72 => {
-                    self.HAHAEIFMLBM.push(is.read_uint32()?);
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.max_level)?;
+                },
+                40 => {
+                    self.star = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -181,36 +181,36 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.challenge_score);
+            my_size += ::protobuf::rt::uint32_size(8, self.challenge_score);
+        }
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.challenge_id);
+        }
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HAHAEIFMLBM);
+        if self.score_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.score_two);
+        }
+        if self.LPLJMKPBLIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LPLJMKPBLIF);
         }
         if let Some(v) = self.max_level.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.challenge_id);
+        if self.star != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.star);
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.cur_challenge.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LPLJMKPBLIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LPLJMKPBLIF);
-        }
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.star);
-        }
-        if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.score_two);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HAHAEIFMLBM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -218,33 +218,33 @@ impl ::protobuf::Message for ChallengeSettleNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_score != 0 {
-            os.write_uint32(4, self.challenge_score)?;
-        }
-        if let Some(v) = self.max_level.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            os.write_uint32(8, self.challenge_score)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(1, self.challenge_id)?;
-        }
-        if let Some(v) = self.cur_challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.LPLJMKPBLIF != 0 {
-            os.write_uint32(15, self.LPLJMKPBLIF)?;
+            os.write_uint32(10, self.challenge_id)?;
         }
         if self.is_win != false {
-            os.write_bool(7, self.is_win)?;
+            os.write_bool(9, self.is_win)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.star != 0 {
-            os.write_uint32(6, self.star)?;
-        }
+        os.write_repeated_packed_uint32(6, &self.HAHAEIFMLBM)?;
         if self.score_two != 0 {
             os.write_uint32(11, self.score_two)?;
         }
-        os.write_repeated_packed_uint32(9, &self.HAHAEIFMLBM)?;
+        if self.LPLJMKPBLIF != 0 {
+            os.write_uint32(14, self.LPLJMKPBLIF)?;
+        }
+        if let Some(v) = self.max_level.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.star != 0 {
+            os.write_uint32(5, self.star)?;
+        }
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.cur_challenge.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -263,30 +263,30 @@ impl ::protobuf::Message for ChallengeSettleNotify {
 
     fn clear(&mut self) {
         self.challenge_score = 0;
-        self.max_level.clear();
         self.challenge_id = 0;
-        self.cur_challenge.clear();
-        self.LPLJMKPBLIF = 0;
         self.is_win = false;
-        self.reward.clear();
-        self.star = 0;
-        self.score_two = 0;
         self.HAHAEIFMLBM.clear();
+        self.score_two = 0;
+        self.LPLJMKPBLIF = 0;
+        self.max_level.clear();
+        self.star = 0;
+        self.player_return_reward_list.clear();
+        self.cur_challenge.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeSettleNotify {
         static instance: ChallengeSettleNotify = ChallengeSettleNotify {
             challenge_score: 0,
-            max_level: ::protobuf::MessageField::none(),
             challenge_id: 0,
-            cur_challenge: ::protobuf::MessageField::none(),
-            LPLJMKPBLIF: 0,
             is_win: false,
-            reward: ::protobuf::MessageField::none(),
-            star: 0,
-            score_two: 0,
             HAHAEIFMLBM: ::std::vec::Vec::new(),
+            score_two: 0,
+            LPLJMKPBLIF: 0,
+            max_level: ::protobuf::MessageField::none(),
+            star: 0,
+            player_return_reward_list: ::protobuf::MessageField::none(),
+            cur_challenge: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -312,16 +312,17 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeSettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeSettleNotify.proto\x1a\x1eChallengeHistoryMaxLevel.proto\
-    \x1a\x12CurChallenge.proto\x1a\x0eItemList.proto\"\xfe\x02\n\x15Challeng\
-    eSettleNotify\x12'\n\x0fchallenge_score\x18\x04\x20\x01(\rR\x0echallenge\
-    Score\x126\n\tmax_level\x18\x02\x20\x01(\x0b2\x19.ChallengeHistoryMaxLev\
-    elR\x08maxLevel\x12!\n\x0cchallenge_id\x18\x01\x20\x01(\rR\x0bchallengeI\
-    d\x122\n\rcur_challenge\x18\r\x20\x01(\x0b2\r.CurChallengeR\x0ccurChalle\
-    nge\x12\x20\n\x0bLPLJMKPBLIF\x18\x0f\x20\x01(\rR\x0bLPLJMKPBLIF\x12\x15\
-    \n\x06is_win\x18\x07\x20\x01(\x08R\x05isWin\x12!\n\x06reward\x18\x03\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12\x12\n\x04star\x18\x06\x20\x01(\rR\
-    \x04star\x12\x1b\n\tscore_two\x18\x0b\x20\x01(\rR\x08scoreTwo\x12\x20\n\
-    \x0bHAHAEIFMLBM\x18\t\x20\x03(\rR\x0bHAHAEIFMLBMb\x06proto3\
+    \x1a\x12CurChallenge.proto\x1a\x0eItemList.proto\"\xa1\x03\n\x15Challeng\
+    eSettleNotify\x12'\n\x0fchallenge_score\x18\x08\x20\x01(\rR\x0echallenge\
+    Score\x12!\n\x0cchallenge_id\x18\n\x20\x01(\rR\x0bchallengeId\x12\x15\n\
+    \x06is_win\x18\t\x20\x01(\x08R\x05isWin\x12\x20\n\x0bHAHAEIFMLBM\x18\x06\
+    \x20\x03(\rR\x0bHAHAEIFMLBM\x12\x1b\n\tscore_two\x18\x0b\x20\x01(\rR\x08\
+    scoreTwo\x12\x20\n\x0bLPLJMKPBLIF\x18\x0e\x20\x01(\rR\x0bLPLJMKPBLIF\x12\
+    6\n\tmax_level\x18\x01\x20\x01(\x0b2\x19.ChallengeHistoryMaxLevelR\x08ma\
+    xLevel\x12\x12\n\x04star\x18\x05\x20\x01(\rR\x04star\x12D\n\x19player_re\
+    turn_reward_list\x18\x04\x20\x01(\x0b2\t.ItemListR\x16playerReturnReward\
+    List\x122\n\rcur_challenge\x18\x07\x20\x01(\x0b2\r.CurChallengeR\x0ccurC\
+    hallengeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

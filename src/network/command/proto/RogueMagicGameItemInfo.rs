@@ -32,10 +32,10 @@ pub struct RogueMagicGameItemInfo {
     pub magic_scepter_info_list: ::std::vec::Vec<super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo>,
     // @@protoc_insertion_point(field:RogueMagicGameItemInfo.rogue_magic_unit_info_list)
     pub rogue_magic_unit_info_list: ::std::vec::Vec<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
-    // @@protoc_insertion_point(field:RogueMagicGameItemInfo.game_style_type)
-    pub game_style_type: u32,
     // @@protoc_insertion_point(field:RogueMagicGameItemInfo.JFCNAJMIHCI)
     pub JFCNAJMIHCI: bool,
+    // @@protoc_insertion_point(field:RogueMagicGameItemInfo.game_style_type)
+    pub game_style_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicGameItemInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl RogueMagicGameItemInfo {
             |m: &mut RogueMagicGameItemInfo| { &mut m.rogue_magic_unit_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_style_type",
-            |m: &RogueMagicGameItemInfo| { &m.game_style_type },
-            |m: &mut RogueMagicGameItemInfo| { &mut m.game_style_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JFCNAJMIHCI",
             |m: &RogueMagicGameItemInfo| { &m.JFCNAJMIHCI },
             |m: &mut RogueMagicGameItemInfo| { &mut m.JFCNAJMIHCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_style_type",
+            |m: &RogueMagicGameItemInfo| { &m.game_style_type },
+            |m: &mut RogueMagicGameItemInfo| { &mut m.game_style_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicGameItemInfo>(
             "RogueMagicGameItemInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueMagicGameItemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                98 => {
                     self.magic_scepter_info_list.push(is.read_message()?);
                 },
-                50 => {
+                58 => {
                     self.rogue_magic_unit_info_list.push(is.read_message()?);
+                },
+                8 => {
+                    self.JFCNAJMIHCI = is.read_bool()?;
                 },
                 40 => {
                     self.game_style_type = is.read_uint32()?;
-                },
-                80 => {
-                    self.JFCNAJMIHCI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -125,11 +125,11 @@ impl ::protobuf::Message for RogueMagicGameItemInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.game_style_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.game_style_type);
-        }
         if self.JFCNAJMIHCI != false {
             my_size += 1 + 1;
+        }
+        if self.game_style_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.game_style_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,16 +138,16 @@ impl ::protobuf::Message for RogueMagicGameItemInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.magic_scepter_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         for v in &self.rogue_magic_unit_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.JFCNAJMIHCI != false {
+            os.write_bool(1, self.JFCNAJMIHCI)?;
+        }
         if self.game_style_type != 0 {
             os.write_uint32(5, self.game_style_type)?;
-        }
-        if self.JFCNAJMIHCI != false {
-            os.write_bool(10, self.JFCNAJMIHCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for RogueMagicGameItemInfo {
     fn clear(&mut self) {
         self.magic_scepter_info_list.clear();
         self.rogue_magic_unit_info_list.clear();
-        self.game_style_type = 0;
         self.JFCNAJMIHCI = false;
+        self.game_style_type = 0;
         self.special_fields.clear();
     }
 
@@ -177,8 +177,8 @@ impl ::protobuf::Message for RogueMagicGameItemInfo {
         static instance: RogueMagicGameItemInfo = RogueMagicGameItemInfo {
             magic_scepter_info_list: ::std::vec::Vec::new(),
             rogue_magic_unit_info_list: ::std::vec::Vec::new(),
-            game_style_type: 0,
             JFCNAJMIHCI: false,
+            game_style_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicGameItemInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueMagicGameItemInfo.proto\x1a\x1fRogueMagicGameScepterInfo.prot\
     o\x1a\x1cRogueMagicGameUnitInfo.proto\"\x8a\x02\n\x16RogueMagicGameItemI\
-    nfo\x12Q\n\x17magic_scepter_info_list\x18\x01\x20\x03(\x0b2\x1a.RogueMag\
+    nfo\x12Q\n\x17magic_scepter_info_list\x18\x0c\x20\x03(\x0b2\x1a.RogueMag\
     icGameScepterInfoR\x14magicScepterInfoList\x12S\n\x1arogue_magic_unit_in\
-    fo_list\x18\x06\x20\x03(\x0b2\x17.RogueMagicGameUnitInfoR\x16rogueMagicU\
-    nitInfoList\x12&\n\x0fgame_style_type\x18\x05\x20\x01(\rR\rgameStyleType\
-    \x12\x20\n\x0bJFCNAJMIHCI\x18\n\x20\x01(\x08R\x0bJFCNAJMIHCIb\x06proto3\
+    fo_list\x18\x07\x20\x03(\x0b2\x17.RogueMagicGameUnitInfoR\x16rogueMagicU\
+    nitInfoList\x12\x20\n\x0bJFCNAJMIHCI\x18\x01\x20\x01(\x08R\x0bJFCNAJMIHC\
+    I\x12&\n\x0fgame_style_type\x18\x05\x20\x01(\rR\rgameStyleTypeb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

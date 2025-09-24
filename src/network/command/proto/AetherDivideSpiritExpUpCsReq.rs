@@ -86,13 +86,13 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.JDHLMHJBOJM = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.KBMLAJOAANE = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.aether_avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JDHLMHJBOJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JDHLMHJBOJM);
+            my_size += ::protobuf::rt::uint32_size(4, self.JDHLMHJBOJM);
         }
         if self.KBMLAJOAANE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KBMLAJOAANE);
+            my_size += ::protobuf::rt::uint32_size(8, self.KBMLAJOAANE);
         }
         if self.aether_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.aether_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.aether_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JDHLMHJBOJM != 0 {
-            os.write_uint32(5, self.JDHLMHJBOJM)?;
+            os.write_uint32(4, self.JDHLMHJBOJM)?;
         }
         if self.KBMLAJOAANE != 0 {
-            os.write_uint32(11, self.KBMLAJOAANE)?;
+            os.write_uint32(8, self.KBMLAJOAANE)?;
         }
         if self.aether_avatar_id != 0 {
-            os.write_uint32(6, self.aether_avatar_id)?;
+            os.write_uint32(10, self.aether_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritExpUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"AetherDivideSpiritExpUpCsReq.proto\"\x8c\x01\n\x1cAetherDivideSpirit\
-    ExpUpCsReq\x12\x20\n\x0bJDHLMHJBOJM\x18\x05\x20\x01(\rR\x0bJDHLMHJBOJM\
-    \x12\x20\n\x0bKBMLAJOAANE\x18\x0b\x20\x01(\rR\x0bKBMLAJOAANE\x12(\n\x10a\
-    ether_avatar_id\x18\x06\x20\x01(\rR\x0eaetherAvatarIdb\x06proto3\
+    ExpUpCsReq\x12\x20\n\x0bJDHLMHJBOJM\x18\x04\x20\x01(\rR\x0bJDHLMHJBOJM\
+    \x12\x20\n\x0bKBMLAJOAANE\x18\x08\x20\x01(\rR\x0bKBMLAJOAANE\x12(\n\x10a\
+    ether_avatar_id\x18\n\x20\x01(\rR\x0eaetherAvatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

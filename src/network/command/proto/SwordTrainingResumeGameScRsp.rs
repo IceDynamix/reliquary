@@ -82,7 +82,7 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
                 80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJBFPCPIGM)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
             os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.GAJBFPCPIGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingResumeGameScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingResumeGameScRsp.proto\x1a\x11ALEFDNLLKLB.proto\"h\n\x1c\
     SwordTrainingResumeGameScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07r\
-    etcode\x12.\n\x0bGAJBFPCPIGM\x18\x03\x20\x01(\x0b2\x0c.ALEFDNLLKLBR\x0bG\
+    etcode\x12.\n\x0bGAJBFPCPIGM\x18\x08\x20\x01(\x0b2\x0c.ALEFDNLLKLBR\x0bG\
     AJBFPCPIGMb\x06proto3\
 ";
 

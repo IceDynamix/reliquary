@@ -79,10 +79,10 @@ impl ::protobuf::Message for FriendRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.JHOLBLPEGLJ = is.read_bool()?;
                 },
-                18 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FriendRecommendInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JHOLBLPEGLJ != false {
-            os.write_bool(12, self.JHOLBLPEGLJ)?;
+            os.write_bool(1, self.JHOLBLPEGLJ)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FriendRecommendInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"k\n\x13Fr\
-    iendRecommendInfo\x12\x20\n\x0bJHOLBLPEGLJ\x18\x0c\x20\x01(\x08R\x0bJHOL\
-    BLPEGLJ\x122\n\x0bplayer_info\x18\x02\x20\x01(\x0b2\x11.PlayerSimpleInfo\
+    iendRecommendInfo\x12\x20\n\x0bJHOLBLPEGLJ\x18\x01\x20\x01(\x08R\x0bJHOL\
+    BLPEGLJ\x122\n\x0bplayer_info\x18\x0c\x20\x01(\x0b2\x11.PlayerSimpleInfo\
     R\nplayerInfob\x06proto3\
 ";
 

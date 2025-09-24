@@ -82,7 +82,7 @@ impl ::protobuf::Message for RogueTournDifficultyInfo {
                 48 => {
                     self.difficulty_id = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.is_unlocked = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for RogueTournDifficultyInfo {
             os.write_uint32(6, self.difficulty_id)?;
         }
         if self.is_unlocked != false {
-            os.write_bool(9, self.is_unlocked)?;
+            os.write_bool(10, self.is_unlocked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournDifficultyInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueTournDifficultyInfo.proto\"`\n\x18RogueTournDifficultyInfo\
     \x12#\n\rdifficulty_id\x18\x06\x20\x01(\rR\x0cdifficultyId\x12\x1f\n\x0b\
-    is_unlocked\x18\t\x20\x01(\x08R\nisUnlockedb\x06proto3\
+    is_unlocked\x18\n\x20\x01(\x08R\nisUnlockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFIHDGGAEKN {
     // message fields
-    // @@protoc_insertion_point(field:FFIHDGGAEKN.MJJMPIFLMKF)
-    pub MJJMPIFLMKF: bool,
     // @@protoc_insertion_point(field:FFIHDGGAEKN.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:FFIHDGGAEKN.MJJMPIFLMKF)
+    pub MJJMPIFLMKF: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FFIHDGGAEKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FFIHDGGAEKN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJJMPIFLMKF",
-            |m: &FFIHDGGAEKN| { &m.MJJMPIFLMKF },
-            |m: &mut FFIHDGGAEKN| { &mut m.MJJMPIFLMKF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &FFIHDGGAEKN| { &m.motion },
             |m: &mut FFIHDGGAEKN| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJJMPIFLMKF",
+            |m: &FFIHDGGAEKN| { &m.MJJMPIFLMKF },
+            |m: &mut FFIHDGGAEKN| { &mut m.MJJMPIFLMKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFIHDGGAEKN>(
             "FFIHDGGAEKN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FFIHDGGAEKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.MJJMPIFLMKF = is.read_bool()?;
-                },
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                96 => {
+                    self.MJJMPIFLMKF = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for FFIHDGGAEKN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MJJMPIFLMKF != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.MJJMPIFLMKF != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FFIHDGGAEKN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJJMPIFLMKF != false {
-            os.write_bool(6, self.MJJMPIFLMKF)?;
-        }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.MJJMPIFLMKF != false {
+            os.write_bool(12, self.MJJMPIFLMKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FFIHDGGAEKN {
     }
 
     fn clear(&mut self) {
-        self.MJJMPIFLMKF = false;
         self.motion.clear();
+        self.MJJMPIFLMKF = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFIHDGGAEKN {
         static instance: FFIHDGGAEKN = FFIHDGGAEKN {
-            MJJMPIFLMKF: false,
             motion: ::protobuf::MessageField::none(),
+            MJJMPIFLMKF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for FFIHDGGAEKN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FFIHDGGAEKN.proto\x1a\x10MotionInfo.proto\"T\n\x0bFFIHDGGAEKN\x12\
-    \x20\n\x0bMJJMPIFLMKF\x18\x06\x20\x01(\x08R\x0bMJJMPIFLMKF\x12#\n\x06mot\
-    ion\x18\x0c\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    \n\x11FFIHDGGAEKN.proto\x1a\x10MotionInfo.proto\"T\n\x0bFFIHDGGAEKN\x12#\
+    \n\x06motion\x18\x04\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x20\n\
+    \x0bMJJMPIFLMKF\x18\x0c\x20\x01(\x08R\x0bMJJMPIFLMKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

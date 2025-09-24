@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesUpgradeSkillLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesUpgradeSkillLevelCsReq.LDNJEACFBJE)
-    pub LDNJEACFBJE: u32,
     // @@protoc_insertion_point(field:PlanetFesUpgradeSkillLevelCsReq.skill_id)
     pub skill_id: u32,
+    // @@protoc_insertion_point(field:PlanetFesUpgradeSkillLevelCsReq.LDNJEACFBJE)
+    pub LDNJEACFBJE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesUpgradeSkillLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesUpgradeSkillLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNJEACFBJE",
-            |m: &PlanetFesUpgradeSkillLevelCsReq| { &m.LDNJEACFBJE },
-            |m: &mut PlanetFesUpgradeSkillLevelCsReq| { &mut m.LDNJEACFBJE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &PlanetFesUpgradeSkillLevelCsReq| { &m.skill_id },
             |m: &mut PlanetFesUpgradeSkillLevelCsReq| { &mut m.skill_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDNJEACFBJE",
+            |m: &PlanetFesUpgradeSkillLevelCsReq| { &m.LDNJEACFBJE },
+            |m: &mut PlanetFesUpgradeSkillLevelCsReq| { &mut m.LDNJEACFBJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesUpgradeSkillLevelCsReq>(
             "PlanetFesUpgradeSkillLevelCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.LDNJEACFBJE = is.read_uint32()?;
-                },
-                48 => {
+                56 => {
                     self.skill_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.LDNJEACFBJE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDNJEACFBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LDNJEACFBJE);
-        }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.skill_id);
+        }
+        if self.LDNJEACFBJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LDNJEACFBJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDNJEACFBJE != 0 {
-            os.write_uint32(8, self.LDNJEACFBJE)?;
-        }
         if self.skill_id != 0 {
-            os.write_uint32(6, self.skill_id)?;
+            os.write_uint32(7, self.skill_id)?;
+        }
+        if self.LDNJEACFBJE != 0 {
+            os.write_uint32(10, self.LDNJEACFBJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesUpgradeSkillLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.LDNJEACFBJE = 0;
         self.skill_id = 0;
+        self.LDNJEACFBJE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesUpgradeSkillLevelCsReq {
         static instance: PlanetFesUpgradeSkillLevelCsReq = PlanetFesUpgradeSkillLevelCsReq {
-            LDNJEACFBJE: 0,
             skill_id: 0,
+            LDNJEACFBJE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUpgradeSkillLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%PlanetFesUpgradeSkillLevelCsReq.proto\"^\n\x1fPlanetFesUpgradeSkillLe\
-    velCsReq\x12\x20\n\x0bLDNJEACFBJE\x18\x08\x20\x01(\rR\x0bLDNJEACFBJE\x12\
-    \x19\n\x08skill_id\x18\x06\x20\x01(\rR\x07skillIdb\x06proto3\
+    velCsReq\x12\x19\n\x08skill_id\x18\x07\x20\x01(\rR\x07skillId\x12\x20\n\
+    \x0bLDNJEACFBJE\x18\n\x20\x01(\rR\x0bLDNJEACFBJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

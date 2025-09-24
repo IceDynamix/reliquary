@@ -45,48 +45,48 @@ impl RogueCommonDialogueInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonDialogueBasicInfo dialogue_basic_info = 3;
+    // .RogueCommonDialogueBasicInfo Npc = 14;
 
-    pub fn dialogue_basic_info(&self) -> &super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
+    pub fn Npc(&self) -> &super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
         match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(ref v)) => v,
+            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v)) => v,
             _ => <super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dialogue_basic_info(&mut self) {
+    pub fn clear_Npc(&mut self) {
         self.ACDOBBPLDBG = ::std::option::Option::None;
     }
 
-    pub fn has_dialogue_basic_info(&self) -> bool {
+    pub fn has_Npc(&self) -> bool {
         match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(..)) => true,
+            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_dialogue_basic_info(&mut self, v: super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(v))
+    pub fn set_Npc(&mut self, v: super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo) {
+        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dialogue_basic_info(&mut self) -> &mut super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(_)) = self.ACDOBBPLDBG {
+    pub fn mut_Npc(&mut self) -> &mut super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(_)) = self.ACDOBBPLDBG {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo::new()));
+            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo::new()));
         }
         match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(ref mut v)) => v,
+            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_dialogue_basic_info(&mut self) -> super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
-        if self.has_dialogue_basic_info() {
+    pub fn take_Npc(&mut self) -> super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
+        if self.has_Npc() {
             match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(v)) => v,
+                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,7 +94,7 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .GNJAPOMLLHE ADMAHLAALNH = 10;
+    // .GNJAPOMLLHE ADMAHLAALNH = 8;
 
     pub fn ADMAHLAALNH(&self) -> &super::GNJAPOMLLHE::GNJAPOMLLHE {
         match self.ACDOBBPLDBG {
@@ -143,7 +143,7 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .CNHHPDHBMDC ODDGCBPOPLF = 2;
+    // .CNHHPDHBMDC ODDGCBPOPLF = 1;
 
     pub fn ODDGCBPOPLF(&self) -> &super::CNHHPDHBMDC::CNHHPDHBMDC {
         match self.ACDOBBPLDBG {
@@ -192,7 +192,7 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .JIEAAFJENLK GMAKHONAEPH = 11;
+    // .JIEAAFJENLK GMAKHONAEPH = 12;
 
     pub fn GMAKHONAEPH(&self) -> &super::JIEAAFJENLK::JIEAAFJENLK {
         match self.ACDOBBPLDBG {
@@ -241,7 +241,7 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .HPJLAFHHGJG CACGEKAANKL = 9;
+    // .HPJLAFHHGJG CACGEKAANKL = 10;
 
     pub fn CACGEKAANKL(&self) -> &super::HPJLAFHHGJG::HPJLAFHHGJG {
         match self.ACDOBBPLDBG {
@@ -290,7 +290,7 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .AFCCAOACNAK AGGBLHGKPFJ = 7;
+    // .AFCCAOACNAK AGGBLHGKPFJ = 6;
 
     pub fn AGGBLHGKPFJ(&self) -> &super::AFCCAOACNAK::AFCCAOACNAK {
         match self.ACDOBBPLDBG {
@@ -343,11 +343,11 @@ impl RogueCommonDialogueInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo>(
-            "dialogue_basic_info",
-            RogueCommonDialogueInfo::has_dialogue_basic_info,
-            RogueCommonDialogueInfo::dialogue_basic_info,
-            RogueCommonDialogueInfo::mut_dialogue_basic_info,
-            RogueCommonDialogueInfo::set_dialogue_basic_info,
+            "Npc",
+            RogueCommonDialogueInfo::has_Npc,
+            RogueCommonDialogueInfo::Npc,
+            RogueCommonDialogueInfo::mut_Npc,
+            RogueCommonDialogueInfo::set_Npc,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GNJAPOMLLHE::GNJAPOMLLHE>(
             "ADMAHLAALNH",
@@ -403,22 +403,22 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(is.read_message()?));
+                114 => {
+                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(is.read_message()?));
                 },
-                82 => {
+                66 => {
                     self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(is.read_message()?));
                 },
-                18 => {
+                10 => {
                     self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(is.read_message()?));
                 },
-                90 => {
+                98 => {
                     self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(is.read_message()?));
                 },
-                74 => {
+                82 => {
                     self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(is.read_message()?));
                 },
-                58 => {
+                50 => {
                     self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(is.read_message()?));
                 },
                 tag => {
@@ -435,7 +435,7 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.ACDOBBPLDBG {
             match v {
-                &rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(ref v) => {
+                &rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -469,23 +469,23 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.ACDOBBPLDBG {
             match v {
-                &rogue_common_dialogue_info::ACDOBBPLDBG::DialogueBasicInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -548,8 +548,8 @@ pub mod rogue_common_dialogue_info {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:RogueCommonDialogueInfo.ACDOBBPLDBG)
     pub enum ACDOBBPLDBG {
-        // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.dialogue_basic_info)
-        DialogueBasicInfo(super::super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo),
+        // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.Npc)
+        Npc(super::super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo),
         // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.ADMAHLAALNH)
         ADMAHLAALNH(super::super::GNJAPOMLLHE::GNJAPOMLLHE),
         // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.ODDGCBPOPLF)
@@ -582,15 +582,15 @@ pub mod rogue_common_dialogue_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueCommonDialogueInfo.proto\x1a\x11AFCCAOACNAK.proto\x1a\x11CNHH\
     PDHBMDC.proto\x1a\x11GNJAPOMLLHE.proto\x1a\x11HPJLAFHHGJG.proto\x1a\x11J\
-    IEAAFJENLK.proto\x1a\"RogueCommonDialogueBasicInfo.proto\"\xf3\x02\n\x17\
-    RogueCommonDialogueInfo\x12O\n\x13dialogue_basic_info\x18\x03\x20\x01(\
-    \x0b2\x1d.RogueCommonDialogueBasicInfoH\0R\x11dialogueBasicInfo\x120\n\
-    \x0bADMAHLAALNH\x18\n\x20\x01(\x0b2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\
-    \x120\n\x0bODDGCBPOPLF\x18\x02\x20\x01(\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDG\
-    CBPOPLF\x120\n\x0bGMAKHONAEPH\x18\x0b\x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\
-    \x0bGMAKHONAEPH\x120\n\x0bCACGEKAANKL\x18\t\x20\x01(\x0b2\x0c.HPJLAFHHGJ\
-    GH\0R\x0bCACGEKAANKL\x120\n\x0bAGGBLHGKPFJ\x18\x07\x20\x01(\x0b2\x0c.AFC\
-    CAOACNAKH\0R\x0bAGGBLHGKPFJB\r\n\x0bACDOBBPLDBGb\x06proto3\
+    IEAAFJENLK.proto\x1a\"RogueCommonDialogueBasicInfo.proto\"\xd5\x02\n\x17\
+    RogueCommonDialogueInfo\x121\n\x03Npc\x18\x0e\x20\x01(\x0b2\x1d.RogueCom\
+    monDialogueBasicInfoH\0R\x03Npc\x120\n\x0bADMAHLAALNH\x18\x08\x20\x01(\
+    \x0b2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\x120\n\x0bODDGCBPOPLF\x18\x01\
+    \x20\x01(\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDGCBPOPLF\x120\n\x0bGMAKHONAEPH\
+    \x18\x0c\x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\x0bGMAKHONAEPH\x120\n\x0bCACG\
+    EKAANKL\x18\n\x20\x01(\x0b2\x0c.HPJLAFHHGJGH\0R\x0bCACGEKAANKL\x120\n\
+    \x0bAGGBLHGKPFJ\x18\x06\x20\x01(\x0b2\x0c.AFCCAOACNAKH\0R\x0bAGGBLHGKPFJ\
+    B\r\n\x0bACDOBBPLDBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

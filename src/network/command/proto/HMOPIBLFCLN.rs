@@ -93,16 +93,16 @@ impl ::protobuf::Message for HMOPIBLFCLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.LKLLMPOKOGH = is.read_bool()?;
                 },
-                48 => {
+                8 => {
                     self.HAFCKONEHFM = is.read_uint32()?;
                 },
-                90 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GDGHCBGHLND)?;
                 },
-                98 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNMMKFMEAJM)?;
                 },
                 tag => {
@@ -121,7 +121,7 @@ impl ::protobuf::Message for HMOPIBLFCLN {
             my_size += 1 + 1;
         }
         if self.HAFCKONEHFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HAFCKONEHFM);
+            my_size += ::protobuf::rt::uint32_size(1, self.HAFCKONEHFM);
         }
         if let Some(v) = self.GDGHCBGHLND.as_ref() {
             let len = v.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HMOPIBLFCLN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LKLLMPOKOGH != false {
-            os.write_bool(15, self.LKLLMPOKOGH)?;
+            os.write_bool(12, self.LKLLMPOKOGH)?;
         }
         if self.HAFCKONEHFM != 0 {
-            os.write_uint32(6, self.HAFCKONEHFM)?;
+            os.write_uint32(1, self.HAFCKONEHFM)?;
         }
         if let Some(v) = self.GDGHCBGHLND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.LNMMKFMEAJM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for HMOPIBLFCLN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HMOPIBLFCLN.proto\x1a\x11HBCINIKPAFI.proto\x1a\x11KACKJJDJONI.prot\
-    o\"\xb1\x01\n\x0bHMOPIBLFCLN\x12\x20\n\x0bLKLLMPOKOGH\x18\x0f\x20\x01(\
-    \x08R\x0bLKLLMPOKOGH\x12\x20\n\x0bHAFCKONEHFM\x18\x06\x20\x01(\rR\x0bHAF\
-    CKONEHFM\x12.\n\x0bGDGHCBGHLND\x18\x0b\x20\x01(\x0b2\x0c.KACKJJDJONIR\
-    \x0bGDGHCBGHLND\x12.\n\x0bLNMMKFMEAJM\x18\x0c\x20\x01(\x0b2\x0c.HBCINIKP\
+    o\"\xb1\x01\n\x0bHMOPIBLFCLN\x12\x20\n\x0bLKLLMPOKOGH\x18\x0c\x20\x01(\
+    \x08R\x0bLKLLMPOKOGH\x12\x20\n\x0bHAFCKONEHFM\x18\x01\x20\x01(\rR\x0bHAF\
+    CKONEHFM\x12.\n\x0bGDGHCBGHLND\x18\x07\x20\x01(\x0b2\x0c.KACKJJDJONIR\
+    \x0bGDGHCBGHLND\x12.\n\x0bLNMMKFMEAJM\x18\x06\x20\x01(\x0b2\x0c.HBCINIKP\
     AFIR\x0bLNMMKFMEAJMb\x06proto3\
 ";
 

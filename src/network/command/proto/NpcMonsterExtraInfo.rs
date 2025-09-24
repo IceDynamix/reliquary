@@ -45,7 +45,7 @@ impl NpcMonsterExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .NpcMonsterRogueInfo rogue_game_info = 1;
+    // .NpcMonsterRogueInfo rogue_game_info = 2;
 
     pub fn rogue_game_info(&self) -> &super::NpcMonsterRogueInfo::NpcMonsterRogueInfo {
         match self.KFELKJLDKEH {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     self.KFELKJLDKEH = ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
         if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
             match v {
                 &npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -236,7 +236,7 @@ pub mod npc_monster_extra_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19NpcMonsterExtraInfo.proto\x1a\x19NpcMonsterRogueInfo.proto\"d\n\
-    \x13NpcMonsterExtraInfo\x12>\n\x0frogue_game_info\x18\x01\x20\x01(\x0b2\
+    \x13NpcMonsterExtraInfo\x12>\n\x0frogue_game_info\x18\x02\x20\x01(\x0b2\
     \x14.NpcMonsterRogueInfoH\0R\rrogueGameInfoB\r\n\x0bKFELKJLDKEHb\x06prot\
     o3\
 ";

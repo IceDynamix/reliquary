@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCLNCBCPAFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.CGFIHJCCGCD)?;
                 },
-                112 => {
+                32 => {
                     self.CGFIHJCCGCD.push(is.read_uint32()?);
                 },
                 8 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for MCLNCBCPAFF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.CGFIHJCCGCD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CGFIHJCCGCD);
         if self.area_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.area_id);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MCLNCBCPAFF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.CGFIHJCCGCD)?;
+        os.write_repeated_packed_uint32(4, &self.CGFIHJCCGCD)?;
         if self.area_id != 0 {
             os.write_uint32(1, self.area_id)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for MCLNCBCPAFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCLNCBCPAFF.proto\"H\n\x0bMCLNCBCPAFF\x12\x20\n\x0bCGFIHJCCGCD\x18\
-    \x0e\x20\x03(\rR\x0bCGFIHJCCGCD\x12\x17\n\x07area_id\x18\x01\x20\x01(\rR\
+    \x04\x20\x03(\rR\x0bCGFIHJCCGCD\x12\x17\n\x07area_id\x18\x01\x20\x01(\rR\
     \x06areaIdb\x06proto3\
 ";
 

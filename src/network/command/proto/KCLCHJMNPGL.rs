@@ -79,10 +79,10 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                80 => {
                     self.OFGBJCCCIKE = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.NGIAMBEIHPI = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KCLCHJMNPGL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OFGBJCCCIKE);
+            my_size += ::protobuf::rt::uint32_size(10, self.OFGBJCCCIKE);
         }
         if self.NGIAMBEIHPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NGIAMBEIHPI);
+            my_size += ::protobuf::rt::uint32_size(12, self.NGIAMBEIHPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KCLCHJMNPGL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(2, self.OFGBJCCCIKE)?;
+            os.write_uint32(10, self.OFGBJCCCIKE)?;
         }
         if self.NGIAMBEIHPI != 0 {
-            os.write_uint32(4, self.NGIAMBEIHPI)?;
+            os.write_uint32(12, self.NGIAMBEIHPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KCLCHJMNPGL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KCLCHJMNPGL.proto\"Q\n\x0bKCLCHJMNPGL\x12\x20\n\x0bOFGBJCCCIKE\x18\
-    \x02\x20\x01(\rR\x0bOFGBJCCCIKE\x12\x20\n\x0bNGIAMBEIHPI\x18\x04\x20\x01\
-    (\rR\x0bNGIAMBEIHPIb\x06proto3\
+    \n\x20\x01(\rR\x0bOFGBJCCCIKE\x12\x20\n\x0bNGIAMBEIHPI\x18\x0c\x20\x01(\
+    \rR\x0bNGIAMBEIHPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

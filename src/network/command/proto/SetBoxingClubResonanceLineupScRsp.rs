@@ -82,7 +82,7 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for SetBoxingClubResonanceLineupScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'SetBoxingClubResonanceLineupScRsp.proto\x1a\x11FCIHIJLOMGA.proto\"i\n\
     !SetBoxingClubResonanceLineupScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\
-    \rR\x07retcode\x12*\n\tchallenge\x18\x08\x20\x01(\x0b2\x0c.FCIHIJLOMGAR\
+    \rR\x07retcode\x12*\n\tchallenge\x18\x06\x20\x01(\x0b2\x0c.FCIHIJLOMGAR\
     \tchallengeb\x06proto3\
 ";
 

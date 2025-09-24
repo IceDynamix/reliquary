@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookSyncDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.LENPIDMPECP)
-    pub LENPIDMPECP: u32,
     // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.FDCKFKFKHLO)
     pub FDCKFKFKHLO: u32,
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.NDCJJPGNFLN)
-    pub NDCJJPGNFLN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.JKEMDJIAMHI)
     pub JKEMDJIAMHI: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.energy_info)
     pub energy_info: u32,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.NDCJJPGNFLN)
+    pub NDCJJPGNFLN: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.LENPIDMPECP)
+    pub LENPIDMPECP: u32,
     // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.HEFJEJHOJEA)
     pub HEFJEJHOJEA: ::protobuf::MessageField<super::FLOICKMNMLL::FLOICKMNMLL>,
     // special fields
@@ -60,19 +60,9 @@ impl TarotBookSyncDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LENPIDMPECP",
-            |m: &TarotBookSyncDataScNotify| { &m.LENPIDMPECP },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.LENPIDMPECP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FDCKFKFKHLO",
             |m: &TarotBookSyncDataScNotify| { &m.FDCKFKFKHLO },
             |m: &mut TarotBookSyncDataScNotify| { &mut m.FDCKFKFKHLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NDCJJPGNFLN",
-            |m: &TarotBookSyncDataScNotify| { &m.NDCJJPGNFLN },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.NDCJJPGNFLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "JKEMDJIAMHI",
@@ -83,6 +73,16 @@ impl TarotBookSyncDataScNotify {
             "energy_info",
             |m: &TarotBookSyncDataScNotify| { &m.energy_info },
             |m: &mut TarotBookSyncDataScNotify| { &mut m.energy_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NDCJJPGNFLN",
+            |m: &TarotBookSyncDataScNotify| { &m.NDCJJPGNFLN },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.NDCJJPGNFLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LENPIDMPECP",
+            |m: &TarotBookSyncDataScNotify| { &m.LENPIDMPECP },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.LENPIDMPECP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FLOICKMNMLL::FLOICKMNMLL>(
             "HEFJEJHOJEA",
@@ -107,28 +107,10 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.LENPIDMPECP = is.read_uint32()?;
-                },
-                112 => {
+                24 => {
                     self.FDCKFKFKHLO = is.read_uint32()?;
                 },
-                50 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.NDCJJPGNFLN.insert(key, value);
-                },
-                66 => {
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -143,10 +125,28 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
                     is.pop_limit(old_limit);
                     self.JKEMDJIAMHI.insert(key, value);
                 },
-                24 => {
+                32 => {
                     self.energy_info = is.read_uint32()?;
                 },
-                18 => {
+                98 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.NDCJJPGNFLN.insert(key, value);
+                },
+                56 => {
+                    self.LENPIDMPECP = is.read_uint32()?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEFJEJHOJEA)?;
                 },
                 tag => {
@@ -161,18 +161,9 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LENPIDMPECP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LENPIDMPECP);
-        }
         if self.FDCKFKFKHLO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FDCKFKFKHLO);
+            my_size += ::protobuf::rt::uint32_size(3, self.FDCKFKFKHLO);
         }
-        for (k, v) in &self.NDCJJPGNFLN {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
         for (k, v) in &self.JKEMDJIAMHI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -180,7 +171,16 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.energy_info != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.energy_info);
+            my_size += ::protobuf::rt::uint32_size(4, self.energy_info);
+        }
+        for (k, v) in &self.NDCJJPGNFLN {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.LENPIDMPECP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LENPIDMPECP);
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
             let len = v.compute_size();
@@ -192,35 +192,35 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LENPIDMPECP != 0 {
-            os.write_uint32(12, self.LENPIDMPECP)?;
-        }
         if self.FDCKFKFKHLO != 0 {
-            os.write_uint32(14, self.FDCKFKFKHLO)?;
+            os.write_uint32(3, self.FDCKFKFKHLO)?;
         }
-        for (k, v) in &self.NDCJJPGNFLN {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
         for (k, v) in &self.JKEMDJIAMHI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(66)?; // Tag.
+            os.write_raw_varint32(122)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.energy_info != 0 {
-            os.write_uint32(3, self.energy_info)?;
+            os.write_uint32(4, self.energy_info)?;
+        }
+        for (k, v) in &self.NDCJJPGNFLN {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        if self.LENPIDMPECP != 0 {
+            os.write_uint32(7, self.LENPIDMPECP)?;
         }
         if let Some(v) = self.HEFJEJHOJEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -239,11 +239,11 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.LENPIDMPECP = 0;
         self.FDCKFKFKHLO = 0;
-        self.NDCJJPGNFLN.clear();
         self.JKEMDJIAMHI.clear();
         self.energy_info = 0;
+        self.NDCJJPGNFLN.clear();
+        self.LENPIDMPECP = 0;
         self.HEFJEJHOJEA.clear();
         self.special_fields.clear();
     }
@@ -273,15 +273,15 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookSyncDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTarotBookSyncDataScNotify.proto\x1a\x11FLOICKMNMLL.proto\"\xce\x03\
-    \n\x19TarotBookSyncDataScNotify\x12\x20\n\x0bLENPIDMPECP\x18\x0c\x20\x01\
-    (\rR\x0bLENPIDMPECP\x12\x20\n\x0bFDCKFKFKHLO\x18\x0e\x20\x01(\rR\x0bFDCK\
-    FKFKHLO\x12M\n\x0bNDCJJPGNFLN\x18\x06\x20\x03(\x0b2+.TarotBookSyncDataSc\
-    Notify.NDCJJPGNFLNEntryR\x0bNDCJJPGNFLN\x12M\n\x0bJKEMDJIAMHI\x18\x08\
-    \x20\x03(\x0b2+.TarotBookSyncDataScNotify.JKEMDJIAMHIEntryR\x0bJKEMDJIAM\
-    HI\x12\x1f\n\x0benergy_info\x18\x03\x20\x01(\rR\nenergyInfo\x12.\n\x0bHE\
-    FJEJHOJEA\x18\x02\x20\x01(\x0b2\x0c.FLOICKMNMLLR\x0bHEFJEJHOJEA\x1a>\n\
-    \x10NDCJJPGNFLNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
-    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10JKEMDJIAMHI\
+    \n\x19TarotBookSyncDataScNotify\x12\x20\n\x0bFDCKFKFKHLO\x18\x03\x20\x01\
+    (\rR\x0bFDCKFKFKHLO\x12M\n\x0bJKEMDJIAMHI\x18\x0f\x20\x03(\x0b2+.TarotBo\
+    okSyncDataScNotify.JKEMDJIAMHIEntryR\x0bJKEMDJIAMHI\x12\x1f\n\x0benergy_\
+    info\x18\x04\x20\x01(\rR\nenergyInfo\x12M\n\x0bNDCJJPGNFLN\x18\x0c\x20\
+    \x03(\x0b2+.TarotBookSyncDataScNotify.NDCJJPGNFLNEntryR\x0bNDCJJPGNFLN\
+    \x12\x20\n\x0bLENPIDMPECP\x18\x07\x20\x01(\rR\x0bLENPIDMPECP\x12.\n\x0bH\
+    EFJEJHOJEA\x18\x08\x20\x01(\x0b2\x0c.FLOICKMNMLLR\x0bHEFJEJHOJEA\x1a>\n\
+    \x10JKEMDJIAMHIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
+    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10NDCJJPGNFLN\
     Entry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
     \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

@@ -79,7 +79,7 @@ impl ::protobuf::Message for HMKHILLIPOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.DLDPMOJFAMC = is.read_uint32()?;
                 },
                 88 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HMKHILLIPOH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DLDPMOJFAMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DLDPMOJFAMC);
+            my_size += ::protobuf::rt::uint32_size(2, self.DLDPMOJFAMC);
         }
         if self.DOAHMGAOLOJ != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.DOAHMGAOLOJ);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for HMKHILLIPOH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DLDPMOJFAMC != 0 {
-            os.write_uint32(9, self.DLDPMOJFAMC)?;
+            os.write_uint32(2, self.DLDPMOJFAMC)?;
         }
         if self.DOAHMGAOLOJ != 0 {
             os.write_uint32(11, self.DOAHMGAOLOJ)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for HMKHILLIPOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HMKHILLIPOH.proto\"Q\n\x0bHMKHILLIPOH\x12\x20\n\x0bDLDPMOJFAMC\x18\
-    \t\x20\x01(\rR\x0bDLDPMOJFAMC\x12\x20\n\x0bDOAHMGAOLOJ\x18\x0b\x20\x01(\
-    \rR\x0bDOAHMGAOLOJb\x06proto3\
+    \x02\x20\x01(\rR\x0bDLDPMOJFAMC\x12\x20\n\x0bDOAHMGAOLOJ\x18\x0b\x20\x01\
+    (\rR\x0bDOAHMGAOLOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

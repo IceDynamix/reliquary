@@ -86,13 +86,13 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.CDIAJKEJDHA = is.read_bool()?;
                 },
                 24 => {
                     self.BHPCNNFOKEE = is.read_uint32()?;
                 },
-                80 => {
+                16 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
             my_size += ::protobuf::rt::uint32_size(3, self.BHPCNNFOKEE);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.progress);
+            my_size += ::protobuf::rt::uint32_size(2, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CDIAJKEJDHA != false {
-            os.write_bool(6, self.CDIAJKEJDHA)?;
+            os.write_bool(13, self.CDIAJKEJDHA)?;
         }
         if self.BHPCNNFOKEE != 0 {
             os.write_uint32(3, self.BHPCNNFOKEE)?;
         }
         if self.progress != 0 {
-            os.write_uint32(10, self.progress)?;
+            os.write_uint32(2, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for KLAAHJHNLCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KLAAHJHNLCJ.proto\"m\n\x0bKLAAHJHNLCJ\x12\x20\n\x0bCDIAJKEJDHA\x18\
-    \x06\x20\x01(\x08R\x0bCDIAJKEJDHA\x12\x20\n\x0bBHPCNNFOKEE\x18\x03\x20\
-    \x01(\rR\x0bBHPCNNFOKEE\x12\x1a\n\x08progress\x18\n\x20\x01(\rR\x08progr\
-    essb\x06proto3\
+    \r\x20\x01(\x08R\x0bCDIAJKEJDHA\x12\x20\n\x0bBHPCNNFOKEE\x18\x03\x20\x01\
+    (\rR\x0bBHPCNNFOKEE\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progres\
+    sb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

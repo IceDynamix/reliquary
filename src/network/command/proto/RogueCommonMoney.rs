@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonMoney {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonMoney.display_type)
-    pub display_type: u32,
     // @@protoc_insertion_point(field:RogueCommonMoney.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:RogueCommonMoney.display_type)
+    pub display_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonMoney.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueCommonMoney {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_type",
-            |m: &RogueCommonMoney| { &m.display_type },
-            |m: &mut RogueCommonMoney| { &mut m.display_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
             |m: &RogueCommonMoney| { &m.num },
             |m: &mut RogueCommonMoney| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "display_type",
+            |m: &RogueCommonMoney| { &m.display_type },
+            |m: &mut RogueCommonMoney| { &mut m.display_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonMoney>(
             "RogueCommonMoney",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueCommonMoney {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.display_type = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.num = is.read_uint32()?;
+                },
+                64 => {
+                    self.display_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueCommonMoney {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.display_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.display_type);
-        }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.num);
+            my_size += ::protobuf::rt::uint32_size(4, self.num);
+        }
+        if self.display_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.display_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueCommonMoney {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.display_type != 0 {
-            os.write_uint32(3, self.display_type)?;
-        }
         if self.num != 0 {
-            os.write_uint32(14, self.num)?;
+            os.write_uint32(4, self.num)?;
+        }
+        if self.display_type != 0 {
+            os.write_uint32(8, self.display_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueCommonMoney {
     }
 
     fn clear(&mut self) {
-        self.display_type = 0;
         self.num = 0;
+        self.display_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonMoney {
         static instance: RogueCommonMoney = RogueCommonMoney {
-            display_type: 0,
             num: 0,
+            display_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonMoney {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RogueCommonMoney.proto\"G\n\x10RogueCommonMoney\x12!\n\x0cdisplay_\
-    type\x18\x03\x20\x01(\rR\x0bdisplayType\x12\x10\n\x03num\x18\x0e\x20\x01\
-    (\rR\x03numb\x06proto3\
+    \n\x16RogueCommonMoney.proto\"G\n\x10RogueCommonMoney\x12\x10\n\x03num\
+    \x18\x04\x20\x01(\rR\x03num\x12!\n\x0cdisplay_type\x18\x08\x20\x01(\rR\
+    \x0bdisplayTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

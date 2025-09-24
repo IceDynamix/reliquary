@@ -79,10 +79,10 @@ impl ::protobuf::Message for NALPJMLJPNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.get_item_list = is.read_uint32()?;
                 },
-                32 => {
+                120 => {
                     self.OEFHMBJBLGC = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NALPJMLJPNP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.get_item_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.get_item_list);
+            my_size += ::protobuf::rt::uint32_size(11, self.get_item_list);
         }
         if self.OEFHMBJBLGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OEFHMBJBLGC);
+            my_size += ::protobuf::rt::uint32_size(15, self.OEFHMBJBLGC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NALPJMLJPNP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.get_item_list != 0 {
-            os.write_uint32(5, self.get_item_list)?;
+            os.write_uint32(11, self.get_item_list)?;
         }
         if self.OEFHMBJBLGC != 0 {
-            os.write_uint32(4, self.OEFHMBJBLGC)?;
+            os.write_uint32(15, self.OEFHMBJBLGC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NALPJMLJPNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NALPJMLJPNP.proto\"S\n\x0bNALPJMLJPNP\x12\"\n\rget_item_list\x18\
-    \x05\x20\x01(\rR\x0bgetItemList\x12\x20\n\x0bOEFHMBJBLGC\x18\x04\x20\x01\
+    \x0b\x20\x01(\rR\x0bgetItemList\x12\x20\n\x0bOEFHMBJBLGC\x18\x0f\x20\x01\
     (\rR\x0bOEFHMBJBLGCb\x06proto3\
 ";
 

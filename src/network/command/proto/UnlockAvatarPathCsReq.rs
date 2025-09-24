@@ -72,7 +72,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.avatar_id = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(10, self.avatar_id.value());
+            my_size += ::protobuf::rt::int32_size(8, self.avatar_id.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for UnlockAvatarPathCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for UnlockAvatarPathCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUnlockAvatarPathCsReq.proto\x1a\x19MultiPathAvatarType.proto\"J\n\
-    \x15UnlockAvatarPathCsReq\x121\n\tavatar_id\x18\n\x20\x01(\x0e2\x14.Mult\
-    iPathAvatarTypeR\x08avatarIdb\x06proto3\
+    \x15UnlockAvatarPathCsReq\x121\n\tavatar_id\x18\x08\x20\x01(\x0e2\x14.Mu\
+    ltiPathAvatarTypeR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

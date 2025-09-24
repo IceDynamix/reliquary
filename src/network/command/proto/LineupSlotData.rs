@@ -86,10 +86,10 @@ impl ::protobuf::Message for LineupSlotData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                120 => {
                     self.id = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 32 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for LineupSlotData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.id);
+            my_size += ::protobuf::rt::uint32_size(15, self.id);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.avatar_type.value());
         }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.slot);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for LineupSlotData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(10, self.id)?;
+            os.write_uint32(15, self.id)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.slot != 0 {
             os.write_uint32(4, self.slot)?;
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LineupSlotData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LineupSlotData.proto\x1a\x10AvatarType.proto\"b\n\x0eLineupSlotDat\
-    a\x12\x0e\n\x02id\x18\n\x20\x01(\rR\x02id\x12,\n\x0bavatar_type\x18\x07\
-    \x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x12\n\x04slot\x18\x04\x20\
-    \x01(\rR\x04slotb\x06proto3\
+    a\x12\x0e\n\x02id\x18\x0f\x20\x01(\rR\x02id\x12,\n\x0bavatar_type\x18\
+    \x08\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x12\n\x04slot\x18\x04\
+    \x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournFinishInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournFinishInfo.CJCOJAMLEEL)
-    pub CJCOJAMLEEL: ::protobuf::MessageField<super::NKPKIAAMODG::NKPKIAAMODG>,
-    // @@protoc_insertion_point(field:RogueTournFinishInfo.GCGLNKFDKKN)
-    pub GCGLNKFDKKN: ::protobuf::MessageField<super::NNIJCDKHPKL::NNIJCDKHPKL>,
-    // @@protoc_insertion_point(field:RogueTournFinishInfo.rogue_lineup_info)
-    pub rogue_lineup_info: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:RogueTournFinishInfo.PFOEPFPHFNJ)
-    pub PFOEPFPHFNJ: ::protobuf::MessageField<super::FBHNFJCNHML::FBHNFJCNHML>,
     // @@protoc_insertion_point(field:RogueTournFinishInfo.KGCIAIAFIBE)
     pub KGCIAIAFIBE: ::protobuf::MessageField<super::GPNJMEHNDMN::GPNJMEHNDMN>,
+    // @@protoc_insertion_point(field:RogueTournFinishInfo.CJCOJAMLEEL)
+    pub CJCOJAMLEEL: ::protobuf::MessageField<super::NKPKIAAMODG::NKPKIAAMODG>,
+    // @@protoc_insertion_point(field:RogueTournFinishInfo.PFOEPFPHFNJ)
+    pub PFOEPFPHFNJ: ::protobuf::MessageField<super::FBHNFJCNHML::FBHNFJCNHML>,
     // @@protoc_insertion_point(field:RogueTournFinishInfo.CLKHPONDDDO)
     pub CLKHPONDDDO: ::protobuf::MessageField<super::KCLCHJMNPGL::KCLCHJMNPGL>,
+    // @@protoc_insertion_point(field:RogueTournFinishInfo.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:RogueTournFinishInfo.GCGLNKFDKKN)
+    pub GCGLNKFDKKN: ::protobuf::MessageField<super::NNIJCDKHPKL::NNIJCDKHPKL>,
     // @@protoc_insertion_point(field:RogueTournFinishInfo.rogue_tourn_cur_info)
     pub rogue_tourn_cur_info: ::protobuf::MessageField<super::RogueTournCurInfo::RogueTournCurInfo>,
     // special fields
@@ -61,35 +61,35 @@ impl RogueTournFinishInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPNJMEHNDMN::GPNJMEHNDMN>(
+            "KGCIAIAFIBE",
+            |m: &RogueTournFinishInfo| { &m.KGCIAIAFIBE },
+            |m: &mut RogueTournFinishInfo| { &mut m.KGCIAIAFIBE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKPKIAAMODG::NKPKIAAMODG>(
             "CJCOJAMLEEL",
             |m: &RogueTournFinishInfo| { &m.CJCOJAMLEEL },
             |m: &mut RogueTournFinishInfo| { &mut m.CJCOJAMLEEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNIJCDKHPKL::NNIJCDKHPKL>(
-            "GCGLNKFDKKN",
-            |m: &RogueTournFinishInfo| { &m.GCGLNKFDKKN },
-            |m: &mut RogueTournFinishInfo| { &mut m.GCGLNKFDKKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "rogue_lineup_info",
-            |m: &RogueTournFinishInfo| { &m.rogue_lineup_info },
-            |m: &mut RogueTournFinishInfo| { &mut m.rogue_lineup_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBHNFJCNHML::FBHNFJCNHML>(
             "PFOEPFPHFNJ",
             |m: &RogueTournFinishInfo| { &m.PFOEPFPHFNJ },
             |m: &mut RogueTournFinishInfo| { &mut m.PFOEPFPHFNJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPNJMEHNDMN::GPNJMEHNDMN>(
-            "KGCIAIAFIBE",
-            |m: &RogueTournFinishInfo| { &m.KGCIAIAFIBE },
-            |m: &mut RogueTournFinishInfo| { &mut m.KGCIAIAFIBE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCLCHJMNPGL::KCLCHJMNPGL>(
             "CLKHPONDDDO",
             |m: &RogueTournFinishInfo| { &m.CLKHPONDDDO },
             |m: &mut RogueTournFinishInfo| { &mut m.CLKHPONDDDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "rogue_lineup_info",
+            |m: &RogueTournFinishInfo| { &m.rogue_lineup_info },
+            |m: &mut RogueTournFinishInfo| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNIJCDKHPKL::NNIJCDKHPKL>(
+            "GCGLNKFDKKN",
+            |m: &RogueTournFinishInfo| { &m.GCGLNKFDKKN },
+            |m: &mut RogueTournFinishInfo| { &mut m.GCGLNKFDKKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurInfo::RogueTournCurInfo>(
             "rogue_tourn_cur_info",
@@ -114,25 +114,25 @@ impl ::protobuf::Message for RogueTournFinishInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGCIAIAFIBE)?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CJCOJAMLEEL)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCGLNKFDKKN)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFOEPFPHFNJ)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLKHPONDDDO)?;
                 },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFOEPFPHFNJ)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCGLNKFDKKN)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGCIAIAFIBE)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLKHPONDDDO)?;
-                },
-                82 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_info)?;
                 },
                 tag => {
@@ -147,15 +147,11 @@ impl ::protobuf::Message for RogueTournFinishInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.CJCOJAMLEEL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue_lineup_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -163,11 +159,15 @@ impl ::protobuf::Message for RogueTournFinishInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
+        if let Some(v) = self.CLKHPONDDDO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CLKHPONDDDO.as_ref() {
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -181,26 +181,26 @@ impl ::protobuf::Message for RogueTournFinishInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CJCOJAMLEEL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.CJCOJAMLEEL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.PFOEPFPHFNJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.CLKHPONDDDO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.rogue_lineup_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.PFOEPFPHFNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if let Some(v) = self.CLKHPONDDDO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -219,24 +219,24 @@ impl ::protobuf::Message for RogueTournFinishInfo {
     }
 
     fn clear(&mut self) {
-        self.CJCOJAMLEEL.clear();
-        self.GCGLNKFDKKN.clear();
-        self.rogue_lineup_info.clear();
-        self.PFOEPFPHFNJ.clear();
         self.KGCIAIAFIBE.clear();
+        self.CJCOJAMLEEL.clear();
+        self.PFOEPFPHFNJ.clear();
         self.CLKHPONDDDO.clear();
+        self.rogue_lineup_info.clear();
+        self.GCGLNKFDKKN.clear();
         self.rogue_tourn_cur_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournFinishInfo {
         static instance: RogueTournFinishInfo = RogueTournFinishInfo {
-            CJCOJAMLEEL: ::protobuf::MessageField::none(),
-            GCGLNKFDKKN: ::protobuf::MessageField::none(),
-            rogue_lineup_info: ::protobuf::MessageField::none(),
-            PFOEPFPHFNJ: ::protobuf::MessageField::none(),
             KGCIAIAFIBE: ::protobuf::MessageField::none(),
+            CJCOJAMLEEL: ::protobuf::MessageField::none(),
+            PFOEPFPHFNJ: ::protobuf::MessageField::none(),
             CLKHPONDDDO: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            GCGLNKFDKKN: ::protobuf::MessageField::none(),
             rogue_tourn_cur_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -265,15 +265,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournFinishInfo.proto\x1a\x11FBHNFJCNHML.proto\x1a\x11GPNJMEH\
     NDMN.proto\x1a\x11KCLCHJMNPGL.proto\x1a\x10LineupInfo.proto\x1a\x11NKPKI\
     AAMODG.proto\x1a\x11NNIJCDKHPKL.proto\x1a\x17RogueTournCurInfo.proto\"\
-    \x84\x03\n\x14RogueTournFinishInfo\x12.\n\x0bCJCOJAMLEEL\x18\x03\x20\x01\
-    (\x0b2\x0c.NKPKIAAMODGR\x0bCJCOJAMLEEL\x12.\n\x0bGCGLNKFDKKN\x18\x05\x20\
-    \x01(\x0b2\x0c.NNIJCDKHPKLR\x0bGCGLNKFDKKN\x127\n\x11rogue_lineup_info\
-    \x18\x08\x20\x01(\x0b2\x0b.LineupInfoR\x0frogueLineupInfo\x12.\n\x0bPFOE\
-    PFPHFNJ\x18\t\x20\x01(\x0b2\x0c.FBHNFJCNHMLR\x0bPFOEPFPHFNJ\x12.\n\x0bKG\
-    CIAIAFIBE\x18\x0c\x20\x01(\x0b2\x0c.GPNJMEHNDMNR\x0bKGCIAIAFIBE\x12.\n\
-    \x0bCLKHPONDDDO\x18\x04\x20\x01(\x0b2\x0c.KCLCHJMNPGLR\x0bCLKHPONDDDO\
-    \x12C\n\x14rogue_tourn_cur_info\x18\n\x20\x01(\x0b2\x12.RogueTournCurInf\
-    oR\x11rogueTournCurInfob\x06proto3\
+    \x84\x03\n\x14RogueTournFinishInfo\x12.\n\x0bKGCIAIAFIBE\x18\n\x20\x01(\
+    \x0b2\x0c.GPNJMEHNDMNR\x0bKGCIAIAFIBE\x12.\n\x0bCJCOJAMLEEL\x18\x0c\x20\
+    \x01(\x0b2\x0c.NKPKIAAMODGR\x0bCJCOJAMLEEL\x12.\n\x0bPFOEPFPHFNJ\x18\x06\
+    \x20\x01(\x0b2\x0c.FBHNFJCNHMLR\x0bPFOEPFPHFNJ\x12.\n\x0bCLKHPONDDDO\x18\
+    \x03\x20\x01(\x0b2\x0c.KCLCHJMNPGLR\x0bCLKHPONDDDO\x127\n\x11rogue_lineu\
+    p_info\x18\x08\x20\x01(\x0b2\x0b.LineupInfoR\x0frogueLineupInfo\x12.\n\
+    \x0bGCGLNKFDKKN\x18\x01\x20\x01(\x0b2\x0c.NNIJCDKHPKLR\x0bGCGLNKFDKKN\
+    \x12C\n\x14rogue_tourn_cur_info\x18\x0e\x20\x01(\x0b2\x12.RogueTournCurI\
+    nfoR\x11rogueTournCurInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

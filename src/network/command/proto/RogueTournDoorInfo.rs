@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournDoorInfo {
     // message fields
+    // @@protoc_insertion_point(field:RogueTournDoorInfo.EIPNNEJNNKJ)
+    pub EIPNNEJNNKJ: u32,
     // @@protoc_insertion_point(field:RogueTournDoorInfo.rogue_door_next_room_type)
     pub rogue_door_next_room_type: u32,
     // @@protoc_insertion_point(field:RogueTournDoorInfo.enter_next_layer)
     pub enter_next_layer: bool,
-    // @@protoc_insertion_point(field:RogueTournDoorInfo.EIPNNEJNNKJ)
-    pub EIPNNEJNNKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournDoorInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl RogueTournDoorInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIPNNEJNNKJ",
+            |m: &RogueTournDoorInfo| { &m.EIPNNEJNNKJ },
+            |m: &mut RogueTournDoorInfo| { &mut m.EIPNNEJNNKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_door_next_room_type",
             |m: &RogueTournDoorInfo| { &m.rogue_door_next_room_type },
             |m: &mut RogueTournDoorInfo| { &mut m.rogue_door_next_room_type },
@@ -62,11 +67,6 @@ impl RogueTournDoorInfo {
             "enter_next_layer",
             |m: &RogueTournDoorInfo| { &m.enter_next_layer },
             |m: &mut RogueTournDoorInfo| { &mut m.enter_next_layer },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIPNNEJNNKJ",
-            |m: &RogueTournDoorInfo| { &m.EIPNNEJNNKJ },
-            |m: &mut RogueTournDoorInfo| { &mut m.EIPNNEJNNKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournDoorInfo>(
             "RogueTournDoorInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
+                    self.EIPNNEJNNKJ = is.read_uint32()?;
+                },
+                40 => {
                     self.rogue_door_next_room_type = is.read_uint32()?;
                 },
-                104 => {
+                16 => {
                     self.enter_next_layer = is.read_bool()?;
-                },
-                88 => {
-                    self.EIPNNEJNNKJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EIPNNEJNNKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.EIPNNEJNNKJ);
+        }
         if self.rogue_door_next_room_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.rogue_door_next_room_type);
+            my_size += ::protobuf::rt::uint32_size(5, self.rogue_door_next_room_type);
         }
         if self.enter_next_layer != false {
             my_size += 1 + 1;
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EIPNNEJNNKJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EIPNNEJNNKJ != 0 {
+            os.write_uint32(15, self.EIPNNEJNNKJ)?;
+        }
         if self.rogue_door_next_room_type != 0 {
-            os.write_uint32(14, self.rogue_door_next_room_type)?;
+            os.write_uint32(5, self.rogue_door_next_room_type)?;
         }
         if self.enter_next_layer != false {
-            os.write_bool(13, self.enter_next_layer)?;
-        }
-        if self.EIPNNEJNNKJ != 0 {
-            os.write_uint32(11, self.EIPNNEJNNKJ)?;
+            os.write_bool(2, self.enter_next_layer)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     }
 
     fn clear(&mut self) {
+        self.EIPNNEJNNKJ = 0;
         self.rogue_door_next_room_type = 0;
         self.enter_next_layer = false;
-        self.EIPNNEJNNKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournDoorInfo {
         static instance: RogueTournDoorInfo = RogueTournDoorInfo {
+            EIPNNEJNNKJ: 0,
             rogue_door_next_room_type: 0,
             enter_next_layer: false,
-            EIPNNEJNNKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournDoorInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RogueTournDoorInfo.proto\"\x9a\x01\n\x12RogueTournDoorInfo\x128\n\
-    \x19rogue_door_next_room_type\x18\x0e\x20\x01(\rR\x15rogueDoorNextRoomTy\
-    pe\x12(\n\x10enter_next_layer\x18\r\x20\x01(\x08R\x0eenterNextLayer\x12\
-    \x20\n\x0bEIPNNEJNNKJ\x18\x0b\x20\x01(\rR\x0bEIPNNEJNNKJb\x06proto3\
+    \n\x18RogueTournDoorInfo.proto\"\x9a\x01\n\x12RogueTournDoorInfo\x12\x20\
+    \n\x0bEIPNNEJNNKJ\x18\x0f\x20\x01(\rR\x0bEIPNNEJNNKJ\x128\n\x19rogue_doo\
+    r_next_room_type\x18\x05\x20\x01(\rR\x15rogueDoorNextRoomType\x12(\n\x10\
+    enter_next_layer\x18\x02\x20\x01(\x08R\x0eenterNextLayerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

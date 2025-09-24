@@ -72,7 +72,7 @@ impl ::protobuf::Message for NNJOLKJLPJG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                18 => {
                     self.miracle_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NNJOLKJLPJG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.miracle_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for NNJOLKJLPJG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NNJOLKJLPJG.proto\x1a\x11AHCLNMJPMIJ.proto\">\n\x0bNNJOLKJLPJG\x12\
-    /\n\x0cmiracle_list\x18\x0c\x20\x03(\x0b2\x0c.AHCLNMJPMIJR\x0bmiracleLis\
+    /\n\x0cmiracle_list\x18\x02\x20\x03(\x0b2\x0c.AHCLNMJPMIJR\x0bmiracleLis\
     tb\x06proto3\
 ";
 

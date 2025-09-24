@@ -79,10 +79,10 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.area_id = is.read_uint32()?;
                 },
-                114 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCJBMKJLFBA)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
         }
         if let Some(v) = self.KCJBMKJLFBA.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for CIKOHJNAGON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
+            os.write_uint32(13, self.area_id)?;
         }
         if let Some(v) = self.KCJBMKJLFBA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CIKOHJNAGON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIKOHJNAGON.proto\x1a\x15AreaDynamicInfo.proto\"Z\n\x0bCIKOHJNAGON\
-    \x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\x06areaId\x122\n\x0bKCJBMKJLFB\
-    A\x18\x0e\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bKCJBMKJLFBAb\x06proto3\
+    \x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06areaId\x122\n\x0bKCJBMKJLFBA\
+    \x18\x01\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bKCJBMKJLFBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for TutorialGuide {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.id = is.read_uint32()?;
                 },
-                120 => {
+                32 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TutorialGuide {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(3, self.id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
+            my_size += ::protobuf::rt::int32_size(4, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TutorialGuide {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(3, self.id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::TutorialStatus::TutorialStatus::TUTORIAL_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TutorialGuide {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13TutorialGuide.proto\x1a\x14TutorialStatus.proto\"H\n\rTutorialGuid\
-    e\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12'\n\x06status\x18\x0f\x20\
+    e\x12\x0e\n\x02id\x18\x03\x20\x01(\rR\x02id\x12'\n\x06status\x18\x04\x20\
     \x01(\x0e2\x0f.TutorialStatusR\x06statusb\x06proto3\
 ";
 

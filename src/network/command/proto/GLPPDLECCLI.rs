@@ -72,7 +72,7 @@ impl ::protobuf::Message for GLPPDLECCLI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                106 => {
                     self.game_formula_info.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GLPPDLECCLI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.game_formula_info {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GLPPDLECCLI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLPPDLECCLI.proto\x1a\x11IILHOAKJDNH.proto\"G\n\x0bGLPPDLECCLI\x12\
-    8\n\x11game_formula_info\x18\n\x20\x03(\x0b2\x0c.IILHOAKJDNHR\x0fgameFor\
+    8\n\x11game_formula_info\x18\r\x20\x03(\x0b2\x0c.IILHOAKJDNHR\x0fgameFor\
     mulaInfob\x06proto3\
 ";
 

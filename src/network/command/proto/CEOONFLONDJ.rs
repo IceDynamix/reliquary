@@ -79,7 +79,7 @@ impl ::protobuf::Message for CEOONFLONDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                56 => {
                     self.OMDDFKMAAPE = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CEOONFLONDJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OMDDFKMAAPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OMDDFKMAAPE);
+            my_size += ::protobuf::rt::uint32_size(7, self.OMDDFKMAAPE);
         }
         if self.is_win != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CEOONFLONDJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OMDDFKMAAPE != 0 {
-            os.write_uint32(11, self.OMDDFKMAAPE)?;
+            os.write_uint32(7, self.OMDDFKMAAPE)?;
         }
         if self.is_win != false {
             os.write_bool(6, self.is_win)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CEOONFLONDJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEOONFLONDJ.proto\"F\n\x0bCEOONFLONDJ\x12\x20\n\x0bOMDDFKMAAPE\x18\
-    \x0b\x20\x01(\rR\x0bOMDDFKMAAPE\x12\x15\n\x06is_win\x18\x06\x20\x01(\x08\
+    \x07\x20\x01(\rR\x0bOMDDFKMAAPE\x12\x15\n\x06is_win\x18\x06\x20\x01(\x08\
     R\x05isWinb\x06proto3\
 ";
 

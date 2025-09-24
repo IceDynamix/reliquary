@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EIKAIIDAEPP {
     // message fields
-    // @@protoc_insertion_point(field:EIKAIIDAEPP.BKMAMGAPEGH)
-    pub BKMAMGAPEGH: u32,
-    // @@protoc_insertion_point(field:EIKAIIDAEPP.HHJOCGOMECO)
-    pub HHJOCGOMECO: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
-    // @@protoc_insertion_point(field:EIKAIIDAEPP.HDCBEJDENLA)
-    pub HDCBEJDENLA: u32,
     // @@protoc_insertion_point(field:EIKAIIDAEPP.LNJIIHHPMED)
     pub LNJIIHHPMED: u32,
-    // @@protoc_insertion_point(field:EIKAIIDAEPP.DGJDMOCBBII)
-    pub DGJDMOCBBII: u32,
+    // @@protoc_insertion_point(field:EIKAIIDAEPP.HDCBEJDENLA)
+    pub HDCBEJDENLA: u32,
     // @@protoc_insertion_point(field:EIKAIIDAEPP.PJOLEMHLGNL)
     pub PJOLEMHLGNL: u32,
     // @@protoc_insertion_point(field:EIKAIIDAEPP.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:EIKAIIDAEPP.DGJDMOCBBII)
+    pub DGJDMOCBBII: u32,
+    // @@protoc_insertion_point(field:EIKAIIDAEPP.HHJOCGOMECO)
+    pub HHJOCGOMECO: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
+    // @@protoc_insertion_point(field:EIKAIIDAEPP.BKMAMGAPEGH)
+    pub BKMAMGAPEGH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EIKAIIDAEPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,29 +62,14 @@ impl EIKAIIDAEPP {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKMAMGAPEGH",
-            |m: &EIKAIIDAEPP| { &m.BKMAMGAPEGH },
-            |m: &mut EIKAIIDAEPP| { &mut m.BKMAMGAPEGH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "HHJOCGOMECO",
-            |m: &EIKAIIDAEPP| { &m.HHJOCGOMECO },
-            |m: &mut EIKAIIDAEPP| { &mut m.HHJOCGOMECO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDCBEJDENLA",
-            |m: &EIKAIIDAEPP| { &m.HDCBEJDENLA },
-            |m: &mut EIKAIIDAEPP| { &mut m.HDCBEJDENLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNJIIHHPMED",
             |m: &EIKAIIDAEPP| { &m.LNJIIHHPMED },
             |m: &mut EIKAIIDAEPP| { &mut m.LNJIIHHPMED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGJDMOCBBII",
-            |m: &EIKAIIDAEPP| { &m.DGJDMOCBBII },
-            |m: &mut EIKAIIDAEPP| { &mut m.DGJDMOCBBII },
+            "HDCBEJDENLA",
+            |m: &EIKAIIDAEPP| { &m.HDCBEJDENLA },
+            |m: &mut EIKAIIDAEPP| { &mut m.HDCBEJDENLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJOLEMHLGNL",
@@ -95,6 +80,21 @@ impl EIKAIIDAEPP {
             "uid",
             |m: &EIKAIIDAEPP| { &m.uid },
             |m: &mut EIKAIIDAEPP| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGJDMOCBBII",
+            |m: &EIKAIIDAEPP| { &m.DGJDMOCBBII },
+            |m: &mut EIKAIIDAEPP| { &mut m.DGJDMOCBBII },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
+            "HHJOCGOMECO",
+            |m: &EIKAIIDAEPP| { &m.HHJOCGOMECO },
+            |m: &mut EIKAIIDAEPP| { &mut m.HHJOCGOMECO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BKMAMGAPEGH",
+            |m: &EIKAIIDAEPP| { &m.BKMAMGAPEGH },
+            |m: &mut EIKAIIDAEPP| { &mut m.BKMAMGAPEGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EIKAIIDAEPP>(
             "EIKAIIDAEPP",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for EIKAIIDAEPP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BKMAMGAPEGH = is.read_uint32()?;
+                32 => {
+                    self.LNJIIHHPMED = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHJOCGOMECO)?;
-                },
-                88 => {
+                56 => {
                     self.HDCBEJDENLA = is.read_uint32()?;
                 },
                 80 => {
-                    self.LNJIIHHPMED = is.read_uint32()?;
-                },
-                64 => {
-                    self.DGJDMOCBBII = is.read_uint32()?;
-                },
-                104 => {
                     self.PJOLEMHLGNL = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.uid = is.read_uint32()?;
+                },
+                104 => {
+                    self.DGJDMOCBBII = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHJOCGOMECO)?;
+                },
+                72 => {
+                    self.BKMAMGAPEGH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for EIKAIIDAEPP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BKMAMGAPEGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BKMAMGAPEGH);
+        if self.LNJIIHHPMED != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LNJIIHHPMED);
+        }
+        if self.HDCBEJDENLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HDCBEJDENLA);
+        }
+        if self.PJOLEMHLGNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PJOLEMHLGNL);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
+        }
+        if self.DGJDMOCBBII != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DGJDMOCBBII);
         }
         if let Some(v) = self.HHJOCGOMECO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HDCBEJDENLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HDCBEJDENLA);
-        }
-        if self.LNJIIHHPMED != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LNJIIHHPMED);
-        }
-        if self.DGJDMOCBBII != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DGJDMOCBBII);
-        }
-        if self.PJOLEMHLGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PJOLEMHLGNL);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+        if self.BKMAMGAPEGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BKMAMGAPEGH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for EIKAIIDAEPP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BKMAMGAPEGH != 0 {
-            os.write_uint32(2, self.BKMAMGAPEGH)?;
-        }
-        if let Some(v) = self.HHJOCGOMECO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.LNJIIHHPMED != 0 {
+            os.write_uint32(4, self.LNJIIHHPMED)?;
         }
         if self.HDCBEJDENLA != 0 {
-            os.write_uint32(11, self.HDCBEJDENLA)?;
-        }
-        if self.LNJIIHHPMED != 0 {
-            os.write_uint32(10, self.LNJIIHHPMED)?;
-        }
-        if self.DGJDMOCBBII != 0 {
-            os.write_uint32(8, self.DGJDMOCBBII)?;
+            os.write_uint32(7, self.HDCBEJDENLA)?;
         }
         if self.PJOLEMHLGNL != 0 {
-            os.write_uint32(13, self.PJOLEMHLGNL)?;
+            os.write_uint32(10, self.PJOLEMHLGNL)?;
         }
         if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+            os.write_uint32(11, self.uid)?;
+        }
+        if self.DGJDMOCBBII != 0 {
+            os.write_uint32(13, self.DGJDMOCBBII)?;
+        }
+        if let Some(v) = self.HHJOCGOMECO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.BKMAMGAPEGH != 0 {
+            os.write_uint32(9, self.BKMAMGAPEGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for EIKAIIDAEPP {
     }
 
     fn clear(&mut self) {
-        self.BKMAMGAPEGH = 0;
-        self.HHJOCGOMECO.clear();
-        self.HDCBEJDENLA = 0;
         self.LNJIIHHPMED = 0;
-        self.DGJDMOCBBII = 0;
+        self.HDCBEJDENLA = 0;
         self.PJOLEMHLGNL = 0;
         self.uid = 0;
+        self.DGJDMOCBBII = 0;
+        self.HHJOCGOMECO.clear();
+        self.BKMAMGAPEGH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EIKAIIDAEPP {
         static instance: EIKAIIDAEPP = EIKAIIDAEPP {
-            BKMAMGAPEGH: 0,
-            HHJOCGOMECO: ::protobuf::MessageField::none(),
-            HDCBEJDENLA: 0,
             LNJIIHHPMED: 0,
-            DGJDMOCBBII: 0,
+            HDCBEJDENLA: 0,
             PJOLEMHLGNL: 0,
             uid: 0,
+            DGJDMOCBBII: 0,
+            HHJOCGOMECO: ::protobuf::MessageField::none(),
+            BKMAMGAPEGH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,12 @@ impl ::protobuf::reflect::ProtobufValue for EIKAIIDAEPP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIKAIIDAEPP.proto\x1a\x11IIKNGNHDMFI.proto\"\xf9\x01\n\x0bEIKAIIDA\
-    EPP\x12\x20\n\x0bBKMAMGAPEGH\x18\x02\x20\x01(\rR\x0bBKMAMGAPEGH\x12.\n\
-    \x0bHHJOCGOMECO\x18\x0e\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bHHJOCGOMECO\
-    \x12\x20\n\x0bHDCBEJDENLA\x18\x0b\x20\x01(\rR\x0bHDCBEJDENLA\x12\x20\n\
-    \x0bLNJIIHHPMED\x18\n\x20\x01(\rR\x0bLNJIIHHPMED\x12\x20\n\x0bDGJDMOCBBI\
-    I\x18\x08\x20\x01(\rR\x0bDGJDMOCBBII\x12\x20\n\x0bPJOLEMHLGNL\x18\r\x20\
-    \x01(\rR\x0bPJOLEMHLGNL\x12\x10\n\x03uid\x18\x0f\x20\x01(\rR\x03uidb\x06\
-    proto3\
+    EPP\x12\x20\n\x0bLNJIIHHPMED\x18\x04\x20\x01(\rR\x0bLNJIIHHPMED\x12\x20\
+    \n\x0bHDCBEJDENLA\x18\x07\x20\x01(\rR\x0bHDCBEJDENLA\x12\x20\n\x0bPJOLEM\
+    HLGNL\x18\n\x20\x01(\rR\x0bPJOLEMHLGNL\x12\x10\n\x03uid\x18\x0b\x20\x01(\
+    \rR\x03uid\x12\x20\n\x0bDGJDMOCBBII\x18\r\x20\x01(\rR\x0bDGJDMOCBBII\x12\
+    .\n\x0bHHJOCGOMECO\x18\x0f\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bHHJOCGOMECO\
+    \x12\x20\n\x0bBKMAMGAPEGH\x18\t\x20\x01(\rR\x0bBKMAMGAPEGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGetInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueGetInfo.rogue_area_info)
-    pub rogue_area_info: ::protobuf::MessageField<super::RogueAreaInfo::RogueAreaInfo>,
     // @@protoc_insertion_point(field:RogueGetInfo.rogue_aeon_info)
     pub rogue_aeon_info: ::protobuf::MessageField<super::RogueAeonInfo::RogueAeonInfo>,
-    // @@protoc_insertion_point(field:RogueGetInfo.rogue_score_reward_info)
-    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
-    // @@protoc_insertion_point(field:RogueGetInfo.rogue_season_info)
-    pub rogue_season_info: ::protobuf::MessageField<super::RogueSeasonInfo::RogueSeasonInfo>,
     // @@protoc_insertion_point(field:RogueGetInfo.rogue_virtual_item_info)
     pub rogue_virtual_item_info: ::protobuf::MessageField<super::RogueGetVirtualItemInfo::RogueGetVirtualItemInfo>,
+    // @@protoc_insertion_point(field:RogueGetInfo.rogue_score_reward_info)
+    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
+    // @@protoc_insertion_point(field:RogueGetInfo.rogue_area_info)
+    pub rogue_area_info: ::protobuf::MessageField<super::RogueAreaInfo::RogueAreaInfo>,
+    // @@protoc_insertion_point(field:RogueGetInfo.rogue_season_info)
+    pub rogue_season_info: ::protobuf::MessageField<super::RogueSeasonInfo::RogueSeasonInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl RogueGetInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueAreaInfo::RogueAreaInfo>(
-            "rogue_area_info",
-            |m: &RogueGetInfo| { &m.rogue_area_info },
-            |m: &mut RogueGetInfo| { &mut m.rogue_area_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueAeonInfo::RogueAeonInfo>(
             "rogue_aeon_info",
             |m: &RogueGetInfo| { &m.rogue_aeon_info },
             |m: &mut RogueGetInfo| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGetVirtualItemInfo::RogueGetVirtualItemInfo>(
+            "rogue_virtual_item_info",
+            |m: &RogueGetInfo| { &m.rogue_virtual_item_info },
+            |m: &mut RogueGetInfo| { &mut m.rogue_virtual_item_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
             "rogue_score_reward_info",
             |m: &RogueGetInfo| { &m.rogue_score_reward_info },
             |m: &mut RogueGetInfo| { &mut m.rogue_score_reward_info },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueAreaInfo::RogueAreaInfo>(
+            "rogue_area_info",
+            |m: &RogueGetInfo| { &m.rogue_area_info },
+            |m: &mut RogueGetInfo| { &mut m.rogue_area_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueSeasonInfo::RogueSeasonInfo>(
             "rogue_season_info",
             |m: &RogueGetInfo| { &m.rogue_season_info },
             |m: &mut RogueGetInfo| { &mut m.rogue_season_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueGetVirtualItemInfo::RogueGetVirtualItemInfo>(
-            "rogue_virtual_item_info",
-            |m: &RogueGetInfo| { &m.rogue_virtual_item_info },
-            |m: &mut RogueGetInfo| { &mut m.rogue_virtual_item_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGetInfo>(
             "RogueGetInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueGetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_area_info)?;
-                },
-                114 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_virtual_item_info)?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_season_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_virtual_item_info)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_area_info)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_season_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,11 +127,11 @@ impl ::protobuf::Message for RogueGetInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_area_info.as_ref() {
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -139,11 +139,11 @@ impl ::protobuf::Message for RogueGetInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_season_info.as_ref() {
+        if let Some(v) = self.rogue_area_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
+        if let Some(v) = self.rogue_season_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,20 +153,20 @@ impl ::protobuf::Message for RogueGetInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_area_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.rogue_season_info.as_ref() {
+        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.rogue_score_reward_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.rogue_virtual_item_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.rogue_area_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.rogue_season_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,21 +185,21 @@ impl ::protobuf::Message for RogueGetInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_area_info.clear();
         self.rogue_aeon_info.clear();
-        self.rogue_score_reward_info.clear();
-        self.rogue_season_info.clear();
         self.rogue_virtual_item_info.clear();
+        self.rogue_score_reward_info.clear();
+        self.rogue_area_info.clear();
+        self.rogue_season_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGetInfo {
         static instance: RogueGetInfo = RogueGetInfo {
-            rogue_area_info: ::protobuf::MessageField::none(),
             rogue_aeon_info: ::protobuf::MessageField::none(),
-            rogue_score_reward_info: ::protobuf::MessageField::none(),
-            rogue_season_info: ::protobuf::MessageField::none(),
             rogue_virtual_item_info: ::protobuf::MessageField::none(),
+            rogue_score_reward_info: ::protobuf::MessageField::none(),
+            rogue_area_info: ::protobuf::MessageField::none(),
+            rogue_season_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -227,13 +227,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12RogueGetInfo.proto\x1a\x13RogueAeonInfo.proto\x1a\x13RogueAreaInfo\
     .proto\x1a\x1dRogueGetVirtualItemInfo.proto\x1a\x1aRogueScoreRewardInfo.\
     proto\x1a\x15RogueSeasonInfo.proto\"\xdb\x02\n\x0cRogueGetInfo\x126\n\
-    \x0frogue_area_info\x18\r\x20\x01(\x0b2\x0e.RogueAreaInfoR\rrogueAreaInf\
-    o\x126\n\x0frogue_aeon_info\x18\x0e\x20\x01(\x0b2\x0e.RogueAeonInfoR\rro\
-    gueAeonInfo\x12L\n\x17rogue_score_reward_info\x18\n\x20\x01(\x0b2\x15.Ro\
-    gueScoreRewardInfoR\x14rogueScoreRewardInfo\x12<\n\x11rogue_season_info\
-    \x18\x07\x20\x01(\x0b2\x10.RogueSeasonInfoR\x0frogueSeasonInfo\x12O\n\
-    \x17rogue_virtual_item_info\x18\x06\x20\x01(\x0b2\x18.RogueGetVirtualIte\
-    mInfoR\x14rogueVirtualItemInfob\x06proto3\
+    \x0frogue_aeon_info\x18\n\x20\x01(\x0b2\x0e.RogueAeonInfoR\rrogueAeonInf\
+    o\x12O\n\x17rogue_virtual_item_info\x18\x0b\x20\x01(\x0b2\x18.RogueGetVi\
+    rtualItemInfoR\x14rogueVirtualItemInfo\x12L\n\x17rogue_score_reward_info\
+    \x18\x07\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x14rogueScoreRewardInfo\
+    \x126\n\x0frogue_area_info\x18\x0c\x20\x01(\x0b2\x0e.RogueAreaInfoR\rrog\
+    ueAreaInfo\x12<\n\x11rogue_season_info\x18\r\x20\x01(\x0b2\x10.RogueSeas\
+    onInfoR\x0frogueSeasonInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

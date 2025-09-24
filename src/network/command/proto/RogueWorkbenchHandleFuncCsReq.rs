@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                72 => {
                     self.func_id = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
-                82 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.workbench_content)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.func_id);
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.prop_entity_id);
         }
         if let Some(v) = self.workbench_content.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.func_id != 0 {
-            os.write_uint32(6, self.func_id)?;
+            os.write_uint32(9, self.func_id)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(7, self.prop_entity_id)?;
+            os.write_uint32(13, self.prop_entity_id)?;
         }
         if let Some(v) = self.workbench_content.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchHandleFuncCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueWorkbenchHandleFuncCsReq.proto\x1a\x1fRogueWorkbenchContentInfo.\
     proto\"\xa7\x01\n\x1dRogueWorkbenchHandleFuncCsReq\x12\x17\n\x07func_id\
-    \x18\x06\x20\x01(\rR\x06funcId\x12$\n\x0eprop_entity_id\x18\x07\x20\x01(\
-    \rR\x0cpropEntityId\x12G\n\x11workbench_content\x18\n\x20\x01(\x0b2\x1a.\
-    RogueWorkbenchContentInfoR\x10workbenchContentb\x06proto3\
+    \x18\t\x20\x01(\rR\x06funcId\x12$\n\x0eprop_entity_id\x18\r\x20\x01(\rR\
+    \x0cpropEntityId\x12G\n\x11workbench_content\x18\x07\x20\x01(\x0b2\x1a.R\
+    ogueWorkbenchContentInfoR\x10workbenchContentb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

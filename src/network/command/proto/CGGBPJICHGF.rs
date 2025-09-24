@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CGGBPJICHGF {
     // message fields
-    // @@protoc_insertion_point(field:CGGBPJICHGF.select_hint_id)
-    pub select_hint_id: u32,
     // @@protoc_insertion_point(field:CGGBPJICHGF.NCLAEHAIJJB)
     pub NCLAEHAIJJB: u32,
-    // @@protoc_insertion_point(field:CGGBPJICHGF.GMILNGGHEDC)
-    pub GMILNGGHEDC: u32,
     // @@protoc_insertion_point(field:CGGBPJICHGF.OFBMPOJPDOJ)
     pub OFBMPOJPDOJ: u32,
+    // @@protoc_insertion_point(field:CGGBPJICHGF.select_hint_id)
+    pub select_hint_id: u32,
+    // @@protoc_insertion_point(field:CGGBPJICHGF.GMILNGGHEDC)
+    pub GMILNGGHEDC: u32,
     // @@protoc_insertion_point(field:CGGBPJICHGF.GBOOALMIKOB)
     pub GBOOALMIKOB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CGGBPJICHGF.OBIEDGMEBDL)
@@ -60,24 +60,24 @@ impl CGGBPJICHGF {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_hint_id",
-            |m: &CGGBPJICHGF| { &m.select_hint_id },
-            |m: &mut CGGBPJICHGF| { &mut m.select_hint_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NCLAEHAIJJB",
             |m: &CGGBPJICHGF| { &m.NCLAEHAIJJB },
             |m: &mut CGGBPJICHGF| { &mut m.NCLAEHAIJJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMILNGGHEDC",
-            |m: &CGGBPJICHGF| { &m.GMILNGGHEDC },
-            |m: &mut CGGBPJICHGF| { &mut m.GMILNGGHEDC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFBMPOJPDOJ",
             |m: &CGGBPJICHGF| { &m.OFBMPOJPDOJ },
             |m: &mut CGGBPJICHGF| { &mut m.OFBMPOJPDOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "select_hint_id",
+            |m: &CGGBPJICHGF| { &m.select_hint_id },
+            |m: &mut CGGBPJICHGF| { &mut m.select_hint_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMILNGGHEDC",
+            |m: &CGGBPJICHGF| { &m.GMILNGGHEDC },
+            |m: &mut CGGBPJICHGF| { &mut m.GMILNGGHEDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GBOOALMIKOB",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for CGGBPJICHGF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.select_hint_id = is.read_uint32()?;
-                },
-                112 => {
+                96 => {
                     self.NCLAEHAIJJB = is.read_uint32()?;
                 },
-                72 => {
-                    self.GMILNGGHEDC = is.read_uint32()?;
-                },
-                64 => {
+                104 => {
                     self.OFBMPOJPDOJ = is.read_uint32()?;
                 },
-                58 => {
+                88 => {
+                    self.select_hint_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.GMILNGGHEDC = is.read_uint32()?;
+                },
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.GBOOALMIKOB)?;
                 },
-                56 => {
+                40 => {
                     self.GBOOALMIKOB.push(is.read_uint32()?);
                 },
-                16 => {
+                24 => {
                     self.OBIEDGMEBDL = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -140,21 +140,21 @@ impl ::protobuf::Message for CGGBPJICHGF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.select_hint_id);
-        }
         if self.NCLAEHAIJJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NCLAEHAIJJB);
-        }
-        if self.GMILNGGHEDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GMILNGGHEDC);
+            my_size += ::protobuf::rt::uint32_size(12, self.NCLAEHAIJJB);
         }
         if self.OFBMPOJPDOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OFBMPOJPDOJ);
+            my_size += ::protobuf::rt::uint32_size(13, self.OFBMPOJPDOJ);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GBOOALMIKOB);
+        if self.select_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.select_hint_id);
+        }
+        if self.GMILNGGHEDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.GMILNGGHEDC);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GBOOALMIKOB);
         if self.OBIEDGMEBDL != ::protobuf::EnumOrUnknown::new(super::NDKLJJIIMGM::NDKLJJIIMGM::kTitanBlessSelectNone) {
-            my_size += ::protobuf::rt::int32_size(2, self.OBIEDGMEBDL.value());
+            my_size += ::protobuf::rt::int32_size(3, self.OBIEDGMEBDL.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for CGGBPJICHGF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.select_hint_id != 0 {
-            os.write_uint32(1, self.select_hint_id)?;
-        }
         if self.NCLAEHAIJJB != 0 {
-            os.write_uint32(14, self.NCLAEHAIJJB)?;
-        }
-        if self.GMILNGGHEDC != 0 {
-            os.write_uint32(9, self.GMILNGGHEDC)?;
+            os.write_uint32(12, self.NCLAEHAIJJB)?;
         }
         if self.OFBMPOJPDOJ != 0 {
-            os.write_uint32(8, self.OFBMPOJPDOJ)?;
+            os.write_uint32(13, self.OFBMPOJPDOJ)?;
         }
-        os.write_repeated_packed_uint32(7, &self.GBOOALMIKOB)?;
+        if self.select_hint_id != 0 {
+            os.write_uint32(11, self.select_hint_id)?;
+        }
+        if self.GMILNGGHEDC != 0 {
+            os.write_uint32(8, self.GMILNGGHEDC)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.GBOOALMIKOB)?;
         if self.OBIEDGMEBDL != ::protobuf::EnumOrUnknown::new(super::NDKLJJIIMGM::NDKLJJIIMGM::kTitanBlessSelectNone) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.OBIEDGMEBDL))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.OBIEDGMEBDL))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,10 +195,10 @@ impl ::protobuf::Message for CGGBPJICHGF {
     }
 
     fn clear(&mut self) {
-        self.select_hint_id = 0;
         self.NCLAEHAIJJB = 0;
-        self.GMILNGGHEDC = 0;
         self.OFBMPOJPDOJ = 0;
+        self.select_hint_id = 0;
+        self.GMILNGGHEDC = 0;
         self.GBOOALMIKOB.clear();
         self.OBIEDGMEBDL = ::protobuf::EnumOrUnknown::new(super::NDKLJJIIMGM::NDKLJJIIMGM::kTitanBlessSelectNone);
         self.special_fields.clear();
@@ -206,10 +206,10 @@ impl ::protobuf::Message for CGGBPJICHGF {
 
     fn default_instance() -> &'static CGGBPJICHGF {
         static instance: CGGBPJICHGF = CGGBPJICHGF {
-            select_hint_id: 0,
             NCLAEHAIJJB: 0,
-            GMILNGGHEDC: 0,
             OFBMPOJPDOJ: 0,
+            select_hint_id: 0,
+            GMILNGGHEDC: 0,
             GBOOALMIKOB: ::std::vec::Vec::new(),
             OBIEDGMEBDL: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for CGGBPJICHGF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGGBPJICHGF.proto\x1a\x11NDKLJJIIMGM.proto\"\xeb\x01\n\x0bCGGBPJIC\
-    HGF\x12$\n\x0eselect_hint_id\x18\x01\x20\x01(\rR\x0cselectHintId\x12\x20\
-    \n\x0bNCLAEHAIJJB\x18\x0e\x20\x01(\rR\x0bNCLAEHAIJJB\x12\x20\n\x0bGMILNG\
-    GHEDC\x18\t\x20\x01(\rR\x0bGMILNGGHEDC\x12\x20\n\x0bOFBMPOJPDOJ\x18\x08\
-    \x20\x01(\rR\x0bOFBMPOJPDOJ\x12\x20\n\x0bGBOOALMIKOB\x18\x07\x20\x03(\rR\
-    \x0bGBOOALMIKOB\x12.\n\x0bOBIEDGMEBDL\x18\x02\x20\x01(\x0e2\x0c.NDKLJJII\
+    HGF\x12\x20\n\x0bNCLAEHAIJJB\x18\x0c\x20\x01(\rR\x0bNCLAEHAIJJB\x12\x20\
+    \n\x0bOFBMPOJPDOJ\x18\r\x20\x01(\rR\x0bOFBMPOJPDOJ\x12$\n\x0eselect_hint\
+    _id\x18\x0b\x20\x01(\rR\x0cselectHintId\x12\x20\n\x0bGMILNGGHEDC\x18\x08\
+    \x20\x01(\rR\x0bGMILNGGHEDC\x12\x20\n\x0bGBOOALMIKOB\x18\x05\x20\x03(\rR\
+    \x0bGBOOALMIKOB\x12.\n\x0bOBIEDGMEBDL\x18\x03\x20\x01(\x0e2\x0c.NDKLJJII\
     MGMR\x0bOBIEDGMEBDLb\x06proto3\
 ";
 

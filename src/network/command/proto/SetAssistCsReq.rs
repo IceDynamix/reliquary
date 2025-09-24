@@ -79,7 +79,7 @@ impl ::protobuf::Message for SetAssistCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                112 => {
                     self.uid = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetAssistCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.uid);
+            my_size += ::protobuf::rt::uint32_size(14, self.uid);
         }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SetAssistCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(11, self.uid)?;
+            os.write_uint32(14, self.uid)?;
         }
         if self.avatar_id != 0 {
             os.write_uint32(15, self.avatar_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetAssistCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetAssistCsReq.proto\"?\n\x0eSetAssistCsReq\x12\x10\n\x03uid\x18\
-    \x0b\x20\x01(\rR\x03uid\x12\x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\x08avat\
+    \x0e\x20\x01(\rR\x03uid\x12\x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\x08avat\
     arIdb\x06proto3\
 ";
 

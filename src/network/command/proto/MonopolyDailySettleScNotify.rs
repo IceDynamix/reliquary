@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJAOGAPDFHA)?;
                 },
-                88 => {
+                8 => {
                     self.KEKJCDMIDDL = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KEKJCDMIDDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KEKJCDMIDDL);
+            my_size += ::protobuf::rt::uint32_size(1, self.KEKJCDMIDDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MonopolyDailySettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LJAOGAPDFHA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.KEKJCDMIDDL != 0 {
-            os.write_uint32(11, self.KEKJCDMIDDL)?;
+            os.write_uint32(1, self.KEKJCDMIDDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyDailySettleScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MonopolyDailySettleScNotify.proto\x1a\x11AEDKPBFCKGO.proto\"o\n\x1bMo\
-    nopolyDailySettleScNotify\x12.\n\x0bLJAOGAPDFHA\x18\x01\x20\x01(\x0b2\
-    \x0c.AEDKPBFCKGOR\x0bLJAOGAPDFHA\x12\x20\n\x0bKEKJCDMIDDL\x18\x0b\x20\
-    \x01(\rR\x0bKEKJCDMIDDLb\x06proto3\
+    nopolyDailySettleScNotify\x12.\n\x0bLJAOGAPDFHA\x18\t\x20\x01(\x0b2\x0c.\
+    AEDKPBFCKGOR\x0bLJAOGAPDFHA\x12\x20\n\x0bKEKJCDMIDDL\x18\x01\x20\x01(\rR\
+    \x0bKEKJCDMIDDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

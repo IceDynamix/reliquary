@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorkbenchReforgeBuffFuncInfo {
     // message fields
+    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.can_free_reforge)
+    pub can_free_reforge: bool,
+    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.int_reforge_num_value)
+    pub int_reforge_num_value: i32,
+    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.free_reforge_num)
     pub free_reforge_num: u32,
     // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.uint_reforge_num_value)
     pub uint_reforge_num_value: u32,
-    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.cost_data)
-    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.int_reforge_num_value)
-    pub int_reforge_num_value: i32,
-    // @@protoc_insertion_point(field:WorkbenchReforgeBuffFuncInfo.can_free_reforge)
-    pub can_free_reforge: bool,
     // special fields
     // @@protoc_insertion_point(special_field:WorkbenchReforgeBuffFuncInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,21 @@ impl WorkbenchReforgeBuffFuncInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "can_free_reforge",
+            |m: &WorkbenchReforgeBuffFuncInfo| { &m.can_free_reforge },
+            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.can_free_reforge },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "int_reforge_num_value",
+            |m: &WorkbenchReforgeBuffFuncInfo| { &m.int_reforge_num_value },
+            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.int_reforge_num_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &WorkbenchReforgeBuffFuncInfo| { &m.cost_data },
+            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.cost_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "free_reforge_num",
             |m: &WorkbenchReforgeBuffFuncInfo| { &m.free_reforge_num },
             |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.free_reforge_num },
@@ -66,21 +81,6 @@ impl WorkbenchReforgeBuffFuncInfo {
             "uint_reforge_num_value",
             |m: &WorkbenchReforgeBuffFuncInfo| { &m.uint_reforge_num_value },
             |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.uint_reforge_num_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "cost_data",
-            |m: &WorkbenchReforgeBuffFuncInfo| { &m.cost_data },
-            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.cost_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "int_reforge_num_value",
-            |m: &WorkbenchReforgeBuffFuncInfo| { &m.int_reforge_num_value },
-            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.int_reforge_num_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "can_free_reforge",
-            |m: &WorkbenchReforgeBuffFuncInfo| { &m.can_free_reforge },
-            |m: &mut WorkbenchReforgeBuffFuncInfo| { &mut m.can_free_reforge },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorkbenchReforgeBuffFuncInfo>(
             "WorkbenchReforgeBuffFuncInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for WorkbenchReforgeBuffFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.free_reforge_num = is.read_uint32()?;
+                64 => {
+                    self.can_free_reforge = is.read_bool()?;
                 },
-                32 => {
-                    self.uint_reforge_num_value = is.read_uint32()?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
-                },
-                8 => {
+                112 => {
                     self.int_reforge_num_value = is.read_int32()?;
                 },
-                56 => {
-                    self.can_free_reforge = is.read_bool()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
+                },
+                16 => {
+                    self.free_reforge_num = is.read_uint32()?;
+                },
+                80 => {
+                    self.uint_reforge_num_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for WorkbenchReforgeBuffFuncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.free_reforge_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.free_reforge_num);
+        if self.can_free_reforge != false {
+            my_size += 1 + 1;
         }
-        if self.uint_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uint_reforge_num_value);
+        if self.int_reforge_num_value != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.int_reforge_num_value);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.int_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.int_reforge_num_value);
+        if self.free_reforge_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.free_reforge_num);
         }
-        if self.can_free_reforge != false {
-            my_size += 1 + 1;
+        if self.uint_reforge_num_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.uint_reforge_num_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for WorkbenchReforgeBuffFuncInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.free_reforge_num != 0 {
-            os.write_uint32(13, self.free_reforge_num)?;
-        }
-        if self.uint_reforge_num_value != 0 {
-            os.write_uint32(4, self.uint_reforge_num_value)?;
-        }
-        if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.can_free_reforge != false {
+            os.write_bool(8, self.can_free_reforge)?;
         }
         if self.int_reforge_num_value != 0 {
-            os.write_int32(1, self.int_reforge_num_value)?;
+            os.write_int32(14, self.int_reforge_num_value)?;
         }
-        if self.can_free_reforge != false {
-            os.write_bool(7, self.can_free_reforge)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.free_reforge_num != 0 {
+            os.write_uint32(2, self.free_reforge_num)?;
+        }
+        if self.uint_reforge_num_value != 0 {
+            os.write_uint32(10, self.uint_reforge_num_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for WorkbenchReforgeBuffFuncInfo {
     }
 
     fn clear(&mut self) {
+        self.can_free_reforge = false;
+        self.int_reforge_num_value = 0;
+        self.cost_data.clear();
         self.free_reforge_num = 0;
         self.uint_reforge_num_value = 0;
-        self.cost_data.clear();
-        self.int_reforge_num_value = 0;
-        self.can_free_reforge = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WorkbenchReforgeBuffFuncInfo {
         static instance: WorkbenchReforgeBuffFuncInfo = WorkbenchReforgeBuffFuncInfo {
+            can_free_reforge: false,
+            int_reforge_num_value: 0,
+            cost_data: ::protobuf::MessageField::none(),
             free_reforge_num: 0,
             uint_reforge_num_value: 0,
-            cost_data: ::protobuf::MessageField::none(),
-            int_reforge_num_value: 0,
-            can_free_reforge: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchReforgeBuffFuncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"WorkbenchReforgeBuffFuncInfo.proto\x1a\x12ItemCostData.proto\"\x86\
-    \x02\n\x1cWorkbenchReforgeBuffFuncInfo\x12(\n\x10free_reforge_num\x18\r\
-    \x20\x01(\rR\x0efreeReforgeNum\x123\n\x16uint_reforge_num_value\x18\x04\
-    \x20\x01(\rR\x13uintReforgeNumValue\x12*\n\tcost_data\x18\x02\x20\x01(\
-    \x0b2\r.ItemCostDataR\x08costData\x121\n\x15int_reforge_num_value\x18\
-    \x01\x20\x01(\x05R\x12intReforgeNumValue\x12(\n\x10can_free_reforge\x18\
-    \x07\x20\x01(\x08R\x0ecanFreeReforgeb\x06proto3\
+    \x02\n\x1cWorkbenchReforgeBuffFuncInfo\x12(\n\x10can_free_reforge\x18\
+    \x08\x20\x01(\x08R\x0ecanFreeReforge\x121\n\x15int_reforge_num_value\x18\
+    \x0e\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tcost_data\x18\x0b\x20\
+    \x01(\x0b2\r.ItemCostDataR\x08costData\x12(\n\x10free_reforge_num\x18\
+    \x02\x20\x01(\rR\x0efreeReforgeNum\x123\n\x16uint_reforge_num_value\x18\
+    \n\x20\x01(\rR\x13uintReforgeNumValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

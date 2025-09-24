@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPCNJMFIPNP {
     // message fields
-    // @@protoc_insertion_point(field:LPCNJMFIPNP.skill_type)
-    pub skill_type: ::protobuf::EnumOrUnknown<super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType>,
     // @@protoc_insertion_point(field:LPCNJMFIPNP.FLEJAGFJDKM)
     pub FLEJAGFJDKM: u32,
+    // @@protoc_insertion_point(field:LPCNJMFIPNP.skill_type)
+    pub skill_type: ::protobuf::EnumOrUnknown<super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType>,
     // @@protoc_insertion_point(field:LPCNJMFIPNP.skill_id)
     pub skill_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl LPCNJMFIPNP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skill_type",
-            |m: &LPCNJMFIPNP| { &m.skill_type },
-            |m: &mut LPCNJMFIPNP| { &mut m.skill_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FLEJAGFJDKM",
             |m: &LPCNJMFIPNP| { &m.FLEJAGFJDKM },
             |m: &mut LPCNJMFIPNP| { &mut m.FLEJAGFJDKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "skill_type",
+            |m: &LPCNJMFIPNP| { &m.skill_type },
+            |m: &mut LPCNJMFIPNP| { &mut m.skill_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LPCNJMFIPNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.skill_type = is.read_enum_or_unknown()?;
-                },
-                40 => {
+                56 => {
                     self.FLEJAGFJDKM = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
+                    self.skill_type = is.read_enum_or_unknown()?;
+                },
+                88 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LPCNJMFIPNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone) {
-            my_size += ::protobuf::rt::int32_size(9, self.skill_type.value());
-        }
         if self.FLEJAGFJDKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FLEJAGFJDKM);
+            my_size += ::protobuf::rt::uint32_size(7, self.FLEJAGFJDKM);
+        }
+        if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone) {
+            my_size += ::protobuf::rt::int32_size(4, self.skill_type.value());
         }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.skill_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LPCNJMFIPNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.skill_type))?;
-        }
         if self.FLEJAGFJDKM != 0 {
-            os.write_uint32(5, self.FLEJAGFJDKM)?;
+            os.write_uint32(7, self.FLEJAGFJDKM)?;
+        }
+        if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.skill_type))?;
         }
         if self.skill_id != 0 {
-            os.write_uint32(6, self.skill_id)?;
+            os.write_uint32(11, self.skill_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LPCNJMFIPNP {
     }
 
     fn clear(&mut self) {
-        self.skill_type = ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone);
         self.FLEJAGFJDKM = 0;
+        self.skill_type = ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::kMtSkillNone);
         self.skill_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPCNJMFIPNP {
         static instance: LPCNJMFIPNP = LPCNJMFIPNP {
-            skill_type: ::protobuf::EnumOrUnknown::from_i32(0),
             FLEJAGFJDKM: 0,
+            skill_type: ::protobuf::EnumOrUnknown::from_i32(0),
             skill_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for LPCNJMFIPNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPCNJMFIPNP.proto\x1a\x20TrainPartyMtSkillBriefType.proto\"\x86\
-    \x01\n\x0bLPCNJMFIPNP\x12:\n\nskill_type\x18\t\x20\x01(\x0e2\x1b.TrainPa\
-    rtyMtSkillBriefTypeR\tskillType\x12\x20\n\x0bFLEJAGFJDKM\x18\x05\x20\x01\
-    (\rR\x0bFLEJAGFJDKM\x12\x19\n\x08skill_id\x18\x06\x20\x01(\rR\x07skillId\
-    b\x06proto3\
+    \x01\n\x0bLPCNJMFIPNP\x12\x20\n\x0bFLEJAGFJDKM\x18\x07\x20\x01(\rR\x0bFL\
+    EJAGFJDKM\x12:\n\nskill_type\x18\x04\x20\x01(\x0e2\x1b.TrainPartyMtSkill\
+    BriefTypeR\tskillType\x12\x19\n\x08skill_id\x18\x0b\x20\x01(\rR\x07skill\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3SoloDataUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3SoloDataUpdateNotify.data)
-    pub data: ::protobuf::MessageField<super::IOIJEPGMJAF::IOIJEPGMJAF>,
     // @@protoc_insertion_point(field:FightMatch3SoloDataUpdateNotify.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::ABBDJBMIIBE::ABBDJBMIIBE>,
+    // @@protoc_insertion_point(field:FightMatch3SoloDataUpdateNotify.data)
+    pub data: ::protobuf::MessageField<super::IOIJEPGMJAF::IOIJEPGMJAF>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3SoloDataUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FightMatch3SoloDataUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IOIJEPGMJAF::IOIJEPGMJAF>(
-            "data",
-            |m: &FightMatch3SoloDataUpdateNotify| { &m.data },
-            |m: &mut FightMatch3SoloDataUpdateNotify| { &mut m.data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &FightMatch3SoloDataUpdateNotify| { &m.reason },
             |m: &mut FightMatch3SoloDataUpdateNotify| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IOIJEPGMJAF::IOIJEPGMJAF>(
+            "data",
+            |m: &FightMatch3SoloDataUpdateNotify| { &m.data },
+            |m: &mut FightMatch3SoloDataUpdateNotify| { &mut m.data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3SoloDataUpdateNotify>(
             "FightMatch3SoloDataUpdateNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FightMatch3SoloDataUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
-                },
-                32 => {
+                112 => {
                     self.reason = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for FightMatch3SoloDataUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::ABBDJBMIIBE::ABBDJBMIIBE::MATCH3_SOLO_UPDATE_REASON_DEFAULT) {
+            my_size += ::protobuf::rt::int32_size(14, self.reason.value());
+        }
         if let Some(v) = self.data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::ABBDJBMIIBE::ABBDJBMIIBE::MATCH3_SOLO_UPDATE_REASON_DEFAULT) {
-            my_size += ::protobuf::rt::int32_size(4, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FightMatch3SoloDataUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::ABBDJBMIIBE::ABBDJBMIIBE::MATCH3_SOLO_UPDATE_REASON_DEFAULT) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if let Some(v) = self.data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FightMatch3SoloDataUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.data.clear();
         self.reason = ::protobuf::EnumOrUnknown::new(super::ABBDJBMIIBE::ABBDJBMIIBE::MATCH3_SOLO_UPDATE_REASON_DEFAULT);
+        self.data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3SoloDataUpdateNotify {
         static instance: FightMatch3SoloDataUpdateNotify = FightMatch3SoloDataUpdateNotify {
-            data: ::protobuf::MessageField::none(),
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SoloDataUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%FightMatch3SoloDataUpdateNotify.proto\x1a\x11ABBDJBMIIBE.proto\x1a\
-    \x11IOIJEPGMJAF.proto\"i\n\x1fFightMatch3SoloDataUpdateNotify\x12\x20\n\
-    \x04data\x18\r\x20\x01(\x0b2\x0c.IOIJEPGMJAFR\x04data\x12$\n\x06reason\
-    \x18\x04\x20\x01(\x0e2\x0c.ABBDJBMIIBER\x06reasonb\x06proto3\
+    \x11IOIJEPGMJAF.proto\"i\n\x1fFightMatch3SoloDataUpdateNotify\x12$\n\x06\
+    reason\x18\x0e\x20\x01(\x0e2\x0c.ABBDJBMIIBER\x06reason\x12\x20\n\x04dat\
+    a\x18\x0b\x20\x01(\x0b2\x0c.IOIJEPGMJAFR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

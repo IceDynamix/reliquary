@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicUnitSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.FGDJAMHOKIF)
-    pub FGDJAMHOKIF: ::protobuf::MessageField<super::RogueMagicGameUnit::RogueMagicGameUnit>,
     // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.select_magic_units)
     pub select_magic_units: ::std::vec::Vec<super::RogueMagicGameUnit::RogueMagicGameUnit>,
+    // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.FGDJAMHOKIF)
+    pub FGDJAMHOKIF: ::protobuf::MessageField<super::RogueMagicGameUnit::RogueMagicGameUnit>,
+    // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.first_buff_type_list)
+    pub first_buff_type_list: u32,
     // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.select_hint_id)
     pub select_hint_id: u32,
     // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.source_type)
     pub source_type: u32,
-    // @@protoc_insertion_point(field:RogueMagicUnitSelectInfo.first_buff_type_list)
-    pub first_buff_type_list: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicUnitSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,20 @@ impl RogueMagicUnitSelectInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "select_magic_units",
+            |m: &RogueMagicUnitSelectInfo| { &m.select_magic_units },
+            |m: &mut RogueMagicUnitSelectInfo| { &mut m.select_magic_units },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameUnit::RogueMagicGameUnit>(
             "FGDJAMHOKIF",
             |m: &RogueMagicUnitSelectInfo| { &m.FGDJAMHOKIF },
             |m: &mut RogueMagicUnitSelectInfo| { &mut m.FGDJAMHOKIF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "select_magic_units",
-            |m: &RogueMagicUnitSelectInfo| { &m.select_magic_units },
-            |m: &mut RogueMagicUnitSelectInfo| { &mut m.select_magic_units },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "first_buff_type_list",
+            |m: &RogueMagicUnitSelectInfo| { &m.first_buff_type_list },
+            |m: &mut RogueMagicUnitSelectInfo| { &mut m.first_buff_type_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "select_hint_id",
@@ -76,11 +81,6 @@ impl RogueMagicUnitSelectInfo {
             "source_type",
             |m: &RogueMagicUnitSelectInfo| { &m.source_type },
             |m: &mut RogueMagicUnitSelectInfo| { &mut m.source_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "first_buff_type_list",
-            |m: &RogueMagicUnitSelectInfo| { &m.first_buff_type_list },
-            |m: &mut RogueMagicUnitSelectInfo| { &mut m.first_buff_type_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicUnitSelectInfo>(
             "RogueMagicUnitSelectInfo",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for RogueMagicUnitSelectInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGDJAMHOKIF)?;
-                },
-                114 => {
                     self.select_magic_units.push(is.read_message()?);
                 },
-                24 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGDJAMHOKIF)?;
+                },
+                112 => {
+                    self.first_buff_type_list = is.read_uint32()?;
+                },
+                48 => {
                     self.select_hint_id = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
                     self.source_type = is.read_uint32()?;
-                },
-                64 => {
-                    self.first_buff_type_list = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for RogueMagicUnitSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FGDJAMHOKIF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.select_magic_units {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.select_hint_id);
-        }
-        if self.source_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.source_type);
+        if let Some(v) = self.FGDJAMHOKIF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.first_buff_type_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.first_buff_type_list);
+            my_size += ::protobuf::rt::uint32_size(14, self.first_buff_type_list);
+        }
+        if self.select_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.select_hint_id);
+        }
+        if self.source_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.source_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for RogueMagicUnitSelectInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FGDJAMHOKIF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         for v in &self.select_magic_units {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.select_hint_id != 0 {
-            os.write_uint32(3, self.select_hint_id)?;
-        }
-        if self.source_type != 0 {
-            os.write_uint32(7, self.source_type)?;
+        if let Some(v) = self.FGDJAMHOKIF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.first_buff_type_list != 0 {
-            os.write_uint32(8, self.first_buff_type_list)?;
+            os.write_uint32(14, self.first_buff_type_list)?;
+        }
+        if self.select_hint_id != 0 {
+            os.write_uint32(6, self.select_hint_id)?;
+        }
+        if self.source_type != 0 {
+            os.write_uint32(2, self.source_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for RogueMagicUnitSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.FGDJAMHOKIF.clear();
         self.select_magic_units.clear();
+        self.FGDJAMHOKIF.clear();
+        self.first_buff_type_list = 0;
         self.select_hint_id = 0;
         self.source_type = 0;
-        self.first_buff_type_list = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicUnitSelectInfo {
         static instance: RogueMagicUnitSelectInfo = RogueMagicUnitSelectInfo {
-            FGDJAMHOKIF: ::protobuf::MessageField::none(),
             select_magic_units: ::std::vec::Vec::new(),
+            FGDJAMHOKIF: ::protobuf::MessageField::none(),
+            first_buff_type_list: 0,
             select_hint_id: 0,
             source_type: 0,
-            first_buff_type_list: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicUnitSelectInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueMagicUnitSelectInfo.proto\x1a\x18RogueMagicGameUnit.proto\"\
-    \x8c\x02\n\x18RogueMagicUnitSelectInfo\x125\n\x0bFGDJAMHOKIF\x18\x01\x20\
-    \x01(\x0b2\x13.RogueMagicGameUnitR\x0bFGDJAMHOKIF\x12A\n\x12select_magic\
-    _units\x18\x0e\x20\x03(\x0b2\x13.RogueMagicGameUnitR\x10selectMagicUnits\
-    \x12$\n\x0eselect_hint_id\x18\x03\x20\x01(\rR\x0cselectHintId\x12\x1f\n\
-    \x0bsource_type\x18\x07\x20\x01(\rR\nsourceType\x12/\n\x14first_buff_typ\
-    e_list\x18\x08\x20\x01(\rR\x11firstBuffTypeListb\x06proto3\
+    \x8c\x02\n\x18RogueMagicUnitSelectInfo\x12A\n\x12select_magic_units\x18\
+    \x01\x20\x03(\x0b2\x13.RogueMagicGameUnitR\x10selectMagicUnits\x125\n\
+    \x0bFGDJAMHOKIF\x18\x08\x20\x01(\x0b2\x13.RogueMagicGameUnitR\x0bFGDJAMH\
+    OKIF\x12/\n\x14first_buff_type_list\x18\x0e\x20\x01(\rR\x11firstBuffType\
+    List\x12$\n\x0eselect_hint_id\x18\x06\x20\x01(\rR\x0cselectHintId\x12\
+    \x1f\n\x0bsource_type\x18\x02\x20\x01(\rR\nsourceTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

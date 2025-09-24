@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeKilledPunkLordMonsterScoreScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.JEAHDCGKBBB)
-    pub JEAHDCGKBBB: ::std::vec::Vec<super::PunkLordMonsterKey::PunkLordMonsterKey>,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.JEAHDCGKBBB)
+    pub JEAHDCGKBBB: ::std::vec::Vec<super::PunkLordMonsterKey::PunkLordMonsterKey>,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.KFEJGFNONIP)
     pub KFEJGFNONIP: bool,
     // @@protoc_insertion_point(field:TakeKilledPunkLordMonsterScoreScRsp.score_id)
@@ -55,15 +55,15 @@ impl TakeKilledPunkLordMonsterScoreScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JEAHDCGKBBB",
-            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.JEAHDCGKBBB },
-            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.JEAHDCGKBBB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.retcode },
             |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JEAHDCGKBBB",
+            |m: &TakeKilledPunkLordMonsterScoreScRsp| { &m.JEAHDCGKBBB },
+            |m: &mut TakeKilledPunkLordMonsterScoreScRsp| { &mut m.JEAHDCGKBBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFEJGFNONIP",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.JEAHDCGKBBB.push(is.read_message()?);
-                },
-                120 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
+                58 => {
+                    self.JEAHDCGKBBB.push(is.read_message()?);
+                },
+                104 => {
                     self.KFEJGFNONIP = is.read_bool()?;
                 },
-                48 => {
+                24 => {
                     self.score_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         for value in &self.JEAHDCGKBBB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         if self.KFEJGFNONIP != false {
             my_size += 1 + 1;
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JEAHDCGKBBB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
+        for v in &self.JEAHDCGKBBB {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if self.KFEJGFNONIP != false {
-            os.write_bool(8, self.KFEJGFNONIP)?;
+            os.write_bool(13, self.KFEJGFNONIP)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(6, self.score_id)?;
+            os.write_uint32(3, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
     }
 
     fn clear(&mut self) {
-        self.JEAHDCGKBBB.clear();
         self.retcode = 0;
+        self.JEAHDCGKBBB.clear();
         self.KFEJGFNONIP = false;
         self.score_id = 0;
         self.special_fields.clear();
@@ -174,8 +174,8 @@ impl ::protobuf::Message for TakeKilledPunkLordMonsterScoreScRsp {
 
     fn default_instance() -> &'static TakeKilledPunkLordMonsterScoreScRsp {
         static instance: TakeKilledPunkLordMonsterScoreScRsp = TakeKilledPunkLordMonsterScoreScRsp {
-            JEAHDCGKBBB: ::std::vec::Vec::new(),
             retcode: 0,
+            JEAHDCGKBBB: ::std::vec::Vec::new(),
             KFEJGFNONIP: false,
             score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeKilledPunkLordMonsterScoreScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeKilledPunkLordMonsterScoreScRsp.proto\x1a\x18PunkLordMonsterKey.p\
-    roto\"\xb3\x01\n#TakeKilledPunkLordMonsterScoreScRsp\x125\n\x0bJEAHDCGKB\
-    BB\x18\x05\x20\x03(\x0b2\x13.PunkLordMonsterKeyR\x0bJEAHDCGKBBB\x12\x18\
-    \n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bKFEJGFNONIP\
-    \x18\x08\x20\x01(\x08R\x0bKFEJGFNONIP\x12\x19\n\x08score_id\x18\x06\x20\
+    roto\"\xb3\x01\n#TakeKilledPunkLordMonsterScoreScRsp\x12\x18\n\x07retcod\
+    e\x18\t\x20\x01(\rR\x07retcode\x125\n\x0bJEAHDCGKBBB\x18\x07\x20\x03(\
+    \x0b2\x13.PunkLordMonsterKeyR\x0bJEAHDCGKBBB\x12\x20\n\x0bKFEJGFNONIP\
+    \x18\r\x20\x01(\x08R\x0bKFEJGFNONIP\x12\x19\n\x08score_id\x18\x03\x20\
     \x01(\rR\x07scoreIdb\x06proto3\
 ";
 

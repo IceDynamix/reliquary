@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GMANHHHCPME {
     // message fields
-    // @@protoc_insertion_point(field:GMANHHHCPME.HGMNJFJPMDF)
-    pub HGMNJFJPMDF: u32,
     // @@protoc_insertion_point(field:GMANHHHCPME.cell_id)
     pub cell_id: u32,
+    // @@protoc_insertion_point(field:GMANHHHCPME.HGMNJFJPMDF)
+    pub HGMNJFJPMDF: u32,
     // @@protoc_insertion_point(field:GMANHHHCPME.BHJAPDFONAA)
     pub BHJAPDFONAA: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
@@ -54,14 +54,14 @@ impl GMANHHHCPME {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGMNJFJPMDF",
-            |m: &GMANHHHCPME| { &m.HGMNJFJPMDF },
-            |m: &mut GMANHHHCPME| { &mut m.HGMNJFJPMDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cell_id",
             |m: &GMANHHHCPME| { &m.cell_id },
             |m: &mut GMANHHHCPME| { &mut m.cell_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGMNJFJPMDF",
+            |m: &GMANHHHCPME| { &m.HGMNJFJPMDF },
+            |m: &mut GMANHHHCPME| { &mut m.HGMNJFJPMDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "BHJAPDFONAA",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GMANHHHCPME {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.HGMNJFJPMDF = is.read_uint32()?;
-                },
                 64 => {
                     self.cell_id = is.read_uint32()?;
                 },
-                98 => {
+                96 => {
+                    self.HGMNJFJPMDF = is.read_uint32()?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHJAPDFONAA)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GMANHHHCPME {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HGMNJFJPMDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HGMNJFJPMDF);
-        }
         if self.cell_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.cell_id);
+        }
+        if self.HGMNJFJPMDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HGMNJFJPMDF);
         }
         if let Some(v) = self.BHJAPDFONAA.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GMANHHHCPME {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HGMNJFJPMDF != 0 {
-            os.write_uint32(11, self.HGMNJFJPMDF)?;
-        }
         if self.cell_id != 0 {
             os.write_uint32(8, self.cell_id)?;
         }
+        if self.HGMNJFJPMDF != 0 {
+            os.write_uint32(12, self.HGMNJFJPMDF)?;
+        }
         if let Some(v) = self.BHJAPDFONAA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GMANHHHCPME {
     }
 
     fn clear(&mut self) {
-        self.HGMNJFJPMDF = 0;
         self.cell_id = 0;
+        self.HGMNJFJPMDF = 0;
         self.BHJAPDFONAA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GMANHHHCPME {
         static instance: GMANHHHCPME = GMANHHHCPME {
-            HGMNJFJPMDF: 0,
             cell_id: 0,
+            HGMNJFJPMDF: 0,
             BHJAPDFONAA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for GMANHHHCPME {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMANHHHCPME.proto\x1a\x12ItemCostData.proto\"y\n\x0bGMANHHHCPME\
-    \x12\x20\n\x0bHGMNJFJPMDF\x18\x0b\x20\x01(\rR\x0bHGMNJFJPMDF\x12\x17\n\
-    \x07cell_id\x18\x08\x20\x01(\rR\x06cellId\x12/\n\x0bBHJAPDFONAA\x18\x0c\
+    \x12\x17\n\x07cell_id\x18\x08\x20\x01(\rR\x06cellId\x12\x20\n\x0bHGMNJFJ\
+    PMDF\x18\x0c\x20\x01(\rR\x0bHGMNJFJPMDF\x12/\n\x0bBHJAPDFONAA\x18\x0f\
     \x20\x01(\x0b2\r.ItemCostDataR\x0bBHJAPDFONAAb\x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
                 16 => {
                     self.is_cancel = is.read_bool()?;
                 },
-                80 => {
+                72 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
             my_size += 1 + 1;
         }
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.relic_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
             os.write_bool(2, self.is_cancel)?;
         }
         if self.relic_unique_id != 0 {
-            os.write_uint32(10, self.relic_unique_id)?;
+            os.write_uint32(9, self.relic_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RelicReforgeConfirmCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRelicReforgeConfirmCsReq.proto\"_\n\x18RelicReforgeConfirmCsReq\
     \x12\x1b\n\tis_cancel\x18\x02\x20\x01(\x08R\x08isCancel\x12&\n\x0frelic_\
-    unique_id\x18\n\x20\x01(\rR\rrelicUniqueIdb\x06proto3\
+    unique_id\x18\t\x20\x01(\rR\rrelicUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MBIBKHKKEFB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MBIBKHKKEFB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousDiceUpdateNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChessRogueNousDiceUpdateNotify.proto\x1a\x1dChessRogueQueryDiceInfo.p\
     roto\"\\\n\x1eChessRogueNousDiceUpdateNotify\x12:\n\x0bMBIBKHKKEFB\x18\
-    \x03\x20\x01(\x0b2\x18.ChessRogueQueryDiceInfoR\x0bMBIBKHKKEFBb\x06proto\
+    \x0b\x20\x01(\x0b2\x18.ChessRogueQueryDiceInfoR\x0bMBIBKHKKEFBb\x06proto\
     3\
 ";
 

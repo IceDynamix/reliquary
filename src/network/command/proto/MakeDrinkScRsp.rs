@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeDrinkScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MakeDrinkScRsp.FGEFCEFKHMH)
+    pub FGEFCEFKHMH: bool,
     // @@protoc_insertion_point(field:MakeDrinkScRsp.APIACEAPLOE)
     pub APIACEAPLOE: u32,
     // @@protoc_insertion_point(field:MakeDrinkScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MakeDrinkScRsp.FGEFCEFKHMH)
-    pub FGEFCEFKHMH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MakeDrinkScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl MakeDrinkScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGEFCEFKHMH",
+            |m: &MakeDrinkScRsp| { &m.FGEFCEFKHMH },
+            |m: &mut MakeDrinkScRsp| { &mut m.FGEFCEFKHMH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APIACEAPLOE",
             |m: &MakeDrinkScRsp| { &m.APIACEAPLOE },
             |m: &mut MakeDrinkScRsp| { &mut m.APIACEAPLOE },
@@ -62,11 +67,6 @@ impl MakeDrinkScRsp {
             "retcode",
             |m: &MakeDrinkScRsp| { &m.retcode },
             |m: &mut MakeDrinkScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGEFCEFKHMH",
-            |m: &MakeDrinkScRsp| { &m.FGEFCEFKHMH },
-            |m: &mut MakeDrinkScRsp| { &mut m.FGEFCEFKHMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MakeDrinkScRsp>(
             "MakeDrinkScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
+                    self.FGEFCEFKHMH = is.read_bool()?;
+                },
+                96 => {
                     self.APIACEAPLOE = is.read_uint32()?;
                 },
-                48 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
-                },
-                8 => {
-                    self.FGEFCEFKHMH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APIACEAPLOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.APIACEAPLOE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         if self.FGEFCEFKHMH != false {
             my_size += 1 + 1;
+        }
+        if self.APIACEAPLOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.APIACEAPLOE);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FGEFCEFKHMH != false {
+            os.write_bool(4, self.FGEFCEFKHMH)?;
+        }
         if self.APIACEAPLOE != 0 {
-            os.write_uint32(8, self.APIACEAPLOE)?;
+            os.write_uint32(12, self.APIACEAPLOE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.FGEFCEFKHMH != false {
-            os.write_bool(1, self.FGEFCEFKHMH)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MakeDrinkScRsp {
     }
 
     fn clear(&mut self) {
+        self.FGEFCEFKHMH = false;
         self.APIACEAPLOE = 0;
         self.retcode = 0;
-        self.FGEFCEFKHMH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeDrinkScRsp {
         static instance: MakeDrinkScRsp = MakeDrinkScRsp {
+            FGEFCEFKHMH: false,
             APIACEAPLOE: 0,
             retcode: 0,
-            FGEFCEFKHMH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MakeDrinkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14MakeDrinkScRsp.proto\"n\n\x0eMakeDrinkScRsp\x12\x20\n\x0bAPIACEAPL\
-    OE\x18\x08\x20\x01(\rR\x0bAPIACEAPLOE\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bFGEFCEFKHMH\x18\x01\x20\x01(\x08R\x0bFG\
-    EFCEFKHMHb\x06proto3\
+    \n\x14MakeDrinkScRsp.proto\"n\n\x0eMakeDrinkScRsp\x12\x20\n\x0bFGEFCEFKH\
+    MH\x18\x04\x20\x01(\x08R\x0bFGEFCEFKHMH\x12\x20\n\x0bAPIACEAPLOE\x18\x0c\
+    \x20\x01(\rR\x0bAPIACEAPLOE\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

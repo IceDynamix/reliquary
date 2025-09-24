@@ -72,7 +72,7 @@ impl ::protobuf::Message for OfferingInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.offering_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OfferingInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.offering_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for OfferingInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aOfferingInfoScNotify.proto\x1a\x12OfferingInfo.proto\"J\n\x14Offer\
-    ingInfoScNotify\x122\n\roffering_info\x18\x08\x20\x01(\x0b2\r.OfferingIn\
+    ingInfoScNotify\x122\n\roffering_info\x18\x03\x20\x01(\x0b2\r.OfferingIn\
     foR\x0cofferingInfob\x06proto3\
 ";
 

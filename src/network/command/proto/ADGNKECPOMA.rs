@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADGNKECPOMA {
     // message fields
-    // @@protoc_insertion_point(field:ADGNKECPOMA.ENFKGGNOMEO)
-    pub ENFKGGNOMEO: u32,
     // @@protoc_insertion_point(field:ADGNKECPOMA.CCCDKGAMDLB)
     pub CCCDKGAMDLB: u32,
+    // @@protoc_insertion_point(field:ADGNKECPOMA.ENFKGGNOMEO)
+    pub ENFKGGNOMEO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ADGNKECPOMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ADGNKECPOMA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENFKGGNOMEO",
-            |m: &ADGNKECPOMA| { &m.ENFKGGNOMEO },
-            |m: &mut ADGNKECPOMA| { &mut m.ENFKGGNOMEO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CCCDKGAMDLB",
             |m: &ADGNKECPOMA| { &m.CCCDKGAMDLB },
             |m: &mut ADGNKECPOMA| { &mut m.CCCDKGAMDLB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ENFKGGNOMEO",
+            |m: &ADGNKECPOMA| { &m.ENFKGGNOMEO },
+            |m: &mut ADGNKECPOMA| { &mut m.ENFKGGNOMEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADGNKECPOMA>(
             "ADGNKECPOMA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ADGNKECPOMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ENFKGGNOMEO = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.CCCDKGAMDLB = is.read_uint32()?;
+                },
+                8 => {
+                    self.ENFKGGNOMEO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ADGNKECPOMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ENFKGGNOMEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ENFKGGNOMEO);
-        }
         if self.CCCDKGAMDLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CCCDKGAMDLB);
+            my_size += ::protobuf::rt::uint32_size(4, self.CCCDKGAMDLB);
+        }
+        if self.ENFKGGNOMEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ENFKGGNOMEO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ADGNKECPOMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ENFKGGNOMEO != 0 {
-            os.write_uint32(11, self.ENFKGGNOMEO)?;
-        }
         if self.CCCDKGAMDLB != 0 {
-            os.write_uint32(6, self.CCCDKGAMDLB)?;
+            os.write_uint32(4, self.CCCDKGAMDLB)?;
+        }
+        if self.ENFKGGNOMEO != 0 {
+            os.write_uint32(1, self.ENFKGGNOMEO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ADGNKECPOMA {
     }
 
     fn clear(&mut self) {
-        self.ENFKGGNOMEO = 0;
         self.CCCDKGAMDLB = 0;
+        self.ENFKGGNOMEO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADGNKECPOMA {
         static instance: ADGNKECPOMA = ADGNKECPOMA {
-            ENFKGGNOMEO: 0,
             CCCDKGAMDLB: 0,
+            ENFKGGNOMEO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ADGNKECPOMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ADGNKECPOMA.proto\"Q\n\x0bADGNKECPOMA\x12\x20\n\x0bENFKGGNOMEO\x18\
-    \x0b\x20\x01(\rR\x0bENFKGGNOMEO\x12\x20\n\x0bCCCDKGAMDLB\x18\x06\x20\x01\
-    (\rR\x0bCCCDKGAMDLBb\x06proto3\
+    \n\x11ADGNKECPOMA.proto\"Q\n\x0bADGNKECPOMA\x12\x20\n\x0bCCCDKGAMDLB\x18\
+    \x04\x20\x01(\rR\x0bCCCDKGAMDLB\x12\x20\n\x0bENFKGGNOMEO\x18\x01\x20\x01\
+    (\rR\x0bENFKGGNOMEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,16 +86,16 @@ impl ::protobuf::Message for MBKOCMMICPG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
-                32 => {
+                56 => {
                     self.EBNKEIEHNHA = is.read_bool()?;
                 },
-                122 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                120 => {
+                16 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
                 tag => {
@@ -117,7 +117,7 @@ impl ::protobuf::Message for MBKOCMMICPG {
         if self.EBNKEIEHNHA != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.relic_ids);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.relic_ids);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for MBKOCMMICPG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.EBNKEIEHNHA != false {
-            os.write_bool(4, self.EBNKEIEHNHA)?;
+            os.write_bool(7, self.EBNKEIEHNHA)?;
         }
-        os.write_repeated_packed_uint32(15, &self.relic_ids)?;
+        os.write_repeated_packed_uint32(2, &self.relic_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MBKOCMMICPG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MBKOCMMICPG.proto\x1a\x0eItemList.proto\"\x81\x01\n\x0bMBKOCMMICPG\
-    \x123\n\x10return_item_list\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0ereturnI\
-    temList\x12\x20\n\x0bEBNKEIEHNHA\x18\x04\x20\x01(\x08R\x0bEBNKEIEHNHA\
-    \x12\x1b\n\trelic_ids\x18\x0f\x20\x03(\rR\x08relicIdsb\x06proto3\
+    \x123\n\x10return_item_list\x18\x0f\x20\x01(\x0b2\t.ItemListR\x0ereturnI\
+    temList\x12\x20\n\x0bEBNKEIEHNHA\x18\x07\x20\x01(\x08R\x0bEBNKEIEHNHA\
+    \x12\x1b\n\trelic_ids\x18\x02\x20\x03(\rR\x08relicIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

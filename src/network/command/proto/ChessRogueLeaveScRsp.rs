@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueLeaveScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.rogue_aeon_info)
+    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.query_info)
     pub query_info: ::protobuf::MessageField<super::ChessRogueQueryInfo::ChessRogueQueryInfo>,
     // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.rogue_get_info)
     pub rogue_get_info: ::protobuf::MessageField<super::ChessRogueGetInfo::ChessRogueGetInfo>,
     // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.stage_info)
     pub stage_info: ::protobuf::MessageField<super::ChessRogueInfo::ChessRogueInfo>,
-    // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueLeaveScRsp.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueLeaveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,6 +57,16 @@ impl ChessRogueLeaveScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
+            "rogue_aeon_info",
+            |m: &ChessRogueLeaveScRsp| { &m.rogue_aeon_info },
+            |m: &mut ChessRogueLeaveScRsp| { &mut m.rogue_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChessRogueLeaveScRsp| { &m.retcode },
+            |m: &mut ChessRogueLeaveScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryInfo::ChessRogueQueryInfo>(
             "query_info",
             |m: &ChessRogueLeaveScRsp| { &m.query_info },
@@ -71,16 +81,6 @@ impl ChessRogueLeaveScRsp {
             "stage_info",
             |m: &ChessRogueLeaveScRsp| { &m.stage_info },
             |m: &mut ChessRogueLeaveScRsp| { &mut m.stage_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChessRogueLeaveScRsp| { &m.retcode },
-            |m: &mut ChessRogueLeaveScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
-            "rogue_aeon_info",
-            |m: &ChessRogueLeaveScRsp| { &m.rogue_aeon_info },
-            |m: &mut ChessRogueLeaveScRsp| { &mut m.rogue_aeon_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueLeaveScRsp>(
             "ChessRogueLeaveScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ChessRogueLeaveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.query_info)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
-                },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
-                40 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.query_info)?;
+                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,6 +127,13 @@ impl ::protobuf::Message for ChessRogueLeaveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if let Some(v) = self.query_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -136,13 +143,6 @@ impl ::protobuf::Message for ChessRogueLeaveScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,20 +152,20 @@ impl ::protobuf::Message for ChessRogueLeaveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.query_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.rogue_aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
+        if let Some(v) = self.query_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.rogue_get_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for ChessRogueLeaveScRsp {
     }
 
     fn clear(&mut self) {
+        self.rogue_aeon_info.clear();
+        self.retcode = 0;
         self.query_info.clear();
         self.rogue_get_info.clear();
         self.stage_info.clear();
-        self.retcode = 0;
-        self.rogue_aeon_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueLeaveScRsp {
         static instance: ChessRogueLeaveScRsp = ChessRogueLeaveScRsp {
+            rogue_aeon_info: ::protobuf::MessageField::none(),
+            retcode: 0,
             query_info: ::protobuf::MessageField::none(),
             rogue_get_info: ::protobuf::MessageField::none(),
             stage_info: ::protobuf::MessageField::none(),
-            retcode: 0,
-            rogue_aeon_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -225,13 +225,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLeaveScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueLeaveScRsp.proto\x1a\x18ChessRogueAeonInfo.proto\x1a\x17\
     ChessRogueGetInfo.proto\x1a\x14ChessRogueInfo.proto\x1a\x19ChessRogueQue\
-    ryInfo.proto\"\x8c\x02\n\x14ChessRogueLeaveScRsp\x123\n\nquery_info\x18\
-    \x07\x20\x01(\x0b2\x14.ChessRogueQueryInfoR\tqueryInfo\x128\n\x0erogue_g\
-    et_info\x18\r\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogueGetInfo\x12.\
-    \n\nstage_info\x18\x03\x20\x01(\x0b2\x0f.ChessRogueInfoR\tstageInfo\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12;\n\x0frogue_aeon_in\
-    fo\x18\x02\x20\x01(\x0b2\x13.ChessRogueAeonInfoR\rrogueAeonInfob\x06prot\
-    o3\
+    ryInfo.proto\"\x8c\x02\n\x14ChessRogueLeaveScRsp\x12;\n\x0frogue_aeon_in\
+    fo\x18\x0f\x20\x01(\x0b2\x13.ChessRogueAeonInfoR\rrogueAeonInfo\x12\x18\
+    \n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x123\n\nquery_info\x18\n\
+    \x20\x01(\x0b2\x14.ChessRogueQueryInfoR\tqueryInfo\x128\n\x0erogue_get_i\
+    nfo\x18\x02\x20\x01(\x0b2\x12.ChessRogueGetInfoR\x0crogueGetInfo\x12.\n\
+    \nstage_info\x18\x0b\x20\x01(\x0b2\x0f.ChessRogueInfoR\tstageInfob\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

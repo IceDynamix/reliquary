@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournRenameBuildRefScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournRenameBuildRefScRsp.max_times)
-    pub max_times: u32,
     // @@protoc_insertion_point(field:RogueTournRenameBuildRefScRsp.name)
     pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RogueTournRenameBuildRefScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournRenameBuildRefScRsp.max_times)
+    pub max_times: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournRenameBuildRefScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl RogueTournRenameBuildRefScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_times",
-            |m: &RogueTournRenameBuildRefScRsp| { &m.max_times },
-            |m: &mut RogueTournRenameBuildRefScRsp| { &mut m.max_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
             |m: &RogueTournRenameBuildRefScRsp| { &m.name },
             |m: &mut RogueTournRenameBuildRefScRsp| { &mut m.name },
@@ -67,6 +62,11 @@ impl RogueTournRenameBuildRefScRsp {
             "retcode",
             |m: &RogueTournRenameBuildRefScRsp| { &m.retcode },
             |m: &mut RogueTournRenameBuildRefScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_times",
+            |m: &RogueTournRenameBuildRefScRsp| { &m.max_times },
+            |m: &mut RogueTournRenameBuildRefScRsp| { &mut m.max_times },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournRenameBuildRefScRsp>(
             "RogueTournRenameBuildRefScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournRenameBuildRefScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.max_times = is.read_uint32()?;
-                },
                 82 => {
                     self.name = is.read_string()?;
                 },
-                16 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                24 => {
+                    self.max_times = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournRenameBuildRefScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.max_times);
-        }
         if !self.name.is_empty() {
             my_size += ::protobuf::rt::string_size(10, &self.name);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.max_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.max_times);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueTournRenameBuildRefScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.max_times != 0 {
-            os.write_uint32(4, self.max_times)?;
-        }
         if !self.name.is_empty() {
             os.write_string(10, &self.name)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.max_times != 0 {
+            os.write_uint32(3, self.max_times)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RogueTournRenameBuildRefScRsp {
     }
 
     fn clear(&mut self) {
-        self.max_times = 0;
         self.name.clear();
         self.retcode = 0;
+        self.max_times = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournRenameBuildRefScRsp {
         static instance: RogueTournRenameBuildRefScRsp = RogueTournRenameBuildRefScRsp {
-            max_times: 0,
             name: ::std::string::String::new(),
             retcode: 0,
+            max_times: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameBuildRefScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueTournRenameBuildRefScRsp.proto\"j\n\x1dRogueTournRenameBuildRefS\
-    cRsp\x12\x1b\n\tmax_times\x18\x04\x20\x01(\rR\x08maxTimes\x12\x12\n\x04n\
-    ame\x18\n\x20\x01(\tR\x04name\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    cRsp\x12\x12\n\x04name\x18\n\x20\x01(\tR\x04name\x12\x18\n\x07retcode\
+    \x18\x0b\x20\x01(\rR\x07retcode\x12\x1b\n\tmax_times\x18\x03\x20\x01(\rR\
+    \x08maxTimesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

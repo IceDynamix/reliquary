@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.HJGNDHLMMIB)
-    pub HJGNDHLMMIB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.branch_id)
-    pub branch_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.aeon_id)
-    pub aeon_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.trial_avatar_id_list)
-    pub trial_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueStartCsReq.start_difficulty_id_list)
-    pub start_difficulty_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueStartCsReq.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.branch_id)
+    pub branch_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.start_difficulty_id_list)
+    pub start_difficulty_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.trial_avatar_id_list)
+    pub trial_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.aeon_id)
+    pub aeon_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueStartCsReq.HJGNDHLMMIB)
+    pub HJGNDHLMMIB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,20 @@ impl ChessRogueStartCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &ChessRogueStartCsReq| { &m.base_avatar_id_list },
-            |m: &mut ChessRogueStartCsReq| { &mut m.base_avatar_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HJGNDHLMMIB",
-            |m: &ChessRogueStartCsReq| { &m.HJGNDHLMMIB },
-            |m: &mut ChessRogueStartCsReq| { &mut m.HJGNDHLMMIB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &ChessRogueStartCsReq| { &m.id },
+            |m: &mut ChessRogueStartCsReq| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "branch_id",
             |m: &ChessRogueStartCsReq| { &m.branch_id },
             |m: &mut ChessRogueStartCsReq| { &mut m.branch_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aeon_id",
-            |m: &ChessRogueStartCsReq| { &m.aeon_id },
-            |m: &mut ChessRogueStartCsReq| { &mut m.aeon_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "start_difficulty_id_list",
+            |m: &ChessRogueStartCsReq| { &m.start_difficulty_id_list },
+            |m: &mut ChessRogueStartCsReq| { &mut m.start_difficulty_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trial_avatar_id_list",
@@ -87,14 +82,19 @@ impl ChessRogueStartCsReq {
             |m: &mut ChessRogueStartCsReq| { &mut m.trial_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "start_difficulty_id_list",
-            |m: &ChessRogueStartCsReq| { &m.start_difficulty_id_list },
-            |m: &mut ChessRogueStartCsReq| { &mut m.start_difficulty_id_list },
+            "base_avatar_id_list",
+            |m: &ChessRogueStartCsReq| { &m.base_avatar_id_list },
+            |m: &mut ChessRogueStartCsReq| { &mut m.base_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &ChessRogueStartCsReq| { &m.id },
-            |m: &mut ChessRogueStartCsReq| { &mut m.id },
+            "aeon_id",
+            |m: &ChessRogueStartCsReq| { &m.aeon_id },
+            |m: &mut ChessRogueStartCsReq| { &mut m.aeon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HJGNDHLMMIB",
+            |m: &ChessRogueStartCsReq| { &m.HJGNDHLMMIB },
+            |m: &mut ChessRogueStartCsReq| { &mut m.HJGNDHLMMIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueStartCsReq>(
             "ChessRogueStartCsReq",
@@ -114,23 +114,17 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                88 => {
+                    self.id = is.read_uint32()?;
                 },
-                72 => {
-                    self.base_avatar_id_list.push(is.read_uint32()?);
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HJGNDHLMMIB)?;
-                },
-                8 => {
-                    self.HJGNDHLMMIB.push(is.read_uint32()?);
-                },
-                40 => {
+                48 => {
                     self.branch_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.aeon_id = is.read_uint32()?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.start_difficulty_id_list)?;
+                },
+                96 => {
+                    self.start_difficulty_id_list.push(is.read_uint32()?);
                 },
                 114 => {
                     is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
@@ -138,14 +132,20 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
                 112 => {
                     self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.start_difficulty_id_list)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                },
+                8 => {
+                    self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 16 => {
-                    self.start_difficulty_id_list.push(is.read_uint32()?);
+                    self.aeon_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.id = is.read_uint32()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HJGNDHLMMIB)?;
+                },
+                80 => {
+                    self.HJGNDHLMMIB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,38 +159,38 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.base_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HJGNDHLMMIB);
-        if self.branch_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.branch_id);
-        }
-        if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.aeon_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.trial_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.start_difficulty_id_list);
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
         }
+        if self.branch_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.branch_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.start_difficulty_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.trial_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.base_avatar_id_list);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.aeon_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HJGNDHLMMIB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.base_avatar_id_list)?;
-        os.write_repeated_packed_uint32(1, &self.HJGNDHLMMIB)?;
-        if self.branch_id != 0 {
-            os.write_uint32(5, self.branch_id)?;
-        }
-        if self.aeon_id != 0 {
-            os.write_uint32(8, self.aeon_id)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.trial_avatar_id_list)?;
-        os.write_repeated_packed_uint32(2, &self.start_difficulty_id_list)?;
         if self.id != 0 {
-            os.write_uint32(7, self.id)?;
+            os.write_uint32(11, self.id)?;
         }
+        if self.branch_id != 0 {
+            os.write_uint32(6, self.branch_id)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.start_difficulty_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.trial_avatar_id_list)?;
+        os.write_repeated_packed_uint32(1, &self.base_avatar_id_list)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(2, self.aeon_id)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.HJGNDHLMMIB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -208,25 +208,25 @@ impl ::protobuf::Message for ChessRogueStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id_list.clear();
-        self.HJGNDHLMMIB.clear();
-        self.branch_id = 0;
-        self.aeon_id = 0;
-        self.trial_avatar_id_list.clear();
-        self.start_difficulty_id_list.clear();
         self.id = 0;
+        self.branch_id = 0;
+        self.start_difficulty_id_list.clear();
+        self.trial_avatar_id_list.clear();
+        self.base_avatar_id_list.clear();
+        self.aeon_id = 0;
+        self.HJGNDHLMMIB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueStartCsReq {
         static instance: ChessRogueStartCsReq = ChessRogueStartCsReq {
-            base_avatar_id_list: ::std::vec::Vec::new(),
-            HJGNDHLMMIB: ::std::vec::Vec::new(),
-            branch_id: 0,
-            aeon_id: 0,
-            trial_avatar_id_list: ::std::vec::Vec::new(),
-            start_difficulty_id_list: ::std::vec::Vec::new(),
             id: 0,
+            branch_id: 0,
+            start_difficulty_id_list: ::std::vec::Vec::new(),
+            trial_avatar_id_list: ::std::vec::Vec::new(),
+            base_avatar_id_list: ::std::vec::Vec::new(),
+            aeon_id: 0,
+            HJGNDHLMMIB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -252,13 +252,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueStartCsReq.proto\"\x97\x02\n\x14ChessRogueStartCsReq\x12\
-    -\n\x13base_avatar_id_list\x18\t\x20\x03(\rR\x10baseAvatarIdList\x12\x20\
-    \n\x0bHJGNDHLMMIB\x18\x01\x20\x03(\rR\x0bHJGNDHLMMIB\x12\x1b\n\tbranch_i\
-    d\x18\x05\x20\x01(\rR\x08branchId\x12\x17\n\x07aeon_id\x18\x08\x20\x01(\
-    \rR\x06aeonId\x12/\n\x14trial_avatar_id_list\x18\x0e\x20\x03(\rR\x11tria\
-    lAvatarIdList\x127\n\x18start_difficulty_id_list\x18\x02\x20\x03(\rR\x15\
-    startDifficultyIdList\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02idb\x06prot\
-    o3\
+    \x0e\n\x02id\x18\x0b\x20\x01(\rR\x02id\x12\x1b\n\tbranch_id\x18\x06\x20\
+    \x01(\rR\x08branchId\x127\n\x18start_difficulty_id_list\x18\x0c\x20\x03(\
+    \rR\x15startDifficultyIdList\x12/\n\x14trial_avatar_id_list\x18\x0e\x20\
+    \x03(\rR\x11trialAvatarIdList\x12-\n\x13base_avatar_id_list\x18\x01\x20\
+    \x03(\rR\x10baseAvatarIdList\x12\x17\n\x07aeon_id\x18\x02\x20\x01(\rR\
+    \x06aeonId\x12\x20\n\x0bHJGNDHLMMIB\x18\n\x20\x03(\rR\x0bHJGNDHLMMIBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

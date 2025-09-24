@@ -30,10 +30,10 @@ pub struct ABGEJNBCDJK {
     // message fields
     // @@protoc_insertion_point(field:ABGEJNBCDJK.BGAFCOBNLPM)
     pub BGAFCOBNLPM: ::std::vec::Vec<super::DHONNIHMACI::DHONNIHMACI>,
-    // @@protoc_insertion_point(field:ABGEJNBCDJK.ILBHDLMLMCK)
-    pub ILBHDLMLMCK: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:ABGEJNBCDJK.BEGMFIAPHLM)
     pub BEGMFIAPHLM: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:ABGEJNBCDJK.ILBHDLMLMCK)
+    pub ILBHDLMLMCK: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:ABGEJNBCDJK.JMBCICLCHKD)
     pub JMBCICLCHKD: ::std::vec::Vec<super::LMPIECFMFOI::LMPIECFMFOI>,
     // special fields
@@ -61,14 +61,14 @@ impl ABGEJNBCDJK {
             |m: &mut ABGEJNBCDJK| { &mut m.BGAFCOBNLPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "ILBHDLMLMCK",
-            |m: &ABGEJNBCDJK| { &m.ILBHDLMLMCK },
-            |m: &mut ABGEJNBCDJK| { &mut m.ILBHDLMLMCK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BEGMFIAPHLM",
             |m: &ABGEJNBCDJK| { &m.BEGMFIAPHLM },
             |m: &mut ABGEJNBCDJK| { &mut m.BEGMFIAPHLM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "ILBHDLMLMCK",
+            |m: &ABGEJNBCDJK| { &m.ILBHDLMLMCK },
+            |m: &mut ABGEJNBCDJK| { &mut m.ILBHDLMLMCK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JMBCICLCHKD",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for ABGEJNBCDJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     self.BGAFCOBNLPM.push(is.read_message()?);
                 },
                 58 => {
@@ -109,9 +109,9 @@ impl ::protobuf::Message for ABGEJNBCDJK {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.ILBHDLMLMCK.insert(key, value);
+                    self.BEGMFIAPHLM.insert(key, value);
                 },
-                114 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -124,9 +124,9 @@ impl ::protobuf::Message for ABGEJNBCDJK {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.BEGMFIAPHLM.insert(key, value);
+                    self.ILBHDLMLMCK.insert(key, value);
                 },
-                50 => {
+                26 => {
                     self.JMBCICLCHKD.push(is.read_message()?);
                 },
                 tag => {
@@ -145,13 +145,13 @@ impl ::protobuf::Message for ABGEJNBCDJK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for (k, v) in &self.ILBHDLMLMCK {
+        for (k, v) in &self.BEGMFIAPHLM {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for (k, v) in &self.BEGMFIAPHLM {
+        for (k, v) in &self.ILBHDLMLMCK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -168,9 +168,9 @@ impl ::protobuf::Message for ABGEJNBCDJK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BGAFCOBNLPM {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for (k, v) in &self.ILBHDLMLMCK {
+        for (k, v) in &self.BEGMFIAPHLM {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -179,17 +179,17 @@ impl ::protobuf::Message for ABGEJNBCDJK {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        for (k, v) in &self.BEGMFIAPHLM {
+        for (k, v) in &self.ILBHDLMLMCK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(114)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         for v in &self.JMBCICLCHKD {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -209,8 +209,8 @@ impl ::protobuf::Message for ABGEJNBCDJK {
 
     fn clear(&mut self) {
         self.BGAFCOBNLPM.clear();
-        self.ILBHDLMLMCK.clear();
         self.BEGMFIAPHLM.clear();
+        self.ILBHDLMLMCK.clear();
         self.JMBCICLCHKD.clear();
         self.special_fields.clear();
     }
@@ -240,14 +240,14 @@ impl ::protobuf::reflect::ProtobufValue for ABGEJNBCDJK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ABGEJNBCDJK.proto\x1a\x11DHONNIHMACI.proto\x1a\x11LMPIECFMFOI.prot\
-    o\"\xef\x02\n\x0bABGEJNBCDJK\x12.\n\x0bBGAFCOBNLPM\x18\x05\x20\x03(\x0b2\
-    \x0c.DHONNIHMACIR\x0bBGAFCOBNLPM\x12?\n\x0bILBHDLMLMCK\x18\x07\x20\x03(\
-    \x0b2\x1d.ABGEJNBCDJK.ILBHDLMLMCKEntryR\x0bILBHDLMLMCK\x12?\n\x0bBEGMFIA\
-    PHLM\x18\x0e\x20\x03(\x0b2\x1d.ABGEJNBCDJK.BEGMFIAPHLMEntryR\x0bBEGMFIAP\
-    HLM\x12.\n\x0bJMBCICLCHKD\x18\x06\x20\x03(\x0b2\x0c.LMPIECFMFOIR\x0bJMBC\
-    ICLCHKD\x1a>\n\x10ILBHDLMLMCKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    o\"\xef\x02\n\x0bABGEJNBCDJK\x12.\n\x0bBGAFCOBNLPM\x18\t\x20\x03(\x0b2\
+    \x0c.DHONNIHMACIR\x0bBGAFCOBNLPM\x12?\n\x0bBEGMFIAPHLM\x18\x07\x20\x03(\
+    \x0b2\x1d.ABGEJNBCDJK.BEGMFIAPHLMEntryR\x0bBEGMFIAPHLM\x12?\n\x0bILBHDLM\
+    LMCK\x18\x06\x20\x03(\x0b2\x1d.ABGEJNBCDJK.ILBHDLMLMCKEntryR\x0bILBHDLML\
+    MCK\x12.\n\x0bJMBCICLCHKD\x18\x03\x20\x03(\x0b2\x0c.LMPIECFMFOIR\x0bJMBC\
+    ICLCHKD\x1a>\n\x10BEGMFIAPHLMEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
     \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\
-    \x10BEGMFIAPHLMEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
+    \x10ILBHDLMLMCKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
     \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

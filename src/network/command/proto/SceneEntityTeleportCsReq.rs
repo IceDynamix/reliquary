@@ -82,7 +82,7 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.entity_motion)?;
                 },
-                112 => {
+                88 => {
                     self.entry_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.entry_id != 0 {
-            os.write_uint32(14, self.entry_id)?;
+            os.write_uint32(11, self.entry_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityTeleportCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSceneEntityTeleportCsReq.proto\x1a\x12EntityMotion.proto\"i\n\x18S\
     ceneEntityTeleportCsReq\x122\n\rentity_motion\x18\x0c\x20\x01(\x0b2\r.En\
-    tityMotionR\x0centityMotion\x12\x19\n\x08entry_id\x18\x0e\x20\x01(\rR\
+    tityMotionR\x0centityMotion\x12\x19\n\x08entry_id\x18\x0b\x20\x01(\rR\
     \x07entryIdb\x06proto3\
 ";
 

@@ -79,7 +79,7 @@ impl ::protobuf::Message for PlayerAssistInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MDHFANLHNMA)?;
                 },
                 98 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for PlayerAssistInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MDHFANLHNMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.player_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
@@ -169,7 +169,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayerAssistInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerAssistInfo.proto\x1a\x1dDisplayAvatarDetailInfo.proto\x1a\
     \x16PlayerSimpleInfo.proto\"\x82\x01\n\x10PlayerAssistInfo\x12:\n\x0bMDH\
-    FANLHNMA\x18\x02\x20\x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0bMDHFANLHN\
+    FANLHNMA\x18\x0e\x20\x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0bMDHFANLHN\
     MA\x122\n\x0bplayer_info\x18\x0c\x20\x01(\x0b2\x11.PlayerSimpleInfoR\npl\
     ayerInfob\x06proto3\
 ";

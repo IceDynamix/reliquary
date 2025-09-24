@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwitchItem {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.EINFBGKENDH = is.read_bool()?;
                 },
-                64 => {
+                16 => {
                     self.daily_index = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SwitchItem {
             my_size += 1 + 1;
         }
         if self.daily_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.daily_index);
+            my_size += ::protobuf::rt::uint32_size(2, self.daily_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SwitchItem {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EINFBGKENDH != false {
-            os.write_bool(4, self.EINFBGKENDH)?;
+            os.write_bool(9, self.EINFBGKENDH)?;
         }
         if self.daily_index != 0 {
-            os.write_uint32(8, self.daily_index)?;
+            os.write_uint32(2, self.daily_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SwitchItem {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x20\n\x0bEINFBGKENDH\x18\x04\
-    \x20\x01(\x08R\x0bEINFBGKENDH\x12\x1f\n\x0bdaily_index\x18\x08\x20\x01(\
+    \n\x10SwitchItem.proto\"O\n\nSwitchItem\x12\x20\n\x0bEINFBGKENDH\x18\t\
+    \x20\x01(\x08R\x0bEINFBGKENDH\x12\x1f\n\x0bdaily_index\x18\x02\x20\x01(\
     \rR\ndailyIndexb\x06proto3\
 ";
 

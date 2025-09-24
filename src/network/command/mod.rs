@@ -49,6 +49,7 @@ pub mod proto {
     pub mod GroupStatus;
     pub mod GrowthTargetFunctionType;
     pub mod HeadIconData;
+    pub mod HeadIconFrame;
     pub mod Item;
     pub mod ItemList;
     pub mod Material;

@@ -30,10 +30,10 @@ pub struct HPGAGBGJLID {
     // message fields
     // @@protoc_insertion_point(field:HPGAGBGJLID.BMALPKEKBEL)
     pub BMALPKEKBEL: u32,
-    // @@protoc_insertion_point(field:HPGAGBGJLID.item_id)
-    pub item_id: u32,
     // @@protoc_insertion_point(field:HPGAGBGJLID.OGJOFMCMFPG)
     pub OGJOFMCMFPG: u32,
+    // @@protoc_insertion_point(field:HPGAGBGJLID.item_id)
+    pub item_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HPGAGBGJLID.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl HPGAGBGJLID {
             |m: &mut HPGAGBGJLID| { &mut m.BMALPKEKBEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &HPGAGBGJLID| { &m.item_id },
-            |m: &mut HPGAGBGJLID| { &mut m.item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OGJOFMCMFPG",
             |m: &HPGAGBGJLID| { &m.OGJOFMCMFPG },
             |m: &mut HPGAGBGJLID| { &mut m.OGJOFMCMFPG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_id",
+            |m: &HPGAGBGJLID| { &m.item_id },
+            |m: &mut HPGAGBGJLID| { &mut m.item_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPGAGBGJLID>(
             "HPGAGBGJLID",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HPGAGBGJLID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.BMALPKEKBEL = is.read_uint32()?;
+                },
+                80 => {
+                    self.OGJOFMCMFPG = is.read_uint32()?;
                 },
                 64 => {
                     self.item_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.OGJOFMCMFPG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HPGAGBGJLID {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BMALPKEKBEL);
+            my_size += ::protobuf::rt::uint32_size(6, self.BMALPKEKBEL);
+        }
+        if self.OGJOFMCMFPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OGJOFMCMFPG);
         }
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.item_id);
-        }
-        if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OGJOFMCMFPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HPGAGBGJLID {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BMALPKEKBEL != 0 {
-            os.write_uint32(13, self.BMALPKEKBEL)?;
+            os.write_uint32(6, self.BMALPKEKBEL)?;
+        }
+        if self.OGJOFMCMFPG != 0 {
+            os.write_uint32(10, self.OGJOFMCMFPG)?;
         }
         if self.item_id != 0 {
             os.write_uint32(8, self.item_id)?;
-        }
-        if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(12, self.OGJOFMCMFPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for HPGAGBGJLID {
 
     fn clear(&mut self) {
         self.BMALPKEKBEL = 0;
-        self.item_id = 0;
         self.OGJOFMCMFPG = 0;
+        self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HPGAGBGJLID {
         static instance: HPGAGBGJLID = HPGAGBGJLID {
             BMALPKEKBEL: 0,
-            item_id: 0,
             OGJOFMCMFPG: 0,
+            item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HPGAGBGJLID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HPGAGBGJLID.proto\"j\n\x0bHPGAGBGJLID\x12\x20\n\x0bBMALPKEKBEL\x18\
-    \r\x20\x01(\rR\x0bBMALPKEKBEL\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\
-    \x06itemId\x12\x20\n\x0bOGJOFMCMFPG\x18\x0c\x20\x01(\rR\x0bOGJOFMCMFPGb\
+    \x06\x20\x01(\rR\x0bBMALPKEKBEL\x12\x20\n\x0bOGJOFMCMFPG\x18\n\x20\x01(\
+    \rR\x0bOGJOFMCMFPG\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\x06itemIdb\
     \x06proto3\
 ";
 

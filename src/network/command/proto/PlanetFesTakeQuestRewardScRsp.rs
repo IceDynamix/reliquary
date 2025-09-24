@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                112 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNFFKABFOEF)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.quest_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         if let Some(v) = self.DNFFKABFOEF.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.quest_id != 0 {
-            os.write_uint32(6, self.quest_id)?;
+            os.write_uint32(14, self.quest_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         if let Some(v) = self.DNFFKABFOEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeQuestRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#PlanetFesTakeQuestRewardScRsp.proto\x1a\x11DJIAEMANGCG.proto\"\x84\
-    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12\x19\n\x08quest_id\x18\x06\
-    \x20\x01(\rR\x07questId\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bDNFFKABFOEF\x18\x02\x20\x01(\x0b2\x0c.DJIAEMANGCGR\x0bDNFF\
+    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12\x19\n\x08quest_id\x18\x0e\
+    \x20\x01(\rR\x07questId\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retc\
+    ode\x12.\n\x0bDNFFKABFOEF\x18\x04\x20\x01(\x0b2\x0c.DJIAEMANGCGR\x0bDNFF\
     KABFOEFb\x06proto3\
 ";
 

@@ -32,10 +32,10 @@ pub struct HFPFFJIMCKM {
     pub BDNFLICNFHN: bool,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:HFPFFJIMCKM.LKJMLIDAODM)
-    pub LKJMLIDAODM: u32,
     // @@protoc_insertion_point(field:HFPFFJIMCKM.OPCLDNLLNFH)
     pub OPCLDNLLNFH: ::std::vec::Vec<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:HFPFFJIMCKM.LKJMLIDAODM)
+    pub LKJMLIDAODM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HFPFFJIMCKM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl HFPFFJIMCKM {
             |m: &HFPFFJIMCKM| { &m.motion },
             |m: &mut HFPFFJIMCKM| { &mut m.motion },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKJMLIDAODM",
-            |m: &HFPFFJIMCKM| { &m.LKJMLIDAODM },
-            |m: &mut HFPFFJIMCKM| { &mut m.LKJMLIDAODM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OPCLDNLLNFH",
             |m: &HFPFFJIMCKM| { &m.OPCLDNLLNFH },
             |m: &mut HFPFFJIMCKM| { &mut m.OPCLDNLLNFH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKJMLIDAODM",
+            |m: &HFPFFJIMCKM| { &m.LKJMLIDAODM },
+            |m: &mut HFPFFJIMCKM| { &mut m.LKJMLIDAODM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFPFFJIMCKM>(
             "HFPFFJIMCKM",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.BDNFLICNFHN = is.read_bool()?;
                 },
-                18 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                48 => {
-                    self.LKJMLIDAODM = is.read_uint32()?;
-                },
-                74 => {
+                98 => {
                     self.OPCLDNLLNFH.push(is.read_message()?);
+                },
+                56 => {
+                    self.LKJMLIDAODM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for HFPFFJIMCKM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LKJMLIDAODM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LKJMLIDAODM);
-        }
         for value in &self.OPCLDNLLNFH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.LKJMLIDAODM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LKJMLIDAODM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,17 +138,17 @@ impl ::protobuf::Message for HFPFFJIMCKM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BDNFLICNFHN != false {
-            os.write_bool(10, self.BDNFLICNFHN)?;
+            os.write_bool(1, self.BDNFLICNFHN)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if self.LKJMLIDAODM != 0 {
-            os.write_uint32(6, self.LKJMLIDAODM)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.OPCLDNLLNFH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
+        if self.LKJMLIDAODM != 0 {
+            os.write_uint32(7, self.LKJMLIDAODM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -168,8 +168,8 @@ impl ::protobuf::Message for HFPFFJIMCKM {
     fn clear(&mut self) {
         self.BDNFLICNFHN = false;
         self.motion.clear();
-        self.LKJMLIDAODM = 0;
         self.OPCLDNLLNFH.clear();
+        self.LKJMLIDAODM = 0;
         self.special_fields.clear();
     }
 
@@ -177,8 +177,8 @@ impl ::protobuf::Message for HFPFFJIMCKM {
         static instance: HFPFFJIMCKM = HFPFFJIMCKM {
             BDNFLICNFHN: false,
             motion: ::protobuf::MessageField::none(),
-            LKJMLIDAODM: 0,
             OPCLDNLLNFH: ::std::vec::Vec::new(),
+            LKJMLIDAODM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for HFPFFJIMCKM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFPFFJIMCKM.proto\x1a\x10MotionInfo.proto\x1a\x0cVector.proto\"\
-    \xa1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bBDNFLICNFHN\x18\n\x20\x01(\x08R\
-    \x0bBDNFLICNFHN\x12#\n\x06motion\x18\x02\x20\x01(\x0b2\x0b.MotionInfoR\
-    \x06motion\x12\x20\n\x0bLKJMLIDAODM\x18\x06\x20\x01(\rR\x0bLKJMLIDAODM\
-    \x12)\n\x0bOPCLDNLLNFH\x18\t\x20\x03(\x0b2\x07.VectorR\x0bOPCLDNLLNFHb\
+    \xa1\x01\n\x0bHFPFFJIMCKM\x12\x20\n\x0bBDNFLICNFHN\x18\x01\x20\x01(\x08R\
+    \x0bBDNFLICNFHN\x12#\n\x06motion\x18\x05\x20\x01(\x0b2\x0b.MotionInfoR\
+    \x06motion\x12)\n\x0bOPCLDNLLNFH\x18\x0c\x20\x03(\x0b2\x07.VectorR\x0bOP\
+    CLDNLLNFH\x12\x20\n\x0bLKJMLIDAODM\x18\x07\x20\x01(\rR\x0bLKJMLIDAODMb\
     \x06proto3\
 ";
 

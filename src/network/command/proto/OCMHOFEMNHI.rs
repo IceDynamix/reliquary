@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCMHOFEMNHI {
     // message fields
-    // @@protoc_insertion_point(field:OCMHOFEMNHI.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:OCMHOFEMNHI.skill_id)
     pub skill_id: u32,
+    // @@protoc_insertion_point(field:OCMHOFEMNHI.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:OCMHOFEMNHI.JGMIPMDPPIJ)
     pub JGMIPMDPPIJ: u32,
     // special fields
@@ -54,14 +54,14 @@ impl OCMHOFEMNHI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &OCMHOFEMNHI| { &m.level },
-            |m: &mut OCMHOFEMNHI| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &OCMHOFEMNHI| { &m.skill_id },
             |m: &mut OCMHOFEMNHI| { &mut m.skill_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &OCMHOFEMNHI| { &m.level },
+            |m: &mut OCMHOFEMNHI| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGMIPMDPPIJ",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for OCMHOFEMNHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.level = is.read_uint32()?;
-                },
-                104 => {
+                48 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 80 => {
+                    self.level = is.read_uint32()?;
+                },
+                32 => {
                     self.JGMIPMDPPIJ = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OCMHOFEMNHI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
-        }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.skill_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         if self.JGMIPMDPPIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JGMIPMDPPIJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.JGMIPMDPPIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OCMHOFEMNHI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(4, self.level)?;
-        }
         if self.skill_id != 0 {
-            os.write_uint32(13, self.skill_id)?;
+            os.write_uint32(6, self.skill_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(10, self.level)?;
         }
         if self.JGMIPMDPPIJ != 0 {
-            os.write_uint32(10, self.JGMIPMDPPIJ)?;
+            os.write_uint32(4, self.JGMIPMDPPIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for OCMHOFEMNHI {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.skill_id = 0;
+        self.level = 0;
         self.JGMIPMDPPIJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OCMHOFEMNHI {
         static instance: OCMHOFEMNHI = OCMHOFEMNHI {
-            level: 0,
             skill_id: 0,
+            level: 0,
             JGMIPMDPPIJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for OCMHOFEMNHI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OCMHOFEMNHI.proto\"`\n\x0bOCMHOFEMNHI\x12\x14\n\x05level\x18\x04\
-    \x20\x01(\rR\x05level\x12\x19\n\x08skill_id\x18\r\x20\x01(\rR\x07skillId\
-    \x12\x20\n\x0bJGMIPMDPPIJ\x18\n\x20\x01(\rR\x0bJGMIPMDPPIJb\x06proto3\
+    \n\x11OCMHOFEMNHI.proto\"`\n\x0bOCMHOFEMNHI\x12\x19\n\x08skill_id\x18\
+    \x06\x20\x01(\rR\x07skillId\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05leve\
+    l\x12\x20\n\x0bJGMIPMDPPIJ\x18\x04\x20\x01(\rR\x0bJGMIPMDPPIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,13 +79,13 @@ impl ::protobuf::Message for RogueTournTakeExpRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.LOPMHJFBHIM)?;
                 },
-                120 => {
+                48 => {
                     self.LOPMHJFBHIM.push(is.read_uint32()?);
                 },
-                96 => {
+                32 => {
                     self.sub_tourn_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for RogueTournTakeExpRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LOPMHJFBHIM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LOPMHJFBHIM);
         if self.sub_tourn_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.sub_tourn_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.sub_tourn_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for RogueTournTakeExpRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.LOPMHJFBHIM)?;
+        os.write_repeated_packed_uint32(6, &self.LOPMHJFBHIM)?;
         if self.sub_tourn_id != 0 {
-            os.write_uint32(12, self.sub_tourn_id)?;
+            os.write_uint32(4, self.sub_tourn_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournTakeExpRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournTakeExpRewardCsReq.proto\"b\n\x1cRogueTournTakeExpRewardCs\
-    Req\x12\x20\n\x0bLOPMHJFBHIM\x18\x0f\x20\x03(\rR\x0bLOPMHJFBHIM\x12\x20\
-    \n\x0csub_tourn_id\x18\x0c\x20\x01(\rR\nsubTournIdb\x06proto3\
+    Req\x12\x20\n\x0bLOPMHJFBHIM\x18\x06\x20\x03(\rR\x0bLOPMHJFBHIM\x12\x20\
+    \n\x0csub_tourn_id\x18\x04\x20\x01(\rR\nsubTournIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

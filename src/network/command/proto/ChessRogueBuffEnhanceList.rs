@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueBuffEnhanceList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     self.enhance_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueBuffEnhanceList {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.enhance_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueBuffEnhanceList {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueBuffEnhanceList.proto\x1a\x1fChessRogueBuffEnhanceInfo.p\
     roto\"c\n\x19ChessRogueBuffEnhanceList\x12F\n\x11enhance_info_list\x18\
-    \x08\x20\x03(\x0b2\x1a.ChessRogueBuffEnhanceInfoR\x0fenhanceInfoListb\
+    \x03\x20\x03(\x0b2\x1a.ChessRogueBuffEnhanceInfoR\x0fenhanceInfoListb\
     \x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataCsReq {
     // message fields
+    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.group_id)
+    pub group_id: u32,
     // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.ODFHNCHIEJN)
     pub ODFHNCHIEJN: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
     // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.PNEIFBEGMDH)
     pub PNEIFBEGMDH: u32,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:UpdateGunPlayDataCsReq.uuid)
     pub uuid: u64,
     // special fields
@@ -55,6 +55,11 @@ impl UpdateGunPlayDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &UpdateGunPlayDataCsReq| { &m.group_id },
+            |m: &mut UpdateGunPlayDataCsReq| { &mut m.group_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLBHFHJDBFI::KLBHFHJDBFI>(
             "ODFHNCHIEJN",
             |m: &UpdateGunPlayDataCsReq| { &m.ODFHNCHIEJN },
@@ -64,11 +69,6 @@ impl UpdateGunPlayDataCsReq {
             "PNEIFBEGMDH",
             |m: &UpdateGunPlayDataCsReq| { &m.PNEIFBEGMDH },
             |m: &mut UpdateGunPlayDataCsReq| { &mut m.PNEIFBEGMDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &UpdateGunPlayDataCsReq| { &m.group_id },
-            |m: &mut UpdateGunPlayDataCsReq| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uuid",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODFHNCHIEJN)?;
-                },
-                112 => {
-                    self.PNEIFBEGMDH = is.read_uint32()?;
-                },
-                8 => {
+                72 => {
                     self.group_id = is.read_uint32()?;
                 },
-                120 => {
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODFHNCHIEJN)?;
+                },
+                96 => {
+                    self.PNEIFBEGMDH = is.read_uint32()?;
+                },
+                104 => {
                     self.uuid = is.read_uint64()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+        }
         if let Some(v) = self.ODFHNCHIEJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.PNEIFBEGMDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PNEIFBEGMDH);
-        }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.PNEIFBEGMDH);
         }
         if self.uuid != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.uuid);
+            my_size += ::protobuf::rt::uint64_size(13, self.uuid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.group_id != 0 {
+            os.write_uint32(9, self.group_id)?;
+        }
         if let Some(v) = self.ODFHNCHIEJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.PNEIFBEGMDH != 0 {
-            os.write_uint32(14, self.PNEIFBEGMDH)?;
-        }
-        if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(12, self.PNEIFBEGMDH)?;
         }
         if self.uuid != 0 {
-            os.write_uint64(15, self.uuid)?;
+            os.write_uint64(13, self.uuid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for UpdateGunPlayDataCsReq {
     }
 
     fn clear(&mut self) {
+        self.group_id = 0;
         self.ODFHNCHIEJN.clear();
         self.PNEIFBEGMDH = 0;
-        self.group_id = 0;
         self.uuid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataCsReq {
         static instance: UpdateGunPlayDataCsReq = UpdateGunPlayDataCsReq {
+            group_id: 0,
             ODFHNCHIEJN: ::protobuf::MessageField::none(),
             PNEIFBEGMDH: 0,
-            group_id: 0,
             uuid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cUpdateGunPlayDataCsReq.proto\x1a\x11KLBHFHJDBFI.proto\"\x99\x01\n\
-    \x16UpdateGunPlayDataCsReq\x12.\n\x0bODFHNCHIEJN\x18\x05\x20\x01(\x0b2\
-    \x0c.KLBHFHJDBFIR\x0bODFHNCHIEJN\x12\x20\n\x0bPNEIFBEGMDH\x18\x0e\x20\
-    \x01(\rR\x0bPNEIFBEGMDH\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07gro\
-    upId\x12\x12\n\x04uuid\x18\x0f\x20\x01(\x04R\x04uuidb\x06proto3\
+    \x16UpdateGunPlayDataCsReq\x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07gr\
+    oupId\x12.\n\x0bODFHNCHIEJN\x18\x0f\x20\x01(\x0b2\x0c.KLBHFHJDBFIR\x0bOD\
+    FHNCHIEJN\x12\x20\n\x0bPNEIFBEGMDH\x18\x0c\x20\x01(\rR\x0bPNEIFBEGMDH\
+    \x12\x12\n\x04uuid\x18\r\x20\x01(\x04R\x04uuidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

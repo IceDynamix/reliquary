@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PropTimelineInfo {
     // message fields
-    // @@protoc_insertion_point(field:PropTimelineInfo.timeline_bool_value)
-    pub timeline_bool_value: bool,
     // @@protoc_insertion_point(field:PropTimelineInfo.timeline_byte_value)
     pub timeline_byte_value: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:PropTimelineInfo.timeline_bool_value)
+    pub timeline_bool_value: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PropTimelineInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PropTimelineInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "timeline_bool_value",
-            |m: &PropTimelineInfo| { &m.timeline_bool_value },
-            |m: &mut PropTimelineInfo| { &mut m.timeline_bool_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "timeline_byte_value",
             |m: &PropTimelineInfo| { &m.timeline_byte_value },
             |m: &mut PropTimelineInfo| { &mut m.timeline_byte_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "timeline_bool_value",
+            |m: &PropTimelineInfo| { &m.timeline_bool_value },
+            |m: &mut PropTimelineInfo| { &mut m.timeline_bool_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PropTimelineInfo>(
             "PropTimelineInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PropTimelineInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.timeline_bool_value = is.read_bool()?;
-                },
-                58 => {
+                42 => {
                     self.timeline_byte_value = is.read_bytes()?;
+                },
+                96 => {
+                    self.timeline_bool_value = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PropTimelineInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.timeline_byte_value.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(5, &self.timeline_byte_value);
+        }
         if self.timeline_bool_value != false {
             my_size += 1 + 1;
-        }
-        if !self.timeline_byte_value.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(7, &self.timeline_byte_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PropTimelineInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.timeline_bool_value != false {
-            os.write_bool(1, self.timeline_bool_value)?;
-        }
         if !self.timeline_byte_value.is_empty() {
-            os.write_bytes(7, &self.timeline_byte_value)?;
+            os.write_bytes(5, &self.timeline_byte_value)?;
+        }
+        if self.timeline_bool_value != false {
+            os.write_bool(12, self.timeline_bool_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PropTimelineInfo {
     }
 
     fn clear(&mut self) {
-        self.timeline_bool_value = false;
         self.timeline_byte_value.clear();
+        self.timeline_bool_value = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PropTimelineInfo {
         static instance: PropTimelineInfo = PropTimelineInfo {
-            timeline_bool_value: false,
             timeline_byte_value: ::std::vec::Vec::new(),
+            timeline_bool_value: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PropTimelineInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PropTimelineInfo.proto\"r\n\x10PropTimelineInfo\x12.\n\x13timeline\
-    _bool_value\x18\x01\x20\x01(\x08R\x11timelineBoolValue\x12.\n\x13timelin\
-    e_byte_value\x18\x07\x20\x01(\x0cR\x11timelineByteValueb\x06proto3\
+    _byte_value\x18\x05\x20\x01(\x0cR\x11timelineByteValue\x12.\n\x13timelin\
+    e_bool_value\x18\x0c\x20\x01(\x08R\x11timelineBoolValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

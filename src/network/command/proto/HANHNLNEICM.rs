@@ -72,6 +72,8 @@ pub struct HANHNLNEICM {
     pub IBLGMCIPCKM: f64,
     // @@protoc_insertion_point(field:HANHNLNEICM.entity_id)
     pub entity_id: u32,
+    // @@protoc_insertion_point(field:HANHNLNEICM.LDMJDILBDFO)
+    pub LDMJDILBDFO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HANHNLNEICM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -89,7 +91,7 @@ impl HANHNLNEICM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(22);
+        let mut fields = ::std::vec::Vec::with_capacity(23);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -201,6 +203,11 @@ impl HANHNLNEICM {
             |m: &HANHNLNEICM| { &m.entity_id },
             |m: &mut HANHNLNEICM| { &mut m.entity_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDMJDILBDFO",
+            |m: &HANHNLNEICM| { &m.LDMJDILBDFO },
+            |m: &mut HANHNLNEICM| { &mut m.LDMJDILBDFO },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HANHNLNEICM>(
             "HANHNLNEICM",
             fields,
@@ -285,6 +292,9 @@ impl ::protobuf::Message for HANHNLNEICM {
                 176 => {
                     self.entity_id = is.read_uint32()?;
                 },
+                184 => {
+                    self.LDMJDILBDFO = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -367,6 +377,9 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(22, self.entity_id);
         }
+        if self.LDMJDILBDFO != 0 {
+            my_size += ::protobuf::rt::uint32_size(23, self.LDMJDILBDFO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -439,6 +452,9 @@ impl ::protobuf::Message for HANHNLNEICM {
         if self.entity_id != 0 {
             os.write_uint32(22, self.entity_id)?;
         }
+        if self.LDMJDILBDFO != 0 {
+            os.write_uint32(23, self.LDMJDILBDFO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -478,6 +494,7 @@ impl ::protobuf::Message for HANHNLNEICM {
         self.LKMGDIADOPB = 0;
         self.IBLGMCIPCKM = 0.;
         self.entity_id = 0;
+        self.LDMJDILBDFO = 0;
         self.special_fields.clear();
     }
 
@@ -505,6 +522,7 @@ impl ::protobuf::Message for HANHNLNEICM {
             LKMGDIADOPB: 0,
             IBLGMCIPCKM: 0.,
             entity_id: 0,
+            LDMJDILBDFO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -530,7 +548,7 @@ impl ::protobuf::reflect::ProtobufValue for HANHNLNEICM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HANHNLNEICM.proto\x1a\x1aAttackDamageProperty.proto\x1a\x16SkillUs\
-    eProperty.proto\"\xb3\x07\n\x0bHANHNLNEICM\x12\x1b\n\tavatar_id\x18\x01\
+    eProperty.proto\"\xd5\x07\n\x0bHANHNLNEICM\x12\x1b\n\tavatar_id\x18\x01\
     \x20\x01(\rR\x08avatarId\x12\x20\n\x0bDPDNNMBCPOI\x18\x02\x20\x01(\rR\
     \x0bDPDNNMBCPOI\x12\x1f\n\x0btotal_turns\x18\x03\x20\x01(\rR\ntotalTurns\
     \x12\x20\n\x0bFBCMJGMBJFC\x18\x04\x20\x01(\x01R\x0bFBCMJGMBJFC\x122\n\
@@ -551,7 +569,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x0bJEPLCJKFOMB\x12\x20\n\x0bNCJHDJJDJNL\x18\x13\x20\x01(\rR\x0bNCJHDJJD\
     JNL\x12\x20\n\x0bLKMGDIADOPB\x18\x14\x20\x01(\rR\x0bLKMGDIADOPB\x12\x20\
     \n\x0bIBLGMCIPCKM\x18\x15\x20\x01(\x01R\x0bIBLGMCIPCKM\x12\x1b\n\tentity\
-    _id\x18\x16\x20\x01(\rR\x08entityIdb\x06proto3\
+    _id\x18\x16\x20\x01(\rR\x08entityId\x12\x20\n\x0bLDMJDILBDFO\x18\x17\x20\
+    \x01(\rR\x0bLDMJDILBDFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

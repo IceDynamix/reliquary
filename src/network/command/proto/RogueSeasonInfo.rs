@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueSeasonInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueSeasonInfo.end_time)
-    pub end_time: i64,
     // @@protoc_insertion_point(field:RogueSeasonInfo.begin_time)
     pub begin_time: i64,
+    // @@protoc_insertion_point(field:RogueSeasonInfo.end_time)
+    pub end_time: i64,
     // @@protoc_insertion_point(field:RogueSeasonInfo.season)
     pub season: u32,
     // special fields
@@ -54,14 +54,14 @@ impl RogueSeasonInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &RogueSeasonInfo| { &m.end_time },
-            |m: &mut RogueSeasonInfo| { &mut m.end_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "begin_time",
             |m: &RogueSeasonInfo| { &m.begin_time },
             |m: &mut RogueSeasonInfo| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &RogueSeasonInfo| { &m.end_time },
+            |m: &mut RogueSeasonInfo| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "season",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueSeasonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.end_time = is.read_int64()?;
-                },
-                96 => {
+                120 => {
                     self.begin_time = is.read_int64()?;
                 },
-                104 => {
+                96 => {
+                    self.end_time = is.read_int64()?;
+                },
+                80 => {
                     self.season = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueSeasonInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.end_time);
-        }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(15, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.end_time);
         }
         if self.season != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.season);
+            my_size += ::protobuf::rt::uint32_size(10, self.season);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueSeasonInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_time != 0 {
-            os.write_int64(11, self.end_time)?;
-        }
         if self.begin_time != 0 {
-            os.write_int64(12, self.begin_time)?;
+            os.write_int64(15, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(12, self.end_time)?;
         }
         if self.season != 0 {
-            os.write_uint32(13, self.season)?;
+            os.write_uint32(10, self.season)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for RogueSeasonInfo {
     }
 
     fn clear(&mut self) {
-        self.end_time = 0;
         self.begin_time = 0;
+        self.end_time = 0;
         self.season = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueSeasonInfo {
         static instance: RogueSeasonInfo = RogueSeasonInfo {
-            end_time: 0,
             begin_time: 0,
+            end_time: 0,
             season: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueSeasonInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueSeasonInfo.proto\"c\n\x0fRogueSeasonInfo\x12\x19\n\x08end_tim\
-    e\x18\x0b\x20\x01(\x03R\x07endTime\x12\x1d\n\nbegin_time\x18\x0c\x20\x01\
-    (\x03R\tbeginTime\x12\x16\n\x06season\x18\r\x20\x01(\rR\x06seasonb\x06pr\
+    \n\x15RogueSeasonInfo.proto\"c\n\x0fRogueSeasonInfo\x12\x1d\n\nbegin_tim\
+    e\x18\x0f\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x0c\x20\x01\
+    (\x03R\x07endTime\x12\x16\n\x06season\x18\n\x20\x01(\rR\x06seasonb\x06pr\
     oto3\
 ";
 

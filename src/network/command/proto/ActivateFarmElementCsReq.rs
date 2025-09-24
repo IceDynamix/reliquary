@@ -82,7 +82,7 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
                 88 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.world_level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
             my_size += ::protobuf::rt::uint32_size(11, self.entity_id);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ActivateFarmElementCsReq {
             os.write_uint32(11, self.entity_id)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(6, self.world_level)?;
+            os.write_uint32(3, self.world_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ActivateFarmElementCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eActivateFarmElementCsReq.proto\"X\n\x18ActivateFarmElementCsReq\
     \x12\x1b\n\tentity_id\x18\x0b\x20\x01(\rR\x08entityId\x12\x1f\n\x0bworld\
-    _level\x18\x06\x20\x01(\rR\nworldLevelb\x06proto3\
+    _level\x18\x03\x20\x01(\rR\nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

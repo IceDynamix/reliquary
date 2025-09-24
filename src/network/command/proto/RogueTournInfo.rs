@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_area_info)
-    pub rogue_tourn_area_info: ::std::vec::Vec<super::RogueTournAreaInfo::RogueTournAreaInfo>,
-    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_handbook)
-    pub rogue_tourn_handbook: ::protobuf::MessageField<super::RogueTournHandbookInfo::RogueTournHandbookInfo>,
     // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_difficulty_info)
     pub rogue_tourn_difficulty_info: ::std::vec::Vec<super::RogueTournDifficultyInfo::RogueTournDifficultyInfo>,
-    // @@protoc_insertion_point(field:RogueTournInfo.permanent_info)
-    pub permanent_info: ::protobuf::MessageField<super::RogueTournPermanentTalentInfo::RogueTournPermanentTalentInfo>,
-    // @@protoc_insertion_point(field:RogueTournInfo.LKCEFCLJCBM)
-    pub LKCEFCLJCBM: ::protobuf::MessageField<super::KCLCHJMNPGL::KCLCHJMNPGL>,
     // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_save_list)
     pub rogue_tourn_save_list: ::std::vec::Vec<super::RogueTournSaveList::RogueTournSaveList>,
-    // @@protoc_insertion_point(field:RogueTournInfo.rogue_season_info)
-    pub rogue_season_info: ::protobuf::MessageField<super::RogueTournSeasonInfo::RogueTournSeasonInfo>,
+    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_exp_info)
+    pub rogue_tourn_exp_info: ::protobuf::MessageField<super::RogueTournExpInfo::RogueTournExpInfo>,
     // @@protoc_insertion_point(field:RogueTournInfo.LLAOOGCHHDK)
     pub LLAOOGCHHDK: ::protobuf::MessageField<super::GIGPOFFBIEO::GIGPOFFBIEO>,
     // @@protoc_insertion_point(field:RogueTournInfo.extra_score_info)
     pub extra_score_info: ::protobuf::MessageField<super::ExtraScoreInfo::ExtraScoreInfo>,
-    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_exp_info)
-    pub rogue_tourn_exp_info: ::protobuf::MessageField<super::RogueTournExpInfo::RogueTournExpInfo>,
+    // @@protoc_insertion_point(field:RogueTournInfo.rogue_season_info)
+    pub rogue_season_info: ::protobuf::MessageField<super::RogueTournSeasonInfo::RogueTournSeasonInfo>,
+    // @@protoc_insertion_point(field:RogueTournInfo.LKCEFCLJCBM)
+    pub LKCEFCLJCBM: ::protobuf::MessageField<super::KCLCHJMNPGL::KCLCHJMNPGL>,
+    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_handbook)
+    pub rogue_tourn_handbook: ::protobuf::MessageField<super::RogueTournHandbookInfo::RogueTournHandbookInfo>,
+    // @@protoc_insertion_point(field:RogueTournInfo.permanent_info)
+    pub permanent_info: ::protobuf::MessageField<super::RogueTournPermanentTalentInfo::RogueTournPermanentTalentInfo>,
+    // @@protoc_insertion_point(field:RogueTournInfo.rogue_tourn_area_info)
+    pub rogue_tourn_area_info: ::std::vec::Vec<super::RogueTournAreaInfo::RogueTournAreaInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,39 +68,19 @@ impl RogueTournInfo {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rogue_tourn_area_info",
-            |m: &RogueTournInfo| { &m.rogue_tourn_area_info },
-            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_area_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournHandbookInfo::RogueTournHandbookInfo>(
-            "rogue_tourn_handbook",
-            |m: &RogueTournInfo| { &m.rogue_tourn_handbook },
-            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_handbook },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_tourn_difficulty_info",
             |m: &RogueTournInfo| { &m.rogue_tourn_difficulty_info },
             |m: &mut RogueTournInfo| { &mut m.rogue_tourn_difficulty_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournPermanentTalentInfo::RogueTournPermanentTalentInfo>(
-            "permanent_info",
-            |m: &RogueTournInfo| { &m.permanent_info },
-            |m: &mut RogueTournInfo| { &mut m.permanent_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCLCHJMNPGL::KCLCHJMNPGL>(
-            "LKCEFCLJCBM",
-            |m: &RogueTournInfo| { &m.LKCEFCLJCBM },
-            |m: &mut RogueTournInfo| { &mut m.LKCEFCLJCBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_tourn_save_list",
             |m: &RogueTournInfo| { &m.rogue_tourn_save_list },
             |m: &mut RogueTournInfo| { &mut m.rogue_tourn_save_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSeasonInfo::RogueTournSeasonInfo>(
-            "rogue_season_info",
-            |m: &RogueTournInfo| { &m.rogue_season_info },
-            |m: &mut RogueTournInfo| { &mut m.rogue_season_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournExpInfo::RogueTournExpInfo>(
+            "rogue_tourn_exp_info",
+            |m: &RogueTournInfo| { &m.rogue_tourn_exp_info },
+            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_exp_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIGPOFFBIEO::GIGPOFFBIEO>(
             "LLAOOGCHHDK",
@@ -112,10 +92,30 @@ impl RogueTournInfo {
             |m: &RogueTournInfo| { &m.extra_score_info },
             |m: &mut RogueTournInfo| { &mut m.extra_score_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournExpInfo::RogueTournExpInfo>(
-            "rogue_tourn_exp_info",
-            |m: &RogueTournInfo| { &m.rogue_tourn_exp_info },
-            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_exp_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSeasonInfo::RogueTournSeasonInfo>(
+            "rogue_season_info",
+            |m: &RogueTournInfo| { &m.rogue_season_info },
+            |m: &mut RogueTournInfo| { &mut m.rogue_season_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCLCHJMNPGL::KCLCHJMNPGL>(
+            "LKCEFCLJCBM",
+            |m: &RogueTournInfo| { &m.LKCEFCLJCBM },
+            |m: &mut RogueTournInfo| { &mut m.LKCEFCLJCBM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournHandbookInfo::RogueTournHandbookInfo>(
+            "rogue_tourn_handbook",
+            |m: &RogueTournInfo| { &m.rogue_tourn_handbook },
+            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_handbook },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournPermanentTalentInfo::RogueTournPermanentTalentInfo>(
+            "permanent_info",
+            |m: &RogueTournInfo| { &m.permanent_info },
+            |m: &mut RogueTournInfo| { &mut m.permanent_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_tourn_area_info",
+            |m: &RogueTournInfo| { &m.rogue_tourn_area_info },
+            |m: &mut RogueTournInfo| { &mut m.rogue_tourn_area_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournInfo>(
             "RogueTournInfo",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for RogueTournInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.rogue_tourn_area_info.push(is.read_message()?);
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_handbook)?;
-                },
-                10 => {
+                122 => {
                     self.rogue_tourn_difficulty_info.push(is.read_message()?);
                 },
+                66 => {
+                    self.rogue_tourn_save_list.push(is.read_message()?);
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_exp_info)?;
+                },
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.permanent_info)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLAOOGCHHDK)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_score_info)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_season_info)?;
                 },
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LKCEFCLJCBM)?;
                 },
-                42 => {
-                    self.rogue_tourn_save_list.push(is.read_message()?);
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_handbook)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_season_info)?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLAOOGCHHDK)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.permanent_info)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_score_info)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_exp_info)?;
+                    self.rogue_tourn_area_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,31 +177,15 @@ impl ::protobuf::Message for RogueTournInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.rogue_tourn_area_info {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.rogue_tourn_handbook.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.rogue_tourn_difficulty_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.permanent_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.LKCEFCLJCBM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.rogue_tourn_save_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.rogue_season_info.as_ref() {
+        if let Some(v) = self.rogue_tourn_exp_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -213,46 +197,62 @@ impl ::protobuf::Message for RogueTournInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_tourn_exp_info.as_ref() {
+        if let Some(v) = self.rogue_season_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.LKCEFCLJCBM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_tourn_handbook.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.permanent_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.rogue_tourn_area_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.rogue_tourn_area_info {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if let Some(v) = self.rogue_tourn_handbook.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         for v in &self.rogue_tourn_difficulty_info {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if let Some(v) = self.permanent_info.as_ref() {
+        for v in &self.rogue_tourn_save_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if let Some(v) = self.rogue_tourn_exp_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.LLAOOGCHHDK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.extra_score_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.rogue_season_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.LKCEFCLJCBM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        for v in &self.rogue_tourn_save_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if let Some(v) = self.rogue_season_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.rogue_tourn_handbook.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.LLAOOGCHHDK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.permanent_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.extra_score_info.as_ref() {
+        for v in &self.rogue_tourn_area_info {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.rogue_tourn_exp_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -270,31 +270,31 @@ impl ::protobuf::Message for RogueTournInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_tourn_area_info.clear();
-        self.rogue_tourn_handbook.clear();
         self.rogue_tourn_difficulty_info.clear();
-        self.permanent_info.clear();
-        self.LKCEFCLJCBM.clear();
         self.rogue_tourn_save_list.clear();
-        self.rogue_season_info.clear();
+        self.rogue_tourn_exp_info.clear();
         self.LLAOOGCHHDK.clear();
         self.extra_score_info.clear();
-        self.rogue_tourn_exp_info.clear();
+        self.rogue_season_info.clear();
+        self.LKCEFCLJCBM.clear();
+        self.rogue_tourn_handbook.clear();
+        self.permanent_info.clear();
+        self.rogue_tourn_area_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournInfo {
         static instance: RogueTournInfo = RogueTournInfo {
-            rogue_tourn_area_info: ::std::vec::Vec::new(),
-            rogue_tourn_handbook: ::protobuf::MessageField::none(),
             rogue_tourn_difficulty_info: ::std::vec::Vec::new(),
-            permanent_info: ::protobuf::MessageField::none(),
-            LKCEFCLJCBM: ::protobuf::MessageField::none(),
             rogue_tourn_save_list: ::std::vec::Vec::new(),
-            rogue_season_info: ::protobuf::MessageField::none(),
+            rogue_tourn_exp_info: ::protobuf::MessageField::none(),
             LLAOOGCHHDK: ::protobuf::MessageField::none(),
             extra_score_info: ::protobuf::MessageField::none(),
-            rogue_tourn_exp_info: ::protobuf::MessageField::none(),
+            rogue_season_info: ::protobuf::MessageField::none(),
+            LKCEFCLJCBM: ::protobuf::MessageField::none(),
+            rogue_tourn_handbook: ::protobuf::MessageField::none(),
+            permanent_info: ::protobuf::MessageField::none(),
+            rogue_tourn_area_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -324,20 +324,20 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     RogueTournDifficultyInfo.proto\x1a\x17RogueTournExpInfo.proto\x1a\x1cRog\
     ueTournHandbookInfo.proto\x1a#RogueTournPermanentTalentInfo.proto\x1a\
     \x18RogueTournSaveList.proto\x1a\x1aRogueTournSeasonInfo.proto\"\xaf\x05\
-    \n\x0eRogueTournInfo\x12F\n\x15rogue_tourn_area_info\x18\x0c\x20\x03(\
-    \x0b2\x13.RogueTournAreaInfoR\x12rogueTournAreaInfo\x12I\n\x14rogue_tour\
-    n_handbook\x18\x02\x20\x01(\x0b2\x17.RogueTournHandbookInfoR\x12rogueTou\
-    rnHandbook\x12X\n\x1brogue_tourn_difficulty_info\x18\x01\x20\x03(\x0b2\
-    \x19.RogueTournDifficultyInfoR\x18rogueTournDifficultyInfo\x12E\n\x0eper\
-    manent_info\x18\t\x20\x01(\x0b2\x1e.RogueTournPermanentTalentInfoR\rperm\
-    anentInfo\x12.\n\x0bLKCEFCLJCBM\x18\x07\x20\x01(\x0b2\x0c.KCLCHJMNPGLR\
-    \x0bLKCEFCLJCBM\x12F\n\x15rogue_tourn_save_list\x18\x05\x20\x03(\x0b2\
-    \x13.RogueTournSaveListR\x12rogueTournSaveList\x12A\n\x11rogue_season_in\
-    fo\x18\x08\x20\x01(\x0b2\x15.RogueTournSeasonInfoR\x0frogueSeasonInfo\
-    \x12.\n\x0bLLAOOGCHHDK\x18\x0f\x20\x01(\x0b2\x0c.GIGPOFFBIEOR\x0bLLAOOGC\
-    HHDK\x129\n\x10extra_score_info\x18\x06\x20\x01(\x0b2\x0f.ExtraScoreInfo\
-    R\x0eextraScoreInfo\x12C\n\x14rogue_tourn_exp_info\x18\x04\x20\x01(\x0b2\
-    \x12.RogueTournExpInfoR\x11rogueTournExpInfob\x06proto3\
+    \n\x0eRogueTournInfo\x12X\n\x1brogue_tourn_difficulty_info\x18\x0f\x20\
+    \x03(\x0b2\x19.RogueTournDifficultyInfoR\x18rogueTournDifficultyInfo\x12\
+    F\n\x15rogue_tourn_save_list\x18\x08\x20\x03(\x0b2\x13.RogueTournSaveLis\
+    tR\x12rogueTournSaveList\x12C\n\x14rogue_tourn_exp_info\x18\x03\x20\x01(\
+    \x0b2\x12.RogueTournExpInfoR\x11rogueTournExpInfo\x12.\n\x0bLLAOOGCHHDK\
+    \x18\t\x20\x01(\x0b2\x0c.GIGPOFFBIEOR\x0bLLAOOGCHHDK\x129\n\x10extra_sco\
+    re_info\x18\r\x20\x01(\x0b2\x0f.ExtraScoreInfoR\x0eextraScoreInfo\x12A\n\
+    \x11rogue_season_info\x18\x0e\x20\x01(\x0b2\x15.RogueTournSeasonInfoR\
+    \x0frogueSeasonInfo\x12.\n\x0bLKCEFCLJCBM\x18\x07\x20\x01(\x0b2\x0c.KCLC\
+    HJMNPGLR\x0bLKCEFCLJCBM\x12I\n\x14rogue_tourn_handbook\x18\x0c\x20\x01(\
+    \x0b2\x17.RogueTournHandbookInfoR\x12rogueTournHandbook\x12E\n\x0eperman\
+    ent_info\x18\x01\x20\x01(\x0b2\x1e.RogueTournPermanentTalentInfoR\rperma\
+    nentInfo\x12F\n\x15rogue_tourn_area_info\x18\x06\x20\x03(\x0b2\x13.Rogue\
+    TournAreaInfoR\x12rogueTournAreaInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

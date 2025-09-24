@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGameUseBulletCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGameUseBulletCsReq.MIBCFIMMIKG)
-    pub MIBCFIMMIKG: ::protobuf::MessageField<super::Vector::Vector>,
     // @@protoc_insertion_point(field:WolfBroGameUseBulletCsReq.assist_monster_entity_id_list)
     pub assist_monster_entity_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:WolfBroGameUseBulletCsReq.MIBCFIMMIKG)
+    pub MIBCFIMMIKG: ::protobuf::MessageField<super::Vector::Vector>,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGameUseBulletCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl WolfBroGameUseBulletCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "MIBCFIMMIKG",
-            |m: &WolfBroGameUseBulletCsReq| { &m.MIBCFIMMIKG },
-            |m: &mut WolfBroGameUseBulletCsReq| { &mut m.MIBCFIMMIKG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "assist_monster_entity_id_list",
             |m: &WolfBroGameUseBulletCsReq| { &m.assist_monster_entity_id_list },
             |m: &mut WolfBroGameUseBulletCsReq| { &mut m.assist_monster_entity_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
+            "MIBCFIMMIKG",
+            |m: &WolfBroGameUseBulletCsReq| { &m.MIBCFIMMIKG },
+            |m: &mut WolfBroGameUseBulletCsReq| { &mut m.MIBCFIMMIKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGameUseBulletCsReq>(
             "WolfBroGameUseBulletCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIBCFIMMIKG)?;
-                },
-                18 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.assist_monster_entity_id_list)?;
                 },
-                16 => {
+                56 => {
                     self.assist_monster_entity_id_list.push(is.read_uint32()?);
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIBCFIMMIKG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.assist_monster_entity_id_list);
         if let Some(v) = self.MIBCFIMMIKG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.assist_monster_entity_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(7, &self.assist_monster_entity_id_list)?;
         if let Some(v) = self.MIBCFIMMIKG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        os.write_repeated_packed_uint32(2, &self.assist_monster_entity_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for WolfBroGameUseBulletCsReq {
     }
 
     fn clear(&mut self) {
-        self.MIBCFIMMIKG.clear();
         self.assist_monster_entity_id_list.clear();
+        self.MIBCFIMMIKG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGameUseBulletCsReq {
         static instance: WolfBroGameUseBulletCsReq = WolfBroGameUseBulletCsReq {
-            MIBCFIMMIKG: ::protobuf::MessageField::none(),
             assist_monster_entity_id_list: ::std::vec::Vec::new(),
+            MIBCFIMMIKG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameUseBulletCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fWolfBroGameUseBulletCsReq.proto\x1a\x0cVector.proto\"\x88\x01\n\
-    \x19WolfBroGameUseBulletCsReq\x12)\n\x0bMIBCFIMMIKG\x18\x04\x20\x01(\x0b\
-    2\x07.VectorR\x0bMIBCFIMMIKG\x12@\n\x1dassist_monster_entity_id_list\x18\
-    \x02\x20\x03(\rR\x19assistMonsterEntityIdListb\x06proto3\
+    \x19WolfBroGameUseBulletCsReq\x12@\n\x1dassist_monster_entity_id_list\
+    \x18\x07\x20\x03(\rR\x19assistMonsterEntityIdList\x12)\n\x0bMIBCFIMMIKG\
+    \x18\x05\x20\x01(\x0b2\x07.VectorR\x0bMIBCFIMMIKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

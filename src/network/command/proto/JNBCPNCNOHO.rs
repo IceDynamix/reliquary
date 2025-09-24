@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNBCPNCNOHO {
     // message fields
+    // @@protoc_insertion_point(field:JNBCPNCNOHO.PNJEEPOEMCA)
+    pub PNJEEPOEMCA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JNBCPNCNOHO.BJCMPHLPKNF)
     pub BJCMPHLPKNF: ::std::vec::Vec<super::BLNEHDIFMOO::BLNEHDIFMOO>,
     // @@protoc_insertion_point(field:JNBCPNCNOHO.LHNJMBGNDKC)
     pub LHNJMBGNDKC: u32,
-    // @@protoc_insertion_point(field:JNBCPNCNOHO.PNJEEPOEMCA)
-    pub PNJEEPOEMCA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:JNBCPNCNOHO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl JNBCPNCNOHO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PNJEEPOEMCA",
+            |m: &JNBCPNCNOHO| { &m.PNJEEPOEMCA },
+            |m: &mut JNBCPNCNOHO| { &mut m.PNJEEPOEMCA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BJCMPHLPKNF",
             |m: &JNBCPNCNOHO| { &m.BJCMPHLPKNF },
             |m: &mut JNBCPNCNOHO| { &mut m.BJCMPHLPKNF },
@@ -62,11 +67,6 @@ impl JNBCPNCNOHO {
             "LHNJMBGNDKC",
             |m: &JNBCPNCNOHO| { &m.LHNJMBGNDKC },
             |m: &mut JNBCPNCNOHO| { &mut m.LHNJMBGNDKC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNJEEPOEMCA",
-            |m: &JNBCPNCNOHO| { &m.PNJEEPOEMCA },
-            |m: &mut JNBCPNCNOHO| { &mut m.PNJEEPOEMCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNBCPNCNOHO>(
             "JNBCPNCNOHO",
@@ -87,16 +87,16 @@ impl ::protobuf::Message for JNBCPNCNOHO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    self.BJCMPHLPKNF.push(is.read_message()?);
-                },
-                8 => {
-                    self.LHNJMBGNDKC = is.read_uint32()?;
-                },
-                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.PNJEEPOEMCA)?;
                 },
-                40 => {
+                24 => {
                     self.PNJEEPOEMCA.push(is.read_uint32()?);
+                },
+                98 => {
+                    self.BJCMPHLPKNF.push(is.read_message()?);
+                },
+                32 => {
+                    self.LHNJMBGNDKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for JNBCPNCNOHO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PNJEEPOEMCA);
         for value in &self.BJCMPHLPKNF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.LHNJMBGNDKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHNJMBGNDKC);
+            my_size += ::protobuf::rt::uint32_size(4, self.LHNJMBGNDKC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PNJEEPOEMCA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.PNJEEPOEMCA)?;
         for v in &self.BJCMPHLPKNF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.LHNJMBGNDKC != 0 {
-            os.write_uint32(1, self.LHNJMBGNDKC)?;
+            os.write_uint32(4, self.LHNJMBGNDKC)?;
         }
-        os.write_repeated_packed_uint32(5, &self.PNJEEPOEMCA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JNBCPNCNOHO {
     }
 
     fn clear(&mut self) {
+        self.PNJEEPOEMCA.clear();
         self.BJCMPHLPKNF.clear();
         self.LHNJMBGNDKC = 0;
-        self.PNJEEPOEMCA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNBCPNCNOHO {
         static instance: JNBCPNCNOHO = JNBCPNCNOHO {
+            PNJEEPOEMCA: ::std::vec::Vec::new(),
             BJCMPHLPKNF: ::std::vec::Vec::new(),
             LHNJMBGNDKC: 0,
-            PNJEEPOEMCA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JNBCPNCNOHO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JNBCPNCNOHO.proto\x1a\x11BLNEHDIFMOO.proto\"\x81\x01\n\x0bJNBCPNCN\
-    OHO\x12.\n\x0bBJCMPHLPKNF\x18\x03\x20\x03(\x0b2\x0c.BLNEHDIFMOOR\x0bBJCM\
-    PHLPKNF\x12\x20\n\x0bLHNJMBGNDKC\x18\x01\x20\x01(\rR\x0bLHNJMBGNDKC\x12\
-    \x20\n\x0bPNJEEPOEMCA\x18\x05\x20\x03(\rR\x0bPNJEEPOEMCAb\x06proto3\
+    OHO\x12\x20\n\x0bPNJEEPOEMCA\x18\x03\x20\x03(\rR\x0bPNJEEPOEMCA\x12.\n\
+    \x0bBJCMPHLPKNF\x18\x0c\x20\x03(\x0b2\x0c.BLNEHDIFMOOR\x0bBJCMPHLPKNF\
+    \x12\x20\n\x0bLHNJMBGNDKC\x18\x04\x20\x01(\rR\x0bLHNJMBGNDKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

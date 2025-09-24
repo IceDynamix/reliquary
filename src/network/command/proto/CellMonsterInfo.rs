@@ -86,13 +86,13 @@ impl ::protobuf::Message for CellMonsterInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.select_boss_id = is.read_uint32()?;
                 },
-                80 => {
+                16 => {
                     self.confirm = is.read_bool()?;
                 },
-                66 => {
+                98 => {
                     self.cell_monster_list.push(is.read_message()?);
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for CellMonsterInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.select_boss_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.select_boss_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.select_boss_id);
         }
         if self.confirm != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for CellMonsterInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.select_boss_id != 0 {
-            os.write_uint32(6, self.select_boss_id)?;
+            os.write_uint32(13, self.select_boss_id)?;
         }
         if self.confirm != false {
-            os.write_bool(10, self.confirm)?;
+            os.write_bool(2, self.confirm)?;
         }
         for v in &self.cell_monster_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for CellMonsterInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CellMonsterInfo.proto\x1a\x11CellMonster.proto\"\x8b\x01\n\x0fCell\
-    MonsterInfo\x12$\n\x0eselect_boss_id\x18\x06\x20\x01(\rR\x0cselectBossId\
-    \x12\x18\n\x07confirm\x18\n\x20\x01(\x08R\x07confirm\x128\n\x11cell_mons\
-    ter_list\x18\x08\x20\x03(\x0b2\x0c.CellMonsterR\x0fcellMonsterListb\x06p\
-    roto3\
+    MonsterInfo\x12$\n\x0eselect_boss_id\x18\r\x20\x01(\rR\x0cselectBossId\
+    \x12\x18\n\x07confirm\x18\x02\x20\x01(\x08R\x07confirm\x128\n\x11cell_mo\
+    nster_list\x18\x0c\x20\x03(\x0b2\x0c.CellMonsterR\x0fcellMonsterListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

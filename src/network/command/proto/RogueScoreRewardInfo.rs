@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueScoreRewardInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueScoreRewardInfo.CILNJIDIDHL)
-    pub CILNJIDIDHL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueScoreRewardInfo.PJHLOCDBAEH)
-    pub PJHLOCDBAEH: bool,
     // @@protoc_insertion_point(field:RogueScoreRewardInfo.HDLADIBHBHH)
     pub HDLADIBHBHH: u32,
+    // @@protoc_insertion_point(field:RogueScoreRewardInfo.PJHLOCDBAEH)
+    pub PJHLOCDBAEH: bool,
     // @@protoc_insertion_point(field:RogueScoreRewardInfo.JOMNPADAGGK)
     pub JOMNPADAGGK: bool,
-    // @@protoc_insertion_point(field:RogueScoreRewardInfo.HOEPOJNNFCI)
-    pub HOEPOJNNFCI: i64,
-    // @@protoc_insertion_point(field:RogueScoreRewardInfo.CIGBOGHAFOF)
-    pub CIGBOGHAFOF: i64,
     // @@protoc_insertion_point(field:RogueScoreRewardInfo.HHJPBLEKAPN)
     pub HHJPBLEKAPN: u32,
+    // @@protoc_insertion_point(field:RogueScoreRewardInfo.CIGBOGHAFOF)
+    pub CIGBOGHAFOF: i64,
+    // @@protoc_insertion_point(field:RogueScoreRewardInfo.CILNJIDIDHL)
+    pub CILNJIDIDHL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueScoreRewardInfo.HOEPOJNNFCI)
+    pub HOEPOJNNFCI: i64,
     // special fields
     // @@protoc_insertion_point(special_field:RogueScoreRewardInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,10 +61,10 @@ impl RogueScoreRewardInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CILNJIDIDHL",
-            |m: &RogueScoreRewardInfo| { &m.CILNJIDIDHL },
-            |m: &mut RogueScoreRewardInfo| { &mut m.CILNJIDIDHL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDLADIBHBHH",
+            |m: &RogueScoreRewardInfo| { &m.HDLADIBHBHH },
+            |m: &mut RogueScoreRewardInfo| { &mut m.HDLADIBHBHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJHLOCDBAEH",
@@ -72,29 +72,29 @@ impl RogueScoreRewardInfo {
             |m: &mut RogueScoreRewardInfo| { &mut m.PJHLOCDBAEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDLADIBHBHH",
-            |m: &RogueScoreRewardInfo| { &m.HDLADIBHBHH },
-            |m: &mut RogueScoreRewardInfo| { &mut m.HDLADIBHBHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOMNPADAGGK",
             |m: &RogueScoreRewardInfo| { &m.JOMNPADAGGK },
             |m: &mut RogueScoreRewardInfo| { &mut m.JOMNPADAGGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOEPOJNNFCI",
-            |m: &RogueScoreRewardInfo| { &m.HOEPOJNNFCI },
-            |m: &mut RogueScoreRewardInfo| { &mut m.HOEPOJNNFCI },
+            "HHJPBLEKAPN",
+            |m: &RogueScoreRewardInfo| { &m.HHJPBLEKAPN },
+            |m: &mut RogueScoreRewardInfo| { &mut m.HHJPBLEKAPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CIGBOGHAFOF",
             |m: &RogueScoreRewardInfo| { &m.CIGBOGHAFOF },
             |m: &mut RogueScoreRewardInfo| { &mut m.CIGBOGHAFOF },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CILNJIDIDHL",
+            |m: &RogueScoreRewardInfo| { &m.CILNJIDIDHL },
+            |m: &mut RogueScoreRewardInfo| { &mut m.CILNJIDIDHL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHJPBLEKAPN",
-            |m: &RogueScoreRewardInfo| { &m.HHJPBLEKAPN },
-            |m: &mut RogueScoreRewardInfo| { &mut m.HHJPBLEKAPN },
+            "HOEPOJNNFCI",
+            |m: &RogueScoreRewardInfo| { &m.HOEPOJNNFCI },
+            |m: &mut RogueScoreRewardInfo| { &mut m.HOEPOJNNFCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueScoreRewardInfo>(
             "RogueScoreRewardInfo",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CILNJIDIDHL)?;
-                },
-                8 => {
-                    self.CILNJIDIDHL.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.PJHLOCDBAEH = is.read_bool()?;
-                },
-                56 => {
+                96 => {
                     self.HDLADIBHBHH = is.read_uint32()?;
                 },
                 112 => {
+                    self.PJHLOCDBAEH = is.read_bool()?;
+                },
+                48 => {
                     self.JOMNPADAGGK = is.read_bool()?;
                 },
-                120 => {
-                    self.HOEPOJNNFCI = is.read_int64()?;
+                64 => {
+                    self.HHJPBLEKAPN = is.read_uint32()?;
                 },
                 40 => {
                     self.CIGBOGHAFOF = is.read_int64()?;
                 },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CILNJIDIDHL)?;
+                },
+                88 => {
+                    self.CILNJIDIDHL.push(is.read_uint32()?);
+                },
                 32 => {
-                    self.HHJPBLEKAPN = is.read_uint32()?;
+                    self.HOEPOJNNFCI = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,24 +150,24 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.CILNJIDIDHL);
+        if self.HDLADIBHBHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HDLADIBHBHH);
+        }
         if self.PJHLOCDBAEH != false {
             my_size += 1 + 1;
-        }
-        if self.HDLADIBHBHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HDLADIBHBHH);
         }
         if self.JOMNPADAGGK != false {
             my_size += 1 + 1;
         }
-        if self.HOEPOJNNFCI != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.HOEPOJNNFCI);
+        if self.HHJPBLEKAPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HHJPBLEKAPN);
         }
         if self.CIGBOGHAFOF != 0 {
             my_size += ::protobuf::rt::int64_size(5, self.CIGBOGHAFOF);
         }
-        if self.HHJPBLEKAPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HHJPBLEKAPN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CILNJIDIDHL);
+        if self.HOEPOJNNFCI != 0 {
+            my_size += ::protobuf::rt::int64_size(4, self.HOEPOJNNFCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,24 +175,24 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.CILNJIDIDHL)?;
-        if self.PJHLOCDBAEH != false {
-            os.write_bool(10, self.PJHLOCDBAEH)?;
-        }
         if self.HDLADIBHBHH != 0 {
-            os.write_uint32(7, self.HDLADIBHBHH)?;
+            os.write_uint32(12, self.HDLADIBHBHH)?;
+        }
+        if self.PJHLOCDBAEH != false {
+            os.write_bool(14, self.PJHLOCDBAEH)?;
         }
         if self.JOMNPADAGGK != false {
-            os.write_bool(14, self.JOMNPADAGGK)?;
+            os.write_bool(6, self.JOMNPADAGGK)?;
         }
-        if self.HOEPOJNNFCI != 0 {
-            os.write_int64(15, self.HOEPOJNNFCI)?;
+        if self.HHJPBLEKAPN != 0 {
+            os.write_uint32(8, self.HHJPBLEKAPN)?;
         }
         if self.CIGBOGHAFOF != 0 {
             os.write_int64(5, self.CIGBOGHAFOF)?;
         }
-        if self.HHJPBLEKAPN != 0 {
-            os.write_uint32(4, self.HHJPBLEKAPN)?;
+        os.write_repeated_packed_uint32(11, &self.CILNJIDIDHL)?;
+        if self.HOEPOJNNFCI != 0 {
+            os.write_int64(4, self.HOEPOJNNFCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -211,25 +211,25 @@ impl ::protobuf::Message for RogueScoreRewardInfo {
     }
 
     fn clear(&mut self) {
-        self.CILNJIDIDHL.clear();
-        self.PJHLOCDBAEH = false;
         self.HDLADIBHBHH = 0;
+        self.PJHLOCDBAEH = false;
         self.JOMNPADAGGK = false;
-        self.HOEPOJNNFCI = 0;
-        self.CIGBOGHAFOF = 0;
         self.HHJPBLEKAPN = 0;
+        self.CIGBOGHAFOF = 0;
+        self.CILNJIDIDHL.clear();
+        self.HOEPOJNNFCI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueScoreRewardInfo {
         static instance: RogueScoreRewardInfo = RogueScoreRewardInfo {
-            CILNJIDIDHL: ::std::vec::Vec::new(),
-            PJHLOCDBAEH: false,
             HDLADIBHBHH: 0,
+            PJHLOCDBAEH: false,
             JOMNPADAGGK: false,
-            HOEPOJNNFCI: 0,
-            CIGBOGHAFOF: 0,
             HHJPBLEKAPN: 0,
+            CIGBOGHAFOF: 0,
+            CILNJIDIDHL: ::std::vec::Vec::new(),
+            HOEPOJNNFCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueScoreRewardInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueScoreRewardInfo.proto\"\x84\x02\n\x14RogueScoreRewardInfo\x12\
-    \x20\n\x0bCILNJIDIDHL\x18\x01\x20\x03(\rR\x0bCILNJIDIDHL\x12\x20\n\x0bPJ\
-    HLOCDBAEH\x18\n\x20\x01(\x08R\x0bPJHLOCDBAEH\x12\x20\n\x0bHDLADIBHBHH\
-    \x18\x07\x20\x01(\rR\x0bHDLADIBHBHH\x12\x20\n\x0bJOMNPADAGGK\x18\x0e\x20\
-    \x01(\x08R\x0bJOMNPADAGGK\x12\x20\n\x0bHOEPOJNNFCI\x18\x0f\x20\x01(\x03R\
-    \x0bHOEPOJNNFCI\x12\x20\n\x0bCIGBOGHAFOF\x18\x05\x20\x01(\x03R\x0bCIGBOG\
-    HAFOF\x12\x20\n\x0bHHJPBLEKAPN\x18\x04\x20\x01(\rR\x0bHHJPBLEKAPNb\x06pr\
-    oto3\
+    \x20\n\x0bHDLADIBHBHH\x18\x0c\x20\x01(\rR\x0bHDLADIBHBHH\x12\x20\n\x0bPJ\
+    HLOCDBAEH\x18\x0e\x20\x01(\x08R\x0bPJHLOCDBAEH\x12\x20\n\x0bJOMNPADAGGK\
+    \x18\x06\x20\x01(\x08R\x0bJOMNPADAGGK\x12\x20\n\x0bHHJPBLEKAPN\x18\x08\
+    \x20\x01(\rR\x0bHHJPBLEKAPN\x12\x20\n\x0bCIGBOGHAFOF\x18\x05\x20\x01(\
+    \x03R\x0bCIGBOGHAFOF\x12\x20\n\x0bCILNJIDIDHL\x18\x0b\x20\x03(\rR\x0bCIL\
+    NJIDIDHL\x12\x20\n\x0bHOEPOJNNFCI\x18\x04\x20\x01(\x03R\x0bHOEPOJNNFCIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

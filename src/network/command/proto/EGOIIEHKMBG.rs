@@ -79,7 +79,7 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.HOIOKBKGFDN = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HOIOKBKGFDN);
+            my_size += ::protobuf::rt::uint32_size(4, self.HOIOKBKGFDN);
         }
         if self.num != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.num);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EGOIIEHKMBG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(8, self.HOIOKBKGFDN)?;
+            os.write_uint32(4, self.HOIOKBKGFDN)?;
         }
         if self.num != 0 {
             os.write_uint32(6, self.num)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EGOIIEHKMBG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EGOIIEHKMBG.proto\"A\n\x0bEGOIIEHKMBG\x12\x20\n\x0bHOIOKBKGFDN\x18\
-    \x08\x20\x01(\rR\x0bHOIOKBKGFDN\x12\x10\n\x03num\x18\x06\x20\x01(\rR\x03\
+    \x04\x20\x01(\rR\x0bHOIOKBKGFDN\x12\x10\n\x03num\x18\x06\x20\x01(\rR\x03\
     numb\x06proto3\
 ";
 

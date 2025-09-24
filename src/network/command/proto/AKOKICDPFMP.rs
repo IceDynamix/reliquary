@@ -48,7 +48,7 @@ impl AKOKICDPFMP {
         ::std::default::Default::default()
     }
 
-    // .LBAOGIBPJOP LGPIEMDLHJM = 1111;
+    // .LBAOGIBPJOP LGPIEMDLHJM = 1811;
 
     pub fn LGPIEMDLHJM(&self) -> &super::LBAOGIBPJOP::LBAOGIBPJOP {
         match self.HBFOFPDAFPD {
@@ -97,7 +97,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .GLDNBPFCNHD PHMCJEJIDJA = 672;
+    // .GLDNBPFCNHD PHMCJEJIDJA = 1156;
 
     pub fn PHMCJEJIDJA(&self) -> &super::GLDNBPFCNHD::GLDNBPFCNHD {
         match self.HBFOFPDAFPD {
@@ -146,7 +146,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .ICAOOPPMJDJ rogue_finish_info = 1833;
+    // .ICAOOPPMJDJ rogue_finish_info = 1856;
 
     pub fn rogue_finish_info(&self) -> &super::ICAOOPPMJDJ::ICAOOPPMJDJ {
         match self.HBFOFPDAFPD {
@@ -195,7 +195,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .MAOGFDKDCKM MEJDMJIKIMO = 1983;
+    // .MAOGFDKDCKM MEJDMJIKIMO = 1302;
 
     pub fn MEJDMJIKIMO(&self) -> &super::MAOGFDKDCKM::MAOGFDKDCKM {
         match self.HBFOFPDAFPD {
@@ -244,7 +244,7 @@ impl AKOKICDPFMP {
         }
     }
 
-    // .GOCKGIGBDCG JHFGDIJPFCG = 1886;
+    // .GOCKGIGBDCG JHFGDIJPFCG = 2009;
 
     pub fn JHFGDIJPFCG(&self) -> &super::GOCKGIGBDCG::GOCKGIGBDCG {
         match self.HBFOFPDAFPD {
@@ -355,22 +355,22 @@ impl ::protobuf::Message for AKOKICDPFMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                112 => {
                     self.AHEHKCILDFA = is.read_uint32()?;
                 },
-                8890 => {
+                14490 => {
                     self.HBFOFPDAFPD = ::std::option::Option::Some(akokicdpfmp::HBFOFPDAFPD::LGPIEMDLHJM(is.read_message()?));
                 },
-                5378 => {
+                9250 => {
                     self.HBFOFPDAFPD = ::std::option::Option::Some(akokicdpfmp::HBFOFPDAFPD::PHMCJEJIDJA(is.read_message()?));
                 },
-                14666 => {
+                14850 => {
                     self.HBFOFPDAFPD = ::std::option::Option::Some(akokicdpfmp::HBFOFPDAFPD::RogueFinishInfo(is.read_message()?));
                 },
-                15866 => {
+                10418 => {
                     self.HBFOFPDAFPD = ::std::option::Option::Some(akokicdpfmp::HBFOFPDAFPD::MEJDMJIKIMO(is.read_message()?));
                 },
-                15090 => {
+                16074 => {
                     self.HBFOFPDAFPD = ::std::option::Option::Some(akokicdpfmp::HBFOFPDAFPD::JHFGDIJPFCG(is.read_message()?));
                 },
                 tag => {
@@ -386,7 +386,7 @@ impl ::protobuf::Message for AKOKICDPFMP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AHEHKCILDFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AHEHKCILDFA);
+            my_size += ::protobuf::rt::uint32_size(14, self.AHEHKCILDFA);
         }
         if let ::std::option::Option::Some(ref v) = self.HBFOFPDAFPD {
             match v {
@@ -419,24 +419,24 @@ impl ::protobuf::Message for AKOKICDPFMP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AHEHKCILDFA != 0 {
-            os.write_uint32(9, self.AHEHKCILDFA)?;
+            os.write_uint32(14, self.AHEHKCILDFA)?;
         }
         if let ::std::option::Option::Some(ref v) = self.HBFOFPDAFPD {
             match v {
                 &akokicdpfmp::HBFOFPDAFPD::LGPIEMDLHJM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1111, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1811, v, os)?;
                 },
                 &akokicdpfmp::HBFOFPDAFPD::PHMCJEJIDJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(672, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1156, v, os)?;
                 },
                 &akokicdpfmp::HBFOFPDAFPD::RogueFinishInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1833, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1856, v, os)?;
                 },
                 &akokicdpfmp::HBFOFPDAFPD::MEJDMJIKIMO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1983, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1302, v, os)?;
                 },
                 &akokicdpfmp::HBFOFPDAFPD::JHFGDIJPFCG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1886, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2009, v, os)?;
                 },
             };
         }
@@ -532,13 +532,13 @@ pub mod akokicdpfmp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AKOKICDPFMP.proto\x1a\x11GLDNBPFCNHD.proto\x1a\x11GOCKGIGBDCG.prot\
     o\x1a\x11ICAOOPPMJDJ.proto\x1a\x11LBAOGIBPJOP.proto\x1a\x11MAOGFDKDCKM.p\
-    roto\"\xc7\x02\n\x0bAKOKICDPFMP\x12\x20\n\x0bAHEHKCILDFA\x18\t\x20\x01(\
-    \rR\x0bAHEHKCILDFA\x121\n\x0bLGPIEMDLHJM\x18\xd7\x08\x20\x01(\x0b2\x0c.L\
-    BAOGIBPJOPH\0R\x0bLGPIEMDLHJM\x121\n\x0bPHMCJEJIDJA\x18\xa0\x05\x20\x01(\
+    roto\"\xc7\x02\n\x0bAKOKICDPFMP\x12\x20\n\x0bAHEHKCILDFA\x18\x0e\x20\x01\
+    (\rR\x0bAHEHKCILDFA\x121\n\x0bLGPIEMDLHJM\x18\x93\x0e\x20\x01(\x0b2\x0c.\
+    LBAOGIBPJOPH\0R\x0bLGPIEMDLHJM\x121\n\x0bPHMCJEJIDJA\x18\x84\t\x20\x01(\
     \x0b2\x0c.GLDNBPFCNHDH\0R\x0bPHMCJEJIDJA\x12;\n\x11rogue_finish_info\x18\
-    \xa9\x0e\x20\x01(\x0b2\x0c.ICAOOPPMJDJH\0R\x0frogueFinishInfo\x121\n\x0b\
-    MEJDMJIKIMO\x18\xbf\x0f\x20\x01(\x0b2\x0c.MAOGFDKDCKMH\0R\x0bMEJDMJIKIMO\
-    \x121\n\x0bJHFGDIJPFCG\x18\xde\x0e\x20\x01(\x0b2\x0c.GOCKGIGBDCGH\0R\x0b\
+    \xc0\x0e\x20\x01(\x0b2\x0c.ICAOOPPMJDJH\0R\x0frogueFinishInfo\x121\n\x0b\
+    MEJDMJIKIMO\x18\x96\n\x20\x01(\x0b2\x0c.MAOGFDKDCKMH\0R\x0bMEJDMJIKIMO\
+    \x121\n\x0bJHFGDIJPFCG\x18\xd9\x0f\x20\x01(\x0b2\x0c.GOCKGIGBDCGH\0R\x0b\
     JHFGDIJPFCGB\r\n\x0bHBFOFPDAFPDb\x06proto3\
 ";
 

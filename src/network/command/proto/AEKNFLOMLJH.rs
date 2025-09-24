@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AEKNFLOMLJH {
     // message fields
-    // @@protoc_insertion_point(field:AEKNFLOMLJH.buff_list)
-    pub buff_list: ::std::vec::Vec<super::FCPMBJHFBNJ::FCPMBJHFBNJ>,
     // @@protoc_insertion_point(field:AEKNFLOMLJH.BELOFMFHFDK)
     pub BELOFMFHFDK: ::std::vec::Vec<super::KNIJHGNJIJM::KNIJHGNJIJM>,
+    // @@protoc_insertion_point(field:AEKNFLOMLJH.buff_list)
+    pub buff_list: ::std::vec::Vec<super::FCPMBJHFBNJ::FCPMBJHFBNJ>,
     // @@protoc_insertion_point(field:AEKNFLOMLJH.miracle_list)
     pub miracle_list: ::std::vec::Vec<super::GIADLHEEPHD::GIADLHEEPHD>,
     // @@protoc_insertion_point(field:AEKNFLOMLJH.BJCMPHLPKNF)
@@ -56,14 +56,14 @@ impl AEKNFLOMLJH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &AEKNFLOMLJH| { &m.buff_list },
-            |m: &mut AEKNFLOMLJH| { &mut m.buff_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BELOFMFHFDK",
             |m: &AEKNFLOMLJH| { &m.BELOFMFHFDK },
             |m: &mut AEKNFLOMLJH| { &mut m.BELOFMFHFDK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &AEKNFLOMLJH| { &m.buff_list },
+            |m: &mut AEKNFLOMLJH| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "miracle_list",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for AEKNFLOMLJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.buff_list.push(is.read_message()?);
-                },
                 82 => {
                     self.BELOFMFHFDK.push(is.read_message()?);
                 },
                 58 => {
+                    self.buff_list.push(is.read_message()?);
+                },
+                122 => {
                     self.miracle_list.push(is.read_message()?);
                 },
-                42 => {
+                26 => {
                     self.BJCMPHLPKNF.push(is.read_message()?);
                 },
                 tag => {
@@ -117,11 +117,11 @@ impl ::protobuf::Message for AEKNFLOMLJH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.buff_list {
+        for value in &self.BELOFMFHFDK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.BELOFMFHFDK {
+        for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,17 +139,17 @@ impl ::protobuf::Message for AEKNFLOMLJH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         for v in &self.BELOFMFHFDK {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        for v in &self.miracle_list {
+        for v in &self.buff_list {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        for v in &self.miracle_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         for v in &self.BJCMPHLPKNF {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for AEKNFLOMLJH {
     }
 
     fn clear(&mut self) {
-        self.buff_list.clear();
         self.BELOFMFHFDK.clear();
+        self.buff_list.clear();
         self.miracle_list.clear();
         self.BJCMPHLPKNF.clear();
         self.special_fields.clear();
@@ -177,8 +177,8 @@ impl ::protobuf::Message for AEKNFLOMLJH {
 
     fn default_instance() -> &'static AEKNFLOMLJH {
         static instance: AEKNFLOMLJH = AEKNFLOMLJH {
-            buff_list: ::std::vec::Vec::new(),
             BELOFMFHFDK: ::std::vec::Vec::new(),
+            buff_list: ::std::vec::Vec::new(),
             miracle_list: ::std::vec::Vec::new(),
             BJCMPHLPKNF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -207,10 +207,10 @@ impl ::protobuf::reflect::ProtobufValue for AEKNFLOMLJH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AEKNFLOMLJH.proto\x1a\x11FCPMBJHFBNJ.proto\x1a\x11GIADLHEEPHD.prot\
     o\x1a\x11KNIJHGNJIJM.proto\x1a\x11LOGNKEKHBAI.proto\"\xc9\x01\n\x0bAEKNF\
-    LOMLJH\x12)\n\tbuff_list\x18\t\x20\x03(\x0b2\x0c.FCPMBJHFBNJR\x08buffLis\
-    t\x12.\n\x0bBELOFMFHFDK\x18\n\x20\x03(\x0b2\x0c.KNIJHGNJIJMR\x0bBELOFMFH\
-    FDK\x12/\n\x0cmiracle_list\x18\x07\x20\x03(\x0b2\x0c.GIADLHEEPHDR\x0bmir\
-    acleList\x12.\n\x0bBJCMPHLPKNF\x18\x05\x20\x03(\x0b2\x0c.LOGNKEKHBAIR\
+    LOMLJH\x12.\n\x0bBELOFMFHFDK\x18\n\x20\x03(\x0b2\x0c.KNIJHGNJIJMR\x0bBEL\
+    OFMFHFDK\x12)\n\tbuff_list\x18\x07\x20\x03(\x0b2\x0c.FCPMBJHFBNJR\x08buf\
+    fList\x12/\n\x0cmiracle_list\x18\x0f\x20\x03(\x0b2\x0c.GIADLHEEPHDR\x0bm\
+    iracleList\x12.\n\x0bBJCMPHLPKNF\x18\x03\x20\x03(\x0b2\x0c.LOGNKEKHBAIR\
     \x0bBJCMPHLPKNFb\x06proto3\
 ";
 

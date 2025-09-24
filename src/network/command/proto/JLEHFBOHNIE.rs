@@ -79,10 +79,10 @@ impl ::protobuf::Message for JLEHFBOHNIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                114 => {
                     self.MCBCNKCNOIB.push(is.read_message()?);
                 },
-                24 => {
+                88 => {
                     self.time = is.read_uint64()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for JLEHFBOHNIE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.time != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.time);
+            my_size += ::protobuf::rt::uint64_size(11, self.time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JLEHFBOHNIE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MCBCNKCNOIB {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.time != 0 {
-            os.write_uint64(3, self.time)?;
+            os.write_uint64(11, self.time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JLEHFBOHNIE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JLEHFBOHNIE.proto\x1a\x11NKDOHHODNNH.proto\"Q\n\x0bJLEHFBOHNIE\x12\
-    .\n\x0bMCBCNKCNOIB\x18\x04\x20\x03(\x0b2\x0c.NKDOHHODNNHR\x0bMCBCNKCNOIB\
-    \x12\x12\n\x04time\x18\x03\x20\x01(\x04R\x04timeb\x06proto3\
+    .\n\x0bMCBCNKCNOIB\x18\x0e\x20\x03(\x0b2\x0c.NKDOHHODNNHR\x0bMCBCNKCNOIB\
+    \x12\x12\n\x04time\x18\x0b\x20\x01(\x04R\x04timeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

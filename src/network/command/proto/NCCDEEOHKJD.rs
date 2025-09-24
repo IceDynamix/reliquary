@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NCCDEEOHKJD {
     // message fields
-    // @@protoc_insertion_point(field:NCCDEEOHKJD.reward_list)
-    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:NCCDEEOHKJD.AFENFNMLHAH)
+    pub AFENFNMLHAH: u32,
     // @@protoc_insertion_point(field:NCCDEEOHKJD.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:NCCDEEOHKJD.KOGDNPFMGFC)
     pub KOGDNPFMGFC: u32,
-    // @@protoc_insertion_point(field:NCCDEEOHKJD.AFENFNMLHAH)
-    pub AFENFNMLHAH: u32,
+    // @@protoc_insertion_point(field:NCCDEEOHKJD.reward_list)
+    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:NCCDEEOHKJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl NCCDEEOHKJD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward_list",
-            |m: &NCCDEEOHKJD| { &m.reward_list },
-            |m: &mut NCCDEEOHKJD| { &mut m.reward_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFENFNMLHAH",
+            |m: &NCCDEEOHKJD| { &m.AFENFNMLHAH },
+            |m: &mut NCCDEEOHKJD| { &mut m.AFENFNMLHAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -70,10 +70,10 @@ impl NCCDEEOHKJD {
             |m: &NCCDEEOHKJD| { &m.KOGDNPFMGFC },
             |m: &mut NCCDEEOHKJD| { &mut m.KOGDNPFMGFC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFENFNMLHAH",
-            |m: &NCCDEEOHKJD| { &m.AFENFNMLHAH },
-            |m: &mut NCCDEEOHKJD| { &mut m.AFENFNMLHAH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward_list",
+            |m: &NCCDEEOHKJD| { &m.reward_list },
+            |m: &mut NCCDEEOHKJD| { &mut m.reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NCCDEEOHKJD>(
             "NCCDEEOHKJD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NCCDEEOHKJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
+                80 => {
+                    self.AFENFNMLHAH = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.progress = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.KOGDNPFMGFC = is.read_uint32()?;
                 },
-                16 => {
-                    self.AFENFNMLHAH = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for NCCDEEOHKJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AFENFNMLHAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AFENFNMLHAH);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.progress);
+        }
+        if self.KOGDNPFMGFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KOGDNPFMGFC);
+        }
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.progress);
-        }
-        if self.KOGDNPFMGFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KOGDNPFMGFC);
-        }
-        if self.AFENFNMLHAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AFENFNMLHAH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for NCCDEEOHKJD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.AFENFNMLHAH != 0 {
+            os.write_uint32(10, self.AFENFNMLHAH)?;
         }
         if self.progress != 0 {
-            os.write_uint32(5, self.progress)?;
+            os.write_uint32(14, self.progress)?;
         }
         if self.KOGDNPFMGFC != 0 {
-            os.write_uint32(4, self.KOGDNPFMGFC)?;
+            os.write_uint32(2, self.KOGDNPFMGFC)?;
         }
-        if self.AFENFNMLHAH != 0 {
-            os.write_uint32(2, self.AFENFNMLHAH)?;
+        if let Some(v) = self.reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for NCCDEEOHKJD {
     }
 
     fn clear(&mut self) {
-        self.reward_list.clear();
+        self.AFENFNMLHAH = 0;
         self.progress = 0;
         self.KOGDNPFMGFC = 0;
-        self.AFENFNMLHAH = 0;
+        self.reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NCCDEEOHKJD {
         static instance: NCCDEEOHKJD = NCCDEEOHKJD {
-            reward_list: ::protobuf::MessageField::none(),
+            AFENFNMLHAH: 0,
             progress: 0,
             KOGDNPFMGFC: 0,
-            AFENFNMLHAH: 0,
+            reward_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for NCCDEEOHKJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NCCDEEOHKJD.proto\x1a\x0eItemList.proto\"\x99\x01\n\x0bNCCDEEOHKJD\
-    \x12*\n\x0breward_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\nrewardList\x12\
-    \x1a\n\x08progress\x18\x05\x20\x01(\rR\x08progress\x12\x20\n\x0bKOGDNPFM\
-    GFC\x18\x04\x20\x01(\rR\x0bKOGDNPFMGFC\x12\x20\n\x0bAFENFNMLHAH\x18\x02\
-    \x20\x01(\rR\x0bAFENFNMLHAHb\x06proto3\
+    \x12\x20\n\x0bAFENFNMLHAH\x18\n\x20\x01(\rR\x0bAFENFNMLHAH\x12\x1a\n\x08\
+    progress\x18\x0e\x20\x01(\rR\x08progress\x12\x20\n\x0bKOGDNPFMGFC\x18\
+    \x02\x20\x01(\rR\x0bKOGDNPFMGFC\x12*\n\x0breward_list\x18\r\x20\x01(\x0b\
+    2\t.ItemListR\nrewardListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

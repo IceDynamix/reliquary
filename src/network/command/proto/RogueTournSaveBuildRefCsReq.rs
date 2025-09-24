@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.max_times = is.read_uint32()?;
                 },
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNDIODGOGPI)?;
                 },
-                18 => {
+                26 => {
                     self.name = is.read_string()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.max_times);
+            my_size += ::protobuf::rt::uint32_size(1, self.max_times);
         }
         if let Some(v) = self.GNDIODGOGPI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.name);
+            my_size += ::protobuf::rt::string_size(3, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.max_times != 0 {
-            os.write_uint32(4, self.max_times)?;
+            os.write_uint32(1, self.max_times)?;
         }
         if let Some(v) = self.GNDIODGOGPI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if !self.name.is_empty() {
-            os.write_string(2, &self.name)?;
+            os.write_string(3, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournSaveBuildRefCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournSaveBuildRefCsReq.proto\x1a\x11OOMGHIBBCBN.proto\"~\n\x1bRo\
-    gueTournSaveBuildRefCsReq\x12\x1b\n\tmax_times\x18\x04\x20\x01(\rR\x08ma\
+    gueTournSaveBuildRefCsReq\x12\x1b\n\tmax_times\x18\x01\x20\x01(\rR\x08ma\
     xTimes\x12.\n\x0bGNDIODGOGPI\x18\x05\x20\x01(\x0b2\x0c.OOMGHIBBCBNR\x0bG\
-    NDIODGOGPI\x12\x12\n\x04name\x18\x02\x20\x01(\tR\x04nameb\x06proto3\
+    NDIODGOGPI\x12\x12\n\x04name\x18\x03\x20\x01(\tR\x04nameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

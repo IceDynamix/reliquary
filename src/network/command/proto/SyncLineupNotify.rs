@@ -30,8 +30,8 @@ pub struct SyncLineupNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncLineupNotify.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:SyncLineupNotify.reason_list)
-    pub reason_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::SyncLineupReason::SyncLineupReason>>,
+    // @@protoc_insertion_point(field:SyncLineupNotify.KANOFKGAMFO)
+    pub KANOFKGAMFO: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::SyncLineupReason::SyncLineupReason>>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncLineupNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SyncLineupNotify {
             |m: &mut SyncLineupNotify| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "reason_list",
-            |m: &SyncLineupNotify| { &m.reason_list },
-            |m: &mut SyncLineupNotify| { &mut m.reason_list },
+            "KANOFKGAMFO",
+            |m: &SyncLineupNotify| { &m.KANOFKGAMFO },
+            |m: &mut SyncLineupNotify| { &mut m.KANOFKGAMFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncLineupNotify>(
             "SyncLineupNotify",
@@ -82,11 +82,11 @@ impl ::protobuf::Message for SyncLineupNotify {
                 114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                32 => {
-                    self.reason_list.push(is.read_enum_or_unknown()?);
+                24 => {
+                    self.KANOFKGAMFO.push(is.read_enum_or_unknown()?);
                 },
-                34 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.reason_list)?
+                26 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.KANOFKGAMFO)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -104,7 +104,7 @@ impl ::protobuf::Message for SyncLineupNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.reason_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(3, &self.KANOFKGAMFO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -114,7 +114,7 @@ impl ::protobuf::Message for SyncLineupNotify {
         if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        os.write_repeated_packed_enum_or_unknown(4, &self.reason_list)?;
+        os.write_repeated_packed_enum_or_unknown(3, &self.KANOFKGAMFO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SyncLineupNotify {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.reason_list.clear();
+        self.KANOFKGAMFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncLineupNotify {
         static instance: SyncLineupNotify = SyncLineupNotify {
             lineup: ::protobuf::MessageField::none(),
-            reason_list: ::std::vec::Vec::new(),
+            KANOFKGAMFO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SyncLineupNotify.proto\x1a\x10LineupInfo.proto\x1a\x16SyncLineupRe\
-    ason.proto\"k\n\x10SyncLineupNotify\x12#\n\x06lineup\x18\x0e\x20\x01(\
-    \x0b2\x0b.LineupInfoR\x06lineup\x122\n\x0breason_list\x18\x04\x20\x03(\
-    \x0e2\x11.SyncLineupReasonR\nreasonListb\x06proto3\
+    ason.proto\"l\n\x10SyncLineupNotify\x12#\n\x06lineup\x18\x0e\x20\x01(\
+    \x0b2\x0b.LineupInfoR\x06lineup\x123\n\x0bKANOFKGAMFO\x18\x03\x20\x03(\
+    \x0e2\x11.SyncLineupReasonR\x0bKANOFKGAMFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

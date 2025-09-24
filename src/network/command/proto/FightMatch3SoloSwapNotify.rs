@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct FightMatch3SoloSwapNotify {
     // message fields
     // @@protoc_insertion_point(field:FightMatch3SoloSwapNotify.MEDBONHALOD)
-    pub MEDBONHALOD: ::protobuf::MessageField<super::GALEOPDOMKG::GALEOPDOMKG>,
+    pub MEDBONHALOD: ::protobuf::MessageField<super::FightMatch3SwapCsReq::FightMatch3SwapCsReq>,
     // @@protoc_insertion_point(field:FightMatch3SoloSwapNotify.EHELGAOABJJ)
     pub EHELGAOABJJ: ::protobuf::MessageField<super::MDOHAFBEEPK::MDOHAFBEEPK>,
     // special fields
@@ -51,7 +51,7 @@ impl FightMatch3SoloSwapNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GALEOPDOMKG::GALEOPDOMKG>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FightMatch3SwapCsReq::FightMatch3SwapCsReq>(
             "MEDBONHALOD",
             |m: &FightMatch3SoloSwapNotify| { &m.MEDBONHALOD },
             |m: &mut FightMatch3SoloSwapNotify| { &mut m.MEDBONHALOD },
@@ -79,7 +79,7 @@ impl ::protobuf::Message for FightMatch3SoloSwapNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEDBONHALOD)?;
                 },
                 42 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for FightMatch3SoloSwapNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MEDBONHALOD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.EHELGAOABJJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -167,10 +167,11 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3SoloSwapNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fFightMatch3SoloSwapNotify.proto\x1a\x11GALEOPDOMKG.proto\x1a\x11MD\
-    OHAFBEEPK.proto\"{\n\x19FightMatch3SoloSwapNotify\x12.\n\x0bMEDBONHALOD\
-    \x18\x0b\x20\x01(\x0b2\x0c.GALEOPDOMKGR\x0bMEDBONHALOD\x12.\n\x0bEHELGAO\
-    ABJJ\x18\x05\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\x0bEHELGAOABJJb\x06proto3\
+    \n\x1fFightMatch3SoloSwapNotify.proto\x1a\x1aFightMatch3SwapCsReq.proto\
+    \x1a\x11MDOHAFBEEPK.proto\"\x84\x01\n\x19FightMatch3SoloSwapNotify\x127\
+    \n\x0bMEDBONHALOD\x18\x04\x20\x01(\x0b2\x15.FightMatch3SwapCsReqR\x0bMED\
+    BONHALOD\x12.\n\x0bEHELGAOABJJ\x18\x05\x20\x01(\x0b2\x0c.MDOHAFBEEPKR\
+    \x0bEHELGAOABJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +189,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GALEOPDOMKG::file_descriptor().clone());
+            deps.push(super::FightMatch3SwapCsReq::file_descriptor().clone());
             deps.push(super::MDOHAFBEEPK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3SoloSwapNotify::generated_message_descriptor_data());

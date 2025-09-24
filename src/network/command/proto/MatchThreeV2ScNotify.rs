@@ -72,7 +72,7 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EAHMJFLLGGK)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.EAHMJFLLGGK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2ScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMatchThreeV2ScNotify.proto\x1a\x11KFNJAKGEFLA.proto\"F\n\x14MatchT\
-    hreeV2ScNotify\x12.\n\x0bEAHMJFLLGGK\x18\t\x20\x01(\x0b2\x0c.KFNJAKGEFLA\
-    R\x0bEAHMJFLLGGKb\x06proto3\
+    hreeV2ScNotify\x12.\n\x0bEAHMJFLLGGK\x18\x08\x20\x01(\x0b2\x0c.KFNJAKGEF\
+    LAR\x0bEAHMJFLLGGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

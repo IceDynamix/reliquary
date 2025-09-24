@@ -79,10 +79,10 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LGKJLFJGOJE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.LGKJLFJGOJE.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.LGKJLFJGOJE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for AcceptActivityExpeditionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#AcceptActivityExpeditionScRsp.proto\x1a\x18ActivityExpedition.proto\"\
-    p\n\x1dAcceptActivityExpeditionScRsp\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcode\x125\n\x0bLGKJLFJGOJE\x18\n\x20\x01(\x0b2\x13.Activi\
-    tyExpeditionR\x0bLGKJLFJGOJEb\x06proto3\
+    p\n\x1dAcceptActivityExpeditionScRsp\x12\x18\n\x07retcode\x18\x01\x20\
+    \x01(\rR\x07retcode\x125\n\x0bLGKJLFJGOJE\x18\x02\x20\x01(\x0b2\x13.Acti\
+    vityExpeditionR\x0bLGKJLFJGOJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

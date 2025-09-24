@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LKCMFEAAHHM {
     // message fields
+    // @@protoc_insertion_point(field:LKCMFEAAHHM.DEMNCGLLJCP)
+    pub DEMNCGLLJCP: bool,
     // @@protoc_insertion_point(field:LKCMFEAAHHM.buff_list)
     pub buff_list: ::std::vec::Vec<super::GGGCOCPGBBH::GGGCOCPGBBH>,
     // @@protoc_insertion_point(field:LKCMFEAAHHM.OLLHOBHDDEN)
     pub OLLHOBHDDEN: u32,
-    // @@protoc_insertion_point(field:LKCMFEAAHHM.DEMNCGLLJCP)
-    pub DEMNCGLLJCP: bool,
-    // @@protoc_insertion_point(field:LKCMFEAAHHM.LIMMILEAPJM)
-    pub LIMMILEAPJM: bool,
-    // @@protoc_insertion_point(field:LKCMFEAAHHM.KNLFELDECAL)
-    pub KNLFELDECAL: bool,
     // @@protoc_insertion_point(field:LKCMFEAAHHM.HEMJHDOEEBL)
     pub HEMJHDOEEBL: bool,
+    // @@protoc_insertion_point(field:LKCMFEAAHHM.KNLFELDECAL)
+    pub KNLFELDECAL: bool,
+    // @@protoc_insertion_point(field:LKCMFEAAHHM.LIMMILEAPJM)
+    pub LIMMILEAPJM: bool,
     // @@protoc_insertion_point(field:LKCMFEAAHHM.MONHIBBPKEE)
     pub MONHIBBPKEE: u32,
     // @@protoc_insertion_point(field:LKCMFEAAHHM.HFNHLCFNHKD)
@@ -63,6 +63,11 @@ impl LKCMFEAAHHM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DEMNCGLLJCP",
+            |m: &LKCMFEAAHHM| { &m.DEMNCGLLJCP },
+            |m: &mut LKCMFEAAHHM| { &mut m.DEMNCGLLJCP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &LKCMFEAAHHM| { &m.buff_list },
@@ -74,14 +79,9 @@ impl LKCMFEAAHHM {
             |m: &mut LKCMFEAAHHM| { &mut m.OLLHOBHDDEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEMNCGLLJCP",
-            |m: &LKCMFEAAHHM| { &m.DEMNCGLLJCP },
-            |m: &mut LKCMFEAAHHM| { &mut m.DEMNCGLLJCP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIMMILEAPJM",
-            |m: &LKCMFEAAHHM| { &m.LIMMILEAPJM },
-            |m: &mut LKCMFEAAHHM| { &mut m.LIMMILEAPJM },
+            "HEMJHDOEEBL",
+            |m: &LKCMFEAAHHM| { &m.HEMJHDOEEBL },
+            |m: &mut LKCMFEAAHHM| { &mut m.HEMJHDOEEBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KNLFELDECAL",
@@ -89,9 +89,9 @@ impl LKCMFEAAHHM {
             |m: &mut LKCMFEAAHHM| { &mut m.KNLFELDECAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEMJHDOEEBL",
-            |m: &LKCMFEAAHHM| { &m.HEMJHDOEEBL },
-            |m: &mut LKCMFEAAHHM| { &mut m.HEMJHDOEEBL },
+            "LIMMILEAPJM",
+            |m: &LKCMFEAAHHM| { &m.LIMMILEAPJM },
+            |m: &mut LKCMFEAAHHM| { &mut m.LIMMILEAPJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MONHIBBPKEE",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for LKCMFEAAHHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                14058 => {
-                    self.buff_list.push(is.read_message()?);
-                },
-                104 => {
-                    self.OLLHOBHDDEN = is.read_uint32()?;
-                },
-                72 => {
+                88 => {
                     self.DEMNCGLLJCP = is.read_bool()?;
                 },
-                88 => {
-                    self.LIMMILEAPJM = is.read_bool()?;
+                5346 => {
+                    self.buff_list.push(is.read_message()?);
+                },
+                120 => {
+                    self.OLLHOBHDDEN = is.read_uint32()?;
                 },
                 80 => {
-                    self.KNLFELDECAL = is.read_bool()?;
-                },
-                56 => {
                     self.HEMJHDOEEBL = is.read_bool()?;
                 },
-                96 => {
+                24 => {
+                    self.KNLFELDECAL = is.read_bool()?;
+                },
+                40 => {
+                    self.LIMMILEAPJM = is.read_bool()?;
+                },
+                32 => {
                     self.MONHIBBPKEE = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.HFNHLCFNHKD = is.read_uint32()?;
                 },
                 tag => {
@@ -157,30 +157,30 @@ impl ::protobuf::Message for LKCMFEAAHHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DEMNCGLLJCP != false {
+            my_size += 1 + 1;
+        }
         for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.OLLHOBHDDEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OLLHOBHDDEN);
+            my_size += ::protobuf::rt::uint32_size(15, self.OLLHOBHDDEN);
         }
-        if self.DEMNCGLLJCP != false {
-            my_size += 1 + 1;
-        }
-        if self.LIMMILEAPJM != false {
+        if self.HEMJHDOEEBL != false {
             my_size += 1 + 1;
         }
         if self.KNLFELDECAL != false {
             my_size += 1 + 1;
         }
-        if self.HEMJHDOEEBL != false {
+        if self.LIMMILEAPJM != false {
             my_size += 1 + 1;
         }
         if self.MONHIBBPKEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MONHIBBPKEE);
+            my_size += ::protobuf::rt::uint32_size(4, self.MONHIBBPKEE);
         }
         if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HFNHLCFNHKD);
+            my_size += ::protobuf::rt::uint32_size(7, self.HFNHLCFNHKD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,29 +188,29 @@ impl ::protobuf::Message for LKCMFEAAHHM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DEMNCGLLJCP != false {
+            os.write_bool(11, self.DEMNCGLLJCP)?;
+        }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1757, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(668, v, os)?;
         };
         if self.OLLHOBHDDEN != 0 {
-            os.write_uint32(13, self.OLLHOBHDDEN)?;
-        }
-        if self.DEMNCGLLJCP != false {
-            os.write_bool(9, self.DEMNCGLLJCP)?;
-        }
-        if self.LIMMILEAPJM != false {
-            os.write_bool(11, self.LIMMILEAPJM)?;
-        }
-        if self.KNLFELDECAL != false {
-            os.write_bool(10, self.KNLFELDECAL)?;
+            os.write_uint32(15, self.OLLHOBHDDEN)?;
         }
         if self.HEMJHDOEEBL != false {
-            os.write_bool(7, self.HEMJHDOEEBL)?;
+            os.write_bool(10, self.HEMJHDOEEBL)?;
+        }
+        if self.KNLFELDECAL != false {
+            os.write_bool(3, self.KNLFELDECAL)?;
+        }
+        if self.LIMMILEAPJM != false {
+            os.write_bool(5, self.LIMMILEAPJM)?;
         }
         if self.MONHIBBPKEE != 0 {
-            os.write_uint32(12, self.MONHIBBPKEE)?;
+            os.write_uint32(4, self.MONHIBBPKEE)?;
         }
         if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(6, self.HFNHLCFNHKD)?;
+            os.write_uint32(7, self.HFNHLCFNHKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,12 +229,12 @@ impl ::protobuf::Message for LKCMFEAAHHM {
     }
 
     fn clear(&mut self) {
+        self.DEMNCGLLJCP = false;
         self.buff_list.clear();
         self.OLLHOBHDDEN = 0;
-        self.DEMNCGLLJCP = false;
-        self.LIMMILEAPJM = false;
-        self.KNLFELDECAL = false;
         self.HEMJHDOEEBL = false;
+        self.KNLFELDECAL = false;
+        self.LIMMILEAPJM = false;
         self.MONHIBBPKEE = 0;
         self.HFNHLCFNHKD = 0;
         self.special_fields.clear();
@@ -242,12 +242,12 @@ impl ::protobuf::Message for LKCMFEAAHHM {
 
     fn default_instance() -> &'static LKCMFEAAHHM {
         static instance: LKCMFEAAHHM = LKCMFEAAHHM {
+            DEMNCGLLJCP: false,
             buff_list: ::std::vec::Vec::new(),
             OLLHOBHDDEN: 0,
-            DEMNCGLLJCP: false,
-            LIMMILEAPJM: false,
-            KNLFELDECAL: false,
             HEMJHDOEEBL: false,
+            KNLFELDECAL: false,
+            LIMMILEAPJM: false,
             MONHIBBPKEE: 0,
             HFNHLCFNHKD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -275,14 +275,14 @@ impl ::protobuf::reflect::ProtobufValue for LKCMFEAAHHM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LKCMFEAAHHM.proto\x1a\x11GGGCOCPGBBH.proto\"\xa7\x02\n\x0bLKCMFEAA\
-    HHM\x12*\n\tbuff_list\x18\xdd\r\x20\x03(\x0b2\x0c.GGGCOCPGBBHR\x08buffLi\
-    st\x12\x20\n\x0bOLLHOBHDDEN\x18\r\x20\x01(\rR\x0bOLLHOBHDDEN\x12\x20\n\
-    \x0bDEMNCGLLJCP\x18\t\x20\x01(\x08R\x0bDEMNCGLLJCP\x12\x20\n\x0bLIMMILEA\
-    PJM\x18\x0b\x20\x01(\x08R\x0bLIMMILEAPJM\x12\x20\n\x0bKNLFELDECAL\x18\n\
-    \x20\x01(\x08R\x0bKNLFELDECAL\x12\x20\n\x0bHEMJHDOEEBL\x18\x07\x20\x01(\
-    \x08R\x0bHEMJHDOEEBL\x12\x20\n\x0bMONHIBBPKEE\x18\x0c\x20\x01(\rR\x0bMON\
-    HIBBPKEE\x12\x20\n\x0bHFNHLCFNHKD\x18\x06\x20\x01(\rR\x0bHFNHLCFNHKDb\
-    \x06proto3\
+    HHM\x12\x20\n\x0bDEMNCGLLJCP\x18\x0b\x20\x01(\x08R\x0bDEMNCGLLJCP\x12*\n\
+    \tbuff_list\x18\x9c\x05\x20\x03(\x0b2\x0c.GGGCOCPGBBHR\x08buffList\x12\
+    \x20\n\x0bOLLHOBHDDEN\x18\x0f\x20\x01(\rR\x0bOLLHOBHDDEN\x12\x20\n\x0bHE\
+    MJHDOEEBL\x18\n\x20\x01(\x08R\x0bHEMJHDOEEBL\x12\x20\n\x0bKNLFELDECAL\
+    \x18\x03\x20\x01(\x08R\x0bKNLFELDECAL\x12\x20\n\x0bLIMMILEAPJM\x18\x05\
+    \x20\x01(\x08R\x0bLIMMILEAPJM\x12\x20\n\x0bMONHIBBPKEE\x18\x04\x20\x01(\
+    \rR\x0bMONHIBBPKEE\x12\x20\n\x0bHFNHLCFNHKD\x18\x07\x20\x01(\rR\x0bHFNHL\
+    CFNHKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

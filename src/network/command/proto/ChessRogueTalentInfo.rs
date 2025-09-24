@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueTalentInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueTalentInfo.POFMJBLMBJI)
-    pub POFMJBLMBJI: u32,
     // @@protoc_insertion_point(field:ChessRogueTalentInfo.rogue_talent_info_list)
     pub rogue_talent_info_list: ::protobuf::MessageField<super::RogueTalentInfoList::RogueTalentInfoList>,
+    // @@protoc_insertion_point(field:ChessRogueTalentInfo.POFMJBLMBJI)
+    pub POFMJBLMBJI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueTalentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChessRogueTalentInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POFMJBLMBJI",
-            |m: &ChessRogueTalentInfo| { &m.POFMJBLMBJI },
-            |m: &mut ChessRogueTalentInfo| { &mut m.POFMJBLMBJI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTalentInfoList::RogueTalentInfoList>(
             "rogue_talent_info_list",
             |m: &ChessRogueTalentInfo| { &m.rogue_talent_info_list },
             |m: &mut ChessRogueTalentInfo| { &mut m.rogue_talent_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "POFMJBLMBJI",
+            |m: &ChessRogueTalentInfo| { &m.POFMJBLMBJI },
+            |m: &mut ChessRogueTalentInfo| { &mut m.POFMJBLMBJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueTalentInfo>(
             "ChessRogueTalentInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueTalentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.POFMJBLMBJI = is.read_uint32()?;
-                },
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_talent_info_list)?;
+                },
+                88 => {
+                    self.POFMJBLMBJI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChessRogueTalentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.POFMJBLMBJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.POFMJBLMBJI);
-        }
         if let Some(v) = self.rogue_talent_info_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.POFMJBLMBJI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.POFMJBLMBJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChessRogueTalentInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.POFMJBLMBJI != 0 {
-            os.write_uint32(15, self.POFMJBLMBJI)?;
-        }
         if let Some(v) = self.rogue_talent_info_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.POFMJBLMBJI != 0 {
+            os.write_uint32(11, self.POFMJBLMBJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChessRogueTalentInfo {
     }
 
     fn clear(&mut self) {
-        self.POFMJBLMBJI = 0;
         self.rogue_talent_info_list.clear();
+        self.POFMJBLMBJI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueTalentInfo {
         static instance: ChessRogueTalentInfo = ChessRogueTalentInfo {
-            POFMJBLMBJI: 0,
             rogue_talent_info_list: ::protobuf::MessageField::none(),
+            POFMJBLMBJI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueTalentInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueTalentInfo.proto\x1a\x19RogueTalentInfoList.proto\"\x83\
-    \x01\n\x14ChessRogueTalentInfo\x12\x20\n\x0bPOFMJBLMBJI\x18\x0f\x20\x01(\
-    \rR\x0bPOFMJBLMBJI\x12I\n\x16rogue_talent_info_list\x18\t\x20\x01(\x0b2\
-    \x14.RogueTalentInfoListR\x13rogueTalentInfoListb\x06proto3\
+    \x01\n\x14ChessRogueTalentInfo\x12I\n\x16rogue_talent_info_list\x18\x0c\
+    \x20\x01(\x0b2\x14.RogueTalentInfoListR\x13rogueTalentInfoList\x12\x20\n\
+    \x0bPOFMJBLMBJI\x18\x0b\x20\x01(\rR\x0bPOFMJBLMBJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

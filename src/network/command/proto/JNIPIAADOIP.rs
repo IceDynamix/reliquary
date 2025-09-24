@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNIPIAADOIP {
     // message fields
-    // @@protoc_insertion_point(field:JNIPIAADOIP.BIINNCNDPCG)
-    pub BIINNCNDPCG: bool,
     // @@protoc_insertion_point(field:JNIPIAADOIP.MLGFJGCHONH)
     pub MLGFJGCHONH: u32,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.DKHIGCIPEKF)
-    pub DKHIGCIPEKF: bool,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.BLMNEKFPAGH)
-    pub BLMNEKFPAGH: u32,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.BCFBFMMENJK)
-    pub BCFBFMMENJK: i64,
     // @@protoc_insertion_point(field:JNIPIAADOIP.HJNOIENGEDL)
     pub HJNOIENGEDL: u32,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.DKHIGCIPEKF)
+    pub DKHIGCIPEKF: bool,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.challenge_peak_perfect_clear)
+    pub challenge_peak_perfect_clear: bool,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.BCFBFMMENJK)
+    pub BCFBFMMENJK: i64,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.BLMNEKFPAGH)
+    pub BLMNEKFPAGH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JNIPIAADOIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,14 @@ impl JNIPIAADOIP {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIINNCNDPCG",
-            |m: &JNIPIAADOIP| { &m.BIINNCNDPCG },
-            |m: &mut JNIPIAADOIP| { &mut m.BIINNCNDPCG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MLGFJGCHONH",
             |m: &JNIPIAADOIP| { &m.MLGFJGCHONH },
             |m: &mut JNIPIAADOIP| { &mut m.MLGFJGCHONH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HJNOIENGEDL",
+            |m: &JNIPIAADOIP| { &m.HJNOIENGEDL },
+            |m: &mut JNIPIAADOIP| { &mut m.HJNOIENGEDL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DKHIGCIPEKF",
@@ -75,9 +75,9 @@ impl JNIPIAADOIP {
             |m: &mut JNIPIAADOIP| { &mut m.DKHIGCIPEKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLMNEKFPAGH",
-            |m: &JNIPIAADOIP| { &m.BLMNEKFPAGH },
-            |m: &mut JNIPIAADOIP| { &mut m.BLMNEKFPAGH },
+            "challenge_peak_perfect_clear",
+            |m: &JNIPIAADOIP| { &m.challenge_peak_perfect_clear },
+            |m: &mut JNIPIAADOIP| { &mut m.challenge_peak_perfect_clear },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BCFBFMMENJK",
@@ -85,9 +85,9 @@ impl JNIPIAADOIP {
             |m: &mut JNIPIAADOIP| { &mut m.BCFBFMMENJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJNOIENGEDL",
-            |m: &JNIPIAADOIP| { &m.HJNOIENGEDL },
-            |m: &mut JNIPIAADOIP| { &mut m.HJNOIENGEDL },
+            "BLMNEKFPAGH",
+            |m: &JNIPIAADOIP| { &m.BLMNEKFPAGH },
+            |m: &mut JNIPIAADOIP| { &mut m.BLMNEKFPAGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNIPIAADOIP>(
             "JNIPIAADOIP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.BIINNCNDPCG = is.read_bool()?;
-                },
-                80 => {
+                40 => {
                     self.MLGFJGCHONH = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
+                    self.HJNOIENGEDL = is.read_uint32()?;
+                },
+                96 => {
                     self.DKHIGCIPEKF = is.read_bool()?;
                 },
-                64 => {
-                    self.BLMNEKFPAGH = is.read_uint32()?;
+                120 => {
+                    self.challenge_peak_perfect_clear = is.read_bool()?;
                 },
-                48 => {
+                72 => {
                     self.BCFBFMMENJK = is.read_int64()?;
                 },
-                40 => {
-                    self.HJNOIENGEDL = is.read_uint32()?;
+                112 => {
+                    self.BLMNEKFPAGH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BIINNCNDPCG != false {
-            my_size += 1 + 1;
-        }
         if self.MLGFJGCHONH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MLGFJGCHONH);
+            my_size += ::protobuf::rt::uint32_size(5, self.MLGFJGCHONH);
+        }
+        if self.HJNOIENGEDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HJNOIENGEDL);
         }
         if self.DKHIGCIPEKF != false {
             my_size += 1 + 1;
         }
-        if self.BLMNEKFPAGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BLMNEKFPAGH);
+        if self.challenge_peak_perfect_clear != false {
+            my_size += 1 + 1;
         }
         if self.BCFBFMMENJK != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.BCFBFMMENJK);
+            my_size += ::protobuf::rt::int64_size(9, self.BCFBFMMENJK);
         }
-        if self.HJNOIENGEDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HJNOIENGEDL);
+        if self.BLMNEKFPAGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BLMNEKFPAGH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BIINNCNDPCG != false {
-            os.write_bool(15, self.BIINNCNDPCG)?;
-        }
         if self.MLGFJGCHONH != 0 {
-            os.write_uint32(10, self.MLGFJGCHONH)?;
-        }
-        if self.DKHIGCIPEKF != false {
-            os.write_bool(3, self.DKHIGCIPEKF)?;
-        }
-        if self.BLMNEKFPAGH != 0 {
-            os.write_uint32(8, self.BLMNEKFPAGH)?;
-        }
-        if self.BCFBFMMENJK != 0 {
-            os.write_int64(6, self.BCFBFMMENJK)?;
+            os.write_uint32(5, self.MLGFJGCHONH)?;
         }
         if self.HJNOIENGEDL != 0 {
-            os.write_uint32(5, self.HJNOIENGEDL)?;
+            os.write_uint32(1, self.HJNOIENGEDL)?;
+        }
+        if self.DKHIGCIPEKF != false {
+            os.write_bool(12, self.DKHIGCIPEKF)?;
+        }
+        if self.challenge_peak_perfect_clear != false {
+            os.write_bool(15, self.challenge_peak_perfect_clear)?;
+        }
+        if self.BCFBFMMENJK != 0 {
+            os.write_int64(9, self.BCFBFMMENJK)?;
+        }
+        if self.BLMNEKFPAGH != 0 {
+            os.write_uint32(14, self.BLMNEKFPAGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     }
 
     fn clear(&mut self) {
-        self.BIINNCNDPCG = false;
         self.MLGFJGCHONH = 0;
-        self.DKHIGCIPEKF = false;
-        self.BLMNEKFPAGH = 0;
-        self.BCFBFMMENJK = 0;
         self.HJNOIENGEDL = 0;
+        self.DKHIGCIPEKF = false;
+        self.challenge_peak_perfect_clear = false;
+        self.BCFBFMMENJK = 0;
+        self.BLMNEKFPAGH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNIPIAADOIP {
         static instance: JNIPIAADOIP = JNIPIAADOIP {
-            BIINNCNDPCG: false,
             MLGFJGCHONH: 0,
-            DKHIGCIPEKF: false,
-            BLMNEKFPAGH: 0,
-            BCFBFMMENJK: 0,
             HJNOIENGEDL: 0,
+            DKHIGCIPEKF: false,
+            challenge_peak_perfect_clear: false,
+            BCFBFMMENJK: 0,
+            BLMNEKFPAGH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for JNIPIAADOIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JNIPIAADOIP.proto\"\xd9\x01\n\x0bJNIPIAADOIP\x12\x20\n\x0bBIINNCND\
-    PCG\x18\x0f\x20\x01(\x08R\x0bBIINNCNDPCG\x12\x20\n\x0bMLGFJGCHONH\x18\n\
-    \x20\x01(\rR\x0bMLGFJGCHONH\x12\x20\n\x0bDKHIGCIPEKF\x18\x03\x20\x01(\
-    \x08R\x0bDKHIGCIPEKF\x12\x20\n\x0bBLMNEKFPAGH\x18\x08\x20\x01(\rR\x0bBLM\
-    NEKFPAGH\x12\x20\n\x0bBCFBFMMENJK\x18\x06\x20\x01(\x03R\x0bBCFBFMMENJK\
-    \x12\x20\n\x0bHJNOIENGEDL\x18\x05\x20\x01(\rR\x0bHJNOIENGEDLb\x06proto3\
+    \n\x11JNIPIAADOIP.proto\"\xf8\x01\n\x0bJNIPIAADOIP\x12\x20\n\x0bMLGFJGCH\
+    ONH\x18\x05\x20\x01(\rR\x0bMLGFJGCHONH\x12\x20\n\x0bHJNOIENGEDL\x18\x01\
+    \x20\x01(\rR\x0bHJNOIENGEDL\x12\x20\n\x0bDKHIGCIPEKF\x18\x0c\x20\x01(\
+    \x08R\x0bDKHIGCIPEKF\x12?\n\x1cchallenge_peak_perfect_clear\x18\x0f\x20\
+    \x01(\x08R\x19challengePeakPerfectClear\x12\x20\n\x0bBCFBFMMENJK\x18\t\
+    \x20\x01(\x03R\x0bBCFBFMMENJK\x12\x20\n\x0bBLMNEKFPAGH\x18\x0e\x20\x01(\
+    \rR\x0bBLMNEKFPAGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

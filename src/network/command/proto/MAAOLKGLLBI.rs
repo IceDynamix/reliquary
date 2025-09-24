@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAAOLKGLLBI {
     // message fields
-    // @@protoc_insertion_point(field:MAAOLKGLLBI.unique_id)
-    pub unique_id: u32,
-    // @@protoc_insertion_point(field:MAAOLKGLLBI.KKEAEBAGMKE)
-    pub KKEAEBAGMKE: bool,
     // @@protoc_insertion_point(field:MAAOLKGLLBI.affix_id)
     pub affix_id: u32,
-    // @@protoc_insertion_point(field:MAAOLKGLLBI.monster_list)
-    pub monster_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MAAOLKGLLBI.HHENFGJPFOA)
     pub HHENFGJPFOA: bool,
+    // @@protoc_insertion_point(field:MAAOLKGLLBI.KKEAEBAGMKE)
+    pub KKEAEBAGMKE: bool,
+    // @@protoc_insertion_point(field:MAAOLKGLLBI.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:MAAOLKGLLBI.monster_list)
+    pub monster_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MAAOLKGLLBI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl MAAOLKGLLBI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &MAAOLKGLLBI| { &m.unique_id },
-            |m: &mut MAAOLKGLLBI| { &mut m.unique_id },
+            "affix_id",
+            |m: &MAAOLKGLLBI| { &m.affix_id },
+            |m: &mut MAAOLKGLLBI| { &mut m.affix_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHENFGJPFOA",
+            |m: &MAAOLKGLLBI| { &m.HHENFGJPFOA },
+            |m: &mut MAAOLKGLLBI| { &mut m.HHENFGJPFOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KKEAEBAGMKE",
@@ -68,19 +73,14 @@ impl MAAOLKGLLBI {
             |m: &mut MAAOLKGLLBI| { &mut m.KKEAEBAGMKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "affix_id",
-            |m: &MAAOLKGLLBI| { &m.affix_id },
-            |m: &mut MAAOLKGLLBI| { &mut m.affix_id },
+            "unique_id",
+            |m: &MAAOLKGLLBI| { &m.unique_id },
+            |m: &mut MAAOLKGLLBI| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_list",
             |m: &MAAOLKGLLBI| { &m.monster_list },
             |m: &mut MAAOLKGLLBI| { &mut m.monster_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHENFGJPFOA",
-            |m: &MAAOLKGLLBI| { &m.HHENFGJPFOA },
-            |m: &mut MAAOLKGLLBI| { &mut m.HHENFGJPFOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAAOLKGLLBI>(
             "MAAOLKGLLBI",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for MAAOLKGLLBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.unique_id = is.read_uint32()?;
-                },
                 48 => {
-                    self.KKEAEBAGMKE = is.read_bool()?;
-                },
-                112 => {
                     self.affix_id = is.read_uint32()?;
                 },
-                82 => {
+                16 => {
+                    self.HHENFGJPFOA = is.read_bool()?;
+                },
+                32 => {
+                    self.KKEAEBAGMKE = is.read_bool()?;
+                },
+                88 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.monster_list)?;
                 },
-                80 => {
+                64 => {
                     self.monster_list.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.HHENFGJPFOA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,38 +130,38 @@ impl ::protobuf::Message for MAAOLKGLLBI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+        if self.affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.affix_id);
+        }
+        if self.HHENFGJPFOA != false {
+            my_size += 1 + 1;
         }
         if self.KKEAEBAGMKE != false {
             my_size += 1 + 1;
         }
-        if self.affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.affix_id);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.monster_list);
-        if self.HHENFGJPFOA != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.monster_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint32(7, self.unique_id)?;
+        if self.affix_id != 0 {
+            os.write_uint32(6, self.affix_id)?;
+        }
+        if self.HHENFGJPFOA != false {
+            os.write_bool(2, self.HHENFGJPFOA)?;
         }
         if self.KKEAEBAGMKE != false {
-            os.write_bool(6, self.KKEAEBAGMKE)?;
+            os.write_bool(4, self.KKEAEBAGMKE)?;
         }
-        if self.affix_id != 0 {
-            os.write_uint32(14, self.affix_id)?;
+        if self.unique_id != 0 {
+            os.write_uint32(11, self.unique_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.monster_list)?;
-        if self.HHENFGJPFOA != false {
-            os.write_bool(13, self.HHENFGJPFOA)?;
-        }
+        os.write_repeated_packed_uint32(8, &self.monster_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for MAAOLKGLLBI {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
-        self.KKEAEBAGMKE = false;
         self.affix_id = 0;
-        self.monster_list.clear();
         self.HHENFGJPFOA = false;
+        self.KKEAEBAGMKE = false;
+        self.unique_id = 0;
+        self.monster_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAAOLKGLLBI {
         static instance: MAAOLKGLLBI = MAAOLKGLLBI {
-            unique_id: 0,
-            KKEAEBAGMKE: false,
             affix_id: 0,
-            monster_list: ::std::vec::Vec::new(),
             HHENFGJPFOA: false,
+            KKEAEBAGMKE: false,
+            unique_id: 0,
+            monster_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for MAAOLKGLLBI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MAAOLKGLLBI.proto\"\xac\x01\n\x0bMAAOLKGLLBI\x12\x1b\n\tunique_id\
-    \x18\x07\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bKKEAEBAGMKE\x18\x06\x20\
-    \x01(\x08R\x0bKKEAEBAGMKE\x12\x19\n\x08affix_id\x18\x0e\x20\x01(\rR\x07a\
-    ffixId\x12!\n\x0cmonster_list\x18\n\x20\x03(\rR\x0bmonsterList\x12\x20\n\
-    \x0bHHENFGJPFOA\x18\r\x20\x01(\x08R\x0bHHENFGJPFOAb\x06proto3\
+    \n\x11MAAOLKGLLBI.proto\"\xac\x01\n\x0bMAAOLKGLLBI\x12\x19\n\x08affix_id\
+    \x18\x06\x20\x01(\rR\x07affixId\x12\x20\n\x0bHHENFGJPFOA\x18\x02\x20\x01\
+    (\x08R\x0bHHENFGJPFOA\x12\x20\n\x0bKKEAEBAGMKE\x18\x04\x20\x01(\x08R\x0b\
+    KKEAEBAGMKE\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\x08uniqueId\x12!\n\
+    \x0cmonster_list\x18\x08\x20\x03(\rR\x0bmonsterListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

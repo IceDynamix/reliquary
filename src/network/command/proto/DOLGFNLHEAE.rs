@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DOLGFNLHEAE {
     // message fields
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.GGFDDEJHLIF)
-    pub GGFDDEJHLIF: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FNPPHMBLKOA)
-    pub FNPPHMBLKOA: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FILEDDCMDOC)
-    pub FILEDDCMDOC: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FMBFBGNABOC)
-    pub FMBFBGNABOC: ::std::vec::Vec<super::PANAIJBJMEN::PANAIJBJMEN>,
     // @@protoc_insertion_point(field:DOLGFNLHEAE.PNGDDNAJCGG)
     pub PNGDDNAJCGG: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.FMBFBGNABOC)
+    pub FMBFBGNABOC: ::std::vec::Vec<super::PANAIJBJMEN::PANAIJBJMEN>,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.GGFDDEJHLIF)
+    pub GGFDDEJHLIF: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.FILEDDCMDOC)
+    pub FILEDDCMDOC: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.FNPPHMBLKOA)
+    pub FNPPHMBLKOA: u32,
     // @@protoc_insertion_point(field:DOLGFNLHEAE.DCEHOGAGKOM)
     pub DCEHOGAGKOM: u32,
     // special fields
@@ -60,19 +60,9 @@ impl DOLGFNLHEAE {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGFDDEJHLIF",
-            |m: &DOLGFNLHEAE| { &m.GGFDDEJHLIF },
-            |m: &mut DOLGFNLHEAE| { &mut m.GGFDDEJHLIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNPPHMBLKOA",
-            |m: &DOLGFNLHEAE| { &m.FNPPHMBLKOA },
-            |m: &mut DOLGFNLHEAE| { &mut m.FNPPHMBLKOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILEDDCMDOC",
-            |m: &DOLGFNLHEAE| { &m.FILEDDCMDOC },
-            |m: &mut DOLGFNLHEAE| { &mut m.FILEDDCMDOC },
+            "PNGDDNAJCGG",
+            |m: &DOLGFNLHEAE| { &m.PNGDDNAJCGG },
+            |m: &mut DOLGFNLHEAE| { &mut m.PNGDDNAJCGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FMBFBGNABOC",
@@ -80,9 +70,19 @@ impl DOLGFNLHEAE {
             |m: &mut DOLGFNLHEAE| { &mut m.FMBFBGNABOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNGDDNAJCGG",
-            |m: &DOLGFNLHEAE| { &m.PNGDDNAJCGG },
-            |m: &mut DOLGFNLHEAE| { &mut m.PNGDDNAJCGG },
+            "GGFDDEJHLIF",
+            |m: &DOLGFNLHEAE| { &m.GGFDDEJHLIF },
+            |m: &mut DOLGFNLHEAE| { &mut m.GGFDDEJHLIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FILEDDCMDOC",
+            |m: &DOLGFNLHEAE| { &m.FILEDDCMDOC },
+            |m: &mut DOLGFNLHEAE| { &mut m.FILEDDCMDOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FNPPHMBLKOA",
+            |m: &DOLGFNLHEAE| { &m.FNPPHMBLKOA },
+            |m: &mut DOLGFNLHEAE| { &mut m.FNPPHMBLKOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCEHOGAGKOM",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.GGFDDEJHLIF = is.read_uint32()?;
-                },
-                48 => {
-                    self.FNPPHMBLKOA = is.read_uint32()?;
-                },
-                16 => {
-                    self.FILEDDCMDOC = is.read_uint32()?;
-                },
-                74 => {
-                    self.FMBFBGNABOC.push(is.read_message()?);
-                },
-                120 => {
+                96 => {
                     self.PNGDDNAJCGG = is.read_uint32()?;
                 },
-                96 => {
+                26 => {
+                    self.FMBFBGNABOC.push(is.read_message()?);
+                },
+                16 => {
+                    self.GGFDDEJHLIF = is.read_uint32()?;
+                },
+                104 => {
+                    self.FILEDDCMDOC = is.read_uint32()?;
+                },
+                56 => {
+                    self.FNPPHMBLKOA = is.read_uint32()?;
+                },
+                80 => {
                     self.DCEHOGAGKOM = is.read_uint32()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GGFDDEJHLIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GGFDDEJHLIF);
-        }
-        if self.FNPPHMBLKOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FNPPHMBLKOA);
-        }
-        if self.FILEDDCMDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FILEDDCMDOC);
+        if self.PNGDDNAJCGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PNGDDNAJCGG);
         }
         for value in &self.FMBFBGNABOC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PNGDDNAJCGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PNGDDNAJCGG);
+        if self.GGFDDEJHLIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GGFDDEJHLIF);
+        }
+        if self.FILEDDCMDOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FILEDDCMDOC);
+        }
+        if self.FNPPHMBLKOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FNPPHMBLKOA);
         }
         if self.DCEHOGAGKOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DCEHOGAGKOM);
+            my_size += ::protobuf::rt::uint32_size(10, self.DCEHOGAGKOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GGFDDEJHLIF != 0 {
-            os.write_uint32(13, self.GGFDDEJHLIF)?;
-        }
-        if self.FNPPHMBLKOA != 0 {
-            os.write_uint32(6, self.FNPPHMBLKOA)?;
-        }
-        if self.FILEDDCMDOC != 0 {
-            os.write_uint32(2, self.FILEDDCMDOC)?;
+        if self.PNGDDNAJCGG != 0 {
+            os.write_uint32(12, self.PNGDDNAJCGG)?;
         }
         for v in &self.FMBFBGNABOC {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.PNGDDNAJCGG != 0 {
-            os.write_uint32(15, self.PNGDDNAJCGG)?;
+        if self.GGFDDEJHLIF != 0 {
+            os.write_uint32(2, self.GGFDDEJHLIF)?;
+        }
+        if self.FILEDDCMDOC != 0 {
+            os.write_uint32(13, self.FILEDDCMDOC)?;
+        }
+        if self.FNPPHMBLKOA != 0 {
+            os.write_uint32(7, self.FNPPHMBLKOA)?;
         }
         if self.DCEHOGAGKOM != 0 {
-            os.write_uint32(12, self.DCEHOGAGKOM)?;
+            os.write_uint32(10, self.DCEHOGAGKOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     }
 
     fn clear(&mut self) {
-        self.GGFDDEJHLIF = 0;
-        self.FNPPHMBLKOA = 0;
-        self.FILEDDCMDOC = 0;
-        self.FMBFBGNABOC.clear();
         self.PNGDDNAJCGG = 0;
+        self.FMBFBGNABOC.clear();
+        self.GGFDDEJHLIF = 0;
+        self.FILEDDCMDOC = 0;
+        self.FNPPHMBLKOA = 0;
         self.DCEHOGAGKOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DOLGFNLHEAE {
         static instance: DOLGFNLHEAE = DOLGFNLHEAE {
-            GGFDDEJHLIF: 0,
-            FNPPHMBLKOA: 0,
-            FILEDDCMDOC: 0,
-            FMBFBGNABOC: ::std::vec::Vec::new(),
             PNGDDNAJCGG: 0,
+            FMBFBGNABOC: ::std::vec::Vec::new(),
+            GGFDDEJHLIF: 0,
+            FILEDDCMDOC: 0,
+            FNPPHMBLKOA: 0,
             DCEHOGAGKOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for DOLGFNLHEAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DOLGFNLHEAE.proto\x1a\x11PANAIJBJMEN.proto\"\xe7\x01\n\x0bDOLGFNLH\
-    EAE\x12\x20\n\x0bGGFDDEJHLIF\x18\r\x20\x01(\rR\x0bGGFDDEJHLIF\x12\x20\n\
-    \x0bFNPPHMBLKOA\x18\x06\x20\x01(\rR\x0bFNPPHMBLKOA\x12\x20\n\x0bFILEDDCM\
-    DOC\x18\x02\x20\x01(\rR\x0bFILEDDCMDOC\x12.\n\x0bFMBFBGNABOC\x18\t\x20\
-    \x03(\x0b2\x0c.PANAIJBJMENR\x0bFMBFBGNABOC\x12\x20\n\x0bPNGDDNAJCGG\x18\
-    \x0f\x20\x01(\rR\x0bPNGDDNAJCGG\x12\x20\n\x0bDCEHOGAGKOM\x18\x0c\x20\x01\
-    (\rR\x0bDCEHOGAGKOMb\x06proto3\
+    EAE\x12\x20\n\x0bPNGDDNAJCGG\x18\x0c\x20\x01(\rR\x0bPNGDDNAJCGG\x12.\n\
+    \x0bFMBFBGNABOC\x18\x03\x20\x03(\x0b2\x0c.PANAIJBJMENR\x0bFMBFBGNABOC\
+    \x12\x20\n\x0bGGFDDEJHLIF\x18\x02\x20\x01(\rR\x0bGGFDDEJHLIF\x12\x20\n\
+    \x0bFILEDDCMDOC\x18\r\x20\x01(\rR\x0bFILEDDCMDOC\x12\x20\n\x0bFNPPHMBLKO\
+    A\x18\x07\x20\x01(\rR\x0bFNPPHMBLKOA\x12\x20\n\x0bDCEHOGAGKOM\x18\n\x20\
+    \x01(\rR\x0bDCEHOGAGKOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

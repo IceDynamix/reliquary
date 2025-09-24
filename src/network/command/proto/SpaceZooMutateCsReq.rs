@@ -79,10 +79,10 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                80 => {
+                8 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SpaceZooMutateCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(14, self.unique_id)?;
+            os.write_uint32(3, self.unique_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
+            os.write_uint32(1, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooMutateCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SpaceZooMutateCsReq.proto\"K\n\x13SpaceZooMutateCsReq\x12\x1b\n\tu\
-    nique_id\x18\x0e\x20\x01(\rR\x08uniqueId\x12\x17\n\x07item_id\x18\n\x20\
-    \x01(\rR\x06itemIdb\x06proto3\
+    nique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12\x17\n\x07item_id\x18\x01\
+    \x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

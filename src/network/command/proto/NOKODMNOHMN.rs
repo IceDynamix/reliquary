@@ -79,13 +79,13 @@ impl ::protobuf::Message for NOKODMNOHMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.ONILFFENAMO)?;
                 },
-                120 => {
+                104 => {
                     self.ONILFFENAMO.push(is.read_uint32()?);
                 },
-                74 => {
+                90 => {
                     self.NCKCMGCBEHK.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for NOKODMNOHMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.ONILFFENAMO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.ONILFFENAMO);
         for value in &self.NCKCMGCBEHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NOKODMNOHMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.ONILFFENAMO)?;
+        os.write_repeated_packed_uint32(13, &self.ONILFFENAMO)?;
         for v in &self.NCKCMGCBEHK {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NOKODMNOHMN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NOKODMNOHMN.proto\x1a\x11HDFKPEEBGEN.proto\"_\n\x0bNOKODMNOHMN\x12\
-    \x20\n\x0bONILFFENAMO\x18\x0f\x20\x03(\rR\x0bONILFFENAMO\x12.\n\x0bNCKCM\
-    GCBEHK\x18\t\x20\x03(\x0b2\x0c.HDFKPEEBGENR\x0bNCKCMGCBEHKb\x06proto3\
+    \x20\n\x0bONILFFENAMO\x18\r\x20\x03(\rR\x0bONILFFENAMO\x12.\n\x0bNCKCMGC\
+    BEHK\x18\x0b\x20\x03(\x0b2\x0c.HDFKPEEBGENR\x0bNCKCMGCBEHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

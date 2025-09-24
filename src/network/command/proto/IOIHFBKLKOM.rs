@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IOIHFBKLKOM {
     // message fields
-    // @@protoc_insertion_point(field:IOIHFBKLKOM.BEJEEDAEBBE)
-    pub BEJEEDAEBBE: u32,
     // @@protoc_insertion_point(field:IOIHFBKLKOM.PNPMLAFDAIH)
     pub PNPMLAFDAIH: u32,
+    // @@protoc_insertion_point(field:IOIHFBKLKOM.BEJEEDAEBBE)
+    pub BEJEEDAEBBE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IOIHFBKLKOM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl IOIHFBKLKOM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEJEEDAEBBE",
-            |m: &IOIHFBKLKOM| { &m.BEJEEDAEBBE },
-            |m: &mut IOIHFBKLKOM| { &mut m.BEJEEDAEBBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNPMLAFDAIH",
             |m: &IOIHFBKLKOM| { &m.PNPMLAFDAIH },
             |m: &mut IOIHFBKLKOM| { &mut m.PNPMLAFDAIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BEJEEDAEBBE",
+            |m: &IOIHFBKLKOM| { &m.BEJEEDAEBBE },
+            |m: &mut IOIHFBKLKOM| { &mut m.BEJEEDAEBBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IOIHFBKLKOM>(
             "IOIHFBKLKOM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IOIHFBKLKOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.PNPMLAFDAIH = is.read_uint32()?;
+                },
                 72 => {
                     self.BEJEEDAEBBE = is.read_uint32()?;
-                },
-                24 => {
-                    self.PNPMLAFDAIH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IOIHFBKLKOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PNPMLAFDAIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PNPMLAFDAIH);
+        }
         if self.BEJEEDAEBBE != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.BEJEEDAEBBE);
-        }
-        if self.PNPMLAFDAIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PNPMLAFDAIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for IOIHFBKLKOM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PNPMLAFDAIH != 0 {
+            os.write_uint32(13, self.PNPMLAFDAIH)?;
+        }
         if self.BEJEEDAEBBE != 0 {
             os.write_uint32(9, self.BEJEEDAEBBE)?;
-        }
-        if self.PNPMLAFDAIH != 0 {
-            os.write_uint32(3, self.PNPMLAFDAIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for IOIHFBKLKOM {
     }
 
     fn clear(&mut self) {
-        self.BEJEEDAEBBE = 0;
         self.PNPMLAFDAIH = 0;
+        self.BEJEEDAEBBE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOIHFBKLKOM {
         static instance: IOIHFBKLKOM = IOIHFBKLKOM {
-            BEJEEDAEBBE: 0,
             PNPMLAFDAIH: 0,
+            BEJEEDAEBBE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IOIHFBKLKOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IOIHFBKLKOM.proto\"Q\n\x0bIOIHFBKLKOM\x12\x20\n\x0bBEJEEDAEBBE\x18\
-    \t\x20\x01(\rR\x0bBEJEEDAEBBE\x12\x20\n\x0bPNPMLAFDAIH\x18\x03\x20\x01(\
-    \rR\x0bPNPMLAFDAIHb\x06proto3\
+    \n\x11IOIHFBKLKOM.proto\"Q\n\x0bIOIHFBKLKOM\x12\x20\n\x0bPNPMLAFDAIH\x18\
+    \r\x20\x01(\rR\x0bPNPMLAFDAIH\x12\x20\n\x0bBEJEEDAEBBE\x18\t\x20\x01(\rR\
+    \x0bBEJEEDAEBBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

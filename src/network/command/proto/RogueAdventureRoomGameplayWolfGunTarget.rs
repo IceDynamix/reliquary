@@ -45,7 +45,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         ::std::default::Default::default()
     }
 
-    // .RogueAdventureRoomTargetNone target_none = 8;
+    // .RogueAdventureRoomTargetNone target_none = 15;
 
     pub fn target_none(&self) -> &super::RogueAdventureRoomTargetNone::RogueAdventureRoomTargetNone {
         match self.target_impl {
@@ -143,7 +143,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .RogueAdventureRoomTargetMiracle target_miracle = 15;
+    // .RogueAdventureRoomTargetMiracle target_miracle = 3;
 
     pub fn target_miracle(&self) -> &super::RogueAdventureRoomTargetMiracle::RogueAdventureRoomTargetMiracle {
         match self.target_impl {
@@ -192,7 +192,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .RogueAdventureRoomTargetRuanmei target_ruanmei = 14;
+    // .RogueAdventureRoomTargetRuanmei target_ruanmei = 11;
 
     pub fn target_ruanmei(&self) -> &super::RogueAdventureRoomTargetRuanmei::RogueAdventureRoomTargetRuanmei {
         match self.target_impl {
@@ -291,16 +291,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                122 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(is.read_message()?));
                 },
                 98 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(is.read_message()?));
                 },
-                122 => {
+                26 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(is.read_message()?));
                 },
-                114 => {
+                90 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(is.read_message()?));
                 },
                 tag => {
@@ -344,16 +344,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
         if let ::std::option::Option::Some(ref v) = self.target_impl {
             match v {
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -446,11 +446,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     TargetCoin.proto\x1a%RogueAdventureRoomTargetMiracle.proto\x1a\"RogueAdv\
     entureRoomTargetNone.proto\x1a%RogueAdventureRoomTargetRuanmei.proto\"\
     \xd2\x02\n'RogueAdventureRoomGameplayWolfGunTarget\x12@\n\x0btarget_none\
-    \x18\x08\x20\x01(\x0b2\x1d.RogueAdventureRoomTargetNoneH\0R\ntargetNone\
+    \x18\x0f\x20\x01(\x0b2\x1d.RogueAdventureRoomTargetNoneH\0R\ntargetNone\
     \x12@\n\x0btarget_coin\x18\x0c\x20\x01(\x0b2\x1d.RogueAdventureRoomTarge\
-    tCoinH\0R\ntargetCoin\x12I\n\x0etarget_miracle\x18\x0f\x20\x01(\x0b2\x20\
+    tCoinH\0R\ntargetCoin\x12I\n\x0etarget_miracle\x18\x03\x20\x01(\x0b2\x20\
     .RogueAdventureRoomTargetMiracleH\0R\rtargetMiracle\x12I\n\x0etarget_rua\
-    nmei\x18\x0e\x20\x01(\x0b2\x20.RogueAdventureRoomTargetRuanmeiH\0R\rtarg\
+    nmei\x18\x0b\x20\x01(\x0b2\x20.RogueAdventureRoomTargetRuanmeiH\0R\rtarg\
     etRuanmeiB\r\n\x0btarget_implb\x06proto3\
 ";
 

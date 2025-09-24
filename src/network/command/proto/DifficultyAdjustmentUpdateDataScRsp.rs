@@ -86,13 +86,13 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                34 => {
                     self.content_package_list.push(is.read_message()?);
                 },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         for value in &self.content_package_list {
             let len = value.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         for v in &self.content_package_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for DifficultyAdjustmentUpdateDataScRsp 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)DifficultyAdjustmentUpdateDataScRsp.proto\x1a\x11JCDNMBCKPLF.proto\"\
     \xa1\x01\n#DifficultyAdjustmentUpdateDataScRsp\x12\x18\n\x07retcode\x18\
-    \x04\x20\x01(\rR\x07retcode\x12>\n\x14content_package_list\x18\x08\x20\
+    \x03\x20\x01(\rR\x07retcode\x12>\n\x14content_package_list\x18\x04\x20\
     \x03(\x0b2\x0c.JCDNMBCKPLFR\x12contentPackageList\x12\x20\n\x04data\x18\
-    \n\x20\x01(\x0b2\x0c.JCDNMBCKPLFR\x04datab\x06proto3\
+    \x05\x20\x01(\x0b2\x0c.JCDNMBCKPLFR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

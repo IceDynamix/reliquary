@@ -79,10 +79,10 @@ impl ::protobuf::Message for BasicModuleSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                72 => {
                     self.week_cocoon_finished_count = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
                     self.stamina = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BasicModuleSync {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.week_cocoon_finished_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.week_cocoon_finished_count);
+            my_size += ::protobuf::rt::uint32_size(9, self.week_cocoon_finished_count);
         }
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(8, self.stamina);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BasicModuleSync {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.week_cocoon_finished_count != 0 {
-            os.write_uint32(6, self.week_cocoon_finished_count)?;
+            os.write_uint32(9, self.week_cocoon_finished_count)?;
         }
         if self.stamina != 0 {
-            os.write_uint32(1, self.stamina)?;
+            os.write_uint32(8, self.stamina)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BasicModuleSync {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15BasicModuleSync.proto\"h\n\x0fBasicModuleSync\x12;\n\x1aweek_cocoo\
-    n_finished_count\x18\x06\x20\x01(\rR\x17weekCocoonFinishedCount\x12\x18\
-    \n\x07stamina\x18\x01\x20\x01(\rR\x07staminab\x06proto3\
+    n_finished_count\x18\t\x20\x01(\rR\x17weekCocoonFinishedCount\x12\x18\n\
+    \x07stamina\x18\x08\x20\x01(\rR\x07staminab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

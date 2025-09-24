@@ -30,12 +30,12 @@ pub struct HandleFriendScRsp {
     // message fields
     // @@protoc_insertion_point(field:HandleFriendScRsp.friend_info)
     pub friend_info: ::protobuf::MessageField<super::FriendSimpleInfo::FriendSimpleInfo>,
+    // @@protoc_insertion_point(field:HandleFriendScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:HandleFriendScRsp.is_accept)
     pub is_accept: bool,
     // @@protoc_insertion_point(field:HandleFriendScRsp.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:HandleFriendScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HandleFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl HandleFriendScRsp {
             |m: &mut HandleFriendScRsp| { &mut m.friend_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &HandleFriendScRsp| { &m.retcode },
+            |m: &mut HandleFriendScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_accept",
             |m: &HandleFriendScRsp| { &m.is_accept },
             |m: &mut HandleFriendScRsp| { &mut m.is_accept },
@@ -69,11 +74,6 @@ impl HandleFriendScRsp {
             "uid",
             |m: &HandleFriendScRsp| { &m.uid },
             |m: &mut HandleFriendScRsp| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &HandleFriendScRsp| { &m.retcode },
-            |m: &mut HandleFriendScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleFriendScRsp>(
             "HandleFriendScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HandleFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.friend_info)?;
                 },
-                72 => {
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                48 => {
                     self.is_accept = is.read_bool()?;
                 },
-                16 => {
+                80 => {
                     self.uid = is.read_uint32()?;
-                },
-                88 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for HandleFriendScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         if self.is_accept != false {
             my_size += 1 + 1;
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.uid);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for HandleFriendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if self.is_accept != false {
-            os.write_bool(9, self.is_accept)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(2, self.uid)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.is_accept != false {
+            os.write_bool(6, self.is_accept)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(10, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for HandleFriendScRsp {
 
     fn clear(&mut self) {
         self.friend_info.clear();
+        self.retcode = 0;
         self.is_accept = false;
         self.uid = 0;
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleFriendScRsp {
         static instance: HandleFriendScRsp = HandleFriendScRsp {
             friend_info: ::protobuf::MessageField::none(),
+            retcode: 0,
             is_accept: false,
             uid: 0,
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for HandleFriendScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17HandleFriendScRsp.proto\x1a\x16FriendSimpleInfo.proto\"\x90\x01\n\
-    \x11HandleFriendScRsp\x122\n\x0bfriend_info\x18\x0f\x20\x01(\x0b2\x11.Fr\
-    iendSimpleInfoR\nfriendInfo\x12\x1b\n\tis_accept\x18\t\x20\x01(\x08R\x08\
-    isAccept\x12\x10\n\x03uid\x18\x02\x20\x01(\rR\x03uid\x12\x18\n\x07retcod\
-    e\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x11HandleFriendScRsp\x122\n\x0bfriend_info\x18\x02\x20\x01(\x0b2\x11.Fr\
+    iendSimpleInfoR\nfriendInfo\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07\
+    retcode\x12\x1b\n\tis_accept\x18\x06\x20\x01(\x08R\x08isAccept\x12\x10\n\
+    \x03uid\x18\n\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

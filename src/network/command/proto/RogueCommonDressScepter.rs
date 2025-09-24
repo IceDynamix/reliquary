@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueCommonDressScepter {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.update_scepter_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueCommonDressScepter {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.update_scepter_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonDressScepter {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueCommonDressScepter.proto\x1a\x1fRogueMagicGameScepterInfo.pro\
-    to\"e\n\x17RogueCommonDressScepter\x12J\n\x13update_scepter_info\x18\x0f\
+    to\"e\n\x17RogueCommonDressScepter\x12J\n\x13update_scepter_info\x18\x0e\
     \x20\x01(\x0b2\x1a.RogueMagicGameScepterInfoR\x11updateScepterInfob\x06p\
     roto3\
 ";

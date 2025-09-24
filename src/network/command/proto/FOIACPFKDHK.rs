@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FOIACPFKDHK {
     // message fields
-    // @@protoc_insertion_point(field:FOIACPFKDHK.ONNJGDJNFLG)
-    pub ONNJGDJNFLG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FOIACPFKDHK.MBGKCKLDHIB)
     pub MBGKCKLDHIB: u32,
     // @@protoc_insertion_point(field:FOIACPFKDHK.confirm)
     pub confirm: bool,
+    // @@protoc_insertion_point(field:FOIACPFKDHK.ONNJGDJNFLG)
+    pub ONNJGDJNFLG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FOIACPFKDHK.select_cell_id)
     pub select_cell_id: u32,
     // special fields
@@ -55,11 +55,6 @@ impl FOIACPFKDHK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONNJGDJNFLG",
-            |m: &FOIACPFKDHK| { &m.ONNJGDJNFLG },
-            |m: &mut FOIACPFKDHK| { &mut m.ONNJGDJNFLG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBGKCKLDHIB",
             |m: &FOIACPFKDHK| { &m.MBGKCKLDHIB },
@@ -69,6 +64,11 @@ impl FOIACPFKDHK {
             "confirm",
             |m: &FOIACPFKDHK| { &m.confirm },
             |m: &mut FOIACPFKDHK| { &mut m.confirm },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ONNJGDJNFLG",
+            |m: &FOIACPFKDHK| { &m.ONNJGDJNFLG },
+            |m: &mut FOIACPFKDHK| { &mut m.ONNJGDJNFLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "select_cell_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for FOIACPFKDHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONNJGDJNFLG)?;
-                },
-                72 => {
-                    self.ONNJGDJNFLG.push(is.read_uint32()?);
-                },
-                40 => {
+                8 => {
                     self.MBGKCKLDHIB = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.confirm = is.read_bool()?;
                 },
-                16 => {
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ONNJGDJNFLG)?;
+                },
+                88 => {
+                    self.ONNJGDJNFLG.push(is.read_uint32()?);
+                },
+                112 => {
                     self.select_cell_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for FOIACPFKDHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ONNJGDJNFLG);
         if self.MBGKCKLDHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MBGKCKLDHIB);
+            my_size += ::protobuf::rt::uint32_size(1, self.MBGKCKLDHIB);
         }
         if self.confirm != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ONNJGDJNFLG);
         if self.select_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.select_cell_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.select_cell_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for FOIACPFKDHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.ONNJGDJNFLG)?;
         if self.MBGKCKLDHIB != 0 {
-            os.write_uint32(5, self.MBGKCKLDHIB)?;
+            os.write_uint32(1, self.MBGKCKLDHIB)?;
         }
         if self.confirm != false {
-            os.write_bool(10, self.confirm)?;
+            os.write_bool(12, self.confirm)?;
         }
+        os.write_repeated_packed_uint32(11, &self.ONNJGDJNFLG)?;
         if self.select_cell_id != 0 {
-            os.write_uint32(2, self.select_cell_id)?;
+            os.write_uint32(14, self.select_cell_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for FOIACPFKDHK {
     }
 
     fn clear(&mut self) {
-        self.ONNJGDJNFLG.clear();
         self.MBGKCKLDHIB = 0;
         self.confirm = false;
+        self.ONNJGDJNFLG.clear();
         self.select_cell_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FOIACPFKDHK {
         static instance: FOIACPFKDHK = FOIACPFKDHK {
-            ONNJGDJNFLG: ::std::vec::Vec::new(),
             MBGKCKLDHIB: 0,
             confirm: false,
+            ONNJGDJNFLG: ::std::vec::Vec::new(),
             select_cell_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for FOIACPFKDHK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FOIACPFKDHK.proto\"\x91\x01\n\x0bFOIACPFKDHK\x12\x20\n\x0bONNJGDJN\
-    FLG\x18\t\x20\x03(\rR\x0bONNJGDJNFLG\x12\x20\n\x0bMBGKCKLDHIB\x18\x05\
-    \x20\x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\n\x20\x01(\x08R\x07\
-    confirm\x12$\n\x0eselect_cell_id\x18\x02\x20\x01(\rR\x0cselectCellIdb\
+    \n\x11FOIACPFKDHK.proto\"\x91\x01\n\x0bFOIACPFKDHK\x12\x20\n\x0bMBGKCKLD\
+    HIB\x18\x01\x20\x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\x0c\x20\
+    \x01(\x08R\x07confirm\x12\x20\n\x0bONNJGDJNFLG\x18\x0b\x20\x03(\rR\x0bON\
+    NJGDJNFLG\x12$\n\x0eselect_cell_id\x18\x0e\x20\x01(\rR\x0cselectCellIdb\
     \x06proto3\
 ";
 

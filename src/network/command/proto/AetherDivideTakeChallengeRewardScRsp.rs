@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideTakeChallengeRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideTakeChallengeRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:AetherDivideTakeChallengeRewardScRsp.player_return_reward_list)
+    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:AetherDivideTakeChallengeRewardScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:AetherDivideTakeChallengeRewardScRsp.challenge_id)
@@ -54,9 +54,9 @@ impl AetherDivideTakeChallengeRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &AetherDivideTakeChallengeRewardScRsp| { &m.reward },
-            |m: &mut AetherDivideTakeChallengeRewardScRsp| { &mut m.reward },
+            "player_return_reward_list",
+            |m: &AetherDivideTakeChallengeRewardScRsp| { &m.player_return_reward_list },
+            |m: &mut AetherDivideTakeChallengeRewardScRsp| { &mut m.player_return_reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AetherDivideTakeChallengeRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
                 },
                 32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                112 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for AetherDivideTakeChallengeRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.player_return_reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AetherDivideTakeChallengeRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.player_return_reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(4, self.challenge_id)?;
+            os.write_uint32(14, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for AetherDivideTakeChallengeRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
+        self.player_return_reward_list.clear();
         self.retcode = 0;
         self.challenge_id = 0;
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for AetherDivideTakeChallengeRewardScRsp {
 
     fn default_instance() -> &'static AetherDivideTakeChallengeRewardScRsp {
         static instance: AetherDivideTakeChallengeRewardScRsp = AetherDivideTakeChallengeRewardScRsp {
-            reward: ::protobuf::MessageField::none(),
+            player_return_reward_list: ::protobuf::MessageField::none(),
             retcode: 0,
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideTakeChallengeRewardScRsp
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*AetherDivideTakeChallengeRewardScRsp.proto\x1a\x0eItemList.proto\"\
-    \x86\x01\n$AetherDivideTakeChallengeRewardScRsp\x12!\n\x06reward\x18\x03\
-    \x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\x0c\x20\
-    \x01(\rR\x07retcode\x12!\n\x0cchallenge_id\x18\x04\x20\x01(\rR\x0bchalle\
-    ngeIdb\x06proto3\
+    \xa9\x01\n$AetherDivideTakeChallengeRewardScRsp\x12D\n\x19player_return_\
+    reward_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardList\
+    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12!\n\x0cchallenge\
+    _id\x18\x0e\x20\x01(\rR\x0bchallengeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

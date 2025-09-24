@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MJCJAIKPLLM {
     // message fields
-    // @@protoc_insertion_point(field:MJCJAIKPLLM.ACELAGJPHMA)
-    pub ACELAGJPHMA: bool,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.CBINDIAAMJG)
     pub CBINDIAAMJG: u32,
-    // @@protoc_insertion_point(field:MJCJAIKPLLM.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.MPAECAPOHEO)
     pub MPAECAPOHEO: u32,
     // @@protoc_insertion_point(field:MJCJAIKPLLM.IFANGMHNKBB)
     pub IFANGMHNKBB: u32,
+    // @@protoc_insertion_point(field:MJCJAIKPLLM.group_id)
+    pub group_id: u32,
+    // @@protoc_insertion_point(field:MJCJAIKPLLM.ACELAGJPHMA)
+    pub ACELAGJPHMA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MJCJAIKPLLM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,9 @@ impl MJCJAIKPLLM {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACELAGJPHMA",
-            |m: &MJCJAIKPLLM| { &m.ACELAGJPHMA },
-            |m: &mut MJCJAIKPLLM| { &mut m.ACELAGJPHMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBINDIAAMJG",
             |m: &MJCJAIKPLLM| { &m.CBINDIAAMJG },
             |m: &mut MJCJAIKPLLM| { &mut m.CBINDIAAMJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &MJCJAIKPLLM| { &m.group_id },
-            |m: &mut MJCJAIKPLLM| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MPAECAPOHEO",
@@ -81,6 +71,16 @@ impl MJCJAIKPLLM {
             "IFANGMHNKBB",
             |m: &MJCJAIKPLLM| { &m.IFANGMHNKBB },
             |m: &mut MJCJAIKPLLM| { &mut m.IFANGMHNKBB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &MJCJAIKPLLM| { &m.group_id },
+            |m: &mut MJCJAIKPLLM| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACELAGJPHMA",
+            |m: &MJCJAIKPLLM| { &m.ACELAGJPHMA },
+            |m: &mut MJCJAIKPLLM| { &mut m.ACELAGJPHMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MJCJAIKPLLM>(
             "MJCJAIKPLLM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.ACELAGJPHMA = is.read_bool()?;
-                },
-                120 => {
+                72 => {
                     self.CBINDIAAMJG = is.read_uint32()?;
                 },
                 64 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                88 => {
                     self.MPAECAPOHEO = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.IFANGMHNKBB = is.read_uint32()?;
+                },
+                112 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.ACELAGJPHMA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACELAGJPHMA != false {
-            my_size += 1 + 1;
-        }
         if self.CBINDIAAMJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CBINDIAAMJG);
-        }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.CBINDIAAMJG);
         }
         if self.MPAECAPOHEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MPAECAPOHEO);
+            my_size += ::protobuf::rt::uint32_size(8, self.MPAECAPOHEO);
         }
         if self.IFANGMHNKBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IFANGMHNKBB);
+            my_size += ::protobuf::rt::uint32_size(3, self.IFANGMHNKBB);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
+        }
+        if self.ACELAGJPHMA != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACELAGJPHMA != false {
-            os.write_bool(14, self.ACELAGJPHMA)?;
-        }
         if self.CBINDIAAMJG != 0 {
-            os.write_uint32(15, self.CBINDIAAMJG)?;
-        }
-        if self.group_id != 0 {
-            os.write_uint32(8, self.group_id)?;
+            os.write_uint32(9, self.CBINDIAAMJG)?;
         }
         if self.MPAECAPOHEO != 0 {
-            os.write_uint32(11, self.MPAECAPOHEO)?;
+            os.write_uint32(8, self.MPAECAPOHEO)?;
         }
         if self.IFANGMHNKBB != 0 {
-            os.write_uint32(9, self.IFANGMHNKBB)?;
+            os.write_uint32(3, self.IFANGMHNKBB)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(14, self.group_id)?;
+        }
+        if self.ACELAGJPHMA != false {
+            os.write_bool(15, self.ACELAGJPHMA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for MJCJAIKPLLM {
     }
 
     fn clear(&mut self) {
-        self.ACELAGJPHMA = false;
         self.CBINDIAAMJG = 0;
-        self.group_id = 0;
         self.MPAECAPOHEO = 0;
         self.IFANGMHNKBB = 0;
+        self.group_id = 0;
+        self.ACELAGJPHMA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MJCJAIKPLLM {
         static instance: MJCJAIKPLLM = MJCJAIKPLLM {
-            ACELAGJPHMA: false,
             CBINDIAAMJG: 0,
-            group_id: 0,
             MPAECAPOHEO: 0,
             IFANGMHNKBB: 0,
+            group_id: 0,
+            ACELAGJPHMA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for MJCJAIKPLLM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MJCJAIKPLLM.proto\"\xb0\x01\n\x0bMJCJAIKPLLM\x12\x20\n\x0bACELAGJP\
-    HMA\x18\x0e\x20\x01(\x08R\x0bACELAGJPHMA\x12\x20\n\x0bCBINDIAAMJG\x18\
-    \x0f\x20\x01(\rR\x0bCBINDIAAMJG\x12\x19\n\x08group_id\x18\x08\x20\x01(\r\
-    R\x07groupId\x12\x20\n\x0bMPAECAPOHEO\x18\x0b\x20\x01(\rR\x0bMPAECAPOHEO\
-    \x12\x20\n\x0bIFANGMHNKBB\x18\t\x20\x01(\rR\x0bIFANGMHNKBBb\x06proto3\
+    \n\x11MJCJAIKPLLM.proto\"\xb0\x01\n\x0bMJCJAIKPLLM\x12\x20\n\x0bCBINDIAA\
+    MJG\x18\t\x20\x01(\rR\x0bCBINDIAAMJG\x12\x20\n\x0bMPAECAPOHEO\x18\x08\
+    \x20\x01(\rR\x0bMPAECAPOHEO\x12\x20\n\x0bIFANGMHNKBB\x18\x03\x20\x01(\rR\
+    \x0bIFANGMHNKBB\x12\x19\n\x08group_id\x18\x0e\x20\x01(\rR\x07groupId\x12\
+    \x20\n\x0bACELAGJPHMA\x18\x0f\x20\x01(\x08R\x0bACELAGJPHMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

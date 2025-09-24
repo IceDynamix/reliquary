@@ -72,10 +72,10 @@ impl ::protobuf::Message for KEIONFFFLCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.CMAGGNFDKAG)?;
                 },
-                64 => {
+                32 => {
                     self.CMAGGNFDKAG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for KEIONFFFLCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.CMAGGNFDKAG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CMAGGNFDKAG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.CMAGGNFDKAG)?;
+        os.write_repeated_packed_uint32(4, &self.CMAGGNFDKAG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for KEIONFFFLCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEIONFFFLCO.proto\"/\n\x0bKEIONFFFLCO\x12\x20\n\x0bCMAGGNFDKAG\x18\
-    \x08\x20\x03(\rR\x0bCMAGGNFDKAGb\x06proto3\
+    \x04\x20\x03(\rR\x0bCMAGGNFDKAGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

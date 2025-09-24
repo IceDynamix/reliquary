@@ -32,10 +32,10 @@ pub struct TrainPartyBuildStartStepCsReq {
     pub HEIDCIKEDPD: u32,
     // @@protoc_insertion_point(field:TrainPartyBuildStartStepCsReq.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:TrainPartyBuildStartStepCsReq.GJFHPCIEBOJ)
-    pub GJFHPCIEBOJ: u32,
     // @@protoc_insertion_point(field:TrainPartyBuildStartStepCsReq.ALAODDBGHPL)
     pub ALAODDBGHPL: ::protobuf::MessageField<super::AreaDynamicInfo::AreaDynamicInfo>,
+    // @@protoc_insertion_point(field:TrainPartyBuildStartStepCsReq.GJFHPCIEBOJ)
+    pub GJFHPCIEBOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildStartStepCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,15 @@ impl TrainPartyBuildStartStepCsReq {
             |m: &TrainPartyBuildStartStepCsReq| { &m.area_id },
             |m: &mut TrainPartyBuildStartStepCsReq| { &mut m.area_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJFHPCIEBOJ",
-            |m: &TrainPartyBuildStartStepCsReq| { &m.GJFHPCIEBOJ },
-            |m: &mut TrainPartyBuildStartStepCsReq| { &mut m.GJFHPCIEBOJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AreaDynamicInfo::AreaDynamicInfo>(
             "ALAODDBGHPL",
             |m: &TrainPartyBuildStartStepCsReq| { &m.ALAODDBGHPL },
             |m: &mut TrainPartyBuildStartStepCsReq| { &mut m.ALAODDBGHPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJFHPCIEBOJ",
+            |m: &TrainPartyBuildStartStepCsReq| { &m.GJFHPCIEBOJ },
+            |m: &mut TrainPartyBuildStartStepCsReq| { &mut m.GJFHPCIEBOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildStartStepCsReq>(
             "TrainPartyBuildStartStepCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TrainPartyBuildStartStepCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.HEIDCIKEDPD = is.read_uint32()?;
                 },
-                80 => {
+                48 => {
                     self.area_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.GJFHPCIEBOJ = is.read_uint32()?;
-                },
-                10 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALAODDBGHPL)?;
+                },
+                40 => {
+                    self.GJFHPCIEBOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for TrainPartyBuildStartStepCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HEIDCIKEDPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HEIDCIKEDPD);
+            my_size += ::protobuf::rt::uint32_size(8, self.HEIDCIKEDPD);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.area_id);
-        }
-        if self.GJFHPCIEBOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GJFHPCIEBOJ);
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         if let Some(v) = self.ALAODDBGHPL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.GJFHPCIEBOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GJFHPCIEBOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for TrainPartyBuildStartStepCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HEIDCIKEDPD != 0 {
-            os.write_uint32(3, self.HEIDCIKEDPD)?;
+            os.write_uint32(8, self.HEIDCIKEDPD)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(10, self.area_id)?;
-        }
-        if self.GJFHPCIEBOJ != 0 {
-            os.write_uint32(8, self.GJFHPCIEBOJ)?;
+            os.write_uint32(6, self.area_id)?;
         }
         if let Some(v) = self.ALAODDBGHPL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.GJFHPCIEBOJ != 0 {
+            os.write_uint32(5, self.GJFHPCIEBOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for TrainPartyBuildStartStepCsReq {
     fn clear(&mut self) {
         self.HEIDCIKEDPD = 0;
         self.area_id = 0;
-        self.GJFHPCIEBOJ = 0;
         self.ALAODDBGHPL.clear();
+        self.GJFHPCIEBOJ = 0;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for TrainPartyBuildStartStepCsReq {
         static instance: TrainPartyBuildStartStepCsReq = TrainPartyBuildStartStepCsReq {
             HEIDCIKEDPD: 0,
             area_id: 0,
-            GJFHPCIEBOJ: 0,
             ALAODDBGHPL: ::protobuf::MessageField::none(),
+            GJFHPCIEBOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildStartStepCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#TrainPartyBuildStartStepCsReq.proto\x1a\x15AreaDynamicInfo.proto\"\
     \xb0\x01\n\x1dTrainPartyBuildStartStepCsReq\x12\x20\n\x0bHEIDCIKEDPD\x18\
-    \x03\x20\x01(\rR\x0bHEIDCIKEDPD\x12\x17\n\x07area_id\x18\n\x20\x01(\rR\
-    \x06areaId\x12\x20\n\x0bGJFHPCIEBOJ\x18\x08\x20\x01(\rR\x0bGJFHPCIEBOJ\
-    \x122\n\x0bALAODDBGHPL\x18\x01\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bALA\
-    ODDBGHPLb\x06proto3\
+    \x08\x20\x01(\rR\x0bHEIDCIKEDPD\x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\
+    \x06areaId\x122\n\x0bALAODDBGHPL\x18\x07\x20\x01(\x0b2\x10.AreaDynamicIn\
+    foR\x0bALAODDBGHPL\x12\x20\n\x0bGJFHPCIEBOJ\x18\x05\x20\x01(\rR\x0bGJFHP\
+    CIEBOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for ChangePropTimelineInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 24 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChangePropTimelineInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.prop_entity_id);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for ChangePropTimelineInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.prop_entity_id != 0 {
-            os.write_uint32(11, self.prop_entity_id)?;
+            os.write_uint32(1, self.prop_entity_id)?;
         }
         if self.retcode != 0 {
             os.write_uint32(3, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ChangePropTimelineInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChangePropTimelineInfoScRsp.proto\"]\n\x1bChangePropTimelineInfoScRsp\
-    \x12$\n\x0eprop_entity_id\x18\x0b\x20\x01(\rR\x0cpropEntityId\x12\x18\n\
+    \x12$\n\x0eprop_entity_id\x18\x01\x20\x01(\rR\x0cpropEntityId\x12\x18\n\
     \x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

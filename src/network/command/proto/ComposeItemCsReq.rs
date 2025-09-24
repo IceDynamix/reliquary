@@ -96,13 +96,13 @@ impl ::protobuf::Message for ComposeItemCsReq {
                 80 => {
                     self.compose_id = is.read_uint32()?;
                 },
-                8 => {
+                32 => {
                     self.count = is.read_uint32()?;
                 },
-                42 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.compose_item_list)?;
                 },
-                34 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.convert_item_list)?;
                 },
                 tag => {
@@ -121,7 +121,7 @@ impl ::protobuf::Message for ComposeItemCsReq {
             my_size += ::protobuf::rt::uint32_size(10, self.compose_id);
         }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.count);
+            my_size += ::protobuf::rt::uint32_size(4, self.count);
         }
         if let Some(v) = self.compose_item_list.as_ref() {
             let len = v.compute_size();
@@ -141,13 +141,13 @@ impl ::protobuf::Message for ComposeItemCsReq {
             os.write_uint32(10, self.compose_id)?;
         }
         if self.count != 0 {
-            os.write_uint32(1, self.count)?;
+            os.write_uint32(4, self.count)?;
         }
         if let Some(v) = self.compose_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.convert_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -205,9 +205,9 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ComposeItemCsReq.proto\x1a\x12ItemCostData.proto\"\xbd\x01\n\x10Co\
     mposeItemCsReq\x12\x1d\n\ncompose_id\x18\n\x20\x01(\rR\tcomposeId\x12\
-    \x14\n\x05count\x18\x01\x20\x01(\rR\x05count\x129\n\x11compose_item_list\
-    \x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x0fcomposeItemList\x129\n\x11conv\
-    ert_item_list\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x0fconvertItemListb\
+    \x14\n\x05count\x18\x04\x20\x01(\rR\x05count\x129\n\x11compose_item_list\
+    \x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x0fcomposeItemList\x129\n\x11conv\
+    ert_item_list\x18\x0f\x20\x01(\x0b2\r.ItemCostDataR\x0fconvertItemListb\
     \x06proto3\
 ";
 

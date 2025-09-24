@@ -30,6 +30,10 @@ pub struct BAAGNOHEHMA {
     // message fields
     // @@protoc_insertion_point(field:BAAGNOHEHMA.OIMBGAEHDBI)
     pub OIMBGAEHDBI: ::protobuf::MessageField<super::CPFCBLADMBH::CPFCBLADMBH>,
+    // @@protoc_insertion_point(field:BAAGNOHEHMA.KKOLFABGBKG)
+    pub KKOLFABGBKG: ::protobuf::MessageField<super::NEKAENFGGAC::NEKAENFGGAC>,
+    // @@protoc_insertion_point(field:BAAGNOHEHMA.IGICBCEMHEE)
+    pub IGICBCEMHEE: ::protobuf::MessageField<super::NJHCCEMDEOC::NJHCCEMDEOC>,
     // special fields
     // @@protoc_insertion_point(special_field:BAAGNOHEHMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +51,22 @@ impl BAAGNOHEHMA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CPFCBLADMBH::CPFCBLADMBH>(
             "OIMBGAEHDBI",
             |m: &BAAGNOHEHMA| { &m.OIMBGAEHDBI },
             |m: &mut BAAGNOHEHMA| { &mut m.OIMBGAEHDBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NEKAENFGGAC::NEKAENFGGAC>(
+            "KKOLFABGBKG",
+            |m: &BAAGNOHEHMA| { &m.KKOLFABGBKG },
+            |m: &mut BAAGNOHEHMA| { &mut m.KKOLFABGBKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NJHCCEMDEOC::NJHCCEMDEOC>(
+            "IGICBCEMHEE",
+            |m: &BAAGNOHEHMA| { &m.IGICBCEMHEE },
+            |m: &mut BAAGNOHEHMA| { &mut m.IGICBCEMHEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAAGNOHEHMA>(
             "BAAGNOHEHMA",
@@ -75,6 +89,12 @@ impl ::protobuf::Message for BAAGNOHEHMA {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OIMBGAEHDBI)?;
                 },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KKOLFABGBKG)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IGICBCEMHEE)?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -91,6 +111,14 @@ impl ::protobuf::Message for BAAGNOHEHMA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.KKOLFABGBKG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.IGICBCEMHEE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -99,6 +127,12 @@ impl ::protobuf::Message for BAAGNOHEHMA {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OIMBGAEHDBI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.KKOLFABGBKG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.IGICBCEMHEE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -118,12 +152,16 @@ impl ::protobuf::Message for BAAGNOHEHMA {
 
     fn clear(&mut self) {
         self.OIMBGAEHDBI.clear();
+        self.KKOLFABGBKG.clear();
+        self.IGICBCEMHEE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAAGNOHEHMA {
         static instance: BAAGNOHEHMA = BAAGNOHEHMA {
             OIMBGAEHDBI: ::protobuf::MessageField::none(),
+            KKOLFABGBKG: ::protobuf::MessageField::none(),
+            IGICBCEMHEE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for BAAGNOHEHMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAAGNOHEHMA.proto\x1a\x11CPFCBLADMBH.proto\"=\n\x0bBAAGNOHEHMA\x12\
-    .\n\x0bOIMBGAEHDBI\x18\x01\x20\x01(\x0b2\x0c.CPFCBLADMBHR\x0bOIMBGAEHDBI\
-    b\x06proto3\
+    \n\x11BAAGNOHEHMA.proto\x1a\x11CPFCBLADMBH.proto\x1a\x11NEKAENFGGAC.prot\
+    o\x1a\x11NJHCCEMDEOC.proto\"\x9d\x01\n\x0bBAAGNOHEHMA\x12.\n\x0bOIMBGAEH\
+    DBI\x18\x01\x20\x01(\x0b2\x0c.CPFCBLADMBHR\x0bOIMBGAEHDBI\x12.\n\x0bKKOL\
+    FABGBKG\x18\x02\x20\x01(\x0b2\x0c.NEKAENFGGACR\x0bKKOLFABGBKG\x12.\n\x0b\
+    IGICBCEMHEE\x18\x03\x20\x01(\x0b2\x0c.NJHCCEMDEOCR\x0bIGICBCEMHEEb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,8 +208,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::CPFCBLADMBH::file_descriptor().clone());
+            deps.push(super::NEKAENFGGAC::file_descriptor().clone());
+            deps.push(super::NJHCCEMDEOC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BAAGNOHEHMA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicGameLevelInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::RogueMagicSettleReason::RogueMagicSettleReason>,
     // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.cur_level_index)
     pub cur_level_index: u32,
-    // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.level_info_list)
-    pub level_info_list: ::std::vec::Vec<super::RogueMagicLayerInfo::RogueMagicLayerInfo>,
+    // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::RogueMagicSettleReason::RogueMagicSettleReason>,
     // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.ACGBELAIGBO)
     pub ACGBELAIGBO: u32,
+    // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.level_info_list)
+    pub level_info_list: ::std::vec::Vec<super::RogueMagicLayerInfo::RogueMagicLayerInfo>,
     // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.extra_round_limit)
     pub extra_round_limit: u32,
     // @@protoc_insertion_point(field:RogueMagicGameLevelInfo.status)
@@ -60,24 +60,24 @@ impl RogueMagicGameLevelInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_level_index",
+            |m: &RogueMagicGameLevelInfo| { &m.cur_level_index },
+            |m: &mut RogueMagicGameLevelInfo| { &mut m.cur_level_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &RogueMagicGameLevelInfo| { &m.reason },
             |m: &mut RogueMagicGameLevelInfo| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_level_index",
-            |m: &RogueMagicGameLevelInfo| { &m.cur_level_index },
-            |m: &mut RogueMagicGameLevelInfo| { &mut m.cur_level_index },
+            "ACGBELAIGBO",
+            |m: &RogueMagicGameLevelInfo| { &m.ACGBELAIGBO },
+            |m: &mut RogueMagicGameLevelInfo| { &mut m.ACGBELAIGBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "level_info_list",
             |m: &RogueMagicGameLevelInfo| { &m.level_info_list },
             |m: &mut RogueMagicGameLevelInfo| { &mut m.level_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACGBELAIGBO",
-            |m: &RogueMagicGameLevelInfo| { &m.ACGBELAIGBO },
-            |m: &mut RogueMagicGameLevelInfo| { &mut m.ACGBELAIGBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "extra_round_limit",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for RogueMagicGameLevelInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.cur_level_index = is.read_uint32()?;
+                },
                 80 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                112 => {
-                    self.cur_level_index = is.read_uint32()?;
-                },
-                58 => {
-                    self.level_info_list.push(is.read_message()?);
-                },
-                72 => {
+                56 => {
                     self.ACGBELAIGBO = is.read_uint32()?;
                 },
-                32 => {
+                26 => {
+                    self.level_info_list.push(is.read_message()?);
+                },
+                64 => {
                     self.extra_round_limit = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -137,24 +137,24 @@ impl ::protobuf::Message for RogueMagicGameLevelInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.cur_level_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.cur_level_index);
+        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE) {
             my_size += ::protobuf::rt::int32_size(10, self.reason.value());
         }
-        if self.cur_level_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cur_level_index);
+        if self.ACGBELAIGBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ACGBELAIGBO);
         }
         for value in &self.level_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ACGBELAIGBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ACGBELAIGBO);
-        }
         if self.extra_round_limit != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.extra_round_limit);
+            my_size += ::protobuf::rt::uint32_size(8, self.extra_round_limit);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+            my_size += ::protobuf::rt::int32_size(12, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for RogueMagicGameLevelInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.cur_level_index != 0 {
+            os.write_uint32(15, self.cur_level_index)?;
+        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
-        if self.cur_level_index != 0 {
-            os.write_uint32(14, self.cur_level_index)?;
+        if self.ACGBELAIGBO != 0 {
+            os.write_uint32(7, self.ACGBELAIGBO)?;
         }
         for v in &self.level_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.ACGBELAIGBO != 0 {
-            os.write_uint32(9, self.ACGBELAIGBO)?;
-        }
         if self.extra_round_limit != 0 {
-            os.write_uint32(4, self.extra_round_limit)?;
+            os.write_uint32(8, self.extra_round_limit)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,10 +197,10 @@ impl ::protobuf::Message for RogueMagicGameLevelInfo {
     }
 
     fn clear(&mut self) {
-        self.reason = ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE);
         self.cur_level_index = 0;
-        self.level_info_list.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE);
         self.ACGBELAIGBO = 0;
+        self.level_info_list.clear();
         self.extra_round_limit = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE);
         self.special_fields.clear();
@@ -208,10 +208,10 @@ impl ::protobuf::Message for RogueMagicGameLevelInfo {
 
     fn default_instance() -> &'static RogueMagicGameLevelInfo {
         static instance: RogueMagicGameLevelInfo = RogueMagicGameLevelInfo {
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             cur_level_index: 0,
-            level_info_list: ::std::vec::Vec::new(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             ACGBELAIGBO: 0,
+            level_info_list: ::std::vec::Vec::new(),
             extra_round_limit: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicGameLevelInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueMagicGameLevelInfo.proto\x1a\x19RogueMagicLayerInfo.proto\x1a\
     \x1bRogueMagicLevelStatus.proto\x1a\x1cRogueMagicSettleReason.proto\"\
-    \xae\x02\n\x17RogueMagicGameLevelInfo\x12/\n\x06reason\x18\n\x20\x01(\
-    \x0e2\x17.RogueMagicSettleReasonR\x06reason\x12&\n\x0fcur_level_index\
-    \x18\x0e\x20\x01(\rR\rcurLevelIndex\x12<\n\x0flevel_info_list\x18\x07\
-    \x20\x03(\x0b2\x14.RogueMagicLayerInfoR\rlevelInfoList\x12\x20\n\x0bACGB\
-    ELAIGBO\x18\t\x20\x01(\rR\x0bACGBELAIGBO\x12*\n\x11extra_round_limit\x18\
-    \x04\x20\x01(\rR\x0fextraRoundLimit\x12.\n\x06status\x18\r\x20\x01(\x0e2\
+    \xae\x02\n\x17RogueMagicGameLevelInfo\x12&\n\x0fcur_level_index\x18\x0f\
+    \x20\x01(\rR\rcurLevelIndex\x12/\n\x06reason\x18\n\x20\x01(\x0e2\x17.Rog\
+    ueMagicSettleReasonR\x06reason\x12\x20\n\x0bACGBELAIGBO\x18\x07\x20\x01(\
+    \rR\x0bACGBELAIGBO\x12<\n\x0flevel_info_list\x18\x03\x20\x03(\x0b2\x14.R\
+    ogueMagicLayerInfoR\rlevelInfoList\x12*\n\x11extra_round_limit\x18\x08\
+    \x20\x01(\rR\x0fextraRoundLimit\x12.\n\x06status\x18\x0c\x20\x01(\x0e2\
     \x16.RogueMagicLevelStatusR\x06statusb\x06proto3\
 ";
 

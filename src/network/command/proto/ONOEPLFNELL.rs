@@ -82,7 +82,7 @@ impl ::protobuf::Message for ONOEPLFNELL {
                 72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ONOEPLFNELL {
             my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(10, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ONOEPLFNELL {
             os.write_uint32(9, self.avatar_id)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ONOEPLFNELL {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONOEPLFNELL.proto\x1a\x10AvatarType.proto\"X\n\x0bONOEPLFNELL\x12\
     \x1b\n\tavatar_id\x18\t\x20\x01(\rR\x08avatarId\x12,\n\x0bavatar_type\
-    \x18\x0f\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
+    \x18\n\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

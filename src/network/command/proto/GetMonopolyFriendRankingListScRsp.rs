@@ -30,10 +30,10 @@ pub struct GetMonopolyFriendRankingListScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.DCFHGAAJLNN)
-    pub DCFHGAAJLNN: ::std::vec::Vec<super::INDGLKCECDC::INDGLKCECDC>,
     // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.ICMGEGEFDLE)
     pub ICMGEGEFDLE: ::protobuf::MessageField<super::INDGLKCECDC::INDGLKCECDC>,
+    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.DCFHGAAJLNN)
+    pub DCFHGAAJLNN: ::std::vec::Vec<super::INDGLKCECDC::INDGLKCECDC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyFriendRankingListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetMonopolyFriendRankingListScRsp {
             |m: &GetMonopolyFriendRankingListScRsp| { &m.retcode },
             |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCFHGAAJLNN",
-            |m: &GetMonopolyFriendRankingListScRsp| { &m.DCFHGAAJLNN },
-            |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.DCFHGAAJLNN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INDGLKCECDC::INDGLKCECDC>(
             "ICMGEGEFDLE",
             |m: &GetMonopolyFriendRankingListScRsp| { &m.ICMGEGEFDLE },
             |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.ICMGEGEFDLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DCFHGAAJLNN",
+            |m: &GetMonopolyFriendRankingListScRsp| { &m.DCFHGAAJLNN },
+            |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.DCFHGAAJLNN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyFriendRankingListScRsp>(
             "GetMonopolyFriendRankingListScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    self.DCFHGAAJLNN.push(is.read_message()?);
-                },
-                66 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICMGEGEFDLE)?;
+                },
+                122 => {
+                    self.DCFHGAAJLNN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,16 +108,16 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if let Some(v) = self.ICMGEGEFDLE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.DCFHGAAJLNN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.ICMGEGEFDLE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if let Some(v) = self.ICMGEGEFDLE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.DCFHGAAJLNN {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if let Some(v) = self.ICMGEGEFDLE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DCFHGAAJLNN.clear();
         self.ICMGEGEFDLE.clear();
+        self.DCFHGAAJLNN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyFriendRankingListScRsp {
         static instance: GetMonopolyFriendRankingListScRsp = GetMonopolyFriendRankingListScRsp {
             retcode: 0,
-            DCFHGAAJLNN: ::std::vec::Vec::new(),
             ICMGEGEFDLE: ::protobuf::MessageField::none(),
+            DCFHGAAJLNN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyFriendRankingListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetMonopolyFriendRankingListScRsp.proto\x1a\x11INDGLKCECDC.proto\"\
-    \x9d\x01\n!GetMonopolyFriendRankingListScRsp\x12\x18\n\x07retcode\x18\
-    \x04\x20\x01(\rR\x07retcode\x12.\n\x0bDCFHGAAJLNN\x18\x02\x20\x03(\x0b2\
-    \x0c.INDGLKCECDCR\x0bDCFHGAAJLNN\x12.\n\x0bICMGEGEFDLE\x18\x08\x20\x01(\
-    \x0b2\x0c.INDGLKCECDCR\x0bICMGEGEFDLEb\x06proto3\
+    \x9d\x01\n!GetMonopolyFriendRankingListScRsp\x12\x18\n\x07retcode\x18\r\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bICMGEGEFDLE\x18\x04\x20\x01(\x0b2\x0c.\
+    INDGLKCECDCR\x0bICMGEGEFDLE\x12.\n\x0bDCFHGAAJLNN\x18\x0f\x20\x03(\x0b2\
+    \x0c.INDGLKCECDCR\x0bDCFHGAAJLNNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

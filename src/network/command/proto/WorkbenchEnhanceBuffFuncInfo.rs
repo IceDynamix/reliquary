@@ -86,10 +86,10 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.cur_num = is.read_uint32()?;
                 },
-                18 => {
+                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -104,7 +104,7 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
                     is.pop_limit(old_limit);
                     self.HCPACBHCMHN.insert(key, value);
                 },
-                48 => {
+                40 => {
                     self.max_num = is.read_uint32()?;
                 },
                 tag => {
@@ -120,7 +120,7 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cur_num);
+            my_size += ::protobuf::rt::uint32_size(1, self.cur_num);
         }
         for (k, v) in &self.HCPACBHCMHN {
             let mut entry_size = 0;
@@ -129,7 +129,7 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.max_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.max_num);
+            my_size += ::protobuf::rt::uint32_size(5, self.max_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,19 +138,19 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_num != 0 {
-            os.write_uint32(14, self.cur_num)?;
+            os.write_uint32(1, self.cur_num)?;
         }
         for (k, v) in &self.HCPACBHCMHN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
+            os.write_raw_varint32(82)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.max_num != 0 {
-            os.write_uint32(6, self.max_num)?;
+            os.write_uint32(5, self.max_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchEnhanceBuffFuncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"WorkbenchEnhanceBuffFuncInfo.proto\"\xe2\x01\n\x1cWorkbenchEnhanceBu\
-    ffFuncInfo\x12\x17\n\x07cur_num\x18\x0e\x20\x01(\rR\x06curNum\x12P\n\x0b\
-    HCPACBHCMHN\x18\x02\x20\x03(\x0b2..WorkbenchEnhanceBuffFuncInfo.HCPACBHC\
-    MHNEntryR\x0bHCPACBHCMHN\x12\x17\n\x07max_num\x18\x06\x20\x01(\rR\x06max\
-    Num\x1a>\n\x10HCPACBHCMHNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03k\
-    ey\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    ffFuncInfo\x12\x17\n\x07cur_num\x18\x01\x20\x01(\rR\x06curNum\x12P\n\x0b\
+    HCPACBHCMHN\x18\n\x20\x03(\x0b2..WorkbenchEnhanceBuffFuncInfo.HCPACBHCMH\
+    NEntryR\x0bHCPACBHCMHN\x12\x17\n\x07max_num\x18\x05\x20\x01(\rR\x06maxNu\
+    m\x1a>\n\x10HCPACBHCMHNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
